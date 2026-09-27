@@ -14,10 +14,12 @@ import subprocess
 import tarfile
 
 ALLOWED_ROOT_FILES = {'.gitattributes', '.gitignore', 'README.md', 'requirements-report.txt'}
-ALLOWED_DIRS = {'docs', 'fspt', 'gap', 'notes', 'scripts', 'tests'}
+ALLOWED_DIRS = {'fspt', 'gap', 'scripts', 'tests'}
+PUBLIC_DOCS = {'docs/CLUSTER_RUN.md'}
+INTERNAL_TOOLS = {'scripts/report_upper_carry_scope.py', 'scripts/audit_c4_pullback_calibration.py'}
 OWN_RESULTS = {'classification_frozen', 'space_groups', 'space_groups_spinless',
                'pip_diagnostics', 'optimization_validation', 'performance_environment',
-               'point_groups', 'upper_carry_scope'}
+               'point_groups'}
 POLICY = 'fspt-public-snapshot-v1'
 
 
@@ -29,11 +31,21 @@ def allowed(path):
     parts = Path(path).parts
     if not parts or any(p in ('.git', '..') for p in parts):
         return False
+    if parts[0] in {'internal_notes', 'publication', 'notes'} or path in INTERNAL_TOOLS:
+        return False
     if len(parts) == 1:
         return path in ALLOWED_ROOT_FILES
+    if parts[0] == 'docs':
+        return path in PUBLIC_DOCS
     if parts[0] in ALLOWED_DIRS:
         return True
     if parts[0] != 'results' or len(parts) < 3:
+        return False
+    if parts[1] in {'space_groups', 'space_groups_spinless', 'point_groups'} and parts[2] == 'report':
+        return False
+    # Research discussions stay in the private workspace. Original payloads
+    # named by retained archive manifests are handled explicitly in build().
+    if Path(path).suffix in {'.md', '.tex'}:
         return False
     if parts[1] in OWN_RESULTS:
         return True
@@ -109,7 +121,31 @@ def summaries(source_files):
 def build(source, ref):
     commit, original, modes = read_commit(source, ref)
     public = {p: b for p, b in original.items() if allowed(p)}
-    excluded = {p: {'sha256': sha(b), 'bytes': len(b)} for p, b in original.items() if not allowed(p)}
+    # Keep every original byte needed by a published numerical archive.
+    for path, raw in original.items():
+        if Path(path).name != 'archive.json' or not allowed(path):
+            continue
+        manifest = json.loads(raw)
+        entries = manifest['files']
+        entries = entries.items() if isinstance(entries, dict) else [(e['path'], e) for e in entries]
+        for name, entry in entries:
+            relative = Path(name)
+            if relative.is_absolute() or '..' in relative.parts:
+                raise ValueError('Unsafe archived payload path')
+            payload_path = str(Path(path).parent/relative)
+            payload = original[payload_path]
+            if sha(payload) != entry['sha256'] or len(payload) != entry['bytes']:
+                raise ValueError('Original archive payload differs: '+payload_path)
+            public[payload_path] = payload
+    table_sources = {}
+    for path, raw in original.items():
+        if path.startswith('publication/group_tables/'):
+            target = 'results/group_tables/'+path[len('publication/group_tables/'):]
+            public[target] = raw
+            table_sources[target] = path
+    # Internal notes, including their paths and hashes, are not exported.
+    excluded = {p: {'sha256': sha(b), 'bytes': len(b)} for p, b in original.items()
+                if p not in public and not p.startswith('internal_notes/')}
     public.update(summaries(original))
     public['scripts/publish_snapshot.py'] = Path(__file__).read_bytes()
     test_path = Path(__file__).resolve().parents[1]/'tests/test_publish_snapshot.py'
@@ -118,8 +154,8 @@ def build(source, ref):
     release = '''# Public release scope
 
 This repository is a clean public snapshot of the project's independently
-implemented code, mathematical exposition, computed results, and validation
-reports. It starts a separate Git history. The complete local working history
+implemented code, computed group structures, and reproducibility records.
+It starts a separate Git history. The complete local working history
 and private comparison archive are retained by the author and are not pushed.
 
 The source checkout is `/home/xingyu/FSPT_AHSS`; the separate publishing checkout
@@ -137,11 +173,11 @@ the original cluster path as fallback; its GAP arguments are unchanged.
 
 Unpublished collaborator PDFs, their text/glyph transcriptions, recovered draft
 answer tables, original legacy logs, and full reference-row comparison payloads
-are not distributed. Aggregate comparison statistics, source hashes, our own
-analysis, and independently computed finite controls remain available. The
+are not distributed. Aggregate comparison statistics, source hashes, and
+independently computed finite controls remain available. The
 reference-input manifest records provenance only; it does not contain the input
-bytes. Historical validation documents describe the complete local audit, so
-commands requiring those optional reference materials need separately supplied
+bytes. Additional research and comparison reports remain in the private
+workspace. Commands requiring optional reference materials need separately supplied
 authorized copies. Production classification, stacking, saved-result audits and
 reports do not require them.
 
@@ -158,9 +194,10 @@ follow `docs/CLUSTER_RUN.md` to create fresh compute allocations for all 230.
 The accepted results and exact source snapshots are in `results/space_groups`
 (crystalline spin-half, internal spinless) and `results/space_groups_spinless`
 (crystalline spinless, internal spin-half). Their archived bytes are unchanged
-in this release. The second archive distinguishes a unique abstract upper
-extension from an actual marked upper cochain witness. The missing upper
-CF/bosonic twisters are not supplied by publication of an abstract group.
+in this release. Public tables in `results/group_tables` present the four
+decoration layers and the final abstract stacking groups. Original machine
+records and their certificate fields are preserved without rewriting.
+Internal research notes and working discussions are not published.
 
 Run self-contained saved-result, scheduling and publication tests without private
 reference inputs:
@@ -276,7 +313,9 @@ reference copies. They are optional and never feed production results. See
     scan_credentials(public)
     manifest = {'schema': POLICY, 'source_commit': commit,
                 'scope': 'Separate public history; no private Git objects or omitted reference payloads copied.',
-                'allowlist': {'root_files': sorted(ALLOWED_ROOT_FILES), 'directories': sorted(ALLOWED_DIRS), 'own_result_directories': sorted(OWN_RESULTS)},
+                'allowlist': {'root_files': sorted(ALLOWED_ROOT_FILES), 'directories': sorted(ALLOWED_DIRS),
+                              'public_documents': sorted(PUBLIC_DOCS), 'own_result_directories': sorted(OWN_RESULTS),
+                              'group_table_sources': table_sources},
                 'files': {p: {'sha256': sha(b), 'bytes': len(b),
                               'source_sha256': sha(original[p]) if p in original else None,
                               'publication_modified': p not in original or b != original[p]}

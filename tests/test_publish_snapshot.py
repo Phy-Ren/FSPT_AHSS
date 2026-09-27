@@ -5,6 +5,7 @@ from pathlib import Path
 import subprocess
 import tempfile
 import unittest
+import uuid
 from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,17 +17,37 @@ spec.loader.exec_module(pub)
 class PublicationTests(unittest.TestCase):
     def test_reference_exclusions_and_numerical_inclusions(self):
         for path in ['reference/code.py', 'vendor/private.zip', 'runs/result.json',
+                     'internal_notes/PENDING_TWISTERS_AND_FINAL_CALIBRATION_ZH.md',
+                     'docs/case_reports/UPPER_CARRY_SCOPE_ZH.md',
+                     'results/upper_carry_scope/presentation_audit.json',
+                     'results/point_groups/report/CALIBRATION_REPORT.md',
+                     'notes/crystalline_spinless_formulas.pdf',
                      'results/external_comparison/inputs/legacy_sg068.txt',
                      'results/external_comparison/inputs/space_group_230_layers.pdf',
                      'results/boss_layers/parsed_reference.json', 'results/boss_layers/current_reference_comparison.csv',
                      'results/external_comparison/comparison.json', 'new_private/data.json']:
             self.assertFalse(pub.allowed(path), path)
         for path in ['gap/stacking.g', 'results/space_groups/sg219.json',
+                     'docs/CLUSTER_RUN.md', 'results/point_groups/spinless_pg22.json',
                      'results/space_groups_spinless/sg219.json',
                      'results/pip_diagnostics/crystalline_spinless.json',
                      'results/classification_frozen/manifest.json',
                      'results/external_comparison/inputs/finite_c2_controls.json']:
             self.assertTrue(pub.allowed(path), path)
+
+    def test_internal_note_content_and_names_are_not_exported(self):
+        private_path = 'internal_notes/research_plan.md'
+        marker = uuid.uuid4().hex.encode()
+        source = {'README.md': b'# Public results\n', 'scripts/run_gap.py': b'import argparse\n',
+                  private_path: marker,
+                  'publication/group_tables/README.md': b'# Group structures\n'}
+        with mock.patch.object(pub, 'read_commit', return_value=('a'*40, source, {})), \
+             mock.patch.object(pub, 'summaries', return_value={}):
+            payload, _, manifest = pub.build(ROOT, 'HEAD')
+        self.assertNotIn(private_path, payload)
+        self.assertNotIn(private_path, manifest['excluded_source_files'])
+        self.assertEqual(payload['results/group_tables/README.md'], b'# Group structures\n')
+        self.assertFalse(any(marker in b for b in payload.values()))
 
     def test_history_and_uncommitted_source_not_copied(self):
         with tempfile.TemporaryDirectory() as directory:

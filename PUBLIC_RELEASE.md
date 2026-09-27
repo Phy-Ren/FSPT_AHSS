@@ -1,8 +1,8 @@
 # Public release scope
 
 This repository is a clean public snapshot of the project's independently
-implemented code, mathematical exposition, computed results, and validation
-reports. It starts a separate Git history. The complete local working history
+implemented code, computed group structures, and reproducibility records.
+It starts a separate Git history. The complete local working history
 and private comparison archive are retained by the author and are not pushed.
 
 The source checkout is `/home/xingyu/FSPT_AHSS`; the separate publishing checkout
@@ -20,11 +20,11 @@ the original cluster path as fallback; its GAP arguments are unchanged.
 
 Unpublished collaborator PDFs, their text/glyph transcriptions, recovered draft
 answer tables, original legacy logs, and full reference-row comparison payloads
-are not distributed. Aggregate comparison statistics, source hashes, our own
-analysis, and independently computed finite controls remain available. The
+are not distributed. Aggregate comparison statistics, source hashes, and
+independently computed finite controls remain available. The
 reference-input manifest records provenance only; it does not contain the input
-bytes. Historical validation documents describe the complete local audit, so
-commands requiring those optional reference materials need separately supplied
+bytes. Additional research and comparison reports remain in the private
+workspace. Commands requiring optional reference materials need separately supplied
 authorized copies. Production classification, stacking, saved-result audits and
 reports do not require them.
 
@@ -41,9 +41,10 @@ follow `docs/CLUSTER_RUN.md` to create fresh compute allocations for all 230.
 The accepted results and exact source snapshots are in `results/space_groups`
 (crystalline spin-half, internal spinless) and `results/space_groups_spinless`
 (crystalline spinless, internal spin-half). Their archived bytes are unchanged
-in this release. The second archive distinguishes a unique abstract upper
-extension from an actual marked upper cochain witness. The missing upper
-CF/bosonic twisters are not supplied by publication of an abstract group.
+in this release. Public tables in `results/group_tables` present the four
+decoration layers and the final abstract stacking groups. Original machine
+records and their certificate fields are preserved without rewriting.
+Internal research notes and working discussions are not published.
 
 Run self-contained saved-result, scheduling and publication tests without private
 reference inputs:

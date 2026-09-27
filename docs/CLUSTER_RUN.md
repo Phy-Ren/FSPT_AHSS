@@ -74,7 +74,7 @@ PY
 qstat -q
 ```
 
-先查看当前资源和自己已有的 allocation，再执行下一块。此配置不表示当前有五个空闲节点。第 5 个 PBS 文件明确使用 `normal`、`nodes=1:ppn=28`，与此次实际运行的资源类型一致；其主机总内存曾测得约 125.776 GiB，**这不是 PBS 分配内存保证**。硬件读数见[归档说明](../results/performance_environment/README.md)和[原始探测记录](../results/performance_environment/summary.json)。正式 v09 的单任务峰值为 SG219 的 **16.869 GiB**，见[性能归档](../results/space_groups/performance.json)；历史 v07 基准曾测得约 18.502 GiB，应与正式结果区分。调度器按耗时排序，并不按内存做装箱，不能用一个任务的峰值推断整节点并发内存。提交前应结合现场内存资源核对 28 并发配置。
+先查看当前资源和自己已有的 allocation，再执行下一块。此配置不表示当前有五个空闲节点。第 5 个 PBS 文件明确使用 `normal`、`nodes=1:ppn=28`，与此次实际运行的资源类型一致；其主机总内存曾测得约 125.776 GiB，**这不是 PBS 分配内存保证**。硬件读数见[归档说明](../PUBLIC_RELEASE.md#private-comparison-materials)和[原始探测记录](../results/performance_environment/summary.json)。正式 v09 的单任务峰值为 SG219 的 **16.869 GiB**，见[性能归档](../results/space_groups/performance.json)；历史 v07 基准曾测得约 18.502 GiB，应与正式结果区分。调度器按耗时排序，并不按内存做装箱，不能用一个任务的峰值推断整节点并发内存。提交前应结合现场内存资源核对 28 并发配置。
 
 `qsub` 只传 PBS 文件名；队列名字和 worker 数写在文件的 `#PBS -v` 行中。保留每次返回的 PBS job ID；若中途失败，已有 job ID 留在文件里，不要从头重复提交。
 
@@ -187,9 +187,7 @@ printf '%s\n' "$!" > "$FSPT_ADMIN/observer.pid"
   --output results/new_spinless_archive/report --tex
 ```
 
-归档同时记录实际耗时和证书范围。背景审核分别检查 abstract stacking
-同构型和实际 marked upper relation；不能把前者通过当成缺失的 upper
-共链已经构造。当前非零背景实现的最终 classification checkpoint 位于
+归档同时记录实际耗时和审核结果。当前非零背景实现的最终 classification checkpoint 位于
 整套 background stacking 之后，包含存在时的 H0 incoming 商；对没有
 H0 输入的群也沿用此顺序，不能据此宣称独立分类模块的耗时。
 

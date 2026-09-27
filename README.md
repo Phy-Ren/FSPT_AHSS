@@ -1,240 +1,85 @@
 # FSPT_AHSS
 
-Independent exact computation of three-dimensional crystalline fermionic SPT
-decoration layers and stacking extensions for the 230 ordinary space groups.
+Independent exact computation of decoration-layer classifications and abstract
+stacking groups for three-dimensional crystalline fermionic SPT phases.
 
-Both physical conventions now have **all 230 numerical classifications and
-abstract stacking groups computed under the stated mathematical inputs**, using the full infinite affine space groups.
-Translations, weak phases and atomic fermion parity are retained.
+The results cover all **230 space groups and 32 crystallographic point groups
+in both physical spin conventions**: 524 calculations in total.
+The [result tables](results/group_tables/README.md) list the four surviving
+decoration layers and the final stacking group.
 
-| Physical convention | Effective internal extension | Complete campaign | Stored marked relations under the selected formulas |
-|---|---|---|---|
-| Crystalline spin-half = internal spinless | `omega = 0`, `s = w1` | 3 h 31 min 39 s | 230/230 |
-| Crystalline spinless = internal spin-half | `omega = w2 + w1^2`, `s = w1` | 3 h 47 min 35 s | 214/230 |
+| Physical convention | Effective internal background | Space groups | Point groups |
+|---|---|---:|---:|
+| Crystalline spin-half = internal spinless | `s=w1`, `omega=0` | 230 | 32 |
+| Crystalline spinless = internal spin-half | `s=w1`, `omega=w2+w1^2` | 230 | 32 |
 
-For the other 16 spinless groups, the actual upper p+ip-to-CF/bosonic carries
-remain unknown. Every allowed carry has the same certified abstract group;
-the program retains that family and refuses unsupported marked stacking.
-The other stored upper relations use a selected calibrated p+ip product.
-Reproducing its coefficients and checking closure does **not** prove that it is
-the unique physical stacking operation. A subsequent independent finite `S4`
-physical benchmark, together with pullback naturality, fixes 26 of the 32
-spin-half and six of the seven gauge-trivial spinless torsion-p+ip squares.
-The remaining cases are spin-half SG29, 41, 45, 110, 120, 219 and spinless SG29.
-A zero final carry does not prove a raw twister is zero. See the
-[complete case inventory](docs/case_reports/UPPER_CARRY_SCOPE_ZH.md),
-[C4 naturality argument](docs/case_reports/C4_NATURALITY_CALIBRATION_ZH.md), and
-[d3/d4 explanation](docs/case_reports/PIP_DIFFERENTIALS_ZH.md).
-Each convention agrees with its complete numerical baseline in all saved
-mathematical fields and native witnesses. These are regression comparisons
-between independently run configurations of this implementation.
+Space-group calculations use the full infinite affine group, including
+translations and weak phases. Point-group calculations use the actual finite
+three-dimensional matrix group, without translations. The final group includes
+the extensions between decoration layers; it is not generally their direct sum.
 
-Start with the [Chinese project report](docs/PROJECT_REPORT_ZH.md),
-[460-row comparison](results/optimization_validation/background_v3/physical_conventions/README.md),
-and the two tables: [spin-half](results/space_groups/report/space_groups.pdf),
-[spinless](results/space_groups_spinless/report/space_groups.pdf).
-Formula notes are provided for [omega zero](notes/independent_space_group_formulas.pdf)
-and the [Pin-minus background](notes/crystalline_spinless_formulas.pdf).
-The p+ip diagnostics distinguish outgoing H1 obstructions from incoming H0
-relations: [spin-half](docs/PIP_DIFFERENTIAL_DIAGNOSTICS.md),
-[spinless](docs/PIP_DIFFERENTIAL_DIAGNOSTICS_SPINLESS.md).
+The implementation uses GAP/HAP, CrystCat and Polycyclic for general group and
+resolution operations. It does not load or wrap SptSet. Exact integer and
+rational arithmetic is used for the cochain operations and group presentations.
+External answer tables are not calculation inputs.
 
-The **32 finite crystallographic point groups in both conventions** have also
-been computed independently, with no translation subgroup. All 320 table cells
-match the supplied manuscript; 316/320 match the published PRX table. The three
-spinless differences, their direct cochain checks and two independent subgroup
-arguments are documented in the [calibration report](results/point_groups/report/CALIBRATION_REPORT.md).
-See the [complete 64-row data](results/point_groups/report/classification_stacking_64.csv)
-and [32-row comparison table](results/point_groups/report/FULL_STACKING_32.md).
-The uniform 64-model campaign finished in about 71 seconds of compute-node
-wall time (24 CPU minutes; 0.86 GiB maximum memory per task); the observer
-confirmed all tasks complete 78 seconds after the first submission.
-The finite spinless `Cs`, `C3v`, and `C3h` results determine abstract upper
-groups without constructing marked upper phase relations.
-
-The first convention reached all classification checkpoints in 13 min 3 s.
-For the nonzero background, the checkpoint follows the integrated stacking
-calculation and is **not a standalone classification timing**. Both campaigns
-shared five PBS workers; elapsed times include queue delays and competing
-control calculations. See the measured [spin-half](results/space_groups/performance.pdf)
-and [spinless](results/space_groups_spinless/performance.pdf) performance.
-
-The [cluster guide](docs/CLUSTER_RUN.md) gives persistent SSH reuse and fresh PBS
-allocation instructions. The public repository is
-[Phy-Ren/FSPT_AHSS](https://github.com/Phy-Ren/FSPT_AHSS); its publishing history
-is separate from the private working history and comparison inputs.
-The [background derivation](docs/CRYSTALLINE_SPINLESS_BACKGROUND.md) and
-[H0 incoming quotient](docs/BACKGROUND_QUOTIENT.md) explain the second convention.
-
-## Independence
-
-The implementation does not load, wrap, or build upon SptSet. GAP/HAP, CrystCat,
-and Polycyclic provide generic group and resolution infrastructure. The cochain
-adapters, exact quotient computations, classification pipeline, and stacking
-engine are independently implemented. The user's delivered obstruction and
-stacking formulas are mathematical inputs. The collaborator's calibrated
-cochain product supplies an additional mathematical input for the torsion
-p+ip square; its universal coefficients are independently evaluated and
-compiled into this implementation. Production imports no collaborator engine.
-The old SptSet files may be consulted for formula conventions, including the
-supplied H0 unary normalization, and for result comparisons. Production never
-loads that engine or reads external answer tables.
-
-## Computation
-
-The authoritative working directory is `/home/user/xyren/AllFSPT` on
-`cuhk-cluster3`. Numerical work runs inside PBS allocations on compute nodes.
-The local Git checkout is `/home/xingyu/FSPT_AHSS`.
-`scripts/worker.pbs` starts a bounded task worker; `scripts/submit_task.py`
-queues commands and each task retains status, stdout, CPU time, and peak memory.
+## Running a calculation
 
 The tested cluster environment is GAP 4.13.1, HAP 1.62, CrystCat 1.1.10,
-Polycyclic 2.16, the GAP JSON package, and Python 3.8.16. The runtime uses the
-compiled files under `gap/`; it does not require the supplied formula archives
-or collaborator checkout. Regenerating the formulas and running their reference
-oracle tests additionally uses the unmodified inputs under `vendor/` and a
-modern Python interpreter. Those inputs are kept outside Git.
+Polycyclic 2.16, the GAP JSON package and Python 3.8.16. Set `AFS_GAP` to the GAP
+executable when it is not available on `PATH`.
 
-The complete calculation for **one space group is one sequential GAP process**:
-
-```text
-AFSBackend(group), with the selected physical background
-    -> decoration cycles and obstruction primitives
-    -> surviving integer p+ip lattice and complete free generator towers
-    -> lower-layer lifts and products; H0 incoming quotient when present
-    -> upper stacking extension from that same classification object
-    -> final classification, stacking results and certificates
-```
-
-The classification object retains the actual cocycles, obstruction primitives,
-incoming boundaries, and marked quotient coordinates. Stacking uses that same
-object to lift and multiply its generators. A layer's abstract group orders are
-not sufficient input. Parallel workers handle different space groups; they do
-not split these dependent stages across processes. For a nonzero background,
-the H0 p+ip incoming map has higher filtered components: computing its full
-image requires the actual lower-layer product. These lower relations are
-therefore computed before the final classification checkpoint.
-In the current nonzero-background implementation, that checkpoint follows
-the integrated background stacking routine even for groups with no H0 input.
-Its elapsed time is therefore not a separate classification-only benchmark.
-
-Set `AFS_GAP=/path/to/gap` if GAP is not on your `PATH`. Run the complete pipeline with:
+For one space group:
 
 ```sh
-python3 scripts/run_group.py 6 --mode full --output runs/example/sg6.json
-python3 scripts/run_group.py 6 --mode full --crystalline-spin spinless \
-  --output runs/example_spinless/sg6.json
+python3 scripts/run_group.py 219 --mode full --output runs/sg219.json
+python3 scripts/run_group.py 219 --mode full --crystalline-spin spinless \
+  --output runs/sg219_spinless.json
 ```
 
-Use this command inside a compute-node allocation or through the task queue.
-The classification-only mode exists for development checks. Separate development
-campaigns may repeat classification when testing the complete pipeline.
-For a nonzero background, classification-only mode still runs the integrated
-background stacking routine and omits its final stacking export.
-
-For a freshly allocated set of workers, freeze and queue the entire calculation
-with the following pattern; substitute the five live queue names created by the
-[cluster guide](docs/CLUSTER_RUN.md):
+For one finite point group:
 
 ```sh
-python3 scripts/submit_campaign.py --run runs/new_campaign \
-  --queues NEW_Q1 NEW_Q2 NEW_Q3 NEW_Q4 NEW_Q5 \
-  --groups 1-230 --mode full --source results/space_groups/source \
-  --timings results/space_groups --timeout 27000
+python3 scripts/run_point_group.py 10 --crystalline-spin half \
+  --output runs/point10_half.json
+python3 scripts/run_point_group.py 10 --crystalline-spin spinless \
+  --output runs/point10_spinless.json
 ```
 
-For crystalline spinless, select the physical convention explicitly and use
-its own frozen source:
+Each calculation is one sequential GAP process: it computes the classification,
+then computes stacking using the same classification object. Parallelism is
+across groups. The [cluster guide](docs/CLUSTER_RUN.md) describes compute-node
+allocation, bounded workers and persistent SSH connection reuse.
+
+## Results and reproducibility
+
+The numerical archives retain exact results, classification checkpoints, frozen
+GAP source, task records and file hashes:
+
+- [Crystalline spin-half space groups](results/space_groups)
+- [Crystalline spinless space groups](results/space_groups_spinless)
+- [Both finite point-group conventions](results/point_groups)
+- [Classification and final group tables](results/group_tables/README.md)
+
+Use the archive's `source/` directory with `--source` to reproduce its recorded
+version. Result records retain the original computation metadata. The public
+tables present the associated-graded layers and final abstract group structure.
 
 ```sh
-python3 scripts/submit_campaign.py --run runs/new_spinless_campaign \
-  --queues NEW_Q1 NEW_Q2 NEW_Q3 NEW_Q4 NEW_Q5 \
-  --groups 1-230 --mode full --crystalline-spin spinless \
-  --source results/space_groups_spinless/source \
-  --timings results/space_groups_spinless --timeout 27000
-```
-
-Immediately after submission, run the observer in a separate login-node
-terminal and leave it running until completion:
-
-```sh
-python3 scripts/watch_campaign.py runs/new_campaign
-```
-
-This records classification and full completion on one clock, including queue
-delays. If that terminal is interrupted, restart the same command with
-`--resume` to preserve the existing observation history.
-
-Queue names must identify live PBS workers. The scheduler starts known long
-calculations and previously unfinished groups early. Prior runtimes affect only
-the task order; the numerical calculation reads no previous classification.
-The timeout is a per-group scheduling limit, not a measured or predicted runtime.
-Its default is 27000 seconds (7.5 hours); the worker allocation must leave
-enough time for each queued task and cleanup. The original spin-half run preserves its
-completed scheduling-extension evidence in the archive; see
-`docs/SCHEDULING_EXTENSIONS.md`. Its SG219 task actually finished before its
-original four-hour limit and the original worker recorded `done`, exit zero.
-Each worker limits simultaneous single-threaded GAP processes to its slot count.
-The supplied PBS templates request 28 CPU cores per node; worker counts must be
-between 1 and 28, including values supplied through `AFS_WORKERS`.
-The measured campaigns share five workers with a combined limit of 140 tasks;
-other candidate and validation tasks were also running. Their observed elapsed
-times include queueing, shared load, and observation delay, rather than measuring
-exclusive use of 140 cores. Classification completion is observed within the
-full pipeline, not in a separate classification-only benchmark.
-`campaign.json` records the frozen source hashes, commands, and scheduling plan.
-The classification checkpoint records the completed classification within the
-same process. Its `checkpoint_stage` distinguishes the original early
-classification checkpoint from the later checkpoint after the integrated
-background stacking calculation. Neither path reconstructs stacking from
-abstract layer orders alone.
-
-Audit and use saved generator relations without another GAP calculation:
-
-```sh
-python3 scripts/audit_run.py results/space_groups --require-complete-witnesses \
-  --require-formula-convention normalized-pip-aw-edge-transport-v2
-python3 scripts/stack_result.py results/space_groups/sg219.json \
-  --left '{"P1":1}' --right '{"P1":1}'
+python3 scripts/audit_run.py results/space_groups
 python3 scripts/audit_background_run.py results/space_groups_spinless
+python3 scripts/audit_point_groups.py results/point_groups \
+  --source results/point_groups/source
 ```
 
-Generator coordinates belong to the specific saved presentation; labels from
-different source versions need not describe the same representatives. When
-`pip.free_lattice.fullFreePhaseWitness` is true, `Pfree` coordinates refer to the
-exported primitive surviving lattice basis and its complete defining towers.
-Earlier development files without that export describe only an abstract free
-splitting. See `docs/VALIDATION.md` for the precise mathematical scope and
-`docs/STATUS.md` for the current formula-correction audit.
+The two 230-space-group campaigns took 3 h 31 min 39 s and 3 h 47 min 35 s.
+They shared compute resources; these elapsed times include queueing and other
+validation tasks. The 64 finite point-group calculations took about 71 seconds
+on one compute node with 28 worker slots, using 24 CPU minutes in total and a
+maximum of 0.86 GiB per task. Original timings are retained with the archives.
 
-For crystalline spin-half SG219 the selected product gives `P1 + P1 = C1`, with `P1` of order four. In that convention all 44 groups
-with nonzero free p+ip rank export an actual primitive surviving lattice basis
-and complete generator towers. All 32 surviving torsion p+ip cases include the
-upper phase relation under that product. These exports neither establish its
-physical uniqueness nor mean that every group has undergone
-the separate full comparison-support audit; completed audit cases and the
-mathematical assumptions are recorded in `docs/VALIDATION.md`.
-
-The replay command also accepts strictly audited crystalline-spinless results
-when their marked relations are available. For a nontriangular H0 quotient it
-returns a representative lifted through the exact inverse Smith transform;
-the output labels this `smith-representative`. A unique abstract upper group
-with unknown p+ip carry is insufficient for marked replay and is explicitly
-rejected. It is still a determined abstract stacking group, as reported by
-`scripts/report_background_results.py`; no arbitrary carry is substituted.
-
-The accepted spin-half archive is `results/space_groups`, from `full_closed_cf_v09` with
-source ID `9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96`.
-Use `--source results/space_groups/source` to reproduce that precise version.
-The live runtime additionally supports the nonzero physical background.
-Closed-CF/half-phase evaluation is enabled, the mod-two bar comparison map is
-disabled, and native mod-two classification contraction remains enabled.
-Source, checkpoints, task
-logs, exact results, scheduling evidence and performance are retained together.
-
-All 920 graded-layer entries match the supplied current boss PDF. Its full
-stacking extensions are not supplied. The historical full-stacking comparison
-has 179 equal groups, 21 changes already involving graded layers, four
-same-layer extension differences, and 26 empty reference entries. The provided
-Weicheng materials support finite-model checks, without an affine-230 stacking
-table. Details are in the project report and `docs/STATUS.md`.
+The authoritative cluster directory is `/home/user/xyren/AllFSPT` on
+`cuhk-cluster3`. The public repository is
+[Phy-Ren/FSPT_AHSS](https://github.com/Phy-Ren/FSPT_AHSS).
+See [public release and reproduction instructions](PUBLIC_RELEASE.md) for the
+snapshot process and self-contained tests.
