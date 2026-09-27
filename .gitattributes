@@ -7,10 +7,15 @@ results/classification_frozen/** -text
 results/space_groups/** -text
 results/space_groups_spinless/** -text
 results/pip_diagnostics/** -text
+results/point_groups/** -text
+results/upper_carry_scope/** -text
 results/optimization_validation/** -text
 results/performance_environment/** -text
 results/space_groups/tasks/** -text -diff
 results/space_groups_spinless/tasks/** -text -diff
+results/point_groups/tasks/** -text -diff
+results/optimization_validation/point_group_backend/tasks/** -text -diff
+results/optimization_validation/point_group_backend/marked_audit/tasks/** -text -diff
 results/optimization_validation/full_optimized_v08/tasks/** -text -diff
 results/optimization_validation/background_v3/runs/*/tasks/** -text -diff
 results/performance_environment/tasks/** -text -diff
