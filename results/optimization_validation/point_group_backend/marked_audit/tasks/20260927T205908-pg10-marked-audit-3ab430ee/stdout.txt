@@ -1,0 +1,43 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_marked_audit_v1/source/gap/formulas.g:110
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_marked_audit_v1/source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_marked_audit_v1/source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_marked_audit_v1/source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_marked_audit_v1/source/gap/classification.g:253
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_FINITE_BACKEND 10 -4 order=4 dimensions=[ 1, 1, 1, 1, 1, 1, 1 ] cpu_ms=
+18340
+AFS_STAGE 10 cohomology cpu_ms=18926
+AFS_STAGE 10 primary_cf cpu_ms=18928
+AFS_STAGE 10 primary_mc_and_bos cpu_ms=18928
+AFS_STAGE 10 incoming_mc cpu_ms=18933
+AFS_STAGE 10 secondary_bos cpu_ms=18935
+AFS_STAGE 10 secondary_mc cpu_ms=18936
+AFS_STAGE 10 pip cpu_ms=18936
+AFS_STAGE 10 classification_end cpu_ms=18937
+AFS_STAGE 10 stack_lift_D1 cpu_ms=18947
+AFS_STAGE 10 stack_lift_B1 cpu_ms=18947
+AFS_STAGE 10 stack_relation_D1 cpu_ms=19067
+AFS_STAGE 10 stack_relation_B1 cpu_ms=19067
+AFS_POINT_GROUP_WRITTEN 10 spinless computed

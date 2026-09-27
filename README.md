@@ -3,11 +3,11 @@
 Independent exact computation of three-dimensional crystalline fermionic SPT
 decoration layers and stacking extensions for the 230 ordinary space groups.
 
-Both physical conventions now have **all 230 classifications and abstract
-stacking groups determined**, using the full infinite affine space groups.
+Both physical conventions now have **all 230 numerical classifications and
+abstract stacking groups computed under the stated mathematical inputs**, using the full infinite affine space groups.
 Translations, weak phases and atomic fermion parity are retained.
 
-| Physical convention | Effective internal extension | Complete campaign | Marked stacking evidence |
+| Physical convention | Effective internal extension | Complete campaign | Stored marked relations under the selected formulas |
 |---|---|---|---|
 | Crystalline spin-half = internal spinless | `omega = 0`, `s = w1` | 3 h 31 min 39 s | 230/230 |
 | Crystalline spinless = internal spin-half | `omega = w2 + w1^2`, `s = w1` | 3 h 47 min 35 s | 214/230 |
@@ -15,7 +15,16 @@ Translations, weak phases and atomic fermion parity are retained.
 For the other 16 spinless groups, the actual upper p+ip-to-CF/bosonic carries
 remain unknown. Every allowed carry has the same certified abstract group;
 the program retains that family and refuses unsupported marked stacking.
-See the [precise scope and group list](docs/PIP_DIFFERENTIAL_DIAGNOSTICS_SPINLESS.md).
+The other stored upper relations use a selected calibrated p+ip product.
+Reproducing its coefficients and checking closure does **not** prove that it is
+the unique physical stacking operation. A subsequent independent finite `S4`
+physical benchmark, together with pullback naturality, fixes 26 of the 32
+spin-half and six of the seven gauge-trivial spinless torsion-p+ip squares.
+The remaining cases are spin-half SG29, 41, 45, 110, 120, 219 and spinless SG29.
+A zero final carry does not prove a raw twister is zero. See the
+[complete case inventory](docs/case_reports/UPPER_CARRY_SCOPE_ZH.md),
+[C4 naturality argument](docs/case_reports/C4_NATURALITY_CALIBRATION_ZH.md), and
+[d3/d4 explanation](docs/case_reports/PIP_DIFFERENTIALS_ZH.md).
 Each convention agrees with its complete numerical baseline in all saved
 mathematical fields and native witnesses. These are regression comparisons
 between independently run configurations of this implementation.
@@ -29,6 +38,19 @@ and the [Pin-minus background](notes/crystalline_spinless_formulas.pdf).
 The p+ip diagnostics distinguish outgoing H1 obstructions from incoming H0
 relations: [spin-half](docs/PIP_DIFFERENTIAL_DIAGNOSTICS.md),
 [spinless](docs/PIP_DIFFERENTIAL_DIAGNOSTICS_SPINLESS.md).
+
+The **32 finite crystallographic point groups in both conventions** have also
+been computed independently, with no translation subgroup. All 320 table cells
+match the supplied manuscript; 316/320 match the published PRX table. The three
+spinless differences, their direct cochain checks and two independent subgroup
+arguments are documented in the [calibration report](results/point_groups/report/CALIBRATION_REPORT.md).
+See the [complete 64-row data](results/point_groups/report/classification_stacking_64.csv)
+and [32-row comparison table](results/point_groups/report/FULL_STACKING_32.md).
+The uniform 64-model campaign finished in about 71 seconds of compute-node
+wall time (24 CPU minutes; 0.86 GiB maximum memory per task); the observer
+confirmed all tasks complete 78 seconds after the first submission.
+The finite spinless `Cs`, `C3v`, and `C3h` results determine abstract upper
+groups without constructing marked upper phase relations.
 
 The first convention reached all classification checkpoints in 13 min 3 s.
 For the nonzero background, the checkpoint follows the integrated stacking
@@ -185,10 +207,11 @@ Earlier development files without that export describe only an abstract free
 splitting. See `docs/VALIDATION.md` for the precise mathematical scope and
 `docs/STATUS.md` for the current formula-correction audit.
 
-For crystalline spin-half SG219 this returns `P1 + P1 = C1`, with `P1` of order four. In that convention all 44 groups
+For crystalline spin-half SG219 the selected product gives `P1 + P1 = C1`, with `P1` of order four. In that convention all 44 groups
 with nonzero free p+ip rank export an actual primitive surviving lattice basis
 and complete generator towers. All 32 surviving torsion p+ip cases include the
-upper phase relation. These exports do not mean that every group has undergone
+upper phase relation under that product. These exports neither establish its
+physical uniqueness nor mean that every group has undergone
 the separate full comparison-support audit; completed audit cases and the
 mathematical assumptions are recorded in `docs/VALIDATION.md`.
 

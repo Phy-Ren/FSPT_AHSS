@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_point_group.py",
+    "4",
+    "--crystalline-spin",
+    "half",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/half_pg4.json"
+  ],
+  "created": 1790513101.0520859,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 20.106369972229004,
+  "exit_code": 1,
+  "finished": 1790513157.7755382,
+  "hostname": "n01.local",
+  "id": "20260927T204501-pg-half-4-v1-44691596",
+  "pbs_job": "115956.head.local",
+  "pid": 16531,
+  "queue": "point_groups_20260927T123628Z_q1",
+  "started": 1790513137.6690016,
+  "status": "failed",
+  "timeout_s": 3600
+}

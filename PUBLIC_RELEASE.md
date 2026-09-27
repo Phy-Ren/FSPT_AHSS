@@ -60,6 +60,7 @@ PYTHONPATH=tests python3 -m unittest test_audit_background_run \
   test_compare_background_runs test_report_physical_conventions
 PYTHONPATH=tests python3 -m unittest test_boss_parser test_c4_pip_square_cf \
   test_closed_cf_phase test_free_pip_universal test_pip_incoming_formula
+PYTHONPATH=tests python3 -m unittest test_point_group_audit test_point_group_marked_controls
 ```
 
 An unrestricted `unittest discover` also selects optional unchanged-reference

@@ -1,0 +1,135 @@
+{
+  "classification_calculations_executed": false,
+  "derived_from_frozen_inputs_only": true,
+  "records": [
+    {
+      "background_projection_gauge": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "background_section_gauge": [
+        1,
+        0
+      ],
+      "central_extension_maps": "Q(a,g)=(a+lambda(g),qg); J(a,h)=(a+lambda(jh),jh); QJ=id",
+      "checked": {
+        "all_background_pairs": true,
+        "all_multiplication_products": true,
+        "all_sign_values": true,
+        "central_extension_retraction": true,
+        "normal_kernel_order3": true,
+        "qj_identity": true
+      },
+      "consequence": "Naturality makes q* a split injection on the full classification and all filtered subgroups. Thus any known element order in the small input must occur in the large input.",
+      "equation": "omega_G(g,h)+omega_H(qg,qh)=lambda(g)+lambda(h)+lambda(gh) mod2",
+      "identity_index_large": 6,
+      "identity_index_small": 2,
+      "large": "C3h",
+      "large_file": "spinless_pg22.json",
+      "large_hm": "-6",
+      "large_sha256": "12f417f75340a9986eec7166d8b88e89e2d3e61ceb903550bb23b6e06c64bbf9",
+      "no_classification_value_used_to_select_maps": true,
+      "normal_odd_kernel_indices": [
+        2,
+        4,
+        6
+      ],
+      "physical_convention": "crystalline-spinless/internal-spin-half, s=det, omega=w2+w1^2",
+      "projection_to_small_indices": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "scope": "This certificate alone proves the split injection. The equality of complete classifications additionally uses odd-kernel/2-primary reasoning.",
+      "section_to_large_indices": [
+        5,
+        6
+      ],
+      "small": "Cs",
+      "small_file": "spinless_pg4.json",
+      "small_hm": "m",
+      "small_sha256": "dfa604c64f3f3e907aa57134b1aa5de0c55436eeeb3f81adf920a82e0fbfabf9",
+      "source_id": "8fceb2f5f3bcaa9205c00962cd2c7c78b493a45f583fb090f246e7ce1637f297"
+    },
+    {
+      "background_projection_gauge": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "background_section_gauge": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "central_extension_maps": "Q(a,g)=(a+lambda(g),qg); J(a,h)=(a+lambda(jh),jh); QJ=id",
+      "checked": {
+        "all_background_pairs": true,
+        "all_multiplication_products": true,
+        "all_sign_values": true,
+        "central_extension_retraction": true,
+        "normal_kernel_order3": true,
+        "qj_identity": true
+      },
+      "consequence": "Naturality makes q* a split injection on the full classification and all filtered subgroups. Thus any known element order in the small input must occur in the large input.",
+      "equation": "omega_G(g,h)+omega_H(qg,qh)=lambda(g)+lambda(h)+lambda(gh) mod2",
+      "identity_index_large": 11,
+      "identity_index_small": 4,
+      "large": "D3d",
+      "large_file": "spinless_pg20.json",
+      "large_hm": "-3m",
+      "large_sha256": "f9fbef2652854d96a626c1a12ea3a47babcf1c7282deafe810b58d002b9da6e4",
+      "no_classification_value_used_to_select_maps": true,
+      "normal_odd_kernel_indices": [
+        3,
+        6,
+        11
+      ],
+      "physical_convention": "crystalline-spinless/internal-spin-half, s=det, omega=w2+w1^2",
+      "projection_to_small_indices": [
+        3,
+        1,
+        4,
+        2,
+        2,
+        4,
+        1,
+        3,
+        3,
+        1,
+        4,
+        2
+      ],
+      "scope": "This certificate alone proves the split injection. The equality of complete classifications additionally uses odd-kernel/2-primary reasoning.",
+      "section_to_large_indices": [
+        2,
+        4,
+        9,
+        11
+      ],
+      "small": "C2h",
+      "small_file": "spinless_pg5.json",
+      "small_hm": "2/m",
+      "small_sha256": "459555f71d819d5fdb251b1be9bed206c6beadeab930f88dcdad5ae6c23133ca",
+      "source_id": "8fceb2f5f3bcaa9205c00962cd2c7c78b493a45f583fb090f246e7ce1637f297"
+    }
+  ],
+  "schema": 1
+}

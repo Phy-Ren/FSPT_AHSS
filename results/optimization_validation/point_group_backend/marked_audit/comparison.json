@@ -1,0 +1,438 @@
+{
+  "c4_full_bar": {
+    "checks": {
+      "degree2": 18,
+      "degree3": 270,
+      "degree4": 810,
+      "degree5": 1458
+    },
+    "ignored_differences": [
+      {
+        "control": true,
+        "original": false,
+        "path": "/witnesses/1/checkedComparisonSupport",
+        "reason": "Additional explicit comparison-support verification, false to true only."
+      }
+    ],
+    "literal_square_coordinates": [
+      {
+        "coordinates": [
+          0
+        ],
+        "generator": "D1"
+      },
+      {
+        "coordinates": [
+          1
+        ],
+        "generator": "B1"
+      }
+    ],
+    "options": {
+      "backgroundProjectedCup0": false,
+      "closedCF": false,
+      "compiledCA": false,
+      "mod2Bar": false,
+      "mod2Contraction": false,
+      "stackAudit": true
+    },
+    "provenance_key_alias": {
+      "spaceGroup": "pointGroupIndex",
+      "value": 10
+    },
+    "result_sha256": "b284ee2931703d5184d19b76e3191452f96b7934677bf2bc3063d6b23349d51e",
+    "unexplained_differences": 0
+  },
+  "controls": [
+    {
+      "control_file": "spinless_pg10.raw.json",
+      "control_sha256": "bbe5bc2a01c4c6b8c8bd86d942ca1b790e5052be93abaa0d4d61337590ff0aed",
+      "formal_file": "spinless_pg10.raw.json",
+      "formal_sha256": "75618496e41bfe721a6838b157350d629981c7e69f6c5326db948b316bc3b39c",
+      "ignored_differences": [
+        {
+          "control": 19141,
+          "original": 19095,
+          "path": "/cpu_ms",
+          "reason": "Measured CPU time changes when support checks are enabled."
+        },
+        {
+          "control": 510,
+          "original": 513,
+          "path": "/resolution_timings/finiteResolutionCpuMs",
+          "reason": "Measured finite-resolution CPU time."
+        },
+        {
+          "control": true,
+          "original": false,
+          "path": "/stacking/lower/witnesses/1/checkedComparisonSupport",
+          "reason": "Additional explicit comparison-support verification, false to true only."
+        },
+        {
+          "control": 18926,
+          "original": 18940,
+          "path": "/stage_timings/0/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18928,
+          "original": 18942,
+          "path": "/stage_timings/1/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18928,
+          "original": 18942,
+          "path": "/stage_timings/2/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18933,
+          "original": 18947,
+          "path": "/stage_timings/3/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18935,
+          "original": 18949,
+          "path": "/stage_timings/4/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18936,
+          "original": 18950,
+          "path": "/stage_timings/5/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18936,
+          "original": 18950,
+          "path": "/stage_timings/6/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18937,
+          "original": 18951,
+          "path": "/stage_timings/7/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18947,
+          "original": 18961,
+          "path": "/stage_timings/8/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18947,
+          "original": 18961,
+          "path": "/stage_timings/9/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 19067,
+          "original": 19016,
+          "path": "/stage_timings/10/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 19067,
+          "original": 19016,
+          "path": "/stage_timings/11/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 19588,
+          "original": 19549,
+          "path": "/total_cpu_ms",
+          "reason": "Measured CPU time changes when support checks are enabled."
+        }
+      ],
+      "point_group_index": 10,
+      "unexplained_differences": 0
+    },
+    {
+      "control_file": "spinless_pg20.raw.json",
+      "control_sha256": "95ab2fe6d258170b471052fab09a2bf0730de5b82513f1fc41a2dbc5981d4926",
+      "formal_file": "spinless_pg20.raw.json",
+      "formal_sha256": "6664c836e9a17dc27983ad428299ae2b9fcb9565d2c955d27aadd730e968278b",
+      "ignored_differences": [
+        {
+          "control": 48074,
+          "original": 35991,
+          "path": "/cpu_ms",
+          "reason": "Measured CPU time changes when support checks are enabled."
+        },
+        {
+          "control": 1335,
+          "original": 1331,
+          "path": "/resolution_timings/finiteResolutionCpuMs",
+          "reason": "Measured finite-resolution CPU time."
+        },
+        {
+          "control": true,
+          "original": false,
+          "path": "/stacking/lower/witnesses/1/checkedComparisonSupport",
+          "reason": "Additional explicit comparison-support verification, false to true only."
+        },
+        {
+          "control": true,
+          "original": false,
+          "path": "/stacking/lower/witnesses/2/checkedComparisonSupport",
+          "reason": "Additional explicit comparison-support verification, false to true only."
+        },
+        {
+          "control": 19765,
+          "original": 19882,
+          "path": "/stage_timings/0/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 19803,
+          "original": 19924,
+          "path": "/stage_timings/1/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 21285,
+          "original": 21411,
+          "path": "/stage_timings/2/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 21377,
+          "original": 21503,
+          "path": "/stage_timings/3/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 21410,
+          "original": 21537,
+          "path": "/stage_timings/4/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 21411,
+          "original": 21539,
+          "path": "/stage_timings/5/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 23427,
+          "original": 23576,
+          "path": "/stage_timings/6/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 23441,
+          "original": 23590,
+          "path": "/stage_timings/7/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 23450,
+          "original": 23600,
+          "path": "/stage_timings/8/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 23450,
+          "original": 23600,
+          "path": "/stage_timings/9/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 27769,
+          "original": 24439,
+          "path": "/stage_timings/10/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 39612,
+          "original": 28073,
+          "path": "/stage_timings/11/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 39612,
+          "original": 28073,
+          "path": "/stage_timings/12/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 42439,
+          "original": 30777,
+          "path": "/stage_timings/13/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 48597,
+          "original": 37186,
+          "path": "/total_cpu_ms",
+          "reason": "Measured CPU time changes when support checks are enabled."
+        }
+      ],
+      "point_group_index": 20,
+      "unexplained_differences": 0
+    },
+    {
+      "control_file": "spinless_pg22.raw.json",
+      "control_sha256": "abf8740be7de163eb2e6bc08b014c25083e24c9dbf97bd40b8bcfc46dc12e72a",
+      "formal_file": "spinless_pg22.raw.json",
+      "formal_sha256": "32d713eefa3d8d4cb32533592bd44639025e29a7b53f3a8db520f3d82fbf77d6",
+      "ignored_differences": [
+        {
+          "control": 19456,
+          "original": 19695,
+          "path": "/cpu_ms",
+          "reason": "Measured CPU time changes when support checks are enabled."
+        },
+        {
+          "control": 512,
+          "original": 515,
+          "path": "/resolution_timings/finiteResolutionCpuMs",
+          "reason": "Measured finite-resolution CPU time."
+        },
+        {
+          "control": true,
+          "original": false,
+          "path": "/stacking/lower/witnesses/1/checkedComparisonSupport",
+          "reason": "Additional explicit comparison-support verification, false to true only."
+        },
+        {
+          "control": true,
+          "original": false,
+          "path": "/stacking/lower/witnesses/2/checkedComparisonSupport",
+          "reason": "Additional explicit comparison-support verification, false to true only."
+        },
+        {
+          "control": 18302,
+          "original": 19134,
+          "path": "/stage_timings/0/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18306,
+          "original": 19137,
+          "path": "/stage_timings/1/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18306,
+          "original": 19137,
+          "path": "/stage_timings/2/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18320,
+          "original": 19152,
+          "path": "/stage_timings/3/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18323,
+          "original": 19155,
+          "path": "/stage_timings/4/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18356,
+          "original": 19188,
+          "path": "/stage_timings/5/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18356,
+          "original": 19188,
+          "path": "/stage_timings/6/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18358,
+          "original": 19190,
+          "path": "/stage_timings/7/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18383,
+          "original": 19216,
+          "path": "/stage_timings/8/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18392,
+          "original": 19226,
+          "path": "/stage_timings/9/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18392,
+          "original": 19226,
+          "path": "/stage_timings/10/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 18499,
+          "original": 19250,
+          "path": "/stage_timings/11/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 19038,
+          "original": 19383,
+          "path": "/stage_timings/12/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 19038,
+          "original": 19383,
+          "path": "/stage_timings/13/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 19129,
+          "original": 19458,
+          "path": "/stage_timings/14/cpu_ms",
+          "reason": "Stage CPU timestamp; all stage names and their order remain compared."
+        },
+        {
+          "control": 19903,
+          "original": 20173,
+          "path": "/total_cpu_ms",
+          "reason": "Measured CPU time changes when support checks are enabled."
+        }
+      ],
+      "point_group_index": 22,
+      "unexplained_differences": 0
+    }
+  ],
+  "formal_campaign_sha256": "edff116b0059ee9744b43d762eaafe5a3b5818691a9675456d59e4a62cc1fb6a",
+  "schema": "point-group-marked-control-comparison-v1",
+  "scope": "All numerical fields and actual native witnesses compared. No reference answer table read. Point22 retains the original upper-carry scope; lower support checks do not complete unknown upper carries.",
+  "source_id": "8fceb2f5f3bcaa9205c00962cd2c7c78b493a45f583fb090f246e7ce1637f297",
+  "tasks": [
+    {
+      "id": "20260927T205908-pg10-marked-audit-3ab430ee",
+      "metrics_sha256": "2a73d0cfad63111c1f89ae6782245714ff304919f3c1e361598add4c2c6b8c65",
+      "status_sha256": "e52d5770be031dbcd5cd04451f715d94374f3d1cc65d572ac808afdcef9d5ae9",
+      "stdout_sha256": "9037695264540a7e53a7057d86140e9099ead1bec2d241476d68ad849e9cd81d"
+    },
+    {
+      "id": "20260927T205908-pg20-marked-audit-b29b64b3",
+      "metrics_sha256": "a52822922dc3bb7fc6e7130622cdb170cfe5b6d12a4d98fbfedaf9225220a464",
+      "status_sha256": "0c625cb3261f50531cb2908b968fce3677f3fe78b2a1d13e44f0bfd5d09d48d7",
+      "stdout_sha256": "42dfa0b82ca21ce2c1e881d70f49fb84ac1c53a8fc2fc2803f4270175d808daf"
+    },
+    {
+      "id": "20260927T205908-pg22-marked-audit-eb763a02",
+      "metrics_sha256": "fa102da424454eeba5d9f009a73e8489c9249034daf6bba6ac71e017877ac995",
+      "status_sha256": "d4f1689536f6c2e13327a58557a1672adf05dcd89c8395626afd21ebaf6ff1e2",
+      "stdout_sha256": "5945cfa6ec28672094ba0603c5e23e72340b7eded38aa3888e59fa82e7082d7b"
+    },
+    {
+      "id": "20260927T210033-pg10-fullbar-exhaustive-b75395fe",
+      "metrics_sha256": "36eb2dd70e4d7e390f1f703a62209d99daa7a592e6a4b3d965968baa2677a23a",
+      "status_sha256": "8ea581cf9a347dbdd082cbf52b9dc27fa03d2978f50b9bc4588a70e8f9ce67b7",
+      "stdout_sha256": "d823aba1a35fa6b37143d2f0b06a9449a871eb96af0143524537cfbd39703962"
+    }
+  ]
+}

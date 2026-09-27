@@ -1,0 +1,504 @@
+{
+  "background_projected_native_cup": true,
+  "binary_bar_mod2": false,
+  "bosonic": [],
+  "checkpoint_stage": "classification-complete-including-background-stacking-and-H0-incoming",
+  "classification_status": "computed",
+  "closed_cf_obstruction": true,
+  "complex_fermion": [],
+  "convention": "physical-spinless-det-sign-Pin-minus",
+  "cpu_ms": 18645,
+  "crystalline_background": {
+    "affineCohomologyCoordinates": [
+      1
+    ],
+    "characteristicClass": "w2(V)+w1(V)^2",
+    "cohomologyGroupScope": "actual finite matrix point group; affineCohomologyCoordinates is a legacy field name for its native H2 coordinates",
+    "construction": "exact-rational-spin-lift-of-det-times-point-representation",
+    "gaugeReducedToZero": false,
+    "identityIndex": 2,
+    "metric": [
+      [
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    ],
+    "metricDiagonal": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "multiplication": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "nativeDifferential1F2": [
+      [
+        0
+      ]
+    ],
+    "nativeDifferential2F2": [
+      [
+        0
+      ]
+    ],
+    "nativeH2Generators": [
+      [
+        1
+      ]
+    ],
+    "nativeOriginalOmega2": [
+      1
+    ],
+    "normalizedCocycleChecked": true,
+    "omegaTable": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "orthogonalBasis": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "pointElements": [
+      [
+        [
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ]
+    ],
+    "pointOrder": 2,
+    "rationalEncoding": "[numerator,denominator] for all entries of pointElements/metric/orthogonalBasis/metricDiagonal/rationalSpinLifts",
+    "rationalSpinLifts": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "signTable": [
+      0,
+      0
+    ]
+  },
+  "crystalline_spin": "spinless",
+  "formula_convention": "normalized-pip-aw-edge-transport-v2",
+  "generic_pip_compiled": true,
+  "h0PipIncoming": {
+    "coordinates": [
+      1
+    ],
+    "order": 2
+  },
+  "majorana": [],
+  "native_mod2_cache_degrees": 0,
+  "native_mod2_contraction": true,
+  "native_primary_operations": true,
+  "native_target_cycles": false,
+  "pip": {
+    "free_rank": 0,
+    "orders": [],
+    "status": "computed",
+    "torsion": []
+  },
+  "point_group": {
+    "catalogue": "CrystCat MatGroupZClass(3, representativeITNumber)",
+    "catalogueKeyScope": "IT number selects only a finite linear representation; no affine group or answer table is used",
+    "crystCatParameters": [
+      3,
+      2,
+      1,
+      1
+    ],
+    "determinantDistribution": {
+      "negative": 0,
+      "positive": 2
+    },
+    "elementSpectra": [
+      [
+        [
+          1,
+          3,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          2,
+          -1,
+          1
+        ],
+        1
+      ]
+    ],
+    "finiteH0ZsOrders": [
+      0
+    ],
+    "finiteH1ZsOrders": [],
+    "hermannMauguin": "2",
+    "identityIndex": 2,
+    "index": 3,
+    "kind": "finite-crystallographic-point-group",
+    "matrices": [
+      [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "matrixGenerators": [
+      [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ]
+    ],
+    "matrixIsomorphismCheckedAllProducts": true,
+    "matrix_hash_encoding": "UTF-8 compact JSON of lexicographically sorted integer matrices",
+    "matrix_set_sha256": "97d9c5df7bd2bf3599f69775ed6045c976d3379a7e43b4aae264325493d93782",
+    "multiplication": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "order": 2,
+    "pcpGeneratorMatrixIndices": [
+      1
+    ],
+    "representationDimension": 3,
+    "representativeITNumber": 3,
+    "resolutionElementMatrixIndices": [
+      2,
+      1
+    ],
+    "schoenflies": "C2",
+    "signTable": [
+      0,
+      0
+    ],
+    "translationSubgroupPresent": false,
+    "unitary": true
+  },
+  "point_group_index": 3,
+  "preH0IncomingGraded": {
+    "bosonic": [],
+    "complex_fermion": [],
+    "majorana": [
+      2
+    ]
+  },
+  "ranks": {
+    "CF_incoming": 1,
+    "CF_primary": 0,
+    "H1F2": 1,
+    "H2F2": 1,
+    "H3F2": 1,
+    "MC_primary": 0,
+    "MC_secondary": 0
+  },
+  "resolution_dimensions": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "scope": "3+1D-finite-crystallographic-point-group-associated-graded",
+  "source_id": "14ee3a9a3c8c8d9f1bf90c1effda3c030464317f393263b4aac240317e07e859",
+  "source_snapshot": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source",
+  "sptset_loaded": false,
+  "status": "computed"
+}

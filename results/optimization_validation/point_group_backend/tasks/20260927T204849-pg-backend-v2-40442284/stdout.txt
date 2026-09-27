@@ -1,0 +1,50 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+POINT_INPUT 1 1 C1 order=1 positive=1 catalogue=[ 3, 1, 1, 1 ]
+POINT_INPUT 2 -1 Ci order=2 positive=1 catalogue=[ 3, 1, 2, 1 ]
+POINT_INPUT 3 2 C2 order=2 positive=2 catalogue=[ 3, 2, 1, 1 ]
+POINT_INPUT 4 m Cs order=2 positive=1 catalogue=[ 3, 2, 2, 1 ]
+POINT_INPUT 5 2/m C2h order=4 positive=2 catalogue=[ 3, 2, 3, 1 ]
+POINT_INPUT 6 222 D2 order=4 positive=4 catalogue=[ 3, 3, 1, 1 ]
+POINT_INPUT 7 mm2 C2v order=4 positive=2 catalogue=[ 3, 3, 2, 1 ]
+POINT_INPUT 8 mmm D2h order=8 positive=4 catalogue=[ 3, 3, 3, 1 ]
+POINT_INPUT 9 4 C4 order=4 positive=4 catalogue=[ 3, 4, 1, 1 ]
+POINT_INPUT 10 -4 S4 order=4 positive=2 catalogue=[ 3, 4, 2, 1 ]
+POINT_INPUT 11 4/m C4h order=8 positive=4 catalogue=[ 3, 4, 3, 1 ]
+POINT_INPUT 12 422 D4 order=8 positive=8 catalogue=[ 3, 4, 4, 1 ]
+POINT_INPUT 13 4mm C4v order=8 positive=4 catalogue=[ 3, 4, 5, 1 ]
+POINT_INPUT 14 -42m D2d order=8 positive=4 catalogue=[ 3, 4, 6, 1 ]
+POINT_INPUT 15 4/mmm D4h order=16 positive=8 catalogue=[ 3, 4, 7, 1 ]
+POINT_INPUT 16 3 C3 order=3 positive=3 catalogue=[ 3, 5, 1, 2 ]
+POINT_INPUT 17 -3 C3i order=6 positive=3 catalogue=[ 3, 5, 2, 2 ]
+POINT_INPUT 18 32 D3 order=6 positive=6 catalogue=[ 3, 5, 3, 2 ]
+POINT_INPUT 19 3m C3v order=6 positive=3 catalogue=[ 3, 5, 4, 2 ]
+POINT_INPUT 20 -3m D3d order=12 positive=6 catalogue=[ 3, 5, 5, 2 ]
+POINT_INPUT 21 6 C6 order=6 positive=6 catalogue=[ 3, 6, 1, 1 ]
+POINT_INPUT 22 -6 C3h order=6 positive=3 catalogue=[ 3, 6, 2, 1 ]
+POINT_INPUT 23 6/m C6h order=12 positive=6 catalogue=[ 3, 6, 3, 1 ]
+POINT_INPUT 24 622 D6 order=12 positive=12 catalogue=[ 3, 6, 4, 1 ]
+POINT_INPUT 25 6mm C6v order=12 positive=6 catalogue=[ 3, 6, 5, 1 ]
+POINT_INPUT 26 -6m2 D3h order=12 positive=6 catalogue=[ 3, 6, 6, 1 ]
+POINT_INPUT 27 6/mmm D6h order=24 positive=12 catalogue=[ 3, 6, 7, 1 ]
+POINT_INPUT 28 23 T order=12 positive=12 catalogue=[ 3, 7, 1, 1 ]
+POINT_INPUT 29 m-3 Th order=24 positive=12 catalogue=[ 3, 7, 2, 1 ]
+POINT_INPUT 30 432 O order=24 positive=24 catalogue=[ 3, 7, 3, 1 ]
+POINT_INPUT 31 -43m Td order=24 positive=12 catalogue=[ 3, 7, 4, 1 ]
+POINT_INPUT 32 m-3m Oh order=48 positive=24 catalogue=[ 3, 7, 5, 1 ]
+AFS_FINITE_BACKEND 1 1 order=1 dimensions=[ 1, 0, 0, 0, 0, 0, 0 ] cpu_ms=27612
+POINT_BACKEND_PASS 1
+AFS_FINITE_BACKEND 3 2 order=2 dimensions=[ 1, 1, 1, 1, 1, 1, 1 ] cpu_ms=27884
+POINT_BACKEND_PASS 3
+AFS_FINITE_BACKEND 4 m order=2 dimensions=[ 1, 1, 1, 1, 1, 1, 1 ] cpu_ms=28121
+POINT_BACKEND_PASS 4
+AFS_FINITE_BACKEND 10 -4 order=4 dimensions=[ 1, 1, 1, 1, 1, 1, 1 ] cpu_ms=
+28452
+POINT_BACKEND_PASS 10
+AFS_FINITE_BACKEND 32 m-3m order=48 dimensions=[ 1, 4, 10, 20, 35, 56, 82 
+ ] cpu_ms=31161
+POINT_BACKEND_PASS 32
+AFS_POINT_BACKEND_TEST_PASS

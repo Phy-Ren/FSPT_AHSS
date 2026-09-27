@@ -1,0 +1,42 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v1/source/gap/formulas.g:110
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v1/source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v1/source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v1/source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v1/source/gap/classification.g:253
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v1/source/gap/point_group_backend.g:99
+  data:=AFSPinMinusPointGroup(ctx.pointGroup);
+        ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v1/source/gap/point_group_backend.g:135
+    for k in RecNames(x) do AFSPointGroupExportLabels(x.(k));od;
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v1/source/gap/point_group_backend.g:137
+    for k in [1..Length(x)] do AFSPointGroupExportLabels(x[k]);od;
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^
+Error, AL_EXECUTABLE, the executable for PARI/GP, has to be set
+GAP_NOT_ACCEPTED exit=0 sentinel=False error=True

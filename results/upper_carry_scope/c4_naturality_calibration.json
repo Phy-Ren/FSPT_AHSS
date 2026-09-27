@@ -1,0 +1,1911 @@
+{
+  "archives": {
+    "spin_half": {
+      "archive_sha256": "60bc072c330c838a10e6a1f663eb6664e1d09e010b5081141dacf609aff33831",
+      "source_id": "9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96"
+    },
+    "spinless": {
+      "archive_sha256": "1c2148ca95fd5245ec5a490665f784229a629e2c8745b6838c17262ba7e3aa72",
+      "source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252"
+    }
+  },
+  "common_frozen_natural_sources": {
+    "pip_c4_data.g": "77bbf5267277f33efee025666e7fd22b1136a5f483151fceb5abd833b151f18c",
+    "pip_coordinates.g": "817af838199cc6ea422c73de3497525f67f0170ad68c202c0f70ee5fb561a445",
+    "pip_diagonal_data.g": "b1b79d31169e01f92fd51cb0497a425ca5f98b805f3bc645b7d1edc82be648f5",
+    "pip_stacking.g": "ca64fc2abd496134db9abd16b090295a8ea1c360b5626f1f6707da38c9ae34ab"
+  },
+  "conclusion": "Given crystalline equivalence, the published S4 physical result, the known lower-sector identification and stacking naturality, these 26+6 torsion square classes are fixed independently of the unspecified general upper twisters.",
+  "finite_candidate": {
+    "archive_sha256": "d71caf2a914a077bb735b15907b1e87bce939608501e098cee8826a7a1b0df3b",
+    "path": "results/point_groups/half_pg10.json",
+    "purpose": "checks the selected natural square represents the unique nonzero CF class; not the physical justification",
+    "sha256": "4456f42daaa8d439c986a0e38d8390f87a79b9e8282654070bd7f688180e506e",
+    "source_id": "8fceb2f5f3bcaa9205c00962cd2c7c78b493a45f583fb090f246e7ce1637f297"
+  },
+  "groups": {
+    "spin_half": [
+      {
+        "full_invariants": [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1",
+          "B2",
+          "B3"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "f741dbaad799ac2425da982122cd625633f2444d45a9dd8ffdc81c7c4457b135",
+        "space_group": 7
+      },
+      {
+        "full_invariants": [
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1",
+          "B2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "845a6ab20e7e62c64619197f6eccb6aa157c179a3d856c87151fb38152f0b95a",
+        "space_group": 9
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1",
+          "B2",
+          "B3"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "06c2060a0aa10b760a3a5d4d9af28dbf2788103cf650da6a08b5ebeb74299dcf",
+        "space_group": 27
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          4,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "C1",
+          "C2",
+          "B1",
+          "B2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "359ddeb76187e4a8709e03cda8f5ee18f2be760eb1b85c06b28c5e2ccadf9bbd",
+        "space_group": 30
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          4,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "C1",
+          "C2",
+          "B1",
+          "B2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          2,
+          2,
+          0
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "75d5bce6d7a76537caaa609689ff80ec9345ff5ae91c178a1479dd670b7a4c57",
+        "space_group": 32
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1",
+          "B2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          2,
+          2,
+          0
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "592217ddfd0d03546e2892aae3178881581c90ef6ec4021642017d85ff458dec",
+        "space_group": 33
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          4,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "C1",
+          "C2",
+          "B1",
+          "B2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          2,
+          2,
+          0
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "0c8f475bbf50299ce6a806039bc6dede19232ac09ceab6f66072623f5d1e4090",
+        "space_group": 34
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "C1",
+          "C2",
+          "B1",
+          "B2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "1855da9f22ca83883e080fab9e2af0c386af1981f4b05b3411430dddea56f0c9",
+        "space_group": 37
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          4
+        ],
+        "lower_generator_names": [
+          "D1",
+          "C1",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          2,
+          2,
+          0
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "cd7abd1eeadf02192c74f7472b41fa332b61b9e0fcb661c894faffbb5e3daa44",
+        "space_group": 43
+      },
+      {
+        "full_invariants": [
+          0,
+          2,
+          2,
+          4,
+          8,
+          8,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "D3",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "B1",
+          "B2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "native_character_differential": [
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "0ca24f8f69480ca769f6e706136b68fc2cef792f3284b667ad3ab7e359aa7bd3",
+        "space_group": 81
+      },
+      {
+        "full_invariants": [
+          0,
+          2,
+          2,
+          4,
+          8,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "native_character_differential": [
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "99ac87880c0ded36700414053c47370fcfb33646dcf2935dac379e4d15e02875",
+        "space_group": 82
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "C2",
+          "B1",
+          "B2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "e0a2950b112f5911609b5b658aab9e23f96d539711abdf8c8ea539ae0788158f",
+        "space_group": 103
+      },
+      {
+        "full_invariants": [
+          2,
+          4,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "C1",
+          "C2",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "6a6d60e5097fcf69597a60d3003409e614825489131c4351febb740fc01f0865",
+        "space_group": 104
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "C1",
+          "C2",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          3,
+          1,
+          0,
+          2,
+          2,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          4,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          -4,
+          -4,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "466a02a1f697373c504efb8a3744b062d680e5e6d8dfb6927ba60e75f06c5fc8",
+        "space_group": 106
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5",
+          "D6",
+          "D7",
+          "D8",
+          "C1",
+          "C2"
+        ],
+        "marked_square": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "native_character": [
+          3,
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          -4,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "99674bf3117078f62ef9cdbb96ebe102e469000e26cf63cb8cb2d098aa90348d",
+        "space_group": 112
+      },
+      {
+        "full_invariants": [
+          4,
+          4,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "C1",
+          "C2",
+          "C3",
+          "B1"
+        ],
+        "marked_square": [
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          3,
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          -4,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "e6d2767df05d54bfee9562b073bb9771b171994c1ccb0d8e23c5131b9d43028b",
+        "space_group": 114
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "C1",
+          "C2",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "native_character": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          -4,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "40d65b6e807e42165de1a24bd253ba8c604cde25604fbd8a3f5687738fcdcafb",
+        "space_group": 116
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5",
+          "C1",
+          "C2",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "native_character": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          0
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -4,
+          -4,
+          -4,
+          0,
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "1e3a02a50f74bfd6c1a137465342b0fe1482a1b3db1a5c8ae3daefa53f455896",
+        "space_group": 117
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "D5",
+          "C1",
+          "C2",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        "native_character": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          0
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -4,
+          -4,
+          -4,
+          0,
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "3a467eb57e11b046fa37dd0e5d386b88f06efb45abe65cde9fff921ffaeed68a",
+        "space_group": 118
+      },
+      {
+        "full_invariants": [
+          4,
+          8,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "C1",
+          "C2",
+          "C3",
+          "B1"
+        ],
+        "marked_square": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          4,
+          4,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -8,
+          0,
+          -8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "0224eda69c83ad97a8a7968e41535f3e6d4e56321481161b3c773c500bb00147",
+        "space_group": 122
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "91e1c756e1b045a89d41ea3333ebcfdb7e373126017acac5e83070e24a483187",
+        "space_group": 158
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          6
+        ],
+        "lower_generator_names": [
+          "D1",
+          "C1",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "5124e7f53195f723f33b68f2b800d116be16ff26c898bfa1c0cd50fc003a7655",
+        "space_group": 159
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0
+        ],
+        "native_character": [
+          3,
+          1,
+          2,
+          2,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "a73824020ec0a15567db9f1e67ddcaf2b1f6b8852cec2bbd7ae2b7a89bd072ff",
+        "space_group": 161
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "79b75fa30e785bdd11538734627a4a83bf0908545b2cb386c45961107ea6a6eb",
+        "space_group": 184
+      },
+      {
+        "full_invariants": [
+          2,
+          2,
+          2,
+          4
+        ],
+        "lower_generator_names": [
+          "D1",
+          "D2",
+          "C1",
+          "C2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          4,
+          4,
+          0,
+          0,
+          -4,
+          -4,
+          0,
+          0,
+          -4,
+          -4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "3067290d5ccf8e87d872824194e5b6d1ba40bc411825c9762d0e666ee60ce626",
+        "space_group": 218
+      },
+      {
+        "full_invariants": [
+          4,
+          8
+        ],
+        "lower_generator_names": [
+          "D1",
+          "C1",
+          "C2"
+        ],
+        "marked_square": [
+          2,
+          1,
+          0
+        ],
+        "native_character": [
+          3,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          -4,
+          4,
+          -4,
+          0,
+          0,
+          0,
+          0,
+          -8,
+          0,
+          -8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "67347f677e42f09cfd0288554513900b04bfbabb315b08f35903e9436ffc322f",
+        "space_group": 220
+      }
+    ],
+    "spinless": [
+      {
+        "background_gauge": {
+          "bar_primitive_recipe": "AFSSolve on the original Pin-minus pullback, including comparison homotopy",
+          "native_equation_independently_checked": true,
+          "native_omega": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "native_primitive": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scope": "central-extension gauge equivalence; relation remains in the saved zero-background gauge"
+        },
+        "full_invariants": [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1",
+          "B2",
+          "B3"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "bbbd31b3aa6a6963afbb3100a151e6d80212885f386c0098a7ad4778b3434981",
+        "space_group": 7
+      },
+      {
+        "background_gauge": {
+          "bar_primitive_recipe": "AFSSolve on the original Pin-minus pullback, including comparison homotopy",
+          "native_equation_independently_checked": true,
+          "native_omega": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "native_primitive": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scope": "central-extension gauge equivalence; relation remains in the saved zero-background gauge"
+        },
+        "full_invariants": [
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1",
+          "B2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "82794284e7e01cb99e8c66c6d62218ff0e065158a006e824c896d12b88014c52",
+        "space_group": 9
+      },
+      {
+        "background_gauge": {
+          "bar_primitive_recipe": "AFSSolve on the original Pin-minus pullback, including comparison homotopy",
+          "native_equation_independently_checked": true,
+          "native_omega": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "native_primitive": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "scope": "central-extension gauge equivalence; relation remains in the saved zero-background gauge"
+        },
+        "full_invariants": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1",
+          "B2"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          2,
+          2,
+          0
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          -4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "7f30e02d28d591b7e2435b653a82337ce0a153f0008a6b1616b0388e4154feeb",
+        "space_group": 33
+      },
+      {
+        "background_gauge": {
+          "bar_primitive_recipe": "AFSSolve on the original Pin-minus pullback, including comparison homotopy",
+          "native_equation_independently_checked": true,
+          "native_omega": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "native_primitive": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "scope": "central-extension gauge equivalence; relation remains in the saved zero-background gauge"
+        },
+        "full_invariants": [
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "8a8372250d9a1152049645b1b4441255bf8bb6e06123ce1dc6415a319db77ae8",
+        "space_group": 158
+      },
+      {
+        "background_gauge": {
+          "bar_primitive_recipe": "AFSSolve on the original Pin-minus pullback, including comparison homotopy",
+          "native_equation_independently_checked": true,
+          "native_omega": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "native_primitive": [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "scope": "central-extension gauge equivalence; relation remains in the saved zero-background gauge"
+        },
+        "full_invariants": [
+          2,
+          2,
+          6
+        ],
+        "lower_generator_names": [
+          "D1",
+          "C1",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0,
+          0
+        ],
+        "native_character": [
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "001c25f59d447a868b84b43e262d441d850c26bf47df3e7681ded5cf3240affe",
+        "space_group": 159
+      },
+      {
+        "background_gauge": {
+          "bar_primitive_recipe": "AFSSolve on the original Pin-minus pullback, including comparison homotopy",
+          "native_equation_independently_checked": true,
+          "native_omega": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "native_primitive": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "scope": "central-extension gauge equivalence; relation remains in the saved zero-background gauge"
+        },
+        "full_invariants": [
+          2,
+          2,
+          2
+        ],
+        "lower_generator_names": [
+          "C1",
+          "B1"
+        ],
+        "marked_square": [
+          0,
+          0
+        ],
+        "native_character": [
+          3,
+          1,
+          2,
+          2,
+          2
+        ],
+        "native_character_differential": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "orientation_native": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "result_sha256": "5761d3d684c7453f457f28f09406ba852f5b6538408d95bd8c3f01b4538f5cee",
+        "space_group": 161
+      }
+    ]
+  },
+  "limits": [
+    "No arbitrary upper product or full coherence theorem is derived.",
+    "Character differential values are retained archived certificates; this static audit does not reconstruct their resolution matrices.",
+    "Spinless relations are certified in the stored trivialized-extension gauge, not newly transformed into original Pin-minus cochain coordinates.",
+    "Other affine torsion cases and the sixteen marked-unknown cases are not certified by this C4 argument."
+  ],
+  "new_bar_evaluation": false,
+  "new_gap_computation": false,
+  "physical_input": {
+    "doi": "10.1103/PhysRevX.15.031029",
+    "filtration_source": "Table III (page 51), internal-spinless S4 panel; also independently computed by known lower-sector operations",
+    "full_group": [
+      4
+    ],
+    "full_group_source": "Table I (page 4), crystalline spin-half S4; independent real-space argument in section III B (pages 11-13)",
+    "input_independent_of_selected_Gamma": true,
+    "interpretation": "S4 means the geometric fourfold roto-reflection, abstractly cyclic order four, not the permutation group",
+    "layers": {
+      "bosonic": [],
+      "complex_fermion": [
+        2
+      ],
+      "majorana": [],
+      "pip": [
+        2
+      ]
+    },
+    "pdf_sha256": "eda983b3c093877d7b6d34da1092ae8c8c5dc272746e6f4eaf28f35a7438c692"
+  },
+  "schema": 1,
+  "scope": "static archived-certificate audit plus the stated mathematical naturality argument",
+  "script_sha256": "66b08548299820453aba9706806e382301b1ccc2101e72a773e459ebe2f9bd23"
+}

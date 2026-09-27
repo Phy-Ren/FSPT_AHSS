@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_point_group.py",
+    "8",
+    "--crystalline-spin",
+    "half",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/point_groups_64_v1/source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/point_groups_64_v1/half_pg8.json"
+  ],
+  "created": 1790513589.4452121,
+  "crystalline_spin": "half",
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 22.26555895805359,
+  "exit_code": 0,
+  "finished": 1790513682.1085653,
+  "hostname": "n01.local",
+  "id": "point_groups_64_v1-p048-half-pg008",
+  "output": "/home/user/xyren/AllFSPT/runs/point_groups_64_v1/half_pg8.json",
+  "pbs_job": "115956.head.local",
+  "pid": 16852,
+  "point_group_index": 8,
+  "queue": "point_groups_20260927T123628Z_q1",
+  "source_id": "8fceb2f5f3bcaa9205c00962cd2c7c78b493a45f583fb090f246e7ce1637f297",
+  "started": 1790513659.8404527,
+  "status": "done",
+  "timeout_s": 3600
+}

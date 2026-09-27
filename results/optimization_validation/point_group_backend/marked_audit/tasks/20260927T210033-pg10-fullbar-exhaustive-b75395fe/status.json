@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_gap.py",
+    "--sentinel",
+    "AFS_C4_BAR_AUDIT_PASS",
+    "/home/user/xyren/AllFSPT/runs/point_group_marked_audit_v1/c4_bar.g"
+  ],
+  "created": 1790514033.2315552,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 29.086756944656372,
+  "exit_code": 0,
+  "finished": 1790514099.276976,
+  "hostname": "n01.local",
+  "id": "20260927T210033-pg10-fullbar-exhaustive-b75395fe",
+  "pbs_job": "115956.head.local",
+  "pid": 17010,
+  "queue": "point_groups_20260927T123628Z_q1",
+  "started": 1790514070.1900578,
+  "status": "done",
+  "timeout_s": 600
+}

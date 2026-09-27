@@ -1,0 +1,40 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_groups_64_v1/source/gap/formulas.g:110
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_groups_64_v1/source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_groups_64_v1/source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_groups_64_v1/source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_groups_64_v1/source/gap/classification.g:253
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_FINITE_BACKEND 28 23 order=12 dimensions=[ 1, 2, 3, 4, 5, 6, 7 ] cpu_ms=
+18594
+AFS_STAGE 28 cohomology cpu_ms=18594
+AFS_STAGE 28 primary_cf cpu_ms=18602
+AFS_STAGE 28 primary_mc_and_bos cpu_ms=18846
+AFS_STAGE 28 incoming_mc cpu_ms=18922
+AFS_STAGE 28 secondary_bos cpu_ms=18922
+AFS_STAGE 28 secondary_mc cpu_ms=18922
+AFS_STAGE 28 pip cpu_ms=18923
+AFS_STAGE 28 classification_end cpu_ms=18923
+AFS_POINT_GROUP_WRITTEN 28 half computed
+AFS_POINT_GROUP_SAVED 28 half computed /home/user/xyren/AllFSPT/runs/point_groups_64_v1/half_pg28.json

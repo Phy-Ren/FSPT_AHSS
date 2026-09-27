@@ -1,0 +1,41 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v2/source/gap/formulas.g:110
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v2/source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v2/source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v2/source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_group_controls_v2/source/gap/classification.g:253
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_FINITE_BACKEND 3 2 order=2 dimensions=[ 1, 1, 1, 1, 1, 1, 1 ] cpu_ms=18014
+AFS_STAGE 3 cohomology cpu_ms=18604
+AFS_STAGE 3 primary_cf cpu_ms=18606
+AFS_STAGE 3 primary_mc_and_bos cpu_ms=18613
+AFS_STAGE 3 incoming_mc cpu_ms=18615
+AFS_STAGE 3 secondary_bos cpu_ms=18616
+AFS_STAGE 3 secondary_mc cpu_ms=18616
+AFS_STAGE 3 pip cpu_ms=18619
+AFS_STAGE 3 classification_end cpu_ms=18619
+AFS_STAGE 3 stack_lift_B1 cpu_ms=18629
+AFS_STAGE 3 stack_relation_B1 cpu_ms=18636
+AFS_POINT_GROUP_WRITTEN 3 spinless computed
+AFS_POINT_GROUP_SAVED 3 spinless computed /home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg3.json

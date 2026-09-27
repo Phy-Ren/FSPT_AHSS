@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_point_group.py",
+    "2",
+    "--crystalline-spin",
+    "spinless",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/spinless_pg2.json"
+  ],
+  "created": 1790513456.269355,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 20.064555883407593,
+  "exit_code": 0,
+  "finished": 1790513512.825912,
+  "hostname": "n01.local",
+  "id": "20260927T205056-pg-spinless-2-v3-8036dd12",
+  "pbs_job": "115956.head.local",
+  "pid": 16640,
+  "queue": "point_groups_20260927T123628Z_q1",
+  "started": 1790513492.76117,
+  "status": "done",
+  "timeout_s": 1800
+}

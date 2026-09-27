@@ -16,7 +16,8 @@ import tarfile
 ALLOWED_ROOT_FILES = {'.gitattributes', '.gitignore', 'README.md', 'requirements-report.txt'}
 ALLOWED_DIRS = {'docs', 'fspt', 'gap', 'notes', 'scripts', 'tests'}
 OWN_RESULTS = {'classification_frozen', 'space_groups', 'space_groups_spinless',
-               'pip_diagnostics', 'optimization_validation', 'performance_environment'}
+               'pip_diagnostics', 'optimization_validation', 'performance_environment',
+               'point_groups', 'upper_carry_scope'}
 POLICY = 'fspt-public-snapshot-v1'
 
 
@@ -176,6 +177,7 @@ PYTHONPATH=tests python3 -m unittest test_audit_background_run \\
   test_compare_background_runs test_report_physical_conventions
 PYTHONPATH=tests python3 -m unittest test_boss_parser test_c4_pip_square_cf \\
   test_closed_cf_phase test_free_pip_universal test_pip_incoming_formula
+PYTHONPATH=tests python3 -m unittest test_point_group_audit test_point_group_marked_controls
 ```
 
 An unrestricted `unittest discover` also selects optional unchanged-reference

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_gap.py",
+    "--sentinel",
+    "AFS_POINT_GROUP_WRITTEN",
+    "/home/user/xyren/AllFSPT/runs/point_group_marked_audit_v1/spinless_pg20.g"
+  ],
+  "created": 1790513948.874464,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 50.151328802108765,
+  "exit_code": 0,
+  "finished": 1790514035.0998979,
+  "hostname": "n01.local",
+  "id": "20260927T205908-pg20-marked-audit-b29b64b3",
+  "pbs_job": "115956.head.local",
+  "pid": 16946,
+  "queue": "point_groups_20260927T123628Z_q1",
+  "started": 1790513984.948392,
+  "status": "done",
+  "timeout_s": 600
+}

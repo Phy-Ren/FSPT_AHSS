@@ -1,0 +1,1966 @@
+{
+  "cohorts": [
+    {
+      "done": 2,
+      "failed": 9,
+      "name": "point_group_controls_v1",
+      "source_id": "792acda87ead6f699bb21c79817e6aca0506c41fee5125eef927ede51021d432",
+      "tasks": [
+        {
+          "exit_code": 1,
+          "id": "20260927T204500-pg-backend-v1-a7a60894",
+          "status": "failed"
+        },
+        {
+          "exit_code": 1,
+          "id": "20260927T204500-pg-half-1-v1-5bdf5ff6",
+          "status": "failed"
+        },
+        {
+          "exit_code": 1,
+          "id": "20260927T204500-pg-spinless-1-v1-eb7b8608",
+          "status": "failed"
+        },
+        {
+          "exit_code": 1,
+          "id": "20260927T204500-pg-half-3-v1-0a05de85",
+          "status": "failed"
+        },
+        {
+          "exit_code": 1,
+          "id": "20260927T204500-pg-spinless-3-v1-b0f65378",
+          "status": "failed"
+        },
+        {
+          "exit_code": 1,
+          "id": "20260927T204501-pg-half-4-v1-44691596",
+          "status": "failed"
+        },
+        {
+          "exit_code": 1,
+          "id": "20260927T204501-pg-spinless-4-v1-13d666c0",
+          "status": "failed"
+        },
+        {
+          "exit_code": 1,
+          "id": "20260927T204501-pg-half-10-v1-e9092d35",
+          "status": "failed"
+        },
+        {
+          "exit_code": 1,
+          "id": "20260927T204501-pg-spinless-10-v1-b942690e",
+          "status": "failed"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204501-pg-half-32-v1-1e3a8203",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204501-pg-spinless-32-v1-2331fa75",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "done": 10,
+      "failed": 1,
+      "name": "point_group_controls_v2",
+      "source_id": "14ee3a9a3c8c8d9f1bf90c1effda3c030464317f393263b4aac240317e07e859",
+      "tasks": [
+        {
+          "exit_code": 0,
+          "id": "20260927T204849-pg-backend-v2-40442284",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204849-pg-half-1-v2-23bed58f",
+          "status": "done"
+        },
+        {
+          "exit_code": 1,
+          "id": "20260927T204849-pg-spinless-1-v2-7cf1af33",
+          "status": "failed"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204849-pg-half-3-v2-cd0fa7f6",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204849-pg-spinless-3-v2-23360e7f",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204849-pg-half-4-v2-0f5a97ec",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204849-pg-spinless-4-v2-218d5868",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204849-pg-half-10-v2-d0827b4d",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204849-pg-spinless-10-v2-7ff679a8",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204849-pg-half-32-v2-d984ccd3",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T204849-pg-spinless-32-v2-bf642991",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "done": 3,
+      "failed": 0,
+      "name": "point_group_controls_v3",
+      "source_id": "8fceb2f5f3bcaa9205c00962cd2c7c78b493a45f583fb090f246e7ce1637f297",
+      "tasks": [
+        {
+          "exit_code": 0,
+          "id": "20260927T205056-pg-spinless-1-v3-a422e13c",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T205056-pg-half-2-v3-bf592aa0",
+          "status": "done"
+        },
+        {
+          "exit_code": 0,
+          "id": "20260927T205056-pg-spinless-2-v3-8036dd12",
+          "status": "done"
+        }
+      ]
+    }
+  ],
+  "created_at": 1790513843.654543,
+  "files": [
+    {
+      "bytes": 144,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/backend_control.g",
+      "path": "cohorts/point_group_controls_v1/backend_control.g",
+      "sha256": "b47b6f4c48b507d2cff81925a269d21475c04553f16969f1f0e5c6640479bcfe"
+    },
+    {
+      "bytes": 42564,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/classification/half_pg32.json",
+      "path": "cohorts/point_group_controls_v1/classification/half_pg32.json",
+      "sha256": "aa5a0f39fe39a007c417dbd017bf0c9fa101cd8745174a19c39ba8337f296a54"
+    },
+    {
+      "bytes": 10346,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/classification/half_pg32.raw.json",
+      "path": "cohorts/point_group_controls_v1/classification/half_pg32.raw.json",
+      "sha256": "1cb5b3f1926f423b56080958ddb551f50c691df467ad92b81efe121d2dbc802c"
+    },
+    {
+      "bytes": 148286,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/classification/spinless_pg32.json",
+      "path": "cohorts/point_group_controls_v1/classification/spinless_pg32.json",
+      "sha256": "46d25780152f626a56da4e27b6f40d4cf1bb64b81ea0f1b52fcbceac2d6e93a4"
+    },
+    {
+      "bytes": 28944,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/classification/spinless_pg32.raw.json",
+      "path": "cohorts/point_group_controls_v1/classification/spinless_pg32.raw.json",
+      "sha256": "9c97403268d149cb28ff9245e84c61b772244b43e595b5f04eacb3f9535cb11e"
+    },
+    {
+      "bytes": 493,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/half_pg1.g",
+      "path": "cohorts/point_group_controls_v1/half_pg1.g",
+      "sha256": "06e37c5c885a3259f44a6219bf8da6de958d90fe51a72dd303262bd952359a50"
+    },
+    {
+      "bytes": 496,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/half_pg10.g",
+      "path": "cohorts/point_group_controls_v1/half_pg10.g",
+      "sha256": "971a65deee5157a6f5e3af0884a3e1ff6f1d738c0ecb0b515de2aa8aace0db2c"
+    },
+    {
+      "bytes": 493,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/half_pg3.g",
+      "path": "cohorts/point_group_controls_v1/half_pg3.g",
+      "sha256": "14efbed3f29b9bc9cd17211927f502f0b18ce83dbc0db84c16fc3d2b387ae9c7"
+    },
+    {
+      "bytes": 496,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/half_pg32.g",
+      "path": "cohorts/point_group_controls_v1/half_pg32.g",
+      "sha256": "c26c233b4e7e55f98dc0aa3263838c65375ec887ec8bcdd231b0bbf7f301ec14"
+    },
+    {
+      "bytes": 55959,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/half_pg32.json",
+      "path": "cohorts/point_group_controls_v1/half_pg32.json",
+      "sha256": "7ac8805bf226972d07fff6a52176c11eae021a071b64a5dc43460020904a5dde"
+    },
+    {
+      "bytes": 12706,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/half_pg32.raw.json",
+      "path": "cohorts/point_group_controls_v1/half_pg32.raw.json",
+      "sha256": "b2300410605335b9398423f3f3b3e65549256c4fed20cd2489856f4d3e0a8f59"
+    },
+    {
+      "bytes": 493,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/half_pg4.g",
+      "path": "cohorts/point_group_controls_v1/half_pg4.g",
+      "sha256": "9b83b6b2c3f3c919624c4ac23952bdfc49a22bbc0d4a2cd68da959e969f75ac3"
+    },
+    {
+      "bytes": 9583,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/pilot.json",
+      "path": "cohorts/point_group_controls_v1/pilot.json",
+      "sha256": "70d4424fb18357669128969925f01db78e73771710365609143df6683252b4d4"
+    },
+    {
+      "bytes": 11075,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/BACKEND.md",
+      "path": "cohorts/point_group_controls_v1/source/gap/BACKEND.md",
+      "sha256": "e3fe3bff916957feb29f5cd8ac14adfb84ec21da5ca7e5ce4eb08eac81ebf8b3"
+    },
+    {
+      "bytes": 12748,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend.g",
+      "sha256": "3df26e9746d9a929cb53e10bbb22ccb18f0f61e1d6e84f4e7afc002245bd06bd"
+    },
+    {
+      "bytes": 6821,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_bar.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_bar.g",
+      "sha256": "f17525ab9d456ccceb9c0a4e22d1651ac510b97201f86445467a453b912bc60b"
+    },
+    {
+      "bytes": 1452,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_bar_mod2.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_bar_mod2.g",
+      "sha256": "4f54447c16b28c6b7dd3b12e91d1a81797136bb47a32627be7aa6f0cef0beaae"
+    },
+    {
+      "bytes": 3370,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_cup_cycle.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_cup_cycle.g",
+      "sha256": "a7d052c891f9320a3389584daa3d5e521a2be75d223a2ef1e55b48f3a0275a91"
+    },
+    {
+      "bytes": 2985,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_cup_slant.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_cup_slant.g",
+      "sha256": "48d6709aea5d180e7ff63ce015d6879974a1b05a8ebd7a1a28d17763cfa91432"
+    },
+    {
+      "bytes": 14925,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_diagonal.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_diagonal.g",
+      "sha256": "11e04411cb2afe51fa98f2ac205f8e9c2c1e69f9bfa4e686767e3511dfa29afc"
+    },
+    {
+      "bytes": 2270,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_half_phase.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_half_phase.g",
+      "sha256": "9c11621b02ce4a7bacbf57332e4500d7a37f5e9ac65792ce81f63ab06675225c"
+    },
+    {
+      "bytes": 2362,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_hash_cache.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_hash_cache.g",
+      "sha256": "30958c3bb86a23cb25d5a11ef0dbb888126f8c5da3325c2d0d50b47f9ade10fe"
+    },
+    {
+      "bytes": 2794,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_mod2_contraction.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_mod2_contraction.g",
+      "sha256": "0562ebbdc4cfceddc9ff10d3caedef1f1ce4d6de529097bbd385874f1b7fd854"
+    },
+    {
+      "bytes": 8528,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_resolution.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_resolution.g",
+      "sha256": "5453332bb4da63383f706423b767d636c9e9277b8660200ab190f2912552192b"
+    },
+    {
+      "bytes": 1068,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_smith_transfer.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_smith_transfer.g",
+      "sha256": "134ae9ef6454d5f942a2b8bb34d9359fd3ee662e5804dfde1b15dd75284bf1dd"
+    },
+    {
+      "bytes": 2127,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/backend_smith_units.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/backend_smith_units.g",
+      "sha256": "20530c5f9c607e0be46bced4b3d3c80a06cef19e1970412c51db16687a625500"
+    },
+    {
+      "bytes": 2467,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/background_free.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/background_free.g",
+      "sha256": "864c35c502ac1c867a4cb0b45ca2e0ae3ca402a18a4c453a429a0f0cad2db21c"
+    },
+    {
+      "bytes": 1903,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/background_native_cup.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/background_native_cup.g",
+      "sha256": "4204ec0d806f44b606ed92d6cb5df54bdb5387f7d6eff60a6da5f63722f418be"
+    },
+    {
+      "bytes": 3382,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/background_operations.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/background_operations.g",
+      "sha256": "12ce6cd3d8759cf7a5254c789ad0844b660e46a83c5e1af1665dc421ac8e0d97"
+    },
+    {
+      "bytes": 11022,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/background_quotient.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/background_quotient.g",
+      "sha256": "158bd0c23ffdb26c61bb03d30bf1e2d18c61fbe8ce6a3fd9e285faff81a6e734"
+    },
+    {
+      "bytes": 4233,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/background_stacking.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/background_stacking.g",
+      "sha256": "dbdc50a7ed6c336c8d83ee6306a277bf100e57fb580f6706e548b6fb51a77774"
+    },
+    {
+      "bytes": 1661,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/class_coordinates.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/class_coordinates.g",
+      "sha256": "681d6ab197b249c9312d9fb46762cfef801441379488c250e8b10e3f64973165"
+    },
+    {
+      "bytes": 11774,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/classification.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/classification.g",
+      "sha256": "c46321480db282154b95525dd4f6a21521b2e0692a426ac1541a15e2634a7b9b"
+    },
+    {
+      "bytes": 6918,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/crystalline_background.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/crystalline_background.g",
+      "sha256": "4d625d2a7c58316da14ed015d3da26bc280b2dbcdf43516706da0c5a8dd26b4a"
+    },
+    {
+      "bytes": 35283,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/formula_data.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/formula_data.g",
+      "sha256": "4fd1ade218090c962fcdb89bf2255c351da5b9308ca98e54a5b3e896c6b8e28e"
+    },
+    {
+      "bytes": 178504,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/formula_fast.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/formula_fast.g",
+      "sha256": "a70a23b8ff01862471b3e8cbf12fa08e7171a8ffc35b5070e8085b5bfb60d43f"
+    },
+    {
+      "bytes": 11971,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/formulas.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/formulas.g",
+      "sha256": "661da312670d6417106583da8fcc8a5f702397a04b0bf26bad91339816c75753"
+    },
+    {
+      "bytes": 3240,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip.g",
+      "sha256": "775136183234062135d957c00e07146f20fc11b2c24c3dcc2680af895deabd7d"
+    },
+    {
+      "bytes": 554,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_c4_data.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_c4_data.g",
+      "sha256": "77bbf5267277f33efee025666e7fd22b1136a5f483151fceb5abd833b151f18c"
+    },
+    {
+      "bytes": 2317,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_coordinate_data.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_coordinate_data.g",
+      "sha256": "daa9eb25fd7acb7a2e7d0fa286e6e1dece1ea913fe6e2d8e0783727c64433f87"
+    },
+    {
+      "bytes": 2041,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_coordinates.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_coordinates.g",
+      "sha256": "817af838199cc6ea422c73de3497525f67f0170ad68c202c0f70ee5fb561a445"
+    },
+    {
+      "bytes": 58874,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_diagonal_data.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_diagonal_data.g",
+      "sha256": "b1b79d31169e01f92fd51cb0497a425ca5f98b805f3bc645b7d1edc82be648f5"
+    },
+    {
+      "bytes": 13395,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_free.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_free.g",
+      "sha256": "e07f96411e331959e2bddd55c33b4573a6442d1f241419867bfb0d219b7cf7b9"
+    },
+    {
+      "bytes": 2942,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_incoming_background.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_incoming_background.g",
+      "sha256": "132dd565bf86eda6451d221a5280653c6de0b41a5be2c24f6ed20df434a538e4"
+    },
+    {
+      "bytes": 1034336,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_o5_background.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_o5_background.g",
+      "sha256": "b9a153a5bf2ba7c6be402dcecd1e49a667910fefeced667b04c11c5b4cffc82d"
+    },
+    {
+      "bytes": 614450,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_o5_background.json",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_o5_background.json",
+      "sha256": "83d531e131c39ad03bb5ed3621dbc022a4fa5bd97f4bd6305bac4ac866e4d477"
+    },
+    {
+      "bytes": 232492,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_o5_background_even.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_o5_background_even.g",
+      "sha256": "ddc33ab7095024e9e5b5f483795a0e5113447a1bbd236cdefc835d4334a445da"
+    },
+    {
+      "bytes": 485993,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_o5_background_sign.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_o5_background_sign.g",
+      "sha256": "ab1bf2657e812e47d97036f56c199c049596ee7c484676cb96cb5ada4037a60b"
+    },
+    {
+      "bytes": 201297,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_o5_general.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_o5_general.g",
+      "sha256": "9a27dda678c9ffc0da986e62b47ca71cc8ce6cd305c6d2c5e989debb4c3c3f38"
+    },
+    {
+      "bytes": 120617,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_o5_program.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_o5_program.g",
+      "sha256": "ba324e52fd1fbe99196dec47b9e35bcd95138a32e9ab8f3c71f101d1bcccf03f"
+    },
+    {
+      "bytes": 120822,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_o5_program.json",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_o5_program.json",
+      "sha256": "10e607ca43e32f0d343bb54e83dab248b1c4ea379a68f3cce2c479b5f6e7dd2f"
+    },
+    {
+      "bytes": 23807,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_o5_sign.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_o5_sign.g",
+      "sha256": "097c4e799b0f485b3def3dbd1006930d32819c96feb8c36741a69c48923a239b"
+    },
+    {
+      "bytes": 14356,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_o5_sign.json",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_o5_sign.json",
+      "sha256": "ff62534ab5ed832b77a426eb915d87e46164ff560611b5f94cb945e33df5900c"
+    },
+    {
+      "bytes": 11274,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/pip_stacking.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/pip_stacking.g",
+      "sha256": "ca64fc2abd496134db9abd16b090295a8ea1c360b5626f1f6707da38c9ae34ab"
+    },
+    {
+      "bytes": 7071,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/point_group_backend.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/point_group_backend.g",
+      "sha256": "79096b8553aabb1922cefa716060919839cac1ff42e78ff397ebc95af50e671a"
+    },
+    {
+      "bytes": 8196,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/run_one.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/run_one.g",
+      "sha256": "920f75c96d5cf07fa7e9144ec5df7a5ca250ccb9ec87f8baa8568b2728b19064"
+    },
+    {
+      "bytes": 7011,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/run_point_group.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/run_point_group.g",
+      "sha256": "212beff3abe56091758070c12086c794f7185aeefbe7519083540c9c4d0fc3ea"
+    },
+    {
+      "bytes": 41254,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/stacking.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/stacking.g",
+      "sha256": "4a8bcd788980c1f87cf5ced70ab277562f0c3e1db73462e6ea377155305d697d"
+    },
+    {
+      "bytes": 1891,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/source/gap/stacking_closed_cf.g",
+      "path": "cohorts/point_group_controls_v1/source/gap/stacking_closed_cf.g",
+      "sha256": "99948d62e0f2fa8e90cf725d43439f9470352508f6c137d54fa5f80b0b8b71fe"
+    },
+    {
+      "bytes": 505,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/spinless_pg1.g",
+      "path": "cohorts/point_group_controls_v1/spinless_pg1.g",
+      "sha256": "03f49f336a478e9926c9c154e5630f08164e5c81d55f8915ecbfb6606a8908a5"
+    },
+    {
+      "bytes": 508,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/spinless_pg10.g",
+      "path": "cohorts/point_group_controls_v1/spinless_pg10.g",
+      "sha256": "3ffbb1cf44762f5b31e96ee2733434c6a08469e8083347e93f6a47ccbd6b6f98"
+    },
+    {
+      "bytes": 505,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/spinless_pg3.g",
+      "path": "cohorts/point_group_controls_v1/spinless_pg3.g",
+      "sha256": "8817e0128fb3cc14a08332ef6b11ede5bae11dac1fa396d7fa22c8ebf08c0596"
+    },
+    {
+      "bytes": 508,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/spinless_pg32.g",
+      "path": "cohorts/point_group_controls_v1/spinless_pg32.g",
+      "sha256": "01734d739e4a43e0e560da159121f4b2b134a2bcf380f9fb0302ae62a85e6407"
+    },
+    {
+      "bytes": 189494,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/spinless_pg32.json",
+      "path": "cohorts/point_group_controls_v1/spinless_pg32.json",
+      "sha256": "ddd6cb380c0b782b35a2cfc60d6b5b6b4e3dcd86ea188c51c7453bcd4b55b15e"
+    },
+    {
+      "bytes": 35373,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/spinless_pg32.raw.json",
+      "path": "cohorts/point_group_controls_v1/spinless_pg32.raw.json",
+      "sha256": "404932d6089dc0d6443addc4ad40b2c84cf541b807571cd65ac6c673066d785a"
+    },
+    {
+      "bytes": 505,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v1/spinless_pg4.g",
+      "path": "cohorts/point_group_controls_v1/spinless_pg4.g",
+      "sha256": "2367e43934f00d2ececa686f04e7e84c78b1495fb11e67f5d36a8be6ef63f421"
+    },
+    {
+      "bytes": 626,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-backend-v1-a7a60894/status.json",
+      "path": "tasks/20260927T204500-pg-backend-v1-a7a60894/status.json",
+      "sha256": "26586c1c08e163eba86a0ab66d66788ec43635e9d835d0d39839b3c2a2c60ef4"
+    },
+    {
+      "bytes": 925,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-backend-v1-a7a60894/metrics.txt",
+      "path": "tasks/20260927T204500-pg-backend-v1-a7a60894/metrics.txt",
+      "sha256": "74afcb647c2579095d6092d192e5552801ceff8ee0067c5c5d1c4dddb4cb3a17"
+    },
+    {
+      "bytes": 4804,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-backend-v1-a7a60894/stdout.log",
+      "path": "tasks/20260927T204500-pg-backend-v1-a7a60894/stdout.txt",
+      "sha256": "ffb046f2107d6648e656c16f2bbb1eb8b5f4322d071aca7c9c90c7ed6213c063"
+    },
+    {
+      "bytes": 723,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-half-1-v1-5bdf5ff6/status.json",
+      "path": "tasks/20260927T204500-pg-half-1-v1-5bdf5ff6/status.json",
+      "sha256": "cb28ecf0857a718c29ac0d20e64e4f1abcb0d215c044533507efcb42242b8ae8"
+    },
+    {
+      "bytes": 995,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-half-1-v1-5bdf5ff6/metrics.txt",
+      "path": "tasks/20260927T204500-pg-half-1-v1-5bdf5ff6/metrics.txt",
+      "sha256": "660a25f94d2c2f2d2808f30cbacc21ce2ab5c45702487b9271bd6cc601f96241"
+    },
+    {
+      "bytes": 2388,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-half-1-v1-5bdf5ff6/stdout.log",
+      "path": "tasks/20260927T204500-pg-half-1-v1-5bdf5ff6/stdout.txt",
+      "sha256": "3547a477098e35a900d59512df2924d4225b37bfe117b6fadbc801d622d2ee57"
+    },
+    {
+      "bytes": 736,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-spinless-1-v1-eb7b8608/status.json",
+      "path": "tasks/20260927T204500-pg-spinless-1-v1-eb7b8608/status.json",
+      "sha256": "818dcb40bdfdc29b0d8264198bf59b146f2f8b6d2bd0fc9f0e3e5d3bda2c95c4"
+    },
+    {
+      "bytes": 1003,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-spinless-1-v1-eb7b8608/metrics.txt",
+      "path": "tasks/20260927T204500-pg-spinless-1-v1-eb7b8608/metrics.txt",
+      "sha256": "4db29613568ce494432c4900598395524cda7f31cbb6740adbccdd2ee6734b44"
+    },
+    {
+      "bytes": 2388,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-spinless-1-v1-eb7b8608/stdout.log",
+      "path": "tasks/20260927T204500-pg-spinless-1-v1-eb7b8608/stdout.txt",
+      "sha256": "3547a477098e35a900d59512df2924d4225b37bfe117b6fadbc801d622d2ee57"
+    },
+    {
+      "bytes": 722,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-half-3-v1-0a05de85/status.json",
+      "path": "tasks/20260927T204500-pg-half-3-v1-0a05de85/status.json",
+      "sha256": "82925790b786fdb750a1fc471349b95704929e207f861c5995ddf147955687bb"
+    },
+    {
+      "bytes": 997,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-half-3-v1-0a05de85/metrics.txt",
+      "path": "tasks/20260927T204500-pg-half-3-v1-0a05de85/metrics.txt",
+      "sha256": "ccbbe5a20a13d4b9f2ea819c331a42c2fe31bed5a387b5836f2a8be38a5525cc"
+    },
+    {
+      "bytes": 2393,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-half-3-v1-0a05de85/stdout.log",
+      "path": "tasks/20260927T204500-pg-half-3-v1-0a05de85/stdout.txt",
+      "sha256": "ca6bb631c54b1594fb5abe16da4369a8717dc5f72aee4eae1267edc5a4812bea"
+    },
+    {
+      "bytes": 735,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-spinless-3-v1-b0f65378/status.json",
+      "path": "tasks/20260927T204500-pg-spinless-3-v1-b0f65378/status.json",
+      "sha256": "2c00a6c7e47fcddf2465827607bd22afc459dfacb9f62f10aceb5cd6592c49d1"
+    },
+    {
+      "bytes": 1003,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-spinless-3-v1-b0f65378/metrics.txt",
+      "path": "tasks/20260927T204500-pg-spinless-3-v1-b0f65378/metrics.txt",
+      "sha256": "503cd69700a624eefe4f4f5ef32ba137237742f010a56b2801c8d8135053da83"
+    },
+    {
+      "bytes": 2393,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204500-pg-spinless-3-v1-b0f65378/stdout.log",
+      "path": "tasks/20260927T204500-pg-spinless-3-v1-b0f65378/stdout.txt",
+      "sha256": "ca6bb631c54b1594fb5abe16da4369a8717dc5f72aee4eae1267edc5a4812bea"
+    },
+    {
+      "bytes": 724,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-half-4-v1-44691596/status.json",
+      "path": "tasks/20260927T204501-pg-half-4-v1-44691596/status.json",
+      "sha256": "22460b21383875732e9873a878a2bc8528f6e050edb3cc1157132c957004b26b"
+    },
+    {
+      "bytes": 994,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-half-4-v1-44691596/metrics.txt",
+      "path": "tasks/20260927T204501-pg-half-4-v1-44691596/metrics.txt",
+      "sha256": "7cd488b3b0e43170075c3066121258ed854f4f74aaf2e12205d24dcf9b0993a7"
+    },
+    {
+      "bytes": 2393,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-half-4-v1-44691596/stdout.log",
+      "path": "tasks/20260927T204501-pg-half-4-v1-44691596/stdout.txt",
+      "sha256": "ca6bb631c54b1594fb5abe16da4369a8717dc5f72aee4eae1267edc5a4812bea"
+    },
+    {
+      "bytes": 734,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-spinless-4-v1-13d666c0/status.json",
+      "path": "tasks/20260927T204501-pg-spinless-4-v1-13d666c0/status.json",
+      "sha256": "68c503982c9f2aac8786fc7d12997a9fc4a304abcfef6df9483e8cb02fc12462"
+    },
+    {
+      "bytes": 1003,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-spinless-4-v1-13d666c0/metrics.txt",
+      "path": "tasks/20260927T204501-pg-spinless-4-v1-13d666c0/metrics.txt",
+      "sha256": "a87f840f9830ef4ad166eebba9b71b4360de4c66b499372587962aca699f91b0"
+    },
+    {
+      "bytes": 2393,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-spinless-4-v1-13d666c0/stdout.log",
+      "path": "tasks/20260927T204501-pg-spinless-4-v1-13d666c0/stdout.txt",
+      "sha256": "ca6bb631c54b1594fb5abe16da4369a8717dc5f72aee4eae1267edc5a4812bea"
+    },
+    {
+      "bytes": 725,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-half-10-v1-e9092d35/status.json",
+      "path": "tasks/20260927T204501-pg-half-10-v1-e9092d35/status.json",
+      "sha256": "c68672ca1fc6ad74e69eea2c531d51a539df3ea16205f077b3adecd4ffa56ca8"
+    },
+    {
+      "bytes": 997,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-half-10-v1-e9092d35/metrics.txt",
+      "path": "tasks/20260927T204501-pg-half-10-v1-e9092d35/metrics.txt",
+      "sha256": "e132b3242679ebc41773d33968f6fba6c08c125555b3c690d12035f8106969fa"
+    },
+    {
+      "bytes": 2393,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-half-10-v1-e9092d35/stdout.log",
+      "path": "tasks/20260927T204501-pg-half-10-v1-e9092d35/stdout.txt",
+      "sha256": "ca6bb631c54b1594fb5abe16da4369a8717dc5f72aee4eae1267edc5a4812bea"
+    },
+    {
+      "bytes": 738,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-spinless-10-v1-b942690e/status.json",
+      "path": "tasks/20260927T204501-pg-spinless-10-v1-b942690e/status.json",
+      "sha256": "3b676bcd8a3a2d964ac9b22023124c83d7e4612e7e8e7a8094cf9ea352b17c19"
+    },
+    {
+      "bytes": 1005,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-spinless-10-v1-b942690e/metrics.txt",
+      "path": "tasks/20260927T204501-pg-spinless-10-v1-b942690e/metrics.txt",
+      "sha256": "7202b4b832760fe548f9aab24dcd5307ae2fb318c24e1e0f8c82c2a7a8c468d1"
+    },
+    {
+      "bytes": 2393,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-spinless-10-v1-b942690e/stdout.log",
+      "path": "tasks/20260927T204501-pg-spinless-10-v1-b942690e/stdout.txt",
+      "sha256": "ca6bb631c54b1594fb5abe16da4369a8717dc5f72aee4eae1267edc5a4812bea"
+    },
+    {
+      "bytes": 725,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-half-32-v1-1e3a8203/status.json",
+      "path": "tasks/20260927T204501-pg-half-32-v1-1e3a8203/status.json",
+      "sha256": "47c42bf8abb9e5c9a047707d9a84a76d9d8506b092882b0a356e739d974b9c88"
+    },
+    {
+      "bytes": 960,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-half-32-v1-1e3a8203/metrics.txt",
+      "path": "tasks/20260927T204501-pg-half-32-v1-1e3a8203/metrics.txt",
+      "sha256": "470c6e6405e9e8efca0dd861e0594b317ef80bd2e21c007d4822579486527fef"
+    },
+    {
+      "bytes": 2830,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-half-32-v1-1e3a8203/stdout.log",
+      "path": "tasks/20260927T204501-pg-half-32-v1-1e3a8203/stdout.txt",
+      "sha256": "29e70c7bf1e070679588311015d10d81424ac7ca2343c2b95403c8d8c9baba6e"
+    },
+    {
+      "bytes": 735,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-spinless-32-v1-2331fa75/status.json",
+      "path": "tasks/20260927T204501-pg-spinless-32-v1-2331fa75/status.json",
+      "sha256": "e938076f5e97a62306a9b37823d1a62ff99be26331d1291f119b1dc37b716091"
+    },
+    {
+      "bytes": 968,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-spinless-32-v1-2331fa75/metrics.txt",
+      "path": "tasks/20260927T204501-pg-spinless-32-v1-2331fa75/metrics.txt",
+      "sha256": "cc3785c982e4f5ce1c4d921a475f48d48486b04142b096e622f08415a5f83ec0"
+    },
+    {
+      "bytes": 2928,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204501-pg-spinless-32-v1-2331fa75/stdout.log",
+      "path": "tasks/20260927T204501-pg-spinless-32-v1-2331fa75/stdout.txt",
+      "sha256": "eb0c8f507eca954081f0b38b985f0fff1dc121b1a3d10812429e63e52da1f8c4"
+    },
+    {
+      "bytes": 144,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/backend_control.g",
+      "path": "cohorts/point_group_controls_v2/backend_control.g",
+      "sha256": "d8860552ac83b7c4f56789a5b574323ee9a9454016c92ad46742bcaacb8c26f6"
+    },
+    {
+      "bytes": 2716,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/half_pg1.json",
+      "path": "cohorts/point_group_controls_v2/classification/half_pg1.json",
+      "sha256": "3f2bf0fbbd17c5f7b3f3fa089cf74c305b0d569d718a9fc631cb56c4eca3a7ac"
+    },
+    {
+      "bytes": 1930,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/half_pg1.raw.json",
+      "path": "cohorts/point_group_controls_v2/classification/half_pg1.raw.json",
+      "sha256": "aacb638499b565c008efffb9a6b861ea55ec15ebe8c20f9a7da82d717efa08bb"
+    },
+    {
+      "bytes": 4469,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/half_pg10.json",
+      "path": "cohorts/point_group_controls_v2/classification/half_pg10.json",
+      "sha256": "4f3c83296f5036ce632d75700be2412c8353a49f02efd5ab2cf98ff2add422a7"
+    },
+    {
+      "bytes": 2330,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/half_pg10.raw.json",
+      "path": "cohorts/point_group_controls_v2/classification/half_pg10.raw.json",
+      "sha256": "618da0288bbadfcb1f88a01459ccca9bd7427885e1fd043e2bdc94aa13a4a9a1"
+    },
+    {
+      "bytes": 3277,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/half_pg3.json",
+      "path": "cohorts/point_group_controls_v2/classification/half_pg3.json",
+      "sha256": "c2fe80dee2a298445f62b83115a1998e8d6208625eac4fadf521d785e4c9e39c"
+    },
+    {
+      "bytes": 2011,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/half_pg3.raw.json",
+      "path": "cohorts/point_group_controls_v2/classification/half_pg3.raw.json",
+      "sha256": "f8dab6728062719941416762e994cfd2af41672dbf1e9cd1d61c7b2bb32aa596"
+    },
+    {
+      "bytes": 42564,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/half_pg32.json",
+      "path": "cohorts/point_group_controls_v2/classification/half_pg32.json",
+      "sha256": "146ae2dc1bd4b8ef89db5d44ff59c799d793327c2b1d436f85cd081a4e349be9"
+    },
+    {
+      "bytes": 10346,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/half_pg32.raw.json",
+      "path": "cohorts/point_group_controls_v2/classification/half_pg32.raw.json",
+      "sha256": "a3b171338bd734d552cbc868efa483af25bbdf1182b2f7905199139bbd39e718"
+    },
+    {
+      "bytes": 3391,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/half_pg4.json",
+      "path": "cohorts/point_group_controls_v2/classification/half_pg4.json",
+      "sha256": "41965365634094dec9a44bb6a093981a3f2a0a14773a7701d05df5a9b4d8f089"
+    },
+    {
+      "bytes": 2062,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/half_pg4.raw.json",
+      "path": "cohorts/point_group_controls_v2/classification/half_pg4.raw.json",
+      "sha256": "ef40e2190a08754b147cf61965813863f98959d35184309ea59319d297ca7d23"
+    },
+    {
+      "bytes": 10796,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/spinless_pg10.json",
+      "path": "cohorts/point_group_controls_v2/classification/spinless_pg10.json",
+      "sha256": "f07767f1af3e219b396c305f320c57dde1bcb87afb6d2754df75230cc4d11804"
+    },
+    {
+      "bytes": 3806,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/spinless_pg10.raw.json",
+      "path": "cohorts/point_group_controls_v2/classification/spinless_pg10.raw.json",
+      "sha256": "01820bcf107ddb95e23bc89144f6e4ce865247af3747a37793584a528ac9ace5"
+    },
+    {
+      "bytes": 7720,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/spinless_pg3.json",
+      "path": "cohorts/point_group_controls_v2/classification/spinless_pg3.json",
+      "sha256": "a54fd253df587a116d683a61332f0034b3818bf3156d5271df1d579cf4f29ae1"
+    },
+    {
+      "bytes": 3455,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/spinless_pg3.raw.json",
+      "path": "cohorts/point_group_controls_v2/classification/spinless_pg3.raw.json",
+      "sha256": "74fbaee65249470ef80d2669bac9ae1fc7d792761011d41743decdd58c7ba788"
+    },
+    {
+      "bytes": 148286,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/spinless_pg32.json",
+      "path": "cohorts/point_group_controls_v2/classification/spinless_pg32.json",
+      "sha256": "1dd68fa510e5ec4b79fb76cabe6e11a01f2fd37a1a6e207ea490836250a44de7"
+    },
+    {
+      "bytes": 28944,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/spinless_pg32.raw.json",
+      "path": "cohorts/point_group_controls_v2/classification/spinless_pg32.raw.json",
+      "sha256": "45f12ff0372b2c5117fd459bfdc3d70e0501fc4bb6343cce9224d8cc0c455018"
+    },
+    {
+      "bytes": 7854,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/spinless_pg4.json",
+      "path": "cohorts/point_group_controls_v2/classification/spinless_pg4.json",
+      "sha256": "ed681b3e174f90c5448d59a00e2f771a14bd3edea827df3267195fdd27bfdd8f"
+    },
+    {
+      "bytes": 3500,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/classification/spinless_pg4.raw.json",
+      "path": "cohorts/point_group_controls_v2/classification/spinless_pg4.raw.json",
+      "sha256": "800b40b1dd898d5c33ae054a9a2273a29f4afa8cfd044b5e328a281a77178669"
+    },
+    {
+      "bytes": 493,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg1.g",
+      "path": "cohorts/point_group_controls_v2/half_pg1.g",
+      "sha256": "30f05dcfcfbbf2374ad3a9a145fc747d6a646a3809fd807131bafaf8da422e34"
+    },
+    {
+      "bytes": 8796,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg1.json",
+      "path": "cohorts/point_group_controls_v2/half_pg1.json",
+      "sha256": "a261749a6a1dd1bd0a8ecb55e9e6f9ca7360407cffe037c3b86eaafa393c5a3a"
+    },
+    {
+      "bytes": 3188,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg1.raw.json",
+      "path": "cohorts/point_group_controls_v2/half_pg1.raw.json",
+      "sha256": "8f547879260f2d8e77a8a629fa725c4511a821cbf060283007f063776627540a"
+    },
+    {
+      "bytes": 496,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg10.g",
+      "path": "cohorts/point_group_controls_v2/half_pg10.g",
+      "sha256": "ad3fd6b6cac7acd3970f2d663a9df1d0791062047715d17585ec306f82218bd7"
+    },
+    {
+      "bytes": 15116,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg10.json",
+      "path": "cohorts/point_group_controls_v2/half_pg10.json",
+      "sha256": "8f6672cef36f0ae41592a25c74b78302ee0f892d2f397c37de089c04afa421ab"
+    },
+    {
+      "bytes": 5957,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg10.raw.json",
+      "path": "cohorts/point_group_controls_v2/half_pg10.raw.json",
+      "sha256": "d2428a6daa8dabfc1c2ccdc9fe8b8e1d74cc7909ffc686fb8634c93a76783980"
+    },
+    {
+      "bytes": 493,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg3.g",
+      "path": "cohorts/point_group_controls_v2/half_pg3.g",
+      "sha256": "13c5562f57542be8c1a95dda147890bc79aba43cf61c9c089fd7c608c1d1274d"
+    },
+    {
+      "bytes": 9379,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg3.json",
+      "path": "cohorts/point_group_controls_v2/half_pg3.json",
+      "sha256": "6a3497e924964a47ae79ef60c57306a182eba6c665386dab8a1668dc4d91abb8"
+    },
+    {
+      "bytes": 3272,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg3.raw.json",
+      "path": "cohorts/point_group_controls_v2/half_pg3.raw.json",
+      "sha256": "58c9221b5e9c020db51d5836970cc2e5ffb1267982151694d982c724ec3cfda2"
+    },
+    {
+      "bytes": 496,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg32.g",
+      "path": "cohorts/point_group_controls_v2/half_pg32.g",
+      "sha256": "5ef0ca50383cd424e01aebad77be8035439ce80f0661db8d089361e14a157a82"
+    },
+    {
+      "bytes": 55952,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg32.json",
+      "path": "cohorts/point_group_controls_v2/half_pg32.json",
+      "sha256": "a912d7c63848c394d7c20769efa385da02e65abf24ee50d813dedd3f1c9fecdd"
+    },
+    {
+      "bytes": 12700,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg32.raw.json",
+      "path": "cohorts/point_group_controls_v2/half_pg32.raw.json",
+      "sha256": "9ec6d5175abfa2e337e4109ab18071b6b62569d27b2361b72a0875933202403a"
+    },
+    {
+      "bytes": 493,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg4.g",
+      "path": "cohorts/point_group_controls_v2/half_pg4.g",
+      "sha256": "7994efa83b20babd3e605f1d1b4d828ff1879856d2b1de59c22c78a587fb7c28"
+    },
+    {
+      "bytes": 9626,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg4.json",
+      "path": "cohorts/point_group_controls_v2/half_pg4.json",
+      "sha256": "baea624eab75a5f049745da6d883e6003e5d4ff25f51edbfb25acd9ddb093169"
+    },
+    {
+      "bytes": 3332,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/half_pg4.raw.json",
+      "path": "cohorts/point_group_controls_v2/half_pg4.raw.json",
+      "sha256": "026d667a6ec526c770c6ac9de35b65f849e4089861723964c2532f691d315337"
+    },
+    {
+      "bytes": 11284,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/pilot.json",
+      "path": "cohorts/point_group_controls_v2/pilot.json",
+      "sha256": "34514c6be0e067d1376699dd75f96189ec4f1ae7fd0fada4a5b3caa4020ba7c0"
+    },
+    {
+      "bytes": 11075,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/BACKEND.md",
+      "path": "cohorts/point_group_controls_v2/source/gap/BACKEND.md",
+      "sha256": "e3fe3bff916957feb29f5cd8ac14adfb84ec21da5ca7e5ce4eb08eac81ebf8b3"
+    },
+    {
+      "bytes": 12748,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend.g",
+      "sha256": "3df26e9746d9a929cb53e10bbb22ccb18f0f61e1d6e84f4e7afc002245bd06bd"
+    },
+    {
+      "bytes": 6821,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_bar.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_bar.g",
+      "sha256": "f17525ab9d456ccceb9c0a4e22d1651ac510b97201f86445467a453b912bc60b"
+    },
+    {
+      "bytes": 1452,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_bar_mod2.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_bar_mod2.g",
+      "sha256": "4f54447c16b28c6b7dd3b12e91d1a81797136bb47a32627be7aa6f0cef0beaae"
+    },
+    {
+      "bytes": 3370,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_cup_cycle.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_cup_cycle.g",
+      "sha256": "a7d052c891f9320a3389584daa3d5e521a2be75d223a2ef1e55b48f3a0275a91"
+    },
+    {
+      "bytes": 2985,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_cup_slant.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_cup_slant.g",
+      "sha256": "48d6709aea5d180e7ff63ce015d6879974a1b05a8ebd7a1a28d17763cfa91432"
+    },
+    {
+      "bytes": 14925,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_diagonal.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_diagonal.g",
+      "sha256": "11e04411cb2afe51fa98f2ac205f8e9c2c1e69f9bfa4e686767e3511dfa29afc"
+    },
+    {
+      "bytes": 2270,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_half_phase.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_half_phase.g",
+      "sha256": "9c11621b02ce4a7bacbf57332e4500d7a37f5e9ac65792ce81f63ab06675225c"
+    },
+    {
+      "bytes": 2362,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_hash_cache.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_hash_cache.g",
+      "sha256": "30958c3bb86a23cb25d5a11ef0dbb888126f8c5da3325c2d0d50b47f9ade10fe"
+    },
+    {
+      "bytes": 2794,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_mod2_contraction.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_mod2_contraction.g",
+      "sha256": "0562ebbdc4cfceddc9ff10d3caedef1f1ce4d6de529097bbd385874f1b7fd854"
+    },
+    {
+      "bytes": 8528,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_resolution.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_resolution.g",
+      "sha256": "5453332bb4da63383f706423b767d636c9e9277b8660200ab190f2912552192b"
+    },
+    {
+      "bytes": 1068,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_smith_transfer.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_smith_transfer.g",
+      "sha256": "134ae9ef6454d5f942a2b8bb34d9359fd3ee662e5804dfde1b15dd75284bf1dd"
+    },
+    {
+      "bytes": 2127,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/backend_smith_units.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/backend_smith_units.g",
+      "sha256": "20530c5f9c607e0be46bced4b3d3c80a06cef19e1970412c51db16687a625500"
+    },
+    {
+      "bytes": 2467,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/background_free.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/background_free.g",
+      "sha256": "864c35c502ac1c867a4cb0b45ca2e0ae3ca402a18a4c453a429a0f0cad2db21c"
+    },
+    {
+      "bytes": 1903,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/background_native_cup.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/background_native_cup.g",
+      "sha256": "4204ec0d806f44b606ed92d6cb5df54bdb5387f7d6eff60a6da5f63722f418be"
+    },
+    {
+      "bytes": 3382,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/background_operations.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/background_operations.g",
+      "sha256": "12ce6cd3d8759cf7a5254c789ad0844b660e46a83c5e1af1665dc421ac8e0d97"
+    },
+    {
+      "bytes": 11022,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/background_quotient.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/background_quotient.g",
+      "sha256": "158bd0c23ffdb26c61bb03d30bf1e2d18c61fbe8ce6a3fd9e285faff81a6e734"
+    },
+    {
+      "bytes": 4233,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/background_stacking.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/background_stacking.g",
+      "sha256": "dbdc50a7ed6c336c8d83ee6306a277bf100e57fb580f6706e548b6fb51a77774"
+    },
+    {
+      "bytes": 1661,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/class_coordinates.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/class_coordinates.g",
+      "sha256": "681d6ab197b249c9312d9fb46762cfef801441379488c250e8b10e3f64973165"
+    },
+    {
+      "bytes": 11774,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/classification.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/classification.g",
+      "sha256": "c46321480db282154b95525dd4f6a21521b2e0692a426ac1541a15e2634a7b9b"
+    },
+    {
+      "bytes": 6918,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/crystalline_background.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/crystalline_background.g",
+      "sha256": "4d625d2a7c58316da14ed015d3da26bc280b2dbcdf43516706da0c5a8dd26b4a"
+    },
+    {
+      "bytes": 35283,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/formula_data.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/formula_data.g",
+      "sha256": "4fd1ade218090c962fcdb89bf2255c351da5b9308ca98e54a5b3e896c6b8e28e"
+    },
+    {
+      "bytes": 178504,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/formula_fast.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/formula_fast.g",
+      "sha256": "a70a23b8ff01862471b3e8cbf12fa08e7171a8ffc35b5070e8085b5bfb60d43f"
+    },
+    {
+      "bytes": 11971,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/formulas.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/formulas.g",
+      "sha256": "661da312670d6417106583da8fcc8a5f702397a04b0bf26bad91339816c75753"
+    },
+    {
+      "bytes": 3240,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip.g",
+      "sha256": "775136183234062135d957c00e07146f20fc11b2c24c3dcc2680af895deabd7d"
+    },
+    {
+      "bytes": 554,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_c4_data.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_c4_data.g",
+      "sha256": "77bbf5267277f33efee025666e7fd22b1136a5f483151fceb5abd833b151f18c"
+    },
+    {
+      "bytes": 2317,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_coordinate_data.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_coordinate_data.g",
+      "sha256": "daa9eb25fd7acb7a2e7d0fa286e6e1dece1ea913fe6e2d8e0783727c64433f87"
+    },
+    {
+      "bytes": 2041,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_coordinates.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_coordinates.g",
+      "sha256": "817af838199cc6ea422c73de3497525f67f0170ad68c202c0f70ee5fb561a445"
+    },
+    {
+      "bytes": 58874,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_diagonal_data.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_diagonal_data.g",
+      "sha256": "b1b79d31169e01f92fd51cb0497a425ca5f98b805f3bc645b7d1edc82be648f5"
+    },
+    {
+      "bytes": 13395,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_free.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_free.g",
+      "sha256": "e07f96411e331959e2bddd55c33b4573a6442d1f241419867bfb0d219b7cf7b9"
+    },
+    {
+      "bytes": 2942,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_incoming_background.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_incoming_background.g",
+      "sha256": "132dd565bf86eda6451d221a5280653c6de0b41a5be2c24f6ed20df434a538e4"
+    },
+    {
+      "bytes": 1034336,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_o5_background.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_o5_background.g",
+      "sha256": "b9a153a5bf2ba7c6be402dcecd1e49a667910fefeced667b04c11c5b4cffc82d"
+    },
+    {
+      "bytes": 614450,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_o5_background.json",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_o5_background.json",
+      "sha256": "83d531e131c39ad03bb5ed3621dbc022a4fa5bd97f4bd6305bac4ac866e4d477"
+    },
+    {
+      "bytes": 232492,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_o5_background_even.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_o5_background_even.g",
+      "sha256": "ddc33ab7095024e9e5b5f483795a0e5113447a1bbd236cdefc835d4334a445da"
+    },
+    {
+      "bytes": 485993,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_o5_background_sign.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_o5_background_sign.g",
+      "sha256": "ab1bf2657e812e47d97036f56c199c049596ee7c484676cb96cb5ada4037a60b"
+    },
+    {
+      "bytes": 201297,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_o5_general.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_o5_general.g",
+      "sha256": "9a27dda678c9ffc0da986e62b47ca71cc8ce6cd305c6d2c5e989debb4c3c3f38"
+    },
+    {
+      "bytes": 120617,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_o5_program.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_o5_program.g",
+      "sha256": "ba324e52fd1fbe99196dec47b9e35bcd95138a32e9ab8f3c71f101d1bcccf03f"
+    },
+    {
+      "bytes": 120822,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_o5_program.json",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_o5_program.json",
+      "sha256": "10e607ca43e32f0d343bb54e83dab248b1c4ea379a68f3cce2c479b5f6e7dd2f"
+    },
+    {
+      "bytes": 23807,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_o5_sign.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_o5_sign.g",
+      "sha256": "097c4e799b0f485b3def3dbd1006930d32819c96feb8c36741a69c48923a239b"
+    },
+    {
+      "bytes": 14356,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_o5_sign.json",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_o5_sign.json",
+      "sha256": "ff62534ab5ed832b77a426eb915d87e46164ff560611b5f94cb945e33df5900c"
+    },
+    {
+      "bytes": 11274,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/pip_stacking.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/pip_stacking.g",
+      "sha256": "ca64fc2abd496134db9abd16b090295a8ea1c360b5626f1f6707da38c9ae34ab"
+    },
+    {
+      "bytes": 7695,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/point_group_backend.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/point_group_backend.g",
+      "sha256": "a2760fef229e611350c94d3d0ab791342020a396eeac1d4d070f74a86ea2ae46"
+    },
+    {
+      "bytes": 8196,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/run_one.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/run_one.g",
+      "sha256": "920f75c96d5cf07fa7e9144ec5df7a5ca250ccb9ec87f8baa8568b2728b19064"
+    },
+    {
+      "bytes": 7059,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/run_point_group.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/run_point_group.g",
+      "sha256": "3499d163bbec7258a71627483960ffe4fb46a4513b1cbd98055f8f30e659b76a"
+    },
+    {
+      "bytes": 41254,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/stacking.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/stacking.g",
+      "sha256": "4a8bcd788980c1f87cf5ced70ab277562f0c3e1db73462e6ea377155305d697d"
+    },
+    {
+      "bytes": 1891,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/source/gap/stacking_closed_cf.g",
+      "path": "cohorts/point_group_controls_v2/source/gap/stacking_closed_cf.g",
+      "sha256": "99948d62e0f2fa8e90cf725d43439f9470352508f6c137d54fa5f80b0b8b71fe"
+    },
+    {
+      "bytes": 505,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg1.g",
+      "path": "cohorts/point_group_controls_v2/spinless_pg1.g",
+      "sha256": "7b47b3d2da53c25089df1c5a8b225a581f61ba5c9ceabf57e7c1886bfcfecb66"
+    },
+    {
+      "bytes": 508,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg10.g",
+      "path": "cohorts/point_group_controls_v2/spinless_pg10.g",
+      "sha256": "40f8dc688a2f591e3974567ed3c94b16f2c8e5c4fc4ff1482ba04f67a0c7bbfc"
+    },
+    {
+      "bytes": 19789,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg10.json",
+      "path": "cohorts/point_group_controls_v2/spinless_pg10.json",
+      "sha256": "ab1dcf68eefe5cba55e15712608d21bee5ad339a45dceeddcee3ebb518c3a9dc"
+    },
+    {
+      "bytes": 6344,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg10.raw.json",
+      "path": "cohorts/point_group_controls_v2/spinless_pg10.raw.json",
+      "sha256": "9e78b9a676ce11b218730ec6feaed6648a63a3ddf97258909521ded5cece41de"
+    },
+    {
+      "bytes": 505,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg3.g",
+      "path": "cohorts/point_group_controls_v2/spinless_pg3.g",
+      "sha256": "b8d95b1c7d380be2178f821babc1285ddcaeb662a8a179a5c1d0c22611276442"
+    },
+    {
+      "bytes": 34947,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg3.json",
+      "path": "cohorts/point_group_controls_v2/spinless_pg3.json",
+      "sha256": "34c6b54b85bd74b381e9a49e106965c45e190f23a433e281a5fb855777c01fd8"
+    },
+    {
+      "bytes": 13078,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg3.raw.json",
+      "path": "cohorts/point_group_controls_v2/spinless_pg3.raw.json",
+      "sha256": "f7d1540c3caea282fbdd3833436944449f412c5be391dcd3cc2c544d5258cbee"
+    },
+    {
+      "bytes": 508,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg32.g",
+      "path": "cohorts/point_group_controls_v2/spinless_pg32.g",
+      "sha256": "4b6a868a0e427fa41401e44384264a5e87f669926bd6e85a12a66c18fe38555c"
+    },
+    {
+      "bytes": 189486,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg32.json",
+      "path": "cohorts/point_group_controls_v2/spinless_pg32.json",
+      "sha256": "816275e5b1dc19b4340f5be27745637de46d784588b8f57a488147439d12a08f"
+    },
+    {
+      "bytes": 35365,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg32.raw.json",
+      "path": "cohorts/point_group_controls_v2/spinless_pg32.raw.json",
+      "sha256": "e6db78af71266b582b54f512e8b10def14523e95683ce614e884256e78ed0b45"
+    },
+    {
+      "bytes": 505,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg4.g",
+      "path": "cohorts/point_group_controls_v2/spinless_pg4.g",
+      "sha256": "c47cc4c2457f30fe880feec86aca6421e6a17ceb530e47536fd31231e8ce9ac8"
+    },
+    {
+      "bytes": 20138,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg4.json",
+      "path": "cohorts/point_group_controls_v2/spinless_pg4.json",
+      "sha256": "da7b34a457e21d0936f3d6017ef7594e768a33ccfdd02c956631da22748b9021"
+    },
+    {
+      "bytes": 7637,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/spinless_pg4.raw.json",
+      "path": "cohorts/point_group_controls_v2/spinless_pg4.raw.json",
+      "sha256": "bdcec1d4bec284f6cdf7c8f02376504a308d13ce385d4258ce4ab2c60e68ef28"
+    },
+    {
+      "bytes": 623,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-backend-v2-40442284/status.json",
+      "path": "tasks/20260927T204849-pg-backend-v2-40442284/status.json",
+      "sha256": "d7ce6b85e82c7e0511d458bca6b47e0dbd15e65d9dc3af997a0028b53d3fa626"
+    },
+    {
+      "bytes": 886,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-backend-v2-40442284/metrics.txt",
+      "path": "tasks/20260927T204849-pg-backend-v2-40442284/metrics.txt",
+      "sha256": "8a0e271c850c7ea618ac845a26b18407515a8452f8ef096ee1d31a6f013954a4"
+    },
+    {
+      "bytes": 2896,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-backend-v2-40442284/stdout.log",
+      "path": "tasks/20260927T204849-pg-backend-v2-40442284/stdout.txt",
+      "sha256": "6ace4dfaa7db47aa68e375139cf06a59b1f831cc07a2d1245e532b3d3bc7012b"
+    },
+    {
+      "bytes": 720,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-1-v2-23bed58f/status.json",
+      "path": "tasks/20260927T204849-pg-half-1-v2-23bed58f/status.json",
+      "sha256": "7fbde591fade7091883d91da907f86618fd3cfed8503246f8c6d1ca945d85479"
+    },
+    {
+      "bytes": 957,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-1-v2-23bed58f/metrics.txt",
+      "path": "tasks/20260927T204849-pg-half-1-v2-23bed58f/metrics.txt",
+      "sha256": "c70112ce6aa90fe2043ddeaf0332b34682a365d0a75f1e379b9e5b1cb9f1c5e0"
+    },
+    {
+      "bytes": 2080,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-1-v2-23bed58f/stdout.log",
+      "path": "tasks/20260927T204849-pg-half-1-v2-23bed58f/stdout.txt",
+      "sha256": "57be07b9fe8397c67b8a3a31d1ff5084230a5177da8e563738381aa93322e0cd"
+    },
+    {
+      "bytes": 734,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-1-v2-7cf1af33/status.json",
+      "path": "tasks/20260927T204849-pg-spinless-1-v2-7cf1af33/status.json",
+      "sha256": "ddb7b5a7a76ead3582b8cfc9c976bff692eb4a4771f6d2d94ffabc266c2415c1"
+    },
+    {
+      "bytes": 1004,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-1-v2-7cf1af33/metrics.txt",
+      "path": "tasks/20260927T204849-pg-spinless-1-v2-7cf1af33/metrics.txt",
+      "sha256": "1f3f06fa6778e70001686a81532ee9d5b07fd2f3e7b1ac1b9d96dfbd54e48044"
+    },
+    {
+      "bytes": 1739,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-1-v2-7cf1af33/stdout.log",
+      "path": "tasks/20260927T204849-pg-spinless-1-v2-7cf1af33/stdout.txt",
+      "sha256": "5903dc604b669fd8e6fddbfd1e59360e189d0433209fbcdcc610fd72ad5c17bf"
+    },
+    {
+      "bytes": 722,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-3-v2-cd0fa7f6/status.json",
+      "path": "tasks/20260927T204849-pg-half-3-v2-cd0fa7f6/status.json",
+      "sha256": "9ec05ef51281b1890d77b5026a7b1bcf76bca7e25de5639b893b0ffa7a1961a4"
+    },
+    {
+      "bytes": 957,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-3-v2-cd0fa7f6/metrics.txt",
+      "path": "tasks/20260927T204849-pg-half-3-v2-cd0fa7f6/metrics.txt",
+      "sha256": "b6eccc830a3572151c9ae72079936d08b4ab8734dd85ed6d7b722532e3d68408"
+    },
+    {
+      "bytes": 2080,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-3-v2-cd0fa7f6/stdout.log",
+      "path": "tasks/20260927T204849-pg-half-3-v2-cd0fa7f6/stdout.txt",
+      "sha256": "654aa77a9515b8502a49762006960c70cbc22768d4be158b98106c9fc0d40c19"
+    },
+    {
+      "bytes": 732,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-3-v2-23360e7f/status.json",
+      "path": "tasks/20260927T204849-pg-spinless-3-v2-23360e7f/status.json",
+      "sha256": "8103118107dfb1ccb7934fd67b4633f3f6c9bb00e01876fac4356fc7098cf5ff"
+    },
+    {
+      "bytes": 969,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-3-v2-23360e7f/metrics.txt",
+      "path": "tasks/20260927T204849-pg-spinless-3-v2-23360e7f/metrics.txt",
+      "sha256": "66e4297ce0200c5a91b1bb33628377c31631e7ebc1203b5b9de8c13c717f2deb"
+    },
+    {
+      "bytes": 2174,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-3-v2-23360e7f/stdout.log",
+      "path": "tasks/20260927T204849-pg-spinless-3-v2-23360e7f/stdout.txt",
+      "sha256": "ea64daf23da6c81bb3f731cec9c1fc47aaffb4d22018b4ce341392c2b3dc748f"
+    },
+    {
+      "bytes": 720,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-4-v2-0f5a97ec/status.json",
+      "path": "tasks/20260927T204849-pg-half-4-v2-0f5a97ec/status.json",
+      "sha256": "1d174d6368ed6c0feb73bcfbaccc6e575672bc932434ed4c7cc397a31851e296"
+    },
+    {
+      "bytes": 957,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-4-v2-0f5a97ec/metrics.txt",
+      "path": "tasks/20260927T204849-pg-half-4-v2-0f5a97ec/metrics.txt",
+      "sha256": "b5a0c4b42708eba25a4ff43b3fc1ac4d474df3cef8d67eb634afc084cc4137d2"
+    },
+    {
+      "bytes": 2080,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-4-v2-0f5a97ec/stdout.log",
+      "path": "tasks/20260927T204849-pg-half-4-v2-0f5a97ec/stdout.txt",
+      "sha256": "9216e7cd04876a9087557819e42731e34218d5b0aea967e96f137410ca39ce44"
+    },
+    {
+      "bytes": 733,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-4-v2-218d5868/status.json",
+      "path": "tasks/20260927T204849-pg-spinless-4-v2-218d5868/status.json",
+      "sha256": "e4be6b1b910fad2571b7a14cebc95b8d3c2a4b510d9b5a295c0766f9ee9ee40d"
+    },
+    {
+      "bytes": 966,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-4-v2-218d5868/metrics.txt",
+      "path": "tasks/20260927T204849-pg-spinless-4-v2-218d5868/metrics.txt",
+      "sha256": "400032f561d2c875cdcd25cdc687e0a24a9ad6e8dec04373f6bc72bdddd80049"
+    },
+    {
+      "bytes": 2370,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-4-v2-218d5868/stdout.log",
+      "path": "tasks/20260927T204849-pg-spinless-4-v2-218d5868/stdout.txt",
+      "sha256": "bf3b6e256dfd7fd683e1222db88cf7290474a5f340361435ed9fc5b1156b3e97"
+    },
+    {
+      "bytes": 721,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-10-v2-d0827b4d/status.json",
+      "path": "tasks/20260927T204849-pg-half-10-v2-d0827b4d/status.json",
+      "sha256": "734c32a74c295f4426c3fcb3418442c579104ebc8d2e37788a93181a1f8292b0"
+    },
+    {
+      "bytes": 959,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-10-v2-d0827b4d/metrics.txt",
+      "path": "tasks/20260927T204849-pg-half-10-v2-d0827b4d/metrics.txt",
+      "sha256": "7b631eed657a478f2d2a421ffd1a33fd9a758f5f31911a9b8f48aa85cad4bda0"
+    },
+    {
+      "bytes": 2302,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-10-v2-d0827b4d/stdout.log",
+      "path": "tasks/20260927T204849-pg-half-10-v2-d0827b4d/stdout.txt",
+      "sha256": "2e7c22dcb461382f2ec55d65b28f445bc62f037efcd5ac6cbd6c1e2209486332"
+    },
+    {
+      "bytes": 737,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-10-v2-7ff679a8/status.json",
+      "path": "tasks/20260927T204849-pg-spinless-10-v2-7ff679a8/status.json",
+      "sha256": "e5d82ab2324c2093a39e7c43f64bb4c1b40c2615f46908e7ea93e95b9347b39e"
+    },
+    {
+      "bytes": 968,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-10-v2-7ff679a8/metrics.txt",
+      "path": "tasks/20260927T204849-pg-spinless-10-v2-7ff679a8/metrics.txt",
+      "sha256": "ac3155102794b2d41d2f7da5b193a16db0c022540540eec1826194023814d040"
+    },
+    {
+      "bytes": 2274,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-10-v2-7ff679a8/stdout.log",
+      "path": "tasks/20260927T204849-pg-spinless-10-v2-7ff679a8/stdout.txt",
+      "sha256": "28acbf5215f4fdee28ae504315842cd7963140fd1f80b502b8303ad870fe4768"
+    },
+    {
+      "bytes": 724,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-32-v2-d984ccd3/status.json",
+      "path": "tasks/20260927T204849-pg-half-32-v2-d984ccd3/status.json",
+      "sha256": "c0f44c8b2f963aa6de788ae8103d6be533eb261a915ed9a909f188374c9060e4"
+    },
+    {
+      "bytes": 960,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-32-v2-d984ccd3/metrics.txt",
+      "path": "tasks/20260927T204849-pg-half-32-v2-d984ccd3/metrics.txt",
+      "sha256": "487f7659e8bffb03b49c2daf9f7b37672edd398f209e7980279b8e0c13cc6801"
+    },
+    {
+      "bytes": 2103,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-half-32-v2-d984ccd3/stdout.log",
+      "path": "tasks/20260927T204849-pg-half-32-v2-d984ccd3/stdout.txt",
+      "sha256": "f9be1e7a3254aa657bc142285561556d0a482790013ce670454499a45a140c1f"
+    },
+    {
+      "bytes": 737,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-32-v2-bf642991/status.json",
+      "path": "tasks/20260927T204849-pg-spinless-32-v2-bf642991/status.json",
+      "sha256": "ed79f64e28bf0f301eeef700c6f0f82ce441bd84c0165592451b2729f01321ac"
+    },
+    {
+      "bytes": 968,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-32-v2-bf642991/metrics.txt",
+      "path": "tasks/20260927T204849-pg-spinless-32-v2-bf642991/metrics.txt",
+      "sha256": "96992cab0892746218bb36684b9ce3ee1054daef70ee81211c07aee3b76e5695"
+    },
+    {
+      "bytes": 2201,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T204849-pg-spinless-32-v2-bf642991/stdout.log",
+      "path": "tasks/20260927T204849-pg-spinless-32-v2-bf642991/stdout.txt",
+      "sha256": "cb1dd8968c8692ba1788ee5b1127c7aff43594cffcfd019179766a458dc60d52"
+    },
+    {
+      "bytes": 3397,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/classification/half_pg2.json",
+      "path": "cohorts/point_group_controls_v3/classification/half_pg2.json",
+      "sha256": "9e4915192f01108a75c866d27cb926d65431f9ce3939b361aeb2e7775e2b70a1"
+    },
+    {
+      "bytes": 2068,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/classification/half_pg2.raw.json",
+      "path": "cohorts/point_group_controls_v3/classification/half_pg2.raw.json",
+      "sha256": "c51b446926163b62c6da8120aca875191f0f9bffbd02254ceafc9a3cf067e9c0"
+    },
+    {
+      "bytes": 5910,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/classification/spinless_pg1.json",
+      "path": "cohorts/point_group_controls_v3/classification/spinless_pg1.json",
+      "sha256": "cd2cd6eb44bb5ce590cb8b0ebc5fc3a70a519d0082b01fadcde6d7d4fd8e4e12"
+    },
+    {
+      "bytes": 3202,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/classification/spinless_pg1.raw.json",
+      "path": "cohorts/point_group_controls_v3/classification/spinless_pg1.raw.json",
+      "sha256": "a4759b4a169b09c26b7ea02e8606576081b602bc40a9d8eb65004de7a425b698"
+    },
+    {
+      "bytes": 7779,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/classification/spinless_pg2.json",
+      "path": "cohorts/point_group_controls_v3/classification/spinless_pg2.json",
+      "sha256": "34b55c3e9407452a67868d35600a96e9682f2bfdf4209bc694bfaf526c4de84b"
+    },
+    {
+      "bytes": 3485,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/classification/spinless_pg2.raw.json",
+      "path": "cohorts/point_group_controls_v3/classification/spinless_pg2.raw.json",
+      "sha256": "d7da6463261350f83b22a8716333d4014198588d3856009b3b1801a16b48300d"
+    },
+    {
+      "bytes": 493,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/half_pg2.g",
+      "path": "cohorts/point_group_controls_v3/half_pg2.g",
+      "sha256": "109ba81722404f0342ba8c6a292a3817d5f1cbdae989b0ecf63d4b08bdacb3c8"
+    },
+    {
+      "bytes": 9630,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/half_pg2.json",
+      "path": "cohorts/point_group_controls_v3/half_pg2.json",
+      "sha256": "5d1c655dc34a2d66757a228f86e2b643dc686961470d90f66ee33690800d223a"
+    },
+    {
+      "bytes": 3337,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/half_pg2.raw.json",
+      "path": "cohorts/point_group_controls_v3/half_pg2.raw.json",
+      "sha256": "beefd5d326bc9c384307468b8974b0dba2bd845f0c00ce458cdb174e44da5c5d"
+    },
+    {
+      "bytes": 6155,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/pilot.json",
+      "path": "cohorts/point_group_controls_v3/pilot.json",
+      "sha256": "1f25e6d94d9b0b6bc9f0e3fdddfa94fb85952258c4cb78697f2c59276bce8efc"
+    },
+    {
+      "bytes": 11075,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/BACKEND.md",
+      "path": "cohorts/point_group_controls_v3/source/gap/BACKEND.md",
+      "sha256": "e3fe3bff916957feb29f5cd8ac14adfb84ec21da5ca7e5ce4eb08eac81ebf8b3"
+    },
+    {
+      "bytes": 12748,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend.g",
+      "sha256": "3df26e9746d9a929cb53e10bbb22ccb18f0f61e1d6e84f4e7afc002245bd06bd"
+    },
+    {
+      "bytes": 6821,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_bar.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_bar.g",
+      "sha256": "f17525ab9d456ccceb9c0a4e22d1651ac510b97201f86445467a453b912bc60b"
+    },
+    {
+      "bytes": 1452,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_bar_mod2.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_bar_mod2.g",
+      "sha256": "4f54447c16b28c6b7dd3b12e91d1a81797136bb47a32627be7aa6f0cef0beaae"
+    },
+    {
+      "bytes": 3370,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_cup_cycle.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_cup_cycle.g",
+      "sha256": "a7d052c891f9320a3389584daa3d5e521a2be75d223a2ef1e55b48f3a0275a91"
+    },
+    {
+      "bytes": 2985,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_cup_slant.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_cup_slant.g",
+      "sha256": "48d6709aea5d180e7ff63ce015d6879974a1b05a8ebd7a1a28d17763cfa91432"
+    },
+    {
+      "bytes": 14925,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_diagonal.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_diagonal.g",
+      "sha256": "11e04411cb2afe51fa98f2ac205f8e9c2c1e69f9bfa4e686767e3511dfa29afc"
+    },
+    {
+      "bytes": 2270,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_half_phase.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_half_phase.g",
+      "sha256": "9c11621b02ce4a7bacbf57332e4500d7a37f5e9ac65792ce81f63ab06675225c"
+    },
+    {
+      "bytes": 2362,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_hash_cache.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_hash_cache.g",
+      "sha256": "30958c3bb86a23cb25d5a11ef0dbb888126f8c5da3325c2d0d50b47f9ade10fe"
+    },
+    {
+      "bytes": 2794,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_mod2_contraction.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_mod2_contraction.g",
+      "sha256": "0562ebbdc4cfceddc9ff10d3caedef1f1ce4d6de529097bbd385874f1b7fd854"
+    },
+    {
+      "bytes": 8528,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_resolution.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_resolution.g",
+      "sha256": "5453332bb4da63383f706423b767d636c9e9277b8660200ab190f2912552192b"
+    },
+    {
+      "bytes": 1068,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_smith_transfer.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_smith_transfer.g",
+      "sha256": "134ae9ef6454d5f942a2b8bb34d9359fd3ee662e5804dfde1b15dd75284bf1dd"
+    },
+    {
+      "bytes": 2127,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/backend_smith_units.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/backend_smith_units.g",
+      "sha256": "20530c5f9c607e0be46bced4b3d3c80a06cef19e1970412c51db16687a625500"
+    },
+    {
+      "bytes": 2467,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/background_free.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/background_free.g",
+      "sha256": "864c35c502ac1c867a4cb0b45ca2e0ae3ca402a18a4c453a429a0f0cad2db21c"
+    },
+    {
+      "bytes": 1903,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/background_native_cup.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/background_native_cup.g",
+      "sha256": "4204ec0d806f44b606ed92d6cb5df54bdb5387f7d6eff60a6da5f63722f418be"
+    },
+    {
+      "bytes": 3382,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/background_operations.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/background_operations.g",
+      "sha256": "12ce6cd3d8759cf7a5254c789ad0844b660e46a83c5e1af1665dc421ac8e0d97"
+    },
+    {
+      "bytes": 11022,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/background_quotient.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/background_quotient.g",
+      "sha256": "158bd0c23ffdb26c61bb03d30bf1e2d18c61fbe8ce6a3fd9e285faff81a6e734"
+    },
+    {
+      "bytes": 4233,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/background_stacking.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/background_stacking.g",
+      "sha256": "dbdc50a7ed6c336c8d83ee6306a277bf100e57fb580f6706e548b6fb51a77774"
+    },
+    {
+      "bytes": 1661,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/class_coordinates.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/class_coordinates.g",
+      "sha256": "681d6ab197b249c9312d9fb46762cfef801441379488c250e8b10e3f64973165"
+    },
+    {
+      "bytes": 11774,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/classification.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/classification.g",
+      "sha256": "c46321480db282154b95525dd4f6a21521b2e0692a426ac1541a15e2634a7b9b"
+    },
+    {
+      "bytes": 6918,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/crystalline_background.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/crystalline_background.g",
+      "sha256": "4d625d2a7c58316da14ed015d3da26bc280b2dbcdf43516706da0c5a8dd26b4a"
+    },
+    {
+      "bytes": 35283,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/formula_data.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/formula_data.g",
+      "sha256": "4fd1ade218090c962fcdb89bf2255c351da5b9308ca98e54a5b3e896c6b8e28e"
+    },
+    {
+      "bytes": 178504,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/formula_fast.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/formula_fast.g",
+      "sha256": "a70a23b8ff01862471b3e8cbf12fa08e7171a8ffc35b5070e8085b5bfb60d43f"
+    },
+    {
+      "bytes": 11971,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/formulas.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/formulas.g",
+      "sha256": "661da312670d6417106583da8fcc8a5f702397a04b0bf26bad91339816c75753"
+    },
+    {
+      "bytes": 3240,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip.g",
+      "sha256": "775136183234062135d957c00e07146f20fc11b2c24c3dcc2680af895deabd7d"
+    },
+    {
+      "bytes": 554,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_c4_data.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_c4_data.g",
+      "sha256": "77bbf5267277f33efee025666e7fd22b1136a5f483151fceb5abd833b151f18c"
+    },
+    {
+      "bytes": 2317,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_coordinate_data.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_coordinate_data.g",
+      "sha256": "daa9eb25fd7acb7a2e7d0fa286e6e1dece1ea913fe6e2d8e0783727c64433f87"
+    },
+    {
+      "bytes": 2041,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_coordinates.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_coordinates.g",
+      "sha256": "817af838199cc6ea422c73de3497525f67f0170ad68c202c0f70ee5fb561a445"
+    },
+    {
+      "bytes": 58874,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_diagonal_data.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_diagonal_data.g",
+      "sha256": "b1b79d31169e01f92fd51cb0497a425ca5f98b805f3bc645b7d1edc82be648f5"
+    },
+    {
+      "bytes": 13395,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_free.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_free.g",
+      "sha256": "e07f96411e331959e2bddd55c33b4573a6442d1f241419867bfb0d219b7cf7b9"
+    },
+    {
+      "bytes": 2942,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_incoming_background.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_incoming_background.g",
+      "sha256": "132dd565bf86eda6451d221a5280653c6de0b41a5be2c24f6ed20df434a538e4"
+    },
+    {
+      "bytes": 1034336,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_o5_background.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_o5_background.g",
+      "sha256": "b9a153a5bf2ba7c6be402dcecd1e49a667910fefeced667b04c11c5b4cffc82d"
+    },
+    {
+      "bytes": 614450,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_o5_background.json",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_o5_background.json",
+      "sha256": "83d531e131c39ad03bb5ed3621dbc022a4fa5bd97f4bd6305bac4ac866e4d477"
+    },
+    {
+      "bytes": 232492,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_o5_background_even.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_o5_background_even.g",
+      "sha256": "ddc33ab7095024e9e5b5f483795a0e5113447a1bbd236cdefc835d4334a445da"
+    },
+    {
+      "bytes": 485993,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_o5_background_sign.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_o5_background_sign.g",
+      "sha256": "ab1bf2657e812e47d97036f56c199c049596ee7c484676cb96cb5ada4037a60b"
+    },
+    {
+      "bytes": 201297,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_o5_general.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_o5_general.g",
+      "sha256": "9a27dda678c9ffc0da986e62b47ca71cc8ce6cd305c6d2c5e989debb4c3c3f38"
+    },
+    {
+      "bytes": 120617,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_o5_program.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_o5_program.g",
+      "sha256": "ba324e52fd1fbe99196dec47b9e35bcd95138a32e9ab8f3c71f101d1bcccf03f"
+    },
+    {
+      "bytes": 120822,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_o5_program.json",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_o5_program.json",
+      "sha256": "10e607ca43e32f0d343bb54e83dab248b1c4ea379a68f3cce2c479b5f6e7dd2f"
+    },
+    {
+      "bytes": 23807,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_o5_sign.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_o5_sign.g",
+      "sha256": "097c4e799b0f485b3def3dbd1006930d32819c96feb8c36741a69c48923a239b"
+    },
+    {
+      "bytes": 14356,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_o5_sign.json",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_o5_sign.json",
+      "sha256": "ff62534ab5ed832b77a426eb915d87e46164ff560611b5f94cb945e33df5900c"
+    },
+    {
+      "bytes": 11274,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/pip_stacking.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/pip_stacking.g",
+      "sha256": "ca64fc2abd496134db9abd16b090295a8ea1c360b5626f1f6707da38c9ae34ab"
+    },
+    {
+      "bytes": 8724,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/point_group_backend.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/point_group_backend.g",
+      "sha256": "badb0caa321d5cf7279b700ec45f325f638c0a944bf7fb6f21189e09eab13220"
+    },
+    {
+      "bytes": 8196,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/run_one.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/run_one.g",
+      "sha256": "920f75c96d5cf07fa7e9144ec5df7a5ca250ccb9ec87f8baa8568b2728b19064"
+    },
+    {
+      "bytes": 7058,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/run_point_group.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/run_point_group.g",
+      "sha256": "62aa48123889bf29d6feeef44cfc9808c86788587b6dc2dc2338aa87cba5cb08"
+    },
+    {
+      "bytes": 41254,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/stacking.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/stacking.g",
+      "sha256": "4a8bcd788980c1f87cf5ced70ab277562f0c3e1db73462e6ea377155305d697d"
+    },
+    {
+      "bytes": 1891,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/source/gap/stacking_closed_cf.g",
+      "path": "cohorts/point_group_controls_v3/source/gap/stacking_closed_cf.g",
+      "sha256": "99948d62e0f2fa8e90cf725d43439f9470352508f6c137d54fa5f80b0b8b71fe"
+    },
+    {
+      "bytes": 505,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/spinless_pg1.g",
+      "path": "cohorts/point_group_controls_v3/spinless_pg1.g",
+      "sha256": "f06e46df8bf884727f23bacb959cb50ed4b85f92bf04c0918ea11963de2d206a"
+    },
+    {
+      "bytes": 12117,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/spinless_pg1.json",
+      "path": "cohorts/point_group_controls_v3/spinless_pg1.json",
+      "sha256": "5a36b0c5cea97c89355db00fa1c0217481aa9ab73a3e92d3e4a243a2c3ef3d58"
+    },
+    {
+      "bytes": 4580,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/spinless_pg1.raw.json",
+      "path": "cohorts/point_group_controls_v3/spinless_pg1.raw.json",
+      "sha256": "5562b6df118fe7b1abdaf120257221bbbb2d8d6544aeb63d46ba148597de0725"
+    },
+    {
+      "bytes": 505,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/spinless_pg2.g",
+      "path": "cohorts/point_group_controls_v3/spinless_pg2.g",
+      "sha256": "d8505e4f2a850ff1b01a03390cb11e092ce120d65d325a6dfb873d4f522d9e20"
+    },
+    {
+      "bytes": 14139,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/spinless_pg2.json",
+      "path": "cohorts/point_group_controls_v3/spinless_pg2.json",
+      "sha256": "5808707f541979c172e3d637303c43e2588470123234f17f8a01dbd0d30a6031"
+    },
+    {
+      "bytes": 4874,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_group_controls_v3/spinless_pg2.raw.json",
+      "path": "cohorts/point_group_controls_v3/spinless_pg2.raw.json",
+      "sha256": "bba48dc30f01b1e3a217ca154f39e53d2f22c6bc2bb3062c12546e876cef02ec"
+    },
+    {
+      "bytes": 734,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T205056-pg-spinless-1-v3-a422e13c/status.json",
+      "path": "tasks/20260927T205056-pg-spinless-1-v3-a422e13c/status.json",
+      "sha256": "dd4d7fb56f51469c8f30920ca7bebf8c3984eeacc21e0163f99a5f437916a229"
+    },
+    {
+      "bytes": 966,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T205056-pg-spinless-1-v3-a422e13c/metrics.txt",
+      "path": "tasks/20260927T205056-pg-spinless-1-v3-a422e13c/metrics.txt",
+      "sha256": "e040c7148969593044248ce38219496af3a8e5b395672fe08e26d9c8a738bb39"
+    },
+    {
+      "bytes": 2092,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T205056-pg-spinless-1-v3-a422e13c/stdout.log",
+      "path": "tasks/20260927T205056-pg-spinless-1-v3-a422e13c/stdout.txt",
+      "sha256": "493888d9864bbd433c31674767436e7ed10efd032e9b6d8a5675c1ee96c2edf4"
+    },
+    {
+      "bytes": 722,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T205056-pg-half-2-v3-bf592aa0/status.json",
+      "path": "tasks/20260927T205056-pg-half-2-v3-bf592aa0/status.json",
+      "sha256": "71b432db1c14fd07049274ecfa531bea0612bb7e93f86f72842a623051d40390"
+    },
+    {
+      "bytes": 960,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T205056-pg-half-2-v3-bf592aa0/metrics.txt",
+      "path": "tasks/20260927T205056-pg-half-2-v3-bf592aa0/metrics.txt",
+      "sha256": "66fe39989ee1f4d567f6ebd821772bb55d2eb67594eb585b4e148ea6b90077ee"
+    },
+    {
+      "bytes": 2082,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T205056-pg-half-2-v3-bf592aa0/stdout.log",
+      "path": "tasks/20260927T205056-pg-half-2-v3-bf592aa0/stdout.txt",
+      "sha256": "ec136d9a21db77fd76fd586cff7cf05fc46f57e5e9054e2a53b77b72fc840202"
+    },
+    {
+      "bytes": 730,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T205056-pg-spinless-2-v3-8036dd12/status.json",
+      "path": "tasks/20260927T205056-pg-spinless-2-v3-8036dd12/status.json",
+      "sha256": "8e7d52b1c2e341611ef9741eecf27e7e26ed5a1e44d346ba2186cbed378807a8"
+    },
+    {
+      "bytes": 968,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T205056-pg-spinless-2-v3-8036dd12/metrics.txt",
+      "path": "tasks/20260927T205056-pg-spinless-2-v3-8036dd12/metrics.txt",
+      "sha256": "ce5fc0724eea4ff4bdde4b94e98aa14783c990d1b70a2bbc7d122bb5afe86d04"
+    },
+    {
+      "bytes": 2094,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T205056-pg-spinless-2-v3-8036dd12/stdout.log",
+      "path": "tasks/20260927T205056-pg-spinless-2-v3-8036dd12/stdout.txt",
+      "sha256": "3ab406141d8d85bc2ae8fa14445c6dbbbc0bbec9b67f5386c7e790bee4a847de"
+    },
+    {
+      "bytes": 78378,
+      "original_path": "/home/user/xyren/AllFSPT/runs/point_groups_64_v1/freeze_manifest.json",
+      "path": "final_run_freeze_manifest.json",
+      "sha256": "899677ef6ae30b701956503ad9e33a4bfd66e8e6d2122a8a224b21684b9779e2"
+    },
+    {
+      "bytes": 4383,
+      "original_path": "/home/user/xyren/AllFSPT/scripts/run_point_group.py",
+      "path": "harness_current/scripts/run_point_group.py",
+      "sha256": "414f391d206497107f0519f856cace7552be715b39c466b05e91735c774931b7"
+    },
+    {
+      "bytes": 889,
+      "original_path": "/home/user/xyren/AllFSPT/scripts/run_gap.py",
+      "path": "harness_current/scripts/run_gap.py",
+      "sha256": "a61af5ac3a5654a3171646bf806905ca5887d132d4622f81c7ebe2cfc6c044ca"
+    },
+    {
+      "bytes": 2256,
+      "original_path": "/home/user/xyren/AllFSPT/tests/test_point_group_backend.g",
+      "path": "harness_current/tests/test_point_group_backend.g",
+      "sha256": "2e1127734a9246f4d839c20f5a21704a27c23f7add08c37b1dccbde58d6aa372"
+    }
+  ],
+  "payload_bytes": 11621033,
+  "payload_files": 301,
+  "schema": "finite-point-group-development-archive-v1",
+  "scope": "Original failed and successful development trials; no result replacement and no comparison-answer input. This is not a uniform performance benchmark. Harness_current is copied at archive time and is not a retrospective claim of an earlier harness hash. Numerical source snapshots are verified against each original pilot source_id. Formal results live separately in results/point_groups."
+}

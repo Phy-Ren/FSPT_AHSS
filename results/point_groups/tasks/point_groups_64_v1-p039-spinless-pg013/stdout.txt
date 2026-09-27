@@ -1,0 +1,48 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_groups_64_v1/source/gap/formulas.g:110
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_groups_64_v1/source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_groups_64_v1/source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_groups_64_v1/source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/point\
+_groups_64_v1/source/gap/classification.g:253
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_FINITE_BACKEND 13 4mm order=8 dimensions=[ 1, 2, 4, 6, 8, 10, 12 ] cpu_ms=
+19191
+AFS_STAGE 13 cohomology cpu_ms=19470
+AFS_STAGE 13 primary_cf cpu_ms=19487
+AFS_STAGE 13 primary_mc_and_bos cpu_ms=19733
+AFS_STAGE 13 incoming_mc cpu_ms=19757
+AFS_STAGE 13 secondary_bos cpu_ms=19777
+AFS_STAGE 13 secondary_mc cpu_ms=19778
+AFS_STAGE 13 pip cpu_ms=20289
+AFS_STAGE 13 classification_end cpu_ms=20296
+AFS_STAGE 13 stack_lift_D1 cpu_ms=20312
+AFS_STAGE 13 stack_lift_D2 cpu_ms=20312
+AFS_STAGE 13 stack_lift_D3 cpu_ms=20312
+AFS_STAGE 13 stack_lift_B1 cpu_ms=20314
+AFS_STAGE 13 stack_relation_D1 cpu_ms=22094
+AFS_STAGE 13 stack_relation_D2 cpu_ms=22094
+AFS_STAGE 13 stack_relation_D3 cpu_ms=22094
+AFS_STAGE 13 stack_relation_B1 cpu_ms=22094
+AFS_POINT_GROUP_WRITTEN 13 spinless computed
+AFS_POINT_GROUP_SAVED 13 spinless computed /home/user/xyren/AllFSPT/runs/point_groups_64_v1/spinless_pg13.json

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_gap.py",
+    "--sentinel",
+    "AFS_POINT_BACKEND_TEST_PASS",
+    "/home/user/xyren/AllFSPT/runs/point_group_controls_v2/backend_control.g"
+  ],
+  "created": 1790513329.004638,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 33.20132565498352,
+  "exit_code": 0,
+  "finished": 1790513398.5232017,
+  "hostname": "n01.local",
+  "id": "20260927T204849-pg-backend-v2-40442284",
+  "pbs_job": "115956.head.local",
+  "pid": 16582,
+  "queue": "point_groups_20260927T123628Z_q1",
+  "started": 1790513365.3216987,
+  "status": "done",
+  "timeout_s": 1800
+}
