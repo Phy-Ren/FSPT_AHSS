@@ -14,6 +14,7 @@ ap.add_argument("group", type=int)
 ap.add_argument("--output", required=True)
 ap.add_argument("--mode", choices=["classification", "full"], default="full",
                 help="Full sequential classification and stacking (default); classification is a development check")
+ap.add_argument("--crystalline-spin", choices=["half", "spinless"], default="half")
 ap.add_argument("--source", help="Immutable source snapshot containing gap/")
 a = ap.parse_args()
 if not 1 <= a.group <= 230:
@@ -42,6 +43,7 @@ source_id = hashlib.sha256(json.dumps(hashes, sort_keys=True).encode()).hexdiges
 checkpoint = out.parent / "classification" / out.name
 checkpoint.parent.mkdir(parents=True, exist_ok=True)
 text = 'AFS_ROOT := %s;;\nAFS_SG := %d;;\nAFS_OUT := %s;;\nAFS_MODE := %s;;\nAFS_CLASS_OUT := %s;;\nAFS_SOURCE_ID := %s;;\nRead(%s);\n' % (json.dumps(str(source)), a.group, json.dumps(str(raw)), json.dumps(a.mode), json.dumps(str(checkpoint)), json.dumps(source_id), json.dumps(str(source / "gap" / "run_one.g")))
+text = "AFS_CRYSTALLINE_SPIN := %s;;\n" % json.dumps(a.crystalline_spin) + text
 driver.write_text(text)
 start = time.time()
 rc = subprocess.call([sys.executable, str(root / "scripts" / "run_gap.py"), "--sentinel", "AFS_RESULT_WRITTEN", str(driver)])

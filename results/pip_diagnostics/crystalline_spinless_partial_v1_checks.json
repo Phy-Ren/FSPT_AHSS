@@ -1,0 +1,63 @@
+{
+  "candidates": 233,
+  "convention": "physical-spinless-det-sign-Pin-minus",
+  "diagnostic_sha256": "4e83bf165a62e864feb222dda6cb666f1bde09af2789a67506fb55ecd66b08ea",
+  "first_half_diagnostic_untouched": true,
+  "formal_archive_manifest_present": false,
+  "formula_convention": "normalized-pip-aw-edge-transport-v2",
+  "full_230": false,
+  "groups": 215,
+  "independent_review": {
+    "reviewer": "formulas agent",
+    "scope": [
+      "schema2 unknown carry preservation",
+      "H0 filtered source multiples",
+      "partial coverage and missing groups",
+      "abstract isomorphism versus actual marked upper witness"
+    ],
+    "status": "PASS"
+  },
+  "input_hash_mismatches": [],
+  "input_hashes_verified_at_utc": "2026-09-27T04:41:47.867371+00:00",
+  "missing_space_groups": [
+    73,
+    126,
+    133,
+    137,
+    142,
+    201,
+    203,
+    206,
+    208,
+    210,
+    218,
+    219,
+    220,
+    228,
+    230
+  ],
+  "no_gap_or_reference_evaluation": true,
+  "overleaf_push_performed": false,
+  "paper_numerical_values_written": false,
+  "paper_preparation": {
+    "first_half_table_sha256": "e94a894d6345c6ec70810c3b7713ff903359c3e93d3969fa9fcc3d768b2b276c",
+    "generator_sha256": "ee891a2de251a8588bd2687c37190d491d27f3fe83867c89ee2a3bc9e1a11526",
+    "latexmk_exit": 0,
+    "pages": 56,
+    "second_half_table_present": false,
+    "section_sha256": "a81c418bb1382b2e68acdc9e8539b4ba51302a2729479e5d1f3b9d3a57110c9f"
+  },
+  "paper_preparation_directory": "/home/xingyu/stacking_spinless_update_20260927",
+  "paper_scope": "Separate future table; explicitly abstract isomorphism type versus unconstructed actual upper cochain/marked relation.",
+  "report_sha256": "99ea57e072841aec1fd28092a7e18885aa83a1109bfead76715638aff2e3c4ba",
+  "schema": 1,
+  "script_sha256": "2222b71d73698fbdc79d048ed05c8601f1970625af9dcf59eb00e447a1f29df0",
+  "snapshot_written_utc": "2026-09-27T04:40:07.878513+00:00",
+  "source_id": "82111071dc0c30ab4d319e16b7d2571d9f6b567430242dee530b3f5d3cc1e364",
+  "status": "partial-evidence-inventory",
+  "summary_reconciled_with_saved_evidence": true,
+  "tests": {
+    "command": "python3 -m unittest discover -s tests -p test_pip_diagnostics.py -v",
+    "passed": 5
+  }
+}

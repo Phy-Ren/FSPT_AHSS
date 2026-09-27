@@ -1,0 +1,77 @@
+{
+  "completed_at_utc": "2026-09-27T08:35:39.381868+00:00",
+  "final_portable_reports": {
+    "half_diagnostics_vs_accepted": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": true,
+      "candidate_only_groups": [],
+      "compared_groups": 2,
+      "path": "comparisons/half_diagnostics_vs_accepted.json",
+      "pending_expected_candidates": [],
+      "sha256": "905edf623a0e6438bebcdf2a817e38bc00931c52e0779dd311d1db387d2da6bf"
+    },
+    "half_regression_vs_accepted": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": true,
+      "candidate_only_groups": [],
+      "compared_groups": 7,
+      "path": "comparisons/half_regression_vs_accepted.json",
+      "pending_expected_candidates": [],
+      "sha256": "345898e8524ce8fe634ffbf579ad74653f68da3bc9041f0e7976e0a804764a5c"
+    },
+    "initial_vs_cup0": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": false,
+      "candidate_only_groups": [
+        219
+      ],
+      "compared_groups": 12,
+      "path": "comparisons/initial_vs_cup0.json",
+      "pending_expected_candidates": [],
+      "sha256": "b9d65d1af13db227a31da1763fc5ee2a9f02f7403e11a93929ea905c3f196082"
+    },
+    "v1_vs_cup0_complete": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": true,
+      "candidate_only_groups": [],
+      "compared_groups": 13,
+      "path": "comparisons/v1_vs_cup0_complete.json",
+      "pending_expected_candidates": [],
+      "sha256": "d821497256aafc1ffe81a18faeb62db24e705535eb9e4102a3e038130e6bd775"
+    },
+    "v1_vs_integrated_pilot": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": false,
+      "candidate_only_groups": [],
+      "compared_groups": 6,
+      "path": "comparisons/v1_vs_integrated_pilot.json",
+      "pending_expected_candidates": [
+        219
+      ],
+      "sha256": "b91554b931a57ed5e8778d1e86c20f80c1ba33816772cab5e0137ea5bda2cfcc"
+    },
+    "v1_vs_v3_complete": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": true,
+      "candidate_only_groups": [],
+      "compared_groups": 230,
+      "path": "comparisons/v1_vs_v3_complete.json",
+      "pending_expected_candidates": [],
+      "sha256": "c362cea532dd0b20e24e74dffb8362a027344f0cb6396d13d7d5ece04dbf9a8f"
+    }
+  },
+  "final_validation_manifest": {
+    "path": "results/optimization_validation/background_v3/validation.json",
+    "sha256": "741437940ad36a03e79de5776d26308632c502650b779f7f2822a1061a0c262b"
+  },
+  "historical_reports_preserved": {
+    "docs/validation_runs/background_literal_regressions/half_diagnostics_vs_accepted_complete.json": "fb3aee9c33914abc75e947497fb174c301ec5db38297815fce35fcc14041565f",
+    "docs/validation_runs/background_literal_regressions/half_v3_vs_accepted_complete.json": "fab2c558aa102725303900b3d0b238b94d8739c9f7a197cc37349934dad7a5d4",
+    "docs/validation_runs/background_literal_regressions/spinless_cup0_vs_controls_certified.json": "4da006bfd614a22ea034489079943f5087f619cedaca8cffa5fbbd1d446475fd",
+    "docs/validation_runs/background_literal_regressions/spinless_cup0_vs_production_certified.json": "11e136a861c1204433ac1ac9d1bc8496a4bcc8f8d41db1614f3e89ac8eb9c140",
+    "docs/validation_runs/background_literal_regressions/spinless_v3_vs_production_4groups.json": "5213f28060544fcc887a4a404d825b24a5f376b210c7bb9cfdeec0ce25e8499d",
+    "docs/validation_runs/background_literal_regressions/spinless_v3_vs_production_second.json": "0bfb8dd69ef38d8fb0847fb4dc03c93c371135a7639068ada94569550e8bc406"
+  },
+  "schema": "fspt-background-literal-regression-index-v1",
+  "scope": "Final reports use archived inputs. Original development comparisons remain unchanged as historical records; missing early fields are explicitly added evidence. Pilot SG219 timeout is preserved."
+}

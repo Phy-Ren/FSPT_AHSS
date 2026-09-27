@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_group.py",
+    "84",
+    "--mode",
+    "full",
+    "--crystalline-spin",
+    "half",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/spinless_specialized_controls_v3/source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/half_diagnostic_completion_v3/sg84.json"
+  ],
+  "created": 1790485731.3823075,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 162.50491523742676,
+  "estimated_seconds": 163.387,
+  "exit_code": 0,
+  "finished": 1790485918.8031893,
+  "hostname": "n05.local",
+  "id": "half_diagnostic_completion_v3-p001-sg084",
+  "pbs_job": "115925.head.local",
+  "pid": 17176,
+  "queue": "spinless_230_v1_20260927T040004Z_q5",
+  "space_group": 84,
+  "started": 1790485756.2980897,
+  "status": "done",
+  "timeout_s": 7200
+}

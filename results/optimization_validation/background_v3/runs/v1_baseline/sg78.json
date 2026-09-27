@@ -1,0 +1,1699 @@
+{
+  "binary_bar_mod2": false,
+  "bosonic": [],
+  "classification_status": "computed",
+  "closed_cf_obstruction": true,
+  "complex_fermion": [
+    2
+  ],
+  "convention": "physical-spinless-det-sign-Pin-minus",
+  "cpu_ms": 23217,
+  "crystalline_background": {
+    "affineCohomologyCoordinates": [
+      0,
+      0
+    ],
+    "characteristicClass": "w2(V)+w1(V)^2",
+    "construction": "exact-rational-spin-lift-of-det-times-point-representation",
+    "gaugeReducedToZero": true,
+    "identityIndex": 4,
+    "metric": [
+      [
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    ],
+    "metricDiagonal": [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "multiplication": [
+      [
+        4,
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        1,
+        4,
+        2
+      ],
+      [
+        2,
+        4,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "nativeDifferential1F2": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "nativeDifferential2F2": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "nativeH2Generators": [
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    ],
+    "nativeOriginalOmega2": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "normalizedCocycleChecked": true,
+    "omegaTable": [
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "orthogonalBasis": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "pointElements": [
+      [
+        [
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ]
+    ],
+    "pointOrder": 4,
+    "rationalEncoding": "[numerator,denominator] for all entries of pointElements/metric/orthogonalBasis/metricDiagonal/rationalSpinLifts",
+    "rationalSpinLifts": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "signTable": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "trivializationRecipe": "AFSSolve on the original Pin-minus pullback, including comparison homotopy",
+    "trivializingNative1": [
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "crystalline_spin": "spinless",
+  "finished": 1790482253.2177362,
+  "formula_convention": "normalized-pip-aw-edge-transport-v2",
+  "free_pip_cpu_ms": 2,
+  "generic_pip_compiled": true,
+  "generic_pip_compiled_calls": 0,
+  "libraries": {
+    "CrystCat": "1.1.10",
+    "GAP": "4.13.1",
+    "HAP": "1.62",
+    "Polycyclic": "2.16"
+  },
+  "majorana": [
+    2,
+    2
+  ],
+  "mode": "full",
+  "native_mod2_cache_degrees": 0,
+  "native_mod2_contraction": true,
+  "native_primary_operations": true,
+  "native_target_cycles": true,
+  "pip": {
+    "free_lattice": {
+      "certificate": "s=B=C=0-identically-annihilates-full-normalized-O5",
+      "certificateLevel": "explicit-universal-pullback-or-comparison-homotopy-primitive",
+      "checkedComparisonSupport": false,
+      "freeIndices": [
+        1
+      ],
+      "fullFreePhaseWitness": true,
+      "generators": [
+        {
+          "construction": "unitary-primitive-integer-character-with-zero-lower-tower",
+          "fermion3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "h1Coordinates": [
+            1
+          ],
+          "integer1": [
+            -1,
+            0,
+            0,
+            4
+          ],
+          "majorana2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "Pfree1",
+          "phase4": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "h1BasisNative1": [
+        [
+          -1,
+          0,
+          0,
+          4
+        ]
+      ],
+      "h1BasisOrders": [
+        0
+      ],
+      "latticeBasis": [
+        [
+          1
+        ]
+      ],
+      "latticeIndex": 1,
+      "parityCandidates": [],
+      "rank": 1,
+      "sourceFiles": [
+        "gap/pip_free.g"
+      ],
+      "status": "computed",
+      "survivingParityBasis": [
+        [
+          1
+        ]
+      ]
+    },
+    "free_rank": 1,
+    "orders": [
+      0
+    ],
+    "status": "computed",
+    "torsion": []
+  },
+  "ranks": {
+    "CF_incoming": 0,
+    "CF_primary": 0,
+    "H1F2": 2,
+    "H2F2": 2,
+    "H3F2": 1,
+    "MC_primary": 0,
+    "MC_secondary": 0
+  },
+  "resolution_dimensions": [
+    1,
+    4,
+    7,
+    8,
+    8,
+    8,
+    8
+  ],
+  "resolution_timings": {
+    "RL_ms": 245,
+    "RP_ms": 13,
+    "extension_ms": 554,
+    "holonomy_ms": 55,
+    "section_ms": 6
+  },
+  "scope": "3+1D-full-affine-associated-graded",
+  "source_id": "82111071dc0c30ab4d319e16b7d2571d9f6b567430242dee530b3f5d3cc1e364",
+  "source_sha256": {
+    "gap/backend.g": "3df26e9746d9a929cb53e10bbb22ccb18f0f61e1d6e84f4e7afc002245bd06bd",
+    "gap/backend_bar.g": "f17525ab9d456ccceb9c0a4e22d1651ac510b97201f86445467a453b912bc60b",
+    "gap/backend_bar_mod2.g": "4f54447c16b28c6b7dd3b12e91d1a81797136bb47a32627be7aa6f0cef0beaae",
+    "gap/backend_cup_cycle.g": "a7d052c891f9320a3389584daa3d5e521a2be75d223a2ef1e55b48f3a0275a91",
+    "gap/backend_cup_slant.g": "48d6709aea5d180e7ff63ce015d6879974a1b05a8ebd7a1a28d17763cfa91432",
+    "gap/backend_diagonal.g": "11e04411cb2afe51fa98f2ac205f8e9c2c1e69f9bfa4e686767e3511dfa29afc",
+    "gap/backend_half_phase.g": "9c11621b02ce4a7bacbf57332e4500d7a37f5e9ac65792ce81f63ab06675225c",
+    "gap/backend_hash_cache.g": "30958c3bb86a23cb25d5a11ef0dbb888126f8c5da3325c2d0d50b47f9ade10fe",
+    "gap/backend_mod2_contraction.g": "0562ebbdc4cfceddc9ff10d3caedef1f1ce4d6de529097bbd385874f1b7fd854",
+    "gap/backend_resolution.g": "5453332bb4da63383f706423b767d636c9e9277b8660200ab190f2912552192b",
+    "gap/backend_smith_transfer.g": "134ae9ef6454d5f942a2b8bb34d9359fd3ee662e5804dfde1b15dd75284bf1dd",
+    "gap/backend_smith_units.g": "20530c5f9c607e0be46bced4b3d3c80a06cef19e1970412c51db16687a625500",
+    "gap/background_free.g": "864c35c502ac1c867a4cb0b45ca2e0ae3ca402a18a4c453a429a0f0cad2db21c",
+    "gap/background_operations.g": "f61b8aeb36331e1ac2a054b56bc2fa2a50a97a8eb1485b7a4bcb1c089caef35a",
+    "gap/background_quotient.g": "158bd0c23ffdb26c61bb03d30bf1e2d18c61fbe8ce6a3fd9e285faff81a6e734",
+    "gap/background_stacking.g": "dbdc50a7ed6c336c8d83ee6306a277bf100e57fb580f6706e548b6fb51a77774",
+    "gap/class_coordinates.g": "681d6ab197b249c9312d9fb46762cfef801441379488c250e8b10e3f64973165",
+    "gap/classification.g": "d636cfd9225aae75a18698685b3695a5bcb5d48200bba1902afb7546af8d7cd9",
+    "gap/crystalline_background.g": "4d625d2a7c58316da14ed015d3da26bc280b2dbcdf43516706da0c5a8dd26b4a",
+    "gap/formula_data.g": "4fd1ade218090c962fcdb89bf2255c351da5b9308ca98e54a5b3e896c6b8e28e",
+    "gap/formula_fast.g": "a70a23b8ff01862471b3e8cbf12fa08e7171a8ffc35b5070e8085b5bfb60d43f",
+    "gap/formulas.g": "4034008b6f1eee427759920632f882dedf55a8b3b9ceadb485236aab4c76f189",
+    "gap/pip.g": "72b09bbb0eac4bf9e6b8854b4b6b732088c564d82a2096483f4a1ff18f9b6ab8",
+    "gap/pip_c4_data.g": "77bbf5267277f33efee025666e7fd22b1136a5f483151fceb5abd833b151f18c",
+    "gap/pip_coordinate_data.g": "daa9eb25fd7acb7a2e7d0fa286e6e1dece1ea913fe6e2d8e0783727c64433f87",
+    "gap/pip_coordinates.g": "817af838199cc6ea422c73de3497525f67f0170ad68c202c0f70ee5fb561a445",
+    "gap/pip_diagonal_data.g": "b1b79d31169e01f92fd51cb0497a425ca5f98b805f3bc645b7d1edc82be648f5",
+    "gap/pip_free.g": "c3274802db7baad9e39c38659e793ff822f3315a967e5fa20287e30e2dc61ffa",
+    "gap/pip_incoming_background.g": "132dd565bf86eda6451d221a5280653c6de0b41a5be2c24f6ed20df434a538e4",
+    "gap/pip_o5_background.g": "b9a153a5bf2ba7c6be402dcecd1e49a667910fefeced667b04c11c5b4cffc82d",
+    "gap/pip_o5_general.g": "9a27dda678c9ffc0da986e62b47ca71cc8ce6cd305c6d2c5e989debb4c3c3f38",
+    "gap/pip_o5_program.g": "ba324e52fd1fbe99196dec47b9e35bcd95138a32e9ab8f3c71f101d1bcccf03f",
+    "gap/pip_o5_sign.g": "097c4e799b0f485b3def3dbd1006930d32819c96feb8c36741a69c48923a239b",
+    "gap/pip_stacking.g": "ca64fc2abd496134db9abd16b090295a8ea1c360b5626f1f6707da38c9ae34ab",
+    "gap/run_one.g": "0b725ca65df180d93e27753a34a3dce22ac00c2967a2b31d930af75fc8543ff5",
+    "gap/stacking.g": "50a8fdb6fb9d1011c5ef8546cafadd3da2ae7be106e2323de0c589cae35eb650",
+    "gap/stacking_closed_cf.g": "99948d62e0f2fa8e90cf725d43439f9470352508f6c137d54fa5f80b0b8b71fe"
+  },
+  "source_snapshot": "/home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T040004Z/source",
+  "space_group": 78,
+  "sptset_loaded": false,
+  "stacking": {
+    "freePipCertificate": "free-associated-graded-quotient-splits-in-abelian-category",
+    "freePipRank": 1,
+    "fullBarCochainsPersisted": false,
+    "invariants": [
+      0,
+      2,
+      2,
+      2
+    ],
+    "lower": {
+      "enumeratedPhaseProducts": 0,
+      "finalFiltrationCertificate": {
+        "beforeH0Incoming": false,
+        "boson": [],
+        "convention": "physical-spinless-det-sign-Pin-minus",
+        "fermionRank": 1,
+        "majoranaRank": 2,
+        "spaceGroup": 78
+      },
+      "generators": [
+        {
+          "layer": 1,
+          "lift": {
+            "construction": "native-cocycle-and-homotopy-corrected-primitive",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "name": "C1",
+          "quotientOrder": 2
+        },
+        {
+          "layer": 2,
+          "lift": {
+            "construction": "full-Majorana-lift-with-linear-CF-indeterminacy-solve",
+            "fermion3": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "name": "B1",
+          "quotientOrder": 2
+        },
+        {
+          "layer": 2,
+          "lift": {
+            "construction": "full-Majorana-lift-with-linear-CF-indeterminacy-solve",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "majorana2": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "name": "B2",
+          "quotientOrder": 2
+        }
+      ],
+      "invariants": [
+        2,
+        2,
+        2
+      ],
+      "presentation": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "scope": "p+ip-zero-three-layer-extension",
+      "smithColumnTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "smithDiagonal": [
+        2,
+        2,
+        2
+      ],
+      "smithRowTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "status": "computed",
+      "witnesses": [
+        {
+          "bosonicIncomingCoordinates": [
+            0,
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "zero",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0,
+            0
+          ],
+          "checkedComparisonSupport": false,
+          "phaseGauge3": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "bosonicIncomingCoordinates": [
+            0,
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "zero",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0,
+            0
+          ],
+          "checkedComparisonSupport": false,
+          "phaseGauge3": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "bosonicIncomingCoordinates": [
+            0,
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "zero",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0,
+            0
+          ],
+          "checkedComparisonSupport": false,
+          "phaseGauge3": [
+            [
+              3,
+              4
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ]
+    },
+    "persistedWitnessType": "native-vectors-plus-explicit-comparison-homotopy-recipes",
+    "physicalConvention": "physical-spinless-det-sign-Pin-minus",
+    "scope": "3+1D-crystalline-spinless-affine-stacking",
+    "sourceFiles": [
+      "gap/backend.g",
+      "gap/backend_bar.g",
+      "gap/formulas.g",
+      "gap/formula_data.g",
+      "gap/stacking.g"
+    ],
+    "status": "computed"
+  },
+  "stage_timings": [
+    {
+      "cpu_ms": 23018,
+      "stage": "cohomology"
+    },
+    {
+      "cpu_ms": 23067,
+      "stage": "primary_cf"
+    },
+    {
+      "cpu_ms": 23067,
+      "stage": "primary_mc_and_bos"
+    },
+    {
+      "cpu_ms": 23067,
+      "stage": "incoming_mc"
+    },
+    {
+      "cpu_ms": 23191,
+      "stage": "secondary_bos"
+    },
+    {
+      "cpu_ms": 23191,
+      "stage": "secondary_mc"
+    },
+    {
+      "cpu_ms": 23192,
+      "stage": "pip"
+    },
+    {
+      "cpu_ms": 23203,
+      "stage": "classification_end"
+    },
+    {
+      "cpu_ms": 23217,
+      "stage": "free_pip_classification_end"
+    },
+    {
+      "cpu_ms": 23916,
+      "stage": "stack_lift_C1"
+    },
+    {
+      "cpu_ms": 26660,
+      "stage": "stack_lift_B1"
+    },
+    {
+      "cpu_ms": 31520,
+      "stage": "stack_lift_B2"
+    },
+    {
+      "cpu_ms": 36061,
+      "stage": "stack_relation_C1"
+    },
+    {
+      "cpu_ms": 37689,
+      "stage": "stack_relation_B1"
+    },
+    {
+      "cpu_ms": 39004,
+      "stage": "stack_relation_B2"
+    }
+  ],
+  "started": 1790482211.0356426,
+  "status": "computed",
+  "total_cpu_ms": 41312,
+  "wall_seconds": 42.18208646774292
+}

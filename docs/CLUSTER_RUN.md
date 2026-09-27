@@ -149,6 +149,13 @@ nohup "$FSPT_PY" scripts/watch_campaign.py "$FSPT_RUN" --interval 10 \
 printf '%s\n' "$!" > "$FSPT_ADMIN/observer.pid"
 ```
 
+以上命令重现 crystalline spin-1/2（internal spinless）。计算另一种
+crystalline spinless（internal spin-1/2）约定时，在一个新的 `FSPT_RUN`
+中使用 `--crystalline-spin spinless`，并将提交命令的 `--source` 改为
+`results/space_groups_spinless/source`、`--timings` 改为
+`results/space_groups_spinless`。物理约定必须显式传入；更换源码目录本身
+不会更改默认的 `half` 选项。observer 和 worker 的操作相同。
+
 保留 `campaign.json`、`observation.json`、observer 日志和 `runs/tasks/`。如果 observer 被中断，重新连接仍复用 SSH master，恢复本次 `FSPT_RUN_TAG`、`FSPT_RUN`、`FSPT_ADMIN` 和 `FSPT_PY` 变量，然后使用下面的命令；不要删 observation 重新计时。脚本用文件锁拒绝同时运行两个 observer。
 
 ```bash
@@ -168,6 +175,23 @@ printf '%s\n' "$!" > "$FSPT_ADMIN/observer.pid"
 "$FSPT_PY" scripts/collect_performance.py "$FSPT_RUN" \
   --tasks-root runs/tasks --output "$FSPT_RUN/performance.json"
 ```
+
+第二半使用严格背景审核与独立归档命令，输出目录必须是尚不存在的新目录：
+
+```bash
+"$FSPT_PY" scripts/audit_background_run.py "$FSPT_RUN"
+"$FSPT_PY" scripts/archive_background_campaign.py "$FSPT_RUN" \
+  --source results/space_groups_spinless/source --tasks-root runs/tasks \
+  --output results/new_spinless_archive
+"$FSPT_PY" scripts/report_background_results.py results/new_spinless_archive \
+  --output results/new_spinless_archive/report --tex
+```
+
+归档同时记录实际耗时和证书范围。背景审核分别检查 abstract stacking
+同构型和实际 marked upper relation；不能把前者通过当成缺失的 upper
+共链已经构造。当前非零背景实现的最终 classification checkpoint 位于
+整套 background stacking 之后，包含存在时的 H0 incoming 商；对没有
+H0 输入的群也沿用此顺序，不能据此宣称独立分类模块的耗时。
 
 最后确认本轮所有 worker 都已没有 active、pending 或 running 任务，再在**本轮自己的五个队列**放置 `STOP`。worker 会正常退出，PBS allocation 随之释放。不要清除任何历史 `STOP`，也不要为了重用旧队列改写其状态。
 

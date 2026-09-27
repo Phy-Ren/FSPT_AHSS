@@ -1,0 +1,288 @@
+{
+  "complete": true,
+  "releases": [
+    {
+      "pbs_job": "115921.head.local",
+      "queue": "spinless_dev_20260927T033520Z",
+      "release_evidence": "exact PBS job state C",
+      "released": true,
+      "scheduler_before_stop": {
+        "arguments": [
+          "qstat",
+          "-f",
+          "115921.head.local"
+        ],
+        "epoch": 1790495783.9939349,
+        "exit_code": 0,
+        "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+        "stdout": "Job Id: 115921.head.local\n    Job_Name = FSPT-spinless\n    Job_Owner = xyren@head.local\n    resources_used.cput = 19:28:34\n    resources_used.energy_used = 0\n    resources_used.mem = 11549472kb\n    resources_used.vmem = 120408596kb\n    resources_used.walltime = 04:20:03\n    job_state = R\n    queue = bigmem\n    server = head.local\n    Checkpoint = u\n    ctime = Sun Sep 27 11:35:20 2026\n    Error_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_dev_2026092\n\t7T033520Z.pbs.log\n    exec_host = n01.local/0-27\n    Hold_Types = n\n    Join_Path = oe\n    Keep_Files = n\n    Mail_Points = a\n    mtime = Sun Sep 27 11:35:21 2026\n    Output_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_dev_202609\n\t27T033520Z.pbs.log\n    Priority = 0\n    qtime = Sun Sep 27 11:35:20 2026\n    Rerunable = True\n    Resource_List.nodect = 1\n    Resource_List.nodes = 1:ppn=28:bigmem\n    Resource_List.walltime = 12:00:00\n    session_id = 12887\n    Shell_Path_List = /bin/bash\n    Variable_List = PBS_O_QUEUE=bigmem,PBS_O_HOME=/home/user/xyren,\n\tPBS_O_LOGNAME=xyren,\n\tPBS_O_PATH=/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bi\n\tn:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin\n\t:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/b\n\tio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/\n\tbio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gmap/bin:/opt/bio/ti\n\tgr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/o\n\tpt/ganglia/sbin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/o\n\tpt/maven/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/grid\n\tengine/bin/linux-x64,PBS_O_MAIL=/var/spool/mail/xyren,\n\tPBS_O_SHELL=/bin/csh,PBS_O_LANG=en_US.UTF-8,\n\tAFS_QUEUE=spinless_dev_20260927T033520Z,AFS_WORKERS=28,\n\tPBS_O_WORKDIR=/home/user/xyren,PBS_O_HOST=head.local,\n\tPBS_O_SERVER=head.local\n    euser = xyren\n    egroup = users\n    queue_type = E\n    etime = Sun Sep 27 11:35:20 2026\n    submit_args = /home/user/xyren/AllFSPT/runs/spinless_dev_20260927T033520Z.\n\tpbs\n    start_time = Sun Sep 27 11:35:21 2026\n    Walltime.Remaining = 27538\n    start_count = 1\n    fault_tolerant = False\n    job_radix = 0\n    submit_host = head.local\n    request_version = 1\n\n"
+      },
+      "scheduler_observations": [
+        {
+          "arguments": [
+            "qstat",
+            "-f",
+            "115921.head.local"
+          ],
+          "epoch": 1790495844.5696123,
+          "exit_code": 0,
+          "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+          "stdout": "Job Id: 115921.head.local\n    Job_Name = FSPT-spinless\n    Job_Owner = xyren@head.local\n    resources_used.cput = 19:29:30\n    resources_used.energy_used = 0\n    resources_used.mem = 11549472kb\n    resources_used.vmem = 120408596kb\n    resources_used.walltime = 04:21:03\n    job_state = C\n    queue = bigmem\n    server = head.local\n    Checkpoint = u\n    ctime = Sun Sep 27 11:35:20 2026\n    Error_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_dev_2026092\n\t7T033520Z.pbs.log\n    exec_host = n01.local/0-27\n    Hold_Types = n\n    Join_Path = oe\n    Keep_Files = n\n    Mail_Points = a\n    mtime = Sun Sep 27 15:56:28 2026\n    Output_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_dev_202609\n\t27T033520Z.pbs.log\n    Priority = 0\n    qtime = Sun Sep 27 11:35:20 2026\n    Rerunable = True\n    Resource_List.nodect = 1\n    Resource_List.nodes = 1:ppn=28:bigmem\n    Resource_List.walltime = 12:00:00\n    session_id = 12887\n    Shell_Path_List = /bin/bash\n    Variable_List = PBS_O_QUEUE=bigmem,PBS_O_HOME=/home/user/xyren,\n\tPBS_O_LOGNAME=xyren,\n\tPBS_O_PATH=/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bi\n\tn:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin\n\t:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/b\n\tio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/\n\tbio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gmap/bin:/opt/bio/ti\n\tgr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/o\n\tpt/ganglia/sbin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/o\n\tpt/maven/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/grid\n\tengine/bin/linux-x64,PBS_O_MAIL=/var/spool/mail/xyren,\n\tPBS_O_SHELL=/bin/csh,PBS_O_LANG=en_US.UTF-8,\n\tAFS_QUEUE=spinless_dev_20260927T033520Z,AFS_WORKERS=28,\n\tPBS_O_WORKDIR=/home/user/xyren,PBS_O_HOST=head.local,\n\tPBS_O_SERVER=head.local\n    euser = xyren\n    egroup = users\n    queue_type = E\n    sched_hint = Post job file processing error; job 115921.head.local on host\n\t n01.local\n\nUnable to copy file /var/spool/torque/spool/115921.head.lo\n\tcal.OU to xyren@head.local:/home/user/xyren/AllFSPT/runs/spinless_dev_\n\t20260927T033520Z.pbs.log,\n\t error 1\n*** error from copy\n/home/user/xyren/.ssh/config: line 37: B\n\tad configuration option: PubkeyAcceptedAlgorithms\n/home/user/xyren/.s\n\tsh/config line 38: Bad protocol 2 host key algorithms 'ssh-ed25519,\n\trsa-sha2-512,rsa-sha2-256,\n\tecdsa-sha2-nistp256'.\nlost connection\n*** end error output\nOutput re\n\ttained on that host in: /var/spool/torque/undelivered/115921.head.loca\n\tl.OU\n    etime = Sun Sep 27 11:35:20 2026\n    exit_status = 0\n    submit_args = /home/user/xyren/AllFSPT/runs/spinless_dev_20260927T033520Z.\n\tpbs\n    start_time = Sun Sep 27 11:35:21 2026\n    start_count = 1\n    fault_tolerant = False\n    comp_time = Sun Sep 27 15:56:28 2026\n    job_radix = 0\n    total_runtime = 15667.801786\n    submit_host = head.local\n    request_version = 1\n\n"
+        }
+      ],
+      "stop_epoch": 1790495784.0865717,
+      "stopped": true,
+      "worker_after_stop": {
+        "active": [],
+        "heartbeat": 1790495820.7409375,
+        "hostname": "n01.local",
+        "pbs_job": "115921.head.local",
+        "pid": 13024,
+        "slots": 28,
+        "started": 1790480157.3219233
+      },
+      "worker_before_stop": {
+        "active": [],
+        "heartbeat": 1790495819.7386754,
+        "hostname": "n01.local",
+        "pbs_job": "115921.head.local",
+        "pid": 13024,
+        "slots": 28,
+        "started": 1790480157.3219233
+      }
+    },
+    {
+      "pbs_job": "115922.head.local",
+      "queue": "spinless_230_v1_20260927T040004Z_q2",
+      "release_evidence": "exact PBS job state C",
+      "released": true,
+      "scheduler_before_stop": {
+        "arguments": [
+          "qstat",
+          "-f",
+          "115922.head.local"
+        ],
+        "epoch": 1790496566.8573267,
+        "exit_code": 0,
+        "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+        "stdout": "Job Id: 115922.head.local\n    Job_Name = FSPT-sl2\n    Job_Owner = xyren@head.local\n    resources_used.cput = 20:31:54\n    resources_used.energy_used = 0\n    resources_used.mem = 16518992kb\n    resources_used.vmem = 120405356kb\n    resources_used.walltime = 04:08:23\n    job_state = R\n    queue = bigmem\n    server = head.local\n    Checkpoint = u\n    ctime = Sun Sep 27 12:00:04 2026\n    Error_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_2026\n\t0927T040004Z_pbs/worker2.log\n    exec_host = n02.local/0-27\n    Hold_Types = n\n    Join_Path = oe\n    Keep_Files = n\n    Mail_Points = a\n    mtime = Sun Sep 27 12:00:05 2026\n    Output_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_202\n\t60927T040004Z_pbs/worker2.log\n    Priority = 0\n    qtime = Sun Sep 27 12:00:04 2026\n    Rerunable = True\n    Resource_List.nodect = 1\n    Resource_List.nodes = 1:ppn=28:bigmem\n    Resource_List.walltime = 12:00:00\n    session_id = 7167\n    Shell_Path_List = /bin/bash\n    Variable_List = PBS_O_QUEUE=bigmem,PBS_O_HOME=/home/user/xyren,\n\tPBS_O_LOGNAME=xyren,\n\tPBS_O_PATH=/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bi\n\tn:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin\n\t:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/b\n\tio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/\n\tbio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gmap/bin:/opt/bio/ti\n\tgr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/o\n\tpt/ganglia/sbin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/o\n\tpt/maven/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/grid\n\tengine/bin/linux-x64,PBS_O_MAIL=/var/spool/mail/xyren,\n\tPBS_O_SHELL=/bin/csh,PBS_O_LANG=en_US.UTF-8,\n\tAFS_QUEUE=spinless_230_v1_20260927T040004Z_q2,AFS_WORKERS=28,\n\tPBS_O_WORKDIR=/home/user/xyren/AllFSPT,PBS_O_HOST=head.local,\n\tPBS_O_SERVER=head.local\n    euser = xyren\n    egroup = users\n    queue_type = E\n    etime = Sun Sep 27 12:00:04 2026\n    submit_args = /home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T04000\n\t4Z_pbs/worker2.pbs\n    start_time = Sun Sep 27 12:00:05 2026\n    Walltime.Remaining = 28239\n    start_count = 1\n    fault_tolerant = False\n    job_radix = 0\n    submit_host = head.local\n    request_version = 1\n\n"
+      },
+      "scheduler_observations": [
+        {
+          "arguments": [
+            "qstat",
+            "-f",
+            "115922.head.local"
+          ],
+          "epoch": 1790496627.429705,
+          "exit_code": 0,
+          "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+          "stdout": "Job Id: 115922.head.local\n    Job_Name = FSPT-sl2\n    Job_Owner = xyren@head.local\n    resources_used.cput = 20:32:53\n    resources_used.energy_used = 0\n    resources_used.mem = 16518992kb\n    resources_used.vmem = 120405356kb\n    resources_used.walltime = 04:09:22\n    job_state = C\n    queue = bigmem\n    server = head.local\n    Checkpoint = u\n    ctime = Sun Sep 27 12:00:04 2026\n    Error_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_2026\n\t0927T040004Z_pbs/worker2.log\n    exec_host = n02.local/0-27\n    Hold_Types = n\n    Join_Path = oe\n    Keep_Files = n\n    Mail_Points = a\n    mtime = Sun Sep 27 16:09:31 2026\n    Output_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_202\n\t60927T040004Z_pbs/worker2.log\n    Priority = 0\n    qtime = Sun Sep 27 12:00:04 2026\n    Rerunable = True\n    Resource_List.nodect = 1\n    Resource_List.nodes = 1:ppn=28:bigmem\n    Resource_List.walltime = 12:00:00\n    session_id = 7167\n    Shell_Path_List = /bin/bash\n    Variable_List = PBS_O_QUEUE=bigmem,PBS_O_HOME=/home/user/xyren,\n\tPBS_O_LOGNAME=xyren,\n\tPBS_O_PATH=/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bi\n\tn:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin\n\t:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/b\n\tio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/\n\tbio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gmap/bin:/opt/bio/ti\n\tgr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/o\n\tpt/ganglia/sbin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/o\n\tpt/maven/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/grid\n\tengine/bin/linux-x64,PBS_O_MAIL=/var/spool/mail/xyren,\n\tPBS_O_SHELL=/bin/csh,PBS_O_LANG=en_US.UTF-8,\n\tAFS_QUEUE=spinless_230_v1_20260927T040004Z_q2,AFS_WORKERS=28,\n\tPBS_O_WORKDIR=/home/user/xyren/AllFSPT,PBS_O_HOST=head.local,\n\tPBS_O_SERVER=head.local\n    euser = xyren\n    egroup = users\n    queue_type = E\n    sched_hint = Post job file processing error; job 115922.head.local on host\n\t n02.local\n\nUnable to copy file /var/spool/torque/spool/115922.head.lo\n\tcal.OU to xyren@head.local:/home/user/xyren/AllFSPT/runs/spinless_230_\n\tv1_20260927T040004Z_pbs/worker2.log,\n\t error 1\n*** error from copy\n/home/user/xyren/.ssh/config: line 37: B\n\tad configuration option: PubkeyAcceptedAlgorithms\n/home/user/xyren/.s\n\tsh/config line 38: Bad protocol 2 host key algorithms 'ssh-ed25519,\n\trsa-sha2-512,rsa-sha2-256,\n\tecdsa-sha2-nistp256'.\nlost connection\n*** end error output\nOutput re\n\ttained on that host in: /var/spool/torque/undelivered/115922.head.loca\n\tl.OU\n    etime = Sun Sep 27 12:00:04 2026\n    exit_status = 0\n    submit_args = /home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T04000\n\t4Z_pbs/worker2.pbs\n    start_time = Sun Sep 27 12:00:05 2026\n    start_count = 1\n    fault_tolerant = False\n    comp_time = Sun Sep 27 16:09:31 2026\n    job_radix = 0\n    total_runtime = 14966.051860\n    submit_host = head.local\n    request_version = 1\n\n"
+        }
+      ],
+      "stop_epoch": 1790496566.9091568,
+      "stopped": true,
+      "worker_after_stop": {
+        "active": [],
+        "heartbeat": 1790496596.313244,
+        "hostname": "n02.local",
+        "pbs_job": "115922.head.local",
+        "pid": 7304,
+        "slots": 28,
+        "started": 1790481634.6595674
+      },
+      "worker_before_stop": {
+        "active": [],
+        "heartbeat": 1790496595.3105805,
+        "hostname": "n02.local",
+        "pbs_job": "115922.head.local",
+        "pid": 7304,
+        "slots": 28,
+        "started": 1790481634.6595674
+      }
+    },
+    {
+      "pbs_job": "115923.head.local",
+      "queue": "spinless_230_v1_20260927T040004Z_q3",
+      "release_evidence": "exact PBS job state C",
+      "released": true,
+      "scheduler_before_stop": {
+        "arguments": [
+          "qstat",
+          "-f",
+          "115923.head.local"
+        ],
+        "epoch": 1790497650.2775548,
+        "exit_code": 0,
+        "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+        "stdout": "Job Id: 115923.head.local\n    Job_Name = FSPT-sl3\n    Job_Owner = xyren@head.local\n    resources_used.cput = 21:21:52\n    resources_used.energy_used = 0\n    resources_used.mem = 14503072kb\n    resources_used.vmem = 120409748kb\n    resources_used.walltime = 04:26:34\n    job_state = R\n    queue = bigmem\n    server = head.local\n    Checkpoint = u\n    ctime = Sun Sep 27 12:00:04 2026\n    Error_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_2026\n\t0927T040004Z_pbs/worker3.log\n    exec_host = n03.local/0-27\n    Hold_Types = n\n    Join_Path = oe\n    Keep_Files = n\n    Mail_Points = a\n    mtime = Sun Sep 27 12:00:05 2026\n    Output_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_202\n\t60927T040004Z_pbs/worker3.log\n    Priority = 0\n    qtime = Sun Sep 27 12:00:04 2026\n    Rerunable = True\n    Resource_List.nodect = 1\n    Resource_List.nodes = 1:ppn=28:bigmem\n    Resource_List.walltime = 12:00:00\n    session_id = 5637\n    Shell_Path_List = /bin/bash\n    Variable_List = PBS_O_QUEUE=bigmem,PBS_O_HOME=/home/user/xyren,\n\tPBS_O_LOGNAME=xyren,\n\tPBS_O_PATH=/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bi\n\tn:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin\n\t:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/b\n\tio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/\n\tbio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gmap/bin:/opt/bio/ti\n\tgr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/o\n\tpt/ganglia/sbin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/o\n\tpt/maven/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/grid\n\tengine/bin/linux-x64,PBS_O_MAIL=/var/spool/mail/xyren,\n\tPBS_O_SHELL=/bin/csh,PBS_O_LANG=en_US.UTF-8,\n\tAFS_QUEUE=spinless_230_v1_20260927T040004Z_q3,AFS_WORKERS=28,\n\tPBS_O_WORKDIR=/home/user/xyren/AllFSPT,PBS_O_HOST=head.local,\n\tPBS_O_SERVER=head.local\n    euser = xyren\n    egroup = users\n    queue_type = E\n    etime = Sun Sep 27 12:00:04 2026\n    submit_args = /home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T04000\n\t4Z_pbs/worker3.pbs\n    start_time = Sun Sep 27 12:00:05 2026\n    Walltime.Remaining = 27155\n    start_count = 1\n    fault_tolerant = False\n    job_radix = 0\n    submit_host = head.local\n    request_version = 1\n\n"
+      },
+      "scheduler_observations": [
+        {
+          "arguments": [
+            "qstat",
+            "-f",
+            "115923.head.local"
+          ],
+          "epoch": 1790497710.860539,
+          "exit_code": 0,
+          "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+          "stdout": "Job Id: 115923.head.local\n    Job_Name = FSPT-sl3\n    Job_Owner = xyren@head.local\n    resources_used.cput = 21:21:52\n    resources_used.energy_used = 0\n    resources_used.mem = 14503072kb\n    resources_used.vmem = 120409748kb\n    resources_used.walltime = 04:27:26\n    job_state = C\n    queue = bigmem\n    server = head.local\n    Checkpoint = u\n    ctime = Sun Sep 27 12:00:04 2026\n    Error_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_2026\n\t0927T040004Z_pbs/worker3.log\n    exec_host = n03.local/0-27\n    Hold_Types = n\n    Join_Path = oe\n    Keep_Files = n\n    Mail_Points = a\n    mtime = Sun Sep 27 16:27:35 2026\n    Output_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_202\n\t60927T040004Z_pbs/worker3.log\n    Priority = 0\n    qtime = Sun Sep 27 12:00:04 2026\n    Rerunable = True\n    Resource_List.nodect = 1\n    Resource_List.nodes = 1:ppn=28:bigmem\n    Resource_List.walltime = 12:00:00\n    session_id = 5637\n    Shell_Path_List = /bin/bash\n    Variable_List = PBS_O_QUEUE=bigmem,PBS_O_HOME=/home/user/xyren,\n\tPBS_O_LOGNAME=xyren,\n\tPBS_O_PATH=/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bi\n\tn:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin\n\t:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/b\n\tio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/\n\tbio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gmap/bin:/opt/bio/ti\n\tgr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/o\n\tpt/ganglia/sbin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/o\n\tpt/maven/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/grid\n\tengine/bin/linux-x64,PBS_O_MAIL=/var/spool/mail/xyren,\n\tPBS_O_SHELL=/bin/csh,PBS_O_LANG=en_US.UTF-8,\n\tAFS_QUEUE=spinless_230_v1_20260927T040004Z_q3,AFS_WORKERS=28,\n\tPBS_O_WORKDIR=/home/user/xyren/AllFSPT,PBS_O_HOST=head.local,\n\tPBS_O_SERVER=head.local\n    euser = xyren\n    egroup = users\n    queue_type = E\n    sched_hint = Post job file processing error; job 115923.head.local on host\n\t n03.local\n\nUnable to copy file /var/spool/torque/spool/115923.head.lo\n\tcal.OU to xyren@head.local:/home/user/xyren/AllFSPT/runs/spinless_230_\n\tv1_20260927T040004Z_pbs/worker3.log,\n\t error 1\n*** error from copy\n/home/user/xyren/.ssh/config: line 37: B\n\tad configuration option: PubkeyAcceptedAlgorithms\n/home/user/xyren/.s\n\tsh/config line 38: Bad protocol 2 host key algorithms 'ssh-ed25519,\n\trsa-sha2-512,rsa-sha2-256,\n\tecdsa-sha2-nistp256'.\nlost connection\n*** end error output\nOutput re\n\ttained on that host in: /var/spool/torque/undelivered/115923.head.loca\n\tl.OU\n    etime = Sun Sep 27 12:00:04 2026\n    exit_status = 0\n    submit_args = /home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T04000\n\t4Z_pbs/worker3.pbs\n    start_time = Sun Sep 27 12:00:05 2026\n    start_count = 1\n    fault_tolerant = False\n    comp_time = Sun Sep 27 16:27:35 2026\n    job_radix = 0\n    total_runtime = 16050.137481\n    submit_host = head.local\n    request_version = 1\n\n"
+        }
+      ],
+      "stop_epoch": 1790497650.3299656,
+      "stopped": true,
+      "worker_after_stop": {
+        "active": [],
+        "heartbeat": 1790497685.5754218,
+        "hostname": "n03.local",
+        "pbs_job": "115923.head.local",
+        "pid": 5774,
+        "slots": 28,
+        "started": 1790481639.8183923
+      },
+      "worker_before_stop": {
+        "active": [],
+        "heartbeat": 1790497684.5731816,
+        "hostname": "n03.local",
+        "pbs_job": "115923.head.local",
+        "pid": 5774,
+        "slots": 28,
+        "started": 1790481639.8183923
+      }
+    },
+    {
+      "pbs_job": "115924.head.local",
+      "queue": "spinless_230_v1_20260927T040004Z_q4",
+      "release_evidence": "exact PBS job state C",
+      "released": true,
+      "scheduler_before_stop": {
+        "arguments": [
+          "qstat",
+          "-f",
+          "115924.head.local"
+        ],
+        "epoch": 1790488286.728528,
+        "exit_code": 0,
+        "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+        "stdout": "Job Id: 115924.head.local\n    Job_Name = FSPT-sl4\n    Job_Owner = xyren@head.local\n    resources_used.cput = 15:53:27\n    resources_used.energy_used = 0\n    resources_used.mem = 15355780kb\n    resources_used.vmem = 120414100kb\n    resources_used.walltime = 01:50:19\n    job_state = R\n    queue = bigmem\n    server = head.local\n    Checkpoint = u\n    ctime = Sun Sep 27 12:00:04 2026\n    Error_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_2026\n\t0927T040004Z_pbs/worker4.log\n    exec_host = n04.local/0-27\n    Hold_Types = n\n    Join_Path = oe\n    Keep_Files = n\n    Mail_Points = a\n    mtime = Sun Sep 27 12:00:05 2026\n    Output_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_202\n\t60927T040004Z_pbs/worker4.log\n    Priority = 0\n    qtime = Sun Sep 27 12:00:04 2026\n    Rerunable = True\n    Resource_List.nodect = 1\n    Resource_List.nodes = 1:ppn=28:bigmem\n    Resource_List.walltime = 12:00:00\n    session_id = 37346\n    Shell_Path_List = /bin/bash\n    Variable_List = PBS_O_QUEUE=bigmem,PBS_O_HOME=/home/user/xyren,\n\tPBS_O_LOGNAME=xyren,\n\tPBS_O_PATH=/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bi\n\tn:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin\n\t:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/b\n\tio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/\n\tbio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gmap/bin:/opt/bio/ti\n\tgr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/o\n\tpt/ganglia/sbin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/o\n\tpt/maven/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/grid\n\tengine/bin/linux-x64,PBS_O_MAIL=/var/spool/mail/xyren,\n\tPBS_O_SHELL=/bin/csh,PBS_O_LANG=en_US.UTF-8,\n\tAFS_QUEUE=spinless_230_v1_20260927T040004Z_q4,AFS_WORKERS=28,\n\tPBS_O_WORKDIR=/home/user/xyren/AllFSPT,PBS_O_HOST=head.local,\n\tPBS_O_SERVER=head.local\n    euser = xyren\n    egroup = users\n    queue_type = E\n    etime = Sun Sep 27 12:00:04 2026\n    submit_args = /home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T04000\n\t4Z_pbs/worker4.pbs\n    start_time = Sun Sep 27 12:00:05 2026\n    Walltime.Remaining = 36519\n    start_count = 1\n    fault_tolerant = False\n    job_radix = 0\n    submit_host = head.local\n    request_version = 1\n\n"
+      },
+      "scheduler_observations": [
+        {
+          "arguments": [
+            "qstat",
+            "-f",
+            "115924.head.local"
+          ],
+          "epoch": 1790488425.0943246,
+          "exit_code": 0,
+          "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+          "stdout": "Job Id: 115924.head.local\n    Job_Name = FSPT-sl4\n    Job_Owner = xyren@head.local\n    resources_used.cput = 15:53:33\n    resources_used.energy_used = 0\n    resources_used.mem = 15355780kb\n    resources_used.vmem = 120414100kb\n    resources_used.walltime = 01:51:23\n    job_state = C\n    queue = bigmem\n    server = head.local\n    Checkpoint = u\n    ctime = Sun Sep 27 12:00:04 2026\n    Error_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_2026\n\t0927T040004Z_pbs/worker4.log\n    exec_host = n04.local/0-27\n    Hold_Types = n\n    Join_Path = oe\n    Keep_Files = n\n    Mail_Points = a\n    mtime = Sun Sep 27 13:51:31 2026\n    Output_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_202\n\t60927T040004Z_pbs/worker4.log\n    Priority = 0\n    qtime = Sun Sep 27 12:00:04 2026\n    Rerunable = True\n    Resource_List.nodect = 1\n    Resource_List.nodes = 1:ppn=28:bigmem\n    Resource_List.walltime = 12:00:00\n    session_id = 37346\n    Shell_Path_List = /bin/bash\n    Variable_List = PBS_O_QUEUE=bigmem,PBS_O_HOME=/home/user/xyren,\n\tPBS_O_LOGNAME=xyren,\n\tPBS_O_PATH=/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bi\n\tn:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin\n\t:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/b\n\tio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/\n\tbio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gmap/bin:/opt/bio/ti\n\tgr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/o\n\tpt/ganglia/sbin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/o\n\tpt/maven/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/grid\n\tengine/bin/linux-x64,PBS_O_MAIL=/var/spool/mail/xyren,\n\tPBS_O_SHELL=/bin/csh,PBS_O_LANG=en_US.UTF-8,\n\tAFS_QUEUE=spinless_230_v1_20260927T040004Z_q4,AFS_WORKERS=28,\n\tPBS_O_WORKDIR=/home/user/xyren/AllFSPT,PBS_O_HOST=head.local,\n\tPBS_O_SERVER=head.local\n    euser = xyren\n    egroup = users\n    queue_type = E\n    sched_hint = Post job file processing error; job 115924.head.local on host\n\t n04.local\n\nUnable to copy file /var/spool/torque/spool/115924.head.lo\n\tcal.OU to xyren@head.local:/home/user/xyren/AllFSPT/runs/spinless_230_\n\tv1_20260927T040004Z_pbs/worker4.log,\n\t error 1\n*** error from copy\n/home/user/xyren/.ssh/config: line 37: B\n\tad configuration option: PubkeyAcceptedAlgorithms\n/home/user/xyren/.s\n\tsh/config line 38: Bad protocol 2 host key algorithms 'ssh-ed25519,\n\trsa-sha2-512,rsa-sha2-256,\n\tecdsa-sha2-nistp256'.\nlost connection\n*** end error output\nOutput re\n\ttained on that host in: /var/spool/torque/undelivered/115924.head.loca\n\tl.OU\n    etime = Sun Sep 27 12:00:04 2026\n    exit_status = 0\n    submit_args = /home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T04000\n\t4Z_pbs/worker4.pbs\n    start_time = Sun Sep 27 12:00:05 2026\n    start_count = 1\n    fault_tolerant = False\n    comp_time = Sun Sep 27 13:51:31 2026\n    job_radix = 0\n    total_runtime = 6686.647595\n    submit_host = head.local\n    request_version = 1\n\n"
+        }
+      ],
+      "stop_epoch": 1790488286.7694662,
+      "stopped": true,
+      "worker_after_stop": {
+        "active": [],
+        "heartbeat": 1790488322.3579657,
+        "hostname": "n04.local",
+        "pbs_job": "115924.head.local",
+        "pid": 37483,
+        "slots": 28,
+        "started": 1790481640.101958
+      },
+      "worker_before_stop": {
+        "active": [],
+        "heartbeat": 1790488321.3556247,
+        "hostname": "n04.local",
+        "pbs_job": "115924.head.local",
+        "pid": 37483,
+        "slots": 28,
+        "started": 1790481640.101958
+      }
+    },
+    {
+      "pbs_job": "115925.head.local",
+      "queue": "spinless_230_v1_20260927T040004Z_q5",
+      "release_evidence": "two successful scheduler listings omit exact stopped job",
+      "released": true,
+      "scheduler_before_stop": {
+        "arguments": [
+          "qstat",
+          "-f",
+          "115925.head.local"
+        ],
+        "epoch": 1790490726.8644261,
+        "exit_code": 0,
+        "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+        "stdout": "Job Id: 115925.head.local\n    Job_Name = FSPT-sl5\n    Job_Owner = xyren@head.local\n    resources_used.cput = 15:18:28\n    resources_used.energy_used = 0\n    resources_used.mem = 14177724kb\n    resources_used.vmem = 120408640kb\n    resources_used.walltime = 02:31:14\n    job_state = R\n    queue = normal\n    server = head.local\n    Checkpoint = u\n    ctime = Sun Sep 27 12:00:04 2026\n    Error_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_2026\n\t0927T040004Z_pbs/worker5.log\n    exec_host = n05.local/0-27\n    Hold_Types = n\n    Join_Path = oe\n    Keep_Files = n\n    Mail_Points = a\n    mtime = Sun Sep 27 12:00:05 2026\n    Output_Path = head.local:/home/user/xyren/AllFSPT/runs/spinless_230_v1_202\n\t60927T040004Z_pbs/worker5.log\n    Priority = 0\n    qtime = Sun Sep 27 12:00:04 2026\n    Rerunable = True\n    Resource_List.nodect = 1\n    Resource_List.nodes = 1:ppn=28\n    Resource_List.walltime = 12:00:00\n    session_id = 16281\n    Shell_Path_List = /bin/bash\n    Variable_List = PBS_O_QUEUE=normal,PBS_O_HOME=/home/user/xyren,\n\tPBS_O_LOGNAME=xyren,\n\tPBS_O_PATH=/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bi\n\tn:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin\n\t:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/b\n\tio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/\n\tbio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gmap/bin:/opt/bio/ti\n\tgr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/o\n\tpt/ganglia/sbin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/o\n\tpt/maven/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/grid\n\tengine/bin/linux-x64,PBS_O_MAIL=/var/spool/mail/xyren,\n\tPBS_O_SHELL=/bin/csh,PBS_O_LANG=en_US.UTF-8,\n\tAFS_QUEUE=spinless_230_v1_20260927T040004Z_q5,AFS_WORKERS=28,\n\tPBS_O_WORKDIR=/home/user/xyren/AllFSPT,PBS_O_HOST=head.local,\n\tPBS_O_SERVER=head.local\n    euser = xyren\n    egroup = users\n    queue_type = E\n    etime = Sun Sep 27 12:00:04 2026\n    submit_args = /home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T04000\n\t4Z_pbs/worker5.pbs\n    start_time = Sun Sep 27 12:00:05 2026\n    Walltime.Remaining = 34079\n    start_count = 1\n    fault_tolerant = False\n    job_radix = 0\n    submit_host = head.local\n    request_version = 1\n\n"
+      },
+      "scheduler_observations": [
+        {
+          "arguments": [
+            "qstat",
+            "-f",
+            "115925.head.local"
+          ],
+          "epoch": 1790491226.8291051,
+          "exit_code": 153,
+          "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\nqstat: Unknown Job Id Error 115925.head.local\n",
+          "stdout": ""
+        },
+        {
+          "arguments": [
+            "qstat",
+            "-f",
+            "115925.head.local"
+          ],
+          "epoch": 1790491395.1428816,
+          "exit_code": 153,
+          "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\nqstat: Unknown Job Id Error 115925.head.local\n",
+          "stdout": ""
+        }
+      ],
+      "stop_epoch": 1790490726.9035327,
+      "stopped": true,
+      "successful_absence_checks": [
+        {
+          "arguments": [
+            "qstat"
+          ],
+          "epoch": 1790491227.163123,
+          "exit_code": 0,
+          "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+          "stdout": "Job ID                    Name             User            Time Use S Queue\n------------------------- ---------------- --------------- -------- - -----\n115921.head.local          FSPT-spinless    xyren           18:12:45 R bigmem         \n115922.head.local          FSPT-sl2         xyren           19:02:33 R bigmem         \n115923.head.local          FSPT-sl3         xyren           19:27:48 R bigmem         \n"
+        },
+        {
+          "arguments": [
+            "qstat"
+          ],
+          "epoch": 1790491395.4772565,
+          "exit_code": 0,
+          "stderr": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)\n",
+          "stdout": "Job ID                    Name             User            Time Use S Queue\n------------------------- ---------------- --------------- -------- - -----\n115921.head.local          FSPT-spinless    xyren           18:15:44 R bigmem         \n115922.head.local          FSPT-sl2         xyren           19:05:33 R bigmem         \n115923.head.local          FSPT-sl3         xyren           19:33:47 R bigmem         \n"
+        }
+      ],
+      "worker_after_stop": {
+        "active": [],
+        "heartbeat": 1790490750.885543,
+        "hostname": "n05.local",
+        "pbs_job": "115925.head.local",
+        "pid": 16418,
+        "slots": 28,
+        "started": 1790481629.347505
+      },
+      "worker_before_stop": {
+        "active": [],
+        "heartbeat": 1790490749.883341,
+        "hostname": "n05.local",
+        "pbs_job": "115925.head.local",
+        "pid": 16418,
+        "slots": 28,
+        "started": 1790481629.347505
+      }
+    }
+  ],
+  "schema": "fspt-spinless-worker-release-v1",
+  "updated_at_utc": "2026-09-27T08:28:30.863570+00:00"
+}

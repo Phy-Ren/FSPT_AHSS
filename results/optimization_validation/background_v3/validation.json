@@ -1,0 +1,220 @@
+{
+  "accepted_v3_archive": {
+    "archive_sha256": "1c2148ca95fd5245ec5a490665f784229a629e2c8745b6838c17262ba7e3aa72",
+    "path": "../../space_groups_spinless",
+    "source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252"
+  },
+  "auxiliary_pilot_timeout": {
+    "cohort": "v3_integrated_pilot",
+    "completed_groups": 6,
+    "formal_result_substituted_into_pilot": false,
+    "intended_groups": 7,
+    "metrics_bytes": 0,
+    "original_timeout_s": 10800,
+    "raw_exit_code": -9,
+    "raw_status": "timeout",
+    "space_group": 219
+  },
+  "comparisons": {
+    "half_diagnostics_vs_accepted": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": true,
+      "candidate_only_groups": [],
+      "compared_groups": 2,
+      "path": "comparisons/half_diagnostics_vs_accepted.json",
+      "pending_expected_candidates": [],
+      "sha256": "905edf623a0e6438bebcdf2a817e38bc00931c52e0779dd311d1db387d2da6bf"
+    },
+    "half_regression_vs_accepted": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": true,
+      "candidate_only_groups": [],
+      "compared_groups": 7,
+      "path": "comparisons/half_regression_vs_accepted.json",
+      "pending_expected_candidates": [],
+      "sha256": "345898e8524ce8fe634ffbf579ad74653f68da3bc9041f0e7976e0a804764a5c"
+    },
+    "initial_vs_cup0": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": false,
+      "candidate_only_groups": [
+        219
+      ],
+      "compared_groups": 12,
+      "path": "comparisons/initial_vs_cup0.json",
+      "pending_expected_candidates": [],
+      "sha256": "b9d65d1af13db227a31da1763fc5ee2a9f02f7403e11a93929ea905c3f196082"
+    },
+    "v1_vs_cup0_complete": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": true,
+      "candidate_only_groups": [],
+      "compared_groups": 13,
+      "path": "comparisons/v1_vs_cup0_complete.json",
+      "pending_expected_candidates": [],
+      "sha256": "d821497256aafc1ffe81a18faeb62db24e705535eb9e4102a3e038130e6bd775"
+    },
+    "v1_vs_integrated_pilot": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": false,
+      "candidate_only_groups": [],
+      "compared_groups": 6,
+      "path": "comparisons/v1_vs_integrated_pilot.json",
+      "pending_expected_candidates": [
+        219
+      ],
+      "sha256": "b91554b931a57ed5e8778d1e86c20f80c1ba33816772cab5e0137ea5bda2cfcc"
+    },
+    "v1_vs_v3_complete": {
+      "all_common_groups_literal_equal": true,
+      "all_expected_groups_compared_and_equal": true,
+      "candidate_only_groups": [],
+      "compared_groups": 230,
+      "path": "comparisons/v1_vs_v3_complete.json",
+      "pending_expected_candidates": [],
+      "sha256": "c362cea532dd0b20e24e74dffb8362a027344f0cb6396d13d7d5ece04dbf9a8f"
+    }
+  },
+  "complete_marked_evidence_groups": 214,
+  "completed_at_utc": "2026-09-27T08:35:39.381868+00:00",
+  "derived_files": {
+    "README.md": {
+      "bytes": 9487,
+      "sha256": "f2596027133a53a0df692a943f5f8838cd1c0da69643d3aa996c9c1bd1338d3c"
+    },
+    "comparisons/half_diagnostics_vs_accepted.json": {
+      "bytes": 18544,
+      "sha256": "905edf623a0e6438bebcdf2a817e38bc00931c52e0779dd311d1db387d2da6bf"
+    },
+    "comparisons/half_regression_vs_accepted.json": {
+      "bytes": 49244,
+      "sha256": "345898e8524ce8fe634ffbf579ad74653f68da3bc9041f0e7976e0a804764a5c"
+    },
+    "comparisons/initial_vs_cup0.json": {
+      "bytes": 131208,
+      "sha256": "b9d65d1af13db227a31da1763fc5ee2a9f02f7403e11a93929ea905c3f196082"
+    },
+    "comparisons/performance_v1_vs_v3.json": {
+      "bytes": 6297,
+      "sha256": "f1dec4326645479a2e38498ec266443d32717ed0af34886a6666ca021fa55aa5"
+    },
+    "comparisons/portable_fixture_tests.json": {
+      "bytes": 1191,
+      "sha256": "24b801ca27ba725ab8b7325df2be5fadf5b21551bbc88b641b874258f51408a3"
+    },
+    "comparisons/v1_performance.json": {
+      "bytes": 1225486,
+      "sha256": "3600cc26d60e28aeeac8d64b9fc4dfb63d148216dd7fe1ca0b073bf5266c89d9"
+    },
+    "comparisons/v1_vs_cup0_complete.json": {
+      "bytes": 95220,
+      "sha256": "d821497256aafc1ffe81a18faeb62db24e705535eb9e4102a3e038130e6bd775"
+    },
+    "comparisons/v1_vs_integrated_pilot.json": {
+      "bytes": 55140,
+      "sha256": "b91554b931a57ed5e8778d1e86c20f80c1ba33816772cab5e0137ea5bda2cfcc"
+    },
+    "comparisons/v1_vs_v3_complete.json": {
+      "bytes": 1862916,
+      "sha256": "c362cea532dd0b20e24e74dffb8362a027344f0cb6396d13d7d5ece04dbf9a8f"
+    },
+    "physical_conventions/README.md": {
+      "bytes": 18126,
+      "sha256": "1cf873f3e2918d8fb1468454a436f0fa7e0bc92f4e3e45f2a1d5d4af8d487337"
+    },
+    "physical_conventions/comparison.json": {
+      "bytes": 714099,
+      "sha256": "477de9d16570dc3e13142e894323cec7c4533145130e72d4005256e269169afc"
+    },
+    "physical_conventions/geometric_overlap_9.json": {
+      "bytes": 7593,
+      "sha256": "d845f5d57dbd7afc4d93365551611b20164178ccc8674bbec12d7d3a3717339c"
+    },
+    "physical_conventions/per_space_group_changes.csv": {
+      "bytes": 58825,
+      "sha256": "d77fdb92de86601eecfcc7570e0d05fdd9abb9a7a30bcd6b666c86e206670eed"
+    },
+    "physical_conventions/physical_conventions_460.csv": {
+      "bytes": 144724,
+      "sha256": "a02e1bd7d2a087b5403e086ac0a080d452dd94f9750b5e094de83e07ca9e93e6"
+    }
+  },
+  "full_cohorts": {
+    "abstract-upper-family-single-group": 16,
+    "gauge-zero-complete-marked-stacking": 26,
+    "nonzero-background-complete-lower-stacking": 188
+  },
+  "input_archive": {
+    "all_original_bytes_preserved": true,
+    "path": "archive.json",
+    "payload_files": 1514,
+    "sha256": "ba3bad0d3709dc6d4daf9ada347069608f94e7a31d658a80d012fffab62ef376"
+  },
+  "performance": {
+    "path": "comparisons/performance_v1_vs_v3.json",
+    "sha256": "f1dec4326645479a2e38498ec266443d32717ed0af34886a6666ca021fa55aa5"
+  },
+  "physical_conventions": {
+    "external_validation": false,
+    "geometry_examples": 9,
+    "groups": 230,
+    "odd_primary_consistency": {
+      "bosonic_matches": 230,
+      "full_matches_for_all_certified_options": 230,
+      "full_unavailable": 0,
+      "interpretation": "Internal cross-convention consistency: the common sign action and only 2-primary new operations preserve the odd torsion sector; not an external validation.",
+      "mismatching_space_groups": []
+    },
+    "rows": 460
+  },
+  "portable_fixture_tests": {
+    "all_passed": true,
+    "fixtures": {
+      "ext": {
+        "source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+        "space_group": 156
+      },
+      "ext_free": {
+        "source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+        "space_group": 174
+      },
+      "free": {
+        "source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+        "space_group": 10
+      },
+      "h0": {
+        "source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+        "space_group": 149
+      },
+      "legacy": {
+        "source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+        "space_group": 1
+      },
+      "native_cf": {
+        "source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+        "space_group": 111
+      },
+      "nontrivial_gauge": {
+        "source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+        "space_group": 14
+      },
+      "zero": {
+        "source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+        "space_group": 1
+      }
+    },
+    "private_runs_excluded": true,
+    "skipped": 0,
+    "tests_run": 15
+  },
+  "schema": "fspt-background-optimization-validation-v1",
+  "scope": {
+    "abstract_upper_certificates_are_not_actual_upper_phase_witnesses": true,
+    "all_230_v1_and_v3_existing_math_fields_and_native_witnesses_equal": true,
+    "incomplete_auxiliary_pilot_not_relabelled_complete": true,
+    "new_fields_absent_in_early_exports_are_added_evidence_not_literal_matches": true,
+    "no_numerical_tasks_or_source_mutations_by_comparison": true,
+    "no_reference_answer_tables_read": true,
+    "source_changes_are_recorded_metadata_not_hidden": true
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "actual_results": [
+    {
+      "after": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "before": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "graded": {
+        "bosonic": [
+          2
+        ],
+        "complex_fermion": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2,
+          2
+        ]
+      },
+      "incoming_order": 2,
+      "marked_basis_change": {
+        "incomingMCClassCoordinates": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "incomingMCCohomologyCoordinates": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "newMCCohomologyRowsInOldBasis": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "newMCNames": [
+          "B1",
+          "B2",
+          "B3",
+          "B4"
+        ],
+        "oldMCNames": [
+          "B1",
+          "B2",
+          "B3",
+          "B4"
+        ],
+        "replacedMCPivot": 1
+      },
+      "result_sha256": "846a382310a1703356bda8fde654335f31b09b20f48181440d08791bb61bc28e",
+      "space_group": 3
+    },
+    {
+      "after": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "before": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "graded": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "majorana": []
+      },
+      "incoming_order": 4,
+      "marked_basis_change": {
+        "incomingMCClassCoordinates": [
+          1
+        ],
+        "incomingMCCohomologyCoordinates": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "newMCCohomologyRowsInOldBasis": [
+          [
+            1
+          ]
+        ],
+        "newMCNames": [
+          "B1"
+        ],
+        "oldMCNames": [
+          "B1"
+        ],
+        "replacedMCPivot": 1
+      },
+      "result_sha256": "78591988a1df738330f6c5e6385b9397c611c1de6b43eb30eb1392192b1aed2c",
+      "space_group": 16
+    }
+  ],
+  "assertions": [
+    "all retained integer intersection combinations checked",
+    "Z8 finite enumeration for every incoming element",
+    "actual incoming state flatness",
+    "actual full order product has zero reduced coordinates after explicit gauge solve",
+    "C.summary is unchanged",
+    "JSON export roundtrip serialization"
+  ],
+  "frozen_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+  "independent_review": "formulas agent: marked MC pivot row replacement has determinant one; complete X lift may carry lower components; all relations are remeasured. Independently checked U R_high V = D: zero Smith rows yield a saturated integral left-kernel basis, whose products with R exactly generate the relation lattice intersected with the filtration; restricting prefix presents F_i and restricting exact-layer columns presents F_i/F_(i-1), also with redundant marked generators.",
+  "notes": [
+    "The initial harness errors are preserved; GAP -T may return exit 0 on error, so passing requires the success sentinel and no Error, text.",
+    "Frozen pre-H0 convention metadata predates root label correction; physical contexts install nonzero crystalline-spinless cocycle."
+  ],
+  "schema": 1,
+  "scope": "independent integer filtered quotient and actual affine CA incoming cochain checks",
+  "source_sha256": {
+    "gap/background_quotient.g": "158bd0c23ffdb26c61bb03d30bf1e2d18c61fbe8ce6a3fd9e285faff81a6e734",
+    "tests/test_background_quotient.g": "0550d4068074b343b7b144bca33f23f7784c64e776b45444c87511eb8012debf",
+    "tests/test_background_quotient_cochains.g": "3061124b7dd27672de1e684f655c78a7e193af220dfafdbe79ba62b8e1189003"
+  },
+  "tests": [
+    {
+      "files_sha256": {
+        "metrics.txt": "3c31b8623be1afa9c98ee8881516972a57b07c525f2629b6e6bb0225386f022a",
+        "status.json": "ddaac760c8b1783611067be0202be99c46678f5451561ad86f313591bd132313",
+        "stdout.log": "ea00db7b7880090c4f8c8dbfd4bf71468929a9be2e0aca9b2e402267d3402af1"
+      },
+      "metrics": "\tCommand being timed: \"/home/user/xyren/software/gap-4.13.1/gap -q -r -b -T tests/test_background_quotient.g\"\n\tUser time (seconds): 17.25\n\tSystem time (seconds): 0.10\n\tPercent of CPU this job got: 97%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:17.74\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 834672\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 1674\n\tVoluntary context switches: 3743\n\tInvoluntary context switches: 47\n\tSwaps: 0\n\tFile system inputs: 112\n\tFile system outputs: 8\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+      "passed": true,
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "tests/test_background_quotient.g"
+        ],
+        "created": 1790481331.049638,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 18.062034130096436,
+        "exit_code": 0,
+        "finished": 1790481385.6246939,
+        "hostname": "n01.local",
+        "id": "20260927T115531-background-quotient-lattice-4b6cc8a4",
+        "pbs_job": "115921.head.local",
+        "pid": 13181,
+        "queue": "spinless_dev_20260927T033520Z",
+        "started": 1790481367.5625107,
+        "status": "done",
+        "timeout_s": 300
+      },
+      "stdout": "\r#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in gap/background_quotient.g:112\n  coords:=AFSF2SolveRows(C.mcFinalBasis,co);\n          ^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in gap/background_quotient.g:117\n  model:=AFSStackFromClassification(C);\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in gap/background_quotient.g:128\n  if AFSStackAuditEnabled() and not AFSStackCheckFlat(ctx,X) then\n     ^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in gap/background_quotient.g:128\n  if AFSStackAuditEnabled() and not AFSStackCheckFlat(ctx,X) then\n                                    ^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in gap/background_quotient.g:130\n  lower:=AFSStackClassification(model);\n         ^^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in gap/background_quotient.g:139\n    red:=AFSStackReduce(model,X,true);\n         ^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in gap/background_quotient.g:160\n  old:=AFSStackExport(C,rec(status:=\"computed\",lower:=result.preQuotientLower,\n       ^^^^^^^^^^^^^^\nBACKGROUND_QUOTIENT_PASS Z8-generator-kills-all-three-layers incoming_order=\n8 invariants=[  ] graded=[ [  ], [  ], [  ] ]\nBACKGROUND_QUOTIENT_PASS Z8-even-generator-retains-only-MC incoming_order=\n4 invariants=[ 2 ] graded=[ [  ], [  ], [ 2 ] ]\nBACKGROUND_QUOTIENT_PASS Z8-fourth-power-kills-only-boson incoming_order=\n2 invariants=[ 4 ] graded=[ [  ], [ 2 ], [ 2 ] ]\nBACKGROUND_QUOTIENT_PASS Z8-odd-coordinate-change-same-subgroup incoming_order\\\n=8 invariants=[  ] graded=[ [  ], [  ], [  ] ]\nBACKGROUND_QUOTIENT_PASS Z4-plus-Z2-diagonal-boundary incoming_order=\n4 invariants=[ 2 ] graded=[ [  ], [ 2 ], [  ] ]\nBACKGROUND_QUOTIENT_PASS split-Z2-boundary-identifies-boson-with-MC incoming_o\\\nrder=2 invariants=[ 2, 2 ] graded=[ [ 2 ], [ 2 ], [  ] ]\nBACKGROUND_QUOTIENT_PASS odd-cyclic-factor incoming_order=3 invariants=\n[ 4 ] graded=[ [ 4 ], [  ], [  ] ]\nBACKGROUND_QUOTIENT_PASS trivial-boundary-keeps-filtration incoming_order=\n1 invariants=[ 8 ] graded=[ [ 2 ], [ 2 ], [ 2 ] ]\nBACKGROUND_QUOTIENT_PASS empty-group incoming_order=1 invariants=[  ] graded=\n[ [  ], [  ], [  ] ]\nBACKGROUND_QUOTIENT_PASS free-cyclic-boundary incoming_order=0 invariants=\n[ 2 ] graded=[ [ 2 ], [  ], [  ] ]\nBACKGROUND_QUOTIENT_FINITE_ENUMERATION_PASS 8\nBACKGROUND_QUOTIENT_TEST_PASS\n",
+      "task_id": "20260927T115531-background-quotient-lattice-4b6cc8a4"
+    },
+    {
+      "failure_scope": "test harness only: X is a GAP read-only global; renamed incomingState before rerun",
+      "files_sha256": {
+        "metrics.txt": "44eb9360ab773a0c84fd380cfd5735861d520fb3ba6e121122f8ace7e72ee27e",
+        "status.json": "b88362cb6394a3d9933ab5b50604f24f5ab37219538b88246f2a2121bc3ed2f6",
+        "stdout.log": "79cd18163992eb29e316e61a6da8098cd99444044e2083422bbae0152e5e8bfc"
+      },
+      "metrics": "\tCommand being timed: \"env AFS_BQ_SOURCE=/home/user/xyren/AllFSPT/runs/background_quotient_controls/source AFS_TEST_SG=3 AFS_BQ_OUT=/home/user/xyren/AllFSPT/runs/background_quotient_controls/sg3.json /home/user/xyren/software/gap-4.13.1/gap -q -r -b -T tests/test_background_quotient_cochains.g\"\n\tUser time (seconds): 19.71\n\tSystem time (seconds): 0.10\n\tPercent of CPU this job got: 98%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:20.22\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 803584\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 2000\n\tVoluntary context switches: 3488\n\tInvoluntary context switches: 366\n\tSwaps: 0\n\tFile system inputs: 3464\n\tFile system outputs: 8\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+      "passed": false,
+      "status": {
+        "command": [
+          "env",
+          "AFS_BQ_SOURCE=/home/user/xyren/AllFSPT/runs/background_quotient_controls/source",
+          "AFS_TEST_SG=3",
+          "AFS_BQ_OUT=/home/user/xyren/AllFSPT/runs/background_quotient_controls/sg3.json",
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "tests/test_background_quotient_cochains.g"
+        ],
+        "created": 1790481469.4866807,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 21.07242226600647,
+        "exit_code": 0,
+        "finished": 1790481527.227369,
+        "hostname": "n01.local",
+        "id": "20260927T115749-background-quotient-cochain-3-5ef9d97c",
+        "pbs_job": "115921.head.local",
+        "pid": 13243,
+        "queue": "spinless_dev_20260927T033520Z",
+        "started": 1790481506.1547892,
+        "status": "done",
+        "timeout_s": 1800
+      },
+      "stdout": "\r#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/formulas.g:110\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:85\n      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then\n                                             ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:103\n  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\\\n_NATIVE=true);\n                                                                       ^^^^^^^\\\n^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:105\n    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);\n                                           ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:251\n      record:=AFSClassifyPipTorsion(C,n1,op);\n              ^^^^^^^^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=3 cpu_ms=17392\nAFS_BUILD affine_done sg=3 cpu_ms=17959\nAFS_BUILD holonomy_start cpu_ms=17960\nAFS_BUILD RP_start order=2 cpu_ms=17994\nAFS_BUILD RL_start cpu_ms=18002\nAFS_BUILD section_start cpu_ms=18236\nAFS_BUILD extension_start cpu_ms=18239\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 234,\n  RP_ms := 8,\n  extension_ms := 350,\n  holonomy_ms := 34,\n  section_ms := 3 )\nAFS_STAGE 3 cohomology cpu_ms=18612\nAFS_STAGE 3 primary_cf cpu_ms=18656\nAFS_STAGE 3 primary_mc_and_bos cpu_ms=19125\nAFS_STAGE 3 incoming_mc cpu_ms=19137\nAFS_STAGE 3 secondary_bos cpu_ms=19213\nAFS_STAGE 3 secondary_mc cpu_ms=19216\nAFS_STAGE 3 pip cpu_ms=19701\nAFS_STAGE 3 classification_end cpu_ms=19714\nError, Variable: 'X' is read only\n",
+      "task_id": "20260927T115749-background-quotient-cochain-3-5ef9d97c"
+    },
+    {
+      "failure_scope": "test harness only: X is a GAP read-only global; renamed incomingState before rerun",
+      "files_sha256": {
+        "metrics.txt": "fcb3fc8cd1fcd750c0f0780ee493f7b2e4379ca70bd1a238b8eb68f654ba9170",
+        "status.json": "28654ba2fd6f7a4517e1bd1c0b0dbe97ee13cb5509e9e2b1e4c12f4a4ad5542d",
+        "stdout.log": "b868eaeae43dd3d8a1b38c0c3b25199000601ff0c359e9e680c1e19b5eaafcfe"
+      },
+      "metrics": "\tCommand being timed: \"env AFS_BQ_SOURCE=/home/user/xyren/AllFSPT/runs/background_quotient_controls/source AFS_TEST_SG=16 AFS_BQ_OUT=/home/user/xyren/AllFSPT/runs/background_quotient_controls/sg16.json /home/user/xyren/software/gap-4.13.1/gap -q -r -b -T tests/test_background_quotient_cochains.g\"\n\tUser time (seconds): 25.29\n\tSystem time (seconds): 0.13\n\tPercent of CPU this job got: 98%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:25.81\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 873616\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 2501\n\tVoluntary context switches: 3694\n\tInvoluntary context switches: 375\n\tSwaps: 0\n\tFile system inputs: 0\n\tFile system outputs: 8\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+      "passed": false,
+      "status": {
+        "command": [
+          "env",
+          "AFS_BQ_SOURCE=/home/user/xyren/AllFSPT/runs/background_quotient_controls/source",
+          "AFS_TEST_SG=16",
+          "AFS_BQ_OUT=/home/user/xyren/AllFSPT/runs/background_quotient_controls/sg16.json",
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "tests/test_background_quotient_cochains.g"
+        ],
+        "created": 1790481469.5518036,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 26.094542264938354,
+        "exit_code": 0,
+        "finished": 1790481532.2439911,
+        "hostname": "n01.local",
+        "id": "20260927T115749-background-quotient-cochain-16-543e3628",
+        "pbs_job": "115921.head.local",
+        "pid": 13241,
+        "queue": "spinless_dev_20260927T033520Z",
+        "started": 1790481506.1492717,
+        "status": "done",
+        "timeout_s": 1800
+      },
+      "stdout": "\r#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/formulas.g:110\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:85\n      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then\n                                             ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:103\n  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\\\n_NATIVE=true);\n                                                                       ^^^^^^^\\\n^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:105\n    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);\n                                           ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:251\n      record:=AFSClassifyPipTorsion(C,n1,op);\n              ^^^^^^^^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=16 cpu_ms=17409\nAFS_BUILD affine_done sg=16 cpu_ms=18096\nAFS_BUILD holonomy_start cpu_ms=18097\nAFS_BUILD RP_start order=4 cpu_ms=18162\nAFS_BUILD RL_start cpu_ms=18218\nAFS_BUILD section_start cpu_ms=18448\nAFS_BUILD extension_start cpu_ms=18453\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 230,\n  RP_ms := 56,\n  extension_ms := 1142,\n  holonomy_ms := 65,\n  section_ms := 5 )\nAFS_STAGE 16 cohomology cpu_ms=19627\nAFS_STAGE 16 primary_cf cpu_ms=19918\nAFS_STAGE 16 primary_mc_and_bos cpu_ms=22292\nAFS_STAGE 16 incoming_mc cpu_ms=22358\nAFS_STAGE 16 secondary_bos cpu_ms=22531\nAFS_STAGE 16 secondary_mc cpu_ms=22569\nAFS_STAGE 16 pip cpu_ms=25282\nAFS_STAGE 16 classification_end cpu_ms=25294\nError, Variable: 'X' is read only\n",
+      "task_id": "20260927T115749-background-quotient-cochain-16-543e3628"
+    },
+    {
+      "files_sha256": {
+        "metrics.txt": "ef357bb92649aab1e321275f51ca8b141000cd35d3e885637e66ac5458ad6eb0",
+        "status.json": "9b34ff4a3321bfd47623ae6d01f19d73546226b3de8a4dd8a4bcc04a7b277151",
+        "stdout.log": "9dbb1208387d99767c3a1efb29788f39ccb6b7eb3a8924d2eaf1ecb850e61785"
+      },
+      "metrics": "\tCommand being timed: \"env AFS_BQ_SOURCE=/home/user/xyren/AllFSPT/runs/background_quotient_controls/source AFS_TEST_SG=3 AFS_BQ_OUT=/home/user/xyren/AllFSPT/runs/background_quotient_controls/sg3.json /home/user/xyren/software/gap-4.13.1/gap -q -r -b -T tests/test_background_quotient_cochains.g\"\n\tUser time (seconds): 27.61\n\tSystem time (seconds): 0.15\n\tPercent of CPU this job got: 98%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:28.24\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 885456\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 2721\n\tVoluntary context switches: 4681\n\tInvoluntary context switches: 1268\n\tSwaps: 0\n\tFile system inputs: 0\n\tFile system outputs: 64\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+      "passed": true,
+      "status": {
+        "command": [
+          "env",
+          "AFS_BQ_SOURCE=/home/user/xyren/AllFSPT/runs/background_quotient_controls/source",
+          "AFS_TEST_SG=3",
+          "AFS_BQ_OUT=/home/user/xyren/AllFSPT/runs/background_quotient_controls/sg3.json",
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "tests/test_background_quotient_cochains.g"
+        ],
+        "created": 1790481675.0761023,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 29.08948826789856,
+        "exit_code": 0,
+        "finished": 1790481740.8194764,
+        "hostname": "n01.local",
+        "id": "20260927T120115-background-quotient-cochain-3-v2-5b40aed2",
+        "pbs_job": "115921.head.local",
+        "pid": 13313,
+        "queue": "spinless_dev_20260927T033520Z",
+        "started": 1790481711.7298028,
+        "status": "done",
+        "timeout_s": 1800
+      },
+      "stdout": "\r#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/formulas.g:110\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:85\n      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then\n                                             ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:103\n  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\\\n_NATIVE=true);\n                                                                       ^^^^^^^\\\n^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:105\n    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);\n                                           ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:251\n      record:=AFSClassifyPipTorsion(C,n1,op);\n              ^^^^^^^^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=3 cpu_ms=17938\nAFS_BUILD affine_done sg=3 cpu_ms=18500\nAFS_BUILD holonomy_start cpu_ms=18500\nAFS_BUILD RP_start order=2 cpu_ms=18535\nAFS_BUILD RL_start cpu_ms=18542\nAFS_BUILD section_start cpu_ms=18773\nAFS_BUILD extension_start cpu_ms=18776\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 231,\n  RP_ms := 7,\n  extension_ms := 349,\n  holonomy_ms := 35,\n  section_ms := 3 )\nAFS_STAGE 3 cohomology cpu_ms=19149\nAFS_STAGE 3 primary_cf cpu_ms=19197\nAFS_STAGE 3 primary_mc_and_bos cpu_ms=19669\nAFS_STAGE 3 incoming_mc cpu_ms=19682\nAFS_STAGE 3 secondary_bos cpu_ms=19756\nAFS_STAGE 3 secondary_mc cpu_ms=19759\nAFS_STAGE 3 pip cpu_ms=20249\nAFS_STAGE 3 classification_end cpu_ms=20261\nAFS_STAGE 3 stack_lift_D1 cpu_ms=20687\nAFS_STAGE 3 stack_lift_C1 cpu_ms=20689\nAFS_STAGE 3 stack_lift_C2 cpu_ms=20927\nAFS_STAGE 3 stack_lift_C3 cpu_ms=21059\nAFS_STAGE 3 stack_lift_C4 cpu_ms=21191\nAFS_STAGE 3 stack_lift_B1 cpu_ms=21326\nAFS_STAGE 3 stack_lift_B2 cpu_ms=21672\nAFS_STAGE 3 stack_lift_B3 cpu_ms=22009\nAFS_STAGE 3 stack_lift_B4 cpu_ms=22676\nAFS_STAGE 3 stack_relation_D1 cpu_ms=24075\nAFS_STAGE 3 stack_relation_C1 cpu_ms=24075\nAFS_STAGE 3 stack_relation_C2 cpu_ms=24353\nAFS_STAGE 3 stack_relation_C3 cpu_ms=24635\nAFS_STAGE 3 stack_relation_C4 cpu_ms=24902\nAFS_STAGE 3 stack_relation_B1 cpu_ms=25169\nAFS_STAGE 3 stack_relation_B2 cpu_ms=25453\nAFS_STAGE 3 stack_relation_B3 cpu_ms=25738\nAFS_STAGE 3 stack_relation_B4 cpu_ms=26020\nBACKGROUND_QUOTIENT_COCHAIN_PASS sg=3 incoming_order=2 before=\n[ 2, 2, 2, 2, 2, 2, 2, 2, 2 ] after=[ 2, 2, 2, 2, 2, 2, 2, 2 ] graded=rec(\n  bosonic := [ 2 ],\n  complex_fermion := [ 2, 2, 2, 2 ],\n  majorana := [ 2, 2, 2 ] )\n",
+      "task_id": "20260927T120115-background-quotient-cochain-3-v2-5b40aed2"
+    },
+    {
+      "files_sha256": {
+        "metrics.txt": "e665b7bd109bf6c28cf0590876e53497a15b58539701d96ce69bf715cfaf08b0",
+        "status.json": "b9b18efdccf0d0ac881cf68822bd47f621e2926956e287872b53fb592e7a45a0",
+        "stdout.log": "0bd63dc1093858cb605655c30b23485913e758b2d1944431abffc63e1f16f4d8"
+      },
+      "metrics": "\tCommand being timed: \"env AFS_BQ_SOURCE=/home/user/xyren/AllFSPT/runs/background_quotient_controls/source AFS_TEST_SG=16 AFS_BQ_OUT=/home/user/xyren/AllFSPT/runs/background_quotient_controls/sg16.json /home/user/xyren/software/gap-4.13.1/gap -q -r -b -T tests/test_background_quotient_cochains.g\"\n\tUser time (seconds): 72.81\n\tSystem time (seconds): 0.17\n\tPercent of CPU this job got: 99%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 1:13.48\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 957424\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 2515\n\tVoluntary context switches: 4949\n\tInvoluntary context switches: 1210\n\tSwaps: 0\n\tFile system inputs: 8\n\tFile system outputs: 128\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+      "passed": true,
+      "status": {
+        "command": [
+          "env",
+          "AFS_BQ_SOURCE=/home/user/xyren/AllFSPT/runs/background_quotient_controls/source",
+          "AFS_TEST_SG=16",
+          "AFS_BQ_OUT=/home/user/xyren/AllFSPT/runs/background_quotient_controls/sg16.json",
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "tests/test_background_quotient_cochains.g"
+        ],
+        "created": 1790481675.1418285,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 74.21234440803528,
+        "exit_code": 0,
+        "finished": 1790481785.9375176,
+        "hostname": "n01.local",
+        "id": "20260927T120115-background-quotient-cochain-16-v2-2ea0f84a",
+        "pbs_job": "115921.head.local",
+        "pid": 13311,
+        "queue": "spinless_dev_20260927T033520Z",
+        "started": 1790481711.7250175,
+        "status": "done",
+        "timeout_s": 1800
+      },
+      "stdout": "\r#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/formulas.g:110\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:85\n      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then\n                                             ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:103\n  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\\\n_NATIVE=true);\n                                                                       ^^^^^^^\\\n^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:105\n    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);\n                                           ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/backg\\\nround_quotient_controls/source/gap/classification.g:251\n      record:=AFSClassifyPipTorsion(C,n1,op);\n              ^^^^^^^^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=16 cpu_ms=17866\nAFS_BUILD affine_done sg=16 cpu_ms=18552\nAFS_BUILD holonomy_start cpu_ms=18553\nAFS_BUILD RP_start order=4 cpu_ms=18618\nAFS_BUILD RL_start cpu_ms=18674\nAFS_BUILD section_start cpu_ms=18904\nAFS_BUILD extension_start cpu_ms=18910\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 230,\n  RP_ms := 56,\n  extension_ms := 1145,\n  holonomy_ms := 65,\n  section_ms := 6 )\nAFS_STAGE 16 cohomology cpu_ms=20087\nAFS_STAGE 16 primary_cf cpu_ms=20378\nAFS_STAGE 16 primary_mc_and_bos cpu_ms=22735\nAFS_STAGE 16 incoming_mc cpu_ms=22802\nAFS_STAGE 16 secondary_bos cpu_ms=22977\nAFS_STAGE 16 secondary_mc cpu_ms=23015\nAFS_STAGE 16 pip cpu_ms=25725\nAFS_STAGE 16 classification_end cpu_ms=25737\nAFS_STAGE 16 stack_lift_D1 cpu_ms=28629\nAFS_STAGE 16 stack_lift_D2 cpu_ms=28630\nAFS_STAGE 16 stack_lift_D3 cpu_ms=28632\nAFS_STAGE 16 stack_lift_D4 cpu_ms=28633\nAFS_STAGE 16 stack_lift_D5 cpu_ms=28635\nAFS_STAGE 16 stack_lift_C1 cpu_ms=28636\nAFS_STAGE 16 stack_lift_C2 cpu_ms=29792\nAFS_STAGE 16 stack_lift_C3 cpu_ms=30763\nAFS_STAGE 16 stack_lift_C4 cpu_ms=31734\nAFS_STAGE 16 stack_lift_C5 cpu_ms=32712\nAFS_STAGE 16 stack_lift_C6 cpu_ms=33682\nAFS_STAGE 16 stack_lift_C7 cpu_ms=34652\nAFS_STAGE 16 stack_lift_C8 cpu_ms=35628\nAFS_STAGE 16 stack_lift_B1 cpu_ms=36665\nAFS_STAGE 16 stack_relation_D1 cpu_ms=46647\nAFS_STAGE 16 stack_relation_D2 cpu_ms=46647\nAFS_STAGE 16 stack_relation_D3 cpu_ms=46647\nAFS_STAGE 16 stack_relation_D4 cpu_ms=46647\nAFS_STAGE 16 stack_relation_D5 cpu_ms=46647\nAFS_STAGE 16 stack_relation_C1 cpu_ms=46647\nAFS_STAGE 16 stack_relation_C2 cpu_ms=47871\nAFS_STAGE 16 stack_relation_C3 cpu_ms=49052\nAFS_STAGE 16 stack_relation_C4 cpu_ms=50231\nAFS_STAGE 16 stack_relation_C5 cpu_ms=57550\nAFS_STAGE 16 stack_relation_C6 cpu_ms=59148\nAFS_STAGE 16 stack_relation_C7 cpu_ms=60317\nAFS_STAGE 16 stack_relation_C8 cpu_ms=61489\nAFS_STAGE 16 stack_relation_B1 cpu_ms=62662\nBACKGROUND_QUOTIENT_COCHAIN_PASS sg=16 incoming_order=4 before=\n[ 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4 ] after=\n[ 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ] graded=rec(\n  bosonic := [ 2, 2, 2, 2, 2 ],\n  complex_fermion := [ 2, 2, 2, 2, 2, 2, 2 ],\n  majorana := [  ] )\n",
+      "task_id": "20260927T120115-background-quotient-cochain-16-v2-2ea0f84a"
+    }
+  ]
+}

@@ -38,8 +38,12 @@ implied by publication of this repository.
 Install the GAP packages and Python environment described in `README.md`. Run
 `scripts/run_group.py` for one complete classification/stacking calculation, or
 follow `docs/CLUSTER_RUN.md` to create fresh compute allocations for all 230.
-The accepted full results and exact source snapshot are in
-`results/space_groups`; their archived bytes are unchanged in this release.
+The accepted results and exact source snapshots are in `results/space_groups`
+(crystalline spin-half, internal spinless) and `results/space_groups_spinless`
+(crystalline spinless, internal spin-half). Their archived bytes are unchanged
+in this release. The second archive distinguishes a unique abstract upper
+extension from an actual marked upper cochain witness. The missing upper
+CF/bosonic twisters are not supplied by publication of an abstract group.
 
 Run self-contained saved-result, scheduling and publication tests without private
 reference inputs:
@@ -50,6 +54,12 @@ PYTHONPATH=tests python3 -m unittest test_stacking test_stack_result_cli \
   test_archive_campaign test_comparison_archive test_boss_current \
   test_external_comparison test_deadline_archive test_deadline_evidence \
   test_deadline_guard test_submit_campaign test_worker_input test_publish_snapshot
+PYTHONPATH=tests python3 -m unittest test_audit_background_run \
+  test_report_background_results test_background_performance \
+  test_background_provenance_review test_pip_diagnostics test_stack_result_background \
+  test_compare_background_runs test_report_physical_conventions
+PYTHONPATH=tests python3 -m unittest test_boss_parser test_c4_pip_square_cf \
+  test_closed_cf_phase test_free_pip_universal test_pip_incoming_formula
 ```
 
 An unrestricted `unittest discover` also selects optional unchanged-reference

@@ -5,7 +5,13 @@ results/external_comparison/inputs/** -text -diff
 # Archive hashes refer to the original bytes on every checkout platform.
 results/classification_frozen/** -text
 results/space_groups/** -text
+results/space_groups_spinless/** -text
+results/pip_diagnostics/** -text
 results/optimization_validation/** -text
+results/performance_environment/** -text
 results/space_groups/tasks/** -text -diff
+results/space_groups_spinless/tasks/** -text -diff
 results/optimization_validation/full_optimized_v08/tasks/** -text -diff
+results/optimization_validation/background_v3/runs/*/tasks/** -text -diff
 results/performance_environment/tasks/** -text -diff
+results/performance_environment/spinless_20260927/raw/runs/tasks/** -text -diff

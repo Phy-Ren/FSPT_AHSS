@@ -1,6 +1,6 @@
 # Independent result reports
 
-The accepted complete campaign is `results/space_groups`. Its 230 original
+The accepted crystalline spin-half campaign is `results/space_groups`. Its 230 original
 results, classification checkpoints, immutable source, task logs and timing
 evidence are byte-preserved by `archive.json`. Generate its report with:
 
@@ -81,9 +81,143 @@ certificate; the linked result retains the actual native cochains. These
 structural checks do not rerun the defining equations. The construction and
 independent equation tests are described in `FREE_PIP_LATTICE.md`.
 
+## The two physical conventions
+
+The runner selects the physical crystalline convention with
+`--crystalline-spin half` (the default) or `--crystalline-spin spinless`.
+Both calculations retain the full infinite affine space group. Their internal
+backgrounds and report entry points differ:
+
+| Physical crystalline convention | Effective internal background | Result directory | Report script |
+|---|---|---|---|
+| Spin-half (internal spinless) | `s=w1(V)`, `omega=0` | `results/space_groups` | `scripts/report_results.py` |
+| Spinless (internal spin-half) | `s=w1(V)`, `omega=w2(V)+w1(V)^2` | `results/space_groups_spinless` | `scripts/report_background_results.py` |
+
+Here `V` is the actual three-dimensional point representation. A spinless row
+can use a zero cocycle after an explicit trivialization on the affine group;
+this is a fermion-extension gauge choice, not a change of physical convention.
+The original Pin-minus background and its trivialization certificate remain
+in `crystalline_background`.
+
+The complete spinless archive is now `results/space_groups_spinless`, with
+source ID `73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252`
+and archive SHA-256
+`1c2148ca95fd5245ec5a490665f784229a629e2c8745b6838c17262ba7e3aa72`.
+Validate it and generate a separate report in a **new** directory:
+
+```sh
+python3 scripts/audit_background_run.py results/space_groups_spinless
+python3 scripts/report_background_results.py results/space_groups_spinless \
+  --output runs/spinless_report_recheck --tex
+```
+
+The second command writes `audit.json`, `space_groups.csv`,
+`candidate_pages.csv`, `README.md`, and, with `--tex`, `space_groups.tex`.
+It requires all 230 rows and one source snapshot unless `--allow-partial` is
+explicitly supplied. It refuses an existing output directory and rejects
+invalid available rows even in partial mode. It does not reuse the old
+reporter's parity-only free-lattice checks: a nonzero background can require
+a different finite-index surviving lattice.
+
+Read `all_230_full_groups_determined` separately from
+`all_230_marked_witnesses_complete`, and inspect `actual_marked_witnesses`
+and `audit_kind` in each CSV row. The final archive certifies all 230 abstract
+groups: **214 rows retain marked evidence; 16 have an abstract-only upper
+extension**. Thus the first completeness flag is true and the second is false.
+All 44 groups with a nonzero free p+ip rank retain an actual primitive surviving
+lattice basis and complete defining towers. Missing rows in a development
+snapshot remain missing; these final counts apply to the archive identified
+above.
+
+## Background quotient and saved generator evidence
+
+For unitary groups, the new calculation first constructs the complete lower
+CA stacking group and then quotients by the actual `H^0` p+ip incoming state
+`X=(omega,0,F)`. The supplied unary normalization fixes the zero CF component;
+the independently constructed phase and its normalization are described in
+`CRYSTALLINE_SPINLESS_BACKGROUND.md`. All incoming pages are represented by
+this one cyclic subgroup. The final Majorana, CF and bosonic graded factors
+are obtained from integral relation intersections after the quotient, not by
+independently deleting layer generators.
+
+The JSON retains `preH0IncomingGraded`, `h0PipIncoming`, and, inside `stacking`,
+`lowerBeforeH0Incoming` and `h0IncomingQuotient`. The nested
+`h0IncomingQuotient.backgroundQuotient` includes the actual incoming coordinate
+row, its order, its native state, the marked-basis change and the filtered
+integer-lattice certificates. The final `stacking.lower.presentation` has
+the incoming relation appended. It can therefore be rectangular or
+nontriangular; its marked generators may be redundant, and their original
+`quotientOrder` labels are not the new graded orders. Use the final Smith
+certificate and `finalFiltrationCertificate` to read the quotient.
+
+Saved generators contain either native `lift` fields or a
+`nativePhase4Seed`, with `nativeCF3Seed` for the native Gu--Wen construction.
+These exact vectors, rational phases, the named construction and the frozen
+comparison-map/homotopy source specify their reconstruction. For nonlinear
+primitives, applying the native-to-bar map to the phase seed alone is
+insufficient: the recorded construction includes the obstruction's comparison
+homotopy correction. `fullBarCochainsPersisted=false` states that the infinite
+bar functions themselves are not serialized. It does not mean the native
+lift or its reconstruction recipe is absent. Conversely, an algebraic audit
+of those saved records is not a new evaluation of the bar-cochain equations
+and does not imply that every group underwent a separate full-support audit.
+
+## Stacking the saved marked generators
+
+The same replay entry point accepts either convention after the corresponding
+strict certificate audit. For example, a spinless row with an actual upper
+relation can be used as follows:
+
+```sh
+python3 scripts/stack_result.py results/space_groups_spinless/sg7.json \
+  --left '{"P1":1}' --right '{"P1":1}'
+```
+
+Inputs are signed integer coefficients in that result's generator names.
+The output contains both canonical Smith coordinates (`stacked`) and a
+representative in the original marked names (`stacked_marked`). For an H0
+quotient the reduction is labelled `smith-representative`: a row `x` is mapped
+to `x V`, reduced in the exact Smith coordinates, then lifted back by the
+unimodular inverse `V^-1`. It is not necessarily the ordered filtration normal
+form used for triangular presentations. This API performs relation algebra;
+it does not reevaluate a cochain product. Names from different runs need not
+denote the same physical representatives.
+
+When `pipExtensionCertificate` is present and `fullUpperPhaseWitness=false`,
+the leading MC component of `2P` and all allowed CF/bosonic carries define an
+entire extension family. A single `invariantOptions` entry means that **every
+allowed carry has the same abstract Smith type**. A nonzero leading MC
+component alone would not establish this. No particular upper carry, upper
+phase or marked `2P` relation is thereby supplied, so `stack_result.py`
+explicitly refuses these rows, even when their abstract stacking group is
+fully determined. The given first p+ip product normalization is a mathematical
+input to this family calculation; closure alone does not derive that input.
+
+The 16 abstract-only rows are SG
+`6, 8, 28, 30, 31, 32, 34, 40, 41, 43, 156, 157, 160, 174, 188, 190`.
+The other seven surviving torsion p+ip cases,
+`7, 9, 29, 33, 158, 159, 161`, retain the actual upper relation; their chosen
+final marked squares are zero. This does not assert that their intermediate
+CF or phase twisters vanish.
+
+An independent [archived relation replay](validation_runs/presented_stacking_spinless.json)
+passed all 1,850 saved relations in the 214 marked rows, plus four signed
+coefficient examples per row, including 70-bit integers. All 16 abstract-only
+rows were correctly refused. The 52 H0 quotients use `smith-representative`;
+the remaining 162 marked rows use `ordered-filtration`. This is a check of
+saved relation algebra, not a new bar-cochain audit. A separate
+[scope review](validation_runs/spinless_final_scope_review.json) matches every
+diagnostic candidate and group list to the original archived bytes.
+
+The free p+ip generators are different: the explicitly determined surviving
+lattice is free abelian, so its extension splits as an abstract abelian
+group. Chosen complete lifts define a section by their integer stacking
+powers. This removes an abstract free-extension ambiguity; it does not assert
+that every possible cochain twister involving free decorations vanishes.
+
 ## Timing and reproducibility
 
-The accepted run completed classification in 783.017 observed seconds and
+The accepted spin-half v09 run completed classification in 783.017 observed seconds and
 complete stacking in 12699.328 seconds. Its total GAP CPU counter is 62963.022
 seconds; GNU time reports 63036.050 process-tree CPU seconds. The largest
 single-task RSS is 17688448 KiB (16.869 GiB), on SG219. The full measurements

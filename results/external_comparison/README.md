@@ -1,7 +1,11 @@
 # External comparison evidence in the public release
 
+The comparisons below concern crystalline spin-half / internal spinless.
 The accepted independent results are in `results/space_groups`. The independent
 classification freeze is preserved in `results/classification_frozen`.
+For the other spin convention, see [the reference scope](../../docs/SPINLESS_REFERENCE_SCOPE.md)
+and [the two-convention report](../optimization_validation/background_v3/physical_conventions/README.md).
+No supplied external affine-230 table is available for that second convention.
 
 - All 920 current graded-layer entries match both the original independent
   freeze and the supplied current reference PDF.

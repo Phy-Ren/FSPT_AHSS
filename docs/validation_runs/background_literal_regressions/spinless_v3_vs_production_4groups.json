@@ -1,0 +1,962 @@
+{
+  "all_common_groups_literal_equal": true,
+  "all_expected_groups_compared_and_equal": false,
+  "allow_legacy_baseline": false,
+  "auditor_sha256": "3d4139b9bea75c627b55404bf2ed87415655a19b17d3aa325d76b2005497b0f0",
+  "baseline": "runs/spinless_230_v1_20260927T040004Z",
+  "baseline_only_groups": [
+    1,
+    2,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    85,
+    86,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    202,
+    204,
+    205,
+    207,
+    208,
+    209,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    229
+  ],
+  "candidate": "runs/spinless_specialized_controls_v3",
+  "candidate_only_groups": [],
+  "common_groups": [
+    3,
+    6,
+    84,
+    87
+  ],
+  "compared_groups": 4,
+  "comparison_sha256": "d85f3005110f6d0b87bad39695cee06e05491bc12d8751503c7038071181bcde",
+  "crystalline_spin": "spinless",
+  "errors": [],
+  "expected_candidate_groups": [
+    3,
+    6,
+    84,
+    86,
+    87,
+    88,
+    219
+  ],
+  "native_witnesses_compared": true,
+  "pending_expected_candidates": [
+    86,
+    88,
+    219
+  ],
+  "reference_answers_read": false,
+  "rows": [
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 2
+        },
+        "full_group": true,
+        "h0_quotient": {
+          "filtered_layers_recomputed": 3,
+          "incoming_order": 2
+        },
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": true
+      },
+      "baseline_mathematical_projection_sha256": "7c261e98d9c42431b5f8e7e0e217732d958c0775a81498b4f46a5419f2b3f7c1",
+      "baseline_path": "runs/spinless_230_v1_20260927T040004Z/sg3.json",
+      "baseline_sha256": "ae8e2730a07d6e84113641c5d9b881ecf23aa52d8c02eec507237121b2e53ff4",
+      "baseline_source_id": "82111071dc0c30ab4d319e16b7d2571d9f6b567430242dee530b3f5d3cc1e364",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 2
+        },
+        "full_group": true,
+        "h0_quotient": {
+          "filtered_layers_recomputed": 3,
+          "incoming_order": 2
+        },
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": true
+      },
+      "candidate_mathematical_projection_sha256": "7c261e98d9c42431b5f8e7e0e217732d958c0775a81498b4f46a5419f2b3f7c1",
+      "candidate_path": "runs/spinless_specialized_controls_v3/sg3.json",
+      "candidate_sha256": "6e35b80e3d64045f9f4727e1f78562913f9c0ea3a990c5fa9a6ba45d03193b09",
+      "candidate_source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+      "compared_scalar_leaves": 8910,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f83fa417bc20b6090a8053cad03cc5768527eaa1df4e8cf7abc13831b8999e88",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "0309bffef959fca64ebc2c58c8e7c0b2501d33949ebca66561b171d9b761c488",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "fd7d77de225b32549f1f537d378526ad307f575c5b6d66370a50c80cf54e081a",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "d4a66133ca14d9c93ec5ab56bb5afe8193341db5f804e6a4d254dbbc1ba8dddf",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "bec6c7eeafab2710741f1cf3078df195b367cc325415a61402fc04159158bceb",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "9a7046f38068c0cea5f883539a23c8b1ed4d72a4ec31d8954336c03ccea426cd",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "102d037100ffda876aef593de31b3f30e2604b92bd73bfaf53e428fc3ab559c7",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "851a84e4a5df4fec8755e7422eb1e26bd653605a75202a1645778972b12f36a8",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "21ee49244055ff9dd93dd00d9551de0388a1c3051a73494638976d964794912d",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "40b724ac3568b7fe9065e5fd1b0af8ae5f439a3b1679879fbf06e5c39c467187",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "c1b218bda1db41a9f81666b2a78f6ff9d0c538bb9cdb09b76ba2a3c8772f2008",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "e90ee47ff8f1ddf7badbbf1426617370dfd8815ce5aa90e2eea92c49aeb79b20",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "d899fc70e812acb38521c0e4d401fdd1eb9cd82ac2da8ffbc8d6f383837df26d",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "a40597c528c609b0b14978ae56873fe743d9463b85108e4445a6fa31ea81725f",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 62,
+          "baseline_value_sha256": "213d3e59751146c2f5e84cec5c123d7453e947c8ef44d01b0b114cad46ba008c",
+          "candidate_scalar_leaves": 62,
+          "candidate_value_sha256": "da56db732f2d0a803cea4cc3b32f28b7dee9dad358f0b32f0b1e6e18b41a8fdc",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "ea56c220d487f3202c0559871e90e8273d26f90bbada7721737bbec6a987fa39",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4ec73f3f9370c020f29e545bd2de3dd84d518b6eef32a38993771a99020109c4",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "e7f2194552215e06ca789dbd1281b8fa9f4828f6802d0a05916fe3cd70411026",
+          "candidate_scalar_leaves": 40,
+          "candidate_value_sha256": "ac22d9fe9fe6226777a959b49eb458c65cdb06448ac7e3dbb3734d5be81a30a5",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "eca4ad54bc60838ea582fdcb3fca10269dc5bdcc028f218fe0f3aee0c18fc544",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2cb77b6afb048bde5ac4a16cb0cd3c648aea7566a345ac66d2fb7b9e09d0a807",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/background_pip_compiled_calls",
+          "reason": "full-background formula evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "73d3f1ba062585bce51f77d70a26be88c44b55d70f81b8bd7e2ded030ca4454a",
+          "path": "/background_even_pip_compiled_calls",
+          "reason": "even-integer-layer specialized evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/background_sign_pip_compiled_calls",
+          "reason": "canonical-sign integer-layer specialized evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [],
+      "space_group": 3
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 1,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 1
+        },
+        "full_group": true,
+        "kind": "abstract-upper-family-single-group",
+        "marked_witnesses": false,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "baseline_mathematical_projection_sha256": "34b25c5c53c889f835dd8e0520cf7e340420db307b3b11ef6a31b55d8a91b372",
+      "baseline_path": "runs/spinless_230_v1_20260927T040004Z/sg6.json",
+      "baseline_sha256": "e2387dac8db1c4d599bf5c5ee75ba5926d29ccb84a478883d9d8accae28254ba",
+      "baseline_source_id": "82111071dc0c30ab4d319e16b7d2571d9f6b567430242dee530b3f5d3cc1e364",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 1,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 1
+        },
+        "full_group": true,
+        "kind": "abstract-upper-family-single-group",
+        "marked_witnesses": false,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "candidate_mathematical_projection_sha256": "34b25c5c53c889f835dd8e0520cf7e340420db307b3b11ef6a31b55d8a91b372",
+      "candidate_path": "runs/spinless_specialized_controls_v3/sg6.json",
+      "candidate_sha256": "592f701924c4b933780b2ae0e4f4c49f2012c341d7ace08f85f9965d9913d72b",
+      "candidate_source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+      "compared_scalar_leaves": 3172,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "983e21c448eb2aa59cb533ba145c27e3a8f219c9ec73a2069111e932fdbf0d2d",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "67c233a9d31409d7cdc1dcfea8c90d147648ee29efd4d9496adaec3317ba76d3",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "a9701cee1030236e2061520310001e2968b46e0ccc3853a9f7fe634ca3797130",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5ec68887c118ee1b9f6008b1441df4ffe0a31cdbbe17ffe46e06f4920624233d",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "14e8c6f1125790901935ba962a0e9b477466cf2d15cf8f374aaaee650738f44a",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "493faac072916dd3b92bcd62025510acad5117fa4c132d6fef54a3450b1b8b5e",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "9d7889b0a0558f9098c0582427ba825e97e1198a0ecb127f6847b61924ae7cdb",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "026fd084760683af893880f9df60d501312447368fbe1b731c8b2f85002254c3",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "d70d6c0d800c2540749a3dc8715207b3675361360330cbdab5c1c489060377e5",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4bc86960b1df2e7fcd44cb90f1aef27d179e49d8bbecb0ea563983d4ea470bd7",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "97955bd2281327704dcbaa53155ce4c12a7bb5b662e7653571c1876f9d602a91",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "e7c7f2884df86ad40d15897225967a6ab2e7a82903ffb00900fc44af24281722",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "575accaf58c489ada12a2258eef29c1b04e5b054c51d3d0c4247cc143c3d030e",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "072a29cc64560fce9f298299169f05be8dcf7920f1d1acb4c17ff949b52672a6",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 88,
+          "baseline_value_sha256": "281f3674f535ac732fa6f187043d6fc9f0dca56bbc0f1c8570e756cc8e45f150",
+          "candidate_scalar_leaves": 88,
+          "candidate_value_sha256": "ffa9f8a3052d78f736c3b27aa856de96451a978cc93c413e39d56e7a15969da8",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "ea56c220d487f3202c0559871e90e8273d26f90bbada7721737bbec6a987fa39",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4ec73f3f9370c020f29e545bd2de3dd84d518b6eef32a38993771a99020109c4",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "e7f2194552215e06ca789dbd1281b8fa9f4828f6802d0a05916fe3cd70411026",
+          "candidate_scalar_leaves": 40,
+          "candidate_value_sha256": "ac22d9fe9fe6226777a959b49eb458c65cdb06448ac7e3dbb3734d5be81a30a5",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "eca4ad54bc60838ea582fdcb3fca10269dc5bdcc028f218fe0f3aee0c18fc544",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2cb77b6afb048bde5ac4a16cb0cd3c648aea7566a345ac66d2fb7b9e09d0a807",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2811745d7b8d8874f6e653d176cefdd19e05e920ce389b9b7e83e5b2dfa546c7",
+          "path": "/background_pip_compiled_calls",
+          "reason": "full-background formula evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/background_even_pip_compiled_calls",
+          "reason": "even-integer-layer specialized evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb",
+          "path": "/background_sign_pip_compiled_calls",
+          "reason": "canonical-sign integer-layer specialized evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [],
+      "space_group": 6
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 3
+        },
+        "full_group": true,
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "baseline_mathematical_projection_sha256": "c642dbcb5043ce8d09ff5bf812ba5132957f0e664324871a48099fac33fc6cd4",
+      "baseline_path": "runs/spinless_230_v1_20260927T040004Z/sg84.json",
+      "baseline_sha256": "db55242d3667e63032f26469164fe97b920dfd8aa852c4589d4f7fa633d3b9cc",
+      "baseline_source_id": "82111071dc0c30ab4d319e16b7d2571d9f6b567430242dee530b3f5d3cc1e364",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 3
+        },
+        "full_group": true,
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "candidate_mathematical_projection_sha256": "c642dbcb5043ce8d09ff5bf812ba5132957f0e664324871a48099fac33fc6cd4",
+      "candidate_path": "runs/spinless_specialized_controls_v3/sg84.json",
+      "candidate_sha256": "397fec3678f1309b8daaa58e24eeafcf09301b85fe1c79a5dda4781922f65744",
+      "candidate_source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+      "compared_scalar_leaves": 4027,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "33bcf08f612f377f1d4cfb04b22ad0b635400fb1099d642fd6e757663e05da97",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "52327a6a1a1707988e101879ec39a5fddadc34c1d1393d516ad09a938c3f1481",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "b3015d80f1ec74501ed0be14f3d0965774346bc644b0d526df777748fb1e88a2",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "716a8a760e65e51d90580c70a7c9efb1fd9b3d190ce5d0c9784e16ad75a2877c",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "e061b3e5606244f5fbd0fcb84acc5af4ce994fc521b4a69ff0cfc2cb7d3c366f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4d113dd016d186bc0869750a3145d03530d575abc611e1fe6aa61ea2aeeca39e",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "af76a103ab604eef9139f66c91770fdb82364dbd64f6c8dd64077e8ec081fe9a",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "bcf7a08922cd4ce01172ad0909b6c91aae5df4ff1eef358d1cc9a7f61dfb4baf",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "95ea8d519947ab03febdb1c4f7af8e46725f123d1133437615dab35df5d1cf0e",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "15ebb0e00b40770d2708732cc82c7e3182d8f9354d1e2740cdc9167c58fbb464",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "756a0ad9ec9e63c6b5386d60001d65a039a0bb707c54521063e19cc7bc7d7424",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4b6becadb53980991244b8052952821d6dce8e504d81d1d45b76024a77ea9add",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "89b2c9605722fb28a7da9280dcb88d4041f7637f0a1c71c3b00df28d555b0c70",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "d54d7ead184676855129a7d4f6ab9e80a822aab0f346030175d745d55a015bf5",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 70,
+          "baseline_value_sha256": "4377e17c2d9fadf105b35a48240252a9e9b9e444583667eaa1bb89e6bd87abb0",
+          "candidate_scalar_leaves": 70,
+          "candidate_value_sha256": "66e7a2ae53e55b167eb97ada292fafae121f3f4d00061f8f2e3693594ab3b8ec",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "ea56c220d487f3202c0559871e90e8273d26f90bbada7721737bbec6a987fa39",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4ec73f3f9370c020f29e545bd2de3dd84d518b6eef32a38993771a99020109c4",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "e7f2194552215e06ca789dbd1281b8fa9f4828f6802d0a05916fe3cd70411026",
+          "candidate_scalar_leaves": 40,
+          "candidate_value_sha256": "ac22d9fe9fe6226777a959b49eb458c65cdb06448ac7e3dbb3734d5be81a30a5",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "eca4ad54bc60838ea582fdcb3fca10269dc5bdcc028f218fe0f3aee0c18fc544",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2cb77b6afb048bde5ac4a16cb0cd3c648aea7566a345ac66d2fb7b9e09d0a807",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/background_pip_compiled_calls",
+          "reason": "full-background formula evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "ba3be1d6cdc455d085fabeafa3b5f12ce439c09fb7f25f1955e0a6a4edd10c09",
+          "path": "/background_even_pip_compiled_calls",
+          "reason": "even-integer-layer specialized evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/background_sign_pip_compiled_calls",
+          "reason": "canonical-sign integer-layer specialized evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [],
+      "space_group": 84
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 3
+        },
+        "full_group": true,
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "baseline_mathematical_projection_sha256": "523f25f4db92146da223faee8ddc5ec6780ceca35f77811d57fe6587882badd5",
+      "baseline_path": "runs/spinless_230_v1_20260927T040004Z/sg87.json",
+      "baseline_sha256": "f6ef3fc8c537a9bc70619ddea528f0db787a7c951e8e307a2d1962763db28dfe",
+      "baseline_source_id": "82111071dc0c30ab4d319e16b7d2571d9f6b567430242dee530b3f5d3cc1e364",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 3
+        },
+        "full_group": true,
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "candidate_mathematical_projection_sha256": "523f25f4db92146da223faee8ddc5ec6780ceca35f77811d57fe6587882badd5",
+      "candidate_path": "runs/spinless_specialized_controls_v3/sg87.json",
+      "candidate_sha256": "bac60de47641df7f3782e66d1a9335175bd2734b02245173f6bd04dbc9894c4a",
+      "candidate_source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+      "compared_scalar_leaves": 3592,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "62525c50c23953e99cb848b62c96e5cdcaa3d02bf2afbcc7f120350b7f1c4328",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "6023eb815904a24d97f48f757236bf1a54b3ebff41c4d87eb3ef7c7f1ce86de3",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "94438835401c952a248e13719939630d503c4a7e297bcaa4a288f5df02f6e89b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "56d8c4f6473aeb1f13893d3fa578159f3d8389eac34a981e32357985a879abad",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "63b85782803f9b6f7ea2a86566d8b0df0c80119a0d98227c8d5366c1ccbd8642",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "60ffb38820d7807122b89d1cae2c68ab224a17956fef53f5d0ab3b1dd281674e",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "ac93ae5f3724965e3fdaf49baadc44bd99f507d48fa7b968511f1488dd9d6a87",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "e1cb33e3d969eaaa4cc71fee8fbfc3b05118062a8c11a78f426bdf723b589f2a",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "76a60e00302c64517745ef308a154482f7ba3ea7b5e56113fa21ab8fcde5cf02",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4f22dc77bf4791b94afa61e3f0f9133e603fa2936476b3f006d0cec0de04251a",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5e630450789b566573cfadaf8375b45b6e29b8eec9099541396cdf81a166f1fb",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "e22d8a49aa9e7064f3cf382a32d51fa56b9f42b5a3e413c6d85cb3434b601a84",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "b3a6c548ac703368ab898f8c0b5a1905b30d061ece60e3f7c5a84072cccf4762",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "f035af855a364879501cf2c70b7d1ff04f14a8b3b4428996cffbb31e57a0dd34",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 66,
+          "baseline_value_sha256": "e01bff68b923c5b25ed44c974992cef3440c78a745a64b9a6135d18fc299525e",
+          "candidate_scalar_leaves": 66,
+          "candidate_value_sha256": "fddeabc93f5a2719e1425698f8f3733c07be587156daa35d2419b9383a484beb",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "ea56c220d487f3202c0559871e90e8273d26f90bbada7721737bbec6a987fa39",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4ec73f3f9370c020f29e545bd2de3dd84d518b6eef32a38993771a99020109c4",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "e7f2194552215e06ca789dbd1281b8fa9f4828f6802d0a05916fe3cd70411026",
+          "candidate_scalar_leaves": 40,
+          "candidate_value_sha256": "ac22d9fe9fe6226777a959b49eb458c65cdb06448ac7e3dbb3734d5be81a30a5",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "eca4ad54bc60838ea582fdcb3fca10269dc5bdcc028f218fe0f3aee0c18fc544",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2cb77b6afb048bde5ac4a16cb0cd3c648aea7566a345ac66d2fb7b9e09d0a807",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/background_pip_compiled_calls",
+          "reason": "full-background formula evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "d0022490bc99aa1b034ef37b90c0fd3885e2ab3263e03ab887e7c2e3e4198a27",
+          "path": "/background_even_pip_compiled_calls",
+          "reason": "even-integer-layer specialized evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/background_sign_pip_compiled_calls",
+          "reason": "canonical-sign integer-layer specialized evaluator invocation count"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [],
+      "space_group": 87
+    }
+  ],
+  "schema": "fspt-background-literal-mathematical-comparison-v1",
+  "scope": "Recursive equality of every mathematical field, list element and native witness retained in both exports. Excluded runtime metadata, exact schema aliases and new certificates absent in early exports are enumerated per group. This is not merely an invariant-factor comparison.",
+  "unexpected_candidate_groups": []
+}

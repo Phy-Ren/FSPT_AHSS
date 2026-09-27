@@ -1,0 +1,354 @@
+{
+  "accepted_archive_sha256": "60bc072c330c838a10e6a1f663eb6664e1d09e010b5081141dacf609aff33831",
+  "accepted_source_id": "9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96",
+  "all_230_accepted_result_hashes_rechecked": true,
+  "cases": [
+    {
+      "accepted_result_path": "results/space_groups/sg84.json",
+      "accepted_result_sha256": "704febacd965e2ac4dbd038e553aed786511c256dc940bd04a8b2a453f3066d5",
+      "accepted_source_id": "9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96",
+      "added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 15,
+          "candidate_value_sha256": "a6c5b74b606b7eed3b3f7e26ba902e59dc51f1c628a1b6a50ab5d364a6376b72",
+          "path": "/pip/free_lattice/parityCandidates/1/d3_initial_coordinates",
+          "reason": "Added binary initial d3 diagnostic before the unchanged nonzero Majorana adjustment. Its values are new source-linked evidence, not independently reconstructed or compared with a missing old vector. The earlier export has no diagnostic vector; its cohomology-space dimension is not independently reconstructed by this comparison."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 4,
+          "candidate_value_sha256": "1c10b03518fff8fc374a20bbf5107c66496656bec0662d6c6db123d4a898f121",
+          "path": "/pip/free_lattice/parityCandidates/1/d4_projected_coordinates",
+          "reason": "Added zero d4 quotient diagnostic consistent with the unchanged surviving status; target length checked. The projection of the unchanged nonzero raw class is not reconstructed by this comparison. The earlier export did not contain this diagnostic."
+        }
+      ],
+      "candidate_pointer": "/pip/free_lattice/parityCandidates/1",
+      "compared_scalar_leaves": 2601,
+      "comparison_path": "docs/validation_runs/background_literal_regressions/half_diagnostics_vs_accepted_complete.json",
+      "comparison_sha256": "fb3aee9c33914abc75e947497fb174c301ec5db38297815fce35fcc14041565f",
+      "control_candidate": {
+        "certificate": "explicit-full-O5-in-E4-quotient",
+        "d3_initial_coordinates": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "d4_projected_coordinates": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "d4_raw_coordinates": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "d4_target": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "h1Coordinates": [
+          1,
+          1
+        ],
+        "majorana_adjustment": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "page": 4,
+        "status": "survives"
+      },
+      "control_result_path": "runs/half_diagnostic_completion_v3/sg84.json",
+      "control_result_sha256": "d0355b4692359aca1b304ddee14b406e2490c4a6e403364a14bdd87e660a9cdd",
+      "control_source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+      "interpretation": "New source-linked computed diagnostics; not values stored in the accepted earlier file and not independently reconstructed from that file.",
+      "kind": "free",
+      "missing_old_fields": [
+        "d3_initial_coordinates",
+        "d4_projected_coordinates"
+      ],
+      "new_initial_d3_nonzero": true,
+      "new_projected_d4_zero": true,
+      "original_candidate": {
+        "certificate": "explicit-full-O5-in-E4-quotient",
+        "d4_raw_coordinates": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "d4_target": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "h1Coordinates": [
+          1,
+          1
+        ],
+        "majorana_adjustment": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "page": 4,
+        "status": "survives"
+      },
+      "previously_stored_mathematical_fields_and_native_witnesses_literal_equal": true,
+      "space_group": 84
+    },
+    {
+      "accepted_result_path": "results/space_groups/sg103.json",
+      "accepted_result_sha256": "e0a2950b112f5911609b5b658aab9e23f96d539711abdf8c8ea539ae0788158f",
+      "accepted_source_id": "9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96",
+      "added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 6,
+          "candidate_value_sha256": "9577fdf7d1e750a6e3727af5ab9affc8ff926c9d13b711f5c4112eedaacab321",
+          "path": "/pip/torsion/0/d3_initial_coordinates",
+          "reason": "Added zero d3 diagnostic, consistent with the unchanged zero Majorana adjustment and retained actual lower lift. The earlier export has no diagnostic vector; its cohomology-space dimension is not independently reconstructed by this comparison."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 2,
+          "candidate_value_sha256": "3d5812abc84c11768aa73a732c85d75dbed439188f5bb3239e9b762ea31d9862",
+          "path": "/pip/torsion/0/d4_projected_coordinates",
+          "reason": "Added d4 quotient coordinate: the unchanged raw class is zero, so its projection is exactly zero; target length checked. The earlier export did not contain this redundant diagnostic."
+        }
+      ],
+      "candidate_pointer": "/pip/torsion/0",
+      "compared_scalar_leaves": 3716,
+      "comparison_path": "docs/validation_runs/background_literal_regressions/half_v3_vs_accepted_complete.json",
+      "comparison_sha256": "fab2c558aa102725303900b3d0b238b94d8739c9f7a197cc37349934dad7a5d4",
+      "control_candidate": {
+        "certificate": "explicit-full-O5-in-E4-quotient",
+        "d3_initial_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "d4_projected_coordinates": [
+          0,
+          0
+        ],
+        "d4_raw_coordinates": [
+          0,
+          0,
+          0
+        ],
+        "d4_target": [
+          2,
+          2
+        ],
+        "majorana_adjustment": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "page": 4,
+        "status": "survives"
+      },
+      "control_result_path": "runs/half_background_regression_v3/sg103.json",
+      "control_result_sha256": "0a038946886b07d049ebbb138ff2ac2fcf555437329e3faa8c1d2125e51f3c5b",
+      "control_source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+      "interpretation": "New source-linked computed diagnostics; not values stored in the accepted earlier file and not independently reconstructed from that file.",
+      "kind": "torsion",
+      "missing_old_fields": [
+        "d3_initial_coordinates",
+        "d4_projected_coordinates"
+      ],
+      "new_initial_d3_nonzero": false,
+      "new_projected_d4_zero": true,
+      "original_candidate": {
+        "certificate": "explicit-full-O5-in-E4-quotient",
+        "d4_raw_coordinates": [
+          0,
+          0,
+          0
+        ],
+        "d4_target": [
+          2,
+          2
+        ],
+        "majorana_adjustment": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "page": 4,
+        "status": "survives"
+      },
+      "previously_stored_mathematical_fields_and_native_witnesses_literal_equal": true,
+      "space_group": 103
+    },
+    {
+      "accepted_result_path": "results/space_groups/sg104.json",
+      "accepted_result_sha256": "6a6d60e5097fcf69597a60d3003409e614825489131c4351febb740fc01f0865",
+      "accepted_source_id": "9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96",
+      "added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 4,
+          "candidate_value_sha256": "1c10b03518fff8fc374a20bbf5107c66496656bec0662d6c6db123d4a898f121",
+          "path": "/pip/torsion/0/d3_initial_coordinates",
+          "reason": "Added zero d3 diagnostic, consistent with the unchanged zero Majorana adjustment and retained actual lower lift. The earlier export has no diagnostic vector; its cohomology-space dimension is not independently reconstructed by this comparison."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "d0bca111f8628137adc4c16f123496dcdd1d590d06cb5d9acd68b39fe656fb97",
+          "path": "/pip/torsion/0/d4_projected_coordinates",
+          "reason": "Added d4 quotient coordinate: the unchanged raw class is zero, so its projection is exactly zero; target length checked. The earlier export did not contain this diagnostic."
+        }
+      ],
+      "candidate_pointer": "/pip/torsion/0",
+      "compared_scalar_leaves": 3255,
+      "comparison_path": "docs/validation_runs/background_literal_regressions/half_diagnostics_vs_accepted_complete.json",
+      "comparison_sha256": "fb3aee9c33914abc75e947497fb174c301ec5db38297815fce35fcc14041565f",
+      "control_candidate": {
+        "certificate": "explicit-full-O5-in-E4-quotient",
+        "d3_initial_coordinates": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "d4_projected_coordinates": [
+          0
+        ],
+        "d4_raw_coordinates": [
+          0,
+          0
+        ],
+        "d4_target": [
+          2
+        ],
+        "majorana_adjustment": [
+          0,
+          0,
+          0
+        ],
+        "page": 4,
+        "status": "survives"
+      },
+      "control_result_path": "runs/half_diagnostic_completion_v3/sg104.json",
+      "control_result_sha256": "4dd23306822d3033635df519f58ea6f7a61ce53ffcb898d6f750782462ea5184",
+      "control_source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+      "interpretation": "New source-linked computed diagnostics; not values stored in the accepted earlier file and not independently reconstructed from that file.",
+      "kind": "torsion",
+      "missing_old_fields": [
+        "d3_initial_coordinates",
+        "d4_projected_coordinates"
+      ],
+      "new_initial_d3_nonzero": false,
+      "new_projected_d4_zero": true,
+      "original_candidate": {
+        "certificate": "explicit-full-O5-in-E4-quotient",
+        "d4_raw_coordinates": [
+          0,
+          0
+        ],
+        "d4_target": [
+          2
+        ],
+        "majorana_adjustment": [
+          0,
+          0,
+          0
+        ],
+        "page": 4,
+        "status": "survives"
+      },
+      "previously_stored_mathematical_fields_and_native_witnesses_literal_equal": true,
+      "space_group": 104
+    }
+  ],
+  "combined_interpretation": {
+    "added_free_case": 84,
+    "added_zero_torsion_cases": [
+      103,
+      104
+    ],
+    "free_nonzero_initial_d3_adjusted": [
+      8,
+      84,
+      86,
+      88
+    ],
+    "torsion_nonzero_initial_d3_adjusted": [
+      32,
+      34,
+      45,
+      110,
+      112,
+      114,
+      116,
+      117,
+      118,
+      120,
+      122,
+      218,
+      219
+    ],
+    "true_d3_or_d4_kills_added": 0,
+    "warning": "Combined lists cite accepted original data plus these separately identified controls; they do not rewrite the older diagnostic cohorts."
+  },
+  "control_runs_are_new_computations": true,
+  "control_source_id": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+  "convention": "physical-spin-half-det-sign-omega0",
+  "extraction_ran_new_gap_computation": false,
+  "formula_convention": "normalized-pip-aw-edge-transport-v2",
+  "original_230_diagnostic_path": "results/pip_diagnostics/crystalline_spin_half.json",
+  "original_230_diagnostic_sha256": "a261a79fa3f24b842b93df4ccc24f5f63a0788977d299d2a7ed2649297beff59",
+  "schema": 1,
+  "scope": "Supplement only: three earlier missing initial-d3 fields and their projected-d4 diagnostics. Accepted 230 result bytes and original diagnostic JSON are unchanged; full common-field/native-witness comparison reports are linked."
+}

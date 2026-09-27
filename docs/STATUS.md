@@ -1,21 +1,69 @@
-# Completed campaign
+# Completed space-group campaigns
+
+As of 2026-09-27, both physical conventions have all 230 graded classifications
+and unique abstract stacking groups. The spinless archive is
+`results/space_groups_spinless`, with frozen source `73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252`.
+Its archive manifest SHA-256 is `1c2148ca95fd5245ec5a490665f784229a629e2c8745b6838c17262ba7e3aa72`.
+
+| Spinless measure | Accepted v3 run |
+|---|---:|
+| All 230 complete results | 13654.804 seconds (3 h 47 min 35 s) |
+| Summed GAP CPU time | 148463.701 seconds |
+| GNU time process-tree CPU | 148558.070 seconds |
+| Maximum single-task RSS | 21.574 GiB, SG219 |
+| Actual complete marked evidence | 214/230 |
+| Unique abstract type with unknown upper carry | 16/230 |
+
+The marked limitation applies to SG 6, 8, 28, 30, 31, 32, 34, 40, 41, 43, 156, 157, 160, 174, 188, 190. The complete
+allowed extension family has one Smith type in each case; no unknown carry is
+set to zero. The replay interface explicitly rejects these 16 cases.
+All 230 accepted results pass the strict background audit and agree literally
+with the complete v1 baseline. The cup-zero pilot is 13/13; the integrated
+development pilot retains its six successes and original SG219 timeout.
+The formal v3 SG219 completed within its own original budget. Source and raw
+task bytes are retained in `results/optimization_validation/background_v3`.
+
+No saved H1 candidate is finally killed by d3 or d4 in either convention.
+Nonzero raw obstructions can be removable; spin-half SG84 and spinless SG83
+provide explicit raw-d4 examples. The spinless H0 incoming relation has nonzero
+d2 in 52 groups and d3 in 22; its final d4 component vanishes
+in all groups. See the two `PIP_DIFFERENTIAL_DIAGNOSTICS` documents for the
+candidate-level evidence, group lists and the missing-twister scope.
+
+The [joint report](../results/optimization_validation/background_v3/physical_conventions/README.md)
+contains 460 rows, cross-convention differences, all-230 odd-primary comparisons,
+and nine geometric examples with native trivialization certificates.
+There is no supplied external affine-230 answer table for the spinless model;
+the external comparison scope is recorded in `SPINLESS_REFERENCE_SCOPE.md`.
+
+The nonzero-background checkpoint follows integrated stacking, including the
+H0 quotient when present, and must not be reported as a pure classification
+benchmark. Shared worker load and queueing are included in campaign elapsed.
+Allocation and release records are under
+`results/performance_environment/spinless_20260927`.
+
+## Original crystalline spin-half campaign
+
 
 Accepted on 2026-09-26: **all 230 space groups have complete classification,
 actual generators and stacking relations**. The uniform `full_closed_cf_v09`
 run is archived at `results/space_groups`. Its source ID is
 `9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96`;
-all 30 live GAP files match the frozen source exactly. The original archive
+the exact 30-file GAP snapshot is retained in that archive. The current runtime
+also supports the other spin convention; use the frozen `--source` to reproduce v09. The original archive
 manifest SHA-256 is
 `60bc072c330c838a10e6a1f663eb6664e1d09e010b5081141dacf609aff33831`.
 
 The local Git repository is `/home/xingyu/FSPT_AHSS`; the cluster working
-directory is `/home/user/xyren/AllFSPT`. There is no published GitHub remote.
+directory is `/home/user/xyren/AllFSPT`. The public snapshot is
+[Phy-Ren/FSPT_AHSS](https://github.com/Phy-Ren/FSPT_AHSS), with a separate
+history from the private working repository.
 Each space group uses one sequential classification-to-stacking GAP process,
 with parallelism across groups. SptSet is never loaded. Runtime formulas are
 compiled independently from the delivered mathematical inputs; no external
 answer table or collaborator calculation engine is a production dependency.
 
-## Results and performance
+### Results and performance
 
 | Measure | Accepted run |
 |---|---:|
@@ -39,7 +87,7 @@ with CSV, Markdown and JSON reports beside it. The seven-page formula note is
 See `PROJECT_REPORT_ZH.md` for the Chinese report and `CLUSTER_RUN.md` for a
 fresh five-node rerun with persistent SSH reuse.
 
-## Correctness and independent comparisons
+### Correctness and independent comparisons
 
 All 230 accepted results pass the complete-stored-witness, exact Smith,
 formula-convention and source audits. All 44 groups with nonzero free p+ip
@@ -92,7 +140,7 @@ stored-output audits do not replace cochain controls or extend them to every
 support tuple in every space group. Exact assumptions and coverage remain in
 `VALIDATION.md` and the individual validation records.
 
-## Provenance and scheduling
+### Provenance and scheduling
 
 The accepted archive contains 1198 original/generated-manifest files and
 15929682 bytes before the later human-readable reports. All 1197 payload
@@ -111,8 +159,9 @@ separate evidence. See `SCHEDULING_EXTENSIONS.md`.
 Earlier v04/v06 and the original v07 campaign retain their 229-result plus
 SG219-timeout histories and stopped observers. They are not full-230 timing
 benchmarks. Resource measurements are in `results/performance_environment`;
-PBS host memory totals are distinct from task RSS. All five allocations have
-been released, and their queues have no active, pending or running tasks.
+PBS host memory totals are distinct from task RSS. All five allocations for
+this original spin-half campaign have been released, and those historical
+queues have no active, pending or running tasks.
 The exact-ID scheduler checks are in `results/performance_environment/final_release.json`.
 Workers drained through their own STOP files, leaving historical queues intact.
 

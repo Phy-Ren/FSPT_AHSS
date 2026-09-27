@@ -1,0 +1,33 @@
+{
+  "host": "n03.local",
+  "epoch": 1790491853.0475469,
+  "memory_kib": {
+    "MemTotal": 529033836,
+    "SwapTotal": 1023996,
+    "SwapFree": 971488
+  },
+  "task_count": 3,
+  "tasks": [
+    {
+      "id": "spinless_230_v3-p012-sg219",
+      "space_group": 219,
+      "cpu": 99.9844408509204,
+      "rss_kib": 3705076.0,
+      "elapsed": 7843.440368890762
+    },
+    {
+      "id": "spinless_specialized_controls_v3-p001-sg219",
+      "space_group": 219,
+      "cpu": 100.05237171921756,
+      "rss_kib": 3647044.0,
+      "elapsed": 8020.451055288315
+    },
+    {
+      "id": "20260927T145016-spinless-tail3-resource-3-de99075d",
+      "space_group": null,
+      "cpu": 114.28571379914575,
+      "rss_kib": 8832.0,
+      "elapsed": 0.19926977157592773
+    }
+  ]
+}

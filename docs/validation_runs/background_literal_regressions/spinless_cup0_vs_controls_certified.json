@@ -1,0 +1,2555 @@
+{
+  "all_common_groups_literal_equal": true,
+  "allow_legacy_baseline": true,
+  "auditor_sha256": "1153e83937d32900376a3efcdf78f6bbba4e82796ba16702729e15ae48069cbe",
+  "baseline": "runs/spinless_full_controls_v1",
+  "baseline_only_groups": [],
+  "candidate": "runs/spinless_cup0_controls_v2",
+  "candidate_only_groups": [],
+  "common_groups": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    16,
+    19,
+    75,
+    81,
+    84,
+    103,
+    146
+  ],
+  "compared_groups": 12,
+  "comparison_sha256": "e717c17f010d051599a0f35d5748a649405c44fb5f9227bafd9f36c92c109d59",
+  "crystalline_spin": "spinless",
+  "errors": [],
+  "expected_candidate_groups": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    16,
+    19,
+    75,
+    81,
+    84,
+    103,
+    146,
+    219
+  ],
+  "native_witnesses_compared": true,
+  "pending_expected_candidates": [
+    219
+  ],
+  "reference_answers_read": false,
+  "rows": [
+    {
+      "baseline_audit": {
+        "background_gauge": "zero",
+        "free_lattice": {
+          "index": 1,
+          "period": 2,
+          "scope": "existing complete omega-zero lattice certificate"
+        },
+        "full_group": true,
+        "kind": "gauge-zero-complete-marked-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": true
+      },
+      "baseline_mathematical_projection_sha256": "ce670e42907a945a12601186afa2386cf0f0c8b60f491ed914c27832afac8bd8",
+      "baseline_path": "runs/spinless_full_controls_v1/sg1.json",
+      "baseline_sha256": "f2397e6b1e1daa61b4b5be07ff586e502c1ba512fb2601d336f7a7320d197fde",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "zero",
+        "free_lattice": {
+          "index": 1,
+          "period": 2,
+          "scope": "existing complete omega-zero lattice certificate"
+        },
+        "full_group": true,
+        "kind": "gauge-zero-complete-marked-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": true
+      },
+      "candidate_mathematical_projection_sha256": "ce670e42907a945a12601186afa2386cf0f0c8b60f491ed914c27832afac8bd8",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg1.json",
+      "candidate_sha256": "a3f8d1628e6a463bbbe1275cd816f3029e584c6b30215c30495d66cdb4da3259",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 423,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "47dde1516da894b0047c62141226319423fc1e568b412e8b28b4318a5acef464",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fec3e201e70db2475f0f91295f2b8a0e1d7899ec646d6dae50e61860dd2869ed",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "ecf5e45f3b8ccaafca35fe9820060a0d7a23e452baab1df24bb12b2649ff905f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "a69bab3a432f8be46dba47bcc07a462d66340a6d335d93b88f68c2179b284526",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f52f6fcd01cf82298276ede04d6ea8828bcbe0665e30ae9dcb6a1ff8a663d073",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5c0f3a286db755616af84e48f9ebc3f2cb5c7c4e4358ddd0aeea616b19ab628d",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "54327cdd5b6224c2117a2157ca799d216d839e79b99c658886a1556fe735a210",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "d90c6034ba726f277a424a6bc280f49feb4bd2dd0de27c02b312935e18a6104b",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "8003d1aff6a0f7c4afb4b1f7c22e21d4c9e8eb6c45577df7642a031cf24327c9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "02c7f399c3b751884cc4c5dac171213e726a72257b0f9975f6f7d33adc1419ea",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 34,
+          "baseline_value_sha256": "2cd9b86a16e9cf41730e0ceb834603df2bba346a95bab1a835498a87a7d57330",
+          "candidate_scalar_leaves": 34,
+          "candidate_value_sha256": "085cfd96fcae319dc4e026da987e40089a82b32065fd634036fe691d3219ac3c",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Early shared exporter left a stale spin-half display label; the root physical convention is spinless in both runs.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 9,
+          "candidate_value_sha256": "927ce195e61213099de2acd61e123bbbba97af76cfe57bc11052c4f27bc68ea5",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 3,
+          "candidate_value_sha256": "2bbae79f682c393058cfaead5a7a9f455cefe959cf7cdfbd177306196a357003",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 9,
+          "candidate_value_sha256": "109bbb0d098bdafc39cf6a1bd168f764524693e0397d50d120c246ac1ea69b38",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        }
+      ],
+      "space_group": 1
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "zero",
+        "free_lattice": {
+          "index": 8,
+          "period": 2,
+          "scope": "existing complete omega-zero lattice certificate"
+        },
+        "full_group": true,
+        "kind": "gauge-zero-complete-marked-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": false
+      },
+      "baseline_mathematical_projection_sha256": "3111d2da9af6732ffd18ba0982b73f6fcdaf58fde5221c2a63d417720be257e9",
+      "baseline_path": "runs/spinless_full_controls_v1/sg2.json",
+      "baseline_sha256": "ef5e7c07e0fa8218d0110fa6629077d7b9fe77e0ddc2d0c81665586f439aa822",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "zero",
+        "free_lattice": {
+          "index": 8,
+          "period": 2,
+          "scope": "existing complete omega-zero lattice certificate"
+        },
+        "full_group": true,
+        "kind": "gauge-zero-complete-marked-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "candidate_mathematical_projection_sha256": "3111d2da9af6732ffd18ba0982b73f6fcdaf58fde5221c2a63d417720be257e9",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg2.json",
+      "candidate_sha256": "495adadf8cfcbf9cbfb0125ee83aec83d62fb99769819b040a2924adea6fa6f8",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 1146,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f7c4834e6490ef2247439fb7d31e98efa38bb2110299da52ae9c79f4569d745c",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "87b0278583db57993e5e152f07e913d4714d65cdb8fd55f7876ef57aba20ccdf",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "a3af7b3808c4cf72478d05c9bab9c0d47e31c1d2cb3a29e7481669f7ea278c4e",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "188c1fdca79d927f6e812133173fc41d3a4e57074de521020274caa9bb29af7d",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "0cee6209b0c56a616c829933c323c367f3f83eaefd0ee9e11215653fe732d173",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "8841dbe91ae0c5b7138cc28d691e07bbaa568d6a141f8d4f93aad71b3ae74382",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "09a4709e069db0dbe68a1b1798c7d3e96e317ce7c55f06157796caafa2de02f9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5b6cf584d59e62db027d44ae1487cf7f347ae9a74689b9e2bb4514945a13bc2",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "9d4e7f7e31b0575fb136525f92c7bfef5d653e820e7d18ea1eb8023771b62445",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "42aeb6380844c698caee002874c8dc6a8b70d13ebeb5a065896d4a7cdaa8ea7d",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "261aa2c616f6db058fac8f6d7d6d62166bc1e7fb623ed66e93b86377b2d8db59",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "a4a50c1a3b3895090ba1368d8c2cbc48eb94e09183b7fdd206f035248edecab2",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "63eb8ecca7ea7bff696ebbf62493ceeb3bbc04424094d13221f997ef56f5b228",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "8dc0305e47304a47da76352136b1ed759eb8620433a184e4a423ddf2655a9149",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 44,
+          "baseline_value_sha256": "383c5bcb2a243eb8175dd9c6d7da284433d24c555b6a080342ad6d8475e24d08",
+          "candidate_scalar_leaves": 44,
+          "candidate_value_sha256": "d2926c411eda682f1ad419e3aec2c2e547d81a43ca34f3583b6efee89481ddb3",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Early shared exporter left a stale spin-half display label; the root physical convention is spinless in both runs.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 28,
+          "candidate_value_sha256": "4ea5bc1c30a0934c8b83e36cd9da18dd15104e9940fec05b225b0b30115f52c4",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 56,
+          "candidate_value_sha256": "2f37ee5f8e9ec9b23c3aabbd00ee6aaad48341ede5bb7bfe564cbc96d4e414c6",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 49,
+          "candidate_value_sha256": "3eb16c08e2da376388c01585111bb38109af90297609656bab73cb1c2b18db8b",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        }
+      ],
+      "space_group": 2
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "compatibility_note": "v1 outer lower omitted; exact nested H0 quotient lower audited",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 2
+        },
+        "full_group": true,
+        "h0_quotient": {
+          "filtered_layers_recomputed": 3,
+          "incoming_order": 2
+        },
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": true
+      },
+      "baseline_mathematical_projection_sha256": "a4fef911af81fbc10d74130f401a26586e6e8652928a062b1e2ce655b8659add",
+      "baseline_path": "runs/spinless_full_controls_v1/sg3.json",
+      "baseline_sha256": "a2fc784612141a63059fc1855be7327c467c4fa27f2245e1276c98ba3b868087",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 2
+        },
+        "full_group": true,
+        "h0_quotient": {
+          "filtered_layers_recomputed": 3,
+          "incoming_order": 2
+        },
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": true
+      },
+      "candidate_mathematical_projection_sha256": "a4fef911af81fbc10d74130f401a26586e6e8652928a062b1e2ce655b8659add",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg3.json",
+      "candidate_sha256": "2df3bc4728e5e953fd209a56cc59f1eadd5177b8520b1b3e4c295c77e2fb2d1d",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 8774,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "4647efcfea62b8d36910c6cf9168963c883bcb6a4f706c2681cf48ff432d2032",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "84e1a2f449195e03814b06a2df2f99fef7b742ddb15282179c4a62e636423b4f",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f6ca70bd1cc2f194e44cfbb2036649639f20cb87f109008a1f75f47d13e81954",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "e86004be0251b15114a88a0f1d12a47d044ac769f6a094755e645edd20105e90",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "dacdba7ed83f1e8f535e1a84ffa846d2b20f53ad69040f41eaddc5731bacf5e0",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "be399e5d567724bef6af7b6d21e4f9e459607bd216ca9ba73b246c4b79c03f2f",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "539a79da0e4b002c4e63876b694d9f3f535f6ad60b13adce3973d9a2645f4a29",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "8c4925c5b9029a301f88332f4f5853f48d790e1c7d92a28a3e999fccd06fa145",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "d64cfea7be8e1d3fef648421e85da659f7c851bef03a930fcfc72a73b78bccdf",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "8b692102d0a1c594d1d38535d6b0c6ae40cba51c2e91c84135443edd70557405",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "2829e2c5d971aad9e6e60b00bdc6f9738da4c0c06dfb4558b67652d2c424ecec",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "7ddf531f4f2d1c0d74afdb50991976638849da05b6e56b1ee9ae6964d571dd3d",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "a8fa3910e6fef1b5bb30f5dc896ccff57ed2ad4eb8230de1f11aa21005e95c60",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "48088c670e233186071310db6e0beabb3f44cd47a2f3fa2eea01b04443eb6c61",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 62,
+          "baseline_value_sha256": "d2ab154764d2c62e74424c03e28b82025399b5237e2190b995fae8b4a8c71fbf",
+          "candidate_scalar_leaves": 62,
+          "candidate_value_sha256": "d18cc40c9ac8c53423ba767e3c288513810acad47f6848b89de0527e0f136f7a",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "canonical_value_sha256": "0fc7c23abc5aeaabc9b5a19eb12b8093de439893452e5220287e981aeb3608a1",
+          "path": "/stacking/lower",
+          "reason": "Early exporter omitted the outer alias; compare the complete retained h0IncomingQuotient.lower tree here.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Remove the redundant full prefix from the spinless display-scope label; computed/unresolved status and witnesses are unchanged.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/backgroundQuotient/preQuotientLower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/backgroundQuotient/preQuotientLower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/lower/finalFiltrationCertificate/preQuotientCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/lower/finalFiltrationCertificate/preQuotientCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lowerBeforeH0Incoming/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lowerBeforeH0Incoming/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/preQuotientCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/preQuotientCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 28,
+          "candidate_value_sha256": "4ea5bc1c30a0934c8b83e36cd9da18dd15104e9940fec05b225b0b30115f52c4",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 56,
+          "candidate_value_sha256": "2f37ee5f8e9ec9b23c3aabbd00ee6aaad48341ede5bb7bfe564cbc96d4e414c6",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 49,
+          "candidate_value_sha256": "3eb16c08e2da376388c01585111bb38109af90297609656bab73cb1c2b18db8b",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9",
+          "path": "/stacking/lower/witnesses/9/certificate/orderDivides",
+          "reason": "Added universal H0 order bound 16, independently checked against the measured incoming order by the candidate auditor."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9",
+          "path": "/stacking/h0IncomingQuotient/backgroundQuotient/certificate/orderDivides",
+          "reason": "Added universal H0 order bound 16, independently checked against the measured incoming order by the candidate auditor."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9",
+          "path": "/stacking/h0IncomingQuotient/lower/witnesses/9/certificate/orderDivides",
+          "reason": "Added universal H0 order bound 16, independently checked against the measured incoming order by the candidate auditor."
+        }
+      ],
+      "space_group": 3
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 1,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 1
+        },
+        "full_group": true,
+        "kind": "abstract-upper-family-single-group",
+        "marked_witnesses": false,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": false
+      },
+      "baseline_mathematical_projection_sha256": "10de8da621573850c9aa99ced7173f99dc145ff9058c9a251a331992444f3d4a",
+      "baseline_path": "runs/spinless_full_controls_v1/sg6.json",
+      "baseline_sha256": "11931478d1c51860f3f492c59d841cef7c104a5563903c10c884a44fca3022f6",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 1,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 1
+        },
+        "full_group": true,
+        "kind": "abstract-upper-family-single-group",
+        "marked_witnesses": false,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "candidate_mathematical_projection_sha256": "10de8da621573850c9aa99ced7173f99dc145ff9058c9a251a331992444f3d4a",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg6.json",
+      "candidate_sha256": "a0fb155b898728cdec7758abf1a77368cb786e08f0ee33fd12543641419bc4bd",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 3039,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "cfc5a72b7ef598c7c565803752721f6d278a69b27e3ec05eeddcedb3fe49b568",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "f5bf4199979fb4bf9469eaad3ba82bbbae9a7e2b4e655de845726bff1d0ae565",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "34ed0cec6ebf3e846818bc8b7c51169dddec9d9dbc557370f4701384563710c0",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "3a5b1fbaad25b1c6672379aa0b6b0c11ace69bc944d1a1812e05fc9494a247f2",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "4b9a87ba52efb3cb638ffb7c7d7d87ea904361a15f1f1d43550d8eb0eb3b8c5b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4fb9d63362e9086df9cde0bf1b085ceaf63df030b48b1159a760872c38be1e6f",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "155948bca3f92be9bcb6b82aabc9067f304a62ff65f01f94790c677bf74e78ae",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "e30031e86b4b2be5a7d7c31cb5a16ad46e465f5459857955f61b93a52c42bb0b",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "67f1787911d30f3e9b38fdf363eb4cb550b3d62f1080f2aa928cb3a5ce00353c",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "cb8a3b6670d5b4e2528ac970d295841a5ba7ad6b552dd2ea8000a6fbec7cd3ab",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "34c84412ecbc19ecf4e9244177b0775f989a605d56c0f89deeb6bce83beb35d2",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4be92b9bccb9579a0ec573df52feb20ebf4d461f1bade93d5f94ce64720a58bc",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "44467a281692bb1363b769a9253b2d61b90632b6c275eba470c50c1ad7ebd71a",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "25a43b023a50bcac2d066f5c832d56a4ec2ac0f8732939070d168a66ba969524",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 88,
+          "baseline_value_sha256": "8f64d6bcf50b9990b64555b67e632aedae3a928f9c0fab27c5da3fbd192aba1a",
+          "candidate_scalar_leaves": 88,
+          "candidate_value_sha256": "3aa2a31d37d8e048c4532d51020096ff88975fc07546570b8e0bd9ec294ca8b6",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Remove the redundant full prefix from the spinless display-scope label; computed/unresolved status and witnesses are unchanged.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 28,
+          "candidate_value_sha256": "4ea5bc1c30a0934c8b83e36cd9da18dd15104e9940fec05b225b0b30115f52c4",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 56,
+          "candidate_value_sha256": "2f37ee5f8e9ec9b23c3aabbd00ee6aaad48341ede5bb7bfe564cbc96d4e414c6",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 49,
+          "candidate_value_sha256": "3eb16c08e2da376388c01585111bb38109af90297609656bab73cb1c2b18db8b",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        }
+      ],
+      "space_group": 6
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "zero",
+        "free_lattice": {
+          "index": 1,
+          "period": 2,
+          "scope": "existing complete omega-zero lattice certificate"
+        },
+        "full_group": true,
+        "kind": "gauge-zero-complete-marked-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": false
+      },
+      "baseline_mathematical_projection_sha256": "dca24f3b262cf36076997432d3adfafda99b9a1cd1eb66cc7b99722c1541e560",
+      "baseline_path": "runs/spinless_full_controls_v1/sg7.json",
+      "baseline_sha256": "865357ca6869f29319f1e4abc50523ebe50392d7442c5d382baa4d40b814bd8c",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "zero",
+        "free_lattice": {
+          "index": 1,
+          "period": 2,
+          "scope": "existing complete omega-zero lattice certificate"
+        },
+        "full_group": true,
+        "kind": "gauge-zero-complete-marked-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "candidate_mathematical_projection_sha256": "dca24f3b262cf36076997432d3adfafda99b9a1cd1eb66cc7b99722c1541e560",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg7.json",
+      "candidate_sha256": "1e92bb3bfeb389628de95190c9575c6a7e06cc28fcd1ca16b86c8e0a9f6c3502",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 1132,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "260c8db06911d227be85b0e623da7c935aa134f1b13e8c6e9e8a25bfe611a2e0",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "8519f8d7cbb1a33ad16db89045d3e7a183d0ba3bc05bd34347f7243b8f0500dd",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "85f72074abb94327414d7ec5268cd757c6066772e23e2fd0265c7e2b33b42768",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "55f5054a626756a78ad0e40d61c7c06eeb999c306b65cc6647c23629b1721b06",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "aa11562a2bff1ae23b99b0e6d41006a02c36defe6670c6e10f1999f515c6ea9c",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b2fa9a38453a129f0499fa4dcdccd0ef0be503980618e017837170d04569886e",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "88d3aa9e10c19c62d2b89381ea0a106f677f33a621c79ae8cdc88ab3e29326be",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "21506748a78d86c519e911d71a1321a47c2c9e0342a891c1cced6fcc7e073d27",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "3930327e56d4212b757e8c4dc89fd1aa30749aac7fbc927037fc29afb8d56fe9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2d33a88b7b2eadd870b90ffa955b93e5de6e8dc3ebd9e7a981a76d40adc4b5c7",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5c1a7473b1c5cfb4ceffefe4c6a1ed141a0efe4487d3dcbd65a0ee9716aa807d",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "88dadebcf1983ede57003ca714b4c28d7b342d128a75382079ebecd0983ffa6c",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "51aafd929bf085f63f7534a7c9588a47187d6a2b99f04f1893fe07a14f31837d",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "7c17eafdf6b556904bbbc579b5596ddc964dd90ed862b9760c3df5306a833b09",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 48,
+          "baseline_value_sha256": "236f9c7501eded40785766287870169b16973c0a00e74480595ec554272115ba",
+          "candidate_scalar_leaves": 48,
+          "candidate_value_sha256": "3832c8483c569b33eff6730c0bf8b74df75fd882cd9eaffa2aee75a764d260ae",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "9a72c24f2fd76561729110d804c69f38a7088f2ec41fdf8fbfea20d07e8bcff8",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "9a72c24f2fd76561729110d804c69f38a7088f2ec41fdf8fbfea20d07e8bcff8",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Early shared exporter left a stale spin-half display label; the root physical convention is spinless in both runs.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 28,
+          "candidate_value_sha256": "3f939ce4c2b3c752f6186b2d107ce33e07d61a9b2786efc05978157146974289",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 56,
+          "candidate_value_sha256": "93d9fbdc70e60393da870967c01ec5d30ff21813402c6ee827c2555a3456499a",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 21,
+          "candidate_value_sha256": "4dc4002f065b4ec6c06bd4a9765ac1c8f1c170049a3fc6e3a37b944efe45395b",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        }
+      ],
+      "space_group": 7
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "compatibility_note": "v1 outer lower omitted; exact nested H0 quotient lower audited",
+        "free_lattice": null,
+        "full_group": true,
+        "h0_quotient": {
+          "filtered_layers_recomputed": 3,
+          "incoming_order": 4
+        },
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": true
+      },
+      "baseline_mathematical_projection_sha256": "e302e7b1133af11584b85adf54c6fddb6114c76083de70b0d4edcb8251ad5282",
+      "baseline_path": "runs/spinless_full_controls_v1/sg16.json",
+      "baseline_sha256": "658cdb8e4e374808b0ad209158fcac9abe1b3aa00158381ff6afb857ff8cd09d",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": null,
+        "full_group": true,
+        "h0_quotient": {
+          "filtered_layers_recomputed": 3,
+          "incoming_order": 4
+        },
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": true
+      },
+      "candidate_mathematical_projection_sha256": "e302e7b1133af11584b85adf54c6fddb6114c76083de70b0d4edcb8251ad5282",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg16.json",
+      "candidate_sha256": "5c54a72f23c5370955c881a1760d1cea1545169c7e308a2d5520450676b97cfb",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 24301,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "05056be88c7558fdac09bfe52c07be11934fbea8eb45d49a8db6fa5baf064a81",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "d9406f96977876d2051ba101fd5c01b6e7016a9eba6d4384f950aee83e5fac42",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f6c8d9262ed9e39a3944c84ab43cc0800b25903742296bb47a1eeb6b4c58f9b6",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "3289af970b0764ac36a542cae415316b68a808577851a7a28c270f1e30366a79",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "9debb3bc7c7f2ccbeab8ebe07cc0568c7dd03575fa6a7ddc0723be1343975ee6",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "17a6bdbe9c0472977a5de406b1e1e723db0b1843e7f0ad5d639bb70ee0e6d443",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "9aac2f7d1a343cb5f135cc79e8bab1cbf4e6693868737d150463c40f1e7b5917",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4a4edd67a26278c81bf90f7e504fe433610732bf9805b11510e7e7a9cf4e1224",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "444fc4433854795161f634a74f5c524a08c048921fa71127ddc220b3d71a0fc5",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "aadcb261823b018ffafe8c819e095b1625db84cbe412d4144cd254b15060d220",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "ac1e9413a0188ccb90a5262123419352c8018709087c1e21b2ac3168368ff9f2",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "634f2c76eb2a573ffb610d9bb32f02be92cb884fc1ac330c8dd7efba93dc14a2",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 72,
+          "baseline_value_sha256": "0935b8dc0d616c0327b92909a9f620da8d09b65b06ad8eec3fa8ba0fa924b69d",
+          "candidate_scalar_leaves": 72,
+          "candidate_value_sha256": "07f050e4ff23c95dd21f1fe24c4f3a7a91039f6decf9fa9025bbe34e3f1abc0f",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "canonical_value_sha256": "fe76a8c49f64423eb06e79ea2eb04b1f99375f37749739d6085c45f13f7c5a09",
+          "path": "/stacking/lower",
+          "reason": "Early exporter omitted the outer alias; compare the complete retained h0IncomingQuotient.lower tree here.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Remove the redundant full prefix from the spinless display-scope label; computed/unresolved status and witnesses are unchanged.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/backgroundQuotient/preQuotientLower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/backgroundQuotient/preQuotientLower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/lower/finalFiltrationCertificate/preQuotientCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/lower/finalFiltrationCertificate/preQuotientCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lowerBeforeH0Incoming/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lowerBeforeH0Incoming/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/preQuotientCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/preQuotientCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 60,
+          "candidate_value_sha256": "3a45fd8d7248db1b7b7f98e6edb63a5466301575edc3abbd8c03f39b72ba732a",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 240,
+          "candidate_value_sha256": "485feb4b70c6064e7ecac6ca2280b0688dbc35170bdccc77d5eae1f54776b0c3",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 144,
+          "candidate_value_sha256": "35acfc43ee20f1147e367421a96e8dfab9971e938747454ed1113db0bafae51f",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9",
+          "path": "/stacking/lower/witnesses/14/certificate/orderDivides",
+          "reason": "Added universal H0 order bound 16, independently checked against the measured incoming order by the candidate auditor."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9",
+          "path": "/stacking/h0IncomingQuotient/backgroundQuotient/certificate/orderDivides",
+          "reason": "Added universal H0 order bound 16, independently checked against the measured incoming order by the candidate auditor."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9",
+          "path": "/stacking/h0IncomingQuotient/lower/witnesses/14/certificate/orderDivides",
+          "reason": "Added universal H0 order bound 16, independently checked against the measured incoming order by the candidate auditor."
+        }
+      ],
+      "space_group": 16
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "zero",
+        "free_lattice": null,
+        "full_group": true,
+        "kind": "gauge-zero-complete-marked-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": true
+      },
+      "baseline_mathematical_projection_sha256": "acdc46a277764995864e25ac82fcda3b6738d4df73db51573add05664f0a9f45",
+      "baseline_path": "runs/spinless_full_controls_v1/sg19.json",
+      "baseline_sha256": "25284fd296e08e983a87410161ad9a1f50cc5e679861237ab03b739574cecbf9",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "zero",
+        "free_lattice": null,
+        "full_group": true,
+        "kind": "gauge-zero-complete-marked-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": true
+      },
+      "candidate_mathematical_projection_sha256": "acdc46a277764995864e25ac82fcda3b6738d4df73db51573add05664f0a9f45",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg19.json",
+      "candidate_sha256": "bc535a5a4f41ecb1ffc24ef6b07367ccd485cc9ffaf77e32f8b24874999c6b88",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 1320,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "aa6fbeaf8434f4c42cdf0485e451d3a4b586ffd3ba82de30fa8a8968dba35aa3",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "c0c0df3a7b77b0dbf2ba81abb4cfd3013bf5bbb5b6699b341397f4a83298276d",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "b7e690911a2e481f727199f4c1be5e4c7b554e9ba11ee41f5d3a39921b7f54d4",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "63747bb1083b189071b6d85b049e84f722efb72cc2f372d124e7b7a5a4d6e612",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "2ff858ee7c0236d326108e2e44b2633756720aad48e46eefceb69e1696b744c9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b3666f5688bf750084a7fd1bdf5bfbebfa5948e84203cc645af8d9f972fed862",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "7e6ad0e1bcd552dfa4c4c41abb7adc872ec016be09fc5193c0c4d78619426317",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4f67016fb0d30d6d9335c89623a3cb83b1cbf6445aa1e112c71052f54d7ca420",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "374511d1323986d5ecc09a0b38384c93e99abd9c1b2e008c7fe565e5802da7b6",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "1f5b0f2db6b9d269dfba907db26bcad489034c55e061b93bc7ab696e1f59f14e",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "c84c482f5b4f4f450462a8d33314e8e49890d50d0ea8ca62fa3527fda9345da2",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "de8fbe92f855d9886d4f3fd3e242ef2895976fd2d0ccd65526ba8ca452600549",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 28,
+          "baseline_value_sha256": "88123359609bc833f310de4865e07b56a453b70333a206f49081650a37152fe8",
+          "candidate_scalar_leaves": 28,
+          "candidate_value_sha256": "f56337c1d461c7f248813282323c33ceae8a163c177d50103732ceaf2527e316",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Early shared exporter left a stale spin-half display label; the root physical convention is spinless in both runs.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 60,
+          "candidate_value_sha256": "c40921e40be4a61fba52d84b917d39e78271854698909db28ecb942ce7a51ea7",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 240,
+          "candidate_value_sha256": "f8e5dbe87f2c7c150070227cefd73eed0ab61dc1e1452157b4d1cccf964d0ecc",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 24,
+          "candidate_value_sha256": "c44b668e714deea7388de756f28f9d135de07635056f51eaa59e9192ab2c0097",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        }
+      ],
+      "space_group": 19
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "compatibility_note": "v1 outer lower omitted; exact nested H0 quotient lower audited",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 2
+        },
+        "full_group": true,
+        "h0_quotient": {
+          "filtered_layers_recomputed": 3,
+          "incoming_order": 2
+        },
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": true
+      },
+      "baseline_mathematical_projection_sha256": "e83180625f216d85aed2aa1972425fa9d0bf23c696d4cab03008be8583df456f",
+      "baseline_path": "runs/spinless_full_controls_v1/sg75.json",
+      "baseline_sha256": "aadb9e936b2adb6a6ff26f75ee9386a8f9366e60b83dba9df1dde3dc1903eda4",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 2
+        },
+        "full_group": true,
+        "h0_quotient": {
+          "filtered_layers_recomputed": 3,
+          "incoming_order": 2
+        },
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": true
+      },
+      "candidate_mathematical_projection_sha256": "e83180625f216d85aed2aa1972425fa9d0bf23c696d4cab03008be8583df456f",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg75.json",
+      "candidate_sha256": "d8b8ebaaafb047b5d0d6a4be73b50d6c0c9e561c9e5d1cf8b042867104d20be3",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 7145,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "0cf180ff36616b57b4c88d7861d5c56040f3824a73aeeaa72d3ee776c3b292c4",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "ba88b8bcf62cde522147d18977af03bbeb463061ae65660869283dcfe8c8c89b",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "b65bdb15f7ff19bfb032abb0a21c01f0f811264aac731045e7c1e7824a6ea00c",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "f87d99d2bde905e3ae658d88e8bbec1c8d8e1721b396fd126d6d8814a3998816",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "c4d7f4a4227fa4453318d0c7f8a516161966e0a486e5d30abcbd8c61fbc6003e",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "cab4d5cd82caafc84c9bf43d5130f7622db6ceaff5e32897eae86a15cef2bbd4",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "c5d4fc4437d6eaa2b6bf584f1fd963286689059c0bb8370f18db9659b1263d7b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "0c350557a23fdf4c19de0cf500d06a970d9c496fdb9b2734cc85501d5a5c3563",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "031a1ff74972fcf56d656422f729e71b53f50a43d621286df6537ad0aaa6183c",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "37ae703ba1714110b721505cc2dbdd55274f07c6055bbee6b7f8bf20bdc94ec7",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "77d4aa0f1c77432e4182f174ff7886b3b9ab922ca15653f9f2fa22198e39a025",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "4a548107726f50cccc5f69a46d1ecac230a85a809dbbc7d000c71604152aed3e",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "fae373d1daa849639f114ab1395431a701f209e2ca80af056a1c6f0e27da8c99",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "0a3a9e122592b771b525891cff692034441fdee7378115db4be0b1b2ac8a8bcd",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 58,
+          "baseline_value_sha256": "9086f05f9ed7e8f8bd2b5114de09ea603967f0e49790ed73d1472e3e7aaba1d7",
+          "candidate_scalar_leaves": 58,
+          "candidate_value_sha256": "f7aad9b5d9cec22f881a75cb7b4f974bece65b1e53d31d0d0b88d2dc66acd638",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "canonical_value_sha256": "c1c4cc2a08d95a6a0fdce18d7f1f9d112ed6a943c58f220ec3aae5b2276d99c3",
+          "path": "/stacking/lower",
+          "reason": "Early exporter omitted the outer alias; compare the complete retained h0IncomingQuotient.lower tree here.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Remove the redundant full prefix from the spinless display-scope label; computed/unresolved status and witnesses are unchanged.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/backgroundQuotient/preQuotientLower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/backgroundQuotient/preQuotientLower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/lower/finalFiltrationCertificate/preQuotientCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/h0IncomingQuotient/lower/finalFiltrationCertificate/preQuotientCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lowerBeforeH0Incoming/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lowerBeforeH0Incoming/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/preQuotientCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/preQuotientCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 28,
+          "candidate_value_sha256": "a4118bb952d0281fac79fa28db1d05cf344a6d8b06250f4958d6d4ce43d16d45",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 56,
+          "candidate_value_sha256": "d2132be48f9fafd979a85f2954326ae2fee3d1f713907b2131a8a5e04b18e53a",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 35,
+          "candidate_value_sha256": "fb04f963fd5fa126498ebc01b6dd21341b9be0c0c22fcf9d85161cead3acf294",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9",
+          "path": "/stacking/lower/witnesses/8/certificate/orderDivides",
+          "reason": "Added universal H0 order bound 16, independently checked against the measured incoming order by the candidate auditor."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9",
+          "path": "/stacking/h0IncomingQuotient/backgroundQuotient/certificate/orderDivides",
+          "reason": "Added universal H0 order bound 16, independently checked against the measured incoming order by the candidate auditor."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9",
+          "path": "/stacking/h0IncomingQuotient/lower/witnesses/8/certificate/orderDivides",
+          "reason": "Added universal H0 order bound 16, independently checked against the measured incoming order by the candidate auditor."
+        }
+      ],
+      "space_group": 75
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 3
+        },
+        "full_group": true,
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": false
+      },
+      "baseline_mathematical_projection_sha256": "da6c7ad57590f5a76f9a8d25b94a095c69f748c6af30f00acef081cfb1d5a524",
+      "baseline_path": "runs/spinless_full_controls_v1/sg81.json",
+      "baseline_sha256": "a0cfd59f122bac229a316e72648596576dc2c43cf8bfcce8140fb67aa2331086",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 3
+        },
+        "full_group": true,
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "candidate_mathematical_projection_sha256": "da6c7ad57590f5a76f9a8d25b94a095c69f748c6af30f00acef081cfb1d5a524",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg81.json",
+      "candidate_sha256": "80adc8dd963263024e6da7eeba190a95c1a35d9881dfefa9d19ff573fb0df1f1",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 1693,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "0235298a5ccc0c52ca24343b3fed988b11602f1348721fa25edb5f4ea540e9a6",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5743315cad7e46750ece9ea15c004e0a8a66483d0498856fd2b73a7156897fab",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "0968ff942a3c374ef42144c631bca3de50895b43b6a4f5702b7dd033583325e6",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "c4b89dc695cf8853f688616ac683aeb72396a228f27994ce369c05efac188448",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "28ece152a0f074f15c515ddb815b56b00719bd64d515975e22bd997733e3807d",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "a2a95dd02fc4add4453696592c022c3aa6fd7365c80391741119ff776a9e5621",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "677ef41f9031b77b08311661de6e0d9aef686b9a309b4f6014ea6734fe323ef4",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "1f5569a35c417fa8d51f9bbc7553fbc87da929caef79b971797c3f273902ec9f",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f0a732a1bf813d1b5116f0850860e0c9587426451d7246b0affc3e8f94a48419",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "7712e2c74d5a0869846fbc6558b7e584ace0883aa6d60641b87d9b9da5ab7548",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "58b5031c54c61a16d506e850e87e588e875b6f8d6294cbf4288b1f7d6fdee0c4",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5c2fed5e000980927839375ff4ef58047afe4ed157b8f476301e43c718bc8909",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "1704abfa649ec4dfdcf0a06f0d5bb29a17760394b813ae64817931c4952c5068",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "4210c785c02fe9a95d3431d4c532fde8ed82ff52938d8553688e9aaf548896a6",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 66,
+          "baseline_value_sha256": "11ac8280dcd9ea5513358e4b0a77b9183c6e9305bb2153356162a86d109eb73c",
+          "candidate_scalar_leaves": 66,
+          "candidate_value_sha256": "f3ab3e8f85b0a75814becbbfd8c19aef9f41c59611df4d3b0f146d56a9763a7a",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Remove the redundant full prefix from the spinless display-scope label; computed/unresolved status and witnesses are unchanged.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 28,
+          "candidate_value_sha256": "a4118bb952d0281fac79fa28db1d05cf344a6d8b06250f4958d6d4ce43d16d45",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 56,
+          "candidate_value_sha256": "d2132be48f9fafd979a85f2954326ae2fee3d1f713907b2131a8a5e04b18e53a",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 35,
+          "candidate_value_sha256": "fb04f963fd5fa126498ebc01b6dd21341b9be0c0c22fcf9d85161cead3acf294",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        }
+      ],
+      "space_group": 81
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 3
+        },
+        "full_group": true,
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": false
+      },
+      "baseline_mathematical_projection_sha256": "5c11afc91a995d6b584c45c9dbe0e14ebc17eba6bb3d4b6ee7e77ded0255de80",
+      "baseline_path": "runs/spinless_full_controls_v1/sg84.json",
+      "baseline_sha256": "be766285afdfb0d2d7c4c4e88411088c318386590d1aee10960d71d8ba207a68",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": {
+          "index": 2,
+          "period": 16,
+          "physical_eight_survival_consistent": true,
+          "tested_candidates": 3
+        },
+        "full_group": true,
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "candidate_mathematical_projection_sha256": "5c11afc91a995d6b584c45c9dbe0e14ebc17eba6bb3d4b6ee7e77ded0255de80",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg84.json",
+      "candidate_sha256": "4665d8be57a0f1982c202805257dcb419f04c9d2425bdb431b8b44a68acf927a",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 3643,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "2ea59d4922ab4ca3d1572258793678d7c3718657576faeb796c8f9933eb38017",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "bc12aeb3da6b169faa3d894b3174cc9f2defa7cbd4ba685c508c98954b190e0f",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "0fdd549c95174487d3217dff6e26b843d042a50780e233baea829c0e6a656273",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "a8142fd3ead8bf3487bfadba8ac5c34f3dae36e57a3fd13cb5abf7a658ccd60c",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f230d0f2e9a83291d8b1025b0e9897e492657da985ca04e9ba863b9bc5159663",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "7400afe3a7a5cabac98f3d88afaebb4c5204247e406fe20b6f1c66f4ac610997",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "27f9aab8f2f1ea1875077e96d5b52610109eb1b84b016f101b61473f496d9a35",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "ef1f9345c99e3ee012779cb94f099e55634c36c6e5d1b480db954259a90f3a0c",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "570a31803e4859b9fe9ceb6a735f78aac32156ff19749583a2370f52a4d38b36",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "f60cdd946afd3eeef126b80faddf1f1ca9013af8fcdfebd9477f238a14bc6c93",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92b300be883c9bf2f0f1290159ea564b95701ead507687d213272a4c576814bf",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "ce7e8cd17c7e9e49f9e2598eab4f04a4ef07095f92c0029901a48b44ae7a4fab",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "37b74602f6dd9850d035efd9323862cf571e78070110e928a98c6f05dcd6363f",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "f8e86504a851b53a339958d6b00d2fc48e4c6f606ed870948ae3bd3f7a97042b",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 70,
+          "baseline_value_sha256": "1f8beaf7ff06315815c8d327a53b51f54483e8b3fd4bf1ec3facd4f49bbfa595",
+          "candidate_scalar_leaves": 70,
+          "candidate_value_sha256": "46d07e064b89fb907c108c00c2b9ce4b096613d7f84e414f35ac5b0ebf470870",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Remove the redundant full prefix from the spinless display-scope label; computed/unresolved status and witnesses are unchanged.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 60,
+          "candidate_value_sha256": "835a5dacaf80d82ed541befdeaa369798be7bec7564fd0f1d59201a0758e5597",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 240,
+          "candidate_value_sha256": "17e4aa0642ec86c38b15ea60e4bf5de758d0fc59439617b5a692d66c564fab39",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 84,
+          "candidate_value_sha256": "9c36bf9d301b355221c7c5dcadd3d2a2750960e1db47ed1bffefb65b66266729",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        }
+      ],
+      "space_group": 84
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": null,
+        "full_group": true,
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": false
+      },
+      "baseline_mathematical_projection_sha256": "5a75188a102b4eb8b7f8fa33074947a8e405569d504dfdee7563abedb11db13c",
+      "baseline_path": "runs/spinless_full_controls_v1/sg103.json",
+      "baseline_sha256": "6d2a587b80d88b096e2868f87c60cc9b82ca56a19a2082fb3130cbcd11e046af",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "nonzero",
+        "free_lattice": null,
+        "full_group": true,
+        "kind": "nonzero-background-complete-lower-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": false
+      },
+      "candidate_mathematical_projection_sha256": "5a75188a102b4eb8b7f8fa33074947a8e405569d504dfdee7563abedb11db13c",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg103.json",
+      "candidate_sha256": "861698b17de206de4332f0aff92022c2b02cf29e25375b70284f9ad15e7652a2",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 4933,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "2f4779221b6a36616430e0d5fa9377896f48d2d9bce90a07c93ea5867d24e98a",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "6e205936b98f6c7720be4ac2d7b77d776012604e7db5afd7d95159dc88de906c",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "b57b23a972121c8497cd6d51cb14bfac25fe3d29d6c674da2e15bc49eab9fe8c",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5f1af5468fa82c0ae6e81d8844a552f917fa65af679f40dbe75e5596ae18b0a4",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "a1530f9e611306fe63f3dec9751038f89eab17e6716d5a1ecd10894c224627f2",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "c8e3260aa8bf48bb53e121e1bf3c9a42108bc63120fa966153d3f43014ff9964",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "9d089e1fb04f343fe611a419ce6f9bdef46734ab60de28661ec6d959ba177b12",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "ac5176dda8038a7d1c50fd622fa2252acf2dc0a76746a8ee98df4930ad371c21",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "aca91d3a51f8019da1b93afcc34ef6fa30ec37d3cbcbe733ec4ee2ee471a73ba",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "6adc4132c0f8c777c80a7f3c374a0f747b5229335e0b6cf225496543aa91b148",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "e60179a59bd963171425116741b4b9c029102430c12eef91845a36a34cfc29d8",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "916e0192428684bb5be973a52ed1577ae2cab1bc7e6ff56fc16d29897753e9a3",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 48,
+          "baseline_value_sha256": "fd4d2fec4ab67b3e74002b47fc19f485cb4e08d429625c411b16e36bf49b11ff",
+          "candidate_scalar_leaves": 48,
+          "candidate_value_sha256": "e536f9e4ff7e18bee4edaa399a18a6211bfca12bfc31a4ad80432a761a6f65ed",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Remove the redundant full prefix from the spinless display-scope label; computed/unresolved status and witnesses are unchanged.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 108,
+          "candidate_value_sha256": "4d4c4c39936b963576c841d6992f62c4974cc4cee8b6f5eb06164cac2004bf7f",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 666,
+          "candidate_value_sha256": "08aaab83ffe15fc6204672318dc77bdf14f8aba49e61b50ab77e7a1539a9125d",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 90,
+          "candidate_value_sha256": "6e7daa88dd3983f5e2f0244a4179e50fb1df766bbdea0c31e9b14476bc528463",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        }
+      ],
+      "space_group": 103
+    },
+    {
+      "baseline_audit": {
+        "background_gauge": "zero",
+        "free_lattice": {
+          "index": 1,
+          "period": 2,
+          "scope": "existing complete omega-zero lattice certificate"
+        },
+        "full_group": true,
+        "kind": "gauge-zero-complete-marked-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [
+          "legacy export lacks independent native background matrix replay"
+        ],
+        "unitary": true
+      },
+      "baseline_mathematical_projection_sha256": "1f9d3850afb7dadc65205b8621cf6f10d6711faa1b490a0b6316be59539ef539",
+      "baseline_path": "runs/spinless_full_controls_v1/sg146.json",
+      "baseline_sha256": "1de8f731765ef99b7a853db0bbcc975526af228747352e1db769a43e371aef95",
+      "baseline_source_id": "d7fc1e78c2be0df0afac330e96598323d5a6f33162886e07a13cd39b4d140a5d",
+      "candidate_audit": {
+        "background_gauge": "zero",
+        "free_lattice": {
+          "index": 1,
+          "period": 2,
+          "scope": "existing complete omega-zero lattice certificate"
+        },
+        "full_group": true,
+        "kind": "gauge-zero-complete-marked-stacking",
+        "marked_witnesses": true,
+        "missing_evidence": [],
+        "unitary": true
+      },
+      "candidate_mathematical_projection_sha256": "1f9d3850afb7dadc65205b8621cf6f10d6711faa1b490a0b6316be59539ef539",
+      "candidate_path": "runs/spinless_cup0_controls_v2/sg146.json",
+      "candidate_sha256": "165bd96c909d7c7869b0bb5a3c241d7aee61a4de2e31d5cd871861f6435254c3",
+      "candidate_source_id": "b55431d35d6bf5f0a01355d0c49b380d167cd405005a545b3624ad59d129bc9e",
+      "compared_scalar_leaves": 625,
+      "differences": [],
+      "excluded_runtime_metadata": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "727f1cf0f2254148b6439b2424eff7f05c6864a3ddc709d299d1aa9cf486b4da",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "1558a81d9988936e652db0ccfe3bb828f64e00545b2cc8ca82d136b10c0c1eb0",
+          "path": "/cpu_ms",
+          "reason": "GAP classification CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+          "path": "/free_pip_cpu_ms",
+          "reason": "GAP free-lattice CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "e03e6eb8b19fbb80990c370aeff225d904cd5a44b16969755ce542f8efcceb4c",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "8f887f7627075befebc6aeabe8407f545e67ced5a38f3f068cee8f3a7df1d2c7",
+          "path": "/total_cpu_ms",
+          "reason": "total GAP CPU time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "d75d63e7d9387031b5d34c32fd033fcad92ae7c5b1cde8d39b0228407c8bd1bf",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "c5da72437b33df64279c12e8dd8e3280dc6c3b9ce3c78bd9d728f687bc1473ab",
+          "path": "/wall_seconds",
+          "reason": "per-run elapsed time"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "8c6d22440e0eb63267891dcc50fdc3bcbd360c25f5de4e5622b38763dfb31342",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "21fe148150176b41466b185dfa514a675f4cae35f8075e4d880fd47b5a49c8f9",
+          "path": "/started",
+          "reason": "execution start timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f0a2e707609be8a28b6e37cff2dace970cd9987f5385735f3b7a3c9c56c24d5d",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "9f5db94f8c24180538db2e6925a7b3c254946b305245dc0cfee3469beedca340",
+          "path": "/finished",
+          "reason": "execution completion timestamp"
+        },
+        {
+          "baseline_scalar_leaves": 5,
+          "baseline_value_sha256": "67adc9d2c951135c5427e17c9bb9f02231c2ba069f87e0e43e63fb19a7855105",
+          "candidate_scalar_leaves": 5,
+          "candidate_value_sha256": "cbe3f4d65f8ec8dc5a777147d33ab3574d3e9e10afe8440f636ca0d8a7ea18d9",
+          "path": "/resolution_timings",
+          "reason": "resolution construction timing breakdown"
+        },
+        {
+          "baseline_scalar_leaves": 30,
+          "baseline_value_sha256": "f1bd4445c003cf5564fd0ebda7d6ebb8114780b5f89137eb6ee1c36ea28d88fc",
+          "candidate_scalar_leaves": 30,
+          "candidate_value_sha256": "a57e081c7892da6028ed3985e129dd68680c2eee0f0b4da707cbde8a14b9b731",
+          "path": "/stage_timings",
+          "reason": "execution-stage CPU timestamps"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "f404002a538ff28579a3e97fbbfea03a998e5bf7ac05eccfe8f753ba7f575776",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fda23c9fee1234f2df81e331ed4016ae7de0d5d4cba25f374a2a71d9e5164d31",
+          "path": "/source_id",
+          "reason": "distinct immutable implementation snapshot, preserved in provenance"
+        },
+        {
+          "baseline_scalar_leaves": 37,
+          "baseline_value_sha256": "abdce11a52ca920f8a006284502101046e45341059386874083d99ea48171059",
+          "candidate_scalar_leaves": 38,
+          "candidate_value_sha256": "f0786aad76f435192962d1579ca8fa4acfec2fd51fc96c58275b30db0d0e6077",
+          "path": "/source_sha256",
+          "reason": "implementation-file checksums, preserved in original input and provenance"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "92586f22b9536d86434ea1bb6282c219aa035e8379485d6ef57f4061842ad60f",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "2aa69b8f5f860ae1d0d30c9bcee99e3754c59f9c639d86c0adcdc61feebe6b9a",
+          "path": "/source_snapshot",
+          "reason": "filesystem location of the immutable implementation snapshot"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+          "path": "/background_projected_native_cup",
+          "reason": "implementation dispatch flag for the cup-zero optimization; not a physical background input"
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "candidate_scalar_leaves": 1,
+          "candidate_value_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "path": "/generic_pip_compiled_calls",
+          "reason": "zero-background general evaluator invocation count"
+        }
+      ],
+      "explicit_export_normalizations": [
+        {
+          "path": "/stacking/physicalConvention",
+          "reason": "Fill redundant stacking label from the already audited physical root convention.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/scope",
+          "reason": "Early shared exporter left a stale spin-half display label; the root physical convention is spinless in both runs.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/convention",
+          "reason": "Correct the stale shared-exporter filtration label; all filtered group data are retained.",
+          "side": "baseline"
+        },
+        {
+          "path": "/stacking/lower/finalFiltrationCertificate/beforeH0Incoming",
+          "reason": "Explicit annotation inferred from the containing pre-quotient or final presentation, without changing either presentation.",
+          "side": "baseline"
+        }
+      ],
+      "literal_mathematical_tree_equal": true,
+      "separately_audited_added_evidence": [
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 28,
+          "candidate_value_sha256": "d27d70c784b4a99eebfd73479f15dffd725cb94d72f6ecfac940ccab6fb812be",
+          "path": "/crystalline_background/nativeDifferential1F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 56,
+          "candidate_value_sha256": "45fa5af067c30630dc75898fcaf5a4efe40820eebf0e4f95a644169c6e2e58d7",
+          "path": "/crystalline_background/nativeDifferential2F2",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        },
+        {
+          "baseline_scalar_leaves": 1,
+          "baseline_value_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_scalar_leaves": 7,
+          "candidate_value_sha256": "2da12174c1e8bba790ee1da0da28810f961105e3ff915e65234d087a7e41f5b3",
+          "path": "/crystalline_background/nativeH2Generators",
+          "reason": "New independently audited native background matrix certificate. No earlier matrix exists for literal comparison; all original omega/H2 coordinates and gauge vectors remain compared."
+        }
+      ],
+      "space_group": 146
+    }
+  ],
+  "schema": "fspt-background-literal-mathematical-comparison-v1",
+  "scope": "Recursive equality of every mathematical field, list element and native witness retained in both exports. Excluded runtime metadata, exact schema aliases and new certificates absent in early exports are enumerated per group. This is not merely an invariant-factor comparison.",
+  "unexpected_candidate_groups": []
+}

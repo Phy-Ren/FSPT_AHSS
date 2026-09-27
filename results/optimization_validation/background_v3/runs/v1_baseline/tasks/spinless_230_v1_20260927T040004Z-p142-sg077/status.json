@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_group.py",
+    "77",
+    "--mode",
+    "full",
+    "--crystalline-spin",
+    "spinless",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T040004Z/source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T040004Z/sg77.json"
+  ],
+  "created": 1790481754.80523,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 118.78816628456116,
+  "estimated_seconds": 59.835,
+  "exit_code": 0,
+  "finished": 1790481993.862933,
+  "hostname": "n01.local",
+  "id": "spinless_230_v1_20260927T040004Z-p142-sg077",
+  "pbs_job": "115921.head.local",
+  "pid": 13444,
+  "queue": "spinless_dev_20260927T033520Z",
+  "space_group": 77,
+  "started": 1790481875.0745373,
+  "status": "done",
+  "timeout_s": 27000
+}

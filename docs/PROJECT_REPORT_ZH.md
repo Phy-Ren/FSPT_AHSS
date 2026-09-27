@@ -1,10 +1,48 @@
 # FSPT_AHSS 项目交付报告
 
+## 两种物理自旋约定的完整结果
+
+现在两种约定的 **230+230 个 classification 与抽象 stacking 群**均已确定。两套输入都是完整无限仿射空间群，包含平移、弱相与原子费米子宇称；区别在于晶体等价后有效内部 extension：
+
+| 物理约定 | 有效内部背景 | 结果与证据 |
+|---|---|---|
+| crystalline spin-1/2 = internal spinless | `s=w1, omega=0` | 230 个完整群及标记生成元关系，冻结 v09 |
+| crystalline spinless = internal spin-1/2 | `s=w1, omega=w2+w1²` | 230 个抽象群，214 个完整标记关系；16 个群保留未知上层 carry，冻结 v3 |
+
+第二种约定的实际耗时为 **3小时47分35秒**，累计 GAP CPU 为 **41.240 小时**，最大单任务 RSS 为 **21.574 GiB**。完整基线与优化版各自算完230群，两者保存的数学字段、生成元、phase/gauge 与 native witnesses 逐项一致。冻结后的新优化只改变求值方式，未查阅答案表或按群拼接不同版本。运行共享五个 PBS worker，每个上限28个单线程 GAP；elapsed 包含排队和其他验证任务的资源竞争。
+
+与新背景的完整 v1 基线相比，v3 整轮 elapsed 减少375.391秒（2.676%），累计 GAP CPU 减少6080.807秒（3.935%），最大单任务 RSS 从22.949降至21.574 GiB。SG219仍决定整轮尾部时间；局部 cup₀/O5 kernel 的加速比例不能当作整轮加速比例。原值与整数毫秒聚合见[性能对照](../results/optimization_validation/background_v3/comparisons/performance_v1_vs_v3.json)。
+
+非零背景的最终 classification 必须商掉 H0 p+ip incoming 元素在完整低层 stacking 群中的像。当前程序的 classification 检查点位于这一集成运算之后，即使该群没有 H0 输入也沿用同一导出位置。因此第二种约定的检查点耗时不能称为独立的“仅 classification 用时”，也不能与第一种约定的13分3秒直接比较。每群始终由一个进程依次计算，stacking 使用同一个对象里的 cocycle、primitive 和 gauge。
+
+结果入口：
+
+- [两种约定的460行总表及逐群差异](../results/optimization_validation/background_v3/physical_conventions/README.md)。不同约定的差异是不同物理问题的结果，不能当作代码误差。
+- [crystalline spinless 230群 PDF](../results/space_groups_spinless/report/space_groups.pdf)、[机器可读结果及所有证书](../results/space_groups_spinless)、[性能图](../results/space_groups_spinless/performance.pdf)。
+- [新背景公式 PDF](../notes/crystalline_spinless_formulas.pdf)、[H0 quotient 构造](BACKGROUND_QUOTIENT.md)、[数值优化与完整回归](../results/optimization_validation/background_v3/README.md)。
+- 两种约定的 p+ip [spin-half 诊断](PIP_DIFFERENTIAL_DIAGNOSTICS.md)与 [spinless 诊断](PIP_DIFFERENTIAL_DIAGNOSTICS_SPINLESS.md)，含实际候选、群号、JSON 路径与输入哈希。
+
+上层公式的边界需要保留：第二种约定的 SG **6、8、28、30、31、32、34、40、41、43、156、157、160、174、188、190** 尚无完整 p+ip→CF/bosonic marked carry。程序保留全部允许的 Ext family，证明每个允许 carry 都给同一个抽象群，因此表中的同构型已确定；没有把未知量设为零，也没有声称已经构造实际完整上层 phase。仅有非零 Majorana square 不足以作此结论，完整 family 的唯一 Smith 型才是证据。marked stacking 回放接口会拒绝这16个群。
+
+自由 p+ip 存活格是自由阿贝尔群，其与有限低层群的抽象 extension 分裂，所以无须上述有限幂关系来决定抽象自由直和项。两套结果各有44群保留实际自由格基与完整生成元塔；新约定的格指数分布为21群指数1、22群指数2、1群指数8。这不声称任意二元 cochain twister 都为零。
+
+对于 d3/d4，必须区分 H1 outgoing 与 H0 incoming。两套保存的 H1 候选都没有最终被 d3/d4 杀掉；某些初始 d3 或 raw d4 非零，但可用合法低层调整消去。例如第一套 SG84、第二套 SG83 都有 raw d4 非零、投影后为零的实际记录。第二套 H0 incoming 在52群有非零 d2，其中22群有非零 d3；最终 incoming d4 均零。详细群号与源/目标过滤意义见诊断文档。
+
+新约定没有已提供的外部230行完整答案表。我们独立完成后核对了基线与优化配置的两次完整运行，并检查230群的奇数初级部分在两种自旋约定下一致；另对九个定向无挠几何例子验证新背景在完整 affine 群上可平凡化，然后才复用原几何对照。这些是明确范围的交叉验证，不冒称与老板/Weicheng 的第二套230群答案全数对上。
+
+源码 ID：`73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252`。正式归档清单 SHA-256：`1c2148ca95fd5245ec5a490665f784229a629e2c8745b6838c17262ba7e3aa72`。原始结果、源文件与任务记录均逐字节保留，另从可携带归档独立重算 performance 并核对全部载荷哈希。
+
+下文保留第一种约定 v09 的完整交付记录，其中数值与生成元结论均对应 crystalline spin-1/2。
+
+## 第一种约定 v09 的交付记录
+
+以下数值与生成元结论对应 **crystalline spin-1/2 / internal spinless**。
+
 **全部230个空间群的 classification 和完整 stacking 已完成，正式接受 v09。** 同一冻结版本整轮运行中，classification 在 **13分3秒**完成，全部 stacking 在 **3小时31分39秒**完成。正式结果位于 [results/space_groups](../results/space_groups)，[230群总表](../results/space_groups/report/space_groups.pdf)、[性能图](../results/space_groups/performance.pdf)及全部生成元关系均已生成。
 
 全230份结果通过完整 witness、精确 Smith 关系、AW-v2 公式约定和源码一致性审查；与未启用这两项可选优化的通用 v07 数学基线逐项比较，所有保存的数学字段完全一致。44个具有非零自由 p+ip 层的群都导出实际存活格基及完整生成元塔，32个存活的 torsion p+ip 情形都保存完整上层 witness。独立四层分类与老板提供的新表逐项比较，920项全部一致。
 
-## 计算对象与独立实现
+### 计算对象与独立实现
 
 本轮计算采用三维空间、物理自旋半整数超导费米子、无额外 onsite 对称性、晶体等价后的有效 `omega=0`，符号作用取空间群行列式。计算使用完整的无限仿射空间群，包含平移；保留弱相和原子费米子宇称层。
 
@@ -26,7 +64,7 @@
 
 输出同时保留四个 associated-graded 层和最终 stacking 群。四层的直和通常不是最终答案；最终群由实际生成元关系及整数 Smith 分解得到。回放接口支持这些已标记生成元的整数线性组合，并按照保存的关系计算叠加。
 
-## 公式、实际生成元与正确性检查
+### 公式、实际生成元与正确性检查
 
 完整公式与坐标约定整理在[7页公式说明](../notes/independent_space_group_formulas.pdf)，对应 [LaTeX 源文件](../notes/independent_space_group_formulas.tex)。[FORMULAS.md](FORMULAS.md) 给出代码接口，[VALIDATION.md](VALIDATION.md) 区分公式输入、独立验证和适用范围。
 
@@ -45,7 +83,7 @@ CF lift 同样保留了所需的 cochain 修正。完整 bar 路径使用原来�
 - 已记录的定向 controls 检查了 comparison maps 所需 simplices 上的 lift 与 relation gauge 方程。全230群都完成 classification、44群都构造了自由层 witness，**不等于全230群都另做过完整 support audit**。
 - calibrated product 的闭项仍是数学输入；有限的局部测试不构成新的完整 coherence 或物理唯一性定理。原 normalized manuscript 的相对、有限群假设没有被数值检查自动扩展。
 
-## 与现有结果的对比
+### 与现有结果的对比
 
 独立230群分类先冻结并保存哈希，然后才读取外部答案。老板的新 `space_group_230_layers.pdf` 与本轮物理约定一致；其230群、每群四层，共 **920项全部匹配**。最终接受结果与原独立冻结、最终结果与 PDF、原冻结与 PDF 三组比较均为920/920。该 PDF 没有给出完整 stacking extension，因此920项一致不能表述为230个完整 stacking 群全部经过外部核对。逐项结果见 [最终分类比较报告](../results/boss_layers/current_reference_comparison.md)；[首次比较记录](../results/boss_layers/reference_comparison.md)保持原样。
 
@@ -75,7 +113,7 @@ SG68、101 的区别落在 Majorana 生成元的平方：新计算经过实际 i
 
 提供的 Weicheng checkout 中包含有限群 benchmarks 和通用 cochain 公式，**没有可用于全230无限仿射群 stacking 对比的答案表**。这只描述已提供且已检查的材料，不推断未发布结果。与当前三维、`omega=0` 范围一致的有限 C2 结果共有四个标签，实际对应两个不同输入；两项独立全流程计算均给出平凡群，与参考一致。这些小规模 controls 和公式对比，不能替代不存在的230群完整答案对照。参考文件清单、比较约定和结果见 [COMPARISON_WEICHENG.md](COMPARISON_WEICHENG.md)。
 
-## 实测性能与最终配置
+### 实测性能与最终配置
 
 以下数值全部来自正式接受的同一轮 `full_closed_cf_v09`，没有按群挑选不同版本的较快结果：
 
@@ -97,13 +135,13 @@ SG219 的实际生成元构造是整轮耗时的主要原因；其余229群在�
 
 原四小时上限到来前，三个健康的 SG219 任务获得了明确延期，总预算各为7.5小时，仍受原 PBS 分配约束。冻结数值代码和 GAP 进程保持原样，原始任务状态没有改写。最终接受的 v09 实际在原四小时内完成，原 worker 记录为 `done`、退出码0；完成的监管记录、GNU time 和源码证据仍全部保存并经过严格审查。这个7.5小时预算不是实测耗时，整轮 elapsed time 始终由原 campaign observer 记录。详见[调度与延期证据](SCHEDULING_EXTENSIONS.md)。
 
-最终源码 ID 为 `9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96`；本地及远端当前 `gap/*.g` 与 [正式冻结源码](../results/space_groups/source/gap)逐文件一致。启用 closed-CF lazy evaluation 和 exact half-phase transfer，关闭可选的 mod-two bar comparison map；classification 内的 native mod-two contraction 保持启用。这一选择保留后续 Majorana lift 可复用的 integral cache。优化适用条件与 controls 见 [CLOSED_CF_OPTIMIZATION.md](CLOSED_CF_OPTIMIZATION.md)。
+最终源码 ID 为 `9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96`；精确版本保存在 [正式冻结源码](../results/space_groups/source/gap)，复现时指定其 `--source`。当前工作源码另已增加非零物理背景支持。启用 closed-CF lazy evaluation 和 exact half-phase transfer，关闭可选的 mod-two bar comparison map；classification 内的 native mod-two contraction 保持启用。这一选择保留后续 Majorana lift 可复用的 integral cache。优化适用条件与 controls 见 [CLOSED_CF_OPTIMIZATION.md](CLOSED_CF_OPTIMIZATION.md)。
 
 同时启用 mod-two bar comparison 的 v08 也完成了全部230群，所有保存的数学字段与 v09 完全一致。它的完整 elapsed time 为14751.680秒（4小时5分52秒），累计 GAP CPU 为70171.795秒，最大单任务 RSS 为20.063 GiB。在此次共享 worker 的实际部署中，v09 总耗时少2052.352秒（约34分12秒），内存峰值也较低，因此接受 v09。两轮完整证据和选择依据见 [optimization_validation](../results/optimization_validation/README.md)。
 
 通用 v07 的 SG219 原任务曾因90分钟预算超时，随后由同一源码重跑补齐。完整通用数学基线及来源保存在 [optimization_validation](../results/optimization_validation)；这个229+1集合只用于数学比较，不充作不间断整轮 benchmark。它与最终 v09 的230组结果在生成元、phase、gauge、关系矩阵、自由格与 Smith 数据上全部逐项一致；比较仅排除了明确列出的执行时间和来源字段。原始超时与历史记录均保留。
 
-## 复现、结果与叠加入口
+### 复现、结果与叠加入口
 
 在已分配的计算节点中，从远端工作目录运行一个群：
 
@@ -119,7 +157,7 @@ python3 scripts/stack_result.py results/space_groups/sg81.json \
 
 `stack_result.py` 对保存的 marked presentation 做叠加与约化。生成元标签依赖该结果的坐标基，不宜在不同 source 之间直接对应。若要重现指定冻结版本，为 `run_group.py` 指定其 `--source` 路径，以 campaign manifest 中记录的路径为准。
 
-本地 Git 仓库已经建立并保存提交历史，没有发布 GitHub 远端。完整 campaign 使用 `scripts/submit_campaign.py` 冻结源文件并向有效 PBS workers 排队；跨群并行和每个任务的日志、状态、时限都被保留。新的五节点申请、两级持久 SSH 复用、重跑、监控及资源释放见 [CLUSTER_RUN.md](CLUSTER_RUN.md)。默认 `--timeout 27000` 是单个群的调度预算，不是7.5小时实测耗时；实际提交须给排队与清理留出 PBS 时间。
+本地 Git 仓库保留完整工作历史，GitHub 通过另一个公开 checkout 同步已审查的代码与独立结果。完整 campaign 使用 `scripts/submit_campaign.py` 冻结源文件并向有效 PBS workers 排队；跨群并行和每个任务的日志、状态、时限都被保留。新的五节点申请、两级持久 SSH 复用、重跑、监控及资源释放见 [CLUSTER_RUN.md](CLUSTER_RUN.md)。默认 `--timeout 27000` 是单个群的调度预算，不是7.5小时实测耗时；实际提交须给排队与清理留出 PBS 时间。
 
 正式归档可以直接重新审查和生成表格，无需再运行 GAP：
 
@@ -136,4 +174,4 @@ python3 scripts/render_table.py results/space_groups \
 
 每群 JSON 保存四层群、最终 stacking presentation、Smith 数据、生成元 witness 与来源；[CSV](../results/space_groups/report/independent_results.csv)、[Markdown](../results/space_groups/report/independent_results.md)和6页 PDF 均来自同一正式归档。归档共有1198个原始及清单文件，总计15929682字节（另生成的报告不计入该数字）；清单 SHA-256 为 `60bc072c330c838a10e6a1f663eb6664e1d09e010b5081141dacf609aff33831`。所有归档载荷经本地与远端哈希核对，公式 PDF 和总表经过排版检查。完整字段解释见 [RESULTS_REPORT.md](RESULTS_REPORT.md)。
 
-两轮候选、所有验证任务和监管进程均已结束，五个 PBS allocation 已全部释放。各队列的 `STOP`、空任务队列和调度器核对记录保存在 [final_release.json](../results/performance_environment/final_release.json)，历史任务状态保持原样。
+本报告 v09 对应的两轮候选、验证任务和监管进程均已结束，当时五个 PBS allocation 已全部释放。各队列的 `STOP`、空任务队列和调度器核对记录保存在 [final_release.json](../results/performance_environment/final_release.json)，历史任务状态保持原样。

@@ -1,0 +1,222 @@
+{
+  "artifacts": {
+    "runs/finite_c2_nonzero_v1/finite_c2_nonzero_background.json": "3588d624a02bd79c8ef4181d2afd975fc6bece06f4008a3c6d07acc9ce0997c8",
+    "runs/finite_c2_nonzero_v1/task/status.json": "f406187d1fd44e17f4136bf96b0233b7001caaa76364e6523f7be729bf242332",
+    "runs/finite_c2_nonzero_v1/task/stdout.log": "f729d1431dd4645534d06a0679464ebf61215305fc03d193a76c07ed18c25e88"
+  },
+  "elapsed_s": 19.058088064193726,
+  "host": "n01.local",
+  "pbs_job": "115921.head.local",
+  "provided_mirror_reference": {
+    "file": "reference/legacy_stacking_context/tables_point_groups.tex",
+    "graded_layers": [
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [
+        2
+      ]
+    ],
+    "invariants": [
+      16
+    ],
+    "line": 57,
+    "paper_derivation_reproduced": false,
+    "role": "separately stated reference normalization, not used in runtime finite calculation"
+  },
+  "provided_normalization_sources": {
+    "reference/legacy_stacking_context/05b_pip.tex": "bb3407f81035c996f20ca67446c2080b49637b3b814ba50a413e55d968bbc629",
+    "reference/legacy_stacking_context/06_examples.tex": "2b467558b10d03fec50695e0d893712fd6d31ff5c72bcff735442bca4c12a498",
+    "reference/legacy_stacking_context/tables_point_groups.tex": "aa77b072e37db2acdd2344e495823f9dee490820bd04923578f5f5c052c9b5bc"
+  },
+  "results": [
+    {
+      "incoming_coordinates": [
+        1
+      ],
+      "incoming_order": 2,
+      "invariants": [],
+      "layers": {
+        "bosonic": [],
+        "fermion": [],
+        "majorana": [],
+        "pip": []
+      },
+      "lower_comparison_support_audited": true,
+      "lower_invariants": [],
+      "lower_presentation": [
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "pre_h0_layers": {
+        "bosonic": [],
+        "complex_fermion": [],
+        "majorana": [
+          2
+        ]
+      },
+      "sign": 0
+    },
+    {
+      "full_upper_phase_witness": false,
+      "invariants": [
+        16
+      ],
+      "layers": {
+        "bosonic": [
+          2
+        ],
+        "fermion": [
+          2
+        ],
+        "majorana": [
+          2
+        ],
+        "pip": [
+          2
+        ]
+      },
+      "lower_comparison_support_audited": true,
+      "lower_invariants": [
+        8
+      ],
+      "lower_presentation": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          -1,
+          2,
+          0
+        ],
+        [
+          0,
+          -1,
+          2
+        ]
+      ],
+      "sign": 1,
+      "upper_extension": {
+        "ambiguousGeneratorIndices": [
+          1,
+          2
+        ],
+        "enumeratedExtensionClasses": 0,
+        "heightResults": [
+          {
+            "height": 3,
+            "invariants": [
+              16
+            ]
+          }
+        ],
+        "inputRelationModuloAmbiguity": [
+          0,
+          0,
+          1
+        ],
+        "invariantOptions": [
+          [
+            16
+          ]
+        ],
+        "invariants": [
+          16
+        ],
+        "method": "abelian-Ext1-height-stratification",
+        "modTwoAmbiguityRows": [
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        "modTwoCyclicColumns": [
+          3
+        ],
+        "modTwoRelation": [
+          1
+        ],
+        "modTwoWeights": [
+          3
+        ],
+        "possibleHeights": [
+          3
+        ],
+        "status": "computed"
+      },
+      "upper_leading_majorana": [
+        1
+      ]
+    }
+  ],
+  "scope": {
+    "actual_lower_CA_lifts_and_relations": true,
+    "antiunitary_actual_upper_phase_witness": false,
+    "antiunitary_upper_method": "entire Ext fiber with fixed Majorana square",
+    "expected_answers_runtime_input": false,
+    "finite_group": "C2",
+    "independent_physical_derivation_of_first_product": false,
+    "legacy_label_note": "The frozen finite context did not set crystallineSpin; its inner filtration convention label is inherited legacy metadata. Both records explicitly use nonzero omega and the record outer scope identifies finite C2. No archived bytes have been rewritten.",
+    "omega": "nontrivial square of binary character",
+    "spatial_dimension": 3,
+    "unitary_H0_incoming_cyclic_quotient": true
+  },
+  "source_sha256": {
+    "gap/backend.g": "3df26e9746d9a929cb53e10bbb22ccb18f0f61e1d6e84f4e7afc002245bd06bd",
+    "gap/backend_bar.g": "f17525ab9d456ccceb9c0a4e22d1651ac510b97201f86445467a453b912bc60b",
+    "gap/backend_bar_mod2.g": "4f54447c16b28c6b7dd3b12e91d1a81797136bb47a32627be7aa6f0cef0beaae",
+    "gap/backend_cup_cycle.g": "a7d052c891f9320a3389584daa3d5e521a2be75d223a2ef1e55b48f3a0275a91",
+    "gap/backend_cup_slant.g": "48d6709aea5d180e7ff63ce015d6879974a1b05a8ebd7a1a28d17763cfa91432",
+    "gap/backend_diagonal.g": "11e04411cb2afe51fa98f2ac205f8e9c2c1e69f9bfa4e686767e3511dfa29afc",
+    "gap/backend_half_phase.g": "9c11621b02ce4a7bacbf57332e4500d7a37f5e9ac65792ce81f63ab06675225c",
+    "gap/backend_hash_cache.g": "30958c3bb86a23cb25d5a11ef0dbb888126f8c5da3325c2d0d50b47f9ade10fe",
+    "gap/backend_mod2_contraction.g": "0562ebbdc4cfceddc9ff10d3caedef1f1ce4d6de529097bbd385874f1b7fd854",
+    "gap/backend_resolution.g": "5453332bb4da63383f706423b767d636c9e9277b8660200ab190f2912552192b",
+    "gap/backend_smith_transfer.g": "134ae9ef6454d5f942a2b8bb34d9359fd3ee662e5804dfde1b15dd75284bf1dd",
+    "gap/backend_smith_units.g": "20530c5f9c607e0be46bced4b3d3c80a06cef19e1970412c51db16687a625500",
+    "gap/background_free.g": "864c35c502ac1c867a4cb0b45ca2e0ae3ca402a18a4c453a429a0f0cad2db21c",
+    "gap/background_operations.g": "b64232bbe424828d6c11052ba07416f8dc7172bb4dd1eef92d64e7e8665ec075",
+    "gap/background_quotient.g": "158bd0c23ffdb26c61bb03d30bf1e2d18c61fbe8ce6a3fd9e285faff81a6e734",
+    "gap/background_stacking.g": "dbdc50a7ed6c336c8d83ee6306a277bf100e57fb580f6706e548b6fb51a77774",
+    "gap/class_coordinates.g": "681d6ab197b249c9312d9fb46762cfef801441379488c250e8b10e3f64973165",
+    "gap/classification.g": "d636cfd9225aae75a18698685b3695a5bcb5d48200bba1902afb7546af8d7cd9",
+    "gap/crystalline_background.g": "4d625d2a7c58316da14ed015d3da26bc280b2dbcdf43516706da0c5a8dd26b4a",
+    "gap/formula_data.g": "4fd1ade218090c962fcdb89bf2255c351da5b9308ca98e54a5b3e896c6b8e28e",
+    "gap/formula_fast.g": "a70a23b8ff01862471b3e8cbf12fa08e7171a8ffc35b5070e8085b5bfb60d43f",
+    "gap/formulas.g": "4034008b6f1eee427759920632f882dedf55a8b3b9ceadb485236aab4c76f189",
+    "gap/pip.g": "72b09bbb0eac4bf9e6b8854b4b6b732088c564d82a2096483f4a1ff18f9b6ab8",
+    "gap/pip_c4_data.g": "77bbf5267277f33efee025666e7fd22b1136a5f483151fceb5abd833b151f18c",
+    "gap/pip_coordinate_data.g": "daa9eb25fd7acb7a2e7d0fa286e6e1dece1ea913fe6e2d8e0783727c64433f87",
+    "gap/pip_coordinates.g": "817af838199cc6ea422c73de3497525f67f0170ad68c202c0f70ee5fb561a445",
+    "gap/pip_diagonal_data.g": "b1b79d31169e01f92fd51cb0497a425ca5f98b805f3bc645b7d1edc82be648f5",
+    "gap/pip_free.g": "c3274802db7baad9e39c38659e793ff822f3315a967e5fa20287e30e2dc61ffa",
+    "gap/pip_incoming_background.g": "132dd565bf86eda6451d221a5280653c6de0b41a5be2c24f6ed20df434a538e4",
+    "gap/pip_o5_background.g": "b9a153a5bf2ba7c6be402dcecd1e49a667910fefeced667b04c11c5b4cffc82d",
+    "gap/pip_o5_general.g": "9a27dda678c9ffc0da986e62b47ca71cc8ce6cd305c6d2c5e989debb4c3c3f38",
+    "gap/pip_o5_program.g": "ba324e52fd1fbe99196dec47b9e35bcd95138a32e9ab8f3c71f101d1bcccf03f",
+    "gap/pip_o5_sign.g": "097c4e799b0f485b3def3dbd1006930d32819c96feb8c36741a69c48923a239b",
+    "gap/pip_stacking.g": "ca64fc2abd496134db9abd16b090295a8ea1c360b5626f1f6707da38c9ae34ab",
+    "gap/run_one.g": "0b725ca65df180d93e27753a34a3dce22ac00c2967a2b31d930af75fc8543ff5",
+    "gap/stacking.g": "50a8fdb6fb9d1011c5ef8546cafadd3da2ae7be106e2323de0c589cae35eb650",
+    "gap/stacking_closed_cf.g": "99948d62e0f2fa8e90cf725d43439f9470352508f6c137d54fa5f80b0b8b71fe",
+    "scripts/run_gap.py": "a61af5ac3a5654a3171646bf806905ca5887d132d4622f81c7ebe2cfc6c044ca",
+    "tests/compute_finite_c2_nonzero_background.g": "5637059ebfa3946582d8e1bf94b794e93b68a2b4404b2ef3cb192f583c52856e"
+  },
+  "source_snapshot": "runs/finite_c2_nonzero_v1_source",
+  "status": "passed",
+  "task_id": "20260927T115935-finite-c2-nonzero-v1-95d8eeb9"
+}

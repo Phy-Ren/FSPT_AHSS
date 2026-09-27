@@ -1,0 +1,159 @@
+{
+  "comparison_test_count": 7,
+  "comparison_tests_passed": true,
+  "comparisons": [
+    {
+      "compared_scalar_leaves": 58174,
+      "groups": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        16,
+        19,
+        75,
+        81,
+        84,
+        103,
+        146
+      ],
+      "literal_equal": true,
+      "path": "docs/validation_runs/background_literal_regressions/spinless_cup0_vs_controls_certified.json",
+      "pending_candidates": [
+        219
+      ],
+      "sha256": "4da006bfd614a22ea034489079943f5087f619cedaca8cffa5fbbd1d446475fd"
+    },
+    {
+      "compared_scalar_leaves": 61053,
+      "groups": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        16,
+        19,
+        75,
+        81,
+        84,
+        103,
+        146
+      ],
+      "literal_equal": true,
+      "path": "docs/validation_runs/background_literal_regressions/spinless_cup0_vs_production_certified.json",
+      "pending_candidates": [
+        219
+      ],
+      "sha256": "11e136a861c1204433ac1ac9d1bc8496a4bcc8f8d41db1614f3e89ac8eb9c140"
+    },
+    {
+      "compared_scalar_leaves": 16109,
+      "groups": [
+        3,
+        6,
+        84
+      ],
+      "literal_equal": true,
+      "path": "docs/validation_runs/background_literal_regressions/spinless_v3_vs_production_second.json",
+      "pending_candidates": [
+        86,
+        87,
+        88,
+        219
+      ],
+      "sha256": "0bfb8dd69ef38d8fb0847fb4dc03c93c371135a7639068ada94569550e8bc406"
+    },
+    {
+      "compared_scalar_leaves": 9411,
+      "groups": [
+        1,
+        2,
+        6,
+        19,
+        81,
+        103,
+        146
+      ],
+      "literal_equal": true,
+      "path": "docs/validation_runs/background_literal_regressions/half_v3_vs_accepted_complete.json",
+      "pending_candidates": [],
+      "sha256": "fab2c558aa102725303900b3d0b238b94d8739c9f7a197cc37349934dad7a5d4"
+    },
+    {
+      "all_expected_groups_compared_and_equal": false,
+      "compared_scalar_leaves": 19701,
+      "groups": [
+        3,
+        6,
+        84,
+        87
+      ],
+      "literal_equal": true,
+      "path": "docs/validation_runs/background_literal_regressions/spinless_v3_vs_production_4groups.json",
+      "pending_candidates": [
+        86,
+        88,
+        219
+      ],
+      "sha256": "5213f28060544fcc887a4a404d825b24a5f376b210c7bb9cfdeec0ce25e8499d"
+    }
+  ],
+  "mathematical_input_files_modified": false,
+  "prior_v1_strict_audits": [
+    {
+      "errors": [],
+      "kinds": {
+        "abstract-upper-family-single-group": 16,
+        "gauge-zero-complete-marked-stacking": 26,
+        "nonzero-background-complete-lower-stacking": 175
+      },
+      "passed": 217,
+      "path": "runs/background_audit_production_followup2.json",
+      "pending_groups": [
+        73,
+        133,
+        142,
+        201,
+        203,
+        206,
+        208,
+        210,
+        218,
+        219,
+        220,
+        228,
+        230
+      ],
+      "sha256": "35cfd230eaaeca92e49f65c453928e7c3bc96c47e6e07e89f18cb362802afc29"
+    }
+  ],
+  "recorded_at_utc": "2026-09-27T04:48:27.634192+00:00",
+  "reference_answers_read": false,
+  "schema": "fspt-background-literal-regression-controls-v1",
+  "scope": "All existing mathematical fields and native witnesses are recursively equal. Added evidence absent from an older exporter is listed separately and is not claimed literally equal to absent fields. Pilot completeness is reported separately from comparison success.",
+  "v1_strict_audit": {
+    "errors": [],
+    "kinds": {
+      "abstract-upper-family-single-group": 16,
+      "gauge-zero-complete-marked-stacking": 26,
+      "nonzero-background-complete-lower-stacking": 178
+    },
+    "passed": 220,
+    "path": "runs/background_audit_production_220.json",
+    "pending_groups": [
+      73,
+      133,
+      142,
+      201,
+      203,
+      206,
+      210,
+      219,
+      228,
+      230
+    ],
+    "sha256": "b0e3ad85103e0793d61908126f1f3b33c5fc6f015648c04d3c3ac0fb55545740"
+  }
+}

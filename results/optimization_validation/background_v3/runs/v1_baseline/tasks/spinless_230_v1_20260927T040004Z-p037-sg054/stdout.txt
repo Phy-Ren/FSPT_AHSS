@@ -1,0 +1,68 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+AFS_NATIVE_CONTRACTION_MODE mod2=true
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_230_v1_20260927T040004Z/source/gap/formulas.g:110
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_230_v1_20260927T040004Z/source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_230_v1_20260927T040004Z/source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_230_v1_20260927T040004Z/source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_230_v1_20260927T040004Z/source/gap/classification.g:251
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_BUILD affine_start sg=54 cpu_ms=19021
+AFS_BUILD affine_done sg=54 cpu_ms=19833
+AFS_BUILD holonomy_start cpu_ms=19833
+AFS_BUILD RP_start order=8 cpu_ms=19952
+AFS_BUILD RL_start cpu_ms=20829
+AFS_BUILD section_start cpu_ms=21069
+AFS_BUILD extension_start cpu_ms=21082
+AFS_BUILD extension_done timings=rec(
+  RL_ms := 240,
+  RP_ms := 877,
+  extension_ms := 6362,
+  holonomy_ms := 119,
+  section_ms := 13 )
+AFS_STAGE 54 cohomology cpu_ms=27741
+AFS_STAGE 54 primary_cf cpu_ms=29174
+AFS_STAGE 54 primary_mc_and_bos cpu_ms=40557
+AFS_STAGE 54 incoming_mc cpu_ms=40621
+AFS_STAGE 54 secondary_bos cpu_ms=41117
+AFS_STAGE 54 secondary_mc cpu_ms=41122
+AFS_STAGE 54 pip cpu_ms=62744
+AFS_STAGE 54 classification_end cpu_ms=62857
+AFS_STAGE 54 stack_lift_D1 cpu_ms=62868
+AFS_STAGE 54 stack_lift_C1 cpu_ms=62869
+AFS_STAGE 54 stack_lift_C2 cpu_ms=81833
+AFS_STAGE 54 stack_lift_C3 cpu_ms=92763
+AFS_STAGE 54 stack_lift_C4 cpu_ms=102888
+AFS_STAGE 54 stack_lift_B1 cpu_ms=113695
+AFS_STAGE 54 stack_lift_B2 cpu_ms=166405
+AFS_STAGE 54 stack_lift_B3 cpu_ms=206828
+AFS_STAGE 54 stack_relation_D1 cpu_ms=273844
+AFS_STAGE 54 stack_relation_C1 cpu_ms=273844
+AFS_STAGE 54 stack_relation_C2 cpu_ms=281556
+AFS_STAGE 54 stack_relation_C3 cpu_ms=289879
+AFS_STAGE 54 stack_relation_C4 cpu_ms=297471
+AFS_STAGE 54 stack_relation_B1 cpu_ms=305052
+AFS_STAGE 54 stack_relation_B2 cpu_ms=313288
+AFS_STAGE 54 stack_relation_B3 cpu_ms=321521
+AFS_RESULT_WRITTEN 54 computed
+AFS_GROUP_SAVED 54 computed /home/user/xyren/AllFSPT/runs/spinless_230_v1_20260927T040004Z/sg54.json

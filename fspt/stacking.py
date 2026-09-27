@@ -262,6 +262,8 @@ class PresentedStackingGroup:
         self._triangular = (len(rows) == width and all(len(row) == width for row in rows) and all(
             row[i] > 0 and all(x == 0 for x in row[i+1:])
             for i, row in enumerate(rows)))
+        self.marked_reduction = "ordered-filtration" if self._triangular else "smith-representative"
+        self._inverse_transform = None
         for row in rows:
             if len(row) != width or any(type(x) is not int for x in row):
                 raise InvalidCertificate("nonintegral or incorrectly sized relation")
@@ -295,9 +297,43 @@ class PresentedStackingGroup:
                      for x, y, order in zip(a, b, self.invariants))
 
     def stack_marked(self, left, right) -> dict[str, int]:
-        """Return the ordered marked normal form, applying every lower carry."""
+        """Return a marked representative using the certified presentation.
+
+        Triangular presentations retain the ordered filtration normal form.
+        An incoming quotient may add redundant rows; there we lift the unique
+        Smith normal form through the inverse unimodular column transform.
+        This is a representative in the saved basis, not a new cochain product.
+        """
         if not self._triangular:
-            raise InvalidCertificate("ordered marked reduction requires triangular filtration relations")
+            from fractions import Fraction
+            if self._inverse_transform is None:
+                n = len(self._transform)
+                augmented = [[Fraction(x) for x in row] +
+                             [Fraction(i == j) for j in range(n)]
+                             for i, row in enumerate(self._transform)]
+                for col in range(n):
+                    pivot = next((i for i in range(col, n) if augmented[i][col]), None)
+                    if pivot is None:
+                        raise InvalidCertificate("singular Smith column transform")
+                    augmented[col], augmented[pivot] = augmented[pivot], augmented[col]
+                    divisor = augmented[col][col]
+                    augmented[col] = [x/divisor for x in augmented[col]]
+                    for i in range(n):
+                        if i != col and augmented[i][col]:
+                            factor = augmented[i][col]
+                            augmented[i] = [x-factor*y for x, y in zip(augmented[i], augmented[col])]
+                inverse = [row[n:] for row in augmented]
+                if any(x.denominator != 1 for row in inverse for x in row):
+                    raise InvalidCertificate("non-unimodular Smith column transform")
+                self._inverse_transform = tuple(tuple(int(x) for x in row) for row in inverse)
+            canonical = self.stack(left, right)
+            smith = [0] * len(self._transform)
+            for index, value in zip(self._active, canonical[self.free_rank:]):
+                smith[index] = value
+            marked = tuple(sum(x*self._inverse_transform[i][j] for i, x in enumerate(smith))
+                           for j in range(len(smith)))
+            values = canonical[:self.free_rank] + marked
+            return {name: value for name, value in zip(self.generator_names, values) if value}
         a, b = self._coefficient_vector(left), self._coefficient_vector(right)
         values = [x+y for x, y in zip(a, b)]
         for i in range(len(self._presentation)-1, -1, -1):

@@ -1,0 +1,64 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+AFS_NATIVE_CONTRACTION_MODE mod2=true
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_cup0_controls_v2/source/gap/formulas.g:110
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_cup0_controls_v2/source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_cup0_controls_v2/source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_cup0_controls_v2/source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_cup0_controls_v2/source/gap/classification.g:253
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_BUILD affine_start sg=1 cpu_ms=17607
+AFS_BUILD affine_done sg=1 cpu_ms=17617
+AFS_BUILD holonomy_start cpu_ms=17618
+AFS_BUILD RP_start order=1 cpu_ms=17706
+AFS_STAGE 1 cohomology cpu_ms=18118
+AFS_STAGE 1 primary_cf cpu_ms=18122
+AFS_STAGE 1 primary_mc_and_bos cpu_ms=18122
+AFS_STAGE 1 incoming_mc cpu_ms=18122
+AFS_STAGE 1 secondary_bos cpu_ms=18166
+AFS_STAGE 1 secondary_mc cpu_ms=18166
+AFS_STAGE 1 pip cpu_ms=18167
+AFS_STAGE 1 classification_end cpu_ms=18172
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_cup0_controls_v2/source/gap/pip_free.g:163
+    universal:=AFSInfiniteDihedralEvenLift(AFSInfiniteDihedralContext());
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_cup0_controls_v2/source/gap/pip_free.g:163
+    universal:=AFSInfiniteDihedralEvenLift(AFSInfiniteDihedralContext());
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/spinl\
+ess_cup0_controls_v2/source/gap/pip_free.g:184
+    result:=AFSBackgroundFreePipLifts(C);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+AFS_STAGE 1 free_pip_classification_end cpu_ms=18184
+AFS_STAGE 1 stack_lift_C1 cpu_ms=18650
+AFS_STAGE 1 stack_lift_B1 cpu_ms=18653
+AFS_STAGE 1 stack_lift_B2 cpu_ms=18656
+AFS_STAGE 1 stack_lift_B3 cpu_ms=18660
+AFS_STAGE 1 stack_relation_C1 cpu_ms=18721
+AFS_STAGE 1 stack_relation_B1 cpu_ms=18724
+AFS_STAGE 1 stack_relation_B2 cpu_ms=18730
+AFS_STAGE 1 stack_relation_B3 cpu_ms=18743
+AFS_RESULT_WRITTEN 1 computed
+AFS_GROUP_SAVED 1 computed /home/user/xyren/AllFSPT/runs/spinless_cup0_controls_v2/sg1.json

@@ -22,6 +22,8 @@ class PublicationTests(unittest.TestCase):
                      'results/external_comparison/comparison.json', 'new_private/data.json']:
             self.assertFalse(pub.allowed(path), path)
         for path in ['gap/stacking.g', 'results/space_groups/sg219.json',
+                     'results/space_groups_spinless/sg219.json',
+                     'results/pip_diagnostics/crystalline_spinless.json',
                      'results/classification_frozen/manifest.json',
                      'results/external_comparison/inputs/finite_c2_controls.json']:
             self.assertTrue(pub.allowed(path), path)

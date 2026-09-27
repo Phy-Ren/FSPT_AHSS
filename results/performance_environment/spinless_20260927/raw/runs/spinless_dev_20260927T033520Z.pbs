@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -N FSPT-spinless
+#PBS -S /bin/bash
+#PBS -q bigmem
+#PBS -l nodes=1:ppn=28:bigmem
+#PBS -l walltime=12:00:00
+#PBS -j oe
+#PBS -v AFS_QUEUE=spinless_dev_20260927T033520Z,AFS_WORKERS=28
+#PBS -o /home/user/xyren/AllFSPT/runs/spinless_dev_20260927T033520Z.pbs.log
+set -eu
+export LC_ALL=C
+cd /home/user/xyren/AllFSPT
+exec /home/apps/anaconda3/bin/python3 scripts/worker.py --root "$PWD" --queue "${AFS_QUEUE:-campaign_queue}" --workers "${AFS_WORKERS:-24}"

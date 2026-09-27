@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_group.py",
+    "103",
+    "--mode",
+    "full",
+    "--crystalline-spin",
+    "half",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/spinless_specialized_controls_v3/source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/half_background_regression_v3/sg103.json"
+  ],
+  "created": 1790483923.5685995,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 282.48602199554443,
+  "estimated_seconds": 274.083,
+  "exit_code": 0,
+  "finished": 1790484242.621284,
+  "hostname": "n01.local",
+  "id": "half_background_regression_v3-p000-sg103",
+  "pbs_job": "115921.head.local",
+  "pid": 13824,
+  "queue": "spinless_dev_20260927T033520Z",
+  "space_group": 103,
+  "started": 1790483960.1350608,
+  "status": "done",
+  "timeout_s": 3600
+}

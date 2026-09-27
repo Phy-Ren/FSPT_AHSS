@@ -49,6 +49,7 @@ def main():
     ap.add_argument('--queues', nargs='+', required=True)
     ap.add_argument('--groups', default='1-230')
     ap.add_argument('--mode', choices=['classification', 'full'], default='full')
+    ap.add_argument('--crystalline-spin', choices=['half', 'spinless'], default='half')
     ap.add_argument('--timeout', type=int, default=27000,
                     help='Per-group wall-clock budget in seconds, including slow stacking tails; must fit within the allocation (default: 27000)')
     ap.add_argument('--timings', type=Path, help='Prior independent result directory')
@@ -112,7 +113,7 @@ def main():
         ident = '%s-p%03d-sg%03d' % (run.name, priority, sg)
         task = dict(id=ident, queue=queue, space_group=sg, estimated_seconds=cost[sg],
                     command=['/home/apps/anaconda3/bin/python3', 'scripts/run_group.py', str(sg),
-                             '--mode', args.mode, '--source', str(source),
+                             '--mode', args.mode, '--crystalline-spin', args.crystalline_spin, '--source', str(source),
                              '--output', str(run/('sg%d.json'%sg))],
                     cwd=str(root), timeout_s=args.timeout, created=now)
         tasks.append(task)
@@ -120,7 +121,7 @@ def main():
     if conflicts:
         ap.error('task IDs already used; choose a different run basename: ' +
                  ', '.join(str(path) for path in conflicts))
-    manifest = dict(mode=args.mode, groups=selected, source_snapshot=str(source),
+    manifest = dict(mode=args.mode, crystalline_spin=args.crystalline_spin, groups=selected, source_snapshot=str(source),
                     source_id=source_id, source_sha256=hashes, tasks=tasks,
                     prepared_only=args.prepare_only,
                     scheduling='longest prior runtime first; least predicted slot finish',

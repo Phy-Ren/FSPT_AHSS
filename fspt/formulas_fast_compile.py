@@ -1,6 +1,6 @@
 """Compile the independently transcribed formulas to straight-line GAP code.
 
-Only omega=0 is specialized. Every face restriction, signed interval cut,
+Both general backgrounds and omega=0 specializations are emitted. Every face restriction, signed interval cut,
 canonical lift and exact quotient remains in the compiled arithmetic.
 """
 from functools import lru_cache
@@ -47,8 +47,8 @@ def main():
     counts={}
     for name in ('obstruction','stacking','majorana_source','majorana_product','pip_majorana','pip_parity'):
         for p in (1,2):
-            zerosets=[('w',),('w','s')]
-            if name=='obstruction':zerosets += [('w','a'),('w','a','s')]
+            zerosets=[(),('s',),('w',),('w','s')]
+            if name=='obstruction':zerosets += [('a',),('a','s'),('w','a'),('w','a','s')]
             for zeros in zerosets:
                 expression=formula(name,p);B,result,active=compile_expression(expression,zeros)
                 ids={old:i+1 for i,old in enumerate(active)}
