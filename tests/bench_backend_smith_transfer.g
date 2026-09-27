@@ -1,0 +1,21 @@
+if not IsBound(AFS_ROOT) then AFS_ROOT:="/home/user/xyren/AllFSPT";fi;
+Read(Concatenation(AFS_ROOT,"/gap/backend.g"));;
+Read(Concatenation(AFS_ROOT,"/gap/backend_mod2_contraction.g"));;
+Read(Concatenation(AFS_ROOT,"/gap/backend_bar_mod2.g"));;
+Read(Concatenation(AFS_ROOT,"/gap/backend_smith_transfer.g"));;
+Read(Concatenation(AFS_ROOT,"/gap/formula_data.g"));;
+Read(Concatenation(AFS_ROOT,"/gap/formulas.g"));;
+Read(Concatenation(AFS_ROOT,"/gap/stacking_closed_cf.g"));;
+if not IsBound(AFS_SG) then AFS_SG:=219;fi;
+c:=AFSBackend(AFS_SG);;H:=AFSCohomology(c,3,"F2");;
+if not IsBound(AFS_BASIS_INDEX) then AFS_BASIS_INDEX:=1;fi;
+v:=H.generators[AFS_BASIS_INDEX];;cb:=AFSBarMod2(c,3,v);;
+ob:=AFSClosedCFObstructionDirect(cb);;
+c.smithTransferProgress:=function(k,i,n,terms,ms)
+  if i mod 10=0 or i=n then Print("SMITH_TRANSFER_PROGRESS sg=",AFS_SG," column=",i,"/",n," bar_terms=",terms," cpu_ms=",ms,"\n");fi;
+end;;
+t:=Runtime();;nv:=AFSNativeU1Smith(c,5,ob);;
+Print("SMITH_CF_NATIVE sg=",AFS_SG," index=",AFS_BASIS_INDEX," cpu_ms=",Runtime()-t," vector=",nv,"\n");
+if ForAny(nv,x->not IsInt(2*x)) then Error("CF phase native vector is not half-integral");fi;
+Print("SMITH_CF_TWICE_VECTOR ",List(nv,x->2*x),"\n");
+Print("AFS_SMITH_CF_NEW_ONLY_COMPLETE sg=",AFS_SG,"\n");QUIT_GAP(0);

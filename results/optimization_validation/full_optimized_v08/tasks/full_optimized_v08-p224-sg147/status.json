@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_group.py",
+    "147",
+    "--mode",
+    "full",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/optimized_v08_source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/full_optimized_v08/sg147.json"
+  ],
+  "created": 1790442610.032394,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 25.200412034988403,
+  "estimated_seconds": 23.888,
+  "exit_code": 0,
+  "finished": 1790442858.7849603,
+  "hostname": "n04.local",
+  "id": "full_optimized_v08-p224-sg147",
+  "pbs_job": "115918.head.local",
+  "pid": 33630,
+  "queue": "campaign4_queue",
+  "space_group": 147,
+  "started": 1790442833.5843716,
+  "status": "done",
+  "timeout_s": 14400
+}

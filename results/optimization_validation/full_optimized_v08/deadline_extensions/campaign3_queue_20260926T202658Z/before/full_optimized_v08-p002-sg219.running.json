@@ -1,0 +1,20 @@
+{
+  "id": "full_optimized_v08-p002-sg219",
+  "queue": "campaign3_queue",
+  "space_group": 219,
+  "estimated_seconds": 2303.627,
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_group.py",
+    "219",
+    "--mode",
+    "full",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/optimized_v08_source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/full_optimized_v08/sg219.json"
+  ],
+  "cwd": "/home/user/xyren/AllFSPT",
+  "timeout_s": 14400,
+  "created": 1790442610.032394
+}

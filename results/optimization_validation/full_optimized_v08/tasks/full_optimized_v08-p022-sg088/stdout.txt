@@ -1,0 +1,68 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+AFS_NATIVE_CONTRACTION_MODE mod2=true
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/formulas.g:101
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:246
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_BUILD affine_start sg=88 cpu_ms=17877
+AFS_BUILD affine_done sg=88 cpu_ms=18407
+AFS_BUILD holonomy_start cpu_ms=18407
+AFS_BUILD RP_start order=8 cpu_ms=18507
+AFS_BUILD RL_start cpu_ms=18622
+AFS_BUILD section_start cpu_ms=18865
+AFS_BUILD extension_start cpu_ms=18878
+AFS_BUILD extension_done timings=rec(
+  RL_ms := 243,
+  RP_ms := 115,
+  extension_ms := 5893,
+  holonomy_ms := 100,
+  section_ms := 13 )
+AFS_STAGE 88 cohomology cpu_ms=24779
+AFS_STAGE 88 primary_cf cpu_ms=25050
+AFS_STAGE 88 primary_mc_and_bos cpu_ms=25050
+AFS_STAGE 88 incoming_mc cpu_ms=33077
+AFS_STAGE 88 secondary_bos cpu_ms=33309
+AFS_STAGE 88 secondary_mc cpu_ms=47399
+AFS_STAGE 88 pip cpu_ms=47399
+AFS_STAGE 88 classification_end cpu_ms=47497
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/pip_free.g:162
+    universal:=AFSInfiniteDihedralEvenLift(AFSInfiniteDihedralContext());
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/pip_free.g:162
+    universal:=AFSInfiniteDihedralEvenLift(AFSInfiniteDihedralContext());
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AFS_STAGE 88 free_pip_parity_candidates cpu_ms=47506
+AFS_STAGE 88 free_pip_parity_1 cpu_ms=47506
+AFS_STAGE 88 pip_d3 cpu_ms=47677
+AFS_STAGE 88 free_pip_surviving_phase_lift cpu_ms=57504
+AFS_STAGE 88 free_pip_classification_end cpu_ms=549403
+AFS_STAGE 88 stack_native_CF1 cpu_ms=549875
+AFS_STAGE 88 stack_native_CF2 cpu_ms=565118
+AFS_STAGE 88 stack_native_CF3 cpu_ms=565122
+AFS_RESULT_WRITTEN 88 computed
+AFS_GROUP_SAVED 88 computed /home/user/xyren/AllFSPT/runs/full_optimized_v08/sg88.json

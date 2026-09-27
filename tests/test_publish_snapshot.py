@@ -1,0 +1,71 @@
+"""Publication policy controls; no GitHub or numerical computation."""
+import importlib.util
+import json
+from pathlib import Path
+import subprocess
+import tempfile
+import unittest
+from unittest import mock
+
+ROOT = Path(__file__).resolve().parents[1]
+spec = importlib.util.spec_from_file_location('publish_snapshot', ROOT/'scripts/publish_snapshot.py')
+pub = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(pub)
+
+
+class PublicationTests(unittest.TestCase):
+    def test_reference_exclusions_and_numerical_inclusions(self):
+        for path in ['reference/code.py', 'vendor/private.zip', 'runs/result.json',
+                     'results/external_comparison/inputs/legacy_sg068.txt',
+                     'results/external_comparison/inputs/space_group_230_layers.pdf',
+                     'results/boss_layers/parsed_reference.json', 'results/boss_layers/current_reference_comparison.csv',
+                     'results/external_comparison/comparison.json', 'new_private/data.json']:
+            self.assertFalse(pub.allowed(path), path)
+        for path in ['gap/stacking.g', 'results/space_groups/sg219.json',
+                     'results/classification_frozen/manifest.json',
+                     'results/external_comparison/inputs/finite_c2_controls.json']:
+            self.assertTrue(pub.allowed(path), path)
+
+    def test_history_and_uncommitted_source_not_copied(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            subprocess.run(['git', 'init', '-q', str(root)], check=True)
+            subprocess.run(['git', '-C', str(root), 'config', 'user.name', 'Test'], check=True)
+            subprocess.run(['git', '-C', str(root), 'config', 'user.email', 'test@example.invalid'], check=True)
+            (root/'gap').mkdir()
+            (root/'gap/runtime.g').write_text('accepted')
+            subprocess.run(['git', '-C', str(root), 'add', '.'], check=True)
+            subprocess.run(['git', '-C', str(root), 'commit', '-qm', 'accepted'], check=True)
+            (root/'gap/runtime.g').write_text('uncommitted')
+            (root/'private.pem').write_text('not tracked')
+            _, files, _ = pub.read_commit(root, 'HEAD')
+            self.assertEqual(files, {'gap/runtime.g': b'accepted'})
+
+    def test_credential_scan_rejects_without_printing_value(self):
+        secret = b'ghp_' + b'A'*36
+        with self.assertRaises(ValueError) as failure:
+            pub.scan_credentials({'config': secret})
+        self.assertNotIn(secret.decode(), str(failure.exception))
+        self.assertIn('config', str(failure.exception))
+
+    def test_existing_output_requires_explicit_update(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaises(SystemExit):
+                pub.main(['--source', str(ROOT), '--output', directory])
+            self.assertEqual(list(Path(directory).iterdir()), [])
+
+    def test_source_output_overlap_rejected(self):
+        with self.assertRaises(SystemExit):
+            pub.main(['--source', str(ROOT), '--output', str(ROOT/'runs/public')])
+
+    def test_validate_before_output_creation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)/'public'
+            with mock.patch.object(pub, 'build', side_effect=ValueError('bad source')):
+                with self.assertRaises(ValueError):
+                    pub.main(['--source', str(ROOT), '--output', str(output)])
+            self.assertFalse(output.exists())
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "runs/hardware_20260926/probe.py",
+    "--expected-host",
+    "n05.local",
+    "--expected-job",
+    "115919.head.local",
+    "--output",
+    "runs/hardware_20260926/n05.json"
+  ],
+  "created": 1790446312.1694658,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 1.0059709548950195,
+  "exit_code": 2,
+  "finished": 1790446337.1659477,
+  "hostname": "n05.local",
+  "id": "20260927T021152-hardware-n05-2a34930a",
+  "pbs_job": "115919.head.local",
+  "pid": 13049,
+  "queue": "derivation_queue",
+  "started": 1790446336.1598089,
+  "status": "failed",
+  "timeout_s": 20
+}

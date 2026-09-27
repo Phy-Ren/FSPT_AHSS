@@ -1,0 +1,40 @@
+{
+  "acceptance": "not-determined-by-scheduling-tool",
+  "completed_at": 1790457396.7549264,
+  "guard_error": null,
+  "original_status_files_modified": false,
+  "plan_sha256": "25b68bce5e77f182eac25cdd1ac999fc0e069c68a54894e389caf8d6b5ff6f00",
+  "schema": 1,
+  "tasks": {
+    "full_optimized_v08-p002-sg219": {
+      "completion_observed_at": 1790457396.4279351,
+      "completion_observed_before_deadline": true,
+      "completion_observed_monotonic": 25277836.6839317,
+      "exit_code": null,
+      "exit_raw": null,
+      "exit_time_interval": [
+        1790457395.425243,
+        1790457396.4279351
+      ],
+      "extended_deadline": 1790469645.4432127,
+      "id": "full_optimized_v08-p002-sg219",
+      "kernel_waitstatus_available": false,
+      "last_alive_at": 1790457395.425243,
+      "last_alive_monotonic": 25277835.681239035,
+      "metrics": {
+        "bytes": 934,
+        "exit_status": 0,
+        "path": "/home/user/xyren/AllFSPT/runs/tasks/full_optimized_v08-p002-sg219/metrics.txt",
+        "sha256": "27c2e053110e1a415de395575f19d37df44702e5c8add537d982cdbc613392ab"
+      },
+      "original_deadline": 1790457045.4432127,
+      "original_worker_reaped_exit_code_required_for_acceptance": true,
+      "terminating_signal": null,
+      "termination_signal_sent": false
+    }
+  },
+  "watchdog_exit_code": 0,
+  "watchdog_finished": true,
+  "watchdog_pid": 3328,
+  "worker_resumed": true
+}

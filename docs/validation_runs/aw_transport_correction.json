@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "formula_convention": "normalized-pip-aw-edge-transport-v2",
+  "current_program_sha256": "10e607ca43e32f0d343bb54e83dab248b1c4ea379a68f3cce2c479b5f6e7dd2f",
+  "previous_program_sha256": "ddf85feac9c20373649502e777e0666ba8c4edcd5f2702d1a75fdbea92ae10e5",
+  "unchanged_oracle": "vendor/p_ip_d4_normalized_package/code/pip_d4.py::evaluate_simplex",
+  "checks": {
+    "bit_identity": 257,
+    "legal_sign_oracle": 64,
+    "torsion_rephasing": 64,
+    "exact_square_gauge": 384,
+    "old_new_error_formula": 256,
+    "unchanged_even_integer": 128
+  }
+}

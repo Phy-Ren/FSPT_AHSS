@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_group.py",
+    "76",
+    "--mode",
+    "full",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/closed_cf_v09_source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/full_closed_cf_v09/sg76.json"
+  ],
+  "created": 1790444188.6376505,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 34.27889537811279,
+  "estimated_seconds": 32.843,
+  "exit_code": 0,
+  "finished": 1790444431.3399854,
+  "hostname": "n01.local",
+  "id": "full_closed_cf_v09-p197-sg076",
+  "pbs_job": "115915.head.local",
+  "pid": 7901,
+  "queue": "queue",
+  "space_group": 76,
+  "started": 1790444397.0608928,
+  "status": "done",
+  "timeout_s": 14400
+}

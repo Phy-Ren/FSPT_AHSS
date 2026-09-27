@@ -1,0 +1,12 @@
+#!/bin/bash
+#PBS -N AllFSPT-dev
+#PBS -S /bin/bash
+#PBS -q bigmem
+#PBS -l nodes=1:ppn=28:bigmem
+#PBS -l walltime=12:00:00
+#PBS -j oe
+#PBS -o /home/user/xyren/AllFSPT/runs/worker-pbs.log
+set -eu
+export LC_ALL=C
+cd /home/user/xyren/AllFSPT
+exec /home/apps/anaconda3/bin/python3 scripts/worker.py --root "$PWD" --workers 28

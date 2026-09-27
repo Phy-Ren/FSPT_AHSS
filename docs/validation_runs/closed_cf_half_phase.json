@@ -1,0 +1,53 @@
+{
+  "status": "passed-exact-marked-lift-comparison",
+  "source_id": "91c3e193efcb02e1e748b4db7a527e51250f05ca737a8bcadc18c2eee2477ee7",
+  "task": {
+    "task": "20260927T011014-closed-cf-half-marked-sg87-458d9ae3",
+    "status": "done",
+    "exit_code": 0,
+    "elapsed_seconds": 209.97493052482605,
+    "host": "n05.local",
+    "source_id": "91c3e193efcb02e1e748b4db7a527e51250f05ca737a8bcadc18c2eee2477ee7",
+    "stdout_sha256": "ca066d8bf7fc4b6ae5da10c69a41d719b25ba11362a16e7c0610b8eeb29d579b",
+    "stdout_final_lines": [
+      "AFS_STAGE 87 secondary_bos cpu_ms=46517",
+      "AFS_STAGE 87 secondary_mc cpu_ms=51218",
+      "AFS_STAGE 87 pip cpu_ms=51218",
+      "AFS_STAGE 87 classification_end cpu_ms=51297",
+      "CLOSED_CF_SAME_MARKED_LIFT_PASS 87 C1 old_ms=53972 new_ms=19727 phase_tuples=",
+      "2690",
+      "CLOSED_CF_SAME_MARKED_LIFT_PASS 87 C2 old_ms=22231 new_ms=7177 phase_tuples=",
+      "2690"
+    ]
+  },
+  "comparison": {
+    "checks": [
+      {
+        "generatorIndex": 1,
+        "identicalCFComparisonSupport": true,
+        "identicalNativePrimitive": true,
+        "identicalObstructionComparisonSupport": true,
+        "identicalPhaseTuplesChecked": 2690,
+        "newLiftCPUms": 19727,
+        "oldLiftCPUms": 53972,
+        "phaseSupportComplete": true
+      },
+      {
+        "generatorIndex": 2,
+        "identicalCFComparisonSupport": true,
+        "identicalNativePrimitive": true,
+        "identicalObstructionComparisonSupport": true,
+        "identicalPhaseTuplesChecked": 2690,
+        "newLiftCPUms": 7177,
+        "oldLiftCPUms": 22231,
+        "phaseSupportComplete": true
+      }
+    ],
+    "classificationMod2Contraction": true,
+    "optionalFormula": "closed-H3-cup1-lazy-half-phase-transfer",
+    "source": "/home/user/xyren/AllFSPT/runs/closed_cf_half_phase/source",
+    "space_group": 87
+  },
+  "performance_caveat": "Same context evaluates old path first, then optional path. Classification uses mod2 contractions. Equality checks are decisive; elapsed comparisons are not independent-process production benchmarks.",
+  "production_scope": "Default options remain off in the live repository. Candidate-v08 enables lazy closed-CF/half-phase and mod2 bar dispatch in an immutable snapshot."
+}

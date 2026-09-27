@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_group.py",
+    "219",
+    "--mode",
+    "full",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/full_corrected_v07/source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/full_corrected_v07_retry/sg219.json"
+  ],
+  "created": 1790441847.5985765,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "hostname": "n01.local",
+  "id": "20260927T005727-corrected219-long-76951ec2",
+  "pbs_job": "115915.head.local",
+  "pid": 7296,
+  "started": 1790441883.6989114,
+  "status": "running",
+  "timeout_s": 14400
+}

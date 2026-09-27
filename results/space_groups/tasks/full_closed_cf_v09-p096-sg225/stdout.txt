@@ -1,0 +1,52 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+AFS_NATIVE_CONTRACTION_MODE mod2=true
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/formulas.g:101
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:246
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_BUILD affine_start sg=225 cpu_ms=18470
+AFS_BUILD affine_done sg=225 cpu_ms=19053
+AFS_BUILD holonomy_start cpu_ms=19054
+AFS_BUILD RP_start order=48 cpu_ms=19260
+AFS_BUILD RL_start cpu_ms=21427
+AFS_BUILD section_start cpu_ms=21679
+AFS_BUILD extension_start cpu_ms=21772
+AFS_BUILD extension_done timings=rec(
+  RL_ms := 252,
+  RP_ms := 2167,
+  extension_ms := 27278,
+  holonomy_ms := 206,
+  section_ms := 93 )
+AFS_STAGE 225 cohomology cpu_ms=49071
+AFS_STAGE 225 primary_cf cpu_ms=57910
+AFS_STAGE 225 primary_mc_and_bos cpu_ms=105377
+AFS_STAGE 225 incoming_mc cpu_ms=108201
+AFS_STAGE 225 secondary_bos cpu_ms=108971
+AFS_STAGE 225 secondary_mc cpu_ms=109001
+AFS_STAGE 225 pip cpu_ms=109002
+AFS_STAGE 225 classification_end cpu_ms=109276
+AFS_RESULT_WRITTEN 225 computed
+AFS_GROUP_SAVED 225 computed /home/user/xyren/AllFSPT/runs/full_closed_cf_v09/sg225.json

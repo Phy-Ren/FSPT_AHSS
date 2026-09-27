@@ -1,0 +1,20 @@
+{
+  "portable_input_files": 12,
+  "actual_partial_final_mode_rejected_without_output": true,
+  "portable_external_categories": {
+    "no-draft-stack-reference": 26,
+    "match": 179,
+    "mismatch-also-changed-layers": 21,
+    "mismatch-same-four-layers": 4
+  },
+  "finite_C2_matches": 4,
+  "portable_boss_frozen_matches": 920,
+  "outside_repository_cwd": true,
+  "status": "portability and provenance controls passed; final winner comparison not yet run",
+  "script_sha256": {
+    "scripts/compare_external_refs.py": "77a857573bd6711157fd370b9a1ac603b1389740f7e93b19ee498b00d64a11b8",
+    "scripts/archive_comparison_inputs.py": "71312bcc41a91a4902e46160cc2dda7674888269cd2c47504fb1bbf3b82d1faf",
+    "tests/test_external_comparison.py": "534ea9bf5793d13d2e7994ec68b802a7c3c1682e0a40b738075ff0b808c253ed",
+    "tests/test_comparison_archive.py": "e627cf67233cb292622a077067da51fef2401aff662cd4766d91c0397c7410c3"
+  }
+}

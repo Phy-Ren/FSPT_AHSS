@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "status": "all-five-allocations-released",
+  "scope": {
+    "query": "qstat -f for exact own job IDs only, through existing nested head SSH master",
+    "qstat_fields": [
+      "Job_Owner",
+      "job_state",
+      "exec_host",
+      "start_time",
+      "resources_used.cput",
+      "resources_used.walltime"
+    ],
+    "raw_environment_recorded": false,
+    "pbs_time_totals": "PBS totals cover each entire allocation, including experiments and multiple campaigns; they are not the accepted single-campaign CPU totals.",
+    "purged_history": "Unknown Job Id with qstat exit 153 means this exact previously verified job is no longer retained by PBS. It is distinguished from a C record and from a generic query failure; missing historical fields were not invented.",
+    "clock": "Query and shared-file check timestamps are recorded independently; no cross-node elapsed time is derived.",
+    "mutations": "This verification only read scheduler/queue records. Existing STOP markers and hardware manifest were unchanged."
+  },
+  "pbs_query": {
+    "queried_at": 1790457402.1006832,
+    "jobs": [
+      {
+        "job_id": "115915.head.local",
+        "query_exit_code": 153,
+        "fields": {},
+        "unknown_job": true
+      },
+      {
+        "job_id": "115916.head.local",
+        "query_exit_code": 153,
+        "fields": {},
+        "unknown_job": true
+      },
+      {
+        "job_id": "115917.head.local",
+        "query_exit_code": 0,
+        "fields": {
+          "Job_Owner": "xyren@head.local",
+          "job_state": "C",
+          "exec_host": "n03.local/0-27",
+          "start_time": "Sat Sep 26 22:31:30 2026",
+          "resources_used.cput": "28:15:53",
+          "resources_used.walltime": "06:44:33"
+        },
+        "unknown_job": false
+      },
+      {
+        "job_id": "115918.head.local",
+        "query_exit_code": 153,
+        "fields": {},
+        "unknown_job": true
+      },
+      {
+        "job_id": "115919.head.local",
+        "query_exit_code": 153,
+        "fields": {},
+        "unknown_job": true
+      }
+    ]
+  },
+  "previous_completed_queries": [
+    {
+      "job_id": "115915.head.local",
+      "query_exit_code": 0,
+      "queried_at": 1790457024.4408417,
+      "fields": {
+        "Job_Owner": "xyren@head.local",
+        "job_state": "C",
+        "exec_host": "n01.local/0-27",
+        "start_time": "Sat Sep 26 21:53:33 2026",
+        "resources_used.cput": "36:06:20",
+        "resources_used.walltime": "07:15:59"
+      },
+      "unknown_job": false
+    }
+  ],
+  "final_queue_check": {
+    "checked_at": 1790457427.7571535,
+    "queues": [
+      {
+        "queue": "queue",
+        "worker_record_sha256": "07e739adc4f227e954bdcf71ae9bd8856d7dc0f007b3f378a0383d4b4be503fb",
+        "worker": {
+          "pbs_job": "115915.head.local",
+          "hostname": "n01.local",
+          "pid": 4437,
+          "heartbeat": 1790457008.0806234,
+          "active": []
+        },
+        "STOP_exists": true,
+        "pending_tasks": 0,
+        "running_tasks": 0
+      },
+      {
+        "queue": "stacking_queue",
+        "worker_record_sha256": "bfca9d6eb6b199f473e6b8725bde3f6d81c680b71f762407d2a88edaa04c2f60",
+        "worker": {
+          "pbs_job": "115916.head.local",
+          "hostname": "n02.local",
+          "pid": 55924,
+          "heartbeat": 1790447869.2090168,
+          "active": []
+        },
+        "STOP_exists": true,
+        "pending_tasks": 0,
+        "running_tasks": 0
+      },
+      {
+        "queue": "campaign3_queue",
+        "worker_record_sha256": "521f8a27ee412bffb6dc6d1131ad4ea5e3dda2a4cf700e1b3c816dea22cc898c",
+        "worker": {
+          "pbs_job": "115917.head.local",
+          "hostname": "n03.local",
+          "pid": 55873,
+          "heartbeat": 1790457397.2743578,
+          "active": []
+        },
+        "STOP_exists": true,
+        "pending_tasks": 0,
+        "running_tasks": 0
+      },
+      {
+        "queue": "campaign4_queue",
+        "worker_record_sha256": "f531a84c7fdb4d42569e2114deb9ab7ed4162ca71d21f616295669005a6aa3c7",
+        "worker": {
+          "pbs_job": "115918.head.local",
+          "hostname": "n04.local",
+          "pid": 31663,
+          "heartbeat": 1790446868.5527883,
+          "active": []
+        },
+        "STOP_exists": true,
+        "pending_tasks": 0,
+        "running_tasks": 0
+      },
+      {
+        "queue": "derivation_queue",
+        "worker_record_sha256": "6c8851636eb3720c0e4d36900d302ca6756c7f704afe3e3d326bf764e2540454",
+        "worker": {
+          "pbs_job": "115919.head.local",
+          "hostname": "n05.local",
+          "pid": 10589,
+          "heartbeat": 1790447122.108708,
+          "active": []
+        },
+        "STOP_exists": true,
+        "pending_tasks": 0,
+        "running_tasks": 0
+      }
+    ]
+  },
+  "hardware_job_mapping": "summary.json"
+}

@@ -1,0 +1,82 @@
+{
+  "boss_archive_scope": "Only the listed recoverable files from the truncated supplied archive.",
+  "inputs": {
+    "boss/output/space_group_230/backend/FOUNDATIONS.md": {
+      "bytes": 4231,
+      "original_source_path": null,
+      "sha256": "f286ad2fd3c1eeb676f9bc49f4ae7901ba97f059fdee0115f4bdefe39c2bd081",
+      "source_path": "/tmp/AllFSPT-inspect-boss/output/space_group_230/backend/FOUNDATIONS.md"
+    },
+    "boss/output/space_group_230/backend/h1_all230.json": {
+      "bytes": 79334,
+      "original_source_path": null,
+      "sha256": "f903445ef055a91c3ec947a36d60f5f518e2ffb09a535f5be95242144fee4f20",
+      "source_path": "/tmp/AllFSPT-inspect-boss/output/space_group_230/backend/h1_all230.json"
+    },
+    "boss/output/space_group_230/backend/hap_all230_e2.json": {
+      "bytes": 77820,
+      "original_source_path": null,
+      "sha256": "bde98c61c6b352947e290f56b79e82fec2b86d91c8fa1d93697322bc8a114953",
+      "source_path": "/tmp/AllFSPT-inspect-boss/output/space_group_230/backend/hap_all230_e2.json"
+    },
+    "boss/output/space_group_230/draft_table.json": {
+      "bytes": 175610,
+      "original_source_path": null,
+      "sha256": "fcfba0ffbd4f1219721923059556efbdad59f64eb7e1f9caeec89c545d563d0f",
+      "source_path": "/tmp/AllFSPT-inspect-boss/output/space_group_230/draft_table.json"
+    },
+    "fermionAHSS/data/extension-paper-results-20260926-transfer.json": {
+      "bytes": 36131,
+      "original_source_path": null,
+      "sha256": "262f7889d44768357d9d72dccde42caf7cc56cf0d4685417036f73e2f894fcdc",
+      "source_path": "/tmp/AllFSPT-inspect-fermionAHSS/data/extension-paper-results-20260926-transfer.json"
+    },
+    "finite_c2_controls.json": {
+      "bytes": 707,
+      "original_source_path": null,
+      "sha256": "71366fce19128c4950a10f6d5c9b07a26eb87b9a1228b685b2a86813f0b293c1",
+      "source_path": "/home/xingyu/FSPT_AHSS/runs/finite_c2_controls.json"
+    },
+    "legacy_sg068.txt": {
+      "bytes": 8363,
+      "original_source_path": "/home/user/xyren/gap-debug/pkg/SptSet/space_group/results/sg068.log",
+      "sha256": "5f89daf1d01437762366d6208f27b34d52896a5fa33b9aab685a434cccd72a2f",
+      "source_path": "/home/xingyu/FSPT_AHSS/reference/legacy_stacking_context/sg068.log"
+    },
+    "legacy_sg081.txt": {
+      "bytes": 9798,
+      "original_source_path": "/home/user/xyren/gap-debug/pkg/SptSet/space_group/results/sg081.log",
+      "sha256": "8c10f6cc707b473b26b8e7018574ef88a1fb4bf8040c1f89b47f27d726bc6c2a",
+      "source_path": "/home/xingyu/FSPT_AHSS/reference/legacy_stacking_context/sg081.log"
+    },
+    "legacy_sg082.txt": {
+      "bytes": 10266,
+      "original_source_path": "/home/user/xyren/software/gap-4.13.1/pkg/SptSet/space_group/results/sg082.log",
+      "sha256": "00b40146f792ac3331cfdc637d2817aaa2aa938dcaa1bdd047e745bcba37bf2f",
+      "source_path": "/home/xingyu/FSPT_AHSS/reference/legacy_stacking_context/sg082.log"
+    },
+    "legacy_sg101.txt": {
+      "bytes": 8082,
+      "original_source_path": "/home/user/xyren/software/gap-4.13.1/pkg/SptSet/space_group/results/sg101.log",
+      "sha256": "ad815c73ff2b2d686d7edb04a1509a9cb7520b3cb0316929c3b472ebb4ec8848",
+      "source_path": "/home/xingyu/FSPT_AHSS/reference/legacy_stacking_context/sg101.log"
+    },
+    "space_group_230_layers.pdf": {
+      "bytes": 453619,
+      "original_source_path": null,
+      "sha256": "c1421f2c2d26778a9bc3417181e4ef231e596b11ca79448115a472532c4f6d3a",
+      "source_path": "/home/xingyu/FSPT_AHSS/reference/space_group_230_layers.pdf"
+    },
+    "space_group_230_layers.txt": {
+      "bytes": 67848,
+      "original_source_path": null,
+      "sha256": "f4873578aef5d7d984ed354e41ee1fa9e62d30d64d49943731b02b83e366ace3",
+      "source_path": "/home/xingyu/FSPT_AHSS/reference/space_group_230_layers.txt"
+    }
+  },
+  "legacy_log_storage": "Original .log bytes retained unchanged under .txt filenames; original paths and hashes recorded.",
+  "legacy_manifest_sha256": "fc728c32e6aa236462aa19b323b9e546e204feab9b58bfa8f02dd0f7ac35c082",
+  "reference_checkout_commit": "c2961a2d6ee9465a7b634a31b6c095e607972966",
+  "schema": "fspt-small-comparison-input-archive-v1",
+  "scope": "Reference inputs and independent finite controls only; no production solver code or acceptance claim."
+}

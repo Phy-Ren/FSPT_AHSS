@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -N FSPT_AHSS
+#PBS -S /bin/bash
+#PBS -q bigmem
+#PBS -l nodes=1:ppn=28:bigmem
+#PBS -l walltime=12:00:00
+#PBS -j oe
+set -eu
+export LC_ALL=C
+cd /home/user/xyren/AllFSPT
+exec /home/apps/anaconda3/bin/python3 scripts/worker.py --root "$PWD" --queue "${AFS_QUEUE:-campaign_queue}" --workers "${AFS_WORKERS:-24}"

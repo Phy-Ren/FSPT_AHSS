@@ -1,0 +1,58 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+AFS_NATIVE_CONTRACTION_MODE mod2=true
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/formulas.g:101
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:246
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_BUILD affine_start sg=42 cpu_ms=17832
+AFS_BUILD affine_done sg=42 cpu_ms=18604
+AFS_BUILD holonomy_start cpu_ms=18605
+AFS_BUILD RP_start order=4 cpu_ms=18674
+AFS_BUILD RL_start cpu_ms=18727
+AFS_BUILD section_start cpu_ms=18956
+AFS_BUILD extension_start cpu_ms=18962
+AFS_BUILD extension_done timings=rec(
+  RL_ms := 229,
+  RP_ms := 53,
+  extension_ms := 1934,
+  holonomy_ms := 69,
+  section_ms := 6 )
+AFS_STAGE 42 cohomology cpu_ms=20900
+AFS_STAGE 42 primary_cf cpu_ms=21112
+AFS_STAGE 42 primary_mc_and_bos cpu_ms=25079
+AFS_STAGE 42 incoming_mc cpu_ms=25629
+AFS_STAGE 42 secondary_bos cpu_ms=25805
+AFS_STAGE 42 secondary_mc cpu_ms=28262
+AFS_STAGE 42 pip cpu_ms=43885
+AFS_STAGE 42 classification_end cpu_ms=43932
+AFS_STAGE 42 stack_lift_D1 cpu_ms=44404
+AFS_STAGE 42 stack_lift_D2 cpu_ms=44405
+AFS_STAGE 42 stack_lift_B1 cpu_ms=44413
+AFS_STAGE 42 stack_relation_D1 cpu_ms=81067
+AFS_STAGE 42 stack_relation_D2 cpu_ms=81068
+AFS_STAGE 42 stack_relation_B1 cpu_ms=81068
+AFS_RESULT_WRITTEN 42 computed
+AFS_GROUP_SAVED 42 computed /home/user/xyren/AllFSPT/runs/full_optimized_v08/sg42.json

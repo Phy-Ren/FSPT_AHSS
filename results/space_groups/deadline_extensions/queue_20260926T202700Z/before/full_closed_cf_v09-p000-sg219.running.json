@@ -1,0 +1,20 @@
+{
+  "id": "full_closed_cf_v09-p000-sg219",
+  "queue": "queue",
+  "space_group": 219,
+  "estimated_seconds": 3900.69,
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "scripts/run_group.py",
+    "219",
+    "--mode",
+    "full",
+    "--source",
+    "/home/user/xyren/AllFSPT/runs/closed_cf_v09_source",
+    "--output",
+    "/home/user/xyren/AllFSPT/runs/full_closed_cf_v09/sg219.json"
+  ],
+  "cwd": "/home/user/xyren/AllFSPT",
+  "timeout_s": 14400,
+  "created": 1790444188.6376505
+}

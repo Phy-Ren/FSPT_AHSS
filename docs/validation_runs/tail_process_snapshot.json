@@ -1,0 +1,324 @@
+{
+  "probes": [
+    {
+      "observations": [
+        {
+          "host": "n01.local",
+          "last_stage": "AFS_STAGE 219 stack_lift_B1 cpu_ms=3553774",
+          "observed": 1790448277.7429276,
+          "pbs_job": "115915.head.local",
+          "processes": [
+            {
+              "argv": [
+                "/usr/bin/time",
+                "-v",
+                "-o",
+                "/home/user/xyren/AllFSPT/runs/tasks/20260927T005727-corrected219-long-76951ec2/metrics.txt",
+                "/home/apps/anaconda3/bin/python3",
+                "scripts/run_group.py",
+                "219",
+                "--mode",
+                "full",
+                "--source",
+                "/home/user/xyren/AllFSPT/runs/full_corrected_v07/source",
+                "--output",
+                "/home/user/xyren/AllFSPT/runs/full_corrected_v07_retry/sg219.json"
+              ],
+              "comm": "time",
+              "cpu_seconds": 0.0,
+              "pid": 7296,
+              "ppid": 4437,
+              "process_elapsed_seconds": 6393.929999999702,
+              "rss_mib": 0.42578125,
+              "state": "S"
+            },
+            {
+              "argv": [
+                "/home/apps/anaconda3/bin/python3",
+                "scripts/run_group.py",
+                "219",
+                "--mode",
+                "full",
+                "--source",
+                "/home/user/xyren/AllFSPT/runs/full_corrected_v07/source",
+                "--output",
+                "/home/user/xyren/AllFSPT/runs/full_corrected_v07_retry/sg219.json"
+              ],
+              "comm": "python3",
+              "cpu_seconds": 0.05,
+              "pid": 7297,
+              "ppid": 7296,
+              "process_elapsed_seconds": 6393.919999998063,
+              "rss_mib": 9.3515625,
+              "state": "S"
+            },
+            {
+              "argv": [
+                "/home/apps/anaconda3/bin/python3",
+                "/home/user/xyren/AllFSPT/scripts/run_gap.py",
+                "--sentinel",
+                "AFS_RESULT_WRITTEN",
+                "/home/user/xyren/AllFSPT/runs/full_corrected_v07_retry/sg219.g"
+              ],
+              "comm": "python3",
+              "cpu_seconds": 0.03,
+              "pid": 7298,
+              "ppid": 7297,
+              "process_elapsed_seconds": 6393.829999998212,
+              "rss_mib": 8.0625,
+              "state": "S"
+            },
+            {
+              "argv": [
+                "/home/user/xyren/software/gap-4.13.1/gap",
+                "-q",
+                "-r",
+                "-b",
+                "-T",
+                "/home/user/xyren/AllFSPT/runs/full_corrected_v07_retry/sg219.g"
+              ],
+              "comm": "gap",
+              "cpu_seconds": 6395.56,
+              "pid": 7299,
+              "ppid": 7298,
+              "process_elapsed_seconds": 6393.769999999553,
+              "rss_mib": 2316.30078125,
+              "state": "R"
+            }
+          ],
+          "scope": "known task descendants only; current RSS, not peak RSS; no environment read",
+          "task": "20260927T005727-corrected219-long-76951ec2",
+          "task_elapsed_seconds": 6394.044016838074
+        },
+        {
+          "host": "n01.local",
+          "last_stage": "AFS_STAGE 219 stack_lift_B1 cpu_ms=2105942",
+          "observed": 1790448277.852148,
+          "pbs_job": "115915.head.local",
+          "processes": [
+            {
+              "argv": [
+                "/usr/bin/time",
+                "-v",
+                "-o",
+                "/home/user/xyren/AllFSPT/runs/tasks/full_closed_cf_v09-p000-sg219/metrics.txt",
+                "/home/apps/anaconda3/bin/python3",
+                "scripts/run_group.py",
+                "219",
+                "--mode",
+                "full",
+                "--source",
+                "/home/user/xyren/AllFSPT/runs/closed_cf_v09_source",
+                "--output",
+                "/home/user/xyren/AllFSPT/runs/full_closed_cf_v09/sg219.json"
+              ],
+              "comm": "time",
+              "cpu_seconds": 0.0,
+              "pid": 7731,
+              "ppid": 4437,
+              "process_elapsed_seconds": 4051.959999997169,
+              "rss_mib": 0.42578125,
+              "state": "S"
+            },
+            {
+              "argv": [
+                "/home/apps/anaconda3/bin/python3",
+                "scripts/run_group.py",
+                "219",
+                "--mode",
+                "full",
+                "--source",
+                "/home/user/xyren/AllFSPT/runs/closed_cf_v09_source",
+                "--output",
+                "/home/user/xyren/AllFSPT/runs/full_closed_cf_v09/sg219.json"
+              ],
+              "comm": "python3",
+              "cpu_seconds": 0.05,
+              "pid": 7732,
+              "ppid": 7731,
+              "process_elapsed_seconds": 4051.959999997169,
+              "rss_mib": 9.359375,
+              "state": "S"
+            },
+            {
+              "argv": [
+                "/home/apps/anaconda3/bin/python3",
+                "/home/user/xyren/AllFSPT/scripts/run_gap.py",
+                "--sentinel",
+                "AFS_RESULT_WRITTEN",
+                "/home/user/xyren/AllFSPT/runs/full_closed_cf_v09/sg219.g"
+              ],
+              "comm": "python3",
+              "cpu_seconds": 0.04,
+              "pid": 7781,
+              "ppid": 7732,
+              "process_elapsed_seconds": 4051.410000000149,
+              "rss_mib": 8.0625,
+              "state": "S"
+            },
+            {
+              "argv": [
+                "/home/user/xyren/software/gap-4.13.1/gap",
+                "-q",
+                "-r",
+                "-b",
+                "-T",
+                "/home/user/xyren/AllFSPT/runs/full_closed_cf_v09/sg219.g"
+              ],
+              "comm": "gap",
+              "cpu_seconds": 4048.13,
+              "pid": 7800,
+              "ppid": 7781,
+              "process_elapsed_seconds": 4050.910000000149,
+              "rss_mib": 1792.36328125,
+              "state": "R"
+            }
+          ],
+          "scope": "known task descendants only; current RSS, not peak RSS; no environment read",
+          "task": "full_closed_cf_v09-p000-sg219",
+          "task_elapsed_seconds": 4052.1914415359497
+        }
+      ],
+      "status": {
+        "command": [
+          "/home/apps/anaconda3/bin/python3",
+          "-c",
+          "import json,os,pathlib,socket,subprocess,sys,time\nroot=pathlib.Path.cwd();ids=json.loads(sys.argv[1]);queue=sys.argv[2]\nworker=json.loads((root/'runs'/queue/'worker.json').read_text())\nassert worker['hostname']==socket.gethostname()\nhz=os.sysconf('SC_CLK_TCK');page=os.sysconf('SC_PAGE_SIZE')\nuptime=float(pathlib.Path('/proc/uptime').read_text().split()[0])\nfor ident in ids:\n p=root/'runs/tasks'/ident;s=json.loads((p/'status.json').read_text())\n assert s['hostname']==socket.gethostname() and s['pbs_job']==worker['pbs_job']\n if s['status']!='running':\n  print(json.dumps(dict(task=ident,status=s['status'],observed=time.time())));continue\n launcher=pathlib.Path('/proc')/str(s['pid'])\n assert launcher.stat().st_uid==os.getuid()\n argv=(launcher/'cmdline').read_bytes().split(b'\\0');argv=[x.decode() for x in argv if x]\n assert argv[-len(s['command']):]==s['command']\n stat=(launcher/'stat').read_text().rsplit(')',1)[1].split()\n assert int(stat[2])==s['pid']\n todo=[s['pid']];seen=set();rows=[]\n while todo:\n  pid=todo.pop()\n  if pid in seen:continue\n  seen.add(pid);q=pathlib.Path('/proc')/str(pid)\n  try:\n   assert q.stat().st_uid==os.getuid()\n   st=(q/'stat').read_text().rsplit(')',1)[1].split()\n   assert int(st[2])==s['pid']\n   args=[x.decode() for x in (q/'cmdline').read_bytes().split(b'\\0') if x]\n   rows.append(dict(pid=pid,ppid=int(st[1]),comm=(q/'comm').read_text().strip(),state=st[0],argv=args,cpu_seconds=(int(st[11])+int(st[12]))/hz,rss_mib=int(st[21])*page/1048576,process_elapsed_seconds=uptime-int(st[19])/hz))\n   children=subprocess.run(['ps','-o','pid=','--ppid',str(pid)],stdout=subprocess.PIPE,stderr=subprocess.PIPE,universal_newlines=True)\n   assert children.returncode in (0,1)\n   todo.extend(int(x) for x in children.stdout.split())\n  except (FileNotFoundError,ProcessLookupError):pass\n stages=[x for x in (p/'stdout.log').read_text().splitlines() if x.startswith('AFS_STAGE ')]\n print(json.dumps(dict(task=ident,host=socket.gethostname(),pbs_job=s['pbs_job'],observed=time.time(),task_elapsed_seconds=time.time()-s['started'],last_stage=stages[-1] if stages else None,processes=rows,scope='known task descendants only; current RSS, not peak RSS; no environment read')),flush=True)\n",
+          "[\"20260927T005727-corrected219-long-76951ec2\", \"full_closed_cf_v09-p000-sg219\"]",
+          "queue"
+        ],
+        "created": 1790448241.3788059,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 1.0064826011657715,
+        "exit_code": 0,
+        "finished": 1790448278.563769,
+        "hostname": "n01.local",
+        "id": "20260927T024401-inspect-known219-queue-44915a19",
+        "pbs_job": "115915.head.local",
+        "pid": 8286,
+        "started": 1790448277.5571246,
+        "status": "done",
+        "timeout_s": 30
+      },
+      "stdout_sha256": "765869008b3dd2652895522ec5aef42f18b63016765e4db38986da84f650fde8",
+      "task": "20260927T024401-inspect-known219-queue-44915a19"
+    },
+    {
+      "observations": [
+        {
+          "host": "n03.local",
+          "last_stage": "AFS_STAGE 219 stack_lift_B1 cpu_ms=1735603",
+          "observed": 1790448276.0412843,
+          "pbs_job": "115917.head.local",
+          "processes": [
+            {
+              "argv": [
+                "/usr/bin/time",
+                "-v",
+                "-o",
+                "/home/user/xyren/AllFSPT/runs/tasks/full_optimized_v08-p002-sg219/metrics.txt",
+                "/home/apps/anaconda3/bin/python3",
+                "scripts/run_group.py",
+                "219",
+                "--mode",
+                "full",
+                "--source",
+                "/home/user/xyren/AllFSPT/runs/optimized_v08_source",
+                "--output",
+                "/home/user/xyren/AllFSPT/runs/full_optimized_v08/sg219.json"
+              ],
+              "comm": "time",
+              "cpu_seconds": 0.0,
+              "pid": 1092,
+              "ppid": 55873,
+              "process_elapsed_seconds": 5630.489999998361,
+              "rss_mib": 0.42578125,
+              "state": "S"
+            },
+            {
+              "argv": [
+                "/home/apps/anaconda3/bin/python3",
+                "scripts/run_group.py",
+                "219",
+                "--mode",
+                "full",
+                "--source",
+                "/home/user/xyren/AllFSPT/runs/optimized_v08_source",
+                "--output",
+                "/home/user/xyren/AllFSPT/runs/full_optimized_v08/sg219.json"
+              ],
+              "comm": "python3",
+              "cpu_seconds": 0.05,
+              "pid": 1093,
+              "ppid": 1092,
+              "process_elapsed_seconds": 5630.480000000447,
+              "rss_mib": 9.35546875,
+              "state": "S"
+            },
+            {
+              "argv": [
+                "/home/apps/anaconda3/bin/python3",
+                "/home/user/xyren/AllFSPT/scripts/run_gap.py",
+                "--sentinel",
+                "AFS_RESULT_WRITTEN",
+                "/home/user/xyren/AllFSPT/runs/full_optimized_v08/sg219.g"
+              ],
+              "comm": "python3",
+              "cpu_seconds": 0.04,
+              "pid": 1146,
+              "ppid": 1093,
+              "process_elapsed_seconds": 5629.89999999851,
+              "rss_mib": 8.0703125,
+              "state": "S"
+            },
+            {
+              "argv": [
+                "/home/user/xyren/software/gap-4.13.1/gap",
+                "-q",
+                "-r",
+                "-b",
+                "-T",
+                "/home/user/xyren/AllFSPT/runs/full_optimized_v08/sg219.g"
+              ],
+              "comm": "gap",
+              "cpu_seconds": 5625.94,
+              "pid": 1173,
+              "ppid": 1146,
+              "process_elapsed_seconds": 5629.129999998957,
+              "rss_mib": 2118.046875,
+              "state": "R"
+            }
+          ],
+          "scope": "known task descendants only; current RSS, not peak RSS; no environment read",
+          "task": "full_optimized_v08-p002-sg219",
+          "task_elapsed_seconds": 5630.5980722904205
+        }
+      ],
+      "status": {
+        "command": [
+          "/home/apps/anaconda3/bin/python3",
+          "-c",
+          "import json,os,pathlib,socket,subprocess,sys,time\nroot=pathlib.Path.cwd();ids=json.loads(sys.argv[1]);queue=sys.argv[2]\nworker=json.loads((root/'runs'/queue/'worker.json').read_text())\nassert worker['hostname']==socket.gethostname()\nhz=os.sysconf('SC_CLK_TCK');page=os.sysconf('SC_PAGE_SIZE')\nuptime=float(pathlib.Path('/proc/uptime').read_text().split()[0])\nfor ident in ids:\n p=root/'runs/tasks'/ident;s=json.loads((p/'status.json').read_text())\n assert s['hostname']==socket.gethostname() and s['pbs_job']==worker['pbs_job']\n if s['status']!='running':\n  print(json.dumps(dict(task=ident,status=s['status'],observed=time.time())));continue\n launcher=pathlib.Path('/proc')/str(s['pid'])\n assert launcher.stat().st_uid==os.getuid()\n argv=(launcher/'cmdline').read_bytes().split(b'\\0');argv=[x.decode() for x in argv if x]\n assert argv[-len(s['command']):]==s['command']\n stat=(launcher/'stat').read_text().rsplit(')',1)[1].split()\n assert int(stat[2])==s['pid']\n todo=[s['pid']];seen=set();rows=[]\n while todo:\n  pid=todo.pop()\n  if pid in seen:continue\n  seen.add(pid);q=pathlib.Path('/proc')/str(pid)\n  try:\n   assert q.stat().st_uid==os.getuid()\n   st=(q/'stat').read_text().rsplit(')',1)[1].split()\n   assert int(st[2])==s['pid']\n   args=[x.decode() for x in (q/'cmdline').read_bytes().split(b'\\0') if x]\n   rows.append(dict(pid=pid,ppid=int(st[1]),comm=(q/'comm').read_text().strip(),state=st[0],argv=args,cpu_seconds=(int(st[11])+int(st[12]))/hz,rss_mib=int(st[21])*page/1048576,process_elapsed_seconds=uptime-int(st[19])/hz))\n   children=subprocess.run(['ps','-o','pid=','--ppid',str(pid)],stdout=subprocess.PIPE,stderr=subprocess.PIPE,universal_newlines=True)\n   assert children.returncode in (0,1)\n   todo.extend(int(x) for x in children.stdout.split())\n  except (FileNotFoundError,ProcessLookupError):pass\n stages=[x for x in (p/'stdout.log').read_text().splitlines() if x.startswith('AFS_STAGE ')]\n print(json.dumps(dict(task=ident,host=socket.gethostname(),pbs_job=s['pbs_job'],observed=time.time(),task_elapsed_seconds=time.time()-s['started'],last_stage=stages[-1] if stages else None,processes=rows,scope='known task descendants only; current RSS, not peak RSS; no environment read')),flush=True)\n",
+          "[\"full_optimized_v08-p002-sg219\"]",
+          "campaign3_queue"
+        ],
+        "created": 1790448241.4451249,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 1.006260871887207,
+        "exit_code": 0,
+        "finished": 1790448276.8646514,
+        "hostname": "n03.local",
+        "id": "20260927T024401-inspect-known219-campaign3_queue-8921a900",
+        "pbs_job": "115917.head.local",
+        "pid": 2079,
+        "queue": "campaign3_queue",
+        "started": 1790448275.8582442,
+        "status": "done",
+        "timeout_s": 30
+      },
+      "stdout_sha256": "9926f7147908df91f51fae3a05c71fb0c99044b8d3f92feb0917aeac53c10c7f",
+      "task": "20260927T024401-inspect-known219-campaign3_queue-8921a900"
+    }
+  ],
+  "scope": "One explicitly authorized read-only process inspection on each remaining node. Only known SG219 task descendants; no environment read, no GAP launch, no change to STOP or running jobs. Node-local current RSS is not peak RSS or campaign concurrent memory. Node-clock elapsed and process cumulative CPU are not campaign observer wall time."
+}

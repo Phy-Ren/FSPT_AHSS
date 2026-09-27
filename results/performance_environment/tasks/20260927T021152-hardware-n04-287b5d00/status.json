@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "runs/hardware_20260926/probe.py",
+    "--expected-host",
+    "n04.local",
+    "--expected-job",
+    "115918.head.local",
+    "--output",
+    "runs/hardware_20260926/n04.json"
+  ],
+  "created": 1790446312.1036828,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 1.0062425136566162,
+  "exit_code": 2,
+  "finished": 1790446348.0294948,
+  "hostname": "n04.local",
+  "id": "20260927T021152-hardware-n04-287b5d00",
+  "pbs_job": "115918.head.local",
+  "pid": 34130,
+  "queue": "campaign4_queue",
+  "started": 1790446347.023113,
+  "status": "failed",
+  "timeout_s": 20
+}

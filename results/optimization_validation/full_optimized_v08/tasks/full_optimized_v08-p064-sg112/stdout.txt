@@ -1,0 +1,75 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+AFS_NATIVE_CONTRACTION_MODE mod2=true
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/formulas.g:101
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:246
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_BUILD affine_start sg=112 cpu_ms=18087
+AFS_BUILD affine_done sg=112 cpu_ms=18944
+AFS_BUILD holonomy_start cpu_ms=18944
+AFS_BUILD RP_start order=8 cpu_ms=19043
+AFS_BUILD RL_start cpu_ms=19574
+AFS_BUILD section_start cpu_ms=19816
+AFS_BUILD extension_start cpu_ms=19828
+AFS_BUILD extension_done timings=rec(
+  RL_ms := 242,
+  RP_ms := 531,
+  extension_ms := 4669,
+  holonomy_ms := 99,
+  section_ms := 12 )
+AFS_STAGE 112 cohomology cpu_ms=24502
+AFS_STAGE 112 primary_cf cpu_ms=25508
+AFS_STAGE 112 primary_mc_and_bos cpu_ms=33322
+AFS_STAGE 112 incoming_mc cpu_ms=34193
+AFS_STAGE 112 secondary_bos cpu_ms=34445
+AFS_STAGE 112 secondary_mc cpu_ms=42930
+AFS_STAGE 112 pip cpu_ms=42931
+AFS_STAGE 112 pip_d3 cpu_ms=43013
+AFS_STAGE 112 classification_end cpu_ms=46063
+AFS_STAGE 112 stack_lift_D1 cpu_ms=46554
+AFS_STAGE 112 stack_lift_D2 cpu_ms=46555
+AFS_STAGE 112 stack_lift_D3 cpu_ms=46557
+AFS_STAGE 112 stack_lift_D4 cpu_ms=46558
+AFS_STAGE 112 stack_lift_D5 cpu_ms=46560
+AFS_STAGE 112 stack_lift_D6 cpu_ms=46562
+AFS_STAGE 112 stack_lift_D7 cpu_ms=46564
+AFS_STAGE 112 stack_lift_D8 cpu_ms=46565
+AFS_STAGE 112 stack_lift_C1 cpu_ms=46567
+AFS_STAGE 112 stack_lift_C2 cpu_ms=52691
+AFS_STAGE 112 stack_relation_D1 cpu_ms=80404
+AFS_STAGE 112 stack_relation_D2 cpu_ms=80404
+AFS_STAGE 112 stack_relation_D3 cpu_ms=80404
+AFS_STAGE 112 stack_relation_D4 cpu_ms=80404
+AFS_STAGE 112 stack_relation_D5 cpu_ms=80404
+AFS_STAGE 112 stack_relation_D6 cpu_ms=80404
+AFS_STAGE 112 stack_relation_D7 cpu_ms=80404
+AFS_STAGE 112 stack_relation_D8 cpu_ms=80404
+AFS_STAGE 112 stack_relation_C1 cpu_ms=80404
+AFS_STAGE 112 stack_relation_C2 cpu_ms=93634
+AFS_STAGE 112 stack_pip_C4_pullback cpu_ms=114652
+AFS_STAGE 112 stack_pip_square cpu_ms=114652
+AFS_RESULT_WRITTEN 112 computed
+AFS_GROUP_SAVED 112 computed /home/user/xyren/AllFSPT/runs/full_optimized_v08/sg112.json

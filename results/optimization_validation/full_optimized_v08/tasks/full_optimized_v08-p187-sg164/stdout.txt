@@ -1,0 +1,54 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+AFS_NATIVE_CONTRACTION_MODE mod2=true
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/formulas.g:101
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/optim\
+ized_v08_source/gap/classification.g:246
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_BUILD affine_start sg=164 cpu_ms=17996
+AFS_BUILD affine_done sg=164 cpu_ms=18482
+AFS_BUILD holonomy_start cpu_ms=18483
+AFS_BUILD RP_start order=12 cpu_ms=18572
+AFS_BUILD RL_start cpu_ms=19138
+AFS_BUILD section_start cpu_ms=19379
+AFS_BUILD extension_start cpu_ms=19397
+AFS_BUILD extension_done timings=rec(
+  RL_ms := 241,
+  RP_ms := 566,
+  extension_ms := 3841,
+  holonomy_ms := 89,
+  section_ms := 18 )
+AFS_STAGE 164 cohomology cpu_ms=23245
+AFS_STAGE 164 primary_cf cpu_ms=23939
+AFS_STAGE 164 primary_mc_and_bos cpu_ms=32779
+AFS_STAGE 164 incoming_mc cpu_ms=33973
+AFS_STAGE 164 secondary_bos cpu_ms=34247
+AFS_STAGE 164 secondary_mc cpu_ms=34258
+AFS_STAGE 164 pip cpu_ms=34258
+AFS_STAGE 164 classification_end cpu_ms=34351
+AFS_STAGE 164 stack_native_CF1 cpu_ms=34839
+AFS_STAGE 164 stack_native_CF2 cpu_ms=34856
+AFS_RESULT_WRITTEN 164 computed
+AFS_GROUP_SAVED 164 computed /home/user/xyren/AllFSPT/runs/full_optimized_v08/sg164.json

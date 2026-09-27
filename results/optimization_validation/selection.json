@@ -1,0 +1,64 @@
+{
+  "campaigns": {
+    "v08": {
+      "archive": "results/optimization_validation/full_optimized_v08",
+      "archive_sha256": "075ad2320355462a431a0976e6b2077f267652a315d6ae3f5b5a04c79c51a37c",
+      "classification_elapsed_seconds": 803.0190975666046,
+      "full_elapsed_seconds": 14751.680264234543,
+      "gap_cpu_seconds": 70171.795,
+      "max_single_task_rss": {
+        "hostname": "n03.local",
+        "maximum_resident_set_size_gib": 20.063095092773438,
+        "maximum_resident_set_size_kib": 21037680,
+        "space_group": 219,
+        "task_id": "full_optimized_v08-p002-sg219"
+      },
+      "performance_sha256": "b719f5918a22503ed8a4ed36ca1d5887e89f9b43067c3b7d2a6a831e8ba0dc1d",
+      "process_cpu_seconds": 70245.59999999999,
+      "source_id": "6ac87338038729efff1462add90fb1ce901963048551e28d232aae34773de971"
+    },
+    "v09": {
+      "archive": "results/space_groups",
+      "archive_sha256": "60bc072c330c838a10e6a1f663eb6664e1d09e010b5081141dacf609aff33831",
+      "classification_elapsed_seconds": 783.0171189308167,
+      "full_elapsed_seconds": 12699.327845096588,
+      "gap_cpu_seconds": 62963.021999999975,
+      "max_single_task_rss": {
+        "hostname": "n01.local",
+        "maximum_resident_set_size_gib": 16.8690185546875,
+        "maximum_resident_set_size_kib": 17688448,
+        "space_group": 219,
+        "task_id": "full_closed_cf_v09-p000-sg219"
+      },
+      "performance_sha256": "f0db4858cd67c3de0770c4eecb694ae44be89e44f0304ce03fb95208ecafcc8a",
+      "process_cpu_seconds": 63036.04999999997,
+      "source_id": "9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96"
+    }
+  },
+  "configuration": {
+    "binary_bar_mod2": false,
+    "closed_cf_obstruction": true,
+    "native_mod2_contraction": true
+  },
+  "elapsed_difference_seconds": 2052.3524191379547,
+  "generic_baseline_assembly_sha256": "e6765630fa12b9634047d5fe7c6853704e76f82c230e3b83df597ce292d65594",
+  "generic_baseline_scope": "Same-source 229 original results plus separate SG219 retry, for mathematical comparison only; not a continuous performance campaign.",
+  "mathematical_comparisons": {
+    "v07_vs_v09.json": {
+      "groups_equal": 230,
+      "scope": "literal equality of all other saved fields; bar cochain equations are not rerun",
+      "sha256": "fc537fa1348d0e37f4eab9616fab7b38c788c2ccee7c1920b4880678165fd503"
+    },
+    "v08_vs_v09.json": {
+      "groups_equal": 230,
+      "scope": "literal equality of all other saved fields; bar cochain equations are not rerun",
+      "sha256": "b7f4cefc5cc01e113273b66881772ae37e544c197410fb8f873413848f95c313"
+    }
+  },
+  "reason": "Complete uniform 230-group campaign, exact parity of all saved mathematical fields, lower observed elapsed time and peak RSS in this shared-worker deployment.",
+  "resources_release": "results/performance_environment/final_release.json",
+  "schema": "fspt-uniform-runtime-selection-v1",
+  "scope": "Five shared workers, 28 slots each; includes queueing and other candidate/control tasks. This is a deployment comparison, not an exclusive-resource intrinsic speed ranking. No per-group configuration selection.",
+  "selected": "v09",
+  "selected_at_utc": "2026-09-26T21:19:21.508898+00:00"
+}

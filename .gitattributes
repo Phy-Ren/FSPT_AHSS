@@ -1,0 +1,11 @@
+# CSV writers use RFC-style CRLF; retain the archived bytes.
+*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# External inputs are byte-preserved evidence, including legacy log whitespace.
+results/external_comparison/inputs/** -text -diff
+# Archive hashes refer to the original bytes on every checkout platform.
+results/classification_frozen/** -text
+results/space_groups/** -text
+results/optimization_validation/** -text
+results/space_groups/tasks/** -text -diff
+results/optimization_validation/full_optimized_v08/tasks/** -text -diff
+results/performance_environment/tasks/** -text -diff

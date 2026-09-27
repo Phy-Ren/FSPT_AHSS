@@ -1,0 +1,325 @@
+{
+  "clock_note": "Worker/head clocks differ; heartbeat progression was checked using two samples rather than assuming clock synchronization.",
+  "probe_sha256": "dd83a5f512cf012b611dbcc6191010bbd9a5cdbcb4ace279dc2d60a63937f8e4",
+  "records": [
+    {
+      "expected_host": "n01.local",
+      "expected_pbs_job": "115915.head.local",
+      "probe_timeout_seconds": 20,
+      "queue": "queue",
+      "sample_after": {
+        "head_observer_time": 1790446386.95857,
+        "stop_exists": false,
+        "stop_sha256": null,
+        "worker": {
+          "active": [
+            "20260927T005727-corrected219-long-76951ec2",
+            "full_closed_cf_v09-p000-sg219"
+          ],
+          "heartbeat": 1790446422.8407443,
+          "hostname": "n01.local",
+          "pbs_job": "115915.head.local",
+          "pid": 4437,
+          "slots": 28,
+          "started": 1790430850.4227605
+        }
+      },
+      "sample_at_submission": {
+        "head_observer_time": 1790446386.970551,
+        "stop_exists": false,
+        "stop_sha256": null,
+        "worker": {
+          "active": [
+            "20260927T005727-corrected219-long-76951ec2",
+            "full_closed_cf_v09-p000-sg219"
+          ],
+          "heartbeat": 1790446422.8407443,
+          "hostname": "n01.local",
+          "pbs_job": "115915.head.local",
+          "pid": 4437,
+          "slots": 28,
+          "started": 1790430850.4227605
+        }
+      },
+      "sample_before": {
+        "head_observer_time": 1790446385.4529269,
+        "stop_exists": false,
+        "stop_sha256": null,
+        "worker": {
+          "active": [
+            "20260927T005727-corrected219-long-76951ec2",
+            "full_closed_cf_v09-p000-sg219"
+          ],
+          "heartbeat": 1790446420.834079,
+          "hostname": "n01.local",
+          "pbs_job": "115915.head.local",
+          "pid": 4437,
+          "slots": 28,
+          "started": 1790430850.4227605
+        }
+      },
+      "task_id": "20260927T021307-hardware-retry-n01-b5000837"
+    },
+    {
+      "expected_host": "n02.local",
+      "expected_pbs_job": "115916.head.local",
+      "probe_timeout_seconds": 20,
+      "queue": "stacking_queue",
+      "sample_after": {
+        "head_observer_time": 1790446386.9594648,
+        "stop_exists": true,
+        "stop_sha256": "82ddc47a27bb5d07316f170291b0e2546152f5cb06201200b7be7d317a740733",
+        "worker": {
+          "active": [
+            "full_closed_cf_v09-p001-sg228"
+          ],
+          "heartbeat": 1790446416.0041647,
+          "hostname": "n02.local",
+          "pbs_job": "115916.head.local",
+          "pid": 55924,
+          "slots": 28,
+          "started": 1790432583.679793
+        }
+      },
+      "sample_at_submission": {
+        "head_observer_time": 1790446387.0387177,
+        "stop_exists": true,
+        "stop_sha256": "82ddc47a27bb5d07316f170291b0e2546152f5cb06201200b7be7d317a740733",
+        "worker": {
+          "active": [
+            "full_closed_cf_v09-p001-sg228"
+          ],
+          "heartbeat": 1790446416.0041647,
+          "hostname": "n02.local",
+          "pbs_job": "115916.head.local",
+          "pid": 55924,
+          "slots": 28,
+          "started": 1790432583.679793
+        }
+      },
+      "sample_before": {
+        "head_observer_time": 1790446385.4539053,
+        "stop_exists": true,
+        "stop_sha256": "82ddc47a27bb5d07316f170291b0e2546152f5cb06201200b7be7d317a740733",
+        "worker": {
+          "active": [
+            "full_closed_cf_v09-p001-sg228"
+          ],
+          "heartbeat": 1790446413.9987328,
+          "hostname": "n02.local",
+          "pbs_job": "115916.head.local",
+          "pid": 55924,
+          "slots": 28,
+          "started": 1790432583.679793
+        }
+      },
+      "task_id": "20260927T021307-hardware-retry-n02-5a0381d4"
+    },
+    {
+      "expected_host": "n03.local",
+      "expected_pbs_job": "115917.head.local",
+      "probe_timeout_seconds": 20,
+      "queue": "campaign3_queue",
+      "sample_after": {
+        "head_observer_time": 1790446386.960413,
+        "stop_exists": true,
+        "stop_sha256": "a99958fcfa545e247a627cdf6f18ec7f4ff702aada9345c07d82dbfdf391ed69",
+        "worker": {
+          "active": [
+            "full_optimized_v08-p002-sg219",
+            "full_closed_cf_v09-p002-sg142"
+          ],
+          "heartbeat": 1790446421.212713,
+          "hostname": "n03.local",
+          "pbs_job": "115917.head.local",
+          "pid": 55873,
+          "slots": 28,
+          "started": 1790433124.7316828
+        }
+      },
+      "sample_at_submission": {
+        "head_observer_time": 1790446387.1069272,
+        "stop_exists": true,
+        "stop_sha256": "a99958fcfa545e247a627cdf6f18ec7f4ff702aada9345c07d82dbfdf391ed69",
+        "worker": {
+          "active": [
+            "full_optimized_v08-p002-sg219",
+            "full_closed_cf_v09-p002-sg142"
+          ],
+          "heartbeat": 1790446421.212713,
+          "hostname": "n03.local",
+          "pbs_job": "115917.head.local",
+          "pid": 55873,
+          "slots": 28,
+          "started": 1790433124.7316828
+        }
+      },
+      "sample_before": {
+        "head_observer_time": 1790446385.455071,
+        "stop_exists": true,
+        "stop_sha256": "a99958fcfa545e247a627cdf6f18ec7f4ff702aada9345c07d82dbfdf391ed69",
+        "worker": {
+          "active": [
+            "full_optimized_v08-p002-sg219",
+            "full_closed_cf_v09-p002-sg142"
+          ],
+          "heartbeat": 1790446419.2068841,
+          "hostname": "n03.local",
+          "pbs_job": "115917.head.local",
+          "pid": 55873,
+          "slots": 28,
+          "started": 1790433124.7316828
+        }
+      },
+      "task_id": "20260927T021307-hardware-retry-n03-8db94219"
+    },
+    {
+      "expected_host": "n04.local",
+      "expected_pbs_job": "115918.head.local",
+      "probe_timeout_seconds": 20,
+      "queue": "campaign4_queue",
+      "sample_after": {
+        "head_observer_time": 1790446386.961349,
+        "stop_exists": true,
+        "stop_sha256": "9d86640eeb51b5b47a3da10ca47f7e7d26eeab3a8069eaca9b37e1c66cf50373",
+        "worker": {
+          "active": [
+            "full_closed_cf_v09-p003-sg210"
+          ],
+          "heartbeat": 1790446421.2451494,
+          "hostname": "n04.local",
+          "pbs_job": "115918.head.local",
+          "pid": 31663,
+          "slots": 28,
+          "started": 1790433125.0167959
+        }
+      },
+      "sample_at_submission": {
+        "head_observer_time": 1790446387.174927,
+        "stop_exists": true,
+        "stop_sha256": "9d86640eeb51b5b47a3da10ca47f7e7d26eeab3a8069eaca9b37e1c66cf50373",
+        "worker": {
+          "active": [
+            "full_closed_cf_v09-p003-sg210"
+          ],
+          "heartbeat": 1790446421.2451494,
+          "hostname": "n04.local",
+          "pbs_job": "115918.head.local",
+          "pid": 31663,
+          "slots": 28,
+          "started": 1790433125.0167959
+        }
+      },
+      "sample_before": {
+        "head_observer_time": 1790446385.4561973,
+        "stop_exists": true,
+        "stop_sha256": "9d86640eeb51b5b47a3da10ca47f7e7d26eeab3a8069eaca9b37e1c66cf50373",
+        "worker": {
+          "active": [
+            "full_closed_cf_v09-p003-sg210"
+          ],
+          "heartbeat": 1790446419.2392437,
+          "hostname": "n04.local",
+          "pbs_job": "115918.head.local",
+          "pid": 31663,
+          "slots": 28,
+          "started": 1790433125.0167959
+        }
+      },
+      "task_id": "20260927T021307-hardware-retry-n04-a8974d0d"
+    },
+    {
+      "expected_host": "n05.local",
+      "expected_pbs_job": "115919.head.local",
+      "probe_timeout_seconds": 20,
+      "queue": "derivation_queue",
+      "sample_after": {
+        "head_observer_time": 1790446386.9622808,
+        "stop_exists": true,
+        "stop_sha256": "d05262707e8cd549d6a197503700163408a8c9f2d1d78f799f864db963d04d46",
+        "worker": {
+          "active": [
+            "full_optimized_v08-p004-sg228"
+          ],
+          "heartbeat": 1790446410.3712015,
+          "hostname": "n05.local",
+          "pbs_job": "115919.head.local",
+          "pid": 10589,
+          "slots": 28,
+          "started": 1790433615.1925383
+        }
+      },
+      "sample_at_submission": {
+        "head_observer_time": 1790446387.2437427,
+        "stop_exists": true,
+        "stop_sha256": "d05262707e8cd549d6a197503700163408a8c9f2d1d78f799f864db963d04d46",
+        "worker": {
+          "active": [
+            "full_optimized_v08-p004-sg228"
+          ],
+          "heartbeat": 1790446410.3712015,
+          "hostname": "n05.local",
+          "pbs_job": "115919.head.local",
+          "pid": 10589,
+          "slots": 28,
+          "started": 1790433615.1925383
+        }
+      },
+      "sample_before": {
+        "head_observer_time": 1790446385.457331,
+        "stop_exists": true,
+        "stop_sha256": "d05262707e8cd549d6a197503700163408a8c9f2d1d78f799f864db963d04d46",
+        "worker": {
+          "active": [
+            "full_optimized_v08-p004-sg228"
+          ],
+          "heartbeat": 1790446408.366604,
+          "hostname": "n05.local",
+          "pbs_job": "115919.head.local",
+          "pid": 10589,
+          "slots": 28,
+          "started": 1790433615.1925383
+        }
+      },
+      "task_id": "20260927T021307-hardware-retry-n05-ad094bd3"
+    }
+  ],
+  "scope": "Read-only hardware probes authorized for these active allocations; STOP files untouched.",
+  "setup_failures": [
+    {
+      "exit_code": 2,
+      "reason": "Initial submission preceded successful probe-file transfer; interpreter could not open script. No hardware data was collected.",
+      "status": "failed",
+      "status_sha256": "4112176bcc44fe42eef0755c795b44f451753d993410b53fed90190b220b8e3a",
+      "task_id": "20260927T021151-hardware-n01-48b0ebaa"
+    },
+    {
+      "exit_code": 2,
+      "reason": "Initial submission preceded successful probe-file transfer; interpreter could not open script. No hardware data was collected.",
+      "status": "failed",
+      "status_sha256": "d48bef9473775eb4ee3a026c2dbead773c8332f67a42aa557b4b12978382c8cf",
+      "task_id": "20260927T021151-hardware-n02-639b8d7d"
+    },
+    {
+      "exit_code": 2,
+      "reason": "Initial submission preceded successful probe-file transfer; interpreter could not open script. No hardware data was collected.",
+      "status": "failed",
+      "status_sha256": "71c58dab2757386bc94433b09d37e1f1f83b637c332b1e7b4be3df510cf1c3a9",
+      "task_id": "20260927T021152-hardware-n03-f92a33c1"
+    },
+    {
+      "exit_code": 2,
+      "reason": "Initial submission preceded successful probe-file transfer; interpreter could not open script. No hardware data was collected.",
+      "status": "failed",
+      "status_sha256": "d5e5c216462d3b66ffabcd0ddaf510e14b7c400cabc23cfeb9e9b805d0dfee00",
+      "task_id": "20260927T021152-hardware-n04-287b5d00"
+    },
+    {
+      "exit_code": 2,
+      "reason": "Initial submission preceded successful probe-file transfer; interpreter could not open script. No hardware data was collected.",
+      "status": "failed",
+      "status_sha256": "ea3e618d97e57e778f0b510ebbdd79b1ac925131c1d187525751c094f3d687fa",
+      "task_id": "20260927T021152-hardware-n05-2a34930a"
+    }
+  ]
+}

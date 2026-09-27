@@ -1,0 +1,89 @@
+{
+  "cutoff": 1790472213.0,
+  "cutoff_monotonic": 25293455.25924754,
+  "guard": {
+    "cmdline": [
+      "/home/apps/anaconda3/bin/python3",
+      "runs/prepare_tail_guard.py",
+      "queue",
+      "--execute"
+    ],
+    "exit_raw": null,
+    "pgid": 10916,
+    "pid": 10917,
+    "ppid": 10916,
+    "sid": 10916,
+    "start_ticks": 2527566274,
+    "state": "R",
+    "uid": 5866
+  },
+  "guard_original_deadline": 1790472420.4791646,
+  "guard_task_id": "sg219-budget-queue-bb9f1391",
+  "kernel_waitstatus_available": false,
+  "original_deadlines": {
+    "20260927T005727-corrected219-long-76951ec2": 1790456283.6989114,
+    "full_closed_cf_v09-p000-sg219": 1790458625.6607072
+  },
+  "plan_sha256": "277cca67da244045808c4954e4a32063be1fdb27e456c308e1dbb1c1a7f4cd9b",
+  "poll_s": 1,
+  "schema": 1,
+  "snapshots": [
+    {
+      "archive_path": "/home/user/xyren/AllFSPT/runs/deadline_guards/queue_20260926T202700Z/before/worker.json",
+      "bytes": 302,
+      "original_path": "/home/user/xyren/AllFSPT/runs/queue/worker.json",
+      "sha256": "519f612f727943b67d8f8b1249f1ea4b8737adb39cdbf6ea606d69c8a4c55216"
+    },
+    {
+      "archive_path": "/home/user/xyren/AllFSPT/runs/deadline_guards/queue_20260926T202700Z/before/20260927T005727-corrected219-long-76951ec2.status.json",
+      "bytes": 573,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/20260927T005727-corrected219-long-76951ec2/status.json",
+      "sha256": "1a106b02df417719a335054ca6d7635abcdbbb314bf19038bb117a8cbf6a0dbd"
+    },
+    {
+      "archive_path": "/home/user/xyren/AllFSPT/runs/deadline_guards/queue_20260926T202700Z/before/20260927T005727-corrected219-long-76951ec2.running.json",
+      "bytes": 387,
+      "original_path": "/home/user/xyren/AllFSPT/runs/queue/running/20260927T005727-corrected219-long-76951ec2.json",
+      "sha256": "0a8429830fe09deb61e708f9ddde37cbd0ebb543e63e35070a921e580d02a1c9"
+    },
+    {
+      "archive_path": "/home/user/xyren/AllFSPT/runs/deadline_guards/queue_20260926T202700Z/before/full_closed_cf_v09-p000-sg219.status.json",
+      "bytes": 623,
+      "original_path": "/home/user/xyren/AllFSPT/runs/tasks/full_closed_cf_v09-p000-sg219/status.json",
+      "sha256": "79378384fe768c62a66b2aca7d4396b233fc9f0a842edb09ce65c5e2b428b62e"
+    },
+    {
+      "archive_path": "/home/user/xyren/AllFSPT/runs/deadline_guards/queue_20260926T202700Z/before/full_closed_cf_v09-p000-sg219.running.json",
+      "bytes": 491,
+      "original_path": "/home/user/xyren/AllFSPT/runs/queue/running/full_closed_cf_v09-p000-sg219.json",
+      "sha256": "0558451c3aa36cae03cae69fabdfad90f2afbe02850bcbb16aae735c182d869f"
+    }
+  ],
+  "tool_evidence": {
+    "archive_path": "/home/user/xyren/AllFSPT/runs/deadline_guards/queue_20260926T202700Z/tool/deadline_guard.py",
+    "bytes": 28363,
+    "original_path": "/home/user/xyren/AllFSPT/scripts/deadline_guard.py",
+    "sha256": "73a7528578687a3eda2c30c2e94ac1a688c91d8e301b3aa02f0720757b946429"
+  },
+  "tool_sha256": "73a7528578687a3eda2c30c2e94ac1a688c91d8e301b3aa02f0720757b946429",
+  "validated_at": 1790454420.617201,
+  "watchdog_stale_s": 30,
+  "worker": {
+    "cmdline": [
+      "/home/apps/anaconda3/bin/python3",
+      "scripts/worker.py",
+      "--root",
+      "/home/user/xyren/AllFSPT",
+      "--workers",
+      "6"
+    ],
+    "exit_raw": null,
+    "pgid": 4293,
+    "pid": 4437,
+    "ppid": 4293,
+    "sid": 4293,
+    "start_ticks": 2525209160,
+    "state": "S",
+    "uid": 5866
+  }
+}

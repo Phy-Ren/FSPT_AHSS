@@ -1,0 +1,66 @@
+{
+  "allocation_deadline": 1790476290.0,
+  "cleanup_margin_s": 1800,
+  "created_at": 1790454418.770041,
+  "hostname": "n03.local",
+  "pbs_job": "115917.head.local",
+  "queue": "campaign3_queue",
+  "reason": "Healthy SG219 full-stacking task needs more than the original self-imposed four-hour budget; continue the same GAP processes and immutable numerical source under an explicit 7.5-hour total task cap within the original PBS allocation. Preserve original worker outcome and independent exit evidence.",
+  "root": "/home/user/xyren/AllFSPT",
+  "schema": 1,
+  "tasks": [
+    {
+      "deadline": 1790469645.4432127,
+      "id": "full_optimized_v08-p002-sg219",
+      "identity": {
+        "cmdline": [
+          "/usr/bin/time",
+          "-v",
+          "-o",
+          "/home/user/xyren/AllFSPT/runs/tasks/full_optimized_v08-p002-sg219/metrics.txt",
+          "/home/apps/anaconda3/bin/python3",
+          "scripts/run_group.py",
+          "219",
+          "--mode",
+          "full",
+          "--source",
+          "/home/user/xyren/AllFSPT/runs/optimized_v08_source",
+          "--output",
+          "/home/user/xyren/AllFSPT/runs/full_optimized_v08/sg219.json"
+        ],
+        "exit_raw": null,
+        "pgid": 1092,
+        "pid": 1092,
+        "ppid": 55873,
+        "sid": 1092,
+        "start_ticks": 2526308569,
+        "state": "S",
+        "uid": 5866
+      },
+      "running_sha256": "cd80d579b432513cb0a2f5b0bfc3837988d3959dff507fb135a184c944b317a0",
+      "status_sha256": "de597592b5f5e903f85eff90390de404f185e4af3bd75446c54facf0db81fef3"
+    }
+  ],
+  "worker": {
+    "cmdline": [
+      "/home/apps/anaconda3/bin/python3",
+      "scripts/worker.py",
+      "--root",
+      "/home/user/xyren/AllFSPT",
+      "--queue",
+      "campaign3_queue",
+      "--workers",
+      "24"
+    ],
+    "exit_raw": null,
+    "pgid": 55736,
+    "pid": 55873,
+    "ppid": 55736,
+    "sid": 55736,
+    "start_ticks": 2525356475,
+    "state": "S",
+    "uid": 5866
+  },
+  "worker_script_hash_scope": "current-on-disk-file-not-proof-of-running-interpreter-loaded-bytes",
+  "worker_script_sha256": "352e7103ac7055a0c3e3d8ca8d3685daa37f533280cbd4f76ffc784df247f041"
+}

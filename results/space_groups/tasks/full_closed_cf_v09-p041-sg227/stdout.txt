@@ -1,0 +1,53 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+AFS_NATIVE_CONTRACTION_MODE mod2=true
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/formulas.g:101
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:246
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_BUILD affine_start sg=227 cpu_ms=17892
+AFS_BUILD affine_done sg=227 cpu_ms=18591
+AFS_BUILD holonomy_start cpu_ms=18592
+AFS_BUILD RP_start order=48 cpu_ms=18932
+AFS_BUILD RL_start cpu_ms=21097
+AFS_BUILD section_start cpu_ms=21355
+AFS_BUILD extension_start cpu_ms=21459
+AFS_BUILD extension_done timings=rec(
+  RL_ms := 258,
+  RP_ms := 2165,
+  extension_ms := 67082,
+  holonomy_ms := 340,
+  section_ms := 104 )
+AFS_STAGE 227 cohomology cpu_ms=88583
+AFS_STAGE 227 primary_cf cpu_ms=97247
+AFS_STAGE 227 primary_mc_and_bos cpu_ms=300178
+AFS_STAGE 227 incoming_mc cpu_ms=309310
+AFS_STAGE 227 secondary_bos cpu_ms=311144
+AFS_STAGE 227 secondary_mc cpu_ms=311150
+AFS_STAGE 227 pip cpu_ms=311150
+AFS_STAGE 227 classification_end cpu_ms=311475
+AFS_STAGE 227 stack_native_CF1 cpu_ms=311954
+AFS_RESULT_WRITTEN 227 computed
+AFS_GROUP_SAVED 227 computed /home/user/xyren/AllFSPT/runs/full_closed_cf_v09/sg227.json

@@ -1,0 +1,154 @@
+{
+  "bosonic": [
+    4
+  ],
+  "classification_origin": {
+    "checkpoint": null,
+    "path": "/home/user/xyren/AllFSPT/runs/periods01/sg104.json",
+    "sha256": "bbdd95f65fbe50749c7f78f75dfe0381ca2174f2caf6dc021c27960502fa847b",
+    "source_id": "443325b6004f52612e0e498de7e87d0936b4539b08b0d04021f24219865deb2c"
+  },
+  "classification_status": "computed",
+  "complex_fermion": [
+    2,
+    2
+  ],
+  "convention": "physical-spin-half-det-sign-omega0",
+  "cpu_ms": 566021,
+  "finished": 1790435102.1777198,
+  "libraries": {
+    "CrystCat": "1.1.10",
+    "GAP": "4.13.1",
+    "HAP": "1.62",
+    "Polycyclic": "2.16"
+  },
+  "majorana": [
+    2
+  ],
+  "mode": "classification",
+  "native_primary_operations": true,
+  "native_target_cycles": true,
+  "pip": {
+    "free_rank": 0,
+    "orders": [
+      2
+    ],
+    "status": "computed",
+    "torsion": [
+      {
+        "certificate": "explicit-full-O5-in-E4-quotient",
+        "d4_raw_coordinates": [
+          0,
+          0
+        ],
+        "d4_target": [
+          2
+        ],
+        "majorana_adjustment": [
+          0,
+          0,
+          0
+        ],
+        "page": 4,
+        "status": "survives"
+      }
+    ]
+  },
+  "ranks": {
+    "CF_incoming": 0,
+    "CF_primary": 2,
+    "H1F2": 2,
+    "H2F2": 3,
+    "H3F2": 4,
+    "MC_primary": 2,
+    "MC_secondary": 0
+  },
+  "resolution_dimensions": [
+    1,
+    6,
+    18,
+    37,
+    60,
+    84,
+    108
+  ],
+  "resolution_timings": {
+    "RL_ms": 233,
+    "RP_ms": 536,
+    "extension_ms": 11075,
+    "holonomy_ms": 95,
+    "section_ms": 13
+  },
+  "scope": "3+1D-full-affine-associated-graded",
+  "source_id": "443325b6004f52612e0e498de7e87d0936b4539b08b0d04021f24219865deb2c",
+  "source_sha256": {
+    "gap/backend.g": "29685fe8a204b14ab854bc77435187fd49cd5a4a711bd87475bec3a0cd5ac950",
+    "gap/backend_bar.g": "262f037027d3fb6c02d638a85546e3c6cce8a311ad00371e6d2ea49a4d6196eb",
+    "gap/backend_diagonal.g": "0ae685c814beab3fbcb1bfc61a4bdfe2ab6f0256428bd7a1504f1ecd6eb62a1d",
+    "gap/backend_diagonal_marginal.g": "32400530f4488e27091b0cddc42f220a1dba96894b8737711fa1c3366b6966e2",
+    "gap/backend_resolution.g": "7a4f7c2b22781a0692d5f6b49885f099b6a81a8786c423368557204313e89f2b",
+    "gap/backend_smith_units.g": "20530c5f9c607e0be46bced4b3d3c80a06cef19e1970412c51db16687a625500",
+    "gap/class_coordinates.g": "5d39a7725b718e7b6cb1bc6ab6236629e929b727f4711b4827158b2ec00344dc",
+    "gap/classification.g": "daa78d7a2dff41e6d21220e63ec3749959b86dde43ae7a5cbf525b7083b01fba",
+    "gap/formula_data.g": "4fd1ade218090c962fcdb89bf2255c351da5b9308ca98e54a5b3e896c6b8e28e",
+    "gap/formula_fast.g": "a4c1b81380e5fdd603d1977b84d1543ff3e7092684854580982cbf6fabc295c3",
+    "gap/formulas.g": "5f09218881c2e3075ac549161a2c3fea8c4bb279462875b969c6375c40c1b48e",
+    "gap/pip.g": "574b2d7c9ba1c9039d9094caf3e0b8134445b14430dc915895f3664da65437e3",
+    "gap/pip_coordinate_data.g": "daa9eb25fd7acb7a2e7d0fa286e6e1dece1ea913fe6e2d8e0783727c64433f87",
+    "gap/pip_coordinates.g": "961ac92c02374d6479ac6a1759d98a3e654b7f1f163846b01a94c9a2c77349c9",
+    "gap/pip_diagonal_data.g": "b1b79d31169e01f92fd51cb0497a425ca5f98b805f3bc645b7d1edc82be648f5",
+    "gap/pip_o5_program.g": "1bf58cf2bc547ca227acb91b51dd182add53b30a96faa26b93e8ab0c91e1a00f",
+    "gap/pip_stacking.g": "b281a67b26806c3e545932f803376057c43eb181164bedcdbf3be34862ca5050",
+    "gap/run_one.g": "a3c684417d58aacee00554b95daada81d0c8b007969d0ca4f0b6de4682d8a05d",
+    "gap/stacking.g": "3dc4e6ead09c019848896a42c2a64eb6aa5e6e0aa81d87fb95664512eecfb275"
+  },
+  "source_snapshot": "/home/user/xyren/AllFSPT/runs/periods01/sg104.source",
+  "space_group": 104,
+  "sptset_loaded": false,
+  "stage_timings": [
+    {
+      "cpu_ms": 30555,
+      "stage": "cohomology"
+    },
+    {
+      "cpu_ms": 31118,
+      "stage": "primary_cf"
+    },
+    {
+      "cpu_ms": 95162,
+      "stage": "primary_mc_and_bos"
+    },
+    {
+      "cpu_ms": 96998,
+      "stage": "incoming_mc"
+    },
+    {
+      "cpu_ms": 97299,
+      "stage": "secondary_bos"
+    },
+    {
+      "cpu_ms": 114789,
+      "stage": "secondary_mc"
+    },
+    {
+      "cpu_ms": 283298,
+      "stage": "pip"
+    },
+    {
+      "cpu_ms": 283442,
+      "stage": "pip_d3"
+    },
+    {
+      "cpu_ms": 288020,
+      "stage": "pip_d4"
+    },
+    {
+      "cpu_ms": 566021,
+      "stage": "classification_end"
+    }
+  ],
+  "started": 1790434535.1607108,
+  "status": "computed",
+  "total_cpu_ms": 566021,
+  "wall_seconds": 567.0168850421906
+}

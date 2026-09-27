@@ -1,0 +1,611 @@
+{
+  "schema_version": 1,
+  "scope": "Exact CF optimization controls and measured optional experiments. Overall 230-group campaign validation is separate.",
+  "controls": {
+    "closed_cf_full_native_47": {
+      "task": "20260927T003030-closedcf47-73957198",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "-c",
+          "AFS_SG:=47;",
+          "/home/user/xyren/AllFSPT/tests/bench_stacking_closed_cf.g"
+        ],
+        "created": 1790440230.3828003,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 45.41789793968201,
+        "exit_code": 0,
+        "finished": 1790440317.3052912,
+        "hostname": "n05.local",
+        "id": "20260927T003030-closedcf47-73957198",
+        "pbs_job": "115919.head.local",
+        "pid": 12036,
+        "queue": "derivation_queue",
+        "started": 1790440271.8871875,
+        "status": "done",
+        "timeout_s": 600
+      },
+      "stdout_sha256": "d54ee04dfe3fc5f79bc5bfd6cf16e926dfff0b898a42d712395c430bbbbf91c9",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:101\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:190\n    for item in AFSPipO5Program do\n                ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:212\n    return values[AFSPipO5Output]/16;\n                  ^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=47 cpu_ms=17355\nAFS_BUILD affine_done sg=47 cpu_ms=18186\nAFS_BUILD holonomy_start cpu_ms=18186\nAFS_BUILD RP_start order=8 cpu_ms=18328\nAFS_BUILD RL_start cpu_ms=19505\nAFS_BUILD section_start cpu_ms=19738\nAFS_BUILD extension_start cpu_ms=19750\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 233,\n  RP_ms := 1177,\n  extension_ms := 3180,\n  holonomy_ms := 142,\n  section_ms := 12 )\nCLOSED_CF_POINTWISE_PASS sg=47 cases=24\nCLOSED_CF_MOD2_NATIVE sg=47 cpu_ms=10871 vector=\n[ 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0, 0 ]\nGENERAL_CF_INTEGRAL_NATIVE sg=47 cpu_ms=10044 vector=\n[ 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0, 0 ]\nAFS_CLOSED_CF_NATIVE_PASS sg=47\n"
+    },
+    "nonclosed_domain_counterexample": {
+      "task": "20260927T003136-closedcf-domain-95fd2ab5",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "/home/user/xyren/AllFSPT/tests/test_closed_cf_domain.g"
+        ],
+        "created": 1790440296.110824,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 18.064276933670044,
+        "exit_code": 0,
+        "finished": 1790440338.3843565,
+        "hostname": "n05.local",
+        "id": "20260927T003136-closedcf-domain-95fd2ab5",
+        "pbs_job": "115919.head.local",
+        "pid": 12080,
+        "queue": "derivation_queue",
+        "started": 1790440320.3198857,
+        "status": "done",
+        "timeout_s": 120
+      },
+      "stdout_sha256": "435ffe38214bd64768441fe7b47779bda4058b1078d2bc803b25be5deabe94c7",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:101\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:190\n    for item in AFSPipO5Program do\n                ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:212\n    return values[AFSPipO5Output]/16;\n                  ^^^^^^^^^^^^^^\nAFS_CLOSED_CF_DOMAIN_PASS nonclosed_mismatches=6\n"
+    },
+    "direct_closed_cup": {
+      "task": "20260927T003907-closedcf-direct-fixed-1b496084",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "/home/user/xyren/AllFSPT/tests/test_closed_cf_direct.g"
+        ],
+        "created": 1790440747.8346224,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 20.066837787628174,
+        "exit_code": 0,
+        "finished": 1790440791.8146365,
+        "hostname": "n05.local",
+        "id": "20260927T003907-closedcf-direct-fixed-1b496084",
+        "pbs_job": "115919.head.local",
+        "pid": 12112,
+        "queue": "derivation_queue",
+        "started": 1790440771.7476008,
+        "status": "done",
+        "timeout_s": 300
+      },
+      "stdout_sha256": "7d6a3faf63230700a247c730ca01af84775c50ce0733a089b361b565bf069801",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:101\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:190\n    for item in AFSPipO5Program do\n                ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:212\n    return values[AFSPipO5Output]/16;\n                  ^^^^^^^^^^^^^^\nAFS_CLOSED_CF_DIRECT_PASS cases=12080\n"
+    },
+    "lazy_closed_cup": {
+      "task": "20260927T004842-closedcf-lazy-80ee3f5c",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "/home/user/xyren/AllFSPT/tests/test_closed_cf_lazy.g"
+        ],
+        "created": 1790441322.695858,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 21.070067405700684,
+        "exit_code": 0,
+        "finished": 1790441367.722245,
+        "hostname": "n05.local",
+        "id": "20260927T004842-closedcf-lazy-80ee3f5c",
+        "pbs_job": "115919.head.local",
+        "pid": 12165,
+        "queue": "derivation_queue",
+        "started": 1790441346.6519845,
+        "status": "done",
+        "timeout_s": 300
+      },
+      "stdout_sha256": "b19d2911194ba01db51601550052824e97d847dc832b2c123df1c53f71ced105",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:101\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:190\n    for item in AFSPipO5Program do\n                ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:212\n    return values[AFSPipO5Output]/16;\n                  ^^^^^^^^^^^^^^\nAFS_CLOSED_CF_LAZY_PASS cases=12080\n"
+    },
+    "half_phase_native_vectors": {
+      "task": "20260927T005018-half-phase-exact-40e5f9c0",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "/home/user/xyren/AllFSPT/tests/test_backend_half_phase.g"
+        ],
+        "created": 1790441418.5100293,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 29.10169744491577,
+        "exit_code": 0,
+        "finished": 1790441472.1035182,
+        "hostname": "n05.local",
+        "id": "20260927T005018-half-phase-exact-40e5f9c0",
+        "pbs_job": "115919.head.local",
+        "pid": 12180,
+        "queue": "derivation_queue",
+        "started": 1790441443.001592,
+        "status": "done",
+        "timeout_s": 300
+      },
+      "stdout_sha256": "3cf19b0e264823ca74a25efd95b0999a204ee0f67f93bb41888736a3f3dfa1b4",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/tests/test\\\n_backend_half_phase.g:9\n      if One(c.G) in xs then return 0;fi;\n             ^\nAFS_BUILD affine_start sg=7 cpu_ms=17714\nAFS_BUILD affine_done sg=7 cpu_ms=18267\nAFS_BUILD holonomy_start cpu_ms=18267\nAFS_BUILD RP_start order=2 cpu_ms=18306\nAFS_BUILD RL_start cpu_ms=18326\nAFS_BUILD section_start cpu_ms=18554\nAFS_BUILD extension_start cpu_ms=18557\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 228,\n  RP_ms := 20,\n  extension_ms := 414,\n  holonomy_ms := 39,\n  section_ms := 3 )\nHALF_PHASE_NATIVE_PASS sg=7 degrees=1..5\nAFS_BUILD affine_start sg=47 cpu_ms=19229\nAFS_BUILD affine_done sg=47 cpu_ms=19826\nAFS_BUILD holonomy_start cpu_ms=19827\nAFS_BUILD RP_start order=8 cpu_ms=19952\nAFS_BUILD RL_start cpu_ms=20810\nAFS_BUILD section_start cpu_ms=21050\nAFS_BUILD extension_start cpu_ms=21062\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 240,\n  RP_ms := 858,\n  extension_ms := 3177,\n  holonomy_ms := 125,\n  section_ms := 12 )\nHALF_PHASE_NATIVE_PASS sg=47 degrees=1..5\nAFS_HALF_PHASE_TEST_PASS\n"
+    },
+    "half_phase_exact_primitive": {
+      "task": "20260927T010909-half-phase-primitive-0e529e1d",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "/home/user/xyren/AllFSPT/tests/test_half_phase_primitive.g"
+        ],
+        "created": 1790442549.3298206,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 25.07543134689331,
+        "exit_code": 0,
+        "finished": 1790442599.0183187,
+        "hostname": "n05.local",
+        "id": "20260927T010909-half-phase-primitive-0e529e1d",
+        "pbs_job": "115919.head.local",
+        "pid": 12331,
+        "queue": "derivation_queue",
+        "started": 1790442573.9427245,
+        "status": "done",
+        "timeout_s": 300
+      },
+      "stdout_sha256": "225000de96e48b22925754bc951e340e55741a34256f6e5ca8b468c42465cab5",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/tests/test\\\n_half_phase_primitive.g:7\n    if One(ctx.G) in [g,h] then return 0;fi;\n           ^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/tests/test\\\n_half_phase_primitive.g:18\n    xs:=List([1..2],i->elts[1+((3*j+i^2) mod Length(elts))]);;\n                       ^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/tests/test\\\n_half_phase_primitive.g:18\n    xs:=List([1..2],i->elts[1+((3*j+i^2) mod Length(elts))]);;\n                                                    ^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/tests/test\\\n_half_phase_primitive.g:20\n    xs:=List([1..3],i->elts[1+((3*j+i^2) mod Length(elts))]);;\n                       ^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/tests/test\\\n_half_phase_primitive.g:20\n    xs:=List([1..3],i->elts[1+((3*j+i^2) mod Length(elts))]);;\n                                                    ^^^^\nAFS_BUILD affine_start sg=7 cpu_ms=16998\nAFS_BUILD affine_done sg=7 cpu_ms=17548\nAFS_BUILD holonomy_start cpu_ms=17549\nAFS_BUILD RP_start order=2 cpu_ms=17588\nAFS_BUILD RL_start cpu_ms=17608\nAFS_BUILD section_start cpu_ms=17832\nAFS_BUILD extension_start cpu_ms=17835\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 224,\n  RP_ms := 20,\n  extension_ms := 413,\n  holonomy_ms := 39,\n  section_ms := 3 )\nHALF_PHASE_PRIMITIVE_PASS sg=7 translated_cases=24\nAFS_BUILD affine_start sg=47 cpu_ms=18615\nAFS_BUILD affine_done sg=47 cpu_ms=19215\nAFS_BUILD holonomy_start cpu_ms=19215\nAFS_BUILD RP_start order=8 cpu_ms=19341\nAFS_BUILD RL_start cpu_ms=20193\nAFS_BUILD section_start cpu_ms=20432\nAFS_BUILD extension_start cpu_ms=20444\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 239,\n  RP_ms := 852,\n  extension_ms := 3175,\n  holonomy_ms := 126,\n  section_ms := 12 )\nHALF_PHASE_PRIMITIVE_PASS sg=47 translated_cases=24\nAFS_HALF_PHASE_PRIMITIVE_TEST_PASS\n"
+    },
+    "smith_all_columns_arbitrary_phase": {
+      "task": "20260927T004226-smith-transfer-exact-5d0277ee",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "/home/user/xyren/AllFSPT/tests/test_backend_smith_transfer.g"
+        ],
+        "created": 1790440946.9510822,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 29.106051206588745,
+        "exit_code": 0,
+        "finished": 1790441000.4707732,
+        "hostname": "n05.local",
+        "id": "20260927T004226-smith-transfer-exact-5d0277ee",
+        "pbs_job": "115919.head.local",
+        "pid": 12137,
+        "queue": "derivation_queue",
+        "started": 1790440971.364507,
+        "status": "done",
+        "timeout_s": 300
+      },
+      "stdout_sha256": "e2f9b5f1296552ccaa25cc2d562a84da43129e6cbe358945e95429fbc22bff83",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/tests/test\\\n_backend_smith_transfer.g:10\n      if One(c.G) in xs then return 0;fi;\n             ^\nAFS_BUILD affine_start sg=7 cpu_ms=17937\nAFS_BUILD affine_done sg=7 cpu_ms=18490\nAFS_BUILD holonomy_start cpu_ms=18490\nAFS_BUILD RP_start order=2 cpu_ms=18529\nAFS_BUILD RL_start cpu_ms=18550\nAFS_BUILD section_start cpu_ms=18778\nAFS_BUILD extension_start cpu_ms=18782\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 228,\n  RP_ms := 21,\n  extension_ms := 413,\n  holonomy_ms := 39,\n  section_ms := 4 )\nSMITH_NATIVE_ARBITRARY_PASS sg=7 degrees=1..5\nAFS_BUILD affine_start sg=47 cpu_ms=19447\nAFS_BUILD affine_done sg=47 cpu_ms=20049\nAFS_BUILD holonomy_start cpu_ms=20049\nAFS_BUILD RP_start order=8 cpu_ms=20175\nAFS_BUILD RL_start cpu_ms=21039\nAFS_BUILD section_start cpu_ms=21282\nAFS_BUILD extension_start cpu_ms=21294\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 243,\n  RP_ms := 864,\n  extension_ms := 3203,\n  holonomy_ms := 126,\n  section_ms := 12 )\nSMITH_NATIVE_ARBITRARY_PASS sg=47 degrees=1..5\nAFS_SMITH_NATIVE_TEST_PASS\n"
+    },
+    "half_coefficient_support_219": {
+      "task": "20260927T005018-half-support219-6d751d1d",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "-c",
+          "AFS_SG:=219;",
+          "/home/user/xyren/AllFSPT/tests/profile_half_phase_support.g"
+        ],
+        "created": 1790441418.5751798,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 155.52555322647095,
+        "exit_code": 0,
+        "finished": 1790441598.5318244,
+        "hostname": "n05.local",
+        "id": "20260927T005018-half-support219-6d751d1d",
+        "pbs_job": "115919.head.local",
+        "pid": 12185,
+        "queue": "derivation_queue",
+        "started": 1790441443.0060825,
+        "status": "done",
+        "timeout_s": 1200
+      },
+      "stdout_sha256": "74f84f219600e7ecf8f3ecafca2e598458a279909b927cfc213d0f23259d3f7c",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nAFS_BUILD affine_start sg=219 cpu_ms=17815\nAFS_BUILD affine_done sg=219 cpu_ms=18349\nAFS_BUILD holonomy_start cpu_ms=18349\nAFS_BUILD RP_start order=24 cpu_ms=18489\nAFS_BUILD RL_start cpu_ms=20566\nAFS_BUILD section_start cpu_ms=20820\nAFS_BUILD extension_start cpu_ms=21192\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 254,\n  RP_ms := 2077,\n  extension_ms := 79134,\n  holonomy_ms := 140,\n  section_ms := 372 )\nHALF_SUPPORT_PROGRESS sg=219 cell=10 total=21733 odd=21705 cpu_ms=3261\nHALF_SUPPORT_PROGRESS sg=219 cell=20 total=173798 odd=172489 cpu_ms=24210\nHALF_SUPPORT_PROGRESS sg=219 cell=30 total=224813 odd=223386 cpu_ms=31250\nHALF_SUPPORT_PROGRESS sg=219 cell=40 total=238429 odd=237002 cpu_ms=32500\nHALF_SUPPORT_PROGRESS sg=219 cell=50 total=257065 odd=255638 cpu_ms=34384\nHALF_SUPPORT_PROGRESS sg=219 cell=60 total=320562 odd=319103 cpu_ms=42312\nHALF_SUPPORT_PROGRESS sg=219 cell=70 total=380267 odd=378751 cpu_ms=49495\nHALF_SUPPORT_PROGRESS sg=219 cell=80 total=387103 odd=385587 cpu_ms=50136\nHALF_SUPPORT_PROGRESS sg=219 cell=90 total=394171 odd=392643 cpu_ms=50799\nHALF_SUPPORT_PROGRESS sg=219 cell=100 total=415402 odd=413842 cpu_ms=53805\nHALF_SUPPORT_PROGRESS sg=219 cell=102 total=416625 odd=415065 cpu_ms=53911\nAFS_HALF_SUPPORT_PROFILE_PASS\n"
+    },
+    "exact_hash_cache_v2": {
+      "task": "20260927T010409-hash-cache-exact-v2-cd672116",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "/home/user/xyren/AllFSPT/tests/test_backend_hash_cache.g"
+        ],
+        "created": 1790442249.6980703,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 19.066003799438477,
+        "exit_code": 0,
+        "finished": 1790442293.0248728,
+        "hostname": "n05.local",
+        "id": "20260927T010409-hash-cache-exact-v2-cd672116",
+        "pbs_job": "115919.head.local",
+        "pid": 12314,
+        "queue": "derivation_queue",
+        "started": 1790442273.9586775,
+        "status": "done",
+        "timeout_s": 300
+      },
+      "stdout_sha256": "a8b7d0f6a04241da9cea9d87cff0a76bfdcada5d2316a8ec4e6e03ab6cca96b3",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nAFS_BUILD affine_start sg=1 cpu_ms=17513\nAFS_BUILD affine_done sg=1 cpu_ms=17524\nAFS_BUILD holonomy_start cpu_ms=17524\nAFS_BUILD RP_start order=1 cpu_ms=17612\nAFS_HASH_CACHE_EXACT_PASS\n"
+    },
+    "hash_real_access_trace_initial_variant": {
+      "task": "20260927T010157-hash-memo-trace219-799f9f01",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "-c",
+          "AFS_SG:=219;",
+          "/home/user/xyren/AllFSPT/tests/bench_hash_memo_trace.g"
+        ],
+        "created": 1790442117.3655324,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 275.88251209259033,
+        "exit_code": 0,
+        "finished": 1790442417.4306514,
+        "hostname": "n05.local",
+        "id": "20260927T010157-hash-memo-trace219-799f9f01",
+        "pbs_job": "115919.head.local",
+        "pid": 12306,
+        "queue": "derivation_queue",
+        "started": 1790442141.547959,
+        "status": "done",
+        "timeout_s": 1200
+      },
+      "stdout_sha256": "6bb4e5d436ef2daa86ea54cdcd1e7c3db67e9b6e9acd06f39cb8d85fa3cbd60a",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nAFS_BUILD affine_start sg=219 cpu_ms=17164\nAFS_BUILD affine_done sg=219 cpu_ms=17699\nAFS_BUILD holonomy_start cpu_ms=17699\nAFS_BUILD RP_start order=24 cpu_ms=17835\nAFS_BUILD RL_start cpu_ms=19910\nAFS_BUILD section_start cpu_ms=20485\nAFS_BUILD extension_start cpu_ms=20536\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 575,\n  RP_ms := 2075,\n  extension_ms := 79006,\n  holonomy_ms := 136,\n  section_ms := 51 )\nHASH_MEMO_REAL_TRACE sg=219 accesses=416625\nSORTED_MEMO_TRACE_COMPLETE sg=219 cpu_ms=50114 misses=306871\nHASH_MEMO_TRACE_COMPLETE sg=219 cpu_ms=71287 misses=306871\nAFS_HASH_MEMO_TRACE_PASS\n"
+    },
+    "actual_survivor_bundle_228": {
+      "task": "20260927T005413-cf-bundle228-d15a4a28",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "-c",
+          "AFS_ROOT:=\"/home/user/xyren/AllFSPT/runs/cf_bundle_0054/source\";AFS_SG:=228;",
+          "/home/user/xyren/AllFSPT/runs/cf_bundle_0054/source/tests/bench_cf_bundle.g"
+        ],
+        "created": 1790441653.8261669,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 676.4597992897034,
+        "exit_code": 0,
+        "finished": 1790442354.2386024,
+        "hostname": "n05.local",
+        "id": "20260927T005413-cf-bundle228-d15a4a28",
+        "pbs_job": "115919.head.local",
+        "pid": 12203,
+        "queue": "derivation_queue",
+        "started": 1790441677.7786117,
+        "status": "done",
+        "timeout_s": 7200
+      },
+      "stdout_sha256": "59f296edbfc018389c0eb33eeaa974475e98eeb002c3b24905d52254594a191c",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/gap/formulas.g:101\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/gap/classification.g:85\n      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then\n                                             ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/gap/classification.g:103\n  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\\\n_NATIVE=true);\n                                                                       ^^^^^^^\\\n^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/gap/classification.g:105\n    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);\n                                           ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/gap/classification.g:246\n      record:=AFSClassifyPipTorsion(C,n1,op);\n              ^^^^^^^^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=228 cpu_ms=18675\nAFS_BUILD affine_done sg=228 cpu_ms=19257\nAFS_BUILD holonomy_start cpu_ms=19257\nAFS_BUILD RP_start order=48 cpu_ms=19471\nAFS_BUILD RL_start cpu_ms=21614\nAFS_BUILD section_start cpu_ms=21866\nAFS_BUILD extension_start cpu_ms=21968\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 252,\n  RP_ms := 2143,\n  extension_ms := 76183,\n  holonomy_ms := 214,\n  section_ms := 102 )\nAFS_STAGE 228 cohomology cpu_ms=98198\nAFS_STAGE 228 primary_cf cpu_ms=107724\nAFS_STAGE 228 primary_mc_and_bos cpu_ms=324098\nAFS_STAGE 228 incoming_mc cpu_ms=332653\nAFS_STAGE 228 secondary_bos cpu_ms=333350\nAFS_STAGE 228 secondary_mc cpu_ms=333352\nAFS_STAGE 228 pip cpu_ms=333353\nAFS_STAGE 228 classification_end cpu_ms=333677\nCF_BUNDLE_CLASS_COMPLETE sg=228 CF=1 cpu_ms=333677 native_mod2=true\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/tests/bench_cf_bundle.g:35\n  Print(\"CF_BUNDLE_PHASE_SAMPLES \",List(tuples,xs->CallFuncList(lift.primitive\\\n,xs)),\"\\n\");\n                                                                ^^^^\nCF_BUNDLE_PROGRESS sg=228 cell=10/231 total_terms=131 odd_terms=131 cpu_ms=\n4005\nCF_BUNDLE_PROGRESS sg=228 cell=20/231 total_terms=3597 odd_terms=3597 cpu_ms=\n27065\nCF_BUNDLE_PROGRESS sg=228 cell=30/231 total_terms=1666 odd_terms=1634 cpu_ms=\n54013\nCF_BUNDLE_PROGRESS sg=228 cell=40/231 total_terms=2975 odd_terms=2975 cpu_ms=\n141681\nCF_BUNDLE_PROGRESS sg=228 cell=50/231 total_terms=1018 odd_terms=1018 cpu_ms=\n179653\nCF_BUNDLE_PROGRESS sg=228 cell=60/231 total_terms=16 odd_terms=16 cpu_ms=\n181314\nCF_BUNDLE_PROGRESS sg=228 cell=70/231 total_terms=746 odd_terms=746 cpu_ms=\n184255\nCF_BUNDLE_PROGRESS sg=228 cell=80/231 total_terms=618 odd_terms=618 cpu_ms=\n187021\nCF_BUNDLE_PROGRESS sg=228 cell=90/231 total_terms=368 odd_terms=368 cpu_ms=\n191463\nCF_BUNDLE_PROGRESS sg=228 cell=100/231 total_terms=2742 odd_terms=2742 cpu_ms=\n222545\nCF_BUNDLE_PROGRESS sg=228 cell=110/231 total_terms=329 odd_terms=329 cpu_ms=\n229427\nCF_BUNDLE_PROGRESS sg=228 cell=120/231 total_terms=866 odd_terms=866 cpu_ms=\n245146\nCF_BUNDLE_PROGRESS sg=228 cell=130/231 total_terms=9457 odd_terms=9419 cpu_ms=\n282909\nCF_BUNDLE_PROGRESS sg=228 cell=140/231 total_terms=323 odd_terms=323 cpu_ms=\n298466\nCF_BUNDLE_PROGRESS sg=228 cell=150/231 total_terms=200 odd_terms=200 cpu_ms=\n310892\nCF_BUNDLE_PROGRESS sg=228 cell=160/231 total_terms=5 odd_terms=5 cpu_ms=311543\nCF_BUNDLE_PROGRESS sg=228 cell=170/231 total_terms=100 odd_terms=100 cpu_ms=\n312195\nCF_BUNDLE_PROGRESS sg=228 cell=180/231 total_terms=182 odd_terms=182 cpu_ms=\n315763\nCF_BUNDLE_PROGRESS sg=228 cell=190/231 total_terms=2699 odd_terms=2699 cpu_ms=\n324517\nCF_BUNDLE_PROGRESS sg=228 cell=200/231 total_terms=174 odd_terms=174 cpu_ms=\n329910\nCF_BUNDLE_PROGRESS sg=228 cell=210/231 total_terms=356 odd_terms=356 cpu_ms=\n338807\nCF_BUNDLE_PROGRESS sg=228 cell=220/231 total_terms=20 odd_terms=20 cpu_ms=\n339911\nCF_BUNDLE_PROGRESS sg=228 cell=230/231 total_terms=180 odd_terms=180 cpu_ms=\n341776\nCF_BUNDLE_PROGRESS sg=228 cell=231/231 total_terms=60 odd_terms=60 cpu_ms=\n341787\nCF_BUNDLE_LIFT_COMPLETE sg=228 index=1 cpu_ms=341878\nCF_BUNDLE_NATIVE_OBSTRUCTION [ 0, 0, 0, 1/2, 0, 0, 1/2, 0, 1/2, 0, 0, 0, 0, \n  0, 0, 1/2, 0, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 1/2, 0, 0, \n  1/2, 1/2, 0, 0, 0, 1/2, 1/2, 0, 1/2, 1/2, 0, 0, 0, 1/2, 1/2, 0, 1/2, 0, 0, \n  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1/2, 1/2, 1/2, 0, 1/2, 0, 1/2, 1/2, 0, 0, \n  0, 1/2, 1/2, 0, 1/2, 0, 1/2, 0, 1/2, 1/2, 1/2, 0, 0, 0, 0, 0, 0, 1/2, 0, \n  1/2, 1/2, 0, 1/2, 1/2, 0, 1/2, 0, 1/2, 1/2, 1/2, 0, 1/2, 1/2, 0, 1/2, 0, 0, \n  0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 1/2, \n  0, 0, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 0, 1/2, 0, 1/2, 1/2, \n  1/2, 1/2, 0, 1/2, 1/2, 0, 1/2, 0, 1/2, 1/2, 0, 0, 0, 1/2, 0, 0, 0, 0, 1/2, \n  1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1/2, 1/2, 0, \n  1/2, 1/2, 0, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 1/2, 1/2, 1/2, 0, 0, 0, 0, 0, 0, \n  1/2, 0, 1/2, 0, 0, 0, 0, 1/2, 0, 1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0 ]\nCF_BUNDLE_NATIVE_PRIMITIVE [ 0, 0, 0, 0, 0, 3/4, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  3/4, 0, 1/2, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 1/2, 0, 0, 1/2, 0, \n  1/2, 0, 0, 1/2, 0, 1/2, 0, 0, 3/4, 0, 1/4, 0, 3/4, 0, 1/2, 0, 0, 0, 0, 0, \n  0, 1/4, 0, 0, 0, 0, 0, 1/2, 0, 1/2, 1/2, 0, 1/2, 1/2, 1/2, 0, 0, 0, 0, 1/2, \n  1/2, 0, 1/2, 1/2, 1/2, 0, 1/2, 0, 0, 1/2, 0, 0, 0, 0, 0, 1/2, 1/2, 1/2, \n  1/2, 0, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 1/2, 1/2, 1/2, 0, 0, \n  0, 0, 1/2, 0, 0, 0, 0, 1/2, 0, 1/2, 1/2, 1/2, 0 ]\nCF_BUNDLE_PHASE_SAMPLES [ 0, 0, 0, 0 ]\nAFS_CF_BUNDLE_NEW_ONLY_COMPLETE sg=228\n"
+    },
+    "closed_cf_full_native_228": {
+      "task": "20260927T003030-closedcf228-559812c1",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "-c",
+          "AFS_SG:=228;",
+          "/home/user/xyren/AllFSPT/tests/bench_stacking_closed_cf.g"
+        ],
+        "created": 1790440230.5128121,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 2698.236512899399,
+        "exit_code": 0,
+        "finished": 1790442966.0730188,
+        "hostname": "n05.local",
+        "id": "20260927T003030-closedcf228-559812c1",
+        "pbs_job": "115919.head.local",
+        "pid": 12034,
+        "queue": "derivation_queue",
+        "started": 1790440267.8363023,
+        "status": "done",
+        "timeout_s": 3600
+      },
+      "stdout_sha256": "8052f05c2b3d88c06daa28d0ce4c7dc8f5d2c0fbe396f2792783ae2f0f9b8502",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:101\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:190\n    for item in AFSPipO5Program do\n                ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:212\n    return values[AFSPipO5Output]/16;\n                  ^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=228 cpu_ms=17311\nAFS_BUILD affine_done sg=228 cpu_ms=17899\nAFS_BUILD holonomy_start cpu_ms=17899\nAFS_BUILD RP_start order=48 cpu_ms=18124\nAFS_BUILD RL_start cpu_ms=20634\nAFS_BUILD section_start cpu_ms=20882\nAFS_BUILD extension_start cpu_ms=20998\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 247,\n  RP_ms := 2510,\n  extension_ms := 76011,\n  holonomy_ms := 225,\n  section_ms := 117 )\nCLOSED_CF_POINTWISE_PASS sg=228 cases=24\nCLOSED_CF_MOD2_NATIVE sg=228 cpu_ms=1285482 vector=\n[ 0, 0, 1/2, 1/2, 0, 1/2, 1/2, 0, 1/2, 0, 0, 0, 1/2, 0, 0, 1/2, 1/2, 0, 0, 0, \n  1/2, 0, 0, 0, 0, 0, 0, 1/2, 0, 1/2, 0, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 0, 0, \n  1/2, 1/2, 0, 0, 1/2, 0, 0, 0, 0, 1/2, 1/2, 0, 1/2, 0, 0, 0, 0, 1/2, 1/2, 0, \n  0, 1/2, 1/2, 0, 0, 0, 1/2, 1/2, 1/2, 0, 1/2, 0, 1/2, 1/2, 0, 1/2, 1/2, 0, \n  1/2, 0, 1/2, 0, 1/2, 0, 1/2, 1/2, 0, 0, 1/2, 0, 0, 1/2, 0, 0, 1/2, 1/2, \n  1/2, 0, 0, 1/2, 0, 1/2, 0, 1/2, 1/2, 1/2, 0, 1/2, 1/2, 0, 1/2, 0, 0, 0, 0, \n  0, 1/2, 0, 0, 0, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 0, 0, 0, 0, 0, \n  1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 0, 1/2, 0, 1/2, 1/2, 1/2, \n  1/2, 0, 1/2, 1/2, 0, 1/2, 0, 1/2, 1/2, 0, 0, 0, 1/2, 0, 0, 0, 0, 1/2, 1/2, \n  1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1/2, 1/2, 0, 0, 0, 0, 1/2, 1/2, 1/2, 0, \n  1/2, 1/2, 0, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 1/2, 1/2, 1/2, 0, 0, 0, 0, 0, 0, \n  1/2, 0, 1/2, 0, 0, 0, 0, 1/2, 0, 1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0 ]\nGENERAL_CF_INTEGRAL_NATIVE sg=228 cpu_ms=1271615 vector=\n[ 0, 0, 1/2, 1/2, 0, 1/2, 1/2, 0, 1/2, 0, 0, 0, 1/2, 0, 0, 1/2, 1/2, 0, 0, 0, \n  1/2, 0, 0, 0, 0, 0, 0, 1/2, 0, 1/2, 0, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 0, 0, \n  1/2, 1/2, 0, 0, 1/2, 0, 0, 0, 0, 1/2, 1/2, 0, 1/2, 0, 0, 0, 0, 1/2, 1/2, 0, \n  0, 1/2, 1/2, 0, 0, 0, 1/2, 1/2, 1/2, 0, 1/2, 0, 1/2, 1/2, 0, 1/2, 1/2, 0, \n  1/2, 0, 1/2, 0, 1/2, 0, 1/2, 1/2, 0, 0, 1/2, 0, 0, 1/2, 0, 0, 1/2, 1/2, \n  1/2, 0, 0, 1/2, 0, 1/2, 0, 1/2, 1/2, 1/2, 0, 1/2, 1/2, 0, 1/2, 0, 0, 0, 0, \n  0, 1/2, 0, 0, 0, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 0, 0, 0, 0, 0, \n  1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 0, 1/2, 0, 1/2, 1/2, 1/2, \n  1/2, 0, 1/2, 1/2, 0, 1/2, 0, 1/2, 1/2, 0, 0, 0, 1/2, 0, 0, 0, 0, 1/2, 1/2, \n  1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1/2, 1/2, 0, 0, 0, 0, 1/2, 1/2, 1/2, 0, \n  1/2, 1/2, 0, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 1/2, 1/2, 1/2, 0, 0, 0, 0, 0, 0, \n  1/2, 0, 1/2, 0, 0, 0, 0, 1/2, 0, 1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  0, 0 ]\nAFS_CLOSED_CF_NATIVE_PASS sg=228\n",
+      "scope": "Same arbitrary first native H3 generator; translated 24 tuples and complete 231-entry native U1 phase vector. New reference AFSCup helper plus G2 versus existing compiled general formula plus integral G. New branch runs first with cold F5; old branch reuses F5. Not the actual-survivor lazy-half bundle benchmark."
+    },
+    "actual_survivor_bundle_219": {
+      "task": "20260927T005413-cf-bundle219-b31a496a",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "-c",
+          "AFS_ROOT:=\"/home/user/xyren/AllFSPT/runs/cf_bundle_0054/source\";AFS_SG:=219;",
+          "/home/user/xyren/AllFSPT/runs/cf_bundle_0054/source/tests/bench_cf_bundle.g"
+        ],
+        "created": 1790441653.760652,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 1723.6855013370514,
+        "exit_code": 0,
+        "finished": 1790443401.4594705,
+        "hostname": "n05.local",
+        "id": "20260927T005413-cf-bundle219-b31a496a",
+        "pbs_job": "115919.head.local",
+        "pid": 12201,
+        "queue": "derivation_queue",
+        "started": 1790441677.7737896,
+        "status": "done",
+        "timeout_s": 7200
+      },
+      "stdout_sha256": "71cec406188f94a38e78d3e76bb2ac3707f1cfef805aead365b98dc06d9928b6",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/gap/formulas.g:101\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/gap/classification.g:85\n      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then\n                                             ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/gap/classification.g:103\n  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\\\n_NATIVE=true);\n                                                                       ^^^^^^^\\\n^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/gap/classification.g:105\n    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);\n                                           ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/gap/classification.g:246\n      record:=AFSClassifyPipTorsion(C,n1,op);\n              ^^^^^^^^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=219 cpu_ms=18638\nAFS_BUILD affine_done sg=219 cpu_ms=19167\nAFS_BUILD holonomy_start cpu_ms=19168\nAFS_BUILD RP_start order=24 cpu_ms=19300\nAFS_BUILD RL_start cpu_ms=21357\nAFS_BUILD section_start cpu_ms=21602\nAFS_BUILD extension_start cpu_ms=21652\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 245,\n  RP_ms := 2057,\n  extension_ms := 79527,\n  holonomy_ms := 132,\n  section_ms := 50 )\nAFS_STAGE 219 cohomology cpu_ms=101228\nAFS_STAGE 219 primary_cf cpu_ms=102874\nAFS_STAGE 219 primary_mc_and_bos cpu_ms=564102\nAFS_STAGE 219 incoming_mc cpu_ms=585209\nAFS_STAGE 219 secondary_bos cpu_ms=585795\nAFS_STAGE 219 secondary_mc cpu_ms=585796\nAFS_STAGE 219 pip cpu_ms=585797\nAFS_STAGE 219 pip_d3 cpu_ms=586177\nAFS_STAGE 219 classification_end cpu_ms=789109\nCF_BUNDLE_CLASS_COMPLETE sg=219 CF=2 cpu_ms=789109 native_mod2=true\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/cf_bu\\\nndle_0054/source/tests/bench_cf_bundle.g:35\n  Print(\"CF_BUNDLE_PHASE_SAMPLES \",List(tuples,xs->CallFuncList(lift.primitive\\\n,xs)),\"\\n\");\n                                                                ^^^^\nCF_BUNDLE_PROGRESS sg=219 cell=10/102 total_terms=1475 odd_terms=1473 cpu_ms=\n43918\nCF_BUNDLE_PROGRESS sg=219 cell=20/102 total_terms=30671 odd_terms=\n30499 cpu_ms=406582\nCF_BUNDLE_PROGRESS sg=219 cell=30/102 total_terms=984 odd_terms=960 cpu_ms=\n502987\nCF_BUNDLE_PROGRESS sg=219 cell=40/102 total_terms=1227 odd_terms=1227 cpu_ms=\n516778\nCF_BUNDLE_PROGRESS sg=219 cell=50/102 total_terms=2382 odd_terms=2382 cpu_ms=\n539131\nCF_BUNDLE_PROGRESS sg=219 cell=60/102 total_terms=13465 odd_terms=\n13455 cpu_ms=622606\nCF_BUNDLE_PROGRESS sg=219 cell=70/102 total_terms=172 odd_terms=172 cpu_ms=\n703341\nCF_BUNDLE_PROGRESS sg=219 cell=80/102 total_terms=882 odd_terms=882 cpu_ms=\n711582\nCF_BUNDLE_PROGRESS sg=219 cell=90/102 total_terms=593 odd_terms=591 cpu_ms=\n718285\nCF_BUNDLE_PROGRESS sg=219 cell=100/102 total_terms=336 odd_terms=336 cpu_ms=\n745105\nCF_BUNDLE_PROGRESS sg=219 cell=102/102 total_terms=598 odd_terms=598 cpu_ms=\n746714\nCF_BUNDLE_LIFT_COMPLETE sg=219 index=1 cpu_ms=746792\nCF_BUNDLE_NATIVE_OBSTRUCTION [ 1/2, 0, 0, 1/2, 1/2, 1/2, 0, 0, 0, 1/2, 1/2, \n  0, 0, 1/2, 0, 1/2, 0, 0, 1/2, 0, 0, 0, 1/2, 0, 0, 1/2, 1/2, 1/2, 1/2, 1/2, \n  0, 0, 1/2, 0, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 0, 1/2, 0, 1/2, 1/2, 1/2, 0, 0, \n  0, 1/2, 0, 0, 0, 1/2, 0, 0, 0, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, \n  0, 0, 1/2, 1/2, 0, 1/2, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, \n  1/2, 0, 0, 0, 0, 1/2, 1/2, 0, 0, 0, 0, 0, 0, 0 ]\nCF_BUNDLE_NATIVE_PRIMITIVE [ 0, 0, 1/4, 0, 1/2, 0, 1/4, 0, 0, 0, 0, 0, 1/2, \n  0, 1/2, 1/2, 0, 0, 0, 0, 1/2, 0, 0, 0, 1/2, 0, 1/2, 0, 0, 0, 1/2, 0, 0, \n  3/4, 1/2, 0, 0, 0, 0, 1/2, 3/4, 1/2, 1/4, 1/4, 0, 1/2, 0, 0, 1/2, 0, 0, \n  1/2, 0, 1/2, 0, 1/2, 0, 1/2, 1/2, 0, 0, 1/2, 1/2, 1/2, 1/2, 1/2 ]\nCF_BUNDLE_PHASE_SAMPLES [ 0, 0, 0, 0 ]\nCF_BUNDLE_PROGRESS sg=219 cell=10/102 total_terms=1475 odd_terms=1473 cpu_ms=\n9428\nCF_BUNDLE_PROGRESS sg=219 cell=20/102 total_terms=30671 odd_terms=\n30499 cpu_ms=90073\nCF_BUNDLE_PROGRESS sg=219 cell=30/102 total_terms=984 odd_terms=960 cpu_ms=\n113314\nCF_BUNDLE_PROGRESS sg=219 cell=40/102 total_terms=1227 odd_terms=1227 cpu_ms=\n117931\nCF_BUNDLE_PROGRESS sg=219 cell=50/102 total_terms=2382 odd_terms=2382 cpu_ms=\n124302\nCF_BUNDLE_PROGRESS sg=219 cell=60/102 total_terms=13465 odd_terms=\n13455 cpu_ms=151413\nCF_BUNDLE_PROGRESS sg=219 cell=70/102 total_terms=172 odd_terms=172 cpu_ms=\n173006\nCF_BUNDLE_PROGRESS sg=219 cell=80/102 total_terms=882 odd_terms=882 cpu_ms=\n175726\nCF_BUNDLE_PROGRESS sg=219 cell=90/102 total_terms=593 odd_terms=591 cpu_ms=\n178649\nCF_BUNDLE_PROGRESS sg=219 cell=100/102 total_terms=336 odd_terms=336 cpu_ms=\n186400\nCF_BUNDLE_PROGRESS sg=219 cell=102/102 total_terms=598 odd_terms=598 cpu_ms=\n186944\nCF_BUNDLE_LIFT_COMPLETE sg=219 index=2 cpu_ms=186948\nCF_BUNDLE_NATIVE_OBSTRUCTION [ 0, 0, 1/2, 0, 1/2, 1/2, 1/2, 0, 1/2, 1/2, 1/2, \n  1/2, 0, 0, 1/2, 0, 0, 1/2, 1/2, 0, 1/2, 0, 0, 1/2, 0, 1/2, 1/2, 1/2, 1/2, \n  1/2, 1/2, 0, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 0, 0, 0, 1/2, 0, 0, 1/2, 1/2, \n  0, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 1/2, 1/2, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, \n  0, 0, 1/2, 0, 1/2, 0, 0, 1/2, 0, 1/2, 1/2, 1/2, 0, 0, 1/2, 1/2, 1/2, 1/2, \n  1/2, 0, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 1/2, 0, 1/2, 0, 0, 0, 0, 1/2, 1/2 ]\nCF_BUNDLE_NATIVE_PRIMITIVE [ 3/4, 0, 3/4, 3/4, 3/4, 3/4, 1/4, 0, 3/4, 0, 0, \n  0, 1/2, 0, 1/4, 0, 3/4, 0, 1/2, 0, 1/2, 0, 0, 0, 0, 0, 3/4, 0, 0, 0, 0, \n  1/2, 0, 0, 1/2, 0, 0, 0, 0, 3/4, 0, 1/2, 0, 1/4, 0, 0, 1/2, 3/4, 1/4, 1/4, \n  3/4, 1/4, 3/4, 1/2, 0, 0, 0, 3/4, 0, 0, 0, 3/4, 3/4, 1/2, 0, 1/2 ]\nCF_BUNDLE_PHASE_SAMPLES [ 0, 0, 0, 0 ]\nAFS_CF_BUNDLE_NEW_ONLY_COMPLETE sg=219\n",
+      "classification_cpu_ms": 789109,
+      "C1_lift_cpu_ms": 746792,
+      "C2_lift_cpu_ms": 186948,
+      "scope": "Actual surviving CF generators following mod2 classification in the immutable source shared with bundle228. Produces complete native obstruction and primitive seeds and evaluates four marked phase samples per generator. This development trial omits bosonic generators, stacking products and relation extraction; it is not a full-group benchmark."
+    }
+  },
+  "partial_profiles": {
+    "cold_f5_219": {
+      "task": "20260927T004616-native-transfer-profile219-53ffa623",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "-c",
+          "AFS_SG:=219;",
+          "/home/user/xyren/AllFSPT/tests/profile_native_transfer.g"
+        ],
+        "created": 1790441176.9203463,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 1111.9474687576294,
+        "exit_code": -15,
+        "finished": 1790442313.100899,
+        "hostname": "n05.local",
+        "id": "20260927T004616-native-transfer-profile219-53ffa623",
+        "pbs_job": "115919.head.local",
+        "pid": 12157,
+        "queue": "derivation_queue",
+        "started": 1790441201.153272,
+        "status": "failed",
+        "timeout_s": 1200
+      },
+      "completed_scope": "Complete degree-five F construction and zero-callback traversal. Subsequent Smith-only construction was intentionally cancelled after clear slowdown. No whole-task PASS claimed.",
+      "f5_build_cpu_ms": 52959,
+      "f5_terms": 416625,
+      "zero_callback_traversal_cpu_ms": 5403,
+      "stdout_sha256": "53a0867cd51b9b82cb96dcc7731b334af08ba97d97b218e941fb9d1e6d9368af",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nAFS_BUILD affine_start sg=219 cpu_ms=17219\nAFS_BUILD affine_done sg=219 cpu_ms=17751\nAFS_BUILD holonomy_start cpu_ms=17751\nAFS_BUILD RP_start order=24 cpu_ms=17890\nAFS_BUILD RL_start cpu_ms=19963\nAFS_BUILD section_start cpu_ms=20217\nAFS_BUILD extension_start cpu_ms=20587\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 254,\n  RP_ms := 2073,\n  extension_ms := 79133,\n  holonomy_ms := 139,\n  section_ms := 370 )\nF5_ONLY_PROGRESS sg=219 cell=10 cpu_ms=3211 terms=21733\nF5_ONLY_PROGRESS sg=219 cell=20 cpu_ms=24100 terms=173798\nF5_ONLY_PROGRESS sg=219 cell=30 cpu_ms=31181 terms=224813\nF5_ONLY_PROGRESS sg=219 cell=40 cpu_ms=32384 terms=238429\nF5_ONLY_PROGRESS sg=219 cell=50 cpu_ms=34253 terms=257065\nF5_ONLY_PROGRESS sg=219 cell=60 cpu_ms=41471 terms=320562\nF5_ONLY_PROGRESS sg=219 cell=70 cpu_ms=49520 terms=380267\nF5_ONLY_PROGRESS sg=219 cell=80 cpu_ms=50114 terms=387103\nF5_ONLY_PROGRESS sg=219 cell=90 cpu_ms=50748 terms=394171\nF5_ONLY_PROGRESS sg=219 cell=100 cpu_ms=52855 terms=415402\nF5_ONLY_PROGRESS sg=219 cell=102 cpu_ms=52959 terms=416625\nF5_ONLY_COMPLETE cpu_ms=52959 terms=416625\nF5_ZERO_TRAVERSAL cpu_ms=5403\nSMITH_F_ONLY_PROGRESS column=10/102 terms=3974 cpu_ms=28375\nSMITH_F_ONLY_PROGRESS column=20/102 terms=1152 cpu_ms=91206\nSMITH_F_ONLY_PROGRESS column=30/102 terms=170 cpu_ms=123812\nSMITH_F_ONLY_PROGRESS column=40/102 terms=172 cpu_ms=129195\nSMITH_F_ONLY_PROGRESS column=50/102 terms=19945 cpu_ms=349532\nSMITH_F_ONLY_PROGRESS column=60/102 terms=174914 cpu_ms=553929\nSMITH_F_ONLY_PROGRESS column=70/102 terms=41808 cpu_ms=763612\nSMITH_F_ONLY_PROGRESS column=80/102 terms=6879 cpu_ms=844064\nSMITH_F_ONLY_PROGRESS column=90/102 terms=6470 cpu_ms=932357\n"
+    }
+  },
+  "source_note": "Module hashes below identify the current optional implementation. Earlier development probes predate later added helpers; the actual-survivor bundle has an immutable complete source manifest.",
+  "current_module_sha256": {
+    "gap/backend_bar_mod2.g": "4f54447c16b28c6b7dd3b12e91d1a81797136bb47a32627be7aa6f0cef0beaae",
+    "gap/backend_half_phase.g": "9c11621b02ce4a7bacbf57332e4500d7a37f5e9ac65792ce81f63ab06675225c",
+    "gap/stacking_closed_cf.g": "99948d62e0f2fa8e90cf725d43439f9470352508f6c137d54fa5f80b0b8b71fe",
+    "gap/backend_smith_transfer.g": "134ae9ef6454d5f942a2b8bb34d9359fd3ee662e5804dfde1b15dd75284bf1dd",
+    "gap/backend_hash_cache.g": "30958c3bb86a23cb25d5a11ef0dbb888126f8c5da3325c2d0d50b47f9ade10fe"
+  },
+  "bundle_source_path": "runs/cf_bundle_0054/source",
+  "bundle_source_manifest": {
+    "gap/BACKEND.md": "e3fe3bff916957feb29f5cd8ac14adfb84ec21da5ca7e5ce4eb08eac81ebf8b3",
+    "gap/backend.g": "3df26e9746d9a929cb53e10bbb22ccb18f0f61e1d6e84f4e7afc002245bd06bd",
+    "gap/backend_bar.g": "f17525ab9d456ccceb9c0a4e22d1651ac510b97201f86445467a453b912bc60b",
+    "gap/backend_bar_mod2.g": "4f54447c16b28c6b7dd3b12e91d1a81797136bb47a32627be7aa6f0cef0beaae",
+    "gap/backend_cup_cycle.g": "a7d052c891f9320a3389584daa3d5e521a2be75d223a2ef1e55b48f3a0275a91",
+    "gap/backend_cup_slant.g": "48d6709aea5d180e7ff63ce015d6879974a1b05a8ebd7a1a28d17763cfa91432",
+    "gap/backend_diagonal.g": "11e04411cb2afe51fa98f2ac205f8e9c2c1e69f9bfa4e686767e3511dfa29afc",
+    "gap/backend_half_phase.g": "9c11621b02ce4a7bacbf57332e4500d7a37f5e9ac65792ce81f63ab06675225c",
+    "gap/backend_mod2_contraction.g": "0562ebbdc4cfceddc9ff10d3caedef1f1ce4d6de529097bbd385874f1b7fd854",
+    "gap/backend_resolution.g": "5453332bb4da63383f706423b767d636c9e9277b8660200ab190f2912552192b",
+    "gap/backend_smith_transfer.g": "134ae9ef6454d5f942a2b8bb34d9359fd3ee662e5804dfde1b15dd75284bf1dd",
+    "gap/backend_smith_units.g": "20530c5f9c607e0be46bced4b3d3c80a06cef19e1970412c51db16687a625500",
+    "gap/class_coordinates.g": "681d6ab197b249c9312d9fb46762cfef801441379488c250e8b10e3f64973165",
+    "gap/classification.g": "daa78d7a2dff41e6d21220e63ec3749959b86dde43ae7a5cbf525b7083b01fba",
+    "gap/formula_data.g": "4fd1ade218090c962fcdb89bf2255c351da5b9308ca98e54a5b3e896c6b8e28e",
+    "gap/formula_fast.g": "a4c1b81380e5fdd603d1977b84d1543ff3e7092684854580982cbf6fabc295c3",
+    "gap/formulas.g": "7afad2943e2417d785fe581477f1ff5fb21ea8d314ff5dbffc40f069bedd5d73",
+    "gap/pip.g": "574b2d7c9ba1c9039d9094caf3e0b8134445b14430dc915895f3664da65437e3",
+    "gap/pip_c4_data.g": "77bbf5267277f33efee025666e7fd22b1136a5f483151fceb5abd833b151f18c",
+    "gap/pip_coordinate_data.g": "daa9eb25fd7acb7a2e7d0fa286e6e1dece1ea913fe6e2d8e0783727c64433f87",
+    "gap/pip_coordinates.g": "817af838199cc6ea422c73de3497525f67f0170ad68c202c0f70ee5fb561a445",
+    "gap/pip_diagonal_data.g": "b1b79d31169e01f92fd51cb0497a425ca5f98b805f3bc645b7d1edc82be648f5",
+    "gap/pip_free.g": "2238716e563927e33325a0ecd4e5079d45636b6449f79622b0d7b2a883bd5c87",
+    "gap/pip_o5_general.g": "9a27dda678c9ffc0da986e62b47ca71cc8ce6cd305c6d2c5e989debb4c3c3f38",
+    "gap/pip_o5_program.g": "ba324e52fd1fbe99196dec47b9e35bcd95138a32e9ab8f3c71f101d1bcccf03f",
+    "gap/pip_o5_program.json": "10e607ca43e32f0d343bb54e83dab248b1c4ea379a68f3cce2c479b5f6e7dd2f",
+    "gap/pip_o5_sign.g": "097c4e799b0f485b3def3dbd1006930d32819c96feb8c36741a69c48923a239b",
+    "gap/pip_o5_sign.json": "ff62534ab5ed832b77a426eb915d87e46164ff560611b5f94cb945e33df5900c",
+    "gap/pip_stacking.g": "ca64fc2abd496134db9abd16b090295a8ea1c360b5626f1f6707da38c9ae34ab",
+    "gap/run_one.g": "d4b2f482b0c386702028f51f5fd7bd715f365e8a6def4c69d8b1af6f7557522e",
+    "gap/stacking.g": "5269db765c206989de8279467b389310190ff3417b2ac7b5493c2edf1a588f91",
+    "gap/stacking_closed_cf.g": "99948d62e0f2fa8e90cf725d43439f9470352508f6c137d54fa5f80b0b8b71fe",
+    "tests/bench_cf_bundle.g": "678eded27086d84d554fe1cb62f5cb49b8bb6ae05954159f3c24ac9931a36059"
+  },
+  "not_selected_for_production": [
+    "all-column Smith transfer (no measured benefit; chain construction slower)",
+    "official sparse-hash callback memoization (actual trace slower)"
+  ],
+  "hash_timing_variant_note": "The real-access timing job loaded the initial bare SparseHashTable AFSMemo prototype before the replacement-capable boxed dictionary wrapper was added. Hash key function unchanged. The measured regression is not claimed as a timing of the later wrapper.",
+  "pending": [],
+  "guarded_cancellation": {
+    "task": "20260927T010448-cancel-obsolete-cf-fixed-bf88219d",
+    "status": {
+      "command": [
+        "/home/apps/anaconda3/bin/python3",
+        "/home/user/xyren/AllFSPT/runs/backend_development/cancel_obsolete_cf_fixed.py"
+      ],
+      "created": 1790442288.1834931,
+      "cwd": "/home/user/xyren/AllFSPT",
+      "elapsed_s": 1.0161511898040771,
+      "exit_code": 0,
+      "finished": 1790442313.1022725,
+      "hostname": "n05.local",
+      "id": "20260927T010448-cancel-obsolete-cf-fixed-bf88219d",
+      "pbs_job": "115919.head.local",
+      "pid": 12316,
+      "queue": "derivation_queue",
+      "started": 1790442312.0859702,
+      "status": "done",
+      "timeout_s": 30
+    },
+    "stdout": "CANCELLED_OBSOLETE_OWN_PROBE 20260927T002303-mod2-g-cf219-d597d681 pid 11830 pgid 11830 /home/user/xyren/AllFSPT/tests/bench_backend_bar_mod2.g\nCANCELLED_OBSOLETE_OWN_PROBE 20260927T002304-mod2-g-cf228-7cde035d pid 11834 pgid 11834 /home/user/xyren/AllFSPT/tests/bench_backend_bar_mod2.g\nCANCELLED_OBSOLETE_OWN_PROBE 20260927T002910-mod2-g-fastcf228-c5e11379 pid 11983 pgid 11983 /home/user/xyren/AllFSPT/tests/bench_backend_bar_mod2_fast.g\nCANCELLED_OBSOLETE_OWN_PROBE 20260927T003030-closedcf219-f55140b3 pid 12032 pgid 12032 /home/user/xyren/AllFSPT/tests/bench_stacking_closed_cf.g\nCANCELLED_OBSOLETE_OWN_PROBE 20260927T004227-smith-transfer219-17188e53 pid 12139 pgid 12139 /home/user/xyren/AllFSPT/tests/bench_backend_smith_transfer.g\nCANCELLED_OBSOLETE_OWN_PROBE 20260927T004227-smith-transfer228-69736bec pid 12141 pgid 12141 /home/user/xyren/AllFSPT/tests/bench_backend_smith_transfer.g\nCANCELLED_OBSOLETE_OWN_PROBE 20260927T004616-native-transfer-profile219-53ffa623 pid 12157 pgid 12157 /home/user/xyren/AllFSPT/tests/profile_native_transfer.g\n",
+    "stdout_sha256": "0190944636dff5f9a3a7a530366b2134ae171822b7e4c4f87befdc4e47ca7b06"
+  },
+  "stage_timing_comparison_228": {
+    "old_task": "full_corrected_v07-p002-sg228",
+    "old_stage_begin_cpu_ms": 335587,
+    "old_stage_end_cpu_ms": 1667728,
+    "old_stage_cpu_s": 1332.141,
+    "old_log_prefix_sha256": "11bfb8c7fb0a043af99473d347547c5cb84e5374a665653940ed34fd61ec8a75",
+    "old_log_prefix": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nAFS_NATIVE_CONTRACTION_MODE mod2=true\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/full_\\\ncorrected_v07/source/gap/formulas.g:101\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/full_\\\ncorrected_v07/source/gap/classification.g:85\n      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then\n                                             ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/full_\\\ncorrected_v07/source/gap/classification.g:103\n  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\\\n_NATIVE=true);\n                                                                       ^^^^^^^\\\n^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/full_\\\ncorrected_v07/source/gap/classification.g:105\n    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);\n                                           ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/full_\\\ncorrected_v07/source/gap/classification.g:246\n      record:=AFSClassifyPipTorsion(C,n1,op);\n              ^^^^^^^^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=228 cpu_ms=18427\nAFS_BUILD affine_done sg=228 cpu_ms=19011\nAFS_BUILD holonomy_start cpu_ms=19011\nAFS_BUILD RP_start order=48 cpu_ms=19225\nAFS_BUILD RL_start cpu_ms=21359\nAFS_BUILD section_start cpu_ms=21611\nAFS_BUILD extension_start cpu_ms=21715\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 252,\n  RP_ms := 2134,\n  extension_ms := 76007,\n  holonomy_ms := 214,\n  section_ms := 104 )\nAFS_STAGE 228 cohomology cpu_ms=97770\nAFS_STAGE 228 primary_cf cpu_ms=107283\nAFS_STAGE 228 primary_mc_and_bos cpu_ms=324641\nAFS_STAGE 228 incoming_mc cpu_ms=333165\nAFS_STAGE 228 secondary_bos cpu_ms=334786\nAFS_STAGE 228 secondary_mc cpu_ms=334788\nAFS_STAGE 228 pip cpu_ms=334789\nAFS_STAGE 228 classification_end cpu_ms=335113\nAFS_STAGE 228 stack_lift_C1 cpu_ms=335587\nAFS_STAGE 228 stack_lift_B1 cpu_ms=1667728\n",
+    "old_status_snapshot": {
+      "command": [
+        "/home/apps/anaconda3/bin/python3",
+        "scripts/run_group.py",
+        "228",
+        "--mode",
+        "full",
+        "--source",
+        "/home/user/xyren/AllFSPT/runs/full_corrected_v07/source",
+        "--output",
+        "/home/user/xyren/AllFSPT/runs/full_corrected_v07/sg228.json"
+      ],
+      "created": 1790440003.7076504,
+      "cwd": "/home/user/xyren/AllFSPT",
+      "estimated_seconds": 3328.473,
+      "hostname": "n03.local",
+      "id": "full_corrected_v07-p002-sg228",
+      "pbs_job": "115917.head.local",
+      "pid": 57238,
+      "queue": "campaign3_queue",
+      "space_group": 228,
+      "started": 1790440038.5065076,
+      "status": "running",
+      "timeout_s": 5400
+    },
+    "new_task": "20260927T005413-cf-bundle228-d15a4a28",
+    "new_lift_cpu_ms": 341878,
+    "new_classification_cpu_ms": 333677,
+    "stage_ratio_old_over_new": 3.896539116292947,
+    "interpretation": "CPU time only for C1 lift construction in two different production/development contexts. This is not a same-process controlled A/B and not a whole-group or full-campaign speedup. Cache warming and surrounding driver work differ. Both contexts perform native mod2 classification first; the new source uses G2, lazy closed CF formula, half-phase native transfer, and retained native seed."
+  },
+  "hash_review": {
+    "reviewer": "formulas agent",
+    "finding": "No functional defect in deployed GAP 4.13.1 scope. Exact collision/key equality, immutable key storage, replacement/stored fail/Knows semantics preserved. HashKeyBag payload layout is GAP representation-specific; retain exact-representation tests as portability precondition. Prototype slower and remains disabled.",
+    "production_enabled": false
+  },
+  "stage_timing_comparison_219": {
+    "old_task": "full_corrected_v07-p001-sg219",
+    "old_stage_begin_cpu_ms": 763202,
+    "old_stage_end_cpu_ms": 3104317,
+    "old_stage_cpu_s": 2341.115,
+    "old_log_prefix_sha256": "e5e3af5c516d39de2d6c4721ee8aecf2745f995b2090728c1c42a8fd42af7ed0",
+    "old_log_prefix": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nAFS_NATIVE_CONTRACTION_MODE mod2=true\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/full_\\\ncorrected_v07/source/gap/formulas.g:101\n  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,\"_\"\\\n,String(fields.p)))[2];\n          ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/full_\\\ncorrected_v07/source/gap/classification.g:85\n      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then\n                                             ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/full_\\\ncorrected_v07/source/gap/classification.g:103\n  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\\\n_NATIVE=true);\n                                                                       ^^^^^^^\\\n^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/full_\\\ncorrected_v07/source/gap/classification.g:105\n    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);\n                                           ^^^^^^^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/full_\\\ncorrected_v07/source/gap/classification.g:246\n      record:=AFSClassifyPipTorsion(C,n1,op);\n              ^^^^^^^^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=219 cpu_ms=18870\nAFS_BUILD affine_done sg=219 cpu_ms=19401\nAFS_BUILD holonomy_start cpu_ms=19402\nAFS_BUILD RP_start order=24 cpu_ms=19539\nAFS_BUILD RL_start cpu_ms=21671\nAFS_BUILD section_start cpu_ms=21938\nAFS_BUILD extension_start cpu_ms=21996\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 267,\n  RP_ms := 2132,\n  extension_ms := 85742,\n  holonomy_ms := 137,\n  section_ms := 58 )\nAFS_STAGE 219 cohomology cpu_ms=107786\nAFS_STAGE 219 primary_cf cpu_ms=109450\nAFS_STAGE 219 primary_mc_and_bos cpu_ms=572785\nAFS_STAGE 219 incoming_mc cpu_ms=593233\nAFS_STAGE 219 secondary_bos cpu_ms=596100\nAFS_STAGE 219 secondary_mc cpu_ms=596101\nAFS_STAGE 219 pip cpu_ms=596102\nAFS_STAGE 219 pip_d3 cpu_ms=596488\nAFS_STAGE 219 classification_end cpu_ms=762727\nAFS_STAGE 219 stack_lift_C1 cpu_ms=763202\nAFS_STAGE 219 stack_lift_C2 cpu_ms=3104317\n",
+    "old_status_snapshot": {
+      "command": [
+        "/home/apps/anaconda3/bin/python3",
+        "scripts/run_group.py",
+        "219",
+        "--mode",
+        "full",
+        "--source",
+        "/home/user/xyren/AllFSPT/runs/full_corrected_v07/source",
+        "--output",
+        "/home/user/xyren/AllFSPT/runs/full_corrected_v07/sg219.json"
+      ],
+      "created": 1790440003.7076504,
+      "cwd": "/home/user/xyren/AllFSPT",
+      "estimated_seconds": 3328.473,
+      "hostname": "n02.local",
+      "id": "full_corrected_v07-p001-sg219",
+      "pbs_job": "115916.head.local",
+      "pid": 828,
+      "queue": "stacking_queue",
+      "space_group": 219,
+      "started": 1790440033.429991,
+      "status": "running",
+      "timeout_s": 5400
+    },
+    "new_task": "20260927T005413-cf-bundle219-b31a496a",
+    "new_lift_cpu_ms": 746792,
+    "new_classification_cpu_ms": 789109,
+    "stage_ratio_old_over_new": 3.1348956603712943,
+    "interpretation": "CPU time only for C1 lift construction in two different production/development contexts. This is not a same-process controlled A/B and not a whole-group or full-campaign speedup. Cache warming and surrounding driver work differ. Both contexts perform native mod2 classification first; the new source uses G2, lazy closed CF formula, half-phase native transfer, and retained native seed."
+  },
+  "timed_out_controls": {
+    "arbitrary_h3_compiled_native_219": {
+      "task": "20260927T002910-mod2-g-fastcf219-9e337b8e",
+      "status": {
+        "command": [
+          "/home/user/xyren/software/gap-4.13.1/gap",
+          "-q",
+          "-r",
+          "-b",
+          "-T",
+          "-c",
+          "AFS_SG:=219;",
+          "/home/user/xyren/AllFSPT/tests/bench_backend_bar_mod2_fast.g"
+        ],
+        "created": 1790440150.672964,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 3600.7144844532013,
+        "exit_code": -9,
+        "finished": 1790443791.1543412,
+        "hostname": "n05.local",
+        "id": "20260927T002910-mod2-g-fastcf219-9e337b8e",
+        "pbs_job": "115919.head.local",
+        "pid": 11979,
+        "queue": "derivation_queue",
+        "started": 1790440190.4396517,
+        "status": "timeout",
+        "timeout_s": 3600
+      },
+      "stdout_sha256": "a7920356061fcae5756954c8ef7e5ffa59f40d7fc3dd75dfbcd9bca6c4ecfa92",
+      "stdout": "\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:190\n    for item in AFSPipO5Program do\n                ^^^^^^^^^^^^^^^\nSyntax warning: Unbound global variable in /home/user/xyren/AllFSPT/gap/formul\\\nas.g:212\n    return values[AFSPipO5Output]/16;\n                  ^^^^^^^^^^^^^^\nAFS_BUILD affine_start sg=219 cpu_ms=21289\nAFS_BUILD affine_done sg=219 cpu_ms=22494\nAFS_BUILD holonomy_start cpu_ms=22494\nAFS_BUILD RP_start order=24 cpu_ms=22706\nAFS_BUILD RL_start cpu_ms=25347\nAFS_BUILD section_start cpu_ms=25598\nAFS_BUILD extension_start cpu_ms=25649\nAFS_BUILD extension_done timings=rec(\n  RL_ms := 251,\n  RP_ms := 2641,\n  extension_ms := 79577,\n  holonomy_ms := 212,\n  section_ms := 51 )\nMOD2_G_CF_PHASE sg=219 index=1 cpu_ms=2714488 vector=\n[ 1/2, 0, 0, 1/2, 1/2, 1/2, 0, 0, 0, 1/2, 1/2, 0, 0, 1/2, 0, 1/2, 0, 0, 1/2, \n  0, 0, 0, 1/2, 0, 0, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 0, 1/2, 0, 1/2, 1/2, 1/2, \n  1/2, 1/2, 0, 0, 1/2, 0, 1/2, 1/2, 1/2, 0, 0, 0, 1/2, 0, 0, 0, 1/2, 0, 0, 0, \n  1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 1/2, 0, 0, 1/2, 1/2, 0, 1/2, 0, \n  1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 0, 1/2, 1/2, \n  0, 0, 0, 0, 0, 0, 0 ]\n",
+      "interpretation": "G2 with full compiled generic source completed native phase evaluation in 2714488 CPU ms, then original integral-G comparison branch did not finish within the preset total 3600s wall timeout. No equality pass or speed ratio is claimed for this probe. Its arbitrary first H3 basis input, generic formula, cold comparison caches and missing full classification distinguish it from the completed lazy/half-phase actual-survivor bundle."
+    }
+  }
+}

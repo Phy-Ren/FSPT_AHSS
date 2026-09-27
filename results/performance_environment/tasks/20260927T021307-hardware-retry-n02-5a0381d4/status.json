@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "runs/hardware_20260926/probe.py",
+    "--expected-host",
+    "n02.local",
+    "--expected-job",
+    "115916.head.local",
+    "--output",
+    "runs/hardware_20260926/n02.json"
+  ],
+  "created": 1790446387.0969265,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 1.0062451362609863,
+  "exit_code": 0,
+  "finished": 1790446418.0156705,
+  "hostname": "n02.local",
+  "id": "20260927T021307-hardware-retry-n02-5a0381d4",
+  "pbs_job": "115916.head.local",
+  "pid": 2123,
+  "queue": "stacking_queue",
+  "started": 1790446417.0092893,
+  "status": "done",
+  "timeout_s": 20
+}

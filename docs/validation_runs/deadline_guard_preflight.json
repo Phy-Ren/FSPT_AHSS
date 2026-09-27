@@ -1,0 +1,232 @@
+{
+  "guard_sha256": "73a7528578687a3eda2c30c2e94ac1a688c91d8e301b3aa02f0720757b946429",
+  "records": [
+    {
+      "evidence_sha256": {
+        "runs/tasks/guard-preflight-queue-3e350b08/metrics.txt": "dd433f235b80b44c690499872582d9982ab7b0a10ca42b8e208fad0037c4c36c",
+        "runs/tasks/guard-preflight-queue-3e350b08/status.json": "9c49e2dbfcaa3e2936e11d5a70cd72ac6f842e5c4da732b1fcf1034cec6ac551",
+        "runs/tasks/guard-preflight-queue-3e350b08/stdout.log": "54d8945b67065aa3ebcc93900faba0d561dc212d156b800994606d921ee443a0"
+      },
+      "id": "guard-preflight-queue-3e350b08",
+      "preflight": {
+        "checked_cutoff": 1790472068.3926668,
+        "dry_run": true,
+        "plan": {
+          "allocation_deadline": 1790474013.0,
+          "cleanup_margin_s": 1800,
+          "created_at": 1790454073.4868934,
+          "hostname": "n01.local",
+          "pbs_job": "115915.head.local",
+          "queue": "queue",
+          "reason": "Healthy SG219 full-stacking task needs more than the original self-imposed four-hour budget; continue the same GAP processes and immutable numerical source under an explicit 7.5-hour total task cap within the original PBS allocation. Preserve original worker outcome and independent exit evidence.",
+          "root": "/home/user/xyren/AllFSPT",
+          "schema": 1,
+          "tasks": [
+            {
+              "deadline": 1790468883.6989114,
+              "id": "20260927T005727-corrected219-long-76951ec2",
+              "identity": {
+                "cmdline": [
+                  "/usr/bin/time",
+                  "-v",
+                  "-o",
+                  "/home/user/xyren/AllFSPT/runs/tasks/20260927T005727-corrected219-long-76951ec2/metrics.txt",
+                  "/home/apps/anaconda3/bin/python3",
+                  "scripts/run_group.py",
+                  "219",
+                  "--mode",
+                  "full",
+                  "--source",
+                  "/home/user/xyren/AllFSPT/runs/full_corrected_v07/source",
+                  "--output",
+                  "/home/user/xyren/AllFSPT/runs/full_corrected_v07_retry/sg219.json"
+                ],
+                "exit_raw": null,
+                "pgid": 7296,
+                "pid": 7296,
+                "ppid": 4437,
+                "sid": 7296,
+                "start_ticks": 2526312595,
+                "state": "S",
+                "uid": 5866
+              },
+              "running_sha256": "0a8429830fe09deb61e708f9ddde37cbd0ebb543e63e35070a921e580d02a1c9",
+              "status_sha256": "1a106b02df417719a335054ca6d7635abcdbbb314bf19038bb117a8cbf6a0dbd"
+            },
+            {
+              "deadline": 1790471225.6607072,
+              "id": "full_closed_cf_v09-p000-sg219",
+              "identity": {
+                "cmdline": [
+                  "/usr/bin/time",
+                  "-v",
+                  "-o",
+                  "/home/user/xyren/AllFSPT/runs/tasks/full_closed_cf_v09-p000-sg219/metrics.txt",
+                  "/home/apps/anaconda3/bin/python3",
+                  "scripts/run_group.py",
+                  "219",
+                  "--mode",
+                  "full",
+                  "--source",
+                  "/home/user/xyren/AllFSPT/runs/closed_cf_v09_source",
+                  "--output",
+                  "/home/user/xyren/AllFSPT/runs/full_closed_cf_v09/sg219.json"
+                ],
+                "exit_raw": null,
+                "pgid": 7731,
+                "pid": 7731,
+                "ppid": 4437,
+                "sid": 7731,
+                "start_ticks": 2526546792,
+                "state": "S",
+                "uid": 5866
+              },
+              "running_sha256": "0558451c3aa36cae03cae69fabdfad90f2afbe02850bcbb16aae735c182d869f",
+              "status_sha256": "79378384fe768c62a66b2aca7d4396b233fc9f0a842edb09ce65c5e2b428b62e"
+            }
+          ],
+          "worker": {
+            "cmdline": [
+              "/home/apps/anaconda3/bin/python3",
+              "scripts/worker.py",
+              "--root",
+              "/home/user/xyren/AllFSPT",
+              "--workers",
+              "6"
+            ],
+            "exit_raw": null,
+            "pgid": 4293,
+            "pid": 4437,
+            "ppid": 4293,
+            "sid": 4293,
+            "start_ticks": 2525209160,
+            "state": "S",
+            "uid": 5866
+          },
+          "worker_script_hash_scope": "current-on-disk-file-not-proof-of-running-interpreter-loaded-bytes",
+          "worker_script_sha256": "352e7103ac7055a0c3e3d8ca8d3685daa37f533280cbd4f76ffc784df247f041"
+        }
+      },
+      "status": {
+        "command": [
+          "/home/apps/anaconda3/bin/python3",
+          "runs/prepare_tail_guard.py",
+          "queue"
+        ],
+        "created": 1790454036.62065,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 1.0065033435821533,
+        "exit_code": 0,
+        "finished": 1790454074.399323,
+        "hostname": "n01.local",
+        "id": "guard-preflight-queue-3e350b08",
+        "pbs_job": "115915.head.local",
+        "pid": 10881,
+        "queue": "queue",
+        "started": 1790454073.3926668,
+        "status": "done",
+        "timeout_s": 18000
+      }
+    },
+    {
+      "evidence_sha256": {
+        "runs/tasks/guard-preflight-campaign3_queue-b1b108fc/metrics.txt": "1dd13c031de9b14525829a3f67e9e7cf0dfd15bec4fad3f90b0cc549cfae5f41",
+        "runs/tasks/guard-preflight-campaign3_queue-b1b108fc/status.json": "cf33c9c38e4f4d9ffbcd34b629845aa267af5a2eefcafc1c25dc3a1efb39181d",
+        "runs/tasks/guard-preflight-campaign3_queue-b1b108fc/stdout.log": "024efc2659f4b4beae2727ed47b526c8bc6ed3aa76697bb0440b0a095f8bd841"
+      },
+      "id": "guard-preflight-campaign3_queue-b1b108fc",
+      "preflight": {
+        "checked_cutoff": 1790472066.6828473,
+        "dry_run": true,
+        "plan": {
+          "allocation_deadline": 1790476290.0,
+          "cleanup_margin_s": 1800,
+          "created_at": 1790454071.7902446,
+          "hostname": "n03.local",
+          "pbs_job": "115917.head.local",
+          "queue": "campaign3_queue",
+          "reason": "Healthy SG219 full-stacking task needs more than the original self-imposed four-hour budget; continue the same GAP processes and immutable numerical source under an explicit 7.5-hour total task cap within the original PBS allocation. Preserve original worker outcome and independent exit evidence.",
+          "root": "/home/user/xyren/AllFSPT",
+          "schema": 1,
+          "tasks": [
+            {
+              "deadline": 1790469645.4432127,
+              "id": "full_optimized_v08-p002-sg219",
+              "identity": {
+                "cmdline": [
+                  "/usr/bin/time",
+                  "-v",
+                  "-o",
+                  "/home/user/xyren/AllFSPT/runs/tasks/full_optimized_v08-p002-sg219/metrics.txt",
+                  "/home/apps/anaconda3/bin/python3",
+                  "scripts/run_group.py",
+                  "219",
+                  "--mode",
+                  "full",
+                  "--source",
+                  "/home/user/xyren/AllFSPT/runs/optimized_v08_source",
+                  "--output",
+                  "/home/user/xyren/AllFSPT/runs/full_optimized_v08/sg219.json"
+                ],
+                "exit_raw": null,
+                "pgid": 1092,
+                "pid": 1092,
+                "ppid": 55873,
+                "sid": 1092,
+                "start_ticks": 2526308569,
+                "state": "S",
+                "uid": 5866
+              },
+              "running_sha256": "cd80d579b432513cb0a2f5b0bfc3837988d3959dff507fb135a184c944b317a0",
+              "status_sha256": "de597592b5f5e903f85eff90390de404f185e4af3bd75446c54facf0db81fef3"
+            }
+          ],
+          "worker": {
+            "cmdline": [
+              "/home/apps/anaconda3/bin/python3",
+              "scripts/worker.py",
+              "--root",
+              "/home/user/xyren/AllFSPT",
+              "--queue",
+              "campaign3_queue",
+              "--workers",
+              "24"
+            ],
+            "exit_raw": null,
+            "pgid": 55736,
+            "pid": 55873,
+            "ppid": 55736,
+            "sid": 55736,
+            "start_ticks": 2525356475,
+            "state": "S",
+            "uid": 5866
+          },
+          "worker_script_hash_scope": "current-on-disk-file-not-proof-of-running-interpreter-loaded-bytes",
+          "worker_script_sha256": "352e7103ac7055a0c3e3d8ca8d3685daa37f533280cbd4f76ffc784df247f041"
+        }
+      },
+      "status": {
+        "command": [
+          "/home/apps/anaconda3/bin/python3",
+          "runs/prepare_tail_guard.py",
+          "campaign3_queue"
+        ],
+        "created": 1790454036.6219368,
+        "cwd": "/home/user/xyren/AllFSPT",
+        "elapsed_s": 1.0057635307312012,
+        "exit_code": 0,
+        "finished": 1790454072.6887589,
+        "hostname": "n03.local",
+        "id": "guard-preflight-campaign3_queue-b1b108fc",
+        "pbs_job": "115917.head.local",
+        "pid": 3293,
+        "queue": "campaign3_queue",
+        "started": 1790454071.6828473,
+        "status": "done",
+        "timeout_s": 18000
+      }
+    }
+  ],
+  "scope": "Two read-only preflight tasks inside the original PBS allocations; no SIGSTOP/SIGCONT, no numerical jobs, no changes to existing task status or GAP sources.",
+  "wrapper_sha256": "7294dd90b8aac71aefc29b60849ca67cc5aeed20e7651801fda0cbd68cbaade0"
+}

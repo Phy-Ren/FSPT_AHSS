@@ -1,0 +1,263 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,landscape,margin=16mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,longtable}
+\usepackage[hidelinks]{hyperref}
+\title{Independent FSPT Classification and Stacking}
+\author{FSPT\_AHSS}
+\date{26 September 2026}
+\begin{document}
+\maketitle
+\noindent Three spatial dimensions; physical spin-half convention;
+$(-1)^s=\det$ and $\omega_{\mathrm{eff}}=0$; complete infinite affine space groups.
+Translations, weak phases, and atomic fermion parity are retained.
+The four decoration columns are the surviving associated-graded layers.
+The full group is computed from the stacking relations.
+The final column is the index of the primitive surviving free $p+ip$ lattice
+in the free part of $H^1(G,\mathbb Z_s)$; a dash means there is no free factor.
+A question mark would mean that the marked free lattice is unavailable.
+Exact presentations, cochain data, conventions, and source hashes are in the
+companion JSON files. Formula and validation scope are documented separately.
+\small
+\begin{longtable}{rlllllr}
+\toprule
+SG & $p+ip$ ($n_1$) & Majorana ($B_2$) & CF ($C_3$) & Bosonic ($\nu_4$) & Full stacking group & Free index\\
+\midrule
+\endfirsthead
+\toprule
+SG & $p+ip$ ($n_1$) & Majorana ($B_2$) & CF ($C_3$) & Bosonic ($\nu_4$) & Full stacking group & Free index\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+1 & $\mathbb{Z}^{3}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}^{3}\oplus \mathbb{Z}_{2}^{4}$ & 1 \\
+2 & $\mathbb{Z}^{3}$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}^{3}\oplus \mathbb{Z}_{2}^{5}$ & 8 \\
+3 & $\mathbb{Z}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}^{3}$ & 1 \\
+4 & $\mathbb{Z}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{4}$ & 1 \\
+5 & $\mathbb{Z}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & 1 \\
+6 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & 2 \\
+7 & $\mathbb{Z}\oplus \mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{5}$ & 1 \\
+8 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & 1 \\
+9 & $\mathbb{Z}\oplus \mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{4}$ & 1 \\
+10 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{4}^{5}$ & 2 \\
+11 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & 2 \\
+12 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}^{2}$ & 2 \\
+13 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & 2 \\
+14 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{4}$ & 1 \\
+15 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & 2 \\
+16 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{16}$ & $\mathbb{Z}_{2}^{16}$ & -- \\
+17 & $0$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}^{3}$ & -- \\
+18 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+19 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+20 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+21 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{9}$ & $\mathbb{Z}_{2}^{8}\oplus \mathbb{Z}_{8}$ & -- \\
+22 & $0$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{9}$ & -- \\
+23 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{8}$ & -- \\
+24 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}^{2}$ & -- \\
+25 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{8}$ & -- \\
+26 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & -- \\
+27 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{5}$ & -- \\
+28 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}^{2}$ & -- \\
+29 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{5}$ & -- \\
+30 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+31 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & -- \\
+32 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+33 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+34 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+35 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{8}$ & -- \\
+36 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & -- \\
+37 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{8}$ & -- \\
+38 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+39 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+40 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+41 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{4}$ & -- \\
+42 & $0$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+43 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & -- \\
+44 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+45 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+46 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{8}$ & -- \\
+47 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{24}$ & $\mathbb{Z}_{2}^{24}$ & -- \\
+48 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{8}$ & -- \\
+49 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{9}$ & $\mathbb{Z}_{2}^{8}\oplus \mathbb{Z}_{4}$ & -- \\
+50 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{8}$ & -- \\
+51 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{4}^{2}$ & -- \\
+52 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+53 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}^{2}\oplus \mathbb{Z}_{8}$ & -- \\
+54 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{8}$ & -- \\
+55 & $0$ & $0$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}^{2}$ & -- \\
+56 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+57 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{8}$ & -- \\
+58 & $0$ & $0$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}^{2}$ & -- \\
+59 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+60 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & -- \\
+61 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+62 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & -- \\
+63 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & -- \\
+64 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & -- \\
+65 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{13}$ & $\mathbb{Z}_{2}^{12}\oplus \mathbb{Z}_{4}$ & -- \\
+66 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{4}^{2}$ & -- \\
+67 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{7}$ & -- \\
+68 & $0$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{5}$ & -- \\
+69 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{9}$ & -- \\
+70 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{5}$ & -- \\
+71 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{12}$ & $\mathbb{Z}_{2}^{12}$ & -- \\
+72 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{5}$ & -- \\
+73 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+74 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}^{2}$ & -- \\
+75 & $\mathbb{Z}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{8}^{3}$ & 1 \\
+76 & $\mathbb{Z}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{3}$ & 1 \\
+77 & $\mathbb{Z}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}^{2}$ & 1 \\
+78 & $\mathbb{Z}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{3}$ & 1 \\
+79 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}\oplus \mathbb{Z}_{8}^{2}$ & 1 \\
+80 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & 1 \\
+81 & $\mathbb{Z}\oplus \mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}^{3}$ & 1 \\
+82 & $\mathbb{Z}\oplus \mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{4}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}^{2}$ & 1 \\
+83 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{4}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{4}^{2}\oplus \mathbb{Z}_{8}^{2}$ & 2 \\
+84 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{4}^{4}$ & 1 \\
+85 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{4}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{8}^{2}$ & 2 \\
+86 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{8}^{2}$ & 1 \\
+87 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & 2 \\
+88 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{4}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{8}$ & 1 \\
+89 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{12}$ & $\mathbb{Z}_{2}^{12}$ & -- \\
+90 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}_{2}^{5}\oplus \mathbb{Z}_{8}$ & -- \\
+91 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}^{2}$ & -- \\
+92 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & -- \\
+93 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{12}$ & $\mathbb{Z}_{2}^{12}$ & -- \\
+94 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{8}$ & -- \\
+95 & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}^{2}$ & -- \\
+96 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & -- \\
+97 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{8}$ & -- \\
+98 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{8}$ & -- \\
+99 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{6}$ & -- \\
+100 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{8}$ & -- \\
+101 & $0$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+102 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{8}$ & -- \\
+103 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $0$ & $\mathbb{Z}_{2}^{5}$ & -- \\
+104 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+105 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+106 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{8}$ & -- \\
+107 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+108 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+109 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & -- \\
+110 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+111 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{10}$ & $\mathbb{Z}_{2}^{10}$ & -- \\
+112 & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{9}\oplus \mathbb{Z}_{4}$ & -- \\
+113 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{8}$ & -- \\
+114 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{4}$ & $\mathbb{Z}_{4}^{2}\oplus \mathbb{Z}_{8}$ & -- \\
+115 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{8}$ & -- \\
+116 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{6}\oplus \mathbb{Z}_{4}$ & -- \\
+117 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}_{2}^{5}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+118 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}_{2}^{5}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+119 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{6}$ & -- \\
+120 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{6}\oplus \mathbb{Z}_{4}$ & -- \\
+121 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}^{6}$ & -- \\
+122 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}^{2}$ & -- \\
+123 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{18}$ & $\mathbb{Z}_{2}^{18}$ & -- \\
+124 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{7}$ & $\mathbb{Z}_{2}^{7}\oplus \mathbb{Z}_{4}$ & -- \\
+125 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{7}$ & $\mathbb{Z}_{2}^{7}$ & -- \\
+126 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{7}$ & -- \\
+127 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{7}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}_{2}^{8}\oplus \mathbb{Z}_{8}$ & -- \\
+128 & $0$ & $0$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{4}$ & $\mathbb{Z}_{2}^{5}\oplus \mathbb{Z}_{8}$ & -- \\
+129 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}^{5}$ & -- \\
+130 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{5}$ & -- \\
+131 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{14}$ & $\mathbb{Z}_{2}^{14}$ & -- \\
+132 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{10}$ & $\mathbb{Z}_{2}^{10}$ & -- \\
+133 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{7}$ & -- \\
+134 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{7}$ & $\mathbb{Z}_{2}^{7}$ & -- \\
+135 & $0$ & $0$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{4}$ & -- \\
+136 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{7}$ & $\mathbb{Z}_{2}^{7}\oplus \mathbb{Z}_{4}$ & -- \\
+137 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+138 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{5}$ & -- \\
+139 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{10}$ & $\mathbb{Z}_{2}^{10}$ & -- \\
+140 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{7}$ & -- \\
+141 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{4}$ & -- \\
+142 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+143 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{3}^{3}$ & $\mathbb{Z}\oplus \mathbb{Z}_{3}\oplus \mathbb{Z}_{6}^{2}$ & 1 \\
+144 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}$ & 1 \\
+145 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}$ & 1 \\
+146 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{3}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{6}$ & 1 \\
+147 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{3}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{6}^{2}$ & 2 \\
+148 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{6}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{6}$ & 2 \\
+149 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+150 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{24}$ & -- \\
+151 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+152 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+153 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+154 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+155 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+156 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{4}$ & -- \\
+157 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{6}$ & $\mathbb{Z}_{12}$ & -- \\
+158 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+159 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{3}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{6}$ & -- \\
+160 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{4}$ & -- \\
+161 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+162 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}^{2}$ & -- \\
+163 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & -- \\
+164 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}^{2}$ & -- \\
+165 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & -- \\
+166 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}^{2}$ & -- \\
+167 & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & -- \\
+168 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{6}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{12}\oplus \mathbb{Z}_{24}$ & 1 \\
+169 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}$ & 1 \\
+170 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}^{2}$ & 1 \\
+171 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & 1 \\
+172 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & 1 \\
+173 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{3}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{6}^{2}$ & 1 \\
+174 & $\mathbb{Z}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{3}\oplus \mathbb{Z}_{6}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{3}\oplus \mathbb{Z}_{12}\oplus \mathbb{Z}_{24}$ & 2 \\
+175 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{6}^{2}$ & $\mathbb{Z}\oplus \mathbb{Z}_{2}\oplus \mathbb{Z}_{4}\oplus \mathbb{Z}_{12}^{2}$ & 2 \\
+176 & $\mathbb{Z}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{3}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}\oplus \mathbb{Z}_{6}\oplus \mathbb{Z}_{12}$ & 2 \\
+177 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{8}$ & -- \\
+178 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+179 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+180 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{8}$ & -- \\
+181 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{8}$ & $\mathbb{Z}_{2}^{8}$ & -- \\
+182 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+183 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+184 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+185 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}$ & -- \\
+186 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}$ & -- \\
+187 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+188 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+189 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{6}$ & -- \\
+190 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{24}$ & -- \\
+191 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{12}$ & $\mathbb{Z}_{2}^{12}$ & -- \\
+192 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}^{4}\oplus \mathbb{Z}_{4}$ & -- \\
+193 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & -- \\
+194 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & -- \\
+195 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{6}$ & -- \\
+196 & $0$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{3}$ & $\mathbb{Z}_{6}$ & -- \\
+197 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{6}$ & -- \\
+198 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{3}$ & $\mathbb{Z}_{6}$ & -- \\
+199 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{6}$ & $\mathbb{Z}_{12}$ & -- \\
+200 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{7}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}_{2}^{7}\oplus \mathbb{Z}_{6}$ & -- \\
+201 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{6}$ & -- \\
+202 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{6}$ & -- \\
+203 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{3}$ & $\mathbb{Z}_{6}$ & -- \\
+204 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{6}$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{6}$ & -- \\
+205 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{6}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{6}$ & -- \\
+206 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{3}$ & $\mathbb{Z}_{6}$ & -- \\
+207 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{6}$ & -- \\
+208 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{6}$ & -- \\
+209 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+210 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{8}$ & -- \\
+211 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{5}$ & $\mathbb{Z}_{2}^{5}$ & -- \\
+212 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{4}$ & -- \\
+213 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{4}$ & -- \\
+214 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+215 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+216 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & -- \\
+217 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+218 & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}\oplus \mathbb{Z}_{4}$ & -- \\
+219 & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $0$ & $\mathbb{Z}_{2}^{2}\oplus \mathbb{Z}_{4}$ & -- \\
+220 & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{4}$ & $\mathbb{Z}_{4}\oplus \mathbb{Z}_{8}$ & -- \\
+221 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{10}$ & $\mathbb{Z}_{2}^{10}$ & -- \\
+222 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+223 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{6}$ & -- \\
+224 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{4}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+225 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{7}$ & $\mathbb{Z}_{2}^{7}$ & -- \\
+226 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{3}$ & $\mathbb{Z}_{2}^{4}$ & -- \\
+227 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}\oplus \mathbb{Z}_{4}$ & -- \\
+228 & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}$ & $0$ & $\mathbb{Z}_{2}^{2}$ & -- \\
+229 & $0$ & $0$ & $0$ & $\mathbb{Z}_{2}^{6}$ & $\mathbb{Z}_{2}^{6}$ & -- \\
+230 & $0$ & $0$ & $\mathbb{Z}_{2}$ & $\mathbb{Z}_{2}^{2}$ & $\mathbb{Z}_{2}^{3}$ & -- \\
+\end{longtable}
+\end{document}

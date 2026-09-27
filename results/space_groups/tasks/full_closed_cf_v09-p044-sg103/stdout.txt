@@ -1,0 +1,64 @@
+
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+AFS_NATIVE_CONTRACTION_MODE mod2=true
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/formulas.g:101
+  runner:=AFSFastPrograms.(key);degree:=AFSFormulaData.(Concatenation(name,"_"\
+,String(fields.p)))[2];
+          ^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:85
+      (not IsBound(AFS_USE_PHASE_PERIODS) or AFS_USE_PHASE_PERIODS=true) then
+                                             ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:103
+  useNative:=IsBound(AFSNativeCup) and (not IsBound(AFS_USE_NATIVE) or AFS_USE\
+_NATIVE=true);
+                                                                       ^^^^^^^\
+^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:105
+    (not IsBound(AFS_USE_TARGET_CYCLES) or AFS_USE_TARGET_CYCLES=true);
+                                           ^^^^^^^^^^^^^^^^^^^^^
+Syntax warning: Unbound global variable in /home/user/xyren/AllFSPT/runs/close\
+d_cf_v09_source/gap/classification.g:246
+      record:=AFSClassifyPipTorsion(C,n1,op);
+              ^^^^^^^^^^^^^^^^^^^^^
+AFS_BUILD affine_start sg=103 cpu_ms=18320
+AFS_BUILD affine_done sg=103 cpu_ms=19157
+AFS_BUILD holonomy_start cpu_ms=19158
+AFS_BUILD RP_start order=8 cpu_ms=19255
+AFS_BUILD RL_start cpu_ms=19791
+AFS_BUILD section_start cpu_ms=20034
+AFS_BUILD extension_start cpu_ms=20046
+AFS_BUILD extension_done timings=rec(
+  RL_ms := 243,
+  RP_ms := 536,
+  extension_ms := 4333,
+  holonomy_ms := 97,
+  section_ms := 12 )
+AFS_STAGE 103 cohomology cpu_ms=24385
+AFS_STAGE 103 primary_cf cpu_ms=25192
+AFS_STAGE 103 primary_mc_and_bos cpu_ms=31382
+AFS_STAGE 103 incoming_mc cpu_ms=31942
+AFS_STAGE 103 secondary_bos cpu_ms=32244
+AFS_STAGE 103 secondary_mc cpu_ms=32246
+AFS_STAGE 103 pip cpu_ms=57983
+AFS_STAGE 103 pip_d3 cpu_ms=58058
+AFS_STAGE 103 pip_d4 cpu_ms=59486
+AFS_STAGE 103 classification_end cpu_ms=68295
+AFS_STAGE 103 stack_lift_C1 cpu_ms=68769
+AFS_STAGE 103 stack_lift_C2 cpu_ms=73193
+AFS_STAGE 103 stack_lift_B1 cpu_ms=74634
+AFS_STAGE 103 stack_lift_B2 cpu_ms=100925
+AFS_STAGE 103 stack_relation_C1 cpu_ms=145203
+AFS_STAGE 103 stack_relation_C2 cpu_ms=164663
+AFS_STAGE 103 stack_relation_B1 cpu_ms=180965
+AFS_STAGE 103 stack_relation_B2 cpu_ms=198866
+AFS_STAGE 103 stack_pip_C4_pullback cpu_ms=246487
+AFS_STAGE 103 stack_pip_square cpu_ms=246487
+AFS_RESULT_WRITTEN 103 computed
+AFS_GROUP_SAVED 103 computed /home/user/xyren/AllFSPT/runs/full_closed_cf_v09/sg103.json

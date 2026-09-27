@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/home/apps/anaconda3/bin/python3",
+    "runs/hardware_20260926/probe.py",
+    "--expected-host",
+    "n03.local",
+    "--expected-job",
+    "115917.head.local",
+    "--output",
+    "runs/hardware_20260926/n03.json"
+  ],
+  "created": 1790446387.1646094,
+  "cwd": "/home/user/xyren/AllFSPT",
+  "elapsed_s": 1.0066580772399902,
+  "exit_code": 0,
+  "finished": 1790446423.225172,
+  "hostname": "n03.local",
+  "id": "20260927T021307-hardware-retry-n03-8db94219",
+  "pbs_job": "115917.head.local",
+  "pid": 1819,
+  "queue": "campaign3_queue",
+  "started": 1790446422.2183633,
+  "status": "done",
+  "timeout_s": 20
+}
