@@ -1,0 +1,78 @@
+{
+  "computed": {
+    "1": {
+      "numerator_mod16": 0,
+      "phase_mod1": "0",
+      "terms": {
+        "K_cup_p_K": 0,
+        "Majorana_background_order": 0,
+        "Majorana_open_Bockstein_derivative": 0,
+        "Majorana_open_Bockstein_extension": 0,
+        "Majorana_open_Bockstein_square": 0,
+        "Majorana_word_transgression": 0,
+        "background_Pontryagin_n": 0,
+        "complex_fermion_extension": 0,
+        "complex_fermion_square": 0,
+        "intrinsic_integer_square": 0,
+        "minus_Cartan_carry": 0,
+        "minus_K_twisted_Bockstein_source": 0,
+        "omega2_K": 0,
+        "p_ip_Majorana_mixed": 0,
+        "signed_beta_source_K": 0,
+        "y": 0
+      }
+    },
+    "2": {
+      "numerator_mod16": 7,
+      "phase_mod1": "7/16",
+      "terms": {
+        "K_cup_p_K": 0,
+        "Majorana_background_order": 0,
+        "Majorana_open_Bockstein_derivative": 0,
+        "Majorana_open_Bockstein_extension": 0,
+        "Majorana_open_Bockstein_square": 0,
+        "Majorana_word_transgression": 0,
+        "background_Pontryagin_n": 1,
+        "complex_fermion_extension": 0,
+        "complex_fermion_square": 0,
+        "intrinsic_integer_square": 2,
+        "minus_Cartan_carry": 0,
+        "minus_K_twisted_Bockstein_source": 0,
+        "omega2_K": 12,
+        "p_ip_Majorana_mixed": 0,
+        "signed_beta_source_K": 0,
+        "y": 8
+      }
+    },
+    "O6_primitive": "7 x^5/32",
+    "checks": "all normalized tuples for C2 (one nondegenerate tuple in each degree)",
+    "inputs": {
+      "1": {
+        "group": "C2",
+        "n1": "x",
+        "n2": 0,
+        "n3": 0,
+        "omega2": "x cup x",
+        "s1": "x",
+        "spacetime_dimension": "3+1D"
+      },
+      "2": {
+        "group": "C2",
+        "n2": "beta(x)",
+        "n3": 0,
+        "n4": 0,
+        "omega2": "x cup x",
+        "s1": "0",
+        "spacetime_dimension": "4+1D"
+      }
+    }
+  },
+  "description": "The 3+1D normalized O5 control vanishes. The 4+1D O6 cochain evaluates to 7/16 on the nondegenerate six-tuple, but is d(7 x^5/32), so its cohomology class vanishes.",
+  "schema": "fspt-computed-calibration-v1",
+  "source_results": [
+    {
+      "artifact": "controls.json",
+      "original_result_sha256": "fa2f8ed5963a6e5a49f8b42a87e5d5dc4a381c7da44329db55dcd1c728d1c143"
+    }
+  ]
+}

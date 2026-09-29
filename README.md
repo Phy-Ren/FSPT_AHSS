@@ -1,12 +1,21 @@
 # FSPT_AHSS
 
 Independent exact computation of decoration-layer classifications and abstract
-stacking groups for three-dimensional crystalline fermionic SPT phases.
+stacking groups for fermionic SPT phases with crystalline and finite internal
+symmetries.
 
-The results cover all **230 space groups and 32 crystallographic point groups
-in both physical spin conventions**: 524 calculations in total.
+The crystalline results cover all **230 space groups and 32 crystallographic
+point groups in both physical spin conventions**: 524 calculations.
 The [result tables](results/group_tables/README.md) list the four surviving
 decoration layers and the final stacking group.
+
+The [finite-symmetry examples](results/finite_examples/README.md) add sixteen
+explicit backgrounds in both 3+1D and 4+1D, together with the 43 inputs of the
+4+1D classification tables. All sixteen 3+1D examples have determined full
+stacking groups. The 4+1D tables report the surviving associated-graded layers;
+full groups are stated where the layers and computed products determine them.
+Exact group laws, antiunitary characters, and fermion-parity extension cocycles
+are included with the results.
 
 | Physical convention | Effective internal background | Space groups | Point groups |
 |---|---|---:|---:|
@@ -60,6 +69,7 @@ GAP source, task records and file hashes:
 - [Crystalline spinless space groups](results/space_groups_spinless)
 - [Both finite point-group conventions](results/point_groups)
 - [Classification and final group tables](results/group_tables/README.md)
+- [Finite internal symmetries in 3+1D and 4+1D](results/finite_examples/README.md)
 
 Use the archive's `source/` directory with `--source` to reproduce its recorded
 version. Result records retain the original computation metadata. The public

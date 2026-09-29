@@ -1,0 +1,217 @@
+{
+  "layers": {
+    "bosonic": [],
+    "complex_fermion": [],
+    "majorana": [
+      2
+    ],
+    "pip": []
+  },
+  "model_id": "Q8_w0_sx",
+  "pipPages": [
+    {
+      "obstruction": [
+        1
+      ],
+      "page": 3,
+      "status": "killed"
+    }
+  ],
+  "ranks": {
+    "CF_incoming": 1,
+    "CF_primary": 0,
+    "H1F2": 2,
+    "H2F2": 2,
+    "H3F2": 1,
+    "MC_primary": 0,
+    "MC_secondary": 1
+  },
+  "resolutionDimensions": [
+    1,
+    2,
+    3,
+    4,
+    4,
+    3,
+    3
+  ],
+  "schema": "fspt-finite-example-v1",
+  "spacetime_dimension": "3+1D",
+  "stacking": {
+    "abstract_group_unique": true,
+    "invariant_options": [
+      [
+        2
+      ]
+    ],
+    "invariants": [
+      2
+    ],
+    "known_lower_formula": "complete manuscript-aligned U4 in 3+1D",
+    "lower": {
+      "generators": [
+        {
+          "layer": 2,
+          "lift": {
+            "construction": "full-Majorana-lift-with-linear-CF-indeterminacy-solve",
+            "fermion3": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "majorana2": [
+              1,
+              1,
+              0
+            ],
+            "phase4": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "name": "B1",
+          "quotientOrder": 2
+        }
+      ],
+      "invariants": [
+        2
+      ],
+      "presentation": [
+        [
+          2
+        ]
+      ],
+      "smithColumnTransform": [
+        [
+          1
+        ]
+      ],
+      "smithDiagonal": [
+        2
+      ],
+      "smithRowTransform": [
+        [
+          1
+        ]
+      ],
+      "witnesses": [
+        {
+          "bosonicIncomingCoordinates": [
+            0,
+            0,
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "zero",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            1,
+            0,
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0,
+            0
+          ],
+          "checkedComparisonSupport": true,
+          "phaseGauge3": [
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "status": "computed"
+}

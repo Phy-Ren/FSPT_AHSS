@@ -1,0 +1,177 @@
+{
+  "layers": {
+    "bosonic": [],
+    "complex_fermion": [
+      2
+    ],
+    "majorana": [],
+    "pip": []
+  },
+  "model_id": "Q8_w0_s0",
+  "pipPages": [],
+  "ranks": {
+    "CF_incoming": 0,
+    "CF_primary": 0,
+    "H1F2": 2,
+    "H2F2": 2,
+    "H3F2": 1,
+    "MC_primary": 0,
+    "MC_secondary": 2
+  },
+  "resolutionDimensions": [
+    1,
+    2,
+    3,
+    4,
+    4,
+    3,
+    3
+  ],
+  "schema": "fspt-finite-example-v1",
+  "spacetime_dimension": "3+1D",
+  "stacking": {
+    "abstract_group_unique": true,
+    "invariant_options": [
+      [
+        2
+      ]
+    ],
+    "invariants": [
+      2
+    ],
+    "known_lower_formula": "complete manuscript-aligned U4 in 3+1D",
+    "lower": {
+      "generators": [
+        {
+          "construction": "native-Gu-Wen-primitive-class",
+          "layer": 1,
+          "name": "C1",
+          "nativeCF3Seed": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "nativePhase4Seed": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "quotientOrder": 2
+        }
+      ],
+      "invariants": [
+        2
+      ],
+      "presentation": [
+        [
+          2
+        ]
+      ],
+      "smithColumnTransform": [
+        [
+          1
+        ]
+      ],
+      "smithDiagonal": [
+        2
+      ],
+      "smithRowTransform": [
+        [
+          1
+        ]
+      ],
+      "witnesses": [
+        {
+          "bosonicCohomologyCoordinates": [],
+          "certificateLevel": "native-Gu-Wen-doubling-class",
+          "finalBosonicCoordinates": [],
+          "fullBarPhaseWitness": false,
+          "generator": "C1",
+          "nativeCF3Seed": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "nativeDoublePhase4": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "nativeObstruction5": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "nativePhase4Primitive": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "nativeSq1": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "order": 2,
+          "primitiveIntegerResidual": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "status": "computed"
+}

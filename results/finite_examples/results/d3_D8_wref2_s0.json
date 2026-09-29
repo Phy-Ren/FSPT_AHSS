@@ -1,0 +1,1895 @@
+{
+  "layers": {
+    "bosonic": [
+      2
+    ],
+    "complex_fermion": [],
+    "majorana": [
+      2
+    ],
+    "pip": []
+  },
+  "model_id": "D8_wref2_s0",
+  "pipPages": [],
+  "ranks": {
+    "CF_incoming": 2,
+    "CF_primary": 2,
+    "H1F2": 2,
+    "H2F2": 3,
+    "H3F2": 4,
+    "MC_primary": 1,
+    "MC_secondary": 0
+  },
+  "resolutionDimensions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    10
+  ],
+  "schema": "fspt-finite-example-v1",
+  "spacetime_dimension": "3+1D",
+  "stacking": {
+    "abstract_group_unique": true,
+    "h0_incoming_quotient": {
+      "basisChange": {
+        "incomingMCClassCoordinates": [
+          1,
+          1
+        ],
+        "incomingMCCohomologyCoordinates": [
+          1,
+          1,
+          1
+        ],
+        "newMCCohomologyRowsInOldBasis": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "newMCNames": [
+          "B1",
+          "B2"
+        ],
+        "oldMCNames": [
+          "B1",
+          "B2"
+        ],
+        "replacedMCPivot": 1
+      },
+      "certificate": {
+        "ambiguity": "exact plus 8X, hence identical cyclic incoming subgroup",
+        "cochainSource": "gap/pip_incoming_background.g",
+        "formula": "normalized-CA-H0-pip-boundary",
+        "orderDivides": 16,
+        "square": "(0,Sq1(omega),-Pontryagin(omega)/8)"
+      },
+      "coordinateMethod": "incoming-state-is-literally-a-marked-generator",
+      "filtration": [
+        {
+          "generatorIndices": [
+            1
+          ],
+          "gradedInvariants": [
+            2
+          ],
+          "gradedPresentation": [
+            [
+              6
+            ],
+            [
+              2
+            ]
+          ],
+          "gradedSmith": {
+            "D": [
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ],
+            "U": [
+              [
+                0,
+                1
+              ],
+              [
+                -1,
+                3
+              ]
+            ],
+            "Ui": [
+              [
+                3,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "V": [
+              [
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                1
+              ]
+            ],
+            "diag": [
+              2
+            ],
+            "rank": 1
+          },
+          "highColumnMatrix": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "highColumnSmith": {
+            "D": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "U": [
+              [
+                2,
+                1,
+                0,
+                -1
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                3,
+                1,
+                0,
+                -2
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "Ui": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                -1,
+                -1
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                -1,
+                1
+              ]
+            ],
+            "V": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "diag": [
+              1,
+              2
+            ],
+            "rank": 2
+          },
+          "intersectionRelationRows": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "layer": 0,
+          "prefixIndices": [
+            1
+          ],
+          "relationCombinationRows": [
+            [
+              3,
+              1,
+              0,
+              -2
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "subgroupInvariants": [
+            2
+          ],
+          "subgroupPresentation": [
+            [
+              6
+            ],
+            [
+              2
+            ]
+          ],
+          "subgroupSmith": {
+            "D": [
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ],
+            "U": [
+              [
+                0,
+                1
+              ],
+              [
+                -1,
+                3
+              ]
+            ],
+            "Ui": [
+              [
+                3,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "V": [
+              [
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                1
+              ]
+            ],
+            "diag": [
+              2
+            ],
+            "rank": 1
+          },
+          "upperIndices": [
+            2,
+            3
+          ]
+        },
+        {
+          "generatorIndices": [],
+          "gradedInvariants": [],
+          "gradedPresentation": [
+            [],
+            []
+          ],
+          "gradedSmith": {
+            "D": [
+              [],
+              []
+            ],
+            "U": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "Ui": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "V": [],
+            "Vi": [],
+            "diag": [],
+            "rank": 0
+          },
+          "highColumnMatrix": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "highColumnSmith": {
+            "D": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "U": [
+              [
+                2,
+                1,
+                0,
+                -1
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                3,
+                1,
+                0,
+                -2
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "Ui": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                -1,
+                -1
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                -1,
+                1
+              ]
+            ],
+            "V": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "diag": [
+              1,
+              2
+            ],
+            "rank": 2
+          },
+          "intersectionRelationRows": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "layer": 1,
+          "prefixIndices": [
+            1
+          ],
+          "relationCombinationRows": [
+            [
+              3,
+              1,
+              0,
+              -2
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "subgroupInvariants": [
+            2
+          ],
+          "subgroupPresentation": [
+            [
+              6
+            ],
+            [
+              2
+            ]
+          ],
+          "subgroupSmith": {
+            "D": [
+              [
+                2
+              ],
+              [
+                0
+              ]
+            ],
+            "U": [
+              [
+                0,
+                1
+              ],
+              [
+                -1,
+                3
+              ]
+            ],
+            "Ui": [
+              [
+                3,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "V": [
+              [
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                1
+              ]
+            ],
+            "diag": [
+              2
+            ],
+            "rank": 1
+          },
+          "upperIndices": [
+            2,
+            3
+          ]
+        },
+        {
+          "generatorIndices": [
+            2,
+            3
+          ],
+          "gradedInvariants": [
+            2
+          ],
+          "gradedPresentation": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "gradedSmith": {
+            "D": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "U": [
+              [
+                2,
+                1,
+                0,
+                -1
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                3,
+                1,
+                0,
+                -2
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "Ui": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                -1,
+                -1
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                -1,
+                1
+              ]
+            ],
+            "V": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "diag": [
+              1,
+              2
+            ],
+            "rank": 2
+          },
+          "highColumnMatrix": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "highColumnSmith": {
+            "D": [
+              [],
+              [],
+              [],
+              []
+            ],
+            "U": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "Ui": [
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "V": [],
+            "Vi": [],
+            "diag": [],
+            "rank": 0
+          },
+          "intersectionRelationRows": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "layer": 2,
+          "prefixIndices": [
+            1,
+            2,
+            3
+          ],
+          "relationCombinationRows": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "subgroupInvariants": [
+            2,
+            2
+          ],
+          "subgroupPresentation": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "subgroupSmith": {
+            "D": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "U": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                -1,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                -1,
+                1,
+                2
+              ],
+              [
+                0,
+                -1,
+                0,
+                2
+              ]
+            ],
+            "Ui": [
+              [
+                2,
+                -1,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                0,
+                1,
+                -1
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "V": [
+              [
+                1,
+                -1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                -1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            "diag": [
+              1,
+              2,
+              2
+            ],
+            "rank": 3
+          },
+          "upperIndices": []
+        }
+      ],
+      "graded": {
+        "bosonic": [
+          2
+        ],
+        "complex_fermion": [],
+        "majorana": [
+          2
+        ]
+      },
+      "incomingCoordinates": [
+        0,
+        1,
+        0
+      ],
+      "incomingOrder": 2,
+      "incomingSmithCoordinates": [
+        0,
+        1,
+        0
+      ],
+      "incomingState": {
+        "fermion3": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "majorana2": [
+          1,
+          1,
+          1
+        ],
+        "phase4": [
+          [
+            11,
+            16
+          ],
+          [
+            11,
+            16
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            11,
+            16
+          ]
+        ]
+      },
+      "quotientCertificate": "append-actual-incoming-coordinate-row-and-compute-integral-filtered-intersections"
+    },
+    "invariant_options": [
+      [
+        2,
+        2
+      ]
+    ],
+    "invariants": [
+      2,
+      2
+    ],
+    "known_lower_formula": "complete manuscript-aligned U4 in 3+1D",
+    "lower": {
+      "generators": [
+        {
+          "layer": 0,
+          "lift": {
+            "construction": "final-bosonic-quotient-cocycle",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "name": "D1",
+          "quotientOrder": 2
+        },
+        {
+          "layer": 2,
+          "lift": {
+            "construction": "exact-CA-incoming-H0-with-calibrated-even-square",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              1,
+              1,
+              1
+            ],
+            "phase4": [
+              [
+                11,
+                16
+              ],
+              [
+                11,
+                16
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                11,
+                16
+              ]
+            ]
+          },
+          "name": "B1",
+          "quotientOrder": 2
+        },
+        {
+          "layer": 2,
+          "lift": {
+            "construction": "full-Majorana-lift-with-linear-CF-indeterminacy-solve",
+            "fermion3": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "majorana2": [
+              1,
+              0,
+              1
+            ],
+            "phase4": [
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "name": "B2",
+          "quotientOrder": 2
+        }
+      ],
+      "invariants": [
+        2,
+        2
+      ],
+      "presentation": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "smithColumnTransform": [
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "smithDiagonal": [
+        1,
+        2,
+        2
+      ],
+      "smithRowTransform": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          -1,
+          1,
+          2
+        ],
+        [
+          0,
+          -1,
+          0,
+          2
+        ]
+      ],
+      "witnesses": [
+        {
+          "certificateLevel": "final-bosonic-quotient",
+          "generator": "D1",
+          "order": 2
+        },
+        {
+          "bosonicIncomingCoordinates": [
+            0,
+            0,
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                7,
+                8
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "zero",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0,
+            0,
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0,
+            0
+          ],
+          "checkedComparisonSupport": true,
+          "phaseGauge3": [
+            [
+              7,
+              16
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "bosonicIncomingCoordinates": [
+            1,
+            0,
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "zero",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0,
+            0,
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0,
+            0
+          ],
+          "checkedComparisonSupport": true,
+          "phaseGauge3": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "certificate": {
+            "ambiguity": "exact plus 8X, hence identical cyclic incoming subgroup",
+            "cochainSource": "gap/pip_incoming_background.g",
+            "formula": "normalized-CA-H0-pip-boundary",
+            "orderDivides": 16,
+            "square": "(0,Sq1(omega),-Pontryagin(omega)/8)"
+          },
+          "certificateLevel": "actual-H0-pip-boundary-relation",
+          "coordinateRow": [
+            0,
+            1,
+            0
+          ],
+          "incomingOrder": 2
+        }
+      ]
+    },
+    "lower_before_h0": {
+      "generators": [
+        {
+          "layer": 0,
+          "lift": {
+            "construction": "final-bosonic-quotient-cocycle",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "name": "D1",
+          "quotientOrder": 2
+        },
+        {
+          "layer": 2,
+          "lift": {
+            "construction": "exact-CA-incoming-H0-with-calibrated-even-square",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              1,
+              1,
+              1
+            ],
+            "phase4": [
+              [
+                11,
+                16
+              ],
+              [
+                11,
+                16
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                11,
+                16
+              ]
+            ]
+          },
+          "name": "B1",
+          "quotientOrder": 2
+        },
+        {
+          "layer": 2,
+          "lift": {
+            "construction": "full-Majorana-lift-with-linear-CF-indeterminacy-solve",
+            "fermion3": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "majorana2": [
+              1,
+              0,
+              1
+            ],
+            "phase4": [
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "name": "B2",
+          "quotientOrder": 2
+        }
+      ],
+      "invariants": [
+        2,
+        2,
+        2
+      ],
+      "presentation": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "smithColumnTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "smithDiagonal": [
+        2,
+        2,
+        2
+      ],
+      "smithRowTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "witnesses": [
+        {
+          "certificateLevel": "final-bosonic-quotient",
+          "generator": "D1",
+          "order": 2
+        },
+        {
+          "bosonicIncomingCoordinates": [
+            0,
+            0,
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                7,
+                8
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "zero",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0,
+            0,
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0,
+            0
+          ],
+          "checkedComparisonSupport": true,
+          "phaseGauge3": [
+            [
+              7,
+              16
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "bosonicIncomingCoordinates": [
+            1,
+            0,
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "zero",
+            "fermion3": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "majorana2": [
+              0,
+              0,
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0,
+            0,
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0,
+            0
+          ],
+          "checkedComparisonSupport": true,
+          "phaseGauge3": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "status": "computed"
+}

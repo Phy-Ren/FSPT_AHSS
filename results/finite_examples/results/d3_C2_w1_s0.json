@@ -1,0 +1,712 @@
+{
+  "layers": {
+    "bosonic": [],
+    "complex_fermion": [],
+    "majorana": [],
+    "pip": []
+  },
+  "model_id": "C2_w1_s0",
+  "pipPages": [],
+  "ranks": {
+    "CF_incoming": 1,
+    "CF_primary": 0,
+    "H1F2": 1,
+    "H2F2": 1,
+    "H3F2": 1,
+    "MC_primary": 0,
+    "MC_secondary": 0
+  },
+  "resolutionDimensions": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "schema": "fspt-finite-example-v1",
+  "spacetime_dimension": "3+1D",
+  "stacking": {
+    "abstract_group_unique": true,
+    "h0_incoming_quotient": {
+      "basisChange": {
+        "incomingMCClassCoordinates": [
+          1
+        ],
+        "incomingMCCohomologyCoordinates": [
+          1
+        ],
+        "newMCCohomologyRowsInOldBasis": [
+          [
+            1
+          ]
+        ],
+        "newMCNames": [
+          "B1"
+        ],
+        "oldMCNames": [
+          "B1"
+        ],
+        "replacedMCPivot": 1
+      },
+      "certificate": {
+        "ambiguity": "exact plus 8X, hence identical cyclic incoming subgroup",
+        "cochainSource": "gap/pip_incoming_background.g",
+        "formula": "normalized-CA-H0-pip-boundary",
+        "orderDivides": 16,
+        "square": "(0,Sq1(omega),-Pontryagin(omega)/8)"
+      },
+      "coordinateMethod": "incoming-state-is-literally-a-marked-generator",
+      "filtration": [
+        {
+          "generatorIndices": [],
+          "gradedInvariants": [],
+          "gradedPresentation": [
+            []
+          ],
+          "gradedSmith": {
+            "D": [
+              []
+            ],
+            "U": [
+              [
+                1
+              ]
+            ],
+            "Ui": [
+              [
+                1
+              ]
+            ],
+            "V": [],
+            "Vi": [],
+            "diag": [],
+            "rank": 0
+          },
+          "highColumnMatrix": [
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "highColumnSmith": {
+            "D": [
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            "U": [
+              [
+                0,
+                1
+              ],
+              [
+                -1,
+                2
+              ]
+            ],
+            "Ui": [
+              [
+                2,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "V": [
+              [
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                1
+              ]
+            ],
+            "diag": [
+              1
+            ],
+            "rank": 1
+          },
+          "intersectionRelationRows": [
+            [
+              0
+            ]
+          ],
+          "layer": 0,
+          "prefixIndices": [],
+          "relationCombinationRows": [
+            [
+              -1,
+              2
+            ]
+          ],
+          "subgroupInvariants": [],
+          "subgroupPresentation": [
+            []
+          ],
+          "subgroupSmith": {
+            "D": [
+              []
+            ],
+            "U": [
+              [
+                1
+              ]
+            ],
+            "Ui": [
+              [
+                1
+              ]
+            ],
+            "V": [],
+            "Vi": [],
+            "diag": [],
+            "rank": 0
+          },
+          "upperIndices": [
+            1
+          ]
+        },
+        {
+          "generatorIndices": [],
+          "gradedInvariants": [],
+          "gradedPresentation": [
+            []
+          ],
+          "gradedSmith": {
+            "D": [
+              []
+            ],
+            "U": [
+              [
+                1
+              ]
+            ],
+            "Ui": [
+              [
+                1
+              ]
+            ],
+            "V": [],
+            "Vi": [],
+            "diag": [],
+            "rank": 0
+          },
+          "highColumnMatrix": [
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "highColumnSmith": {
+            "D": [
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            "U": [
+              [
+                0,
+                1
+              ],
+              [
+                -1,
+                2
+              ]
+            ],
+            "Ui": [
+              [
+                2,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "V": [
+              [
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                1
+              ]
+            ],
+            "diag": [
+              1
+            ],
+            "rank": 1
+          },
+          "intersectionRelationRows": [
+            [
+              0
+            ]
+          ],
+          "layer": 1,
+          "prefixIndices": [],
+          "relationCombinationRows": [
+            [
+              -1,
+              2
+            ]
+          ],
+          "subgroupInvariants": [],
+          "subgroupPresentation": [
+            []
+          ],
+          "subgroupSmith": {
+            "D": [
+              []
+            ],
+            "U": [
+              [
+                1
+              ]
+            ],
+            "Ui": [
+              [
+                1
+              ]
+            ],
+            "V": [],
+            "Vi": [],
+            "diag": [],
+            "rank": 0
+          },
+          "upperIndices": [
+            1
+          ]
+        },
+        {
+          "generatorIndices": [
+            1
+          ],
+          "gradedInvariants": [],
+          "gradedPresentation": [
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "gradedSmith": {
+            "D": [
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            "U": [
+              [
+                0,
+                1
+              ],
+              [
+                -1,
+                2
+              ]
+            ],
+            "Ui": [
+              [
+                2,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "V": [
+              [
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                1
+              ]
+            ],
+            "diag": [
+              1
+            ],
+            "rank": 1
+          },
+          "highColumnMatrix": [
+            [],
+            []
+          ],
+          "highColumnSmith": {
+            "D": [
+              [],
+              []
+            ],
+            "U": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "Ui": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "V": [],
+            "Vi": [],
+            "diag": [],
+            "rank": 0
+          },
+          "intersectionRelationRows": [
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "layer": 2,
+          "prefixIndices": [
+            1
+          ],
+          "relationCombinationRows": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "subgroupInvariants": [],
+          "subgroupPresentation": [
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "subgroupSmith": {
+            "D": [
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            "U": [
+              [
+                0,
+                1
+              ],
+              [
+                -1,
+                2
+              ]
+            ],
+            "Ui": [
+              [
+                2,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "V": [
+              [
+                1
+              ]
+            ],
+            "Vi": [
+              [
+                1
+              ]
+            ],
+            "diag": [
+              1
+            ],
+            "rank": 1
+          },
+          "upperIndices": []
+        }
+      ],
+      "graded": {
+        "bosonic": [],
+        "complex_fermion": [],
+        "majorana": []
+      },
+      "incomingCoordinates": [
+        1
+      ],
+      "incomingOrder": 2,
+      "incomingSmithCoordinates": [
+        1
+      ],
+      "incomingState": {
+        "fermion3": [
+          0
+        ],
+        "majorana2": [
+          1
+        ],
+        "phase4": [
+          [
+            11,
+            16
+          ]
+        ]
+      },
+      "quotientCertificate": "append-actual-incoming-coordinate-row-and-compute-integral-filtered-intersections"
+    },
+    "invariant_options": [
+      []
+    ],
+    "invariants": [],
+    "known_lower_formula": "complete manuscript-aligned U4 in 3+1D",
+    "lower": {
+      "generators": [
+        {
+          "layer": 2,
+          "lift": {
+            "construction": "exact-CA-incoming-H0-with-calibrated-even-square",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              1
+            ],
+            "phase4": [
+              [
+                11,
+                16
+              ]
+            ]
+          },
+          "name": "B1",
+          "quotientOrder": 2
+        }
+      ],
+      "invariants": [],
+      "presentation": [
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "smithColumnTransform": [
+        [
+          1
+        ]
+      ],
+      "smithDiagonal": [
+        1
+      ],
+      "smithRowTransform": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "witnesses": [
+        {
+          "bosonicIncomingCoordinates": [
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              0
+            ],
+            "phase4": [
+              [
+                7,
+                8
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "zero",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0
+          ],
+          "checkedComparisonSupport": true,
+          "phaseGauge3": [
+            [
+              7,
+              16
+            ]
+          ]
+        },
+        {
+          "certificate": {
+            "ambiguity": "exact plus 8X, hence identical cyclic incoming subgroup",
+            "cochainSource": "gap/pip_incoming_background.g",
+            "formula": "normalized-CA-H0-pip-boundary",
+            "orderDivides": 16,
+            "square": "(0,Sq1(omega),-Pontryagin(omega)/8)"
+          },
+          "certificateLevel": "actual-H0-pip-boundary-relation",
+          "coordinateRow": [
+            1
+          ],
+          "incomingOrder": 2
+        }
+      ]
+    },
+    "lower_before_h0": {
+      "generators": [
+        {
+          "layer": 2,
+          "lift": {
+            "construction": "exact-CA-incoming-H0-with-calibrated-even-square",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              1
+            ],
+            "phase4": [
+              [
+                11,
+                16
+              ]
+            ]
+          },
+          "name": "B1",
+          "quotientOrder": 2
+        }
+      ],
+      "invariants": [
+        2
+      ],
+      "presentation": [
+        [
+          2
+        ]
+      ],
+      "smithColumnTransform": [
+        [
+          1
+        ]
+      ],
+      "smithDiagonal": [
+        2
+      ],
+      "smithRowTransform": [
+        [
+          1
+        ]
+      ],
+      "witnesses": [
+        {
+          "bosonicIncomingCoordinates": [
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              0
+            ],
+            "phase4": [
+              [
+                7,
+                8
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "zero",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0
+          ],
+          "checkedComparisonSupport": true,
+          "phaseGauge3": [
+            [
+              7,
+              16
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "status": "computed"
+}

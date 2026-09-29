@@ -1,0 +1,53 @@
+{
+  "cfIncomingPrimary": [
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "dimension": "4+1D",
+  "filtration": {
+    "bosonic": [],
+    "complex_fermion": [
+      2
+    ],
+    "majorana": [
+      2
+    ],
+    "pip": []
+  },
+  "fullGroupInvariants": [
+    2,
+    2
+  ],
+  "majoranaGeneratorCohomology": [
+    1
+  ],
+  "majoranaGeneratorNative": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "model": "Q8_w0_s0",
+  "nativeSquare": [
+    0,
+    1,
+    1,
+    0
+  ],
+  "noUnknownHigherTwisterNeeded": true,
+  "productFormula": "B cup_2 B = Sq1(B), because r=3 and s1=0",
+  "projectedSquare": [
+    0
+  ],
+  "relations": [
+    "2C=0: its square is bosonic, and the final bosonic layer is zero",
+    "2B=0: its CF square projects to zero and no bosonic class remains"
+  ],
+  "squareH4Class": [
+    0
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "incomingPip": [],
+  "initial": {
+    "bosonic": [
+      3
+    ],
+    "complex_fermion": [],
+    "majorana": [],
+    "pip": [
+      3
+    ]
+  },
+  "layers": {
+    "bosonic": [
+      3
+    ],
+    "complex_fermion": [],
+    "majorana": [],
+    "pip": [
+      3
+    ]
+  },
+  "maps": {
+    "cfIncomingPrimary": [],
+    "cfOutgoingPrimary": [],
+    "mcIncomingPrimary": [],
+    "mcIncomingSecondary": [],
+    "mcIncomingSecondaryRaw": [],
+    "mcOutgoingPrimary": [],
+    "mcOutgoingSecondary": [],
+    "mcOutgoingSecondaryRaw": []
+  },
+  "model_id": "C3_w0_s0",
+  "nativeCohomology": [
+    {
+      "degree": 1,
+      "f2": [],
+      "zs": []
+    },
+    {
+      "degree": 2,
+      "f2": [],
+      "zs": [
+        3
+      ]
+    },
+    {
+      "degree": 3,
+      "f2": [],
+      "zs": []
+    },
+    {
+      "degree": 4,
+      "f2": [],
+      "zs": [
+        3
+      ]
+    },
+    {
+      "degree": 5,
+      "f2": [],
+      "zs": []
+    },
+    {
+      "degree": 6,
+      "f2": [],
+      "zs": [
+        3
+      ]
+    }
+  ],
+  "pipPages": [
+    {
+      "allSourceClassesChecked": true,
+      "directAdditivityChecks": [
+        {
+          "actual": [],
+          "predicted": [],
+          "source": [
+            2
+          ]
+        }
+      ],
+      "evaluations": [
+        {
+          "d2": [],
+          "page": 2,
+          "status": "survives"
+        }
+      ],
+      "generators": [
+        [
+          1
+        ]
+      ],
+      "page": 2,
+      "sourceOrders": [
+        3
+      ],
+      "survivingOrders": [
+        3
+      ],
+      "targetOrders": []
+    },
+    {
+      "allSourceClassesChecked": true,
+      "directAdditivityChecks": [
+        {
+          "actual": [],
+          "predicted": [],
+          "source": [
+            2
+          ]
+        }
+      ],
+      "evaluations": [
+        {
+          "d2": [],
+          "d3": [],
+          "d3Raw": [],
+          "majoranaAdjustment": [],
+          "page": 3,
+          "status": "survives"
+        }
+      ],
+      "generators": [
+        [
+          1
+        ]
+      ],
+      "page": 3,
+      "sourceOrders": [
+        3
+      ],
+      "survivingOrders": [
+        3
+      ],
+      "targetOrders": []
+    },
+    {
+      "allSourceClassesChecked": true,
+      "directAdditivityChecks": [
+        {
+          "actual": [],
+          "predicted": [],
+          "source": [
+            2
+          ]
+        }
+      ],
+      "evaluations": [
+        {
+          "d2": [],
+          "d3": [],
+          "d3Raw": [],
+          "d4": [],
+          "d4Raw": [],
+          "majoranaAdjustment": [],
+          "page": 4,
+          "phaseSkipped": "zero-target",
+          "status": "survives"
+        }
+      ],
+      "generators": [
+        [
+          1
+        ]
+      ],
+      "page": 4,
+      "sourceOrders": [
+        3
+      ],
+      "survivingOrders": [
+        3
+      ],
+      "targetOrders": []
+    }
+  ],
+  "resolutionDimensions": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "schema": "fspt-finite-example-v1",
+  "spacetime_dimension": "4+1D",
+  "stacking_scope": "associated-graded layers; no general 4+1D stacking extension asserted",
+  "status": "computed",
+  "targets": {
+    "incomingPhase": [
+      3
+    ],
+    "outgoingPhase": [],
+    "pipIncomingTerminal": [
+      3
+    ],
+    "pipOutgoingTerminal": []
+  },
+  "witnesses": {
+    "bosonicRelations": [],
+    "complexFermionBasis": [],
+    "majoranaBasis": [],
+    "pipBasis": [
+      [
+        1
+      ]
+    ]
+  }
+}

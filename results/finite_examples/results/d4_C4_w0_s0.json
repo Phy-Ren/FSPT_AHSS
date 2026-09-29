@@ -1,0 +1,262 @@
+{
+  "incomingPip": [],
+  "initial": {
+    "bosonic": [
+      4
+    ],
+    "complex_fermion": [
+      2
+    ],
+    "majorana": [
+      2
+    ],
+    "pip": [
+      4
+    ]
+  },
+  "layers": {
+    "bosonic": [
+      2
+    ],
+    "complex_fermion": [],
+    "majorana": [],
+    "pip": [
+      2
+    ]
+  },
+  "maps": {
+    "cfIncomingPrimary": [
+      [
+        2
+      ]
+    ],
+    "cfOutgoingPrimary": [
+      []
+    ],
+    "mcIncomingPrimary": [
+      [
+        1
+      ]
+    ],
+    "mcIncomingSecondary": [],
+    "mcIncomingSecondaryRaw": [],
+    "mcOutgoingPrimary": [
+      [
+        1
+      ]
+    ],
+    "mcOutgoingSecondary": [],
+    "mcOutgoingSecondaryRaw": []
+  },
+  "model_id": "C4_w0_s0",
+  "nativeCohomology": [
+    {
+      "degree": 1,
+      "f2": [
+        2
+      ],
+      "zs": []
+    },
+    {
+      "degree": 2,
+      "f2": [
+        2
+      ],
+      "zs": [
+        4
+      ]
+    },
+    {
+      "degree": 3,
+      "f2": [
+        2
+      ],
+      "zs": []
+    },
+    {
+      "degree": 4,
+      "f2": [
+        2
+      ],
+      "zs": [
+        4
+      ]
+    },
+    {
+      "degree": 5,
+      "f2": [
+        2
+      ],
+      "zs": []
+    },
+    {
+      "degree": 6,
+      "f2": [
+        2
+      ],
+      "zs": [
+        4
+      ]
+    }
+  ],
+  "pipPages": [
+    {
+      "allSourceClassesChecked": true,
+      "directAdditivityChecks": [
+        {
+          "actual": [
+            0
+          ],
+          "predicted": [
+            0
+          ],
+          "source": [
+            2
+          ]
+        },
+        {
+          "actual": [
+            1
+          ],
+          "predicted": [
+            1
+          ],
+          "source": [
+            3
+          ]
+        }
+      ],
+      "evaluations": [
+        {
+          "d2": [
+            1
+          ],
+          "page": 2,
+          "status": "killed"
+        }
+      ],
+      "generators": [
+        [
+          1
+        ]
+      ],
+      "page": 2,
+      "sourceOrders": [
+        4
+      ],
+      "survivingOrders": [
+        2
+      ],
+      "targetOrders": [
+        2
+      ]
+    },
+    {
+      "allSourceClassesChecked": true,
+      "directAdditivityChecks": [],
+      "evaluations": [
+        {
+          "d2": [
+            0
+          ],
+          "d3": [],
+          "d3Raw": [
+            0
+          ],
+          "majoranaAdjustment": [
+            0
+          ],
+          "page": 3,
+          "status": "survives"
+        }
+      ],
+      "generators": [
+        [
+          2
+        ]
+      ],
+      "page": 3,
+      "sourceOrders": [
+        2
+      ],
+      "survivingOrders": [
+        2
+      ],
+      "targetOrders": []
+    },
+    {
+      "allSourceClassesChecked": true,
+      "directAdditivityChecks": [],
+      "evaluations": [
+        {
+          "d2": [
+            0
+          ],
+          "d3": [],
+          "d3Raw": [
+            0
+          ],
+          "d4": [],
+          "d4Raw": [],
+          "majoranaAdjustment": [
+            0
+          ],
+          "page": 4,
+          "phaseSkipped": "zero-target",
+          "status": "survives"
+        }
+      ],
+      "generators": [
+        [
+          2
+        ]
+      ],
+      "page": 4,
+      "sourceOrders": [
+        2
+      ],
+      "survivingOrders": [
+        2
+      ],
+      "targetOrders": []
+    }
+  ],
+  "resolutionDimensions": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "schema": "fspt-finite-example-v1",
+  "spacetime_dimension": "4+1D",
+  "stacking_scope": "associated-graded layers; no general 4+1D stacking extension asserted",
+  "status": "computed",
+  "targets": {
+    "incomingPhase": [
+      2
+    ],
+    "outgoingPhase": [],
+    "pipIncomingTerminal": [
+      2
+    ],
+    "pipOutgoingTerminal": []
+  },
+  "witnesses": {
+    "bosonicRelations": [
+      [
+        2
+      ]
+    ],
+    "complexFermionBasis": [],
+    "majoranaBasis": [],
+    "pipBasis": [
+      [
+        2
+      ]
+    ]
+  }
+}

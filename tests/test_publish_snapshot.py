@@ -49,6 +49,34 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(payload['results/group_tables/README.md'], b'# Group structures\n')
         self.assertFalse(any(marker in b for b in payload.values()))
 
+    def test_finite_release_mapping_and_internal_tool_exclusion(self):
+        markers = [uuid.uuid4().hex.encode() for _ in range(3)]
+        source = {'README.md': b'# Public results\n', 'scripts/run_gap.py': b'import argparse\n',
+                  'publication/finite_examples/models.json': b'{"models":[]}\n',
+                  'publication/finite_examples/results/d3_C2.json': b'{}\n',
+                  'gap/finite_stacking_audit.g': markers[0],
+                  'gap/run_calibration_low.g': markers[1],
+                  'gap/run_finite_3d.g': b'public production frontend',
+                  'publication/build_finite_examples.py': markers[2]}
+        with mock.patch.object(pub, 'read_commit', return_value=('a'*40, source, {})), \
+             mock.patch.object(pub, 'summaries', return_value={}):
+            payload, _, manifest = pub.build(ROOT, 'HEAD')
+        self.assertIn('results/finite_examples/models.json', payload)
+        self.assertIn('results/finite_examples/results/d3_C2.json', payload)
+        self.assertIn('gap/run_finite_3d.g', payload)
+        for marker in markers:
+            self.assertFalse(any(marker in value for value in payload.values()))
+        self.assertEqual(manifest['allowlist']['finite_example_sources']['results/finite_examples/models.json'],
+                         'publication/finite_examples/models.json')
+
+    def test_unreviewed_finite_binary_payload_rejected(self):
+        source = {'README.md': b'# Public results\n', 'scripts/run_gap.py': b'import argparse\n',
+                  'publication/finite_examples/private_bundle.zip': b'private'}
+        with mock.patch.object(pub, 'read_commit', return_value=('a'*40, source, {})), \
+             mock.patch.object(pub, 'summaries', return_value={}):
+            with self.assertRaisesRegex(ValueError, 'Unreviewed finite-example'):
+                pub.build(ROOT, 'HEAD')
+
     def test_history_and_uncommitted_source_not_copied(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

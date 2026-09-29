@@ -46,6 +46,12 @@ decoration layers and the final abstract stacking groups. Original machine
 records and their certificate fields are preserved without rewriting.
 Internal research notes and working discussions are not published.
 
+Finite internal-symmetry examples are in `results/finite_examples`: sixteen
+3+1D full stacking results and 53 distinct 4+1D graded classifications, covering
+the original 43 table inputs and all additional finite controls. Exact model
+tables, certificates and portable reproduction commands are included. Run
+`python3 scripts/run_finite_example.py --list` to list the verified inputs.
+
 Run self-contained saved-result, scheduling and publication tests without private
 reference inputs:
 

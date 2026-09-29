@@ -1,0 +1,344 @@
+{
+  "layers": {
+    "bosonic": [
+      2
+    ],
+    "complex_fermion": [
+      2
+    ],
+    "majorana": [
+      2
+    ],
+    "pip": [
+      2
+    ]
+  },
+  "model_id": "C2_w1_s1",
+  "pipPages": [
+    {
+      "certificate": "d2-and-d3-primitives-zero-two-primary-d4-target",
+      "d3_initial_coordinates": [
+        0
+      ],
+      "d4_target": [],
+      "majorana_adjustment": [
+        0
+      ],
+      "page": 4,
+      "status": "survives"
+    }
+  ],
+  "ranks": {
+    "CF_incoming": 0,
+    "CF_primary": 0,
+    "H1F2": 1,
+    "H2F2": 1,
+    "H3F2": 1,
+    "MC_primary": 0,
+    "MC_secondary": 0
+  },
+  "resolutionDimensions": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "schema": "fspt-finite-example-v1",
+  "spacetime_dimension": "3+1D",
+  "stacking": {
+    "abstract_group_unique": true,
+    "invariant_options": [
+      [
+        16
+      ]
+    ],
+    "invariants": [
+      16
+    ],
+    "known_lower_formula": "complete manuscript-aligned U4 in 3+1D",
+    "lower": {
+      "generators": [
+        {
+          "layer": 0,
+          "lift": {
+            "construction": "final-bosonic-quotient-cocycle",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              0
+            ],
+            "phase4": [
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "name": "D1",
+          "quotientOrder": 2
+        },
+        {
+          "layer": 1,
+          "lift": {
+            "construction": "native-cocycle-and-homotopy-corrected-primitive",
+            "fermion3": [
+              1
+            ],
+            "majorana2": [
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "name": "C1",
+          "quotientOrder": 2
+        },
+        {
+          "layer": 2,
+          "lift": {
+            "construction": "full-Majorana-lift-with-linear-CF-indeterminacy-solve",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              1
+            ],
+            "phase4": [
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          "name": "B1",
+          "quotientOrder": 2
+        }
+      ],
+      "invariants": [
+        8
+      ],
+      "presentation": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          -1,
+          2,
+          0
+        ],
+        [
+          0,
+          -1,
+          2
+        ]
+      ],
+      "smithColumnTransform": [
+        [
+          1,
+          0,
+          -4
+        ],
+        [
+          0,
+          1,
+          -6
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "smithDiagonal": [
+        1,
+        1,
+        8
+      ],
+      "smithRowTransform": [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "witnesses": [
+        {
+          "certificateLevel": "final-bosonic-quotient",
+          "generator": "D1",
+          "order": 2
+        },
+        {
+          "bosonicIncomingCoordinates": [
+            0,
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              0
+            ],
+            "phase4": [
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0
+          ],
+          "checkedComparisonSupport": true,
+          "phaseGauge3": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "bosonicIncomingCoordinates": [
+            0,
+            0
+          ],
+          "boundary": {
+            "construction": "CA-product-with-pure-bosonic-left-factor",
+            "fermion3": [
+              0
+            ],
+            "majorana2": [
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "canonical": {
+            "construction": "native-cocycle-and-homotopy-corrected-primitive",
+            "fermion3": [
+              1
+            ],
+            "majorana2": [
+              0
+            ],
+            "phase4": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "certificateLevel": "comparison-homotopy",
+          "cfGauge2": [
+            0
+          ],
+          "cfIncomingCoordinates": [
+            0
+          ],
+          "checkedComparisonSupport": true,
+          "phaseGauge3": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "pip_extension": {
+      "ambiguousGeneratorIndices": [
+        1,
+        2
+      ],
+      "enumeratedExtensionClasses": 0,
+      "heightResults": [
+        {
+          "height": 3,
+          "invariants": [
+            16
+          ]
+        }
+      ],
+      "inputRelationModuloAmbiguity": [
+        0,
+        0,
+        1
+      ],
+      "invariantOptions": [
+        [
+          16
+        ]
+      ],
+      "invariants": [
+        16
+      ],
+      "method": "abelian-Ext1-height-stratification",
+      "modTwoAmbiguityRows": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "modTwoCyclicColumns": [
+        3
+      ],
+      "modTwoRelation": [
+        1
+      ],
+      "modTwoWeights": [
+        3
+      ],
+      "possibleHeights": [
+        3
+      ],
+      "status": "computed"
+    }
+  },
+  "status": "computed"
+}

@@ -16,7 +16,10 @@ import tarfile
 ALLOWED_ROOT_FILES = {'.gitattributes', '.gitignore', 'README.md', 'requirements-report.txt'}
 ALLOWED_DIRS = {'fspt', 'gap', 'scripts', 'tests'}
 PUBLIC_DOCS = {'docs/CLUSTER_RUN.md'}
-INTERNAL_TOOLS = {'scripts/report_upper_carry_scope.py', 'scripts/audit_c4_pullback_calibration.py'}
+INTERNAL_TOOLS = {'scripts/report_upper_carry_scope.py', 'scripts/audit_c4_pullback_calibration.py',
+                  'gap/finite_stacking_audit.g', 'gap/run_calibration_low.g',
+                  'gap/audit_dimension4_d4_completion.g', 'gap/audit_dimension4_q8_square.g',
+                  'scripts/build_calibration_finite_models.py', 'scripts/verify_dimension4_phase.py'}
 OWN_RESULTS = {'classification_frozen', 'space_groups', 'space_groups_spinless',
                'pip_diagnostics', 'optimization_validation', 'performance_environment',
                'point_groups'}
@@ -138,11 +141,19 @@ def build(source, ref):
                 raise ValueError('Original archive payload differs: '+payload_path)
             public[payload_path] = payload
     table_sources = {}
+    finite_sources = {}
     for path, raw in original.items():
         if path.startswith('publication/group_tables/'):
             target = 'results/group_tables/'+path[len('publication/group_tables/'):]
             public[target] = raw
             table_sources[target] = path
+        if path.startswith('publication/finite_examples/'):
+            relative = path[len('publication/finite_examples/'):]
+            if Path(relative).suffix not in {'.json', '.csv', '.md'}:
+                raise ValueError('Unreviewed finite-example publication payload: ' + path)
+            target = 'results/finite_examples/' + relative
+            public[target] = raw
+            finite_sources[target] = path
     # Internal notes, including their paths and hashes, are not exported.
     excluded = {p: {'sha256': sha(b), 'bytes': len(b)} for p, b in original.items()
                 if p not in public and not p.startswith('internal_notes/')}
@@ -198,6 +209,12 @@ in this release. Public tables in `results/group_tables` present the four
 decoration layers and the final abstract stacking groups. Original machine
 records and their certificate fields are preserved without rewriting.
 Internal research notes and working discussions are not published.
+
+Finite internal-symmetry examples are in `results/finite_examples`: sixteen
+3+1D full stacking results and 53 distinct 4+1D graded classifications, covering
+the original 43 table inputs and all additional finite controls. Exact model
+tables, certificates and portable reproduction commands are included. Run
+`python3 scripts/run_finite_example.py --list` to list the verified inputs.
 
 Run self-contained saved-result, scheduling and publication tests without private
 reference inputs:
@@ -315,7 +332,9 @@ reference copies. They are optional and never feed production results. See
                 'scope': 'Separate public history; no private Git objects or omitted reference payloads copied.',
                 'allowlist': {'root_files': sorted(ALLOWED_ROOT_FILES), 'directories': sorted(ALLOWED_DIRS),
                               'public_documents': sorted(PUBLIC_DOCS), 'own_result_directories': sorted(OWN_RESULTS),
-                              'group_table_sources': table_sources},
+                              'group_table_sources': table_sources,
+                              'finite_example_sources': finite_sources,
+                              'excluded_internal_tools': sorted(INTERNAL_TOOLS)},
                 'files': {p: {'sha256': sha(b), 'bytes': len(b),
                               'source_sha256': sha(original[p]) if p in original else None,
                               'publication_modified': p not in original or b != original[p]}
