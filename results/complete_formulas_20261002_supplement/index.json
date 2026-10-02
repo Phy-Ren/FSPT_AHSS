@@ -1,0 +1,311 @@
+{
+  "base_inventory": "results/complete_formulas/index.json",
+  "cases": [
+    {
+      "arithmetic_verification": {
+        "gap_unimodular_certificates_verified": true,
+        "independent_hnf_filtration_verified": true,
+        "independent_smith_verified": true
+      },
+      "bosonic_group": "Q24",
+      "bosonic_order": 24,
+      "collections": [
+        "finite_supplement_20261002"
+      ],
+      "dimension": 4,
+      "exact_canonical_input_sha256": "018f1e1b332cd2cebb466c9ca09e6889af6beff6da5c3b3edf0153f1404fd7e2",
+      "expected_invariant_factors": [
+        2,
+        2
+      ],
+      "final_filtration": [
+        {
+          "layer": "bosonic",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "complex_fermion",
+          "quotient_invariants": [
+            2
+          ],
+          "subgroup_invariants": [
+            2
+          ]
+        },
+        {
+          "layer": "majorana",
+          "quotient_invariants": [
+            2
+          ],
+          "subgroup_invariants": [
+            2,
+            2
+          ]
+        },
+        {
+          "layer": "pip",
+          "quotient_invariants": [],
+          "subgroup_invariants": [
+            2,
+            2
+          ]
+        }
+      ],
+      "finite_resolution_strategy": "input-generators",
+      "formula_coordinate": "2026-09-30-publication-current-native",
+      "id": "d4_Q24_orbit_000",
+      "independent_expected_group": "Z2^2",
+      "independent_reference": "https://arxiv.org/abs/2207.10700",
+      "independent_target_provenance": "prospective_independent_odd_kernel_transfer_proof",
+      "independent_target_status": "MATCH independent full-group target derived by odd-kernel transfer from the published untwisted Q8 Spin result",
+      "input_catalog": "results/complete_formulas_20261002_supplement/inputs/d4_Q24_orbit_000.json",
+      "input_model_sha256": "af2e19518724320f45d6c19f4a038e9056ae6bf6522bfc800c7f2c1618ebdcbb",
+      "invariant_factors": [
+        2,
+        2
+      ],
+      "model": "Q24_orbit_000",
+      "original_raw_sha256": "6a5eff789b97861b203ea89b444c808570defda3c0e05d44e6b599cb39f82626",
+      "removed_metadata_fields": [
+        "source_snapshot"
+      ],
+      "result": "results/complete_formulas_20261002_supplement/raw/d4_Q24_orbit_000.json",
+      "sha256": "19d3b5908dcd427993b50da7703361a128a8f2c4d6890b6b3ba551abf59920ec",
+      "source_id": "5441b68821128c410d3dbba092af70b1cc7a29ce070056d170023d8d49a8371a",
+      "status": "computed"
+    },
+    {
+      "arithmetic_verification": {
+        "gap_unimodular_certificates_verified": true,
+        "independent_hnf_filtration_verified": true,
+        "independent_smith_verified": true
+      },
+      "bosonic_group": "Q24",
+      "bosonic_order": 24,
+      "collections": [
+        "finite_supplement_20261002"
+      ],
+      "dimension": 4,
+      "exact_canonical_input_sha256": "e7598a660f13f1ca27633ea995f332795fe99effc149c5acb4da078b940d3b3a",
+      "final_filtration": [
+        {
+          "layer": "bosonic",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "complex_fermion",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "majorana",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "pip",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        }
+      ],
+      "finite_resolution_strategy": "input-generators",
+      "formula_coordinate": "2026-09-30-publication-current-native",
+      "id": "d4_Q24_orbit_004",
+      "independent_target_status": "No independent full-group target attached",
+      "input_catalog": "results/complete_formulas_20261002_supplement/inputs/d4_Q24_orbit_004.json",
+      "input_model_sha256": "7f88f356a9ee87694472da30bac90e766b007c147411d6cd779433c2a64200f2",
+      "invariant_factors": [],
+      "model": "Q24_orbit_004",
+      "original_raw_sha256": "fc4323340322f56965e120d8f80b8e19b9f42906c476673701efa5cae2168ddd",
+      "removed_metadata_fields": [
+        "source_snapshot"
+      ],
+      "result": "results/complete_formulas_20261002_supplement/raw/d4_Q24_orbit_004.json",
+      "sha256": "756b810357e60755eaf396a7cd1c651aed52b07fc8bea011f3d1f0c675067120",
+      "source_id": "5441b68821128c410d3dbba092af70b1cc7a29ce070056d170023d8d49a8371a",
+      "status": "computed"
+    },
+    {
+      "arithmetic_verification": {
+        "gap_unimodular_certificates_verified": true,
+        "independent_hnf_filtration_verified": true,
+        "independent_smith_verified": true
+      },
+      "bosonic_group": "Q24",
+      "bosonic_order": 24,
+      "collections": [
+        "finite_supplement_20261002"
+      ],
+      "dimension": 4,
+      "exact_canonical_input_sha256": "6687ac8f33956f9260f1a31407ff25368fa556a76b2daf38bc7c87322b9cd4a5",
+      "final_filtration": [
+        {
+          "layer": "bosonic",
+          "quotient_invariants": [
+            2
+          ],
+          "subgroup_invariants": [
+            2
+          ]
+        },
+        {
+          "layer": "complex_fermion",
+          "quotient_invariants": [
+            2
+          ],
+          "subgroup_invariants": [
+            4
+          ]
+        },
+        {
+          "layer": "majorana",
+          "quotient_invariants": [],
+          "subgroup_invariants": [
+            4
+          ]
+        },
+        {
+          "layer": "pip",
+          "quotient_invariants": [],
+          "subgroup_invariants": [
+            4
+          ]
+        }
+      ],
+      "finite_resolution_strategy": "input-generators",
+      "formula_coordinate": "2026-09-30-publication-current-native",
+      "id": "d4_Q24_orbit_005",
+      "independent_target_status": "No independent full-group target attached",
+      "input_catalog": "results/complete_formulas_20261002_supplement/inputs/d4_Q24_orbit_005.json",
+      "input_model_sha256": "3ced4a8213a2bc38795c9000b152b836ba23a8f8d5a331271549b781a49cf125",
+      "invariant_factors": [
+        4
+      ],
+      "model": "Q24_orbit_005",
+      "original_raw_sha256": "27acdb9916349c8850835b1a25ee348d7163e7c4abe470e05b07e75a1ccc60c4",
+      "removed_metadata_fields": [
+        "source_snapshot"
+      ],
+      "result": "results/complete_formulas_20261002_supplement/raw/d4_Q24_orbit_005.json",
+      "sha256": "d9cffcaf38064eaa8c1771b3421c997eea6780400f970146448123c47193188c",
+      "source_id": "5441b68821128c410d3dbba092af70b1cc7a29ce070056d170023d8d49a8371a",
+      "status": "computed"
+    },
+    {
+      "arithmetic_verification": {
+        "gap_unimodular_certificates_verified": true,
+        "independent_hnf_filtration_verified": true,
+        "independent_smith_verified": true
+      },
+      "bosonic_group": "Q24",
+      "bosonic_order": 24,
+      "collections": [
+        "finite_supplement_20261002"
+      ],
+      "dimension": 4,
+      "exact_canonical_input_sha256": "307694865b09b3bbb780c003d782e96b4dfbabfe9c85a7d6707bd954297df16f",
+      "final_filtration": [
+        {
+          "layer": "bosonic",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "complex_fermion",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "majorana",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "pip",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        }
+      ],
+      "finite_resolution_strategy": "input-generators",
+      "formula_coordinate": "2026-09-30-publication-current-native",
+      "id": "d4_Q24_orbit_006",
+      "independent_target_status": "No independent full-group target attached",
+      "input_catalog": "results/complete_formulas_20261002_supplement/inputs/d4_Q24_orbit_006.json",
+      "input_model_sha256": "5cc8f77dc1ab4e99a7bc22e1f0c8bfc26273fb987c8b1b86ab1b3cb2eb46d352",
+      "invariant_factors": [],
+      "model": "Q24_orbit_006",
+      "original_raw_sha256": "105d8e119f4ddad658941b4c90382971619e5269dbc18c75d2c6ea3e3b1c144c",
+      "removed_metadata_fields": [
+        "source_snapshot"
+      ],
+      "result": "results/complete_formulas_20261002_supplement/raw/d4_Q24_orbit_006.json",
+      "sha256": "8954ca21f20a17a2cdc7295740fa7269545107c4eba1c9fb59c0d586fedf450c",
+      "source_id": "5441b68821128c410d3dbba092af70b1cc7a29ce070056d170023d8d49a8371a",
+      "status": "computed"
+    },
+    {
+      "arithmetic_verification": {
+        "gap_unimodular_certificates_verified": true,
+        "independent_hnf_filtration_verified": true,
+        "independent_smith_verified": true
+      },
+      "bosonic_group": "S4",
+      "bosonic_order": 24,
+      "collections": [
+        "finite_supplement_20261002"
+      ],
+      "dimension": 4,
+      "exact_canonical_input_sha256": "587918682689c21beb7502d8c6c987602c8985439fd87a353f12e65465b83be3",
+      "expected_invariant_factors": [],
+      "final_filtration": [
+        {
+          "layer": "bosonic",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "complex_fermion",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "majorana",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "pip",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        }
+      ],
+      "finite_resolution_strategy": "default",
+      "formula_coordinate": "2026-09-30-publication-current-native",
+      "id": "d4_S4_orbit_000",
+      "independent_expected_group": "0",
+      "independent_reference": "https://arxiv.org/abs/2207.10700",
+      "independent_target_provenance": "post_hoc_independent_transfer_proof",
+      "independent_target_status": "MATCH post hoc independent transfer proof",
+      "input_catalog": "results/complete_formulas_20261002_supplement/inputs/d4_S4_orbit_000.json",
+      "input_model_sha256": "660f5345dea522cad920a4b53196b5baf8327a06ae7f922b18b6958960d11da8",
+      "invariant_factors": [],
+      "model": "S4_orbit_000",
+      "original_raw_sha256": "dee326fad84df50a6fd53963d31ff40e988988e0332cab7d2db8a9212f13b4a7",
+      "removed_metadata_fields": [
+        "source_snapshot"
+      ],
+      "result": "results/complete_formulas_20261002_supplement/raw/d4_S4_orbit_000.json",
+      "sha256": "abe1ced30991e694d66795b432bb0bcddee08627a57c3b507b7be5289e375723",
+      "source_id": "75ef24b701d37e73dfc997a75b6b1d0ce5a465569de90dbf504858d6be61cfe4",
+      "status": "computed"
+    }
+  ],
+  "date": "2026-10-02",
+  "export_transformation": "Remove only top-level source_snapshot, then serialize sorted JSON. Scientific fields are unchanged.",
+  "independent_full_target_matches": 2,
+  "record_count": 5,
+  "schema": "fspt-complete-result-supplement-v1",
+  "scope": "Five accepted new exact inputs at the 13:59 HKT cutoff; separate from the immutable 832-record initial release. Two independent full-group target comparisons: Q24_orbit_000 prospective, S4_orbit_000 post hoc."
+}

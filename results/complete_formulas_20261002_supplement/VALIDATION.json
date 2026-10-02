@@ -1,0 +1,343 @@
+{
+  "accepted_result_arithmetic_checks": [
+    {
+      "dimension": 4,
+      "final_filtration": [
+        {
+          "layer": "bosonic",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "complex_fermion",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "majorana",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "pip",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        }
+      ],
+      "id": "d4_Q24_orbit_004",
+      "invariant_factors": [],
+      "model": "Q24_orbit_004",
+      "sha256_verified": true,
+      "smith_and_unimodular_certificates": true
+    },
+    {
+      "dimension": 4,
+      "final_filtration": [
+        {
+          "layer": "bosonic",
+          "quotient_invariants": [
+            2
+          ],
+          "subgroup_invariants": [
+            2
+          ]
+        },
+        {
+          "layer": "complex_fermion",
+          "quotient_invariants": [
+            2
+          ],
+          "subgroup_invariants": [
+            4
+          ]
+        },
+        {
+          "layer": "majorana",
+          "quotient_invariants": [],
+          "subgroup_invariants": [
+            4
+          ]
+        },
+        {
+          "layer": "pip",
+          "quotient_invariants": [],
+          "subgroup_invariants": [
+            4
+          ]
+        }
+      ],
+      "id": "d4_Q24_orbit_005",
+      "invariant_factors": [
+        4
+      ],
+      "model": "Q24_orbit_005",
+      "sha256_verified": true,
+      "smith_and_unimodular_certificates": true
+    },
+    {
+      "dimension": 4,
+      "final_filtration": [
+        {
+          "layer": "bosonic",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "complex_fermion",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "majorana",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "pip",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        }
+      ],
+      "id": "d4_Q24_orbit_006",
+      "invariant_factors": [],
+      "model": "Q24_orbit_006",
+      "sha256_verified": true,
+      "smith_and_unimodular_certificates": true
+    },
+    {
+      "dimension": 4,
+      "final_filtration": [
+        {
+          "layer": "bosonic",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "complex_fermion",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "majorana",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "pip",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        }
+      ],
+      "id": "d4_S4_orbit_000",
+      "invariant_factors": [],
+      "model": "S4_orbit_000",
+      "sha256_verified": true,
+      "smith_and_unimodular_certificates": true
+    },
+    {
+      "dimension": 4,
+      "final_filtration": [
+        {
+          "layer": "bosonic",
+          "quotient_invariants": [],
+          "subgroup_invariants": []
+        },
+        {
+          "layer": "complex_fermion",
+          "quotient_invariants": [
+            2
+          ],
+          "subgroup_invariants": [
+            2
+          ]
+        },
+        {
+          "layer": "majorana",
+          "quotient_invariants": [
+            2
+          ],
+          "subgroup_invariants": [
+            2,
+            2
+          ]
+        },
+        {
+          "layer": "pip",
+          "quotient_invariants": [],
+          "subgroup_invariants": [
+            2,
+            2
+          ]
+        }
+      ],
+      "id": "d4_Q24_orbit_000",
+      "invariant_factors": [
+        2,
+        2
+      ],
+      "model": "Q24_orbit_000",
+      "sha256_verified": true,
+      "smith_and_unimodular_certificates": true
+    }
+  ],
+  "allocated_validation_wall_seconds": [
+    14.453911051154137,
+    0.779997430741787
+  ],
+  "finite_cli_fixtures": [
+    {
+      "name": "positive-missing-names",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "positive-empty-names",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "positive-empty-member",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "positive-whitespace-member",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "negative-sample-count",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "exclusive-tensor-abelian-dihedral-resolution",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "exclusive-tensor-abelian-input-generators-resolution",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "exclusive-tensor-abelian-direct-product-resolution",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "exclusive-dihedral-resolution-input-generators-resolution",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "exclusive-dihedral-resolution-direct-product-resolution",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "exclusive-input-generators-resolution-direct-product-resolution",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "name": "unsupported-direct-product",
+      "status": "passed",
+      "stopped_before_catalog_and_freeze": true
+    },
+    {
+      "driver_prepared_without_execution": true,
+      "name": "default-zero-samples",
+      "status": "passed"
+    },
+    {
+      "driver_prepared_without_execution": true,
+      "name": "explicit-zero-ignores-selectors",
+      "status": "passed"
+    },
+    {
+      "driver_prepared_without_execution": true,
+      "name": "positive-explicit-selectors",
+      "status": "passed"
+    },
+    {
+      "driver_prepared_without_execution": true,
+      "name": "explicit-duplicates-preserved",
+      "status": "passed"
+    },
+    {
+      "driver_prepared_without_execution": true,
+      "name": "membership-still-deferred-to-strict-gap-guard",
+      "status": "passed"
+    },
+    {
+      "driver_prepared_without_execution": true,
+      "name": "tensor-resolution",
+      "status": "passed"
+    },
+    {
+      "driver_prepared_without_execution": true,
+      "name": "dihedral-resolution",
+      "status": "passed"
+    },
+    {
+      "driver_prepared_without_execution": true,
+      "name": "input-generators-resolution",
+      "status": "passed"
+    },
+    {
+      "driver_prepared_without_execution": true,
+      "name": "D8-product-resolution",
+      "status": "passed"
+    },
+    {
+      "driver_prepared_without_execution": true,
+      "name": "Q8-product-resolution",
+      "status": "passed"
+    }
+  ],
+  "gap_syntax_files": 3,
+  "independent_full_targets": {
+    "new_post_hoc": 1,
+    "new_prospective": 1,
+    "original_canonical_catalog": 49
+  },
+  "integral_resolution_replay": {
+    "checks": [
+      {
+        "augmented_boundary_cells": 48,
+        "certificate": "D8xC2_certificate.json",
+        "contraction_cells": 1680,
+        "d_squared_cells": 2480,
+        "family": "D8xC2",
+        "group_associativity_triples": 4096,
+        "retained_bytes_verified": true,
+        "sha256": "dc71e89a65c0be70fd35fa968fad95365ffece473e06ce5f557047b237f7f7eb",
+        "transport_products": 256
+      },
+      {
+        "augmented_boundary_cells": 48,
+        "certificate": "Q8xC2_certificate.json",
+        "contraction_cells": 944,
+        "d_squared_cells": 1184,
+        "family": "Q8xC2",
+        "group_associativity_triples": 4096,
+        "retained_bytes_verified": true,
+        "sha256": "261b4ff7d3fd28f06a537418a33514abdd39993e4efadab26501709d10de37ec",
+        "transport_products": 256
+      }
+    ],
+    "physical_groups_computed": 0,
+    "success": true
+  },
+  "limits": {
+    "address_space_per_process_bytes": 2147483648,
+    "first_wall_seconds": 120,
+    "last_wall_seconds": 60
+  },
+  "physical_cases_rerun": 0,
+  "python_syntax_files": 8,
+  "reproduction_cli_dry_runs": 8,
+  "success": true,
+  "validation_scope": "CLI and syntax checks; two saved integral resolution certificates; five saved accepted integer presentations and final filtrations. No new physical calculation in this validation."
+}

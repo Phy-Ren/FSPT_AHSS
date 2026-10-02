@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Check seeded-audit CLI validation without starting a numerical calculation."""
+"""Check audit and resolution CLI validation without numerical calculations."""
 import argparse
 import contextlib
 import hashlib
 import importlib.util
 import io
+import itertools
 import json
 from pathlib import Path
 import sys
@@ -46,6 +47,13 @@ def main():
             ("positive-whitespace-member", ["--bar-audit-samples", "1", "--bar-audit-generators", "C1,  "], "requires explicit"),
             ("negative-sample-count", ["--bar-audit-samples", "-1", "--bar-audit-generators", "P1"], "nonnegative"),
         ]
+        resolutions = [('--tensor-abelian',), ('--dihedral-resolution',),
+                       ('--input-generators-resolution',),
+                       ('--direct-product-resolution', 'D8xC2')]
+        for left, right in itertools.combinations(resolutions, 2):
+            invalid.append(('exclusive-' + left[0][2:] + '-' + right[0][2:],
+                            list(left + right), 'Choose only one alternate resolution'))
+        invalid.append(('unsupported-direct-product', ['--direct-product-resolution', 'C4xC2'], 'invalid choice'))
         for name, extra, message in invalid:
             stderr = io.StringIO()
             with patch.object(sys, "argv", base + extra), contextlib.redirect_stderr(stderr), \
@@ -72,6 +80,14 @@ def main():
             ("membership-still-deferred-to-strict-gap-guard", ["--bar-audit-samples", "32", "--bar-audit-generators", "B2"],
              '["B2"]'),
         ]
+        entries = [
+            ('tensor-resolution', ['--tensor-abelian'], 'run_full_finite_tensor.g'),
+            ('dihedral-resolution', ['--dihedral-resolution'], 'run_full_finite_dihedral.g'),
+            ('input-generators-resolution', ['--input-generators-resolution'], 'run_full_finite_marked.g'),
+            ('D8-product-resolution', ['--direct-product-resolution', 'D8xC2'], 'run_full_finite_product.g'),
+            ('Q8-product-resolution', ['--direct-product-resolution', 'Q8xC2'], 'run_full_finite_product.g'),
+        ]
+        valid += [(name, extra, None) for name, extra, entry in entries]
         for name, extra, names in valid:
             captured = []
 
@@ -91,6 +107,12 @@ def main():
                     raise AssertionError((name, "driver boundary not reached"))
             assert freeze.call_count == 1 and len(captured) == 1, name
             driver = captured[0]
+            selected = [entry for label, extra_flags, entry in entries if label == name]
+            if selected:
+                assert '/gap/' + selected[0] in driver, (name, driver)
+            if '--direct-product-resolution' in extra:
+                family = extra[extra.index('--direct-product-resolution') + 1]
+                assert 'AFS_FULL_DIRECT_PRODUCT_FAMILY:="' + family + '";;' in driver
             if names is None:
                 assert "AFS_FULL_BAR_AUDIT_" not in driver, name
             else:

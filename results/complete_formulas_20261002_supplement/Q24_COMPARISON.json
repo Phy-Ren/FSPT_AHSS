@@ -1,0 +1,79 @@
+{
+  "cases": [
+    {
+      "audit_sha256": "4a8d818dc9e99563f9356e9656a21db6f471bd5ce64c25874c3dc5896cb61bbf",
+      "completion_sha256": "0659fd6a16a4d412449069d292b994f5a3bf6a4c695d70e40114fdf4a23e78ad",
+      "computed_invariant_factors": [
+        2,
+        2
+      ],
+      "computed_odd_primary_invariants": [],
+      "expected_invariant_factors": [
+        2,
+        2
+      ],
+      "finite_resolution_strategy": "input-generators",
+      "full_group_matches_prediction": true,
+      "full_group_prediction_scope": "independent_full_group_target",
+      "independent_odd_primary_matches": true,
+      "independent_odd_primary_prediction": [],
+      "model": "Q24_orbit_000",
+      "result_sha256": "6a5eff789b97861b203ea89b444c808570defda3c0e05d44e6b599cb39f82626",
+      "source_id": "5441b68821128c410d3dbba092af70b1cc7a29ce070056d170023d8d49a8371a",
+      "status": "compared"
+    },
+    {
+      "audit_sha256": "5ffc073a666c0d895501e57ff11e4c2f65482287c9b03611b01aacfe92b5ed60",
+      "completion_sha256": "427d83876bc07a8ac8a8c172b9f0365be33d72eeaa4f717664104c64083273af",
+      "computed_invariant_factors": [],
+      "computed_odd_primary_invariants": [],
+      "expected_invariant_factors": [],
+      "finite_resolution_strategy": "input-generators",
+      "full_group_matches_prediction": true,
+      "full_group_prediction_scope": "computed_Q8_reference_plus_independent_transfer_and_odd_factor",
+      "independent_odd_primary_matches": true,
+      "independent_odd_primary_prediction": [],
+      "model": "Q24_orbit_004",
+      "result_sha256": "fc4323340322f56965e120d8f80b8e19b9f42906c476673701efa5cae2168ddd",
+      "source_id": "5441b68821128c410d3dbba092af70b1cc7a29ce070056d170023d8d49a8371a",
+      "status": "compared"
+    },
+    {
+      "audit_sha256": "e6594354657535215c841e203691a9f36e84e1fc54ebe08dcf2d82e93678ac17",
+      "completion_sha256": "71cbaf50589d329bb33ba8bd76a7d5ded31d5aedbd2c10d47d5e63d11ab97e00",
+      "computed_invariant_factors": [
+        4
+      ],
+      "computed_odd_primary_invariants": [],
+      "expected_invariant_factors": [
+        4
+      ],
+      "finite_resolution_strategy": "input-generators",
+      "full_group_matches_prediction": true,
+      "full_group_prediction_scope": "computed_Q8_reference_plus_independent_transfer_and_odd_factor",
+      "independent_odd_primary_matches": true,
+      "independent_odd_primary_prediction": [],
+      "model": "Q24_orbit_005",
+      "result_sha256": "27acdb9916349c8850835b1a25ee348d7163e7c4abe470e05b07e75a1ccc60c4",
+      "source_id": "5441b68821128c410d3dbba092af70b1cc7a29ce070056d170023d8d49a8371a",
+      "status": "compared"
+    },
+    {
+      "audit_sha256": "0e4f9224c05c1797eeae5a73953b3ab2831315b2f590b670c5d002e649599cc9",
+      "completion_sha256": "6feb7cf074369812291c30afcde76d33e15b28c270b3e7a4897b2a915e375a7c",
+      "computed_invariant_factors": [],
+      "computed_odd_primary_invariants": [],
+      "expected_invariant_factors": [],
+      "finite_resolution_strategy": "input-generators",
+      "full_group_matches_prediction": true,
+      "full_group_prediction_scope": "computed_Q8_reference_plus_independent_transfer_and_odd_factor",
+      "independent_odd_primary_matches": true,
+      "independent_odd_primary_prediction": [],
+      "model": "Q24_orbit_006",
+      "result_sha256": "105d8e119f4ddad658941b4c90382971619e5269dbc18c75d2c6ea3e3b1c144c",
+      "source_id": "5441b68821128c410d3dbba092af70b1cc7a29ce070056d170023d8d49a8371a",
+      "status": "compared"
+    }
+  ],
+  "scope": "Q24_orbit_000 matches an independent full-group target. The other three comparisons use previously computed Q8 backgrounds and an independent odd-primary prediction; they are not independent full-group calibrations."
+}

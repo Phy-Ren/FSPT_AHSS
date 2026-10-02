@@ -9,19 +9,31 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+RESOLUTION_FLAGS = {
+    'default': [],
+    'tensor-abelian': ['--tensor-abelian'],
+    'standard-dihedral': ['--dihedral-resolution'],
+    'input-generators': ['--input-generators-resolution'],
+    'direct-product:D8xC2': ['--direct-product-resolution', 'D8xC2'],
+    'direct-product:Q8xC2': ['--direct-product-resolution', 'Q8xC2'],
+}
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--list', action='store_true')
+    ap.add_argument('--index', type=Path, default=ROOT/'results/complete_formulas/index.json',
+                    help='Published inventory or a separately dated supplementary index.')
     ap.add_argument('--case', help='Record ID from results/complete_formulas/index.json')
     ap.add_argument('--output', type=Path)
     ap.add_argument('--gap', default=os.environ.get('AFS_GAP'))
     ap.add_argument('--python', default=sys.executable)
     ap.add_argument('--audit', action='store_true', help='Also run the engine coherence audit; its recorded selection can be expensive.')
     ap.add_argument('--dry-run', action='store_true', help='Print the exact command without computing.')
+    ap.add_argument('--resolution', choices=('saved',) + tuple(RESOLUTION_FLAGS), default='saved',
+                    help='Finite inputs only: retain the recorded strategy or explicitly choose an alternate resolution.')
     args = ap.parse_args()
-    index = json.loads((ROOT/'results/complete_formulas/index.json').read_text())
+    index = json.loads(args.index.read_text())
     if args.list:
         for r in index['cases']: print(r['id'], r['invariant_factors'], ','.join(r['collections']))
         return
@@ -30,12 +42,18 @@ def main():
     if not matches: ap.error('Unknown record ID: ' + args.case)
     r = matches[0]
     saved = json.loads((ROOT/r['result']).read_text())
+    finite = 'space_group' not in r and 'point_group_index' not in r
+    if not finite and args.resolution != 'saved':
+        ap.error('--resolution applies only to finite internal inputs')
     if 'space_group' in r:
         cmd = [args.python, str(ROOT/'scripts/run_full_space_group.py'), str(r['space_group']), '--crystalline-spin', r['crystalline_spin']]
     elif 'point_group_index' in r:
         cmd = [args.python, str(ROOT/'scripts/run_full_point_group.py'), str(r['point_group_index']), '--crystalline-spin', r['crystalline_spin']]
     else:
         cmd = [args.python, str(ROOT/'scripts/run_full_finite.py'), '--catalog', str(ROOT/r['input_catalog']), '--model', r['model'], '--dimension', str(r['dimension'])]
+        strategy = saved.get('finiteResolutionStrategy', 'default') if args.resolution == 'saved' else args.resolution
+        if strategy not in RESOLUTION_FLAGS: ap.error('Unknown saved finite resolution strategy: ' + str(strategy))
+        cmd += RESOLUTION_FLAGS[strategy]
         coordinate = r['formula_coordinate']
         if coordinate in ('majorana-ca', 'majorana-operator'): cmd += ['--coordinate', coordinate]
         if saved.get('zeroChiralFiber'): cmd += ['--zero-chiral-fiber']

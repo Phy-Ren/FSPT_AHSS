@@ -6,7 +6,7 @@ Classification and stacking run sequentially in one process and share the same
 representatives. Different symmetry inputs can run in parallel. SptSet is not
 loaded.
 
-The current [complete-formula results](results/complete_formulas/README.md) contain
+The initial [complete-formula results](results/complete_formulas/README.md) contain
 **769 completed production calculations**:
 
 - 230 space groups in each crystalline spin convention: 460 calculations.
@@ -17,6 +17,10 @@ The 4+1D finite catalog contains **202 typed physical cases**. The 229 exact
 calculations also retain 27 historical coordinate representatives. An additional
 63 completed controls are listed separately. These counts describe calculation
 records, not 832 inequivalent physical symmetries.
+
+The [2026-10-02 supplement](results/complete_formulas_20261002_supplement/README.md)
+adds five accepted finite calculations, including two further independent
+full-group checks. Its dated inventory preserves the original release unchanged.
 
 All current production rows contain the full abstract stacking group, its
 presentation, and gauge-reduction witnesses. The [formula guide](formulas/README.md)

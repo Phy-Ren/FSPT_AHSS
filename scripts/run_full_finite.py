@@ -40,6 +40,10 @@ def main():
     parser.add_argument("--tensor-abelian", action="store_true")
     parser.add_argument("--dihedral-resolution", action="store_true",
                         help="Use an independently built standard permutation dihedral resolution")
+    parser.add_argument("--input-generators-resolution", action="store_true",
+                        help="Build the resolution using the supplied finite generators before PC conversion")
+    parser.add_argument("--direct-product-resolution", choices=("D8xC2", "Q8xC2"),
+                        help="Use exact standard-factor tensor resolutions for the specified direct product")
     parser.add_argument("--canonical-face-cache", action="store_true",
                         help="Opt in to common-left-translation invariant production face memoization")
     parser.add_argument("--certified-zero-lowers", action="store_true",
@@ -113,7 +117,8 @@ def main():
         args.mc_primary = "native" if args.dimension >= 3 else "bar"
     if not args.gap:
         parser.error("Provide --gap or set AFS_GAP.")
-    if args.tensor_abelian and args.dihedral_resolution:
+    if sum((args.tensor_abelian, args.dihedral_resolution, args.input_generators_resolution,
+            bool(args.direct_product_resolution))) > 1:
         parser.error("Choose only one alternate resolution.")
     if args.output.exists():
         parser.error("Output exists; use a fresh result path to retain provenance.")
@@ -181,6 +186,11 @@ def main():
         entry = "run_full_finite_tensor.g" if args.tensor_abelian else "run_full_finite.g"
         if args.dihedral_resolution:
             entry = "run_full_finite_dihedral.g"
+        if args.input_generators_resolution:
+            entry = "run_full_finite_marked.g"
+        if args.direct_product_resolution:
+            entry = "run_full_finite_product.g"
+            driver += "AFS_FULL_DIRECT_PRODUCT_FAMILY:=" + gap_literal(args.direct_product_resolution) + ";;\n"
         driver += 'Read(Concatenation(AFS_ROOT,"/gap/'+entry+'"));\n'
         (work / "driver.g").write_text(driver)
         process = subprocess.Popen(
@@ -196,6 +206,10 @@ def main():
             raise SystemExit("Complete finite calculation failed or lacked its completion marker.")
         result = json.loads((work / "raw.json").read_text())
     result.update(provenance)
+    result["finiteResolutionStrategy"] = ("direct-product:" + args.direct_product_resolution
+        if args.direct_product_resolution else "input-generators" if args.input_generators_resolution
+        else "tensor-abelian" if args.tensor_abelian else "standard-dihedral" if args.dihedral_resolution
+        else "default")
     result["pureCFSource3Kernel"] = args.pure_cf_source
     result["n0Source3Kernel"] = args.n0_source
     result.update(started=started, finished=time.time(), wall_seconds=time.time() - started,

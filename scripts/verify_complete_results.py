@@ -13,17 +13,21 @@ sys.path.insert(0, str(ROOT))
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--index', type=Path, default=ROOT/'results/complete_formulas/index.json',
+                    help='Published inventory or a separately dated supplementary index.')
     ap.add_argument('--arithmetic', action='store_true', help='Independently recompute SNF and final HNF filtration (requires SymPy).')
     ap.add_argument('--case', action='append', help='Select record IDs; default is the complete inventory.')
     ap.add_argument('--output', type=Path)
     args = ap.parse_args()
-    index = json.loads((ROOT/'results/complete_formulas/index.json').read_text())
+    index = json.loads(args.index.read_text())
     records = index['cases']
-    assert len(records) == index['record_count'] == 832
+    assert len(records) == index['record_count']
     assert len({r['id'] for r in records}) == len(records)
     counts = Counter(c for r in records for c in r['collections'])
-    assert counts['finite_production'] == 245 and counts['crystalline_production'] == 524
-    assert counts['finite_canonical_202'] == 202
+    if args.index.resolve() == (ROOT/'results/complete_formulas/index.json').resolve():
+        assert len(records) == 832
+        assert counts['finite_production'] == 245 and counts['crystalline_production'] == 524
+        assert counts['finite_canonical_202'] == 202
     if args.case:
         missing = set(args.case) - {r['id'] for r in records}
         if missing: ap.error('Unknown records: ' + ', '.join(sorted(missing)))
