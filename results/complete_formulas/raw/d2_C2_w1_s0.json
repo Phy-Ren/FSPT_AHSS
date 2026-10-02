@@ -1,0 +1,940 @@
+{
+  "abstractChiralCompletion": {
+    "invariants": [
+      0
+    ],
+    "markedFreeGenerator": "not-computed",
+    "minimalChiralIndex": "not-computed",
+    "presentationScope": "main presentation and witnesses describe only the zero-chiral subgroup",
+    "scope": "full-abstract-group-only-no-marked-chiral-cochains",
+    "theorem": "nonzero chiral image mZ from an odd fermionic representation; free quotient splits abstractly",
+    "zeroChiralInvariants": []
+  },
+  "binaryExtensionNormalizationRequested": false,
+  "canonicalFaceCache": false,
+  "catalog_sha256": "4572b6e0556ff2b9dd0e716528fb7fcc577cc86f940a57c002866b33b616c5ac",
+  "certifiedZeroLowerSourceUses": 0,
+  "certifiedZeroLowerSources": false,
+  "cfPrimaryEvaluation": "bar",
+  "coherenceAudit": {
+    "allGeneratorTriples": true,
+    "checks": [
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          1
+        ],
+        "kind": "right-inverse",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          1
+        ],
+        "kind": "left-inverse",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          2
+        ],
+        "kind": "right-inverse",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          2
+        ],
+        "kind": "left-inverse",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          1,
+          1
+        ],
+        "kind": "commutator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          1,
+          1,
+          1
+        ],
+        "kind": "associator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          1,
+          1,
+          2
+        ],
+        "kind": "associator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          1,
+          2
+        ],
+        "kind": "commutator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          1,
+          2,
+          1
+        ],
+        "kind": "associator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          1,
+          2,
+          2
+        ],
+        "kind": "associator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          2,
+          1
+        ],
+        "kind": "commutator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          2,
+          1,
+          1
+        ],
+        "kind": "associator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          2,
+          1,
+          2
+        ],
+        "kind": "associator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          2,
+          2
+        ],
+        "kind": "commutator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          2,
+          2,
+          1
+        ],
+        "kind": "associator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coordinates": [
+          0,
+          0
+        ],
+        "generators": [
+          2,
+          2,
+          2
+        ],
+        "kind": "associator",
+        "relationCombination": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "comparisonSupportFlatness": true,
+    "selectedGenerators": [
+      1,
+      2
+    ],
+    "status": "passed"
+  },
+  "cpuMs": 19469,
+  "dimension": 2,
+  "finished": 1790834856.3491297,
+  "formulaCoordinates": "majorana-ca",
+  "formulaIntegerVectorCache": false,
+  "formulaIntegerVectorCacheHits": 0,
+  "formulaIntegerVectorCacheLookups": 0,
+  "formulaWorkerRequests": 22,
+  "gaugeMethod": "normalized-simplicial-cylinder-transgression",
+  "generators": [
+    {
+      "complexFermion": [
+        0
+      ],
+      "integer": [
+        0
+      ],
+      "layer": 0,
+      "majorana": [
+        0
+      ],
+      "name": "D1",
+      "phase": [
+        [
+          1,
+          2
+        ]
+      ],
+      "quotientOrder": 2
+    },
+    {
+      "complexFermion": [
+        1
+      ],
+      "integer": [
+        0
+      ],
+      "layer": 1,
+      "majorana": [
+        0
+      ],
+      "name": "C1",
+      "phase": [
+        [
+          0,
+          1
+        ]
+      ],
+      "quotientOrder": 2
+    }
+  ],
+  "inputModel": {
+    "generatorIndices": [
+      2
+    ],
+    "group": "C2",
+    "id": "C2_w1_s0",
+    "omega2": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "order": 2,
+    "productTable": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "s1": [
+      0,
+      0
+    ]
+  },
+  "input_model_sha256": "07d848aeb94c7c330fa97564af1c8dc44522157f96664f6cadf6bba46ba9b2f0",
+  "invariants": [],
+  "mcPrimaryEvaluation": "bar",
+  "model": "C2_w1_s0",
+  "obstructionMaps": {
+    "complexFermionPrimary": [
+      []
+    ],
+    "majoranaPrimary": [
+      [
+        1
+      ]
+    ],
+    "majoranaSecondaryOriginal": []
+  },
+  "pipDiagnosticSemantics": {
+    "cochainEvidence": "audit-only native source vectors; a zero native vector does not prove a zero bar cochain",
+    "d2": "cohomology class of the first source; no preceding-layer adjustment quotient",
+    "d3": "final cohomology class modulo allowed Majorana primary images",
+    "d3Raw": "original cohomology class before allowed Majorana adjustment; not a cochain value",
+    "d4": "final cohomology class modulo allowed CF primary and Majorana secondary images",
+    "d4Raw": "original cohomology class of the chosen provisional tower; not a cochain value",
+    "obstructed": "true exactly when the final obstruction class on the recorded page is nontrivial"
+  },
+  "pipPages": [
+    {
+      "evaluations": [],
+      "page": 2,
+      "sourceOrders": [],
+      "survivingOrders": [],
+      "targetOrders": [
+        2
+      ]
+    },
+    {
+      "evaluations": [],
+      "page": 3,
+      "sourceOrders": [],
+      "survivingOrders": [],
+      "targetOrders": []
+    },
+    {
+      "evaluations": [],
+      "page": 4,
+      "sourceOrders": [],
+      "survivingOrders": [],
+      "targetOrders": []
+    }
+  ],
+  "presentation": [
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "rawSurvivingLayers": {
+    "bosonic": [
+      2
+    ],
+    "complexFermion": [
+      2
+    ],
+    "majorana": [],
+    "pip": []
+  },
+  "resolutionDimensions": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "schema": "fspt-complete-finite-v1",
+  "scope": "computed-zero-chiral-subgroup-with-known-q1-law",
+  "smithColumns": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "smithDiagonal": [
+    1,
+    1
+  ],
+  "smithRows": [
+    [
+      1,
+      -1,
+      2,
+      -1
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      -2,
+      4,
+      -2
+    ],
+    [
+      0,
+      -1,
+      2,
+      0
+    ]
+  ],
+  "source_id": "5819e9efe5e314025829afcdd00843c2445b66e4b84d5ded5c53da3f94a9e217",
+  "source_sha256": {
+    "fspt/data/full_formula/diagnostic_majorana_sq2sq1_product.json": "89b9f59b689d3c14533aa516e3f887df8532016d7ea6edcb7d52dbc4c56ff80c",
+    "fspt/data/full_formula/diagnostic_majorana_sq2sq1_source.json": "0df4d68a526adaf4ec26079d70825fd62c1d3d0eefc13fb5095bd06b65a55704",
+    "fspt/data/full_formula/dictionary4.json": "6b32dd8184da506a570c73afcfda5b4bc6f0fc0e2636760c7cb0e03e1d61f5ad",
+    "fspt/data/full_formula/h6.json": "070809f164fd0e44ce75f43edfeb59099fc0b4ac47ea480485d9d7eecea96092",
+    "fspt/data/full_formula/high6.json": "51f81b670d50bbd9e52d170226c8bf94be4de49adf79c2a3ccb82a98b95a6a0a",
+    "fspt/data/full_formula/lift3_product.json": "067b6a86a9e632d01d2d0c3e601557d9803098ecbbf49cbcf620e5a67908a21a",
+    "fspt/data/full_formula/lift3_source.json": "481ae2b6cceef7d811f82633be3baedab1bc55473f16c390fe8645baba57adc3",
+    "fspt/data/full_formula/majorana4_product.json": "c4de2b51f69ec066a45611118e72ee9f93a3f37383164a2a6ed2b109be1f3d7a",
+    "fspt/data/full_formula/majorana4_product_composed.json": "c3d0f730558d9ed5d11978389c0e6655efcf7d4164a8156edae3329c7a960a86",
+    "fspt/data/full_formula/majorana_1_majorana_product_ca.json": "bda405d5a8ccfb6939136e4bd9eeeaa8943a6c58557b7ea0d5c50f32ba5420a0",
+    "fspt/data/full_formula/majorana_1_majorana_source_ca.json": "3b7306c63b5491e3950b6700f5432aa1205a3568effe3533530d6620a1a2d870",
+    "fspt/data/full_formula/majorana_1_obstruction_ca.json": "ae379cd84fd947f876dcd450f69f92d0b84668dd9f4bfbb6bca4281699a1005d",
+    "fspt/data/full_formula/majorana_1_obstruction_operator.json": "0ba6fc1ada2a2d1649033ae3d1ce483b730fe618d93400aa2abe84b3de9355d8",
+    "fspt/data/full_formula/majorana_1_stacking_ca.json": "769b4c3c15b838d0660a68498781092f3cbef148fa65ed816ddd993b0b9abd88",
+    "fspt/data/full_formula/majorana_1_stacking_operator.json": "c6b3339c250f22f9e75801aacd77b60c3a71d1c5953bfb1728fa7d54bae35b36",
+    "fspt/data/full_formula/majorana_2_majorana_product_ca.json": "284173789540608fc3c757d2d770ac9a5fad09fdb6e710361b81b2d76b7370b7",
+    "fspt/data/full_formula/majorana_2_majorana_source_ca.json": "d38a4dd5bf6eed96191896f06eef11edb25e7d218ad658dbaebaa3f0bf0e575c",
+    "fspt/data/full_formula/majorana_2_obstruction_ca.json": "790355b7088415b45bc7a907f005432e2a21621f88a675ee0ba6997a6d0c273a",
+    "fspt/data/full_formula/majorana_2_obstruction_operator.json": "09b85ffc77ee7628294c9e9f7e6530e9ea4c0993f8073fa1bb56e29aecc176a2",
+    "fspt/data/full_formula/majorana_2_stacking_ca.json": "4f3bb1e249ad6e40a759cc5b996b7a18fc83783a7915c3dea01777c06c6aca1b",
+    "fspt/data/full_formula/majorana_2_stacking_operator.json": "00ee5430ad87b1b0af222f0c72f3a4d2882159f3a96e69f29d8406390509614e",
+    "fspt/data/full_formula/majorana_3_majorana_product_ca.json": "3bb12ce680a2a5c1ff143af44f43bc216754f2947a9c835d71e53309d64df518",
+    "fspt/data/full_formula/majorana_3_majorana_source_ca.json": "9b4079727eaefdba13e0e76300683e451337d57eead7337660d446992af1b62e",
+    "fspt/data/full_formula/majorana_3_obstruction_ca.json": "6980b06e2a311c0bde538ec71fd61044714014a612ade879f8c0bea2560ceba9",
+    "fspt/data/full_formula/majorana_3_obstruction_operator.json": "cdb8e7093a901c132dfeb864640d41a35d1a9e7f43382f5202173e96ad93b66e",
+    "fspt/data/full_formula/majorana_3_stacking_ca.json": "35538edcd3e57aeb68f6204b515420c21f1ae4192c4fed1e0d6e35dcbf0a7bcf",
+    "fspt/data/full_formula/majorana_3_stacking_operator.json": "1ca4f1c55ec78eebbce9c7da30caa453f8b47e539904e6f8728b4736680d178b",
+    "fspt/data/full_formula/nonbinary4.json": "25a97cfe4a71c699d0ff6207aa827c79ac945dd5cbf3ef352f3d60dea32f529e",
+    "fspt/data/full_formula/product_3_fermion.json": "a7781b8b79101a473dbebb5d4b428d9a08d132082a2fc3ccbd2bde8b048ded96",
+    "fspt/data/full_formula/product_3_majorana.json": "089c770047c4a3219a8dc18804975a95847d488ba231f40b3f2ac0aa0a5f3301",
+    "fspt/data/full_formula/product_4_fermion.json": "7cc3a08f5ad16ace60627752d3e3e93c2072603f0d0fe102f3e46983820677e2",
+    "fspt/data/full_formula/product_4_majorana.json": "972f1f2fc51440ce5b75eaae450a4262517437d365726f1292443be2f02e1fed",
+    "fspt/data/full_formula/rho4.json": "c43fe14c69de0b09d4df3d07a566bcb9497a04bf56ad012e2660f759bd838904",
+    "fspt/data/full_formula/source_3_fermion.json": "33852edecfc3879634b3db18d51946ddfa036190b5128836c22404e99c2dbebb",
+    "fspt/data/full_formula/source_3_majorana.json": "a99565b3c19b0dbe30a07ca6e975c8c63690b17944462c65f79f5ad296253e00",
+    "fspt/data/full_formula/source_4_fermion.json": "9eb14a3670dbe5a11fd8223203418a6532e2bb4b5aafe32066f1efd5fd3104d3",
+    "fspt/data/full_formula/source_4_majorana.json": "c6d395970e8f8ea1e627ce269506c10d28ba29d70debbf5c300c29452ad4b7b3",
+    "fspt/data/full_formula/tensor4.json": "70e4cd786461fd3bbfb8d8c83e3cb8e6d42f14dfc136d6db6a248792b0253efd",
+    "fspt/data/full_formula/vacuum_cf4_bosonic.json": "6e877d7900aa0d6306966f21447577051ad81b040176d3ba1faacac34b2f7034",
+    "fspt/data/full_formula/vacuum_mc4_bosonic.json": "169bb388b756f8682a45702a01bc65570b51b6ec9319caf2429a11b6e7f5c9ae",
+    "fspt/data/full_formula/vacuum_mc4_fermion.json": "1862471e075eae5c804a37d2ba874f796483a831aada9c6f49ee14d66286c073",
+    "fspt/data/full_formula/y6.json": "f89838de8524321b688089e3c8a7fce5592e6b6327893e84607a8cd40c0fe0c2",
+    "fspt/full_formula/__init__.py": "3ce1ee8891bcc3723f3e3cc727293725b055dff760617080b159a0015750e41d",
+    "fspt/full_formula/compiler.py": "7470f4b431f604a66be22593fce54b7f851884c511a7a393b2831776f6c3a346",
+    "fspt/full_formula/descent.py": "59b4c04f7b2a8953b67447ad1a4e4413b01f5f7495f1155088ec1b6ca0a507f3",
+    "fspt/full_formula/fmps1.py": "2126a393ac4ef0080aae0af7c9b5f06996df679ad317cde3fab53682af25e837",
+    "fspt/full_formula/native.cpp": "ccc236ca0975088f8e27e3358f9418940cbbf8810393f43ff976e448454bfb11",
+    "fspt/full_formula/native.so": "57764d75bcf0e5a42dff5f0ad6c78181356c7e62dda0485901cebbd542e3773e",
+    "fspt/full_formula/runtime.py": "cb6ff26528d3d28545df7fb37e7fa4b873a9e37e6455e14b562fc3ccd185dbec",
+    "fspt/majorana_backend.py": "e42cb9c91fa6a1721d7939c0b12d8b8170f45b5fb61406a8623ae9f09f9d8928",
+    "fspt/majorana_complete.py": "183c836d66a73e1dd9a1f394a6c52c703166fafd740e08062216de997b91428d",
+    "fspt/majorana_diagnostic.py": "0b0718cc9e3b2074e9cbd5b013dbe298925146b317115df10a4f6896514dab4c",
+    "gap/audit_dimension4_d4_completion.g": "5042982fc97aabed393c08f25dd54eb1288ef1df7ba7e2698e888007c143f34b",
+    "gap/audit_dimension4_q8_square.g": "9f4177727fc2582430ec01d239a9c46ad5448b2ae28ccd4fb9a0445cb72b7035",
+    "gap/backend.g": "3df26e9746d9a929cb53e10bbb22ccb18f0f61e1d6e84f4e7afc002245bd06bd",
+    "gap/backend_bar.g": "f17525ab9d456ccceb9c0a4e22d1651ac510b97201f86445467a453b912bc60b",
+    "gap/backend_bar_mod2.g": "4f54447c16b28c6b7dd3b12e91d1a81797136bb47a32627be7aa6f0cef0beaae",
+    "gap/backend_cup_cycle.g": "a7d052c891f9320a3389584daa3d5e521a2be75d223a2ef1e55b48f3a0275a91",
+    "gap/backend_cup_slant.g": "48d6709aea5d180e7ff63ce015d6879974a1b05a8ebd7a1a28d17763cfa91432",
+    "gap/backend_diagonal.g": "11e04411cb2afe51fa98f2ac205f8e9c2c1e69f9bfa4e686767e3511dfa29afc",
+    "gap/backend_half_phase.g": "9c11621b02ce4a7bacbf57332e4500d7a37f5e9ac65792ce81f63ab06675225c",
+    "gap/backend_hash_cache.g": "30958c3bb86a23cb25d5a11ef0dbb888126f8c5da3325c2d0d50b47f9ade10fe",
+    "gap/backend_mod2_contraction.g": "0562ebbdc4cfceddc9ff10d3caedef1f1ce4d6de529097bbd385874f1b7fd854",
+    "gap/backend_resolution.g": "5453332bb4da63383f706423b767d636c9e9277b8660200ab190f2912552192b",
+    "gap/backend_smith_transfer.g": "134ae9ef6454d5f942a2b8bb34d9359fd3ee662e5804dfde1b15dd75284bf1dd",
+    "gap/backend_smith_units.g": "20530c5f9c607e0be46bced4b3d3c80a06cef19e1970412c51db16687a625500",
+    "gap/background_free.g": "864c35c502ac1c867a4cb0b45ca2e0ae3ca402a18a4c453a429a0f0cad2db21c",
+    "gap/background_native_cup.g": "4204ec0d806f44b606ed92d6cb5df54bdb5387f7d6eff60a6da5f63722f418be",
+    "gap/background_operations.g": "12ce6cd3d8759cf7a5254c789ad0844b660e46a83c5e1af1665dc421ac8e0d97",
+    "gap/background_quotient.g": "158bd0c23ffdb26c61bb03d30bf1e2d18c61fbe8ce6a3fd9e285faff81a6e734",
+    "gap/background_stacking.g": "dbdc50a7ed6c336c8d83ee6306a277bf100e57fb580f6706e548b6fb51a77774",
+    "gap/check_full_abelian_kernel.g": "dccc25b504c5cdb56a2f2347f32d0bf9c2e7b1cb21bc0d65a8770b9fbeff8901",
+    "gap/check_full_cylinder.g": "7b270a63cd5bca501e778e5a87c6c169b556fed2dbed3e9175e790695a50dc48",
+    "gap/check_full_dihedral_resolution.g": "6430726f2c9c7fe479dbfd00fc3a66a650d5e25b21e0c034f15ee4e9752bb85b",
+    "gap/check_full_engine.g": "6d94136de0282f3c7819658dc582c31cdcf8e3f59e50f7369eb415ba4c65f606",
+    "gap/check_full_majorana_loop.g": "baf46c9f37052243cbe6a138b3cd7c36146f9472d3f4df331a945ca0cfcebe7f",
+    "gap/check_full_request_keys.g": "fa7c243cd093e064967cc86ae77d751459feb7349fb8baa50b318876eda56dbc",
+    "gap/check_full_tensor_resolution.g": "4ec9b7fd9564a151a805d219f08bdaeddb8e285787c83ef736c046eeba3754c2",
+    "gap/class_coordinates.g": "681d6ab197b249c9312d9fb46762cfef801441379488c250e8b10e3f64973165",
+    "gap/classification.g": "c46321480db282154b95525dd4f6a21521b2e0692a426ac1541a15e2634a7b9b",
+    "gap/crystalline_background.g": "4d625d2a7c58316da14ed015d3da26bc280b2dbcdf43516706da0c5a8dd26b4a",
+    "gap/dimension4.g": "b53be8e7c6a17931c464549a677d368614447f704b305907e0cb6c5dec2c748e",
+    "gap/dimension4_phase.g": "b83c77458686aa006c6c9f1ac371b9027b6886b947b08734a600d13c38f09959",
+    "gap/dimension4_phase_p1_full.g": "8963f0b9af107a7add6dbb28d2b6c09285c93559848c3cfc9c2549dd407f40a0",
+    "gap/dimension4_phase_p1_zero.g": "925375804a7f3282ddce4ef9a9d5e7e91c8121de8fd7a98b7ed01c78e1ea51b4",
+    "gap/dimension4_phase_p2_full.g": "0a565a9bb2c64e96966239971d0ce4df9c0a6aa02014baaf12e72ad2bdbec710",
+    "gap/dimension4_phase_p2_zero.g": "6feafb963af10501a05a45d9727da625959d4a8db9a5ecc8932a2785f775df36",
+    "gap/finite_full.g": "49b8978a0dfdab6d13979995a656faeba7844440f3f11f24aaa7ec56d2228890",
+    "gap/finite_input.g": "2eaf7167a4791f559226a9681cd4a1da798c9d3c7e8b970c2efe4f2e772541b6",
+    "gap/finite_stacking_audit.g": "0ae9110023c350b9cae72164a247cbc2394afefa25367cdd45e06484bab7b5af",
+    "gap/formula_data.g": "4fd1ade218090c962fcdb89bf2255c351da5b9308ca98e54a5b3e896c6b8e28e",
+    "gap/formula_fast.g": "a70a23b8ff01862471b3e8cbf12fa08e7171a8ffc35b5070e8085b5bfb60d43f",
+    "gap/formulas.g": "661da312670d6417106583da8fcc8a5f702397a04b0bf26bad91339816c75753",
+    "gap/full_bar_audit.g": "a6d2505bb56216572da925f2ca1dfd222883648834361d7755cf44acc538d865",
+    "gap/full_formula_transport.g": "c658590e709a7cb61040e3fe410e27f4a1ea76dbba8ffdda27cb1a84d48b30e4",
+    "gap/full_resolution.g": "f29b3cd9785f9addde0175a6f8d72ce937ac0f661ec91ea43f6c3c03a1eb762f",
+    "gap/full_stacking.g": "9d9fdd7eaf50d8d23fea6f3456b6e0148f81ca6aaaec2f91e7e7299dd90d98de",
+    "gap/pip.g": "775136183234062135d957c00e07146f20fc11b2c24c3dcc2680af895deabd7d",
+    "gap/pip_c4_data.g": "77bbf5267277f33efee025666e7fd22b1136a5f483151fceb5abd833b151f18c",
+    "gap/pip_coordinate_data.g": "daa9eb25fd7acb7a2e7d0fa286e6e1dece1ea913fe6e2d8e0783727c64433f87",
+    "gap/pip_coordinates.g": "817af838199cc6ea422c73de3497525f67f0170ad68c202c0f70ee5fb561a445",
+    "gap/pip_diagonal_data.g": "b1b79d31169e01f92fd51cb0497a425ca5f98b805f3bc645b7d1edc82be648f5",
+    "gap/pip_free.g": "e07f96411e331959e2bddd55c33b4573a6442d1f241419867bfb0d219b7cf7b9",
+    "gap/pip_incoming_background.g": "132dd565bf86eda6451d221a5280653c6de0b41a5be2c24f6ed20df434a538e4",
+    "gap/pip_o5_background.g": "b9a153a5bf2ba7c6be402dcecd1e49a667910fefeced667b04c11c5b4cffc82d",
+    "gap/pip_o5_background_even.g": "ddc33ab7095024e9e5b5f483795a0e5113447a1bbd236cdefc835d4334a445da",
+    "gap/pip_o5_background_sign.g": "ab1bf2657e812e47d97036f56c199c049596ee7c484676cb96cb5ada4037a60b",
+    "gap/pip_o5_general.g": "9a27dda678c9ffc0da986e62b47ca71cc8ce6cd305c6d2c5e989debb4c3c3f38",
+    "gap/pip_o5_program.g": "ba324e52fd1fbe99196dec47b9e35bcd95138a32e9ab8f3c71f101d1bcccf03f",
+    "gap/pip_o5_sign.g": "097c4e799b0f485b3def3dbd1006930d32819c96feb8c36741a69c48923a239b",
+    "gap/pip_stacking.g": "ca64fc2abd496134db9abd16b090295a8ea1c360b5626f1f6707da38c9ae34ab",
+    "gap/point_group_backend.g": "badb0caa321d5cf7279b700ec45f325f638c0a944bf7fb6f21189e09eab13220",
+    "gap/run_calibration_low.g": "49059d2de44d80d8e4a11badeaa702a3ef28811484efab629b65ecd0e8362a24",
+    "gap/run_dimension4.g": "0b5a4010798d2cfe99c6f5c8b00bdb68706800045f2f92549ffffb2e0b926214",
+    "gap/run_finite_3d.g": "2516562b5fdff6b40c8bfaafed1c0d5512daf9bda6ac790ff9b69fe7fedb716b",
+    "gap/run_full_finite.g": "412f0f8ce39b2c10bf95ebbbaa37ca95cc2d931f170a49de90027be9bfb82581",
+    "gap/run_full_finite_dihedral.g": "d4206fba7c210cd74067a7a29270d172eefa295e6ac02207936b33a9d240b5f7",
+    "gap/run_full_finite_tensor.g": "460e9b8f474d3bd2cb8b8e3baed61bfb2487d282eadd26a9502c63733c19e534",
+    "gap/run_full_point_group.g": "3bb19162a819457f07178a7357e944c7178cb2fce77a30d746d18a69b7f68b0c",
+    "gap/run_full_space_group.g": "a3849832a95ce4eb7b3f612afcea765b56fd730d8a08f14d322fa7f48fe0dcb6",
+    "gap/run_one.g": "920f75c96d5cf07fa7e9144ec5df7a5ca250ccb9ec87f8baa8568b2728b19064",
+    "gap/run_point_group.g": "62aa48123889bf29d6feeef44cfc9808c86788587b6dc2dc2338aa87cba5cb08",
+    "gap/stacking.g": "4a8bcd788980c1f87cf5ced70ab277562f0c3e1db73462e6ea377155305d697d",
+    "gap/stacking_closed_cf.g": "99948d62e0f2fa8e90cf725d43439f9470352508f6c137d54fa5f80b0b8b71fe",
+    "gap/verify_finite_q8_4d.g": "d185c52f8ebce9cae68995bd053cfdb0371e7e86549146eb18423f7acece0f42",
+    "scripts/closed_majorana_worker.py": "bc1b1c80712984e4bd65a9a2d3e734ec5de8fcfca79f7ec14820da58133f5f79",
+    "scripts/diagnostic_majorana_worker.py": "b3b6df6c2aa71543b5c0062bd307f416df6743fb1202197014d77bd35e0aae6c",
+    "scripts/full_formula_worker.py": "eb97e77a85527fd27b460ef959bab502c34e77c9627b0b93808112b248cd8224"
+  },
+  "sptset_loaded": false,
+  "stageTimings": [
+    {
+      "cpu_ms": 18548,
+      "stage": "full_cohomology"
+    },
+    {
+      "cpu_ms": 18550,
+      "stage": "full_cf_primary"
+    },
+    {
+      "cpu_ms": 18550,
+      "stage": "full_mc_primary"
+    },
+    {
+      "cpu_ms": 19009,
+      "stage": "full_mc_secondary"
+    },
+    {
+      "cpu_ms": 19009,
+      "stage": "full_pip_d2"
+    },
+    {
+      "cpu_ms": 19009,
+      "stage": "full_pip_d3"
+    },
+    {
+      "cpu_ms": 19009,
+      "stage": "full_pip_d4"
+    },
+    {
+      "cpu_ms": 19009,
+      "stage": "full_flat_lifts"
+    },
+    {
+      "cpu_ms": 19014,
+      "stage": "full_relation_D1"
+    },
+    {
+      "cpu_ms": 19014,
+      "stage": "full_relation_C1"
+    },
+    {
+      "cpu_ms": 19021,
+      "stage": "full_incoming_2_1"
+    },
+    {
+      "cpu_ms": 19083,
+      "stage": "full_incoming_1_1"
+    },
+    {
+      "cpu_ms": 19107,
+      "stage": "full_coherence"
+    },
+    {
+      "cpu_ms": 19468,
+      "stage": "full_coherence_complete"
+    }
+  ],
+  "started": 1790834836.062633,
+  "status": "computed",
+  "vacuumFermionKernel": false,
+  "vacuumFermionKernelUses": 0,
+  "vacuumMajoranaKernel": false,
+  "vacuumMajoranaKernelUses": 0,
+  "wall_seconds": 20.286497116088867,
+  "witnesses": [
+    {
+      "generator": "D1",
+      "kind": "bosonic-cohomology-order",
+      "order": 2
+    },
+    {
+      "generator": "C1",
+      "kind": "full-power-relation",
+      "order": 2,
+      "reduction": {
+        "certificate": "complete-lower-field-reduction-with-simplicial-cylinder-carries",
+        "coordinates": [
+          0,
+          0
+        ],
+        "witnesses": [
+          {
+            "certificate": "degree-zero-field-vanishes-pointwise",
+            "classBefore": [],
+            "coordinates": [],
+            "generatorIndices": [],
+            "layer": 3
+          },
+          {
+            "classBefore": [
+              0
+            ],
+            "coordinates": [],
+            "generatorIndices": [],
+            "layer": 2,
+            "nativePrimitive": [
+              0
+            ],
+            "primitiveCoefficient": "F2",
+            "primitiveDegree": 0
+          },
+          {
+            "classBefore": [
+              0
+            ],
+            "coordinates": [],
+            "generatorIndices": [],
+            "layer": 1,
+            "nativePrimitive": [
+              0
+            ],
+            "primitiveCoefficient": "F2",
+            "primitiveDegree": 1
+          },
+          {
+            "classBefore": [
+              0
+            ],
+            "coordinates": [
+              0
+            ],
+            "generatorIndices": [
+              1
+            ],
+            "layer": 0,
+            "nativePrimitive": [
+              [
+                0,
+                1
+              ]
+            ],
+            "primitiveCoefficient": "U1s",
+            "primitiveDegree": 2
+          }
+        ]
+      }
+    },
+    {
+      "gaugeCoefficient": "F2",
+      "gaugeDegree": 0,
+      "gaugeLayer": 2,
+      "gaugeOrder": 2,
+      "kind": "incoming-gauge-relation",
+      "nativeGauge": [
+        1
+      ],
+      "reduction": {
+        "certificate": "complete-lower-field-reduction-with-simplicial-cylinder-carries",
+        "coordinates": [
+          0,
+          1
+        ],
+        "witnesses": [
+          {
+            "certificate": "degree-zero-field-vanishes-pointwise",
+            "classBefore": [],
+            "coordinates": [],
+            "generatorIndices": [],
+            "layer": 3
+          },
+          {
+            "classBefore": [
+              0
+            ],
+            "coordinates": [],
+            "generatorIndices": [],
+            "layer": 2,
+            "nativePrimitive": [
+              0
+            ],
+            "primitiveCoefficient": "F2",
+            "primitiveDegree": 0
+          },
+          {
+            "classBefore": [
+              1
+            ],
+            "coordinates": [
+              1
+            ],
+            "generatorIndices": [
+              2
+            ],
+            "layer": 1,
+            "nativePrimitive": [
+              0
+            ],
+            "primitiveCoefficient": "F2",
+            "primitiveDegree": 1
+          },
+          {
+            "classBefore": [
+              0
+            ],
+            "coordinates": [
+              0
+            ],
+            "generatorIndices": [
+              1
+            ],
+            "layer": 0,
+            "nativePrimitive": [
+              [
+                0,
+                1
+              ]
+            ],
+            "primitiveCoefficient": "U1s",
+            "primitiveDegree": 2
+          }
+        ]
+      }
+    },
+    {
+      "gaugeCoefficient": "F2",
+      "gaugeDegree": 1,
+      "gaugeLayer": 1,
+      "gaugeOrder": 2,
+      "kind": "incoming-gauge-relation",
+      "nativeGauge": [
+        1
+      ],
+      "reduction": {
+        "certificate": "complete-lower-field-reduction-with-simplicial-cylinder-carries",
+        "coordinates": [
+          1,
+          0
+        ],
+        "witnesses": [
+          {
+            "certificate": "degree-zero-field-vanishes-pointwise",
+            "classBefore": [],
+            "coordinates": [],
+            "generatorIndices": [],
+            "layer": 3
+          },
+          {
+            "classBefore": [
+              0
+            ],
+            "coordinates": [],
+            "generatorIndices": [],
+            "layer": 2,
+            "nativePrimitive": [
+              0
+            ],
+            "primitiveCoefficient": "F2",
+            "primitiveDegree": 0
+          },
+          {
+            "classBefore": [
+              0
+            ],
+            "coordinates": [
+              0
+            ],
+            "generatorIndices": [
+              2
+            ],
+            "layer": 1,
+            "nativePrimitive": [
+              0
+            ],
+            "primitiveCoefficient": "F2",
+            "primitiveDegree": 1
+          },
+          {
+            "classBefore": [
+              1
+            ],
+            "coordinates": [
+              1
+            ],
+            "generatorIndices": [
+              1
+            ],
+            "layer": 0,
+            "nativePrimitive": [
+              [
+                0,
+                1
+              ]
+            ],
+            "primitiveCoefficient": "U1s",
+            "primitiveDegree": 2
+          }
+        ]
+      }
+    }
+  ],
+  "zeroChiralFiber": true
+}

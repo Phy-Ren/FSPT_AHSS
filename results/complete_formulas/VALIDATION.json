@@ -1,0 +1,286 @@
+{
+  "canonical_full_group_targets_matched": 49,
+  "checker_sha256": "c87a1a567872ba5c7b31c1d6992d894a857e323cf7bcbe34e921cd0b06eea25e",
+  "formula_recompilations": [
+    {
+      "nodes": 173707,
+      "program_and_outputs_identical": true,
+      "target": "y6"
+    },
+    {
+      "nodes": 35616,
+      "program_and_outputs_identical": true,
+      "target": "h6"
+    },
+    {
+      "nodes": 36150,
+      "program_and_outputs_identical": true,
+      "target": "high6"
+    },
+    {
+      "nodes": 3075,
+      "program_and_outputs_identical": true,
+      "target": "nonbinary4"
+    },
+    {
+      "nodes": 13162,
+      "program_and_outputs_identical": true,
+      "target": "rho4"
+    },
+    {
+      "nodes": 1658,
+      "program_and_outputs_identical": true,
+      "target": "tensor4"
+    },
+    {
+      "nodes": 955,
+      "program_and_outputs_identical": true,
+      "target": "dictionary4"
+    },
+    {
+      "nodes": 2064,
+      "program_and_outputs_identical": true,
+      "target": "lift3_source"
+    },
+    {
+      "nodes": 4360,
+      "program_and_outputs_identical": true,
+      "target": "lift3_product"
+    },
+    {
+      "nodes": 34,
+      "program_and_outputs_identical": true,
+      "target": "source_3_majorana"
+    },
+    {
+      "nodes": 189,
+      "program_and_outputs_identical": true,
+      "target": "source_3_fermion"
+    },
+    {
+      "nodes": 66,
+      "program_and_outputs_identical": true,
+      "target": "source_4_majorana"
+    },
+    {
+      "nodes": 413,
+      "program_and_outputs_identical": true,
+      "target": "source_4_fermion"
+    },
+    {
+      "nodes": 16,
+      "program_and_outputs_identical": true,
+      "target": "product_3_majorana"
+    },
+    {
+      "nodes": 293,
+      "program_and_outputs_identical": true,
+      "target": "product_3_fermion"
+    },
+    {
+      "nodes": 26,
+      "program_and_outputs_identical": true,
+      "target": "product_4_majorana"
+    },
+    {
+      "nodes": 558,
+      "program_and_outputs_identical": true,
+      "target": "product_4_fermion"
+    }
+  ],
+  "fresh_examples": [
+    {
+      "coherence_audit": {
+        "allGeneratorTriples": true,
+        "check_counts": {
+          "associator": 27,
+          "commutator": 9,
+          "left-inverse": 3,
+          "right-inverse": 3
+        },
+        "comparisonSupportFlatness": true,
+        "selectedGenerators": [
+          1,
+          2,
+          3
+        ],
+        "status": "passed"
+      },
+      "current_runtime_source_files_hash_matched": 127,
+      "fresh_result_sha256": "ef943efc7e38dbbf0dd38989f1c4d69c7a9934ecd31fe40875721ce5b131d0ba",
+      "invariant_factors": [
+        8
+      ],
+      "native_binary_sha256": "57764d75bcf0e5a42dff5f0ad6c78181356c7e62dda0485901cebbd542e3773e",
+      "omitted_unused_legacy_calibration_file_count": 2,
+      "record_id": "d1_C2_w0_s1",
+      "status": "computed",
+      "tested_source_id": "c4e48b2c624180c0b48e3fcf10382a104a17d4f47b1f9cb1f427be493ae3a2f6"
+    },
+    {
+      "coherence_audit": {
+        "allGeneratorTriples": true,
+        "check_counts": {
+          "associator": 8,
+          "commutator": 4,
+          "left-inverse": 2,
+          "right-inverse": 2
+        },
+        "comparisonSupportFlatness": true,
+        "selectedGenerators": [
+          1,
+          2
+        ],
+        "status": "passed"
+      },
+      "current_runtime_source_files_hash_matched": 127,
+      "fresh_result_sha256": "a2b012698cf14914f8b6c73b677b7b9e3594875fd2db4e9156e623a6b0015c34",
+      "invariant_factors": [
+        2
+      ],
+      "native_binary_sha256": "57764d75bcf0e5a42dff5f0ad6c78181356c7e62dda0485901cebbd542e3773e",
+      "omitted_unused_legacy_calibration_file_count": 2,
+      "record_id": "d2_E01",
+      "status": "computed",
+      "tested_source_id": "c4e48b2c624180c0b48e3fcf10382a104a17d4f47b1f9cb1f427be493ae3a2f6"
+    },
+    {
+      "coherence_audit": {
+        "allGeneratorTriples": true,
+        "check_counts": {
+          "associator": 64,
+          "commutator": 16,
+          "left-inverse": 4,
+          "right-inverse": 4
+        },
+        "comparisonSupportFlatness": true,
+        "selectedGenerators": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "status": "passed"
+      },
+      "current_runtime_source_files_hash_matched": 127,
+      "fresh_result_sha256": "276cc7337a968f994c7e72e6aeb2e8dc579d04bfaab08d5441cc1f8d23a53430",
+      "invariant_factors": [
+        16
+      ],
+      "native_binary_sha256": "57764d75bcf0e5a42dff5f0ad6c78181356c7e62dda0485901cebbd542e3773e",
+      "omitted_unused_legacy_calibration_file_count": 2,
+      "record_id": "d3_C2_w1_s1",
+      "status": "computed",
+      "tested_source_id": "c4e48b2c624180c0b48e3fcf10382a104a17d4f47b1f9cb1f427be493ae3a2f6"
+    },
+    {
+      "coherence_audit": {
+        "allGeneratorTriples": true,
+        "check_counts": {
+          "associator": 64,
+          "commutator": 16,
+          "left-inverse": 4,
+          "right-inverse": 4
+        },
+        "comparisonSupportFlatness": true,
+        "selectedGenerators": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "status": "passed"
+      },
+      "current_runtime_source_files_hash_matched": 127,
+      "fresh_result_sha256": "6e786946ec22ead78405b9798966850ac422f6c896aceba0c6a9707cac60e98b",
+      "invariant_factors": [
+        16
+      ],
+      "native_binary_sha256": "57764d75bcf0e5a42dff5f0ad6c78181356c7e62dda0485901cebbd542e3773e",
+      "omitted_unused_legacy_calibration_file_count": 2,
+      "record_id": "d4_C2_w1_s0",
+      "status": "computed",
+      "tested_source_id": "c4e48b2c624180c0b48e3fcf10382a104a17d4f47b1f9cb1f427be493ae3a2f6"
+    },
+    {
+      "coherence_audit": {
+        "allGeneratorTriples": true,
+        "check_counts": {
+          "associator": 8,
+          "commutator": 4,
+          "left-inverse": 2,
+          "right-inverse": 2
+        },
+        "comparisonSupportFlatness": true,
+        "selectedGenerators": [
+          1,
+          2
+        ],
+        "status": "passed"
+      },
+      "current_runtime_source_files_hash_matched": 127,
+      "fresh_result_sha256": "903f179eb163386961c084132522c186034eff5c5adabf0682ccc9ee23c305fa",
+      "invariant_factors": [],
+      "native_binary_sha256": "57764d75bcf0e5a42dff5f0ad6c78181356c7e62dda0485901cebbd542e3773e",
+      "omitted_unused_legacy_calibration_file_count": 2,
+      "record_id": "d3_PG2_half",
+      "status": "computed",
+      "tested_source_id": "c4e48b2c624180c0b48e3fcf10382a104a17d4f47b1f9cb1f427be493ae3a2f6"
+    },
+    {
+      "coherence_audit": {
+        "allGeneratorTriples": false,
+        "check_counts": {
+          "associator": 125,
+          "commutator": 25,
+          "left-inverse": 7,
+          "right-inverse": 7
+        },
+        "comparisonSupportFlatness": true,
+        "selectedGenerators": [
+          1,
+          2,
+          4,
+          5,
+          7
+        ],
+        "status": "passed"
+      },
+      "current_runtime_source_files_hash_matched": 127,
+      "fresh_result_sha256": "b6ea766248a5f68582d6a0a99718cae88d95c09490544ff44d2bd66c256c2598",
+      "invariant_factors": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "native_binary_sha256": "57764d75bcf0e5a42dff5f0ad6c78181356c7e62dda0485901cebbd542e3773e",
+      "omitted_unused_legacy_calibration_file_count": 2,
+      "record_id": "d3_SG1_half",
+      "status": "computed",
+      "tested_source_id": "c4e48b2c624180c0b48e3fcf10382a104a17d4f47b1f9cb1f427be493ae3a2f6"
+    }
+  ],
+  "numerical_environment": {
+    "address_space_limit_bytes": 2147483648,
+    "allocated_compute_node": true,
+    "compiler_python": "3.11.3",
+    "formula_and_fresh_examples_seconds": 454.60245440527797,
+    "gap": "4.13.1",
+    "runtime_python": "3.8.16",
+    "task_timeout_seconds": 900
+  },
+  "saved_presentations": {
+    "count": 832,
+    "final_hnf_filtration": true,
+    "gap_unimodular_certificates": true,
+    "independent_smith": true,
+    "receipt_sha256": "d59ffec4d4f1b1818e2ecfa72d1989099e23f3616a5d6efc4106729f92c03cb1"
+  },
+  "schema": "fspt-public-release-validation-v1",
+  "scope": "Exact formula instruction/output equality; independent integer arithmetic and final filtration; fresh complete calculations with the recorded coherence-audit scope. This does not assert independent physical normalization for uncalibrated groups.",
+  "success": true
+}

@@ -1,5 +1,7 @@
 # Classification and stacking groups
 
+This is a historical archive. See the [current complete-formula results](../complete_formulas/README.md) for the full updated classification and stacking calculations.
+
 Complete tables for 230 space groups and 32 crystallographic point groups in each crystalline spin convention. The four decoration layers and final abstract stacking group are listed separately.
 
 | Crystalline convention | Equivalent internal convention | Effective background |

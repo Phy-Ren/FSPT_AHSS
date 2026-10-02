@@ -228,9 +228,18 @@ BindGlobal("AFSNative",function(c,k,coeff,f)
   for i in [1..Length(v)] do
     w:=AFSChainToBar(c.bar,k,i);
     for t in w do
-      sgn:=1;
-      if coeff="Zs" or coeff="U1s" then sgn:=c.sign(t[2]); fi;
-      v[i]:=v[i]+t[1]*sgn*CallFuncList(f,t[3]);
+      if coeff="F2" and IsBound(c.f2ParityFilter) and c.f2ParityFilter then
+        c.f2ParityStats.nativeTerms:=c.f2ParityStats.nativeTerms+1;
+        if t[1] mod 2=0 then
+          c.f2ParityStats.nativeEvenTerms:=c.f2ParityStats.nativeEvenTerms+1;continue;
+        fi;
+        c.f2ParityStats.nativeSourceCalls:=c.f2ParityStats.nativeSourceCalls+1;
+        v[i]:=(v[i]+CallFuncList(f,t[3])) mod 2;
+      else
+        sgn:=1;
+        if coeff="Zs" or coeff="U1s" then sgn:=c.sign(t[2]); fi;
+        v[i]:=v[i]+t[1]*sgn*CallFuncList(f,t[3]);
+      fi;
     od;
   od;
   if coeff="F2" then return List(v,x->x mod 2); fi;

@@ -171,7 +171,60 @@ end);
 # Evaluate h^*f without materializing its bar chain. Repeated first-face
 # substitution gives an alternating sum over suffixes of the input tuple.
 # The chain-valued homotopy remains available as an independent witness.
+# Exact F2 evaluation of the SAME integral homotopy. The bounded buffer
+# combines equal bar tuples before evaluating f; flushing only loses possible
+# cancellations across chunks, never changes the value modulo two.
+BindGlobal("AFSF2HomotopyPullbackFiltered",function(b,f)
+  return AFSMemo(function(xs...)
+    local n,j,prefix,tail,w,t,value,keys,tuples,parities,key,pos,tuple,flush,stats;
+    n:=Length(xs);value:=0;
+    if b.one in xs then return 0;fi;
+    stats:=b.f2ParityStats;stats.homotopyEvaluations:=stats.homotopyEvaluations+1;
+    keys:=NewDictionary([1],true);tuples:=[];parities:=[];
+    flush:=function()
+      local i;
+      for i in [1..Length(tuples)] do
+        if parities[i]=1 then
+          value:=(value+CallFuncList(f,tuples[i])) mod 2;
+          stats.homotopySourceCalls:=stats.homotopySourceCalls+1;
+        fi;
+      od;
+      stats.homotopyFlushes:=stats.homotopyFlushes+1;
+      keys:=NewDictionary([1],true);tuples:=[];parities:=[];
+    end;
+    for j in [0..n-1] do
+      prefix:=xs{[1..j]};tail:=xs{[j+1..n]};
+      for w in AFSChainFromBar(b,tail) do
+        if w[3]=b.one then continue;fi;
+        if w[1] mod 2=0 then
+          stats.homotopyEvenNativeTerms:=stats.homotopyEvenNativeTerms+1;continue;
+        fi;
+        for t in AFSChainToBar(b,n-j,w[2]) do
+          stats.homotopyBarTerms:=stats.homotopyBarTerms+1;
+          if t[1] mod 2=0 then
+            stats.homotopyEvenBarTerms:=stats.homotopyEvenBarTerms+1;continue;
+          fi;
+          tuple:=Concatenation(prefix,[w[3]],t[3]);key:=AFSKey(tuple);
+          pos:=LookupDictionary(keys,key);
+          if pos=fail then
+            if Length(tuples)>=b.f2ParitySupportLimit then flush();fi;
+            Add(tuples,tuple);Add(parities,1);AddDictionary(keys,key,Length(tuples));
+            stats.maximumBufferedTuples:=Maximum(stats.maximumBufferedTuples,Length(tuples));
+          else
+            parities[pos]:=1-parities[pos];
+            stats.homotopyDuplicateTerms:=stats.homotopyDuplicateTerms+1;
+          fi;
+        od;
+      od;
+    od;
+    flush();return value;
+  end);
+end);
+
 BindGlobal("AFSHomotopyPullback",function(b,coeff,f)
+  if coeff="F2" and IsBound(b.f2ParityFilter) and b.f2ParityFilter then
+    return AFSF2HomotopyPullbackFiltered(b,f);
+  fi;
   return AFSMemo(function(xs...)
     local n,j,prefix,tail,w,t,val;
     n:=Length(xs); val:=0;

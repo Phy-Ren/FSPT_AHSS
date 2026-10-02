@@ -1,95 +1,96 @@
 # FSPT_AHSS
 
-Independent exact computation of decoration-layer classifications and abstract
-stacking groups for fermionic SPT phases with crystalline and finite internal
-symmetries.
+Exact classification and stacking of fermionic SPT phases, using independently
+implemented cochain operations, gauge equivalences, and integer presentations.
+Classification and stacking run sequentially in one process and share the same
+representatives. Different symmetry inputs can run in parallel. SptSet is not
+loaded.
 
-The crystalline results cover all **230 space groups and 32 crystallographic
-point groups in both physical spin conventions**: 524 calculations.
-The [result tables](results/group_tables/README.md) list the four surviving
-decoration layers and the final stacking group.
+The current [complete-formula results](results/complete_formulas/README.md) contain
+**769 completed production calculations**:
 
-The [finite-symmetry examples](results/finite_examples/README.md) add sixteen
-explicit backgrounds in both 3+1D and 4+1D, together with the 43 inputs of the
-4+1D classification tables. All sixteen 3+1D examples have determined full
-stacking groups. The 4+1D tables report the surviving associated-graded layers;
-full groups are stated where the layers and computed products determine them.
-Exact group laws, antiunitary characters, and fermion-parity extension cocycles
-are included with the results.
+- 230 space groups in each crystalline spin convention: 460 calculations.
+- 32 crystallographic point groups in each convention: 64 calculations.
+- 245 finite internal-symmetry inputs: 229 in 4+1D and 16 in 3+1D.
 
-| Physical convention | Effective internal background | Space groups | Point groups |
+The 4+1D finite catalog contains **202 typed physical cases**. The 229 exact
+calculations also retain 27 historical coordinate representatives. An additional
+63 completed controls are listed separately. These counts describe calculation
+records, not 832 inequivalent physical symmetries.
+
+All current production rows contain the full abstract stacking group, its
+presentation, and gauge-reduction witnesses. The [formula guide](formulas/README.md)
+links every obstruction and stacking operation to readable definitions and exact
+executable tables. No private archive is needed to evaluate the formulas or run
+the published inputs.
+
+| Crystalline convention | Effective internal background | SG | PG |
 |---|---|---:|---:|
-| Crystalline spin-half = internal spinless | `s=w1`, `omega=0` | 230 | 32 |
-| Crystalline spinless = internal spin-half | `s=w1`, `omega=w2+w1^2` | 230 | 32 |
+| Spin-1/2, corresponding to internal spinless | `s=w1`, `omega2=0` | 230 | 32 |
+| Spinless, corresponding to internal spin-1/2 | `s=w1`, `omega2=w2+w1^2` | 230 | 32 |
 
-Space-group calculations use the full infinite affine group, including
-translations and weak phases. Point-group calculations use the actual finite
-three-dimensional matrix group, without translations. The final group includes
-the extensions between decoration layers; it is not generally their direct sum.
+Space groups use the full infinite affine group, including translations and weak
+phases. Point groups use the finite three-dimensional matrix group.
 
-The implementation uses GAP/HAP, CrystCat and Polycyclic for general group and
-resolution operations. It does not load or wrap SptSet. Exact integer and
-rational arithmetic is used for the cochain operations and group presentations.
-External answer tables are not calculation inputs.
+## Install and run
 
-## Running a calculation
-
-The tested cluster environment is GAP 4.13.1, HAP 1.62, CrystCat 1.1.10,
-Polycyclic 2.16, the GAP JSON package and Python 3.8.16. Set `AFS_GAP` to the GAP
-executable when it is not available on `PATH`.
-
-For one space group:
+The computation environment used GAP 4.13.1, HAP 1.62, CrystCat 1.1.10,
+Polycyclic 2.16, the GAP JSON and IO packages, and Python 3.8.16. Install SymPy for
+independent integer-presentation checks. A C++11 compiler enables the optional
+exact native evaluator:
 
 ```sh
-python3 scripts/run_group.py 219 --mode full --output runs/sg219.json
-python3 scripts/run_group.py 219 --mode full --crystalline-spin spinless \
+python3 -m pip install -r requirements-runtime.txt
+g++ -O3 -std=c++11 -shared -fPIC fspt/full_formula/native.cpp \
+  -o fspt/full_formula/native.so
+export AFS_GAP=/path/to/gap
+python3 scripts/run_complete_example.py --list
+python3 scripts/run_complete_example.py --case d3_C2_w1_s1 \
+  --output runs/pin_plus_3d.json --audit
+```
+
+Run on an allocated compute node. Each result path must be new. The runner freezes
+its source and records hashes before computing. The Python evaluator is exact
+without the native library, but can be substantially slower.
+
+For arbitrary published or new inputs:
+
+```sh
+python3 scripts/run_full_finite.py \
+  --catalog results/complete_formulas/catalog/models.json \
+  --model Q8_orbit_000 --dimension 4 --output runs/q8_4d.json
+python3 scripts/run_full_space_group.py 219 --crystalline-spin spinless \
   --output runs/sg219_spinless.json
+python3 scripts/run_full_point_group.py 10 --crystalline-spin half \
+  --output runs/pg10_half.json
 ```
 
-For one finite point group:
+`--help` lists exact performance options and additional coherence/bar probes.
+The [reproduction guide](PUBLIC_RELEASE.md) explains inputs, result fields and
+verification. [Lower-dimensional scope](formulas/README.md#lower-dimensional-endpoints)
+is stated separately from the complete 3+1D and 4+1D formulas.
+
+## Verification and interpretation
 
 ```sh
-python3 scripts/run_point_group.py 10 --crystalline-spin half \
-  --output runs/point10_half.json
-python3 scripts/run_point_group.py 10 --crystalline-spin spinless \
-  --output runs/point10_spinless.json
+python3 scripts/verify_complete_results.py
+python3 scripts/verify_complete_results.py --arithmetic
 ```
 
-Each calculation is one sequential GAP process: it computes the classification,
-then computes stacking using the same classification object. Parallelism is
-across groups. The [cluster guide](docs/CLUSTER_RUN.md) describes compute-node
-allocation, bounded workers and persistent SSH connection reuse.
+The first command checks all 832 exported records and their exact inputs. The
+second independently recomputes Smith normal forms, checks GAP's unimodular
+certificates, and computes the final filtration by Hermite reduction, including
+incoming gauge relations. It does not establish physical normalization by itself.
 
-## Results and reproducibility
+The canonical finite table has independent full-group targets for 49 of its 202
+cases. Target provenance is explicitly labeled as published, Bott-derived, or
+independently derived from primary results. The other rows remain computed
+predictions; an exponent lower bound is not a full-group target. Crystalline
+regression against earlier computations is also distinct from independent
+physical calibration.
 
-The numerical archives retain exact results, classification checkpoints, frozen
-GAP source, task records and file hashes:
-
-- [Crystalline spin-half space groups](results/space_groups)
-- [Crystalline spinless space groups](results/space_groups_spinless)
-- [Both finite point-group conventions](results/point_groups)
-- [Classification and final group tables](results/group_tables/README.md)
-- [Finite internal symmetries in 3+1D and 4+1D](results/finite_examples/README.md)
-
-Use the archive's `source/` directory with `--source` to reproduce its recorded
-version. Result records retain the original computation metadata. The public
-tables present the associated-graded layers and final abstract group structure.
-
-```sh
-python3 scripts/audit_run.py results/space_groups
-python3 scripts/audit_background_run.py results/space_groups_spinless
-python3 scripts/audit_point_groups.py results/point_groups \
-  --source results/point_groups/source
-```
-
-The two 230-space-group campaigns took 3 h 31 min 39 s and 3 h 47 min 35 s.
-They shared compute resources; these elapsed times include queueing and other
-validation tasks. The 64 finite point-group calculations took about 71 seconds
-on one compute node with 28 worker slots, using 24 CPU minutes in total and a
-maximum of 0.86 GiB per task. Original timings are retained with the archives.
-
-The authoritative cluster directory is `/home/user/xyren/AllFSPT` on
-`cuhk-cluster3`. The public repository is
-[Phy-Ren/FSPT_AHSS](https://github.com/Phy-Ren/FSPT_AHSS).
-See [public release and reproduction instructions](PUBLIC_RELEASE.md) for the
-snapshot process and self-contained tests.
+Earlier [crystalline archives](results/group_tables/README.md) and
+[finite-example archives](results/finite_examples/README.md) remain available with
+their original source versions. The new complete-formula tables are the current
+results. Historical archive timings should not be interpreted as timings of the
+new complete-formula engine.

@@ -1,5 +1,7 @@
 # Finite internal-symmetry examples
 
+This is a historical archive. See the [current complete-formula results](../complete_formulas/README.md) for the full updated classification and stacking calculations.
+
 This release contains exact symmetry inputs and independently computed results
 for 53 finite backgrounds: **16 full 3+1D stacking groups** and **53 4+1D
 associated-graded classifications**. The collections retain the original 43

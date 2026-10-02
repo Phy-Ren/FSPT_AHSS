@@ -19,7 +19,10 @@ BindGlobal("AFSD4Context",function(data)
   c.s:=AFSZero;if ForAny(data.s1,x->x<>0) then c.s:=g->data.s1[c.elementIndex(g)];fi;
   c.sign:=g->1-2*c.s(g);c.action:=c.sign;
   c.omega2:=AFSZero;if ForAny(data.omega2,row->ForAny(row,x->x<>0)) then c.omega2:=function(g,h)return data.omega2[c.elementIndex(g)][c.elementIndex(h)];end;fi;
-  c.R:=AFSFiniteHolonomyResolution(G,7);c.bar:=AFSComparison(c.R);
+  if IsBoundGlobal("AFS_FINITE_RESOLUTION_OVERRIDE") then
+    c.R:=CallFuncList(ValueGlobal("AFS_FINITE_RESOLUTION_OVERRIDE"),[G,7]);
+  else c.R:=AFSFiniteHolonomyResolution(G,7);fi;
+  c.bar:=AFSComparison(c.R);
   c.buildCpuMs:=Runtime()-start;
   Print("AFS_D4_CONTEXT ",data.id," order=",Size(G)," dimensions=",List([0..7],k->Dimension(c.R)(k)),"\n");
   return c;

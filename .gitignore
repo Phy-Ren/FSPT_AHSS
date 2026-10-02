@@ -10,3 +10,10 @@ vendor/
 *.out
 # Original scheduler logs are payloads of the hashed environment archive.
 !/results/performance_environment/**/*.log
+
+*.so
+*.compile-cache.pickle
+
+# The public formula definitions include their own reference implementation.
+!/formulas/publication_source/reference/
+!/formulas/publication_source/reference/**
