@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT))
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--index', type=Path, default=ROOT/'results/complete_formulas/index.json',
-                    help='Published inventory or a separately dated supplementary index.')
+                    help='Published inventory, supplementary index, or organized computed-example catalog.')
     ap.add_argument('--arithmetic', action='store_true', help='Independently recompute SNF and final HNF filtration (requires SymPy).')
     ap.add_argument('--case', action='append', help='Select record IDs; default is the complete inventory.')
     ap.add_argument('--output', type=Path)
@@ -32,6 +32,12 @@ def main():
         missing = set(args.case) - {r['id'] for r in records}
         if missing: ap.error('Unknown records: ' + ', '.join(sorted(missing)))
         records = [r for r in records if r['id'] in args.case]
+    summaries = [r['id'] for r in records if r.get('artifact_kind') == 'accepted-scientific-summary']
+    if args.arithmetic and summaries:
+        ap.error('Saved arithmetic requires complete raw certificates; the selection contains '
+                 + str(len(summaries)) + ' accepted scientific summaries. Use metadata verification '
+                 'for this catalog, or select complete raw records with --case. '
+                 'A fresh run_complete_example.py output can be checked independently.')
     if args.arithmetic:
         from fspt.result_validation import verify_result
     checks = []
@@ -40,6 +46,10 @@ def main():
         payload = path.read_bytes()
         assert hashlib.sha256(payload).hexdigest() == r['sha256'], r['id']
         data = json.loads(payload)
+        if r.get('artifact_kind') == 'accepted-scientific-summary':
+            assert data.get('artifact_kind') == 'accepted-scientific-summary', r['id']
+        if args.arithmetic and data.get('artifact_kind') == 'accepted-scientific-summary':
+            ap.error('Accepted scientific summaries are not complete raw arithmetic certificates: ' + r['id'])
         assert data['status'] == 'computed'
         assert data['model'] == r['model'] and data['dimension'] == r['dimension']
         assert data['invariants'] == r['invariant_factors']
@@ -56,6 +66,7 @@ def main():
             check.update(arithmetic)
         checks.append(check)
     report = dict(success=True, checked=len(checks), arithmetic=args.arithmetic,
+        accepted_scientific_summaries=len(summaries),
         scope='Saved bytes, input identity and completed status' + ('; independent SNF, GAP unimodular certificates and HNF filtration' if args.arithmetic else ''),
         collection_counts=dict(counts), checks=checks)
     if args.output:

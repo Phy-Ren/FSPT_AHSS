@@ -1,0 +1,880 @@
+{
+  "acceptance": {
+    "all_possible_generator_triples_claimed": false,
+    "complete_classification_and_stacking": true,
+    "configured_coherence_status": "passed",
+    "saved_independent_integer_and_filtration_audit": true
+  },
+  "artifact_kind": "accepted-scientific-summary",
+  "binaryExtensionNormalizationRequested": false,
+  "canonicalFaceCache": true,
+  "certifiedBinaryPrimitive": false,
+  "certifiedCFSquare": false,
+  "certifiedCharacterMajorana": false,
+  "certifiedCubePrimitive": false,
+  "certifiedZeroLowerSources": true,
+  "cfPrimaryEvaluation": "native",
+  "closedCFSource": false,
+  "dimension": 3,
+  "f2ParityFilter": true,
+  "fermionN0Kernel": true,
+  "final_filtration": [
+    {
+      "layer": "bosonic",
+      "quotient_invariants": [
+        2
+      ],
+      "subgroup_invariants": [
+        2
+      ]
+    },
+    {
+      "layer": "complex_fermion",
+      "quotient_invariants": [],
+      "subgroup_invariants": [
+        2
+      ]
+    },
+    {
+      "layer": "majorana",
+      "quotient_invariants": [],
+      "subgroup_invariants": [
+        2
+      ]
+    },
+    {
+      "layer": "pip",
+      "quotient_invariants": [],
+      "subgroup_invariants": [
+        2
+      ]
+    }
+  ],
+  "finiteResolutionStrategy": "input-generators",
+  "formulaCoordinates": "publication",
+  "formulaIntegerVectorCache": true,
+  "generators": [
+    {
+      "complexFermion": [
+        0,
+        0
+      ],
+      "integer": [
+        0,
+        0
+      ],
+      "layer": 0,
+      "majorana": [
+        0,
+        0
+      ],
+      "name": "D1",
+      "phase": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "quotientOrder": 2
+    },
+    {
+      "complexFermion": [
+        0,
+        0
+      ],
+      "integer": [
+        0,
+        0
+      ],
+      "layer": 2,
+      "majorana": [
+        0,
+        1
+      ],
+      "name": "B1",
+      "phase": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "quotientOrder": 2
+    }
+  ],
+  "inputModel": {
+    "generatorIndices": [
+      2,
+      9
+    ],
+    "group": "SD16",
+    "id": "SD16_orbit_001",
+    "omega2": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "order": 16,
+    "productTable": [
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        9
+      ],
+      [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        9,
+        10
+      ],
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        3,
+        12,
+        13,
+        14,
+        15,
+        16,
+        9,
+        10,
+        11
+      ],
+      [
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        3,
+        4,
+        13,
+        14,
+        15,
+        16,
+        9,
+        10,
+        11,
+        12
+      ],
+      [
+        6,
+        7,
+        8,
+        1,
+        2,
+        3,
+        4,
+        5,
+        14,
+        15,
+        16,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      [
+        7,
+        8,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        15,
+        16,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      [
+        8,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        9,
+        12,
+        15,
+        10,
+        13,
+        16,
+        11,
+        14,
+        1,
+        4,
+        7,
+        2,
+        5,
+        8,
+        3,
+        6
+      ],
+      [
+        10,
+        13,
+        16,
+        11,
+        14,
+        9,
+        12,
+        15,
+        2,
+        5,
+        8,
+        3,
+        6,
+        1,
+        4,
+        7
+      ],
+      [
+        11,
+        14,
+        9,
+        12,
+        15,
+        10,
+        13,
+        16,
+        3,
+        6,
+        1,
+        4,
+        7,
+        2,
+        5,
+        8
+      ],
+      [
+        12,
+        15,
+        10,
+        13,
+        16,
+        11,
+        14,
+        9,
+        4,
+        7,
+        2,
+        5,
+        8,
+        3,
+        6,
+        1
+      ],
+      [
+        13,
+        16,
+        11,
+        14,
+        9,
+        12,
+        15,
+        10,
+        5,
+        8,
+        3,
+        6,
+        1,
+        4,
+        7,
+        2
+      ],
+      [
+        14,
+        9,
+        12,
+        15,
+        10,
+        13,
+        16,
+        11,
+        6,
+        1,
+        4,
+        7,
+        2,
+        5,
+        8,
+        3
+      ],
+      [
+        15,
+        10,
+        13,
+        16,
+        11,
+        14,
+        9,
+        12,
+        7,
+        2,
+        5,
+        8,
+        3,
+        6,
+        1,
+        4
+      ],
+      [
+        16,
+        11,
+        14,
+        9,
+        12,
+        15,
+        10,
+        13,
+        8,
+        3,
+        6,
+        1,
+        4,
+        7,
+        2,
+        5
+      ]
+    ],
+    "s1": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "input_model_sha256": "b33e21d71a7d54b4138b85d7441997a2daae06dae67cf49f0a22dbf3e9f78093",
+  "invariants": [
+    2
+  ],
+  "majoranaN0Kernel": true,
+  "mcPrimaryEvaluation": "native",
+  "model": "SD16_orbit_001",
+  "n0Source3Kernel": false,
+  "partialMajoranaCache": {
+    "bosonicSourceBuilds": 3,
+    "bosonicSourceHits": 0,
+    "cachedTerminalRequests": 0,
+    "limit": 0,
+    "originalClassHits": 0,
+    "originalClassProjections": 2,
+    "partialCacheBypasses": 0,
+    "partialCacheHits": 0,
+    "partialLiftRequests": 2,
+    "partialLiftSolves": 2,
+    "partialStatesStored": 0,
+    "scope": "per-classification exact n=0 Majorana states; source counters also include terminal CF adjustments",
+    "secondaryCoordinates": [
+      [
+        0,
+        1
+      ]
+    ],
+    "survivorBasisOverlap": 1,
+    "survivorCoordinates": [
+      [
+        0,
+        1
+      ]
+    ],
+    "terminalRequests": 1,
+    "zeroAdjustmentSourceReuses": 0
+  },
+  "presentation": [
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "pureCFSource3Kernel": false,
+  "schema": "fspt-accepted-scientific-summary-v1",
+  "smithColumns": [
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "smithDiagonal": [
+    1,
+    2
+  ],
+  "smithRows": [
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "source_id": "5441b68821128c410d3dbba092af70b1cc7a29ce070056d170023d8d49a8371a",
+  "status": "computed",
+  "vacuumFermionKernel": false,
+  "vacuumMajoranaKernel": false,
+  "zeroChiralFiber": false
+}

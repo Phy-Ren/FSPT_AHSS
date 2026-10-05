@@ -1,5 +1,7 @@
 # Exact complete-formula evaluator
 
+For the unified mathematical definitions, see the [canonical formula guide](../../docs/FORMULA_GUIDE.md). This file documents the implementation and its supported runtime domains.
+
 The runtime implements the full matched obstruction and stacking laws in spatial
 dimensions 3 and 4. Read [the formula guide](../../formulas/README.md) for fields,
 coordinates, every operation's readable definition, the scalar instruction

@@ -1,0 +1,12 @@
+# Finite internal family SL(2,F3)
+
+2 retained named calculations. Group arrays in the CSV are invariant factors.
+
+| Input | Dimension | Gb | Grading / crystalline spin | omega2 representative | p+ip | Majorana | CF | Bosonic | Stacking group |
+|---|---|---|---|---|---|---|---|---|---|
+| [d3_SL23_w0_s0](../../inputs/d3_SL23_w0_s0.json) | 3+1D | SL(2,F3) | [0, 0] | 0 | 0 | 0 | Z2 | 0 | Z2 |
+| [d4_SL23_w0_s0](../../inputs/d4_SL23_w0_s0.json) | 4+1D | SL(2,F3) | [0, 0] | 0 | Z3 | Z2 | Z2 | Z3 | Z2 x Z18 |
+
+The four layer columns are final filtration quotients; their direct product need not be the stacking group.
+Finite input links fix the full multiplication table, grading and parity-extension cocycle. A nonzero representative of omega is not by itself a claim that its cohomology class is nontrivial.
+For the two zero-chiral controls, the stacking column is the saved zero-chiral fiber; the catalog separately records its abstract chiral completion.

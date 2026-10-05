@@ -1,121 +1,116 @@
-# Complete-formula release and reproduction
+# Reproduce and maintain the public results
 
-This release continues the existing public history of
-[Phy-Ren/FSPT_AHSS](https://github.com/Phy-Ren/FSPT_AHSS). Its source pin and public
-packaging overlays are recorded in [COMPLETE_RELEASE_MANIFEST.json](COMPLETE_RELEASE_MANIFEST.json).
-It includes executable definitions, coefficient tables, the independent group
-engine, exact inputs and completed examples. No source ZIP is required at runtime
-or to recompile the core formulas.
+This repository contains the formula definitions, an independent exact runtime,
+the group engine, symmetry inputs and completed example results. No private
+archive is needed to evaluate the public formulas or run a listed input.
 
-## Current results
+## Find an example
 
-[results/complete_formulas/index.json](results/complete_formulas/index.json) is the
-machine-readable inventory. Every record names its exported result, SHA-256,
-calculation input, dimension, formula coordinate, group, collection memberships
-and independent-target status. An empty invariant list means the trivial group;
-`0` denotes an infinite cyclic factor; `n>1` denotes `Z/n`.
+Start at the [computed-example catalogue](results/computed_examples/README.md).
+Its [index](results/computed_examples/index.json) connects all retained named
+calculations to exact inputs, results, final groups, final layer filtrations and
+collection memberships. Equal literal input/scope keys are linked; historical
+names and independent calculation records are retained.
 
-The separately dated [2026-10-02 supplement](results/complete_formulas_20261002_supplement/README.md)
-adds five accepted finite inputs, S4 and four bosonic Q24 backgrounds. Pass its index with `--index`
-to the reproduction and verification commands. The original 832 records remain
-unchanged.
+For finite internal symmetry, the input gives the bosonic quotient $G_b$, its
+one-based multiplication table with identity first, a binary character $s_1$,
+and a normalized binary extension cocycle $\omega_2$. Generator indices use
+that same enumeration. Crystalline inputs instead specify the space-group
+number or crystallographic point-group index and physical crystalline spin
+convention. Their constructors and background routines are included.
 
-The archived JSON records preserve all scientific fields, including the full
-integer presentation, generators, incoming gauge witnesses, obstruction records,
-source hashes and timing metadata. Export removes only the top-level
-`source_snapshot` field, which named a machine-local directory. It then serializes
-JSON with sorted keys. Both the original raw-byte hash and exported-byte hash are
-recorded. Archived source IDs identify the original computation versions; a new
-run freezes the current public runtime and receives a new source ID.
+Invariant-factor arrays use `[]` for the trivial group, `0` for an infinite
+cyclic factor, and `n>1` for $\mathbb Z/n$. The final decoration filtration
+includes incoming gauge identifications. The intermediate
+`rawSurvivingLayers` field must not be substituted for it.
 
-The final decoration filtration follows the complete incoming gauge quotient.
-`rawSurvivingLayers` is an intermediate classification result and must not be
-substituted for that final filtration. A nonzero obstruction cochain may be exact:
-only a nontrivial cohomology class obstructs a candidate.
+## Reproduce a complete calculation
 
-## Exact finite inputs
-
-Each finite record has a one-model input catalog. Its `productTable` is one-based,
-with the identity first; `s1` is a binary homomorphism and `omega2` is a normalized
-binary central-extension cocycle. `generatorIndices` uses the same one-based
-indexing. These specify the bosonic quotient, antiunitary grading and fermionic
-extension completely. The canonical catalog and historical section/isomorphism
-certificates are also included.
-
-For crystalline records, the input is the space-group number or crystallographic
-point-group index plus the physical crystalline spin convention. The production
-GAP constructors and background routines are included. The point-group JSON also
-records its finite matrix realization.
+Install the GAP packages and Python requirements listed in [README.md](README.md).
+Set `AFS_GAP` or pass `--gap`. A numerical job should run on an allocated compute
+node, with a new output path:
 
 ```sh
-python3 scripts/run_complete_example.py --case d4_D8_orbit_005 \
-  --output runs/spin_q16_4d.json --dry-run
+python3 scripts/run_complete_example.py \
+  --index results/computed_examples/index.json --list
+python3 scripts/run_complete_example.py \
+  --index results/computed_examples/index.json \
+  --case d4_D8xC2_orbit_084 --output runs/d8xc2_084.json --dry-run
 ```
 
-Remove `--dry-run` to compute. The wrapper reads only the exact input and retained
-performance settings before solving. Afterward it independently checks integer
-arithmetic and compares the resulting group to the saved answer. Expected groups
-are never inputs to classification or stacking. `--audit` additionally checks all generator inverses and the recorded selection
-of commutators and triples. The result's `coherenceAudit.allGeneratorTriples`
-flag states whether every generator triple was tested. This can be much more
-expensive than the basic calculation.
+The second command prints the exact calculation command. Remove `--dry-run` to
+run it. The wrapper reads only the symmetry input and retained performance
+options before solving; the expected group is compared afterward. Classification
+and stacking share the same representatives in one serial calculation.
 
-## Optional finite resolutions
+`--audit` additionally checks generator inverses and the configured selection of
+commutators and triples. This can dominate the run time. The result's
+`coherenceAudit.allGeneratorTriples` field states whether every generator triple
+was tested. A completed configured audit must not be described as exhaustive
+unless that field and its supporting evidence say so.
 
-The finite runner accepts one alternate resolution at a time:
-
-| Option | Scope |
-|---|---|
-| `--tensor-abelian` | Tensor products of cyclic resolutions for finite abelian groups |
-| `--dihedral-resolution` | Standard permutation presentation of a dihedral group |
-| `--input-generators-resolution` | The exact generators listed in the input catalog, before PC conversion |
-| `--direct-product-resolution D8xC2` | Standard D8 and C2 factor resolutions |
-| `--direct-product-resolution Q8xC2` | Explicit two-generator Q8 and C2 factor resolutions |
-
-D8 and Q8 both have order eight. The new strategies transport all integral
-boundary and contraction coefficients back to the original input group. The
-grading, extension cocycle, and formulas remain attached to that original group.
-A mismatched family or a generator list that fails to generate the input is an
-error. No alternate strategy is selected automatically.
-
-For a published finite input, the reproduction wrapper retains
-`finiteResolutionStrategy` when present (otherwise the default), or accepts an
-explicit override:
+The runner retains the recorded resolution strategy. An optional override is:
 
 ```sh
-python3 scripts/run_complete_example.py --case d4_Q8_w0_s0 \
-  --resolution input-generators --output runs/q8_marked.json --dry-run
+python3 scripts/run_complete_example.py \
+  --index results/computed_examples/index.json \
+  --case d4_Q8_w0_s0 --resolution input-generators \
+  --output runs/q8_marked.json --dry-run
 ```
 
-Remove `--dry-run` to compute on an allocated node. Strategies can change the
-resolution basis and the displayed representative coordinates; compare the
-exact input, final group and filtration rather than untransported vector entries.
-The chosen strategy is saved in every new finite result.
+Available finite strategies include tensor products of cyclic resolutions,
+standard dihedral resolutions, the input's explicit generating set, and the
+direct products `D8xC2` and `Q8xC2`. Here D8 and Q8 have order eight. All
+boundaries and contractions are transported back to the exact input group;
+$s_1$, $\omega_2$ and the formulas stay attached to that group. The
+[resolution certificates](results/resolution_certificates/README.md) include
+standalone replay data. Their timings concern resolution construction and
+verification, rather than a full classification/stacking calculation.
 
-[Resolution certificates](results/resolution_certificates/README.md) include
-complete integral boundaries, contractions and transport tables for both direct
-products, with a standalone Python replay checker. Their recorded profile times
-measure resolution construction and verification, not a full FSPT calculation.
-The original [complete release manifest](COMPLETE_RELEASE_MANIFEST.json) remains
-the inventory at commit `78d83512`; subsequent option changes are recorded in
-[RESOLUTION_UPDATE.json](RESOLUTION_UPDATE.json).
+## Verify saved data
 
-## Self-contained checks
+The catalogue explicitly distinguishes two published artifact kinds:
 
-Use a fresh output directory on an allocated compute node:
+| Artifact | What it contains | Saved-data verification |
+| --- | --- | --- |
+| Full numerical record | Scientific output, integer presentation and retained witnesses | Hash/input checks; independent presentation and filtration arithmetic |
+| Accepted scientific summary | Exact input, final group and filtration, source and acceptance provenance, retained reproduction settings | Hash/input/acceptance-summary consistency checks |
+
+Both identify completed calculations. A compact summary is not an independently
+replayable Smith/Hermite certificate. Its background can still be recomputed
+using the same public runner.
 
 ```sh
-python3 scripts/check_complete_release.py --gap "$AFS_GAP" \
-  --output runs/release_check --recompile-formulas
+python3 scripts/verify_complete_results.py \
+  --index results/computed_examples/index.json
+python3 scripts/verify_complete_results.py \
+  --index results/complete_formulas/index.json --arithmetic
 ```
 
-This checks the saved inventory and integer arithmetic, recompiles every retained
-core DAG from the readable formula source and compares its instructions and
-outputs exactly, then runs small complete 1D, 2D, 3D, 4D, point-group and space-group
-examples with coherence checks. The compiler's source-file inventory naturally
-changes under public packaging; mathematical programs must agree exactly.
+The first command checks the consolidated metadata and saved bytes. The second
+recomputes integer presentation and filtration arithmetic for the original full
+archive; use an allocated compute node. `--arithmetic` rejects a selection that
+contains accepted summaries. Select full records with `--case`, or compute a
+fresh full result for a summary's input.
 
-To compile one formula into a separate directory:
+A nonzero obstruction cochain can be exact. Even a nonzero original cohomology
+class can be removed by permitted lower-layer adjustments. Only a nontrivial
+final obstruction class excludes the candidate. Cochain consistency, integer
+presentation checks, and agreement with an independent physical calculation
+are recorded as distinct forms of evidence.
+
+## Formula reference and implementation
+
+The [canonical Markdown guide](docs/FORMULA_GUIDE.md) is the common mathematical
+reference. It defines the cochain conventions, source/product pair and finite
+operations before linking the executable implementation. The
+[implementation map](formulas/README.md) gives API and source locations.
+The complete publication coordinate covers 3+1D and 4+1D. Additional
+lower-dimensional endpoints have the domains stated in the formula guide.
+
+The readable source under `formulas/publication_source` and its fixed coefficient
+tables are retained verbatim. The scalar evaluator and shared-background transfer
+are implemented separately. Recompile a core formula into a fresh directory:
 
 ```sh
 python3 -m fspt.full_formula.compiler \
@@ -123,14 +118,42 @@ python3 -m fspt.full_formula.compiler \
   --out runs/recompiled/high6.json
 ```
 
-The production runtime supports Python 3.8. Recompiling the supplied readable
-source requires Python 3.9 or newer; pass `--compiler-python /path/to/python3.11`
-when the runtime interpreter is older.
+Production supports Python 3.8. Recompiling the retained readable source requires
+Python 3.9 or newer. For the existing full integration suite, on an allocated
+node:
 
-The optional exact cylinder and specialization compilers are in `scripts/`.
-They compose existing mathematical programs without dropping terms. Use a
-separate data directory when rebuilding them; do not overwrite retained results.
+```sh
+python3 scripts/check_complete_release.py --gap "$AFS_GAP" \
+  --output runs/release_check --recompile-formulas
+```
 
-The older `scripts/publish_snapshot.py` reproduces the earlier archive layout.
-It does not build this new complete-formula release and should not be used to
-replace its result inventory.
+This checks retained results, recompiles the core scalar programs and runs small
+complete examples. It is a numerical validation suite, distinct from a
+documentation-only update.
+
+## Archives and publication updates
+
+The [archive scope guide](docs/ARCHIVES.md) identifies which statements belong
+to an earlier source version. In particular, the earlier finite-example
+archive's graded-only 4+1D scope does not describe the current full-group engine.
+
+The [original complete release](COMPLETE_RELEASE_MANIFEST.json),
+[resolution update](RESOLUTION_UPDATE.json) and dated result archives retain
+their original bytes. [ORGANIZATION_MANIFEST.json](ORGANIZATION_MANIFEST.json)
+records the committed source version, public base commit and exact files of the
+consolidated catalogue/documentation update. Mathematical runtime kernels were
+not changed by this organization pass.
+
+The maintained Markdown guide supplies the mathematical notation and formula
+blocks for subsequent manuscript editing. Paper-specific exposition can be
+adapted around those blocks; changes of a formula or its representative must
+update the common definition and its implementation correspondence together.
+
+For subsequent catalogue/documentation releases, use
+`scripts/publish_organized_release.py` with separate source and public checkouts
+and the expected public HEAD. It reads committed allowlisted files, preserves
+earlier archives, refuses changes to published scientific payloads, and writes
+the update manifest. It performs no commit or push. Review the result, run the
+saved-data/documentation checks, then commit and push the public checkout.
+The older `scripts/publish_snapshot.py` builds the historical archive layout;
+it is not the update path for the current catalogue.

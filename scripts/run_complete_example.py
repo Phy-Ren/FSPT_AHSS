@@ -50,7 +50,11 @@ def main():
     elif 'point_group_index' in r:
         cmd = [args.python, str(ROOT/'scripts/run_full_point_group.py'), str(r['point_group_index']), '--crystalline-spin', r['crystalline_spin']]
     else:
-        cmd = [args.python, str(ROOT/'scripts/run_full_finite.py'), '--catalog', str(ROOT/r['input_catalog']), '--model', r['model'], '--dimension', str(r['dimension'])]
+        input_model = saved['inputModel']
+        catalog = json.loads((ROOT/r['input_catalog']).read_text())
+        if catalog.get('models') != [input_model]:
+            ap.error('Finite input catalog must contain exactly the saved inputModel')
+        cmd = [args.python, str(ROOT/'scripts/run_full_finite.py'), '--catalog', str(ROOT/r['input_catalog']), '--model', input_model['id'], '--dimension', str(r['dimension'])]
         strategy = saved.get('finiteResolutionStrategy', 'default') if args.resolution == 'saved' else args.resolution
         if strategy not in RESOLUTION_FLAGS: ap.error('Unknown saved finite resolution strategy: ' + str(strategy))
         cmd += RESOLUTION_FLAGS[strategy]

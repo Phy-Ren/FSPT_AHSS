@@ -1,0 +1,586 @@
+{
+  "accepted_named_records": 1231,
+  "accepted_records_by_origin": {
+    "additional_calibration_controls": 4,
+    "finite_campaign_398": 395,
+    "prior_complete_release": 832
+  },
+  "accepted_records_by_spatial_dimension": {
+    "1": 6,
+    "2": 17,
+    "3": 602,
+    "4": 606
+  },
+  "accepted_records_by_symmetry_kind": {
+    "finite_internal": 707,
+    "point_group": 64,
+    "space_group": 460
+  },
+  "exact_input_and_scope_keys": 1226,
+  "exact_literal_aliases": "exact_input_aliases.json",
+  "historical_finite_example_aliases": [
+    {
+      "current_records": [
+        "d4_C2_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "04acb7c2020220b8276b3fe504560ca4f30a8d1e46c57f572ae99163d42e00b7",
+      "model": "C2_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C2_w0_s1",
+        "d4_E10"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "b741d0a3a49343e7baf9721129aaa99a43ddb8ba3ed5aec266d670be5b05e9c3",
+      "model": "C2_w0_s1"
+    },
+    {
+      "current_records": [
+        "d3_C2_w1_s0"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "a03fe5c7329053ab5b2515e223dceaf1296835570aaf5b1812f4235c825626bf",
+      "model": "C2_w1_s0"
+    },
+    {
+      "current_records": [
+        "d4_C2_w1_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "a03fe5c7329053ab5b2515e223dceaf1296835570aaf5b1812f4235c825626bf",
+      "model": "C2_w1_s0"
+    },
+    {
+      "current_records": [
+        "d3_C2_w1_s1",
+        "d3_E01"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "a87b9111111d98b65159012298091e5cdcb206ca2644b63b30b0d7afc36db56e",
+      "model": "C2_w1_s1"
+    },
+    {
+      "current_records": [
+        "d4_C2_w1_s1",
+        "d4_E01"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "a87b9111111d98b65159012298091e5cdcb206ca2644b63b30b0d7afc36db56e",
+      "model": "C2_w1_s1"
+    },
+    {
+      "current_records": [
+        "d3_C3_w0_s0"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "86645acb03199fdb3db08256631380ef9c5e5b3c8586e8427029de96c8521004",
+      "model": "C3_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C3_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "86645acb03199fdb3db08256631380ef9c5e5b3c8586e8427029de96c8521004",
+      "model": "C3_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C4_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "43798846b9e93d9e5812a2939c33408915633ce4acb0579e9dbc703511652534",
+      "model": "C4_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C4_w0_s1"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "da055980948f0cb254185bf96bb1f9ccfdfc84fee94c264af5079dae41b864e3",
+      "model": "C4_w0_s1"
+    },
+    {
+      "current_records": [
+        "d4_C4_w1_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "5806b37dd397a5c904f205be43a4d36f90e83bc04a923c1b22b518bc99841cf0",
+      "model": "C4_w1_s0"
+    },
+    {
+      "current_records": [
+        "d4_C4_w1_s1"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "a4bd6150d3b7df6811d7f62a19703182e6938103314e16186ca0cf6955e4a43f",
+      "model": "C4_w1_s1"
+    },
+    {
+      "current_records": [
+        "d4_V4_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "4cba44d018489383666c2b454889321658e535f70f725e01114509bf120a4197",
+      "model": "V4_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_V4_w0_sa"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "0506cafa8c8ff21b21d579e2b1a684660dc4319987e9983262614a5027c84174",
+      "model": "V4_w0_sa"
+    },
+    {
+      "current_records": [
+        "d4_V4_wa2+b2+ab_sa"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "67c6fc2d717f16a627d136ca9142c2e5193982f419515b47c6bbaede32928f0f",
+      "model": "V4_wa2+b2+ab_sa"
+    },
+    {
+      "current_records": [
+        "d4_V4_wa2_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "ad65360c4bedfd716bfaf968f8ee8734c192150ba9c6d1e7df21775354379e50",
+      "model": "V4_wa2_s0"
+    },
+    {
+      "current_records": [
+        "d4_V4_wa2_sa"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "74710521e20e6b08a7827257b9d6934a5e1c3eee738ee62ef658697ce37a8584",
+      "model": "V4_wa2_sa"
+    },
+    {
+      "current_records": [
+        "d4_V4_wab_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "f40e4b505dcc3c5ae4bf11b55509ca2c390c470c4d4d207b90ab13907ab542af",
+      "model": "V4_wab_s0"
+    },
+    {
+      "current_records": [
+        "d4_V4_wab_sa"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "fb687fae443e8c7a009ef9d6010897cbd3a32ea100512cd1594db2b7c98a2763",
+      "model": "V4_wab_sa"
+    },
+    {
+      "current_records": [
+        "d4_E20",
+        "d4_V4_wab_sa+b"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "5e0426be0e3522fab8cd57a8d69f8a427fff2d4b78cd287454f13773228d5b39",
+      "model": "V4_wab_sa+b"
+    },
+    {
+      "current_records": [
+        "d3_V4_wquat_s0"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "bf09f426e0be30131bbc3be4d200f0b4aa674d5008760937d4cf3ae323b4d457",
+      "model": "V4_wquat_s0"
+    },
+    {
+      "current_records": [
+        "d4_V4_wquat_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "bf09f426e0be30131bbc3be4d200f0b4aa674d5008760937d4cf3ae323b4d457",
+      "model": "V4_wquat_s0"
+    },
+    {
+      "current_records": [
+        "d3_V4_wquat_sx"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "01b0cfb8175bdc6bc10c7a8edb5e232344dbe5702d57200d090a98af8aed2e8e",
+      "model": "V4_wquat_sx"
+    },
+    {
+      "current_records": [
+        "d4_V4_wquat_sx"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "01b0cfb8175bdc6bc10c7a8edb5e232344dbe5702d57200d090a98af8aed2e8e",
+      "model": "V4_wquat_sx"
+    },
+    {
+      "current_records": [
+        "d4_C5_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "9f4e0efc74cfade4088c3ecd86014fc6ede6a0ccf166456ad1c68369d4135399",
+      "model": "C5_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C6_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "663f369f32196597899fd2eea88c44a331be1bbe315b5dc80a3a3c8ea76ed00f",
+      "model": "C6_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C6_w1_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "ad7e808253f69d2dc801297c4f04cce0f57f36d34fe79ebb8b51a0d1cb6e7f85",
+      "model": "C6_w1_s0"
+    },
+    {
+      "current_records": [
+        "d4_S3_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "442bcab42ed3e6746b74392f8bc44934ab243dbbdcb3543b5a78e272ad56fd6f",
+      "model": "S3_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_S3_w0_sb"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "c228e1acce4feda7218265fea409592ea74a278b0bd991070efbb98eb3d759a2",
+      "model": "S3_w0_sb"
+    },
+    {
+      "current_records": [
+        "d4_S3_wb2_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "4a67eff8078df25e9f71be0e5aa976e7ac250ad5ce10d246d2274475a48130ed",
+      "model": "S3_wb2_s0"
+    },
+    {
+      "current_records": [
+        "d4_S3_wb2_sb"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "56fed64b970a653b3f30591ba93cc150a3d68f83531e5da749f28630b76773fb",
+      "model": "S3_wb2_sb"
+    },
+    {
+      "current_records": [
+        "d4_C8_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "6b759ef1b769c66abc6a3a301b974c46c0232e697765cf8bf7ba5fe679a4c215",
+      "model": "C8_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C8_w0_s1"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "e1441ec4e3a98a710c7f5c29d81ed40a712aac5a8515edc761a84ea85426603b",
+      "model": "C8_w0_s1"
+    },
+    {
+      "current_records": [
+        "d4_C8_w1_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "260cd28f7dc8cf0e451a993e7e58bbf5de83bb7d5e332036076344709dc66ac7",
+      "model": "C8_w1_s0"
+    },
+    {
+      "current_records": [
+        "d4_C8_w1_s1"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "31d0c30bb6c3297305fd169c1ff2e24c3e52aae9b64dc16b18b28c68bc3ab211",
+      "model": "C8_w1_s1"
+    },
+    {
+      "current_records": [
+        "d4_D4_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "a3c95d584dacec9647751df5ddfad76e6caff1a0b3ca0120b8daf220b89b6e3f",
+      "model": "D4_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_D4_wdic+a2_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "2894be331c623b16f9c2a2c8afa6100f6b3eac951fcd3f327f9e47f1ca0f9806",
+      "model": "D4_wdic+a2_s0"
+    },
+    {
+      "current_records": [
+        "d4_D4_wdic+b2_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "2f88d655acbffbc9c1bc1f9e3b4f3a11f5c4cbbac3d427c76f8d772bd812a0d6",
+      "model": "D4_wdic+b2_s0"
+    },
+    {
+      "current_records": [
+        "d4_D4_wdic_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "db27ec793098acb615642d8fc498b481f7fe9fcfbf6e29d5a37b0a09fb6b31d2",
+      "model": "D4_wdic_s0"
+    },
+    {
+      "current_records": [
+        "d3_D8_wref2_s0"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "16da690070b681d8231f191c03d87f2f26c0dd4abc1d1f3db01f543229df4d4e",
+      "model": "D8_wref2_s0"
+    },
+    {
+      "current_records": [
+        "d4_D8_wref2_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "16da690070b681d8231f191c03d87f2f26c0dd4abc1d1f3db01f543229df4d4e",
+      "model": "D8_wref2_s0"
+    },
+    {
+      "current_records": [
+        "d3_D8_wrot2_s0"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "19858b1be7911dad0a8b7b6d198d65f9d225c3d7001f6d1fe71432f7a6007a58",
+      "model": "D8_wrot2_s0"
+    },
+    {
+      "current_records": [
+        "d4_D8_wrot2_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "19858b1be7911dad0a8b7b6d198d65f9d225c3d7001f6d1fe71432f7a6007a58",
+      "model": "D8_wrot2_s0"
+    },
+    {
+      "current_records": [
+        "d3_Q8_w0_s0"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "6ce6d0d8eff27169f6d873808d5b2bd0a5411193690a9b9d923153fe33aefe23",
+      "model": "Q8_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_Q8_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "6ce6d0d8eff27169f6d873808d5b2bd0a5411193690a9b9d923153fe33aefe23",
+      "model": "Q8_w0_s0"
+    },
+    {
+      "current_records": [
+        "d3_Q8_w0_sx"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "817f88970aa1aba5d71e0bd85b27980121e0c0203bd9e5a502a392e03b96c173",
+      "model": "Q8_w0_sx"
+    },
+    {
+      "current_records": [
+        "d4_Q8_w0_sx"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "817f88970aa1aba5d71e0bd85b27980121e0c0203bd9e5a502a392e03b96c173",
+      "model": "Q8_w0_sx"
+    },
+    {
+      "current_records": [
+        "d3_Q8_w0_sx_plus_y"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "49e29ac660dc030e7483f61d4c0fcad13544e2a8ab3ee222ac91417b4dcdd9f7",
+      "model": "Q8_w0_sx_plus_y"
+    },
+    {
+      "current_records": [
+        "d4_Q8_w0_sx_plus_y"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "49e29ac660dc030e7483f61d4c0fcad13544e2a8ab3ee222ac91417b4dcdd9f7",
+      "model": "Q8_w0_sx_plus_y"
+    },
+    {
+      "current_records": [
+        "d3_Q8_w0_sy"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "26d2eecf5b36325f377297376b6e1739ed48f2e9184d6c157e0b25bd709f0d2c",
+      "model": "Q8_w0_sy"
+    },
+    {
+      "current_records": [
+        "d4_Q8_w0_sy"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "26d2eecf5b36325f377297376b6e1739ed48f2e9184d6c157e0b25bd709f0d2c",
+      "model": "Q8_w0_sy"
+    },
+    {
+      "current_records": [
+        "d4_D5_wdic_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "3111aff775f611d5dba96d62f035ba8b858d64d94b3a8d367b76f4207d21deb9",
+      "model": "D5_wdic_s0"
+    },
+    {
+      "current_records": [
+        "d3_A4_w0_s0"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "343ce72c9808ab8fb22d2b19cf60727e09892ba773a05f64d7382e087a16aea0",
+      "model": "A4_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_A4_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "343ce72c9808ab8fb22d2b19cf60727e09892ba773a05f64d7382e087a16aea0",
+      "model": "A4_w0_s0"
+    },
+    {
+      "current_records": [
+        "d3_A4_wbinary_s0"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "87c0f6bb3436081654a9a64c5663c2fa686fa718d807cfba9e19563d20449017",
+      "model": "A4_wbinary_s0"
+    },
+    {
+      "current_records": [
+        "d4_A4_wbinary_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "87c0f6bb3436081654a9a64c5663c2fa686fa718d807cfba9e19563d20449017",
+      "model": "A4_wbinary_s0"
+    },
+    {
+      "current_records": [
+        "d4_D6_wdic_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "6940136a5357d8a5d3d18241ba7295bc46d193d729812cd344720c34d3df6073",
+      "model": "D6_wdic_s0"
+    },
+    {
+      "current_records": [
+        "d4_C16_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "5635b9f54fe3f80846296eb09fc22a2caf7c1993ce6ec876f5df44c3a8547260",
+      "model": "C16_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C16_w1_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "a85813e01be93b4923670785a894f0d82252abdf102459577dae9039946969f5",
+      "model": "C16_w1_s0"
+    },
+    {
+      "current_records": [
+        "d3_D16_wref2_srot"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "f63fb2310eebc01287d59c242abdbc2f53adbcdb83253996f8babb17dd450c8a",
+      "model": "D16_wref2_srot"
+    },
+    {
+      "current_records": [
+        "d4_D16_wref2_srot"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "f63fb2310eebc01287d59c242abdbc2f53adbcdb83253996f8babb17dd450c8a",
+      "model": "D16_wref2_srot"
+    },
+    {
+      "current_records": [
+        "d3_Q16_wref2_srot"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "72c61cdb7d2bc28ea348125a29e53de7a7c2edb03eec2913f7f4ecfee4da9e75",
+      "model": "Q16_wref2_srot"
+    },
+    {
+      "current_records": [
+        "d4_Q16_wref2_srot"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "72c61cdb7d2bc28ea348125a29e53de7a7c2edb03eec2913f7f4ecfee4da9e75",
+      "model": "Q16_wref2_srot"
+    },
+    {
+      "current_records": [
+        "d3_SL23_w0_s0"
+      ],
+      "dimension": 3,
+      "exact_input_sha256": "a110738a4d0d88868fcaf59d27ef6650564d1940cc35e3914b94daacfedb0a34",
+      "model": "SL23_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_SL23_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "a110738a4d0d88868fcaf59d27ef6650564d1940cc35e3914b94daacfedb0a34",
+      "model": "SL23_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C32_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "62c74697d1b2932903e53990cfb2bfdd34aa6f7974128acf8d20ffa9d22a9384",
+      "model": "C32_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C32_w1_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "29b516bc3f2b2bfbb47725b169d7002a7b24dd910fbdce3d8b2b60df7cf9ac70",
+      "model": "C32_w1_s0"
+    },
+    {
+      "current_records": [
+        "d4_C64_w0_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "5bcc8ad07726f9985ed8e5b97eb8c5f22af4dd68344a9210c9641e9a40ff1e46",
+      "model": "C64_w0_s0"
+    },
+    {
+      "current_records": [
+        "d4_C64_w1_s0"
+      ],
+      "dimension": 4,
+      "exact_input_sha256": "1ce9e2d0e8494a2a07696a28d114ca3d2f91ee7ccf2f18590a9282606e885264",
+      "model": "C64_w1_s0"
+    }
+  ],
+  "latest_finite_campaign_accepted": 395,
+  "latest_finite_campaign_planned": 398,
+  "pending_inputs": 3,
+  "prior_finite_examples_covered": 69,
+  "prior_finite_examples_unmatched": 0,
+  "schema": "fspt-public-example-coverage-v1",
+  "scope": "All named accepted records in the collected complete releases and campaigns. Distinct literal keys do not imply inequivalent physical symmetries."
+}

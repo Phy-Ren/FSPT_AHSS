@@ -1,0 +1,498 @@
+{
+  "schema_version": 1,
+  "scope": "Exact evaluated formulas; no claim of universal physical calibration or general nonsplit 2+1D nonzero-chiral endpoint.",
+  "phase_convention": "Paper nu is multiplicative U(1); nuhat, Ohat, Ehat are additive R/Z phases.",
+  "bundle_sha256": "0b0723eded3adf289845f53a622921d7b68a6880fad7d516cace36387444715c",
+  "coefficient_sha256": "8e8718786632a2f0c33650c6b7fcd47da228b10ef98df2420a1246c9d512bcd6",
+  "records": [
+    {
+      "id": "integer.native.majorana_source",
+      "spatial_dimensions": [
+        3,
+        4
+      ],
+      "coordinate": "native-publication",
+      "inputs": "n,w,s",
+      "outputs": "binary degree d source",
+      "equations": [
+        "docs/FORMULA_GUIDE.md#eq-l1"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/reference/d4_input/code/cochains.py",
+          "sha256": "61d18a3c695e5f1cb703d86d007dd5698f7b2b58d533b62d1ca2780020547bb2"
+        }
+      ],
+      "compiled_targets": [
+        "source_3_majorana",
+        "source_4_majorana"
+      ],
+      "description": "The complete native p+ip-to-Majorana obstruction cochain."
+    },
+    {
+      "id": "integer.shifted.fermion_source",
+      "spatial_dimensions": [
+        3,
+        4
+      ],
+      "coordinate": "shifted-u-publication",
+      "inputs": "n,u,w,s",
+      "outputs": "binary degree d+1 source",
+      "equations": [
+        "docs/FORMULA_GUIDE.md#eq-l2",
+        "docs/FORMULA_GUIDE.md#eq-l3",
+        "docs/FORMULA_GUIDE.md#eq-l4"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/full3/lower.py",
+          "sha256": "ae0490cf66e44d86d5acd6a23eaf700bb7e8cdc88b2a33a5037adcf303f6b54e"
+        },
+        {
+          "path": "formulas/publication_source/reference/d4_input/code/compact.py",
+          "sha256": "f19c07e5506289b7145fdffa82810973eb60e91e1ac7a66a78392d24c676a7f4"
+        }
+      ],
+      "compiled_targets": [
+        "source_3_fermion",
+        "source_4_fermion"
+      ],
+      "description": "Lower fermion source; runtime accepts unshifted a and applies u=a+s floor(n/2)."
+    },
+    {
+      "id": "integer.native.majorana_product",
+      "spatial_dimensions": [
+        3,
+        4
+      ],
+      "coordinate": "native-publication",
+      "inputs": "n,m,w,s",
+      "outputs": "binary degree d-1 correction",
+      "equations": [
+        "docs/FORMULA_GUIDE.md#eq-p1",
+        "docs/FORMULA_GUIDE.md#eq-p2"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/code/pip_current.py",
+          "sha256": "ee7e2b028170468062346c576f46e04b97374d80f6144978e8959630265ff548"
+        }
+      ],
+      "compiled_targets": [
+        "product_3_majorana",
+        "product_4_majorana"
+      ],
+      "description": "Includes the carry of the second integer digit."
+    },
+    {
+      "id": "integer.d3.fermion_product",
+      "spatial_dimensions": [
+        3
+      ],
+      "coordinate": "shifted-u-publication",
+      "inputs": "n,u;m,v;w,s",
+      "outputs": "binary degree 3 correction",
+      "equations": [
+        "docs/FORMULA_GUIDE.md#eq-p3"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/full3/lower.py",
+          "sha256": "ae0490cf66e44d86d5acd6a23eaf700bb7e8cdc88b2a33a5037adcf303f6b54e"
+        }
+      ],
+      "compiled_targets": [
+        "product_3_fermion"
+      ],
+      "description": "Current multiplicative-suspension fermion coordinate."
+    },
+    {
+      "id": "integer.d4.fermion_product",
+      "spatial_dimensions": [
+        4
+      ],
+      "coordinate": "shifted-u-publication",
+      "inputs": "n,u;m,v;w,s",
+      "outputs": "binary degree 4 correction",
+      "equations": [
+        "docs/FORMULA_GUIDE.md#eq-p4",
+        "docs/FORMULA_GUIDE.md#eq-p5"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/full4/product_full.py",
+          "sha256": "87dacc4b7926b19be12b0020ca35f622f8a6a95f019bebc9008e8f3a5e359e75"
+        }
+      ],
+      "compiled_targets": [
+        "product_4_fermion"
+      ],
+      "description": "Includes the terminal-compatible closed ab term exactly once."
+    },
+    {
+      "id": "integer.shared.source_blocks",
+      "spatial_dimensions": [
+        3,
+        4
+      ],
+      "coordinate": "shifted-u-high-source",
+      "inputs": "virtual or actual n2,u3,c4,w,s",
+      "outputs": "binary A6, integer Q6, and fractional high source",
+      "equations": [
+        "docs/FORMULA_GUIDE.md#eq-s1",
+        "docs/FORMULA_GUIDE.md#eq-s2",
+        "docs/FORMULA_GUIDE.md#eq-s3"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/full3/source.py",
+          "sha256": "cc8a79e2224ccff32a6bfa9a9486b619ebf2956472608bd2a7987fb1db4380ba"
+        }
+      ],
+      "compiled_targets": [
+        "high6",
+        "h6"
+      ],
+      "description": "Shared characteristic blocks; dimension 3 evaluates on interval/triangle lifts."
+    },
+    {
+      "id": "integer.shared.open_majorana",
+      "spatial_dimensions": [
+        3,
+        4
+      ],
+      "coordinate": "shifted-u-high-source",
+      "inputs": "open binary degree 3 z;w,s",
+      "outputs": "binary T6",
+      "equations": [
+        "docs/formulas/SOURCE_OPERATIONS.md#eq-s4",
+        "docs/formulas/SOURCE_OPERATIONS.md#eq-s5"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/reference/d4_input/code/explicit_pip.py",
+          "sha256": "c53eb1f594b82e232c230555cabe4f1fe638e677fec7949ca2308176c95848d4"
+        }
+      ],
+      "compiled_targets": [
+        "h6"
+      ],
+      "description": "Finite height continuation uses the Bockstein only on closed dzJ."
+    },
+    {
+      "id": "integer.shared.binary_completion",
+      "spatial_dimensions": [
+        3,
+        4
+      ],
+      "coordinate": "shifted-u-high-source",
+      "inputs": "twisted integer degree 2 n;w,s",
+      "outputs": "binary y6",
+      "equations": [
+        "docs/formulas/SOURCE_OPERATIONS.md#eq-s6",
+        "docs/formulas/SOURCE_OPERATIONS.md#eq-s7",
+        "docs/formulas/SOURCE_OPERATIONS.md#eq-s8",
+        "docs/formulas/COEFFICIENTS.md#eq-y1",
+        "docs/formulas/COEFFICIENTS.md#eq-y2"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/reference/d4_input/code/explicit_pip.py",
+          "sha256": "c53eb1f594b82e232c230555cabe4f1fe638e677fec7949ca2308176c95848d4"
+        },
+        {
+          "path": "formulas/publication_source/coefficients/source_coefficients.json",
+          "sha256": "8e8718786632a2f0c33650c6b7fcd47da228b10ef98df2420a1246c9d512bcd6"
+        }
+      ],
+      "compiled_targets": [
+        "y6"
+      ],
+      "description": "Three-factor grid plus 970 fixed numerical pairs; M7 uses 453 fixed Adem words."
+    },
+    {
+      "id": "integer.d3.terminal_pair",
+      "spatial_dimensions": [
+        3
+      ],
+      "coordinate": "multiplicative-suspension-publication",
+      "inputs": "n1,u2,c3;m1,v2,c3p;w,s",
+      "outputs": "phase O5 and E4",
+      "equations": [
+        "docs/FORMULA_GUIDE.md#eq-t3",
+        "docs/FORMULA_GUIDE.md#eq-t3a",
+        "docs/FORMULA_GUIDE.md#eq-t3b",
+        "docs/FORMULA_GUIDE.md#eq-t3c"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/full3/source.py",
+          "sha256": "cc8a79e2224ccff32a6bfa9a9486b619ebf2956472608bd2a7987fb1db4380ba"
+        },
+        {
+          "path": "formulas/publication_source/omega3/prism.py",
+          "sha256": "ea463975cac750ff596b026419c20b66f471da8c0dd4d6694ee5dc556e800ec6"
+        },
+        {
+          "path": "fspt/full_formula/runtime.py",
+          "sha256": "b927b0ca7a0dcc286283827d02793993b005073df24016e1a73d36964c6cbcb8"
+        }
+      ],
+      "compiled_targets": [
+        "lift3_source",
+        "lift3_product",
+        "high6"
+      ],
+      "description": "Six interval paths and fifteen triangle paths, with complete explicit fermion fills."
+    },
+    {
+      "id": "integer.d4.terminal_source",
+      "spatial_dimensions": [
+        4
+      ],
+      "coordinate": "current-B-publication",
+      "inputs": "n2,u3,c4;w,s",
+      "outputs": "phase O6",
+      "equations": [
+        "docs/FORMULA_GUIDE.md#eq-t4",
+        "docs/FORMULA_GUIDE.md#eq-t4e"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/full4/product_full.py",
+          "sha256": "87dacc4b7926b19be12b0020ca35f622f8a6a95f019bebc9008e8f3a5e359e75"
+        },
+        {
+          "path": "formulas/publication_source/joint/cubic_repair.py",
+          "sha256": "4454a07cc36cca2417f566bb3fe5333dea10e6f175c25005b6d7eff4d970c3a1"
+        },
+        {
+          "path": "fspt/full_formula/runtime.py",
+          "sha256": "b927b0ca7a0dcc286283827d02793993b005073df24016e1a73d36964c6cbcb8"
+        }
+      ],
+      "compiled_targets": [
+        "high6"
+      ],
+      "description": "Shared source plus ordered n^3/12; paired B-coordinate shift."
+    },
+    {
+      "id": "integer.d4.explicit_terminal_product",
+      "spatial_dimensions": [
+        4
+      ],
+      "coordinate": "current-B-publication",
+      "inputs": "n2,u3,c4;m2,v3,c4p;w,s",
+      "outputs": "phase E5 without Z5/2",
+      "equations": [
+        "docs/FORMULA_GUIDE.md#eq-t4a",
+        "docs/FORMULA_GUIDE.md#eq-t4b",
+        "docs/FORMULA_GUIDE.md#eq-t4c",
+        "docs/FORMULA_GUIDE.md#eq-t4d"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/full4/product_full.py",
+          "sha256": "87dacc4b7926b19be12b0020ca35f622f8a6a95f019bebc9008e8f3a5e359e75"
+        }
+      ],
+      "compiled_targets": [
+        "nonbinary4"
+      ],
+      "description": "Retains every signed fractional carry and the ordered one-third cubic product."
+    },
+    {
+      "id": "integer.d4.binary_kernel",
+      "spatial_dimensions": [
+        4
+      ],
+      "coordinate": "current-B-publication",
+      "inputs": "n2,u3;m2,v3;w,s",
+      "outputs": "binary rho6",
+      "equations": [
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k1",
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k2",
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k3"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/full4/kernel_full.py",
+          "sha256": "5ccd768921124286f92ccc862a857d6fbc9be44720a0176bd23001e0c92c2a02"
+        }
+      ],
+      "compiled_targets": [
+        "rho4"
+      ],
+      "description": "Free upper c,c-prime do not enter the kernel."
+    },
+    {
+      "id": "integer.d4.terminal_transfer",
+      "spatial_dimensions": [
+        4
+      ],
+      "coordinate": "shared-background-graded",
+      "inputs": "graded (s,w;n0,u0;m0,v0)",
+      "outputs": "binary Z5",
+      "equations": [
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k4",
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k5",
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k6",
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k7",
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k8",
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k9",
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k10",
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k11",
+        "docs/formulas/TERMINAL_TRANSFER.md#eq-k12"
+      ],
+      "source_files": [
+        {
+          "path": "formulas/publication_source/full4/graded_full.py",
+          "sha256": "cc5c15cde645af5ac2cd1bf3b4bd1a91b897be4be2bc5fc91b8675e47844efd3"
+        },
+        {
+          "path": "formulas/publication_source/full4/product_full.py",
+          "sha256": "87dacc4b7926b19be12b0020ca35f622f8a6a95f019bebc9008e8f3a5e359e75"
+        },
+        {
+          "path": "formulas/publication_source/terminal_general/tensor_compact.py",
+          "sha256": "14c694c8493ad6a58765e769a9ad91f3a70750c849b6e0018f810407c45dc449"
+        },
+        {
+          "path": "fspt/full_formula/runtime.py",
+          "sha256": "b927b0ca7a0dcc286283827d02793993b005073df24016e1a73d36964c6cbcb8"
+        }
+      ],
+      "compiled_targets": [
+        "tensor4",
+        "rho4"
+      ],
+      "description": "Finite six-slot transfer with actual zeroth-face twist and fixed tensor coefficient."
+    },
+    {
+      "id": "majorana.closed.source",
+      "spatial_dimensions": [
+        2,
+        3,
+        4
+      ],
+      "coordinate": "closed-majorana-ca",
+      "inputs": "closed a(q), c(q+1);w,s",
+      "outputs": "binary fermion source and phase O(q+3)",
+      "equations": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m2",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m4",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m5",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m6"
+      ],
+      "source_files": [
+        {
+          "path": "fspt/majorana_complete.py",
+          "sha256": "183c836d66a73e1dd9a1f394a6c52c703166fafd740e08062216de997b91428d"
+        },
+        {
+          "path": "fspt/formulas.py",
+          "sha256": "ac7f18a679038227992e79d02ae6ead49f3148f889db12f6bb1f3f0e1bb70fc0"
+        }
+      ],
+      "compiled_targets": [
+        "majorana_1_majorana_source_ca",
+        "majorana_1_obstruction_ca",
+        "majorana_2_majorana_source_ca",
+        "majorana_2_obstruction_ca",
+        "majorana_3_majorana_source_ca",
+        "majorana_3_obstruction_ca"
+      ],
+      "description": "Dimension-specific pure source and common upper-layer source."
+    },
+    {
+      "id": "majorana.closed.product",
+      "spatial_dimensions": [
+        2,
+        3,
+        4
+      ],
+      "coordinate": "closed-majorana-ca",
+      "inputs": "closed a(q),c(q+1);b(q),cp(q+1);w,s",
+      "outputs": "binary fermion carry and phase E(q+2)",
+      "equations": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m7",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m8",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m9",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m10",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m11"
+      ],
+      "source_files": [
+        {
+          "path": "fspt/majorana_complete.py",
+          "sha256": "183c836d66a73e1dd9a1f394a6c52c703166fafd740e08062216de997b91428d"
+        },
+        {
+          "path": "fspt/formulas.py",
+          "sha256": "ac7f18a679038227992e79d02ae6ead49f3148f889db12f6bb1f3f0e1bb70fc0"
+        }
+      ],
+      "compiled_targets": [
+        "majorana_1_majorana_product_ca",
+        "majorana_1_stacking_ca",
+        "majorana_2_majorana_product_ca",
+        "majorana_2_stacking_ca",
+        "majorana_3_majorana_product_ca",
+        "majorana_3_stacking_ca"
+      ],
+      "description": "Stable q=2,3 compact family and explicit q=1 endpoint."
+    },
+    {
+      "id": "majorana.closed.operator_dictionary",
+      "spatial_dimensions": [
+        2,
+        3,
+        4
+      ],
+      "coordinate": "closed-majorana-ca-to-operator",
+      "inputs": "a,c;w,s and pair",
+      "outputs": "paired source/product transport",
+      "equations": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12"
+      ],
+      "source_files": [
+        {
+          "path": "fspt/majorana_complete.py",
+          "sha256": "183c836d66a73e1dd9a1f394a6c52c703166fafd740e08062216de997b91428d"
+        }
+      ],
+      "compiled_targets": [
+        "majorana_1_obstruction_operator",
+        "majorana_1_stacking_operator",
+        "majorana_2_obstruction_operator",
+        "majorana_2_stacking_operator",
+        "majorana_3_obstruction_operator",
+        "majorana_3_stacking_operator"
+      ],
+      "description": "The same unary Gamma transports source and product together."
+    },
+    {
+      "id": "endpoint.d1.fmps",
+      "spatial_dimensions": [
+        1
+      ],
+      "coordinate": "fmps1-turzillo-you-eq44",
+      "inputs": "gamma0,beta1,alpha2;w,s",
+      "outputs": "endpoint source, product and parity quotient",
+      "equations": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m13",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m14"
+      ],
+      "source_files": [
+        {
+          "path": "fspt/full_formula/fmps1.py",
+          "sha256": "2126a393ac4ef0080aae0af7c9b5f06996df679ad317cde3fab53682af25e837"
+        }
+      ],
+      "compiled_targets": [],
+      "description": "Separate calibrated coordinate; odd sector requires pointwise split cocycle after explicit trivialization."
+    }
+  ]
+}
