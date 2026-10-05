@@ -5,48 +5,49 @@ All coefficients are the unchanged supplied values. A [machine-readable copy](..
 contains the identical ordered lists; the equations and tables here specify their meaning without requiring source-code inspection.
 
 <a id="numerical-polynomial"></a>
-## Numerical polynomial $\operatorname{AW}^*Y^{\rm tot}_6$
+## Numerical polynomial
 
-For a block $(i,j,k)$ with $i+j+k=6$, take consecutive overlapping faces
-$[0,\ldots,i]$, $[i,\ldots,i+j]$, $[i+j,\ldots,6]$ for $s,n,w$.
+For a block $`(i,j,k)`$ with $`i+j+k=6`$, take consecutive overlapping faces
+$`[0,\ldots,i]`$, $`[i,\ldots,i+j]`$, $`[i+j,\ldots,6]`$ for $`s,n,w`$.
 Transport every middle integer face to the first vertex of the whole simplex:
 
-$$
+```math
 \widehat n(f)=(-1)^{s(0,f_0)}n(f),\qquad
 q_{rs}=\widehat n(i+r-1,i+r,i+s)-\widehat n(i+r-1,i+r,i+s-1),
-\quad1\le r<s\le j.
-$$
+\quad1\le r\lt s\le j.
+```
 
-With $\ell=i+j$, define the last-factor binary coordinates
+With $`\ell=i+j`$, define the last-factor binary coordinates
 
-$$
+```math
 w_{rs}=w(\ell+r-1,\ell+r,\ell+s)+w(\ell+r-1,\ell+r,\ell+s-1),
-\quad1\le r<s\le k.
-$$
+\quad1\le r\lt s\le k.
+```
 
-Repeated vertices give zero. Order the pairs $(r,s)$ lexicographically.
-An entry $(M,L)$ encodes the summand
+Repeated vertices give zero. Order the pairs $`(r,s)`$ lexicographically.
+An entry $`(M,L)`$ encodes the summand
 
 <a id="eq-y1"></a>
 
-$$
-\left[\prod_{t=1}^{i}s(t-1,t)\right]
-\prod_{r<s}\binom{q_{rs}}{e_{rs}}
-\prod_{(r,s):L_{rs}=1}w_{rs}\pmod2.
-\tag{Y1}
-$$
+**(Y1)**
 
-Here the successive four-bit nibbles of the nonnegative integer $M$, starting
-with the least significant nibble, are the exponents $e_{rs}$ in the middle
-factor; the successive bits of $L$, least significant first, select the
+```math
+\left[\prod_{t=1}^{i}s(t-1,t)\right]
+\prod_{r\lt s}\binom{q_{rs}}{e_{rs}}
+\prod_{(r,s):L_{rs}=1}w_{rs}\pmod2.
+```
+
+Here the successive four-bit nibbles of the nonnegative integer $`M`$, starting
+with the least significant nibble, are the exponents $`e_{rs}`$ in the middle
+factor; the successive bits of $`L`$, least significant first, select the
 coordinates in the last factor. An empty product is one. Generalized
 binomials retain their integer meaning for negative inputs.
-Sum every listed pair in every block to obtain $\operatorname{AW}^*Y^{\rm tot}_6$.
+Sum every listed pair in every block to obtain $`\mathop{\mathrm{AW}}\nolimits^*Y^{\rm tot}_6`$.
 The row layout below only groups entries for readability; it adds no operations.
 
 ### Tridegree (0,2,4) — 47 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (1, 7) | (1, 15) | (1, 19) |
 | (1, 23) | (1, 27) | (1, 28) |
@@ -67,7 +68,7 @@ The row layout below only groups entries for readability; it adds no operations.
 
 ### Tridegree (0,3,3) — 24 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (17, 6) | (18, 3) | (33, 6) |
 | (257, 3) | (258, 3) | (258, 6) |
@@ -80,7 +81,7 @@ The row layout below only groups entries for readability; it adds no operations.
 
 ### Tridegree (0,4,2) — 39 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (274, 1) | (4354, 1) | (8704, 1) |
 | (65554, 1) | (69649, 1) | (69664, 1) |
@@ -98,7 +99,7 @@ The row layout below only groups entries for readability; it adds no operations.
 
 ### Tridegree (0,6,0) — 519 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (36352603193345, 0) | (36352603193346, 0) | (299067162755076, 0) |
 | (299067162755089, 0) | (299135882231812, 0) | (299135882231827, 0) |
@@ -276,7 +277,7 @@ The row layout below only groups entries for readability; it adds no operations.
 
 ### Tridegree (1,2,3) — 7 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (1, 7) | (2, 3) | (2, 6) |
 | (3, 6) | (3, 7) | (4, 3) |
@@ -284,7 +285,7 @@ The row layout below only groups entries for readability; it adds no operations.
 
 ### Tridegree (1,3,2) — 9 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (33, 1) | (34, 1) | (257, 1) |
 | (272, 1) | (273, 1) | (274, 1) |
@@ -292,7 +293,7 @@ The row layout below only groups entries for readability; it adds no operations.
 
 ### Tridegree (1,5,0) — 273 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (268443649, 0) | (268443650, 0) | (268509184, 0) |
 | (269488129, 0) | (269488144, 0) | (269488384, 0) |
@@ -388,13 +389,13 @@ The row layout below only groups entries for readability; it adds no operations.
 
 ### Tridegree (2,2,2) — 3 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (1, 1) | (2, 1) | (3, 1) |
 
 ### Tridegree (2,4,0) — 37 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (529, 0) | (4624, 0) | (8464, 0) |
 | (8704, 0) | (65809, 0) | (69649, 0) |
@@ -412,7 +413,7 @@ The row layout below only groups entries for readability; it adds no operations.
 
 ### Tridegree (3,3,0) — 8 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (33, 0) | (34, 0) | (272, 0) |
 | (273, 0) | (274, 0) | (528, 0) |
@@ -420,7 +421,7 @@ The row layout below only groups entries for readability; it adds no operations.
 
 ### Tridegree (4,2,0) — 4 entries
 
-| $(M,L)$ | $(M,L)$ | $(M,L)$ |
+| $`(M,L)`$ | $`(M,L)`$ | $`(M,L)`$ |
 |---|---|---|
 | (1, 0) | (2, 0) | (3, 0) |
 | (4, 0) |  |  |
@@ -428,18 +429,19 @@ The row layout below only groups entries for readability; it adds no operations.
 <a id="adem-words"></a>
 ## The 453-word degree-four Adem operation
 
-For a closed binary four-cochain $z$,
+For a closed binary four-cochain $`z`$,
 
 <a id="eq-y2"></a>
 
-$$
-x_4(z)=\sum_{v\in\mathcal W_4}\operatorname{MS}_v(z,z,z,z)\pmod2.
-\tag{Y2}
-$$
+**(Y2)**
+
+```math
+x_4(z)=\sum_{v\in\mathcal W_4}\mathop{\mathrm{MS}}\nolimits_v(z,z,z,z)\pmod2.
+```
 
 Each word in the following table occurs once. Evaluate it by the interval-cut
 rule in [Operations](OPERATIONS.md#interval-cuts). The words have thirteen
-letters and four labels, so their output degree is $4\cdot4-13+4=7$.
+letters and four labels, so their output degree is $`4\cdot4-13+4=7`$.
 
 | Word | Word | Word |
 |---|---|---|
