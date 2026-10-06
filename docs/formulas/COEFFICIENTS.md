@@ -8,23 +8,27 @@ contains the identical ordered lists; the equations and tables here specify thei
 ## Numerical polynomial
 
 For a block $`(i,j,k)`$ with $`i+j+k=6`$, take consecutive overlapping faces
-$`[0,\ldots,i]`$, $`[i,\ldots,i+j]`$, $`[i+j,\ldots,6]`$ for $`s,n,w`$.
+$`[0,\ldots,i]`$, $`[i,\ldots,i+j]`$, $`[i+j,\ldots,6]`$ for $`s_1,n_2,\omega_2`$.
 Transport every middle integer face to the first vertex of the whole simplex:
 
 ```math
-\widehat n(f)=(-1)^{s(0,f_0)}n(f),\qquad
-q_{rs}=\widehat n(i+r-1,i+r,i+s)-\widehat n(i+r-1,i+r,i+s-1),
-\quad1\le r\lt s\le j.
+n_2^{\mathrm{tr}}(f)=(-1)^{s_1(0,f_0)}n_2(f),\qquad
+n_{2;rt}^{\mathrm{tr}}=n_2^{\mathrm{tr}}(i+r-1,i+r,i+t)
+ -n_2^{\mathrm{tr}}(i+r-1,i+r,i+t-1),
+\quad1\le r\lt t\le j.
 ```
 
 With $`\ell=i+j`$, define the last-factor binary coordinates
 
 ```math
-w_{rs}=w(\ell+r-1,\ell+r,\ell+s)+w(\ell+r-1,\ell+r,\ell+s-1),
-\quad1\le r\lt s\le k.
+\omega_{2;rt}=\omega_2(\ell+r-1,\ell+r,\ell+t)
+ +\omega_2(\ell+r-1,\ell+r,\ell+t-1),
+\quad1\le r\lt t\le k.
 ```
 
-Repeated vertices give zero. Order the pairs $`(r,s)`$ lexicographically.
+The superscript $`\mathrm{tr}`$ records transport to vertex zero; it does not
+change the integer cochain into an additive phase. Repeated simplex indices
+give zero. Order the pairs $`(r,t)`$ lexicographically.
 An entry $`(M,L)`$ encodes the summand
 
 <a id="eq-y1"></a>
@@ -32,13 +36,13 @@ An entry $`(M,L)`$ encodes the summand
 **(Y1)**
 
 ```math
-\left[\prod_{t=1}^{i}s(t-1,t)\right]
-\prod_{r\lt s}\binom{q_{rs}}{e_{rs}}
-\prod_{(r,s):L_{rs}=1}w_{rs}\pmod2.
+\left[\prod_{v=1}^{i}s_1(v-1,v)\right]
+\prod_{r\lt t}\binom{n_{2;rt}^{\mathrm{tr}}}{e_{rt}}
+\prod_{(r,t):L_{rt}=1}\omega_{2;rt}\pmod2.
 ```
 
 Here the successive four-bit nibbles of the nonnegative integer $`M`$, starting
-with the least significant nibble, are the exponents $`e_{rs}`$ in the middle
+with the least significant nibble, are the exponents $`e_{rt}`$ in the middle
 factor; the successive bits of $`L`$, least significant first, select the
 coordinates in the last factor. An empty product is one. Generalized
 binomials retain their integer meaning for negative inputs.
@@ -436,12 +440,14 @@ For a closed binary four-cochain $`z`$,
 **(Y2)**
 
 ```math
-x_4(z)=\sum_{v\in\mathcal W_4}\mathop{\mathrm{MS}}\nolimits_v(z,z,z,z)\pmod2.
+\mathcal X_7(z)=\sum_{v\in\mathcal W_4}\mathop{\mathrm{MS}}\nolimits_v(z,z,z,z)\pmod2.
 ```
 
 Each word in the following table occurs once. Evaluate it by the interval-cut
 rule in [Operations](OPERATIONS.md#interval-cuts). The words have thirteen
 letters and four labels, so their output degree is $`4\cdot4-13+4=7`$.
+The operation's subscript records that output degree; the word-list subscript
+in $`\mathcal W_4`$ records the degree of each input $`z`$.
 
 | Word | Word | Word |
 |---|---|---|

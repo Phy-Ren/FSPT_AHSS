@@ -3,8 +3,10 @@
 The [canonical formula guide](../docs/FORMULA_GUIDE.md) is the mathematical
 reference for notation, complete obstruction and stacking equations, and the
 explicit finite operations. The [operation registry](FORMULA_REGISTRY.json)
-connects its equation labels to source files and compiler targets. This page
-provides the runtime dictionary and implementation entry points.
+connects its equation labels to source files and compiler targets.
+All field-name translations are in the separate
+[formula-to-code dictionary](CODE_NOTATION.md). This page describes the
+implementation entry points and calling conventions.
 
 The complete 3+1D and 4+1D engine evaluates every supplied obstruction and stacking
 correction. This directory supplies the readable definitions used to compile the
@@ -15,25 +17,7 @@ reference evaluator's optional C++ residual engine and text programs are also
 included; production uses `fspt/full_formula/native.cpp` instead. Direct reference
 evaluation can use `accelerate=False` without that optional engine.
 
-## Fields and coordinates
-
-In spatial dimension `d`, the public fields are
-
-| Field | Degree | Coefficients | Meaning |
-|---|---:|---|---|
-| `n` | `d-2` | signed integers with grading twist | p+ip decoration |
-| `a` | `d-1` | binary | native Majorana decoration |
-| `c` | `d` | binary | complex-fermion decoration |
-| `w` | 2 | binary | fermion-parity extension `omega2` |
-| `s` | 1 | binary | antiunitary character `s1` |
-
-The terminal phase has degree `d+1` in `R/Z_s`. Integer fields retain their signed
-values. Mathematical floors, canonical binary lifts and exact divisions are
-applied where the formulas specify them. A required nonintegral quotient raises
-an error. In this API dictionary `a` denotes the native Majorana field; the formula guide
-uses `n_M` for that field and reserves its temporary mathematical `a` for the
-parity of `n`. The internal shifted Majorana field is `u = a + s cup carry(n)`, where
-`carry(n) = floor(n/2) mod 2`; the runtime applies this conversion once.
+## Evaluation order
 
 The lower tower is solved before the terminal source. A source value is an
 obstruction cochain. Its class is tested separately by the group engine: nonzero

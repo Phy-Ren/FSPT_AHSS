@@ -1,10 +1,32 @@
 # Finite binary transfer in the 4+1D product
 
-This appendix defines the single term $`Z_5`$ in (T4d) of the
-[formula guide](../FORMULA_GUIDE.md#four-dimensional-pair). The definitions
-are in evaluation order: kernel, coordinates, tensor coefficient, and final
-finite sum. They use the guide's $`B,B',B_N,\lambda,R,D,r,r',l,\bar D`$,
-$`\mathcal H_6,\mathcal C_6,\mathcal V_5`$, and lower product $`e_4`$.
+This appendix defines the binary five-cochain $`Z_5`$ in (T4d) of the
+[formula guide](../FORMULA_GUIDE.md#four-dimensional-pair). The inputs are
+$`(n_2,\check n_3)`$ and $`(n'_2,\check n'_3)`$, with common backgrounds
+$`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,\check
+N_3`$ are the output. Bars, digit superscripts, tildes, and checks have the
+same meanings as in the guide.
+
+The definitions below are in evaluation order. The only additional named
+operations are substantial polynomials or geometric sums:
+
+| Operation | Degree and role | Definition |
+|---|---|---|
+| $`\mathcal J_6`$ | Binary degree-six correction to the shared $`\mathcal H_6`$ | (K1) |
+| $`I_6`$ | Even integral degree-six numerator | (K2) |
+| $`\rho_6`$ | Binary degree-six transfer kernel | (K3) |
+| $`L^s_5,L^0_5,L^\star_5,L_5`$ | Binary degree-five tensor coefficients, separated by background degree | (K6), (K9), (K11) |
+| $`P_i^{L},P_i^{R}`$ | Binary tetrahedral polynomials | (K8) |
+| $`\mathcal Q^{\rm int}_5,K^-_5,A^{\rm pair}_4,G^0_5,D^0_5`$ | Degree-indexed pieces of the zero-background integer carry | (K10) |
+| $`Z_5`$ | Binary degree-five finite transfer | (K12) |
+
+The lower correction $`\mathcal E_4`$, its shifted predecessor
+$`\check{\mathcal E}_3=\bar n_2\cup_1\overline{n'_2}`$, the carry $`B_4`$,
+$`\lambda_3`$, and $`\Delta B_4=d\lambda_3-n'_2n_2`$ are already defined in
+the guide. For any one-input expression the signed difference is
+$`\Delta X=X[N_2,\check N_3]-X[n_2,\check n_3]-X[n'_2,\check n'_3]`$.
+As elsewhere, $`B'_4=B_4[n'_2,\check n'_3]`$ and an unlabelled $`B_4`$ refers
+to the first input. All products remain ordered.
 
 ## The binary kernel
 
@@ -15,9 +37,10 @@ Define
 **(K1)**
 
 ```math
-Q(B)=B\cup_2B+B\cup_3dB,\qquad
-\mathcal J_6(n,u)=\mathcal H_6(n,u)+a[B]_2+(a\cup_1\alpha_3)a,
-\qquad T=-n\cup_1m.
+\mathcal J_6[n_2,\check n_3]
+ =\mathcal H_6[n_2,\check n_3]
+ +\bar n_2\overline{B_4}
+ +(\bar n_2\cup_1\overline{\beta_{s_1}\check\omega_2})\bar n_2.
 ```
 
 First form the entire integer expression
@@ -28,14 +51,15 @@ First form the entire integer expression
 
 ```math
 \begin{aligned}
-I_6={}&Q(B_N)-Q(B)-Q(B')+\widetilde w(d\lambda-R)\\
-&-\widetilde{\mathcal C_6(N)}+\widetilde{\mathcal C_6(n)}
- +\widetilde{\mathcal C_6(m)}
- +\widetilde W R-v_3T-d_s\widetilde{\mathcal V_5}.
+I_6={}&\Delta(B_4\cup_2B_4+B_4\cup_3dB_4)
+ +\widetilde{\omega_2}\,\Delta B_4-\Delta\widetilde{\mathcal C_6}\\
+&+\widetilde{\check\omega_2}(n'_2n_2)
+ +(\beta_{s_1}\check\omega_2)(n_2\cup_1n'_2)
+ -d_{s_1}\widetilde{\mathcal V_5}.
 \end{aligned}
 ```
 
-It is pointwise even. With $`F=F_5(n,u)`$, $`F'=F_5(m,v)`$, and $`z=ab`$, set
+It is pointwise even. The kernel is
 
 <a id="eq-k3"></a>
 
@@ -43,27 +67,50 @@ It is pointwise even. With $`F=F_5(n,u)`$, $`F'=F_5(m,v)`$, and $`z=ab`$, set
 
 ```math
 \begin{aligned}
-\rho_6={}&S^2(e_4+z)+w(e_4+z)+F\cup_4F'\\
-&+(F+F')\cup_3(e_4+z)+(e_4+z)\cup_3(F+F')\\
-&+\mathcal J_6(N,U)+\mathcal J_6(n,u)+\mathcal J_6(m,v)
- +[I_6/2]_2+W\,dt+\alpha_3t.
+\rho_6={}&
+ \mathrm{Sq}^2(\mathcal E_4+\bar n_2\overline{n'_2})
+ +\omega_2(\mathcal E_4+\bar n_2\overline{n'_2})\\
+&+\mathcal O_5[n_2,\check n_3]\cup_4
+ \mathcal O_5[n'_2,\check n'_3]\\
+&+\big(\mathcal O_5[n_2,\check n_3]
+ +\mathcal O_5[n'_2,\check n'_3]\big)
+ \cup_3(\mathcal E_4+\bar n_2\overline{n'_2})\\
+&+(\mathcal E_4+\bar n_2\overline{n'_2})\cup_3
+ \big(\mathcal O_5[n_2,\check n_3]
+ +\mathcal O_5[n'_2,\check n'_3]\big)\\
+&+\mathcal J_6[N_2,\check N_3]
+ +\mathcal J_6[n_2,\check n_3]
+ +\mathcal J_6[n'_2,\check n'_3]\\
+&+\overline{I_6/2}
+ +\check\omega_2\,d\check{\mathcal E}_3
+ +\overline{\beta_{s_1}\check\omega_2}\,\check{\mathcal E}_3.
 \end{aligned}
 ```
 
-Every derivative in (K1)--(K3) differentiates a previously specified
-expression; for instance, $`dr=\alpha_3a`$ and $`dt=ab+ba`$.
-The free complex-fermion solutions $`c,c'`$ do not enter this kernel.
+Every derivative differentiates a specified expression. In particular,
+$`d\overline{B_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and
+$`d\check{\mathcal E}_3=\bar n_2\overline{n'_2}+\overline{n'_2}\bar n_2`$.
+The free complex-fermion solutions $`n_4,n'_4`$ do not enter this kernel.
 
 ## Shared-background coordinates
 
-A degree-$`d`$ graded simplex is
+Use $`D`$ only for the degree of a simplex in this appendix. A graded
+simplex consists of the common backgrounds and two graded inputs:
 
 ```math
-S=(s,w;n_0,u_0;m_0,v_0),\qquad
-dn_0=dm_0=0,\quad du_0=[n_0]_2^2,\quad dv_0=[m_0]_2^2.
+\begin{gathered}
+S=(s_1,\omega_2;
+ n_2^{\rm gr},\check n_3^{\rm gr};
+ n_2^{{\rm gr}\prime},\check n_3^{{\rm gr}\prime}),\\
+dn_2^{\rm gr}=dn_2^{{\rm gr}\prime}=0,\qquad
+d\check n_3^{\rm gr}=(\overline{n_2^{\rm gr}})^2,\qquad
+d\check n_3^{{\rm gr}\prime}=(\overline{n_2^{{\rm gr}\prime}})^2.
+\end{gathered}
 ```
 
-Here the integer cochains are untwisted. Decode to the physical fields by
+The superscript $`{\rm gr}`$ denotes the untwisted coordinates relative to
+the simplex's first vertex. It does not change the cochain degree. Decode
+the first input by
 
 <a id="eq-k4"></a>
 
@@ -71,39 +118,43 @@ Here the integer cochains are untwisted. Decode to the physical fields by
 
 ```math
 \begin{aligned}
-n(i j k)&=(-1)^{s(0i)}n_0(i j k),&
-m(i j k)&=(-1)^{s(0i)}m_0(i j k),\\
-q_W(n)(i j k l)&=\begin{cases}0,&i=0,\\W(0ij)[n]_2(jkl),&i\gt 0,
-\end{cases}&
-u&=u_0+q_W(n),\quad v=v_0+q_W(m).
+n_2(ijk)&=(-1)^{s_1(0i)}n_2^{\rm gr}(ijk),\\
+\check n_3(ijkl)&=\check n_3^{\rm gr}(ijkl)
+ +\begin{cases}
+ 0,&i=0,\\
+ \check\omega_2(0ij)\bar n_2(jkl),&i\gt0.
+ \end{cases}
 \end{aligned}
 ```
 
-Take $`s(00)=0`$. Encoding is the inverse of (K4). Positive faces and
-degeneracies are factorwise. The actual zeroth face is obtained by decoding,
-restricting to $`[1,\ldots,d]`$, and re-encoding with vertex $`1`$ as root.
-Relative to the factorwise zeroth face its changes are
+Apply the same rule to the primed input and take $`s_1(00)=0`$. Encoding is
+the inverse of (K4). Positive faces and degeneracies are factorwise. The
+actual zeroth face is obtained by decoding, restricting to
+$`[1,\ldots,D]`$, and re-encoding with vertex $`1`$ as root. Relative to the
+factorwise zeroth face its changes are
 
 <a id="eq-k5"></a>
 
 **(K5)**
 
 ```math
-n_0\longmapsto(-1)^{s(01)}n_0,\qquad
-u_0(ijkl)\longmapsto u_0(ijkl)+[W(01i)+W(01j)]a(jkl),
+\begin{aligned}
+n_2^{\rm gr}&\longmapsto(-1)^{s_1(01)}n_2^{\rm gr},\\
+\check n_3^{\rm gr}(ijkl)&\longmapsto\check n_3^{\rm gr}(ijkl)
+ +[\check\omega_2(01i)+\check\omega_2(01j)]\bar n_2(jkl).
+\end{aligned}
 ```
 
-for $`1\le i\lt j\lt k\lt l\le d`$, and the same for the second input.
-Let $`\delta S`$ be the binary sum of the actual and factorwise zeroth faces.
-Extend this operation linearly to binary chains. The root in (K4) is a
-coordinate choice on each simplex, not a global trivialization of either
-background; its failure on the zeroth face is precisely (K5).
+These formulas apply for $`1\le i\lt j\lt k\lt l\le D`$ and to the primed
+input as well. Let $`\delta S`$ be the binary sum of the actual and
+factorwise zeroth faces, extended linearly to binary chains. The root in
+(K4) is a coordinate choice on each simplex, not a global trivialization of
+either background; its failure on the zeroth face is precisely (K5).
 
 ## The tensor coefficient
 
-The coefficient is $`L=L_\star+L_s`$. For integer values $`x,y`$, write
-$`x_i=[\lfloor x/2^i\rfloor]_2`$ and $`y_i=[\lfloor y/2^i\rfloor]_2`$,
-$`i=0,1,2`$. The antiunitary term is
+Write $`L_5=L^\star_5+L^s_5`$. Its antiunitary term uses the integer digit
+rule from the guide, $`\bar x^{[j]}=\overline{\lfloor x/2^j\rfloor}`$:
 
 <a id="eq-k6"></a>
 
@@ -111,39 +162,48 @@ $`i=0,1,2`$. The antiunitary term is
 
 ```math
 \begin{aligned}
-f(x,y)&=(x_0+x_1)y_1(1+y_0)+x_1(y_0+y_2)+x_2y_0(1+y_1),\\
-L_s(S)&=s(01)f(n_0(123),m_0(345)).
+f(x,y)={}&(\bar x+\bar x^{[1]})\bar y^{[1]}(1+\bar y)
+ +\bar x^{[1]}(\bar y+\bar y^{[2]})
+ +\bar x^{[2]}\bar y(1+\bar y^{[1]}),\\
+L^s_5(S)={}&s_1(01)
+ f(n_2^{\rm gr}(123),n_2^{{\rm gr}\prime}(345)).
 \end{aligned}
 ```
 
-These are **graded** integer values. An equivalent separated-variable form,
-useful for evaluating the polynomial, is
+These are graded integer values. Equivalently, the same scalar polynomial
+can be written directly in integer binomials:
 
 <a id="eq-k7"></a>
 
 **(K7)**
 
 ```math
-f=(\gamma_1+\gamma_2)\otimes(\gamma_2+\gamma_3)
- +\gamma_2\otimes(\gamma_1+\gamma_4)
- +\gamma_4\otimes(\gamma_1+\gamma_3),\qquad
-\gamma_i(x)=\binom xi\pmod2.
+\begin{aligned}
+f(x,y)={}&
+ \left(\overline{\binom x1}+\overline{\binom x2}\right)
+ \left(\overline{\binom y2}+\overline{\binom y3}\right)\\
+&+\overline{\binom x2}
+ \left(\overline{\binom y1}+\overline{\binom y4}\right)\\
+&+\overline{\binom x4}
+ \left(\overline{\binom y1}+\overline{\binom y3}\right).
+\end{aligned}
 ```
-
-The first tensor factor acts on $`x`$, the second on $`y`$.
 
 ### Eight tetrahedral polynomials
 
-For a single zero-background input $`(n,u)`$ on $`0123`$, first form the actual
-integer differences
+For one zero-background input $`(n_2,\check n_3)`$ on $`0123`$, define three
+local integer face coordinates:
 
 ```math
-p=n(012),\qquad q=n(013)-n(012),\qquad r=n(123).
+n_{2;012}=n_2(012),\qquad
+n_{2;013-012}=n_2(013)-n_2(012),\qquad
+n_{2;123}=n_2(123).
 ```
 
-In this paragraph only, write their first bits as $`(x,y,z)`$, second bits as
-$`(X,Y,Z)`$, set $`\epsilon=u(0123)`$, $`S=x+y+z`$, and $`Q=X+Y+Z`$. The following
-products are ordinary products of bits on this tetrahedron:
+The indices after the semicolon specify the face or difference of faces.
+Applying the same bar and digit rules gives all bits needed below.
+Products in (K8) are ordinary products of bits on this tetrahedron, and
+$`\check n_3(0123)`$ is the binary Majorana value on the same face:
 
 <a id="eq-k8"></a>
 
@@ -151,35 +211,77 @@ products are ordinary products of bits on this tetrahedron:
 
 ```math
 \begin{aligned}
-P^L_1&=(x+y)(z+Z)+\epsilon[1+S+yz(1+x)+(x+y)Q+zZ],\\
-P^L_2&=(y+Y)(x+z)+y[X(1+z)+Z(1+x)],\\
-P^L_3&=P^L_2+Y(X+Z)+\epsilon[S+z(x+y)+(x+y)Q+zZ],\\
-P^L_4&=Y(X+Z)+y[x(1+z+X+Y)+z(Y+Z)],\\
-P^R_4&=yz(1+x),\\
-P^R_2&=P^R_4+Y(X+Z),\\
-P^R_3&=Y(X+Z)+xz(Y+Z)+y(xY+Xz)+\epsilon[S+SQ+xyz],\\
-P^R_1&=P^R_3+xz(1+y)+\epsilon[1+S+xz(1+y)].
+P^L_1={}&
+ (\bar n_{2;012}+\bar n_{2;013-012})
+ (\bar n_{2;123}+\bar n_{2;123}^{[1]})\\
+&+\check n_3(0123)\big[
+ 1+\bar n_{2;012}+\bar n_{2;013-012}+\bar n_{2;123}
+ +\bar n_{2;013-012}\bar n_{2;123}(1+\bar n_{2;012})\\
+&\qquad+(\bar n_{2;012}+\bar n_{2;013-012})
+ (\bar n_{2;012}^{[1]}+\bar n_{2;013-012}^{[1]}+\bar n_{2;123}^{[1]})
+ +\bar n_{2;123}\bar n_{2;123}^{[1]}\big],\\
+P^L_2={}&
+ (\bar n_{2;013-012}+\bar n_{2;013-012}^{[1]})
+ (\bar n_{2;012}+\bar n_{2;123})\\
+&+\bar n_{2;013-012}\big[
+ \bar n_{2;012}^{[1]}(1+\bar n_{2;123})
+ +\bar n_{2;123}^{[1]}(1+\bar n_{2;012})\big],\\
+P^L_3={}&P^L_2
+ +\bar n_{2;013-012}^{[1]}(\bar n_{2;012}^{[1]}+\bar n_{2;123}^{[1]})\\
+&+\check n_3(0123)\big[
+ \bar n_{2;012}+\bar n_{2;013-012}+\bar n_{2;123}
+ +\bar n_{2;123}(\bar n_{2;012}+\bar n_{2;013-012})\\
+&\qquad+(\bar n_{2;012}+\bar n_{2;013-012})
+ (\bar n_{2;012}^{[1]}+\bar n_{2;013-012}^{[1]}+\bar n_{2;123}^{[1]})
+ +\bar n_{2;123}\bar n_{2;123}^{[1]}\big],\\
+P^L_4={}&
+ \bar n_{2;013-012}^{[1]}(\bar n_{2;012}^{[1]}+\bar n_{2;123}^{[1]})\\
+&+\bar n_{2;013-012}\big[
+ \bar n_{2;012}(1+\bar n_{2;123}+\bar n_{2;012}^{[1]}+\bar n_{2;013-012}^{[1]})
+ +\bar n_{2;123}(\bar n_{2;013-012}^{[1]}+\bar n_{2;123}^{[1]})\big],\\
+P^R_4={}&\bar n_{2;013-012}\bar n_{2;123}(1+\bar n_{2;012}),\\
+P^R_2={}&P^R_4
+ +\bar n_{2;013-012}^{[1]}(\bar n_{2;012}^{[1]}+\bar n_{2;123}^{[1]}),\\
+P^R_3={}&
+ \bar n_{2;013-012}^{[1]}(\bar n_{2;012}^{[1]}+\bar n_{2;123}^{[1]})
+ +\bar n_{2;012}\bar n_{2;123}(\bar n_{2;013-012}^{[1]}+\bar n_{2;123}^{[1]})\\
+&+\bar n_{2;013-012}(
+ \bar n_{2;012}\bar n_{2;013-012}^{[1]}+\bar n_{2;012}^{[1]}\bar n_{2;123})\\
+&+\check n_3(0123)\big[
+ \bar n_{2;012}+\bar n_{2;013-012}+\bar n_{2;123}\\
+&\qquad+(\bar n_{2;012}+\bar n_{2;013-012}+\bar n_{2;123})
+ (\bar n_{2;012}^{[1]}+\bar n_{2;013-012}^{[1]}+\bar n_{2;123}^{[1]})
+ +\bar n_{2;012}\bar n_{2;013-012}\bar n_{2;123}\big],\\
+P^R_1={}&P^R_3+\bar n_{2;012}\bar n_{2;123}(1+\bar n_{2;013-012})\\
+&+\check n_3(0123)\big[
+ 1+\bar n_{2;012}+\bar n_{2;013-012}+\bar n_{2;123}
+ +\bar n_{2;012}\bar n_{2;123}(1+\bar n_{2;013-012})\big].
 \end{aligned}
 ```
 
 Rows referenced on the right use the same input and face. In particular,
-$`Y`$ is the second bit of the integer **difference** $`q`$, not the sum of the
-second bits of $`n(013)`$ and $`n(012)`$. Define the ordered-cup polynomial
+$`\bar n_{2;013-012}^{[1]}`$ is the second bit of the integer
+difference; it is not the sum of the second bits of $`n_2(013)`$ and
+$`n_2(012)`$. Define the ordered-cup polynomial
 
 <a id="eq-k9"></a>
 
 **(K9)**
 
 ```math
-L_0(n,u;m,v)=\sum_{i=1}^4
-\big[\gamma_i(n)P^L_i(m,v)+P^R_i(n,u)\gamma_i(m)\big].
+L^0_5[n_2,\check n_3;n'_2,\check n'_3]
+ =\sum_{i=1}^4\left[
+ \overline{\binom{n_2}{i}}\,P^L_i[n'_2,\check n'_3]
+ +P^R_i[n_2,\check n_3]\,\overline{\binom{n'_2}{i}}
+ \right].
 ```
 
 ### The balanced integer carry
 
-Only in the following formulas set $`w=s=0`$; thus $`dn=dm=0`$,
-$`du=a^2`$, $`dv=b^2`$. Use the definitions of $`B,B',D,\lambda,R`$ at these
-zero backgrounds and let $`q_{\mathbb Z}=n\cup_1m`$. Form
+Only in this subsection set $`\omega_2=s_1=0`$, so
+$`dn_2=dn'_2=0`$, $`d\check n_3=\bar n_2^2`$, and
+$`d\check n'_3=(\overline{n'_2})^2`$. Evaluate the guide's
+$`B_4,B'_4,\Delta B_4,\lambda_3`$ at these backgrounds. Form
 
 <a id="eq-k10"></a>
 
@@ -187,29 +289,42 @@ zero backgrounds and let $`q_{\mathbb Z}=n\cup_1m`$. Form
 
 ```math
 \begin{aligned}
-\mathcal Q^{\rm int}_5={}&B\cup_3B'+(B+B')\cup_3D
- +\lambda\cup_1\lambda+\lambda\cup_2d\lambda+R\cup_3d\lambda\\
-&+\zeta^{\mathbb Z}_{2,2}(m,n)-\binom m2(n\cup_1n),\\
-K^-_5={}&(n+2m)q_{\mathbb Z}+q_{\mathbb Z}(2n+m),\\
-A^{\rm pair}_4={}&v\cup_1a+b\cup_1t+\mathop{\mathrm{MS}}\nolimits_{23123}(a,b,b),\\
-G^0_5(n,u)={}&\frac12ua+\frac14n\widetilde u,\\
-D^0_5={}&\left[\frac{\mathcal Q^{\rm int}_5-3K^-_5
- -\widetilde{\mathcal V}_{5,0}-d\widetilde A^{\rm pair}_4
- -4\Delta G^0_5}{2}\right]_2.
+\mathcal Q^{\rm int}_5={}&
+ B_4\cup_3B'_4+(B_4+B'_4)\cup_3\Delta B_4
+ +\lambda_3\cup_1\lambda_3+\lambda_3\cup_2d\lambda_3
+ +(n'_2n_2)\cup_3d\lambda_3\\
+&+\zeta^{\mathbb Z}_{2,2}(n'_2,n_2)
+ -\binom{n'_2}2(n_2\cup_1n_2),\\
+K^-_5={}&(n_2+2n'_2)(n_2\cup_1n'_2)
+ +(n_2\cup_1n'_2)(2n_2+n'_2),\\
+A^{\rm pair}_4={}&
+ \check n'_3\cup_1\bar n_2
+ +\overline{n'_2}\cup_1\check{\mathcal E}_3
+ +\mathop{\mathrm{MS}}\nolimits_{23123}
+ (\bar n_2,\overline{n'_2},\overline{n'_2}),\\
+G^0_5[n_2,\check n_3]={}&
+ \frac12\widetilde{\check n_3\bar n_2}
+ +\frac14n_2\widetilde{\check n_3},\\
+D^0_5={}&\overline{\frac{
+ \mathcal Q^{\rm int}_5-3K^-_5
+ -\widetilde{\mathcal V_{5,0}}-d\widetilde{A^{\rm pair}_4}
+ -4\Delta G^0_5}{2}}.
 \end{aligned}
 ```
 
 The integer face polynomial is
 
 ```math
-\zeta^{\mathbb Z}_{2,2}(m,n)(012345)=m(012)m(023)n(235)n(345).
+\zeta^{\mathbb Z}_{2,2}(n'_2,n_2)(012345)
+ =n'_2(012)n'_2(023)n_2(235)n_2(345).
 ```
 
-$`\mathcal V_{5,0}`$ means (T4b) evaluated at $`w=s=0`$;
-$`\Delta G^0_5=G^0_5(N,U)-G^0_5(n,u)-G^0_5(m,v)`$.
-The whole numerator defining $`D^0_5`$ is even. The first term of $`G^0_5`$ is
-the canonical lift of the binary product $`ua`$ divided by two; retaining this
-lift during $`4\Delta G^0_5`$ fixes the integer carry.
+$`\mathcal V_{5,0}`$ means (T4b) evaluated at $`\omega_2=s_1=0`$.
+The difference $`\Delta G^0_5`$ uses the zero-background output
+$`(N_2,\check N_3)`$ and the two inputs, in that order. The whole numerator
+defining $`D^0_5`$ is even. Retain the displayed integer lift of
+$`\check n_3\bar n_2`$ when forming $`4\Delta G^0_5`$; taking a phase modulo
+one earlier would discard the required carry.
 
 Now define
 
@@ -218,28 +333,30 @@ Now define
 **(K11)**
 
 ```math
-L_\star=L_0+\mathop{\mathrm{AW}}\nolimits^*
+L^\star_5=L^0_5+\mathop{\mathrm{AW}}\nolimits^*
 \big[(\mathop{\mathrm{sh}}\nolimits^*D^0_5)_{2,3}
  +(\mathop{\mathrm{sh}}\nolimits^*D^0_5)_{3,2}\big].
 ```
 
 This notation is a finite rule: for $`(p,q)=(2,3)`$ and $`(3,2)`$, use the
 front $`p`$-face and back $`q`$-face of a five-simplex, sharing vertex $`p`$.
-Enumerate the ten paths from $`(0,p)`$ to $`(p,5)`$. Pull the two **complete**
+Enumerate the ten paths from $`(0,p)`$ to $`(p,5)`$. Pull the two complete
 zero-background inputs along coordinates one and two, evaluate $`D^0_5`$,
-and sum modulo two. Add the two sums to $`L_0`$. On a graded simplex,
-$`L_\star`$ uses its two graded inputs at background degree zero, while (K6)
-uses the background-degree-one component. These prescriptions define $`L`$
-on every simplex appearing below.
+and sum modulo two. Add the two sums to $`L^0_5`$. On a graded simplex,
+$`L^\star_5`$ uses its two graded inputs at background degree zero, while
+(K6) uses the background-degree-one component. These prescriptions define
+$`L_5`$ on every simplex appearing below.
 
 <a id="transfer"></a>
 ## The six-slot formula
 
-Use the grid operation $`h`$ in (O11), with factors ordered
+Let $`\mathsf h^{(3)}`$ denote the three-factor grid homotopy, whose component
+in degree $`D`$ is $`\mathsf h_D^{(3)}`$ from (O11). Order its factors as
 $`(\text{common background},\text{first input},\text{second input})`$.
-For grid vertices $`(r_i,t_i,v_i)`$, pull both $`s,w`$ along $`r`$, the complete
-graded pair $`(n_0,u_0)`$ along $`t`$, and $`(m_0,v_0)`$ along $`v`$. After pulling
-back, decode (K4) before evaluating $`\rho_6`$.
+For grid vertices $`(r_i,t_i,v_i)`$, pull both $`s_1,\omega_2`$ along $`r`$,
+the complete graded pair $`(n_2^{\rm gr},\check n_3^{\rm gr})`$ along $`t`$,
+and $`(n_2^{{\rm gr}\prime},\check n_3^{{\rm gr}\prime})`$ along $`v`$.
+After pulling back, decode (K4) before evaluating $`\rho_6`$.
 
 Encode the physical input as a graded five-simplex $`S`$. The required term is
 
@@ -248,14 +365,15 @@ Encode the physical input as a graded five-simplex $`S`$. The required term is
 **(K12)**
 
 ```math
-\boxed{Z_5(S)=\sum_{j=0}^{5}
-\left[\rho_6\big(h(\delta h)^jS\big)
- +L\big((\delta h)^jS\big)\right]\pmod2.}
+\boxed{Z_5(S)=\sum_{j=0}^{5}\left[
+ \rho_6\big(\mathsf h^{(3)}(\delta\mathsf h^{(3)})^jS\big)
+ +L_5\big((\delta\mathsf h^{(3)})^jS\big)
+ \right]\pmod2.}
 ```
 
-Evaluation on a binary chain means the sum of the values on its normalized
-simplices. Cancel equal simplices before evaluating the source. The bound
-$`j\le5`$ is finite: each nonzero $`\delta h`$ lowers the background skeletal
-filtration, whose degree here is at most five. All face rules, grids,
-polynomials, and division operations used in (K12) have been specified
-above; it does not call a group-dependent primitive solver.
+Evaluation on a binary chain means the sum over its normalized simplices.
+Cancel equal simplices before evaluating the source. The bound $`j\le5`$
+is finite: each nonzero $`\delta\mathsf h^{(3)}`$ lowers the background
+skeletal filtration, whose degree here is at most five. All face rules,
+grids, polynomials, and division operations used in (K12) have been specified
+above; no group-dependent primitive solver is needed.
