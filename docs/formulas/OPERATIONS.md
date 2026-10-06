@@ -270,5 +270,5 @@ along the assigned grid coordinates, evaluating normalized degeneracies as
 zero. The dual $`(\mathsf h_D^{(3)})^*`$ sums a degree-$`(D+1)`$ cochain
 over these pulled-back grids and produces a degree-$`D`$ cochain.
 The two applications specify their assignments separately:
-[source completion](SOURCE_OPERATIONS.md#source-completion) and
+[integer-layer contribution to the bosonic obstruction](SOURCE_OPERATIONS.md#source-completion) and
 [terminal transfer](TERMINAL_TRANSFER.md#transfer).

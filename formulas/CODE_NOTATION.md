@@ -61,7 +61,7 @@ The formulas now leave a named binary field's zero-or-one integer
 representative implicit. The source code still performs exactly the same
 lift operations:
 
-| Readable-source operation | Mathematical expression in integer arithmetic |
+| Source-code expression | Mathematical expression in integer arithmetic |
 |---|---|
 | `x.lift()` for a named binary cochain | $`x`$ |
 | `(x+y).lift()` after binary addition | $`\overline{x+y}`$ |
@@ -84,14 +84,14 @@ formula-guide abbreviations. It does not redefine the public API keys.
 | Local or former name | Current mathematical notation |
 |---|---|
 | `n`, `m` | $`n_{d-2},n'_{d-2}`$ |
-| `a=n.reduce(2)`, `b=m.reduce(2)` | $`\bar n_{d-2},\overline{n'_{d-2}}`$ |
-| `h=carry(n)`, `k=carry(m)` | $`\widetilde n_{d-2},\widetilde{n'_{d-2}}`$ |
+| `a=n.reduce(2)`, `b=m.reduce(2)` | $`\bar n_{d-2},\bar n'_{d-2}`$ |
+| `h=carry(n)`, `k=carry(m)` | $`\widetilde n_{d-2},\widetilde n'_{d-2}`$ |
 | `W` | $`\check\omega_2`$ |
 | `u`, `v` | $`\check n_{d-1},\check n'_{d-1}`$ |
 | `c`, `cp` | $`n_d,n'_d`$ |
 | `N`, `U`, `C` or `Cnew` | $`N_{d-2},\check N_{d-1},N_d`$ |
-| `t` | $`\check{\mathcal E}_{d-1}=\bar n_{d-2}\cup_{d-3}\overline{n'_{d-2}}`$ |
-| `q` in lower-product local variables | $`\bar n_{d-2}\cup_{d-2}\overline{n'_{d-2}}`$ |
+| `t` | $`\check{\mathcal E}_{d-1}=\bar n_{d-2}\cup_{d-3}\bar n'_{d-2}`$ |
+| `q` in lower-product local variables | $`\bar n_{d-2}\cup_{d-2}\bar n'_{d-2}`$ |
 | `e`, former $`e_d`$ | $`\mathcal E_d`$ |
 | Former $`F_{d+1}`$ | $`\mathcal O_{d+1}`$ |
 | Former $`\Xi_{d+1}`$ | $`\mathcal O^\psi_{d+1}`$ |
@@ -122,7 +122,7 @@ and [T4a–T4d](../docs/FORMULA_GUIDE.md#eq-t4a), with the
 | Background `P`, former $`\mathcal P_s(W)`$ | $`\mathcal P_{s_1}(\check\omega_2)`$ |
 | `Bp`, former $`B'`$ | $`B'_4=B_4(n'_2,\check n'_3)`$ |
 | `la`, dictionary key `lambda`, former $`\lambda`$ | $`\lambda_3`$ |
-| `r`, `rp` in `collected_blocks` | $`\bar B_4,\overline{B'_4}`$ |
+| `r`, `rp` in `collected_blocks` | $`\bar B_4,\bar B'_4`$ |
 | `l` in `collected_blocks` | $`\bar\lambda_3`$ |
 | Former $`R`$ | Ordered integer product $`n'_2n_2`$ |
 | Former $`D`$ | $`\Delta B_4=d\lambda_3-n'_2n_2`$ |
@@ -169,9 +169,22 @@ instead consumes the constructed fields in
 The parameterized arguments `NN,UU,CC` of `high_blocks` have degrees two,
 three, and four. `lift3_source` and `lift3_product` construct the respective
 interval and triangle fields; the runtime then evaluates `high6` and performs
-the signed integration. The compact mathematical presentation uses the full
-auxiliary degree-six source; its cubic term has zero transgression on both
-parameter spaces, so the runtime may omit it without changing either phase.
+the signed integration. The reader guide now prints the entire finite expression for both terminal
+operations. Its upward marks denote these same constructed components,
+not independent lifts of the three fields. The notation-to-runtime map is:
+
+| Reader evaluation | Existing construction and integration |
+|---|---|
+| $`\mathop{\mathrm{ev}}\nolimits_5`$ | `lift3_source`, then the signed six-simplex interval sum |
+| $`\mathop{\mathrm{ev}}\nolimits_4`$ | `lift3_product`, then the signed fifteen-simplex triangle sum |
+| $`\uparrow n_1,\uparrow\check n_2,\uparrow n_3`$ | The three components `n,u,c` returned by the relevant lift |
+| $`B_4^\uparrow,B_4^{\psi,\uparrow}`$ | The same integer residuals `B,K` on those components |
+
+The full six-cochain's cubic term has zero transgression on both parameter
+spaces, so the runtime may omit it without changing either phase. The
+linear and quadratic fractional terms are already collapsed into the
+explicit sixteenth-valued source and negative eighth-valued product in
+the reader guide; they are not omitted.
 The former $`D_3`$ and $`g_2`$ are expanded directly
 in those parameter fields, with no change of the native physical $`n_3`$
 coordinate. The older fermion-coordinate change $`\kappa_3`$ keeps its name.
@@ -291,6 +304,6 @@ The 4+1D terminal product separates all freely variable complex-fermion
 terms. In its remaining term `dCnew` equals the lower fermion source at
 the displayed output. The c-free Majorana/p+ip transfer is retained as
 a combined expression; `Zvalue` is not a pure-p+ip twister. The 3+1D
-terminal operations retain their full finite definition in the separate
-[technical file](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md).
+terminal operations are expanded in the main guide, with the finite lift
+and summation rules in the [technical file](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md).
 No compiled program or coefficient table changes in this regrouping.

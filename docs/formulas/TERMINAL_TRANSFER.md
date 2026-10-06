@@ -10,8 +10,8 @@ and checks have the same meanings as in the guide. In integer
 arithmetic each binary field supplies its canonical value $`0,1`$; a whole
 composite binary expression is reduced first whenever a bar surrounds it.
 
-The definitions below are in evaluation order. The only additional named
-operations are substantial polynomials or geometric sums:
+The full formula comes first; its kernel, coordinates, and coefficients
+are then defined explicitly:
 
 | Operation | Degree and role | Definition |
 |---|---|---|
@@ -22,12 +22,46 @@ operations are substantial polynomials or geometric sums:
 | $`Z_5`$ | Binary degree-five finite transfer | (K12) |
 
 The lower correction $`\mathcal E_4`$, its shifted predecessor
-$`\check{\mathcal E}_3=\bar n_2\cup_1\overline{n'_2}`$, the carry $`B_4`$,
+$`\check{\mathcal E}_3=\bar n_2\cup_1\bar n'_2`$, the carry $`B_4`$,
 $`\lambda_3`$, and $`\Delta B_4=d\lambda_3-n'_2n_2`$ are already defined in
 the guide. For any one-input expression the signed difference is
 $`\Delta X=X[N_2,\check N_3]-X[n_2,\check n_3]-X[n'_2,\check n'_3]`$.
 As elsewhere, $`B'_4=B_4[n'_2,\check n'_3]`$ and an unlabelled $`B_4`$ refers
 to the first input. All products remain ordered.
+
+<a id="transfer"></a>
+## Finite formula for the stacking correction
+
+Encode the physical input as the graded five-simplex $`S`$ specified below.
+The binary five-cochain in the terminal stacking correction is
+
+<a id="eq-k12"></a>
+
+**(K12)**
+
+```math
+\boxed{Z_5(S)=\sum_{j=0}^{5}\left[
+ \rho_6\big(\mathsf h^{(3)}(\delta\mathsf h^{(3)})^jS\big)
+ +L_5\big((\delta\mathsf h^{(3)})^jS\big)
+ \right]\pmod2.}
+```
+
+Evaluation on a binary chain means the sum over its normalized simplices.
+Cancel equal simplices before evaluating the source. The bound $`j\le5`$
+is finite: each nonzero $`\delta\mathsf h^{(3)}`$ lowers the background
+skeletal filtration, whose degree here is at most five. All face rules,
+grids, polynomials, and division operations used in (K12) are specified
+below; no group-dependent primitive solver is needed.
+
+## Grid evaluation
+
+Let $`\mathsf h^{(3)}`$ denote the three-factor grid homotopy, whose component
+in degree $`D`$ is $`\mathsf h_D^{(3)}`$ from (O11). Order its factors as
+$`(\text{common background},\text{first input},\text{second input})`$.
+For grid vertices $`(r_i,t_i,v_i)`$, pull both $`s_1,\omega_2`$ along $`r`$,
+the complete graded pair $`(n_2^{\rm gr},\check n_3^{\rm gr})`$ along $`t`$,
+and $`(n_2^{{\rm gr}\prime},\check n_3^{{\rm gr}\prime})`$ along $`v`$.
+After pulling back, decode (K4) before evaluating $`\rho_6`$.
 
 ## The binary kernel
 
@@ -48,12 +82,12 @@ guide, not additional input fields.
 ```math
 \begin{aligned}
 \rho_6={}&
- \mathrm{Sq}^2(\mathcal E_4+\bar n_2\overline{n'_2})
- +\omega_2(\mathcal E_4+\bar n_2\overline{n'_2})\\
+ \mathrm{Sq}^2(\mathcal E_4+\bar n_2\bar n'_2)
+ +\omega_2(\mathcal E_4+\bar n_2\bar n'_2)\\
 &+\mathcal O_5[n_2,\check n_3]\cup_4\mathcal O_5[n'_2,\check n'_3]\\
 &+\big(\mathcal O_5[n_2,\check n_3]+\mathcal O_5[n'_2,\check n'_3]\big)
- \cup_3(\mathcal E_4+\bar n_2\overline{n'_2})\\
-&+(\mathcal E_4+\bar n_2\overline{n'_2})\cup_3
+ \cup_3(\mathcal E_4+\bar n_2\bar n'_2)\\
+&+(\mathcal E_4+\bar n_2\bar n'_2)\cup_3
  \big(\mathcal O_5[n_2,\check n_3]+\mathcal O_5[n'_2,\check n'_3]\big)\\
 &+\Delta\Big[
  T_6[\check n_3;\omega_2,s_1]
@@ -83,7 +117,7 @@ guide, not additional input fields.
 
 Every derivative differentiates a specified expression. In the binary
 part, $`d\overline{B_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and
-$`d\check{\mathcal E}_3=\bar n_2\overline{n'_2}+\overline{n'_2}\bar n_2`$.
+$`d\check{\mathcal E}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
 Inside the final integer braces, $`d_{s_1}\mathcal V_5`$ differentiates the
 canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
 inputs, including $`B_4^\psi,\mathcal O^\psi_5,T_6,y_6`$. The bar on
@@ -103,7 +137,7 @@ S=(s_1,\omega_2;
  n_2^{{\rm gr}\prime},\check n_3^{{\rm gr}\prime}),\\
 dn_2^{\rm gr}=dn_2^{{\rm gr}\prime}=0,\qquad
 d\check n_3^{\rm gr}=(\overline{n_2^{\rm gr}})^2,\qquad
-d\check n_3^{{\rm gr}\prime}=(\overline{n_2^{{\rm gr}\prime}})^2.
+d\check n_3^{{\rm gr}\prime}=(\bar n_2^{{\rm gr}\prime})^2.
 \end{gathered}
 ```
 
@@ -152,6 +186,30 @@ either background; its failure on the zeroth face is precisely (K5).
 
 ## The tensor coefficient
 
+The complete binary coefficient is
+
+<a id="eq-k11"></a>
+
+**(K11)**
+
+```math
+L_5=L^s_5+L^0_5+\mathop{\mathrm{AW}}\nolimits^*
+\big[(\mathop{\mathrm{sh}}\nolimits^*D^0_5)_{2,3}
+ +(\mathop{\mathrm{sh}}\nolimits^*D^0_5)_{3,2}\big].
+```
+
+This notation is a finite rule: for $`(p,q)=(2,3)`$ and $`(3,2)`$, use the
+front $`p`$-face and back $`q`$-face of a five-simplex, sharing vertex $`p`$.
+Enumerate the ten paths from $`(0,p)`$ to $`(p,5)`$. Pull the two complete
+zero-background inputs along coordinates one and two, evaluate $`D^0_5`$,
+and sum modulo two. Together with $`L^0_5`$, these are the
+background-degree-zero terms. The contribution $`L^s_5`$ in (K6) uses the
+background-degree-one component. These prescriptions define $`L_5`$ on
+every simplex in (K12).
+
+
+### Background-degree-one contribution
+
 The background-degree-one contribution $`L^s_5`$ uses $`\bar x`$ and
 $`\widetilde x`$. Where the third binary digit is needed, it is written
 explicitly as $`\overline{\lfloor x/4\rfloor}`$:
@@ -162,11 +220,11 @@ explicitly as $`\overline{\lfloor x/4\rfloor}`$:
 
 ```math
 \begin{aligned}
+L^s_5(S)={}&s_1(01)
+ f(n_2^{\rm gr}(123),n_2^{{\rm gr}\prime}(345)),\\
 f(x,y)={}&(\bar x+\widetilde x)\widetilde y(1+\bar y)
  +\widetilde x(\bar y+\overline{\lfloor y/4\rfloor})
- +\overline{\lfloor x/4\rfloor}\bar y(1+\widetilde y),\\
-L^s_5(S)={}&s_1(01)
- f(n_2^{\rm gr}(123),n_2^{{\rm gr}\prime}(345)).
+ +\overline{\lfloor x/4\rfloor}\bar y(1+\widetilde y).
 \end{aligned}
 ```
 
@@ -189,7 +247,23 @@ f(x,y)={}&
 \end{aligned}
 ```
 
-### Eight tetrahedral polynomials
+### Background-degree-zero contribution
+
+The ordered-cup polynomial is
+
+<a id="eq-k9"></a>
+
+**(K9)**
+
+```math
+L^0_5[n_2,\check n_3;n'_2,\check n'_3]
+ =\sum_{i=1}^4\left[
+ \overline{\binom{n_2}{i}}\,P^L_i[n'_2,\check n'_3]
+ +P^R_i[n_2,\check n_3]\,\overline{\binom{n'_2}{i}}
+ \right].
+```
+
+Its tetrahedral polynomials are defined on one input at a time.
 
 For one zero-background input $`(n_2,\check n_3)`$ on $`0123`$, define three
 local integer face coordinates:
@@ -262,25 +336,13 @@ P^R_1={}&P^R_3+\bar n_{2;012}\bar n_{2;123}(1+\bar n_{2;013-012})\\
 Rows referenced on the right use the same input and face. In particular,
 $`\widetilde n_{2;013-012}`$ is the second bit of the integer
 difference; it is not the sum of the second bits of $`n_2(013)`$ and
-$`n_2(012)`$. Define the ordered-cup polynomial
-
-<a id="eq-k9"></a>
-
-**(K9)**
-
-```math
-L^0_5[n_2,\check n_3;n'_2,\check n'_3]
- =\sum_{i=1}^4\left[
- \overline{\binom{n_2}{i}}\,P^L_i[n'_2,\check n'_3]
- +P^R_i[n_2,\check n_3]\,\overline{\binom{n'_2}{i}}
- \right].
-```
+$`n_2(012)`$.
 
 ### The balanced integer carry
 
 Only in this subsection set $`\omega_2=s_1=0`$, so
 $`dn_2=dn'_2=0`$, $`d\check n_3=\bar n_2^2`$, and
-$`d\check n'_3=(\overline{n'_2})^2`$. Evaluate the guide's
+$`d\check n'_3=(\bar n'_2)^2`$. Evaluate the guide's
 $`B_4,B'_4,\Delta B_4,\lambda_3`$ at these backgrounds. Form
 
 <a id="eq-k10"></a>
@@ -298,8 +360,8 @@ D^0_5=\frac12\Big\{&
 &-3\big[(n_2+2n'_2)(n_2\cup_1n'_2)
  +(n_2\cup_1n'_2)(2n_2+n'_2)\big]-\mathcal V_{5,0}\\
 &-d\overline{\big[\check n'_3\cup_1\bar n_2
- +\overline{n'_2}\cup_1\check{\mathcal E}_3
- +\mathop{\mathrm{MS}}\nolimits_{23123}(\bar n_2,\overline{n'_2},\overline{n'_2})\big]}\\
+ +\bar n'_2\cup_1\check{\mathcal E}_3
+ +\mathop{\mathrm{MS}}\nolimits_{23123}(\bar n_2,\bar n'_2,\bar n'_2)\big]}\\
 &-2\Delta\overline{\big[\check n_3\bar n_2\big]}
  -\Delta(n_2\check n_3)\Big\}\pmod2.
 \end{aligned}
@@ -321,55 +383,3 @@ of the expression it acts on. The stacking differences are also taken over
 the integers. Assemble the complete numerator, which is pointwise even,
 then divide by two and take parity. No reduction of a rational phase
 modulo one is performed before these operations.
-
-Now define
-
-<a id="eq-k11"></a>
-
-**(K11)**
-
-```math
-L_5=L^s_5+L^0_5+\mathop{\mathrm{AW}}\nolimits^*
-\big[(\mathop{\mathrm{sh}}\nolimits^*D^0_5)_{2,3}
- +(\mathop{\mathrm{sh}}\nolimits^*D^0_5)_{3,2}\big].
-```
-
-This notation is a finite rule: for $`(p,q)=(2,3)`$ and $`(3,2)`$, use the
-front $`p`$-face and back $`q`$-face of a five-simplex, sharing vertex $`p`$.
-Enumerate the ten paths from $`(0,p)`$ to $`(p,5)`$. Pull the two complete
-zero-background inputs along coordinates one and two, evaluate $`D^0_5`$,
-and sum modulo two. Together with $`L^0_5`$, these are the
-background-degree-zero terms. The contribution $`L^s_5`$ in (K6) uses the
-background-degree-one component. These prescriptions define $`L_5`$ on
-every simplex appearing below.
-
-<a id="transfer"></a>
-## The six-slot formula
-
-Let $`\mathsf h^{(3)}`$ denote the three-factor grid homotopy, whose component
-in degree $`D`$ is $`\mathsf h_D^{(3)}`$ from (O11). Order its factors as
-$`(\text{common background},\text{first input},\text{second input})`$.
-For grid vertices $`(r_i,t_i,v_i)`$, pull both $`s_1,\omega_2`$ along $`r`$,
-the complete graded pair $`(n_2^{\rm gr},\check n_3^{\rm gr})`$ along $`t`$,
-and $`(n_2^{{\rm gr}\prime},\check n_3^{{\rm gr}\prime})`$ along $`v`$.
-After pulling back, decode (K4) before evaluating $`\rho_6`$.
-
-Encode the physical input as a graded five-simplex $`S`$. The required term is
-
-<a id="eq-k12"></a>
-
-**(K12)**
-
-```math
-\boxed{Z_5(S)=\sum_{j=0}^{5}\left[
- \rho_6\big(\mathsf h^{(3)}(\delta\mathsf h^{(3)})^jS\big)
- +L_5\big((\delta\mathsf h^{(3)})^jS\big)
- \right]\pmod2.}
-```
-
-Evaluation on a binary chain means the sum over its normalized simplices.
-Cancel equal simplices before evaluating the source. The bound $`j\le5`$
-is finite: each nonzero $`\delta\mathsf h^{(3)}`$ lowers the background
-skeletal filtration, whose degree here is at most five. All face rules,
-grids, polynomials, and division operations used in (K12) have been specified
-above; no group-dependent primitive solver is needed.

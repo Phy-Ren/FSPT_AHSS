@@ -1,7 +1,6 @@
 # Changes of cochain representative
 
 All changes here act on the source and stacking correction together.
-The numerical evaluator retains its existing coordinates.
 
 ## 3+1D: earlier complex-fermion coordinate
 
@@ -26,7 +25,7 @@ The obstruction is transported by the same substitution and $`d\kappa_3`$.
 In particular, $`n_1=0`$ alone does not remove this coordinate change when
 $`s_1\ne0`$.
 
-## 4+1D: earlier terminal source
+## 4+1D: earlier bosonic obstruction
 
 
 

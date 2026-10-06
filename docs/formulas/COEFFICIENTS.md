@@ -1,6 +1,6 @@
 # Complete fixed coefficients
 
-This appendix completes the evaluation of the [source operations](SOURCE_OPERATIONS.md).
+This appendix supplies the fixed coefficients for the [bosonic-obstruction formulas](SOURCE_OPERATIONS.md).
 Its inputs have the displayed cochain degrees: in the 4+1D source they are
 the physical fields; in the 3+1D construction they are the prescribed
 parameter fields of those degrees. Binary values in integer expressions

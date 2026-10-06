@@ -1,4 +1,4 @@
-# Fixed operations in the terminal source
+# Finite cochain formulas for the bosonic obstruction
 
 The terminal formulas use the finite operations $`T_6`$ and $`y_6`$ defined
 here. Their degree-two integer argument is a physical field in
@@ -24,16 +24,51 @@ Pontryagin-square representative $`\mathcal P_{s_1}`$ have the definitions
 in the guide. The Bocksteins $`\beta,\beta_{s_1},\beta^+`$ and finite cup
 operations have the definitions in [Operations](OPERATIONS.md).
 
-Only the following operations are named here:
+The two required formulas and their constituent polynomials are:
 
 | Operation | Purpose | Definition |
 |---|---|---|
-| $`M_7`$ | Binary degree-seven operation on a closed four-cochain, shared by the two constructions below | (S4) |
-| $`T_6`$ | Its continuation to an open degree-three cochain by a fixed interval sum | (S5) |
-| $`R_7`$ | The binary remainder evaluated on the three-factor grids | (S6) |
+| $`T_6`$ | Degree-six formula on an open three-cochain | (S5) |
 | $`y_6`$ | Integer-layer completion by the fixed grid and coefficient sums | (S7)–(S8) |
+| $`M_7`$ | Binary degree-seven operation on a closed four-cochain, shared by the two constructions | (S4) |
+| $`R_7`$ | The binary remainder evaluated on the three-factor grids | (S6) |
 
-## Closed degree-four operation
+## Continuation to an open degree-three cochain
+
+For a binary three-cochain $`z`$, the required degree-six formula is
+
+<a id="eq-s5"></a>
+
+**(S5)**
+
+```math
+\begin{aligned}
+T_6[z;\omega_2,s_1]=\tau_J\big[&
+ (\mathrm{Sq}^2+\omega_2\cup)
+ (\mathrm{Sq}^2z^J+s_1\mathrm{Sq}^1z^J+\omega_2z^J)\\
+&+\mathrm{Sq}^3\mathrm{Sq}^1z^J
+ +s_1\mathrm{Sq}^2\mathrm{Sq}^1z^J\\
+&+(\overline{\beta\omega_2}+s_1\omega_2)\mathrm{Sq}^1z^J
+ +M_7[dz^J;\omega_2,s_1]\big].
+\end{aligned}
+```
+
+Here $`(\mathrm{Sq}^2+\omega_2\cup)x`$ means
+$`\mathrm{Sq}^2x+\omega_2\cup x`$. The integration is the seven-path binary
+sum (O8). The input to the Bockstein inside $`M_7`$ is the **closed**
+four-cochain $`dz^J`$, not the open three-cochain $`z`$.
+
+Use the height interval $`J=[0,1]`$ and define the cochain in (S5) by
+
+```math
+z^J((t_0,x_0),\ldots,(t_3,x_3))=t_0z(x_0,\ldots,x_3).
+```
+
+Backgrounds are pulled from the base. The expression
+$`\mathrm{Sq}^2z^J+s_1\mathrm{Sq}^1z^J+\omega_2z^J`$ is binary of degree
+five. The remaining degree-seven polynomial in (S5) is given next.
+
+## Closed degree-four polynomial
 
 For a closed binary four-cochain $`z`$, define
 
@@ -57,46 +92,23 @@ M_7[z;\omega_2,s_1]={}&\mathop{\mathrm{MS}}\nolimits_{123134343}(\omega_2,\omega
 All **453 words** of $`\mathcal W_4`$ are printed in
 [Coefficients](COEFFICIENTS.md#adem-words). The subscript of the word set $`\mathcal W_4`$ is the input degree. No coefficient is fitted or chosen during evaluation.
 
-## Open degree-three continuation
-
-For an arbitrary binary three-cochain $`z`$, use a height interval $`J=[0,1]`$.
-On its product with a base simplex set
-
-```math
-z^J((t_0,x_0),\ldots,(t_3,x_3))=t_0z(x_0,\ldots,x_3).
-```
-
-Backgrounds are pulled from the base. The lower source acting on this field
-is $`\mathrm{Sq}^2z^J+s_1\mathrm{Sq}^1z^J+\omega_2z^J`$; its output degree is
-five. Thus define
-
-<a id="eq-s5"></a>
-
-**(S5)**
-
-```math
-\begin{aligned}
-T_6[z;\omega_2,s_1]=\tau_J\big[&
- (\mathrm{Sq}^2+\omega_2\cup)
- (\mathrm{Sq}^2z^J+s_1\mathrm{Sq}^1z^J+\omega_2z^J)\\
-&+\mathrm{Sq}^3\mathrm{Sq}^1z^J
- +s_1\mathrm{Sq}^2\mathrm{Sq}^1z^J\\
-&+(\overline{\beta\omega_2}+s_1\omega_2)\mathrm{Sq}^1z^J
- +M_7[dz^J;\omega_2,s_1]\big].
-\end{aligned}
-```
-
-Here $`(\mathrm{Sq}^2+\omega_2\cup)x`$ means
-$`\mathrm{Sq}^2x+\omega_2\cup x`$. The integration is the seven-path binary
-sum (O8). The input to the Bockstein inside $`M_7`$ is the **closed**
-four-cochain $`dz^J`$, not the open three-cochain $`z`$.
-
 <a id="source-completion"></a>
-## Integer-layer completion
+## Integer-layer contribution
 
-Let $`n_2`$ be a twisted integer two-cocycle. No Majorana or
-complex-fermion decoration is chosen in this construction. The following
-formula replaces separate names for the rational pieces: assemble the
+For a twisted integer two-cocycle $`n_2`$, the degree-six formula is
+
+<a id="eq-s7"></a>
+
+**(S7)**
+
+```math
+y_6[n_2;\omega_2,s_1]
+ =(\mathsf h^{(3)}_6)^*R_7
+ +\mathop{\mathrm{AW}}\nolimits^*Y^{\rm tot}_6.
+```
+
+Its binary remainder is specified by the following expression. No
+Majorana or complex-fermion decoration is chosen here. Assemble the
 **entire integer numerator**, divide by eight, and then take parity.
 
 <a id="eq-s6"></a>
@@ -134,18 +146,6 @@ value before that integer assembly. In particular no fraction is reduced
 modulo one partway through the calculation. The ordinary Bockstein of
 $`\check{\mathcal O}_4`$ is defined because that source is closed.
 
-The required binary operation is
-
-<a id="eq-s7"></a>
-
-**(S7)**
-
-```math
-y_6[n_2;\omega_2,s_1]
- =(\mathsf h^{(3)}_6)^*R_7
- +\mathop{\mathrm{AW}}\nolimits^*Y^{\rm tot}_6.
-```
-
 For the first term use the three-factor grid (O11), ordered
 $`(s_1,n_2,\omega_2)`$. On grid vertices $`(r_i,t_i,v_i)`$, pull $`s_1`$ along
 $`r`$ and $`\omega_2`$ along $`v`$. Pull the integer field along $`t`$ with
@@ -169,7 +169,7 @@ tridegrees, uses explicit generalized integer binomials and first-vertex
 transport, and contains no implicit primitive. That appendix prints every
 coefficient, together with a lossless machine-readable copy.
 
-The three-factor source operation here and the terminal product operation
+The three-factor formulas here and in the terminal stacking correction
 assign fields differently to the same grid. Here $`s_1`$ and $`\omega_2`$
 occupy separate factors; in the terminal product they share one background
 factor. These assignments fix the coefficient transports.
