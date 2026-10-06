@@ -382,15 +382,11 @@ of this one auxiliary source, each on its own parameter fields:
 
 The extra integer terms have the exact signed transgressions
 
-```math
-\begin{array}{c|cc}
- &\tau_I&\tau_\triangle\\ \hline
-\mathcal P_{s_1}(\check\omega_2)n_2^J
- &\mathcal P_{s_1}(\check\omega_2)n_1&0\\
-\check\omega_2(n_2^J)^2&0&-\check\omega_2 n_1n'_1\\
-(n_2^J)^3&0&0.
-\end{array}
-```
+| Auxiliary term | $`\tau_I`$ | $`\tau_\triangle`$ |
+|---|---|---|
+| $`\mathcal P_{s_1}(\check\omega_2)n_2^J`$ | $`\mathcal P_{s_1}(\check\omega_2)n_1`$ | $`0`$ |
+| $`\check\omega_2(n_2^J)^2`$ | $`0`$ | $`-\check\omega_2 n_1n'_1`$ |
+| $`(n_2^J)^3`$ | $`0`$ | $`0`$ |
 
 These identities use the displayed interval/triangle fields and the fixed
 coefficient transport, so the compact pair includes all fractional terms.
