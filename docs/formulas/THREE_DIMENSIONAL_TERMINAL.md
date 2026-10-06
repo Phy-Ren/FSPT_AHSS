@@ -1,8 +1,6 @@
 # Finite construction of the 3+1D terminal phase
 
-This file defines the terminal obstruction and stacking correction in the
-publication coordinate. Physical fields, obstruction equations, and products
-are listed in the [3+1D formula section](../FORMULA_GUIDE.md#three-dimensional).
+This file records the finite construction in the supplied terminal phase coordinate. The [current physical formulas](../FORMULA_GUIDE.md#three-dimensional) use the explicit [paired phase change](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md). Throughout this construction, the unqualified obstruction and stacking symbols refer to the supplied coordinate; apply that map and its output coboundary to compare with the guide.
 All parameter fields below are auxiliary mathematical cochains. Their degrees
 do not change the physical roles of the fields in that section.
 

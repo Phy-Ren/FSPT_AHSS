@@ -1,0 +1,3279 @@
+# Physical-face coefficients of the 3+1D integer stacking phase
+
+The coefficient table below specifies the following part of the terminal stacking phase:
+
+```math
+\frac12\sum_{(f,g)\in\mathcal C_4^\psi}f\,g.
+```
+
+The following table gives every pair in $`\mathcal C_4^\psi`$. Its first
+entry is a polynomial in the displayed physical integer digits; its second
+entry is a polynomial in physical background faces. All arithmetic in the
+table is binary. Repeated factors are ordinary products of face values.
+There are no omitted coefficients.
+
+The bar and tilde have their usual meanings. The rare third digit is
+written explicitly as $`\overline{\lfloor n_1(ij)/4\rfloor}`$.
+The shifted background is $`\check\omega_2=\omega_2+s_1\cup s_1`$.
+Non-root faces such as $`\omega_2(123)`$ are the actual physical face values;
+closedness of $`s_1`$ and $`\omega_2`$ ensures that this expression equals
+its expansion in the root faces on the same simplex.
+
+Each numbered entry below is one table row. The displayed factors are
+multiplied before summing over rows. The two stacking inputs remain ordered.
+
+## Row 1
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(01)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)\omega_2(014)(1+\omega_2(024))\\
+&+\omega_2(013)\omega_2(023)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\omega_2(123)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+(1+\omega_2(134))(1+\omega_2(013))\omega_2(023)\\
+&+(1+\omega_2(134))\omega_2(012)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+(1+\omega_2(134))\omega_2(124)\bigl(\omega_2(024)+\omega_2(023)\bigr)\end{aligned}
+```
+
+## Row 2
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n'_1(01)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(023)\omega_2(014)\omega_2(034)\\
+&+\omega_2(023)\omega_2(134)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+\omega_2(234)\omega_2(013)\bigl(\omega_2(034)+(1+\omega_2(023))\bigr)\\
+&+\omega_2(234)\omega_2(014)\bigl(\omega_2(034)+\omega_2(013)\bigr)\\
+&+(1+\omega_2(012))\omega_2(234)\\
+&+(1+\omega_2(012))\omega_2(134)\bigl(\omega_2(024)+(1+\omega_2(014))\bigr)\end{aligned}
+```
+
+## Row 3
+
+Integer factor:
+
+```math
+\bar n_1(01)\widetilde n_1(01)\bar n'_1(01)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)+(1+\omega_2(234))\bigl(\omega_2(012)+\omega_2(123)\omega_2(134)\bigr)\end{aligned}
+```
+
+## Row 4
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(01)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(023)\omega_2(034)\bigl(\omega_2(024)+s_1(01)(1+\omega_2(024))\bigr)\end{aligned}
+```
+
+## Row 5
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n'_1(01)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(234)\omega_2(024)(1+\omega_2(034))\\
+&+(1+s_1(01))\omega_2(023)(1+\omega_2(024))\omega_2(034)\end{aligned}
+```
+
+## Row 6
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(01)\bar n_1(12)\bar n'_1(01)\\
++\bar n_1(01)\widetilde n_1(12)\bar n'_1(01)\\
++\bar n_1(12)\widetilde n_1(12)\bar n'_1(01)\\
++\bar n_1(01)\widetilde n_1(01)\bar n'_1(12)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(023)(1+\omega_2(024))\omega_2(034)\end{aligned}
+```
+
+## Row 7
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(01)\\
++\widetilde n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\\
++\widetilde n_1(01)\widetilde n_1(23)\bar n'_1(12)\\
++\bar n_1(23)\bar n'_1(01)\bar n'_1(12)\\
++\bar n_1(01)\bar n_1(23)\bar n'_1(01)\bar n'_1(12)\\
++\bar n_1(12)\bar n_1(23)\bar n'_1(01)\bar n'_1(12)\\
++\bar n_1(01)\bar n_1(12)\bar n_1(23)\widetilde n'_1(12)\\
++\bar n_1(01)\widetilde n_1(23)\widetilde n'_1(12)\\
++\bar n_1(01)\bar n_1(23)\bar n'_1(12)\widetilde n'_1(12)\\
++\widetilde n_1(01)\widetilde n_1(12)\bar n'_1(23)\\
++\widetilde n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(23)\\
++\bar n_1(01)\bar n_1(12)\widetilde n_1(23)\bar n'_1(23)\\
++\bar n_1(12)\bar n'_1(01)\bar n'_1(23)\\
++\bar n_1(12)\bar n_1(23)\bar n'_1(01)\bar n'_1(23)\\
++\bar n_1(01)\widetilde n_1(01)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\widetilde n_1(12)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\widetilde n_1(23)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\bar n'_1(01)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(23)\bar n'_1(01)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\bar n_1(12)\widetilde n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\bar n_1(23)\widetilde n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\bar n_1(12)\widetilde n'_1(23)\\
++\widetilde n_1(01)\bar n_1(12)\widetilde n'_1(23)\\
++\bar n_1(01)\bar n_1(12)\bar n_1(23)\widetilde n'_1(23)\\
++\widetilde n_1(01)\bar n'_1(12)\widetilde n'_1(23)\\
++\bar n_1(01)\bar n_1(12)\bar n'_1(12)\widetilde n'_1(23)\\
++\bar n_1(01)\bar n_1(23)\bar n'_1(12)\widetilde n'_1(23)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(034)\end{aligned}
+```
+
+## Row 8
+
+Integer factor:
+
+```math
+\bar n_1(01)\widetilde n'_1(01)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+\omega_2(012))\omega_2(014)\omega_2(034)\\
+&+(1+\omega_2(123))\omega_2(012)(1+\omega_2(013))\\
+&+(1+\omega_2(123))(1+\omega_2(134))\omega_2(013)\\
+&+(1+\omega_2(124))\bigl(\omega_2(023)+\omega_2(012)\bigr)\\
+&+(1+\omega_2(124))\omega_2(013)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+(1+\omega_2(124))(1+\omega_2(134))\bigl(\omega_2(034)+\omega_2(013)\bigr)\\
+&+(1+\omega_2(124))(1+\omega_2(134))\omega_2(012)\end{aligned}
+```
+
+## Row 9
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(01)\widetilde n'_1(01)\\
++\bar n_1(01)\bar n'_1(01)\widetilde n'_1(01)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)\omega_2(034)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\omega_2(012)\omega_2(024)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+\omega_2(123)\omega_2(014)\omega_2(034)\\
+&+\omega_2(123)\omega_2(012)\bigl(\omega_2(034)+\omega_2(013)\bigr)\\
+&+\omega_2(123)(1+\omega_2(124))\bigl(\omega_2(014)+\omega_2(013)\bigr)\end{aligned}
+```
+
+## Row 10
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(12)\widetilde n'_1(01)\\
++\bar n_1(01)\bar n_1(12)\widetilde n'_1(12)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(234)\end{aligned}
+```
+
+## Row 11
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(12)\widetilde n'_1(01)\\
++\widetilde n_1(01)\widetilde n_1(12)\bar n'_1(12)\\
++\widetilde n_1(01)\bar n'_1(01)\bar n'_1(12)\\
++\widetilde n_1(12)\bar n'_1(01)\bar n'_1(12)\\
++\bar n_1(12)\widetilde n'_1(01)\bar n'_1(12)\\
++\widetilde n_1(01)\widetilde n'_1(12)\\
++\bar n_1(01)\widetilde n_1(01)\widetilde n'_1(12)\\
++\bar n_1(01)\widetilde n_1(12)\widetilde n'_1(12)\\
++\widetilde n_1(01)\bar n'_1(12)\widetilde n'_1(12)\\
++\bar n_1(01)\bar n_1(12)\bar n'_1(12)\widetilde n'_1(12)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(234)\end{aligned}
+```
+
+## Row 12
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(134)\omega_2(014)\bigl(\omega_2(034)+\omega_2(012)\bigr)\\
+&+\omega_2(123)(1+\omega_2(012))\omega_2(034)\\
+&+\omega_2(123)\omega_2(134)\bigl(\omega_2(012)+s_1(01)\bigr)\\
+&+\omega_2(234)\bigl(\omega_2(023)\omega_2(034)+(1+\omega_2(012))\omega_2(014)\bigr)\\
+&+\omega_2(234)(1+s_1(02))\\
+&+\omega_2(234)(1+s_1(01))\bigl(\omega_2(034)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+\omega_2(234)(1+s_1(01))\omega_2(012)\end{aligned}
+```
+
+## Row 13
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(123)\omega_2(134)\\
+&+\omega_2(234)\bigl(\omega_2(034)+\omega_2(023)+\omega_2(014)+\omega_2(012)\bigr)\\
+&+\omega_2(234)s_1(01)\end{aligned}
+```
+
+## Row 14
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(024)+\omega_2(124)\omega_2(014)(1+\omega_2(024))\bigr)\\
+&+(1+\omega_2(023))\bigl(\omega_2(012)+s_1(01)\bigr)\\
+&+\omega_2(013)\bigl(\omega_2(014)\omega_2(024)+(1+\omega_2(124))\omega_2(023)\bigr)\\
+&+\omega_2(013)(1+s_1(01))\bigl(\omega_2(023)+\omega_2(014)\bigr)\\
+&+\omega_2(013)(1+s_1(01))\omega_2(012)(1+\omega_2(023))\\
+&+(1+\omega_2(134))\bigl(\omega_2(012)\omega_2(014)+s_1(01)\bigr)\\
+&+(1+\omega_2(134))(1+\omega_2(013))s_1(01)\omega_2(014)\\
+&+(1+\omega_2(134))\omega_2(123)\omega_2(013)\\
+&+(1+\omega_2(134))\omega_2(124)\bigl(\omega_2(014)+\omega_2(013)+\omega_2(012)\bigr)\\
+&+(1+\omega_2(134))\omega_2(124)(1+\omega_2(123))s_1(01)\end{aligned}
+```
+
+## Row 15
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\\
+&+s_1(01)(1+\omega_2(234))\bigl(1+\omega_2(023)\omega_2(034)\bigr)\end{aligned}
+```
+
+## Row 16
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(01)\bar n_1(12)\bar n'_1(12)\\
++\bar n_1(01)\widetilde n_1(12)\bar n'_1(12)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)+(1+\omega_2(234))\bigl(\omega_2(023)\omega_2(034)+s_1(01)\bigr)\end{aligned}
+```
+
+## Row 17
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)(1+\omega_2(013))\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(01)\omega_2(123)\bigl(1+(1+\omega_2(023))\omega_2(013)\bigr)\\
+&+\omega_2(124)\bigl(\omega_2(024)+(1+\omega_2(023))\omega_2(012)\bigr)\\
+&+\omega_2(124)(1+s_1(01))\\
+&+\omega_2(124)(1+s_1(01))(1+\omega_2(024))\omega_2(013)\\
+&+\omega_2(124)(1+s_1(01))(1+\omega_2(123))\omega_2(023)\\
+&+\omega_2(134)(1+\omega_2(012))\omega_2(014)+\omega_2(134)s_1(01)\\
+&+\omega_2(134)s_1(01)\omega_2(013)\bigl(\omega_2(014)+\omega_2(012)\bigr)\\
+&+\omega_2(134)(1+\omega_2(123))\omega_2(013)\\
+&+\omega_2(134)(1+\omega_2(123))s_1(01)\bigl(\omega_2(013)+\omega_2(012)\bigr)\\
+&+\omega_2(134)(1+\omega_2(124))\bigl(\omega_2(023)+\omega_2(013)\bigr)\\
+&+\omega_2(134)(1+\omega_2(124))(1+s_1(01))\omega_2(023)\\
+&+\omega_2(134)(1+\omega_2(124))(1+s_1(01))\omega_2(014)\\
+&+\omega_2(134)(1+\omega_2(124))(1+s_1(01))\omega_2(012)\end{aligned}
+```
+
+## Row 18
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n_1(12)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(034)\omega_2(123)\\
+&+\omega_2(234)s_1(01)\bigl(\omega_2(034)+(1+\omega_2(023))\bigr)\\
+&+\omega_2(234)\omega_2(012)(1+s_1(01))\end{aligned}
+```
+
+## Row 19
+
+Integer factor:
+
+```math
+\bar n_1(23)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)\omega_2(034)\bigl(\omega_2(014)+s_1(02)\bigr)\\
+&+\omega_2(013)\omega_2(034)s_1(12)s_1(02)\omega_2(014)\end{aligned}
+```
+
+## Row 20
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(23)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(014)+\omega_2(013)+s_1(02)\omega_2(034)\bigr)\end{aligned}
+```
+
+## Row 21
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(01)\bar n_1(23)\bar n'_1(12)\\
++\bar n_1(01)\bar n_1(12)\bar n'_1(12)\bar n'_1(23)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+s_1(02))\omega_2(034)\end{aligned}
+```
+
+## Row 22
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(23)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+s_1(12))\omega_2(013)\omega_2(034)\\
+&+\omega_2(134)(1+\omega_2(013))(1+\omega_2(034))\\
+&+\omega_2(134)(1+s_1(02))s_1(01)\\
+&+\omega_2(134)(1+s_1(02))\omega_2(013)(1+s_1(01))\omega_2(034)\end{aligned}
+```
+
+## Row 23
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\\
++\bar n_1(12)\bar n_1(23)\widetilde n'_1(12)\\
++\widetilde n_1(12)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\bar n_1(23)\bar n'_1(12)\bar n'_1(23)\\
++\widetilde n_1(23)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(23)\widetilde n'_1(12)\bar n'_1(23)\\
++\bar n_1(12)\bar n'_1(12)\widetilde n'_1(23)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(134)\end{aligned}
+```
+
+## Row 24
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(12)\bar n_1(23)\bar n'_1(12)\\
++\bar n_1(23)\widetilde n_1(23)\bar n'_1(12)\\
++\widetilde n_1(12)\bar n_1(23)\bar n'_1(23)\\
++\bar n_1(12)\widetilde n_1(23)\bar n'_1(23)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)\omega_2(034)\bigl(1+(1+s_1(01))\omega_2(014)\bigr)\end{aligned}
+```
+
+## Row 25
+
+Integer factor:
+
+```math
+\bar n_1(01)\widetilde n_1(23)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(034)\end{aligned}
+```
+
+## Row 26
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n_1(23)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)\omega_2(034)\\
+&+\omega_2(134)\bigl(s_1(01)+\omega_2(013)(1+s_1(01))\omega_2(034)\bigr)\end{aligned}
+```
+
+## Row 27
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\\
++\bar n_1(01)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\bar n_1(23)\bar n'_1(12)\bar n'_1(34)\\
++\bar n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\bar n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(014)\end{aligned}
+```
+
+## Row 28
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\\
++\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\\
++\widetilde n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\widetilde n_1(01)\bar n_1(23)\bar n'_1(12)\bar n'_1(34)\\
++\widetilde n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\bar n'_1(34)\\
++\widetilde n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\bar n'_1(34)\\
++\bar n_1(12)\widetilde n_1(12)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(01)\widetilde n_1(12)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\\
++\widetilde n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(01)\widetilde n_1(01)\bar n_1(23)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
++\widetilde n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(01)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(01)\widetilde n_1(01)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
++\widetilde n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(12)\widetilde n_1(12)\widetilde n'_1(23)\bar n'_1(34)\\
++\bar n_1(12)\widetilde n_1(23)\bar n'_1(34)\widetilde n'_1(34)\\
++\bar n_1(12)\bar n_1(23)\overline{\left\lfloor n'_1(34)/4\right\rfloor}\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\end{aligned}
+```
+
+## Row 29
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\\
++\widetilde n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\\
++\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(12)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(23)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(12)\bar n_1(23)\bar n_1(34)\widetilde n'_1(23)\\
++\bar n_1(12)\widetilde n_1(34)\widetilde n'_1(23)\\
++\widetilde n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(34)\\
++\bar n_1(23)\bar n'_1(12)\bar n'_1(34)\\
++\bar n_1(23)\bar n_1(34)\bar n'_1(12)\bar n'_1(34)\\
++\bar n_1(12)\widetilde n_1(23)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(12)\widetilde n_1(34)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(12)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
++\widetilde n_1(12)\bar n_1(23)\widetilde n'_1(34)\\
++\bar n_1(12)\bar n_1(23)\bar n_1(34)\widetilde n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)\end{aligned}
+```
+
+## Row 30
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(01)\bar n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(023)\omega_2(034)+\omega_2(234)\bigl(\omega_2(034)+\omega_2(023)+s_1(01)\bigr)\end{aligned}
+```
+
+## Row 31
+
+Integer factor:
+
+```math
+\bar n_1(01)\widetilde n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(024)(1+\omega_2(034))+\omega_2(023)\bigl(\omega_2(034)+\omega_2(024)\bigr)\end{aligned}
+```
+
+## Row 32
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(034)(1+\omega_2(013))\omega_2(023)\\
+&+\omega_2(034)\omega_2(123)s_1(01)(1+\omega_2(023))\\
+&+\omega_2(234)\bigl(\omega_2(034)+\omega_2(012)\bigr)\\
+&+\omega_2(234)s_1(01)\omega_2(012)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+\omega_2(234)\omega_2(013)\\
+&+\omega_2(234)\omega_2(013)(1+s_1(01))\omega_2(034)\\
+&+\omega_2(234)\omega_2(013)(1+s_1(01))(1+\omega_2(023))\\
+&+\omega_2(134)(1+s_1(01))\omega_2(023)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+\omega_2(134)\omega_2(234)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+\omega_2(134)\omega_2(234)s_1(01)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+\omega_2(134)(1+\omega_2(012))\omega_2(234)\\
+&+\omega_2(134)(1+\omega_2(012))(1+s_1(01))\omega_2(023)\\
+&+\omega_2(134)(1+\omega_2(012))(1+s_1(01))\omega_2(013)\end{aligned}
+```
+
+## Row 33
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\widetilde n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(234)\omega_2(024)\omega_2(034)\\
+&+\omega_2(234)s_1(01)\bigl(\omega_2(034)+\omega_2(013)\bigr)\\
+&+\omega_2(014)(1+s_1(01))\omega_2(023)\omega_2(024)\\
+&+\omega_2(014)(1+s_1(01))\omega_2(013)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+\omega_2(123)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)+\omega_2(013)\bigr)\\
+&+\omega_2(123)(1+s_1(01))(1+\omega_2(014))\omega_2(024)\\
+&+\omega_2(123)(1+s_1(01))(1+\omega_2(013))\omega_2(023)\\
+&+\omega_2(123)\omega_2(134)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+\omega_2(123)\omega_2(134)(1+\omega_2(013))\end{aligned}
+```
+
+## Row 34
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(23)\widetilde n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(02)\omega_2(034)\end{aligned}
+```
+
+## Row 35
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(12)\widetilde n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)\omega_2(034)+\omega_2(012)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+(1+s_1(01))\omega_2(014)\omega_2(234)\\
+&+(1+s_1(01))\omega_2(123)\bigl(\omega_2(014)+\omega_2(013)\bigr)\end{aligned}
+```
+
+## Row 36
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(12)\widetilde n'_1(12)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(234)\bigl(\omega_2(012)+(1+\omega_2(034))\omega_2(024)\bigr)\\
+&+(1+s_1(01))\omega_2(034)\bigl(\omega_2(023)+\omega_2(012)\bigr)\\
+&+(1+s_1(01))\omega_2(024)(1+\omega_2(023))\\
+&+(1+s_1(01))(1+\omega_2(013))\omega_2(024)\omega_2(034)\\
+&+(1+s_1(01))(1+\omega_2(013))\omega_2(012)\omega_2(034)\\
+&+(1+s_1(01))(1+\omega_2(013))\omega_2(012)\omega_2(023)\\
+&+(1+\omega_2(124))(1+s_1(01))\omega_2(013)\omega_2(034)\\
+&+(1+\omega_2(124))(1+s_1(01))\omega_2(012)\omega_2(024)\\
+&+(1+\omega_2(124))\omega_2(123)\bigl(\omega_2(034)+\omega_2(024)+\omega_2(013)\bigr)\\
+&+(1+\omega_2(124))\omega_2(123)\omega_2(012)\end{aligned}
+```
+
+## Row 37
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+\omega_2(014))\omega_2(034)\\
+&+(1+\omega_2(024))\bigl(\omega_2(023)\omega_2(034)+\omega_2(012)\omega_2(014)\bigr)\\
+&+s_1(02)\omega_2(024)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(02)\omega_2(023)\bigl(\omega_2(034)+(1+\omega_2(024))\bigr)\\
+&+\omega_2(013)(1+\omega_2(023))\bigl(\omega_2(012)+s_1(02)\bigr)\\
+&+\omega_2(013)(1+\omega_2(034))\bigl(\omega_2(014)+(1+s_1(02))\bigr)\\
+&+(1+s_1(12))\omega_2(234)\omega_2(012)\\
+&+(1+s_1(12))\omega_2(234)s_1(02)(1+\omega_2(012))\\
+&+(1+s_1(12))\omega_2(134)(1+s_1(02))\omega_2(014)\\
+&+(1+s_1(12))\omega_2(134)(1+s_1(02))(1+\omega_2(012))\end{aligned}
+```
+
+## Row 38
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(124)\omega_2(234)\\
+&+\omega_2(123)\bigl(\omega_2(034)+\omega_2(023)+\omega_2(014)+(1+\omega_2(012))\bigr)\\
+&+s_1(12)s_1(02)(1+\omega_2(014))\omega_2(024)\\
+&+s_1(12)s_1(02)(1+\omega_2(013))\omega_2(023)\\
+&+s_1(12)s_1(02)\omega_2(012)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(12)s_1(02)\omega_2(012)\omega_2(014)\\
+&+s_1(12)s_1(02)\omega_2(012)\omega_2(013)+s_1(12)\omega_2(134)\end{aligned}
+```
+
+## Row 39
+
+Integer factor:
+
+```math
+\bar n_1(01)\widetilde n_1(01)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)\omega_2(134)\end{aligned}
+```
+
+## Row 40
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(034)s_1(01)\bigl(\omega_2(024)+s_1(02)\bigr)\\
+&+\omega_2(034)\check{\omega}_2(012)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+\omega_2(134)\bigl(\omega_2(013)\omega_2(034)+(1+\omega_2(024))\omega_2(012)\bigr)\\
+&+\omega_2(134)s_1(01)\bigl(\omega_2(024)+\omega_2(012)\bigr)\\
+&+\omega_2(134)s_1(01)(1+s_1(02))\omega_2(024)\\
+&+\omega_2(134)s_1(01)(1+s_1(02))\omega_2(013)\omega_2(034)\\
+&+\omega_2(234)\omega_2(013)\bigl(\omega_2(024)+s_1(01)s_1(02)\bigr)\\
+&+\omega_2(234)\omega_2(012)\bigl(\omega_2(034)+s_1(01)\bigr)\\
+&+\omega_2(234)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)+\omega_2(013)\bigr)\\
+&+\omega_2(234)\omega_2(014)\omega_2(012)\end{aligned}
+```
+
+## Row 41
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+\omega_2(023))\omega_2(034)+\omega_2(134)\omega_2(024)\\
+&+\omega_2(123)\bigl(\omega_2(024)+\omega_2(023)\bigr)+s_1(12)\omega_2(134)\\
+&+s_1(12)s_1(02)\bigl(\omega_2(034)+\omega_2(014)\omega_2(024)\bigr)\\
+&+s_1(12)s_1(02)\omega_2(013)\omega_2(023)\\
+&+s_1(12)(1+\omega_2(012))s_1(02)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(12)(1+\omega_2(012))s_1(02)\omega_2(014)\\
+&+s_1(12)(1+\omega_2(012))s_1(02)\omega_2(013)\end{aligned}
+```
+
+## Row 42
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+s_1(02))\omega_2(034)+\omega_2(234)s_1(12)\end{aligned}
+```
+
+## Row 43
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(034)+\omega_2(234)(1+s_1(02))\bigr)\\
+&+s_1(01)\omega_2(134)\bigl(\omega_2(014)\omega_2(034)+(1+s_1(02))\bigr)\end{aligned}
+```
+
+## Row 44
+
+Integer factor:
+
+```math
+\bar n_1(01)\widetilde n_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(034)+\omega_2(134)s_1(12)\end{aligned}
+```
+
+## Row 45
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)\bigl(\omega_2(034)+s_1(01)\bigr)\\
+&+\omega_2(014)\bigl(s_1(01)+\omega_2(013)(1+s_1(01))\omega_2(034)\bigr)\end{aligned}
+```
+
+## Row 46
+
+Integer factor:
+
+```math
+\bar n_1(23)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(034)(1+\omega_2(024))\bigl(\omega_2(014)+s_1(01)\bigr)\\
+&+\omega_2(034)s_1(02)s_1(01)(1+\omega_2(014))\\
+&+\omega_2(034)s_1(02)s_1(01)(1+\omega_2(124))\omega_2(012)\\
+&+\omega_2(134)(1+\omega_2(014))\omega_2(024)\\
+&+\omega_2(134)(1+\omega_2(034))\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\omega_2(134)(1+\omega_2(034))s_1(01)s_1(02)\omega_2(014)\\
+&+\omega_2(134)(1+\check{\omega}_2(012))\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\omega_2(134)(1+\check{\omega}_2(012))s_1(01)s_1(02)\omega_2(034)\\
+&+\omega_2(134)(1+\check{\omega}_2(012))s_1(01)s_1(02)(1+\omega_2(024))\\
+&+\omega_2(234)\omega_2(013)\bigl(\omega_2(024)+\omega_2(014)+s_1(01)\bigr)\\
+&+\omega_2(234)\omega_2(012)\\
+&+\omega_2(234)s_1(02)\omega_2(024)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+\omega_2(234)s_1(02)s_1(01)\omega_2(012)\omega_2(013)\\
+&+\omega_2(234)(1+\omega_2(134))\bigl(\omega_2(013)+s_1(02)\omega_2(024)\bigr)\\
+&+\omega_2(234)(1+\omega_2(134))\omega_2(124)s_1(02)\\
+&+\omega_2(234)(1+\omega_2(134))\omega_2(124)s_1(01)(1+s_1(02))\end{aligned}
+```
+
+## Row 47
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(23)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)s_1(02)(1+\omega_2(014))\omega_2(024)\\
+&+s_1(12)s_1(02)(1+\omega_2(013))\omega_2(023)\\
+&+s_1(12)s_1(02)\omega_2(012)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(12)s_1(02)\omega_2(012)\omega_2(014)\\
+&+s_1(12)s_1(02)\omega_2(012)\omega_2(013)+s_1(12)\omega_2(234)\end{aligned}
+```
+
+## Row 48
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(23)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(034)\\
+&+s_1(01)(1+\omega_2(012))s_1(02)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(01)\omega_2(014)\\
+&+s_1(01)\omega_2(014)s_1(02)\bigl(\omega_2(024)+\omega_2(012)\bigr)\\
+&+\omega_2(013)s_1(01)\\
+&+\omega_2(013)s_1(01)s_1(02)\bigl(\omega_2(023)+\omega_2(012)\bigr)\\
+&+\omega_2(013)\omega_2(034)s_1(12)\\
+&+\omega_2(013)\omega_2(034)s_1(12)s_1(02)\omega_2(014)\end{aligned}
+```
+
+## Row 49
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)+\omega_2(013)\bigr)\end{aligned}
+```
+
+## Row 50
+
+Integer factor:
+
+```math
+\widetilde n_1(23)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)\omega_2(023)(1+\omega_2(024))\\
+&+\omega_2(123)\omega_2(024)\bigl(\omega_2(023)+(1+\omega_2(014))\bigr)\\
+&+\omega_2(123)\omega_2(012)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+\omega_2(234)\bigl(\omega_2(014)+\omega_2(013)\bigl(\omega_2(024)+(1+\omega_2(023))\bigr)\bigr)\\
+&+s_1(01)\omega_2(124)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(01)\omega_2(234)\bigl(\omega_2(024)+\omega_2(014)\omega_2(034)\bigr)\\
+&+s_1(01)\omega_2(234)\omega_2(012)\\
+&+s_1(01)\omega_2(123)\omega_2(023)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(01)\omega_2(123)\omega_2(012)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+s_1(01)\omega_2(123)\omega_2(012)\omega_2(014)\\
+&+(1+s_1(02))s_1(01)(1+\omega_2(024))\omega_2(014)\\
+&+(1+s_1(02))s_1(01)(1+\omega_2(024))\omega_2(013)\\
+&+(1+s_1(02))\omega_2(023)(1+s_1(01))\omega_2(014)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+(1+s_1(02))\omega_2(123)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+(1+s_1(02))\omega_2(123)(1+s_1(01))\omega_2(014)\omega_2(024)\\
+&+(1+s_1(02))\omega_2(123)(1+s_1(01))\omega_2(013)\omega_2(023)\\
+&+(1+s_1(02))\omega_2(234)\omega_2(024)\\
+&+(1+s_1(02))\omega_2(234)s_1(01)\omega_2(023)\omega_2(024)\\
+&+(1+s_1(02))\omega_2(234)s_1(01)\omega_2(013)\\
+&+(1+s_1(02))\omega_2(234)\omega_2(014)(1+\omega_2(024))\\
+&+(1+s_1(02))\omega_2(234)\omega_2(014)(1+s_1(01))\omega_2(013)\\
+&+(1+s_1(02))\omega_2(234)\omega_2(124)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+(1+s_1(02))\omega_2(234)\omega_2(124)(1+\omega_2(023))s_1(01)\omega_2(024)\bigl(\omega_2(014)+(1+\omega_2(013))\bigr)\end{aligned}
+```
+
+## Row 51
+
+Integer factor:
+
+```math
+\bar n_1(23)\widetilde n_1(23)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(034)\omega_2(123)\\
+&+s_1(01)(1+s_1(02))\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+\omega_2(234)\bigl((1+s_1(02))\omega_2(012)+s_1(12)\omega_2(014)\bigr)\end{aligned}
+```
+
+## Row 52
+
+Integer factor:
+
+```math
+\bar n_1(34)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)s_1(23)s_1(03)\omega_2(014)\\
+&+\check{\omega}_2(012)\omega_2(024)\bigl(\omega_2(014)+s_1(02)s_1(03)\bigr)\\
+&+\check{\omega}_2(012)\omega_2(024)s_1(13)s_1(03)\omega_2(014)\\
+&+\check{\omega}_2(012)\omega_2(024)s_1(13)(1+s_1(02))\end{aligned}
+```
+
+## Row 53
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(34)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)s_1(02)\omega_2(012)\omega_2(024)+\omega_2(124)s_1(02)\\
+&+\omega_2(124)s_1(12)\\
+&+\omega_2(124)s_1(12)s_1(02)\bigl(\omega_2(024)+\omega_2(012)\bigr)\end{aligned}
+```
+
+## Row 54
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(34)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(024)+\omega_2(012)\bigr)\\
+&+s_1(01)s_1(02)\bigl(\omega_2(024)+\omega_2(012)(1+\omega_2(024))\bigr)\\
+&+\omega_2(014)s_1(23)+\omega_2(014)(1+s_1(12))s_1(03)\\
+&+\omega_2(014)(1+s_1(12))s_1(02)\bigl(\omega_2(024)+\omega_2(012)\bigr)\end{aligned}
+```
+
+## Row 55
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(014)+\omega_2(124)s_1(12)\end{aligned}
+```
+
+## Row 56
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\bar n_1(34)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+s_1(03)\bigl(\omega_2(014)+s_1(01)\bigr)\end{aligned}
+```
+
+## Row 57
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\widetilde n_1(12)\bar n_1(34)\bar n'_1(23)\\
++\widetilde n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\\
++\widetilde n_1(34)\widetilde n'_1(23)\\
++\bar n_1(12)\bar n_1(23)\widetilde n_1(23)\bar n'_1(34)\\
++\overline{\left\lfloor n_1(23)/4\right\rfloor}\bar n'_1(34)\\
++\widetilde n_1(23)\widetilde n_1(34)\bar n'_1(34)\\
++\bar n_1(01)\widetilde n_1(01)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\\
++\widetilde n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(23)\widetilde n_1(23)\widetilde n'_1(34)\\
++\bar n_1(23)\widetilde n_1(34)\widetilde n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+s_1(02))\end{aligned}
+```
+
+## Row 58
+
+Integer factor:
+
+```math
+\bar n_1(23)\bar n_1(34)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)s_1(03)+\omega_2(124)s_1(01)\\
+&+\omega_2(124)(1+\omega_2(024))\bigl(\omega_2(014)+s_1(01)s_1(03)\bigr)\\
+&+(1+s_1(23))s_1(01)s_1(03)\omega_2(014)\\
+&+(1+s_1(23))s_1(01)(1+\omega_2(024))\omega_2(014)\\
+&+(1+s_1(23))s_1(01)(1+\omega_2(024))s_1(03)\\
+&+(1+s_1(23))\omega_2(012)(1+s_1(01))(1+\omega_2(014))\omega_2(024)\end{aligned}
+```
+
+## Row 59
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\\
++\bar n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(02)\bigl(\omega_2(024)+\omega_2(012)+s_1(01)\bigr)\\
+&+(1+\omega_2(014))s_1(01)\end{aligned}
+```
+
+## Row 60
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(024)+\omega_2(012)+(1+s_1(02))\bigr)\end{aligned}
+```
+
+## Row 61
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(23)\bar n_1(34)\bar n'_1(23)\\
++\bar n_1(34)\widetilde n_1(34)\bar n'_1(23)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+s_1(02))\omega_2(014)\\
+&+\check{\omega}_2(012)\omega_2(024)\bigl(1+(1+s_1(01))\omega_2(014)\bigr)\end{aligned}
+```
+
+## Row 62
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n_1(34)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)\omega_2(014)\end{aligned}
+```
+
+## Row 63
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(12)\widetilde n_1(34)\bar n'_1(23)\\
++\bar n_1(12)\bar n_1(23)\widetilde n_1(34)\bar n'_1(34)\\
++\bar n_1(12)\widetilde n_1(12)\bar n'_1(23)\bar n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+s_1(01)\end{aligned}
+```
+
+## Row 64
+
+Integer factor:
+
+```math
+\bar n_1(23)\widetilde n_1(34)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(024)+s_1(02)\omega_2(014)\bigr)\\
+&+\check{\omega}_2(012)\bigl(\omega_2(024)+s_1(01)\bigr)\\
+&+\check{\omega}_2(012)\omega_2(014)(1+s_1(01))\omega_2(024)\end{aligned}
+```
+
+## Row 65
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(014)+\omega_2(013)\bigr)+s_1(12)\omega_2(013)\omega_2(034)\\
+&+s_1(12)(1+s_1(01))\omega_2(013)\\
+&+s_1(12)(1+s_1(01))(1+\omega_2(134))\omega_2(014)\end{aligned}
+```
+
+## Row 66
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n'_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+s_1(02))\omega_2(034)+\omega_2(134)s_1(01)\end{aligned}
+```
+
+## Row 67
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+s_1(02))\omega_2(134)\end{aligned}
+```
+
+## Row 68
+
+Integer factor:
+
+```math
+\bar n_1(23)\bar n'_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+\omega_2(014))\omega_2(034)+\omega_2(134)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+\omega_2(134)s_1(01)\bigl(\omega_2(014)\omega_2(034)+(1+s_1(02))\bigr)\end{aligned}
+```
+
+## Row 69
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(034)+s_1(01)\bigl(\omega_2(014)+\omega_2(013)\bigr)\end{aligned}
+```
+
+## Row 70
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\bar n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+\omega_2(014))\end{aligned}
+```
+
+## Row 71
+
+Integer factor:
+
+```math
+\bar n_1(01)\widetilde n'_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)\omega_2(034)+s_1(02)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+(1+s_1(01))\omega_2(134)\omega_2(014)\end{aligned}
+```
+
+## Row 72
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\widetilde n'_1(12)\bar n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(134)\end{aligned}
+```
+
+## Row 73
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\bar n'_1(12)\widetilde n'_1(12)\bar n'_1(23)\\
++\bar n_1(01)\widetilde n'_1(12)\widetilde n'_1(23)\\
++\bar n_1(01)\bar n'_1(12)\bar n'_1(23)\widetilde n'_1(23)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+\omega_2(013)\end{aligned}
+```
+
+## Row 74
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)(1+\omega_2(034))+\omega_2(013)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(01)\omega_2(234)\\
+&+s_1(01)\omega_2(134)\bigl(1+\omega_2(014)\omega_2(034)\bigr)\end{aligned}
+```
+
+## Row 75
+
+Integer factor:
+
+```math
+\bar n_1(23)\widetilde n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(034)\bigl(\omega_2(023)+\omega_2(013)\bigr)\\
+&+\omega_2(012)\omega_2(023)(1+\omega_2(034))\\
+&+\omega_2(012)\omega_2(024)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+(1+s_1(01))(1+\omega_2(013))\bigl(\omega_2(024)+\omega_2(012)\bigr)\\
+&+(1+s_1(01))\omega_2(034)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+(1+s_1(01))\omega_2(034)(1+\omega_2(123))\omega_2(013)\\
+&+(1+s_1(02))\bigl(\omega_2(013)+s_1(01)\bigr)\\
+&+(1+s_1(02))(1+\omega_2(034))\omega_2(024)\\
+&+(1+s_1(02))\omega_2(234)\bigl(\omega_2(013)+s_1(01)\bigr)\\
+&+(1+s_1(02))\omega_2(234)\omega_2(024)\omega_2(013)\\
+&+(1+s_1(02))\omega_2(234)\omega_2(024)s_1(01)\omega_2(034)\\
+&+(1+s_1(02))\omega_2(012)\\
+&+(1+s_1(02))\omega_2(012)\omega_2(034)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+(1+s_1(02))\omega_2(012)\omega_2(023)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+(1+s_1(02))\omega_2(012)s_1(01)\omega_2(024)\omega_2(034)\\
+&+(1+s_1(02))\omega_2(012)s_1(01)\omega_2(024)\omega_2(013)\\
+&+(1+s_1(02))\omega_2(012)s_1(01)\omega_2(023)(1+\omega_2(013))\\
+&+(1+\omega_2(134))\omega_2(234)+(1+\omega_2(134))\omega_2(123)\omega_2(234)\\
+&+(1+\omega_2(134))\omega_2(123)(1+s_1(01))\omega_2(024)\\
+&+(1+\omega_2(134))\omega_2(123)(1+s_1(01))\omega_2(012)\\
+&+(1+\omega_2(134))(1+s_1(02))\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+(1+\omega_2(134))(1+s_1(02))\omega_2(013)\\
+&+(1+\omega_2(134))(1+s_1(02))(1+\omega_2(012))\\
+&+(1+\omega_2(134))(1+s_1(02))(1+s_1(01))\\
+&+(1+\omega_2(134))(1+s_1(02))(1+s_1(01))\omega_2(013)\omega_2(034)\\
+&+(1+\omega_2(134))(1+s_1(02))(1+s_1(01))\omega_2(012)\omega_2(024)\\
+&+(1+\omega_2(134))(1+s_1(02))\omega_2(234)(1+\omega_2(013))\\
+&+(1+\omega_2(134))(1+s_1(02))\omega_2(234)(1+\omega_2(034))\\
+&+(1+\omega_2(134))(1+s_1(02))\omega_2(234)(1+\omega_2(034))s_1(01)\omega_2(024)\omega_2(013)\\
+&+(1+\omega_2(134))(1+s_1(02))\omega_2(234)(1+\omega_2(034))s_1(01)\omega_2(024)(1+\omega_2(012))\end{aligned}
+```
+
+## Row 76
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(23)\widetilde n'_1(23)\\
++\bar n_1(23)\bar n'_1(23)\widetilde n'_1(23)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(034)+\omega_2(234)\bigl(\omega_2(024)\omega_2(034)+(1+\omega_2(014))\bigr)\\
+&+\omega_2(123)\omega_2(134)+(1+s_1(01))\omega_2(024)\\
+&+(1+s_1(01))(1+\omega_2(014))\omega_2(013)\omega_2(034)\\
+&+(1+s_1(01))(1+\omega_2(014))\omega_2(012)\omega_2(024)\\
+&+(1+s_1(01))\omega_2(023)\\
+&+(1+s_1(01))\omega_2(023)(1+\omega_2(024))\omega_2(034)\\
+&+(1+s_1(01))\omega_2(023)(1+\omega_2(013))\omega_2(012)\\
+&+(1+s_1(12))s_1(01)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+(1+s_1(12))\omega_2(234)(1+\omega_2(023))\omega_2(024)\\
+&+(1+s_1(12))\omega_2(234)(1+\omega_2(123))\omega_2(124)\end{aligned}
+```
+
+## Row 77
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(34)\widetilde n'_1(23)\\
++\bar n_1(12)\widetilde n_1(12)\bar n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)s_1(23)s_1(03)\end{aligned}
+```
+
+## Row 78
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(34)\widetilde n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(03)\omega_2(014)\end{aligned}
+```
+
+## Row 79
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(23)\bar n_1(34)\widetilde n'_1(23)\\
++\bar n_1(23)\bar n'_1(23)\widetilde n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(s_1(02)+(1+\omega_2(124))\bigr)\end{aligned}
+```
+
+## Row 80
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(12)\widetilde n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+(1+\omega_2(034))\omega_2(013)\\
+&+(1+s_1(01))\bigl(\omega_2(013)+(1+\omega_2(134))\omega_2(014)\bigr)\end{aligned}
+```
+
+## Row 81
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(23)\widetilde n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(034)\bigl(\omega_2(023)+\omega_2(013)\bigr)+\omega_2(012)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+(1+s_1(01))\omega_2(014)\omega_2(234)\\
+&+(1+s_1(01))\omega_2(123)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+(1+s_1(02))s_1(01)\omega_2(134)\\
+&+(1+s_1(02))\omega_2(234)\bigl(\omega_2(024)+s_1(01)\bigr)\end{aligned}
+```
+
+## Row 82
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(01)\bar n'_1(23)\widetilde n'_1(23)\\
++\bar n_1(01)\bar n_1(23)\bar n'_1(23)\widetilde n'_1(23)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)(1+\omega_2(014))\omega_2(024)\\
+&+s_1(12)(1+\omega_2(013))\omega_2(023)\\
+&+s_1(12)\omega_2(012)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+s_1(12)\omega_2(012)\omega_2(013)\\
+&+s_1(12)s_1(02)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+s_1(12)s_1(02)\omega_2(013)\end{aligned}
+```
+
+## Row 83
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(23)\widetilde n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(034)\bigl(\omega_2(013)+s_1(01)\omega_2(012)\bigr)\\
+&+\omega_2(014)\bigl(\omega_2(034)+(1+\omega_2(013))\bigr)\\
+&+\omega_2(234)s_1(01)\bigl(\omega_2(024)+(1+\omega_2(012))\bigr)\\
+&+s_1(12)s_1(01)\omega_2(034)\bigl(\omega_2(023)+(1+\omega_2(014))\bigr)\\
+&+s_1(12)s_1(01)\omega_2(134)\bigl(\omega_2(023)+(1+\omega_2(012))\bigr)\\
+&+s_1(12)\omega_2(234)(1+s_1(01))\bigl(\omega_2(014)+\omega_2(012)\bigr)\end{aligned}
+```
+
+## Row 84
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n'_1(23)\widetilde n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(024)+\omega_2(023)+s_1(12)\omega_2(014)(1+\omega_2(024))\\
+&+s_1(12)(1+\omega_2(023))\omega_2(013)\\
+&+\check{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+\check{\omega}_2(012)s_1(12)\omega_2(013)\end{aligned}
+```
+
+## Row 85
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\bar n'_1(23)\widetilde n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(01)s_1(02)\bigl(\omega_2(014)+\omega_2(013)\bigr)\end{aligned}
+```
+
+## Row 86
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(23)\bar n'_1(23)\widetilde n'_1(23)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(014)\bigl(\omega_2(024)+s_1(02)\bigr)\\
+&+s_1(01)\omega_2(013)\bigl(\omega_2(023)+s_1(02)\bigr)\\
+&+s_1(01)(1+\omega_2(012))\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+s_1(01)(1+\omega_2(012))\omega_2(013)\end{aligned}
+```
+
+## Row 87
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\bar n_1(34)\bar n'_1(23)\widetilde n'_1(23)\\
++\bar n_1(01)\bar n_1(23)\widetilde n'_1(23)\bar n'_1(34)\\
++\bar n_1(01)\bar n_1(34)\widetilde n'_1(23)\bar n'_1(34)\\
++\widetilde n_1(01)\bar n'_1(23)\widetilde n'_1(34)\\
++\bar n_1(01)\bar n_1(23)\bar n'_1(23)\widetilde n'_1(34)\\
++\bar n_1(01)\bar n_1(34)\bar n'_1(23)\widetilde n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)\omega_2(024)\bigl(\omega_2(012)+(1+s_1(02))\bigr)\\
+&+s_1(12)\omega_2(014)\bigl(\omega_2(024)+\omega_2(012)+s_1(02)\bigr)\end{aligned}
+```
+
+## Row 88
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(12)\bar n_1(34)\bar n'_1(23)\widetilde n'_1(23)\\
++\bar n_1(12)\bar n_1(23)\widetilde n'_1(23)\bar n'_1(34)\\
++\bar n_1(12)\bar n_1(34)\widetilde n'_1(23)\bar n'_1(34)\\
++\bar n_1(12)\bar n_1(23)\bar n'_1(23)\widetilde n'_1(34)\\
++\bar n_1(12)\bar n_1(34)\bar n'_1(23)\widetilde n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+s_1(01)\omega_2(024)\bigl(\omega_2(014)+s_1(02)\bigr)\\
+&+\omega_2(124)s_1(01)\bigl(\omega_2(024)+\omega_2(014)+s_1(02)\bigr)\end{aligned}
+```
+
+## Row 89
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+\omega_2(134))(1+\omega_2(014))\omega_2(034)\\
+&+(1+\omega_2(134))s_1(03)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+(1+\omega_2(234))s_1(03)\omega_2(013)\\
+&+(1+\omega_2(234))(1+\omega_2(034))\omega_2(024)\\
+&+(1+s_1(23))s_1(03)\\
+&+(1+s_1(23))(1+\omega_2(234))\omega_2(023)\\
+&+(1+s_1(23))(1+\omega_2(234))s_1(03)(1+\omega_2(023))\\
+&+s_1(01)\bigl(\omega_2(034)+s_1(02)\omega_2(024)\bigr)\\
+&+s_1(01)(1+s_1(03))\omega_2(014)\bigl(\omega_2(024)+s_1(02)\bigr)\\
+&+s_1(01)(1+s_1(03))\omega_2(134)(1+\omega_2(013))\\
+&+s_1(01)\check{\omega}_2(023)\bigl(\omega_2(013)+s_1(03)(1+\omega_2(013))\bigr)\\
+&+\check{\omega}_2(012)\omega_2(013)\\
+&+\check{\omega}_2(012)(1+\omega_2(024))\bigl(\omega_2(014)+s_1(01)s_1(02)\bigr)\\
+&+\check{\omega}_2(012)(1+s_1(13))(1+\omega_2(024))\\
+&+\check{\omega}_2(012)(1+s_1(13))(1+s_1(01))\omega_2(014)\\
+&+\check{\omega}_2(012)(1+s_1(13))(1+s_1(01))(1+\omega_2(013))\\
+&+\check{\omega}_2(012)\check{\omega}_2(023)\bigl(s_1(03)+(1+\check{\omega}_2(013))\bigr)\end{aligned}
+```
+
+## Row 90
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(124)\omega_2(234)\\
+&+\omega_2(123)\bigl(\omega_2(034)+\omega_2(023)+\omega_2(014)+(1+\omega_2(012))\bigr)\\
+&+s_1(23)s_1(03)\bigl(1+\omega_2(023)\omega_2(034)\bigr)\\
+&+s_1(23)s_1(03)\omega_2(012)\omega_2(014)\\
+&+s_1(23)s_1(03)(1+\omega_2(024))\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+s_1(23)s_1(03)(1+\omega_2(024))\omega_2(014)\\
+&+s_1(23)s_1(03)(1+\omega_2(024))\omega_2(012)\\
+&+s_1(23)\omega_2(123)+s_1(13)s_1(03)\\
+&+s_1(13)s_1(03)(1+\omega_2(014))\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(13)s_1(03)\omega_2(013)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+s_1(13)s_1(03)\omega_2(013)\omega_2(014)\\
+&+s_1(13)s_1(03)\omega_2(012)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(13)s_1(03)\omega_2(012)\omega_2(014)\\
+&+s_1(13)s_1(03)\omega_2(012)\omega_2(013)\\
+&+s_1(13)s_1(02)\bigl(\omega_2(023)+(1+\omega_2(013))\bigr)\\
+&+s_1(13)s_1(02)(1+s_1(03))\omega_2(024)\\
+&+s_1(13)s_1(02)(1+s_1(03))(1+\omega_2(014))\end{aligned}
+```
+
+## Row 91
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\widetilde n_1(01)\bar n'_1(34)\\
++\bar n_1(01)\widetilde n_1(12)\bar n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(23)\bigl(s_1(01)s_1(03)+\omega_2(124)\bigr)\end{aligned}
+```
+
+## Row 92
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+s_1(13))s_1(03)\omega_2(013)\\
+&+(1+s_1(13))s_1(03)\omega_2(012)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+(1+s_1(13))s_1(02)\omega_2(012)\\
+&+(1+s_1(13))s_1(02)\omega_2(013)\omega_2(012)\\
+&+(1+s_1(13))s_1(02)\omega_2(013)s_1(03)\omega_2(024)\\
+&+\omega_2(124)\omega_2(012)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+\omega_2(124)s_1(01)s_1(02)(1+\omega_2(024))\\
+&+\omega_2(124)s_1(23)s_1(01)\omega_2(013)\\
+&+\omega_2(124)s_1(23)s_1(01)(1+s_1(02))\omega_2(012)\\
+&+\omega_2(134)\omega_2(013)(1+\omega_2(014))\\
+&+\omega_2(134)s_1(01)s_1(03)\omega_2(014)\\
+&+\omega_2(134)s_1(12)s_1(01)s_1(03)(1+\omega_2(024))\\
+&+\omega_2(134)\check{\omega}_2(012)\bigl(\omega_2(013)+(1+s_1(01))\bigr)\\
+&+\omega_2(234)\omega_2(013)\bigl(\omega_2(024)+s_1(01)s_1(02)\bigr)\\
+&+\omega_2(234)\omega_2(012)\bigl(\omega_2(034)+s_1(01)\bigr)\\
+&+\omega_2(234)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)+\omega_2(013)\bigr)\\
+&+\omega_2(234)\omega_2(014)\omega_2(012)\\
+&+\omega_2(234)s_1(23)s_1(01)s_1(02)\omega_2(034)\\
+&+\omega_2(234)s_1(23)s_1(01)s_1(02)\omega_2(024)\\
+&+\omega_2(234)s_1(23)\omega_2(013)s_1(12)\\
+&+\omega_2(234)s_1(23)\check{\omega}_2(012)s_1(12)\end{aligned}
+```
+
+## Row 93
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(023)\omega_2(034)+s_1(23)(1+\omega_2(034))\\
+&+s_1(23)s_1(03)\omega_2(013)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+s_1(13)\bigl(s_1(03)\omega_2(023)\omega_2(034)+s_1(23)\bigr)\\
+&+s_1(13)\omega_2(024)s_1(03)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+s_1(13)\omega_2(024)s_1(02)\\
+&+\omega_2(134)s_1(23)s_1(03)\bigl(\omega_2(034)+\omega_2(013)\bigr)\\
+&+\omega_2(134)\check{\omega}_2(023)\\
+&+\omega_2(134)\omega_2(234)\bigl(1+s_1(12)s_1(03)\bigr)\\
+&+\check{\omega}_2(123)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+\check{\omega}_2(123)s_1(13)s_1(03)\bigl(\omega_2(023)+(1+\omega_2(013))\bigr)\\
+&+\check{\omega}_2(123)s_1(12)s_1(03)\bigl(\omega_2(024)+(1+\omega_2(014))\bigr)\end{aligned}
+```
+
+## Row 94
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n_1(12)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)s_1(23)s_1(03)+\omega_2(234)s_1(13)\end{aligned}
+```
+
+## Row 95
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+s_1(03))\omega_2(234)\\
+&+s_1(23)s_1(01)\omega_2(134)\omega_2(234)\\
+&+s_1(23)s_1(01)\omega_2(123)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(23)s_1(01)\omega_2(123)\omega_2(014)\\
+&+s_1(23)s_1(01)\omega_2(123)(1+\omega_2(013))\\
+&+s_1(23)s_1(03)\bigl(\omega_2(013)\omega_2(034)+s_1(01)\bigr)\\
+&+s_1(23)s_1(03)\omega_2(012)\bigl(\omega_2(024)+s_1(01)\bigr)\\
+&+s_1(23)s_1(03)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(23)s_1(03)\omega_2(014)\omega_2(013)\\
+&+s_1(23)s_1(03)\omega_2(014)\omega_2(012)\\
+&+s_1(23)s_1(03)\omega_2(014)s_1(01)\end{aligned}
+```
+
+## Row 96
+
+Integer factor:
+
+```math
+\bar n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)+\omega_2(012)+\omega_2(134)\bigl(\omega_2(013)\omega_2(034)+\omega_2(012)\bigr)\\
+&+s_1(02)\omega_2(013)\bigl(\omega_2(034)+(1+s_1(03))\omega_2(012)\bigr)\\
+&+s_1(02)\omega_2(014)\bigl(\omega_2(034)+\omega_2(013)+s_1(03)\bigr)\\
+&+s_1(01)(1+\omega_2(012))\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(01)(1+\omega_2(012))s_1(02)\omega_2(013)\\
+&+s_1(01)s_1(03)\bigl(\omega_2(013)+\omega_2(012)\bigr)\\
+&+s_1(01)s_1(03)(1+\omega_2(014))\omega_2(034)\\
+&+\check{\omega}_2(023)\bigl(\omega_2(034)\bigl(\omega_2(014)+\omega_2(012)\bigr)+\omega_2(013)\bigr)\\
+&+\check{\omega}_2(023)s_1(01)(1+s_1(02))\omega_2(013)\\
+&+\check{\omega}_2(023)s_1(01)(1+\omega_2(134))\\
+&+\check{\omega}_2(023)s_1(23)\bigl(s_1(01)+(1+\omega_2(013))\omega_2(012)\bigr)\\
+&+\check{\omega}_2(023)s_1(23)s_1(12)\omega_2(013)\\
+&+\check{\omega}_2(023)s_1(23)s_1(12)s_1(01)\omega_2(013)\\
+&+\check{\omega}_2(023)s_1(23)s_1(12)s_1(01)\omega_2(012)\\
+&+\omega_2(124)\omega_2(013)\bigl(\omega_2(014)+s_1(13)s_1(01)\bigr)\\
+&+\omega_2(124)(1+\omega_2(034))\bigl(s_1(01)+(1+\check{\omega}_2(013))\bigr)\\
+&+\omega_2(124)(1+\check{\omega}_2(012))\omega_2(034)\\
+&+\omega_2(124)(1+\check{\omega}_2(012))(1+\omega_2(014))s_1(01)s_1(03)\\
+&+\omega_2(124)(1+\check{\omega}_2(012))s_1(02)\omega_2(014)\\
+&+\omega_2(124)(1+\check{\omega}_2(012))s_1(02)s_1(13)s_1(01)\\
+&+\omega_2(124)(1+\check{\omega}_2(012))(1+\omega_2(013))\\
+&+\omega_2(124)\check{\omega}_2(023)\bigl(\omega_2(014)+\omega_2(013)+s_1(01)\bigr)\end{aligned}
+```
+
+## Row 97
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(034)+s_1(23)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+s_1(23)s_1(03)(1+\omega_2(014))\omega_2(024)\\
+&+s_1(12)\bigl((1+\omega_2(024))+s_1(03)\omega_2(024)\omega_2(034)\bigr)\\
+&+s_1(12)s_1(23)\bigl(\omega_2(024)+s_1(03)\bigr)+\omega_2(134)\omega_2(034)\\
+&+\omega_2(134)s_1(13)s_1(03)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+(1+\omega_2(234))\omega_2(034)\\
+&+(1+\omega_2(234))s_1(13)s_1(03)(1+\omega_2(013))\\
+&+(1+\omega_2(234))s_1(23)s_1(03)\omega_2(034)\\
+&+(1+\omega_2(234))s_1(23)s_1(03)(1+\omega_2(024))\\
+&+\check{\omega}_2(012)s_1(13)s_1(03)\omega_2(023)\\
+&+\check{\omega}_2(012)s_1(12)s_1(03)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\check{\omega}_2(012)s_1(12)(1+s_1(01))\\
+&+\check{\omega}_2(012)(1+\check{\omega}_2(013))\bigl(1+s_1(13)s_1(03)\bigr)\end{aligned}
+```
+
+## Row 98
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)\bigl(\omega_2(034)+\omega_2(023)+(1+s_1(03))\bigr)\end{aligned}
+```
+
+## Row 99
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)\omega_2(023)+s_1(01)\bigl(\omega_2(034)+(1+\omega_2(012))\bigr)\\
+&+(1+\omega_2(024))\bigl(\omega_2(023)+\omega_2(012)\bigr)\\
+&+s_1(02)s_1(01)\omega_2(034)\\
+&+s_1(02)s_1(01)\omega_2(012)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+s_1(02)s_1(01)\omega_2(123)\bigl(\omega_2(013)+\omega_2(012)\bigr)\\
+&+(1+\omega_2(124))\bigl(\omega_2(024)+\omega_2(023)+\omega_2(013)\bigr)\\
+&+(1+\omega_2(124))s_1(01)s_1(02)\omega_2(024)\\
+&+(1+\omega_2(124))s_1(01)s_1(02)(1+\omega_2(012))\\
+&+s_1(23)s_1(01)\omega_2(024)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(23)s_1(01)\omega_2(234)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(23)(1+s_1(12))\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(23)(1+s_1(12))\omega_2(013)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(23)(1+s_1(12))s_1(01)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(23)(1+s_1(12))s_1(01)\omega_2(013)\\
+&+s_1(23)\check{\omega}_2(012)s_1(01)\\
+&+s_1(23)\check{\omega}_2(012)(1+s_1(02))\bigl(\omega_2(024)+\omega_2(014)\bigr)\end{aligned}
+```
+
+## Row 100
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)+s_1(13)\omega_2(024)+\check{\omega}_2(013)\\
+&+s_1(23)\bigl(\omega_2(034)+\omega_2(023)+s_1(13)+\omega_2(124)\bigr)\end{aligned}
+```
+
+## Row 101
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\bar n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+s_1(13))\bigl(\omega_2(014)+s_1(02)s_1(03)\bigr)\\
+&+(1+\omega_2(123))s_1(01)(1+s_1(23))\end{aligned}
+```
+
+## Row 102
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n_1(12)\bar n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+s_1(03))\end{aligned}
+```
+
+## Row 103
+
+Integer factor:
+
+```math
+\widetilde n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)\omega_2(014)+s_1(13)s_1(01)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\omega_2(234)s_1(01)(1+s_1(02))\\
+&+\check{\omega}_2(012)s_1(01)\bigl(\omega_2(013)+(1+\omega_2(024))s_1(02)\bigr)\\
+&+\check{\omega}_2(012)s_1(01)(1+\omega_2(014))\omega_2(024)\\
+&+\check{\omega}_2(012)s_1(23)\\
+&+\check{\omega}_2(012)\check{\omega}_2(023)\bigl((1+\omega_2(013))+s_1(13)s_1(03)\bigr)\end{aligned}
+```
+
+## Row 104
+
+Integer factor:
+
+```math
+\bar n_1(01)\widetilde n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(23)\omega_2(024)+s_1(13)\omega_2(014)\end{aligned}
+```
+
+## Row 105
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(01)\widetilde n_1(23)\bar n'_1(34)\\
++\bar n_1(01)\bar n_1(23)\widetilde n_1(23)\bar n'_1(34)\\
++\widetilde n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(34)\\
++\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(34)\\
++\bar n_1(01)\widetilde n_1(23)\bar n_1(34)\bar n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+s_1(03))s_1(12)\end{aligned}
+```
+
+## Row 106
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)+s_1(02)\omega_2(014)+(1+s_1(23))\check{\omega}_2(012)\end{aligned}
+```
+
+## Row 107
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\widetilde n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&1+s_1(12)(1+s_1(03))\end{aligned}
+```
+
+## Row 108
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(12)\widetilde n_1(23)\bar n'_1(34)\\
++\bar n_1(12)\widetilde n'_1(23)\widetilde n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+s_1(01)s_1(02)\end{aligned}
+```
+
+## Row 109
+
+Integer factor:
+
+```math
+\bar n_1(23)\widetilde n_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(023)+\omega_2(014)\bigr)+s_1(02)\omega_2(014)\\
+&+s_1(02)s_1(01)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+\omega_2(012)\bigl(\omega_2(024)+\omega_2(023)+s_1(01)\bigr)\\
+&+\omega_2(012)\omega_2(014)(1+s_1(01))\omega_2(024)\\
+&+\omega_2(012)s_1(23)s_1(03)\end{aligned}
+```
+
+## Row 110
+
+Integer factor:
+
+```math
+\bar n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(013)\bigl(\omega_2(012)+(1+\omega_2(014))\omega_2(024)\bigr)\\
+&+s_1(01)\omega_2(014)\omega_2(024)\\
+&+s_1(01)\omega_2(014)s_1(03)\omega_2(012)(1+\omega_2(024))\\
+&+s_1(01)\omega_2(013)\bigl(\omega_2(014)+(1+s_1(03))\bigr)\\
+&+(1+\omega_2(023))\omega_2(013)\bigl(\omega_2(024)+\omega_2(014)+s_1(01)\bigr)\\
+&+(1+\omega_2(023))\omega_2(012)\\
+&+(1+\omega_2(023))s_1(03)\omega_2(024)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+(1+\omega_2(023))s_1(03)s_1(01)\omega_2(012)\omega_2(013)\\
+&+s_1(23)\bigl(\omega_2(014)+\omega_2(013)\bigl(\omega_2(024)+\omega_2(012)\bigr)\bigr)\\
+&+s_1(23)s_1(01)\bigl(\omega_2(013)+(1+\omega_2(014))\omega_2(024)\bigr)\\
+&+s_1(23)\omega_2(123)\bigl(\omega_2(013)+\omega_2(012)\bigr)\\
+&+s_1(23)\omega_2(123)s_1(01)(1+\omega_2(012))\\
+&+s_1(23)s_1(03)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+s_1(23)s_1(03)\omega_2(023)\omega_2(024)\omega_2(014)\\
+&+s_1(23)s_1(03)\omega_2(023)\omega_2(024)\omega_2(013)\\
+&+s_1(23)s_1(03)(1+\omega_2(012))\omega_2(014)\\
+&+s_1(23)s_1(03)(1+s_1(01))\omega_2(013)\omega_2(023)\\
+&+s_1(23)s_1(03)(1+s_1(01))\omega_2(124)\omega_2(024)\\
+&+(1+\omega_2(134))\omega_2(014)\bigl(\omega_2(012)+s_1(12)\bigr)\\
+&+(1+\omega_2(134))\omega_2(123)\omega_2(013)\\
+&+(1+\omega_2(134))s_1(03)\omega_2(014)s_1(02)\omega_2(023)\\
+&+(1+\omega_2(134))s_1(03)\omega_2(014)s_1(01)\omega_2(013)\\
+&+(1+\omega_2(134))s_1(03)\check{\omega}_2(012)\\
+&+(1+\omega_2(134))s_1(03)\check{\omega}_2(012)s_1(02)\omega_2(023)\\
+&+(1+\omega_2(134))\omega_2(124)\omega_2(014)\\
+&+(1+\omega_2(134))\omega_2(124)(1+\check{\omega}_2(023))\\
+&+(1+\omega_2(134))\omega_2(124)(1+\check{\omega}_2(023))s_1(02)s_1(03)\\
+&+(1+\omega_2(134))\omega_2(124)(1+\check{\omega}_2(123))(1+s_1(01))\\
+&+(1+\omega_2(134))\omega_2(124)(1+\check{\omega}_2(123))s_1(12)s_1(03)\end{aligned}
+```
+
+## Row 111
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(13)s_1(03)\omega_2(023)\omega_2(034)\\
+&+s_1(13)s_1(03)\omega_2(123)\omega_2(134)+s_1(13)\omega_2(234)\\
+&+s_1(13)\omega_2(234)s_1(03)\bigl(\omega_2(014)+(1+\omega_2(012))\bigr)\\
+&+s_1(23)s_1(03)\omega_2(034)\\
+&+s_1(23)s_1(03)\omega_2(024)\bigl(\omega_2(034)+s_1(01)\bigr)\\
+&+s_1(23)s_1(03)(1+\omega_2(014))\bigl(\omega_2(024)+s_1(01)\bigr)\\
+&+s_1(23)\omega_2(234)\\
+&+s_1(23)\omega_2(234)s_1(03)\bigl(\omega_2(034)+(1+\omega_2(024))\bigr)\\
+&+s_1(23)\omega_2(124)s_1(03)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+s_1(23)\omega_2(124)(1+s_1(01))\end{aligned}
+```
+
+## Row 112
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)s_1(02)\omega_2(134)\omega_2(234)\\
+&+s_1(01)s_1(02)\omega_2(123)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(01)s_1(02)\omega_2(123)\omega_2(014)\\
+&+s_1(01)s_1(02)\omega_2(123)(1+\omega_2(013))\\
+&+s_1(03)s_1(01)\omega_2(024)(1+\omega_2(034))\\
+&+s_1(03)s_1(01)\omega_2(023)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(03)s_1(01)\omega_2(123)\\
+&+s_1(03)(1+s_1(02))\omega_2(013)\omega_2(034)\\
+&+s_1(03)(1+s_1(02))\omega_2(012)\omega_2(024)\\
+&+s_1(03)(1+s_1(02))s_1(01)\bigl(\omega_2(023)+\omega_2(013)\bigr)\\
+&+s_1(03)(1+s_1(02))\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(03)(1+s_1(02))\omega_2(014)\omega_2(013)\\
+&+s_1(03)(1+s_1(02))\omega_2(014)\omega_2(012)\\
+&+s_1(03)(1+s_1(02))\omega_2(014)s_1(01)\end{aligned}
+```
+
+## Row 113
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(13)\omega_2(234)+\omega_2(124)s_1(23)\end{aligned}
+```
+
+## Row 114
+
+Integer factor:
+
+```math
+\bar n_1(23)\bar n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)s_1(03)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+\omega_2(012)s_1(01)(1+s_1(03))\omega_2(024)\\
+&+\omega_2(123)\omega_2(012)\bigl(1+(1+s_1(01))\omega_2(023)\bigr)\\
+&+\omega_2(123)(1+\omega_2(234))s_1(01)s_1(03)\\
+&+\omega_2(124)s_1(01)\\
+&+\omega_2(124)s_1(01)s_1(03)\bigl(\omega_2(034)+\omega_2(013)\bigr)\\
+&+\omega_2(124)\omega_2(012)s_1(13)s_1(03)\omega_2(024)\\
+&+s_1(12)\omega_2(012)(1+\omega_2(014))\omega_2(024)\\
+&+s_1(12)\omega_2(012)(1+\omega_2(013))\\
+&+s_1(12)s_1(01)(1+\omega_2(014))\\
+&+s_1(12)s_1(01)\omega_2(024)\omega_2(034)\\
+&+s_1(12)s_1(01)\omega_2(024)\omega_2(012)\omega_2(014)\\
+&+s_1(12)(1+\omega_2(023))s_1(01)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(12)(1+\omega_2(023))s_1(01)(1+\omega_2(013))\\
+&+s_1(12)s_1(13)\omega_2(013)\bigl(\omega_2(034)+\omega_2(012)\bigr)\\
+&+s_1(12)s_1(13)\omega_2(013)s_1(01)(1+\omega_2(012))\\
+&+s_1(12)s_1(13)\omega_2(014)\bigl(\omega_2(034)+\omega_2(013)\bigr)\\
+&+s_1(12)s_1(13)\omega_2(014)(1+\omega_2(012))\\
+&+s_1(12)s_1(13)\omega_2(124)\bigl(\omega_2(014)+\omega_2(012)\bigr)\\
+&+s_1(12)s_1(13)\omega_2(124)s_1(01)\end{aligned}
+```
+
+## Row 115
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(13)\bigl(\omega_2(024)+\omega_2(014)\bigr)+s_1(12)s_1(03)\\
+&+(1+\omega_2(234))s_1(12)\end{aligned}
+```
+
+## Row 116
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(014)+(1+\omega_2(012))\bigr)\\
+&+s_1(23)\bigl(\omega_2(012)+(1+\omega_2(123))s_1(01)\bigr)\end{aligned}
+```
+
+## Row 117
+
+Integer factor:
+
+```math
+\widetilde n_1(23)\bar n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+s_1(02))\bigl(\omega_2(014)+s_1(03)\bigr)\\
+&+\check{\omega}_2(012)\omega_2(024)\bigl(1+(1+s_1(01))\omega_2(014)\bigr)\end{aligned}
+```
+
+## Row 118
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n_1(23)\bar n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)s_1(23)\end{aligned}
+```
+
+## Row 119
+
+Integer factor:
+
+```math
+\widetilde n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+\omega_2(024))\omega_2(014)\\
+&+(1+\omega_2(024))\omega_2(012)\bigl(\omega_2(014)+\omega_2(013)+s_1(03)\bigr)\\
+&+(1+s_1(01))\omega_2(013)\bigl(\omega_2(014)+\omega_2(012)\bigr)\\
+&+(1+s_1(01))s_1(03)\omega_2(024)\omega_2(013)\\
+&+(1+s_1(01))s_1(03)\omega_2(024)\omega_2(012)\omega_2(014)\\
+&+(1+\omega_2(034))(1+s_1(03))\omega_2(012)\\
+&+(1+\omega_2(034))s_1(13)s_1(03)(1+\omega_2(013))\omega_2(014)\\
+&+(1+\omega_2(034))\omega_2(124)\bigl(\omega_2(013)+s_1(01)s_1(03)\bigr)\\
+&+\omega_2(123)\omega_2(014)\omega_2(024)\\
+&+\omega_2(123)\omega_2(013)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+\omega_2(123)\omega_2(012)\bigl(\omega_2(024)+(1+\omega_2(014))\bigr)\\
+&+\omega_2(123)s_1(01)\bigl(\omega_2(024)+\omega_2(013)\omega_2(014)\bigr)\\
+&+\omega_2(123)s_1(01)\omega_2(012)\\
+&+\omega_2(123)s_1(01)\omega_2(034)\bigl(\omega_2(014)+(1+\omega_2(013))\bigr)\\
+&+\omega_2(123)s_1(13)\bigl(\omega_2(014)+\omega_2(012)\omega_2(013)\bigr)\\
+&+\omega_2(123)s_1(13)s_1(01)\omega_2(013)\\
+&+\omega_2(123)s_1(13)s_1(01)\omega_2(012)(1+\omega_2(013))\\
+&+\omega_2(123)s_1(13)\omega_2(124)s_1(01)\omega_2(134)\\
+&+(1+s_1(02))s_1(01)\omega_2(023)\\
+&+(1+s_1(02))s_1(01)\omega_2(014)\bigl(\omega_2(013)+\omega_2(012)\bigr)\\
+&+(1+s_1(02))s_1(01)\omega_2(134)\bigl(\omega_2(023)+\omega_2(014)\bigr)\\
+&+(1+s_1(02))s_1(01)\omega_2(134)\omega_2(012)\\
+&+(1+s_1(02))(1+s_1(13))\\
+&+(1+s_1(02))(1+s_1(13))(1+\omega_2(123))\omega_2(012)\\
+&+(1+s_1(02))(1+s_1(13))(1+s_1(01))\\
+&+(1+s_1(02))(1+s_1(13))(1+s_1(01))\omega_2(013)\omega_2(014)\\
+&+(1+s_1(02))(1+s_1(13))(1+s_1(01))\omega_2(134)\omega_2(014)\\
+&+(1+s_1(02))(1+s_1(13))(1+s_1(01))\omega_2(134)\omega_2(013)\\
+&+(1+s_1(02))\omega_2(234)\\
+&+(1+s_1(02))\omega_2(234)\omega_2(023)\bigl(\omega_2(012)+s_1(03)\bigr)\\
+&+(1+s_1(02))\omega_2(234)\omega_2(034)s_1(01)\\
+&+(1+s_1(02))\omega_2(234)\omega_2(034)(1+s_1(13))\omega_2(023)\\
+&+(1+s_1(02))\omega_2(234)(1+\check{\omega}_2(013))\omega_2(034)\\
+&+(1+s_1(02))\omega_2(234)(1+\check{\omega}_2(013))\omega_2(023)\\
+&+(1+s_1(02))\omega_2(234)(1+\check{\omega}_2(013))\omega_2(012)\\
+&+(1+s_1(02))\omega_2(234)(1+\check{\omega}_2(013))s_1(01)\\
+&+(1+s_1(02))\omega_2(234)(1+\omega_2(134))\omega_2(013)\\
+&+(1+s_1(02))\omega_2(234)(1+\omega_2(134))s_1(01)\\
+&+(1+s_1(02))\omega_2(234)(1+\omega_2(134))(1+\omega_2(034))\\
+&+(1+s_1(02))\omega_2(234)(1+\omega_2(134))(1+\omega_2(034))s_1(13)s_1(01)(1+\omega_2(023))\\
+&+(1+s_1(02))\omega_2(234)(1+\omega_2(134))\omega_2(123)s_1(01)\omega_2(034)\\
+&+(1+s_1(02))\omega_2(234)(1+\omega_2(134))\omega_2(123)s_1(01)\omega_2(023)(1+\omega_2(034))\\
+&+(1+s_1(02))\omega_2(234)(1+\omega_2(134))\omega_2(123)(1+s_1(03))\end{aligned}
+```
+
+## Row 120
+
+Integer factor:
+
+```math
+\bar n_1(23)\widetilde n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+s_1(02))\bigl(\omega_2(014)+(1+s_1(03))\bigr)\\
+&+\check{\omega}_2(012)\omega_2(024)\bigl(1+(1+s_1(01))\omega_2(014)\bigr)\\
+&+\check{\omega}_2(012)\check{\omega}_2(023)\end{aligned}
+```
+
+## Row 121
+
+Integer factor:
+
+```math
+\bar n_1(34)\widetilde n_1(34)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(034)\omega_2(123)\\
+&+\omega_2(234)\bigl((1+s_1(02))\omega_2(012)+s_1(12)\omega_2(014)\bigr)\\
+&+s_1(23)s_1(01)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+s_1(23)s_1(02)\omega_2(014)\\
+&+s_1(23)s_1(02)s_1(01)\bigl(\omega_2(023)+\omega_2(012)\bigr)\end{aligned}
+```
+
+## Row 122
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(23)\omega_2(012)\omega_2(024)\\
+&+s_1(23)s_1(01)s_1(03)(1+\omega_2(012))\\
+&+\omega_2(124)s_1(02)\\
+&+\omega_2(124)s_1(23)(1+s_1(01))\bigl(\omega_2(024)+\omega_2(012)\bigr)\\
+&+\omega_2(124)s_1(23)(1+s_1(01))s_1(02)\end{aligned}
+```
+
+## Row 123
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(02)\omega_2(124)+s_1(12)(1+s_1(02))\\
+&+s_1(12)s_1(23)\omega_2(024)\bigl(\omega_2(012)+(1+s_1(02))\bigr)\\
+&+s_1(12)s_1(23)\omega_2(014)\bigl(\omega_2(024)+\omega_2(012)\bigr)\\
+&+s_1(12)s_1(23)\omega_2(014)s_1(02)\end{aligned}
+```
+
+## Row 124
+
+Integer factor:
+
+```math
+\bar n_1(01)\widetilde n_1(01)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\check{\omega}_2(012)s_1(12)\end{aligned}
+```
+
+## Row 125
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(02)\bigl(\omega_2(014)+(1+\omega_2(024))s_1(01)\bigr)\\
+&+\omega_2(012)s_1(01)(1+s_1(02))\\
+&+s_1(23)(1+\omega_2(124))\omega_2(014)\\
+&+s_1(23)(1+s_1(01))\omega_2(012)\omega_2(024)\\
+&+s_1(23)s_1(12)\omega_2(014)\\
+&+s_1(23)s_1(12)\omega_2(014)s_1(01)\omega_2(012)\\
+&+s_1(23)s_1(12)\omega_2(124)s_1(01)\omega_2(014)\\
+&+s_1(23)s_1(12)\omega_2(124)s_1(01)\omega_2(012)\end{aligned}
+```
+
+## Row 126
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(03)\omega_2(024)+s_1(23)+s_1(12)\\
+&+s_1(12)s_1(23)\omega_2(012)\\
+&+s_1(12)s_1(23)\omega_2(014)\bigl(\omega_2(012)+s_1(03)\bigr)\\
+&+s_1(12)s_1(23)(1+\omega_2(024))\bigl(\omega_2(014)+\omega_2(012)\bigr)\\
+&+s_1(12)s_1(23)(1+\omega_2(024))s_1(03)\end{aligned}
+```
+
+## Row 127
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n_1(12)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(13)+s_1(12)\omega_2(012)\end{aligned}
+```
+
+## Row 128
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)\bigl((1+s_1(03))+s_1(12)s_1(01)s_1(03)\bigr)\\
+&+(1+\omega_2(124))s_1(01)(1+s_1(23))\end{aligned}
+```
+
+## Row 129
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(01)\widetilde n_1(12)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(01)\bar n_1(12)\widetilde n_1(12)\bar n'_1(23)\bar n'_1(34)\\
++\widetilde n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(01)\widetilde n_1(12)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(02)\end{aligned}
+```
+
+## Row 130
+
+Integer factor:
+
+```math
+\bar n_1(23)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)s_1(23)\bigl(s_1(03)+\omega_2(124)\bigr)\end{aligned}
+```
+
+## Row 131
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)\omega_2(012)\\
+&+s_1(12)s_1(23)\omega_2(014)\bigl(\omega_2(012)+(1+s_1(03))\bigr)\\
+&+s_1(12)s_1(23)\omega_2(024)\bigl(\omega_2(014)+\omega_2(012)\bigr)\\
+&+s_1(12)s_1(23)\omega_2(024)s_1(03)\end{aligned}
+```
+
+## Row 132
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+s_1(03)\bigl(\omega_2(014)+s_1(01)\bigr)+s_1(23)s_1(01)\\
+&+s_1(23)s_1(01)\omega_2(024)\bigl(\omega_2(012)+s_1(03)\bigr)\\
+&+s_1(23)s_1(01)\omega_2(124)\bigl(\omega_2(024)+\omega_2(012)\bigr)\\
+&+s_1(23)s_1(01)\omega_2(124)s_1(03)\end{aligned}
+```
+
+## Row 133
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)+s_1(12)\omega_2(012)\end{aligned}
+```
+
+## Row 134
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(23)\bar n'_1(23)\bar n'_1(34)\\
++\widetilde n_1(34)\bar n'_1(23)\bar n'_1(34)\\
++\bar n_1(34)\widetilde n'_1(23)\bar n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(124)\end{aligned}
+```
+
+## Row 135
+
+Integer factor:
+
+```math
+\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)\omega_2(024)+s_1(12)s_1(01)(1+\omega_2(012))\\
+&+\omega_2(124)\bigl((1+\omega_2(024))+s_1(13)s_1(01)\bigr)\\
+&+\omega_2(124)\check{\omega}_2(012)\bigl(1+s_1(01)\omega_2(024)\bigr)\end{aligned}
+```
+
+## Row 136
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(02)\omega_2(124)+s_1(12)\bigl(\omega_2(014)+\omega_2(012)\bigr)\\
+&+s_1(12)s_1(23)\omega_2(014)\bigl(\omega_2(012)+(1+s_1(03))\bigr)\\
+&+s_1(12)s_1(23)\omega_2(024)\bigl(\omega_2(014)+\omega_2(012)\bigr)\\
+&+s_1(12)s_1(23)\omega_2(024)s_1(03)\end{aligned}
+```
+
+## Row 137
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+\omega_2(124))\\
+&+s_1(01)s_1(23)\omega_2(024)\bigl(\omega_2(012)+s_1(03)\bigr)\\
+&+s_1(01)s_1(23)\omega_2(124)\bigl(\omega_2(024)+\omega_2(012)\bigr)\\
+&+s_1(01)s_1(23)\omega_2(124)s_1(03)\end{aligned}
+```
+
+## Row 138
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(014)+s_1(02)\bigr)+(1+\omega_2(012))s_1(02)\end{aligned}
+```
+
+## Row 139
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(02)+s_1(01)(1+s_1(02))\end{aligned}
+```
+
+## Row 140
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+s_1(02)\bigl(\omega_2(014)+s_1(01)\bigr)+\omega_2(124)s_1(01)\end{aligned}
+```
+
+## Row 141
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(03)\end{aligned}
+```
+
+## Row 142
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+s_1(03)\end{aligned}
+```
+
+## Row 143
+
+Integer factor:
+
+```math
+\bar n_1(01)\widetilde n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)(1+\omega_2(014))\\
+&+s_1(12)s_1(01)\bigl(\omega_2(012)+s_1(03)\bigr)\\
+&+\omega_2(124)\bigl(s_1(03)+(1+s_1(01))\omega_2(014)+\check{\omega}_2(012)\bigr)\end{aligned}
+```
+
+## Row 144
+
+Integer factor:
+
+```math
+\widetilde n_1(01)\widetilde n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(124)+s_1(12)\bigl(\omega_2(012)+\omega_2(014)\bigl(\omega_2(012)+s_1(01)\bigr)\bigr)\\
+&+s_1(12)(1+\omega_2(024))\bigl(\omega_2(014)+\omega_2(012)+s_1(01)\bigr)\end{aligned}
+```
+
+## Row 145
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)+\omega_2(014)\bigl(\omega_2(012)+s_1(03)\bigr)\\
+&+s_1(01)\omega_2(012)\bigl(1+s_1(02)\omega_2(014)\bigr)\\
+&+s_1(01)s_1(23)s_1(02)+\omega_2(124)\bigl(\omega_2(014)+\omega_2(012)\bigr)\\
+&+\omega_2(124)s_1(01)(1+\omega_2(014))\\
+&+\omega_2(124)s_1(01)s_1(02)\bigl(\omega_2(014)+\omega_2(012)\bigr)\end{aligned}
+```
+
+## Row 146
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\widetilde n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)\bigl((1+\omega_2(012))+\omega_2(024)\bigl(\omega_2(012)+s_1(02)\bigr)\bigr)\\
+&+s_1(12)(1+\omega_2(014))\bigl(\omega_2(024)+\omega_2(012)+s_1(02)\bigr)\end{aligned}
+```
+
+## Row 147
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\widetilde n'_1(23)\bar n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(\omega_2(024)+(1+\omega_2(014))s_1(02)\bigr)\\
+&+s_1(01)(1+\omega_2(012))\end{aligned}
+```
+
+## Row 148
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\bar n'_1(23)\widetilde n'_1(23)\bar n'_1(34)\\
++\bar n_1(01)\widetilde n'_1(23)\widetilde n'_1(34)\\
++\bar n_1(01)\bar n'_1(23)\bar n'_1(34)\widetilde n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+s_1(02))+\omega_2(124)\end{aligned}
+```
+
+## Row 149
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(12)\bar n'_1(23)\widetilde n'_1(23)\bar n'_1(34)\\
++\bar n_1(12)\bar n'_1(23)\bar n'_1(34)\widetilde n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+s_1(12)s_1(01)\end{aligned}
+```
+
+## Row 150
+
+Integer factor:
+
+```math
+\bar n_1(12)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(s_1(23)s_1(03)+\omega_2(234)\bigr)\end{aligned}
+```
+
+## Row 151
+
+Integer factor:
+
+```math
+\bar n_1(23)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)\omega_2(024)+s_1(12)s_1(01)s_1(03)\\
+&+\check{\omega}_2(023)s_1(02)\omega_2(012)\\
+&+\omega_2(124)\bigl(s_1(01)s_1(02)+(1+\omega_2(024))\bigr)\\
+&+\omega_2(124)\check{\omega}_2(012)\bigl(1+s_1(01)\omega_2(024)\bigr)\end{aligned}
+```
+
+## Row 152
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(23)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)+s_1(01)\bigl(\omega_2(014)+s_1(03)\bigr)\end{aligned}
+```
+
+## Row 153
+
+Integer factor:
+
+```math
+\begin{gathered}\bar n_1(01)\bar n_1(12)\bar n_1(23)\widetilde n'_1(34)\\
++\widetilde n_1(01)\bar n_1(12)\bar n'_1(23)\widetilde n'_1(34)\\
++\bar n_1(01)\bar n'_1(12)\bar n'_1(23)\widetilde n'_1(34)\\
++\widetilde n_1(01)\bar n'_1(12)\bar n'_1(23)\widetilde n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&1\end{aligned}
+```
+
+## Row 154
+
+Integer factor:
+
+```math
+\widetilde n_1(23)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\check{\omega}_2(012)\check{\omega}_2(023)\end{aligned}
+```
+
+## Row 155
+
+Integer factor:
+
+```math
+\bar n_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+s_1(02))\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+\check{\omega}_2(012)\omega_2(023)\omega_2(034)+\omega_2(123)\omega_2(034)\\
+&+\omega_2(123)(1+s_1(01))\omega_2(034)\bigl(\omega_2(023)+\omega_2(012)\bigr)\\
+&+\omega_2(123)(1+s_1(01))\omega_2(014)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+\omega_2(123)(1+s_1(01))\omega_2(014)\omega_2(012)\\
+&+(1+s_1(03))\bigl(\omega_2(013)+s_1(02)\bigr)\\
+&+(1+s_1(03))(1+\omega_2(012))s_1(02)(1+\omega_2(023))\\
+&+(1+s_1(03))\omega_2(134)(1+\omega_2(123))\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(013)\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(013)s_1(02)\omega_2(014)\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(013)s_1(02)(1+\omega_2(012))\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(134)\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(134)\omega_2(014)\omega_2(013)\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(134)\omega_2(014)\omega_2(012)\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(134)s_1(02)\omega_2(014)\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(134)s_1(02)\omega_2(013)\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(123)\omega_2(034)\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(123)s_1(02)\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(123)\omega_2(012)\omega_2(014)\\
+&+(1+s_1(03))(1+s_1(01))\omega_2(123)\omega_2(012)\omega_2(013)\\
+&+\omega_2(234)\bigl(\omega_2(014)+\omega_2(012)\bigl(\omega_2(034)+\omega_2(023)\bigr)\bigr)\\
+&+\omega_2(234)s_1(01)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+\omega_2(234)(1+s_1(13))(1+\omega_2(012))\\
+&+\omega_2(234)(1+s_1(13))(1+s_1(01))\\
+&+\omega_2(234)(1+s_1(13))(1+s_1(01))(1+\omega_2(012))\omega_2(014)\\
+&+\omega_2(234)(1+s_1(13))\omega_2(123)s_1(01)\omega_2(134)\\
+&+\omega_2(234)(1+s_1(02))\omega_2(012)\omega_2(023)\\
+&+\omega_2(234)(1+s_1(02))s_1(01)\bigl(\omega_2(023)+\omega_2(012)\bigr)\\
+&+\omega_2(234)(1+s_1(02))(1+\omega_2(034))s_1(03)\\
+&+\omega_2(234)(1+s_1(02))(1+\omega_2(034))s_1(13)\omega_2(023)\\
+&+\omega_2(234)(1+s_1(02))\check{\omega}_2(013)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+\omega_2(234)(1+s_1(02))\check{\omega}_2(013)(1+\omega_2(012))\\
+&+\omega_2(234)(1+s_1(02))(1+\omega_2(134))\omega_2(034)\\
+&+\omega_2(234)(1+s_1(02))(1+\omega_2(134))\omega_2(013)\\
+&+\omega_2(234)(1+s_1(02))(1+\omega_2(134))(1+\omega_2(023))s_1(01)s_1(03)(1+\omega_2(034))\\
+&+\omega_2(234)(1+s_1(02))(1+\omega_2(134))(1+\omega_2(123))s_1(13)\\
+&+\omega_2(234)(1+s_1(02))(1+\omega_2(134))(1+\omega_2(123))(1+\omega_2(023))s_1(01)(1+\omega_2(034))\end{aligned}
+```
+
+## Row 156
+
+Integer factor:
+
+```math
+\bar n_1(23)\bar n_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+s_1(02))(1+s_1(03))\end{aligned}
+```
+
+## Row 157
+
+Integer factor:
+
+```math
+\widetilde n_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+s_1(01))\omega_2(134)\omega_2(014)\bigl(\omega_2(034)+\omega_2(012)\bigr)\\
+&+\omega_2(123)\omega_2(134)+\omega_2(123)(1+s_1(01))\omega_2(034)\\
+&+\omega_2(123)(1+s_1(01))\omega_2(012)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+s_1(23)s_1(12)\omega_2(014)\\
+&+s_1(23)s_1(12)(1+\omega_2(012))s_1(02)\omega_2(013)\\
+&+s_1(23)s_1(12)(1+\omega_2(123))(1+s_1(02))\\
+&+\omega_2(234)\bigl(s_1(02)+\omega_2(023)(1+s_1(02))\omega_2(034)\bigr)\\
+&+\omega_2(234)(1+\omega_2(014))\bigl(1+s_1(02)\omega_2(012)\bigr)\\
+&+\omega_2(234)(1+s_1(12))(1+\omega_2(012))\omega_2(014)\\
+&+\omega_2(234)(1+s_1(12))(1+s_1(02))\\
+&+\omega_2(234)(1+s_1(12))\omega_2(123)\omega_2(134)\end{aligned}
+```
+
+## Row 158
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(23)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(012)\bigl((1+\omega_2(014))+s_1(12)s_1(01)\bigr)\\
+&+\omega_2(124)\bigl(s_1(02)+(1+s_1(01))\omega_2(014)+\check{\omega}_2(012)\bigr)\end{aligned}
+```
+
+## Row 159
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(23)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(124)\omega_2(014)+(1+s_1(01))\omega_2(012)\omega_2(024)\\
+&+s_1(12)\omega_2(014)\\
+&+s_1(12)s_1(01)\bigl(1+\omega_2(012)\omega_2(014)\bigr)\\
+&+s_1(12)\omega_2(124)s_1(01)\bigl(\omega_2(014)+\omega_2(012)\bigr)\end{aligned}
+```
+
+## Row 160
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n'_1(23)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+\omega_2(024))+s_1(12)\bigl(s_1(01)+(1+\omega_2(024))\omega_2(014)\bigr)\\
+&+\check{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+\omega_2(014)\bigr)\end{aligned}
+```
+
+## Row 161
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\bar n'_1(23)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(014)\bigl(1+s_1(12)s_1(01)\bigr)\\
+&+(1+\omega_2(124))s_1(01)\end{aligned}
+```
+
+## Row 162
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(024)(1+s_1(03))\\
+&+\omega_2(024)(1+s_1(02))\bigl(\omega_2(034)+s_1(13)\bigr)\\
+&+\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+\omega_2(014)s_1(01)\bigl(\omega_2(034)+s_1(23)\bigr)\\
+&+\check{\omega}_2(013)\bigl(\omega_2(034)+(1+s_1(01))\omega_2(024)\bigr)\\
+&+(1+\omega_2(124))\omega_2(024)\\
+&+(1+\omega_2(124))(1+s_1(01))\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+\check{\omega}_2(023)\bigl(\omega_2(034)+(1+s_1(02))\omega_2(024)\bigr)\\
+&+\check{\omega}_2(023)(1+s_1(01))\omega_2(013)+\check{\omega}_2(023)\check{\omega}_2(012)\end{aligned}
+```
+
+## Row 163
+
+Integer factor:
+
+```math
+\begin{gathered}\widetilde n_1(01)\bar n'_1(34)\widetilde n'_1(34)\\
++\bar n_1(01)\bar n_1(34)\bar n'_1(34)\widetilde n'_1(34)\end{gathered}
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(23)(1+\omega_2(034))\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\omega_2(134)s_1(13)\bigl(\omega_2(034)+\omega_2(014)+s_1(03)\bigr)\\
+&+\check{\omega}_2(023)s_1(13)\omega_2(013)\\
+&+\check{\omega}_2(023)s_1(23)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+\check{\omega}_2(012)s_1(13)\omega_2(013)\\
+&+\check{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\check{\omega}_2(012)\check{\omega}_2(023)s_1(13)\end{aligned}
+```
+
+## Row 164
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)s_1(03)(1+\omega_2(024))\bigl(\omega_2(013)+\omega_2(012)\bigr)\\
+&+s_1(01)s_1(23)\bigl(\omega_2(013)\omega_2(024)+s_1(03)\bigr)\\
+&+s_1(01)s_1(23)\omega_2(124)\omega_2(014)\\
+&+s_1(01)\omega_2(123)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+s_1(01)\omega_2(123)s_1(02)\omega_2(024)\\
+&+s_1(01)\omega_2(123)\omega_2(124)s_1(03)\\
+&+\omega_2(234)s_1(02)\omega_2(024)\\
+&+\omega_2(234)s_1(02)s_1(01)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+\omega_2(234)(1+\omega_2(014))s_1(01)\\
+&+\omega_2(234)\omega_2(124)\bigl(s_1(01)s_1(03)+s_1(12)\bigr)\\
+&+\omega_2(234)\check{\omega}_2(123)s_1(01)s_1(03)\end{aligned}
+```
+
+## Row 165
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(12)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&\omega_2(234)+s_1(12)\bigl(1+\omega_2(034)\bigl(\omega_2(023)+s_1(02)\bigr)\bigr)\\
+&+s_1(12)\omega_2(014)\bigl(\omega_2(012)+s_1(02)\bigr)\\
+&+s_1(12)\omega_2(024)\bigl(\omega_2(034)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+s_1(12)\omega_2(024)\omega_2(012)\\
+&+s_1(13)\bigl(\omega_2(012)\omega_2(024)+(1+\omega_2(234))\omega_2(123)\bigr)\\
+&+s_1(13)\omega_2(124)\bigl(\omega_2(034)+\omega_2(013)+(1+s_1(01))\bigr)\\
+&+s_1(13)s_1(12)\omega_2(034)\\
+&+s_1(13)s_1(12)s_1(01)\bigl(\omega_2(023)+\omega_2(012)\bigr)\\
+&+s_1(13)s_1(12)(1+\omega_2(024))\end{aligned}
+```
+
+## Row 166
+
+Integer factor:
+
+```math
+\widetilde n_1(12)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(234)+s_1(23)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(23)\omega_2(013)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(23)\omega_2(012)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+s_1(23)s_1(01)\omega_2(034)\\
+&+s_1(23)s_1(01)s_1(03)\bigl(\omega_2(013)+\omega_2(012)\bigr)\\
+&+s_1(23)s_1(01)\omega_2(124)\end{aligned}
+```
+
+## Row 167
+
+Integer factor:
+
+```math
+\bar n_1(23)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\omega_2(034)\bigl(\omega_2(023)+\omega_2(013)\bigr)\\
+&+(1+\omega_2(024))\omega_2(014)+\omega_2(012)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\omega_2(012)(1+\omega_2(013))\bigl(\omega_2(023)+s_1(01)\bigr)\\
+&+s_1(12)s_1(01)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(12)s_1(01)\omega_2(023)\bigl(\omega_2(034)+\omega_2(012)\bigr)\\
+&+s_1(12)(1+\omega_2(013))\omega_2(012)\\
+&+s_1(12)\omega_2(234)\bigl(\omega_2(014)+\omega_2(012)\bigr)\\
+&+s_1(12)\omega_2(234)s_1(01)\bigl(\omega_2(034)+(1+\omega_2(023))\bigr)\\
+&+s_1(13)s_1(02)\omega_2(034)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+s_1(13)s_1(02)\omega_2(134)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(13)s_1(12)(1+\omega_2(024))\omega_2(034)\\
+&+s_1(13)s_1(12)\omega_2(014)\bigl(\omega_2(024)+s_1(02)\bigr)\\
+&+s_1(13)s_1(12)\omega_2(012)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+s_1(13)s_1(12)\omega_2(012)\omega_2(013)\\
+&+s_1(13)s_1(12)\omega_2(012)s_1(02)\\
+&+s_1(13)(1+\omega_2(023))s_1(01)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+s_1(13)(1+\omega_2(023))s_1(01)\omega_2(013)\end{aligned}
+```
+
+## Row 168
+
+Integer factor:
+
+```math
+\bar n_1(01)\bar n_1(23)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(12)\bigl(s_1(02)+\omega_2(034)\bigl(\omega_2(023)+s_1(02)\bigr)\bigr)\\
+&+s_1(12)\omega_2(014)\bigl(\omega_2(012)+s_1(02)\bigr)\\
+&+s_1(12)\omega_2(024)\bigl(\omega_2(034)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+s_1(12)\omega_2(024)\omega_2(012)\\
+&+s_1(13)\bigl(\omega_2(012)\omega_2(024)+(1+\omega_2(234))\omega_2(123)\bigr)\\
+&+s_1(13)\omega_2(124)\bigl(\omega_2(034)+\omega_2(013)+(1+s_1(01))\bigr)\\
+&+s_1(13)s_1(12)\omega_2(034)\\
+&+s_1(13)s_1(12)s_1(01)\bigl(\omega_2(023)+\omega_2(012)\bigr)\\
+&+s_1(13)s_1(12)(1+\omega_2(024))\end{aligned}
+```
+
+## Row 169
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(23)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)\bigl(s_1(03)+\omega_2(013)\bigl(\omega_2(023)+s_1(03)\bigr)\bigr)\\
+&+s_1(01)\omega_2(012)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(013)\bigr)\\
+&+\omega_2(014)\bigl(1+s_1(01)\bigl(\omega_2(024)+(1+\omega_2(012))\bigr)\bigr)\\
+&+(1+\omega_2(234))s_1(01)\\
+&+s_1(23)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)+s_1(01)\bigr)\\
+&+s_1(23)\omega_2(013)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(23)\omega_2(012)\bigl(\omega_2(024)+\omega_2(014)+s_1(01)\bigr)\\
+&+s_1(23)\omega_2(234)s_1(01)\end{aligned}
+```
+
+## Row 170
+
+Integer factor:
+
+```math
+\widetilde n_1(23)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)s_1(02)\omega_2(124)\\
+&+(1+s_1(03))\bigl(s_1(02)\omega_2(014)+s_1(01)\omega_2(024)\bigr)\\
+&+(1+s_1(03))\check{\omega}_2(012)s_1(12)\end{aligned}
+```
+
+## Row 171
+
+Integer factor:
+
+```math
+\bar n_1(34)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&(1+s_1(01))\omega_2(134)\omega_2(014)\bigl(\omega_2(034)+\omega_2(012)\bigr)\\
+&+\omega_2(123)\omega_2(134)+\omega_2(123)(1+s_1(01))\omega_2(034)\\
+&+\omega_2(123)(1+s_1(01))\omega_2(012)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+s_1(23)s_1(12)\omega_2(014)\\
+&+s_1(23)s_1(12)(1+\omega_2(012))s_1(02)\omega_2(013)\\
+&+s_1(23)s_1(12)\omega_2(123)(1+s_1(02))\\
+&+\omega_2(234)\bigl(s_1(02)+\omega_2(023)(1+s_1(02))\omega_2(034)\bigr)\\
+&+\omega_2(234)(1+\omega_2(014))\bigl(1+s_1(02)\omega_2(012)\bigr)\\
+&+\omega_2(234)(1+s_1(12))(1+\omega_2(012))\omega_2(014)\\
+&+\omega_2(234)(1+s_1(12))(1+s_1(02))\\
+&+\omega_2(234)(1+s_1(12))\omega_2(123)\omega_2(134)\end{aligned}
+```
+
+## Row 172
+
+Integer factor:
+
+```math
+\bar n_1(12)\bar n_1(34)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(01)(1+\omega_2(024))\omega_2(034)\\
+&+s_1(01)(1+\omega_2(124))\omega_2(134)\\
+&+s_1(01)\omega_2(234)\bigl(\omega_2(013)+(1+\omega_2(012))\bigr)\\
+&+s_1(23)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)+s_1(01)\bigr)\\
+&+s_1(23)\omega_2(013)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(23)\omega_2(012)\bigl(\omega_2(024)+\omega_2(014)+s_1(01)\bigr)\\
+&+s_1(23)\omega_2(234)s_1(01)\end{aligned}
+```
+
+## Row 173
+
+Integer factor:
+
+```math
+\bar n_1(23)\bar n_1(34)\bar n'_1(34)\widetilde n'_1(34)
+```
+
+Background factor:
+
+```math
+\begin{aligned}&s_1(02)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)+(1+s_1(03))\bigr)\\
+&+s_1(02)\omega_2(013)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
+&+s_1(01)\omega_2(024)\bigl(\omega_2(014)+s_1(03)\bigr)\\
+&+s_1(01)\omega_2(034)(1+\omega_2(024))\\
+&+s_1(01)(1+\omega_2(023))\bigl(\omega_2(034)+\omega_2(024)+\omega_2(013)\bigr)\\
+&+s_1(01)(1+s_1(02))s_1(03)\omega_2(023)\\
+&+s_1(01)(1+s_1(02))(1+\omega_2(013))\\
+&+\check{\omega}_2(012)s_1(01)\bigl(\omega_2(023)+(1+\omega_2(013))\bigr)\\
+&+\check{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+(1+\omega_2(014))\bigr)\\
+&+\check{\omega}_2(012)s_1(12)s_1(13)s_1(03)\end{aligned}
+```

@@ -1,12 +1,9 @@
 # Finite binary transfer in the 4+1D product
 
-This appendix defines the binary five-cochain $`Z_5`$ in (T4d) of the
-[formula guide](../FORMULA_GUIDE.md#four-dimensional-pair). The inputs are
+This appendix retains the construction of the binary five-cochain $`Z_5`$ in the supplied 4+1D product. Its complete physical-face expansion and three physical parts are now given in the [coefficient appendix](FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md). The [current full stacking formula](../FORMULA_GUIDE.md#eq-t4c) also applies the paired complex-fermion phase map stated in [Representatives](REPRESENTATIVES.md#operator-phase-4d). The inputs are
 $`(n_2,\check n_3)`$ and $`(n'_2,\check n'_3)`$, with common backgrounds
 $`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,\check
-N_3`$ are the output. These are the physical 4+1D fields; this appendix
-does not assign these degrees to the physical fields in 3+1D. Bars, tildes,
-and checks have the same meanings as in the guide. In integer
+N_3`$ are the output. Bars, tildes, and checks have the same meanings as in the guide. In integer
 arithmetic each binary field supplies its canonical value $`0,1`$; a whole
 composite binary expression is reduced first whenever a bar surrounds it.
 

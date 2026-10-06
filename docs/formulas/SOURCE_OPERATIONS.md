@@ -1,12 +1,6 @@
 # Finite cochain formulas for the bosonic obstruction
 
-The terminal formulas use the finite operations $`T_6`$ and $`y_6`$ defined
-here. Their degree-two integer argument is a physical field in
-[4+1D](../FORMULA_GUIDE.md#four-dimensional-pair). In
-[3+1D](THREE_DIMENSIONAL_TERMINAL.md), it is instead the
-explicitly constructed interval or triangle field; it is not a physical
-3+1D degree-two integer decoration. The degrees of all arguments in this
-appendix are fixed, independently of those two uses.
+The two degree-six cochains used in the 4+1D source are defined here. The ordinary Majorana word coefficients are also printed in the [physical coefficient table](FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md), with their pure and mixed source parts separated. This file retains the construction and the complete pure p+ip coefficient rule.
 
 The backgrounds are $`\omega_2,s_1`$. A bar takes parity and a tilde takes
 the second binary digit, as in [Operations](OPERATIONS.md). In integer

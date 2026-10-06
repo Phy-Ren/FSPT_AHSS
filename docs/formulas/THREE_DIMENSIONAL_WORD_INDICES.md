@@ -1,0 +1,345 @@
+# Coefficient indices for the 3+1D obstructions
+
+The half-source polynomial used to define the final indices below is
+
+```math
+\sum_{(v;i_1,\ldots,i_k)\in\mathcal I_5}
+ \mathop{\mathrm{MS}}\nolimits_v(x_{i_1},\ldots,x_{i_k}),
+\qquad
+(x_1,x_2,x_3,x_4,x_5,x_6)
+=(\check n_2,\bar n_1,\widetilde n_1,
+  \check\omega_2,\omega_2,s_1).
+```
+
+The following finite rules specify every index. The final physical
+coefficient sets are defined at the end. No parameter cochain or unspecified
+evaluation is an input to these sums.
+
+## Word arithmetic
+
+A formal entry is an ordinary surjection word together with its ordered
+input labels. Repeated entries cancel modulo two. Adjacent repetitions in
+a word give zero, as does an input appearing more often than one plus its
+degree. Relabel the word by order of first appearance. These rules concern
+integer indices only; at the end the entries are evaluated by ordinary MS.
+Discard an entry also when its standard normalized interval-cut table is
+empty for the stated input degrees.
+
+The following completely specifies the composition used in the seed
+expressions. Suppose slot j occurs r times in an outer word and an inner
+word has L letters. Choose
+
+```math
+0\le t_1\le\cdots\le t_{r-1}\le L-1.
+```
+
+Replace the successive occurrences of j by the overlapping substrings
+with inclusive endpoints
+
+```math
+[0,t_1],\ [t_1,t_2],\ldots,[t_{r-1},L-1].
+```
+
+Sum over all choices, offset the inserted input numbers, and apply the
+normalization rules above. Substituting a sum is distributive. Thus every
+seed below is a finite definition of an index set. In the seed algebra,
+cup-i means the alternating word 1212… with i+2 letters. A differential
+deletes each occurrence of a word label, provided the label still occurs,
+and also differentiates each input. A cochain square uses the standard
+cochain Steenrod-square formula.
+
+Two additional rules are needed only to specify the indices; neither is
+an operation on physical cochains.
+
+1. **Marker deletion.** Add a formal label of degree one, written $`\bullet`$.
+   Its only role is to select word positions; no cochain is assigned to it.
+   In an expanded word, scan the input slots labelled $`\bullet`$ until each has
+   been encountered once. If one repeats before that point, discard the
+   word. Delete all marker letters before that last first occurrence.
+   Each marker must now occur exactly once; otherwise discard the word.
+   Erase these remaining markers and normalize. Denote this finite rule
+   by L in the seed definitions below.
+2. **Prefix and tail rearrangement.** Color marker slots zero and all
+   physical slots one. For each occurrence of a color-one label j in a
+   word, retain the prefix through that occurrence; append the color-zero
+   letters of the remaining tail, then j again, then the color-one tail.
+   Sum the normalized words. Denote this finite rule by C below.
+
+The symbols L and C in this technical definition are index transformations,
+not renamed interval integrals or homotopies. Their complete action on
+each integer word has just been stated. The final physical sum contains
+neither symbol and contains no marker.
+
+## Compact seed expressions
+
+In the seed algebra each physical symbol denotes its input label. Capital
+letters in the seed formulas name finite index sets, not additional
+physical cochains. Products mean the word composition defined above.
+The derivatives of the physical input labels are
+
+```math
+d\check n_2 =\check\omega_2 \bar n_1 ,\qquad d\widetilde n_1 =\bar n_1 ^2+s_1 \bar n_1 ,
+\qquad d\bar n_1 =d\check\omega_2 =d\omega_2 =ds_1 =d\bullet =0.
+```
+
+The first seed index sets are
+
+```math
+\begin{aligned}
+X&=\bullet \bar n_1 ,& H&=\bullet \widetilde n_1 +(s_1 \cup_1\bullet )\bar n_1 ,\\
+U&=\bullet \check n_2 +\mathop{\mathrm{MS}}\nolimits_{1213}(\check\omega_2 ,\bullet ,\bar n_1 ),
+& A&=\check\omega_2 X,\\
+D&=\check\omega_2 \widetilde n_1 +\check n_2 \cup_2(\check\omega_2 \bar n_1 )+(s_1 \cup_1\omega_2 )\bar n_1 ,\\
+K&=HX+XH+(s_1 \cup_1X)X+\check\omega_2 H+(s_1 \cup_1\check\omega_2 )X
+       +X^2\cup_4(\check\omega_2 X).
+\end{aligned}
+```
+
+Define the finite binary obstruction seed
+
+```math
+\begin{aligned}
+\Xi={}&\mathop{\mathrm{MS}}\nolimits_{1231343}(\check\omega_2 ,\check\omega_2 ,X,X)
+ +(\check\omega_2 \cup_1\check\omega_2 +s_1 \check\omega_2 )H
+ +[(\check\omega_2 \cup_1\check\omega_2 )\cup_1s_1 +s_1 (s_1 \cup_1\check\omega_2 )]X\\
+&+\mathop{\mathrm{MS}}\nolimits_{1231343}(X,X,X,X)
+ +X^2\cup_3(\check\omega_2 X)+H[(X\cup_1X)+s_1 X]+(X\cup_1X)\cup_1(s_1 X)\\
+&+s_1 [X^2\cup_4(\check\omega_2 X)+(X\cup_1s_1 )X+X\cup_1(X\cup_1X)+X^2],\\
+J={}&U\cup_1U+U\cup_2A+\omega_2 U+s_1 (U\cup_2U+U\cup_3A)+\Xi,\\
+F={}&\check n_2 ^2+\check n_2 \cup_1(\check\omega_2 \bar n_1 )+s_1 [\check n_2 \cup_1\check n_2 +\check n_2 \cup_2(\check\omega_2 \bar n_1 )]+\omega_2 \check n_2 \\
+&+\mathop{\mathrm{MS}}\nolimits_{123134}(\check\omega_2 ,\check\omega_2 ,\bar n_1 ,\bar n_1 )
+ +(\check\omega_2 \cup_1\check\omega_2 +s_1 \check\omega_2 )\widetilde n_1 +[(\check\omega_2 \cup_1\check\omega_2 )\cup_1s_1 +s_1 (s_1 \cup_1\check\omega_2 )]\bar n_1 ,\\
+G={}&C(J)+\bullet D,\qquad dG=J+\bullet F.
+\end{aligned}
+```
+
+The first and third seed sums are now only one line each:
+
+```math
+\begin{aligned}
+\mathcal I_{\mathrm{CF}}
+ &=L[G\cup_2G+G\cup_3dG+\omega_2 G+dG\cup_4(\bullet F)],\\
+\mathcal I_{\mathrm{other}}
+ &=L[(J+\Xi)\cup_4\Xi
+   +(U\cup_2U+U\cup_3A)\cup_2K\\
+ &\hspace{25mm}+s_1 ((U\cup_2U+U\cup_3A)\cup_3K)
+   +U(\mathrm{Sq}^1\omega_2 +s_1 \omega_2 )].
+\end{aligned}
+```
+
+They generate respectively 1,513 and 175 ordinary physical MS indices.
+The final physical indices combine these coefficients with the chosen
+Majorana representative.
+
+### The Majorana seed indices
+
+The degree-six universal binary T polynomial has a short independent
+index definition. Start with formal letters $`y,A,t,r,\omega_2,s_1,v`$ of degrees
+3,4,5,5,2,1,3, with $`dy=A`$ and all the other relevant derivatives zero.
+Form
+
+```math
+\begin{aligned}
+P&=\mathrm{Sq}^2y+s_1 \mathrm{Sq}^1y+\omega_2 y,
+ &V&=\mathrm{Sq}^1y,\qquad q=A\cup_2A,\\
+R&=\mathrm{Sq}^2P+\omega_2 P+\mathrm{Sq}^3V+s_1 \mathrm{Sq}^2V
+       +(v+s_1 \omega_2 )V,\\
+J_T&=\mathop{\mathrm{MS}}\nolimits_{123134343}(\omega_2 ,\omega_2 ,A,A)
+       +\sum_{v\in\mathcal W_4}
+           \mathop{\mathrm{MS}}\nolimits_v(A,A,A,A)\\
+&\quad+q\cup_5(\omega_2 A)+q\cup_5(s_1 t)+(\omega_2 A)\cup_5(s_1 t)
+       +\mathop{\mathrm{MS}}\nolimits_{123143434}(s_1 ,s_1 ,t,t)\\
+&\quad+(\omega_2 \cup_1s_1 )t+s_1 q+s_1 ^2r.
+\end{aligned}
+```
+
+Here $`\mathcal W_4`$ is the complete, [453-word Adem
+coefficient table](COEFFICIENTS.md#adem-words); no additional coefficient list is implicit. The two
+explicit words above are the standard zeta words for inputs of degrees
+(2,4) and (1,5).
+
+Expand $`R+J_T`$. Mark the input slots $`y,A,t,r`$. Scan each expanded word
+from left to right through first occurrences of marked slots, stopping
+before the first marked repeat. At each such occurrence, delete all
+earlier marked letters; retain the term only when all original input
+slots still occur. In that term replace every marked input encountered
+so far according to
+
+```math
+y\longmapsto0,\qquad A\longmapsto y,
+\qquad t\longmapsto b,\qquad r\longmapsto r_-.
+```
+
+The last two replacements have degree four. Terms containing the zero
+input vanish. Normalize and sum. This finite prefix rule generates the
+1,027 universal T indices. Discard its unique $`r_-`$ carry term, which
+has already been separated with the quarter-valued terms of the main formula.
+In the other terms substitute
+
+```math
+y\mapsto U,\quad A\mapsto \check\omega_2 X,\quad
+b\mapsto U\cup_2U+U\cup_3(\check\omega_2 X),\quad
+t\mapsto(\check\omega_2 X)\cup_3(\check\omega_2 X),\quad v\mapsto\mathrm{Sq}^1\omega_2 .
+```
+
+Apply marker deletion L. The result, $`\mathcal I_T`$, has 874 physical
+MS indices. Every rule is an operation on finite index tuples; the
+physical formula still contains only the six inputs printed at the top.
+
+### The quarter-polarization half indices
+
+The two binary input polynomials in the quarter-polarization indices are
+
+```math
+\overline{\beta^\circ\check n_2+B_3^\psi}=\check n_2 \cup_1\check n_2 +\check n_2 \cup_2(\check\omega_2 \bar n_1 )+\check\omega_2 \widetilde n_1 +(s_1 \cup_1\check\omega_2 )\bar n_1 +\check\omega_2 \bar n_1 ,
+\qquad \overline{\beta_{s_1}\check\omega_2}=\check\omega_2 \cup_1\check\omega_2 +s_1 \check\omega_2 .
+```
+
+Use these same binary input polynomials in
+
+```math
+\begin{aligned}
+Q&=(\check\omega_2 \cup_1\bullet )\widetilde n_1 +[(s_1 \cup_1\check\omega_2 )\cup_1\bullet ]\bar n_1 ,\\
+R_q&=(\bullet \check n_2 )\cup_3[(\check\omega_2 \cup_1\bullet )\bar n_1 ]+Q,\\
+C_q&=\bullet \overline{\beta^\circ\check n_2+B_3^\psi},\qquad Z=(\overline{\beta_{s_1}\check\omega_2}\cup_1\bullet )\bar n_1 ,
+\qquad \eta=dR_q+Z.
+\end{aligned}
+```
+
+Differentiate by the previously stated word boundary and input rules,
+including $`d\overline{\beta^\circ\check n_2+B_3^\psi}=\overline{\beta_{s_1}\check\omega_2}\bar n_1`$. Then
+
+```math
+\begin{aligned}
+\mathcal I_q=L[&C_q\cup_2\eta+dC_q\cup_3\eta
+ +R_q\cup_1dR_q+R_q^2+(\mathrm{Sq}^1\omega_2 )R_q
+ +Z\cup_2dR_q+dZ\cup_3dR_q]\\
+ +s_1 L[&C_q\cup_3\eta+dC_q\cup_4\eta
+ +R_q\cup_1R_q+R_q\cup_2dR_q+\omega_2 R_q
+ +Z\cup_3dR_q+dZ\cup_4dR_q].
+\end{aligned}
+```
+
+This expression has 27 indices before substituting the two displayed
+binary input polynomials. All arithmetic in this index definition is binary.
+
+### Total indices and exact count
+
+Expand the two displayed binary input polynomials and form
+
+```math
+\mathcal I_5=
+ \mathcal I_{\mathrm{CF}}+\mathcal I_T+\mathcal I_{\mathrm{other}}+\mathcal I_q
+ +s_1 ^2\left[
+   \mathop{\mathrm{MS}}\nolimits_{1423141234}(\check n_2 ,\check n_2 ,\check n_2 ,\check\omega_2 \bar n_1 )
+  +\mathop{\mathrm{MS}}\nolimits_{1321312}(\check n_2 ,\check n_2 ,\check\omega_2 \bar n_1 )\right].
+```
+
+All additions mean symmetric difference of index sets. There are 2,650
+entries after cancellation. The final physical index sets are defined below.
+
+
+## Complex-fermion indices
+
+For each row below include one ordinary MS term for every listed word,
+with exactly the displayed ordered inputs. Their union is
+$`\mathcal I_5^{c\psi}`$. This set has 25 entries.
+
+| Ordered inputs | MS words |
+|---|---|
+| $`(n_3,\omega_2,d\check n_2)`$ | $`121231,\ 121313`$ |
+| $`(\omega_2,n_3,d\check n_2)`$ | $`121323`$ |
+| $`(d\check n_2,n_3,s_1,\check n_2)`$ | $`12312124,\ 12312142,\ 12312412,\ 12312421,\ 12321242,\ 12321412,\ 12321421`$ |
+| $`(d\check n_2,s_1,n_3,\check n_2)`$ | $`12131413,\ 12134131,\ 12313413,\ 12314131`$ |
+| $`(n_3,s_1,d\check n_2,\check n_2)`$ | $`12131413,\ 12134131,\ 12134143,\ 12341431`$ |
+| $`(n_3,s_1,\check n_2,d\check n_2)`$ | $`12131413,\ 12134131,\ 12134143,\ 12341431`$ |
+| $`(s_1,d\check n_2,n_3,\check n_2)`$ | $`12324342,\ 12343423`$ |
+| $`(s_1,n_3,\check n_2,d\check n_2)`$ | $`12342432`$ |
+
+The following 19 indices form $`\mathcal J_5`$. The derivative $`dn_3`$
+is the already specified $`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})+\mathcal{𝒪}_4^\psi`$;
+it introduces no additional free input.
+
+| Ordered inputs | MS words |
+|---|---|
+| $`(dn_3,\omega_2,\check n_2)`$ | $`121231,\ 121313`$ |
+| $`(\omega_2,dn_3,\check n_2)`$ | $`121323`$ |
+| $`(dn_3,s_1,\check n_2,\check n_2)`$ | $`12131341,\ 12131413,\ 12134131,\ 12134143,\ 12313414,\ 12321341,\ 12321413,\ 12321431,\ 12341431`$ |
+| $`(dn_3,\check n_2,s_1,\check n_2)`$ | $`12312141,\ 12312412,\ 12312421`$ |
+| $`(s_1,dn_3,\check n_2,\check n_2)`$ | $`12324234,\ 12342423`$ |
+| $`(s_1,\check n_2,dn_3,\check n_2)`$ | $`12324324,\ 12343423`$ |
+
+## Final physical index sets
+
+For an explicitly printed binary cochain polynomial $`F`$, write
+$`[F]_{\rm MS}`$ for its indices expanded by the word-composition and
+boundary rules above. This notation is used only to specify coefficient
+sets; each final summand remains a standard ordinary MS operation.
+The notation $`\mathcal I_5|_{\check n_2\notin\mathbf x}`$ selects
+entries whose input list does not contain $`\check n_2`$. It is an
+algebraic selection of formal indices, not an evaluation of a physical
+solution at an inconsistent lower coordinate.
+
+The integer-only coefficient set is
+
+```math
+\begin{aligned}
+\mathcal I_5^\psi
+={}&\mathcal I_5|_{\check n_2\notin\mathbf x}\\
+&+\Big[s_1\mathcal{𝒪}_4^\psi
+ +(d\check n_2)\cup_1\mathrm{Sq}^1\omega_2
+ +\mathop{\mathrm{MS}}\nolimits_{1321}(d\check n_2,\omega_2,s_1)
+ +\mathcal{𝒪}_4^\psi\cup_3\mathcal{𝒪}_4^\psi\Big]_{\rm MS}.
+\end{aligned}
+```
+
+Use $`d\check n_2=\check\omega_2\bar n_1`$ in this expression.
+The mixed coefficient set is
+
+```math
+\begin{aligned}
+\mathcal I_5^{\gamma\psi}
+={}&\mathcal I_5+\mathcal I_5|_{\check n_2\notin\mathbf x}+\mathcal J_5\\
+&+\Bigg[
+ s_1(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})
+ +d\Big\{
+ \check n_2\cup_1\mathrm{Sq}^1\omega_2
+ +\mathop{\mathrm{MS}}\nolimits_{1321}(\check n_2,\omega_2,s_1)
+ +\mathop{\mathrm{MS}}\nolimits_{12131}(\check n_2,\check n_2,\check n_2)\\
+&\qquad+\mathop{\mathrm{MS}}\nolimits_{132123}
+    (\check n_2,\check n_2,\mathrm{Sq}^1\check n_2)
+ +\mathop{\mathrm{MS}}\nolimits_{2321232}
+    (\check n_2,\mathrm{Sq}^1\check n_2,\mathrm{Sq}^1\check n_2)\\
+&\qquad+(\mathop{\mathrm{MS}}\nolimits_{34123121}
+         +\mathop{\mathrm{MS}}\nolimits_{34123212})
+       (\check n_2,\mathrm{Sq}^1\check n_2,\omega_2,s_1)
+ +\mathop{\mathrm{MS}}\nolimits_{41231231}
+       (\check n_2,\check n_2,\mathrm{Sq}^1\check n_2,s_1)\\
+&\qquad+\mathop{\mathrm{MS}}\nolimits_{12131243}
+       (\check n_2,\check n_2,\check n_2,\check n_2)\Big\}\\
+&\quad+\omega_2\mathrm{Sq}^1\check n_2
+       +(\mathrm{Sq}^1\check n_2)\check n_2
+       +\check n_2\mathrm{Sq}^1\check n_2\\
+&\quad+\zeta_{2,2}(\omega_2,\check n_2)+(\mathop{\mathrm{MS}}\nolimits_{1213243}+\mathop{\mathrm{MS}}\nolimits_{1213431}+\mathop{\mathrm{MS}}\nolimits_{1232141}+\mathop{\mathrm{MS}}\nolimits_{1234321})(\check n_2,\check n_2,\check n_2,\check n_2)
+       +(\check n_2^2)\cup_3(\omega_2\check n_2)\\
+&\quad+(\check n_2^2)\cup_3(s_1\mathrm{Sq}^1\check n_2)
+       +(\omega_2\check n_2)\cup_3(s_1\mathrm{Sq}^1\check n_2)
+       +\zeta_{1,3}(s_1,\mathrm{Sq}^1\check n_2)\\
+&\quad+(\omega_2\cup_1s_1)\mathrm{Sq}^1\check n_2
+       +(d\check n_2)\cup_1\mathrm{Sq}^1\omega_2
+       +\mathop{\mathrm{MS}}\nolimits_{1321}(d\check n_2,\omega_2,s_1)\\
+&\quad+(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})\cup_3(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})
+       +(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})\cup_3\mathcal{𝒪}_4^\psi
+       +\mathcal{𝒪}_4^\psi\cup_3(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})
+ \Bigg]_{\rm MS}.
+\end{aligned}
+```
+
+All other definitions in this equation are printed in the physical
+obstruction section. The standard identity $`\overline{\beta^\circ x}=\mathrm{Sq}^1x`$ is used
+only in binary expressions. It does not split any integer lift.
+
+These formulas specify the complete index sets, including the continued
+Majorana phase convention. On the closed-Majorana tower the mixed sum
+vanishes as an ordinary cochain. On a general tower its value is retained;
+no quotient by an unprinted exact term is taken.
