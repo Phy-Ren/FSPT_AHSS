@@ -26,18 +26,36 @@ For an $`r`$-cochain $`x`$ of coefficient type $`\mathbb Z_{e s_1}`$, $`e\in\{0,
 
 For additive phases use the same rule modulo one. For binary cochains the
 signs disappear. With the usual local trivialization,
-$`d_{s_1}=d-2\widetilde{s_1}\cup`$ on integer or phase cochains. A product of coefficient types
+$`d_{s_1}=d-2s_1\cup`$ on integer or phase cochains. A product of coefficient types
 $`e,f`$ has type $`e+f`$ modulo two. The coefficient line is trivialized at the
 first vertex of the entire evaluated simplex.
 
-## Lifts and carries
+## Arithmetic and carries
 
-$`\bar x`$ is reduction modulo two and $`\widetilde x`$ is the canonical lift of a
-binary cochain $`x`$ to values $`0,1`$. These operations are pointwise.
+$`\bar x`$ is pointwise reduction modulo two. A named binary cochain is
+represented by its values $`0,1`$ whenever it occurs in integer arithmetic;
+no extra symbol is needed for this canonical representative. Operations
+are then performed in the indicated coefficient ring, with the signed
+differential and cups in integer expressions.
+
+In particular, an integer sum $`x+y`$ of binary inputs can have value two,
+whereas $`\overline{x+y}`$ has values zero or one. The latter means reduce
+the **entire sum** first, then use its canonical representative. The same
+distinction applies to a differential or a higher cup: $`dx`$ and
+$`x\cup_i y`$ in integer arithmetic are not automatically reduced modulo
+two; $`\overline{dx}`$ and $`\overline{x\cup_i y}`$ are. A binary cochain
+defined by an earlier equation is evaluated in its own binary arithmetic
+before its named value is used in an integer expression.
+
+The half-valued binary brackets in the phase formulas are reduced modulo
+two before division by two. Quarter- and eighth-valued expressions instead
+use integer arithmetic and the explicit bars shown in them. This retains
+the distinction between an integer product of binary representatives and
+the binary value of an entire product.
+
 For integer $`x`$, its binary digits are
 $`\bar x^{[k]}=\overline{\lfloor x/2^k\rfloor}`$, with $`\bar x^{[0]}=\bar x`$.
-Floor is used also for negative integers. In particular,
-$`\widetilde{x+y}`$ is not $`\widetilde x+\widetilde y`$ for binary $`x,y`$.
+Floor is used also for negative integers.
 The Bockstein and second carry of a **closed** binary cochain are
 
 <a id="eq-o2"></a>
@@ -45,8 +63,8 @@ The Bockstein and second carry of a **closed** binary cochain are
 **(O2)**
 
 ```math
-\beta x=\frac{d\widetilde x}{2},\qquad
-\beta^+x=\frac{\beta x+\widetilde{\overline{\beta x}}}2.
+\beta x=\frac{dx}{2},\qquad
+\beta^+x=\frac{\beta x+\overline{\beta x}}2.
 ```
 
 Both are integer cochains; the differential in (O2) is ordinary, not twisted.
@@ -57,11 +75,13 @@ For an open binary cochain use the separately named integer carry
 **(O3)**
 
 ```math
-\beta^\circ x=\frac{d\widetilde x-\widetilde{dx}}2.
+\beta^\circ x=\frac{dx-\overline{dx}}2.
 ```
 
 The twisted lift carry is
-$`\beta_{s_1}\check\omega_2=d_{s_1}\widetilde{\check\omega_2}/2`$.
+$`\beta_{s_1}\check\omega_2=d_{s_1}\check\omega_2/2`$; this integer
+background carry has coefficient type $`\mathbb Z_{s_1}`$. Ordinary
+Majorana Bocksteins above have untwisted integer coefficients.
 Whenever a formula divides by $`2`$ or $`8`$, first form its **entire integer
 numerator**, then perform the exact division, then reduce modulo two if
 indicated. Generalized binomials use

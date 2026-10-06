@@ -1,236 +1,417 @@
 # Closed Majorana laws and lower-dimensional endpoints
 
-This appendix gives the closed-Majorana obstruction and stacking laws in
-$`2+1`$, $`3+1`$ and $`4+1`$ dimensions, followed by the $`1+1`$D fMPS endpoint.
-It uses the [common notation](../FORMULA_GUIDE.md#conventions-and-coordinates)
-and [cochain operations](OPERATIONS.md) throughout. In particular,
-$`\overline{x}`$ means reduction modulo two, a tilde means the canonical
-integer lift of the entire indicated binary expression, and a hat means
-the additive phase of a multiplicative $`U(1)`$ quantity. Primed fields belong
-to the second input; $`N_j`$ is the stacked binary field.
+The formulas are separated by physical dimension:
+[3+1D](#majorana-3d), [4+1D](#majorana-4d), and the
+[2+1D](#majorana-2d) and [1+1D](#fmps-1d) endpoints.
+Each section gives its own fields, source, and product. There is no integer
+decoration in this appendix. All sections use the
+[common notation](../FORMULA_GUIDE.md#conventions-and-coordinates).
 
-## Fields and operations
+## Arithmetic and operations
 
-Let $`q=1,2,3`$, with spatial dimension $`d=q+1`$. The fields are a **closed
-Majorana** cochain $`n_q`$, a complex-fermion cochain $`n_{q+1}`$, and a phase
-$`\nu_{q+2}=\exp(2\pi i\widehat\nu_{q+2})`$. There is no integer decoration
-layer in this appendix. The Majorana closure equation is $`dn_q=0`$.
+Lower-layer equations and half-valued brackets are binary. In integer
+expressions, each named binary cochain means its canonical zero-or-one
+representative; all sums, differentials, and cups are then integral.
+An outer bar on a composite expression means first reduce that entire
+expression modulo two. Thus $`x\cup_i y`$ in a quarter-valued term is a
+signed integer cup, while $`\overline{x\cup_i y}`$ is its binary value.
+[Operations](OPERATIONS.md#arithmetic-and-carries) gives the complete rule.
 
-The ordinary Bockstein $`\beta n_q`$ and second (plus) carry
-$`\beta^+n_q`$ are defined in [Operations](OPERATIONS.md). Their integer
-lifts and signed cup products have **untwisted integer** coefficients here.
-The phase instead takes values in $`(\mathbb R/\mathbb Z)_{s_1}`$, with
-differential $`d_{s_1}`$. These two coefficient conventions must stay distinct.
+The Bockstein $`\beta`$, its second carry $`\beta^+`$, and their signed
+products have **untwisted integer** coefficients here. The additive phase
+has coefficients $`(\mathbb R/\mathbb Z)_{s_1}`$ and differential $`d_{s_1}`$.
+These coefficient lines remain distinct even though binary values do not
+carry a sign. A hat denotes an additive phase; a prime always labels the
+second input, and $`N_j`$ is its stacked binary output.
 
-Only the following composite operations need names beyond the common notation.
-They denote full polynomials, not alternative names for the fields.
+The named expressions below are full operations, not aliases for fields.
 
-| Operation | Role | Definition |
-|---|---|---|
-| $`\widehat{\mathcal O}^\gamma_{q+3}`$, $`\widehat{\mathcal E}^\gamma_{q+2}`$ | Pure Majorana parts of the phase obstruction and stacking correction | [M3](#eq-m3), [M4](#eq-m4), [M6](#eq-m6), [M7](#eq-m7), [M11](#eq-m11) |
-| $`\zeta_{i,j}`$ | Binary word operation used in the source | [M4](#eq-m4) and its word table |
-| $`\mathcal X_{q+3}`$ | Intrinsic Majorana source polynomial, indexed by output degree | [M5](#eq-m5) |
-| $`z_{q+2}`$, $`z^0_{q+2}`$ | Binary completion of the product, and its symmetry-independent part | [M8](#eq-m8), [M9](#eq-m9) |
-| $`\mathcal L_3`$ | Antiunitary correction at the $`q=1`$ endpoint | [M10](#eq-m10) |
+| Expression | Meaning |
+|---|---|
+| $`\widehat{\mathcal O}^\gamma_j,\widehat{\mathcal E}^\gamma_j`$ | Pure Majorana contribution to a source or phase correction; $`\gamma`$ retains the paper's role label |
+| $`\mathcal X_5,\mathcal X_6`$ | Intrinsic binary source polynomials of the indicated output degree |
+| $`z_4,z_5`$ | Binary completion of the Majorana phase product |
+| $`z^0_4,z^0_5`$ | Their intrinsic word-polynomial parts, [defined once](#intrinsic-word-products) on mathematical input cochains |
+| $`\mathcal L_3`$ | Binary antiunitary correction at the 2+1D endpoint |
 
-The superscript $`\gamma`$ retains the paper's label for the pure Majorana
-contribution; it is not another cochain. The lower
-correction $`\mathcal E_{q+1}`$ follows the same degree-based naming as the
-main guide. The phase formulas below fix one representative; their paired
-transport to the operator representative is given in [M12](#eq-m12).
-Neither is implicitly identified with
-the nonzero-integer-layer coordinate of the main guide.
+These formulas fix a phase representative in each dimension. Its explicit
+change to the operator representative is given in the same section, with
+source and product transported together. Neither is implicitly identified
+with a nonzero-integer-layer representative in the main guide.
 
-## Lower layers and complete phase law
+<a id="majorana-3d"></a>
+## 3+1D closed Majorana formulas
 
-For two inputs, the Majorana sum and lower stacking correction are
+The fields in 3+1D are the closed Majorana cochain $`n_2`$,
+the complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
+Both lower fields are binary, and $`dn_2=0`$.
+
+### Lower layers and full phase law
+
+The lower product and source are
 
 <a id="eq-m1"></a>
 
-**(M1)**
+**(M1, 3+1D)**
 
 ```math
 \begin{aligned}
-N_q&=n_q+n'_q,\\
-\mathcal E_{q+1}&=(n_q\cup_{q-1}n'_q)+s_1(n_q\cup_qn'_q).
+N_2&=n_2+n'_2,\\
+\mathcal E_3&=(n_2\cup_1n'_2)+s_1(n_2\cup_2n'_2).
 \end{aligned}
 ```
-
-The complex-fermion equation and its stacked field are
 
 <a id="eq-m2"></a>
 
-**(M2)**
+**(M2, 3+1D)**
 
 ```math
 \begin{aligned}
-dn_{q+1}=\mathcal O_{q+2}
- &=\mathrm{Sq}^2n_q+\omega_2n_q+s_1\overline{\beta n_q},\\
-N_{q+1}&=n_{q+1}+n'_{q+1}+\mathcal E_{q+1}.
+dn_3=\mathcal O_4
+ &=\mathrm{Sq}^2n_2+\omega_2n_2+s_1\overline{\beta n_2},\\
+N_3&=n_3+n'_3+\mathcal E_3.
 \end{aligned}
 ```
 
-In this representative the complete phase law is
+The phase satisfies
 
 ```math
-d_{s_1}\widehat\nu_{q+2}=\widehat{\mathcal O}_{q+3},\qquad
-\widehat\nu^{\mathrm{out}}_{q+2}
- =\widehat\nu_{q+2}+\widehat\nu'_{q+2}+\widehat{\mathcal E}_{q+2},
+\begin{aligned}
+d_{s_1}\widehat\nu_4&=\widehat{\mathcal O}_5,\\
+\widehat\nu_4^{\mathrm{out}}
+ &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal E}_4.
+\end{aligned}
 ```
 
-where the source and correction separate as follows:
+with the full source and product correction
 
 <a id="eq-m3"></a>
 
-**(M3)**
+**(M3, 3+1D)**
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}_{q+3}(n_q,n_{q+1})&=\frac12(\mathrm{Sq}^2n_{q+1}+\omega_2n_{q+1})+\widehat{\mathcal O}^\gamma_{q+3}(n_q),\\
-\widehat{\mathcal E}_{q+2}(n_q,n_{q+1};n'_q,n'_{q+1})&=\frac12\big[n_{q+1}\cup_qn'_{q+1}\\
-&\qquad+dn_{q+1}\cup_{q+1}n'_{q+1}
-\\
-&\qquad+(n_{q+1}+n'_{q+1})\cup_q\mathcal E_{q+1}\big]+\widehat{\mathcal E}^\gamma_{q+2}(n_q,n'_q).
+\widehat{\mathcal O}_5(n_2,n_3)&=\frac12(\mathrm{Sq}^2n_3+\omega_2n_3)+\widehat{\mathcal O}^\gamma_5(n_2),\\
+\widehat{\mathcal E}_4(n_2,n_3;n'_2,n'_3)&=\frac12\big[n_3\cup_2n'_3\\
+&\qquad+dn_3\cup_3n'_3\\
+&\qquad+(n_3+n'_3)\cup_2\mathcal E_3\big]+\widehat{\mathcal E}^\gamma_4(n_2,n'_2).
 \end{aligned}
 ```
 
-Equivalently, the multiplicative output is
-$`\nu^{\mathrm{out}}_{q+2}=\nu_{q+2}\nu'_{q+2}\exp(2\pi i\widehat{\mathcal E}_{q+2})`$.
-
-## Pure Majorana sources
-
-For $`q=2,3`$,
+### Pure Majorana source
 
 <a id="eq-m4"></a>
 
-**(M4)**
+**(M4, 3+1D)**
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}^\gamma_{q+3}(n_q)={}&\frac12\big[
- \zeta_{2,q}(\omega_2,n_q)+\mathcal X_{q+3}(n_q)\\
-&\qquad+(n_q\cup_{q-2}n_q)\cup_{q+1}(\omega_2 n_q)\\
-&\qquad+(n_q\cup_{q-2}n_q)\cup_{q+1}(s_1\overline{\beta n_q})\\
-&\qquad+(\omega_2 n_q)\cup_{q+1}(s_1\overline{\beta n_q})\\
-&\qquad+\zeta_{1,q+1}(s_1,\overline{\beta n_q})\\
-&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_q}+s_1(n_q\cup_{q-2}n_q)+s_1^2\overline{\beta^+n_q}\big]\\
-&+\frac14\big[\widetilde{\omega_2} \beta n_q+\beta n_q\cup_{q-1}\beta n_q\big].
+\widehat{\mathcal O}^\gamma_5(n_2)={}&\frac12\big[
+ \zeta_{2,2}(\omega_2,n_2)+\mathcal X_5(n_2)\\
+&\qquad+(n_2\cup n_2)\cup_3(\omega_2 n_2)\\
+&\qquad+(n_2\cup n_2)\cup_3(s_1\overline{\beta n_2})\\
+&\qquad+(\omega_2 n_2)\cup_3(s_1\overline{\beta n_2})\\
+&\qquad+\zeta_{1,3}(s_1,\overline{\beta n_2})\\
+&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_2}+s_1(n_2\cup n_2)+s_1^2\overline{\beta^+n_2}\big]\\
+&+\frac14\big[{\omega_2} \beta n_2+\beta n_2\cup_1\beta n_2\big].
 \end{aligned}
 ```
 
-The four word operations appearing here are
+Here the two word operations are
 
-| $`q`$ | $`\zeta_{2,q}(\omega_2,n_q)`$ | $`\zeta_{1,q+1}(s_1,\overline{\beta n_q})`$ |
-|---|---|---|
-| 2 | $`\mathop{\mathrm{MS}}\nolimits_{1231343}(\omega_2,\omega_2,n_q,n_q)`$ | $`\mathop{\mathrm{MS}}\nolimits_{1231434}(s_1,s_1,\overline{\beta n_q},\overline{\beta n_q})`$ |
-| 3 | $`\mathop{\mathrm{MS}}\nolimits_{12313434}(\omega_2,\omega_2,n_q,n_q)`$ | $`\mathop{\mathrm{MS}}\nolimits_{12314343}(s_1,s_1,\overline{\beta n_q},\overline{\beta n_q})`$ |
+```math
+\begin{aligned}
+\zeta_{2,2}(\omega_2,n_2)
+ &=\mathop{\mathrm{MS}}\nolimits_{1231343}(\omega_2,\omega_2,n_2,n_2),\\
+\zeta_{1,3}(s_1,\overline{\beta n_2})
+ &=\mathop{\mathrm{MS}}\nolimits_{1231434}(s_1,s_1,\overline{\beta n_2},\overline{\beta n_2}).
+\end{aligned}
+```
 
-The intrinsic source polynomials are
+The intrinsic source is
 
 <a id="eq-m5"></a>
 
-**(M5)**
+**(M5, 3+1D)**
 
 ```math
 \begin{aligned}
 \mathcal X_5(n_2)&=(\mathop{\mathrm{MS}}\nolimits_{1213243}+\mathop{\mathrm{MS}}\nolimits_{1213431}
- +\mathop{\mathrm{MS}}\nolimits_{1232141}+\mathop{\mathrm{MS}}\nolimits_{1234321})(n_2,n_2,n_2,n_2),\\
+ +\mathop{\mathrm{MS}}\nolimits_{1232141}+\mathop{\mathrm{MS}}\nolimits_{1234321})(n_2,n_2,n_2,n_2).
+\end{aligned}
+```
+
+### Pure Majorana product
+
+<a id="eq-m7"></a>
+
+**(M7, 3+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal E}^\gamma_4={}&\frac12z_4
+ +\frac14\big[-\beta n_2\cup_2\beta n'_2\\
+&\qquad+(\beta n_2+\beta n'_2)\cup_1\overline{n_2\cup_2n'_2}\\
+&\qquad-\overline{n_2\cup_2n'_2}\cup_1\beta N_2\\
+&\qquad+\overline{n_2\cup_2n'_2}\cup \overline{n_2\cup_2n'_2}\\
+&\qquad-{\omega_2}\,\overline{n_2\cup_2n'_2}\big].
+\end{aligned}
+```
+
+Every barred higher cup in the quarter-valued bracket is reduced before
+entering the integer arithmetic. The binary completion is
+
+<a id="eq-m8"></a>
+
+**(M8, 3+1D)**
+
+```math
+\begin{aligned}
+z_4={}&z^0_4(n_2,n'_2)+(\omega_2N_2)\cup_3\mathcal E_3
+ +d(n_2\cup_1n'_2)\cup_4(\omega_2N_2)\\
+&+(n'_2\cup n'_2)\cup_4(\omega_2n_2)\\
+&+((n'_2\cup n'_2)+\omega_2n'_2)\cup_4(s_1\overline{\beta n_2})\\
+&+(\omega_2\cup_1s_1)(n_2\cup_2n'_2)
+ +(n_2\cup_1n'_2)\cup_3[s_1(\overline{\beta n_2}+\overline{\beta n'_2})]\\
+&+(N_2\cup N_2)\cup_3(s_1(n_2\cup_2n'_2))+(n_2\cup_1n'_2)\cup_2(s_1(n_2\cup_2n'_2))\\
+&+s_1\big[\mathcal E_3+\overline{\beta n_2}\cup_3\overline{\beta n'_2}\\
+&\qquad+(n_2\cup_2n'_2)\cup_1(n_2\cup_2n'_2)\\
+&\qquad+(\overline{\beta n_2}+\overline{\beta n'_2})\cup_3(s_1(n_2\cup_2n'_2))\\
+&\qquad+(s_1(n_2\cup_2n'_2))\cup_2(n_2\cup_2n'_2)\\
+&\qquad+\overline{\beta^+N_2-\beta^+n_2-\beta^+n'_2}\big].
+\end{aligned}
+```
+
+The intrinsic term $`z^0_4(n_2,n'_2)`$ is given by the
+[finite word definition](#intrinsic-word-products) below.
+This representative is the stated desuspension of the 4+1D product.
+The earlier manuscript representative uses a stacking-move boundary
+dictionary; compare the complete products, including their mixed terms,
+after placing them in matching coordinates.
+
+### Change of phase representative
+
+The operator representative changes the single-state phase by
+$`\tfrac12n_3\cup_3dn_3`$. Therefore
+
+<a id="eq-m12"></a>
+
+**(M12, 3+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal O}^{\mathrm{op}}_5
+ &=\widehat{\mathcal O}_5
+   +d_{s_1}\!\left[\frac12n_3\cup_3dn_3\right],\\
+\widehat{\mathcal E}^{\mathrm{op}}_4
+ &=\widehat{\mathcal E}_4
+   +\frac12N_3\cup_3dN_3\\
+ &\qquad-\frac12n_3\cup_3dn_3
+             -\frac12n'_3\cup_3dn'_3.
+\end{aligned}
+```
+
+<a id="majorana-4d"></a>
+## 4+1D closed Majorana formulas
+
+The fields in 4+1D are the closed Majorana cochain $`n_3`$,
+the complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
+Both lower fields are binary, and $`dn_3=0`$.
+
+### Lower layers and full phase law
+
+The lower product and source are
+
+<a id="eq-m1-4d"></a>
+
+**(M1, 4+1D)**
+
+```math
+\begin{aligned}
+N_3&=n_3+n'_3,\\
+\mathcal E_4&=(n_3\cup_2n'_3)+s_1(n_3\cup_3n'_3).
+\end{aligned}
+```
+
+<a id="eq-m2-4d"></a>
+
+**(M2, 4+1D)**
+
+```math
+\begin{aligned}
+dn_4=\mathcal O_5
+ &=\mathrm{Sq}^2n_3+\omega_2n_3+s_1\overline{\beta n_3},\\
+N_4&=n_4+n'_4+\mathcal E_4.
+\end{aligned}
+```
+
+The phase satisfies
+
+```math
+\begin{aligned}
+d_{s_1}\widehat\nu_5&=\widehat{\mathcal O}_6,\\
+\widehat\nu_5^{\mathrm{out}}
+ &=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal E}_5.
+\end{aligned}
+```
+
+with the full source and product correction
+
+<a id="eq-m3-4d"></a>
+
+**(M3, 4+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal O}_6(n_3,n_4)&=\frac12(\mathrm{Sq}^2n_4+\omega_2n_4)+\widehat{\mathcal O}^\gamma_6(n_3),\\
+\widehat{\mathcal E}_5(n_3,n_4;n'_3,n'_4)&=\frac12\big[n_4\cup_3n'_4\\
+&\qquad+dn_4\cup_4n'_4\\
+&\qquad+(n_4+n'_4)\cup_3\mathcal E_4\big]+\widehat{\mathcal E}^\gamma_5(n_3,n'_3).
+\end{aligned}
+```
+
+### Pure Majorana source
+
+<a id="eq-m4-4d"></a>
+
+**(M4, 4+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal O}^\gamma_6(n_3)={}&\frac12\big[
+ \zeta_{2,3}(\omega_2,n_3)+\mathcal X_6(n_3)\\
+&\qquad+(n_3\cup_1n_3)\cup_4(\omega_2 n_3)\\
+&\qquad+(n_3\cup_1n_3)\cup_4(s_1\overline{\beta n_3})\\
+&\qquad+(\omega_2 n_3)\cup_4(s_1\overline{\beta n_3})\\
+&\qquad+\zeta_{1,4}(s_1,\overline{\beta n_3})\\
+&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_3}+s_1(n_3\cup_1n_3)+s_1^2\overline{\beta^+n_3}\big]\\
+&+\frac14\big[{\omega_2} \beta n_3+\beta n_3\cup_2\beta n_3\big].
+\end{aligned}
+```
+
+Here the two word operations are
+
+```math
+\begin{aligned}
+\zeta_{2,3}(\omega_2,n_3)
+ &=\mathop{\mathrm{MS}}\nolimits_{12313434}(\omega_2,\omega_2,n_3,n_3),\\
+\zeta_{1,4}(s_1,\overline{\beta n_3})
+ &=\mathop{\mathrm{MS}}\nolimits_{12314343}(s_1,s_1,\overline{\beta n_3},\overline{\beta n_3}).
+\end{aligned}
+```
+
+The intrinsic source is
+
+<a id="eq-m5-4d"></a>
+
+**(M5, 4+1D)**
+
+```math
+\begin{aligned}
 \mathcal X_6(n_3)&=(\mathop{\mathrm{MS}}\nolimits_{1213243142}+\mathop{\mathrm{MS}}\nolimits_{1213431412}
  +\mathop{\mathrm{MS}}\nolimits_{1232431421}+\mathop{\mathrm{MS}}\nolimits_{1234314212})(n_3,n_3,n_3,n_3)
  +\overline{\beta n_3}\cup_2\overline{\beta n_3}.
 \end{aligned}
 ```
 
-For $`q=1`$ the source is instead
+### Pure Majorana product
 
-<a id="eq-m6"></a>
+<a id="eq-m7-4d"></a>
 
-**(M6)**
-
-```math
-\begin{aligned}
-\widehat{\mathcal O}^\gamma_4(n_1)={}&\frac12\big[
- \mathop{\mathrm{MS}}\nolimits_{123134}(\omega_2,\omega_2,n_1,n_1)\\
-&\qquad+(\omega_2n_1)\cup_2(s_1\overline{\beta n_1})
-\\
-&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_1}+s_1(s_1+n_1)\overline{\beta n_1}\big]\\
-&+\frac14\big[\widetilde{\omega_2} \beta n_1+\widetilde{s_1}\,\widetilde{n_1}\,\beta n_1\big].
-\end{aligned}
-```
-
-Each half-valued bracket is formed in binary cochains before taking its
-canonical lift. The quarter-valued brackets use integer lifts and signed cups.
-
-## Pure Majorana products for q=2,3
-
-One degree-indexed expression gives the product in both dimensions:
-
-<a id="eq-m7"></a>
-
-**(M7)**
+**(M7, 4+1D)**
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}^\gamma_{q+2}={}&\frac12z_{q+2}
- +\frac14\big[(-1)^{q+1}\beta n_q\cup_q\beta n'_q
-\\
-&\qquad+(-1)^q(\beta n_q+\beta n'_q)\cup_{q-1}\widetilde{n_q\cup_qn'_q}\\
-&\qquad-\widetilde{n_q\cup_qn'_q}\cup_{q-1}\beta N_q
-\\
-&\qquad+\widetilde{n_q\cup_qn'_q}\cup_{q-2}\widetilde{n_q\cup_qn'_q}\\
-&\qquad-\widetilde{\omega_2}\,\widetilde{n_q\cup_qn'_q}\big].
+\widehat{\mathcal E}^\gamma_5={}&\frac12z_5
+ +\frac14\big[\beta n_3\cup_3\beta n'_3\\
+&\qquad-(\beta n_3+\beta n'_3)\cup_2\overline{n_3\cup_3n'_3}\\
+&\qquad-\overline{n_3\cup_3n'_3}\cup_2\beta N_3\\
+&\qquad+\overline{n_3\cup_3n'_3}\cup_1\overline{n_3\cup_3n'_3}\\
+&\qquad-{\omega_2}\,\overline{n_3\cup_3n'_3}\big].
 \end{aligned}
 ```
 
-The overlap $`n_q\cup_qn'_q`$ is a binary cochain: form this product **before**
-applying its tilde. Its binary completion is
+Every barred higher cup in the quarter-valued bracket is reduced before
+entering the integer arithmetic. The binary completion is
 
-<a id="eq-m8"></a>
+<a id="eq-m8-4d"></a>
 
-**(M8)**
+**(M8, 4+1D)**
 
 ```math
 \begin{aligned}
-z_{q+2}={}&z^0_{q+2}+(\omega_2N_q)\cup_{q+1}\mathcal E_{q+1}
- +d(n_q\cup_{q-1}n'_q)\cup_{q+2}(\omega_2N_q)\\
-&+(n'_q\cup_{q-2}n'_q)\cup_{q+2}(\omega_2n_q)\\
-&+((n'_q\cup_{q-2}n'_q)+\omega_2n'_q)\cup_{q+2}(s_1\overline{\beta n_q})\\
-&+(\omega_2\cup_1s_1)(n_q\cup_qn'_q)
- +(n_q\cup_{q-1}n'_q)\cup_{q+1}[s_1(\overline{\beta n_q}+\overline{\beta n'_q})]\\
-&+(N_q\cup_{q-2}N_q)\cup_{q+1}(s_1(n_q\cup_qn'_q))+(n_q\cup_{q-1}n'_q)\cup_q(s_1(n_q\cup_qn'_q))\\
-&+s_1\big[\mathcal E_{q+1}+\overline{\beta n_q}\cup_{q+1}\overline{\beta n'_q}\\
-&\qquad+(n_q\cup_qn'_q)\cup_{q-1}(n_q\cup_qn'_q)\\
-&\qquad+(\overline{\beta n_q}+\overline{\beta n'_q})\cup_{q+1}(s_1(n_q\cup_qn'_q))\\
-&\qquad+(s_1(n_q\cup_qn'_q))\cup_q(n_q\cup_qn'_q)\\
-&\qquad+\overline{\beta^+N_q-\beta^+n_q-\beta^+n'_q}\big].
+z_5={}&z^0_5(n_3,n'_3)+(\omega_2N_3)\cup_4\mathcal E_4
+ +d(n_3\cup_2n'_3)\cup_5(\omega_2N_3)\\
+&+(n'_3\cup_1n'_3)\cup_5(\omega_2n_3)\\
+&+((n'_3\cup_1n'_3)+\omega_2n'_3)\cup_5(s_1\overline{\beta n_3})\\
+&+(\omega_2\cup_1s_1)(n_3\cup_3n'_3)
+ +(n_3\cup_2n'_3)\cup_4[s_1(\overline{\beta n_3}+\overline{\beta n'_3})]\\
+&+(N_3\cup_1N_3)\cup_4(s_1(n_3\cup_3n'_3))+(n_3\cup_2n'_3)\cup_3(s_1(n_3\cup_3n'_3))\\
+&+s_1\big[\mathcal E_4+\overline{\beta n_3}\cup_4\overline{\beta n'_3}\\
+&\qquad+(n_3\cup_3n'_3)\cup_2(n_3\cup_3n'_3)\\
+&\qquad+(\overline{\beta n_3}+\overline{\beta n'_3})\cup_4(s_1(n_3\cup_3n'_3))\\
+&\qquad+(s_1(n_3\cup_3n'_3))\cup_3(n_3\cup_3n'_3)\\
+&\qquad+\overline{\beta^+N_3-\beta^+n_3-\beta^+n'_3}\big].
 \end{aligned}
 ```
 
-To define the intrinsic polynomial $`z^0_{q+2}`$, first sum the following word
-operations on their listed inputs, using the degree rule below the table.
+The intrinsic term $`z^0_5(n_3,n'_3)`$ is given by the
+[finite word definition](#intrinsic-word-products) below.
+
+### Change of phase representative
+
+The operator representative changes the single-state phase by
+$`\tfrac12n_4\cup_4dn_4`$. Therefore
+
+<a id="eq-m12-4d"></a>
+
+**(M12, 4+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal O}^{\mathrm{op}}_6
+ &=\widehat{\mathcal O}_6
+   +d_{s_1}\!\left[\frac12n_4\cup_4dn_4\right],\\
+\widehat{\mathcal E}^{\mathrm{op}}_5
+ &=\widehat{\mathcal E}_5
+   +\frac12N_4\cup_4dN_4\\
+ &\qquad-\frac12n_4\cup_4dn_4
+             -\frac12n'_4\cup_4dn'_4.
+\end{aligned}
+```
+
+<a id="intrinsic-word-products"></a>
+## Intrinsic word products
+
+This section defines a mathematical operation on two closed binary cochains
+$`x,y`$ of the same degree $`q=2`$ or $`q=3`$. Substituting the fields from
+3+1D gives $`z^0_4(n_2,n'_2)`$; substituting those from 4+1D gives
+$`z^0_5(n_3,n'_3)`$. All sums and word evaluations in this section are binary.
+
+First sum the word operations in the following table on the listed inputs.
 
 | Words | Ordered inputs |
 |---|---|
-| `12131432412`, `12343213431`, `23412342324` | $`(n_q,n'_q,n'_q,n'_q)`$ |
-| `12123434123`, `12131412324`, `12134131234`, `12312412423`, `12314324123`, `12314342413`, `13242412314`, `13412321341`, `13412321413`, `13413142134`, `13432412314`, `31214124324` | $`(n_q,n_q,n'_q,n'_q)`$ |
-| `12413432312` | $`(n_q,n_q,n_q,n'_q)`$ |
-| `12131432412` | $`(n'_q,n_q,n_q,N_q)`$ |
-| `12131432412` | $`(N_q,n_q,n_q,n'_q)`$ |
-| `12131432412`, `12134341321` | $`(N_q,n'_q,n'_q,n_q)`$ |
-| `1212312` | $`(N_q,n'_q,(n_q\cup_qn'_q))`$ |
-| `12313123` | $`(n'_q,n_q,(n_q\cup_{q-1}n'_q))`$ |
-| `12131232` | $`(\overline{\beta n_q},n'_q,n'_q)`$ |
-| `123131212` | $`(n'_q\cup_{q-2}n'_q,n_q,N_q)`$ |
-| `123131212` | $`(N_q\cup_{q-2}N_q,n'_q,n_q)`$ |
+| `12131432412`, `12343213431`, `23412342324` | $`(x,y,y,y)`$ |
+| `12123434123`, `12131412324`, `12134131234`, `12312412423`, `12314324123`, `12314342413`, `13242412314`, `13412321341`, `13412321413`, `13413142134`, `13432412314`, `31214124324` | $`(x,x,y,y)`$ |
+| `12413432312` | $`(x,x,x,y)`$ |
+| `12131432412` | $`(y,x,x,(x+y))`$ |
+| `12131432412` | $`((x+y),x,x,y)`$ |
+| `12131432412`, `12134341321` | $`((x+y),y,y,x)`$ |
+| `1212312` | $`((x+y),y,(x\cup_qy))`$ |
+| `12313123` | $`(y,x,(x\cup_{q-1}y))`$ |
+| `12131232` | $`(\overline{\beta x},y,y)`$ |
+| `123131212` | $`(y\cup_{q-2}y,x,(x+y))`$ |
+| `123131212` | $`((x+y)\cup_{q-2}(x+y),y,x)`$ |
 
-For $`q=3`$, use these words unchanged. For $`q=2`$, a word with $`k`$ input
-labels contributes only if its final $`k`$ letters contain every label exactly
-once. Remove those final $`k-1`$ letters; if a label is then missing, the term
-is zero. Otherwise evaluate the shortened word on the listed inputs. This
-finite desuspension rule includes words whose first input has degree greater
-than $`q`$.
+For input degree three, use the words as written. For input degree two, a
+word with $`k`$ input labels contributes only if its final $`k`$ letters
+contain every label exactly once. Remove those final $`k-1`$ letters; if a
+label is then missing, the term is zero. Otherwise evaluate the shortened
+word on the listed inputs. This finite desuspension rule includes words
+whose first input has degree greater than $`q`$.
 
-Add the following six cup terms to that word sum:
+Add the following six cup terms to obtain the complete intrinsic polynomial:
 
 <a id="eq-m9"></a>
 
@@ -238,60 +419,123 @@ Add the following six cup terms to that word sum:
 
 ```math
 \begin{aligned}
-z^0_{q+2}={}&\text{word sum}
- +(n_q\cup_{q-1}n'_q)\cup_{q-1}n'_q\\
-&+(\overline{\beta n_q}+\overline{\beta n'_q})\cup_{q-1}(n_q\cup_qn'_q)
+z^0_{q+2}(x,y)={}&\text{word sum}
+ +(x\cup_{q-1}y)\cup_{q-1}y\\
+&+(\overline{\beta x}+\overline{\beta y})\cup_{q-1}(x\cup_qy)
 \\
-&+(n_q\cup_qn'_q)\cup_{q-1}(\overline{\beta n_q}+\overline{\beta n'_q}+n'_q\cup_{q-1}n_q)\\
-&+(n_q\cup_{q-1}n'_q)\cup_{q+1}(n_q\cup_{q-2}n_q+n'_q\cup_{q-2}n'_q)
+&+(x\cup_qy)\cup_{q-1}(\overline{\beta x}+\overline{\beta y}+y\cup_{q-1}x)\\
+&+(x\cup_{q-1}y)\cup_{q+1}(x\cup_{q-2}x+y\cup_{q-2}y)
 \\
-&+n'_q\cup_q(n_q\cup_{q-1}(n_q\cup_{q-1}n'_q))+\overline{\beta n'_q}\cup_q\overline{\beta n_q}.
+&+y\cup_q(x\cup_{q-1}(x\cup_{q-1}y))+\overline{\beta y}\cup_q\overline{\beta x}.
 \end{aligned}
 ```
 
-At $`q=2`$ this representative is the stated desuspension of the $`q=3`$
-product. The earlier manuscript's longer representative uses a stacking-move
-boundary dictionary. A comparison must therefore transport the complete
-product into matching coordinates, including the mixed terms in [M3](#eq-m3).
+<a id="majorana-2d"></a>
+## 2+1D endpoint
 
-## The q=1 product
+The binary fields are the closed Majorana cochain $`n_1`$ and the
+complex-fermion cochain $`n_2`$, with phase $`\nu_3`$. Their Majorana closure
+is $`dn_1=0`$. The lower product and source are
 
-The $`2+1`$D endpoint has fractional carries that require a separate formula.
-Here $`N_1=n_1+n'_1`$. Its binary
-antiunitary correction is
+<a id="eq-m1-2d"></a>
+
+**(M1, 2+1D)**
+
+```math
+\begin{aligned}
+N_1&=n_1+n'_1,\\
+\mathcal E_2&=(n_1\cup n'_1)+s_1(n_1\cup_1n'_1).
+\end{aligned}
+```
+
+<a id="eq-m2-2d"></a>
+
+**(M2, 2+1D)**
+
+```math
+\begin{aligned}
+dn_2=\mathcal O_3
+ &=\mathrm{Sq}^2n_1+\omega_2n_1+s_1\overline{\beta n_1},\\
+N_2&=n_2+n'_2+\mathcal E_2.
+\end{aligned}
+```
+
+The phase law is
+
+```math
+\begin{aligned}
+d_{s_1}\widehat\nu_3&=\widehat{\mathcal O}_4,\\
+\widehat\nu_3^{\mathrm{out}}
+ &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal E}_3.
+\end{aligned}
+```
+
+with
+
+<a id="eq-m3-2d"></a>
+
+**(M3, 2+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal O}_4(n_1,n_2)&=\frac12(\mathrm{Sq}^2n_2+\omega_2n_2)+\widehat{\mathcal O}^\gamma_4(n_1),\\
+\widehat{\mathcal E}_3(n_1,n_2;n'_1,n'_2)&=\frac12\big[n_2\cup_1n'_2\\
+&\qquad+dn_2\cup_2n'_2\\
+&\qquad+(n_2+n'_2)\cup_1\mathcal E_2\big]+\widehat{\mathcal E}^\gamma_3(n_1,n'_1).
+\end{aligned}
+```
+
+### Pure Majorana source
+
+<a id="eq-m6"></a>
+
+**(M6, 2+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal O}^\gamma_4(n_1)={}&\frac12\big[
+ \mathop{\mathrm{MS}}\nolimits_{123134}(\omega_2,\omega_2,n_1,n_1)\\
+&\qquad+(\omega_2n_1)\cup_2(s_1\overline{\beta n_1})\\
+&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_1}+s_1(s_1+n_1)\overline{\beta n_1}\big]\\
+&+\frac14\big[{\omega_2} \beta n_1+{s_1}\,{n_1}\,\beta n_1\big].
+\end{aligned}
+```
+
+### Pure Majorana product
+
+The binary antiunitary correction is
 
 <a id="eq-m10"></a>
 
-**(M10)**
+**(M10, 2+1D)**
 
 ```math
 \begin{aligned}
 \mathcal L_3={}&s_1((s_1\cup_1n_1)+(s_1\cup_1n'_1)+[s_1\cup_1(n_1\cup_1n'_1)])(n_1\cup_1n'_1)\\
-&+(s_1\cup_1n_1) (n_1\cup_1n'_1)N_1
-\\
+&+(s_1\cup_1n_1) (n_1\cup_1n'_1)N_1\\
 &+((s_1\cup_1n_1) n_1+n_1 (s_1\cup_1n'_1)+s_1n_1+n_1s_1)(n_1\cup_1n'_1)\\
 &+s_1((n_1\cup_1n'_1)n_1+n_1n'_1+n'_1(n_1\cup_1n'_1)).
 \end{aligned}
 ```
 
-The pure Majorana phase correction is
+The pure phase correction is
 
 <a id="eq-m11"></a>
 
-**(M11)**
+**(M11, 2+1D)**
 
 ```math
 \begin{aligned}
 \widehat{\mathcal E}^\gamma_3={}&
 \frac14\big[\beta n_1\cup_1\beta n'_1\\
-&\qquad-(\beta n_1+\beta n'_1)(\widetilde{n_1}\cup_1\widetilde{n'_1})\\
-&\qquad-(\widetilde{n_1}\cup_1\widetilde{n'_1})(\beta n_1+\beta n'_1)\\
-&\qquad+(\widetilde{n_1}\cup_1\widetilde{n'_1})d(\widetilde{n_1}\cup_1\widetilde{n'_1})\big]\\
+&\qquad-(\beta n_1+\beta n'_1)({n_1}\cup_1{n'_1})\\
+&\qquad-({n_1}\cup_1{n'_1})(\beta n_1+\beta n'_1)\\
+&\qquad+({n_1}\cup_1{n'_1})d({n_1}\cup_1{n'_1})\big]\\
 &+\frac12[n_1\cup_1(n_1n'_1)]n'_1
- -\frac18\widetilde{N_1^3}+\frac18\widetilde{n_1^3}+\frac18\widetilde{(n'_1)^3}\\
+ -\frac18\overline{N_1^3}+\frac18\overline{n_1^3}+\frac18\overline{(n'_1)^3}\\
 &+\frac12(\omega_2N_1)\cup_2(n_1n'_1)\\
-&-\frac14\widetilde{\omega_2} (\widetilde{n_1}\cup_1\widetilde{n'_1})
- +\frac12\mathcal L_3+\frac14\widetilde{s_1n_1n'_1}\\
+&-\frac14{\omega_2} ({n_1}\cup_1{n'_1})
+ +\frac12\mathcal L_3+\frac14\overline{s_1n_1n'_1}\\
 &+\frac12\big[(\omega_2\cup_1s_1)(n_1\cup_1n'_1)\\
 &\qquad+(\omega_2N_1)\cup_2(s_1(n_1\cup_1n'_1))\\
 &\qquad+(\omega_2n'_1)\cup_3(s_1n_1^2)\big]
@@ -299,61 +543,55 @@ The pure Majorana phase correction is
 \end{aligned}
 ```
 
-The tildes on the eighth-valued terms and on $`\widetilde{s_1n_1n'_1}`$ lift
-the entire displayed **binary product**. In contrast,
-$`\widetilde{n_1}\cup_1\widetilde{n'_1}`$ is a signed integer cup of two lifted
-inputs; its differential is also integral. These operations cannot be
-interchanged. Add the mixed complex-fermion bracket in [M3](#eq-m3), at
-$`q=1`$, to obtain the complete phase. Merely dropping negative cup indices
-from [M7](#eq-m7) would miss the endpoint coordinate correction.
+The bars on the eighth-valued terms and on $`\overline{s_1n_1n'_1}`$ reduce
+the entire indicated product. In contrast, $`n_1\cup_1n'_1`$ inside the
+quarter-valued bracket is a signed integer cup, and its differential is
+also integral. These operations cannot be interchanged.
+The mixed complex-fermion terms are already included in the full phase
+formula above. Simply discarding negative cup indices in a higher-dimensional
+product would miss this endpoint's coordinate correction.
 
-## Change of phase representative
+### Change of phase representative
 
-The operator representative changes the single-state additive phase by
-$`\tfrac12n_{q+1}\cup_{q+1}dn_{q+1}`$. For the same lower fields, the paired
-transport is therefore
+The operator representative shifts the single-state phase by
+$`\tfrac12n_2\cup_2dn_2`$. The paired changes are
 
-<a id="eq-m12"></a>
+<a id="eq-m12-2d"></a>
 
-**(M12)**
+**(M12, 2+1D)**
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}^{\mathrm{op}}_{q+3}
- &=\widehat{\mathcal O}_{q+3}
-   +d_{s_1}\!\left[\frac12n_{q+1}\cup_{q+1}dn_{q+1}\right],\\
-\widehat{\mathcal E}^{\mathrm{op}}_{q+2}
- &=\widehat{\mathcal E}_{q+2}
-   +\frac12N_{q+1}\cup_{q+1}dN_{q+1}\\
- &\qquad-\frac12n_{q+1}\cup_{q+1}dn_{q+1}
-             -\frac12n'_{q+1}\cup_{q+1}dn'_{q+1}.
+\widehat{\mathcal O}^{\mathrm{op}}_4
+ &=\widehat{\mathcal O}_4
+   +d_{s_1}\!\left[\frac12n_2\cup_2dn_2\right],\\
+\widehat{\mathcal E}^{\mathrm{op}}_3
+ &=\widehat{\mathcal E}_3
+   +\frac12N_2\cup_2dN_2\\
+ &\qquad-\frac12n_2\cup_2dn_2
+             -\frac12n'_2\cup_2dn'_2.
 \end{aligned}
 ```
 
-This states both representatives without duplicating a long polynomial. It
-does not identify either with a different integer-layer convention.
+### Chiral domain
 
-## The 2+1D chiral domain
+These formulas compute the zero-integer fiber. For split unitary symmetry
+($`\omega_2=s_1=0`$), an independent neutral chiral $`\mathbb Z`$ factor can
+be adjoined. For the two nonsplit unitary controls in the example catalog,
+the finite subgroup and its abstract infinite-cyclic completion are
+reported separately; a marked minimal chiral generator is not specified.
+The endpoint formulas do not cover general nonsplit nonzero-chiral cochain
+inputs. This restriction removes no term from the complete 3+1D or 4+1D laws.
 
-The degree-one Majorana formulas compute the zero-integer fiber. For split
-unitary symmetry ($`\omega_2=s_1=0`$), an independent neutral chiral
-$`\mathbb Z`$ factor can be adjoined. For the two nonsplit unitary controls in
-the example catalog, the finite subgroup and its abstract infinite-cyclic
-completion are reported separately; a marked minimal chiral generator is
-not specified. The formulas above do not cover general nonsplit
-nonzero-chiral cochain inputs. This restriction does not remove any term
-from the complete $`3+1`$D or $`4+1`$D laws in the main guide.
+<a id="fmps-1d"></a>
+## 1+1D fMPS endpoint
 
-## The 1+1D fMPS endpoint
-
-Use the physical layer names also for the fMPS representative:
-$`n_0\in Z^0(G_b,\mathbb Z_2)`$,
-$`n_1\in C^1(G_b,\mathbb Z_2)`$ and
+The fields are $`n_0\in Z^0(G_b,\mathbb Z_2)`$,
+$`n_1\in C^1(G_b,\mathbb Z_2)`$, and
 $`\widehat\nu_2\in C^2(G_b,(\mathbb R/\mathbb Z)_{s_1})`$.
-There is no integer layer. This fMPS representative is a distinct choice
-of phase coordinate; using the same physical layer names does not assert
-an unstated coordinate transformation to the manuscript representative.
-The equations are
+There is no integer layer. This fMPS representative is a distinct phase
+coordinate; the physical field names do not imply an unstated coordinate
+transformation to the manuscript representative. Its equations are
 
 <a id="eq-m13"></a>
 

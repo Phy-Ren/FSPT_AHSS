@@ -15,7 +15,8 @@
       "inputs": "n,w,s",
       "outputs": "binary degree d source",
       "equations": [
-        "docs/FORMULA_GUIDE.md#eq-l1"
+        "docs/FORMULA_GUIDE.md#eq-l1",
+        "docs/FORMULA_GUIDE.md#eq-l1-4d"
       ],
       "source_files": [
         {
@@ -40,6 +41,7 @@
       "outputs": "binary degree d+1 source",
       "equations": [
         "docs/FORMULA_GUIDE.md#eq-l2",
+        "docs/FORMULA_GUIDE.md#eq-l2-4d",
         "docs/FORMULA_GUIDE.md#eq-l3",
         "docs/FORMULA_GUIDE.md#eq-l4"
       ],
@@ -70,7 +72,9 @@
       "outputs": "binary degree d-1 correction",
       "equations": [
         "docs/FORMULA_GUIDE.md#eq-p1",
-        "docs/FORMULA_GUIDE.md#eq-p2"
+        "docs/FORMULA_GUIDE.md#eq-p2",
+        "docs/FORMULA_GUIDE.md#eq-p1-4d",
+        "docs/FORMULA_GUIDE.md#eq-p2-4d"
       ],
       "source_files": [
         {
@@ -222,7 +226,8 @@
         "docs/FORMULA_GUIDE.md#eq-t3",
         "docs/FORMULA_GUIDE.md#eq-t3a",
         "docs/FORMULA_GUIDE.md#eq-t3b",
-        "docs/FORMULA_GUIDE.md#eq-t3c"
+        "docs/FORMULA_GUIDE.md#eq-t3c",
+        "docs/FORMULA_GUIDE.md#eq-aux-terminal-source"
       ],
       "source_files": [
         {
@@ -384,7 +389,15 @@
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m4",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m5",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m6"
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m6",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1-2d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m2-2d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-2d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1-4d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m2-4d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-4d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m4-4d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m5-4d"
       ],
       "source_files": [
         {
@@ -422,7 +435,11 @@
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m8",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m9",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m10",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m11"
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m11",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-2d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-4d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m7-4d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m8-4d"
       ],
       "source_files": [
         {
@@ -455,7 +472,9 @@
       "inputs": "a,c;w,s and pair",
       "outputs": "paired source/product transport",
       "equations": [
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12"
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-2d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-4d"
       ],
       "source_files": [
         {

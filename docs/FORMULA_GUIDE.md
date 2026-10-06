@@ -1,211 +1,162 @@
 # FSPT obstruction and stacking formulas
 
-The input is the bosonic symmetry group $`G_b`$, the fermion-parity extension
-cocycle $`\omega_2`$, and the antiunitary cocycle $`s_1`$. We retain the
-physical decoration fields $`n_j`$ and phase $`\nu_j`$ throughout. The same
-notation is used in every appendix.
+Read the conventions once, then use the complete section for the desired
+spacetime dimension: [3+1D](#three-dimensional) or [4+1D](#four-dimensional).
+The notation is deliberately local to each dimension. A subscript records
+a cochain's degree; its physical meaning is fixed by that section's field
+table. In particular, the two sections do not share a physical field named
+$`n_2`$.
 
-Read the [notation](#conventions-and-coordinates) first, then the
-[obstruction equations](#lower-sources), [stacking equations](#lower-stacking),
-and the terminal formulas for [3+1D](#three-dimensional-pair) or
-[4+1D](#four-dimensional-pair). The [closed-Majorana and lower-dimensional
-formulas](formulas/MAJORANA_AND_ENDPOINTS.md) use these same rules.
+The input backgrounds are $`\omega_2\in Z^2(G_b,\mathbb Z_2)`$ and
+$`s_1\in Z^1(G_b,\mathbb Z_2)`$. They are fixed during stacking.
+[Closed-Majorana formulas and lower-dimensional endpoints](formulas/MAJORANA_AND_ENDPOINTS.md)
+also have separate dimensional sections.
 
 <a id="conventions-and-coordinates"></a>
-## Notation and operations
+## Common notation and arithmetic
 
-### Physical fields and stacking
+A prime denotes the second stacking input. The outputs are $`N_j`$ and
+$`\nu_j^{\mathrm{out}}`$. A hat denotes the additive phase,
+$`\nu_j=\exp(2\pi i\widehat\nu_j)`$, with
+$`\widehat\nu_j\in\mathbb R/\mathbb Z`$. The same convention applies to
+phase obstructions $`\widehat{\mathcal O}`$ and corrections
+$`\widehat{\mathcal E}`$.
 
-Here $`d`$ is spatial dimension. In $`3+1`$D and $`4+1`$D the decorations are
+A bar means pointwise reduction modulo two. Binary digits use this same
+operation:
 
 ```math
-(n_{d-2},n_{d-1},n_d,\nu_{d+1})
-\in C^{d-2}(G_b,\mathbb Z_{s_1})\times
- C^{d-1}(G_b,\mathbb Z_2)\times C^d(G_b,\mathbb Z_2)
- \times C^{d+1}(G_b,U(1)_{s_1}).
+\bar x^{[k]}=\overline{\lfloor x/2^k\rfloor},\qquad
+\bar x^{[0]}=\bar x.
 ```
 
-| Field | Meaning |
-|---|---|
-| $`n_{d-2}`$ | Integer p+ip decoration |
-| $`n_{d-1}`$ | Majorana-chain decoration |
-| $`n_d`$ | Complex-fermion decoration |
-| $`\nu_{d+1}`$ | Bosonic phase |
-| $`\omega_2,s_1`$ | Fixed symmetry background, shared by both stacking inputs |
-
-A prime denotes the **second stacking input**, $`n'_j,\nu'_j`$; it never
-means a coordinate redefinition. The output fields are $`N_j`$ and
-$`\nu_{d+1}^{\mathrm{out}}`$. The subscript of a cochain records its degree.
-Dummy simplex indices and the indices of finite word lists are not cochain degrees.
-
-### Modifiers: one meaning each
-
-| Notation | Meaning |
-|---|---|
-| $`\bar x`$ | Pointwise reduction modulo two |
-| $`\bar x^{[k]}=\overline{\lfloor x/2^k\rfloor}`$ | Binary digit $`k`$ of an integer value; $`\bar x^{[0]}=\bar x`$ |
-| $`\widetilde x`$ | Canonical integer lift of a binary value to $`0,1`$ |
-| $`\widehat\nu`$ | Additive phase, $`\nu=\exp(2\pi i\widehat\nu)`$, with $`\widehat\nu\in\mathbb R/\mathbb Z`$ |
-| $`\check x`$ | The explicitly defined shifted coordinate in (C1), or its corresponding source/stacking correction |
-
-Thus the second digit of $`n_j`$ is $`\bar n_j^{[1]}`$, not a separately named
-field. For the second input write $`\overline{n'_j}^{[1]}`$.
-Digits are labels, not powers. Floors are mathematical floors even for
-negative integers: $`\bar{(-1)}=\bar{(-1)}^{[1]}=1`$.
-A lift is taken **after the entire binary expression has been formed**;
-$`\widetilde{x+y}`$ and $`\widetilde x+\widetilde y`$ are different integers.
-
-Only two field redefinitions are needed:
+The bracketed superscript labels a digit, not a power. Floors are
+mathematical floors, including for negative integers. A check denotes an
+explicitly defined shifted field or its corresponding source/product.
+The common background shift is binary:
 
 <a id="eq-c1"></a>
 
 **(C1)**
 
 ```math
-\check\omega_2=\omega_2+s_1\cup s_1,\qquad
-\check n_{d-1}=n_{d-1}+s_1\cup\bar n_{d-2}^{[1]}.
+\check\omega_2=\omega_2+s_1\cup s_1.
 ```
 
-The same rule defines $`\check n'_{d-1}`$ and $`\check N_{d-1}`$.
-A check therefore keeps the original field visible; it does not introduce
-an independent decoration. The binary reductions of a p+ip field are written
-explicitly, while the field itself remains integer valued wherever an
-integer cup or rational coefficient occurs.
+### Integer lifts are implicit in integer arithmetic
 
-### Differential, products, and standard operations
+A named binary cochain in an integer expression means its canonical
+$`0,1`$ lift. No tilde is needed. Sums, differences, differentials, and
+higher cups in such an expression use integer arithmetic and its stated
+coefficient transport. If an entire compound expression must first be
+reduced, its bar stays explicit. For binary values, for example,
 
-Ordinary $`d`$ is the untwisted differential; $`d_{s_1}`$ is the sign-twisted
-differential. Juxtaposition means the **ordered cup product** $`\cup=\cup_0`$.
-Cochains are not treated as commuting. Negative cup indices and
- degree-impossible operations give zero. Powers of cochains mean ordered cup powers; the bracketed superscript $`[k]`$ alone denotes a binary digit.
+```math
+\overline{x+y}=x+y-2xy\quad\text{in }\mathbb Z.
+```
 
-For a binary cochain $`x`$ of degree $`r`$, the cochain representative of the
-Steenrod square is
+Thus $`(x+y)/4`$ and $`\overline{x+y}/4`$ need not be the same phase. A
+previously defined binary polynomial is first evaluated as that binary
+polynomial, then lifted when used in an integer expression. Integer
+numerators are assembled completely before exact division.
+A phase bracket with coefficient $`1/2`$ is binary before its implicit
+lift; the integral $`1/4,1/8,1/16`$ terms state their arithmetic separately.
+
+All products are ordered: juxtaposition means $`\cup=\cup_0`$. Powers are
+ordered cup powers. Ordinary $`d`$ and $`d_{s_1}`$ are the untwisted and
+sign-twisted differentials. Their coefficient domain follows the equation.
+In particular, the differential inside an integer Bockstein is taken
+before reduction.
+
+For a binary cochain $`x`$ of degree $`r`$, use the standard Steenrod symbol:
 
 <a id="eq-c2"></a>
 
 **(C2)**
 
 ```math
-\mathrm{Sq}^{j}x=x\cup_{r-j}x+x\cup_{r-j+1}dx.
+\mathrm{Sq}^j x=x\cup_{r-j}x+x\cup_{r-j+1}dx.
 ```
 
-This specifies the operation also for nonclosed cochains; the second term
-must then be retained. On cocycles it represents the usual Steenrod square.
-The standard symbol $`\mathrm{Sq}`$ is used throughout.
+The second term is retained for a nonclosed cochain. Negative or
+otherwise degree-impossible higher cups are zero in the explicit
+[interval-cut definition](formulas/OPERATIONS.md#interval-cuts).
 
-| Operation | Definition or reference |
+| Operation | Definition and domain |
 |---|---|
-| $`\beta x=d\widetilde x/2`$ | Ordinary integer Bockstein of a **closed** binary cochain |
-| $`\beta^\circ x=(d\widetilde x-\widetilde{dx})/2`$ | Integer lift carry for a possibly open binary cochain |
-| $`\beta^+x=(\beta x+\widetilde{\overline{\beta x}})/2`$ | The plus carry used in the closed-Majorana formulas |
-| $`\beta_{s_1}\check\omega_2=d_{s_1}\widetilde{\check\omega_2}/2`$ | Twisted integer background carry |
-| $`\Delta f=f(N)-f(n)-f(n')`$ | Change of a one-state expression under stacking, with backgrounds fixed |
-| $`\zeta,\mathop{\mathrm{MS}}\nolimits`$ | Explicit cup/interval-cut polynomials; [definitions](formulas/OPERATIONS.md#interval-cuts) |
-| $`\tau_I,\tau_\triangle`$ | Integration over the interval or triangle parameter; [finite signed sums](formulas/OPERATIONS.md#parameter-integration) |
-| $`(\mathsf h_r^{(2)})^*,(\mathsf h_r^{(3)})^*`$ | Duals of the two- and three-factor grid homotopies; [definitions](formulas/OPERATIONS.md#parameter-base-fill) |
+| $`\beta x=dx/2`$ | Integer Bockstein, for binary $`dx=0`$; numerator is the **integer** differential |
+| $`\beta^\circ x=(dx-\overline{dx})/2`$ | Integer carry for a possibly open binary cochain |
+| $`\beta^+x=(\beta x+\overline{\beta x})/2`$ | The plus carry of a closed binary cochain |
+| $`\beta_{s_1}\check\omega_2=d_{s_1}\check\omega_2/2`$ | Twisted integer background carry |
+| $`\Delta f=f(N)-f(n)-f(n')`$ | Full change under the displayed lower stacking law, with fixed backgrounds |
 
-The $`\Delta`$ rule applies to the full expression, including any field on
-which it depends. Integer signs are retained; for binary values subtraction
-and addition agree. Function arguments are omitted only when the current
-input is unambiguous. Thus $`B'_4`$ means the same defined function $`B_4`$
-evaluated on $`(n'_2,\check n'_3)`$.
+The integer lifts of $`\check\omega_2`$ and the p+ip field have coefficients
+$`\mathbb Z_{s_1}`$; those of $`\omega_2`$ and the Majorana field have ordinary
+integer coefficients. [Operations](formulas/OPERATIONS.md#eq-o7) specifies
+all coefficient transports. A check is never an instruction to change
+those coefficient systems.
 
-Every exact division is performed on the **complete integer numerator** before
-any indicated binary reduction. A bracket multiplied by $`1/2`$ in a phase
-formula is binary, then lifted and divided by two. Quarter-valued and other
-integral expressions retain their explicitly stated lifts and signed cups.
-
-### Coefficients and phase equations
-
-Binary fields have no sign distinction. The integer p+ip field $`n_{d-2}`$
-and the lift $`\widetilde{\check\omega_2}`$ in the integer-layer formulas have
-coefficients $`\mathbb Z_{s_1}`$; $`\widetilde{\omega_2}`$ and canonical
-Majorana lifts have ordinary integer coefficients. In particular,
-$`\beta_{s_1}\check\omega_2`$ is twisted. All products include the coefficient
-transport fixed in [Operations](formulas/OPERATIONS.md#eq-o7).
-The closed-Majorana appendix states its ordinary integral lifts separately.
-
-The equations are organized by their physical output:
+The standard quadratic background cochain will be useful in both sections:
 
 ```math
-\begin{aligned}
-d_{s_1}n_{d-2}&=0,&
-dn_{d-1}&=\mathcal O_d,&dn_d&=\mathcal O_{d+1},&
-d_{s_1}\widehat\nu_{d+1}&=\widehat{\mathcal O}_{d+2},\\
-N_{d-2}&=n_{d-2}+n'_{d-2},&
-N_{d-1}&=n_{d-1}+n'_{d-1}+\mathcal E_{d-1},&&&\\
-N_d&=n_d+n'_d+\mathcal E_d,&
-\widehat\nu_{d+1}^{\mathrm{out}}
- &=\widehat\nu_{d+1}+\widehat\nu'_{d+1}+\widehat{\mathcal E}_{d+1}.&&&
-\end{aligned}
+\mathcal P_{s_1}(\check\omega_2)
+ =\check\omega_2\check\omega_2
+  +\check\omega_2\cup_1d_{s_1}\check\omega_2\quad\text{in }\mathbb Z.
 ```
 
-The hats on the terminal $`\mathcal O,\mathcal E`$ have exactly the same
-meaning as on $`\nu`$: additive representatives of $`U(1)`$ phases. Equivalently,
-$`\nu_{d+1}^{\mathrm{out}}=\nu_{d+1}\nu'_{d+1}
-\exp(2\pi i\widehat{\mathcal E}_{d+1})`$.
+This is a fixed integer representative of the twisted Pontryagin-square
+expression; keep the displayed representative when it is multiplied by
+$`1/16`$. It is not an unspecified modulo-four class.
 
-### Named expressions used below
+The non-elementary operations are the explicit interval-cut polynomials
+$`\zeta,\mathop{\mathrm{MS}}\nolimits`$, the signed parameter sums
+$`\tau_I,\tau_\triangle`$, and the grid homotopies
+$`(\mathsf h_r^{(2)})^*,(\mathsf h_r^{(3)})^*`$ in
+[Operations](formulas/OPERATIONS.md). Their finite definitions fix all
+signs and choices.
 
-Short field aliases are unnecessary. The remaining named expressions stand
-for whole cochains that are reused in a source, a product, or its finite
-definition. This index gives their role before they appear.
+<a id="three-dimensional"></a>
+## 3+1D
 
-| Expressions | Role | Definition |
+Throughout this section the physical fields are:
+
+| Field | Physical role | Coefficients |
 |---|---|---|
-| $`\mathcal O_d,\check{\mathcal O}_d,\mathcal O_{d+1}`$ | Native and shifted lower obstructions | [L1–L2](#eq-l1) |
-| $`\mathcal O^\psi_4,\mathcal O^\psi_5`$ | Integer-layer contribution to the complex-fermion obstruction | [L3–L4](#eq-l3) |
-| $`\mathcal E_{d-1},\check{\mathcal E}_{d-1},\mathcal E_d`$ | Lower stacking corrections in the corresponding coordinates | [P1–P4](#eq-p1) |
-| $`z^\psi_3,z^\psi_4,\ell_3`$ | Finite face polynomials in the lower product | [P3–P5](#eq-p3) |
-| $`B_4,B_4^\psi`$ | Full integer lift residual and its integer-layer part | [S1](#eq-s1) |
-| $`\mathcal P_{s_1}(\check\omega_2)`$ | Quadratic integer background expression | [S1](#eq-s1) |
-| $`\mathcal C_6,\mathcal H_6,\mathcal A_6,\mathcal Q_6`$ | Reused binary/integer terms of the terminal source | [S2](#eq-s2) |
-| $`T_6,y_6`$ | Open-Majorana source operation and integer-layer completion | [Source operations](formulas/SOURCE_OPERATIONS.md) |
-| $`\widehat{\mathcal O}^{\mathrm{base}}_6`$ | Shared source before its cubic term | [S3](#eq-s3) |
-| $`D_3,g_2,\kappa_3`$ | Corrections defining the parameter lift and the older fermion coordinate | [T3a–T3d](#eq-t3a) |
-| $`\theta_1,\theta'_1,\chi_1`$ | Fixed cochains on the parameter triangle | [T3b](#eq-t3b) |
-| $`n_j^I,n_j^\triangle`$ | The explicitly constructed interval/triangle fields | [T3b–T3c](#eq-t3b) |
-| $`\lambda_3`$ | Integer carry of the shifted Majorana product | [T4a](#eq-t4a) |
-| $`\mathcal V_5,\Phi_5,\varepsilon_5,\Pi_5`$ | Binary and integer terms of the terminal product | [T4b–T4c](#eq-t4b) |
-| $`Z_5`$ | Finite binary transfer completing that product | [Terminal transfer](formulas/TERMINAL_TRANSFER.md) |
-| $`\Lambda_5`$ | Paired source/product change of representative | [T4e](#eq-t4e) |
+| $`n_1`$ | p+ip decoration | $`\mathbb Z_{s_1}`$ |
+| $`n_2`$ | Majorana decoration | $`\mathbb Z_2`$ |
+| $`n_3`$ | Complex-fermion decoration | $`\mathbb Z_2`$ |
+| $`\nu_4`$ | Bosonic phase | $`U(1)_{s_1}`$ |
 
-The appendices give their own small indices of subsidiary polynomials. No
-new name is used for the parity or binary digits of an already named field.
+The shifted Majorana field is
+
+<a id="eq-c1-3d"></a>
+
+**(3D coordinates)**
+
+```math
+\check n_2=n_2+s_1\bar n_1^{[1]}.
+```
 
 <a id="lower-sources"></a>
-## Lower obstruction equations
+### Obstructions
 
-The integer field satisfies $`d_{s_1}n_{d-2}=0`$. The Majorana equation is
+The integer field satisfies $`d_{s_1}n_1=0`$. The next equations are binary:
 
 <a id="eq-l1"></a>
 
 **(L1)**
 
 ```math
-d{n_{d-1}}=\mathcal O_d[n_{d-2}]={\mathrm{Sq}}^2{\bar n_{d-2}}+{\omega_2} {\bar n_{d-2}}+{s_1} {\mathrm{Sq}}^1{\bar n_{d-2}}.
+dn_2=\mathcal O_3=\omega_2\bar n_1+s_1\bar n_1^2,\qquad d\check n_2=\check\omega_2\bar n_1.
 ```
-
-In shifted coordinates, write $`d\check n_{d-1}=\check{\mathcal O}_d`$.
-The two dimensions then read
-
-| Dimension | $`\check{\mathcal O}_d`$ | $`d\bar n_{d-2}^{[1]}`$ |
-|---|---|---|
-| 3+1D | $`\check\omega_2\bar n_1`$ | $`\bar n_1^2+s_1\bar n_1`$ |
-| 4+1D | $`\bar n_2^2+\check\omega_2\bar n_2`$ | $`\bar n_2\cup_1\bar n_2+s_1\bar n_2`$ |
-
-The complex-fermion equation, expressed in these shifted inputs, is
 
 <a id="eq-l2"></a>
 
 **(L2)**
 
 ```math
-d{n_{d}}={\mathcal O_{d+1}}({n_{d-2}},{\check n_{d-1}})={\mathrm{Sq}}^2{\check n_{d-1}}+{s_1}{\mathrm{Sq}}^1{\check n_{d-1}}+{\omega_2}{\check n_{d-1}}+{\mathcal O^\psi_{d+1}}({n_{d-2}}).
+d{n_{3}}={\mathcal O_{4}}({n_{1}},{\check n_{2}})={\mathrm{Sq}}^2{\check n_{2}}+{s_1}{\mathrm{Sq}}^1{\check n_{2}}+{\omega_2}{\check n_{2}}+{\mathcal O^\psi_{4}}({n_{1}}).
 ```
-
-For 3+1D,
 
 <a id="eq-l3"></a>
 
@@ -219,30 +170,12 @@ For 3+1D,
 \end{aligned}
 ```
 
-For 4+1D,
-
-<a id="eq-l4"></a>
-
-**(L4)**
-
-```math
-\begin{aligned}
-{\mathcal O^\psi_5}={}&\zeta_{2,2}({\bar n_{2}},{\bar n_{2}})+\zeta_{2,2}({\check\omega_2},{\bar n_{2}})
- +{\bar n_{2}}^2\cup_3({\check\omega_2}{\bar n_{2}})+{\bar n_{2}^{[1]}}\,d{\bar n_{2}^{[1]}}+{(\bar n_2\cup_1\bar n_2)}\cup_1({s_1}{\bar n_{2}})\\
-&+{s_1}\big[{\bar n_{2}}^2\cup_4({\check\omega_2}{\bar n_{2}})+({\bar n_{2}}\cup_1{s_1}){\bar n_{2}}+{\bar n_{2}}\cup_1{(\bar n_2\cup_1\bar n_2)}+{\bar n_{2}}^2\big]\\
-&+({\check\omega_2}\cup_1{\check\omega_2}+{s_1}{\check\omega_2}){\bar n_{2}^{[1]}}
- +\big[({\check\omega_2}\cup_1{\check\omega_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\check\omega_2})\big]{\bar n_{2}},\\
-\zeta_{2,2}(x,y)={}&\mathop{\mathrm{MS}}\nolimits_{1231343}(x,x,y,y).
-\end{aligned}
-```
-
-These are explicit cochains. The $`\zeta`$ and interval-cut definitions
-are part of the formulas; no unspecified primitive is being chosen.
+Here $`d\bar n_1^{[1]}=\bar n_1^2+s_1\bar n_1`$. The final phase equation
+$`d_{s_1}\widehat\nu_4=\widehat{\mathcal O}_5`$ is given below, after its
+auxiliary parameter fields have been specified.
 
 <a id="lower-stacking"></a>
-## Lower stacking equations
-
-In shifted coordinates the Majorana correction is
+### Stacking of the decoration fields
 
 <a id="eq-p1"></a>
 
@@ -250,15 +183,13 @@ In shifted coordinates the Majorana correction is
 
 ```math
 \begin{aligned}
-\check{\mathcal E}_{d-1}
- &=\bar n_{d-2}\cup_{d-3}\overline{n'_{d-2}},\\
-N_{d-2}&=n_{d-2}+n'_{d-2},\\
-\check N_{d-1}
- &=\check n_{d-1}+\check n'_{d-1}+\check{\mathcal E}_{d-1}.
+\check{\mathcal E}_{2}
+ &=\bar n_{1}\cup\overline{n'_{1}},\\
+N_{1}&=n_{1}+n'_{1},\\
+\check N_{2}
+ &=\check n_{2}+\check n'_{2}+\check{\mathcal E}_{2}.
 \end{aligned}
 ```
-
-The native output and the complex-fermion output are
 
 <a id="eq-p2"></a>
 
@@ -266,25 +197,13 @@ The native output and the complex-fermion output are
 
 ```math
 \begin{aligned}
-\mathcal E_{d-1}
- &=\check{\mathcal E}_{d-1}
-   +s_1(\bar n_{d-2}\cup_{d-2}\overline{n'_{d-2}}),\\
-N_{d-1}&=n_{d-1}+n'_{d-1}+\mathcal E_{d-1},\\
-N_d&=n_d+n'_d+\mathcal E_d.
+\mathcal E_{2}
+ &=\check{\mathcal E}_{2}
+   +s_1(\bar n_{1}\cup_{1}\overline{n'_{1}}),\\
+N_{2}&=n_{2}+n'_{2}+\mathcal E_{2},\\
+N_3&=n_3+n'_3+\mathcal E_3.
 \end{aligned}
 ```
-
-The check on a correction denotes the correction in shifted coordinates,
-not a different operation. The bit identity behind (P2) is
-
-```math
-\bar N_{d-2}^{[1]}=\bar n_{d-2}^{[1]}+\overline{n'_{d-2}}^{[1]}
- +\bar n_{d-2}\cup_{d-2}\overline{n'_{d-2}}.
-```
-
-### The 3+1D complex-fermion correction
-
-Here $`\check{\mathcal E}_2=\bar n_1\overline{n'_1}`$.
 
 <a id="eq-p3"></a>
 
@@ -302,13 +221,308 @@ Here $`\check{\mathcal E}_2=\bar n_1\overline{n'_1}`$.
 \end{aligned}
 ```
 
-The $`\Delta`$ in the last line uses the stacking rule stated at the start;
-its argument is written out, so no additional one-state symbol is needed.
+The $`\Delta`$ acts on the entire bracket using the output above. The
+binary digit identity used in the native Majorana product is
 
-### The 4+1D complex-fermion correction
+```math
+\bar N_1^{[1]}=\bar n_1^{[1]}+\overline{n'_1}^{[1]}
+ +\bar n_1\cup_1\overline{n'_1}.
+```
 
-Here $`\check{\mathcal E}_3=\bar n_2\cup_1\overline{n'_2}`$ and
-$`d\check{\mathcal E}_3=\bar n_2\overline{n'_2}+\overline{n'_2}\bar n_2`$.
+<a id="three-dimensional-pair"></a>
+### Bosonic phase: auxiliary parameter fields
+
+This construction uses cochains on an interval or triangle times the
+physical base. They are **auxiliary**, not additional physical decorations.
+A superscript $`J\in\{I,\triangle\}`$ always marks them: $`n_2^J`$ is
+integer, while $`\check n_3^J,n_4^J`$ are binary. The physical $`n_2`$ in
+this section remains Majorana decoration.
+
+On the oriented triangle $`012`$, the integer one-cocycles
+$`\theta_1,\theta'_1`$ have edge values $`(01,12,02)=(1,0,1),(0,1,1)`$.
+The binary $`\chi_1`$ has values $`(0,0,1)`$ and satisfies
+$`d\chi_1=\bar\theta_1\overline{\theta'_1}`$. Backgrounds and physical
+fields are pulled from the base; parameter cochains are pulled from the
+triangle. Integer parameter cochains act through their reductions inside
+binary expressions.
+
+<a id="eq-t3b"></a>
+
+**(T3B)**
+
+```math
+\begin{aligned}
+{n_2^\triangle}&={\theta_1} {n_{1}}+{\theta'_1} {n'_{1}},\\
+{\check n_3^\triangle}&={\theta_1} {\check n_{2}}+{\theta'_1} {\check n'_{2}}+({\check\omega_2}\cup_1{\theta_1}){\bar n_{1}}
+ +({\check\omega_2}\cup_1{\theta'_1}){\overline{n'_{1}}}+{\chi_1} {\check{\mathcal E}_{2}}+{\theta_1}({\bar n_{1}}\cup_1{\theta'_1}){\overline{n'_{1}}},
+\end{aligned}
+```
+
+For the interval, $`\theta_1(01)=1`$ and the second input is absent:
+
+```math
+n_2^I=\theta_1 n_1,\qquad
+\check n_3^I=\theta_1\check n_2+(\check\omega_2\cup_1\theta_1)\bar n_1.
+```
+
+The following binary degree-five source is evaluated on these auxiliary
+fields. Its superscript keeps it separate from the physical terminal
+phase obstruction $`\widehat{\mathcal O}_5`$:
+
+<a id="eq-aux-o5"></a>
+
+**(Auxiliary source)**
+
+```math
+\mathcal O_5^J=\mathrm{Sq}^2\check n_3^J+s_1\mathrm{Sq}^1\check n_3^J
+ +\omega_2\check n_3^J+\mathcal O_5^{\psi,J}.
+```
+
+<a id="eq-aux-pip5"></a>
+
+**(Auxiliary p+ip source)**
+
+```math
+\begin{aligned}
+{\mathcal O_5^{\psi,J}}={}&\zeta_{2,2}({\overline{n_2^J}},{\overline{n_2^J}})+\zeta_{2,2}({\check\omega_2},{\overline{n_2^J}})
+ +{\overline{n_2^J}}^2\cup_3({\check\omega_2}{\overline{n_2^J}})+\mathrm{Sq}^3{\overline{n_2^J}^{[1]}}+{(\overline{n_2^J}\cup_1\overline{n_2^J})}\cup_1({s_1}{\overline{n_2^J}})\\
+&+{s_1}\big[{\overline{n_2^J}}^2\cup_4({\check\omega_2}{\overline{n_2^J}})+({\overline{n_2^J}}\cup_1{s_1}){\overline{n_2^J}}+{\overline{n_2^J}}\cup_1{(\overline{n_2^J}\cup_1\overline{n_2^J})}+{\overline{n_2^J}}^2\big]\\
+&+({\check\omega_2}\cup_1{\check\omega_2}+{s_1}{\check\omega_2}){\overline{n_2^J}^{[1]}}
+ +\big[({\check\omega_2}\cup_1{\check\omega_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\check\omega_2})\big]{\overline{n_2^J}},\\
+\zeta_{2,2}(x,y)={}&\mathop{\mathrm{MS}}\nolimits_{1231343}(x,x,y,y).
+\end{aligned}
+```
+
+The auxiliary complex-fermion fields now follow. Their complete
+corrections are written directly, without additional named sum wrappers.
+
+<a id="eq-t3a"></a>
+
+**(T3A)**
+
+```math
+\begin{aligned}
+n_4^\triangle={}&(\mathsf h_4^{(2)})^*\mathcal O_5^\triangle\\
+ &+\theta_1\big[n_3+\check\omega_2\bar n_1^{[1]}+\check n_2\cup_2d\check n_2+(s_1\cup_1\omega_2)\bar n_1\big]\\
+ &+\theta'_1\big[n'_3+\check\omega_2\overline{n'_1}^{[1]}+\check n'_2\cup_2d\check n'_2+(s_1\cup_1\omega_2)\overline{n'_1}\big]\\
+ &+\chi_1\Big(\mathcal E_3+\Delta\big[\check\omega_2\bar n_1^{[1]}+\check n_2\cup_2d\check n_2+(s_1\cup_1\omega_2)\bar n_1\big]\Big)\\
+ &+(d\chi_1)\Big[\bar n_1^{[1]}\overline{n'_1}+(\bar n_1+\bar n_1^{[1]})\overline{n'_1}^{[1]}
+ +\check{\mathcal E}_2\cup_2(\check n_2+\check n'_2)+\check{\mathcal E}_2\\
+ &\qquad +(s_1\cup_1\bar n_1)(\bar n_1\cup_1\overline{n'_1})
+ +[s_1\cup_1(\bar n_1\cup_1\overline{n'_1})](\bar n_1+\overline{n'_1})\Big].
+\end{aligned}
+```
+
+<a id="eq-t3c"></a>
+
+**(T3C)**
+
+```math
+n_4^I=(\mathsf h_4^{(2)})^*\mathcal O_5^I
+ +\theta_1\big[n_3+\check\omega_2\bar n_1^{[1]}+\check n_2\cup_2d\check n_2+(s_1\cup_1\omega_2)\bar n_1\big].
+```
+
+All brackets defining these binary fields are evaluated modulo two.
+The interval and triangle sums and their coefficient transports are fixed
+in [Operations](formulas/OPERATIONS.md#parameter-integration).
+
+### Bosonic phase: source and product
+
+The following residuals are untwisted integer cochains on the parameter
+space. The definitions are local to the auxiliary fields:
+
+<a id="eq-aux-residual"></a>
+
+**(Auxiliary integer residuals)**
+
+```math
+\begin{aligned}
+\check{\mathcal O}_4^J&=\overline{n_2^J}^2+\check\omega_2\overline{n_2^J}
+ \quad\text{in }\mathbb Z_2,\\
+B_4^{\psi,J}&=\frac{\check{\mathcal O}_4^J-{n_2^J}^2-\check\omega_2{n_2^J}}{2},\\
+B_4^J&=\beta^\circ\check n_3^J+B_4^{\psi,J}
+ =\frac{d\check n_3^J-{n_2^J}^2-\check\omega_2{n_2^J}}{2},\\
+dB_4^J&=-(\beta_{s_1}\check\omega_2){n_2^J}.
+\end{aligned}
+```
+
+<a id="eq-aux-terminal-source"></a>
+
+**(Auxiliary phase source)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal O}_6^J={}&\frac12\Big[\mathrm{Sq}^2 {n_4^J}+\omega_2 {n_4^J}+T_6[\check n_3^J;\omega_2,s_1]+\check n_3^J(\overline{\beta\omega_2}+s_1\omega_2)\\
+ &\qquad +(\mathrm{Sq}^2\check n_3^J+s_1\mathrm{Sq}^1\check n_3^J+\omega_2\check n_3^J)
+ \cup_4\mathcal O_5^{\psi,J}+y_6[{n_2^J};\omega_2,s_1]\\
+ &\qquad +\overline{\beta^\circ\check n_3^J}\cup_2\overline{B_4^{\psi,J}}
+ +s_1(\overline{\beta^\circ\check n_3^J}\cup_3\overline{B_4^{\psi,J}})\Big]\\
+ &+\frac14\big[B_4^J\cup_2B_4^J+B_4^J\cup_3dB_4^J+\omega_2 B_4^J\big]\\
+ &-\frac14\overline{\big[\mathop{\mathrm{MS}}\nolimits_{12132434}
+ (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\overline{n_2^J},\overline{n_2^J})
+ +\overline{\beta_{s_1}\check\omega_2}^{[1]}(\overline{n_2^J}\cup_1\overline{n_2^J})
+ +(s_1\overline{\beta_{s_1}\check\omega_2})\overline{n_2^J}^{[1]}
+ +s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\overline{n_2^J}\big]}\\
+ &+\frac1{16}\mathcal P_{s_1}(\check\omega_2){n_2^J}
+ +\frac18\check\omega_2 {n_2^J}^2+\frac1{12}{n_2^J}^3.
+\end{aligned}
+```
+
+The complete physical source and product are the two signed transgressions
+of this one auxiliary source, each on its own parameter fields:
+
+<a id="eq-t3"></a>
+
+**(T3)**
+
+```math
+\boxed{\widehat{\mathcal O}_5=\tau_I\widehat{\mathcal O}_6^I,\qquad
+\widehat{\mathcal E}_4=\tau_\triangle\widehat{\mathcal O}_6^\triangle.}
+```
+
+The extra integer terms have the exact signed transgressions
+
+```math
+\begin{array}{c|cc}
+ &\tau_I&\tau_\triangle\\ \hline
+\mathcal P_{s_1}(\check\omega_2)n_2^J
+ &\mathcal P_{s_1}(\check\omega_2)n_1&0\\
+\check\omega_2(n_2^J)^2&0&-\check\omega_2 n_1n'_1\\
+(n_2^J)^3&0&0.
+\end{array}
+```
+
+These identities use the displayed interval/triangle fields and the fixed
+coefficient transport, so the compact pair includes all fractional terms.
+
+The operations $`T_6,y_6`$ are the finite operations of
+[Source operations](formulas/SOURCE_OPERATIONS.md), applied to the displayed
+auxiliary fields. Each $`1/2`$ bracket is binary. Each $`1/4`$ bracket is
+integer, with the barred polynomial reduced as a whole before its
+implicit lift. The parameter integration then gives phases modulo one.
+The physical equations and product are
+
+```math
+d_{s_1}\widehat\nu_4=\widehat{\mathcal O}_5,\qquad
+\widehat\nu_4^{\mathrm{out}}=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal E}_4.
+```
+
+### Relation to the older fermion coordinate
+
+<a id="eq-t3d"></a>
+
+**(T3D)**
+
+```math
+{n_3^{\mathrm{old}}}={n_{3}}+\kappa_3({n_{1}},{\check n_{2}}),\qquad
+\kappa_3=({\bar n_{1}}+{s_1}){\check n_{2}}+{\check\omega_2}{\bar n_{1}^{[1]}}+[{\check\omega_2}\cup_1({\bar n_{1}}+{s_1})]{\bar n_{1}}.
+```
+
+Its stacking correction changes at the same time:
+
+```math
+\mathcal E_{3,\mathrm{old}}=\mathcal E_3+\Delta\kappa_3.
+```
+
+The obstruction is transported by the same substitution and $`d\kappa_3`$.
+In particular, $`n_1=0`$ alone does not remove this coordinate change when
+$`s_1\ne0`$.
+
+<a id="four-dimensional"></a>
+## 4+1D
+
+Throughout this section the physical fields are:
+
+| Field | Physical role | Coefficients |
+|---|---|---|
+| $`n_2`$ | p+ip decoration | $`\mathbb Z_{s_1}`$ |
+| $`n_3`$ | Majorana decoration | $`\mathbb Z_2`$ |
+| $`n_4`$ | Complex-fermion decoration | $`\mathbb Z_2`$ |
+| $`\nu_5`$ | Bosonic phase | $`U(1)_{s_1}`$ |
+
+The shifted Majorana field is
+
+<a id="eq-c1-4d"></a>
+
+**(4D coordinates)**
+
+```math
+\check n_3=n_3+s_1\bar n_2^{[1]}.
+```
+
+### Obstructions
+
+The integer field satisfies $`d_{s_1}n_2=0`$. The next equations are binary:
+
+<a id="eq-l1-4d"></a>
+
+**(L1–4D)**
+
+```math
+d{n_{3}}=\mathcal O_4[n_{2}]={\mathrm{Sq}}^2{\bar n_{2}}+{\omega_2} {\bar n_{2}}+{s_1} {\mathrm{Sq}}^1{\bar n_{2}}.
+```
+
+The shifted equation is $`d\check n_3=\check{\mathcal O}_4
+=\bar n_2^2+\check\omega_2\bar n_2`$.
+
+<a id="eq-l2-4d"></a>
+
+**(L2–4D)**
+
+```math
+d{n_{4}}={\mathcal O_{5}}({n_{2}},{\check n_{3}})={\mathrm{Sq}}^2{\check n_{3}}+{s_1}{\mathrm{Sq}}^1{\check n_{3}}+{\omega_2}{\check n_{3}}+{\mathcal O^\psi_{5}}({n_{2}}).
+```
+
+<a id="eq-l4"></a>
+
+**(L4)**
+
+```math
+\begin{aligned}
+{\mathcal O^\psi_5}={}&\zeta_{2,2}({\bar n_{2}},{\bar n_{2}})+\zeta_{2,2}({\check\omega_2},{\bar n_{2}})
+ +{\bar n_{2}}^2\cup_3({\check\omega_2}{\bar n_{2}})+\mathrm{Sq}^3{\bar n_{2}^{[1]}}+{(\bar n_2\cup_1\bar n_2)}\cup_1({s_1}{\bar n_{2}})\\
+&+{s_1}\big[{\bar n_{2}}^2\cup_4({\check\omega_2}{\bar n_{2}})+({\bar n_{2}}\cup_1{s_1}){\bar n_{2}}+{\bar n_{2}}\cup_1{(\bar n_2\cup_1\bar n_2)}+{\bar n_{2}}^2\big]\\
+&+({\check\omega_2}\cup_1{\check\omega_2}+{s_1}{\check\omega_2}){\bar n_{2}^{[1]}}
+ +\big[({\check\omega_2}\cup_1{\check\omega_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\check\omega_2})\big]{\bar n_{2}},\\
+\zeta_{2,2}(x,y)={}&\mathop{\mathrm{MS}}\nolimits_{1231343}(x,x,y,y).
+\end{aligned}
+```
+
+Here $`d\bar n_2^{[1]}=\bar n_2\cup_1\bar n_2+s_1\bar n_2`$.
+The final phase equation is given after the integer residuals below.
+
+### Stacking of the decoration fields
+
+<a id="eq-p1-4d"></a>
+
+**(P1–4D)**
+
+```math
+\begin{aligned}
+\check{\mathcal E}_{3}
+ &=\bar n_{2}\cup_{1}\overline{n'_{2}},\\
+N_{2}&=n_{2}+n'_{2},\\
+\check N_{3}
+ &=\check n_{3}+\check n'_{3}+\check{\mathcal E}_{3}.
+\end{aligned}
+```
+
+<a id="eq-p2-4d"></a>
+
+**(P2–4D)**
+
+```math
+\begin{aligned}
+\mathcal E_{3}
+ &=\check{\mathcal E}_{3}
+   +s_1(\bar n_{2}\cup_{2}\overline{n'_{2}}),\\
+N_{3}&=n_{3}+n'_{3}+\mathcal E_{3},\\
+N_4&=n_4+n'_4+\mathcal E_4.
+\end{aligned}
+```
+
+In these coordinates $`d\check{\mathcal E}_3=
+\bar n_2\overline{n'_2}+\overline{n'_2}\bar n_2`$.
 
 <a id="eq-p4"></a>
 
@@ -326,8 +540,6 @@ $`d\check{\mathcal E}_3=\bar n_2\overline{n'_2}+\overline{n'_2}\bar n_2`$.
 \end{aligned}
 ```
 
-The finite polynomials in this correction are
-
 <a id="eq-p5"></a>
 
 **(P5)**
@@ -342,19 +554,22 @@ The finite polynomials in this correction are
 \end{aligned}
 ```
 
-The digit terms in (P4) include its closed $`\bar n_2\overline{n'_2}`$
-contribution once.
+The digit terms retain the closed $`\bar n_2\overline{n'_2}`$
+contribution once. The native Majorana rule uses
+
+```math
+\bar N_2^{[1]}=\bar n_2^{[1]}+\overline{n'_2}^{[1]}
+ +\bar n_2\cup_2\overline{n'_2}.
+```
 
 <a id="shared-terminal-source"></a>
-## Shared terminal source
+<a id="four-dimensional-pair"></a>
+### Bosonic obstruction
 
-This section is a function of a degree-two integer field $`n_2`$, a
-shifted degree-three Majorana field $`\check n_3`$, and a degree-four fermion
-field $`n_4`$. In 4+1D these are the physical fields. In the 3+1D formulas
-below they will be the explicitly constructed parameter fields of the
-same degrees. This lets the long source be written once.
-
-The integer residuals are
+The integral residual $`B_4`$ is useful independently of the phase formula:
+its differential and its stacking carry will both occur below. Keep its
+integer-layer part $`B_4^\psi`$ separately because the source completion
+uses it before any Majorana field has been chosen.
 
 <a id="eq-s1"></a>
 
@@ -362,194 +577,76 @@ The integer residuals are
 
 ```math
 \begin{aligned}
-\mathcal P_{s_1}(\check\omega_2)
- &=\widetilde{\check\omega_2}\,\widetilde{\check\omega_2}
-   +\widetilde{\check\omega_2}\cup_1d_{s_1}\widetilde{\check\omega_2},\\
-B_4^\psi
- &=\frac{\widetilde{\check{\mathcal O}_4}-n_2^2
-   -\widetilde{\check\omega_2}n_2}{2},\\
+\check{\mathcal O}_4&=\bar n_2^2+\check\omega_2\bar n_2
+ \quad\text{in }\mathbb Z_2,\\
+B_4^\psi&=\frac{\check{\mathcal O}_4-n_2^2-\check\omega_2n_2}{2},\\
 B_4&=\beta^\circ\check n_3+B_4^\psi
- =\frac{d\widetilde{\check n_3}-n_2^2
-   -\widetilde{\check\omega_2}n_2}{2},\\
+ =\frac{d\check n_3-n_2^2-\check\omega_2n_2}{2},\\
 dB_4&=-(\beta_{s_1}\check\omega_2)n_2.
 \end{aligned}
 ```
 
-All three integer expressions $`B_4,B_4^\psi,\mathcal P_{s_1}`$ are
-untwisted. In particular, $`B_4`$ is generally not closed; its differential
-is part of the formula. The binary background carry is simply
-$`\overline{\beta_{s_1}\check\omega_2}`$, and its next digit is
-$`\overline{\beta_{s_1}\check\omega_2}^{[1]}`$.
-
-The reused source terms are
+The complete source is written directly below. The subtracted binary polynomial is reduced as a whole before its
+quarter-valued integer use.
 
 <a id="eq-s2"></a>
-
-**(S2)**
-
-```math
-\begin{aligned}
-\mathcal C_6={}&\mathop{\mathrm{MS}}\nolimits_{12132434}({\overline{\beta_{s_1}\check\omega_2}},{\overline{\beta_{s_1}\check\omega_2}},{\bar n_{2}},{\bar n_{2}})
- +{\overline{\beta_{s_1}\check\omega_2}^{[1]}}({\bar n_{2}}\cup_1{\bar n_{2}})+({s_1}{\overline{\beta_{s_1}\check\omega_2}}){\bar n_{2}^{[1]}}+{s_1}({\overline{\beta_{s_1}\check\omega_2}}\cup_1{s_1}){\bar n_{2}},\\
-\mathcal H_6({n_{2}},{\check n_{3}})={}&T_6({\check n_{3}};{\omega_2},{s_1})+{\check n_{3}}{(\overline{\beta\omega_2}+s_1\omega_2)}
- +({\mathrm{Sq}}^2{\check n_{3}}+{s_1}{\mathrm{Sq}}^1{\check n_{3}}+{\omega_2}{\check n_{3}})\cup_4{\mathcal O^\psi_5}+y_6({n_{2}};{\omega_2},{s_1})\\
-&+{\overline{\beta^\circ\check n_3}}\cup_2{\overline{B_4^\psi}}+{s_1}\big({\overline{\beta^\circ\check n_3}}\cup_3{\overline{B_4^\psi}}\big),\\
-\mathcal A_6({n_{2}},{\check n_{3}},{n_{4}})={}&{\mathrm{Sq}}^2{n_{4}}+{\omega_2}{n_{4}}+\mathcal H_6({n_{2}},{\check n_{3}}),\\
-\mathcal Q_6({n_{2}},{\check n_{3}})={}&{B_4}\cup_2{B_4}+{B_4}\cup_3d{B_4}
- +\widetilde {\omega_2} {B_4}-\widetilde{\mathcal C_6}.
-\end{aligned}
-```
-
-Here $`T_6`$ and $`y_6`$ are the complete finite operations in
-[Source operations](formulas/SOURCE_OPERATIONS.md); all their fixed
-coefficients appear in [Coefficients](formulas/COEFFICIENTS.md).
-The shared additive source is
-
 <a id="eq-s3"></a>
-
-**(S3)**
-
-```math
-{\widehat{\mathcal O}_6^{\rm base}}({n_{2}},{\check n_{3}},{n_{4}})=\frac12\mathcal A_6
- +\frac14\mathcal Q_6
- +\frac1{16}\mathcal P_{s_1}({\check\omega_2}){n_{2}}+\frac18\widetilde {\check\omega_2} {n_{2}}^2
- \pmod1.
-```
-
-<a id="three-dimensional-pair"></a>
-## The 3+1D terminal pair
-
-The physical fields here are $`n_1,n_2,n_3`$. In the following formula,
-$`\mathcal A_6,\mathcal Q_6`$ are evaluated on the parameter fields specified
-just below; they are not evaluated on fields of the wrong degree.
-
-<a id="eq-t3"></a>
-
-**(T3)**
-
-```math
-\boxed{\begin{aligned}
-{\widehat{\mathcal O}}_5({n_{1}},{\check n_{2}},{n_{3}})&=\frac12\tau_I\mathcal A_6
- +\frac14\tau_I\mathcal Q_6+\frac1{16}\mathcal P_{s_1}({\check\omega_2}){n_{1}},\\
-{\widehat{\mathcal E}}_4({n_{1}},{\check n_{2}},{n_{3}};{n'_{1}},{\check n'_{2}},{n'_{3}})&=\frac12\tau_\triangle\mathcal A_6
- +\frac14\tau_\triangle\mathcal Q_6-\frac18\widetilde {\check\omega_2} {n_{1}} {n'_{1}}.
-\end{aligned}}
-```
-
-The output phase is
-$`\nu_4^{\mathrm{out}}=\nu_4\nu'_4\exp(2\pi i\widehat{\mathcal E}_4)`$.
-The lower output is (P2),(P3). First define the two parameter corrections
-
-<a id="eq-t3a"></a>
-
-**(T3a)**
-
-```math
-\begin{aligned}
-{D_3}({n_{1}},{\check n_{2}})&={\check\omega_2}{\bar n_{1}^{[1]}}+{\check n_{2}}\cup_2d{\check n_{2}}+({s_1}\cup_1{\omega_2}){\bar n_{1}},\\
-g_2&={\bar n_{1}^{[1]}}{\overline{n'_{1}}}+({\bar n_{1}}+{\bar n_{1}^{[1]}}){\overline{n'_{1}}^{[1]}}+{\check{\mathcal E}_{2}}\cup_2({\check n_{2}}+{\check n'_{2}})+{\check{\mathcal E}_{2}}
- +({s_1}\cup_1{\bar n_{1}}){(\bar n_{1}\cup_{1}\overline{n'_{1}})}+({s_1}\cup_1{(\bar n_{1}\cup_{1}\overline{n'_{1}})})({\bar n_{1}}+{\overline{n'_{1}}}).
-\end{aligned}
-```
-
-On the oriented triangle $`012`$, the integer one-cocycles
-$`\theta_1,\theta'_1`$ have edge values $`(01,12,02)=(1,0,1),(0,1,1)`$.
-The binary one-cochain $`\chi_1`$ has values $`(0,0,1)`$, so
-$`d\chi_1=\bar\theta_1\overline{\theta'_1}`$.
-Backgrounds and physical fields are pulled from the base; the three
-parameter cochains are pulled from the triangle. In binary expressions, the integer parameter cocycles act through their reductions modulo two; the integer field retains their integer values. Define
-
-<a id="eq-t3b"></a>
-
-**(T3b)**
-
-```math
-\begin{aligned}
-{n_2^\triangle}&={\theta_1} {n_{1}}+{\theta'_1} {n'_{1}},\\
-{\check n_3^\triangle}&={\theta_1} {\check n_{2}}+{\theta'_1} {\check n'_{2}}+({\check\omega_2}\cup_1{\theta_1}){\bar n_{1}}
- +({\check\omega_2}\cup_1{\theta'_1}){\overline{n'_{1}}}+{\chi_1} {\check{\mathcal E}_{2}}+{\theta_1}({\bar n_{1}}\cup_1{\theta'_1}){\overline{n'_{1}}},\\
-{n_4^\triangle}&={(\mathsf h_4^{(2)})^*}{\mathcal O_5[n_2^\triangle,\check n_3^\triangle]}+{\theta_1}({n_{3}}+{D_3}({n_{1}},{\check n_{2}}))
- +{\theta'_1}({n'_{3}}+{D_3}({n'_{1}},{\check n'_{2}}))\\
-&\quad+{\chi_1}\big({\mathcal E_3}+{D_3}({N_{1}},{\check N_{2}})+{D_3}({n_{1}},{\check n_{2}})+{D_3}({n'_{1}},{\check n'_{2}})\big)
- +(d{\chi_1})g_2.
-\end{aligned}
-```
-
-For the interval use $`\theta_1(01)=1`$ and omit the second input:
-
-<a id="eq-t3c"></a>
-
-**(T3c)**
-
-```math
-{n_2^I}={\theta_1} {n_{1}},\qquad
-{\check n_3^I}={\theta_1} {\check n_{2}}+({\check\omega_2}\cup_1{\theta_1}){\bar n_{1}},\qquad
-{n_4^I}={(\mathsf h_4^{(2)})^*}{\mathcal O_5}({n_2^I},{\check n_3^I})
- +{\theta_1}({n_{3}}+{D_3}({n_{1}},{\check n_{2}})).
-```
-
-The two- and three-factor grid definitions use the same notation as the
-corresponding appendix. The interval sum has six paths and the triangle
-sum fifteen. Apply coefficient transports before taking either sum.
-
-For comparison with the older direct fermion coordinate, the change is
-
-<a id="eq-t3d"></a>
-
-**(T3d)**
-
-```math
-{n_3^{\mathrm{old}}}={n_{3}}+\kappa_3({n_{1}},{\check n_{2}}),\qquad
-\kappa_3=({\bar n_{1}}+{s_1}){\check n_{2}}+{\check\omega_2}{\bar n_{1}^{[1]}}+[{\check\omega_2}\cup_1({\bar n_{1}}+{s_1})]{\bar n_{1}}.
-```
-
-The corresponding stacking correction must change with it:
-
-```math
-\mathcal E_{3,\mathrm{old}}=\mathcal E_3+\Delta\kappa_3.
-```
-
-In particular, $`n_1=0`$ does not by itself remove this change if $`s_1\ne0`$.
-
-<a id="four-dimensional-pair"></a>
-## The 4+1D terminal pair
-
-The fields $`n_2,\check n_3,n_4`$ now have their physical degrees. The source is
 
 <a id="eq-t4"></a>
 
 **(T4)**
 
 ```math
-\boxed{{\widehat{\mathcal O}}_6({n_{2}},{\check n_{3}},{n_{4}})={\widehat{\mathcal O}_6^{\rm base}}({n_{2}},{\check n_{3}},{n_{4}})+\frac1{12}{n_{2}}^3\pmod1.}
+\begin{aligned}
+\widehat{\mathcal O}_6={}&\frac12\Big[\mathrm{Sq}^2 n_4+\omega_2 n_4+T_6[\check n_3;\omega_2,s_1]+\check n_3(\overline{\beta\omega_2}+s_1\omega_2)\\
+ &\qquad +(\mathrm{Sq}^2\check n_3+s_1\mathrm{Sq}^1\check n_3+\omega_2\check n_3)
+ \cup_4\mathcal O^\psi_5+y_6[n_2;\omega_2,s_1]\\
+ &\qquad +\overline{\beta^\circ\check n_3}\cup_2\overline{B_4^\psi}
+ +s_1(\overline{\beta^\circ\check n_3}\cup_3\overline{B_4^\psi})\Big]\\
+ &+\frac14\big[B_4\cup_2B_4+B_4\cup_3dB_4+\omega_2 B_4\big]\\
+ &-\frac14\overline{\big[\mathop{\mathrm{MS}}\nolimits_{12132434}
+ (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
+ +\overline{\beta_{s_1}\check\omega_2}^{[1]}(\bar n_2\cup_1\bar n_2)
+ +(s_1\overline{\beta_{s_1}\check\omega_2})\bar n_2^{[1]}
+ +s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\big]}\\
+ &+\frac1{16}\mathcal P_{s_1}(\check\omega_2)n_2
+ +\frac18\check\omega_2 n_2^2+\frac1{12}n_2^3\pmod1.
+\end{aligned}
 ```
 
-The cubic term is retained in 4+1D. It vanishes on the interval and
-triangle fields used above. The lower output is fixed by (P2),(P4).
-Only one new integer carry is needed for the product:
+Here $`T_6[\check n_3;\omega_2,s_1]`$ is the fixed continuation of the
+closed-Majorana source and $`y_6[n_2;\omega_2,s_1]`$ its integer-layer
+completion. [Source operations](formulas/SOURCE_OPERATIONS.md) gives their
+full finite definitions, and [Coefficients](formulas/COEFFICIENTS.md) gives
+every fixed coefficient. The $`1/2`$ bracket is binary; all other brackets
+and products in this source are integer before division. The phase equation
+is $`d_{s_1}\widehat\nu_5=\widehat{\mathcal O}_6`$.
+
+### Bosonic stacking correction
+
+The product requires one integer carry:
 
 <a id="eq-t4a"></a>
 
-**(T4a)**
+**(T4A)**
 
 ```math
 \begin{aligned}
-\lambda_3&=\frac{\widetilde{\check N_3}-\widetilde{\check n_3}
- -\widetilde{\check n'_3}+n_2\cup_1n'_2}{2},\\
+\lambda_3&=\frac{\check N_3-\check n_3-\check n'_3+n_2\cup_1n'_2}{2},\\
 \Delta B_4&=d\lambda_3-n'_2n_2,\\
 \overline{\Delta B_4}&=d\bar\lambda_3+\overline{n'_2}\bar n_2.
 \end{aligned}
 ```
 
-The quantities $`\lambda_3,B_4,\Delta B_4`$ are untwisted integers.
-A bar on any of them has the same mod-two meaning as everywhere else.
-There are no separate symbols for their parities.
-
-The binary terms of the phase correction are
+The numerator uses the canonical integer values of the three named
+binary Majorana fields. The quantities $`\lambda_3,B_4,\Delta B_4`$ are
+untwisted integers. Only one binary polynomial needs to retain a name:
+$`\mathcal V_5`$ is used both in its quarter-valued phase and in the finite
+transfer. Its full reduction must precede either integer use.
 
 <a id="eq-t4b"></a>
 
-**(T4b)**
+**(T4B)**
 
 ```math
 \begin{aligned}
@@ -557,78 +654,86 @@ The binary terms of the phase correction are
  +(d{\bar B_4}+d{\overline{B'_4}})\cup_4{\overline{\Delta B_4}}\\
 &+{\mathrm{Sq}}^2{\bar\lambda_3}+({\overline{n'_{2}}}{\bar n_{2}})\cup_3d{\bar\lambda_3}+{\omega_2}{\bar\lambda_3}+({\overline{\beta_{s_1}\check\omega_2}^{[1]}}+{\overline{\beta_{s_1}\check\omega_2}}){(\bar n_{2}\cup_{2}\overline{n'_{2}})}\\
 &+\zeta_{2,2}({\overline{n'_{2}}},{\bar n_{2}})+{\check n'_{3}}{\bar n_{2}}+{\overline{n'_{2}}}{\check n_{3}}+({\check\omega_2}\cup_1{\overline{n'_{2}}}){\bar n_{2}}
- +{\overline{n'_{2}}^{[1]}}({\bar n_{2}}\cup_1{\bar n_{2}})+{s_1}{\overline{n'_{2}}}{\bar n_{2}^{[1]}}+{s_1}({\overline{n'_{2}}}\cup_1{s_1}){\bar n_{2}},\\
-\Phi_5={}&\zeta_{2,2}({\bar n_{2}},{\overline{n'_{2}}})+{\bar n_{2}}\cup_1d{\check n'_{3}}+{\bar n_{2}^{[1]}}({\overline{n'_{2}}}\cup_1{\overline{n'_{2}}})
- +({\check\omega_2}\cup_1{\bar n_{2}}){\overline{n'_{2}}}+{s_1}{\bar n_{2}}{\overline{n'_{2}}^{[1]}}+{s_1}({\bar n_{2}}\cup_1{s_1}){\overline{n'_{2}}}+{\check{\mathcal E}_{3}}({\bar n_{2}}+{\overline{n'_{2}}})+{\check\omega_2}{\check{\mathcal E}_{3}},\\
-\varepsilon_5={}&{n_{4}}\cup_3{n'_{4}}+d{n_{4}}\cup_4{n'_{4}}+({n_{4}}+{n'_{4}})\cup_3{\mathcal E_4}
- +({\mathcal E_4}+{(\bar n_{2}\overline{n'_{2}})})\cup_3{(\bar n_{2}\overline{n'_{2}})}+d{N_{4}}\cup_4{(\bar n_{2}\overline{n'_{2}})},
+ +{\overline{n'_{2}}^{[1]}}({\bar n_{2}}\cup_1{\bar n_{2}})+{s_1}{\overline{n'_{2}}}{\bar n_{2}^{[1]}}+{s_1}({\overline{n'_{2}}}\cup_1{s_1}){\bar n_{2}}.
 \end{aligned}
 ```
 
-The integral term is
-
 <a id="eq-t4c"></a>
 
-**(T4c)**
-
-```math
-\Pi_5={N_{2}}\widetilde {\check N_{3}}-{n_{2}}\widetilde {\check n_{3}}-{n'_{2}}\widetilde {\check n'_{3}}
- +({n_{2}}\cup_1\widetilde {\check\omega_2}){n'_{2}}+({n'_{2}}\cup_1\widetilde {\check\omega_2}){n_{2}}.
-```
-
-Together they give the complete additive phase correction
+All remaining sums are inserted directly into the product. The first
+bracket is binary. The signed $`\Delta(n_2\check n_3)`$ and all terms with
+coefficient $`1/4,1/8,1/3`$ use integer arithmetic:
 
 <a id="eq-t4d"></a>
 
-**(T4d)**
+**(T4D)**
 
 ```math
-\boxed{\begin{aligned}
-{\widehat{\mathcal E}}_5={}&\frac12[\varepsilon_5+\Phi_5+Z_5]
- +\frac14[\widetilde{\mathcal V_5}+\Pi_5]
- +\frac18\widetilde {\check\omega_2}({n_{2}}\cup_1{n'_{2}})\\
-&+\frac13\big[({n'_{2}}-{n_{2}})({n_{2}}\cup_1{n'_{2}})-({n_{2}}\cup_1{n'_{2}})({n'_{2}}-{n_{2}})\big]\pmod1.
-\end{aligned}}
+\begin{aligned}
+\widehat{\mathcal E}_5={}&\frac12\Big[{n_{4}}\cup_3{n'_{4}}+d{n_{4}}\cup_4{n'_{4}}+({n_{4}}+{n'_{4}})\cup_3{\mathcal E_4}
+ +({\mathcal E_4}+{(\bar n_{2}\overline{n'_{2}})})\cup_3{(\bar n_{2}\overline{n'_{2}})}+d{N_{4}}\cup_4{(\bar n_{2}\overline{n'_{2}})}\\
+ &\qquad +\zeta_{2,2}({\bar n_{2}},{\overline{n'_{2}}})+{\bar n_{2}}\cup_1d{\check n'_{3}}+{\bar n_{2}^{[1]}}({\overline{n'_{2}}}\cup_1{\overline{n'_{2}}})
+ +({\check\omega_2}\cup_1{\bar n_{2}}){\overline{n'_{2}}}+{s_1}{\bar n_{2}}{\overline{n'_{2}}^{[1]}}+{s_1}({\bar n_{2}}\cup_1{s_1}){\overline{n'_{2}}}+{\check{\mathcal E}_{3}}({\bar n_{2}}+{\overline{n'_{2}}})+{\check\omega_2}{\check{\mathcal E}_{3}}+Z_5\Big]\\
+ &+\frac14\Big[\mathcal V_5+\Delta(n_2\check n_3)+(n_2\cup_1\check\omega_2)n'_2
+ +(n'_2\cup_1\check\omega_2)n_2\Big]
+ +\frac18\check\omega_2(n_2\cup_1n'_2)\\
+ &+\frac13\big[(n'_2-n_2)(n_2\cup_1n'_2)
+ -(n_2\cup_1n'_2)(n'_2-n_2)\big]\pmod1.
+\end{aligned}
 ```
 
-The output is
-$`(N_2,N_3,N_4,\nu_5\nu'_5\exp(2\pi i\widehat{\mathcal E}_5))`$.
-The binary term $`Z_5`$ is the explicit finite transfer defined in
-[Terminal transfer](formulas/TERMINAL_TRANSFER.md). Its kernel, face rule,
-coefficient polynomials, and finite sum are all specified there.
-The ordered $`1/3`$ term is retained; its cup products do not commute.
+The full output is
 
-For comparison with the earlier source convention, denote its additive source by $`\widehat{\mathcal O}_{6,\mathrm{raw}}`$. The exact change, together with the displayed cubic contribution, is
+```math
+(N_2,N_3,N_4,\nu_5^{\mathrm{out}}),\qquad
+\widehat\nu_5^{\mathrm{out}}
+ =\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal E}_5.
+```
+
+$`Z_5`$ is the finite binary operation in
+[Terminal transfer](formulas/TERMINAL_TRANSFER.md). Its kernel, face rule,
+coefficient polynomials, and finite sum are specified there. It is retained
+as a defined operation, rather than replacing it by a list of implementation
+intermediates. The ordered integer $`1/3`$ products do not commute.
+
+### Relation to the earlier source representative
+
+Write $`\widehat{\mathcal O}_{6,\mathrm{raw}}`$ for the earlier source.
+The displayed change is paired with the product change in the same
+coordinates:
 
 <a id="eq-t4e"></a>
 
-**(T4e)**
+**(T4E)**
 
 ```math
 {\widehat{\mathcal O}}_6=\widehat{\mathcal O}_{6,\mathrm{raw}}+d_{s_1}\Lambda_5+\frac1{12}{n_{2}}^3,
 \qquad \Lambda_5=\frac14{\beta^\circ\check n_3}\cup_3{B_4^\psi}.
 ```
 
-The source and stacking product in this guide use the same representative.
-A change of source coordinates must be accompanied by the corresponding
-change of product coordinates.
+The corresponding terminal redefinition contributes
+$`\Delta\Lambda_5`$ to the stacking correction. The separate cubic term
+shown in (T4e) is retained in (T4); it is not being called a coboundary.
 
-## Classification and comparison of conventions
+## Classification and changes of representative
 
-For fixed lower decorations, solve the obstruction equations modulo the
-allowed gauge and lower-layer changes. A nonzero obstruction cochain can
-be exact, or can become exact after those changes. Only a nontrivial final
-class obstructs the decoration. Apply the full stacking law to accepted
-representatives and reduce by those same equivalences. The resulting
-extensions determine the full stacking group.
+For fixed lower decorations, solve each obstruction modulo the permitted
+gauge and lower-layer changes. A nonzero cochain may be exact; only a
+nontrivial final obstruction class rules out the decoration. Stack accepted
+representatives using the paired product and reduce by the same equivalences.
 
-Some earlier manuscript drafts used a bar or prime for the shifted
-Majorana field and a prime for $`\omega_2+s_1^2`$. Here these two shifts
-always carry a check. A bar always means binary reduction, and a prime
-always identifies the second input. This is a notation change, not a
-change of cochain representative.
+For a terminal phase change $`\widehat\nu\mapsto\widehat\nu+f`$, with
+lower fields and their product fixed, the source and correction transform
+together:
 
-The readable formulas are independent of programming variable names. The
-separate [implementation translation](../formulas/CODE_NOTATION.md) connects
-this notation to the executable definitions. Fixed source coefficients and
-previous computed results are unchanged by this notation organization.
+```math
+\widehat{\mathcal O}\longmapsto\widehat{\mathcal O}+d_{s_1}f,\qquad
+\widehat{\mathcal E}\longmapsto\widehat{\mathcal E}+\Delta f.
+```
+
+A change of a lower decoration must also be substituted into every higher
+source and product. These coordinate rules concern the full equations,
+not only the abstract group obtained in an example.
+
+The separate [programmer translation](../formulas/CODE_NOTATION.md) records
+how the formulas correspond to existing variables and compiled operations.

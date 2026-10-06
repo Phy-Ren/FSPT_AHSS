@@ -54,8 +54,26 @@ point; do not pass a shifted field as the native API input.
 
 Integer values retain their signs. `carry(n)` means
 $`\bar n_{d-2}^{[1]}=\overline{\lfloor n_{d-2}/2\rfloor}`$.
-Floors, canonical binary lifts, and exact divisions follow the mathematical
-definitions. A required nonintegral quotient raises an error.
+Floors, canonical binary representatives, and exact divisions follow the
+mathematical definitions. A required nonintegral quotient raises an error.
+
+The formulas now leave a named binary field's zero-or-one integer
+representative implicit. The source code still performs exactly the same
+lift operations:
+
+| Readable-source operation | Mathematical expression in integer arithmetic |
+|---|---|
+| `x.lift()` for a named binary cochain | $`x`$ |
+| `(x+y).lift()` after binary addition | $`\overline{x+y}`$ |
+| `cup(x,y,i).lift()` with binary inputs and binary cup | $`\overline{x\cup_i y}`$ |
+| `cup(x.lift(),y.lift(),i)` with signed integer cup | $`x\cup_i y`$ |
+| `x.d().lift()` with binary differential | $`\overline{dx}`$ |
+| `x.lift().d()` with integer differential | $`dx`$ |
+| `x.reduce(2)` for an integer cochain | $`\bar x`$ |
+
+This convention removes notation from the formulas, not arithmetic from
+the evaluator. In particular, the two cup expressions and the two
+differentials in this table are distinct operations.
 
 ## Local names in the readable integer-layer definitions
 
@@ -108,18 +126,30 @@ and [T4a–T4e](../docs/FORMULA_GUIDE.md#eq-t4a).
 | Former $`R`$ | Ordered integer product $`n'_2n_2`$ |
 | Former $`D`$ | $`\Delta B_4=d\lambda_3-n'_2n_2`$ |
 | `Db` | $`\overline{\Delta B_4}`$ |
-| `V5`, `Phi5`, `Pi5`, `epsilon5` | $`\mathcal V_5,\Phi_5,\Pi_5,\varepsilon_5`$ |
+| `V5` | $`\mathcal V_5`$, the binary value used in the quarter-valued product |
+| `Phi5` | The expanded lower-field portion of the half-valued bracket in [T4d](../docs/FORMULA_GUIDE.md#eq-t4d) |
+| `Pi5` | The expanded integer terms accompanying $`\mathcal V_5`$ in the quarter-valued bracket of [T4d](../docs/FORMULA_GUIDE.md#eq-t4d) |
+| `epsilon5` | The expanded complex-fermion terms in the half-valued bracket of [T4d](../docs/FORMULA_GUIDE.md#eq-t4d) |
 | `Zvalue`, `binary_phase` | Evaluation of $`Z_5`$ |
 
-The variable `H` returned by `full3/source.py:blocks` is the **complete binary
-source block** $`\mathcal A_6`$, including its complex-fermion terms. It is not
-just $`\mathcal H_6`$. The other returned entries `Q,Pn,Wnn` are
-$`\mathcal Q_6`$, $`\mathcal P_{s_1}(\check\omega_2)n_2`$, and
-$`\widetilde{\check\omega_2}n_2^2`$, respectively, with the coefficient
-transports specified in the formulas. `high_source16` returns their weighted
-integer numerator with weights `8,4,1,2`; divide that value by sixteen to
-obtain the phase. The $`4+1`$D terminal
-source additionally retains the ordered cubic term $`n_2^3/12`$.
+The former source-sum names are now expanded in the
+[4+1D source](../docs/FORMULA_GUIDE.md#eq-t4):
+
+| Existing local or former formula name | Location in the expanded formula |
+|---|---|
+| Local `H`, former $`\mathcal A_6`$ | The complete half-valued binary bracket, including $`\mathrm{Sq}^2n_4+\omega_2n_4`$ |
+| Former $`\mathcal H_6`$ | The remaining terms of that binary bracket, after those two complex-fermion terms |
+| Local `Q`, former $`\mathcal Q_6`$ | The complete quarter-valued integer bracket |
+| `cartan_word`, former $`\mathcal C_6`$ | The reduced background-and-digit polynomial subtracted inside that quarter-valued bracket |
+| Former $`\widehat{\mathcal O}^{\mathrm{base}}_6`$ | The complete source before the final ordered cubic term |
+
+In particular, the source variable `H` includes the complex-fermion terms;
+it was never just the former $`\mathcal H_6`$. The other entries `Pn,Wnn`
+returned by `blocks` are $`\mathcal P_{s_1}(\check\omega_2)n_2`$ and
+$`\check\omega_2n_2^2`$, with the stated coefficient transports.
+`high_source16` returns the weighted integer numerator for `H,Q,Pn,Wnn`
+with weights `8,4,1,2`; divide it by sixteen to obtain the phase. The 4+1D
+source additionally retains $`n_2^3/12`$.
 
 ## 3+1D parameter fields
 
@@ -138,8 +168,9 @@ instead consumes the constructed fields in
 The parameterized arguments `NN,UU,CC` of `high_blocks` have degrees two,
 three, and four. `lift3_source` and `lift3_product` construct the respective
 interval and triangle fields; the runtime then evaluates `high6` and performs
-the signed integration. The correction $`D_3`$, the triangle term $`g_2`$,
-and the older fermion-coordinate change $`\kappa_3`$ keep their names.
+the signed integration. The former $`D_3`$ and $`g_2`$ are expanded directly
+in those parameter fields, with no change of the native physical $`n_3`$
+coordinate. The older fermion-coordinate change $`\kappa_3`$ keeps its name.
 The older coordinate change must be applied to its source and product
 together; it is not implied by renaming `c` to $`n_3`$.
 
@@ -162,10 +193,14 @@ $`q=1,2,3`$ denotes the Majorana degree and spatial dimension is $`q+1`$.
 | `gamma(a,w,s)` | Pure Majorana source $`\widehat{\mathcal O}^\gamma_{q+3}`$ |
 | `operator_gauge(c)` | $`\tfrac12n_{q+1}\cup_{q+1}dn_{q+1}`$ |
 
-The coordinate string `ca` selects the default representative defined by
-[M3–M11](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3). The string `operator`
-selects the paired source and product after the explicit change in
-[M12](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12).
+The coordinate string `ca` selects the default source and product in the
+separate [3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d),
+[4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d), and
+[2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d) sections.
+The string `operator` selects the paired change of representative in that
+same dimension: [M12, 3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12),
+[M12, 4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-4d), or
+[M12, 2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-2d).
 `ClosedMajoranaBackend` divides the compiled terminal numerator by eight.
 Its output is not silently substituted into the separate integer-layer
 publication coordinate.
@@ -186,18 +221,44 @@ phase coordinate. Its residual parity quotient remains part of classification.
 Similarly, the keys `beta` and `gamma` in specialized gauge calls denote gauge
 parameters, not automatically a Bockstein or a pure Majorana phase source.
 
+## Expanded source and transfer polynomials
+
+The following single-use formula names were removed from the reader's
+appendices. Their polynomial terms remain in the stated expression; the
+source functions and coefficient lists retain their existing identifiers.
+
+| Former formula label | Present location of the expanded expression |
+|---|---|
+| $`\mathcal X_7`$ | The explicit $`\mathcal W_4`$ word sum in $`M_7`$, [S4](../docs/formulas/SOURCE_OPERATIONS.md#eq-s4); [all 453 words](../docs/formulas/COEFFICIENTS.md#eq-y2) |
+| $`V_6,\Theta_6`$ | The two complete terms multiplied by sixteen inside the twisted differential in the numerator of $`R_7`$, [S6](../docs/formulas/SOURCE_OPERATIONS.md#eq-s6) |
+| $`B^{\mathrm{par}}_7`$ | The complete reduced binary polynomial with coefficient eight in that same numerator |
+| $`\widehat M_7`$ | The $`8M_7`$ term and the explicit integer Bockstein bracket with coefficient four in that numerator |
+| $`I_6`$ | The final even integer numerator, multiplied by one half, in $`\rho_6`$, [K1–K3](../docs/formulas/TERMINAL_TRANSFER.md#eq-k1) |
+| $`J_6`$ | The entire binary $`\Delta[\cdots]`$ bracket in that same kernel |
+| $`Q^{\mathrm{int}}_5,K^-_5,A^{\mathrm{pair}}_4,G^0_5`$ | Their full terms in the numerator defining $`D^0_5`$, [K10](../docs/formulas/TERMINAL_TRANSFER.md#eq-k10) |
+| $`L^\star_5`$ | The shuffle contribution written directly in $`L_5`$, [K11](../docs/formulas/TERMINAL_TRANSFER.md#eq-k11) |
+
+No retained numerical coefficient, word, quotient, or signed transport is
+changed by expanding these names. In particular, a bar on a whole integer
+numerator fixes the same reduction boundary that the reference evaluator
+expresses with explicit `reduce(2)` and `lift()` calls.
+
 ## Equation-to-program index
 
 | Formula family | API stage or readable entry point | Compiled targets |
 |---|---|---|
-| $`\mathcal O_d`$; [L1](../docs/FORMULA_GUIDE.md#eq-l1) | `source`, stage `majorana` | `source_3_majorana`, `source_4_majorana` |
-| $`\mathcal O_{d+1}`$; [L2–L4](../docs/FORMULA_GUIDE.md#eq-l2) | `source`, stage `fermion` | `source_3_fermion`, `source_4_fermion` |
-| $`\mathcal E_{d-1}`$; [P1–P2](../docs/FORMULA_GUIDE.md#eq-p1) | `product`, stage `majorana` | `product_3_majorana`, `product_4_majorana` |
-| $`\mathcal E_d`$; [P3–P5](../docs/FORMULA_GUIDE.md#eq-p3) | `product`, stage `fermion` | `product_3_fermion`, `product_4_fermion` |
+| 3+1D $`\mathcal O_3`$; [L1](../docs/FORMULA_GUIDE.md#eq-l1) | `source`, stage `majorana` | `source_3_majorana` |
+| 4+1D $`\mathcal O_4`$; [L1](../docs/FORMULA_GUIDE.md#eq-l1-4d) | `source`, stage `majorana` | `source_4_majorana` |
+| 3+1D $`\mathcal O_4`$; [L2–L3](../docs/FORMULA_GUIDE.md#eq-l2) | `source`, stage `fermion` | `source_3_fermion` |
+| 4+1D $`\mathcal O_5`$; [L2–L4](../docs/FORMULA_GUIDE.md#eq-l2-4d) | `source`, stage `fermion` | `source_4_fermion` |
+| 3+1D $`\mathcal E_2`$; [P1–P2](../docs/FORMULA_GUIDE.md#eq-p1) | `product`, stage `majorana` | `product_3_majorana` |
+| 4+1D $`\mathcal E_3`$; [P1–P2](../docs/FORMULA_GUIDE.md#eq-p1-4d) | `product`, stage `majorana` | `product_4_majorana` |
+| 3+1D $`\mathcal E_3`$; [P3](../docs/FORMULA_GUIDE.md#eq-p3) | `product`, stage `fermion` | `product_3_fermion` |
+| 4+1D $`\mathcal E_4`$; [P4–P5](../docs/FORMULA_GUIDE.md#eq-p4) | `product`, stage `fermion` | `product_4_fermion` |
 | $`\widehat{\mathcal O}_5,\widehat{\mathcal E}_4`$; [T3](../docs/FORMULA_GUIDE.md#eq-t3) | `full3/source.py:source16,product16` | `lift3_source`, `lift3_product`, `high6` |
 | $`\widehat{\mathcal O}_6`$; [T4](../docs/FORMULA_GUIDE.md#eq-t4) | `full4/product_full.py:full_source48` and runtime assembly | `high6` |
 | $`\widehat{\mathcal E}_5`$; [T4a–T4d](../docs/FORMULA_GUIDE.md#eq-t4a) | `full4/product_full.py:phase48` | `nonbinary4`, `rho4`, `tensor4` |
-| Closed-Majorana $`\mathcal O,\mathcal E`$; [M1–M12](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1) | `ClosedMajoranaBackend`, `majorana_complete.py` | `majorana_{q}_{operation}_{coordinate}` |
+| Closed-Majorana source/product; [3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d), [4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d), [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d) | `ClosedMajoranaBackend`, `majorana_complete.py` | `majorana_{q}_{operation}_{coordinate}` |
 | fMPS source and product; [M13–M14](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m13) | `FMPS1Backend.source`, `FMPS1Backend.product` | Direct exact endpoint evaluation |
 
 The [registry](FORMULA_REGISTRY.json) expands each family into concrete

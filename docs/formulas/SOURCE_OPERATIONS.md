@@ -1,35 +1,36 @@
 # Fixed operations in the terminal source
 
-The [shared source](../FORMULA_GUIDE.md#shared-terminal-source) uses two fixed
-binary operations, $`T_6`$ and $`y_6`$. The first continues the closed
-Majorana source to an open three-cochain; the second completes the integer
-layer. This appendix defines both by finite sums.
+The terminal formulas use the finite operations $`T_6`$ and $`y_6`$ defined
+here. Their degree-two integer argument is a physical field in
+[4+1D](../FORMULA_GUIDE.md#four-dimensional-pair). In
+[3+1D](../FORMULA_GUIDE.md#three-dimensional-pair), it is instead the
+explicitly constructed interval or triangle field; it is not a physical
+3+1D degree-two integer decoration. The degrees of all arguments in this
+appendix are fixed, independently of those two uses.
 
-All fields retain the notation of the guide: $`n_2`$ is the integer layer,
-$`\omega_2,s_1`$ are the backgrounds, a bar takes parity, and a tilde lifts a
-binary expression to the integers. The check denotes the specific shifts
-already defined there, including
-$`\check\omega_2=\omega_2+s_1\cup s_1`$ and
+The backgrounds are $`\omega_2,s_1`$, and a bar takes parity. In integer
+arithmetic a binary field means its canonical value $`0,1`$. A bar around
+a composite expression means: form that entire binary expression first,
+then use its value $`0,1`$. In particular it cannot be replaced by the
+unreduced sum of its integer-valued terms. The coefficient transports are
+fixed in [Operations](OPERATIONS.md).
+
+The shifted background is $`\check\omega_2=\omega_2+s_1\cup s_1`$ and the
+closed degree-four source is
 $`\check{\mathcal O}_4=\bar n_2^2+\check\omega_2\bar n_2`$.
-The Bocksteins $`\beta,\beta_{s_1},\beta^+`$, cup products, and integration
-are defined in [Operations](OPERATIONS.md).
+The source $`\mathcal O^\psi_5`$, the residual $`B_4^\psi`$, and the
+Pontryagin-square representative $`\mathcal P_{s_1}`$ have the definitions
+in the guide. The Bocksteins $`\beta,\beta_{s_1},\beta^+`$ and finite cup
+operations have the definitions in [Operations](OPERATIONS.md).
 
-The substantial operations used in this appendix are:
+Only the following operations are named here:
 
-| Operation | Output and purpose | Definition |
+| Operation | Purpose | Definition |
 |---|---|---|
-| $`\mathcal X_7[z]`$ | Binary degree-seven Adem operation on a closed four-cochain | (S4), [word table](COEFFICIENTS.md#adem-words) |
-| $`M_7[z;\omega_2,s_1]`$ | Binary degree-seven closed-cochain source | (S4) |
-| $`T_6[z;\omega_2,s_1]`$ | Binary degree-six continuation to an open three-cochain | (S5) |
-| $`V_6,\Theta_6`$ | Exact rational degree-six source pieces | (S6) |
-| $`B^{\rm par}_7`$ | Binary degree-seven remainder of the lower source | (S6) |
-| $`\widehat M_7`$ | Degree-seven additive phase correction, with its displayed rational representative | (S6) |
-| $`R_7`$ | Binary degree-seven remainder after exact integer division | (S6) |
-| $`y_6[n_2;\omega_2,s_1]`$ | Binary degree-six integer-layer completion | (S7)–(S8) |
-
-The quantities $`\mathcal C_6`$ and $`B_4^\psi`$ retain their
-definitions in (S1)–(S2) of the guide. The latter is the integer part of the
-carry that depends only on $`n_2`$ and the backgrounds; it has degree four.
+| $`M_7`$ | Binary degree-seven operation on a closed four-cochain, shared by the two constructions below | (S4) |
+| $`T_6`$ | Its continuation to an open degree-three cochain by a fixed interval sum | (S5) |
+| $`R_7`$ | The binary remainder evaluated on the three-factor grids | (S6) |
+| $`y_6`$ | Integer-layer completion by the fixed grid and coefficient sums | (S7)–(S8) |
 
 ## Closed degree-four operation
 
@@ -41,27 +42,19 @@ For a closed binary four-cochain $`z`$, define
 
 ```math
 \begin{aligned}
-M_7[z;\omega_2,s_1]={}&\zeta_{2,4}(\omega_2,z)+\mathcal X_7[z]\\
+M_7[z;\omega_2,s_1]={}&\mathop{\mathrm{MS}}\nolimits_{123134343}(\omega_2,\omega_2,z,z)
+ +\sum_{\eta\in\mathcal W_4}\mathop{\mathrm{MS}}\nolimits_\eta(z,z,z,z)\\
 &+(z\cup_2z)\cup_5(\omega_2z)
  +(z\cup_2z)\cup_5(s_1\overline{\beta z})\\
 &+(\omega_2z)\cup_5(s_1\overline{\beta z})
- +\zeta_{1,5}(s_1,\overline{\beta z})\\
+ +\mathop{\mathrm{MS}}\nolimits_{123143434}(s_1,s_1,\overline{\beta z},\overline{\beta z})\\
 &+(\omega_2\cup_1s_1)\overline{\beta z}
- +s_1(z\cup_2z)+s_1^2\overline{\beta^+z},\\
-\zeta_{2,4}(\omega_2,z)={}&
- \mathop{\mathrm{MS}}\nolimits_{123134343}(\omega_2,\omega_2,z,z),\\
-\zeta_{1,5}(s_1,\overline{\beta z})={}&
- \mathop{\mathrm{MS}}\nolimits_{123143434}
- (s_1,s_1,\overline{\beta z},\overline{\beta z}),\\
-\mathcal X_7[z]={}&\sum_{\eta\in\mathcal W_4}
- \mathop{\mathrm{MS}}\nolimits_\eta(z,z,z,z).
+ +s_1(z\cup_2z)+s_1^2\overline{\beta^+z}.
 \end{aligned}
 ```
 
 All **453 words** of $`\mathcal W_4`$ are printed in
-[Coefficients](COEFFICIENTS.md#adem-words). The subscript of $`\mathcal X_7`$
-is its output degree; that of the word set $`\mathcal W_4`$ is the input
-degree. No coefficient is fitted or chosen during evaluation.
+[Coefficients](COEFFICIENTS.md#adem-words). The subscript of the word set $`\mathcal W_4`$ is the input degree. No coefficient is fitted or chosen during evaluation.
 
 ## Open degree-three continuation
 
@@ -100,9 +93,10 @@ four-cochain $`dz^J`$, not the open three-cochain $`z`$.
 <a id="source-completion"></a>
 ## Integer-layer completion
 
-Let $`n_2`$ be a twisted integer two-cocycle. The following expressions use
-the guide's $`\check{\mathcal O}_4,B_4^\psi,\mathcal C_6,\mathcal O^\psi_5`$ and do not
-require a choice of Majorana or complex-fermion decoration:
+Let $`n_2`$ be a twisted integer two-cocycle. No Majorana or
+complex-fermion decoration is chosen in this construction. The following
+formula replaces separate names for the rational pieces: assemble the
+**entire integer numerator**, divide by eight, and then take parity.
 
 <a id="eq-s6"></a>
 
@@ -110,34 +104,34 @@ require a choice of Majorana or complex-fermion decoration:
 
 ```math
 \begin{aligned}
-V_6={}&\frac14\big[
- \widetilde{\omega_2}B_4^\psi+B_4^\psi\cup_2B_4^\psi
- +(\beta\check{\mathcal O}_4)\cup_3B_4^\psi\\
-&\qquad-B_4^\psi\cup_3[(\beta_{s_1}\check\omega_2)n_2]
- -\widetilde{\mathcal C_6}\big]\\
-&+\frac1{16}\mathcal P_{s_1}(\check\omega_2)n_2
- +\frac18\widetilde{\check\omega_2}n_2^2,\\
-\Theta_6={}&\frac14\widetilde{\omega_2}\widetilde{\check{\mathcal O}_4}
- +\frac12\big[\check{\mathcal O}_4\cup_1
- (\overline{\beta\omega_2}+s_1\omega_2)\big],\\
-B^{\rm par}_7={}&\mathcal O^\psi_5\cup_3\mathcal O^\psi_5
- +(\mathrm{Sq}^2\check{\mathcal O}_4
- +s_1\mathrm{Sq}^1\check{\mathcal O}_4
- +\omega_2\check{\mathcal O}_4)\cup_4\mathcal O^\psi_5+\omega_2\mathcal O^\psi_5,\\
-\widehat M_7={}&\frac12M_7[\check{\mathcal O}_4;\omega_2,s_1]
- +\frac14\big[\widetilde{\omega_2}\,\beta\check{\mathcal O}_4
- +(\beta\check{\mathcal O}_4)\cup_3(\beta\check{\mathcal O}_4)\big],\\
-R_7={}&\overline{\frac{
- d_{s_1}(16V_6+16\Theta_6)
- +8\widetilde{B^{\rm par}_7}+16\widehat M_7}{8}}.
+R_7=\frac18\Big\{&d_{s_1}\Big[
+ 4\big(\omega_2B_4^\psi+B_4^\psi\cup_2B_4^\psi
+ +(\beta\check{\mathcal O}_4)\cup_3B_4^\psi
+ -B_4^\psi\cup_3[(\beta_{s_1}\check\omega_2)n_2]\big)\\
+&\qquad-4\overline{\left[\begin{gathered}\mathop{\mathrm{MS}}\nolimits_{12132434}
+ (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
+ +\overline{\beta_{s_1}\check\omega_2}^{[1]}(\bar n_2\cup_1\bar n_2)\\{}+(s_1\overline{\beta_{s_1}\check\omega_2})\bar n_2^{[1]}
+ +s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\end{gathered}\right]}\\
+&\qquad+\mathcal P_{s_1}(\check\omega_2)n_2
+ +2\check\omega_2n_2^2+4\omega_2\check{\mathcal O}_4
+ +8\overline{\big[\check{\mathcal O}_4\cup_1(\overline{\beta\omega_2}+s_1\omega_2)\big]}\Big]\\
+&+8\overline{\big[\mathcal O^\psi_5\cup_3\mathcal O^\psi_5
+ +(\mathrm{Sq}^2\check{\mathcal O}_4+s_1\mathrm{Sq}^1\check{\mathcal O}_4
+ +\omega_2\check{\mathcal O}_4)\cup_4\mathcal O^\psi_5
+ +\omega_2\mathcal O^\psi_5\big]}\\
+&+8M_7[\check{\mathcal O}_4;\omega_2,s_1]
+ +4\big[\omega_2\beta\check{\mathcal O}_4
+ +(\beta\check{\mathcal O}_4)\cup_3(\beta\check{\mathcal O}_4)\big]\Big\}
+ \pmod2.
 \end{aligned}
 ```
 
-Here $`\check{\mathcal O}_4`$ is closed, so its ordinary Bockstein is
-defined. Every rational term in (S6), including $`\widehat M_7`$, is retained
-as the exact displayed rational cochain during assembly. Form the whole
-numerator defining $`R_7`$ over the integers, divide by eight, and only then
-take parity. Its numerator is pointwise divisible by eight.
+The numerator is pointwise divisible by eight. All operations inside the
+outer braces are integer operations, including the differential on the
+square bracket. Each barred subexpression supplies its canonical binary
+value before that integer assembly. In particular no fraction is reduced
+modulo one partway through the calculation. The ordinary Bockstein of
+$`\check{\mathcal O}_4`$ is defined because that source is closed.
 
 The required binary operation is
 

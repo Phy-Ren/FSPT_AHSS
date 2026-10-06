@@ -4,20 +4,21 @@ This appendix defines the binary five-cochain $`Z_5`$ in (T4d) of the
 [formula guide](../FORMULA_GUIDE.md#four-dimensional-pair). The inputs are
 $`(n_2,\check n_3)`$ and $`(n'_2,\check n'_3)`$, with common backgrounds
 $`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,\check
-N_3`$ are the output. Bars, digit superscripts, tildes, and checks have the
-same meanings as in the guide.
+N_3`$ are the output. These are the physical 4+1D fields; this appendix
+does not assign these degrees to the physical fields in 3+1D. Bars, digit
+superscripts, and checks have the same meanings as in the guide. In integer
+arithmetic each binary field supplies its canonical value $`0,1`$; a whole
+composite binary expression is reduced first whenever a bar surrounds it.
 
 The definitions below are in evaluation order. The only additional named
 operations are substantial polynomials or geometric sums:
 
 | Operation | Degree and role | Definition |
 |---|---|---|
-| $`\mathcal J_6`$ | Binary degree-six correction to the shared $`\mathcal H_6`$ | (K1) |
-| $`I_6`$ | Even integral degree-six numerator | (K2) |
 | $`\rho_6`$ | Binary degree-six transfer kernel | (K3) |
-| $`L^s_5,L^0_5,L^\star_5,L_5`$ | Binary degree-five tensor coefficients, separated by background degree | (K6), (K9), (K11) |
+| $`L^s_5,L^0_5,L_5`$ | Binary degree-five tensor coefficients, separated by background degree | (K6), (K9), (K11) |
 | $`P_i^{L},P_i^{R}`$ | Binary tetrahedral polynomials | (K8) |
-| $`\mathcal Q^{\rm int}_5,K^-_5,A^{\rm pair}_4,G^0_5,D^0_5`$ | Degree-indexed pieces of the zero-background integer carry | (K10) |
+| $`D^0_5`$ | Binary reduction of the complete zero-background integer carry | (K10) |
 | $`Z_5`$ | Binary degree-five finite transfer | (K12) |
 
 The lower correction $`\mathcal E_4`$, its shifted predecessor
@@ -30,67 +31,65 @@ to the first input. All products remain ordered.
 
 ## The binary kernel
 
-Define
+The kernel is given directly below, without separate names for its
+single-input and even-integer pieces. All terms before the final braces are binary. The $`\Delta`$
+acts on the entire following binary bracket. The final braces form one
+integer numerator; it is pointwise even, and is divided by two before the
+final reduction modulo two. The binary source values
+$`\mathcal O_5[n_2,\check n_3]`$ are the complex-fermion obstruction of the
+guide, not additional input fields.
 
 <a id="eq-k1"></a>
-
-**(K1)**
-
-```math
-\mathcal J_6[n_2,\check n_3]
- =\mathcal H_6[n_2,\check n_3]
- +\bar n_2\overline{B_4}
- +(\bar n_2\cup_1\overline{\beta_{s_1}\check\omega_2})\bar n_2.
-```
-
-First form the entire integer expression
-
 <a id="eq-k2"></a>
-
-**(K2)**
-
-```math
-\begin{aligned}
-I_6={}&\Delta(B_4\cup_2B_4+B_4\cup_3dB_4)
- +\widetilde{\omega_2}\,\Delta B_4-\Delta\widetilde{\mathcal C_6}\\
-&+\widetilde{\check\omega_2}(n'_2n_2)
- +(\beta_{s_1}\check\omega_2)(n_2\cup_1n'_2)
- -d_{s_1}\widetilde{\mathcal V_5}.
-\end{aligned}
-```
-
-It is pointwise even. The kernel is
-
 <a id="eq-k3"></a>
 
-**(K3)**
+**(K1–K3)**
 
 ```math
 \begin{aligned}
 \rho_6={}&
  \mathrm{Sq}^2(\mathcal E_4+\bar n_2\overline{n'_2})
  +\omega_2(\mathcal E_4+\bar n_2\overline{n'_2})\\
-&+\mathcal O_5[n_2,\check n_3]\cup_4
- \mathcal O_5[n'_2,\check n'_3]\\
-&+\big(\mathcal O_5[n_2,\check n_3]
- +\mathcal O_5[n'_2,\check n'_3]\big)
+&+\mathcal O_5[n_2,\check n_3]\cup_4\mathcal O_5[n'_2,\check n'_3]\\
+&+\big(\mathcal O_5[n_2,\check n_3]+\mathcal O_5[n'_2,\check n'_3]\big)
  \cup_3(\mathcal E_4+\bar n_2\overline{n'_2})\\
 &+(\mathcal E_4+\bar n_2\overline{n'_2})\cup_3
- \big(\mathcal O_5[n_2,\check n_3]
- +\mathcal O_5[n'_2,\check n'_3]\big)\\
-&+\mathcal J_6[N_2,\check N_3]
- +\mathcal J_6[n_2,\check n_3]
- +\mathcal J_6[n'_2,\check n'_3]\\
-&+\overline{I_6/2}
- +\check\omega_2\,d\check{\mathcal E}_3
- +\overline{\beta_{s_1}\check\omega_2}\,\check{\mathcal E}_3.
+ \big(\mathcal O_5[n_2,\check n_3]+\mathcal O_5[n'_2,\check n'_3]\big)\\
+&+\Delta\Big[
+ T_6[\check n_3;\omega_2,s_1]
+ +\check n_3(\overline{\beta\omega_2}+s_1\omega_2)\\
+&\qquad+(\mathrm{Sq}^2\check n_3+s_1\mathrm{Sq}^1\check n_3
+ +\omega_2\check n_3)\cup_4\mathcal O^\psi_5
+ +y_6[n_2;\omega_2,s_1]\\
+&\qquad+\overline{\beta^\circ\check n_3}\cup_2\overline{B_4^\psi}
+ +s_1(\overline{\beta^\circ\check n_3}\cup_3\overline{B_4^\psi})\\
+&\qquad+\bar n_2\overline{B_4}
+ +(\bar n_2\cup_1\overline{\beta_{s_1}\check\omega_2})\bar n_2\Big]\\
+&+\check\omega_2\,d\check{\mathcal E}_3
+ +\overline{\beta_{s_1}\check\omega_2}\,\check{\mathcal E}_3\\
+&+\frac12\Big\{
+ \Delta(B_4\cup_2B_4+B_4\cup_3dB_4)
+ +\omega_2\,\Delta B_4\\
+&\qquad-\Delta\overline{\left[\begin{gathered}\mathop{\mathrm{MS}}\nolimits_{12132434}
+ (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
+ +\overline{\beta_{s_1}\check\omega_2}^{[1]}(\bar n_2\cup_1\bar n_2)\\{}+(s_1\overline{\beta_{s_1}\check\omega_2})\bar n_2^{[1]}
+ +s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\end{gathered}\right]}\\
+&\qquad+\check\omega_2(n'_2n_2)
+ +(\beta_{s_1}\check\omega_2)(n_2\cup_1n'_2)
+ -d_{s_1}\mathcal V_5\Big\}
+ \pmod2.
 \end{aligned}
 ```
 
-Every derivative differentiates a specified expression. In particular,
-$`d\overline{B_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and
+Every derivative differentiates a specified expression. In the binary
+part, $`d\overline{B_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and
 $`d\check{\mathcal E}_3=\bar n_2\overline{n'_2}+\overline{n'_2}\bar n_2`$.
-The free complex-fermion solutions $`n_4,n'_4`$ do not enter this kernel.
+Inside the final integer braces, $`d_{s_1}\mathcal V_5`$ differentiates the
+canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
+inputs, including $`B_4^\psi,\mathcal O^\psi_5,T_6,y_6`$. The bar on
+the polynomial following the minus sign is taken **before** its signed
+stacking difference. The free complex-fermion solutions $`n_4,n'_4`$ do not
+enter this kernel.
 
 ## Shared-background coordinates
 
@@ -153,7 +152,7 @@ either background; its failure on the zeroth face is precisely (K5).
 
 ## The tensor coefficient
 
-Write $`L_5=L^\star_5+L^s_5`$. Its antiunitary term uses the integer digit
+The background-degree-one contribution $`L^s_5`$ uses the integer digit
 rule from the guide, $`\bar x^{[j]}=\overline{\lfloor x/2^j\rfloor}`$:
 
 <a id="eq-k6"></a>
@@ -289,42 +288,38 @@ $`B_4,B'_4,\Delta B_4,\lambda_3`$ at these backgrounds. Form
 
 ```math
 \begin{aligned}
-\mathcal Q^{\rm int}_5={}&
+D^0_5=\frac12\Big\{&
  B_4\cup_3B'_4+(B_4+B'_4)\cup_3\Delta B_4
  +\lambda_3\cup_1\lambda_3+\lambda_3\cup_2d\lambda_3
  +(n'_2n_2)\cup_3d\lambda_3\\
 &+\zeta^{\mathbb Z}_{2,2}(n'_2,n_2)
- -\binom{n'_2}2(n_2\cup_1n_2),\\
-K^-_5={}&(n_2+2n'_2)(n_2\cup_1n'_2)
- +(n_2\cup_1n'_2)(2n_2+n'_2),\\
-A^{\rm pair}_4={}&
- \check n'_3\cup_1\bar n_2
+ -\binom{n'_2}2(n_2\cup_1n_2)\\
+&-3\big[(n_2+2n'_2)(n_2\cup_1n'_2)
+ +(n_2\cup_1n'_2)(2n_2+n'_2)\big]-\mathcal V_{5,0}\\
+&-d\overline{\big[\check n'_3\cup_1\bar n_2
  +\overline{n'_2}\cup_1\check{\mathcal E}_3
- +\mathop{\mathrm{MS}}\nolimits_{23123}
- (\bar n_2,\overline{n'_2},\overline{n'_2}),\\
-G^0_5[n_2,\check n_3]={}&
- \frac12\widetilde{\check n_3\bar n_2}
- +\frac14n_2\widetilde{\check n_3},\\
-D^0_5={}&\overline{\frac{
- \mathcal Q^{\rm int}_5-3K^-_5
- -\widetilde{\mathcal V_{5,0}}-d\widetilde{A^{\rm pair}_4}
- -4\Delta G^0_5}{2}}.
+ +\mathop{\mathrm{MS}}\nolimits_{23123}(\bar n_2,\overline{n'_2},\overline{n'_2})\big]}\\
+&-2\Delta\overline{\big[\check n_3\bar n_2\big]}
+ -\Delta(n_2\check n_3)\Big\}\pmod2.
 \end{aligned}
 ```
 
-The integer face polynomial is
+The only additional face operation in this expression is the integral
+polynomial
 
 ```math
 \zeta^{\mathbb Z}_{2,2}(n'_2,n_2)(012345)
  =n'_2(012)n'_2(023)n_2(235)n_2(345).
 ```
 
-$`\mathcal V_{5,0}`$ means (T4b) evaluated at $`\omega_2=s_1=0`$.
-The difference $`\Delta G^0_5`$ uses the zero-background output
-$`(N_2,\check N_3)`$ and the two inputs, in that order. The whole numerator
-defining $`D^0_5`$ is even. Retain the displayed integer lift of
-$`\check n_3\bar n_2`$ when forming $`4\Delta G^0_5`$; taking a phase modulo
-one earlier would discard the required carry.
+$`\mathcal V_{5,0}`$ is the binary polynomial (T4b) at
+$`\omega_2=s_1=0`$, supplying its canonical value $`0,1`$ to the integer
+numerator. The same rule applies to each barred expression. In particular,
+$`d`$ in the fourth line is the **integer** differential after reduction
+of the expression it acts on. The stacking differences are also taken over
+the integers. Assemble the complete numerator, which is pointwise even,
+then divide by two and take parity. No reduction of a rational phase
+modulo one is performed before these operations.
 
 Now define
 
@@ -333,7 +328,7 @@ Now define
 **(K11)**
 
 ```math
-L^\star_5=L^0_5+\mathop{\mathrm{AW}}\nolimits^*
+L_5=L^s_5+L^0_5+\mathop{\mathrm{AW}}\nolimits^*
 \big[(\mathop{\mathrm{sh}}\nolimits^*D^0_5)_{2,3}
  +(\mathop{\mathrm{sh}}\nolimits^*D^0_5)_{3,2}\big].
 ```
@@ -342,10 +337,10 @@ This notation is a finite rule: for $`(p,q)=(2,3)`$ and $`(3,2)`$, use the
 front $`p`$-face and back $`q`$-face of a five-simplex, sharing vertex $`p`$.
 Enumerate the ten paths from $`(0,p)`$ to $`(p,5)`$. Pull the two complete
 zero-background inputs along coordinates one and two, evaluate $`D^0_5`$,
-and sum modulo two. Add the two sums to $`L^0_5`$. On a graded simplex,
-$`L^\star_5`$ uses its two graded inputs at background degree zero, while
-(K6) uses the background-degree-one component. These prescriptions define
-$`L_5`$ on every simplex appearing below.
+and sum modulo two. Together with $`L^0_5`$, these are the
+background-degree-zero terms. The contribution $`L^s_5`$ in (K6) uses the
+background-degree-one component. These prescriptions define $`L_5`$ on
+every simplex appearing below.
 
 <a id="transfer"></a>
 ## The six-slot formula

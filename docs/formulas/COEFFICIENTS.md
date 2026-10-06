@@ -1,6 +1,11 @@
 # Complete fixed coefficients
 
 This appendix completes the evaluation of the [source operations](SOURCE_OPERATIONS.md).
+Its inputs have the displayed cochain degrees: in the 4+1D source they are
+the physical fields; in the 3+1D construction they are the prescribed
+parameter fields of those degrees. Binary values in integer expressions
+use their canonical zero-or-one representatives, following
+[Operations](OPERATIONS.md#arithmetic-and-carries).
 All coefficients are the unchanged supplied values. A [machine-readable copy](../../formulas/SOURCE_COEFFICIENTS.json)
 contains the identical ordered lists; the equations and tables here specify their meaning without requiring source-code inspection.
 
@@ -433,21 +438,22 @@ The row layout below only groups entries for readability; it adds no operations.
 <a id="adem-words"></a>
 ## The 453-word degree-four Adem operation
 
-For a closed binary four-cochain $`z`$,
+For a closed binary four-cochain $`z`$, the word-sum term appearing directly
+in [S4](SOURCE_OPERATIONS.md#eq-s4) is
 
 <a id="eq-y2"></a>
 
 **(Y2)**
 
 ```math
-\mathcal X_7(z)=\sum_{v\in\mathcal W_4}\mathop{\mathrm{MS}}\nolimits_v(z,z,z,z)\pmod2.
+\sum_{v\in\mathcal W_4}\mathop{\mathrm{MS}}\nolimits_v(z,z,z,z)\pmod2.
 ```
 
 Each word in the following table occurs once. Evaluate it by the interval-cut
 rule in [Operations](OPERATIONS.md#interval-cuts). The words have thirteen
 letters and four labels, so their output degree is $`4\cdot4-13+4=7`$.
-The operation's subscript records that output degree; the word-list subscript
-in $`\mathcal W_4`$ records the degree of each input $`z`$.
+The word-list subscript in $`\mathcal W_4`$ records the degree of each
+input $`z`$.
 
 | Word | Word | Word |
 |---|---|---|
