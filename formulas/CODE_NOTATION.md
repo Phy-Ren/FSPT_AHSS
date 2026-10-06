@@ -139,8 +139,8 @@ The former source-sum names are now expanded in the
 |---|---|
 | Local `H`, former $`\mathcal A_6`$ | The complete half-valued binary bracket, including $`\mathrm{Sq}^2n_4+\omega_2n_4`$ |
 | Former $`\mathcal H_6`$ | The remaining terms of that binary bracket, after those two complex-fermion terms |
-| Local `Q`, former $`\mathcal Q_6`$ | The complete quarter-valued integer bracket |
-| `cartan_word`, former $`\mathcal C_6`$ | The reduced background-and-digit polynomial subtracted inside that quarter-valued bracket |
+| Local `Q`, former $`\mathcal Q_6`$ | All quarter-valued source terms, including the separately displayed subtraction |
+| `cartan_word`, former $`\mathcal C_6`$ | The complete reduced background-and-digit polynomial in that subtraction |
 | Former $`\widehat{\mathcal O}^{\mathrm{base}}_6`$ | The complete source before the final ordered cubic term |
 
 In particular, the source variable `H` includes the complex-fermion terms;
@@ -155,20 +155,23 @@ source additionally retains $`n_2^3/12`$.
 
 The physical $`3+1`$D fields are $`n_1,\check n_2,n_3`$. The shared source
 instead consumes the constructed fields in
-[T3b–T3c](../docs/FORMULA_GUIDE.md#eq-t3b):
+[T3a–T3c](../docs/FORMULA_GUIDE.md#eq-t3b):
 
 | Earlier notation or construction | Current notation |
 |---|---|
 | $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the triangle; output of `fields_on_triangle` | $`n_2^\triangle,\check n_3^\triangle,n_4^\triangle`$ |
 | $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the interval; output of `fields_on_interval` | $`n_2^I,\check n_3^I,n_4^I`$ |
 | $`\theta,\phi,\chi`$ | $`\theta_1,\theta'_1,\chi_1`$ |
-| Former $`J_5=F_5(\mathfrak n,\mathfrak u)`$ | $`\mathcal O_5[n_2^\triangle,\check n_3^\triangle]`$ |
+| Former $`J_5=F_5(\mathfrak n,\mathfrak u)`$ | $`\mathcal O_5^\triangle`$ |
 | Former $`\mathcal H_4`$ acting on that source | $`(\mathsf h_4^{(2)})^*`$ |
 
 The parameterized arguments `NN,UU,CC` of `high_blocks` have degrees two,
 three, and four. `lift3_source` and `lift3_product` construct the respective
 interval and triangle fields; the runtime then evaluates `high6` and performs
-the signed integration. The former $`D_3`$ and $`g_2`$ are expanded directly
+the signed integration. The compact mathematical presentation uses the full
+auxiliary degree-six source; its cubic term has zero transgression on both
+parameter spaces, so the runtime may omit it without changing either phase.
+The former $`D_3`$ and $`g_2`$ are expanded directly
 in those parameter fields, with no change of the native physical $`n_3`$
 coordinate. The older fermion-coordinate change $`\kappa_3`$ keeps its name.
 The older coordinate change must be applied to its source and product
