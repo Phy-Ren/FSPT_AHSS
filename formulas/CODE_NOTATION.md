@@ -307,3 +307,17 @@ a combined expression; `Zvalue` is not a pure-p+ip twister. The 3+1D
 terminal operations are expanded in the main guide, with the finite lift
 and summation rules in the [technical file](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md).
 No compiled program or coefficient table changes in this regrouping.
+
+## GitHub script-glyph encoding
+
+The reader Markdown writes `\mathcal{ℰ}` and `\mathcal{𝒪}` for the same
+stacking correction and obstruction denoted by `\mathcal{E}` and
+`\mathcal{O}` in TeX. GitHub's native MathML display can ignore the script
+font on an ASCII letter; the explicit Unicode script glyph preserves its
+visible shape, including under a hat or check. This is a rendering fallback,
+not a different mathematical symbol or program variable.
+
+For manuscript TeX export, replace `\mathcal{ℰ}` with `\mathcal{E}` and
+`\mathcal{𝒪}` with `\mathcal{O}` before passing the formulas to LaTeX.
+The replacement is literal, including inside `\widehat{...}` and
+`\check{...}`. Formula token comparisons apply the same normalization.

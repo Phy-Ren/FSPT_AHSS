@@ -51,7 +51,7 @@ the binary complex-fermion cochain $`n_2`$, and the phase $`\nu_3`$.
 **(M2γ, 2+1D)**
 
 ```math
-dn_1=\mathcal O_2=0.
+dn_1=\mathcal{𝒪}_2=0.
 ```
 
 #### Complex-fermion obstruction
@@ -61,7 +61,7 @@ dn_1=\mathcal O_2=0.
 **(M2, 2+1D)**
 
 ```math
-dn_2=\mathcal O_3=\mathcal O^{\gamma}_3.
+dn_2=\mathcal{𝒪}_3=\mathcal{𝒪}^{\gamma}_3.
 ```
 
 ##### Majorana contribution
@@ -71,7 +71,7 @@ dn_2=\mathcal O_3=\mathcal O^{\gamma}_3.
 **(M2γ→c, 2+1D)**
 
 ```math
-\mathcal O^{\gamma}_3
+\mathcal{𝒪}^{\gamma}_3
  =\mathrm{Sq}^2n_1+\omega_2n_1+s_1\overline{\beta n_1}.
 ```
 
@@ -82,10 +82,10 @@ dn_2=\mathcal O_3=\mathcal O^{\gamma}_3.
 **(M3, 2+1D: obstruction)**
 
 ```math
-d_{s_1}\widehat\nu_3=\widehat{\mathcal O}_4
- =\widehat{\mathcal O}^{c}_4
-  +\widehat{\mathcal O}^{c\gamma}_4
-  +\widehat{\mathcal O}^{\gamma}_4.
+d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
+ =\widehat{\mathcal{𝒪}}^{c}_4
+  +\widehat{\mathcal{𝒪}}^{c\gamma}_4
+  +\widehat{\mathcal{𝒪}}^{\gamma}_4.
 ```
 
 ##### Complex-fermion contribution
@@ -95,7 +95,7 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal O}_4
 **(M3c, 2+1D)**
 
 ```math
-\widehat{\mathcal O}^{c}_4
+\widehat{\mathcal{𝒪}}^{c}_4
  =\frac12\big[\omega_2n_2+n_2\cup n_2
    +dn_2\cup_1n_2\big].
 ```
@@ -107,7 +107,7 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal O}_4
 **(M3cγ, 2+1D)**
 
 ```math
-\widehat{\mathcal O}^{c\gamma}_4
+\widehat{\mathcal{𝒪}}^{c\gamma}_4
  =\frac12\big[dn_2\cup_2dn_2\big].
 ```
 
@@ -119,7 +119,7 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal O}_4
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}^\gamma_4(n_1)={}&\frac12\big[
+\widehat{\mathcal{𝒪}}^\gamma_4(n_1)={}&\frac12\big[
  \mathop{\mathrm{MS}}\nolimits_{123134}(\omega_2,\omega_2,n_1,n_1)\\
 &\qquad+(\omega_2n_1)\cup_2(s_1\overline{\beta n_1})\\
 &\qquad+(\omega_2\cup_1s_1)\overline{\beta n_1}+s_1(s_1+n_1)\overline{\beta n_1}\big]\\
@@ -148,8 +148,8 @@ There is no stacking correction in this layer.
 **(M1c, 2+1D)**
 
 ```math
-N_2=n_2+n'_2+\mathcal E_2,\qquad
-\mathcal E_2=\mathcal E^{\gamma}_2.
+N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
+\mathcal{ℰ}_2=\mathcal{ℰ}^{\gamma}_2.
 ```
 
 ##### Majorana contribution
@@ -159,7 +159,7 @@ N_2=n_2+n'_2+\mathcal E_2,\qquad
 **(M1γ→c, 2+1D)**
 
 ```math
-\mathcal E^{\gamma}_2=(n_1\cup n'_1)+s_1(n_1\cup_1n'_1).
+\mathcal{ℰ}^{\gamma}_2=(n_1\cup n'_1)+s_1(n_1\cup_1n'_1).
 ```
 
 #### Bosonic stacking
@@ -171,11 +171,11 @@ N_2=n_2+n'_2+\mathcal E_2,\qquad
 ```math
 \begin{aligned}
 \widehat\nu_3^{\mathrm{out}}
- &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal E}_3,\\
-\widehat{\mathcal E}_3
- &=\widehat{\mathcal E}^{c}_3
-  +\widehat{\mathcal E}^{c\gamma}_3
-  +\widehat{\mathcal E}^{\gamma}_3.
+ &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal{ℰ}}_3,\\
+\widehat{\mathcal{ℰ}}_3
+ &=\widehat{\mathcal{ℰ}}^{c}_3
+  +\widehat{\mathcal{ℰ}}^{c\gamma}_3
+  +\widehat{\mathcal{ℰ}}^{\gamma}_3.
 \end{aligned}
 ```
 
@@ -186,9 +186,9 @@ N_2=n_2+n'_2+\mathcal E_2,\qquad
 **(M3Ec, 2+1D)**
 
 ```math
-\widehat{\mathcal E}^{c}_3
+\widehat{\mathcal{ℰ}}^{c}_3
  =\frac12\big[n_2\cup_1n'_2
- +(n_2+n'_2)\cup_1\mathcal E_2\big].
+ +(n_2+n'_2)\cup_1\mathcal{ℰ}_2\big].
 ```
 
 ##### Complex-fermion–Majorana contribution
@@ -199,7 +199,7 @@ N_2=n_2+n'_2+\mathcal E_2,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}^{c\gamma}_3
+\widehat{\mathcal{ℰ}}^{c\gamma}_3
  =\frac12\big[&dn_2\cup_2n'_2+N_2\cup_2dN_2\\
  &+n_2\cup_2dn_2+n'_2\cup_2dn'_2\big].
 \end{aligned}
@@ -213,7 +213,7 @@ N_2=n_2+n'_2+\mathcal E_2,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}^\gamma_3={}&
+\widehat{\mathcal{ℰ}}^\gamma_3={}&
 \frac14\big[\beta n_1\cup_1\beta n'_1\\
 &\qquad-(\beta n_1+\beta n'_1)({n_1}\cup_1{n'_1})\\
 &\qquad-({n_1}\cup_1{n'_1})(\beta n_1+\beta n'_1)\\
@@ -275,7 +275,7 @@ the binary complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
 **(M2γ, 3+1D)**
 
 ```math
-dn_2=\mathcal O_3=0.
+dn_2=\mathcal{𝒪}_3=0.
 ```
 
 #### Complex-fermion obstruction
@@ -285,7 +285,7 @@ dn_2=\mathcal O_3=0.
 **(M2, 3+1D)**
 
 ```math
-dn_3=\mathcal O_4=\mathcal O^{\gamma}_4.
+dn_3=\mathcal{𝒪}_4=\mathcal{𝒪}^{\gamma}_4.
 ```
 
 ##### Majorana contribution
@@ -295,7 +295,7 @@ dn_3=\mathcal O_4=\mathcal O^{\gamma}_4.
 **(M2γ→c, 3+1D)**
 
 ```math
-\mathcal O^{\gamma}_4
+\mathcal{𝒪}^{\gamma}_4
  =\mathrm{Sq}^2n_2+\omega_2n_2+s_1\overline{\beta n_2}.
 ```
 
@@ -306,10 +306,10 @@ dn_3=\mathcal O_4=\mathcal O^{\gamma}_4.
 **(M3, 3+1D: obstruction)**
 
 ```math
-d_{s_1}\widehat\nu_4=\widehat{\mathcal O}_5
- =\widehat{\mathcal O}^{c}_5
-  +\widehat{\mathcal O}^{c\gamma}_5
-  +\widehat{\mathcal O}^{\gamma}_5.
+d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
+ =\widehat{\mathcal{𝒪}}^{c}_5
+  +\widehat{\mathcal{𝒪}}^{c\gamma}_5
+  +\widehat{\mathcal{𝒪}}^{\gamma}_5.
 ```
 
 ##### Complex-fermion contribution
@@ -319,7 +319,7 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal O}_5
 **(M3c, 3+1D)**
 
 ```math
-\widehat{\mathcal O}^{c}_5
+\widehat{\mathcal{𝒪}}^{c}_5
  =\frac12\big[\omega_2n_3+n_3\cup_1n_3
    +dn_3\cup_2n_3\big].
 ```
@@ -331,7 +331,7 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal O}_5
 **(M3cγ, 3+1D)**
 
 ```math
-\widehat{\mathcal O}^{c\gamma}_5
+\widehat{\mathcal{𝒪}}^{c\gamma}_5
  =\frac12\big[dn_3\cup_3dn_3\big].
 ```
 
@@ -343,7 +343,7 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal O}_5
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}^\gamma_5(n_2)={}&\frac12\big[
+\widehat{\mathcal{𝒪}}^\gamma_5(n_2)={}&\frac12\big[
  \zeta_{2,2}(\omega_2,n_2)+\mathcal X_5(n_2)\\
 &\qquad+(n_2\cup n_2)\cup_3(\omega_2 n_2)\\
 &\qquad+(n_2\cup n_2)\cup_3(s_1\overline{\beta n_2})\\
@@ -399,8 +399,8 @@ There is no stacking correction in this layer.
 **(M1c, 3+1D)**
 
 ```math
-N_3=n_3+n'_3+\mathcal E_3,\qquad
-\mathcal E_3=\mathcal E^{\gamma}_3.
+N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
+\mathcal{ℰ}_3=\mathcal{ℰ}^{\gamma}_3.
 ```
 
 ##### Majorana contribution
@@ -410,7 +410,7 @@ N_3=n_3+n'_3+\mathcal E_3,\qquad
 **(M1γ→c, 3+1D)**
 
 ```math
-\mathcal E^{\gamma}_3=(n_2\cup_1 n'_2)+s_1(n_2\cup_2n'_2).
+\mathcal{ℰ}^{\gamma}_3=(n_2\cup_1 n'_2)+s_1(n_2\cup_2n'_2).
 ```
 
 #### Bosonic stacking
@@ -422,11 +422,11 @@ N_3=n_3+n'_3+\mathcal E_3,\qquad
 ```math
 \begin{aligned}
 \widehat\nu_4^{\mathrm{out}}
- &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal E}_4,\\
-\widehat{\mathcal E}_4
- &=\widehat{\mathcal E}^{c}_4
-  +\widehat{\mathcal E}^{c\gamma}_4
-  +\widehat{\mathcal E}^{\gamma}_4.
+ &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4,\\
+\widehat{\mathcal{ℰ}}_4
+ &=\widehat{\mathcal{ℰ}}^{c}_4
+  +\widehat{\mathcal{ℰ}}^{c\gamma}_4
+  +\widehat{\mathcal{ℰ}}^{\gamma}_4.
 \end{aligned}
 ```
 
@@ -437,9 +437,9 @@ N_3=n_3+n'_3+\mathcal E_3,\qquad
 **(M3Ec, 3+1D)**
 
 ```math
-\widehat{\mathcal E}^{c}_4
+\widehat{\mathcal{ℰ}}^{c}_4
  =\frac12\big[n_3\cup_2n'_3
- +(n_3+n'_3)\cup_2\mathcal E_3\big].
+ +(n_3+n'_3)\cup_2\mathcal{ℰ}_3\big].
 ```
 
 ##### Complex-fermion–Majorana contribution
@@ -450,7 +450,7 @@ N_3=n_3+n'_3+\mathcal E_3,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}^{c\gamma}_4
+\widehat{\mathcal{ℰ}}^{c\gamma}_4
  =\frac12\big[&dn_3\cup_3n'_3+N_3\cup_3dN_3\\
  &+n_3\cup_3dn_3+n'_3\cup_3dn'_3\big].
 \end{aligned}
@@ -464,7 +464,7 @@ N_3=n_3+n'_3+\mathcal E_3,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}^\gamma_4={}&\frac12z_4
+\widehat{\mathcal{ℰ}}^\gamma_4={}&\frac12z_4
  +\frac14\big[-\beta n_2\cup_2\beta n'_2\\
 &\qquad+(\beta n_2+\beta n'_2)\cup_1\overline{n_2\cup_2n'_2}\\
 &\qquad-\overline{n_2\cup_2n'_2}\cup_1\beta N_2\\
@@ -481,14 +481,14 @@ Here the binary completion is
 
 ```math
 \begin{aligned}
-z_4={}&z^0_4(n_2,n'_2)+(\omega_2N_2)\cup_3\mathcal E_3
+z_4={}&z^0_4(n_2,n'_2)+(\omega_2N_2)\cup_3\mathcal{ℰ}_3
  +d(n_2\cup_1n'_2)\cup_4(\omega_2N_2)\\
 &+(n'_2\cup n'_2)\cup_4(\omega_2n_2)\\
 &+((n'_2\cup n'_2)+\omega_2n'_2)\cup_4(s_1\overline{\beta n_2})\\
 &+(\omega_2\cup_1s_1)(n_2\cup_2n'_2)
  +(n_2\cup_1n'_2)\cup_3[s_1(\overline{\beta n_2}+\overline{\beta n'_2})]\\
 &+(N_2\cup N_2)\cup_3(s_1(n_2\cup_2n'_2))+(n_2\cup_1n'_2)\cup_2(s_1(n_2\cup_2n'_2))\\
-&+s_1\big[\mathcal E_3+\overline{\beta n_2}\cup_3\overline{\beta n'_2}\\
+&+s_1\big[\mathcal{ℰ}_3+\overline{\beta n_2}\cup_3\overline{\beta n'_2}\\
 &\qquad+(n_2\cup_2n'_2)\cup_1(n_2\cup_2n'_2)\\
 &\qquad+(\overline{\beta n_2}+\overline{\beta n'_2})\cup_3(s_1(n_2\cup_2n'_2))\\
 &\qquad+(s_1(n_2\cup_2n'_2))\cup_2(n_2\cup_2n'_2)\\
@@ -514,7 +514,7 @@ the binary complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
 **(M2γ, 4+1D)**
 
 ```math
-dn_3=\mathcal O_4=0.
+dn_3=\mathcal{𝒪}_4=0.
 ```
 
 #### Complex-fermion obstruction
@@ -524,7 +524,7 @@ dn_3=\mathcal O_4=0.
 **(M2, 4+1D)**
 
 ```math
-dn_4=\mathcal O_5=\mathcal O^{\gamma}_5.
+dn_4=\mathcal{𝒪}_5=\mathcal{𝒪}^{\gamma}_5.
 ```
 
 ##### Majorana contribution
@@ -534,7 +534,7 @@ dn_4=\mathcal O_5=\mathcal O^{\gamma}_5.
 **(M2γ→c, 4+1D)**
 
 ```math
-\mathcal O^{\gamma}_5
+\mathcal{𝒪}^{\gamma}_5
  =\mathrm{Sq}^2n_3+\omega_2n_3+s_1\overline{\beta n_3}.
 ```
 
@@ -545,10 +545,10 @@ dn_4=\mathcal O_5=\mathcal O^{\gamma}_5.
 **(M3, 4+1D: obstruction)**
 
 ```math
-d_{s_1}\widehat\nu_5=\widehat{\mathcal O}_6
- =\widehat{\mathcal O}^{c}_6
-  +\widehat{\mathcal O}^{c\gamma}_6
-  +\widehat{\mathcal O}^{\gamma}_6.
+d_{s_1}\widehat\nu_5=\widehat{\mathcal{𝒪}}_6
+ =\widehat{\mathcal{𝒪}}^{c}_6
+  +\widehat{\mathcal{𝒪}}^{c\gamma}_6
+  +\widehat{\mathcal{𝒪}}^{\gamma}_6.
 ```
 
 ##### Complex-fermion contribution
@@ -558,7 +558,7 @@ d_{s_1}\widehat\nu_5=\widehat{\mathcal O}_6
 **(M3c, 4+1D)**
 
 ```math
-\widehat{\mathcal O}^{c}_6
+\widehat{\mathcal{𝒪}}^{c}_6
  =\frac12\big[\omega_2n_4+n_4\cup_2n_4
    +dn_4\cup_3n_4\big].
 ```
@@ -570,7 +570,7 @@ d_{s_1}\widehat\nu_5=\widehat{\mathcal O}_6
 **(M3cγ, 4+1D)**
 
 ```math
-\widehat{\mathcal O}^{c\gamma}_6
+\widehat{\mathcal{𝒪}}^{c\gamma}_6
  =\frac12\big[dn_4\cup_4dn_4\big].
 ```
 
@@ -582,7 +582,7 @@ d_{s_1}\widehat\nu_5=\widehat{\mathcal O}_6
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}^\gamma_6(n_3)={}&\frac12\big[
+\widehat{\mathcal{𝒪}}^\gamma_6(n_3)={}&\frac12\big[
  \zeta_{2,3}(\omega_2,n_3)+\mathcal X_6(n_3)\\
 &\qquad+(n_3\cup_1n_3)\cup_4(\omega_2 n_3)\\
 &\qquad+(n_3\cup_1n_3)\cup_4(s_1\overline{\beta n_3})\\
@@ -639,8 +639,8 @@ There is no stacking correction in this layer.
 **(M1c, 4+1D)**
 
 ```math
-N_4=n_4+n'_4+\mathcal E_4,\qquad
-\mathcal E_4=\mathcal E^{\gamma}_4.
+N_4=n_4+n'_4+\mathcal{ℰ}_4,\qquad
+\mathcal{ℰ}_4=\mathcal{ℰ}^{\gamma}_4.
 ```
 
 ##### Majorana contribution
@@ -650,7 +650,7 @@ N_4=n_4+n'_4+\mathcal E_4,\qquad
 **(M1γ→c, 4+1D)**
 
 ```math
-\mathcal E^{\gamma}_4=(n_3\cup_2 n'_3)+s_1(n_3\cup_3n'_3).
+\mathcal{ℰ}^{\gamma}_4=(n_3\cup_2 n'_3)+s_1(n_3\cup_3n'_3).
 ```
 
 #### Bosonic stacking
@@ -662,11 +662,11 @@ N_4=n_4+n'_4+\mathcal E_4,\qquad
 ```math
 \begin{aligned}
 \widehat\nu_5^{\mathrm{out}}
- &=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal E}_5,\\
-\widehat{\mathcal E}_5
- &=\widehat{\mathcal E}^{c}_5
-  +\widehat{\mathcal E}^{c\gamma}_5
-  +\widehat{\mathcal E}^{\gamma}_5.
+ &=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal{ℰ}}_5,\\
+\widehat{\mathcal{ℰ}}_5
+ &=\widehat{\mathcal{ℰ}}^{c}_5
+  +\widehat{\mathcal{ℰ}}^{c\gamma}_5
+  +\widehat{\mathcal{ℰ}}^{\gamma}_5.
 \end{aligned}
 ```
 
@@ -677,9 +677,9 @@ N_4=n_4+n'_4+\mathcal E_4,\qquad
 **(M3Ec, 4+1D)**
 
 ```math
-\widehat{\mathcal E}^{c}_5
+\widehat{\mathcal{ℰ}}^{c}_5
  =\frac12\big[n_4\cup_3n'_4
- +(n_4+n'_4)\cup_3\mathcal E_4\big].
+ +(n_4+n'_4)\cup_3\mathcal{ℰ}_4\big].
 ```
 
 ##### Complex-fermion–Majorana contribution
@@ -690,7 +690,7 @@ N_4=n_4+n'_4+\mathcal E_4,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}^{c\gamma}_5
+\widehat{\mathcal{ℰ}}^{c\gamma}_5
  =\frac12\big[&dn_4\cup_4n'_4+N_4\cup_4dN_4\\
  &+n_4\cup_4dn_4+n'_4\cup_4dn'_4\big].
 \end{aligned}
@@ -704,7 +704,7 @@ N_4=n_4+n'_4+\mathcal E_4,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}^\gamma_5={}&\frac12z_5
+\widehat{\mathcal{ℰ}}^\gamma_5={}&\frac12z_5
  +\frac14\big[\beta n_3\cup_3\beta n'_3\\
 &\qquad-(\beta n_3+\beta n'_3)\cup_2\overline{n_3\cup_3n'_3}\\
 &\qquad-\overline{n_3\cup_3n'_3}\cup_2\beta N_3\\
@@ -721,14 +721,14 @@ Here the binary completion is
 
 ```math
 \begin{aligned}
-z_5={}&z^0_5(n_3,n'_3)+(\omega_2N_3)\cup_4\mathcal E_4
+z_5={}&z^0_5(n_3,n'_3)+(\omega_2N_3)\cup_4\mathcal{ℰ}_4
  +d(n_3\cup_2n'_3)\cup_5(\omega_2N_3)\\
 &+(n'_3\cup_1n'_3)\cup_5(\omega_2n_3)\\
 &+((n'_3\cup_1n'_3)+\omega_2n'_3)\cup_5(s_1\overline{\beta n_3})\\
 &+(\omega_2\cup_1s_1)(n_3\cup_3n'_3)
  +(n_3\cup_2n'_3)\cup_4[s_1(\overline{\beta n_3}+\overline{\beta n'_3})]\\
 &+(N_3\cup_1N_3)\cup_4(s_1(n_3\cup_3n'_3))+(n_3\cup_2n'_3)\cup_3(s_1(n_3\cup_3n'_3))\\
-&+s_1\big[\mathcal E_4+\overline{\beta n_3}\cup_4\overline{\beta n'_3}\\
+&+s_1\big[\mathcal{ℰ}_4+\overline{\beta n_3}\cup_4\overline{\beta n'_3}\\
 &\qquad+(n_3\cup_3n'_3)\cup_2(n_3\cup_3n'_3)\\
 &\qquad+(\overline{\beta n_3}+\overline{\beta n'_3})\cup_4(s_1(n_3\cup_3n'_3))\\
 &\qquad+(s_1(n_3\cup_3n'_3))\cup_3(n_3\cup_3n'_3)\\
@@ -758,7 +758,7 @@ transformation to another manuscript representative.
 **(M13γ, 1+1D)**
 
 ```math
-dn_0=\mathcal O_1=0.
+dn_0=\mathcal{𝒪}_1=0.
 ```
 
 #### Complex-fermion obstruction
@@ -768,7 +768,7 @@ dn_0=\mathcal O_1=0.
 **(M13c, 1+1D)**
 
 ```math
-dn_1=\mathcal O_2=\mathcal O^{\gamma}_2.
+dn_1=\mathcal{𝒪}_2=\mathcal{𝒪}^{\gamma}_2.
 ```
 
 ##### Majorana contribution
@@ -778,7 +778,7 @@ dn_1=\mathcal O_2=\mathcal O^{\gamma}_2.
 **(M13γ→c, 1+1D)**
 
 ```math
-\mathcal O^{\gamma}_2=n_0\omega_2.
+\mathcal{𝒪}^{\gamma}_2=n_0\omega_2.
 ```
 
 The nonzero $`n_0`$ sector requires $`\omega_2=0`$ pointwise in this
@@ -792,28 +792,28 @@ it explicitly before using that sector.
 **(M13O, 1+1D)**
 
 ```math
-d_{s_1}\widehat\nu_2=\widehat{\mathcal O}_3
- =\widehat{\mathcal O}^{c}_3
-  +\widehat{\mathcal O}^{c\gamma}_3
-  +\widehat{\mathcal O}^{\gamma}_3.
+d_{s_1}\widehat\nu_2=\widehat{\mathcal{𝒪}}_3
+ =\widehat{\mathcal{𝒪}}^{c}_3
+  +\widehat{\mathcal{𝒪}}^{c\gamma}_3
+  +\widehat{\mathcal{𝒪}}^{\gamma}_3.
 ```
 
 ##### Complex-fermion contribution
 
 ```math
-\widehat{\mathcal O}^{c}_3=\frac12n_1\omega_2.
+\widehat{\mathcal{𝒪}}^{c}_3=\frac12n_1\omega_2.
 ```
 
 ##### Complex-fermion–Majorana contribution
 
 ```math
-\widehat{\mathcal O}^{c\gamma}_3=0.
+\widehat{\mathcal{𝒪}}^{c\gamma}_3=0.
 ```
 
 ##### Majorana contribution
 
 ```math
-\widehat{\mathcal O}^{\gamma}_3=0.
+\widehat{\mathcal{𝒪}}^{\gamma}_3=0.
 ```
 
 ### Stacking twisters
@@ -837,8 +837,8 @@ There is no stacking correction in this layer.
 **(M14c, 1+1D)**
 
 ```math
-N_1=n_1+n'_1+\mathcal E_1,\qquad
-\mathcal E_1=\mathcal E^{\gamma}_1.
+N_1=n_1+n'_1+\mathcal{ℰ}_1,\qquad
+\mathcal{ℰ}_1=\mathcal{ℰ}^{\gamma}_1.
 ```
 
 ##### Majorana contribution
@@ -848,7 +848,7 @@ N_1=n_1+n'_1+\mathcal E_1,\qquad
 **(M14γ→c, 1+1D)**
 
 ```math
-\mathcal E^{\gamma}_1=n_0n'_0s_1.
+\mathcal{ℰ}^{\gamma}_1=n_0n'_0s_1.
 ```
 
 #### Bosonic stacking
@@ -860,24 +860,24 @@ N_1=n_1+n'_1+\mathcal E_1,\qquad
 ```math
 \begin{aligned}
 \widehat\nu_2^{\mathrm{out}}
- &=\widehat\nu_2+\widehat\nu'_2+\widehat{\mathcal E}_2,\\
-\widehat{\mathcal E}_2
- &=\widehat{\mathcal E}^{c}_2
-  +\widehat{\mathcal E}^{c\gamma}_2
-  +\widehat{\mathcal E}^{\gamma}_2.
+ &=\widehat\nu_2+\widehat\nu'_2+\widehat{\mathcal{ℰ}}_2,\\
+\widehat{\mathcal{ℰ}}_2
+ &=\widehat{\mathcal{ℰ}}^{c}_2
+  +\widehat{\mathcal{ℰ}}^{c\gamma}_2
+  +\widehat{\mathcal{ℰ}}^{\gamma}_2.
 \end{aligned}
 ```
 
 ##### Complex-fermion contribution
 
 ```math
-\widehat{\mathcal E}^{c}_2=\frac12n_1n'_1.
+\widehat{\mathcal{ℰ}}^{c}_2=\frac12n_1n'_1.
 ```
 
 ##### Complex-fermion–Majorana contribution
 
 ```math
-\widehat{\mathcal E}^{c\gamma}_2
+\widehat{\mathcal{ℰ}}^{c\gamma}_2
  =\begin{cases}
  \frac12(n_1^{\mathrm{even}})^2,&n_0\ne n'_0,\\
  0,&n_0=n'_0.
@@ -890,7 +890,7 @@ $`n_0=0`$.
 ##### Majorana contribution
 
 ```math
-\widehat{\mathcal E}^{\gamma}_2=0.
+\widehat{\mathcal{ℰ}}^{\gamma}_2=0.
 ```
 
 Classification also quotients by the residual parity gauge
@@ -976,8 +976,8 @@ physical contribution.
 **(M12O, 2+1D)**
 
 ```math
-\widehat{\mathcal O}_4
- =\widehat{\mathcal O}^{\mathrm{old}}_4
+\widehat{\mathcal{𝒪}}_4
+ =\widehat{\mathcal{𝒪}}^{\mathrm{old}}_4
  +d_{s_1}\!\left[\frac12n_2\cup_2dn_2\right].
 ```
 
@@ -989,8 +989,8 @@ physical contribution.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}_3
- =\widehat{\mathcal E}^{\mathrm{old}}_3
+\widehat{\mathcal{ℰ}}_3
+ =\widehat{\mathcal{ℰ}}^{\mathrm{old}}_3
  &+\frac12N_2\cup_2dN_2\\
  &-\frac12n_2\cup_2dn_2
   -\frac12n'_2\cup_2dn'_2.
@@ -1019,8 +1019,8 @@ physical contribution.
 **(M12O, 3+1D)**
 
 ```math
-\widehat{\mathcal O}_5
- =\widehat{\mathcal O}^{\mathrm{old}}_5
+\widehat{\mathcal{𝒪}}_5
+ =\widehat{\mathcal{𝒪}}^{\mathrm{old}}_5
  +d_{s_1}\!\left[\frac12n_3\cup_3dn_3\right].
 ```
 
@@ -1032,8 +1032,8 @@ physical contribution.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}_4
- =\widehat{\mathcal E}^{\mathrm{old}}_4
+\widehat{\mathcal{ℰ}}_4
+ =\widehat{\mathcal{ℰ}}^{\mathrm{old}}_4
  &+\frac12N_3\cup_3dN_3\\
  &-\frac12n_3\cup_3dn_3
   -\frac12n'_3\cup_3dn'_3.
@@ -1062,8 +1062,8 @@ physical contribution.
 **(M12O, 4+1D)**
 
 ```math
-\widehat{\mathcal O}_6
- =\widehat{\mathcal O}^{\mathrm{old}}_6
+\widehat{\mathcal{𝒪}}_6
+ =\widehat{\mathcal{𝒪}}^{\mathrm{old}}_6
  +d_{s_1}\!\left[\frac12n_4\cup_4dn_4\right].
 ```
 
@@ -1075,8 +1075,8 @@ physical contribution.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}_5
- =\widehat{\mathcal E}^{\mathrm{old}}_5
+\widehat{\mathcal{ℰ}}_5
+ =\widehat{\mathcal{ℰ}}^{\mathrm{old}}_5
  &+\frac12N_4\cup_4dN_4\\
  &-\frac12n_4\cup_4dn_4
   -\frac12n'_4\cup_4dn'_4.

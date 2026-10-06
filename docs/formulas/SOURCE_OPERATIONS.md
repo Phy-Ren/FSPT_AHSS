@@ -18,8 +18,8 @@ fixed in [Operations](OPERATIONS.md).
 
 The shifted background is $`\check\omega_2=\omega_2+s_1\cup s_1`$ and the
 closed degree-four source is
-$`\check{\mathcal O}_4=\bar n_2^2+\check\omega_2\bar n_2`$.
-The source $`\mathcal O^\psi_5`$, the residual $`B_4^\psi`$, and the
+$`\check{\mathcal{𝒪}}_4=\bar n_2^2+\check\omega_2\bar n_2`$.
+The source $`\mathcal{𝒪}^\psi_5`$, the residual $`B_4^\psi`$, and the
 Pontryagin-square representative $`\mathcal P_{s_1}`$ have the definitions
 in the guide. The Bocksteins $`\beta,\beta_{s_1},\beta^+`$ and finite cup
 operations have the definitions in [Operations](OPERATIONS.md).
@@ -119,22 +119,22 @@ Majorana or complex-fermion decoration is chosen here. Assemble the
 \begin{aligned}
 R_7=\frac18\Big\{&d_{s_1}\Big[
  4\big(\omega_2B_4^\psi+B_4^\psi\cup_2B_4^\psi
- +(\beta\check{\mathcal O}_4)\cup_3B_4^\psi
+ +(\beta\check{\mathcal{𝒪}}_4)\cup_3B_4^\psi
  -B_4^\psi\cup_3[(\beta_{s_1}\check\omega_2)n_2]\big)\\
 &\qquad-4\overline{\left[\begin{gathered}\mathop{\mathrm{MS}}\nolimits_{12132434}
  (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
  +\widetilde{\beta_{s_1}\check\omega_2}(\bar n_2\cup_1\bar n_2)\\{}+(s_1\overline{\beta_{s_1}\check\omega_2})\widetilde n_2
  +s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\end{gathered}\right]}\\
 &\qquad+\mathcal P_{s_1}(\check\omega_2)n_2
- +2\check\omega_2n_2^2+4\omega_2\check{\mathcal O}_4
- +8\overline{\big[\check{\mathcal O}_4\cup_1(\overline{\beta\omega_2}+s_1\omega_2)\big]}\Big]\\
-&+8\overline{\big[\mathcal O^\psi_5\cup_3\mathcal O^\psi_5
- +(\mathrm{Sq}^2\check{\mathcal O}_4+s_1\mathrm{Sq}^1\check{\mathcal O}_4
- +\omega_2\check{\mathcal O}_4)\cup_4\mathcal O^\psi_5
- +\omega_2\mathcal O^\psi_5\big]}\\
-&+8M_7[\check{\mathcal O}_4;\omega_2,s_1]
- +4\big[\omega_2\beta\check{\mathcal O}_4
- +(\beta\check{\mathcal O}_4)\cup_3(\beta\check{\mathcal O}_4)\big]\Big\}
+ +2\check\omega_2n_2^2+4\omega_2\check{\mathcal{𝒪}}_4
+ +8\overline{\big[\check{\mathcal{𝒪}}_4\cup_1(\overline{\beta\omega_2}+s_1\omega_2)\big]}\Big]\\
+&+8\overline{\big[\mathcal{𝒪}^\psi_5\cup_3\mathcal{𝒪}^\psi_5
+ +(\mathrm{Sq}^2\check{\mathcal{𝒪}}_4+s_1\mathrm{Sq}^1\check{\mathcal{𝒪}}_4
+ +\omega_2\check{\mathcal{𝒪}}_4)\cup_4\mathcal{𝒪}^\psi_5
+ +\omega_2\mathcal{𝒪}^\psi_5\big]}\\
+&+8M_7[\check{\mathcal{𝒪}}_4;\omega_2,s_1]
+ +4\big[\omega_2\beta\check{\mathcal{𝒪}}_4
+ +(\beta\check{\mathcal{𝒪}}_4)\cup_3(\beta\check{\mathcal{𝒪}}_4)\big]\Big\}
  \pmod2.
 \end{aligned}
 ```
@@ -144,7 +144,7 @@ outer braces are integer operations, including the differential on the
 square bracket. Each barred subexpression supplies its canonical binary
 value before that integer assembly. In particular no fraction is reduced
 modulo one partway through the calculation. The ordinary Bockstein of
-$`\check{\mathcal O}_4`$ is defined because that source is closed.
+$`\check{\mathcal{𝒪}}_4`$ is defined because that source is closed.
 
 For the first term use the three-factor grid (O11), ordered
 $`(s_1,n_2,\omega_2)`$. On grid vertices $`(r_i,t_i,v_i)`$, pull $`s_1`$ along

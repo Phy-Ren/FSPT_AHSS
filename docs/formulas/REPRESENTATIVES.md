@@ -18,7 +18,7 @@ All changes here act on the source and stacking correction together.
 Its stacking correction changes at the same time:
 
 ```math
-\mathcal E_{3,\mathrm{old}}=\mathcal E_3+\Delta\kappa_3.
+\mathcal{ℰ}_{3,\mathrm{old}}=\mathcal{ℰ}_3+\Delta\kappa_3.
 ```
 
 The obstruction is transported by the same substitution and $`d\kappa_3`$.
@@ -29,7 +29,7 @@ $`s_1\ne0`$.
 
 
 
-Write $`\widehat{\mathcal O}_{6,\mathrm{raw}}`$ for the earlier source.
+Write $`\widehat{\mathcal{𝒪}}_{6,\mathrm{raw}}`$ for the earlier source.
 The displayed change is paired with the product change in the same
 coordinates:
 
@@ -38,7 +38,7 @@ coordinates:
 **(T4E)**
 
 ```math
-{\widehat{\mathcal O}}_6=\widehat{\mathcal O}_{6,\mathrm{raw}}+d_{s_1}\Lambda_5+\frac1{12}{n_{2}}^3,
+{\widehat{\mathcal{𝒪}}}_6=\widehat{\mathcal{𝒪}}_{6,\mathrm{raw}}+d_{s_1}\Lambda_5+\frac1{12}{n_{2}}^3,
 \qquad \Lambda_5=\frac14{\beta^\circ\check n_3}\cup_3{B_4^\psi}.
 ```
 
@@ -60,8 +60,8 @@ lower fields and their product fixed, the source and correction transform
 together:
 
 ```math
-\widehat{\mathcal O}\longmapsto\widehat{\mathcal O}+d_{s_1}f,\qquad
-\widehat{\mathcal E}\longmapsto\widehat{\mathcal E}+\Delta f.
+\widehat{\mathcal{𝒪}}\longmapsto\widehat{\mathcal{𝒪}}+d_{s_1}f,\qquad
+\widehat{\mathcal{ℰ}}\longmapsto\widehat{\mathcal{ℰ}}+\Delta f.
 ```
 
 A change of a lower decoration must also be substituted into every higher

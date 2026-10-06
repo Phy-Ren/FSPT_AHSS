@@ -13,7 +13,7 @@ do not change the physical roles of the fields in that section.
 The physical phase equation is
 
 ```math
-d_{s_1}\widehat\nu_4=\widehat{\mathcal O}_5.
+d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5.
 ```
 
 Its obstruction is the following fixed finite sum, with the
@@ -24,7 +24,7 @@ Its obstruction is the following fixed finite sum, with the
 **(T3)**
 
 ```math
-\boxed{\widehat{\mathcal O}_5=\tau_I\widehat{\mathcal O}_6^I.}
+\boxed{\widehat{\mathcal{𝒪}}_5=\tau_I\widehat{\mathcal{𝒪}}_6^I.}
 ```
 
 ## Bosonic stacking correction
@@ -32,7 +32,7 @@ Its obstruction is the following fixed finite sum, with the
 The physical phase stacks as
 
 ```math
-\widehat\nu_4^{\mathrm{out}}=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal E}_4.
+\widehat\nu_4^{\mathrm{out}}=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4.
 ```
 
 The correction evaluates the same polynomial on the triangle fields:
@@ -42,7 +42,7 @@ The correction evaluates the same polynomial on the triangle fields:
 **(T3 product)**
 
 ```math
-\boxed{\widehat{\mathcal E}_4=\tau_\triangle\widehat{\mathcal O}_6^\triangle.}
+\boxed{\widehat{\mathcal{ℰ}}_4=\tau_\triangle\widehat{\mathcal{𝒪}}_6^\triangle.}
 ```
 
 ## Polynomial evaluated in both formulas
@@ -56,9 +56,9 @@ the obstruction and on the triangle fields for stacking:
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}_6^J={}&\frac12\Big[\mathrm{Sq}^2 {n_4^J}+\omega_2 {n_4^J}+T_6[\check n_3^J;\omega_2,s_1]+\check n_3^J(\overline{\beta\omega_2}+s_1\omega_2)\\
+\widehat{\mathcal{𝒪}}_6^J={}&\frac12\Big[\mathrm{Sq}^2 {n_4^J}+\omega_2 {n_4^J}+T_6[\check n_3^J;\omega_2,s_1]+\check n_3^J(\overline{\beta\omega_2}+s_1\omega_2)\\
  &\qquad +(\mathrm{Sq}^2\check n_3^J+s_1\mathrm{Sq}^1\check n_3^J+\omega_2\check n_3^J)
- \cup_4\mathcal O_5^{\psi,J}+y_6[{n_2^J};\omega_2,s_1]\\
+ \cup_4\mathcal{𝒪}_5^{\psi,J}+y_6[{n_2^J};\omega_2,s_1]\\
  &\qquad +\overline{\beta^\circ\check n_3^J}\cup_2\overline{B_4^{\psi,J}}
  +s_1(\overline{\beta^\circ\check n_3^J}\cup_3\overline{B_4^{\psi,J}})\Big]\\
  &+\frac14\big[B_4^J\cup_2B_4^J+B_4^J\cup_3dB_4^J+\omega_2 B_4^J\big]\\
@@ -96,7 +96,7 @@ lift uses both inputs and their displayed lower stacking corrections:
 | $`\uparrow n_3`$ | $`n_4^I`$ | $`n_4^\triangle`$ |
 | $`B_4^\uparrow`$ | $`B_4^I`$ | $`B_4^\triangle`$ |
 | $`B_4^{\psi,\uparrow}`$ | $`B_4^{\psi,I}`$ | $`B_4^{\psi,\triangle}`$ |
-| $`\mathcal O_5^\psi[\uparrow n_1]`$ | $`\mathcal O_5^{\psi,I}`$ | $`\mathcal O_5^{\psi,\triangle}`$ |
+| $`\mathcal{𝒪}_5^\psi[\uparrow n_1]`$ | $`\mathcal{𝒪}_5^{\psi,I}`$ | $`\mathcal{𝒪}_5^{\psi,\triangle}`$ |
 
 Every entry on the right is defined explicitly below. In particular,
 $`\uparrow\check n_2`$ and $`\uparrow n_3`$ include the mixed terms and
@@ -124,9 +124,9 @@ space. The definitions are local to the auxiliary fields:
 
 ```math
 \begin{aligned}
-\check{\mathcal O}_4^J&=\overline{n_2^J}^2+\check\omega_2\overline{n_2^J}
+\check{\mathcal{𝒪}}_4^J&=\overline{n_2^J}^2+\check\omega_2\overline{n_2^J}
  \quad\text{in }\mathbb Z_2,\\
-B_4^{\psi,J}&=\frac{\check{\mathcal O}_4^J-{n_2^J}^2-\check\omega_2{n_2^J}}{2},\\
+B_4^{\psi,J}&=\frac{\check{\mathcal{𝒪}}_4^J-{n_2^J}^2-\check\omega_2{n_2^J}}{2},\\
 B_4^J&=\beta^\circ\check n_3^J+B_4^{\psi,J}
  =\frac{d\check n_3^J-{n_2^J}^2-\check\omega_2{n_2^J}}{2},\\
 dB_4^J&=-(\beta_{s_1}\check\omega_2){n_2^J}.
@@ -157,7 +157,7 @@ binary expressions.
 \begin{aligned}
 {n_2^\triangle}&={\theta_1} {n_{1}}+{\theta'_1} {n'_{1}},\\
 {\check n_3^\triangle}&={\theta_1} {\check n_{2}}+{\theta'_1} {\check n'_{2}}+({\check\omega_2}\cup_1{\theta_1}){\bar n_{1}}
- +({\check\omega_2}\cup_1{\theta'_1}){\bar n'_{1}}+{\chi_1} {\check{\mathcal E}_{2}}+{\theta_1}({\bar n_{1}}\cup_1{\theta'_1}){\bar n'_{1}},
+ +({\check\omega_2}\cup_1{\theta'_1}){\bar n'_{1}}+{\chi_1} {\check{\mathcal{ℰ}}_{2}}+{\theta_1}({\bar n_{1}}\cup_1{\theta'_1}){\bar n'_{1}},
 \end{aligned}
 ```
 
@@ -170,15 +170,15 @@ n_2^I=\theta_1 n_1,\qquad
 
 The following binary degree-five source is evaluated on these auxiliary
 fields. Its superscript keeps it separate from the physical terminal
-phase obstruction $`\widehat{\mathcal O}_5`$:
+phase obstruction $`\widehat{\mathcal{𝒪}}_5`$:
 
 <a id="eq-aux-o5"></a>
 
 **(Auxiliary source)**
 
 ```math
-\mathcal O_5^J=\mathrm{Sq}^2\check n_3^J+s_1\mathrm{Sq}^1\check n_3^J
- +\omega_2\check n_3^J+\mathcal O_5^{\psi,J}.
+\mathcal{𝒪}_5^J=\mathrm{Sq}^2\check n_3^J+s_1\mathrm{Sq}^1\check n_3^J
+ +\omega_2\check n_3^J+\mathcal{𝒪}_5^{\psi,J}.
 ```
 
 <a id="eq-aux-pip5"></a>
@@ -187,7 +187,7 @@ phase obstruction $`\widehat{\mathcal O}_5`$:
 
 ```math
 \begin{aligned}
-{\mathcal O_5^{\psi,J}}={}&\zeta_{2,2}({\overline{n_2^J}},{\overline{n_2^J}})+\zeta_{2,2}({\check\omega_2},{\overline{n_2^J}})
+{\mathcal{𝒪}_5^{\psi,J}}={}&\zeta_{2,2}({\overline{n_2^J}},{\overline{n_2^J}})+\zeta_{2,2}({\check\omega_2},{\overline{n_2^J}})
  +{\overline{n_2^J}}^2\cup_3({\check\omega_2}{\overline{n_2^J}})+\mathrm{Sq}^3{\widetilde{n_2^J}}+{(\overline{n_2^J}\cup_1\overline{n_2^J})}\cup_1({s_1}{\overline{n_2^J}})\\
 &+{s_1}\big[{\overline{n_2^J}}^2\cup_4({\check\omega_2}{\overline{n_2^J}})+({\overline{n_2^J}}\cup_1{s_1}){\overline{n_2^J}}+{\overline{n_2^J}}\cup_1{(\overline{n_2^J}\cup_1\overline{n_2^J})}+{\overline{n_2^J}}^2\big]\\
 &+({\check\omega_2}\cup_1{\check\omega_2}+{s_1}{\check\omega_2}){\widetilde{n_2^J}}
@@ -205,12 +205,12 @@ corrections are written directly, without additional named sum wrappers.
 
 ```math
 \begin{aligned}
-n_4^\triangle={}&(\mathsf h_4^{(2)})^*\mathcal O_5^\triangle\\
+n_4^\triangle={}&(\mathsf h_4^{(2)})^*\mathcal{𝒪}_5^\triangle\\
  &+\theta_1\big[n_3+\check\omega_2\widetilde n_1+\check n_2\cup_2d\check n_2+(s_1\cup_1\omega_2)\bar n_1\big]\\
  &+\theta'_1\big[n'_3+\check\omega_2\widetilde n'_1+\check n'_2\cup_2d\check n'_2+(s_1\cup_1\omega_2)\bar n'_1\big]\\
- &+\chi_1\Big(\mathcal E_3+\Delta\big[\check\omega_2\widetilde n_1+\check n_2\cup_2d\check n_2+(s_1\cup_1\omega_2)\bar n_1\big]\Big)\\
+ &+\chi_1\Big(\mathcal{ℰ}_3+\Delta\big[\check\omega_2\widetilde n_1+\check n_2\cup_2d\check n_2+(s_1\cup_1\omega_2)\bar n_1\big]\Big)\\
  &+(d\chi_1)\Big[\widetilde n_1\bar n'_1+(\bar n_1+\widetilde n_1)\widetilde n'_1
- +\check{\mathcal E}_2\cup_2(\check n_2+\check n'_2)+\check{\mathcal E}_2\\
+ +\check{\mathcal{ℰ}}_2\cup_2(\check n_2+\check n'_2)+\check{\mathcal{ℰ}}_2\\
  &\qquad +(s_1\cup_1\bar n_1)(\bar n_1\cup_1\bar n'_1)
  +[s_1\cup_1(\bar n_1\cup_1\bar n'_1)](\bar n_1+\bar n'_1)\Big].
 \end{aligned}
@@ -221,7 +221,7 @@ n_4^\triangle={}&(\mathsf h_4^{(2)})^*\mathcal O_5^\triangle\\
 **(T3C)**
 
 ```math
-n_4^I=(\mathsf h_4^{(2)})^*\mathcal O_5^I
+n_4^I=(\mathsf h_4^{(2)})^*\mathcal{𝒪}_5^I
  +\theta_1\big[n_3+\check\omega_2\widetilde n_1+\check n_2\cup_2d\check n_2+(s_1\cup_1\omega_2)\bar n_1\big].
 ```
 

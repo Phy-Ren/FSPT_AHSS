@@ -34,8 +34,8 @@ placed outside the modifier: $`\bar n'_j,\widetilde n'_j,\check n'_j`$. The outp
 $`\nu_j^{\mathrm{out}}`$. A hat denotes the additive phase,
 $`\nu_j=\exp(2\pi i\widehat\nu_j)`$, with
 $`\widehat\nu_j\in\mathbb R/\mathbb Z`$. The same convention applies to
-phase obstructions $`\widehat{\mathcal O}`$ and corrections
-$`\widehat{\mathcal E}`$.
+phase obstructions $`\widehat{\mathcal{𝒪}}`$ and corrections
+$`\widehat{\mathcal{ℰ}}`$.
 
 A bar means reduction modulo two; a tilde means the second binary digit:
 
@@ -129,35 +129,35 @@ is stated separately.
 #### 1. Majorana obstruction
 
 ```math
-dn_1=\mathcal O_2=0.
+dn_1=\mathcal{𝒪}_2=0.
 ```
 
 #### 2. Complex-fermion obstruction
 
 ```math
-dn_2=\mathcal O_3=\mathcal O^{\gamma}_3.
+dn_2=\mathcal{𝒪}_3=\mathcal{𝒪}^{\gamma}_3.
 ```
 
 ##### Majorana contribution
 
 ```math
-\mathcal O^{\gamma}_3
+\mathcal{𝒪}^{\gamma}_3
  =\mathrm{Sq}^2n_1+\omega_2n_1+s_1\overline{\beta n_1}.
 ```
 
 #### 3. Bosonic obstruction
 
 ```math
-d_{s_1}\widehat\nu_3=\widehat{\mathcal O}_4
- =\widehat{\mathcal O}^{c}_4
-  +\widehat{\mathcal O}^{c\gamma}_4
-  +\widehat{\mathcal O}^{\gamma}_4.
+d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
+ =\widehat{\mathcal{𝒪}}^{c}_4
+  +\widehat{\mathcal{𝒪}}^{c\gamma}_4
+  +\widehat{\mathcal{𝒪}}^{\gamma}_4.
 ```
 
 ##### Complex-fermion contribution
 
 ```math
-\widehat{\mathcal O}^{c}_4
+\widehat{\mathcal{𝒪}}^{c}_4
  =\frac12\big[\omega_2n_2+n_2\cup n_2
    +dn_2\cup_1n_2\big].
 ```
@@ -165,7 +165,7 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal O}_4
 ##### Complex-fermion–Majorana contribution
 
 ```math
-\widehat{\mathcal O}^{c\gamma}_4
+\widehat{\mathcal{𝒪}}^{c\gamma}_4
  =\frac12\big[dn_2\cup_2dn_2\big].
 ```
 
@@ -173,7 +173,7 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal O}_4
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}^\gamma_4(n_1)={}&\frac12\big[
+\widehat{\mathcal{𝒪}}^\gamma_4(n_1)={}&\frac12\big[
  \mathop{\mathrm{MS}}\nolimits_{123134}(\omega_2,\omega_2,n_1,n_1)\\
 &\qquad+(\omega_2n_1)\cup_2(s_1\overline{\beta n_1})\\
 &\qquad+(\omega_2\cup_1s_1)\overline{\beta n_1}+s_1(s_1+n_1)\overline{\beta n_1}\big]\\
@@ -195,14 +195,14 @@ There is no stacking correction in this layer.
 #### 2. Complex-fermion stacking
 
 ```math
-N_2=n_2+n'_2+\mathcal E_2,\qquad
-\mathcal E_2=\mathcal E^{\gamma}_2.
+N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
+\mathcal{ℰ}_2=\mathcal{ℰ}^{\gamma}_2.
 ```
 
 ##### Majorana contribution
 
 ```math
-\mathcal E^{\gamma}_2=(n_1\cup n'_1)+s_1(n_1\cup_1n'_1).
+\mathcal{ℰ}^{\gamma}_2=(n_1\cup n'_1)+s_1(n_1\cup_1n'_1).
 ```
 
 #### 3. Bosonic stacking
@@ -210,27 +210,27 @@ N_2=n_2+n'_2+\mathcal E_2,\qquad
 ```math
 \begin{aligned}
 \widehat\nu_3^{\mathrm{out}}
- &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal E}_3,\\
-\widehat{\mathcal E}_3
- &=\widehat{\mathcal E}^{c}_3
-  +\widehat{\mathcal E}^{c\gamma}_3
-  +\widehat{\mathcal E}^{\gamma}_3.
+ &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal{ℰ}}_3,\\
+\widehat{\mathcal{ℰ}}_3
+ &=\widehat{\mathcal{ℰ}}^{c}_3
+  +\widehat{\mathcal{ℰ}}^{c\gamma}_3
+  +\widehat{\mathcal{ℰ}}^{\gamma}_3.
 \end{aligned}
 ```
 
 ##### Complex-fermion contribution
 
 ```math
-\widehat{\mathcal E}^{c}_3
+\widehat{\mathcal{ℰ}}^{c}_3
  =\frac12\big[n_2\cup_1n'_2
- +(n_2+n'_2)\cup_1\mathcal E_2\big].
+ +(n_2+n'_2)\cup_1\mathcal{ℰ}_2\big].
 ```
 
 ##### Complex-fermion–Majorana contribution
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}^{c\gamma}_3
+\widehat{\mathcal{ℰ}}^{c\gamma}_3
  =\frac12\big[&dn_2\cup_2n'_2+N_2\cup_2dN_2\\
  &+n_2\cup_2dn_2+n'_2\cup_2dn'_2\big].
 \end{aligned}
@@ -240,7 +240,7 @@ N_2=n_2+n'_2+\mathcal E_2,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}^\gamma_3={}&
+\widehat{\mathcal{ℰ}}^\gamma_3={}&
 \frac14\big[\beta n_1\cup_1\beta n'_1\\
 &\qquad-(\beta n_1+\beta n'_1)({n_1}\cup_1{n'_1})\\
 &\qquad-({n_1}\cup_1{n'_1})(\beta n_1+\beta n'_1)\\
@@ -320,13 +320,13 @@ d_{s_1}n_1=0.
 <a id="eq-l1"></a>
 
 ```math
-dn_2=\mathcal O_3=\mathcal O_3^\psi.
+dn_2=\mathcal{𝒪}_3=\mathcal{𝒪}_3^\psi.
 ```
 
 **p+ip contribution.**
 
 ```math
-\mathcal O_3^\psi=\omega_2\bar n_1+s_1\bar n_1^2.
+\mathcal{𝒪}_3^\psi=\omega_2\bar n_1+s_1\bar n_1^2.
 ```
 
 Equivalently, in the shifted Majorana coordinate,
@@ -340,19 +340,19 @@ d\check n_2=\check\omega_2\bar n_1.
 <a id="eq-l2"></a>
 
 ```math
-dn_3=\mathcal O_4=\mathcal O_4^\gamma+\mathcal O_4^{\gamma\psi}+\mathcal O_4^\psi.
+dn_3=\mathcal{𝒪}_4=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+\mathcal{𝒪}_4^\psi.
 ```
 
 **Majorana contribution.**
 
 ```math
-\mathcal O_4^\gamma=\check n_2^2+s_1(\check n_2\cup_1\check n_2)+\omega_2\check n_2.
+\mathcal{𝒪}_4^\gamma=\check n_2^2+s_1(\check n_2\cup_1\check n_2)+\omega_2\check n_2.
 ```
 
 **Mixed Majorana–p+ip contribution.**
 
 ```math
-\mathcal O_4^{\gamma\psi}=\check n_2\cup_1d\check n_2+s_1(\check n_2\cup_2d\check n_2).
+\mathcal{𝒪}_4^{\gamma\psi}=\check n_2\cup_1d\check n_2+s_1(\check n_2\cup_2d\check n_2).
 ```
 
 Here $`d\check n_2=\check\omega_2\bar n_1`$ is fixed by the preceding obstruction.
@@ -363,7 +363,7 @@ Here $`d\check n_2=\check\omega_2\bar n_1`$ is fixed by the preceding obstructio
 
 ```math
 \begin{aligned}
-{\mathcal O^\psi_4}={}&\zeta_{2,1}({\check\omega_2},{\bar n_{1}})+({\check\omega_2}\cup_1{\check\omega_2}+{s_1}{\check\omega_2}){\widetilde n_{1}}\\
+{\mathcal{𝒪}^\psi_4}={}&\zeta_{2,1}({\check\omega_2},{\bar n_{1}})+({\check\omega_2}\cup_1{\check\omega_2}+{s_1}{\check\omega_2}){\widetilde n_{1}}\\
 &+\big[({\check\omega_2}\cup_1{\check\omega_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\check\omega_2})\big]{\bar n_{1}},\\
 \zeta_{2,1}({\check\omega_2},{\bar n_{1}})(01234)={}&{\check\omega_2}(012){\check\omega_2}(023){\bar n_{1}}(23){\bar n_{1}}(34).
 \end{aligned}
@@ -376,18 +376,18 @@ The second digit obeys $`d\widetilde n_1=\bar n_1^2+s_1\bar n_1`$.
 <a id="eq-t3"></a>
 
 ```math
-d_{s_1}\widehat\nu_4=\widehat{\mathcal O}_5.
+d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5.
 ```
 
 <a id="eq-t3-expanded"></a>
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}_5
+\widehat{\mathcal{𝒪}}_5
 ={}&\mathop{\mathrm{ev}}\nolimits_5\Bigg\{
 \frac12\Big[\mathrm{Sq}^2 (\uparrow n_3)+\omega_2 (\uparrow n_3)+T_6[(\uparrow\check n_2);\omega_2,s_1]+(\uparrow\check n_2)(\overline{\beta\omega_2}+s_1\omega_2)\\
  &\qquad +(\mathrm{Sq}^2(\uparrow\check n_2)+s_1\mathrm{Sq}^1(\uparrow\check n_2)+\omega_2(\uparrow\check n_2))
- \cup_4\mathcal O_5^\psi[\uparrow n_1]+y_6[(\uparrow n_1);\omega_2,s_1]\\
+ \cup_4\mathcal{𝒪}_5^\psi[\uparrow n_1]+y_6[(\uparrow n_1);\omega_2,s_1]\\
  &\qquad +\overline{\beta^\circ(\uparrow\check n_2)}\cup_2\overline{B_4^{\psi,\uparrow}}
  +s_1(\overline{\beta^\circ(\uparrow\check n_2)}\cup_3\overline{B_4^{\psi,\uparrow}})\Big]\\
  &+\frac14\big[B_4^\uparrow\cup_2B_4^\uparrow+B_4^\uparrow\cup_3dB_4^\uparrow+\omega_2 B_4^\uparrow\big]\\
@@ -429,7 +429,7 @@ The binary degree-five cochain in the evaluation is
 
 ```math
 \begin{aligned}
-{\mathcal O_5^\psi[\uparrow n_1]}={}&\zeta_{2,2}({\overline{\uparrow n_1}},{\overline{\uparrow n_1}})+\zeta_{2,2}({\check\omega_2},{\overline{\uparrow n_1}})
+{\mathcal{𝒪}_5^\psi[\uparrow n_1]}={}&\zeta_{2,2}({\overline{\uparrow n_1}},{\overline{\uparrow n_1}})+\zeta_{2,2}({\check\omega_2},{\overline{\uparrow n_1}})
  +{\overline{\uparrow n_1}}^2\cup_3({\check\omega_2}{\overline{\uparrow n_1}})+\mathrm{Sq}^3{\widetilde{\uparrow n_1}}+{(\overline{\uparrow n_1}\cup_1\overline{\uparrow n_1})}\cup_1({s_1}{\overline{\uparrow n_1}})\\
 &+{s_1}\big[{\overline{\uparrow n_1}}^2\cup_4({\check\omega_2}{\overline{\uparrow n_1}})+({\overline{\uparrow n_1}}\cup_1{s_1}){\overline{\uparrow n_1}}+{\overline{\uparrow n_1}}\cup_1{(\overline{\uparrow n_1}\cup_1\overline{\uparrow n_1})}+{\overline{\uparrow n_1}}^2\big]\\
 &+({\check\omega_2}\cup_1{\check\omega_2}+{s_1}{\check\omega_2}){\widetilde{\uparrow n_1}}
@@ -479,19 +479,19 @@ N_1=n_1+n'_1.
 <a id="eq-p2"></a>
 
 ```math
-N_2=n_2+n'_2+\mathcal E_2,\qquad \mathcal E_2=\mathcal E_2^\psi.
+N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad \mathcal{ℰ}_2=\mathcal{ℰ}_2^\psi.
 ```
 
 **p+ip contribution.**
 
 ```math
-\mathcal E_2^\psi=\bar n_1\bar n'_1+s_1(\bar n_1\cup_1\bar n'_1).
+\mathcal{ℰ}_2^\psi=\bar n_1\bar n'_1+s_1(\bar n_1\cup_1\bar n'_1).
 ```
 
 The same product in the shifted coordinate is
 
 ```math
-\check N_2=\check n_2+\check n'_2+\check{\mathcal E}_2,\qquad\check{\mathcal E}_2=\bar n_1\bar n'_1.
+\check N_2=\check n_2+\check n'_2+\check{\mathcal{ℰ}}_2,\qquad\check{\mathcal{ℰ}}_2=\bar n_1\bar n'_1.
 ```
 
 Its integer digit carry is
@@ -506,30 +506,30 @@ Its integer digit carry is
 
 ```math
 \begin{aligned}
-N_3&=n_3+n'_3+\mathcal E_3,\\
-\mathcal E_3&=\mathcal E_3^\gamma+\mathcal E_3^{\gamma\psi}+\mathcal E_3^\psi.
+N_3&=n_3+n'_3+\mathcal{ℰ}_3,\\
+\mathcal{ℰ}_3&=\mathcal{ℰ}_3^\gamma+\mathcal{ℰ}_3^{\gamma\psi}+\mathcal{ℰ}_3^\psi.
 \end{aligned}
 ```
 
 **Majorana contribution.**
 
 ```math
-\mathcal E_3^\gamma=\check n_2\cup_1\check n'_2+s_1(\check n_2\cup_2\check n'_2).
+\mathcal{ℰ}_3^\gamma=\check n_2\cup_1\check n'_2+s_1(\check n_2\cup_2\check n'_2).
 ```
 
 **Mixed Majorana–p+ip contribution.**
 
 ```math
-\mathcal E_3^{\gamma\psi}
+\mathcal{ℰ}_3^{\gamma\psi}
  =d\check n_2\cup_2\check n'_2
- +(\check n_2+\check n'_2)\cup_1\check{\mathcal E}_2
- +s_1\big[(\check n_2+\check n'_2)\cup_2\check{\mathcal E}_2\big].
+ +(\check n_2+\check n'_2)\cup_1\check{\mathcal{ℰ}}_2
+ +s_1\big[(\check n_2+\check n'_2)\cup_2\check{\mathcal{ℰ}}_2\big].
 ```
 
 **p+ip contribution.**
 
 ```math
-\begin{aligned}\mathcal E_3^\psi={}&{z^\psi_3}({\bar n_{1}},{\bar n'_{1}})+[{\check\omega_2}({\bar n_{1}}+{\bar n'_{1}})]\cup_2{\check{\mathcal E}_{2}}+(d{\widetilde n_{1}}){\widetilde n'_{1}}\\
+\begin{aligned}\mathcal{ℰ}_3^\psi={}&{z^\psi_3}({\bar n_{1}},{\bar n'_{1}})+[{\check\omega_2}({\bar n_{1}}+{\bar n'_{1}})]\cup_2{\check{\mathcal{ℰ}}_{2}}+(d{\widetilde n_{1}}){\widetilde n'_{1}}\\
 &+({s_1}{\bar n_{1}})\cup_1{\bar n'_{1}}^2+{\bar n_{1}} {s_1} {\bar n'_{1}}+{(\bar n_{1}\cup_{1}\bar n'_{1})} {s_1}({\bar n_{1}}+{\bar n'_{1}})\\
 &+{s_1}\big[{s_1}{(\bar n_{1}\cup_{1}\bar n'_{1})}+{\bar n_{1}}\cup_1d{\widetilde n'_{1}}+{(\bar n_{1}\cup_{1}\bar n'_{1})}({\bar n_{1}}+{\bar n'_{1}})\big]+{\Delta[(\bar n_1^2\cup_1s_1)\bar n_1]},\\
 {z^\psi_3}({\bar n_{1}},{\bar n'_{1}})={}&\mathop{\mathrm{MS}}\nolimits_{12314}({\bar n_{1}},{\bar n_{1}},{\bar n'_{1}},{\bar n'_{1}})
@@ -544,18 +544,18 @@ The $`\Delta`$ acts on the entire displayed bracket with the p+ip output $`N_1`$
 <a id="eq-t3-product"></a>
 
 ```math
-\widehat\nu_4^{\mathrm{out}}=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal E}_4.
+\widehat\nu_4^{\mathrm{out}}=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4.
 ```
 
 <a id="eq-t3-product-expanded"></a>
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}_4
+\widehat{\mathcal{ℰ}}_4
 ={}&\mathop{\mathrm{ev}}\nolimits_4\Bigg\{
 \frac12\Big[\mathrm{Sq}^2 (\uparrow n_3)+\omega_2 (\uparrow n_3)+T_6[(\uparrow\check n_2);\omega_2,s_1]+(\uparrow\check n_2)(\overline{\beta\omega_2}+s_1\omega_2)\\
  &\qquad +(\mathrm{Sq}^2(\uparrow\check n_2)+s_1\mathrm{Sq}^1(\uparrow\check n_2)+\omega_2(\uparrow\check n_2))
- \cup_4\mathcal O_5^\psi[\uparrow n_1]+y_6[(\uparrow n_1);\omega_2,s_1]\\
+ \cup_4\mathcal{𝒪}_5^\psi[\uparrow n_1]+y_6[(\uparrow n_1);\omega_2,s_1]\\
  &\qquad +\overline{\beta^\circ(\uparrow\check n_2)}\cup_2\overline{B_4^{\psi,\uparrow}}
  +s_1(\overline{\beta^\circ(\uparrow\check n_2)}\cup_3\overline{B_4^{\psi,\uparrow}})\Big]\\
  &+\frac14\big[B_4^\uparrow\cup_2B_4^\uparrow+B_4^\uparrow\cup_3dB_4^\uparrow+\omega_2 B_4^\uparrow\big]\\
@@ -571,7 +571,7 @@ The $`\Delta`$ acts on the entire displayed bracket with the p+ip output $`N_1`$
 Here $`\mathop{\mathrm{ev}}\nolimits_4`$ is the fixed signed sum over fifteen
 simplices. The upward marks now select the lifted components of the **two
 inputs and their displayed lower stacking law**. The integer residuals
-and binary polynomial have the definitions printed after $`\widehat{\mathcal O}_5`$,
+and binary polynomial have the definitions printed after $`\widehat{\mathcal{𝒪}}_5`$,
 evaluated on these two-input components. The
 [fifteen-term rule](formulas/THREE_DIMENSIONAL_TERMINAL.md#physical-field-evaluation)
 fixes every sign and coefficient transport.
@@ -618,19 +618,19 @@ d_{s_1}n_2=0.
 <a id="eq-l1-4d"></a>
 
 ```math
-dn_3=\mathcal O_4=\mathcal O_4^\psi.
+dn_3=\mathcal{𝒪}_4=\mathcal{𝒪}_4^\psi.
 ```
 
 **p+ip contribution.**
 
 ```math
-\mathcal O_4^\psi=\mathrm{Sq}^2\bar n_2+\omega_2\bar n_2+s_1\mathrm{Sq}^1\bar n_2.
+\mathcal{𝒪}_4^\psi=\mathrm{Sq}^2\bar n_2+\omega_2\bar n_2+s_1\mathrm{Sq}^1\bar n_2.
 ```
 
 Equivalently, in the shifted Majorana coordinate,
 
 ```math
-d\check n_3=\check{\mathcal O}_4=\bar n_2^2+\check\omega_2\bar n_2.
+d\check n_3=\check{\mathcal{𝒪}}_4=\bar n_2^2+\check\omega_2\bar n_2.
 ```
 
 #### 3. Complex-fermion obstruction
@@ -638,19 +638,19 @@ d\check n_3=\check{\mathcal O}_4=\bar n_2^2+\check\omega_2\bar n_2.
 <a id="eq-l2-4d"></a>
 
 ```math
-dn_4=\mathcal O_5=\mathcal O_5^\gamma+\mathcal O_5^{\gamma\psi}+\mathcal O_5^\psi.
+dn_4=\mathcal{𝒪}_5=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}+\mathcal{𝒪}_5^\psi.
 ```
 
 **Majorana contribution.**
 
 ```math
-\mathcal O_5^\gamma=\check n_3\cup_1\check n_3+s_1(\check n_3\cup_2\check n_3)+\omega_2\check n_3.
+\mathcal{𝒪}_5^\gamma=\check n_3\cup_1\check n_3+s_1(\check n_3\cup_2\check n_3)+\omega_2\check n_3.
 ```
 
 **Mixed Majorana–p+ip contribution.**
 
 ```math
-\mathcal O_5^{\gamma\psi}=\check n_3\cup_2d\check n_3+s_1(\check n_3\cup_3d\check n_3).
+\mathcal{𝒪}_5^{\gamma\psi}=\check n_3\cup_2d\check n_3+s_1(\check n_3\cup_3d\check n_3).
 ```
 
 Here $`d\check n_3`$ is fixed by the preceding obstruction.
@@ -661,7 +661,7 @@ Here $`d\check n_3`$ is fixed by the preceding obstruction.
 
 ```math
 \begin{aligned}
-{\mathcal O^\psi_5}={}&\zeta_{2,2}({\bar n_{2}},{\bar n_{2}})+\zeta_{2,2}({\check\omega_2},{\bar n_{2}})
+{\mathcal{𝒪}^\psi_5}={}&\zeta_{2,2}({\bar n_{2}},{\bar n_{2}})+\zeta_{2,2}({\check\omega_2},{\bar n_{2}})
  +{\bar n_{2}}^2\cup_3({\check\omega_2}{\bar n_{2}})+\mathrm{Sq}^3{\widetilde n_{2}}+{(\bar n_2\cup_1\bar n_2)}\cup_1({s_1}{\bar n_{2}})\\
 &+{s_1}\big[{\bar n_{2}}^2\cup_4({\check\omega_2}{\bar n_{2}})+({\bar n_{2}}\cup_1{s_1}){\bar n_{2}}+{\bar n_{2}}\cup_1{(\bar n_2\cup_1\bar n_2)}+{\bar n_{2}}^2\big]\\
 &+({\check\omega_2}\cup_1{\check\omega_2}+{s_1}{\check\omega_2}){\widetilde n_{2}}
@@ -680,13 +680,13 @@ The second digit obeys $`d\widetilde n_2=\bar n_2\cup_1\bar n_2+s_1\bar n_2`$.
 
 ```math
 \begin{aligned}
-d_{s_1}\widehat\nu_5=\widehat{\mathcal O}_6
-={}&\widehat{\mathcal O}_6^c
- +\widehat{\mathcal O}_6^{c\gamma}
- +\widehat{\mathcal O}_6^{c\psi}\\
- &+\widehat{\mathcal O}_6^\gamma
- +\widehat{\mathcal O}_6^{\gamma\psi}
- +\widehat{\mathcal O}_6^\psi.
+d_{s_1}\widehat\nu_5=\widehat{\mathcal{𝒪}}_6
+={}&\widehat{\mathcal{𝒪}}_6^c
+ +\widehat{\mathcal{𝒪}}_6^{c\gamma}
+ +\widehat{\mathcal{𝒪}}_6^{c\psi}\\
+ &+\widehat{\mathcal{𝒪}}_6^\gamma
+ +\widehat{\mathcal{𝒪}}_6^{\gamma\psi}
+ +\widehat{\mathcal{𝒪}}_6^\psi.
 \end{aligned}
 ```
 
@@ -695,29 +695,29 @@ In the current phase coordinate the contributions are:
 **Complex-fermion contribution.**
 
 ```math
-\widehat{\mathcal O}_6^c=\frac12\big[n_4\cup_2n_4+\omega_2n_4\big].
+\widehat{\mathcal{𝒪}}_6^c=\frac12\big[n_4\cup_2n_4+\omega_2n_4\big].
 ```
 
 **Mixed complex-fermion–Majorana contribution.**
 
 ```math
-\widehat{\mathcal O}_6^{c\gamma}=\frac12n_4\cup_3(\mathcal O_5^\gamma+\mathcal O_5^{\gamma\psi}).
+\widehat{\mathcal{𝒪}}_6^{c\gamma}=\frac12n_4\cup_3(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}).
 ```
 
 This includes the displayed interaction induced by the nonclosed
-Majorana layer, through $`\mathcal O_5^{\gamma\psi}`$.
+Majorana layer, through $`\mathcal{𝒪}_5^{\gamma\psi}`$.
 
 **Mixed complex-fermion–p+ip contribution.**
 
 ```math
-\widehat{\mathcal O}_6^{c\psi}=\frac12n_4\cup_3\mathcal O_5^\psi.
+\widehat{\mathcal{𝒪}}_6^{c\psi}=\frac12n_4\cup_3\mathcal{𝒪}_5^\psi.
 ```
 
 **Majorana contribution.**
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}_6^\gamma
+\widehat{\mathcal{𝒪}}_6^\gamma
 ={}&\frac12\Big[
  T_6[\check n_3;\omega_2,s_1]
  +\check n_3(\overline{\beta\omega_2}+s_1\omega_2)\Big]\\
@@ -732,10 +732,10 @@ Majorana layer, through $`\mathcal O_5^{\gamma\psi}`$.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}_6^{\gamma\psi}
+\widehat{\mathcal{𝒪}}_6^{\gamma\psi}
 ={}&\frac12\Big[
- (\mathcal O_5^\gamma+\mathcal O_5^{\gamma\psi})
-     \cup_4\mathcal O_5^\psi
+ (\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})
+     \cup_4\mathcal{𝒪}_5^\psi
  +\overline{\beta^\circ\check n_3}\cup_2\overline{B_4^\psi}\\
  &\qquad+s_1\big(
     \overline{\beta^\circ\check n_3}\cup_3\overline{B_4^\psi}
@@ -752,7 +752,7 @@ Majorana layer, through $`\mathcal O_5^{\gamma\psi}`$.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}_6^\psi
+\widehat{\mathcal{𝒪}}_6^\psi
 ={}&\frac12y_6[n_2;\omega_2,s_1]\\
  &+\frac14\Big[
  B_4^\psi\cup_2B_4^\psi
@@ -779,9 +779,9 @@ Majorana layer, through $`\mathcal O_5^{\gamma\psi}`$.
 
 ```math
 \begin{aligned}
-\check{\mathcal O}_4&=\bar n_2^2+\check\omega_2\bar n_2
+\check{\mathcal{𝒪}}_4&=\bar n_2^2+\check\omega_2\bar n_2
  \quad\text{in }\mathbb Z_2,\\
-B_4^\psi&=\frac{\check{\mathcal O}_4-n_2^2-\check\omega_2n_2}{2},\\
+B_4^\psi&=\frac{\check{\mathcal{𝒪}}_4-n_2^2-\check\omega_2n_2}{2},\\
 B_4&=\beta^\circ\check n_3+B_4^\psi
  =\frac{d\check n_3-n_2^2-\check\omega_2n_2}{2},\\
 dB_4&=-(\beta_{s_1}\check\omega_2)n_2.
@@ -821,19 +821,19 @@ N_2=n_2+n'_2.
 <a id="eq-p2-4d"></a>
 
 ```math
-N_3=n_3+n'_3+\mathcal E_3,\qquad\mathcal E_3=\mathcal E_3^\psi.
+N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad\mathcal{ℰ}_3=\mathcal{ℰ}_3^\psi.
 ```
 
 **p+ip contribution.**
 
 ```math
-\mathcal E_3^\psi=\bar n_2\cup_1\bar n'_2+s_1(\bar n_2\cup_2\bar n'_2).
+\mathcal{ℰ}_3^\psi=\bar n_2\cup_1\bar n'_2+s_1(\bar n_2\cup_2\bar n'_2).
 ```
 
 The same product in the shifted coordinate is
 
 ```math
-\check N_3=\check n_3+\check n'_3+\check{\mathcal E}_3,\qquad\check{\mathcal E}_3=\bar n_2\cup_1\bar n'_2.
+\check N_3=\check n_3+\check n'_3+\check{\mathcal{ℰ}}_3,\qquad\check{\mathcal{ℰ}}_3=\bar n_2\cup_1\bar n'_2.
 ```
 
 Its integer digit carry is
@@ -842,7 +842,7 @@ Its integer digit carry is
 \widetilde N_2=\widetilde n_2+\widetilde n'_2+\bar n_2\cup_2\bar n'_2.
 ```
 
-Consequently $`d\check{\mathcal E}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
+Consequently $`d\check{\mathcal{ℰ}}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
 
 #### 3. Complex-fermion stacking
 
@@ -850,33 +850,33 @@ Consequently $`d\check{\mathcal E}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
 
 ```math
 \begin{aligned}
-N_4&=n_4+n'_4+\mathcal E_4,\\
-\mathcal E_4&=\mathcal E_4^\gamma+\mathcal E_4^{\gamma\psi}+\mathcal E_4^\psi.
+N_4&=n_4+n'_4+\mathcal{ℰ}_4,\\
+\mathcal{ℰ}_4&=\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi}+\mathcal{ℰ}_4^\psi.
 \end{aligned}
 ```
 
 **Majorana contribution.**
 
 ```math
-\mathcal E_4^\gamma=\check n_3\cup_2\check n'_3+s_1(\check n_3\cup_3\check n'_3).
+\mathcal{ℰ}_4^\gamma=\check n_3\cup_2\check n'_3+s_1(\check n_3\cup_3\check n'_3).
 ```
 
 **Mixed Majorana–p+ip contribution.**
 
 ```math
 \begin{aligned}
-\mathcal E_4^{\gamma\psi}={}&d\check n_3\cup_3\check n'_3
- +(\check n_3+\check n'_3)\cup_2\check{\mathcal E}_3\\
+\mathcal{ℰ}_4^{\gamma\psi}={}&d\check n_3\cup_3\check n'_3
+ +(\check n_3+\check n'_3)\cup_2\check{\mathcal{ℰ}}_3\\
  &+s_1\big[d\check n_3\cup_4\check n'_3
- +(\check n_3+\check n'_3)\cup_3\check{\mathcal E}_3\big].
+ +(\check n_3+\check n'_3)\cup_3\check{\mathcal{ℰ}}_3\big].
 \end{aligned}
 ```
 
 **p+ip contribution.**
 
 ```math
-\begin{aligned}\mathcal E_4^\psi={}&{z^\psi_4}({\bar n_{2}},{\bar n'_{2}})+[{\check\omega_2}({\bar n_{2}}+{\bar n'_{2}})]\cup_3{\check{\mathcal E}_{3}}
- +{\bar n'_{2}}^2\cup_4({\check\omega_2}{\bar n_{2}})+d{\check{\mathcal E}_{3}}\cup_4[{\check\omega_2}({\bar n_{2}}+{\bar n'_{2}})]\\
+\begin{aligned}\mathcal{ℰ}_4^\psi={}&{z^\psi_4}({\bar n_{2}},{\bar n'_{2}})+[{\check\omega_2}({\bar n_{2}}+{\bar n'_{2}})]\cup_3{\check{\mathcal{ℰ}}_{3}}
+ +{\bar n'_{2}}^2\cup_4({\check\omega_2}{\bar n_{2}})+d{\check{\mathcal{ℰ}}_{3}}\cup_4[{\check\omega_2}({\bar n_{2}}+{\bar n'_{2}})]\\
 &+{\widetilde n_{2}}({\widetilde n'_{2}}+{\bar n'_{2}})+{\bar n_{2}}{\widetilde n'_{2}}+d{\widetilde n_{2}}\cup_1{\widetilde n'_{2}}+({\widetilde n_{2}}+{\widetilde n'_{2}}){(\bar n_{2}\cup_{2}\bar n'_{2})}\\
 &+({s_1}{\bar n_{2}})\cup_2({\bar n'_{2}}\cup_1{\bar n'_{2}})+{\bar n_{2}}\cup_1({s_1}{\bar n'_{2}})+{(\bar n_{2}\cup_{2}\bar n'_{2})}\cup_1[{s_1}({\bar n_{2}}+{\bar n'_{2}})]\\
 &+{s_1}\big[{s_1}{(\bar n_{2}\cup_{2}\bar n'_{2})}+{\bar n_{2}}\cup_2d{\widetilde n'_{2}}+{(\bar n_{2}\cup_{2}\bar n'_{2})}\cup_1({\bar n_{2}}+{\bar n'_{2}})+\ell_3({\bar n_{2}},{\bar n'_{2}})\big].
@@ -900,7 +900,7 @@ The two finite polynomials in this contribution are
 #### 4. Bosonic stacking
 
 ```math
-\widehat\nu_5^{\mathrm{out}}=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal E}_5.
+\widehat\nu_5^{\mathrm{out}}=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal{ℰ}}_5.
 ```
 
 <a id="eq-t4d"></a>
@@ -908,12 +908,12 @@ The two finite polynomials in this contribution are
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}_5
-={}&\widehat{\mathcal E}_5^c+\widehat{\mathcal E}_5^{c\gamma}+\widehat{\mathcal E}_5^{c\psi}\\
+\widehat{\mathcal{ℰ}}_5
+={}&\widehat{\mathcal{ℰ}}_5^c+\widehat{\mathcal{ℰ}}_5^{c\gamma}+\widehat{\mathcal{ℰ}}_5^{c\psi}\\
  &+\frac12\Big[
- (\mathcal E_4+\bar n_2\bar n'_2)
+ (\mathcal{ℰ}_4+\bar n_2\bar n'_2)
        \cup_3(\bar n_2\bar n'_2)
- +\mathcal O_5[N_2,\check N_3]
+ +\mathcal{𝒪}_5[N_2,\check N_3]
        \cup_4(\bar n_2\bar n'_2)\\
  &\qquad+\zeta_{2,2}(\bar n_2,\bar n'_2)
  +\bar n_2\cup_1d\check n'_3
@@ -921,8 +921,8 @@ The two finite polynomials in this contribution are
  &\qquad+(\check\omega_2\cup_1\bar n_2)\bar n'_2
  +s_1\bar n_2\widetilde n'_2
  +s_1(\bar n_2\cup_1s_1)\bar n'_2\\
- &\qquad+\check{\mathcal E}_3(\bar n_2+\bar n'_2)
- +\check\omega_2\check{\mathcal E}_3+Z_5\Big]\\
+ &\qquad+\check{\mathcal{ℰ}}_3(\bar n_2+\bar n'_2)
+ +\check\omega_2\check{\mathcal{ℰ}}_3+Z_5\Big]\\
  &+\frac14\Big[
  \mathcal V_5+\Delta(n_2\check n_3)
  +(n_2\cup_1\check\omega_2)n'_2
@@ -939,24 +939,24 @@ The explicit complex-fermion terms are, in order:
 **Complex-fermion contribution.**
 
 ```math
-\widehat{\mathcal E}_5^c=\frac12n_4\cup_3n'_4.
+\widehat{\mathcal{ℰ}}_5^c=\frac12n_4\cup_3n'_4.
 ```
 
 **Mixed complex-fermion–Majorana contribution.**
 
 ```math
 \begin{aligned}
-\widehat{\mathcal E}_5^{c\gamma}=\frac12\Big[&
- (\mathcal O_5^\gamma+\mathcal O_5^{\gamma\psi})\cup_4n'_4\\
- &+(n_4+n'_4)\cup_3(\mathcal E_4^\gamma+\mathcal E_4^{\gamma\psi})\Big].
+\widehat{\mathcal{ℰ}}_5^{c\gamma}=\frac12\Big[&
+ (\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})\cup_4n'_4\\
+ &+(n_4+n'_4)\cup_3(\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi})\Big].
 \end{aligned}
 ```
 
 **Mixed complex-fermion–p+ip contribution.**
 
 ```math
-\widehat{\mathcal E}_5^{c\psi}=\frac12\Big[
- \mathcal O_5^\psi\cup_4n'_4+(n_4+n'_4)\cup_3\mathcal E_4^\psi\Big].
+\widehat{\mathcal{ℰ}}_5^{c\psi}=\frac12\Big[
+ \mathcal{𝒪}_5^\psi\cup_4n'_4+(n_4+n'_4)\cup_3\mathcal{ℰ}_4^\psi\Big].
 ```
 
 **Majorana, mixed Majorana–p+ip, and p+ip terms.**
@@ -997,7 +997,7 @@ carry is
 
 The three named Majorana fields in the numerator use their canonical
 integer values. The unprimed obstruction in the mixed terms is evaluated
-on the first input; $`\mathcal O_5[N_2,\check N_3]=dN_4`$ uses the stacked
+on the first input; $`\mathcal{𝒪}_5[N_2,\check N_3]=dN_4`$ uses the stacked
 output. The $`1/4,1/8,1/3`$ products in the full correction are ordered
 integer products before reduction modulo one.
 

@@ -21,8 +21,8 @@ are then defined explicitly:
 | $`D^0_5`$ | Binary reduction of the complete zero-background integer carry | (K10) |
 | $`Z_5`$ | Binary degree-five finite transfer | (K12) |
 
-The lower correction $`\mathcal E_4`$, its shifted predecessor
-$`\check{\mathcal E}_3=\bar n_2\cup_1\bar n'_2`$, the carry $`B_4`$,
+The lower correction $`\mathcal{ℰ}_4`$, its shifted predecessor
+$`\check{\mathcal{ℰ}}_3=\bar n_2\cup_1\bar n'_2`$, the carry $`B_4`$,
 $`\lambda_3`$, and $`\Delta B_4=d\lambda_3-n'_2n_2`$ are already defined in
 the guide. For any one-input expression the signed difference is
 $`\Delta X=X[N_2,\check N_3]-X[n_2,\check n_3]-X[n'_2,\check n'_3]`$.
@@ -70,7 +70,7 @@ single-input and even-integer pieces. All terms before the final braces are bina
 acts on the entire following binary bracket. The final braces form one
 integer numerator; it is pointwise even, and is divided by two before the
 final reduction modulo two. The binary source values
-$`\mathcal O_5[n_2,\check n_3]`$ are the complex-fermion obstruction of the
+$`\mathcal{𝒪}_5[n_2,\check n_3]`$ are the complex-fermion obstruction of the
 guide, not additional input fields.
 
 <a id="eq-k1"></a>
@@ -82,25 +82,25 @@ guide, not additional input fields.
 ```math
 \begin{aligned}
 \rho_6={}&
- \mathrm{Sq}^2(\mathcal E_4+\bar n_2\bar n'_2)
- +\omega_2(\mathcal E_4+\bar n_2\bar n'_2)\\
-&+\mathcal O_5[n_2,\check n_3]\cup_4\mathcal O_5[n'_2,\check n'_3]\\
-&+\big(\mathcal O_5[n_2,\check n_3]+\mathcal O_5[n'_2,\check n'_3]\big)
- \cup_3(\mathcal E_4+\bar n_2\bar n'_2)\\
-&+(\mathcal E_4+\bar n_2\bar n'_2)\cup_3
- \big(\mathcal O_5[n_2,\check n_3]+\mathcal O_5[n'_2,\check n'_3]\big)\\
+ \mathrm{Sq}^2(\mathcal{ℰ}_4+\bar n_2\bar n'_2)
+ +\omega_2(\mathcal{ℰ}_4+\bar n_2\bar n'_2)\\
+&+\mathcal{𝒪}_5[n_2,\check n_3]\cup_4\mathcal{𝒪}_5[n'_2,\check n'_3]\\
+&+\big(\mathcal{𝒪}_5[n_2,\check n_3]+\mathcal{𝒪}_5[n'_2,\check n'_3]\big)
+ \cup_3(\mathcal{ℰ}_4+\bar n_2\bar n'_2)\\
+&+(\mathcal{ℰ}_4+\bar n_2\bar n'_2)\cup_3
+ \big(\mathcal{𝒪}_5[n_2,\check n_3]+\mathcal{𝒪}_5[n'_2,\check n'_3]\big)\\
 &+\Delta\Big[
  T_6[\check n_3;\omega_2,s_1]
  +\check n_3(\overline{\beta\omega_2}+s_1\omega_2)\\
 &\qquad+(\mathrm{Sq}^2\check n_3+s_1\mathrm{Sq}^1\check n_3
- +\omega_2\check n_3)\cup_4\mathcal O^\psi_5
+ +\omega_2\check n_3)\cup_4\mathcal{𝒪}^\psi_5
  +y_6[n_2;\omega_2,s_1]\\
 &\qquad+\overline{\beta^\circ\check n_3}\cup_2\overline{B_4^\psi}
  +s_1(\overline{\beta^\circ\check n_3}\cup_3\overline{B_4^\psi})\\
 &\qquad+\bar n_2\overline{B_4}
  +(\bar n_2\cup_1\overline{\beta_{s_1}\check\omega_2})\bar n_2\Big]\\
-&+\check\omega_2\,d\check{\mathcal E}_3
- +\overline{\beta_{s_1}\check\omega_2}\,\check{\mathcal E}_3\\
+&+\check\omega_2\,d\check{\mathcal{ℰ}}_3
+ +\overline{\beta_{s_1}\check\omega_2}\,\check{\mathcal{ℰ}}_3\\
 &+\frac12\Big\{
  \Delta(B_4\cup_2B_4+B_4\cup_3dB_4)
  +\omega_2\,\Delta B_4\\
@@ -117,10 +117,10 @@ guide, not additional input fields.
 
 Every derivative differentiates a specified expression. In the binary
 part, $`d\overline{B_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and
-$`d\check{\mathcal E}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
+$`d\check{\mathcal{ℰ}}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
 Inside the final integer braces, $`d_{s_1}\mathcal V_5`$ differentiates the
 canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
-inputs, including $`B_4^\psi,\mathcal O^\psi_5,T_6,y_6`$. The bar on
+inputs, including $`B_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The bar on
 the polynomial following the minus sign is taken **before** its signed
 stacking difference. The free complex-fermion solutions $`n_4,n'_4`$ do not
 enter this kernel.
@@ -360,7 +360,7 @@ D^0_5=\frac12\Big\{&
 &-3\big[(n_2+2n'_2)(n_2\cup_1n'_2)
  +(n_2\cup_1n'_2)(2n_2+n'_2)\big]-\mathcal V_{5,0}\\
 &-d\overline{\big[\check n'_3\cup_1\bar n_2
- +\bar n'_2\cup_1\check{\mathcal E}_3
+ +\bar n'_2\cup_1\check{\mathcal{ℰ}}_3
  +\mathop{\mathrm{MS}}\nolimits_{23123}(\bar n_2,\bar n'_2,\bar n'_2)\big]}\\
 &-2\Delta\overline{\big[\check n_3\bar n_2\big]}
  -\Delta(n_2\check n_3)\Big\}\pmod2.
