@@ -3,12 +3,13 @@
 The terminal formulas use the finite operations $`T_6`$ and $`y_6`$ defined
 here. Their degree-two integer argument is a physical field in
 [4+1D](../FORMULA_GUIDE.md#four-dimensional-pair). In
-[3+1D](../FORMULA_GUIDE.md#three-dimensional-pair), it is instead the
+[3+1D](THREE_DIMENSIONAL_TERMINAL.md), it is instead the
 explicitly constructed interval or triangle field; it is not a physical
 3+1D degree-two integer decoration. The degrees of all arguments in this
 appendix are fixed, independently of those two uses.
 
-The backgrounds are $`\omega_2,s_1`$, and a bar takes parity. In integer
+The backgrounds are $`\omega_2,s_1`$. A bar takes parity and a tilde takes
+the second binary digit, as in [Operations](OPERATIONS.md). In integer
 arithmetic a binary field means its canonical value $`0,1`$. A bar around
 a composite expression means: form that entire binary expression first,
 then use its value $`0,1`$. In particular it cannot be replaced by the
@@ -110,7 +111,7 @@ R_7=\frac18\Big\{&d_{s_1}\Big[
  -B_4^\psi\cup_3[(\beta_{s_1}\check\omega_2)n_2]\big)\\
 &\qquad-4\overline{\left[\begin{gathered}\mathop{\mathrm{MS}}\nolimits_{12132434}
  (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
- +\overline{\beta_{s_1}\check\omega_2}^{[1]}(\bar n_2\cup_1\bar n_2)\\{}+(s_1\overline{\beta_{s_1}\check\omega_2})\bar n_2^{[1]}
+ +\widetilde{\beta_{s_1}\check\omega_2}(\bar n_2\cup_1\bar n_2)\\{}+(s_1\overline{\beta_{s_1}\check\omega_2})\widetilde n_2
  +s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\end{gathered}\right]}\\
 &\qquad+\mathcal P_{s_1}(\check\omega_2)n_2
  +2\check\omega_2n_2^2+4\omega_2\check{\mathcal O}_4

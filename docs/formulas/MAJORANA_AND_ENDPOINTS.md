@@ -1,65 +1,306 @@
-# Closed Majorana laws and lower-dimensional endpoints
+# Closed Majorana obstructions and stacking twisters
 
-The formulas are separated by physical dimension:
-[3+1D](#majorana-3d), [4+1D](#majorana-4d), and the
-[2+1D](#majorana-2d) and [1+1D](#fmps-1d) endpoints.
-Each section gives its own fields, source, and product. There is no integer
-decoration in this appendix. All sections use the
-[common notation](../FORMULA_GUIDE.md#conventions-and-coordinates).
+Read the complete section for the physical dimension:
+[2+1D](#majorana-2d), [3+1D](#majorana-3d), or [4+1D](#majorana-4d).
+The [1+1D fMPS endpoint](#fmps-1d) is stated separately.
+Each section presents all obstruction functions first, followed by all
+stacking twisters. There is no integer decoration in this appendix.
+
+The superscripts follow the manuscript's operator factorization:
+$`c`$ labels the complex-fermion part, $`\gamma`$ the Majorana part, and
+$`c\gamma`$ their mixed part. They label contributions, not additional
+cochains. In particular, $`dn_j`$ in a mixed term is fixed by the lower
+obstruction equation of that dimension.
 
 ## Arithmetic and operations
 
+Use the [common notation](../FORMULA_GUIDE.md#conventions-and-coordinates).
 Lower-layer equations and half-valued brackets are binary. In integer
 expressions, each named binary cochain means its canonical zero-or-one
-representative; all sums, differentials, and cups are then integral.
-An outer bar on a composite expression means first reduce that entire
-expression modulo two. Thus $`x\cup_i y`$ in a quarter-valued term is a
-signed integer cup, while $`\overline{x\cup_i y}`$ is its binary value.
-[Operations](OPERATIONS.md#arithmetic-and-carries) gives the complete rule.
+representative; sums, differentials, and cups are then integral.
+An outer bar first reduces the entire indicated expression modulo two.
+Thus an integer $`x\cup_i y`$ and $`\overline{x\cup_i y}`$ are different
+operations in a quarter-valued phase. Their complete evaluation rules are
+in [Operations](OPERATIONS.md#arithmetic-and-carries).
 
 The Bockstein $`\beta`$, its second carry $`\beta^+`$, and their signed
-products have **untwisted integer** coefficients here. The additive phase
-has coefficients $`(\mathbb R/\mathbb Z)_{s_1}`$ and differential $`d_{s_1}`$.
-These coefficient lines remain distinct even though binary values do not
-carry a sign. A hat denotes an additive phase; a prime always labels the
-second input, and $`N_j`$ is its stacked binary output.
+products have untwisted integer coefficients here. The phase instead has
+coefficients $`(\mathbb R/\mathbb Z)_{s_1}`$ and differential $`d_{s_1}`$.
+A hat denotes an additive phase, a prime the second input, and $`N_j`$ the
+stacked binary field. The lower fields and all subscripts are fixed anew
+at the start of each dimensional section.
 
-The named expressions below are full operations, not aliases for fields.
+The long polynomial names have the following roles:
 
 | Expression | Meaning |
 |---|---|
-| $`\widehat{\mathcal O}^\gamma_j,\widehat{\mathcal E}^\gamma_j`$ | Pure Majorana contribution to a source or phase correction; $`\gamma`$ retains the paper's role label |
-| $`\mathcal X_5,\mathcal X_6`$ | Intrinsic binary source polynomials of the indicated output degree |
-| $`z_4,z_5`$ | Binary completion of the Majorana phase product |
-| $`z^0_4,z^0_5`$ | Their intrinsic word-polynomial parts, [defined once](#intrinsic-word-products) on mathematical input cochains |
-| $`\mathcal L_3`$ | Binary antiunitary correction at the 2+1D endpoint |
+| $`\mathcal X_5,\mathcal X_6`$ | Intrinsic binary polynomials in the Majorana obstruction |
+| $`z_4,z_5`$ | Binary completions of the Majorana stacking twisters |
+| $`z^0_4,z^0_5`$ | Their [intrinsic word-polynomial parts](#intrinsic-word-products) |
+| $`\mathcal L_3`$ | Binary antiunitary term in the 2+1D Majorana twister |
 
-These formulas fix a phase representative in each dimension. Its explicit
-change to the operator representative is given in the same section, with
-source and product transported together. Neither is implicitly identified
-with a nonzero-integer-layer representative in the main guide.
+The reader's phase coordinate below uses the manuscript operator ordering.
+Its explicit map from the previous representative is given in each
+dimension, with both obstruction and stacking laws transported. It is
+not implicitly identified with the full integer-layer phase coordinate
+of the main guide.
 
-<a id="majorana-3d"></a>
-## 3+1D closed Majorana formulas
+<a id="majorana-2d"></a>
+## 2+1D
 
-The fields in 3+1D are the closed Majorana cochain $`n_2`$,
-the complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
-Both lower fields are binary, and $`dn_2=0`$.
+The physical fields are the binary Majorana cochain $`n_1`$,
+the binary complex-fermion cochain $`n_2`$, and the phase $`\nu_3`$.
+The Majorana cochain is closed. We use the following phase coordinate
+and its inverse, with the lower fields unchanged:
 
-### Lower layers and full phase law
+<a id="eq-m12-2d"></a>
 
-The lower product and source are
-
-<a id="eq-m1"></a>
-
-**(M1, 3+1D)**
+**(M12, 2+1D: phase coordinate)**
 
 ```math
 \begin{aligned}
-N_2&=n_2+n'_2,\\
-\mathcal E_3&=(n_2\cup_1n'_2)+s_1(n_2\cup_2n'_2).
+\widehat\nu_3
+ &=\widehat\nu^{\mathrm{old}}_3+\frac12n_2\cup_2dn_2,\\
+\widehat\nu^{\mathrm{old}}_3
+ &=\widehat\nu_3-\frac12n_2\cup_2dn_2.
 \end{aligned}
 ```
+
+### Obstruction functions
+
+The lower equations are
+
+<a id="eq-m2-2d"></a>
+
+**(M2, 2+1D)**
+
+```math
+\begin{aligned}
+dn_1&=0,\\
+dn_2=\mathcal O_3
+ &=\mathrm{Sq}^2n_1+\omega_2n_1+s_1\overline{\beta n_1}.
+\end{aligned}
+```
+
+The terminal obstruction is the sum of its three operator contributions:
+
+<a id="eq-m3-2d"></a>
+
+**(M3, 2+1D: obstruction)**
+
+```math
+d_{s_1}\widehat\nu_3=\widehat{\mathcal O}_4
+ =\widehat{\mathcal O}^{c}_4
+  +\widehat{\mathcal O}^{\gamma}_4
+  +\widehat{\mathcal O}^{c\gamma}_4.
+```
+
+**Complex-fermion contribution.**
+
+<a id="eq-m3-c-2d"></a>
+
+**(M3c, 2+1D)**
+
+```math
+\widehat{\mathcal O}^{c}_4
+ =\frac12\big[\omega_2n_2+n_2\cup n_2
+   +dn_2\cup_1n_2\big].
+```
+
+**Majorana contribution.**
+
+<a id="eq-m6"></a>
+
+**(M6, 2+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal O}^\gamma_4(n_1)={}&\frac12\big[
+ \mathop{\mathrm{MS}}\nolimits_{123134}(\omega_2,\omega_2,n_1,n_1)\\
+&\qquad+(\omega_2n_1)\cup_2(s_1\overline{\beta n_1})\\
+&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_1}+s_1(s_1+n_1)\overline{\beta n_1}\big]\\
+&+\frac14\big[{\omega_2} \beta n_1+{s_1}\,{n_1}\,\beta n_1\big].
+\end{aligned}
+```
+
+**Mixed contribution.**
+
+<a id="eq-m3-cgamma-2d"></a>
+
+**(M3cγ, 2+1D)**
+
+```math
+\widehat{\mathcal O}^{c\gamma}_4
+ =\frac12\big[dn_2\cup_2dn_2\big].
+```
+
+The obstruction transforms with the stated phase coordinate:
+
+<a id="eq-m12-source-2d"></a>
+
+**(M12O, 2+1D)**
+
+```math
+\widehat{\mathcal O}_4
+ =\widehat{\mathcal O}^{\mathrm{old}}_4
+ +d_{s_1}\!\left[\frac12n_2\cup_2dn_2\right].
+```
+
+### Stacking twisters
+
+The lower stacking law is
+
+<a id="eq-m1-2d"></a>
+
+**(M1, 2+1D)**
+
+```math
+\begin{aligned}
+N_1&=n_1+n'_1,\\
+\mathcal E_2&=(n_1\cup n'_1)+s_1(n_1\cup_1n'_1),\\
+N_2&=n_2+n'_2+\mathcal E_2.
+\end{aligned}
+```
+
+The terminal stacking law is
+
+<a id="eq-m3-stacking-2d"></a>
+
+**(M3E, 2+1D)**
+
+```math
+\begin{aligned}
+\widehat\nu_3^{\mathrm{out}}
+ &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal E}_3,\\
+\widehat{\mathcal E}_3
+ &=\widehat{\mathcal E}^{c}_3
+  +\widehat{\mathcal E}^{\gamma}_3
+  +\widehat{\mathcal E}^{c\gamma}_3.
+\end{aligned}
+```
+
+**Complex-fermion contribution.**
+
+<a id="eq-m3-stacking-c-2d"></a>
+
+**(M3Ec, 2+1D)**
+
+```math
+\widehat{\mathcal E}^{c}_3
+ =\frac12\big[n_2\cup_1n'_2
+ +(n_2+n'_2)\cup_1\mathcal E_2\big].
+```
+
+**Majorana contribution.**
+The binary antiunitary term is
+
+<a id="eq-m10"></a>
+
+**(M10, 2+1D)**
+
+```math
+\begin{aligned}
+\mathcal L_3={}&s_1((s_1\cup_1n_1)+(s_1\cup_1n'_1)+[s_1\cup_1(n_1\cup_1n'_1)])(n_1\cup_1n'_1)\\
+&+(s_1\cup_1n_1) (n_1\cup_1n'_1)N_1\\
+&+((s_1\cup_1n_1) n_1+n_1 (s_1\cup_1n'_1)+s_1n_1+n_1s_1)(n_1\cup_1n'_1)\\
+&+s_1((n_1\cup_1n'_1)n_1+n_1n'_1+n'_1(n_1\cup_1n'_1)).
+\end{aligned}
+```
+
+The pure Majorana phase correction is
+
+<a id="eq-m11"></a>
+
+**(M11, 2+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal E}^\gamma_3={}&
+\frac14\big[\beta n_1\cup_1\beta n'_1\\
+&\qquad-(\beta n_1+\beta n'_1)({n_1}\cup_1{n'_1})\\
+&\qquad-({n_1}\cup_1{n'_1})(\beta n_1+\beta n'_1)\\
+&\qquad+({n_1}\cup_1{n'_1})d({n_1}\cup_1{n'_1})\big]\\
+&+\frac12[n_1\cup_1(n_1n'_1)]n'_1
+ -\frac18\overline{N_1^3}+\frac18\overline{n_1^3}+\frac18\overline{(n'_1)^3}\\
+&+\frac12(\omega_2N_1)\cup_2(n_1n'_1)\\
+&-\frac14{\omega_2} ({n_1}\cup_1{n'_1})
+ +\frac12\mathcal L_3+\frac14\overline{s_1n_1n'_1}\\
+&+\frac12\big[(\omega_2\cup_1s_1)(n_1\cup_1n'_1)\\
+&\qquad+(\omega_2N_1)\cup_2(s_1(n_1\cup_1n'_1))\\
+&\qquad+(\omega_2n'_1)\cup_3(s_1n_1^2)\big]
+ \pmod1.
+\end{aligned}
+```
+
+The bars on the eighth-valued terms and on $`\overline{s_1n_1n'_1}`$ reduce
+the complete indicated product. In contrast, $`n_1\cup_1n'_1`$ in the
+quarter-valued bracket is a signed integer cup; its differential is also
+integral.
+
+**Mixed contribution.**
+
+<a id="eq-m3-stacking-cgamma-2d"></a>
+
+**(M3Ecγ, 2+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal E}^{c\gamma}_3
+ =\frac12\big[&dn_2\cup_2n'_2+N_2\cup_2dN_2\\
+ &+n_2\cup_2dn_2+n'_2\cup_2dn'_2\big].
+\end{aligned}
+```
+
+The stacking twister transforms with the same phase coordinate:
+
+<a id="eq-m12-stacking-2d"></a>
+
+**(M12E, 2+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal E}_3
+ =\widehat{\mathcal E}^{\mathrm{old}}_3
+ &+\frac12N_2\cup_2dN_2\\
+ &-\frac12n_2\cup_2dn_2
+  -\frac12n'_2\cup_2dn'_2.
+\end{aligned}
+```
+
+### Chiral domain
+
+These formulas compute the zero-integer fiber. For split unitary symmetry
+($`\omega_2=s_1=0`$), an independent neutral chiral $`\mathbb Z`$ factor can
+be adjoined. For the two nonsplit unitary controls in the example catalog,
+the finite subgroup and its abstract infinite-cyclic completion are
+reported separately; a marked minimal chiral generator is not specified.
+The endpoint formulas do not cover general nonsplit nonzero-chiral cochain
+inputs.
+
+<a id="majorana-3d"></a>
+## 3+1D
+
+The physical fields are the binary Majorana cochain $`n_2`$,
+the binary complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
+The Majorana cochain is closed. We use the following phase coordinate
+and its inverse, with the lower fields unchanged:
+
+<a id="eq-m12"></a>
+
+**(M12, 3+1D: phase coordinate)**
+
+```math
+\begin{aligned}
+\widehat\nu_4
+ &=\widehat\nu^{\mathrm{old}}_4+\frac12n_3\cup_3dn_3,\\
+\widehat\nu^{\mathrm{old}}_4
+ &=\widehat\nu_4-\frac12n_3\cup_3dn_3.
+\end{aligned}
+```
+
+### Obstruction functions
+
+The lower equations are
 
 <a id="eq-m2"></a>
 
@@ -67,38 +308,38 @@ N_2&=n_2+n'_2,\\
 
 ```math
 \begin{aligned}
+dn_2&=0,\\
 dn_3=\mathcal O_4
- &=\mathrm{Sq}^2n_2+\omega_2n_2+s_1\overline{\beta n_2},\\
-N_3&=n_3+n'_3+\mathcal E_3.
+ &=\mathrm{Sq}^2n_2+\omega_2n_2+s_1\overline{\beta n_2}.
 \end{aligned}
 ```
 
-The phase satisfies
-
-```math
-\begin{aligned}
-d_{s_1}\widehat\nu_4&=\widehat{\mathcal O}_5,\\
-\widehat\nu_4^{\mathrm{out}}
- &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal E}_4.
-\end{aligned}
-```
-
-with the full source and product correction
+The terminal obstruction is the sum of its three operator contributions:
 
 <a id="eq-m3"></a>
 
-**(M3, 3+1D)**
+**(M3, 3+1D: obstruction)**
 
 ```math
-\begin{aligned}
-\widehat{\mathcal O}_5(n_2,n_3)&=\frac12(\mathrm{Sq}^2n_3+\omega_2n_3)+\widehat{\mathcal O}^\gamma_5(n_2),\\
-\widehat{\mathcal E}_4(n_2,n_3;n'_2,n'_3)&=\frac12\big[n_3\cup_2n'_3\\
-&\qquad+dn_3\cup_3n'_3\\
-&\qquad+(n_3+n'_3)\cup_2\mathcal E_3\big]+\widehat{\mathcal E}^\gamma_4(n_2,n'_2).
-\end{aligned}
+d_{s_1}\widehat\nu_4=\widehat{\mathcal O}_5
+ =\widehat{\mathcal O}^{c}_5
+  +\widehat{\mathcal O}^{\gamma}_5
+  +\widehat{\mathcal O}^{c\gamma}_5.
 ```
 
-### Pure Majorana source
+**Complex-fermion contribution.**
+
+<a id="eq-m3-c"></a>
+
+**(M3c, 3+1D)**
+
+```math
+\widehat{\mathcal O}^{c}_5
+ =\frac12\big[\omega_2n_3+n_3\cup_1n_3
+   +dn_3\cup_2n_3\big].
+```
+
+**Majorana contribution.**
 
 <a id="eq-m4"></a>
 
@@ -117,7 +358,7 @@ with the full source and product correction
 \end{aligned}
 ```
 
-Here the two word operations are
+Its word operations are
 
 ```math
 \begin{aligned}
@@ -128,7 +369,7 @@ Here the two word operations are
 \end{aligned}
 ```
 
-The intrinsic source is
+The intrinsic polynomial is
 
 <a id="eq-m5"></a>
 
@@ -141,7 +382,75 @@ The intrinsic source is
 \end{aligned}
 ```
 
-### Pure Majorana product
+**Mixed contribution.**
+
+<a id="eq-m3-cgamma"></a>
+
+**(M3cγ, 3+1D)**
+
+```math
+\widehat{\mathcal O}^{c\gamma}_5
+ =\frac12\big[dn_3\cup_3dn_3\big].
+```
+
+The obstruction transforms with the stated phase coordinate:
+
+<a id="eq-m12-source"></a>
+
+**(M12O, 3+1D)**
+
+```math
+\widehat{\mathcal O}_5
+ =\widehat{\mathcal O}^{\mathrm{old}}_5
+ +d_{s_1}\!\left[\frac12n_3\cup_3dn_3\right].
+```
+
+### Stacking twisters
+
+The lower stacking law is
+
+<a id="eq-m1"></a>
+
+**(M1, 3+1D)**
+
+```math
+\begin{aligned}
+N_2&=n_2+n'_2,\\
+\mathcal E_3&=(n_2\cup_1n'_2)+s_1(n_2\cup_2n'_2),\\
+N_3&=n_3+n'_3+\mathcal E_3.
+\end{aligned}
+```
+
+The terminal stacking law is
+
+<a id="eq-m3-stacking"></a>
+
+**(M3E, 3+1D)**
+
+```math
+\begin{aligned}
+\widehat\nu_4^{\mathrm{out}}
+ &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal E}_4,\\
+\widehat{\mathcal E}_4
+ &=\widehat{\mathcal E}^{c}_4
+  +\widehat{\mathcal E}^{\gamma}_4
+  +\widehat{\mathcal E}^{c\gamma}_4.
+\end{aligned}
+```
+
+**Complex-fermion contribution.**
+
+<a id="eq-m3-stacking-c"></a>
+
+**(M3Ec, 3+1D)**
+
+```math
+\widehat{\mathcal E}^{c}_4
+ =\frac12\big[n_3\cup_2n'_3
+ +(n_3+n'_3)\cup_2\mathcal E_3\big].
+```
+
+**Majorana contribution.**
 
 <a id="eq-m7"></a>
 
@@ -158,8 +467,7 @@ The intrinsic source is
 \end{aligned}
 ```
 
-Every barred higher cup in the quarter-valued bracket is reduced before
-entering the integer arithmetic. The binary completion is
+The binary completion is
 
 <a id="eq-m8"></a>
 
@@ -182,56 +490,63 @@ z_4={}&z^0_4(n_2,n'_2)+(\omega_2N_2)\cup_3\mathcal E_3
 \end{aligned}
 ```
 
-The intrinsic term $`z^0_4(n_2,n'_2)`$ is given by the
-[finite word definition](#intrinsic-word-products) below.
-This representative is the stated desuspension of the 4+1D product.
-The earlier manuscript representative uses a stacking-move boundary
-dictionary; compare the complete products, including their mixed terms,
-after placing them in matching coordinates.
+The complete intrinsic term $`z^0_4(n_2,n'_2)`$ is given by the
+[finite word definition](#intrinsic-word-products).
 
-### Change of phase representative
+**Mixed contribution.**
 
-The operator representative changes the single-state phase by
-$`\tfrac12n_3\cup_3dn_3`$. Therefore
+<a id="eq-m3-stacking-cgamma"></a>
 
-<a id="eq-m12"></a>
-
-**(M12, 3+1D)**
+**(M3Ecγ, 3+1D)**
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}^{\mathrm{op}}_5
- &=\widehat{\mathcal O}_5
-   +d_{s_1}\!\left[\frac12n_3\cup_3dn_3\right],\\
-\widehat{\mathcal E}^{\mathrm{op}}_4
- &=\widehat{\mathcal E}_4
-   +\frac12N_3\cup_3dN_3\\
- &\qquad-\frac12n_3\cup_3dn_3
-             -\frac12n'_3\cup_3dn'_3.
+\widehat{\mathcal E}^{c\gamma}_4
+ =\frac12\big[&dn_3\cup_3n'_3+N_3\cup_3dN_3\\
+ &+n_3\cup_3dn_3+n'_3\cup_3dn'_3\big].
+\end{aligned}
+```
+
+The stacking twister transforms with the same phase coordinate:
+
+<a id="eq-m12-stacking"></a>
+
+**(M12E, 3+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal E}_4
+ =\widehat{\mathcal E}^{\mathrm{old}}_4
+ &+\frac12N_3\cup_3dN_3\\
+ &-\frac12n_3\cup_3dn_3
+  -\frac12n'_3\cup_3dn'_3.
 \end{aligned}
 ```
 
 <a id="majorana-4d"></a>
-## 4+1D closed Majorana formulas
+## 4+1D
 
-The fields in 4+1D are the closed Majorana cochain $`n_3`$,
-the complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
-Both lower fields are binary, and $`dn_3=0`$.
+The physical fields are the binary Majorana cochain $`n_3`$,
+the binary complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
+The Majorana cochain is closed. We use the following phase coordinate
+and its inverse, with the lower fields unchanged:
 
-### Lower layers and full phase law
+<a id="eq-m12-4d"></a>
 
-The lower product and source are
-
-<a id="eq-m1-4d"></a>
-
-**(M1, 4+1D)**
+**(M12, 4+1D: phase coordinate)**
 
 ```math
 \begin{aligned}
-N_3&=n_3+n'_3,\\
-\mathcal E_4&=(n_3\cup_2n'_3)+s_1(n_3\cup_3n'_3).
+\widehat\nu_5
+ &=\widehat\nu^{\mathrm{old}}_5+\frac12n_4\cup_4dn_4,\\
+\widehat\nu^{\mathrm{old}}_5
+ &=\widehat\nu_5-\frac12n_4\cup_4dn_4.
 \end{aligned}
 ```
+
+### Obstruction functions
+
+The lower equations are
 
 <a id="eq-m2-4d"></a>
 
@@ -239,38 +554,38 @@ N_3&=n_3+n'_3,\\
 
 ```math
 \begin{aligned}
+dn_3&=0,\\
 dn_4=\mathcal O_5
- &=\mathrm{Sq}^2n_3+\omega_2n_3+s_1\overline{\beta n_3},\\
-N_4&=n_4+n'_4+\mathcal E_4.
+ &=\mathrm{Sq}^2n_3+\omega_2n_3+s_1\overline{\beta n_3}.
 \end{aligned}
 ```
 
-The phase satisfies
-
-```math
-\begin{aligned}
-d_{s_1}\widehat\nu_5&=\widehat{\mathcal O}_6,\\
-\widehat\nu_5^{\mathrm{out}}
- &=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal E}_5.
-\end{aligned}
-```
-
-with the full source and product correction
+The terminal obstruction is the sum of its three operator contributions:
 
 <a id="eq-m3-4d"></a>
 
-**(M3, 4+1D)**
+**(M3, 4+1D: obstruction)**
 
 ```math
-\begin{aligned}
-\widehat{\mathcal O}_6(n_3,n_4)&=\frac12(\mathrm{Sq}^2n_4+\omega_2n_4)+\widehat{\mathcal O}^\gamma_6(n_3),\\
-\widehat{\mathcal E}_5(n_3,n_4;n'_3,n'_4)&=\frac12\big[n_4\cup_3n'_4\\
-&\qquad+dn_4\cup_4n'_4\\
-&\qquad+(n_4+n'_4)\cup_3\mathcal E_4\big]+\widehat{\mathcal E}^\gamma_5(n_3,n'_3).
-\end{aligned}
+d_{s_1}\widehat\nu_5=\widehat{\mathcal O}_6
+ =\widehat{\mathcal O}^{c}_6
+  +\widehat{\mathcal O}^{\gamma}_6
+  +\widehat{\mathcal O}^{c\gamma}_6.
 ```
 
-### Pure Majorana source
+**Complex-fermion contribution.**
+
+<a id="eq-m3-c-4d"></a>
+
+**(M3c, 4+1D)**
+
+```math
+\widehat{\mathcal O}^{c}_6
+ =\frac12\big[\omega_2n_4+n_4\cup_2n_4
+   +dn_4\cup_3n_4\big].
+```
+
+**Majorana contribution.**
 
 <a id="eq-m4-4d"></a>
 
@@ -289,7 +604,7 @@ with the full source and product correction
 \end{aligned}
 ```
 
-Here the two word operations are
+Its word operations are
 
 ```math
 \begin{aligned}
@@ -300,7 +615,7 @@ Here the two word operations are
 \end{aligned}
 ```
 
-The intrinsic source is
+The intrinsic polynomial is
 
 <a id="eq-m5-4d"></a>
 
@@ -314,7 +629,75 @@ The intrinsic source is
 \end{aligned}
 ```
 
-### Pure Majorana product
+**Mixed contribution.**
+
+<a id="eq-m3-cgamma-4d"></a>
+
+**(M3cγ, 4+1D)**
+
+```math
+\widehat{\mathcal O}^{c\gamma}_6
+ =\frac12\big[dn_4\cup_4dn_4\big].
+```
+
+The obstruction transforms with the stated phase coordinate:
+
+<a id="eq-m12-source-4d"></a>
+
+**(M12O, 4+1D)**
+
+```math
+\widehat{\mathcal O}_6
+ =\widehat{\mathcal O}^{\mathrm{old}}_6
+ +d_{s_1}\!\left[\frac12n_4\cup_4dn_4\right].
+```
+
+### Stacking twisters
+
+The lower stacking law is
+
+<a id="eq-m1-4d"></a>
+
+**(M1, 4+1D)**
+
+```math
+\begin{aligned}
+N_3&=n_3+n'_3,\\
+\mathcal E_4&=(n_3\cup_2n'_3)+s_1(n_3\cup_3n'_3),\\
+N_4&=n_4+n'_4+\mathcal E_4.
+\end{aligned}
+```
+
+The terminal stacking law is
+
+<a id="eq-m3-stacking-4d"></a>
+
+**(M3E, 4+1D)**
+
+```math
+\begin{aligned}
+\widehat\nu_5^{\mathrm{out}}
+ &=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal E}_5,\\
+\widehat{\mathcal E}_5
+ &=\widehat{\mathcal E}^{c}_5
+  +\widehat{\mathcal E}^{\gamma}_5
+  +\widehat{\mathcal E}^{c\gamma}_5.
+\end{aligned}
+```
+
+**Complex-fermion contribution.**
+
+<a id="eq-m3-stacking-c-4d"></a>
+
+**(M3Ec, 4+1D)**
+
+```math
+\widehat{\mathcal E}^{c}_5
+ =\frac12\big[n_4\cup_3n'_4
+ +(n_4+n'_4)\cup_3\mathcal E_4\big].
+```
+
+**Majorana contribution.**
 
 <a id="eq-m7-4d"></a>
 
@@ -331,8 +714,7 @@ The intrinsic source is
 \end{aligned}
 ```
 
-Every barred higher cup in the quarter-valued bracket is reduced before
-entering the integer arithmetic. The binary completion is
+The binary completion is
 
 <a id="eq-m8-4d"></a>
 
@@ -355,33 +737,41 @@ z_5={}&z^0_5(n_3,n'_3)+(\omega_2N_3)\cup_4\mathcal E_4
 \end{aligned}
 ```
 
-The intrinsic term $`z^0_5(n_3,n'_3)`$ is given by the
-[finite word definition](#intrinsic-word-products) below.
+The complete intrinsic term $`z^0_5(n_3,n'_3)`$ is given by the
+[finite word definition](#intrinsic-word-products).
 
-### Change of phase representative
+**Mixed contribution.**
 
-The operator representative changes the single-state phase by
-$`\tfrac12n_4\cup_4dn_4`$. Therefore
+<a id="eq-m3-stacking-cgamma-4d"></a>
 
-<a id="eq-m12-4d"></a>
-
-**(M12, 4+1D)**
+**(M3Ecγ, 4+1D)**
 
 ```math
 \begin{aligned}
-\widehat{\mathcal O}^{\mathrm{op}}_6
- &=\widehat{\mathcal O}_6
-   +d_{s_1}\!\left[\frac12n_4\cup_4dn_4\right],\\
-\widehat{\mathcal E}^{\mathrm{op}}_5
- &=\widehat{\mathcal E}_5
-   +\frac12N_4\cup_4dN_4\\
- &\qquad-\frac12n_4\cup_4dn_4
-             -\frac12n'_4\cup_4dn'_4.
+\widehat{\mathcal E}^{c\gamma}_5
+ =\frac12\big[&dn_4\cup_4n'_4+N_4\cup_4dN_4\\
+ &+n_4\cup_4dn_4+n'_4\cup_4dn'_4\big].
+\end{aligned}
+```
+
+The stacking twister transforms with the same phase coordinate:
+
+<a id="eq-m12-stacking-4d"></a>
+
+**(M12E, 4+1D)**
+
+```math
+\begin{aligned}
+\widehat{\mathcal E}_5
+ =\widehat{\mathcal E}^{\mathrm{old}}_5
+ &+\frac12N_4\cup_4dN_4\\
+ &-\frac12n_4\cup_4dn_4
+  -\frac12n'_4\cup_4dn'_4.
 \end{aligned}
 ```
 
 <a id="intrinsic-word-products"></a>
-## Intrinsic word products
+## Shared mathematical word operation
 
 This section defines a mathematical operation on two closed binary cochains
 $`x,y`$ of the same degree $`q=2`$ or $`q=3`$. Substituting the fields from
@@ -430,198 +820,83 @@ z^0_{q+2}(x,y)={}&\text{word sum}
 \end{aligned}
 ```
 
-<a id="majorana-2d"></a>
-## 2+1D endpoint
-
-The binary fields are the closed Majorana cochain $`n_1`$ and the
-complex-fermion cochain $`n_2`$, with phase $`\nu_3`$. Their Majorana closure
-is $`dn_1=0`$. The lower product and source are
-
-<a id="eq-m1-2d"></a>
-
-**(M1, 2+1D)**
-
-```math
-\begin{aligned}
-N_1&=n_1+n'_1,\\
-\mathcal E_2&=(n_1\cup n'_1)+s_1(n_1\cup_1n'_1).
-\end{aligned}
-```
-
-<a id="eq-m2-2d"></a>
-
-**(M2, 2+1D)**
-
-```math
-\begin{aligned}
-dn_2=\mathcal O_3
- &=\mathrm{Sq}^2n_1+\omega_2n_1+s_1\overline{\beta n_1},\\
-N_2&=n_2+n'_2+\mathcal E_2.
-\end{aligned}
-```
-
-The phase law is
-
-```math
-\begin{aligned}
-d_{s_1}\widehat\nu_3&=\widehat{\mathcal O}_4,\\
-\widehat\nu_3^{\mathrm{out}}
- &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal E}_3.
-\end{aligned}
-```
-
-with
-
-<a id="eq-m3-2d"></a>
-
-**(M3, 2+1D)**
-
-```math
-\begin{aligned}
-\widehat{\mathcal O}_4(n_1,n_2)&=\frac12(\mathrm{Sq}^2n_2+\omega_2n_2)+\widehat{\mathcal O}^\gamma_4(n_1),\\
-\widehat{\mathcal E}_3(n_1,n_2;n'_1,n'_2)&=\frac12\big[n_2\cup_1n'_2\\
-&\qquad+dn_2\cup_2n'_2\\
-&\qquad+(n_2+n'_2)\cup_1\mathcal E_2\big]+\widehat{\mathcal E}^\gamma_3(n_1,n'_1).
-\end{aligned}
-```
-
-### Pure Majorana source
-
-<a id="eq-m6"></a>
-
-**(M6, 2+1D)**
-
-```math
-\begin{aligned}
-\widehat{\mathcal O}^\gamma_4(n_1)={}&\frac12\big[
- \mathop{\mathrm{MS}}\nolimits_{123134}(\omega_2,\omega_2,n_1,n_1)\\
-&\qquad+(\omega_2n_1)\cup_2(s_1\overline{\beta n_1})\\
-&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_1}+s_1(s_1+n_1)\overline{\beta n_1}\big]\\
-&+\frac14\big[{\omega_2} \beta n_1+{s_1}\,{n_1}\,\beta n_1\big].
-\end{aligned}
-```
-
-### Pure Majorana product
-
-The binary antiunitary correction is
-
-<a id="eq-m10"></a>
-
-**(M10, 2+1D)**
-
-```math
-\begin{aligned}
-\mathcal L_3={}&s_1((s_1\cup_1n_1)+(s_1\cup_1n'_1)+[s_1\cup_1(n_1\cup_1n'_1)])(n_1\cup_1n'_1)\\
-&+(s_1\cup_1n_1) (n_1\cup_1n'_1)N_1\\
-&+((s_1\cup_1n_1) n_1+n_1 (s_1\cup_1n'_1)+s_1n_1+n_1s_1)(n_1\cup_1n'_1)\\
-&+s_1((n_1\cup_1n'_1)n_1+n_1n'_1+n'_1(n_1\cup_1n'_1)).
-\end{aligned}
-```
-
-The pure phase correction is
-
-<a id="eq-m11"></a>
-
-**(M11, 2+1D)**
-
-```math
-\begin{aligned}
-\widehat{\mathcal E}^\gamma_3={}&
-\frac14\big[\beta n_1\cup_1\beta n'_1\\
-&\qquad-(\beta n_1+\beta n'_1)({n_1}\cup_1{n'_1})\\
-&\qquad-({n_1}\cup_1{n'_1})(\beta n_1+\beta n'_1)\\
-&\qquad+({n_1}\cup_1{n'_1})d({n_1}\cup_1{n'_1})\big]\\
-&+\frac12[n_1\cup_1(n_1n'_1)]n'_1
- -\frac18\overline{N_1^3}+\frac18\overline{n_1^3}+\frac18\overline{(n'_1)^3}\\
-&+\frac12(\omega_2N_1)\cup_2(n_1n'_1)\\
-&-\frac14{\omega_2} ({n_1}\cup_1{n'_1})
- +\frac12\mathcal L_3+\frac14\overline{s_1n_1n'_1}\\
-&+\frac12\big[(\omega_2\cup_1s_1)(n_1\cup_1n'_1)\\
-&\qquad+(\omega_2N_1)\cup_2(s_1(n_1\cup_1n'_1))\\
-&\qquad+(\omega_2n'_1)\cup_3(s_1n_1^2)\big]
- \pmod1.
-\end{aligned}
-```
-
-The bars on the eighth-valued terms and on $`\overline{s_1n_1n'_1}`$ reduce
-the entire indicated product. In contrast, $`n_1\cup_1n'_1`$ inside the
-quarter-valued bracket is a signed integer cup, and its differential is
-also integral. These operations cannot be interchanged.
-The mixed complex-fermion terms are already included in the full phase
-formula above. Simply discarding negative cup indices in a higher-dimensional
-product would miss this endpoint's coordinate correction.
-
-### Change of phase representative
-
-The operator representative shifts the single-state phase by
-$`\tfrac12n_2\cup_2dn_2`$. The paired changes are
-
-<a id="eq-m12-2d"></a>
-
-**(M12, 2+1D)**
-
-```math
-\begin{aligned}
-\widehat{\mathcal O}^{\mathrm{op}}_4
- &=\widehat{\mathcal O}_4
-   +d_{s_1}\!\left[\frac12n_2\cup_2dn_2\right],\\
-\widehat{\mathcal E}^{\mathrm{op}}_3
- &=\widehat{\mathcal E}_3
-   +\frac12N_2\cup_2dN_2\\
- &\qquad-\frac12n_2\cup_2dn_2
-             -\frac12n'_2\cup_2dn'_2.
-\end{aligned}
-```
-
-### Chiral domain
-
-These formulas compute the zero-integer fiber. For split unitary symmetry
-($`\omega_2=s_1=0`$), an independent neutral chiral $`\mathbb Z`$ factor can
-be adjoined. For the two nonsplit unitary controls in the example catalog,
-the finite subgroup and its abstract infinite-cyclic completion are
-reported separately; a marked minimal chiral generator is not specified.
-The endpoint formulas do not cover general nonsplit nonzero-chiral cochain
-inputs. This restriction removes no term from the complete 3+1D or 4+1D laws.
 
 <a id="fmps-1d"></a>
 ## 1+1D fMPS endpoint
 
-The fields are $`n_0\in Z^0(G_b,\mathbb Z_2)`$,
+The physical fields are $`n_0\in Z^0(G_b,\mathbb Z_2)`$,
 $`n_1\in C^1(G_b,\mathbb Z_2)`$, and
 $`\widehat\nu_2\in C^2(G_b,(\mathbb R/\mathbb Z)_{s_1})`$.
 There is no integer layer. This fMPS representative is a distinct phase
-coordinate; the physical field names do not imply an unstated coordinate
-transformation to the manuscript representative. Its equations are
+coordinate; its physical field names do not imply an unstated coordinate
+transformation to another manuscript representative.
+
+### Obstruction functions
+
+The lower and phase equations are
 
 <a id="eq-m13"></a>
 
-**(M13)**
+**(M13, 1+1D)**
 
 ```math
 dn_0=0,\qquad dn_1=n_0\omega_2,\qquad
 d_{s_1}\widehat\nu_2=\frac12n_1\omega_2.
 ```
 
+The phase obstruction is entirely its complex-fermion contribution:
+
+```math
+\widehat{\mathcal O}^{c}_3=\frac12n_1\omega_2,\qquad
+\widehat{\mathcal O}^{\gamma}_3=\widehat{\mathcal O}^{c\gamma}_3=0.
+```
+
 The nonzero $`n_0`$ sector requires $`\omega_2=0`$ pointwise in this
 representative. If the extension cocycle is nonzero but exact, trivialize
-it explicitly before using that sector. For two admissible inputs,
+it explicitly before using that sector.
+
+### Stacking twisters
+
+For two admissible inputs, the lower law is
 
 <a id="eq-m14"></a>
 
-**(M14)**
+**(M14, 1+1D)**
 
 ```math
 \begin{aligned}
 N_0&=n_0+n'_0,\\
-N_1&=n_1+n'_1+n_0n'_0s_1,\\
-\widehat\nu^{\mathrm{out}}_2
- &=\widehat\nu_2+\widehat\nu'_2+\frac12n_1n'_1
- +\begin{cases}\frac12(n_1^{\mathrm{even}})^2,&n_0\ne n'_0,\\
- 0,&n_0=n'_0.\end{cases}
+N_1&=n_1+n'_1+n_0n'_0s_1.
 \end{aligned}
+```
+
+The terminal phase law is
+
+```math
+\widehat\nu_2^{\mathrm{out}}
+ =\widehat\nu_2+\widehat\nu'_2
+  +\widehat{\mathcal E}^{c}_2+\widehat{\mathcal E}^{c\gamma}_2.
+```
+
+**Complex-fermion contribution.**
+
+```math
+\widehat{\mathcal E}^{c}_2=\frac12n_1n'_1.
+```
+
+**Majorana contribution.** The pure Majorana phase twister is zero.
+
+**Mixed contribution.**
+
+```math
+\widehat{\mathcal E}^{c\gamma}_2
+ =\begin{cases}
+ \frac12(n_1^{\mathrm{even}})^2,&n_0\ne n'_0,\\
+ 0,&n_0=n'_0.
+ \end{cases}
 ```
 
 Here $`n_1^{\mathrm{even}}`$ is the degree-one cochain of the input whose
 $`n_0=0`$. Classification also quotients by the residual parity gauge
-$`\widehat\nu_2\sim\widehat\nu_2+\omega_2/2`$; this is part of the
-equivalence relation, not an optional modification of [M14](#eq-m14).
+$`\widehat\nu_2\sim\widehat\nu_2+\omega_2/2`$; this remains part of the
+equivalence relation.

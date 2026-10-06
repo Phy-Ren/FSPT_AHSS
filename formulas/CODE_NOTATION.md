@@ -44,7 +44,7 @@ The internal conversion uses [C1](../docs/FORMULA_GUIDE.md#eq-c1):
 
 ```math
 \check\omega_2=\omega_2+s_1\cup s_1,\qquad
-\check n_{d-1}=n_{d-1}+s_1\cup\bar n_{d-2}^{[1]}.
+\check n_{d-1}=n_{d-1}+s_1\cup\widetilde n_{d-2}.
 ```
 
 `Backend` accepts the native Majorana field and performs the required shift.
@@ -53,7 +53,7 @@ shifted Majorana field `u`. Apply the conversion once, according to the entry
 point; do not pass a shifted field as the native API input.
 
 Integer values retain their signs. `carry(n)` means
-$`\bar n_{d-2}^{[1]}=\overline{\lfloor n_{d-2}/2\rfloor}`$.
+$`\widetilde n_{d-2}=\overline{\lfloor n_{d-2}/2\rfloor}`$.
 Floors, canonical binary representatives, and exact divisions follow the
 mathematical definitions. A required nonintegral quotient raises an error.
 
@@ -85,7 +85,7 @@ formula-guide abbreviations. It does not redefine the public API keys.
 |---|---|
 | `n`, `m` | $`n_{d-2},n'_{d-2}`$ |
 | `a=n.reduce(2)`, `b=m.reduce(2)` | $`\bar n_{d-2},\overline{n'_{d-2}}`$ |
-| `h=carry(n)`, `k=carry(m)` | $`\bar n_{d-2}^{[1]},\overline{n'_{d-2}}^{[1]}`$ |
+| `h=carry(n)`, `k=carry(m)` | $`\widetilde n_{d-2},\widetilde{n'_{d-2}}`$ |
 | `W` | $`\check\omega_2`$ |
 | `u`, `v` | $`\check n_{d-1},\check n'_{d-1}`$ |
 | `c`, `cp` | $`n_d,n'_d`$ |
@@ -106,7 +106,8 @@ and four, even when constructed from a physical $`3+1`$D input.
 
 The following names belong to the shared six-cochain source or the $`4+1`$D
 product. Their current definitions are [S1–S3](../docs/FORMULA_GUIDE.md#eq-s1)
-and [T4a–T4e](../docs/FORMULA_GUIDE.md#eq-t4a).
+and [T4a–T4d](../docs/FORMULA_GUIDE.md#eq-t4a), with the
+[earlier coordinate map](../docs/formulas/REPRESENTATIVES.md#eq-t4e) kept separately.
 
 | Readable-source name or former formula label | Current mathematical expression |
 |---|---|
@@ -116,7 +117,7 @@ and [T4a–T4e](../docs/FORMULA_GUIDE.md#eq-t4a).
 | Former $`A_4`$ | $`\check{\mathcal O}_4=d\check n_3`$ |
 | Background integer carry, former $`v_3`$ | $`\beta_{s_1}\check\omega_2`$ |
 | `alpha`, former $`\alpha_3`$ | $`\overline{\beta_{s_1}\check\omega_2}`$ |
-| `hw`, former $`h_\omega`$ | $`\overline{\beta_{s_1}\check\omega_2}^{[1]}`$ |
+| `hw`, former $`h_\omega`$ | $`\widetilde{\beta_{s_1}\check\omega_2}`$ |
 | `ell(w,s)`, former $`\ell^\omega_3`$ | $`\overline{\beta\omega_2}+s_1\omega_2`$ |
 | Background `P`, former $`\mathcal P_s(W)`$ | $`\mathcal P_{s_1}(\check\omega_2)`$ |
 | `Bp`, former $`B'`$ | $`B'_4=B_4(n'_2,\check n'_3)`$ |
@@ -137,8 +138,8 @@ The former source-sum names are now expanded in the
 
 | Existing local or former formula name | Location in the expanded formula |
 |---|---|
-| Local `H`, former $`\mathcal A_6`$ | The complete half-valued binary bracket, including $`\mathrm{Sq}^2n_4+\omega_2n_4`$ |
-| Former $`\mathcal H_6`$ | The remaining terms of that binary bracket, after those two complex-fermion terms |
+| Local `H`, former $`\mathcal A_6`$ | The sum of the half-valued physical contributions, including $`\mathrm{Sq}^2n_4+\omega_2n_4`$ |
+| Former $`\mathcal H_6`$ | The half-valued Majorana, p+ip, and mixed contributions after subtracting those complex-fermion terms |
 | Local `Q`, former $`\mathcal Q_6`$ | All quarter-valued source terms, including the separately displayed subtraction |
 | `cartan_word`, former $`\mathcal C_6`$ | The complete reduced background-and-digit polynomial in that subtraction |
 | Former $`\widehat{\mathcal O}^{\mathrm{base}}_6`$ | The complete source before the final ordered cubic term |
@@ -155,7 +156,7 @@ source additionally retains $`n_2^3/12`$.
 
 The physical $`3+1`$D fields are $`n_1,\check n_2,n_3`$. The shared source
 instead consumes the constructed fields in
-[T3a–T3c](../docs/FORMULA_GUIDE.md#eq-t3b):
+[T3a–T3c](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3b):
 
 | Earlier notation or construction | Current notation |
 |---|---|
@@ -196,14 +197,18 @@ $`q=1,2,3`$ denotes the Majorana degree and spatial dimension is $`q+1`$.
 | `gamma(a,w,s)` | Pure Majorana source $`\widehat{\mathcal O}^\gamma_{q+3}`$ |
 | `operator_gauge(c)` | $`\tfrac12n_{q+1}\cup_{q+1}dn_{q+1}`$ |
 
-The coordinate string `ca` selects the default source and product in the
-separate [3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d),
-[4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d), and
-[2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d) sections.
-The string `operator` selects the paired change of representative in that
-same dimension: [M12, 3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12),
-[M12, 4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-4d), or
-[M12, 2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-2d).
+The coordinate string `operator` selects the reader's displayed phase
+source and product in the [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d),
+[3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d), and
+[4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d) sections.
+The existing `ca` target remains unchanged and is the coordinate denoted
+by the superscript `old` there. Recover it by subtracting the displayed
+single-state rephase from the source and its full stacking change from
+the product: [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-2d),
+[3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12), and
+[4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-4d).
+The binary lower laws agree in both coordinates. The documentation's
+reader default does not change the runtime's default argument.
 `ClosedMajoranaBackend` divides the compiled terminal numerator by eight.
 Its output is not silently substituted into the separate integer-layer
 publication coordinate.
@@ -271,3 +276,21 @@ For closed Majorana, `operation` is `majorana_source`, `majorana_product`,
 phase operations retain the requested coordinate. This index describes
 correspondence; the equation definitions remain in the formula guide and
 its appendices.
+
+## Physical contribution regrouping
+
+The full integer-layer runtime still returns the entire obstruction or
+product in its existing publication coordinate. The guide's gamma / psi /
+gamma-psi split of the lower formulas expands the same open-cochain
+Steenrod operation and partitions the existing product terms. For the
+terminal 4+1D source, substitute `B = beta_open(u) + K` and expand the
+ordered bilinear integer cups. Sum the displayed six physical blocks to
+recover `high6` plus its existing cubic term.
+
+The 4+1D terminal product separates all freely variable complex-fermion
+terms. In its remaining term `dCnew` equals the lower fermion source at
+the displayed output. The c-free Majorana/p+ip transfer is retained as
+a combined expression; `Zvalue` is not a pure-p+ip twister. The 3+1D
+terminal operations retain their full finite definition in the separate
+[technical file](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md).
+No compiled program or coefficient table changes in this regrouping.

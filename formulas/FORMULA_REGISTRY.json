@@ -224,10 +224,11 @@
       "outputs": "phase O5 and E4",
       "equations": [
         "docs/FORMULA_GUIDE.md#eq-t3",
-        "docs/FORMULA_GUIDE.md#eq-t3a",
-        "docs/FORMULA_GUIDE.md#eq-t3b",
-        "docs/FORMULA_GUIDE.md#eq-t3c",
-        "docs/FORMULA_GUIDE.md#eq-aux-terminal-source"
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3a",
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3b",
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3c",
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-aux-terminal-source",
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3"
       ],
       "source_files": [
         {
@@ -260,7 +261,7 @@
       "outputs": "phase O6",
       "equations": [
         "docs/FORMULA_GUIDE.md#eq-t4",
-        "docs/FORMULA_GUIDE.md#eq-t4e"
+        "docs/formulas/REPRESENTATIVES.md#eq-t4e"
       ],
       "source_files": [
         {
@@ -384,20 +385,20 @@
       "inputs": "closed a(q), c(q+1);w,s",
       "outputs": "binary fermion source and phase O(q+3)",
       "equations": [
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m2",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m4",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m5",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m6",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1-2d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m2-2d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-2d",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1-4d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m2-4d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-4d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m4-4d",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m5-4d"
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m5-4d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-source-2d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-source",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-source-4d"
       ],
       "source_files": [
         {
@@ -417,7 +418,8 @@
         "majorana_3_majorana_source_ca",
         "majorana_3_obstruction_ca"
       ],
-      "description": "Dimension-specific pure source and common upper-layer source."
+      "description": "Dimension-specific pure source and common upper-layer source.",
+      "reader_coordinate": "operator; the compiled ca source is recovered by the inverse displayed source transport"
     },
     {
       "id": "majorana.closed.product",
@@ -430,16 +432,22 @@
       "inputs": "closed a(q),c(q+1);b(q),cp(q+1);w,s",
       "outputs": "binary fermion carry and phase E(q+2)",
       "equations": [
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m7",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m8",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m9",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m10",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m11",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-2d",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-4d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-2d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-4d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m7-4d",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m8-4d"
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m8-4d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-stacking-2d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-stacking",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-stacking-4d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1-2d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1-4d"
       ],
       "source_files": [
         {
@@ -459,7 +467,8 @@
         "majorana_3_majorana_product_ca",
         "majorana_3_stacking_ca"
       ],
-      "description": "Stable q=2,3 compact family and explicit q=1 endpoint."
+      "description": "Stable q=2,3 compact family and explicit q=1 endpoint.",
+      "reader_coordinate": "operator; the compiled ca product is recovered by the inverse displayed stacking transport"
     },
     {
       "id": "majorana.closed.operator_dictionary",
@@ -490,7 +499,7 @@
         "majorana_3_obstruction_operator",
         "majorana_3_stacking_operator"
       ],
-      "description": "The same unary Gamma transports source and product together."
+      "description": "Reader-default operator phase coordinate; exact paired map and inverse to the unchanged ca runtime targets."
     },
     {
       "id": "endpoint.d1.fmps",

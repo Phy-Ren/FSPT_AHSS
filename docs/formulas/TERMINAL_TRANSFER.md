@@ -5,8 +5,8 @@ This appendix defines the binary five-cochain $`Z_5`$ in (T4d) of the
 $`(n_2,\check n_3)`$ and $`(n'_2,\check n'_3)`$, with common backgrounds
 $`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,\check
 N_3`$ are the output. These are the physical 4+1D fields; this appendix
-does not assign these degrees to the physical fields in 3+1D. Bars, digit
-superscripts, and checks have the same meanings as in the guide. In integer
+does not assign these degrees to the physical fields in 3+1D. Bars, tildes,
+and checks have the same meanings as in the guide. In integer
 arithmetic each binary field supplies its canonical value $`0,1`$; a whole
 composite binary expression is reduced first whenever a bar surrounds it.
 
@@ -72,7 +72,7 @@ guide, not additional input fields.
  +\omega_2\,\Delta B_4\\
 &\qquad-\Delta\overline{\left[\begin{gathered}\mathop{\mathrm{MS}}\nolimits_{12132434}
  (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
- +\overline{\beta_{s_1}\check\omega_2}^{[1]}(\bar n_2\cup_1\bar n_2)\\{}+(s_1\overline{\beta_{s_1}\check\omega_2})\bar n_2^{[1]}
+ +\widetilde{\beta_{s_1}\check\omega_2}(\bar n_2\cup_1\bar n_2)\\{}+(s_1\overline{\beta_{s_1}\check\omega_2})\widetilde n_2
  +s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\end{gathered}\right]}\\
 &\qquad+\check\omega_2(n'_2n_2)
  +(\beta_{s_1}\check\omega_2)(n_2\cup_1n'_2)
@@ -152,8 +152,9 @@ either background; its failure on the zeroth face is precisely (K5).
 
 ## The tensor coefficient
 
-The background-degree-one contribution $`L^s_5`$ uses the integer digit
-rule from the guide, $`\bar x^{[j]}=\overline{\lfloor x/2^j\rfloor}`$:
+The background-degree-one contribution $`L^s_5`$ uses $`\bar x`$ and
+$`\widetilde x`$. Where the third binary digit is needed, it is written
+explicitly as $`\overline{\lfloor x/4\rfloor}`$:
 
 <a id="eq-k6"></a>
 
@@ -161,9 +162,9 @@ rule from the guide, $`\bar x^{[j]}=\overline{\lfloor x/2^j\rfloor}`$:
 
 ```math
 \begin{aligned}
-f(x,y)={}&(\bar x+\bar x^{[1]})\bar y^{[1]}(1+\bar y)
- +\bar x^{[1]}(\bar y+\bar y^{[2]})
- +\bar x^{[2]}\bar y(1+\bar y^{[1]}),\\
+f(x,y)={}&(\bar x+\widetilde x)\widetilde y(1+\bar y)
+ +\widetilde x(\bar y+\overline{\lfloor y/4\rfloor})
+ +\overline{\lfloor x/4\rfloor}\bar y(1+\widetilde y),\\
 L^s_5(S)={}&s_1(01)
  f(n_2^{\rm gr}(123),n_2^{{\rm gr}\prime}(345)).
 \end{aligned}
@@ -200,7 +201,7 @@ n_{2;123}=n_2(123).
 ```
 
 The indices after the semicolon specify the face or difference of faces.
-Applying the same bar and digit rules gives all bits needed below.
+Applying the same bar and tilde rules gives all bits needed below.
 Products in (K8) are ordinary products of bits on this tetrahedron, and
 $`\check n_3(0123)`$ is the binary Majorana value on the same face:
 
@@ -212,44 +213,44 @@ $`\check n_3(0123)`$ is the binary Majorana value on the same face:
 \begin{aligned}
 P^L_1={}&
  (\bar n_{2;012}+\bar n_{2;013-012})
- (\bar n_{2;123}+\bar n_{2;123}^{[1]})\\
+ (\bar n_{2;123}+\widetilde n_{2;123})\\
 &+\check n_3(0123)\big[
  1+\bar n_{2;012}+\bar n_{2;013-012}+\bar n_{2;123}
  +\bar n_{2;013-012}\bar n_{2;123}(1+\bar n_{2;012})\\
 &\qquad+(\bar n_{2;012}+\bar n_{2;013-012})
- (\bar n_{2;012}^{[1]}+\bar n_{2;013-012}^{[1]}+\bar n_{2;123}^{[1]})
- +\bar n_{2;123}\bar n_{2;123}^{[1]}\big],\\
+ (\widetilde n_{2;012}+\widetilde n_{2;013-012}+\widetilde n_{2;123})
+ +\bar n_{2;123}\widetilde n_{2;123}\big],\\
 P^L_2={}&
- (\bar n_{2;013-012}+\bar n_{2;013-012}^{[1]})
+ (\bar n_{2;013-012}+\widetilde n_{2;013-012})
  (\bar n_{2;012}+\bar n_{2;123})\\
 &+\bar n_{2;013-012}\big[
- \bar n_{2;012}^{[1]}(1+\bar n_{2;123})
- +\bar n_{2;123}^{[1]}(1+\bar n_{2;012})\big],\\
+ \widetilde n_{2;012}(1+\bar n_{2;123})
+ +\widetilde n_{2;123}(1+\bar n_{2;012})\big],\\
 P^L_3={}&P^L_2
- +\bar n_{2;013-012}^{[1]}(\bar n_{2;012}^{[1]}+\bar n_{2;123}^{[1]})\\
+ +\widetilde n_{2;013-012}(\widetilde n_{2;012}+\widetilde n_{2;123})\\
 &+\check n_3(0123)\big[
  \bar n_{2;012}+\bar n_{2;013-012}+\bar n_{2;123}
  +\bar n_{2;123}(\bar n_{2;012}+\bar n_{2;013-012})\\
 &\qquad+(\bar n_{2;012}+\bar n_{2;013-012})
- (\bar n_{2;012}^{[1]}+\bar n_{2;013-012}^{[1]}+\bar n_{2;123}^{[1]})
- +\bar n_{2;123}\bar n_{2;123}^{[1]}\big],\\
+ (\widetilde n_{2;012}+\widetilde n_{2;013-012}+\widetilde n_{2;123})
+ +\bar n_{2;123}\widetilde n_{2;123}\big],\\
 P^L_4={}&
- \bar n_{2;013-012}^{[1]}(\bar n_{2;012}^{[1]}+\bar n_{2;123}^{[1]})\\
+ \widetilde n_{2;013-012}(\widetilde n_{2;012}+\widetilde n_{2;123})\\
 &+\bar n_{2;013-012}\big[
- \bar n_{2;012}(1+\bar n_{2;123}+\bar n_{2;012}^{[1]}+\bar n_{2;013-012}^{[1]})
- +\bar n_{2;123}(\bar n_{2;013-012}^{[1]}+\bar n_{2;123}^{[1]})\big],\\
+ \bar n_{2;012}(1+\bar n_{2;123}+\widetilde n_{2;012}+\widetilde n_{2;013-012})
+ +\bar n_{2;123}(\widetilde n_{2;013-012}+\widetilde n_{2;123})\big],\\
 P^R_4={}&\bar n_{2;013-012}\bar n_{2;123}(1+\bar n_{2;012}),\\
 P^R_2={}&P^R_4
- +\bar n_{2;013-012}^{[1]}(\bar n_{2;012}^{[1]}+\bar n_{2;123}^{[1]}),\\
+ +\widetilde n_{2;013-012}(\widetilde n_{2;012}+\widetilde n_{2;123}),\\
 P^R_3={}&
- \bar n_{2;013-012}^{[1]}(\bar n_{2;012}^{[1]}+\bar n_{2;123}^{[1]})
- +\bar n_{2;012}\bar n_{2;123}(\bar n_{2;013-012}^{[1]}+\bar n_{2;123}^{[1]})\\
+ \widetilde n_{2;013-012}(\widetilde n_{2;012}+\widetilde n_{2;123})
+ +\bar n_{2;012}\bar n_{2;123}(\widetilde n_{2;013-012}+\widetilde n_{2;123})\\
 &+\bar n_{2;013-012}(
- \bar n_{2;012}\bar n_{2;013-012}^{[1]}+\bar n_{2;012}^{[1]}\bar n_{2;123})\\
+ \bar n_{2;012}\widetilde n_{2;013-012}+\widetilde n_{2;012}\bar n_{2;123})\\
 &+\check n_3(0123)\big[
  \bar n_{2;012}+\bar n_{2;013-012}+\bar n_{2;123}\\
 &\qquad+(\bar n_{2;012}+\bar n_{2;013-012}+\bar n_{2;123})
- (\bar n_{2;012}^{[1]}+\bar n_{2;013-012}^{[1]}+\bar n_{2;123}^{[1]})
+ (\widetilde n_{2;012}+\widetilde n_{2;013-012}+\widetilde n_{2;123})
  +\bar n_{2;012}\bar n_{2;013-012}\bar n_{2;123}\big],\\
 P^R_1={}&P^R_3+\bar n_{2;012}\bar n_{2;123}(1+\bar n_{2;013-012})\\
 &+\check n_3(0123)\big[
@@ -259,7 +260,7 @@ P^R_1={}&P^R_3+\bar n_{2;012}\bar n_{2;123}(1+\bar n_{2;013-012})\\
 ```
 
 Rows referenced on the right use the same input and face. In particular,
-$`\bar n_{2;013-012}^{[1]}`$ is the second bit of the integer
+$`\widetilde n_{2;013-012}`$ is the second bit of the integer
 difference; it is not the sum of the second bits of $`n_2(013)`$ and
 $`n_2(012)`$. Define the ordered-cup polynomial
 

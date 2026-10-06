@@ -53,9 +53,11 @@ use integer arithmetic and the explicit bars shown in them. This retains
 the distinction between an integer product of binary representatives and
 the binary value of an entire product.
 
-For integer $`x`$, its binary digits are
-$`\bar x^{[k]}=\overline{\lfloor x/2^k\rfloor}`$, with $`\bar x^{[0]}=\bar x`$.
-Floor is used also for negative integers.
+For an integer $`x`$, a tilde denotes its second binary digit:
+$`\widetilde x=\overline{\lfloor x/2\rfloor}`$.
+It always has this meaning; canonical integer lifts remain implicit as
+stated above. Floors are mathematical floors also for negative integers.
+If a higher digit is needed, its floor and reduction are written explicitly.
 The Bockstein and second carry of a **closed** binary cochain are
 
 <a id="eq-o2"></a>
