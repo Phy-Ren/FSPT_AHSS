@@ -186,8 +186,8 @@ specified cochain representatives.
 ```
 
 The [ordinary 4D coefficient table](FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md)
-defines both finite sets. The 101 rows in $`\mathcal I_6^\gamma`$
-have no differential argument. The 1,075 rows in
+defines both finite sets. The 85 rows in $`\mathcal I_6^\gamma`$
+have no differential argument. The 1,005 rows in
 $`\mathcal I_6^{\gamma\psi}`$ contain both $`\check n_3`$
 and $`d\check n_3`$; substitute the actual lower equation
 $`d\check n_3=\bar n_2^2+\check\omega_2\bar n_2`$
@@ -315,8 +315,8 @@ N_4&=n_4+n'_4+\mathcal{ℰ}_4,\\
 \begin{aligned}
 \mathcal{ℰ}_4^{\gamma\psi}={}&d\check n_3\cup_3\check n'_3
  +(\check n_3+\check n'_3)\cup_2\check{\mathcal{ℰ}}_3\\
- &+s_1\big[d\check n_3\cup_4\check n'_3
- +(\check n_3+\check n'_3)\cup_3\check{\mathcal{ℰ}}_3\big].
+ &+s_1\big[(\check n_3+\check n'_3)
+                \cup_3\check{\mathcal{ℰ}}_3\big].
 \end{aligned}
 ```
 
@@ -324,7 +324,9 @@ N_4&=n_4+n'_4+\mathcal{ℰ}_4,\\
 
 ```math
 \begin{aligned}\mathcal{ℰ}_4^\psi={}&{z^\psi_4}({\bar n_{2}},{\bar n'_{2}})+[{\check\omega_2}({\bar n_{2}}+{\bar n'_{2}})]\cup_3{\check{\mathcal{ℰ}}_{3}}
- +{\bar n'_{2}}^2\cup_4({\check\omega_2}{\bar n_{2}})+d{\check{\mathcal{ℰ}}_{3}}\cup_4[{\check\omega_2}({\bar n_{2}}+{\bar n'_{2}})]\\
+ +(\check\omega_2\cup_2\bar n_2)
+       [\bar n'_2+(\bar n_2\cup_2\bar n'_2)]
+ +(\check\omega_2\cup_2\bar n'_2)\bar n_2\\
 &+{\widetilde n_{2}}({\widetilde n'_{2}}+{\bar n'_{2}})+{\bar n_{2}}{\widetilde n'_{2}}+d{\widetilde n_{2}}\cup_1{\widetilde n'_{2}}+({\widetilde n_{2}}+{\widetilde n'_{2}}){(\bar n_{2}\cup_{2}\bar n'_{2})}\\
 &+({s_1}{\bar n_{2}})\cup_2({\bar n'_{2}}\cup_1{\bar n'_{2}})+{\bar n_{2}}\cup_1({s_1}{\bar n'_{2}})+{(\bar n_{2}\cup_{2}\bar n'_{2})}\cup_1[{s_1}({\bar n_{2}}+{\bar n'_{2}})]\\
 &+{s_1}\big[{s_1}{(\bar n_{2}\cup_{2}\bar n'_{2})}+{\bar n_{2}}\cup_2d{\widetilde n'_{2}}+{(\bar n_{2}\cup_{2}\bar n'_{2})}\cup_1({\bar n_{2}}+{\bar n'_{2}})+\ell_3({\bar n_{2}},{\bar n'_{2}})\big].

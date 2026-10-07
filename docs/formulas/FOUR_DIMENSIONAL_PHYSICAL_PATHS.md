@@ -25,7 +25,7 @@ $`\sigma`$. Here $`|\sigma|_a`$ counts occurrences of the letter $`a`$.
 The three coordinate lists are $`g^0,g^1,g^2`$. Denote this finite set by
 $`\mathcal G_D`$, and its subset with $`k\ge1`$ by $`\mathcal G_D^+`$.
 
-Choose a length $`0\le J\le5`$, lists
+Choose a length $`0\le J\le4`$, lists
 $`g_1,\ldots,g_J\in\mathcal G_5^+`$, and bits
 $`\epsilon_1,\ldots,\epsilon_J`$. For every such list put
 
@@ -109,3 +109,33 @@ Use these same rules for the
 [tensor coefficients](FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md).
 Their printed transport signs and background corrections already account
 for their coefficient convention. No extra change of input is needed.
+
+## Exact removal of zero path pairs
+
+In the finite index list it is enough to keep
+
+```math
+0\le J\le4,\qquad
+P_{\ell-1}^0(0)<P_{\ell-1}^0(1)
+\quad(1\le\ell\le J).
+```
+
+All vertex maps and physical face factors remain as defined above. If the
+inequality fails, write the coincident vertex as $`r`$. The two choices
+of $`\epsilon_\ell`$ then give identical inputs: normalization gives
+$`s_1(r,r)=0`$ and $`\check\omega_2(r,r,x)=0`$. Their binary contributions
+cancel exactly, including their integer transports before the indicated
+divisions. Every length-five path contains such a pair. No cochain
+representative or phase convention is changed by omitting these pairs.
+
+The retained path occurrences, including the binary branch choices, are
+$`1,232,16704,334080,1336320`$ at lengths zero through four. These are
+counts of construction indices, not counts of final nonzero formula terms.
+
+For the pure Majorana coefficient, only length zero is needed. All
+Majorana-origin factors and backgrounds are independent of the branch
+bits: those bits affect only the integer-input sign and the displayed
+p+ip correction. This remains true inside each Bockstein, canonical lift,
+and integer digit. Every positive-length Majorana contribution thus
+cancels with the identical term obtained by flipping one branch bit.
+Its tensor contribution is zero.

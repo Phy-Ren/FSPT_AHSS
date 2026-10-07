@@ -123,7 +123,7 @@ discarded under a cocycle assumption.
 
 ## The ordinary Majorana word contribution
 
-Use the [1,176 fixed ordinary rows](FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md) $`(\vartheta;x_1,\ldots,x_q)`$, whose atoms are
+Use the [1,090 fixed ordinary rows](FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md) $`(\vartheta;x_1,\ldots,x_q)`$, whose atoms are
 $`\check n_3,d\check n_3,\omega_2,s_1`$, obtained from the explicitly specified 453-word source table
 by the explicit finite coefficient rule given with that table. Each row denotes the usual
 $`\mathop{\mathrm{MS}}\nolimits_{\vartheta}`$, with no homotopy or parameter field in its
@@ -280,8 +280,7 @@ following explicit polynomials:
  \check n_{3;i}^{\mathrm{in}}\cup_2\check n_{3;j}^{\mathrm{in}'}
  +s_1(\check n_{3;i}^{\mathrm{in}}\cup_3\check n_{3;j}^{\mathrm{in}'})\Big]\\
 &+\sum_{\psi\vee j=r}\Big[
- \check{\mathcal{𝒪}}_4[n_2]\cup_3\check n_{3;j}^{\mathrm{in}'}
- +s_1(\check{\mathcal{𝒪}}_4[n_2]\cup_4\check n_{3;j}^{\mathrm{in}'})\Big]\\
+ \check{\mathcal{𝒪}}_4[n_2]\cup_3\check n_{3;j}^{\mathrm{in}'}\Big]\\
 &+\sum_{i\vee\psi=r}\Big[
  (\check n_{3;i}^{\mathrm{in}}+\check n_{3;i}^{\mathrm{in}'})
                                   \cup_2\check{\mathcal{ℰ}}_3\\
@@ -303,9 +302,9 @@ following explicit polynomials:
        (\bar n_2,\bar n'_2,\bar n'_2,\bar n'_2)\\
 &\qquad+\big[\check\omega_2(\bar n_2+\bar n'_2)\big]
                                   \cup_3\check{\mathcal{ℰ}}_3
- +(\bar n'_2)^2\cup_4(\check\omega_2\bar n_2)\\
-&\qquad+d\check{\mathcal{ℰ}}_3\cup_4
-                    \big[\check\omega_2(\bar n_2+\bar n'_2)\big]
+ +(\check\omega_2\cup_2\bar n_2)
+                  [\bar n'_2+(\bar n_2\cup_2\bar n'_2)]\\
+&\qquad+(\check\omega_2\cup_2\bar n'_2)\bar n_2
  +(\widetilde n_2+\bar n_2)(\widetilde n'_2+\bar n'_2)
  +d\widetilde n_2\cup_1\widetilde n'_2\\
 &\qquad+(\widetilde n_2+\widetilde n'_2)(\bar n_2\cup_2\bar n'_2)
@@ -379,13 +378,22 @@ increments named by the letters of $`\sigma`$. Let
 $`\mathcal G_5^+`$ restrict $`k`$ to $`1,\ldots,4`$.
 The complete index list consists of
 ```math
-0\le j\le5,\qquad
+0\le j\le4,\qquad
 ((g_1,\epsilon_1),\ldots,(g_j,\epsilon_j))
  \in(\mathcal G_5^+\times\{0,1\})^j,
 ```
+Restrict the list to $`P_{\ell-1}^0(0)<P_{\ell-1}^0(1)`$ for every step,
+as defined and proved in the [physical-path formula](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md#exact-removal-of-zero-path-pairs).
+Take these indices
 together with either one final grid $`g\in\mathcal G_5`$, or no final
 grid. The [physical-path formula](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md) gives every factor face for each such
 index directly, including the $`j=0`$ identity path.
+
+For the pure Majorana contribution $`r=\gamma`$, retain only $`j=0`$
+and the final-grid part. All its physical factors, including Bocksteins
+and integer digits, are independent of every $`\epsilon_\ell`$. For
+$`j>0`$ the two choices of any one branch bit are therefore identical and
+cancel in the binary sum. The tensor has no pure Majorana term.
 
 * With a final grid, include the fully expanded coefficient $`\rho_{6;r}`$
   printed above on its seven explicit vertex positions.

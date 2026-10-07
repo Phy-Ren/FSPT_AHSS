@@ -70,6 +70,26 @@ not renamed interval integrals or homotopies. Their complete action on
 each integer word has just been stated. The final physical sum contains
 neither symbol and contains no marker.
 
+### Final collection of physical indices
+
+Counts of generated seed lists below are before this final collection.
+
+The ordinary-word indices are collected separately in each displayed
+physical contribution, after its input choices have been made. Use the
+actual degrees of those physical inputs. For each specified word, form
+its normalized interval cuts as in the definition of the MS operation.
+A cut contributes the product of its physical input values on the
+specified faces. These scalar factors commute; repeated binary factors
+occur only once. Cancel identical products in pairs.
+
+Discard a word when no product remains. Words whose remaining products
+are identical define the same binary cochain and are collected modulo
+two. In an odd class retain one of its explicitly listed representatives;
+the [term manifests](term_census/README.md) list the retained choices. This is an exact equality of normalized
+cochains. It neither discards a coboundary nor changes a phase coordinate.
+Do not apply this binary rule to integer-valued cup products inside a
+quarter- or eighth-valued term.
+
 ## Compact seed expressions
 
 In the seed algebra each physical symbol denotes its input label. Capital

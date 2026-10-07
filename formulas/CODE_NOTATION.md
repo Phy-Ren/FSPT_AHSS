@@ -320,3 +320,19 @@ For manuscript TeX export, replace `\mathcal{ℰ}` with `\mathcal{E}` and
 `\mathcal{𝒪}` with `\mathcal{O}` before passing the formulas to LaTeX.
 The replacement is literal, including inside `\widehat{...}` and
 `\check{...}`. Formula token comparisons apply the same normalization.
+
+## Exact formula reductions and term counting
+
+The reader formulas also apply exact normalized-cochain cancellations.
+The Delta regroupings, the six-face antiunitary polynomial in 2+1D,
+the empty degree-(4,3) cup-4 term, and the diagonal product cancellation
+in 4+1D preserve the existing phase coordinate. The ordinary Majorana
+coefficient table is reduced with its stated closed backgrounds; the
+physical path sums omit identical binary branch pairs. These changes
+do not require a new source/product coordinate map.
+
+The numerical kernels retain the previously checked equivalent expressions.
+The [term census](../docs/formulas/TERM_COUNTS.md) distinguishes expanded
+formula size, exact cochain cancellation, and raw construction occurrences;
+none of these counts is a runtime estimate. Finite sums and completion
+polynomials are expanded in that census rather than assigned unit cost.

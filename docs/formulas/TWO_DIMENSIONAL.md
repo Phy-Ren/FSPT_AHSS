@@ -29,7 +29,7 @@ dn_2=\mathcal{𝒪}_3=\mathcal{𝒪}^{\gamma}_3.
 
 ```math
 \mathcal{𝒪}^{\gamma}_3
- =\mathrm{Sq}^2n_1+\omega_2n_1+s_1\overline{\beta n_1}.
+ =\omega_2n_1+s_1\overline{\beta n_1}.
 ```
 
 ### 3. Bosonic obstruction
@@ -116,11 +116,9 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 #### Complex-fermion–Majorana contribution
 
 ```math
-\begin{aligned}
 \widehat{\mathcal{ℰ}}^{c\gamma}_3
- =\frac12\big[&dn_2\cup_2n'_2+N_2\cup_2dN_2\\
- &+n_2\cup_2dn_2+n'_2\cup_2dn'_2\big].
-\end{aligned}
+ =\frac12\Big[dn_2\cup_2n'_2
+   +\Delta[n_2\cup_2dn_2]\Big].
 ```
 
 #### Majorana contribution
@@ -138,13 +136,15 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 &\qquad-({n_1}\cup_1{n'_1})(\beta n_1+\beta n'_1)\\
 &\qquad+({n_1}\cup_1{n'_1})d({n_1}\cup_1{n'_1})
  -\omega_2(n_1\cup_1n'_1)+\overline{s_1n_1n'_1}\Big]\\
-&+\frac18\Big[-\overline{N_1^3}+\overline{n_1^3}+\overline{(n'_1)^3}\Big]
+&-\frac18\Delta\!\left[\overline{n_1^3}\right]
  \pmod1.
 \end{aligned}
 ```
 
-The bars on the eighth-valued terms and on $`\overline{s_1n_1n'_1}`$ reduce
-the complete indicated product. In contrast, $`n_1\cup_1n'_1`$ in the
+The bar inside $`\Delta[\overline{n_1^3}]`$ and the bar on
+$`\overline{s_1n_1n'_1}`$ reduce each complete indicated product. The
+$`\Delta`$ in the mixed half-valued contribution is binary; in the
+eighth-valued contribution it subtracts the complete integer lifts. In contrast, $`n_1\cup_1n'_1`$ in the
 quarter-valued bracket is a signed integer cup; its differential is also
 integral.
 
@@ -152,10 +152,12 @@ The binary antiunitary term is
 
 ```math
 \begin{aligned}
-\mathcal L_3={}&s_1((s_1\cup_1n_1)+(s_1\cup_1n'_1)+[s_1\cup_1(n_1\cup_1n'_1)])(n_1\cup_1n'_1)\\
-&+(s_1\cup_1n_1) (n_1\cup_1n'_1)N_1\\
-&+((s_1\cup_1n_1) n_1+n_1 (s_1\cup_1n'_1)+s_1n_1+n_1s_1)(n_1\cup_1n'_1)\\
-&+s_1((n_1\cup_1n'_1)n_1+n_1n'_1+n'_1(n_1\cup_1n'_1)).
+\mathcal L_3(0123)={}&s_1(01)n_1(12)n'_1(13)n'_1(23)\\
+&+s_1(01)n_1(02)n_1(12)
+   \big[n'_1(13)n_1(23)+n'_1(12)n'_1(23)\big]\\
+&+n_1(23)n'_1(23)\Big\{
+  s_1(12)n'_1(13)\big[s_1(01)n_1(12)+n_1(01)\big]\\
+&\hspace{40mm}+s_1(01)s_1(02)n'_1(12)\Big\}.
 \end{aligned}
 ```
 

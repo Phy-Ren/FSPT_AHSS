@@ -38,7 +38,7 @@ The lower output and full CF obstruction inputs are
 \end{aligned}
 ```
 
-The set $`\mathcal I_{4,F}`$ is the explicitly printed 58-word lower table in
+The set $`\mathcal I_{4,F}`$ is the explicitly printed 22-word lower table in
 [the relative-word table](THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md). Its obstruction inputs are the full indicated
 physical lower obstructions. $`H_4`$ and $`P_4`$ have respectively the nine and
 eight ordinary terms printed in [the stacking formulas](THREE_DIMENSIONAL.md#eq-t3b). Thus they are fixed
@@ -62,6 +62,26 @@ deletes each letter occurrence whose label still remains elsewhere, and
 differentiates each input by the stated lower law. A Steenrod square
 includes its derivative term. Words with labels above9 are comma-separated
 integer sequences, never concatenated ambiguous decimal strings.
+
+### Final collection of physical indices
+
+Counts of generated seed lists below are before this final collection.
+
+The ordinary-word indices are collected separately in each displayed
+physical contribution, after its input choices have been made. Use the
+actual degrees of those physical inputs. For each specified word, form
+its normalized interval cuts as in the definition of the MS operation.
+A cut contributes the product of its physical input values on the
+specified faces. These scalar factors commute; repeated binary factors
+occur only once. Cancel identical products in pairs.
+
+Discard a word when no product remains. Words whose remaining products
+are identical define the same binary cochain and are collected modulo
+two. In an odd class retain one of its explicitly listed representatives;
+the [term manifests](term_census/README.md) list the retained choices. This is an exact equality of normalized
+cochains. It neither discards a coboundary nor changes a phase coordinate.
+Do not apply this binary rule to integer-valued cup products inside a
+quarter- or eighth-valued term.
 
 ## Two-crossing index selection
 

@@ -109,6 +109,9 @@ those coefficient systems.
 Finite definitions of higher cups and ordered word operations are in
 [Operations](formulas/OPERATIONS.md). The terminal formulas below use physical cochains. Long numerical coefficient lists and proofs of the paired representative changes are kept in separate appendices.
 
+The [expanded term census](formulas/TERM_COUNTS.md) records the actual sizes
+of the finite formulas and the exact reductions adopted in this iteration.
+
 ## Finite definitions and coordinate maps
 
 - 3+1D: [obstruction word coefficients](formulas/THREE_DIMENSIONAL_WORD_INDICES.md), [stacking word coefficients](formulas/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md), [complex-fermion stacking coefficients](formulas/THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md).

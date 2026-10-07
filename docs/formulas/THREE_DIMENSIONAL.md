@@ -383,10 +383,10 @@ The output is the actual stacked Majorana field, including its p+ip carry.
 \end{aligned}
 ```
 
-The [186 open-Majorana words](THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md) contain
+The [132 open-Majorana words](THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md) contain
 $`d\check n_2=\check\omega_2\bar n_1`$ or its primed counterpart.
 The two displayed $`P_4`$ terms differ by inserting the actual p+ip Majorana
-stacking carry $`\bar n_1\bar n'_1`$; their eight-row definition is below. These terms retain the physical complex-fermion operator ordering. The accompanying 58 words with
+stacking carry $`\bar n_1\bar n'_1`$; their eight-row definition is below. These terms retain the physical complex-fermion operator ordering. The accompanying 22 words with
 $`dn_3`$ or $`dn'_3`$ are retained in the lower-sector index set.
 
 #### Majorana decoration

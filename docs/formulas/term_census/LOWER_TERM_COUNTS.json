@@ -1,0 +1,993 @@
+{
+  "scope": "Complete 2+1D laws and the nonterminal 3+1D/4+1D layers. The 3+1D and 4+1D terminal laws are counted separately.",
+  "counting_convention": "One specified nested cup/MS composition or explicit physical-face product counts as one atom. Expand sums, outputs, named finite polynomials, lower correction symbols and Delta. The physical fields and their fixed modifiers are the primitive coordinate names. Ordinary differentials and Bocksteins retain their stated scopes. A named derivative carry is expanded using its displayed law. Degree-impossible and closed-input zero terms are removed. Collect literal duplicate binary terms modulo two.",
+  "protected_lifts": "A canonical lift of an entire binary polynomial is never split into the integer sum of its terms. Its outer occurrence counts once; interior monomials are reported separately. In the 2+1D eighth-valued Delta the expanded output lift contains 8 binary monomials and the two input lifts contain 1 each, giving 10 interior terms.",
+  "tower_expanded_convention": "A second count also replaces physical input derivatives by their displayed lower obstruction laws, including the differentials of the second-digit and shifted physical cochains. This may increase the number of atoms; it does not indicate additional formulas.",
+  "Delta_convention": "Delta is expanded for the census. The new Delta notation for the 2+1D mixed and Majorana phases does not by itself reduce any expanded count.",
+  "face_count_warning": "Scalar-face counts use a different basis from cochain-atom counts. They are not a measure of the number of physical effects or independent cohomology classes; no global minimality is asserted.",
+  "baseline_sha256": "9fbb63186b235a51feb0e574c00f8d2de6cb4621f4eb2fdc1ef586effddf86e3",
+  "records": [
+    {
+      "dimension": "2+1D",
+      "law": "O2",
+      "sector": "gamma",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "face_monomials": {
+        "baseline": 0,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 0,
+      "collected_count": 0,
+      "tower_expanded_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "dn1=0"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "O3",
+      "sector": "gamma",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "face_monomials": {
+        "baseline": 2,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 2,
+      "collected_count": 2,
+      "tower_expanded_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Sq2(n1)=n1 cup_-1 n1+n1 cup dn1=0; dn1=0"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "O4",
+      "sector": "c",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 3,
+        "adopted": 3
+      },
+      "face_monomials": {
+        "baseline": 5,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 3,
+      "collected_count": 3,
+      "tower_expanded_atoms": {
+        "baseline": 4,
+        "adopted": 4
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Keep d of a physical input as a standard leaf"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "O4",
+      "sector": "c-gamma",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 1,
+        "adopted": 1
+      },
+      "face_monomials": {
+        "baseline": 4,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 1,
+      "collected_count": 1,
+      "tower_expanded_atoms": {
+        "baseline": 4,
+        "adopted": 4
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Keep d of a physical input as a standard leaf"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "O4",
+      "sector": "gamma",
+      "coefficient_block": "half",
+      "cochain_atoms": {
+        "baseline": 5,
+        "adopted": 5
+      },
+      "face_monomials": {
+        "baseline": 9,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 5,
+      "collected_count": 5,
+      "tower_expanded_atoms": {
+        "baseline": 5,
+        "adopted": 5
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "O4",
+      "sector": "gamma",
+      "coefficient_block": "quarter",
+      "cochain_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "face_monomials": {
+        "baseline": 2,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 2,
+      "collected_count": 2,
+      "tower_expanded_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E1",
+      "sector": "gamma",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "face_monomials": {
+        "baseline": 0,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 0,
+      "collected_count": 0,
+      "tower_expanded_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E2",
+      "sector": "gamma",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "face_monomials": {
+        "baseline": 2,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 2,
+      "collected_count": 2,
+      "tower_expanded_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E3",
+      "sector": "c",
+      "coefficient_block": "half",
+      "cochain_atoms": {
+        "baseline": 5,
+        "adopted": 5
+      },
+      "face_monomials": {
+        "baseline": 10,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 5,
+      "collected_count": 5,
+      "tower_expanded_atoms": {
+        "baseline": 5,
+        "adopted": 5
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Expand E2 into its two Majorana terms"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E3",
+      "sector": "c-gamma",
+      "coefficient_block": "half",
+      "cochain_atoms": {
+        "baseline": 15,
+        "adopted": 15
+      },
+      "face_monomials": {
+        "baseline": 30,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 19,
+      "collected_count": 15,
+      "tower_expanded_atoms": {
+        "baseline": 22,
+        "adopted": 22
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Expand N2 and its named E2 carry",
+        "d(n1 cup1n1prime)=n1 n1prime+n1prime n1 in binary arithmetic",
+        "Keep dn2 and dn2prime as standard leaves"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E3",
+      "sector": "gamma",
+      "coefficient_block": "half",
+      "cochain_atoms": {
+        "baseline": 19,
+        "adopted": 13
+      },
+      "face_monomials": {
+        "baseline": 22,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 19,
+      "collected_count": 19,
+      "tower_expanded_atoms": {
+        "baseline": 19,
+        "adopted": 13
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Expand L3 (12 monomials)",
+        "N1=n1+n1prime in binary terms"
+      ],
+      "evidence": "Exact normalized-cut coefficient identity and independent unchanged production-engine replay.",
+      "change": "The antiunitary term has 12 expanded nested-cup monomials before simplification and 6 explicit physical-face monomials afterward."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E3",
+      "sector": "gamma",
+      "coefficient_block": "quarter",
+      "cochain_atoms": {
+        "baseline": 8,
+        "adopted": 8
+      },
+      "face_monomials": {
+        "baseline": 11,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 1,
+        "adopted": 1
+      },
+      "raw_count": 8,
+      "collected_count": 8,
+      "tower_expanded_atoms": {
+        "baseline": 8,
+        "adopted": 8
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E3",
+      "sector": "gamma",
+      "coefficient_block": "eighth",
+      "cochain_atoms": {
+        "baseline": 3,
+        "adopted": 3
+      },
+      "face_monomials": {
+        "baseline": 24,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 10,
+        "adopted": 10
+      },
+      "raw_count": 3,
+      "collected_count": 3,
+      "tower_expanded_atoms": {
+        "baseline": 3,
+        "adopted": 3
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Keep full canonical reduction of N1^3; N1=n1+n1prime is substituted inside its binary lift scope"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O2",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "face_monomials": {
+        "baseline": 0,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 0,
+      "collected_count": 0,
+      "tower_expanded_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O3",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "face_monomials": {
+        "baseline": 2,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 2,
+      "collected_count": 2,
+      "tower_expanded_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "bar n is binary closed; terms proportional to d bar n vanish",
+        "Expand Sq using its full cochain formula"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O4",
+      "sector": "gamma",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 3,
+        "adopted": 3
+      },
+      "face_monomials": {
+        "baseline": 4,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 3,
+      "collected_count": 3,
+      "tower_expanded_atoms": {
+        "baseline": 3,
+        "adopted": 3
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O4",
+      "sector": "gamma-psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "face_monomials": {
+        "baseline": 4,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 2,
+      "collected_count": 2,
+      "tower_expanded_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Keep d of a physical input as a standard leaf"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O4",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 5,
+        "adopted": 5
+      },
+      "face_monomials": {
+        "baseline": 11,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 5,
+      "collected_count": 5,
+      "tower_expanded_atoms": {
+        "baseline": 5,
+        "adopted": 5
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Expand zeta into its explicit MS word",
+        "Substitute d tilde n=bar n cup_(p-1)bar n+s1 bar n",
+        "Sq3 tilde n2=tilde n2 d tilde n2 in4D"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E1",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "face_monomials": {
+        "baseline": 0,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 0,
+      "collected_count": 0,
+      "tower_expanded_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E2",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "face_monomials": {
+        "baseline": 2,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 2,
+      "collected_count": 2,
+      "tower_expanded_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E3",
+      "sector": "gamma",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "face_monomials": {
+        "baseline": 3,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 2,
+      "collected_count": 2,
+      "tower_expanded_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E3",
+      "sector": "gamma-psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 5,
+        "adopted": 5
+      },
+      "face_monomials": {
+        "baseline": 8,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 5,
+      "collected_count": 5,
+      "tower_expanded_atoms": {
+        "baseline": 5,
+        "adopted": 5
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Expand lower carry",
+        "Keep dcheck n as standard derivative leaf"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E3",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 18,
+        "adopted": 18
+      },
+      "face_monomials": {
+        "baseline": 27,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 22,
+      "collected_count": 18,
+      "tower_expanded_atoms": {
+        "baseline": 20,
+        "adopted": 20
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Expand z,ell,Delta and the derivative of the named lower carry",
+        "Keep dtilde n as a standard derivative leaf"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O3",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "face_monomials": {
+        "baseline": 0,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 0,
+      "collected_count": 0,
+      "tower_expanded_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O4",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 3,
+        "adopted": 3
+      },
+      "face_monomials": {
+        "baseline": 4,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 3,
+      "collected_count": 3,
+      "tower_expanded_atoms": {
+        "baseline": 3,
+        "adopted": 3
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "bar n is binary closed; terms proportional to d bar n vanish",
+        "Expand Sq using its full cochain formula"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O5",
+      "sector": "gamma",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 3,
+        "adopted": 3
+      },
+      "face_monomials": {
+        "baseline": 8,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 3,
+      "collected_count": 3,
+      "tower_expanded_atoms": {
+        "baseline": 3,
+        "adopted": 3
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O5",
+      "sector": "gamma-psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "face_monomials": {
+        "baseline": 8,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 2,
+      "collected_count": 2,
+      "tower_expanded_atoms": {
+        "baseline": 4,
+        "adopted": 4
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Keep d of a physical input as a standard leaf"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O5",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 13,
+        "adopted": 13
+      },
+      "face_monomials": {
+        "baseline": 33,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 13,
+      "collected_count": 13,
+      "tower_expanded_atoms": {
+        "baseline": 14,
+        "adopted": 14
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Sq3 tilde n2=tilde n2 dtilde n2; negative cup vanishes",
+        "Keep dtilde n2 as standard derivative leaf"
+      ],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E2",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "face_monomials": {
+        "baseline": 0,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 0,
+      "collected_count": 0,
+      "tower_expanded_atoms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E3",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "face_monomials": {
+        "baseline": 3,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 2,
+      "collected_count": 2,
+      "tower_expanded_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E4",
+      "sector": "gamma",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "face_monomials": {
+        "baseline": 5,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 2,
+      "collected_count": 2,
+      "tower_expanded_atoms": {
+        "baseline": 2,
+        "adopted": 2
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [],
+      "evidence": "Explicit distributive expansion of the displayed cochain expression, preserving all lift scopes.",
+      "change": "No change of the expanded cochain-atom count."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E4",
+      "sector": "gamma-psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 6,
+        "adopted": 5
+      },
+      "face_monomials": {
+        "baseline": 23,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 6,
+      "collected_count": 6,
+      "tower_expanded_atoms": {
+        "baseline": 8,
+        "adopted": 6
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Expand lower carry",
+        "Keep dcheck n as standard derivative leaf"
+      ],
+      "evidence": "Exact normalized-cut coefficient identity and independent unchanged production-engine replay.",
+      "change": "A cup-4 operation with input degrees 4 and 3 has no normalized cuts."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E4",
+      "sector": "psi",
+      "coefficient_block": "full binary contribution",
+      "cochain_atoms": {
+        "baseline": 29,
+        "adopted": 27
+      },
+      "face_monomials": {
+        "baseline": 64,
+        "convention": "Normalized interval-cut expansion in formal physical-field, derivative, and Bockstein face values; phase-valued blocks use signed integer coefficients modulo the displayed denominator."
+      },
+      "lift_interior_terms": {
+        "baseline": 0,
+        "adopted": 0
+      },
+      "raw_count": 29,
+      "collected_count": 29,
+      "tower_expanded_atoms": {
+        "baseline": 31,
+        "adopted": 29
+      },
+      "exactness": "Exact cochain equalities; no coboundary quotient or representative change.",
+      "expansion_rules": [
+        "Expand z,ell,Delta and the derivative of the named lower carry",
+        "Keep dtilde n as a standard derivative leaf"
+      ],
+      "evidence": "Exact normalized-cut coefficient identity and independent unchanged production-engine replay.",
+      "change": "Two equal diagonal products cancel after expanding the derivative of the lower stacking carry."
+    }
+  ],
+  "production_verification": {
+    "engine": "unchanged production cochain evaluator",
+    "closed_degree_one_L3_assignments": 512,
+    "closed_degree_one_Sq2_assignments": 512,
+    "diagonal_product_independent_face_assignments": 32,
+    "closed_degree_two_carry_derivative_assignments": 4096,
+    "empty_cup4_cut_count": 0
+  },
+  "coordinate_or_numerical_formula_change": false,
+  "L3_verification_revision": "Corrected the initial extra N1 substitution. Current checks parse the literal frozen TeX directly; the earlier L3 receipts are explicitly invalidated."
+}

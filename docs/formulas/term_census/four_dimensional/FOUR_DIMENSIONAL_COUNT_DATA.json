@@ -1,0 +1,654 @@
+{
+  "title": "4+1D literal formula expansion census",
+  "version": "2026-10-07",
+  "metric": "Raw additive ordinary-operation and physical-face-binomial occurrences, including explicitly counted nonlinear-lift interiors; not the number of independent or final nonzero terms.",
+  "source_residual_atoms": 7673,
+  "source_grid_count": 1086,
+  "AW_physical_binomial_occurrences": 5602,
+  "AW_collected_physical_digit_monomials": 1784,
+  "baseline_visible_blocks": [
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "sector": "c",
+      "cochain_atoms": 3,
+      "raw_count": 3
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "sector": "c_gamma",
+      "cochain_atoms": 25,
+      "raw_count": 25
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "sector": "c_psi",
+      "cochain_atoms": 299,
+      "raw_count": 299
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "sector": "gamma",
+      "cochain_atoms": 107,
+      "raw_count": 107
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "sector": "gamma_psi",
+      "cochain_atoms": 1170,
+      "raw_count": 1170
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "sector": "psi",
+      "cochain_atoms": 55,
+      "raw_count": 55
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "sector": "c",
+      "cochain_atoms": 71,
+      "raw_count": 71
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "sector": "c_gamma",
+      "cochain_atoms": 20,
+      "raw_count": 20
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "sector": "c_psi",
+      "cochain_atoms": 52,
+      "raw_count": 52
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "sector": "gamma",
+      "cochain_atoms": 9,
+      "raw_count": 9
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "sector": "gamma_psi",
+      "cochain_atoms": 10428,
+      "raw_count": 10428
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "sector": "psi",
+      "cochain_atoms": 148,
+      "raw_count": 148
+    }
+  ],
+  "baseline_kernel_by_epsilon_weight": {
+    "0": {
+      "pip_factor_terms": 2,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1751,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1751,
+          "outer_monomial_occurrences": 1733
+        },
+        "3": {
+          "cochain_atoms": 863176,
+          "face_binomial_monomials": 66920,
+          "total_raw_atom_occurrences": 930096,
+          "outer_monomial_occurrences": 542713
+        },
+        "2": {
+          "cochain_atoms": 25241681,
+          "face_binomial_monomials": 17062,
+          "total_raw_atom_occurrences": 25258743,
+          "outer_monomial_occurrences": 262337
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 767,
+          "total_raw_atom_occurrences": 779,
+          "outer_monomial_occurrences": 779
+        }
+      }
+    },
+    "1": {
+      "pip_factor_terms": 4,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1751,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1751,
+          "outer_monomial_occurrences": 1733
+        },
+        "3": {
+          "cochain_atoms": 7697636,
+          "face_binomial_monomials": 1045904,
+          "total_raw_atom_occurrences": 8743540,
+          "outer_monomial_occurrences": 3828753
+        },
+        "2": {
+          "cochain_atoms": 26452193,
+          "face_binomial_monomials": 17574,
+          "total_raw_atom_occurrences": 26469767,
+          "outer_monomial_occurrences": 1471277
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 1079,
+          "total_raw_atom_occurrences": 1091,
+          "outer_monomial_occurrences": 1091
+        }
+      }
+    },
+    "2": {
+      "pip_factor_terms": 6,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1751,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1751,
+          "outer_monomial_occurrences": 1733
+        },
+        "3": {
+          "cochain_atoms": 50418288,
+          "face_binomial_monomials": 7020792,
+          "total_raw_atom_occurrences": 57439080,
+          "outer_monomial_occurrences": 23832953
+        },
+        "2": {
+          "cochain_atoms": 29988745,
+          "face_binomial_monomials": 18534,
+          "total_raw_atom_occurrences": 30007279,
+          "outer_monomial_occurrences": 5003553
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 1391,
+          "total_raw_atom_occurrences": 1403,
+          "outer_monomial_occurrences": 1403
+        }
+      }
+    },
+    "3": {
+      "pip_factor_terms": 8,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1751,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1751,
+          "outer_monomial_occurrences": 1733
+        },
+        "3": {
+          "cochain_atoms": 237663724,
+          "face_binomial_monomials": 29952032,
+          "total_raw_atom_occurrences": 267615756,
+          "outer_monomial_occurrences": 112957105
+        },
+        "2": {
+          "cochain_atoms": 37800425,
+          "face_binomial_monomials": 20134,
+          "total_raw_atom_occurrences": 37820559,
+          "outer_monomial_occurrences": 12805949
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 1703,
+          "total_raw_atom_occurrences": 1715,
+          "outer_monomial_occurrences": 1715
+        }
+      }
+    },
+    "4": {
+      "pip_factor_terms": 10,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1751,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1751,
+          "outer_monomial_occurrences": 1733
+        },
+        "3": {
+          "cochain_atoms": 866078936,
+          "face_binomial_monomials": 96527240,
+          "total_raw_atom_occurrences": 962606176,
+          "outer_monomial_occurrences": 416676921
+        },
+        "2": {
+          "cochain_atoms": 52435361,
+          "face_binomial_monomials": 22566,
+          "total_raw_atom_occurrences": 52457927,
+          "outer_monomial_occurrences": 27423521
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 2015,
+          "total_raw_atom_occurrences": 2027,
+          "outer_monomial_occurrences": 2027
+        }
+      }
+    },
+    "5": {
+      "pip_factor_terms": 12,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1751,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1751,
+          "outer_monomial_occurrences": 1733
+        },
+        "3": {
+          "cochain_atoms": 2605096116,
+          "face_binomial_monomials": 257223600,
+          "total_raw_atom_occurrences": 2862319716,
+          "outer_monomial_occurrences": 1266101393
+        },
+        "2": {
+          "cochain_atoms": 77040721,
+          "face_binomial_monomials": 26022,
+          "total_raw_atom_occurrences": 77066743,
+          "outer_monomial_occurrences": 51999597
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 2327,
+          "total_raw_atom_occurrences": 2339,
+          "outer_monomial_occurrences": 2339
+        }
+      }
+    }
+  },
+  "current_kernel_by_epsilon_weight": {
+    "0": {
+      "pip_factor_terms": 2,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1495,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1495,
+          "outer_monomial_occurrences": 1477
+        },
+        "3": {
+          "cochain_atoms": 821578,
+          "face_binomial_monomials": 66920,
+          "total_raw_atom_occurrences": 888498,
+          "outer_monomial_occurrences": 501115
+        },
+        "2": {
+          "cochain_atoms": 25220557,
+          "face_binomial_monomials": 17062,
+          "total_raw_atom_occurrences": 25237619,
+          "outer_monomial_occurrences": 241213
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 767,
+          "total_raw_atom_occurrences": 779,
+          "outer_monomial_occurrences": 779
+        }
+      }
+    },
+    "1": {
+      "pip_factor_terms": 4,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1495,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1495,
+          "outer_monomial_occurrences": 1477
+        },
+        "3": {
+          "cochain_atoms": 7543382,
+          "face_binomial_monomials": 1045904,
+          "total_raw_atom_occurrences": 8589286,
+          "outer_monomial_occurrences": 3674499
+        },
+        "2": {
+          "cochain_atoms": 26303033,
+          "face_binomial_monomials": 17574,
+          "total_raw_atom_occurrences": 26320607,
+          "outer_monomial_occurrences": 1322117
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 1079,
+          "total_raw_atom_occurrences": 1091,
+          "outer_monomial_occurrences": 1091
+        }
+      }
+    },
+    "2": {
+      "pip_factor_terms": 6,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1495,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1495,
+          "outer_monomial_occurrences": 1477
+        },
+        "3": {
+          "cochain_atoms": 50034642,
+          "face_binomial_monomials": 7020792,
+          "total_raw_atom_occurrences": 57055434,
+          "outer_monomial_occurrences": 23449307
+        },
+        "2": {
+          "cochain_atoms": 29433053,
+          "face_binomial_monomials": 18534,
+          "total_raw_atom_occurrences": 29451587,
+          "outer_monomial_occurrences": 4447861
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 1391,
+          "total_raw_atom_occurrences": 1403,
+          "outer_monomial_occurrences": 1403
+        }
+      }
+    },
+    "3": {
+      "pip_factor_terms": 8,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1495,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1495,
+          "outer_monomial_occurrences": 1477
+        },
+        "3": {
+          "cochain_atoms": 236892478,
+          "face_binomial_monomials": 29952032,
+          "total_raw_atom_occurrences": 266844510,
+          "outer_monomial_occurrences": 112185859
+        },
+        "2": {
+          "cochain_atoms": 36305497,
+          "face_binomial_monomials": 20134,
+          "total_raw_atom_occurrences": 36325631,
+          "outer_monomial_occurrences": 11311021
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 1703,
+          "total_raw_atom_occurrences": 1715,
+          "outer_monomial_occurrences": 1715
+        }
+      }
+    },
+    "4": {
+      "pip_factor_terms": 10,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1495,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1495,
+          "outer_monomial_occurrences": 1477
+        },
+        "3": {
+          "cochain_atoms": 864720410,
+          "face_binomial_monomials": 96527240,
+          "total_raw_atom_occurrences": 961247650,
+          "outer_monomial_occurrences": 415318395
+        },
+        "2": {
+          "cochain_atoms": 49131341,
+          "face_binomial_monomials": 22566,
+          "total_raw_atom_occurrences": 49153907,
+          "outer_monomial_occurrences": 24119501
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 2015,
+          "total_raw_atom_occurrences": 2027,
+          "outer_monomial_occurrences": 2027
+        }
+      }
+    },
+    "5": {
+      "pip_factor_terms": 12,
+      "kernel": {
+        "1": {
+          "cochain_atoms": 1495,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 1495,
+          "outer_monomial_occurrences": 1477
+        },
+        "3": {
+          "cochain_atoms": 2602909158,
+          "face_binomial_monomials": 257223600,
+          "total_raw_atom_occurrences": 2860132758,
+          "outer_monomial_occurrences": 1263914435
+        },
+        "2": {
+          "cochain_atoms": 70637657,
+          "face_binomial_monomials": 26022,
+          "total_raw_atom_occurrences": 70663679,
+          "outer_monomial_occurrences": 45596533
+        }
+      },
+      "tensor": {
+        "1": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 0,
+          "total_raw_atom_occurrences": 0,
+          "outer_monomial_occurrences": 0
+        },
+        "3": {
+          "cochain_atoms": 0,
+          "face_binomial_monomials": 156,
+          "total_raw_atom_occurrences": 156,
+          "outer_monomial_occurrences": 156
+        },
+        "2": {
+          "cochain_atoms": 12,
+          "face_binomial_monomials": 2327,
+          "total_raw_atom_occurrences": 2339,
+          "outer_monomial_occurrences": 2339
+        }
+      }
+    }
+  },
+  "current_visible_changes": {
+    "O6.gamma": -16,
+    "O6.gamma_psi": -70,
+    "E5.c": -2,
+    "E5.gamma_psi": -1
+  },
+  "sector_colors": {
+    "1": "gamma",
+    "3": "gamma_psi",
+    "2": "psi"
+  },
+  "complete_scalar_normal_form_count": null,
+  "standard_boundary": [
+    "Declared physical input/output cochains and their decorations remain inputs.",
+    "Standard differential and Bockstein operations remain operations; Sq and all named polynomial/finite-index wrappers are expanded.",
+    "A canonical lift or floor digit keeps its scope. Its displayed interior summands are counted, without falsely distributing that nonlinear operation.",
+    "A nested ordinary cup/MS/differential monomial counts once; all additive arguments are distributed when the operation is linear.",
+    "Every finite path is weighted by every explicit kernel/tensor summand; no y6, kernel, path, or index set is counted as one.",
+    "No sharing of repeated intermediate expressions is credited in this raw tree-expansion count."
+  ],
+  "exact_reductions": {
+    "source_word_rows": [
+      1176,
+      1090
+    ],
+    "source_gamma_rows": [
+      101,
+      85
+    ],
+    "source_mixed_rows": [
+      1075,
+      1005
+    ],
+    "zero_background_product_T_words": [
+      179225,
+      106147
+    ],
+    "full_gamma_paths": "Only length zero survives: gamma factors are epsilon independent; positive-length paths cancel in binary branch pairs."
+  }
+}
