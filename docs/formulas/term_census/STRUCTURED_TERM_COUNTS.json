@@ -12,12 +12,12 @@
   "expanded_objects": [
     "All arbitrary finite I/J/y/z/H/P4 polynomials and their actual coefficient lists.",
     "All explicit linear parentheses, including those inside d and Delta.",
-    "Finite pair-index sums. The 4D V mixed pair sum has twelve terms. The 3D quadratic expression now reuses the existing total integer carry in four terms, exactly equal to its former sixteen-term component sum."
+    "Finite pair-index sums. The 4D V mixed pair sum has nine terms by its exact higher-cup polarization. The 3D quadratic expression now reuses the existing total integer carry in four terms, exactly equal to its former sixteen-term component sum."
   ],
   "reader_hashes": {
-    "docs/formulas/TWO_DIMENSIONAL.md": "bdc4a7f835e90e2f5a5f35a2b6d880e08ed61661e29835a5f09f2621b47f7f81",
-    "docs/formulas/THREE_DIMENSIONAL.md": "6f1b0a53ae24f7ca8195e01f45432fceeb662e6814259fae5abacb624f24baf3",
-    "docs/formulas/FOUR_DIMENSIONAL.md": "81ca6fad3a2dacbcc10c7758ad84b3a00dcb07362965abe62addf4458aa4acb4"
+    "docs/formulas/TWO_DIMENSIONAL.md": "ca61f92084207f663d0057618592e369eeca7657da0be20d8fd8ee849879007b",
+    "docs/formulas/THREE_DIMENSIONAL.md": "7266c69a72e38387d6880ce70217eecbf0789a4d173b17629ffc589144d12995",
+    "docs/formulas/FOUR_DIMENSIONAL.md": "ffe457b83208926215396820d30511c24a2b656ce3f3417c3afb481655592175"
   },
   "records": [
     {
@@ -421,14 +421,14 @@
       "law": "E4",
       "origin": "cpsi",
       "terms_by_coefficient": {
-        "binary_or_half": 202,
+        "binary_or_half": 29,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 202,
+      "total": 29,
       "note": "The existing Delta retains the three output-minus-input evaluations as one defined operation."
     },
     {
@@ -786,11 +786,11 @@
       "dimension": "4+1D",
       "law": "E5",
       "origin": "gammapsi",
-      "total": 5685535,
+      "total": 5685451,
       "finite_sum_terms": 5684189,
-      "additional_terms": 1346,
+      "additional_terms": 1262,
       "terms_by_coefficient": {
-        "binary_or_half": 5685532,
+        "binary_or_half": 5685448,
         "quarter": 3,
         "eighth": 0,
         "sixteenth": 0,
@@ -829,7 +829,7 @@
     "3+1D E1": 0,
     "3+1D E2": 2,
     "3+1D E3": 20,
-    "3+1D E4": 26894,
+    "3+1D E4": 26721,
     "4+1D O3": 0,
     "4+1D O4": 3,
     "4+1D O5": 18,
@@ -837,7 +837,7 @@
     "4+1D E2": 0,
     "4+1D E3": 2,
     "4+1D E4": 34,
-    "4+1D E5": 8555388
+    "4+1D E5": 8555304
   },
   "slot_widths": {
     "2D L3 scalar polynomial": {
@@ -929,9 +929,9 @@
         1,
         1,
         1,
-        12
+        9
       ],
-      "distributed_occurrences": 42
+      "distributed_occurrences": 39
     },
     "4D V5 psi": {
       "displayed_slot_widths": [
@@ -953,11 +953,11 @@
     },
     "4D canonical quarter-lift half-valued carry": {
       "displayed_slot_widths": [
-        336,
+        312,
         160,
-        840
+        780
       ],
-      "distributed_occurrences": 1336
+      "distributed_occurrences": 1252
     },
     "2D O4 gamma half": {
       "displayed_slot_widths": [
@@ -1165,7 +1165,7 @@
     "4D lambda_gamma_psi bar(u+v)": 2,
     "4D lambda_psi exact numerator": 2,
     "4D source_psi negative whole quarter reduction": 4,
-    "4D product mixed whole quarter reduction": 42,
+    "4D product mixed whole quarter reduction": 39,
     "4D product psi whole quarter reduction": 20,
     "fixed integer Pontryagin representative defining terms": 2,
     "4D E5 gamma four separate quarter lifts": {
@@ -1241,15 +1241,16 @@
     {
       "page": "FOUR_DIMENSIONAL.md",
       "anchor": "V5 gammapsi final three-pair sum",
-      "primary": 12,
+      "primary": 9,
       "supplementary": 55,
-      "text": "Three index pairs give twelve cup terms with the defined lambda carries and cochain differentials retained. The 55-term expansion inserts their definitions and specified lower equations; it is supplementary and preserves the exact quotient."
+      "text": "Three index pairs give nine terms by exact cup polarization. The55-term substitution count is archived for the preceding twelve-term expression."
     },
     {
       "page": "THREE_DIMENSIONAL.md",
-      "anchor": "E4 cpsi two P4 evaluations",
-      "primary": 68,
-      "text": "Expanding the eight-word definition in these two displayed evaluations gives 16 and 52 specified MS occurrences respectively, retaining the actual output checkN2; together they contribute 68 beyond the 132-term sum."
+      "anchor": "E4 cpsi lower-obstruction replacement",
+      "primary": 14,
+      "text": "Two derivatives multiply two lower obstruction evaluations, one output square, and four input-square products:2*(2+1+4)=14. These replace the former two P4 evaluations exactly; the additional face correction has13 products.",
+      "archived_P4_pair_terms": 68
     },
     {
       "page": "THREE_DIMENSIONAL.md",
@@ -1261,7 +1262,7 @@
     {
       "page": "ALL",
       "anchor": "other already stated finite coefficient sums",
-      "text": "The unchanged actual finite-list counts are 25,132,2276,583,10825,15994,6479,4094,85,1005,623880 and455. The old 5707-term Majorana face list is archived; the current replacement has two half-valued face products, seven ordinary quarter terms and four separately lifted binary polynomials with 5, 15, 10, 116 interior products."
+      "text": "The unchanged actual finite-list counts are 25,2276,583,10825,15994,6479,4094,85,1005,623880 and455. The old 5707-term Majorana face list is archived; the current replacement has two half-valued face products, seven ordinary quarter terms and four separately lifted binary polynomials with 5, 15, 10, 116 interior products. The old132-term CF exchange sum is replaced by thirteen explicit face products."
     },
     {
       "page": "FOUR_DIMENSIONAL.md",
@@ -1304,17 +1305,17 @@
         116
       ]
     },
-    "total_primary": 8555388,
-    "total_outer_alternative": 8555246
+    "total_primary": 8555304,
+    "total_outer_alternative": 8555162
   },
   "count_semantics": {
     "default": "Displayed additive occurrences with declared structures retained and arbitrary finite sums fully listed. Canonical-lift interiors are separately recorded.",
     "exception": "4+1D E5 gamma total 624 counts expression leaves:459 half outer terms+19 ordinary quarter terms+146 protected interior monomials. Its outer additive total is482.",
     "coefficient_warning": "The quarter 165 count in this record describes leaves within the quarter bracket, not independently quarter-valued phase terms. Four nonlinear scopes are preserved.",
-    "aggregate": "4+1D E5 total 8555388 uses the624-leaf gamma entry and the established boundaries of the other five contributions. Replacing only that entry by its 482 outer addends gives 8555246. No fully flattened linear-phase interpretation is asserted."
+    "aggregate": "4+1D E5 total 8555304 uses the624-leaf gamma entry and the established boundaries of the other five contributions. Replacing only that entry by its 482 outer addends gives 8555162. No fully flattened linear-phase interpretation is asserted."
   },
   "aggregate_outer_alternative": {
-    "4+1D E5": 8555246,
+    "4+1D E5": 8555162,
     "scope": "Replace only the 4D E5 gamma 624-leaf entry by its 482 outer addends; all other recorded boundaries are unchanged."
   },
   "archival_representations": {
@@ -1504,9 +1505,79 @@
     }
   },
   "supporting_reader_hashes": {
-    "docs/FORMULA_GUIDE.md": "21cc164035eff4458284e331b078e5200581fc314eb7c410fd9a92647ea4d8b2",
-    "docs/formulas/QUADRATIC_REFINEMENTS.md": "b23760cb78ec6aaf32db5635344a350c6fb1b2720f404ea1ae549f56c618fd89",
-    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": "0f5c1a619ade4e22772adf52073dd452d23a5414083022c4eeec9bc86069532e",
-    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "145fe716fd3da148d2086c11a09c4f50004bc8f89e096e56e41257c4bcbc7e8c"
+    "docs/FORMULA_GUIDE.md": "ed3ca78a311597396a9b18ee054489eb95574092027e6e4a3497c7cd22ba0171",
+    "docs/formulas/QUADRATIC_REFINEMENTS.md": "7894b4cced36898c88f2e9c4e530e544ea900a5c14dea237bafd77857d20a86f",
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": "5cc624b61fa4281796b0004eab45f15bbd308d0ecf2e9760de20eb019acad305",
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "ba63ad77be71c7ea9dea60bd4cd5de6c5fe267e43b8d8edbc2ea77b4f53d50ff"
+  },
+  "self_stacking": {
+    "scope": "Separate restricted formulas; complete input states; before full output gauge. These records do not replace general counts.",
+    "terminal": {
+      "2+1D_zero_integer": {
+        "origins": [
+          1,
+          1,
+          0,
+          6,
+          0,
+          0
+        ],
+        "total": 8
+      },
+      "3+1D_zero_pip": {
+        "origins": [
+          1,
+          1,
+          0,
+          8,
+          0,
+          0
+        ],
+        "total": 10
+      },
+      "3+1D_canonical_torsion_pip": {
+        "origins": [
+          1,
+          3,
+          5,
+          16,
+          1142,
+          250
+        ],
+        "total": 1417
+      },
+      "4+1D_full": {
+        "origins_outer": [
+          1,
+          3,
+          2,
+          231,
+          3614180,
+          793683
+        ],
+        "total_outer": 4408100,
+        "gamma_lift_interiors": [
+          5,
+          15,
+          10,
+          76
+        ],
+        "total_with_gamma_lift_wrappers_replaced": 4408202
+      },
+      "4+1D_zero_pip_with_output_gauge": {
+        "total": 30,
+        "gamma": 28
+      }
+    }
+  },
+  "current_general_cf_reduction": {
+    "old_total": 202,
+    "new_total": 29,
+    "old_MS": 132,
+    "new_faces": 13,
+    "old_P4_pair": 68,
+    "new_lower_obstruction_pair": 14,
+    "other_defined_terms": 2,
+    "representative_change": false
   }
 }

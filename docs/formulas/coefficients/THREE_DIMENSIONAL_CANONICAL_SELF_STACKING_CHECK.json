@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "3+1D identical complete states, n1=s1; actual lower equations; before the integer output gauge. Six microscopic contributions retain the current representative.",
+  "independent_binary_variables": 20,
+  "method": "Exact physical lower-tower Boolean and signed integer polynomials; no sampling or solve",
+  "sector_residual_coefficients": {
+    "C": 0,
+    "CGAMMA": 0,
+    "CPSI": 0,
+    "GAMMA": 0,
+    "GAMMAPSI": 0,
+    "PSI": 0
+  },
+  "total_residual_coefficients": 0,
+  "collected_complete_phase_coefficients": 2652,
+  "declared_structure_counts": {
+    "c": 1,
+    "c_gamma": 3,
+    "c_psi": 5,
+    "gamma": 16,
+    "gamma_psi": 1142,
+    "psi": 250,
+    "total": 1417,
+    "mixed_half_finite_sum": 1130,
+    "pure_half_finite_sum": 244
+  },
+  "new_gauge": false,
+  "integer_output_gauge_applied": false,
+  "phase_modulus": 16,
+  "canonical_lifts_and_twists_preserved": true,
+  "open_exchange_identities": {
+    "independent_free_cochain_bits": 15,
+    "residual_coefficients": {
+      "seven_Majorana_MS_to_one_face": 0,
+      "eight_remaining_CF_MS_to_three_faces": 0
+    },
+    "lower_equations_imposed": false
+  }
+}

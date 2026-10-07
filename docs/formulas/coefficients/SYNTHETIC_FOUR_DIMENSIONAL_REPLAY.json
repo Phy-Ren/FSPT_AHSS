@@ -1,0 +1,5265 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic filtered abelian integer presentations; no physical cochain claim.",
+  "cases": 24,
+  "dependent_images_eliminated": 24,
+  "nonzero_lower_offsets_preserved": 24,
+  "records": [
+    {
+      "name": "q2_2_sign0_offset0",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          2,
+          2
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 1
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -1
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "526095fc8c35630ba8d2fee109ee79cf1766d7ef49cf65eb2b5e953929a8ae2e",
+        "new_presentation_sha256": "8b3dc4e52277ca547bc63ad0904cbc2e4b07b73260472d690d83158348622fec",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q2_2_sign0_offset1",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          2,
+          2
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 1
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -1
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "17d50b51ba746a0c77d8eadb250f4afc9ebe5b2a638f2a0201d347409a51fed6",
+        "new_presentation_sha256": "84d5cc0ddf52e96c4d92f73a32d5bbdcb709134eaf064e1e5cbf4cf219764dee",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q2_2_sign0_offset2",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            2,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          2,
+          2
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 1
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -1
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "43bb51f602d7529de6e13e304ae461a868e374b37565e897df5a6664f56fcaaf",
+        "new_presentation_sha256": "29e8612e4d7f787f7e7562db0279f2ed3a3bab79b82507083f8c55d9e87947bf",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q2_2_sign0_offset3",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            2,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          2,
+          2
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 1
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -1
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "2bd88b60218512494521b6925a534fb6adb03449ed47a394cf5c616f12cb37ba",
+        "new_presentation_sha256": "e6b48b57040d9adda6af4917a8e477fed6c60bf5be0a65be00eecf65f040f052",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q2_2_sign1_offset0",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          2,
+          2
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 1
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -1,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -1
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "d46fd55fb9871b3b9dd5cc91162553c5d5b98341e334dbbe1916f8ea72446c45",
+        "new_presentation_sha256": "ed8230af441c919579d00ca93a53c4a19df60b1afe85bea16024c33cbbe53eee",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q2_2_sign1_offset1",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          2,
+          2
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 1
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -3,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -1
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "9803f18250c10a9e5487a20d4a7bc4ed58025348f3ac8b374dd4eb5dc0f4cf50",
+        "new_presentation_sha256": "b6b0c3df6fc5aec693cbf14e51e33ab386c48d75918ebf8ab7ae917877254e11",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q2_2_sign1_offset2",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            2,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          2,
+          2
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 1
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              2,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -5,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -1
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              2,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "a81cf5be6e3215ac783b55fca833d197b881b3d147a1c9e64ff124d075bc7976",
+        "new_presentation_sha256": "f41380a4eff4acf173680be62b65626a03d8018971e8541a35cba0e2b985c39b",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q2_2_sign1_offset3",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            2,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ],
+          [
+            3,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          2,
+          2
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 1
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              3,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -7,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -1
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              3,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "0bcb7efc5cf5b6a6729bff505fd100f0d6431e61f3eba12ae00633722063142e",
+        "new_presentation_sha256": "a80778ae21bcaac4571da2d8f35d5c7c9213cb49e60db91713bcb95ba2e11b78",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q4_2_sign0_offset0",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 4
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          4,
+          2
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "eca3b472a9cdd1bed932e9d5e3cb93ef18e49159ebe0ee534dcd6f17ef5812a2",
+        "new_presentation_sha256": "313dd6749647a419b7a604d702bbc333fe1a2ad23402879001c48944c351cdcd",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q4_2_sign0_offset1",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 4
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          4,
+          2
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "13eceefe093c983071373ad638cc359ad161f7b75e3f37718630fee848d40679",
+        "new_presentation_sha256": "6b4fcc7c48c42128cf6fe6a973c8c5271898fd7699d7ec64535241b82312ea9b",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q4_2_sign0_offset2",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 4
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            4,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          4,
+          2
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "e00df140edd10e175704516e8c7cd80e6f13bf6e47b862905d7ff53887d6552d",
+        "new_presentation_sha256": "20f9a0705405bc5e150c2d2e85534abd9a58ce862532f2df94def7e7ff164b5e",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q4_2_sign0_offset3",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 4
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            4,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          4,
+          2
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "a41ee9c17e009d1cb41b146c340c43bfa12c105ea6b5df715c53d7e23e5530c7",
+        "new_presentation_sha256": "c9a86d43495b5f18b092a03b8f0b396bd0cd67ed459827c6cf8b6ff9b4c9552c",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q4_2_sign1_offset0",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 4
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          4,
+          2
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -1,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "86a4702916132dee8dda27419815ca23f68f89a6d84f2fa74932c64d5af70049",
+        "new_presentation_sha256": "b4a00a5270095d3b49355bb64dcf6e2a206c151a29172e5e2e95f2c6a5af4ee1",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q4_2_sign1_offset1",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 4
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          4,
+          2
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -3,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "a436c2ef4a46ad1244293b7b6102f18a22f8d58cbd1f5ef514fb1b99b36381de",
+        "new_presentation_sha256": "3739b61a41c3cf215b63f3cdb581e22554e47fc56f62cc204a1ef6b7f1ddc532",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q4_2_sign1_offset2",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 4
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            4,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          4,
+          2
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              2,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -5,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              2,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "e2d0bba4ae78ab6cde998c759ef8a38f6a7bac2f50cc50ad98f2272754cafdb7",
+        "new_presentation_sha256": "86a3a0c3d2f7dabfd67574a273e2e7ffa01a66629baa34e739b7f98ce67abbec",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q4_2_sign1_offset3",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 4
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 2
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            4,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            2
+          ],
+          [
+            3,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          4,
+          2
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              3,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -7,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              3,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "b26ac8dc075e8296e436f146f4b6798d96596ae247951685c1e54d1f450cb560",
+        "new_presentation_sha256": "13db2dda1ae25fa305fb6982d52b0fe15ca06c0175473c287fae8e442a12e1cf",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q8_4_sign0_offset0",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 8
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 4
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            4
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          8,
+          4
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "b2ce88d8c2df6bab2daa9f3df304752105509a4f6af605c8529aa73184c88228",
+        "new_presentation_sha256": "83ec042063c628366e57146dc217f36c5da6d8edd744b817dbd8e86bb686c602",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q8_4_sign0_offset1",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 8
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 4
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            4
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          8,
+          4
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "3042603502dda511d45272f198c79c9a3b3ddd3e1baaf87ac363f3b2fc68d7bb",
+        "new_presentation_sha256": "703da26bd971b56c82f420d43dfec7051f7ddbd19ed4ad1635ec89f554fbdbcf",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q8_4_sign0_offset2",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 8
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 4
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            8,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            4
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          8,
+          4
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "9f390856c7ec4f1129a947e30b46ca7ea3a58035a4ff668dba545d52a8d59da8",
+        "new_presentation_sha256": "4bda588fe0849b291586c663b23bca3e8f6f1591bc8d791a9545defaff3b6385",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q8_4_sign0_offset3",
+      "record": {
+        "inputModel": {
+          "s1": [
+            0
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 8
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 4
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            8,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            4
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          8,
+          4
+        ],
+        "incoming_majorana_image_nonzero": false,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "d189d582c3fff008a0cbdbb26efbcfe1a06c2828b25427095a337fb7625e2c39",
+        "new_presentation_sha256": "75ab508d5dfbf76c01713e5d6a0bafe85f5b883788e76f7cb2ab4790d59414bd",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q8_4_sign1_offset0",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 8
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 4
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          8,
+          4
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -1,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "4a1a0980b4a5bae5a6ad7eed4d1a4a6f198280a46287e53b08e2e5cd27c3d38c",
+        "new_presentation_sha256": "ad11d7998b84793f4681075c848eba0f705b1c8d912bc22cb06e2fd993ded7c7",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q8_4_sign1_offset1",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 8
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 4
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          8,
+          4
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -3,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "128aa0d36a2f773746f235a8729a7273e49c5213a9bb046fc04f7ae9e6a17fd4",
+        "new_presentation_sha256": "7d3cb9ca0d84ca651d0553b1caeafd491dc8b4102e08b29f12fe55bb69c4978a",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q8_4_sign1_offset2",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 8
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 4
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            8,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            4
+          ],
+          [
+            2,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          8,
+          4
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              2,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -5,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -1,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              2,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "e065d1d64dc9dea49ad52e93dddc1f9d84a1054c479c25f6d726ef18d07e6ed2",
+        "new_presentation_sha256": "1977bcb3f129c9e3f0551750641c060e269b1dba12b5954e23875cd637c8dd42",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    },
+    {
+      "name": "q8_4_sign1_offset3",
+      "record": {
+        "inputModel": {
+          "s1": [
+            1
+          ]
+        },
+        "generators": [
+          {
+            "name": "D",
+            "layer": 0,
+            "quotientOrder": 4
+          },
+          {
+            "name": "C",
+            "layer": 1,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M0",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "M1",
+            "layer": 2,
+            "quotientOrder": 2
+          },
+          {
+            "name": "P0",
+            "layer": 3,
+            "quotientOrder": 8
+          },
+          {
+            "name": "P1",
+            "layer": 3,
+            "quotientOrder": 4
+          }
+        ],
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            0,
+            8,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            4
+          ],
+          [
+            3,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "replay": {
+        "status": "PASS",
+        "orders": [
+          8,
+          4
+        ],
+        "incoming_majorana_image_nonzero": true,
+        "initial_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            1,
+            0
+          ]
+        },
+        "independent_final_power_images": {
+          "4": [
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0
+          ]
+        },
+        "socle_eliminations": [
+          {
+            "root": 5,
+            "higher_exponent_root": 4,
+            "integer_coefficient": 2
+          }
+        ],
+        "chosen_majorana_roots": [
+          {
+            "pivot": 3,
+            "full_target": [
+              3,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "source_pip_root": null,
+            "square_relation": [
+              -7,
+              -2,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "pivot": 2,
+            "full_target": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "source_pip_root": 4,
+            "square_relation": [
+              0,
+              -3,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "kernel_power_targets": [
+          {
+            "root": 5,
+            "had_nonzero_initial_image": true,
+            "full_cf_bosonic_offset": [
+              1,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "offset_vector_nonzero": true
+          }
+        ],
+        "operations": [
+          [
+            "column_add",
+            4,
+            5,
+            -2
+          ],
+          [
+            "row_add",
+            5,
+            4,
+            1
+          ],
+          [
+            "row_add",
+            5,
+            2,
+            1
+          ],
+          [
+            "basis_row",
+            3,
+            [
+              3,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            "basis_row",
+            2,
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        "old_presentation_sha256": "d376dd4d7fbdac8f5165a9f78adccc5550fc97a6fb9d5471313ed175ea8ec729",
+        "new_presentation_sha256": "20f876b450c0353d2464e60ce0f45a372374c15285f0eed0270ec34361e5436a",
+        "exact_inverse_reconstruction": "PASS"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+# Physical coefficients of the 4+1D p+ip source
+
+The binary cochain $`y_6`$ in the bosonic obstruction contains exactly
+**623,880 distinct physical face monomials**. The
+[complete coefficient table](coefficients/FOUR_DIMENSIONAL_Y6_FACES.json)
+lists every term after collection modulo two. This is the complete source
+polynomial, including its numerical and residual contributions.
+
+Each factor is an original physical face value on the ordered simplex
+(0123456). The table uses the six root edges for $`s_1`$, the fifteen root
+triangles for $`\omega_2`$, and three binary digits on each of the fifteen
+root triangles for $`n_2`$. In the notation of the principal formula, the
+integer digits are
+
+```math
+\bar n_2,\qquad\widetilde n_2,\qquad
+\overline{\lfloor n_2/4\rfloor}.
+```
+
+The coefficient file prints these mathematical names in its factor
+alphabet. A hexadecimal mask specifies which listed factors are multiplied
+in one term. Add the 623,880 products modulo two; every coefficient is one.
+The masks are exact strings, so reading the JSON cannot round a large
+integer. There is no recurrence, unlisted coefficient, or extra summation.
+
+The formula assumes closed binary backgrounds and a sign-twisted closed
+integer p+ip cochain. All integer values are covered, including negative
+values with mathematical floor. The three digits suffice because the
+complete polynomial is unchanged when any independent integer root value
+is shifted by eight.
+
+For that periodicity check, replace the integer cochain by $`n_2+8z_2`$, where
+$`z_2`$ is any twisted integer cocycle. The first two digits and the binary
+lower sources remain fixed. The fixed integer seed changes modulo sixteen
+only through eight times the Pontryagin representative multiplied by $`z_2`$.
+Its twisted differential is a multiple of sixteen: the differential of
+the Pontryagin representative is even and $`z_2`$ is twisted closed. Thus the
+parity after the whole exact division by eight is unchanged. The numerical
+coefficients have generalized binomial orders at most four; their parity
+also has period eight. This covers both parts of the source polynomial.
+
+The coefficient table was obtained by exact symbolic expansion. Sixteen
+independent comparisons with the unchanged production expression passed,
+including negative integer root values. Those comparisons check the
+implementation and lift conventions; the exact polynomial expansion,
+not interpolation from the sixteen cases, determines the coefficients.

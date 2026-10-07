@@ -1,0 +1,322 @@
+# Recovering the stacking group from root powers
+
+An abelian stacking group can be reconstructed from the power of each
+cyclic filtration generator, provided the result is known as a complete
+element of the lower group. A generator's order alone is insufficient.
+For an order-two quotient generator, the required power is its self-stack.
+
+## The presentation theorem
+
+Choose full lifts $`g_i`$ of cyclic generators of a certified filtration,
+ordered from lower to higher layers. If the quotient order is $`q_i`$,
+determine the marked lower-group relation
+
+{{equation:root-power-presentations--the-presentation-theorem--3}}
+
+Together with the lower relations, the integer rows
+
+{{equation:root-power-presentations--the-presentation-theorem--4}}
+
+present the abelian group. Smith normal form gives its invariant factors.
+A free quotient generator contributes no finite power relation.
+
+To prove this, map the presented group to the stacking group using the
+chosen full lifts. They generate by the filtration. For any element in
+the kernel, its coefficient in the highest cyclic quotient is a multiple
+of that quotient's order, or zero for a free quotient. Subtract its known
+power relation and repeat in lower layers. The certified bottom-layer
+relations remove the remaining kernel.
+
+If the chosen layers describe outward survivors before the incoming
+gauge quotient, append every complete incoming relation vector as well.
+Gauge transformations must retain their upper-layer corrections. A rank
+or order assigned to an incoming image does not specify that vector.
+
+For example, with lower group $`\mathbb Z_2\langle a\rangle\oplus\mathbb Z_2\langle b\rangle`$ and two order-two quotient
+generators, the relations $`2x=a,\ 2y=b`$ give $`\mathbb Z_4\oplus\mathbb Z_4`$, whereas
+$`2x=a,\ 2y=a`$ give $`\mathbb Z_4\oplus\mathbb Z_2\oplus\mathbb Z_2`$. Both lifted roots have order four.
+Their marked doubling images contain the missing information.
+
+## 3+1D: choose the basis around the one distinguished target
+
+The complex-fermion and Majorana graded factors have exponent two.
+The p+ip layer is a surviving subgroup of
+$`H^1(G,\mathbb Z_{s_1})`$. Its only possible torsion factor is a single $`\mathbb Z_2`$.
+
+Indeed, if a signed integer cocycle $`n_1`$ represents a torsion class,
+then $`m n_1=d_{s_1} k`$ for an integer zero-cochain $`k`$. Since
+
+{{equation:root-power-presentations--3-1d-choose-the-basis-around-the-one-distinguished-t--3}}
+
+trivial $`s_1`$ forces $`n_1=0`$. For nontrivial $`s_1`$, this equation forces
+$`n_1=r s_1`$ with integer $`r`$. Even $`r`$ is exact; odd $`r`$ has the same
+class as $`s_1`$. Thus a surviving torsion root can be chosen with
+
+{{equation:root-power-presentations--3-1d-choose-the-basis-around-the-one-distinguished-t--4}}
+
+Any change to this representative includes the full accompanying gauge
+transformation of its upper fields.
+
+Meanwhile the closed integer gauge parameters are
+
+{{equation:root-power-presentations--3-1d-choose-the-basis-around-the-one-distinguished-t--5}}
+
+Therefore there is at most one distinguished full target to incorporate
+into the Majorana basis:
+
+- If $`s_1=0`$, take $`Y`$ to be the complete vacuum gauge endpoint of the
+  integer parameter $`1`$. Its incoming relation is $`Y=0`$.
+- If $`s_1`$ is nontrivial and the torsion p+ip root $`P`$ survives, first
+  form $`P+P`$. Apply the full integer gauge with parameter $`1`$ to remove
+  its integer field, since $`2s_1+d_{s_1}1=0`$. Call the resulting full state
+  $`Y`$; its power relation is $`2P=Y`$.
+
+These alternatives cannot occur together. If the Majorana class of $`Y`$
+is nonzero, include that class in a basis of the outward-surviving
+Majorana space and choose the **entire state $`Y`$** as its lift. Flatness
+of $`Y`$ already proves that this class survives every outgoing
+obstruction. There is no need to reconstruct $`Y`$ by multiplying old
+Majorana roots, or to guess its CF and bosonic components.
+
+If the Majorana class is zero, remove its exact Majorana field by a
+complete gauge transformation and reduce it in the CF/bosonic subgroup.
+
+Every Majorana-root square has zero p+ip and Majorana output. The
+remaining incoming Majorana/CF gauges do too. Their reductions therefore
+need only the CF/bosonic product laws. The distinguished root's own
+square relation is retained: imposing $`Y=0`$ must also preserve any
+lower relation implied by $`2Y`$.
+
+This gives a constructive presentation strategy using full self-stacking
+specializations for the Majorana and p+ip roots, ordinary CF/bosonic
+reduction, and complete source/gauge transport. Surviving free integer
+quotients split abstractly and contribute their certified free rank.
+The strategy does not require arbitrary pairs of Majorana or p+ip roots.
+For the torsion p+ip relation the operation is strictly **two copies**,
+$`P+P`$; a third copy is unnecessary. Its subsequent lower-root square is
+a separate relation, again obtained by two equal inputs.
+
+The [complete 3+1D self-stacking reference](THREE_DIMENSIONAL_SELF_STACKING.md)
+contains the required specializations. The
+[closed-Majorana formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md)
+supplies the zero-p+ip case. A torsion p+ip root instead uses the full
+specialization at $`n_1=s_1`$, including its potentially open Majorana field
+and all physical contributions.
+
+### Exact replay of the basis change
+
+This reorganization has been checked on all **602 saved 3+1D
+presentations**. Of these, 105 have a nonzero distinguished Majorana
+target: 74 incoming images and 31 p+ip squares. Seventy require a
+nonidentity integer basis matrix; in the other 35 the target already
+has the marked coordinate of one root.
+
+For every case the replay retains the target's full lower coordinates,
+uses an explicit determinant-one basis map and its inverse, and keeps
+the new root's square relation. Reversing all basis changes and row
+additions recovers the original integer presentation exactly. There
+are 566 full witness records and 36 accepted summaries, the latter
+checked using their declared relation order and explicit sign input.
+Eighty-eight cases retain free p+ip roots.
+
+The [replay certificate](coefficients/ADAPTIVE_THREE_DIMENSIONAL_REPLAY.json)
+records every reversible map; its
+[standalone verifier](coefficients/verify_root_power_presentations.py)
+uses only the published presentations and standard integer arithmetic.
+
+This establishes the presentation reorganization. It does not claim
+that an optimized cochain backend has already been implemented or timed.
+
+## 4+1D: a construction using full self-stacking
+
+For finite internal symmetry, the expensive Majorana and p+ip products
+can also be restricted to self-stacking, provided the basis is chosen
+around their full power images. This construction still uses the complete
+obstruction and gauge formulas, linear cohomology, and the small general
+CF/bosonic product. It requires the **full-state** diagonal in the
+[complete 4+1D self-stacking reference](FOUR_DIMENSIONAL_SELF_STACKING.md),
+including open Majorana inputs when p+ip is present. The
+[closed-Majorana diagonal](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md) alone
+supplies only its zero-p+ip specialization.
+
+The two-primary construction below applies to all finite internal groups.
+The odd-primary construction has a stated arithmetic condition, satisfied
+by every odd cyclic order in the current examples. These are constructive
+mathematical algorithms; the saved-presentation checks do not claim that
+a new cochain backend has already been implemented or timed.
+
+### Several two-primary p+ip roots
+
+Let $`Q=\bigoplus_i\mathbb Z/2^{a_i}`$ be the integer p+ip quotient.
+Let $`A`$ be its lower subgroup and $`F`$ the CF/bosonic subgroup. The
+Majorana quotient $`V=A/F`$ has exponent two. There is a well-defined
+linear map
+
+{{equation:root-power-presentations--several-two-primary-p-ip-roots--7}}
+
+Changing a lift $`x`$ adds a lower state, whose double has zero Majorana
+class. Abelianity makes $`\delta`$ linear. For an integer root $`P_i`$,
+its relevant image is $`[2^{a_i}P_i]`$ in $`V`$; repeated self-stacking and
+its full integer gauge determine this image.
+
+Process roots in descending order of $`a_i`$. The allowed invertible
+change
+
+{{equation:root-power-presentations--several-two-primary-p-ip-roots--8}}
+
+adds the corresponding column of $`\delta`$. Thus ordinary binary
+elimination makes the nonzero power images independent. This formula
+specifies a change of **integer cohomology basis**. Construct full lifts
+of the new classes by solving the obstruction equations; no mixed
+p+ip product is needed to construct them. Recompute their complete
+self-powers. The predicted Majorana images are independent of the
+chosen lift, but their CF and bosonic offsets must be retained.
+
+Choose each full gauged power target $`Y_i`$ as the corresponding Majorana
+root. Its relation is then exactly $`2^{a_i}P_i=Y_i`$. If a power image
+vanishes in $`V`$, use the full gauges to remove its Majorana component
+and reduce the remaining CF/bosonic state. A zero Majorana image does
+**not** imply a zero lower relation. For example,
+
+{{equation:root-power-presentations--several-two-primary-p-ip-roots--9}}
+
+implies that the changed root $`P_2+P_1`$ has zero Majorana power image,
+but its square is the possibly nonzero state $`C`$.
+
+Incoming gauges must be included in this basis construction. For a finite
+group,
+
+{{equation:root-power-presentations--several-two-primary-p-ip-roots--10}}
+
+A signed integer cocycle vanishes on the finite subgroup $`\ker s_1`$;
+it is therefore an integer multiple of $`s_1`$, modulo the even multiples
+that are coboundaries. There is consequently at most one integer
+incoming target $`I`$. If its Majorana class is nonzero, choose the entire
+state $`I`$ as one Majorana root and work modulo its image when forming
+$`V`$. The independent power images in $`V`$, together with $`I`$, form part
+of a basis before this incoming quotient. Keep both the incoming relation
+$`I=0`$ and the square relation $`2I=b`$, including the resulting lower
+relation $`b=0`$.
+
+A target whose Majorana image is this incoming class is removed by its
+complete closed integer gauge, followed by the Majorana gauge for the
+remaining exact field. All other incoming endpoints and Majorana-root
+squares reduce in the CF/bosonic subgroup. This retains every incoming
+relation and every lower constraint, while avoiding general products
+between different Majorana roots.
+
+### Odd p+ip orders from doubling and a bosonic comparison
+
+Odd p+ip extensions need not split. For example, the saved $`G=C_3`$
+relations $`3D=0`$ and $`3P=D`$ give $`\mathbb Z_9`$.
+
+Let $`\mathsf D`$ denote complete self-stacking. Two states with the same
+integer cochain have the same Majorana cochain after one application of
+$`\mathsf D`$: the binary Majorana input adds to zero. After two
+applications their CF cochains also agree. Consequently their complete
+lower cochains agree and their phase difference is a bosonic cocycle.
+The common lower fields need not vanish.
+
+Suppose the integer class of $`P`$ has order $`q=2^a r`$, with $`r`$ odd.
+Choose $`k`$ with
+
+{{equation:root-power-presentations--odd-p-ip-orders-from-doubling-and-a-bosonic-comparis--11}}
+
+The integer cohomology classes of $`X=\mathsf D^{a+k}P`$ and
+$`Y=\mathsf D^aP`$ agree. Apply the full integer gauge to $`X`$, obtaining
+$`X_g`$ with exactly the same integer cochain as $`Y`$. Then
+
+{{equation:root-power-presentations--odd-p-ip-orders-from-doubling-and-a-bosonic-comparis--12}}
+
+The factor $`4`$ records the two additional doublings. Because the two
+intermediate layers are binary, the odd parts of the lower group $`A`$
+and its bosonic subgroup $`B`$ coincide. Hence the odd extension class
+is recovered by ordinary linear arithmetic:
+
+{{equation:root-power-presentations--odd-p-ip-orders-from-doubling-and-a-bosonic-comparis--13}}
+
+This uses no unequal-input Majorana or p+ip stacking. The necessary
+cohomology comparison is between bosonic cocycles. Complete upper-field
+gauge corrections are essential to the identity.
+
+All observed odd parts satisfy the required condition:
+
+| $`r`$ | $`k`$ | $`t=(2^k-1)/r`$ |
+| --- | --- | --- |
+| $`3`$ | $`2`$ | $`1`$ |
+| $`5`$ | $`4`$ | $`3`$ |
+| $`7`$ | $`3`$ | $`1`$ |
+| $`9`$ | $`6`$ | $`7`$ |
+| $`27`$ | $`18`$ | $`9709`$ |
+
+Separate mixed-order integer factors into their primary factors by
+integer cohomology before applying the two constructions. Their full
+lifts are again obtained from the obstruction equations. The arithmetic
+condition above is not asserted for every conceivable odd order.
+For infinite symmetry groups, the integer incoming parameter group can
+also have a free part with several independent images; the finite-group
+incoming argument must then be extended.
+
+### Saved-presentation checks
+
+The catalogue contains **606 finite 4+1D examples**. Of these, 355 retain
+marked presentations: 243 full witness records and 112 summaries with
+explicit generators and relation matrices. The other 251 retain abstract
+group summaries and are not counted as marked-matrix replays.
+
+All **320** marked presentations with only two-primary p+ip orders pass
+an exact reversible basis-and-relation replay. Five require the
+ordered elimination above. Fifty-five kernel power targets retain a
+nonzero CF/bosonic coordinate vector. Twenty-four additional synthetic
+presentations check the case of dependent power images with nonzero lower
+offsets. All row and column operations are invertible over the integers;
+reversing them recovers each original matrix exactly.
+
+All **35** marked odd-containing cases pass recovery of their recorded
+odd extension classes using the factor $`4t`$. Their incoming relations
+have zero odd image after the complete lower relations are taken into
+account. This last check is algebra on saved marked relations, not a
+new numerical evaluation of the cochain phase difference.
+
+The [4+1D replay certificate](coefficients/FOUR_DIMENSIONAL_PRESENTATION_AUDIT.json)
+and [standalone verifier](coefficients/verify_four_dimensional_root_powers.py)
+retain the input hashes, reversible operations, and recovered extension
+coordinates. The
+[synthetic certificate](coefficients/SYNTHETIC_FOUR_DIMENSIONAL_REPLAY.json)
+and [verifier](coefficients/check_synthetic_four_dimensional.py)
+make the dependent-image checks reproducible as well.
+
+### Equal-input root products versus strictly self-only enumeration
+
+The practical root algorithm above restricts the expensive Majorana and
+p+ip products to equal inputs. It still uses ordinary CF/bosonic products,
+complete gauge transport, and linear cohomology. It is therefore not a
+claim that every step uses the doubling operation alone.
+
+There is also a strictly self-only reconstruction of the abstract finite
+two-primary group $`A_2`$, once all its distinct classes can be enumerated
+and compared by complete gauge equivalence. Apply $`\mathsf D^k`$ to this
+list and count the distinct images $`2^kA_2`$. For $`k\geq1`$, set
+
+{{equation:root-power-presentations--equal-input-root-products-versus-strictly-self-only---14}}
+
+Then $`b_k`$ is the number of cyclic factors whose order is at least
+$`2^k`$, and $`b_k-b_{k+1}`$ is the number of factors of order exactly
+$`2^k`$. Thus image counts of repeated self-stacking determine every
+two-primary invariant factor, without unequal-input products at any
+layer. This method needs a complete enumeration, which can grow
+exponentially with the number of roots. The largest saved group has
+$`2^{31}`$ elements. It is an existence argument and fallback, not the
+proposed production method.
+
+On an odd-order group doubling is bijective, so these image counts are
+constant and do not determine its odd cyclic structure. The odd-order
+construction above instead uses its marked integer quotient, a full
+gauge, and the resulting bosonic phase comparison. Neither method
+justifies an unrestricted assertion that doubling ranks determine an
+arbitrary finite abelian group.
+
+Keep the general stacking law alongside these specializations. It
+provides arbitrary marked cochain products and independent coherence
+checks. Once a presentation is certified, abstract group operations
+use integer coordinates and require no further twister evaluations.

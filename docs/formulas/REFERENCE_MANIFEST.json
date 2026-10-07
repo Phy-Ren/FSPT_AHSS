@@ -1,0 +1,2808 @@
+{
+  "format": 1,
+  "maintained_source": "source/",
+  "pages": [
+    {
+      "output": "docs/FORMULA_GUIDE.md",
+      "source": "pages/FORMULA_GUIDE.md",
+      "sha256": "ed3ca78a311597396a9b18ee054489eb95574092027e6e4a3497c7cd22ba0171",
+      "dependencies": {
+        "pages/FORMULA_GUIDE.md": "3eaec2b23702b5722e509c001d7847137d8c7aa12810723d782026be60c3da7c",
+        "equations/formula-guide--arithmetic-and-modifiers--1.tex": "d7369f892c0d99fe097e0eced55f007d52182da86d572c7637127edb1bdfcda1",
+        "equations/formula-guide--arithmetic-and-modifiers--2.tex": "e01df2b6d75dcc59ef5142695c7d792f1d8e7c3e669ba61edb4785d8682ca262",
+        "equations/formula-guide--integer-lifts-are-implicit-in-integer-arithmetic--3.tex": "f05b06612aed4906fe952b20e36311659865b3b3038904695204d2f5625b9341",
+        "equations/formula-guide--integer-lifts-are-implicit-in-integer-arithmetic--4.tex": "1c40f77ec78e107b1388fc0d8d7355aa76db0d82443e6222d4137cdd82e39d76",
+        "equations/formula-guide--the-repeated-integer-quadratic-cochain--5.tex": "5850d0fe0850a0d0d5ed0da9d3ed3673d85b62b4549e565da1d7b535c8bcc679"
+      }
+    },
+    {
+      "output": "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md",
+      "source": "pages/COBOUNDARY_STACKING_COMPATIBILITY.md",
+      "sha256": "20e5e30a52a971968997585d4b0d0de17d0a2495d779d4a0e17a8f66c11186ab",
+      "dependencies": {
+        "pages/COBOUNDARY_STACKING_COMPATIBILITY.md": "83c0fde32d6b72a5f93564b4037f2b194d2a95557b0e9735614be686c58ac6b5",
+        "equations/coboundary-stacking-compatibility--fermionic-coboundary-and-stacking--1.tex": "62c170be98fd28060cbc3d71ad75291cbaf8ec872d9e28361df2d428a48ba6f1",
+        "equations/coboundary-stacking-compatibility--the-compatibility-identity--2.tex": "7111021255b650e79d85572eacf1835bbe912fdfe40e5945ae98c114ed111f4a",
+        "equations/coboundary-stacking-compatibility--the-compatibility-identity--3.tex": "10f08f4f16d61668bfcd3a56a37415411937fe2c7b78dda0a7e2a8e3f4b270ac",
+        "equations/coboundary-stacking-compatibility--the-compatibility-identity--4.tex": "f0d057f1093a23d40522902984f7329547701d84f0f44f94687571a7483e1713",
+        "equations/coboundary-stacking-compatibility--an-exact-4-1d-product-with-a-group-inverse--5.tex": "10aebad9e80061c3f63ec658ce8b41b2a4d9627591cf6600a16d30438e77e0f5",
+        "equations/coboundary-stacking-compatibility--an-exact-4-1d-product-with-a-group-inverse--6.tex": "3578aff41e22a2339dd4cd36d62338b7516bc19857de2e1c3b2c04f57aa34152",
+        "equations/coboundary-stacking-compatibility--an-exact-4-1d-product-with-a-group-inverse--7.tex": "fd416ca184db9fd1fceb57715347ecce5447eecc79857a5ab31471afe3499bfe",
+        "equations/coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--8.tex": "f90a891dd33d0b1a8213d0b3f5ffc2a75e2dd84d0bc9f93c1524608e8206bb9f",
+        "equations/coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--9.tex": "0de6e3fbe958dd0e59b7317742877c2c4d32178245144916904e9213e620a1a1",
+        "equations/coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--10.tex": "d6fb4c17e800cfdee08ea405f4b885b525bf85a942902151ce44fb7adf519423",
+        "equations/coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--11.tex": "1c06c1563a54309f8c4adb254126cf7d48cf16f437f232b9be3543d4fb8a2f93",
+        "equations/coboundary-stacking-compatibility--applying-the-specialization-to-a-3-1d-lower-tower--12.tex": "faaf3a126554af28a1c6bcf8b1aa74bd8135310e837a61e8232d4649c9eaad0e",
+        "equations/coboundary-stacking-compatibility--applying-the-specialization-to-a-3-1d-lower-tower--13.tex": "bad9fba12d5f0e360ec9bc4915d10e42abdcbce99ca43da352398b0135ae03ee",
+        "equations/coboundary-stacking-compatibility--applying-the-specialization-to-a-3-1d-lower-tower--14.tex": "3e2dd8c8009b3e3d112b1690f297d07b8289fc21730069604caa5d2357290704",
+        "equations/coboundary-stacking-compatibility--transporting-representatives-together--15.tex": "8e1a1c48374f50dc7af0b0de046386c7c6b5750445fe8088fab3c7b31e7e915e",
+        "equations/coboundary-stacking-compatibility--transporting-representatives-together--16.tex": "84e433d717068d0f4134aa7da70c961e9b2c4b2c4ee6910064fd435abfdc061e",
+        "equations/coboundary-stacking-compatibility--transporting-representatives-together--17.tex": "d58f492264b2e254e6ffd44db3c89e9348dc003b94785256320bb8a4ce0ce38b"
+      }
+    },
+    {
+      "output": "docs/formulas/COEFFICIENTS.md",
+      "source": "pages/COEFFICIENTS.md",
+      "sha256": "823a3d7be02d498fc84811d7191de75a0664a1833b7c3bca6cee3066ee2f1838",
+      "dependencies": {
+        "pages/COEFFICIENTS.md": "b769ba593eb6cabd31bf52db9a7de0f6d29fb29da6ae037cbe3453513a17960d"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL.md",
+      "source": "pages/FOUR_DIMENSIONAL.md",
+      "sha256": "ffe457b83208926215396820d30511c24a2b656ce3f3417c3afb481655592175",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL.md": "a2a34d3ae3166fdcf366b7c78efe93d0416db3337c917d7f7e28bcb20eff13d6",
+        "equations/four-dimensional--4-1d--1.tex": "8ad7da29f2d76abe1f77bee0c2745b4d7ac2ec31170fe62e48c936d41ab82f78",
+        "equations/four-dimensional--1-p-ip-obstruction--2.tex": "d9d9da18067ce913b25b1f0eeaa2e6fe3bfa06b1f7f2d35344437e7ca77d28a3",
+        "equations/four-dimensional--2-majorana-obstruction--3.tex": "6d894d3142a70f70c7a315d4a8ea350916957d50c6b400dd5a483f475a7f2528",
+        "equations/four-dimensional--2-majorana-obstruction--4.tex": "b3a1bebe26aa2ba4441f584c5c5bb1e2c1f8209ebba3736c354243cee582fdf3",
+        "equations/four-dimensional--2-majorana-obstruction--5.tex": "bee5f983d61e1547c6e4ad016376690919be913e6dbb0a91306e6893885d7ee1",
+        "equations/four-dimensional--3-complex-fermion-obstruction--6.tex": "744ae344710fd68bff789efad98e6ae2f51c7e9507be7e995d21e478eb13f615",
+        "equations/four-dimensional--3-complex-fermion-obstruction--7.tex": "dc863ca4885547f0ac8e833da96730d087748ee6b7312827ff696d242b7f8e76",
+        "equations/four-dimensional--3-complex-fermion-obstruction--8.tex": "1b935349b3cbf40890e7732ec7f82e0c2d4f3ad6277df7e144e54abf5dd6e594",
+        "equations/four-dimensional--3-complex-fermion-obstruction--9.tex": "343752efa35fa05434b1f08e3bccb402b8623297fcbc584ab76987b84a4811bf",
+        "equations/four-dimensional--4-bosonic-obstruction--10.tex": "60abf0887d0c1364c699481ffe242062eac8a607cb9c868cb88aea0cf51c5348",
+        "equations/four-dimensional--4-bosonic-obstruction--11.tex": "c330be8fdcef1734f9e5762f626c9da8351a61f71c0c1a12435e68658b5a402a",
+        "equations/four-dimensional--4-bosonic-obstruction--12.tex": "1a1549b16b2b2858eda4cd318016879d800b842b2f0ee11bfa6a516402b565ed",
+        "equations/four-dimensional--4-bosonic-obstruction--13.tex": "5892334ebf0e268078595aa7ae1bf7b81545542a62c169dfd532abb48ef4b126",
+        "equations/four-dimensional--4-bosonic-obstruction--14.tex": "cfa037f1669ecf1d9520b9fe39e05ca10140b5d8f8bc998c0a19075c6f6f2db1",
+        "equations/four-dimensional--4-bosonic-obstruction--15.tex": "84822d4a554bd5a83f2b1279076adbd45c35237b625a604e6b8d968882c85466",
+        "equations/four-dimensional--4-bosonic-obstruction--16.tex": "e091fa721cb3e86749ff1dd07447f8f41c07deeab6b630853b143cee0994848a",
+        "equations/four-dimensional--4-bosonic-obstruction--17.tex": "3ce8cbb8eb417bbac4590cdaf7ad4e0cc2a7d0d453f775776487c5bfe5718c0f",
+        "equations/four-dimensional--4-bosonic-obstruction--18.tex": "41ca5f067c88a01f14bc4935f2f3dfaa4120c49cf920ca452a39355cf128fde9",
+        "equations/four-dimensional--1-p-ip-stacking--19.tex": "e2d0cb709c478e36b56736d9127a344ed375b951df38ed9cbd83532799c41a62",
+        "equations/four-dimensional--2-majorana-stacking--20.tex": "83eccacf6f6354f6c57612f8a781a71a44778741ee0e62af8f7523ca5bde1861",
+        "equations/four-dimensional--2-majorana-stacking--21.tex": "d2148de8d9fa849a2fbfb72a3f586562806bd5d018524b519e46e8e110bce956",
+        "equations/four-dimensional--2-majorana-stacking--22.tex": "52abc07bfd1a0fc6192861b4955efd933a0b5831e82d55c5fe8326fc2385ea9a",
+        "equations/four-dimensional--2-majorana-stacking--23.tex": "6623c53bf710f05ebebd1655c293e5346322678e50f1a2b06733ee7a3a461a47",
+        "equations/four-dimensional--3-complex-fermion-stacking--24.tex": "bb79e45638e70a4fe46b7dbd1fe6fe157de03a1f44e6b5c16aecfc5569cfb4a0",
+        "equations/four-dimensional--3-complex-fermion-stacking--25.tex": "061a47ca9b22fdd1f2a667eb4e99c6c543cc838acae30e7434b573595d833223",
+        "equations/four-dimensional--3-complex-fermion-stacking--26.tex": "7525eff25af2382affaf7b585927569fcc549a841a932ac7a73a6dcf3bf6ad92",
+        "equations/four-dimensional--3-complex-fermion-stacking--27.tex": "1334507a8c777a57d87963499805bfc5ed242e4621b5bb1f7291ae0a122f73aa",
+        "equations/four-dimensional--3-complex-fermion-stacking--28.tex": "b6d941f8394b8af8b27540dee1d3eda57d63dbc4563d3a5fc4e803a6c7e601c4",
+        "equations/four-dimensional--4-bosonic-stacking--29.tex": "28767ef55cfebe3836ac20297a9314deb74d3e928a100ed9486aadfc1c9d3486",
+        "equations/four-dimensional--complex-fermions--30.tex": "c9ab16b4eeac663cb394934a0d229775de862880265de8e3a47ca533d3333436",
+        "equations/four-dimensional--complex-fermions-and-majorana-decoration--31.tex": "4f17ddec8f65974ad69d584c3c984000d9fbd1185a777695599cecdae90eb2ec",
+        "equations/four-dimensional--complex-fermions-and-p-ip-decoration--32.tex": "82663ab91b1b9ca90c55dcadab9ba26a7ce09bea04e9e11d8fd7c9f13daf1ddb",
+        "equations/four-dimensional--majorana-decoration--33.tex": "003b8ffba02b481932dfa373718aae2b1a0855207641c48293d609032c4c3dea",
+        "equations/four-dimensional--majorana-decoration--34.tex": "edfe19a0047599e81f147d8453034eaa7c4d784542be2148fa20cb2129405d09",
+        "equations/four-dimensional--majorana-decoration--35.tex": "ea7270c57b42e7a9c8df3ac1b8f27a803b1ba9a38c37d1c38a8e9a45f9cf0884",
+        "equations/four-dimensional--majorana-and-p-ip-decoration--36.tex": "8738ea7a2f0ffa02db353c150df0f20350107c4fdce7ba4631693383f4c65385",
+        "equations/four-dimensional--p-ip-decoration--37.tex": "3f475bd997b72a06f461df61eb40d91eac14a449f5d841e3f46ef5ef926bf4ab",
+        "equations/four-dimensional--carries-in-the-quarter-valued-terms--38.tex": "9f06689201eee689cffe68e990c66ebab995abc13ec719f654e2e1f091c63108",
+        "equations/four-dimensional--carries-in-the-quarter-valued-terms--39.tex": "d5b0480aaaa2f42b4a3745c3afc52a967f4ca1b79df246e39b0a95a0db839ce7",
+        "equations/four-dimensional--carries-in-the-quarter-valued-terms--40.tex": "eadf0d9216952f5dc2b7b2d7403005fc19c93e1ea1f94a31ba41ea8836d629f4",
+        "equations/four-dimensional--majorana-quarter-numerator--41.tex": "8980c23e66c645d1db1750f34fe208d31e518b6e1e5fce086972a90c00f0a2f6",
+        "equations/four-dimensional--majorana-p-ip-quarter-numerator--42.tex": "9baade95c4d44ccd50c3a228afb145d699aa03f75813860e4faa03c31a934df5",
+        "equations/four-dimensional--p-ip-quarter-numerator--43.tex": "4a0746c5c8300e503ce5e79167761d3b0b67aa1ce1cdac2e5e26deab6996162d"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md",
+      "source": "pages/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md",
+      "sha256": "d0aed74928ffd5f405d8508ef05c8b50f6e726192c848e89c4dde7f5e9a80d2e",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md": "df9ea3e9b7db726ec6eb1194ed66d5d89364cc6613ce0d4b0edfc793265e47d4"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md",
+      "sha256": "558ef8c905c78f5fbd84b72f968c9907b9edd1e116174373c695df67e5cd38b2",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md": "8a11b4be9955e6521d5c05f62e2bcd36b83d5c57746b1cfac52799f9fa1ec584",
+        "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--1.tex": "6ba08deef783c5bce3fb33af1bb535fcdfcb5fbeebd337e6a2ed24705509b001",
+        "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--2.tex": "e24f394dc5f6d2a16bc880b5d12ae34c9e9ab032f0799cf5c1865641ecdf8660",
+        "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--3.tex": "bafe8c1a1b5359c2a267540b77cf083fd59caa27e179a17cf1cd9ce29f224166",
+        "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--4.tex": "b8ddfbcc14226471fd8a43d38d5eeaf1a89a397dbf5ba5a012c68c2bc607e3cb",
+        "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--5.tex": "20d256443ea0f9eb90b55641a5eb2ebacace7b9d368e0f36a72bb8d9db543c21",
+        "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--6.tex": "0efc5a4abfe8e3aa8a51e5a66a091ba8fc93cb1b3cb54f9056cb122683246035",
+        "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--7.tex": "9aebb815549771b28ecfbd39a5839018334c1f831fe2bd0fed1c25a07755d32a"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md",
+      "sha256": "ba63ad77be71c7ea9dea60bd4cd5de6c5fe267e43b8d8edbc2ea77b4f53d50ff",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "7eb4c6490df6475f23b121f39d5d2be65c1d8e6ca2f5a205053221562ba5d5f4",
+        "equations/four-dimensional-majorana-diagonal--1-p-ip-stacking--1.tex": "2f550a86ba6f589b7db23a2846c079d1ed220046c6b079b1b024ca8abba684bb",
+        "equations/four-dimensional-majorana-diagonal--2-majorana-stacking--2.tex": "d4585075006d3a54f581162069e97f788dfbac133e16a688de09664179301502",
+        "equations/four-dimensional-majorana-diagonal--3-complex-fermion-stacking--3.tex": "1dbd904d48eae4194e70b0ad324dd15c6d33e17dfc03d71debfe95e471e1773c",
+        "equations/four-dimensional-majorana-diagonal--4-bosonic-stacking--4.tex": "cf9a8f1d53c6fd26fd8cea4f3a69b0f6336b861bf0db5008bc7fad368dba0668",
+        "equations/four-dimensional-majorana-diagonal--complex-fermions--5.tex": "60e4b33495f3beac83bfc1eda4dd2edb66d34150f5fdb2864fd96389e53d4138",
+        "equations/four-dimensional-majorana-diagonal--complex-fermions-and-majorana-decoration--6.tex": "737f6e6984a2f893f19d73524b9a842138be76df27a25345f50ccebfca145f06",
+        "equations/four-dimensional-majorana-diagonal--majorana-decoration--7.tex": "50e15d689b505c7804e818d4b9e3e6842b9bda4dec5f65d75dc858d09f652c6e",
+        "equations/four-dimensional-majorana-diagonal--majorana-decoration--8.tex": "67f64db779d0059f50990ffdeac5ac82482d1f8bd36312ed2c74efb1239cb148",
+        "equations/four-dimensional-majorana-diagonal--explicit-output-gauge--9.tex": "21a025b6eceb2758bcec820ac6b411fde565e3effd913e667ede14ae746903af",
+        "equations/four-dimensional-majorana-diagonal--explicit-output-gauge--10.tex": "c356f78a5c8517ffa2555b67a3cae1e07659a328e773200d7eade7366f9265a7"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md",
+      "sha256": "cb97b1501a79c5c0fd121aa1a22ad75c290559b519ae571b292e33e70deca174",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md": "b80d3c00fe70db63447c40cf4ab7efd6252328326554b06524e1c5979c3940ef"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md",
+      "sha256": "7a705af9e150bd343a5109e50bb625bea1c9c1bf87b40d110061bf3738c4b112",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md": "bcbdef5b12fe61143cc25ef319711a631a4859855054e15029349ec4e1edfce6",
+        "equations/four-dimensional-majorana-stacking-gauge--output-coboundary-in-the-4-1d-majorana-stacking-form--1.tex": "93a8adf692165ce1453b7e03db4f215fb87ad62abbbc0accf9b126aa7bfc23b2",
+        "equations/four-dimensional-majorana-stacking-gauge--output-coboundary-in-the-4-1d-majorana-stacking-form--2.tex": "7d2a1ae36da8339737e8a692a36f572d4ba58b1314db5e390ce47b9bcaa29965"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md",
+      "sha256": "5cc624b61fa4281796b0004eab45f15bbd308d0ecf2e9760de20eb019acad305",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": "0f5c1a619ade4e22772adf52073dd452d23a5414083022c4eeec9bc86069532e"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_1.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_1.md",
+      "sha256": "1e82201a41ade2e2ccdfc76aca96279486641cd5043d232dd957c1b8836145bd",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_1.md": "b8eccfac25658bdf1e80cd96caa89efcc90de57ff95da12d86a34ab25e5cc303"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_2.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_2.md",
+      "sha256": "d9cc7c012a480806916aedf4df1b924c395069e1c2ad7ad2c439ee8864fbe385",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_2.md": "a29e9cfcf0489dd68c9059bcfda273147df3b49395f2ebd91cc633dfa8cc439f"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_3.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_3.md",
+      "sha256": "84a70b6b6fb9a16980f8549bc939dffd1a7c47f69209a555cc8657d50a5ead38",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_3.md": "99754699ca77184866c1b9fa5b4ed0376ee6f910ba2b7471340929ef15f8e615"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_4.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_4.md",
+      "sha256": "44892fdd32ae2142c0acfabaf22ec6ccc51f542a821391c5fd25a0151a892ad8",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_4.md": "d7734ead5ecb7ed932bc9d0dfb2200931a7bdc9d61d56d7297b84173fa2748ae"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md",
+      "sha256": "5012f415b948a8808578812e64b5f3c6990f8257b98ec1bb538f7b4b8672eed1",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md": "57d104cf2bf6922272c8a794b66f15db8d05f4f52372c392499fde35463ee3b9"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md",
+      "source": "pages/FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md",
+      "sha256": "b50903e0b34fbad96d41e8e85d12dac161bf206e7f09128f74dd1ff711fd906d",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md": "b0d3ac4f0179cb4b4b9187f642075f9dd8697e30f667a28c5c7a8bf4e714fb4c"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_PHYSICAL_PATHS.md",
+      "source": "pages/FOUR_DIMENSIONAL_PHYSICAL_PATHS.md",
+      "sha256": "54f006486d05ffe67b59616d7015381b612900b7386b5c92546a1e988ee0cd05",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_PHYSICAL_PATHS.md": "3a649c80ac9c189319952813adb89b8cc8c40ab4e980dc28286fb83baff0b322"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md",
+      "source": "pages/FOUR_DIMENSIONAL_SELF_STACKING.md",
+      "sha256": "3e8a748e36deae99c96f8ddf78ba6d87dfce6e4aed696f7e05a6968393179cb7",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_SELF_STACKING.md": "a403cda9346f488bee50194a1b1a1475512fe90ac3f5e0ca2b3d1fd829899063",
+        "equations/four-dimensional-self-stacking--1-integer-decoration--1.tex": "f395868d523650872a5591bb3619c0c31f59d48d10c49a85ac109684c37324c0",
+        "equations/four-dimensional-self-stacking--2-majorana-decoration--2.tex": "3bd8bec4539cfdc5922d64fc2f944f221ceb3fc196be7b2e36039ac795d2caaf",
+        "equations/four-dimensional-self-stacking--3-complex-fermion-decoration--3.tex": "6b067a091e580e4d02b0cbd002aec87a6705e7e5739fe7f0138df8f4e2eecaef",
+        "equations/four-dimensional-self-stacking--majorana-decoration--4.tex": "1f5ffc47037e80e39b13f5892abc587320df03cac5260f3e9fd6b6613cf024f1",
+        "equations/four-dimensional-self-stacking--majorana-and-p-ip-decoration--5.tex": "5424f03752780405cfd526bdc7df94d3a91bc834109e597f6bab8c0f5f544919",
+        "equations/four-dimensional-self-stacking--p-ip-decoration--6.tex": "0460b0c6eac0a94956bcc8ac2093167dbccae27158ceced77c1b3a9d76dda99a",
+        "equations/four-dimensional-self-stacking--4-bosonic-phase--7.tex": "07de6f980c964d1fa2f7b37d1c2d93fee994847898c16e0b73f9274a8d28d5bb",
+        "equations/four-dimensional-majorana-diagonal--complex-fermions--5.tex": "60e4b33495f3beac83bfc1eda4dd2edb66d34150f5fdb2864fd96389e53d4138",
+        "equations/four-dimensional-self-stacking--complex-fermions-and-majorana-decoration--8.tex": "4989952455bc32e244f057cca1834576c7fe6e437d58099e2c7d25f35bf50440",
+        "equations/four-dimensional-self-stacking--complex-fermions-and-p-ip-decoration--9.tex": "95058f6bc07fa88b67d2257233bebb9dd0cb15436494480fe827f057fadaad92",
+        "equations/four-dimensional-self-stacking--majorana-decoration--10.tex": "49a7b7e5a06a64f7688852723ca3485b3228055673f6f39b089a7d155380625b",
+        "equations/four-dimensional-self-stacking--majorana-and-p-ip-decoration--11.tex": "0fbf975bcda445596e5c9fa9743b7f0b8e73aa8bc6861dc07ccda2364a4174f2",
+        "equations/four-dimensional-self-stacking--p-ip-decoration--12.tex": "8ceec2be7845aba6d4468ab29d3bf53727ad8fae08e22bcffa8b730fccc7fbd1",
+        "equations/four-dimensional-self-stacking--5-integer-carries-and-binary-quarter-numerators--13.tex": "5a90d7fb77cd4c4326f7ac10ae225971c60f713231ec7934e169bbd920d6d7ce",
+        "equations/four-dimensional-self-stacking--5-integer-carries-and-binary-quarter-numerators--14.tex": "352932847945ab1a2f7d07a8b9f8b131f228f4becb40fe68eb463bc301caf5e5",
+        "equations/four-dimensional-self-stacking--5-integer-carries-and-binary-quarter-numerators--15.tex": "6fc08f3b9d4688c3992224d5aaf05852db5427fac58cf47cbac79d355245c34e",
+        "equations/four-dimensional-self-stacking--5-integer-carries-and-binary-quarter-numerators--16.tex": "77e7fac0b4951670d34ce703fd9d6ee6e425b93f3ca90d7e4e42c2750f891224"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md",
+      "source": "pages/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md",
+      "sha256": "87fc8d47b47362011712145f528b34df0ff6cc809e69b6201317476672d36f71",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md": "61fa895025325da32d544a1ec2d4a56aa1ba0aea9be9c19a38739bc3ec29384f"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_LIFTS.md",
+      "source": "pages/FOUR_DIMENSIONAL_SELF_STACKING_LIFTS.md",
+      "sha256": "46546d80806ee5c85d994db83b2f3aa2ec7e894aee43aa8339a1a235904b76e4",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_SELF_STACKING_LIFTS.md": "2324c703d643937f7c7cb322a9d3fce69c6eece188d4d774518530c2120e2d41"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md",
+      "source": "pages/FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md",
+      "sha256": "3d38f4d684bdedf70800e80f4de2f110fd2a75df26eb48336587c689fb4e3940",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md": "686146e1bdfb7da27e55c04508d6214acf7fa64e003d48639182b2393c08e6de"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md",
+      "source": "pages/FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md",
+      "sha256": "b08fc3c63223fac7ec9e0a8b1f5f742b5610229d96c43f5f229a5b83d4f2b455",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md": "ad56a1fceff8eef2ad672a5ab2443a233057bc9daeb240a4642f5c52cde6455e"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md",
+      "source": "pages/FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md",
+      "sha256": "cec54d95efa0641226c498d67f5ffe5c876cd5370168e6a839ff9ca8358d63ae",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md": "5a12828d3111e38aef3d5c025b3bdb62edb5b5038325012bce4ee5913b9c3ede"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_Y6_FACES.md",
+      "source": "pages/FOUR_DIMENSIONAL_Y6_FACES.md",
+      "sha256": "6636c038e89606f30bb3861de2f5c0584dee35c713549fb3c1a91674ec6a8c2d",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_Y6_FACES.md": "7cd96696949540e436674ea86d3cb8729940624053b5f9e8e848caeda7774e7c"
+      }
+    },
+    {
+      "output": "docs/formulas/GENERAL_MIXED_QUARTER_POLARIZATION.md",
+      "source": "pages/GENERAL_MIXED_QUARTER_POLARIZATION.md",
+      "sha256": "163bc8bdf9ebe09321340847ff2166f880da8df9bdf8d14d2357657ddd9082fb",
+      "dependencies": {
+        "pages/GENERAL_MIXED_QUARTER_POLARIZATION.md": "d5bae336ade0c741c10c2e261ea8d504a42bca239ef9ed4d471871caef4b2b54",
+        "equations/general-mixed-quarter-polarization--polarization-of-the-binary-majorana-stacking-carry--1.tex": "8812c1efb744a17f3baa7773e00124d211790b692b4f999bdc313ba5bcad9593",
+        "equations/general-mixed-quarter-polarization--polarization-of-the-binary-majorana-stacking-carry--2.tex": "d73d04620921a3faee1af006f2d120ae29da03a2cbab9ec8e1c5ca1ac47171ba"
+      }
+    },
+    {
+      "output": "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+      "source": "pages/MAJORANA_AND_ENDPOINTS.md",
+      "sha256": "04c74be1fb15c5ce750e71a8446152cc21c3c04e572cfbe1e196f111aab61eeb",
+      "dependencies": {
+        "pages/MAJORANA_AND_ENDPOINTS.md": "b5d0eaddff637ee16fcb36a401942d362eece60996a5c2c21e7fa3fc14239d96",
+        "equations/majorana-and-endpoints--majorana-obstruction--1.tex": "b4f6666e2ceee201e96023153f51dbc596cb7ecd2540b09d8d565a8cd983d0ed",
+        "equations/majorana-and-endpoints--complex-fermion-obstruction--2.tex": "984e836bb578cdc767ccb56587ec8d284f5f2dc56df2d453034100026fb5f9ca",
+        "equations/majorana-and-endpoints--majorana-contribution--3.tex": "9f3e8cc049720cfcff3fe8151b2fa0213ffd4d1882683a001d4794a244c2e1da",
+        "equations/majorana-and-endpoints--bosonic-obstruction--4.tex": "d7d2d8a032987bfc7025be3ac90e4057ab5e8ada72ab193b43c1053e62dffafb",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--5.tex": "2d6360d5273080faea9f782cd1aee6e228e74b00556d7c622e7e27b20625f1c3",
+        "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--6.tex": "4676370e9706ceb7ba8a8d8060e652c8097f813ee5062127da23ceb66dc65e58",
+        "equations/majorana-and-endpoints--majorana-contribution--7.tex": "7dffbf167e2863b58fb233fc07aca045ae97aff12ace0925fb1800f508e83939",
+        "equations/majorana-and-endpoints--majorana-stacking--8.tex": "292057d5519c3cc38b6c1f251d73f5cf9d1a08c830dcfd3b7f47861a26fa3a14",
+        "equations/majorana-and-endpoints--complex-fermion-stacking--9.tex": "be6cb84c8aaa33c123fd5fab7ff1a212544278f9f9dd895b10dbf3e7991999e9",
+        "equations/majorana-and-endpoints--majorana-contribution--10.tex": "778368e0bd895c6eefb1a0fa0fdbf54dfb1006c7eb5d5a0112c7fb8e6ec0d81d",
+        "equations/majorana-and-endpoints--bosonic-stacking--11.tex": "065ee0332d1a6160c64c0437fa3eb4e5edec59d7e45a50bcc0e5d505290324ce",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--12.tex": "980f544c0c3450eb15a17e3f6393dc8257d1b4ba854b3cf93a01d09e3e9e3183",
+        "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--13.tex": "41f988c23b625671a37403e1e34dc2f48c41620c0df677c35baa5d5835e2d73a",
+        "equations/majorana-and-endpoints--majorana-contribution--14.tex": "fb06707b71e078b11c9763b3c00c0b4a04eb30e5903073c240874e81ba0703bf",
+        "equations/majorana-and-endpoints--majorana-contribution--15.tex": "b8246ae7db5b89b4eb5d986676f97919dbfa0f407b9b3297d4b1fb6f9a83b74e",
+        "equations/majorana-and-endpoints--majorana-obstruction--16.tex": "7a54fbc107eb51c8c69f323b02ab87881f556b5fa34ec887e31a1f3714bcf390",
+        "equations/majorana-and-endpoints--complex-fermion-obstruction--17.tex": "41601a14136f71fa3d5fe6584fbd15ace070e81cb30ee9346bd73fbe5b7f22c3",
+        "equations/majorana-and-endpoints--majorana-contribution--18.tex": "d01ac1c090178a1a72502d82c6f7a80d75ee0fda028a86b9dfa1a80b85cac4e9",
+        "equations/majorana-and-endpoints--bosonic-obstruction--19.tex": "b68a17734f519e1275ecfb78b4303f16b676198b835d951fb0e2a645ea441b74",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--20.tex": "465557daf30a48b2e24b2cd1881c551f7a54b489ab8b98c827129820d90550cf",
+        "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--21.tex": "fdb2158fe26682a06f193fc47048c9eeccaf79de4f8e9ac9c0ebd37608c1cc67",
+        "equations/majorana-and-endpoints--majorana-contribution--22.tex": "89cc7dfb14f29f9736eadee19bff5a9be52a1af0643382ab69c241b6a07cead6",
+        "equations/majorana-and-endpoints--majorana-contribution--23.tex": "22636d30c1126bbaabd6c753ddbee6e0815ba955828a2e0ec212712e4453bc8e",
+        "equations/majorana-and-endpoints--majorana-contribution--24.tex": "a6530c6920494f70c91f209e986ec1641e60406f0400088007b91b33998952e6",
+        "equations/four-dimensional--1-p-ip-stacking--19.tex": "e2d0cb709c478e36b56736d9127a344ed375b951df38ed9cbd83532799c41a62",
+        "equations/majorana-and-endpoints--complex-fermion-stacking--25.tex": "6df9faa7da63b6062bc8a926b0f0c2526376f87a1cb895fca0823324082fc9e7",
+        "equations/majorana-and-endpoints--majorana-contribution--26.tex": "50558d4c8491d646eb036aa40daa9bc513b4c43f9f891165f408bc3b7ed56e2e",
+        "equations/majorana-and-endpoints--bosonic-stacking--27.tex": "1a4d1cd74f3571a09bbd852eeeb210b4adea0d798b9ea96af258bcf28a899f7a",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--28.tex": "78554ce5081ceaf8068cb4c5f292f383a5373afef69771d250968d726d0675c2",
+        "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--29.tex": "98f472aa54d295ed37da64ec5858e7d9c5a140cfce8e49fcaaa4a351e1b34c9e",
+        "equations/majorana-and-endpoints--majorana-contribution--30.tex": "2566f25d4ab05723752673da5bd34cb81f8eaf1d339d387d7736127acbf05059",
+        "equations/majorana-and-endpoints--majorana-contribution--31.tex": "43eac9b04d429417331813b114b762c9ce4b31e3458acc1ead678f9310b1c418",
+        "equations/majorana-and-endpoints--majorana-obstruction--32.tex": "7f0c36c4b6f55fb03ec78e12f437fe5f98c3cdb0d492eb4f68c7d957fd92cf20",
+        "equations/majorana-and-endpoints--complex-fermion-obstruction--33.tex": "39e9b3c271cc4e8d5ba4e5f38c8a929b5de232bec3e76b8c2af70122a1cb8278",
+        "equations/majorana-and-endpoints--majorana-contribution--34.tex": "8f7ff82157314e033cc8bd2a036a39e498c80a86b5e2b73c9d5f86d925d52a28",
+        "equations/majorana-and-endpoints--bosonic-obstruction--35.tex": "3c3abbe5d7ab1cd3062c602bc7636f1fe00d49cd48b6ddf3b111f51728cbc749",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--36.tex": "8ce7eac2cf67f92db5f0d2a3e8afdfce3ba8f12894d14d57004180d67cb0a46c",
+        "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--37.tex": "fd68b84dd53cde041443ecf0d141d7d0a7fdba08176a0d8a8fb318762d57055c",
+        "equations/majorana-and-endpoints--majorana-contribution--38.tex": "5d7877830a644c595c8292282d88a93de8058a5e29e67298a4009251ed6c8d2c",
+        "equations/majorana-and-endpoints--majorana-contribution--39.tex": "b29ae3cf524346e6cdbe8d649a817192d8664b1f8646997ce8b11a5403a3c2cd",
+        "equations/majorana-and-endpoints--majorana-contribution--40.tex": "d41f257775714243ef22cd16f8fb0c359f46613b729480007ae3f5b432516396",
+        "equations/majorana-and-endpoints--majorana-stacking--41.tex": "34710f6058ec5c61202bdd7e5a894422f94d53c4f2b5d4b4740c8a228d53f703",
+        "equations/majorana-and-endpoints--complex-fermion-stacking--42.tex": "a76b21c76bfc3d4c03676155a1a0fed11bde4030803896f4b514f16395a82b86",
+        "equations/majorana-and-endpoints--majorana-contribution--43.tex": "aa73db702100b5f6eaf107331e5af1261221808e1c2581571309886dd239d7c1",
+        "equations/majorana-and-endpoints--bosonic-stacking--44.tex": "298361cd995af2dd17dfe1024713fb00c864f3dab542ee39f3680981e8d4f75b",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--45.tex": "542bbec0bc8044219dad2b71c0bce929c457cd2c33157aed7ac67c1ee64486be",
+        "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--46.tex": "c28cc9adb2d12507820363591e52e423a79e53f045ba9d538b24979ddfaaf0be",
+        "equations/majorana-and-endpoints--majorana-contribution--47.tex": "4d2cb9c1d2236be89effb17770cae1e8646eb3aa376f090e046b9ae48e2389bd",
+        "equations/majorana-and-endpoints--majorana-contribution--48.tex": "13a4915f56eef966b34d41c3531484a3fb0067a78ed86ba10a65075c37e2e54f",
+        "equations/majorana-and-endpoints--majorana-obstruction--49.tex": "1742b3b1b142275d52fea6d3be1eecad2b892afc77c9c38bc519c7f425e625bf",
+        "equations/majorana-and-endpoints--complex-fermion-obstruction--50.tex": "3a146658b5ea05dee396143c2480b5374f9a581900d8e802a39d0b705bc904c0",
+        "equations/majorana-and-endpoints--majorana-contribution--51.tex": "79631b9971a95e89e07c77f2dee56c7a2e2c4161f86d1c0ba6638f8c3dad6c9f",
+        "equations/majorana-and-endpoints--bosonic-obstruction--52.tex": "1af5d6eb975cba0a1c71cf72c07cd664e97534db5f746f0de8a7852c20d24eac",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--53.tex": "33c2bc99f9b98dd20de590132110796a98dd83677af9e443e787e37adb7a68f3",
+        "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--54.tex": "397b1f6f2118c69b2d381d29ad3136a226e74a02644f6fe2d631b81e1483426c",
+        "equations/majorana-and-endpoints--majorana-contribution--55.tex": "7e6626750a89392742766000fd801229d144a8c28147de9801db163d473b53f9",
+        "equations/majorana-and-endpoints--majorana-stacking--56.tex": "e335acdd77741a78431addaa725ca4b832e8b57d481b34cceb936a28482b9d9d",
+        "equations/majorana-and-endpoints--complex-fermion-stacking--57.tex": "b76d477ca0f8c0a146c44d0070a464e8052004c0e3dabc0dfd83310992fa78db",
+        "equations/majorana-and-endpoints--majorana-contribution--58.tex": "719f1b0af5a14716494e4a00c88707e66b3cb32e7f5846d79d38c1885267477d",
+        "equations/majorana-and-endpoints--bosonic-stacking--59.tex": "014ba79e474568b8cc0f76f51d6d511227f759b167f214f04ca961e5570c6a30",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--60.tex": "05202491864d2e4e601e152418edf2c8f200aea212f1cc9cd4467919886dab5e",
+        "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--61.tex": "f120013ec2b43386e3d4125ec9d065aa44cc0060268f3e9e67dd97d33ab278a3",
+        "equations/majorana-and-endpoints--majorana-contribution--62.tex": "f9672415ad5c1a236371aaa2a813c44cca7c425557a650fffa0cc64a933a4c2a",
+        "equations/majorana-and-endpoints--shared-mathematical-word-operation--63.tex": "eaecc8b46ecb7a3f65a7e27b6b4503f3173e106eef65af26a0f99985331f9405",
+        "equations/majorana-and-endpoints--2-1d-phase-coordinate--64.tex": "984ccbf18df82a6b39784224d782e665a01e5ed0caf61efe7950be589b502a3a",
+        "equations/majorana-and-endpoints--obstruction-transport--65.tex": "a125ef09030ebb9dd4536ca956e33797b9a9a26231a45bb08fde5da9227076a9",
+        "equations/majorana-and-endpoints--stacking-transport--66.tex": "61b508c9f6833df3fda7772377e130e0866b14783b27101158d6de90fabda71f",
+        "equations/majorana-and-endpoints--3-1d-phase-coordinate--67.tex": "6c1b1d2b376d8300d4cda1701a56a7fd7bc40e41ed775d01781b7cabb5c2ab59",
+        "equations/majorana-and-endpoints--obstruction-transport--68.tex": "74c62b012ad59b7f701d591cafa330083d585f5e40e6518f14c8b6c4be7a27a7",
+        "equations/majorana-and-endpoints--stacking-transport--69.tex": "70802183b6a04607d148bcc02da048aa3e0db87f1d60ee958ddcc000b7a49e78",
+        "equations/majorana-and-endpoints--4-1d-phase-coordinate--70.tex": "088d4c65ab9f5e35cc6f633be2305603be6e6a7462ba7362d5e5ad514f76bfc7",
+        "equations/majorana-and-endpoints--obstruction-transport--71.tex": "49ab4b2c223a75a00399b78ec811bee2c20973f4086f85f0be31db69633f8e86",
+        "equations/majorana-and-endpoints--stacking-transport--72.tex": "cd45827e09c719ce9aac85a9985a78676f96d03f624aa0c53d2b021e8920e2e2"
+      }
+    },
+    {
+      "output": "docs/formulas/NEXT_SIMPLIFICATION_TARGETS.md",
+      "source": "pages/NEXT_SIMPLIFICATION_TARGETS.md",
+      "sha256": "409cdfbd81fae248f99e9f65e17e2ed8a08e4fe790eefbaa9813940dc66d21e8",
+      "dependencies": {
+        "pages/NEXT_SIMPLIFICATION_TARGETS.md": "29391ff328afac870778c7266e997c8086a0dbe61a96d9be520d902f3d85d40a"
+      }
+    },
+    {
+      "output": "docs/formulas/OPERATIONS.md",
+      "source": "pages/OPERATIONS.md",
+      "sha256": "0c1a78a461ddc88564205f9a5925bf344a6a7ea6268a1b5bd7df7f48495fd06e",
+      "dependencies": {
+        "pages/OPERATIONS.md": "527cb754c1d59f71b0daa09d31e4ad6b2a211d36cb845d5f8361af5baa168c60",
+        "equations/operations--differential-and-local-coefficients--1.tex": "2c7c6829a5fdc3ab15e3e832fb2286e1c0a0cdf1f3a82c04e1369d42fe2713e5",
+        "equations/operations--arithmetic-and-carries--2.tex": "3b6670ed5911da60ea08c8e84f8fcf10aa5a55adde1ebbf4329cf7cf1587cd8f",
+        "equations/operations--arithmetic-and-carries--3.tex": "d94a99940d1a22ad5d901a2fb565e4473be6f3a18522640dff06065b8cd580e4",
+        "equations/operations--interval-cuts-and-may-steenrod-words--4.tex": "1b3fc568d387b3966a4ecbec3ba786f2af737693cbf651539f1f8917a1a78891",
+        "equations/operations--interval-cuts-and-may-steenrod-words--5.tex": "20b7faeafeb3d38639918a84d9e764029e11eb1d34b55ff90efacfd3973082c9",
+        "equations/operations--signed-higher-cups--6.tex": "9a580970c328e0e18364390c4d463b0a056a711323a42ff26a467db615fdb60a",
+        "equations/operations--signed-higher-cups--7.tex": "f9d55febdcba219f6e9c2d8135c7f0a06054373c74eaef4a5385cdbad1da546b",
+        "equations/operations--signed-higher-cups--8.tex": "7affd6b6c0986c6736cabcc53e6bb96ee2b2f3cf6d3f035873b878fbfe186259",
+        "equations/operations--parameter-integration--9.tex": "b61f482871d9bbbfe6903837fe567068d8b1c04798fdc8e308f77771d9fac556",
+        "equations/operations--parameter-base-fill--10.tex": "77b2a0983d23c1b38dd17c14b4de5fc88a47d85e0a4f3811ade327111e90cbea",
+        "equations/operations--parameter-base-fill--11.tex": "fa53862ea2a5966a4be92fb968a083bbc449ebf4b2205d30a3666624e255925f",
+        "equations/operations--parameter-base-fill--12.tex": "e480234b4a1dae68d609ac84967869d31bf6f9ff879f2b14c98201ba21a959b8",
+        "equations/operations--three-factor-grid--13.tex": "c0823ab6b2e12f141f6943820058547809bc28aa568f70a48db9940b77c60b26"
+      }
+    },
+    {
+      "output": "docs/formulas/QUADRATIC_REFINEMENTS.md",
+      "source": "pages/QUADRATIC_REFINEMENTS.md",
+      "sha256": "7894b4cced36898c88f2e9c4e530e544ea900a5c14dea237bafd77857d20a86f",
+      "dependencies": {
+        "pages/QUADRATIC_REFINEMENTS.md": "73317792d6d2a9150523b694cbc26760a0797aeae530ee7745a0ee39f95a0994",
+        "equations/quadratic-refinements--the-quadratic-cochain--1.tex": "b2e872da1847362a407c1481e1dbb47a95068c148ecfc1cae518d97944e77ac6",
+        "equations/quadratic-refinements--the-quadratic-cochain--2.tex": "94ed140948862c356f4123988ff3718e6ae4ae6f9fa05e32d7f294b73175d8fd",
+        "equations/quadratic-refinements--exact-addition-and-lift-dependence--3.tex": "f525fdd7b2461dbcfd61974f4159c3907f9dfc97cf7d2c0b70b1c37a603ea95e",
+        "equations/quadratic-refinements--exact-addition-and-lift-dependence--4.tex": "d168e594aa84f8bb2bb8554ebd12c9764e948bfdaf9018709c0cab873e19669c",
+        "equations/quadratic-refinements--the-quadratic-part-of-the-4-1d-obstruction--5.tex": "bc516294324923b71ecada1944507398f1ee089707e1193cdc76efd3095fbc60",
+        "equations/quadratic-refinements--degree-four-variation-on-the-physical-lower-tower--6.tex": "747d9d76ed88aed0ec90a7b13428233eb9aed8ac236532b928ff457c7c96d41c",
+        "equations/quadratic-refinements--degree-four-variation-on-the-physical-lower-tower--7.tex": "f44ce69d461fa11596a1a7b200a49cf10245bdc1819fe40f639747cec3802c17",
+        "equations/quadratic-refinements--degree-four-variation-on-the-physical-lower-tower--8.tex": "22375f80701141a6635c13162e1b84831a210ad9529a21520f19d0a9eb20ab0f",
+        "equations/quadratic-refinements--an-integer-lift-compatible-with-the-polarization--9.tex": "f7a02ab6878322351173f6f0cdabb6a185f0010293a633945271d029c2031d1f",
+        "equations/quadratic-refinements--changing-the-lift-in-the-terminal-product--10.tex": "59d9c57a737be6f7b91e14f3d5ebfcd8a60c3a30e906e3460ebf15bd5dd27a00",
+        "equations/quadratic-refinements--changing-the-lift-in-the-terminal-product--11.tex": "2ee9f189b11d53121e77fab7d9a1996ebe21fac12648a120216f2cc73501cca5",
+        "equations/quadratic-refinements--changing-the-lift-in-the-terminal-product--12.tex": "f7d49c91039aa307fd32acd33410a3b6a92b2e85a1e1ad7e4d0e5b22fcf47841",
+        "equations/quadratic-refinements--algebraic-proof-of-the-variation--13.tex": "32649280788909e6864dc9e98dbf686478110166b0d6d5f4195f7ba8680a2078"
+      }
+    },
+    {
+      "output": "docs/formulas/REPRESENTATIVES.md",
+      "source": "pages/REPRESENTATIVES.md",
+      "sha256": "df9a108368fbf35a27e6e92804f55602216e433d2b3584333c5d8577370da24e",
+      "dependencies": {
+        "pages/REPRESENTATIVES.md": "554a455f1e9b57baf882a2ece2222c2b397528d89bcb62ec75c200251d9f4b82",
+        "equations/representatives--3-1d-earlier-complex-fermion-coordinate--1.tex": "13df6e6ff5f8a3edc1bc75104a002913630520f9a6f96d22d40011cbb436a243",
+        "equations/representatives--3-1d-earlier-complex-fermion-coordinate--2.tex": "1b96ca54e6476411062670283966cdb856ff3f6be36174b343a1d7574dca3162",
+        "equations/representatives--4-1d-historical-source-convention--3.tex": "08a5b615fb5d6000ec7ffc8eb3457b324aae30d1c7700f015a4e9566ab26f50d",
+        "equations/representatives--4-1d-operator-phase-in-the-current-guide--4.tex": "81ee37144c60b84bda404095331d3ed1f0fc1f4d32fb43057aea794d399c71f5",
+        "equations/representatives--4-1d-operator-phase-in-the-current-guide--5.tex": "ad51a61b593d97850d195471e59c401d7616b56e6f5caafeb491abdaf16e7c0c",
+        "equations/representatives--terminal-phase-changes--6.tex": "48f98478a9e44d4d478a598225c9847724b6ee789df72121bd2f074e755bb5ea"
+      }
+    },
+    {
+      "output": "docs/formulas/ROOT_POWER_PRESENTATIONS.md",
+      "source": "pages/ROOT_POWER_PRESENTATIONS.md",
+      "sha256": "cd0e2a7a03d8d1232e47704c26263e8292dbb5830071269dff7b21b4b06d7c12",
+      "dependencies": {
+        "pages/ROOT_POWER_PRESENTATIONS.md": "04a8d4419ddf139009620650c19c83708a0015f4ced4d34be4ef6492891090c1",
+        "equations/root-power-presentations--the-presentation-theorem--3.tex": "98ed0e5255fab3030fd9ecd6051a1483f8e9540cbfc0324d6878d4ca3194432a",
+        "equations/root-power-presentations--the-presentation-theorem--4.tex": "941a788b21ccc07bef2f3b60d968a48bd4030a91ba073962482b7cfd8506291a",
+        "equations/root-power-presentations--3-1d-choose-the-basis-around-the-one-distinguished-t--3.tex": "f408f5e515b382637a2fd527f798999387e26d4665a70bd60a921ea20d740474",
+        "equations/root-power-presentations--3-1d-choose-the-basis-around-the-one-distinguished-t--4.tex": "2e029cbf047bb27b93e6951ff08e00a965739c30db876bb6e2f656119e53566d",
+        "equations/root-power-presentations--3-1d-choose-the-basis-around-the-one-distinguished-t--5.tex": "092bd3ae6d1cb318c00a8abae7595ed7c4bd6ddf407a9b9fcb157a407c9550b6",
+        "equations/root-power-presentations--several-two-primary-p-ip-roots--7.tex": "72b55fa06f824d9552aca341e03abe31f202fcaca3e9489cda73be29ab1dbcd0",
+        "equations/root-power-presentations--several-two-primary-p-ip-roots--8.tex": "18c5f0f0ea13ebd2b7181ad68ac8d97ddf0a3874a7824bd5a4c94b37960de23a",
+        "equations/root-power-presentations--several-two-primary-p-ip-roots--9.tex": "6ebda0a5837690824883bce43079003fb70e520530f034239c73348783cd11ad",
+        "equations/root-power-presentations--several-two-primary-p-ip-roots--10.tex": "072114b797ac22274b0df85c320397d9b06b5569e3b9b40091ee449f0772a15d",
+        "equations/root-power-presentations--odd-p-ip-orders-from-doubling-and-a-bosonic-comparis--11.tex": "35bda22154ee5542ff0b9e387e267a7ef2adcd7e40f402821935fe7ac67eff83",
+        "equations/root-power-presentations--odd-p-ip-orders-from-doubling-and-a-bosonic-comparis--12.tex": "3249b4c77c4f17f2fa48cea89a6fa3f7cef87da80e576bcc0115f068ad27c1b5",
+        "equations/root-power-presentations--odd-p-ip-orders-from-doubling-and-a-bosonic-comparis--13.tex": "480b912a20399d5f390ca2250474d5c315805a428bfbdd165fe5d65da12a9fcc",
+        "equations/root-power-presentations--equal-input-root-products-versus-strictly-self-only---14.tex": "a454a661855fb943656f12377883557fe395c1edd2c6a47b44529a08f98e5631"
+      }
+    },
+    {
+      "output": "docs/formulas/SIMPLIFICATION_PROGRESS.md",
+      "source": "pages/SIMPLIFICATION_PROGRESS.md",
+      "sha256": "489fa987bee14c0c7b8c1c422ab1c3ce518509e5b6c3de138cb0bf1c1e32ed4b",
+      "dependencies": {
+        "pages/SIMPLIFICATION_PROGRESS.md": "537d1961de270ec551efa600479ebc72b1feb05fe458263c2085d155d40f0f9f"
+      }
+    },
+    {
+      "output": "docs/formulas/SOURCE_OPERATIONS.md",
+      "source": "pages/SOURCE_OPERATIONS.md",
+      "sha256": "0ee8373948dde4ef735b435e795dfc17ad6da3a986e4d5005a4ef8b47a8cab3a",
+      "dependencies": {
+        "pages/SOURCE_OPERATIONS.md": "2de2c3425e8153d0318a31a506199837982c63352f413e93615b49af29e95cad",
+        "equations/source-operations--continuation-to-an-open-degree-three-cochain--1.tex": "5b591573f04b4a145d032db68db1eccb0648dd5d4aae43f4cee47e5c615c8a1b",
+        "equations/source-operations--continuation-to-an-open-degree-three-cochain--2.tex": "8f0406b6ad7c2040a2bdf2fa83b131c067c8b2915fcc969ec8c0119471562ec7",
+        "equations/source-operations--closed-degree-four-polynomial--3.tex": "670b4660ca2fd2017ddc9d35df6cfb0318c90ae3e33803c6e866337e3f6e40c8",
+        "equations/source-operations--integer-layer-contribution--4.tex": "847e3b103d32b0453a3140cee46e4f7f84846f9e8f8a443399d15c5670013ff6",
+        "equations/source-operations--integer-layer-contribution--5.tex": "e9f0748b216c832b35034972b12255e13a98975dc0aba16ebf073110008e744c",
+        "equations/source-operations--integer-layer-contribution--6.tex": "c74c8ebc9e04dbed9357e8594ebf3bf16f49b7427ce4a89b23764e3b436c2e06"
+      }
+    },
+    {
+      "output": "docs/formulas/TERMINAL_TRANSFER.md",
+      "source": "pages/TERMINAL_TRANSFER.md",
+      "sha256": "2d6da582ff85d8c751d41151dd69da629618f3e6ed41811e1d93249960f8736f",
+      "dependencies": {
+        "pages/TERMINAL_TRANSFER.md": "5de0786b0ea82f1eb938b3268ae5a5d5c8692f3f00a2151c911e639b40252f02",
+        "equations/terminal-transfer--finite-formula-for-the-stacking-correction--1.tex": "02add0a3c8420e0910514b45cb7d6b0f998f35a70b35d55877e2b23268839e74",
+        "equations/terminal-transfer--the-binary-kernel--2.tex": "a2ca05611ce7ef4196e20d27ce2c171361b01e665884f8ee6f03b944ad7ed1ba",
+        "equations/terminal-transfer--shared-background-coordinates--3.tex": "b62d6bb780cf312b0e9dc63cb0947e6c540bace1964fa3612384931fcd9ba8c8",
+        "equations/terminal-transfer--shared-background-coordinates--4.tex": "7a0607851a4862763629386cff300f1f73c44c3bdaa3e1529e6a03664ba4328a",
+        "equations/terminal-transfer--shared-background-coordinates--5.tex": "c193786b90f95cb22d0f421cdc5661bd72a39d87d87929caaa889fd027622004",
+        "equations/terminal-transfer--the-tensor-coefficient--6.tex": "de133cb22afe92bc5c1e817ff503f4758e82838f6c01ea04fb7a5a9972f1c65a",
+        "equations/terminal-transfer--background-degree-one-contribution--7.tex": "1383dae25f545b2152587ef74706992a9982b889592a38fd580f6c0df9679921",
+        "equations/terminal-transfer--background-degree-one-contribution--8.tex": "c04e08bb473eb82c27a683407a5ffc59f22a7c187d0fedf3b891d4bfe5babd36",
+        "equations/terminal-transfer--background-degree-zero-contribution--9.tex": "51819e4960ac82de51a55f732d95082db4eb41d282a19f5bb7e616f2b56558f6",
+        "equations/terminal-transfer--background-degree-zero-contribution--10.tex": "8bbd53fb2d082404bd4a28f37fa7944ba88a7c29f442927c8d3ff94de11c0e58",
+        "equations/terminal-transfer--background-degree-zero-contribution--11.tex": "d5d288ae55d40780d2a0e3c26adb3d84d267edf508259976b33b7ed4b08d524c",
+        "equations/terminal-transfer--the-balanced-integer-carry--12.tex": "5cdd02cdb48c83badf2e6a7b1be9d074036b73fb6290440978d5473dc8159d07",
+        "equations/terminal-transfer--the-balanced-integer-carry--13.tex": "f7668f6b56dee442940db8b87f6460f8eb0598200f5912f0fccaf1798f4387dd"
+      }
+    },
+    {
+      "output": "docs/formulas/TERM_COUNTS.md",
+      "source": "pages/TERM_COUNTS.md",
+      "sha256": "e960c0ca63cad8d672c7db2e76c0f50c8fc4710635fd5ff8fc0dbd1bbb85254a",
+      "dependencies": {
+        "pages/TERM_COUNTS.md": "1edd54c80fe907c87c9c60041ea6f15f0e5d1b78fdbf40219c5cdb6782d2b8fa"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL.md",
+      "source": "pages/THREE_DIMENSIONAL.md",
+      "sha256": "7266c69a72e38387d6880ce70217eecbf0789a4d173b17629ffc589144d12995",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL.md": "c389d347035f9704b82203c86d271b3617ea6789afaff7a2079a63230d73106a",
+        "equations/three-dimensional--3-1d--1.tex": "9f9af291b96ab6a9dd8965bed3faa4d68aa5c5c8a9bd7e249feb8eeb51187854",
+        "equations/three-dimensional--1-p-ip-obstruction--2.tex": "04e0ab50b72058a681c063c341c260a10466f211205d87b8876b79db995f9ab2",
+        "equations/three-dimensional--2-majorana-obstruction--3.tex": "2a94441d339c1d0b9f992efe3e23d12fdaccd79c14cc7e666fcfedbd340b599e",
+        "equations/three-dimensional--2-majorana-obstruction--4.tex": "f0cd6a8c0251fb50ef8599d6edce3a2d67f401794e08990f16f9b0338df1cc55",
+        "equations/three-dimensional--2-majorana-obstruction--5.tex": "1f2a6d8817d4c6d5af7f5b0a4f691c4dcbeb1f6d1b5f967f590e4e05f078a137",
+        "equations/three-dimensional--3-complex-fermion-obstruction--6.tex": "93cd288d31b6b621ea8ab540d4b197f6d990f2b51bbe5671cd0cdb59ccd8110a",
+        "equations/three-dimensional--3-complex-fermion-obstruction--7.tex": "0a9dd80675bfecf165bce7d7195bf447f051449a00c8646bc266593c70f101b2",
+        "equations/three-dimensional--3-complex-fermion-obstruction--8.tex": "ed7fbeba82deacfa78901be4083c8d87e221a3eef43d24ffe297c808422a41ef",
+        "equations/three-dimensional--3-complex-fermion-obstruction--9.tex": "9e062c24ec0c1b3cf9e8c9436d92160c4048d211110e4ed985bd776b90b802ea",
+        "equations/three-dimensional--4-bosonic-obstruction--10.tex": "54b1c28eca885ab771847999b30b430eb01d3c908c2cee4bae0940c64b0eeff3",
+        "equations/three-dimensional--complex-fermions--11.tex": "a4ec14cdc7ca48d3a65e9711319e899b5e19141ba7093d32a309d0c4c1cae7a1",
+        "equations/three-dimensional--complex-fermions-and-majorana-decoration--12.tex": "18c41a22f85488bb3c00a023d0b11f5cd880b4c4984d59c43739e5c25c6f52df",
+        "equations/three-dimensional--complex-fermions-and-p-ip-decoration--13.tex": "73feb2dfe206bd1ab071c4dd792682142951d8daf4408d90217e548adc13cff1",
+        "equations/three-dimensional--majorana-decoration--14.tex": "66dae5e8f71954dd9bde95b3c07a4a605f8dd010c15571359dba092164410b65",
+        "equations/three-dimensional--majorana-decoration--15.tex": "04e53610e66da6f4b01cc43031e3265b53cd60f2840683dfc0ccc51113d10724",
+        "equations/three-dimensional--majorana-and-p-ip-decoration--16.tex": "ed841dfdc25d32c2bf1b06c1a9571d1522e6c1c357e21321a40f429721b535f6",
+        "equations/three-dimensional--majorana-and-p-ip-decoration--17.tex": "5e7d8ce791c9f7b977940a2ecba0a9c7f3067321e178e04dd5fd5dd118757cb2",
+        "equations/three-dimensional--p-ip-decoration--18.tex": "30529840472aee359f499744ca45cd7bb1c569c8b9df53fc888460ba0d7fff55",
+        "equations/three-dimensional--p-ip-decoration--19.tex": "835a87d34a47d7fe165a77e6e9b48a3a73b80b7dcf4846e90de55e5d9d729975",
+        "equations/majorana-and-endpoints--majorana-stacking--8.tex": "292057d5519c3cc38b6c1f251d73f5cf9d1a08c830dcfd3b7f47861a26fa3a14",
+        "equations/three-dimensional--2-majorana-stacking--20.tex": "4adbadb5c5ed09eb1c7dd5cb8d032d154524807514b76843db70cbae3fa519b1",
+        "equations/three-dimensional--2-majorana-stacking--21.tex": "9820af3084fea8c0b315f027254702709727490e1639a5e06e47f284ca957808",
+        "equations/three-dimensional--2-majorana-stacking--22.tex": "0214086b6e886c0becb55d2a09c1d03b29ff5bb9732676cc56516caf0f47ffad",
+        "equations/three-dimensional--2-majorana-stacking--23.tex": "539dcc53b0b6cf8cd63005bbf03b7fca05ef81081407e1becd3aa3dbf6e35609",
+        "equations/three-dimensional--3-complex-fermion-stacking--24.tex": "e9a0c15aa57b2f92e7a976d19fa9b3b738f73db5ecf212d7e4778f847119cbb0",
+        "equations/three-dimensional--3-complex-fermion-stacking--25.tex": "0b0bd72c9d46c112faf51dd27b8b4c585547afdc36c56d0227370704ebcf9aa4",
+        "equations/three-dimensional--3-complex-fermion-stacking--26.tex": "d409a2b9ace7bb3bae21c9599f84b3c4c8c48ed92ffcd57632a1211dee0fd800",
+        "equations/three-dimensional--3-complex-fermion-stacking--27.tex": "ddd2dcf8614b0c6547eefd205bd70259ed1411bff0d517195ff83bf7db2bb49a",
+        "equations/three-dimensional--4-bosonic-stacking--28.tex": "64a94e2b3f512a49992dcbc28b2b382ad747e13144c8476976f67ddcc2322a89",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--28.tex": "78554ce5081ceaf8068cb4c5f292f383a5373afef69771d250968d726d0675c2",
+        "equations/three-dimensional--complex-fermions-and-majorana-decoration--29.tex": "822e441a1f81cb7f8f5070f95fe67bb66c234afee5fb5e483378491ca6c5c334",
+        "equations/three-dimensional--complex-fermions-and-p-ip-decoration--30.tex": "64109302a6b9e5c13b8051ab2a1dff32f835611accd87ca9072030d282292800",
+        "equations/three-dimensional--majorana-decoration--31.tex": "ac8b30635200a7e290e8bd4d17312afd3814af373129708fd6993dc01b32d4ff",
+        "equations/three-dimensional--majorana-decoration--32.tex": "3ec7df0d22553148ca8c6d432c8aea03a19cb051e1edc3dd3c2e1ed83ee7fbfa",
+        "equations/three-dimensional--majorana-decoration--33.tex": "516256c8d1aa43078a3c7fd4abcb272e0b3cbb6a6eadcb79421fe000d0a69534",
+        "equations/three-dimensional--majorana-and-p-ip-decoration--34.tex": "116351bd37db6718a64a2433e1cb945085fc933d533e605b968df7b1a72e73e8",
+        "equations/three-dimensional--p-ip-decoration--35.tex": "1d1bfd75da35ad2fe0376569a99c7629994e9db994af1b0db82f7a821fa6daa2",
+        "equations/three-dimensional--physical-face-coefficients--36.tex": "c966a0dd98cb445b86aaca4eff05eefdda9a54891cfe64e52498f523ec897d33",
+        "equations/three-dimensional--physical-fields-carries-and-arithmetic--37.tex": "148f4988b5f9d059251083278bc0fa2513cd928f1251959b96c3c9fa8405d002",
+        "equations/three-dimensional--physical-fields-carries-and-arithmetic--38.tex": "32d0ee87532989736d34dfdccf9c6f659ca7fa57e27007f56a85fecca9ef6240",
+        "equations/three-dimensional--the-finite-phase-polynomials--39.tex": "8ab384cf11f10ad96f0946293f35198af97d237672827db2d6fd645af90aa746"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md",
+      "source": "pages/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md",
+      "sha256": "33a07a20572d7281738d2458b90bf8eea6e1a33f30f864b43f296d65eef769a4",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md": "faa08353bcb1373c4e1f45b12bd29b2f133fa2deff423844e86dfe80eb5014e6",
+        "equations/three-dimensional--complex-fermions-and-p-ip-decoration--30.tex": "64109302a6b9e5c13b8051ab2a1dff32f835611accd87ca9072030d282292800",
+        "equations/three-dimensional-cf-exchange-reduction--general-3-1d-complex-fermion-exchange-reduction--4.tex": "c7c7a7fa39c7ec4ffc58146d8627fbcc23fae791a448dc331b76f9f7d7a9ef3b",
+        "equations/three-dimensional-cf-exchange-reduction--general-3-1d-complex-fermion-exchange-reduction--2.tex": "48981156022578e6f565032c4f6444480450ee8fb5055fefc2d952097ed770d1"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md",
+      "source": "pages/THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md",
+      "sha256": "a93b4a7807c00ea1602b8541814d8fcc379aceccc9f05a45b91c82f4d4d36f77",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md": "3d698f0cad145839a98ce685fc663278ae62d1207baa54b3d9a111cce5597a13"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md",
+      "source": "pages/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md",
+      "sha256": "bb227a389ddd2183fc7ff07f59caedec7270da211e20173142b7530e5004a188",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md": "3b103b2a296920d35350673eff85ac86371ba9fc76580424e8c3fd60307dd77f"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md",
+      "source": "pages/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md",
+      "sha256": "cd8adfd7bcdd3d93c2a651073f9ee705297f614d488307402f1c41bb465d5a80",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md": "7bbc457904c01aded7133ed0708524391618325d1ed704a915b218fb7433d506",
+        "equations/three-dimensional-majorana-self-stacking--why-the-intrinsic-word-terms-disappear--8.tex": "c633aa993ffaf506cec8d0e0dd6ed5db51a39799008793e29a0912e54862d658",
+        "equations/three-dimensional-majorana-self-stacking--why-the-intrinsic-word-terms-disappear--9.tex": "7b690ae33180da5ef191ca44daf2fdff0d64b0b937472b401c47175cb72da55b"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md",
+      "source": "pages/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md",
+      "sha256": "ab0fd885c0ff9c33d5cb8de2c5f9d451fa2e3b626247bb093512f26d2691f68d",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md": "4d383da5318eb06154cfc77a03e2d75e18326b533291a1429418709c790dc3cd",
+        "equations/three-dimensional-paired-representative--paired-phase-representative-in-3-1d--1.tex": "d842250c140a50294b4c00926f5c9ca133cedeb582445a74e76b1093e81b6377",
+        "equations/three-dimensional-paired-representative--integer-characteristic-phase--2.tex": "a97689f04f6d537461610265bcd71d48ee31b9806bcdf54f7d6a33f3935acb8b",
+        "equations/three-dimensional-paired-representative--integer-characteristic-phase--3.tex": "1454b3b341dcf5a182a10df5279f8d83b58fe6a23b5e54a54fbdbb311c513a97",
+        "equations/three-dimensional-paired-representative--integer-characteristic-phase--4.tex": "467de6feda56db0be3b245af94b1ea76065f81edd62f954d6b27825e21cefa47",
+        "equations/three-dimensional-paired-representative--integer-characteristic-phase--5.tex": "d4f16c10d962084ed34c06ae48cdb82003a691b5a00eaf642d4184b31ae9c0f3",
+        "equations/three-dimensional-paired-representative--complete-output-gauge--6.tex": "ab0c3cea1557dd4f07ee997bb6b86e884c606e492fcf321821ead1de4f732365",
+        "equations/three-dimensional-paired-representative--complete-output-gauge--7.tex": "3feae28fa11febb38e437a9c0ec50fe97b14d5ec4cdcc1a22b2b335e8fe6084d",
+        "equations/three-dimensional-paired-representative--complete-output-gauge--8.tex": "fa617dde4c839281a0aceca2247f6ba5f0ac96f6fef97bbbd1151b13cb93f8e5"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md",
+      "source": "pages/THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md",
+      "sha256": "55890b56350a9582eb96bb97f7fabff553b5ee1f03e05ad55b390ae4cb2269aa",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md": "6b1ccbc62eb88f2010892ffa2bc9d80806586a8173e87625ef2de33c8facc079"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md",
+      "source": "pages/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md",
+      "sha256": "99be4380047ad699f7c1771909b395cd267fe7ffe14643e5e39008845d1add86",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md": "194bbc45d8b3f3b947360ecac57f03b6377cea243d5db26e349f70addff72fd7"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md",
+      "source": "pages/THREE_DIMENSIONAL_SELF_STACKING.md",
+      "sha256": "218f83d3c7c234bdca7d80ee4e7bc276f342ccd4f008175bee5d8ec277b520e5",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_SELF_STACKING.md": "ae2224eaa2ca8fe1afc224e9f616e7d48a54f0459254c697cedd89e46e36775a",
+        "equations/three-dimensional-self-stacking--1-p-ip-self-stacking--1.tex": "57d028f51946620148abc2f005b2e237694063c7e839a54f6d74475f19e96531",
+        "equations/three-dimensional-self-stacking--2-majorana-self-stacking--2.tex": "3a34ced495de77feee28bebc92a373ab064819c4e3cd71594ddd8603ed68a8bc",
+        "equations/three-dimensional-self-stacking--3-complex-fermion-self-stacking--3.tex": "c46ca94783946a3091395ad46404d55c61ab21f8fe213947e9926c9106e02536",
+        "equations/three-dimensional-self-stacking--3-complex-fermion-self-stacking--4.tex": "c464422f7a1d857d9e80b9b93d887a7782f8c7407ad2fcd3e217beb319da1657",
+        "equations/three-dimensional-self-stacking--3-complex-fermion-self-stacking--5.tex": "3b9827f7cbc3cf9257b07dfb4037f53ab424d369ae1b701b2bfd4a7b47e440b0",
+        "equations/three-dimensional-self-stacking--3-complex-fermion-self-stacking--6.tex": "555d6663329e7d7a968dfdfa1895d55c35639aa891113d1a30e8743aaaf38aef",
+        "equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--7.tex": "7edeb1d832d1e6bcb8e5e594ffe37ef96d6243183cb47c35472a6573ae2adaee",
+        "equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--8.tex": "f039bb1463f291049a18ca519f3e37ea97626ef9df3feacfc7254471e742da69",
+        "equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--9.tex": "850d9ded3a9a685a57f9c2eb0e203426de522ca59c7cd555d1fdf6e12ee505cc",
+        "equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--10.tex": "96c52ed7fb31f815f811714a8974fd103b289fc997896e0ba9a010a0a2b49fc1",
+        "equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--11.tex": "e9f45e004e836fbf8863b9ed9830ffde895b458f4365dc0988dfc1f4f0c8f075",
+        "equations/three-dimensional-self-stacking--5-bosonic-self-stacking-of-the-canonical-p-ip-torsio--12.tex": "600c330451e832ad369a89a0c6755add8b861f4a2f19b8f2092aeb0e49ec30f7",
+        "equations/three-dimensional-self-stacking--5-bosonic-self-stacking-of-the-canonical-p-ip-torsio--13.tex": "2d609de8e6d106afc4d76e11862ef7c8ca2d5a8436f36829ba2e2a8cf0b94a70",
+        "equations/three-dimensional-self-stacking--5-bosonic-self-stacking-of-the-canonical-p-ip-torsio--14.tex": "092ccab1148f3660baa9ca3df2a09e6e93deb2c467864c395c8fb0d8f144eeda",
+        "equations/three-dimensional-self-stacking--complex-fermions-and-majorana-decoration--15.tex": "17f31e56dff6264e4e08b2eec6a7843091d9448942085a9832223d75bb7cdc84",
+        "equations/three-dimensional-self-stacking--complex-fermions-and-p-ip-decoration--16.tex": "45bd06680073c6fea966c9141b7f8781bbe2b06b4253b138b88457576b4d2071",
+        "equations/three-dimensional-self-stacking--majorana-decoration--17.tex": "daa0c99cd33f625016047aa7d19cf1b0e3fbdb090f98f862994a53514d226e7d",
+        "equations/three-dimensional-self-stacking--majorana-and-p-ip-decoration--18.tex": "4525e7e98c27c95cb9ed7e399427d36a038d24cb896e24a03abb58adb9ad5550",
+        "equations/three-dimensional-self-stacking--majorana-and-p-ip-decoration--19.tex": "2278883c30292ad557ae4636c379ff51821c39130f51d27f1ff2eaa76e7b3a47",
+        "equations/three-dimensional-self-stacking--p-ip-decoration--20.tex": "193151a909f19e74c6553f2b5655d974e4f644d23a77c5bfff7f2d9beb1e4c17"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES.md",
+      "source": "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES.md",
+      "sha256": "e1d0e1534ae1946fbc14671263fa4068ca185fb3809668754c534e15431a7b8b",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES.md": "1fe94705a405d7c28158d06d0a67c9ca7d8fa40d366a41f3a41fff884c2fb8e4"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_1.md",
+      "source": "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_1.md",
+      "sha256": "53c8590af89bb1c7cf9f9e842a84171559e62b3cf2b0c33c654676ce1f6d8576",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_1.md": "d452f829501fdec182edd1fe2e770a76a10d3ea0adeee1533ed6899a30f0b587"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_2.md",
+      "source": "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_2.md",
+      "sha256": "f6d38ef9b71fa2a37048ec6b985f01d9afd5b2325b8fd151d3abc585a1811fd0",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_2.md": "e92162b2fef57da478c298f7fe36b3887dd36c5b5b3861ed40ef1a53aa404411"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_3.md",
+      "source": "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_3.md",
+      "sha256": "10536c2d55dee7af4b5eee0965d8662c636545463d32c6d66814c64732229597",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_3.md": "dbfec4662706e50ae46482cdb9550a14587c80a1547d0a8025bcde2f81573a92"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_4.md",
+      "source": "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_4.md",
+      "sha256": "05af1566517f226e4a9efb21579b60fa17e470ce441a9223dbcf6fee50b80d6c",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_4.md": "a9e39adaef25f4c638c644c0e3b9a76ea301e60ece9209e176a2da3254311f38"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_5.md",
+      "source": "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_5.md",
+      "sha256": "c25f0e2e6a8c732f1eff3562661a2cdd43cd3f2b219942ad70cebc130c4fe576",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_5.md": "8e84f9f08760710cc0f25a12d382989db517935ee5b762eb859f0d31350e046b"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_6.md",
+      "source": "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_6.md",
+      "sha256": "b1617b933c455767b59a1b9f54d3c31545ea6e5e3245a758533a7284112750e6",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_MIXED_6.md": "12f064e01430b8077ce05740c84c3127ce8898fed9e76ffc6ef28b6fe56fadad"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES_PURE_1.md",
+      "source": "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_PURE_1.md",
+      "sha256": "a78d0c5ef657d7d55849d961d679e5f1e4a387c57de2e354bb3b2227efc9f70b",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_PURE_1.md": "99823afd6f47cd8a3df9c1e5977f7579c3d8110a325174904a356fbf8af355e3"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES_PURE_2.md",
+      "source": "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_PURE_2.md",
+      "sha256": "3366d1561f5758e5bcff4cea4d11e1b1b661682055af6cf1cb54db4f8b16b981",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_SELF_STACKING_FACES_PURE_2.md": "5d9b33e703b414337c31dab3985cae2bf3c867e30323ed6745cee666c8b12b9d"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md",
+      "source": "pages/THREE_DIMENSIONAL_TERMINAL.md",
+      "sha256": "3c7dca087b01466d2f506985f2733e5c19bc77798c6b89d613dd46ac71728e47",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_TERMINAL.md": "a4f1f0e2b472290a64f73dda3283e0e14b44dbb734d1df7a4442db9bc3f01bd9",
+        "equations/three-dimensional-terminal--bosonic-obstruction--1.tex": "8c59a94719aa149665363f88a1c6c9375dd721a12e19f35ee002e05f0500c6e5",
+        "equations/three-dimensional-terminal--bosonic-obstruction--2.tex": "2802d43e56875836b60bcc73b833ccf80f7848f674e526d796d700e3f22fb729",
+        "equations/three-dimensional-terminal--bosonic-stacking-correction--3.tex": "b7a2ad66e84ab6c27e6d0c65d2ba8ba96ba0b4e61aa66ae62fa39be912af27ee",
+        "equations/three-dimensional-terminal--bosonic-stacking-correction--4.tex": "e74ebbdbc207103b083d8f2c86ce312767c0879bd618060432de176d51a8d5dd",
+        "equations/three-dimensional-terminal--polynomial-evaluated-in-both-formulas--5.tex": "d938de6468e095005552cd3d9fb01cfcb6fb24453f80ac65b4efd2f3165b5f03",
+        "equations/three-dimensional-terminal--auxiliary-integer-residuals--6.tex": "a8d94548011d99a69a3f4f0577980f563c0f4d019e67ff2ffe578ff202ed81bc",
+        "equations/three-dimensional-terminal--auxiliary-parameter-fields--7.tex": "6e11d69fa462e2fa27e6cca91eccad02303d1355dde621805f95ccfeb5346eea",
+        "equations/three-dimensional-terminal--auxiliary-parameter-fields--8.tex": "f4127e40ca5d3d4ec4b5f6ecfbf483272f4ebb70b4116c68521ccc140c78baf1",
+        "equations/three-dimensional-terminal--auxiliary-parameter-fields--9.tex": "7368cdfbb5ea91443c3c99b9695fbd633a4e59f5c328592748cba0c2b91b60ae",
+        "equations/three-dimensional-terminal--auxiliary-parameter-fields--10.tex": "258e16bfbef444f0a7bddba032f04d1725ce83fcc58d64785a547867df67e044",
+        "equations/three-dimensional-terminal--auxiliary-parameter-fields--11.tex": "2d81333193b47455f372293392230e1709780cc12a6ffef29a2ce44a97e5e9bd",
+        "equations/three-dimensional-terminal--auxiliary-parameter-fields--12.tex": "be08f4e66e730e75d08493c9a80885e6e429b19fe0f8e808ab96e7ba7981443f"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_WORD_INDICES.md",
+      "source": "pages/THREE_DIMENSIONAL_WORD_INDICES.md",
+      "sha256": "af54954d111b6c9eaa0988323188afec51f3cec8b71834b321542b62398574f5",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_WORD_INDICES.md": "42edb3fdbeab259236fd0ee38faf8e70fc7f9d18ca352cbc13964795f10ec761"
+      }
+    },
+    {
+      "output": "docs/formulas/TWO_DIMENSIONAL.md",
+      "source": "pages/TWO_DIMENSIONAL.md",
+      "sha256": "ca61f92084207f663d0057618592e369eeca7657da0be20d8fd8ee849879007b",
+      "dependencies": {
+        "pages/TWO_DIMENSIONAL.md": "2b4470ed1cf067ded80d067377263557b6bacf793493444f0c19e29ee8825dff",
+        "equations/majorana-and-endpoints--majorana-obstruction--1.tex": "b4f6666e2ceee201e96023153f51dbc596cb7ecd2540b09d8d565a8cd983d0ed",
+        "equations/majorana-and-endpoints--complex-fermion-obstruction--2.tex": "984e836bb578cdc767ccb56587ec8d284f5f2dc56df2d453034100026fb5f9ca",
+        "equations/majorana-and-endpoints--majorana-contribution--3.tex": "9f3e8cc049720cfcff3fe8151b2fa0213ffd4d1882683a001d4794a244c2e1da",
+        "equations/majorana-and-endpoints--bosonic-obstruction--4.tex": "d7d2d8a032987bfc7025be3ac90e4057ab5e8ada72ab193b43c1053e62dffafb",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--5.tex": "2d6360d5273080faea9f782cd1aee6e228e74b00556d7c622e7e27b20625f1c3",
+        "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--6.tex": "4676370e9706ceb7ba8a8d8060e652c8097f813ee5062127da23ceb66dc65e58",
+        "equations/majorana-and-endpoints--majorana-contribution--7.tex": "7dffbf167e2863b58fb233fc07aca045ae97aff12ace0925fb1800f508e83939",
+        "equations/majorana-and-endpoints--majorana-stacking--8.tex": "292057d5519c3cc38b6c1f251d73f5cf9d1a08c830dcfd3b7f47861a26fa3a14",
+        "equations/majorana-and-endpoints--complex-fermion-stacking--9.tex": "be6cb84c8aaa33c123fd5fab7ff1a212544278f9f9dd895b10dbf3e7991999e9",
+        "equations/majorana-and-endpoints--majorana-contribution--10.tex": "778368e0bd895c6eefb1a0fa0fdbf54dfb1006c7eb5d5a0112c7fb8e6ec0d81d",
+        "equations/majorana-and-endpoints--bosonic-stacking--11.tex": "065ee0332d1a6160c64c0437fa3eb4e5edec59d7e45a50bcc0e5d505290324ce",
+        "equations/majorana-and-endpoints--complex-fermion-contribution--12.tex": "980f544c0c3450eb15a17e3f6393dc8257d1b4ba854b3cf93a01d09e3e9e3183",
+        "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--13.tex": "41f988c23b625671a37403e1e34dc2f48c41620c0df677c35baa5d5835e2d73a",
+        "equations/majorana-and-endpoints--majorana-contribution--14.tex": "fb06707b71e078b11c9763b3c00c0b4a04eb30e5903073c240874e81ba0703bf",
+        "equations/majorana-and-endpoints--majorana-contribution--15.tex": "b8246ae7db5b89b4eb5d986676f97919dbfa0f407b9b3297d4b1fb6f9a83b74e"
+      }
+    },
+    {
+      "output": "docs/formulas/TWO_DIMENSIONAL_SELF_STACKING.md",
+      "source": "pages/TWO_DIMENSIONAL_SELF_STACKING.md",
+      "sha256": "641188a7a31c63e1e55e69b8223690e97d1596b35468e207a532e5bd6f6fee47",
+      "dependencies": {
+        "pages/TWO_DIMENSIONAL_SELF_STACKING.md": "01f36b627b004db18f023058e5922c02c88bbc66c4a4094ebe550625f9166999",
+        "equations/three-dimensional-majorana-self-stacking--1-p-ip-stacking--1.tex": "a1a0658381185d1503619bd51623978e867ed3346238128394bf9e659f9dcf26",
+        "equations/two-dimensional-self-stacking--2-complex-fermion-self-stacking--1.tex": "c8986ac5221aca282c651adaefe1a9871b920e9b26958d08b67da5eb4636373c",
+        "equations/two-dimensional-self-stacking--3-bosonic-self-stacking--2.tex": "904e3b82460d9761e826f8156ba63acdd5456c8ac5c96102d05760008befbd37",
+        "equations/two-dimensional-self-stacking--complex-fermions--3.tex": "c66488217c3164a95fc7bcffaafac1455444f8cf8c89b855edd07f9e9bee56d4",
+        "equations/two-dimensional-self-stacking--complex-fermions-and-majorana-decoration--4.tex": "06954ae6084320761fa86b7a91d1230fc6edecfb518ca9b766fcf60e31a439ff",
+        "equations/two-dimensional-self-stacking--majorana-decoration--5.tex": "42a0b950212a5cf1652fc8b9390ccc2271c02bdd2d543435cbedb95254008534"
+      }
+    },
+    {
+      "output": "formulas/CODE_NOTATION.md",
+      "source": "pages/CODE_NOTATION.md",
+      "sha256": "fb4056e6044737543b469d81b549524c3f6e0148348ad33a4517c073609e7116",
+      "dependencies": {
+        "pages/CODE_NOTATION.md": "43e55b82aa37fd16a2c6cfee7bbf4b142fcfbb4aab2ca4f8ffaaa0efd1049301",
+        "equations/code-notation--public-integer-layer-api--1.tex": "90aa7e23200db40a296ae359bbe2783a01fbc007809577e64ca5381d08e0eae1"
+      }
+    }
+  ],
+  "equations": {
+    "equations/formula-guide--arithmetic-and-modifiers--1.tex": {
+      "sha256": "d7369f892c0d99fe097e0eced55f007d52182da86d572c7637127edb1bdfcda1",
+      "used_by": [
+        "docs/FORMULA_GUIDE.md"
+      ]
+    },
+    "equations/formula-guide--arithmetic-and-modifiers--2.tex": {
+      "sha256": "e01df2b6d75dcc59ef5142695c7d792f1d8e7c3e669ba61edb4785d8682ca262",
+      "used_by": [
+        "docs/FORMULA_GUIDE.md"
+      ]
+    },
+    "equations/formula-guide--integer-lifts-are-implicit-in-integer-arithmetic--3.tex": {
+      "sha256": "f05b06612aed4906fe952b20e36311659865b3b3038904695204d2f5625b9341",
+      "used_by": [
+        "docs/FORMULA_GUIDE.md"
+      ]
+    },
+    "equations/formula-guide--integer-lifts-are-implicit-in-integer-arithmetic--4.tex": {
+      "sha256": "1c40f77ec78e107b1388fc0d8d7355aa76db0d82443e6222d4137cdd82e39d76",
+      "used_by": [
+        "docs/FORMULA_GUIDE.md"
+      ]
+    },
+    "equations/formula-guide--the-repeated-integer-quadratic-cochain--5.tex": {
+      "sha256": "5850d0fe0850a0d0d5ed0da9d3ed3673d85b62b4549e565da1d7b535c8bcc679",
+      "used_by": [
+        "docs/FORMULA_GUIDE.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--fermionic-coboundary-and-stacking--1.tex": {
+      "sha256": "62c170be98fd28060cbc3d71ad75291cbaf8ec872d9e28361df2d428a48ba6f1",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--the-compatibility-identity--2.tex": {
+      "sha256": "7111021255b650e79d85572eacf1835bbe912fdfe40e5945ae98c114ed111f4a",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--the-compatibility-identity--3.tex": {
+      "sha256": "10f08f4f16d61668bfcd3a56a37415411937fe2c7b78dda0a7e2a8e3f4b270ac",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--the-compatibility-identity--4.tex": {
+      "sha256": "f0d057f1093a23d40522902984f7329547701d84f0f44f94687571a7483e1713",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--an-exact-4-1d-product-with-a-group-inverse--5.tex": {
+      "sha256": "10aebad9e80061c3f63ec658ce8b41b2a4d9627591cf6600a16d30438e77e0f5",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--an-exact-4-1d-product-with-a-group-inverse--6.tex": {
+      "sha256": "3578aff41e22a2339dd4cd36d62338b7516bc19857de2e1c3b2c04f57aa34152",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--an-exact-4-1d-product-with-a-group-inverse--7.tex": {
+      "sha256": "fd416ca184db9fd1fceb57715347ecce5447eecc79857a5ab31471afe3499bfe",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--8.tex": {
+      "sha256": "f90a891dd33d0b1a8213d0b3f5ffc2a75e2dd84d0bc9f93c1524608e8206bb9f",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--9.tex": {
+      "sha256": "0de6e3fbe958dd0e59b7317742877c2c4d32178245144916904e9213e620a1a1",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--10.tex": {
+      "sha256": "d6fb4c17e800cfdee08ea405f4b885b525bf85a942902151ce44fb7adf519423",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--11.tex": {
+      "sha256": "1c06c1563a54309f8c4adb254126cf7d48cf16f437f232b9be3543d4fb8a2f93",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--applying-the-specialization-to-a-3-1d-lower-tower--12.tex": {
+      "sha256": "faaf3a126554af28a1c6bcf8b1aa74bd8135310e837a61e8232d4649c9eaad0e",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--applying-the-specialization-to-a-3-1d-lower-tower--13.tex": {
+      "sha256": "bad9fba12d5f0e360ec9bc4915d10e42abdcbce99ca43da352398b0135ae03ee",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--applying-the-specialization-to-a-3-1d-lower-tower--14.tex": {
+      "sha256": "3e2dd8c8009b3e3d112b1690f297d07b8289fc21730069604caa5d2357290704",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--transporting-representatives-together--15.tex": {
+      "sha256": "8e1a1c48374f50dc7af0b0de046386c7c6b5750445fe8088fab3c7b31e7e915e",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--transporting-representatives-together--16.tex": {
+      "sha256": "84e433d717068d0f4134aa7da70c961e9b2c4b2c4ee6910064fd435abfdc061e",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/coboundary-stacking-compatibility--transporting-representatives-together--17.tex": {
+      "sha256": "d58f492264b2e254e6ffd44db3c89e9348dc003b94785256320bb8a4ce0ce38b",
+      "used_by": [
+        "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md"
+      ]
+    },
+    "equations/four-dimensional--4-1d--1.tex": {
+      "sha256": "8ad7da29f2d76abe1f77bee0c2745b4d7ac2ec31170fe62e48c936d41ab82f78",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--1-p-ip-obstruction--2.tex": {
+      "sha256": "d9d9da18067ce913b25b1f0eeaa2e6fe3bfa06b1f7f2d35344437e7ca77d28a3",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--2-majorana-obstruction--3.tex": {
+      "sha256": "6d894d3142a70f70c7a315d4a8ea350916957d50c6b400dd5a483f475a7f2528",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--2-majorana-obstruction--4.tex": {
+      "sha256": "b3a1bebe26aa2ba4441f584c5c5bb1e2c1f8209ebba3736c354243cee582fdf3",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--2-majorana-obstruction--5.tex": {
+      "sha256": "bee5f983d61e1547c6e4ad016376690919be913e6dbb0a91306e6893885d7ee1",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--3-complex-fermion-obstruction--6.tex": {
+      "sha256": "744ae344710fd68bff789efad98e6ae2f51c7e9507be7e995d21e478eb13f615",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--3-complex-fermion-obstruction--7.tex": {
+      "sha256": "dc863ca4885547f0ac8e833da96730d087748ee6b7312827ff696d242b7f8e76",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--3-complex-fermion-obstruction--8.tex": {
+      "sha256": "1b935349b3cbf40890e7732ec7f82e0c2d4f3ad6277df7e144e54abf5dd6e594",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--3-complex-fermion-obstruction--9.tex": {
+      "sha256": "343752efa35fa05434b1f08e3bccb402b8623297fcbc584ab76987b84a4811bf",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--4-bosonic-obstruction--10.tex": {
+      "sha256": "60abf0887d0c1364c699481ffe242062eac8a607cb9c868cb88aea0cf51c5348",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--4-bosonic-obstruction--11.tex": {
+      "sha256": "c330be8fdcef1734f9e5762f626c9da8351a61f71c0c1a12435e68658b5a402a",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--4-bosonic-obstruction--12.tex": {
+      "sha256": "1a1549b16b2b2858eda4cd318016879d800b842b2f0ee11bfa6a516402b565ed",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--4-bosonic-obstruction--13.tex": {
+      "sha256": "5892334ebf0e268078595aa7ae1bf7b81545542a62c169dfd532abb48ef4b126",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--4-bosonic-obstruction--14.tex": {
+      "sha256": "cfa037f1669ecf1d9520b9fe39e05ca10140b5d8f8bc998c0a19075c6f6f2db1",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--4-bosonic-obstruction--15.tex": {
+      "sha256": "84822d4a554bd5a83f2b1279076adbd45c35237b625a604e6b8d968882c85466",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--4-bosonic-obstruction--16.tex": {
+      "sha256": "e091fa721cb3e86749ff1dd07447f8f41c07deeab6b630853b143cee0994848a",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--4-bosonic-obstruction--17.tex": {
+      "sha256": "3ce8cbb8eb417bbac4590cdaf7ad4e0cc2a7d0d453f775776487c5bfe5718c0f",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--4-bosonic-obstruction--18.tex": {
+      "sha256": "41ca5f067c88a01f14bc4935f2f3dfaa4120c49cf920ca452a39355cf128fde9",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--1-p-ip-stacking--19.tex": {
+      "sha256": "e2d0cb709c478e36b56736d9127a344ed375b951df38ed9cbd83532799c41a62",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/four-dimensional--2-majorana-stacking--20.tex": {
+      "sha256": "83eccacf6f6354f6c57612f8a781a71a44778741ee0e62af8f7523ca5bde1861",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--2-majorana-stacking--21.tex": {
+      "sha256": "d2148de8d9fa849a2fbfb72a3f586562806bd5d018524b519e46e8e110bce956",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--2-majorana-stacking--22.tex": {
+      "sha256": "52abc07bfd1a0fc6192861b4955efd933a0b5831e82d55c5fe8326fc2385ea9a",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--2-majorana-stacking--23.tex": {
+      "sha256": "6623c53bf710f05ebebd1655c293e5346322678e50f1a2b06733ee7a3a461a47",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--3-complex-fermion-stacking--24.tex": {
+      "sha256": "bb79e45638e70a4fe46b7dbd1fe6fe157de03a1f44e6b5c16aecfc5569cfb4a0",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--3-complex-fermion-stacking--25.tex": {
+      "sha256": "061a47ca9b22fdd1f2a667eb4e99c6c543cc838acae30e7434b573595d833223",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--3-complex-fermion-stacking--26.tex": {
+      "sha256": "7525eff25af2382affaf7b585927569fcc549a841a932ac7a73a6dcf3bf6ad92",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--3-complex-fermion-stacking--27.tex": {
+      "sha256": "1334507a8c777a57d87963499805bfc5ed242e4621b5bb1f7291ae0a122f73aa",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--3-complex-fermion-stacking--28.tex": {
+      "sha256": "b6d941f8394b8af8b27540dee1d3eda57d63dbc4563d3a5fc4e803a6c7e601c4",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--4-bosonic-stacking--29.tex": {
+      "sha256": "28767ef55cfebe3836ac20297a9314deb74d3e928a100ed9486aadfc1c9d3486",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--complex-fermions--30.tex": {
+      "sha256": "c9ab16b4eeac663cb394934a0d229775de862880265de8e3a47ca533d3333436",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--complex-fermions-and-majorana-decoration--31.tex": {
+      "sha256": "4f17ddec8f65974ad69d584c3c984000d9fbd1185a777695599cecdae90eb2ec",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--complex-fermions-and-p-ip-decoration--32.tex": {
+      "sha256": "82663ab91b1b9ca90c55dcadab9ba26a7ce09bea04e9e11d8fd7c9f13daf1ddb",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--majorana-decoration--33.tex": {
+      "sha256": "003b8ffba02b481932dfa373718aae2b1a0855207641c48293d609032c4c3dea",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--majorana-decoration--34.tex": {
+      "sha256": "edfe19a0047599e81f147d8453034eaa7c4d784542be2148fa20cb2129405d09",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--majorana-decoration--35.tex": {
+      "sha256": "ea7270c57b42e7a9c8df3ac1b8f27a803b1ba9a38c37d1c38a8e9a45f9cf0884",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--majorana-and-p-ip-decoration--36.tex": {
+      "sha256": "8738ea7a2f0ffa02db353c150df0f20350107c4fdce7ba4631693383f4c65385",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--p-ip-decoration--37.tex": {
+      "sha256": "3f475bd997b72a06f461df61eb40d91eac14a449f5d841e3f46ef5ef926bf4ab",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--carries-in-the-quarter-valued-terms--38.tex": {
+      "sha256": "9f06689201eee689cffe68e990c66ebab995abc13ec719f654e2e1f091c63108",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--carries-in-the-quarter-valued-terms--39.tex": {
+      "sha256": "d5b0480aaaa2f42b4a3745c3afc52a967f4ca1b79df246e39b0a95a0db839ce7",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--carries-in-the-quarter-valued-terms--40.tex": {
+      "sha256": "eadf0d9216952f5dc2b7b2d7403005fc19c93e1ea1f94a31ba41ea8836d629f4",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--majorana-quarter-numerator--41.tex": {
+      "sha256": "8980c23e66c645d1db1750f34fe208d31e518b6e1e5fce086972a90c00f0a2f6",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--majorana-p-ip-quarter-numerator--42.tex": {
+      "sha256": "9baade95c4d44ccd50c3a228afb145d699aa03f75813860e4faa03c31a934df5",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional--p-ip-quarter-numerator--43.tex": {
+      "sha256": "4a0746c5c8300e503ce5e79167761d3b0b67aa1ce1cdac2e5e26deab6996162d",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--1.tex": {
+      "sha256": "6ba08deef783c5bce3fb33af1bb535fcdfcb5fbeebd337e6a2ed24705509b001",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--2.tex": {
+      "sha256": "e24f394dc5f6d2a16bc880b5d12ae34c9e9ab032f0799cf5c1865641ecdf8660",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--3.tex": {
+      "sha256": "bafe8c1a1b5359c2a267540b77cf083fd59caa27e179a17cf1cd9ce29f224166",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--4.tex": {
+      "sha256": "b8ddfbcc14226471fd8a43d38d5eeaf1a89a397dbf5ba5a012c68c2bc607e3cb",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--5.tex": {
+      "sha256": "20d256443ea0f9eb90b55641a5eb2ebacace7b9d368e0f36a72bb8d9db543c21",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--6.tex": {
+      "sha256": "0efc5a4abfe8e3aa8a51e5a66a091ba8fc93cb1b3cb54f9056cb122683246035",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--7.tex": {
+      "sha256": "9aebb815549771b28ecfbd39a5839018334c1f831fe2bd0fed1c25a07755d32a",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-diagonal--1-p-ip-stacking--1.tex": {
+      "sha256": "2f550a86ba6f589b7db23a2846c079d1ed220046c6b079b1b024ca8abba684bb",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-diagonal--2-majorana-stacking--2.tex": {
+      "sha256": "d4585075006d3a54f581162069e97f788dfbac133e16a688de09664179301502",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-diagonal--3-complex-fermion-stacking--3.tex": {
+      "sha256": "1dbd904d48eae4194e70b0ad324dd15c6d33e17dfc03d71debfe95e471e1773c",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-diagonal--4-bosonic-stacking--4.tex": {
+      "sha256": "cf9a8f1d53c6fd26fd8cea4f3a69b0f6336b861bf0db5008bc7fad368dba0668",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-diagonal--complex-fermions--5.tex": {
+      "sha256": "60e4b33495f3beac83bfc1eda4dd2edb66d34150f5fdb2864fd96389e53d4138",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md",
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-diagonal--complex-fermions-and-majorana-decoration--6.tex": {
+      "sha256": "737f6e6984a2f893f19d73524b9a842138be76df27a25345f50ccebfca145f06",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-diagonal--majorana-decoration--7.tex": {
+      "sha256": "50e15d689b505c7804e818d4b9e3e6842b9bda4dec5f65d75dc858d09f652c6e",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-diagonal--majorana-decoration--8.tex": {
+      "sha256": "67f64db779d0059f50990ffdeac5ac82482d1f8bd36312ed2c74efb1239cb148",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-diagonal--explicit-output-gauge--9.tex": {
+      "sha256": "21a025b6eceb2758bcec820ac6b411fde565e3effd913e667ede14ae746903af",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-diagonal--explicit-output-gauge--10.tex": {
+      "sha256": "c356f78a5c8517ffa2555b67a3cae1e07659a328e773200d7eade7366f9265a7",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-stacking-gauge--output-coboundary-in-the-4-1d-majorana-stacking-form--1.tex": {
+      "sha256": "93a8adf692165ce1453b7e03db4f215fb87ad62abbbc0accf9b126aa7bfc23b2",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md"
+      ]
+    },
+    "equations/four-dimensional-majorana-stacking-gauge--output-coboundary-in-the-4-1d-majorana-stacking-form--2.tex": {
+      "sha256": "7d2a1ae36da8339737e8a692a36f572d4ba58b1314db5e390ce47b9bcaa29965",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--1-integer-decoration--1.tex": {
+      "sha256": "f395868d523650872a5591bb3619c0c31f59d48d10c49a85ac109684c37324c0",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--2-majorana-decoration--2.tex": {
+      "sha256": "3bd8bec4539cfdc5922d64fc2f944f221ceb3fc196be7b2e36039ac795d2caaf",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--3-complex-fermion-decoration--3.tex": {
+      "sha256": "6b067a091e580e4d02b0cbd002aec87a6705e7e5739fe7f0138df8f4e2eecaef",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--majorana-decoration--4.tex": {
+      "sha256": "1f5ffc47037e80e39b13f5892abc587320df03cac5260f3e9fd6b6613cf024f1",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--majorana-and-p-ip-decoration--5.tex": {
+      "sha256": "5424f03752780405cfd526bdc7df94d3a91bc834109e597f6bab8c0f5f544919",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--p-ip-decoration--6.tex": {
+      "sha256": "0460b0c6eac0a94956bcc8ac2093167dbccae27158ceced77c1b3a9d76dda99a",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--4-bosonic-phase--7.tex": {
+      "sha256": "07de6f980c964d1fa2f7b37d1c2d93fee994847898c16e0b73f9274a8d28d5bb",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--complex-fermions-and-majorana-decoration--8.tex": {
+      "sha256": "4989952455bc32e244f057cca1834576c7fe6e437d58099e2c7d25f35bf50440",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--complex-fermions-and-p-ip-decoration--9.tex": {
+      "sha256": "95058f6bc07fa88b67d2257233bebb9dd0cb15436494480fe827f057fadaad92",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--majorana-decoration--10.tex": {
+      "sha256": "49a7b7e5a06a64f7688852723ca3485b3228055673f6f39b089a7d155380625b",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--majorana-and-p-ip-decoration--11.tex": {
+      "sha256": "0fbf975bcda445596e5c9fa9743b7f0b8e73aa8bc6861dc07ccda2364a4174f2",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--p-ip-decoration--12.tex": {
+      "sha256": "8ceec2be7845aba6d4468ab29d3bf53727ad8fae08e22bcffa8b730fccc7fbd1",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--5-integer-carries-and-binary-quarter-numerators--13.tex": {
+      "sha256": "5a90d7fb77cd4c4326f7ac10ae225971c60f713231ec7934e169bbd920d6d7ce",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--5-integer-carries-and-binary-quarter-numerators--14.tex": {
+      "sha256": "352932847945ab1a2f7d07a8b9f8b131f228f4becb40fe68eb463bc301caf5e5",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--5-integer-carries-and-binary-quarter-numerators--15.tex": {
+      "sha256": "6fc08f3b9d4688c3992224d5aaf05852db5427fac58cf47cbac79d355245c34e",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking--5-integer-carries-and-binary-quarter-numerators--16.tex": {
+      "sha256": "77e7fac0b4951670d34ce703fd9d6ee6e425b93f3ca90d7e4e42c2750f891224",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/general-mixed-quarter-polarization--polarization-of-the-binary-majorana-stacking-carry--1.tex": {
+      "sha256": "8812c1efb744a17f3baa7773e00124d211790b692b4f999bdc313ba5bcad9593",
+      "used_by": [
+        "docs/formulas/GENERAL_MIXED_QUARTER_POLARIZATION.md"
+      ]
+    },
+    "equations/general-mixed-quarter-polarization--polarization-of-the-binary-majorana-stacking-carry--2.tex": {
+      "sha256": "d73d04620921a3faee1af006f2d120ae29da03a2cbab9ec8e1c5ca1ac47171ba",
+      "used_by": [
+        "docs/formulas/GENERAL_MIXED_QUARTER_POLARIZATION.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-obstruction--1.tex": {
+      "sha256": "b4f6666e2ceee201e96023153f51dbc596cb7ecd2540b09d8d565a8cd983d0ed",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-obstruction--2.tex": {
+      "sha256": "984e836bb578cdc767ccb56587ec8d284f5f2dc56df2d453034100026fb5f9ca",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--3.tex": {
+      "sha256": "9f3e8cc049720cfcff3fe8151b2fa0213ffd4d1882683a001d4794a244c2e1da",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--bosonic-obstruction--4.tex": {
+      "sha256": "d7d2d8a032987bfc7025be3ac90e4057ab5e8ada72ab193b43c1053e62dffafb",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-contribution--5.tex": {
+      "sha256": "2d6360d5273080faea9f782cd1aee6e228e74b00556d7c622e7e27b20625f1c3",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--6.tex": {
+      "sha256": "4676370e9706ceb7ba8a8d8060e652c8097f813ee5062127da23ceb66dc65e58",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--7.tex": {
+      "sha256": "7dffbf167e2863b58fb233fc07aca045ae97aff12ace0925fb1800f508e83939",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-stacking--8.tex": {
+      "sha256": "292057d5519c3cc38b6c1f251d73f5cf9d1a08c830dcfd3b7f47861a26fa3a14",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/THREE_DIMENSIONAL.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-stacking--9.tex": {
+      "sha256": "be6cb84c8aaa33c123fd5fab7ff1a212544278f9f9dd895b10dbf3e7991999e9",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--10.tex": {
+      "sha256": "778368e0bd895c6eefb1a0fa0fdbf54dfb1006c7eb5d5a0112c7fb8e6ec0d81d",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--bosonic-stacking--11.tex": {
+      "sha256": "065ee0332d1a6160c64c0437fa3eb4e5edec59d7e45a50bcc0e5d505290324ce",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-contribution--12.tex": {
+      "sha256": "980f544c0c3450eb15a17e3f6393dc8257d1b4ba854b3cf93a01d09e3e9e3183",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--13.tex": {
+      "sha256": "41f988c23b625671a37403e1e34dc2f48c41620c0df677c35baa5d5835e2d73a",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--14.tex": {
+      "sha256": "fb06707b71e078b11c9763b3c00c0b4a04eb30e5903073c240874e81ba0703bf",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--15.tex": {
+      "sha256": "b8246ae7db5b89b4eb5d986676f97919dbfa0f407b9b3297d4b1fb6f9a83b74e",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/TWO_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-obstruction--16.tex": {
+      "sha256": "7a54fbc107eb51c8c69f323b02ab87881f556b5fa34ec887e31a1f3714bcf390",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-obstruction--17.tex": {
+      "sha256": "41601a14136f71fa3d5fe6584fbd15ace070e81cb30ee9346bd73fbe5b7f22c3",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--18.tex": {
+      "sha256": "d01ac1c090178a1a72502d82c6f7a80d75ee0fda028a86b9dfa1a80b85cac4e9",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--bosonic-obstruction--19.tex": {
+      "sha256": "b68a17734f519e1275ecfb78b4303f16b676198b835d951fb0e2a645ea441b74",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-contribution--20.tex": {
+      "sha256": "465557daf30a48b2e24b2cd1881c551f7a54b489ab8b98c827129820d90550cf",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--21.tex": {
+      "sha256": "fdb2158fe26682a06f193fc47048c9eeccaf79de4f8e9ac9c0ebd37608c1cc67",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--22.tex": {
+      "sha256": "89cc7dfb14f29f9736eadee19bff5a9be52a1af0643382ab69c241b6a07cead6",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--23.tex": {
+      "sha256": "22636d30c1126bbaabd6c753ddbee6e0815ba955828a2e0ec212712e4453bc8e",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--24.tex": {
+      "sha256": "a6530c6920494f70c91f209e986ec1641e60406f0400088007b91b33998952e6",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-stacking--25.tex": {
+      "sha256": "6df9faa7da63b6062bc8a926b0f0c2526376f87a1cb895fca0823324082fc9e7",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--26.tex": {
+      "sha256": "50558d4c8491d646eb036aa40daa9bc513b4c43f9f891165f408bc3b7ed56e2e",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--bosonic-stacking--27.tex": {
+      "sha256": "1a4d1cd74f3571a09bbd852eeeb210b4adea0d798b9ea96af258bcf28a899f7a",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-contribution--28.tex": {
+      "sha256": "78554ce5081ceaf8068cb4c5f292f383a5373afef69771d250968d726d0675c2",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md",
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--29.tex": {
+      "sha256": "98f472aa54d295ed37da64ec5858e7d9c5a140cfce8e49fcaaa4a351e1b34c9e",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--30.tex": {
+      "sha256": "2566f25d4ab05723752673da5bd34cb81f8eaf1d339d387d7736127acbf05059",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--31.tex": {
+      "sha256": "43eac9b04d429417331813b114b762c9ce4b31e3458acc1ead678f9310b1c418",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-obstruction--32.tex": {
+      "sha256": "7f0c36c4b6f55fb03ec78e12f437fe5f98c3cdb0d492eb4f68c7d957fd92cf20",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-obstruction--33.tex": {
+      "sha256": "39e9b3c271cc4e8d5ba4e5f38c8a929b5de232bec3e76b8c2af70122a1cb8278",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--34.tex": {
+      "sha256": "8f7ff82157314e033cc8bd2a036a39e498c80a86b5e2b73c9d5f86d925d52a28",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--bosonic-obstruction--35.tex": {
+      "sha256": "3c3abbe5d7ab1cd3062c602bc7636f1fe00d49cd48b6ddf3b111f51728cbc749",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-contribution--36.tex": {
+      "sha256": "8ce7eac2cf67f92db5f0d2a3e8afdfce3ba8f12894d14d57004180d67cb0a46c",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--37.tex": {
+      "sha256": "fd68b84dd53cde041443ecf0d141d7d0a7fdba08176a0d8a8fb318762d57055c",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--38.tex": {
+      "sha256": "5d7877830a644c595c8292282d88a93de8058a5e29e67298a4009251ed6c8d2c",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--39.tex": {
+      "sha256": "b29ae3cf524346e6cdbe8d649a817192d8664b1f8646997ce8b11a5403a3c2cd",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--40.tex": {
+      "sha256": "d41f257775714243ef22cd16f8fb0c359f46613b729480007ae3f5b432516396",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-stacking--41.tex": {
+      "sha256": "34710f6058ec5c61202bdd7e5a894422f94d53c4f2b5d4b4740c8a228d53f703",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-stacking--42.tex": {
+      "sha256": "a76b21c76bfc3d4c03676155a1a0fed11bde4030803896f4b514f16395a82b86",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--43.tex": {
+      "sha256": "aa73db702100b5f6eaf107331e5af1261221808e1c2581571309886dd239d7c1",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--bosonic-stacking--44.tex": {
+      "sha256": "298361cd995af2dd17dfe1024713fb00c864f3dab542ee39f3680981e8d4f75b",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-contribution--45.tex": {
+      "sha256": "542bbec0bc8044219dad2b71c0bce929c457cd2c33157aed7ac67c1ee64486be",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--46.tex": {
+      "sha256": "c28cc9adb2d12507820363591e52e423a79e53f045ba9d538b24979ddfaaf0be",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--47.tex": {
+      "sha256": "4d2cb9c1d2236be89effb17770cae1e8646eb3aa376f090e046b9ae48e2389bd",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--48.tex": {
+      "sha256": "13a4915f56eef966b34d41c3531484a3fb0067a78ed86ba10a65075c37e2e54f",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-obstruction--49.tex": {
+      "sha256": "1742b3b1b142275d52fea6d3be1eecad2b892afc77c9c38bc519c7f425e625bf",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-obstruction--50.tex": {
+      "sha256": "3a146658b5ea05dee396143c2480b5374f9a581900d8e802a39d0b705bc904c0",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--51.tex": {
+      "sha256": "79631b9971a95e89e07c77f2dee56c7a2e2c4161f86d1c0ba6638f8c3dad6c9f",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--bosonic-obstruction--52.tex": {
+      "sha256": "1af5d6eb975cba0a1c71cf72c07cd664e97534db5f746f0de8a7852c20d24eac",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-contribution--53.tex": {
+      "sha256": "33c2bc99f9b98dd20de590132110796a98dd83677af9e443e787e37adb7a68f3",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--54.tex": {
+      "sha256": "397b1f6f2118c69b2d381d29ad3136a226e74a02644f6fe2d631b81e1483426c",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--55.tex": {
+      "sha256": "7e6626750a89392742766000fd801229d144a8c28147de9801db163d473b53f9",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-stacking--56.tex": {
+      "sha256": "e335acdd77741a78431addaa725ca4b832e8b57d481b34cceb936a28482b9d9d",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-stacking--57.tex": {
+      "sha256": "b76d477ca0f8c0a146c44d0070a464e8052004c0e3dabc0dfd83310992fa78db",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--58.tex": {
+      "sha256": "719f1b0af5a14716494e4a00c88707e66b3cb32e7f5846d79d38c1885267477d",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--bosonic-stacking--59.tex": {
+      "sha256": "014ba79e474568b8cc0f76f51d6d511227f759b167f214f04ca961e5570c6a30",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-contribution--60.tex": {
+      "sha256": "05202491864d2e4e601e152418edf2c8f200aea212f1cc9cd4467919886dab5e",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--complex-fermion-majorana-contribution--61.tex": {
+      "sha256": "f120013ec2b43386e3d4125ec9d065aa44cc0060268f3e9e67dd97d33ab278a3",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--majorana-contribution--62.tex": {
+      "sha256": "f9672415ad5c1a236371aaa2a813c44cca7c425557a650fffa0cc64a933a4c2a",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--shared-mathematical-word-operation--63.tex": {
+      "sha256": "eaecc8b46ecb7a3f65a7e27b6b4503f3173e106eef65af26a0f99985331f9405",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--2-1d-phase-coordinate--64.tex": {
+      "sha256": "984ccbf18df82a6b39784224d782e665a01e5ed0caf61efe7950be589b502a3a",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--obstruction-transport--65.tex": {
+      "sha256": "a125ef09030ebb9dd4536ca956e33797b9a9a26231a45bb08fde5da9227076a9",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--stacking-transport--66.tex": {
+      "sha256": "61b508c9f6833df3fda7772377e130e0866b14783b27101158d6de90fabda71f",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--3-1d-phase-coordinate--67.tex": {
+      "sha256": "6c1b1d2b376d8300d4cda1701a56a7fd7bc40e41ed775d01781b7cabb5c2ab59",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--obstruction-transport--68.tex": {
+      "sha256": "74c62b012ad59b7f701d591cafa330083d585f5e40e6518f14c8b6c4be7a27a7",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--stacking-transport--69.tex": {
+      "sha256": "70802183b6a04607d148bcc02da048aa3e0db87f1d60ee958ddcc000b7a49e78",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--4-1d-phase-coordinate--70.tex": {
+      "sha256": "088d4c65ab9f5e35cc6f633be2305603be6e6a7462ba7362d5e5ad514f76bfc7",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--obstruction-transport--71.tex": {
+      "sha256": "49ab4b2c223a75a00399b78ec811bee2c20973f4086f85f0be31db69633f8e86",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/majorana-and-endpoints--stacking-transport--72.tex": {
+      "sha256": "cd45827e09c719ce9aac85a9985a78676f96d03f624aa0c53d2b021e8920e2e2",
+      "used_by": [
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md"
+      ]
+    },
+    "equations/operations--differential-and-local-coefficients--1.tex": {
+      "sha256": "2c7c6829a5fdc3ab15e3e832fb2286e1c0a0cdf1f3a82c04e1369d42fe2713e5",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--arithmetic-and-carries--2.tex": {
+      "sha256": "3b6670ed5911da60ea08c8e84f8fcf10aa5a55adde1ebbf4329cf7cf1587cd8f",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--arithmetic-and-carries--3.tex": {
+      "sha256": "d94a99940d1a22ad5d901a2fb565e4473be6f3a18522640dff06065b8cd580e4",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--interval-cuts-and-may-steenrod-words--4.tex": {
+      "sha256": "1b3fc568d387b3966a4ecbec3ba786f2af737693cbf651539f1f8917a1a78891",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--interval-cuts-and-may-steenrod-words--5.tex": {
+      "sha256": "20b7faeafeb3d38639918a84d9e764029e11eb1d34b55ff90efacfd3973082c9",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--signed-higher-cups--6.tex": {
+      "sha256": "9a580970c328e0e18364390c4d463b0a056a711323a42ff26a467db615fdb60a",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--signed-higher-cups--7.tex": {
+      "sha256": "f9d55febdcba219f6e9c2d8135c7f0a06054373c74eaef4a5385cdbad1da546b",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--signed-higher-cups--8.tex": {
+      "sha256": "7affd6b6c0986c6736cabcc53e6bb96ee2b2f3cf6d3f035873b878fbfe186259",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--parameter-integration--9.tex": {
+      "sha256": "b61f482871d9bbbfe6903837fe567068d8b1c04798fdc8e308f77771d9fac556",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--parameter-base-fill--10.tex": {
+      "sha256": "77b2a0983d23c1b38dd17c14b4de5fc88a47d85e0a4f3811ade327111e90cbea",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--parameter-base-fill--11.tex": {
+      "sha256": "fa53862ea2a5966a4be92fb968a083bbc449ebf4b2205d30a3666624e255925f",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--parameter-base-fill--12.tex": {
+      "sha256": "e480234b4a1dae68d609ac84967869d31bf6f9ff879f2b14c98201ba21a959b8",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/operations--three-factor-grid--13.tex": {
+      "sha256": "c0823ab6b2e12f141f6943820058547809bc28aa568f70a48db9940b77c60b26",
+      "used_by": [
+        "docs/formulas/OPERATIONS.md"
+      ]
+    },
+    "equations/quadratic-refinements--the-quadratic-cochain--1.tex": {
+      "sha256": "b2e872da1847362a407c1481e1dbb47a95068c148ecfc1cae518d97944e77ac6",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--the-quadratic-cochain--2.tex": {
+      "sha256": "94ed140948862c356f4123988ff3718e6ae4ae6f9fa05e32d7f294b73175d8fd",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--exact-addition-and-lift-dependence--3.tex": {
+      "sha256": "f525fdd7b2461dbcfd61974f4159c3907f9dfc97cf7d2c0b70b1c37a603ea95e",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--exact-addition-and-lift-dependence--4.tex": {
+      "sha256": "d168e594aa84f8bb2bb8554ebd12c9764e948bfdaf9018709c0cab873e19669c",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--the-quadratic-part-of-the-4-1d-obstruction--5.tex": {
+      "sha256": "bc516294324923b71ecada1944507398f1ee089707e1193cdc76efd3095fbc60",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--degree-four-variation-on-the-physical-lower-tower--6.tex": {
+      "sha256": "747d9d76ed88aed0ec90a7b13428233eb9aed8ac236532b928ff457c7c96d41c",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--degree-four-variation-on-the-physical-lower-tower--7.tex": {
+      "sha256": "f44ce69d461fa11596a1a7b200a49cf10245bdc1819fe40f639747cec3802c17",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--degree-four-variation-on-the-physical-lower-tower--8.tex": {
+      "sha256": "22375f80701141a6635c13162e1b84831a210ad9529a21520f19d0a9eb20ab0f",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--an-integer-lift-compatible-with-the-polarization--9.tex": {
+      "sha256": "f7a02ab6878322351173f6f0cdabb6a185f0010293a633945271d029c2031d1f",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--changing-the-lift-in-the-terminal-product--10.tex": {
+      "sha256": "59d9c57a737be6f7b91e14f3d5ebfcd8a60c3a30e906e3460ebf15bd5dd27a00",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--changing-the-lift-in-the-terminal-product--11.tex": {
+      "sha256": "2ee9f189b11d53121e77fab7d9a1996ebe21fac12648a120216f2cc73501cca5",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--changing-the-lift-in-the-terminal-product--12.tex": {
+      "sha256": "f7d49c91039aa307fd32acd33410a3b6a92b2e85a1e1ad7e4d0e5b22fcf47841",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/quadratic-refinements--algebraic-proof-of-the-variation--13.tex": {
+      "sha256": "32649280788909e6864dc9e98dbf686478110166b0d6d5f4195f7ba8680a2078",
+      "used_by": [
+        "docs/formulas/QUADRATIC_REFINEMENTS.md"
+      ]
+    },
+    "equations/representatives--3-1d-earlier-complex-fermion-coordinate--1.tex": {
+      "sha256": "13df6e6ff5f8a3edc1bc75104a002913630520f9a6f96d22d40011cbb436a243",
+      "used_by": [
+        "docs/formulas/REPRESENTATIVES.md"
+      ]
+    },
+    "equations/representatives--3-1d-earlier-complex-fermion-coordinate--2.tex": {
+      "sha256": "1b96ca54e6476411062670283966cdb856ff3f6be36174b343a1d7574dca3162",
+      "used_by": [
+        "docs/formulas/REPRESENTATIVES.md"
+      ]
+    },
+    "equations/representatives--4-1d-historical-source-convention--3.tex": {
+      "sha256": "08a5b615fb5d6000ec7ffc8eb3457b324aae30d1c7700f015a4e9566ab26f50d",
+      "used_by": [
+        "docs/formulas/REPRESENTATIVES.md"
+      ]
+    },
+    "equations/representatives--4-1d-operator-phase-in-the-current-guide--4.tex": {
+      "sha256": "81ee37144c60b84bda404095331d3ed1f0fc1f4d32fb43057aea794d399c71f5",
+      "used_by": [
+        "docs/formulas/REPRESENTATIVES.md"
+      ]
+    },
+    "equations/representatives--4-1d-operator-phase-in-the-current-guide--5.tex": {
+      "sha256": "ad51a61b593d97850d195471e59c401d7616b56e6f5caafeb491abdaf16e7c0c",
+      "used_by": [
+        "docs/formulas/REPRESENTATIVES.md"
+      ]
+    },
+    "equations/representatives--terminal-phase-changes--6.tex": {
+      "sha256": "48f98478a9e44d4d478a598225c9847724b6ee789df72121bd2f074e755bb5ea",
+      "used_by": [
+        "docs/formulas/REPRESENTATIVES.md"
+      ]
+    },
+    "equations/root-power-presentations--the-presentation-theorem--3.tex": {
+      "sha256": "98ed0e5255fab3030fd9ecd6051a1483f8e9540cbfc0324d6878d4ca3194432a",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--the-presentation-theorem--4.tex": {
+      "sha256": "941a788b21ccc07bef2f3b60d968a48bd4030a91ba073962482b7cfd8506291a",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--3-1d-choose-the-basis-around-the-one-distinguished-t--3.tex": {
+      "sha256": "f408f5e515b382637a2fd527f798999387e26d4665a70bd60a921ea20d740474",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--3-1d-choose-the-basis-around-the-one-distinguished-t--4.tex": {
+      "sha256": "2e029cbf047bb27b93e6951ff08e00a965739c30db876bb6e2f656119e53566d",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--3-1d-choose-the-basis-around-the-one-distinguished-t--5.tex": {
+      "sha256": "092bd3ae6d1cb318c00a8abae7595ed7c4bd6ddf407a9b9fcb157a407c9550b6",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--several-two-primary-p-ip-roots--7.tex": {
+      "sha256": "72b55fa06f824d9552aca341e03abe31f202fcaca3e9489cda73be29ab1dbcd0",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--several-two-primary-p-ip-roots--8.tex": {
+      "sha256": "18c5f0f0ea13ebd2b7181ad68ac8d97ddf0a3874a7824bd5a4c94b37960de23a",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--several-two-primary-p-ip-roots--9.tex": {
+      "sha256": "6ebda0a5837690824883bce43079003fb70e520530f034239c73348783cd11ad",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--several-two-primary-p-ip-roots--10.tex": {
+      "sha256": "072114b797ac22274b0df85c320397d9b06b5569e3b9b40091ee449f0772a15d",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--odd-p-ip-orders-from-doubling-and-a-bosonic-comparis--11.tex": {
+      "sha256": "35bda22154ee5542ff0b9e387e267a7ef2adcd7e40f402821935fe7ac67eff83",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--odd-p-ip-orders-from-doubling-and-a-bosonic-comparis--12.tex": {
+      "sha256": "3249b4c77c4f17f2fa48cea89a6fa3f7cef87da80e576bcc0115f068ad27c1b5",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--odd-p-ip-orders-from-doubling-and-a-bosonic-comparis--13.tex": {
+      "sha256": "480b912a20399d5f390ca2250474d5c315805a428bfbdd165fe5d65da12a9fcc",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/root-power-presentations--equal-input-root-products-versus-strictly-self-only---14.tex": {
+      "sha256": "a454a661855fb943656f12377883557fe395c1edd2c6a47b44529a08f98e5631",
+      "used_by": [
+        "docs/formulas/ROOT_POWER_PRESENTATIONS.md"
+      ]
+    },
+    "equations/source-operations--continuation-to-an-open-degree-three-cochain--1.tex": {
+      "sha256": "5b591573f04b4a145d032db68db1eccb0648dd5d4aae43f4cee47e5c615c8a1b",
+      "used_by": [
+        "docs/formulas/SOURCE_OPERATIONS.md"
+      ]
+    },
+    "equations/source-operations--continuation-to-an-open-degree-three-cochain--2.tex": {
+      "sha256": "8f0406b6ad7c2040a2bdf2fa83b131c067c8b2915fcc969ec8c0119471562ec7",
+      "used_by": [
+        "docs/formulas/SOURCE_OPERATIONS.md"
+      ]
+    },
+    "equations/source-operations--closed-degree-four-polynomial--3.tex": {
+      "sha256": "670b4660ca2fd2017ddc9d35df6cfb0318c90ae3e33803c6e866337e3f6e40c8",
+      "used_by": [
+        "docs/formulas/SOURCE_OPERATIONS.md"
+      ]
+    },
+    "equations/source-operations--integer-layer-contribution--4.tex": {
+      "sha256": "847e3b103d32b0453a3140cee46e4f7f84846f9e8f8a443399d15c5670013ff6",
+      "used_by": [
+        "docs/formulas/SOURCE_OPERATIONS.md"
+      ]
+    },
+    "equations/source-operations--integer-layer-contribution--5.tex": {
+      "sha256": "e9f0748b216c832b35034972b12255e13a98975dc0aba16ebf073110008e744c",
+      "used_by": [
+        "docs/formulas/SOURCE_OPERATIONS.md"
+      ]
+    },
+    "equations/source-operations--integer-layer-contribution--6.tex": {
+      "sha256": "c74c8ebc9e04dbed9357e8594ebf3bf16f49b7427ce4a89b23764e3b436c2e06",
+      "used_by": [
+        "docs/formulas/SOURCE_OPERATIONS.md"
+      ]
+    },
+    "equations/terminal-transfer--finite-formula-for-the-stacking-correction--1.tex": {
+      "sha256": "02add0a3c8420e0910514b45cb7d6b0f998f35a70b35d55877e2b23268839e74",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--the-binary-kernel--2.tex": {
+      "sha256": "a2ca05611ce7ef4196e20d27ce2c171361b01e665884f8ee6f03b944ad7ed1ba",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--shared-background-coordinates--3.tex": {
+      "sha256": "b62d6bb780cf312b0e9dc63cb0947e6c540bace1964fa3612384931fcd9ba8c8",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--shared-background-coordinates--4.tex": {
+      "sha256": "7a0607851a4862763629386cff300f1f73c44c3bdaa3e1529e6a03664ba4328a",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--shared-background-coordinates--5.tex": {
+      "sha256": "c193786b90f95cb22d0f421cdc5661bd72a39d87d87929caaa889fd027622004",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--the-tensor-coefficient--6.tex": {
+      "sha256": "de133cb22afe92bc5c1e817ff503f4758e82838f6c01ea04fb7a5a9972f1c65a",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--background-degree-one-contribution--7.tex": {
+      "sha256": "1383dae25f545b2152587ef74706992a9982b889592a38fd580f6c0df9679921",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--background-degree-one-contribution--8.tex": {
+      "sha256": "c04e08bb473eb82c27a683407a5ffc59f22a7c187d0fedf3b891d4bfe5babd36",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--background-degree-zero-contribution--9.tex": {
+      "sha256": "51819e4960ac82de51a55f732d95082db4eb41d282a19f5bb7e616f2b56558f6",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--background-degree-zero-contribution--10.tex": {
+      "sha256": "8bbd53fb2d082404bd4a28f37fa7944ba88a7c29f442927c8d3ff94de11c0e58",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--background-degree-zero-contribution--11.tex": {
+      "sha256": "d5d288ae55d40780d2a0e3c26adb3d84d267edf508259976b33b7ed4b08d524c",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--the-balanced-integer-carry--12.tex": {
+      "sha256": "5cdd02cdb48c83badf2e6a7b1be9d074036b73fb6290440978d5473dc8159d07",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/terminal-transfer--the-balanced-integer-carry--13.tex": {
+      "sha256": "f7668f6b56dee442940db8b87f6460f8eb0598200f5912f0fccaf1798f4387dd",
+      "used_by": [
+        "docs/formulas/TERMINAL_TRANSFER.md"
+      ]
+    },
+    "equations/three-dimensional--3-1d--1.tex": {
+      "sha256": "9f9af291b96ab6a9dd8965bed3faa4d68aa5c5c8a9bd7e249feb8eeb51187854",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--1-p-ip-obstruction--2.tex": {
+      "sha256": "04e0ab50b72058a681c063c341c260a10466f211205d87b8876b79db995f9ab2",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--2-majorana-obstruction--3.tex": {
+      "sha256": "2a94441d339c1d0b9f992efe3e23d12fdaccd79c14cc7e666fcfedbd340b599e",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--2-majorana-obstruction--4.tex": {
+      "sha256": "f0cd6a8c0251fb50ef8599d6edce3a2d67f401794e08990f16f9b0338df1cc55",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--2-majorana-obstruction--5.tex": {
+      "sha256": "1f2a6d8817d4c6d5af7f5b0a4f691c4dcbeb1f6d1b5f967f590e4e05f078a137",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--3-complex-fermion-obstruction--6.tex": {
+      "sha256": "93cd288d31b6b621ea8ab540d4b197f6d990f2b51bbe5671cd0cdb59ccd8110a",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--3-complex-fermion-obstruction--7.tex": {
+      "sha256": "0a9dd80675bfecf165bce7d7195bf447f051449a00c8646bc266593c70f101b2",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--3-complex-fermion-obstruction--8.tex": {
+      "sha256": "ed7fbeba82deacfa78901be4083c8d87e221a3eef43d24ffe297c808422a41ef",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--3-complex-fermion-obstruction--9.tex": {
+      "sha256": "9e062c24ec0c1b3cf9e8c9436d92160c4048d211110e4ed985bd776b90b802ea",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--4-bosonic-obstruction--10.tex": {
+      "sha256": "54b1c28eca885ab771847999b30b430eb01d3c908c2cee4bae0940c64b0eeff3",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--complex-fermions--11.tex": {
+      "sha256": "a4ec14cdc7ca48d3a65e9711319e899b5e19141ba7093d32a309d0c4c1cae7a1",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--complex-fermions-and-majorana-decoration--12.tex": {
+      "sha256": "18c41a22f85488bb3c00a023d0b11f5cd880b4c4984d59c43739e5c25c6f52df",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--complex-fermions-and-p-ip-decoration--13.tex": {
+      "sha256": "73feb2dfe206bd1ab071c4dd792682142951d8daf4408d90217e548adc13cff1",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--majorana-decoration--14.tex": {
+      "sha256": "66dae5e8f71954dd9bde95b3c07a4a605f8dd010c15571359dba092164410b65",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--majorana-decoration--15.tex": {
+      "sha256": "04e53610e66da6f4b01cc43031e3265b53cd60f2840683dfc0ccc51113d10724",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--majorana-and-p-ip-decoration--16.tex": {
+      "sha256": "ed841dfdc25d32c2bf1b06c1a9571d1522e6c1c357e21321a40f429721b535f6",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--majorana-and-p-ip-decoration--17.tex": {
+      "sha256": "5e7d8ce791c9f7b977940a2ecba0a9c7f3067321e178e04dd5fd5dd118757cb2",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--p-ip-decoration--18.tex": {
+      "sha256": "30529840472aee359f499744ca45cd7bb1c569c8b9df53fc888460ba0d7fff55",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--p-ip-decoration--19.tex": {
+      "sha256": "835a87d34a47d7fe165a77e6e9b48a3a73b80b7dcf4846e90de55e5d9d729975",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--2-majorana-stacking--20.tex": {
+      "sha256": "4adbadb5c5ed09eb1c7dd5cb8d032d154524807514b76843db70cbae3fa519b1",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--2-majorana-stacking--21.tex": {
+      "sha256": "9820af3084fea8c0b315f027254702709727490e1639a5e06e47f284ca957808",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--2-majorana-stacking--22.tex": {
+      "sha256": "0214086b6e886c0becb55d2a09c1d03b29ff5bb9732676cc56516caf0f47ffad",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--2-majorana-stacking--23.tex": {
+      "sha256": "539dcc53b0b6cf8cd63005bbf03b7fca05ef81081407e1becd3aa3dbf6e35609",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--3-complex-fermion-stacking--24.tex": {
+      "sha256": "e9a0c15aa57b2f92e7a976d19fa9b3b738f73db5ecf212d7e4778f847119cbb0",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--3-complex-fermion-stacking--25.tex": {
+      "sha256": "0b0bd72c9d46c112faf51dd27b8b4c585547afdc36c56d0227370704ebcf9aa4",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--3-complex-fermion-stacking--26.tex": {
+      "sha256": "d409a2b9ace7bb3bae21c9599f84b3c4c8c48ed92ffcd57632a1211dee0fd800",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--3-complex-fermion-stacking--27.tex": {
+      "sha256": "ddd2dcf8614b0c6547eefd205bd70259ed1411bff0d517195ff83bf7db2bb49a",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--4-bosonic-stacking--28.tex": {
+      "sha256": "64a94e2b3f512a49992dcbc28b2b382ad747e13144c8476976f67ddcc2322a89",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--complex-fermions-and-majorana-decoration--29.tex": {
+      "sha256": "822e441a1f81cb7f8f5070f95fe67bb66c234afee5fb5e483378491ca6c5c334",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--complex-fermions-and-p-ip-decoration--30.tex": {
+      "sha256": "64109302a6b9e5c13b8051ab2a1dff32f835611accd87ca9072030d282292800",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md",
+        "docs/formulas/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md"
+      ]
+    },
+    "equations/three-dimensional--majorana-decoration--31.tex": {
+      "sha256": "ac8b30635200a7e290e8bd4d17312afd3814af373129708fd6993dc01b32d4ff",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--majorana-decoration--32.tex": {
+      "sha256": "3ec7df0d22553148ca8c6d432c8aea03a19cb051e1edc3dd3c2e1ed83ee7fbfa",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--majorana-decoration--33.tex": {
+      "sha256": "516256c8d1aa43078a3c7fd4abcb272e0b3cbb6a6eadcb79421fe000d0a69534",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--majorana-and-p-ip-decoration--34.tex": {
+      "sha256": "116351bd37db6718a64a2433e1cb945085fc933d533e605b968df7b1a72e73e8",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--p-ip-decoration--35.tex": {
+      "sha256": "1d1bfd75da35ad2fe0376569a99c7629994e9db994af1b0db82f7a821fa6daa2",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--physical-face-coefficients--36.tex": {
+      "sha256": "c966a0dd98cb445b86aaca4eff05eefdda9a54891cfe64e52498f523ec897d33",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--physical-fields-carries-and-arithmetic--37.tex": {
+      "sha256": "148f4988b5f9d059251083278bc0fa2513cd928f1251959b96c3c9fa8405d002",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--physical-fields-carries-and-arithmetic--38.tex": {
+      "sha256": "32d0ee87532989736d34dfdccf9c6f659ca7fa57e27007f56a85fecca9ef6240",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional--the-finite-phase-polynomials--39.tex": {
+      "sha256": "8ab384cf11f10ad96f0946293f35198af97d237672827db2d6fd645af90aa746",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
+    "equations/three-dimensional-cf-exchange-reduction--general-3-1d-complex-fermion-exchange-reduction--4.tex": {
+      "sha256": "c7c7a7fa39c7ec4ffc58146d8627fbcc23fae791a448dc331b76f9f7d7a9ef3b",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md"
+      ]
+    },
+    "equations/three-dimensional-cf-exchange-reduction--general-3-1d-complex-fermion-exchange-reduction--2.tex": {
+      "sha256": "48981156022578e6f565032c4f6444480450ee8fb5055fefc2d952097ed770d1",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md"
+      ]
+    },
+    "equations/three-dimensional-majorana-self-stacking--why-the-intrinsic-word-terms-disappear--8.tex": {
+      "sha256": "c633aa993ffaf506cec8d0e0dd6ed5db51a39799008793e29a0912e54862d658",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-majorana-self-stacking--why-the-intrinsic-word-terms-disappear--9.tex": {
+      "sha256": "7b690ae33180da5ef191ca44daf2fdff0d64b0b937472b401c47175cb72da55b",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-paired-representative--paired-phase-representative-in-3-1d--1.tex": {
+      "sha256": "d842250c140a50294b4c00926f5c9ca133cedeb582445a74e76b1093e81b6377",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md"
+      ]
+    },
+    "equations/three-dimensional-paired-representative--integer-characteristic-phase--2.tex": {
+      "sha256": "a97689f04f6d537461610265bcd71d48ee31b9806bcdf54f7d6a33f3935acb8b",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md"
+      ]
+    },
+    "equations/three-dimensional-paired-representative--integer-characteristic-phase--3.tex": {
+      "sha256": "1454b3b341dcf5a182a10df5279f8d83b58fe6a23b5e54a54fbdbb311c513a97",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md"
+      ]
+    },
+    "equations/three-dimensional-paired-representative--integer-characteristic-phase--4.tex": {
+      "sha256": "467de6feda56db0be3b245af94b1ea76065f81edd62f954d6b27825e21cefa47",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md"
+      ]
+    },
+    "equations/three-dimensional-paired-representative--integer-characteristic-phase--5.tex": {
+      "sha256": "d4f16c10d962084ed34c06ae48cdb82003a691b5a00eaf642d4184b31ae9c0f3",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md"
+      ]
+    },
+    "equations/three-dimensional-paired-representative--complete-output-gauge--6.tex": {
+      "sha256": "ab0c3cea1557dd4f07ee997bb6b86e884c606e492fcf321821ead1de4f732365",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md"
+      ]
+    },
+    "equations/three-dimensional-paired-representative--complete-output-gauge--7.tex": {
+      "sha256": "3feae28fa11febb38e437a9c0ec50fe97b14d5ec4cdcc1a22b2b335e8fe6084d",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md"
+      ]
+    },
+    "equations/three-dimensional-paired-representative--complete-output-gauge--8.tex": {
+      "sha256": "fa617dde4c839281a0aceca2247f6ba5f0ac96f6fef97bbbd1151b13cb93f8e5",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--1-p-ip-self-stacking--1.tex": {
+      "sha256": "57d028f51946620148abc2f005b2e237694063c7e839a54f6d74475f19e96531",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--2-majorana-self-stacking--2.tex": {
+      "sha256": "3a34ced495de77feee28bebc92a373ab064819c4e3cd71594ddd8603ed68a8bc",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--3-complex-fermion-self-stacking--3.tex": {
+      "sha256": "c46ca94783946a3091395ad46404d55c61ab21f8fe213947e9926c9106e02536",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--3-complex-fermion-self-stacking--4.tex": {
+      "sha256": "c464422f7a1d857d9e80b9b93d887a7782f8c7407ad2fcd3e217beb319da1657",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--3-complex-fermion-self-stacking--5.tex": {
+      "sha256": "3b9827f7cbc3cf9257b07dfb4037f53ab424d369ae1b701b2bfd4a7b47e440b0",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--3-complex-fermion-self-stacking--6.tex": {
+      "sha256": "555d6663329e7d7a968dfdfa1895d55c35639aa891113d1a30e8743aaaf38aef",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--7.tex": {
+      "sha256": "7edeb1d832d1e6bcb8e5e594ffe37ef96d6243183cb47c35472a6573ae2adaee",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--8.tex": {
+      "sha256": "f039bb1463f291049a18ca519f3e37ea97626ef9df3feacfc7254471e742da69",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--9.tex": {
+      "sha256": "850d9ded3a9a685a57f9c2eb0e203426de522ca59c7cd555d1fdf6e12ee505cc",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--10.tex": {
+      "sha256": "96c52ed7fb31f815f811714a8974fd103b289fc997896e0ba9a010a0a2b49fc1",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--11.tex": {
+      "sha256": "e9f45e004e836fbf8863b9ed9830ffde895b458f4365dc0988dfc1f4f0c8f075",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--5-bosonic-self-stacking-of-the-canonical-p-ip-torsio--12.tex": {
+      "sha256": "600c330451e832ad369a89a0c6755add8b861f4a2f19b8f2092aeb0e49ec30f7",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--5-bosonic-self-stacking-of-the-canonical-p-ip-torsio--13.tex": {
+      "sha256": "2d609de8e6d106afc4d76e11862ef7c8ca2d5a8436f36829ba2e2a8cf0b94a70",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--5-bosonic-self-stacking-of-the-canonical-p-ip-torsio--14.tex": {
+      "sha256": "092ccab1148f3660baa9ca3df2a09e6e93deb2c467864c395c8fb0d8f144eeda",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--complex-fermions-and-majorana-decoration--15.tex": {
+      "sha256": "17f31e56dff6264e4e08b2eec6a7843091d9448942085a9832223d75bb7cdc84",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--complex-fermions-and-p-ip-decoration--16.tex": {
+      "sha256": "45bd06680073c6fea966c9141b7f8781bbe2b06b4253b138b88457576b4d2071",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--majorana-decoration--17.tex": {
+      "sha256": "daa0c99cd33f625016047aa7d19cf1b0e3fbdb090f98f862994a53514d226e7d",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--majorana-and-p-ip-decoration--18.tex": {
+      "sha256": "4525e7e98c27c95cb9ed7e399427d36a038d24cb896e24a03abb58adb9ad5550",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--majorana-and-p-ip-decoration--19.tex": {
+      "sha256": "2278883c30292ad557ae4636c379ff51821c39130f51d27f1ff2eaa76e7b3a47",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-self-stacking--p-ip-decoration--20.tex": {
+      "sha256": "193151a909f19e74c6553f2b5655d974e4f644d23a77c5bfff7f2d9beb1e4c17",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--bosonic-obstruction--1.tex": {
+      "sha256": "8c59a94719aa149665363f88a1c6c9375dd721a12e19f35ee002e05f0500c6e5",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--bosonic-obstruction--2.tex": {
+      "sha256": "2802d43e56875836b60bcc73b833ccf80f7848f674e526d796d700e3f22fb729",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--bosonic-stacking-correction--3.tex": {
+      "sha256": "b7a2ad66e84ab6c27e6d0c65d2ba8ba96ba0b4e61aa66ae62fa39be912af27ee",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--bosonic-stacking-correction--4.tex": {
+      "sha256": "e74ebbdbc207103b083d8f2c86ce312767c0879bd618060432de176d51a8d5dd",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--polynomial-evaluated-in-both-formulas--5.tex": {
+      "sha256": "d938de6468e095005552cd3d9fb01cfcb6fb24453f80ac65b4efd2f3165b5f03",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--auxiliary-integer-residuals--6.tex": {
+      "sha256": "a8d94548011d99a69a3f4f0577980f563c0f4d019e67ff2ffe578ff202ed81bc",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--auxiliary-parameter-fields--7.tex": {
+      "sha256": "6e11d69fa462e2fa27e6cca91eccad02303d1355dde621805f95ccfeb5346eea",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--auxiliary-parameter-fields--8.tex": {
+      "sha256": "f4127e40ca5d3d4ec4b5f6ecfbf483272f4ebb70b4116c68521ccc140c78baf1",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--auxiliary-parameter-fields--9.tex": {
+      "sha256": "7368cdfbb5ea91443c3c99b9695fbd633a4e59f5c328592748cba0c2b91b60ae",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--auxiliary-parameter-fields--10.tex": {
+      "sha256": "258e16bfbef444f0a7bddba032f04d1725ce83fcc58d64785a547867df67e044",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--auxiliary-parameter-fields--11.tex": {
+      "sha256": "2d81333193b47455f372293392230e1709780cc12a6ffef29a2ce44a97e5e9bd",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-terminal--auxiliary-parameter-fields--12.tex": {
+      "sha256": "be08f4e66e730e75d08493c9a80885e6e429b19fe0f8e808ab96e7ba7981443f",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md"
+      ]
+    },
+    "equations/three-dimensional-majorana-self-stacking--1-p-ip-stacking--1.tex": {
+      "sha256": "a1a0658381185d1503619bd51623978e867ed3346238128394bf9e659f9dcf26",
+      "used_by": [
+        "docs/formulas/TWO_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/two-dimensional-self-stacking--2-complex-fermion-self-stacking--1.tex": {
+      "sha256": "c8986ac5221aca282c651adaefe1a9871b920e9b26958d08b67da5eb4636373c",
+      "used_by": [
+        "docs/formulas/TWO_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/two-dimensional-self-stacking--3-bosonic-self-stacking--2.tex": {
+      "sha256": "904e3b82460d9761e826f8156ba63acdd5456c8ac5c96102d05760008befbd37",
+      "used_by": [
+        "docs/formulas/TWO_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/two-dimensional-self-stacking--complex-fermions--3.tex": {
+      "sha256": "c66488217c3164a95fc7bcffaafac1455444f8cf8c89b855edd07f9e9bee56d4",
+      "used_by": [
+        "docs/formulas/TWO_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/two-dimensional-self-stacking--complex-fermions-and-majorana-decoration--4.tex": {
+      "sha256": "06954ae6084320761fa86b7a91d1230fc6edecfb518ca9b766fcf60e31a439ff",
+      "used_by": [
+        "docs/formulas/TWO_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/two-dimensional-self-stacking--majorana-decoration--5.tex": {
+      "sha256": "42a0b950212a5cf1652fc8b9390ccc2271c02bdd2d543435cbedb95254008534",
+      "used_by": [
+        "docs/formulas/TWO_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/code-notation--public-integer-layer-api--1.tex": {
+      "sha256": "90aa7e23200db40a296ae359bbe2783a01fbc007809577e64ca5381d08e0eae1",
+      "used_by": [
+        "formulas/CODE_NOTATION.md"
+      ]
+    }
+  }
+}

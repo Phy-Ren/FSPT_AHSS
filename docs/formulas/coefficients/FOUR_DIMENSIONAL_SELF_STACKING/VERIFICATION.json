@@ -1,0 +1,132 @@
+{
+  "status": "PASS_COMPLETE_SPECIALIZATION",
+  "representative_change": false,
+  "lower_E4_terms": {
+    "gamma": 2,
+    "gamma_psi": 1,
+    "psi": 11
+  },
+  "terminal_literal_distributed_outer_terms": {
+    "c": 1,
+    "c_gamma": 3,
+    "c_psi": 2,
+    "gamma": 231,
+    "gamma_psi": 3614180,
+    "psi": 793683
+  },
+  "total_literal_distributed_outer_terms": 4408100,
+  "scope": "Completed coefficient expression restricted to identical complete physical input states. Standard defined lower O/E, Bocksteins, integer carries and cochain differentials retained. No zero-pip restriction. Whole nonlinear interiors recorded separately. Total is the sum of the preserved physical contributions, not a cross-origin cancellation count.",
+  "checks": {
+    "mixed_native": {
+      "status": "PASS_NATIVE_COMPLETED_EXPRESSION_RESTRICTION",
+      "sector": "gamma_psi",
+      "cases": 4,
+      "original_self_input_values": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "collected_values": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "domain": "Signed integer first towers with both backgrounds and arbitrary Majorana root lifts; identical external physical inputs; each retained lower operation evaluated in its unchanged open domain.",
+      "scope": "Complete original published transferred/tensor/y coefficient tables versus the recursively specialized explicit tables; does not recompute a primitive from a diagonal kernel.",
+      "seconds": 99.75389790907502
+    },
+    "pure_native": {
+      "status": "PASS_NATIVE_COMPLETED_EXPRESSION_RESTRICTION",
+      "sector": "psi",
+      "cases": 4,
+      "original_self_input_values": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "collected_values": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "domain": "Signed integer first towers with both backgrounds and arbitrary Majorana root lifts; identical external physical inputs; each retained lower operation evaluated in its unchanged open domain.",
+      "scope": "Complete original published transferred/tensor/y coefficient tables versus the recursively specialized explicit tables; does not recompute a primitive from a diagonal kernel.",
+      "seconds": 59.79827760159969
+    },
+    "open_gamma": {
+      "status": "PASS",
+      "domain": "Arbitrary open binary degree-three input; both backgrounds closed; unchanged canonical whole lifts; all cup products in the quarter bracket are signed integer cups.",
+      "exact_cut_identity": "-A cup3 A minus the four-product N equals -A01234*A01245-A01234*A02345, as an integer polynomial with independent face inputs.",
+      "exact_table_identity": "PASS_TYPED_COCHAIN_IDENTITY",
+      "rational_phase_replay_cases": 512,
+      "quarter_residues": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "half_MS": 218,
+      "half_face_products": 2,
+      "quarter_cup_terms": 5,
+      "quarter_face_products": 2,
+      "quarter_whole_lifts": 4,
+      "outer_terms": 231,
+      "lift_interiors": [
+        5,
+        15,
+        10,
+        76
+      ],
+      "with_lift_wrappers_replaced": 333,
+      "representative_change": false,
+      "seconds": 0.9256960535421968
+    },
+    "lower_and_general": {
+      "status": "PASS",
+      "general_polarization": {
+        "domain": "two arbitrary binary degree-three cochains",
+        "independent_face_bits": 30,
+        "identity_face_terms": 54,
+        "residual": 0,
+        "old_summands": 4,
+        "new_summands": 3,
+        "three_pair_reduction": "12 to 9 terms, hence the general mixed V numerator42 to39, unchanged whole canonical lift and representative"
+      },
+      "pure_lower_diagonal": {
+        "six_closed_a_root_bits": 6,
+        "six_MS_sum_residual": 0,
+        "ell_face_simplification_residual": 0,
+        "remaining_terms": 11,
+        "full_physical_native_cases": 128,
+        "all_four_faces_checked": true
+      },
+      "seconds": 0.1809261590242386
+    }
+  },
+  "schema_verification": {
+    "status": "PASS_COMPLETE_HASH_SCOPE_DUPLICATE_AND_COUNT_CHECK",
+    "allocated_job": "116800.head.local",
+    "compute_node": "n06.local",
+    "counts": {
+      "gamma_psi": 3613999,
+      "psi": 793669
+    },
+    "log": "n06.local\ngamma_psi {'terms': 3613999, 'factors': 20978, 'nonlinear_interior_terms': 55901, 'standard_operation_argument_terms': 1565241}\npsi {'terms': 793669, 'factors': 14174, 'nonlinear_interior_terms': 34243, 'standard_operation_argument_terms': 911981}\nPASS: complete explicit coefficient tables, hashes, and term counts\n"
+  },
+  "storage_compression": {
+    "status": "PASS_STORAGE_ONLY_DECODED_BYTE_IDENTITY",
+    "compression": "gzip, mtime=0; every compressed payload equals its deterministic second encoding",
+    "factor_chunks": 24,
+    "uncompressed_bytes": 119467384,
+    "compressed_bytes": 2825861,
+    "bytes_saved": 116641523,
+    "term_counts_unchanged": {
+      "gamma_psi": 3613999,
+      "psi": 793669
+    }
+  }
+}

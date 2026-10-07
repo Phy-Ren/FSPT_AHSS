@@ -1,0 +1,491 @@
+# Physical coefficient indices for the 4+1D half-valued terms
+
+This appendix gives the retained coefficient construction for the mixed
+Majorana–p+ip and pure p+ip sums of the 4+1D stacking formula. The
+previously designated Majorana coefficient is also specified here as the
+starting convention of the explicit rewrite. Its principal formula now
+uses the [455 ordinary MS coefficients](FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md)
+and [four canonical lifts with 146 explicit interior products](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md),
+together with the displayed carry cups and face products. The
+[former 5,707-face expansion](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md)
+is retained for replay. Both use the same representative,
+with the [explicit output coboundary](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md). The [physical paths](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md)
+specify every original face argument; the [tensor coefficient table](FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md)
+gives its 226 fixed binomial rows and its background-degree-one term.
+The phase convention is exactly the one stated with the stacking formula.
+
+Every displayed cup and MS word is an ordinary cochain operation. The
+finite color indices distinguish the origins of its arguments. Write
+
+```math
+\varnothing\vee r=r,\qquad\gamma\vee\gamma=\gamma,\qquad\psi\vee\psi=\psi,\qquad i\vee j=\gamma\psi\quad\text{in the remaining nonempty cases}.
+```
+
+The index $`r`$ ranges over $`\gamma,\gamma\psi,\psi`$, in that order. A restriction
+
+```math
+\sum_{i\vee j=r}
+```
+
+means the indicated finite sum over the three possible values of each
+index. Background factors carry the empty set. This index describes the
+printed cochain-factor ancestry, not an independently closed component.
+In particular, the c/c-gamma factors remain the separately derived
+microscopic factors; they are not reassigned according to variable support.
+
+## Direct coefficients at one physical face path
+
+For a face $`(ijkl)`$ use the maps
+$`P^a,A_\ell^a,r_\ell,t_\ell,\epsilon_\ell`$
+defined in [Physical paths](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md).
+The two input labels are $`a=1,2`$, with
+$`\check n_3^{(1)}=\check n_3`$, $`\check n_3^{(2)}=\check n'_3`$
+and the same convention for $`n_2`$. The two origin coefficients are
+
+```math
+\begin{aligned}
+\check n_{3;\gamma}^{(a)}(ijkl)
+ &=\check n_3^{(a)}
+       (P^a(i),P^a(j),P^a(k),P^a(l)),\\
+\check n_{3;\psi}^{(a)}(ijkl)
+ &=\Big[\check\omega_2(0,P^a(i),P^a(j))
+        +\check\omega_2(P^0(0),P^0(i),P^0(j))\\
+ &\qquad+\sum_{\ell=1}^{J}\epsilon_\ell
+  \big\{\check\omega_2(r_\ell,t_\ell,A_\ell^a(i))
+       +\check\omega_2(r_\ell,t_\ell,A_\ell^a(j))\big\}\Big]\\
+ &\qquad\times\bar n_2^{(a)}(P^a(j),P^a(k),P^a(l)).
+\end{aligned}
+```
+
+Their sum is the decoded Majorana face in that coefficient. The integer
+and background face factors are the explicit signed values in
+[Physical paths](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md).
+Below, unprimed origin coefficients mean the first input and primed
+ones the second input. Their $`\gamma\psi`$ input component is zero.
+Put
+
+```math
+\check{\mathcal{ℰ}}_3=\bar n_2\cup_1\bar n'_2,
+\qquad \check\omega_2=\omega_2+s_1^2.
+```
+
+Use $`j\in\{\mathrm{in},\mathrm{in}',\mathrm{out}\}`$ for the first input, second input, and actual stacked output:
+
+| coefficient | first input | second input | output |
+|---|---|---|---|
+| $`n_2^{(j)}`$ | $`n_2`$ | $`n'_2`$ | $`N_2=n_2+n'_2`$ |
+| $`\check n_{3;\gamma}^{(j)}`$ | $`\check n_{3;\gamma}`$ | $`\check n'_{3;\gamma}`$ | $`\check n_{3;\gamma}+\check n'_{3;\gamma}`$ |
+| $`\check n_{3;\psi}^{(j)}`$ | $`\check n_{3;\psi}`$ | $`\check n'_{3;\psi}`$ | $`\check n_{3;\psi}+\check n'_{3;\psi}+\check{\mathcal{ℰ}}_3`$ |
+
+The output in the last row is the actual lower stacking output. These
+three columns are substitutions in the displayed polynomials, not three
+calls to an unspecified terminal operation. Let
+
+```math
+\check{\mathcal{𝒪}}_4^{(j)}=(\bar n_2^{(j)})^2+\check\omega_2\bar n_2^{(j)},\qquad
+B_4^{\psi,(j)}=\frac{\overline{\check{\mathcal{𝒪}}_4^{(j)}}-(n_2^{(j)})^2-\check\omega_2n_2^{(j)}}2.
+```
+
+Both are pure p+ip-origin factors. Integer coefficients have the same
+local transports as the original formula. Define the three integral
+summands of the complete Bockstein and carry:
+
+```math
+\begin{aligned}
+(\beta^\circ\check n_3)_{\gamma}^{(j)}&=\beta^\circ \check n_{3;\gamma}^{(j)},\qquad
+(\beta^\circ\check n_3)_{\psi}^{(j)}=\beta^\circ \check n_{3;\psi}^{(j)},\\
+(\beta^\circ\check n_3)_{\gamma\psi}^{(j)}&=-d(\check n_{3;\gamma}^{(j)}\cup_3\check n_{3;\psi}^{(j)})
+             +\overline{d\check n_{3;\gamma}^{(j)}}\cup_4\overline{d\check n_{3;\psi}^{(j)}},\\
+B_{4;\gamma}^{(j)}&=(\beta^\circ\check n_3)_{\gamma}^{(j)},\qquad
+B_{4;\gamma\psi}^{(j)}=(\beta^\circ\check n_3)_{\gamma\psi}^{(j)},\qquad
+B_{4;\psi}^{(j)}=(\beta^\circ\check n_3)_{\psi}^{(j)}+B_4^{\psi,(j)}.
+\end{aligned}
+```
+
+All factors in the expression for $`(\beta^\circ\check n_3)_{\gamma\psi}`$ take their canonical integer
+values before the integer differential and products. Their sum is
+exactly $`\beta^\circ(\check n_{3;\gamma}^{(j)}+\check n_{3;\psi}^{(j)})`$; hence the sum of the three
+$`B_{4;r}^{(j)}`$ is the original integral carry on that column.
+
+The lower obstruction coefficients are
+
+```math
+\begin{aligned}
+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma}^{(j)}={}&\check n_{3;\gamma}^{(j)}\cup_1\check n_{3;\gamma}^{(j)}
+ +s_1(\check n_{3;\gamma}^{(j)}\cup_2\check n_{3;\gamma}^{(j)})+\omega_2 \check n_{3;\gamma}^{(j)},\\
+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma\psi}^{(j)}={}&\check n_{3;\gamma}^{(j)}\cup_1\check n_{3;\psi}^{(j)}
+ +\check n_{3;\psi}^{(j)}\cup_1\check n_{3;\gamma}^{(j)}+\check n_{3;\gamma}^{(j)}\cup_2\check{\mathcal{𝒪}}_4^{(j)}\\
+&+s_1[\check n_{3;\gamma}^{(j)}\cup_2\check n_{3;\psi}^{(j)}
+    +\check n_{3;\psi}^{(j)}\cup_2\check n_{3;\gamma}^{(j)}+\check n_{3;\gamma}^{(j)}\cup_3\check{\mathcal{𝒪}}_4^{(j)}],\\
+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\psi}^{(j)}={}&\check n_{3;\psi}^{(j)}\cup_1\check n_{3;\psi}^{(j)}
+ +\check n_{3;\psi}^{(j)}\cup_2\check{\mathcal{𝒪}}_4^{(j)}
+ +s_1[\check n_{3;\psi}^{(j)}\cup_2\check n_{3;\psi}^{(j)}+\check n_{3;\psi}^{(j)}\cup_3\check{\mathcal{𝒪}}_4^{(j)}]
+ +\omega_2 \check n_{3;\psi}^{(j)},\\
+\mathcal{𝒪}_{5;r}^{(j)}={}&(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{r}^{(j)}+\mathbf1_{r=\psi}\mathcal{𝒪}_5^\psi[n_2^{(j)}].
+\end{aligned}
+```
+
+The parenthesized label is the full open Majorana polynomial, including both of its native physical contributions. Adding the pure p+ip term gives the complete lower obstruction. In particular the open
+Sq terms use the actual first-tower equation $`d\check n_3=\check{\mathcal{𝒪}}_4`$; they have not been
+discarded under a cocycle assumption.
+
+## The ordinary Majorana word contribution
+
+Use the [1,090 fixed ordinary rows](FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md) $`(\vartheta;x_1,\ldots,x_q)`$, whose atoms are
+$`\check n_3,d\check n_3,\omega_2,s_1`$, obtained from the explicitly specified 453-word source table
+by the explicit finite coefficient rule given with that table. Each row denotes the usual
+$`\mathop{\mathrm{MS}}\nolimits_{\vartheta}`$, with no homotopy or parameter field in its
+arguments. For each $`(j,r)`$, its contribution is the following ordinary
+finite sum:
+
+```math
+\sum_{(\vartheta;x_1,\ldots,x_q)}\;
+\sum_{\substack{c_1\vee\cdots\vee c_q=r\\
+  c_\ell\in\{\gamma,\psi\}\ (x_\ell=\check n_3),\;
+  c_\ell=\psi\ (x_\ell=d\check n_3),\;
+  c_\ell=\varnothing\ (x_\ell=\omega_2,s_1)}}
+\mathop{\mathrm{MS}}\nolimits_{\vartheta}
+ \big(x_{1,c_1}^{(j)},\ldots,x_{q,c_q}^{(j)}\big).
+```
+
+Use the displayed input/output column for each field. Replace every $`d\check n_3`$ argument by $`\check{\mathcal{𝒪}}_4^{(j)}`$; the background arguments remain $`\omega_2,s_1`$.
+The one extra carry has the three explicit coefficients
+
+```math
+\begin{aligned}
+[\widetilde{\beta^\circ\check n_3}]_{\gamma}^{(j)}&=\widetilde{(\beta^\circ\check n_3)_{\gamma}^{(j)}},\qquad
+[\widetilde{\beta^\circ\check n_3}]_{\psi}^{(j)}=\widetilde{(\beta^\circ\check n_3)_{\psi}^{(j)}},\\
+[\widetilde{\beta^\circ\check n_3}]_{\gamma\psi}^{(j)}&=\widetilde{(\beta^\circ\check n_3)_{\gamma\psi}^{(j)}}
+ +\overline{(\beta^\circ\check n_3)_{\gamma}^{(j)}}\cup_4\overline{(\beta^\circ\check n_3)_{\psi}^{(j)}}
+ +\overline{(\beta^\circ\check n_3)_{\gamma}^{(j)}}\cup_4\overline{(\beta^\circ\check n_3)_{\gamma\psi}^{(j)}}
+ +\overline{(\beta^\circ\check n_3)_{\psi}^{(j)}}\cup_4\overline{(\beta^\circ\check n_3)_{\gamma\psi}^{(j)}}.
+\end{aligned}
+```
+
+In this display $`\widetilde x=\overline{\lfloor x/2\rfloor}`$ is the
+second digit of an integer, including negative integers. Add $`s_1^2[\widetilde{\beta^\circ\check n_3}]_r^{(j)}`$
+to the finite word sum. Denote that explicitly printed sum plus this
+single carry by $`\mathcal T_{6;r}^{(j)}`$ only in the next display; it is not a new
+primitive or an implicit evaluation prescription.
+
+The remaining one-input terms have the complete coefficients
+
+```math
+\begin{aligned}
+\mathcal H_{6;\gamma}^{(j)}={}&\mathcal T_{6;\gamma}^{(j)}+\check n_{3;\gamma}^{(j)}(\overline{\beta \omega_2}+s_1\omega_2),\\
+\mathcal H_{6;\gamma\psi}^{(j)}={}&\mathcal T_{6;\gamma\psi}^{(j)}
+ +((\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma}^{(j)}+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma\psi}^{(j)})\cup_4\mathcal{𝒪}_5^\psi[n_2^{(j)}]\\
+&+(\overline{(\beta^\circ\check n_3)_{\gamma}}^{(j)}+\overline{(\beta^\circ\check n_3)_{\gamma\psi}}^{(j)})\cup_2\bar B_4^{\psi,(j)}
+ +s_1[(\overline{(\beta^\circ\check n_3)_{\gamma}}^{(j)}+\overline{(\beta^\circ\check n_3)_{\gamma\psi}}^{(j)})\cup_3\bar B_4^{\psi,(j)}]
+ +\bar n_2^{(j)}(\bar B_{4;\gamma}^{(j)}+\bar B_{4;\gamma\psi}^{(j)}),\\
+\mathcal H_{6;\psi}^{(j)}={}&\mathcal T_{6;\psi}^{(j)}+\check n_{3;\psi}^{(j)}(\overline{\beta \omega_2}+s_1\omega_2)
+ +(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\psi}^{(j)}\cup_4\mathcal{𝒪}_5^\psi[n_2^{(j)}]
+ +y_6[n_2^{(j)};\omega_2,s_1]\\
+&+\overline{(\beta^\circ\check n_3)_{\psi}}^{(j)}\cup_2\bar B_4^{\psi,(j)}
+ +s_1[\overline{(\beta^\circ\check n_3)_{\psi}}^{(j)}\cup_3\bar B_4^{\psi,(j)}]
+ +\bar n_2^{(j)}\bar B_{4;\psi}^{(j)}
+ +(\bar n_2^{(j)}\cup_1\overline{\beta_{s_1}\check\omega_2})\bar n_2^{(j)}.
+\end{aligned}
+```
+
+The $`y_6`$ term is the [complete pure source coefficient](SOURCE_OPERATIONS.md#source-completion), with its integer numerator formed before division. It contains no Majorana factors. The displayed polynomials specify every one-input coefficient.
+
+## Quarter-kernel coefficients and their carries
+
+The following formulas apply to the path-shifted inputs as written,
+so no origin is assigned by setting a free root coordinate to zero.
+Define the parity of the lower integral product carry by
+
+```math
+\begin{aligned}
+\bar\lambda_{3;r}={}&\sum_{i\vee j=r}\check n_{3;i}^{\mathrm{in}}\cup_3\check n_{3;j}^{\mathrm{in}'}
+ +\sum_{i\vee\psi=r}(\check n_{3;i}^{\mathrm{in}}+\check n_{3;i}^{\mathrm{in}'})\cup_3\check{\mathcal{ℰ}}_3
+ +\mathbf1_{r=\psi}\overline{\frac{\check{\mathcal{ℰ}}_3+n_2\cup_1n'_2}{2}},\\
+\bar B_{4;r}={}&\bar B_{4;r}^{\mathrm{in}},\qquad \bar B_{4;r}'=\bar B_{4;r}^{\mathrm{in}'}.
+\end{aligned}
+```
+
+The half division in this one line is exact because $`\check{\mathcal{ℰ}}_3\equiv n_2\cup_1n'_2`$
+modulo two. Its sum gives precisely the parity of the original lambda.
+The binary quarter numerator is the sum of the following coefficients:
+
+```math
+\begin{aligned}
+\mathcal V_{5;r}={}&\sum_{i\vee j=r}\big[
+ \bar B_{4;i}\cup_3\bar B_{4;j}'+d\bar B_{4;i}\cup_4\bar B_{4;j}'
+ +(\bar B_{4;i}+\bar B_{4;i}')\cup_3[d\bar\lambda_{3;j}+\mathbf1_{j=\psi}\bar n'_2\bar n_2]
+ +(d\bar B_{4;i}+d\bar B_{4;i}')\cup_4[d\bar\lambda_{3;j}+\mathbf1_{j=\psi}\bar n'_2\bar n_2]\\
+&\qquad+\bar\lambda_{3;i}\cup_1\bar\lambda_{3;j}+\bar\lambda_{3;i}\cup_2d\bar\lambda_{3;j}\big]
+ +\sum_{\psi\vee j=r}(\bar n'_2\bar n_2)\cup_3d\bar\lambda_{3;j}+\omega_2 \bar\lambda_{3;r}\\
+&+\sum_{i\vee\psi=r}\big[\check n_{3;i}^{\mathrm{in}'}\bar n_2+\bar n'_2 \check n_{3;i}^{\mathrm{in}}\big]\\
+&+\mathbf1_{r=\psi}\big[
+  (\widetilde{\beta_{s_1}\check\omega_2}+\overline{\beta_{s_1}\check\omega_2})(\bar n_2\cup_2\bar n'_2)
+  +\mathop{\mathrm{MS}}\nolimits_{1231343}(\bar n'_2,\bar n'_2,\bar n_2,\bar n_2)
+  +(\check\omega_2\cup_1\bar n'_2)\bar n_2+\widetilde n'_2(\bar n_2\cup_1\bar n_2)\\
+&\qquad +(s_1\bar n'_2)\widetilde n_2+s_1(\bar n'_2\cup_1s_1)\bar n_2\big].
+\end{aligned}
+```
+
+For the integral part use the signed column sum
+
+```math
+\sum_j^{\pm}X^{(j)}=X^{\mathrm{out}}-X^{\mathrm{in}}-X^{\mathrm{in}'}.
+```
+
+For the two repeated integral polynomials, use $`Q(X)=X\cup_2X+X\cup_3dX`$ and
+
+```math
+C(X,Y)=X\cup_2Y+Y\cup_2X+X\cup_3dY+Y\cup_3dX.
+```
+
+Then set
+
+```math
+\begin{aligned}
+\mathcal D_{6;\gamma}={}&\sum_j^{\pm}[Q(B_{4;\gamma}^{(j)})+\omega_2 B_{4;\gamma}^{(j)}]-d_{s_1}\bar{\mathcal V_{5;\gamma}},\\
+\mathcal D_{6;\psi}={}&\sum_j^{\pm}[Q(B_{4;\psi}^{(j)})+\omega_2 B_{4;\psi}^{(j)}]-d_{s_1}\bar{\mathcal V_{5;\psi}}\\
+&-\Delta\overline{\big[
+ \mathop{\mathrm{MS}}\nolimits_{12132434}(\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
+ +\widetilde{\beta_{s_1}\check\omega_2}(\bar n_2\cup_1\bar n_2)
+ +(s_1\overline{\beta_{s_1}\check\omega_2})\widetilde n_2+s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\big]}\\
+&+\check\omega_2(n'_2n_2)+(\beta_{s_1}\check\omega_2)(n_2\cup_1n'_2),\\
+\mathcal D_{6;\gamma\psi}={}&\sum_j^{\pm}[Q(B_{4;\gamma\psi}^{(j)})+\omega_2 B_{4;\gamma\psi}^{(j)}
+ +C(B_{4;\gamma}^{(j)},B_{4;\gamma\psi}^{(j)})+C(B_{4;\gamma}^{(j)},B_{4;\psi}^{(j)})
+ +C(B_{4;\gamma\psi}^{(j)},B_{4;\psi}^{(j)})]-d_{s_1}\bar{\mathcal V_{5;\gamma\psi}}.
+\end{aligned}
+```
+
+The whole bar on the four-term Cartan polynomial is taken before its
+signed difference. All other symbols on these lines have explicit
+definitions above.
+The three binary coefficients of the divided numerator are
+
+```math
+\begin{aligned}
+\mathcal C_{6;\gamma}&=\widetilde{\mathcal D_{6;\gamma}},\qquad \mathcal C_{6;\psi}=\widetilde{\mathcal D_{6;\psi}},\\
+\mathcal C_{6;\gamma\psi}&=\widetilde{\mathcal D_{6;\gamma\psi}}+\bar{\mathcal D_{6;\gamma}}\cup_6\bar{\mathcal D_{6;\gamma\psi}}
+ +\bar{\mathcal D_{6;\gamma}}\cup_6\bar{\mathcal D_{6;\psi}}+\bar{\mathcal D_{6;\gamma\psi}}\cup_6\bar{\mathcal D_{6;\psi}}
+ +d[\mathcal V_{5;\gamma}\cup_5\mathcal V_{5;\gamma\psi}+\mathcal V_{5;\gamma}\cup_5\mathcal V_{5;\psi}+\mathcal V_{5;\gamma\psi}\cup_5\mathcal V_{5;\psi}].
+\end{aligned}
+```
+
+The second digits, including the three cross products, are essential.
+None of $`\mathcal D_{6;\gamma},\mathcal D_{6;\gamma\psi},\mathcal D_{6;\psi}`$ is assumed separately even. Their sum with the
+last canonical-lift correction is the complete even numerator in the
+original formula. The exact identity was checked on 440 independent
+binary coefficient variables before imposing the tower equations.
+
+## The complete binary coefficient in each physical sector
+
+The lower coefficient used here is the actual complex-fermion stacking
+correction plus $`\bar n_2\bar n'_2`$. Its origin components are the
+following explicit polynomials:
+
+```math
+\begin{aligned}
+\mathcal{ℰ}_{4;r}^{\mathrm{ker}}
+={}&\sum_{i\vee j=r}\Big[
+ \check n_{3;i}^{\mathrm{in}}\cup_2\check n_{3;j}^{\mathrm{in}'}
+ +s_1(\check n_{3;i}^{\mathrm{in}}\cup_3\check n_{3;j}^{\mathrm{in}'})\Big]\\
+&+\sum_{\psi\vee j=r}\Big[
+ \check{\mathcal{𝒪}}_4[n_2]\cup_3\check n_{3;j}^{\mathrm{in}'}\Big]\\
+&+\sum_{i\vee\psi=r}\Big[
+ (\check n_{3;i}^{\mathrm{in}}+\check n_{3;i}^{\mathrm{in}'})
+                                  \cup_2\check{\mathcal{ℰ}}_3\\
+&\qquad+s_1\big((\check n_{3;i}^{\mathrm{in}}
+              +\check n_{3;i}^{\mathrm{in}'})
+                                  \cup_3\check{\mathcal{ℰ}}_3\big)\Big]\\
+&+\mathbf1_{r=\psi}\Big[
+ \mathop{\mathrm{MS}}\nolimits_{12413423}
+       (\bar n_2,\bar n_2,\bar n_2,\bar n'_2)
+ +\mathop{\mathrm{MS}}\nolimits_{12314132}
+       (\bar n_2,\bar n_2,\bar n'_2,\bar n'_2)\\
+&\qquad+\mathop{\mathrm{MS}}\nolimits_{12314324}
+       (\bar n_2,\bar n_2,\bar n'_2,\bar n'_2)
+ +\mathop{\mathrm{MS}}\nolimits_{12341321}
+       (\bar n_2,\bar n_2,\bar n'_2,\bar n'_2)\\
+&\qquad+\mathop{\mathrm{MS}}\nolimits_{12132413}
+       (\bar n_2,\bar n'_2,\bar n'_2,\bar n'_2)
+ +\mathop{\mathrm{MS}}\nolimits_{12324214}
+       (\bar n_2,\bar n'_2,\bar n'_2,\bar n'_2)\\
+&\qquad+\big[\check\omega_2(\bar n_2+\bar n'_2)\big]
+                                  \cup_3\check{\mathcal{ℰ}}_3
+ +(\check\omega_2\cup_2\bar n_2)
+                  [\bar n'_2+(\bar n_2\cup_2\bar n'_2)]\\
+&\qquad+(\check\omega_2\cup_2\bar n'_2)\bar n_2
+ +(\widetilde n_2+\bar n_2)(\widetilde n'_2+\bar n'_2)
+ +d\widetilde n_2\cup_1\widetilde n'_2\\
+&\qquad+(\widetilde n_2+\widetilde n'_2)(\bar n_2\cup_2\bar n'_2)
+ +(s_1\bar n_2)\cup_2(\bar n'_2\cup_1\bar n'_2)
+ +\bar n_2\cup_1(s_1\bar n'_2)\\
+&\qquad+(\bar n_2\cup_2\bar n'_2)
+                           \cup_1[s_1(\bar n_2+\bar n'_2)]\\
+&\qquad+s_1\Big(
+  s_1(\bar n_2\cup_2\bar n'_2)
+  +\bar n_2\cup_2d\widetilde n'_2
+  +(\bar n_2\cup_2\bar n'_2)\cup_1(\bar n_2+\bar n'_2)\\
+&\hspace{6.5em}
+  +\mathop{\mathrm{MS}}\nolimits_{123142341}
+                  (\bar n_2,\bar n'_2,\bar n_2,\bar n'_2)
+  +\mathop{\mathrm{MS}}\nolimits_{123412143}
+                  (\bar n'_2,\bar n'_2,\bar n_2,\bar n'_2)
+  \Big)\Big].
+\end{aligned}
+```
+
+The input components with index $`\gamma\psi`$ are zero; the displayed
+finite sums keep the same origin-index convention as the other
+coefficients. The first-tower equation has already replaced
+$`d\check n_3`$ by $`\check{\mathcal{𝒪}}_4[n_2]`$ in the second line.
+
+
+The three completely specified degree-six coefficients are
+
+```math
+\begin{aligned}
+\rho_{6;r}={}&\omega_2\mathcal{ℰ}_{4;r}^{\mathrm{ker}}+\sum_{i\vee j=r}\big[
+ \mathcal{ℰ}_{4;i}^{\mathrm{ker}}\cup_2\mathcal{ℰ}_{4;j}^{\mathrm{ker}}+\mathcal{ℰ}_{4;i}^{\mathrm{ker}}\cup_3d\mathcal{ℰ}_{4;j}^{\mathrm{ker}}
+ +\mathcal{𝒪}_{5;i}^{\mathrm{in}}\cup_4\mathcal{𝒪}_{5;j}^{\mathrm{in}'}\\
+&\qquad+(\mathcal{𝒪}_{5;i}^{\mathrm{in}}+\mathcal{𝒪}_{5;i}^{\mathrm{in}'})\cup_3\mathcal{ℰ}_{4;j}^{\mathrm{ker}}
+ +\mathcal{ℰ}_{4;i}^{\mathrm{ker}}\cup_3(\mathcal{𝒪}_{5;j}^{\mathrm{in}}+\mathcal{𝒪}_{5;j}^{\mathrm{in}'})\big]\\
+&+\sum_{j\in\{\mathrm{in},\mathrm{in}',\mathrm{out}\}} \mathcal H_{6;r}^{(j)}
+ +\mathbf1_{r=\psi}[\check\omega_2d\check{\mathcal{ℰ}}_3+\overline{\beta_{s_1}\check\omega_2} \check{\mathcal{ℰ}}_3]+\mathcal C_{6;r}.
+\end{aligned}
+```
+
+The sum retains the complete binary coefficient, including every integer-lift carry.
+Insert these displayed right-hand sides into the [finite physical paths](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md). For each tensor coefficient, select its
+monomials by the same factor origins after applying the physical path
+substitution. The [tensor polynomials and integer negation terms](FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md) are explicit, so this
+last step introduces no unknown operation or primitive.
+
+This completes an exact indexed finite coefficient description of the
+three remaining half-valued pieces. It does not assert that this
+representation is the shortest possible one or that the three pieces
+are independent cocycles. Simplifications or different allocations must
+retain the paired source/product coordinate map.
+
+## The coefficient sets used by the principal stacking formula
+
+For $`r=\gamma\psi,\psi`$, this paragraph specifies the indices in
+```math
+\frac12\sum_{\eta\in\mathcal I_5^r}\prod_{(x,f)\in\eta}x(f).
+```
+It is a finite coefficient expansion, with no primitive solver, higher
+physical input, terminal evaluator, or zero-input comparison.
+
+For $`D=4,5,6`$, define the explicit grid index
+```math
+\mathcal G_D=\{(k,\sigma):0\le k<D,\quad
+ \sigma\in\{0,1,2\}^{D-k},\quad\sigma\ne2^{D-k}\}.
+```
+Its $`D+2`$ vertices are the diagonal vertices through $`(k,k,k)`$,
+followed by
+$`k,k+|\sigma|_0,k+|\sigma|_0+|\sigma|_1`$, followed by the successive
+increments named by the letters of $`\sigma`$. Let
+$`\mathcal G_5^+`$ restrict $`k`$ to $`1,\ldots,4`$.
+The complete index list consists of
+```math
+0\le j\le4,\qquad
+((g_1,\epsilon_1),\ldots,(g_j,\epsilon_j))
+ \in(\mathcal G_5^+\times\{0,1\})^j,
+```
+Restrict the list to $`P_{\ell-1}^0(0)<P_{\ell-1}^0(1)`$ for every step,
+as defined and proved in the [physical-path formula](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md#exact-removal-of-zero-path-pairs).
+Take these indices
+together with either one final grid $`g\in\mathcal G_5`$, or no final
+grid. The [physical-path formula](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md) gives every factor face for each such
+index directly, including the $`j=0`$ identity path.
+
+For the old Majorana construction used in the explicit rewrite, retain only $`j=0`$
+and the final-grid part. All its physical factors, including Bocksteins
+and integer digits, are independent of every $`\epsilon_\ell`$. For
+$`j>0`$ the two choices of any one branch bit are therefore identical and
+cancel in the binary sum. The tensor has no pure Majorana term.
+
+* With a final grid, include the fully expanded coefficient $`\rho_{6;r}`$
+  printed above on its seven explicit vertex positions.
+* With no final grid, include the physical tensor coefficient. Its
+  background-degree-one term is the explicitly printed five-cup
+  negation polynomial. Its background-degree-zero term consists of
+  the [120 left and 106 right binomial rows](FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md), with the listed physical vertex substitutions. In those rows,
+  terms independent of the Majorana tetrahedron have origin $`\psi`$;
+  expand the tetrahedron as its physical Majorana value plus its
+  displayed p+ip background correction before assigning its other
+  terms. The term containing the physical tetrahedron has origin $`\gamma\psi`$;
+  the term containing only its correction has origin $`\psi`$.
+
+Thus all indices have bounded finite ranges. The only row sets needed
+are the [pure-integer coefficient table](COEFFICIENTS.md), the [4D ordinary Majorana word coefficients](FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md), and the
+226 tensor rows. Row contents are fixed numerical coefficient data, not
+group-dependent information.
+
+To turn these expressions into the factor multisets $`\eta`$, use the
+following exact rules. They also specify how to expand a second digit or
+canonical lift without a hidden integer-division instruction.
+
+
+**1.** Use the [interval-cut formula](OPERATIONS.md) for every cup or MS word,
+and the alternating omitted-face sum for every differential.
+Transport a twisted integer factor to the first vertex by its
+displayed sign. Binary signs may be discarded only after all
+indicated integer divisions have been completed.
+
+**2.** For a binary sum $`x_1+\cdots+x_q`$, its canonical integer lift is
+
+```math
+\sum_{\varnothing\ne S\subseteq\{1,\ldots,q\}}
+       (-2)^{|S|-1}\prod_{i\in S}x_i.
+```
+
+This formula retains the carries between all physical components.
+
+**3.** If the resulting integer polynomial is
+$`P=\sum_{\ell=1}^{M}c_\ell P_\ell`$, where each $`P_\ell`$ is a
+product of binary physical factors, its $`k`$-th binary digit is
+the completely explicit finite sum
+
+```math
+\overline{\binom{P}{2^k}}
+ =\sum_{\substack{0\le q_\ell\le2^k\\
+                  \sum_\ell q_\ell=2^k}}
+   \left(\prod_{\ell:q_\ell>0}
+                    \overline{\binom{c_\ell}{q_\ell}}\right)
+   \left(\prod_{\ell:q_\ell>0}P_\ell\right).
+```
+
+Binomial coefficients have their usual integer definition, including
+negative upper arguments. On an exactly divisible numerator this is
+precisely the reduction of $`P/2^k`$. Otherwise it is the indicated
+floor digit; no unjustified divisibility assumption is made.
+
+**4.** Integer physical inputs may be expanded into their finitely many
+required binary digits before rule 3. Keeping the five digits through
+$`2^4`$, that is the integer input modulo 32, is sufficient for these
+binary coefficients: their largest denominator is eight and their
+only input-dependent preparatory exact division is the factor two
+in the integral $`B_4^\psi`$. This is a bound for the binary index
+calculation, not a periodicity claim about the separately displayed
+denominator-three cubic response.
+
+**5.** Reduce binary factor products by $`x(f)^2=x(f)`$, retaining the
+declared factor ancestry during expansion. Cancel equal factor
+multisets in pairs. Put a surviving multiset in
+$`\mathcal I_5^\gamma,\mathcal I_5^{\gamma\psi}`$, or
+$`\mathcal I_5^\psi`$ according to its union of origins. A
+background-only multiset cannot survive because every kernel and
+tensor summand contains a decoration factor.
+
+Rule 3 follows by taking the coefficient of $`T^{2^k}`$ in
+
+```math
+\prod_{\ell=1}^{M}
+ \left(1+P_\ell\big[(1+T)^{c_\ell}-1\big]\right)
+\quad\text{over }\mathbb F_2.
+```
+
+This proof uses only $`P_\ell^2=P_\ell`$, so repeated faces and overlaps
+between monomials do not invalidate it. It simultaneously handles
+negative signs, canonical-lift carries, and the complete even numerator.
+For $`k=1`$ it reduces to the explicit second-digit correction already
+printed above.

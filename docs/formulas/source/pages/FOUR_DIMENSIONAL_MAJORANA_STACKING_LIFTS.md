@@ -1,0 +1,16 @@
+# Canonical lifts in the 4+1D Majorana stacking formula
+
+The four rows below define the finite list $`\mathcal J_5^\gamma`$. In each row, add its listed products over $`\mathbb Z_2`$, take the canonical integer lift of that **whole** binary sum, and then apply the indicated sign. The four lift interiors contain **5, 15, 10, and 116 terms**, respectively: **146 explicit products** in total.
+
+The [machine-readable table](coefficients/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.json) contains exactly the same products. The [standalone replay](coefficients/verify_majorana_carry_reduction.py) compares the replacement with the archived 5,707-term coefficient using only public files and Python’s standard library.
+
+The fields are the physical cochains used in the main formula. In particular $`\overline{d\check n_3}`$ is the binary differential; $`\bar B_4^\gamma=\overline{\beta^\circ\check n_3}`$ is the binary value of the existing integer carry. They are different operations. Primed fields refer to the second stacking input.
+
+The four complete polynomials are printed separately to keep each coefficient page within GitHub’s math-rendering limits. This changes only page layout. The machine-readable table retains all four together.
+
+| Row | Integer sign | Interior terms | Complete polynomial |
+| --- | ---: | ---: | --- |
+| 1 | +1 | 5 | [Lift 1](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_1.md) |
+| 2 | -1 | 15 | [Lift 2](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_2.md) |
+| 3 | -1 | 10 | [Lift 3](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_3.md) |
+| 4 | +1 | 116 | [Lift 4](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_4.md) |

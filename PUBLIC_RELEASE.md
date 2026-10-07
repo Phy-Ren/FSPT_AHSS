@@ -144,8 +144,11 @@ records the committed source version, public base commit and exact files of the
 consolidated catalogue/documentation update. Mathematical runtime kernels were
 not changed by this organization pass.
 
-The maintained Markdown guide supplies the mathematical notation and formula
-blocks for subsequent manuscript editing. Paper-specific exposition can be
+The maintained source under `docs/formulas/source/` supplies the mathematical
+notation and equation blocks for subsequent manuscript editing. Run
+`python docs/formulas/build_reference.py` and its `--check` mode to generate
+and verify the guide, dimensional references, and programmer translation.
+General and self-stacking laws have separate pages with shared navigation. Paper-specific exposition can be
 adapted around those blocks; changes of a formula or its representative must
 update the common definition and its implementation correspondence together.
 
