@@ -135,16 +135,23 @@ that physical origin.
 ```math
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_5^{c\psi}
- =\frac12\Big[&\mathcal{𝒪}_4^\psi\cup_3\mathcal{𝒪}_4^\psi
-  +(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})\cup_3\mathcal{𝒪}_4^\psi
-  +\mathcal{𝒪}_4^\psi\cup_3(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})\\
+ =\frac12\Big[&dn_3\cup_3\mathcal{𝒪}_4^\psi
+  +\mathcal{𝒪}_4^\psi\cup_3dn_3
+  +\mathcal{𝒪}_4^\psi\cup_3\mathcal{𝒪}_4^\psi\\
  &+\sum_{(v;\mathbf x)\in\mathcal I_5^{c\psi}}
        \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)\Big].
 \end{aligned}
 ```
 
-The finite sum contains **25 specified MS terms**, [listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices). Every term contains
-$`d\check n_2=\check\omega_2\bar n_1`$; this lower source has one cup term.
+The finite sum contains **seven specified MS terms**,
+[listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices).
+Together with the three displayed cups, this gives **ten terms**.
+Every MS term contains $`d\check n_2=\check\omega_2\bar n_1`$ and
+$`dn_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}
++\mathcal{𝒪}_4^\psi`$. Thus the complex-fermion exchange correction
+depends on its full lower parity differential. The
+[exact reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
+changes neither the source representative nor the paired stacking law.
 
 #### Majorana decoration
 

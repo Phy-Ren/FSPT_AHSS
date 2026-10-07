@@ -9,7 +9,7 @@ identified before that contraction is completed.
 
 | Coefficient sum | General terms | Self-stacking terms | Distinct protected numerator terms |
 |---|---:|---:|---:|
-| $`\mathcal I_5^{\gamma\psi}`$ | 5,684,189 | **3,613,999** | 55,901 |
+| $`\mathcal I_5^{\gamma\psi}`$ | 5,684,189 | **3,613,517** | 55,901 |
 | $`\mathcal I_5^\psi`$ | 2,869,198 | **793,669** | 34,243 |
 
 The complete mathematical expressions are the
@@ -39,7 +39,7 @@ The protected-numerator column counts each distinct nonlinear factor's
 explicit interior once. It is separate from the outer count; it does not
 pretend that repeated occurrences of the same lift can be distributed as
 integer addition. The transformed lower-operation argument arrays contain
-1,565,241 explicit argument summands in the mixed table and 911,981 in
+1,559,782 explicit argument summands in the mixed table and 907,643 in
 the pure table. These argument data specify the values of already defined
 operations and are not additional outer summands.
 
@@ -57,3 +57,20 @@ The six exchange-origin contributions retain their labels throughout.
 No term is assigned a new physical label from the variables left after
 specialization. No obstruction, source coordinate, product coordinate,
 or output gauge has been changed by these table reductions.
+
+
+The [integer-only carry identity](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md#reusing-the-integer-only-carry)
+normalizes all occurrences of $`B_4[n_2,0]`$ to $`B_4^\psi[n_2]`$,
+including their differentials and binary digits. Its complete semantic
+replay compares every factor definition and every outer row with the prior
+expression: [mixed receipt](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/NORMALIZATION_CHECK.json)
+and [pure receipt](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/NORMALIZATION_CHECK.json).
+The mixed sum loses 482 terms; the pure outer count is unchanged.
+
+To replay, obtain the original coefficient directory from public commit
+`bc3e5f238513a632f48197363e4ee3e66e706418` and pass its path as `--original`
+to [verify_carry_normalization.py](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/verify_carry_normalization.py).
+The current directory is the default comparison target. The previous native
+readbacks verify the original specialized expressions; the exact
+normalization replay connects them to the current tables. Historical
+storage and diagonal-count receipts are explicitly prefixed `ARCHIVED_`.

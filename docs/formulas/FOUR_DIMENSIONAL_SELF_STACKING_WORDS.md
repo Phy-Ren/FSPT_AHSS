@@ -2,7 +2,7 @@
 
 # Ordinary MS coefficients for 4+1D Majorana self-stacking
 
-The sum in the [self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md) contains **218 terms**. Each word below specifies one standard MS operation on the ordered physical inputs printed above that word block. Inputs are open; their differentials and open Bocksteins retain their usual definitions. These are the typed-cochain collection of the complete general coefficient table, together with the three half-valued cups obtained from the exact diagonal integer quarter bracket. No phase gauge is applied.
+The sum in the [self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md) contains **187 terms**. Each word specifies one standard MS operation on the ordered physical inputs above it. The reduction uses the exact open-cochain identity $`\overline{\beta^\circ\check n_3}=\mathrm{Sq}^1\check n_3`$ and closed backgrounds. It does not assume $`d\check n_3=0`$ and changes no representative.
 
 ```math
 (\check n_3,\check n_3,\check n_3,\check n_3).
@@ -62,10 +62,10 @@ This block contains **5 terms**.
 ```
 
 ```text
-123212321 123213132 123213231
+123212321
 ```
 
-This block contains **3 terms**.
+This block contains **1 terms**.
 
 ```math
 (\check n_3,\check n_3,s_1,\check n_3,\check n_3).
@@ -94,16 +94,6 @@ This block contains **2 terms**.
 
 ```text
 123214121434
-```
-
-This block contains **1 terms**.
-
-```math
-(\check n_3,d\overline{\beta^\circ\check n_3},\check n_3).
-```
-
-```text
-121312321
 ```
 
 This block contains **1 terms**.
@@ -159,78 +149,17 @@ This block contains **7 terms**.
 This block contains **1 terms**.
 
 ```math
-(\overline{\beta^\circ\check n_3},\check n_3,\check n_3).
-```
-
-```text
-12321213 12321312 12323132
-```
-
-This block contains **3 terms**.
-
-```math
-(\overline{\beta^\circ\check n_3},\overline{d\check n_3},\check n_3).
-```
-
-```text
-123231213
-```
-
-This block contains **1 terms**.
-
-```math
-(\overline{d\check n_3},\check n_3,d\overline{\beta^\circ\check n_3}).
-```
-
-```text
-1232123132
-```
-
-This block contains **1 terms**.
-
-```math
-(d\overline{\beta^\circ\check n_3},\check n_3).
-```
-
-```text
-12121
-```
-
-This block contains **1 terms**.
-
-```math
-(d\overline{\beta^\circ\check n_3},\overline{d\check n_3}).
-```
-
-```text
-121212
-```
-
-This block contains **1 terms**.
-
-```math
-(s_1,\check n_3,\check n_3).
-```
-
-```text
-12323
-```
-
-This block contains **1 terms**.
-
-```math
 (s_1,\check n_3,\check n_3,\check n_3,\check n_3).
 ```
 
 ```text
 1213432534235 1213432534352 1231452535453 1231452543453 1231453254523 1231453525452 1231453525453 1231453542452
-1231453542453 1231453543245 1231453545243 1231453545324 1231454243453 1231454324235 1231454324523 1231454325234
-1231454342452 1231454342453 1231454345243 1231454345324 1231454532435 1232145235453 1232145253545 1232145254345
-1232145254535 1232145423453 1232145424345 1232145424535 1234252434254 1234252435342 1234254352534 1234532354253
-1234532523425 1234532524235 1234532542345 1234532542453 1234532543452 1234532545235
+1231453542453 1231453543245 1231453545243 1231454243453 1231454324235 1231454324523 1231454325234 1231454342452
+1231454342453 1231454532435 1232145235453 1232145253545 1232145254345 1232145254535 1232145423453 1232145424345
+1232145424535 1234252435342 1234532354253 1234532543452
 ```
 
-This block contains **38 terms**.
+This block contains **28 terms**.
 
 ```math
 (s_1,\check n_3,\check n_3,s_1,\check n_3,\check n_3).
@@ -247,17 +176,7 @@ This block contains **2 terms**.
 ```
 
 ```text
-1234243423 1234243424 1234323423 1234323424 1234323432
-```
-
-This block contains **5 terms**.
-
-```math
-(s_1,\overline{\beta^\circ\check n_3},\check n_3,\overline{d\check n_3}).
-```
-
-```text
-12343234324
+1234243423
 ```
 
 This block contains **1 terms**.
@@ -277,9 +196,9 @@ This block contains **1 terms**.
 ```
 
 ```text
-121345654356345 121345654356453 123415654356345 123415654356346 123415654356453 123415654363534 123415656434536
+121345654356345 121345654356453
 ```
 
-This block contains **7 terms**.
+This block contains **2 terms**.
 
-The [machine-readable table](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_GAMMA_DIAGONAL_WORDS.json) gives every word and argument. The [exact collection and rational replay receipt](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_GAMMA_DIAGONAL_CHECK.json) records the comparison.
+The [complete table](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_GAMMA_DIAGONAL_WORDS.json) and [standalone universal-coefficient proof](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/verify_open_half_reduction.py) specify and check the same187 operations.

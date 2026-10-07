@@ -1,7 +1,7 @@
 {
   "schema": "fspt-organized-publication-v1",
-  "source_commit": "0c3ad91a8fc770227405fef68fb6e35978b72115",
-  "public_base_commit": "3845143946942e5615eb9d27463beec7da76dd4e",
+  "source_commit": "849bc7d749554fa596696633b5d544e5eced619a",
+  "public_base_commit": "bc3e5f238513a632f48197363e4ee3e66e706418",
   "scope": "Additive example catalogue and canonical formula documentation; prior archives preserved.",
   "files": {
     "PUBLIC_RELEASE.md": {
@@ -85,20 +85,24 @@
       "bytes": 5213
     },
     "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md": {
-      "sha256": "3e8a748e36deae99c96f8ddf78ba6d87dfce6e4aed696f7e05a6968393179cb7",
-      "bytes": 10853
+      "sha256": "156278951de48e59ceca99cff65110908594027ba774911179f7344466488c72",
+      "bytes": 11211
     },
     "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md": {
-      "sha256": "87fc8d47b47362011712145f528b34df0ff6cc809e69b6201317476672d36f71",
-      "bytes": 3677
+      "sha256": "300d9b9fd5e8a4eef9e39bccb6e8ab18f39905cb9594408fab3666e71b29c2d8",
+      "bytes": 4814
     },
     "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_LIFTS.md": {
       "sha256": "46546d80806ee5c85d994db83b2f3aa2ec7e894aee43aa8339a1a235904b76e4",
       "bytes": 12289
     },
+    "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md": {
+      "sha256": "47785e195e4f8d0b10b458213bf75436568fc8c8ba8694a4bec28ff4c4b51caf",
+      "bytes": 5042
+    },
     "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md": {
-      "sha256": "3d38f4d684bdedf70800e80f4de2f110fd2a75df26eb48336587c689fb4e3940",
-      "bytes": 6679
+      "sha256": "37f657c03a915b22349edad5cce93589a185ae5e80ad7ecefc815da8d9971a18",
+      "bytes": 5209
     },
     "docs/formulas/FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md": {
       "sha256": "b08fc3c63223fac7ec9e0a8b1f5f742b5610229d96c43f5f229a5b83d4f2b455",
@@ -121,7 +125,7 @@
       "bytes": 24584
     },
     "docs/formulas/NEXT_SIMPLIFICATION_TARGETS.md": {
-      "sha256": "409cdfbd81fae248f99e9f65e17e2ed8a08e4fe790eefbaa9813940dc66d21e8",
+      "sha256": "23260235957c416183faa51e235b2a38998f3aba4e7475825135e9051fb4279d",
       "bytes": 5714
     },
     "docs/formulas/OPERATIONS.md": {
@@ -133,8 +137,8 @@
       "bytes": 9564
     },
     "docs/formulas/REFERENCE_MANIFEST.json": {
-      "sha256": "12a3e2288d3895a32790245faf2480cf23d272200c4b915cf141d81e9639acab",
-      "bytes": 157560
+      "sha256": "833b9e2e800a8df3f45cbeb9476bb318430b262f7f0bd4dc8ab343336bf78a87",
+      "bytes": 161883
     },
     "docs/formulas/REPRESENTATIVES.md": {
       "sha256": "df9a108368fbf35a27e6e92804f55602216e433d2b3584333c5d8577370da24e",
@@ -145,8 +149,8 @@
       "bytes": 16035
     },
     "docs/formulas/SIMPLIFICATION_PROGRESS.md": {
-      "sha256": "489fa987bee14c0c7b8c1c422ab1c3ce518509e5b6c3de138cb0bf1c1e32ed4b",
-      "bytes": 5365
+      "sha256": "1ad6337bd50e074803ee9597a339b82c8810a40231871cd3f888ea9a3dd825fb",
+      "bytes": 6302
     },
     "docs/formulas/SOURCE_OPERATIONS.md": {
       "sha256": "0ee8373948dde4ef735b435e795dfc17ad6da3a986e4d5005a4ef8b47a8cab3a",
@@ -157,16 +161,16 @@
       "bytes": 15045
     },
     "docs/formulas/TERM_COUNTS.md": {
-      "sha256": "e960c0ca63cad8d672c7db2e76c0f50c8fc4710635fd5ff8fc0dbd1bbb85254a",
-      "bytes": 17884
+      "sha256": "ddf6e5ec491968ec9799a2e8d7ab4e586ef9e8589fa70760ca4fbbdaa58a31ff",
+      "bytes": 18103
     },
     "docs/formulas/THREE_DIMENSIONAL.md": {
-      "sha256": "7266c69a72e38387d6880ce70217eecbf0789a4d173b17629ffc589144d12995",
-      "bytes": 24234
+      "sha256": "c52586f25751a340729fc571e976da2017bf55e950dc0528ce811c93850ba404",
+      "bytes": 24534
     },
     "docs/formulas/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md": {
-      "sha256": "33a07a20572d7281738d2458b90bf8eea6e1a33f30f864b43f296d65eef769a4",
-      "bytes": 4798
+      "sha256": "1c6f784e3de9ea0d5813f12f7b9f3d11f341b4202e0d2e8b88cc1cf75794f2e9",
+      "bytes": 6987
     },
     "docs/formulas/THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md": {
       "sha256": "a93b4a7807c00ea1602b8541814d8fcc379aceccc9f05a45b91c82f4d4d36f77",
@@ -179,6 +183,10 @@
     "docs/formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md": {
       "sha256": "cd8adfd7bcdd3d93c2a651073f9ee705297f614d488307402f1c41bb465d5a80",
       "bytes": 2639
+    },
+    "docs/formulas/THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md": {
+      "sha256": "f08eaf24ee356bd9bf5fc5ded9a553a1254a7e5705816e56aff7b5d8a03851b4",
+      "bytes": 5707
     },
     "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md": {
       "sha256": "ab0fd885c0ff9c33d5cb8de2c5f9d451fa2e3b626247bb093512f26d2691f68d",
@@ -193,8 +201,8 @@
       "bytes": 18151
     },
     "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md": {
-      "sha256": "218f83d3c7c234bdca7d80ee4e7bc276f342ccd4f008175bee5d8ec277b520e5",
-      "bytes": 11285
+      "sha256": "c5a91c5b5a4baf15748da7f92c8a14698928babc7756a96b654e5c218a2ccff3",
+      "bytes": 11823
     },
     "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES.md": {
       "sha256": "e1d0e1534ae1946fbc14671263fa4068ca185fb3809668754c534e15431a7b8b",
@@ -237,8 +245,8 @@
       "bytes": 10542
     },
     "docs/formulas/THREE_DIMENSIONAL_WORD_INDICES.md": {
-      "sha256": "af54954d111b6c9eaa0988323188afec51f3cec8b71834b321542b62398574f5",
-      "bytes": 16355
+      "sha256": "8ccf482c4440ee2d86ec3ce613a3eaa0791be7a76e93bc5c7f71530c334ce97e",
+      "bytes": 16243
     },
     "docs/formulas/TWO_DIMENSIONAL.md": {
       "sha256": "ca61f92084207f663d0057618592e369eeca7657da0be20d8fd8ee849879007b",
@@ -284,213 +292,261 @@
       "sha256": "056601fe57c17fbd0dc39758993a9518306020b846eff2bf127dc68e852dcab7",
       "bytes": 522773
     },
-    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/FACTOR_COMPRESSION_CHECK.json": {
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/ARCHIVED_FACTOR_COMPRESSION_CHECK.json": {
       "sha256": "58aaa9932ff0e483a1505aec72d1217541c857c3ce593edf2cd029b0ea2cf4ac",
       "bytes": 8994
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/ARCHIVED_OPEN_GAMMA_DIAGONAL_CHECK.json": {
+      "sha256": "e0fc2374306a8423f29e1785bd821c402dd75ba5d6f7151cc7ac5844acd7f5b4",
+      "bytes": 821
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/ARCHIVED_OPEN_GAMMA_DIAGONAL_WORDS.json": {
+      "sha256": "a8febaebacf61d78892b8af688bdd4112f8751917c4dc10677f567137a1245d8",
+      "bytes": 36756
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/FACTOR_COMPRESSION_CHECK.json": {
+      "sha256": "e51bdd76aa24e93dcb917ee47ded1441407a827ca83d21ae864200c139cd96a0",
+      "bytes": 366
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/LOWER_AND_GENERAL_POLARIZATION_CHECK.json": {
       "sha256": "c85c89cb0dc9715fdf68bf83c64b5be09bf150b0fb85b38b79c875634f92451c",
       "bytes": 656
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_GAMMA_DIAGONAL_CHECK.json": {
-      "sha256": "e0fc2374306a8423f29e1785bd821c402dd75ba5d6f7151cc7ac5844acd7f5b4",
-      "bytes": 821
+      "sha256": "45a1de3395c0c48408ad6010118495996e73cd148121ff7915a646ef87ff97a5",
+      "bytes": 362
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_GAMMA_DIAGONAL_LIFTS.json": {
       "sha256": "f255d62a2fc0fba404d495a0bc9d26b263e52d360f76c8e68016239cfc6e4490",
       "bytes": 67736
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_GAMMA_DIAGONAL_WORDS.json": {
-      "sha256": "a8febaebacf61d78892b8af688bdd4112f8751917c4dc10677f567137a1245d8",
-      "bytes": 36756
+      "sha256": "c85e2ea9bf5888aebeee32ad557e07e895819124eeca361aa4219e957e495e1f",
+      "bytes": 31138
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_HALF_NATIVE_CHECK.json": {
+      "sha256": "06ecfa60988e69134a0e723b37c955414847ad92b9eb88668c22ab28af814dcf",
+      "bytes": 507
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_HALF_UNIVERSAL_CHECK.json": {
+      "sha256": "c680e512b4ed8554ceddc3c181a73f0d0f71fdfcde236d629d7c54f800ece4d9",
+      "bytes": 522
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/VERIFICATION.json": {
-      "sha256": "04a60546271d840d384d3ecf6e64b4d028f5b7ade9adcf5f9713f0099dbc7a52",
-      "bytes": 4944
+      "sha256": "62a0c23f7530d0b9db7c7626ce16460f80bb8f1b37ee1cf49a5beb0b66b2c7bd",
+      "bytes": 8337
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/INDEX.json": {
-      "sha256": "bc213b94ee48395378fd16d0769879562b40ebf63854fa929dc8094a7f195dcf",
-      "bytes": 8959
+      "sha256": "fbb0f6063e32cb95c7b84694db9a2f6bb97b9eb2da3abceba2610e102c3f18e2",
+      "bytes": 11339
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/NATIVE_RESTRICTION_CHECK.json": {
       "sha256": "4e4f47f16e1ab54988e2030e64dc78d48500a80839fa87cdc04aae751bf8212f",
       "bytes": 651
     },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/NORMALIZATION_CHECK.json": {
+      "sha256": "a4ae30d4a62310b1ba5cf4439d12e0a7e1ae234bbecfb36046fafb59efe4a75e",
+      "bytes": 696
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/NORMALIZATION_MAP.json.gz": {
+      "sha256": "5e912edd601b3a6608f6d2a576cf12b32fa6037f57bc72faf071989ed05a7f4a",
+      "bytes": 143938
+    },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_000.json.gz": {
-      "sha256": "6553506f4650c9ab61749c804b99ce6ae548e4a2e7291f877c1eb2cdd7a542d3",
-      "bytes": 90344
+      "sha256": "cd2a86c7bce163377674951788bec6a545c2a35c5d8890a473b4211813626b2b",
+      "bytes": 90351
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_001.json.gz": {
-      "sha256": "a748aadc7d080b2efdf4602398cffa551382d190559f8a14647219b4f7130745",
-      "bytes": 95043
+      "sha256": "d2f726e02bd42927f55c53a380fb33badecfd07e316b028f56ee0ef230c4fdd2",
+      "bytes": 94987
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_002.json.gz": {
-      "sha256": "d3d233213e36a8f0023653c7113b1b126463b639d5fa10669eae272eb9e761b0",
-      "bytes": 96414
+      "sha256": "f84129750230b088de3a192d61a56d0daacbf05dbd6f255b9ab54ab27761ff78",
+      "bytes": 96415
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_003.json.gz": {
-      "sha256": "888668dc59c4ba8787894e6ccfa6b3f28ad69e7be2514249294bcec11385a48f",
-      "bytes": 105434
+      "sha256": "cb79b8722ae7e9422ed558d818a2dbc6c2099835ac978ac998df9e235b54c198",
+      "bytes": 105029
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_004.json.gz": {
-      "sha256": "4e04c17bcd22aec3cb4780d609b2e22aae6bd1869864132645814ad385a9dd46",
-      "bytes": 98762
+      "sha256": "64363f4fb36e5a31a03f7504df97c905331ecf1cf2d011ea3232e197c8141022",
+      "bytes": 98928
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_005.json.gz": {
-      "sha256": "afc57cd26bbe0d87513a449b8db0d05ce56723880231f5b6573c8af8c14243c2",
-      "bytes": 111871
+      "sha256": "b6120b3bf40e55804b6ea91b67261dea33adcbe80633e6114168fab8dcd006d7",
+      "bytes": 112501
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_006.json.gz": {
-      "sha256": "db13577536b5edea0f755dce7844a6c0fe13da47349cd90f4b5da76d11e7329b",
-      "bytes": 121897
+      "sha256": "1b48b353847fe07f3b0b8b8219476a17b92d0ec91b3dac07e224bdc6de89a14a",
+      "bytes": 121491
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_007.json.gz": {
-      "sha256": "06c3e8515c7f597914b2fa72c4db006961cd6e35d9307844520dbb617246053f",
-      "bytes": 112160
+      "sha256": "4836d5e35477e1d56c943ebf996730f0016f56c3eaf6573ceb6c516b71ca1cbc",
+      "bytes": 112875
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_008.json.gz": {
-      "sha256": "5cffa4b9cce089d590e8eb1d9abcdcb7356abc75f7ad44b5705d58a9f1fc5653",
-      "bytes": 127687
+      "sha256": "8a43ec9392f1ddd37a85c6880bcf7412bb8aeccbad82236e10b360302f7f2070",
+      "bytes": 127189
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_009.json.gz": {
-      "sha256": "89c3b2ce2d9533fbbeab363fd3802d3af82f2a0a7d6dbd79d7989051fdfd8ebd",
-      "bytes": 130459
+      "sha256": "682671920dca4a63d51884a9d97d85b5b2e8a52cd59be141712aca46a64a5508",
+      "bytes": 131380
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_010.json.gz": {
-      "sha256": "af98e89e03b27975607d65fe1032d48d6735cce8d85adceff1efe8bc867c131a",
-      "bytes": 131123
+      "sha256": "9da09928421e3674bfc8babe105b7e5b14a0350cf9ee52d946af3996723129dd",
+      "bytes": 131502
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_011.json.gz": {
-      "sha256": "69fbd7856cfb5fc5e286928c5f53484f1f01a54301eb005efbcafec1f9b8abc5",
-      "bytes": 134171
+      "sha256": "648452cbbb8ec8c2b57cc51cedf2ae08270bb99bb8a5299875f0ba40ae7312de",
+      "bytes": 133539
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_012.json.gz": {
-      "sha256": "24fc94af2742563856934b10348e91af7807a672fa9a883252303d4a9df058ea",
-      "bytes": 151246
+      "sha256": "611c493ca46fde6c617e665ce7a452b895f1ea58318769bfd895852b1ccfd4dc",
+      "bytes": 152505
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/factors_013.json.gz": {
-      "sha256": "42fdc1a3e03b3dcf8c24924c5be6f970b7d13fce4fc666e06fb99ad9e568a6ba",
-      "bytes": 157266
+      "sha256": "a2120791928cf8c49fe4211e46ec58a05f90d3f0a0991939d51484a363aa3296",
+      "bytes": 146029
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_000.json.gz": {
-      "sha256": "656487f57ca32a176729ffdd936945742e70c04b07ac82016bbf2c9bfc645cef",
-      "bytes": 919584
+      "sha256": "eccda0950f4e5802ede2b18d2749489d5368ee06eca4698a39940ee1503cbd95",
+      "bytes": 919340
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_001.json.gz": {
-      "sha256": "b044069dba3ed79d573b0355aaa89d8e32a91dd640146d8b2ed5aad625d0f312",
-      "bytes": 947551
+      "sha256": "567d96f722d4e07afba55aa63f726c296eccbe107aa73fc6bf6c9a875cb202b3",
+      "bytes": 948298
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_002.json.gz": {
-      "sha256": "bb0bdce47d6bf26a467a8f3f3cea0fbd579aa655c54602447dfc2ad166c5d025",
-      "bytes": 942751
+      "sha256": "8cb47110b804bde7bc9bb8e75d7080bbecd87fc5e842d0d197e88cd3e05c8fb7",
+      "bytes": 942996
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_003.json.gz": {
-      "sha256": "7130c885bfa7884c53f31f426845082fc6072910d55e31ae1fab606668e174f0",
-      "bytes": 930726
+      "sha256": "4c87f7300e75aab5d57051416111d8f8fb586b7ca704cb1503a479e0861e8f6c",
+      "bytes": 928722
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_004.json.gz": {
-      "sha256": "70ef514f9bdf68b29976ac1d4fcc4a9452c60fcdb8d0768244f34254c5201b46",
-      "bytes": 956039
+      "sha256": "43d7a159c7f8c1d1d36729e061a5123d2e256463211f1bf2608ae8b0aae5e6fe",
+      "bytes": 955279
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_005.json.gz": {
-      "sha256": "3253b71367f8f5c2618bbacb9696440042370c31530a8dcb21ee62fe441720ae",
-      "bytes": 962363
+      "sha256": "5cfa73936b9cb91ef9b872b822886b38c3483f21b1f31955fb61ad31a00e6eb4",
+      "bytes": 961652
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_006.json.gz": {
-      "sha256": "4c7929c3da2e25fdf11ae3cf7dd4dbd422f683f1a0d854a35fcfe893b4035ecb",
-      "bytes": 988153
+      "sha256": "77f5ee8331e10178ca9b6ea252680c8a386fe47e4e5d64a857f564429411f392",
+      "bytes": 987185
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_007.json.gz": {
-      "sha256": "66c5cfcb27e835f434e14888cf1a4e50858500395f18ed53fe2d33745d393595",
-      "bytes": 1009350
+      "sha256": "0d96b84a127c8be139addafcf7d4becd47dedf6c47430593b3778ca8f94ba47a",
+      "bytes": 1006797
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_008.json.gz": {
-      "sha256": "750fd423e43732f7971cdd478414099f7ebeb1906bd8cc28dc5d307264018ad3",
-      "bytes": 1032391
+      "sha256": "e8dae703e7e1ce4bf93582bbaa08826eb1cd90bfdf368275b62b789b873703b1",
+      "bytes": 1031131
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_009.json.gz": {
-      "sha256": "154f60d88f0ac7588c1e22d6e2bf4a1399342618d317df1e78e9ca06c3f6bd02",
-      "bytes": 1052639
+      "sha256": "3b4e35110a95ecafaae9fb07c80b827b08fe470d6d37d525f4b0ae9b836fb8e5",
+      "bytes": 1052498
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_010.json.gz": {
-      "sha256": "d4ed5442a08447b36f79705063580febca444f74196454d51577b5dc133ae723",
-      "bytes": 1066279
+      "sha256": "187a1adf61e1f65a7e028155a33131770912900fc43081a5dfce3da306711015",
+      "bytes": 1066468
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_011.json.gz": {
-      "sha256": "c92f5d33d42a2dfd48eb11fea4b6cacadce7484db56385f4926a14577eb272e8",
-      "bytes": 1069083
+      "sha256": "a3e6655a4507d5ab133b0acd3632bc1d3afbbd70f1bbd215b590b69dbc13067a",
+      "bytes": 1068369
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/terms_012.json.gz": {
-      "sha256": "97114486a9ffb11dbc42223a021e065c68592ff0e99740a67d2fcec954f91243",
-      "bytes": 50583
+      "sha256": "4463c41eb98df7a9d131bf790304152533175fe971d4791000484c67b963d181",
+      "bytes": 48833
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/normalize_integer_carries.py": {
+      "sha256": "afb642025ec218ce7e313d41a8ed4a01dce3ef270f489aa928f7228e67caec13",
+      "bytes": 7554
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/INDEX.json": {
-      "sha256": "523e97ec3afdb80abab68147939a76021b9be68f615e0e621eacd65f32c5cdb7",
-      "bytes": 5183
+      "sha256": "cd3869dd3b0f3e913607c700732d5a21308ebbb27f698b1ef43835f08fc0b97d",
+      "bytes": 5875
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/NATIVE_RESTRICTION_CHECK.json": {
       "sha256": "2eb7a7639218d8d8fdcda012c28f834e0384a97f3d144e93d82c190451060a0a",
       "bytes": 645
     },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/NORMALIZATION_CHECK.json": {
+      "sha256": "17aef96a83d222179f0d4246579a9ee804420a18c105b2dc82eafeb70f8fe791",
+      "bytes": 685
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/NORMALIZATION_MAP.json.gz": {
+      "sha256": "c3718d686d3b94ea570cec9bf7bc67de08493203740abe06eea9354c6fd7af3f",
+      "bytes": 97451
+    },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/factors_000.json.gz": {
-      "sha256": "83e5b4b722543b6999176e8a5fbae370c913ee75b0edbaa2eec7393d2ecd6d06",
-      "bytes": 91160
+      "sha256": "9a64c5c6a32fa5dc5e688bf029e39a427f94b5498c45f20918795eb6f4d21f6e",
+      "bytes": 90697
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/factors_001.json.gz": {
-      "sha256": "af9297b2628c1dac5f3b3be893ce780477c575db80a3dea5e75819a8eccf47f2",
-      "bytes": 94949
+      "sha256": "d2c82cbf09213911e9dd565c8ffb838230aa1e0f87c5d7b03c11dbefd322e864",
+      "bytes": 94059
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/factors_002.json.gz": {
-      "sha256": "ed786c2a90cb93a7ab51967c3acb4cff80dc221480b54cc12d88c1d3f7b25150",
-      "bytes": 112062
+      "sha256": "4333e2297c808a373a532b355c28764e14661cf5bd128028d76b3ac496e51f36",
+      "bytes": 111665
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/factors_003.json.gz": {
-      "sha256": "b19b1781c8d15f209be7e6daff810425e73169665cd0c3dce4fa8c6693ded031",
-      "bytes": 116748
+      "sha256": "e84f0b555af44c29263dfaeeecfa1b6240056424969a6c256cacbd6df0e4eab1",
+      "bytes": 115855
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/factors_004.json.gz": {
-      "sha256": "06f9b5ff2162addda8851fb0e6654d45fe71404431f8d10720cae71670ec2b16",
-      "bytes": 123053
+      "sha256": "0747c2b5c15529a7e649e6b9885e3e8987cb90b41a3e3f81e10b69772ab0d6c7",
+      "bytes": 123004
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/factors_005.json.gz": {
-      "sha256": "682c2d3631c6e8c22c2394810cbd494fdc07a9fc15417b444569feeffc2ce40c",
-      "bytes": 126054
+      "sha256": "318c2b49fc44b4b60132099e013abfbae629aa14b51fd38787fa4930a72a54dd",
+      "bytes": 125884
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/factors_006.json.gz": {
-      "sha256": "34a71738cac9ce2031a248a5b3420444684fd894cc21ebc6e897ad8ef7f84821",
-      "bytes": 135247
+      "sha256": "faed53c977f88ef50fe95581a1218d45533928b8cf42e1b80b33efa4f1a2089f",
+      "bytes": 135084
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/factors_007.json.gz": {
-      "sha256": "bbd223f62382bb38794a9abb3ad58221fb040006ba120605026402227a660dbe",
-      "bytes": 138858
+      "sha256": "0fc8bf298f8f48acd142144a748332d52f739deeb9d6170ebb31253db7867777",
+      "bytes": 136584
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/factors_008.json.gz": {
-      "sha256": "a002bc6a0fa3678882572fcc6578b8a713f425be47f265e06016d6c958ac81ca",
-      "bytes": 149766
+      "sha256": "d97959901ac6872cd46758fef242378fdbafefbaeb67d75e00fed70110da55b6",
+      "bytes": 148849
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/factors_009.json.gz": {
-      "sha256": "e132b273b678d1794397ee58ce994abc7f08b5a1757c67b56aa4f06bf4e513e1",
-      "bytes": 74087
+      "sha256": "2e5c6632c5366ebece07ba8f5c68517dafec9574ad2796f5de611669d9df0140",
+      "bytes": 65505
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/terms_000.json.gz": {
-      "sha256": "aac96e0bda4e57232010fcdc592f14159fac6f6c47dd31cf8539b1f29aa12ec7",
-      "bytes": 904644
+      "sha256": "993848a2873140d72f4d65e650ddccbc6438336acc72ef53e7178d946999d264",
+      "bytes": 907794
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/terms_001.json.gz": {
-      "sha256": "25dd793a53321dfe9a567337c0c9cefcbb9d267c320e8a2091af35e5e381a285",
-      "bytes": 921619
+      "sha256": "4b2deb43b917dd83df109a0e43aa2561e4bfb63be07cf3bdf2a40db124bec92d",
+      "bytes": 924590
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/terms_002.json.gz": {
-      "sha256": "18d605b01fe7a4efb19330ecf5c33950240865b25817703baf9bca8279d34044",
-      "bytes": 600234
+      "sha256": "e5863f7eb12df2e9af56af6d3813454d42d1e878ae5c0bf8a0ce1fee489ae22c",
+      "bytes": 599996
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/specialize_coefficients.py": {
       "sha256": "8b8022b4b1ebb971f0cdf358affce08f9e7545fcb9078b095e4c0b7f1650c091",
       "bytes": 7203
     },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/verify_carry_normalization.py": {
+      "sha256": "60e3793132a34954ce256a40b86348d40c7d73fb77b54057bb898e027451da5e",
+      "bytes": 4586
+    },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/verify_coefficients.py": {
       "sha256": "288775e89f2b57797445bd94663a0e59dca488349f76232ef92dec41d1056afb",
       "bytes": 2632
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_SELF_STACKING/verify_open_half_reduction.py": {
+      "sha256": "c1ec135de10d0186be02c920160e1f2f9e56f3f8217358bdb05cbe534898fdbe",
+      "bytes": 7647
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_STACKING/VERIFICATION.json": {
       "sha256": "46ee91fe4c3a851715f29180972d143cfe67d2e4e5a2318fe0d4a08b6c827c2e",
@@ -600,6 +656,14 @@
       "sha256": "6b2753a12e4cd7366cfb649b64689d1ab398f2167ec44bf1a9ea01767fc72b96",
       "bytes": 11519001
     },
+    "docs/formulas/coefficients/OPEN_GAMMA_LIFT_REDUCTION_CHECK.json": {
+      "sha256": "6605aa1094f883350c064bab490844e16623cca75e9d913ea7824af9f090dd9d",
+      "bytes": 2818
+    },
+    "docs/formulas/coefficients/SOURCE_CF_EXCHANGE_CHECK.json": {
+      "sha256": "81179cdad903118ac8e0cfeb0f5fb4d3f7d335d343030f57a88811b335a9e74e",
+      "bytes": 650
+    },
     "docs/formulas/coefficients/SYNTHETIC_FOUR_DIMENSIONAL_REPLAY.json": {
       "sha256": "c56dea37e82c8a42509484ad7683762cce72be8ebf95fe4baeec058dc8568868",
       "bytes": 97906
@@ -664,6 +728,14 @@
       "sha256": "bfc49bf18d9ed38414f38405a38704d75e7fc809bf5ea35e528b151008dc82ef",
       "bytes": 8825
     },
+    "docs/formulas/coefficients/verify_three_dimensional_open_gamma_lift_reduction.py": {
+      "sha256": "fc46defc9c2347d2751066faf012a084fd3700b9a969495363ddb821564840b5",
+      "bytes": 5055
+    },
+    "docs/formulas/coefficients/verify_three_dimensional_source_cf_exchange.py": {
+      "sha256": "01d22ffaeceb473468e9c631d6b30e21104d52be1229ea5200dae8faff32054f",
+      "bytes": 3375
+    },
     "docs/formulas/coefficients/verify_two_dimensional_self_stacking.py": {
       "sha256": "c966b731f01e93d03e82254302e8917984ad9cf35b37ec4d8c122b83c40cb817",
       "bytes": 2522
@@ -673,8 +745,8 @@
       "bytes": 2521
     },
     "docs/formulas/source/catalog.json": {
-      "sha256": "d6d1cd5ab77163a3697daafa03b80f6812ade47f24105d84557a00c2a7e3287b",
-      "bytes": 8346
+      "sha256": "67ba28ca19c52f41a19a7a4c2bea902b452619c99fa9160b59a07d23b112b0d7",
+      "bytes": 8674
     },
     "docs/formulas/source/equations/coboundary-stacking-compatibility--an-exact-4-1d-product-with-a-group-inverse--5.tex": {
       "sha256": "10aebad9e80061c3f63ec658ce8b41b2a4d9627591cf6600a16d30438e77e0f5",
@@ -1065,8 +1137,8 @@
       "bytes": 60
     },
     "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-decoration--10.tex": {
-      "sha256": "49a7b7e5a06a64f7688852723ca3485b3228055673f6f39b089a7d155380625b",
-      "bytes": 715
+      "sha256": "fb7d99c8ce6cbfc24c748905490c3d90010f750a1db194758bd62bad57450f64",
+      "bytes": 748
     },
     "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-decoration--4.tex": {
       "sha256": "1f5ffc47037e80e39b13f5892abc587320df03cac5260f3e9fd6b6613cf024f1",
@@ -1079,6 +1151,34 @@
     "docs/formulas/source/equations/four-dimensional-self-stacking--p-ip-decoration--6.tex": {
       "sha256": "0460b0c6eac0a94956bcc8ac2093167dbccae27158ceced77c1b3a9d76dda99a",
       "bytes": 420
+    },
+    "docs/formulas/source/equations/four-dimensional-self-stacking-reduction--open-majorana-cochains--1.tex": {
+      "sha256": "ac418040d764a269bf947eac0c1a2231a7f1eb6569d2a5cc9a7c361d727a5dcd",
+      "bytes": 131
+    },
+    "docs/formulas/source/equations/four-dimensional-self-stacking-reduction--open-majorana-cochains--2.tex": {
+      "sha256": "ea2edc56c24f91c464720ca474ad5e6c957ecc31f3385c874645b31968d3bfe8",
+      "bytes": 116
+    },
+    "docs/formulas/source/equations/four-dimensional-self-stacking-reduction--reusing-the-integer-only-carry--6.tex": {
+      "sha256": "b7a8cb37e544499f92893eea2ba934a4f57ca1a8a02e553769236d2e5d9a017d",
+      "bytes": 40
+    },
+    "docs/formulas/source/equations/four-dimensional-self-stacking-reduction--reusing-the-integer-only-carry--7.tex": {
+      "sha256": "ce8b22678ee6fbda0bfa97d4cde5af0a9d889cc67df04e3fc79088e83ec50e05",
+      "bytes": 61
+    },
+    "docs/formulas/source/equations/four-dimensional-self-stacking-reduction--the-lower-obstruction-inside-the-fractional-correcti--3.tex": {
+      "sha256": "6bb4b886a6ce6625b41437e05620e56a94aec931198e9d2b2960d91d88d081cc",
+      "bytes": 102
+    },
+    "docs/formulas/source/equations/four-dimensional-self-stacking-reduction--the-lower-obstruction-inside-the-fractional-correcti--4.tex": {
+      "sha256": "844db8b2d3ae85066be962b0fd9529574d45373a4e21722f6e74395bb3ff4112",
+      "bytes": 61
+    },
+    "docs/formulas/source/equations/four-dimensional-self-stacking-reduction--the-lower-obstruction-inside-the-fractional-correcti--5.tex": {
+      "sha256": "1438fb62340b586d6764299e2301a1018b183e5deefde40340255886278080ce",
+      "bytes": 125
     },
     "docs/formulas/source/equations/general-mixed-quarter-polarization--polarization-of-the-binary-majorana-stacking-carry--1.tex": {
       "sha256": "8812c1efb744a17f3baa7773e00124d211790b692b4f999bdc313ba5bcad9593",
@@ -1721,8 +1821,8 @@
       "bytes": 265
     },
     "docs/formulas/source/equations/three-dimensional--complex-fermions-and-p-ip-decoration--13.tex": {
-      "sha256": "73feb2dfe206bd1ab071c4dd792682142951d8daf4408d90217e548adc13cff1",
-      "bytes": 406
+      "sha256": "fb59773ae729f407559692f7febec19c6551796e77731d8e8c9d5b133104abee",
+      "bytes": 304
     },
     "docs/formulas/source/equations/three-dimensional--complex-fermions-and-p-ip-decoration--30.tex": {
       "sha256": "64109302a6b9e5c13b8051ab2a1dff32f835611accd87ca9072030d282292800",
@@ -1913,8 +2013,8 @@
       "bytes": 282
     },
     "docs/formulas/source/equations/three-dimensional-self-stacking--majorana-decoration--17.tex": {
-      "sha256": "daa0c99cd33f625016047aa7d19cf1b0e3fbdb090f98f862994a53514d226e7d",
-      "bytes": 955
+      "sha256": "ee57a702f5d02bfc2f82c443e2583c5df26a5e0dd8d0f4db7b0dc91747ea78d1",
+      "bytes": 915
     },
     "docs/formulas/source/equations/three-dimensional-self-stacking--p-ip-decoration--20.tex": {
       "sha256": "193151a909f19e74c6553f2b5655d974e4f644d23a77c5bfff7f2d9beb1e4c17",
@@ -1993,8 +2093,8 @@
       "bytes": 8048
     },
     "docs/formulas/source/pages/CODE_NOTATION.md": {
-      "sha256": "43e55b82aa37fd16a2c6cfee7bbf4b142fcfbb4aab2ca4f8ffaaa0efd1049301",
-      "bytes": 25271
+      "sha256": "be95b91b5ef0fd9435fb37bc6124bddc3afe3ec63b475b216720e449f9ca36c8",
+      "bytes": 26163
     },
     "docs/formulas/source/pages/COEFFICIENTS.md": {
       "sha256": "b769ba593eb6cabd31bf52db9a7de0f6d29fb29da6ae037cbe3453513a17960d",
@@ -2061,20 +2161,24 @@
       "bytes": 5108
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_SELF_STACKING.md": {
-      "sha256": "a403cda9346f488bee50194a1b1a1475512fe90ac3f5e0ca2b3d1fd829899063",
-      "bytes": 7324
+      "sha256": "b0d99c7bfc3e4fd3dbc903cdaab4acdb759b802cc941327c79fd41aaa8afe716",
+      "bytes": 7649
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md": {
-      "sha256": "61fa895025325da32d544a1ec2d4a56aa1ba0aea9be9c19a38739bc3ec29384f",
-      "bytes": 3560
+      "sha256": "1a21813dc8d708aa71e57a19f2701855f7bdcffa4c611f160dafca78be454e6a",
+      "bytes": 4697
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_SELF_STACKING_LIFTS.md": {
       "sha256": "2324c703d643937f7c7cb322a9d3fce69c6eece188d4d774518530c2120e2d41",
       "bytes": 12179
     },
+    "docs/formulas/source/pages/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md": {
+      "sha256": "7576be909b189ac83f77bfc4e01756b33e6eabfc1b1d5da43452e3b975566976",
+      "bytes": 4881
+    },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md": {
-      "sha256": "686146e1bdfb7da27e55c04508d6214acf7fa64e003d48639182b2393c08e6de",
-      "bytes": 6569
+      "sha256": "ccd563a43cf99ceffc28a399694f8bdb00a8078bcb88086fa6b3f54ade3be80c",
+      "bytes": 5099
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md": {
       "sha256": "ad56a1fceff8eef2ad672a5ab2443a233057bc9daeb240a4642f5c52cde6455e",
@@ -2097,7 +2201,7 @@
       "bytes": 16778
     },
     "docs/formulas/source/pages/NEXT_SIMPLIFICATION_TARGETS.md": {
-      "sha256": "29391ff328afac870778c7266e997c8086a0dbe61a96d9be520d902f3d85d40a",
+      "sha256": "2cb79661b471945264020eb83162f3c63fc10b2c71fb5404eb154a83aabe3779",
       "bytes": 5613
     },
     "docs/formulas/source/pages/OPERATIONS.md": {
@@ -2117,8 +2221,8 @@
       "bytes": 16215
     },
     "docs/formulas/source/pages/SIMPLIFICATION_PROGRESS.md": {
-      "sha256": "537d1961de270ec551efa600479ebc72b1feb05fe458263c2085d155d40f0f9f",
-      "bytes": 5268
+      "sha256": "1bf94b2149f54428b9c8adf04947c2c3b2f7ca8115897bd6238f82b675702958",
+      "bytes": 6205
     },
     "docs/formulas/source/pages/SOURCE_OPERATIONS.md": {
       "sha256": "2de2c3425e8153d0318a31a506199837982c63352f413e93615b49af29e95cad",
@@ -2129,16 +2233,16 @@
       "bytes": 9434
     },
     "docs/formulas/source/pages/TERM_COUNTS.md": {
-      "sha256": "1edd54c80fe907c87c9c60041ea6f15f0e5d1b78fdbf40219c5cdb6782d2b8fa",
-      "bytes": 17799
+      "sha256": "9a0e23aad24eebf92c9c86be344372afb185328fe2ea2133f6342b1e1ddbeed1",
+      "bytes": 18018
     },
     "docs/formulas/source/pages/THREE_DIMENSIONAL.md": {
-      "sha256": "c389d347035f9704b82203c86d271b3617ea6789afaff7a2079a63230d73106a",
-      "bytes": 12841
+      "sha256": "4fa9ec4b6a9ae4807d7b2c29a50c24ff09ed27228acb36b30d354280c262ab76",
+      "bytes": 13243
     },
     "docs/formulas/source/pages/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md": {
-      "sha256": "faa08353bcb1373c4e1f45b12bd29b2f133fa2deff423844e86dfe80eb5014e6",
-      "bytes": 3710
+      "sha256": "eccc71b17d5de6c449da2543d4cc34f460c36754026a963a95de519a4cf8d7ad",
+      "bytes": 5656
     },
     "docs/formulas/source/pages/THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md": {
       "sha256": "3d698f0cad145839a98ce685fc663278ae62d1207baa54b3d9a111cce5597a13",
@@ -2151,6 +2255,10 @@
     "docs/formulas/source/pages/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md": {
       "sha256": "7bbc457904c01aded7133ed0708524391618325d1ed704a915b218fb7433d506",
       "bytes": 2430
+    },
+    "docs/formulas/source/pages/THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md": {
+      "sha256": "d5f9e9cf51bf0cf570f0070f3a3848f082b479f5d9d6a26c11c736ff5e96b0d3",
+      "bytes": 5587
     },
     "docs/formulas/source/pages/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md": {
       "sha256": "4d383da5318eb06154cfc77a03e2d75e18326b533291a1429418709c790dc3cd",
@@ -2165,8 +2273,8 @@
       "bytes": 18039
     },
     "docs/formulas/source/pages/THREE_DIMENSIONAL_SELF_STACKING.md": {
-      "sha256": "ae2224eaa2ca8fe1afc224e9f616e7d48a54f0459254c697cedd89e46e36775a",
-      "bytes": 8350
+      "sha256": "cda55f1142464f72c6ac73d73afba48351eff3df4c611bacfdbb0a69fd9b5133",
+      "bytes": 8928
     },
     "docs/formulas/source/pages/THREE_DIMENSIONAL_SELF_STACKING_FACES.md": {
       "sha256": "1fe94705a405d7c28158d06d0a67c9ca7d8fa40d366a41f3a41fff884c2fb8e4",
@@ -2209,8 +2317,8 @@
       "bytes": 7099
     },
     "docs/formulas/source/pages/THREE_DIMENSIONAL_WORD_INDICES.md": {
-      "sha256": "42edb3fdbeab259236fd0ee38faf8e70fc7f9d18ca352cbc13964795f10ec761",
-      "bytes": 16251
+      "sha256": "c4353422c0115775ac4dc7a235bce9b0db3627358b1526677956c57a02666bff",
+      "bytes": 16139
     },
     "docs/formulas/source/pages/TWO_DIMENSIONAL.md": {
       "sha256": "2b4470ed1cf067ded80d067377263557b6bacf793493444f0c19e29ee8825dff",
@@ -2229,8 +2337,8 @@
       "bytes": 4812
     },
     "docs/formulas/term_census/STRUCTURED_TERM_COUNTS.json": {
-      "sha256": "667c61e69854efc6b88e88f8e317467e4da54265e2ffd2c016d7717028fa84b2",
-      "bytes": 40819
+      "sha256": "6d699c6ae6b3b6ddf729c52230445a81a6d641d52bb39dec5f3c2336c35ca0db",
+      "bytes": 41363
     },
     "docs/formulas/term_census/four_dimensional/FOUR_DIMENSIONAL_CENSUS.json": {
       "sha256": "7cb7a64e22ec9989f45e81a6a00a7bfe48904cf08316e16f90dfd1ef1b51e684",
@@ -2325,8 +2433,8 @@
       "bytes": 4196
     },
     "formulas/CODE_NOTATION.md": {
-      "sha256": "fb4056e6044737543b469d81b549524c3f6e0148348ad33a4517c073609e7116",
-      "bytes": 25407
+      "sha256": "76e016f34d70a0ab2f1e8d285a376ddcb77e1e69641e104baaf726885d9932ea",
+      "bytes": 26299
     },
     "formulas/FORMULA_REGISTRY.json": {
       "sha256": "5692c369808814aa9b2aee7acc3d617891d80062f24070e89aded094e36c81cf",

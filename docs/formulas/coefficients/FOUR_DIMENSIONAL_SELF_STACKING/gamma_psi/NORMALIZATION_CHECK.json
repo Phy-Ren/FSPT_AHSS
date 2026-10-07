@@ -1,0 +1,19 @@
+{
+  "status": "PASS_EXACT_COMPLETE_EXPRESSION_NORMALIZATION",
+  "sector": "gamma_psi",
+  "source_terms": 3613999,
+  "normalized_terms": 3613517,
+  "removed_outer_summands": 482,
+  "zero_outer_summands": 0,
+  "source_factors": 20978,
+  "normalized_factors": 20866,
+  "exact_factor_definition_equality": true,
+  "exact_complete_outer_polynomial_equality": true,
+  "allowed_identity": "B4[n,0]=B4psi[n] over the integers, including ordinary differentials and all binary digits",
+  "rules": {
+    "B_zero_Majorana_equals_Bpsi": 1215,
+    "identical_factor": 112
+  },
+  "normalization_map_sha256": "d66174a53b9a81ea7d5303e08aad00a86fcdfa940a9d2ff64511522be6c110d2",
+  "representative_change": false
+}

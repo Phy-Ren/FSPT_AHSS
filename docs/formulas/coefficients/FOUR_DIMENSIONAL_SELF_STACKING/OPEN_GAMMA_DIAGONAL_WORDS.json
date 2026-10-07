@@ -1,10 +1,7 @@
 {
-  "status": "PASS_TYPED_COCHAIN_IDENTITY",
-  "scope": "Arbitrary open Majorana cochain; differential and open Bockstein retained. Only equal-input substitution is used, with no closure assumption.",
-  "input_terms": 455,
-  "diagonal_words_before_half_coefficient_collection": 215,
-  "three_added_half_cups": "barB cup2u+dbarB cup3u+dbarB cup4du, obtained from the diagonal integer quarter by exact coefficient collection",
-  "term_count": 218,
+  "status": "PASS_EXACT_OPEN_COCHAIN_RELATION_COLLECTION",
+  "input_terms": 218,
+  "term_count": 187,
   "terms": [
     {
       "word": "1212",
@@ -14,33 +11,11 @@
       ]
     },
     {
-      "word": "12121",
-      "inputs": [
-        "d\\overline{\\beta^\\circ\\check n_3}",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "121212",
-      "inputs": [
-        "d\\overline{\\beta^\\circ\\check n_3}",
-        "\\overline{d\\check n_3}"
-      ]
-    },
-    {
       "word": "12123434132",
       "inputs": [
         "\\check n_3",
         "\\check n_3",
         "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "121312321",
-      "inputs": [
-        "\\check n_3",
-        "d\\overline{\\beta^\\circ\\check n_3}",
         "\\check n_3"
       ]
     },
@@ -488,16 +463,6 @@
       ]
     },
     {
-      "word": "1231453545324",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
       "word": "1231454243453",
       "inputs": [
         "s_1",
@@ -558,26 +523,6 @@
       ]
     },
     {
-      "word": "1231454345243",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "1231454345324",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
       "word": "1231454532435",
       "inputs": [
         "s_1",
@@ -585,22 +530,6 @@
         "\\check n_3",
         "\\check n_3",
         "\\check n_3"
-      ]
-    },
-    {
-      "word": "12321213",
-      "inputs": [
-        "\\overline{\\beta^\\circ\\check n_3}",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "1232123132",
-      "inputs": [
-        "\\overline{d\\check n_3}",
-        "\\check n_3",
-        "d\\overline{\\beta^\\circ\\check n_3}"
       ]
     },
     {
@@ -627,30 +556,6 @@
         "\\check n_3",
         "\\check n_3",
         "\\check n_3"
-      ]
-    },
-    {
-      "word": "12321312",
-      "inputs": [
-        "\\overline{\\beta^\\circ\\check n_3}",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "123213132",
-      "inputs": [
-        "\\check n_3",
-        "\\check n_3",
-        "d\\overline{\\beta^\\circ\\check n_3}"
-      ]
-    },
-    {
-      "word": "123213231",
-      "inputs": [
-        "\\check n_3",
-        "\\check n_3",
-        "d\\overline{\\beta^\\circ\\check n_3}"
       ]
     },
     {
@@ -899,30 +804,6 @@
         "s_1",
         "\\check n_3",
         "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "12323",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "123231213",
-      "inputs": [
-        "\\overline{\\beta^\\circ\\check n_3}",
-        "\\overline{d\\check n_3}",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "12323132",
-      "inputs": [
-        "\\overline{\\beta^\\circ\\check n_3}",
         "\\check n_3",
         "\\check n_3"
       ]
@@ -1293,61 +1174,6 @@
       ]
     },
     {
-      "word": "123415654356345",
-      "inputs": [
-        "s_1",
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "123415654356346",
-      "inputs": [
-        "s_1",
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "123415654356453",
-      "inputs": [
-        "s_1",
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "123415654363534",
-      "inputs": [
-        "s_1",
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "123415656434536",
-      "inputs": [
-        "s_1",
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
       "word": "12342124342",
       "inputs": [
         "\\check n_3",
@@ -1584,36 +1410,7 @@
       ]
     },
     {
-      "word": "1234243424",
-      "inputs": [
-        "s_1",
-        "\\overline{\\beta^\\circ\\check n_3}",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "1234252434254",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
       "word": "1234252435342",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "1234254352534",
       "inputs": [
         "s_1",
         "\\check n_3",
@@ -1814,42 +1611,6 @@
       ]
     },
     {
-      "word": "1234323423",
-      "inputs": [
-        "s_1",
-        "\\overline{\\beta^\\circ\\check n_3}",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "1234323424",
-      "inputs": [
-        "s_1",
-        "\\overline{\\beta^\\circ\\check n_3}",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "1234323432",
-      "inputs": [
-        "s_1",
-        "\\overline{\\beta^\\circ\\check n_3}",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "12343234324",
-      "inputs": [
-        "s_1",
-        "\\overline{\\beta^\\circ\\check n_3}",
-        "\\check n_3",
-        "\\overline{d\\check n_3}"
-      ]
-    },
-    {
       "word": "12343412314",
       "inputs": [
         "\\check n_3",
@@ -1918,57 +1679,7 @@
       ]
     },
     {
-      "word": "1234532523425",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "1234532524235",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "1234532542345",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "1234532542453",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
       "word": "1234532543452",
-      "inputs": [
-        "s_1",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3",
-        "\\check n_3"
-      ]
-    },
-    {
-      "word": "1234532545235",
       "inputs": [
         "s_1",
         "\\check n_3",
@@ -2030,6 +1741,6 @@
       ]
     }
   ],
-  "source_sha256": "5012f415b948a8808578812e64b5f3c6990f8257b98ec1bb538f7b4b8672eed1",
-  "base_typed_face_monomials_before_three_half_cups": 428
+  "domain": "Arbitrary open binary check n3 and closed backgrounds. Binary open Bockstein equals the full cochain Sq1; no Majorana cocycle condition.",
+  "representative_change": false
 }

@@ -1,28 +1,9 @@
 {
-  "status": "PASS",
-  "domain": "Arbitrary open binary degree-three input; both backgrounds closed; unchanged canonical whole lifts; all cup products in the quarter bracket are signed integer cups.",
-  "exact_cut_identity": "-A cup3 A minus the four-product N equals -A01234*A01245-A01234*A02345, as an integer polynomial with independent face inputs.",
-  "exact_table_identity": "PASS_TYPED_COCHAIN_IDENTITY",
-  "rational_phase_replay_cases": 512,
-  "quarter_residues": [
-    0,
-    1,
-    2,
-    3
+  "status": "SUPERSEDED_RECEIPT",
+  "archived_receipt": "ARCHIVED_OPEN_GAMMA_DIAGONAL_CHECK.json",
+  "current_receipts": [
+    "OPEN_HALF_UNIVERSAL_CHECK.json",
+    "OPEN_HALF_NATIVE_CHECK.json"
   ],
-  "half_MS": 218,
-  "half_face_products": 2,
-  "quarter_cup_terms": 5,
-  "quarter_face_products": 2,
-  "quarter_whole_lifts": 4,
-  "outer_terms": 231,
-  "lift_interiors": [
-    5,
-    15,
-    10,
-    76
-  ],
-  "with_lift_wrappers_replaced": 333,
-  "representative_change": false,
-  "seconds": 0.9256960535421968
+  "note": "The original receipt bytes are preserved under the explicit archive name. Current counts and exact equivalence checks are in the listed receipts."
 }

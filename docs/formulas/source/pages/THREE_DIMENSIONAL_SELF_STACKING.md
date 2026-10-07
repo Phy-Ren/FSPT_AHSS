@@ -124,12 +124,16 @@ $`\widetilde{2s_1}=s_1`$.
 
 {{equation:three-dimensional-self-stacking--majorana-decoration--17}}
 
-This is **16 terms: 13 half terms and three quarter terms**, valid also for
-an arbitrary open $`\check n_2`$. The first face product is the exact diagonal
-of the seven intrinsic Majorana MS terms. In the quarter bracket the cup
-products are integral. The reduced open Bockstein is
-$`\beta^\circ x=(d x-\overline{dx})/2`$, with the first differential taken
-on the canonical integer lift.
+This is **13 outer terms: ten half terms and three quarter terms**,
+valid also for an arbitrary open $`\check n_2`$. The whole lift contains
+**two terms**, retaining the existing lower obstruction. Replacing its
+wrapper by those two interior terms in the count gives **14 leaves**.
+The [lower-obstruction carry identity](THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md)
+replaces six former terms by three with exact equality modulo one.
+The first face product is the exact diagonal of seven intrinsic Majorana
+MS terms. Integer cups and the whole binary lift retain their scopes;
+$`\beta^\circ x=(dx-\overline{dx})/2`$ uses the integer differential
+in its first term.
 
 ### Majorana and p+ip decoration
 
@@ -170,17 +174,21 @@ canonical integer lift.
 | c | 1 |
 | c-gamma | 3 |
 | c-psi | 5 |
-| gamma | 16 |
+| gamma | 13 |
 | gamma-psi | 1,142 |
 | psi | 250 |
-| Complete canonical torsion self-twister | **1,417** |
+| Complete canonical torsion self-twister | **1,414** |
 
 The count retains the already defined lower differential representatives,
 Bocksteins and integer carries, while counting every finite coefficient
-product separately. It is not a claim of minimality.
+product separately. The Majorana whole lift has two interior terms;
+counting its interior gives 1,415 leaves instead of 1,414 outer terms.
+It is not a claim of minimality.
 The [standalone exact verifier](coefficients/verify_three_dimensional_canonical_self_stacking.py)
-checks every physical sector and the total against the frozen current
-formula on all 20 independent valid-tower bits. All seven residuals are zero.
+checks every physical sector and the total against the frozen baseline
+on all 20 independent valid-tower bits. All seven residuals are zero.
+The [additional lift-identity verifier](coefficients/verify_three_dimensional_open_gamma_lift_reduction.py)
+checks the current 13-term Majorana expression against that same baseline.
 The fully collected scalar phase has 2,652 coefficients modulo 16; that
 supplementary coefficient count uses a different expansion boundary.
 

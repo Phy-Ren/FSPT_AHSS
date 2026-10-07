@@ -10,11 +10,11 @@
     "c": 1,
     "c_gamma": 3,
     "c_psi": 2,
-    "gamma": 231,
-    "gamma_psi": 3614180,
+    "gamma": 200,
+    "gamma_psi": 3613698,
     "psi": 793683
   },
-  "total_literal_distributed_outer_terms": 4408100,
+  "total_literal_distributed_outer_terms": 4407587,
   "scope": "Completed coefficient expression restricted to identical complete physical input states. Standard defined lower O/E, Bocksteins, integer carries and cochain differentials retained. No zero-pip restriction. Whole nonlinear interiors recorded separately. Total is the sum of the preserved physical contributions, not a cross-origin cancellation count.",
   "checks": {
     "mixed_native": {
@@ -57,7 +57,28 @@
       "scope": "Complete original published transferred/tensor/y coefficient tables versus the recursively specialized explicit tables; does not recompute a primitive from a diagonal kernel.",
       "seconds": 59.79827760159969
     },
-    "open_gamma": {
+    "lower_and_general": {
+      "status": "PASS",
+      "general_polarization": {
+        "domain": "two arbitrary binary degree-three cochains",
+        "independent_face_bits": 30,
+        "identity_face_terms": 54,
+        "residual": 0,
+        "old_summands": 4,
+        "new_summands": 3,
+        "three_pair_reduction": "12 to 9 terms, hence the general mixed V numerator42 to39, unchanged whole canonical lift and representative"
+      },
+      "pure_lower_diagonal": {
+        "six_closed_a_root_bits": 6,
+        "six_MS_sum_residual": 0,
+        "ell_face_simplification_residual": 0,
+        "remaining_terms": 11,
+        "full_physical_native_cases": 128,
+        "all_four_faces_checked": true
+      },
+      "seconds": 0.1809261590242386
+    },
+    "archived_open_gamma_231": {
       "status": "PASS",
       "domain": "Arbitrary open binary degree-three input; both backgrounds closed; unchanged canonical whole lifts; all cup products in the quarter bracket are signed integer cups.",
       "exact_cut_identity": "-A cup3 A minus the four-product N equals -A01234*A01245-A01234*A02345, as an integer polynomial with independent face inputs.",
@@ -85,39 +106,36 @@
       "representative_change": false,
       "seconds": 0.9256960535421968
     },
-    "lower_and_general": {
-      "status": "PASS",
-      "general_polarization": {
-        "domain": "two arbitrary binary degree-three cochains",
-        "independent_face_bits": 30,
-        "identity_face_terms": 54,
-        "residual": 0,
-        "old_summands": 4,
-        "new_summands": 3,
-        "three_pair_reduction": "12 to 9 terms, hence the general mixed V numerator42 to39, unchanged whole canonical lift and representative"
-      },
-      "pure_lower_diagonal": {
-        "six_closed_a_root_bits": 6,
-        "six_MS_sum_residual": 0,
-        "ell_face_simplification_residual": 0,
-        "remaining_terms": 11,
-        "full_physical_native_cases": 128,
-        "all_four_faces_checked": true
-      },
-      "seconds": 0.1809261590242386
+    "open_gamma_universal": {
+      "status": "PASS_EXACT_UNIVERSAL_COEFFICIENT_IDENTITY",
+      "independent_bits": 30,
+      "old_MS": 218,
+      "new_MS": 187,
+      "coefficient_monomials": 556,
+      "residual_monomials": 0,
+      "new_outer_terms": 200,
+      "new_terms_with_106_lift_interiors": 302,
+      "representative_change": false,
+      "hashes": {
+        "ARCHIVED_OPEN_GAMMA_DIAGONAL_WORDS.json": "a8febaebacf61d78892b8af688bdd4112f8751917c4dc10677f567137a1245d8",
+        "OPEN_GAMMA_DIAGONAL_WORDS.json": "c85e2ea9bf5888aebeee32ad557e07e895819124eeca361aa4219e957e495e1f"
+      }
+    },
+    "open_gamma_native": {
+      "status": "PASS_NATIVE_OPEN_HALF_REDUCTION",
+      "cases": 512,
+      "old_MS": 218,
+      "new_MS": 187,
+      "unchanged_half_face_products": 2,
+      "unchanged_quarter_outer_terms": 11,
+      "new_total_outer_terms": 200,
+      "new_total_with_106_lift_interiors": 302,
+      "integer_open_identity": "d beta_open u = -beta(d u), exactly over the integers",
+      "representative_change": false,
+      "domain": "arbitrary open binary u and closed backgrounds; both values computed by independent signed-cut/native integer conventions"
     }
   },
-  "schema_verification": {
-    "status": "PASS_COMPLETE_HASH_SCOPE_DUPLICATE_AND_COUNT_CHECK",
-    "allocated_job": "116800.head.local",
-    "compute_node": "n06.local",
-    "counts": {
-      "gamma_psi": 3613999,
-      "psi": 793669
-    },
-    "log": "n06.local\ngamma_psi {'terms': 3613999, 'factors': 20978, 'nonlinear_interior_terms': 55901, 'standard_operation_argument_terms': 1565241}\npsi {'terms': 793669, 'factors': 14174, 'nonlinear_interior_terms': 34243, 'standard_operation_argument_terms': 911981}\nPASS: complete explicit coefficient tables, hashes, and term counts\n"
-  },
-  "storage_compression": {
+  "archived_storage_compression_before_carry_normalization": {
     "status": "PASS_STORAGE_ONLY_DECODED_BYTE_IDENTITY",
     "compression": "gzip, mtime=0; every compressed payload equals its deterministic second encoding",
     "factor_chunks": 24,
@@ -128,5 +146,64 @@
       "gamma_psi": 3613999,
       "psi": 793669
     }
+  },
+  "archived_schema_before_carry_normalization": {
+    "status": "PASS_COMPLETE_HASH_SCOPE_DUPLICATE_AND_COUNT_CHECK",
+    "allocated_job": "116800.head.local",
+    "compute_node": "n06.local",
+    "counts": {
+      "gamma_psi": 3613999,
+      "psi": 793669
+    },
+    "log": "n06.local\ngamma_psi {'terms': 3613999, 'factors': 20978, 'nonlinear_interior_terms': 55901, 'standard_operation_argument_terms': 1565241}\npsi {'terms': 793669, 'factors': 14174, 'nonlinear_interior_terms': 34243, 'standard_operation_argument_terms': 911981}\nPASS: complete explicit coefficient tables, hashes, and term counts\n"
+  },
+  "carry_normalization": {
+    "gamma_psi": {
+      "status": "PASS_EXACT_COMPLETE_EXPRESSION_NORMALIZATION",
+      "sector": "gamma_psi",
+      "source_terms": 3613999,
+      "normalized_terms": 3613517,
+      "removed_outer_summands": 482,
+      "zero_outer_summands": 0,
+      "source_factors": 20978,
+      "normalized_factors": 20866,
+      "exact_factor_definition_equality": true,
+      "exact_complete_outer_polynomial_equality": true,
+      "allowed_identity": "B4[n,0]=B4psi[n] over the integers, including ordinary differentials and all binary digits",
+      "rules": {
+        "B_zero_Majorana_equals_Bpsi": 1215,
+        "identical_factor": 112
+      },
+      "normalization_map_sha256": "d66174a53b9a81ea7d5303e08aad00a86fcdfa940a9d2ff64511522be6c110d2",
+      "representative_change": false
+    },
+    "psi": {
+      "status": "PASS_EXACT_COMPLETE_EXPRESSION_NORMALIZATION",
+      "sector": "psi",
+      "source_terms": 793669,
+      "normalized_terms": 793669,
+      "removed_outer_summands": 0,
+      "zero_outer_summands": 0,
+      "source_factors": 14174,
+      "normalized_factors": 14080,
+      "exact_factor_definition_equality": true,
+      "exact_complete_outer_polynomial_equality": true,
+      "allowed_identity": "B4[n,0]=B4psi[n] over the integers, including ordinary differentials and all binary digits",
+      "rules": {
+        "B_zero_Majorana_equals_Bpsi": 1388,
+        "identical_factor": 94
+      },
+      "normalization_map_sha256": "6b1361e947e63e9a6ec6af95dd867a8547a2c0ba884d300ba9a399c8e3b81d77",
+      "representative_change": false
+    }
+  },
+  "schema_verification": {
+    "status": "PASS_COMPLETE_HASH_SCOPE_DUPLICATE_AND_COUNT_CHECK",
+    "job": "116809.head.local",
+    "counts": {
+      "gamma_psi": 3613517,
+      "psi": 793669
+    },
+    "log": "n06.local\ngamma_psi {'terms': 3613517, 'factors': 20866, 'nonlinear_interior_terms': 55901, 'standard_operation_argument_terms': 1559782}\npsi {'terms': 793669, 'factors': 14080, 'nonlinear_interior_terms': 34243, 'standard_operation_argument_terms': 907643}\nPASS: complete explicit coefficient tables, hashes, and term counts\n"
   }
 }

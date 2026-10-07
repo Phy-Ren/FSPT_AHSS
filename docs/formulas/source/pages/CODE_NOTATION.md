@@ -17,6 +17,22 @@ See the [runtime interface](README.md#runtime-interface) for calling conventions
 and the [operation registry](FORMULA_REGISTRY.json) for exact source hashes and
 compiled targets.
 
+## Exact simplifications in the reader formulas
+
+The source exchange identity in 3+1D uses the complete lower `dn3`, not
+only its pure-Majorana part. Its standalone verifier retains the former
+25 MS words and checks their equality with the seven current words.
+The ordinary source cups also use that same complete lower differential.
+
+The open-Majorana self-stacking reductions in 3+1D and 4+1D preserve the
+phase representative exactly. The 3+1D whole binary lift is evaluated
+before conversion to the integer phase coefficient. The 4+1D coefficient
+normalization identifies `B4(n,0)` with its already defined integer-only
+part `B4psi(n)`; it does not distribute a protected lift or change its
+arguments. The public coefficient receipts record these identities.
+No numerical kernel, representative map, or saved group result changes
+as a consequence of these exact reader-formula rewrites.
+
 ## Public integer-layer API
 
 For spatial dimension $`d=3,4`$, the source call accepts the following entries

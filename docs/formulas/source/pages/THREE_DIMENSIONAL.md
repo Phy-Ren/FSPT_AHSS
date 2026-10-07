@@ -93,8 +93,15 @@ that physical origin.
 
 {{equation:three-dimensional--complex-fermions-and-p-ip-decoration--13}}
 
-The finite sum contains **25 specified MS terms**, [listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices). Every term contains
-$`d\check n_2=\check\omega_2\bar n_1`$; this lower source has one cup term.
+The finite sum contains **seven specified MS terms**,
+[listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices).
+Together with the three displayed cups, this gives **ten terms**.
+Every MS term contains $`d\check n_2=\check\omega_2\bar n_1`$ and
+$`dn_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}
++\mathcal{𝒪}_4^\psi`$. Thus the complex-fermion exchange correction
+depends on its full lower parity differential. The
+[exact reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
+changes neither the source representative nor the paired stacking law.
 
 #### Majorana decoration
 

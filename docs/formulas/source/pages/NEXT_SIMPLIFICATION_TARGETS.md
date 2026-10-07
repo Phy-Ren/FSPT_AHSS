@@ -44,14 +44,14 @@ be self-stacking specializations. Complete gauges and CF/bosonic reduction
 remain part of the algorithm. The full two-input formulas remain available.
 
 The [complete 3+1D self-stacking reference](THREE_DIMENSIONAL_SELF_STACKING.md)
-now contains both required branches: ten terms for zero p+ip and 1,417
+now contains both required branches: ten terms for zero p+ip and 1,414
 terms for the canonical torsion root. The latter retains all six physical
 contributions and its actual open lower fields. Its 1,130-product mixed
 half-valued sum is the next bounded target for structural compression.
 
 The [complete 4+1D self-stacking reference](FOUR_DIMENSIONAL_SELF_STACKING.md)
 also includes nonzero p+ip. Its finite mixed and pure sums still have
-3,613,999 and 793,669 terms. The extended root-power construction covers
+3,613,517 and 793,669 terms. The extended root-power construction covers
 the current finite-group odd orders under its stated arithmetic condition.
 This establishes a useful restricted target, not a finished minimal formula.
 The [simplification record](SIMPLIFICATION_PROGRESS.md) separates results

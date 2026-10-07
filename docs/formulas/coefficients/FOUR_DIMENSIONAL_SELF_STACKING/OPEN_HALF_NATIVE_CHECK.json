@@ -1,0 +1,13 @@
+{
+  "status": "PASS_NATIVE_OPEN_HALF_REDUCTION",
+  "cases": 512,
+  "old_MS": 218,
+  "new_MS": 187,
+  "unchanged_half_face_products": 2,
+  "unchanged_quarter_outer_terms": 11,
+  "new_total_outer_terms": 200,
+  "new_total_with_106_lift_interiors": 302,
+  "integer_open_identity": "d beta_open u = -beta(d u), exactly over the integers",
+  "representative_change": false,
+  "domain": "arbitrary open binary u and closed backgrounds; both values computed by independent signed-cut/native integer conventions"
+}

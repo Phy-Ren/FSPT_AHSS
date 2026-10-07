@@ -225,9 +225,9 @@
     {
       "output": "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md",
       "source": "pages/FOUR_DIMENSIONAL_SELF_STACKING.md",
-      "sha256": "3e8a748e36deae99c96f8ddf78ba6d87dfce6e4aed696f7e05a6968393179cb7",
+      "sha256": "156278951de48e59ceca99cff65110908594027ba774911179f7344466488c72",
       "dependencies": {
-        "pages/FOUR_DIMENSIONAL_SELF_STACKING.md": "a403cda9346f488bee50194a1b1a1475512fe90ac3f5e0ca2b3d1fd829899063",
+        "pages/FOUR_DIMENSIONAL_SELF_STACKING.md": "b0d99c7bfc3e4fd3dbc903cdaab4acdb759b802cc941327c79fd41aaa8afe716",
         "equations/four-dimensional-self-stacking--1-integer-decoration--1.tex": "f395868d523650872a5591bb3619c0c31f59d48d10c49a85ac109684c37324c0",
         "equations/four-dimensional-self-stacking--2-majorana-decoration--2.tex": "3bd8bec4539cfdc5922d64fc2f944f221ceb3fc196be7b2e36039ac795d2caaf",
         "equations/four-dimensional-self-stacking--3-complex-fermion-decoration--3.tex": "6b067a091e580e4d02b0cbd002aec87a6705e7e5739fe7f0138df8f4e2eecaef",
@@ -238,7 +238,7 @@
         "equations/four-dimensional-majorana-diagonal--complex-fermions--5.tex": "60e4b33495f3beac83bfc1eda4dd2edb66d34150f5fdb2864fd96389e53d4138",
         "equations/four-dimensional-self-stacking--complex-fermions-and-majorana-decoration--8.tex": "4989952455bc32e244f057cca1834576c7fe6e437d58099e2c7d25f35bf50440",
         "equations/four-dimensional-self-stacking--complex-fermions-and-p-ip-decoration--9.tex": "95058f6bc07fa88b67d2257233bebb9dd0cb15436494480fe827f057fadaad92",
-        "equations/four-dimensional-self-stacking--majorana-decoration--10.tex": "49a7b7e5a06a64f7688852723ca3485b3228055673f6f39b089a7d155380625b",
+        "equations/four-dimensional-self-stacking--majorana-decoration--10.tex": "fb7d99c8ce6cbfc24c748905490c3d90010f750a1db194758bd62bad57450f64",
         "equations/four-dimensional-self-stacking--majorana-and-p-ip-decoration--11.tex": "0fbf975bcda445596e5c9fa9743b7f0b8e73aa8bc6861dc07ccda2364a4174f2",
         "equations/four-dimensional-self-stacking--p-ip-decoration--12.tex": "8ceec2be7845aba6d4468ab29d3bf53727ad8fae08e22bcffa8b730fccc7fbd1",
         "equations/four-dimensional-self-stacking--5-integer-carries-and-binary-quarter-numerators--13.tex": "5a90d7fb77cd4c4326f7ac10ae225971c60f713231ec7934e169bbd920d6d7ce",
@@ -250,9 +250,9 @@
     {
       "output": "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md",
       "source": "pages/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md",
-      "sha256": "87fc8d47b47362011712145f528b34df0ff6cc809e69b6201317476672d36f71",
+      "sha256": "300d9b9fd5e8a4eef9e39bccb6e8ab18f39905cb9594408fab3666e71b29c2d8",
       "dependencies": {
-        "pages/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md": "61fa895025325da32d544a1ec2d4a56aa1ba0aea9be9c19a38739bc3ec29384f"
+        "pages/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md": "1a21813dc8d708aa71e57a19f2701855f7bdcffa4c611f160dafca78be454e6a"
       }
     },
     {
@@ -264,11 +264,26 @@
       }
     },
     {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md",
+      "source": "pages/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md",
+      "sha256": "47785e195e4f8d0b10b458213bf75436568fc8c8ba8694a4bec28ff4c4b51caf",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md": "7576be909b189ac83f77bfc4e01756b33e6eabfc1b1d5da43452e3b975566976",
+        "equations/four-dimensional-self-stacking-reduction--open-majorana-cochains--1.tex": "ac418040d764a269bf947eac0c1a2231a7f1eb6569d2a5cc9a7c361d727a5dcd",
+        "equations/four-dimensional-self-stacking-reduction--open-majorana-cochains--2.tex": "ea2edc56c24f91c464720ca474ad5e6c957ecc31f3385c874645b31968d3bfe8",
+        "equations/four-dimensional-self-stacking-reduction--the-lower-obstruction-inside-the-fractional-correcti--3.tex": "6bb4b886a6ce6625b41437e05620e56a94aec931198e9d2b2960d91d88d081cc",
+        "equations/four-dimensional-self-stacking-reduction--the-lower-obstruction-inside-the-fractional-correcti--4.tex": "844db8b2d3ae85066be962b0fd9529574d45373a4e21722f6e74395bb3ff4112",
+        "equations/four-dimensional-self-stacking-reduction--the-lower-obstruction-inside-the-fractional-correcti--5.tex": "1438fb62340b586d6764299e2301a1018b183e5deefde40340255886278080ce",
+        "equations/four-dimensional-self-stacking-reduction--reusing-the-integer-only-carry--6.tex": "b7a8cb37e544499f92893eea2ba934a4f57ca1a8a02e553769236d2e5d9a017d",
+        "equations/four-dimensional-self-stacking-reduction--reusing-the-integer-only-carry--7.tex": "ce8b22678ee6fbda0bfa97d4cde5af0a9d889cc67df04e3fc79088e83ec50e05"
+      }
+    },
+    {
       "output": "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md",
       "source": "pages/FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md",
-      "sha256": "3d38f4d684bdedf70800e80f4de2f110fd2a75df26eb48336587c689fb4e3940",
+      "sha256": "37f657c03a915b22349edad5cce93589a185ae5e80ad7ecefc815da8d9971a18",
       "dependencies": {
-        "pages/FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md": "686146e1bdfb7da27e55c04508d6214acf7fa64e003d48639182b2393c08e6de"
+        "pages/FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md": "ccd563a43cf99ceffc28a399694f8bdb00a8078bcb88086fa6b3f54ade3be80c"
       }
     },
     {
@@ -389,9 +404,9 @@
     {
       "output": "docs/formulas/NEXT_SIMPLIFICATION_TARGETS.md",
       "source": "pages/NEXT_SIMPLIFICATION_TARGETS.md",
-      "sha256": "409cdfbd81fae248f99e9f65e17e2ed8a08e4fe790eefbaa9813940dc66d21e8",
+      "sha256": "23260235957c416183faa51e235b2a38998f3aba4e7475825135e9051fb4279d",
       "dependencies": {
-        "pages/NEXT_SIMPLIFICATION_TARGETS.md": "29391ff328afac870778c7266e997c8086a0dbe61a96d9be520d902f3d85d40a"
+        "pages/NEXT_SIMPLIFICATION_TARGETS.md": "2cb79661b471945264020eb83162f3c63fc10b2c71fb5404eb154a83aabe3779"
       }
     },
     {
@@ -474,9 +489,9 @@
     {
       "output": "docs/formulas/SIMPLIFICATION_PROGRESS.md",
       "source": "pages/SIMPLIFICATION_PROGRESS.md",
-      "sha256": "489fa987bee14c0c7b8c1c422ab1c3ce518509e5b6c3de138cb0bf1c1e32ed4b",
+      "sha256": "1ad6337bd50e074803ee9597a339b82c8810a40231871cd3f888ea9a3dd825fb",
       "dependencies": {
-        "pages/SIMPLIFICATION_PROGRESS.md": "537d1961de270ec551efa600479ebc72b1feb05fe458263c2085d155d40f0f9f"
+        "pages/SIMPLIFICATION_PROGRESS.md": "1bf94b2149f54428b9c8adf04947c2c3b2f7ca8115897bd6238f82b675702958"
       }
     },
     {
@@ -517,17 +532,17 @@
     {
       "output": "docs/formulas/TERM_COUNTS.md",
       "source": "pages/TERM_COUNTS.md",
-      "sha256": "e960c0ca63cad8d672c7db2e76c0f50c8fc4710635fd5ff8fc0dbd1bbb85254a",
+      "sha256": "ddf6e5ec491968ec9799a2e8d7ab4e586ef9e8589fa70760ca4fbbdaa58a31ff",
       "dependencies": {
-        "pages/TERM_COUNTS.md": "1edd54c80fe907c87c9c60041ea6f15f0e5d1b78fdbf40219c5cdb6782d2b8fa"
+        "pages/TERM_COUNTS.md": "9a0e23aad24eebf92c9c86be344372afb185328fe2ea2133f6342b1e1ddbeed1"
       }
     },
     {
       "output": "docs/formulas/THREE_DIMENSIONAL.md",
       "source": "pages/THREE_DIMENSIONAL.md",
-      "sha256": "7266c69a72e38387d6880ce70217eecbf0789a4d173b17629ffc589144d12995",
+      "sha256": "c52586f25751a340729fc571e976da2017bf55e950dc0528ce811c93850ba404",
       "dependencies": {
-        "pages/THREE_DIMENSIONAL.md": "c389d347035f9704b82203c86d271b3617ea6789afaff7a2079a63230d73106a",
+        "pages/THREE_DIMENSIONAL.md": "4fa9ec4b6a9ae4807d7b2c29a50c24ff09ed27228acb36b30d354280c262ab76",
         "equations/three-dimensional--3-1d--1.tex": "9f9af291b96ab6a9dd8965bed3faa4d68aa5c5c8a9bd7e249feb8eeb51187854",
         "equations/three-dimensional--1-p-ip-obstruction--2.tex": "04e0ab50b72058a681c063c341c260a10466f211205d87b8876b79db995f9ab2",
         "equations/three-dimensional--2-majorana-obstruction--3.tex": "2a94441d339c1d0b9f992efe3e23d12fdaccd79c14cc7e666fcfedbd340b599e",
@@ -540,7 +555,7 @@
         "equations/three-dimensional--4-bosonic-obstruction--10.tex": "54b1c28eca885ab771847999b30b430eb01d3c908c2cee4bae0940c64b0eeff3",
         "equations/three-dimensional--complex-fermions--11.tex": "a4ec14cdc7ca48d3a65e9711319e899b5e19141ba7093d32a309d0c4c1cae7a1",
         "equations/three-dimensional--complex-fermions-and-majorana-decoration--12.tex": "18c41a22f85488bb3c00a023d0b11f5cd880b4c4984d59c43739e5c25c6f52df",
-        "equations/three-dimensional--complex-fermions-and-p-ip-decoration--13.tex": "73feb2dfe206bd1ab071c4dd792682142951d8daf4408d90217e548adc13cff1",
+        "equations/three-dimensional--complex-fermions-and-p-ip-decoration--13.tex": "fb59773ae729f407559692f7febec19c6551796e77731d8e8c9d5b133104abee",
         "equations/three-dimensional--majorana-decoration--14.tex": "66dae5e8f71954dd9bde95b3c07a4a605f8dd010c15571359dba092164410b65",
         "equations/three-dimensional--majorana-decoration--15.tex": "04e53610e66da6f4b01cc43031e3265b53cd60f2840683dfc0ccc51113d10724",
         "equations/three-dimensional--majorana-and-p-ip-decoration--16.tex": "ed841dfdc25d32c2bf1b06c1a9571d1522e6c1c357e21321a40f429721b535f6",
@@ -574,12 +589,13 @@
     {
       "output": "docs/formulas/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md",
       "source": "pages/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md",
-      "sha256": "33a07a20572d7281738d2458b90bf8eea6e1a33f30f864b43f296d65eef769a4",
+      "sha256": "1c6f784e3de9ea0d5813f12f7b9f3d11f341b4202e0d2e8b88cc1cf75794f2e9",
       "dependencies": {
-        "pages/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md": "faa08353bcb1373c4e1f45b12bd29b2f133fa2deff423844e86dfe80eb5014e6",
+        "pages/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md": "eccc71b17d5de6c449da2543d4cc34f460c36754026a963a95de519a4cf8d7ad",
         "equations/three-dimensional--complex-fermions-and-p-ip-decoration--30.tex": "64109302a6b9e5c13b8051ab2a1dff32f835611accd87ca9072030d282292800",
         "equations/three-dimensional-cf-exchange-reduction--general-3-1d-complex-fermion-exchange-reduction--4.tex": "c7c7a7fa39c7ec4ffc58146d8627fbcc23fae791a448dc331b76f9f7d7a9ef3b",
-        "equations/three-dimensional-cf-exchange-reduction--general-3-1d-complex-fermion-exchange-reduction--2.tex": "48981156022578e6f565032c4f6444480450ee8fb5055fefc2d952097ed770d1"
+        "equations/three-dimensional-cf-exchange-reduction--general-3-1d-complex-fermion-exchange-reduction--2.tex": "48981156022578e6f565032c4f6444480450ee8fb5055fefc2d952097ed770d1",
+        "equations/three-dimensional--complex-fermions-and-p-ip-decoration--13.tex": "fb59773ae729f407559692f7febec19c6551796e77731d8e8c9d5b133104abee"
       }
     },
     {
@@ -606,6 +622,14 @@
         "pages/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md": "7bbc457904c01aded7133ed0708524391618325d1ed704a915b218fb7433d506",
         "equations/three-dimensional-majorana-self-stacking--why-the-intrinsic-word-terms-disappear--8.tex": "c633aa993ffaf506cec8d0e0dd6ed5db51a39799008793e29a0912e54862d658",
         "equations/three-dimensional-majorana-self-stacking--why-the-intrinsic-word-terms-disappear--9.tex": "7b690ae33180da5ef191ca44daf2fdff0d64b0b937472b401c47175cb72da55b"
+      }
+    },
+    {
+      "output": "docs/formulas/THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md",
+      "source": "pages/THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md",
+      "sha256": "f08eaf24ee356bd9bf5fc5ded9a553a1254a7e5705816e56aff7b5d8a03851b4",
+      "dependencies": {
+        "pages/THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md": "d5f9e9cf51bf0cf570f0070f3a3848f082b479f5d9d6a26c11c736ff5e96b0d3"
       }
     },
     {
@@ -643,9 +667,9 @@
     {
       "output": "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md",
       "source": "pages/THREE_DIMENSIONAL_SELF_STACKING.md",
-      "sha256": "218f83d3c7c234bdca7d80ee4e7bc276f342ccd4f008175bee5d8ec277b520e5",
+      "sha256": "c5a91c5b5a4baf15748da7f92c8a14698928babc7756a96b654e5c218a2ccff3",
       "dependencies": {
-        "pages/THREE_DIMENSIONAL_SELF_STACKING.md": "ae2224eaa2ca8fe1afc224e9f616e7d48a54f0459254c697cedd89e46e36775a",
+        "pages/THREE_DIMENSIONAL_SELF_STACKING.md": "cda55f1142464f72c6ac73d73afba48351eff3df4c611bacfdbb0a69fd9b5133",
         "equations/three-dimensional-self-stacking--1-p-ip-self-stacking--1.tex": "57d028f51946620148abc2f005b2e237694063c7e839a54f6d74475f19e96531",
         "equations/three-dimensional-self-stacking--2-majorana-self-stacking--2.tex": "3a34ced495de77feee28bebc92a373ab064819c4e3cd71594ddd8603ed68a8bc",
         "equations/three-dimensional-self-stacking--3-complex-fermion-self-stacking--3.tex": "c46ca94783946a3091395ad46404d55c61ab21f8fe213947e9926c9106e02536",
@@ -662,7 +686,7 @@
         "equations/three-dimensional-self-stacking--5-bosonic-self-stacking-of-the-canonical-p-ip-torsio--14.tex": "092ccab1148f3660baa9ca3df2a09e6e93deb2c467864c395c8fb0d8f144eeda",
         "equations/three-dimensional-self-stacking--complex-fermions-and-majorana-decoration--15.tex": "17f31e56dff6264e4e08b2eec6a7843091d9448942085a9832223d75bb7cdc84",
         "equations/three-dimensional-self-stacking--complex-fermions-and-p-ip-decoration--16.tex": "45bd06680073c6fea966c9141b7f8781bbe2b06b4253b138b88457576b4d2071",
-        "equations/three-dimensional-self-stacking--majorana-decoration--17.tex": "daa0c99cd33f625016047aa7d19cf1b0e3fbdb090f98f862994a53514d226e7d",
+        "equations/three-dimensional-self-stacking--majorana-decoration--17.tex": "ee57a702f5d02bfc2f82c443e2583c5df26a5e0dd8d0f4db7b0dc91747ea78d1",
         "equations/three-dimensional-self-stacking--majorana-and-p-ip-decoration--18.tex": "4525e7e98c27c95cb9ed7e399427d36a038d24cb896e24a03abb58adb9ad5550",
         "equations/three-dimensional-self-stacking--majorana-and-p-ip-decoration--19.tex": "2278883c30292ad557ae4636c379ff51821c39130f51d27f1ff2eaa76e7b3a47",
         "equations/three-dimensional-self-stacking--p-ip-decoration--20.tex": "193151a909f19e74c6553f2b5655d974e4f644d23a77c5bfff7f2d9beb1e4c17"
@@ -763,9 +787,9 @@
     {
       "output": "docs/formulas/THREE_DIMENSIONAL_WORD_INDICES.md",
       "source": "pages/THREE_DIMENSIONAL_WORD_INDICES.md",
-      "sha256": "af54954d111b6c9eaa0988323188afec51f3cec8b71834b321542b62398574f5",
+      "sha256": "8ccf482c4440ee2d86ec3ce613a3eaa0791be7a76e93bc5c7f71530c334ce97e",
       "dependencies": {
-        "pages/THREE_DIMENSIONAL_WORD_INDICES.md": "42edb3fdbeab259236fd0ee38faf8e70fc7f9d18ca352cbc13964795f10ec761"
+        "pages/THREE_DIMENSIONAL_WORD_INDICES.md": "c4353422c0115775ac4dc7a235bce9b0db3627358b1526677956c57a02666bff"
       }
     },
     {
@@ -808,9 +832,9 @@
     {
       "output": "formulas/CODE_NOTATION.md",
       "source": "pages/CODE_NOTATION.md",
-      "sha256": "fb4056e6044737543b469d81b549524c3f6e0148348ad33a4517c073609e7116",
+      "sha256": "76e016f34d70a0ab2f1e8d285a376ddcb77e1e69641e104baaf726885d9932ea",
       "dependencies": {
-        "pages/CODE_NOTATION.md": "43e55b82aa37fd16a2c6cfee7bbf4b142fcfbb4aab2ca4f8ffaaa0efd1049301",
+        "pages/CODE_NOTATION.md": "be95b91b5ef0fd9435fb37bc6124bddc3afe3ec63b475b216720e449f9ca36c8",
         "equations/code-notation--public-integer-layer-api--1.tex": "90aa7e23200db40a296ae359bbe2783a01fbc007809577e64ca5381d08e0eae1"
       }
     }
@@ -1377,7 +1401,7 @@
       ]
     },
     "equations/four-dimensional-self-stacking--majorana-decoration--10.tex": {
-      "sha256": "49a7b7e5a06a64f7688852723ca3485b3228055673f6f39b089a7d155380625b",
+      "sha256": "fb7d99c8ce6cbfc24c748905490c3d90010f750a1db194758bd62bad57450f64",
       "used_by": [
         "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
       ]
@@ -1416,6 +1440,48 @@
       "sha256": "77e7fac0b4951670d34ce703fd9d6ee6e425b93f3ca90d7e4e42c2750f891224",
       "used_by": [
         "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking-reduction--open-majorana-cochains--1.tex": {
+      "sha256": "ac418040d764a269bf947eac0c1a2231a7f1eb6569d2a5cc9a7c361d727a5dcd",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking-reduction--open-majorana-cochains--2.tex": {
+      "sha256": "ea2edc56c24f91c464720ca474ad5e6c957ecc31f3385c874645b31968d3bfe8",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking-reduction--the-lower-obstruction-inside-the-fractional-correcti--3.tex": {
+      "sha256": "6bb4b886a6ce6625b41437e05620e56a94aec931198e9d2b2960d91d88d081cc",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking-reduction--the-lower-obstruction-inside-the-fractional-correcti--4.tex": {
+      "sha256": "844db8b2d3ae85066be962b0fd9529574d45373a4e21722f6e74395bb3ff4112",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking-reduction--the-lower-obstruction-inside-the-fractional-correcti--5.tex": {
+      "sha256": "1438fb62340b586d6764299e2301a1018b183e5deefde40340255886278080ce",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking-reduction--reusing-the-integer-only-carry--6.tex": {
+      "sha256": "b7a8cb37e544499f92893eea2ba934a4f57ca1a8a02e553769236d2e5d9a017d",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md"
+      ]
+    },
+    "equations/four-dimensional-self-stacking-reduction--reusing-the-integer-only-carry--7.tex": {
+      "sha256": "ce8b22678ee6fbda0bfa97d4cde5af0a9d889cc67df04e3fc79088e83ec50e05",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md"
       ]
     },
     "equations/general-mixed-quarter-polarization--polarization-of-the-binary-majorana-stacking-carry--1.tex": {
@@ -2336,9 +2402,10 @@
       ]
     },
     "equations/three-dimensional--complex-fermions-and-p-ip-decoration--13.tex": {
-      "sha256": "73feb2dfe206bd1ab071c4dd792682142951d8daf4408d90217e548adc13cff1",
+      "sha256": "fb59773ae729f407559692f7febec19c6551796e77731d8e8c9d5b133104abee",
       "used_by": [
-        "docs/formulas/THREE_DIMENSIONAL.md"
+        "docs/formulas/THREE_DIMENSIONAL.md",
+        "docs/formulas/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md"
       ]
     },
     "equations/three-dimensional--majorana-decoration--14.tex": {
@@ -2667,7 +2734,7 @@
       ]
     },
     "equations/three-dimensional-self-stacking--majorana-decoration--17.tex": {
-      "sha256": "daa0c99cd33f625016047aa7d19cf1b0e3fbdb090f98f862994a53514d226e7d",
+      "sha256": "ee57a702f5d02bfc2f82c443e2583c5df26a5e0dd8d0f4db7b0dc91747ea78d1",
       "used_by": [
         "docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md"
       ]

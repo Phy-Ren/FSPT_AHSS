@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "independent_binary_variables": 50,
+  "method": "Exact universal Boolean coefficient identity",
+  "old_MS_terms": 25,
+  "new_MS_terms": 7,
+  "new_inputs": [
+    [
+      "dn3",
+      "omega2",
+      "dcheckn2"
+    ],
+    [
+      "dn3",
+      "s1",
+      "checkn2",
+      "dcheckn2"
+    ]
+  ],
+  "collected_face_coefficients": 176,
+  "residual_coefficients": {
+    "omega_part": 0,
+    "signed_part": 0,
+    "complete_exchange_sum": 0
+  },
+  "closed_backgrounds": [
+    "omega2",
+    "s1"
+  ],
+  "lower_source_equations_imposed": false,
+  "phase_representative_change": false,
+  "source_or_stacking_transport_required": false
+}

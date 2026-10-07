@@ -19,6 +19,11 @@ structural ideas whose full application remains to be derived.
   The accompanying eight-word auxiliary polynomial is also replaced by
   the lower Majorana obstruction, eliminating its symbol. The complete
   c-psi contribution falls from 202 to 29 terms.
+- **3+1D source exchange:** its 25-word correction is seven MS words,
+  all using the full complex-fermion differential. Reusing that same
+  lower equation also reduces five ordinary cups to three. The complete
+  c-psi source contribution drops from 30 to ten terms with exact equality.
+  [Proof and executable certificate](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential).
 - **4+1D mixed quarter numerator:** its three pairs of four cup terms
   become three pairs of three terms by the
   [higher-cup polarization identity](GENERAL_MIXED_QUARTER_POLARIZATION.md).
@@ -40,15 +45,23 @@ this documentation update does not claim a new runtime benchmark.
 |---|---:|---|
 | 2+1D, zero integer decoration | 8 terms | [Formula and exact proof](TWO_DIMENSIONAL_SELF_STACKING.md) |
 | 3+1D, zero p+ip | 10 terms | [Complete self-stacking](THREE_DIMENSIONAL_SELF_STACKING.md) |
-| 3+1D, canonical torsion p+ip root | 1,417 terms | [All six contributions](THREE_DIMENSIONAL_SELF_STACKING.md) |
+| 3+1D, canonical torsion p+ip root | 1,414 terms | [All six contributions](THREE_DIMENSIONAL_SELF_STACKING.md) |
 | 4+1D, zero p+ip | 30 terms, with its explicit output gauge | [Complete closed specialization](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md) |
-| 4+1D, arbitrary permitted p+ip | 4,408,100 outer terms | [Complete self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md) |
+| 4+1D, arbitrary permitted p+ip | 4,407,587 outer terms | [Complete self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md) |
 
-The full open Majorana contribution in the last row has 231 outer terms,
+The 3+1D open-Majorana contribution now has 13 outer terms instead of
+16. Its [canonical-lift identity](THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md)
+reuses the lower Majorana obstruction; one whole lift has two interior terms.
+The 4+1D open-Majorana word identity removes 31 terms, and identifying the
+same integer carry evaluated with zero Majorana input removes 482 mixed
+terms. These are exact changes in the same phase representative.
+[4+1D derivation and checks](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md).
+
+The full open Majorana contribution in the last row has 200 outer terms,
 including four lifts with 106 interior products. Replacing only those
-four wrappers in the count by their interiors gives 333 expression leaves
+four wrappers in the count by their interiors gives 302 expression leaves
 for that contribution. The remaining large mixed and pure coefficient
-sums have 3,613,999 and 793,669 terms. All are specified explicitly; none
+sums have 3,613,517 and 793,669 terms. All are specified explicitly; none
 is counted as one term merely because it is written as a sum.
 
 The [root-power theorem](ROOT_POWER_PRESENTATIONS.md) explains why two

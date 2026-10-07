@@ -153,7 +153,7 @@ With the existing integer carry $`B_4^\gamma=\beta^\circ\check n_3`$,
  B_4^\gamma\cup_3B_4^\gamma
  +\check n_3\cup_1\check n_3-\omega_2\check n_3
  +\check n_3\cup_2d\check n_3
- +dB_4^\gamma\cup_4B_4^\gamma\\
+ -\beta\big(\check{\mathcal{𝒪}}_4[n_2]\big)\cup_4B_4^\gamma\\
 &\qquad-(d\check n_3)_{01234}(d\check n_3)_{01245}
  -(d\check n_3)_{01234}(d\check n_3)_{02345}\\
 &\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
@@ -162,15 +162,20 @@ With the existing integer carry $`B_4^\gamma=\beta^\circ\check n_3`$,
 \end{aligned}
 ```
 
-The first sum contains **218 specified MS terms** in the
+The first sum contains **187 specified MS terms** in the
 [self-stacking word table](FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md).
 The final sum contains **four whole binary lifts**, with signs
 $`+,-,-,+`$ and respectively **5, 15, 10, and 76 interior terms** in the
 [self-stacking lift table](FOUR_DIMENSIONAL_SELF_STACKING_LIFTS.md).
-The complete contribution has **231 outer terms**, or **333 explicit
+The complete contribution has **200 outer terms**, or **302 explicit
 occurrences** when the four lift wrappers are replaced in the count by
 their 106 interior products. Every lift boundary is retained.
 
+The [exact cochain-identity reduction](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md)
+collects the earlier 218 MS terms into 187, without changing any quarter phase. The derivative in the quarter bracket
+uses the exact lower-obstruction identity
+$`dB_4^\gamma=-\beta(\check{\mathcal{𝒪}}_4[n_2])`$
+on the stated input tower.
 This is the same open-cochain representative as the general formula.
 No cocycle hypothesis on $`\check n_3`$ has been imposed. If p+ip
 vanishes and $`d\check n_3=0`$, the further closed-Majorana reduction
@@ -195,13 +200,13 @@ and its explicitly stated output gauge remain available separately.
 \end{aligned}
 ```
 
-This is the complete restricted coefficient sum: **3,613,999 terms**.
+This is the complete restricted coefficient sum: **3,613,517 terms**.
 The [explicit coefficient files](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/INDEX.json)
 include the completed transfer and tensor contributions before the two
 external inputs are identified. The remaining terms give **181 outer
 terms** after the three displayed quarter numerators are substituted and
 their linear sums distributed, retaining standard lower operations.
-Thus this contribution currently has **3,614,180 outer terms**; the
+Thus this contribution currently has **3,613,698 outer terms**; the
 protected mixed lift has eight interior terms. This large residual is
 preserved as exact verification data and remains a target for structural
 simplification.

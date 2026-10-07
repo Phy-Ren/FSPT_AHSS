@@ -77,7 +77,7 @@ listed in the [structured count ledger](term_census/STRUCTURED_TERM_COUNTS.json)
 | 3+1D | O2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 3+1D | O3 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
 | 3+1D | O4 | 0 | 0 | 0 | 3 | 2 | 5 | 10 |
-| 3+1D | O5 | 3 | 4 | 30 | 15 | 2,281 | 11,416 | 13,749 |
+| 3+1D | O5 | 3 | 4 | 10 | 15 | 2,281 | 11,416 | 13,729 |
 | 3+1D | E1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 3+1D | E2 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
 | 3+1D | E3 | 0 | 0 | 0 | 2 | 5 | 13 | 20 |
@@ -122,13 +122,17 @@ completions. The integer output is retained before full gauge reduction.
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 2+1D, zero integer decoration | 1 | 1 | 0 | 6 | 0 | 0 | **8** |
 | 3+1D, zero p+ip | 1 | 1 | 0 | 8 | 0 | 0 | **10** |
-| 3+1D, canonical torsion p+ip | 1 | 3 | 5 | 16 | 1,142 | 250 | **1,417** |
-| 4+1D, arbitrary permitted p+ip | 1 | 3 | 2 | 231 | 3,614,180 | 793,683 | **4,408,100 outer terms** |
+| 3+1D, canonical torsion p+ip | 1 | 3 | 5 | 13 | 1,142 | 250 | **1,414** |
+| 4+1D, arbitrary permitted p+ip | 1 | 3 | 2 | 200 | 3,613,698 | 793,683 | **4,407,587 outer terms** |
+
+The 3+1D open-Majorana entry has one whole lift with two interior terms;
+counting that interior gives 14 leaves for the contribution and 1,415 for
+the complete canonical torsion twister. The outer count remains 1,414.
 
 The 4+1D Majorana entry has four protected lifts containing 106 products.
-Replacing only those four wrappers by their interiors gives 333 expression
-leaves for that contribution and 4,408,202 for the corresponding total.
-The full restricted mixed and pure finite sums contain 3,613,999 and
+Replacing only those four wrappers by their interiors gives 302 expression
+leaves for that contribution and 4,407,689 for the corresponding total.
+The full restricted mixed and pure finite sums contain 3,613,517 and
 793,669 terms. Their nonlinear interiors and lower-operation argument
 arrays are recorded separately in the coefficient indices. The same
 zero-p+ip 4+1D sector admits a further **30-term** complete formula with
