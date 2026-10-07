@@ -34,6 +34,25 @@ canonical lifts have separately recorded interior counts. Thus the
 operation with its three defining terms stated explicitly; it does not
 treat its 623,880-term finite completion as one term.
 
+## A smaller target for group reconstruction
+
+The [root-power presentation theorem](ROOT_POWER_PRESENTATIONS.md)
+identifies which products determine the abstract abelian group. In 3+1D,
+a basis adapted to the single possible distinguished Majorana target
+allows all Majorana and p+ip terminal products in that reconstruction to
+be self-stacking specializations. Complete gauges and CF/bosonic reduction
+remain part of the algorithm. The full two-input formulas remain available.
+
+The complete [zero-p+ip 3+1D self-stack](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md)
+now has ten terms in the current phase representative. The remaining
+finite p+ip root, when present, can be chosen with $`n_1=s_1`$. This fixes
+a much smaller specialization to simplify next, while retaining the
+actual open Majorana field, CF completion, and integer-output gauge.
+
+In 4+1D, general cyclic p+ip orders and several lower target vectors
+require a broader construction. The closed-Majorana diagonal is already
+small, but it does not replace cyclic powers with nonzero p+ip decoration.
+
 ## Proposed reductions
 
 1. **The 4+1D Majorana–p+ip source and product.** The source still contains

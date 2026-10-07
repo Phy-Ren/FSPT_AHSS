@@ -1,8 +1,59 @@
-# The closed Majorana diagonal in 4+1D
+# Self-stacking in 4+1D with no p+ip decoration
 
-For $`d\check n_3=0`$, the Majorana self-stacking phase has the following
-representative. Its explicit relation to the complete open formula is
-given below.
+Take a complete state with $`n_2=0`$, closed binary Majorana cochain
+$`n_3`$, complex-fermion cochain $`n_4`$ satisfying
+$`dn_4=\mathcal{𝒪}_5^\gamma[n_3]`$, and phase $`\widehat\nu_5`$
+satisfying the terminal obstruction equation. Here $`\check n_3=n_3`$.
+All stacking corrections below have identical complete inputs. The
+compact output representative differs from the current general reader
+formula by the explicit bosonic coboundary given below.
+
+## 1. p+ip stacking
+
+```math
+N_2=0.
+```
+
+## 2. Majorana stacking
+
+```math
+N_3=0.
+```
+
+## 3. Complex-fermion stacking
+
+```math
+N_4=\mathcal{ℰ}_4^\gamma[n_3,n_3]
+   =\mathrm{Sq}^1n_3+s_1n_3.
+```
+
+## 4. Bosonic stacking
+
+```math
+\begin{aligned}
+\widehat\nu_5^{\mathrm{out}}&=2\widehat\nu_5
+     +\widehat{\mathcal{ℰ}}_{5,\mathrm{diag}},\\
+\widehat{\mathcal{ℰ}}_{5,\mathrm{diag}}
+ &=\widehat{\mathcal{ℰ}}_5^c
+  +\widehat{\mathcal{ℰ}}_5^{c\gamma}
+  +\widehat{\mathcal{ℰ}}_{5,\mathrm{diag}}^\gamma.
+\end{aligned}
+```
+
+### Complex fermions
+
+```math
+\widehat{\mathcal{ℰ}}_5^c=\frac12n_4\cup_3n_4.
+```
+
+### Complex fermions and Majorana decoration
+
+```math
+\widehat{\mathcal{ℰ}}_5^{c\gamma}
+ =\frac12\mathcal{𝒪}_5^\gamma[n_3]\cup_4n_4.
+```
+
+### Majorana decoration
 
 ```math
 \begin{aligned}
@@ -10,40 +61,36 @@ given below.
 ={}&\frac12\Big[
  \sum_{\vartheta\in\mathcal W}
   \mathop{\mathrm{MS}}\nolimits_{\vartheta}
-       (\check n_3,\check n_3,\check n_3,\check n_3)\\
+       (n_3,n_3,n_3,n_3)\\
 &\quad+\mathop{\mathrm{MS}}\nolimits_{12313123}
-       (\check n_3,\check n_3,\mathrm{Sq}^1\check n_3)
+       (n_3,n_3,\mathrm{Sq}^1n_3)
  +\mathop{\mathrm{MS}}\nolimits_{12131232}
-       (\mathrm{Sq}^1\check n_3,\check n_3,\check n_3)\\
-&\quad+\check n_3\cup_2\mathrm{Sq}^1\check n_3
- +\check n_3\cup_3
-       (\check n_3\cup_2\mathrm{Sq}^1\check n_3)\\
-&\quad+\mathrm{Sq}^1\check n_3\cup_3
-               \mathcal{ℰ}_4^\gamma[\check n_3,\check n_3]
- +(\omega_2\cup_1s_1)\check n_3
- +s_1\big[(s_1\check n_3)\cup_3\check n_3\big]\Big]\\
+       (\mathrm{Sq}^1n_3,n_3,n_3)\\
+&\quad+n_3\cup_2\mathrm{Sq}^1n_3
+ +n_3\cup_3
+       (n_3\cup_2\mathrm{Sq}^1n_3)\\
+&\quad+\mathrm{Sq}^1n_3\cup_3N_4
+ +(\omega_2\cup_1s_1)n_3
+ +s_1\big[(s_1n_3)\cup_3n_3\big]\Big]\\
 &+\frac14\Big[
- B_4^\gamma\cup_3B_4^\gamma
- +\check n_3\cup_1\check n_3
- -\overline{\check n_3\cup_1\check n_3}
- -s_1\mathrm{Sq}^1\check n_3
- -\overline{\mathcal{𝒪}_5^\gamma[\check n_3]}
+ (\beta n_3)\cup_3(\beta n_3)
+ +n_3\cup_1n_3
+ -\overline{n_3\cup_1n_3}
+ -s_1\mathrm{Sq}^1n_3
+ -\overline{\mathcal{𝒪}_5^\gamma[n_3]}
  \Big]\pmod1.
 \end{aligned}
 ```
 
-The lower obstruction and lower self-stacking correction retain their
-existing meanings:
+The lower output $`N_4`$ is the one computed above. The lower obstruction
+and Bockstein retain their existing meanings:
 
 ```math
 \begin{aligned}
-B_4^\gamma&=\beta\check n_3,
-&\overline{B_4^\gamma}&=\mathrm{Sq}^1\check n_3,\\
-\mathcal{𝒪}_5^\gamma[\check n_3]
- &=\mathrm{Sq}^2\check n_3+\omega_2\check n_3
-                       +s_1\mathrm{Sq}^1\check n_3,\\
-\mathcal{ℰ}_4^\gamma[\check n_3,\check n_3]
- &=\mathrm{Sq}^1\check n_3+s_1\check n_3.
+\mathcal{𝒪}_5^\gamma[n_3]
+ &=\mathrm{Sq}^2n_3+\omega_2n_3+s_1\mathrm{Sq}^1n_3,\\
+\beta n_3&=dn_3/2\quad\text{over }\mathbb Z,
+\qquad\overline{\beta n_3}=\mathrm{Sq}^1n_3.
 \end{aligned}
 ```
 
@@ -58,40 +105,44 @@ word list. Every word has the same four arguments printed in the formula.
 ```
 
 There are **23 half-valued terms and five quarter-valued terms**, hence
-**28 terms** with the defined lower operations retained. This small formula
-is the closed diagonal specialization; the general open two-input law is
+**28 Majorana terms** with the defined lower operations retained. Adding
+the one complex-fermion term and one exchange term gives **30 terms for
+the complete self-stacking phase correction**: 25 half-valued and five
+quarter-valued terms. This is the zero-p+ip diagonal specialization; the general open two-input law is
 [given separately](FOUR_DIMENSIONAL.md).
 
 In the quarter bracket, the unbarred
-$`\check n_3\cup_1\check n_3`$ is the signed integer cup of canonical input
+$`n_3\cup_1n_3`$ is the signed integer cup of canonical input
 values. Its barred counterpart is the canonical value of the **whole**
 binary operation. Their difference is even but can be nonzero modulo four.
 The whole bar on $`\mathcal{𝒪}_5^\gamma`$ is required for the same reason.
 
 ## Explicit output gauge
 
-The relation to the existing complete representative is exact:
+The relation to the current complete reader representative is exact:
 
 ```math
-\widehat{\mathcal{ℰ}}_5^\gamma[\check n_3,\check n_3]
+\widehat{\mathcal{ℰ}}_5^\gamma[n_3,n_3]
 =\widehat{\mathcal{ℰ}}_{5,\mathrm{diag}}^\gamma
- +d_{s_1}\frac{K_4^\gamma[\check n_3]}2.
+ +d_{s_1}\frac{K_4^\gamma[n_3]}2.
 ```
 
 The binary gauge primitive has only three face products:
 
 ```math
 \begin{aligned}
-(K_4^\gamma[\check n_3])_{01234}
-={}&(\check n_3)_{0123}(\check n_3)_{0134}\\
-&+(\check n_3)_{0124}(\check n_3)_{0134}(\check n_3)_{0234}\\
-&+(\check n_3)_{0123}(\check n_3)_{0124}
-              (\check n_3)_{0134}(\check n_3)_{0234}.
+(K_4^\gamma[n_3])_{01234}
+={}&(n_3)_{0123}(n_3)_{0134}\\
+&+(n_3)_{0124}(n_3)_{0134}(n_3)_{0234}\\
+&+(n_3)_{0123}(n_3)_{0124}
+              (n_3)_{0134}(n_3)_{0234}.
 \end{aligned}
 ```
 
-Adding this output bosonic coboundary gives the complete representative;
-subtracting it gives the 28-term representative. The obstruction is
+The complex-fermion and exchange contributions already equal their
+current general-reader specializations. Adding this output bosonic
+coboundary therefore gives the complete reader self-stack;
+subtracting it gives the displayed 30-term total representative. The obstruction is
 unchanged. The primitive is normalized, and
 $`d_{s_1}(K_4^\gamma/2)=dK_4^\gamma/2\pmod1`$.
 
@@ -100,3 +151,9 @@ checked independently against the frozen complete phase and its explicit
 gauge. The final lower-operation expression passes 1,024 closed-input
 checks. No closed-input restriction has been imposed on the separate
 complete two-input formula.
+
+The input complex-fermion completion and incoming phase are retained.
+The formula supplies a complete product in the zero-p+ip sector; a
+p+ip root with nonzero integer decoration requires its own full cyclic
+power formula. The [presentation theorem](ROOT_POWER_PRESENTATIONS.md)
+explains how such powers determine the final abstract group.

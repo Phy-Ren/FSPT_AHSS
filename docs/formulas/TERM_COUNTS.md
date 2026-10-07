@@ -254,6 +254,25 @@ canonical lift or exact quotient cannot be distributed as an ordinary
 linear sum. Reused lower differentials and twisters retain their full
 earlier definitions.
 
+## Self-stacking is counted separately
+
+These formulas take two identical complete input states. Their restricted
+counts do not replace the general two-input totals above. Both retain the
+complex-fermion completion and the incoming bosonic phase.
+
+| Dimension and input | c | c gamma | gamma | Complete phase correction |
+| --- | ---: | ---: | ---: | ---: |
+| [3+1D, zero p+ip decoration](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md) | 1 | 1 | 8 | **10** |
+| [4+1D, zero p+ip decoration](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md) | 1 | 1 | 28 | **30** |
+
+The 3+1D correction has seven half-valued and three quarter-valued
+terms. It is in exactly the same representative as the general formula.
+The 4+1D correction has 25 half-valued and five quarter-valued terms;
+its explicit three-face-product output gauge is printed on the formula
+page. The lower output and defined lower obstruction remain structured
+inputs, with their full formulas given on the same page. Neither formula
+applies to a complete state with nonzero p+ip decoration.
+
 ## Representation and verification
 
 The c gamma expressions reuse the complete lower Majorana parity, and

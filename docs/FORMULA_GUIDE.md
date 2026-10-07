@@ -159,7 +159,9 @@ cups are recorded once and their full substitutions are reported separately.
 - 4+1D construction data: [binary coefficients](formulas/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md), [physical face indices](formulas/FOUR_DIMENSIONAL_PHYSICAL_PATHS.md), [tensor coefficients](formulas/FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md).
 - [4+1D pure-source construction](formulas/SOURCE_OPERATIONS.md#source-completion).
 - [4+1D pure-source physical face coefficients](formulas/FOUR_DIMENSIONAL_Y6_FACES.md).
-- [Closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md), [28-term 4+1D self-stacking](formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
+- [Root powers and the abelian stacking group](formulas/ROOT_POWER_PRESENTATIONS.md)
+- [Ten-term 3+1D self-stacking](formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md)
+- [Closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md), [30-term complete 4+1D self-stacking](formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
 - [Exact Majorana carry reduction](formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
 - [Higher cups and finite sums](formulas/OPERATIONS.md), [fixed coefficients](formulas/COEFFICIENTS.md)
 - [Changes of representative](formulas/REPRESENTATIVES.md)

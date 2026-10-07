@@ -367,3 +367,27 @@ integer sum of its three printed cups. The new source substitutions and
 terminal-kernel regrouping are literal identities. The optional quarter-lift
 transport in that appendix is a separate, fully stated output gauge; it is
 not silently applied to the runtime or to the current principal formula.
+
+
+## Root-power formulas and reconstruction
+
+The [relative-power presentation](../docs/formulas/ROOT_POWER_PRESENTATIONS.md)
+proves that complete marked cyclic-power relations determine the abelian
+group. Its 3+1D adapted-basis construction has a reversible replay on all
+602 published presentations. The replay reorganizes existing certified
+integer relations; it does not re-evaluate cochains or benchmark a new
+runtime. The production reconstruction still uses its existing general
+reduction backend.
+
+The [ten-term 3+1D zero-p+ip self-stack](../docs/formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md)
+is exactly equal to the current general reader formula in the same
+coordinates. Its standard-library verifier keeps integer Bocksteins
+modulo four by lifting modulo eight before exact division. It preserves
+the whole binary value of the lower obstruction in the quarter bracket.
+Translations from older runtime coordinates still use the previously
+specified paired maps.
+
+The separate 4+1D closed diagonal retains its explicit output gauge
+relative to the current reader formula. Restricted counts never replace
+the general two-input counts, and neither zero-p+ip formula supplies a
+self-stack for a state with nonzero integer decoration.

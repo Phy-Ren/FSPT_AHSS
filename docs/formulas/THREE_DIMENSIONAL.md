@@ -364,6 +364,10 @@ The $`\Delta`$ acts on the entire displayed bracket with the p+ip output $`N_1`$
 \end{aligned}
 ```
 
+For two identical complete states with $`n_1=0`$, the entire correction
+reduces to the [ten-term self-stacking formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md).
+It retains the complex-fermion completion and uses the same phase representative.
+
 #### Complex fermions
 
 ```math
