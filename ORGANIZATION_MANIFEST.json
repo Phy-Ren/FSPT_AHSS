@@ -1,7 +1,7 @@
 {
   "schema": "fspt-organized-publication-v1",
-  "source_commit": "1f91957d5bb98ef632f37bb7f98d379f7fdc8edd",
-  "public_base_commit": "3d637053fb530ec231f4410be3608fd0e526a23f",
+  "source_commit": "4b0504aa89d437079558261942f5953b8a3fac27",
+  "public_base_commit": "e5aa4bc3d12cb5e615bdd176dd935c68196db73c",
   "scope": "Additive example catalogue and canonical formula documentation; prior archives preserved.",
   "files": {
     "PUBLIC_RELEASE.md": {
@@ -17,12 +17,16 @@
       "bytes": 2410
     },
     "docs/FORMULA_GUIDE.md": {
-      "sha256": "9fbb63186b235a51feb0e574c00f8d2de6cb4621f4eb2fdc1ef586effddf86e3",
-      "bytes": 50934
+      "sha256": "197b76c7c43216c5d3ab2560f679e082cceba8d673856a6ddcb9ea30f197a86a",
+      "bytes": 7650
     },
     "docs/formulas/COEFFICIENTS.md": {
       "sha256": "b769ba593eb6cabd31bf52db9a7de0f6d29fb29da6ae037cbe3453513a17960d",
       "bytes": 33375
+    },
+    "docs/formulas/FOUR_DIMENSIONAL.md": {
+      "sha256": "b1218bed9b51de4b57eb3b68b6ee707b6838a734e056c0f2f0c29b50e4025226",
+      "bytes": 19955
     },
     "docs/formulas/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md": {
       "sha256": "6caf8f842f22aefac5fd86322b5818026d11d77468c2df2cda7fe6d915ff5a09",
@@ -57,8 +61,12 @@
       "bytes": 6979
     },
     "docs/formulas/TERMINAL_TRANSFER.md": {
-      "sha256": "e6c15c7b38adba4e2669a01144da1e74e7e474399f198ad9057f019995710776",
+      "sha256": "fa4f8e8d6f483e71d109af0d793191c54ac65bece34661cd4591d59e9c356c99",
       "bytes": 14605
+    },
+    "docs/formulas/THREE_DIMENSIONAL.md": {
+      "sha256": "6308d39251294ae1511c684f3e57d0a77cc4f9590ebf9ff8fc6a635f71ded38d",
+      "bytes": 20559
     },
     "docs/formulas/THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md": {
       "sha256": "3d698f0cad145839a98ce685fc663278ae62d1207baa54b3d9a111cce5597a13",
@@ -69,28 +77,32 @@
       "bytes": 154056
     },
     "docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md": {
-      "sha256": "8b08fbf714e25ac923135bb921f7b9dbf966eb743faa32e448d04e0bc3d1eec4",
-      "bytes": 5432
+      "sha256": "e48190dec52e09885c8e9e4b81b8617c81df1849b411316665c5a6b5d3e381dc",
+      "bytes": 5433
     },
     "docs/formulas/THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md": {
-      "sha256": "20ff0c3da46ef3dc12d7d1725f203851c2f8313465a5f66d743525544365516a",
-      "bytes": 19417
+      "sha256": "f5de0e8534958dbd8b7e45ed6f08d1938006c35edb57e2cdcf4ba3284bb0359c",
+      "bytes": 19418
     },
     "docs/formulas/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md": {
-      "sha256": "ab736b63c606e5b4d83cd7a7e39824438058c564af12a8837cb55728ce4c339c",
-      "bytes": 16947
+      "sha256": "71b1aabfde96a11dbb5011fd5f066e08956ec73a03bd3e5572fa5328650cb18e",
+      "bytes": 16948
     },
     "docs/formulas/THREE_DIMENSIONAL_TERMINAL.md": {
-      "sha256": "215c1ec538db9b888516e21575eb18fae67f00a0b84e3baa1700d73101a10811",
-      "bytes": 10439
+      "sha256": "0e4f18bd984694c8bf906cc919c942de08ee5eb67d7df4dc6289974c60291636",
+      "bytes": 10440
     },
     "docs/formulas/THREE_DIMENSIONAL_WORD_INDICES.md": {
       "sha256": "e6fd3f018648a14e87ace46c076eb5487801467f09481025974214bfea346179",
       "bytes": 15160
     },
+    "docs/formulas/TWO_DIMENSIONAL.md": {
+      "sha256": "18409b734fb276ed127dd395fe3613158a26daabf683ad5c67b7f3bc9d608326",
+      "bytes": 4431
+    },
     "formulas/CODE_NOTATION.md": {
-      "sha256": "a692784dada1492c61d9c2a26dc7a39de6b16d8aea8e23591eadbdf4c4a12f1d",
-      "bytes": 19638
+      "sha256": "95f33d326edfb5d542b6357c85b96d42abdc7fff601cd3a55bf9b0392d1bc027",
+      "bytes": 19847
     },
     "formulas/FORMULA_REGISTRY.json": {
       "sha256": "5692c369808814aa9b2aee7acc3d617891d80062f24070e89aded094e36c81cf",

@@ -104,8 +104,8 @@ and four, even when constructed from a physical $`3+1`$D input.
 ## Shared source and 4+1D residuals
 
 The following names belong to the shared six-cochain source or the $`4+1`$D
-product. Their current definitions are [S1–S3](../docs/FORMULA_GUIDE.md#eq-s1)
-and [T4a–T4d](../docs/FORMULA_GUIDE.md#eq-t4a), with the
+product. Their current definitions are [S1–S3](../docs/formulas/FOUR_DIMENSIONAL.md#eq-s1)
+and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a), with the
 [earlier coordinate map](../docs/formulas/REPRESENTATIVES.md#eq-t4e) kept separately.
 
 | Readable-source name or former formula label | Current mathematical expression |
@@ -127,13 +127,13 @@ and [T4a–T4d](../docs/FORMULA_GUIDE.md#eq-t4a), with the
 | Former $`D`$ | $`\Delta B_4=d\lambda_3-n'_2n_2`$ |
 | `Db` | $`\overline{\Delta B_4}`$ |
 | `V5` | $`\mathcal V_5`$, the binary value used in the quarter-valued product |
-| `Phi5` | The expanded lower-field portion of the half-valued bracket in [T4d](../docs/FORMULA_GUIDE.md#eq-t4d) |
-| `Pi5` | The expanded integer terms accompanying $`\mathcal V_5`$ in the quarter-valued bracket of [T4d](../docs/FORMULA_GUIDE.md#eq-t4d) |
-| `epsilon5` | The expanded complex-fermion terms in the half-valued bracket of [T4d](../docs/FORMULA_GUIDE.md#eq-t4d) |
+| `Phi5` | The expanded lower-field portion of the half-valued bracket in [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
+| `Pi5` | The expanded integer terms accompanying $`\mathcal V_5`$ in the quarter-valued bracket of [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
+| `epsilon5` | The expanded complex-fermion terms in the half-valued bracket of [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
 | `Zvalue`, `binary_phase` | Evaluation of $`Z_5`$ |
 
 The former source-sum names are now expanded in the
-[4+1D source](../docs/FORMULA_GUIDE.md#eq-t4):
+[4+1D source](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4):
 
 | Existing local or former formula name | Location in the expanded formula |
 |---|---|
@@ -267,17 +267,17 @@ expresses with explicit `reduce(2)` and `lift()` calls.
 
 | Formula family | API stage or readable entry point | Compiled targets |
 |---|---|---|
-| 3+1D $`\mathcal O_3`$; [L1](../docs/FORMULA_GUIDE.md#eq-l1) | `source`, stage `majorana` | `source_3_majorana` |
-| 4+1D $`\mathcal O_4`$; [L1](../docs/FORMULA_GUIDE.md#eq-l1-4d) | `source`, stage `majorana` | `source_4_majorana` |
-| 3+1D $`\mathcal O_4`$; [L2–L3](../docs/FORMULA_GUIDE.md#eq-l2) | `source`, stage `fermion` | `source_3_fermion` |
-| 4+1D $`\mathcal O_5`$; [L2–L4](../docs/FORMULA_GUIDE.md#eq-l2-4d) | `source`, stage `fermion` | `source_4_fermion` |
-| 3+1D $`\mathcal E_2`$; [P1–P2](../docs/FORMULA_GUIDE.md#eq-p1) | `product`, stage `majorana` | `product_3_majorana` |
-| 4+1D $`\mathcal E_3`$; [P1–P2](../docs/FORMULA_GUIDE.md#eq-p1-4d) | `product`, stage `majorana` | `product_4_majorana` |
-| 3+1D $`\mathcal E_3`$; [P3](../docs/FORMULA_GUIDE.md#eq-p3) | `product`, stage `fermion` | `product_3_fermion` |
-| 4+1D $`\mathcal E_4`$; [P4–P5](../docs/FORMULA_GUIDE.md#eq-p4) | `product`, stage `fermion` | `product_4_fermion` |
-| $`\widehat{\mathcal O}_5,\widehat{\mathcal E}_4`$; [T3](../docs/FORMULA_GUIDE.md#eq-t3) | `full3/source.py:source16,product16` | `lift3_source`, `lift3_product`, `high6` |
-| $`\widehat{\mathcal O}_6`$; [T4](../docs/FORMULA_GUIDE.md#eq-t4) | `full4/product_full.py:full_source48` and runtime assembly | `high6` |
-| $`\widehat{\mathcal E}_5`$; [T4a–T4d](../docs/FORMULA_GUIDE.md#eq-t4a) | `full4/product_full.py:phase48` | `nonbinary4`, `rho4`, `tensor4` |
+| 3+1D $`\mathcal O_3`$; [L1](../docs/formulas/THREE_DIMENSIONAL.md#eq-l1) | `source`, stage `majorana` | `source_3_majorana` |
+| 4+1D $`\mathcal O_4`$; [L1](../docs/formulas/FOUR_DIMENSIONAL.md#eq-l1-4d) | `source`, stage `majorana` | `source_4_majorana` |
+| 3+1D $`\mathcal O_4`$; [L2–L3](../docs/formulas/THREE_DIMENSIONAL.md#eq-l2) | `source`, stage `fermion` | `source_3_fermion` |
+| 4+1D $`\mathcal O_5`$; [L2–L4](../docs/formulas/FOUR_DIMENSIONAL.md#eq-l2-4d) | `source`, stage `fermion` | `source_4_fermion` |
+| 3+1D $`\mathcal E_2`$; [P1–P2](../docs/formulas/THREE_DIMENSIONAL.md#eq-p1) | `product`, stage `majorana` | `product_3_majorana` |
+| 4+1D $`\mathcal E_3`$; [P1–P2](../docs/formulas/FOUR_DIMENSIONAL.md#eq-p1-4d) | `product`, stage `majorana` | `product_4_majorana` |
+| 3+1D $`\mathcal E_3`$; [P3](../docs/formulas/THREE_DIMENSIONAL.md#eq-p3) | `product`, stage `fermion` | `product_3_fermion` |
+| 4+1D $`\mathcal E_4`$; [P4–P5](../docs/formulas/FOUR_DIMENSIONAL.md#eq-p4) | `product`, stage `fermion` | `product_4_fermion` |
+| $`\widehat{\mathcal O}_5,\widehat{\mathcal E}_4`$; [T3](../docs/formulas/THREE_DIMENSIONAL.md#eq-t3) | `full3/source.py:source16,product16` | `lift3_source`, `lift3_product`, `high6` |
+| $`\widehat{\mathcal O}_6`$; [T4](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4) | `full4/product_full.py:full_source48` and runtime assembly | `high6` |
+| $`\widehat{\mathcal E}_5`$; [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a) | `full4/product_full.py:phase48` | `nonbinary4`, `rho4`, `tensor4` |
 | Closed-Majorana source/product; [3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d), [4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d), [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d) | `ClosedMajoranaBackend`, `majorana_complete.py` | `majorana_{q}_{operation}_{coordinate}` |
 | fMPS source and product; [M13–M14](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m13) | `FMPS1Backend.source`, `FMPS1Backend.product` | Direct exact endpoint evaluation |
 

@@ -23,7 +23,7 @@ The inverse subtracts the displayed phase. All lower fields and their
 stacking products are unchanged. The symbol `Delta` means evaluation on
 the actual lower stacked tower, minus the two input evaluations.
 The nine-term `H4` and eight-term `P4` are printed in
-[the stacking formulas](../FORMULA_GUIDE.md#eq-t3b).
+[the stacking formulas](THREE_DIMENSIONAL.md#eq-t3b).
 The additive phase `hat f_cstar` is one half of the explicitly indexed
 binary numerator in [the CF index rule](THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md#cf-block).
 

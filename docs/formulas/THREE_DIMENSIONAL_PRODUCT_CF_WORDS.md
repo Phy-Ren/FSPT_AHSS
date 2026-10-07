@@ -258,4 +258,4 @@ Every row is the standard normalized MS operation on its displayed physical argu
 
 ## Stacking-carry insertion
 
-The third correction is exactly the two explicitly displayed $`P_4`$ terms, differing by the physical carry $`\bar n_1\bar n'_1`$. The eight-row $`P_4`$ table is printed in [the stacking formulas](../FORMULA_GUIDE.md#eq-t3b). Ordinary multilinearity and the overlapping-word composition rule give its 56 rows; each choice contains the displayed p+ip stacking carry.
+The third correction is exactly the two explicitly displayed $`P_4`$ terms, differing by the physical carry $`\bar n_1\bar n'_1`$. The eight-row $`P_4`$ table is printed in [the stacking formulas](THREE_DIMENSIONAL.md#eq-t3b). Ordinary multilinearity and the overlapping-word composition rule give its 56 rows; each choice contains the displayed p+ip stacking carry.

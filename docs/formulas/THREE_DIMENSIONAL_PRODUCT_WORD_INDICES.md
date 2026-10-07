@@ -41,7 +41,7 @@ The lower output and full CF obstruction inputs are
 The set $`\mathcal I_{4,F}`$ is the explicitly printed 58-word lower table in
 [the relative-word table](THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md). Its obstruction inputs are the full indicated
 physical lower obstructions. $`H_4`$ and $`P_4`$ have respectively the nine and
-eight ordinary terms printed in [the stacking formulas](../FORMULA_GUIDE.md#eq-t3b). Thus they are fixed
+eight ordinary terms printed in [the stacking formulas](THREE_DIMENSIONAL.md#eq-t3b). Thus they are fixed
 finite phase polynomials, not evaluators with hidden instructions.
 
 An entry is a surjection word with ordered physical input labels. Equal
