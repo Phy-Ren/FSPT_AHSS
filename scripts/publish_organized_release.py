@@ -5,6 +5,7 @@ The public history and earlier scientific archives are preserved. This command
 does not fetch, commit, push, or run a numerical calculation.
 """
 import argparse
+import gzip
 import hashlib
 import json
 from pathlib import Path, PurePosixPath
@@ -42,6 +43,11 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def compressed_coefficients(name):
+    return (name.startswith('docs/formulas/coefficients/')
+            and name.endswith('.json.gz'))
+
+
 def destination(name):
     path = PurePosixPath(name)
     if path.is_absolute() or '..' in path.parts or '.git' in path.parts:
@@ -56,7 +62,8 @@ def destination(name):
         return None
     out = PurePosixPath(target)
     if (out.is_absolute() or '..' in out.parts or '.git' in out.parts
-            or out.suffix not in EXTENSIONS):
+            or (out.suffix not in EXTENSIONS
+                and not compressed_coefficients(target))):
         raise ValueError('Unreviewed publication path: ' + name)
     if out.parts[0] in {'internal_notes', 'vendor', 'reference', 'runs'}:
         raise ValueError('Private publication destination: ' + target)
@@ -101,8 +108,11 @@ def validate_payload(payload):
         data = item['data']
         if secret.search(data):
             raise ValueError('Credential-pattern review required; value redacted: ' + name)
-        if name.endswith('.json'):
-            json.loads(data)
+        if name.endswith('.json') or compressed_coefficients(name):
+            decoded = gzip.decompress(data) if compressed_coefficients(name) else data
+            json.loads(decoded)
+            if decoded is not data and secret.search(decoded):
+                raise ValueError('Credential-pattern review required; value redacted: ' + name)
         # GitHub rejects ordinary files of 100 MiB or larger. Large runtime
         # packets must not silently replace compact published scientific data.
         if len(data) >= 100 * 1024**2:

@@ -100,3 +100,9 @@ not only the abstract group obtained in an example.
 
 The separate [programmer translation](../../formulas/CODE_NOTATION.md) records
 how the formulas correspond to existing variables and compiled operations.
+
+The terminal 4+1D Majorana contribution additionally uses the
+[explicit output coboundary](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md).
+It changes the output cochain by an exact phase and leaves the obstruction
+and every other designated contribution unchanged. Its inverse adds the
+same displayed coboundary.

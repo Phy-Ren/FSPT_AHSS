@@ -17,7 +17,11 @@ fields; their physical roles are not inferred from another section.
 The physical labels $`c,\gamma,\psi`$ mean, respectively,
 complex fermion, Majorana, and p+ip. The fixed order for resolved
 contributions is $`c,c\gamma,c\psi,\gamma,\gamma\psi,\psi`$;
-absent contributions are omitted. A mixed superscript identifies an interaction between the indicated physical layers. The pieces are parts of the full
+absent contributions are omitted. The mixed labels refer to signs from fermionic
+anticommutation between the indicated microscopic origins. They are not
+labels for the variables appearing after lower equations are substituted.
+In particular, a c-gamma factor may depend on a Majorana differential;
+expanding that differential does not by itself change the exchange origin. A mixed superscript identifies an interaction between the indicated physical layers. The pieces are parts of the full
 cochain equation; they need not be separately closed. In the p+ip sections they refer to the
 displayed shifted Majorana field; rewriting it in native fields redistributes
 some mixed terms.
@@ -92,6 +96,19 @@ The second term is retained for a nonclosed cochain. Negative or
 otherwise degree-impossible higher cups are zero in the explicit
 [interval-cut definition](formulas/OPERATIONS.md#interval-cuts).
 
+Each layer defines its differential and stacking twister completely before the higher layers
+use them. In a higher formula, each defined operation is a mathematical
+input: its lower-layer polynomial need not be expanded again. Its
+coefficient system and chosen cochain representative remain those of its
+definition. This is particularly useful for the final bosonic formulas.
+The purpose is to make the structure reusable, not to remove the
+complexity of evaluating it. Definitions and identities belong at the
+layer where the structure first appears.
+The source and stacking identities explain how successive layers fit
+together, so later formulas can use established structures without
+repeating their derivations. The cochain differential $`d`$ is distinct from an AHSS differential
+$`d_r`$ and its specified cochain representative.
+
 | Operation | Definition and domain |
 |---|---|
 | $`\beta x=dx/2`$ | Integer Bockstein, for binary $`dx=0`$; numerator is the **integer** differential |
@@ -109,15 +126,19 @@ those coefficient systems.
 Finite definitions of higher cups and ordered word operations are in
 [Operations](formulas/OPERATIONS.md). The terminal formulas below use physical cochains. Long numerical coefficient lists and proofs of the paired representative changes are kept in separate appendices.
 
-The [expanded term census](formulas/TERM_COUNTS.md) records the actual sizes
-of the finite formulas and the exact reductions adopted in this iteration.
+The [term census](formulas/TERM_COUNTS.md) keeps these defined differentials and twisters
+in the primary count and distinguishes supplementary counts obtained by
+substituting lower equations. An arbitrary named polynomial or finite sum
+still contributes its actual number of terms.
 
 ## Finite definitions and coordinate maps
 
 - 3+1D: [obstruction word coefficients](formulas/THREE_DIMENSIONAL_WORD_INDICES.md), [stacking word coefficients](formulas/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md), [complex-fermion stacking coefficients](formulas/THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md).
 - 3+1D pure p+ip face coefficients: [obstruction](formulas/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md), [stacking](formulas/THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md).
-- 4+1D: [Majorana word coefficients](formulas/FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md), [stacking coefficients](formulas/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md), [physical face indices](formulas/FOUR_DIMENSIONAL_PHYSICAL_PATHS.md), [tensor coefficients](formulas/FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md).
+- 4+1D: [obstruction word coefficients](formulas/FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md), [Majorana stacking coefficients](formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md), [mixed and p+ip stacking coefficients](formulas/FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).
+- 4+1D construction data: [binary coefficients](formulas/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md), [physical face indices](formulas/FOUR_DIMENSIONAL_PHYSICAL_PATHS.md), [tensor coefficients](formulas/FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md).
 - [4+1D pure-source construction](formulas/SOURCE_OPERATIONS.md#source-completion).
+- [4+1D pure-source physical face coefficients](formulas/FOUR_DIMENSIONAL_Y6_FACES.md).
 - [Closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md)
 - [Higher cups and finite sums](formulas/OPERATIONS.md), [fixed coefficients](formulas/COEFFICIENTS.md)
 - [Changes of representative](formulas/REPRESENTATIVES.md)

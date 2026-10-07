@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "dimension": "4+1D",
+  "law": "bosonic stacking",
+  "scope": "The two complete binary coefficient sums. Each row is a specified product of physical face values and fully defined lower operations, with whole nonlinear scopes retained and their numerators explicitly listed. These counts are not a claim of global algebraic minimality.",
+  "exact_table_validation": {
+    "status": "PASS",
+    "checks": [
+      "stored-file and decompressed-payload SHA256",
+      "every factor reference and nonlinear scope",
+      "all explicit rows and duplicate removal",
+      "exact outer and interior counts"
+    ],
+    "lossless_encoding": "gzip is used only for JSON term arrays; decompressed arrays are the verified explicit coefficient tables"
+  },
+  "natural_operation_identities": {
+    "status": "PASS",
+    "independent_valid_towers": 32,
+    "domain": "Actual total cochain inputs satisfy the lower tower. Individual formal Majorana components remain arbitrary. The unchanged lower stacking representative, its explicit off-tower correction, Bocksteins, integer carries and ordinary derivatives are evaluated independently.",
+    "physical_origin": "The designated exchange contributions are preserved before coordinate substitution; no reassignment by variable support."
+  },
+  "contributions": [
+    {
+      "contribution": "gamma_psi",
+      "binary_summands": 5684189,
+      "binary_factors": 23483,
+      "index_sha256": "ca639c18635a5ec4a660bd342e0984eb7e51e6402ad809c673e3059770b0a893",
+      "native_readback": {
+        "status": "PASS",
+        "legal_towers": 4,
+        "coefficient_values": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "independent_formula_values": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "complete_finite_tensor_contribution": true,
+        "complete_integer_decoration_polynomial": "not present in this contribution"
+      }
+    },
+    {
+      "contribution": "psi",
+      "binary_summands": 2869198,
+      "binary_factors": 15485,
+      "index_sha256": "76b5dafbc9e1d9f265fafae4fc55c0d6e4348b363ae34dbb03be6e69a98f5933",
+      "native_readback": {
+        "status": "PASS",
+        "legal_towers": 4,
+        "coefficient_values": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "independent_formula_values": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "complete_finite_tensor_contribution": true,
+        "complete_integer_decoration_polynomial": true
+      }
+    }
+  ],
+  "verification_limit": "Finite native readbacks supplement the exact coefficient construction and complete table validation; they are not a standalone proof for every physical group."
+}

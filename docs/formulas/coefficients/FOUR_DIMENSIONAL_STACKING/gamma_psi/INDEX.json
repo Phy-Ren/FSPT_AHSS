@@ -1,0 +1,145 @@
+{
+  "dimension": "4+1D",
+  "coefficient_sum": "I5gamma-psi",
+  "coefficient_system": "F2",
+  "phase_prefactor": "1/2",
+  "term_count": 5684189,
+  "factor_count": 23483,
+  "expression_boundary": "Products of explicitly specified physical face values and already defined lower O/E, Bockstein, characteristic carry and stacking carry values. Whole canonical binary lifts and floor digits have explicitly listed numerators.",
+  "ledger": {
+    "outer_terms": 5684189,
+    "unique_protected_interiors": 58547,
+    "standard_lower_argument_summands": 1894742,
+    "interior_occurrences_when_written_inline": 448864,
+    "outer_pure_physical_monomials": 594722,
+    "outer_terms_with_protected_factors": 5089467,
+    "factor_kinds": {
+      "standard_lower_differential": 3859,
+      "standard_cochain_digit": 15346,
+      "canonical_binary_lift": 1182,
+      "binary_floor_digit": 387,
+      "standard_lower_stacking_twister": 2604
+    },
+    "physical_face_factors": 105,
+    "inline_numerator_convention": "Every nonlinear numerator at every outer occurrence, recursively including nonlinear numerators inside the explicitly listed arguments of retained standard operations; intrinsic lower-operation definitions remain structured."
+  },
+  "files": [
+    {
+      "file": "factors_000.json",
+      "kind": "factors",
+      "rows": 5096,
+      "bytes": 16776545,
+      "sha256": "f37a6ad6edca8b968cdb2474ff7fd44960e96d4de7edd2353af593bcb1f1f514"
+    },
+    {
+      "file": "factors_001.json",
+      "kind": "factors",
+      "rows": 4822,
+      "bytes": 16776593,
+      "sha256": "916b92ea1af14df5506249af5c38bcaec0dcfaf5dfb8266c192a3a492be80b5f"
+    },
+    {
+      "file": "factors_002.json",
+      "kind": "factors",
+      "rows": 4526,
+      "bytes": 16774746,
+      "sha256": "4c6257953a28b0310262c79b67ddeb959d7457803dff06b4b1a721044fd8a918"
+    },
+    {
+      "file": "factors_003.json",
+      "kind": "factors",
+      "rows": 4550,
+      "bytes": 16772884,
+      "sha256": "e2d33ea9b4425ce056457fe6f884a8ebabdaf5c2859c57d27d53898bbd9ce7a7"
+    },
+    {
+      "file": "factors_004.json",
+      "kind": "factors",
+      "rows": 4368,
+      "bytes": 16775690,
+      "sha256": "a34a80583aaeba0def0e8a925ba2da76dbe45f22be7a1b0f951592e2c595115b"
+    },
+    {
+      "file": "factors_005.json",
+      "kind": "factors",
+      "rows": 121,
+      "bytes": 497183,
+      "sha256": "b5d1f44dde53937d1ab10560137a4b32919272cbdb6ab29914b5cfac60e2eff5"
+    },
+    {
+      "file": "terms_000.json.gz",
+      "kind": "terms",
+      "rows": 733315,
+      "bytes": 2531134,
+      "sha256": "5f8d95124cc0154891745ed0685d73bf39f4cfe1cfbbbc0fd493b5ad05702239",
+      "uncompressed_bytes": 16777198,
+      "uncompressed_sha256": "4b08b7f72839ffe261b18bea916ab7936f3d9ded20a50fd0550926a42be84740"
+    },
+    {
+      "file": "terms_001.json.gz",
+      "kind": "terms",
+      "rows": 706451,
+      "bytes": 2449038,
+      "sha256": "348e0964189b9e850b003bfc2ac36f7b52ad653647813f3814b22f7af5d0310b",
+      "uncompressed_bytes": 16777215,
+      "uncompressed_sha256": "a7e38662a02d94c879b858fcf32b287aa6cedfacd06a2578146642f38a14a42f"
+    },
+    {
+      "file": "terms_002.json.gz",
+      "kind": "terms",
+      "rows": 781572,
+      "bytes": 2510253,
+      "sha256": "09bbca8eb739d4d2198e8201f25dec16de5a135e2d9480100ec208aa356fa665",
+      "uncompressed_bytes": 16777210,
+      "uncompressed_sha256": "e72d69ca635bee2d577250267f7f1a3277514a1792263b410b1486610c10b8e6"
+    },
+    {
+      "file": "terms_003.json.gz",
+      "kind": "terms",
+      "rows": 779329,
+      "bytes": 2457250,
+      "sha256": "8454c119f463a52d34d11141edcfcb41bc0380f0e7e0da780fc6b099a9b0b768",
+      "uncompressed_bytes": 16777215,
+      "uncompressed_sha256": "20c3956aa5bfb0a85c7247992c92ed5ca9295e3a8d49b99511e6ca6654583023"
+    },
+    {
+      "file": "terms_004.json.gz",
+      "kind": "terms",
+      "rows": 823305,
+      "bytes": 2517282,
+      "sha256": "5b544c047ef0c8a4c914162fe9c2564bd14cb1d7ea75b8f4d23b3b456c53392b",
+      "uncompressed_bytes": 16777210,
+      "uncompressed_sha256": "9bd3ad92cca7c052833194ce7521974e02c8af0f86ebdca4abcfca62704ede9b"
+    },
+    {
+      "file": "terms_005.json.gz",
+      "kind": "terms",
+      "rows": 757402,
+      "bytes": 2309736,
+      "sha256": "b68e2745e5e1b76f31b1a9c4e99e0d2f3e94e5a99250471e15fde2d8fd8494f0",
+      "uncompressed_bytes": 16777205,
+      "uncompressed_sha256": "de2623ed7f7c6c55934692e5d9cc0ec012f0b5406baff4246e3d5e5905c83f1d"
+    },
+    {
+      "file": "terms_006.json.gz",
+      "kind": "terms",
+      "rows": 773154,
+      "bytes": 2287517,
+      "sha256": "7b78299a2045db468ef8650e05a0dfd4ffe9e6b22126c6e7f697a43aba0cecb2",
+      "uncompressed_bytes": 16777197,
+      "uncompressed_sha256": "d159ceb6c50ee54ba04095cbe83f56a6127c5a0065c8fa34ec4ea35e59aeb90d"
+    },
+    {
+      "file": "terms_007.json.gz",
+      "kind": "terms",
+      "rows": 329661,
+      "bytes": 983058,
+      "sha256": "eec7026787f388030e31d4a0a2f171780f7d9acb1fdf557228471bad9340b455",
+      "uncompressed_bytes": 6526310,
+      "uncompressed_sha256": "95e91d745fc0b4b51641287453aa58223d3380e999378713ccafafe1a7e86d02"
+    }
+  ],
+  "source_expression_sha256": "65025bd20e2325bea2a97f544329d583ec3cc3f755efc2a09cb1cdd9437998f6",
+  "includes_complete_y6": false,
+  "includes_tensor_coefficients": true
+}

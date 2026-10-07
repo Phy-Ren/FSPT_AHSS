@@ -1,305 +1,250 @@
-# Expanded term counts and exact reductions
+# Term counts with defined lower structures
 
-This census expands the coefficient tables and finite polynomials in the
-[formula reference](../FORMULA_GUIDE.md). A specified MS word counts once;
-a summation sign, a completion polynomial, or a named finite packet does
-not count once.
+These counts refer to fully specified cochain expressions. A summation
+sign, a named y polynomial, or a factored coefficient-table row is never counted
+as one term. Every specified MS word counts once; every explicit scalar
+face monomial counts once.
 
-## Counting boundary
+The primary reader-facing count retains fully defined standard lower-layer
+differentials and stacking twisters as structured inputs. Each is written
+completely at its own layer; higher formulas need not expand it again. A specified MS or cup term
+may therefore contain those defined inputs and still count once.
+This convention also retains the explicitly defined Steenrod squares and
+Bocksteins. It does not turn an arbitrary y polynomial or finite sum into
+one term. Every reused lower operation keeps its fully specified earlier
+definition and physical contribution.
 
-- Distribute sums in multilinear cup and MS arguments. Expand the displayed
-  lower obstruction and stacking polynomials, finite coefficient sets, and
-  nonstandard helper definitions.
-- Keep standard differentials, Bocksteins, and the declared physical
-  coordinates. A whole canonical binary lift or second digit is nonlinear:
-  retain its boundary and record the terms inside it separately. Splitting
-  that boundary would change the formula.
-- A nested cup expression and its fully flattened ordinary-MS expansion
-  have different term counts. The tables explicitly identify which is
-  being counted. For example, a square of a five-term lower source has
-  25 distributed nested-cup terms, but its strict MS expansion can have
-  814 words before collection.
-- Physical face products already printed as scalar polynomials are counted
-  separately from cochain operations. A factored row is expanded; it is
-  not counted as one term.
-- Keep each physical contribution separate, in the order c, c gamma,
-  c psi, gamma, gamma psi, psi. No cancellation across those contributions
-  is used to improve a count.
+The supplementary tables below also record substitutions of lower laws,
+stacking fields and finite coefficient sets. These are different counting
+boundaries, not reductions of one count to the other. Standard Bocksteins
+and whole canonical lifts retain their complete scopes; their interior
+counts are recorded separately. A binary lift cannot be distributed as an
+integer-linear operation. Each list specifies ordinary MS words, nested
+cups or physical face products. None is asserted to be globally minimal.
+Expanded counts audit the explicit formulas; they do not measure the quality of their mathematical organization.
 
-The reference before this iteration is commit
-[`e5aa4bc`](https://github.com/Phy-Ren/FSPT_AHSS/tree/e5aa4bc3d12cb5e615bdd176dd935c68196db73c).
-Raw occurrences can include zero and repeated terms. They measure the
-size of a particular expansion, not the number of independent operations,
-the smallest possible formula, or the cost of the production calculation.
+## Primary count with defined lower structures retained
 
-## 2+1D and lower layers
+The complete 4+1D Majorana bosonic twister has **6,176 terms**:
+455 ordinary MS terms, 5,707 physical face products, two other half-valued
+cups and twelve quarter-valued cups. This is its primary reader-facing
+count. Its 87,189-term lower-equation substitution is a supplementary
+verification, not the expression readers are required to expand mentally.
 
-One specified nested cup/MS composition or explicit physical-face product counts as one atom. Expand sums, outputs, named finite polynomials, lower correction symbols and Delta. The physical fields and their fixed modifiers are the primitive coordinate names. Ordinary differentials and Bocksteins retain their stated scopes. A named derivative carry is expanded using its displayed law. Degree-impossible and closed-input zero terms are removed. Collect literal duplicate binary terms modulo two.
+The 4+1D mixed source MS sum has **1,005 terms** when its defined
+Majorana differential is retained. Its 4,220-term substituted expansion
+below is supplementary. The pure complex-fermion source contribution
+has **three terms** with its differential retained, versus 23 after
+substituting the lower law. These counts refer to those specific sums or
+contributions; they are not partial totals presented as entire laws.
 
-The tower-expanded column additionally substitutes the displayed lower laws for derivatives of physical inputs. Protected integer-lift boundaries remain intact. Delta notation is expanded for both counts.
+Physical contributions remain in the manuscript order c, c gamma,
+c psi, gamma, gamma psi, psi. These labels track fermionic exchange
+origins. Substituting a differential does not reassign its microscopic
+origin according to the variables appearing afterward.
 
-| Dimension | Law and physical part | Primitive atoms, baseline → adopted | Tower-expanded atoms, baseline → adopted |
-|---|---|---:|---:|
-| 2+1D | O2 gamma | 0 → 0 | 0 → 0 |
-| 2+1D | O3 gamma | 2 → 2 | 2 → 2 |
-| 2+1D | O4 c | 3 → 3 | 4 → 4 |
-| 2+1D | O4 c-gamma | 1 → 1 | 4 → 4 |
-| 2+1D | O4 gamma (half) | 5 → 5 | 5 → 5 |
-| 2+1D | O4 gamma (quarter) | 2 → 2 | 2 → 2 |
-| 2+1D | E1 gamma | 0 → 0 | 0 → 0 |
-| 2+1D | E2 gamma | 2 → 2 | 2 → 2 |
-| 2+1D | E3 c (half) | 5 → 5 | 5 → 5 |
-| 2+1D | E3 c-gamma (half) | 15 → 15 | 22 → 22 |
-| 2+1D | E3 gamma (half) | 19 → 13 | 19 → 13 |
-| 2+1D | E3 gamma (quarter) | 8 → 8 | 8 → 8 |
-| 2+1D | E3 gamma (eighth) | 3 → 3 | 3 → 3 |
-| 3+1D | O2 psi | 0 → 0 | 0 → 0 |
-| 3+1D | O3 psi | 2 → 2 | 2 → 2 |
-| 3+1D | O4 gamma | 3 → 3 | 3 → 3 |
-| 3+1D | O4 gamma-psi | 2 → 2 | 2 → 2 |
-| 3+1D | O4 psi | 5 → 5 | 5 → 5 |
-| 3+1D | E1 psi | 0 → 0 | 0 → 0 |
-| 3+1D | E2 psi | 2 → 2 | 2 → 2 |
-| 3+1D | E3 gamma | 2 → 2 | 2 → 2 |
-| 3+1D | E3 gamma-psi | 5 → 5 | 5 → 5 |
-| 3+1D | E3 psi | 18 → 18 | 20 → 20 |
-| 4+1D | O3 psi | 0 → 0 | 0 → 0 |
-| 4+1D | O4 psi | 3 → 3 | 3 → 3 |
-| 4+1D | O5 gamma | 3 → 3 | 3 → 3 |
-| 4+1D | O5 gamma-psi | 2 → 2 | 4 → 4 |
-| 4+1D | O5 psi | 13 → 13 | 14 → 14 |
-| 4+1D | E2 psi | 0 → 0 | 0 → 0 |
-| 4+1D | E3 psi | 2 → 2 | 2 → 2 |
-| 4+1D | E4 gamma | 2 → 2 | 2 → 2 |
-| 4+1D | E4 gamma-psi | 6 → 5 | 8 → 6 |
-| 4+1D | E4 psi | 29 → 27 | 31 → 29 |
 
-Protected whole-lift interiors are listed separately in
-[the lower-layer census data](term_census/LOWER_TERM_COUNTS.json).
-For example, the cubic Delta has three outer lift occurrences and
-ten interior binary monomials; it is not assigned a one-term cost.
+### Counts by layer
 
-## 3+1D terminal obstruction and stacking
+These primary counts retain the already defined lower obstruction and
+stacking operations, their actual output fields, the standard differential,
+Sq and Bockstein operations, Delta, the existing integer carries and the
+fixed integer Pontryagin representative. Explicit linear parentheses and
+arbitrary coefficient polynomials are expanded. The counts describe this
+stated expression, not a normal form obtained by flattening all operations.
+Whole nonlinear lifts retain their scopes; their interior terms are
+listed in the [structured count ledger](term_census/STRUCTURED_TERM_COUNTS.json).
 
-This table uses a **fully flattened ordinary-MS form for the half-valued
-cochain blocks**. All finite packets and actual lower stacked outputs are
-substituted. Exact collection removes typed zero words and groups words
-that define identical binary cochains. The normalization rule in the
-coefficient appendices now includes this collection. Concise nested cup
-expressions in the principal formulas remain available.
+| Dimension | Law | c | c gamma | c psi | gamma | gamma psi | psi | Total |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2+1D | O2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2+1D | O3 | 0 | 0 | 0 | 2 | 0 | 0 | 2 |
+| 2+1D | O4 | 3 | 1 | 0 | 7 | 0 | 0 | 11 |
+| 2+1D | E1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2+1D | E2 | 0 | 0 | 0 | 2 | 0 | 0 | 2 |
+| 2+1D | E3 | 3 | 2 | 0 | 20 | 0 | 0 | 25 |
+| 3+1D | O2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3+1D | O3 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 3+1D | O4 | 0 | 0 | 0 | 3 | 2 | 5 | 10 |
+| 3+1D | O5 | 3 | 9 | 30 | 15 | 2,281 | 11,416 | 13,754 |
+| 3+1D | E1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3+1D | E2 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 3+1D | E3 | 0 | 0 | 0 | 2 | 5 | 13 | 20 |
+| 3+1D | E4 | 3 | 6 | 204 | 43 | 16,059 | 10,583 | 26,898 |
+| 4+1D | O3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4+1D | O4 | 0 | 0 | 0 | 0 | 0 | 3 | 3 |
+| 4+1D | O5 | 0 | 0 | 0 | 3 | 2 | 13 | 18 |
+| 4+1D | O6 | 3 | 9 | 5 | 91 | 1,013 | 623,887 | 625,008 |
+| 4+1D | E2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4+1D | E3 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 4+1D | E4 | 0 | 0 | 0 | 2 | 5 | 27 | 34 |
+| 4+1D | E5 | 3 | 6 | 4 | 6,176 | 5,685,535 | 2,869,220 | 8,560,944 |
 
-| Law | Contribution | Raw half MS words | After exact collection | Additional integer-cup terms | Explicit scalar face terms |
+Every defined lower operation is specified at its own layer; reuse does
+not make its definition disappear from this ledger. A finite MS or face
+sum still contributes every listed term. The supplementary tables below
+use further lower-law substitutions and, where specified, collect equal
+normalized operations. Their numbers are not substitutes for this primary
+boundary and need not decrease monotonically across representations.
+
+## Supplementary substitution counts: 2+1D and lower layers
+
+The table counts each obstruction or twister, excluding the incoming
+additive fields in the stacking equation. The stated lower equations and
+Delta are expanded. A nested ordinary cup/MS term counts once.
+
+| Dimension | Formula | c | c gamma | gamma | gamma psi | psi | Total |
+|---|---|---:|---:|---:|---:|---:|---:|
+| 2+1D | O2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2+1D | O3 | 0 | 0 | 2 | 0 | 0 | 2 |
+| 2+1D | O4 | 4 | 4 | 7 | 0 | 0 | 15 |
+| 2+1D | E1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2+1D | E2 | 0 | 0 | 2 | 0 | 0 | 2 |
+| 2+1D | E3 | 5 | 22 | 24 | 0 | 0 | 51 |
+| 3+1D | O2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3+1D | O3 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 3+1D | O4 | 0 | 0 | 3 | 2 | 5 | 10 |
+| 3+1D | E1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 3+1D | E2 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 3+1D | E3 | 0 | 0 | 2 | 5 | 20 | 27 |
+| 4+1D | O3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4+1D | O4 | 0 | 0 | 0 | 0 | 3 | 3 |
+| 4+1D | O5 | 0 | 0 | 3 | 4 | 14 | 21 |
+| 4+1D | E2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 4+1D | E3 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 4+1D | E4 | 0 | 0 | 2 | 6 | 29 | 37 |
+
+The 2+1D bosonic twister has 51 outer additive terms. Its three eighth-valued
+whole lifts contain 8, 1 and 1 binary monomials internally, respectively.
+All ten interior monomials are recorded in the
+[lower-layer data](term_census/LOWER_TERM_COUNTS.json); the three nonlinear
+lift boundaries remain intact. Introducing Delta saves notation without
+changing this expanded count.
+
+## Supplementary substitution counts: 3+1D terminal formulas
+
+The binary cochain blocks below use a complete ordinary-MS expansion.
+For E4 this is the archived equivalent expression preceding the total-carry
+and coefficient organization now printed in the dimensional page. It is
+not a mechanical expansion of the current half- and quarter-valued brackets.
+Each word has its actual physical inputs; lower formulas, output fields
+and coefficient sets are already substituted. Equal normalized operations
+are collected within the existing physical contributions.
+
+| Formula | Contribution | Half-valued MS terms | Integer cup terms | Face monomials | Total |
 |---|---|---:|---:|---:|---:|
-| O5 | c | 50 | 35 | 0 | 0 |
-| O5 | c gamma | 814 | 168 | 0 | 0 |
-| O5 | c psi | 2,974 | 841 | 0 | 0 |
-| O5 | gamma | 26 | 12 | 4 | 0 |
-| O5 | gamma psi | 6,241 | 2,276 | 7 | 0 |
-| O5 | psi | 1,493 | 583 | 12 | 10,827 |
-| E4 | c | 267 | 139 | 0 | 0 |
-| E4 | c gamma | 26,720 | 2,916 | 0 | 0 |
-| E4 | c psi | 10,501 | 1,422 | 0 | 0 |
-| E4 | gamma | 365 | 67 | 6 | 0 |
-| E4 | gamma psi | 76,485 | 16,015 | 59 | 0 |
-| E4 | psi | 25,535 | 6,479 | 26 | 4,094 |
+| O5 | c | 35 | 0 | 0 | 35 |
+| O5 | c gamma | 168 | 0 | 0 | 168 |
+| O5 | c psi | 841 | 0 | 0 | 841 |
+| O5 | gamma | 12 | 4 | 0 | 16 |
+| O5 | gamma psi | 2,276 | 7 | 0 | 2,283 |
+| O5 | psi | 583 | 12 | 10,827 | 11,422 |
+| E4 | c | 139 | 0 | 0 | 139 |
+| E4 | c gamma | 2,916 | 0 | 0 | 2,916 |
+| E4 | c psi | 1,422 | 0 | 0 | 1,422 |
+| E4 | gamma | 67 | 6 | 0 | 73 |
+| E4 | gamma psi | 16,015 | 59 | 0 | 16,074 |
+| E4 | psi | 6,479 | 26 | 4,094 | 10,599 |
 
-The half-valued MS blocks total **11,598 → 3,915** for O5 and
-**139,873 → 27,038** for E4. These totals exclude the separately listed
-integer-cup and scalar-face columns. In particular, the pure p+ip source
-completion contains 10,825 scalar face monomials, and the product completion
-contains 4,094. They are not counted as a single y term or as the smaller
-number of factored rows. O5 also contains two explicitly signed integer
-face products, included in its scalar-face column.
+The complete **O5 has 14,765 terms** in this specified representation.
 
-The integer-cup column substitutes each auxiliary exact-quotient numerator;
-whole lifts stay intact, with their interior expressions recorded in the
-term data. Thus that column is not an invitation to distribute a binary
-lift over an integer sum.
+The complete **E4 has 31,223 terms** in this specified representation.
 
-The full term lists, with physical input expressions, are in
-[the census data](term_census/README.md). Every removal is an equality of
-normalized cochains; no cohomology quotient or change of phase is used.
+The full term lists and physical input alphabets are in the
+[twelve contribution manifests](term_census/three_dimensional/INDEX.json).
+The pure p+ip polynomials contribute 10,825 source face monomials and
+4,094 product face monomials. The source additionally contains two signed
+integer face products. Factored coefficient rows are not substituted for
+these numbers.
 
-## 4+1D terminal obstruction and stacking
+## Supplementary substitution counts: 4+1D bosonic obstruction
 
-The counts below measure **raw additive occurrences after the specified
-formula definitions and finite indices have been expanded**. They do not
-count a source-completion symbol or a finite path as one term. They are
-not the number of independent terms, the size of a shortest formula, or
-an estimate of the running time of an implementation that reuses results.
+The source word sums are expanded into explicitly specified MS operations
+with their lower physical inputs. The remaining cups are ordinary nested
+operations. Each exact quotient and canonical lift is written completely.
 
-One specified ordinary cup, MS, or differential monomial counts once.
-A nested product with no additive choice is one monomial. Declared
-physical input/output fields, their decorations, and standard Bockstein
-operations remain legitimate inputs. Steenrod squares and every named
-polynomial are expanded. Canonical lifts and floor digits keep their
-scope: their displayed interior summands are counted separately, without
-applying an invalid linear expansion to the lift. Repeated subexpressions
-are counted each time they occur. Physical face-binomial monomials form a
-separate column in the JSON.
+| Contribution | Binary cochain terms | Integer cochain terms | Binary face monomials | Total |
+|---|---:|---:|---:|---:|
+| c | 23 | 0 | 0 | 23 |
+| c gamma | 49 | 0 | 0 | 49 |
+| c psi | 392 | 0 | 0 | 392 |
+| gamma | 88 | 3 | 0 | 91 |
+| gamma psi | 4,320 | 11 | 0 | 4,331 |
+| psi | 0 | 23 | 623,880 | 623,903 |
 
-The complete source completion contains 1,086 indexed residual brackets.
-Expanding each bracket at this boundary gives 7,673 ordinary-operation
-occurrences. Its numerical term has 5,602 physical face-binomial
-occurrences after expanding the coordinate differences. Thus its complete
-raw count is
+The complete **O6 has 628,789 terms** at this boundary. The dominant
+contribution is the actual y6 polynomial: **623,880 distinct physical
+face monomials**, including its entire residual part. The
+[explicit y6 coefficients](FOUR_DIMENSIONAL_Y6_FACES.md) list every term.
+Its integer domain includes negative values; dependence on each
+independent integer root face has period eight.
 
-```math
-1086\times7673+5602=8\,338\,480.
-```
+The Majorana source word sum contains 85 terms. Its mixed counterpart
+has 1,005 specified words before its differential arguments are
+substituted; those arguments expand to 4,420 occurrences and collect to
+**4,220 terms**. The full mixed half-valued source, including the other
+printed products, has **4,320 terms**. Adding its eleven fully written
+integer terms gives the 4,331 total above. No term is reassigned by
+variable support in this count.
 
-This large number precedes cancellations between pulled-back cochains.
-For comparison, the numerical term alone has 1,784 collected physical
-binary-digit monomials after also expanding its signed generalized
-binomials. That is only one part of the source completion; it is not a
-count or a lower bound for the complete source.
+## 4+1D bosonic stacking: boundaries and checks
 
-### Complete terminal contributions
+The c, c gamma and c psi contributions have respectively **75**, **2,216**
+and **3,262** terms after substituting their actual lower laws and output
+fields and collecting equal typed operations.
 
-The exact integers in the following table use the current reduced word
-table, the lower-layer identities, the strict-root path cancellation,
-and the Majorana-only branch cancellation. The JSON also records the
-larger expansion of the previous unpruned definitions.
+The complete Majorana contribution is now an explicit formula with
+**6,176 terms** when its standard differential inputs are retained:
+455 ordinary MS terms, 5,707 physical face products, two other half-valued
+cups and twelve quarter-valued cups. This includes the open-input terms;
+it is not a formula restricted to closed Majorana cochains.
 
-| Contribution | Bosonic obstruction, degree six | Bosonic stacking, degree five |
-|---|---:|---:|
-| Complex fermions | 3 | 69 |
-| Complex fermions–Majorana | 25 | 20 |
-| Complex fermions–p+ip | 299 | 52 |
-| Majorana | 91 | 535,219 |
-| Majorana–p+ip | 1,100 | 79,005,396,933,194,467 |
-| p+ip | 8,338,535 | 18,584,875,760,063,481 |
+Substituting the lower Majorana equation gives **87,189 terms** in its
+specified ordinary-MS/face expansion: 486 MS terms, 86,682 face products,
+six other half-valued cups, and fifteen quarter-valued cups. The additional
+half-valued terms include the required canonical integer-lift carries.
+The complete explicit lists and a public replay are linked from the
+[Majorana coefficient appendix](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md).
+These two counts use different, stated boundaries; they must not be
+presented as a before/after reduction.
 
-These are exact **occurrence counts for this expansion procedure**.
-The collected scalar normal forms of the full mixed and p+ip stacking
-terms have not been materialized. In particular, the large raw numbers
-do not assert that this many nonzero or indispensable terms remain.
+The complete mixed finite sum has **5,684,189 terms**,
+and the complete pure p+ip finite sum has **2,869,198 terms**.
+Including the other displayed contributions gives **8,560,944 terms**
+for the complete E5 at the primary structured boundary. Every coefficient
+is supplied in the [stacking coefficient appendix](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).
+The exact collection includes all source and tensor contributions; these
+are term lists, not counts of construction steps.
 
-### Reproducing the finite count
+The mixed and pure sums respectively have 58,547 and 35,550 distinct
+nonlinear-interior terms, with 448,864 and 54,840 appearances when those
+interiors and the explicit operation arguments are written inline. The
+definitions of the reused lower operations remain intact. The interiors
+are listed separately because a whole
+canonical lift or exact quotient cannot be distributed as an ordinary
+linear sum. Reused lower differentials and twisters retain their full
+earlier definitions.
 
-The [counting data](term_census/four_dimensional/FOUR_DIMENSIONAL_COUNT_DATA.json) specifies the count of each fully expanded kernel and
-tensor coefficient for each possible number of nonzero branch bits.
-The supplied standard-library scripts independently derive these weights
-from the literal formula expressions and all fixed coefficient rows,
-then recompute the path multiplicities and the table. Run the following
-commands in `docs/formulas/term_census/four_dimensional/`:
+## Representation and verification
 
-```text
-python derive_four_dimensional_weights.py
-python derive_four_dimensional_weights.py --current
-python replay_four_dimensional_census.py
-```
+The c gamma expressions now use the ordinary open-cochain Steenrod
+squares and the existing Delta. This preserves each complete contribution
+exactly, including its lower differential and actual output terms.
+The direct Majorana stacking expression uses an explicit output coboundary;
+its [gauge map](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md) is supplied.
+The obstruction is unchanged, and the other five stacking contributions
+are unchanged. This preserves the cohomology class of the full twister.
 
-All inputs are supplied beside the scripts. No private source, network
-access, external package, or project checkout is needed. The weight
-derivation includes all 970 numerical rows, the 453 source words, the
-original and reduced Majorana tables, and the 226 tensor rows. The first
-two commands compare their independently derived weights with the JSON;
-the third recomputes the aggregate table.
+Standard integer lifts and divisions retain their scopes throughout.
+In particular, a binary numerator with two summands has canonical integer
+value x+y-2xy; using x+y in a quarter-valued expression would lose a
+half-valued contribution. The public Majorana replay explicitly checks
+all sixteen local carry cases. Independent comparison also passed for
+512 arbitrary open input pairs and 128 valid lower physical towers.
 
-For a multilinear operation with argument counts $`m_1,\ldots,m_q`$,
-the outer occurrence count is $`\prod_i m_i`$. Interior counts propagate
-with the same product of the other argument counts. Addition adds counts.
-A canonical-lift or floor boundary has one outer value but retains the
-complete interior count. This last rule is bookkeeping of a nonlinear
-expression, not a mathematical claim that the nonlinear operation is
-additive.
-
-For a path with $`h`$ branch bits equal to one, the decoded p+ip part of
-each input Majorana face contains $`2+2h`$ raw physical-factor terms.
-The surviving unbranched grid-path multiplicities at lengths zero through
-five are
-
-```math
-1,\quad116,\quad4176,\quad41760,\quad83520,\quad0.
-```
-
-Multiply each length-$`J`$ contribution with $`h`$ nonzero bits by
-$`\binom Jh`$. A kernel coefficient additionally has 358 final-grid
-choices; a tensor coefficient does not. This gives the recurrence
-
-```math
-\sum_{J=0}^{4} a_J
- \sum_{h=0}^{J}\binom Jh
- \bigl[358\,r(2+2h)+t(2+2h)\bigr],
-```
-
-where $`r`$ and $`t`$ denote the numerical occurrence counts in the
-linked counting data, separately for each physical contribution. They are
-counting functions, not added symbols in the physical formulas. For the
-Majorana contribution only $`J=0`$ survives and the tensor count is zero.
-Its remaining binary kernel has $`358\times1495=535210`$ raw occurrences;
-the explicitly expanded quarter numerator contributes nine more.
-
-Every residual bracket, standard-operation word, tensor row, lower
-polynomial and lift interior is included in these weights. The path count
-alone is never used as the formula-term count.
-
-### Exact reductions already checked
-
-The ordinary source table decreases from 1,176 to 1,090 rows: 101 to 85
-Majorana rows, and 1,075 to 1,005 mixed rows. The Majorana reduction uses
-only the already required closed backgrounds; the selected mixed rows
-agree for fully independent binary Majorana and differential inputs.
-Their colored use therefore preserves the stated factor ancestry.
-
-Separately, the archived zero-background Majorana-source part of the
-terminal product decreases from 179,225 to 106,147 ordinary words by exact
-typed cochain identities. Its collected scalar expansion has 209,477
-monomials. This component is not the complete stacking formula.
-
-No phase convention or numerical classification changes in these
-identities. Further reduction should first remove zero and equal terms
-inside the indexed mixed and p+ip coefficients, rather than printing the
-raw expansion or introducing another name for it.
-
-## What changed in the formulas
-
-The explicit 3+1D relative complex-fermion tables also lose their
-degree-impossible rows: 186 → 132 open-Majorana rows and 58 → 22
-lower-fermion rows. Every removed word has an empty normalized cut table.
-
-The two output-minus-input combinations in the 2+1D bosonic twister now
-use the already defined Delta. Its cubic term is
-
-```math
--\frac18\Delta\!\left[\overline{n_1^3}\right].
-```
-
-This saves notation without claiming a reduction in expanded terms.
-The canonical bar remains inside Delta. The antiunitary polynomial in
-the same contribution is reduced from 12 cup summands to six explicit
-physical face products, with exact equality on all closed degree-one
-inputs. The impossible closed-input Sq-squared term is removed.
-
-In 4+1D the empty degree-(4,3) cup-4 term is removed from the mixed
-complex-fermion twister, and two identical diagonal products cancel in
-its pure p+ip contribution. The ordinary Majorana source coefficient
-table is reduced from 1,176 to 1,090 words (85 Majorana and 1,005 mixed),
-using only the already stated closed backgrounds.
-
-The 4+1D physical path sums omit equal binary branch pairs. Their proof
-and strict index condition are in
-[Physical face indices](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md#exact-removal-of-zero-path-pairs).
-This reduces path occurrences from 675,018,894,633 to 1,687,337 and removes
-length five entirely. A path still contains many formula terms: these
-numbers are never substituted for a term count. The pure Majorana part
-simplifies further: every positive-length path cancels, so its binary
-coefficient requires only the length-zero contribution.
-
-## Next simplification targets
-
-1. The 4+1D terminal coefficient construction: collect normalized physical
-   face contributions before expanding its repeated finite paths. The raw
-   expansion is very redundant; the reduced path count is only a first step.
-2. The 3+1D mixed Majorana–p+ip half twister: its strict MS form still has
-   16,015 words after identical-operation collection. Search for short cup
-   identities and coupled changes of representative, rather than introduce
-   another name for the same long polynomial.
-3. The pure p+ip face polynomials and the 4+1D source completion: retain
-   useful factorization while reducing the number of actual monomials.
-
-All adopted changes in this iteration are exact cochain identities or
-literal regroupings. The existing paired source/product phase maps and
-numerical classification results are unchanged. No claim of a globally
-minimal formula is made.
+The next simplification targets are the largest contributions at the
+primary structured boundary. First identify exact occurrences of the
+already defined lower differentials, stacking twisters and standard operations; then simplify
+the remaining finite sums. Reducing repeated expansion of a well-defined
+differential is a useful reduction in reader complexity. Merely introducing
+an unrelated name for a polynomial is not.

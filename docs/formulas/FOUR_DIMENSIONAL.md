@@ -121,10 +121,14 @@ In the current phase coordinate the contributions are:
 **Complex-fermion–Majorana contribution.**
 
 ```math
+\begin{aligned}
 \widehat{\mathcal{𝒪}}_6^{c\gamma}
-=\frac12(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})
-        \cup_4(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}).
+={}&\frac12\big[\mathrm{Sq}^2\check n_3+\omega_2\check n_3+s_1\mathrm{Sq}^1\check n_3\big]\cup_4\!\big[\\
+&\qquad\mathrm{Sq}^2\check n_3+\omega_2\check n_3+s_1\mathrm{Sq}^1\check n_3\big].
+\end{aligned}
 ```
+
+The bracket is the full Majorana term in the lower parity equation. The Steenrod squares here use their cochain definitions, including $`d\check n_3`$; the Majorana cochain is not assumed closed. The superscript labels the exchanged fermion operators, rather than the variables obtained after the lower equations are substituted.
 
 **Complex-fermion–p+ip contribution.**
 
@@ -163,6 +167,10 @@ specified cochain representatives.
 \end{aligned}
 ```
 
+This finite sum contains **85 specified MS terms**. Its rows have no
+differential argument; the other displayed half- and quarter-valued
+terms are outside the sum.
+
 **Majorana–p+ip contribution.**
 
 ```math
@@ -185,16 +193,14 @@ specified cochain representatives.
 \end{aligned}
 ```
 
-The [ordinary 4D coefficient table](FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md)
-defines both finite sets. The 85 rows in $`\mathcal I_6^\gamma`$
-have no differential argument. The 1,005 rows in
-$`\mathcal I_6^{\gamma\psi}`$ contain both $`\check n_3`$
-and $`d\check n_3`$; substitute the actual lower equation
-$`d\check n_3=\bar n_2^2+\check\omega_2\bar n_2`$
-in those arguments. Every row contains a Majorana argument, so this
-word sum adds no pure-p+ip source term. The single second-digit term
-retains the specified open-Bockstein continuation. This is a literal
-regrouping of the cochain terms in the same phase coordinate.
+This finite sum contains **1,005 specified MS terms** with the defined
+Majorana differential retained as an input. Every word and its arguments
+are given in the [coefficient table](FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md).
+For a supplementary check, substituting
+$`d\check n_3=\bar n_2^2+\check\omega_2\bar n_2`$ gives 4,420
+distributed occurrences before equal normalized operations collect to
+**4,220 terms**. This substitution is not required in the reader formula. The other
+displayed half- and quarter-valued terms are outside this sum.
 
 
 **p+ip contribution.**
@@ -219,6 +225,12 @@ regrouping of the cochain terms in the same phase coordinate.
    +\frac1{16}\mathcal P_{s_1}(\check\omega_2)n_2+\frac1{12}n_2^3.
 \end{aligned}
 ```
+
+The polynomial $`y_6`$ contains **623,880 explicit physical-face monomials**
+after its complete finite definition is expanded and equal binary
+monomials are collected. The [complete physical coefficient table](FOUR_DIMENSIONAL_Y6_FACES.md)
+specifies every monomial. It is not counted as one term. The remaining
+displayed rational terms are additional.
 
 **Cochains appearing in these contributions.**
 
@@ -383,19 +395,14 @@ contribution. Its paired phase convention is stated after the formulas.
 ```math
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_5^{c\gamma}
-=\frac12\Big[&
- (\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})\cup_4n'_4\\
- &+N_4\cup_4(\mathcal{𝒪}_5^\gamma
-                 +\mathcal{𝒪}_5^{\gamma\psi})[N_2,\check N_3]\\
- &+n_4\cup_4(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})
- +n'_4\cup_4(\mathcal{𝒪}_5^{\gamma\prime}
-                      +\mathcal{𝒪}_5^{\gamma\psi\prime})\Big].
+={}&\frac12\Big[
+ \big[\mathrm{Sq}^2\check n_3+\omega_2\check n_3+s_1\mathrm{Sq}^1\check n_3\big]\cup_4n'_4\\
+&\qquad+\Delta\Big[
+ n_4\cup_4\big[\mathrm{Sq}^2\check n_3+\omega_2\check n_3+s_1\mathrm{Sq}^1\check n_3\big]\Big]\Big].
 \end{aligned}
 ```
 
-Each Majorana obstruction includes its known differential terms. In
-particular the output uses the actual $`\check N_3`$, including the
-$`p+ip`$ contribution to Majorana stacking.
+The $`\Delta`$ has its defined three terms: the value at $`(N_4,\check N_3)`$ minus the values at $`(n_4,\check n_3)`$ and $`(n'_4,\check n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential terms. This is an exact rewriting of the same contribution.
 
 #### Complex fermions and p+ip decoration
 
@@ -412,16 +419,81 @@ $`p+ip`$ contribution to Majorana stacking.
 #### Majorana decoration
 
 ```math
+\begin{aligned}
 \widehat{\mathcal{ℰ}}_5^\gamma
-=\frac12\sum_{\eta\in\mathcal I_5^\gamma}
-       \prod_{(x,f)\in\eta}x(f)
- +\frac14\overline{\mathcal V_5^\gamma}.
+={}&\frac12\Big[
+ \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
+ \mathop{\mathrm{MS}}\nolimits_\vartheta(x_1,\ldots,x_q)\\
+&\qquad+\sum_{\eta\in\mathcal J_5^\gamma}\prod_{(x,f)\in\eta}x(f)
+ +s_1[(\bar B_4^\gamma+\bar B_4^{\gamma\prime})
+                         \cup_3\bar\lambda_3^\gamma]\Big]\\
+&+\frac14\Big[
+ B_4^\gamma\cup_3B_4^{\gamma\prime}
+ -(B_4^\gamma+B_4^{\gamma\prime})\cup_2\lambda_3^\gamma\\
+&\qquad+\lambda_3^\gamma\cup_2\beta^\circ(\check n_3+\check n'_3)
+ +\lambda_3^\gamma\cup_1\lambda_3^\gamma+\omega_2\lambda_3^\gamma\\
+&\qquad-(dB_4^\gamma+dB_4^{\gamma\prime})\cup_3\lambda_3^\gamma
+ -\lambda_3^\gamma\cup_2
+       (\overline{d\check n_3}\cup_4\overline{d\check n'_3})\\
+&\qquad+dB_4^\gamma\cup_4B_4^{\gamma\prime}
+ +(dB_4^\gamma+dB_4^{\gamma\prime})\cup_4d\lambda_3^\gamma
+ \Big]\pmod1.
+\end{aligned}
 ```
 
-The finite sums in this subsection and the next two are evaluated on
-$`(012345)`$. Their factors are original physical face values, and their
-complete coefficient indices are specified in the
-[physical coefficient appendix](FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md). They do not introduce higher-dimensional input fields.
+Here the existing Majorana parts of the integer carries are
+
+```math
+B_4^\gamma=\beta^\circ\check n_3,\qquad
+B_4^{\gamma\prime}=\beta^\circ\check n'_3,\qquad
+\lambda_3^\gamma=-\check n_3\cup_3\check n'_3.
+```
+
+The first records the integer carry of the lower differential; the last
+records the carry in binary stacking. Their exact compatibility on open
+cochains is
+
+```math
+\beta^\circ(\check n_3+\check n'_3)
+=B_4^\gamma+B_4^{\gamma\prime}+d\lambda_3^\gamma
+ +\overline{d\check n_3}\cup_4\overline{d\check n'_3}.
+```
+
+The minus sign in the definition of the integral carry is essential.
+These are the same carries used by the lower product and the quarter
+numerators below. Reusing them changes neither the cochain nor its
+representative; it keeps their differential and stacking roles visible.
+
+The ordinary MS sum contains **455 terms**, listed in the
+[ordinary coefficient table](FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md).
+The physical-face sum contains **5,707 terms**, with every cochain and face
+listed in the [physical coefficient table](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md). The remaining brackets contain **two half-valued cup
+terms and twelve quarter-valued cup terms** after distributing additions.
+Thus this complete displayed expression has **6,164 half-valued terms and
+12 quarter-valued terms: 6,176 terms in total**. This is the primary
+count of the displayed formula. Fully defined lower differentials and
+standard Bocksteins remain explicit structured arguments; their lower
+formulas need not be substituted again inside every higher operation.
+Here $`d`$ is the cochain differential, not an AHSS differential $`d_r`$.
+
+All terms rewrite the previously designated Majorana cochain contribution.
+No summand is reassigned to another contribution, including differential terms.
+
+The expression differs from the previous complete Majorana contribution
+by the [explicit output coboundary](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md). The obstruction function is unchanged.
+It is valid for open Majorana input cochains; no cocycle assumption is
+needed for this complete version.
+
+An optional [lower-equation substitution check](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md#supplemental-lower-equation-substitution)
+also records the 87,189 terms obtained by substituting the explicit lower
+laws throughout. That larger expansion is a verification representation,
+not the primary count or a requirement for reading this formula. All
+canonical lifts and integer carries are preserved in either form.
+
+The coefficient tables make this representative explicit and reproducible.
+They do not claim a final economical organization of the operation. Further
+refinement should expose its lower differential and integer-carry structure,
+while preserving the complete open-cochain formula.
 
 #### Majorana and p+ip decoration
 
@@ -446,6 +518,15 @@ complete coefficient indices are specified in the
  +n_2\check n'_3+n'_2\check n_3\Big].
 \end{aligned}
 ```
+
+This finite sum contains **5,684,189 explicit terms** with the defined
+lower differentials, stacking twisters and integer carries retained.
+The [complete coefficient table](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md)
+specifies every factor and argument. Expanding the remaining displayed
+linear sums and the three quarter numerators adds **1,346 terms**, giving
+**5,685,535 terms** for this contribution. Whole nonlinear lifts retain
+their scopes; their complete interior terms are recorded separately in
+the coefficient table.
 
 The three products of $`\mathcal V`$ retain the carry from the canonical
 integer lift of their binary sum. They cannot be dropped when splitting a
@@ -480,6 +561,14 @@ quarter-valued contribution into physical parts.
  -(n_2\cup_1n'_2)(n'_2-n_2)\Big]\pmod1.
 \end{aligned}
 ```
+
+This finite sum contains **2,869,198 explicit terms**, including the entire
+pure-source and tensor contributions. The
+[complete coefficient table](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md)
+lists them with the same lower-operation convention. The other displayed
+terms add **22**, giving **2,869,220 terms** for this contribution.
+The protected whole quarter numerator has 20 interior terms, displayed
+below; the other nonlinear interiors are specified in the coefficient table.
 
 The final denominator-three term belongs to the integer cubic response.
 All displayed integer products use the fixed signed coefficient transports.
@@ -551,6 +640,10 @@ already defined carry $`B_4=B_4^\gamma+B_4^\psi`$. Primes mean the second
 stacking input. The three parts of $`\lambda_3`$ are those defined in the
 main stacking formula.
 
+With these defined carries and the standard Steenrod square retained,
+this numerator contains **eight terms** after distributing the explicit
+linear sums.
+
 ##### Majorana–p+ip quarter numerator
 
 ```math
@@ -583,9 +676,18 @@ main stacking formula.
 ```
 
 The last sum contains the three pairs
-$`(i,j)=(\gamma,\gamma\psi),(\gamma,\psi),(\gamma\psi,\psi)`$.
-It is the ordinary polarization of the cochain Steenrod square, including
-its differential terms.
+$`(i,j)=(\gamma,\gamma\psi),(\gamma,\psi),(\gamma\psi,\psi)`$,
+and contains **twelve cup terms** with the defined stacking carries
+retained. The entire mixed numerator contains **42 terms** at this boundary.
+For a supplementary substitution check, inserting the lambda definitions and
+expanding the cochain differentials of $`\bar\lambda_3^\gamma`$ and
+$`\bar\lambda_3^{\gamma\psi}`$ gives **55 nested-cup terms** after
+the lower Majorana equations are inserted. The entire binary reduction
+of the exact quotient in $`\bar\lambda_3^\psi`$, and the differential
+of that explicit quotient, remain intact; its numerator has two terms.
+Distributing those two integer numerator terms inside a binary cup would
+be invalid. The count 55 applies to this last sum alone, in that protected
+quotient convention.
 
 ##### p+ip quarter numerator
 
@@ -611,6 +713,11 @@ its differential terms.
  +s_1(\bar n'_2\cup_1s_1)\bar n_2.
 \end{aligned}
 ```
+
+The p+ip numerator contains **20 terms** with the defined lower carries
+and standard operations retained. A canonical lift of a whole numerator
+retains its scope: the mixed and pure lifts have respectively 42 and 20
+terms inside them, and cannot be replaced by sums of individual lifts.
 
 Their sum is exactly the original binary numerator
 $`\mathcal V_5=\mathcal V_5^\gamma+\mathcal V_5^{\gamma\psi}

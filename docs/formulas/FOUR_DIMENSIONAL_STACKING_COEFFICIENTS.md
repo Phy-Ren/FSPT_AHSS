@@ -1,0 +1,120 @@
+# Finite coefficients for the 4+1D bosonic stacking law
+
+The two remaining binary sums in the [bosonic stacking law](FOUR_DIMENSIONAL.md#eq-t4d) are
+
+```math
+\sum_{\eta\in\mathcal I_5^{\gamma\psi}}
+       \prod_{(x,f)\in\eta}x(f),
+\qquad
+\sum_{\eta\in\mathcal I_5^\psi}
+       \prod_{(x,f)\in\eta}x(f).
+```
+
+The first sum has **5,684,189 terms**; the second has **2,869,198 terms**.
+These are the collected summands of the explicit expression specified here.
+Every finite coefficient sum has been distributed, and identical products
+have been collected over $`\mathbb F_2`$. The factor $`1/2`$ converting each
+binary sum into an additive phase is displayed in the main stacking law.
+
+The complete tables are the [Majorana–p+ip coefficients](coefficients/FOUR_DIMENSIONAL_STACKING/gamma_psi/INDEX.json)
+and the [p+ip coefficients](coefficients/FOUR_DIMENSIONAL_STACKING/psi/INDEX.json).
+The latter includes the complete integer-decoration polynomial and the
+finite tensor contribution. No residual finite sum is represented by a
+single unspecified factor.
+
+## Reusing the lower layers
+
+A factor may be a physical face value or a fully specified value of an
+already defined lower obstruction, lower stacking twister, Bockstein, or
+integer carry. The tables retain the same arguments, coefficient systems,
+and representatives as their [lower-layer definitions](FOUR_DIMENSIONAL.md).
+They also retain ordinary cochain differentials of these operations.
+
+For example, the integer carry has the open-cochain definition
+
+```math
+B_4[n_2,x]=\beta^\circ x+B_4^\psi[n_2].
+```
+
+Here $`x`$ is any binary degree-three cochain. This definition is integral
+without imposing $`dx=\check{\mathcal O}_4[n_2]`$ on an individual argument.
+The quotient using $`d x`$ in place of the lower obstruction agrees with it
+on the actual lower tower; it must not be substituted on an arbitrary
+component. Its useful polarization is the exact integer identity
+
+```math
+\beta^\circ(x+y)-\beta^\circ x-\beta^\circ y
+ =-d(x\cup_3y)+\overline{dx}\cup_4\overline{dy}.
+```
+
+All binary inputs in this integer equation use their canonical values.
+The reductions on the two differentials are taken before their integer
+product. This identity explains why a mixed carry can be written in terms
+of existing Bocksteins instead of a new polynomial name.
+
+Likewise, the [integral stacking carry](FOUR_DIMENSIONAL.md#eq-t4a) is
+
+```math
+\lambda_3[n_2,x;n'_2,y]
+ =\frac{
+ \overline{x+y+\check{\mathcal E}_3[n_2,n'_2]}
+ -x-y+n_2\cup_1n'_2}{2}.
+```
+
+The integer higher cup includes the prescribed local-system transport.
+The numerator is even because the lower Majorana twister is the parity of
+that integer cup. Thus this carry is defined for arbitrary binary $`x,y`$;
+no separate lower-tower condition is imposed on them. Polarizing this same
+carry preserves its complete canonical-lift correction. Neither its lift
+nor its ordinary differential is replaced by the lift of a differential.
+
+These structures are used with explicit arguments throughout the tables.
+Their original physical contribution is preserved under substitution;
+variable support is not used to assign a new exchange origin.
+
+## Whole binary lifts and integer digits
+
+Canonical binary lifts and floor digits are kept with their complete
+numerators. Their scope is part of the formula: distributing a lift as
+ordinary integer addition would lose its carry. The tables list every
+numerator monomial explicitly.
+
+| Coefficient sum | Outer summands | Distinct numerator summands | Numerator summands at every occurrence |
+|---|---:|---:|---:|
+| $`\mathcal I_5^{\gamma\psi}`$ | 5,684,189 | 58,547 | 448,864 |
+| $`\mathcal I_5^\psi`$ | 2,869,198 | 35,550 | 54,840 |
+
+The last two columns concern only actual nonlinear lift and floor scopes.
+The final column follows every outer occurrence recursively, including
+nonlinear scopes inside standard-operation arguments.
+They do not count a lower obstruction or stacking law as an unexpanded
+finite coefficient packet. Its independently defined mathematical
+operation is the reusable input at this layer. Recursively substituting
+those lower formulas gives a different, supplementary expression count.
+
+## Reading and checking the tables
+
+Each `INDEX.json` lists all coefficient files, their exact row counts,
+checksums, and expression conventions. Every `terms` row is a product of
+the listed binary factors. An empty row is the constant one. Integer
+indices identify table entries; they introduce no new cochain notation.
+
+Each factor entry specifies either a named physical cochain and its face,
+an existing operation with every argument face written out, or a canonical
+lift/floor with its full numerator. For an integer face value, digit zero
+means reduction modulo two, digit one means the second binary digit, and
+higher digits mean $`\overline{\lfloor x/2^k\rfloor}`$. This convention
+also applies to negative integers. All argument polynomials include their
+coefficient precision.
+
+The [verification script](coefficients/FOUR_DIMENSIONAL_STACKING/verify_coefficients.py)
+checks every factor reference, nonlinear scope, checksum, duplicate row,
+and summand count using the Python standard library. The compressed term
+files contain ordinary JSON arrays and are read automatically by the script. The counts describe
+this explicit reusable-operation expression; they do not assert a minimum
+under every possible cochain identity.
+
+The [verification summary](coefficients/FOUR_DIMENSIONAL_STACKING/VERIFICATION.json)
+also records independent comparisons of each complete coefficient sum with
+the unchanged cochain formula on four legal towers, and 32 checks of the
+reused lower-operation identities.

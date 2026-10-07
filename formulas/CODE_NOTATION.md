@@ -6,6 +6,13 @@ there; this page translates it into existing API keys, local source variables,
 and compiled program names. These identifiers are scoped to their functions.
 They do not introduce additional fields into the formulas. The numerical kernels and their field names retain the supplied representative. The guide now also uses an explicitly transported terminal phase. Compare cochains only after the [3+1D paired map](../docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) or the [4+1D operator map](../docs/formulas/REPRESENTATIVES.md#operator-phase-4d), as appropriate. These maps leave the lower decoration fields and abstract stacking groups unchanged.
 
+The explicit $`4+1`$D Majorana stacking expression additionally uses the
+[displayed output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md):
+subtract $`d_{s_1}G_4`$ from the previous terminal product cochain, and add
+it for the inverse comparison. The obstruction is unchanged since
+$`d_{s_1}^2=0`$. This is a documented representative conversion; no runtime
+algorithm or stored classification/stacking result was modified.
+
 See the [runtime interface](README.md#runtime-interface) for calling conventions
 and the [operation registry](FORMULA_REGISTRY.json) for exact source hashes and
 compiled targets.

@@ -113,9 +113,14 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 #### Complex fermions and Majorana decoration
 
 ```math
+\begin{aligned}
 \widehat{\mathcal{𝒪}}_5^{c\gamma}
- =\frac12(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})\cup_3(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}).
+={}&\frac12\big[\mathrm{Sq}^2\check n_2+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2\big]\cup_3\!\big[\\
+&\qquad\mathrm{Sq}^2\check n_2+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2\big].
+\end{aligned}
 ```
+
+The bracket is the full Majorana term in the lower parity equation. The Steenrod squares here use their cochain definitions, including $`d\check n_2`$; the Majorana cochain is not assumed closed. The superscript labels the exchanged fermion operators, rather than the variables obtained after the lower equations are substituted.
 
 #### Complex fermions and p+ip decoration
 
@@ -130,9 +135,8 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 \end{aligned}
 ```
 
-Every term of the last sum contains
-$`d\check n_2=\check\omega_2\bar n_1`$. Its 25 coefficients are
-[listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices).
+The finite sum contains **25 specified MS terms**, [listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices). Every term contains
+$`d\check n_2=\check\omega_2\bar n_1`$; this lower source has one cup term.
 
 #### Majorana decoration
 
@@ -187,6 +191,10 @@ The word operations are
 \end{aligned}
 ```
 
+The sum contains **2,276 ordinary MS terms** after substituting its finite
+definitions and collecting equal normalized cochains. This counts the
+complete half-valued sum; the quarter-valued terms are separate.
+
 The integer carry and the twisted Bockstein are
 
 ```math
@@ -231,6 +239,11 @@ On the ordered five-simplex $`(012345)`$, the complete contribution is
  +\frac1{16}[\mathcal P_{s_1}(\check\omega_2)\cup n_1](012345).
 \end{aligned}
 ```
+
+The two sums contain **583 ordinary MS terms** and **10,825 physical-face
+monomials**, respectively, after their coefficient polynomials are fully
+expanded and collected. The latter count includes the background factors;
+a coefficient-table row is not counted as a single term.
 
 Every cochain expression without explicit arguments is evaluated on
 $`(012345)`$. The [word indices](THREE_DIMENSIONAL_WORD_INDICES.md#final-physical-index-sets)
@@ -357,15 +370,15 @@ The $`\Delta`$ acts on the entire displayed bracket with the p+ip output $`N_1`$
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^{c\gamma}_4=\frac12\big[&
- (\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\check n_2]\cup_3n'_3
- +N_3\cup_3(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\check N_2]\\
- &+n_3\cup_3(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\check n_2]
- +n'_3\cup_3(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\check n'_2]\big].
+\widehat{\mathcal{ℰ}}_4^{c\gamma}
+={}&\frac12\Big[
+ \big[\mathrm{Sq}^2\check n_2+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2\big]\cup_3n'_3\\
+&\qquad+\Delta\Big[
+ n_3\cup_3\big[\mathrm{Sq}^2\check n_2+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2\big]\Big]\Big].
 \end{aligned}
 ```
 
-The output is the actual stacked Majorana field, including its p+ip carry.
+The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ minus the values at $`(n_3,\check n_2)`$ and $`(n'_3,\check n'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential terms. This is an exact rewriting of the same contribution.
 
 #### Complex fermions and p+ip decoration
 
@@ -383,11 +396,16 @@ The output is the actual stacked Majorana field, including its p+ip carry.
 \end{aligned}
 ```
 
-The [132 open-Majorana words](THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md) contain
+The finite MS sum contains **132 terms**, [listed explicitly](THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md). They contain
 $`d\check n_2=\check\omega_2\bar n_1`$ or its primed counterpart.
 The two displayed $`P_4`$ terms differ by inserting the actual p+ip Majorana
 stacking carry $`\bar n_1\bar n'_1`$; their eight-row definition is below. These terms retain the physical complex-fermion operator ordering. The accompanying 22 words with
 $`dn_3`$ or $`dn'_3`$ are retained in the lower-sector index set.
+
+Expanding that eight-word definition gives **16 and 52 specified MS
+occurrences** in the two displayed evaluations, respectively, with the
+defined output $`\check N_2`$ retained. Together they contribute **68
+terms**, in addition to the 132-term sum.
 
 #### Majorana decoration
 
@@ -457,14 +475,22 @@ z^0_4(x,y)={}&\sum_{v\in\mathcal V_4}\mathop{\mathrm{MS}}\nolimits_v(x,x,y,y)
 \end{aligned}
 ```
 
+The sum over $`\mathcal V_4`$ contains **seven specified MS terms**.
+The other displayed terms of $`z_4^0`$ are outside this sum. The complete
+$`z_4^0`$ has **20 distributed terms**; the complete $`z_4^\gamma`$ has
+**37**, retaining the defined lower twister, integer carries, and whole
+lift scopes.
+
 #### Majorana and p+ip decoration
 
 ```math
 \begin{aligned}
 \widehat{\mathcal{ℰ}}^{\gamma\psi}_4={}&
- \frac12\left[z_4^\gamma+
+ \frac12\Big[z_4^\gamma+
    \sum_{(v;\boldsymbol x)\in\mathcal I_{4,\neg\psi}}
-          \mathop{\mathrm{MS}}\nolimits_v(\boldsymbol x)\right]\\
+          \mathop{\mathrm{MS}}\nolimits_v(\boldsymbol x)\\
+&\qquad+\omega_2\lambda_2^\gamma
+ +d_{s_1}(\lambda_2^\gamma\cup_1\lambda_2^\gamma)\Big]\\
 &+\frac14\Big[
  -\beta^\circ\check n_2\cup_2 B_3^{\psi\prime}
  -B_3^\psi\cup_2\beta^\circ\check n'_2
@@ -474,15 +500,13 @@ z^0_4(x,y)={}&\sum_{v\in\mathcal V_4}\mathop{\mathrm{MS}}\nolimits_v(x,x,y,y)
        \cup_2d\lambda_2
  +(B_3^\psi+B_3^{\psi\prime})
        \cup_2d(\lambda_2^\gamma+\lambda_2^{\gamma\psi})\\
-&\quad+\sum_{\substack{i,j\in\{\gamma,\gamma\psi,\psi\}\\
-                         (i,j)\ne(\psi,\psi)}}
-       [\lambda_2^i\cup_1d\lambda_2^j-\lambda_2^i\lambda_2^j]
- +\omega_2(\lambda_2^\gamma+\lambda_2^{\gamma\psi})\\
+&\quad+\lambda_2\cup_1d\lambda_2-\lambda_2^2
+ -\lambda_2^\psi\cup_1d\lambda_2^\psi+(\lambda_2^\psi)^2
+ +\omega_2\lambda_2^{\gamma\psi}\\
 &\quad-\big[\check N_2^2-\check n_2^2-(\check n'_2)^2
                       -(\bar n_1\bar n'_1)^2\big]\\
 &\quad+d_{s_1}\Big[
- 2\lambda_2^\gamma\cup_1\lambda_2^\gamma
- +(\beta^\circ\check n_2+\beta^\circ\check n'_2)
+ (\beta^\circ\check n_2+\beta^\circ\check n'_2)
                      \cup_2\lambda_2^\gamma
  +(d\lambda_2^\gamma)\cup_3d\lambda_2^\gamma
  -\overline{\check n_2\cup_1\check n'_2}\Big]\\
@@ -490,10 +514,29 @@ z^0_4(x,y)={}&\sum_{v\in\mathcal V_4}\mathop{\mathrm{MS}}\nolimits_v(x,x,y,y)
                   \cup_1\lambda_2^\gamma
  +\lambda_2^\gamma\cup_1
         \beta^\circ\overline{\check n_2+\check n'_2}
- -(\lambda_2^\gamma)^2+\omega_2\lambda_2^\gamma
+ -(\lambda_2^\gamma)^2
  \Big].
 \end{aligned}
 ```
+
+The MS sum over $`\mathcal I_{4,\neg\psi}`$ contains **15,994 terms**
+after exact collection; $`z_4^\gamma`$ is outside that sum. The quarter-valued
+quadratic expression uses the total integer carry $`\lambda_2`$ and
+subtracts the same expression in $`\lambda_2^\psi`$. These **four terms**
+are exact because
+$`\lambda_2=\lambda_2^\gamma+\lambda_2^{\gamma\psi}+\lambda_2^\psi`$
+is an equality of integer cochains. Expanding this split recovers the
+eight ordered pairs other than $`(\psi,\psi)`$, or **16 cup terms**.
+Further inserting the three carry definitions gives **24 distributed
+integer-cup terms**. These are supplementary expansions; the whole
+binary lift in the mixed carry retains its two-term interior and is not
+distributed as an integer sum.
+
+The two repeated quarter-valued copies of $`\omega_2\lambda_2^\gamma`$
+have been combined in the half-valued bracket. The integer differential of
+$`2\lambda_2^\gamma\cup_1\lambda_2^\gamma`$ is likewise half-valued.
+These are exact coefficient combinations, with no change of phase
+coordinate or reassignment of physical contributions.
 
 This explicitly continued relative phase is zero on the closed-Majorana
 physical tower by the proved paired coordinate map. Its half and quarter
@@ -524,6 +567,10 @@ sufficient.
 \end{aligned}
 ```
 
+The sums contain **6,479 ordinary MS terms** and **4,094 physical-face
+monomials**, respectively. These are the expanded sums themselves; the
+following quarter- and eighth-valued terms are additional.
+
 ##### Physical-face coefficients
 
 On an ordered four-simplex the remaining half-valued term is the following
@@ -533,10 +580,13 @@ finite polynomial in the physical integer digits and background faces:
 \frac12\sum_{(f,g)\in\mathcal C_4^\psi}f\,g.
 ```
 
+This sum contains **4,094 physical-face monomials** after every background
+coefficient is multiplied out and identical monomials are collected.
 Every pair $`(f,g)`$ is printed in the
 [physical-face coefficient table](THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md).
-Its 173 rows contain all 306 integer-digit monomials, grouped only when
-their background coefficients are identical. Each table entry contains
+Its 173 factored rows group 306 integer-digit monomials by common
+background coefficients; neither of those two row counts is the expanded
+term count. Each table entry contains
 only $`\bar n_1`$, $`\widetilde n_1`$, their primed counterparts, the
 explicit third digit $`\overline{\lfloor n_1/4\rfloor}`$, and the
 physical faces of $`s_1`$, $`\omega_2`$, and $`\check\omega_2`$.

@@ -1,0 +1,1175 @@
+{
+  "status": "PASS_TRANSCRIPTION_AND_ARITHMETIC",
+  "scope": "Exact distributed displayed occurrences, with declared natural structures retained. Not an operadic normal-form count or a minimum.",
+  "retained_structures": [
+    "Already defined lower O/E, including their named physical components, and their actual output fields.",
+    "Standard cochain d, d_s, Sq, Bocksteins, their stated open continuations and integer carry operations.",
+    "The existing integer carries B and lambda and fixed integer Pontryagin representative P.",
+    "Delta as the already-defined operation; linear additions inside Delta are distributed, but its three evaluations are not required to expand.",
+    "Whole canonical-lift and exact-quotient boundaries. Their interior counts are recorded separately."
+  ],
+  "expanded_objects": [
+    "All arbitrary finite I/J/y/z/H/P4 polynomials and their actual coefficient lists.",
+    "All explicit linear parentheses, including those inside d and Delta.",
+    "Finite pair-index sums. The 4D V mixed pair sum has twelve terms. The 3D quadratic expression now reuses the existing total integer carry in four terms, exactly equal to its former sixteen-term component sum."
+  ],
+  "reader_hashes": {
+    "docs/formulas/TWO_DIMENSIONAL.md": "bdc4a7f835e90e2f5a5f35a2b6d880e08ed61661e29835a5f09f2621b47f7f81",
+    "docs/formulas/THREE_DIMENSIONAL.md": "212fda7e2ab0ed5a2036c20f278a969b8bfcf80a97a03c1911b0f23957cc4557",
+    "docs/formulas/FOUR_DIMENSIONAL.md": "77a4b0657c0e793932a567975f0de05d38a0ad35f65bc75b3577f6fe51820345"
+  },
+  "records": [
+    {
+      "dimension": "2+1D",
+      "law": "O2",
+      "origin": "none",
+      "terms_by_coefficient": {
+        "binary_or_half": 0,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 0
+    },
+    {
+      "dimension": "2+1D",
+      "law": "O3",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2
+    },
+    {
+      "dimension": "2+1D",
+      "law": "O4",
+      "origin": "c",
+      "terms_by_coefficient": {
+        "binary_or_half": 3,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 3
+    },
+    {
+      "dimension": "2+1D",
+      "law": "O4",
+      "origin": "cgamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 1,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 1
+    },
+    {
+      "dimension": "2+1D",
+      "law": "O4",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 5,
+        "quarter": 2,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 7
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E1",
+      "origin": "none",
+      "terms_by_coefficient": {
+        "binary_or_half": 0,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 0
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E2",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E3",
+      "origin": "c",
+      "terms_by_coefficient": {
+        "binary_or_half": 3,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 3
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E3",
+      "origin": "cgamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2
+    },
+    {
+      "dimension": "2+1D",
+      "law": "E3",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 11,
+        "quarter": 8,
+        "eighth": 1,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 20
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O2",
+      "origin": "none",
+      "terms_by_coefficient": {
+        "binary_or_half": 0,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 0
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O3",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2,
+      "note": "The equivalent shifted source has one term."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O4",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 3,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 3
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O4",
+      "origin": "gammapsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O4",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 5,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 5
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O5",
+      "origin": "c",
+      "terms_by_coefficient": {
+        "binary_or_half": 3,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 3
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O5",
+      "origin": "cgamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 9,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 9
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O5",
+      "origin": "cpsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 30,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 30
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O5",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 11,
+        "quarter": 4,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 15
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O5",
+      "origin": "gammapsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 2276,
+        "quarter": 5,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2281
+    },
+    {
+      "dimension": "3+1D",
+      "law": "O5",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 11408,
+        "quarter": 7,
+        "eighth": 0,
+        "sixteenth": 1,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 11416
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E1",
+      "origin": "none",
+      "terms_by_coefficient": {
+        "binary_or_half": 0,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 0
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E2",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2,
+      "note": "The equivalent shifted twister has one term."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E3",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E3",
+      "origin": "gammapsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 5,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 5
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E3",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 13,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 13
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E4",
+      "origin": "c",
+      "terms_by_coefficient": {
+        "binary_or_half": 3,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 3
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E4",
+      "origin": "cgamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 6,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 6
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E4",
+      "origin": "cpsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 204,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 204
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E4",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 37,
+        "quarter": 6,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 43
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E4",
+      "origin": "gammapsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 16033,
+        "quarter": 26,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 16059,
+      "note": "The existing total integer carry gives a four-term quadratic expression. The visible omega-lambda duplicate and doubled derivative are combined at coefficient1/2. No cross-kernel operadic collection is performed."
+    },
+    {
+      "dimension": "3+1D",
+      "law": "E4",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 10573,
+        "quarter": 9,
+        "eighth": 1,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 10583
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O3",
+      "origin": "none",
+      "terms_by_coefficient": {
+        "binary_or_half": 0,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 0
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O4",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 3,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 3,
+      "note": "The equivalent shifted source has two terms."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O5",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 3,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 3
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O5",
+      "origin": "gammapsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O5",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 13,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 13
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "origin": "c",
+      "terms_by_coefficient": {
+        "binary_or_half": 3,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 3
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "origin": "cgamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 9,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 9
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "origin": "cpsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 5,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 5
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 88,
+        "quarter": 3,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 91
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "origin": "gammapsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 1009,
+        "quarter": 4,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 1013
+    },
+    {
+      "dimension": "4+1D",
+      "law": "O6",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 623880,
+        "quarter": 4,
+        "eighth": 1,
+        "sixteenth": 1,
+        "third": 0,
+        "twelfth": 1
+      },
+      "total": 623887
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E2",
+      "origin": "none",
+      "terms_by_coefficient": {
+        "binary_or_half": 0,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 0
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E3",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2,
+      "note": "The equivalent shifted twister has one term."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E4",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E4",
+      "origin": "gammapsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 5,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 5
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E4",
+      "origin": "psi",
+      "terms_by_coefficient": {
+        "binary_or_half": 27,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 27
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "origin": "c",
+      "terms_by_coefficient": {
+        "binary_or_half": 3,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 3
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "origin": "cgamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 6,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 6
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "origin": "cpsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 4,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 4
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "origin": "gamma",
+      "terms_by_coefficient": {
+        "binary_or_half": 6164,
+        "quarter": 12,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 6176
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "origin": "gammapsi",
+      "total": 5685535,
+      "finite_sum_terms": 5684189,
+      "additional_terms": 1346,
+      "terms_by_coefficient": {
+        "binary_or_half": 5685532,
+        "quarter": 3,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      }
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "origin": "psi",
+      "total": 2869220,
+      "finite_sum_terms": 2869198,
+      "additional_terms": 22,
+      "terms_by_coefficient": {
+        "binary_or_half": 2869211,
+        "quarter": 4,
+        "eighth": 1,
+        "sixteenth": 0,
+        "third": 4,
+        "twelfth": 0
+      }
+    }
+  ],
+  "totals": {
+    "2+1D O2": 0,
+    "2+1D O3": 2,
+    "2+1D O4": 11,
+    "2+1D E1": 0,
+    "2+1D E2": 2,
+    "2+1D E3": 25,
+    "3+1D O2": 0,
+    "3+1D O3": 2,
+    "3+1D O4": 10,
+    "3+1D O5": 13754,
+    "3+1D E1": 0,
+    "3+1D E2": 2,
+    "3+1D E3": 20,
+    "3+1D E4": 26898,
+    "4+1D O3": 0,
+    "4+1D O4": 3,
+    "4+1D O5": 18,
+    "4+1D O6": 625008,
+    "4+1D E2": 0,
+    "4+1D E3": 2,
+    "4+1D E4": 34,
+    "4+1D E5": 8560944
+  },
+  "slot_widths": {
+    "2D L3 scalar polynomial": {
+      "displayed_slot_widths": [
+        1,
+        2,
+        3
+      ],
+      "distributed_occurrences": 6
+    },
+    "3D z4 zero-background polynomial": {
+      "displayed_slot_widths": [
+        7,
+        2,
+        1,
+        1,
+        2,
+        3,
+        2,
+        1,
+        1
+      ],
+      "distributed_occurrences": 20
+    },
+    "3D z4 gamma completion": {
+      "displayed_slot_widths": [
+        20,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        7
+      ],
+      "distributed_occurrences": 37
+    },
+    "3D P4[checkN2,c+cprime]": {
+      "displayed_slot_widths": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "distributed_occurrences": 16
+    },
+    "3D P4[u+v,c+cprime]": {
+      "displayed_slot_widths": [
+        4,
+        4,
+        8,
+        8,
+        4,
+        8,
+        8,
+        8
+      ],
+      "distributed_occurrences": 52
+    },
+    "4D V5 gamma": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "distributed_occurrences": 8
+    },
+    "4D V5 gamma-psi": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        1,
+        1,
+        6,
+        6,
+        4,
+        4,
+        1,
+        2,
+        1,
+        1,
+        1,
+        12
+      ],
+      "distributed_occurrences": 42
+    },
+    "4D V5 psi": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        4,
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "distributed_occurrences": 20
+    },
+    "4D canonical quarter-lift half-valued carry": {
+      "displayed_slot_widths": [
+        336,
+        160,
+        840
+      ],
+      "distributed_occurrences": 1336
+    },
+    "2D O4 gamma half": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "distributed_occurrences": 5
+    },
+    "2D E3 gamma half": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        6,
+        1,
+        1,
+        1
+      ],
+      "distributed_occurrences": 11
+    },
+    "2D E3 gamma quarter": {
+      "displayed_slot_widths": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "distributed_occurrences": 8
+    },
+    "3D O5 cpsi half": {
+      "displayed_slot_widths": [
+        1,
+        2,
+        2,
+        25
+      ],
+      "distributed_occurrences": 30
+    },
+    "3D O5 gamma half": {
+      "displayed_slot_widths": [
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "distributed_occurrences": 11
+    },
+    "3D O5 psi quarter": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "distributed_occurrences": 7
+    },
+    "3D E3 psi": {
+      "displayed_slot_widths": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        4,
+        1
+      ],
+      "distributed_occurrences": 13
+    },
+    "3D E4 cpsi half": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        1,
+        1,
+        132,
+        16,
+        52
+      ],
+      "distributed_occurrences": 204
+    },
+    "3D E4 gamma quarter": {
+      "displayed_slot_widths": [
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "distributed_occurrences": 6
+    },
+    "3D E4 gammapsi quarter": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        1,
+        2,
+        4,
+        4,
+        1,
+        4,
+        4,
+        2,
+        1,
+        1
+      ],
+      "distributed_occurrences": 26
+    },
+    "3D E4 psi quarter": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "distributed_occurrences": 9
+    },
+    "4D O5 psi": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        2,
+        2
+      ],
+      "distributed_occurrences": 13
+    },
+    "4D E4 psi": {
+      "displayed_slot_widths": [
+        6,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        6
+      ],
+      "distributed_occurrences": 27
+    }
+  },
+  "protected_interiors": {
+    "2D eighth Delta[bar(n1^3)]": "One Delta term. Three evaluation scopes; no integer-linear splitting of the output cubic.",
+    "3D B3psi numerator": 2,
+    "3D lambda_gamma_psi bar(u+v)": 2,
+    "3D lambda_psi exact numerator": 2,
+    "3D z_gamma last whole reduction": 3,
+    "3D source_psi negative whole quarter reduction": 3,
+    "4D B4psi numerator": 3,
+    "4D lambda_gamma_psi bar(u+v)": 2,
+    "4D lambda_psi exact numerator": 2,
+    "4D source_psi negative whole quarter reduction": 4,
+    "4D product mixed whole quarter reduction": 42,
+    "4D product psi whole quarter reduction": 20,
+    "fixed integer Pontryagin representative defining terms": 2
+  },
+  "exact_structural_reuse": {
+    "3D E4 gammapsi": {
+      "previous_displayed_total": 16072,
+      "current_displayed_total": 16059,
+      "description": "The existing total carry replaces the former sixteen-term quadratic component sum by four exact terms. Two explicit omega-lambda quarter copies combine to one half term; the doubled derivative is moved to its half bracket. The remaining gamma square stays in the quarter bracket.",
+      "proof": "TOTAL_INTEGER_CARRY_REUSE_CHECK.json"
+    }
+  },
+  "Delta_evaluation_alternative": {
+    "2D E3 cgamma": 4,
+    "2D E3 gamma": 22,
+    "3D E3 psi": 15,
+    "3D E4 cgamma": 12,
+    "4D E5 cgamma": 12,
+    "scope": "Only replace Delta by its three evaluations; retain actual defined outputs and all other structures."
+  },
+  "finite_sum_annotation_updates": [
+    {
+      "page": "THREE_DIMENSIONAL.md",
+      "anchor": "I4_negpsi quarter quadratic expression",
+      "primary": 4,
+      "supplementary_component_expansion": 16,
+      "supplementary_integer_expansion": 24,
+      "text": "The finite MS sum still has 15,994 terms. The quadratic expression now has four terms using the existing total integer carry. Expanding its exact component split gives eight ordered pairs and sixteen cup terms; further integer-carry substitution gives 24."
+    },
+    {
+      "page": "FOUR_DIMENSIONAL.md",
+      "anchor": "V5 gammapsi final three-pair sum",
+      "primary": 12,
+      "supplementary": 55,
+      "text": "Three index pairs give twelve cup terms with the defined lambda carries and cochain differentials retained. The 55-term expansion inserts their definitions and specified lower equations; it is supplementary and preserves the exact quotient."
+    },
+    {
+      "page": "THREE_DIMENSIONAL.md",
+      "anchor": "E4 cpsi two P4 evaluations",
+      "primary": 68,
+      "text": "Expanding the eight-word definition in these two displayed evaluations gives 16 and 52 specified MS occurrences respectively, retaining the actual output checkN2; together they contribute 68 beyond the 132-term sum."
+    },
+    {
+      "page": "THREE_DIMENSIONAL.md",
+      "anchor": "z4 gamma and z4 zero-background",
+      "primary_z0": 20,
+      "primary_zgamma": 37,
+      "text": "The V4 finite sum remains seven MS words. The complete z4 zero-background polynomial has twenty distributed terms; the complete z4 gamma polynomial has thirty-seven, retaining defined lower twisters and canonical lifts."
+    },
+    {
+      "page": "ALL",
+      "anchor": "other already stated finite coefficient sums",
+      "text": "The actual list counts 25, 132, 2276, 583, 10825, 15994, 6479, 4094, 85, 1005, 623880, 455, and 5707 are unchanged by this counting convention. They refer to the existing finite lists, not hypothetical repacking."
+    }
+  ],
+  "complete_4D_product": {
+    "dimension": "4+1D",
+    "boundary": "Exact collected finite sums with defined lower O/E, Bockstein, differential and integer-carry operations retained. All arbitrary coefficient sums remain explicit. Nonlinear numerator interiors are listed separately.",
+    "gammapsi": {
+      "finite_sum_terms": 5684189,
+      "unique_nonlinear_interior_terms": 58547,
+      "inline_nonlinear_interior_appearances": 448864
+    },
+    "psi": {
+      "finite_sum_terms": 2869198,
+      "unique_nonlinear_interior_terms": 35550,
+      "inline_nonlinear_interior_appearances": 54840
+    },
+    "coefficient_appendix": "FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md",
+    "complete_tensor_contributions": true,
+    "complete_y6_contribution": true
+  }
+}

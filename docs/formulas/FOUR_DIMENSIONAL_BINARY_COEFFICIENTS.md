@@ -1,7 +1,12 @@
 # Physical coefficient indices for the 4+1D half-valued terms
 
-This appendix gives the complete coefficient indices in the three binary
-face sums of the 4+1D stacking formula. The [physical paths](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md)
+This appendix gives the retained coefficient construction for the mixed
+Majorana–p+ip and pure p+ip sums of the 4+1D stacking formula. The
+previously designated Majorana coefficient is also specified here as the
+starting convention of the explicit rewrite. Its principal formula now
+uses the [455 ordinary MS coefficients](FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md)
+and [5,707 physical-face coefficients](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md),
+with the [explicit output coboundary](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md). The [physical paths](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md)
 specify every original face argument; the [tensor coefficient table](FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md)
 gives its 226 fixed binomial rows and its background-degree-one term.
 The phase convention is exactly the one stated with the stacking formula.
@@ -359,7 +364,7 @@ retain the paired source/product coordinate map.
 
 ## The coefficient sets used by the principal stacking formula
 
-This paragraph specifies the indices in
+For $`r=\gamma\psi,\psi`$, this paragraph specifies the indices in
 ```math
 \frac12\sum_{\eta\in\mathcal I_5^r}\prod_{(x,f)\in\eta}x(f).
 ```
@@ -389,7 +394,7 @@ together with either one final grid $`g\in\mathcal G_5`$, or no final
 grid. The [physical-path formula](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md) gives every factor face for each such
 index directly, including the $`j=0`$ identity path.
 
-For the pure Majorana contribution $`r=\gamma`$, retain only $`j=0`$
+For the old Majorana construction used in the explicit rewrite, retain only $`j=0`$
 and the final-grid part. All its physical factors, including Bocksteins
 and integer digits, are independent of every $`\epsilon_\ell`$. For
 $`j>0`$ the two choices of any one branch bit are therefore identical and
