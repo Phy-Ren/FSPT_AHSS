@@ -14,22 +14,30 @@ Bocksteins. It does not turn an arbitrary y polynomial or finite sum into
 one term. Every reused lower operation keeps its fully specified earlier
 definition and physical contribution.
 
-The supplementary tables below also record substitutions of lower laws,
-stacking fields and finite coefficient sets. These are different counting
-boundaries, not reductions of one count to the other. Standard Bocksteins
-and whole canonical lifts retain their complete scopes; their interior
-counts are recorded separately. A binary lift cannot be distributed as an
-integer-linear operation. Each list specifies ordinary MS words, nested
-cups or physical face products. None is asserted to be globally minimal.
+The archived supplementary tables below record substitutions of lower laws,
+stacking fields and finite coefficient sets in their specified representations.
+These are different counting boundaries. Standard Bocksteins and whole
+canonical lifts retain their complete scopes; interior counts are recorded
+explicitly. A binary lift cannot be distributed as an integer-linear
+operation. Each list specifies ordinary MS words, nested cups or physical
+face products. None is asserted to be globally minimal.
 Expanded counts audit the explicit formulas; they do not measure the quality of their mathematical organization.
 
 ## Primary count with defined lower structures retained
 
-The complete 4+1D Majorana bosonic twister has **6,176 terms**:
-455 ordinary MS terms, 5,707 physical face products, two other half-valued
-cups and twelve quarter-valued cups. This is its primary reader-facing
-count. Its 87,189-term lower-equation substitution is a supplementary
-verification, not the expression readers are required to expand mentally.
+The complete 4+1D Majorana bosonic twister now has **624 explicit term
+occurrences**, organized as **482 outer addends**. Its half bracket has
+459 terms. Its quarter bracket has 19 ordinary cup or face terms and
+four separate canonical lifts, whose interiors contain 5, 15, 10 and
+116 products. Thus the explicit count is 459 + 19 + 146 = 624, while the
+outer count is 459 + 19 + 4 = 482. The 146 interior products remain inside
+their four nonlinear lifts; they are not independent phase addends at
+coefficient 1/4. The [complete lift table](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md)
+specifies every product.
+
+This exact rewriting replaces the archived 6,176-term expression without
+changing its representative. That expanded expression and its 87,189-term
+lower-equation substitution remain available for verification.
 
 The 4+1D mixed source MS sum has **1,005 terms** when its defined
 Majorana differential is retained. Its 4,220-term substituted expansion
@@ -48,8 +56,9 @@ origin according to the variables appearing afterward.
 
 These primary counts retain the already defined lower obstruction and
 stacking operations, their actual output fields, the standard differential,
-Sq and Bockstein operations, Delta, the existing integer carries and the
-fixed integer Pontryagin representative. Explicit linear parentheses and
+Sq and Bockstein operations, Delta, the existing integer carries, the
+defined integral quadratic cochain and the fixed integer Pontryagin
+representative. Explicit linear parentheses and
 arbitrary coefficient polynomials are expanded. The counts describe this
 stated expression, not a normal form obtained by flattening all operations.
 Whole nonlinear lifts retain their scopes; their interior terms are
@@ -66,19 +75,33 @@ listed in the [structured count ledger](term_census/STRUCTURED_TERM_COUNTS.json)
 | 3+1D | O2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 3+1D | O3 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
 | 3+1D | O4 | 0 | 0 | 0 | 3 | 2 | 5 | 10 |
-| 3+1D | O5 | 3 | 9 | 30 | 15 | 2,281 | 11,416 | 13,754 |
+| 3+1D | O5 | 3 | 4 | 30 | 15 | 2,281 | 11,416 | 13,749 |
 | 3+1D | E1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 3+1D | E2 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
 | 3+1D | E3 | 0 | 0 | 0 | 2 | 5 | 13 | 20 |
-| 3+1D | E4 | 3 | 6 | 204 | 43 | 16,059 | 10,583 | 26,898 |
+| 3+1D | E4 | 3 | 4 | 202 | 43 | 16,059 | 10,583 | 26,894 |
 | 4+1D | O3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4+1D | O4 | 0 | 0 | 0 | 0 | 0 | 3 | 3 |
 | 4+1D | O5 | 0 | 0 | 0 | 3 | 2 | 13 | 18 |
-| 4+1D | O6 | 3 | 9 | 5 | 91 | 1,013 | 623,887 | 625,008 |
+| 4+1D | O6 | 3 | 4 | 5 | 89 | 1,012 | 623,885 | 624,998 |
 | 4+1D | E2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4+1D | E3 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
 | 4+1D | E4 | 0 | 0 | 0 | 2 | 5 | 27 | 34 |
-| 4+1D | E5 | 3 | 6 | 4 | 6,176 | 5,685,535 | 2,869,220 | 8,560,944 |
+| 4+1D | E5 | 3 | 4 | 2 | 624† | 5,685,535 | 2,869,220 | 8,555,388† |
+
+† The Majorana entry counts the 146 explicit products inside its four
+canonical lifts, as explained above: 624 expression leaves, not 624
+linearly distributed phase addends. Counting those four lifts as outer
+addends instead gives 482 for this contribution and 8,555,246 for E5.
+Other entries retain their declared standard-operation and whole-lift
+boundaries, with their interior counts separately listed in the ledger.
+
+The integral quadratic cochain has three defining cups and a four-cup
+addition polarization. Reusing it in the O6 quarter phases contributes
+one operation in each pure part and three in the mixed difference.
+Its complete definition and exact identities appear in the
+[quadratic-cochain appendix](QUADRATIC_REFINEMENTS.md); this reuse does
+not erase any scalar term from the archived expanded expressions.
 
 Every defined lower operation is specified at its own layer; reuse does
 not make its definition disappear from this ledger. A finite MS or face
@@ -87,7 +110,7 @@ use further lower-law substitutions and, where specified, collect equal
 normalized operations. Their numbers are not substitutes for this primary
 boundary and need not decrease monotonically across representations.
 
-## Supplementary substitution counts: 2+1D and lower layers
+## Archived supplementary expansions: 2+1D and lower layers
 
 The table counts each obstruction or twister, excluding the incoming
 additive fields in the stacking equation. The stated lower equations and
@@ -121,7 +144,7 @@ All ten interior monomials are recorded in the
 lift boundaries remain intact. Introducing Delta saves notation without
 changing this expanded count.
 
-## Supplementary substitution counts: 3+1D terminal formulas
+## Archived supplementary expansions: 3+1D terminal formulas
 
 The binary cochain blocks below use a complete ordinary-MS expansion.
 For E4 this is the archived equivalent expression preceding the total-carry
@@ -157,9 +180,9 @@ The pure p+ip polynomials contribute 10,825 source face monomials and
 integer face products. Factored coefficient rows are not substituted for
 these numbers.
 
-## Supplementary substitution counts: 4+1D bosonic obstruction
+## Archived supplementary expansion: 4+1D bosonic obstruction
 
-The source word sums are expanded into explicitly specified MS operations
+This archived representation expands the source word sums into specified MS operations
 with their lower physical inputs. The remaining cups are ordinary nested
 operations. Each exact quotient and canonical lift is written completely.
 
@@ -187,14 +210,14 @@ printed products, has **4,320 terms**. Adding its eleven fully written
 integer terms gives the 4,331 total above. No term is reassigned by
 variable support in this count.
 
-## 4+1D bosonic stacking: boundaries and checks
+## 4+1D bosonic stacking: current and archived boundaries
 
 The c, c gamma and c psi contributions have respectively **75**, **2,216**
 and **3,262** terms after substituting their actual lower laws and output
 fields and collecting equal typed operations.
 
-The complete Majorana contribution is now an explicit formula with
-**6,176 terms** when its standard differential inputs are retained:
+The archived Majorana expansion has **6,176 terms** when its standard
+differential inputs are retained:
 455 ordinary MS terms, 5,707 physical face products, two other half-valued
 cups and twelve quarter-valued cups. This includes the open-input terms;
 it is not a formula restricted to closed Majorana cochains.
@@ -205,13 +228,19 @@ six other half-valued cups, and fifteen quarter-valued cups. The additional
 half-valued terms include the required canonical integer-lift carries.
 The complete explicit lists and a public replay are linked from the
 [Majorana coefficient appendix](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md).
-These two counts use different, stated boundaries; they must not be
-presented as a before/after reduction.
+These two archived counts use different, stated boundaries. The current
+624-leaf formula is instead an exact rewriting of the 6,176-term
+expression at the same lower-operation boundary, preserving every whole
+lift. Its 482 outer addends and 146 protected interior products are
+reported separately above.
 
 The complete mixed finite sum has **5,684,189 terms**,
 and the complete pure p+ip finite sum has **2,869,198 terms**.
-Including the other displayed contributions gives **8,560,944 terms**
-for the complete E5 at the primary structured boundary. Every coefficient
+Including the other displayed contributions gives **8,555,388 explicit
+occurrences** for the complete E5 at the primary boundary, with the
+Majorana lift-interior convention marked by † in the table. The preceding
+release had 8,560,944 terms at its stated boundary; that number belongs to
+the archived expression. Every coefficient
 is supplied in the [stacking coefficient appendix](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).
 The exact collection includes all source and tensor contributions; these
 are term lists, not counts of construction steps.
@@ -227,20 +256,28 @@ earlier definitions.
 
 ## Representation and verification
 
-The c gamma expressions now use the ordinary open-cochain Steenrod
-squares and the existing Delta. This preserves each complete contribution
-exactly, including its lower differential and actual output terms.
-The direct Majorana stacking expression uses an explicit output coboundary;
-its [gauge map](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md) is supplied.
-The obstruction is unchanged, and the other five stacking contributions
-are unchanged. This preserves the cohomology class of the full twister.
+The c gamma expressions reuse the complete lower Majorana parity, and
+the c psi products reuse the existing Delta. Both changes preserve the
+complete contributions exactly, including open-cochain differential and
+actual output terms. The quadratic-cochain reuse is also an exact identity.
+
+The earlier explicit Majorana stacking expression was obtained using the
+supplied [output gauge](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md).
+The present carry reduction is an exact rewriting of that same
+representative, with no additional gauge change. The obstruction and
+the other physical contributions retain their values.
 
 Standard integer lifts and divisions retain their scopes throughout.
 In particular, a binary numerator with two summands has canonical integer
 value x+y-2xy; using x+y in a quarter-valued expression would lose a
-half-valued contribution. The public Majorana replay explicitly checks
-all sixteen local carry cases. Independent comparison also passed for
+half-valued contribution. The archived Majorana replay explicitly checks
+all sixteen local carry cases. Its independent comparison passed for
 512 arbitrary open input pairs and 128 valid lower physical towers.
+The [current carry replay](coefficients/verify_majorana_carry_reduction.py)
+compares the reduced expression with the archived 5,707-term face
+polynomial while retaining all four nonlinear lift boundaries. The
+independent 1,024-input readback passed; these input checks corroborate
+the exact signed-carry identity rather than replacing its derivation.
 
 The next simplification targets are the largest contributions at the
 primary structured boundary. First identify exact occurrences of the

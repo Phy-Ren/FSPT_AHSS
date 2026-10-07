@@ -1,0 +1,271 @@
+# Fermionic coboundary and stacking
+
+Fermionic coboundary and stacking constrain the formulas in adjacent
+dimensions. In coordinates where the two constructions commute as
+cochains, their phase identity is
+
+```math
+\Delta\widehat{\mathcal{𝒪}}_{D+1}(X,Y)
+-d_{s_1}\widehat{\mathcal{ℰ}}_D(X,Y)
+=\widehat{\mathcal{ℰ}}_{D+1}(\delta_{\mathrm{lower}}X,
+                           \delta_{\mathrm{lower}}Y).
+```
+
+The stacking twister on the right belongs to the **bulk in one higher
+spacetime dimension**. Its arguments are the actual bulk decoration
+cochains obtained by fermionic coboundary. They are not the boundary
+fields with different degree labels.
+
+This appendix derives the phase identity under the stated compatibility
+hypothesis and proves an exact simplification of the [4+1D stacking law](FOUR_DIMENSIONAL.md#4-bosonic-stacking)
+when the two bulk inputs have the same closed Majorana decoration.
+It keeps all cochain representatives, inverse carries, and coefficient
+systems explicit.
+
+## The compatibility identity
+
+Let the boundary spacetime dimension be $`D`$. Write its decoration
+data as $`X`$ and its additive phase as
+$`\widehat\nu_D\in C^D((\mathbb R/\mathbb Z)_{s_1})`$.
+The boundary product is
+
+```math
+(X,\widehat\nu_D)*(Y,\widehat\nu_D')
+=\bigl(X*Y,\widehat\nu_D+\widehat\nu_D'
+                  +\widehat{\mathcal{ℰ}}_D(X,Y)\bigr).
+```
+
+Here $`X*Y`$ includes every lower stacking twister. Define
+$`\Delta f(X,Y)=f(X*Y)-f(X)-f(Y)`$.
+In the fermionic-coboundary convention used here, the top bulk phase is
+
+```math
+\delta(X,\widehat\nu_D)_{\mathrm{phase}}
+=\widehat{\mathcal{𝒪}}_{D+1}(X)-d_{s_1}\widehat\nu_D.
+```
+
+Suppose the chosen cochain representatives satisfy
+$`\delta((X,\widehat\nu_D)*(Y,\widehat\nu_D')) =\delta(X,\widehat\nu_D)*\delta(Y,\widehat\nu_D')`$.
+Comparison of their top components gives the displayed identity:
+the left construction has phase
+$`\widehat{\mathcal{𝒪}}_{D+1}(X*Y)-d_{s_1}\widehat\nu_D -d_{s_1}\widehat\nu_D'-d_{s_1}\widehat{\mathcal{ℰ}}_D`$;
+the right construction has phase
+$`\widehat{\mathcal{𝒪}}_{D+1}(X)+\widehat{\mathcal{𝒪}}_{D+1}(Y) -d_{s_1}\widehat\nu_D-d_{s_1}\widehat\nu_D' +\widehat{\mathcal{ℰ}}_{D+1}`$.
+
+All terms have degree $`D+1`$ and coefficients
+$`(\mathbb R/\mathbb Z)_{s_1}`$.
+For inputs satisfying the lower boundary equations,
+$`\delta_{\mathrm{lower}}X=\delta_{\mathrm{lower}}Y=0`$.
+Normalization of the bulk product then reduces the identity to
+
+```math
+d_{s_1}\widehat{\mathcal{ℰ}}_D
+=\Delta\widehat{\mathcal{𝒪}}_{D+1}.
+```
+
+For more general boundary data the bulk term must be retained.
+If the two constructions are identified by a lower gauge transformation,
+apply that transformation before comparing phases. If their remaining
+phase difference is $`d_{s_1}H_D`$, that specified term is also retained.
+This distinguishes strict cochain compatibility from compatibility of
+cohomology classes.
+
+## An exact 4+1D product with a group inverse
+
+Work entirely in the 4+1D context in this section. Let
+
+```math
+X=(0,u,c,\widehat\nu_5),\qquad
+Y=(0,u,c',\widehat\nu'_5),
+```
+
+where the entries are the p+ip, Majorana, complex-fermion, and phase
+cochains. The lower fields satisfy
+
+```math
+du=0,\qquad
+dc=dc'=\mathcal{𝒪}_5^\gamma(u),\qquad
+\mathcal{𝒪}_5^\gamma(u)
+=\mathrm{Sq}^2u+\omega_2u+s_1\mathrm{Sq}^1u.
+```
+
+Thus $`u`$ has degree three, $`c,c'`$ have degree four, and
+$`c+c'`$ is closed. All these lower fields are binary. The backgrounds
+$`\omega_2,s_1`$ are closed and remain fixed.
+
+The complete current product has the exact specialization
+
+```math
+\boxed{
+X*Y^{-1}
+=\left(
+0,0,c+c',
+\widehat\nu_5-\widehat\nu'_5
++\frac12\left[
+(c+c')\cup_3c'
++(c+c')\cup_4\mathcal{𝒪}_5^\gamma(u)
+\right]\right).
+}
+```
+
+After distributing $`c+c'`$, the correction contains **four specified
+cup terms**. The already defined lower obstruction remains a structured
+argument. The terminal Majorana coefficient sum has canceled. This
+identity describes relative stacking at fixed Majorana decoration; the
+self-stacking law remains specified separately.
+
+### The inverse includes a lower stacking carry
+
+The Majorana self-stacking correction is the known lower twister
+
+```math
+\mathcal{ℰ}_4^\gamma(u,u)
+=u\cup_2u+s_1u
+=\mathrm{Sq}^1u+s_1u.
+```
+
+Call this twister $`T`$ only in the following derivation, and put
+$`k=\mathcal{𝒪}_5^\gamma(u)`$. The inverse of $`Y`$ has lower fields
+$`(0,u,c'+T)`$. Its phase is
+
+```math
+\begin{aligned}
+\widehat\nu_5(Y^{-1})
+={}&-\widehat\nu'_5-\widehat{\mathcal{ℰ}}_5^\gamma(u,u)\\
+&-\frac12\left[
+c'\cup_3(c'+T)+T\cup_3T
++k\cup_4(c'+T)+T\cup_4k
+\right].
+\end{aligned}
+```
+
+This expression has six half-valued cup terms after distributing the
+two occurrences of $`c'+T`$. The Majorana diagonal is the same
+fully specified operation as in the original stacking law.
+This chooses the inverse representative for which $`Y*Y^{-1}`$ is the
+zero cochain state. It includes the lower carry as well as the phase
+correction.
+
+For $`X*Y^{-1}`$, the direct product adds
+
+```math
+\begin{aligned}
+&\widehat{\mathcal{ℰ}}_5^\gamma(u,u)\\
+&\quad+\frac12\left[
+c\cup_3(c'+T)+(c+c'+T)\cup_3T
++k\cup_4(c'+T)+(c+c'+T)\cup_4k
+\right].
+\end{aligned}
+```
+
+The half-valued bracket contains ten cup terms after distributing its
+displayed sums. Subtracting the inverse correction cancels the two
+identical Majorana diagonals as whole phase cochains. Bilinearity
+over $`\mathbb Z_2`$ cancels every $`T`$ term and leaves
+
+```math
+\frac12\left[
+(c+c')\cup_3c'
++(c+c')\cup_4k
+\right].
+```
+
+This proves the boxed specialization. It uses the original c,
+c-gamma, and gamma contributions in their stated operator ordering.
+No contribution is reassigned by its dependence on decoration fields.
+
+The cancellation is independent of the chosen representative of
+$`\widehat{\mathcal{ℰ}}_5^\gamma(u,u)`$, provided that the same
+representative is used in the inverse and the product. In particular,
+its quarter-valued terms cancel before any lift is expanded.
+
+## Applying the specialization to a 3+1D lower tower
+
+Return now to the 3+1D degree convention. Its lower equations give
+
+```math
+d_{s_1}n_1=0,\qquad
+d\check n_2=\check\omega_2\bar n_1,\qquad
+dn_3=
+\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}
++\mathcal{𝒪}_4^\psi.
+```
+
+The two Majorana bulk fields relevant to the pure-layer
+fermionic-coboundary construction are the same closed three-cochain
+$`d\check n_2=\check\omega_2\bar n_1`$. Their bulk p+ip coordinates vanish.
+Once the pure-layer bulk maps are expressed in the same cochain
+coordinates, the preceding exact identity applies with
+
+```math
+\begin{aligned}
+u_{\mathrm{bulk}}&=d\check n_2,\\
+c_{\mathrm{bulk}}&=
+\mathrm{Sq}^2\check n_2
++\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2,\\
+c'_{\mathrm{bulk}}&=\mathcal{𝒪}_4^\psi,\qquad
+c_{\mathrm{bulk}}+c'_{\mathrm{bulk}}=dn_3.
+\end{aligned}
+```
+
+Its entire additional phase is consequently
+
+```math
+\frac12\left[
+dn_3\cup_3\mathcal{𝒪}_4^\psi
++dn_3\cup_4\mathcal{𝒪}_5^\gamma(d\check n_2)
+\right].
+```
+
+Here $`\mathcal{𝒪}_4^\psi`$ is the **3+1D** lower obstruction,
+whereas $`\mathcal{𝒪}_5^\gamma`$ is the **4+1D** closed-Majorana
+obstruction defined above. The expression contains two cup terms
+of degree five. It is the bulk product correction for the stated
+fields; the complete boundary obstruction also includes the phases
+of the specified pure-layer bulk maps.
+
+The complete phases of the pure-layer bulk maps are evaluated on their
+stated domains before this additional product correction is applied.
+
+## Transporting representatives together
+
+A terminal coordinate change
+$`\widehat\nu_D^{\,\mathrm{new}}=\widehat\nu_D+f_D(X)`$
+has the paired transport
+
+```math
+\begin{aligned}
+\widehat{\mathcal{𝒪}}_{D+1}^{\,\mathrm{new}}
+ &=\widehat{\mathcal{𝒪}}_{D+1}+d_{s_1}f_D,\\
+\widehat{\mathcal{ℰ}}_D^{\,\mathrm{new}}
+ &=\widehat{\mathcal{ℰ}}_D+\Delta f_D .
+\end{aligned}
+```
+
+Both use the same complete lower product. A redefinition of a lower
+decoration first requires substitution throughout the remaining
+tower. An exact change in an obstruction therefore comes with its
+corresponding change in the twister.
+
+The signs can also be fixed geometrically. Let $`\tau_P`$ denote
+parameter-first signed shuffle integration over an oriented
+parameter simplex $`P`$, with $`s_1`$ pulled back from the physical
+space. Then
+
+```math
+\tau_P(d_{s_1}Q)
+=\tau_{\partial P}Q+(-1)^{\dim P}d_{s_1}\tau_PQ .
+```
+
+This is the cochain form of the boundary identity for the shuffle
+cross product. For a closed high-dimensional cochain on a triangle,
+
+```math
+d_{s_1}\tau_{012}Q
+=\tau_{02}Q-\tau_{01}Q-\tau_{12}Q.
+```
+
+The triangle formula explains the common sign in
+$`d_{s_1}\widehat{\mathcal{ℰ}}=\Delta\widehat{\mathcal{𝒪}}`$.
+It also fixes the source and product signs when an explicit
+parameter-dependent representative is changed.

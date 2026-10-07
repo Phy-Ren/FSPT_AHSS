@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "complete_phase_readback": {
+    "cases": 1024,
+    "domain": "Arbitrary open binary u,v; arbitrary closed binary w,s; A=du,Aprime=dv; all Bocksteins and integer lifts exact",
+    "identity": "New complete gamma is exactly the existing complete gamma representative, with its existing output gauge relative to the frozen raw operator formula unchanged",
+    "phase_classes_over4": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "lift_patterns_tested": 16,
+    "canonical_carry_values_over4": [
+      0,
+      2
+    ],
+    "signed_HF": "identically zero; no new ordinary or twisted output gauge",
+    "counts": {
+      "half_terms": 459,
+      "quarter_outer_terms": 23,
+      "outer_total": 482,
+      "quarter_lift_interiors": 146,
+      "interior_explicit_total": 624
+    }
+  },
+  "independent_native_review": {
+    "status": "PASS",
+    "signed_chain_checks": [
+      {
+        "degree": 1,
+        "terms": 2,
+        "boundary_residual": 0,
+        "normalized": true
+      },
+      {
+        "degree": 2,
+        "terms": 10,
+        "boundary_residual": 0,
+        "normalized": true
+      },
+      {
+        "degree": 3,
+        "terms": 36,
+        "boundary_residual": 0,
+        "normalized": true
+      },
+      {
+        "degree": 4,
+        "terms": 116,
+        "boundary_residual": 0,
+        "normalized": true
+      },
+      {
+        "degree": 5,
+        "terms": 358,
+        "boundary_residual": 0,
+        "normalized": true
+      },
+      {
+        "degree": 6,
+        "terms": 1086,
+        "boundary_residual": 0,
+        "normalized": true
+      }
+    ],
+    "binary_reduction_matches_frozen_homotopy": true,
+    "native_open_pairs": 32,
+    "scope": "Exact pointwise phase equality modulo1; no source or output gauge is changed. Integer H is only an algebraic tool. Antiunitary twisting cannot change a pointwise equality of the complete phase.",
+    "independence": "Direct canonical beta, open beta, and integer derivatives; no compiled gauge or carry polynomial used."
+  },
+  "method": "The exact representative identity follows from the signed integer cup identity and normalized signed-transfer identities. Finite phase evaluations independently corroborate those identities."
+}

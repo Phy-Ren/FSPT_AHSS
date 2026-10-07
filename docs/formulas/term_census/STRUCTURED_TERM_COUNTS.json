@@ -1,12 +1,13 @@
 {
   "status": "PASS_TRANSCRIPTION_AND_ARITHMETIC",
-  "scope": "Exact distributed displayed occurrences, with declared natural structures retained. Not an operadic normal-form count or a minimum.",
+  "scope": "Exact distributed displayed occurrences, with declared natural structures retained. The 4D E5 gamma primary entry counts explicit leaves inside its four canonical lifts and separately records outer addends. Not an operadic normal form, linear expansion of nonlinear lifts, or a minimum.",
   "retained_structures": [
     "Already defined lower O/E, including their named physical components, and their actual output fields.",
     "Standard cochain d, d_s, Sq, Bocksteins, their stated open continuations and integer carry operations.",
     "The existing integer carries B and lambda and fixed integer Pontryagin representative P.",
+    "The degree-parametric integral quadratic cochain Q, with its exact three-cup definition and four-cup addition polarization.",
     "Delta as the already-defined operation; linear additions inside Delta are distributed, but its three evaluations are not required to expand.",
-    "Whole canonical-lift and exact-quotient boundaries. Their interior counts are recorded separately."
+    "Whole canonical-lift and exact-quotient boundaries. Interior counts are explicit. The 4D E5 gamma primary count includes all 146 interior leaves of four separate lifts; all other records retain their declared whole-lift boundary."
   ],
   "expanded_objects": [
     "All arbitrary finite I/J/y/z/H/P4 polynomials and their actual coefficient lists.",
@@ -15,8 +16,8 @@
   ],
   "reader_hashes": {
     "docs/formulas/TWO_DIMENSIONAL.md": "bdc4a7f835e90e2f5a5f35a2b6d880e08ed61661e29835a5f09f2621b47f7f81",
-    "docs/formulas/THREE_DIMENSIONAL.md": "212fda7e2ab0ed5a2036c20f278a969b8bfcf80a97a03c1911b0f23957cc4557",
-    "docs/formulas/FOUR_DIMENSIONAL.md": "77a4b0657c0e793932a567975f0de05d38a0ad35f65bc75b3577f6fe51820345"
+    "docs/formulas/THREE_DIMENSIONAL.md": "6f1b0a53ae24f7ca8195e01f45432fceeb662e6814259fae5abacb624f24baf3",
+    "docs/formulas/FOUR_DIMENSIONAL.md": "81ca6fad3a2dacbcc10c7758ad84b3a00dcb07362965abe62addf4458aa4acb4"
   },
   "records": [
     {
@@ -249,14 +250,15 @@
       "law": "O5",
       "origin": "cgamma",
       "terms_by_coefficient": {
-        "binary_or_half": 9,
+        "binary_or_half": 4,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 9
+      "total": 4,
+      "note": "Reuses the complete lower Majorana parity as the sum of its two already defined physical components; no closed-input assumption or physical reassignment."
     },
     {
       "dimension": "3+1D",
@@ -404,28 +406,30 @@
       "law": "E4",
       "origin": "cgamma",
       "terms_by_coefficient": {
-        "binary_or_half": 6,
+        "binary_or_half": 4,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 6
+      "total": 4,
+      "note": "Reuses the complete lower Majorana parity as the sum of its two already defined physical components; no closed-input assumption or physical reassignment."
     },
     {
       "dimension": "3+1D",
       "law": "E4",
       "origin": "cpsi",
       "terms_by_coefficient": {
-        "binary_or_half": 204,
+        "binary_or_half": 202,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 204
+      "total": 202,
+      "note": "The existing Delta retains the three output-minus-input evaluations as one defined operation."
     },
     {
       "dimension": "3+1D",
@@ -560,14 +564,15 @@
       "law": "O6",
       "origin": "cgamma",
       "terms_by_coefficient": {
-        "binary_or_half": 9,
+        "binary_or_half": 4,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 9
+      "total": 4,
+      "note": "Reuses the complete lower Majorana parity as the sum of its two already defined physical components; no closed-input assumption or physical reassignment."
     },
     {
       "dimension": "4+1D",
@@ -589,13 +594,14 @@
       "origin": "gamma",
       "terms_by_coefficient": {
         "binary_or_half": 88,
-        "quarter": 3,
+        "quarter": 1,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 91
+      "total": 89,
+      "note": "The defined integral quadratic cochain Q is retained. Its pure occurrence counts once; its mixed addition polarization is displayed as three Q occurrences. Their defining cups remain completely specified in the quadratic-cochain appendix."
     },
     {
       "dimension": "4+1D",
@@ -603,13 +609,14 @@
       "origin": "gammapsi",
       "terms_by_coefficient": {
         "binary_or_half": 1009,
-        "quarter": 4,
+        "quarter": 3,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 1013
+      "total": 1012,
+      "note": "The defined integral quadratic cochain Q is retained. Its pure occurrence counts once; its mixed addition polarization is displayed as three Q occurrences. Their defining cups remain completely specified in the quadratic-cochain appendix."
     },
     {
       "dimension": "4+1D",
@@ -617,13 +624,14 @@
       "origin": "psi",
       "terms_by_coefficient": {
         "binary_or_half": 623880,
-        "quarter": 4,
+        "quarter": 2,
         "eighth": 1,
         "sixteenth": 1,
         "third": 0,
         "twelfth": 1
       },
-      "total": 623887
+      "total": 623885,
+      "note": "The defined integral quadratic cochain Q is retained. Its pure occurrence counts once; its mixed addition polarization is displayed as three Q occurrences. Their defining cups remain completely specified in the quadratic-cochain appendix."
     },
     {
       "dimension": "4+1D",
@@ -715,20 +723,6 @@
       "law": "E5",
       "origin": "cgamma",
       "terms_by_coefficient": {
-        "binary_or_half": 6,
-        "quarter": 0,
-        "eighth": 0,
-        "sixteenth": 0,
-        "third": 0,
-        "twelfth": 0
-      },
-      "total": 6
-    },
-    {
-      "dimension": "4+1D",
-      "law": "E5",
-      "origin": "cpsi",
-      "terms_by_coefficient": {
         "binary_or_half": 4,
         "quarter": 0,
         "eighth": 0,
@@ -736,21 +730,57 @@
         "third": 0,
         "twelfth": 0
       },
-      "total": 4
+      "total": 4,
+      "note": "Reuses the complete lower Majorana parity as the sum of its two already defined physical components; no closed-input assumption or physical reassignment."
+    },
+    {
+      "dimension": "4+1D",
+      "law": "E5",
+      "origin": "cpsi",
+      "terms_by_coefficient": {
+        "binary_or_half": 2,
+        "quarter": 0,
+        "eighth": 0,
+        "sixteenth": 0,
+        "third": 0,
+        "twelfth": 0
+      },
+      "total": 2,
+      "note": "The existing Delta retains the three output-minus-input evaluations as one defined operation."
     },
     {
       "dimension": "4+1D",
       "law": "E5",
       "origin": "gamma",
       "terms_by_coefficient": {
-        "binary_or_half": 6164,
-        "quarter": 12,
+        "binary_or_half": 459,
+        "quarter": 165,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 6176
+      "total": 624,
+      "total_outer": 482,
+      "total_explicit_leaves": 624,
+      "outer_terms_by_coefficient": {
+        "binary_or_half": 459,
+        "quarter": 23
+      },
+      "ordinary_quarter_terms": 19,
+      "protected_lift_occurrences": 4,
+      "protected_lift_interior_counts": [
+        5,
+        15,
+        10,
+        116
+      ],
+      "protected_lift_interior_total": 146,
+      "finite_MS_sum_terms": 455,
+      "other_half_terms": 4,
+      "coefficient_count_semantics": "The binary_or_half count is outer additive terms. The quarter count 165 is19 ordinary outer terms plus146 expression leaves inside four separate quarter-valued canonical lifts; it is not 165 independent quarter-valued addends. The actual quarter bracket has 23 additive terms.",
+      "note": "Exact same-representative signed-carry rewriting of the archived 6176-term expression. Total 624=482\u22124+146. Whole canonical lifts remain intact; no scalar term is distributed through a nonlinear lift.",
+      "coefficient_table": "../FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md"
     },
     {
       "dimension": "4+1D",
@@ -795,19 +825,19 @@
     "3+1D O2": 0,
     "3+1D O3": 2,
     "3+1D O4": 10,
-    "3+1D O5": 13754,
+    "3+1D O5": 13749,
     "3+1D E1": 0,
     "3+1D E2": 2,
     "3+1D E3": 20,
-    "3+1D E4": 26898,
+    "3+1D E4": 26894,
     "4+1D O3": 0,
     "4+1D O4": 3,
     "4+1D O5": 18,
-    "4+1D O6": 625008,
+    "4+1D O6": 624998,
     "4+1D E2": 0,
     "4+1D E3": 2,
     "4+1D E4": 34,
-    "4+1D E5": 8560944
+    "4+1D E5": 8555388
   },
   "slot_widths": {
     "2D L3 scalar polynomial": {
@@ -1010,13 +1040,11 @@
       "displayed_slot_widths": [
         1,
         1,
-        1,
-        1,
         132,
         16,
         52
       ],
-      "distributed_occurrences": 204
+      "distributed_occurrences": 202
     },
     "3D E4 gamma quarter": {
       "displayed_slot_widths": [
@@ -1087,6 +1115,43 @@
         6
       ],
       "distributed_occurrences": 27
+    },
+    "4D O6 gamma quarter": {
+      "displayed_slot_widths": [
+        1
+      ],
+      "distributed_occurrences": 1,
+      "structure": "Q[B4gamma]"
+    },
+    "4D O6 gammapsi quarter": {
+      "displayed_slot_widths": [
+        1,
+        1,
+        1
+      ],
+      "distributed_occurrences": 3,
+      "structure": "Q[B4]\u2212Q[B4gamma]\u2212Q[B4psi]"
+    },
+    "4D O6 psi quarter": {
+      "displayed_slot_widths": [
+        1,
+        1
+      ],
+      "distributed_occurrences": 2,
+      "structure": "One Q[B4psi] and one protected canonical lift."
+    },
+    "4D E5 gamma current": {
+      "half_occurrences": 459,
+      "quarter_ordinary_occurrences": 19,
+      "quarter_protected_lifts": 4,
+      "quarter_protected_interior_counts": [
+        5,
+        15,
+        10,
+        116
+      ],
+      "outer_occurrences": 482,
+      "explicit_leaf_occurrences": 624
     }
   },
   "protected_interiors": {
@@ -1102,7 +1167,24 @@
     "4D source_psi negative whole quarter reduction": 4,
     "4D product mixed whole quarter reduction": 42,
     "4D product psi whole quarter reduction": 20,
-    "fixed integer Pontryagin representative defining terms": 2
+    "fixed integer Pontryagin representative defining terms": 2,
+    "4D E5 gamma four separate quarter lifts": {
+      "terms_per_scope": [
+        5,
+        15,
+        10,
+        116
+      ],
+      "total": 146,
+      "signs": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "included_in_primary_explicit_leaf_count": true,
+      "warning": "Reduce each entire binary polynomial before taking its canonical integer value; never distribute its lift as an integer-linear operation."
+    }
   },
   "exact_structural_reuse": {
     "3D E4 gammapsi": {
@@ -1110,15 +1192,42 @@
       "current_displayed_total": 16059,
       "description": "The existing total carry replaces the former sixteen-term quadratic component sum by four exact terms. Two explicit omega-lambda quarter copies combine to one half term; the doubled derivative is moved to its half bracket. The remaining gamma square stays in the quarter bracket.",
       "proof": "TOTAL_INTEGER_CARRY_REUSE_CHECK.json"
+    },
+    "4D O6 quarter phases": {
+      "gamma": {
+        "previous": 3,
+        "current": 1
+      },
+      "gammapsi": {
+        "previous": 4,
+        "current": 3
+      },
+      "psi_quadratic_part": {
+        "previous": 3,
+        "current": 1
+      },
+      "description": "Exact reuse of the defined integral quadratic cochain and its addition polarization; no cochain or physical-origin change.",
+      "definition": "../QUADRATIC_REFINEMENTS.md"
+    },
+    "4D E5 gamma": {
+      "archived_displayed_total": 6176,
+      "current_outer_total": 482,
+      "current_explicit_leaf_total": 624,
+      "protected_interior_total": 146,
+      "description": "Exact signed-carry rewriting; no additional output gauge. Four separate canonical lifts replace the expanded face polynomial while retaining all their146 explicit products.",
+      "coefficient_table": "../FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md",
+      "replay": "../coefficients/verify_majorana_carry_reduction.py"
     }
   },
   "Delta_evaluation_alternative": {
     "2D E3 cgamma": 4,
     "2D E3 gamma": 22,
     "3D E3 psi": 15,
-    "3D E4 cgamma": 12,
-    "4D E5 cgamma": 12,
-    "scope": "Only replace Delta by its three evaluations; retain actual defined outputs and all other structures."
+    "3D E4 cgamma": 8,
+    "4D E5 cgamma": 8,
+    "scope": "Only replace Delta by its three evaluations; retain actual defined outputs and all other structures.",
+    "3D E4 cpsi": 204,
+    "4D E5 cpsi": 4
   },
   "finite_sum_annotation_updates": [
     {
@@ -1152,12 +1261,25 @@
     {
       "page": "ALL",
       "anchor": "other already stated finite coefficient sums",
-      "text": "The actual list counts 25, 132, 2276, 583, 10825, 15994, 6479, 4094, 85, 1005, 623880, 455, and 5707 are unchanged by this counting convention. They refer to the existing finite lists, not hypothetical repacking."
+      "text": "The unchanged actual finite-list counts are 25,132,2276,583,10825,15994,6479,4094,85,1005,623880 and455. The old 5707-term Majorana face list is archived; the current replacement has two half-valued face products, seven ordinary quarter terms and four separately lifted binary polynomials with 5, 15, 10, 116 interior products."
+    },
+    {
+      "page": "FOUR_DIMENSIONAL.md",
+      "anchor": "E5 gamma separately lifted polynomial sum",
+      "lift_occurrences": 4,
+      "interior_counts": [
+        5,
+        15,
+        10,
+        116
+      ],
+      "explicit_interior_products": 146,
+      "text": "The four signs are +, \u2212, \u2212, +. Each complete binary polynomial is reduced and canonically lifted separately. The complete Majorana contribution has 482 outer terms and 624 explicit expression leaves; no lift is distributed over integer addition."
     }
   ],
   "complete_4D_product": {
     "dimension": "4+1D",
-    "boundary": "Exact collected finite sums with defined lower O/E, Bockstein, differential and integer-carry operations retained. All arbitrary coefficient sums remain explicit. Nonlinear numerator interiors are listed separately.",
+    "boundary": "Exact collected finite sums with defined lower O/E, Bockstein, differential, Q and integer-carry operations retained. All arbitrary coefficient sums remain explicit. The gamma entry includes 146 protected interior leaves; mixed/pure nonlinear numerator interiors remain separately recorded at their existing boundary.",
     "gammapsi": {
       "finite_sum_terms": 5684189,
       "unique_nonlinear_interior_terms": 58547,
@@ -1170,6 +1292,221 @@
     },
     "coefficient_appendix": "FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md",
     "complete_tensor_contributions": true,
-    "complete_y6_contribution": true
+    "complete_y6_contribution": true,
+    "gamma": {
+      "total_explicit_leaves": 624,
+      "total_outer": 482,
+      "protected_interior_terms": 146,
+      "protected_interior_counts": [
+        5,
+        15,
+        10,
+        116
+      ]
+    },
+    "total_primary": 8555388,
+    "total_outer_alternative": 8555246
+  },
+  "count_semantics": {
+    "default": "Displayed additive occurrences with declared structures retained and arbitrary finite sums fully listed. Canonical-lift interiors are separately recorded.",
+    "exception": "4+1D E5 gamma total 624 counts expression leaves:459 half outer terms+19 ordinary quarter terms+146 protected interior monomials. Its outer additive total is482.",
+    "coefficient_warning": "The quarter 165 count in this record describes leaves within the quarter bracket, not independently quarter-valued phase terms. Four nonlinear scopes are preserved.",
+    "aggregate": "4+1D E5 total 8555388 uses the624-leaf gamma entry and the established boundaries of the other five contributions. Replacing only that entry by its 482 outer addends gives 8555246. No fully flattened linear-phase interpretation is asserted."
+  },
+  "aggregate_outer_alternative": {
+    "4+1D E5": 8555246,
+    "scope": "Replace only the 4D E5 gamma 624-leaf entry by its 482 outer addends; all other recorded boundaries are unchanged."
+  },
+  "archival_representations": {
+    "previous_structured_release": {
+      "label": "Pre-refinement displayed-expression boundary; retained for comparison, not the current reader count.",
+      "reader_hashes": {
+        "docs/formulas/TWO_DIMENSIONAL.md": "bdc4a7f835e90e2f5a5f35a2b6d880e08ed61661e29835a5f09f2621b47f7f81",
+        "docs/formulas/THREE_DIMENSIONAL.md": "212fda7e2ab0ed5a2036c20f278a969b8bfcf80a97a03c1911b0f23957cc4557",
+        "docs/formulas/FOUR_DIMENSIONAL.md": "77a4b0657c0e793932a567975f0de05d38a0ad35f65bc75b3577f6fe51820345"
+      },
+      "changed_records": [
+        {
+          "dimension": "3+1D",
+          "law": "O5",
+          "origin": "cgamma",
+          "terms_by_coefficient": {
+            "binary_or_half": 9,
+            "quarter": 0,
+            "eighth": 0,
+            "sixteenth": 0,
+            "third": 0,
+            "twelfth": 0
+          },
+          "total": 9
+        },
+        {
+          "dimension": "3+1D",
+          "law": "E4",
+          "origin": "cgamma",
+          "terms_by_coefficient": {
+            "binary_or_half": 6,
+            "quarter": 0,
+            "eighth": 0,
+            "sixteenth": 0,
+            "third": 0,
+            "twelfth": 0
+          },
+          "total": 6
+        },
+        {
+          "dimension": "3+1D",
+          "law": "E4",
+          "origin": "cpsi",
+          "terms_by_coefficient": {
+            "binary_or_half": 204,
+            "quarter": 0,
+            "eighth": 0,
+            "sixteenth": 0,
+            "third": 0,
+            "twelfth": 0
+          },
+          "total": 204
+        },
+        {
+          "dimension": "4+1D",
+          "law": "O6",
+          "origin": "cgamma",
+          "terms_by_coefficient": {
+            "binary_or_half": 9,
+            "quarter": 0,
+            "eighth": 0,
+            "sixteenth": 0,
+            "third": 0,
+            "twelfth": 0
+          },
+          "total": 9
+        },
+        {
+          "dimension": "4+1D",
+          "law": "O6",
+          "origin": "gamma",
+          "terms_by_coefficient": {
+            "binary_or_half": 88,
+            "quarter": 3,
+            "eighth": 0,
+            "sixteenth": 0,
+            "third": 0,
+            "twelfth": 0
+          },
+          "total": 91
+        },
+        {
+          "dimension": "4+1D",
+          "law": "O6",
+          "origin": "gammapsi",
+          "terms_by_coefficient": {
+            "binary_or_half": 1009,
+            "quarter": 4,
+            "eighth": 0,
+            "sixteenth": 0,
+            "third": 0,
+            "twelfth": 0
+          },
+          "total": 1013
+        },
+        {
+          "dimension": "4+1D",
+          "law": "O6",
+          "origin": "psi",
+          "terms_by_coefficient": {
+            "binary_or_half": 623880,
+            "quarter": 4,
+            "eighth": 1,
+            "sixteenth": 1,
+            "third": 0,
+            "twelfth": 1
+          },
+          "total": 623887
+        },
+        {
+          "dimension": "4+1D",
+          "law": "E5",
+          "origin": "cgamma",
+          "terms_by_coefficient": {
+            "binary_or_half": 6,
+            "quarter": 0,
+            "eighth": 0,
+            "sixteenth": 0,
+            "third": 0,
+            "twelfth": 0
+          },
+          "total": 6
+        },
+        {
+          "dimension": "4+1D",
+          "law": "E5",
+          "origin": "cpsi",
+          "terms_by_coefficient": {
+            "binary_or_half": 4,
+            "quarter": 0,
+            "eighth": 0,
+            "sixteenth": 0,
+            "third": 0,
+            "twelfth": 0
+          },
+          "total": 4
+        },
+        {
+          "dimension": "4+1D",
+          "law": "E5",
+          "origin": "gamma",
+          "terms_by_coefficient": {
+            "binary_or_half": 6164,
+            "quarter": 12,
+            "eighth": 0,
+            "sixteenth": 0,
+            "third": 0,
+            "twelfth": 0
+          },
+          "total": 6176
+        }
+      ],
+      "totals": {
+        "2+1D O2": 0,
+        "2+1D O3": 2,
+        "2+1D O4": 11,
+        "2+1D E1": 0,
+        "2+1D E2": 2,
+        "2+1D E3": 25,
+        "3+1D O2": 0,
+        "3+1D O3": 2,
+        "3+1D O4": 10,
+        "3+1D O5": 13754,
+        "3+1D E1": 0,
+        "3+1D E2": 2,
+        "3+1D E3": 20,
+        "3+1D E4": 26898,
+        "4+1D O3": 0,
+        "4+1D O4": 3,
+        "4+1D O5": 18,
+        "4+1D O6": 625008,
+        "4+1D E2": 0,
+        "4+1D E3": 2,
+        "4+1D E4": 34,
+        "4+1D E5": 8560944
+      }
+    },
+    "substituted_source": {
+      "manifest": "four_dimensional/SOURCE_SUBSTITUTED_TERMS.json",
+      "total": 628789,
+      "status": "Archived explicit source expansion; unchanged cochain, distinct count boundary."
+    },
+    "majorana_product": {
+      "standard_differentials_retained": 6176,
+      "lower_laws_substituted": 87189,
+      "status": "Archived expanded representations; neither is the current primary count."
+    }
+  },
+  "supporting_reader_hashes": {
+    "docs/FORMULA_GUIDE.md": "21cc164035eff4458284e331b078e5200581fc314eb7c410fd9a92647ea4d8b2",
+    "docs/formulas/QUADRATIC_REFINEMENTS.md": "b23760cb78ec6aaf32db5635344a350c6fb1b2720f404ea1ae549f56c618fd89",
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": "0f5c1a619ade4e22772adf52073dd452d23a5414083022c4eeec9bc86069532e",
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "145fe716fd3da148d2086c11a09c4f50004bc8f89e096e56e41257c4bcbc7e8c"
   }
 }

@@ -115,12 +115,18 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 ```math
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_5^{c\gamma}
-={}&\frac12\big[\mathrm{Sq}^2\check n_2+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2\big]\cup_3\!\big[\\
-&\qquad\mathrm{Sq}^2\check n_2+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2\big].
+={}&\frac12\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}\big]\cup_3\!\big[\\
+&\qquad\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}\big].
 \end{aligned}
 ```
 
-The bracket is the full Majorana term in the lower parity equation. The Steenrod squares here use their cochain definitions, including $`d\check n_2`$; the Majorana cochain is not assumed closed. The superscript labels the exchanged fermion operators, rather than the variables obtained after the lower equations are substituted.
+The bracket reuses the complete Majorana parity from the preceding layer:
+$`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2\check n_2
++\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2`$.
+Its mixed component retains the terms proportional to $`d\check n_2`$;
+no closed-input assumption is made. The outer superscript records the
+exchanged fermion operators. Reusing their full parity does not change
+that physical origin.
 
 #### Complex fermions and p+ip decoration
 
@@ -372,9 +378,9 @@ The $`\Delta`$ acts on the entire displayed bracket with the p+ip output $`N_1`$
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^{c\gamma}
 ={}&\frac12\Big[
- \big[\mathrm{Sq}^2\check n_2+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2\big]\cup_3n'_3\\
+ \big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}\big]\cup_3n'_3\\
 &\qquad+\Delta\Big[
- n_3\cup_3\big[\mathrm{Sq}^2\check n_2+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2\big]\Big]\Big].
+ n_3\cup_3\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}\big]\Big]\Big].
 \end{aligned}
 ```
 
@@ -386,9 +392,7 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ mi
 \begin{aligned}
 \widehat{\mathcal{ℰ}}^{c\psi}_4=\frac12\big[&
  \mathcal{𝒪}_4^\psi[n_1]\cup_3n'_3
- +N_3\cup_3\mathcal{𝒪}_4^\psi[N_1]\\
- &+n_3\cup_3\mathcal{𝒪}_4^\psi[n_1]
- +n'_3\cup_3\mathcal{𝒪}_4^\psi[n'_1]\\
+ +\Delta\big(n_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
  &+\sum_{(v;\boldsymbol x)\in\mathcal I_{4,A}}
        \mathop{\mathrm{MS}}\nolimits_v(\boldsymbol x)\\
  &+P_4[\check N_2,n_3+n'_3]

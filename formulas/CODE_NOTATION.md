@@ -343,3 +343,27 @@ The [term census](../docs/formulas/TERM_COUNTS.md) distinguishes expanded
 formula size, exact cochain cancellation, and raw construction occurrences;
 none of these counts is a runtime estimate. Finite sums and completion
 polynomials are expanded in that census rather than assigned unit cost.
+
+
+## Signed carry reduction and reusable quadratic cochain
+
+The revised [complete Majorana product](../docs/formulas/FOUR_DIMENSIONAL.md)
+is pointwise equal to the preceding reader representative: its existing
+output gauge is unchanged. The new carry at degree four is the same
+canonical binary-addition carry already used at degree three, applied to
+the binary differentials of the inputs. It is not an integer differential
+of a lifted binary cochain. The four nonlinear lift boundaries must survive
+translation to code.
+
+The public [carry replay](../docs/formulas/coefficients/verify_majorana_carry_reduction.py)
+uses only the archived face polynomial and the four explicit lift tables.
+The [signed-transfer certificate](../docs/formulas/coefficients/verify_majorana_signed_transfer.py)
+checks the integer chain identity and normalization. The numerical runtime
+retains its equivalent frozen expression; the reader rewrite does not
+change computed examples.
+
+The [quadratic cochain](../docs/formulas/QUADRATIC_REFINEMENTS.md) is the
+integer sum of its three printed cups. The new source substitutions and
+terminal-kernel regrouping are literal identities. The optional quarter-lift
+transport in that appendix is a separate, fully stated output gauge; it is
+not silently applied to the runtime or to the current principal formula.

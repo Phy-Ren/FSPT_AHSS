@@ -1,0 +1,18 @@
+# Majorana canonical lift 3
+
+Return to the [four-lift definition](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md). Reduce this entire polynomial modulo two before taking its canonical integer value.
+
+## Row 3: coefficient -1, 10 terms
+
+| Term | Physical face product |
+| --- | --- |
+| 1 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n_3})_{01245} (\overline{d\check n'_3})_{01235} (\check n'_3)_{0125}`$ |
+| 2 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n_3})_{02345} (\overline{d\check n'_3})_{01235} (\check n'_3)_{0235}`$ |
+| 3 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01235} (\bar B_4^\gamma)_{01245}`$ |
+| 4 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01235} (\bar B_4^\gamma)_{02345}`$ |
+| 5 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01235} (\check n_3)_{0145} (\check n'_3)_{0125}`$ |
+| 6 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01235} (\check n_3)_{0245} (\check n'_3)_{0125}`$ |
+| 7 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01235} (\check n_3)_{0245} (\check n'_3)_{0235}`$ |
+| 8 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01235} (\check n_3)_{0345} (\check n'_3)_{0235}`$ |
+| 9 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01235} (\check n_3)_{1245} (\check n'_3)_{0125}`$ |
+| 10 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01235} (\check n_3)_{2345} (\check n'_3)_{0235}`$ |

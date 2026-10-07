@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "cases": 512,
+  "domain": "arbitrary open binary degree-three inputs; exact open Bocksteins and canonical binary differentials; closed backgrounds",
+  "comparison": "Exact pointwise equality modulo1 of the old5707-term half coefficient and the new ordinary-cup/canonical-lift expression; no representative change",
+  "quarter_residues_with_unchanged_terms": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "carry_residues": [
+    0,
+    2
+  ],
+  "canonical_lift_patterns": 16,
+  "counts": {
+    "half_terms": 459,
+    "quarter_outer_terms": 23,
+    "outer_total": 482,
+    "canonical_lift_interior_terms": 146,
+    "total_with_lift_wrappers_replaced_by_their_interior_terms": 624
+  },
+  "sha256": {
+    "FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.json": "4bbbfacd28ad958dc34a8466a4db65f78d9268c721479133caad70788f148ad4",
+    "FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.json": "fdc93f26214d363a175e3d182414fe21f86bf333b567b06835a2165eebd2a93a"
+  }
+}

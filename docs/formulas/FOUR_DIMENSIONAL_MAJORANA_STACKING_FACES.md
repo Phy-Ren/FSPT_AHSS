@@ -1,7 +1,13 @@
-# Physical coefficients in the 4+1D Majorana stacking formula
+# Archived face expansion of the 4+1D Majorana stacking formula
 
-The physical-face sum in the principal formula contains exactly **5,707
-terms**. Its complete coefficient set is the array `terms` in the
+This is the previous fully expanded carry, retained for exact verification.
+The [current principal formula](FOUR_DIMENSIONAL.md) replaces it by an
+integer-carry identity, with **482 outer addends and 624 explicit expression
+leaves** after counting the interiors of four protected binary lifts.
+The [derivation](FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md) and
+[146 lift-interior terms](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md) are explicit.
+
+The archived physical-face polynomial contains exactly **5,707 terms**. Its complete coefficient set is the array `terms` in the
 [coefficient table](coefficients/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.json).
 Each row is one product. Each factor gives the mathematical cochain and
 the exact ordered face on the simplex (012345). Every coefficient is one
@@ -35,7 +41,8 @@ solve for a primitive or evaluate a higher-dimensional field. The
 companion [MS table](FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md) contains
 455 additional explicitly specified ordinary MS terms. Together with
 the printed two half-valued cups and twelve quarter-valued cups, the
-complete expression has **6,176 terms**. This is its primary term count.
+archived expression has **6,176 terms**. This is the former count; it
+is not the count of the current principal formula.
 The explicitly defined lower differentials are legitimate structured
 arguments of higher cochain operations. They need not be expanded into
 their lower decoration fields every time they occur. Here $`d`$ denotes
@@ -45,7 +52,8 @@ $`d_r`$. In particular, $`d\check n_3`$ is not assumed to vanish.
 ## Supplemental lower-equation substitution
 
 This optional expansion checks compatibility with the lower laws. Its
-term count does not replace the 6,176-term count of the displayed formula.
+term count does not replace the count of the current principal formula;
+it expands the archived 6,176-term representation.
 
 Expanding the lower equation inside each face factor produces 119,564
 raw face-product occurrences. Collecting equal products modulo two

@@ -99,8 +99,7 @@ guide, not additional input fields.
 &+\check\omega_2\,d\check{\mathcal{ℰ}}_3
  +\overline{\beta_{s_1}\check\omega_2}\,\check{\mathcal{ℰ}}_3\\
 &+\frac12\Big\{
- \Delta(B_4\cup_2B_4+B_4\cup_3dB_4)
- +\omega_2\,\Delta B_4\\
+ \Delta\mathcal Q_{\omega_2}[B_4]\\
 &\qquad-\Delta\overline{\left[\begin{gathered}\mathop{\mathrm{MS}}\nolimits_{12132434}
  (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
  +\widetilde{\beta_{s_1}\check\omega_2}(\bar n_2\cup_1\bar n_2)\\{}+(s_1\overline{\beta_{s_1}\check\omega_2})\widetilde n_2
@@ -111,6 +110,12 @@ guide, not additional input fields.
  \pmod2.
 \end{aligned}
 ```
+
+The repeated integer quadratic expression is the same
+[quadratic cochain](QUADRATIC_REFINEMENTS.md#quadratic-cochain) as in the
+obstruction. Its exact [stacking variation](QUADRATIC_REFINEMENTS.md#quadratic-variation)
+exhibits the differential and ordinary-cup corrections before any lift is
+expanded. This rewriting leaves the kernel and its coefficient tables unchanged.
 
 Every derivative differentiates a specified expression. In the binary
 part, $`d\overline{B_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and

@@ -1,0 +1,5750 @@
+{
+  "coefficient_ring_inside_each_lift": "F2",
+  "rule": "Multiply physical face values and add all listed terms modulo2 separately in each row. Then take the canonical integer value0 or1 of that complete binary sum. Only after those separate canonical lifts, combine the four rows with their listed integer coefficients. Never distribute the quarter coefficient over an unlifted XOR sum.",
+  "rows": [
+    {
+      "row": 1,
+      "coefficient": 1,
+      "term_count": 5,
+      "terms": [
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^{\\gamma\\prime}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "row": 2,
+      "coefficient": -1,
+      "term_count": 15,
+      "terms": [
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^{\\gamma\\prime}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^{\\gamma\\prime}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^{\\gamma\\prime}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "row": 3,
+      "coefficient": -1,
+      "term_count": 10,
+      "terms": [
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "row": 4,
+      "coefficient": 1,
+      "term_count": 116,
+      "terms": [
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^{\\gamma\\prime}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^{\\gamma\\prime}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^\\gamma",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^{\\gamma\\prime}",
+            "face": [
+              0,
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\bar B_4^{\\gamma\\prime}",
+            "face": [
+              0,
+              1,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              3,
+              4
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              1,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              0,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              3,
+              5
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              3,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "cochain": "\\overline{d\\check n_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\overline{d\\check n'_3}",
+            "face": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n_3",
+            "face": [
+              1,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "cochain": "\\check n'_3",
+            "face": [
+              0,
+              1,
+              4,
+              5
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "outer_lift_terms": 4,
+  "total_interior_terms": 146,
+  "complete_formula_counts": {
+    "half_terms": 459,
+    "quarter_outer_terms": 23,
+    "outer_total": 482,
+    "canonical_lift_interior_terms": 146,
+    "total_with_lift_wrappers_replaced_by_their_interior_terms": 624
+  },
+  "arithmetic": "d checkn3 is the binary cochain differential, canonically lifted only when an integer expression requires it. It is distinct from the integer differential of the canonical lift of checkn3. B4gamma=beta\u00b0checkn3 is integral; its bar is reduction modulo2."
+}

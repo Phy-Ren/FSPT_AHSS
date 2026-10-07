@@ -55,6 +55,13 @@ the appendices specify the finite operations and fixed coefficients needed to
 expand every term. The [implementation map](formulas/README.md) connects these
 definitions to the independently implemented runtime.
 
+The [current Majorana carry reduction](docs/formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
+reduces the complete 4+1D Majorana bosonic twister from 6,176 to **624 explicit
+term occurrences**, with four nonlinear lift scopes retained. Its cochain
+representative is unchanged. The [term census](docs/formulas/TERM_COUNTS.md)
+records every contribution, and the [next targets](docs/formulas/NEXT_SIMPLIFICATION_TARGETS.md)
+identify the remaining large formulas.
+
 Integer lifts, negative carries, local coefficients and cochain representative
 changes are explicit. Source and stacking coordinates must be transported
 together. The complete publication-coordinate implementation covers 3+1D and

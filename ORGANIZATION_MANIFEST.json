@@ -1,7 +1,7 @@
 {
   "schema": "fspt-organized-publication-v1",
-  "source_commit": "b8c086f24e1572b1308953cd2724713f0a7e9d9f",
-  "public_base_commit": "717c7d139bc52f584871a0ae74d9b79a58e356e6",
+  "source_commit": "61a7e75fca8507f99fb7169f85e48a223abf03b9",
+  "public_base_commit": "384c621850bdcabd22866b22fa9b451fde084c07",
   "scope": "Additive example catalogue and canonical formula documentation; prior archives preserved.",
   "files": {
     "PUBLIC_RELEASE.md": {
@@ -9,36 +9,68 @@
       "bytes": 7963
     },
     "README.md": {
-      "sha256": "c16ceda81ef3d9b21d986f1b8c9a5be3b520c4b9db6616e5d65ccc8fa3361424",
-      "bytes": 5945
+      "sha256": "83edcff9aaf1aee7e69ab6cc260286ff9f281584cfdc2df532a7558764cc3822",
+      "bytes": 6412
     },
     "docs/ARCHIVES.md": {
       "sha256": "bd27d006f4accf809ce763b8b457662190fd621271e8333d828a5f21b03bcc41",
       "bytes": 2410
     },
     "docs/FORMULA_GUIDE.md": {
-      "sha256": "d960711a25b903fa63095756e59f05f0bc1afa63f56d6f7daea76f94216adfc5",
-      "bytes": 9404
+      "sha256": "21cc164035eff4458284e331b078e5200581fc314eb7c410fd9a92647ea4d8b2",
+      "bytes": 10674
+    },
+    "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md": {
+      "sha256": "a3076dbdf90391d1c8fc2ecea8b0806bdb77a0c2cb7e3977405115e6af17ba8d",
+      "bytes": 8820
     },
     "docs/formulas/COEFFICIENTS.md": {
       "sha256": "b769ba593eb6cabd31bf52db9a7de0f6d29fb29da6ae037cbe3453513a17960d",
       "bytes": 33375
     },
     "docs/formulas/FOUR_DIMENSIONAL.md": {
-      "sha256": "6669c41d0c695b9ca591d9516a99674e0c32017b7c8a604137350c58eed9c0fb",
-      "bytes": 26097
+      "sha256": "81ca6fad3a2dacbcc10c7758ad84b3a00dcb07362965abe62addf4458aa4acb4",
+      "bytes": 27100
     },
     "docs/formulas/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md": {
-      "sha256": "c22c8aec23150b986172bf2fa67ac2dd7ef0df3e44ffd25c62aa172466f8cd19",
-      "bytes": 24925
+      "sha256": "df9ea3e9b7db726ec6eb1194ed66d5d89364cc6613ce0d4b0edfc793265e47d4",
+      "bytes": 25144
+    },
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md": {
+      "sha256": "e1f155e0ceed42b826ff856fa501d8dcff1f54e7c4cd3c05a003d4e66af88007",
+      "bytes": 4002
+    },
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": {
+      "sha256": "145fe716fd3da148d2086c11a09c4f50004bc8f89e096e56e41257c4bcbc7e8c",
+      "bytes": 3677
     },
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md": {
-      "sha256": "caf72e0f67eb4cdd845bd9b7c3a13ab71402b1c2b24d7417dda48fb3199bf505",
-      "bytes": 3914
+      "sha256": "b80d3c00fe70db63447c40cf4ab7efd6252328326554b06524e1c5979c3940ef",
+      "bytes": 4450
     },
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md": {
       "sha256": "72ea703b73e4763bdbe32b01fb7ccc00e3c2ebc7be7607c5960ea556593d01a3",
       "bytes": 1621
+    },
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": {
+      "sha256": "0f5c1a619ade4e22772adf52073dd452d23a5414083022c4eeec9bc86069532e",
+      "bytes": 1626
+    },
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_1.md": {
+      "sha256": "b8eccfac25658bdf1e80cd96caa89efcc90de57ff95da12d86a34ab25e5cc303",
+      "bytes": 885
+    },
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_2.md": {
+      "sha256": "a29e9cfcf0489dd68c9059bcfda273147df3b49395f2ebd91cc633dfa8cc439f",
+      "bytes": 2104
+    },
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_3.md": {
+      "sha256": "99754699ca77184866c1b9fa5b4ed0376ee6f910ba2b7471340929ef15f8e615",
+      "bytes": 1477
+    },
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFT_4.md": {
+      "sha256": "d7734ead5ecb7ed932bc9d0dfb2200931a7bdc9d61d56d7297b84173fa2748ae",
+      "bytes": 14585
     },
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md": {
       "sha256": "57d104cf2bf6922272c8a794b66f15db8d05f4f52372c392499fde35463ee3b9",
@@ -68,9 +100,17 @@
       "sha256": "b3ca30cca66dcc4bf82a1357164c78c728c214038d4a2bb77e01e06a656e8f69",
       "bytes": 24488
     },
+    "docs/formulas/NEXT_SIMPLIFICATION_TARGETS.md": {
+      "sha256": "4dc5939638d0d61deaa357196497e1ac4939a5ff81077cda9883bf10e7686331",
+      "bytes": 4240
+    },
     "docs/formulas/OPERATIONS.md": {
       "sha256": "501cfda8efe4d0442cb7570737907e210fd74fd401c203ca3c2fef3a572afd14",
       "bytes": 10015
+    },
+    "docs/formulas/QUADRATIC_REFINEMENTS.md": {
+      "sha256": "b23760cb78ec6aaf32db5635344a350c6fb1b2720f404ea1ae549f56c618fd89",
+      "bytes": 9469
     },
     "docs/formulas/REPRESENTATIVES.md": {
       "sha256": "773750198e74aaa2fe001dbaea6e36a0161ec0b6b58b84dcc39c6c3781e8a5fa",
@@ -81,16 +121,16 @@
       "bytes": 6979
     },
     "docs/formulas/TERMINAL_TRANSFER.md": {
-      "sha256": "fa4f8e8d6f483e71d109af0d793191c54ac65bece34661cd4591d59e9c356c99",
-      "bytes": 14605
+      "sha256": "edc66b7029bba1823d6bb6539c1c1f78a0dc919f1a8b331550e83844598e884a",
+      "bytes": 14954
     },
     "docs/formulas/TERM_COUNTS.md": {
-      "sha256": "1bfe77201afb6c134a88f19122aa88f7de1921f5608793862077ef08a77e7ed1",
-      "bytes": 12786
+      "sha256": "827abe3437fb491fd71de2e7e82c0ec11fe7481940c929ca4c921a71dcc04cba",
+      "bytes": 14966
     },
     "docs/formulas/THREE_DIMENSIONAL.md": {
-      "sha256": "212fda7e2ab0ed5a2036c20f278a969b8bfcf80a97a03c1911b0f23957cc4557",
-      "bytes": 23659
+      "sha256": "6f1b0a53ae24f7ca8195e01f45432fceeb662e6814259fae5abacb624f24baf3",
+      "bytes": 23633
     },
     "docs/formulas/THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md": {
       "sha256": "3d698f0cad145839a98ce685fc663278ae62d1207baa54b3d9a111cce5597a13",
@@ -124,6 +164,14 @@
       "sha256": "bdc4a7f835e90e2f5a5f35a2b6d880e08ed61661e29835a5f09f2621b47f7f81",
       "bytes": 4474
     },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_MAJORANA_CARRY_REPLAY.json": {
+      "sha256": "e256e6301a16725468bb53f8df90d1951b43311491625268422f37275de82a84",
+      "bytes": 958
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_MAJORANA_CARRY_VERIFICATION.json": {
+      "sha256": "481e2b90e85c4cea3aa1ea77cdb022dbeb68d3190dbb7f54f55ee43be159296d",
+      "bytes": 2237
+    },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.json": {
       "sha256": "4bbbfacd28ad958dc34a8466a4db65f78d9268c721479133caad70788f148ad4",
       "bytes": 2130084
@@ -131,6 +179,10 @@
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.json": {
       "sha256": "3fb3fac0efa221e71c51e615a407f11dc1aaffc0ed64215146ae2378cf14371e",
       "bytes": 95124
+    },
+    "docs/formulas/coefficients/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.json": {
+      "sha256": "fdc93f26214d363a175e3d182414fe21f86bf333b567b06835a2165eebd2a93a",
+      "bytes": 108452
     },
     "docs/formulas/coefficients/FOUR_DIMENSIONAL_MAJORANA_STACKING_LOWER_EXPANDED.json": {
       "sha256": "e585833d915ec956fdcffbba5258635a12ed2bac9fcc89d895524cf6f3a596be",
@@ -244,21 +296,29 @@
       "sha256": "6b2753a12e4cd7366cfb649b64689d1ab398f2167ec44bf1a9ea01767fc72b96",
       "bytes": 11519001
     },
+    "docs/formulas/coefficients/verify_majorana_carry_reduction.py": {
+      "sha256": "032d43e3c9cdbefe6a69d1b704375ddbbd0692bae5e12f802b59bffb616051e4",
+      "bytes": 6768
+    },
     "docs/formulas/coefficients/verify_majorana_lower_expansion.py": {
       "sha256": "297428cc5133e204e4fb5788675c02f5e638e4a9fd92d94356804692ef55c1c7",
       "bytes": 3405
+    },
+    "docs/formulas/coefficients/verify_majorana_signed_transfer.py": {
+      "sha256": "84aab048d21e64cf4cff6562ac98be416033c446f85648bdab7e6a6b99ae6a6a",
+      "bytes": 2128
     },
     "docs/formulas/term_census/LOWER_TERM_COUNTS.json": {
       "sha256": "fec3c79f2e9c977310ffc8d3c74af6d0b0d49618aa91bbbfb4955ac50ae87c96",
       "bytes": 37527
     },
     "docs/formulas/term_census/README.md": {
-      "sha256": "1e7390d99919de922c01017ac45abb336b91ca3ff253df0275f7e2cd3708d712",
-      "bytes": 3497
+      "sha256": "571c509d068b322de138a7a3ce1ddd76a9edf01fc91a745cc1ba35860fbcc57b",
+      "bytes": 4812
     },
     "docs/formulas/term_census/STRUCTURED_TERM_COUNTS.json": {
-      "sha256": "1d25d260a0ddf75d3cbcb7aac2944c453f8f0949aa978444ae79fb1e7e07f033",
-      "bytes": 26350
+      "sha256": "d755633c767f28edd8245971c2aaf283f9ad8b562083f6256b88dec1a42a43b6",
+      "bytes": 39360
     },
     "docs/formulas/term_census/four_dimensional/FOUR_DIMENSIONAL_CENSUS.json": {
       "sha256": "7cb7a64e22ec9989f45e81a6a00a7bfe48904cf08316e16f90dfd1ef1b51e684",
@@ -353,8 +413,8 @@
       "bytes": 4196
     },
     "formulas/CODE_NOTATION.md": {
-      "sha256": "6ebb7ca2234f3f874a385532fe38647562e10a12688eab6f2e0efc17ec867dab",
-      "bytes": 21187
+      "sha256": "682866e418d4adba2898c88256c9a44501a9535b8455fcbba1a48c04516cfcbc",
+      "bytes": 22519
     },
     "formulas/FORMULA_REGISTRY.json": {
       "sha256": "5692c369808814aa9b2aee7acc3d617891d80062f24070e89aded094e36c81cf",

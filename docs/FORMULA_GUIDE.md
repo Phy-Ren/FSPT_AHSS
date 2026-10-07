@@ -131,17 +131,41 @@ in the primary count and distinguishes supplementary counts obtained by
 substituting lower equations. An arbitrary named polynomial or finite sum
 still contributes its actual number of terms.
 
+<a id="integral-quadratic-cochain"></a>
+
+### The repeated integer quadratic cochain
+
+For an untwisted integer cochain $`x`$ of degree $`r\ge2`$, define
+
+```math
+\mathcal Q_{\omega_2}[x]
+=x\cup_{r-2}x+x\cup_{r-1}dx+\omega_2x.
+```
+
+It has three terms and degree $`r+2`$. Its parity is
+$`\mathrm{Sq}^2\bar x+\omega_2\bar x`$; its integer value retains the
+information required by a quarter-valued phase. The
+[exact addition and stacking identities](formulas/QUADRATIC_REFINEMENTS.md)
+explain its reuse in the obstruction and twister. It is a specified
+cochain operation, with integer lifts retained, rather than an additional
+physical field. In counts that retain this structure, its three defining
+cups are recorded once and their full substitutions are reported separately.
+
 ## Finite definitions and coordinate maps
 
 - 3+1D: [obstruction word coefficients](formulas/THREE_DIMENSIONAL_WORD_INDICES.md), [stacking word coefficients](formulas/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md), [complex-fermion stacking coefficients](formulas/THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md).
 - 3+1D pure p+ip face coefficients: [obstruction](formulas/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md), [stacking](formulas/THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md).
-- 4+1D: [obstruction word coefficients](formulas/FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md), [Majorana stacking coefficients](formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md), [mixed and p+ip stacking coefficients](formulas/FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).
+- 4+1D: [obstruction word coefficients](formulas/FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md), [Majorana stacking MS terms](formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md), [Majorana canonical lifts](formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md), [mixed and p+ip stacking coefficients](formulas/FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).
 - 4+1D construction data: [binary coefficients](formulas/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md), [physical face indices](formulas/FOUR_DIMENSIONAL_PHYSICAL_PATHS.md), [tensor coefficients](formulas/FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md).
 - [4+1D pure-source construction](formulas/SOURCE_OPERATIONS.md#source-completion).
 - [4+1D pure-source physical face coefficients](formulas/FOUR_DIMENSIONAL_Y6_FACES.md).
-- [Closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md)
+- [Closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md), [28-term 4+1D self-stacking](formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
+- [Exact Majorana carry reduction](formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
 - [Higher cups and finite sums](formulas/OPERATIONS.md), [fixed coefficients](formulas/COEFFICIENTS.md)
 - [Changes of representative](formulas/REPRESENTATIVES.md)
+- [Fermionic coboundary and stacking](formulas/COBOUNDARY_STACKING_COMPATIBILITY.md)
+- [Integer quadratic cochains and their polarization](formulas/QUADRATIC_REFINEMENTS.md)
+- [Further simplification targets](formulas/NEXT_SIMPLIFICATION_TARGETS.md)
 - [Formula-to-code translation](../formulas/CODE_NOTATION.md)
 
 A nonzero obstruction cochain may be a coboundary. Only its nontrivial

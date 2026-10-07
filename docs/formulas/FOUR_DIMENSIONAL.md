@@ -123,12 +123,18 @@ In the current phase coordinate the contributions are:
 ```math
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_6^{c\gamma}
-={}&\frac12\big[\mathrm{Sq}^2\check n_3+\omega_2\check n_3+s_1\mathrm{Sq}^1\check n_3\big]\cup_4\!\big[\\
-&\qquad\mathrm{Sq}^2\check n_3+\omega_2\check n_3+s_1\mathrm{Sq}^1\check n_3\big].
+={}&\frac12\big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\cup_4\!\big[\\
+&\qquad\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big].
 \end{aligned}
 ```
 
-The bracket is the full Majorana term in the lower parity equation. The Steenrod squares here use their cochain definitions, including $`d\check n_3`$; the Majorana cochain is not assumed closed. The superscript labels the exchanged fermion operators, rather than the variables obtained after the lower equations are substituted.
+The bracket reuses the complete Majorana parity from the preceding layer:
+$`\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}=\mathrm{Sq}^2\check n_3
++\omega_2\check n_3+s_1\mathrm{Sq}^1\check n_3`$.
+Its mixed component retains the terms proportional to $`d\check n_3`$;
+no closed-input assumption is made. The outer superscript records the
+exchanged fermion operators. Reusing their full parity does not change
+that physical origin.
 
 **Complex-fermion–p+ip contribution.**
 
@@ -160,10 +166,7 @@ specified cochain representatives.
        \mathop{\mathrm{MS}}\nolimits_\vartheta(x_1,\ldots,x_q)
  +s_1^2\widetilde{\beta^\circ\check n_3}\\
 &\qquad+\check n_3(\overline{\beta\omega_2}+s_1\omega_2)\Big]\\
-&+\frac14\Big[
- (\beta^\circ\check n_3)\cup_2(\beta^\circ\check n_3)
- +(\beta^\circ\check n_3)\cup_3d(\beta^\circ\check n_3)
- +\omega_2\beta^\circ\check n_3\Big].
+&+\frac14\mathcal Q_{\omega_2}[\beta^\circ\check n_3].
 \end{aligned}
 ```
 
@@ -186,10 +189,9 @@ terms are outside the sum.
     \overline{\beta^\circ\check n_3}\cup_3\overline{B_4^\psi}
  \big)\Big]\\
 &+\frac14\Big[
- (\beta^\circ\check n_3)\cup_2B_4^\psi
- +B_4^\psi\cup_2(\beta^\circ\check n_3)\\
-&\qquad+(\beta^\circ\check n_3)\cup_3dB_4^\psi
- +B_4^\psi\cup_3d(\beta^\circ\check n_3)\Big].
+ \mathcal Q_{\omega_2}[B_4]
+ -\mathcal Q_{\omega_2}[\beta^\circ\check n_3]
+ -\mathcal Q_{\omega_2}[B_4^\psi]\Big].
 \end{aligned}
 ```
 
@@ -209,9 +211,7 @@ displayed half- and quarter-valued terms are outside this sum.
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_6^\psi
 ={}&\frac12y_6[n_2;\omega_2,s_1]\\
- &+\frac14\Big[
- B_4^\psi\cup_2B_4^\psi
- +B_4^\psi\cup_3dB_4^\psi+\omega_2B_4^\psi\Big]\\
+ &+\frac14\mathcal Q_{\omega_2}[B_4^\psi]\\
  &-\frac14\overline{\Big[
  \mathop{\mathrm{MS}}\nolimits_{12132434}
  (\overline{\beta_{s_1}\check\omega_2},
@@ -225,6 +225,15 @@ displayed half- and quarter-valued terms are outside this sum.
    +\frac1{16}\mathcal P_{s_1}(\check\omega_2)n_2+\frac1{12}n_2^3.
 \end{aligned}
 ```
+
+The quadratic cochain is defined once in the
+[common notation](../FORMULA_GUIDE.md#integral-quadratic-cochain).
+Its three defining cups occur in the pure Majorana and pure p+ip
+quarter phases. The mixed quarter phase is their exact addition
+polarization: it expands to four ordered cups, with no background
+remainder. Here $`B_4=\beta^\circ\check n_3+B_4^\psi`$ is ordinary integer
+addition. This organization preserves all three physical contributions
+and their complete phases.
 
 The polynomial $`y_6`$ contains **623,880 explicit physical-face monomials**
 after its complete finite definition is expanded and equal binary
@@ -396,9 +405,9 @@ contribution. Its paired phase convention is stated after the formulas.
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_5^{c\gamma}
 ={}&\frac12\Big[
- \big[\mathrm{Sq}^2\check n_3+\omega_2\check n_3+s_1\mathrm{Sq}^1\check n_3\big]\cup_4n'_4\\
+ \big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\cup_4n'_4\\
 &\qquad+\Delta\Big[
- n_4\cup_4\big[\mathrm{Sq}^2\check n_3+\omega_2\check n_3+s_1\mathrm{Sq}^1\check n_3\big]\Big]\Big].
+ n_4\cup_4\big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\Big]\Big].
 \end{aligned}
 ```
 
@@ -407,93 +416,106 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_4,\check N_3)`$ mi
 #### Complex fermions and p+ip decoration
 
 ```math
-\begin{aligned}
 \widehat{\mathcal{ℰ}}_5^{c\psi}
-=\frac12\Big[&\mathcal{𝒪}_5^\psi\cup_4n'_4
- +N_4\cup_4\mathcal{𝒪}_5^\psi[N_2]\\
- &+n_4\cup_4\mathcal{𝒪}_5^\psi
- +n'_4\cup_4\mathcal{𝒪}_5^{\psi\prime}\Big].
-\end{aligned}
+=\frac12\Big[\mathcal{𝒪}_5^\psi\cup_4n'_4
+ +\Delta\big(n_4\cup_4\mathcal{𝒪}_5^\psi\big)\Big].
 ```
 
 #### Majorana decoration
+
+On an ordered five-simplex, the complete Majorana contribution is
 
 ```math
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_5^\gamma
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
- \mathop{\mathrm{MS}}\nolimits_\vartheta(x_1,\ldots,x_q)\\
-&\qquad+\sum_{\eta\in\mathcal J_5^\gamma}\prod_{(x,f)\in\eta}x(f)
- +s_1[(\bar B_4^\gamma+\bar B_4^{\gamma\prime})
-                         \cup_3\bar\lambda_3^\gamma]\Big]\\
+       \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)
+ +s_1\big[(\bar B_4^\gamma+\bar B_4^{\gamma\prime})
+                         \cup_3\bar\lambda_3^\gamma\big]\\
+&\qquad+(\bar\lambda_4^\gamma)_{12345}
+                  (\bar\lambda_3^\gamma)_{0145}
+ +(\bar\lambda_4^\gamma)_{01235}
+                  (\bar\lambda_3^\gamma)_{0345}\Big]\\
 &+\frac14\Big[
  B_4^\gamma\cup_3B_4^{\gamma\prime}
  -(B_4^\gamma+B_4^{\gamma\prime})\cup_2\lambda_3^\gamma\\
 &\qquad+\lambda_3^\gamma\cup_2\beta^\circ(\check n_3+\check n'_3)
  +\lambda_3^\gamma\cup_1\lambda_3^\gamma+\omega_2\lambda_3^\gamma\\
 &\qquad-(dB_4^\gamma+dB_4^{\gamma\prime})\cup_3\lambda_3^\gamma
- -\lambda_3^\gamma\cup_2
-       (\overline{d\check n_3}\cup_4\overline{d\check n'_3})\\
-&\qquad+dB_4^\gamma\cup_4B_4^{\gamma\prime}
- +(dB_4^\gamma+dB_4^{\gamma\prime})\cup_4d\lambda_3^\gamma
+ +\lambda_3^\gamma\cup_2\lambda_4^\gamma
+ +dB_4^\gamma\cup_4B_4^{\gamma\prime}\\
+&\qquad+(dB_4^\gamma+dB_4^{\gamma\prime})\cup_4d\lambda_3^\gamma
+ -(B_4^\gamma+B_4^{\gamma\prime}+d\lambda_3^\gamma)
+                                      \cup_3\lambda_4^\gamma\\
+&\qquad-(\lambda_4^\gamma)_{01235}(\lambda_4^\gamma)_{01345}
+ +(\lambda_4^\gamma)_{02345}(\lambda_4^\gamma)_{01245}\\
+&\qquad-(\lambda_4^\gamma)_{01235}(\lambda_4^\gamma)_{12345}
+ -(\lambda_4^\gamma)_{01345}(\lambda_4^\gamma)_{12345}\\
+&\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
+ \epsilon\;\overline{
+       \sum_{\eta\in\mathcal P}\prod_{(x,f)\in\eta}x_f}
  \Big]\pmod1.
 \end{aligned}
 ```
 
-Here the existing Majorana parts of the integer carries are
+Every unindexed cochain on the right is evaluated on the same simplex
+$`012345`$. The face products are ordinary products of the indicated values.
+The integer carries are
 
 ```math
-B_4^\gamma=\beta^\circ\check n_3,\qquad
-B_4^{\gamma\prime}=\beta^\circ\check n'_3,\qquad
-\lambda_3^\gamma=-\check n_3\cup_3\check n'_3.
+\begin{aligned}
+B_4^\gamma&=\beta^\circ\check n_3,
+& B_4^{\gamma\prime}&=\beta^\circ\check n'_3,\\
+\lambda_3^\gamma&=-\check n_3\cup_3\check n'_3,
+&\lambda_4^\gamma&=-\overline{d\check n_3}
+                         \cup_4\overline{d\check n'_3}.
+\end{aligned}
 ```
 
-The first records the integer carry of the lower differential; the last
-records the carry in binary stacking. Their exact compatibility on open
-cochains is
+The two $`\lambda`$ cochains are the same binary-addition carry, applied
+to the Majorana inputs and to their lower differentials, respectively.
+For any pair of binary degree-$`k`$ cochains, that carry is the integer
+cochain $`-x\cup_kx'`$: the canonical integer value of their binary sum
+is $`x+x'-2(x\cup_kx')`$. Thus $`\lambda_4^\gamma`$ introduces no new
+polynomial or choice. Its factors are the **canonical binary
+differentials**, not the integer differentials of the lifted fields.
+
+The compatibility of the two carries is
 
 ```math
 \beta^\circ(\check n_3+\check n'_3)
-=B_4^\gamma+B_4^{\gamma\prime}+d\lambda_3^\gamma
- +\overline{d\check n_3}\cup_4\overline{d\check n'_3}.
+=B_4^\gamma+B_4^{\gamma\prime}
+ +d\lambda_3^\gamma-\lambda_4^\gamma.
 ```
 
-The minus sign in the definition of the integral carry is essential.
-These are the same carries used by the lower product and the quarter
-numerators below. Reusing them changes neither the cochain nor its
-representative; it keeps their differential and stacking roles visible.
+The first sum contains **455 individually specified MS terms**, unchanged
+in the [ordinary coefficient table](FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md).
+The last sum has **four separately lifted binary polynomials**, with signs
+$`+,-,-,+`$. Their complete interiors contain **5, 15, 10, and 116 terms**,
+respectively, listed in the
+[canonical-lift coefficient table](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md).
+Each whole binary sum is reduced before its integer value enters the
+quarter bracket. Distributing those lifts would lose their carries.
 
-The ordinary MS sum contains **455 terms**, listed in the
-[ordinary coefficient table](FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md).
-The physical-face sum contains **5,707 terms**, with every cochain and face
-listed in the [physical coefficient table](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md). The remaining brackets contain **two half-valued cup
-terms and twelve quarter-valued cup terms** after distributing additions.
-Thus this complete displayed expression has **6,164 half-valued terms and
-12 quarter-valued terms: 6,176 terms in total**. This is the primary
-count of the displayed formula. Fully defined lower differentials and
-standard Bocksteins remain explicit structured arguments; their lower
-formulas need not be substituted again inside every higher operation.
-Here $`d`$ is the cochain differential, not an AHSS differential $`d_r`$.
+After distributing the displayed linear additions, the formula has
+**459 half-valued terms and 23 outer quarter-valued terms: 482 outer
+terms**. The four lift interiors contain **146 explicit products**.
+Counting those products in place of the four lift wrappers gives
+**624 explicit term occurrences**, with all four reduction boundaries
+retained. This replaces the previous 6,176-term expansion. Defined lower
+differentials, Bocksteins, and binary-addition carries remain structured
+arguments; $`d`$ denotes the cochain differential.
 
-All terms rewrite the previously designated Majorana cochain contribution.
-No summand is reassigned to another contribution, including differential terms.
+This is an exact rewriting of the same complete open-cochain
+representative. No Majorana cocycle condition is imposed, and no term is
+moved to another physical contribution. The obstruction and the
+[existing output-gauge relation](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md)
+are unchanged. The [standalone replay](coefficients/verify_majorana_carry_reduction.py)
+checks the replacement against the archived 5,707-term face polynomial,
+using only public coefficient files and Python's standard library.
 
-The expression differs from the previous complete Majorana contribution
-by the [explicit output coboundary](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md). The obstruction function is unchanged.
-It is valid for open Majorana input cochains; no cocycle assumption is
-needed for this complete version.
-
-An optional [lower-equation substitution check](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md#supplemental-lower-equation-substitution)
-also records the 87,189 terms obtained by substituting the explicit lower
-laws throughout. That larger expansion is a verification representation,
-not the primary count or a requirement for reading this formula. All
-canonical lifts and integer carries are preserved in either form.
-
-The coefficient tables make this representative explicit and reproducible.
-They do not claim a final economical organization of the operation. Further
-refinement should expose its lower differential and integer-carry structure,
-while preserving the complete open-cochain formula.
+The [integer-carry derivation](FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md) explains the reduction before binary expansion. For closed Majorana self-stacking, a further [28-term formula](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md) includes its explicit output-coboundary relation.
 
 #### Majorana and p+ip decoration
 

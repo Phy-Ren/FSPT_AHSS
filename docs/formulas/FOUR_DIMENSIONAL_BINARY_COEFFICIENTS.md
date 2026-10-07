@@ -5,7 +5,10 @@ Majorana–p+ip and pure p+ip sums of the 4+1D stacking formula. The
 previously designated Majorana coefficient is also specified here as the
 starting convention of the explicit rewrite. Its principal formula now
 uses the [455 ordinary MS coefficients](FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md)
-and [5,707 physical-face coefficients](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md),
+and [four canonical lifts with 146 explicit interior products](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md),
+together with the displayed carry cups and face products. The
+[former 5,707-face expansion](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md)
+is retained for replay. Both use the same representative,
 with the [explicit output coboundary](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md). The [physical paths](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md)
 specify every original face argument; the [tensor coefficient table](FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md)
 gives its 226 fixed binomial rows and its background-degree-one term.
