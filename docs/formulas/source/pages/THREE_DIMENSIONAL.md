@@ -113,6 +113,14 @@ The word operations are
 
 {{equation:three-dimensional--majorana-decoration--15}}
 
+The intrinsic Adem cochain of a binary two-cochain $`x`$ is
+
+{{equation:majorana-and-endpoints--majorana-contribution--24}}
+
+This operation has four word terms. The closed-Majorana presentation
+uses this same expression with $`\check n_2=n_2`$ and
+$`\beta^\circ=\beta`$; no phase redefinition is involved.
+
 #### Majorana and p+ip decoration
 
 {{equation:three-dimensional--majorana-and-p-ip-decoration--16}}

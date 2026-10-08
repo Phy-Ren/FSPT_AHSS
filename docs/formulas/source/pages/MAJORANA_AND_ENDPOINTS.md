@@ -247,13 +247,19 @@ the binary complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
 
 **(M4, 3+1D)**
 
-{{equation:majorana-and-endpoints--majorana-contribution--22}}
+This is the same pure Majorana formula as in the complete 3+1D tower.
+Here $`n_1=0`$, so $`\check n_2=n_2`$ and
+$`\beta^\circ n_2=\beta n_2`$. Its physical origin is Majorana;
+the common expression also defines this contribution for a nonclosed
+Majorana input in the full tower.
+
+{{equation:three-dimensional--majorana-decoration--14}}
 
 Its word operations are
 
-{{equation:majorana-and-endpoints--majorana-contribution--23}}
+{{equation:three-dimensional--majorana-decoration--15}}
 
-The intrinsic polynomial is
+The intrinsic Adem cochain of a binary two-cochain $`x`$ is
 
 <a id="eq-m5"></a>
 
@@ -319,7 +325,14 @@ There is no stacking correction in this layer.
 
 **(M7, 3+1D)**
 
-{{equation:majorana-and-endpoints--majorana-contribution--30}}
+Use the same $`\widehat{\mathcal{ℰ}}_4^\gamma`$ as in the complete
+3+1D product, with $`\check n_2=n_2`$, $`\check n'_2=n'_2`$,
+$`\beta^\circ=\beta`$, and
+$`\lambda_2^\gamma=\overline{n_2\cup_2n'_2}`$.
+The lower output here is $`N_2=\overline{n_2+n'_2}`$, and
+$`\mathcal{ℰ}_3^\gamma=\mathcal{ℰ}_3`$.
+
+{{equation:three-dimensional--majorana-decoration--31}}
 
 Here the binary completion is
 
@@ -327,10 +340,17 @@ Here the binary completion is
 
 **(M8, 3+1D)**
 
-{{equation:majorana-and-endpoints--majorana-contribution--31}}
+{{equation:three-dimensional--majorana-decoration--32}}
 
-The complete intrinsic term $`z^0_4(n_2,n'_2)`$ is given by the
-[finite word definition](#intrinsic-word-products).
+The second carry obeys $`\beta^{\circ+}=\beta^+`$ in this closed sector.
+The complete intrinsic term is the same two-input operation as in the
+full product:
+
+{{equation:three-dimensional--majorana-decoration--33}}
+
+The displayed sum contains seven word terms; the complete $`z_4^0`$
+has 20 distributed terms. The [interval-cut convention](OPERATIONS.md)
+fixes their finite cochain evaluation.
 
 <a id="majorana-4d"></a>
 ## 4+1D
