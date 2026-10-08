@@ -1,61 +1,29 @@
 # Finite internal families
 
-| Family | Named calculations | Tables |
+The complete [4+1D family tables](internal_4d.md) are organized separately. The tables below cover the lower dimensions; repeated calculation records have been merged.
+
+| Family | Distinct examples in 1+1D–3+1D | Tables |
 |---|---:|---|
-| A4 | 5 | [Markdown](families/A4.md) / [CSV](families/A4.csv) |
+| A4 | 2 | [Markdown](families/A4.md) / [CSV](families/A4.csv) |
 | C1 | 1 | [Markdown](families/C1.md) / [CSV](families/C1.csv) |
-| C10 | 4 | [Markdown](families/C10.md) / [CSV](families/C10.csv) |
-| C12 | 4 | [Markdown](families/C12.md) / [CSV](families/C12.csv) |
-| C16 | 7 | [Markdown](families/C16.md) / [CSV](families/C16.csv) |
-| C16xC2 | 1 | [Markdown](families/C16xC2.md) / [CSV](families/C16xC2.csv) |
-| C2 | 11 | [Markdown](families/C2.md) / [CSV](families/C2.csv) |
-| C27 | 1 | [Markdown](families/C27.md) / [CSV](families/C27.csv) |
-| C2^1 | 6 | [Markdown](families/C2_1.md) / [CSV](families/C2_1.csv) |
-| C2^2 | 9 | [Markdown](families/C2_2.md) / [CSV](families/C2_2.csv) |
-| C2^3 | 12 | [Markdown](families/C2_3.md) / [CSV](families/C2_3.csv) |
-| C2^4 | 15 | [Markdown](families/C2_4.md) / [CSV](families/C2_4.csv) |
-| C2xC2 | 8 | [Markdown](families/C2xC2.md) / [CSV](families/C2xC2.csv) |
-| C2xC2xC2 | 16 | [Markdown](families/C2xC2xC2.md) / [CSV](families/C2xC2xC2.csv) |
-| C2xC2xC2xC2 | 19 | [Markdown](families/C2xC2xC2xC2.md) / [CSV](families/C2xC2xC2xC2.csv) |
-| C3 | 4 | [Markdown](families/C3.md) / [CSV](families/C3.csv) |
-| C32 | 4 | [Markdown](families/C32.md) / [CSV](families/C32.csv) |
-| C3xC2xC2 | 10 | [Markdown](families/C3xC2xC2.md) / [CSV](families/C3xC2xC2.csv) |
-| C3xC3 | 1 | [Markdown](families/C3xC3.md) / [CSV](families/C3xC3.csv) |
-| C4 | 6 | [Markdown](families/C4.md) / [CSV](families/C4.csv) |
-| C4rtC4_inv | 18 | [Markdown](families/C4rtC4_inv.md) / [CSV](families/C4rtC4_inv.csv) |
-| C4xC2 | 19 | [Markdown](families/C4xC2.md) / [CSV](families/C4xC2.csv) |
-| C4xC2xC2 | 41 | [Markdown](families/C4xC2xC2.md) / [CSV](families/C4xC2xC2.csv) |
-| C4xC4 | 10 | [Markdown](families/C4xC4.md) / [CSV](families/C4xC4.csv) |
-| C4xC4xC2 | 41 | [Markdown](families/C4xC4xC2.md) / [CSV](families/C4xC4xC2.csv) |
-| C4xC8 | 18 | [Markdown](families/C4xC8.md) / [CSV](families/C4xC8.csv) |
-| C5 | 1 | [Markdown](families/C5.md) / [CSV](families/C5.csv) |
-| C6 | 5 | [Markdown](families/C6.md) / [CSV](families/C6.csv) |
-| C64 | 2 | [Markdown](families/C64.md) / [CSV](families/C64.csv) |
-| C7 | 1 | [Markdown](families/C7.md) / [CSV](families/C7.csv) |
-| C8 | 7 | [Markdown](families/C8.md) / [CSV](families/C8.csv) |
-| C8xC2 | 19 | [Markdown](families/C8xC2.md) / [CSV](families/C8xC2.csv) |
-| C8xC8 | 10 | [Markdown](families/C8xC8.md) / [CSV](families/C8xC8.csv) |
-| C9 | 1 | [Markdown](families/C9.md) / [CSV](families/C9.csv) |
+| C16 | 2 | [Markdown](families/C16.md) / [CSV](families/C16.csv) |
+| C2 | 7 | [Markdown](families/C2.md) / [CSV](families/C2.csv) |
+| C2^1 | 3 | [Markdown](families/C2_1.md) / [CSV](families/C2_1.csv) |
+| C2^2 | 5 | [Markdown](families/C2_2.md) / [CSV](families/C2_2.csv) |
+| C2^3 | 8 | [Markdown](families/C2_3.md) / [CSV](families/C2_3.csv) |
+| C2^4 | 8 | [Markdown](families/C2_4.md) / [CSV](families/C2_4.csv) |
+| C3 | 3 | [Markdown](families/C3.md) / [CSV](families/C3.csv) |
+| C32 | 2 | [Markdown](families/C32.md) / [CSV](families/C32.csv) |
+| C4xC2 | 1 | [Markdown](families/C4xC2.md) / [CSV](families/C4xC2.csv) |
+| C8 | 1 | [Markdown](families/C8.md) / [CSV](families/C8.csv) |
+| C8xC2 | 1 | [Markdown](families/C8xC2.md) / [CSV](families/C8xC2.csv) |
 | CentralC8Q8 | 1 | [Markdown](families/CentralC8Q8.md) / [CSV](families/CentralC8Q8.csv) |
-| D12 | 20 | [Markdown](families/D12.md) / [CSV](families/D12.csv) |
-| D16 | 22 | [Markdown](families/D16.md) / [CSV](families/D16.csv) |
-| D24 | 20 | [Markdown](families/D24.md) / [CSV](families/D24.csv) |
-| D32 | 20 | [Markdown](families/D32.md) / [CSV](families/D32.csv) |
-| D4 | 4 | [Markdown](families/D4.md) / [CSV](families/D4.csv) |
-| D5 | 1 | [Markdown](families/D5.md) / [CSV](families/D5.csv) |
-| D6 | 3 | [Markdown](families/D6.md) / [CSV](families/D6.csv) |
-| D8 | 23 | [Markdown](families/D8.md) / [CSV](families/D8.csv) |
-| D8xC2 | 93 | [Markdown](families/D8xC2.md) / [CSV](families/D8xC2.csv) |
-| M16 | 24 | [Markdown](families/M16.md) / [CSV](families/M16.csv) |
+| D16 | 1 | [Markdown](families/D16.md) / [CSV](families/D16.csv) |
+| D8 | 2 | [Markdown](families/D8.md) / [CSV](families/D8.csv) |
+| M16 | 12 | [Markdown](families/M16.md) / [CSV](families/M16.csv) |
 | Meta32_action3_t4r4 | 2 | [Markdown](families/Meta32_action3_t4r4.md) / [CSV](families/Meta32_action3_t4r4.csv) |
-| Q16 | 22 | [Markdown](families/Q16.md) / [CSV](families/Q16.csv) |
-| Q24 | 10 | [Markdown](families/Q24.md) / [CSV](families/Q24.csv) |
-| Q32 | 10 | [Markdown](families/Q32.md) / [CSV](families/Q32.csv) |
-| Q8 | 11 | [Markdown](families/Q8.md) / [CSV](families/Q8.csv) |
-| Q8xC2 | 26 | [Markdown](families/Q8xC2.md) / [CSV](families/Q8xC2.csv) |
-| S3 | 4 | [Markdown](families/S3.md) / [CSV](families/S3.csv) |
-| S4 | 8 | [Markdown](families/S4.md) / [CSV](families/S4.csv) |
-| SD16 | 32 | [Markdown](families/SD16.md) / [CSV](families/SD16.csv) |
-| SD32_action7 | 2 | [Markdown](families/SD32_action7.md) / [CSV](families/SD32_action7.csv) |
-| SL(2,F3) | 2 | [Markdown](families/SL_2_F3_.md) / [CSV](families/SL_2_F3_.csv) |
-| V4 | 13 | [Markdown](families/V4.md) / [CSV](families/V4.csv) |
+| Q16 | 10 | [Markdown](families/Q16.md) / [CSV](families/Q16.csv) |
+| Q8 | 2 | [Markdown](families/Q8.md) / [CSV](families/Q8.csv) |
+| SD16 | 16 | [Markdown](families/SD16.md) / [CSV](families/SD16.csv) |
+| SL(2,F3) | 1 | [Markdown](families/SL_2_F3_.md) / [CSV](families/SL_2_F3_.csv) |
+| V4 | 3 | [Markdown](families/V4.md) / [CSV](families/V4.csv) |

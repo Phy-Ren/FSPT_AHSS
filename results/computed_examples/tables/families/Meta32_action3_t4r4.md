@@ -1,6 +1,6 @@
 # Finite internal family Meta32_action3_t4r4
 
-2 retained named calculations. Group arrays in the CSV are invariant factors.
+2 distinct examples. Repeated calculations are retained only as verification provenance in the unique example index. Group arrays in the CSV are invariant factors.
 
 | Input | Dimension | Gb | Grading / crystalline spin | omega2 representative | p+ip | Majorana | CF | Bosonic | Stacking group |
 |---|---|---|---|---|---|---|---|---|---|

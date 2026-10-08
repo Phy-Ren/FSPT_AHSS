@@ -1,0 +1,4743 @@
+{
+  "status": "PASS",
+  "dimension": "4+1D",
+  "symmetry": {
+    "Gf": "Z4^f",
+    "Gb": "C2",
+    "omega2": "m1^2",
+    "s1": "0"
+  },
+  "phase_convention": "Current reader coordinate: nu5 = nu5_previous - R5(check_n3,n4).",
+  "normalization": "m1^q(g1,...,gq) = product(gj), with gj in {0,1}; all tuples are included.",
+  "six_tuples_checked_per_root": 64,
+  "lower_equations": {
+    "d_n2": "PASS on all 8 triples",
+    "d_n3": "PASS on all 16 four-tuples",
+    "d_n4": "PASS on all 32 five-tuples"
+  },
+  "R5_Majorana_coefficient": "1/4",
+  "coefficient_table_matches_reader_source": true,
+  "relative_MS_polynomial_checked_on_all_64_tuples": true,
+  "relative_MS_words_after_zero_input_removal": 177,
+  "source_sha256": {
+    "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--14.tex": "4560b3413fafa17907803814bdb89e1b1e06d720fb84813a48ac8b1ec80c0b2d",
+    "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--16.tex": "b73242d0f8f54bd8c31cb0651734f6dec37223a6853a65361b33630cb44266c7",
+    "docs/formulas/source/equations/four-dimensional-majorana-phase--phase-change--1.tex": "27f0a13d73bafbf1c37a6ca7d4468662601fb3a2b27fdf2a87ba06b038fff5f7",
+    "formulas/SOURCE_COEFFICIENTS.json": "8e8718786632a2f0c33650c6b7fcd47da228b10ef98df2420a1246c9d512bcd6",
+    "formulas/publication_source/reference/d4_input/code/word_residual_program.txt": "272466f21debee7065f29566d8a4790b86aca4bdd517b3bbca2c78aee154d893",
+    "scripts/verify_majorana_phase_transport.py": "c707b9800e8f78556c15de09197c7eca46c7c1c215334f718da56b5da0fe2a4f"
+  },
+  "y6_values": [
+    {
+      "tuple": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "grid": 0,
+      "AW": 0,
+      "y6": 0
+    },
+    {
+      "tuple": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "grid": 0,
+      "AW": 1,
+      "y6": 1
+    }
+  ],
+  "roots": {
+    "p_ip": {
+      "old_phase_coefficient": "25/96",
+      "current_phase_coefficient": "25/96",
+      "values": [
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "25/48",
+          "d_nu_current": "25/48",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        }
+      ],
+      "current_residual_nonzero_count": 0,
+      "old_phase_in_current_source_nonzero_count": 0,
+      "source_coefficient": "25/48"
+    },
+    "Majorana": {
+      "old_phase_coefficient": "3/8",
+      "current_phase_coefficient": "1/8",
+      "values": [
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "1/4",
+          "d_nu_current": "1/4",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "1/2",
+          "source_transport_residual": "0/1"
+        }
+      ],
+      "current_residual_nonzero_count": 0,
+      "old_phase_in_current_source_nonzero_count": 1,
+      "source_coefficient": "1/4"
+    },
+    "complex_fermion": {
+      "old_phase_coefficient": "1/4",
+      "current_phase_coefficient": "1/4",
+      "values": [
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "1/2",
+          "d_nu_current": "1/2",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        }
+      ],
+      "current_residual_nonzero_count": 0,
+      "old_phase_in_current_source_nonzero_count": 0,
+      "source_coefficient": "1/2"
+    },
+    "bosonic": {
+      "old_phase_coefficient": "1/2",
+      "current_phase_coefficient": "1/2",
+      "values": [
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        },
+        {
+          "tuple": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source": "0/1",
+          "d_nu_current": "0/1",
+          "current_residual": "0/1",
+          "old_phase_in_current_source_residual": "0/1",
+          "source_transport_residual": "0/1"
+        }
+      ],
+      "current_residual_nonzero_count": 0,
+      "old_phase_in_current_source_nonzero_count": 0,
+      "source_coefficient": "0/1"
+    }
+  },
+  "scope": "Exact concrete cochain solutions and paired phase transport. Existing Z16 group is preserved by the invertible transport; its full presentation is not recomputed here."
+}

@@ -7,10 +7,12 @@ archive is needed to evaluate the public formulas or run a listed input.
 ## Find an example
 
 Start at the [computed-example catalogue](results/computed_examples/README.md).
-Its [index](results/computed_examples/index.json) connects all retained named
-calculations to exact inputs, results, final groups, final layer filtrations and
-collection memberships. Equal literal input/scope keys are linked; historical
-names and independent calculation records are retained.
+Its [unique example index](results/computed_examples/unique_examples.json)
+contains 1,190 reader entries and verified links to all 1,234 retained
+calculation records. Equivalent backgrounds appear once in the tables;
+explicit group maps and cocycle section changes justify every merge.
+The original [calculation index](results/computed_examples/index.json)
+retains all names, exact inputs, results, final groups and layer filtrations.
 
 For finite internal symmetry, the input gives the bosonic quotient $G_b$, its
 one-based multiplication table with identity first, a binary character $s_1$,

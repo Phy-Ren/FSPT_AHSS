@@ -1,6 +1,6 @@
 # 3+1D point groups in both crystalline spin conventions
 
-64 retained named calculations. Group arrays in the CSV are invariant factors.
+64 distinct examples. Repeated calculations are retained only as verification provenance in the unique example index. Group arrays in the CSV are invariant factors.
 
 | Input | Dimension | Gb | Grading / crystalline spin | omega2 representative | p+ip | Majorana | CF | Bosonic | Stacking group |
 |---|---|---|---|---|---|---|---|---|---|

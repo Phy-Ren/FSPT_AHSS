@@ -15,22 +15,27 @@ representatives. Independent symmetry backgrounds can run in parallel.
 
 ## Computed examples
 
-The consolidated catalogue contains **1,234 completed calculation records**:
+The catalogue contains **1,190 distinct examples**, with repeated calculations
+and equivalent background representatives merged in the reader tables:
 
-| Collection | Records |
+| Collection | Distinct examples |
 | --- | ---: |
 | 3+1D space groups, both crystalline spin conventions | 460 |
 | 3+1D crystallographic point groups, both conventions | 64 |
 | 1+1D finite internal symmetries and controls | 6 |
-| 2+1D finite internal symmetries and controls | 17 |
-| 3+1D finite internal symmetries and controls | 78 |
-| 4+1D finite internal symmetries and controls | 609 |
+| 2+1D finite internal symmetries and controls | 16 |
+| 3+1D finite internal symmetries and controls | 72 |
+| 4+1D finite internal symmetries and controls | 572 |
 
-Historical names, coordinate representatives and independently repeated controls
-remain identifiable. These records have 1,229 distinct literal input/scope keys;
-this is not a count of inequivalent physical symmetries. The catalogue also links
-the earlier cochain and geometric calibration examples. All 398 planned finite
-campaign inputs have complete acceptance; no pending input remains.
+The [4+1D results](results/computed_examples/tables/internal_4d.md) are divided
+into seven symmetry families. Each background appears once. The
+[unique example index](results/computed_examples/unique_examples.json) connects
+these reader entries to all **1,234 retained calculation records**, including
+44 additional verification or alias records. Background identifications are
+checked through explicit group maps, gradings and cocycle section changes;
+equal final groups alone are never a reason to merge examples. Numbered
+crystalline groups and their two physical spin conventions remain distinct.
+All 398 planned finite campaign inputs have complete acceptance.
 
 Every finite background specifies the bosonic quotient group, its multiplication
 table, antiunitary grading $s_1$, and normalized fermion-parity cocycle

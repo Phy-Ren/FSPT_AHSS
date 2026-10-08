@@ -160,8 +160,11 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--check',action='store_true');args=ap.parse_args()
     raw=(HERE/'index.json').read_bytes();index=json.loads(raw)
     groups=defaultdict(list)
-    for r in index['cases']:
-        if r['dimension']==3 and r['symmetry_kind']=='finite_internal':groups[r['deduplication_key']].append(r)
+    unique=json.loads((HERE/'unique_examples.json').read_text())
+    lookup={r['id']:r for r in index['cases']}
+    for e in unique['examples']:
+        if e['dimension']==3 and e['symmetry_kind']=='finite_internal':
+            groups[e['example_key']]=[lookup[i] for i in e['calculation_records']]
     rows=[]
     for records in groups.values():
         records.sort(key=lambda r: (r['id'].startswith('d3_E'),r['id']))
@@ -169,7 +172,7 @@ def main():
         if m['group'] in META:display=metacyclic(e)
         elif m['group'].startswith('C') and m['group']!='CentralC8Q8' or m['group']=='V4':display=abelian(e)
         else:display=special(e)
-        bott=next((x['id'][4:] for x in records if x['id'].startswith('d3_E')),None)
+        bott=r['id'][4:] if r['id'].startswith('d3_E') else None
         if bott is not None:
             p,q=map(int,bott)
             assert display['orders']==[2]*(p+q)
@@ -192,13 +195,13 @@ def main():
             hand_calculation=r['id']=='d3_C2_w1_s1')
         rows.append(row)
     rows.sort(key=lambda r:(r['order'],r['group'],r['case']))
-    assert len(rows)==77 and sum(len(r['alias_records']) for r in rows)==78
-    result=dict(schema='fspt-symbolic-3d-backgrounds-v1',records=rows,record_count=77,named_record_count=78,
-        additional_beyond_hand_calculation=76,catalog_sha256=sha(raw),
+    assert len(rows)==72 and sum(len(r['alias_records']) for r in rows)==78
+    result=dict(schema='fspt-symbolic-3d-backgrounds-v1',records=rows,record_count=72,named_record_count=78,
+        additional_beyond_hand_calculation=71,catalog_sha256=sha(raw),
         convention='Group subscripts specify their order. Binary characters evaluate on the listed generators. Displayed cocycles and saved literal cocycles are related by the provided exact section one-cochain; final filtered groups are unchanged.',
         abelian_carry_definition='eta_i(u,v)=floor((u_i+v_i)/m_i) mod 2, x_i(u)=u_i mod 2.',
         metacyclic_cocycle_definition='For g=r^i t^j and h=r^i_prime t^j_prime, omega_(alpha,beta,gamma)(g,h)=alpha floor((i+a^j i_prime+k*j*j_prime)/m)+beta*j*j_prime+gamma*j*i_prime mod 2; 0<=i,i_prime<m and j,j_prime in {0,1}.',
-        scope='A publication translation of all accepted finite internal 3+1D rows, with exact pairwise section checks; no recomputation of classification or stacking.')
+        scope='A publication translation of all accepted finite internal 3+1D backgrounds. The unique example index retains exact isomorphism and section witnesses for merged records; no recomputation of classification or stacking.')
     stream=io.StringIO(newline='');fields=['case','aliases','Gb','order','s1','omega2','lift_bits','pip','majorana','complex_fermion','bosonic','stacking_group','hand_calculation','input_catalog']
     w=csv.DictWriter(stream,fieldnames=fields,lineterminator='\n');w.writeheader()
     for r in rows:
@@ -210,7 +213,7 @@ def main():
         target=HERE/name
         if args.check:assert target.read_text()==data,name
         else:target.write_text(data)
-    print(json.dumps(dict(status='passed',distinct_3d_backgrounds=77,named_records=78,additional_beyond_hand=76,
+    print(json.dumps(dict(status='passed',distinct_3d_backgrounds=72,named_records=78,additional_beyond_hand=71,
         literal_pair_section_checks=sum(r['background_display'].get('witness',{}).get('all_ordered_pairs_verified',0) for r in rows))))
 
 if __name__=='__main__':main()

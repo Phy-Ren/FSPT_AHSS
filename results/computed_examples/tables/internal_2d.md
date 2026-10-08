@@ -1,6 +1,6 @@
 # 2+1D finite internal symmetries
 
-17 retained named calculations. Group arrays in the CSV are invariant factors.
+16 distinct examples. Repeated calculations are retained only as verification provenance in the unique example index. Group arrays in the CSV are invariant factors.
 
 | Input | Dimension | Gb | Grading / crystalline spin | omega2 representative | p+ip | Majorana | CF | Bosonic | Stacking group |
 |---|---|---|---|---|---|---|---|---|---|
@@ -20,7 +20,6 @@
 | [d2_E13](../inputs/d2_E13.json) | 2+1D | C2^4 | [1, 1, 1, 1] | nonzero ([exact input](../inputs/d2_E13.json)) | 0 | 0 | 0 | Z2^9 | Z2^9 |
 | [d2_E22](../inputs/d2_E22.json) | 2+1D | C2^4 | [1, 1, 1, 1] | nonzero ([exact input](../inputs/d2_E22.json)) | 0 | 0 | Z2 | Z2^9 | Z2^8 x Z4 |
 | [d2_E31](../inputs/d2_E31.json) | 2+1D | C2^4 | [1, 1, 1, 1] | nonzero ([exact input](../inputs/d2_E31.json)) | 0 | 0 | 0 | Z2^9 | Z2^9 |
-| [d2_E40](../inputs/d2_E40.json) | 2+1D | C2^4 | [1, 1, 1, 1] | nonzero ([exact input](../inputs/d2_E40.json)) | 0 | 0 | 0 | Z2^9 | Z2^9 |
 
 The four layer columns are final filtration quotients; their direct product need not be the stacking group.
 Finite input links fix the full multiplication table, grading and parity-extension cocycle. A nonzero representative of omega is not by itself a claim that its cohomology class is nontrivial.

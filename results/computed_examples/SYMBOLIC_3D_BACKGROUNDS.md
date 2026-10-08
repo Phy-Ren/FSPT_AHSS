@@ -1,12 +1,14 @@
 # Explicit finite internal backgrounds in 3+1D
 
-The [symbolic table](tables/internal_3d_symbolic.csv) lists all **77 distinct
-literal backgrounds** in the 78 named finite 3+1D records. The
-[JSON version](tables/internal_3d_symbolic.json) retains the exact saved input,
-aliases, final filtration and stacking group, and the section change to each
-short cocycle below. The two names `d3_C2_w1_s1` and `d3_E01` share the same
-input. This is the hand-calculated $\mathbb Z_4^{f,T}$ example; the other
-76 backgrounds are additional examples.
+The [symbolic table](tables/internal_3d_symbolic.csv) lists **72 distinct
+backgrounds** from the 78 named finite 3+1D records. The
+[JSON version](tables/internal_3d_symbolic.json) retains the exact selected
+input, all aliases, final filtration and stacking group, and the section
+change to each short cocycle below. The [unique example index](unique_examples.json)
+provides the explicit group and section maps identifying equivalent saved
+backgrounds, including automorphism-related gradings. One row is the
+hand-calculated $\mathbb Z_4^{f,T}$ example; the other 71 are additional
+backgrounds. Different literal arrays or historical names do not create new rows.
 
 The notation specifies the bosonic quotient $G_b$, its antiunitary character
 $s_1$, and the central fermion-parity extension $\omega_2$. Group subscripts
@@ -125,7 +127,7 @@ $$
  +\lambda(g)+\lambda(h)+\lambda(gh)\pmod2.
 $$
 
-The generator verifies 15,205 pair identities in total, all generator orders
+The generator verifies 14,549 pair identities in total, all generator orders
 and defining relations used above, and the binary gradings. This is a
 translation of saved exact backgrounds, not a new classification calculation.
 No original numerical result or literal input is changed. Rebuild or verify:

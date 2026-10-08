@@ -23,6 +23,13 @@ associated-graded results are not substituted for the current full stacking
 groups. Formula availability and coordinate conventions for the current
 3+1D/4+1D implementation are stated in the canonical formula guide.
 
+Current reader tables merge equivalent backgrounds and repeated runs;
+all original numerical records remain in their source archives. The
+[unique index](../results/computed_examples/unique_examples.json) records
+this distinction: 1,190 reader examples account for 1,234 retained calculations.
+Generated tables from earlier organizations are replaced by the current
+views, rather than retained as competing result lists.
+
 The archive manifests remain useful for checking their original contents.
 `ORGANIZATION_MANIFEST.json` records the separate documentation/catalogue
 overlay, rather than rewriting those earlier manifests.

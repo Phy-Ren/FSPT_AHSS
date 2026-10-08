@@ -1,32 +1,36 @@
 # Computed classification and stacking examples
 
-This catalog collects **1,234 accepted named calculations** with their exact
-inputs, final layer quotients and full stacking groups. It combines the existing
-832-record complete-formula release with all 398 accepted inputs from the subsequent
-398-input campaign and four separately completed controls. The five examples in
-the October 2 supplement are part of the 398 and are counted once.
-The acceptance cutoff for this catalog is **7 October 2026, 15:11 UTC**.
+This catalog contains **1,190 distinct computed examples** and retains all
+**1,234 accepted calculation records** as their provenance. Repeated runs,
+group relabelings and equivalent cocycle representatives do not create new
+reader rows. The acceptance cutoff is **7 October 2026, 15:11 UTC**.
 
-| Collection | Named calculations | Tables |
+| Collection | Distinct examples | Tables |
 |---|---:|---|
 | 3+1D space groups, crystalline spin-1/2 | 230 | [Markdown](tables/space_groups_spin_half.md) / [CSV](tables/space_groups_spin_half.csv) |
 | 3+1D space groups, crystalline spinless | 230 | [Markdown](tables/space_groups_spinless.md) / [CSV](tables/space_groups_spinless.csv) |
 | 3+1D point groups, both crystalline conventions | 64 | [Markdown](tables/point_groups.md) / [CSV](tables/point_groups.csv) |
 | 1+1D finite internal controls | 6 | [Markdown](tables/internal_1d.md) / [CSV](tables/internal_1d.csv) |
-| 2+1D finite internal controls | 17 | [Markdown](tables/internal_2d.md) / [CSV](tables/internal_2d.csv) |
-| 3+1D finite internal symmetries | 78 | [Markdown](tables/internal_3d.md) / [CSV](tables/internal_3d.csv) |
-| 4+1D finite internal symmetries | 609 | [Markdown](tables/internal_4d.md) / [CSV](tables/internal_4d.csv) |
+| 2+1D finite internal controls | 16 | [Markdown](tables/internal_2d.md) / [CSV](tables/internal_2d.csv) |
+| 3+1D finite internal symmetries | 72 | [Markdown](tables/internal_3d.md) / [CSV](tables/internal_3d.csv) |
+| 4+1D finite internal symmetries | 572 | [Seven family tables](tables/internal_4d.md) / [CSV](tables/internal_4d.csv) |
 
-Browse the [finite group families](tables/families.md), the overlapping
-[symmetry calibration controls](tables/calibration_controls.md), or the
-[machine-readable index](index.json). All **398/398 planned finite-campaign inputs** have complete acceptance.
-The [campaign status](PENDING.md) records that no pending input remains.
-The final additions are 4+1D `D8xC2_orbit_074`, `_091`, and `_092`.
+The [4+1D family tables](tables/internal_4d.md) place every background in
+exactly one family. The lower-dimensional [family views](tables/families.md)
+and [control view](tables/calibration_controls.md) are alternative ways to
+browse the same examples; their counts are not added to the table above.
+The [unique example index](unique_examples.json) connects each reader entry to
+its saved calculations. The original [calculation index](index.json) retains
+all names and numerical provenance, including 44 additional records of
+backgrounds already represented.
 
-The separate completed controls are signed split C8 in 3+1D, split SD16 in
-3+1D and 4+1D, and Pin+ times C16 in 4+1D. The earlier release already includes
-the Bott-family controls and lower-dimensional endpoints. Computed cochain and
-geometric checks remain available in the [calibration collection](../finite_examples/calibrations/README.md).
+All **398/398 planned finite-campaign inputs** have complete acceptance;
+[no pending input remains](PENDING.md). The original 832-record release,
+398-input campaign and four separately completed controls are all covered.
+The October 2 supplement belongs to the campaign and is counted once.
+Cochain and geometric checks have a different scope; the
+[4+1D calibration guide](CALIBRATIONS_4D.md) lists them separately, including
+the current exact check of the handwritten $\mathbb Z_4^f$ representatives.
 
 ## Exact inputs and conventions
 
@@ -56,18 +60,29 @@ direct product need not be the full stacking group. For the two explicitly
 labelled zero-chiral 2+1D controls, the main result is the zero-chiral fiber;
 the index separately records its abstract chiral completion.
 
-The 1,234 records contain **1,229 distinct literal input/scope keys**. Five
-identical-input pairs are linked in [exact_input_aliases.json](exact_input_aliases.json).
-Historical names and calculations are retained. The 78 finite 3+1D named
-records contain 77 literal backgrounds; the corresponding [symbolic background
-table](tables/internal_3d_symbolic.csv) and [complete section witnesses](tables/internal_3d_symbolic.json)
-provide short explicit cocycles, final layers and groups for manuscript use.
-The [background definitions](SYMBOLIC_3D_BACKGROUNDS.md) explain those symbols.
-This count does not identify
-all isomorphic groups, automorphism-related backgrounds or cocycles differing
-by a section change. Previously certified coordinate dictionaries remain in
-the [historical aliases](../complete_formulas/catalog/historical_aliases.json)
-and [transformations](../complete_formulas/catalog/historical_transformations.json).
+The unique index groups finite examples at fixed dimension and calculation
+scope by a verified isomorphism of $(G_b,s_1,[\omega_2])$. Every merge has an
+explicit group map and a section one-cochain; multiplication, grading and
+cocycle transport are checked on all group-element pairs. Stacking groups
+and final filtrations agree across every merged set. The
+[4+1D coverage ledger](COVERAGE_4D.json) also verifies that the 572 retained
+backgrounds are pairwise distinct. The numbered crystalline inputs and
+physical spin conventions are preserved separately.
+
+The 78 named finite 3+1D records become **72 distinct backgrounds**. The
+[symbolic table](tables/internal_3d_symbolic.csv),
+[section witnesses](tables/internal_3d_symbolic.json) and
+[background definitions](SYMBOLIC_3D_BACKGROUNDS.md) give short explicit
+cocycles for manuscript use. One row is the handwritten
+$\mathbb Z_4^{f,T}$ example; the other 71 are additional backgrounds.
+The 609 named 4+1D records become **572 backgrounds**, with their symbols
+specified in the [4+1D background definitions](FOUR_DIMENSIONAL_BACKGROUNDS.md).
+
+The earlier [literal-input alias list](exact_input_aliases.json),
+[historical aliases](../complete_formulas/catalog/historical_aliases.json)
+and [transformations](../complete_formulas/catalog/historical_transformations.json)
+remain provenance. Literal-array equality is a weaker deduplication criterion
+than the background equivalence used in the current tables.
 
 ## Saved results and reproduction
 
@@ -96,13 +111,16 @@ occurs after the new calculation. Add `--dry-run` to inspect the command without
 calculating. Runtime depends strongly on the group, resolution and configured
 coherence checks.
 
-Rebuild or verify the readable tables without GAP:
+Verify the readable tables and cochain check without GAP (omit `--check` on
+the table builders to regenerate in the same order):
 
 ```sh
-python3 results/computed_examples/rebuild_tables.py
+python3 results/computed_examples/rebuild_symbolic_4d.py --check
+python3 results/computed_examples/rebuild_unique_examples.py --check
 python3 results/computed_examples/rebuild_tables.py --check
 python3 results/computed_examples/rebuild_symbolic_3d.py --check
 python3 results/computed_examples/validate_catalog.py
+python3 scripts/check_z4f_current_cochains.py
 python3 results/computed_examples/rebuild_manifest.py --check
 ```
 
