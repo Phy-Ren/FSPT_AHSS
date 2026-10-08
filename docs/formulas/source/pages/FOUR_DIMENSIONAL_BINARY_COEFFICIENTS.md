@@ -211,7 +211,7 @@ The binary quarter numerator is the sum of the following coefficients:
 
 ```math
 \begin{aligned}
-\mathcal V_{5;r}={}&\sum_{i\vee j=r}\big[
+V_{5;r}={}&\sum_{i\vee j=r}\big[
  \bar B_{4;i}\cup_3\bar B_{4;j}'+d\bar B_{4;i}\cup_4\bar B_{4;j}'
  +(\bar B_{4;i}+\bar B_{4;i}')\cup_3[d\bar\lambda_{3;j}+\mathbf1_{j=\psi}\bar n'_2\bar n_2]
  +(d\bar B_{4;i}+d\bar B_{4;i}')\cup_4[d\bar\lambda_{3;j}+\mathbf1_{j=\psi}\bar n'_2\bar n_2]\\
@@ -242,8 +242,8 @@ Then set
 
 ```math
 \begin{aligned}
-\mathcal D_{6;\gamma}={}&\sum_j^{\pm}[Q(B_{4;\gamma}^{(j)})+\omega_2 B_{4;\gamma}^{(j)}]-d_{s_1}\bar{\mathcal V_{5;\gamma}},\\
-\mathcal D_{6;\psi}={}&\sum_j^{\pm}[Q(B_{4;\psi}^{(j)})+\omega_2 B_{4;\psi}^{(j)}]-d_{s_1}\bar{\mathcal V_{5;\psi}}\\
+\mathcal D_{6;\gamma}={}&\sum_j^{\pm}[Q(B_{4;\gamma}^{(j)})+\omega_2 B_{4;\gamma}^{(j)}]-d_{s_1}\bar{V_{5;\gamma}},\\
+\mathcal D_{6;\psi}={}&\sum_j^{\pm}[Q(B_{4;\psi}^{(j)})+\omega_2 B_{4;\psi}^{(j)}]-d_{s_1}\bar{V_{5;\psi}}\\
 &-\Delta\overline{\big[
  \mathop{\mathrm{MS}}\nolimits_{12132434}(\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
  +\widetilde{\beta_{s_1}\check\omega_2}(\bar n_2\cup_1\bar n_2)
@@ -251,7 +251,7 @@ Then set
 &+\check\omega_2(n'_2n_2)+(\beta_{s_1}\check\omega_2)(n_2\cup_1n'_2),\\
 \mathcal D_{6;\gamma\psi}={}&\sum_j^{\pm}[Q(B_{4;\gamma\psi}^{(j)})+\omega_2 B_{4;\gamma\psi}^{(j)}
  +C(B_{4;\gamma}^{(j)},B_{4;\gamma\psi}^{(j)})+C(B_{4;\gamma}^{(j)},B_{4;\psi}^{(j)})
- +C(B_{4;\gamma\psi}^{(j)},B_{4;\psi}^{(j)})]-d_{s_1}\bar{\mathcal V_{5;\gamma\psi}}.
+ +C(B_{4;\gamma\psi}^{(j)},B_{4;\psi}^{(j)})]-d_{s_1}\bar{V_{5;\gamma\psi}}.
 \end{aligned}
 ```
 
@@ -265,7 +265,7 @@ The three binary coefficients of the divided numerator are
 \mathcal C_{6;\gamma}&=\widetilde{\mathcal D_{6;\gamma}},\qquad \mathcal C_{6;\psi}=\widetilde{\mathcal D_{6;\psi}},\\
 \mathcal C_{6;\gamma\psi}&=\widetilde{\mathcal D_{6;\gamma\psi}}+\bar{\mathcal D_{6;\gamma}}\cup_6\bar{\mathcal D_{6;\gamma\psi}}
  +\bar{\mathcal D_{6;\gamma}}\cup_6\bar{\mathcal D_{6;\psi}}+\bar{\mathcal D_{6;\gamma\psi}}\cup_6\bar{\mathcal D_{6;\psi}}
- +d[\mathcal V_{5;\gamma}\cup_5\mathcal V_{5;\gamma\psi}+\mathcal V_{5;\gamma}\cup_5\mathcal V_{5;\psi}+\mathcal V_{5;\gamma\psi}\cup_5\mathcal V_{5;\psi}].
+ +d[V_{5;\gamma}\cup_5V_{5;\gamma\psi}+V_{5;\gamma}\cup_5V_{5;\psi}+V_{5;\gamma\psi}\cup_5V_{5;\psi}].
 \end{aligned}
 ```
 

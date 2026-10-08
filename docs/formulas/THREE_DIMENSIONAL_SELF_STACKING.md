@@ -78,7 +78,7 @@ The term $`d\check n_2`$ must be retained.
 For $`n_1=0`$, the complete bosonic output is
 
 ```math
-\widehat\nu_4^{\mathrm{out}}
+\widehat{\mathcal V}_4
  =2\widehat\nu_4+
    \widehat{\mathcal{ℰ}}_{4}^c+
    \widehat{\mathcal{ℰ}}_{4}^{c\gamma}+
@@ -133,7 +133,7 @@ The complete bosonic output, before the integer gauge, is
 
 ```math
 \begin{aligned}
-\widehat\nu_4^{\mathrm{out}}
+\widehat{\mathcal V}_4
  &=2\widehat\nu_4+\widehat{\mathcal{ℰ}}_{4},\\
 \widehat{\mathcal{ℰ}}_{4}
  &=\widehat{\mathcal{ℰ}}_{4}^c

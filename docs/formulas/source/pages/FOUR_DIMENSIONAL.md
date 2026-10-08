@@ -305,7 +305,7 @@ linear sums and the three quarter numerators adds **1,262 terms**, giving
 their scopes; their complete interior terms are recorded separately in
 the coefficient table.
 
-The three products of $`\mathcal V`$ retain the carry from the canonical
+The three products of the binary numerators retain the carry from the canonical
 integer lift of their binary sum. They cannot be dropped when splitting a
 quarter-valued contribution into physical parts.
 
@@ -342,6 +342,10 @@ The three binary quarter numerators are expanded below. Their sum is the origina
 
 
 <a id="eq-t4b"></a>
+
+The binary quarter numerators are denoted by $`V_5`$ and its physical
+contributions below. The calligraphic $`\mathcal V_5`$ denotes the
+stacked bosonic phase.
 
 ##### Majorana quarter numerator
 
@@ -382,8 +386,8 @@ retains its scope: the mixed and pure lifts have respectively 39 and 20
 terms inside them, and cannot be replaced by sums of individual lifts.
 
 Their sum is exactly the original binary numerator
-$`\mathcal V_5=\mathcal V_5^\gamma+\mathcal V_5^{\gamma\psi}
-+\mathcal V_5^\psi`$. Splitting its canonical integer lift produces the
+$`V_5=V_5^\gamma+V_5^{\gamma\psi}
++V_5^\psi`$. Splitting its canonical integer lift produces the
 three half-valued carry terms already included in
 $`\widehat{\mathcal{ℰ}}_5^{\gamma\psi}`$.
 

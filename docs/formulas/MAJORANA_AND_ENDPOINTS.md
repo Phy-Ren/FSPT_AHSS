@@ -172,7 +172,7 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 
 ```math
 \begin{aligned}
-\widehat\nu_3^{\mathrm{out}}
+\widehat{\mathcal V}_3
  &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal{ℰ}}_3,\\
 \widehat{\mathcal{ℰ}}_3
  &=\widehat{\mathcal{ℰ}}^{c}_3
@@ -424,7 +424,7 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 
 ```math
 \begin{aligned}
-\widehat\nu_4^{\mathrm{out}}
+\widehat{\mathcal V}_4
  &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4,\\
 \widehat{\mathcal{ℰ}}_4
  &=\widehat{\mathcal{ℰ}}^{c}_4
@@ -664,7 +664,7 @@ N_4=n_4+n'_4+\mathcal{ℰ}_4,\qquad
 
 ```math
 \begin{aligned}
-\widehat\nu_5^{\mathrm{out}}
+\widehat{\mathcal V}_5
  &=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal{ℰ}}_5,\\
 \widehat{\mathcal{ℰ}}_5
  &=\widehat{\mathcal{ℰ}}^{c}_5
@@ -862,7 +862,7 @@ N_1=n_1+n'_1+\mathcal{ℰ}_1,\qquad
 
 ```math
 \begin{aligned}
-\widehat\nu_2^{\mathrm{out}}
+\widehat{\mathcal V}_2
  &=\widehat\nu_2+\widehat\nu'_2+\widehat{\mathcal{ℰ}}_2,\\
 \widehat{\mathcal{ℰ}}_2
  &=\widehat{\mathcal{ℰ}}^{c}_2

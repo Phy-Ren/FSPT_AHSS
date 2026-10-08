@@ -45,7 +45,7 @@
 | D5 | 1 | [Markdown](families/D5.md) / [CSV](families/D5.csv) |
 | D6 | 3 | [Markdown](families/D6.md) / [CSV](families/D6.csv) |
 | D8 | 23 | [Markdown](families/D8.md) / [CSV](families/D8.csv) |
-| D8xC2 | 90 | [Markdown](families/D8xC2.md) / [CSV](families/D8xC2.csv) |
+| D8xC2 | 93 | [Markdown](families/D8xC2.md) / [CSV](families/D8xC2.csv) |
 | M16 | 24 | [Markdown](families/M16.md) / [CSV](families/M16.csv) |
 | Meta32_action3_t4r4 | 2 | [Markdown](families/Meta32_action3_t4r4.md) / [CSV](families/Meta32_action3_t4r4.csv) |
 | Q16 | 22 | [Markdown](families/Q16.md) / [CSV](families/Q16.csv) |

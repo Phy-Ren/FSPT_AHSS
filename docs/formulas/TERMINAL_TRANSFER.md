@@ -108,7 +108,7 @@ guide, not additional input fields.
  +s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\end{gathered}\right]}\\
 &\qquad+\check\omega_2(n'_2n_2)
  +(\beta_{s_1}\check\omega_2)(n_2\cup_1n'_2)
- -d_{s_1}\mathcal V_5\Big\}
+ -d_{s_1}V_5\Big\}
  \pmod2.
 \end{aligned}
 ```
@@ -122,7 +122,7 @@ expanded. This rewriting leaves the kernel and its coefficient tables unchanged.
 Every derivative differentiates a specified expression. In the binary
 part, $`d\overline{B_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and
 $`d\check{\mathcal{ℰ}}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
-Inside the final integer braces, $`d_{s_1}\mathcal V_5`$ differentiates the
+Inside the final integer braces, $`d_{s_1}V_5`$ differentiates the
 canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
 inputs, including $`B_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The bar on
 the polynomial following the minus sign is taken **before** its signed
@@ -362,7 +362,7 @@ D^0_5=\frac12\Big\{&
 &+\zeta^{\mathbb Z}_{2,2}(n'_2,n_2)
  -\binom{n'_2}2(n_2\cup_1n_2)\\
 &-3\big[(n_2+2n'_2)(n_2\cup_1n'_2)
- +(n_2\cup_1n'_2)(2n_2+n'_2)\big]-\mathcal V_{5,0}\\
+ +(n_2\cup_1n'_2)(2n_2+n'_2)\big]-V_{5,0}\\
 &-d\overline{\big[\check n'_3\cup_1\bar n_2
  +\bar n'_2\cup_1\check{\mathcal{ℰ}}_3
  +\mathop{\mathrm{MS}}\nolimits_{23123}(\bar n_2,\bar n'_2,\bar n'_2)\big]}\\
@@ -379,7 +379,7 @@ polynomial
  =n'_2(012)n'_2(023)n_2(235)n_2(345).
 ```
 
-$`\mathcal V_{5,0}`$ is the binary polynomial (T4b) at
+$`V_{5,0}`$ is the binary polynomial (T4b) at
 $`\omega_2=s_1=0`$, supplying its canonical value $`0,1`$ to the integer
 numerator. The same rule applies to each barred expression. In particular,
 $`d`$ in the fourth line is the **integer** differential after reduction

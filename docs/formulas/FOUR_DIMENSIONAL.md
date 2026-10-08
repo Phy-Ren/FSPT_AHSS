@@ -377,7 +377,7 @@ The two finite polynomials in this contribution are
 
 ```math
 \begin{aligned}
-\widehat\nu_5^{\mathrm{out}}
+\widehat{\mathcal V}_5
  &=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal{ℰ}}_5,\\
 \widehat{\mathcal{ℰ}}_5
  &=\widehat{\mathcal{ℰ}}_5^c
@@ -534,11 +534,11 @@ The [integer-carry derivation](FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md) exp
 &\quad+\bar N_2\big[
   \check n_3\cup_3\check n'_3
   +(\check n_3+\check n'_3)\cup_3\check{\mathcal{ℰ}}_3\big]\\
-&\quad+\mathcal V_5^\gamma\cup_5\mathcal V_5^{\gamma\psi}
- +\mathcal V_5^\gamma\cup_5\mathcal V_5^\psi
- +\mathcal V_5^{\gamma\psi}\cup_5\mathcal V_5^\psi\Big]\\
+&\quad+V_5^\gamma\cup_5V_5^{\gamma\psi}
+ +V_5^\gamma\cup_5V_5^\psi
+ +V_5^{\gamma\psi}\cup_5V_5^\psi\Big]\\
 &+\frac14\Big[
- \overline{\mathcal V_5^{\gamma\psi}}
+ \overline{V_5^{\gamma\psi}}
  +n_2\check n'_3+n'_2\check n_3\Big].
 \end{aligned}
 ```
@@ -552,7 +552,7 @@ linear sums and the three quarter numerators adds **1,262 terms**, giving
 their scopes; their complete interior terms are recorded separately in
 the coefficient table.
 
-The three products of $`\mathcal V`$ retain the carry from the canonical
+The three products of the binary numerators retain the carry from the canonical
 integer lift of their binary sum. They cannot be dropped when splitting a
 quarter-valued contribution into physical parts.
 
@@ -575,7 +575,7 @@ quarter-valued contribution into physical parts.
 &\quad+\check{\mathcal{ℰ}}_3(\bar n_2+\bar n'_2)
  +\check\omega_2\check{\mathcal{ℰ}}_3\Big]\\
 &+\frac14\Big[
- \overline{\mathcal V_5^\psi}
+ \overline{V_5^\psi}
  +N_2\check{\mathcal{ℰ}}_3
  +(n_2\cup_1\check\omega_2)n'_2
  +(n'_2\cup_1\check\omega_2)n_2\Big]\\
@@ -627,16 +627,16 @@ The three binary quarter numerators are expanded below. Their sum is the origina
 
 ```math
 \begin{aligned}
-\frac14\overline{\mathcal V_5^\gamma
-                  +\mathcal V_5^{\gamma\psi}+\mathcal V_5^\psi}
+\frac14\overline{V_5^\gamma
+                  +V_5^{\gamma\psi}+V_5^\psi}
 ={}&\frac14\big[
- \overline{\mathcal V_5^\gamma}
- +\overline{\mathcal V_5^{\gamma\psi}}
- +\overline{\mathcal V_5^\psi}\big]\\
+ \overline{V_5^\gamma}
+ +\overline{V_5^{\gamma\psi}}
+ +\overline{V_5^\psi}\big]\\
 &+\frac12\big[
- \mathcal V_5^\gamma\cup_5\mathcal V_5^{\gamma\psi}
- +\mathcal V_5^\gamma\cup_5\mathcal V_5^\psi
- +\mathcal V_5^{\gamma\psi}\cup_5\mathcal V_5^\psi\big]
+ V_5^\gamma\cup_5V_5^{\gamma\psi}
+ +V_5^\gamma\cup_5V_5^\psi
+ +V_5^{\gamma\psi}\cup_5V_5^\psi\big]
  \pmod1.
 \end{aligned}
 ```
@@ -644,12 +644,16 @@ The three binary quarter numerators are expanded below. Their sum is the origina
 
 <a id="eq-t4b"></a>
 
+The binary quarter numerators are denoted by $`V_5`$ and its physical
+contributions below. The calligraphic $`\mathcal V_5`$ denotes the
+stacked bosonic phase.
+
 ##### Majorana quarter numerator
 
 
 ```math
 \begin{aligned}
-\mathcal V_5^\gamma={}&
+V_5^\gamma={}&
  \bar B_4^\gamma\cup_3\bar B_4^{\gamma\prime}
  +d\bar B_4^\gamma\cup_4\bar B_4^{\gamma\prime}\\
 &+(\bar B_4^\gamma+\bar B_4^{\gamma\prime})\cup_3d\bar\lambda_3^\gamma
@@ -672,7 +676,7 @@ linear sums.
 
 ```math
 \begin{aligned}
-\mathcal V_5^{\gamma\psi}={}&
+V_5^{\gamma\psi}={}&
  \bar B_4^\gamma\cup_3\bar B_4^{\psi\prime}
  +d\bar B_4^\gamma\cup_4\bar B_4^{\psi\prime}
  +\bar B_4^\psi\cup_3\bar B_4^{\gamma\prime}
@@ -713,7 +717,7 @@ protected-quotient convention.
 
 ```math
 \begin{aligned}
-\mathcal V_5^\psi={}&
+V_5^\psi={}&
  \bar B_4^\psi\cup_3\bar B_4^{\psi\prime}
  +d\bar B_4^\psi\cup_4\bar B_4^{\psi\prime}\\
 &+(\bar B_4^\psi+\bar B_4^{\psi\prime})
@@ -740,8 +744,8 @@ retains its scope: the mixed and pure lifts have respectively 39 and 20
 terms inside them, and cannot be replaced by sums of individual lifts.
 
 Their sum is exactly the original binary numerator
-$`\mathcal V_5=\mathcal V_5^\gamma+\mathcal V_5^{\gamma\psi}
-+\mathcal V_5^\psi`$. Splitting its canonical integer lift produces the
+$`V_5=V_5^\gamma+V_5^{\gamma\psi}
++V_5^\psi`$. Splitting its canonical integer lift produces the
 three half-valued carry terms already included in
 $`\widehat{\mathcal{ℰ}}_5^{\gamma\psi}`$.
 

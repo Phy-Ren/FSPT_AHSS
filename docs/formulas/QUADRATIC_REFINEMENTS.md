@@ -200,7 +200,7 @@ V_5^{\mathbb Z}={}&\mathcal{ℰ}^{\mathcal Q}_5
  +s_1\bar n'_2\tilde n_2
  +s_1(\bar n'_2\cup_1s_1)\bar n_2
  \Big]},\\
-\overline{V_5^{\mathbb Z}}={}&\mathcal V_5.
+\overline{V_5^{\mathbb Z}}={}&V_5.
 \end{aligned}
 ```
 
@@ -215,12 +215,12 @@ The two mixed cups outside that lift are ordinary integer products.
 The displayed lift can be used in a coupled change of the terminal
 stacking representative. More generally, the following identity holds
 for any explicitly chosen integer lift of the existing binary
-$`\mathcal V_5`$ in the [terminal formula](TERMINAL_TRANSFER.md#eq-k3).
+$`V_5`$ in the [terminal formula](TERMINAL_TRANSFER.md#eq-k3).
 Define its integral
 lift difference
 
 ```math
-\kappa_5=\frac{V_5^{\mathbb Z}-\overline{\mathcal V_5}}2.
+\kappa_5=\frac{V_5^{\mathbb Z}-\overline{V_5}}2.
 ```
 
 Suppose the existing normalized contraction is written
@@ -237,7 +237,7 @@ L_5^{\rm new}=L_5+(\mathsf{sh}^{\rm tw})^*\bar\kappa_5,
 Z_5^{\rm new}=Z_5+\bar\kappa_5+d(\mathsf h^{\rm tw})^*\bar\kappa_5.
 ```
 
-Replacing $`\overline{\mathcal V_5}/4+Z_5/2`$ by
+Replacing $`\overline{V_5}/4+Z_5/2`$ by
 $`V_5^{\mathbb Z}/4+Z_5^{\rm new}/2`$ then gives exactly
 
 <a id="paired-lift-transport"></a>

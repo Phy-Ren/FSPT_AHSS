@@ -361,7 +361,7 @@ The $`\Delta`$ acts on the entire displayed bracket with the p+ip output $`N_1`$
 
 ```math
 \begin{aligned}
-\widehat\nu_4^{\mathrm{out}}
+\widehat{\mathcal V}_4
  &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4,\\
 \widehat{\mathcal{ℰ}}_4
  &=\widehat{\mathcal{ℰ}}^{c}_4
@@ -499,8 +499,9 @@ Its intrinsic binary polynomial is
 
 ```math
 \begin{aligned}
-z^0_4(x,y)={}&\sum_{v\in\mathcal V_4}\mathop{\mathrm{MS}}\nolimits_v(x,x,y,y)
- +\mathop{\mathrm{MS}}\nolimits_{12123}(x+y,y,x\cup_2y)
+z^0_4(x,y)={}&\sum_{\substack{v\in\{12123434,12134131,12314324,12314342,\\
+                         13242412,13413142,13432412\}}}\mathop{\mathrm{MS}}\nolimits_v(x,x,y,y)\\
+&+\mathop{\mathrm{MS}}\nolimits_{12123}(x+y,y,x\cup_2y)
  +\mathop{\mathrm{MS}}\nolimits_{123131}(y,x,x\cup_1y)\\
 &+(x\cup_1y)\cup_1y
  +(\overline{\beta^\circ x}+\overline{\beta^\circ y})\cup_1(x\cup_2y)\\
@@ -508,13 +509,11 @@ z^0_4(x,y)={}&\sum_{v\in\mathcal V_4}\mathop{\mathrm{MS}}\nolimits_v(x,x,y,y)
   (\overline{\beta^\circ x}+\overline{\beta^\circ y}+y\cup_1x)\\
 &+(x\cup_1y)\cup_3(x^2+y^2)
  +y\cup_2[x\cup_1(x\cup_1y)]
- +\overline{\beta^\circ y}\cup_2\overline{\beta^\circ x},\\
-\mathcal V_4={}&\{12123434,12134131,12314324,12314342,
-                13242412,13413142,13432412\}.
+ +\overline{\beta^\circ y}\cup_2\overline{\beta^\circ x}.
 \end{aligned}
 ```
 
-The sum over $`\mathcal V_4`$ contains **seven specified MS terms**.
+The finite word sum contains **seven specified MS terms**.
 The other displayed terms of $`z_4^0`$ are outside this sum. The complete
 $`z_4^0`$ has **20 distributed terms**; the complete $`z_4^\gamma`$ has
 **37**, retaining the defined lower twister, integer carries, and whole

@@ -32,7 +32,7 @@ Its obstruction is the following fixed finite sum, with the
 The physical phase stacks as
 
 ```math
-\widehat\nu_4^{\mathrm{out}}=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4.
+\widehat{\mathcal V}_4=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4.
 ```
 
 The correction evaluates the same polynomial on the triangle fields:

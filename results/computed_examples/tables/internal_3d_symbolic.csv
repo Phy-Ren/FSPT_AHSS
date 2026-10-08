@@ -1,0 +1,78 @@
+case,aliases,Gb,order,s1,omega2,lift_bits,pip,majorana,complex_fermion,bosonic,stacking_group,hand_calculation,input_catalog
+d3_C2_w1_s0,d3_C2_w1_s0,\mathbb Z_{2},2,0,x^2,[],0,0,0,0,0,False,results/computed_examples/inputs/d3_C2_w1_s0.json
+d3_C2_w1_s1,d3_C2_w1_s1;d3_E01,\mathbb Z_{2},2,x,x^2,[],\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{16},True,results/computed_examples/inputs/d3_C2_w1_s1.json
+d3_E10,d3_E10,\mathbb Z_2^{1},2,x,0,[],0,0,0,0,0,False,results/computed_examples/inputs/d3_E10.json
+d3_C3_w0_s0,d3_C3_w0_s0,\mathbb Z_{3},3,0,0,[],0,0,0,0,0,False,results/computed_examples/inputs/d3_C3_w0_s0.json
+d3_E02,d3_E02,\mathbb Z_2^{2},4,x+y,x^2+y^2+y\cup x,[],0,\mathbb Z_{2},0,\mathbb Z_{2}^{2},\mathbb Z_{2}^{3},False,results/computed_examples/inputs/d3_E02.json
+d3_E11,d3_E11,\mathbb Z_2^{2},4,x+y,y^2+y\cup x,[],0,0,0,\mathbb Z_{2}^{2},\mathbb Z_{2}^{2},False,results/computed_examples/inputs/d3_E11.json
+d3_E20,d3_E20,\mathbb Z_2^{2},4,x+y,y\cup x,[],0,0,0,\mathbb Z_{2},\mathbb Z_{2},False,results/computed_examples/inputs/d3_E20.json
+d3_V4_wquat_s0,d3_V4_wquat_s0,\mathbb Z_2^2,4,0,x^2+y^2+y\cup x,[],0,0,0,0,0,False,results/computed_examples/inputs/d3_V4_wquat_s0.json
+d3_V4_wquat_sx,d3_V4_wquat_sx,\mathbb Z_2^2,4,x,x^2+y^2+y\cup x,[],0,\mathbb Z_{2},0,\mathbb Z_{2}^{2},\mathbb Z_{2}^{3},False,results/computed_examples/inputs/d3_V4_wquat_sx.json
+d3_E03,d3_E03,\mathbb Z_2^{3},8,x_{1}+x_{2}+x_{3},x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{2}\cup x_{1}+x_{3}\cup x_{1}+x_{3}\cup x_{2},[],0,0,\mathbb Z_{2},\mathbb Z_{2}^{4},\mathbb Z_{2}^{5},False,results/computed_examples/inputs/d3_E03.json
+d3_E12,d3_E12,\mathbb Z_2^{3},8,x_{1}+x_{2}+x_{3},x_{2}^{2}+x_{3}^{2}+x_{2}\cup x_{1}+x_{3}\cup x_{1}+x_{3}\cup x_{2},[],0,\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}^{5},\mathbb Z_{2}^{4}\times\mathbb Z_{8},False,results/computed_examples/inputs/d3_E12.json
+d3_E21,d3_E21,\mathbb Z_2^{3},8,x_{1}+x_{2}+x_{3},x_{3}^{2}+x_{2}\cup x_{1}+x_{3}\cup x_{1}+x_{3}\cup x_{2},[],0,0,0,\mathbb Z_{2}^{4},\mathbb Z_{2}^{4},False,results/computed_examples/inputs/d3_E21.json
+d3_E30,d3_E30,\mathbb Z_2^{3},8,x_{1}+x_{2}+x_{3},x_{2}\cup x_{1}+x_{3}\cup x_{1}+x_{3}\cup x_{2},[],0,0,\mathbb Z_{2},\mathbb Z_{2}^{4},\mathbb Z_{2}^{3}\times\mathbb Z_{4},False,results/computed_examples/inputs/d3_E30.json
+d3_C4xC2_orbit_007,d3_C4xC2_orbit_007,\mathbb Z_{4}\times\mathbb Z_2,8,x+y,y^2,[],\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{2}^{2},\mathbb Z_{2}^{2},\mathbb Z_{2}\times\mathbb Z_{4}\times\mathbb Z_{16},False,results/computed_examples/inputs/d3_C4xC2_orbit_007.json
+d3_C8_signed_split_s1_w0,d3_C8_signed_split_s1_w0,\mathbb Z_{8},8,x,0,[],\mathbb Z_{2},0,\mathbb Z_{2},0,\mathbb Z_{2}^{2},False,results/computed_examples/inputs/d3_C8_signed_split_s1_w0.json
+d3_D8_wref2_s0,d3_D8_wref2_s0,D_8,8,0,\omega_{010},"[0, 1, 0]",0,\mathbb Z_{2},0,\mathbb Z_{2},\mathbb Z_{2}^{2},False,results/computed_examples/inputs/d3_D8_wref2_s0.json
+d3_D8_wrot2_s0,d3_D8_wrot2_s0,D_8,8,0,\omega_{001},"[0, 0, 1]",0,0,0,\mathbb Z_{2},\mathbb Z_{2},False,results/computed_examples/inputs/d3_D8_wrot2_s0.json
+d3_Q8_w0_s0,d3_Q8_w0_s0,Q_8,8,0,0,"[0, 0, 0]",0,0,\mathbb Z_{2},0,\mathbb Z_{2},False,results/computed_examples/inputs/d3_Q8_w0_s0.json
+d3_Q8_w0_sx,d3_Q8_w0_sx,Q_8,8,x,0,"[0, 0, 0]",0,\mathbb Z_{2},0,0,\mathbb Z_{2},False,results/computed_examples/inputs/d3_Q8_w0_sx.json
+d3_Q8_w0_sx_plus_y,d3_Q8_w0_sx_plus_y,Q_8,8,x+y,0,"[0, 0, 0]",0,\mathbb Z_{2},0,0,\mathbb Z_{2},False,results/computed_examples/inputs/d3_Q8_w0_sx_plus_y.json
+d3_Q8_w0_sy,d3_Q8_w0_sy,Q_8,8,y,0,"[0, 0, 0]",0,\mathbb Z_{2},0,0,\mathbb Z_{2},False,results/computed_examples/inputs/d3_Q8_w0_sy.json
+d3_A4_w0_s0,d3_A4_w0_s0,A_4,12,0,0,[],0,0,0,0,0,False,results/computed_examples/inputs/d3_A4_w0_s0.json
+d3_A4_wbinary_s0,d3_A4_wbinary_s0,A_4,12,0,\omega_{\rm tet},[],0,0,0,0,0,False,results/computed_examples/inputs/d3_A4_wbinary_s0.json
+d3_C16_s1_w0,d3_C16_s1_w0,\mathbb Z_{16},16,x,0,[],\mathbb Z_{2},0,\mathbb Z_{2},0,\mathbb Z_{2}^{2},False,results/computed_examples/inputs/d3_C16_s1_w0.json
+d3_C16_s1_w1,d3_C16_s1_w1,\mathbb Z_{16},16,x,\eta_{1},[],0,\mathbb Z_{2},0,\mathbb Z_{2},\mathbb Z_{2}^{2},False,results/computed_examples/inputs/d3_C16_s1_w1.json
+d3_E04,d3_E04,\mathbb Z_2^{4},16,x_{1}+x_{2}+x_{3}+x_{4},x_{1}^{2}+x_{2}^{2}+x_{3}^{2}+x_{4}^{2}+x_{2}\cup x_{1}+x_{3}\cup x_{1}+x_{4}\cup x_{1}+x_{3}\cup x_{2}+x_{4}\cup x_{2}+x_{4}\cup x_{3},[],0,0,0,\mathbb Z_{2}^{13},\mathbb Z_{2}^{13},False,results/computed_examples/inputs/d3_E04.json
+d3_E13,d3_E13,\mathbb Z_2^{4},16,x_{1}+x_{2}+x_{3}+x_{4},x_{2}^{2}+x_{3}^{2}+x_{4}^{2}+x_{2}\cup x_{1}+x_{3}\cup x_{1}+x_{4}\cup x_{1}+x_{3}\cup x_{2}+x_{4}\cup x_{2}+x_{4}\cup x_{3},[],0,0,\mathbb Z_{2},\mathbb Z_{2}^{13},\mathbb Z_{2}^{14},False,results/computed_examples/inputs/d3_E13.json
+d3_E22,d3_E22,\mathbb Z_2^{4},16,x_{1}+x_{2}+x_{3}+x_{4},x_{3}^{2}+x_{4}^{2}+x_{2}\cup x_{1}+x_{3}\cup x_{1}+x_{4}\cup x_{1}+x_{3}\cup x_{2}+x_{4}\cup x_{2}+x_{4}\cup x_{3},[],0,0,0,\mathbb Z_{2}^{14},\mathbb Z_{2}^{14},False,results/computed_examples/inputs/d3_E22.json
+d3_E31,d3_E31,\mathbb Z_2^{4},16,x_{1}+x_{2}+x_{3}+x_{4},x_{4}^{2}+x_{2}\cup x_{1}+x_{3}\cup x_{1}+x_{4}\cup x_{1}+x_{3}\cup x_{2}+x_{4}\cup x_{2}+x_{4}\cup x_{3},[],0,0,0,\mathbb Z_{2}^{13},\mathbb Z_{2}^{13},False,results/computed_examples/inputs/d3_E31.json
+d3_E40,d3_E40,\mathbb Z_2^{4},16,x_{1}+x_{2}+x_{3}+x_{4},x_{2}\cup x_{1}+x_{3}\cup x_{1}+x_{4}\cup x_{1}+x_{3}\cup x_{2}+x_{4}\cup x_{2}+x_{4}\cup x_{3},[],0,0,0,\mathbb Z_{2}^{13},\mathbb Z_{2}^{13},False,results/computed_examples/inputs/d3_E40.json
+d3_C8xC2_orbit_007,d3_C8xC2_orbit_007,\mathbb Z_{8}\times\mathbb Z_2,16,x+y,y^2,[],\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{2}^{2},\mathbb Z_{2}^{2},\mathbb Z_{2}\times\mathbb Z_{4}\times\mathbb Z_{16},False,results/computed_examples/inputs/d3_C8xC2_orbit_007.json
+d3_D16_wref2_srot,d3_D16_wref2_srot,D_{16},16,x,\omega_{010},"[0, 1, 0]",\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{2}^{2},\mathbb Z_{2}^{2},\mathbb Z_{2}\times\mathbb Z_{4}\times\mathbb Z_{16},False,results/computed_examples/inputs/d3_D16_wref2_srot.json
+d3_M16_orbit_000,d3_M16_orbit_000,M_{16},16,0,0,"[0, 0, 0]",0,\mathbb Z_{2},0,\mathbb Z_{2},\mathbb Z_{4},False,results/computed_examples/inputs/d3_M16_orbit_000.json
+d3_M16_orbit_001,d3_M16_orbit_001,M_{16},16,0,\omega_{010},"[0, 1, 0]",0,0,0,0,0,False,results/computed_examples/inputs/d3_M16_orbit_001.json
+d3_M16_orbit_002,d3_M16_orbit_002,M_{16},16,0,\omega_{001},"[0, 0, 1]",0,0,0,\mathbb Z_{2},\mathbb Z_{2},False,results/computed_examples/inputs/d3_M16_orbit_002.json
+d3_M16_orbit_003,d3_M16_orbit_003,M_{16},16,0,\omega_{011},"[0, 1, 1]",0,0,0,\mathbb Z_{2},\mathbb Z_{2},False,results/computed_examples/inputs/d3_M16_orbit_003.json
+d3_M16_orbit_004,d3_M16_orbit_004,M_{16},16,x+y,0,"[0, 0, 0]",0,0,0,\mathbb Z_{2},\mathbb Z_{2},False,results/computed_examples/inputs/d3_M16_orbit_004.json
+d3_M16_orbit_005,d3_M16_orbit_005,M_{16},16,x+y,\omega_{010},"[0, 1, 0]",\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}\times\mathbb Z_{16},False,results/computed_examples/inputs/d3_M16_orbit_005.json
+d3_M16_orbit_006,d3_M16_orbit_006,M_{16},16,x+y,\omega_{001},"[0, 0, 1]",0,\mathbb Z_{2},0,\mathbb Z_{2},\mathbb Z_{4},False,results/computed_examples/inputs/d3_M16_orbit_006.json
+d3_M16_orbit_007,d3_M16_orbit_007,M_{16},16,x+y,\omega_{011},"[0, 1, 1]",0,\mathbb Z_{2}^{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}\times\mathbb Z_{8},False,results/computed_examples/inputs/d3_M16_orbit_007.json
+d3_M16_orbit_008,d3_M16_orbit_008,M_{16},16,x,0,"[0, 0, 0]",\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}^{2}\times\mathbb Z_{4},False,results/computed_examples/inputs/d3_M16_orbit_008.json
+d3_M16_orbit_009,d3_M16_orbit_009,M_{16},16,x,\omega_{010},"[0, 1, 0]",0,\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}\times\mathbb Z_{4},False,results/computed_examples/inputs/d3_M16_orbit_009.json
+d3_M16_orbit_010,d3_M16_orbit_010,M_{16},16,x,\omega_{001},"[0, 0, 1]",0,\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{2}^{2}\times\mathbb Z_{4},False,results/computed_examples/inputs/d3_M16_orbit_010.json
+d3_M16_orbit_011,d3_M16_orbit_011,M_{16},16,x,\omega_{011},"[0, 1, 1]",0,\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}^{3},False,results/computed_examples/inputs/d3_M16_orbit_011.json
+d3_Q16_orbit_000,d3_Q16_orbit_000,Q_{16},16,0,0,"[0, 0, 0]",0,0,\mathbb Z_{2},0,\mathbb Z_{2},False,results/computed_examples/inputs/d3_Q16_orbit_000.json
+d3_Q16_orbit_001,d3_Q16_orbit_001,Q_{16},16,0,\omega_{010},"[0, 1, 0]",0,\mathbb Z_{2},0,0,\mathbb Z_{2},False,results/computed_examples/inputs/d3_Q16_orbit_001.json
+d3_Q16_orbit_002,d3_Q16_orbit_002,Q_{16},16,0,\omega_{001},"[0, 0, 1]",0,0,0,0,0,False,results/computed_examples/inputs/d3_Q16_orbit_002.json
+d3_Q16_orbit_003,d3_Q16_orbit_003,Q_{16},16,x+y,0,"[0, 0, 0]",0,\mathbb Z_{2},0,\mathbb Z_{2},\mathbb Z_{4},False,results/computed_examples/inputs/d3_Q16_orbit_003.json
+d3_Q16_orbit_004,d3_Q16_orbit_004,Q_{16},16,x+y,\omega_{010},"[0, 1, 0]",0,\mathbb Z_{2}^{2},0,\mathbb Z_{2},\mathbb Z_{2}\times\mathbb Z_{4},False,results/computed_examples/inputs/d3_Q16_orbit_004.json
+d3_Q16_orbit_005,d3_Q16_orbit_005,Q_{16},16,x+y,\omega_{001},"[0, 0, 1]",0,\mathbb Z_{2}^{2},0,0,\mathbb Z_{2}^{2},False,results/computed_examples/inputs/d3_Q16_orbit_005.json
+d3_Q16_orbit_006,d3_Q16_orbit_006,Q_{16},16,x+y,\omega_{011},"[0, 1, 1]",\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}\times\mathbb Z_{8},False,results/computed_examples/inputs/d3_Q16_orbit_006.json
+d3_Q16_orbit_007,d3_Q16_orbit_007,Q_{16},16,y,0,"[0, 0, 0]",0,\mathbb Z_{2},0,0,\mathbb Z_{2},False,results/computed_examples/inputs/d3_Q16_orbit_007.json
+d3_Q16_orbit_008,d3_Q16_orbit_008,Q_{16},16,y,\omega_{010},"[0, 1, 0]",\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{4}\times\mathbb Z_{8},False,results/computed_examples/inputs/d3_Q16_orbit_008.json
+d3_Q16_orbit_009,d3_Q16_orbit_009,Q_{16},16,y,\omega_{001},"[0, 0, 1]",0,\mathbb Z_{2},0,\mathbb Z_{2},\mathbb Z_{4},False,results/computed_examples/inputs/d3_Q16_orbit_009.json
+d3_Q16_wref2_srot,d3_Q16_wref2_srot,Q_{16},16,x,\omega_{010},"[0, 1, 0]",0,\mathbb Z_{2}^{2},0,\mathbb Z_{2},\mathbb Z_{2}\times\mathbb Z_{4},False,results/computed_examples/inputs/d3_Q16_wref2_srot.json
+d3_SD16_orbit_001,d3_SD16_orbit_001,\mathrm{SD}_{16},16,0,\omega_{001},"[0, 0, 1]",0,0,0,\mathbb Z_{2},\mathbb Z_{2},False,results/computed_examples/inputs/d3_SD16_orbit_001.json
+d3_SD16_orbit_002,d3_SD16_orbit_002,\mathrm{SD}_{16},16,0,\omega_{010},"[0, 1, 0]",0,\mathbb Z_{2},0,0,\mathbb Z_{2},False,results/computed_examples/inputs/d3_SD16_orbit_002.json
+d3_SD16_orbit_003,d3_SD16_orbit_003,\mathrm{SD}_{16},16,0,\omega_{011},"[0, 1, 1]",0,0,0,\mathbb Z_{2},\mathbb Z_{2},False,results/computed_examples/inputs/d3_SD16_orbit_003.json
+d3_SD16_orbit_004,d3_SD16_orbit_004,\mathrm{SD}_{16},16,x+y,0,"[0, 0, 0]",0,0,0,\mathbb Z_{2},\mathbb Z_{2},False,results/computed_examples/inputs/d3_SD16_orbit_004.json
+d3_SD16_orbit_005,d3_SD16_orbit_005,\mathrm{SD}_{16},16,x+y,\omega_{001},"[0, 0, 1]",0,\mathbb Z_{2},0,0,\mathbb Z_{2},False,results/computed_examples/inputs/d3_SD16_orbit_005.json
+d3_SD16_orbit_006,d3_SD16_orbit_006,\mathrm{SD}_{16},16,x+y,\omega_{010},"[0, 1, 0]",0,\mathbb Z_{2}^{2},\mathbb Z_{2}^{2},\mathbb Z_{2},\mathbb Z_{2}^{2}\times\mathbb Z_{8},False,results/computed_examples/inputs/d3_SD16_orbit_006.json
+d3_SD16_orbit_007,d3_SD16_orbit_007,\mathrm{SD}_{16},16,x+y,\omega_{011},"[0, 1, 1]",\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{2}^{2},\mathbb Z_{4}\times\mathbb Z_{16},False,results/computed_examples/inputs/d3_SD16_orbit_007.json
+d3_SD16_orbit_008,d3_SD16_orbit_008,\mathrm{SD}_{16},16,x,0,"[0, 0, 0]",0,\mathbb Z_{2},0,\mathbb Z_{2},\mathbb Z_{2}^{2},False,results/computed_examples/inputs/d3_SD16_orbit_008.json
+d3_SD16_orbit_009,d3_SD16_orbit_009,\mathrm{SD}_{16},16,x,\omega_{001},"[0, 0, 1]",\mathbb Z_{2},\mathbb Z_{2},0,\mathbb Z_{2}^{2},\mathbb Z_{2}\times\mathbb Z_{8},False,results/computed_examples/inputs/d3_SD16_orbit_009.json
+d3_SD16_orbit_010,d3_SD16_orbit_010,\mathrm{SD}_{16},16,x,\omega_{010},"[0, 1, 0]",\mathbb Z_{2},\mathbb Z_{2}^{2},0,\mathbb Z_{2}^{2},\mathbb Z_{2}^{2}\times\mathbb Z_{8},False,results/computed_examples/inputs/d3_SD16_orbit_010.json
+d3_SD16_orbit_011,d3_SD16_orbit_011,\mathrm{SD}_{16},16,x,\omega_{011},"[0, 1, 1]",0,\mathbb Z_{2}^{2},0,\mathbb Z_{2},\mathbb Z_{2}\times\mathbb Z_{4},False,results/computed_examples/inputs/d3_SD16_orbit_011.json
+d3_SD16_orbit_012,d3_SD16_orbit_012,\mathrm{SD}_{16},16,y,0,"[0, 0, 0]",0,0,0,0,0,False,results/computed_examples/inputs/d3_SD16_orbit_012.json
+d3_SD16_orbit_013,d3_SD16_orbit_013,\mathrm{SD}_{16},16,y,\omega_{001},"[0, 0, 1]",0,\mathbb Z_{2},0,\mathbb Z_{2},\mathbb Z_{4},False,results/computed_examples/inputs/d3_SD16_orbit_013.json
+d3_SD16_orbit_014,d3_SD16_orbit_014,\mathrm{SD}_{16},16,y,\omega_{010},"[0, 1, 0]",\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{4}\times\mathbb Z_{16},False,results/computed_examples/inputs/d3_SD16_orbit_014.json
+d3_SD16_orbit_015,d3_SD16_orbit_015,\mathrm{SD}_{16},16,y,\omega_{011},"[0, 1, 1]",0,\mathbb Z_{2}^{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}\times\mathbb Z_{8},False,results/computed_examples/inputs/d3_SD16_orbit_015.json
+d3_SD16_split_s0_w0,d3_SD16_split_s0_w0,\mathrm{SD}_{16},16,0,0,"[0, 0, 0]",0,0,0,\mathbb Z_{2},\mathbb Z_{2},False,results/computed_examples/inputs/d3_SD16_split_s0_w0.json
+d3_SL23_w0_s0,d3_SL23_w0_s0,"\mathrm{SL}(2,\mathbb F_3)",24,0,0,[],0,0,\mathbb Z_{2},0,\mathbb Z_{2},False,results/computed_examples/inputs/d3_SL23_w0_s0.json
+d3_C32_s1_w0,d3_C32_s1_w0,\mathbb Z_{32},32,x,0,[],\mathbb Z_{2},0,\mathbb Z_{2},0,\mathbb Z_{2}^{2},False,results/computed_examples/inputs/d3_C32_s1_w0.json
+d3_C32_s1_w1,d3_C32_s1_w1,\mathbb Z_{32},32,x,\eta_{1},[],0,\mathbb Z_{2},0,\mathbb Z_{2},\mathbb Z_{2}^{2},False,results/computed_examples/inputs/d3_C32_s1_w1.json
+d3_CentralC8Q8_s100_w0,d3_CentralC8Q8_s100_w0,\mathbb Z_8\circ Q_8,32,x,0,[],\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}^{3}\times\mathbb Z_{4},False,results/computed_examples/inputs/d3_CentralC8Q8_s100_w0.json
+d3_Meta32_action3_t4r4_s01_w0,d3_Meta32_action3_t4r4_s01_w0,G_{32},32,y,0,[],\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}^{2},\mathbb Z_{2}\times\mathbb Z_{4}^{2},False,results/computed_examples/inputs/d3_Meta32_action3_t4r4_s01_w0.json
+d3_Meta32_action3_t4r4_s10_w0,d3_Meta32_action3_t4r4_s10_w0,G_{32},32,x,0,[],0,\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2},\mathbb Z_{2}^{3},False,results/computed_examples/inputs/d3_Meta32_action3_t4r4_s10_w0.json

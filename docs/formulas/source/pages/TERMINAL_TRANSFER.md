@@ -82,7 +82,7 @@ expanded. This rewriting leaves the kernel and its coefficient tables unchanged.
 Every derivative differentiates a specified expression. In the binary
 part, $`d\overline{B_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and
 $`d\check{\mathcal{ℰ}}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
-Inside the final integer braces, $`d_{s_1}\mathcal V_5`$ differentiates the
+Inside the final integer braces, $`d_{s_1}V_5`$ differentiates the
 canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
 inputs, including $`B_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The bar on
 the polynomial following the minus sign is taken **before** its signed
@@ -216,7 +216,7 @@ polynomial
 
 {{equation:terminal-transfer--the-balanced-integer-carry--13}}
 
-$`\mathcal V_{5,0}`$ is the binary polynomial (T4b) at
+$`V_{5,0}`$ is the binary polynomial (T4b) at
 $`\omega_2=s_1=0`$, supplying its canonical value $`0,1`$ to the integer
 numerator. The same rule applies to each barred expression. In particular,
 $`d`$ in the fourth line is the **integer** differential after reduction

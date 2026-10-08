@@ -1,6 +1,6 @@
 # 4+1D finite internal symmetries
 
-606 retained named calculations. Group arrays in the CSV are invariant factors.
+609 retained named calculations. Group arrays in the CSV are invariant factors.
 
 | Input | Dimension | Gb | Grading / crystalline spin | omega2 representative | p+ip | Majorana | CF | Bosonic | Stacking group |
 |---|---|---|---|---|---|---|---|---|---|
@@ -383,6 +383,7 @@
 | [d4_D8xC2_orbit_071](../inputs/d4_D8xC2_orbit_071.json) | 4+1D | D8xC2 | [0, 1, 1] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_071.json)) | 0 | Z2 | Z2 | Z2^7 | Z2^7 x Z4 |
 | [d4_D8xC2_orbit_072](../inputs/d4_D8xC2_orbit_072.json) | 4+1D | D8xC2 | [0, 1, 1] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_072.json)) | 0 | Z2 | Z2^2 | Z2^5 | Z2^5 x Z8 |
 | [d4_D8xC2_orbit_073](../inputs/d4_D8xC2_orbit_073.json) | 4+1D | D8xC2 | [0, 1, 1] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_073.json)) | 0 | Z2^2 | Z2^2 | Z2^5 | Z2^3 x Z8^2 |
+| [d4_D8xC2_orbit_074](../inputs/d4_D8xC2_orbit_074.json) | 4+1D | D8xC2 | [0, 1, 1] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_074.json)) | Z2 | Z2^2 | Z2^5 | Z2^6 | Z2^3 x Z4^2 x Z8 x Z16 |
 | [d4_D8xC2_orbit_075](../inputs/d4_D8xC2_orbit_075.json) | 4+1D | D8xC2 | [0, 1, 0] | 0 | 0 | Z2 | 0 | Z2^5 x Z4 | Z2^6 x Z4 |
 | [d4_D8xC2_orbit_076](../inputs/d4_D8xC2_orbit_076.json) | 4+1D | D8xC2 | [0, 1, 0] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_076.json)) | Z2 | Z2 | Z2^2 | Z2^4 x Z4 | Z2^4 x Z4 x Z16 |
 | [d4_D8xC2_orbit_077](../inputs/d4_D8xC2_orbit_077.json) | 4+1D | D8xC2 | [0, 1, 0] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_077.json)) | Z2 | Z2 | Z2 | Z2^5 x Z4 | Z2^4 x Z4 x Z16 |
@@ -399,6 +400,8 @@
 | [d4_D8xC2_orbit_088](../inputs/d4_D8xC2_orbit_088.json) | 4+1D | D8xC2 | [0, 1, 0] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_088.json)) | 0 | 0 | 0 | Z2^7 | Z2^7 |
 | [d4_D8xC2_orbit_089](../inputs/d4_D8xC2_orbit_089.json) | 4+1D | D8xC2 | [0, 1, 0] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_089.json)) | 0 | Z2 | 0 | Z2^3 x Z4 | Z2^4 x Z4 |
 | [d4_D8xC2_orbit_090](../inputs/d4_D8xC2_orbit_090.json) | 4+1D | D8xC2 | [0, 1, 0] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_090.json)) | Z2 | 0 | Z2 | Z2^9 | Z2^9 x Z4 |
+| [d4_D8xC2_orbit_091](../inputs/d4_D8xC2_orbit_091.json) | 4+1D | D8xC2 | [0, 1, 0] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_091.json)) | Z4 | Z2^2 | Z2^2 | Z2^6 x Z4 | Z2^6 x Z8 x Z32 |
+| [d4_D8xC2_orbit_092](../inputs/d4_D8xC2_orbit_092.json) | 4+1D | D8xC2 | [0, 1, 0] | nonzero ([exact input](../inputs/d4_D8xC2_orbit_092.json)) | Z2^2 | Z2^2 | Z2^2 | Z2^7 | Z2^6 x Z8 x Z16 |
 | [d4_M16_orbit_000](../inputs/d4_M16_orbit_000.json) | 4+1D | M16 | [0, 0] | 0 | Z2 | 0 | Z2 | Z2^2 | Z2^2 x Z4 |
 | [d4_M16_orbit_001](../inputs/d4_M16_orbit_001.json) | 4+1D | M16 | [0, 0] | nonzero ([exact input](../inputs/d4_M16_orbit_001.json)) | Z2^2 | Z2 | Z2^3 | Z2^2 | Z4^2 x Z16 |
 | [d4_M16_orbit_002](../inputs/d4_M16_orbit_002.json) | 4+1D | M16 | [0, 0] | nonzero ([exact input](../inputs/d4_M16_orbit_002.json)) | Z4 | 0 | Z2 | Z2^2 | Z4 x Z8 |

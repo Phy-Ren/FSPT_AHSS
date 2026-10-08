@@ -40,9 +40,10 @@ some mixed terms.
 
 A prime denotes the second stacking input. On an individual field it is
 placed outside the modifier: $`\bar n'_j,\widetilde n'_j,\check n'_j`$. The outputs are $`N_j`$ and
-$`\nu_j^{\mathrm{out}}`$. A hat denotes the additive phase,
-$`\nu_j=\exp(2\pi i\widehat\nu_j)`$, with
-$`\widehat\nu_j\in\mathbb R/\mathbb Z`$. The same convention applies to
+$`\mathcal V_j`$. A hat denotes the additive phase:
+$`\nu_j=\exp(2\pi i\widehat\nu_j)`$ and
+$`\mathcal V_j=\exp(2\pi i\widehat{\mathcal V}_j)`$, with
+both hatted phases in $`\mathbb R/\mathbb Z`$. The same convention applies to
 phase obstructions $`\widehat{\mathcal{𝒪}}`$ and corrections
 $`\widehat{\mathcal{ℰ}}`$.
 

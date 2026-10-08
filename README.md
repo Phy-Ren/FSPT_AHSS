@@ -15,7 +15,7 @@ representatives. Independent symmetry backgrounds can run in parallel.
 
 ## Computed examples
 
-The consolidated catalogue contains **1,231 completed calculation records**:
+The consolidated catalogue contains **1,234 completed calculation records**:
 
 | Collection | Records |
 | --- | ---: |
@@ -24,13 +24,13 @@ The consolidated catalogue contains **1,231 completed calculation records**:
 | 1+1D finite internal symmetries and controls | 6 |
 | 2+1D finite internal symmetries and controls | 17 |
 | 3+1D finite internal symmetries and controls | 78 |
-| 4+1D finite internal symmetries and controls | 606 |
+| 4+1D finite internal symmetries and controls | 609 |
 
 Historical names, coordinate representatives and independently repeated controls
-remain identifiable. These records have 1,226 distinct literal input/scope keys;
+remain identifiable. These records have 1,229 distinct literal input/scope keys;
 this is not a count of inequivalent physical symmetries. The catalogue also links
-the earlier cochain and geometric calibration examples. Three unfinished
-backgrounds are listed separately and have no asserted final result.
+the earlier cochain and geometric calibration examples. All 398 planned finite
+campaign inputs have complete acceptance; no pending input remains.
 
 Every finite background specifies the bosonic quotient group, its multiplication
 table, antiunitary grading $s_1$, and normalized fermion-parity cocycle

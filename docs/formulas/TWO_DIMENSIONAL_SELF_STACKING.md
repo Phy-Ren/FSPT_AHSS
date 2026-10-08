@@ -29,7 +29,7 @@ retained when the doubled state is used in a subsequent doubling.
 ## 3. Bosonic self-stacking
 
 ```math
-\widehat\nu_3^{\mathrm{out}}
+\widehat{\mathcal V}_3
 =2\widehat\nu_3+
 \widehat{\mathcal{ℰ}}_3^c+
 \widehat{\mathcal{ℰ}}_3^{c\gamma}+

@@ -133,7 +133,7 @@ The two mixed cups outside that lift are ordinary integer products.
 The displayed lift can be used in a coupled change of the terminal
 stacking representative. More generally, the following identity holds
 for any explicitly chosen integer lift of the existing binary
-$`\mathcal V_5`$ in the [terminal formula](TERMINAL_TRANSFER.md#eq-k3).
+$`V_5`$ in the [terminal formula](TERMINAL_TRANSFER.md#eq-k3).
 Define its integral
 lift difference
 
@@ -147,7 +147,7 @@ of the terminal appendix. The lift change must transport **both** data:
 
 {{equation:quadratic-refinements--changing-the-lift-in-the-terminal-product--11}}
 
-Replacing $`\overline{\mathcal V_5}/4+Z_5/2`$ by
+Replacing $`\overline{V_5}/4+Z_5/2`$ by
 $`V_5^{\mathbb Z}/4+Z_5^{\rm new}/2`$ then gives exactly
 
 <a id="paired-lift-transport"></a>

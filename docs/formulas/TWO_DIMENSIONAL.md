@@ -98,7 +98,7 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 
 ```math
 \begin{aligned}
-\widehat\nu_3^{\mathrm{out}}
+\widehat{\mathcal V}_3
  &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal{ℰ}}_3,\\
 \widehat{\mathcal{ℰ}}_3
  &=\widehat{\mathcal{ℰ}}^{c}_3

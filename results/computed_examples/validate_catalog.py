@@ -79,6 +79,13 @@ def main():
         assert digest(canonical({k:m[k] for k in ('order','productTable','s1','omega2')}))==r['exact_input_sha256']
     coverage = json.loads((HERE/'coverage.json').read_text())
     assert coverage['accepted_named_records']==len(records)
+    assert coverage['exact_input_and_scope_keys']==len(keys)
+    assert coverage['pending_inputs']==len(pending)
+    assert coverage['accepted_records_by_origin']==dict(Counter(r['origin'] for r in records))
+    assert coverage['accepted_records_by_spatial_dimension']==dict(Counter(str(r['dimension']) for r in records))
+    assert coverage['accepted_records_by_symmetry_kind']==dict(Counter(r['symmetry_kind'] for r in records))
+    assert coverage['latest_finite_campaign_accepted']==sum(r['origin']=='finite_campaign_398' for r in records)
+    assert coverage['latest_finite_campaign_accepted']+len(pending)==coverage['latest_finite_campaign_planned']
     assert coverage['prior_finite_examples_unmatched']==0
     for row in coverage['historical_finite_example_aliases']:
         assert row['current_records']

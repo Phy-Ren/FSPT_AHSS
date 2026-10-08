@@ -151,9 +151,9 @@ and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a), with the
 | Former $`R`$ | Ordered integer product $`n'_2n_2`$ |
 | Former $`D`$ | $`\Delta B_4=d\lambda_3-n'_2n_2`$ |
 | `Db` | $`\overline{\Delta B_4}`$ |
-| `V5` | $`\mathcal V_5`$, the binary value used in the quarter-valued product |
+| `V5` | $`V_5`$, the binary quarter numerator; $`\mathcal V_5`$ denotes the stacked bosonic phase |
 | `Phi5` | The expanded lower-field portion of the half-valued bracket in [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
-| `Pi5` | The expanded integer terms accompanying $`\mathcal V_5`$ in the quarter-valued bracket of [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
+| `Pi5` | The expanded integer terms accompanying $`V_5`$ in the quarter-valued bracket of [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
 | `epsilon5` | The expanded complex-fermion terms in the half-valued bracket of [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
 | `Zvalue`, `binary_phase` | Evaluation of $`Z_5`$ |
 

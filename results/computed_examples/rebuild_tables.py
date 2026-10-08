@@ -108,8 +108,8 @@ def main():
         '| Family | Named calculations | Tables |','|---|---:|---|',*family_links,''])
     pending = json.loads((HERE/'pending.json').read_text())['cases']
     outputs['PENDING.md'] = '\n'.join(['# Pending inputs','',
-        'These exact inputs are planned calculations awaiting complete acceptance. No stacking group is asserted here.','',
-        *[f"- [{r['id']}](inputs/{r['id']}.json), {r['dimension']}+1D." for r in pending],''])
+        ('These exact inputs are planned calculations awaiting complete acceptance. No stacking group is asserted here.' if pending else 'All 398 planned finite-campaign inputs are accepted. There are no pending inputs in this catalogue.'),'',
+        *[f"- [{r['id']}](inputs/{r['id']}.json), {r['dimension']}+1D." for r in pending],'']).rstrip()+'\n'
     for name,content in outputs.items():
         target = HERE/name
         if args.check:

@@ -94,7 +94,7 @@ identically when its two closed inputs $`\bar n_2`$ coincide.
 
 ```math
 \begin{aligned}
-\widehat\nu_5^{\rm out}
+\widehat{\mathcal V}_5
  &=2\widehat\nu_5+\widehat{\mathcal{ℰ}}_5^c
  +\widehat{\mathcal{ℰ}}_5^{c\gamma}
  +\widehat{\mathcal{ℰ}}_5^{c\psi}\\
@@ -192,11 +192,11 @@ and its explicitly stated output gauge remain available separately.
  +(\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi})
                          \cup_3\bar n_2^2\\
 &\quad+\mathcal{𝒪}_5^\gamma[\check N_3]\cup_4\bar n_2^2
- +\mathcal V_5^\gamma\cup_5\mathcal V_5^{\gamma\psi}
- +\mathcal V_5^\gamma\cup_5\mathcal V_5^\psi
- +\mathcal V_5^{\gamma\psi}\cup_5\mathcal V_5^\psi
+ +V_5^\gamma\cup_5V_5^{\gamma\psi}
+ +V_5^\gamma\cup_5V_5^\psi
+ +V_5^{\gamma\psi}\cup_5V_5^\psi
  +n_2\check n_3\Big]\\
-&+\frac14\overline{\mathcal V_5^{\gamma\psi}}\pmod1.
+&+\frac14\overline{V_5^{\gamma\psi}}\pmod1.
 \end{aligned}
 ```
 
@@ -229,7 +229,7 @@ simplification.
  +s_1(\bar n_2\cup_1s_1)\bar n_2
  +\check\omega_2\check N_3\\
 &\quad+n_2\check N_3+(n_2\cup_1\check\omega_2)n_2\Big]
- +\frac14\overline{\mathcal V_5^\psi}
+ +\frac14\overline{V_5^\psi}
  +\frac18\check\omega_2(n_2\cup_1n_2)\pmod1.
 \end{aligned}
 ```
@@ -270,7 +270,7 @@ In the following expressions all the $`\lambda_3^\psi`$ refer to their
 value just displayed.
 
 ```math
-\mathcal V_5^\gamma
+V_5^\gamma
  =\mathrm{Sq}^1\bar B_4^\gamma+d\bar B_4^\gamma
    +\mathrm{Sq}^2\check n_3+\omega_2\check n_3.
 ```
@@ -279,7 +279,7 @@ This has **four terms**. The mixed numerator has **eight terms**:
 
 ```math
 \begin{aligned}
-\mathcal V_5^{\gamma\psi}
+V_5^{\gamma\psi}
 ={}&d\Big[
  \bar B_4^\gamma\cup_4\bar B_4^\psi
  +\check n_3\cup_2\bar\lambda_3^\psi
@@ -298,7 +298,7 @@ The p+ip numerator has **twelve terms**:
 
 ```math
 \begin{aligned}
-\mathcal V_5^\psi
+V_5^\psi
 ={}&\mathrm{Sq}^1\bar B_4^\psi+d\bar B_4^\psi
  +\mathrm{Sq}^2\bar\lambda_3^\psi
  +\bar n_2^2\cup_3d\bar\lambda_3^\psi

@@ -258,7 +258,7 @@ Its intrinsic binary polynomial is
 
 {{equation:three-dimensional--majorana-decoration--33}}
 
-The sum over $`\mathcal V_4`$ contains **seven specified MS terms**.
+The finite word sum contains **seven specified MS terms**.
 The other displayed terms of $`z_4^0`$ are outside this sum. The complete
 $`z_4^0`$ has **20 distributed terms**; the complete $`z_4^\gamma`$ has
 **37**, retaining the defined lower twister, integer carries, and whole

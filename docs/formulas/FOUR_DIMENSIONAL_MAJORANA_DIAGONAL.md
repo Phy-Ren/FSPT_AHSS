@@ -33,7 +33,7 @@ N_4=\mathcal{ℰ}_4^\gamma[n_3,n_3]
 
 ```math
 \begin{aligned}
-\widehat\nu_5^{\mathrm{out}}&=2\widehat\nu_5
+\widehat{\mathcal V}_5&=2\widehat\nu_5
      +\widehat{\mathcal{ℰ}}_{5,\mathrm{diag}},\\
 \widehat{\mathcal{ℰ}}_{5,\mathrm{diag}}
  &=\widehat{\mathcal{ℰ}}_5^c
