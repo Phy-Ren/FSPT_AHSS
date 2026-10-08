@@ -160,11 +160,7 @@ changes neither the source representative nor the paired stacking law.
 \widehat{\mathcal{𝒪}}_5^\gamma
 ={}&\frac12\Big[
  \zeta_{2,2}(\omega_2,\check n_2)\\
-&\qquad+(\mathop{\mathrm{MS}}\nolimits_{1213243}
- +\mathop{\mathrm{MS}}\nolimits_{1213431}
- +\mathop{\mathrm{MS}}\nolimits_{1232141}
- +\mathop{\mathrm{MS}}\nolimits_{1234321})
-       (\check n_2,\check n_2,\check n_2,\check n_2)
+&\qquad+\mathcal X_5(\check n_2)
  +(\check n_2^2)\cup_3(\omega_2\check n_2)\\
 &\qquad+(\check n_2^2)\cup_3(s_1\overline{\beta^\circ\check n_2})
  +(\omega_2\check n_2)\cup_3(s_1\overline{\beta^\circ\check n_2})\\
@@ -189,6 +185,21 @@ The word operations are
 \zeta_{1,3}(x,y)&=\mathop{\mathrm{MS}}\nolimits_{1231434}(x,x,y,y).
 \end{aligned}
 ```
+
+The intrinsic Adem cochain of a binary two-cochain $`x`$ is
+
+```math
+\begin{aligned}
+\mathcal X_5(x)={}&\bigl(\mathop{\mathrm{MS}}\nolimits_{1213243}
+ +\mathop{\mathrm{MS}}\nolimits_{1213431}\\
+&\qquad+\mathop{\mathrm{MS}}\nolimits_{1232141}
+ +\mathop{\mathrm{MS}}\nolimits_{1234321}\bigr)(x,x,x,x).
+\end{aligned}
+```
+
+This operation has four word terms. The closed-Majorana presentation
+uses this same expression with $`\check n_2=n_2`$ and
+$`\beta^\circ=\beta`$; no phase redefinition is involved.
 
 #### Majorana and p+ip decoration
 
@@ -345,7 +356,7 @@ N_3&=n_3+n'_3+\mathcal{ℰ}_3,\\
 
 ```math
 \begin{aligned}\mathcal{ℰ}_3^\psi={}&{z^\psi_3}({\bar n_{1}},{\bar n'_{1}})+[{\check\omega_2}({\bar n_{1}}+{\bar n'_{1}})]\cup_2{\check{\mathcal{ℰ}}_{2}}+(d{\widetilde n_{1}}){\widetilde n'_{1}}\\
-&+({s_1}{\bar n_{1}})\cup_1{\bar n'_{1}}^2+{\bar n_{1}} {s_1} {\bar n'_{1}}+{(\bar n_{1}\cup_{1}\bar n'_{1})} {s_1}({\bar n_{1}}+{\bar n'_{1}})\\
+&+({s_1}{\bar n_{1}})\cup_1({\bar n'_{1}})^2+{\bar n_{1}} {s_1} {\bar n'_{1}}+{(\bar n_{1}\cup_{1}\bar n'_{1})} {s_1}({\bar n_{1}}+{\bar n'_{1}})\\
 &+{s_1}\big[{s_1}{(\bar n_{1}\cup_{1}\bar n'_{1})}+{\bar n_{1}}\cup_1d{\widetilde n'_{1}}+{(\bar n_{1}\cup_{1}\bar n'_{1})}({\bar n_{1}}+{\bar n'_{1}})\big]+{\Delta[(\bar n_1^2\cup_1s_1)\bar n_1]},\\
 {z^\psi_3}({\bar n_{1}},{\bar n'_{1}})={}&\mathop{\mathrm{MS}}\nolimits_{12314}({\bar n_{1}},{\bar n_{1}},{\bar n'_{1}},{\bar n'_{1}})
  =[{\bar n_{1}}\cup_1({\bar n_{1}}{\bar n'_{1}})]{\bar n'_{1}}.

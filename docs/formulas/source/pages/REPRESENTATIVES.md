@@ -43,9 +43,9 @@ shown in (T4e) is retained in (T4); it is not being called a coboundary.
 
 <a id="operator-phase-4d"></a>
 
-## 4+1D: operator phase in the current guide
+## 4+1D: preceding operator phase
 
-Relative to the supplied full terminal formula, the guide uses
+The first step from the supplied full terminal formula is the operator-ordering change
 
 {{equation:representatives--4-1d-operator-phase-in-the-current-guide--4}}
 
@@ -53,7 +53,24 @@ The inverse subtracts the same half-valued cochain. The paired formulas are
 
 {{equation:representatives--4-1d-operator-phase-in-the-current-guide--5}}
 
-The actual stacked output is used in the last line. This yields the displayed c, c-gamma, and c-psi operator factors. The other terms are regrouped with all integer carries retained. There is no additional output coboundary in this 4+1D map.
+The actual stacked output is used in the last line. This yields the displayed c, c-gamma, and c-psi operator factors. The other terms are regrouped with all integer carries retained. This operator-ordering step introduces no additional output coboundary.
+
+<a id="compact-majorana-phase-4d"></a>
+
+## 4+1D: current compact Majorana phase
+
+The guide then applies the single [explicit phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
+$`\widehat\nu_5\mapsto\widehat\nu_5-R_5[\check n_3,n_4]`$.
+Its source changes by $`-d_{s_1}R_5`$ and its product by $`-\Delta R_5`$,
+evaluated on the same actual lower stacking output. The inverse adds
+$`R_5`$; every lower decoration and lower product is fixed.
+
+The [general](FOUR_DIMENSIONAL.md#stacking-4d) and
+[self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md) formulas include this
+change in each of the three lower physical contributions. The source,
+product, and their zero-p+ip restrictions therefore use one phase
+coordinate. The output coboundary already documented below precedes this
+step and remains included; no new output gauge is imposed here.
 
 ## Terminal phase changes
 
@@ -77,7 +94,7 @@ not only the abstract group obtained in an example.
 The separate [programmer translation](../../formulas/CODE_NOTATION.md) records
 how the formulas correspond to existing variables and compiled operations.
 
-The terminal 4+1D Majorana contribution additionally uses the
+Before the compact-Majorana coordinate change, the terminal 4+1D Majorana contribution uses the
 [explicit output coboundary](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md).
 It changes the output cochain by an exact phase and leaves the obstruction
 and every other designated contribution unchanged. Its inverse adds the

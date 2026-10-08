@@ -2,11 +2,11 @@
 
 # Output coboundary in the 4+1D Majorana stacking formula
 
-The new explicit expression rewrites the previously designated Majorana
+This intermediate output-gauge step precedes the current [compact-Majorana phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md). Its explicit expression rewrites the previously designated Majorana
 cochain contribution. No summand is moved to another contribution,
 including terms containing the Majorana differential.
 
-The full change is
+The output-gauge step is
 
 ```math
 \widehat{\mathcal{ℰ}}_{5,\mathrm{new}}^\gamma

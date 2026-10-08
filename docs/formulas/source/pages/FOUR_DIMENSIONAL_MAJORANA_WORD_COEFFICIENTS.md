@@ -1,6 +1,11 @@
-# Ordinary Majorana coefficients in 4+1D
+# Height-transgression coefficients in 4+1D
 
-The degree-six binary expression used by the terminal formula is
+This table specifies the auxiliary height transgression used in the
+[construction](SOURCE_OPERATIONS.md#eq-s5) and its exact comparison check.
+It is not a second reader formula for the intrinsic Majorana obstruction.
+The maintained obstruction uses the compact Cartan–Adem expression and
+the [relative coefficients](FOUR_DIMENSIONAL_MAJORANA_RELATIVE_WORD_COEFFICIENTS.md).
+The auxiliary binary expression is
 
 ```math
 \mathcal T_6[\check n_3;\omega_2,s_1]=\sum_{(\vartheta;\,x_1,\ldots,x_q)\in\mathcal W_6}\mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)+s_1^2\widetilde{\beta^\circ\check n_3}.
@@ -9,8 +14,6 @@ The degree-six binary expression used by the terminal formula is
 The index set $`\mathcal W_6`$ is exactly the 41 blocks below. In each block, use the displayed ordered argument tuple and every listed word once. Every coefficient is one in $`\mathbb Z_2`$. Equal contributions cancel modulo two. The lists contain 1,090 words in total. They are fixed mathematical coefficient data, independent of the symmetry group.
 
 All words use the ordinary interval-cut MS convention in [Operations](OPERATIONS.md). The input $`\check n_3`$ is an arbitrary binary degree-three cochain; $`d\check n_3`$ is its actual differential. The backgrounds $`\omega_2,s_1`$ are closed. The final term is the second binary digit of the integral open Bockstein, including negative integer representatives. It is not included again in the word lists.
-
-These lists omit identically equal binary contributions in pairs, using the specified cochain degrees and closed backgrounds. This is an exact equality of the displayed cochains; the phase coordinate is unchanged.
 
 These lists omit identically equal binary contributions in pairs, using the specified cochain degrees and closed backgrounds. This is an exact equality of the displayed cochains; the phase coordinate is unchanged.
 

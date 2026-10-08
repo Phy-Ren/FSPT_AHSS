@@ -4,9 +4,7 @@ Take a complete state with $`n_2=0`$, closed binary Majorana cochain
 $`n_3`$, complex-fermion cochain $`n_4`$ satisfying
 $`dn_4=\mathcal{𝒪}_5^\gamma[n_3]`$, and phase $`\widehat\nu_5`$
 satisfying the terminal obstruction equation. Here $`\check n_3=n_3`$.
-All stacking corrections below have identical complete inputs. The
-compact output representative differs from the current general reader
-formula by the explicit bosonic coboundary given below.
+All stacking corrections below have identical complete inputs. The current phase and product are exactly the zero-p+ip restrictions of the complete formulas. The explanation below specializes the same phase change without introducing a second diagonal law.
 
 ## 1. p+ip stacking
 
@@ -30,65 +28,35 @@ formula by the explicit bosonic coboundary given below.
 
 ### Complex fermions and Majorana decoration
 
-{{equation:four-dimensional-majorana-diagonal--complex-fermions-and-majorana-decoration--6}}
+{{equation:four-dimensional-self-stacking--complex-fermions-and-majorana-decoration--8}}
+
+Here the output term vanishes because $`\check N_3=0`$, and the mixed input source is zero.
 
 ### Majorana decoration
 
-{{equation:four-dimensional-majorana-diagonal--majorana-decoration--7}}
+Use the shared self-stacking expression, with $`n_2=0`$,
+$`d\check n_3=0`$, and $`B_4^\gamma=\beta n_3`$:
 
-The lower output $`N_4`$ is the one computed above. The lower obstruction
-and Bockstein retain their existing meanings:
+{{equation:four-dimensional-self-stacking--majorana-decoration--10}}
 
-{{equation:four-dimensional-majorana-diagonal--majorana-decoration--8}}
+This is the same terminal coordinate as the current obstruction.
 
-The first sum contains **sixteen MS terms**, with the following complete
-word list. Every word has the same four arguments printed in the formula.
+## Specialization of the common phase change
 
-```text
-12131432412  12343213431  23412342324  12123434123
-12131412324  12134131234  12312412423  12314324123
-12314342413  13242412314  13412321341  13412321413
-13413142134  13432412314  31214124324  12413432312
-```
+The full lower output here has $`\check N_3=0`$ and
+$`N_4=\mathcal{ℰ}_4^\gamma`$. The common phase map consequently gives
+$`-\Delta R_5=\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$.
+Those two terms already appear in the imported Majorana formula above.
+No separate diagonal representative or additional output gauge is chosen.
+The existing output coboundary is part of the shared general formula.
 
-There are **23 half-valued terms and five quarter-valued terms**, hence
-**28 Majorana terms** with the defined lower operations retained. Adding
-the one complex-fermion term and one exchange term gives **30 terms for
-the complete self-stacking phase correction**: 25 half-valued and five
-quarter-valued terms. This is the zero-p+ip diagonal specialization; the general open two-input law is
-[given separately](FOUR_DIMENSIONAL.md).
-
-In the quarter bracket, the unbarred
-$`n_3\cup_1n_3`$ is the signed integer cup of canonical input
-values. Its barred counterpart is the canonical value of the **whole**
-binary operation. Their difference is even but can be nonzero modulo four.
-The whole bar on $`\mathcal{𝒪}_5^\gamma`$ is required for the same reason.
-
-## Explicit output gauge
-
-The relation to the current complete reader representative is exact:
-
-{{equation:four-dimensional-majorana-diagonal--explicit-output-gauge--9}}
-
-The binary gauge primitive has only three face products:
-
-{{equation:four-dimensional-majorana-diagonal--explicit-output-gauge--10}}
-
-The complex-fermion and exchange contributions already equal their
-current general-reader specializations. Adding this output bosonic
-coboundary therefore gives the complete reader self-stack;
-subtracting it gives the displayed 30-term total representative. The obstruction is
-unchanged. The primitive is normalized, and
-$`d_{s_1}(K_4^\gamma/2)=dK_4^\gamma/2\pmod1`$.
-
-The equality was proved by complete binary coefficient comparison and
-checked independently against the frozen complete phase and its explicit
-gauge. The final lower-operation expression passes 1,024 closed-input
-checks. No closed-input restriction has been imposed on the separate
-complete two-input formula.
-
+All integer lifts and Bocksteins have their common meanings. In particular
+$`\beta n_3=dn_3/2`$ uses the integer differential of the binary cocycle,
+and the whole binary lifts inside the formula retain their scopes.
+The coefficient sets are the same ones used in
+[complete self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md); their values
+are specialized with the stated closed input rather than fitted again.
 The input complex-fermion completion and incoming phase are retained.
-The formula supplies a complete product in the zero-p+ip sector; a
-p+ip root with nonzero integer decoration requires its own full cyclic
-power formula. The [presentation theorem](ROOT_POWER_PRESENTATIONS.md)
-explains how such powers determine the final abstract group.
+
+The [root-power presentation](ROOT_POWER_PRESENTATIONS.md) explains how
+these powers determine the final abelian group.

@@ -1,6 +1,12 @@
 # Finite cochain formulas for the bosonic obstruction
 
-The two degree-six cochains used in the 4+1D source are defined here. The ordinary Majorana word coefficients are also printed in the [physical coefficient table](FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md), with their pure and mixed source parts separated. This file retains the construction and the complete pure p+ip coefficient rule.
+This file gives the degree-six cochains used to construct the 4+1D source.
+The auxiliary height transgression below is a construction step; the
+current reader formula uses the compact intrinsic Majorana expression and
+its [relative coefficient table](FOUR_DIMENSIONAL_MAJORANA_RELATIVE_WORD_COEFFICIENTS.md).
+Their [paired phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is included
+in both obstruction and stacking. The finite pure p+ip completion remains
+the same fixed polynomial.
 
 The backgrounds are $`\omega_2,s_1`$. A bar takes parity and a tilde takes
 the second binary digit, as in [Operations](OPERATIONS.md). In integer
@@ -65,6 +71,14 @@ All **453 words** of $`\mathcal W_4`$ are printed in
 
 <a id="source-completion"></a>
 ## Integer-layer contribution
+
+The following definition of $`y_6`$ and its seed are held fixed under the
+Majorana phase change. In the current pure integer obstruction the half
+phase is $`[y_6+s_1\mathcal{𝒪}_5^\psi]/2`$. The additional term is
+displayed separately in the [principal formula](FOUR_DIMENSIONAL.md#eq-t4);
+it is not inserted into the residual or absorbed into this coefficient
+table. The cubic $`n_2^3/12`$ is likewise the already fixed closed
+normalization outside the binary completion.
 
 For a twisted integer two-cocycle $`n_2`$, the degree-six formula is
 

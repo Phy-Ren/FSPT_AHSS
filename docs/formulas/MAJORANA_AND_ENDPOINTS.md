@@ -344,16 +344,29 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 
 **(M4, 3+1D)**
 
+This is the same pure Majorana formula as in the complete 3+1D tower.
+Here $`n_1=0`$, so $`\check n_2=n_2`$ and
+$`\beta^\circ n_2=\beta n_2`$. Its physical origin is Majorana;
+the common expression also defines this contribution for a nonclosed
+Majorana input in the full tower.
+
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}^\gamma_5(n_2)={}&\frac12\big[
- \zeta_{2,2}(\omega_2,n_2)+\mathcal X_5(n_2)\\
-&\qquad+(n_2\cup n_2)\cup_3(\omega_2 n_2)\\
-&\qquad+(n_2\cup n_2)\cup_3(s_1\overline{\beta n_2})\\
-&\qquad+(\omega_2 n_2)\cup_3(s_1\overline{\beta n_2})\\
-&\qquad+\zeta_{1,3}(s_1,\overline{\beta n_2})\\
-&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_2}+s_1(n_2\cup n_2)+s_1^2\overline{\beta^+n_2}\big]\\
-&+\frac14\big[{\omega_2} \beta n_2+\beta n_2\cup_1\beta n_2\big].
+\widehat{\mathcal{𝒪}}_5^\gamma
+={}&\frac12\Big[
+ \zeta_{2,2}(\omega_2,\check n_2)\\
+&\qquad+\mathcal X_5(\check n_2)
+ +(\check n_2^2)\cup_3(\omega_2\check n_2)\\
+&\qquad+(\check n_2^2)\cup_3(s_1\overline{\beta^\circ\check n_2})
+ +(\omega_2\check n_2)\cup_3(s_1\overline{\beta^\circ\check n_2})\\
+&\qquad+\zeta_{1,3}(s_1,\overline{\beta^\circ\check n_2})
+ +(\omega_2\cup_1s_1)\overline{\beta^\circ\check n_2}
+ +s_1\check n_2^2\Big]\\
+&+\frac14\Big[
+ \omega_2\beta^\circ\check n_2
+ +(\beta^\circ\check n_2)\cup_1(\beta^\circ\check n_2)
+ +s_1^2(\beta^\circ\check n_2+
+             \overline{\beta^\circ\check n_2})\Big].
 \end{aligned}
 ```
 
@@ -361,14 +374,12 @@ Its word operations are
 
 ```math
 \begin{aligned}
-\zeta_{2,2}(\omega_2,n_2)
- &=\mathop{\mathrm{MS}}\nolimits_{1231343}(\omega_2,\omega_2,n_2,n_2),\\
-\zeta_{1,3}(s_1,\overline{\beta n_2})
- &=\mathop{\mathrm{MS}}\nolimits_{1231434}(s_1,s_1,\overline{\beta n_2},\overline{\beta n_2}).
+\zeta_{2,2}(x,y)&=\mathop{\mathrm{MS}}\nolimits_{1231343}(x,x,y,y),\\
+\zeta_{1,3}(x,y)&=\mathop{\mathrm{MS}}\nolimits_{1231434}(x,x,y,y).
 \end{aligned}
 ```
 
-The intrinsic polynomial is
+The intrinsic Adem cochain of a binary two-cochain $`x`$ is
 
 <a id="eq-m5"></a>
 
@@ -376,8 +387,10 @@ The intrinsic polynomial is
 
 ```math
 \begin{aligned}
-\mathcal X_5(n_2)&=(\mathop{\mathrm{MS}}\nolimits_{1213243}+\mathop{\mathrm{MS}}\nolimits_{1213431}
- +\mathop{\mathrm{MS}}\nolimits_{1232141}+\mathop{\mathrm{MS}}\nolimits_{1234321})(n_2,n_2,n_2,n_2).
+\mathcal X_5(x)={}&\bigl(\mathop{\mathrm{MS}}\nolimits_{1213243}
+ +\mathop{\mathrm{MS}}\nolimits_{1213431}\\
+&\qquad+\mathop{\mathrm{MS}}\nolimits_{1232141}
+ +\mathop{\mathrm{MS}}\nolimits_{1234321}\bigr)(x,x,x,x).
 \end{aligned}
 ```
 
@@ -465,14 +478,23 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 
 **(M7, 3+1D)**
 
+Use the same $`\widehat{\mathcal{ℰ}}_4^\gamma`$ as in the complete
+3+1D product, with $`\check n_2=n_2`$, $`\check n'_2=n'_2`$,
+$`\beta^\circ=\beta`$, and
+$`\lambda_2^\gamma=\overline{n_2\cup_2n'_2}`$.
+The lower output here is $`N_2=\overline{n_2+n'_2}`$, and
+$`\mathcal{ℰ}_3^\gamma=\mathcal{ℰ}_3`$.
+
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^\gamma_4={}&\frac12z_4
- +\frac14\big[-\beta n_2\cup_2\beta n'_2\\
-&\qquad+(\beta n_2+\beta n'_2)\cup_1\overline{n_2\cup_2n'_2}\\
-&\qquad-\overline{n_2\cup_2n'_2}\cup_1\beta N_2\\
-&\qquad+\overline{n_2\cup_2n'_2}\cup \overline{n_2\cup_2n'_2}\\
-&\qquad-{\omega_2}\,\overline{n_2\cup_2n'_2}\big].
+\widehat{\mathcal{ℰ}}^{\gamma}_4={}&\frac12z_4^\gamma
+ +\frac14\big[
+ -\beta^\circ\check n_2\cup_2\beta^\circ\check n'_2\\
+ &+(\beta^\circ\check n_2+\beta^\circ\check n'_2)
+       \cup_1\lambda_2^\gamma
+ -\lambda_2^\gamma\cup_1
+       \beta^\circ\overline{\check n_2+\check n'_2}\\
+ &+(\lambda_2^\gamma)^2-\omega_2\lambda_2^\gamma\big].
 \end{aligned}
 ```
 
@@ -484,23 +506,56 @@ Here the binary completion is
 
 ```math
 \begin{aligned}
-z_4={}&z^0_4(n_2,n'_2)+(\omega_2N_2)\cup_3\mathcal{ℰ}_3
- +d(n_2\cup_1n'_2)\cup_4(\omega_2N_2)\\
-&+(n'_2\cup n'_2)\cup_4(\omega_2n_2)\\
-&+((n'_2\cup n'_2)+\omega_2n'_2)\cup_4(s_1\overline{\beta n_2})\\
-&+(\omega_2\cup_1s_1)(n_2\cup_2n'_2)
- +(n_2\cup_1n'_2)\cup_3[s_1(\overline{\beta n_2}+\overline{\beta n'_2})]\\
-&+(N_2\cup N_2)\cup_3(s_1(n_2\cup_2n'_2))+(n_2\cup_1n'_2)\cup_2(s_1(n_2\cup_2n'_2))\\
-&+s_1\big[\mathcal{ℰ}_3+\overline{\beta n_2}\cup_3\overline{\beta n'_2}\\
-&\qquad+(n_2\cup_2n'_2)\cup_1(n_2\cup_2n'_2)\\
-&\qquad+(\overline{\beta n_2}+\overline{\beta n'_2})\cup_3(s_1(n_2\cup_2n'_2))\\
-&\qquad+(s_1(n_2\cup_2n'_2))\cup_2(n_2\cup_2n'_2)\\
-&\qquad+\overline{\beta^+N_2-\beta^+n_2-\beta^+n'_2}\big].
+z_4^\gamma={}&z^0_4(\check n_2,\check n'_2)
+ +(\omega_2\overline{\check n_2+\check n'_2})\cup_3\mathcal{ℰ}_3^\gamma
+ +d(\check n_2\cup_1\check n'_2)\cup_4
+       (\omega_2\overline{\check n_2+\check n'_2})\\
+&+(\check n'_2)^2\cup_4(\omega_2\check n_2)
+ +[(\check n'_2)^2+\omega_2\check n'_2]\cup_4
+                     (s_1\overline{\beta^\circ\check n_2})\\
+&+(\omega_2\cup_1s_1)\lambda_2^\gamma
+ +(\check n_2\cup_1\check n'_2)\cup_3
+       [s_1(\overline{\beta^\circ\check n_2}
+                       +\overline{\beta^\circ\check n'_2})]\\
+&+\overline{\check n_2+\check n'_2}^{\,2}\cup_3(s_1\lambda_2^\gamma)
+ +(\check n_2\cup_1\check n'_2)\cup_2(s_1\lambda_2^\gamma)\\
+&+s_1\Big[\mathcal{ℰ}_3^\gamma
+ +\overline{\beta^\circ\check n_2}\cup_3
+                     \overline{\beta^\circ\check n'_2}
+ +\lambda_2^\gamma\cup_1\lambda_2^\gamma\\
+&\qquad+(\overline{\beta^\circ\check n_2}
+                      +\overline{\beta^\circ\check n'_2})
+                    \cup_3(s_1\lambda_2^\gamma)
+ +(s_1\lambda_2^\gamma)\cup_2\lambda_2^\gamma\\
+&\qquad+\overline{
+ \beta^{\circ+}\overline{\check n_2+\check n'_2}
+ -\beta^{\circ+}\check n_2-\beta^{\circ+}\check n'_2}\Big].
 \end{aligned}
 ```
 
-The complete intrinsic term $`z^0_4(n_2,n'_2)`$ is given by the
-[finite word definition](#intrinsic-word-products).
+The second carry obeys $`\beta^{\circ+}=\beta^+`$ in this closed sector.
+The complete intrinsic term is the same two-input operation as in the
+full product:
+
+```math
+\begin{aligned}
+z^0_4(x,y)={}&\sum_{\substack{v\in\{12123434,12134131,12314324,12314342,\\
+                         13242412,13413142,13432412\}}}\mathop{\mathrm{MS}}\nolimits_v(x,x,y,y)\\
+&+\mathop{\mathrm{MS}}\nolimits_{12123}(x+y,y,x\cup_2y)
+ +\mathop{\mathrm{MS}}\nolimits_{123131}(y,x,x\cup_1y)\\
+&+(x\cup_1y)\cup_1y
+ +(\overline{\beta^\circ x}+\overline{\beta^\circ y})\cup_1(x\cup_2y)\\
+&+(x\cup_2y)\cup_1
+  (\overline{\beta^\circ x}+\overline{\beta^\circ y}+y\cup_1x)\\
+&+(x\cup_1y)\cup_3(x^2+y^2)
+ +y\cup_2[x\cup_1(x\cup_1y)]
+ +\overline{\beta^\circ y}\cup_2\overline{\beta^\circ x}.
+\end{aligned}
+```
+
+The displayed sum contains seven word terms; the complete $`z_4^0`$
+has 20 distributed terms. The [interval-cut convention](OPERATIONS.md)
+fixes their finite cochain evaluation.
 
 <a id="majorana-4d"></a>
 ## 4+1D
@@ -583,16 +638,28 @@ d_{s_1}\widehat\nu_5=\widehat{\mathcal{𝒪}}_6
 
 **(M4, 4+1D)**
 
+Here the integer decoration is zero, so $`\check n_3=n_3`$ and
+$`\beta^\circ n_3=\beta n_3`$. The following is the same maintained
+formula as in the full 4+1D tower:
+
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}^\gamma_6(n_3)={}&\frac12\big[
- \zeta_{2,3}(\omega_2,n_3)+\mathcal X_6(n_3)\\
-&\qquad+(n_3\cup_1n_3)\cup_4(\omega_2 n_3)\\
-&\qquad+(n_3\cup_1n_3)\cup_4(s_1\overline{\beta n_3})\\
-&\qquad+(\omega_2 n_3)\cup_4(s_1\overline{\beta n_3})\\
-&\qquad+\zeta_{1,4}(s_1,\overline{\beta n_3})\\
-&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_3}+s_1(n_3\cup_1n_3)+s_1^2\overline{\beta^+n_3}\big]\\
-&+\frac14\big[{\omega_2} \beta n_3+\beta n_3\cup_2\beta n_3\big].
+\widehat{\mathcal{𝒪}}_6^\gamma
+={}&\frac12\Big[
+ \zeta_{2,3}(\omega_2,\check n_3)+\mathcal X_6(\check n_3)\\
+&\qquad+(\check n_3\cup_1\check n_3)\cup_4(\omega_2\check n_3)
+ +(\check n_3\cup_1\check n_3)\cup_4
+       (s_1\overline{\beta^\circ\check n_3})\\
+&\qquad+(\omega_2\check n_3)\cup_4
+       (s_1\overline{\beta^\circ\check n_3})
+ +\zeta_{1,4}(s_1,\overline{\beta^\circ\check n_3})\\
+&\qquad+(\omega_2\cup_1s_1)\overline{\beta^\circ\check n_3}
+ +s_1(\check n_3\cup_1\check n_3)\Big]\\
+&+\frac14\Big[
+ \omega_2\beta^\circ\check n_3
+ +(\beta^\circ\check n_3)\cup_2(\beta^\circ\check n_3)
+ +s_1^2(\beta^\circ\check n_3+\overline{\beta^\circ\check n_3})
+ \Big].
 \end{aligned}
 ```
 
@@ -600,10 +667,11 @@ Its word operations are
 
 ```math
 \begin{aligned}
-\zeta_{2,3}(\omega_2,n_3)
- &=\mathop{\mathrm{MS}}\nolimits_{12313434}(\omega_2,\omega_2,n_3,n_3),\\
-\zeta_{1,4}(s_1,\overline{\beta n_3})
- &=\mathop{\mathrm{MS}}\nolimits_{12314343}(s_1,s_1,\overline{\beta n_3},\overline{\beta n_3}).
+\zeta_{2,3}(w,x)
+ &=\mathop{\mathrm{MS}}\nolimits_{12313434}(w,w,x,x),\\
+\zeta_{1,4}(s,b)
+ &=\mathop{\mathrm{MS}}\nolimits_{12314343}(s,s,b,b),\\
+&\deg(w,x,s,b)=(2,3,1,4).
 \end{aligned}
 ```
 
@@ -615,9 +683,13 @@ The intrinsic polynomial is
 
 ```math
 \begin{aligned}
-\mathcal X_6(n_3)&=(\mathop{\mathrm{MS}}\nolimits_{1213243142}+\mathop{\mathrm{MS}}\nolimits_{1213431412}
- +\mathop{\mathrm{MS}}\nolimits_{1232431421}+\mathop{\mathrm{MS}}\nolimits_{1234314212})(n_3,n_3,n_3,n_3)
- +\overline{\beta n_3}\cup_2\overline{\beta n_3}.
+\mathcal X_6(x)
+={}&\big(\mathop{\mathrm{MS}}\nolimits_{1213243142}
+ +\mathop{\mathrm{MS}}\nolimits_{1213431412}
+ +\mathop{\mathrm{MS}}\nolimits_{1232431421}
+ +\mathop{\mathrm{MS}}\nolimits_{1234314212}\big)(x,x,x,x)\\
+&+(\mathrm{Sq}^1x)\cup_2(\mathrm{Sq}^1x),
+\qquad x\in C^3(G_b,\mathbb Z_2).
 \end{aligned}
 ```
 
@@ -680,8 +752,8 @@ N_4=n_4+n'_4+\mathcal{ℰ}_4,\qquad
 **(M3Ec, 4+1D)**
 
 ```math
-\widehat{\mathcal{ℰ}}^{c}_5
- =\frac12\big[n_4\cup_3n'_4
+\widehat{\mathcal{ℰ}}_5^c
+=\frac12\big[n_4\cup_3n'_4
  +(n_4+n'_4)\cup_3\mathcal{ℰ}_4\big].
 ```
 
@@ -691,11 +763,15 @@ N_4=n_4+n'_4+\mathcal{ℰ}_4,\qquad
 
 **(M3Ecγ, 4+1D)**
 
+Use $`\mathcal{𝒪}_5^{\gamma\psi}=0`$ and the actual binary lower output in the common formula:
+
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^{c\gamma}_5
- =\frac12\big[&dn_4\cup_4n'_4+N_4\cup_4dN_4\\
- &+n_4\cup_4dn_4+n'_4\cup_4dn'_4\big].
+\widehat{\mathcal{ℰ}}_5^{c\gamma}
+={}&\frac12\Big[
+ \big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\cup_4n'_4\\
+&\qquad+\Delta\Big[
+ n_4\cup_4\big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\Big]\Big].
 \end{aligned}
 ```
 
@@ -705,42 +781,63 @@ N_4=n_4+n'_4+\mathcal{ℰ}_4,\qquad
 
 **(M7, 4+1D)**
 
+This is the restriction of the same complete two-input law to
+$`n_2=n'_2=0`$, $`\check n_3=n_3`$, and $`dn_3=dn'_3=0`$.
+In particular $`\beta^\circ=\beta`$,
+$`\lambda_4^\gamma=0`$, and
+$`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; all displayed derivatives
+of the closed integer Bocksteins vanish. No extra phase coordinate is
+selected on this subspace.
+
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^\gamma_5={}&\frac12z_5
- +\frac14\big[\beta n_3\cup_3\beta n'_3\\
-&\qquad-(\beta n_3+\beta n'_3)\cup_2\overline{n_3\cup_3n'_3}\\
-&\qquad-\overline{n_3\cup_3n'_3}\cup_2\beta N_3\\
-&\qquad+\overline{n_3\cup_3n'_3}\cup_1\overline{n_3\cup_3n'_3}\\
-&\qquad-{\omega_2}\,\overline{n_3\cup_3n'_3}\big].
+\widehat{\mathcal{ℰ}}_5^\gamma
+={}&\frac12\Big[
+ \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
+       \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)
+ +s_1\big[(\bar B_4^\gamma+\bar B_4^{\gamma\prime})
+                         \cup_3\bar\lambda_3^\gamma\big]\\
+&\qquad+(\bar\lambda_4^\gamma)_{12345}
+                  (\bar\lambda_3^\gamma)_{0145}
+ +(\bar\lambda_4^\gamma)_{01235}
+                  (\bar\lambda_3^\gamma)_{0345}-s_1\mathcal{ℰ}_4^\gamma\Big]\\
+&+\frac14\Big[
+ B_4^\gamma\cup_3B_4^{\gamma\prime}
+ -(B_4^\gamma+B_4^{\gamma\prime})\cup_2\lambda_3^\gamma\\
+&\qquad+\lambda_3^\gamma\cup_2\beta^\circ(\check n_3+\check n'_3)
+ +\lambda_3^\gamma\cup_1\lambda_3^\gamma+\omega_2\lambda_3^\gamma\\
+&\qquad-(dB_4^\gamma+dB_4^{\gamma\prime})\cup_3\lambda_3^\gamma
+ +\lambda_3^\gamma\cup_2\lambda_4^\gamma
+ +dB_4^\gamma\cup_4B_4^{\gamma\prime}\\
+&\qquad+(dB_4^\gamma+dB_4^{\gamma\prime})\cup_4d\lambda_3^\gamma
+ -(B_4^\gamma+B_4^{\gamma\prime}+d\lambda_3^\gamma)
+                                      \cup_3\lambda_4^\gamma\\
+&\qquad-(\lambda_4^\gamma)_{01235}(\lambda_4^\gamma)_{01345}
+ +(\lambda_4^\gamma)_{02345}(\lambda_4^\gamma)_{01245}\\
+&\qquad-(\lambda_4^\gamma)_{01235}(\lambda_4^\gamma)_{12345}
+ -(\lambda_4^\gamma)_{01345}(\lambda_4^\gamma)_{12345}\\
+&\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
+ \epsilon\;\overline{
+       \sum_{\eta\in\mathcal P}\prod_{(x,f)\in\eta}x_f}
+ \Big]\\
+&-R_5[\check n_3+\check n'_3,0]
+ +R_5[\check n_3,0]+R_5[\check n'_3,0]\pmod1.
 \end{aligned}
 ```
 
-Here the binary completion is
+The carries and coefficient sets are the shared
+[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`R_5`$ is the same
+[phase-change cochain](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
+The earlier compact closed-product expression differs by its explicit
+output coboundary as well as the phase-coordinate comparison. It is not
+an additional primary law for the same displayed phase.
+The common [self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md)
+may likewise be restricted to this sector without changing representatives.
 
 <a id="eq-m8-4d"></a>
-
-**(M8, 4+1D)**
-
-```math
-\begin{aligned}
-z_5={}&z^0_5(n_3,n'_3)+(\omega_2N_3)\cup_4\mathcal{ℰ}_4
- +d(n_3\cup_2n'_3)\cup_5(\omega_2N_3)\\
-&+(n'_3\cup_1n'_3)\cup_5(\omega_2n_3)\\
-&+((n'_3\cup_1n'_3)+\omega_2n'_3)\cup_5(s_1\overline{\beta n_3})\\
-&+(\omega_2\cup_1s_1)(n_3\cup_3n'_3)
- +(n_3\cup_2n'_3)\cup_4[s_1(\overline{\beta n_3}+\overline{\beta n'_3})]\\
-&+(N_3\cup_1N_3)\cup_4(s_1(n_3\cup_3n'_3))+(n_3\cup_2n'_3)\cup_3(s_1(n_3\cup_3n'_3))\\
-&+s_1\big[\mathcal{ℰ}_4+\overline{\beta n_3}\cup_4\overline{\beta n'_3}\\
-&\qquad+(n_3\cup_3n'_3)\cup_2(n_3\cup_3n'_3)\\
-&\qquad+(\overline{\beta n_3}+\overline{\beta n'_3})\cup_4(s_1(n_3\cup_3n'_3))\\
-&\qquad+(s_1(n_3\cup_3n'_3))\cup_3(n_3\cup_3n'_3)\\
-&\qquad+\overline{\beta^+N_3-\beta^+n_3-\beta^+n'_3}\big].
-\end{aligned}
-```
-
-The complete intrinsic term $`z^0_5(n_3,n'_3)`$ is given by the
-[finite word definition](#intrinsic-word-products).
+The mathematical intrinsic word operation is retained in the
+[derivation below](#intrinsic-word-products); its role does not define a
+second terminal stacking convention.
 
 <a id="fmps-1d"></a>
 ## 1+1D fMPS endpoint

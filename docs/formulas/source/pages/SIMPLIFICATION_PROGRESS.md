@@ -46,7 +46,7 @@ this documentation update does not claim a new runtime benchmark.
 | 2+1D, zero integer decoration | 8 terms | [Formula and exact proof](TWO_DIMENSIONAL_SELF_STACKING.md) |
 | 3+1D, zero p+ip | 10 terms | [Complete self-stacking](THREE_DIMENSIONAL_SELF_STACKING.md) |
 | 3+1D, canonical torsion p+ip root | 1,414 terms | [All six contributions](THREE_DIMENSIONAL_SELF_STACKING.md) |
-| 4+1D, zero p+ip | 30 terms, with its explicit output gauge | [Complete closed specialization](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md) |
+| 4+1D, zero p+ip | Restriction of the shared current self-stacking law | [Complete closed specialization](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md) |
 | 4+1D, arbitrary permitted p+ip | 4,407,587 outer terms | [Complete self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md) |
 
 The 3+1D open-Majorana contribution now has 13 outer terms instead of

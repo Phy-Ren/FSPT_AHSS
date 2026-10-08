@@ -36,6 +36,21 @@ reader page and its source independently. `--check` rejects a stale or
 hand-edited generated page. Shared equation changes propagate to every
 page using that equation; the manifest makes their scope reviewable.
 
+Manuscript equations are frozen exports of these same sources. To update a
+reviewed manuscript snapshot, pass its equation manifest to the exporter:
+
+```sh
+python docs/formulas/export_manuscript.py /path/to/equations/MANIFEST.json
+python docs/formulas/export_manuscript.py --check /path/to/equations/MANIFEST.json
+```
+
+The exporter changes only the script-letter typography and the manuscript's
+word-operation glyph. It records source and output checksums. The check rejects
+both a stale export and a manually edited formula. Mathematical simplification
+belongs here first; a manuscript is not a second editable formula reference.
+Closed-sector pages reuse the current law with an explicitly stated restriction,
+rather than maintaining an independent equivalent expression or phase choice.
+
 A change to the cochain representative still requires its explicit
 paired source/product map, affected gauge maps, formula verification,
 and updated counts. This document generator does not prove an identity

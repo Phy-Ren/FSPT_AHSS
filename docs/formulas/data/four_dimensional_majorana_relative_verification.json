@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "word_count": 1897,
+  "block_count": 77,
+  "coefficient_sha256": "f5af070a022bdc9b6547f1ae67dd536d6382c113a0a4a3480c6a4a211190e2a9",
+  "exact_source_check": {
+    "status": "PASS",
+    "scalar_cases": 16,
+    "symbolic_variables": 56,
+    "symbolic_residual_terms": 0,
+    "open_bockstein_equals_Sq1_all_faces": true,
+    "closed_restriction_independent_variables": 41,
+    "closed_restriction_residual_terms": 0,
+    "reader_relative_blocks": 77,
+    "reader_relative_coefficients_equal_JSON": true,
+    "reader_phase_words_equal_verified_dictionary": true,
+    "new_MS_terms": 1897,
+    "construction_pure_MS_terms": 85,
+    "construction_mixed_MS_terms": 1005,
+    "scope": "Exact unrestricted open-u source identity, all closed backgrounds, modulo one. Original mixed quadratic and carry terms occur unchanged on both sides.",
+    "seconds": 4.154347439296544
+  },
+  "closed_restriction_check": {
+    "status": "PASS",
+    "identity": "The complete current relative MS polynomial vanishes when d check n_3 = 0.",
+    "independent_variables": 41,
+    "residual_terms": 0,
+    "backgrounds": "Arbitrary closed omega_2 and s_1 on the ordered six-simplex.",
+    "method": "Exact binary coefficient identity using an arbitrary closed Majorana input."
+  },
+  "scope": "Coupled source representative transport; exact polynomial check on unrestricted Majorana input and closed backgrounds. No new physical calibration is inferred.",
+  "standalone_verifier": "scripts/verify_majorana_phase_transport.py"
+}

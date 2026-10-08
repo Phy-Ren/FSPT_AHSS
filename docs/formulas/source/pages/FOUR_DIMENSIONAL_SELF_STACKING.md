@@ -11,7 +11,7 @@ $`d_{s_1}n_2=0`$,
 $`d\check n_3=\check{\mathcal{𝒪}}_4[n_2]
  =\bar n_2^2+\check\omega_2\bar n_2`$, and
 $`dn_4=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}
- +\mathcal{𝒪}_5^\psi`$. The bosonic obstruction is the unchanged
+ +\mathcal{𝒪}_5^\psi`$. The bosonic obstruction is the same
 [4+1D obstruction](FOUR_DIMENSIONAL.md). Neither $`\check n_3`$ nor
 $`n_4`$ is set to zero. The output Majorana cochain shown below is closed and need not vanish.
 
@@ -24,7 +24,12 @@ identities.
 The [root-power construction](ROOT_POWER_PRESENTATIONS.md) explains how
 relative self-power relations determine a finite abelian extension and how
 odd orders are handled. The complete two-input law remains available; this
-page specifies its exact equal-input specialization.
+page specifies its exact equal-input specialization. The
+[terminal phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is specialized at
+the same time. Since the binary sum of two equal Majorana inputs is zero,
+$`2R_5[\check n_3,0]=\tfrac12(\check n_3\cup_1\check n_3)`$ modulo
+one; the half-valued part doubles to an integer. This gives the short
+extra terms below directly from the general law.
 
 ## 1. Integer decoration
 
@@ -98,8 +103,8 @@ The first sum contains **187 specified MS terms** in the
 The final sum contains **four whole binary lifts**, with signs
 $`+,-,-,+`$ and respectively **5, 15, 10, and 76 interior terms** in the
 [self-stacking lift table](FOUR_DIMENSIONAL_SELF_STACKING_LIFTS.md).
-The complete contribution has **200 outer terms**, or **302 explicit
-occurrences** when the four lift wrappers are replaced in the count by
+The complete contribution has **200 outer terms before the phase transport**, or **302 explicit
+occurrences before that transport** when the four lift wrappers are replaced in the count by
 their 106 interior products. Every lift boundary is retained.
 
 The [exact cochain-identity reduction](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md)
@@ -108,9 +113,11 @@ uses the exact lower-obstruction identity
 $`dB_4^\gamma=-\beta(\check{\mathcal{𝒪}}_4[n_2])`$
 on the stated input tower.
 This is the same open-cochain representative as the general formula.
-No cocycle hypothesis on $`\check n_3`$ has been imposed. If p+ip
-vanishes and $`d\check n_3=0`$, the further closed-Majorana reduction
-and its explicitly stated output gauge remain available separately.
+No cocycle hypothesis on $`\check n_3`$ has been imposed. The phase
+transport adds the two displayed half terms
+$`[\check n_3\cup_1\check n_3-s_1\mathcal{ℰ}_4^\gamma]/2`$.
+The zero-p+ip sector uses this same expression with its lower constraints;
+it does not select a separate terminal coordinate.
 
 ### Majorana and p+ip decoration
 
@@ -122,10 +129,13 @@ include the completed transfer and tensor contributions before the two
 external inputs are identified. The remaining terms give **181 outer
 terms** after the three displayed quarter numerators are substituted and
 their linear sums distributed, retaining standard lower operations.
-Thus this contribution currently has **3,613,698 outer terms**; the
+Thus this contribution currently has **3,613,698 outer terms before the phase transport**; the
 protected mixed lift has eight interior terms. This large residual is
 preserved as exact verification data and remains a target for structural
-simplification.
+simplification. The additional term
+$`-s_1\mathcal{ℰ}_4^{\gamma\psi}/2`$ is its entire coordinate
+correction on equal inputs: the three general $`R_5`$ evaluations cancel
+exactly here.
 
 ### p+ip decoration
 
@@ -135,9 +145,13 @@ This finite sum contains **793,669 terms**, including the complete
 integer-decoration and tensor contributions. Its
 [explicit coefficient files](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/INDEX.json)
 use the same lower-operation conventions as the general formula. The
-remaining displayed terms add **14 outer terms**, giving **793,683**.
+remaining displayed terms add **14 outer terms**, giving **793,683 before the phase transport**.
 The protected pure lift has twelve interior terms. The denominator-three
 term of the general law vanishes identically on equal inputs.
+The extra half term and $`-R_5[\check N_3,0]`$ are the remaining
+pure-integer coordinate correction; the latter has 45 explicit terms
+with the defined output as its argument. Its complete coefficient list
+is shared with the general phase map rather than fitted on the diagonal.
 
 The two large coefficient lists are exact specializations of completed
 cochain expressions, not of their input kernels. The

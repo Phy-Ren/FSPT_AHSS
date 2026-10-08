@@ -1,53 +1,56 @@
 # Term census data and verification
 
 Read the [counting conventions and tables](../TERM_COUNTS.md) before
-comparing numbers. Nested cup expressions, fully flattened MS words,
-scalar face monomials, and raw indexed occurrences are different metrics.
-The primary reader count preserves fully defined lower differentials and
-stacking twisters, standard operations and the defined integral quadratic
-cochain.
-Substituting their lower equations is a supplementary verification, not a
-requirement for understanding or using the higher formula.
+comparing numbers. Current counts are uncollected displayed expression
+occurrences. Every finite word sum, scalar face sum, and evaluation of
+the fixed terminal phase map is expanded; the complete lower output
+cochains, standard operations, and protected integer lifts retain their
+stated scopes. These are not minimal cochain normal forms.
 
-The current 4+1D Majorana twister has **624 explicit expression leaves**
-and **482 outer addends**. The difference comes from four separate
-canonical lifts with 5, 15, 10 and 116 interior products: 624 = 482 − 4 + 146.
-These products remain inside the nonlinear lifts; they are not separate
-quarter-valued phase addends. The ledger records both boundaries. Its
-complete E5 total of **8,555,388** uses this 624-leaf entry and the declared
-boundaries of the other contributions; replacing that entry by its outer
-count instead gives **8,555,246**.
+The current 4+1D source has **625,821 terms**. Its Majorana contribution
+has **16**, its mixed Majorana–p+ip contribution **1,907**, and its pure
+p+ip contribution **623,886**. The current paired product has
+**8,555,622 expression occurrences**, including **760 Majorana leaves**
+in **618 outer addends**. Replacing that one lift-interior count by its
+outer count gives **8,555,480**. The four protected lift interiors still
+contain 5, 15, 10, and 116 products.
 
-- [Structured count ledger](STRUCTURED_TERM_COUNTS.json): displayed terms
-  with the defined lower differentials, stacking twisters and integer
-  carries retained, including all explicit finite-sum and lift-interior counts.
-- [Archived supplementary lower-layer expansions](LOWER_TERM_COUNTS.json): every 2+1D law and the lower
-  3+1D/4+1D laws, with separate ordinary-derivative and tower-expanded counts.
-- [Archived 3+1D terminal expansions](three_dimensional/INDEX.json): twelve files containing
-  the actual retained MS words, physical input alphabets and degrees,
-  reference scalar polynomials, and the separate integer and face terms.
-- [Archived 4+1D substituted source terms](four_dimensional/SOURCE_SUBSTITUTED_TERMS.json):
-  the explicit source operations and protected integer expressions in the
-  six physical contributions, with total 628,789 at this supplementary boundary.
-- [Complete 4+1D pure-source polynomial](../FOUR_DIMENSIONAL_Y6_FACES.md):
-  623,880 distinct physical face monomials, with every coefficient supplied.
-- [Current 4+1D Majorana stacking formula](../FOUR_DIMENSIONAL.md#majorana-decoration-1):
-  624 explicit leaves in 482 outer addends, with every protected interior
-  product in the [canonical-lift table](../FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md).
-- [Archived 4+1D Majorana expansions](../FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md):
-  the previous 6,176-term expression with standard differential inputs,
-  plus its replayable 87,189-term lower-equation substitution. The current
-  formula is an exact rewriting of the former, with no additional gauge.
-- [Historical 4+1D execution census](four_dimensional/FOUR_DIMENSIONAL_CENSUS.json):
-  raw occurrences in an earlier construction. These are not final formula
-  term counts and do not replace the explicit coefficient lists above.
-- [Historical 4+1D construction data](four_dimensional/FOUR_DIMENSIONAL_COUNT_DATA.json):
-  the kernel weights, tensor weights, and visible contributions used by
-  the finite-index recurrence.
+The phase map with zero complex-fermion argument has 44 half-valued
+terms and one quarter-valued term. The displayed general formulas use
+three, three, and one such evaluations in the Majorana, mixed, and pure
+p+ip contributions. Each contribution also has one additional lower
+stacking term. The exact additions are therefore **136, 136, and 46**
+at this counting boundary, before collecting across evaluations.
+The full self-stack has **4,407,636 outer occurrences**; expanding the
+four Majorana lift interiors in the count gives **4,407,738**.
 
-From the repository root, run:
+- [Current structured ledger](STRUCTURED_TERM_COUNTS.json) records every
+  physical contribution, the phase-map costs, exact current totals,
+  protected interiors, and source hashes.
+- [Archived lower-layer expansions](LOWER_TERM_COUNTS.json) substitute
+  the lower equations at a separate boundary.
+- [Archived 3+1D terminal expansions](three_dimensional/INDEX.json) retain
+  the actual word lists and integer and face terms. The shared X5 has
+  four words; the current pure Majorana O5 still has 15 terms.
+- [Archived 4+1D source expansion](four_dimensional/SOURCE_SUBSTITUTED_TERMS.json)
+  and its 628,789 total describe the preceding phase coordinate.
+- [Current pure-source polynomial](../FOUR_DIMENSIONAL_Y6_FACES.md)
+  contains 623,880 physical face monomials, unchanged by the phase map.
+- [Majorana carry data](../FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md)
+  specify every protected lift product. The carry-reduced coefficient
+  part and the fixed paired transport are both included in current counts.
+- [Archived Majorana expansions](../FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md)
+  contain the preceding 6,176-term expression and its 87,189-term
+  lower-equation expansion.
+- [Historical execution census](four_dimensional/FOUR_DIMENSIONAL_CENSUS.json)
+  and [construction weights](four_dimensional/FOUR_DIMENSIONAL_COUNT_DATA.json)
+  count an earlier finite construction. Their fields named current refer
+  to that archived comparison, not the present reader formulas.
+
+From the repository root:
 
 ```sh
+python docs/formulas/term_census/verify_structured_counts.py
 python docs/formulas/term_census/three_dimensional/verify_manifests.py
 python docs/formulas/term_census/four_dimensional/derive_four_dimensional_weights.py
 python docs/formulas/term_census/four_dimensional/derive_four_dimensional_weights.py --current
@@ -55,22 +58,10 @@ python docs/formulas/term_census/four_dimensional/replay_four_dimensional_census
 python docs/formulas/coefficients/verify_majorana_carry_reduction.py
 ```
 
-All scripts use only the Python standard library. The first independently
-expands every retained MS word and checks the entire binary scalar polynomial
-against its recorded unreduced target, for all twelve contributions.
-It does not re-derive the integer carry expressions or pure face tables.
-The historical 4+1D weight script derives every kernel weight from the literal
-formulas and complete local coefficient data, for both the baseline and
-current formulas. The census replay independently recomputes the finite
-construction multiplicities from those verified weights. These reproduce
-the historical execution census, not the current reader-facing counts.
-The last script compares the current signed-carry expression with the
-archived 5,707-term Majorana face polynomial, preserving its four separate
-canonical lifts. It is an input replay of the cochain identity, not a
-replacement for its algebraic derivation. None of these checks is a
-cobordism comparison or a new physical calibration.
-
-The term alphabets use physical expressions. They are data indices for
-replaying a coefficient list, not additional notation in the reader formulas.
-Canonical lift and exact-division boundaries are part of the recorded
-expressions and must be preserved.
+The first checks the current arithmetic, shared operation sizes, phase-map
+occurrences, and exact maintained source hashes. The remaining scripts
+verify the declared coefficient and historical comparison data at their
+own boundaries. They do not turn a prior phase-coordinate count into a
+current one. The [phase transport proof](../FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
+relates the complete source and product; these counting checks add no
+new physical-calibration claim.

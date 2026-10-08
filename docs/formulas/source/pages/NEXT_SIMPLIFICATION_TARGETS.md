@@ -1,9 +1,11 @@
 # Further formula simplification
 
 The [Majorana carry reduction](FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
-is an exact replacement in the existing representative. The
-[28-term closed diagonal](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md) has an
-explicit output coboundary relating it to that representative. The
+rewrites its coefficient part exactly. The current
+[phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) transports the complete
+source and product together; the
+[closed diagonal](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md) is a restriction
+of that same canonical law. The
 [quadratic cochain](QUADRATIC_REFINEMENTS.md) organizes repeated fractional
 terms and supplies an exact variation law. These are established results;
 the targets below are proposed further reductions.
@@ -12,10 +14,10 @@ the targets below are proposed further reductions.
 
 | Contribution | Current terms |
 | --- | ---: |
-| $`\widehat{\mathcal{𝒪}}_6^{\gamma\psi}`$ | 1,012, including 1,005 MS terms |
-| $`\widehat{\mathcal{𝒪}}_6^\psi`$ | 623,885 |
-| $`\widehat{\mathcal{ℰ}}_5^{\gamma\psi}`$ | 5,685,451 |
-| $`\widehat{\mathcal{ℰ}}_5^\psi`$ | 2,869,220 |
+| $`\widehat{\mathcal{𝒪}}_6^{\gamma\psi}`$ | 1,907, including 1,897 MS terms |
+| $`\widehat{\mathcal{𝒪}}_6^\psi`$ | 623,886 |
+| $`\widehat{\mathcal{ℰ}}_5^{\gamma\psi}`$ | 5,685,587 |
+| $`\widehat{\mathcal{ℰ}}_5^\psi`$ | 2,869,266 |
 
 ## Current targets in 3+1D
 
@@ -26,13 +28,20 @@ the targets below are proposed further reductions.
 | $`\widehat{\mathcal{ℰ}}_4^{\gamma\psi}`$ | 16,059 |
 | $`\widehat{\mathcal{ℰ}}_4^\psi`$ | 10,583 |
 
-These use the current [displayed-expression counting boundary](TERM_COUNTS.md):
+These are uncollected expression occurrences at the current
+[displayed-expression counting boundary](TERM_COUNTS.md):
 defined lower operations and the quadratic cochain remain structured
 inputs, while finite coefficient sets are fully enumerated. Whole
 canonical lifts have separately recorded interior counts. Thus the
 4+1D pure-source total includes the quadratic cochain as a structured
 operation with its three defining terms stated explicitly; it does not
-treat its 623,880-term finite completion as one term.
+treat its 623,880-term finite completion as one term. Each phase-map
+evaluation is expanded into its 45 terms with zero second argument,
+while its complete lower-output field remains an argument.
+The compact pure Majorana obstruction now has 16 terms; the paired
+coordinate change also modifies the mixed source and every terminal
+product. This redistributes complexity rather than claiming a reduction
+of the entire tower: the current complete O6 count is 625,821.
 
 ## A smaller target for group reconstruction
 
@@ -60,8 +69,9 @@ already incorporated from the proposals below.
 ## Proposed reductions
 
 1. **The 4+1D Majorana–p+ip source and product.** The source still contains
-   1,005 specified MS terms, and its stacking coefficient set is the
-   largest remaining block. Separate the already determined integral
+   1,897 specified MS terms, and its stacking coefficient set is the
+   largest remaining block. The explicit 45-term phase map supplies a
+   bounded polarization target before the large residual is revisited. Separate the already determined integral
    quadratic polarization from the binary correction. Then seek a direct
    polarization of that binary correction in the defined lower
    obstructions and stacking twisters. The required result is a coupled

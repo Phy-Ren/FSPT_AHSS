@@ -6,7 +6,7 @@ This is the programmer's companion to the
 [formula guide](../docs/FORMULA_GUIDE.md). The mathematical notation is defined
 there; this page translates it into existing API keys, local source variables,
 and compiled program names. These identifiers are scoped to their functions.
-They do not introduce additional fields into the formulas. The numerical kernels and their field names retain the supplied representative. The guide now also uses an explicitly transported terminal phase. Compare cochains only after the [3+1D paired map](../docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) or the [4+1D operator map](../docs/formulas/REPRESENTATIVES.md#operator-phase-4d), as appropriate. These maps leave the lower decoration fields and abstract stacking groups unchanged.
+They do not introduce additional fields into the formulas. The numerical kernels and their field names retain the supplied representative. The guide now also uses an explicitly transported terminal phase. Compare cochains only after the [3+1D paired map](../docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) or the [complete 4+1D phase map](../docs/formulas/REPRESENTATIVES.md#compact-majorana-phase-4d), as appropriate. These maps leave the lower decoration fields and abstract stacking groups unchanged.
 
 The explicit $`4+1`$D Majorana stacking expression additionally uses the
 [displayed output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md):
@@ -32,8 +32,7 @@ before conversion to the integer phase coefficient. The 4+1D coefficient
 normalization identifies `B4(n,0)` with its already defined integer-only
 part `B4psi(n)`; it does not distribute a protected lift or change its
 arguments. The public coefficient receipts record these identities.
-No numerical kernel, representative map, or saved group result changes
-as a consequence of these exact reader-formula rewrites.
+These algebraic reductions do not by themselves change a representative. The later compact-Majorana phase conversion is separate and must also be applied when comparing the current reader formula with the frozen numerical kernels.
 
 ## Public integer-layer API
 
@@ -322,7 +321,16 @@ gamma-psi split of the lower formulas expands the same open-cochain
 Steenrod operation and partitions the existing product terms. For the
 terminal 4+1D source, substitute `B = beta_open(u) + K` and expand the
 ordered bilinear integer cups. Sum the displayed six physical blocks to
-recover `high6` plus its existing cubic term.
+recover the preceding `high6` coordinate plus its existing cubic term.
+The current source then subtracts the twisted coboundary of the explicit
+`R5(check_n3,n4)` in the [phase dictionary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
+Its current terminal product subtracts `R5(check_N3,N4)-R5(check_n3,n4)-R5(check_n3_prime,n4_prime)`.
+Here `check_N3` includes the integer-layer Majorana carry and `N4` includes
+the full complex-fermion twister. Using componentwise sums is incorrect.
+The source and general/self product are converted together. The frozen
+compiled kernels remain in their stated coordinate; this explicit wrapper
+is required for literal reader-formula comparison, while the abstract
+classification and stacking groups are unchanged.
 
 The 4+1D terminal product separates all freely variable complex-fermion
 terms. In its remaining term `dCnew` equals the lower fermion source at

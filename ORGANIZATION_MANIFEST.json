@@ -2,7 +2,7 @@
   "schema": "fspt-organized-publication-v1",
   "source_commit": "cdd35dc4c4bd2e56929f49fabacde68300402c84",
   "public_base_commit": "66d55ef79e956d53632b842069ddca11d004fb01",
-  "scope": "Additive example catalogue and canonical formula documentation; prior archives preserved.",
+  "scope": "Completed example catalogue and frozen numerical archives preserved; canonical reader formulas and generated views maintained in one source.",
   "files": {
     "PUBLIC_RELEASE.md": {
       "sha256": "575856f16a6c518680013a1f6e328aa3f7df3a2f140b5ebde3b98c985504d464",
@@ -17,8 +17,8 @@
       "bytes": 2410
     },
     "docs/FORMULA_GUIDE.md": {
-      "sha256": "264c9dd9cc0a7a0d0a87217e07e62e655be7cc2cf1e82e1585f46347a137630c",
-      "bytes": 11952
+      "sha256": "e51953fb1131dc0b9e4178655652739bc8107c7fb1b05ad6ba0b6e7033ac0e17",
+      "bytes": 11944
     },
     "docs/formulas/COBOUNDARY_STACKING_COMPATIBILITY.md": {
       "sha256": "20e5e30a52a971968997585d4b0d0de17d0a2495d779d4a0e17a8f66c11186ab",
@@ -29,8 +29,8 @@
       "bytes": 33461
     },
     "docs/formulas/FOUR_DIMENSIONAL.md": {
-      "sha256": "b379365075278e5141ec4b3c00bc8671769df95be8d7cdec081330161cf52b61",
-      "bytes": 26866
+      "sha256": "2bc61852dbf0b2d217c495f6059b12f7ec65bde74cde7aff4071d36e4bb23d9c",
+      "bytes": 30656
     },
     "docs/formulas/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md": {
       "sha256": "20b87abadaadc44c3d03c557dfec145fff56cc1ad7c49632c284f1be21fdea6d",
@@ -41,16 +41,24 @@
       "bytes": 4117
     },
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": {
-      "sha256": "721bd78da19ccfc86a6d8e2166328890adece83959c2bef79d5e0e18994610cb",
-      "bytes": 5077
+      "sha256": "f3010a8ccba3cd265a1008aa3ecc3b74e880f6a40ea52c59a53a0e7b98421511",
+      "bytes": 3687
+    },
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_PHASE.md": {
+      "sha256": "064ace9e3f5838a5ea7dcd7c7acc56a48391ece6f336c19d765d5de46ed399d3",
+      "bytes": 7126
+    },
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_RELATIVE_WORD_COEFFICIENTS.md": {
+      "sha256": "d9fd32774aaacef3fe5eab58c0dff50a95d6cf99d66a9a914ab9981ce3d82343",
+      "bytes": 36486
     },
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md": {
       "sha256": "cb97b1501a79c5c0fd121aa1a22ad75c290559b519ae571b292e33e70deca174",
       "bytes": 4564
     },
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md": {
-      "sha256": "7a705af9e150bd343a5109e50bb625bea1c9c1bf87b40d110061bf3738c4b112",
-      "bytes": 1735
+      "sha256": "2424c9e60c00e1d7a78c358c0cd1e32fc3215479d0519d244b46c4965daed09a",
+      "bytes": 1863
     },
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": {
       "sha256": "5cc624b61fa4281796b0004eab45f15bbd308d0ecf2e9760de20eb019acad305",
@@ -77,16 +85,16 @@
       "bytes": 13876
     },
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md": {
-      "sha256": "b50903e0b34fbad96d41e8e85d12dac161bf206e7f09128f74dd1ff711fd906d",
-      "bytes": 20192
+      "sha256": "4381e0f5430eae3ea7315b3ed3cf199713fefe64161076717c25b3cb2c540b0e",
+      "bytes": 20326
     },
     "docs/formulas/FOUR_DIMENSIONAL_PHYSICAL_PATHS.md": {
       "sha256": "54f006486d05ffe67b59616d7015381b612900b7386b5c92546a1e988ee0cd05",
       "bytes": 5213
     },
     "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md": {
-      "sha256": "ff7e2e3cdbd7a74f898aee08a1f79ed19e0fcce56a6bc9be29c1897779a83ebe",
-      "bytes": 11111
+      "sha256": "89e7b9b31d05ff2ee197d674c6f18514788366864459ce5c33660812b644d654",
+      "bytes": 12222
     },
     "docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md": {
       "sha256": "300d9b9fd5e8a4eef9e39bccb6e8ab18f39905cb9594408fab3666e71b29c2d8",
@@ -121,12 +129,12 @@
       "bytes": 1726
     },
     "docs/formulas/MAJORANA_AND_ENDPOINTS.md": {
-      "sha256": "f2944dcb0cacccc16aca2f164690d6a51985849f3b9ae90eb9aa265fcf8dfb1b",
-      "bytes": 24560
+      "sha256": "89f497f1e0b201621532933febe44c4f660454fabd1d08afad52b1ea435bb2bd",
+      "bytes": 28423
     },
     "docs/formulas/NEXT_SIMPLIFICATION_TARGETS.md": {
-      "sha256": "23260235957c416183faa51e235b2a38998f3aba4e7475825135e9051fb4279d",
-      "bytes": 5714
+      "sha256": "4804b7705c932783efd9ef50a1bebed6ae0036d8fb99e905f705a2a732207140",
+      "bytes": 6343
     },
     "docs/formulas/OPERATIONS.md": {
       "sha256": "0c1a78a461ddc88564205f9a5925bf344a6a7ea6268a1b5bd7df7f48495fd06e",
@@ -137,36 +145,36 @@
       "bytes": 9528
     },
     "docs/formulas/REFERENCE_MANIFEST.json": {
-      "sha256": "0ac3d28be534eb5bebf2ff4093aed6f3a33258d099cf4379a24e1f3d77b1464e",
-      "bytes": 161883
+      "sha256": "283a3a77229e23334cbfe872cff747e3247b1e15ccae4e90f78ce6153a1a302d",
+      "bytes": 160934
     },
     "docs/formulas/REPRESENTATIVES.md": {
-      "sha256": "df9a108368fbf35a27e6e92804f55602216e433d2b3584333c5d8577370da24e",
-      "bytes": 3923
+      "sha256": "3bee2095a1496c08c84c639a1650e26f3fb52984e98c758968a3fdd5e15337fb",
+      "bytes": 4819
     },
     "docs/formulas/ROOT_POWER_PRESENTATIONS.md": {
       "sha256": "cd0e2a7a03d8d1232e47704c26263e8292dbb5830071269dff7b21b4b06d7c12",
       "bytes": 16035
     },
     "docs/formulas/SIMPLIFICATION_PROGRESS.md": {
-      "sha256": "1ad6337bd50e074803ee9597a339b82c8810a40231871cd3f888ea9a3dd825fb",
-      "bytes": 6302
+      "sha256": "e2bce7674ad3c46789e9336fba14b0cee9de50f6eff5ab0c7a78ce630779e5c9",
+      "bytes": 6313
     },
     "docs/formulas/SOURCE_OPERATIONS.md": {
-      "sha256": "0ee8373948dde4ef735b435e795dfc17ad6da3a986e4d5005a4ef8b47a8cab3a",
-      "bytes": 7070
+      "sha256": "5e4accc67a99dcfd021fc4d2cbfbcd60b58f837037b75d4d027e1b6ffbf5f425",
+      "bytes": 7690
     },
     "docs/formulas/TERMINAL_TRANSFER.md": {
       "sha256": "9d346f91d8f74349d991bbff41b3e256925d2f3a07ed389cd07e04fb790fe6fb",
       "bytes": 15009
     },
     "docs/formulas/TERM_COUNTS.md": {
-      "sha256": "ddf6e5ec491968ec9799a2e8d7ab4e586ef9e8589fa70760ca4fbbdaa58a31ff",
-      "bytes": 18103
+      "sha256": "8a7ae55645f8e1c84ff834c9aaa4fb64f4fa42a38deb3231527837596386e0c1",
+      "bytes": 20068
     },
     "docs/formulas/THREE_DIMENSIONAL.md": {
-      "sha256": "40b45d7a88a1422e85422c1ccf14c0c462547f88dfaf0c9948f0464b32c6f64a",
-      "bytes": 24510
+      "sha256": "7dc4c34a0315a962131059e34b3cb8b6e3ac55cd722c69a789f31f9b95527a4c",
+      "bytes": 24817
     },
     "docs/formulas/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md": {
       "sha256": "1c6f784e3de9ea0d5813f12f7b9f3d11f341b4202e0d2e8b88cc1cf75794f2e9",
@@ -740,13 +748,25 @@
       "sha256": "c966b731f01e93d03e82254302e8917984ad9cf35b37ec4d8c122b83c40cb817",
       "bytes": 2522
     },
+    "docs/formulas/data/four_dimensional_majorana_relative_verification.json": {
+      "sha256": "86c18c06d5322ee73979d75e3ecbbb6abcd6f86a737c64d83a1dafd680e80eba",
+      "bytes": 1525
+    },
+    "docs/formulas/data/four_dimensional_majorana_relative_words.json": {
+      "sha256": "f5af070a022bdc9b6547f1ae67dd536d6382c113a0a4a3480c6a4a211190e2a9",
+      "bytes": 238122
+    },
+    "docs/formulas/export_manuscript.py": {
+      "sha256": "873ed740f5a90275ef98297c39aab1c10e69f50408388245719b99d442bdf3e5",
+      "bytes": 3011
+    },
     "docs/formulas/source/README.md": {
-      "sha256": "0780310e3a461dec0138b016de6c9be9cd64528b1e81545ab16314432d0f08cc",
-      "bytes": 2521
+      "sha256": "4e33c6d7a0be3bac89bd7595a60618f8c20eab13cfe8a84b96a050149ea3fc99",
+      "bytes": 3312
     },
     "docs/formulas/source/catalog.json": {
-      "sha256": "67ba28ca19c52f41a19a7a4c2bea902b452619c99fa9160b59a07d23b112b0d7",
-      "bytes": 8674
+      "sha256": "c15f576d3b267260ef5ed3c133fb0a4f779e63432bc5e32ba518bf97c9934637",
+      "bytes": 8996
     },
     "docs/formulas/source/equations/coboundary-stacking-compatibility--an-exact-4-1d-product-with-a-group-inverse--5.tex": {
       "sha256": "10aebad9e80061c3f63ec658ce8b41b2a4d9627591cf6600a16d30438e77e0f5",
@@ -933,16 +953,16 @@
       "bytes": 360
     },
     "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--14.tex": {
-      "sha256": "cfa037f1669ecf1d9520b9fe39e05ca10140b5d8f8bc998c0a19075c6f6f2db1",
-      "bytes": 363
+      "sha256": "4560b3413fafa17907803814bdb89e1b1e06d720fb84813a48ac8b1ec80c0b2d",
+      "bytes": 697
     },
     "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--15.tex": {
-      "sha256": "84822d4a554bd5a83f2b1279076adbd45c35237b625a604e6b8d968882c85466",
-      "bytes": 626
+      "sha256": "7ba5729c14c540ac5166a0120f86fe562d9ecdea2d165aacd74c1ede0a18b0b7",
+      "bytes": 772
     },
     "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--16.tex": {
-      "sha256": "e091fa721cb3e86749ff1dd07447f8f41c07deeab6b630853b143cee0994848a",
-      "bytes": 605
+      "sha256": "b73242d0f8f54bd8c31cb0651734f6dec37223a6853a65361b33630cb44266c7",
+      "bytes": 640
     },
     "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--17.tex": {
       "sha256": "3ce8cbb8eb417bbac4590cdaf7ad4e0cc2a7d0d453f775776487c5bfe5718c0f",
@@ -981,12 +1001,12 @@
       "bytes": 134
     },
     "docs/formulas/source/equations/four-dimensional--majorana-and-p-ip-decoration--36.tex": {
-      "sha256": "dc42e980261c63ffcc086a06c6017e6157da65d4fb14a98dce35f02187d3b495",
-      "bytes": 691
+      "sha256": "b6236ac0d28bf183ac61fdd77a61419fb83cfd3b0498a0c1b092219eb26cdc0c",
+      "bytes": 808
     },
     "docs/formulas/source/equations/four-dimensional--majorana-decoration--33.tex": {
-      "sha256": "003b8ffba02b481932dfa373718aae2b1a0855207641c48293d609032c4c3dea",
-      "bytes": 1443
+      "sha256": "9ef6b6ca6e93f9ff57e2b92d29fb1e37b8f4e441a28fdc5913bd3ff089f53d83",
+      "bytes": 1542
     },
     "docs/formulas/source/equations/four-dimensional--majorana-decoration--34.tex": {
       "sha256": "edfe19a0047599e81f147d8453034eaa7c4d784542be2148fa20cb2129405d09",
@@ -1005,8 +1025,8 @@
       "bytes": 355
     },
     "docs/formulas/source/equations/four-dimensional--p-ip-decoration--37.tex": {
-      "sha256": "d23071c33165599a618280f1401d3ad2b52e5d1e70a31b2c1daecf48f1b4f384",
-      "bytes": 889
+      "sha256": "d419b9a46b02fed31d7cd2f01ffa3d7d2e24e12044cf6a3b254bc3423393a1d9",
+      "bytes": 948
     },
     "docs/formulas/source/equations/four-dimensional--p-ip-quarter-numerator--43.tex": {
       "sha256": "e7c7b2b3c101ea92bc7afc57abc9432fbbdac82141ac989bd79c49929b5dcb7a",
@@ -1060,25 +1080,21 @@
       "sha256": "60e4b33495f3beac83bfc1eda4dd2edb66d34150f5fdb2864fd96389e53d4138",
       "bytes": 49
     },
-    "docs/formulas/source/equations/four-dimensional-majorana-diagonal--complex-fermions-and-majorana-decoration--6.tex": {
-      "sha256": "737f6e6984a2f893f19d73524b9a842138be76df27a25345f50ccebfca145f06",
-      "bytes": 84
+    "docs/formulas/source/equations/four-dimensional-majorana-phase--cartan--2.tex": {
+      "sha256": "c5d137144dccb66246735b193235914bf03833ca988590d04d46df44e585b140",
+      "bytes": 202
     },
-    "docs/formulas/source/equations/four-dimensional-majorana-diagonal--explicit-output-gauge--10.tex": {
-      "sha256": "c356f78a5c8517ffa2555b67a3cae1e07659a328e773200d7eade7366f9265a7",
-      "bytes": 195
+    "docs/formulas/source/equations/four-dimensional-majorana-phase--intrinsic--1.tex": {
+      "sha256": "a6a63ea9b1e0468ff6307cf6ddb6d2a600f2162c74617d45be9dcb89d4b2d812",
+      "bytes": 325
     },
-    "docs/formulas/source/equations/four-dimensional-majorana-diagonal--explicit-output-gauge--9.tex": {
-      "sha256": "21a025b6eceb2758bcec820ac6b411fde565e3effd913e667ede14ae746903af",
-      "bytes": 126
+    "docs/formulas/source/equations/four-dimensional-majorana-phase--paired-transport--3.tex": {
+      "sha256": "11a462dc75ad9e8b3695816d74b4867ede018e81fe47ae930835e76b39409707",
+      "bytes": 249
     },
-    "docs/formulas/source/equations/four-dimensional-majorana-diagonal--majorana-decoration--7.tex": {
-      "sha256": "50e15d689b505c7804e818d4b9e3e6842b9bda4dec5f65d75dc858d09f652c6e",
-      "bytes": 703
-    },
-    "docs/formulas/source/equations/four-dimensional-majorana-diagonal--majorana-decoration--8.tex": {
-      "sha256": "67f64db779d0059f50990ffdeac5ac82482d1f8bd36312ed2c74efb1239cb148",
-      "bytes": 204
+    "docs/formulas/source/equations/four-dimensional-majorana-phase--phase-change--1.tex": {
+      "sha256": "27f0a13d73bafbf1c37a6ca7d4468662601fb3a2b27fdf2a87ba06b038fff5f7",
+      "bytes": 1102
     },
     "docs/formulas/source/equations/four-dimensional-majorana-stacking-gauge--output-coboundary-in-the-4-1d-majorana-stacking-form--1.tex": {
       "sha256": "93a8adf692165ce1453b7e03db4f215fb87ad62abbbc0accf9b126aa7bfc23b2",
@@ -1129,24 +1145,24 @@
       "bytes": 155
     },
     "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-and-p-ip-decoration--11.tex": {
-      "sha256": "a8b27670586512a3e2578c437d0400246bbe77c52426502003b35fe223d37d35",
-      "bytes": 479
+      "sha256": "ddcc6cfc8915ba50723a2c673373bacdb9e305e8e3e9d6d3e324561d5493c532",
+      "bytes": 511
     },
     "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-and-p-ip-decoration--5.tex": {
       "sha256": "5424f03752780405cfd526bdc7df94d3a91bc834109e597f6bab8c0f5f544919",
       "bytes": 60
     },
     "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-decoration--10.tex": {
-      "sha256": "fb7d99c8ce6cbfc24c748905490c3d90010f750a1db194758bd62bad57450f64",
-      "bytes": 748
+      "sha256": "02a08872811b20c005c33c94f4a4fcad23a9315b6bec27a8d95a1281f8af0fc9",
+      "bytes": 803
     },
     "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-decoration--4.tex": {
       "sha256": "1f5ffc47037e80e39b13f5892abc587320df03cac5260f3e9fd6b6613cf024f1",
       "bytes": 65
     },
     "docs/formulas/source/equations/four-dimensional-self-stacking--p-ip-decoration--12.tex": {
-      "sha256": "c63355b3d3661c982fa28aec5d8567d044769de59c53e1f1375a655139631ed2",
-      "bytes": 715
+      "sha256": "58165e67a71c01c4cb3888176226071a29c510f2255a92bd55e5126b889a529f",
+      "bytes": 757
     },
     "docs/formulas/source/equations/four-dimensional-self-stacking--p-ip-decoration--6.tex": {
       "sha256": "0460b0c6eac0a94956bcc8ac2093167dbccae27158ceced77c1b3a9d76dda99a",
@@ -1344,17 +1360,9 @@
       "sha256": "d01ac1c090178a1a72502d82c6f7a80d75ee0fda028a86b9dfa1a80b85cac4e9",
       "bytes": 82
     },
-    "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--22.tex": {
-      "sha256": "89cc7dfb14f29f9736eadee19bff5a9be52a1af0643382ab69c241b6a07cead6",
-      "bytes": 500
-    },
-    "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--23.tex": {
-      "sha256": "22636d30c1126bbaabd6c753ddbee6e0815ba955828a2e0ec212712e4453bc8e",
-      "bytes": 262
-    },
     "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--24.tex": {
-      "sha256": "a6530c6920494f70c91f209e986ec1641e60406f0400088007b91b33998952e6",
-      "bytes": 231
+      "sha256": "8d84c434c7db48960989ed503d89384336a1dd4df97d9ee5697d723005ecd42a",
+      "bytes": 245
     },
     "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--26.tex": {
       "sha256": "50558d4c8491d646eb036aa40daa9bc513b4c43f9f891165f408bc3b7ed56e2e",
@@ -1364,29 +1372,9 @@
       "sha256": "9f3e8cc049720cfcff3fe8151b2fa0213ffd4d1882683a001d4794a244c2e1da",
       "bytes": 65
     },
-    "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--30.tex": {
-      "sha256": "2566f25d4ab05723752673da5bd34cb81f8eaf1d339d387d7736127acbf05059",
-      "bytes": 348
-    },
-    "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--31.tex": {
-      "sha256": "43eac9b04d429417331813b114b762c9ce4b31e3458acc1ead678f9310b1c418",
-      "bytes": 746
-    },
     "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--34.tex": {
       "sha256": "8f7ff82157314e033cc8bd2a036a39e498c80a86b5e2b73c9d5f86d925d52a28",
       "bytes": 82
-    },
-    "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--38.tex": {
-      "sha256": "5d7877830a644c595c8292282d88a93de8058a5e29e67298a4009251ed6c8d2c",
-      "bytes": 503
-    },
-    "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--39.tex": {
-      "sha256": "b29ae3cf524346e6cdbe8d649a817192d8664b1f8646997ce8b11a5403a3c2cd",
-      "bytes": 264
-    },
-    "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--40.tex": {
-      "sha256": "d41f257775714243ef22cd16f8fb0c359f46613b729480007ae3f5b432516396",
-      "bytes": 292
     },
     "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--43.tex": {
       "sha256": "aa73db702100b5f6eaf107331e5af1261221808e1c2581571309886dd239d7c1",
@@ -1797,8 +1785,8 @@
       "bytes": 186
     },
     "docs/formulas/source/equations/three-dimensional--3-complex-fermion-stacking--27.tex": {
-      "sha256": "ddd2dcf8614b0c6547eefd205bd70259ed1411bff0d517195ff83bf7db2bb49a",
-      "bytes": 760
+      "sha256": "beceb6896280eb52ebd0caf4283187782d296f612b315e863b64690d03ccfe37",
+      "bytes": 762
     },
     "docs/formulas/source/equations/three-dimensional--4-bosonic-obstruction--10.tex": {
       "sha256": "54b1c28eca885ab771847999b30b430eb01d3c908c2cee4bae0940c64b0eeff3",
@@ -1841,8 +1829,8 @@
       "bytes": 1294
     },
     "docs/formulas/source/equations/three-dimensional--majorana-decoration--14.tex": {
-      "sha256": "66dae5e8f71954dd9bde95b3c07a4a605f8dd010c15571359dba092164410b65",
-      "bytes": 847
+      "sha256": "84e82ccde6248f1830a680f9d779e2c04407bb4f3da5c1b0ac3b1a0aa7098a70",
+      "bytes": 651
     },
     "docs/formulas/source/equations/three-dimensional--majorana-decoration--15.tex": {
       "sha256": "04e53610e66da6f4b01cc43031e3265b53cd60f2840683dfc0ccc51113d10724",
@@ -2093,20 +2081,20 @@
       "bytes": 8048
     },
     "docs/formulas/source/pages/CODE_NOTATION.md": {
-      "sha256": "a5fdb653eddbce0b87c87b60b96ec9da9f1fd5560943174c1878d30574277974",
-      "bytes": 26174
+      "sha256": "ab6fb21026c71694acd3ff205605b7898bec52fbca31968a46eb80fa2a4eb315",
+      "bytes": 27003
     },
     "docs/formulas/source/pages/COEFFICIENTS.md": {
       "sha256": "b769ba593eb6cabd31bf52db9a7de0f6d29fb29da6ae037cbe3453513a17960d",
       "bytes": 33375
     },
     "docs/formulas/source/pages/FORMULA_GUIDE.md": {
-      "sha256": "d423490de2c02719a1777b911dec4eeb3d73e34683ddb88de4107eba75cb7a4f",
-      "bytes": 11886
+      "sha256": "8ce651a94256d7b0d451af3126992a8aed0d53a28e2de501875b356b57acf7ab",
+      "bytes": 11878
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL.md": {
-      "sha256": "a21237e6eb0f274720a4ab20d57324dd35b303317651f375999bde1f51527d08",
-      "bytes": 14879
+      "sha256": "4b92634b85e9db067305039f7a23c70c3f52346a5a558ae89edab8a073cfef03",
+      "bytes": 17443
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md": {
       "sha256": "c2d7952dcd910396ee6ea209d0ecc453172d33aa21083167637b3982d4b18a8a",
@@ -2117,16 +2105,24 @@
       "bytes": 3805
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": {
-      "sha256": "7eb4c6490df6475f23b121f39d5d2be65c1d8e6ca2f5a205053221562ba5d5f4",
-      "bytes": 3869
+      "sha256": "d5262d47b97cf55a96049c24587f466e6455f1dbbde67615b549486ba9b5d17a",
+      "bytes": 2602
+    },
+    "docs/formulas/source/pages/FOUR_DIMENSIONAL_MAJORANA_PHASE.md": {
+      "sha256": "1ce32be239036c1cd6deb255f21121b9b0668361804559f832fdc1c4fae69dd2",
+      "bytes": 5338
+    },
+    "docs/formulas/source/pages/FOUR_DIMENSIONAL_MAJORANA_RELATIVE_WORD_COEFFICIENTS.md": {
+      "sha256": "ea080fd31f96a5f9de07bc629f64ef73163ca8fabdedb6d9de0da44f58fad5c5",
+      "bytes": 36360
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md": {
       "sha256": "b80d3c00fe70db63447c40cf4ab7efd6252328326554b06524e1c5979c3940ef",
       "bytes": 4450
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md": {
-      "sha256": "bcbdef5b12fe61143cc25ef319711a631a4859855054e15029349ec4e1edfce6",
-      "bytes": 1502
+      "sha256": "3da0abc55a58e2b43d6730b0d694a6e9ebedaf3d3c9990a11176bd1a7bcdae4b",
+      "bytes": 1630
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": {
       "sha256": "0f5c1a619ade4e22772adf52073dd452d23a5414083022c4eeec9bc86069532e",
@@ -2153,16 +2149,16 @@
       "bytes": 13762
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md": {
-      "sha256": "b0d3ac4f0179cb4b4b9187f642075f9dd8697e30f667a28c5c7a8bf4e714fb4c",
-      "bytes": 20075
+      "sha256": "956498078ce2a6f2856f657928f29ce3c2a1f337c940ed9bad36b3b2da77d69d",
+      "bytes": 20209
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_PHYSICAL_PATHS.md": {
       "sha256": "3a649c80ac9c189319952813adb89b8cc8c40ab4e980dc28286fb83baff0b322",
       "bytes": 5108
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_SELF_STACKING.md": {
-      "sha256": "b0d99c7bfc3e4fd3dbc903cdaab4acdb759b802cc941327c79fd41aaa8afe716",
-      "bytes": 7649
+      "sha256": "7ea001b75a879fc339273413ad712dd84d6fe7ebb119667e08db0e06972c8c8d",
+      "bytes": 8631
     },
     "docs/formulas/source/pages/FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md": {
       "sha256": "1a21813dc8d708aa71e57a19f2701855f7bdcffa4c611f160dafca78be454e6a",
@@ -2197,12 +2193,12 @@
       "bytes": 1482
     },
     "docs/formulas/source/pages/MAJORANA_AND_ENDPOINTS.md": {
-      "sha256": "b5d0eaddff637ee16fcb36a401942d362eece60996a5c2c21e7fa3fc14239d96",
-      "bytes": 16778
+      "sha256": "daaff26630b841bf6995bd7f243dc6aa6f134da7218b262a4f05f59f7143c9b0",
+      "bytes": 18686
     },
     "docs/formulas/source/pages/NEXT_SIMPLIFICATION_TARGETS.md": {
-      "sha256": "2cb79661b471945264020eb83162f3c63fc10b2c71fb5404eb154a83aabe3779",
-      "bytes": 5613
+      "sha256": "58c8cb36e85571ccb00a31b74b48b61fdedf6e87b7f4ffbcd99cb8654edb0599",
+      "bytes": 6242
     },
     "docs/formulas/source/pages/OPERATIONS.md": {
       "sha256": "527cb754c1d59f71b0daa09d31e4ad6b2a211d36cb845d5f8361af5baa168c60",
@@ -2213,32 +2209,32 @@
       "bytes": 7382
     },
     "docs/formulas/source/pages/REPRESENTATIVES.md": {
-      "sha256": "554a455f1e9b57baf882a2ece2222c2b397528d89bcb62ec75c200251d9f4b82",
-      "bytes": 3173
+      "sha256": "1f42ee8e8a8ab5048d8cb9d9914cd8d6d310308ff6899bd35e80a988f5baeb9b",
+      "bytes": 4069
     },
     "docs/formulas/source/pages/ROOT_POWER_PRESENTATIONS.md": {
       "sha256": "04a8d4419ddf139009620650c19c83708a0015f4ced4d34be4ef6492891090c1",
       "bytes": 16215
     },
     "docs/formulas/source/pages/SIMPLIFICATION_PROGRESS.md": {
-      "sha256": "1bf94b2149f54428b9c8adf04947c2c3b2f7ca8115897bd6238f82b675702958",
-      "bytes": 6205
+      "sha256": "0b4dd6cc4be596d2361afb7d0a80a9c1ea1e399f58d2db950d1f224e0146528b",
+      "bytes": 6216
     },
     "docs/formulas/source/pages/SOURCE_OPERATIONS.md": {
-      "sha256": "2de2c3425e8153d0318a31a506199837982c63352f413e93615b49af29e95cad",
-      "bytes": 5060
+      "sha256": "f8a057ed6d395b2894745a0bfd76d4d0615549b548fb2813d377b8498371fd9f",
+      "bytes": 5680
     },
     "docs/formulas/source/pages/TERMINAL_TRANSFER.md": {
       "sha256": "2276c67a974d3110c56590bb654502c66be3796b559396eaa548c88d868d5399",
       "bytes": 9416
     },
     "docs/formulas/source/pages/TERM_COUNTS.md": {
-      "sha256": "9a0e23aad24eebf92c9c86be344372afb185328fe2ea2133f6342b1e1ddbeed1",
-      "bytes": 18018
+      "sha256": "6fb0e51dc243861aae1b9e9b1c3c89f8a5e2348cccb3f68e5de1d22596ab2f2a",
+      "bytes": 19983
     },
     "docs/formulas/source/pages/THREE_DIMENSIONAL.md": {
-      "sha256": "188f73c66bb041789c5efd327d1d9c1f8ac9952914427785f4236e56b3d9ee42",
-      "bytes": 13233
+      "sha256": "16fd185c48954c4c4c4abd2cf05253c323ef1d8eb7cf76a21cdc9ece6b71c2a0",
+      "bytes": 13540
     },
     "docs/formulas/source/pages/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md": {
       "sha256": "eccc71b17d5de6c449da2543d4cc34f460c36754026a963a95de519a4cf8d7ad",
@@ -2333,12 +2329,12 @@
       "bytes": 37527
     },
     "docs/formulas/term_census/README.md": {
-      "sha256": "571c509d068b322de138a7a3ce1ddd76a9edf01fc91a745cc1ba35860fbcc57b",
-      "bytes": 4812
+      "sha256": "80028f3ed1f8fea4fac8682517d122a458c6586db97abf4075013355ae731779",
+      "bytes": 3920
     },
     "docs/formulas/term_census/STRUCTURED_TERM_COUNTS.json": {
-      "sha256": "6d699c6ae6b3b6ddf729c52230445a81a6d641d52bb39dec5f3c2336c35ca0db",
-      "bytes": 41363
+      "sha256": "74345e45ded12ee4802e08209c2ae2ab790a90a6d26229f94b5ac1a798a96b92",
+      "bytes": 46821
     },
     "docs/formulas/term_census/four_dimensional/FOUR_DIMENSIONAL_CENSUS.json": {
       "sha256": "7cb7a64e22ec9989f45e81a6a00a7bfe48904cf08316e16f90dfd1ef1b51e684",
@@ -2432,9 +2428,13 @@
       "sha256": "5661d8f9ab406df5bee7ea1003129e7f5a1e4be342356f9347f445a5b516c236",
       "bytes": 4196
     },
+    "docs/formulas/term_census/verify_structured_counts.py": {
+      "sha256": "c0487c795104ac527e464eaed8a376eeb4f5a423172ff304bda1178c714517d9",
+      "bytes": 5651
+    },
     "formulas/CODE_NOTATION.md": {
-      "sha256": "d5abb1f32c18862f1fd84fffc94ab044be1ea33a207aaa5c47f254c24a860c79",
-      "bytes": 26310
+      "sha256": "a7c2067657da60f9825ea963274640e0967367b37129364360b55f911405f045",
+      "bytes": 27139
     },
     "formulas/FORMULA_REGISTRY.json": {
       "sha256": "5692c369808814aa9b2aee7acc3d617891d80062f24070e89aded094e36c81cf",
@@ -7491,6 +7491,12 @@
     "scripts/verify_complete_results.py": {
       "sha256": "e68658f248fcb2541ee44a1b9907af0428d543574a9be2e2b48214702e819359",
       "bytes": 4240
+    },
+    "scripts/verify_majorana_phase_transport.py": {
+      "sha256": "c707b9800e8f78556c15de09197c7eca46c7c1c215334f718da56b5da0fe2a4f",
+      "bytes": 7008
     }
-  }
+  },
+  "formula_authority": "docs/formulas/source/",
+  "formula_update_base_commit": "e4b32c0c4beb7c3e921d1f21dac517443511b9fd"
 }

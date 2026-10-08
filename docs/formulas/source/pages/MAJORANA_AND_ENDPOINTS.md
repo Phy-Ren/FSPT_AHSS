@@ -414,11 +414,15 @@ the binary complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
 
 **(M4, 4+1D)**
 
-{{equation:majorana-and-endpoints--majorana-contribution--38}}
+Here the integer decoration is zero, so $`\check n_3=n_3`$ and
+$`\beta^\circ n_3=\beta n_3`$. The following is the same maintained
+formula as in the full 4+1D tower:
+
+{{equation:four-dimensional--4-bosonic-obstruction--14}}
 
 Its word operations are
 
-{{equation:majorana-and-endpoints--majorana-contribution--39}}
+{{equation:four-dimensional-majorana-phase--cartan--2}}
 
 The intrinsic polynomial is
 
@@ -426,7 +430,7 @@ The intrinsic polynomial is
 
 **(M5, 4+1D)**
 
-{{equation:majorana-and-endpoints--majorana-contribution--40}}
+{{equation:four-dimensional-majorana-phase--intrinsic--1}}
 
 ### Stacking twisters
 
@@ -470,7 +474,7 @@ There is no stacking correction in this layer.
 
 **(M3Ec, 4+1D)**
 
-{{equation:majorana-and-endpoints--complex-fermion-contribution--45}}
+{{equation:four-dimensional--complex-fermions--30}}
 
 ##### Complex-fermion–Majorana contribution
 
@@ -478,7 +482,9 @@ There is no stacking correction in this layer.
 
 **(M3Ecγ, 4+1D)**
 
-{{equation:majorana-and-endpoints--complex-fermion-majorana-contribution--46}}
+Use $`\mathcal{𝒪}_5^{\gamma\psi}=0`$ and the actual binary lower output in the common formula:
+
+{{equation:four-dimensional--complex-fermions-and-majorana-decoration--31}}
 
 ##### Majorana contribution
 
@@ -486,18 +492,29 @@ There is no stacking correction in this layer.
 
 **(M7, 4+1D)**
 
-{{equation:majorana-and-endpoints--majorana-contribution--47}}
+This is the restriction of the same complete two-input law to
+$`n_2=n'_2=0`$, $`\check n_3=n_3`$, and $`dn_3=dn'_3=0`$.
+In particular $`\beta^\circ=\beta`$,
+$`\lambda_4^\gamma=0`$, and
+$`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; all displayed derivatives
+of the closed integer Bocksteins vanish. No extra phase coordinate is
+selected on this subspace.
 
-Here the binary completion is
+{{equation:four-dimensional--majorana-decoration--33}}
+
+The carries and coefficient sets are the shared
+[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`R_5`$ is the same
+[phase-change cochain](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
+The earlier compact closed-product expression differs by its explicit
+output coboundary as well as the phase-coordinate comparison. It is not
+an additional primary law for the same displayed phase.
+The common [self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md)
+may likewise be restricted to this sector without changing representatives.
 
 <a id="eq-m8-4d"></a>
-
-**(M8, 4+1D)**
-
-{{equation:majorana-and-endpoints--majorana-contribution--48}}
-
-The complete intrinsic term $`z^0_5(n_3,n'_3)`$ is given by the
-[finite word definition](#intrinsic-word-products).
+The mathematical intrinsic word operation is retained in the
+[derivation below](#intrinsic-word-products); its role does not define a
+second terminal stacking convention.
 
 <a id="fmps-1d"></a>
 ## 1+1D fMPS endpoint

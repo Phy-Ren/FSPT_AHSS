@@ -27,26 +27,30 @@ Expanded counts audit the explicit formulas; they do not measure the quality of 
 
 ## Primary count with defined lower structures retained
 
-The complete 4+1D Majorana bosonic twister now has **624 explicit term
-occurrences**, organized as **482 outer addends**. Its half bracket has
-459 terms. Its quarter bracket has 19 ordinary cup or face terms and
-four separate canonical lifts, whose interiors contain 5, 15, 10 and
-116 products. Thus the explicit count is 459 + 19 + 146 = 624, while the
-outer count is 459 + 19 + 4 = 482. The 146 interior products remain inside
-their four nonlinear lifts; they are not independent phase addends at
-coefficient 1/4. The [complete lift table](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md)
-specifies every product.
+The current formulas use the common Cartan–Adem phase and its
+[paired source/product transport](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
+The pure Majorana O6 has **16 terms**: 12 half-valued and four
+quarter-valued terms. Its intrinsic operation contains four MS words
+and one product of standard squares. The mixed source contains
+**1,897 MS terms**, four other half terms, and six quarter terms,
+for **1,907** in total. The pure p+ip contribution has **623,886** terms.
+The complete O6 therefore has **625,821 terms** at this boundary.
 
-This exact rewriting replaces the archived 6,176-term expression without
-changing its representative. That expanded expression and its 87,189-term
-lower-equation substitution remain available for verification.
+For the general 4+1D Majorana twister the current count is
+**760 explicit expression leaves**, or **618 outer addends**.
+There are 592 half-valued occurrences, 22 ordinary quarter occurrences,
+and four separately reduced lifts with 5, 15, 10 and 116 interior
+products. Thus 592 + 22 + 146 = 760, while 592 + 22 + 4 = 618.
+The lift interiors remain inside their nonlinear scopes.
 
-The 4+1D mixed source MS sum has **1,005 terms** when its defined
-Majorana differential is retained. Its 4,220-term substituted expansion
-below is supplementary. The pure complex-fermion source contribution
-has **three terms** with its differential retained, versus 23 after
-substituting the lower law. These counts refer to those specific sums or
-contributions; they are not partial totals presented as entire laws.
+These are **uncollected expression occurrences**. Each displayed
+phase-map evaluation is expanded into its complete finite expression;
+its actual binary lower-output argument remains a field, just as in
+other higher formulas. We do not expand that output into all of its
+face coordinates or cancel terms across physical contributions.
+The same boundary is used for the source and product tables below.
+The earlier 85-word Majorana source and 1,005-word mixed source are
+comparison data in the preceding phase coordinate, not current counts.
 
 Physical contributions remain in the manuscript order c, c gamma,
 c psi, gamma, gamma psi, psi. These labels track fermionic exchange
@@ -85,22 +89,23 @@ listed in the [structured count ledger](term_census/STRUCTURED_TERM_COUNTS.json)
 | 4+1D | O3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4+1D | O4 | 0 | 0 | 0 | 0 | 0 | 3 | 3 |
 | 4+1D | O5 | 0 | 0 | 0 | 3 | 2 | 13 | 18 |
-| 4+1D | O6 | 3 | 4 | 5 | 89 | 1,012 | 623,885 | 624,998 |
+| 4+1D | O6 | 3 | 4 | 5 | 16 | 1,907 | 623,886 | 625,821 |
 | 4+1D | E2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4+1D | E3 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
 | 4+1D | E4 | 0 | 0 | 0 | 2 | 5 | 27 | 34 |
-| 4+1D | E5 | 3 | 4 | 2 | 624† | 5,685,451 | 2,869,220 | 8,555,304† |
+| 4+1D | E5 | 3 | 4 | 2 | 760† | 5,685,587 | 2,869,266 | 8,555,622† |
 
 † The Majorana entry counts the 146 explicit products inside its four
-canonical lifts, as explained above: 624 expression leaves, not 624
+canonical lifts, as explained above: 760 expression leaves, not 760
 linearly distributed phase addends. Counting those four lifts as outer
-addends instead gives 482 for this contribution and 8,555,162 for E5.
+addends instead gives 618 for this contribution and 8,555,480 for E5.
 Other entries retain their declared standard-operation and whole-lift
 boundaries, with their interior counts separately listed in the ledger.
 
 The integral quadratic cochain has three defining cups and a four-cup
-addition polarization. Reusing it in the O6 quarter phases contributes
-one operation in each pure part and three in the mixed difference.
+addition polarization. Reusing it in the current O6 quarter phases contributes one operation
+in the pure p+ip part and three in the mixed difference. The compact
+Majorana quarter phase instead displays its four terms explicitly.
 Its complete definition and exact identities appear in the
 [quadratic-cochain appendix](QUADRATIC_REFINEMENTS.md); this reuse does
 not erase any scalar term from the archived expanded expressions.
@@ -111,6 +116,33 @@ sum still contributes every listed term. The supplementary tables below
 use further lower-law substitutions and, where specified, collect equal
 normalized operations. Their numbers are not substitutes for this primary
 boundary and need not decrease monotonically across representations.
+
+## Counting the paired phase transport
+
+The fixed map has 45 half-valued terms and one quarter-valued term.
+Setting its complex-fermion argument to zero removes the single
+half term containing that argument, leaving **44 + 1 = 45** terms.
+The full map and its 32-word index set are printed in the
+[phase-coordinate construction](FOUR_DIMENSIONAL_MAJORANA_PHASE.md#the-fixed-change-of-phase).
+It is not counted as one term.
+
+| General contribution | Explicit zero-second-argument map evaluations | Additional lower twister terms | Transport occurrences |
+|---|---:|---:|---:|
+| gamma | 3 | 1 | 136 |
+| gamma psi | 3 | 1 | 136 |
+| psi | 1 | 1 | 46 |
+
+The map arguments are the actual complete lower outputs specified in
+[the general product](FOUR_DIMENSIONAL.md#eq-t4c). A binary sum used as an
+output is retained as that field before a word is evaluated. Consequently
+these counts mean 3 × 45 + 1, 3 × 45 + 1, and 45 + 1 occurrences in the
+printed expressions; they are not a fully distributed or collected
+polynomial in independent input bits. They include every map term.
+The previous carry reduction is retained inside this transported product,
+with its four protected lift interiors counted separately.
+
+The shared 3+1D Adem expression still contributes **four MS terms**;
+its reuse does not change the **15-term** pure Majorana O5 count.
 
 ## Self-stacking counts (separate domains)
 
@@ -123,20 +155,23 @@ completions. The integer output is retained before full gauge reduction.
 | 2+1D, zero integer decoration | 1 | 1 | 0 | 6 | 0 | 0 | **8** |
 | 3+1D, zero p+ip | 1 | 1 | 0 | 8 | 0 | 0 | **10** |
 | 3+1D, canonical torsion p+ip | 1 | 3 | 5 | 13 | 1,142 | 250 | **1,414** |
-| 4+1D, arbitrary permitted p+ip | 1 | 3 | 2 | 200 | 3,613,698 | 793,683 | **4,407,587 outer terms** |
+| 4+1D, arbitrary permitted p+ip | 1 | 3 | 2 | 202 | 3,613,699 | 793,729 | **4,407,636 outer terms** |
 
 The 3+1D open-Majorana entry has one whole lift with two interior terms;
 counting that interior gives 14 leaves for the contribution and 1,415 for
 the complete canonical torsion twister. The outer count remains 1,414.
 
 The 4+1D Majorana entry has four protected lifts containing 106 products.
-Replacing only those four wrappers by their interiors gives 302 expression
-leaves for that contribution and 4,407,689 for the corresponding total.
+Replacing only those four wrappers by their interiors gives 304 expression
+leaves for that contribution and 4,407,738 for the corresponding total.
 The full restricted mixed and pure finite sums contain 3,613,517 and
 793,669 terms. Their nonlinear interiors and lower-operation argument
-arrays are recorded separately in the coefficient indices. The same
-zero-p+ip 4+1D sector admits a further **30-term** complete formula with
-its explicit output gauge, including a 28-term Majorana contribution.
+arrays are recorded separately in the coefficient indices. The zero-p+ip 4+1D sector uses the restriction of this same
+canonical expression, with the lower fields specified on its
+[dedicated page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md).
+No alternative closed-diagonal formula is counted as another current law.
+For the full self-stack, the phase transport adds two Majorana terms,
+one mixed term, and 46 pure p+ip occurrences at the same boundary.
 
 The complete lower self-twister counts are: 2+1D E2 has two terms;
 3+1D E2 has two, and E3 has seven for a general signed integer input;
@@ -220,7 +255,7 @@ these numbers.
 
 ## Archived supplementary expansion: 4+1D bosonic obstruction
 
-This archived representation expands the source word sums into specified MS operations
+This representation in the **preceding phase coordinate** expands the source word sums into specified MS operations
 with their lower physical inputs. The remaining cups are ordinary nested
 operations. Each exact quotient and canonical lift is written completely.
 
@@ -240,7 +275,7 @@ face monomials**, including its entire residual part. The
 Its integer domain includes negative values; dependence on each
 independent integer root face has period eight.
 
-The Majorana source word sum contains 85 terms. Its mixed counterpart
+In that preceding coordinate, the Majorana source word sum contains 85 terms. Its mixed counterpart
 has 1,005 specified words before its differential arguments are
 substituted; those arguments expand to 4,420 occurrences and collect to
 **4,220 terms**. The full mixed half-valued source, including the other
@@ -266,17 +301,16 @@ six other half-valued cups, and fifteen quarter-valued cups. The additional
 half-valued terms include the required canonical integer-lift carries.
 The complete explicit lists and a public replay are linked from the
 [Majorana coefficient appendix](FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md).
-These two archived counts use different, stated boundaries. The current
-624-leaf formula is instead an exact rewriting of the 6,176-term
-expression at the same lower-operation boundary, preserving every whole
-lift. Its 482 outer addends and 146 protected interior products are
-reported separately above.
+These two archived counts use different, stated boundaries. The carry-reduced coefficient part is an exact rewriting of that
+6,176-term expression, preserving its four whole lifts. It contributes
+624 leaves in the preceding coordinate. The current paired phase adds
+136 explicit transport occurrences, giving the 760-leaf entry above.
 
 The complete mixed finite sum has **5,684,189 terms**,
 and the complete pure p+ip finite sum has **2,869,198 terms**.
-Including the other displayed contributions gives **8,555,304 explicit
-occurrences** for the complete E5 at the primary boundary, with the
-Majorana lift-interior convention marked by † in the table. The preceding
+Including the other displayed contributions and the explicitly expanded phase transport gives **8,555,622 expression
+occurrences** for the current E5, with the Majorana lift-interior convention
+marked by † in the table. The preceding
 release had 8,560,944 terms at its stated boundary; that number belongs to
 the archived expression. Every coefficient
 is supplied in the [stacking coefficient appendix](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).
@@ -301,15 +335,14 @@ complex-fermion completion and the incoming bosonic phase.
 | Dimension and input | c | c gamma | gamma | Complete phase correction |
 | --- | ---: | ---: | ---: | ---: |
 | [3+1D, zero p+ip decoration](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md) | 1 | 1 | 8 | **10** |
-| [4+1D, zero p+ip decoration](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md) | 1 | 1 | 28 | **30** |
 
 The 3+1D correction has seven half-valued and three quarter-valued
 terms. It is in exactly the same representative as the general formula.
-The 4+1D correction has 25 half-valued and five quarter-valued terms;
-its explicit three-face-product output gauge is printed on the formula
-page. The lower output and defined lower obstruction remain structured
-inputs, with their full formulas given on the same page. Neither formula
-applies to a complete state with nonzero p+ip decoration.
+The 4+1D zero-p+ip case instead uses the restriction of the common
+canonical self-stacking law counted above. Its lower equation and full
+phase convention are given on the [restriction page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md).
+The former standalone diagonal expression is no longer an independently
+maintained current formula.
 
 ## Representation and verification
 
@@ -320,9 +353,10 @@ actual output terms. The quadratic-cochain reuse is also an exact identity.
 
 The earlier explicit Majorana stacking expression was obtained using the
 supplied [output gauge](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md).
-The present carry reduction is an exact rewriting of that same
-representative, with no additional gauge change. The obstruction and
-the other physical contributions retain their values.
+The carry reduction rewrites that coefficient part exactly. The current
+Cartan–Adem presentation then applies the explicit terminal phase change
+to the complete obstruction and product together; its contribution is
+included in every current count above.
 
 Standard integer lifts and divisions retain their scopes throughout.
 In particular, a binary numerator with two summands has canonical integer
