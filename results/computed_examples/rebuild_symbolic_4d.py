@@ -489,13 +489,16 @@ def csv_text(rows, symbolic=False):
     return stream.getvalue()
 
 
-def family_page(key,title,rows):
+def family_page(key,title,rows,depth=0):
+    root_prefix='../'*(2+depth)
+    index_prefix='../'*(1+depth)
+    csv_target=key+'.csv' if depth==0 else '../abelian.csv'
     lines=['# 4+1D: '+title,'',
         f'{len(rows)} distinct computed symmetry backgrounds. Every background appears in exactly one family table.',
-        '', '[All families](../internal_4d.md) · [Background definitions](../../FOUR_DIMENSIONAL_BACKGROUNDS.md) · [CSV]('+key+'.csv)',
+        '', '[All families]('+index_prefix+'internal_4d.md) · [Background definitions]('+root_prefix+'FOUR_DIMENSIONAL_BACKGROUNDS.md) · [CSV]('+csv_target+')',
         '', 'Each heading specifies the bosonic quotient and its order. The full fermionic symmetry has twice that order; the final column is the stacking group of phases.',
         'The layer columns are final filtration quotients in the order p+ip, Majorana, complex fermion and bosonic.',
-        'Historical names and section choices are attached to each background in the [coverage ledger](../../COVERAGE_4D.json).', '']
+        'Historical names and section choices are attached to each background in the [coverage ledger]('+root_prefix+'COVERAGE_4D.json).', '']
     grouped=defaultdict(list)
     for row in rows:grouped[row['group']].append(row)
     for group,subset in grouped.items():
@@ -504,13 +507,49 @@ def family_page(key,title,rows):
             '| Background | $s_1$ | $\\omega_2$ | Extension | p+ip | Majorana | CF | Bosonic | Stacking group |',
             '|---|---|---|---|---|---|---|---|---|']
         for row in sorted(subset,key=lambda r:(r['antiunitary'],r['background_id'])):
-            d=row['background_display'];vals=[f'[{row["background_id"]}](../../inputs/{row["representative_record"]}.json)',
+            d=row['background_display'];vals=[f'[{row["background_id"]}]({root_prefix}inputs/{row["representative_record"]}.json)',
                 '$'+d['grading_tex']+'$','$'+d['omega_tex']+'$',row['fermion_extension']]
             vals += ['$'+row['final_layers_tex'][k]+'$' for k in ('pip','majorana','complex_fermion','bosonic')]
             vals += ['$'+row['stacking_group_tex']+'$']
             lines.append('| '+' | '.join(vals)+' |')
         lines.append('')
     return '\n'.join(lines)
+
+
+def abelian_navigation(rows):
+    grouped=defaultdict(list)
+    for row in rows:grouped[row['group']].append(row)
+    lines=['# 4+1D: Noncyclic abelian groups','',
+        f'**{len(rows)} distinct backgrounds** on {len(grouped)} bosonic quotients. Choose a quotient for its complete table.',
+        '', '[All families](../internal_4d.md) · [Background definitions](../../FOUR_DIMENSIONAL_BACKGROUNDS.md) · [Combined CSV](abelian.csv)',
+        '', '| Bosonic quotient | Order | Backgrounds | Unitary | Antiunitary | Results |',
+        '|---|---:|---:|---:|---:|---|']
+    for group,subset in grouped.items():
+        r=subset[0]
+        lines.append(f'| ${r["group_tex"]}$ | {r["bosonic_order"]} | {len(subset)} | {sum(not x["antiunitary"] for x in subset)} | {sum(x["antiunitary"] for x in subset)} | [Table](abelian/{group}.md) |')
+    lines += ['', 'Each background occurs once, in its quotient table. Repeated calculations and historical coordinate choices are retained only as provenance in the [coverage ledger](../../COVERAGE_4D.json).', '']
+    return '\n'.join(lines)
+
+
+def verify_output_coverage(result,outputs):
+    """Read generated tables back and check complete, nonduplicated display."""
+    import re
+    expected={r['background_id']:r for r in result['records']}
+    displayed=[];cells=0
+    for name,text in outputs.items():
+        if name.startswith('tables/four_dimensional/') and name.endswith('.md'):
+            displayed += [key for key in re.findall(r'^\| \[([^]]+)\]\(',text,re.M) if key in expected]
+        if name.startswith('tables/four_dimensional/') and name.endswith('.csv') or name=='tables/internal_4d.csv':
+            for row in csv.DictReader(io.StringIO(text)):
+                original=expected[row['background_id']]
+                for key in ('pip','majorana','complex_fermion','bosonic'):
+                    assert json.loads(row[key])==original['final_layers'][key],(name,row['background_id'],key)
+                    cells+=1
+                assert json.loads(row['stacking_group'])==original['stacking_group']
+                cells+=1
+    assert len(displayed)==len(set(displayed))==len(expected)
+    assert set(displayed)==set(expected)
+    assert cells==10*len(expected)
 
 
 BACKGROUND_DEFINITIONS = r'''# 4+1D finite symmetry backgrounds
@@ -534,7 +573,7 @@ this equation, rather than by asking whether the saved cocycle array is zero.
 ## Cyclic and noncyclic abelian groups
 
 Use ordered generators $r_i$ of orders $m_i$, and write
-$g=\prod_i r_i^{u_i}$ with $0\leq u_i<m_i$. Put
+$g=\prod_i r_i^{u_i}$ with $0\leq u_i\lt m_i$. Put
 
 $$
 \eta_i(g,h)=\left\lfloor\frac{u_i+v_i}{m_i}\right\rfloor\bmod2,
@@ -550,7 +589,7 @@ Every displayed cocycle has the form
 
 $$
 \omega_2=\sum_i\epsilon_i\eta_i+
-\sum_{i<j}\kappa_{ij}x_j\cup x_i.
+\sum_{i\lt j}\kappa_{ij}x_j\cup x_i.
 $$
 
 It specifies $R_i^{m_i}=f^{\epsilon_i}$ and
@@ -584,7 +623,7 @@ TRT^{-1}=R^a f^\gamma.
 $$
 
 This also gives an explicit cocycle. For $g=r^it^j$ and
-$g'=r^{i'}t^{j'}$ with $0\leq i,i'<m$, $0\leq j,j'<n$, it is
+$g'=r^{i'}t^{j'}$ with $0\leq i,i'\lt m$, $0\leq j,j'\lt n$, it is
 
 $$
 \omega_{\alpha\beta\gamma}(g,g')
@@ -670,7 +709,14 @@ def build_outputs(result):
     for c in result['categories']:
         key=c['category'];subset=[r for r in rows if r['category']==key]
         overview.append(f'| {c["title"]} | {c["backgrounds"]} | {c["unitary"]} | {c["antiunitary"]} | {c["split"]} | {c["nonsplit"]} | [Table](four_dimensional/{key}.md) |')
-        outputs['tables/four_dimensional/'+key+'.md']=family_page(key,c['title'],subset)
+        if key=='abelian':
+            outputs['tables/four_dimensional/abelian.md']=abelian_navigation(subset)
+            groups=defaultdict(list)
+            for row in subset:groups[row['group']].append(row)
+            for group,group_rows in groups.items():
+                outputs['tables/four_dimensional/abelian/'+group+'.md']=family_page(group,c['title'],group_rows,depth=1)
+        else:
+            outputs['tables/four_dimensional/'+key+'.md']=family_page(key,c['title'],subset)
         outputs['tables/four_dimensional/'+key+'.csv']=csv_text(subset)
     overview += ['', '[Background definitions](../FOUR_DIMENSIONAL_BACKGROUNDS.md) · [Combined CSV](internal_4d.csv) · [Coverage ledger](../COVERAGE_4D.json)',
         '', 'The 609 saved named calculations reduce to these 572 backgrounds after verified group relabelings, automorphisms and cocycle section changes. Repeated computations are retained as provenance for the same row.',
@@ -706,6 +752,7 @@ The dihedral certificate calls the reflection character $x$; it is $y$ in
 the common rotation/reflection convention used here. The certificate itself
 is preserved unchanged.
 '''
+    verify_output_coverage(result,outputs)
     return outputs
 
 

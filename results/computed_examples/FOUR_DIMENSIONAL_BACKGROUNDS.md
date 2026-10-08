@@ -19,7 +19,7 @@ this equation, rather than by asking whether the saved cocycle array is zero.
 ## Cyclic and noncyclic abelian groups
 
 Use ordered generators $r_i$ of orders $m_i$, and write
-$g=\prod_i r_i^{u_i}$ with $0\leq u_i<m_i$. Put
+$g=\prod_i r_i^{u_i}$ with $0\leq u_i\lt m_i$. Put
 
 $$
 \eta_i(g,h)=\left\lfloor\frac{u_i+v_i}{m_i}\right\rfloor\bmod2,
@@ -35,7 +35,7 @@ Every displayed cocycle has the form
 
 $$
 \omega_2=\sum_i\epsilon_i\eta_i+
-\sum_{i<j}\kappa_{ij}x_j\cup x_i.
+\sum_{i\lt j}\kappa_{ij}x_j\cup x_i.
 $$
 
 It specifies $R_i^{m_i}=f^{\epsilon_i}$ and
@@ -69,7 +69,7 @@ TRT^{-1}=R^a f^\gamma.
 $$
 
 This also gives an explicit cocycle. For $g=r^it^j$ and
-$g'=r^{i'}t^{j'}$ with $0\leq i,i'<m$, $0\leq j,j'<n$, it is
+$g'=r^{i'}t^{j'}$ with $0\leq i,i'\lt m$, $0\leq j,j'\lt n$, it is
 
 $$
 \omega_{\alpha\beta\gamma}(g,g')
