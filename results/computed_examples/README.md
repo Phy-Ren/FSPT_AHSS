@@ -74,7 +74,9 @@ The 78 named finite 3+1D records become **72 distinct backgrounds**. The
 [section witnesses](tables/internal_3d_symbolic.json) and
 [background definitions](SYMBOLIC_3D_BACKGROUNDS.md) give short explicit
 cocycles for manuscript use. One row is the handwritten
-$\mathbb Z_4^{f,T}$ example; the other 71 are additional backgrounds.
+[$\mathbb Z_4^{f,T}$ example](../calibrations/Z4fT_current_cochains.md),
+with all four cochain phases checked against the current formulas; the other
+71 are additional backgrounds.
 The 609 named 4+1D records become **572 backgrounds**, with their symbols
 specified in the [4+1D background definitions](FOUR_DIMENSIONAL_BACKGROUNDS.md).
 
