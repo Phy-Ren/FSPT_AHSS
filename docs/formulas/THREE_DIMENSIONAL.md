@@ -92,6 +92,18 @@ The second digit obeys $`d\widetilde n_1=\bar n_1^2+s_1\bar n_1`$.
 
 ### 4. Bosonic obstruction
 
+<a id="eq-t3"></a>
+
+```math
+d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
+ =\widehat{\mathcal{𝒪}}_5^c
+  +\widehat{\mathcal{𝒪}}_5^{c\gamma}
+  +\widehat{\mathcal{𝒪}}_5^{c\psi}
+  +\widehat{\mathcal{𝒪}}_5^\gamma
+  +\widehat{\mathcal{𝒪}}_5^{\gamma\psi}
+  +\widehat{\mathcal{𝒪}}_5^\psi.
+```
+
 The decoration $`n_3`$ is the occupation in the geometric pairing reference.
 For evaluating the phase, one shifted field retains the already fixed
 fermionic operator reference:
@@ -110,18 +122,8 @@ tables is $`\check n_3`$, and every CF differential is $`d\check n_3`$.
 The source and product are transported together as proved in
 [the reference comparison](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 
-<a id="eq-t3"></a>
 
 
-```math
-d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
- =\widehat{\mathcal{𝒪}}_5^c
-  +\widehat{\mathcal{𝒪}}_5^{c\gamma}
-  +\widehat{\mathcal{𝒪}}_5^{c\psi}
-  +\widehat{\mathcal{𝒪}}_5^\gamma
-  +\widehat{\mathcal{𝒪}}_5^{\gamma\psi}
-  +\widehat{\mathcal{𝒪}}_5^\psi.
-```
 
 #### Complex fermions
 
@@ -397,6 +399,22 @@ The pure sheet contribution has three terms. The signed floor is taken before re
 
 ### 4. Bosonic stacking
 
+<a id="eq-t3b"></a>
+
+```math
+\begin{aligned}
+\widehat{\mathcal V}_4
+ &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4,\\
+\widehat{\mathcal{ℰ}}_4
+ &=\widehat{\mathcal{ℰ}}^{c}_4
+  +\widehat{\mathcal{ℰ}}^{c\gamma}_4
+  +\widehat{\mathcal{ℰ}}^{c\psi}_4
+  +\widehat{\mathcal{ℰ}}^{\gamma}_4
+  +\widehat{\mathcal{ℰ}}^{\gamma\psi}_4
+  +\widehat{\mathcal{ℰ}}^{\psi}_4.
+\end{aligned}
+```
+
 The finite pair reference is
 
 ```math
@@ -425,22 +443,8 @@ The $`\Delta`$ below always uses the actual new output. The explicitly
 printed $`d\mathcal B_2`$ terms account for the change of its face reference.
 They are already included in the contributions below and must not be added a second time.
 
-<a id="eq-t3b"></a>
 
 
-```math
-\begin{aligned}
-\widehat{\mathcal V}_4
- &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4,\\
-\widehat{\mathcal{ℰ}}_4
- &=\widehat{\mathcal{ℰ}}^{c}_4
-  +\widehat{\mathcal{ℰ}}^{c\gamma}_4
-  +\widehat{\mathcal{ℰ}}^{c\psi}_4
-  +\widehat{\mathcal{ℰ}}^{\gamma}_4
-  +\widehat{\mathcal{ℰ}}^{\gamma\psi}_4
-  +\widehat{\mathcal{ℰ}}^{\psi}_4.
-\end{aligned}
-```
 
 For two identical complete states with $`n_1=0`$, the entire correction
 reduces to the [transported self-stacking formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md).

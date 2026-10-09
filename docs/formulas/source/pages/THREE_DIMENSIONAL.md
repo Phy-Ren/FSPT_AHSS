@@ -68,6 +68,10 @@ The second digit obeys $`d\widetilde n_1=\bar n_1^2+s_1\bar n_1`$.
 
 ### 4. Bosonic obstruction
 
+<a id="eq-t3"></a>
+
+{{equation:three-dimensional--4-bosonic-obstruction--10}}
+
 The decoration $`n_3`$ is the occupation in the geometric pairing reference.
 For evaluating the phase, one shifted field retains the already fixed
 fermionic operator reference:
@@ -80,10 +84,8 @@ tables is $`\check n_3`$, and every CF differential is $`d\check n_3`$.
 The source and product are transported together as proved in
 [the reference comparison](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 
-<a id="eq-t3"></a>
 
 
-{{equation:three-dimensional--4-bosonic-obstruction--10}}
 
 #### Complex fermions
 
@@ -228,6 +230,10 @@ The pure sheet contribution has three terms. The signed floor is taken before re
 
 ### 4. Bosonic stacking
 
+<a id="eq-t3b"></a>
+
+{{equation:three-dimensional--4-bosonic-stacking--28}}
+
 The finite pair reference is
 
 {{equation:three-dimensional-geometric-reference--pair-cochain}}
@@ -240,10 +246,8 @@ The $`\Delta`$ below always uses the actual new output. The explicitly
 printed $`d\mathcal B_2`$ terms account for the change of its face reference.
 They are already included in the contributions below and must not be added a second time.
 
-<a id="eq-t3b"></a>
 
 
-{{equation:three-dimensional--4-bosonic-stacking--28}}
 
 For two identical complete states with $`n_1=0`$, the entire correction
 reduces to the [transported self-stacking formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md).

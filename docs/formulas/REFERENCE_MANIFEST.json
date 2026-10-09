@@ -559,9 +559,9 @@
     {
       "output": "docs/formulas/THREE_DIMENSIONAL.md",
       "source": "pages/THREE_DIMENSIONAL.md",
-      "sha256": "e696e1bb1e4e339a4ffecdc44880b8cb3b3241ce29c3d1c2cea381d46218a5c9",
+      "sha256": "c47cf9334caee58abdaacdf172e3cd18a062dba4abe54eea322baf5c4aa8e974",
       "dependencies": {
-        "pages/THREE_DIMENSIONAL.md": "42587e2805e752e0a98e76414028a010e7fb63fc3d2b7da27531640bd28b3199",
+        "pages/THREE_DIMENSIONAL.md": "d5b5db7ed4519a64840810aa4556ed3ee34f42bec5da062021fc0268ddd0f361",
         "equations/three-dimensional--3-1d--1.tex": "9f9af291b96ab6a9dd8965bed3faa4d68aa5c5c8a9bd7e249feb8eeb51187854",
         "equations/three-dimensional--1-p-ip-obstruction--2.tex": "04e0ab50b72058a681c063c341c260a10466f211205d87b8876b79db995f9ab2",
         "equations/three-dimensional--2-majorana-obstruction--3.tex": "2a94441d339c1d0b9f992efe3e23d12fdaccd79c14cc7e666fcfedbd340b599e",
@@ -571,8 +571,8 @@
         "equations/three-dimensional--3-complex-fermion-obstruction--7.tex": "0a9dd80675bfecf165bce7d7195bf447f051449a00c8646bc266593c70f101b2",
         "equations/three-dimensional--3-complex-fermion-obstruction--8.tex": "12621df82c44203a639f65fb07b8cc0257c048cb5294eb592759c3a9e8bdc9da",
         "equations/three-dimensional--3-complex-fermion-obstruction--9.tex": "9e062c24ec0c1b3cf9e8c9436d92160c4048d211110e4ed985bd776b90b802ea",
-        "equations/three-dimensional-geometric-reference--checked-fermion.tex": "f1ef31d52ac6a99e28c3accca7616cb0a40af648c3b2b97df5e54a84ecc1929f",
         "equations/three-dimensional--4-bosonic-obstruction--10.tex": "54b1c28eca885ab771847999b30b430eb01d3c908c2cee4bae0940c64b0eeff3",
+        "equations/three-dimensional-geometric-reference--checked-fermion.tex": "f1ef31d52ac6a99e28c3accca7616cb0a40af648c3b2b97df5e54a84ecc1929f",
         "equations/three-dimensional--complex-fermions--11.tex": "4ffce1160f05442f9af9223ffb3fe8391cdabde5393a816c30f4e5029f152fcf",
         "equations/three-dimensional--complex-fermions-and-majorana-decoration--12.tex": "6f93aaee7e5b3081b30d4af36a17d35113c11fe5a54e50122c8f03b1b08f5635",
         "equations/three-dimensional--complex-fermions-and-p-ip-decoration--13.tex": "c3ad3578f029085fb1d66ac5989dc4f7f69822adc16cbbcf8a48f1ef530dbe08",
@@ -593,9 +593,9 @@
         "equations/three-dimensional--3-complex-fermion-stacking--25.tex": "0b0bd72c9d46c112faf51dd27b8b4c585547afdc36c56d0227370704ebcf9aa4",
         "equations/three-dimensional--3-complex-fermion-stacking--26.tex": "518a20a8e65ae6ca5dd1fbf3a7d067cbbe01ce524e740639ff6c723dca875661",
         "equations/three-dimensional--3-complex-fermion-stacking--27.tex": "da03e7bcdb387cef398bd51fb41f475c19cc8da3d321e63bae0cb26c2e9c0067",
+        "equations/three-dimensional--4-bosonic-stacking--28.tex": "a1d88391d481de6fac7eec79f971a7bf3ebce9914f3cfbaa4e39f9c9a0725615",
         "equations/three-dimensional-geometric-reference--pair-cochain.tex": "f3e2c81ab1c69e3582287506f0d1591cf22f122eed0402981bfa15122c5426b7",
         "equations/three-dimensional-geometric-reference--phase-input-product.tex": "4caffc92ab475a5ffb8243a89f5b87144ed900f84161ce879a6a40eb77977299",
-        "equations/three-dimensional--4-bosonic-stacking--28.tex": "a1d88391d481de6fac7eec79f971a7bf3ebce9914f3cfbaa4e39f9c9a0725615",
         "equations/majorana-and-endpoints--complex-fermion-contribution--28.tex": "6f4c28a5612e631a37fb24889116ad4cdd7269166652cc70d7c5a907ad9a9cba",
         "equations/three-dimensional--complex-fermions-and-majorana-decoration--29.tex": "3f6f26e27f059c7edbe9b62d6a48f7ed77377b52eab2a46fe4d33cd34cf1ee24",
         "equations/three-dimensional--complex-fermions-and-p-ip-decoration--30.tex": "803e74a657943dedfed26e63d5d6c345cdbe670d7063b37433affae1f7a569c9",
@@ -2393,17 +2393,17 @@
         "docs/formulas/THREE_DIMENSIONAL.md"
       ]
     },
+    "equations/three-dimensional--4-bosonic-obstruction--10.tex": {
+      "sha256": "54b1c28eca885ab771847999b30b430eb01d3c908c2cee4bae0940c64b0eeff3",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
     "equations/three-dimensional-geometric-reference--checked-fermion.tex": {
       "sha256": "f1ef31d52ac6a99e28c3accca7616cb0a40af648c3b2b97df5e54a84ecc1929f",
       "used_by": [
         "docs/formulas/THREE_DIMENSIONAL.md",
         "docs/formulas/THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md"
-      ]
-    },
-    "equations/three-dimensional--4-bosonic-obstruction--10.tex": {
-      "sha256": "54b1c28eca885ab771847999b30b430eb01d3c908c2cee4bae0940c64b0eeff3",
-      "used_by": [
-        "docs/formulas/THREE_DIMENSIONAL.md"
       ]
     },
     "equations/three-dimensional--complex-fermions--11.tex": {
@@ -2503,6 +2503,12 @@
         "docs/formulas/THREE_DIMENSIONAL.md"
       ]
     },
+    "equations/three-dimensional--4-bosonic-stacking--28.tex": {
+      "sha256": "a1d88391d481de6fac7eec79f971a7bf3ebce9914f3cfbaa4e39f9c9a0725615",
+      "used_by": [
+        "docs/formulas/THREE_DIMENSIONAL.md"
+      ]
+    },
     "equations/three-dimensional-geometric-reference--pair-cochain.tex": {
       "sha256": "f3e2c81ab1c69e3582287506f0d1591cf22f122eed0402981bfa15122c5426b7",
       "used_by": [
@@ -2515,12 +2521,6 @@
       "used_by": [
         "docs/formulas/THREE_DIMENSIONAL.md",
         "docs/formulas/THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md"
-      ]
-    },
-    "equations/three-dimensional--4-bosonic-stacking--28.tex": {
-      "sha256": "a1d88391d481de6fac7eec79f971a7bf3ebce9914f3cfbaa4e39f9c9a0725615",
-      "used_by": [
-        "docs/formulas/THREE_DIMENSIONAL.md"
       ]
     },
     "equations/three-dimensional--complex-fermions-and-majorana-decoration--29.tex": {
