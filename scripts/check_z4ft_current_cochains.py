@@ -21,6 +21,9 @@ CODE = ROOT / 'formulas/publication_source/reference/d4_input/code'
 sys.path.insert(0, str(CODE))
 from cochains import C, cup, ds, op, parity, sq
 from compact import beta_open, kappa
+sys.path.insert(0, str(ROOT))
+from fspt.geometric_reference_3d import (single_reference, checked_fermion, pair_reference,
+    lower_product, obstruction, checked_majorana, face_phase_numerator)
 
 MANIFESTS = ROOT / 'docs/formulas/term_census/three_dimensional'
 SECTORS = ('C', 'CGAMMA', 'CPSI', 'GAMMA', 'GAMMAPSI', 'PSI')
@@ -59,7 +62,7 @@ def fields(edges, has_n, has_u, has_c):
     values = {
         r'\bar n_1': a, r'\widetilde n_1': h,
         r'\overline{\lfloor n_1/4\rfloor}': C(1, fun=lambda f: n(f) // 4),
-        r'\check n_2': u, 'n_3': c, 'n_1': n,
+        r'\check n_2': u, 'n_3': checked_fermion(c,u), 'n_1': n,
         r'\check\omega_2': W, r'\omega_2': w, 's_1': s,
         r'\overline{\beta\omega_2}': w.lift().d().div(2).reduce(2),
         r'\beta^\circ\check n_2': beta_u,
@@ -125,35 +128,45 @@ def source_sector(data, values, top):
 
 def self_stacking_check():
     """Specialize the already verified current self laws before integer gauge."""
-    certificate = json.loads((ROOT / 'docs/formulas/coefficients/three_dimensional_canonical_self_stacking.json').read_text())
+    certificate = json.loads((ROOT / 'docs/formulas/coefficients/three_dimensional_geometric_self_stacking.json').read_text())
     result = {}
     for name, has_n, has_u, has_c, nu in ROOTS:
         rows = []
         for edges in product((0, 1), repeat=4):
             m, n, u, c, w, s, _ = fields(edges, has_n, has_u, has_c)
             top = tuple(range(5))
-            N3 = sq(u, 1) + u.d() + cup(s, u)
+            old_N3 = sq(u, 1) + u.d() + cup(s, u)
+            N,N2,N3 = lower_product(n,n,u,u,w,s)
+            B2 = pair_reference(n,n,u,u,s)
+            checked_output = checked_fermion(N3,checked_majorana(N,N2,s))
+            assert zero_on_simplex(old_N3 + checked_output + B2.d(), 5)
+            checked_c = checked_fermion(c,u)
             if has_n:
                 inputs = {'s': s, 'w': w, 'u_root': u, 'c_root': c}
                 mask = sum(inputs[v['field']](v['face']) << i
                            for i, v in enumerate(certificate['variables']))
                 numerator = sum(coefficient for monomial, coefficient in
-                                certificate['reference_total_phase_mod16']
+                                certificate['current_total_phase_mod16']
                                 if monomial & mask == monomial) % 16
                 correction = Fraction(numerator, 16)
                 sectors = {sector: sum(coefficient for monomial, coefficient in terms
                                       if monomial & mask == monomial) % 16
-                           for sector, terms in certificate['reference_sector_phases_mod16'].items()}
+                           for sector, terms in certificate['current_sector_phases_mod16'].items()}
                 assert sum(sectors.values()) % 16 == numerator
             else:
                 b = beta_open(u)
                 lower = kappa(u, w, s)
-                half = cup(c, c, 2) + cup(lower, c, 3)
+                half = cup(checked_c, checked_c, 2) + cup(lower, checked_c, 3)
                 half += cup(cup(w, s, 1), u) + cup(b.reduce(2), cup(s, u), 2)
-                half += cup(s, N3) + cup(s, cup(cup(s, u), u, 2)) + cup(u, u)
+                half += cup(s, old_N3) + cup(s, cup(cup(s, u), u, 2)) + cup(u, u)
                 quarter = cup(b, b, 2) + cup(s.lift(), b.reduce(2).lift()) - lower.lift()
                 correction = Fraction(half(top), 2) + Fraction(quarter(top), 4)
+            K = face_phase_numerator(old_N3,B2,w)
+            if not has_n: correction += Fraction(K(top),2)
             rows.append({'tuple': list(edges), 'E4': fraction(correction),
+                         'single_reference_zero': zero_on_simplex(single_reference(u),5),
+                         'B2': B2((0,1,2)), 'dB2': B2.d()((0,1,2,3)),
+                         'face_phase': fraction(Fraction(K(top),2)),
                          'N3': N3((0, 1, 2, 3)),
                          'output_phase': fraction(2 * nu * m(4)(top) + correction)})
         expected = {'p_ip': Fraction(1, 4), 'Majorana': Fraction(1, 2),
@@ -186,7 +199,7 @@ def check():
             assert zero_on_simplex(ds(n, s), 6)
             O3 = cup(w, n.reduce(2)) + cup(s, cup(n.reduce(2), n.reduce(2)))
             assert zero_on_simplex(u.d() + O3, 6)
-            assert zero_on_simplex(c.d() + parity(n, u, w, s), 6)
+            assert zero_on_simplex(c.d() + obstruction(n, u, w, s), 6)
             sectors = {sector: source_sector(data[sector], values, top)
                        for sector in SECTORS}
             source = sum(Fraction(row['phase']) for row in sectors.values()) % 1
@@ -199,16 +212,20 @@ def check():
                          'source_coefficient': rows[-1]['source'],
                          'nonzero_residual_count': 0, 'values': rows}
     for relative in (
+        'fspt/geometric_reference_3d.py',
+        'docs/formulas/source/equations/three-dimensional-geometric-reference--checked-fermion.tex',
+        'docs/formulas/source/equations/three-dimensional-geometric-reference--pair-cochain.tex',
+        'docs/formulas/source/equations/three-dimensional-geometric-reference--phase-transport.tex',
         'docs/formulas/source/equations/three-dimensional--p-ip-decoration--18.tex',
         'docs/formulas/source/equations/three-dimensional--majorana-decoration--14.tex',
         'docs/formulas/source/pages/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md',
-        'docs/formulas/coefficients/three_dimensional_canonical_self_stacking.json',
+        'docs/formulas/coefficients/three_dimensional_geometric_self_stacking.json',
         'docs/formulas/source/equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--11.tex',
     ):
         pins[relative] = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
     return {'status': 'PASS', 'dimension': '3+1D',
             'symmetry': {'Gf': 'Z4^{f,T}', 'Gb': 'C2', 'omega2': 'm1^2', 's1': 'm1'},
-            'phase_convention': 'Current paired physical reader coordinate.',
+            'phase_convention': 'Current geometric pairing coordinate, with the checked CF phase input and complete output-face phase.',
             'normalization': 'm1^q(g1,...,gq)=product(gj), gj in {0,1}; all tuples included.',
             'five_tuples_checked_per_root': 32,
             'lower_equations': {'d_s_n1': 'PASS all 4 pairs', 'd_n2': 'PASS all 8 triples',

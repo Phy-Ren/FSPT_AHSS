@@ -6,7 +6,7 @@ All changes here act on the source and stacking correction together.
 
 ## 3+1D: physical terminal formulas
 
-The current guide uses the complete [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md). That appendix gives the map, inverse, and output coboundary explicitly. The lower physical fields and their stacking laws are unchanged.
+The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), including its lower-field map, inverse, and finite output-face phase. The earlier [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) is a retained construction step evaluated on the checked complex-fermion inputs. Both conversions are required; the current lower product is the compact geometric formula.
 
 ## 3+1D: earlier complex-fermion coordinate
 

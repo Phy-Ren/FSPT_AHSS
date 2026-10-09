@@ -71,7 +71,7 @@ dn_3=\mathcal{𝒪}_4=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+\mat
 **Mixed Majorana–p+ip contribution.**
 
 ```math
-\mathcal{𝒪}_4^{\gamma\psi}=\check n_2\cup_1d\check n_2+s_1(\check n_2\cup_2d\check n_2).
+\mathcal{𝒪}_4^{\gamma\psi}=d\check n_2\cup_1\check n_2+s_1(\check n_2\cup_2d\check n_2).
 ```
 
 Here $`d\check n_2=\check\omega_2\bar n_1`$ is fixed by the preceding obstruction.
@@ -92,6 +92,24 @@ The second digit obeys $`d\widetilde n_1=\bar n_1^2+s_1\bar n_1`$.
 
 ### 4. Bosonic obstruction
 
+The decoration $`n_3`$ is the occupation in the geometric pairing reference.
+For evaluating the phase, one shifted field retains the already fixed
+fermionic operator reference:
+
+```math
+\begin{aligned}
+\mathcal B_3[\check n_2]&=\check n_2\cup_1\check n_2,\\
+\check n_3&=n_3+\mathcal B_3[\check n_2],\\
+d\check n_3&=\mathcal{𝒪}_4+d\mathcal B_3.
+\end{aligned}
+```
+
+This is an explicit binary coordinate, with the same map as its inverse.
+It is not an extra decoration. Every CF argument in the phase coefficient
+tables is $`\check n_3`$, and every CF differential is $`d\check n_3`$.
+The source and product are transported together as proved in
+[the reference comparison](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
+
 <a id="eq-t3"></a>
 
 
@@ -109,7 +127,7 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 
 ```math
 \widehat{\mathcal{𝒪}}_5^c
- =\frac12[\omega_2n_3+n_3\cup_1n_3+dn_3\cup_2n_3].
+ =\frac12[\omega_2\check n_3+\check n_3\cup_1\check n_3+d\check n_3\cup_2\check n_3].
 ```
 
 #### Complex fermions and Majorana decoration
@@ -117,14 +135,14 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 ```math
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_5^{c\gamma}
-={}&\frac12\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}\big]\cup_3\!\big[\\
-&\qquad\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}\big].
+={}&\frac12\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big]\cup_3\!\big[\\
+&\qquad\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big].
 \end{aligned}
 ```
 
-The bracket reuses the complete Majorana parity from the preceding layer:
+The bracket includes the reference correction to the preceding parity:
 $`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2\check n_2
-+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2`$.
++\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2+d\mathcal B_3`$.
 Its mixed component retains the terms proportional to $`d\check n_2`$;
 no closed-input assumption is made. The outer superscript records the
 exchanged fermion operators. Reusing their full parity does not change
@@ -135,11 +153,23 @@ that physical origin.
 ```math
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_5^{c\psi}
- =\frac12\Big[&dn_3\cup_3\mathcal{𝒪}_4^\psi
-  +\mathcal{𝒪}_4^\psi\cup_3dn_3
+ =\frac12\Big[&d\check n_3\cup_3\mathcal{𝒪}_4^\psi
+  +\mathcal{𝒪}_4^\psi\cup_3d\check n_3
   +\mathcal{𝒪}_4^\psi\cup_3\mathcal{𝒪}_4^\psi\\
  &+\sum_{(v;\mathbf x)\in\mathcal I_5^{c\psi}}
        \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)\Big].
+\end{aligned}
+```
+
+```math
+\begin{aligned}
+\sum_{(v;\boldsymbol x)\in\mathcal I_5^{c\psi}}
+ \mathop{\mathrm{MS}}\nolimits_v(\boldsymbol x)
+={}&\mathop{\mathrm{MS}}\nolimits_{1212313}(d\check n_3,\omega_2,d\check n_2)\\
+&+\big(\mathop{\mathrm{MS}}\nolimits_{121341431}+\mathop{\mathrm{MS}}\nolimits_{241431341}
+ +\mathop{\mathrm{MS}}\nolimits_{124214131}+\mathop{\mathrm{MS}}\nolimits_{121431341}\\
+&\qquad+\mathop{\mathrm{MS}}\nolimits_{142141314}+\mathop{\mathrm{MS}}\nolimits_{142141341}\big)
+ (d\check n_3,s_1,\check n_2,d\check n_2).
 \end{aligned}
 ```
 
@@ -147,7 +177,7 @@ The finite sum contains **seven specified MS terms**,
 [listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices).
 Together with the three displayed cups, this gives **ten terms**.
 Every MS term contains $`d\check n_2=\check\omega_2\bar n_1`$ and
-$`dn_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}
+$`d\check n_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3
 +\mathcal{𝒪}_4^\psi`$. Thus the complex-fermion exchange correction
 depends on its full lower parity differential. The
 [exact reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
@@ -347,7 +377,7 @@ N_3&=n_3+n'_3+\mathcal{ℰ}_3,\\
 
 ```math
 \mathcal{ℰ}_3^{\gamma\psi}
- =d\check n_2\cup_2\check n'_2
+ =\check n_2\cup_2d\check n'_2
  +(\check n_2+\check n'_2)\cup_1\check{\mathcal{ℰ}}_2
  +s_1\big[(\check n_2+\check n'_2)\cup_2\check{\mathcal{ℰ}}_2\big].
 ```
@@ -355,17 +385,45 @@ N_3&=n_3+n'_3+\mathcal{ℰ}_3,\\
 **p+ip contribution.**
 
 ```math
-\begin{aligned}\mathcal{ℰ}_3^\psi={}&{z^\psi_3}({\bar n_{1}},{\bar n'_{1}})+[{\check\omega_2}({\bar n_{1}}+{\bar n'_{1}})]\cup_2{\check{\mathcal{ℰ}}_{2}}+(d{\widetilde n_{1}}){\widetilde n'_{1}}\\
-&+({s_1}{\bar n_{1}})\cup_1({\bar n'_{1}})^2+{\bar n_{1}} {s_1} {\bar n'_{1}}+{(\bar n_{1}\cup_{1}\bar n'_{1})} {s_1}({\bar n_{1}}+{\bar n'_{1}})\\
-&+{s_1}\big[{s_1}{(\bar n_{1}\cup_{1}\bar n'_{1})}+{\bar n_{1}}\cup_1d{\widetilde n'_{1}}+{(\bar n_{1}\cup_{1}\bar n'_{1})}({\bar n_{1}}+{\bar n'_{1}})\big]+{\Delta[(\bar n_1^2\cup_1s_1)\bar n_1]},\\
-{z^\psi_3}({\bar n_{1}},{\bar n'_{1}})={}&\mathop{\mathrm{MS}}\nolimits_{12314}({\bar n_{1}},{\bar n_{1}},{\bar n'_{1}},{\bar n'_{1}})
- =[{\bar n_{1}}\cup_1({\bar n_{1}}{\bar n'_{1}})]{\bar n'_{1}}.
+\begin{aligned}
+\mathcal{ℰ}_3^\psi={}&z_3^\psi(\bar n_1,\bar n'_1)
+ +\widetilde n_1(\bar n'_1)^2+s_1\widetilde n_1\bar n'_1,\\
+z_3^\psi(\bar n_1,\bar n'_1)
+={}&[\bar n_1\cup_1(\bar n_1\bar n'_1)]\bar n'_1.
 \end{aligned}
 ```
 
-The $`\Delta`$ acts on the entire displayed bracket with the p+ip output $`N_1`$.
+The pure sheet contribution has three terms. The signed floor is taken before reduction. The complete parity is counted directly by the geometric pairing construction, including both backgrounds.
 
 ### 4. Bosonic stacking
+
+The finite pair reference is
+
+```math
+\begin{aligned}
+\mathcal B_2(012)={}&\bar n_1(01)\widetilde n'_1(12)
+ +\widetilde n_1(01)\bar n'_1(12)
+ +\widetilde n_1(01)\widetilde n'_1(12)\\
+&+\check n_2(012)\check n'_2(012)
+ +\bar n_1(01)\bar n'_1(12)[\check n_2(012)+\check n'_2(012)]\\
+&+s_1(01)\{\widetilde n_1(01)\bar n'_1(12)
+ +\bar n_1(01)\bar n'_1(01)[\bar n_1(12)+\bar n'_1(12)]\}.
+\end{aligned}
+```
+
+The two checked quantities needed by the phase formulas are
+
+```math
+\begin{aligned}
+\check{\mathcal{ℰ}}_3&=\mathcal{ℰ}_3+\Delta\mathcal B_3+d\mathcal B_2,\\
+\check N_3&=N_3+\mathcal B_3[\check N_2]
+ =\check n_3+\check n'_3+\check{\mathcal{ℰ}}_3+d\mathcal B_2.
+\end{aligned}
+```
+
+The $`\Delta`$ below always uses the actual new output. The explicitly
+printed $`d\mathcal B_2`$ terms account for the change of its face reference.
+They are already included in the contributions below and must not be added a second time.
 
 <a id="eq-t3b"></a>
 
@@ -385,15 +443,20 @@ The $`\Delta`$ acts on the entire displayed bracket with the p+ip output $`N_1`$
 ```
 
 For two identical complete states with $`n_1=0`$, the entire correction
-reduces to the [ten-term self-stacking formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md).
+reduces to the [transported self-stacking formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md).
 It retains the complex-fermion completion and uses the same phase representative.
 
 #### Complex fermions
 
 ```math
-\widehat{\mathcal{ℰ}}^{c}_4
- =\frac12\big[n_3\cup_2n'_3
- +(n_3+n'_3)\cup_2\mathcal{ℰ}_3\big].
+\begin{aligned}
+\widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&
+ \check n_3\cup_2\check n'_3
+ +(\check n_3+\check n'_3)\cup_2(\mathcal{ℰ}_3+\Delta\mathcal B_3)\\
+ &+\omega_2\mathcal B_2+\mathcal B_2^2
+ +d\mathcal B_2\cup_1\mathcal B_2
+ +\check{\mathcal{ℰ}}_3\cup_2d\mathcal B_2\Big].
+\end{aligned}
 ```
 
 #### Complex fermions and Majorana decoration
@@ -402,13 +465,14 @@ It retains the complex-fermion completion and uses the same phase representative
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^{c\gamma}
 ={}&\frac12\Big[
- \big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}\big]\cup_3n'_3\\
+ \big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big]\cup_3\check n'_3\\
 &\qquad+\Delta\Big[
- n_3\cup_3\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}\big]\Big]\Big].
+ \check n_3\cup_3\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big]\Big]\\
+&\qquad+d\mathcal B_2\cup_3\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big][\check N_2]\Big].
 \end{aligned}
 ```
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ minus the values at $`(n_3,\check n_2)`$ and $`(n'_3,\check n'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential terms. This is an exact rewriting of the same contribution.
+The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ minus the values at $`(n_3,\check n_2)`$ and $`(n'_3,\check n'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential and the $`d\mathcal B_3`$ terms. The last term transports the output evaluation to its actual face reference.
 
 #### Complex fermions and p+ip decoration
 
@@ -416,14 +480,15 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ mi
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^{c\psi}(01234)
 ={}&\frac12\Big[
- \mathcal{𝒪}_4^\psi[n_1]\cup_3n'_3
- +\Delta\big(n_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
-&\qquad+(dn_3+dn'_3)\cup_4\Big[
+ \mathcal{𝒪}_4^\psi[n_1]\cup_3\check n'_3
+ +\Delta\big(\check n_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
+&\qquad+d\mathcal B_2\cup_3\mathcal{𝒪}_4^\psi[N_1]\\
+&\qquad+(d\check n_3+d\check n'_3)\cup_4\Big[
  \mathcal{𝒪}_4^\gamma[\check N_2]
  +\mathcal{𝒪}_4^\gamma[\check n_2+\check n'_2]\\
 &\hspace{53mm}+\check N_2^2+(\check n_2+\check n'_2)^2
  \Big]\Big](01234)\\
-&+\frac12(dn_3)(01234)\Big[
+&+\frac12(d\check n_3)(01234)\Big[
  \check n'_2(012)(d\check n_2)(0234)
  +\check n_2(034)(d\check n'_2)(0123)\\
 &\qquad+\check n'_2(123)(d\check n_2)(0134)
@@ -433,7 +498,7 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ mi
  \check n'_2(124)(d\check n_2)(1234)
  +[\check n_2(123)+\check n'_2(123)](d\check n'_2)(1234)
  \Big\}\Big]\\
-&+\frac12(dn'_3)(01234)\Big[
+&+\frac12(d\check n'_3)(01234)\Big[
  \check n'_2(012)(d\check n_2)(0234)
  +\check n_2(034)(d\check n'_2)(0123)\\
 &\qquad+s_1(01)\Big\{
@@ -443,9 +508,9 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ mi
 \end{aligned}
 ```
 
-The two face brackets contain **13 products** after distributing the
-binary parentheses: eight multiply $`dn_3`$ and five multiply $`dn'_3`$.
-They replace the former 132-word sum exactly, as proved in the
+The two unchanged face brackets contain **13 products** after distributing the
+binary parentheses: eight multiply $`d\check n_3`$ and five multiply $`d\check n'_3`$.
+Their CF differentials are $`d\check n_3`$ and $`d\check n'_3`$. They replace the former 132-word sum exactly, as proved in the
 [exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md).
 The lower Majorana differentials retain their physical meanings.
 
@@ -453,8 +518,8 @@ The former auxiliary eight-word phase polynomial has been eliminated in
 favor of the lower obstruction. Its two evaluations give **14 terms**:
 two derivatives multiply two retained obstruction evaluations, one output
 square, and the four products in the displayed input square. Together with
-the two initial lower-operation terms and thirteen face products, this
-contribution has **29 terms**. The lower obstruction acts on its whole
+the three initial lower-operation/reference terms and thirteen face products, this
+contribution has **30 terms**. The lower obstruction acts on its whole
 binary argument; it must not be linearized.
 
 #### Majorana decoration

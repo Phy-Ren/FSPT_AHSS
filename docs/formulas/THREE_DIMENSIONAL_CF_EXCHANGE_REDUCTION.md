@@ -2,6 +2,8 @@
 
 # General 3+1D complex-fermion exchange reduction
 
+This is a retained coefficient/derivation kernel. Its CF input `n3` means the current `check n3=n3+B3`; its product uses the previous output `check N3+dB2`. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is `N3+d check n2`. Frozen coefficient values are unchanged.
+
 The complete complex-fermion–p+ip contribution can be written as follows
 on the ordered four-simplex, with the already defined lower outputs and
 obstruction representatives:
@@ -10,14 +12,15 @@ obstruction representatives:
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^{c\psi}(01234)
 ={}&\frac12\Big[
- \mathcal{𝒪}_4^\psi[n_1]\cup_3n'_3
- +\Delta\big(n_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
-&\qquad+(dn_3+dn'_3)\cup_4\Big[
+ \mathcal{𝒪}_4^\psi[n_1]\cup_3\check n'_3
+ +\Delta\big(\check n_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
+&\qquad+d\mathcal B_2\cup_3\mathcal{𝒪}_4^\psi[N_1]\\
+&\qquad+(d\check n_3+d\check n'_3)\cup_4\Big[
  \mathcal{𝒪}_4^\gamma[\check N_2]
  +\mathcal{𝒪}_4^\gamma[\check n_2+\check n'_2]\\
 &\hspace{53mm}+\check N_2^2+(\check n_2+\check n'_2)^2
  \Big]\Big](01234)\\
-&+\frac12(dn_3)(01234)\Big[
+&+\frac12(d\check n_3)(01234)\Big[
  \check n'_2(012)(d\check n_2)(0234)
  +\check n_2(034)(d\check n'_2)(0123)\\
 &\qquad+\check n'_2(123)(d\check n_2)(0134)
@@ -27,7 +30,7 @@ obstruction representatives:
  \check n'_2(124)(d\check n_2)(1234)
  +[\check n_2(123)+\check n'_2(123)](d\check n'_2)(1234)
  \Big\}\Big]\\
-&+\frac12(dn'_3)(01234)\Big[
+&+\frac12(d\check n'_3)(01234)\Big[
  \check n'_2(012)(d\check n_2)(0234)
  +\check n_2(034)(d\check n'_2)(0123)\\
 &\qquad+s_1(01)\Big\{
@@ -114,8 +117,8 @@ The complete source contribution is
 ```math
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_5^{c\psi}
- =\frac12\Big[&dn_3\cup_3\mathcal{𝒪}_4^\psi
-  +\mathcal{𝒪}_4^\psi\cup_3dn_3
+ =\frac12\Big[&d\check n_3\cup_3\mathcal{𝒪}_4^\psi
+  +\mathcal{𝒪}_4^\psi\cup_3d\check n_3
   +\mathcal{𝒪}_4^\psi\cup_3\mathcal{𝒪}_4^\psi\\
  &+\sum_{(v;\mathbf x)\in\mathcal I_5^{c\psi}}
        \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)\Big].

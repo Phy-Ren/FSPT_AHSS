@@ -266,6 +266,14 @@ inputs.
 <a id="majorana-3d"></a>
 ## 3+1D
 
+These are restrictions of the geometric pairing coordinate. The lower
+parity and its product coincide pointwise with the original Majorana laws.
+For the phase use $`\check n_3=n_3+n_2\cup_1n_2`$,
+$`\mathcal B_2=n_2\cup_2n'_2`$, and the checked quantities defined in
+[the full reference](THREE_DIMENSIONAL.md#eq-t3b).
+The displayed point-fermion phase includes the output-face conversion.
+The microscopic ordinary modes and the original projection schedule are unchanged.
+
 The physical fields are the binary Majorana cochain $`n_2`$,
 the binary complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
 
@@ -323,8 +331,8 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 
 ```math
 \widehat{\mathcal{𝒪}}^{c}_5
- =\frac12\big[\omega_2n_3+n_3\cup_1n_3
-   +dn_3\cup_2n_3\big].
+ =\frac12\big[\omega_2\check n_3+\check n_3\cup_1\check n_3
+   +d\check n_3\cup_2\check n_3\big].
 ```
 
 ##### Complex-fermion–Majorana contribution
@@ -335,7 +343,7 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 
 ```math
 \widehat{\mathcal{𝒪}}^{c\gamma}_5
- =\frac12\big[dn_3\cup_3dn_3\big].
+ =\frac12\big[d\check n_3\cup_3d\check n_3\big].
 ```
 
 ##### Majorana contribution
@@ -453,9 +461,14 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 **(M3Ec, 3+1D)**
 
 ```math
-\widehat{\mathcal{ℰ}}^{c}_4
- =\frac12\big[n_3\cup_2n'_3
- +(n_3+n'_3)\cup_2\mathcal{ℰ}_3\big].
+\begin{aligned}
+\widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&
+ \check n_3\cup_2\check n'_3
+ +(\check n_3+\check n'_3)\cup_2(\mathcal{ℰ}_3+\Delta\mathcal B_3)\\
+ &+\omega_2\mathcal B_2+\mathcal B_2^2
+ +d\mathcal B_2\cup_1\mathcal B_2
+ +\check{\mathcal{ℰ}}_3\cup_2d\mathcal B_2\Big].
+\end{aligned}
 ```
 
 ##### Complex-fermion–Majorana contribution
@@ -466,9 +479,10 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^{c\gamma}_4
- =\frac12\big[&dn_3\cup_3n'_3+N_3\cup_3dN_3\\
- &+n_3\cup_3dn_3+n'_3\cup_3dn'_3\big].
+\widehat{\mathcal{ℰ}}_4^{c\gamma}=\frac12\Big[&
+ d\check n_3\cup_3\check n'_3
+ +\Delta(\check n_3\cup_3d\check n_3)\\
+ &+d\mathcal B_2\cup_3d\check N_3\Big].
 \end{aligned}
 ```
 
@@ -1050,7 +1064,9 @@ whose first input has degree greater than $`q`$.
 
 The displayed physical laws use the operator representative. The maps
 below record the exact change from the previous phase coordinate and its
-inverse. All lower cochains and their product laws are unchanged. Source
+inverse. These terminal maps keep their lower inputs fixed. In 3+1D the
+current geometric reference first applies the explicit checked-CF and
+output-face conversion linked above. Source
 and product transform together; these equations do not introduce a new
 physical contribution.
 

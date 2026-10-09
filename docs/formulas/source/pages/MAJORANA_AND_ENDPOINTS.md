@@ -188,6 +188,14 @@ inputs.
 <a id="majorana-3d"></a>
 ## 3+1D
 
+These are restrictions of the geometric pairing coordinate. The lower
+parity and its product coincide pointwise with the original Majorana laws.
+For the phase use $`\check n_3=n_3+n_2\cup_1n_2`$,
+$`\mathcal B_2=n_2\cup_2n'_2`$, and the checked quantities defined in
+[the full reference](THREE_DIMENSIONAL.md#eq-t3b).
+The displayed point-fermion phase includes the output-face conversion.
+The microscopic ordinary modes and the original projection schedule are unchanged.
+
 The physical fields are the binary Majorana cochain $`n_2`$,
 the binary complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
 
@@ -673,7 +681,9 @@ whose first input has degree greater than $`q`$.
 
 The displayed physical laws use the operator representative. The maps
 below record the exact change from the previous phase coordinate and its
-inverse. All lower cochains and their product laws are unchanged. Source
+inverse. These terminal maps keep their lower inputs fixed. In 3+1D the
+current geometric reference first applies the explicit checked-CF and
+output-face conversion linked above. Source
 and product transform together; these equations do not introduce a new
 physical contribution.
 

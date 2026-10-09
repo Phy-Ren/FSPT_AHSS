@@ -157,7 +157,7 @@ cups are recorded once and their full substitutions are reported separately.
 - [4+1D pure-source construction](formulas/SOURCE_OPERATIONS.md#source-completion).
 - [4+1D pure-source physical face coefficients](formulas/FOUR_DIMENSIONAL_Y6_FACES.md).
 - [Root powers and the abelian stacking group](formulas/ROOT_POWER_PRESENTATIONS.md)
-- [Proof of the ten-term 3+1D zero-p+ip self-twister](formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md)
+- [Transported 3+1D zero-p+ip self-twister](formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md)
 - [Closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md), [4+1D zero-p+ip self-stacking](formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
 - [Exact Majorana carry reduction](formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
 - [Higher cups and finite sums](formulas/OPERATIONS.md), [fixed coefficients](formulas/COEFFICIENTS.md)
@@ -195,7 +195,7 @@ class after the permitted lower-layer changes obstructs the decoration.
 <a id="eq-p3"></a>
 <a id="eq-t3b"></a>
 
-[Complete 3+1D formulas](formulas/THREE_DIMENSIONAL.md).
+[Complete 3+1D formulas](formulas/THREE_DIMENSIONAL.md). The current geometric pairing coordinate and its full phase transport are fixed in [the paired comparison](formulas/THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 
 <a id="four-dimensional"></a>
 <a id="eq-c1-4d"></a>

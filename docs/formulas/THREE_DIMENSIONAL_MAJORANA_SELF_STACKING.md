@@ -2,6 +2,11 @@
 
 # Self-stacking in 3+1D with no p+ip decoration
 
+The current complex-fermion coordinate is the geometric pairing occupation.
+Use $`\check n_3=n_3+n_2\cup_1n_2`$ in the phase blocks below.
+The point-fermion phase includes $`(\omega_2n_2+n_2^2)/2`$ from the output reference conversion.
+The old ten-term coefficient certificate is a retained kernel, not the complete current phase.
+
 Take a complete state with $`n_1=0`$, closed binary Majorana cochain
 $`n_2`$, binary complex-fermion cochain $`n_3`$, and additive phase
 $`\widehat\nu_4`$. The input satisfies the obstruction equations in the
@@ -10,7 +15,7 @@ $`dn_3=\mathcal{𝒪}_4^\gamma[n_2]`$. The backgrounds are shared by both
 copies. The restriction is **zero p+ip decoration**, not merely a closed
 Majorana cochain inside a state with nonzero p+ip decoration.
 
-The maintained ten-term formula is in the
+The maintained transported formula is in the
 [complete self-stacking reference](THREE_DIMENSIONAL_SELF_STACKING.md#4-bosonic-self-stacking-with-zero-pip-input).
 This appendix proves that specialization. Its output includes the complete
 complex-fermion completion and phase; subsequent root relations still use
@@ -52,7 +57,7 @@ $`\mathcal{𝒪}_4^\gamma`$. This accounts for the whole obstruction in the
 quarter bracket without dropping its carry.
 
 The [standalone symbolic verifier](coefficients/verify_three_dimensional_majorana_self_stacking.py)
-checks these identities and the complete formula using exact Boolean and
+checks these identities and the retained ten-term kernel using exact Boolean and
 integer coefficient polynomials, rather than selected group examples.
 It treats all closed Majorana and background inputs on an ordered
 four-simplex and every compatible complex-fermion completion.

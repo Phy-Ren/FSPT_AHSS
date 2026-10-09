@@ -43,10 +43,17 @@ integer gauge can change the Majorana output.
 
 {{equation:three-dimensional-self-stacking--3-complex-fermion-self-stacking--6}}
 
-There are **seven terms**. Their total can also be written as
-$`\mathrm{Sq}^1\check n_2+d\check n_2+s_1\check n_2+
-\mathcal{ℰ}_{3}^\psi`$ using the open-cochain Steenrod square.
-The term $`d\check n_2`$ must be retained.
+There are **five terms**. Their total is
+$`\mathrm{Sq}^1\check n_2+s_1\check n_2+\mathcal{ℰ}_3^\psi`$,
+with the open-cochain square. The changed cup order is essential.
+The diagonal Cartan term vanishes because the input parity is closed.
+
+The phase uses the explicitly defined $`\check n_3=n_3+\mathcal B_3`$.
+For both finite-root branches below, $`\mathcal B_2=\check n_2`$ and
+$`\mathcal B_3[\check N_2]=0`$. The previous phase output is therefore
+$`N_3+d\check n_2`$. The point-fermion phase includes the full finite
+face-conversion term; all other blocks use the transported inputs and output.
+These are the current formulas, not an instruction to retain the old product.
 
 ## 4. Bosonic self-stacking with zero p+ip input
 
@@ -67,12 +74,13 @@ contributions are
 
 {{equation:three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--11}}
 
-The complete formula has **ten terms: seven half terms and three quarter
-terms**, retaining the already defined lower output and obstruction.
+On this closed branch the last two derivative terms of the point-fermion block vanish.
+The complete phase has **twelve terms: nine half terms and three quarter terms**,
+retaining the defined checked coordinate, lower output and obstruction.
 The quarter-valued obstruction is the canonical integer lift of its
 **whole binary value**. It must not be distributed into separately lifted
-summands. This is an exact simplification with no additional gauge;
-[a self-contained coefficient proof](coefficients/verify_three_dimensional_majorana_self_stacking.py)
+summands. The earlier ten-term kernel is retained as a fixed input to the coordinate transport;
+[its self-contained coefficient proof](coefficients/verify_three_dimensional_majorana_self_stacking.py)
 also checks the complex-fermion completion.
 
 ## 5. Bosonic self-stacking of the canonical p+ip torsion root
@@ -92,7 +100,7 @@ In particular,
 $`d\check n_2=\check\omega_2s_1`$ and
 $`dn_3=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\check n_2]
 +\mathcal{𝒪}_4^\psi[s_1]`$.
-The six labels below retain their fermionic exchange origins.
+The six labels retain their fermionic exchange origins. The point-fermion block also carries the finite phase of the output point-occupation reference change.
 
 ### Complex fermions
 
@@ -102,7 +110,7 @@ The six labels below retain their fermionic exchange origins.
 
 {{equation:three-dimensional-self-stacking--complex-fermions-and-majorana-decoration--15}}
 
-These are **three terms** after distributing the input parity bracket.
+The bracket includes $`d\mathcal B_3`$, and its output is $`N_3+d\check n_2`$.
 The output mixed part vanishes exactly because $`d(s_1^2)=0`$, so
 $`\mathcal{𝒪}_4^{\gamma\psi}[s_1^2]=0`$. The individual lower differential
 representatives remain defined structures.
@@ -113,7 +121,7 @@ On the ordered four-simplex,
 
 {{equation:three-dimensional-self-stacking--complex-fermions-and-p-ip-decoration--16}}
 
-This contribution has **five terms**. The three face products replace the
+This is the transported six-term expression; the two output terms retain $`N_3+d\check n_2`$. The three face products replace the
 entire 132-word open-Majorana correction on identical inputs. This is an
 exact cochain identity; the two other open-Majorana product terms vanish
 because their complex-fermion argument is $`n_3+n_3=0`$.
@@ -171,25 +179,25 @@ canonical integer lift.
 
 | Physical contribution | Explicit terms |
 |---|---:|
-| c | 1 |
-| c-gamma | 3 |
-| c-psi | 5 |
+| c | 6 |
+| c-gamma | 5 |
+| c-psi | 6 |
 | gamma | 13 |
 | gamma-psi | 1,142 |
 | psi | 250 |
-| Complete canonical torsion self-twister | **1,414** |
+| Complete canonical torsion self-twister | **1,422** |
 
 The count retains the already defined lower differential representatives,
 Bocksteins and integer carries, while counting every finite coefficient
 product separately. The Majorana whole lift has two interior terms;
-counting its interior gives 1,415 leaves instead of 1,414 outer terms.
+counting its interior gives 1,423 leaves instead of 1,422 outer terms.
 It is not a claim of minimality.
-The [standalone exact verifier](coefficients/verify_three_dimensional_canonical_self_stacking.py)
-checks every physical sector and the total against the frozen baseline
+The [standalone exact verifier](coefficients/verify_three_dimensional_geometric_self_stacking.py)
+checks every physical sector and the total against the explicitly transported frozen baseline
 on all 20 independent valid-tower bits. All seven residuals are zero.
 The [additional lift-identity verifier](coefficients/verify_three_dimensional_open_gamma_lift_reduction.py)
 checks the current 13-term Majorana expression against that same baseline.
-The fully collected scalar phase has 2,652 coefficients modulo 16; that
+The fully collected scalar phase has 2,742 coefficients modulo 16; that
 supplementary coefficient count uses a different expansion boundary.
 
 These are complete **self-stacking twisters before gauge reduction**.

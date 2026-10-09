@@ -1,12 +1,15 @@
-# Paired phase representative in 3+1D
+# Auxiliary phase comparison in 3+1D
 
-The ordinary physical obstruction and stacking formulas use the same
-invertible terminal coordinate change:
+This retained comparison is evaluated after the current lower-field map
+$`n_3\mapsto\check n_3=n_3+\mathcal B_3`$. Its output is
+$`\check N_3+d\mathcal B_2`$. The current formulas additionally include
+the explicit face phase in [the geometric reference](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
+In this auxiliary calculation only, symbols without checks on the CF field denote that mapped field.
+The following terminal change then applies:
 
 {{equation:three-dimensional-paired-representative--paired-phase-representative-in-3-1d--1}}
 
-The inverse subtracts the displayed phase. All lower fields and their
-stacking products are unchanged. The symbol `Delta` means evaluation on
+The inverse subtracts the displayed phase. All lower fields of this auxiliary calculation are fixed; the preceding lower-coordinate map must not be omitted. The symbol `Delta` means evaluation on
 the actual lower stacked tower, minus the two input evaluations.
 The nine-term `H4` is printed in [the stacking formulas](THREE_DIMENSIONAL.md#eq-t3b).
 The former `P4` has been replaced by its [exact lower-obstruction identity](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md); this changes no phase value.
@@ -80,6 +83,5 @@ The ten ordinary words of `H3pure` are printed in
 [the word appendix](THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md#accepted-majorana-bridge-and-physical-origin-labels).
 All half-valued brackets are binary; the quarter-valued cup1 term is the
 canonical lift of its whole binary sum. These reduction boundaries fix
-the output gauge, including its open-Majorana continuation. On vanishing
-integer decoration, the source and product coincide with the accepted
-Majorana operator representative at identical lower coordinates.
+the output gauge, including its open-Majorana continuation. Its closed-Majorana operator comparison is in the auxiliary CF coordinate.
+The current-coordinate comparison includes the single-state and output maps above.

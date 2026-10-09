@@ -1,5 +1,7 @@
 # Exact ordinary-word tables for the relative 3+1D CF product
 
+This is a retained coefficient/derivation kernel. Its CF input `n3` means the current `check n3=n3+B3`; its product uses the previous output `check N3+dB2`. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is `N3+d check n2`. Frozen coefficient values are unchanged.
+
 This archived 132-word expression is retained as proof input. The current
 formula uses the [thirteen-product exchange identity](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md),
 with the remaining auxiliary phase polynomial replaced by a lower obstruction.

@@ -9,7 +9,7 @@ The additive phase is defined by
 $`\nu_4=\exp(2\pi i\widehat\nu_4)`$.
 
 These representatives use the [current 3+1D formulas](../../docs/formulas/THREE_DIMENSIONAL.md)
-and their fixed paired phase convention.
+in the geometric pairing coordinate.
 
 | Decoration | $`n_1`$ | $`n_2`$ | $`n_3`$ | $`\widehat{\mathcal O}_5`$ | $`\widehat\nu_4`$ |
 |---|---|---|---|---|---|
@@ -48,3 +48,21 @@ four pairs, eight triples, and sixteen four-tuples. The
 self-stacking laws on all sixteen four-tuples, before removing the
 integer output by its fermionic coboundary. This verifies concrete
 representatives; it is not a repeated classification calculation.
+
+The reference change is also evaluated explicitly. All four roots have
+$`\mathcal B_3=\check n_2\cup_1\check n_2=0`$. The p+ip square has
+$`\mathcal B_2=0`$, while the Majorana square has $`\mathcal B_2=m_1^2`$;
+in the latter case $`d\mathcal B_2=0`$ and
+$`(\omega_2\mathcal B_2+\mathcal B_2^2)/2=0\mod1`$.
+Their complete products before the integer gauge are
+
+| Input root | $`N_1`$ | $`N_2`$ | $`N_3`$ | $`\mathcal V_4`$ |
+|---|---|---|---|---|
+| p+ip | $`2m_1`$ | $`0`$ | $`0`$ | $`(-i)^{m_1^4}`$ |
+| Majorana | $`0`$ | $`0`$ | $`m_1^3`$ | $`1`$ |
+| Complex fermion | $`0`$ | $`0`$ | $`0`$ | $`(-1)^{m_1^4}`$ |
+| Bosonic | $`0`$ | $`0`$ | $`0`$ | $`1`$ |
+
+Removing $`N_1=2m_1`$ uses the full integer coboundary, including its phase.
+These are the same root relations in $`\mathbb Z_{16}`$, checked as cochains
+in the current coordinate, rather than inferred from the group order.

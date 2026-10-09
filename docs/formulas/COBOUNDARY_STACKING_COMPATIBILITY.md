@@ -206,7 +206,7 @@ c_{\mathrm{bulk}}&=
 \mathrm{Sq}^2\check n_2
 +\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2,\\
 c'_{\mathrm{bulk}}&=\mathcal{𝒪}_4^\psi,\qquad
-c_{\mathrm{bulk}}+c'_{\mathrm{bulk}}=dn_3.
+c_{\mathrm{bulk}}+c'_{\mathrm{bulk}}=d\check n_3.
 \end{aligned}
 ```
 
@@ -214,8 +214,8 @@ Its entire additional phase is consequently
 
 ```math
 \frac12\left[
-dn_3\cup_3\mathcal{𝒪}_4^\psi
-+dn_3\cup_4\mathcal{𝒪}_5^\gamma(d\check n_2)
+d\check n_3\cup_3\mathcal{𝒪}_4^\psi
++d\check n_3\cup_4\mathcal{𝒪}_5^\gamma(d\check n_2)
 \right].
 ```
 
@@ -228,6 +228,10 @@ of the specified pure-layer bulk maps.
 
 The complete phases of the pure-layer bulk maps are evaluated on their
 stated domains before this additional product correction is applied.
+Here `check n3 = n3 + check n2 cup1 check n2` is the explicit
+[geometric-reference conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
+Thus the bulk sum is `d check n3`, not the current point occupation `dn3`.
+The boundary product also receives the face-reference phase on that page.
 
 ## Transporting representatives together
 

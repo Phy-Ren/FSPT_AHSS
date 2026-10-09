@@ -57,7 +57,7 @@ coefficients before taking its canonical integer lift. Its interior has
 ```
 
 Equivalently, its interior is
-$`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\check n_2]+\check n_2\cup_1d\check n_2`$.
+$`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\check n_2]+d\check n_2\cup_1\check n_2`$.
 The two-term expression above avoids expanding and then cancelling that
 additional lower-source term. No new polynomial symbol is introduced in
 the reader formula.

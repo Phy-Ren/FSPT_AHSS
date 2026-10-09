@@ -7,7 +7,7 @@
     "omega2": "m1^2",
     "s1": "m1"
   },
-  "phase_convention": "Current paired physical reader coordinate.",
+  "phase_convention": "Current geometric pairing coordinate, with the checked CF phase input and complete output-face phase.",
   "normalization": "m1^q(g1,...,gq)=product(gj), gj in {0,1}; all tuples included.",
   "five_tuples_checked_per_root": 32,
   "lower_equations": {
@@ -6457,6 +6457,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6468,6 +6472,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6479,6 +6487,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6490,6 +6502,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6501,6 +6517,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6512,6 +6532,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6523,6 +6547,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6534,6 +6562,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6545,6 +6577,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6556,6 +6592,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6567,6 +6607,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6578,6 +6622,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6589,6 +6637,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6600,6 +6652,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6611,6 +6667,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6622,6 +6682,10 @@
             1
           ],
           "E4": "1/4",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "3/4"
         }
@@ -6639,6 +6703,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6650,6 +6718,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6661,6 +6733,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6672,6 +6748,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6683,6 +6763,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6694,6 +6778,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6705,6 +6793,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6716,6 +6808,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6727,6 +6823,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6738,6 +6838,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6749,6 +6853,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6760,6 +6868,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6771,6 +6883,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 1,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6782,6 +6898,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 1,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6793,6 +6913,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 1,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 1,
           "output_phase": "0/1"
         },
@@ -6804,6 +6928,10 @@
             1
           ],
           "E4": "1/2",
+          "single_reference_zero": true,
+          "B2": 1,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 1,
           "output_phase": "0/1"
         }
@@ -6821,6 +6949,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6832,6 +6964,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6843,6 +6979,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6854,6 +6994,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6865,6 +7009,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6876,6 +7024,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6887,6 +7039,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6898,6 +7054,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6909,6 +7069,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6920,6 +7084,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6931,6 +7099,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6942,6 +7114,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6953,6 +7129,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6964,6 +7144,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6975,6 +7159,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -6986,6 +7174,10 @@
             1
           ],
           "E4": "1/2",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "1/2"
         }
@@ -7003,6 +7195,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7014,6 +7210,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7025,6 +7225,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7036,6 +7240,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7047,6 +7255,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7058,6 +7270,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7069,6 +7285,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7080,6 +7300,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7091,6 +7315,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7102,6 +7330,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7113,6 +7345,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7124,6 +7360,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7135,6 +7375,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7146,6 +7390,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7157,6 +7405,10 @@
             0
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         },
@@ -7168,6 +7420,10 @@
             1
           ],
           "E4": "0/1",
+          "single_reference_zero": true,
+          "B2": 0,
+          "dB2": 0,
+          "face_phase": "0/1",
           "N3": 0,
           "output_phase": "0/1"
         }
@@ -7182,11 +7438,15 @@
     "docs/formulas/term_census/three_dimensional/O5_GAMMA_TERMS.json": "e19f663a80ff5eb49e917b5e4e076ec1514d21ee50d4602c31194956c565a944",
     "docs/formulas/term_census/three_dimensional/O5_GAMMAPSI_TERMS.json": "c5e059d34491c50e9866b4b868c9b85b24a393ed25be16919050fbd3b0b71993",
     "docs/formulas/term_census/three_dimensional/O5_PSI_TERMS.json": "231efd76be643eac2f0908492c801889b9ea37beaea81bdd4341437249cfcc81",
+    "fspt/geometric_reference_3d.py": "30574b9fcc4eb06c99d76dfa22f656e53b49fc3ccadbd2de749d5d394add58fd",
+    "docs/formulas/source/equations/three-dimensional-geometric-reference--checked-fermion.tex": "f1ef31d52ac6a99e28c3accca7616cb0a40af648c3b2b97df5e54a84ecc1929f",
+    "docs/formulas/source/equations/three-dimensional-geometric-reference--pair-cochain.tex": "f3e2c81ab1c69e3582287506f0d1591cf22f122eed0402981bfa15122c5426b7",
+    "docs/formulas/source/equations/three-dimensional-geometric-reference--phase-transport.tex": "4d5f0a90eabfb5a903d59b63a998fb924b6d5e8547a5d2afebc63b86ae864ed7",
     "docs/formulas/source/equations/three-dimensional--p-ip-decoration--18.tex": "30529840472aee359f499744ca45cd7bb1c569c8b9df53fc888460ba0d7fff55",
     "docs/formulas/source/equations/three-dimensional--majorana-decoration--14.tex": "84e82ccde6248f1830a680f9d779e2c04407bb4f3da5c1b0ac3b1a0aa7098a70",
     "docs/formulas/source/pages/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md": "3b103b2a296920d35350673eff85ac86371ba9fc76580424e8c3fd60307dd77f",
-    "docs/formulas/coefficients/three_dimensional_canonical_self_stacking.json": "7ca7f1270b4d2090038a47fc2db65d56c31a56c3203cd65a6017c015056e61bf",
-    "docs/formulas/source/equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--11.tex": "e9f45e004e836fbf8863b9ed9830ffde895b458f4365dc0988dfc1f4f0c8f075"
+    "docs/formulas/coefficients/three_dimensional_geometric_self_stacking.json": "b467f3302afff26d08b0a38773a73dc884170be0953d0b00793eb4f469db3af3",
+    "docs/formulas/source/equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--11.tex": "85226e1f1c97ef026ede2c85ea865887a04a35067dda5dcefd98c1d98e84f3df"
   },
   "scope": "Exact cochain solutions and raw self products in the current reader coordinate. No new classification or claim that a raw integer-root square is already gauge reduced."
 }

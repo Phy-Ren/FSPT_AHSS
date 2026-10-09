@@ -2,6 +2,8 @@
 
 # Physical-face coefficients for canonical 3+1D self-stacking
 
+This is a retained coefficient/derivation kernel. Its CF input `n3` means the current `check n3=n3+B3`; its product uses the previous output `check N3+dB2`. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is `N3+d check n2`. Frozen coefficient values are unchanged.
+
 The input has $`n_1=s_1`$ and satisfies the complete lower equations. Each linked row is one explicitly specified binary product of physical cochain faces on $`(01234)`$. Integer output $`2s_1`$ has not yet been gauged away. No summand or background coefficient is hidden.
 
 <a id="majoranapip-half-contribution"></a>

@@ -4,7 +4,7 @@ This is the programmer's companion to the
 [formula guide](../docs/FORMULA_GUIDE.md). The mathematical notation is defined
 there; this page translates it into existing API keys, local source variables,
 and compiled program names. These identifiers are scoped to their functions.
-They do not introduce additional fields into the formulas. The numerical kernels and their field names retain the supplied representative. The guide now also uses an explicitly transported terminal phase. Compare cochains only after the [3+1D paired map](../docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) or the [complete 4+1D phase map](../docs/formulas/REPRESENTATIVES.md#compact-majorana-phase-4d), as appropriate. These maps leave the lower decoration fields and abstract stacking groups unchanged.
+They do not introduce additional fields into the formulas. The numerical kernels and their field names retain the supplied representative. The guide now also uses an explicitly transported terminal phase. Compare cochains only after the [3+1D paired map](../docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) or the [complete 4+1D phase map](../docs/formulas/REPRESENTATIVES.md#compact-majorana-phase-4d), as appropriate. The 4+1D terminal map leaves lower fields fixed. The current 3+1D geometric map also changes the complex-fermion coordinate and its product; it preserves the abstract group only after the full paired conversion below.
 
 The explicit $`4+1`$D Majorana stacking expression additionally uses the
 [displayed output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md):
@@ -19,7 +19,7 @@ compiled targets.
 
 ## Exact simplifications in the reader formulas
 
-The source exchange identity in 3+1D uses the complete lower `dn3`, not
+The source exchange identity in 3+1D uses the complete kernel input `d checked_n3`, not
 only its pure-Majorana part. Its standalone verifier retains the former
 25 MS words and checks their equality with the seven current words.
 The ordinary source cups also use that same complete lower differential.
@@ -32,6 +32,28 @@ part `B4psi(n)`; it does not distribute a protected lift or change its
 arguments. The public coefficient receipts record these identities.
 These algebraic reductions do not by themselves change a representative. The later compact-Majorana phase conversion is separate and must also be applied when comparing the current reader formula with the frozen numerical kernels.
 
+## Current 3+1D coordinate boundary
+
+The current reader field `n3` is the geometric pairing occupation. The retained
+phase kernel takes `checked_n3 = n3 + checked_n2 cup1 checked_n2`.
+Use `fspt/geometric_reference_3d.py` for this boundary. Its `obstruction`
+and `lower_product` return the current O4 and E3 directly; `source_arguments`
+returns the phase-source input, and `transported_product` transports a retained
+**paired reader phase** callback with the finite output-face phase.
+A native auxiliary phase still needs the terminal map described above.
+
+For the product, compute B2 on the actual native signed inputs and form
+`old_output = checked N3 + dB2`. Add
+`[omega2 B2+B2^2+dB2 cup1 B2+old_output cup2 dB2]/2`
+to the previous paired phase. The inverse subtracts this phase and applies
+the same binary one-state shift. The complete displayed formulas already
+include this term; do not add it again to a current reader evaluation.
+The frozen term-census JSON kernels retain their historical key `n_3`;
+its **value must now be checked_n3**, including in the primed input and
+all derivatives. Their integer-only and Majorana-only coefficients are unchanged.
+The frozen compiled API below continues to denote its supplied reference;
+it must not be fed current `n3` directly in three spatial dimensions.
+
 ## Public integer-layer API
 
 For spatial dimension $`d=3,4`$, the source call accepts the following entries
@@ -42,12 +64,12 @@ with `w,s` in `background`.
 |---|---|---|
 | $`n_{d-2}`$ | `n` | Degree $`d-2`$, signed integers with twist $`s_1`$ |
 | $`n_{d-1}`$ | `a` | Degree $`d-1`$, native binary Majorana field |
-| $`n_d`$ | `c` | Degree $`d`$, binary complex-fermion field |
+| $`\check n_3`$ in 3+1D; $`n_4`$ in 4+1D | `c` | Degree $`d`$, binary CF argument of the retained kernel |
 | $`\omega_2`$ | `w` | Degree two, binary extension cocycle |
 | $`s_1`$ | `s` | Degree one, binary antiunitary cocycle |
 
 For a product, `right['n']`, `right['a']`, `right['c']` represent
-$`n'_{d-2},n'_{d-1},n'_d`$. The runtime packs them into compiled fields
+$`n'_{d-2},n'_{d-1}`$ and the same checked-CF convention. The runtime packs them into compiled fields
 `m,b,cp`. Thus **compiled input `b` is the second native Majorana field**;
 it is not the parity variable called `b` inside some readable definitions.
 The returned product value is a correction, not the entire output $`N_j`$.
@@ -172,8 +194,10 @@ source additionally retains $`n_2^3/12`$.
 
 ## 3+1D parameter fields
 
-The physical $`3+1`$D fields are $`n_1,\check n_2,n_3`$. The shared source
-instead consumes the constructed fields in
+The current physical $`3+1`$D fields are $`n_1,\check n_2,n_3`$.
+The retained parameter construction takes $`\check n_3=n_3+\mathcal B_3`$
+in its CF slot and the previous product output $`\check N_3+d\mathcal B_2`$.
+Its raised fields are defined in
 [T3a–T3c](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3b):
 
 | Earlier notation or construction | Current notation |
@@ -204,8 +228,8 @@ linear and quadratic fractional terms are already collapsed into the
 explicit sixteenth-valued source and negative eighth-valued product in
 the reader guide; they are not omitted.
 The former $`D_3`$ and $`g_2`$ are expanded directly
-in those parameter fields, with no change of the native physical $`n_3`$
-coordinate. The older fermion-coordinate change $`\kappa_3`$ keeps its name.
+in those retained parameter fields. This statement precedes the current
+geometric conversion, which must also be applied as specified above. The older fermion-coordinate change $`\kappa_3`$ keeps its name.
 The older coordinate change must be applied to its source and product
 together; it is not implied by renaming `c` to $`n_3`$.
 

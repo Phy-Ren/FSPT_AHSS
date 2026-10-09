@@ -68,6 +68,18 @@ The second digit obeys $`d\widetilde n_1=\bar n_1^2+s_1\bar n_1`$.
 
 ### 4. Bosonic obstruction
 
+The decoration $`n_3`$ is the occupation in the geometric pairing reference.
+For evaluating the phase, one shifted field retains the already fixed
+fermionic operator reference:
+
+{{equation:three-dimensional-geometric-reference--checked-fermion}}
+
+This is an explicit binary coordinate, with the same map as its inverse.
+It is not an extra decoration. Every CF argument in the phase coefficient
+tables is $`\check n_3`$, and every CF differential is $`d\check n_3`$.
+The source and product are transported together as proved in
+[the reference comparison](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
+
 <a id="eq-t3"></a>
 
 
@@ -81,9 +93,9 @@ The second digit obeys $`d\widetilde n_1=\bar n_1^2+s_1\bar n_1`$.
 
 {{equation:three-dimensional--complex-fermions-and-majorana-decoration--12}}
 
-The bracket reuses the complete Majorana parity from the preceding layer:
+The bracket includes the reference correction to the preceding parity:
 $`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2\check n_2
-+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2`$.
++\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2+d\mathcal B_3`$.
 Its mixed component retains the terms proportional to $`d\check n_2`$;
 no closed-input assumption is made. The outer superscript records the
 exchanged fermion operators. Reusing their full parity does not change
@@ -93,11 +105,13 @@ that physical origin.
 
 {{equation:three-dimensional--complex-fermions-and-p-ip-decoration--13}}
 
+{{equation:three-dimensional-geometric-reference--O5-cpsi-words}}
+
 The finite sum contains **seven specified MS terms**,
 [listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices).
 Together with the three displayed cups, this gives **ten terms**.
 Every MS term contains $`d\check n_2=\check\omega_2\bar n_1`$ and
-$`dn_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}
+$`d\check n_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3
 +\mathcal{𝒪}_4^\psi`$. Thus the complex-fermion exchange correction
 depends on its full lower parity differential. The
 [exact reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
@@ -210,9 +224,21 @@ Its integer digit carry is
 
 {{equation:three-dimensional--3-complex-fermion-stacking--27}}
 
-The $`\Delta`$ acts on the entire displayed bracket with the p+ip output $`N_1`$.
+The pure sheet contribution has three terms. The signed floor is taken before reduction. The complete parity is counted directly by the geometric pairing construction, including both backgrounds.
 
 ### 4. Bosonic stacking
+
+The finite pair reference is
+
+{{equation:three-dimensional-geometric-reference--pair-cochain}}
+
+The two checked quantities needed by the phase formulas are
+
+{{equation:three-dimensional-geometric-reference--phase-input-product}}
+
+The $`\Delta`$ below always uses the actual new output. The explicitly
+printed $`d\mathcal B_2`$ terms account for the change of its face reference.
+They are already included in the contributions below and must not be added a second time.
 
 <a id="eq-t3b"></a>
 
@@ -220,7 +246,7 @@ The $`\Delta`$ acts on the entire displayed bracket with the p+ip output $`N_1`$
 {{equation:three-dimensional--4-bosonic-stacking--28}}
 
 For two identical complete states with $`n_1=0`$, the entire correction
-reduces to the [ten-term self-stacking formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md).
+reduces to the [transported self-stacking formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md).
 It retains the complex-fermion completion and uses the same phase representative.
 
 #### Complex fermions
@@ -231,15 +257,15 @@ It retains the complex-fermion completion and uses the same phase representative
 
 {{equation:three-dimensional--complex-fermions-and-majorana-decoration--29}}
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ minus the values at $`(n_3,\check n_2)`$ and $`(n'_3,\check n'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential terms. This is an exact rewriting of the same contribution.
+The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ minus the values at $`(n_3,\check n_2)`$ and $`(n'_3,\check n'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential and the $`d\mathcal B_3`$ terms. The last term transports the output evaluation to its actual face reference.
 
 #### Complex fermions and p+ip decoration
 
 {{equation:three-dimensional--complex-fermions-and-p-ip-decoration--30}}
 
-The two face brackets contain **13 products** after distributing the
-binary parentheses: eight multiply $`dn_3`$ and five multiply $`dn'_3`$.
-They replace the former 132-word sum exactly, as proved in the
+The two unchanged face brackets contain **13 products** after distributing the
+binary parentheses: eight multiply $`d\check n_3`$ and five multiply $`d\check n'_3`$.
+Their CF differentials are $`d\check n_3`$ and $`d\check n'_3`$. They replace the former 132-word sum exactly, as proved in the
 [exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md).
 The lower Majorana differentials retain their physical meanings.
 
@@ -247,8 +273,8 @@ The former auxiliary eight-word phase polynomial has been eliminated in
 favor of the lower obstruction. Its two evaluations give **14 terms**:
 two derivatives multiply two retained obstruction evaluations, one output
 square, and the four products in the displayed input square. Together with
-the two initial lower-operation terms and thirteen face products, this
-contribution has **29 terms**. The lower obstruction acts on its whole
+the three initial lower-operation/reference terms and thirteen face products, this
+contribution has **30 terms**. The lower obstruction acts on its whole
 binary argument; it must not be linearized.
 
 #### Majorana decoration

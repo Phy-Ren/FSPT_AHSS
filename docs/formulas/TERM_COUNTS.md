@@ -2,6 +2,8 @@
 
 # Term counts with defined lower structures
 
+The 2026-10-09 geometric pairing update changes the current 3+1D CF product to ten distributed lower-operation terms (two Majorana, five mixed, three pure sheet), and its diagonal to five. The terminal coefficient corpus below is retained; its previous total counts do not include the explicitly printed current coordinate/face-phase transport. The full current formula is the six transported blocks on the 3+1D page, with the checked CF field and finite B2 phase.
+
 These counts refer to fully specified cochain expressions. A summation
 sign, a named y polynomial, or a factored coefficient-table row is never counted
 as one term. Every specified MS word counts once; every explicit scalar
