@@ -51,9 +51,9 @@
     {
       "output": "docs/formulas/FOUR_DIMENSIONAL.md",
       "source": "pages/FOUR_DIMENSIONAL.md",
-      "sha256": "2bc61852dbf0b2d217c495f6059b12f7ec65bde74cde7aff4071d36e4bb23d9c",
+      "sha256": "b93a9f628db14399d2d68a3b673844ba4431809463679582552e402cc77f4dd4",
       "dependencies": {
-        "pages/FOUR_DIMENSIONAL.md": "4b92634b85e9db067305039f7a23c70c3f52346a5a558ae89edab8a073cfef03",
+        "pages/FOUR_DIMENSIONAL.md": "9b75529bd8f9d448ed79d6ec08b81e7ee1345887663be57ab02f10feef21aef3",
         "equations/four-dimensional--4-1d--1.tex": "8ad7da29f2d76abe1f77bee0c2745b4d7ac2ec31170fe62e48c936d41ab82f78",
         "equations/four-dimensional--1-p-ip-obstruction--2.tex": "d9d9da18067ce913b25b1f0eeaa2e6fe3bfa06b1f7f2d35344437e7ca77d28a3",
         "equations/four-dimensional--2-majorana-obstruction--3.tex": "6d894d3142a70f70c7a315d4a8ea350916957d50c6b400dd5a483f475a7f2528",
@@ -107,6 +107,16 @@
       "sha256": "20b87abadaadc44c3d03c557dfec145fff56cc1ad7c49632c284f1be21fdea6d",
       "dependencies": {
         "pages/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md": "c2d7952dcd910396ee6ea209d0ecc453172d33aa21083167637b3982d4b18a8a"
+      }
+    },
+    {
+      "output": "docs/formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md",
+      "source": "pages/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md",
+      "sha256": "ce16fae80d13d190cd9925cab37c95c7b3804bb0cc7a321f466811ffbd15f8e8",
+      "dependencies": {
+        "pages/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md": "850f5c7f623e8c6a6b6dd637362c9d0e4244dd7de25d58b10b680302237ee82e",
+        "equations/four-dimensional-geometric-reference--single-state--1.tex": "a8b69ff342ea01a75e7225d8d87f14bed2cc20b99f2e7d58adca94d8ee39c463",
+        "equations/four-dimensional-geometric-reference--pair--2.tex": "7cc913abad870963232e72e78a6b33c49bb88d31db2b043f6ce2949be7ef23f8"
       }
     },
     {
@@ -1285,6 +1295,18 @@
       "sha256": "e7c7b2b3c101ea92bc7afc57abc9432fbbdac82141ac989bd79c49929b5dcb7a",
       "used_by": [
         "docs/formulas/FOUR_DIMENSIONAL.md"
+      ]
+    },
+    "equations/four-dimensional-geometric-reference--single-state--1.tex": {
+      "sha256": "a8b69ff342ea01a75e7225d8d87f14bed2cc20b99f2e7d58adca94d8ee39c463",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md"
+      ]
+    },
+    "equations/four-dimensional-geometric-reference--pair--2.tex": {
+      "sha256": "7cc913abad870963232e72e78a6b33c49bb88d31db2b043f6ce2949be7ef23f8",
+      "used_by": [
+        "docs/formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md"
       ]
     },
     "equations/four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--1.tex": {

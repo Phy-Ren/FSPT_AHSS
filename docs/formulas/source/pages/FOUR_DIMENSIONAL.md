@@ -65,6 +65,11 @@ Here $`d\check n_3`$ is fixed by the preceding obstruction.
 
 The second digit obeys $`d\widetilde n_2=\bar n_2\cup_1\bar n_2+s_1\bar n_2`$.
 
+The [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md)
+gives the complete F-move count, its explicit local reference, and the
+paired stacking comparison while retaining the original ordinary Majorana
+graph.
+
 ### 4. Bosonic obstruction
 
 <a id="eq-t4"></a>

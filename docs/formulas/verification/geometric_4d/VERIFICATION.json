@@ -1,0 +1,546 @@
+{
+  "status": "PASS",
+  "canonical_formula_baseline": "81315241ecd04526a312f7b55d23c4d8af6ffee8",
+  "scope": "Native 4+1D O4/O5 and E3/E4 physical matchings, paired cochain comparison, even cleanup and reset; canonical terminal phase coordinate retained.",
+  "archive_sha256": "e80685e0b683c4458408698ce0c840b94974aab97b1a97312665d217c32dd406",
+  "archive_files": {
+    "manuscript/equations/geometric_4d_20261009/four-dimensional-geometric-reference--pair--2.tex": "7cc913abad870963232e72e78a6b33c49bb88d31db2b043f6ce2949be7ef23f8",
+    "manuscript/equations/geometric_4d_20261009/four-dimensional-geometric-reference--single-state--1.tex": "a8b69ff342ea01a75e7225d8d87f14bed2cc20b99f2e7d58adca94d8ee39c463",
+    "manuscript/figures/pip/decoration_intrinsic_in.tex": "ad40398effbb6e33c2ebfaf4d77bbc418281fbbc70c02cbc10e3f14363910194",
+    "manuscript/figures/pip/decoration_intrinsic_out.tex": "31c51e4238f23443ebcb82f013e0726f6fce0254efbe7551e18e8f155efaf9ce",
+    "manuscript/figures/pip/decoration_twisted_in.tex": "266c7d9e2cd4575bc95807ccbb46da0d6bf35971b97688fceb7ee0369148f40c",
+    "manuscript/figures/pip/decoration_twisted_out.tex": "6a3283f68c7ff101dc0006bde2b254fe69bd1f6e6773ea6d5fb7c066d5bb0576",
+    "manuscript/figures/pip/worked_D.tex": "414469a3771e9294cfdb34dfb51159cda62a53f0b1b3e52c9964a7f6ff29bca8",
+    "manuscript/figures/pip/worked_E.tex": "66687815b41c3055d7c60ace57b97dd41bc81add1c7837f2300cfe435779fc37",
+    "manuscript/sections/app_pip_physical.tex": "e71a4d3a5cced8b44bb532fb4da8a9aa7878b881cb6a554c0a3cf40f2d266c8f",
+    "manuscript/verification/geometric_4d/FROZEN_MANIFEST.json": "229e732a65e0936f4a40cb70a0bbb38cc859ed1387b8568b2c6c84c19ef81b3b",
+    "manuscript/verification/geometric_4d/README.md": "1d230781d2952ba0383060e26d5be65e793370236ec9de8cc9ea8812f810bb23",
+    "manuscript/verification/geometric_4d/cases/previous_bare_failure.json": "575a815af950898fef16faae1dd7d5e3a8cb59335369af3a7b7ecd86d42bdbb2",
+    "manuscript/verification/geometric_4d/certify_geometry.json": "37062bb1d90997ebbcfd37c67928e597008995748c652d82b3e5063852eb774a",
+    "manuscript/verification/geometric_4d/certify_geometry.py": "06cb1f08acb19a9a41eeecd5a53bd10fa888cdedc68f596f976f74c8054aa25e",
+    "manuscript/verification/geometric_4d/check_circuits.json": "ff006edc7014d4de3c8b72e90e5708536862c285f7faa3e1d663bb08cbe5973b",
+    "manuscript/verification/geometric_4d/check_circuits.py": "4f4235ccbf73458af49e6635d041c4a3edfa89f8be7875151a6a3c8263212c83",
+    "manuscript/verification/geometric_4d/check_cleanup.json": "2b93e151c38cfdcc42b835d6d83c6cbb64d2c0204fcf715b30c00fbb87f9e655",
+    "manuscript/verification/geometric_4d/check_cleanup.py": "e46c058d1fac11b621b52dca195c4f45527bde5b15623b207afc5220f65963db",
+    "manuscript/verification/geometric_4d/check_geometry.json": "91d74dfef9c56d36b01fc97f543d723cd2c8bf745dc58036cf2aee353075ea2d",
+    "manuscript/verification/geometric_4d/check_geometry.py": "a88d5a1b5813de2ee8370fc4b754632b2acc2ea7cc55429bf3fb343d32bf0fbd",
+    "manuscript/verification/geometric_4d/check_negative_control.json": "e510112ba2d1640219bf5248ebfc7cf25c2782f34ddc7e385d68a70b37a0460e",
+    "manuscript/verification/geometric_4d/check_negative_control.py": "2fdaa8dc80e833a9273c2b99d68272a9bd0937e573f69936b1732c8bbb9c061e",
+    "manuscript/verification/geometric_4d/check_reference_formulas.json": "ff5a38bb9c12b78191a7a64be252f2d51bd61f9e531fa6831fab19a3a15085a1",
+    "manuscript/verification/geometric_4d/check_reference_formulas.py": "12ef3001d15701e9f77b74b654eb6af8066148b3bdfb363f219a38c3d9288993",
+    "manuscript/verification/geometric_4d/check_reset.json": "6053bfd7e64ccee353ee339cfddcb7a9cb9cf730fed1f538c0ca16e2b0f7e5ab",
+    "manuscript/verification/geometric_4d/check_reset.py": "eeafa17a0ca76cc6d2217688b029a8bc34f82043520a0f23300ec8127f0e74fd",
+    "manuscript/verification/geometric_4d/frozen/base4d/binary_poly.py": "837017601d61dcd0a2ef16e48045422ad3c6befce04a99f406ad702995252ab7",
+    "manuscript/verification/geometric_4d/frozen/base4d/certify_sectors.py": "06ac472df5d165ff11777dca863ca1a5de991adb61fe2c4566a69824eca8f995",
+    "manuscript/verification/geometric_4d/frozen/base4d/comparison4.py": "7a3c1a5c9eac56ddae14eefae5d16075bdc31650654eff77148680b6b53d8dca",
+    "manuscript/verification/geometric_4d/frozen/base4d/cup.py": "fd31d49cbcff56223ba1b254432ff6e975fa1d620ed26d219d45217753408e70",
+    "manuscript/verification/geometric_4d/frozen/base4d/data4.py": "80aff2447cdea6564fa7f7dcbad71f8d898b8924adaf044d5ec853fbe34e0912",
+    "manuscript/verification/geometric_4d/frozen/base4d/digits.py": "021dc04fcba892ce008d8c3e84bb2a60444aaf4c8d4b63f3f681a6adb23b5f53",
+    "manuscript/verification/geometric_4d/frozen/base4d/face_cleanup4.py": "4119a2c378874b0ca452c79eec568f7a311e2f57639e927688673357e1efc852",
+    "manuscript/verification/geometric_4d/frozen/base4d/gauge4.py": "d87badc2338cadcfc1e541e192dd926094e7c9d0576dc39c76a69096fb8b4a79",
+    "manuscript/verification/geometric_4d/frozen/base4d/graph_count4.py": "db0b74819b3416d450207a2f5bd545edb0f72e953881d04f6441941094784bbe",
+    "manuscript/verification/geometric_4d/frozen/base4d/kasteleyn.py": "23d1d0bd577ac2c8ca6af8c54999875388fa46c5a19f7194c458c6bb0ea1ed08",
+    "manuscript/verification/geometric_4d/frozen/base4d/network4.py": "9f9f72e956b2180e54c731ef6559bd31cfbc57e456839270579935e1af68a5c2",
+    "manuscript/verification/geometric_4d/frozen/base4d/physical_check4.py": "c38a9680925f7701d8d9a650497651ad5fdd926297f45470e54d8dfc53ad64de",
+    "manuscript/verification/geometric_4d/frozen/base4d/prior_obstruction/__init__.py": "b72c08ee98594c3d991e5ae5d173f52f89fa69ebf56cd185724cb3091983059d",
+    "manuscript/verification/geometric_4d/frozen/base4d/prior_obstruction/algebra.py": "aae03cfa93fabf472cc15b682475ccf2744988337f572ca3fe766fc796834179",
+    "manuscript/verification/geometric_4d/frozen/base4d/prior_obstruction/cup.py": "fd31d49cbcff56223ba1b254432ff6e975fa1d620ed26d219d45217753408e70",
+    "manuscript/verification/geometric_4d/frozen/base4d/prior_obstruction/kasteleyn.py": "23d1d0bd577ac2c8ca6af8c54999875388fa46c5a19f7194c458c6bb0ea1ed08",
+    "manuscript/verification/geometric_4d/frozen/base4d/prior_obstruction/model.py": "720e36763102c85236726aaca5e262eae2f0597a8f358174f275f4449951939f",
+    "manuscript/verification/geometric_4d/frozen/base4d/prior_obstruction/split_model.py": "b63dd34cf491727672b97932b0bb24d9beaf161519815b9df4b16ee60c7f6d47",
+    "manuscript/verification/geometric_4d/frozen/base4d/reference4.py": "cb35d398ebb77f9dda6969e3b91233ab7303e2d2e95d114cd3a73acef0b4e7cb",
+    "manuscript/verification/geometric_4d/frozen/base4d/rotations.py": "f63afed1265a7e3fc9588e9fecca61c6df2a4d140217691dc5d6289512eb3817",
+    "manuscript/verification/geometric_4d/frozen/code/certify_full.py": "09e664854052b1e1bf2583192ca13060e62c65f23e78b99f5c6f666b4ddb3724",
+    "manuscript/verification/geometric_4d/frozen/code/check_local_operator.py": "1845e2c5d5bd7d5d65b59af016f61c9f9b2697ac8c4f3513c4c5a8ab4f313566",
+    "manuscript/verification/geometric_4d/frozen/code/check_manifest.py": "a9269d17c842bc560ffd437637f9ab5d8f6be9b7edb5892d863a9e0c7baf1383",
+    "manuscript/verification/geometric_4d/frozen/code/compare_graphs.py": "56a7e4292ea8791a66da322c8e7ff4843d63bfcb2b902addfb0c7cea73fc0163",
+    "manuscript/verification/geometric_4d/frozen/code/contact_mass.py": "c3964cfda6522ad7b669da34c279fde2dd1588ad2f9ae6a84e494b9a0d8e9c09",
+    "manuscript/verification/geometric_4d/frozen/code/full_network.py": "91421792e8347091e65008225d247fd05eaff4909b86451a8c84c45cbe5d0f27",
+    "manuscript/verification/geometric_4d/frozen/code/gauge_checks.py": "19c74b92ab4f5647a5722d6ab11e03fbdbed15115cecc92ad58522db9809ee58",
+    "manuscript/verification/geometric_4d/frozen/code/replay_matchings.py": "8a70a22670cc43cc2c7645b4bb377f316011d49581442a5a45644f23fc2e76fc",
+    "manuscript/verification/geometric_4d/frozen/code/reproduce.py": "c39eb244f655e4c8d86dca07aa4a3657026744e1b6f215cfca2acc4521eb58a4",
+    "manuscript/verification/geometric_4d/frozen/code/run_case.py": "6a47931818b8a950ff57ea4bb8af4a737b79db4ee030ac97bf4b8585048adf8c",
+    "manuscript/verification/geometric_4d/frozen/code/symmetry.py": "37a524af208e33db337e983eeef469f791fe284e03a7107afaddff1558bc4699",
+    "manuscript/verification/geometric_4d/frozen/code/transport.py": "3de45d23776a7057d7e196d7dac4aa0497518b3f8d4e27247297ac0b61eb9b4a",
+    "manuscript/verification/geometric_4d/frozen/code/verify_fixture.py": "47585ec80fa10ea3fe79cef34b4ff6776fc0cdb822154a1a9b7d91036c07c275",
+    "manuscript/verification/geometric_4d/frozen/code/verify_full.py": "d5778fd8f466ab9a8ed88826dd565ba196c94cf1300f5ee7f92bb5dd460bb940",
+    "manuscript/verification/geometric_4d/geometric4.py": "2a070f8e34410bc9fcd2ada69ac00ff41597dc32343458af0b2daebbc3830796",
+    "manuscript/verification/geometric_4d/mass_checks.json": "905a184b736ce57bf2749c4482c26cb0da1e82c05c4a962a809cd8271649752c",
+    "manuscript/verification/geometric_4d_full_symmetry_expected.json": "db796ab9d6363379f70ccb131828cae43c66da82c617ec33b14ed10139cf3ce9",
+    "manuscript/verification/geometric_4d_intrinsic_expected.json": "35afb49d318070131693d80a79cb5aff58f9a5aacb2c17d4bdaf9b31bcedbb8c",
+    "manuscript/verification/geometric_printed_examples.json": "cc30e7bd1638070854765e3f1f544fea44dc8b4906afc51d2b07f4ae24ae3f85",
+    "manuscript/verification/pip_4d_full_symmetry_input.json": "86cef533d995dabb9088de015ed0f87d3d553d8e8c49f7956a03370c0ac57f52",
+    "manuscript/verification/pip_4d_intrinsic_input.json": "b3d75dd8364b653638465a8a40993e1434322a45b3afad0366719d53104015fc",
+    "manuscript/verification/verify_pip_examples.py": "c9b668f7191bea88aa834d9ee3753882ed33d3848e8d0560d55272abdc14e01f"
+  },
+  "receipts": {
+    "check_cleanup": {
+      "graphs": 512,
+      "quarter_turns": 31695,
+      "contact_steps": 88444,
+      "full_point_occupation_cases": 2048,
+      "negative_controls": 512,
+      "signed_input_cases": 256,
+      "central_output_modes": 25882,
+      "face_inventory_cases": 1016,
+      "symmetry_group_cases": 1024,
+      "joint_contact_operator_cases": 8,
+      "seconds": 102.0,
+      "status": "PASS"
+    },
+    "check_reset": {
+      "status": "PASS",
+      "native_inverse_reset_cases": 520,
+      "even_reset_steps": 1184,
+      "padding_invariance_graphs": 192
+    },
+    "check_negative_control": {
+      "status": "PASS",
+      "correct_identity_residual": 0,
+      "omitted_contact_residual": 1
+    },
+    "check_circuits": {
+      "P_graphs": 256,
+      "F_graphs": 128,
+      "psi_components": 9416,
+      "even_gates": 19151,
+      "status": "PASS",
+      "pure_gamma_components_unchanged": true,
+      "intermediate_gamma_pairs_only_initial_or_target": true,
+      "seconds": 5.58
+    },
+    "check_reference_formulas": {
+      "status": "PASS",
+      "free_bits": 42,
+      "B4_residual_terms": 0,
+      "B3_residual_terms": 0,
+      "B3_faces": 5,
+      "display_sha256": {
+        "four-dimensional-geometric-reference--pair--2.tex": "7cc913abad870963232e72e78a6b33c49bb88d31db2b043f6ce2949be7ef23f8",
+        "four-dimensional-geometric-reference--single-state--1.tex": "a8b69ff342ea01a75e7225d8d87f14bed2cc20b99f2e7d58adca94d8ee39c463"
+      }
+    },
+    "check_geometry": {
+      "core_states": 272,
+      "P_graphs": 1280,
+      "F_graphs": 384,
+      "split_F_graphs": 128,
+      "compatibility": 128,
+      "seconds": 3.391
+    },
+    "certify_geometry": {
+      "E4": {
+        "free_bits": 42,
+        "physical_terms": 864,
+        "canonical_terms": 910,
+        "reference_terms": 528,
+        "boundary_terms": 728,
+        "residual_terms": 0
+      },
+      "E3_endpoint_compatibility": {
+        "free_bits": 42,
+        "residual_terms": 0
+      },
+      "O5": {
+        "allowed_input_bits": 45,
+        "terms": 646,
+        "free_bits": 30,
+        "variables": [
+          "s01",
+          "s02",
+          "s03",
+          "w012",
+          "w013",
+          "w023",
+          "upper_a012",
+          "upper_h012",
+          "upper_a013",
+          "upper_h013",
+          "upper_a023",
+          "upper_h023",
+          "upper_a024",
+          "upper_a025",
+          "upper_a034",
+          "upper_h034",
+          "upper_a035",
+          "upper_h035",
+          "upper_a045",
+          "upper_h045",
+          "upper_m0123",
+          "upper_m0124",
+          "upper_m0125",
+          "upper_m0134",
+          "upper_m0135",
+          "upper_m0145",
+          "upper_m0234",
+          "upper_m0235",
+          "upper_m0245",
+          "upper_m0345"
+        ],
+        "canonical_terms": 753,
+        "reference_boundary_terms": 561,
+        "residual_terms": 0
+      },
+      "paired_physical_identity": {
+        "free_bits": 75,
+        "dE_terms": 4227,
+        "deltaO_terms": 4227,
+        "residual_terms": 0
+      },
+      "seconds": 0.154,
+      "scope": "Exact Boolean coefficient identities, plus a separate arbitrary-length local matching theorem; not enumeration of 2^75 graphs."
+    },
+    "mass_checks": {
+      "signed_partner_cases": 97828,
+      "mass": {
+        "real_modes": 244,
+        "base_gaps": [
+          0.11462060164644872,
+          0.11462060164644647
+        ],
+        "common_transport_cases": 256,
+        "independent_pfaffian_evaluations": 32,
+        "sampled_pfaffians": [
+          {
+            "anti": 0,
+            "color_signs": [
+              -1,
+              -1,
+              -1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 0,
+            "color_signs": [
+              -1,
+              -1,
+              1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 0,
+            "color_signs": [
+              -1,
+              1,
+              -1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 0,
+            "color_signs": [
+              -1,
+              1,
+              1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 0,
+            "color_signs": [
+              1,
+              -1,
+              -1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 0,
+            "color_signs": [
+              1,
+              -1,
+              1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 0,
+            "color_signs": [
+              1,
+              1,
+              -1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 0,
+            "color_signs": [
+              1,
+              1,
+              1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 1,
+            "color_signs": [
+              -1,
+              -1,
+              -1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 1,
+            "color_signs": [
+              -1,
+              -1,
+              1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 1,
+            "color_signs": [
+              -1,
+              1,
+              -1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 1,
+            "color_signs": [
+              -1,
+              1,
+              1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 1,
+            "color_signs": [
+              1,
+              -1,
+              -1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 1,
+            "color_signs": [
+              1,
+              -1,
+              1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 1,
+            "color_signs": [
+              1,
+              1,
+              -1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          },
+          {
+            "anti": 1,
+            "color_signs": [
+              1,
+              1,
+              1
+            ],
+            "cap_signs": [
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "pfaffians": [
+              1,
+              -1
+            ],
+            "max_conjugacy_error": 0.0
+          }
+        ]
+      },
+      "seconds": 1.357,
+      "status": "PASS"
+    }
+  },
+  "printed_examples": {
+    "status": "PASS",
+    "original_four_end_configurations": 5,
+    "cases": [
+      {
+        "name": "intrinsic",
+        "modes": 34,
+        "geometry_arrows": 34,
+        "changing_arrows": 10,
+        "parity_change": 1,
+        "common_dimers": 12,
+        "matrix_pfaffians": {
+          "in": 1,
+          "out": -1
+        },
+        "negative_control_detected": true
+      },
+      {
+        "name": "full_symmetry",
+        "modes": 48,
+        "geometry_arrows": 48,
+        "changing_arrows": 14,
+        "parity_change": 0,
+        "common_dimers": 17,
+        "matrix_pfaffians": {
+          "in": -1,
+          "out": -1
+        },
+        "negative_control_detected": true
+      }
+    ]
+  }
+}
