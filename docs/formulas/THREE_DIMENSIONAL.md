@@ -387,12 +387,9 @@ N_3&=n_3+n'_3+\mathcal{ℰ}_3,\\
 **p+ip contribution.**
 
 ```math
-\begin{aligned}
-\mathcal{ℰ}_3^\psi={}&z_3^\psi(\bar n_1,\bar n'_1)
- +\widetilde n_1(\bar n'_1)^2+s_1\widetilde n_1\bar n'_1,\\
-z_3^\psi(\bar n_1,\bar n'_1)
-={}&[\bar n_1\cup_1(\bar n_1\bar n'_1)]\bar n'_1.
-\end{aligned}
+\mathcal{ℰ}_3^\psi=
+ [\bar n_1\cup_1(\bar n_1\bar n'_1)]\bar n'_1
+ +\widetilde n_1(\bar n'_1)^2+s_1\widetilde n_1\bar n'_1.
 ```
 
 The pure sheet contribution has three terms. The signed floor is taken before reduction. The complete parity is counted directly by the geometric pairing construction, including both backgrounds.

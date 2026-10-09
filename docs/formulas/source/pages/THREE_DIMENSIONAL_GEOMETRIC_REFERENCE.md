@@ -69,7 +69,7 @@ exchange homotopies; a source-only substitution would be incorrect.
 ## Self-stacking and the time-reversal example
 
 The diagonal of the new pure sheet term has two terms, because
-`z3psi(a,a)=0` for a closed binary one-cochain. Thus
+The nested cup $[a\cup_1(a^2)]a$ vanishes for a closed binary one-cochain $a$. Thus
 `N3=Sq1(check n2)+s1 check n2+tilde n1 (bar n1)^2+s1 tilde n1 bar n1`.
 For either finite-root branch, `n1=0` or `n1=s1`, one has
 `B2=check n2` and `B3[check N2]=0`. The previous output in every retained
