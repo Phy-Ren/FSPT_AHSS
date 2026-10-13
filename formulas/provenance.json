@@ -1,0 +1,167 @@
+{
+  "archive": "U1f_AHSS_Consolidated_v0_7_complete.zip",
+  "archive_sha256": "a1410f854828f012dc9be56cfd62dc0eb4a195779c09eed273e6a70f2ca97a4a",
+  "convention": {
+    "calibration": "sheet-linear",
+    "cubic": "1/6",
+    "epsilon": 0
+  },
+  "files": [
+    {
+      "source": "src/_reference/checks/cochains.py",
+      "target": "insulator/_engine/cochains.py",
+      "source_sha256": "e54f91c28f5c44f1a8f8317055f2adef0e99bcb23d7205e960b7f8d18474de69"
+    },
+    {
+      "source": "src/_reference/checks/simplex.py",
+      "target": "insulator/_engine/simplex.py",
+      "source_sha256": "ee9a16a87c68e2a450b3f4f7a4f37f86f07a0974acdc0737226b7177b7afc035"
+    },
+    {
+      "source": "src/_reference/checks/product4d.py",
+      "target": "insulator/_engine/product4d.py",
+      "source_sha256": "ebeadb4122f1eae60a8b9d62b48af3df59e2e66dfc40cdc0e02d1f3006894341"
+    },
+    {
+      "source": "src/_reference/checks/prism.py",
+      "target": "insulator/_engine/prism.py",
+      "source_sha256": "06fa95f2b0171b27f2ab547569ed70fc6499e8e1792ba6d92b8df167a4f24c0f"
+    },
+    {
+      "source": "src/_reference/checks/gauge4d.py",
+      "target": "insulator/_engine/gauge4d.py",
+      "source_sha256": "398c8dd4b5783b7eb117959d76678a73c9418d3e72e4fcba9dc558509cd968c3"
+    },
+    {
+      "source": "src/_reference/checks/transgression.py",
+      "target": "insulator/_engine/transgression.py",
+      "source_sha256": "3cb21a871337070e01761023fd3cc7830b9bd1e733b22c9fbb8eb5cf013e78e2"
+    },
+    {
+      "source": "src/_reference/checks/cartan32_polarizer.json",
+      "target": "insulator/_engine/cartan32_polarizer.json",
+      "source_sha256": "843983264e2cf11b5b8f4a0a62f0af06c7c4e70c8be7c8fd76b75e3d0a0646f3"
+    },
+    {
+      "source": "src/_reference/checks/r_polarizer.json",
+      "target": "insulator/_engine/r_polarizer.json",
+      "source_sha256": "e66a691d41a94b520eee8b09386e3c3a63bf3779ab21f43f8813641026fadb2c"
+    },
+    {
+      "source": "src/_reference/checks/universal_certificates.json",
+      "target": "formulas/universal_certificates.json",
+      "source_sha256": "2bbe223a7d6fd2090285d745bf1b2cb8d4cbf352af5d2740d2c0d96e97f9b59b"
+    },
+    {
+      "source": "note/sections/01_symmetry.tex",
+      "target": "formulas/01_symmetry.tex",
+      "source_sha256": "7e4bfaf33683b4f727c292536812f77a39665f559f8d126a2738f283b49d4b9b"
+    },
+    {
+      "source": "note/sections/02_operations.tex",
+      "target": "formulas/02_operations.tex",
+      "source_sha256": "9d97281d092ff3eca7885f5ee444a761f5683f9f38f04ade6649a0b31ca309f7"
+    },
+    {
+      "source": "note/sections/03_two_dimensional.tex",
+      "target": "formulas/03_two_dimensional.tex",
+      "source_sha256": "263e057071124fedf299e28af4771599854d34d8b0dcb5ddcb575e23dc53e698"
+    },
+    {
+      "source": "note/sections/04_three_dimensional.tex",
+      "target": "formulas/04_three_dimensional.tex",
+      "source_sha256": "12ed6ca92ee6b611e897cc28d7d376fbb30f5fcb667c4e7906226fb9098287a1"
+    },
+    {
+      "source": "note/sections/05_four_dimensional.tex",
+      "target": "formulas/05_four_dimensional.tex",
+      "source_sha256": "4393124ca353a73139951695feac75e0df1ac59a1c110133eb384ba3b0e3c63f"
+    },
+    {
+      "source": "note/sections/06_equivalence.tex",
+      "target": "formulas/06_equivalence.tex",
+      "source_sha256": "3eb61455ea4a3de572e4d69c06136c4084717773256063e59626466bc75cd84d"
+    },
+    {
+      "source": "note/sections/07_unified.tex",
+      "target": "formulas/07_unified.tex",
+      "source_sha256": "625c4dfe385645ae735adfc7c5ed92c3bbef3ceddee0e239365a71e2c4a34c05"
+    },
+    {
+      "source": "note/sections/08_normalization.tex",
+      "target": "formulas/08_normalization.tex",
+      "source_sha256": "14ae084ab9a6e4a48d080a621d7a1fa9117c62e82a3ac840a731d18096a96d80"
+    },
+    {
+      "source": "note/sections/09_calibration.tex",
+      "target": "formulas/09_calibration.tex",
+      "source_sha256": "17c4e3e620e73346424d6c9342795ff7952dfac280f96394468275db2a2abaef"
+    },
+    {
+      "source": "note/sections/10_response.tex",
+      "target": "formulas/10_response.tex",
+      "source_sha256": "82a43f685f68ecd2d34e50be5964b997da0e36327cedc8f60dfb2720e670cfb6"
+    },
+    {
+      "source": "note/sections/11_reproducibility.tex",
+      "target": "formulas/11_reproducibility.tex",
+      "source_sha256": "2fbab83d8feee555d96325f55dbf07b898c37cf126130ecae025e57e00b0b8c1"
+    },
+    {
+      "source": "note/appendices/A_operations.tex",
+      "target": "formulas/A_operations.tex",
+      "source_sha256": "f40327d6ea74e7358870b802a2988d8074c0c81e0708628858b5199fe7082f03"
+    },
+    {
+      "source": "note/appendices/B_local_certificate.tex",
+      "target": "formulas/B_local_certificate.tex",
+      "source_sha256": "a18a27e3293a7255358457cd30c14c847fa353512ddcfc260bbbb2f446fdf9db"
+    },
+    {
+      "source": "note/appendices/C_coefficients.tex",
+      "target": "formulas/C_coefficients.tex",
+      "source_sha256": "17ac8bee5efa79b25e705052b5aa935eb4b8ac121043ddee70defc9bdb6e3fd5"
+    },
+    {
+      "source": "note/appendices/D_implementation.tex",
+      "target": "formulas/D_implementation.tex",
+      "source_sha256": "3b221c3767faec734af724df0ff51b2a68a5d9a1a3eebe3a41c93e0727a4146c"
+    },
+    {
+      "source": "src/u1f.py",
+      "target": "insulator/api.py",
+      "source_sha256": "a72df6b9689b0a1862894bed6ee3ff3c4761e592b1df0535a335e323f34b1ee8"
+    },
+    {
+      "source": "src/_reference/checks_v04/calibrated.py",
+      "target": "insulator/_engine/calibrated.py",
+      "source_sha256": "eed2047d65ce9d47aa3bcf42fdb80c1a992e427d2dde5e802a4565b0061dfa6f"
+    },
+    {
+      "source": "src/_reference/checks_v04/deformations.py",
+      "target": "insulator/_engine/calibrated.py",
+      "source_sha256": "f543905861b5dea0e9ef7331eb5a1660e30159a0e022041a243fd45922c0dfde"
+    },
+    {
+      "source": "src/_reference/checks/symbolic.py",
+      "target": "tests/test_formulas_certificates.py",
+      "source_sha256": "86929d8d86375f40c523b3fd030b186a9d5f3386e9235fbe6a1e68533415a6f0"
+    },
+    {
+      "source": "src/_reference/checks/symbolic_r_block.py",
+      "target": "tests/test_formulas_certificates.py",
+      "source_sha256": "495d8caa8b14bcbf6cee82ca2678a46b41562814ba864bb157f43bfdc3f5bbaa"
+    },
+    {
+      "source": "src/_reference/checks/verify_certificates.py",
+      "target": "tests/test_formulas_certificates.py",
+      "source_sha256": "7d35cddab47643944d3825dcba4874720ba9f205007770ddbc0eb249bf255cfd"
+    }
+  ],
+  "implementation_policy": "Only current calibrated formulas and required exact kernels are packaged; no external checkout imports.",
+  "reference_vectors": {
+    "target": "formulas/reference_vectors.json",
+    "sha256": "0f07ccb6b2cad1d3c934b7cc7dbd0b7ab34ea12a9905419d8eeb312255e2dab4",
+    "producer": "untouched archive public src/u1f.py, fixed random seed_base=11911"
+  }
+}

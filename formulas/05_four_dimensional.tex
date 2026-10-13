@@ -1,0 +1,195 @@
+\section{\texorpdfstring{$4+1$}{4+1} dimensions: the complete CI source and product}\label{sec:4d}
+The fields are $(n_2,n_4,\nub_5)$. This section is the sole definition site for the four-dimensional operative formulas, including the calibrated half-valued term and cubic coefficient. Lower outputs are constructed before evaluating the phase twister. The two finite kernels are accompanied by their exact coefficients, not by an instruction to fit a primitive.
+
+\subsection{Integer obstruction and integer stacking}
+\begin{equation}\label{eq:4d-source}
+ \boxed{d_{s_1}n_2=0,\qquad d_{\rho_1}n_4=\mathcal O_5,
+ \qquad\mathcal O_5=-B_3n_2-\rho_1 n_2^2.}
+\end{equation}
+Both source terms are integer cocycles. The quadratic term is an integral representative of the twisted Bockstein of the binary square, not a substitution of a binary equation for integer charge conservation. Its relation to the common primary operation and the parity source is established in Section~\ref{sec:parity}.
+
+\begin{equation}\label{eq:4d-output}
+ N_2=n_2+n'_2,\qquad N_4=n_4+n'_4+\mathcal E_4,
+ \qquad \Vb_5=\nub_5+\nub'_5+\Eb_5,
+\end{equation}
+where
+\begin{equation}\label{eq:4d-E4}
+ \boxed{\mathcal E_4=(n_2\cup n'_2)_{\rho_1}
+                   +\rho_1\cup(n_2\cup_1 n'_2).}
+\end{equation}
+The first cup is formed with the two sheet coefficient systems before being assigned sign $\rho_1$. Applying \eqref{eq:cup-id} gives
+$d_{\rho_1}\mathcal E_4=-\rho_1(n_2n'_2+n'_2n_2)$, exactly the change in \eqref{eq:4d-source}. The closed part of this product is retained; closure alone would not determine it.
+
+\subsection{The charge-conjugation Cartan block}
+The source needs one further binary operation:
+\begin{equation}\label{eq:J6}
+ \boxed{\begin{aligned}
+ \mathcal J_6(n_2)={}&
+ \zeta_{1,4}(\rho_1,\bar n_2^2)
+ +\rho_1^2\widetilde{(n_2^2)}
+ +\rho_1\zeta^{\mathbb Z}_{2,2}(n_2,n_2)\\
+ &+\big[(\rho_1\cup_1s_1)\rho_1
+             +(s_1^2\cup_1\rho_1)\big]\bar n_2^2.
+ \end{aligned}}
+\end{equation}
+The square inside the tilde is the actual signed integral cup square. Its second digit is not computed by squaring the canonical binary lift. The Cartan word is fixed in Appendix~\ref{app:ops}; the integral Cartan block is \eqref{eq:integral-Cartan}. Thus $\mathcal J_6$ contains no additional field or unspecified operation.
+
+The identities used in the source proof are
+\begin{align}
+ d\zeta^{\mathbb Z}_{3,2}(B_3,n_2)
+ &=\Sq^2(\bar B_3\bar n_2)
+ +(\Sq^2\bar B_3)\bar n_2+\bar B_3\bar n_2^2
+ +[(\rho_1+s_1)s_1]\bar B_3\bar n_2,
+ \label{eq:dH6}\\
+ d\mathcal J_6(n_2)
+ &=\Sq^2(\rho_1\bar n_2^2)
+ +[(\rho_1+s_1)s_1](\rho_1\bar n_2^2)
+ +s_1\rho_1^2\bar n_2^2.
+ \label{eq:dJ6}
+\end{align}
+The first is a specialization of the single integral Cartan identity. For the second, the $(1,4)$ word gives the Cartan expansion of $\Sq^2(\rho_1\bar n_2^2)$. The integer second digit trivializes $\Sq^1\overline{n_2^2}$; the diagonal integral Cartan block supplies $\Sq^2(\bar n_2^2)+s_1^2\bar n_2^2$. The last two reordering terms in \eqref{eq:J6} place the backgrounds in the order of \eqref{eq:dJ6}.
+
+\subsection{The terminal obstruction}\label{subsec:parent}
+The complete bosonic equation is $d_{s_1}\nub_5=\Ob_6$, with
+\begin{equation}\label{eq:4d-O6}
+ \boxed{\begin{aligned}
+ \Ob_6={}&\Ob^c_6(n_4)
+ +\frac12\mathcal P_{\rho_1+s_1}(\check\omega_2^{\mathbb R})\,n_2
+ -\frac12\check\omega_2^{\mathbb R}\cup(n_2^2)_{\rho_1}\\
+ &+\frac14(\rho_1^2 n_2^2)_{s_1}
+ +\frac14(s_1)_{\rho_1+s_1}\cup\mathcal O_5
+ +\frac16 n_2^3\\
+ &+\frac12\Big[
+   \zeta^{\mathbb Z}_{3,2}(B_3,n_2)+\mathcal J_6(n_2)
+   +(\bar B_3\bar n_2)\cup_4(\rho_1\bar n_2^2)
+   +\rho_1\bar B_3\bar n_2\Big].
+ \end{aligned}}
+\end{equation}
+Every term now has a defined role. The first is the open charge block. The real quadratic terms couple the extension to the sheet and its intersection. The integral quarter terms retain the coefficient retyping and restore the charge-phase coordinate. The two Cartan corrections integrate the extension and charge-conjugation residuals; their mixed higher cup polarizes the two lower-source summands. The last half-valued term is the calibrated sheet-linear normalization, and the cubic coefficient is fixed by the paired normalization argument in Section~\ref{sec:normalization}.
+
+All terms in the square bracket are formed over $\mathbb F_2$. The other terms use their stated real or signed integer products. The output sign is $s_1$. In particular, neither $\mathcal O_5$ nor its parity is replaced by a partial lower source.
+
+\begin{theorem}[Closure of the complete source]\label{thm:parent}
+Equation~\eqref{eq:4d-O6} is twisted closed on the complete lower equations \eqref{eq:4d-source}.
+\end{theorem}
+\begin{proof}
+The source proof is most transparent after the explicit phase change
+$d_{s_1}[(s_1)_{\rho_1+s_1}n_4/4]$. The charge block then contains
+$\check\omega_2^{\mathbb R}n_4$
+and the binary correction $[(\rho_1+s_1)s_1]\bar n_4/2$.
+The derivative of the real extension quadratic cancels
+$-\check\omega_2^{\mathbb R}B_3n_2$ and leaves
+$(\Sq^2\bar B_3)\bar n_2/2$.
+The derivative of the retyped intersection term cancels
+$-\check\omega_2^{\mathbb R}\rho_1n_2^2$ and leaves
+$\bar B_3\bar n_2^2/2$.
+
+The remaining binary residual is the open square of the full parity
+$\bar B_3\bar n_2+\rho_1\bar n_2^2$, plus its sign term and the two preceding remainders. Its cross term is integrated by the displayed $\cup_4$ product. Equations~\eqref{eq:dH6} and~\eqref{eq:dJ6} cancel its two diagonal parts, apart from $s_1\rho_1^2\bar n_2^2$, which is canceled by the twisted derivative of the quarter-valued intersection. The ordered integer cube is closed. The calibrated sheet-linear term is separately closed and additive. Undoing the stated phase change gives exactly \eqref{eq:4d-O6}.
+\end{proof}
+The explicit representative change used in this proof is proved in Appendix~\ref{app:operations}. It is a derivation step, not a second operative source.
+
+\subsection{Two fixed polarization kernels}\label{subsec:kernels}
+The terminal twister uses two finite binary operations, $\mathcal P_5$ and $\mathcal R_5$. Their \emph{definitions} are the coordinate rule and coefficient lists in Appendix~\ref{app:tables}. The identities below explain their mathematical roles but do not replace those definitions.
+
+For binary cocycles $z_3,x_2,y_2$,
+\begin{equation}\label{eq:P5identity}
+ \begin{aligned}
+ d\mathcal P_5(z_3;x_2,y_2)={}&
+ \zeta_{3,2}(z_3,x_2+y_2)+\zeta_{3,2}(z_3,x_2)+\zeta_{3,2}(z_3,y_2)\\
+ &+(z_3x_2)\cup_4(z_3y_2)
+ +(\Sq^1z_3)(x_2\cup_2y_2)+z_3(x_2\cup_1y_2).
+ \end{aligned}
+\end{equation}
+This is the Cartan-polarization kernel. Its 814 squarefree terms obey the identity in all 50 independent cocycle variables on the testing six-simplex. Its last two terms are paired with the integer second digit of $B_3$ and the real part of the phase product.
+
+For the actual signed integer sheet inputs, the second kernel satisfies
+\begin{equation}\label{eq:R5identity}
+ \begin{aligned}
+ d\mathcal R_5(\rho_1,s_1;n_2,n'_2)={}&
+ \Sq^2\overline{\mathcal E_4}
+ +[(\rho_1+s_1)s_1]\overline{\mathcal E_4}\\
+ &+(\rho_1\bar n_2^2)\cup_4(\rho_1(\bar n'_2)^2)\\
+ &+\rho_1[\bar n_2^2+(\bar n'_2)^2]\cup_4d\overline{\mathcal E_4}
+ +\Delta\mathcal J_6\\
+ &+\rho_1^2\bar n_2\bar n'_2
+ +s_1\rho_1^2(\bar n_2\cup_1\bar n'_2)\\
+ &+\bar n_2^2\bar n'_2+\bar n_2(\bar n'_2)^2
+ +d\zeta^{\mathbb Z}_{2,2}(n_2,n'_2).
+ \end{aligned}
+\end{equation}
+Here and below $\Delta$ evaluates an operation on the actual lower output and subtracts its two input values. For $\mathcal J_6$, only the sheet arguments occur. The lower twister in this identity is the already defined \eqref{eq:4d-E4}, not an independent binary input.
+
+The second kernel has 3,117 squarefree terms in the 50 local bits of the two characters and the two integer sheets modulo four. Its differential identity is checked symbolically in 72 independent bits. Both kernels vanish when either sheet input is zero and on all normalized degeneracies. $\mathcal R_5$ additionally vanishes when $\rho_1=0$. The coefficient tables are exact, not claimed to be a minimal basis; the factorization into these two operations is what makes their roles visible.
+
+\subsection{The terminal stacking twister}\label{subsec:E5full}
+One ordered cubic polarizer is needed:
+\begin{equation}\label{eq:cubic-polarizer}
+ \mathcal C_5(n_2,n'_2)
+ =(2n_2+n'_2)\cup(n_2\cup_1n'_2)
+ +(n_2\cup_1n'_2)\cup(n_2+2n'_2).
+\end{equation}
+This is a factorization of four signed integral cups. It obeys
+\begin{equation}\label{eq:dC5}
+ d_{s_1}\mathcal C_5
+ =(n_2+n'_2)^3-n_2^3-(n'_2)^3
+ -3\big[n_2^2n'_2+n_2(n'_2)^2\big].
+\end{equation}
+The complete calibrated phase correction is
+\begin{equation}\label{eq:4d-E5}
+ \boxed{\begin{aligned}
+ \Eb_5={}&\Eb^c_5(n_4,n'_4)
+          +\Eb^c_5(n_4+n'_4,\mathcal E_4)\\
+ &-\frac12\check\omega_2^{\mathbb R}\cup(n_2\cup_1n'_2)_{\rho_1}
+   +\frac14\big[\rho_1^2(n_2\cup_1n'_2)\big]_{s_1}\\
+ &+\frac16\mathcal C_5(n_2,n'_2)
+   -\frac14(s_1)_{\rho_1+s_1}\cup\mathcal E_4\\
+ &+\frac12\Big[
+     \zeta^{\mathbb Z}_{2,2}(n_2,n'_2)
+    +\mathcal P_5(\bar B_3;\bar n_2,\bar n'_2)
+    +\widetilde B_3(\bar n_2\cup_2\bar n'_2)\\
+ &\hspace{32mm}
+    +(\rho_1\bar n_2^2)\cup_5(\bar B_3\bar n'_2)
+    +\mathcal R_5(\rho_1,s_1;n_2,n'_2)\Big].
+ \end{aligned}}
+\end{equation}
+The charge polarizers are \eqref{eq:CF-product}, evaluated twice: first on the two charge inputs, then on their sum and the newly generated integer charge. This second evaluation is indispensable. The entire binary bracket is evaluated before its half-valued embedding. The other coefficients retain integral or real lifts as displayed.
+
+\begin{theorem}[Paired source and product]\label{thm:E5}
+For any two complete lower inputs with the same backgrounds,
+\begin{equation}\label{eq:E5derivative}
+ d_{s_1}\Eb_5
+ =\Ob_6(N_2,N_4)-\Ob_6(n_2,n_4)-\Ob_6(n'_2,n'_4)
+ \pmod1.
+\end{equation}
+Consequently \eqref{eq:4d-output} maps two completed states to a completed state.
+\end{theorem}
+\begin{proof}
+Apply \eqref{eq:CF-polarization} first to $n_4,n'_4$ and then to $n_4+n'_4,\mathcal E_4$. Retain both open derivatives. The real terms in the source polarization are integrated by the third term of \eqref{eq:4d-E5}; their remainder is the last term of \eqref{eq:P5identity}. The next quarter term integrates the background intersection and leaves the two explicit character monomials in \eqref{eq:R5identity}.
+
+Equation~\eqref{eq:dC5} handles cubic order. The remaining Cartan contribution from the product-generated charge has coefficient $3/6+1/2=1$, hence vanishes as a phase. The mixed lower-source polarization contributes the displayed $\cup_5$ correction. Equation~\eqref{eq:P5identity}, together with the second-digit identity for $B_3$, cancels the extension residual; \eqref{eq:R5identity} cancels the charge-conjugation residual. The $-(s_1)_{\rho_1+s_1}\mathcal E_4/4$ term restores the same charge-phase coordinate as the source. Finally, the calibrated sheet-linear source term has zero polarization, so no extra phase twister is required.
+\end{proof}
+The same convention is used in all examples. The absence of a further closed two-input term is a normalized physical choice proved in Section~\ref{sec:bordism06}, not a conclusion from \eqref{eq:E5derivative} alone.
+
+\subsection{Joint integer and phase gauges}\label{subsec:gauge4}
+For $u_1\in C^1(G,\mathbb Z_{s_1})$ and $v_3\in C^3(G,\mathbb Z_{\rho_1})$,
+\begin{equation}\label{eq:4dgauge}
+ \boxed{\begin{aligned}
+ n_2^{\mathrm g}&=n_2+d_{s_1}u_1,\\
+ n_4^{\mathrm g}&=n_4+B_3u_1
+ +\rho_1\big[n_2u_1+u_1n_2+u_1d_{s_1}u_1\big]
+ +d_{\rho_1}v_3.
+ \end{aligned}}
+\end{equation}
+The derivative of the correction is the change of the complete integer source. In particular, the three quadratic terms are needed to track both cross terms and the square of $d_{s_1}u_1$.
+
+On the height cylinder $I\times X$, replace $u_1$ by $\eta u_1$ and $v_3$ by $\eta v_3$ in \eqref{eq:4dgauge}, and call the resulting fields $n_2^I,n_4^I$. They satisfy the lower tower everywhere. The phase gauge is the finite sum
+\begin{equation}\label{eq:G5cylinder}
+ \widehat G_5(v_0\ldots v_5)
+ =\sum_{j=0}^5(-1)^j
+ \Ob_6(v_0^-,\ldots,v_j^-,v_j^+,\ldots,v_5^+;n_2^I,n_4^I),
+\end{equation}
+\begin{equation}\label{eq:4d-phase-gauge}
+ \nub_5^{\mathrm g}=\nub_5+\widehat G_5+d_{s_1}\lambda_4.
+\end{equation}
+This uses exactly six evaluations of the calibrated source and contains its sheet-linear gauge term automatically. At fixed sheet, the shorter charge-only representative is \eqref{eq:CF-gauge} with $d=4$. It is that representative which is used in the terminal commutator calculation.

@@ -1,0 +1,188 @@
+\section{Parity, charge, and relations between dimensions}\label{sec:parity}\label{sec:dimension}
+The two quotients in \eqref{eq:quotients} organize the same fermionic symmetry in different ways. A charge-conserving sheet has an even thermal parity-only layer number, but its lift also contains derived Majorana information and a circle-dependent phase. Thus neither $n_p\mapsto2n_p$ by itself nor $n_d\mapsto\bar n_d$ by itself is the comparison map.
+
+\subsection{A common primary operation}\label{subsec:primary-family}
+For a signed integral sheet $n_p$, the primary obstruction classes in the three studied degrees are organized by
+\begin{equation}\label{eq:primary-family}
+ [\mathcal O_{p+3}]
+ =\left[-(d_{\rho_1+s_1}\omega_2^{\mathbb R})n_p
+ +\beta_{\rho_1}\big(\Sq^2\bar n_p+s_1^2\bar n_p\big)\right],
+ \qquad p=0,1,2.
+\end{equation}
+This is a statement about the primary integer class. The literal cochain representatives used in calculations are the lower equations in the separate dimensional sections.
+
+The representative changes can be written without introducing new decoration fields. For $p=1$, form the integer cochain $(s_1^2)_{\rho_1+s_1}n_1$ and subtract its canonical binary residue. For $p=2$, use $(n_2^2)_{\rho_1}+(s_1^2)_{\rho_1+s_1}n_2$. The two exact divisions are
+\begin{align}\label{eq:integer-coordinate-carries}
+ \lambda_3^{\mathrm{lift}}
+ &=\frac{(s_1^2)_{\rho_1+s_1}n_1-\overline{s_1^2\bar n_1}}2,\\
+ \lambda_4^{\mathrm{lift}}
+ &=\frac{(n_2^2)_{\rho_1}+(s_1^2)_{\rho_1+s_1}n_2
+            -\overline{\bar n_2^2+s_1^2\bar n_2}}2.
+\end{align}
+Both numerators are assembled over the integers with the canonical whole-expression residue. The right side of \eqref{eq:primary-family}, before passing to classes, equals the adopted integer source minus $d_{\rho_1}\lambda_{p+2}^{\mathrm{lift}}$. Shifting the charge coordinate by that carry gives the displayed dimensional equations.
+
+There is also a direct integer polarizer before the coordinate change. Let $U(n_p)$ be the canonical binary lift of $\Sq^2\bar n_p+s_1^2\bar n_p$. The numerator
+\begin{equation}\label{eq:raw-integral-product}
+ \frac{U(n_p+n'_p)-U(n_p)-U(n'_p)
+      -d_{\rho_1}\overline{\bar n_p\cup_{p-1}\bar n'_p}}2
+\end{equation}
+is integral because the corresponding binary numerator vanishes. Its derivative polarizes the primary operation. After \eqref{eq:integer-coordinate-carries}, replacing the canonical lift of the higher cup by the actual signed integral cup changes the polarizer by an explicit integer coboundary. This gives the lower twisters in \eqref{eq:3d-integer-product} and \eqref{eq:4d-E4}. The square appearing only in the $4+1$D source is the low-degree behavior of $\Sq^2$, together with this coordinate change.
+
+\subsection{The physical circle and its integer carry}\label{subsec:circle}
+Use $[\cdot]_1$ for reduction into $[0,1)$. In a chosen section of the bosonic circle extension,
+\begin{equation}\label{eq:circle-law}
+ (x,g)(y,h)
+ =\big([x+(-1)^{\rho_1(g)+s_1(g)}y
+               +2\omega_2^{\mathbb R}(g,h)]_1,gh\big).
+\end{equation}
+The factor two is imposed by quotienting the physical charge circle by parity. Define $X_1(x,g)=x$ and
+\begin{equation}\label{eq:circle-carry}
+ M_2=d_{\rho_1+s_1}X_1+2\pi^*\omega_2^{\mathbb R},\qquad
+ \omega_2^{\SC}=\bar M_2.
+\end{equation}
+The integer $M_2$ is the section carry. Its derivative is twice the integral extension derivative; its residue is therefore a binary cocycle and is precisely the fermion-parity extension on $G_b$. These are section-based Borel/topological-group cochains. The discontinuous section is not a replacement of the physical circle by an abstract discrete group, nor an identification of all phase cochains with ordinary singular $\mathbb R/\mathbb Z$ cochains on $BU(1)$.
+
+The checked carry makes the two background descriptions explicit:
+\begin{equation}\label{eq:checked-circle-carry}
+ \check M_2=M_2-(s_1^2)_{\rho_1+s_1},\qquad
+ d_{\rho_1+s_1}\check M_2=2\pi^*B_3,\qquad
+ \check\omega_2^{\SC}=\overline{\check M_2}=\omega_2^{\SC}+s_1^2.
+\end{equation}
+Keeping the full floor, rather than only its second binary digit, gives the exact relation
+\begin{equation}\label{eq:circle-bockstein}
+ \beta_{\rho_1+s_1}\check\omega_2^{\SC}
+ =\pi^*B_3-d_{\rho_1+s_1}\lfloor\check M_2/2\rfloor.
+\end{equation}
+Its binary cohomology statement is
+$[\Sq^1\check\omega_2^{\SC}
+ +(\rho_1+s_1)\check\omega_2^{\SC}]=[\pi^*\bar B_3]$.
+The integer floor in \eqref{eq:circle-bockstein} is needed for terminal fractional phases; retaining only the last cohomology statement loses it.
+
+\subsection{The explicit lower parity maps}\label{subsec:parity-lower}
+On $G_b$, choose the circle section and integral lift frame in which
+\begin{equation}\label{eq:W-frame}
+ \check\omega_2^{\mathbb R}=\frac12\check\omega_2^{\SC},\qquad
+ B_3=\frac12d_{\rho_1+s_1}\check\omega_2^{\SC}.
+\end{equation}
+The binary cochain on the right has its canonical integer values. Passing to this frame requires the already specified phase transport for section and lift changes; it is not an assumption that the original symmetry is finite or its physical extension half-valued.
+
+For spatial dimensions $d=3,4$, the comparison coordinates are
+\begin{equation}\label{eq:lower-parity-map}
+ n_{d-2}^{\SC}=2n_{d-2},\qquad
+ \check n_{d-1}^{\SC}=\rho_1\bar n_{d-2},\qquad
+ n_d^{\SC}=\bar n_d+J_d.
+\end{equation}
+The Majorana input is the checked compact coordinate of the supplied drafts. The CF label here is the comparison coordinate of their compact source; native geometric/reference conversions must be applied at the numerical API boundary. A derived Majorana input is not an independent charge-conserving Kitaev-chain decoration.
+
+The two coordinate corrections are
+\begin{align}
+ J_3={}&(\omega_2^{\SC}\cup_1\rho_1)\bar n_1
+ +\rho_1(\bar n_1\cup_1\rho_1)\bar n_1
+ +\rho_1^2\widetilde n_1
+ +s_1\widetilde{(\rho_1\cup n_1)}\nonumber\\
+ &+\big[(\rho_1^2\cup_1s_1)+(s_1^2\cup_1\rho_1)\big]\bar n_1,
+ \label{eq:J3-map}\\
+ J_4={}&\zeta_{1,2}(\rho_1,\bar n_2)
+ +(\omega_2^{\SC}\cup_1\rho_1)\bar n_2
+ +\rho_1^2\widetilde n_2
+ +s_1\widetilde{(\rho_1\cup n_2)}\nonumber\\
+ &+\big[(\rho_1^2\cup_1s_1)+(s_1^2\cup_1\rho_1)\big]\bar n_2.
+ \label{eq:J4}
+\end{align}
+All outer arithmetic is binary. Inside each tilde, $\rho_1$ is its integral cocycle of sign $\rho_1$ and the sheet has sign $s_1$, so their actual product has sign $\rho_1+s_1$. The reversed $(1,2)$ Cartan operation is fully defined in Appendix~\ref{app:ops}.
+
+In the indicated comparison coordinate the even-sheet parity source has the common expression
+\begin{equation}\label{eq:even-parity-source}
+ \begin{aligned}
+ \mathcal O_{p+3}^{\SC}(2n_p,\check n_{p+1}^{\SC})
+ ={}&\Sq^2\check n_{p+1}^{\SC}
+ +\omega_2^{\SC}\check n_{p+1}^{\SC}
+ +s_1\Sq^1\check n_{p+1}^{\SC}\\
+ &+\big(\Sq^1\check\omega_2^{\SC}
+       +s_1\check\omega_2^{\SC}\big)\bar n_p,
+ \qquad p=1,2.
+ \end{aligned}
+\end{equation}
+Direct cochain comparison gives
+\begin{equation}\label{eq:lower-source-map}
+ \boxed{\mathcal O_{d+1}^{\SC}
+       (2n_{d-2},\rho_1\bar n_{d-2})
+       =\overline{\mathcal O_{d+1}}+dJ_d,
+       \qquad d=3,4.}
+\end{equation}
+\begin{proof}
+The half-derivative in \eqref{eq:W-frame} gives
+$\bar B_3=\Sq^1\check\omega_2^{\SC}
+ +(\rho_1+s_1)\check\omega_2^{\SC}$.
+For $d=3$, the cup-one term in \eqref{eq:J3-map} exchanges the two factors in the square of $\rho_1\bar n_1$. The second digit of $n_1$ integrates its $\Sq^1$ contribution; the second digit of the integral $\rho_1n_1$ integrates the explicit antiunitary term. The extension cup-one term and the final two terms integrate the remaining background reorderings.
+For $d=4$, the $(1,2)$ Cartan term leaves the additional
+$\rho_1\Sq^2\bar n_2=\rho_1\bar n_2^2$, precisely the quadratic term of the integer source. The same carry and reordering argument gives \eqref{eq:J4}. The retained independent symbolic certificate uses all 40 free local bits in this degree.
+\end{proof}
+
+For even sheet inputs in $3+1$D the parity CF twister reduces to
+$\check n_2^{\SC}\cup_1\check n_2^{\prime\SC}
++s_1(\check n_2^{\SC}\cup_2\check n_2^{\prime\SC})$.
+The exact lower-product map is
+\begin{equation}\label{eq:parity-product-map}
+ \overline{\mathcal E_3}+\Delta J_3+\mathcal E_3^{\SC}
+ =d\big[\rho_1(\bar n_1\cup_1\bar n'_1)\big].
+\end{equation}
+The second-digit polarizations cancel the explicit $s_1$ term; the remaining identity is the ordinary higher-cup differential on three binary one-cocycles. This supplies the actual lower output reference change. It is not a substitute for a comparison of terminal phase twisters.
+
+\subsection{All free charge dependence of the terminal comparison}\label{subsec:open-charge-map}
+The parity open-charge block is
+\begin{equation}\label{eq:parity-CF}
+ \Ob^{c,\SC}_{d+2}(x_d)
+ =\frac12\big[\omega_2^{\SC}x_d+\Sq^2x_d\big],
+\end{equation}
+for a binary input. For any integer charge $n_d$ and binary shift $J_d$, define
+\begin{equation}\label{eq:open-charge-rephasing}
+ \widehat R^{c}_{d+1}
+ =\frac12X_1n_d+\Eb^c_{d+1}(n_d,J_d).
+\end{equation}
+Pullbacks to $G_b$ are implicit, and the charge need not be closed. The exact subtraction is
+\begin{equation}\label{eq:open-charge-subtraction}
+ \boxed{\begin{aligned}
+ &\Ob^{c,\SC}_{d+2}(\bar n_d+J_d)
+   -\pi^*\Ob^c_{d+2}(n_d)-d_{s_1}\widehat R^{c}_{d+1}\\
+ &\quad=\frac12X_1d_{\rho_1}n_d
+  +\frac12\Big[\omega_2^{\SC}J_d+\Sq^2J_d
+       +\overline{d_{\rho_1}n_d}\cup_d dJ_d\Big]\pmod1,
+ \qquad d=2,3,4.
+ \end{aligned}}
+\end{equation}
+\begin{proof}
+The coefficient pairing $(\rho_1+s_1)+\rho_1=s_1$ and the signed Leibniz rule give
+$d_{s_1}(X_1n_d/2)=M_2n_d/2-\omega_2^{\mathbb R}n_d-X_1d_{\rho_1}n_d/2$.
+Modulo one the first term is $\omega_2^{\SC}\bar n_d/2$.
+Then apply \eqref{eq:CF-polarization} to $n_d,J_d$ and add the linear parity-extension term. No closed-input replacement is made.
+\end{proof}
+After the lower source and $J_d$ are fixed, the right side depends only on sheet and background data. The open term $X_1d_{\rho_1}n_d/2$ would be lost by applying a closed-charge bridge to the opened CI tower. A closed charge with $J_d=0$ recovers the familiar circle-dependent phase without needing a separate definition.
+
+\subsection{What stability and transgression do, and do not, determine}
+Primary Bocksteins and Steenrod operations commute with suspension, with background multiplication interpreted fiberwise. A full secondary comparison additionally needs a map of all trivializing lower cochains. The parameter construction in Section~\ref{subsec:canonical3} makes this distinction concrete: the upper charge is corrected before Stokes is applied. The supplied parity construction uses the same background-preserving principle~\cite[Appendix F.6]{Project4}.
+
+Stable operations can be invisible on a lower-degree single input. For example the mod-three reduced power obeys $P^1(\operatorname{red}_3 n_2)=\operatorname{red}_3(n_2^3)$ but vanishes on degree-zero and degree-one inputs by instability~\cite{SteenrodEpstein}. Thus lower-dimensional agreement does not fix the cubic normalization by itself.
+
+There is an equally important two-input effect. The stable expression
+$\rho_1\Sq^3\bar n_p/2$ vanishes for a closed degree-two input. For a parameterized closed degree-three cochain
+$n_3^{\Delta^m}=\sum_j\theta_jn_2^{(j)}$, direct signed evaluation gives
+\begin{equation}\label{eq:source-invisible-transgression}
+ \mathcal I_1\left[\frac12\rho_1(\bar n_3^{\Delta^1})^2\right]=0,
+ \qquad
+ \mathcal I_2\left[\frac12\rho_1(\bar n_3^{\Delta^2})^2\right]
+ =\frac12\rho_1\bar n_2\bar n'_2.
+\end{equation}
+Two factors require two parameter jumps: the interval has only one, the triangle has two. This explains why source agreement and even primary stability can miss a product normalization. It is an operation-level identity, not a claim that a new $5+1$D physical theory has been completed.
+
+\subsection{The remaining universal terminal maps}\label{subsec:remainingmap}
+Let $f$ be the complete lower-data map in the selected comparison coordinates. A universal terminal equivalence would require the paired equations
+\begin{align}
+ d_{s_1}\widehat R_5(a)
+ &=\Ob_6^{\SC}(f(a))-\pi^*\Ob_6(a),\label{eq:remaining-R5}\\
+ d_{s_1}\widehat K_4(a,b)
+ &=\pi^*\Eb_5(a,b)+\Delta\widehat R_5(a,b)
+   -\Eb_5^{\SC}(f(a),f(b))-\widehat G_5^{\SC}(\lambda(a,b)).
+ \label{eq:remaining-K4}
+\end{align}
+The lower output path $\lambda(a,b)$ is oriented from the product of the two mapped inputs to the mapped product. The single-state charge part of $\widehat R_5$ is explicit in \eqref{eq:open-charge-rephasing}. The universal sheet/background/circle-carry remainder and the paired two-input primitive have not been supplied by the source materials. Solving the first equation makes the second right side closed, not automatically exact. The calibrated coefficients below are fixed within their stated model; these missing comparison maps are not an additional undecided coefficient of the operative twister.

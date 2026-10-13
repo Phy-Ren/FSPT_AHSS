@@ -1,0 +1,51 @@
+\section{Formula ownership, reproducibility, and scope}\label{sec:reproducibility}\label{sec:boundaries}
+The operative formula is defined once, in its dimensional section. Proofs and examples use those definitions by reference. The machine-readable registry supplies the same ownership information without repeating a second mathematical expression. The two explicitly different quotient groups and the coefficient type of every lift are part of the formula, not optional metadata.
+
+
+\subsection{One definition site for each physical operation}
+The following locator contains references, not independent copies of the equations.
+\begin{center}
+\begin{tabular}{@{}lllll@{}}\toprule
+Dimension & Integer source & Terminal source & Full product & Joint gauge\\\midrule
+$2+1$ & \eqref{eq:2d-lower} & \eqref{eq:2d-O4} & \eqref{eq:2d-output}--\eqref{eq:2d-product} & \eqref{eq:2d-gauge}\\
+$3+1$ & \eqref{eq:3d-lower} & \eqref{eq:3d-terminal} & \eqref{eq:3d-integer-product}, \eqref{eq:3d-terminal} & \eqref{eq:3d-gauge}--\eqref{eq:3d-gauge-phase}\\
+$4+1$ & \eqref{eq:4d-source} & \eqref{eq:4d-O6} & \eqref{eq:4d-E4}, \eqref{eq:4d-E5} & \eqref{eq:4dgauge}--\eqref{eq:4d-phase-gauge}\\\bottomrule
+\end{tabular}
+\end{center}
+The common charge source/product/gauge are \eqref{eq:CF-source}, \eqref{eq:CF-product} and \eqref{eq:CF-gauge}; the shared Cartan operation is \eqref{eq:integral-Cartan}. The coefficient tables complete the two finite operations used by \eqref{eq:4d-E5}. No previous convention needs to be combined with these definitions.
+
+\subsection{What is fixed, and what remains a comparison problem}
+Within the fixed natural lower-coordinate model, the real-response and cubic normalization, the four finite-dyadic source directions, and the one source-preserving product direction are fixed by the arguments of Sections~\ref{sec:normalization} and~\ref{sec:examples}. The adopted expressions have no free $\lambda$ or $\epsilon$. Auxiliary deformation parameters appear only in the proofs that select them.
+
+The following boundaries must not be changed merely by reorganizing the text.
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}\toprule
+Dimension & Adopted and tested & Remaining qualification\\\midrule
+$2+1$ & Charge sector, IQH source, explicit IQH product and joint gauges; complete relative cyclic roots. & The full nonzero-uniform-IQH product is an explicit consistent convention, not yet universally matched to a specified physical $P$-move convention.\\[3pt]
+$3+1$ & One canonical source/product from the calibrated parent, complete lower gauges, and the tested AIII/AII/AI relations. & A universal terminal parity phase map and all short/canonical local coordinate maps were not completed in the source material. The unused short source is not an alternative operative formula here.\\[3pt]
+$4+1$ & Calibrated source, integer and terminal product, joint gauge, inverse and Abelian group on the stated equivalence classes. & The universal maps \eqref{eq:remaining-R5}--\eqref{eq:remaining-K4} and unrestricted physical-spectrum identification remain unconstructed.\\\bottomrule
+\end{tabularx}
+\end{center}
+The independent neutral $E_8$ and intrinsic response sectors are outside the adopted CI-generated sector in every row. Their absence from a formula is not a proof of their absence from the physical classification. The associator and commutator arguments establish the required class-level group properties; they do not assert that every higher symmetric homotopy has been expanded as a local polynomial.
+
+\subsection{The public computational interface}
+The package root contains the current PDF and standalone \texttt{note.tex}; the modular source is \texttt{note/main.tex}. The public Python interface is \texttt{src/u1f.py}. Its arguments are the same objects as in the text: \texttt{omega2\_real}, \texttt{s1}, \texttt{rho1}, and the dimension-appropriate \texttt{n1,n3} or \texttt{n2,n4}. The second input uses a \texttt{\_prime} suffix. The wrapper selects only the adopted calibrated functions; it does not expose historical alternatives as equally authoritative APIs.
+
+The verified calculation engines are preserved byte-for-byte under \texttt{src/\_reference/}. Their internal short names are confined to the code dictionary in Appendix~\ref{app:implementation}. This preserves reproducibility during a notation-only refactor: it does not require simultaneous unreviewed changes to thousands of already tested arithmetic operations. The new integral-Cartan interface implements the structural definition \eqref{eq:integral-Cartan}; regression tests compare it with all four former specialized occurrences. The finite coefficient arrays are unchanged.
+
+\subsection{Build and verification commands}
+From the package root, run
+\begin{verbatim}
+python3 tools/build_note.py
+python3 tools/run_checks.py --profile core
+python3 tools/run_checks.py --profile all
+python3 tools/audit_note.py
+\end{verbatim}
+The build requires a standard LaTeX installation with \texttt{pdflatex}; the checks use Python's standard library. Each check runs with a separate timeout and a separate transcript. The runner stops and records a failure rather than relabeling it as a pass. Checks run in an isolated copy of the preserved engine so that provenance hashes remain stable. The exact commands, elapsed times and outcomes of this editorial run are in \texttt{reports/verification.json}.
+
+The check suite distinguishes exact symbolic polynomial identities, exhaustive finite-chain calculations, local regression samples, and external theorem inputs. In particular the code does not claim to re-prove the Freed--Hopkins bordism groups: it verifies the displayed cochain evaluations and characteristic-class manipulations while recording those groups as cited mathematical inputs. No new GAP classification table is produced by this edition.
+
+\subsection{Content preservation and provenance}
+\texttt{provenance/CONTENT\_MIGRATION.md} records the destination of every substantive section of the preceding note. The previous full source-and-check archive is retained separately under \texttt{archive/}; none of its superseded formulas is included by the current LaTeX build. The mathematical normalization and theorem hypotheses are not silently enlarged. The editorial change consolidates the equations, exposes their shared operations, removes superseded representative displays, and relocates technical certificates to the appendices.
+
+\texttt{provenance/NOTATION\_MAP.md} records the mapping from former aliases to the actual symmetry characters, degree-labelled decorations, and hatted operations. \texttt{formula\_registry.json} records definition locations and backend evaluators. \texttt{MANIFEST.sha256} records the shipped files. These are maintenance aids rather than a second source of mathematical conventions.

@@ -1,0 +1,326 @@
+\section{Normalization: the complete fixed-model deformation problem}\label{sec:normalization}\label{sec:freedom04}\label{sec:denominator05}\label{sec:product05}
+The number of terms in a cochain is not the number of independent physical normalizations. Two formulas may differ by a coboundary, by a genuine closed source class, or by a closed product class with unchanged source. We classify the relevant differences only after fixing the lower coordinates, integer multiplication, gauge relation, real-response normalization and background-only theory.
+
+\subsection{Source and product form a coupled problem}
+For two terminal theories on this fixed lower model, write their differences as $\Theta$ and $\Xi$. They satisfy
+\begin{equation}\label{eq:deformation-equations}
+ d_{s_1}\Theta=0,\qquad d_{s_1}\Xi=\Delta\Theta,
+\end{equation}
+with companion associator, commutator, and gauge equations. Their equivalence is the paired rephasing \eqref{eq:paired-change}. Thus an ambiguity is not an arbitrary symmetry-group cohomology class considered in isolation. All subsequent exhaustion statements refer to the declared natural lower-data model, not to a theorem identifying the full physical spectrum.
+
+\subsection{Why the cubic coefficient is fixed}\label{subsec:cubic-product}\label{subsec:cubic-parity}
+To test normalization, temporarily change the fixed coefficient of the ordered cube in \eqref{eq:4d-O6} from $1/6$ to $\lambda$, while keeping the lower product. At zero backgrounds, the output charge generated from two CI inputs is their cup product. The Cartan identity and the cubic polarization give
+\begin{equation}\label{eq:cubic-primitivity}
+ [\Delta\Ob_6^{\lambda}]
+ =\left(\frac12+3\lambda\right)
+   [n_2^2n'_2+n_2(n'_2)^2].
+\end{equation}
+The mixed period on $\mathbb{CP}^2\times\mathbb{CP}^1$ is one, so the existence of a natural phase twister requires $3\lambda+1/2\in\mathbb Z$. This leaves $\lambda=1/6,1/2,5/6$ modulo one. The explicit product construction provides the corresponding polarizer by changing the coefficient of \eqref{eq:cubic-polarizer}; its other identities are unchanged.
+
+Now compare the zero-background even-sheet input in the supplied parity source~\cite[Eq.~(207)]{Project4}. It contains $(n_2^{\SC})^3/12$, which becomes $2n_2^3/3$. Its residual binary phase disappears after multiplication by two; the integral carry quadratic is integral in this restriction. Terminal three-primary compatibility therefore requires
+\begin{equation}\label{eq:parity-lambda}
+ 2\lambda\equiv\frac13\pmod1.
+\end{equation}
+The class $n_2^3$ has period one on $\mathbb{CP}^3$. Combining the two independent constraints selects the coefficient already used in \eqref{eq:4d-O6}. This fixes the cubic parameter inside the specified family; it does not by itself decide binary source or product classes.
+
+At the cohomology-operation level, a difference by $n_2^3/3$ is the reduced power $P^1(\operatorname{red}_3n_2)/3$. It can be stable and invisible at the lower-dimensional endpoints. In the actual parameter fields, the ordered cube needs three parameter transitions and contributes neither to the interval nor to the triangle source/product descent. Thus the parent normalization test supplies information which those lower-dimensional comparisons cannot supply.
+
+\subsection{Four source classes and all their low-order consistency data}
+The four relevant half-valued classes have representatives
+\begin{equation}\label{eq:fourtheta04}
+\begin{aligned}
+\Theta_1&=\frac12\rho_1^3s_1\bar n_2,
+&\Theta_2&=\frac12\rho_1s_1^3\bar n_2,\\
+\Theta_3&=\frac12s_1^2\bar n_2^2,
+&\Theta_4&=\frac12\rho_1\bar B_3\bar n_2.
+\end{aligned}
+\end{equation}
+Each bracket is formed over $\mathbb F_2$ before its phase embedding. The first, second and fourth classes are sheet-linear and have zero product change. The third has the explicitly paired change
+\begin{equation}\label{eq:xi3_04}
+ \Xi_3(n_2,n'_2)=\frac12s_1^2(\bar n_2\cup_1\bar n'_2),
+ \qquad d_{s_1}\Xi_3=\Delta\Theta_3.
+\end{equation}
+The four directions are deformation coordinates, not extra decoration data. Any combination gives a paired source/product satisfying the source/product identity. The source detector of Section~\ref{subsec:finite-calibration} selects zero further deformation around the adopted source.
+
+Write $\Delta_i\widehat G_5$ for the change of the sheet-gauge phase associated to $\Theta_i$, not for a degree-$i$ gauge. Under $n_2\mapsto n_2+d_{s_1}u_1$,
+\begin{align}\label{eq:theta-gauges}
+\Delta_1\widehat G_5&=\frac12\rho_1^3s_1\bar u_1,
+&\Delta_2\widehat G_5&=\frac12\rho_1s_1^3\bar u_1,\nonumber\\
+\Delta_4\widehat G_5&=\frac12\rho_1\bar B_3\bar u_1,
+&\Delta_3\widehat G_5&=\frac12s_1^2\big[\bar n_2\cup_1d\bar u_1+\bar u_1d\bar u_1\big].
+\end{align}
+Their derivatives are the corresponding source changes. No free charge completion appears, so pure charge gauges are unchanged. The associator change is strictly zero because \eqref{eq:xi3_04} is bilinear. Its commutator has the witness
+\begin{equation}\label{eq:theta-exchange}
+ \Xi_3(n_2,n'_2)-\Xi_3(n'_2,n_2)
+ =d_{s_1}\left[\frac12s_1^2(\bar n_2\cup_2\bar n'_2)\right].
+\end{equation}
+The other three product and commutator changes vanish. The lower commutator changes charge only, hence no omitted sheet-gauge correction enters this statement. The unit remains normalized and the inverse is the same construction as \eqref{eq:complete-inverse}, using the modified terminal product.
+
+Under an integral extension-lift change $\omega_2^{\mathbb R}\mapsto\omega_2^{\mathbb R}+q_2$, with $q_2$ of sign $\rho_1+s_1$, only $\Theta_4$ changes:
+\begin{equation}\label{eq:theta4lift04}
+ \Theta_4(\omega_2^{\mathbb R}+q_2;n_2)-\Theta_4(\omega_2^{\mathbb R};n_2)
+ =d_{s_1}\left[\frac12\rho_1\bar q_2\bar n_2\right].
+\end{equation}
+A real section change leaves $B_3$ unchanged. Thus the four directions survive all these mathematical consistency conditions; closure alone has not selected them.
+
+\subsection{Explicit rephasings and the reduction to four representatives}
+The complete source-class count will be proved below. Its representatives can already be simplified with six exact relations:
+\begin{align}\label{eq:ansatzexact04}
+ d_{s_1}\left[\frac14(\rho_1^3)_0n_2\right]&=\frac12\rho_1^4\bar n_2,
+&d_{s_1}\left[\frac14(\rho_1^2s_1)_0n_2\right]&=\frac12\rho_1^2s_1^2\bar n_2,\nonumber\\
+ d_{s_1}\left[\frac14(s_1^3)_0n_2\right]&=\frac12s_1^4\bar n_2,
+&d_{s_1}\left[\frac14(B_3)_0n_2\right]&=\frac12(\rho_1+s_1)\bar B_3\bar n_2,\\
+ d_{s_1}\left[\frac12\rho_1\bar n_4\right]&=\frac12(\rho_1\bar B_3\bar n_2+\rho_1^2\bar n_2^2),
+&d_{s_1}\left[\frac12s_1\bar n_4\right]&=\frac12(s_1\bar B_3\bar n_2+\rho_1s_1\bar n_2^2).
+\label{eq:ansatzlower04}
+\end{align}
+The first four rephasings retain actual canonical integer values. For example $d(B_3)_0=2(\rho_1+s_1)(B_3)_0$, whereas $d_{\rho_1+s_1}B_3=0$. The last line uses the full binary charge equation, not a closed-charge assumption. All these rephasings transport product and gauge by \eqref{eq:paired-change}.
+
+\subsection{A bookkeeping space for the full lower equations}
+An Eilenberg--Mac Lane space $K(A,j)$ is used here only as a bookkeeping device for a closed degree-$j$ cochain with coefficients $A$. It allows us to ask for \emph{all} natural cohomology operations on the lower data rather than guess a list of expressions. Its standard low-degree cohomology and the transgression of Steenrod operations are the mathematical inputs from Refs.~\cite{SerreEM,HatcherSS,SteenrodEpstein}. The calculation below concerns the particular signed tower in Eqs.~\eqref{eq:AB} and~\eqref{eq:4d-source}.
+
+Let $\mathcal B$ be the bundle over $B(C_2^{({\rho_1})}\times C_2^{({s_1})})$ whose fiber is
+\begin{equation}
+ K(\Z,2)\times K(\Z,3).
+\end{equation}
+The two factors have sign actions ${s_1}$ and $(\rho_1+s_1)$, respectively. They carry the universal classes ${n_2}$ and ${B_3}$. The integral operation $\mathcal O_5=-{B_3}{n_2}-{\rho_1}{n_2}^2$ defines a second bundle
+\begin{equation}\label{eq:T05}
+ K(\Z,4)\longrightarrow\mathcal T\longrightarrow\mathcal B,
+ \qquad \text{fiber action }{\rho_1},\qquad\text{obstruction }\mathcal O_5.
+\end{equation}
+A point of the corresponding cochain model consists of the data in Eqs.~\eqref{eq:AB} and~\eqref{eq:4d-source}; ${n_4}$ is the specified trivialization of $\mathcal O_5$. Cylinder equivalences implement the lower gauges. The space $\mathcal T$ is of finite type. It is not the physical symmetry group and it does not assert that a microscopic state is a point in an ordinary space of Hamiltonians.
+
+There is a projection to the background-only space, with a section ${n_2}={n_4}=0$. Thus the background contribution splits off in cohomology. The remaining contribution will be called the sheet-dependent part. This is a statement about classes; a chosen cochain primitive may depend on charge even when its differential does not.
+
+
+\subsection{Why the charge fiber does not add a hidden degree-six generator}
+Write
+\begin{equation}\label{eq:R05}
+ \begin{gathered}
+ x=\bar {n_2},\qquad z=\bar {B_3},\qquad v=\Sq^2z,
+ \qquad R=\F_2[{\rho_1},{s_1},x,z,v],\\
+ |{\rho_1}|=|{s_1}|=1,\qquad |x|=2,\quad |z|=3,\quad |v|=5.
+ \end{gathered}
+\end{equation}
+This ring describes $H^*(\mathcal B;\F_2)$ through degree seven. The universal reductions $x,z$ and the operation $v$ extend the fiber generators globally. Leray--Hirsch in this degree range therefore leaves no extra additive extension in the mod-two calculation. The relevant Steenrod rules are
+\begin{equation}\label{eq:sqone05}
+ \Sq^1{\rho_1}={\rho_1}^2,\quad\Sq^1{s_1}={s_1}^2,\quad
+ \Sq^1x={s_1}x,\quad\Sq^1z=(\rho_1+s_1)z,\quad\Sq^1v=z^2.
+\end{equation}
+The last equality is $\Sq^1\Sq^2z=\Sq^3z=z^2$. The signed integral lifts give the two preceding equalities.
+
+Let $c_4$ denote the generator on the $K(\Z,4)$ fiber of Eq.~\eqref{eq:T05}. It is a fiber class, not an additional globally closed charge decoration. Its first transgression is
+\begin{equation}
+ d_5 c_4=q_5,
+ \qquad q_5=zx+{\rho_1}x^2.
+\end{equation}
+Multiplication by $q_5$ is injective in the polynomial ring $R$. Consequently $c_4$, its degree-one multiples, and its degree-two multiples do not contribute independent classes to the low total degrees in question.
+
+One must still check the fiber operation $\Sq^2c_4$ in degree six. On the cover ${\rho_1}={s_1}=0$, its transgression is
+\begin{equation}\label{eq:charge-transgression05}
+ d_7(\Sq^2c_4)=\Sq^2(zx)=vx+zx^2
+ \quad\text{modulo earlier transgressions}.
+\end{equation}
+The second term is a multiple of $q_5$, but $vx$ is not. Thus the fiber degree-six generator cannot survive on that cover, and a putative global class with that leading fiber component cannot survive either. In the signed calculation the degree-seven transgression may contain additional background terms; its $vx$ coefficient remains one by restriction. This suffices for the rank calculations below. No assertion about a full high-degree presentation of $H^*(\mathcal T)$ is needed.
+
+It follows that, as vector spaces with the displayed induced $\Sq^1$,
+\begin{equation}\label{eq:Tlow05}
+ \boxed{
+ H^4(\mathcal T;\F_2)=R_4,\qquad
+ H^5(\mathcal T;\F_2)=R_5/\langle q_5\rangle,\qquad
+ H^6(\mathcal T;\F_2)=R_6/\langle {\rho_1}q_5,{s_1}q_5\rangle.}
+\end{equation}
+There is a further base relation in degree seven with a nonzero $vx$ coefficient. The image of the degree-six Bockstein computed below contains no $vx$. Modding out that additional relation cannot change its rank. This observation is necessary; stopping at the formal quotient $R/(q_5)$ without checking the fiber operation would not be a complete argument.
+
+
+\subsection{The small Bockstein calculation}
+For phase sign ${s_1}$, define the first Bockstein differential on mod-two classes by
+\begin{equation}\label{eq:Ds05}
+ D_{s_1}=\Sq^1+{s_1}\cup.
+\end{equation}
+Indeed $\dd_{s_1}u^{01}/2=\dd u^{01}/2-{s_1}u^{01}$, whose reduction modulo two is Eq.~\eqref{eq:Ds05}. Here $u^{01}$ is the canonical binary lift to the integers. The formula is obtained from the actual coefficient differential, not by treating antiunitarity as invisible in an integral Bockstein. One has $D_{s_1}^2=0$ and $D_{s_1}q_5=(\rho_1+s_1)q_5$, so it is well defined on Eq.~\eqref{eq:Tlow05}.
+
+The exact ranks are
+\begin{center}
+\begin{tabular}{c|rr|rr|rr}\toprule
+ &\multicolumn{2}{c|}{sheet-dependent}&\multicolumn{2}{c|}{background-only}&\multicolumn{2}{c}{all classes}\\
+ degree & dimension & rank $D_{s_1}$ & dimension & rank $D_{s_1}$ & dimension & rank $D_{s_1}$\\\midrule
+ 4&4&2&7&4&11&6\\
+ 5&6&4&10&6&16&10\\
+ 6&9&4&14&8&23&12\\\bottomrule
+\end{tabular}
+\end{center}
+The monomial bases, every matrix column, and exact elimination are retained in the reproducibility suite and its Bockstein JSON certificate. The matrices are small. They are not evaluations on sampled finite groups.
+
+For example, the eleven sheet-dependent degree-six monomials before the two charge relations are
+\begin{equation}
+ {\rho_1}^{4-i}{s_1}^ix\ (0\leq i\leq4),\qquad
+ {\rho_1}^{2-i}{s_1}^ix^2\ (0\leq i\leq2),\qquad
+ {\rho_1}zx,\ {s_1}zx,\ x^3.
+\end{equation}
+This list now follows from the low-degree cohomology theorem, rather than being an ansatz for the original cochain formula. The important point is not that an arbitrary cochain has eleven terms. It is that its relevant cohomology class has a representative in this finite space.
+
+Let $\mathsf B_j^a$ denote the cohomological Bockstein spectral sequence, to distinguish it from the physical AHSS. The table gives
+\begin{equation}\label{eq:Bss05}
+ \mathsf B_2^5=0,\qquad
+ \mathsf B_2^6=\F_2\langle x^3\rangle.
+\end{equation}
+The remaining class is the reduction of the \emph{actual integral cocycle} ${n_2}^3\in Z^6(\mathcal T;\Z_{s_1})$. It is primitive in the free lattice: take ${\rho_1}={s_1}={B_3}={n_4}=0$ and ${n_2}$ the hyperplane class on $\mathbb{CP}^3$, so its integral is one. Thus it neither supports a higher Bockstein nor disappears as an incoming higher boundary. In this range the Bockstein sequence has no other degree-six class from which an order-four or higher torsion class in degree seven could originate. The exact-couple interpretation of such higher torsion is standard; see Ref.~\cite{McClearyBSS}, especially its chain-complex decomposition and cohomological version.
+
+\begin{theorem}[No higher dyadic source class in the fixed integral model]\label{thm:dyadicbound05}
+For the lower-data space $\mathcal T$ in Eq.~\eqref{eq:T05}, the two-primary torsion in $H^7(\mathcal T;\Z_{s_1})$ has exponent two. Its rank is twelve. Eight directions are pulled back from the background-only theory. After that theory and the real-response line generated by ${n_2}^3$ have been fixed, the finite-dyadic degree-six phase ambiguity is
+\begin{equation}\label{eq:allsource05}
+ \boxed{\mathcal A_{\mathrm{source}}\simeq(\Z_2)^4,}
+\end{equation}
+represented by $\Theta_1,\ldots,\Theta_4$ of Eq.~\eqref{eq:fourtheta04}. This is not restricted to a polynomial or a denominator-four ansatz.
+\end{theorem}
+\begin{proof}
+For a finite-type integral cochain complex, a cyclic summand of order $2^j$ in degree seven gives a nonzero $j$th Bockstein from degree six. Equation~\eqref{eq:Bss05} and the primitive integral lift of its sole survivor exclude $j\geq2$. The rank of $D_{s_1}:H^6\to H^7$ is therefore the number of order-two summands, namely twelve. Its background subspace has rank eight.
+
+The exponential coefficient sequence identifies the remaining finite phase classes with this torsion once the real-response image has been removed. Rationally the charge-fiber generator has differential $-{B_3}{n_2}$, so in degree six the sole signed invariant is ${n_2}^3$; in degree five there is none. The four proposed phase representatives have independent $D_{s_1}$ images modulo $q_5$ and the background subspace. Their images exhaust the remaining rank four. Section~\ref{subsec:finite-calibration} also supplies actual lower configurations detecting all four after the allowed charge-completion quotient, so that quotient does not reduce the answer further.
+\end{proof}
+
+\paragraph{What the theorem does not say.}
+Quarter-, eighth-, and sixteenth-valued terms in the \emph{chosen physical formula} have not become disposable. The theorem applies to the difference of two closed sources with the same fixed lower tower and real response. It says that new independent source normalizations cannot proliferate indefinitely with the denominators. Rephasings used to simplify that difference must still be transported to stacking and gauge.
+
+
+\subsection{Restoring the real extension lift does not create new dyadic classes}\label{subsec:real-lift05}
+The actual formulas retain $\check\omega_2^{\mathbb R}$ with $\dd_{\rho_1+s_1} \check\omega_2^{\mathbb R}=B_3$. This information must not simply be dropped when applying Theorem~\ref{thm:dyadicbound05}. Introduce the lower-data space $\mathcal T_A$ that records this chosen real trivialization. There is a fibration
+\begin{equation}\label{eq:real-fiber05}
+ K(\R,2)\longrightarrow\mathcal T_A\longrightarrow\mathcal T.
+\end{equation}
+Here $\R$ is the additive \emph{coefficient group} in the real-lift complex. Equation~\eqref{eq:real-fiber05} is not the physical charge-circle fibration $BU(1)_b\to BG_b\to BG$.
+
+The positive-degree cohomology of $K(\R,2)$ with $\Z/2^j$ coefficients is zero. One way to see this is to express $\R$ as a filtered union of finite-dimensional rational vector spaces. The corresponding $K(\Q,2)$ is obtained from $K(\Z,2)$ by localization; multiplication by two kills its positive-degree mod-two homology in the direct limit. Products and filtered unions preserve this acyclicity. The statement for $\Z/2^j$ follows inductively from the coefficient short exact sequences. The local coefficient system in Eq.~\eqref{eq:real-fiber05} is pulled back from the base. Hence its Serre sequence gives
+\begin{equation}\label{eq:finite-coefficient-iso05}
+ H^a(\mathcal T;(\Z/2^j)_{s_1})\xrightarrow{\;\cong\;}
+ H^a(\mathcal T_A;(\Z/2^j)_{s_1})
+ \qquad(j\geq1).
+\end{equation}
+
+Every phase class of order dividing $2^j$ comes from $H^a(-;(\Z/2^j)_{s_1})$ by the long exact sequence associated with multiplication by $2^j$ on $\R/\Z_{s_1}$. Thus Eq.~\eqref{eq:finite-coefficient-iso05} supplies an upper bound for \emph{all} finite-dyadic source changes involving the real lift, not just those visibly written using $B_3$. After the background-only part and the fixed real response are removed, this upper bound is four. The four detecting cycles on a single background of Sec.~\ref{sec:calibration04} are actual configurations with a real lift and retain four independent classes. The bound is attained.
+
+\begin{corollary}[Dyadic source exhaustion for the real-extension cochain model]\label{cor:real-source05}
+Within natural simplicial CI/charge theories with Eqs.~\eqref{eq:AB} and~\eqref{eq:4d-source}, the stated extension-gauge equivalences, and a fixed real-response part, every finite-dyadic terminal-source change is equivalent to a combination of the same four $\Theta_i$. Real-lift-dependent carries and arbitrary higher-cup representatives add no further finite-dyadic source class. The source detector matrix therefore fixes the source normalization in this class of theories, rather than only in its original ten-monomial ansatz.
+\end{corollary}
+The corollary is a uniqueness statement for a specified type of deformation. It is not a proof that the adopted source already has a full terminal comparison map to the parity theory, or that no additional physical coefficient sector is needed. Those are separate existence and identification questions.
+
+
+\subsection{A constructive denominator-lowering step}
+There is also an implementable cochain statement behind the exponent bound. Suppose $[\Theta]$ has order at most two and choose a phase cochain $F$ satisfying $\dd_{s_1}F=2\Theta$. Choose its real lift $F^{\R}$. Then
+\begin{equation}\label{eq:halving05}
+ \boxed{\Theta_{\mathrm{half}}
+ =\Theta-\dd_{s_1}(F^{\R}/2),\qquad
+ 2\Theta_{\mathrm{half}}=0\pmod1.}
+\end{equation}
+Thus $\Theta_{\mathrm{half}}$ is pointwise half-valued, even if the original representative used denominator $2^j$. The lift must be taken before division. For a paired source/product deformation the same coordinate change is
+\begin{equation}\label{eq:paired-halving05}
+ \Xi_{\mathrm{half}}=\Xi-\Delta(F^{\R}/2),\qquad
+ \widehat G_{\mathrm{half}}=\widehat G-\tfrac12\big(F^{\R}(a^{\mathrm g})-F^{\R}(a)\big).
+\end{equation}
+The actual lower product $\mu$ and the actual gauge endpoint $a^{\mathrm g}$ occur here. Replacing them by componentwise addition would discard the very information under investigation.
+
+On a finite chain model, $\dd_{s_1}F=2\Theta$ is a linear system over $\Z/2^j$. The supplied solver diagonalizes such a system using odd units and pivots $2^e$, retains their divisibility constraints, and returns a particular solution and the complete cyclic kernel. It never treats an even pivot as invertible. The local rephasing may temporarily require a larger denominator; that is a coordinate issue, not a new order-four source class. A universal short formula for every resulting primitive is not claimed by this algorithm.
+
+\subsection{Cross-dimensional source agreement can miss product information}
+The stable cohomology-operation expressions corresponding to these four source classes are
+\begin{equation}\label{eq:stabletheta04}
+\tfrac12{\rho_1}^3{s_1}\bar n_p,\qquad \tfrac12{\rho_1}{s_1}^3\bar n_p,\qquad
+\tfrac12{s_1}^2\Sq^2\bar n_p,\qquad \tfrac12{\rho_1}\bar B_3\bar n_p.
+\end{equation}
+Here the sign backgrounds are kept fixed when the decoration degree changes. Stability of the Steenrod operation does not mean that the chosen \emph{full source/product representatives} are determined without further homotopies \cite{SteenrodEpstein,BrumfielMorgan}.
+
+In the actual parameter-simplex construction used in Sec.~\ref{sec:3d}, the first, second, and fourth deformations transgress to the same linear expression with $n_2$ replaced by $n_1$. Their two-input phase products vanish. The third has a less obvious behavior:
+\begin{equation}\label{eq:hiddenprod04}
+\boxed{\Iop_1\Theta_3=0,\qquad
+\Iop_2\Theta_3=\tfrac12{s_1}^2\bar n_1\bar n'_1.}
+\end{equation}
+The interval result is the instability identity $\Sq^2\bar n_1=0$. The triangle result must be evaluated before replacing the parent field by a closed degree-one cochain; two independent parameter directions survive. It follows directly by substituting the specified parent lower fields into $\Theta_3$ and summing the normalized shuffles. The companion script verifies the pointwise cochain identity with independent local signs.
+
+Thus a deformation can leave the three-dimensional source unchanged while changing its raw stacking formula. Whether a particular resulting closed product is further removable must be decided with its paired rephasings; Eq.~\eqref{eq:hiddenprod04} does not assume that it is a new invariant for every $G$. What it disproves is the inference that equality of adjacent-dimensional sources automatically fixes stacking normalization.
+\subsection{A closed addition to the product}
+Write $a=({n_2},{n_4})$ and $b=({n'_2},{n'_4})$ for two lower states in $4+1$ dimensions, and $x=\bar {n_2}$, $y=\bar n'_2$. Keep the calibrated source and every lower formula fixed. Consider
+\begin{equation}\label{eq:productbit05}
+ \boxed{\Xi_5^{\mathrm{prod}}(a,b)=\tfrac12{\rho_1}xy,\qquad
+ \Eb_5^{\epsilon}(a,b)=\Eb_5(a,b)+\epsilon\Xi_5^{\mathrm{prod}}(a,b),
+ \quad \epsilon\in\{0,1\}.}
+\end{equation}
+The bracket is binary before embedding in the sign-${s_1}$ phase coefficient. Since ${\rho_1},x,y$ are binary cocycles, $\dd_{s_1}\Xi_5^{\mathrm{prod}}=0$. This changes no obstruction equation, and preserves the source/product identity. Since the sheet coordinate adds without a twister and $\Xi_5^{\mathrm{prod}}$ ignores the charge coordinate, its associator change is strictly zero:
+\begin{equation}
+ \Xi(a,b)+\Xi(ab,c)-\Xi(b,c)-\Xi(a,bc)=0\pmod1.
+\end{equation}
+It is normalized when either input is the vacuum. These simple facts do not by themselves prove that the two values of $\epsilon$ are physically inequivalent or that either is the correct parity lift.
+
+
+\subsection{Exchange, gauge, and inverse data}
+The change in the phase commutator has an explicit witness:
+\begin{equation}\label{eq:exchange05}
+ \Xi(a,b)-\Xi(b,a)=\dd_{s_1} C_4(a,b),
+ \qquad C_4(a,b)=\tfrac12{\rho_1}(x\cup_1 y).
+\end{equation}
+The existing lower commutator changes only charge, so the source-preserving deformation adds no missing sheet-gauge term to this equation. Exchanging twice is itself homotopic to zero through
+\begin{equation}\label{eq:doubleexchange05}
+ C_4(a,b)+C_4(b,a)=\dd_{s_1} D_3(a,b),
+ \qquad D_3(a,b)=\tfrac12{\rho_1}(x\cup_2y).
+\end{equation}
+These are ordinary higher-cup identities. They are explicit low-order witnesses, not a claim that all higher symmetric diagrams have been solved.
+
+Let $u_1,v_1$ be independent sheet-gauge parameters for ${n_2},{n'_2}$. The change under the two gauges is
+\begin{align}\label{eq:pairgauge05}
+ &\Xi({n_2}+\dd_{s_1}u_1,{n'_2}+\dd_{s_1}v_1)-\Xi({n_2},{n'_2})=\dd_{s_1} H_4,\\
+ &H_4=\tfrac12{\rho_1}\bigl[\bar u_1y+x\bar v_1+\bar u_1\dd\bar v_1\bigr].\nonumber
+\end{align}
+The accompanying integer charge gauges in the full model do not enter this expression. Thus the change preserves well-defined multiplication on gauge classes. The single-state cylinder phase can be kept unchanged because the source has not changed.
+
+The lower inverse remains the one in Eq.~\eqref{eq:complete-inverse}.
+Its phase is adjusted by the same rule used for the adopted product:
+\begin{equation}\label{eq:inverse05}
+ (\nub_5^-)^{\epsilon}=\nub_5^-
+       -\epsilon\Xi_5^{\mathrm{prod}}(a,a^-)
+ =\nub_5^--\tfrac\epsilon2{\rho_1} x^2.
+\end{equation}
+Consequently the group-on-equivalence-classes checks alone do not select $\epsilon$. The change is not an additional decoration coefficient or an additional state label. It is a possible normalization of the multiplication rule.
+
+
+\subsection{Why this is the only dyadic pair class in the fixed integral model}
+Take two copies of $\mathcal T$ over the same background space, so that $\rho_1,s_1,B_3$ are shared, and take cohomology relative to the union where either full input is zero. This ``two-input reduced'' condition is just the vacuum normalization written topologically. Each input starts in degree two. In degrees four and five, its mod-two classes are therefore exactly
+\begin{equation}\label{eq:pairspace05}
+ H^4_{\mathrm{pair}}=\F_2\langle xy\rangle,
+ \qquad H^5_{\mathrm{pair}}=\F_2\langle {\rho_1}xy,{s_1}xy\rangle.
+\end{equation}
+A charge-fiber class, of degree four, would need at least degree two from the other input, so cannot supply an additional degree-five pair class. The charge transgressions have only one input and give no relation among Eq.~\eqref{eq:pairspace05} in this range.
+
+Since $\Sq^1(xy)={s_1}x y+x{s_1} y=0$,
+\begin{equation}\label{eq:pairbss05}
+ D_{s_1}(xy)={s_1}xy,
+ \qquad D_{s_1}({\rho_1}xy)={\rho_1}({\rho_1}+{s_1})xy,
+ \qquad D_{s_1}({s_1}xy)=0.
+\end{equation}
+The degree-five second Bockstein page is zero. There is one order-two phase class and no higher dyadic pair class here. The representative ${s_1}xy/2$ is exact: for the ordinary integral product ${n_2}{n'_2}$, retyped only in the phase differential,
+\begin{equation}
+ \dd_{s_1}\big[({n_2}{n'_2})_{s_1}/4\big]=-\tfrac12{s_1}xy=\tfrac12{s_1}xy\pmod1.
+\end{equation}
+The other representative is precisely Eq.~\eqref{eq:productbit05}.
+
+One should also quotient by closed \emph{single-state} rephasings, rather than only two-input phase coboundaries. On the finite-type integral space $\mathcal T$, the reduced degree-five phase cohomology has no real-response line and is represented by the half-valued polynomials of degree five:
+\begin{equation}
+ \tfrac12{\rho_1}^{3-i}{s_1}^i x\ (0\leq i\leq3),\qquad
+ \tfrac12{\rho_1} x^2,\quad\tfrac12{s_1} x^2,\quad\tfrac12xz,
+\end{equation}
+with their charge and Bockstein relations. Each is additive in the sheet \emph{as a cohomology class}. Their product polarizations are therefore exact. Thus a closed natural single-state phase on this integral model cannot remove the pair class ${\rho_1}xy/2$. This step is why a nonzero pair period alone is not our entire argument about rephasings.
+
+\begin{proposition}[Fixed-coordinate product class]\label{prop:productclass05}
+With the integral lower-data model, its lower multiplication, and the terminal source fixed, the reduced degree-five finite-dyadic product-class ambiguity is $\Z_2$, represented by Eq.~\eqref{eq:productbit05}, modulo two-input phase coboundaries and closed single-state rephasings. Its representative has the explicit unit, associator, commutator, pair-gauge, and inverse changes given above.
+\end{proposition}
+The proposition classifies this product \emph{class}, not every possible system of higher coherence witnesses. It does not quotient by changes of the integer lower coordinates. A complete physical comparison must also address possible more general real-lift-dependent equivalences and the full parity product map. Section~\ref{sec:bordism06} fixes $\epsilon=0$ relative to the adopted coordinates. The present calculation classifies the comparison direction and does not assert a new physical invariant.
+
+
+
+\subsection{A period of the product class}
+Use the same complete two-input cycle and the same 480 signed simplices as in the commutator calculation of Section~\ref{subsec:comm4}. Both individual sheet squares vanish pointwise and their input charge completions may be zero, but the output still includes \eqref{eq:4d-E4}. Exact evaluation gives
+\begin{equation}\label{eq:pairperiod05}
+ \left\langle\Xi_5^{\mathrm{prod}},[S^1\times S^2\times S^2]\right\rangle=\frac12,
+ \qquad
+ \left\langle\Xi_5^{\mathrm{prod}}(a,b)-\Xi_5^{\mathrm{prod}}(b,a),[S^1\times S^2\times S^2]\right\rangle=0.
+\end{equation}
+A nontrivial product difference can therefore have an exact commutator. This is a universal cochain-operation detector, not an identification with a physical structured-manifold partition function. The latter is supplied by the independent bordism test in the next section. The two kinds of detector are not interchangeable.

@@ -1,0 +1,139 @@
+\section{Equivalence, Abelian stacking, and the AHSS}\label{sec:coherence}
+An obstruction equation, its product identity, and a group of physical equivalence classes are different statements. This section supplies the equivalences and group argument for the adopted cochain model. The underlying distinctions also occur in explicit bordism cochain models~\cite{BrumfielMorgan}; no formula for their different coefficient tower is imported here.
+
+\subsection{Paired changes of representative}
+For a complete lower state, $\Delta F$ always means $F$ evaluated at the actual stacked lower output, minus its two input values. A change of the single-state phase by $F_{d+1}$ must transform source, twister, and gauge together:
+\begin{equation}\label{eq:paired-change}
+ \begin{aligned}
+ \nub_{d+1}^{\mathrm{new}}&=\nub_{d+1}+F_{d+1},\\
+ \Ob_{d+2}^{\mathrm{new}}&=\Ob_{d+2}+d_{s_1}F_{d+1},\\
+ \Eb_{d+1}^{\mathrm{new}}&=\Eb_{d+1}+\Delta F_{d+1}+d_{s_1}H_d,\\
+ \widehat G_{d+1}^{\mathrm{new}}
+ &=\widehat G_{d+1}+F_{d+1}(n^{\mathrm g})-F_{d+1}(n).
+ \end{aligned}
+\end{equation}
+Here $n$ in the last line denotes the complete lower tuple. An additional output phase coboundary $d_{s_1}H_d$ does not change a state class. A closed single-state $F_{d+1}$ can leave the source unchanged and still alter the displayed product. Lower twisters must be included inside $\Delta F_{d+1}$.
+
+For example the permitted coordinate change $F_{p+3}=\rho_1\bar n_{p+2}/2$ accounts for the earlier quadratic phase convention. Its derivatives are determined by the complete lower equations, and its product polarization uses \eqref{eq:3d-integer-product} or \eqref{eq:4d-E4}. We do not print a second set of operative formulas: \eqref{eq:paired-change} is the exact conversion rule, and the public interface always uses the convention of the dimensional sections.
+
+\subsection{Changes of extension lift and section}
+For a fixed sheet $n_p$, an integral lift change and a real section change are implemented by
+\begin{align}\label{eq:background-changes}
+ \omega_2^{\mathbb R}&\longmapsto\omega_2^{\mathbb R}+z_2,
+ &n_{p+2}&\longmapsto n_{p+2}-z_2n_p,\\
+ \omega_2^{\mathbb R}&\longmapsto\omega_2^{\mathbb R}
+                              +d_{\rho_1+s_1}\alpha_1,
+ &n_{p+2}&\longmapsto n_{p+2}.
+\end{align}
+Here $z_2$ is integral and $\alpha_1$ real, both of sign $\rho_1+s_1$; $p=1,2$ in the CI sheet construction. The first changes $B_3$ by $d_{\rho_1+s_1}z_2$; the second leaves it unchanged. On the height cylinder use respectively
+$\omega_2^{\mathbb R}+\eta z_2$, $n_{p+2}-(\eta z_2)n_p$, or
+$\omega_2^{\mathbb R}+d_{\rho_1+s_1}(\eta\alpha_1)$.
+Evaluating the dimensional source cylinder gives the corresponding phase. This prescription includes the calibrated term: the additional phase contributed by an integral lift change is
+$\rho_1\bar z_2\bar n_p/2$.
+
+The distinction between input pullbacks and derived differentials on the cylinder is essential. A degenerate projected simplex kills an original normalized input; it does not kill every derivative evaluated on the full cylinder simplex. The finite rules in Section~\ref{subsec:prism-rule} are used before any projection-based simplification.
+
+\subsection{The lower group law and its exchange homotopies}
+In four dimensions the integer twister \eqref{eq:4d-E4} is bilinear. Thus its lower product is strictly associative, with strict vacuum. Its commutator is the charge coboundary
+\begin{equation}\label{eq:lower-comm4}
+ \lambda_3^{\mathrm{ex}}
+ =-(n_2\cup_1n'_2)_{\rho_1}+\rho_1(n_2\cup_2n'_2),
+ \qquad
+ d_{\rho_1}\lambda_3^{\mathrm{ex}}
+ =\mathcal E_4(n_2,n'_2)-\mathcal E_4(n'_2,n_2).
+\end{equation}
+The analogous three-dimensional lower correction is
+\begin{equation}\label{eq:lower-comm3}
+ \lambda_2^{\mathrm{ex}}
+ =(n_1n'_1)_{\rho_1}+\rho_1(n_1\cup_1n'_1),
+ \qquad
+ d_{\rho_1}\lambda_2^{\mathrm{ex}}
+ =\mathcal E_3(n_1,n'_1)-\mathcal E_3(n'_1,n_1).
+\end{equation}
+These follow from the signed higher-cup identity. They establish equality of lower outputs up to charge gauge; the phase induced by that charge gauge must still be included.
+
+For the four-dimensional complete inverse one may use
+\begin{equation}\label{eq:complete-inverse}
+ \boxed{\begin{aligned}
+ n_2^-&=-n_2,\qquad n_4^-=-n_4+\mathcal E_4(n_2,n_2),\\
+ \nub_5^-&=-\nub_5
+  -\Eb_5(n_2,n_4;n_2^-,n_4^-).
+ \end{aligned}}
+\end{equation}
+The lower product with this inverse is exactly zero, and the source/product identity proves the inverse phase solves its source equation. The complete product is the vacuum in the chosen order; the commutativity argument below gives the other order on equivalence classes.
+
+\subsection{Why the phase product respects all lower gauges}
+The source and twister are normalized natural cochains on the lower-data spaces. Their evaluation commutes with pullback to a cylinder. Apply \eqref{eq:E5derivative} while one or both inputs follow their full gauge cylinders. The signed Stokes identity says that the difference between first changing a representative and first multiplying is a phase coboundary after the induced lower product path is included. Thus multiplication is well-defined on the joint equivalence relation, including charge-completion changes, not just changes of leading sheet classes.
+
+\subsection{Associativity on equivalence classes}
+For this proof only, $a,b,c$ denote complete lower tuples and $\mu$ denotes the lower product already defined in \eqref{eq:4d-output}. Let $\mathscr X\to\mathscr B$ classify lower solutions over their shared symmetry background. Over the trivial background its fiber is
+\begin{equation}\label{eq:lowerfiber}
+ \mathscr F=K(\mathbb Z,2)\times K(\mathbb Z,4).
+\end{equation}
+The notation $K(A,j)$ means the space which universally records a closed degree-$j$ cochain of coefficient $A$. It introduces no new physical field.
+
+The phase associator defect is
+\begin{equation}\label{eq:assocdef4}
+ \mathfrak a_5(a,b,c)
+ =\Eb_5(a,b)+\Eb_5(\mu(a,b),c)
+  -\Eb_5(b,c)-\Eb_5(a,\mu(b,c)).
+\end{equation}
+It is closed because the lower product is strictly associative and \eqref{eq:E5derivative} holds. It vanishes whenever an input is the vacuum. Hence it defines a relative class on the three-input fiber product, relative to the union of vacuum-input loci.
+
+The relative fiber is $\mathscr F\wedge\mathscr F\wedge\mathscr F$. Each nontrivial input starts in degree two, so its first reduced homology can occur only in degree six. The relative Serre sequence has no total-degree-five entry. Therefore
+\begin{equation}\label{eq:assocvanish}
+ \mathfrak a_5=d_{s_1}\mathcal A_4
+\end{equation}
+for a normalized natural cochain. The degree-four ambiguity is removed by the same connectivity argument. This proves associativity on gauge classes. It is an existence proof for this higher witness; the coefficient atlas does not pretend to contain an uncomputed short polynomial for $\mathcal A_4$.
+
+\subsection{Commutativity and its one possible obstruction}\label{subsec:comm4}
+Let the charge of the reversed lower product be
+$n_{4,\mathrm{rev}}=n_4+n'_4+\mathcal E_4(n'_2,n_2)$.
+The actual terminal commutator is
+\begin{equation}\label{eq:commdef4}
+ \mathfrak c_5(a,b)
+ =\Eb_5(a,b)-\Eb_5(b,a)
+   -\widehat G^c_5(\lambda_3^{\mathrm{ex}};n_{4,\mathrm{rev}}).
+\end{equation}
+It is closed and vacuum-normalized. Omitting the gauge term would test the wrong operation.
+
+For two inputs the relative fiber is $\mathscr F\wedge\mathscr F$, whose reduced homology through degree five is $H_4=\mathbb Z$, $H_5=0$. The two sheet signs cancel on the degree-four generator. Thus the only possible relative phase class is the order-two direction in
+$H^1(\mathscr B;\mathbb R/\mathbb Z_{s_1})$, represented by
+$\rho_1\bar n_2\bar n'_2/2$.
+The extension component has no fundamental-group contribution. A crossed homomorphism sends the charge-conjugation generator to $0$ or $1/2$; its unrestricted antiunitary-generator value is removed by a phase coboundary. There are no relevant relative differentials in this degree.
+
+An exact detector uses the two sphere sheet cocycles on
+$S^1_{\rho_1}\times S^2\times S^2$, with $s_1=\omega_2=0$ and both input charges zero. Each sphere is the oriented boundary of a tetrahedron, with unit integral cocycle on face $123$. There are $16\cdot30=480$ signed five-simplices. Evaluation of the complete kernels and gauge gives
+\begin{equation}\label{eq:commperiod}
+ \langle\mathfrak c_5,[S^1\times S^2\times S^2]\rangle=0\pmod1.
+\end{equation}
+Six local values are $1/2$, the other 474 are zero, and the oriented sum is integral. The possible nonzero class would have period $1/2$. Its coefficient therefore vanishes. This detects the commutator class, not every possible deformation of the product.
+
+\begin{theorem}[Abelian group of complete states]\label{thm:abelian}
+For the natural cochain model and coefficient assumptions specified here, complete $4+1$D solutions modulo joint cylinder and phase-coboundary equivalence form an Abelian group under \eqref{eq:4d-output} and \eqref{eq:4d-E5}.
+\end{theorem}
+\begin{proof}
+The product preserves solutions, respects cylinder equivalences, and has a strict vacuum. The relative arguments above prove associativity and commutativity on classes. Equation~\eqref{eq:complete-inverse} supplies a complete inverse. The calibrated sheet-linear source term has zero polarization and no pure-charge gauge correction, so it changes neither defect in this proof.
+\end{proof}
+
+\subsection{The three-dimensional group and dimensional compatibility}\label{subsec:loopgroup}
+The one-parameter fields in \eqref{eq:parameter-fields} identify the lower $3+1$D tower with the fiberwise loop of the $4+1$D tower. Over the trivial background they induce
+$K(\mathbb Z,1)\times K(\mathbb Z,3)
+\to\Omega[K(\mathbb Z,2)\times K(\mathbb Z,4)]$,
+an isomorphism on the two relevant homotopy groups. Transgressing the calibrated source also identifies the phase stage. The parameter triangle compares loop concatenation with the loop of the lower product. Pointwise multiplication and concatenation obey interchange up to homotopy, so they coincide and commute on homotopy classes. This gives an Abelian group in the canonical three-dimensional coordinates, with the explicit associator \eqref{eq:3d-associator}.
+
+This is a group-level statement for the specified model. It is not an identification of every microscopic parity phase convention, nor a printed infinite hierarchy of symmetric homotopies.
+
+\subsection{Reading the AHSS and recovering the full group}\label{sec:AHSS}
+The cochain differential $d_\chi$ is distinct from a spectral-sequence differential $d_r$. In the charge-conserving coefficient tower, the relevant layers are integer CI ($q=3$), an empty layer ($q=2$), integer charge ($q=1$), and phase ($q=0$). The nontrivial operations represented by the dimensional formulas are
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}\toprule
+Operation & Source and target & Required representative\\\midrule
+$d_3^{p,3}$ & CI degree $p$ to charge degree $p+3$ & Integer $\mathcal O_{p+3}$\\
+$d_4^{p,3}$ & Surviving CI to phase degree $p+4$ & Complete $\Ob_{p+4}$ and a charge completion\\
+$d_2^{d,1}$ & Closed charge degree $d$ to phase degree $d+2$ & \eqref{eq:CF-source} on closed charge\\\bottomrule
+\end{tabularx}
+\end{center}
+Here $p=0,1,2$ is interpreted in the appropriate physical dimension. A target in the empty coefficient layer is genuinely zero; an operation not constructed is never installed as zero. The secondary target is the quotient after allowed lower changes, not an unrestricted phase cohomology group.
+
+To recover the stacking group, choose \emph{complete} roots, including their phase completions. Multiply the actual roots as often as their leading order requires. Remove exact lower decorations using the full joint gauges, retaining every induced charge and phase, and record the resulting lower-root relation. Include incoming relations from closed gauge parameters, then compute the Smith normal form of the full relation matrix. An integer charge layer can have arbitrary torsion orders, so self-squares alone are not a universal substitute for the required root powers. Equal abstract group orders do not establish equality of filtrations or of distinguished physical roots.

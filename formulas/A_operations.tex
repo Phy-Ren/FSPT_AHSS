@@ -1,0 +1,98 @@
+\section{May--Steenrod words and exact local evaluation}\label{app:operations}\label{app:ops}
+\subsection{Interval cuts and signed higher cups}
+Let $w=(w_1,\ldots,w_L)$ be a word on $k$ labels and let its inputs have degrees $q_1,\ldots,q_k$. Put $D=\sum q_j-L+k$. On an ordered $D$-simplex, sum over
+\begin{equation}
+0=i_0\le i_1\le\cdots\le i_L=D.
+\end{equation}
+Assign the interval $(i_{\ell-1},\ldots,i_\ell)$ to input $w_\ell$ and concatenate intervals in their original order. Retain a cut only when input $j$ receives exactly $q_j+1$ distinct increasing vertices. A repeated vertex is a degenerate evaluation and contributes zero; it is not deleted. The binary word operation is the sum of the products of input values on the retained faces.
+
+For $\cup_i$, the word is the alternating two-label word of length $i+2$, starting with label 1. The sign of an integral cut is the convention in Ref.~\cite{Project4}. Call an interval inner if its label occurs again later. Set
+\begin{equation}
+\lambda_\ell=i_\ell-i_{\ell-1}+\begin{cases}1,&\text{inner},\\0,&\text{final}.
+\end{cases}
+\end{equation}
+For input degrees $p,q$, multiply the face product by
+\begin{equation}
+(-1)^{i(p+q)+\binom i2+
+\sum_{\ell\text{ inner}}i_\ell+
+\sum_{\ell<m,\ w_\ell>w_m}\lambda_\ell\lambda_m}.
+\end{equation}
+Finally transport each input face from its first vertex to the first vertex of the full simplex using its own sign local system. With trivial local systems this gives
+\begin{equation}
+(x_2\cup_1y_2)(0123)=x_2(023)y_2(012)-x_2(013)y_2(123).
+\end{equation}
+The rule applies unchanged to the product simplices used in the source and product formulas. Pullbacks vanish when their base projection has repeated vertices.
+
+
+\subsection{The native Cartan words}
+The following five operations are defined by the indicated words on $(x_p,x_p,y_q,y_q)$:
+\begin{center}
+\begin{tabular}{lll}\toprule
+Operation & Word & Four input degrees\\\midrule
+$\zeta_{2,1}(x_2,y_1)$ & $123134$ & $(2,2,1,1)$\\
+$\zeta_{1,3}(x_1,y_3)$ & $1231434$ & $(1,1,3,3)$\\
+$\zeta_{1,4}(x_1,y_4)$ & $12314343$ & $(1,1,4,4)$\\
+$\zeta_{2,2}(x_2,y_2)$ & $1231343$ & $(2,2,2,2)$\\
+$\zeta_{2,3}(x_2,y_3)$ & $12313434$ & $(2,2,3,3)$\\\bottomrule
+\end{tabular}
+\end{center}
+Their Cartan differential is
+\begin{equation}\label{eq:native-Cartan}
+ d\zeta_{p,q}(x_p,y_q)
+ =\Sq^2(x_py_q)+(\Sq^2x_p)y_q
+  +(\Sq^1x_p)(\Sq^1y_q)+x_p\Sq^2y_q.
+\end{equation}
+This identity is used for the listed degrees, with the instability zeros retained. For an explicit cut example, $\zeta_{1,3}$ has four nonzero cuts on $012345$:
+\begin{align}\label{eq:four-Cartan-cuts}
+\zeta_{1,3}(x_1,y_3)(012345)={}&x_{01}^2y_{1234}y_{1245}
++x_{01}^2y_{1345}y_{1235}\nonumber\\
+&+x_{02}x_{01}y_{1234}y_{2345}
++x_{02}x_{01}y_{1245}y_{2345}.
+\end{align}
+In this single face expansion, the subscripts on $x$ and $y$ are vertex lists. All values are binary. The repeated same-degree arguments of $\zeta_{2,2}(x_2,x_2)$ are still four labelled inputs before evaluation; no commutation of the ordered factors is implicit.
+
+\subsection{Reversed Cartan operations: no new coefficient tables}
+The operations with their factors reversed are defined directly by the native words and higher cups:
+\begin{align}\label{eq:zeta31}
+\zeta_{3,1}(x_3,y_1)={}&\zeta_{1,3}(y_1,x_3)
+ +\Sq^2(x_3\cup_1y_1)
+ +(y_1x_3)\cup_3d(x_3\cup_1y_1)\nonumber\\
+&+(\Sq^1y_1)\cup_1(\Sq^1x_3)+y_1\cup_1\Sq^2x_3,\\[2pt]
+\zeta_{3,2}(x_3,y_2)={}&\zeta_{2,3}(y_2,x_3)
+ +\Sq^2(y_2\cup_1x_3)
+ +(x_3y_2)\cup_4d(y_2\cup_1x_3)\nonumber\\
+&+x_3\cup_1\Sq^2y_2+y_2\cup_1\Sq^2x_3
+ +(\Sq^1x_3)\cup_1(\Sq^1y_2),\label{eq:zeta32}\\[2pt]
+\zeta_{1,2}(x_1,y_2)={}&\zeta_{2,1}(y_2,x_1)
+ +\Sq^2(y_2\cup_1x_1)
+ +(x_1y_2)\cup_2d(y_2\cup_1x_1)\nonumber\\
+&+(\Sq^1x_1)\cup_1(\Sq^1y_2)+x_1\cup_1\Sq^2y_2.
+\label{eq:zeta12}
+\end{align}
+Every square on a cup-one expression is an open square. To verify the reversal, use a closed binary $u_m$ and an arbitrary $h_{m-1}$:
+\begin{equation}\label{eq:reverse-Cartan-proof}
+ \Sq^2(u_m+dh_{m-1})+\Sq^2u_m
+ =d\big[\Sq^2h_{m-1}+u_m\cup_{m-1}dh_{m-1}\big].
+\end{equation}
+Take $h$ to be the cup-one commutation homotopy for the desired ordered product. The remaining cup-one terms in \eqref{eq:zeta31}--\eqref{eq:zeta12} reorder the other Cartan summands. This derives the operations; it does not choose a primitive by an unrecorded linear solve.
+
+\subsection{Carries and their coefficient signs}
+For an integral $\chi$-twisted cocycle $f$, write $f=\bar f+2\lfloor f/2\rfloor$. Its integral differential implies
+\begin{equation}\label{eq:carry-identity}
+ d\widetilde f=\Sq^1\bar f+\chi\bar f.
+\end{equation}
+The equality uses the canonical low-degree Bockstein representatives fixed by the supplied drafts and checked by the interval-cut implementation. It applies to the degrees used by the integral-Cartan operation. In particular the integer square $n_2^2$ has ordinary coefficients, so the last term of \eqref{eq:carry-identity} is absent for that square. The square is formed over the integers before its second digit is extracted. The full integer floor, rather than only this digit, remains necessary in the circle carry of Section~\ref{sec:parity}.
+
+\subsection{The local phase identity used in the source derivation}
+The stored values of $s_1$ form a cocycle with coefficient sign $s_1$, but need not be closed after retyping them with sign $\rho_1+s_1$. Direct substitution gives
+\begin{equation}\label{eq:s1-retyping}
+ d_{\rho_1+s_1}(s_1)_{\rho_1+s_1}
+ =-2\,[\rho_1(1-2s_1)]\cup s_1,
+\end{equation}
+where the square bracket is a pointwise integer function on the first edge. For an arbitrary charge cochain $n_d$, signed Leibniz then gives
+\begin{equation}\label{eq:phase-shift-general}
+ d_{s_1}\left[\frac14(s_1)_{\rho_1+s_1}n_d\right]
+ =\frac12\rho_1s_1\bar n_d
+ -\frac14(s_1)_{\rho_1+s_1}d_{\rho_1}n_d\pmod1.
+\end{equation}
+This explains the quarter-valued obstruction term in the dimensional formulas. It must use the actual prescribed derivative of $n_d$; treating charge as closed at this step would discard it.

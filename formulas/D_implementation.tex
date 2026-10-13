@@ -1,0 +1,48 @@
+\section{Implementation dictionary and certificate coverage}\label{app:implementation}
+\subsection{Reader symbols and preserved engine arguments}
+The implementation dictionary is the only place where historical short names are treated as aliases. They are not used as additional mathematical notation in the reference.
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lllX@{}}\toprule
+Reader object & Public argument & Private name & Meaning\\\midrule
+$\omega_2^{\mathbb R}$ & \texttt{omega2\_real} & \texttt{a} & Unshifted real extension lift\\
+$s_1$ & \texttt{s1} & \texttt{s} & Antiunitary character\\
+$\rho_1$ & \texttt{rho1} & \texttt{r} & Charge-conjugation character on $Q$\\
+$\rho_1+s_1$ & no alias & \texttt{t} & Circle automorphism and extension coefficient sign\\
+$\check\omega_2^{\mathbb R}$ & derived & \texttt{A} & Shifted lift\\
+$B_3$ & derived & \texttt{B} & Integer differential of the shifted lift\\
+$n_2,n'_2$ in $4+1$D & \texttt{n2,n2\_prime} & \texttt{k,l} & Integer CI inputs\\
+$n_4,n'_4$ in $4+1$D & \texttt{n4,n4\_prime} & \texttt{n,m} & Integer charge completions\\
+$n_1,n_3$ in $3+1$D & \texttt{n1,n3} & \texttt{k,n} & Dimension-specific CI and charge fields\\\bottomrule
+\end{tabularx}
+\end{center}
+The private notation comes from frozen verified evaluators. It is intentionally not propagated back into the reader's equations. Public source and product functions return exact cochain objects; no floating-point phases are introduced.
+
+\subsection{The integral-Cartan consolidation}
+The single definition \eqref{eq:integral-Cartan} specializes to the four old occurrences as follows:
+\begin{center}
+\begin{tabular}{lll}\toprule
+Current expression & Private evaluator & Output degree\\\midrule
+$\zeta^{\mathbb Z}_{3,1}(B_3,n_1)$ & \texttt{H31} & 5\\
+$\zeta^{\mathbb Z}_{3,2}(B_3,n_2)$ & \texttt{H32} & 6\\
+$\zeta^{\mathbb Z}_{2,2}(n_2,n_2)$ & diagonal part of \texttt{Jr6} & 5\\
+$\zeta^{\mathbb Z}_{2,2}(n_2,n'_2)$ & \texttt{H22} & 5\\\bottomrule
+\end{tabular}
+\end{center}
+The grouping is exact at cochain level. It removes four competing auxiliary names from the main formulas without discarding their carries or ordering corrections. The new structural regression checks evaluate the common definition and the old expressions independently. No higher-degree extension of this operation is assumed without a corresponding Cartan representative and proof.
+
+\subsection{What the supplied checks establish}
+The preserved suites cover the following distinct tasks:
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lX@{}}\toprule
+Suite & Certificate scope\\\midrule
+\texttt{checks} & Universal polynomial identities for the finite kernels; exact local source/product and gauge tests; parity source map; commutator cycle; normalization restrictions.\\[2pt]
+\texttt{checks\_v04} & The four source-deformation classes, complete finite parity calibration, open-charge bridge, representative changes and the adopted calibrated wrapper.\\[2pt]
+\texttt{checks\_v05} & Exact Bockstein matrices, modular linear solver, finite-dyadic source/pair quotient computations, signed product period and circle carries.\\[2pt]
+\texttt{checks\_v06} & Complete physical $C_2$ roots and incoming quotients, structured-manifold characteristic checks, and Chern-character polynomial identities.\\[2pt]
+\texttt{tests} & Editorial regression: current public API, integral-Cartan consolidation, cubic-polarizer regrouping, calibrated convention selection, and unchanged coefficient tables.\\\bottomrule
+\end{tabularx}
+\end{center}
+An exact polynomial identity is different from a finite set of sampled simplex inputs. Both are valuable, but their scopes are recorded separately. Similarly, an exact algebraic period on a universal pair cycle is not automatically a physical bordism evaluation; the structured $\mathbb{RP}^5$ test is justified geometrically in Section~\ref{subsec:decisive-bordism}. The topology used to identify the universal cohomology model is proved in the text rather than inferred from the rank program.
+
+\subsection{Connection to the AHSS repository}
+The public AHSS repository supplies the notational pattern: degree-indexed decoration fields, actual output decorations, additive hatted obstructions and twisters, fixed higher-cup/MS-word conventions, and paired source/product transport. Its existing parity formula registry is not an implementation of the present insulator theory. This package supplies its own registry and a dictionary to the preserved exact evaluators. No unsupported claim of a repository merge, a new GAP backend, or a fresh space-group computation is made.

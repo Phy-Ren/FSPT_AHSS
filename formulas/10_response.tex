@@ -1,0 +1,57 @@
+\section{Characteristic classes and response interpretation}\label{sec:response}
+The cochain formulas have a simpler characteristic-class organization in the zero-background limit. This section explains that structure and states the precise limits of the comparison. It does not identify the interacting theory with free-fermion $K$-theory, and it does not add an intrinsic response sector to the CI model.
+\subsection{Whitney sum and the Chern-character structure}
+There is a useful, limited algebraic interpretation of several formulas that otherwise look unrelated. For a virtual complex bundle $V$, make the following formal identification of characteristic classes (not cochain equalities):
+\begin{equation}
+ c(V)=1+{n_2}+{n_4}+u+\cdots,
+\end{equation}
+where ${n_2}=c_1(V)$, ${n_4}=c_2(V)$ and $u=c_3(V)$. The Whitney product gives
+\begin{equation}\label{eq:Whitney06}
+ ({n_2},{n_4},u)+({n'_2},{n'_4},v)=({n_2}+{n'_2},\ {n_4}+{n'_4}+{n_2}{n'_2},\ u+v+{n_2}{n'_4}+{n_4}{n'_2}).
+\end{equation}
+In particular the zero-background charge twister $\mathcal E_4={n_2}{n'_2}$ is exactly the familiar cross term in $c_2$, not an arbitrary nonlinear addition.
+
+Consider the operation on virtual bundles
+\begin{equation}
+                 V\longmapsto(-1)^{\rho_1}\overline V^{\,({\rho_1}+{s_1})},
+\end{equation}
+where the bar is applied only when its exponent is one and a minus sign means additive inverse in the virtual-bundle group, not tensoring by a negative-rank vector space. Expanding $c(-V)=c(V)^{-1}$ shows
+\begin{align}\label{eq:virtual-action06}
+ {n_2}&\longmapsto(-1)^{s_1} {n_2},\\
+ {n_4}&\longmapsto(-1)^{\rho_1} {n_4}+{\rho_1}{n_2}^2,\\
+ u&\longmapsto(-1)^{s_1}\big[u+{\rho_1}({n_2}^3-2{n_2}{n_4})\big].
+\end{align}
+This reproduces the coefficient signs of the CI and charge layers, and explains why charge conjugation permits the quadratic term ${\rho_1}{n_2}^2$ in the integer obstruction. It is an exact calculation on characteristic classes. The local higher-cup and extension-$B_3$ refinements still have to be supplied by the actual cochain construction.
+
+The third Chern character is
+\begin{equation}
+               \operatorname{ch}_3(V)=\frac16{n_2}^3-\frac12{n_2}{n_4}+\frac12u.
+\end{equation}
+By the splitting principle and the Cartan formula,
+\begin{equation}
+                    \bar u=\Sq^2\bar {n_4}+\bar {n_2}\bar {n_4}.
+\end{equation}
+For completeness, if the integral Chern roots are $x_i$, then
+$\Sq^2\sum_{i<j}\bar x_i\bar x_j=
+\sum_{i<j}(\bar x_i^2\bar x_j+\bar x_i\bar x_j^2)$,
+while $\bar c_1\bar c_2$ is that sum plus $\bar c_3$. Thus
+\begin{equation}\label{eq:Newton06}
+           \operatorname{ch}_3(V)
+                  \equiv\frac16{n_2}^3+\frac12\Sq^2\bar {n_4}\pmod1.
+\end{equation}
+This is precisely the zero-background class of the calibrated six-cochain. The same polynomial transforms with sign ${s_1}$ and is additive under Eq.~\eqref{eq:Whitney06}. These identities are checked independently as exact rational and mod-two polynomial identities in the companion program.
+
+This viewpoint gives a compact explanation of the cubic normalization, the integer cross term, and their signs. It does \emph{not} identify the full interacting theory with free-fermion K-theory. Nor is $\operatorname{ch}_3$ by itself the full Spin$^c$ index density: the gravitational and determinant-line terms must be included in a physical response. Neutral invertible phases and torsion information remain essential. We use this observation as an organizing check, not as a substitute for the missing terminal parity comparison.
+
+
+\subsection{The rational Spin\texorpdfstring{$^c$}{c} index comparison}
+There is a useful rational comparison. On an oriented background with ${s_1}={\rho_1}=0$, temporarily replace the cup products by products of closed characteristic forms and write $\check\omega_2^{\mathbb R}=c/2$. The displayed rational CI polynomial with its fixed coefficient is
+\begin{equation}\label{eq:rational-index}
+\frac{{n_2}^3}{6}-\frac{c {n_2}^2}{4}+\frac{c^2{n_2}}{8}.
+\end{equation}
+Adding the gravitational term $-{n_2} p_1/24$ gives
+\begin{equation}
+-\left[\widehat A(TY)e^{c/2}(e^{-{n_2}}-1)\right]_6
+=\frac{{n_2}^3}{6}-\frac{c {n_2}^2}{4}+\frac{c^2{n_2}}{8}-\frac{{n_2} p_1}{24}.
+\end{equation}
+This is an elementary expansion of the indicated index density and explains the selected $1/6$ coefficient in this orientation convention. It does not fix all torsion cochains or the antiunitary normalization. Nor is the gravitational term silently present in Eq.~\eqref{eq:4d-O6}; a physical continuous-background comparison must retain it explicitly. The supplied $4+1$D parity draft likewise separates its cubic coefficient and gravitational calibration from the closure equations \cite{Project4}.

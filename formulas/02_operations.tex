@@ -1,0 +1,129 @@
+\section{The cochain structures used by every formula}\label{sec:operations}
+This section separates operations from physical fields. The same few operations carry the complexity of all three dimensions: ordered higher cups, the open Gu--Wen quadratic term, an integral Cartan correction, and the signed parameter-simplex sum. Generic arguments such as $x_p$ and $y_q$ in operation definitions are arbitrary cochains of the displayed degrees, not aliases for symmetry backgrounds.
+
+\subsection{Local coefficients, ordered products, and integer arithmetic}
+For a normalized inhomogeneous $p$-cochain of sign $\chi$, use
+\begin{align}\label{eq:differential}
+ (d_\chi f)(g_1,\ldots,g_{p+1})={}&(-1)^{\chi(g_1)}f(g_2,\ldots,g_{p+1})\nonumber\\
+ &+\sum_{j=1}^p(-1)^j f(g_1,\ldots,g_jg_{j+1},\ldots,g_{p+1})
+ +(-1)^{p+1}f(g_1,\ldots,g_p).
+\end{align}
+On mod-two cochains the sign is invisible and we write $d$. The sign of a product is the sum of the signs of its factors. Each factor is transported from its own first vertex, not using the output sign as a substitute. For example
+\begin{equation}\label{eq:transport-example}
+ (\omega_2^{\mathbb R}\cup n_3)(g,h,k,l,m)
+ =\omega_2^{\mathbb R}(g,h)(-1)^{\rho_1(gh)}n_3(k,l,m).
+\end{equation}
+Juxtaposition always means the ordered cup $\cup=\cup_0$; cup powers are ordered powers. When an already constructed integer array is deliberately assigned another sign, $(f)_\chi$ means its same numerical values with the new differential and transport. Retyping is explicit and is not an isomorphism of coefficient modules.
+
+A bar and a tilde have the repository meanings
+\begin{equation}\label{eq:digits}
+ \bar f=f\bmod2,\qquad \widetilde f=\overline{\lfloor f/2\rfloor}.
+\end{equation}
+Floors are mathematical floors also for negative inputs. A named binary cochain has its implicit $0,1$ integer lift. A compound binary expression is reduced as a whole before that lift; its bar is kept when the reduction boundary matters. Half-valued phase brackets are computed over $\mathbb F_2$ first. Quarter-, eighth-, and sixteenth-valued numerators retain the displayed signed integer arithmetic until the final reduction modulo one. Real-lift products use $\omega_2^{\mathbb R}$, never the product of two arbitrary $\mathbb R/\mathbb Z$ representatives.
+
+For a binary cocycle $x_p$, and for a possibly open binary cochain $x_p$, respectively, define
+\begin{equation}\label{eq:bocksteins}
+ \beta_\chi x_p=\frac{d_\chi x_p}{2},\qquad
+ \beta_\chi^\circ x_p=\frac{d_\chi x_p-\overline{d_\chi x_p}}{2}.
+\end{equation}
+The numerators use integer differentials. The first expression assumes binary closure. The canonical plus carry is $(\beta x_p+\overline{\beta x_p})/2$ where used in the parity formula. A real phase extension instead has connecting cochain $d_{\rho_1+s_1}\omega_2^{\mathbb R}$ with no division by two.
+
+\subsection{Higher cups, words, and open squares}
+The finite interval-cut definition, including all integral signs, is in Appendix~\ref{app:ops}. With that convention, for degrees $p,q$,
+\begin{align}\label{eq:cup-id}
+ d(x_p\cup_i y_q)={}&dx_p\cup_i y_q+(-1)^p x_p\cup_i dy_q\nonumber\\
+ &+(-1)^{p+q-i}x_p\cup_{i-1}y_q
+ +(-1)^{pq+p+q}y_q\cup_{i-1}x_p.
+\end{align}
+Every differential has the coefficient system appropriate to its argument. The open Steenrod representative is
+\begin{equation}\label{eq:open-square}
+ \boxed{\Sq^{j}x_p=x_p\cup_{p-j}x_p+x_p\cup_{p-j+1}dx_p.}
+\end{equation}
+Negative or degree-impossible higher cups vanish in the interval-cut definition. The second term is retained even when a lower equation later identifies $dx_p$ with a known source.
+
+\subsection{One charge block and its polarization}\label{subsec:CFblocks}
+For an integer degree-$d$ charge cochain, define the following open operations once:
+\begin{align}
+ \Ob^c_{d+2}(n_d)
+ &=\omega_2^{\mathbb R}\cup n_d+\frac12\Sq^2\bar n_d,
+ \label{eq:CF-source}\\
+ \Eb^c_{d+1}(n_d,n'_d)
+ &=\frac12\left[\bar n_d\cup_{d-1}\bar n'_d
+                 +d\bar n_d\cup_d\bar n'_d\right].
+ \label{eq:CF-product}
+\end{align}
+Both have phase sign $s_1$. The superscript $c$ identifies the charge/fermion-exchange block in the open-square coordinate, not an assertion that every term is separately closed. Their two essential identities are
+\begin{align}
+ d_{s_1}\Ob^c_{d+2}(n_d)
+ &=\omega_2\cup d_{\rho_1}n_d
+   +\frac12\Sq^2\overline{d_{\rho_1}n_d},\label{eq:CF-residual}\\
+ d_{s_1}\Eb^c_{d+1}(n_d,n'_d)
+ &=\frac12\left[\Sq^2(\bar n_d+\bar n'_d)
+ -\Sq^2\bar n_d-\Sq^2\bar n'_d
+ +d\bar n_d\cup_d d\bar n'_d\right].\label{eq:CF-polarization}
+\end{align}
+The latter formula explains why a closed-charge product cannot simply be reused after a CI layer makes the charge open. When $n_d$ changes by $d_{\rho_1}u_{d-1}$, a charge-only phase gauge is
+\begin{equation}\label{eq:CF-gauge}
+ \widehat G^c_{d+1}(u_{d-1};n_d)
+ =\omega_2^{\mathbb R}u_{d-1}
+  +\frac12\Sq^2\bar u_{d-1}
+  +\Eb^c_{d+1}(n_d,d_{\rho_1}u_{d-1}).
+\end{equation}
+In particular, a closed $u_{d-1}$ gives the incoming phase identification. Every occurrence of these blocks below refers to these definitions, with the actual open inputs.
+
+\subsection{The repeated extension quadratic cochain}
+For a real two-cochain $x_2$ of sign $\chi$ with integral differential, use the repository-style quadratic operation
+\begin{equation}\label{eq:extension-P}
+ \mathcal P_\chi(x_2)=x_2\cup x_2+x_2\cup_1d_\chi x_2,
+ \qquad
+ d\mathcal P_\chi(x_2)=2x_2\cup d_\chi x_2
+                         +d_\chi x_2\cup_1d_\chi x_2.
+\end{equation}
+Its output has ordinary coefficients. The definition records its real/integer value, not merely a Pontryagin-square class. It is used below with $x_2=\check\omega_2^{\mathbb R}$ and $\chi=\rho_1+s_1$.
+
+\subsection{A single integral Cartan correction}\label{subsec:integral-Cartan}
+The several carry-assisted Cartan expressions that occur in the dimensional derivations are instances of one operation. Let $x_p\in Z^p(X,\mathbb Z_\chi)$ and $y_q\in Z^q(X,\mathbb Z_\psi)$. For the degree pairs
+\[
+ (p,q)=(3,1),\ (3,2),\ (2,2),
+\]
+define
+\begin{equation}\label{eq:integral-Cartan}
+ \boxed{\begin{aligned}
+ \zeta^{\mathbb Z}_{p,q}(x_p,y_q)
+ ={}&\zeta_{p,q}(\bar x_p,\bar y_q)
+ +\widetilde x_p\,\Sq^1\bar y_q
+ +(\chi\bar x_p)\widetilde y_q
+ +\chi(\bar x_p\cup_1\psi)\bar y_q.
+ \end{aligned}}
+\end{equation}
+It is a binary cochain of degree $p+q+1$. Its sign arguments are the declared types of the inputs, not extra physical fields. The native MS words and the reversed Cartan representatives are fully defined in Appendix~\ref{app:ops}.
+
+The defining expression satisfies
+\begin{equation}\label{eq:integral-Cartan-identity}
+ \begin{aligned}
+ d\zeta^{\mathbb Z}_{p,q}(x_p,y_q)
+ ={}&\Sq^2(\bar x_p\bar y_q)
+ +(\Sq^2\bar x_p)\bar y_q
+ +\bar x_p\Sq^2\bar y_q
+ +(\chi\psi)\bar x_p\bar y_q.
+ \end{aligned}
+\end{equation}
+\begin{proof}
+The ordinary Cartan cochain leaves the additional product
+$(\Sq^1\bar x_p)(\Sq^1\bar y_q)$. The signed integral lifts give
+$d\widetilde x_p=\Sq^1\bar x_p+\chi\bar x_p$ and
+$d\widetilde y_q=\Sq^1\bar y_q+\psi\bar y_q$.
+The second and third terms in \eqref{eq:integral-Cartan} replace that Bockstein product by
+$(\chi\bar x_p)(\psi\bar y_q)$. The final cup-one correction puts the two sign characters first, giving the last term of \eqref{eq:integral-Cartan-identity}.
+\end{proof}
+The CI derivation uses its $(3,1)$, $(3,2)$, diagonal $(2,2)$ and two-input $(2,2)$ evaluations. All four have the same carry-assisted Cartan mechanism. Their exact implementation dictionary is in Appendix~\ref{app:implementation}; no claim for arbitrary new degree pairs is inferred from the notation.
+
+\subsection{Parameter-simplex integration}\label{subsec:prism-rule}
+For a cochain on $\Delta^m\times X$, $\mathcal I_m$ denotes the parameter-first signed shuffle sum. On a base $q$-simplex, enumerate paths from $(0,0)$ to $(m,q)$ with unit steps in one coordinate. Give each path sign $(-1)^\epsilon$, where $\epsilon$ counts base steps preceding parameter steps. Pull each original input back with its own local system; a degenerate projection kills that input, not necessarily a derivative formed afterwards. Then evaluate the specified cochain on the resulting ordered $(m+q)$-simplex and sum.
+
+With these signs,
+\begin{equation}\label{eq:Stokes}
+ d\mathcal I_mF=(-1)^m\mathcal I_m dF
+ +(-1)^{m+1}\sum_{j=0}^{m}(-1)^j\mathcal I_{m-1}(F|_{\partial_j\Delta^m}).
+\end{equation}
+Interior faces of adjacent shuffled simplices cancel pairwise; the remaining faces give the parameter and base boundaries. Backgrounds are pulled from the base, so the same identity holds with the phase twist. The parameter fields themselves must still be specified: an integration sign is never permission to choose an unknown primitive.

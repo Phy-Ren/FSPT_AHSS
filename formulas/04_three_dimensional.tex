@@ -1,0 +1,114 @@
+\section{\texorpdfstring{$3+1$}{3+1} dimensions: domain-wall Chern decoration}\label{sec:3d}
+The state is $(n_1,n_3,\nub_4)$. The integer sheet number has sign $s_1$, the integer charge has sign $\rho_1$, and the phase has sign $s_1$. The terminal source and product are defined together by a finite parameter construction. Its computational parent is the explicit $4+1$D source in Section~\ref{sec:4d}; this one forward reference avoids introducing an alternative unpaired three-dimensional source.
+
+\subsection{The lower equations and the charge twister}
+\begin{equation}\label{eq:3d-lower}
+ \boxed{d_{s_1}n_1=0,\qquad d_{\rho_1}n_3=\mathcal O_4,
+ \qquad\mathcal O_4=-B_3\cup n_1.}
+\end{equation}
+The source is closed over the integers by the signed Leibniz rule. Its linear form includes the antiunitary correction through \eqref{eq:AB}; the carry transformation from the common Bockstein operation is given in Section~\ref{subsec:primary-family}.
+
+The lower output is
+\begin{equation}\label{eq:3d-integer-product}
+ \boxed{\begin{aligned}
+ N_1&=n_1+n'_1,\qquad
+ N_3=n_3+n'_3+\mathcal E_3,\\
+ \mathcal E_3&=-\rho_1\cup(n_1\cup n'_1).
+ \end{aligned}}
+\end{equation}
+The canonical integer character $\rho_1$ is a cocycle of sign $\rho_1$; the product of the two sheet cocycles has ordinary coefficients. Consequently $\mathcal E_3$ is integrally closed. A linear source does not determine this closed twister. Its lower parity comparison and the parameter construction both retain it.
+
+\subsection{The finite parameter fields}\label{subsec:canonical3}
+For $m$ complete lower inputs $(n_1^{(i)},n_3^{(i)})$, pull the inputs and symmetry backgrounds back to $\Delta^m\times X$. The parameter has vertices $0,\ldots,m$. Define
+\begin{equation}\label{eq:parameter-heights}
+ \eta_i(j)=\begin{cases}0&j<i,\\1&j\ge i,\end{cases}
+ \qquad\theta_i=d\eta_i\quad(1\le i\le m).
+\end{equation}
+These are auxiliary parameter cochains with trivial coefficients. The following three quantities are constructed, not additional decoration choices:
+\begin{align}\label{eq:parameter-fields}
+ n_2^{\Delta^m}
+ &=\sum_i\theta_i\cup n_1^{(i)},\nonumber\\
+ \lambda_3^{\Delta^m}
+ &=\sum_{i<j}\Big[(\theta_i\cup_1\theta_j)
+                   (n_1^{(i)}n_1^{(j)})
+   +\theta_i(n_1^{(i)}\cup_1\theta_j)n_1^{(j)}\Big],\nonumber\\
+ n_4^{\Delta^m}
+ &=\sum_i\Big[\theta_i n_3^{(i)}
+               +(B_3\cup_1\theta_i)n_1^{(i)}\Big]
+   +\rho_1\lambda_3^{\Delta^m}\nonumber\\
+ &\quad+d_{\rho_1}\sum_{i<j}
+       [\rho_1\cup_1(\theta_i\cup_1\theta_j)]
+        (n_1^{(i)}n_1^{(j)}).
+\end{align}
+All products here are signed integer cups. The parameter degree raises the physical sheet and charge degrees to the degrees required by the parent source.
+
+\begin{lemma}\label{lem:parameter}
+The fields in \eqref{eq:parameter-fields} solve the parent lower equations on the entire parameter product. On an edge $a\to b$ their restriction is the one-input construction for the grouped data
+\begin{equation}\label{eq:edge-product}
+ n_1^{[a,b]}=\sum_{a<i\le b}n_1^{(i)},\qquad
+ n_3^{[a,b]}=\sum_{a<i\le b}n_3^{(i)}
+       -\sum_{a<i<j\le b}\rho_1n_1^{(i)}n_1^{(j)}.
+\end{equation}
+Grouping adjacent inputs gives the corresponding restriction on every higher face.
+\end{lemma}
+\begin{proof}
+On monotone parameter simplices,
+$d(\theta_i\cup_1\theta_j)=-\theta_i\theta_j$ for $i<j$, and the oppositely ordered parameter product vanishes. The second summand in $\lambda_3^{\Delta^m}$ moves the base field past $\theta_j$; together they give
+$d\lambda_3^{\Delta^m}=(n_2^{\Delta^m})^2$.
+Also $d(B_3\cup_1\theta_i)=-B_3\theta_i-\theta_i B_3$.
+These identities establish the charge equation with its extension and quadratic terms. The last line of \eqref{eq:parameter-fields} is exact and does not affect it.
+
+On an edge traversing both $i$ and $j$, $\theta_i\cup_1\theta_j=\theta$ and the repeated-jump correction vanishes. The remaining pair contribution is
+$\rho_1\theta n_1^{(i)}n_1^{(j)}
++d_{\rho_1}[(\rho_1\cup_1\theta)n_1^{(i)}n_1^{(j)}]
+=-\theta\rho_1n_1^{(i)}n_1^{(j)}$.
+This is the second term of \eqref{eq:edge-product}. The same calculation applies to grouped parameter faces.
+\end{proof}
+
+\subsection{The terminal obstruction and stacking law}
+Use the unique calibrated parent source \eqref{eq:4d-O6}, evaluated on \eqref{eq:parameter-fields}. With the signed sum of Section~\ref{subsec:prism-rule}, set
+\begin{equation}\label{eq:3d-terminal}
+ \boxed{\begin{aligned}
+ d_{s_1}\nub_4&=\Ob_5,
+ &\Ob_5(n_1,n_3)&=\mathcal I_1\Ob_6,\\
+ \Vb_4&=\nub_4+\nub'_4+\Eb_4,
+ &\Eb_4(n_1,n_3;n'_1,n'_3)&=\mathcal I_2\Ob_6.
+ \end{aligned}}
+\end{equation}
+There are six evaluations for the source and fifteen for the twister. These counts specify finite simplex evaluations, not the number of expanded scalar monomials. Every input of every evaluation is fixed above; no group-dependent primitive is selected.
+
+\begin{theorem}\label{thm:canonical}
+The source is twisted closed on \eqref{eq:3d-lower}; the product preserves completed solutions. A specified terminal associator is
+\begin{equation}\label{eq:3d-associator}
+ \mathcal A_3=-\mathcal I_3\Ob_6.
+\end{equation}
+Its differential is the difference of the two phase products with three inputs and the lower output \eqref{eq:3d-integer-product}.
+\end{theorem}
+\begin{proof}
+Apply \eqref{eq:Stokes} with $m=1,2,3$ to the closed parent source. Lemma~\ref{lem:parameter} identifies each boundary restriction with the appropriate complete input or grouped output. The interval yields closure, the triangle yields the source/product equation, and the tetrahedron gives the sign in \eqref{eq:3d-associator}. The lower-face corrections are what make these identities hold for the complete tower rather than the leading sheet alone.
+\end{proof}
+The calibrated sheet-linear parent term is included in these evaluations. It transgresses to the prescribed single-state and sheet-gauge correction, and has zero two-input polarization. It must not be added a second time in an implementation of \eqref{eq:3d-terminal}.
+
+\subsection{Joint sheet and charge equivalence}\label{subsec:gauge3}
+Use $u_0\in C^0(G,\mathbb Z_{s_1})$ and $v_2\in C^2(G,\mathbb Z_{\rho_1})$. The lower endpoint is
+\begin{equation}\label{eq:3d-gauge}
+ \boxed{n_1^{\mathrm g}=n_1+d_{s_1}u_0,\qquad
+ n_3^{\mathrm g}=n_3+B_3u_0+d_{\rho_1}v_2.}
+\end{equation}
+On $I\times X$, with height $\eta(0)=0$, $\eta(1)=1$, define
+\begin{equation}\label{eq:3d-cylinder}
+ n_1^I=n_1+d_{s_1}(\eta u_0),\qquad
+ n_3^I=n_3+B_3(\eta u_0)+d_{\rho_1}(\eta v_2).
+\end{equation}
+These fields obey the lower equations on every cylinder simplex, since
+$d_{\rho_1}(B_3u_0)=-B_3d_{s_1}u_0$. The full phase equivalence is
+\begin{equation}\label{eq:3d-gauge-phase}
+ \widehat G_4=\mathcal I_1\Ob_5(n_1^I,n_3^I),\qquad
+ \nub_4^{\mathrm g}=\nub_4+\widehat G_4+d_{s_1}\lambda_3.
+\end{equation}
+The outer sum has five paths, each using the specified six-evaluation source. Stokes gives its endpoint source difference. In particular, a closed $u_0$ produces an incoming charge identification and a phase together. The phase is not discarded when the leading sheet is removed.
+
+\subsection{Finite-group simplification and the AHSS interpretation}
+For finite unitary $G$, $H^1(G,\mathbb Z)=0$. For finite $G$ with $s_1\ne0$, every signed integer one-cocycle is a multiple of the canonical $s_1$, and $H^1(G,\mathbb Z_{s_1})=\mathbb Z_2$. Infinite affine groups can have additional free classes; the formulas are not restricted to the finite case.
+
+The primary CI differential is the class of \eqref{eq:3d-lower}. The next differential is the class of \eqref{eq:3d-terminal} after all allowed closed charge-completion shifts and incoming identifications. The general rule, coefficient table, and root-power procedure are given once in Section~\ref{sec:AHSS}. The AIII eightfold relation and the AI/AII controls are calculated in Section~\ref{subsec:3d-examples}.

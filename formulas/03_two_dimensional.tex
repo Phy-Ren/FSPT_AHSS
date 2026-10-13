@@ -1,0 +1,50 @@
+\section{\texorpdfstring{$2+1$}{2+1} dimensions: charge decoration and uniform Chern layers}\label{sec:2d}
+The fields are $(n_0,n_2,\nub_3)$ with the coefficient types in Section~\ref{sec:scope}. The relative charge sector and the nonzero-uniform-IQH sector share the equations below, but their physical normalization status is different: the relative sector is fixed by the charge-conserving construction~\cite{WQFCG}; the uniform-IQH source has an explicit parity comparison, while a universal matched physical convention for its full product remains outside the established results.
+
+\subsection{Obstruction equations}
+The complete equations in the retained endpoint convention are
+\begin{align}
+ d_{s_1}n_0&=0,\qquad
+ d_{\rho_1}n_2=\mathcal O_3,
+ &\mathcal O_3&=-n_0\,d_{\rho_1+s_1}\omega_2^{\mathbb R},
+ \label{eq:2d-lower}\\
+ d_{s_1}\nub_3&=\Ob_4,
+ &\Ob_4&=\Ob^c_4(n_2)
+    +\frac{n_0}{2}\mathcal P_{\rho_1+s_1}(\omega_2^{\mathbb R}).
+ \label{eq:2d-O4}
+\end{align}
+An invariant nonzero integer $n_0$ requires $s_1=0$. Charge conjugation is still allowed. If $s_1\ne0$, then $n_0=0$ and the same equations reduce to the relative charge construction. In either case, the charge block means \eqref{eq:CF-source}, including its open-square correction. The full integer $n_2$ enters the extension coupling; its binary residue enters fermionic exchange.
+
+To read the CI obstruction, first test the class of $\mathcal O_3$. Only after choosing an allowed charge completion may one test $[\Ob_4]$, modulo changes of that completion and the incoming phase identifications. A nonzero but exact phase has a valid $\nub_3$ and is not rejected.
+
+\subsection{General stacking and charge gauges}
+The two complete inputs have output
+\begin{align}
+ N_0&=n_0+n'_0,\qquad N_2=n_2+n'_2,\qquad
+ \Vb_3=\nub_3+\nub'_3+\Eb_3,\label{eq:2d-output}\\
+ \boxed{\displaystyle
+ \Eb_3=\Eb^c_3(n_2,n'_2)
+       +\frac{n_0n'_0}{4}\overline{d_{\rho_1+s_1}\omega_2^{\mathbb R}}.}
+ \label{eq:2d-product}
+\end{align}
+The quarter-valued term lifts the entire indicated binary cochain. Its derivative cancels the open-charge polarization residual in \eqref{eq:CF-polarization}; replacing the canonical residue by an arbitrary integer lift changes that term. When $n_0=n'_0=0$, both charge inputs are closed and the second term of the open charge polarizer vanishes as well.
+
+For $u_1\in C^1(G,\mathbb Z_{\rho_1})$, the charge equivalence is
+\begin{equation}\label{eq:2d-gauge}
+ n_2^{\mathrm g}=n_2+d_{\rho_1}u_1,
+ \qquad
+ \nub_3^{\mathrm g}=\nub_3+\widehat G^c_3(u_1;n_2)+d_{s_1}\lambda_2.
+\end{equation}
+The gauge block is the single definition \eqref{eq:CF-gauge}. For a closed $u_1$, its Steenrod term vanishes by instability and it supplies the incoming identification $[\omega_2u_1]$. In the relative sector, this identification is part of the classification, not a discretionary quotient applied after finding a group.
+
+\subsection{Relation to parity and to the calibrated higher-dimensional family}
+The common circle-dependent charge map is constructed in Section~\ref{sec:parity}; even integer charge is stored in its phase and is not discarded by binary reduction. The nonzero-IQH comparison additionally has a derived Majorana field proportional to $\bar n_0\rho_1$ and a specified closed CF shift. Its retained tetrahedral conversion data are in the provenance archive; the present endpoint formulas use the same source convention.
+
+The sheet-linear calibration used by the higher-dimensional family descends to the phase term
+$\rho_1\bar B_3n_0/2$. For $n_0\ne0$, $s_1=0$ and it is the explicit coboundary
+\begin{equation}\label{eq:2d-endpoint-rephase}
+ d\left[\frac14(B_3)_0n_0\right]=\frac12\rho_1\bar B_3n_0\pmod1.
+\end{equation}
+Its polarization in $n_0$ is zero. This fixes the representative bridge to \eqref{eq:2d-O4}; it does not replace the outstanding full nonzero-IQH physical product comparison by a lower-dimensional sanity check.
+
+The complete $C_m$ root relations, including the $C_2$ bordism comparison, are in Section~\ref{subsec:2d-examples}. They demonstrate why a vanishing raw self-twister need not imply a split extension: the original phase completion and the gauge used to remove accumulated integer charge still contribute.
