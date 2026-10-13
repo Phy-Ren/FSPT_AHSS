@@ -1,0 +1,3408 @@
+[
+  {
+    "id": "point3_01_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_01_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_02_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the inversion-related sigma blocks; doubling is a 3D E8 bubble.",
+          "source_root_line": 3388
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_02_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the inversion-related sigma blocks; doubling is a 3D E8 bubble.",
+          "source_root_line": 3388
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_03_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_03_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_04_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 4566
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_04_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 4566
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_05_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 4676
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_05_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 4655
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_06_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_06_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_07_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 4902
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_07_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 4843
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_08_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5014
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_08_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 4991
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_09_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_09_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_10_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5258
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_10_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5258
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_11_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5403
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_11_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5374
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_12_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_12_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_13_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5715
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_13_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5701
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_14_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5803
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_14_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5780
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_15_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5985
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_15_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 5962
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_16_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_16_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_17_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 6147
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_17_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 6147
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_18_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_18_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_19_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 6467
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_19_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 6467
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_20_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 6550
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_20_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 6530
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_21_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_21_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_22_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 6714
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_22_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 6714
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_23_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 6843
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_23_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 6822
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_24_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_24_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_25_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 7110
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_25_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 7095
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_26_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 7280
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_26_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 7258
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_27_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 7498
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_27_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 7479
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_28_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_28_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_29_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 3638
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_29_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 3630
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_30_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_30_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        }
+      }
+    ]
+  },
+  {
+    "id": "point3_31_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 3866
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_31_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 3858
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_32_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 4279
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  },
+  {
+    "id": "point3_32_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "scope_mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Table II, TeX label TI; independent E8 specified in introduction and block-state section"
+        },
+        "reason": "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
+      },
+      {
+        "quantity": "stacking_mod_named_neutral_E8",
+        "status": "mismatch",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2204.13558",
+          "url": "https://arxiv.org/abs/2204.13558",
+          "source_file": "main.tex",
+          "source_sha256": "f4fbece88797281b9e8b5b41280b351ffbd4716e305abfad55e169388920e351",
+          "location": "Point-group TI root lists in main text and supplementary sections, with the per-row line references below"
+        },
+        "neutral_generator": {
+          "named_generator": "neutral_E8_block_decoration",
+          "generator_order": 2,
+          "generator_description": "Neutral monolayer E8 decoration on the symmetry-related 2D blocks identified in the cited root list.",
+          "source_root_line": 4268
+        },
+        "comparison_limit": "Abstract quotient comparison; does not supply a cochain embedding or identify each solver generator with a real-space block root."
+      }
+    ]
+  }
+]

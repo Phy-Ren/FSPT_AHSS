@@ -11,6 +11,15 @@ cubic coefficient `1/6`, additional product coefficient `epsilon=0`, and matched
 source, stacking and gauge representatives. See [the formula reference](formulas/README.md)
 for equations, provenance and coverage.
 
+The first campaigns are complete: **172 successful calculations** across both
+physical spin conventions, including independent relative and full-IQH 2D runs.
+Start with the [campaign report](results/README.md),
+[59-group comparison table](results/summary_20261013/summary.md), or
+[CSV](results/summary_20261013/summary.csv). All 34 wallpaper cases match the
+reference charge/phase/stacking data. The 3D comparison has 51 abstract group
+matches and 13 documented discrepancies in the stated sector; the report keeps
+the independent E8 scope distinction explicit.
+
 ## Mathematical scope
 
 For spatial dimension `d`, a complete state has an integer CI sheet `n_(d-2)`
