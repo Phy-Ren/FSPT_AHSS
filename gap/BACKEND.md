@@ -101,3 +101,40 @@ filtration are explicit. This supports direct comparison with a relative run
 without asserting a free IQH generator in advance. Wallpaper witnesses
 separately report `chargeRootSubgroupFillingStep` and `ciGeneratorFillings`; the
 nested relative result uses only the former subgroup's actual periods.
+
+## Independent discrepancy audits
+
+`audit_d2.g` checks the spin-half D2 charge obstruction before comparison with
+any external table. For G=C2 x C2 and zero effective extension, the integral
+charge generator is q=beta(xy). Its mod-two reduction is x^2 y+x y^2 and the
+Bockstein of the phase obstruction has reduction
+Sq^1 Sq^2(q mod 2)=x^4 y^2+x^2 y^4, which is nonzero. Thus this charge root is
+obstructed in the supplied theory. The script verifies the integral, mod-two
+and explicit bar descriptions independently and retains the obstruction.
+
+`audit_d2d.g` records every raw D2d charge obstruction, its restriction to the
+proper D2 subgroup, the CI integer obstruction, and charge-root/incoming
+phase classes computed with both supplied gauge representatives. In the
+spin-half background the D2-nonzero charge restricts to the preceding D2
+obstruction. In the spinless background the other charge is obstructed only
+in the full D2d group. The audit does not identify an obstruction with a
+particular physical center-state root without an additional physical map.
+
+`audit_odd_kernel.g` verifies normal C3 kernels and Sylow-2 complements in
+D3d, D6 and D3h. Their complements have the same real representation characters,
+signs and extension classes as C2h, D2 and C2v respectively. The witness includes
+all element maps and an explicit half-valued background coboundary. For
+1 -> C3 -> G -> H -> 1, the Lyndon-Hochschild-Serre spectral sequence with
+2-local coefficients collapses: positive-degree C3 cohomology vanishes because
+three is invertible. Inflation is an isomorphism and restriction to the
+displayed complement is its inverse. This holds for all supplied sign modules.
+Restriction to Sylow C3 detects the remaining 3-primary groups, but
+H1(C3,Z)=H3(C3,Z)=H4(C3,R/Z)=0, so none of the three retained 3D filtration
+layers has a 3-primary part. Naturality of the differentials, products and
+gauges therefore identifies the complete CI/charge/phase stacking groups for
+each pair. This argument does not assert completeness of omitted sectors.
+
+Load an audit after `load.g`. Optionally set `U1_D2_AUDIT_OUT`,
+`U1_D2D_AUDIT_OUT` or `U1_ODD_KERNEL_AUDIT_OUT` to write its exact JSON witness.
+The audits are covered by backend regression tests and never change
+classification outputs to agree with a reference table.
