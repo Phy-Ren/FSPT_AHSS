@@ -80,7 +80,7 @@ end);
 # Physical filling is the restriction to the full primitive translation kernel,
 # evaluated on its oriented fundamental bar two-cycle [tx|ty]-[ty|tx].
 BindGlobal("U1WallpaperFilling",function(c,result)
-  local holonomy,L,pc,basis,vectors,area,tmp,states,fillings,values,g,h,i,rel;
+  local holonomy,L,pc,basis,vectors,area,tmp,states,fillings,values,g,h,i,rel,nphase,ncharge,chargeFillings,ciFillings,chargeStep;
   if c.vcd<>2 or not IsBound(c.affine) then Error("Wallpaper filling requires the full affine context");fi;
   holonomy:=NaturalHomomorphismOnHolonomyGroup(c.G);L:=Kernel(holonomy);pc:=Pcp(L,"snf");
   if Length(pc)<>2 or not IsAbelian(L) or RelativeOrdersOfPcp(pc)<>[0,0] then Error("Wallpaper translation kernel is not free abelian of rank two");fi;
@@ -103,7 +103,12 @@ BindGlobal("U1WallpaperFilling",function(c,result)
     if Sum([1..Length(fillings)],i->rel[i]*fillings[i])<>0 then Error("A stacking/gauge relation changed physical filling");fi;
   od;
   values:=Filtered(fillings,x->x<>0);i:=0;if values<>[] then i:=Gcd(List(values,AbsInt));fi;
+  nphase:=Length(c.classificationStates.phase);ncharge:=Length(c.classificationStates.charge);
+  chargeFillings:=fillings{[nphase+1..nphase+ncharge]};ciFillings:=fillings{[nphase+ncharge+1..Length(fillings)]};
+  chargeStep:=0;values:=Filtered(chargeFillings,x->x<>0);if values<>[] then chargeStep:=Gcd(List(values,AbsInt));fi;
   return rec(primitiveTranslationVectors:=vectors,primitiveCellArea:=area,
+    chargeRootSubgroupGeneratorFillings:=chargeFillings,chargeRootSubgroupFillingStep:=chargeStep,
+    ciGeneratorFillings:=ciFillings,
     primitiveBasisGeneratesFullTranslationKernel:=true,orientation:="positive determinant in catalog affine coordinates",
     barCycle:="[tx|ty]-[ty|tx]",generatorFillings:=fillings,fillingStep:=i,
     allPresentationRelationsHaveZeroFilling:=true,

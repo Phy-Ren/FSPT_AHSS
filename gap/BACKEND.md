@@ -93,3 +93,11 @@ positive affine determinant, and evaluates every completed generator on
 presentation relation is verified to have zero filling. In particular, p1 has
 step one while the glide group pg has step two, although both contain one
 abstract free charge summand. No finite quotient replaces the wallpaper group.
+
+A uniform-IQH run also returns `relativeUniformIQH0`, the n0=0 subgroup obtained
+by exact integer elimination of the CI columns of the same certified complete
+presentation. Its generators, finite factors, free rank and phase/charge
+filtration are explicit. This supports direct comparison with a relative run
+without asserting a free IQH generator in advance. Wallpaper witnesses
+separately report `chargeRootSubgroupFillingStep` and `ciGeneratorFillings`; the
+nested relative result uses only the former subgroup's actual periods.

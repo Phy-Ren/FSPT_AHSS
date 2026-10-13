@@ -160,7 +160,7 @@ BindGlobal("U1Classify",function(c,d,options...)
   local HQ,HP,HO,HC,Hlow,chargeBasis,phaseBasis,sourceMap,K,Ki,chargeStates,
     np,nq,ns,relations,witnesses,i,j,v,state,source,phase,co,relation,
     sheetStates,sheetOrders,sheetBasis,integerSource,qseed,adjustment,root,
-    coordinates,reduceCharge,gauge,orders,S,rank,result,obstructedSheets,fp,fq,fs,uniform,HI,multiple,terminalMultiple,trial,found;
+    coordinates,reduceCharge,gauge,orders,S,rank,result,obstructedSheets,fp,fq,fs,uniform,HI,multiple,terminalMultiple,trial,found,relative,relativeFilling;
   c.completedStateChecks:=0;c.reductionWitnesses:=[];
   uniform:=d=2 and Length(options)>0 and IsBound(options[1].uniformIQH) and options[1].uniformIQH=true;
   if not d in [2,3] then Error("Global classification currently supports spatial dimensions 2 and 3");fi;
@@ -316,5 +316,27 @@ BindGlobal("U1Classify",function(c,d,options...)
   if d=3 then result.neutralE8AbsentByCohomology:=U1Cohomology(c,1,"Zs").orders=[];fi;
   c.classificationStates:=rec(phase:=phaseBasis,charge:=chargeStates,sheet:=sheetStates);
   if d=2 and c.vcd=2 then result.wallpaperFilling:=U1WallpaperFilling(c,result);fi;
+  if uniform then
+    # n0 of a surviving uniform generator is a nonzero integer. Its kernel is
+    # precisely the charge/phase subgroup; eliminate later relation columns.
+    if ForAny(sheetOrders,x->x<>0) or ns>1 then Error("Unexpected uniform IQH sheet structure");fi;
+    relative:=U1Filtration(relations,rank,0,np+nq);
+    result.relativeUniformIQH0:=rec(theory:=result.theory,spatialDimension:=2,
+      scope:="relative n0=0 subgroup of the complete uniform-IQH presentation",
+      uniformIQHIncluded:=false,torsion:=relative.torsion,freeRank:=relative.freeRank,
+      presentation:=relative.presentation,presentationGeneratorCount:=np+nq,
+      finalChargeOrders:=result.finalChargeOrders,finalChargeFreeRank:=result.finalChargeFreeRank,
+      finalPhaseOrders:=result.finalPhaseOrders,finalPhaseFreeRank:=result.finalPhaseFreeRank,
+      generators:=result.generators{[1..np+nq]},
+      nativeChainIdentitiesVerified:=result.nativeChainIdentitiesVerified,
+      construction:="integer elimination of CI columns; kernel of the actual nonzero n0 sheet multiplicity");
+    if IsBound(result.wallpaperFilling) then
+      relativeFilling:=ShallowCopy(result.wallpaperFilling);
+      relativeFilling.generatorFillings:=result.wallpaperFilling.generatorFillings{[1..np+nq]};
+      relativeFilling.fillingStep:=result.wallpaperFilling.chargeRootSubgroupFillingStep;
+      relativeFilling.ciGeneratorFillings:=[];
+      result.relativeUniformIQH0.wallpaperFilling:=relativeFilling;
+    fi;
+  fi;
   return result;
 end);

@@ -78,6 +78,8 @@ CloseStream(out);QUIT_GAP(0);
         r=self.results[7]
         self.assertEqual((r['freeRank'],r['torsion']),(1,[4]))
         self.assertTrue(r['uniformIQHIncluded'])
+        self.assertEqual((r['relativeUniformIQH0']['freeRank'],r['relativeUniformIQH0']['torsion']),(0,[4]))
+        self.assertEqual(r['relativeUniformIQH0']['finalChargeOrders'],[2])
         witness=next(w for w in r['witnesses'] if w['kind']=='uniform-IQH-lift')
         self.assertEqual(witness['sheetMultiplicity'],1)
         self.assertEqual(witness['nativePhase'],['1/16'])
