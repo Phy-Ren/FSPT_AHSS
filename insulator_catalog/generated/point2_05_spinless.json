@@ -1,0 +1,154 @@
+{
+  "id": "point2_05_spinless",
+  "family": "point2",
+  "index": 5,
+  "name": "C4",
+  "hermann_mauguin": "4",
+  "dimension": 2,
+  "spin": "spinless",
+  "identity_index": 0,
+  "order": 4,
+  "matrices": [
+    [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    [
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        0
+      ]
+    ]
+  ],
+  "multiplication": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      1,
+      0,
+      3,
+      2
+    ],
+    [
+      2,
+      3,
+      1,
+      0
+    ],
+    [
+      3,
+      2,
+      0,
+      1
+    ]
+  ],
+  "translation_subgroup_present": false,
+  "input_scope": "geometry_and_background_only",
+  "s": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "rho": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "circle_action": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "omega": [
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1/2",
+      "1/2",
+      "0"
+    ],
+    [
+      "0",
+      "1/2",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1/2"
+    ]
+  ],
+  "geometric_pin_minus": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "effective_extension": "half_pin_minus",
+  "physical_symmetry": "unitary_charge_preserving_crystalline",
+  "representative_catalog_number": 10
+}

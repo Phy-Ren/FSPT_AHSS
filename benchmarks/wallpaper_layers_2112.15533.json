@@ -1,0 +1,914 @@
+{
+  "source": {
+    "arxiv": "2112.15533",
+    "url": "https://arxiv.org/abs/2112.15533",
+    "source_file": "U1f.tex",
+    "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+    "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+  },
+  "notation": "paper rho1 is circle automorphism = package rho1+s1",
+  "rows": [
+    {
+      "name_as_printed": "p1",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        0
+      ],
+      "phase_before_incoming_orders": [],
+      "phase_after_incoming_orders": [],
+      "source_line": 6022,
+      "source_cells": [
+        "p1",
+        "$\\mathbb Z$",
+        "0"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p2",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        2,
+        2,
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_line": 6023,
+      "source_cells": [
+        "p2",
+        "$3\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$4\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p1m1",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2
+      ],
+      "source_line": 6024,
+      "source_cells": [
+        "p1m1",
+        "$\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$2\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p1g1",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        0
+      ],
+      "phase_before_incoming_orders": [],
+      "phase_after_incoming_orders": [],
+      "source_line": 6025,
+      "source_cells": [
+        "p1g1",
+        "$\\mathbb Z$",
+        "0"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "c1m1",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2
+      ],
+      "source_line": 6026,
+      "source_cells": [
+        "c1m1",
+        "$\\mathbb Z$",
+        "$\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p2mm",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_line": 6027,
+      "source_cells": [
+        "p2mm",
+        "$\\mathbb Z$",
+        "$8\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p2mg",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        2,
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2
+      ],
+      "source_line": 6028,
+      "source_cells": [
+        "p2mg",
+        "$2\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$3\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p2gg",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2
+      ],
+      "source_line": 6029,
+      "source_cells": [
+        "p2gg",
+        "$\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$2\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "c2mm",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_line": 6030,
+      "source_cells": [
+        "c2mm",
+        "$\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$5\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p4",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        2,
+        4,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        4,
+        4
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        4,
+        4
+      ],
+      "source_line": 6031,
+      "source_cells": [
+        "p4",
+        "$\\mathbb Z_2\\oplus\\mathbb Z_4\\oplus\\mathbb Z$",
+        "$\\mathbb Z_2\\oplus2\\mathbb Z_4$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p4mm",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_line": 6032,
+      "source_cells": [
+        "p4mm",
+        "$\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$6\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p4gm",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        4
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        4
+      ],
+      "source_line": 6033,
+      "source_cells": [
+        "p4gm",
+        "$\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$2\\mathbb Z_2\\oplus\\mathbb Z_4$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p3",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        3,
+        3,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        3,
+        3,
+        3
+      ],
+      "phase_after_incoming_orders": [
+        3,
+        3,
+        3
+      ],
+      "source_line": 6034,
+      "source_cells": [
+        "p3",
+        "$2\\mathbb Z_3\\oplus\\mathbb Z$",
+        "$3\\mathbb Z_3$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p3m1",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        3,
+        3,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2
+      ],
+      "source_line": 6035,
+      "source_cells": [
+        "p3m1",
+        "$2\\mathbb Z_3\\oplus\\mathbb Z$",
+        "$\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p31m",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        3,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        6
+      ],
+      "phase_after_incoming_orders": [
+        6
+      ],
+      "source_line": 6036,
+      "source_cells": [
+        "p31m",
+        "$\\mathbb Z_3\\oplus\\mathbb Z$",
+        "$\\mathbb Z_6$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p6",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        6,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        6,
+        6
+      ],
+      "phase_after_incoming_orders": [
+        6,
+        6
+      ],
+      "source_line": 6037,
+      "source_cells": [
+        "p6",
+        "$\\mathbb Z_6\\oplus\\mathbb Z$",
+        "$2\\mathbb Z_6$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p6mm",
+      "physical_spin": "spin_half",
+      "charge_orders": [
+        3,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_line": 6038,
+      "source_cells": [
+        "p6mm",
+        "$\\mathbb Z_3\\oplus\\mathbb Z$",
+        "$4\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p1",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        0
+      ],
+      "phase_before_incoming_orders": [],
+      "phase_after_incoming_orders": [],
+      "source_line": 6052,
+      "source_cells": [
+        "p1",
+        "$\\mathbb Z$",
+        "$0\\rightarrow0$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p2",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        2,
+        2,
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_line": 6053,
+      "source_cells": [
+        "p2",
+        "$3\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$4\\mathbb Z_2\\rightarrow4\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p1m1",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2
+      ],
+      "source_line": 6054,
+      "source_cells": [
+        "p1m1",
+        "$\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$2\\mathbb Z_2\\rightarrow2\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p1g1",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        0
+      ],
+      "phase_before_incoming_orders": [],
+      "phase_after_incoming_orders": [],
+      "source_line": 6055,
+      "source_cells": [
+        "p1g1",
+        "$\\mathbb Z$",
+        "$0\\rightarrow0$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "c1m1",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2
+      ],
+      "source_line": 6056,
+      "source_cells": [
+        "c1m1",
+        "$\\mathbb Z$",
+        "$\\mathbb Z_2\\rightarrow\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p2mm",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        2,
+        2,
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_line": 6057,
+      "source_cells": [
+        "p2mm",
+        "$3\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$8\\mathbb Z_2\\rightarrow7\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p2mg",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        2,
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2
+      ],
+      "source_line": 6058,
+      "source_cells": [
+        "p2mg",
+        "$2\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$3\\mathbb Z_2\\rightarrow3\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p2gg",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2
+      ],
+      "source_line": 6059,
+      "source_cells": [
+        "p2gg",
+        "$\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$2\\mathbb Z_2\\rightarrow2\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "c2mm",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        2,
+        2,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_line": 6060,
+      "source_cells": [
+        "c2mm",
+        "$2\\mathbb Z_2\\oplus\\mathbb Z$",
+        "$5\\mathbb Z_2\\rightarrow4\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p4",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        2,
+        4,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        4,
+        4
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        4,
+        4
+      ],
+      "source_line": 6061,
+      "source_cells": [
+        "p4",
+        "$\\mathbb Z_2\\oplus\\mathbb Z_4\\oplus\\mathbb Z$",
+        "$\\mathbb Z_2\\oplus2\\mathbb Z_4\\rightarrow\\mathbb Z_2\\oplus2\\mathbb Z_4$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p4mm",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        2,
+        4,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_line": 6062,
+      "source_cells": [
+        "p4mm",
+        "$\\mathbb Z_2\\oplus\\mathbb Z_4\\oplus\\mathbb Z$",
+        "$6\\mathbb Z_2\\rightarrow5\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p4gm",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        4,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        4
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        4
+      ],
+      "source_line": 6063,
+      "source_cells": [
+        "p4gm",
+        "$\\mathbb Z_4\\oplus\\mathbb Z$",
+        "$2\\mathbb Z_2\\oplus\\mathbb Z_4\\rightarrow\\mathbb Z_2\\oplus\\mathbb Z_4$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p3",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        3,
+        3,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        3,
+        3,
+        3
+      ],
+      "phase_after_incoming_orders": [
+        3,
+        3,
+        3
+      ],
+      "source_line": 6064,
+      "source_cells": [
+        "p3",
+        "$2\\mathbb Z_3\\oplus\\mathbb Z$",
+        "$3\\mathbb Z_3\\rightarrow3\\mathbb Z_3$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p3m1",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        3,
+        3,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2
+      ],
+      "source_line": 6065,
+      "source_cells": [
+        "p3m1",
+        "$2\\mathbb Z_3\\oplus\\mathbb Z$",
+        "$\\mathbb Z_2\\rightarrow\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p31m",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        3,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        6
+      ],
+      "phase_after_incoming_orders": [
+        6
+      ],
+      "source_line": 6066,
+      "source_cells": [
+        "p31m",
+        "$\\mathbb Z_3\\oplus\\mathbb Z$",
+        "$\\mathbb Z_6\\rightarrow\\mathbb Z_6$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p6",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        6,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        6,
+        6
+      ],
+      "phase_after_incoming_orders": [
+        6,
+        6
+      ],
+      "source_line": 6067,
+      "source_cells": [
+        "p6",
+        "$\\mathbb Z_6\\oplus\\mathbb Z$",
+        "$2\\mathbb Z_6\\rightarrow2\\mathbb Z_6$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    },
+    {
+      "name_as_printed": "p6mm",
+      "physical_spin": "spinless",
+      "charge_orders": [
+        6,
+        0
+      ],
+      "phase_before_incoming_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "phase_after_incoming_orders": [
+        2,
+        2,
+        2
+      ],
+      "source_line": 6068,
+      "source_cells": [
+        "p6mm",
+        "$\\mathbb Z_6\\oplus\\mathbb Z$",
+        "$4\\mathbb Z_2\\rightarrow3\\mathbb Z_2$"
+      ],
+      "comparison_type": "graded_charge_phase_layers",
+      "uniform_IQH": "fixed_n0_zero",
+      "full_stacking_group_supplied": false
+    }
+  ]
+}
