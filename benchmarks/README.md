@@ -13,6 +13,7 @@ invariant-factor order.
 | `wallpaper_stacking_2012.15657.json` | Zhang et al., Table III | Full stacking of the nonchiral wallpaper SPT sector, with uniform IQH `n0=0` |
 | `point2_stacking_2012.15657.json` | Zhang et al., supplemental Table `point` | Published point-group statements, subject to the discrepancy below |
 | `point3_full_2204.13558.json` | Zhang et al., Table II | Full physical classification including independent neutral E8 states; requires sector matching |
+| `point3_named_e8_quotient_2204.13558.json` | Explicit TI root lists for all 21 improper point groups | Quotient by the named independent neutral E8 root, with per-spin source locations |
 
 The first source labels **onsite** spin, and says explicitly to exchange that
 label when interpreting the symmetry as spatial. Our JSON uses the resulting
@@ -52,6 +53,19 @@ finite point groups, a missing neutral direction must be identified by a map or
 explicit generator before forming a quotient; deleting an arbitrary `Z2` factor
 from a published answer is not an implementation of that map.
 
+A further audit identifies the named independent neutral root for all 21
+orientation-reversing point groups, for both physical spins. The dedicated
+quotient file records each physical generator, order, source root-list line and
+source table line. For example, the mirror subsection identifies three roots:
+CI decoration, a 2D charge-conserving SPT, and neutral E8 decoration; only the
+first two extend to Z8, while the E8 generator is an independent Z2. Its named
+quotient is therefore Z8. The comparator reports this quotient check separately
+from the full physical group, whose scope mismatch remains visible. This is an
+abstract reference-side quotient comparison; it does not claim an implemented
+E8 cochain map or identify individual solver roots with real-space generators.
+For proper rotations, a solver certificate that H1(G,Z)=0 permits direct
+comparison to the full reference group because that neutral decoration is absent.
+
 Historical cluster3 inspection found
 `/home/user/xyren/gap-insulator/pkg/SptSet/debug/exp_3d_point_groups_insulator_ez_diag.log`
 to be an incomplete run: it stops during the D2h differential computation with a
@@ -65,9 +79,21 @@ Acquire the three primary sources with the arxiv skill, then run:
 
 ```bash
 python benchmarks/extract_sources.py --cache /home/arxiv
+python benchmarks/extract_e8_projection.py
 python -m unittest discover -s tests -p 'test_catalog*.py'
 ```
 
 The source extractor derives tables from their LaTeX boundaries, keeps provenance,
 and fails if the 3D table does not contain 64 physical-spin rows. It does not
 supply any classified group to the runtime symmetry catalog.
+
+The comparison CLI accepts the runner format `{input, classification, run}`
+or an enriched flat result:
+
+```bash
+python benchmarks/compare.py runs/CASE/result.json --output runs/CASE/comparison.json
+```
+
+It combines finite filtration orders with their separate free ranks. Raw
+cohomology is never substituted for final obstruction kernels or incoming
+quotients. A missing result stays `not_computed`.

@@ -38,8 +38,11 @@ class BenchmarkTests(unittest.TestCase):
     def test_e8_sector_mismatch_is_never_automatic_failure(self):
         result = {"id": "point3_04_spinless", "name": "Cs", "spin": "spinless",
                   "torsion": [8], "freeRank": 0}
-        check = module.compare(result)["checks"][0]
+        checks = module.compare(result)["checks"]
+        check = checks[0]
         self.assertEqual(check["status"], "scope_mismatch")
+        self.assertEqual(checks[1]["status"], "match")
+        self.assertEqual(checks[1]["neutral_generator"]["source_root_line"], 4566)
         self.assertEqual(check["published"], {"torsion": [2, 8], "freeRank": 0})
 
     def test_primary_source_discrepancy_is_preserved(self):
@@ -51,7 +54,8 @@ class BenchmarkTests(unittest.TestCase):
         for filename, count in [("wallpaper_layers_2112.15533.json", 34),
                                 ("wallpaper_stacking_2012.15657.json", 34),
                                 ("point2_stacking_2012.15657.json", 20),
-                                ("point3_full_2204.13558.json", 64)]:
+                                ("point3_full_2204.13558.json", 64),
+                                ("point3_named_e8_quotient_2204.13558.json", 42)]:
             data = json.loads((ROOT / "benchmarks" / filename).read_text())
             self.assertEqual(len(data["rows"]), count)
             self.assertEqual(len(data["source"]["source_sha256"]), 64)

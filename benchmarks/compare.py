@@ -100,6 +100,17 @@ def compare(result):
             check["status"] = "scope_mismatch"
             check["reason"] = "Published classification includes an independent neutral E8 sector; no sector projection witness supplied."
         checks.append(check)
+        if result.get("neutralE8Included") is not True:
+            projections = _load("point3_named_e8_quotient_2204.13558.json")
+            projection = next((r for r in projections["rows"]
+                               if r["name"] == name and r["physical_spin"] == spin), None)
+            if projection is not None:
+                projected = _check("stacking_mod_named_neutral_E8", final,
+                                   projection["quotient_by_named_E8_orders"], projections["source"])
+                projected["neutral_generator"] = {key: projection[key] for key in
+                    ("named_generator", "generator_order", "generator_description", "source_root_line")}
+                projected["comparison_limit"] = projection["comparison_limit"]
+                checks.append(projected)
     else:
         raise ValueError(f"unknown family {family!r}")
     return {"id": result["id"], "checks": checks}
