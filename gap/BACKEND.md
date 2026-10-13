@@ -138,3 +138,17 @@ Load an audit after `load.g`. Optionally set `U1_D2_AUDIT_OUT`,
 `U1_D2D_AUDIT_OUT` or `U1_ODD_KERNEL_AUDIT_OUT` to write its exact JSON witness.
 The audits are covered by backend regression tests and never change
 classification outputs to agree with a reference table.
+
+`python gap/audit_oh_saved.py --output /tmp/oh-audit.json` audits the archived
+spinless Oh result and its D4h, Th, O and Td restrictions, without rerunning
+classification. It checks six native phase closures, three charge closures,
+three phase-completion equations and three source closures. It also reproduces
+the incoming charge-gauge phase `(1,1,0,1,1,1)` independently and confirms the
+nonzero CI integer obstruction. The full surviving phase group Z2^5 injects
+into the D4h phase quotient; its images in Th, O and Td have ranks 3, 0 and 2.
+The surviving charge square restricts to the nonzero D4h/Th root phases and
+the zero Td root phase. Every completed charge restriction passes the target
+obstruction. The output records exact maps and hashes of the archived input,
+current mathematical code and catalog backgrounds. These are consistency
+checks within the supplied sector; identifying an individual native phase
+with a physical center character requires an additional physical map.
