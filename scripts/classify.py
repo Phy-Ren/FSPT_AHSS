@@ -57,7 +57,7 @@ def write_json(path, value):
     path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
 
 
-def run_case(input_path, output, gap, timeout, memory, source):
+def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False):
     data = json.loads(input_path.read_text())
     directory = output / data["id"]
     directory.mkdir()  # Never overwrite accepted results or another running case.
@@ -69,7 +69,8 @@ def run_case(input_path, output, gap, timeout, memory, source):
         "Read(Concatenation(U1_ROOT,\"/gap/load.g\"));;\n"
         "U1_INPUT:=" + gap_literal(data) + ";;\n"
         "c:=U1CatalogContext(U1_INPUT,6);;\n"
-        "result:=U1Classify(c,U1_INPUT.dimension);;\n"
+        "result:=U1Classify(c,U1_INPUT.dimension,rec(uniformIQH:="
+        + gap_literal(uniform_iqh) + "));;\n"
         "output:=OutputTextFile(" + gap_literal(str(native)) + ",false);;\n"
         "SetPrintFormattingStatus(output,false);;\n"
         "PrintTo(output,U1JSON(result),\"\\n\");;\n"
@@ -80,7 +81,7 @@ def run_case(input_path, output, gap, timeout, memory, source):
     metadata = {"id": data["id"], "status": "running", "command": command,
                 "host": platform.node(), "startedUTC": datetime.now(timezone.utc).isoformat(),
                 "inputSHA256": digest(input_path), "sourceSHA256": source["sha256"],
-                "timeoutSeconds": timeout}
+                "timeoutSeconds": timeout, "uniformIQHRequested": uniform_iqh}
     write_json(directory / "run.json", metadata)
     with (directory / "stdout.log").open("w") as out, (directory / "stderr.log").open("w") as err:
         process = subprocess.Popen(command, cwd=ROOT, stdout=out, stderr=err,
@@ -124,6 +125,8 @@ def main():
     parser.add_argument("--jobs", type=int, default=1)
     parser.add_argument("--timeout", type=int, default=7200)
     parser.add_argument("--memory", default="8g", help="GAP workspace limit per process")
+    parser.add_argument("--uniform-iqh", action="store_true",
+                        help="Include the 2+1D uniform integer Hall layer")
     args = parser.parse_args()
     if not args.family and not args.case:
         parser.error("Select --family or --case")
@@ -140,6 +143,8 @@ def main():
             continue
         if args.spin and record["spin"] != args.spin:
             continue
+        if args.uniform_iqh and record["dimension"] != 2:
+            parser.error("--uniform-iqh applies only to spatial dimension two")
         inputs.append(path)
     if not inputs or args.case and set(args.case) != {p.stem for p in inputs}:
         parser.error("Selection includes missing or incompatible catalog cases")
@@ -151,7 +156,7 @@ def main():
     rows = []
     with ThreadPoolExecutor(max_workers=args.jobs) as pool:
         tasks = [pool.submit(run_case, p, args.output, args.gap, args.timeout,
-                             args.memory, source) for p in inputs]
+                             args.memory, source, args.uniform_iqh) for p in inputs]
         for task in as_completed(tasks):
             row = task.result()
             rows.append(row)
