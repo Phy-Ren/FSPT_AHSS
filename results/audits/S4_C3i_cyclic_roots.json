@@ -1,0 +1,577 @@
+{
+  "group": "C4",
+  "s": "parity",
+  "rho": "parity",
+  "omega": "0",
+  "method": "explicit normalized bar cochains, direct calibrated local kernels, standard cyclic periodic chain",
+  "periodic4_cycle": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      2,
+      1
+    ],
+    [
+      1,
+      1,
+      3,
+      1
+    ],
+    [
+      2,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      2,
+      1
+    ],
+    [
+      2,
+      1,
+      3,
+      1
+    ],
+    [
+      3,
+      1,
+      1,
+      1
+    ],
+    [
+      3,
+      1,
+      2,
+      1
+    ],
+    [
+      3,
+      1,
+      3,
+      1
+    ]
+  ],
+  "CI_root": {
+    "n1": "alpha(a)=a mod2",
+    "n3": "0",
+    "nu4": "-alpha(a)alpha(b)alpha(c)alpha(d)/16",
+    "native_phase": "3/4",
+    "square_after_sheet_gauge": {
+      "sheet_parameter": "u0=1",
+      "n3": "alpha(a)alpha(b)alpha(c)",
+      "nu4": "alpha(a)alpha(b)alpha(c)alpha(d)/4"
+    },
+    "charge_removal_v2": {
+      "1,1": "0",
+      "1,2": "-1",
+      "1,3": "0",
+      "2,1": "0",
+      "2,2": "1",
+      "2,3": "1",
+      "3,1": "1",
+      "3,2": "0",
+      "3,3": "0"
+    },
+    "charge_removal_identity": "d_rho v2=-alpha^3 (all27 normalized3-tuples checked)",
+    "final_phase_period": "1/2",
+    "short_charge_gauge_period": "1/2",
+    "single_joint_gauge_period": "1/2",
+    "cycle_ledger": [
+      {
+        "tuple": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "phase": "1/4",
+        "short_gauge_phase": "1/4",
+        "single_joint_phase": "1/4"
+      },
+      {
+        "tuple": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "phase": "1/2",
+        "short_gauge_phase": "0",
+        "single_joint_phase": "1/2"
+      },
+      {
+        "tuple": [
+          1,
+          1,
+          3,
+          1
+        ],
+        "phase": "1/4",
+        "short_gauge_phase": "3/4",
+        "single_joint_phase": "1/4"
+      },
+      {
+        "tuple": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "phase": "0",
+        "short_gauge_phase": "1/2",
+        "single_joint_phase": "0"
+      },
+      {
+        "tuple": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "phase": "0",
+        "short_gauge_phase": "0",
+        "single_joint_phase": "0"
+      },
+      {
+        "tuple": [
+          2,
+          1,
+          3,
+          1
+        ],
+        "phase": "0",
+        "short_gauge_phase": "0",
+        "single_joint_phase": "0"
+      },
+      {
+        "tuple": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "phase": "1/4",
+        "short_gauge_phase": "3/4",
+        "single_joint_phase": "1/4"
+      },
+      {
+        "tuple": [
+          3,
+          1,
+          2,
+          1
+        ],
+        "phase": "1/2",
+        "short_gauge_phase": "0",
+        "single_joint_phase": "1/2"
+      },
+      {
+        "tuple": [
+          3,
+          1,
+          3,
+          1
+        ],
+        "phase": "3/4",
+        "short_gauge_phase": "1/4",
+        "single_joint_phase": "3/4"
+      }
+    ]
+  },
+  "charge_root": {
+    "n3": "alpha(a) floor((b+c)/4)",
+    "native_phase": "3/4",
+    "phase_completion": "-beta(a,b)beta(c,d)/4+b4/2",
+    "b4_nonzero": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        3,
+        2
+      ],
+      [
+        1,
+        1,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        3,
+        1
+      ],
+      [
+        1,
+        2,
+        3,
+        2
+      ],
+      [
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        3,
+        1
+      ],
+      [
+        1,
+        3,
+        3,
+        2
+      ],
+      [
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        1,
+        3
+      ],
+      [
+        2,
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        1,
+        2,
+        2
+      ],
+      [
+        2,
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        1,
+        3
+      ],
+      [
+        2,
+        2,
+        3,
+        1
+      ],
+      [
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        3,
+        1,
+        1
+      ],
+      [
+        2,
+        3,
+        1,
+        2
+      ],
+      [
+        2,
+        3,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        1,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        1,
+        2
+      ],
+      [
+        3,
+        1,
+        2,
+        1
+      ]
+    ],
+    "completion_check": "all243 normalized5-tuples checked modulo1",
+    "square_charge_removal": "v2=beta(a,b)",
+    "final_phase_period": "0",
+    "cycle_ledger": [
+      {
+        "tuple": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "phase": "0"
+      },
+      {
+        "tuple": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "phase": "0"
+      },
+      {
+        "tuple": [
+          1,
+          1,
+          3,
+          1
+        ],
+        "phase": "1/2"
+      },
+      {
+        "tuple": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "phase": "0"
+      },
+      {
+        "tuple": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "phase": "0"
+      },
+      {
+        "tuple": [
+          2,
+          1,
+          3,
+          1
+        ],
+        "phase": "0"
+      },
+      {
+        "tuple": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "phase": "0"
+      },
+      {
+        "tuple": [
+          3,
+          1,
+          2,
+          1
+        ],
+        "phase": "0"
+      },
+      {
+        "tuple": [
+          3,
+          1,
+          3,
+          1
+        ],
+        "phase": "1/2"
+      }
+    ]
+  },
+  "presentation_generator_order": [
+    "phase",
+    "charge",
+    "CI"
+  ],
+  "presentation": [
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      -1,
+      0,
+      2
+    ]
+  ],
+  "torsion": [
+    2,
+    4
+  ],
+  "incoming_images": {
+    "closed_charge_gauge": "H^2(C4,Z_sign)=0",
+    "closed_CI_gauge": "H^0(C4,Z_sign)=0"
+  },
+  "gauge_path_comparison": "All three gauges have phase period1/2; their closed differences are exact because the cyclic periodic4cycle detects H^4(C4,U1_sign)=Z2.",
+  "C6_split_inflation_audit": {
+    "group": "C6",
+    "s": "parity",
+    "rho": "parity",
+    "omega": "0",
+    "projection": "p(g_C6)=g_C2",
+    "section": "j(g_C2)=g_C6^3",
+    "section_identity": "p o j=id_C2; j^* p^*=id on complete cochain classes",
+    "input_root": "C2 AIII complete root (alpha,0,-alpha^4/16), certified order8",
+    "conclusion": "Its pullback to C6 has order8 because restriction along j is a left inverse.",
+    "periodic_maps": {
+      "g_minus_1_on_Z_sign": -2,
+      "norm_on_Z_sign": 0
+    },
+    "coefficient_groups": {
+      "H1_Z_sign": [
+        2
+      ],
+      "H3_Z_sign": [
+        2
+      ],
+      "H4_U1_sign": [
+        2
+      ]
+    },
+    "incoming_groups": {
+      "H0_Z_sign": [],
+      "H2_Z_sign": []
+    },
+    "tower_order": 8,
+    "torsion": [
+      8
+    ],
+    "scope": "Exact conclusion for the supplied natural CI/charge/phase model; no GAP solver is used."
+  }
+}
