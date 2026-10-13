@@ -84,3 +84,12 @@ checks with distinct s/rho characters, a half-valued extension, negative
 integer gauges and comparison-homotopy primitives. Native identities and these
 bar regressions are explicit verification levels, not an exhaustive bar
 examination of every large campaign group.
+
+For wallpaper groups, `wallpaperFilling` records the image of physical filling,
+separately from abstract free rank. It uses a Pcp Smith basis of the full
+translation kernel, checks that the basis generates that kernel, orders it by
+positive affine determinant, and evaluates every completed generator on
+`[tx|ty]-[ty|tx]`. The gcd of those integer periods is `fillingStep`; each full
+presentation relation is verified to have zero filling. In particular, p1 has
+step one while the glide group pg has step two, although both contain one
+abstract free charge summand. No finite quotient replaces the wallpaper group.

@@ -77,3 +77,35 @@ BindGlobal("U1CatalogContext",function(data,depth)
   if data.family="wallpaper" then return U1WallpaperContext(data,depth);fi;
   return U1FiniteContext(data,depth);
 end);
+# Physical filling is the restriction to the full primitive translation kernel,
+# evaluated on its oriented fundamental bar two-cycle [tx|ty]-[ty|tx].
+BindGlobal("U1WallpaperFilling",function(c,result)
+  local holonomy,L,pc,basis,vectors,area,tmp,states,fillings,values,g,h,i,rel;
+  if c.vcd<>2 or not IsBound(c.affine) then Error("Wallpaper filling requires the full affine context");fi;
+  holonomy:=NaturalHomomorphismOnHolonomyGroup(c.G);L:=Kernel(holonomy);pc:=Pcp(L,"snf");
+  if Length(pc)<>2 or not IsAbelian(L) or RelativeOrdersOfPcp(pc)<>[0,0] then Error("Wallpaper translation kernel is not free abelian of rank two");fi;
+  basis:=[pc[1],pc[2]];
+  if Subgroup(c.G,basis)<>L then Error("Translation basis does not generate the full kernel");fi;
+  vectors:=List(basis,g->PreImageElm(c.iso,g)[3]{[1,2]});area:=DeterminantMat(vectors);
+  if area=0 then Error("Translation basis is not geometrically independent");fi;
+  if area<0 then tmp:=basis[1];basis[1]:=basis[2];basis[2]:=tmp;vectors:=Reversed(vectors);area:=-area;fi;
+  g:=basis[1];h:=basis[2];
+  if g*h<>h*g or c.s(g)<>0 or c.s(h)<>0 or c.rho(g)<>0 or c.rho(h)<>0 then Error("Translation orientation/charge action failed");fi;
+  states:=Concatenation(c.classificationStates.charge,c.classificationStates.sheet);
+  fillings:=List(c.classificationStates.phase,x->0);
+  for tmp in states do
+    i:=tmp.charge(g,h)-tmp.charge(h,g);
+    if not IsInt(i) then Error("Primitive translation filling is not integral");fi;
+    Add(fillings,i);
+  od;
+  if Length(fillings)<>result.presentationGeneratorCount then Error("Filling and presentation generators disagree");fi;
+  for rel in result.presentation do
+    if Sum([1..Length(fillings)],i->rel[i]*fillings[i])<>0 then Error("A stacking/gauge relation changed physical filling");fi;
+  od;
+  values:=Filtered(fillings,x->x<>0);i:=0;if values<>[] then i:=Gcd(List(values,AbsInt));fi;
+  return rec(primitiveTranslationVectors:=vectors,primitiveCellArea:=area,
+    primitiveBasisGeneratesFullTranslationKernel:=true,orientation:="positive determinant in catalog affine coordinates",
+    barCycle:="[tx|ty]-[ty|tx]",generatorFillings:=fillings,fillingStep:=i,
+    allPresentationRelationsHaveZeroFilling:=true,
+    convention:="localized integer charge per primitive translation cell; uniform IQH scope recorded separately");
+end);

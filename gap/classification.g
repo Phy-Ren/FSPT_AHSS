@@ -315,5 +315,6 @@ BindGlobal("U1Classify",function(c,d,options...)
   if IsBound(c.inputValidation) then result.inputValidation:=c.inputValidation;fi;
   if d=3 then result.neutralE8AbsentByCohomology:=U1Cohomology(c,1,"Zs").orders=[];fi;
   c.classificationStates:=rec(phase:=phaseBasis,charge:=chargeStates,sheet:=sheetStates);
+  if d=2 and c.vcd=2 then result.wallpaperFilling:=U1WallpaperFilling(c,result);fi;
   return result;
 end);

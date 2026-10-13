@@ -28,13 +28,15 @@ od;
 c:=U1CyclicContext(2,0,0,1/2);;r:=U1Classify(c,2,rec(uniformIQH:=true));;WriteLine(out,U1JSON(r));
 Read(Concatenation(U1_ROOT,"/insulator_catalog/generated/wallpaper_04_spinless.g"));
 c:=U1WallpaperContext(U1_INPUT,6);;r:=U1Classify(c,2);;WriteLine(out,U1JSON(r));
+Read(Concatenation(U1_ROOT,"/insulator_catalog/generated/wallpaper_01_spinless.g"));
+c:=U1WallpaperContext(U1_INPUT,6);;r:=U1Classify(c,2);;WriteLine(out,U1JSON(r));
 CloseStream(out);QUIT_GAP(0);
 ''' % (ROOT, out))
         proc = subprocess.run(['gap','-q','-b',str(script)], capture_output=True, text=True, timeout=180)
         if proc.returncode:
             raise AssertionError(proc.stdout + proc.stderr)
         cls.results = [json.loads(s) for s in out.read_text().splitlines()]
-        if len(cls.results) != 9:
+        if len(cls.results) != 10:
             raise AssertionError(proc.stdout + proc.stderr)
 
     @classmethod
@@ -85,6 +87,9 @@ CloseStream(out);QUIT_GAP(0);
         self.assertEqual((r['freeRank'],r['torsion']),(1,[]))
         self.assertEqual(r['chargeOrders'],[0])
         self.assertEqual(r['finalChargeFreeRank'],1)
+        self.assertEqual(r['wallpaperFilling']['fillingStep'],2)
+        self.assertTrue(r['wallpaperFilling']['primitiveBasisGeneratesFullTranslationKernel'])
+        self.assertEqual(self.results[9]['wallpaperFilling']['fillingStep'],1)
 
 if __name__ == '__main__':
     unittest.main()
