@@ -1,0 +1,58 @@
+{
+  "audit_date": "2026-10-13",
+  "versions": [
+    {
+      "source": {
+        "arxiv": "2012.15657v1",
+        "url": "https://arxiv.org/abs/2012.15657v1",
+        "source_file": "combine_arXiv.tex",
+        "source_sha256": "9f2290710647a692f4eee47ec5b3835030d25393dccc5b4b20978932cd4cdbc9",
+        "location": "Supplemental point table and D4 example"
+      },
+      "even_rotation": {
+        "source_line": 3481,
+        "source_cell": "$C_{2m}$&$\\mathbb{Z}_{2m}^2$&$\\mathbb{Z}_{2m}^2$\\\\"
+      },
+      "even_dihedral": {
+        "source_line": 3485,
+        "source_cell": "$D_{2m}$&$\\mathbb{Z}_{2m}$ & $~\\mathbb{Z}_{m}\\times\\mathbb{Z}_2^2~$\\\\"
+      },
+      "D4_spinless": {
+        "source_line": 3464,
+        "source_cell": "\\mathcal{G}_{D_4,0}^{U(1)}=\\mathbb{Z}_4"
+      }
+    },
+    {
+      "source": {
+        "arxiv": "2012.15657v2",
+        "url": "https://arxiv.org/abs/2012.15657v2",
+        "source_file": "combine_sub.tex",
+        "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+        "location": "Supplemental point table and D4 example"
+      },
+      "even_rotation": {
+        "source_line": 3555,
+        "source_cell": "$C_{2m}$&$\\mathbb{Z}_{2m}^2$&$\\mathbb{Z}_{2m}^2$\\\\"
+      },
+      "even_dihedral": {
+        "source_line": 3559,
+        "source_cell": "$D_{2m}$&$\\mathbb{Z}_{4m}$ & $\\left\\{"
+      },
+      "D4_spinless": {
+        "source_line": 3538,
+        "source_cell": "\\mathcal{G}_{D_4,0}^{U(1)}=\\mathbb{Z}_8"
+      }
+    }
+  ],
+  "conclusion": "The even-cyclic printed answer is unchanged. Spinless even-dihedral answers changed between v1 and v2. No author-confirmed explanation of the remaining cyclic discrepancy was located.",
+  "published_supplement": {
+    "url": "https://journals.aps.org/prresearch/supplemental/10.1103/PhysRevResearch.4.033081/supplementarysub.pdf",
+    "location": "Page 2, Eq (6) and Table I",
+    "D4_spinless_orders": [
+      4
+    ],
+    "C2m_both_spins_orders": "[2m, 2m]",
+    "D2m_spinless_orders": "[2m]",
+    "inspection": "Web PDF text; direct filesystem download returned HTTP 403, so no local PDF hash is claimed."
+  }
+}

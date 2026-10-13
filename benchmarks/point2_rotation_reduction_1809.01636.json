@@ -1,0 +1,216 @@
+{
+  "source": {
+    "arxiv": "1809.01636v2",
+    "url": "https://arxiv.org/abs/1809.01636v2",
+    "source_file": "Shift.tex",
+    "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+    "location": "Table VI, class A; Sec V B, TeX ReductionA"
+  },
+  "scope": "Rotation only, no translation, no time reversal, general-position adjoining quotiented; interacting reduction of noninteracting phases.",
+  "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+  "uniform_IQH": "fixed_n0_zero",
+  "rows": [
+    {
+      "name": "C1",
+      "physical_spin": "spinless",
+      "rotation_power_eta": 0,
+      "band_generated_stacking_orders": [],
+      "center_presentation": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "source_line": 1100,
+      "source_cell": "$\\Z^{N-1} \\rightarrow \\Z_{N} \\times \\Z_{N}$"
+    },
+    {
+      "name": "C1",
+      "physical_spin": "spin_half",
+      "rotation_power_eta": 1,
+      "band_generated_stacking_orders": [],
+      "center_presentation": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "source_line": 1104,
+      "source_cell": "$\\Z^{N-1} \\rightarrow \\Z_{N} \\times \\Z_{N}$"
+    },
+    {
+      "name": "C2",
+      "physical_spin": "spinless",
+      "rotation_power_eta": 0,
+      "band_generated_stacking_orders": [
+        4
+      ],
+      "center_presentation": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "source_line": 1098,
+      "source_cell": "$\\Z^{N-1} \\rightarrow \\Z_{2N} \\times \\Z_{N/2}$"
+    },
+    {
+      "name": "C2",
+      "physical_spin": "spin_half",
+      "rotation_power_eta": 1,
+      "band_generated_stacking_orders": [
+        4
+      ],
+      "center_presentation": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "source_line": 1102,
+      "source_cell": "$\\Z^{N-1} \\rightarrow \\Z_{2N} \\times \\Z_{N/2}$"
+    },
+    {
+      "name": "C3",
+      "physical_spin": "spinless",
+      "rotation_power_eta": 0,
+      "band_generated_stacking_orders": [
+        3,
+        3
+      ],
+      "center_presentation": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "source_line": 1100,
+      "source_cell": "$\\Z^{N-1} \\rightarrow \\Z_{N} \\times \\Z_{N}$"
+    },
+    {
+      "name": "C3",
+      "physical_spin": "spin_half",
+      "rotation_power_eta": 1,
+      "band_generated_stacking_orders": [
+        3,
+        3
+      ],
+      "center_presentation": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "source_line": 1104,
+      "source_cell": "$\\Z^{N-1} \\rightarrow \\Z_{N} \\times \\Z_{N}$"
+    },
+    {
+      "name": "C4",
+      "physical_spin": "spinless",
+      "rotation_power_eta": 0,
+      "band_generated_stacking_orders": [
+        2,
+        8
+      ],
+      "center_presentation": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "source_line": 1098,
+      "source_cell": "$\\Z^{N-1} \\rightarrow \\Z_{2N} \\times \\Z_{N/2}$"
+    },
+    {
+      "name": "C4",
+      "physical_spin": "spin_half",
+      "rotation_power_eta": 1,
+      "band_generated_stacking_orders": [
+        2,
+        8
+      ],
+      "center_presentation": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "source_line": 1102,
+      "source_cell": "$\\Z^{N-1} \\rightarrow \\Z_{2N} \\times \\Z_{N/2}$"
+    },
+    {
+      "name": "C6",
+      "physical_spin": "spinless",
+      "rotation_power_eta": 0,
+      "band_generated_stacking_orders": [
+        3,
+        12
+      ],
+      "center_presentation": [
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "source_line": 1098,
+      "source_cell": "$\\Z^{N-1} \\rightarrow \\Z_{2N} \\times \\Z_{N/2}$"
+    },
+    {
+      "name": "C6",
+      "physical_spin": "spin_half",
+      "rotation_power_eta": 1,
+      "band_generated_stacking_orders": [
+        3,
+        12
+      ],
+      "center_presentation": [
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "source_line": 1102,
+      "source_cell": "$\\Z^{N-1} \\rightarrow \\Z_{2N} \\times \\Z_{N/2}$"
+    }
+  ]
+}

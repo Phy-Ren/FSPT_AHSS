@@ -56,6 +56,13 @@ def compare(result):
     family = result.get("family") or result["id"].split("_")[0]
     name, spin = result["name"], result["spin"]
     checks = []
+    comparison_scope = None
+    if family in ("point2", "wallpaper") and result.get("uniformIQHIncluded") is True:
+        relative = result.get("relativeUniformIQH0")
+        if isinstance(relative, dict) and relative.get("uniformIQHIncluded") is False:
+            metadata = {key: result[key] for key in ("id", "name", "family", "spin") if key in result}
+            result = {**metadata, **relative}
+            comparison_scope = "relativeUniformIQH0 subresult of full uniform-IQH calculation"
     if family in ("point2", "wallpaper") and result.get("uniformIQHIncluded") is not False:
         return {"id": result["id"], "checks": [{"status": "scope_mismatch",
                 "reason": "2D source comparison requires explicitly fixed uniform IQH n0=0"}]}
@@ -77,8 +84,19 @@ def compare(result):
         checks.append(_check("stacking", final, row["stacking_orders"], table["source"]))
         # Embedded free charge normalization requires an actual witness. Group
         # isomorphism alone cannot establish equality of Z and the physical 2Z.
-        checks.append({"quantity": "free_charge_embedding", "status": "requires_generator_witness",
-                       "published_charge_step": row["free_charge_step_as_printed"]})
+        filling = result.get("wallpaperFilling")
+        charge_check = {"quantity": "free_charge_embedding",
+                        "status": "requires_generator_witness",
+                        "published_charge_step": row["free_charge_step_as_printed"],
+                        "source": table["source"]}
+        if filling and all(key in filling for key in
+                           ("primitiveTranslationVectors", "primitiveCellArea",
+                            "generatorFillings", "fillingStep")):
+            step = int(filling["fillingStep"])
+            charge_check.update(status="requires_source_coordinate_map",
+                                calculated_primitive_cell_charge_step=step, witness=filling,
+                                reason="The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell.")
+        checks.append(charge_check)
     elif family == "point2":
         table = _load("point2_stacking_2012.15657.json")
         row = next(r for r in table["rows"] if r["physical_spin"] == spin
@@ -88,6 +106,18 @@ def compare(result):
             check["status"] = "published_source_discrepancy"
             check["reason"] = table["discrepancy"]
         checks.append(check)
+        if name.startswith("C") and name[1:].isdigit():
+            reference = _load("point2_rotation_reduction_1809.01636.json")
+            control = next((r for r in reference["rows"]
+                            if r["name"] == name and r["physical_spin"] == spin), None)
+            if control:
+                check = _check("stacking_vs_rotation_band_reduction", final,
+                               control["band_generated_stacking_orders"], reference["source"])
+                if check["status"] == "mismatch":
+                    check["status"] = "requires_sector_map"
+                check["comparison_limit"] = reference["comparison_limit"]
+                check["center_presentation"] = control["center_presentation"]
+                checks.append(check)
     elif family == "point3":
         table = _load("point3_full_2204.13558.json")
         target_name = POINT3_NAMES.get(name, name)
@@ -113,7 +143,10 @@ def compare(result):
                 checks.append(projected)
     else:
         raise ValueError(f"unknown family {family!r}")
-    return {"id": result["id"], "checks": checks}
+    answer = {"id": result["id"], "checks": checks}
+    if comparison_scope:
+        answer["comparison_scope"] = comparison_scope
+    return answer
 
 
 if __name__ == "__main__":

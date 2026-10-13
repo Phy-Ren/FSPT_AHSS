@@ -12,6 +12,7 @@ invariant-factor order.
 | `wallpaper_layers_2112.15533.json` | Wang et al., Supplement H, both wallpaper tables | Charge layer and bosonic layer after incoming identifications, with uniform IQH `n0=0` |
 | `wallpaper_stacking_2012.15657.json` | Zhang et al., Table III | Full stacking of the nonchiral wallpaper SPT sector, with uniform IQH `n0=0` |
 | `point2_stacking_2012.15657.json` | Zhang et al., supplemental Table `point` | Published point-group statements, subject to the discrepancy below |
+| `point2_rotation_reduction_1809.01636.json` | Liu et al., Table VI class A and Sec V B | Independent rotation-only band-generated-sector control, with interaction-only completeness explicitly unclaimed |
 | `point3_full_2204.13558.json` | Zhang et al., Table II | Full physical classification including independent neutral E8 states; requires sector matching |
 | `point3_named_e8_quotient_2204.13558.json` | Explicit TI root lists for all 21 improper point groups | Quotient by the named independent neutral E8 root, with per-spin source locations |
 
@@ -26,7 +27,11 @@ accepted as convention definitions.
 The 2D comparisons keep the uniform IQH index fixed to zero. They do not remove
 the free wallpaper filling class. Where the real-space table prints `2Z`, the
 JSON retains that physical charge step separately; its abstract additive group
-still has one free summand. The charge and phase layers in the first source
+still has one free summand. This is the source's decoration-coordinate step;
+conversion to electron charge per primitive translation cell also needs orbit
+multiplicities. In particular, the `pg` subsection identifies its Z with the
+charge on one representative of a glide orbit, which has two sites per cell.
+The charge and phase layers in the first source
 must not be concatenated to infer a final stacking group: nontrivial extensions
 are precisely what the twister calculation must recover.
 
@@ -39,9 +44,14 @@ for planar `C2`. The onsite `U(1)^f x C2` example of
 [arXiv:2112.15533](https://arxiv.org/abs/2112.15533), main text following the
 classification equations, instead explicitly gives `Z4`. The supplied v0.7
 formula package also uses the latter as a complete-root calibration. These
-statements are stored separately. The present source audit has not reconciled
-the point-group table with the onsite root relation; do not change a calculation
-to fit one table, and do not report this row as a verified agreement.
+statements are stored separately. The [detailed source audit](point2_discrepancy.md)
+finds independent primary support for Z_(2N) x Z_(N/2) at even rotation N,
+with the same center-state adjoining convention and both spins. It also records
+changes between v1, the published supplement, and v2 of the real-space paper.
+The evidence supports a missing extension in the printed even-cyclic table;
+no author-confirmed explanation was located. The original discrepancy remains
+visible alongside the qualified independent-reference check. Do not change a
+calculation to fit a printed table.
 
 [arXiv:2204.13558](https://arxiv.org/abs/2204.13558) treats the neutral E8 phase
 as an independent two-dimensional root for insulators (introduction and block
@@ -75,11 +85,12 @@ oracle. They are not imported into these benchmark tables.
 
 ## Reproduction
 
-Acquire the three primary sources with the arxiv skill, then run:
+Acquire the primary sources with the arxiv skill, then run:
 
 ```bash
 python benchmarks/extract_sources.py --cache /home/arxiv
 python benchmarks/extract_e8_projection.py
+python benchmarks/extract_rotation_control.py
 python -m unittest discover -s tests -p 'test_catalog*.py'
 ```
 
@@ -97,3 +108,13 @@ python benchmarks/compare.py runs/CASE/result.json --output runs/CASE/comparison
 It combines finite filtration orders with their separate free ranks. Raw
 cohomology is never substituted for final obstruction kernels or incoming
 quotients. A missing result stays `not_computed`.
+
+For full uniform-IQH runs, the comparator uses the certified
+`relativeUniformIQH0` subresult and labels that comparison scope. It does not
+compare the full chiral group to a nonchiral source. A wallpaper filling check
+requires `wallpaperFilling` with the primitive translation vectors, cell area,
+actual generator periods and their gcd; the subgroup's witness takes precedence
+over full-IQH filling data. The computed primitive-cell step is reported with
+`requires_source_coordinate_map` until the source's Wyckoff multiplicities are
+explicitly matched. No witness is inferred from the abstract free rank, and
+the printed Z or 2Z is not directly equated to electrons per primitive cell.

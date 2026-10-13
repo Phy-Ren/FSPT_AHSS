@@ -35,6 +35,19 @@ class BenchmarkTests(unittest.TestCase):
                "run": {"status": "completed"}}
         self.assertEqual([x["status"] for x in module.compare(row)["checks"][:3]], ["match"] * 3)
 
+    def test_wallpaper_filling_requires_restriction_witness(self):
+        result = {"id": "wallpaper_04_spinless", "name": "pg", "spin": "spinless",
+                  "uniformIQHIncluded": False, "torsion": [], "freeRank": 1}
+        self.assertEqual(module.compare(result)["checks"][-1]["status"], "requires_generator_witness")
+        result["wallpaperFilling"] = {"primitiveTranslationVectors": [[1, 0], [0, 1]],
+                                     "primitiveCellArea": 1, "generatorFillings": [2], "fillingStep": 2}
+        check = module.compare(result)["checks"][-1]
+        self.assertEqual(check["status"], "requires_source_coordinate_map")
+        self.assertEqual(check["calculated_primitive_cell_charge_step"], 2)
+        self.assertEqual(check["published_charge_step"], 1)
+        result["wallpaperFilling"]["fillingStep"] = 1
+        self.assertEqual(module.compare(result)["checks"][-1]["status"], "requires_source_coordinate_map")
+
     def test_e8_sector_mismatch_is_never_automatic_failure(self):
         result = {"id": "point3_04_spinless", "name": "Cs", "spin": "spinless",
                   "torsion": [8], "freeRank": 0}
@@ -48,12 +61,42 @@ class BenchmarkTests(unittest.TestCase):
     def test_primary_source_discrepancy_is_preserved(self):
         result = {"id": "point2_02_spin_half", "name": "C2", "spin": "spin_half",
                   "uniformIQHIncluded": False, "torsion": [4], "freeRank": 0}
-        self.assertEqual(module.compare(result)["checks"][0]["status"], "published_source_discrepancy")
+        checks = module.compare(result)["checks"]
+        self.assertEqual(checks[0]["status"], "published_source_discrepancy")
+        self.assertEqual(checks[1]["status"], "match")
+        self.assertIn("interaction-only", checks[1]["comparison_limit"])
+
+    def test_rotation_adjoining_relation_has_a_nontrivial_extension(self):
+        from sympy.matrices.normalforms import smith_normal_form
+        rows = json.loads((ROOT / "benchmarks/point2_rotation_reduction_1809.01636.json").read_text())["rows"]
+        for row in rows:
+            matrix = module.sp.Matrix(row["center_presentation"])
+            diagonal = smith_normal_form(matrix, domain=module.sp.ZZ).diagonal()
+            self.assertEqual(module.group_signature([abs(int(x)) for x in diagonal]),
+                             module.group_signature(row["band_generated_stacking_orders"]))
+
+    def test_full_iqh_comparison_uses_certified_relative_subgroup(self):
+        result = {"id": "wallpaper_04_spinless", "name": "pg", "spin": "spinless",
+                  "uniformIQHIncluded": True, "torsion": [4], "freeRank": 2,
+                  "wallpaperFilling": {"primitiveTranslationVectors": [[1, 0], [0, 1]],
+                                       "primitiveCellArea": 1, "generatorFillings": [1], "fillingStep": 1}}
+        self.assertEqual(module.compare(result)["checks"][0]["status"], "scope_mismatch")
+        result["relativeUniformIQH0"] = {"uniformIQHIncluded": False, "torsion": [], "freeRank": 1,
+                                       "wallpaperFilling": {**result["wallpaperFilling"],
+                                                           "generatorFillings": [2], "fillingStep": 2}}
+        compared = module.compare(result)
+        self.assertIn("relativeUniformIQH0", compared["comparison_scope"])
+        self.assertEqual(compared["checks"][2]["status"], "match")
+        self.assertEqual(compared["checks"][-1]["status"], "requires_source_coordinate_map")
+        self.assertEqual(compared["checks"][-1]["calculated_primitive_cell_charge_step"], 2)
+        del result["relativeUniformIQH0"]["wallpaperFilling"]
+        self.assertEqual(module.compare(result)["checks"][-1]["status"], "requires_generator_witness")
 
     def test_primary_tables_have_complete_coverage(self):
         for filename, count in [("wallpaper_layers_2112.15533.json", 34),
                                 ("wallpaper_stacking_2012.15657.json", 34),
                                 ("point2_stacking_2012.15657.json", 20),
+                                ("point2_rotation_reduction_1809.01636.json", 10),
                                 ("point3_full_2204.13558.json", 64),
                                 ("point3_named_e8_quotient_2204.13558.json", 42)]:
             data = json.loads((ROOT / "benchmarks" / filename).read_text())
