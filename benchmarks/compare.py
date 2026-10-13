@@ -51,6 +51,8 @@ def compare(result):
     Raw phaseOrders and chargeOrders deliberately never substitute for the final
     quotients. A missing quantity is reported as such, not inferred from a table.
     """
+    if "input" in result and "classification" in result:
+        result = {**result["input"], **result["classification"]}
     family = result.get("family") or result["id"].split("_")[0]
     name, spin = result["name"], result["spin"]
     checks = []
@@ -66,7 +68,10 @@ def compare(result):
                    and r["name_as_printed"] == ALIASES.get(name, name))
         for key, expected_key in (("finalChargeOrders", "charge_orders"),
                                   ("finalPhaseOrders", "phase_after_incoming_orders")):
-            checks.append(_check(key, result.get(key), row[expected_key], table["source"]))
+            computed = result.get(key)
+            if computed is not None:
+                computed = list(computed) + [0] * result.get(key.replace("Orders", "FreeRank"), 0)
+            checks.append(_check(key, computed, row[expected_key], table["source"]))
         table = _load("wallpaper_stacking_2012.15657.json")
         row = next(r for r in table["rows"] if r["physical_spin"] == spin and r["name"] == name)
         checks.append(_check("stacking", final, row["stacking_orders"], table["source"]))

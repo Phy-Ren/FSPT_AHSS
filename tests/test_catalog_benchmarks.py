@@ -19,12 +19,21 @@ class BenchmarkTests(unittest.TestCase):
         result = {"id": "wallpaper_06_spinless", "family": "wallpaper", "name": "pmm",
                   "spin": "spinless", "uniformIQHIncluded": False,
                   "phaseOrders": [2] * 8, "chargeOrders": [2] * 3 + [0],
-                  "finalPhaseOrders": [2] * 7, "finalChargeOrders": [2] * 3 + [0],
+                  "finalPhaseOrders": [2] * 7, "finalPhaseFreeRank": 0,
+                  "finalChargeOrders": [2] * 3, "finalChargeFreeRank": 1,
                   "torsion": [2] * 4 + [4] * 3, "freeRank": 1}
         checks = module.compare(result)["checks"]
         self.assertEqual([row["status"] for row in checks[:3]], ["match"] * 3)
         del result["finalPhaseOrders"]
         self.assertEqual(module.compare(result)["checks"][1]["status"], "not_computed")
+
+    def test_nested_runner_record(self):
+        row = {"input": {"id": "wallpaper_01_spinless", "name": "p1", "spin": "spinless"},
+               "classification": {"uniformIQHIncluded": False, "finalChargeOrders": [],
+                                  "finalChargeFreeRank": 1, "finalPhaseOrders": [],
+                                  "finalPhaseFreeRank": 0, "torsion": [], "freeRank": 1},
+               "run": {"status": "completed"}}
+        self.assertEqual([x["status"] for x in module.compare(row)["checks"][:3]], ["match"] * 3)
 
     def test_e8_sector_mismatch_is_never_automatic_failure(self):
         result = {"id": "point3_04_spinless", "name": "Cs", "spin": "spinless",
