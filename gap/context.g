@@ -6,17 +6,41 @@ BindGlobal("U1NewContext",function(G,R,s,rho,omega,vcd)
   c.sign:=g->(-1)^s(g);c.bar:=U1Comparison(R);
   return c;
 end);
+# Exhaustive exact validation of finite multiplication and twisted extension.
+BindGlobal("U1ValidateFiniteInput",function(data)
+  local n,one,i,j,k,ij,jk,w,t;
+  n:=Length(data.multiplication);one:=data.identity_index+1;
+  if not one in [1..n] or Length(data.s)<>n or Length(data.rho)<>n or Length(data.omega)<>n then Error("Finite input table lengths disagree");fi;
+  if not ForAll(Concatenation(data.s,data.rho),x->x in [0,1]) then Error("Sign characters must contain bits");fi;
+  if data.s[one]<>0 or data.rho[one]<>0 then Error("Sign character is not normalized");fi;
+  w:=List(data.omega,row->List(row,Rat));
+  for i in [1..n] do
+    if Set(data.multiplication[i])<>[0..n-1] or Length(w[i])<>n then Error("Finite table row is not a permutation");fi;
+    if data.multiplication[one][i]<>i-1 or data.multiplication[i][one]<>i-1 or w[one][i]<>0 or w[i][one]<>0 then Error("Finite input identity or extension is not normalized");fi;
+    for j in [1..n] do
+      ij:=data.multiplication[i][j]+1;
+      if data.s[ij]<>(data.s[i]+data.s[j]) mod 2 or data.rho[ij]<>(data.rho[i]+data.rho[j]) mod 2 then Error("Input sign is not a group character");fi;
+      for k in [1..n] do
+        jk:=data.multiplication[j][k]+1;
+        if data.multiplication[ij][k]<>data.multiplication[i][jk] then Error("Finite multiplication is not associative");fi;
+        t:=(-1)^(data.s[i]+data.rho[i])*w[j][k]-w[ij][k]+w[i][jk]-w[i][j];
+        if not IsInt(t) then Error("Real extension lift is not a twisted U1 cocycle");fi;
+      od;
+    od;
+  od;
+  return rec(groupOrder:=n,associativityTriples:=n^3,twistedExtensionTriples:=n^3,independentCharactersChecked:=true);
+end);
+
 BindGlobal("U1FiniteContext",function(data,depth)
-  local n,perms,G,iso,elements,index,c,R,identity;
-  n:=Length(data.multiplication);
-  if Length(data.s)<>n or Length(data.rho)<>n or Length(data.omega)<>n then Error("Finite input table lengths disagree");fi;
+  local n,perms,G,iso,elements,index,c,R,identity,validation;
+  validation:=U1ValidateFiniteInput(data);n:=Length(data.multiplication);
   perms:=List([1..n],i->PermList(List([1..n],j->data.multiplication[j][i]+1)));
   G:=Group(perms);iso:=IsomorphismPcpGroup(G);elements:=List(perms,p->Image(iso,p));G:=Image(iso);
   index:=U1Memo(g->Position(elements,g));
   R:=U1FiniteHolonomyResolution(G,depth);
   c:=U1NewContext(G,R,g->data.s[index(g)],g->data.rho[index(g)],
     function(g,h) return Rat(data.omega[index(g)][index(h)]);end,0);
-  c.input:=data;c.elementIndex:=index;
+  c.input:=data;c.elementIndex:=index;c.inputValidation:=validation;
   return c;
 end);
 BindGlobal("U1CyclicContext",function(n,sbit,rbit,extension)
@@ -38,8 +62,8 @@ BindGlobal("U1CyclicContext",function(n,sbit,rbit,extension)
   R:=U1FiniteHolonomyResolution(G,7);c:=U1NewContext(G,R,s,rho,omega,0);return c;
 end);
 BindGlobal("U1WallpaperContext",function(data,depth)
-  local affine,iso,G,pointMap,pointIndex,R,c;
-  LoadPackage("CrystCat");
+  local affine,iso,G,pointMap,pointIndex,R,c,validation;
+  LoadPackage("CrystCat");validation:=U1ValidateFiniteInput(data);
   affine:=SpaceGroupBBNWZ(2,data.catalog_number);iso:=IsomorphismPcpGroup(affine);G:=Image(iso);
   pointMap:=PointHomomorphism(affine);
   pointIndex:=U1Memo(g->Position(data.matrices,Image(pointMap,PreImageElm(iso,g))));
@@ -47,7 +71,7 @@ BindGlobal("U1WallpaperContext",function(data,depth)
   R:=U1ResolutionSpaceGroup(iso,depth);
   c:=U1NewContext(G,R,g->data.s[pointIndex(g)],g->data.rho[pointIndex(g)],
     function(g,h) return Rat(data.omega[pointIndex(g)][pointIndex(h)]);end,2);
-  c.input:=data;c.affine:=affine;c.iso:=iso;c.pointIndex:=pointIndex;return c;
+  c.input:=data;c.inputValidation:=validation;c.affine:=affine;c.iso:=iso;c.pointIndex:=pointIndex;return c;
 end);
 BindGlobal("U1CatalogContext",function(data,depth)
   if data.family="wallpaper" then return U1WallpaperContext(data,depth);fi;

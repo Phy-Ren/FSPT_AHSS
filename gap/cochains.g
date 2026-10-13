@@ -79,6 +79,7 @@ BindGlobal("U1LocalField",function(c,p,f,vs)
   od;return out;
 end);
 BindGlobal("U1Formula",function(c,op,d,state,extra,component,degree)
+  state:=ShallowCopy(state);extra:=ShallowCopy(extra);
   return U1Memo(function(xs...)
     local vs,g,request,name,p;
     if Length(xs)<>degree then Error("formula arity mismatch");fi;

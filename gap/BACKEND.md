@@ -73,3 +73,14 @@ AII Z2^2 and AI=0 with its nontrivial incoming quotient, a nonzero-background
 uniform IQH lift, and the full affine glide wallpaper group with its free
 charge summand. These examples validate the declared CI/charge/phase sector;
 they do not certify omitted physical sectors.
+
+Before constructing a finite context, the backend exhaustively checks the
+multiplication table, both independent characters, normalization and every
+triple of the twisted U(1) extension equation. Completed generators, incoming
+states and gauge reductions are checked against their exact native chain
+equations, including source closure. The output records the check count and
+integer gauge parameters. This is supplemented by 108 independent bar-tuple
+checks with distinct s/rho characters, a half-valued extension, negative
+integer gauges and comparison-homotopy primitives. Native identities and these
+bar regressions are explicit verification levels, not an exhaustive bar
+examination of every large campaign group.

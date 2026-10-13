@@ -6,8 +6,13 @@ BindGlobal("U1IntegerSource",function(c,d,sheet)
   return U1Formula(c,"integer_obstruction",d,rec(sheet:=sheet,charge:=U1Zero),rec(),fail,d+1);
 end);
 BindGlobal("U1Source",function(c,d,state)
-  if state.sheet=U1Zero then return U1ChargeSource(c,d,state.charge);fi;
-  return U1Formula(c,"source",d,state,rec(),fail,d+2);
+  local source;
+  if IsBound(state.sourceCache) and state.sourceCache.dimension=d and
+      state.sourceCache.sheet=state.sheet and state.sourceCache.charge=state.charge then return state.sourceCache.source;fi;
+  if state.sheet=U1Zero then source:=U1ChargeSource(c,d,state.charge);
+  else source:=U1Formula(c,"source",d,state,rec(),fail,d+2);fi;
+  state.sourceCache:=rec(dimension:=d,sheet:=state.sheet,charge:=state.charge,source:=source);
+  return source;
 end);
 BindGlobal("U1Product",function(c,d,a,b)
   local extra,charge,phase;
@@ -94,18 +99,43 @@ BindGlobal("U1ClosedPhaseCoordinates",function(c,d,H,f)
   if coords=fail then Error("Expected a closed terminal phase");fi;
   return coords;
 end);
+BindGlobal("U1ApplyDifferential",function(c,k,coeff,vector)
+  if Dimension(c.R)(k+1)=0 then return [];fi;
+  if vector=[] then return List([1..Dimension(c.R)(k+1)],i->0);fi;
+  return vector*U1Differential(c,k,coeff);
+end);
+BindGlobal("U1CheckCompletedState",function(c,d,state)
+  local sheet,charge,phase,integerSource,source;
+  sheet:=U1Native(c,d-2,"Zs",state.sheet);charge:=U1Native(c,d,"Zr",state.charge);
+  phase:=U1Native(c,d+1,"U1s",state.phase);
+  integerSource:=U1Native(c,d+1,"Zr",U1IntegerSource(c,d,state.sheet));
+  source:=U1Native(c,d+2,"U1s",U1Source(c,d,state));
+  if ForAny(U1ApplyDifferential(c,d-2,"Zs",sheet),x->x<>0) then Error("Completed CI sheet is not closed");fi;
+  if U1ApplyDifferential(c,d,"Zr",charge)<>integerSource then Error("Completed charge does not solve the integer source");fi;
+  if ForAny(U1ApplyDifferential(c,d+1,"Zs",phase)-source,x->U1Mod1(x)<>0) then Error("Completed phase does not solve its native source");fi;
+  if ForAny(U1ApplyDifferential(c,d+1,"Zr",integerSource),x->x<>0) then Error("Integer source is not closed");fi;
+  if ForAny(U1ApplyDifferential(c,d+2,"Zs",source),x->U1Mod1(x)<>0) then Error("Terminal source is not closed");fi;
+  if not IsBound(c.completedStateChecks) then c.completedStateChecks:=0;fi;
+  c.completedStateChecks:=c.completedStateChecks+1;
+  return rec(nativeSheet:=sheet,nativeCharge:=charge,nativePhase:=phase);
+end);
 BindGlobal("U1ReduceVacuum",function(c,d,state)
-  local a,u,v;
-  a:=state;
+  local a,u,v,record;
+  a:=state;record:=rec(nativeSheetParameter:=[],nativeChargeParameter:=[]);
   if a.sheet<>U1Zero then
     if d=2 then Error("Uniform IQH is not a gauge degree of freedom");fi;
     u:=U1Solve(c,d-2,"Zs",U1Scale(-1,a.sheet));
     if u=fail then Error("Requested sheet reduction is not exact");fi;
+    record.nativeSheetParameter:=U1Native(c,d-3,"Zs",u);
     a:=U1Gauge(c,d,a,u,U1Zero);
   fi;
   v:=U1Solve(c,d,"Zr",U1Scale(-1,a.charge));
   if v=fail then Error("Requested charge reduction is not exact");fi;
-  a:=U1Gauge(c,d,a,U1Zero,v);return a.phase;
+  record.nativeChargeParameter:=U1Native(c,d-1,"Zr",v);
+  a:=U1Gauge(c,d,a,U1Zero,v);U1CheckCompletedState(c,d,a);
+  record.nativeFinalPhase:=U1Native(c,d+1,"U1s",a.phase);
+  if not IsBound(c.reductionWitnesses) then c.reductionWitnesses:=[];fi;
+  Add(c.reductionWitnesses,record);return a.phase;
 end);
 # Presentation of the indicated filtration subquotient. Relations involving
 # later generators are eliminated over Z, not simply discarded.
@@ -131,6 +161,7 @@ BindGlobal("U1Classify",function(c,d,options...)
     np,nq,ns,relations,witnesses,i,j,v,state,source,phase,co,relation,
     sheetStates,sheetOrders,sheetBasis,integerSource,qseed,adjustment,root,
     coordinates,reduceCharge,gauge,orders,S,rank,result,obstructedSheets,fp,fq,fs,uniform,HI,multiple,terminalMultiple,trial,found;
+  c.completedStateChecks:=0;c.reductionWitnesses:=[];
   uniform:=d=2 and Length(options)>0 and IsBound(options[1].uniformIQH) and options[1].uniformIQH=true;
   if not d in [2,3] then Error("Global classification currently supports spatial dimensions 2 and 3");fi;
   if d=3 and c.vcd<>0 then Error("3+1D campaign currently requires a finite group");fi;
@@ -146,7 +177,7 @@ BindGlobal("U1Classify",function(c,d,options...)
     state:=rec(sheet:=U1Zero,charge:=U1CochainCombination(chargeBasis,v),phase:=U1Zero);
     source:=U1Source(c,d,state);phase:=U1SolveData(c,d+2,"U1s",source);
     if phase=fail then Error("Kernel charge lift has a terminal obstruction");fi;
-    state.phase:=phase.primitive;Add(chargeStates,state);
+    state.phase:=phase.primitive;U1CheckCompletedState(c,d,state);Add(chargeStates,state);
     Add(witnesses,rec(kind:="charge-lift",chargeCohomology:=v,nativeSource:=phase.nativeObstruction,nativePhase:=phase.nativePrimitive));
   od;
   np:=Length(HP.orders);nq:=Length(K);sheetStates:=[];sheetOrders:=[];obstructedSheets:=[];
@@ -181,7 +212,7 @@ BindGlobal("U1Classify",function(c,d,options...)
       state.charge:=U1Add(U1Scale(terminalMultiple,qseed),U1CochainCombination(chargeBasis,adjustment));
       phase:=U1SolveData(c,4,"U1s",U1Source(c,2,state));
       if phase=fail then Error("Uniform IQH terminal kernel failed to lift");fi;
-      state.phase:=phase.primitive;Add(sheetStates,state);Add(sheetOrders,0);
+      state.phase:=phase.primitive;U1CheckCompletedState(c,d,state);Add(sheetStates,state);Add(sheetOrders,0);
       Add(witnesses,rec(kind:="uniform-IQH-lift",sheetMultiplicity:=multiple*terminalMultiple,
         integerObstructionMultiplicity:=multiple,terminalObstructionMultiplicity:=terminalMultiple,
         chargeAdjustment:=adjustment,nativeSource:=phase.nativeObstruction,nativePhase:=phase.nativePrimitive));
@@ -201,7 +232,7 @@ BindGlobal("U1Classify",function(c,d,options...)
       state.charge:=U1Add(qseed,U1CochainCombination(chargeBasis,adjustment));
       phase:=U1SolveData(c,d+2,"U1s",U1Source(c,d,state));
       if phase=fail then Error("Adjusted CI source failed to lift");fi;
-      state.phase:=phase.primitive;Add(sheetStates,state);Add(sheetOrders,HC.orders[i]);
+      state.phase:=phase.primitive;U1CheckCompletedState(c,d,state);Add(sheetStates,state);Add(sheetOrders,HC.orders[i]);
       Add(witnesses,rec(kind:="CI-lift",sheetIndex:=i,chargeAdjustment:=adjustment,nativeSource:=phase.nativeObstruction,nativePhase:=phase.nativePrimitive));
     od;
   fi;
@@ -221,6 +252,7 @@ BindGlobal("U1Classify",function(c,d,options...)
   od;
   reduceCharge:=function(a)
     local qco,coords,target,diff,pco;
+    U1CheckCompletedState(c,d,a);
     qco:=HQ.coordinates(U1Native(c,d,"Zr",a.charge));
     if qco=fail then Error("Root charge is not closed");fi;
     if nq=0 then coords:=[];else coords:=qco*Ki;fi;
@@ -278,6 +310,9 @@ BindGlobal("U1Classify",function(c,d,options...)
     List(HP.generators,x->rec(kind:="phase",nativePhase:=x)),
     List(chargeStates,x->rec(kind:="charge",nativeCharge:=U1Native(c,d,"Zr",x.charge),nativePhase:=U1Native(c,d+1,"U1s",x.phase))),
     List(sheetStates,x->rec(kind:="CI",nativeSheet:=U1Native(c,d-2,"Zs",x.sheet),nativeCharge:=U1Native(c,d,"Zr",x.charge),nativePhase:=U1Native(c,d+1,"U1s",x.phase))));
+  result.nativeCompletionChecks:=c.completedStateChecks;
+  result.nativeChainIdentitiesVerified:=true;result.gaugeReductionWitnesses:=c.reductionWitnesses;
+  if IsBound(c.inputValidation) then result.inputValidation:=c.inputValidation;fi;
   if d=3 then result.neutralE8AbsentByCohomology:=U1Cohomology(c,1,"Zs").orders=[];fi;
   c.classificationStates:=rec(phase:=phaseBasis,charge:=chargeStates,sheet:=sheetStates);
   return result;
