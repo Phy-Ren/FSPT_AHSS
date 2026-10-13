@@ -76,6 +76,13 @@ E8 cochain map or identify individual solver roots with real-space generators.
 For proper rotations, a solver certificate that H1(G,Z)=0 permits direct
 comparison to the full reference group because that neutral decoration is absent.
 
+[The point-group discrepancy audit](point3_discrepancies.md) records the named
+physical roots behind D2, S4 and D2d disagreements. In particular, the source's
+odd-charge spin-half D2 center root violates its SU(2) double-group convention.
+An independent physical site-representation induction audit supplies exact
+mobile-orbit relations for D2 and D2d. These audits preserve comparison failures
+and do not replace the full source tables with inferred corrections.
+
 Historical cluster3 inspection found
 `/home/user/xyren/gap-insulator/pkg/SptSet/debug/exp_3d_point_groups_insulator_ez_diag.log`
 to be an incomplete run: it stops during the D2h differential computation with a

@@ -1,0 +1,174 @@
+{
+  "id": "point3_06_spin_half",
+  "physical_spin": "spin_half",
+  "scope": "Physical center states modulo all point-stabilizer atomic orbits, before any CI bubble relation.",
+  "stabilizer_coverage": "Exact arrangement of intersections of Fix(g); one generic representative per nonzero stratum, with every full center projective-character identity verified.",
+  "center_charge_step": 2,
+  "odd_charge_center_has_one_dimensional_representation": false,
+  "center_character_generator_indices": [
+    1,
+    2
+  ],
+  "presentation_coordinate_order": [
+    "charge/2",
+    "character_1",
+    "character_2"
+  ],
+  "atomic_orbit_relations": [
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "torsion_before_CI_bubbles": [
+    2,
+    2
+  ],
+  "freeRank_before_CI_bubbles": 0,
+  "orbit_witnesses": [
+    {
+      "point": [
+        1,
+        1,
+        1
+      ],
+      "point_stabilizer": [
+        0
+      ],
+      "orbit_size": 4,
+      "site_charge": 1,
+      "site_character_exponents_mod_16": {
+        "0": 0,
+        "4": 8
+      },
+      "induced_center_character_exponents_mod_16": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center_generator_orbit_permutations": [
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "relation": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "point": [
+        1,
+        1,
+        1
+      ],
+      "point_stabilizer": [
+        0
+      ],
+      "orbit_size": 4,
+      "site_charge": 2,
+      "site_character_exponents_mod_16": {
+        "0": 0,
+        "4": 0
+      },
+      "induced_center_character_exponents_mod_16": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center_generator_orbit_permutations": [
+        [
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "relation": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "point": [
+        0,
+        1,
+        0
+      ],
+      "point_stabilizer": [
+        0,
+        1
+      ],
+      "orbit_size": 2,
+      "site_charge": 1,
+      "site_character_exponents_mod_16": {
+        "0": 0,
+        "1": 4,
+        "4": 8,
+        "5": 12
+      },
+      "induced_center_character_exponents_mod_16": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "center_generator_orbit_permutations": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "relation": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "inputSHA256": "cb3bc0e85109b2dfaab72d7defb080a566e212d068fbd20d5c5fae2a9aa2a5fb"
+}
