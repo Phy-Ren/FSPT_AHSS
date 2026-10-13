@@ -1,7 +1,8 @@
 {
   "id": "point3_06_spin_half",
   "physical_spin": "spin_half",
-  "scope": "Physical center states modulo all point-stabilizer atomic orbits, before any CI bubble relation.",
+  "scope": "Conditional quotient of physical center representations by all induced point-stabilizer atomic orbits, before CI bubbles.",
+  "physical_equivalence_limit": "Exact representation induction does not by itself prove every orbit is an allowed trivial bubble. A path creating inverse-paired site representations and moving the compensating outer endpoints away remains to be exhibited.",
   "stabilizer_coverage": "Exact arrangement of intersections of Fix(g); one generic representative per nonzero stratum, with every full center projective-character identity verified.",
   "center_charge_step": 2,
   "odd_charge_center_has_one_dimensional_representation": false,

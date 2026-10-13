@@ -3,7 +3,9 @@
 
 Induce every one-dimensional site representation to a finite symmetry orbit.
 Fermionic orbit states use a determinant; bosonic orbit states use a product.
-This audits 0D states and ordinary mobile atomic orbits only, before CI bubbles.
+This computes a conditional quotient by induced atomic orbits, before CI
+bubbles. Identifying every such orbit with an allowed inverse-paired creation
+and adjoining path is an additional physical step, not proved by induction.
 It never supplies values to the AHSS backend.
 """
 from functools import lru_cache
@@ -169,7 +171,8 @@ def audit(record):
     diagonal = smith_normal_form(sp.Matrix(relations), domain=sp.ZZ).diagonal()
     orders = [abs(int(x)) for x in diagonal]
     return {"id": record["id"], "physical_spin": record["spin"],
-            "scope": "Physical center states modulo all point-stabilizer atomic orbits, before any CI bubble relation.",
+            "scope": "Conditional quotient of physical center representations by all induced point-stabilizer atomic orbits, before CI bubbles.",
+            "physical_equivalence_limit": "Exact representation induction does not by itself prove every orbit is an allowed trivial bubble. A path creating inverse-paired site representations and moving the compensating outer endpoints away remains to be exhibited.",
             "stabilizer_coverage": "Exact arrangement of intersections of Fix(g); one generic representative per nonzero stratum, with every full center projective-character identity verified.",
             "center_charge_step": charge_step,
             "odd_charge_center_has_one_dimensional_representation": charge_step == 1,

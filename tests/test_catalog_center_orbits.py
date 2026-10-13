@@ -23,7 +23,7 @@ class CenterOrbitTests(unittest.TestCase):
         self.assertIn([1, 0, 0], result["atomic_orbit_relations"])
         self.assertEqual(result["torsion_before_CI_bubbles"], [2, 2])
 
-    def test_d2d_neutral_axis_orbit_removes_a_center_character(self):
+    def test_d2d_neutral_axis_orbit_induces_a_center_character(self):
         for spin, expected in (("spinless", [2]), ("spin_half", [2, 2])):
             record = json.loads((ROOT / f"insulator_catalog/generated/point3_14_{spin}.json").read_text())
             result = module.audit(record)

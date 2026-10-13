@@ -33,8 +33,8 @@ degenerate irreducible representations (`main.tex:580`). This is a physical
 representation argument independent of the cochain implementation.
 
 The independent atomic-orbit computation in `audit_center_orbits.py` further
-finds that a two-site odd-electron orbit can remove charge 2 with trivial
-center characters. The resulting center quotient is Z2^2. The saved evidence
+finds that a two-site odd-electron orbit induces charge 2 with trivial
+center characters. Quotienting induced atomic orbits gives Z2^2. The saved evidence
 is `point3_D2_spin_half_center_orbit_audit.json`, including actual site
 characters and induced center characters. This agrees with the computed
 cochain result. We have not located an author-confirmed correction, so the
@@ -64,9 +64,10 @@ bosonic orbit it is a product. Every resulting full-group projective character
 identity is checked. Smith reduction is done only after those orbit relations
 are assembled.
 
-Already before any CI bubble, this gives:
+Conditionally quotienting by all these induced atomic orbits gives the
+following representation quotients before any CI bubble:
 
-| Physical spin | Center quotient by mobile atomic orbits | Source center layer |
+| Physical spin | Conditional induced-orbit quotient | Source center layer |
 | --- | --- | --- |
 | Spinless | Z2 | Z4 |
 | Spin-half | Z2^2 | Z2^3 |
@@ -75,17 +76,23 @@ The saved files are `point3_D2d_spinless_center_orbit_audit.json` and
 `point3_D2d_spin_half_center_orbit_audit.json`. A concrete relation common to
 both cases comes from a charge-zero two-site orbit at `(0,0,1)`. In catalog
 indexing its stabilizer is `[0,3,4,6]`; a site character with values
-`[1,-1,1,-1]` induces center values `[1,1,-1,1,-1,1,-1,-1]` and removes one
-center character. The exact double-group character and orbit permutations are
-retained in the JSON witness. This is an ordinary neutral atomic orbit, not an
-E8 quotient or a deletion of an arbitrary finite factor.
+`[1,-1,1,-1]` induces center values `[1,1,-1,1,-1,1,-1,-1]`. Treating this
+orbit as removable would remove one center character. The exact double-group
+character and orbit permutations are retained in the JSON witness. Its global
+orientation character is nontrivial, so it cannot simply be created from an
+invariant vacuum. To establish an allowed physical bubble relation, one must
+explicitly create inverse-paired site representations and deform compensating
+outer endpoints away using the source's adjoining equivalence. That path has
+not yet been constructed here. Exact induction and a conditional algebraic
+quotient must not be reported as a definitive physical 0D classification.
 
-For spinless D2d, combining the reduced center group with the two other named
+For spinless D2d, combining the conditional center quotient with the two other named
 non-E8 Z2 roots has the same abstract group as the current solver's Z2^3.
 That observation is not a constructed root-by-root map. For spin-half D2d,
-the center audit removes one of the two excess Z2 factors in the source-side
-comparison; the remaining difference requires an audit of the 2D pattern
-relations and incoming bubbles. This file does not claim that audit completed.
+the conditional quotient would remove one of the two excess Z2 factors in the
+source-side comparison. Establishing the allowed atomic bubble path and
+auditing the remaining 2D pattern relations and incoming bubbles are both
+outstanding. This file does not claim either audit completed.
 
 ## S4 rotoinversion
 
@@ -102,6 +109,13 @@ axis sites have residual C2 representations and their other allowed characters
 must also be included. The independent formula audit therefore checks the CI
 root square and its full gauge completion. No conclusion about a missing
 source extension is inferred solely from a truncated orbit relation.
+
+The completed [cyclic root audit](../docs/cyclic_root_audits.md) gives a
+separate exact cochain certificate: the CI root square retains phase period
+1/2 after its charge coboundary is removed. The direct gauge, short gauge,
+and sequential or joint reduction agree. This supports the computed order-4
+root independently of GAP and distinguishes the source extension claim from
+a transport-arithmetic failure.
 
 ## Reproduce the independent center audit
 

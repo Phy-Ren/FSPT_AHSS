@@ -80,7 +80,9 @@ comparison to the full reference group because that neutral decoration is absent
 physical roots behind D2, S4 and D2d disagreements. In particular, the source's
 odd-charge spin-half D2 center root violates its SU(2) double-group convention.
 An independent physical site-representation induction audit supplies exact
-mobile-orbit relations for D2 and D2d. These audits preserve comparison failures
+induced atomic characters for D2 and D2d. Its quotient is conditional on
+realizing the orbit rows by allowed inverse-paired creation and adjoining paths.
+These audits preserve comparison failures
 and do not replace the full source tables with inferred corrections.
 
 Historical cluster3 inspection found
