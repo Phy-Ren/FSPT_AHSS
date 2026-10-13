@@ -1,0 +1,5320 @@
+[
+  {
+    "id": "point2_01_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      },
+      {
+        "quantity": "stacking_vs_rotation_band_reduction",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "1809.01636v2",
+          "url": "https://arxiv.org/abs/1809.01636v2",
+          "source_file": "Shift.tex",
+          "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+          "location": "Table VI, class A; Sec V B, TeX ReductionA"
+        },
+        "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+        "center_presentation": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_01_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      },
+      {
+        "quantity": "stacking_vs_rotation_band_reduction",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "1809.01636v2",
+          "url": "https://arxiv.org/abs/1809.01636v2",
+          "source_file": "Shift.tex",
+          "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+          "location": "Table VI, class A; Sec V B, TeX ReductionA"
+        },
+        "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+        "center_presentation": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_02_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "published_source_discrepancy",
+        "calculated": {
+          "torsion": [
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        },
+        "reason": "Table gives C2=Z2 x Z2; the onsite U(1)^f x C2 charge-decoration control in 2112.15533 gives Z4. No reconciliation assumed."
+      },
+      {
+        "quantity": "stacking_vs_rotation_band_reduction",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "1809.01636v2",
+          "url": "https://arxiv.org/abs/1809.01636v2",
+          "source_file": "Shift.tex",
+          "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+          "location": "Table VI, class A; Sec V B, TeX ReductionA"
+        },
+        "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+        "center_presentation": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_02_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "published_source_discrepancy",
+        "calculated": {
+          "torsion": [
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        },
+        "reason": "Table gives C2=Z2 x Z2; the onsite U(1)^f x C2 charge-decoration control in 2112.15533 gives Z4. No reconciliation assumed."
+      },
+      {
+        "quantity": "stacking_vs_rotation_band_reduction",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "1809.01636v2",
+          "url": "https://arxiv.org/abs/1809.01636v2",
+          "source_file": "Shift.tex",
+          "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+          "location": "Table VI, class A; Sec V B, TeX ReductionA"
+        },
+        "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+        "center_presentation": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_03_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_03_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_04_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_04_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_05_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "published_source_discrepancy",
+        "calculated": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        },
+        "reason": "Table gives C2=Z2 x Z2; the onsite U(1)^f x C2 charge-decoration control in 2112.15533 gives Z4. No reconciliation assumed."
+      },
+      {
+        "quantity": "stacking_vs_rotation_band_reduction",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "1809.01636v2",
+          "url": "https://arxiv.org/abs/1809.01636v2",
+          "source_file": "Shift.tex",
+          "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+          "location": "Table VI, class A; Sec V B, TeX ReductionA"
+        },
+        "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+        "center_presentation": [
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_05_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "published_source_discrepancy",
+        "calculated": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            4,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        },
+        "reason": "Table gives C2=Z2 x Z2; the onsite U(1)^f x C2 charge-decoration control in 2112.15533 gives Z4. No reconciliation assumed."
+      },
+      {
+        "quantity": "stacking_vs_rotation_band_reduction",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "1809.01636v2",
+          "url": "https://arxiv.org/abs/1809.01636v2",
+          "source_file": "Shift.tex",
+          "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+          "location": "Table VI, class A; Sec V B, TeX ReductionA"
+        },
+        "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+        "center_presentation": [
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_06_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_06_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            8
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_07_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      },
+      {
+        "quantity": "stacking_vs_rotation_band_reduction",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "1809.01636v2",
+          "url": "https://arxiv.org/abs/1809.01636v2",
+          "source_file": "Shift.tex",
+          "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+          "location": "Table VI, class A; Sec V B, TeX ReductionA"
+        },
+        "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+        "center_presentation": [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_07_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      },
+      {
+        "quantity": "stacking_vs_rotation_band_reduction",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "1809.01636v2",
+          "url": "https://arxiv.org/abs/1809.01636v2",
+          "source_file": "Shift.tex",
+          "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+          "location": "Table VI, class A; Sec V B, TeX ReductionA"
+        },
+        "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+        "center_presentation": [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_08_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            3
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_08_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            3
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_09_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "published_source_discrepancy",
+        "calculated": {
+          "torsion": [
+            3,
+            12
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            6,
+            6
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        },
+        "reason": "Table gives C2=Z2 x Z2; the onsite U(1)^f x C2 charge-decoration control in 2112.15533 gives Z4. No reconciliation assumed."
+      },
+      {
+        "quantity": "stacking_vs_rotation_band_reduction",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            12
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            3,
+            12
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "1809.01636v2",
+          "url": "https://arxiv.org/abs/1809.01636v2",
+          "source_file": "Shift.tex",
+          "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+          "location": "Table VI, class A; Sec V B, TeX ReductionA"
+        },
+        "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+        "center_presentation": [
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            3
+          ]
+        ]
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_09_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "published_source_discrepancy",
+        "calculated": {
+          "torsion": [
+            3,
+            12
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            6,
+            6
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        },
+        "reason": "Table gives C2=Z2 x Z2; the onsite U(1)^f x C2 charge-decoration control in 2112.15533 gives Z4. No reconciliation assumed."
+      },
+      {
+        "quantity": "stacking_vs_rotation_band_reduction",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            12
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            3,
+            12
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "1809.01636v2",
+          "url": "https://arxiv.org/abs/1809.01636v2",
+          "source_file": "Shift.tex",
+          "source_sha256": "738f678b2121cd8ce68a0ede7ef48e1ffa4148be0fe4921b9a4caa53c45ea103",
+          "location": "Table VI, class A; Sec V B, TeX ReductionA"
+        },
+        "comparison_limit": "Does not claim absence of interaction-only roots. Equality is an independent band-generated-sector control, not a completeness proof.",
+        "center_presentation": [
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            3
+          ]
+        ]
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_10_spin_half",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            6
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            6
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "point2_10_spinless",
+    "checks": [
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            12
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            12
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Supplemental Table point (following D4 construction), currently lines 3547-3568"
+        }
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_01_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_01_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_02_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_02_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_03_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            -1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            -1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_03_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            -1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            -1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_04_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            -2
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            -2
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_04_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            -2
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            -2
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_05_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            -1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            -1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_05_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            -1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            -1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_06_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 2,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            0,
+            -2
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -2
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_06_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_07_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            -2,
+            0
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_07_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            -2,
+            0
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_08_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            2
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_08_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            2
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_09_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 2,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            -2
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -2
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_09_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            4,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            -1,
+            0
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_10_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_10_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4,
+            4,
+            8
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_11_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 2,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            -2
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -2
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_11_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4,
+            8
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4,
+            8
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_12_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            2,
+            -4
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            2,
+            -4
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_12_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            4
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            4
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            4
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            8
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            8
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            2
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_13_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            3,
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_13_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            3,
+            3,
+            3
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_14_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            6
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            6
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            1,
+            0
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_14_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            3
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            6
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            6
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            1,
+            0
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_15_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            6
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            6
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            6
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            6
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            1,
+            0
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            1,
+            0
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_15_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            6
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            6
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            6
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            6
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            1,
+            0
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            1,
+            0
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_16_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            6
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            6
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            6,
+            6
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            6,
+            6
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            6,
+            12
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            6,
+            12
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_16_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            6
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            6
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            6,
+            6
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            6,
+            6
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3,
+            6,
+            12
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3,
+            6,
+            12
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_17_spin_half",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            3
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            3
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2,
+            6
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2,
+            6
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 2,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 2,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 2,
+          "chargeRootSubgroupGeneratorFillings": [
+            2,
+            2
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 2,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  },
+  {
+    "id": "wallpaper_17_spinless",
+    "checks": [
+      {
+        "quantity": "finalChargeOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            6
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            6
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "finalPhaseOrders",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            2
+          ],
+          "freeRank": 0
+        },
+        "source": {
+          "arxiv": "2112.15533",
+          "url": "https://arxiv.org/abs/2112.15533",
+          "source_file": "U1f.tex",
+          "source_sha256": "e1f27c17480e681d09bc293c51ff972a6553cd2f6a1e723797368764ddb2d457",
+          "location": "Supplement H, the two wallpaper tables; duplicate TeX label tab:2dwallpaper"
+        }
+      },
+      {
+        "quantity": "stacking",
+        "status": "match",
+        "calculated": {
+          "torsion": [
+            2,
+            2,
+            12
+          ],
+          "freeRank": 1
+        },
+        "published": {
+          "torsion": [
+            2,
+            2,
+            12
+          ],
+          "freeRank": 1
+        },
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        }
+      },
+      {
+        "quantity": "free_charge_embedding",
+        "status": "requires_source_coordinate_map",
+        "published_charge_step": 1,
+        "source": {
+          "arxiv": "2012.15657",
+          "url": "https://arxiv.org/abs/2012.15657",
+          "source_file": "combine_sub.tex",
+          "source_sha256": "6f0723e1f4bfeab26ba50edeee66e5d4c17123d6407aa57ea7a0295e3b396fe9",
+          "location": "Main-text Table III, TeX label insulator U(1)"
+        },
+        "calculated_primitive_cell_charge_step": 1,
+        "witness": {
+          "allPresentationRelationsHaveZeroFilling": true,
+          "barCycle": "[tx|ty]-[ty|tx]",
+          "chargeRootSubgroupFillingStep": 1,
+          "chargeRootSubgroupGeneratorFillings": [
+            0,
+            1
+          ],
+          "ciGeneratorFillings": [],
+          "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+          "fillingStep": 1,
+          "generatorFillings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "orientation": "positive determinant in catalog affine coordinates",
+          "primitiveBasisGeneratesFullTranslationKernel": true,
+          "primitiveCellArea": 1,
+          "primitiveTranslationVectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "reason": "The printed Z or 2Z uses a decoration-coordinate normalization; its conversion to primitive-cell electron charge requires a Wyckoff multiplicity map. For example pg prints Z for an orbit with two electrons per primitive cell."
+      }
+    ],
+    "comparison_scope": "relativeUniformIQH0 subresult of full uniform-IQH calculation"
+  }
+]
