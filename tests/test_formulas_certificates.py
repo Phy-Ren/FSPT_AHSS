@@ -71,6 +71,31 @@ def residual(N):
 
 
 class UniversalCertificates(unittest.TestCase):
+    def test_closed_charge_cylinder_gauge_has_explicit_exact_difference(self):
+        from insulator._engine.prism import pull_on_path, evalface, interval_paths
+
+        # Work over the universal Boolean polynomial ring. The charge cocycle
+        # and arbitrary gauge parameter have 14 (p=3) or 20 (p=4) free bits.
+        # Half-valued phases forget all coefficient signs modulo one.
+        for p in (3, 4):
+            N = p + 1
+            charge, offset = cocycle(N, p)
+            faces = list(combinations(range(N + 1), p))
+            parameter = C(N, p - 1, {face: var(offset + i) for i, face in enumerate(faces)})
+            cylinder = P()
+            for path, sign in interval_paths(N):
+                pulled_charge = pull_on_path(charge, path)
+                height_parameter = C(N + 1, p - 1, {
+                    face: path[face[0]][0] * evalface(parameter, tuple(path[j][1] for j in face))
+                    for face in combinations(range(N + 2), p)})
+                cylinder_charge = pulled_charge + height_parameter.d()
+                cylinder += cylinder_charge.sq(2)(tuple(range(N + 2)))
+            short = (parameter.sq(2) + charge.cup(parameter.d(), p - 1, True)
+                     + charge.d().cup(parameter.d(), p, True))
+            witness = charge.cup(parameter, p - 1, True)
+            top = tuple(range(N + 1))
+            self.assertFalse(cylinder + short(top) + witness.d()(top))
+
     def test_cartan32_all_coefficients_and_degeneracies(self):
         z, off = cocycle(6, 3)
         x, off = cocycle(6, 2, off)
