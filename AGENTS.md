@@ -10,6 +10,6 @@ Keep 2+1D, 3+1D and 4+1D distinct. In each dimensional reference put obstruction
 
 State scope: CI-generated, localized-charge and group-cohomological phase sector. Do not claim unimplemented neutral E8, intrinsic higher-response or universal terminal parity comparison sectors. Do not install missing operations as zero.
 
-Reuse persistent SSH masters for cuhk-cluster3 and its head host. Run classification campaigns and expensive numerical work in allocated compute-node jobs. Preserve immutable run inputs, hashes, logs and witnesses. Do not overwrite accepted or running results.
+Reuse persistent SSH masters for cuhk-cluster3 and its compute nodes. The user explicitly confirmed on 2026-10-13 that current cluster practice is direct execution on idle compute nodes; a head/PBS allocation is not required. Check load first, limit concurrency and memory, and run classification campaigns on compute nodes. Preserve immutable run inputs, hashes, logs and witnesses. Do not overwrite accepted or running results.
 
 Make reviewable commits. Never stage another agent's unfinished work without coordination. Tests must substantiate mathematical identities or end-to-end classification behavior.
