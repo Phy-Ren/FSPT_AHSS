@@ -1,25 +1,4 @@
-# CSV writers use RFC-style CRLF; retain the archived bytes.
-*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
-# External inputs are byte-preserved evidence, including legacy log whitespace.
-results/external_comparison/inputs/** -text -diff
-# Archive hashes refer to the original bytes on every checkout platform.
-results/classification_frozen/** -text
-results/space_groups/** -text
-results/space_groups_spinless/** -text
-results/pip_diagnostics/** -text
-results/point_groups/** -text
-results/upper_carry_scope/** -text
-results/optimization_validation/** -text
-results/performance_environment/** -text
-results/space_groups/tasks/** -text -diff
-results/space_groups_spinless/tasks/** -text -diff
-results/point_groups/tasks/** -text -diff
-results/optimization_validation/point_group_backend/tasks/** -text -diff
-results/optimization_validation/point_group_backend/marked_audit/tasks/** -text -diff
-results/optimization_validation/full_optimized_v08/tasks/** -text -diff
-results/optimization_validation/background_v3/runs/*/tasks/** -text -diff
-results/performance_environment/tasks/** -text -diff
-results/performance_environment/spinless_20260927/raw/runs/tasks/** -text -diff
-
-/results/complete_formulas/** -text
-/fspt/data/full_formula/** -text
+* text=auto
+*.json text eol=lf
+*.py text eol=lf
+*.g text eol=lf
