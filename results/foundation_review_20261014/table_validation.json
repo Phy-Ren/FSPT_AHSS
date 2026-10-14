@@ -1,6 +1,6 @@
 {
   "generator": "scripts/build_foundation_tables.py",
-  "generator_sha256": "cff15938bde1d719f11e0c576fc1520bfbc30429a1024e4e8da1858ef7baeaf9",
+  "generator_sha256": "2b10d2076053d487bbcc22f4b1c67040219747ec00b3f7ad08698a034ce5fc42",
   "inputs_sha256": {
     "results/two_dimensional_20261013/results.json": "bb21c2f171ef98a31d29dadef49a98e9d71a96ad3902d12ee4ee001cf9939b25",
     "results/three_dimensional_20261013/results.json": "31c7739b39e9634e46a76ddca97f55741bff6990aa2780b36d90eea319e4622a",
@@ -20,280 +20,532 @@
     "benchmarks/mirror_interacting_2105.02682.json": "9af46718b614de1f4a9943078246301a6ae5539df65a47893cd6cc82976ee137"
   },
   "row_counts": {
-    "relative_point2": 20,
-    "relative_wallpaper": 34,
-    "all_n0_retained_model_2d": 54,
-    "retained_model_point3": 64,
-    "full_E8_reference_point3": 64,
-    "full_E8_reference_2d": 54,
-    "diagnostics/point2_band_generated_interacting_reduction": 10
+    "e0_zero/n0_zero_point2_spinless": 10,
+    "e0_zero/n0_all_point2_spinless": 10,
+    "e0_zero/n0_zero_wallpaper_spinless": 17,
+    "e0_zero/n0_all_wallpaper_spinless": 17,
+    "without_e8/point3_spinless": 32,
+    "diagnostics/point2_band_generated_interacting_reduction_spinless": 5,
+    "e0_zero/n0_zero_point2_spin_half": 10,
+    "e0_zero/n0_all_point2_spin_half": 10,
+    "e0_zero/n0_zero_wallpaper_spin_half": 17,
+    "e0_zero/n0_all_wallpaper_spin_half": 17,
+    "without_e8/point3_spin_half": 32,
+    "diagnostics/point2_band_generated_interacting_reduction_spin_half": 5
   },
   "single_group_single_spin_rows_verified": true,
+  "single_spin_single_family_single_n0_scope_per_file_verified": true,
+  "e0_scope_separated_per_file_verified": true,
   "band_generated_diagnostic_excluded_from_main_tables": true,
-  "full_E8_tables_have_no_computed_physical_column": true,
+  "E8_inclusive_tables_deferred_not_generated": true,
+  "legacy_mixed_spin_tables_removed": [
+    "relative_point2",
+    "relative_wallpaper",
+    "all_n0_retained_model_2d",
+    "retained_model_point3",
+    "full_E8_reference_point3",
+    "full_E8_reference_2d",
+    "diagnostics/point2_band_generated_interacting_reduction"
+  ],
   "debray_improper_3d_not_projected": true,
   "debray_printed_d2_d6_values_preserved_with_separate_proof_audit": true,
   "debray_fixture_loaded": true,
   "mirror_fixture_loaded": true,
   "availability_counts": {
-    "relative_point2": {
+    "e0_zero/n0_zero_point2_spinless": {
       "model_stacking": {
-        "available": 20
+        "available": 10
       },
       "R2_journal": {
-        "available": 20
+        "available": 10
       },
       "R2_arxiv": {
-        "available": 20
+        "available": 10
       },
       "Debray_relative": {
-        "available": 20
+        "available": 10
       }
     },
-    "relative_wallpaper": {
+    "e0_zero/n0_zero_point2_spin_half": {
       "model_stacking": {
-        "available": 34
+        "available": 10
       },
       "R2_journal": {
-        "available": 34
+        "available": 10
       },
       "R2_arxiv": {
-        "available": 34
+        "available": 10
+      },
+      "Debray_relative": {
+        "available": 10
+      }
+    },
+    "e0_zero/n0_zero_wallpaper_spinless": {
+      "model_stacking": {
+        "available": 17
+      },
+      "R2_journal": {
+        "available": 17
+      },
+      "R2_arxiv": {
+        "available": 17
       },
       "MCB_relative": {
-        "available": 10,
-        "not_applicable": 24
+        "available": 5,
+        "not_applicable": 12
       },
       "model_charge": {
-        "available": 34
+        "available": 17
       },
       "L2_charge": {
-        "available": 34
+        "available": 17
       },
       "model_phase": {
-        "available": 34
+        "available": 17
       },
       "L2_phase": {
-        "available": 34
+        "available": 17
       },
       "filling_map": {
-        "unverified": 34
+        "unverified": 17
       }
     },
-    "all_n0_retained_model_2d": {
-      "model": {
-        "available": 54
-      },
-      "n0_image": {
-        "available": 54
-      },
-      "physical_product": {
-        "unverified": 20,
-        "available": 34
+    "e0_zero/n0_zero_wallpaper_spin_half": {
+      "model_stacking": {
+        "available": 17
       },
       "R2_journal": {
-        "not_applicable": 20,
-        "available": 34
+        "available": 17
       },
       "R2_arxiv": {
-        "not_applicable": 20,
-        "available": 34
+        "available": 17
       },
-      "MCB_e0_zero": {
-        "not_applicable": 44,
+      "MCB_relative": {
+        "available": 5,
+        "not_applicable": 12
+      },
+      "model_charge": {
+        "available": 17
+      },
+      "L2_charge": {
+        "available": 17
+      },
+      "model_phase": {
+        "available": 17
+      },
+      "L2_phase": {
+        "available": 17
+      },
+      "filling_map": {
+        "unverified": 17
+      }
+    },
+    "e0_zero/n0_all_point2_spinless": {
+      "model": {
         "available": 10
+      },
+      "n0_image": {
+        "available": 10
+      },
+      "physical_product": {
+        "unverified": 5,
+        "available": 5
+      },
+      "R2_journal": {
+        "not_applicable": 5,
+        "available": 5
+      },
+      "R2_arxiv": {
+        "not_applicable": 5,
+        "available": 5
       },
       "Debray_e0_zero": {
-        "available": 20,
-        "not_applicable": 34
+        "available": 10
       }
     },
-    "retained_model_point3": {
+    "e0_zero/n0_all_point2_spin_half": {
       "model": {
-        "available": 64
+        "available": 10
+      },
+      "n0_image": {
+        "available": 10
+      },
+      "physical_product": {
+        "unverified": 5,
+        "available": 5
+      },
+      "R2_journal": {
+        "not_applicable": 5,
+        "available": 5
+      },
+      "R2_arxiv": {
+        "not_applicable": 5,
+        "available": 5
+      },
+      "Debray_e0_zero": {
+        "available": 10
+      }
+    },
+    "e0_zero/n0_all_wallpaper_spinless": {
+      "model": {
+        "available": 17
+      },
+      "n0_image": {
+        "available": 17
+      },
+      "physical_product": {
+        "unverified": 5,
+        "available": 12
+      },
+      "R2_journal": {
+        "not_applicable": 5,
+        "available": 12
+      },
+      "R2_arxiv": {
+        "not_applicable": 5,
+        "available": 12
+      },
+      "MCB_e0_zero": {
+        "available": 5,
+        "not_applicable": 12
+      }
+    },
+    "e0_zero/n0_all_wallpaper_spin_half": {
+      "model": {
+        "available": 17
+      },
+      "n0_image": {
+        "available": 17
+      },
+      "physical_product": {
+        "unverified": 5,
+        "available": 12
+      },
+      "R2_journal": {
+        "not_applicable": 5,
+        "available": 12
+      },
+      "R2_arxiv": {
+        "not_applicable": 5,
+        "available": 12
+      },
+      "MCB_e0_zero": {
+        "available": 5,
+        "not_applicable": 12
+      }
+    },
+    "without_e8/point3_spinless": {
+      "model": {
+        "available": 32
       },
       "scope": {
-        "available": 64
+        "available": 32
       },
       "R3_arxiv": {
-        "available": 64
+        "available": 32
       },
       "R3_journal": {
-        "available": 64
+        "available": 32
       },
       "Debray_retained": {
-        "available": 22,
-        "unverified": 42
+        "available": 11,
+        "unverified": 21
       },
       "NMLW_retained": {
-        "not_applicable": 62,
-        "available": 2
+        "not_applicable": 31,
+        "available": 1
       }
     },
-    "full_E8_reference_point3": {
+    "without_e8/point3_spin_half": {
+      "model": {
+        "available": 32
+      },
+      "scope": {
+        "available": 32
+      },
       "R3_arxiv": {
-        "available": 64
+        "available": 32
       },
       "R3_journal": {
-        "available": 64
+        "available": 32
       },
-      "Debray_full": {
-        "available": 40,
-        "unverified": 24
+      "Debray_retained": {
+        "available": 11,
+        "unverified": 21
       },
-      "NMLW_full": {
-        "not_applicable": 62,
-        "available": 2
+      "NMLW_retained": {
+        "not_applicable": 31,
+        "available": 1
       }
     },
-    "full_E8_reference_2d": {
-      "MCB_full": {
-        "not_applicable": 44,
-        "available": 10
-      },
-      "Debray_full": {
-        "available": 20,
-        "not_applicable": 34
-      }
-    },
-    "diagnostics/point2_band_generated_interacting_reduction": {
+    "diagnostics/point2_band_generated_interacting_reduction_spinless": {
       "model": {
-        "available": 10
+        "available": 5
       },
       "B2_interacting_reduction": {
-        "available": 10
+        "available": 5
+      }
+    },
+    "diagnostics/point2_band_generated_interacting_reduction_spin_half": {
+      "model": {
+        "available": 5
+      },
+      "B2_interacting_reduction": {
+        "available": 5
       }
     }
   },
   "comparison_counts": {
-    "relative_point2": {
+    "e0_zero/n0_zero_point2_spinless": {
       "model_stacking": {
-        "not_compared": 20
+        "not_compared": 10
       },
       "R2_journal": {
-        "abstract_match": 11,
-        "abstract_difference": 9
-      },
-      "R2_arxiv": {
-        "abstract_match": 14,
+        "abstract_match": 4,
         "abstract_difference": 6
       },
-      "Debray_relative": {
-        "abstract_match": 20
-      }
-    },
-    "relative_wallpaper": {
-      "model_stacking": {
-        "not_compared": 34
-      },
-      "R2_journal": {
-        "abstract_match": 34
-      },
       "R2_arxiv": {
-        "abstract_match": 34
+        "abstract_match": 7,
+        "abstract_difference": 3
       },
-      "MCB_relative": {
-        "abstract_match": 10,
-        "not_compared": 24
-      },
-      "model_charge": {
-        "not_compared": 34
-      },
-      "L2_charge": {
-        "abstract_match": 34
-      },
-      "model_phase": {
-        "not_compared": 34
-      },
-      "L2_phase": {
-        "abstract_match": 34
-      },
-      "filling_map": {
-        "not_compared": 34
+      "Debray_relative": {
+        "abstract_match": 10
       }
     },
-    "all_n0_retained_model_2d": {
-      "model": {
-        "not_compared": 54
-      },
-      "n0_image": {
-        "documented": 54
-      },
-      "physical_product": {
-        "not_compared": 20,
-        "documented": 34
+    "e0_zero/n0_zero_point2_spin_half": {
+      "model_stacking": {
+        "not_compared": 10
       },
       "R2_journal": {
-        "not_compared": 20,
-        "abstract_match": 31,
+        "abstract_match": 7,
         "abstract_difference": 3
       },
       "R2_arxiv": {
-        "not_compared": 20,
-        "abstract_match": 34
+        "abstract_match": 7,
+        "abstract_difference": 3
       },
-      "MCB_e0_zero": {
-        "not_compared": 44,
+      "Debray_relative": {
         "abstract_match": 10
-      },
-      "Debray_e0_zero": {
-        "abstract_match": 20,
-        "not_compared": 34
       }
     },
-    "retained_model_point3": {
-      "model": {
-        "not_compared": 64
+    "e0_zero/n0_zero_wallpaper_spinless": {
+      "model_stacking": {
+        "not_compared": 17
       },
-      "scope": {
-        "documented": 64
+      "R2_journal": {
+        "abstract_match": 17
       },
-      "R3_arxiv": {
-        "abstract_match": 51,
-        "abstract_difference": 13
+      "R2_arxiv": {
+        "abstract_match": 17
       },
-      "R3_journal": {
-        "abstract_match": 51,
-        "abstract_difference": 13
+      "MCB_relative": {
+        "abstract_match": 5,
+        "not_compared": 12
       },
-      "Debray_retained": {
-        "abstract_match": 20,
-        "not_compared": 42,
-        "abstract_difference": 2
+      "model_charge": {
+        "not_compared": 17
       },
-      "NMLW_retained": {
-        "not_compared": 62,
-        "abstract_match": 2
+      "L2_charge": {
+        "abstract_match": 17
+      },
+      "model_phase": {
+        "not_compared": 17
+      },
+      "L2_phase": {
+        "abstract_match": 17
+      },
+      "filling_map": {
+        "not_compared": 17
       }
     },
-    "full_E8_reference_point3": {
-      "R3_arxiv": {
-        "not_compared": 64
+    "e0_zero/n0_zero_wallpaper_spin_half": {
+      "model_stacking": {
+        "not_compared": 17
       },
-      "R3_journal": {
-        "not_compared": 64
+      "R2_journal": {
+        "abstract_match": 17
       },
-      "Debray_full": {
-        "not_compared": 64
+      "R2_arxiv": {
+        "abstract_match": 17
       },
-      "NMLW_full": {
-        "not_compared": 64
+      "MCB_relative": {
+        "abstract_match": 5,
+        "not_compared": 12
+      },
+      "model_charge": {
+        "not_compared": 17
+      },
+      "L2_charge": {
+        "abstract_match": 17
+      },
+      "model_phase": {
+        "not_compared": 17
+      },
+      "L2_phase": {
+        "abstract_match": 17
+      },
+      "filling_map": {
+        "not_compared": 17
       }
     },
-    "full_E8_reference_2d": {
-      "MCB_full": {
-        "not_compared": 54
-      },
-      "Debray_full": {
-        "not_compared": 54
-      }
-    },
-    "diagnostics/point2_band_generated_interacting_reduction": {
+    "e0_zero/n0_all_point2_spinless": {
       "model": {
         "not_compared": 10
       },
-      "B2_interacting_reduction": {
+      "n0_image": {
+        "documented": 10
+      },
+      "physical_product": {
+        "not_compared": 5,
+        "documented": 5
+      },
+      "R2_journal": {
+        "not_compared": 5,
+        "abstract_match": 2,
+        "abstract_difference": 3
+      },
+      "R2_arxiv": {
+        "not_compared": 5,
+        "abstract_match": 5
+      },
+      "Debray_e0_zero": {
         "abstract_match": 10
+      }
+    },
+    "e0_zero/n0_all_point2_spin_half": {
+      "model": {
+        "not_compared": 10
+      },
+      "n0_image": {
+        "documented": 10
+      },
+      "physical_product": {
+        "not_compared": 5,
+        "documented": 5
+      },
+      "R2_journal": {
+        "not_compared": 5,
+        "abstract_match": 5
+      },
+      "R2_arxiv": {
+        "not_compared": 5,
+        "abstract_match": 5
+      },
+      "Debray_e0_zero": {
+        "abstract_match": 10
+      }
+    },
+    "e0_zero/n0_all_wallpaper_spinless": {
+      "model": {
+        "not_compared": 17
+      },
+      "n0_image": {
+        "documented": 17
+      },
+      "physical_product": {
+        "not_compared": 5,
+        "documented": 12
+      },
+      "R2_journal": {
+        "not_compared": 5,
+        "abstract_match": 12
+      },
+      "R2_arxiv": {
+        "not_compared": 5,
+        "abstract_match": 12
+      },
+      "MCB_e0_zero": {
+        "abstract_match": 5,
+        "not_compared": 12
+      }
+    },
+    "e0_zero/n0_all_wallpaper_spin_half": {
+      "model": {
+        "not_compared": 17
+      },
+      "n0_image": {
+        "documented": 17
+      },
+      "physical_product": {
+        "not_compared": 5,
+        "documented": 12
+      },
+      "R2_journal": {
+        "not_compared": 5,
+        "abstract_match": 12
+      },
+      "R2_arxiv": {
+        "not_compared": 5,
+        "abstract_match": 12
+      },
+      "MCB_e0_zero": {
+        "abstract_match": 5,
+        "not_compared": 12
+      }
+    },
+    "without_e8/point3_spinless": {
+      "model": {
+        "not_compared": 32
+      },
+      "scope": {
+        "documented": 32
+      },
+      "R3_arxiv": {
+        "abstract_match": 26,
+        "abstract_difference": 6
+      },
+      "R3_journal": {
+        "abstract_match": 27,
+        "abstract_difference": 5
+      },
+      "Debray_retained": {
+        "abstract_match": 11,
+        "not_compared": 21
+      },
+      "NMLW_retained": {
+        "not_compared": 31,
+        "abstract_match": 1
+      }
+    },
+    "without_e8/point3_spin_half": {
+      "model": {
+        "not_compared": 32
+      },
+      "scope": {
+        "documented": 32
+      },
+      "R3_arxiv": {
+        "abstract_match": 25,
+        "abstract_difference": 7
+      },
+      "R3_journal": {
+        "abstract_match": 24,
+        "abstract_difference": 8
+      },
+      "Debray_retained": {
+        "abstract_match": 9,
+        "not_compared": 21,
+        "abstract_difference": 2
+      },
+      "NMLW_retained": {
+        "not_compared": 31,
+        "abstract_match": 1
+      }
+    },
+    "diagnostics/point2_band_generated_interacting_reduction_spinless": {
+      "model": {
+        "not_compared": 5
+      },
+      "B2_interacting_reduction": {
+        "abstract_match": 5
+      }
+    },
+    "diagnostics/point2_band_generated_interacting_reduction_spin_half": {
+      "model": {
+        "not_compared": 5
+      },
+      "B2_interacting_reduction": {
+        "abstract_match": 5
       }
     }
   }

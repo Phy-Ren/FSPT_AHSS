@@ -25,10 +25,14 @@ bordism computation without being the physical free-band classification.
 | Many-body atomic / fragile invariants | A diagnostic for the stated atomic equivalence or response; not automatically a stable invertible-phase classification. |
 | Free-band classification | Excluded from the main comparison tables. |
 
-Each concrete `group x physical spin` has its own row. Distinct papers have
-distinct columns; changed preprint and journal versions have distinct
-columns. A charge or phase filtration layer has its own column and is not
-presented as a full stacking group. Missing source coverage is explicit.
+Each table file contains exactly one physical spin convention and one
+catalog family. Spinless and spin-half results never share a table. In
+2+1D, `n0=0` and all allowed `n0` have separate files, and all current
+tables have `e0=0`. E8-inclusive tables are deferred until that decoration
+is implemented and reviewed. Distinct papers have distinct columns;
+changed preprint and journal versions have distinct columns. A charge or
+phase filtration layer has its own column and is not presented as a full
+stacking group. Missing source coverage is explicit.
 There is no majority vote over columns and no author-level reliability
 score. Shared constructions or revisions following another paper's results
 are recorded as limits on independence.

@@ -13,13 +13,16 @@ for equations, provenance and coverage.
 
 **Start with the [foundation review](docs/foundations/README.md) and
 [rebuilt comparison tables](results/foundation_review_20261014/README.md).**
-Every group and physical spin has its own row, and every source has its own
-column. The current model, proposed E8 extension, and 2D response sectors have
-separate documents. Main comparison tables use interacting classifications;
-band-generated interacting reductions appear only in a diagnostic table.
+Spinless and spin-half results have separate table files. In 2+1D, the
+`n0=0` and all-allowed-`n0` tables are also separate; all current tables
+exclude independent E8 decoration (`e0=0` in 2+1D). Each source has its own
+column. E8 decoration and full E8-inclusive tables are deferred.
+Main comparison tables use interacting classifications; band-generated
+interacting reductions appear only in separate diagnostic tables.
 
 The first campaigns are complete: **172 successful calculations** across both
-physical spin conventions, including independent relative and full-IQH 2D runs.
+physical spin conventions, including independent `n0=0` and all-allowed-`n0`
+2D runs, both with `e0=0`.
 The [original campaign report](results/README.md) preserves computation
 provenance. Its first summary is historical; use the rebuilt per-case tables
 for current comparisons, source versions, bordism evidence and unresolved

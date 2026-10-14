@@ -1,8 +1,11 @@
-# Adding the independent neutral E8 coefficient
+# E8 extension notes (deferred)
 
-Status: 2026-10-14. This page describes the mathematical input needed to
-extend the model. E8 formulas are not implemented. The definition and
-validation status of the present model are on the separate
+Status: deferred, 2026-10-14. These notes preserve the mathematical input
+for future work. E8 decoration is not implemented, and full E8-inclusive
+classification tables are deferred until a separate implementation and
+review. The previous reference-only full tables have been withdrawn from
+the active comparison set; their source fixtures remain available.
+The definition and validation status of the present model are on the separate
 [CI-sector page](ci_sector.md).
 
 **The coefficient to add.**

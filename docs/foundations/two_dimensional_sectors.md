@@ -3,7 +3,13 @@
 Status: 2026-10-14. This page distinguishes the response sectors and their
 stacking structures. The current cochain model's general validation status
 is on the [CI-sector page](ci_sector.md). Constructing the additional
-neutral coefficient is the separate [E8 extension task](e8_extension.md).
+neutral coefficient is the deferred [E8 extension](e8_extension.md).
+
+The active tables have separate files for `n0=0` and all allowed `n0`,
+and separate files for spinless and spin-half results within each choice.
+All these files use `e0=0`. The separate
+[e0-inclusive status file](../../results/foundation_review_20261014/e0_included/README.md)
+contains no classification table: those results are deferred.
 
 The current 2+1D state is `(n0,n2,nu3)`, where `n0` counts uniform
 electronic CI layers. In the full electronic coefficient lattice there is

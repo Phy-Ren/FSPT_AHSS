@@ -8,7 +8,7 @@ The protocol has been reorganized by physical scope:
   and the remaining physical identification.
 - [2+1D sector definitions](foundations/two_dimensional_sectors.md): zero
   kernel, fixed fibers, all uniform IQH, and response restrictions.
-- [Independent neutral extension](foundations/e8_extension.md): coefficient
+- [Deferred neutral extension notes](foundations/e8_extension.md): coefficient
   degrees, incoming-class bounds, and missing mathematical operations.
 
 The [exact saved-kernel audit](../results/calibration_20261014/audit_2d_sectors.py)

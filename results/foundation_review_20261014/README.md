@@ -1,66 +1,74 @@
-# Interacting insulator comparisons, rebuilt 2026-10-14
+# Interacting insulator comparisons
 
-Every row is one group and one physical spin. Each source has its own
-column, with separate versions where the published values differ.
-The adjacent CSV and JSON retain the same rows, exact invariant factors,
-scope, unavailable-value reasons and source locations.
+Each table file contains one physical spin convention, one catalog family,
+and one response sector. Sources and publication versions have separate
+columns. Markdown, CSV and JSON copies contain the same cases and values.
 
-## Present model without an independent E8 field
+All active tables omit independent E8 decoration. In 2+1D this means
+`e0=0`. The `n0=0` and all-allowed-`n0` results are different files, even
+when a symmetry forces all allowed `n0` to vanish.
 
-| Table | Rows | Object |
-|---|---:|---|
-| [2D point groups](relative_point2.md) | 20 | Relative subgroup, n0=e0=0 |
-| [2D wallpaper groups](relative_wallpaper.md) | 34 | Relative subgroup, n0=e0=0; charge and phase layers distinguished from stacking |
-| [All allowed n0 in 2D](all_n0_retained_model_2d.md) | 54 | Current model with no independent e0; physical nonzero-n0 product calibration remains open |
-| [3D point groups](retained_model_point3.md) | 64 | Current CI/charge/phase model; source-side quotients individually labelled |
+## Spinless tables
 
-A fixed nonzero n0 fiber is a torsor, not another stacking group. The
-all-n0 table does not silently include the independent neutral response.
-See the separate [sector definition](../../docs/foundations/two_dimensional_sectors.md)
-and [model status](../../docs/foundations/ci_sector.md).
+| Scope | Separate result file | Cases |
+|---|---|---:|
+| 2+1D point groups, n0=0, e0=0 | [Spinless point groups, n0=0](e0_zero/n0_zero_point2_spinless.md) | 10 |
+| 2+1D wallpaper groups, n0=0, e0=0 | [Spinless wallpaper groups, n0=0](e0_zero/n0_zero_wallpaper_spinless.md) | 17 |
+| 2+1D point groups, all allowed n0, e0=0 | [Spinless point groups, all n0](e0_zero/n0_all_point2_spinless.md) | 10 |
+| 2+1D wallpaper groups, all allowed n0, e0=0 | [Spinless wallpaper groups, all n0](e0_zero/n0_all_wallpaper_spinless.md) | 17 |
+| 3+1D point groups, current model without independent E8 | [Spinless 3D point groups](without_e8/point3_spinless.md) | 32 |
 
-## Full physical references including the neutral response
+## Spin-half tables
 
-| Reference-only table | Rows | Coverage |
-|---|---:|---|
-| [2D full-response references](full_E8_reference_2d.md) | 54 | Verified source cells only; unextracted cells explicitly marked |
-| [3D full physical references](full_E8_reference_point3.md) | 64 | Full source groups; current full-theory calculation marked not computed |
+| Scope | Separate result file | Cases |
+|---|---|---:|
+| 2+1D point groups, n0=0, e0=0 | [Spin-half point groups, n0=0](e0_zero/n0_zero_point2_spin_half.md) | 10 |
+| 2+1D wallpaper groups, n0=0, e0=0 | [Spin-half wallpaper groups, n0=0](e0_zero/n0_zero_wallpaper_spin_half.md) | 17 |
+| 2+1D point groups, all allowed n0, e0=0 | [Spin-half point groups, all n0](e0_zero/n0_all_point2_spin_half.md) | 10 |
+| 2+1D wallpaper groups, all allowed n0, e0=0 | [Spin-half wallpaper groups, all n0](e0_zero/n0_all_wallpaper_spin_half.md) | 17 |
+| 3+1D point groups, current model without independent E8 | [Spin-half 3D point groups](without_e8/point3_spin_half.md) | 32 |
 
-These files do not append a factor to a model result and call that a
-calculation. The additional fields and missing operations are specified
-on the separate [E8 extension page](../../docs/foundations/e8_extension.md).
+The all-`n0` tables use the current supplied product convention; its
+universal nonzero-`n0` physical calibration remains open. A fixed nonzero
+`n0` fiber is not another stacking group. See the
+[sector definitions](../../docs/foundations/two_dimensional_sectors.md)
+and [current model status](../../docs/foundations/ci_sector.md).
+The 3D tables retain explicitly labelled source-side quotients where
+applicable; they do not claim a computed full-E8 classification.
 
-## Diagnostics and provenance
+## E8-inclusive results are deferred
 
-The [band-generated interacting reduction](diagnostics/point2_band_generated_interacting_reduction.md)
-is a separate diagnostic. It is not a column in the complete interacting
-classification table. Raw free-fermion classifications are not used.
-Other candidate papers with different symmetry or atomic equivalence are
-assessed in the [interacting reference policy](../../docs/foundations/interacting_reference_policy.md).
+The current [e0=0 scope](e0_zero/README.md) and the
+[deferred e0-inclusive status](e0_included/README.md) have separate files.
+There is no active E8-inclusive classification table. E8 decoration has
+not been implemented; complete tables will be produced separately after
+that work. The earlier reference-only full tables are preserved in Git
+history at `f918528`, and their raw reference fixtures remain available.
+[Extension notes](../../docs/foundations/e8_extension.md) are deferred
+research notes, not current calculation results.
 
-The [D2/D6 bordism grading audit](../../docs/foundations/debray_d2_grading_audit.md)
-is separate from the printed-reference columns. It uses an independently
-published connective-homology splitting, reads no program classifications,
-and records the source theorem and the derived result separately. The
-printed values have not been overwritten to improve a match.
+## Separate diagnostics and provenance
 
-The [correction audit](../../docs/foundations/corrections_and_versions.md)
-distinguishes formal errata, arXiv replacements and changed journal tables.
-The [earlier version ledger](../../docs/reference_ledger_20261014.md)
-retains the original reference provenance. Debray's printed 2026 values
-remain labelled as printed values; a proof audit must not silently replace
-a reference cell.
+The interacting reduction of band-generated phases is only a diagnostic:
+[spinless](diagnostics/point2_band_generated_interacting_reduction_spinless.md)
+and [spin-half](diagnostics/point2_band_generated_interacting_reduction_spin_half.md)
+have separate files. Raw free-fermion classifications are not used in
+main tables. See the
+[interacting-reference policy](../../docs/foundations/interacting_reference_policy.md).
 
-Reproduce the reference transcription and tables with:
+The [D2/D6 grading audit](../../docs/foundations/debray_d2_grading_audit.md)
+remains distinct from printed source values. The
+[correction audit](../../docs/foundations/corrections_and_versions.md)
+and [version ledger](../../docs/reference_ledger_20261014.md) record source
+provenance. Splitting files changes no classification or reference value.
+
+Regenerate the active tables with:
 
 ```bash
-python benchmarks/extract_debray_2026.py --output benchmarks/debray_class_a_2102.02941v3.json
 python scripts/build_foundation_tables.py
 ```
 
-The first command requires the pinned primary source cache documented in
-the script. It reads no classifier outputs. The second command reads
-immutable campaign results and reference fixtures only. The
-[validation record](table_validation.json) checks row uniqueness, expected
-coverage, exact source values and source hashes. It does not certify
-physical completeness.
+The generator reads frozen campaign results and reference fixtures only.
+The [validation record](table_validation.json) records input hashes,
+coverage and separation checks. Raw calculation archives remain unchanged;
+these presentation checks do not certify physical completeness.

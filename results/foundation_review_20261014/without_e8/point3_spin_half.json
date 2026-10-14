@@ -1,0 +1,2865 @@
+{
+  "title": "3D Spin-half point groups: without independent E8 decoration",
+  "scope": "The computed column contains the retained CI, charge and group-cohomological phase model. Each real-space source version has its own reference column. For improper groups those columns are explicitly source-side quotients by independently identified neutral E8 roots; equality of invariant factors is not a verified physical quotient map. E8-inclusive comparison is deferred. No missing E8 operation is assigned zero. The 2D uniform n0 and e0 coordinates do not label these 3D tables.",
+  "family": "point3",
+  "physical_spin": "spin_half",
+  "n0_scope": "not_applicable_in_3d",
+  "e0_scope": "independent_e8_decoration_excluded",
+  "row_rule": "One group per row; one family, physical spin and n0 scope per file",
+  "columns": [
+    {
+      "key": "model",
+      "label": "Computed retained model"
+    },
+    {
+      "key": "scope",
+      "label": "Comparison scope"
+    },
+    {
+      "key": "R3_arxiv",
+      "label": "Zhang\u2013Ning\u2013Qi\u2013Gu 2024v2"
+    },
+    {
+      "key": "R3_journal",
+      "label": "Zhang\u2013Ning\u2013Qi\u2013Gu journal2025"
+    },
+    {
+      "key": "Debray_retained",
+      "label": "Debray 2026v3, explicitly matched sector"
+    },
+    {
+      "key": "NMLW_retained",
+      "label": "Ning\u2013Mao\u2013Li\u2013Wang 2021, named-E8 quotient"
+    }
+  ],
+  "sources": {
+    "R3_arxiv": {
+      "authors": "Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi, Zheng-Cheng Gu",
+      "year": 2024,
+      "title": "Construction and classification of crystalline topological superconductor and insulators in three-dimensional interacting fermion systems",
+      "url": "https://arxiv.org/abs/2204.13558v2",
+      "version": "arXiv v2, 2024-06-18",
+      "method": "Interacting real-space topological crystals, boundary gapping, bubble equivalence and stacking",
+      "location": "Table II and named E8 root lists"
+    },
+    "R3_journal": {
+      "authors": "Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi, Zheng-Cheng Gu",
+      "year": 2025,
+      "title": "Construction and Classification of Crystalline Topological Superconductor and Insulators in Three-Dimensional Interacting Fermion Systems",
+      "url": "https://doi.org/10.1103/PhysRevX.15.031029",
+      "version": "Published 2025-07-28; supplement dated 2025-07-08",
+      "method": "Interacting real-space topological crystals, boundary gapping, bubble equivalence and stacking",
+      "location": "Table II p.031029-5 and independently reread named E8 root lists"
+    },
+    "Debray": {
+      "authors": "Arun Debray",
+      "year": 2026,
+      "title": "Invertible phases for mixed spatial symmetries and the fermionic crystalline equivalence principle",
+      "url": "https://arxiv.org/abs/2102.02941v3",
+      "version": "v3, 2026-02-03",
+      "method": "Spin-c/Pin-c bordism, Adams spectral sequences, Anderson-dual equivariant phase homology",
+      "location": "Tables 1\u20136 and theorems specified separately in each row; extracted Class A phase groups",
+      "author": "Arun Debray",
+      "first_version": "2021-02-05",
+      "source_url": "https://arxiv.org/src/2102.02941v3",
+      "source_archive_sha256": "0e015df95d1b6fb9ac405446ed4edc7f9e843999c551ed81b15a9126412eb9ad",
+      "files_sha256": {
+        "cyclic.tex": "f7c48f8ac882841a4deff8fa6997b4f0891c43c4a92aa417f0a7e298c75e8d15",
+        "spinc_rotation.tex": "9feecd5aef6e761aa06976eba047c91414641d5df471763dff65787a507f9766",
+        "dihedral.tex": "5f9c2d2a50a2223a6741a96f5c34cc8b759ebb5ab537d550f412adda9f9341f8",
+        "para_n_gonal.tex": "771404e4a3389d1284998cbfb8f3b671ed0224b56d28abf9f91326ffc0fbfa1f",
+        "pin_reflection.tex": "8e4470ba32e4ab31a57183b8504a3a54db2966f32cf74a46ed878aaf21a57e65",
+        "inversion.tex": "2e80b964f34f0902342fa82d70e1f22929000714aaca59f7718171fe54d198c1",
+        "tet_oct_icos_generalities.tex": "2f53ce2fb93f4c8176062b8c6a44fdb8c7ef5aced1f89e140afe6094d54d71df"
+      },
+      "scope": "Interacting Class A only, under the generalized-homology ansatz. Class D columns are not extracted. Includes independent intrinsic responses and neutral bosonic contributions.",
+      "independence_limit": "Different mathematical method; v3 explicitly acknowledges revisions following comparison with Zhang-Ning-Qi-Gu2025. Not blind independence of the final tables."
+    },
+    "NMLW": {
+      "authors": "Shang-Qiang Ning, Bin-Bin Mao, Zhengqiao Li, Chenjie Wang",
+      "title": "Anomaly indicators and bulk-boundary correspondences for 3D interacting topological crystalline phases with mirror and continuous symmetries",
+      "arxiv": "2105.02682v1",
+      "arxiv_date": "2021-05-06",
+      "url": "https://arxiv.org/abs/2105.02682v1",
+      "journal": "Physical Review B 104, 075111 (2021)",
+      "doi": "10.1103/PhysRevB.104.075111",
+      "sourceSHA256": "5bd95ecdc861c595961da177f202f4126f0aed91524044ac4ebe049a858292db",
+      "method": "Interacting dimensional reduction, folding, and complete bulk anomaly indicators for the stated symmetry.",
+      "independence_limit": "Distinct physical detectors, but the mirror classification builds on Song-Huang-Fu-Hermele2017; not blind independence.",
+      "version": "arXiv2105.02682v1, 2021-05-06; PRB104,075111 (2021)",
+      "location": "Table II; Sec.III.B.1 Eqs.19-20 pp.12-13; AppendixB.1 Eq.B4 p.31"
+    }
+  },
+  "comparison_counts": {
+    "model": {
+      "not_compared": 32
+    },
+    "scope": {
+      "documented": 32
+    },
+    "R3_arxiv": {
+      "abstract_match": 25,
+      "abstract_difference": 7
+    },
+    "R3_journal": {
+      "abstract_match": 24,
+      "abstract_difference": 8
+    },
+    "Debray_retained": {
+      "abstract_match": 9,
+      "not_compared": 21,
+      "abstract_difference": 2
+    },
+    "NMLW_retained": {
+      "not_compared": 31,
+      "abstract_match": 1
+    }
+  },
+  "availability_counts": {
+    "model": {
+      "available": 32
+    },
+    "scope": {
+      "available": 32
+    },
+    "R3_arxiv": {
+      "available": 32
+    },
+    "R3_journal": {
+      "available": 32
+    },
+    "Debray_retained": {
+      "available": 11,
+      "unverified": 21
+    },
+    "NMLW_retained": {
+      "not_applicable": 31,
+      "available": 1
+    }
+  },
+  "rows": [
+    {
+      "id": "point3_01_spin_half",
+      "family": "point3",
+      "index": 1,
+      "name": "C1",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "1",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_02_spin_half",
+      "family": "point3",
+      "index": 2,
+      "name": "Ci",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-1",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 3388
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "main",
+            "section": "IV.A",
+            "pages_1based": [
+              38
+            ],
+            "root_number": null
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "not_projected: no named E8 embedding extracted from this source; E8-inclusive comparison deferred",
+          "comparison_status": "not_compared",
+          "short_label": "UNVERIFIED: E8-inclusive comparison deferred"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_03_spin_half",
+      "family": "point3",
+      "index": 3,
+      "name": "C2",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "2",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_04_spin_half",
+      "family": "point3",
+      "index": 4,
+      "name": "Cs",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "m",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 4566
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.B",
+            "pages_1based": [
+              3
+            ],
+            "root_number": 3,
+            "parsed_line": 274
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "not_projected: no named E8 embedding extracted from this source; E8-inclusive comparison deferred",
+          "comparison_status": "not_compared",
+          "short_label": "UNVERIFIED: E8-inclusive comparison deferred"
+        },
+        "NMLW_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "NMLW",
+          "scope": "source-named independent E8 quotient; not a computed physical projection",
+          "source_location": "Table II; Sec.III.B.1, Eqs.(19)-(20), pp.12-13; Appendix B.1, Eq.(B4), p.31 (arXiv v1)",
+          "comparison_limit": "The source specifies a split independent E8 root. No complete map from the current cochain roots to its anomaly indicators is asserted.",
+          "named_E8_detector": "mu1 mod2; eta2f=(-1)^mu1",
+          "retained_detector": "eta1f=exp[i pi (mu2-2mu3)/4]",
+          "spin_convention": "Charge-preserving unitary mirror. Redefining M by exp(i pi Q/2) interchanges M^2=1 and M^2=(-1)^F without changing U(1) action."
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_05_spin_half",
+      "family": "point3",
+      "index": 5,
+      "name": "C2h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "2/m",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 4676
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.C",
+            "pages_1based": [
+              5
+            ],
+            "root_number": 3,
+            "parsed_line": 487
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_06_spin_half",
+      "family": "point3",
+      "index": 6,
+      "name": "D2",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "222",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required",
+          "proof_audit": {
+            "path": "docs/foundations/debray_d2_grading_audit.md",
+            "result_path": "results/foundation_review_20261014/diagnostics/debray_d2_ku_grading_audit.json",
+            "summary": "Printed Z2^3 is preserved. Our source-internal audit finds two, not three, degree-four monomials in the cited graded splitting; this is not a published erratum or a general verdict on the reference.",
+            "source_location": "Table 5 p.52; Theorem 4.82 proof item (4) p.57 versus Eq.(4.59) p.49",
+            "printed_group_unchanged": true
+          }
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_07_spin_half",
+      "family": "point3",
+      "index": 7,
+      "name": "C2v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "mm2",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 4902
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.E",
+            "pages_1based": [
+              7
+            ],
+            "root_number": 3,
+            "parsed_line": 730
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "not_projected: no named E8 embedding extracted from this source; E8-inclusive comparison deferred",
+          "comparison_status": "not_compared",
+          "short_label": "UNVERIFIED: E8-inclusive comparison deferred"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_08_spin_half",
+      "family": "point3",
+      "index": 8,
+      "name": "D2h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "mmm",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 5014
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.F",
+            "pages_1based": [
+              9
+            ],
+            "root_number": 3,
+            "parsed_line": 959
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_09_spin_half",
+      "family": "point3",
+      "index": 9,
+      "name": "C4",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_10_spin_half",
+      "family": "point3",
+      "index": 10,
+      "name": "S4",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-4",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 5258
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "main",
+            "section": "IV.B.3",
+            "pages_1based": [
+              38
+            ],
+            "root_number": 2
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_11_spin_half",
+      "family": "point3",
+      "index": 11,
+      "name": "C4h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4/m",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 5403
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.H",
+            "pages_1based": [
+              11
+            ],
+            "root_number": 3,
+            "parsed_line": 1231
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_12_spin_half",
+      "family": "point3",
+      "index": 12,
+      "name": "D4",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "422",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_13_spin_half",
+      "family": "point3",
+      "index": 13,
+      "name": "C4v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4mm",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 5715
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.J",
+            "pages_1based": [
+              13
+            ],
+            "root_number": 3,
+            "parsed_line": 1510
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "not_projected: no named E8 embedding extracted from this source; E8-inclusive comparison deferred",
+          "comparison_status": "not_compared",
+          "short_label": "UNVERIFIED: E8-inclusive comparison deferred"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_14_spin_half",
+      "family": "point3",
+      "index": 14,
+      "name": "D2d",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-42m",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 5803
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.K",
+            "pages_1based": [
+              15
+            ],
+            "root_number": 3,
+            "parsed_line": 1700
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_15_spin_half",
+      "family": "point3",
+      "index": 15,
+      "name": "D4h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4/mmm",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 5985
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.L",
+            "pages_1based": [
+              17
+            ],
+            "root_number": 3,
+            "parsed_line": 1927
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_16_spin_half",
+      "family": "point3",
+      "index": 16,
+      "name": "C3",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "3",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_17_spin_half",
+      "family": "point3",
+      "index": 17,
+      "name": "C3i",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-3",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 6147
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.N",
+            "pages_1based": [
+              18
+            ],
+            "root_number": 2,
+            "parsed_line": 2063
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_18_spin_half",
+      "family": "point3",
+      "index": 18,
+      "name": "D3",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "32",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_19_spin_half",
+      "family": "point3",
+      "index": 19,
+      "name": "C3v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "3m",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 6467
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.P",
+            "pages_1based": [
+              20
+            ],
+            "root_number": 3,
+            "parsed_line": 2279
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "not_projected: no named E8 embedding extracted from this source; E8-inclusive comparison deferred",
+          "comparison_status": "not_compared",
+          "short_label": "UNVERIFIED: E8-inclusive comparison deferred"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_20_spin_half",
+      "family": "point3",
+      "index": 20,
+      "name": "D3d",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-3m",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 6550
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.Q",
+            "pages_1based": [
+              22
+            ],
+            "root_number": 3,
+            "parsed_line": 2524
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_21_spin_half",
+      "family": "point3",
+      "index": 21,
+      "name": "C6",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_22_spin_half",
+      "family": "point3",
+      "index": 22,
+      "name": "C3h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-6",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 6714
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.S",
+            "pages_1based": [
+              24
+            ],
+            "root_number": 3,
+            "parsed_line": 2673
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_23_spin_half",
+      "family": "point3",
+      "index": 23,
+      "name": "C6h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6/m",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 6843
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.T",
+            "pages_1based": [
+              25
+            ],
+            "root_number": 3,
+            "parsed_line": 2896
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_24_spin_half",
+      "family": "point3",
+      "index": 24,
+      "name": "D6",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "622",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required",
+          "proof_audit": {
+            "path": "docs/foundations/debray_d2_grading_audit.md",
+            "result_path": "results/foundation_review_20261014/diagnostics/debray_d2_ku_grading_audit.json",
+            "summary": "Printed Z2^3 is preserved. Our source-internal audit finds two, not three, degree-four monomials in the cited graded splitting; this is not a published erratum or a general verdict on the reference.",
+            "source_location": "Table 5 p.52; Theorem 4.82 proof item (4) p.57 versus Eq.(4.59) p.49",
+            "printed_group_unchanged": true
+          }
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_25_spin_half",
+      "family": "point3",
+      "index": 25,
+      "name": "C6v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6mm",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 7110
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.V",
+            "pages_1based": [
+              27
+            ],
+            "root_number": 3,
+            "parsed_line": 3103
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "not_projected: no named E8 embedding extracted from this source; E8-inclusive comparison deferred",
+          "comparison_status": "not_compared",
+          "short_label": "UNVERIFIED: E8-inclusive comparison deferred"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_26_spin_half",
+      "family": "point3",
+      "index": 26,
+      "name": "D3h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-6m2",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 7280
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_difference",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.W",
+            "pages_1based": [
+              29
+            ],
+            "root_number": 4,
+            "parsed_line": 3309
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_27_spin_half",
+      "family": "point3",
+      "index": 27,
+      "name": "D6h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6/mmm",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 7498
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "supplement",
+            "section": "III.X",
+            "pages_1based": [
+              31
+            ],
+            "root_number": 3,
+            "parsed_line": 3555
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_28_spin_half",
+      "family": "point3",
+      "index": 28,
+      "name": "T",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "23",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_29_spin_half",
+      "family": "point3",
+      "index": 29,
+      "name": "Th",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "m-3",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 3638
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "main",
+            "section": "IV.D.1,4",
+            "pages_1based": [
+              41,
+              42
+            ],
+            "root_number": 2
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "not_projected: no named E8 embedding extracted from this source; E8-inclusive comparison deferred",
+          "comparison_status": "not_compared",
+          "short_label": "UNVERIFIED: E8-inclusive comparison deferred"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_30_spin_half",
+      "family": "point3",
+      "index": 30,
+      "name": "O",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "432",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "proper-rotation source full group; leading E8 H1 is zero",
+          "source_location": "Table II",
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Proper rotations; source full group",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "Debray",
+          "scope": "retained_model_quotient",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_31_spin_half",
+      "family": "point3",
+      "index": 31,
+      "name": "Td",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-43m",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 3866
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "main",
+            "section": "IV.E.1,4",
+            "pages_1based": [
+              43,
+              44
+            ],
+            "root_number": 2
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "not_projected: no named E8 embedding extracted from this source; E8-inclusive comparison deferred",
+          "comparison_status": "not_compared",
+          "short_label": "UNVERIFIED: E8-inclusive comparison deferred"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    },
+    {
+      "id": "point3_32_spin_half",
+      "family": "point3",
+      "index": 32,
+      "name": "Oh",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "m-3m",
+      "orientation_reversing": true,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": "retained CI/charge/group-cohomological phase model",
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_arxiv",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "table": "II",
+            "source_root_line": 4279
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "R3_journal",
+          "scope": "source full group / its named independent neutral E8 root",
+          "source_location": {
+            "document": "main",
+            "section": "IV.G.1,4",
+            "pages_1based": [
+              48,
+              49,
+              50
+            ],
+            "root_number": 3
+          },
+          "comparison_limit": "Reference-side abstract comparison only; no model-to-physical quotient isomorphism established"
+        },
+        "scope": {
+          "availability": "available",
+          "text": "Named-E8 quotient; physical map unverified",
+          "comparison_status": "documented"
+        },
+        "Debray_retained": {
+          "availability": "unverified",
+          "reason": "not_projected: no named E8 embedding extracted from this source; E8-inclusive comparison deferred",
+          "comparison_status": "not_compared",
+          "short_label": "UNVERIFIED: E8-inclusive comparison deferred"
+        },
+        "NMLW_retained": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      },
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "independent_e8_decoration_excluded"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Render versioned, sector-specific reference tables without changing solver data.
 
-Every row is one catalog group and one physical spin. Sources enter only after
-the saved calculation is read. All main comparisons use interacting results;
-the band-generated interacting reduction is a separate diagnostic artifact.
+Every table has one group family, physical spin and n0 scope. Independent E8
+decoration is deferred. Sources enter only after the saved calculation is read.
+The band-generated interacting reduction remains a separate diagnostic.
 """
 from __future__ import annotations
 
@@ -21,6 +21,9 @@ SPINS = {"spinless": "Spinless", "spin_half": "Spin-half"}
 ALIASES = {"Cs": "D1", "C2v": "D2", "C3v": "D3", "C4v": "D4", "C6v": "D6"}
 WALL_ALIASES = {"pm": "p1m1", "pg": "p1g1", "cm": "c1m1", "pmm": "p2mm", "pmg": "p2mg",
                 "pgg": "p2gg", "cmm": "c2mm", "p4m": "p4mm", "p4g": "p4gm", "p6m": "p6mm"}
+LEGACY_TABLES = ("relative_point2", "relative_wallpaper", "all_n0_retained_model_2d",
+                 "retained_model_point3", "full_E8_reference_point3", "full_E8_reference_2d",
+                 "diagnostics/point2_band_generated_interacting_reduction")
 
 SOURCES = {
     "R2_journal": {"authors": "Jian-Hao Zhang, Shuo Yang, Yang Qi, Zheng-Cheng Gu", "year": 2022,
@@ -110,7 +113,7 @@ def note(text, status="documented"):
     return {"availability": "available", "text": text, "comparison_status": status}
 
 
-def show(cell, compact=False):
+def show(cell, compact=False, repo_prefix="../../"):
     labels = {"not_applicable": "N/A", "unverified": "UNVERIFIED", "not_computed": "NOT COMPUTED"}
     if cell["availability"] != "available":
         if compact:
@@ -120,7 +123,7 @@ def show(cell, compact=False):
         value = group_text(cell["group"])
         suffix = {"abstract_match": " [abstract match]", "abstract_difference": " [DIFF]"}.get(cell["comparison_status"], "")
         if cell.get("proof_audit"):
-            suffix += (" [printed; proof grading conflict](../../" + cell["proof_audit"]["path"] + ")") if compact else "; proof audit: " + cell["proof_audit"]["summary"]
+            suffix += (" [printed; proof grading conflict](" + repo_prefix + cell["proof_audit"]["path"] + ")") if compact else "; proof audit: " + cell["proof_audit"]["summary"]
         return value + suffix
     return cell["text"]
 
@@ -175,10 +178,10 @@ class Builder:
             return missing("unverified", "no verified source value extracted for this concrete group/spin")
         assert (record["name"], record["physical_spin"]) == (run["input"]["name"], run["input"]["spin"])
         key = {"relative_n0_e0_zero": "relativeN0E0Zero", "all_n0_e0_zero": "allN0WithE0Zero",
-               "retained_model_quotient": "retainedComparison", "full_physical": "fullPhysical"}[sector]
+               "retained_model_quotient": "retainedComparison"}[sector]
         if record.get(key) is None:
-            cell = missing("unverified", record.get("retainedComparisonScope", "matching source sector not extracted") + "; see full-E8 reference table")
-            cell["short_label"] = "UNVERIFIED: not projected; see full-E8 table"
+            cell = missing("unverified", record.get("retainedComparisonScope", "matching source sector not extracted") + "; E8-inclusive comparison deferred")
+            cell["short_label"] = "UNVERIFIED: E8-inclusive comparison deferred"
             return cell
         cell = group_cell(record[key], actual=actual, source="Debray", scope=sector,
                          location={"source_file": record["source_file"], "location": record["source_location"]},
@@ -193,14 +196,14 @@ class Builder:
             }
         return cell
 
-    def mirror_cell(self, run, full=False, actual=None):
+    def mirror_cell(self, run, actual=None):
         if run["input"]["family"] != "point3" or run["input"]["name"] != "Cs":
             return missing("not_applicable", "source column is the charge-preserving 3D mirror Cs classification")
         record = self.mirror_rows.get(run["input"]["id"])
         if record is None:
             return missing("unverified", "mirror source fixture not loaded")
-        cell = group_cell(record["fullPhysical" if full else "namedE8Quotient"], actual=actual,
-                          source="NMLW", scope="full physical mirror classification" if full else "source-named independent E8 quotient; not a computed physical projection",
+        cell = group_cell(record["namedE8Quotient"], actual=actual,
+                          source="NMLW", scope="source-named independent E8 quotient; not a computed physical projection",
                           location=record["source_location"], limit=record["comparison_limit"])
         cell.update(named_E8_detector=record["namedE8"], retained_detector=record["retained_detector"],
                     spin_convention=record["spin_convention"])
@@ -241,19 +244,26 @@ class Builder:
             return missing("not_applicable", "source covers orientation-preserving wallpaper groups")
         return group_cell(record[quantity], actual=actual, source="MCB", scope={
             "referenceC0CentralCharge0": "C=c_minus=0, hence n0=e0=0",
-            "referenceK1Zero": "k1=0, hence e0=0 and C=c_minus; all n0",
-            "fullPhysicalReference": "independent electric/thermal/filling responses; full E8 included"}[quantity],
+            "referenceK1Zero": "k1=0, hence e0=0 and C=c_minus; all n0"}[quantity],
             location="Table I and Sec.III response restrictions",
             limit=self.mcb["limit"])
 
-    def emit(self, name, title, scope, columns, rows, source_keys):
+    def emit(self, name, title, scope, columns, rows, source_keys, *, n0_scope, e0_scope):
         ids = [r["id"] for r in rows]
         if len(ids) != len(set(ids)):
             raise ValueError(f"Duplicate group/spin row in {name}")
-        rows.sort(key=lambda r: (r["family"], r["index"], list(SPINS).index(r["physical_spin"])))
+        spins = {r["physical_spin"] for r in rows}
+        families = {r["family"] for r in rows}
+        assert len(spins) == len(families) == 1, name
+        spin, family = next(iter(spins)), next(iter(families))
+        rows.sort(key=lambda r: r["index"])
+        for row in rows:
+            row.update(n0_scope=n0_scope, e0_scope=e0_scope)
         counts = {key: dict(collections.Counter(r["cells"][key]["comparison_status"] for r in rows)) for key, _ in columns}
         availability = {key: dict(collections.Counter(r["cells"][key]["availability"] for r in rows)) for key, _ in columns}
-        table = {"title": title, "scope": scope, "row_rule": "One concrete catalog group and one physical spin per row",
+        table = {"title": title, "scope": scope, "family": family, "physical_spin": spin,
+                 "n0_scope": n0_scope, "e0_scope": e0_scope,
+                 "row_rule": "One group per row; one family, physical spin and n0 scope per file",
                  "columns": [{"key": key, "label": label} for key, label in columns],
                  "sources": {key: SOURCES[key] for key in source_keys}, "comparison_counts": counts,
                  "availability_counts": availability, "rows": rows}
@@ -261,7 +271,7 @@ class Builder:
         stem = self.out / name
         stem.parent.mkdir(parents=True, exist_ok=True)
         stem.with_suffix(".json").write_text(json.dumps(table, indent=2) + "\n")
-        base = ["id", "family", "index", "name", "physical_spin", "hermann_mauguin", "orientation_reversing"]
+        base = ["id", "family", "index", "name", "physical_spin", "hermann_mauguin", "orientation_reversing", "n0_scope", "e0_scope"]
         suffixes = ["display", "availability", "torsion", "free_rank", "comparison_status", "source", "scope", "source_location", "comparison_limit", "reason", "proof_audit"]
         with stem.with_suffix(".csv").open("w", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=base + [f"{key}__{suffix}" for key, _ in columns for suffix in suffixes],
@@ -278,11 +288,12 @@ class Builder:
                         flat[f"{key}__{suffix}"] = json.dumps(value) if isinstance(value, (dict, list)) else value
                 writer.writerow(flat)
         lines = ["# " + title, "", scope, "",
-                 "Each row has one group and one physical spin. `0` is the trivial group. `N/A` means this source or quantity does not apply; `UNVERIFIED` means a relevant value or map has not been established; `NOT COMPUTED` means the runtime does not supply that object. An abstract match is not a physical generator-map or completeness certificate.", "",
-                 "| Group | Physical spin | " + " | ".join(label for _, label in columns) + " |",
-                 "| --- | --- | " + " | ".join("---" for _ in columns) + " |"]
+                 f"All rows have physical spin **{SPINS[spin]}**. `0` is the trivial group. `N/A` means this source or quantity does not apply; `UNVERIFIED` means a relevant value or map has not been established; `NOT COMPUTED` means the runtime does not supply that object. An abstract match is not a physical generator-map or completeness certificate.", "",
+                 "| Group | " + " | ".join(label for _, label in columns) + " |",
+                 "| --- | " + " | ".join("---" for _ in columns) + " |"]
+        repo_prefix = "../" * (len(Path(name).parts) + 1)
         for row in rows:
-            cells = [row["name"], SPINS[row["physical_spin"]]] + [show(row["cells"][key], compact=True) for key, _ in columns]
+            cells = [row["name"]] + [show(row["cells"][key], compact=True, repo_prefix=repo_prefix) for key, _ in columns]
             lines.append("| " + " | ".join(c.replace("|", "\\|").replace("\n", " ") for c in cells) + " |")
         lines += ["", "Source columns:", ""]
         for key in source_keys:
@@ -326,7 +337,8 @@ class Builder:
             else:
                 columns += [("MCB_relative", "Manjunath–Calvera–Barkeshli 2024, C=c-=0"), ("model_charge", "Computed charge layer"), ("L2_charge", "Wang–Qi–Fang–Cheng–Gu 2021v1 charge layer"), ("model_phase", "Computed phase layer"), ("L2_phase", "Wang–Qi–Fang–Cheng–Gu 2021v1 final phase layer"), ("filling_map", "Physical filling map")]
                 keys += ["MCB", "L2"]
-            self.emit("relative_" + family, "2D " + ("point groups" if family == "point2" else "wallpaper groups") + ": n0=e0=0", "Interacting relative stacking subgroup, with zero electric and thermal Hall response. Uniform neutral E8 is excluded explicitly. Phase and charge layers are displayed separately from stacking; their product is not assumed to be the stacking group.", columns, rows, keys)
+            for spin in SPINS:
+                self.emit(f"e0_zero/n0_zero_{family}_{spin}", f"2D {SPINS[spin]} " + ("point groups" if family == "point2" else "wallpaper groups") + ": n0=0, e0=0", "Interacting relative stacking subgroup, with zero electric and thermal Hall response. Uniform neutral E8 is excluded explicitly. Phase and charge layers are displayed separately from stacking; their product is not assumed to be the stacking group.", columns, [r for r in rows if r["physical_spin"] == spin], keys, n0_scope="n0_zero", e0_scope="e0_zero")
 
     def all_n0(self):
         rows = []
@@ -351,19 +363,30 @@ class Builder:
                 c["physical_product"] = missing("unverified", "universal physical nonzero-n0 product/response map")
             c["R2_journal"] = self.r2(run, "journal", actual, row["orientation_reversing"])
             c["R2_arxiv"] = self.r2(run, "arxiv", actual, row["orientation_reversing"])
-            c["MCB_e0_zero"] = self.mcb_cell(run, "referenceK1Zero", actual)
-            c["Debray_e0_zero"] = self.debray_cell(run, "all_n0_e0_zero", actual)
+            if row["family"] == "wallpaper":
+                c["MCB_e0_zero"] = self.mcb_cell(run, "referenceK1Zero", actual)
+            else:
+                c["Debray_e0_zero"] = self.debray_cell(run, "all_n0_e0_zero", actual)
             rows.append(row)
-        self.emit("all_n0_retained_model_2d", "2D all-n0 stacking group of the retained model", "All allowed uniform CI coordinates are included together. This is the supplied no-independent-E8 model, not a computed full physical invertible-phase classification. A single fixed nonzero-n0 fiber is a torsor, not the group displayed here. For orientation-reversing cases the allowed n0 is only zero, so the relative reference applies. Where n0 varies, the physical product/response calibration remains unverified even if an abstract source subgroup matches.",
-                  [("model", "Computed all-n0 model"), ("n0_image", "Allowed n0"), ("physical_product", "Physical-product limit"), ("R2_journal", "Zhang–Yang–Qi–Gu 2022"), ("R2_arxiv", "Zhang–Yang–Qi–Gu 2023v2"), ("MCB_e0_zero", "Manjunath–Calvera–Barkeshli 2024, k1=0"), ("Debray_e0_zero", "Debray 2026v3, e0=0")], rows, ["R2_journal", "R2_arxiv", "MCB", "Debray"])
+        for family in ("point2", "wallpaper"):
+            columns = [("model", "Computed all-n0 model"), ("n0_image", "Allowed n0"), ("physical_product", "Physical-product limit"), ("R2_journal", "Zhang–Yang–Qi–Gu 2022"), ("R2_arxiv", "Zhang–Yang–Qi–Gu 2023v2")]
+            keys = ["R2_journal", "R2_arxiv"]
+            if family == "wallpaper":
+                columns += [("MCB_e0_zero", "Manjunath–Calvera–Barkeshli 2024, k1=0")]
+                keys += ["MCB"]
+            else:
+                columns += [("Debray_e0_zero", "Debray 2026v3, e0=0")]
+                keys += ["Debray"]
+            for spin in SPINS:
+                self.emit(f"e0_zero/n0_all_{family}_{spin}", f"2D {SPINS[spin]} " + ("point groups" if family == "point2" else "wallpaper groups") + ": all allowed n0, e0=0", "All allowed uniform CI coordinates are included together. This is the supplied no-independent-E8 model, not a computed full physical invertible-phase classification. A single fixed nonzero-n0 fiber is a torsor, not the group displayed here. For orientation-reversing cases the allowed n0 is only zero, so the relative reference applies. Where n0 varies, the physical product/response calibration remains unverified even if an abstract source subgroup matches.", columns, [r for r in rows if r["family"] == family and r["physical_spin"] == spin], keys, n0_scope="all_allowed_n0", e0_scope="e0_zero")
 
     def three_dimensional(self):
-        rows, full_rows = [], []
+        rows = []
         journal = {r["id"]: r for r in self.full3j["rows"]}
         e8a = {(r["name"], r["physical_spin"]): r for r in self.e8a["rows"]}
         e8j = {r["id"]: r for r in self.e8j["rows"]}
         for run in self.runs3:
-            row, full = self.row(run), self.row(run)
+            row = self.row(run)
             actual = run["classification"]
             row["cells"]["model"] = group_cell(actual, scope="retained CI/charge/group-cohomological phase model")
             j = journal[row["id"]]
@@ -371,7 +394,6 @@ class Builder:
             a = next(r for r in self.full3a["rows"] if r["physical_spin"] == row["physical_spin"] and r["name_as_printed"].split("=")[0].translate(str.maketrans("", "", "$_{}")) == printed)
             for version, r in (("arxiv", a), ("journal", j)):
                 source = "R3_" + version
-                full["cells"][source] = group_cell(r["stacking_orders"], source=source, scope="source full physical interacting group; E8 included where present", location="Table II")
                 if row["orientation_reversing"]:
                     evidence = e8a[row["name"], row["physical_spin"]] if version == "arxiv" else e8j[row["id"]]
                     orders = evidence["quotient_by_named_E8_orders"]
@@ -384,24 +406,10 @@ class Builder:
             row["cells"]["scope"] = note("Named-E8 quotient; physical map unverified" if row["orientation_reversing"] else "Proper rotations; source full group")
             row["cells"]["Debray_retained"] = self.debray_cell(run, "retained_model_quotient", actual)
             row["cells"]["NMLW_retained"] = self.mirror_cell(run, actual=actual)
-            full["cells"]["Debray_full"] = self.debray_cell(run, "full_physical")
-            full["cells"]["NMLW_full"] = self.mirror_cell(run, full=True)
             rows.append(row)
-            full_rows.append(full)
-        self.emit("retained_model_point3", "3D point groups: retained-model comparisons", "The computed column contains the retained CI, charge and group-cohomological phase model. Each real-space source version has its own reference column. For improper groups those columns are explicitly source-side quotients by independently identified neutral E8 roots; equality of invariant factors is not a verified physical quotient map. No missing E8 operation is assigned zero.",
-                  [("model", "Computed retained model"), ("scope", "Comparison scope"), ("R3_arxiv", "Zhang–Ning–Qi–Gu 2024v2"), ("R3_journal", "Zhang–Ning–Qi–Gu journal2025"), ("Debray_retained", "Debray 2026v3, explicitly matched sector"), ("NMLW_retained", "Ning–Mao–Li–Wang 2021, named-E8 quotient")], rows, ["R3_arxiv", "R3_journal", "Debray", "NMLW"])
-        self.emit("full_E8_reference_point3", "3D point groups: full physical reference groups", "Reference-only table. Independent neutral E8 decorations are retained wherever the cited physical classification includes them. There is no computed full-E8 physical classification column. The values must not be compared directly with the retained-model column in another table without a sector map.",
-                  [("R3_arxiv", "Zhang–Ning–Qi–Gu 2024v2, full"), ("R3_journal", "Zhang–Ning–Qi–Gu journal2025, full"), ("Debray_full", "Debray 2026v3, full physical"), ("NMLW_full", "Ning–Mao–Li–Wang 2021, full mirror")], full_rows, ["R3_arxiv", "R3_journal", "Debray", "NMLW"])
-
-    def physical2(self):
-        rows = []
-        for run in self.runs2:
-            row = self.row(run)
-            row["cells"]["MCB_full"] = self.mcb_cell(run, "fullPhysicalReference")
-            row["cells"]["Debray_full"] = self.debray_cell(run, "full_physical")
-            rows.append(row)
-        self.emit("full_E8_reference_2d", "2D full physical reference groups, with independent E8", "Reference-only table. The Manjunath–Calvera–Barkeshli column includes independent electric Hall, thermal Hall and filling coordinates for its orientation-preserving wallpaper groups. No full physical E8 classification is calculated by the current runtime. Other sources are filled only after their exact scope is verified; coverage gaps remain explicit.",
-                  [("MCB_full", "Manjunath–Calvera–Barkeshli 2024, full"), ("Debray_full", "Debray 2026v3, full physical")], rows, ["MCB", "Debray"])
+        for spin in SPINS:
+            self.emit(f"without_e8/point3_{spin}", f"3D {SPINS[spin]} point groups: without independent E8 decoration", "The computed column contains the retained CI, charge and group-cohomological phase model. Each real-space source version has its own reference column. For improper groups those columns are explicitly source-side quotients by independently identified neutral E8 roots; equality of invariant factors is not a verified physical quotient map. E8-inclusive comparison is deferred. No missing E8 operation is assigned zero. The 2D uniform n0 and e0 coordinates do not label these 3D tables.",
+                      [("model", "Computed retained model"), ("scope", "Comparison scope"), ("R3_arxiv", "Zhang–Ning–Qi–Gu 2024v2"), ("R3_journal", "Zhang–Ning–Qi–Gu journal2025"), ("Debray_retained", "Debray 2026v3, explicitly matched sector"), ("NMLW_retained", "Ning–Mao–Li–Wang 2021, named-E8 quotient")], [r for r in rows if r["physical_spin"] == spin], ["R3_arxiv", "R3_journal", "Debray", "NMLW"], n0_scope="not_applicable_in_3d", e0_scope="independent_e8_decoration_excluded")
 
     def band_diagnostic(self):
         rows = []
@@ -417,36 +425,50 @@ class Builder:
                 scope="Interacting reduction of band-generated phases only; not all interacting phases", location="Table VI class A; interacting right-hand result",
                 limit="Does not establish absence of intrinsically interacting phases")
             rows.append(row)
-        self.emit("diagnostics/point2_band_generated_interacting_reduction", "Diagnostic only: interacting reduction of band-generated rotation phases", "This file is excluded from the main interacting-classification tables. It contains only the interacting reduction stated by Liu, Vishwanath and Khalaf, not their raw free-fermion result. An abstract match does not turn this restricted result into a complete interacting classification benchmark.",
-                  [("model", "Computed relative retained model"), ("B2_interacting_reduction", "Liu–Vishwanath–Khalaf 2019, interacting reduction only")], rows, ["B2_diagnostic"])
+        for spin in SPINS:
+            self.emit(f"diagnostics/point2_band_generated_interacting_reduction_{spin}", f"Diagnostic only, {SPINS[spin]} rotations: interacting band-generated reduction, n0=0, e0=0", "This file is excluded from the main interacting-classification tables. It contains only the interacting reduction stated by Liu, Vishwanath and Khalaf, not their raw free-fermion result. An abstract match does not turn this restricted result into a complete interacting classification benchmark.",
+                      [("model", "Computed relative retained model"), ("B2_interacting_reduction", "Liu–Vishwanath–Khalaf 2019, interacting reduction only")], [r for r in rows if r["physical_spin"] == spin], ["B2_diagnostic"], n0_scope="n0_zero", e0_scope="e0_zero")
 
     def build(self):
         self.relative()
         self.all_n0()
         self.three_dimensional()
-        self.physical2()
         self.band_diagnostic()
-        expected = {"relative_point2": 20, "relative_wallpaper": 34, "all_n0_retained_model_2d": 54,
-                    "retained_model_point3": 64, "full_E8_reference_point3": 64, "full_E8_reference_2d": 54,
-                    "diagnostics/point2_band_generated_interacting_reduction": 10}
+        expected = {}
+        for spin in SPINS:
+            for family, count in (("point2", 10), ("wallpaper", 17)):
+                expected[f"e0_zero/n0_zero_{family}_{spin}"] = count
+                expected[f"e0_zero/n0_all_{family}_{spin}"] = count
+            expected[f"without_e8/point3_{spin}"] = 32
+            expected[f"diagnostics/point2_band_generated_interacting_reduction_{spin}"] = 5
+        assert set(self.tables) == set(expected)
         for name, count in expected.items():
             table = self.tables[name]
             assert len(table["rows"]) == count
             assert len({(r["family"], r["index"], r["physical_spin"]) for r in table["rows"]}) == count
-            assert all(r["physical_spin"] in SPINS for r in table["rows"])
+            for field in ("family", "physical_spin", "n0_scope", "e0_scope"):
+                assert {r[field] for r in table["rows"]} == {table[field]}
+            assert table["physical_spin"] in SPINS
             if not name.startswith("diagnostics/"):
                 assert "B2_diagnostic" not in table["sources"]
-            if name.startswith("full_E8_"):
-                assert all(not col["key"].startswith("model") for col in table["columns"])
-                assert all(c["comparison_status"] == "not_compared" for r in table["rows"] for c in r["cells"].values())
-        for row in self.tables["retained_model_point3"]["rows"]:
-            if row["orientation_reversing"]:
-                assert row["cells"]["Debray_retained"]["availability"] != "available"
+            assert not any(col["key"].endswith("_full") for col in table["columns"])
+            if table["family"] == "point3":
+                for row in table["rows"]:
+                    if row["orientation_reversing"]:
+                        assert row["cells"]["Debray_retained"]["availability"] != "available"
+        # Remove only this generator's explicitly named legacy artifacts.
+        # README files, external diagnostics and immutable campaign data stay intact.
+        for name in LEGACY_TABLES:
+            for suffix in (".md", ".csv", ".json"):
+                (self.out / name).with_suffix(suffix).unlink(missing_ok=True)
         summary = {"generator": "scripts/build_foundation_tables.py", "generator_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                    "inputs_sha256": self.inputs, "row_counts": expected,
                    "single_group_single_spin_rows_verified": True,
+                   "single_spin_single_family_single_n0_scope_per_file_verified": True,
+                   "e0_scope_separated_per_file_verified": True,
                    "band_generated_diagnostic_excluded_from_main_tables": True,
-                   "full_E8_tables_have_no_computed_physical_column": True,
+                   "E8_inclusive_tables_deferred_not_generated": True,
+                   "legacy_mixed_spin_tables_removed": list(LEGACY_TABLES),
                    "debray_improper_3d_not_projected": True,
                    "debray_printed_d2_d6_values_preserved_with_separate_proof_audit": True,
                    "debray_fixture_loaded": self.debray is not None,

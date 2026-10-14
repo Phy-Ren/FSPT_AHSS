@@ -1,7 +1,7 @@
 # The current CI/charge/phase model
 
 Status: 2026-10-14. This page describes the implemented model with no
-independent neutral E8 decoration. The proposed larger model has its own
+independent neutral E8 decoration. The deferred larger model has its own
 [E8 extension page](e8_extension.md); the choices of uniform response in
 2+1D have a separate [sector page](two_dimensional_sectors.md).
 
