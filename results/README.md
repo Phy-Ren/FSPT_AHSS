@@ -1,7 +1,8 @@
 # Completed insulator campaigns — 2026-10-13
 
 **Interpretation update, 2026-10-14:** read the
-[calibration review](calibration_20261014/README.md) first. The statistics below
+[rebuilt per-case tables](foundation_review_20261014/README.md) and
+[separate foundation documents](../docs/foundations/README.md) first. The statistics below
 use the specified arXiv benchmark versions, not an interchangeable journal
 version. The nonzero-uniform-IQH product is a consistent supplied convention
 whose universal physical matching remains open. An abstract group comparison

@@ -11,21 +11,20 @@ cubic coefficient `1/6`, additional product coefficient `epsilon=0`, and matched
 source, stacking and gauge representatives. See [the formula reference](formulas/README.md)
 for equations, provenance and coverage.
 
-**Read the [October 14 calibration review](results/calibration_20261014/README.md)
-before interpreting comparisons.** It distinguishes reference versions, the
-zero-IQH sector from the provisional physical normalization of the full IQH
-product, and abstract E8-quotient comparisons from physical realization maps.
-The 2025 journal 3D table differs from the arXiv table used in the first report.
+**Start with the [foundation review](docs/foundations/README.md) and
+[rebuilt comparison tables](results/foundation_review_20261014/README.md).**
+Every group and physical spin has its own row, and every source has its own
+column. The current model, proposed E8 extension, and 2D response sectors have
+separate documents. Main comparison tables use interacting classifications;
+band-generated interacting reductions appear only in a diagnostic table.
 
 The first campaigns are complete: **172 successful calculations** across both
 physical spin conventions, including independent relative and full-IQH 2D runs.
-Start with the [campaign report](results/README.md),
-[59-group comparison table](results/summary_20261013/summary.md), or
-[CSV](results/summary_20261013/summary.csv). All 34 wallpaper cases match the
-reference charge/phase/stacking data. The 3D comparison has 51 abstract group
-matches and 13 documented discrepancies against arXiv v2 in the stated sector.
-These counts are arithmetic comparisons, not certificates of full physical
-calibration; the dated review supplies the corrected version-specific reading.
+The [original campaign report](results/README.md) preserves computation
+provenance. Its first summary is historical; use the rebuilt per-case tables
+for current comparisons, source versions, bordism evidence and unresolved
+physical maps. Successful runs and abstract group matches do not certify
+complete physical calibration.
 
 ## Mathematical scope
 

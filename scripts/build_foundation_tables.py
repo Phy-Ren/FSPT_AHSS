@@ -264,7 +264,8 @@ class Builder:
         base = ["id", "family", "index", "name", "physical_spin", "hermann_mauguin", "orientation_reversing"]
         suffixes = ["display", "availability", "torsion", "free_rank", "comparison_status", "source", "scope", "source_location", "comparison_limit", "reason", "proof_audit"]
         with stem.with_suffix(".csv").open("w", newline="") as handle:
-            writer = csv.DictWriter(handle, fieldnames=base + [f"{key}__{suffix}" for key, _ in columns for suffix in suffixes])
+            writer = csv.DictWriter(handle, fieldnames=base + [f"{key}__{suffix}" for key, _ in columns for suffix in suffixes],
+                                    lineterminator="\n")
             writer.writeheader()
             for row in rows:
                 flat = {key: row[key] for key in base}

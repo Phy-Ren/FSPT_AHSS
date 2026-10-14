@@ -1,5 +1,13 @@
 # Published insulator comparison data
 
+For active per-case comparisons use the
+[rebuilt tables](../results/foundation_review_20261014/README.md) and
+[interacting-reference policy](../docs/foundations/interacting_reference_policy.md).
+The list below also preserves the first campaign's historical fixtures.
+New version-pinned references include `debray_class_a_2102.02941v3.json`,
+`mirror_interacting_2105.02682.json`, and the separate 2025 journal table and
+named-E8 ledgers. No reference is a solver input.
+
 These files are comparison references, never solver inputs. They are extracted
 from cached primary-source LaTeX by `extract_sources.py`. Each file records the
 source URL, exact file SHA-256, table location, source row or cells, and whether
@@ -12,7 +20,7 @@ invariant-factor order.
 | `wallpaper_layers_2112.15533.json` | Wang et al., Supplement H, both wallpaper tables | Charge layer and bosonic layer after incoming identifications, with uniform IQH `n0=0` |
 | `wallpaper_stacking_2012.15657.json` | Zhang et al., Table III | Full stacking of the nonchiral wallpaper SPT sector, with uniform IQH `n0=0` |
 | `point2_stacking_2012.15657.json` | Zhang et al., supplemental Table `point` | Published point-group statements, subject to the discrepancy below |
-| `point2_rotation_reduction_1809.01636.json` | Liu et al., Table VI class A and Sec V B | Independent rotation-only band-generated-sector control, with interaction-only completeness explicitly unclaimed |
+| `point2_rotation_reduction_1809.01636.json` | Liu et al., Table VI class A and Sec VI B | Diagnostic interacting reduction of band-generated phases; excluded from complete-classification comparison columns |
 | `point3_full_2204.13558.json` | Zhang et al., Table II | Full physical classification including independent neutral E8 states; requires sector matching |
 | `point3_named_e8_quotient_2204.13558.json` | Explicit TI root lists for all 21 improper point groups | Quotient by the named independent neutral E8 root, with per-spin source locations |
 
