@@ -1,0 +1,1546 @@
+{
+  "source": {
+    "author": "Arun Debray",
+    "title": "Invertible phases for mixed spatial symmetries and the fermionic crystalline equivalence principle",
+    "url": "https://arxiv.org/abs/2102.02941v3",
+    "version": "v3, 2026-02-03",
+    "first_version": "2021-02-05",
+    "source_url": "https://arxiv.org/src/2102.02941v3",
+    "source_archive_sha256": "0e015df95d1b6fb9ac405446ed4edc7f9e843999c551ed81b15a9126412eb9ad",
+    "files_sha256": {
+      "cyclic.tex": "f7c48f8ac882841a4deff8fa6997b4f0891c43c4a92aa417f0a7e298c75e8d15",
+      "spinc_rotation.tex": "9feecd5aef6e761aa06976eba047c91414641d5df471763dff65787a507f9766",
+      "dihedral.tex": "5f9c2d2a50a2223a6741a96f5c34cc8b759ebb5ab537d550f412adda9f9341f8",
+      "para_n_gonal.tex": "771404e4a3389d1284998cbfb8f3b671ed0224b56d28abf9f91326ffc0fbfa1f",
+      "pin_reflection.tex": "8e4470ba32e4ab31a57183b8504a3a54db2966f32cf74a46ed878aaf21a57e65",
+      "inversion.tex": "2e80b964f34f0902342fa82d70e1f22929000714aaca59f7718171fe54d198c1",
+      "tet_oct_icos_generalities.tex": "2f53ce2fb93f4c8176062b8c6a44fdb8c7ef5aced1f89e140afe6094d54d71df"
+    },
+    "method": "Spin-c/Pin-c bordism, Adams spectral sequences, Anderson-dual equivariant phase homology",
+    "scope": "Interacting Class A only, under the generalized-homology ansatz. Class D columns are not extracted. Includes independent intrinsic responses and neutral bosonic contributions.",
+    "independence_limit": "Different mathematical method; v3 explicitly acknowledges revisions following comparison with Zhang-Ning-Qi-Gu2025. Not blind independence of the final tables."
+  },
+  "limits": [
+    "No full physical-to-solver generator dictionary is asserted.",
+    "No improper 3D E8 quotient is inferred from abstract factor multiplicities.",
+    "Cyclic n=1 is a specialization of the source's general formula.",
+    "A torsion bordism character and a free-response integer arise from different parts of the Anderson-dual universal coefficient sequence; raw bordism groups are not copied as phase groups."
+  ],
+  "rows": [
+    {
+      "id": "point2_01_spinless",
+      "family": "point2",
+      "name": "C1",
+      "physical_spin": "spinless",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14",
+      "source_formula": "Z^2 + Z_(2n) + Z_(n/2) for even n; Z^2 + Z_n^2 for odd n",
+      "spatial_action": "rotation in the plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_01_spin_half",
+      "family": "point2",
+      "name": "C1",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14",
+      "source_formula": "Z^2 + Z_(2n) + Z_(n/2) for even n; Z^2 + Z_n^2 for odd n",
+      "spatial_action": "rotation in the plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_02_spinless",
+      "family": "point2",
+      "name": "C2",
+      "physical_spin": "spinless",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 2
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14",
+      "source_formula": "Z^2 + Z_(2n) + Z_(n/2) for even n; Z^2 + Z_n^2 for odd n",
+      "spatial_action": "rotation in the plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 1
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_02_spin_half",
+      "family": "point2",
+      "name": "C2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 2
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14",
+      "source_formula": "Z^2 + Z_(2n) + Z_(n/2) for even n; Z^2 + Z_n^2 for odd n",
+      "spatial_action": "rotation in the plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 1
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_03_spinless",
+      "family": "point2",
+      "name": "Cs",
+      "physical_spin": "spinless",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "pin_reflection.tex",
+      "source_location": "Table 1, p.29, d=2",
+      "source_formula": "0",
+      "spatial_action": "one planar reflection",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_03_spin_half",
+      "family": "point2",
+      "name": "Cs",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "pin_reflection.tex",
+      "source_location": "Table 1, p.29, d=2",
+      "source_formula": "0",
+      "spatial_action": "one planar reflection",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_04_spinless",
+      "family": "point2",
+      "name": "C2v",
+      "physical_spin": "spinless",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4",
+      "source_formula": "spinless: Z_(2n) for even n, Z_n for odd n; spin-half: Z_(n/2)+Z_2^2 if n=0 mod4, Z_n+Z_2 if n=2 mod4, Z_n for odd n",
+      "spatial_action": "planar D_(2n), order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 0
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_04_spin_half",
+      "family": "point2",
+      "name": "C2v",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4",
+      "source_formula": "spinless: Z_(2n) for even n, Z_n for odd n; spin-half: Z_(n/2)+Z_2^2 if n=0 mod4, Z_n+Z_2 if n=2 mod4, Z_n for odd n",
+      "spatial_action": "planar D_(2n), order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_05_spinless",
+      "family": "point2",
+      "name": "C4",
+      "physical_spin": "spinless",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 2
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14",
+      "source_formula": "Z^2 + Z_(2n) + Z_(n/2) for even n; Z^2 + Z_n^2 for odd n",
+      "spatial_action": "rotation in the plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 1
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_05_spin_half",
+      "family": "point2",
+      "name": "C4",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 2
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14",
+      "source_formula": "Z^2 + Z_(2n) + Z_(n/2) for even n; Z^2 + Z_n^2 for odd n",
+      "spatial_action": "rotation in the plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 1
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_06_spinless",
+      "family": "point2",
+      "name": "C4v",
+      "physical_spin": "spinless",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4",
+      "source_formula": "spinless: Z_(2n) for even n, Z_n for odd n; spin-half: Z_(n/2)+Z_2^2 if n=0 mod4, Z_n+Z_2 if n=2 mod4, Z_n for odd n",
+      "spatial_action": "planar D_(2n), order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          8
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          8
+        ],
+        "freeRank": 0
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_06_spin_half",
+      "family": "point2",
+      "name": "C4v",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4",
+      "source_formula": "spinless: Z_(2n) for even n, Z_n for odd n; spin-half: Z_(n/2)+Z_2^2 if n=0 mod4, Z_n+Z_2 if n=2 mod4, Z_n for odd n",
+      "spatial_action": "planar D_(2n), order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_07_spinless",
+      "family": "point2",
+      "name": "C3",
+      "physical_spin": "spinless",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          3,
+          3
+        ],
+        "freeRank": 2
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14",
+      "source_formula": "Z^2 + Z_(2n) + Z_(n/2) for even n; Z^2 + Z_n^2 for odd n",
+      "spatial_action": "rotation in the plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          3,
+          3
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          3,
+          3
+        ],
+        "freeRank": 1
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_07_spin_half",
+      "family": "point2",
+      "name": "C3",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          3,
+          3
+        ],
+        "freeRank": 2
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14",
+      "source_formula": "Z^2 + Z_(2n) + Z_(n/2) for even n; Z^2 + Z_n^2 for odd n",
+      "spatial_action": "rotation in the plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          3,
+          3
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          3,
+          3
+        ],
+        "freeRank": 1
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_08_spinless",
+      "family": "point2",
+      "name": "C3v",
+      "physical_spin": "spinless",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          3
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4",
+      "source_formula": "spinless: Z_(2n) for even n, Z_n for odd n; spin-half: Z_(n/2)+Z_2^2 if n=0 mod4, Z_n+Z_2 if n=2 mod4, Z_n for odd n",
+      "spatial_action": "planar D_(2n), order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          3
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          3
+        ],
+        "freeRank": 0
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_08_spin_half",
+      "family": "point2",
+      "name": "C3v",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          3
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4",
+      "source_formula": "spinless: Z_(2n) for even n, Z_n for odd n; spin-half: Z_(n/2)+Z_2^2 if n=0 mod4, Z_n+Z_2 if n=2 mod4, Z_n for odd n",
+      "spatial_action": "planar D_(2n), order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          3
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          3
+        ],
+        "freeRank": 0
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_09_spinless",
+      "family": "point2",
+      "name": "C6",
+      "physical_spin": "spinless",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          3,
+          12
+        ],
+        "freeRank": 2
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14",
+      "source_formula": "Z^2 + Z_(2n) + Z_(n/2) for even n; Z^2 + Z_n^2 for odd n",
+      "spatial_action": "rotation in the plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          3,
+          12
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          3,
+          12
+        ],
+        "freeRank": 1
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_09_spin_half",
+      "family": "point2",
+      "name": "C6",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          3,
+          12
+        ],
+        "freeRank": 2
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14",
+      "source_formula": "Z^2 + Z_(2n) + Z_(n/2) for even n; Z^2 + Z_n^2 for odd n",
+      "spatial_action": "rotation in the plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          3,
+          12
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          3,
+          12
+        ],
+        "freeRank": 1
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_10_spinless",
+      "family": "point2",
+      "name": "C6v",
+      "physical_spin": "spinless",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          12
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4",
+      "source_formula": "spinless: Z_(2n) for even n, Z_n for odd n; spin-half: Z_(n/2)+Z_2^2 if n=0 mod4, Z_n+Z_2 if n=2 mod4, Z_n for odd n",
+      "spatial_action": "planar D_(2n), order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          12
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          12
+        ],
+        "freeRank": 0
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point2_10_spin_half",
+      "family": "point2",
+      "name": "C6v",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          6
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4",
+      "source_formula": "spinless: Z_(2n) for even n, Z_n for odd n; spin-half: Z_(n/2)+Z_2^2 if n=0 mod4, Z_n+Z_2 if n=2 mod4, Z_n for odd n",
+      "spatial_action": "planar D_(2n), order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "relativeN0E0Zero": {
+        "torsion": [
+          2,
+          6
+        ],
+        "freeRank": 0
+      },
+      "allN0WithE0Zero": {
+        "torsion": [
+          2,
+          6
+        ],
+        "freeRank": 0
+      },
+      "restriction_argument": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+    },
+    {
+      "id": "point3_01_spinless",
+      "family": "point3",
+      "name": "C1",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33, d=3",
+      "source_formula": "0 for every n",
+      "spatial_action": "rotation about a fixed axis",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_01_spin_half",
+      "family": "point3",
+      "name": "C1",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33, d=3",
+      "source_formula": "0 for every n",
+      "spatial_action": "rotation about a fixed axis",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_02_spinless",
+      "family": "point3",
+      "name": "Ci",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "inversion.tex",
+      "source_location": "Table 2, p.31, d=3",
+      "source_formula": "Z_8 + Z_2",
+      "spatial_action": "inversion of all three coordinates",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_02_spin_half",
+      "family": "point3",
+      "name": "Ci",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "inversion.tex",
+      "source_location": "Table 2, p.31, d=3",
+      "source_formula": "Z_8 + Z_2",
+      "spatial_action": "inversion of all three coordinates",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_03_spinless",
+      "family": "point3",
+      "name": "C2",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33, d=3",
+      "source_formula": "0 for every n",
+      "spatial_action": "rotation about a fixed axis",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_03_spin_half",
+      "family": "point3",
+      "name": "C2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33, d=3",
+      "source_formula": "0 for every n",
+      "spatial_action": "rotation about a fixed axis",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_04_spinless",
+      "family": "point3",
+      "name": "Cs",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "pin_reflection.tex",
+      "source_location": "Table 1, p.29, d=3",
+      "source_formula": "Z_8 + Z_2",
+      "spatial_action": "one mirror plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_04_spin_half",
+      "family": "point3",
+      "name": "Cs",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "pin_reflection.tex",
+      "source_location": "Table 1, p.29, d=3",
+      "source_formula": "Z_8 + Z_2",
+      "spatial_action": "one mirror plane",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_06_spinless",
+      "family": "point3",
+      "name": "D2",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "para_n_gonal.tex",
+      "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)",
+      "source_formula": "spinless:0; spin-half:0 for odd n, Z_2^3 if n=2 mod4, Z_2^2 if n=0 mod4",
+      "spatial_action": "proper dihedral rotations on R^3, order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_06_spin_half",
+      "family": "point3",
+      "name": "D2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "source_file": "para_n_gonal.tex",
+      "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)",
+      "source_formula": "spinless:0; spin-half:0 for odd n, Z_2^3 if n=2 mod4, Z_2^2 if n=0 mod4",
+      "spatial_action": "proper dihedral rotations on R^3, order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_07_spinless",
+      "family": "point3",
+      "name": "C2v",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=3",
+      "source_formula": "odd n: Z_8+Z_2; even n spinless: Z_2^4; even n spin-half: Z_8+Z_4+Z_2",
+      "spatial_action": "planar rotations/reflections with a fixed third coordinate",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_07_spin_half",
+      "family": "point3",
+      "name": "C2v",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          4,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=3",
+      "source_formula": "odd n: Z_8+Z_2; even n spinless: Z_2^4; even n spin-half: Z_8+Z_4+Z_2",
+      "spatial_action": "planar rotations/reflections with a fixed third coordinate",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_09_spinless",
+      "family": "point3",
+      "name": "C4",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33, d=3",
+      "source_formula": "0 for every n",
+      "spatial_action": "rotation about a fixed axis",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_09_spin_half",
+      "family": "point3",
+      "name": "C4",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33, d=3",
+      "source_formula": "0 for every n",
+      "spatial_action": "rotation about a fixed axis",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_12_spinless",
+      "family": "point3",
+      "name": "D4",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "para_n_gonal.tex",
+      "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)",
+      "source_formula": "spinless:0; spin-half:0 for odd n, Z_2^3 if n=2 mod4, Z_2^2 if n=0 mod4",
+      "spatial_action": "proper dihedral rotations on R^3, order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_12_spin_half",
+      "family": "point3",
+      "name": "D4",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "source_file": "para_n_gonal.tex",
+      "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)",
+      "source_formula": "spinless:0; spin-half:0 for odd n, Z_2^3 if n=2 mod4, Z_2^2 if n=0 mod4",
+      "spatial_action": "proper dihedral rotations on R^3, order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_13_spinless",
+      "family": "point3",
+      "name": "C4v",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=3",
+      "source_formula": "odd n: Z_8+Z_2; even n spinless: Z_2^4; even n spin-half: Z_8+Z_4+Z_2",
+      "spatial_action": "planar rotations/reflections with a fixed third coordinate",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_13_spin_half",
+      "family": "point3",
+      "name": "C4v",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          4,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=3",
+      "source_formula": "odd n: Z_8+Z_2; even n spinless: Z_2^4; even n spin-half: Z_8+Z_4+Z_2",
+      "spatial_action": "planar rotations/reflections with a fixed third coordinate",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_16_spinless",
+      "family": "point3",
+      "name": "C3",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33, d=3",
+      "source_formula": "0 for every n",
+      "spatial_action": "rotation about a fixed axis",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_16_spin_half",
+      "family": "point3",
+      "name": "C3",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33, d=3",
+      "source_formula": "0 for every n",
+      "spatial_action": "rotation about a fixed axis",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_18_spinless",
+      "family": "point3",
+      "name": "D3",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "para_n_gonal.tex",
+      "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)",
+      "source_formula": "spinless:0; spin-half:0 for odd n, Z_2^3 if n=2 mod4, Z_2^2 if n=0 mod4",
+      "spatial_action": "proper dihedral rotations on R^3, order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_18_spin_half",
+      "family": "point3",
+      "name": "D3",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "para_n_gonal.tex",
+      "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)",
+      "source_formula": "spinless:0; spin-half:0 for odd n, Z_2^3 if n=2 mod4, Z_2^2 if n=0 mod4",
+      "spatial_action": "proper dihedral rotations on R^3, order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_19_spinless",
+      "family": "point3",
+      "name": "C3v",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=3",
+      "source_formula": "odd n: Z_8+Z_2; even n spinless: Z_2^4; even n spin-half: Z_8+Z_4+Z_2",
+      "spatial_action": "planar rotations/reflections with a fixed third coordinate",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_19_spin_half",
+      "family": "point3",
+      "name": "C3v",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=3",
+      "source_formula": "odd n: Z_8+Z_2; even n spinless: Z_2^4; even n spin-half: Z_8+Z_4+Z_2",
+      "spatial_action": "planar rotations/reflections with a fixed third coordinate",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_21_spinless",
+      "family": "point3",
+      "name": "C6",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33, d=3",
+      "source_formula": "0 for every n",
+      "spatial_action": "rotation about a fixed axis",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_21_spin_half",
+      "family": "point3",
+      "name": "C6",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "cyclic.tex",
+      "source_location": "Table 3, p.33, d=3",
+      "source_formula": "0 for every n",
+      "spatial_action": "rotation about a fixed axis",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_24_spinless",
+      "family": "point3",
+      "name": "D6",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "para_n_gonal.tex",
+      "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)",
+      "source_formula": "spinless:0; spin-half:0 for odd n, Z_2^3 if n=2 mod4, Z_2^2 if n=0 mod4",
+      "spatial_action": "proper dihedral rotations on R^3, order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_24_spin_half",
+      "family": "point3",
+      "name": "D6",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "source_file": "para_n_gonal.tex",
+      "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)",
+      "source_formula": "spinless:0; spin-half:0 for odd n, Z_2^3 if n=2 mod4, Z_2^2 if n=0 mod4",
+      "spatial_action": "proper dihedral rotations on R^3, order 2n",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_25_spinless",
+      "family": "point3",
+      "name": "C6v",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=3",
+      "source_formula": "odd n: Z_8+Z_2; even n spinless: Z_2^4; even n spin-half: Z_8+Z_4+Z_2",
+      "spatial_action": "planar rotations/reflections with a fixed third coordinate",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_25_spin_half",
+      "family": "point3",
+      "name": "C6v",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          4,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "dihedral.tex",
+      "source_location": "Table 4, p.36, d=3",
+      "source_formula": "odd n: Z_8+Z_2; even n spinless: Z_2^4; even n spin-half: Z_8+Z_4+Z_2",
+      "spatial_action": "planar rotations/reflections with a fixed third coordinate",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_28_spinless",
+      "family": "point3",
+      "name": "T",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "tet_oct_icos_generalities.tex",
+      "source_location": "Table 6, p.60; Secs.5.1-5.5",
+      "source_formula": "[]",
+      "spatial_action": "standard three-dimensional point-group representation",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_28_spin_half",
+      "family": "point3",
+      "name": "T",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "tet_oct_icos_generalities.tex",
+      "source_location": "Table 6, p.60; Secs.5.1-5.5",
+      "source_formula": "[]",
+      "spatial_action": "standard three-dimensional point-group representation",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_29_spinless",
+      "family": "point3",
+      "name": "Th",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2,
+          4
+        ],
+        "freeRank": 0
+      },
+      "source_file": "tet_oct_icos_generalities.tex",
+      "source_location": "Table 6, p.60; Secs.5.1-5.5",
+      "source_formula": "[4, 2, 2, 2]",
+      "spatial_action": "standard three-dimensional point-group representation",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_29_spin_half",
+      "family": "point3",
+      "name": "Th",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "tet_oct_icos_generalities.tex",
+      "source_location": "Table 6, p.60; Secs.5.1-5.5",
+      "source_formula": "[8, 2, 2, 2]",
+      "spatial_action": "standard three-dimensional point-group representation",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_30_spinless",
+      "family": "point3",
+      "name": "O",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "source_file": "tet_oct_icos_generalities.tex",
+      "source_location": "Table 6, p.60; Secs.5.1-5.5",
+      "source_formula": "[]",
+      "spatial_action": "standard three-dimensional point-group representation",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_30_spin_half",
+      "family": "point3",
+      "name": "O",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2
+        ],
+        "freeRank": 0
+      },
+      "source_file": "tet_oct_icos_generalities.tex",
+      "source_location": "Table 6, p.60; Secs.5.1-5.5",
+      "source_formula": "[2]",
+      "spatial_action": "standard three-dimensional point-group representation",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": {
+        "torsion": [
+          2
+        ],
+        "freeRank": 0
+      },
+      "retainedComparisonScope": "proper_rotation_full_reference; physical dictionary still required"
+    },
+    {
+      "id": "point3_31_spinless",
+      "family": "point3",
+      "name": "Td",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "source_file": "tet_oct_icos_generalities.tex",
+      "source_location": "Table 6, p.60; Secs.5.1-5.5",
+      "source_formula": "[2, 2, 2, 2]",
+      "spatial_action": "standard three-dimensional point-group representation",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_31_spin_half",
+      "family": "point3",
+      "name": "Td",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "tet_oct_icos_generalities.tex",
+      "source_location": "Table 6, p.60; Secs.5.1-5.5",
+      "source_formula": "[8, 2, 2]",
+      "spatial_action": "standard three-dimensional point-group representation",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_32_spinless",
+      "family": "point3",
+      "name": "Oh",
+      "physical_spin": "spinless",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        "freeRank": 0
+      },
+      "source_file": "tet_oct_icos_generalities.tex",
+      "source_location": "Table 6, p.60; Secs.5.1-5.5",
+      "source_formula": "[4, 2, 2, 2, 2]",
+      "spatial_action": "standard three-dimensional point-group representation",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    },
+    {
+      "id": "point3_32_spin_half",
+      "family": "point3",
+      "name": "Oh",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 3,
+      "fullPhysical": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_file": "tet_oct_icos_generalities.tex",
+      "source_location": "Table 6, p.60; Secs.5.1-5.5",
+      "source_formula": "[8, 4, 2, 2, 2, 2]",
+      "spatial_action": "standard three-dimensional point-group representation",
+      "sector": "full_interacting_invertible_phase_homology",
+      "retainedComparison": null,
+      "retainedComparisonScope": "not_projected: no named E8 embedding extracted from this source"
+    }
+  ]
+}

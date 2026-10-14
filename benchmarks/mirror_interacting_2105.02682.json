@@ -1,0 +1,69 @@
+{
+  "source": {
+    "authors": [
+      "Shang-Qiang Ning",
+      "Bin-Bin Mao",
+      "Zhengqiao Li",
+      "Chenjie Wang"
+    ],
+    "title": "Anomaly indicators and bulk-boundary correspondences for 3D interacting topological crystalline phases with mirror and continuous symmetries",
+    "arxiv": "2105.02682v1",
+    "arxiv_date": "2021-05-06",
+    "url": "https://arxiv.org/abs/2105.02682v1",
+    "journal": "Physical Review B 104, 075111 (2021)",
+    "doi": "10.1103/PhysRevB.104.075111",
+    "sourceSHA256": "5bd95ecdc861c595961da177f202f4126f0aed91524044ac4ebe049a858292db",
+    "method": "Interacting dimensional reduction, folding, and complete bulk anomaly indicators for the stated symmetry.",
+    "independence_limit": "Distinct physical detectors, but the mirror classification builds on Song-Huang-Fu-Hermele2017; not blind independence."
+  },
+  "rows": [
+    {
+      "id": "point3_04_spinless",
+      "family": "point3",
+      "name": "Cs",
+      "physical_spin": "spinless",
+      "fullPhysical": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "namedE8Quotient": {
+        "torsion": [
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_location": "Table II; Sec.III.B.1, Eqs.(19)-(20), pp.12-13; Appendix B.1, Eq.(B4), p.31 (arXiv v1)",
+      "namedE8": "mu1 mod2; eta2f=(-1)^mu1",
+      "retained_detector": "eta1f=exp[i pi (mu2-2mu3)/4]",
+      "spin_convention": "Charge-preserving unitary mirror. Redefining M by exp(i pi Q/2) interchanges M^2=1 and M^2=(-1)^F without changing U(1) action.",
+      "comparison_limit": "The source specifies a split independent E8 root. No complete map from the current cochain roots to its anomaly indicators is asserted."
+    },
+    {
+      "id": "point3_04_spin_half",
+      "family": "point3",
+      "name": "Cs",
+      "physical_spin": "spin_half",
+      "fullPhysical": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "namedE8Quotient": {
+        "torsion": [
+          8
+        ],
+        "freeRank": 0
+      },
+      "source_location": "Table II; Sec.III.B.1, Eqs.(19)-(20), pp.12-13; Appendix B.1, Eq.(B4), p.31 (arXiv v1)",
+      "namedE8": "mu1 mod2; eta2f=(-1)^mu1",
+      "retained_detector": "eta1f=exp[i pi (mu2-2mu3)/4]",
+      "spin_convention": "Charge-preserving unitary mirror. Redefining M by exp(i pi Q/2) interchanges M^2=1 and M^2=(-1)^F without changing U(1) action.",
+      "comparison_limit": "The source specifies a split independent E8 root. No complete map from the current cochain roots to its anomaly indicators is asserted."
+    }
+  ]
+}

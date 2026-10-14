@@ -1,0 +1,438 @@
+{
+  "title": "Diagnostic only: interacting reduction of band-generated rotation phases",
+  "scope": "This file is excluded from the main interacting-classification tables. It contains only the interacting reduction stated by Liu, Vishwanath and Khalaf, not their raw free-fermion result. An abstract match does not turn this restricted result into a complete interacting classification benchmark.",
+  "row_rule": "One concrete catalog group and one physical spin per row",
+  "columns": [
+    {
+      "key": "model",
+      "label": "Computed relative retained model"
+    },
+    {
+      "key": "B2_interacting_reduction",
+      "label": "Liu\u2013Vishwanath\u2013Khalaf 2019, interacting reduction only"
+    }
+  ],
+  "sources": {
+    "B2_diagnostic": {
+      "authors": "Shang Liu, Ashvin Vishwanath, Eslam Khalaf",
+      "year": 2019,
+      "title": "Shift Insulators: Rotation-Protected Two-Dimensional Topological Crystalline Insulators",
+      "url": "https://doi.org/10.1103/PhysRevX.9.031003",
+      "version": "Journal 2019; arXiv1809.01636v2",
+      "method": "Interacting reduction of band-generated phases under adjoining; not a complete interacting classification",
+      "location": "Table VI, class A, interacting right-hand result; published Sec.VI B pp.24-25"
+    }
+  },
+  "comparison_counts": {
+    "model": {
+      "not_compared": 10
+    },
+    "B2_interacting_reduction": {
+      "abstract_match": 10
+    }
+  },
+  "availability_counts": {
+    "model": {
+      "available": 10
+    },
+    "B2_interacting_reduction": {
+      "available": 10
+    }
+  },
+  "rows": [
+    {
+      "id": "point2_01_spinless",
+      "family": "point2",
+      "index": 1,
+      "name": "C1",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "1",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": null,
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "B2_interacting_reduction": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "B2_diagnostic",
+          "scope": "Interacting reduction of band-generated phases only; not all interacting phases",
+          "source_location": "Table VI class A; interacting right-hand result",
+          "comparison_limit": "Does not establish absence of intrinsically interacting phases"
+        }
+      }
+    },
+    {
+      "id": "point2_01_spin_half",
+      "family": "point2",
+      "index": 1,
+      "name": "C1",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "1",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": null,
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "B2_interacting_reduction": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "B2_diagnostic",
+          "scope": "Interacting reduction of band-generated phases only; not all interacting phases",
+          "source_location": "Table VI class A; interacting right-hand result",
+          "comparison_limit": "Does not establish absence of intrinsically interacting phases"
+        }
+      }
+    },
+    {
+      "id": "point2_02_spinless",
+      "family": "point2",
+      "index": 2,
+      "name": "C2",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "2",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": null,
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "B2_interacting_reduction": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "B2_diagnostic",
+          "scope": "Interacting reduction of band-generated phases only; not all interacting phases",
+          "source_location": "Table VI class A; interacting right-hand result",
+          "comparison_limit": "Does not establish absence of intrinsically interacting phases"
+        }
+      }
+    },
+    {
+      "id": "point2_02_spin_half",
+      "family": "point2",
+      "index": 2,
+      "name": "C2",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "2",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": null,
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "B2_interacting_reduction": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "B2_diagnostic",
+          "scope": "Interacting reduction of band-generated phases only; not all interacting phases",
+          "source_location": "Table VI class A; interacting right-hand result",
+          "comparison_limit": "Does not establish absence of intrinsically interacting phases"
+        }
+      }
+    },
+    {
+      "id": "point2_05_spinless",
+      "family": "point2",
+      "index": 5,
+      "name": "C4",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": null,
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "B2_interacting_reduction": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "B2_diagnostic",
+          "scope": "Interacting reduction of band-generated phases only; not all interacting phases",
+          "source_location": "Table VI class A; interacting right-hand result",
+          "comparison_limit": "Does not establish absence of intrinsically interacting phases"
+        }
+      }
+    },
+    {
+      "id": "point2_05_spin_half",
+      "family": "point2",
+      "index": 5,
+      "name": "C4",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": null,
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "B2_interacting_reduction": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "B2_diagnostic",
+          "scope": "Interacting reduction of band-generated phases only; not all interacting phases",
+          "source_location": "Table VI class A; interacting right-hand result",
+          "comparison_limit": "Does not establish absence of intrinsically interacting phases"
+        }
+      }
+    },
+    {
+      "id": "point2_07_spinless",
+      "family": "point2",
+      "index": 7,
+      "name": "C3",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "3",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": null,
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "B2_interacting_reduction": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "B2_diagnostic",
+          "scope": "Interacting reduction of band-generated phases only; not all interacting phases",
+          "source_location": "Table VI class A; interacting right-hand result",
+          "comparison_limit": "Does not establish absence of intrinsically interacting phases"
+        }
+      }
+    },
+    {
+      "id": "point2_07_spin_half",
+      "family": "point2",
+      "index": 7,
+      "name": "C3",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "3",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": null,
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "B2_interacting_reduction": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "B2_diagnostic",
+          "scope": "Interacting reduction of band-generated phases only; not all interacting phases",
+          "source_location": "Table VI class A; interacting right-hand result",
+          "comparison_limit": "Does not establish absence of intrinsically interacting phases"
+        }
+      }
+    },
+    {
+      "id": "point2_09_spinless",
+      "family": "point2",
+      "index": 9,
+      "name": "C6",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              12
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": null,
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "B2_interacting_reduction": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              12
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "B2_diagnostic",
+          "scope": "Interacting reduction of band-generated phases only; not all interacting phases",
+          "source_location": "Table VI class A; interacting right-hand result",
+          "comparison_limit": "Does not establish absence of intrinsically interacting phases"
+        }
+      }
+    },
+    {
+      "id": "point2_09_spin_half",
+      "family": "point2",
+      "index": 9,
+      "name": "C6",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6",
+      "orientation_reversing": false,
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              12
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": null,
+          "scope": null,
+          "source_location": null,
+          "comparison_limit": null
+        },
+        "B2_interacting_reduction": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              12
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "abstract_match",
+          "source": "B2_diagnostic",
+          "scope": "Interacting reduction of band-generated phases only; not all interacting phases",
+          "source_location": "Table VI class A; interacting right-hand result",
+          "comparison_limit": "Does not establish absence of intrinsically interacting phases"
+        }
+      }
+    }
+  ]
+}

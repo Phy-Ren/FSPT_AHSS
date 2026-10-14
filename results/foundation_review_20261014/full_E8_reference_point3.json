@@ -1,0 +1,3975 @@
+{
+  "title": "3D point groups: full physical reference groups",
+  "scope": "Reference-only table. Independent neutral E8 decorations are retained wherever the cited physical classification includes them. There is no computed full-E8 physical classification column. The values must not be compared directly with the retained-model column in another table without a sector map.",
+  "row_rule": "One concrete catalog group and one physical spin per row",
+  "columns": [
+    {
+      "key": "R3_arxiv",
+      "label": "Zhang\u2013Ning\u2013Qi\u2013Gu 2024v2, full"
+    },
+    {
+      "key": "R3_journal",
+      "label": "Zhang\u2013Ning\u2013Qi\u2013Gu journal2025, full"
+    },
+    {
+      "key": "Debray_full",
+      "label": "Debray 2026v3, full physical"
+    },
+    {
+      "key": "NMLW_full",
+      "label": "Ning\u2013Mao\u2013Li\u2013Wang 2021, full mirror"
+    }
+  ],
+  "sources": {
+    "R3_arxiv": {
+      "authors": "Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi, Zheng-Cheng Gu",
+      "year": 2024,
+      "title": "Construction and classification of crystalline topological superconductor and insulators in three-dimensional interacting fermion systems",
+      "url": "https://arxiv.org/abs/2204.13558v2",
+      "version": "arXiv v2, 2024-06-18",
+      "method": "Interacting real-space topological crystals, boundary gapping, bubble equivalence and stacking",
+      "location": "Table II and named E8 root lists"
+    },
+    "R3_journal": {
+      "authors": "Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi, Zheng-Cheng Gu",
+      "year": 2025,
+      "title": "Construction and Classification of Crystalline Topological Superconductor and Insulators in Three-Dimensional Interacting Fermion Systems",
+      "url": "https://doi.org/10.1103/PhysRevX.15.031029",
+      "version": "Published 2025-07-28; supplement dated 2025-07-08",
+      "method": "Interacting real-space topological crystals, boundary gapping, bubble equivalence and stacking",
+      "location": "Table II p.031029-5 and independently reread named E8 root lists"
+    },
+    "Debray": {
+      "authors": "Arun Debray",
+      "year": 2026,
+      "title": "Invertible phases for mixed spatial symmetries and the fermionic crystalline equivalence principle",
+      "url": "https://arxiv.org/abs/2102.02941v3",
+      "version": "v3, 2026-02-03",
+      "method": "Spin-c/Pin-c bordism, Adams spectral sequences, Anderson-dual equivariant phase homology",
+      "location": "Tables 1\u20136 and theorems specified separately in each row; extracted Class A phase groups",
+      "author": "Arun Debray",
+      "first_version": "2021-02-05",
+      "source_url": "https://arxiv.org/src/2102.02941v3",
+      "source_archive_sha256": "0e015df95d1b6fb9ac405446ed4edc7f9e843999c551ed81b15a9126412eb9ad",
+      "files_sha256": {
+        "cyclic.tex": "f7c48f8ac882841a4deff8fa6997b4f0891c43c4a92aa417f0a7e298c75e8d15",
+        "spinc_rotation.tex": "9feecd5aef6e761aa06976eba047c91414641d5df471763dff65787a507f9766",
+        "dihedral.tex": "5f9c2d2a50a2223a6741a96f5c34cc8b759ebb5ab537d550f412adda9f9341f8",
+        "para_n_gonal.tex": "771404e4a3389d1284998cbfb8f3b671ed0224b56d28abf9f91326ffc0fbfa1f",
+        "pin_reflection.tex": "8e4470ba32e4ab31a57183b8504a3a54db2966f32cf74a46ed878aaf21a57e65",
+        "inversion.tex": "2e80b964f34f0902342fa82d70e1f22929000714aaca59f7718171fe54d198c1",
+        "tet_oct_icos_generalities.tex": "2f53ce2fb93f4c8176062b8c6a44fdb8c7ef5aced1f89e140afe6094d54d71df"
+      },
+      "scope": "Interacting Class A only, under the generalized-homology ansatz. Class D columns are not extracted. Includes independent intrinsic responses and neutral bosonic contributions.",
+      "independence_limit": "Different mathematical method; v3 explicitly acknowledges revisions following comparison with Zhang-Ning-Qi-Gu2025. Not blind independence of the final tables."
+    },
+    "NMLW": {
+      "authors": "Shang-Qiang Ning, Bin-Bin Mao, Zhengqiao Li, Chenjie Wang",
+      "title": "Anomaly indicators and bulk-boundary correspondences for 3D interacting topological crystalline phases with mirror and continuous symmetries",
+      "arxiv": "2105.02682v1",
+      "arxiv_date": "2021-05-06",
+      "url": "https://arxiv.org/abs/2105.02682v1",
+      "journal": "Physical Review B 104, 075111 (2021)",
+      "doi": "10.1103/PhysRevB.104.075111",
+      "sourceSHA256": "5bd95ecdc861c595961da177f202f4126f0aed91524044ac4ebe049a858292db",
+      "method": "Interacting dimensional reduction, folding, and complete bulk anomaly indicators for the stated symmetry.",
+      "independence_limit": "Distinct physical detectors, but the mirror classification builds on Song-Huang-Fu-Hermele2017; not blind independence.",
+      "version": "arXiv2105.02682v1, 2021-05-06; PRB104,075111 (2021)",
+      "location": "Table II; Sec.III.B.1 Eqs.19-20 pp.12-13; AppendixB.1 Eq.B4 p.31"
+    }
+  },
+  "comparison_counts": {
+    "R3_arxiv": {
+      "not_compared": 64
+    },
+    "R3_journal": {
+      "not_compared": 64
+    },
+    "Debray_full": {
+      "not_compared": 64
+    },
+    "NMLW_full": {
+      "not_compared": 64
+    }
+  },
+  "availability_counts": {
+    "R3_arxiv": {
+      "available": 64
+    },
+    "R3_journal": {
+      "available": 64
+    },
+    "Debray_full": {
+      "available": 40,
+      "unverified": 24
+    },
+    "NMLW_full": {
+      "not_applicable": 62,
+      "available": 2
+    }
+  },
+  "rows": [
+    {
+      "id": "point3_01_spinless",
+      "family": "point3",
+      "index": 1,
+      "name": "C1",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "1",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_01_spin_half",
+      "family": "point3",
+      "index": 1,
+      "name": "C1",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "1",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_02_spinless",
+      "family": "point3",
+      "index": 2,
+      "name": "Ci",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-1",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "inversion.tex",
+            "location": "Table 2, p.31, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_02_spin_half",
+      "family": "point3",
+      "index": 2,
+      "name": "Ci",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-1",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "inversion.tex",
+            "location": "Table 2, p.31, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_03_spinless",
+      "family": "point3",
+      "index": 3,
+      "name": "C2",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "2",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_03_spin_half",
+      "family": "point3",
+      "index": 3,
+      "name": "C2",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "2",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_04_spinless",
+      "family": "point3",
+      "index": 4,
+      "name": "Cs",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "pin_reflection.tex",
+            "location": "Table 1, p.29, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "NMLW",
+          "scope": "full physical mirror classification",
+          "source_location": "Table II; Sec.III.B.1, Eqs.(19)-(20), pp.12-13; Appendix B.1, Eq.(B4), p.31 (arXiv v1)",
+          "comparison_limit": "The source specifies a split independent E8 root. No complete map from the current cochain roots to its anomaly indicators is asserted.",
+          "named_E8_detector": "mu1 mod2; eta2f=(-1)^mu1",
+          "retained_detector": "eta1f=exp[i pi (mu2-2mu3)/4]",
+          "spin_convention": "Charge-preserving unitary mirror. Redefining M by exp(i pi Q/2) interchanges M^2=1 and M^2=(-1)^F without changing U(1) action."
+        }
+      }
+    },
+    {
+      "id": "point3_04_spin_half",
+      "family": "point3",
+      "index": 4,
+      "name": "Cs",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "pin_reflection.tex",
+            "location": "Table 1, p.29, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "NMLW",
+          "scope": "full physical mirror classification",
+          "source_location": "Table II; Sec.III.B.1, Eqs.(19)-(20), pp.12-13; Appendix B.1, Eq.(B4), p.31 (arXiv v1)",
+          "comparison_limit": "The source specifies a split independent E8 root. No complete map from the current cochain roots to its anomaly indicators is asserted.",
+          "named_E8_detector": "mu1 mod2; eta2f=(-1)^mu1",
+          "retained_detector": "eta1f=exp[i pi (mu2-2mu3)/4]",
+          "spin_convention": "Charge-preserving unitary mirror. Redefining M by exp(i pi Q/2) interchanges M^2=1 and M^2=(-1)^F without changing U(1) action."
+        }
+      }
+    },
+    {
+      "id": "point3_05_spinless",
+      "family": "point3",
+      "index": 5,
+      "name": "C2h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "2/m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_05_spin_half",
+      "family": "point3",
+      "index": 5,
+      "name": "C2h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "2/m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_06_spinless",
+      "family": "point3",
+      "index": 6,
+      "name": "D2",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "222",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_06_spin_half",
+      "family": "point3",
+      "index": 6,
+      "name": "D2",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "222",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required",
+          "proof_audit": {
+            "path": "docs/foundations/debray_d2_grading_audit.md",
+            "result_path": "results/foundation_review_20261014/diagnostics/debray_d2_ku_grading_audit.json",
+            "summary": "Printed Z2^3 is preserved. Our source-internal audit finds two, not three, degree-four monomials in the cited graded splitting; this is not a published erratum or a general verdict on the reference.",
+            "source_location": "Table 5 p.52; Theorem 4.82 proof item (4) p.57 versus Eq.(4.59) p.49",
+            "printed_group_unchanged": true
+          }
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_07_spinless",
+      "family": "point3",
+      "index": 7,
+      "name": "C2v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "mm2",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_07_spin_half",
+      "family": "point3",
+      "index": 7,
+      "name": "C2v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "mm2",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_08_spinless",
+      "family": "point3",
+      "index": 8,
+      "name": "D2h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "mmm",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_08_spin_half",
+      "family": "point3",
+      "index": 8,
+      "name": "D2h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "mmm",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_09_spinless",
+      "family": "point3",
+      "index": 9,
+      "name": "C4",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_09_spin_half",
+      "family": "point3",
+      "index": 9,
+      "name": "C4",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_10_spinless",
+      "family": "point3",
+      "index": 10,
+      "name": "S4",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-4",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_10_spin_half",
+      "family": "point3",
+      "index": 10,
+      "name": "S4",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-4",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_11_spinless",
+      "family": "point3",
+      "index": 11,
+      "name": "C4h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4/m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_11_spin_half",
+      "family": "point3",
+      "index": 11,
+      "name": "C4h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4/m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_12_spinless",
+      "family": "point3",
+      "index": 12,
+      "name": "D4",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "422",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_12_spin_half",
+      "family": "point3",
+      "index": 12,
+      "name": "D4",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "422",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_13_spinless",
+      "family": "point3",
+      "index": 13,
+      "name": "C4v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4mm",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_13_spin_half",
+      "family": "point3",
+      "index": 13,
+      "name": "C4v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4mm",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_14_spinless",
+      "family": "point3",
+      "index": 14,
+      "name": "D2d",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-42m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_14_spin_half",
+      "family": "point3",
+      "index": 14,
+      "name": "D2d",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-42m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_15_spinless",
+      "family": "point3",
+      "index": 15,
+      "name": "D4h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4/mmm",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_15_spin_half",
+      "family": "point3",
+      "index": 15,
+      "name": "D4h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4/mmm",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_16_spinless",
+      "family": "point3",
+      "index": 16,
+      "name": "C3",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "3",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_16_spin_half",
+      "family": "point3",
+      "index": 16,
+      "name": "C3",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "3",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_17_spinless",
+      "family": "point3",
+      "index": 17,
+      "name": "C3i",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-3",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_17_spin_half",
+      "family": "point3",
+      "index": 17,
+      "name": "C3i",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-3",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_18_spinless",
+      "family": "point3",
+      "index": 18,
+      "name": "D3",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "32",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_18_spin_half",
+      "family": "point3",
+      "index": 18,
+      "name": "D3",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "32",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_19_spinless",
+      "family": "point3",
+      "index": 19,
+      "name": "C3v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "3m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_19_spin_half",
+      "family": "point3",
+      "index": 19,
+      "name": "C3v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "3m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_20_spinless",
+      "family": "point3",
+      "index": 20,
+      "name": "D3d",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-3m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_20_spin_half",
+      "family": "point3",
+      "index": 20,
+      "name": "D3d",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-3m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_21_spinless",
+      "family": "point3",
+      "index": 21,
+      "name": "C6",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_21_spin_half",
+      "family": "point3",
+      "index": 21,
+      "name": "C6",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33, d=3"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_22_spinless",
+      "family": "point3",
+      "index": 22,
+      "name": "C3h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-6",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_22_spin_half",
+      "family": "point3",
+      "index": 22,
+      "name": "C3h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-6",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_23_spinless",
+      "family": "point3",
+      "index": 23,
+      "name": "C6h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6/m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_23_spin_half",
+      "family": "point3",
+      "index": 23,
+      "name": "C6h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6/m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_24_spinless",
+      "family": "point3",
+      "index": 24,
+      "name": "D6",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "622",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_24_spin_half",
+      "family": "point3",
+      "index": 24,
+      "name": "D6",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "622",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "para_n_gonal.tex",
+            "location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required",
+          "proof_audit": {
+            "path": "docs/foundations/debray_d2_grading_audit.md",
+            "result_path": "results/foundation_review_20261014/diagnostics/debray_d2_ku_grading_audit.json",
+            "summary": "Printed Z2^3 is preserved. Our source-internal audit finds two, not three, degree-four monomials in the cited graded splitting; this is not a published erratum or a general verdict on the reference.",
+            "source_location": "Table 5 p.52; Theorem 4.82 proof item (4) p.57 versus Eq.(4.59) p.49",
+            "printed_group_unchanged": true
+          }
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_25_spinless",
+      "family": "point3",
+      "index": 25,
+      "name": "C6v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6mm",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_25_spin_half",
+      "family": "point3",
+      "index": 25,
+      "name": "C6v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6mm",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=3"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_26_spinless",
+      "family": "point3",
+      "index": 26,
+      "name": "D3h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-6m2",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_26_spin_half",
+      "family": "point3",
+      "index": 26,
+      "name": "D3h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-6m2",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_27_spinless",
+      "family": "point3",
+      "index": 27,
+      "name": "D6h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6/mmm",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_27_spin_half",
+      "family": "point3",
+      "index": 27,
+      "name": "D6h",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6/mmm",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "unverified",
+          "reason": "no verified source value extracted for this concrete group/spin",
+          "comparison_status": "not_compared"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_28_spinless",
+      "family": "point3",
+      "index": 28,
+      "name": "T",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "23",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_28_spin_half",
+      "family": "point3",
+      "index": 28,
+      "name": "T",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "23",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_29_spinless",
+      "family": "point3",
+      "index": 29,
+      "name": "Th",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "m-3",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_29_spin_half",
+      "family": "point3",
+      "index": 29,
+      "name": "Th",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "m-3",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_30_spinless",
+      "family": "point3",
+      "index": 30,
+      "name": "O",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "432",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_30_spin_half",
+      "family": "point3",
+      "index": 30,
+      "name": "O",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "432",
+      "orientation_reversing": false,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "proper_rotation_full_reference; physical dictionary still required"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_31_spinless",
+      "family": "point3",
+      "index": 31,
+      "name": "Td",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-43m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_31_spin_half",
+      "family": "point3",
+      "index": 31,
+      "name": "Td",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "-43m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_32_spinless",
+      "family": "point3",
+      "index": 32,
+      "name": "Oh",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "m-3m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "point3_32_spin_half",
+      "family": "point3",
+      "index": 32,
+      "name": "Oh",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "m-3m",
+      "orientation_reversing": true,
+      "cells": {
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_arxiv",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "R3_journal",
+          "scope": "source full physical interacting group; E8 included where present",
+          "source_location": "Table II",
+          "comparison_limit": null
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "tet_oct_icos_generalities.tex",
+            "location": "Table 6, p.60; Secs.5.1-5.5"
+          },
+          "comparison_limit": "not_projected: no named E8 embedding extracted from this source"
+        },
+        "NMLW_full": {
+          "availability": "not_applicable",
+          "reason": "source column is the charge-preserving 3D mirror Cs classification",
+          "comparison_status": "not_compared"
+        }
+      }
+    }
+  ]
+}

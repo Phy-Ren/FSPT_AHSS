@@ -1,0 +1,169 @@
+{
+  "checked_date": "2026-10-14",
+  "negative_result_scope": "No formal correction to PRR4 033081 or PRX15 031029 was located in the specified records and searches. This is not proof of absence.",
+  "positive_control": "PRB101 100501 publisher page explicitly links PRB103 099902, despite its empty Crossref updates and Crossmark current status.",
+  "records": [
+    {
+      "doi": "10.1103/PhysRevResearch.4.033081",
+      "title": "Real-space construction of crystalline topological superconductors and insulators in 2D interacting fermionic systems",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            29
+          ]
+        ]
+      },
+      "crossref_endpoint": "https://api.crossref.org/works/10.1103/PhysRevResearch.4.033081",
+      "crossref_status": 200,
+      "relation": {},
+      "update_to": null,
+      "updated_by": null,
+      "crossmark_endpoint": "https://crossmark.crossref.org/dialog-content?doi=10.1103/PhysRevResearch.4.033081&domain=pdf",
+      "crossmark_status": "Document is current",
+      "crossmark_update_rows_found": false,
+      "crossmark_html_sha256": "348f497104e417ee444befb1895060b961a32a8aeb44f77ffa637d7db06dfa99",
+      "correction_doi": null,
+      "formal_correction_of_this_record_located": false,
+      "is_formal_correction": false
+    },
+    {
+      "doi": "10.1103/PhysRevX.15.031029",
+      "title": "Construction and Classification of Crystalline Topological Superconductor and Insulators in Three-Dimensional Interacting Fermion Systems",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            28
+          ]
+        ]
+      },
+      "crossref_endpoint": "https://api.crossref.org/works/10.1103/PhysRevX.15.031029",
+      "crossref_status": 200,
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.48550/arXiv.2204.13558",
+            "asserted-by": "subject"
+          }
+        ]
+      },
+      "update_to": null,
+      "updated_by": null,
+      "crossmark_endpoint": "https://crossmark.crossref.org/dialog-content?doi=10.1103/PhysRevX.15.031029&domain=pdf",
+      "crossmark_status": "Document is current",
+      "crossmark_update_rows_found": false,
+      "crossmark_html_sha256": "2a875eed374997a40ee75a34ea78c436bc6cb5eb195491b6a6128d8d1f77882a",
+      "correction_doi": null,
+      "formal_correction_of_this_record_located": false,
+      "is_formal_correction": false
+    },
+    {
+      "doi": "10.1103/PhysRevB.101.100501",
+      "title": "Construction and classification of point-group symmetry-protected topological phases in two-dimensional interacting fermionic systems",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            3,
+            5
+          ]
+        ]
+      },
+      "crossref_endpoint": "https://api.crossref.org/works/10.1103/PhysRevB.101.100501",
+      "crossref_status": 200,
+      "relation": {},
+      "update_to": null,
+      "updated_by": null,
+      "crossmark_endpoint": "https://crossmark.crossref.org/dialog-content?doi=10.1103/PhysRevB.101.100501&domain=pdf",
+      "crossmark_status": "Document is current",
+      "crossmark_update_rows_found": false,
+      "crossmark_html_sha256": "a4e212e55a18763b4472adf6c10293d6060fa9c3ff34997450b55145a4a47082",
+      "correction_doi": "10.1103/PhysRevB.103.099902",
+      "formal_correction_of_this_record_located": true,
+      "is_formal_correction": false
+    },
+    {
+      "doi": "10.1103/PhysRevB.103.099902",
+      "title": "Erratum: Construction and classification of point-group symmetry-protected topological phases in two-dimensional interacting fermionic systems [Phys. Rev. B \n<b>101</b>\n, 100501(R) (2020)]",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            15
+          ]
+        ]
+      },
+      "crossref_endpoint": "https://api.crossref.org/works/10.1103/PhysRevB.103.099902",
+      "crossref_status": 200,
+      "relation": {},
+      "update_to": null,
+      "updated_by": null,
+      "crossmark_endpoint": "https://crossmark.crossref.org/dialog-content?doi=10.1103/PhysRevB.103.099902&domain=pdf",
+      "crossmark_status": "Document is current",
+      "crossmark_update_rows_found": false,
+      "crossmark_html_sha256": "06b5f8731d9fac478264bb6a7ebeac6ccc5716a109920728eca7c5e3827505c4",
+      "correction_doi": null,
+      "formal_correction_of_this_record_located": false,
+      "is_formal_correction": true,
+      "corrects_doi": "10.1103/PhysRevB.101.100501"
+    }
+  ],
+  "searches": [
+    {
+      "query": "Erratum Real-space construction crystalline topological superconductors insulators",
+      "status": 200,
+      "result_count": 10
+    },
+    {
+      "query": "Erratum Construction Classification Crystalline Topological Superconductor Insulators Three-Dimensional",
+      "status": 429,
+      "result_count": 0
+    },
+    {
+      "query": "Jian-Hao Zhang Erratum",
+      "status": 429,
+      "result_count": 0
+    },
+    {
+      "query": "Jian-Hao Zhang Corrigendum",
+      "status": 200,
+      "result_count": 10
+    }
+  ],
+  "web_searches": [
+    "\"Jian-Hao Zhang\" erratum",
+    "\"PhysRevResearch.4.033081\" erratum",
+    "\"PhysRevX.15.031029\" correction",
+    "\"Jian-Hao Zhang\" Corrigendum",
+    "\"Jian-Hao Zhang\" Westlake publications"
+  ],
+  "arxiv_versions": {
+    "1909.05519": {
+      "latest": "v4",
+      "latest_date": "2020-03-06",
+      "erratum_incorporated": false
+    },
+    "2012.15657": {
+      "v1_date": "2020-12-31",
+      "v2_date": "2023-06-20"
+    },
+    "2204.13558": {
+      "v1_date": "2022-04-28",
+      "v2_date": "2024-06-18"
+    }
+  },
+  "erratum_fulltext": {
+    "publisher_url": "https://journals.aps.org/prb/pdf/10.1103/PhysRevB.103.099902",
+    "pages": 2,
+    "access": "Complete web PDF text extraction; automatic local PDF retrieval failed; no browser download tool available.",
+    "cached_text": "/home/arxiv/10.1103_physrevb.103.099902.publisher_web.txt",
+    "cached_text_sha256": "7243b713ca086d378cda57f295a24f1a30a508215e72fa63ff0f51fac1bbf50f",
+    "local_pdf_sha256": null
+  },
+  "no_runtime_changes": true
+}

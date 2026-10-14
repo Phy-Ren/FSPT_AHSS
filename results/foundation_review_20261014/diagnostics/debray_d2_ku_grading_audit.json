@@ -1,0 +1,348 @@
+{
+  "audit_date": "2026-10-14",
+  "status": "printed_derivation_grading_inconsistency_confirmed",
+  "scope": "Specific degree-count audit of Debray v3 Theorem4.82, p57, using Eq4.59, p49 and an independent primary ku theorem. Not a formal erratum or a proof of every physical comparison.",
+  "debray": {
+    "url": "https://arxiv.org/abs/2102.02941v3",
+    "files_sha256": {
+      "para_n_gonal.tex": "771404e4a3389d1284998cbfb8f3b671ed0224b56d28abf9f91326ffc0fbfa1f",
+      "spinc_mixed_dih_2mod4.tex": "2349f6d952452f8c02bd773745afce61488b1d3cfdf2e658ec0f48a5dd86e06a",
+      "sseq_summary.tex": "47793acd342ffa861ace6c2246fc4218e997de31a8149ef8c172fc9e828b26b0"
+    },
+    "printed_phase_group": {
+      "freeRank": 0,
+      "torsion": [
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  "independent_primary": {
+    "authors": "Robert Bruner, Khairia Mira, Laura Stanley, Victor Snaith",
+    "title": "Ossa's Theorem via the Kunneth formula",
+    "url": "https://arxiv.org/abs/1008.0166",
+    "location": "Theorem2.12, p=2",
+    "tex_sha256": "766eba19d4ffe7e7647fba63f9a2eb64190d7faae7341982816e2c8178d411c2"
+  },
+  "mathematical_inputs": [
+    "Stable splitting BV4_+ = S wedge BC2 wedge BC2 wedge (BC2 smash BC2).",
+    "Reduced ku_(2j)(BC2)=0 and reduced ku_(2j+1)(BC2)=Z/(2^(j+1)), j>=0.",
+    "ku smash BC2 smash BC2 = (ku smash Sigma^2 BC2) wedge Sigma^2 H(F2[u,v]), |u|=|v|=2.",
+    "Low-degree ABP comparison Omega^SpinC_k(X)=ku_k(X)+ku_(k-4)(X), k<=7, at2; BV4 has no odd-primary reduced contribution.",
+    "Anderson dual degree5: Ext(Omega4,Z) plus Hom(Omega5,Z); Omega5 is torsion."
+  ],
+  "derived_3plus1_phase_group": {
+    "freeRank": 0,
+    "torsion": [
+      2,
+      2
+    ]
+  },
+  "rows": [
+    {
+      "degree": 0,
+      "em_monomial_exponents": [],
+      "primary_theorem_positive_index_pairs": [],
+      "em_rank": 0,
+      "printed_proof_em_rank": 0,
+      "ku_BV4": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "shifted_ku_for_spinc": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "derived_spinc_BV4": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "printed_theorem_4_82_n2": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "equal": true
+    },
+    {
+      "degree": 1,
+      "em_monomial_exponents": [],
+      "primary_theorem_positive_index_pairs": [],
+      "em_rank": 0,
+      "printed_proof_em_rank": 0,
+      "ku_BV4": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "shifted_ku_for_spinc": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "derived_spinc_BV4": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "printed_theorem_4_82_n2": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "equal": true
+    },
+    {
+      "degree": 2,
+      "em_monomial_exponents": [
+        [
+          0,
+          0
+        ]
+      ],
+      "primary_theorem_positive_index_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "em_rank": 1,
+      "printed_proof_em_rank": 1,
+      "ku_BV4": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "shifted_ku_for_spinc": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "derived_spinc_BV4": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "printed_theorem_4_82_n2": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "equal": true
+    },
+    {
+      "degree": 3,
+      "em_monomial_exponents": [],
+      "primary_theorem_positive_index_pairs": [],
+      "em_rank": 0,
+      "printed_proof_em_rank": 2,
+      "ku_BV4": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          4
+        ]
+      },
+      "shifted_ku_for_spinc": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "derived_spinc_BV4": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          4
+        ]
+      },
+      "printed_theorem_4_82_n2": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          4
+        ]
+      },
+      "equal": false
+    },
+    {
+      "degree": 4,
+      "em_monomial_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "primary_theorem_positive_index_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "em_rank": 2,
+      "printed_proof_em_rank": 3,
+      "ku_BV4": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "shifted_ku_for_spinc": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "derived_spinc_BV4": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "printed_theorem_4_82_n2": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "equal": false
+    },
+    {
+      "degree": 5,
+      "em_monomial_exponents": [],
+      "primary_theorem_positive_index_pairs": [],
+      "em_rank": 0,
+      "printed_proof_em_rank": 4,
+      "ku_BV4": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8,
+          8
+        ]
+      },
+      "shifted_ku_for_spinc": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "derived_spinc_BV4": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4,
+          8,
+          8
+        ]
+      },
+      "printed_theorem_4_82_n2": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          8,
+          8
+        ]
+      },
+      "equal": false
+    },
+    {
+      "degree": 6,
+      "em_monomial_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "primary_theorem_positive_index_pairs": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "em_rank": 3,
+      "printed_proof_em_rank": 5,
+      "ku_BV4": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "shifted_ku_for_spinc": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "derived_spinc_BV4": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "printed_theorem_4_82_n2": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "equal": false
+    }
+  ],
+  "no_classifier_data_read": true,
+  "no_printed_fixture_changed": true
+}

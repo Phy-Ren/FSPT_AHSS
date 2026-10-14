@@ -1,0 +1,1556 @@
+{
+  "title": "2D full physical reference groups, with independent E8",
+  "scope": "Reference-only table. The Manjunath\u2013Calvera\u2013Barkeshli column includes independent electric Hall, thermal Hall and filling coordinates for its orientation-preserving wallpaper groups. No full physical E8 classification is calculated by the current runtime. Other sources are filled only after their exact scope is verified; coverage gaps remain explicit.",
+  "row_rule": "One concrete catalog group and one physical spin per row",
+  "columns": [
+    {
+      "key": "MCB_full",
+      "label": "Manjunath\u2013Calvera\u2013Barkeshli 2024, full"
+    },
+    {
+      "key": "Debray_full",
+      "label": "Debray 2026v3, full physical"
+    }
+  ],
+  "sources": {
+    "MCB": {
+      "authors": "Naren Manjunath, Vladimir Calvera, Maissam Barkeshli",
+      "year": 2024,
+      "title": "Characterization and classification of interacting (2+1)D topological crystalline insulators with orientation-preserving wallpaper groups",
+      "url": "https://doi.org/10.1103/PhysRevB.109.035168",
+      "version": "PRB109,035168 (2024); extraction pinned to arXiv2309.12389v1",
+      "method": "Interacting invertible-phase response invariants",
+      "location": "Table I and Sec.III; response-defined subgroups C=c-=0 or k1=0"
+    },
+    "Debray": {
+      "authors": "Arun Debray",
+      "year": 2026,
+      "title": "Invertible phases for mixed spatial symmetries and the fermionic crystalline equivalence principle",
+      "url": "https://arxiv.org/abs/2102.02941v3",
+      "version": "v3, 2026-02-03",
+      "method": "Spin-c/Pin-c bordism, Adams spectral sequences, Anderson-dual equivariant phase homology",
+      "location": "Tables 1\u20136 and theorems specified separately in each row; extracted Class A phase groups",
+      "author": "Arun Debray",
+      "first_version": "2021-02-05",
+      "source_url": "https://arxiv.org/src/2102.02941v3",
+      "source_archive_sha256": "0e015df95d1b6fb9ac405446ed4edc7f9e843999c551ed81b15a9126412eb9ad",
+      "files_sha256": {
+        "cyclic.tex": "f7c48f8ac882841a4deff8fa6997b4f0891c43c4a92aa417f0a7e298c75e8d15",
+        "spinc_rotation.tex": "9feecd5aef6e761aa06976eba047c91414641d5df471763dff65787a507f9766",
+        "dihedral.tex": "5f9c2d2a50a2223a6741a96f5c34cc8b759ebb5ab537d550f412adda9f9341f8",
+        "para_n_gonal.tex": "771404e4a3389d1284998cbfb8f3b671ed0224b56d28abf9f91326ffc0fbfa1f",
+        "pin_reflection.tex": "8e4470ba32e4ab31a57183b8504a3a54db2966f32cf74a46ed878aaf21a57e65",
+        "inversion.tex": "2e80b964f34f0902342fa82d70e1f22929000714aaca59f7718171fe54d198c1",
+        "tet_oct_icos_generalities.tex": "2f53ce2fb93f4c8176062b8c6a44fdb8c7ef5aced1f89e140afe6094d54d71df"
+      },
+      "scope": "Interacting Class A only, under the generalized-homology ansatz. Class D columns are not extracted. Includes independent intrinsic responses and neutral bosonic contributions.",
+      "independence_limit": "Different mathematical method; v3 explicitly acknowledges revisions following comparison with Zhang-Ning-Qi-Gu2025. Not blind independence of the final tables."
+    }
+  },
+  "comparison_counts": {
+    "MCB_full": {
+      "not_compared": 54
+    },
+    "Debray_full": {
+      "not_compared": 54
+    }
+  },
+  "availability_counts": {
+    "MCB_full": {
+      "not_applicable": 44,
+      "available": 10
+    },
+    "Debray_full": {
+      "available": 20,
+      "not_applicable": 34
+    }
+  },
+  "rows": [
+    {
+      "id": "point2_01_spinless",
+      "family": "point2",
+      "index": 1,
+      "name": "C1",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "1",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_01_spin_half",
+      "family": "point2",
+      "index": 1,
+      "name": "C1",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "1",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_02_spinless",
+      "family": "point2",
+      "index": 2,
+      "name": "C2",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "2",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 2
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_02_spin_half",
+      "family": "point2",
+      "index": 2,
+      "name": "C2",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "2",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 2
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_03_spinless",
+      "family": "point2",
+      "index": 3,
+      "name": "Cs",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "m",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "pin_reflection.tex",
+            "location": "Table 1, p.29, d=2"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_03_spin_half",
+      "family": "point2",
+      "index": 3,
+      "name": "Cs",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "m",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "pin_reflection.tex",
+            "location": "Table 1, p.29, d=2"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_04_spinless",
+      "family": "point2",
+      "index": 4,
+      "name": "C2v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "2mm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_04_spin_half",
+      "family": "point2",
+      "index": 4,
+      "name": "C2v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "2mm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_05_spinless",
+      "family": "point2",
+      "index": 5,
+      "name": "C4",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 2
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_05_spin_half",
+      "family": "point2",
+      "index": 5,
+      "name": "C4",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 2
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_06_spinless",
+      "family": "point2",
+      "index": 6,
+      "name": "C4v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4mm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_06_spin_half",
+      "family": "point2",
+      "index": 6,
+      "name": "C4v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "4mm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_07_spinless",
+      "family": "point2",
+      "index": 7,
+      "name": "C3",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "3",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 2
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_07_spin_half",
+      "family": "point2",
+      "index": 7,
+      "name": "C3",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "3",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 2
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_08_spinless",
+      "family": "point2",
+      "index": 8,
+      "name": "C3v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "3m",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_08_spin_half",
+      "family": "point2",
+      "index": 8,
+      "name": "C3v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "3m",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_09_spinless",
+      "family": "point2",
+      "index": 9,
+      "name": "C6",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              12
+            ],
+            "freeRank": 2
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_09_spin_half",
+      "family": "point2",
+      "index": 9,
+      "name": "C6",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              12
+            ],
+            "freeRank": 2
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_10_spinless",
+      "family": "point2",
+      "index": 10,
+      "name": "C6v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6mm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              12
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "point2_10_spin_half",
+      "family": "point2",
+      "index": 10,
+      "name": "C6v",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "6mm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              6
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared",
+          "source": "Debray",
+          "scope": "full_physical",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        }
+      }
+    },
+    {
+      "id": "wallpaper_01_spinless",
+      "family": "wallpaper",
+      "index": 1,
+      "name": "p1",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "p1",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 3
+          },
+          "comparison_status": "not_compared",
+          "source": "MCB",
+          "scope": "independent electric/thermal/filling responses; full E8 included",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_01_spin_half",
+      "family": "wallpaper",
+      "index": 1,
+      "name": "p1",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "p1",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 3
+          },
+          "comparison_status": "not_compared",
+          "source": "MCB",
+          "scope": "independent electric/thermal/filling responses; full E8 included",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_02_spinless",
+      "family": "wallpaper",
+      "index": 2,
+      "name": "p2",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "p2",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              4
+            ],
+            "freeRank": 3
+          },
+          "comparison_status": "not_compared",
+          "source": "MCB",
+          "scope": "independent electric/thermal/filling responses; full E8 included",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_02_spin_half",
+      "family": "wallpaper",
+      "index": 2,
+      "name": "p2",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "p2",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              4
+            ],
+            "freeRank": 3
+          },
+          "comparison_status": "not_compared",
+          "source": "MCB",
+          "scope": "independent electric/thermal/filling responses; full E8 included",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_03_spinless",
+      "family": "wallpaper",
+      "index": 3,
+      "name": "pm",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "pm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_03_spin_half",
+      "family": "wallpaper",
+      "index": 3,
+      "name": "pm",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "pm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_04_spinless",
+      "family": "wallpaper",
+      "index": 4,
+      "name": "pg",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "pg",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_04_spin_half",
+      "family": "wallpaper",
+      "index": 4,
+      "name": "pg",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "pg",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_05_spinless",
+      "family": "wallpaper",
+      "index": 5,
+      "name": "cm",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "cm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_05_spin_half",
+      "family": "wallpaper",
+      "index": 5,
+      "name": "cm",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "cm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_06_spinless",
+      "family": "wallpaper",
+      "index": 6,
+      "name": "pmm",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "pmm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_06_spin_half",
+      "family": "wallpaper",
+      "index": 6,
+      "name": "pmm",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "pmm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_07_spinless",
+      "family": "wallpaper",
+      "index": 7,
+      "name": "pmg",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "pmg",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_07_spin_half",
+      "family": "wallpaper",
+      "index": 7,
+      "name": "pmg",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "pmg",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_08_spinless",
+      "family": "wallpaper",
+      "index": 8,
+      "name": "pgg",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "pgg",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_08_spin_half",
+      "family": "wallpaper",
+      "index": 8,
+      "name": "pgg",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "pgg",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_09_spinless",
+      "family": "wallpaper",
+      "index": 9,
+      "name": "cmm",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "cmm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_09_spin_half",
+      "family": "wallpaper",
+      "index": 9,
+      "name": "cmm",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "cmm",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_10_spinless",
+      "family": "wallpaper",
+      "index": 10,
+      "name": "p4",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "p4",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 3
+          },
+          "comparison_status": "not_compared",
+          "source": "MCB",
+          "scope": "independent electric/thermal/filling responses; full E8 included",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_10_spin_half",
+      "family": "wallpaper",
+      "index": 10,
+      "name": "p4",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "p4",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 3
+          },
+          "comparison_status": "not_compared",
+          "source": "MCB",
+          "scope": "independent electric/thermal/filling responses; full E8 included",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_11_spinless",
+      "family": "wallpaper",
+      "index": 11,
+      "name": "p4m",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "p4m",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_11_spin_half",
+      "family": "wallpaper",
+      "index": 11,
+      "name": "p4m",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "p4m",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_12_spinless",
+      "family": "wallpaper",
+      "index": 12,
+      "name": "p4g",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "p4g",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_12_spin_half",
+      "family": "wallpaper",
+      "index": 12,
+      "name": "p4g",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "p4g",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_13_spinless",
+      "family": "wallpaper",
+      "index": 13,
+      "name": "p3",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "p3",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "freeRank": 3
+          },
+          "comparison_status": "not_compared",
+          "source": "MCB",
+          "scope": "independent electric/thermal/filling responses; full E8 included",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_13_spin_half",
+      "family": "wallpaper",
+      "index": 13,
+      "name": "p3",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "p3",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "freeRank": 3
+          },
+          "comparison_status": "not_compared",
+          "source": "MCB",
+          "scope": "independent electric/thermal/filling responses; full E8 included",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_14_spinless",
+      "family": "wallpaper",
+      "index": 14,
+      "name": "p3m1",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "p3m1",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_14_spin_half",
+      "family": "wallpaper",
+      "index": 14,
+      "name": "p3m1",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "p3m1",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_15_spinless",
+      "family": "wallpaper",
+      "index": 15,
+      "name": "p31m",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "p31m",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_15_spin_half",
+      "family": "wallpaper",
+      "index": 15,
+      "name": "p31m",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "p31m",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_16_spinless",
+      "family": "wallpaper",
+      "index": 16,
+      "name": "p6",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "p6",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              6,
+              12
+            ],
+            "freeRank": 3
+          },
+          "comparison_status": "not_compared",
+          "source": "MCB",
+          "scope": "independent electric/thermal/filling responses; full E8 included",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_16_spin_half",
+      "family": "wallpaper",
+      "index": 16,
+      "name": "p6",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "p6",
+      "orientation_reversing": false,
+      "cells": {
+        "MCB_full": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              6,
+              12
+            ],
+            "freeRank": 3
+          },
+          "comparison_status": "not_compared",
+          "source": "MCB",
+          "scope": "independent electric/thermal/filling responses; full E8 included",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_17_spinless",
+      "family": "wallpaper",
+      "index": 17,
+      "name": "p6m",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "p6m",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    },
+    {
+      "id": "wallpaper_17_spin_half",
+      "family": "wallpaper",
+      "index": 17,
+      "name": "p6m",
+      "physical_spin": "spin_half",
+      "hermann_mauguin": "p6m",
+      "orientation_reversing": true,
+      "cells": {
+        "MCB_full": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "Debray_full": {
+          "availability": "not_applicable",
+          "reason": "point-group reference",
+          "comparison_status": "not_compared"
+        }
+      }
+    }
+  ]
+}
