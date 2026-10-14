@@ -1,0 +1,2406 @@
+{
+  "scope": "Algebraic sector audit of the supplied model; no full physical classification claim",
+  "relative_runs": 54,
+  "full_runs": 54,
+  "exact_kernel_checks_passed": 54,
+  "n0_image_Z_cases": 20,
+  "n0_image_zero_cases": 34,
+  "proof": "One or zero CI columns, nonzero scalar n0 on each CI generator, and zero CI coefficients in every relation; delete that free column to obtain precisely ker(n0). Its generator cochains and integer relation lattice equal the independent n0=0 run.",
+  "provenance": {
+    "archive_sha256": "754cf9b5927a46d2a3992bcd1fc6b105af30f8d65cf542ee3e670b739fed0d6c",
+    "full_results_sha256": "bb21c2f171ef98a31d29dadef49a98e9d71a96ad3902d12ee4ee001cf9939b25",
+    "audit_script_sha256": "f7f0e962d130051ced3c286972760cac6d50873c404b85590c943b39487d0438"
+  },
+  "rows": [
+    {
+      "id": "point2_01_spin_half",
+      "family": "point2",
+      "name": "C1",
+      "index": 1,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_01_spin_half/result.json",
+      "relative_archive_result_sha256": "b2feff12a8fd4107c9aee2280ae0ee48cf4a7c59a4ecfa09dedfaf8152d30d68",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_01_spin_half/result.json",
+      "full_archive_result_sha256": "1dee133cfeb614be887ecba6b688a0ff9006c77815baeff828fc783a4677071a"
+    },
+    {
+      "id": "point2_01_spinless",
+      "family": "point2",
+      "name": "C1",
+      "index": 1,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_01_spinless/result.json",
+      "relative_archive_result_sha256": "d63f313b4e92226b695cd4a5e5f6d8a5dd9162c2ae5224f99302eb16f57749c1",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_01_spinless/result.json",
+      "full_archive_result_sha256": "1c3729a377ee49cbd4bcef78644d92b8715c5a6b1092976fa804e6f33470510f"
+    },
+    {
+      "id": "point2_02_spin_half",
+      "family": "point2",
+      "name": "C2",
+      "index": 2,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_02_spin_half/result.json",
+      "relative_archive_result_sha256": "57fedab0dba20e133bcd8ab90a7b4d2e5a74c4d01d4df24593ab1e83af8e922d",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_02_spin_half/result.json",
+      "full_archive_result_sha256": "e088d78135a0b236a6b9d370fbe07d94f2d5766ae253d0bbfd5c662401c1d6bd"
+    },
+    {
+      "id": "point2_02_spinless",
+      "family": "point2",
+      "name": "C2",
+      "index": 2,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_02_spinless/result.json",
+      "relative_archive_result_sha256": "87f163b023d4d6f39e0f2f809eb07787b0e5dc6182b65112cdaa48f398920297",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_02_spinless/result.json",
+      "full_archive_result_sha256": "a54fe0e8606078a8739cfae000a2bac550f382724e5fc103c7ce212d69c7ec27"
+    },
+    {
+      "id": "point2_03_spin_half",
+      "family": "point2",
+      "name": "Cs",
+      "index": 3,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "n0_projection_on_saved_generators": [],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_03_spin_half/result.json",
+      "relative_archive_result_sha256": "a8fc18a7fdddeec7b30b6fac9e160ee85ece213fb984873b3042e6f89d970199",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_03_spin_half/result.json",
+      "full_archive_result_sha256": "7c4fa6dbfbe75f9a80ccb71a63e3588e5f1942da949b0eafe118520c69377364"
+    },
+    {
+      "id": "point2_03_spinless",
+      "family": "point2",
+      "name": "Cs",
+      "index": 3,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "n0_projection_on_saved_generators": [],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_03_spinless/result.json",
+      "relative_archive_result_sha256": "e6ee12a255b37b2f45acd1a6d585b81fce0fb6ca2f1b055c5c9b066c5873e71f",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_03_spinless/result.json",
+      "full_archive_result_sha256": "679c12819ec351894ba67ca61542f13ba2a52d4a949305eb11919db872232ee3"
+    },
+    {
+      "id": "point2_04_spin_half",
+      "family": "point2",
+      "name": "C2v",
+      "index": 4,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_04_spin_half/result.json",
+      "relative_archive_result_sha256": "91e78d8563af9e51df66d9a0d0a96c42afc8fccd57766e8de6d26f695b188742",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_04_spin_half/result.json",
+      "full_archive_result_sha256": "859d8413a5d2734242ca55fd56368b2b276ece50a9a8e03e53877fa1b5d28676"
+    },
+    {
+      "id": "point2_04_spinless",
+      "family": "point2",
+      "name": "C2v",
+      "index": 4,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          4
+        ],
+        "freeRank": 0
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_04_spinless/result.json",
+      "relative_archive_result_sha256": "f0d6be4c50d762a03bfa3905d7eff329d11b16c1d22b2f303935c228c7d0671e",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_04_spinless/result.json",
+      "full_archive_result_sha256": "a8d0b70bd14fde5a4cc079e80e0d890b2041af13578bb8d1fbcc9482d63b74b1"
+    },
+    {
+      "id": "point2_05_spin_half",
+      "family": "point2",
+      "name": "C4",
+      "index": 5,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_05_spin_half/result.json",
+      "relative_archive_result_sha256": "698319722b7e4c022923978a317a6d9999d209ae200bb8d20df5710df8fa531b",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_05_spin_half/result.json",
+      "full_archive_result_sha256": "6cfe37657dcae322a2fd01d8f7998c6fa89206ebc56bcae8d7d6170b99570010"
+    },
+    {
+      "id": "point2_05_spinless",
+      "family": "point2",
+      "name": "C4",
+      "index": 5,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_05_spinless/result.json",
+      "relative_archive_result_sha256": "7eefb66e4ac2373a6673e77b95f47166c999a1ff0bcd7ca75c7b84d301440f17",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_05_spinless/result.json",
+      "full_archive_result_sha256": "4479c640ff84a86154ba3d696f51ee05276862ad9f8e92ba4e786e11a6f6cd8a"
+    },
+    {
+      "id": "point2_06_spin_half",
+      "family": "point2",
+      "name": "C4v",
+      "index": 6,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_06_spin_half/result.json",
+      "relative_archive_result_sha256": "1efd3008b6eaf59b544efda730057d1a85b0153753ea21f4196566b255f46fc2",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_06_spin_half/result.json",
+      "full_archive_result_sha256": "6fd88ffb24dcb5757020403818c14c6f0a49883e61d844919f088b1370ba877d"
+    },
+    {
+      "id": "point2_06_spinless",
+      "family": "point2",
+      "name": "C4v",
+      "index": 6,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          8
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          8
+        ],
+        "freeRank": 0
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_06_spinless/result.json",
+      "relative_archive_result_sha256": "e5b18e51dfe3dccff09ff920ca5313abae34b25ce0e75ad7d9ad9c39278699cd",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_06_spinless/result.json",
+      "full_archive_result_sha256": "1aa785563f5abc14774e42c7d9ee900d68881a76f767f609aa45ddff498caf1c"
+    },
+    {
+      "id": "point2_07_spin_half",
+      "family": "point2",
+      "name": "C3",
+      "index": 7,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          3
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          3
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_07_spin_half/result.json",
+      "relative_archive_result_sha256": "52afbefd69bd4f0495540b6627944ae42bdf3fa0f6cad1235861917f57b3fb93",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_07_spin_half/result.json",
+      "full_archive_result_sha256": "14e175d5e575eb46bbbc248ac8cb37dbddcb4ecb502ada55f266a8af2f06425f"
+    },
+    {
+      "id": "point2_07_spinless",
+      "family": "point2",
+      "name": "C3",
+      "index": 7,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          3
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          3
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_07_spinless/result.json",
+      "relative_archive_result_sha256": "d6183cd64cbba74fa2a83c2ef3e88fbcedd0f2f98f026ed0b12fa487a307076c",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_07_spinless/result.json",
+      "full_archive_result_sha256": "692aa8d715a71adf4ca12f56f9bc08663876ae690174238ec03164698a6d0e76"
+    },
+    {
+      "id": "point2_08_spin_half",
+      "family": "point2",
+      "name": "C3v",
+      "index": 8,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          3
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3
+        ],
+        "freeRank": 0
+      },
+      "n0_projection_on_saved_generators": [
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_08_spin_half/result.json",
+      "relative_archive_result_sha256": "40274971b11ef834017a5f19a2b1d51f2cd1c8fc8c372b7c3c4296f5848d84ee",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_08_spin_half/result.json",
+      "full_archive_result_sha256": "75b9c158dda0f0bbd3ee52287e91c0776532db2700aa755ede4869375cf5bea5"
+    },
+    {
+      "id": "point2_08_spinless",
+      "family": "point2",
+      "name": "C3v",
+      "index": 8,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          3
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3
+        ],
+        "freeRank": 0
+      },
+      "n0_projection_on_saved_generators": [
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_08_spinless/result.json",
+      "relative_archive_result_sha256": "f851594b686dbac2eb538b78634fdfb678ec5e486587b85d33e97471b505a097",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_08_spinless/result.json",
+      "full_archive_result_sha256": "65e29b90a0249cbb25a4c16852f1a7506c398f4e72aff66dd3d5ca90c2043e13"
+    },
+    {
+      "id": "point2_09_spin_half",
+      "family": "point2",
+      "name": "C6",
+      "index": 9,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          12
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          12
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_09_spin_half/result.json",
+      "relative_archive_result_sha256": "a29012ca87a626397cb14116b6e7eec3b0c2524d59a9f598f4b2cdfd1a779cf9",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_09_spin_half/result.json",
+      "full_archive_result_sha256": "2b7a9ccc914626189dbcfa0cbb44b20d461dadd15bf1aa5d3d95c8a5113c22c9"
+    },
+    {
+      "id": "point2_09_spinless",
+      "family": "point2",
+      "name": "C6",
+      "index": 9,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          12
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          12
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_09_spinless/result.json",
+      "relative_archive_result_sha256": "567c28e298c84bde192471ba04150cc4284f9b32969b51efe6b941988a3af372",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_09_spinless/result.json",
+      "full_archive_result_sha256": "008848a12d0e667efc22cc0db8e81d296b1ac9a3ff471cd6f6c285d70760ee13"
+    },
+    {
+      "id": "point2_10_spin_half",
+      "family": "point2",
+      "name": "C6v",
+      "index": 10,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          6
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          6
+        ],
+        "freeRank": 0
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_10_spin_half/result.json",
+      "relative_archive_result_sha256": "b663499d6fc6d054206c1b916989a6a479317ac3c5ed4f4c26e22f30141de138",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_10_spin_half/result.json",
+      "full_archive_result_sha256": "0cc32a48802f47f9e699d495d42df1e2b389515f77859d4c9dd6a05d0cd5d6f5"
+    },
+    {
+      "id": "point2_10_spinless",
+      "family": "point2",
+      "name": "C6v",
+      "index": 10,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          12
+        ],
+        "freeRank": 0
+      },
+      "full_supplied_model": {
+        "torsion": [
+          12
+        ],
+        "freeRank": 0
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": null,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-point2/point2_10_spinless/result.json",
+      "relative_archive_result_sha256": "c736c6aa18b2a4c2bc5312e1b020f4139a8df79d2b877ca11419231d88f7cbd5",
+      "full_archive_member": "cd8b24d-uniform-point2/point2_10_spinless/result.json",
+      "full_archive_result_sha256": "6abf207eb7231e8659cd61159297a35bb2637a986f81906ae4f1c7c583b77357"
+    },
+    {
+      "id": "wallpaper_01_spin_half",
+      "family": "wallpaper",
+      "name": "p1",
+      "index": 1,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [
+        0
+      ],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_01_spin_half/result.json",
+      "relative_archive_result_sha256": "5fce69219aa47e012daf791f36cc5489a2658c4bd35040af81237726896635b9",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_01_spin_half/result.json",
+      "full_archive_result_sha256": "6913e7d1b5dcdeb4a66c008a3fc7784d3a9ca0f614ac85a9e66a218e5541620a"
+    },
+    {
+      "id": "wallpaper_01_spinless",
+      "family": "wallpaper",
+      "name": "p1",
+      "index": 1,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [
+        0
+      ],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_01_spinless/result.json",
+      "relative_archive_result_sha256": "94b271de8b5b323a5c0c48e8348ae7d2f73717ef3304e82c60a7a40ae64035a2",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_01_spinless/result.json",
+      "full_archive_result_sha256": "58acce2365c2686f27168e66e1197dc691c3749d6958f141f87fae7341aeaae0"
+    },
+    {
+      "id": "wallpaper_02_spin_half",
+      "family": "wallpaper",
+      "name": "p2",
+      "index": 2,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 2
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [
+        0
+      ],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_02_spin_half/result.json",
+      "relative_archive_result_sha256": "cad1d607f37ef44edd292ca025f60df7004808a88cbd9c823f87fefb539ec702",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_02_spin_half/result.json",
+      "full_archive_result_sha256": "67043f8918efdc64a8da215be351e24ee427966d63482c67a54eb1d63f9e799d"
+    },
+    {
+      "id": "wallpaper_02_spinless",
+      "family": "wallpaper",
+      "name": "p2",
+      "index": 2,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 2
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [
+        0
+      ],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_02_spinless/result.json",
+      "relative_archive_result_sha256": "dacfb4e831c262f966463f95ce3650df0db037a32afa56e276733b36e87e23cb",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_02_spinless/result.json",
+      "full_archive_result_sha256": "551232370dd31635fff2044b4e42d28aa8a5bf322b283c0d4b34419c5661c846"
+    },
+    {
+      "id": "wallpaper_03_spin_half",
+      "family": "wallpaper",
+      "name": "pm",
+      "index": 3,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_03_spin_half/result.json",
+      "relative_archive_result_sha256": "80435975e91bdc86d27bc6e96c921960069f27cb05badc8f33ad255d74c99ea3",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_03_spin_half/result.json",
+      "full_archive_result_sha256": "fdc263ae21569cdba7b6e666bffe12870969ab01f78032783e16f7f79cbf0742"
+    },
+    {
+      "id": "wallpaper_03_spinless",
+      "family": "wallpaper",
+      "name": "pm",
+      "index": 3,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_03_spinless/result.json",
+      "relative_archive_result_sha256": "3a9164490e1bbb9f705565ef205f1f13690849107aebe95da63985daa22252bc",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_03_spinless/result.json",
+      "full_archive_result_sha256": "6e44aa49074ca29df571339a0f96470b8f1ac80b49d8eaf260b9ca1dc79d04d0"
+    },
+    {
+      "id": "wallpaper_04_spin_half",
+      "family": "wallpaper",
+      "name": "pg",
+      "index": 4,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_04_spin_half/result.json",
+      "relative_archive_result_sha256": "8602da942a45ea24ebf465c5357ddb1b8eac83c36dace5e22e8274722cca99c1",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_04_spin_half/result.json",
+      "full_archive_result_sha256": "cee8302a8b890a75f85b33e6b14213c8ea9f55c4d5dbb877a5bc1d3e39555f26"
+    },
+    {
+      "id": "wallpaper_04_spinless",
+      "family": "wallpaper",
+      "name": "pg",
+      "index": 4,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_04_spinless/result.json",
+      "relative_archive_result_sha256": "486275968878c7cc70abbb96548ad44f7e1c48b1678bc37bfd8e94ad528d4e8c",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_04_spinless/result.json",
+      "full_archive_result_sha256": "b03d6aa9769cda924be98dedac1d077f28dbeeac71811f2b57442398de882a6a"
+    },
+    {
+      "id": "wallpaper_05_spin_half",
+      "family": "wallpaper",
+      "name": "cm",
+      "index": 5,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_05_spin_half/result.json",
+      "relative_archive_result_sha256": "d23bba66a4a8364793e589af41bd61bcb26ec1ebfdbdbe4576d969cdfca1f573",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_05_spin_half/result.json",
+      "full_archive_result_sha256": "b7d25c789003fc9a8109748966df00e2fa83d1cb6ee7ea5e46265fe5a6c3d5f7"
+    },
+    {
+      "id": "wallpaper_05_spinless",
+      "family": "wallpaper",
+      "name": "cm",
+      "index": 5,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_05_spinless/result.json",
+      "relative_archive_result_sha256": "0985b91b5380d232d4ad7ddd47051b96dbd7c0e28c0eac867d8ed2330bf984a4",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_05_spinless/result.json",
+      "full_archive_result_sha256": "bf5ca557324aa18e32671ce2697dabba37c231d71c58826a236763e6c0f89215"
+    },
+    {
+      "id": "wallpaper_06_spin_half",
+      "family": "wallpaper",
+      "name": "pmm",
+      "index": 6,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_06_spin_half/result.json",
+      "relative_archive_result_sha256": "4060875dea2f28a4974cf3373f0c1129397b4315e9cd3adac69083763e9f4b07",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_06_spin_half/result.json",
+      "full_archive_result_sha256": "dedb1a0d5964003522ff687ac6e2ce2ec708386745c24afa328fb40480b6d08e"
+    },
+    {
+      "id": "wallpaper_06_spinless",
+      "family": "wallpaper",
+      "name": "pmm",
+      "index": 6,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_06_spinless/result.json",
+      "relative_archive_result_sha256": "3ad689efe8a545e1005dace895a163b70306bec954ee10140a2f44154c96b7a6",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_06_spinless/result.json",
+      "full_archive_result_sha256": "b3e7738194130c46a5ae4c8b62b4c7bb25c4226368bfcbc46587e4d36ca943cb"
+    },
+    {
+      "id": "wallpaper_07_spin_half",
+      "family": "wallpaper",
+      "name": "pmg",
+      "index": 7,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_07_spin_half/result.json",
+      "relative_archive_result_sha256": "9156968511025327160d198ffe8f6816a1cc46cbd340097827fec94be5d9d7b2",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_07_spin_half/result.json",
+      "full_archive_result_sha256": "770e86c276b08885cff4eb6d29fcbf307615ca9c8e7ef6718791b1aca1764d82"
+    },
+    {
+      "id": "wallpaper_07_spinless",
+      "family": "wallpaper",
+      "name": "pmg",
+      "index": 7,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_07_spinless/result.json",
+      "relative_archive_result_sha256": "6abb40108237875acad7fb040cc239ca3a124636eb027245dcf19106875a8e57",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_07_spinless/result.json",
+      "full_archive_result_sha256": "2b377bed7276c70db6dbf54d7c13dcd33e67e0546e24739f6442d8a9ef98937e"
+    },
+    {
+      "id": "wallpaper_08_spin_half",
+      "family": "wallpaper",
+      "name": "pgg",
+      "index": 8,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_08_spin_half/result.json",
+      "relative_archive_result_sha256": "10e3653a6f6df3c1489118ef00cd7d2b4f13d416e9a9dd5b349f1d9f88fec6bf",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_08_spin_half/result.json",
+      "full_archive_result_sha256": "cd9743d482ad003068b1783502cc538f842bbdddaa4fdfa376a434922fabe706"
+    },
+    {
+      "id": "wallpaper_08_spinless",
+      "family": "wallpaper",
+      "name": "pgg",
+      "index": 8,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_08_spinless/result.json",
+      "relative_archive_result_sha256": "a5a0b25ab854d9d7546734b618205fed19dcce0da8adb5456bfc6c450ee022e3",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_08_spinless/result.json",
+      "full_archive_result_sha256": "86646faa802c0571b72b2bc7cdc45e043943f6210b6c8ae0aa39a0574a028195"
+    },
+    {
+      "id": "wallpaper_09_spin_half",
+      "family": "wallpaper",
+      "name": "cmm",
+      "index": 9,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_09_spin_half/result.json",
+      "relative_archive_result_sha256": "8a3d0e5e564f1782b4b569f0145e9fd11d244d35d9c8e09c6bcfa7e4b23ba607",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_09_spin_half/result.json",
+      "full_archive_result_sha256": "433c2f32b7504f620c83028b6e4f8da4d2d562e1de0787d47db351cee17655a8"
+    },
+    {
+      "id": "wallpaper_09_spinless",
+      "family": "wallpaper",
+      "name": "cmm",
+      "index": 9,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_09_spinless/result.json",
+      "relative_archive_result_sha256": "d99920eee115e68e44eede3302b7065b97bbb6f5e0f2f8551d0d78c4f76747f9",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_09_spinless/result.json",
+      "full_archive_result_sha256": "f9f684d4e19274e0ccc17e3ecd272db4dda3edca36e7ad1a7a537139f7d53ec8"
+    },
+    {
+      "id": "wallpaper_10_spin_half",
+      "family": "wallpaper",
+      "name": "p4",
+      "index": 10,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 2
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [
+        0
+      ],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_10_spin_half/result.json",
+      "relative_archive_result_sha256": "81eefd775afdd3276153ae3b114164fdae496ab1f59037c987c6fd0800afd82e",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_10_spin_half/result.json",
+      "full_archive_result_sha256": "46fce42aa8127757609e1ef67840badc553d970e92d2f387248039bf36f1ffa2"
+    },
+    {
+      "id": "wallpaper_10_spinless",
+      "family": "wallpaper",
+      "name": "p4",
+      "index": 10,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 2
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [
+        0
+      ],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_10_spinless/result.json",
+      "relative_archive_result_sha256": "9049d8af1a8913ef12f402b1bed64aae4257d0295cd51fb00fed7dfe6c2211c7",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_10_spinless/result.json",
+      "full_archive_result_sha256": "05fb1ae48f639a1bbe085e04d51324b3412e5166660e651bc85fb73a6d79763f"
+    },
+    {
+      "id": "wallpaper_11_spin_half",
+      "family": "wallpaper",
+      "name": "p4m",
+      "index": 11,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_11_spin_half/result.json",
+      "relative_archive_result_sha256": "a2dfbcb0c5d3ce0968caead7a12b311fd0dfb84c63f65ec5bab9e861b0f316ae",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_11_spin_half/result.json",
+      "full_archive_result_sha256": "a396105ff36aea385918d7e92d551efca9b8aef3267fc68150284fcce26ba317"
+    },
+    {
+      "id": "wallpaper_11_spinless",
+      "family": "wallpaper",
+      "name": "p4m",
+      "index": 11,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          8
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          8
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_11_spinless/result.json",
+      "relative_archive_result_sha256": "488e49e700367ca23387b71f37ee06304aacce12df4b904f1c24f9b7413438e0",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_11_spinless/result.json",
+      "full_archive_result_sha256": "16c10f68df36624d0a52fd712e3f145deeed400a05320a1a69ea58a73984ccc0"
+    },
+    {
+      "id": "wallpaper_12_spin_half",
+      "family": "wallpaper",
+      "name": "p4g",
+      "index": 12,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          2,
+          4
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_12_spin_half/result.json",
+      "relative_archive_result_sha256": "2373220d01f451225d5c29733a68c1d06e892d01f154db4c2843082c7bda1885",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_12_spin_half/result.json",
+      "full_archive_result_sha256": "864339971ab320bc3b0babf2b39c0ec4c327fd3fa327802143acf4f8b924af2b"
+    },
+    {
+      "id": "wallpaper_12_spinless",
+      "family": "wallpaper",
+      "name": "p4g",
+      "index": 12,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          8
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          8
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_12_spinless/result.json",
+      "relative_archive_result_sha256": "4c1c51d9a3f16687966e170c7860f0ba2554c28fe74b23c097a7fe0d9fa093a9",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_12_spinless/result.json",
+      "full_archive_result_sha256": "3907071c5ac23466257c5d0910bc9e75f6d54ba0441c033143aecce400999c8f"
+    },
+    {
+      "id": "wallpaper_13_spin_half",
+      "family": "wallpaper",
+      "name": "p3",
+      "index": 13,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 2
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [
+        0
+      ],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_13_spin_half/result.json",
+      "relative_archive_result_sha256": "6d943929f85c1dd503092e467d93312cecda4a2f8cb09e30c6f090f7fa623403",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_13_spin_half/result.json",
+      "full_archive_result_sha256": "c7f95085c35742db43e1fdeaa7ae5caa5bb94a54821903b7a5050dc075d824a2"
+    },
+    {
+      "id": "wallpaper_13_spinless",
+      "family": "wallpaper",
+      "name": "p3",
+      "index": 13,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 2
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [
+        0
+      ],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_13_spinless/result.json",
+      "relative_archive_result_sha256": "34f0b3e92b671084f0e6ac7b3d1c4c9fbacffadd3590b38fe12d906d1847e94f",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_13_spinless/result.json",
+      "full_archive_result_sha256": "56b33abeaf9109b809badb8fa66d68b8e5fd867b622aad3d557d02feaadac703"
+    },
+    {
+      "id": "wallpaper_14_spin_half",
+      "family": "wallpaper",
+      "name": "p3m1",
+      "index": 14,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          6
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          6
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_14_spin_half/result.json",
+      "relative_archive_result_sha256": "8d7e2d93f71017a77d26944b65c76944d89ea5407534ba42265dfb2daf9a8140",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_14_spin_half/result.json",
+      "full_archive_result_sha256": "b1f5b4cb6c7ca153aaeb26ae257b741dbeca042fa3e39fbf663117250f29a594"
+    },
+    {
+      "id": "wallpaper_14_spinless",
+      "family": "wallpaper",
+      "name": "p3m1",
+      "index": 14,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          6
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          6
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_14_spinless/result.json",
+      "relative_archive_result_sha256": "f835b465bfb27a71f6285fdb56c556233969e2804e0914408df868b33257d456",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_14_spinless/result.json",
+      "full_archive_result_sha256": "aca2c6d368018b7cee815faca47c2c4b33de8010a31cf9674b2fc984838933da"
+    },
+    {
+      "id": "wallpaper_15_spin_half",
+      "family": "wallpaper",
+      "name": "p31m",
+      "index": 15,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          6
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          6
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_15_spin_half/result.json",
+      "relative_archive_result_sha256": "148b04cd756249eaec4bb85c92866b54c98b7486a8d19e2b44d41a46fa9fd3df",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_15_spin_half/result.json",
+      "full_archive_result_sha256": "40c356192da414208e298e0e85f1346b616368d6ab74ce95ee1ef0a0d2542fa2"
+    },
+    {
+      "id": "wallpaper_15_spinless",
+      "family": "wallpaper",
+      "name": "p31m",
+      "index": 15,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          6
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          6
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_15_spinless/result.json",
+      "relative_archive_result_sha256": "0873c4b69389acb9d2f21207d542c2b9f883f9919431a656f6830a49753ccd98",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_15_spinless/result.json",
+      "full_archive_result_sha256": "186581e0a650854407fcfba9164b5fdd57064ae16d250627bf21c224441779a1"
+    },
+    {
+      "id": "wallpaper_16_spin_half",
+      "family": "wallpaper",
+      "name": "p6",
+      "index": 16,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 2
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [
+        0
+      ],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_16_spin_half/result.json",
+      "relative_archive_result_sha256": "169f838b3c47cc3dcda83ab0f62fa2302acbb19835125605a33965d8cd2ab457",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_16_spin_half/result.json",
+      "full_archive_result_sha256": "d5808b33b119bbe7c66fe0bde8044fc0df5283705e99027fd04e81f475d2b990"
+    },
+    {
+      "id": "wallpaper_16_spinless",
+      "family": "wallpaper",
+      "name": "p6",
+      "index": 16,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 2
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n0_image_step": 1,
+      "n0_image": "Z",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "noncanonical A0 plus Z",
+      "fixed_nonzero_n0_sector": "A0 torsor for every nonzero integer; not a stacking group",
+      "physical_normalization": "I: explicit full-IQH model; universal physical product comparison open",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [
+        0
+      ],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_16_spinless/result.json",
+      "relative_archive_result_sha256": "d707eb916ac8a9cad4149dd723d02ecdc8ac49264ec2bc3d4041cddd3d4b1c33",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_16_spinless/result.json",
+      "full_archive_result_sha256": "87c05db3e84705427f26591459f3fcb53c7890fc6c0ceac1d11768108fc62809"
+    },
+    {
+      "id": "wallpaper_17_spin_half",
+      "family": "wallpaper",
+      "name": "p6m",
+      "index": 17,
+      "spin": "spin_half",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          2,
+          6
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          2,
+          6
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 2,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_17_spin_half/result.json",
+      "relative_archive_result_sha256": "0bb818804c2069b6feeb21207c775d2a40355748e41592f73cdc670ce073b673",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_17_spin_half/result.json",
+      "full_archive_result_sha256": "ae6c2fb57c3be1699d346c0ffb1f28f25fbf1a1b6a9bf99cc993dc5d4d3a12a0"
+    },
+    {
+      "id": "wallpaper_17_spinless",
+      "family": "wallpaper",
+      "name": "p6m",
+      "index": 17,
+      "spin": "spinless",
+      "relative_n0_zero": {
+        "torsion": [
+          2,
+          2,
+          12
+        ],
+        "freeRank": 1
+      },
+      "full_supplied_model": {
+        "torsion": [
+          2,
+          2,
+          12
+        ],
+        "freeRank": 1
+      },
+      "n0_projection_on_saved_generators": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n0_image_step": 0,
+      "n0_image": "0",
+      "relative_generator_cochains_identical_to_independent_run": true,
+      "relative_relation_lattices_identical_by_HNF": true,
+      "relative_equals_full_n0_kernel": true,
+      "independent_SNF_verified": true,
+      "full_abstract_splitting": "A0; nonzero n0 forbidden",
+      "fixed_nonzero_n0_sector": "empty",
+      "physical_normalization": "R: relative construction; no nonzero-IQH sector",
+      "neutral_E8": "omitted, not declared zero; 2D relative physical SPT also fixes e0=0",
+      "primitive_cell_charge_step": 1,
+      "chosen_CI_lift_charge_fillings": [],
+      "relative_archive_member": "23f9d9c-wallpaper/wallpaper_17_spinless/result.json",
+      "relative_archive_result_sha256": "8d98b53a17414989e4c974987117ad76fb7a8dd5a3625b6065d56e6cd719def5",
+      "full_archive_member": "cd8b24d-uniform-wallpaper/wallpaper_17_spinless/result.json",
+      "full_archive_result_sha256": "f7a524c5ae68688e26de944887ca1ca67d57ca5aaa43a2394567ac47f41791d1"
+    }
+  ]
+}
