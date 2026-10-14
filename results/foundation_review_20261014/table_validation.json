@@ -1,6 +1,6 @@
 {
   "generator": "scripts/build_foundation_tables.py",
-  "generator_sha256": "2b10d2076053d487bbcc22f4b1c67040219747ec00b3f7ad08698a034ce5fc42",
+  "generator_sha256": "930d2102c2f036d38de9055f083be6182662e40a6f2b91e0ae7017d45404d2de",
   "inputs_sha256": {
     "results/two_dimensional_20261013/results.json": "bb21c2f171ef98a31d29dadef49a98e9d71a96ad3902d12ee4ee001cf9939b25",
     "results/three_dimensional_20261013/results.json": "31c7739b39e9634e46a76ddca97f55741bff6990aa2780b36d90eea319e4622a",
@@ -20,21 +20,22 @@
     "benchmarks/mirror_interacting_2105.02682.json": "9af46718b614de1f4a9943078246301a6ae5539df65a47893cd6cc82976ee137"
   },
   "row_counts": {
-    "e0_zero/n0_zero_point2_spinless": 10,
-    "e0_zero/n0_all_point2_spinless": 10,
-    "e0_zero/n0_zero_wallpaper_spinless": 17,
-    "e0_zero/n0_all_wallpaper_spinless": 17,
-    "without_e8/point3_spinless": 32,
-    "diagnostics/point2_band_generated_interacting_reduction_spinless": 5,
-    "e0_zero/n0_zero_point2_spin_half": 10,
-    "e0_zero/n0_all_point2_spin_half": 10,
-    "e0_zero/n0_zero_wallpaper_spin_half": 17,
-    "e0_zero/n0_all_wallpaper_spin_half": 17,
-    "without_e8/point3_spin_half": 32,
-    "diagnostics/point2_band_generated_interacting_reduction_spin_half": 5
+    "2p1d/spinless/e0_zero/n0_zero/point_groups": 10,
+    "2p1d/spinless/e0_zero/n0_all/point_groups": 10,
+    "2p1d/spinless/e0_zero/n0_zero/wallpaper_groups": 17,
+    "2p1d/spinless/e0_zero/n0_all/wallpaper_groups": 17,
+    "3p1d/spinless/without_e8/point_groups": 32,
+    "2p1d/spinless/diagnostics/point2_band_generated_interacting_reduction": 5,
+    "2p1d/spin_half/e0_zero/n0_zero/point_groups": 10,
+    "2p1d/spin_half/e0_zero/n0_all/point_groups": 10,
+    "2p1d/spin_half/e0_zero/n0_zero/wallpaper_groups": 17,
+    "2p1d/spin_half/e0_zero/n0_all/wallpaper_groups": 17,
+    "3p1d/spin_half/without_e8/point_groups": 32,
+    "2p1d/spin_half/diagnostics/point2_band_generated_interacting_reduction": 5
   },
   "single_group_single_spin_rows_verified": true,
   "single_spin_single_family_single_n0_scope_per_file_verified": true,
+  "single_spacetime_dimension_per_file_verified": true,
   "e0_scope_separated_per_file_verified": true,
   "band_generated_diagnostic_excluded_from_main_tables": true,
   "E8_inclusive_tables_deferred_not_generated": true,
@@ -47,12 +48,26 @@
     "full_E8_reference_2d",
     "diagnostics/point2_band_generated_interacting_reduction"
   ],
+  "former_split_table_locations_removed": [
+    "e0_zero/n0_zero_point2_spinless",
+    "e0_zero/n0_all_point2_spinless",
+    "e0_zero/n0_zero_wallpaper_spinless",
+    "e0_zero/n0_all_wallpaper_spinless",
+    "e0_zero/n0_zero_point2_spin_half",
+    "e0_zero/n0_all_point2_spin_half",
+    "e0_zero/n0_zero_wallpaper_spin_half",
+    "e0_zero/n0_all_wallpaper_spin_half",
+    "without_e8/point3_spinless",
+    "without_e8/point3_spin_half",
+    "diagnostics/point2_band_generated_interacting_reduction_spinless",
+    "diagnostics/point2_band_generated_interacting_reduction_spin_half"
+  ],
   "debray_improper_3d_not_projected": true,
   "debray_printed_d2_d6_values_preserved_with_separate_proof_audit": true,
   "debray_fixture_loaded": true,
   "mirror_fixture_loaded": true,
   "availability_counts": {
-    "e0_zero/n0_zero_point2_spinless": {
+    "2p1d/spinless/e0_zero/n0_zero/point_groups": {
       "model_stacking": {
         "available": 10
       },
@@ -66,7 +81,7 @@
         "available": 10
       }
     },
-    "e0_zero/n0_zero_point2_spin_half": {
+    "2p1d/spin_half/e0_zero/n0_zero/point_groups": {
       "model_stacking": {
         "available": 10
       },
@@ -80,7 +95,7 @@
         "available": 10
       }
     },
-    "e0_zero/n0_zero_wallpaper_spinless": {
+    "2p1d/spinless/e0_zero/n0_zero/wallpaper_groups": {
       "model_stacking": {
         "available": 17
       },
@@ -110,7 +125,7 @@
         "unverified": 17
       }
     },
-    "e0_zero/n0_zero_wallpaper_spin_half": {
+    "2p1d/spin_half/e0_zero/n0_zero/wallpaper_groups": {
       "model_stacking": {
         "available": 17
       },
@@ -140,7 +155,7 @@
         "unverified": 17
       }
     },
-    "e0_zero/n0_all_point2_spinless": {
+    "2p1d/spinless/e0_zero/n0_all/point_groups": {
       "model": {
         "available": 10
       },
@@ -163,7 +178,7 @@
         "available": 10
       }
     },
-    "e0_zero/n0_all_point2_spin_half": {
+    "2p1d/spin_half/e0_zero/n0_all/point_groups": {
       "model": {
         "available": 10
       },
@@ -186,7 +201,7 @@
         "available": 10
       }
     },
-    "e0_zero/n0_all_wallpaper_spinless": {
+    "2p1d/spinless/e0_zero/n0_all/wallpaper_groups": {
       "model": {
         "available": 17
       },
@@ -210,7 +225,7 @@
         "not_applicable": 12
       }
     },
-    "e0_zero/n0_all_wallpaper_spin_half": {
+    "2p1d/spin_half/e0_zero/n0_all/wallpaper_groups": {
       "model": {
         "available": 17
       },
@@ -234,7 +249,7 @@
         "not_applicable": 12
       }
     },
-    "without_e8/point3_spinless": {
+    "3p1d/spinless/without_e8/point_groups": {
       "model": {
         "available": 32
       },
@@ -256,7 +271,7 @@
         "available": 1
       }
     },
-    "without_e8/point3_spin_half": {
+    "3p1d/spin_half/without_e8/point_groups": {
       "model": {
         "available": 32
       },
@@ -278,7 +293,7 @@
         "available": 1
       }
     },
-    "diagnostics/point2_band_generated_interacting_reduction_spinless": {
+    "2p1d/spinless/diagnostics/point2_band_generated_interacting_reduction": {
       "model": {
         "available": 5
       },
@@ -286,7 +301,7 @@
         "available": 5
       }
     },
-    "diagnostics/point2_band_generated_interacting_reduction_spin_half": {
+    "2p1d/spin_half/diagnostics/point2_band_generated_interacting_reduction": {
       "model": {
         "available": 5
       },
@@ -296,7 +311,7 @@
     }
   },
   "comparison_counts": {
-    "e0_zero/n0_zero_point2_spinless": {
+    "2p1d/spinless/e0_zero/n0_zero/point_groups": {
       "model_stacking": {
         "not_compared": 10
       },
@@ -312,7 +327,7 @@
         "abstract_match": 10
       }
     },
-    "e0_zero/n0_zero_point2_spin_half": {
+    "2p1d/spin_half/e0_zero/n0_zero/point_groups": {
       "model_stacking": {
         "not_compared": 10
       },
@@ -328,7 +343,7 @@
         "abstract_match": 10
       }
     },
-    "e0_zero/n0_zero_wallpaper_spinless": {
+    "2p1d/spinless/e0_zero/n0_zero/wallpaper_groups": {
       "model_stacking": {
         "not_compared": 17
       },
@@ -358,7 +373,7 @@
         "not_compared": 17
       }
     },
-    "e0_zero/n0_zero_wallpaper_spin_half": {
+    "2p1d/spin_half/e0_zero/n0_zero/wallpaper_groups": {
       "model_stacking": {
         "not_compared": 17
       },
@@ -388,7 +403,7 @@
         "not_compared": 17
       }
     },
-    "e0_zero/n0_all_point2_spinless": {
+    "2p1d/spinless/e0_zero/n0_all/point_groups": {
       "model": {
         "not_compared": 10
       },
@@ -412,7 +427,7 @@
         "abstract_match": 10
       }
     },
-    "e0_zero/n0_all_point2_spin_half": {
+    "2p1d/spin_half/e0_zero/n0_all/point_groups": {
       "model": {
         "not_compared": 10
       },
@@ -435,7 +450,7 @@
         "abstract_match": 10
       }
     },
-    "e0_zero/n0_all_wallpaper_spinless": {
+    "2p1d/spinless/e0_zero/n0_all/wallpaper_groups": {
       "model": {
         "not_compared": 17
       },
@@ -459,7 +474,7 @@
         "not_compared": 12
       }
     },
-    "e0_zero/n0_all_wallpaper_spin_half": {
+    "2p1d/spin_half/e0_zero/n0_all/wallpaper_groups": {
       "model": {
         "not_compared": 17
       },
@@ -483,7 +498,7 @@
         "not_compared": 12
       }
     },
-    "without_e8/point3_spinless": {
+    "3p1d/spinless/without_e8/point_groups": {
       "model": {
         "not_compared": 32
       },
@@ -507,7 +522,7 @@
         "abstract_match": 1
       }
     },
-    "without_e8/point3_spin_half": {
+    "3p1d/spin_half/without_e8/point_groups": {
       "model": {
         "not_compared": 32
       },
@@ -532,7 +547,7 @@
         "abstract_match": 1
       }
     },
-    "diagnostics/point2_band_generated_interacting_reduction_spinless": {
+    "2p1d/spinless/diagnostics/point2_band_generated_interacting_reduction": {
       "model": {
         "not_compared": 5
       },
@@ -540,7 +555,7 @@
         "abstract_match": 5
       }
     },
-    "diagnostics/point2_band_generated_interacting_reduction_spin_half": {
+    "2p1d/spin_half/diagnostics/point2_band_generated_interacting_reduction": {
       "model": {
         "not_compared": 5
       },

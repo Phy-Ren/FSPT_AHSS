@@ -8,7 +8,7 @@ neutral coefficient is the deferred [E8 extension](e8_extension.md).
 The active tables have separate files for `n0=0` and all allowed `n0`,
 and separate files for spinless and spin-half results within each choice.
 All these files use `e0=0`. The separate
-[e0-inclusive status file](../../results/foundation_review_20261014/e0_included/README.md)
+[e0-inclusive status file](../../results/foundation_review_20261014/2p1d/e0_included.md)
 contains no classification table: those results are deferred.
 
 The current 2+1D state is `(n0,n2,nu3)`, where `n0` counts uniform

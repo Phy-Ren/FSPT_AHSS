@@ -12,8 +12,9 @@ This directory retains the reproducible audits:
 - [Independent 2024 wallpaper response comparison](wallpaper_2024_response_comparison.json).
 
 The earlier `two_dimensional_sectors.md` is a historical side-by-side-spin
-audit display. Active tables instead have separate files for spinless and
-spin-half results, and separate files for zero and all-uniform-IQH sectors.
+audit display. Active results instead use independent dimension directories
+and index pages, then separate files for spinless and spin-half results,
+and separate files for zero and all-uniform-IQH sectors.
 All current 2D tables have `e0=0`; E8-inclusive tables are deferred. No
 saved calculation has been overwritten. The previous combined review is
 preserved in Git at commit `8c240ec`.

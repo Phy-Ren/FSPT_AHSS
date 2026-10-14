@@ -2,8 +2,10 @@
 
 Active review, 2026-10-14. Start with the topic matching the question;
 the implemented model and the proposed extension have separate documents.
-Active result tables are separate files for each physical spin and each
-2D `n0` sector. They contain no independent E8 decoration. The E8 extension
+Active results first separate [2+1D](../../results/foundation_review_20261014/2p1d/README.md)
+and [3+1D](../../results/foundation_review_20261014/3p1d/README.md) into
+independent directories and index pages, then separate each physical spin
+and response sector. They contain no independent E8 decoration. The E8 extension
 is deferred, and full E8-inclusive tables will be produced separately later.
 
 | Question | Document |
