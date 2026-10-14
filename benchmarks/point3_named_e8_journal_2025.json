@@ -1,0 +1,1454 @@
+{
+  "source": {
+    "doi": "10.1103/PhysRevX.15.031029",
+    "url": "https://doi.org/10.1103/PhysRevX.15.031029",
+    "main_pdf_sha256": "eda983b3c093877d7b6d34da1092ae8c8c5dc272746e6f4eaf28f35a7438c692",
+    "supplement_url": "https://journals.aps.org/prx/supplemental/10.1103/PhysRevX.15.031029/3DpointCombine__supp.pdf",
+    "supplement_date": "2025-07-08",
+    "supplement_pages": 31,
+    "supplement_access": "Web PDF reader; direct local HTTP request returned403; no local supplementary PDF hash asserted",
+    "supplement_checked_line_text_sha256": "7b07b34c06dc6d1dcc6e601953574f2a3509c86df7a66e832b0edcb78d1b79f9",
+    "journal_full_table_sha256": "ece6e05ff20c63602c7135daa2ce8c4ead594c1512f518bb479aee42d0a40eae"
+  },
+  "audit_date": "2026-10-14",
+  "confirmation_scope": "The journal final root lists retain an order-two neutral E8 generator; reported mixed extensions exclude it. Source assertion, not an independent proof of the physical classification.",
+  "quotient_rule": "Quotient the source-asserted independent named root. Its order-two direct factor is removed only after the root/extension check; no solver output enters the selection.",
+  "comparison_limit": "No cochain-to-physical generator map, zero-intersection proof, or coverage modulo E8 is supplied. An abstract match with this quotient is not a full-sector calibration certificate.",
+  "indexing": "Pages are one based; root numbers refer to the final TI list for that spin, except explicitly unnumbered Ci. Supplement parsed lines are auxiliary reproducibility locators.",
+  "rows": [
+    {
+      "id": "point3_02_spinless",
+      "name": "Ci",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "main",
+        "section": "IV.A",
+        "pages_1based": [
+          38
+        ],
+        "root_number": null
+      },
+      "source_evidence_type": "two_dimensional_second_root",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        8,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8
+      ],
+      "unnumbered_extension": "CI_with_center_charge; E8_doubles_by_3D_bubble"
+    },
+    {
+      "id": "point3_02_spin_half",
+      "name": "Ci",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "main",
+        "section": "IV.A",
+        "pages_1based": [
+          38
+        ],
+        "root_number": null
+      },
+      "source_evidence_type": "two_dimensional_second_root",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        8,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8
+      ],
+      "unnumbered_extension": "CI_with_center_charge; E8_doubles_by_3D_bubble"
+    },
+    {
+      "id": "point3_04_spinless",
+      "name": "Cs",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.B",
+        "pages_1based": [
+          3
+        ],
+        "root_number": 3,
+        "parsed_line": 274
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8
+      ]
+    },
+    {
+      "id": "point3_04_spin_half",
+      "name": "Cs",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.B",
+        "pages_1based": [
+          3
+        ],
+        "root_number": 3,
+        "parsed_line": 274
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8
+      ]
+    },
+    {
+      "id": "point3_05_spinless",
+      "name": "C2h",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.C",
+        "pages_1based": [
+          4
+        ],
+        "root_number": 3,
+        "parsed_line": 426
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "point3_05_spin_half",
+      "name": "C2h",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.C",
+        "pages_1based": [
+          5
+        ],
+        "root_number": 3,
+        "parsed_line": 487
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "point3_07_spinless",
+      "name": "C2v",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.E",
+        "pages_1based": [
+          6
+        ],
+        "root_number": 2,
+        "parsed_line": 684
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_07_spin_half",
+      "name": "C2v",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.E",
+        "pages_1based": [
+          7
+        ],
+        "root_number": 3,
+        "parsed_line": 730
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "point3_08_spinless",
+      "name": "D2h",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.F",
+        "pages_1based": [
+          8
+        ],
+        "root_number": 2,
+        "parsed_line": 890
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          4,
+          5
+        ]
+      ],
+      "full_physical_orders": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_08_spin_half",
+      "name": "D2h",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.F",
+        "pages_1based": [
+          9
+        ],
+        "root_number": 3,
+        "parsed_line": 959
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_10_spinless",
+      "name": "S4",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "main",
+        "section": "IV.B.3",
+        "pages_1based": [
+          38
+        ],
+        "root_number": 2
+      },
+      "source_evidence_type": "final_direct_root_list",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_10_spin_half",
+      "name": "S4",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "main",
+        "section": "IV.B.3",
+        "pages_1based": [
+          38
+        ],
+        "root_number": 2
+      },
+      "source_evidence_type": "final_direct_root_list",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_11_spinless",
+      "name": "C4h",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.H",
+        "pages_1based": [
+          10,
+          11
+        ],
+        "root_number": 3,
+        "parsed_line": 1175
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "point3_11_spin_half",
+      "name": "C4h",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.H",
+        "pages_1based": [
+          11
+        ],
+        "root_number": 3,
+        "parsed_line": 1231
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4,
+        2
+      ],
+      "extension_reference": "previous_spinless_construction_and_same_final_root_list"
+    },
+    {
+      "id": "point3_13_spinless",
+      "name": "C4v",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.J",
+        "pages_1based": [
+          13
+        ],
+        "root_number": 2,
+        "parsed_line": 1476
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_13_spin_half",
+      "name": "C4v",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.J",
+        "pages_1based": [
+          13
+        ],
+        "root_number": 3,
+        "parsed_line": 1510
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "point3_14_spinless",
+      "name": "D2d",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.K",
+        "pages_1based": [
+          15
+        ],
+        "root_number": 1,
+        "parsed_line": 1648
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        4,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_14_spin_half",
+      "name": "D2d",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.K",
+        "pages_1based": [
+          15
+        ],
+        "root_number": 3,
+        "parsed_line": 1700
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_15_spinless",
+      "name": "D4h",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.L",
+        "pages_1based": [
+          16
+        ],
+        "root_number": 2,
+        "parsed_line": 1866
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          4,
+          5
+        ]
+      ],
+      "full_physical_orders": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_15_spin_half",
+      "name": "D4h",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.L",
+        "pages_1based": [
+          17
+        ],
+        "root_number": 3,
+        "parsed_line": 1927
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_17_spinless",
+      "name": "C3i",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.N",
+        "pages_1based": [
+          18
+        ],
+        "root_number": 2,
+        "parsed_line": 2063
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          3,
+          4
+        ]
+      ],
+      "full_physical_orders": [
+        4,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "point3_17_spin_half",
+      "name": "C3i",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.N",
+        "pages_1based": [
+          18
+        ],
+        "root_number": 2,
+        "parsed_line": 2063
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          3,
+          4
+        ]
+      ],
+      "full_physical_orders": [
+        4,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "point3_19_spinless",
+      "name": "C3v",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.P",
+        "pages_1based": [
+          20
+        ],
+        "root_number": 3,
+        "parsed_line": 2279
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8
+      ]
+    },
+    {
+      "id": "point3_19_spin_half",
+      "name": "C3v",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.P",
+        "pages_1based": [
+          20
+        ],
+        "root_number": 3,
+        "parsed_line": 2279
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8
+      ]
+    },
+    {
+      "id": "point3_20_spinless",
+      "name": "D3d",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.Q",
+        "pages_1based": [
+          22
+        ],
+        "root_number": 1,
+        "parsed_line": 2460
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        4,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "point3_20_spin_half",
+      "name": "D3d",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.Q",
+        "pages_1based": [
+          22
+        ],
+        "root_number": 3,
+        "parsed_line": 2524
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_22_spinless",
+      "name": "C3h",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.S",
+        "pages_1based": [
+          24
+        ],
+        "root_number": 3,
+        "parsed_line": 2673
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8
+      ]
+    },
+    {
+      "id": "point3_22_spin_half",
+      "name": "C3h",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.S",
+        "pages_1based": [
+          24
+        ],
+        "root_number": 3,
+        "parsed_line": 2673
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8
+      ]
+    },
+    {
+      "id": "point3_23_spinless",
+      "name": "C6h",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.T",
+        "pages_1based": [
+          25
+        ],
+        "root_number": 3,
+        "parsed_line": 2811
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "point3_23_spin_half",
+      "name": "C6h",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.T",
+        "pages_1based": [
+          25
+        ],
+        "root_number": 3,
+        "parsed_line": 2896
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_25_spinless",
+      "name": "C6v",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.V",
+        "pages_1based": [
+          27
+        ],
+        "root_number": 2,
+        "parsed_line": 3071
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_25_spin_half",
+      "name": "C6v",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.V",
+        "pages_1based": [
+          27
+        ],
+        "root_number": 3,
+        "parsed_line": 3103
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "point3_26_spinless",
+      "name": "D3h",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.W",
+        "pages_1based": [
+          28
+        ],
+        "root_number": 3,
+        "parsed_line": 3260
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_26_spin_half",
+      "name": "D3h",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.W",
+        "pages_1based": [
+          29
+        ],
+        "root_number": 4,
+        "parsed_line": 3309
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "point3_27_spinless",
+      "name": "D6h",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.X",
+        "pages_1based": [
+          30
+        ],
+        "root_number": 2,
+        "parsed_line": 3497
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          4,
+          5
+        ]
+      ],
+      "full_physical_orders": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_27_spin_half",
+      "name": "D6h",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "supplement",
+        "section": "III.X",
+        "pages_1based": [
+          31
+        ],
+        "root_number": 3,
+        "parsed_line": 3555
+      },
+      "source_evidence_type": "numbered_final_root_list_and_its_stated_extensions",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_29_spinless",
+      "name": "Th",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "main",
+        "section": "IV.D.1,4",
+        "pages_1based": [
+          41,
+          42
+        ],
+        "root_number": 2
+      },
+      "source_evidence_type": "E8_bubble_and_summary",
+      "extension_root_sets_excluding_E8": [
+        [
+          4
+        ]
+      ],
+      "full_physical_orders": [
+        4,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_29_spin_half",
+      "name": "Th",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "main",
+        "section": "IV.D.1,4",
+        "pages_1based": [
+          41,
+          42
+        ],
+        "root_number": 2
+      },
+      "source_evidence_type": "E8_bubble_and_summary",
+      "extension_root_sets_excluding_E8": [
+        [
+          1
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_31_spinless",
+      "name": "Td",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "main",
+        "section": "IV.E.1,4",
+        "pages_1based": [
+          43,
+          44
+        ],
+        "root_number": 2
+      },
+      "source_evidence_type": "E8_bubble_and_summary",
+      "extension_root_sets_excluding_E8": [],
+      "full_physical_orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_31_spin_half",
+      "name": "Td",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "main",
+        "section": "IV.E.1,4",
+        "pages_1based": [
+          43,
+          44
+        ],
+        "root_number": 2
+      },
+      "source_evidence_type": "E8_bubble_and_summary",
+      "extension_root_sets_excluding_E8": [
+        [
+          1
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        2
+      ]
+    },
+    {
+      "id": "point3_32_spinless",
+      "name": "Oh",
+      "physical_spin": "spinless",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "main",
+        "section": "IV.G.1,4",
+        "pages_1based": [
+          48,
+          49,
+          50
+        ],
+        "root_number": 1
+      },
+      "source_evidence_type": "final_direct_root_list",
+      "extension_root_sets_excluding_E8": [
+        [
+          5
+        ]
+      ],
+      "full_physical_orders": [
+        4,
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        4,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "point3_32_spin_half",
+      "name": "Oh",
+      "physical_spin": "spin_half",
+      "named_generator": "neutral_E8_block_decoration",
+      "generator_order": 2,
+      "independent_root_confirmed": true,
+      "source_location": {
+        "document": "main",
+        "section": "IV.G.1,4",
+        "pages_1based": [
+          48,
+          49,
+          50
+        ],
+        "root_number": 3
+      },
+      "source_evidence_type": "final_direct_root_list",
+      "extension_root_sets_excluding_E8": [
+        [
+          1,
+          2
+        ]
+      ],
+      "full_physical_orders": [
+        8,
+        4,
+        2,
+        2,
+        2,
+        2
+      ],
+      "quotient_by_named_E8_orders": [
+        8,
+        4,
+        2,
+        2,
+        2
+      ]
+    }
+  ]
+}
