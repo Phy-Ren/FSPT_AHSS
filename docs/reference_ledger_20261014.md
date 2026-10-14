@@ -68,7 +68,7 @@ The 2025 journal Table II is not identical to that arXiv version. A fresh indepe
 | D3h, spinless | E0D: Z2 → 1 | Z2⁵ → Z2⁴ | Supplement III W, p.28, root 3, order two |
 | D3h, spin-half | E0D: Z2² → Z2 | Z8 × Z4 × Z2³ → Z8 × Z4 × Z2² | Supplement III W, p.29, root 4; the listed CI/fSPT extension excludes this root |
 
-These changed root lists were read in the **journal** supplement dated 2025-07-08, not inferred from abstract orders. The separate journal E8 ledger records the remaining root checks and any limitations. Deleting an arbitrary Z2 because it improves agreement is never the comparison rule.
+These changed root lists were read in the **journal** supplement dated 2025-07-08, not inferred from abstract orders. The [independently reviewed journal E8 ledger](../benchmarks/point3_named_e8_journal_2025.json) confirms all 42 spin-specific named roots, their locations and exclusion from the stated nontrivial extensions. The [separate journal comparison](../benchmarks/point3_comparison_journal_2025.json) records every computed/reference group and scope. Deleting an arbitrary Z2 because it improves agreement is never the comparison rule.
 
 The following table records the union of differing cases across both R3 versions. Every row is attributed to **Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi and Zheng-Cheng Gu, the R3 title above, Table II and the corresponding group root list, using the real-space topological-crystal method**. For D2 and D6 the reference is the full group; all other rows show the quotient by the reference's named independent neutral E8 root. A parenthetical “match” marks equality only for that version.
 
@@ -89,7 +89,18 @@ The following table records the union of differing cases across both R3 versions
 | D3h | Spin-half | Z4 × Z8 | Z2² × Z4 × Z8 | Z2 × Z4 × Z8 |
 | Oh | Spinless | Z2⁴ × Z4 | Z2³ × Z4 | Z2³ × Z4 |
 
-The version-specific meaningful totals remain **51 matches / 13 differences**, but the identity of one differing case changes: journal D3h spinless matches, while journal C6h spin-half differs. Reporting only the unchanged total hides this material revision. A direct, unprojected numerical comparison with all 64 full journal groups gives 21 equal / 43 unequal abstract groups. That is not a valid physical success rate: the 42 improper cases still have the E8 scope difference, and accidental equality does not identify their sectors.
+The version-specific meaningful totals remain **51 matches / 13 differences**, but the identity of one differing case changes: journal D3h spinless matches, while journal C6h spin-half differs. Reporting only the unchanged total hides this material revision. Journal counts by spin are 27 matches / 5 differences for spinless, and 24 / 8 for spin-half; proper/improper counts remain 20 / 2 and 31 / 11. A direct, unprojected numerical comparison with all 64 full journal groups gives 21 equal / 43 unequal abstract groups. That is not a valid physical success rate: the 42 improper cases still have the E8 scope difference, and accidental equality does not identify their sectors.
+
+Reproduce the extraction and comparison with the pinned publisher PDF:
+
+```bash
+python benchmarks/audit_point3_journal_2025.py /home/arxiv/10.1103_physrevx.15.031029.pdf \
+  --output /tmp/point3_full_journal_2025.json \
+  --arxiv-reference benchmarks/point3_full_2204.13558.json \
+  --results results/three_dimensional_20261013/results.json \
+  --journal-e8-ledger benchmarks/point3_named_e8_journal_2025.json \
+  --comparison-output /tmp/point3_comparison_journal_2025.json
+```
 
 ## Levels of calibration and unresolved questions
 

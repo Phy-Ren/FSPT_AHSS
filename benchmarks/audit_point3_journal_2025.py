@@ -80,11 +80,79 @@ def extract(pdf: Path) -> dict:
     }
 
 
+def compare(reference: dict, results_path: Path, e8_path: Path) -> dict:
+    """Compare immutable results with a separately verified journal root ledger."""
+    import collections
+
+    runs = {row["input"]["id"]: row for row in json.loads(results_path.read_text())}
+    e8 = json.loads(e8_path.read_text())
+    root_rows = {row["id"]: row for row in e8["rows"]}
+    counts = collections.Counter()
+    numerical = collections.Counter()
+    rows = []
+    for published in reference["rows"]:
+        case_id = published["id"]
+        run = runs[case_id]
+        if run["run"]["status"] != "complete":
+            raise ValueError(f"Incomplete calculation: {case_id}")
+        if (run["input"]["name"], run["input"]["spin"]) != (published["name"], published["physical_spin"]):
+            raise ValueError(f"Catalog identity mismatch: {case_id}")
+        actual = run["classification"]
+        full = sorted(published["stacking_orders"])
+        # Every cyclic factor in this pinned 3D table is a power of two,
+        # so sorting already gives invariant-factor order.
+        if any(order not in (2, 4, 8) for order in full):
+            raise ValueError("Unexpected invariant-factor normalization problem")
+        direct_equal = sorted(actual["torsion"]) == full and actual["freeRank"] == 0
+        numerical["equal" if direct_equal else "unequal"] += 1
+        improper = any(run["input"]["s"])
+        row = {"id": case_id, "name": published["name"], "physical_spin": published["physical_spin"],
+               "calculated": {"torsion": actual["torsion"], "freeRank": actual["freeRank"]},
+               "full_journal_group": {"torsion": full, "freeRank": 0},
+               "full_table_numerical_equality": direct_equal,
+               "full_table_scope_status": "independent_neutral_E8_unimplemented" if improper else "proper_rotation_comparison",
+               "journal_table_location": published["source_location"]}
+        expected = full[:]
+        if improper:
+            evidence = root_rows.get(case_id)
+            if evidence is None or evidence.get("independent_root_confirmed") is not True or evidence.get("generator_order") != 2:
+                row.update(status="requires_journal_E8_root_confirmation", comparison_scope="unresolved")
+                counts[row["status"]] += 1
+                rows.append(row)
+                continue
+            # The independently read root list specifies a direct order-two
+            # neutral E8 root; this is not chosen to fit the calculated group.
+            expected.remove(2)
+            if sorted(evidence["full_physical_orders"]) != full or sorted(evidence["quotient_by_named_E8_orders"]) != expected:
+                raise ValueError(f"Journal table and independent E8 ledger disagree: {case_id}")
+            row["journal_E8_root_evidence"] = evidence
+            row["comparison_scope"] = "abstract quotient by the source's named independent neutral E8 root"
+        else:
+            row["comparison_scope"] = "full proper-rotation journal group; E8 H1(G,Z) vanishes"
+        row["reference_for_comparison"] = {"torsion": expected, "freeRank": 0}
+        row["status"] = "match" if sorted(actual["torsion"]) == expected and actual["freeRank"] == 0 else "mismatch"
+        counts[row["status"]] += 1
+        rows.append(row)
+    return {
+        "source": reference["source"],
+        "calculation_results_sha256": hashlib.sha256(results_path.read_bytes()).hexdigest(),
+        "journal_E8_ledger_sha256": hashlib.sha256(e8_path.read_bytes()).hexdigest(),
+        "comparison_limit": "Reference-side abstract quotient only; no solver neutral-E8 cochain embedding or physical generator dictionary is established.",
+        "full_table_numerical_counts": dict(numerical),
+        "full_table_numerical_warning": "Not a physical success rate: 42 improper cases omit the independent neutral E8 sector; accidental equality can occur.",
+        "meaningful_comparison_counts": dict(counts),
+        "rows": rows,
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("pdf", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--arxiv-reference", type=Path)
+    parser.add_argument("--results", type=Path)
+    parser.add_argument("--journal-e8-ledger", type=Path)
+    parser.add_argument("--comparison-output", type=Path)
     args = parser.parse_args()
     result = extract(args.pdf)
     if args.arxiv_reference:
@@ -108,6 +176,12 @@ def main() -> None:
             "changed_cells": changes,
         }
     args.output.write_text(json.dumps(result, indent=2) + "\n")
+    if any((args.results, args.journal_e8_ledger, args.comparison_output)):
+        if not all((args.results, args.journal_e8_ledger, args.comparison_output)):
+            parser.error("--results, --journal-e8-ledger and --comparison-output must be supplied together")
+        comparison = compare(result, args.results, args.journal_e8_ledger)
+        args.comparison_output.write_text(json.dumps(comparison, indent=2) + "\n")
+        print(json.dumps({"journal_comparison_counts": comparison["meaningful_comparison_counts"]}))
     print(json.dumps({"rows": len(result["rows"]), "version_changes": result.get("arxiv_comparison", {}).get("changed_cells", [])}, indent=2))
 
 
