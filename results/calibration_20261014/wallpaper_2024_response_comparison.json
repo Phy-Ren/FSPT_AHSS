@@ -1,0 +1,524 @@
+{
+  "source": {
+    "authors": [
+      "Naren Manjunath",
+      "Vladimir Calvera",
+      "Maissam Barkeshli"
+    ],
+    "arxiv": "2309.12389v1",
+    "journal": "Physical Review B 109, 035168 (2024)",
+    "url": "https://doi.org/10.1103/PhysRevB.109.035168",
+    "sourceSHA256": "4fc162cbd7bbd1a5937388cf9769e7ed8d1e2ae0272e72d205467536311d9ae8",
+    "locations": [
+      "Table I",
+      "Sec. III, common invariants and M=4 classification",
+      "Source labels eq:FTresult_C1, eq:FTresult_C4, tab:indep_invts"
+    ]
+  },
+  "savedResultsSHA256": "bb21c2f171ef98a31d29dadef49a98e9d71a96ad3902d12ee4ee001cf9939b25",
+  "responseDictionary": {
+    "C": "n0",
+    "c_minus": "n0 + 8 e0",
+    "k1": "-e0",
+    "fillingAtZeroFlux": "kappa"
+  },
+  "sectorDefinitions": {
+    "relative": "C=c_minus=0, equivalently n0=e0=0",
+    "currentAllN0Model": "e0=0, equivalently k1=0 and C=c_minus",
+    "fullPhysicalReference": "independent c_minus,k1,kappa plus torsion"
+  },
+  "spinConvention": "The source uses C_M^M=1 and explicitly defines C_M^- = exp(i pi Q/M) C_M^+, whose Mth power is fermion parity. For orientation-preserving pM this charge redefinition identifies abstract symmetry groups; response-coordinate matching still needs this operator choice.",
+  "limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit.",
+  "rows": [
+    {
+      "id": "wallpaper_01_spin_half",
+      "name": "p1",
+      "physicalSpin": "spin_half",
+      "relativeModel": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "referenceC0CentralCharge0": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "relativeAbstractGroupMatch": true,
+      "allN0Model": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "referenceK1Zero": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "allN0AbstractGroupMatch": true,
+      "fullPhysicalReference": {
+        "torsion": [],
+        "freeRank": 3
+      },
+      "sourceTableCell": "$\\Z^3$",
+      "physicalCochainProductCalibrated": false
+    },
+    {
+      "id": "wallpaper_01_spinless",
+      "name": "p1",
+      "physicalSpin": "spinless",
+      "relativeModel": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "referenceC0CentralCharge0": {
+        "torsion": [],
+        "freeRank": 1
+      },
+      "relativeAbstractGroupMatch": true,
+      "allN0Model": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "referenceK1Zero": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "allN0AbstractGroupMatch": true,
+      "fullPhysicalReference": {
+        "torsion": [],
+        "freeRank": 3
+      },
+      "sourceTableCell": "$\\Z^3$",
+      "physicalCochainProductCalibrated": false
+    },
+    {
+      "id": "wallpaper_02_spin_half",
+      "name": "p2",
+      "physicalSpin": "spin_half",
+      "relativeModel": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "referenceC0CentralCharge0": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "relativeAbstractGroupMatch": true,
+      "allN0Model": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 2
+      },
+      "referenceK1Zero": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 2
+      },
+      "allN0AbstractGroupMatch": true,
+      "fullPhysicalReference": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 3
+      },
+      "sourceTableCell": "$\\Z^3\\times\\Z_4^3\\times\\Z_2$",
+      "physicalCochainProductCalibrated": false
+    },
+    {
+      "id": "wallpaper_02_spinless",
+      "name": "p2",
+      "physicalSpin": "spinless",
+      "relativeModel": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "referenceC0CentralCharge0": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 1
+      },
+      "relativeAbstractGroupMatch": true,
+      "allN0Model": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 2
+      },
+      "referenceK1Zero": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 2
+      },
+      "allN0AbstractGroupMatch": true,
+      "fullPhysicalReference": {
+        "torsion": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "freeRank": 3
+      },
+      "sourceTableCell": "$\\Z^3\\times\\Z_4^3\\times\\Z_2$",
+      "physicalCochainProductCalibrated": false
+    },
+    {
+      "id": "wallpaper_10_spin_half",
+      "name": "p4",
+      "physicalSpin": "spin_half",
+      "relativeModel": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 1
+      },
+      "referenceC0CentralCharge0": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 1
+      },
+      "relativeAbstractGroupMatch": true,
+      "allN0Model": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 2
+      },
+      "referenceK1Zero": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 2
+      },
+      "allN0AbstractGroupMatch": true,
+      "fullPhysicalReference": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 3
+      },
+      "sourceTableCell": "$\\Z^3\\times\\Z_8\\times\\Z_4^2\\times\\Z_2$",
+      "physicalCochainProductCalibrated": false
+    },
+    {
+      "id": "wallpaper_10_spinless",
+      "name": "p4",
+      "physicalSpin": "spinless",
+      "relativeModel": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 1
+      },
+      "referenceC0CentralCharge0": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 1
+      },
+      "relativeAbstractGroupMatch": true,
+      "allN0Model": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 2
+      },
+      "referenceK1Zero": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 2
+      },
+      "allN0AbstractGroupMatch": true,
+      "fullPhysicalReference": {
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "freeRank": 3
+      },
+      "sourceTableCell": "$\\Z^3\\times\\Z_8\\times\\Z_4^2\\times\\Z_2$",
+      "physicalCochainProductCalibrated": false
+    },
+    {
+      "id": "wallpaper_13_spin_half",
+      "name": "p3",
+      "physicalSpin": "spin_half",
+      "relativeModel": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 1
+      },
+      "referenceC0CentralCharge0": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 1
+      },
+      "relativeAbstractGroupMatch": true,
+      "allN0Model": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 2
+      },
+      "referenceK1Zero": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 2
+      },
+      "allN0AbstractGroupMatch": true,
+      "fullPhysicalReference": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 3
+      },
+      "sourceTableCell": "$\\Z^3\\times\\Z_3^5$",
+      "physicalCochainProductCalibrated": false
+    },
+    {
+      "id": "wallpaper_13_spinless",
+      "name": "p3",
+      "physicalSpin": "spinless",
+      "relativeModel": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 1
+      },
+      "referenceC0CentralCharge0": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 1
+      },
+      "relativeAbstractGroupMatch": true,
+      "allN0Model": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 2
+      },
+      "referenceK1Zero": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 2
+      },
+      "allN0AbstractGroupMatch": true,
+      "fullPhysicalReference": {
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "freeRank": 3
+      },
+      "sourceTableCell": "$\\Z^3\\times\\Z_3^5$",
+      "physicalCochainProductCalibrated": false
+    },
+    {
+      "id": "wallpaper_16_spin_half",
+      "name": "p6",
+      "physicalSpin": "spin_half",
+      "relativeModel": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 1
+      },
+      "referenceC0CentralCharge0": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 1
+      },
+      "relativeAbstractGroupMatch": true,
+      "allN0Model": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 2
+      },
+      "referenceK1Zero": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 2
+      },
+      "allN0AbstractGroupMatch": true,
+      "fullPhysicalReference": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 3
+      },
+      "sourceTableCell": "$\\Z^3\\times\\Z_{12}\\times\\Z_6\\times\\Z_3$",
+      "physicalCochainProductCalibrated": false
+    },
+    {
+      "id": "wallpaper_16_spinless",
+      "name": "p6",
+      "physicalSpin": "spinless",
+      "relativeModel": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 1
+      },
+      "referenceC0CentralCharge0": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 1
+      },
+      "relativeAbstractGroupMatch": true,
+      "allN0Model": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 2
+      },
+      "referenceK1Zero": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 2
+      },
+      "allN0AbstractGroupMatch": true,
+      "fullPhysicalReference": {
+        "torsion": [
+          3,
+          6,
+          12
+        ],
+        "freeRank": 3
+      },
+      "sourceTableCell": "$\\Z^3\\times\\Z_{12}\\times\\Z_6\\times\\Z_3$",
+      "physicalCochainProductCalibrated": false
+    }
+  ]
+}

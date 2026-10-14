@@ -1,5 +1,13 @@
 # Completed insulator campaigns — 2026-10-13
 
+**Interpretation update, 2026-10-14:** read the
+[calibration review](calibration_20261014/README.md) first. The statistics below
+use the specified arXiv benchmark versions, not an interchangeable journal
+version. The nonzero-uniform-IQH product is a consistent supplied convention
+whose universal physical matching remains open. An abstract group comparison
+after a reference-side E8 quotient is not a physical realization map. Saved
+computations remain unchanged.
+
 All requested campaigns completed on `n01.local`, reached through the persistent
 `cluster3` SSH connection: **172 successful classifications, zero failed cases**.
 The implementation and all evidence belong to the independent `insulator` branch.
