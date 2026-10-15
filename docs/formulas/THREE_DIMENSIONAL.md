@@ -165,6 +165,12 @@ an independent derivation of its physical coordinate convention. In
 4+1D the neutral cubic source and sheet-removal phase are nonzero; this
 argument does not apply there (see [4+1D](FOUR_DIMENSIONAL.md)).
 
+The public `scripts/classify_3p1d.py` entrypoint runs both factors and final
+acceptance in one workflow. It reports completion only after the full
+four-data results, exact selected inputs and source provenance pass the
+collector and terminal checks. The internal CI stage alone is not a
+completed four-data classification.
+
 ## Neutral section, infinite groups, and remaining comparison
 
 For ordinary three-dimensional space groups with their orientation
