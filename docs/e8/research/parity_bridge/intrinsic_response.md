@@ -2,6 +2,15 @@
 
 Date: 2026-10-15 UTC. All reduced decoration states use E8-first notation $(e_p,n_p,n_{p+2},\nu_{p+3})$, $p=d-2$. The intrinsic row below is additional data, denoted $r_0=(r_0^I,r_0^J)$; it is not hidden inside $e_2$ or $n_2$.
 
+**Deferred at the user's request.** The active project first completes the
+original four-data theory. This separate extension is not a missing
+differential in that tower. Subsequent bounded notes preserve the
+[unsigned integral primary operation](intrinsic_d3_unitary_4p1.md),
+[uniform-lattice transfer argument](intrinsic_abstract_group_4p1.md), and
+[physical root interpretation](intrinsic_charge3_realization_4p1.md).
+The historical formal-candidate discussion below predates the unsigned
+primary-operation proof; signed and higher operations are not supplied.
+
 ## 1. A primitive integral response basis
 
 Let $c=c_1(L)$ be the determinant class of a Spin-c structure on a closed oriented six-manifold. The physical charge-one curvature has de Rham class $c/2$. Define
