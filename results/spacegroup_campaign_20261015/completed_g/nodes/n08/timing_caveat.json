@@ -1,0 +1,77 @@
+{
+  "cases": [
+    {
+      "batchElapsedSeconds": 47.082,
+      "elapsedSeconds": -4.589,
+      "id": "spacegroup_016_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 50.077,
+      "elapsedSeconds": -3.508,
+      "id": "spacegroup_021_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 25.172,
+      "elapsedSeconds": -17.998,
+      "id": "spacegroup_075_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 28.081,
+      "elapsedSeconds": -16.086,
+      "id": "spacegroup_076_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 59.105,
+      "elapsedSeconds": -4.674,
+      "id": "spacegroup_077_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 26.377,
+      "elapsedSeconds": -17.39,
+      "id": "spacegroup_143_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 27.374,
+      "elapsedSeconds": -16.21,
+      "id": "spacegroup_145_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 15.448,
+      "elapsedSeconds": -22.545,
+      "id": "spacegroup_146_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 11.499,
+      "elapsedSeconds": -23.635,
+      "id": "spacegroup_003_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 15.949,
+      "elapsedSeconds": -21.136,
+      "id": "spacegroup_004_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 12.297,
+      "elapsedSeconds": -23.749,
+      "id": "spacegroup_005_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 15.852,
+      "elapsedSeconds": -20.331,
+      "id": "spacegroup_006_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 20.864,
+      "elapsedSeconds": -18.044,
+      "id": "spacegroup_008_spin_half"
+    },
+    {
+      "batchElapsedSeconds": 21.959,
+      "elapsedSeconds": -17.24,
+      "id": "spacegroup_009_spin_half"
+    }
+  ],
+  "causeInRecordedSource": "scripts/classify.py run_spin_pair subtracts the compute-node time.time() start from native.json st_mtime for the first case; these timestamps can come from different clocks on the shared filesystem.",
+  "negativePerCaseElapsedCount": 14,
+  "scope": "Timing metadata only; raw fields are retained. Do not use these per-case values for speed comparisons. Positive batch elapsed times are separately measured on the compute node."
+}
