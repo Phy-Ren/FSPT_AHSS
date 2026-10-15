@@ -1,0 +1,24 @@
+--- a/scripts/formula_worker.py
++++ b/scripts/formula_worker.py
+@@ -6,6 +6,21 @@
+ 
+ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+ from insulator.worker import main
++# Isolated review instrumentation only: preserve a bounded request replay
++# and flush cProfile if the classification timeout sends SIGTERM.
++import signal
++signal.signal(signal.SIGTERM, lambda signum, frame: sys.exit(0))
++import insulator.worker as _worker
++import json
++_capture_path = os.environ.get('U1_REQUEST_CAPTURE')
++if _capture_path:
++    _capture = open(_capture_path, 'a', buffering=1)
++    _original_evaluate = _worker._evaluate
++    def _capture_evaluate(request):
++        _capture.write(json.dumps(request, sort_keys=True, separators=(',', ':')) + '\n')
++        return _original_evaluate(request)
++    _worker._evaluate = _capture_evaluate
++
+ 
+ if __name__ == '__main__':
+     profile_directory = os.environ.get('U1_FORMULA_PROFILE_DIR')

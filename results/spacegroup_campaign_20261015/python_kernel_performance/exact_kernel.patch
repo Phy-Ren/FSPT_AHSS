@@ -1,0 +1,69 @@
+--- a/insulator/_engine/simplex.py
++++ b/insulator/_engine/simplex.py
+@@ -3,15 +3,36 @@
+ from fractions import Fraction as F
+ from functools import lru_cache
+ from .cochains import interval_cuts
++
++@lru_cache(maxsize=256)
++def _faces(N, degree):
++    return tuple(combinations(range(N + 1), degree + 1))
++
++@lru_cache(maxsize=512)
++def _cup_plan(N, p, q, i):
++    cuts = interval_cuts(p, q, i)
++    return tuple((f, tuple((tuple(f[j] for j in left),
++                           tuple(f[j] for j in right), sign)
++                          for left, right, sign in cuts))
++                 for f in _faces(N, p + q - i))
++
++@lru_cache(maxsize=256)
++def _boundary_plan(N, p):
++    return tuple((f, f[1:], tuple(((-1)**j, f[:j]+f[j+1:])
++                                  for j in range(1, len(f))))
++                 for f in _faces(N, p+1))
++
+ class C:
+     def __init__(self,N,p,v,tw=None):
+-        self.N=N;self.p=p;self.v=v;self.tw=tuple(tw or [0]*(N+1))
++        self.N=N;self.p=p;self.v={f:(x.numerator if type(x) is F and x.denominator==1 else x) for f,x in v.items()};self.tw=tuple(tw or [0]*(N+1))
+     def __call__(self,f): return self.v.get(tuple(f),0)
+     def d(self):
+-        out={}
+-        for f in combinations(range(self.N+1),self.p+2):
+-            out[f]=sum((-1)**j*((-1)**(self.tw[f[0]]+self.tw[f[1]]) if j==0 else 1)*self(f[:j]+f[j+1:]) for j in range(len(f)))
+-        return C(self.N,self.p+1,out,self.tw)
++        out={};values=self.v;tw=self.tw
++        for f,first,rest in _boundary_plan(self.N,self.p):
++            value=(-1)**(tw[f[0]]+tw[f[1]])*values.get(first,0)
++            for sign,face in rest:value+=sign*values.get(face,0)
++            out[f]=value
++        return C(self.N,self.p+1,out,tw)
+     def sc(self,a): return C(self.N,self.p,{f:a*v for f,v in self.v.items()},self.tw)
+     def __add__(self,b):
+         assert self.N==b.N and self.p==b.p
+@@ -21,14 +42,18 @@
+     def ret(self,tw): return C(self.N,self.p,self.v,tw)
+     def cup(self,b,i=0,binary=False):
+         p=self.p;q=b.p;D=p+q-i;out={}
+-        for f in combinations(range(self.N+1),D+1):
++        av=self.v;bv=b.v;at=self.tw;bt=b.tw
++        for f,cuts in _cup_plan(self.N,p,q,i):
+             val=0
+-            for S,T,sg in interval_cuts(p,q,i):
+-                ff=tuple(f[j] for j in S);gg=tuple(f[j] for j in T)
+-                sign=1 if binary else sg*(-1)**(self.tw[f[0]]+self.tw[ff[0]]+b.tw[f[0]]+b.tw[gg[0]])
+-                val+=sign*self(ff)*b(gg)
++            for ff,gg,sg in cuts:
++                left=av.get(ff,0)
++                if not left: continue
++                right=bv.get(gg,0)
++                if not right: continue
++                sign=1 if binary else sg*(-1)**(at[f[0]]+at[ff[0]]+bt[f[0]]+bt[gg[0]])
++                val+=sign*left*right
+             out[f]=val%2 if binary else val
+-        return C(self.N,D,out,[a^b for a,b in zip(self.tw,b.tw)])
++        return C(self.N,D,out,[a^b for a,b in zip(at,bt)])
+     def sq(self,k): return (self.cup(self,self.p-k,True)+self.cup(self.d(),self.p-k+1,True)).mod(2)
+     def pw(self,b): return C(self.N,self.p,{f:self(f)*b(f) for f in self.v},self.tw)
+     def maxabs(self): return max([abs(v) for v in self.v.values()]+[0])

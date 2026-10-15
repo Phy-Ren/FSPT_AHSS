@@ -1,0 +1,18 @@
+{
+  "GAPCapPerProcess": "3g",
+  "batchTimeoutSeconds": 7200,
+  "cases": [
+    "spacegroup_014_spin_half",
+    "spacegroup_014_spinless",
+    "spacegroup_166_spin_half",
+    "spacegroup_166_spinless",
+    "spacegroup_214_spin_half",
+    "spacegroup_214_spinless"
+  ],
+  "node": "n08",
+  "pairedProcesses": 3,
+  "runDirectory": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-e-smoke",
+  "runnerPID": 8094,
+  "runtime": "runtime.json",
+  "scope": "Exact kernel verification pilot; D production remains unchanged."
+}

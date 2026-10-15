@@ -1,0 +1,40 @@
+{
+  "source_commit": "80d565de744bbd5ef6ac4cca3530511f549547f4",
+  "candidate_root": "/tmp/u1-sg14-candidate-boundary",
+  "baseline_root": "/tmp/u1-sg14-profile-l4fu0vsl",
+  "source_simplex_sha256": "39d54bca0e3e0007f1e1eb0c60c5609d9647a1d644edda87b86f67cca68fa608",
+  "candidate_simplex_sha256": "e441f0db3afec72fde9382544ad4ae6402f9a135a8e5b898da1779049b2d1b94",
+  "baseline_instrumentation": "Only scripts/formula_worker.py: SIGTERM handler enables existing cProfile finally; _evaluate wrapper logs cache-miss requests. Formula code unchanged.",
+  "profile": "90-second bounded SG14 spin-half run; 1473 captured misses; final in-flight request was completed separately during replay. Profile sees 4393 parent calls, replay 4398.",
+  "replay_cache": "Uses _evaluate directly, bypasses worker content cache; geometrical caches start empty in each new process.",
+  "kernel_context": "No mathematical cochain data, signs, omega, spin or group identity stored in geometry plans.",
+  "compressed_captures": [
+    {
+      "file": "requests.jsonl.gz",
+      "compressed_sha256": "297d6636d830ebc925b1b18337fa77cff17ceaf5875840de67d40ed9332fe2c5",
+      "uncompressed_sha256": "2b9d6a09732decfd0d78280fc3e29a83ebcff1d77a3925b06ee4d7b94d0cf0e2",
+      "uncompressed_bytes": 374425,
+      "requests": 1473
+    },
+    {
+      "file": "signed-rational-requests.jsonl.gz",
+      "compressed_sha256": "c3f0bf89d66cc0ebe1838f69ce88c185c063b3bf4c19e230e7adecfbe887a430",
+      "uncompressed_sha256": "85c4de0cfa1a36938db433ef257037be8d9e81b74421cc44d75b1c1f41997050",
+      "uncompressed_bytes": 34099,
+      "requests": 36
+    }
+  ],
+  "full_runtime_manifests": {
+    "baseline": {
+      "file": "sg14_baseline/source.json",
+      "source_sha256": "52a1f844ed224dbb5c7cbc1deb0f6fb101b7e631c28ce336f4379cab612322e5",
+      "file_count": 45
+    },
+    "candidate": {
+      "file": "sg14_candidate/source.json",
+      "source_sha256": "72729bebdba8de1b78b0b1dc4bb8cd311025e72df87d4dcbe41fa7772ea97cf6",
+      "file_count": 45
+    }
+  },
+  "instrumentation_patch": "review_instrumentation.patch"
+}

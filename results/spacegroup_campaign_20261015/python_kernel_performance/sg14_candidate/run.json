@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/usr/bin/gap",
+    "-q",
+    "-b",
+    "--quitonbreak",
+    "-m",
+    "256m",
+    "-K",
+    "4g",
+    "/tmp/u1-sg14-candidate-boundary/sg14-full/spacegroup_014_spin_half/driver.g"
+  ],
+  "elapsedSeconds": 70.919,
+  "exitCode": 0,
+  "host": "youran-9950X3D",
+  "id": "spacegroup_014_spin_half",
+  "inputSHA256": "37ae6e9bd53626f0c7e51b056db19f23813eac418c2975fe90f4b6c7c2a10eb5",
+  "sourceSHA256": "72729bebdba8de1b78b0b1dc4bb8cd311025e72df87d4dcbe41fa7772ea97cf6",
+  "startedUTC": "2026-10-15T12:26:34.111279+00:00",
+  "status": "complete",
+  "timeoutSeconds": 180,
+  "uniformIQHRequested": false
+}

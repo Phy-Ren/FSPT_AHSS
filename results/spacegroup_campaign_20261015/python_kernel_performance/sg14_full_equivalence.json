@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "case": "spacegroup_014_spin_half",
+  "source_commit": "80d565de744bbd5ef6ac4cca3530511f549547f4",
+  "native_equal": true,
+  "classification_equal": true,
+  "input_equal": true,
+  "sole_ignored_native_key": "resolutionBuildTimings",
+  "all_root_powers_gauges_incoming_obstructions_completions_equal": true,
+  "formulaWorkerCalls": 19418,
+  "formulaCacheStats": {
+    "entryLimitPerCache": 8192,
+    "requestHits": 77740,
+    "requestEntries": 3034,
+    "requestFlushes": 2,
+    "geometryHits": 67096,
+    "geometryEntries": 5486,
+    "geometryFlushes": 3
+  },
+  "native_scientific_sha256": "a14ee434d71902dd806c79ff43883655a6656d1405499287b9807fada97c5e41",
+  "baseline_seconds": 345.367,
+  "candidate_seconds": 70.919,
+  "full_classification_speedup": 4.869879721936294,
+  "free_rank": 2,
+  "torsion": [
+    2,
+    4,
+    4,
+    8
+  ],
+  "original_resolution_timings": {
+    "holonomy_ms": 45,
+    "RP_ms": 2,
+    "RL_ms": 0,
+    "section_ms": 1,
+    "extension_ms": 49
+  },
+  "candidate_resolution_timings": {
+    "holonomy_ms": 45,
+    "RP_ms": 3,
+    "RL_ms": 0,
+    "section_ms": 0,
+    "extension_ms": 50
+  }
+}
