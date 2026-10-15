@@ -396,6 +396,17 @@ BindGlobal("U1Classify",function(c,d,options...)
     List(sheetStates,x->rec(kind:="CI",nativeSheet:=U1Native(c,d-2,"Zs",x.sheet),nativeCharge:=U1Native(c,d,"Zr",x.charge),nativePhase:=U1Native(c,d+1,"U1s",x.phase))));
   result.nativeCompletionChecks:=c.completedStateChecks;
   result.formulaWorkerCalls:=0;if IsBound(c.workerCalls) then result.formulaWorkerCalls:=c.workerCalls;fi;
+  result.formulaCacheStats:=rec(entryLimitPerCache:=8192);
+  if IsBound(c.requestCache) then
+    result.formulaCacheStats.requestHits:=c.requestCacheHits;
+    result.formulaCacheStats.requestEntries:=c.requestCacheSize;
+    result.formulaCacheStats.requestFlushes:=c.requestCacheFlushes;
+  fi;
+  if IsBound(c.formulaGeometryCache) then
+    result.formulaCacheStats.geometryHits:=c.formulaGeometryHits;
+    result.formulaCacheStats.geometryEntries:=c.formulaGeometryCount;
+    result.formulaCacheStats.geometryFlushes:=c.formulaGeometryFlushes;
+  fi;
   if IsBound(c.R!.afsTimings) then result.resolutionBuildTimings:=c.R!.afsTimings;fi;
   result.pairedGeometryReuse:=IsBound(c.pairedGeometryReuse) and c.pairedGeometryReuse;
   result.nativeChainIdentitiesVerified:=true;result.gaugeReductionWitnesses:=c.reductionWitnesses;

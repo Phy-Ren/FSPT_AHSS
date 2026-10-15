@@ -239,6 +239,9 @@ BindGlobal("U1Native",function(c,k,coeff,f)
   return v;
 end);
 BindGlobal("U1Coboundary",function(c,coeff,f)
+  # Preserve the literal zero representative, so later zero-sheet fast paths
+  # remain available. No nonzero exact or cohomologically zero input is removed.
+  if f=U1Zero then return U1Zero;fi;
   return U1Memo(function(xs...)
     local w,t,val,sgn;
     w:=U1BarBoundary(Identity(c.G),xs); val:=0;
