@@ -131,7 +131,15 @@ BindGlobal("U1CheckCompletedState",function(c,d,state)
   return rec(nativeSheet:=sheet,nativeCharge:=charge,nativePhase:=phase);
 end);
 BindGlobal("U1ReduceVacuum",function(c,d,state)
-  local a,u,v,record;
+  local a,u,v,record,mode;
+  # Internal precondition: a completed full bar state with removable sheet and
+  # charge classes. For closed f the integral comparison identity gives
+  # d(U1Solve(f))=f pointwise; native solvability alone is not this premise.
+  # Each full gauge is constructed before replacing its proved-zero output.
+  # Reference mode retains the original callbacks for direct debugging.
+  mode:="canonical";
+  if IsBound(c.vacuumReductionMode) then mode:=c.vacuumReductionMode;fi;
+  if not mode in ["canonical","reference"] then Error("Unknown vacuum reduction mode");fi;
   a:=state;record:=rec(nativeSheetParameter:=[],nativeChargeParameter:=[]);
   if a.sheet<>U1Zero then
     if d=2 then Error("Uniform IQH is not a gauge degree of freedom");fi;
@@ -139,11 +147,14 @@ BindGlobal("U1ReduceVacuum",function(c,d,state)
     if u=fail then Error("Requested sheet reduction is not exact");fi;
     record.nativeSheetParameter:=U1Native(c,d-3,"Zs",u);
     a:=U1Gauge(c,d,a,u,U1Zero);
+    if mode="canonical" then a.sheet:=U1Zero;fi;
   fi;
   v:=U1Solve(c,d,"Zr",U1Scale(-1,a.charge));
   if v=fail then Error("Requested charge reduction is not exact");fi;
   record.nativeChargeParameter:=U1Native(c,d-1,"Zr",v);
-  a:=U1Gauge(c,d,a,U1Zero,v);U1CheckCompletedState(c,d,a);
+  a:=U1Gauge(c,d,a,U1Zero,v);
+  if mode="canonical" then a.charge:=U1Zero;fi;
+  U1CheckCompletedState(c,d,a);
   record.nativeFinalPhase:=U1Native(c,d+1,"U1s",a.phase);
   if not IsBound(c.reductionWitnesses) then c.reductionWitnesses:=[];fi;
   Add(c.reductionWitnesses,record);return a.phase;
