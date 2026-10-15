@@ -1,0 +1,39 @@
+{
+  "acceptedCount": 2,
+  "archive": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-highmem-n02-evidence.tar.gz",
+  "archiveBytes": 162465,
+  "archiveSHA256": "502fc8044a4bf0cd92aa59e3d9d634a09e98e9eaf3b7c5366cb7533e986c374f",
+  "commands": [
+    [
+      "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+      "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/extend_e8_3p1.py",
+      "--ci-root",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-highmem-n02",
+      "--output",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-highmem-n02-e8"
+    ],
+    [
+      "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+      "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/collect_expansion.py",
+      "--ci-root",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-highmem-n02",
+      "--e8-root",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-highmem-n02-e8",
+      "--output",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-highmem-n02-accepted"
+    ]
+  ],
+  "endedUTC": "2026-10-15T18:09:21.458364+00:00",
+  "node": "n02",
+  "postprocessor": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g",
+  "runnerPID": 42816,
+  "runtimeVerified": true,
+  "selectedCount": 2,
+  "selectionSHA256": "bb01585497a2500896be05e8768c3494fddd37d1ead1512873f9fe38dc3283f4",
+  "source": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h",
+  "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+  "sourceVerified": true,
+  "startedUTC": "2026-10-15T15:49:51.102319+00:00",
+  "state": "complete",
+  "tag": "sgfull-20261015-h-tail-highmem-n02"
+}

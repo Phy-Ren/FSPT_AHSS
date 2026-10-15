@@ -1,0 +1,28 @@
+[
+  {
+    "family": "spacegroup",
+    "path": "3p1d/space_groups",
+    "count": 2,
+    "filesSHA256": {
+      "results.json": "c65503f61931cc9b23866ab7999b3408049894d0941a4481719b781b70f506f0",
+      "validation.json": "0d46fd9519d8511aa0f2619fe5504824fc09cb8666733c33857fa4abdb29788e",
+      "provenance.json": "a203d08b3348868bbe83b4b0132310f9c1972294b01d0ae6998118dd0a795087",
+      "ci_results.json": "f27819f9568e9f05a3c6388691cfa720b859d9d13d492c709571e3fa42161001"
+    }
+  }
+]
+Frozen neutral-section recomputation PASS: 2
+{
+  "CIClassificationRecomputed": false,
+  "acceptedCount": 2,
+  "archiveSHA256": "502fc8044a4bf0cd92aa59e3d9d634a09e98e9eaf3b7c5366cb7533e986c374f",
+  "exactCIParentBytesVerified": true,
+  "frozenCollectorAndNeutralSectionRepeated": true,
+  "independentScientificChecks": 2,
+  "node": "n02",
+  "ordinaryCompletionOnly": true,
+  "physicalClassificationCertified": false,
+  "rawFiles": 34,
+  "sourceFilesCheckedAgainstGit": 65,
+  "verified": true
+}
