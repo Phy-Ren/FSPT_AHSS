@@ -1,0 +1,1295 @@
+{
+  "loadavg": [
+    12.1,
+    12.46,
+    12.56
+  ],
+  "logicalCPUs": 56,
+  "memoryKiB": {
+    "Buffers": 122516,
+    "Cached": 552948,
+    "MemAvailable": null,
+    "MemFree": 463943632,
+    "MemTotal": 529033836,
+    "SwapFree": 960904,
+    "SwapTotal": 1023996
+  },
+  "physicalCores": 28,
+  "processes": [
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_142_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_142_spin_half"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_142_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 27.119046198534168,
+      "cpuSeconds": 1732.3,
+      "elapsedSeconds": 1873.6399999968708,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 42080,
+      "ppid": 42054,
+      "rssKiB": 2910604,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2690019635,
+      "state": "S",
+      "totalCpuPercentOverSample": 76.514451774441,
+      "totalRSSKiB": 2927892,
+      "workerPIDs": [
+        42111
+      ],
+      "workspaceLimit": "12g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 0.23,
+      "elapsedSeconds": 1645.6499999985099,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 42116,
+      "ppid": 42076,
+      "rssKiB": 13280,
+      "startTicks": 2690042434,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/classify.py",
+        "--family",
+        "spacegroup",
+        "--output",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02",
+        "--gap",
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+        "--jobs",
+        "12",
+        "--memory",
+        "12g",
+        "--timeout",
+        "14400",
+        "--largest-first",
+        "--charge-primary",
+        "native",
+        "--phase-class",
+        "cycles",
+        "--closed-charge-source",
+        "certified",
+        "--vacuum-reduction",
+        "canonical",
+        "--case",
+        "spacegroup_223_spin_half",
+        "--case",
+        "spacegroup_224_spin_half",
+        "--case",
+        "spacegroup_227_spin_half",
+        "--case",
+        "spacegroup_228_spin_half",
+        "--case",
+        "spacegroup_201_spinless",
+        "--case",
+        "spacegroup_206_spin_half",
+        "--case",
+        "spacegroup_210_spinless",
+        "--case",
+        "spacegroup_219_spin_half",
+        "--case",
+        "spacegroup_220_spin_half",
+        "--case",
+        "spacegroup_133_spinless",
+        "--case",
+        "spacegroup_140_spin_half",
+        "--case",
+        "spacegroup_142_spin_half"
+      ],
+      "cpuPercentOverSample": 0.4842686821167185,
+      "cpuSeconds": 15.16,
+      "elapsedSeconds": 1874.289999999106,
+      "family": "H",
+      "kind": "driverOrHelper",
+      "pid": 42054,
+      "ppid": 1,
+      "rssKiB": 18620,
+      "startTicks": 2690019570,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 12.106717052918219,
+      "cpuSeconds": 350.57,
+      "elapsedSeconds": 6231.459999997169,
+      "family": "G",
+      "kind": "formulaWorker",
+      "pid": 40903,
+      "ppid": 40497,
+      "rssKiB": 17648,
+      "startTicks": 2689583853,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 0.2,
+      "elapsedSeconds": 1662.5499999970198,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 42113,
+      "ppid": 42074,
+      "rssKiB": 13264,
+      "startTicks": 2690040744,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 49.39540557590683,
+      "cpuSeconds": 108.73,
+      "elapsedSeconds": 1674.219999998808,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 42111,
+      "ppid": 42080,
+      "rssKiB": 17288,
+      "startTicks": 2690039577,
+      "state": "R"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 11.138179688685643,
+      "cpuSeconds": 265.63,
+      "elapsedSeconds": 6142.029999997467,
+      "family": "G",
+      "kind": "formulaWorker",
+      "pid": 40909,
+      "ppid": 40488,
+      "rssKiB": 17960,
+      "startTicks": 2689592796,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 389.01,
+      "elapsedSeconds": 6112.14999999851,
+      "family": "G",
+      "kind": "formulaWorker",
+      "pid": 40910,
+      "ppid": 40491,
+      "rssKiB": 17384,
+      "startTicks": 2689595784,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 45.03698743685542,
+      "cpuSeconds": 97.83,
+      "elapsedSeconds": 1696.969999998808,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 42107,
+      "ppid": 42072,
+      "rssKiB": 17012,
+      "startTicks": 2690037302,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/classify.py",
+        "--output",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02",
+        "--gap",
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+        "--jobs",
+        "48",
+        "--memory",
+        "8g",
+        "--timeout",
+        "14400",
+        "--pair-spins",
+        "--largest-first",
+        "--charge-primary",
+        "native",
+        "--phase-class",
+        "cycles",
+        "--closed-charge-source",
+        "certified",
+        "--case",
+        "spacegroup_223_spin_half",
+        "--case",
+        "spacegroup_223_spinless",
+        "--case",
+        "spacegroup_226_spin_half",
+        "--case",
+        "spacegroup_226_spinless",
+        "--case",
+        "spacegroup_228_spin_half",
+        "--case",
+        "spacegroup_228_spinless",
+        "--case",
+        "spacegroup_222_spinless",
+        "--case",
+        "spacegroup_201_spin_half",
+        "--case",
+        "spacegroup_201_spinless",
+        "--case",
+        "spacegroup_206_spin_half",
+        "--case",
+        "spacegroup_206_spinless",
+        "--case",
+        "spacegroup_218_spin_half",
+        "--case",
+        "spacegroup_218_spinless",
+        "--case",
+        "spacegroup_220_spin_half",
+        "--case",
+        "spacegroup_220_spinless",
+        "--case",
+        "spacegroup_193_spinless",
+        "--case",
+        "spacegroup_200_spinless",
+        "--case",
+        "spacegroup_204_spinless",
+        "--case",
+        "spacegroup_215_spinless",
+        "--case",
+        "spacegroup_217_spinless",
+        "--case",
+        "spacegroup_140_spin_half",
+        "--case",
+        "spacegroup_140_spinless",
+        "--case",
+        "spacegroup_125_spinless",
+        "--case",
+        "spacegroup_127_spinless",
+        "--case",
+        "spacegroup_129_spinless",
+        "--case",
+        "spacegroup_131_spinless",
+        "--case",
+        "spacegroup_135_spinless",
+        "--case",
+        "spacegroup_137_spinless",
+        "--case",
+        "spacegroup_163_spinless",
+        "--case",
+        "spacegroup_167_spinless",
+        "--case",
+        "spacegroup_185_spinless",
+        "--case",
+        "spacegroup_088_spin_half",
+        "--case",
+        "spacegroup_088_spinless",
+        "--case",
+        "spacegroup_122_spin_half",
+        "--case",
+        "spacegroup_122_spinless",
+        "--case",
+        "spacegroup_058_spinless",
+        "--case",
+        "spacegroup_062_spinless",
+        "--case",
+        "spacegroup_067_spinless",
+        "--case",
+        "spacegroup_071_spinless",
+        "--case",
+        "spacegroup_073_spinless",
+        "--case",
+        "spacegroup_084_spinless",
+        "--case",
+        "spacegroup_087_spinless",
+        "--case",
+        "spacegroup_102_spinless",
+        "--case",
+        "spacegroup_105_spinless",
+        "--case",
+        "spacegroup_107_spinless",
+        "--case",
+        "spacegroup_109_spinless",
+        "--case",
+        "spacegroup_111_spinless",
+        "--case",
+        "spacegroup_113_spinless",
+        "--case",
+        "spacegroup_116_spinless",
+        "--case",
+        "spacegroup_118_spinless",
+        "--case",
+        "spacegroup_121_spinless",
+        "--case",
+        "spacegroup_170_spin_half",
+        "--case",
+        "spacegroup_170_spinless",
+        "--case",
+        "spacegroup_172_spin_half",
+        "--case",
+        "spacegroup_172_spinless",
+        "--case",
+        "spacegroup_158_spinless"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 74.05,
+      "elapsedSeconds": 6683.449999999255,
+      "family": "G",
+      "kind": "driverOrHelper",
+      "pid": 40405,
+      "ppid": 1,
+      "rssKiB": 94756,
+      "startTicks": 2689538654,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_224_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_224_spin_half"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_224_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 87.16836278100898,
+      "cpuSeconds": 1587.22,
+      "elapsedSeconds": 1873.679999999702,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 42070,
+      "ppid": 42054,
+      "rssKiB": 2865124,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2690019631,
+      "state": "S",
+      "totalCpuPercentOverSample": 90.55824355582575,
+      "totalRSSKiB": 2882516,
+      "workerPIDs": [
+        42103
+      ],
+      "workspaceLimit": "12g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/u1_finalize_campaign_20261015.py",
+        "--tag",
+        "sgfull-20261015-h-remaining-n02",
+        "--runner-pid",
+        "42054",
+        "--node",
+        "n02",
+        "--source-tag",
+        "sgfull-20261015-h"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 0.08,
+      "elapsedSeconds": 1873.679999999702,
+      "family": "H",
+      "kind": "driverOrHelper",
+      "pid": 42071,
+      "ppid": 1,
+      "rssKiB": 10172,
+      "startTicks": 2690019631,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_223_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_223_spin_half"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_223_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 39.22576325145239,
+      "cpuSeconds": 1737.85,
+      "elapsedSeconds": 1873.6699999980628,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 42072,
+      "ppid": 42054,
+      "rssKiB": 2615504,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2690019632,
+      "state": "R",
+      "totalCpuPercentOverSample": 84.26275068830782,
+      "totalRSSKiB": 2632516,
+      "workerPIDs": [
+        42107
+      ],
+      "workspaceLimit": "12g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_228_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_228_spin_half"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_228_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 100.24361719815977,
+      "cpuSeconds": 1871.27,
+      "elapsedSeconds": 1873.660000000149,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 42074,
+      "ppid": 42054,
+      "rssKiB": 2872304,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2690019633,
+      "state": "R",
+      "totalCpuPercentOverSample": 100.24361719815977,
+      "totalRSSKiB": 2885568,
+      "workerPIDs": [
+        42113
+      ],
+      "workspaceLimit": "12g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_227_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_227_spin_half"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_227_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 100.24361719815977,
+      "cpuSeconds": 1701.6,
+      "elapsedSeconds": 1873.6499999985099,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 42075,
+      "ppid": 42054,
+      "rssKiB": 2905252,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2690019634,
+      "state": "R",
+      "totalCpuPercentOverSample": 100.24361719815977,
+      "totalRSSKiB": 2922404,
+      "workerPIDs": [
+        42110
+      ],
+      "workspaceLimit": "12g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_206_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_206_spin_half"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_206_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 99.75934851604349,
+      "cpuSeconds": 1871.26,
+      "elapsedSeconds": 1873.6499999985099,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 42076,
+      "ppid": 42054,
+      "rssKiB": 2618984,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2690019634,
+      "state": "R",
+      "totalCpuPercentOverSample": 99.75934851604349,
+      "totalRSSKiB": 2632264,
+      "workerPIDs": [
+        42116
+      ],
+      "workspaceLimit": "12g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_219_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_219_spin_half"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_219_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 100.24361719817078,
+      "cpuSeconds": 1871.42,
+      "elapsedSeconds": 1873.6499999985099,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 42077,
+      "ppid": 42054,
+      "rssKiB": 2355520,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2690019634,
+      "state": "R",
+      "totalCpuPercentOverSample": 100.24361719817078,
+      "totalRSSKiB": 2367736,
+      "workerPIDs": [
+        42119
+      ],
+      "workspaceLimit": "12g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_220_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_220_spin_half"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_220_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 100.24361719815977,
+      "cpuSeconds": 1871.29,
+      "elapsedSeconds": 1873.6399999968708,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 42079,
+      "ppid": 42054,
+      "rssKiB": 2464192,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2690019635,
+      "state": "R",
+      "totalCpuPercentOverSample": 100.24361719815977,
+      "totalRSSKiB": 2477472,
+      "workerPIDs": [
+        42109
+      ],
+      "workspaceLimit": "12g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_226_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_226_spin_half",
+        "spacegroup_226_spinless"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_226_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        },
+        {
+          "id": "spacegroup_226_spinless",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 100.24361719814877,
+      "cpuSeconds": 6661.19,
+      "elapsedSeconds": 6682.54999999702,
+      "family": "G",
+      "kind": "GAP",
+      "pid": 40475,
+      "ppid": 40405,
+      "rssKiB": 8404452,
+      "sourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2689538744,
+      "state": "R",
+      "totalCpuPercentOverSample": 100.24361719814877,
+      "totalRSSKiB": 8417736,
+      "workerPIDs": [
+        40981
+      ],
+      "workspaceLimit": "8g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_140_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_140_spin_half"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_140_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 80.87286991349723,
+      "cpuSeconds": 1724.69,
+      "elapsedSeconds": 1873.629999998957,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 42081,
+      "ppid": 42054,
+      "rssKiB": 3523496,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2690019636,
+      "state": "R",
+      "totalCpuPercentOverSample": 86.19982541678121,
+      "totalRSSKiB": 3540884,
+      "workerPIDs": [
+        42104
+      ],
+      "workspaceLimit": "12g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_133_spinless/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_133_spinless"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_133_spinless",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 5.326955503279172,
+      "cpuSeconds": 1078.83,
+      "elapsedSeconds": 1873.629999998957,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 42082,
+      "ppid": 42054,
+      "rssKiB": 1889584,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2690019636,
+      "state": "S",
+      "totalCpuPercentOverSample": 92.4953182842909,
+      "totalRSSKiB": 1907708,
+      "workerPIDs": [
+        42094
+      ],
+      "workspaceLimit": "12g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 521.13,
+      "elapsedSeconds": 6053.809999998659,
+      "family": "G",
+      "kind": "formulaWorker",
+      "pid": 40923,
+      "ppid": 40490,
+      "rssKiB": 17028,
+      "startTicks": 2689601618,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 118.91,
+      "elapsedSeconds": 6237.949999999255,
+      "family": "G",
+      "kind": "formulaWorker",
+      "pid": 40902,
+      "ppid": 40498,
+      "rssKiB": 17724,
+      "startTicks": 2689583204,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_206_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_206_spin_half",
+        "spacegroup_206_spinless"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_206_spin_half",
+          "nativeBytes": 6752,
+          "status": "running",
+          "stderrBytes": 0
+        },
+        {
+          "id": "spacegroup_206_spinless",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 74.09310836389122,
+      "cpuSeconds": 5962.01,
+      "elapsedSeconds": 6682.489999998361,
+      "family": "G",
+      "kind": "GAP",
+      "pid": 40488,
+      "ppid": 40405,
+      "rssKiB": 3012420,
+      "sourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+      "stageEvidence": "first-paired-native-present",
+      "startTicks": 2689538750,
+      "state": "R",
+      "totalCpuPercentOverSample": 85.23128805257686,
+      "totalRSSKiB": 3030380,
+      "workerPIDs": [
+        40909
+      ],
+      "workspaceLimit": "8g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_228_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_228_spin_half",
+        "spacegroup_228_spinless"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_228_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        },
+        {
+          "id": "spacegroup_228_spinless",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 100.24361719814877,
+      "cpuSeconds": 5064.09,
+      "elapsedSeconds": 6682.449999999255,
+      "family": "G",
+      "kind": "GAP",
+      "pid": 40490,
+      "ppid": 40405,
+      "rssKiB": 6092272,
+      "sourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2689538754,
+      "state": "R",
+      "totalCpuPercentOverSample": 100.24361719814877,
+      "totalRSSKiB": 6109300,
+      "workerPIDs": [
+        40923
+      ],
+      "workspaceLimit": "8g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_223_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_223_spin_half",
+        "spacegroup_223_spinless"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_223_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        },
+        {
+          "id": "spacegroup_223_spinless",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 100.24361719819281,
+      "cpuSeconds": 5508.6,
+      "elapsedSeconds": 6682.439999997616,
+      "family": "G",
+      "kind": "GAP",
+      "pid": 40491,
+      "ppid": 40405,
+      "rssKiB": 8161224,
+      "sourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2689538755,
+      "state": "R",
+      "totalCpuPercentOverSample": 100.24361719819281,
+      "totalRSSKiB": 8178608,
+      "workerPIDs": [
+        40910
+      ],
+      "workspaceLimit": "8g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 87.16836278101174,
+      "cpuSeconds": 397.76,
+      "elapsedSeconds": 1740.8999999985099,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 42094,
+      "ppid": 42082,
+      "rssKiB": 18124,
+      "startTicks": 2690032909,
+      "state": "R"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_140_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_140_spin_half",
+        "spacegroup_140_spinless"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_140_spin_half",
+          "nativeBytes": 21289,
+          "status": "running",
+          "stderrBytes": 0
+        },
+        {
+          "id": "spacegroup_140_spinless",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 60.04931658250784,
+      "cpuSeconds": 5620.31,
+      "elapsedSeconds": 6682.39999999851,
+      "family": "G",
+      "kind": "GAP",
+      "pid": 40497,
+      "ppid": 40405,
+      "rssKiB": 3938220,
+      "sourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+      "stageEvidence": "first-paired-native-present",
+      "startTicks": 2689538759,
+      "state": "R",
+      "totalCpuPercentOverSample": 72.15603363542606,
+      "totalRSSKiB": 3955868,
+      "workerPIDs": [
+        40903
+      ],
+      "workspaceLimit": "8g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_220_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_220_spin_half",
+        "spacegroup_220_spinless"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_220_spin_half",
+          "nativeBytes": 7656,
+          "status": "running",
+          "stderrBytes": 0
+        },
+        {
+          "id": "spacegroup_220_spinless",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 99.27507983393821,
+      "cpuSeconds": 6357.37,
+      "elapsedSeconds": 6682.349999997765,
+      "family": "G",
+      "kind": "GAP",
+      "pid": 40498,
+      "ppid": 40405,
+      "rssKiB": 3346304,
+      "sourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+      "stageEvidence": "first-paired-native-present",
+      "startTicks": 2689538764,
+      "state": "R",
+      "totalCpuPercentOverSample": 99.27507983393821,
+      "totalRSSKiB": 3364028,
+      "workerPIDs": [
+        40902
+      ],
+      "workspaceLimit": "8g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 3.389880774816771,
+      "cpuSeconds": 182.97,
+      "elapsedSeconds": 1739.969999998808,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 42103,
+      "ppid": 42070,
+      "rssKiB": 17392,
+      "startTicks": 2690033002,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 5.3269555032839895,
+      "cpuSeconds": 102.3,
+      "elapsedSeconds": 1721.269999999553,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 42104,
+      "ppid": 42081,
+      "rssKiB": 17388,
+      "startTicks": 2690034872,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/u1_finalize_campaign_20261015.py",
+        "--tag",
+        "sgfull-20261015-g-n02",
+        "--runner-pid",
+        "40405",
+        "--node",
+        "n02",
+        "--source-tag",
+        "sgfull-20261015-g"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 0.16,
+      "elapsedSeconds": 6372.209999997169,
+      "family": "G",
+      "kind": "driverOrHelper",
+      "pid": 40699,
+      "ppid": 1,
+      "rssKiB": 10184,
+      "startTicks": 2689569778,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 0.14,
+      "elapsedSeconds": 1583.1399999968708,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 42119,
+      "ppid": 42077,
+      "rssKiB": 12216,
+      "startTicks": 2690048685,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 0.18,
+      "elapsedSeconds": 1693.0299999974668,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 42109,
+      "ppid": 42079,
+      "rssKiB": 13280,
+      "startTicks": 2690037696,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 119.12,
+      "elapsedSeconds": 1680.1699999980628,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 42110,
+      "ppid": 42075,
+      "rssKiB": 17152,
+      "startTicks": 2690038982,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 0.2,
+      "elapsedSeconds": 5189.039999999106,
+      "family": "G",
+      "kind": "formulaWorker",
+      "pid": 40981,
+      "ppid": 40475,
+      "rssKiB": 13284,
+      "startTicks": 2689688095,
+      "state": "S"
+    }
+  ],
+  "sampleSeconds": 2.064969379454851,
+  "sampleUTC": "2026-10-15T15:49:10.806259+00:00"
+}
