@@ -221,7 +221,8 @@ def verify(repository, validator_root=None):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--repository', type=Path, default=BASE.parents[3])
+    parser.add_argument('--repository', type=Path,
+                        default=next((p for p in BASE.parents if (p / '.git').exists()), Path.cwd()))
     parser.add_argument('--validator-root', type=Path, help='Optional exact frozen c07c6e5 collector/neutral-section checkout')
     args = parser.parse_args()
     print(json.dumps(verify(args.repository.resolve(), args.validator_root), indent=2, sort_keys=True))
