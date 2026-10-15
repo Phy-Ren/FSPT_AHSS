@@ -1,0 +1,34 @@
+U1_BUILD holonomy_start cpu_ms=795
+U1_BUILD RP_start order=4 cpu_ms=801
+U1_BUILD RL_start cpu_ms=805
+U1_BUILD section_start cpu_ms=805
+U1_BUILD extension_start cpu_ms=805
+U1_BUILD extension_done timings=rec(
+Error, user interrupt in
+  count  self/ms  chld/ms  stor/kb  chld/kb  package  function              
+      0        0        0        0        0           U1ChainHomotopy       
+      1        0        0      397      167           U1SmithUnits          
+  49111       11        0        0        0  GAP      ValueOption           
+  27387        8        4     2113       81  GAP      Filtered              
+   9540        3        9     1593      630  HAP      NegateWord            
+    536        1       13      243     1055  GAP      FactorsCommonDegreePol
+  22242       18       23     2629     3482  GAP      Apply                 
+  13634       17       26     7159     4114           U1ChainToBar          
+    682       52        1     2621      251  GAP      Intersection          
+  48882       47        9    29520        0  GAP      NewDictionary         
+      2       10       80     1589     9492  GAP      BasisVectorsForMatrix*
+      1       13       84     3569    17289  HAP      TwistedTensorProduct  
+ 132152      178        6   162158        0  GAP      EvalString            
+  15169       78      110    21096    21838  Polycy*  ExponentsByIgs        
+ 394452      351        4   203404        0  GAP      Combinations          
+  30372       60      301     5740    63995  GAP      Image                 
+1311110      424      502    43184    97987  GAP      JoinStringsWithSepara*
+  42427      233      748    63050   130473           U1ChainFromBar        
+8349979     1204       23        0        0  Polycy*  NumberOfGenerators    
+6692444     1623       10   201536        0  GAP      Concatenation         
+8349842     2699        0  1930727        0  Polycy*  PcpElementConstruction
+8130684     2815       34    95600        0  GAP      PositionSorted        
+2748400     1300     2954   415268   345859           U1JSON                
+3822240     2652     1791   516181   932159  Polycy*  PcpElementByGenExpLis*
+4527602     2582     2126   228868   998567  Polycy*  PcpElementByExponents*
+6735114     8390    12894  2018857  3201643  GAP      List                  

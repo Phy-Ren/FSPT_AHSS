@@ -1,0 +1,1544 @@
+[
+  {
+    "chargeKernelLattice": [],
+    "chargeObstructionMap": [],
+    "chargeObstructionTargetOrders": [],
+    "chargeOrders": [],
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [],
+      "phase": [],
+      "sheet": []
+    },
+    "finalChargeFreeRank": 0,
+    "finalChargeOrders": [],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [],
+    "finalSheetFreeRank": 0,
+    "finalSheetOrders": [],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192
+    },
+    "formulaWorkerCalls": 0,
+    "freeRank": 0,
+    "gaugeReductionWitnesses": [],
+    "generators": [],
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 0,
+    "obstructedSheets": [],
+    "pairedGeometryReuse": false,
+    "phaseOrders": [],
+    "presentation": [],
+    "presentationGeneratorCount": 0,
+    "resolutionDimensions": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector; relative n0=0",
+    "sheetOrders": [],
+    "spatialDimension": 2,
+    "theory": "U(1)^f insulator",
+    "torsion": [],
+    "uniformIQHIncluded": false,
+    "witnesses": []
+  },
+  {
+    "chargeKernelLattice": [
+      [
+        1
+      ]
+    ],
+    "chargeObstructionMap": [
+      []
+    ],
+    "chargeObstructionTargetOrders": [],
+    "chargeOrders": [
+      2
+    ],
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [
+        [
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "phase": [
+        [
+          -2
+        ]
+      ],
+      "sheet": []
+    },
+    "finalChargeFreeRank": 0,
+    "finalChargeOrders": [
+      2
+    ],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [
+      2
+    ],
+    "finalSheetFreeRank": 0,
+    "finalSheetOrders": [],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192
+    },
+    "formulaWorkerCalls": 0,
+    "freeRank": 0,
+    "gaugeReductionWitnesses": [
+      {
+        "nativeChargeParameter": [
+          -1
+        ],
+        "nativeFinalPhase": [
+          "1/2"
+        ],
+        "nativeSheetParameter": []
+      }
+    ],
+    "generators": [
+      {
+        "kind": "phase",
+        "nativePhase": [
+          "1/2"
+        ]
+      },
+      {
+        "kind": "charge",
+        "nativeCharge": [
+          1
+        ],
+        "nativePhase": [
+          "1/4"
+        ]
+      }
+    ],
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 2,
+    "obstructedSheets": [],
+    "pairedGeometryReuse": false,
+    "phaseOrders": [
+      2
+    ],
+    "presentation": [
+      [
+        2,
+        0
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    "presentationGeneratorCount": 2,
+    "resolutionDimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector; relative n0=0",
+    "sheetOrders": [],
+    "spatialDimension": 2,
+    "theory": "U(1)^f insulator",
+    "torsion": [
+      4
+    ],
+    "uniformIQHIncluded": false,
+    "witnesses": [
+      {
+        "chargeCohomology": [
+          1
+        ],
+        "kind": "charge-lift",
+        "nativePhase": [
+          "1/4"
+        ],
+        "nativeSource": [
+          "1/2"
+        ]
+      },
+      {
+        "coefficients": [
+          2
+        ],
+        "kind": "charge-root",
+        "phaseCoordinates": [
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "chargeKernelLattice": [
+      [
+        1
+      ]
+    ],
+    "chargeObstructionMap": [
+      []
+    ],
+    "chargeObstructionTargetOrders": [],
+    "chargeOrders": [
+      3
+    ],
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [
+        [
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "phase": [
+        [
+          -3
+        ]
+      ],
+      "sheet": []
+    },
+    "finalChargeFreeRank": 0,
+    "finalChargeOrders": [
+      3
+    ],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [
+      3
+    ],
+    "finalSheetFreeRank": 0,
+    "finalSheetOrders": [],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192
+    },
+    "formulaWorkerCalls": 0,
+    "freeRank": 0,
+    "gaugeReductionWitnesses": [
+      {
+        "nativeChargeParameter": [
+          -1
+        ],
+        "nativeFinalPhase": [
+          0
+        ],
+        "nativeSheetParameter": []
+      }
+    ],
+    "generators": [
+      {
+        "kind": "phase",
+        "nativePhase": [
+          "1/3"
+        ]
+      },
+      {
+        "kind": "charge",
+        "nativeCharge": [
+          1
+        ],
+        "nativePhase": [
+          "1/6"
+        ]
+      }
+    ],
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 2,
+    "obstructedSheets": [],
+    "pairedGeometryReuse": false,
+    "phaseOrders": [
+      3
+    ],
+    "presentation": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "presentationGeneratorCount": 2,
+    "resolutionDimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector; relative n0=0",
+    "sheetOrders": [],
+    "spatialDimension": 2,
+    "theory": "U(1)^f insulator",
+    "torsion": [
+      3,
+      3
+    ],
+    "uniformIQHIncluded": false,
+    "witnesses": [
+      {
+        "chargeCohomology": [
+          1
+        ],
+        "kind": "charge-lift",
+        "nativePhase": [
+          "1/6"
+        ],
+        "nativeSource": [
+          "1/2"
+        ]
+      },
+      {
+        "coefficients": [
+          3
+        ],
+        "kind": "charge-root",
+        "phaseCoordinates": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "chargeKernelLattice": [
+      [
+        1
+      ]
+    ],
+    "chargeObstructionMap": [
+      []
+    ],
+    "chargeObstructionTargetOrders": [],
+    "chargeOrders": [
+      4
+    ],
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [
+        [
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "phase": [
+        [
+          -4
+        ]
+      ],
+      "sheet": []
+    },
+    "finalChargeFreeRank": 0,
+    "finalChargeOrders": [
+      4
+    ],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [
+      4
+    ],
+    "finalSheetFreeRank": 0,
+    "finalSheetOrders": [],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192
+    },
+    "formulaWorkerCalls": 0,
+    "freeRank": 0,
+    "gaugeReductionWitnesses": [
+      {
+        "nativeChargeParameter": [
+          2,
+          -1
+        ],
+        "nativeFinalPhase": [
+          0,
+          "1/2"
+        ],
+        "nativeSheetParameter": []
+      }
+    ],
+    "generators": [
+      {
+        "kind": "phase",
+        "nativePhase": [
+          "1/2",
+          "1/4"
+        ]
+      },
+      {
+        "kind": "charge",
+        "nativeCharge": [
+          -1,
+          1
+        ],
+        "nativePhase": [
+          "1/4",
+          "1/8"
+        ]
+      }
+    ],
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 2,
+    "obstructedSheets": [],
+    "pairedGeometryReuse": false,
+    "phaseOrders": [
+      4
+    ],
+    "presentation": [
+      [
+        4,
+        0
+      ],
+      [
+        -2,
+        4
+      ]
+    ],
+    "presentationGeneratorCount": 2,
+    "resolutionDimensions": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector; relative n0=0",
+    "sheetOrders": [],
+    "spatialDimension": 2,
+    "theory": "U(1)^f insulator",
+    "torsion": [
+      2,
+      8
+    ],
+    "uniformIQHIncluded": false,
+    "witnesses": [
+      {
+        "chargeCohomology": [
+          1
+        ],
+        "kind": "charge-lift",
+        "nativePhase": [
+          "1/4",
+          "1/8"
+        ],
+        "nativeSource": [
+          "1/2",
+          0
+        ]
+      },
+      {
+        "coefficients": [
+          4
+        ],
+        "kind": "charge-root",
+        "phaseCoordinates": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "chargeKernelLattice": [
+      [
+        1
+      ]
+    ],
+    "chargeObstructionMap": [
+      []
+    ],
+    "chargeObstructionTargetOrders": [],
+    "chargeOrders": [
+      2
+    ],
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "phase": [
+        [
+          2
+        ]
+      ],
+      "sheet": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          2
+        ]
+      ]
+    },
+    "finalChargeFreeRank": 0,
+    "finalChargeOrders": [
+      2
+    ],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [
+      2
+    ],
+    "finalSheetFreeRank": 0,
+    "finalSheetOrders": [
+      2
+    ],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192,
+      "geometryEntries": 3,
+      "geometryFlushes": 0,
+      "geometryHits": 10,
+      "requestEntries": 11,
+      "requestFlushes": 0,
+      "requestHits": 2
+    },
+    "formulaWorkerCalls": 11,
+    "freeRank": 0,
+    "gaugeReductionWitnesses": [
+      {
+        "nativeChargeParameter": [
+          1
+        ],
+        "nativeFinalPhase": [
+          "1/2"
+        ],
+        "nativeSheetParameter": []
+      },
+      {
+        "nativeChargeParameter": [
+          0
+        ],
+        "nativeFinalPhase": [
+          "1/2"
+        ],
+        "nativeSheetParameter": []
+      }
+    ],
+    "generators": [
+      {
+        "kind": "phase",
+        "nativePhase": [
+          "1/2"
+        ]
+      },
+      {
+        "kind": "charge",
+        "nativeCharge": [
+          1
+        ],
+        "nativePhase": [
+          "3/4"
+        ]
+      },
+      {
+        "kind": "CI",
+        "nativeCharge": [
+          0
+        ],
+        "nativePhase": [
+          "15/16"
+        ],
+        "nativeSheet": [
+          1
+        ]
+      }
+    ],
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 5,
+    "neutralE8AbsentByCohomology": false,
+    "obstructedSheets": [],
+    "pairedGeometryReuse": false,
+    "phaseOrders": [
+      2
+    ],
+    "presentation": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        -1,
+        2,
+        0
+      ],
+      [
+        -1,
+        -1,
+        2
+      ]
+    ],
+    "presentationGeneratorCount": 3,
+    "resolutionDimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector",
+    "sheetOrders": [
+      2
+    ],
+    "spatialDimension": 3,
+    "theory": "U(1)^f insulator",
+    "torsion": [
+      8
+    ],
+    "uniformIQHIncluded": false,
+    "witnesses": [
+      {
+        "chargeCohomology": [
+          1
+        ],
+        "kind": "charge-lift",
+        "nativePhase": [
+          "3/4"
+        ],
+        "nativeSource": [
+          "1/2"
+        ]
+      },
+      {
+        "chargeAdjustment": [
+          0
+        ],
+        "kind": "CI-lift",
+        "nativePhase": [
+          "15/16"
+        ],
+        "nativeSource": [
+          "1/8"
+        ],
+        "sheetIndex": 1
+      },
+      {
+        "coefficients": [
+          2
+        ],
+        "kind": "charge-root",
+        "phaseCoordinates": [
+          1
+        ]
+      },
+      {
+        "chargeCoordinates": [
+          1
+        ],
+        "index": 1,
+        "kind": "CI-root",
+        "order": 2,
+        "phaseCoordinates": [
+          1
+        ],
+        "sheetCoefficients": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "chargeKernelLattice": [],
+    "chargeObstructionMap": [],
+    "chargeObstructionTargetOrders": [],
+    "chargeOrders": [],
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [],
+      "phase": [
+        [
+          -2
+        ],
+        [
+          0
+        ]
+      ],
+      "sheet": [
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ]
+    },
+    "finalChargeFreeRank": 0,
+    "finalChargeOrders": [],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [
+      2
+    ],
+    "finalSheetFreeRank": 0,
+    "finalSheetOrders": [
+      2
+    ],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192,
+      "geometryEntries": 3,
+      "geometryFlushes": 0,
+      "geometryHits": 12,
+      "requestEntries": 11,
+      "requestFlushes": 0,
+      "requestHits": 4
+    },
+    "formulaWorkerCalls": 11,
+    "freeRank": 0,
+    "gaugeReductionWitnesses": [
+      {
+        "nativeChargeParameter": [
+          0
+        ],
+        "nativeFinalPhase": [
+          0
+        ],
+        "nativeSheetParameter": []
+      },
+      {
+        "nativeChargeParameter": [
+          0
+        ],
+        "nativeFinalPhase": [
+          0
+        ],
+        "nativeSheetParameter": []
+      }
+    ],
+    "generators": [
+      {
+        "kind": "phase",
+        "nativePhase": [
+          "1/2"
+        ]
+      },
+      {
+        "kind": "CI",
+        "nativeCharge": [
+          0
+        ],
+        "nativePhase": [
+          0
+        ],
+        "nativeSheet": [
+          1
+        ]
+      }
+    ],
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 5,
+    "neutralE8AbsentByCohomology": false,
+    "obstructedSheets": [],
+    "pairedGeometryReuse": false,
+    "phaseOrders": [
+      2
+    ],
+    "presentation": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "presentationGeneratorCount": 2,
+    "resolutionDimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector",
+    "sheetOrders": [
+      2
+    ],
+    "spatialDimension": 3,
+    "theory": "U(1)^f insulator",
+    "torsion": [
+      2,
+      2
+    ],
+    "uniformIQHIncluded": false,
+    "witnesses": [
+      {
+        "chargeAdjustment": [],
+        "kind": "CI-lift",
+        "nativePhase": [
+          0
+        ],
+        "nativeSource": [
+          0
+        ],
+        "sheetIndex": 1
+      },
+      {
+        "chargeCoordinates": [],
+        "index": 1,
+        "kind": "CI-root",
+        "order": 2,
+        "phaseCoordinates": [
+          0
+        ],
+        "sheetCoefficients": [
+          2
+        ]
+      },
+      {
+        "chargeCoordinates": [],
+        "index": 1,
+        "kind": "incoming-charge-gauge",
+        "phaseCoordinates": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "chargeKernelLattice": [],
+    "chargeObstructionMap": [],
+    "chargeObstructionTargetOrders": [],
+    "chargeOrders": [],
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [],
+      "phase": [
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "sheet": []
+    },
+    "finalChargeFreeRank": 0,
+    "finalChargeOrders": [],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [],
+    "finalSheetFreeRank": 0,
+    "finalSheetOrders": [],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192,
+      "geometryEntries": 2,
+      "geometryFlushes": 0,
+      "geometryHits": 3,
+      "requestEntries": 5,
+      "requestFlushes": 0,
+      "requestHits": 0
+    },
+    "formulaWorkerCalls": 5,
+    "freeRank": 0,
+    "gaugeReductionWitnesses": [
+      {
+        "nativeChargeParameter": [
+          0
+        ],
+        "nativeFinalPhase": [
+          "1/2"
+        ],
+        "nativeSheetParameter": []
+      }
+    ],
+    "generators": [
+      {
+        "kind": "phase",
+        "nativePhase": [
+          "1/2"
+        ]
+      }
+    ],
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 2,
+    "neutralE8AbsentByCohomology": false,
+    "obstructedSheets": [
+      {
+        "index": 1,
+        "nativeSource": [
+          1
+        ],
+        "stage": "d3"
+      }
+    ],
+    "pairedGeometryReuse": false,
+    "phaseOrders": [
+      2
+    ],
+    "presentation": [
+      [
+        2
+      ],
+      [
+        1
+      ]
+    ],
+    "presentationGeneratorCount": 1,
+    "resolutionDimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector",
+    "sheetOrders": [],
+    "spatialDimension": 3,
+    "theory": "U(1)^f insulator",
+    "torsion": [],
+    "uniformIQHIncluded": false,
+    "witnesses": [
+      {
+        "chargeCoordinates": [],
+        "index": 1,
+        "kind": "incoming-charge-gauge",
+        "phaseCoordinates": [
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "chargeKernelLattice": [
+      [
+        1
+      ]
+    ],
+    "chargeObstructionMap": [
+      []
+    ],
+    "chargeObstructionTargetOrders": [],
+    "chargeOrders": [
+      2
+    ],
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [
+        [
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "phase": [
+        [
+          -2
+        ]
+      ],
+      "sheet": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ]
+    },
+    "finalChargeFreeRank": 0,
+    "finalChargeOrders": [
+      2
+    ],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [
+      2
+    ],
+    "finalSheetFreeRank": 1,
+    "finalSheetOrders": [],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192,
+      "geometryEntries": 2,
+      "geometryFlushes": 0,
+      "geometryHits": 2,
+      "requestEntries": 2,
+      "requestFlushes": 0,
+      "requestHits": 2
+    },
+    "formulaWorkerCalls": 2,
+    "freeRank": 1,
+    "gaugeReductionWitnesses": [
+      {
+        "nativeChargeParameter": [
+          -1
+        ],
+        "nativeFinalPhase": [
+          "1/2"
+        ],
+        "nativeSheetParameter": []
+      }
+    ],
+    "generators": [
+      {
+        "kind": "phase",
+        "nativePhase": [
+          "1/2"
+        ]
+      },
+      {
+        "kind": "charge",
+        "nativeCharge": [
+          1
+        ],
+        "nativePhase": [
+          0
+        ]
+      },
+      {
+        "kind": "CI",
+        "nativeCharge": [
+          0
+        ],
+        "nativePhase": [
+          "1/16"
+        ],
+        "nativeSheet": [
+          1
+        ]
+      }
+    ],
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 3,
+    "obstructedSheets": [],
+    "pairedGeometryReuse": false,
+    "phaseOrders": [
+      2
+    ],
+    "presentation": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        -1,
+        2,
+        0
+      ]
+    ],
+    "presentationGeneratorCount": 3,
+    "relativeUniformIQH0": {
+      "construction": "integer elimination of CI columns; kernel of the actual nonzero n0 sheet multiplicity",
+      "finalChargeFreeRank": 0,
+      "finalChargeOrders": [
+        2
+      ],
+      "finalPhaseFreeRank": 0,
+      "finalPhaseOrders": [
+        2
+      ],
+      "freeRank": 0,
+      "generators": [
+        {
+          "kind": "phase",
+          "nativePhase": [
+            "1/2"
+          ]
+        },
+        {
+          "kind": "charge",
+          "nativeCharge": [
+            1
+          ],
+          "nativePhase": [
+            0
+          ]
+        }
+      ],
+      "nativeChainIdentitiesVerified": true,
+      "presentation": [
+        [
+          2,
+          0
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "presentationGeneratorCount": 2,
+      "scope": "relative n0=0 subgroup of the complete uniform-IQH presentation",
+      "spatialDimension": 2,
+      "theory": "U(1)^f insulator",
+      "torsion": [
+        4
+      ],
+      "uniformIQHIncluded": false
+    },
+    "resolutionDimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector",
+    "sheetOrders": [
+      0
+    ],
+    "spatialDimension": 2,
+    "theory": "U(1)^f insulator",
+    "torsion": [
+      4
+    ],
+    "uniformIQHIncluded": true,
+    "witnesses": [
+      {
+        "chargeCohomology": [
+          1
+        ],
+        "kind": "charge-lift",
+        "nativePhase": [
+          0
+        ],
+        "nativeSource": [
+          0
+        ]
+      },
+      {
+        "chargeAdjustment": [
+          0
+        ],
+        "integerObstructionMultiplicity": 1,
+        "kind": "uniform-IQH-lift",
+        "nativePhase": [
+          "1/16"
+        ],
+        "nativeSource": [
+          "1/8"
+        ],
+        "sheetMultiplicity": 1,
+        "terminalObstructionMultiplicity": 1
+      },
+      {
+        "coefficients": [
+          2
+        ],
+        "kind": "charge-root",
+        "phaseCoordinates": [
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "chargeKernelLattice": [
+      [
+        1
+      ]
+    ],
+    "chargeObstructionMap": [
+      []
+    ],
+    "chargeObstructionTargetOrders": [],
+    "chargeOrders": [
+      0
+    ],
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "phase": [],
+      "sheet": []
+    },
+    "finalChargeFreeRank": 1,
+    "finalChargeOrders": [],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [],
+    "finalSheetFreeRank": 0,
+    "finalSheetOrders": [],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192
+    },
+    "formulaWorkerCalls": 0,
+    "freeRank": 1,
+    "gaugeReductionWitnesses": [
+      {
+        "nativeChargeParameter": [
+          0,
+          0,
+          0
+        ],
+        "nativeFinalPhase": [
+          "1/2",
+          0,
+          0,
+          0
+        ],
+        "nativeSheetParameter": []
+      },
+      {
+        "nativeChargeParameter": [
+          0,
+          0,
+          0
+        ],
+        "nativeFinalPhase": [
+          0,
+          0,
+          "1/2",
+          0
+        ],
+        "nativeSheetParameter": []
+      }
+    ],
+    "generators": [
+      {
+        "kind": "charge",
+        "nativeCharge": [
+          -2,
+          4,
+          1,
+          -2
+        ],
+        "nativePhase": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "inputValidation": {
+      "associativityTriples": 8,
+      "groupOrder": 2,
+      "independentCharactersChecked": true,
+      "twistedExtensionTriples": 8
+    },
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 5,
+    "obstructedSheets": [],
+    "pairedGeometryReuse": false,
+    "phaseOrders": [],
+    "presentation": [
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    "presentationGeneratorCount": 1,
+    "resolutionBuildTimings": {
+      "RL_ms": 17,
+      "RP_ms": 3,
+      "extension_ms": 23,
+      "holonomy_ms": 8,
+      "section_ms": 1
+    },
+    "resolutionDimensions": [
+      1,
+      3,
+      4,
+      4,
+      4,
+      4
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector; relative n0=0",
+    "sheetOrders": [],
+    "spatialDimension": 2,
+    "theory": "U(1)^f insulator",
+    "torsion": [],
+    "uniformIQHIncluded": false,
+    "wallpaperFilling": {
+      "allPresentationRelationsHaveZeroFilling": true,
+      "barCycle": "[tx|ty]-[ty|tx]",
+      "chargeRootSubgroupFillingStep": 2,
+      "chargeRootSubgroupGeneratorFillings": [
+        -2
+      ],
+      "ciGeneratorFillings": [],
+      "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+      "fillingStep": 2,
+      "generatorFillings": [
+        -2
+      ],
+      "orientation": "positive determinant in catalog affine coordinates",
+      "primitiveBasisGeneratesFullTranslationKernel": true,
+      "primitiveCellArea": 1,
+      "primitiveTranslationVectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "witnesses": [
+      {
+        "chargeCohomology": [
+          1
+        ],
+        "kind": "charge-lift",
+        "nativePhase": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nativeSource": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "chargeCoordinates": [
+          0
+        ],
+        "index": 1,
+        "kind": "incoming-charge-gauge",
+        "phaseCoordinates": []
+      },
+      {
+        "chargeCoordinates": [
+          0
+        ],
+        "index": 2,
+        "kind": "incoming-charge-gauge",
+        "phaseCoordinates": []
+      }
+    ]
+  },
+  {
+    "chargeKernelLattice": [
+      [
+        1
+      ]
+    ],
+    "chargeObstructionMap": [
+      []
+    ],
+    "chargeObstructionTargetOrders": [],
+    "chargeOrders": [
+      0
+    ],
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "phase": [],
+      "sheet": []
+    },
+    "finalChargeFreeRank": 1,
+    "finalChargeOrders": [],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [],
+    "finalSheetFreeRank": 0,
+    "finalSheetOrders": [],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192
+    },
+    "formulaWorkerCalls": 0,
+    "freeRank": 1,
+    "gaugeReductionWitnesses": [
+      {
+        "nativeChargeParameter": [
+          0,
+          0
+        ],
+        "nativeFinalPhase": [],
+        "nativeSheetParameter": []
+      },
+      {
+        "nativeChargeParameter": [
+          0,
+          0
+        ],
+        "nativeFinalPhase": [],
+        "nativeSheetParameter": []
+      }
+    ],
+    "generators": [
+      {
+        "kind": "charge",
+        "nativeCharge": [
+          1
+        ],
+        "nativePhase": []
+      }
+    ],
+    "inputValidation": {
+      "associativityTriples": 1,
+      "groupOrder": 1,
+      "independentCharactersChecked": true,
+      "twistedExtensionTriples": 1
+    },
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 5,
+    "obstructedSheets": [],
+    "pairedGeometryReuse": false,
+    "phaseOrders": [],
+    "presentation": [
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    "presentationGeneratorCount": 1,
+    "resolutionDimensions": [
+      1,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector; relative n0=0",
+    "sheetOrders": [],
+    "spatialDimension": 2,
+    "theory": "U(1)^f insulator",
+    "torsion": [],
+    "uniformIQHIncluded": false,
+    "wallpaperFilling": {
+      "allPresentationRelationsHaveZeroFilling": true,
+      "barCycle": "[tx|ty]-[ty|tx]",
+      "chargeRootSubgroupFillingStep": 1,
+      "chargeRootSubgroupGeneratorFillings": [
+        1
+      ],
+      "ciGeneratorFillings": [],
+      "convention": "localized integer charge per primitive translation cell; uniform IQH scope recorded separately",
+      "fillingStep": 1,
+      "generatorFillings": [
+        1
+      ],
+      "orientation": "positive determinant in catalog affine coordinates",
+      "primitiveBasisGeneratesFullTranslationKernel": true,
+      "primitiveCellArea": 1,
+      "primitiveTranslationVectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "witnesses": [
+      {
+        "chargeCohomology": [
+          1
+        ],
+        "kind": "charge-lift",
+        "nativePhase": [],
+        "nativeSource": []
+      },
+      {
+        "chargeCoordinates": [
+          0
+        ],
+        "index": 1,
+        "kind": "incoming-charge-gauge",
+        "phaseCoordinates": []
+      },
+      {
+        "chargeCoordinates": [
+          0
+        ],
+        "index": 2,
+        "kind": "incoming-charge-gauge",
+        "phaseCoordinates": []
+      }
+    ]
+  }
+]

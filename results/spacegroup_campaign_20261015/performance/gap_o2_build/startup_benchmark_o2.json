@@ -1,0 +1,8 @@
+{
+  "host": "n08.local",
+  "returncode": 0,
+  "stdout": "\nSTART_CPU_MS 2130 VERSION 4.13.1\nINITIAL_PACKAGES [ \"autpgrp\", \"aclib\", \"alnuth\", \"atlasrep\", \"io\", \"browse\", \n  \"caratinterface\", \"crisp\", \"cryst\", \"crystcat\", \"ctbllib\", \"curlinterface\", \n  \"factint\", \"fga\", \"forms\", \"gapdoc\", \"genss\", \"irredsol\", \"laguna\", \"orb\", \n  \"polenta\", \"polycyclic\", \"primgrp\", \"radiroot\", \"recog\", \"resclasses\", \n  \"smallgrp\", \"sophus\", \"spinsym\", \"standardff\", \"tomlib\", \"transgrp\", \n  \"utils\" ]\n#I  polymake command not found. Please set POLYMAKE_COMMAND by hand\n#I  HAP warning: Set DISPLAY_PATH manually if needed.\n#I  HAP warning: Set BROWSER_PATH manually if needed.\n#I  HAP warning: Set ASY_PATH manually if needed.\nHAP_CPU_MS 1399\nCRYSTCAT_CPU_MS 0\nPACKAGE HAP 1.62\nPACKAGE Cryst 4.1.27\nPACKAGE CrystCat 1.1.10\nPACKAGE Polycyclic 2.16\nARITH_CPU_MS 283 SUM 50000005000000\n",
+  "ldd": "\tlinux-vdso.so.1 (0x00007fff18942000)\n\tlibpthread.so.0 => /lib64/libpthread.so.0 (0x00007f19dcd72000)\n\tlibgmp.so.10 => /home/user/xyren/miniforge3/envs/gap-centos6/lib/libgmp.so.10 (0x00007f19dd106000)\n\tlibz.so.1 => /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/lib/libz.so.1 (0x00007f19dd0eb000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007f19dca74000)\n\tlibdl.so.2 => /lib64/libdl.so.2 (0x00007f19dc870000)\n\tlibutil.so.1 => /lib64/libutil.so.1 (0x00007f19dc66d000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007f19dc2be000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f19dcf8f000)\n",
+  "elapsed_seconds": 4.635770559310913,
+  "stderr": ""
+}

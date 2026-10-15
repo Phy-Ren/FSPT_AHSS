@@ -1,0 +1,44 @@
+#I  HAP warning: Set NEATO_PATH manually if needed.
+#I  HAP warning: Set DOT_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+U1_BUILD holonomy_start cpu_ms=729
+U1_BUILD RP_start order=4 cpu_ms=733
+U1_BUILD RL_start cpu_ms=735
+U1_BUILD section_start cpu_ms=735
+U1_BUILD extension_start cpu_ms=736
+U1_BUILD extension_done timings=rec(
+  RL_ms := 0,
+  RP_ms := 2,
+  extension_ms := 66,
+  holonomy_ms := 4,
+  section_ms := 1 )
+Error, user interrupt in
+  return Objectify( coll![PC_PCP_ELEMENTS_TYPE], elm )
+ ; at /usr/share/gap/pkg/Polycyclic/gap/basic/pcpelms.gi:15 called from 
+  count  self/ms  chld/ms  stor/kb  chld/kb  package  function              
+  12460        1        0      125        0           U1Zero                
+      7        1       10       24     4046           U1Cohomology          
+  23795       19       16     2756     8517           U1ChainToBar          
+      4        0       36        0    15001           U1Solve               
+      1       63        3    20170      708           U1ExtensionResolution 
+      1        5       68     1467    22214           U1ResolutionSpaceGroup
+  24334       83       19    57908     4437           U1CombineChain        
+      1       80       73    13036    23708           U1AffineContext       
+      1        0      153        0    36745           U1CatalogContext      
+  41047      175        0    75969        0           U1BarBoundary         
+ 265142      191       35    22736     7538           U1CoefficientAction   
+  36768       51      237     2542    68444           U1ContractFromBar     
+  35014      345       43    82977     7892           U1ContractCell        
+  17155       16      423     1349   114587           U1NativeContract      
+  46218      163      619    21764   172158           U1ChainFromBar        
+4650647     1547        0   355630        0           U1Key                 
+      1        0     1720        0   619420           U1SolveData           
+4033710     4826        8  1122734        0           U1JSON                
+  97256      201     4832    51445  1122734           U1Worker              
+  97256     1188     9012   208223  2401319           U1FormulaGeometry     
+      2        0    14181        0  3728614           U1ReduceVacuum        
+ 402016    17867     4709  5224273   968659           U1LocalFieldGeometry  
+      5        0    25140        7  6727984           U1CheckCompletedState 
+     45     3291    26225  1147204  7096950           U1Native              
+              18              6304                    OTHER                 
+           30131           8418655                    TOTAL                 

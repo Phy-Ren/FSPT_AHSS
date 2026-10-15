@@ -1,0 +1,167 @@
+MAKE=make CC="gcc " CFLAGS="-O2 -Wno-error=incompatible-pointer-types" /home/user/xyren/software/gap-4.13.1/cnf/build-extern.sh zlib "/home/user/xyren/software/gap-4.13.1/extern/zlib"
+=== START building  ===
+~/software/gap-4.13.1-o2-20261015/extern/build/zlib ~/software/gap-4.13.1-o2-20261015
+   SED     /home/user/xyren/software/gap-4.13.1/src/version.c.in => build/version.c
+sed -e "s;@SYSINFO_GAPROOT@;/home/user/xyren/software/gap-4.13.1-o2-20261015;" < /home/user/xyren/software/gap-4.13.1/cnf/gac.in > gac
+chmod a+x gac
+Checking for shared library support...
+Building shared library libz.so.1.3 with gcc .
+Checking for size_t... Yes.
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+Checking for strerror... Yes.
+Checking for unistd.h... Yes.
+Checking for stdarg.h... Yes.
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+Checking for vsnprintf() in stdio.h... Yes.
+Checking for return value of vsnprintf()... Yes.
+Checking for attribute(visibility) support... Yes.
+~/software/gap-4.13.1-o2-20261015
+make[1]: Entering directory '/home/user/xyren/software/gap-4.13.1-o2-20261015/extern/build/zlib'
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -I/home/user/xyren/software/gap-4.13.1/extern/zlib/ -c -o example.o /home/user/xyren/software/gap-4.13.1/extern/zlib/test/example.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o adler32.o /home/user/xyren/software/gap-4.13.1/extern/zlib/adler32.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o crc32.o /home/user/xyren/software/gap-4.13.1/extern/zlib/crc32.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o deflate.o /home/user/xyren/software/gap-4.13.1/extern/zlib/deflate.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o infback.o /home/user/xyren/software/gap-4.13.1/extern/zlib/infback.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o inffast.o /home/user/xyren/software/gap-4.13.1/extern/zlib/inffast.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o inflate.o /home/user/xyren/software/gap-4.13.1/extern/zlib/inflate.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o inftrees.o /home/user/xyren/software/gap-4.13.1/extern/zlib/inftrees.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o trees.o /home/user/xyren/software/gap-4.13.1/extern/zlib/trees.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o zutil.o /home/user/xyren/software/gap-4.13.1/extern/zlib/zutil.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o compress.o /home/user/xyren/software/gap-4.13.1/extern/zlib/compress.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o uncompr.o /home/user/xyren/software/gap-4.13.1/extern/zlib/uncompr.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o gzclose.o /home/user/xyren/software/gap-4.13.1/extern/zlib/gzclose.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o gzlib.o /home/user/xyren/software/gap-4.13.1/extern/zlib/gzlib.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o gzread.o /home/user/xyren/software/gap-4.13.1/extern/zlib/gzread.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -c -o gzwrite.o /home/user/xyren/software/gap-4.13.1/extern/zlib/gzwrite.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -I/home/user/xyren/software/gap-4.13.1/extern/zlib/ -c -o minigzip.o /home/user/xyren/software/gap-4.13.1/extern/zlib/test/minigzip.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/adler32.o /home/user/xyren/software/gap-4.13.1/extern/zlib/adler32.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/crc32.o /home/user/xyren/software/gap-4.13.1/extern/zlib/crc32.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/deflate.o /home/user/xyren/software/gap-4.13.1/extern/zlib/deflate.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/infback.o /home/user/xyren/software/gap-4.13.1/extern/zlib/infback.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/inffast.o /home/user/xyren/software/gap-4.13.1/extern/zlib/inffast.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/inflate.o /home/user/xyren/software/gap-4.13.1/extern/zlib/inflate.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/inftrees.o /home/user/xyren/software/gap-4.13.1/extern/zlib/inftrees.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/trees.o /home/user/xyren/software/gap-4.13.1/extern/zlib/trees.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/zutil.o /home/user/xyren/software/gap-4.13.1/extern/zlib/zutil.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/compress.o /home/user/xyren/software/gap-4.13.1/extern/zlib/compress.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/uncompr.o /home/user/xyren/software/gap-4.13.1/extern/zlib/uncompr.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/gzclose.o /home/user/xyren/software/gap-4.13.1/extern/zlib/gzclose.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/gzlib.o /home/user/xyren/software/gap-4.13.1/extern/zlib/gzlib.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/gzread.o /home/user/xyren/software/gap-4.13.1/extern/zlib/gzread.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -include zconf.h -DPIC -c -o objs/gzwrite.o /home/user/xyren/software/gap-4.13.1/extern/zlib/gzwrite.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -I/home/user/xyren/software/gap-4.13.1/extern/zlib/ -D_FILE_OFFSET_BITS=64 -c -o example64.o /home/user/xyren/software/gap-4.13.1/extern/zlib/test/example.c
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -I/home/user/xyren/software/gap-4.13.1/extern/zlib/ -D_FILE_OFFSET_BITS=64 -c -o minigzip64.o /home/user/xyren/software/gap-4.13.1/extern/zlib/test/minigzip.c
+ar rc libz.a adler32.o crc32.o deflate.o infback.o inffast.o inflate.o inftrees.o trees.o zutil.o compress.o uncompr.o gzclose.o gzlib.o gzread.o gzwrite.o 
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o example example.o  -L. libz.a
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o minigzip minigzip.o  -L. libz.a
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o minigzip64 minigzip64.o  -L. libz.a
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o example64 example64.o  -L. libz.a
+gcc  -shared -Wl,-soname,libz.so.1,--version-script,/home/user/xyren/software/gap-4.13.1/extern/zlib/zlib.map -O2 -Wno-error=incompatible-pointer-types -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o libz.so.1.3 adler32.lo crc32.lo deflate.lo infback.lo inffast.lo inflate.lo inftrees.lo trees.lo zutil.lo compress.lo uncompr.lo gzclose.lo gzlib.lo gzread.lo gzwrite.lo  -lc 
+rm -f libz.so libz.so.1
+ln -s libz.so.1.3 libz.so
+ln -s libz.so.1.3 libz.so.1
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o examplesh example.o  -L. libz.so.1.3
+gcc  -O2 -Wno-error=incompatible-pointer-types -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o minigzipsh minigzip.o  -L. libz.so.1.3
+make[1]: Leaving directory '/home/user/xyren/software/gap-4.13.1-o2-20261015/extern/build/zlib'
+make[1]: Entering directory '/home/user/xyren/software/gap-4.13.1-o2-20261015/extern/build/zlib'
+rm -f /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/lib/libz.a
+cp libz.a /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/lib
+chmod 644 /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/lib/libz.a
+cp libz.so.1.3 /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/lib
+chmod 755 /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/lib/libz.so.1.3
+rm -f /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/share/man/man3/zlib.3
+cp /home/user/xyren/software/gap-4.13.1/extern/zlib/zlib.3 /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/share/man/man3
+chmod 644 /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/share/man/man3/zlib.3
+rm -f /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/lib/pkgconfig/zlib.pc
+cp zlib.pc /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/lib/pkgconfig
+chmod 644 /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/lib/pkgconfig/zlib.pc
+rm -f /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/include/zlib.h /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/include/zconf.h
+cp /home/user/xyren/software/gap-4.13.1/extern/zlib/zlib.h zconf.h /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/include
+chmod 644 /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/include/zlib.h /home/user/xyren/software/gap-4.13.1-o2-20261015/extern/install/zlib/include/zconf.h
+make[1]: Leaving directory '/home/user/xyren/software/gap-4.13.1-o2-20261015/extern/build/zlib'
+=== DONE building zlib ===
+   C       /home/user/xyren/software/gap-4.13.1/src/bags.c => build/obj/src/bags.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/ariths.c => build/obj/src/ariths.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/bool.c => build/obj/src/bool.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/compiler.c => build/obj/src/compiler.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/blister.c => build/obj/src/blister.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/calls.c => build/obj/src/calls.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/code.c => build/obj/src/code.c.o
+   CXX     /home/user/xyren/software/gap-4.13.1/src/collectors.cc => build/obj/src/collectors.cc.o
+   C       /home/user/xyren/software/gap-4.13.1/src/costab.c => build/obj/src/costab.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/cyclotom.c => build/obj/src/cyclotom.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/debug.c => build/obj/src/debug.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/dt.c => build/obj/src/dt.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/dteval.c => build/obj/src/dteval.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/error.c => build/obj/src/error.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/exprs.c => build/obj/src/exprs.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/finfield.c => build/obj/src/finfield.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/funcs.c => build/obj/src/funcs.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/gap.c => build/obj/src/gap.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/gaptime.c => build/obj/src/gaptime.c.o
+   C       build/version.c => build/obj/build/version.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/gvars.c => build/obj/src/gvars.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/hookintrprtr.c => build/obj/src/hookintrprtr.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/info.c => build/obj/src/info.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/integer.c => build/obj/src/integer.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/intfuncs.c => build/obj/src/intfuncs.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/intrprtr.c => build/obj/src/intrprtr.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/io.c => build/obj/src/io.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/iostream.c => build/obj/src/iostream.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/libgap-api.c => build/obj/src/libgap-api.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/listfunc.c => build/obj/src/listfunc.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/listoper.c => build/obj/src/listoper.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/lists.c => build/obj/src/lists.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/macfloat.c => build/obj/src/macfloat.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/modules_builtin.c => build/obj/src/modules_builtin.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/modules.c => build/obj/src/modules.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/objcftl.c => build/obj/src/objcftl.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/objects.c => build/obj/src/objects.c.o
+   CXX     /home/user/xyren/software/gap-4.13.1/src/objfgelm.cc => build/obj/src/objfgelm.cc.o
+   CXX     /home/user/xyren/software/gap-4.13.1/src/objpcgel.cc => build/obj/src/objpcgel.cc.o
+   C       /home/user/xyren/software/gap-4.13.1/src/objset.c => build/obj/src/objset.c.o
+   CXX     /home/user/xyren/software/gap-4.13.1/src/opers.cc => build/obj/src/opers.cc.o
+   CXX     /home/user/xyren/software/gap-4.13.1/src/permutat.cc => build/obj/src/permutat.cc.o
+   C       /home/user/xyren/software/gap-4.13.1/src/plist.c => build/obj/src/plist.c.o
+   CXX     /home/user/xyren/software/gap-4.13.1/src/pperm.cc => build/obj/src/pperm.cc.o
+   C       /home/user/xyren/software/gap-4.13.1/src/precord.c => build/obj/src/precord.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/profile.c => build/obj/src/profile.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/range.c => build/obj/src/range.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/rational.c => build/obj/src/rational.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/read.c => build/obj/src/read.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/records.c => build/obj/src/records.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/saveload.c => build/obj/src/saveload.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/scanner.c => build/obj/src/scanner.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/sctable.c => build/obj/src/sctable.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/sha256.c => build/obj/src/sha256.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/set.c => build/obj/src/set.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/stats.c => build/obj/src/stats.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/streams.c => build/obj/src/streams.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/stringobj.c => build/obj/src/stringobj.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/symbols.c => build/obj/src/symbols.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/syntaxtree.c => build/obj/src/syntaxtree.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/sysfiles.c => build/obj/src/sysfiles.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/sysroots.c => build/obj/src/sysroots.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/sysstr.c => build/obj/src/sysstr.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/system.c => build/obj/src/system.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/tietze.c => build/obj/src/tietze.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/tracing.c => build/obj/src/tracing.c.o
+   CXX     /home/user/xyren/software/gap-4.13.1/src/trans.cc => build/obj/src/trans.cc.o
+   C       /home/user/xyren/software/gap-4.13.1/src/trycatch.c => build/obj/src/trycatch.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/vars.c => build/obj/src/vars.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/vec8bit.c => build/obj/src/vec8bit.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/vecffe.c => build/obj/src/vecffe.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/vecgf2.c => build/obj/src/vecgf2.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/vector.c => build/obj/src/vector.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/weakptr.c => build/obj/src/weakptr.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/gasman.c => build/obj/src/gasman.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/sysmem.c => build/obj/src/sysmem.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/ffdata.c => build/obj/src/ffdata.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/c_oper1.c => build/obj//home/user/xyren/software/gap-4.13.1/src/c_oper1.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/c_type1.c => build/obj//home/user/xyren/software/gap-4.13.1/src/c_type1.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/compstat.c => build/obj/src/compstat.c.o
+   C       /home/user/xyren/software/gap-4.13.1/src/main.c => build/obj/src/main.c.o
+   LINK    gap
+   LINK    libgap.so.9
+ln -sf libgap.so.9 libgap.so

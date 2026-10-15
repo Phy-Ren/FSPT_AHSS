@@ -1,0 +1,28 @@
+{
+  "pid": 3212,
+  "configureArgs": [
+    "--disable-maintainer-mode",
+    "CFLAGS=-O2 -Wno-error=incompatible-pointer-types",
+    "CXXFLAGS=-g -O2"
+  ],
+  "compiler": "/home/user/xyren/miniforge3/envs/gap-centos6/bin/gcc",
+  "host": "n08.local",
+  "sharedPackagesRebuilt": false,
+  "startedUTC": "2026-10-15T12:01:32Z",
+  "build": "/home/user/xyren/software/gap-4.13.1-o2-20261015",
+  "makeJobs": 8,
+  "source": "/home/user/xyren/software/gap-4.13.1",
+  "executableSHA256": "873e902ee797706160601846c1ad6582c05e0aebd069bdd7efcff3d081f96fea",
+  "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+  "originalSelectedFilesUnchanged": true,
+  "buildExit": 0,
+  "sourceInputsSHA256": "18941be8159a09b7b6e8bcad49c08362fa3db652b36869847f84bfc444d46b01",
+  "compilerVersion": "gcc (conda-forge gcc 15.2.0-18) 15.2.0",
+  "packageVersions": {
+    "GAP": "4.13.1",
+    "HAP": "1.62",
+    "Cryst": "4.1.27",
+    "CrystCat": "1.1.10",
+    "Polycyclic": "2.16"
+  }
+}

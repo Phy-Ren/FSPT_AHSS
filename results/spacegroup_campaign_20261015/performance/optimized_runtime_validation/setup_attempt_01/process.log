@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "run_validation.py", line 125, in <module>
+    sys.exit(main())
+  File "run_validation.py", line 65, in main
+    runner = runpy.run_path(str(source / "scripts/classify.py"))
+  File "/usr/local/lib/python3.5/runpy.py", line 238, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/usr/local/lib/python3.5/runpy.py", line 213, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "/home/user/xyren/AllFSPT_insulator/validations/gap_o2_80d565d_20261015/source/scripts/classify.py", line 6
+    from __future__ import annotations
+SyntaxError: future feature annotations is not defined

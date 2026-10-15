@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "run_validation.py", line 127, in <module>
+    sys.exit(main())
+  File "run_validation.py", line 101, in main
+    "scriptSHA256": digest(Path(__file__)),
+  File "run_validation.py", line 26, in digest
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+  File "/home/apps/anaconda3/lib/python3.8/pathlib.py", line 1229, in read_bytes
+    with self.open(mode='rb') as f:
+  File "/home/apps/anaconda3/lib/python3.8/pathlib.py", line 1222, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/apps/anaconda3/lib/python3.8/pathlib.py", line 1078, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'run_validation.py'

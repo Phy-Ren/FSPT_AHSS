@@ -1,0 +1,33 @@
+{
+  "batchCaseIDs": [
+    "spacegroup_195_spin_half",
+    "spacegroup_195_spinless"
+  ],
+  "batchElapsedSeconds": 1916.563,
+  "batchExitCode": 0,
+  "batchTimeoutSeconds": 28800,
+  "command": [
+    "/home/user/xyren/software/gap-4.13.1/gap",
+    "-q",
+    "-b",
+    "--quitonbreak",
+    "-m",
+    "256m",
+    "-K",
+    "4g",
+    "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-b-n08/spacegroup_195_spin_half/driver.g"
+  ],
+  "elapsedSeconds": 959.674,
+  "exitCode": 0,
+  "host": "n08.local",
+  "id": "spacegroup_195_spinless",
+  "inputSHA256": "96bc95c2f834ea43aec3d510e5e08271a2f6c410e5a2a2d5cfd5fff4a21a7903",
+  "pairedSpins": true,
+  "reusePolicy": "same group/resolution/bar and identical character linear algebra; independent omega/source contexts",
+  "sourceSHA256": "feb47a949a16f7d42609a86a15d9507eec43f72ee81f650d56861de512ace9e9",
+  "startedUTC": "2026-10-15T11:52:26.305367+00:00",
+  "status": "complete",
+  "timeoutEnforcement": "shared batch budget; individual cases are not killed separately",
+  "timeoutSeconds": 14400,
+  "uniformIQHRequested": false
+}

@@ -1,0 +1,165 @@
+{
+  "normalization": "Only omitted versus explicit all-zero sheet-gauge parameters are identified. All final charge/phase vectors and every nonzero parameter agree exactly.",
+  "rows": [
+    {
+      "cacheStats": {
+        "entryLimitPerCache": 8192,
+        "geometryEntries": 4522,
+        "geometryFlushes": 7,
+        "geometryHits": 0,
+        "requestEntries": 923,
+        "requestFlushes": 0,
+        "requestHits": 60943
+      },
+      "candidateBatchElapsedSeconds": 279.97,
+      "candidateElapsedSeconds": 85.57,
+      "candidateHost": "n02.local",
+      "candidatePairedSpins": true,
+      "candidateSHA256": "e5b71fdfa92710e8e75be79f60f8c830975692c4e806758edbc83f9ac38f2350",
+      "candidateSourceSHA256": "63887ca47cf557f30a3a867bac16392b05c8d107a8cdb87ffbd4d47784ccdc88",
+      "exactMatchingFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "id": "spacegroup_019_spin_half",
+      "literalZeroGaugeNormalizations": [
+        {
+          "after": [],
+          "before": [
+            0
+          ],
+          "field": "nativeSheetParameter",
+          "witness": 0
+        },
+        {
+          "after": [],
+          "before": [
+            0
+          ],
+          "field": "nativeSheetParameter",
+          "witness": 1
+        }
+      ],
+      "observedCaseTimeRatio": 12.8984,
+      "primitiveFilling": 4,
+      "referenceElapsedSeconds": 1103.716,
+      "referenceHost": "n02.local",
+      "referenceSHA256": "382fa0952f8c164edf92633b61e1ec522be224990306c19f97eec973c98cfa9c",
+      "referenceSourceSHA256": "9bcd509922633ecf8be5b1861a865337748938348b731b8f8a1287a7994d5c79",
+      "sameHost": true,
+      "status": "exact_match",
+      "workerCalls": 923
+    },
+    {
+      "cacheStats": {
+        "entryLimitPerCache": 8192,
+        "geometryEntries": 4522,
+        "geometryFlushes": 7,
+        "geometryHits": 0,
+        "requestEntries": 1893,
+        "requestFlushes": 0,
+        "requestHits": 59973
+      },
+      "candidateBatchElapsedSeconds": 279.974,
+      "candidateElapsedSeconds": 163.201,
+      "candidateHost": "n02.local",
+      "candidatePairedSpins": true,
+      "candidateSHA256": "308b52b297dd1caa2318281e85a8f8e74e237aabade4041476b659551f00aa11",
+      "candidateSourceSHA256": "63887ca47cf557f30a3a867bac16392b05c8d107a8cdb87ffbd4d47784ccdc88",
+      "exactMatchingFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "id": "spacegroup_019_spinless",
+      "literalZeroGaugeNormalizations": [
+        {
+          "after": [],
+          "before": [
+            0
+          ],
+          "field": "nativeSheetParameter",
+          "witness": 0
+        },
+        {
+          "after": [],
+          "before": [
+            0
+          ],
+          "field": "nativeSheetParameter",
+          "witness": 1
+        }
+      ],
+      "observedCaseTimeRatio": 7.0573,
+      "primitiveFilling": 4,
+      "referenceElapsedSeconds": 1151.751,
+      "referenceHost": "n02.local",
+      "referenceSHA256": "05c9aebd1fb11e63766fc5fb3e5093d5fbc0a4134ba21ffb74116eae6a9564b5",
+      "referenceSourceSHA256": "9bcd509922633ecf8be5b1861a865337748938348b731b8f8a1287a7994d5c79",
+      "sameHost": true,
+      "status": "exact_match",
+      "workerCalls": 1893
+    }
+  ],
+  "status": "both_exact_matches",
+  "timingLimit": "Ratios are reported only when hosts match. The first paired case interval includes shared startup, while the second benefits from context reuse. Complete batch timing additionally includes worker shutdown and process exit. Background load differs from reference A; these are observed campaign timings, not an isolated microbenchmark."
+}

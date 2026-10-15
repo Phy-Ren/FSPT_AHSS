@@ -1,0 +1,33 @@
+{
+  "batchCaseIDs": [
+    "spacegroup_019_spin_half",
+    "spacegroup_019_spinless"
+  ],
+  "batchElapsedSeconds": 50.936,
+  "batchExitCode": 0,
+  "batchTimeoutSeconds": 360,
+  "command": [
+    "gap",
+    "-q",
+    "-b",
+    "--quitonbreak",
+    "-m",
+    "256m",
+    "-K",
+    "2g",
+    "/tmp/u1-sg-profile-rr3drw3x/sg19-paired-h4dh0n42/spacegroup_019_spin_half/driver.g"
+  ],
+  "elapsedSeconds": 28.431,
+  "exitCode": 0,
+  "host": "youran-9950X3D",
+  "id": "spacegroup_019_spinless",
+  "inputSHA256": "06aab1b83217c3ae3abeb350130a91347be45e11a382446375586c275e6d6b9c",
+  "pairedSpins": true,
+  "reusePolicy": "same group/resolution/bar and identical character linear algebra; independent omega/source contexts",
+  "sourceSHA256": "4a92f340295ea04be0194e1802a4af8794a3644642ef270e51afb6b27fbbe9ab",
+  "startedUTC": "2026-10-15T11:45:20.865691+00:00",
+  "status": "complete",
+  "timeoutEnforcement": "shared batch budget; individual cases are not killed separately",
+  "timeoutSeconds": 180,
+  "uniformIQHRequested": false
+}

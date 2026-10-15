@@ -1,0 +1,69 @@
+{
+  "archiveSHA256": "cea5836a0bb9d447c7f99bea66fa3c46c16bef72276f69a7bb417cebcf3edd95",
+  "binary": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+  "binarySHA256": "873e902ee797706160601846c1ad6582c05e0aebd069bdd7efcff3d081f96fea",
+  "command": [
+    "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+    "run_validation.py",
+    "--launcher",
+    "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+    "--binary",
+    "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap"
+  ],
+  "environment": {
+    "LANG": "C",
+    "LC_ALL": "C",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PATH": "/home/user/xyren/AllFSPT_insulator/validations/gap_o2_80d565d_20261015/validation_o2/bin:/home/user/xyren/AllFSPT_insulator/runtime/bin:/home/user/xyren/bin:/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/bio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/bio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gromacs/bin:/opt/bio/gmap/bin:/opt/bio/tigr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/ibutils/bin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/opt/pdsh/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/gridengine/bin/linux-x64",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "expectedTests": 15,
+  "gitCommit": "80d565de744bbd5ef6ac4cca3530511f549547f4",
+  "host": "n08.local",
+  "invocationWorkingDirectory": "/home/user/xyren/AllFSPT_insulator/validations/gap_o2_80d565d_20261015",
+  "launcher": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+  "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+  "loadBefore": [
+    12.73,
+    13.43,
+    13.42
+  ],
+  "modules": [
+    "test_backend",
+    "test_backend_cochains",
+    "test_backend_source_cache",
+    "test_formula_cache",
+    "test_backend_spacegroup",
+    "test_spacegroup"
+  ],
+  "python": "3.8.16",
+  "pythonExecutable": "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+  "runtimeFileCount": 45,
+  "runtimeSourceSHA256": "63887ca47cf557f30a3a867bac16392b05c8d107a8cdb87ffbd4d47784ccdc88",
+  "scriptSHA256": "03abf564ab8ee8a324d4e41d165bc9c4cf05cbdb0e6caa1762d39a72b2e9ae10",
+  "startedUTC": "2026-10-15T12:09:53Z",
+  "testWorkingDirectory": "/home/user/xyren/AllFSPT_insulator/validations/gap_o2_80d565d_20261015/source",
+  "versions": {
+    "architecture": "x86_64-pc-linux-gnu-default64-kv9",
+    "gapVersion": "4.13.1",
+    "packages": {
+      "Cryst": {
+        "path": "/home/user/xyren/software/gap-4.13.1/pkg/cryst/",
+        "version": "4.1.27"
+      },
+      "CrystCat": {
+        "path": "/home/user/xyren/software/gap-4.13.1/pkg/crystcat/",
+        "version": "1.1.10"
+      },
+      "HAP": {
+        "path": "/home/user/xyren/software/gap-4.13.1/pkg/hap/",
+        "version": "1.62"
+      },
+      "Polycyclic": {
+        "path": "/home/user/xyren/software/gap-4.13.1/pkg/polycyclic/",
+        "version": "2.16"
+      }
+    }
+  }
+}

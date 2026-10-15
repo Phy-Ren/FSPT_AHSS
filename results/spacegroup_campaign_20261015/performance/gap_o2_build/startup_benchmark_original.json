@@ -1,0 +1,23 @@
+{
+  "host": "n08.local",
+  "elapsed_seconds": 20.338069438934326,
+  "returncode": 0,
+  "stagesCPUms": {
+    "startup": 10247,
+    "HAP": 5734,
+    "CrystCat": 0,
+    "integerAddition10000000": 3577
+  },
+  "sum": 50000005000000,
+  "GAPVersion": "4.13.1",
+  "HAPVersion": "1.62",
+  "options": [
+    "-q",
+    "-b",
+    "-m",
+    "256m",
+    "-K",
+    "1g"
+  ],
+  "measurement": "Original pre-build run captured in the session tool output; exact reported CPU stage values preserved here."
+}

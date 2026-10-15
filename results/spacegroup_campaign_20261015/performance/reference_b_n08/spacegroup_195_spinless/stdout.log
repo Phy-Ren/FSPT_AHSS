@@ -1,0 +1,17 @@
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+U1_BUILD holonomy_start cpu_ms=17237
+U1_BUILD RP_start order=12 cpu_ms=17332
+U1_BUILD RL_start cpu_ms=17632
+U1_BUILD section_start cpu_ms=17634
+U1_BUILD extension_start cpu_ms=17652
+U1_BUILD extension_done timings=rec(
+  RL_ms := 2,
+  RP_ms := 300,
+  extension_ms := 1317,
+  holonomy_ms := 95,
+  section_ms := 18 )
+U1_PAIR_CASE_DONE spacegroup_195_spin_half
+U1_PAIR_CASE_DONE spacegroup_195_spinless

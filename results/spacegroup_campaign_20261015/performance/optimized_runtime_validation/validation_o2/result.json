@@ -1,0 +1,82 @@
+{
+  "all1610ArchivedFilesUnchanged": true,
+  "backendResultsSHA256": "6ad58b6381e4316d23f9e7b0f2b31eff69f056bceedd3c324fe846a86162d783",
+  "errors": [],
+  "expectedTests": 15,
+  "failures": [],
+  "finishedUTC": "2026-10-15T12:10:37Z",
+  "loadAfter": [
+    13.64,
+    13.57,
+    13.46
+  ],
+  "maxChildRSSKiB": 278688,
+  "metadataSHA256": "5b0fe3598e42b936449856cc39eb138c37cb7e4d98447a3d08dce04e3074ce60",
+  "skipped": [],
+  "status": "PASS",
+  "testLogSHA256": "abd51945f9a514fddc8394dabbc360023bf2631d114cbd375859dc9f549c53d0",
+  "testsRun": 15,
+  "timings": [
+    {
+      "id": "test_backend.BackendTests.test_charge_root_keeps_quarter_phase",
+      "wallSeconds": 0.0003005564212799072
+    },
+    {
+      "id": "test_backend.BackendTests.test_completed_ci_roots",
+      "wallSeconds": 0.00010823458433151245
+    },
+    {
+      "id": "test_backend.BackendTests.test_incoming_quotient_and_integral_obstruction",
+      "wallSeconds": 0.00010349974036216736
+    },
+    {
+      "id": "test_backend.BackendTests.test_nonbinary_roots",
+      "wallSeconds": 7.806345820426941e-05
+    },
+    {
+      "id": "test_backend.BackendTests.test_trivial_relative_insulator",
+      "wallSeconds": 7.486715912818909e-05
+    },
+    {
+      "id": "test_backend.BackendTests.test_uniform_iqh_is_lifted_not_inferred",
+      "wallSeconds": 8.7689608335495e-05
+    },
+    {
+      "id": "test_backend.BackendTests.test_wallpaper_retains_infinite_affine_group",
+      "wallSeconds": 8.974969387054443e-05
+    },
+    {
+      "id": "test_backend_cochains.CochainBackendTests.test_independent_characters_and_negative_integer_gauges",
+      "wallSeconds": 4.580212168395519
+    },
+    {
+      "id": "test_backend_source_cache.SourceCacheTests.test_reused_and_shallow_copied_states_respect_background",
+      "wallSeconds": 4.517105165868998
+    },
+    {
+      "id": "test_formula_cache.FormulaCacheTests.test_context_isolation_transport_and_literal_zero",
+      "wallSeconds": 4.714526534080505
+    },
+    {
+      "id": "test_backend_spacegroup.AffineBackendTests.test_free_kernel_keeps_multiples_and_combinations_modulo_charge_image",
+      "wallSeconds": 4.598518345504999
+    },
+    {
+      "id": "test_backend_spacegroup.AffineBackendTests.test_p1_pair_matches_independent_full_affine_runs_and_primitive_filling",
+      "wallSeconds": 12.895771104842424
+    },
+    {
+      "id": "test_spacegroup.SpaceGroupNeutralExtension.test_elementary_affine_h1_and_screw_periods",
+      "wallSeconds": 0.6633393503725529
+    },
+    {
+      "id": "test_spacegroup.SpaceGroupNeutralExtension.test_free_and_torsion_full_model_presentation",
+      "wallSeconds": 0.013366498053073883
+    },
+    {
+      "id": "test_spacegroup.SpaceGroupNeutralExtension.test_rejects_holonomy_substitution_and_corrupt_affine_words",
+      "wallSeconds": 0.02405039221048355
+    }
+  ],
+  "wallSeconds": 41.69998558610678
+}

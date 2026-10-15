@@ -1,0 +1,68 @@
+#I  HAP warning: Set NEATO_PATH manually if needed.
+#I  HAP warning: Set DOT_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+Syntax warning: Unbound global variable in /tmp/u1-sg-profile-rr3drw3x/profile\
+.g:6
+OnBreak:=function() DisplayProfile(10000,10);Print("CACHE_COUNTS ",c.requestCa\
+cheHits," ",c.workerCalls," ",c.formulaGeometryHits," ",c.formulaGeometryCount\
+,"\n");QUIT_GAP(0);end;;
+                                                                   ^
+Syntax warning: Unbound global variable in /tmp/u1-sg-profile-rr3drw3x/profile\
+.g:6
+OnBreak:=function() DisplayProfile(10000,10);Print("CACHE_COUNTS ",c.requestCa\
+cheHits," ",c.workerCalls," ",c.formulaGeometryHits," ",c.formulaGeometryCount\
+,"\n");QUIT_GAP(0);end;;
+                                                                              \
+            ^
+Syntax warning: Unbound global variable in /tmp/u1-sg-profile-rr3drw3x/profile\
+.g:6
+OnBreak:=function() DisplayProfile(10000,10);Print("CACHE_COUNTS ",c.requestCa\
+cheHits," ",c.workerCalls," ",c.formulaGeometryHits," ",c.formulaGeometryCount\
+,"\n");QUIT_GAP(0);end;;
+                                                                              \
+                              ^
+Syntax warning: Unbound global variable in /tmp/u1-sg-profile-rr3drw3x/profile\
+.g:6
+OnBreak:=function() DisplayProfile(10000,10);Print("CACHE_COUNTS ",c.requestCa\
+cheHits," ",c.workerCalls," ",c.formulaGeometryHits," ",c.formulaGeometryCount\
+,"\n");QUIT_GAP(0);end;;
+                                                                              \
+                                                        ^
+U1_BUILD holonomy_start cpu_ms=724
+U1_BUILD RP_start order=4 cpu_ms=728
+U1_BUILD RL_start cpu_ms=730
+U1_BUILD section_start cpu_ms=730
+U1_BUILD extension_start cpu_ms=731
+U1_BUILD extension_done timings=rec(
+  RL_ms := 0,
+  RP_ms := 2,
+  extension_ms := 65,
+  holonomy_ms := 4,
+  section_ms := 1 )
+  count  self/ms  chld/ms  stor/kb  chld/kb  package  function              
+     11        0       10        1     3617           U1DifferentialSmith   
+      8        0       11       24     4058           U1Cohomology          
+  35144       20       15     2756     8517           U1ChainToBar          
+      1       62        3    20170      708           U1ExtensionResolution 
+      1        5       67     1467    22214           U1ResolutionSpaceGroup
+  24334       88       14    57908     4437           U1CombineChain        
+      1       79       73    13021    23708           U1AffineContext       
+      1        0      152        0    36729           U1CatalogContext      
+  36768       39      244     2542    68444           U1ContractFromBar     
+  35014      330       24    82977     7892           U1ContractCell        
+  17155       10      398     1349   114587           U1NativeContract      
+ 107780      468        3   221454        0           U1BarBoundary         
+ 695913      421      105    54048    13153           U1CoefficientAction   
+  53366      185      554    22089   172673           U1ChainFromBar        
+3918368     1362       26   432364        0           U1Key                 
+      1        0     1702        0   619420           U1SolveData           
+2630944     2754        0   759045        0           U1JSON                
+  61866      188     2747    31229   758923           U1Worker              
+  61866      717     3155   156406   958431           U1FormulaGeometry     
+ 309330     3931      381  1182583    68784           U1LocalFieldGeometry  
+      3        0     9828        0  3098995           U1ReduceVacuum        
+      7        0    19150        9  6060114           U1CheckCompletedState 
+     54    12753    10513  4495257  3006644           U1Native              
+      2        2    23278       14  7506368           U1Classify            
+              19              6510                    OTHER                 
+           23433           7543234                    TOTAL                 
