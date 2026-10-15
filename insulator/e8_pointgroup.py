@@ -184,7 +184,7 @@ def presentation_invariants(rows: list[list[int]], columns: int) -> dict:
             "freeRank": columns - len(diagonal), "smithNonzeroDiagonal": diagonal}
 
 
-def extend_classification(result: dict) -> dict:
+def _extend_classification(result: dict, neutral_computation) -> dict:
     """Extend one completed CI result without certifying a physical identification."""
     data, ci, run = result["input"], result["classification"], result["run"]
     if run.get("status") != "complete" or run.get("exitCode") != 0:
@@ -207,7 +207,7 @@ def extend_classification(result: dict) -> dict:
     ci_smith = presentation_invariants(ci.get("presentation"), count)
     if ci_smith["torsion"] != ci.get("torsion") or ci_smith["freeRank"] != ci.get("freeRank"):
         raise ValueError("The CI advertised group disagrees with its actual relation presentation.")
-    neutral = finite_pointgroup_h1(data)
+    neutral = neutral_computation(data)
     offset = neutral["generatorCount"]
     rows = [row + [0] * count for row in neutral["presentation"]]
     rows += [[0] * offset + row for row in ci["presentation"]]
@@ -216,6 +216,13 @@ def extend_classification(result: dict) -> dict:
         {"kind": "embedded-CI-root", "ciGeneratorIndex": j,
          "combinedGeneratorIndex": offset + j, "e1": 0,
          "completedCIRoot": deepcopy(generator)} for j, generator in enumerate(ci["generators"])]
+    if "principalGaugeRelation" in neutral:
+        neutral_witnesses = [{"kind": "neutral-principal-gauge", **deepcopy(neutral["principalGaugeRelation"])}]
+        if neutral.get("torsionRootWitness") is not None:
+            neutral_witnesses.append({"kind": "neutral-torsion-root", **deepcopy(neutral["torsionRootWitness"])})
+    else:
+        neutral_witnesses = [{**deepcopy(root), "kind": "neutral-root-power", "neutralRootIndex": j}
+                             for j, root in enumerate(neutral["roots"])]
     return {
         "theory": "U(1)^f insulator", "spatialDimension": 3,
         "orderedFields": ["e_1", "n_1", "n_3", "nu_4"],
@@ -233,8 +240,7 @@ def extend_classification(result: dict) -> dict:
         "coordinateBlocks": {"neutralE8": {"start": 0, "count": offset},
                              "ciSector": {"start": offset, "count": count},
                              "indexConvention": "zero_based"},
-        "witnesses": [{**deepcopy(root), "kind": "neutral-root-power", "neutralRootIndex": j}
-                      for j, root in enumerate(neutral["roots"])] + [
+        "witnesses": neutral_witnesses + [
             {"kind": "CI-witness-embedding", "ciGeneratorOffset": offset,
              "location": "classification.ciSector.witnesses",
              "rule": "Keep each CI coordinate and prepend zero neutral coordinates."}],
@@ -249,3 +255,8 @@ def extend_classification(result: dict) -> dict:
             "inputValue": ci.get("neutralE8AbsentByCohomology"),
             "usedAsPhysicalCertificate": False},
     }
+
+
+def extend_classification(result: dict) -> dict:
+    """Extend a finite point-group result in the selected neutral section."""
+    return _extend_classification(result, finite_pointgroup_h1)

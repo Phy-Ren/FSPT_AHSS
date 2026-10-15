@@ -66,6 +66,8 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
     driver = directory / "driver.g"
     driver.write_text(
         "U1_ROOT:=" + gap_literal(str(ROOT)) + ";;\n"
+        + ("U1_USE_KOSZUL:=true;;\n" if data["family"] == "spacegroup" else "")
+        +
         "Read(Concatenation(U1_ROOT,\"/gap/load.g\"));;\n"
         "U1_INPUT:=" + gap_literal(data) + ";;\n"
         "c:=U1CatalogContext(U1_INPUT,6);;\n"
@@ -74,7 +76,7 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
         "output:=OutputTextFile(" + gap_literal(str(native)) + ",false);;\n"
         "SetPrintFormattingStatus(output,false);;\n"
         "PrintTo(output,U1JSON(result),\"\\n\");;\n"
-        "CloseStream(output);;\nQUIT;\n"
+        "CloseStream(output);;\nif IsBound(c.worker) then CloseStream(c.worker);fi;\nQUIT;\n"
     )
     command = [gap, "-q", "-b", "--quitonbreak", "-m", "256m", "-K", memory, str(driver)]
     start = time.monotonic()
@@ -115,14 +117,107 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
     return metadata
 
 
+def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh=False):
+    """One GAP process, separate immutable outputs and independent omega contexts."""
+    if len(input_paths) == 1:
+        return [run_case(input_paths[0], output, gap, timeout, memory, source, uniform_iqh)]
+    if len(input_paths) != 2:
+        raise ValueError("A paired run requires the two physical spins of one geometry")
+    inputs = [json.loads(path.read_text()) for path in input_paths]
+    if len({(data["family"], data["index"], data["dimension"]) for data in inputs}) != 1 or {
+            data["spin"] for data in inputs} != {"spinless", "spin_half"}:
+        raise ValueError("Paired inputs must have the same geometry and distinct physical spins")
+    directories = [output / data["id"] for data in inputs]
+    for directory, path in zip(directories, input_paths):
+        directory.mkdir()
+        shutil.copyfile(path, directory / "input.json")
+    text = "U1_ROOT:=" + gap_literal(str(ROOT)) + ";;\n"
+    if inputs[0]["family"] == "spacegroup":
+        text += "U1_USE_KOSZUL:=true;;\n"
+    text += 'Read(Concatenation(U1_ROOT,"/gap/load.g"));;\n'
+    for i, (data, directory) in enumerate(zip(inputs, directories)):
+        text += "U1_INPUT:=" + gap_literal(data) + ";;\n"
+        if i == 0:
+            text += "c:=U1CatalogContext(U1_INPUT,6);;\n"
+        else:
+            text += "if IsBound(c.classificationStates) then Unbind(c.classificationStates);fi;\n"
+            text += "c:=U1SiblingContext(c,U1_INPUT);;\n"
+        text += "result:=U1Classify(c,U1_INPUT.dimension,rec(uniformIQH:=" + gap_literal(uniform_iqh) + "));;\n"
+        text += "output:=OutputTextFile(" + gap_literal(str(directory / "native.json")) + ",false);;\n"
+        text += "SetPrintFormattingStatus(output,false);;\nPrintTo(output,U1JSON(result),\"\\n\");;\nCloseStream(output);;\n"
+        text += 'Print("U1_PAIR_CASE_DONE ",U1_INPUT.id,"\\n");;\n'
+    text += "if IsBound(c.worker) then CloseStream(c.worker);fi;\nQUIT;\n"
+    for directory in directories:
+        (directory / "driver.g").write_text(text)
+    command = [gap, "-q", "-b", "--quitonbreak", "-m", "256m", "-K", memory,
+               str(directories[0] / "driver.g")]
+    started = time.time()
+    metadata = []
+    for data, path, directory in zip(inputs, input_paths, directories):
+        row = {"id": data["id"], "status": "running", "command": command,
+               "host": platform.node(), "startedUTC": datetime.fromtimestamp(started, timezone.utc).isoformat(),
+               "inputSHA256": digest(path), "sourceSHA256": source["sha256"],
+               "timeoutSeconds": timeout, "batchTimeoutSeconds": timeout * len(inputs),
+               "timeoutEnforcement": "shared batch budget; individual cases are not killed separately",
+               "uniformIQHRequested": uniform_iqh,
+               "pairedSpins": True, "batchCaseIDs": [item["id"] for item in inputs],
+               "reusePolicy": "same group/resolution/bar and identical character linear algebra; independent omega/source contexts"}
+        write_json(directory / "run.json", row)
+        metadata.append(row)
+    timed_out = False
+    with (directories[0] / "stdout.log").open("w") as out, (directories[0] / "stderr.log").open("w") as err:
+        process = subprocess.Popen(command, cwd=ROOT, stdout=out, stderr=err, start_new_session=True)
+        try:
+            code = process.wait(timeout=timeout * len(inputs))
+        except subprocess.TimeoutExpired:
+            timed_out = True
+            os.killpg(process.pid, signal.SIGTERM)
+            try:
+                process.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                os.killpg(process.pid, signal.SIGKILL)
+                process.wait()
+            code = process.returncode
+    for directory in directories[1:]:
+        for name in ("stdout.log", "stderr.log"):
+            shutil.copyfile(directories[0] / name, directory / name)
+    previous_completion = started
+    for data, directory, row in zip(inputs, directories, metadata):
+        native = directory / "native.json"
+        row.update(status="timeout" if timed_out else "failed", exitCode=code,
+                   batchExitCode=code, batchElapsedSeconds=round(time.time() - started, 3))
+        if native.is_file():
+            try:
+                classification = json.loads(native.read_text())
+                required = {"torsion", "freeRank", "presentation", "witnesses", "scope"}
+                if not required <= classification.keys():
+                    raise ValueError("Incomplete paired classification result")
+                completed = native.stat().st_mtime
+                row.update(status="complete", exitCode=0,
+                           startedUTC=datetime.fromtimestamp(previous_completion, timezone.utc).isoformat(),
+                           elapsedSeconds=round(completed - previous_completion, 3))
+                previous_completion = completed
+                write_json(directory / "result.json", {"input": data, "classification": classification, "run": row})
+            except (ValueError, TypeError) as error:
+                row["error"] = str(error)
+        if "elapsedSeconds" not in row:
+            row["elapsedSeconds"] = round(time.time() - previous_completion, 3)
+        write_json(directory / "run.json", row)
+    return metadata
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--family", choices=("point2", "wallpaper", "point3"))
+    parser.add_argument("--family", choices=("point2", "wallpaper", "point3", "spacegroup"))
     parser.add_argument("--case", action="append", help="Catalog ID; repeat to select cases")
     parser.add_argument("--spin", choices=("spinless", "spin_half"))
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--gap", default=os.environ.get("GAP", "gap"))
     parser.add_argument("--jobs", type=int, default=1)
+    parser.add_argument("--pair-spins", action="store_true",
+                        help="Reuse exact geometry/linear algebra in one process for the two physical spins")
+    parser.add_argument("--largest-first", action="store_true",
+                        help="Schedule larger finite holonomy orders first to reduce the campaign tail")
     parser.add_argument("--timeout", type=int, default=7200)
     parser.add_argument("--memory", default="8g", help="GAP workspace limit per process")
     parser.add_argument("--uniform-iqh", action="store_true",
@@ -148,6 +243,8 @@ def main():
         inputs.append(path)
     if not inputs or args.case and set(args.case) != {p.stem for p in inputs}:
         parser.error("Selection includes missing or incompatible catalog cases")
+    if args.largest_first:
+        inputs.sort(key=lambda path: (-len(json.loads(path.read_text())["multiplication"]), path.stem))
     args.output = args.output.resolve()
     args.output.mkdir(parents=True, exist_ok=False)
     source = source_manifest()
@@ -155,12 +252,23 @@ def main():
     write_json(args.output / "selection.json", [p.stem for p in inputs])
     rows = []
     with ThreadPoolExecutor(max_workers=args.jobs) as pool:
-        tasks = [pool.submit(run_case, p, args.output, args.gap, args.timeout,
-                             args.memory, source, args.uniform_iqh) for p in inputs]
+        if args.pair_spins:
+            pairs = {}
+            for path in inputs:
+                data = json.loads(path.read_text())
+                pairs.setdefault((data["family"], data["index"]), []).append(path)
+            tasks = [pool.submit(run_spin_pair, paths, args.output, args.gap, args.timeout,
+                                 args.memory, source, args.uniform_iqh) for paths in pairs.values()]
+        else:
+            tasks = [pool.submit(run_case, p, args.output, args.gap, args.timeout,
+                                 args.memory, source, args.uniform_iqh) for p in inputs]
         for task in as_completed(tasks):
-            row = task.result()
-            rows.append(row)
-            print(row["id"], row["status"], row["elapsedSeconds"], flush=True)
+            completed = task.result()
+            if isinstance(completed, dict):
+                completed = [completed]
+            rows.extend(completed)
+            for row in completed:
+                print(row["id"], row["status"], row["elapsedSeconds"], flush=True)
             write_json(args.output / "summary.json", sorted(rows, key=lambda r: r["id"]))
     if source_manifest() != source:
         raise RuntimeError("Source changed during campaign; results cannot be accepted")

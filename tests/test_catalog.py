@@ -14,8 +14,10 @@ class CatalogTests(unittest.TestCase):
     def test_catalog_coverage_and_background_cocycles(self):
         paths = list(GENERATED.glob("*.json"))
         records = [json.loads(path.read_text()) for path in paths if ".index." not in path.name]
-        self.assertEqual(len(records), 118)
+        self.assertEqual(len(records), 578)
+        self.assertEqual(sum(r["family"] == "spacegroup" for r in records), 460)
         self.assertEqual((len(POINT2), len(WALLPAPER), len(POINT3)), (10, 17, 32))
+        checked_tables = set()
         for r in records:
             with self.subTest(group=r["id"]):
                 n, table = r["order"], r["multiplication"]
@@ -27,15 +29,23 @@ class CatalogTests(unittest.TestCase):
                 self.assertTrue(all(0 in row for row in table))
                 self.assertEqual(pin[0], [0] * n)
                 self.assertEqual([row[0] for row in pin], [0] * n)
-                # Full triple exhaustion, including cubic groups of order 48.
-                for i, j, k in product(range(n), repeat=3):
-                    self.assertEqual(table[table[i][j]][k], table[i][table[j][k]])
-                    self.assertEqual((pin[j][k] - pin[table[i][j]][k]
-                                      + pin[i][table[j][k]] - pin[i][j]) % 2, 0)
+                # Exhaust each distinct exact holonomy/cocycle table once; many
+                # space groups and both spins share the same geometric table.
+                key = (tuple(map(tuple, table)), tuple(map(tuple, pin)))
+                if key not in checked_tables:
+                    for i, j, k in product(range(n), repeat=3):
+                        self.assertEqual(table[table[i][j]][k], table[i][table[j][k]])
+                        self.assertEqual((pin[j][k] - pin[table[i][j]][k]
+                                          + pin[i][table[j][k]] - pin[i][j]) % 2, 0)
+                    checked_tables.add(key)
                 for i, j in product(range(n), repeat=2):
                     self.assertEqual(r["s"][table[i][j]], (r["s"][i] + r["s"][j]) % 2)
                     self.assertEqual(Fraction(r["omega"][i][j]),
                                      Fraction(pin[i][j], 2) if r["spin"] == "spinless" else 0)
+                if r["family"] == "spacegroup":
+                    self.assertEqual(r["translation_rank"], 3)
+                    self.assertEqual(r["group_order"], "infinite")
+                    self.assertTrue(r["finite_presentation"]["isomorphism_verified"])
 
     def test_known_spin_lifts_and_physical_spin_cancellation(self):
         # A mirror and a pi rotation lift to square -1, while inversion lifts

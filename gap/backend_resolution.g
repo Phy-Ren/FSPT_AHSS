@@ -166,7 +166,10 @@ BindGlobal("U1ResolutionSpaceGroup",function(iso,depth)
   if not IsAlmostCrystallographic(G) then Error("affine group expected"); fi;
   h:=NaturalHomomorphismOnHolonomyGroup(G); P:=Image(h); L:=Kernel(h);
   Print("U1_BUILD RP_start order=",Size(P)," cpu_ms=",Runtime(),"\n");
-  if Size(P)=1 then return ResolutionNilpotentGroup(G,depth); fi;
+  if Size(P)=1 then
+    if IsBound(U1_USE_KOSZUL) and U1_USE_KOSZUL then return U1LatticeResolution(G,depth);fi;
+    return ResolutionNilpotentGroup(G,depth);
+  fi;
   timing.holonomy_ms:=Runtime()-t; t:=Runtime();
   RP:=U1FiniteHolonomyResolution(P,depth); timing.RP_ms:=Runtime()-t; t:=Runtime();
   Print("U1_BUILD RL_start cpu_ms=",Runtime(),"\n");

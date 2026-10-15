@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extend completed finite 3+1D CI point-group runs by the selected E8 section.
+"""Extend completed 3+1D CI point/space-group runs by the selected E8 section.
 
 The output is a separate immutable campaign. It computes signed integer H1
 and a combined relation presentation, and never reads literature tables.
@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from insulator.e8_pointgroup import MODEL, PHYSICAL_CAVEAT, extend_classification
+from insulator.e8_spacegroup import extend_spacegroup_classification
 
 
 def digest(path: Path) -> str:
@@ -32,7 +33,7 @@ def write_json(path: Path, value) -> None:
 def source_manifest() -> dict:
     import sympy
 
-    files = ["insulator/e8_pointgroup.py", "insulator/e8_h1.py",
+    files = ["insulator/e8_pointgroup.py", "insulator/e8_h1.py", "insulator/e8_spacegroup.py",
              "scripts/extend_e8_3p1.py", "docs/e8/3p1.md"]
     hashes = {name: digest(ROOT / name) for name in files}
     encoded = json.dumps(hashes, sort_keys=True, separators=(",", ":")).encode()
@@ -44,7 +45,10 @@ def source_manifest() -> dict:
 def extend_run(path: Path, output: Path, source: dict) -> dict:
     raw = path.read_bytes()
     result = json.loads(raw)
-    classification = extend_classification(result)
+    if result.get("input", {}).get("family") == "spacegroup":
+        classification = extend_spacegroup_classification(result)
+    else:
+        classification = extend_classification(result)
     case = result["input"]["id"]
     if not isinstance(case, str) or Path(case).name != case or case in ("", ".", ".."):
         raise ValueError("Invalid case identifier.")

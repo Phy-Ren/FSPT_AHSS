@@ -9,6 +9,7 @@ from functools import lru_cache
 from itertools import product
 from pathlib import Path
 import ast
+import hashlib
 import json
 import re
 import sympy as sp
@@ -174,9 +175,14 @@ def crystalline_background(matrices, spin):
 
 def build_group(family, index, spin="spinless"):
     """Return one JSON-serializable input; all multiplication indices are zero based."""
-    counts = {"point2": 10, "point3": 32, "wallpaper": 17}
+    counts = {"point2": 10, "point3": 32, "wallpaper": 17, "spacegroup": 230}
     if family not in counts or not 1 <= index <= counts[family]:
         raise ValueError("family or one-based catalog index out of range")
+    if family == "spacegroup":
+        record = dict(_spacegroup_geometry(index))
+        record.update(id=f"spacegroup_{index:03d}_{spin}", spin=spin)
+        record.update(crystalline_background(record["matrices"], spin))
+        return record
     planar = _read_geometry("wallpaper_gap_export.txt")
     if family == "point2":
         hm, name, representative, order = POINT2[index - 1]
@@ -220,8 +226,50 @@ def build_group(family, index, spin="spinless"):
     return record
 
 
+@lru_cache(maxsize=1)
+def _spacegroup_export():
+    path = SOURCE / "spacegroup_gap_export.json"
+    data = json.loads(path.read_text())
+    return data, hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+@lru_cache(maxsize=230)
+def _spacegroup_geometry(index):
+    data, digest = _spacegroup_export()
+    raw = data["records"][index - 1]
+    if raw["number"] != index or not raw["presentationIsomorphismVerified"]:
+        raise ValueError("Space-group geometry export is inconsistent")
+    elements = _closure([_matrix(m) for m in raw["pointMatrices"]], 3)
+    positions = {m: i for i, m in enumerate(elements)}
+    fp_matrices = [_matrix(m) for m in raw["presentationGeneratorMatrices"]]
+    generator_point_indices = [positions[sp.ImmutableMatrix(m[:3, :3])] for m in fp_matrices]
+    return {"family": "spacegroup", "index": index, "name": raw["name"],
+            "hermann_mauguin": raw["name"], "dimension": 3,
+            "identity_index": 0, "order": len(elements),
+            "group_order": "infinite", "holonomy_order": len(elements),
+            "matrices": [_entries(m) for m in elements],
+            "multiplication": [[positions[g * h] for h in elements] for g in elements],
+            "translation_subgroup_present": True, "translation_rank": 3,
+            "input_scope": "geometry_and_background_only",
+            "catalog_number": index, "catalog_constructor": "SpaceGroupBBNWZ(3,index)",
+            "affine_generators": raw["affineGenerators"],
+            "affine_matrix_convention": "row_vectors_translation_in_last_row",
+            "point_table_scope": "finite_holonomy_only_use_full_affine_group_for_cohomology",
+            "finite_presentation": {"generator_affine_matrices": raw["presentationGeneratorMatrices"],
+                                    "generator_point_indices": generator_point_indices,
+                                    "relators": raw["presentationRelators"],
+                                    "provenance": "GAP IsomorphismFpGroup of the full affine Pcp group",
+                                    "isomorphism_verified": True},
+            "primitive_translations": {"affine_matrices": raw["translationGeneratorMatrices"],
+                                       "words": raw["translationGeneratorWords"],
+                                       "basis_of_full_translation_kernel": True},
+            "geometry_export": {"sha256": digest, "GAP": data["GAP"],
+                                "CrystCat": data["CrystCat"], "Polycyclic": data["Polycyclic"],
+                                "crystcat_parameters": raw["crystcatParameters"]}}
+
+
 def catalog(family=None, spins=("spinless", "spin_half")):
-    families = {"point2": 10, "wallpaper": 17, "point3": 32}
+    families = {"point2": 10, "wallpaper": 17, "point3": 32, "spacegroup": 230}
     if family is not None:
         families = {family: families[family]}
     return [build_group(kind, i, spin) for kind, count in families.items()

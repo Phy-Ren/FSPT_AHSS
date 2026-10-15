@@ -157,15 +157,87 @@ BindGlobal("U1Filtration",function(relations,total,start,count)
     freeRank:=count-T.rank,presentation:=rels);
 end);
 
+# Complete the entire signed H1 lattice for a rank-three affine group. Both
+# obstruction targets are finite because their degrees exceed vcd=3. The
+# terminal map is additive only after quotienting by the charge-source image;
+# its actual lift uses full stacking, including the nonlinear charge twister.
+BindGlobal("U1AffineSheetLattice",function(c,HQ,HO,chargeBasis,sourceMap)
+  local HC,HI,basis,integerMap,K3,seeds,v,a,q,terminalMap,quotient,inds,
+    quotientOrders,projected,K4,K,Ki,states,orders,relations,witnesses,co,
+    adjustment,phase,residual,i,j,order,relation;
+  HC:=U1Cohomology(c,1,"Zs");HI:=U1Cohomology(c,4,"Zr");
+  if ForAny(HI.orders,x->x<=0) or ForAny(HO.orders,x->x<=0) then
+    Error("Affine sheet obstruction targets must be finite above vcd=3");fi;
+  basis:=List(HC.generators,x->U1Bar(c,1,"Zs",x));
+  integerMap:=List(basis,n->HI.coordinates(U1Native(c,4,"Zr",U1IntegerSource(c,3,n))));
+  if fail in integerMap then Error("CI integer obstruction is not closed");fi;
+  K3:=U1MapKernel(integerMap,HI.orders,Length(basis));seeds:=[];
+  for v in K3 do
+    a:=rec(sheet:=U1CochainCombination(basis,v),charge:=U1Zero,phase:=U1Zero);
+    q:=U1Solve(c,4,"Zr",U1IntegerSource(c,3,a.sheet));
+    if q=fail then Error("Affine integer sheet kernel did not lift");fi;
+    a.charge:=q;Add(seeds,a);
+  od;
+  terminalMap:=List(seeds,a->HO.coordinates(U1Native(c,5,"U1s",U1Source(c,3,a))));
+  if fail in terminalMap then Error("Affine CI terminal source is not closed");fi;
+  if HO.orders=[] then quotientOrders:=[];projected:=List(seeds,a->[]);
+  else
+    quotient:=U1Smith(Concatenation(DiagonalMat(HO.orders),sourceMap),Length(HO.orders)+Length(sourceMap),Length(HO.orders));
+    if quotient.rank<>Length(HO.orders) then Error("Terminal quotient unexpectedly has a free part");fi;
+    inds:=Filtered([1..quotient.rank],i->AbsInt(quotient.diag[i])>1);
+    quotientOrders:=List(inds,i->AbsInt(quotient.diag[i]));
+    projected:=List(terminalMap,row->(row*quotient.V){inds});
+  fi;
+  K4:=U1MapKernel(projected,quotientOrders,Length(seeds));
+  if K3=[] then K:=[];Ki:=[];else K:=K4*K3;Ki:=Inverse(K);fi;
+  states:=[];orders:=[];witnesses:=[];
+  for i in [1..Length(K4)] do
+    a:=U1Combination(c,3,seeds,K4[i]);
+    co:=HO.coordinates(U1Native(c,5,"U1s",U1Source(c,3,a)));
+    if co=fail then Error("Stacked affine CI source is not closed");fi;
+    adjustment:=U1MapPreimage(sourceMap,HO.orders,Length(chargeBasis),-co);
+    if adjustment=fail then Error("Affine terminal quotient kernel did not admit a charge adjustment");fi;
+    a.charge:=U1Add(a.charge,U1CochainCombination(chargeBasis,adjustment));
+    residual:=U1Add(U1Source(c,3,a),U1Scale(-1,U1Coboundary(c,"U1s",a.phase)));
+    phase:=U1SolveData(c,5,"U1s",residual);
+    if phase=fail then Error("Affine terminal kernel did not admit a phase completion");fi;
+    a.phase:=U1Add(a.phase,phase.primitive);U1CheckCompletedState(c,3,a);Add(states,a);
+    order:=1;
+    for j in [1..Length(HC.orders)] do
+      if K[i][j]<>0 then
+        if HC.orders[j]=0 then order:=0;break;fi;
+        order:=Lcm(order,HC.orders[j]/Gcd(HC.orders[j],K[i][j]));
+      fi;
+    od;
+    Add(orders,order);
+    Add(witnesses,rec(kind:="affine-CI-lift",sheetCoordinates:=K[i],integerKernelCoordinates:=K4[i],
+      chargeAdjustment:=adjustment,nativeResidualSource:=phase.nativeObstruction,nativePhaseCorrection:=phase.nativePrimitive));
+  od;
+  relations:=[];
+  for i in [1..Length(HC.orders)] do
+    if HC.orders[i]=0 then continue;fi;
+    relation:=List(HC.orders,x->0);relation[i]:=HC.orders[i];relation:=relation*Ki;
+    if not ForAll(relation,IsInt) then Error("A sheet torsion relation left the full obstruction kernel");fi;
+    Add(relations,relation);
+  od;
+  return rec(states:=states,orders:=orders,relations:=relations,witnesses:=witnesses,
+    certificate:=rec(rawH1Orders:=HC.orders,integerObstructionTargetOrders:=HI.orders,
+      integerObstructionMap:=integerMap,integerKernelLattice:=K3,
+      terminalObstructionMap:=terminalMap,terminalQuotientOrders:=quotientOrders,
+      terminalQuotientMap:=projected,terminalKernelLattice:=K4,
+      finalSheetLattice:=K,originalTorsionRelationCoordinates:=relations,
+      construction:="full integer kernels, terminal quotient by charge sources, complete nonlinear stack lifts"));
+end);
+
 BindGlobal("U1Classify",function(c,d,options...)
   local HQ,HP,HO,HC,Hlow,chargeBasis,phaseBasis,sourceMap,K,Ki,chargeStates,
     np,nq,ns,relations,witnesses,i,j,v,state,source,phase,co,relation,
     sheetStates,sheetOrders,sheetBasis,integerSource,qseed,adjustment,root,
-    coordinates,reduceCharge,gauge,orders,S,rank,result,obstructedSheets,fp,fq,fs,uniform,HI,multiple,terminalMultiple,trial,found,relative,relativeFilling;
+    coordinates,reduceCharge,gauge,orders,S,rank,result,obstructedSheets,fp,fq,fs,uniform,HI,multiple,terminalMultiple,trial,found,relative,relativeFilling,affineSheets,sheetRelations;
   c.completedStateChecks:=0;c.reductionWitnesses:=[];
   uniform:=d=2 and Length(options)>0 and IsBound(options[1].uniformIQH) and options[1].uniformIQH=true;
   if not d in [2,3] then Error("Global classification currently supports spatial dimensions 2 and 3");fi;
-  if d=3 and c.vcd<>0 then Error("3+1D campaign currently requires a finite group");fi;
+  if d=3 and not c.vcd in [0,3] then Error("3+1D requires a finite group or a full rank-three affine group");fi;
   HQ:=U1Cohomology(c,d,"Zr");HP:=U1Cohomology(c,d+1,"U1s");HO:=U1Cohomology(c,d+2,"U1s");
   chargeBasis:=List(HQ.generators,x->U1Bar(c,d,"Zr",x));
   phaseBasis:=List(HP.generators,x->U1Bar(c,d+1,"U1s",x));
@@ -219,7 +291,11 @@ BindGlobal("U1Classify",function(c,d,options...)
         chargeAdjustment:=adjustment,nativeSource:=phase.nativeObstruction,nativePhase:=phase.nativePrimitive));
     od;
   fi;
-  if d=3 then
+  if d=3 and c.vcd=3 then
+    affineSheets:=U1AffineSheetLattice(c,HQ,HO,chargeBasis,sourceMap);
+    sheetStates:=affineSheets.states;sheetOrders:=affineSheets.orders;
+    Append(witnesses,affineSheets.witnesses);sheetRelations:=affineSheets.relations;
+  elif d=3 then
     HC:=U1Cohomology(c,1,"Zs");
     if not HC.orders in [[],[2]] then Error("Finite signed H1 must be zero or Z2");fi;
     for i in [1..Length(HC.orders)] do
@@ -235,6 +311,13 @@ BindGlobal("U1Classify",function(c,d,options...)
       if phase=fail then Error("Adjusted CI source failed to lift");fi;
       state.phase:=phase.primitive;U1CheckCompletedState(c,d,state);Add(sheetStates,state);Add(sheetOrders,HC.orders[i]);
       Add(witnesses,rec(kind:="CI-lift",sheetIndex:=i,chargeAdjustment:=adjustment,nativeSource:=phase.nativeObstruction,nativePhase:=phase.nativePrimitive));
+    od;
+  fi;
+  if not (d=3 and c.vcd=3) then
+    sheetRelations:=[];
+    for i in [1..Length(sheetOrders)] do
+      if sheetOrders[i]=0 then continue;fi;
+      v:=List(sheetOrders,x->0);v[i]:=sheetOrders[i];Add(sheetRelations,v);
     od;
   fi;
   ns:=Length(sheetStates);relations:=[];
@@ -262,16 +345,16 @@ BindGlobal("U1Classify",function(c,d,options...)
     pco:=U1ClosedPhaseCoordinates(c,d,HP,U1ReduceVacuum(c,d,diff));
     return rec(charge:=coords,phase:=pco);
   end;
-  for i in [1..ns] do
-    if sheetOrders[i]=0 then continue;fi;
-    root:=U1Power(c,d,sheetStates[i],sheetOrders[i]);
+  for i in [1..Length(sheetRelations)] do
+    v:=sheetRelations[i];root:=U1Combination(c,d,sheetStates,v);
     # A finite-order sheet is first removed by its full integer gauge.
     gauge:=U1Solve(c,d-2,"Zs",U1Scale(-1,root.sheet));
     if gauge=fail then Error("CI root did not become an exact sheet");fi;
     root:=U1Gauge(c,d,root,gauge,U1Zero);root.sheet:=U1Zero;
-    coordinates:=reduceCharge(root);v:=List([1..ns],j->0);v[i]:=sheetOrders[i];
+    coordinates:=reduceCharge(root);
     Add(relations,Concatenation(-coordinates.phase,-coordinates.charge,v));
-    Add(witnesses,rec(kind:="CI-root",index:=i,order:=sheetOrders[i],chargeCoordinates:=coordinates.charge,phaseCoordinates:=coordinates.phase));
+    Add(witnesses,rec(kind:="CI-root",index:=i,sheetCoefficients:=v,chargeCoordinates:=coordinates.charge,phaseCoordinates:=coordinates.phase));
+    if not (d=3 and c.vcd=3) then witnesses[Length(witnesses)].order:=Gcd(v);fi;
   od;
   # Incoming charge gauges quotient the terminal phase by actual cochain images.
   Hlow:=U1Cohomology(c,d-1,"Zr");
@@ -312,11 +395,16 @@ BindGlobal("U1Classify",function(c,d,options...)
     List(chargeStates,x->rec(kind:="charge",nativeCharge:=U1Native(c,d,"Zr",x.charge),nativePhase:=U1Native(c,d+1,"U1s",x.phase))),
     List(sheetStates,x->rec(kind:="CI",nativeSheet:=U1Native(c,d-2,"Zs",x.sheet),nativeCharge:=U1Native(c,d,"Zr",x.charge),nativePhase:=U1Native(c,d+1,"U1s",x.phase))));
   result.nativeCompletionChecks:=c.completedStateChecks;
+  result.formulaWorkerCalls:=0;if IsBound(c.workerCalls) then result.formulaWorkerCalls:=c.workerCalls;fi;
+  if IsBound(c.R!.afsTimings) then result.resolutionBuildTimings:=c.R!.afsTimings;fi;
+  result.pairedGeometryReuse:=IsBound(c.pairedGeometryReuse) and c.pairedGeometryReuse;
   result.nativeChainIdentitiesVerified:=true;result.gaugeReductionWitnesses:=c.reductionWitnesses;
   if IsBound(c.inputValidation) then result.inputValidation:=c.inputValidation;fi;
+  if d=3 and c.vcd=3 then result.spaceGroupSheetLattice:=affineSheets.certificate;fi;
   if d=3 then result.neutralE8AbsentByCohomology:=U1Cohomology(c,1,"Zs").orders=[];fi;
   c.classificationStates:=rec(phase:=phaseBasis,charge:=chargeStates,sheet:=sheetStates);
   if d=2 and c.vcd=2 then result.wallpaperFilling:=U1WallpaperFilling(c,result);fi;
+  if d=3 and c.vcd=3 then result.spaceGroupFilling:=U1SpaceGroupFilling(c,result);fi;
   if uniform then
     # n0 of a surviving uniform generator is a nonzero integer. Its kernel is
     # precisely the charge/phase subgroup; eliminate later relation columns.

@@ -6,6 +6,51 @@ BindGlobal("U1NewContext",function(G,R,s,rho,omega,vcd)
   c.sign:=g->(-1)^s(g);c.bar:=U1Comparison(R);
   return c;
 end);
+
+# Primitive 3-cell charge is the alternating six-term translation bar cycle.
+# On translations rho=s=omega=0; consequently this restriction is additive
+# even for completed CI roots with globally nonclosed integer charge.
+BindGlobal("U1SpaceGroupFilling",function(c,result)
+  local L,pc,basis,vectors,volume,tmp,states,fillings,perms,perm,state,value,i,rel,
+    np,nq,chargeFillings,ciFillings,step,chargeStep,nonzero;
+  if c.vcd<>3 or not IsBound(c.affine) then Error("Primitive volume filling requires the full rank-three affine group");fi;
+  L:=Kernel(NaturalHomomorphismOnHolonomyGroup(c.G));pc:=Pcp(L,"snf");
+  if Length(pc)<>3 or not IsAbelian(L) or RelativeOrdersOfPcp(pc)<>[0,0,0] then Error("Translation kernel is not Z^3");fi;
+  basis:=List([1..3],i->pc[i]);
+  if Subgroup(c.G,basis)<>L then Error("Translation basis is not primitive");fi;
+  vectors:=List(basis,g->PreImageElm(c.iso,g)[4]{[1..3]});volume:=DeterminantMat(vectors);
+  if volume=0 then Error("Translation basis has zero volume");fi;
+  if volume<0 then
+    tmp:=basis[1];basis[1]:=basis[2];basis[2]:=tmp;
+    tmp:=vectors[1];vectors[1]:=vectors[2];vectors[2]:=tmp;volume:=-volume;
+  fi;
+  if ForAny(basis,g->c.s(g)<>0 or c.rho(g)<>0)
+    or ForAny(basis,g->ForAny(basis,h->c.omega(g,h)<>0)) then Error("Translation background is not normalized trivial");fi;
+  perms:=PermutationsList([1,2,3]);
+  states:=Concatenation(c.classificationStates.charge,c.classificationStates.sheet);
+  fillings:=List(c.classificationStates.phase,x->0);
+  for state in states do
+    value:=Sum(perms,p->SignPerm(PermList(p))*CallFuncList(state.charge,List(p,i->basis[i])));
+    if not IsInt(value) then Error("Primitive translation-cell charge is not integral");fi;
+    Add(fillings,value);
+  od;
+  if Length(fillings)<>result.presentationGeneratorCount then Error("Filling/presentation dimensions disagree");fi;
+  for rel in result.presentation do
+    if Sum([1..Length(fillings)],i->rel[i]*fillings[i])<>0 then Error("A complete relation changes primitive-cell filling");fi;
+  od;
+  np:=Length(c.classificationStates.phase);nq:=Length(c.classificationStates.charge);
+  chargeFillings:=fillings{[np+1..np+nq]};ciFillings:=fillings{[np+nq+1..Length(fillings)]};
+  step:=0;nonzero:=Filtered(fillings,x->x<>0);if nonzero<>[] then step:=Gcd(List(nonzero,AbsInt));fi;
+  chargeStep:=0;nonzero:=Filtered(chargeFillings,x->x<>0);if nonzero<>[] then chargeStep:=Gcd(List(nonzero,AbsInt));fi;
+  return rec(primitiveTranslationVectors:=vectors,primitiveCellVolume:=volume,
+    orientation:="positive determinant in catalog affine coordinates",
+    barCycle:="sum over permutations sign(p) [t_p1|t_p2|t_p3]",
+    generatorFillings:=fillings,fillingStep:=step,
+    chargeRootSubgroupGeneratorFillings:=chargeFillings,chargeRootSubgroupFillingStep:=chargeStep,
+    ciGeneratorFillings:=ciFillings,primitiveBasisGeneratesFullTranslationKernel:=true,
+    allPresentationRelationsHaveZeroFilling:=true,
+    convention:="integer charge per primitive translation 3-cell, with actual completed CI contributions retained");
+end);
 # Exhaustive exact validation of finite multiplication and twisted extension.
 BindGlobal("U1ValidateFiniteInput",function(data)
   local n,one,i,j,k,ij,jk,w,t;
@@ -61,21 +106,55 @@ BindGlobal("U1CyclicContext",function(n,sbit,rbit,extension)
   fi;
   R:=U1FiniteHolonomyResolution(G,7);c:=U1NewContext(G,R,s,rho,omega,0);return c;
 end);
-BindGlobal("U1WallpaperContext",function(data,depth)
-  local affine,iso,G,pointMap,pointIndex,R,c,validation;
+BindGlobal("U1AffineContext",function(data,depth)
+  local affine,iso,G,pointMap,pointIndex,R,c,validation,matrices,expected;
   LoadPackage("CrystCat");validation:=U1ValidateFiniteInput(data);
-  affine:=SpaceGroupBBNWZ(2,data.catalog_number);iso:=IsomorphismPcpGroup(affine);G:=Image(iso);
+  if not data.dimension in [2,3] then Error("Only rank-two and rank-three affine groups are supported");fi;
+  affine:=SpaceGroupBBNWZ(data.dimension,data.catalog_number);
+  if IsBound(data.affine_generators) then
+    expected:=List(data.affine_generators,m->List(m,row->List(row,Rat)));
+    if GeneratorsOfGroup(affine)<>expected then Error("Affine generators do not match the immutable catalog input");fi;
+  fi;
+  iso:=IsomorphismPcpGroup(affine);G:=Image(iso);
   pointMap:=PointHomomorphism(affine);
-  pointIndex:=U1Memo(g->Position(data.matrices,Image(pointMap,PreImageElm(iso,g))));
-  if ForAny(GeneratorsOfGroup(G),g->pointIndex(g)=fail) then Error("Wallpaper holonomy does not match catalog matrices");fi;
+  matrices:=List(data.matrices,m->List(m,row->List(row,Rat)));
+  pointIndex:=U1Memo(g->Position(matrices,Image(pointMap,PreImageElm(iso,g))));
+  if ForAny(GeneratorsOfGroup(G),g->pointIndex(g)=fail) then Error("Affine holonomy does not match catalog matrices");fi;
   R:=U1ResolutionSpaceGroup(iso,depth);
   c:=U1NewContext(G,R,g->data.s[pointIndex(g)],g->data.rho[pointIndex(g)],
-    function(g,h) return Rat(data.omega[pointIndex(g)][pointIndex(h)]);end,2);
+    function(g,h) return Rat(data.omega[pointIndex(g)][pointIndex(h)]);end,data.dimension);
   c.input:=data;c.inputValidation:=validation;c.affine:=affine;c.iso:=iso;c.pointIndex:=pointIndex;return c;
 end);
+BindGlobal("U1WallpaperContext",U1AffineContext);
 BindGlobal("U1CatalogContext",function(data,depth)
-  if data.family="wallpaper" then return U1WallpaperContext(data,depth);fi;
+  if data.family in ["wallpaper","spacegroup"] then return U1AffineContext(data,depth);fi;
   return U1FiniteContext(data,depth);
+end);
+# Paired physical spins share only geometry and identical coefficient actions.
+# Formula/source cochain caches remain attached to their new context. The worker
+# may be shared because every request contains its full exact signs/background/
+# lower cochains and the worker cache is keyed by that complete request content.
+BindGlobal("U1SiblingContext",function(previous,data)
+  local c,validation,index;
+  if not IsBound(previous.input) then Error("Sibling reuse requires catalog input");fi;
+  if data.family<>previous.input.family or data.index<>previous.input.index
+    or data.dimension<>previous.input.dimension or data.matrices<>previous.input.matrices
+    or data.multiplication<>previous.input.multiplication or data.s<>previous.input.s
+    or data.rho<>previous.input.rho then Error("Sibling group or coefficient actions changed");fi;
+  if IsBound(previous.affine) and data.affine_generators<>previous.input.affine_generators then
+    Error("Sibling affine extension geometry changed");fi;
+  validation:=U1ValidateFiniteInput(data);
+  if IsBound(previous.pointIndex) then index:=previous.pointIndex;else index:=previous.elementIndex;fi;
+  c:=U1NewContext(previous.G,previous.R,previous.s,previous.rho,
+    function(g,h) return Rat(data.omega[index(g)][index(h)]);end,previous.vcd);
+  c.bar:=previous.bar;c.differentialCache:=previous.differentialCache;
+  c.smithCache:=previous.smithCache;c.cohomologyCache:=previous.cohomologyCache;
+  c.f2SolveCache:=previous.f2SolveCache;c.input:=data;c.inputValidation:=validation;
+  if IsBound(previous.affine) then
+    c.affine:=previous.affine;c.iso:=previous.iso;c.pointIndex:=previous.pointIndex;
+  else c.elementIndex:=previous.elementIndex;fi;
+  if IsBound(previous.worker) then c.worker:=previous.worker;c.workerCalls:=0;fi;
+  c.pairedGeometryReuse:=true;return c;
 end);
 # Physical filling is the restriction to the full primitive translation kernel,
 # evaluated on its oriented fundamental bar two-cycle [tx|ty]-[ty|tx].
