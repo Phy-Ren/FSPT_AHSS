@@ -70,22 +70,36 @@ required. SymPy supports exact presentation checks and the E8 extension.
 python3 -m unittest discover -s tests
 python3 scripts/classify.py --family point2 --jobs 4 --output runs/point2
 python3 scripts/classify.py --family wallpaper --jobs 4 --output runs/wallpaper
-python3 scripts/classify.py --family point3 --jobs 4 --output runs/point3
-python3 scripts/extend_e8_3p1.py --ci-root runs/point3 --output runs/point3_e8
-python3 scripts/classify.py --family spacegroup --pair-spins --largest-first --jobs 4 --output runs/spacegroup
-python3 scripts/extend_e8_3p1.py --ci-root runs/spacegroup --output runs/spacegroup_e8
+python3 scripts/classify_3p1d.py --family point3 --jobs 4 --output runs/point3
+python3 scripts/classify_3p1d.py --family spacegroup --pair-spins --largest-first --jobs 4 --output runs/spacegroup
 ```
 
-Use `--case point2_02_spin_half` for one input or `--spin spinless` for one
-physical spin. A separate 2+1D run with `--uniform-iqh` includes all allowed
-uniform Hall responses. Each output directory must be new. Run classification
-campaigns on compute nodes with immutable source snapshots.
+For 3+1D, the unified command runs CI classification, the exact neutral E8
+section, and final acceptance. It reports `complete` only when all selected
+four-data results pass acceptance. The new output root contains `ci/`, `e8/`,
+`accepted/`, stage logs and `workflow.json` with commands, exit status and
+source provenance. Accepted point-group and space-group results reside under
+`accepted/3p1d/point_groups/` and `accepted/3p1d/space_groups/`, respectively.
+This implements the [proved factorization of the supplied 3+1D model](docs/formulas/THREE_DIMENSIONAL.md#why-the-global-calculation-can-be-factored).
+
+Use `--case point3_04_spin_half` for one 3+1D input or `--spin spinless` for
+one physical spin. Each output directory must be new; there is no automatic
+resume or overwrite. Run classification campaigns on compute nodes with
+immutable source snapshots. The unified entrypoint accepts only `point3`
+and `spacegroup`; it does not offer a general 4+1D solver.
+
+The separate 2+1D `classify.py` command supports `--uniform-iqh` for all
+allowed uniform Hall responses. For advanced staged 3+1D workflows,
+`classify.py`, `extend_e8_3p1.py` and `collect_expansion.py` remain available
+individually with their existing immutable output conventions.
 
 `--pair-spins` reuses geometry, the resolution, and linear algebra with
 identical coefficient actions, while keeping independent extension inputs
 and classification states. `--largest-first` starts larger holonomy groups
 first. Set concurrency and memory limits from the available compute node;
 each GAP process has one persistent exact-arithmetic Python worker.
+The unified command forwards the native/reference mode options and accepts
+`--formula-mode auto|python|reference` for exact formula dispatch.
 The [performance guide](docs/PERFORMANCE.md) documents the reused native
 cohomology operations, generated U1 formulas, reference-comparison switches,
 and measured complete-run checks.
