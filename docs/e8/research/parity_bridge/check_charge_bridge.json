@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "seed": 2026101501,
+  "checks": 96,
+  "counts": {
+    "closed_charge_source_d2": 8,
+    "closed_charge_product_d2": 8,
+    "closed_charge_gauge_d2": 8,
+    "open_charge_residual_d2": 8,
+    "closed_charge_source_d3": 8,
+    "closed_charge_product_d3": 8,
+    "closed_charge_gauge_d3": 8,
+    "open_charge_residual_d3": 8,
+    "closed_charge_source_d4": 8,
+    "closed_charge_product_d4": 8,
+    "closed_charge_gauge_d4": 8,
+    "open_charge_residual_d4": 8
+  },
+  "scope": "CF-only bridge in the stated short-gauge coordinates, d=2,3,4; independent s/rho, full circle carry. Open-charge residual retained. Not the nonzero-CI universal bridge.",
+  "notation": "(e_p,n_p,n_{p+2},nu_{p+3}); e_p=n_p=0, z=n_{p+2}",
+  "reference_sha256": "a72df6b9689b0a1862894bed6ee3ff3c4761e592b1df0535a335e323f34b1ee8"
+}

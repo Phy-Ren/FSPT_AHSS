@@ -1,0 +1,55 @@
+{
+  "date_UTC": "2026-10-15",
+  "scope": "independent physical-calibration track only; no production/bundle edits by this track",
+  "checks": {
+    "exact_spectral_vs_characteristic_comparisons": 30,
+    "cyclic_two_manifold_cases": 7,
+    "mirror_distinct_detector_pairs": 16,
+    "separate_dimension_outputs": true,
+    "deterministic_generation": true,
+    "relative_links_exist": true,
+    "source_hashes_verified": true
+  },
+  "files": [
+    {
+      "path": "eta_dictionary.md",
+      "sha256": "55375307b23e750a3bfd5cdc5c36622802608ef1bf2437f45252e4906e69c939",
+      "bytes": 16233
+    },
+    {
+      "path": "mirror_3p1.md",
+      "sha256": "68e5d4c3f36dbfa3154061c8625cc77eabbc61a93337cbcf6bbbda0eb73d63f9",
+      "bytes": 2252
+    },
+    {
+      "path": "coefficient_2p1.md",
+      "sha256": "3d251d4b192bc6214db23b0461c0db94b94ea2cbfcdfdda4656499446154789b",
+      "bytes": 1641
+    },
+    {
+      "path": "lens_calibration.py",
+      "sha256": "1716b61999992fd230418bc5bc383e9ba9413707a01fdf25543816ebd4593792",
+      "bytes": 11511
+    },
+    {
+      "path": "calibration_4p1.json",
+      "sha256": "8aefafec084eba09ed1f536afb7e7121ae384ae8210ee6ce2864c2517cf21551",
+      "bytes": 19696
+    },
+    {
+      "path": "mirror_3p1_checks.json",
+      "sha256": "d17f014dbd269e7f1dd0f43855ea00e44e329aaac7606544bf16da4cc6603a57",
+      "bytes": 939
+    },
+    {
+      "path": "coefficient_2p1_reference.json",
+      "sha256": "3951fe0e4794e08aad52fc287050b20c3748de009a648390631bb17507d93b23",
+      "bytes": 844
+    },
+    {
+      "path": "source_manifest.json",
+      "sha256": "cd413fc70eb72952e40bfc4e6dff483725704fa5f024be2bed647a69f106aaf9",
+      "bytes": 6810
+    }
+  ]
+}

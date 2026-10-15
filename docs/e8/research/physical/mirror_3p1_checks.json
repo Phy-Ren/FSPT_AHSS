@@ -1,0 +1,34 @@
+{
+  "status": "all_source_relation_and_detector_assertions_passed",
+  "spacetime_dimension": "3+1D",
+  "spatial_dimension": 3,
+  "state_notation_E8_first": [
+    "e_1",
+    "n_1",
+    "n_3",
+    "nu_4"
+  ],
+  "mirror_interacting_control": {
+    "symmetry": "physical unitary mirror commuting with U1f; mirror-plane U1f x Z2; charge-conserving fermions",
+    "state_order": [
+      "neutral_E8",
+      "electronic_IQH",
+      "nonchiral_Z4_root"
+    ],
+    "detector_order": [
+      "eta_2f_neutral_E8",
+      "eta_1f_other_roots"
+    ],
+    "distinct_detector_pairs": 16,
+    "full_interacting_group": [
+      2,
+      8
+    ],
+    "neutral_E8_detector_arguments": [
+      "1/2",
+      "0"
+    ],
+    "source": "Ning, Mao, Li, Wang, arXiv:2105.02682v1 SecIII.B.1 Eqs19-20; PRB104075111(2021)",
+    "scope": "independent source relation/detector arithmetic; not a production solver run or an arbitrary space-group completeness proof"
+  }
+}

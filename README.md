@@ -11,6 +11,14 @@ cubic coefficient `1/6`, additional product coefficient `epsilon=0`, and matched
 source, stacking and gauge representatives. See [the formula reference](formulas/README.md)
 for equations, provenance and coverage.
 
+The reviewed E8 addition is available through
+`insulator.E8State(e_p,n_p,n_p2,nu_p3)`, with E8 first and one shared phase.
+It implements exact local source, stacking, gauge, inverse and integer powers,
+including uniform `e0`. See [the notation](docs/e8/notation.md) and separate
+[2+1D](docs/e8/2p1.md), [3+1D](docs/e8/3p1.md), and
+[4+1D](docs/e8/4p1.md) specifications. The CLI and existing tables still
+use the CI-only classifier; the local API does not imply new global tables.
+
 **Start with the [foundation review](docs/foundations/README.md) and
 [rebuilt comparison tables](results/foundation_review_20261014/README.md).**
 Start with separate [2+1D](results/foundation_review_20261014/2p1d/README.md)
@@ -47,7 +55,7 @@ cohomology uses the infinite affine group, including translations and glides.
 
 The computed sector is CI-generated, localized-charge and group-cohomological
 phase data. The independent neutral E8 sector and intrinsic higher-response
-sectors are outside the supplied tower. No missing operation is installed as zero.
+sectors are outside the default global classifier. No missing operation is installed as zero.
 The default 2+1D comparison fixes the uniform IQH index to zero; the optional
 `--uniform-iqh` calculation solves its obstruction and supplies a completed lift.
 Free filling classes remain present.

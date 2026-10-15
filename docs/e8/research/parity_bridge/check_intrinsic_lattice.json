@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "response_basis": {
+    "I": "(c^3-c*p1)/48",
+    "J": "c^3/2 = Index(D tensor L)-3Index(D)"
+  },
+  "manifold_evaluations": {
+    "CP3_c2h": [
+      "0",
+      "4"
+    ],
+    "CP2xS2_c_h_plus_2u": [
+      "0",
+      "3"
+    ],
+    "CP3_c4h": [
+      "1",
+      "32"
+    ]
+  },
+  "primitive_cycles": {
+    "U=CP3_c2h-CP2xS2_c_h_plus_2u": [
+      "0",
+      "1"
+    ],
+    "V=CP3_c4h-32U": [
+      "1",
+      "0"
+    ]
+  },
+  "Spin_restriction": "I=J=0 at c=0; TP5(Spin)=0",
+  "coefficient_system": "Z_rho1^2",
+  "formal_transgression_candidate_E8_first": {
+    "I": [
+      0,
+      -1
+    ],
+    "J": [
+      3,
+      -24
+    ],
+    "common_factor": "B=beta(omega)",
+    "status": "formal characteristic-polynomial identity only; not a proved integral AHSS differential"
+  },
+  "primary_source": {
+    "arxiv": "1604.06527v6",
+    "tex_lines": "6576-6613; Eq74 and Eq115",
+    "sha256": "091c5d227052634fbde48bbfdab5fb8fb78e568bcc54dc016a1990f2fc6f6eba"
+  },
+  "scope": "Integral response basis uses Dirac-index integrality and the published Spin^c bordism coefficient rank; arithmetic is independent of stored classifier outputs."
+}

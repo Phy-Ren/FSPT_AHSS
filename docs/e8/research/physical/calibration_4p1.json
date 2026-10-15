@@ -1,0 +1,823 @@
+{
+  "status": "all_assertions_passed",
+  "state_notation_E8_first": [
+    "e_p",
+    "n_p",
+    "n_{p+2}",
+    "nu_{p+3}"
+  ],
+  "p": "d-2, with d the spatial dimension",
+  "physical_response_warning": "These are differential-character/APS response evaluations, not bare nu cochain periods.",
+  "orientation": "W_N=D(O(-N)->CP2) complex orientation; boundary standard quotient orientation",
+  "flat_line_convention": "(z,v)~(g z,rho_s(g)v); parallel transport rho_s^{-1}; a(g)=+1/N means s=-1",
+  "cyclic_controls": [
+    {
+      "N": 2,
+      "scope": "reduced oriented bosonic E8-decoration plus DW phase subgroup",
+      "generator_order": [
+        "E8_X_geom",
+        "DW_b"
+      ],
+      "E8_X_lens": {
+        "raw_rational": "-1",
+        "mod_Z": "0"
+      },
+      "E8_X_CP2_times_S1": {
+        "raw_rational": "-1/2",
+        "mod_Z": "1/2"
+      },
+      "DW_b_lens": {
+        "raw_rational": "1/2",
+        "mod_Z": "1/2"
+      },
+      "DW_b_CP2_times_S1": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relation_N_X_equals_q_b": 0,
+      "presentation_E8_first": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "invariant_factors": [
+        2,
+        2
+      ],
+      "distinct_two_manifold_detections": 4
+    },
+    {
+      "N": 3,
+      "scope": "reduced oriented bosonic E8-decoration plus DW phase subgroup",
+      "generator_order": [
+        "E8_X_geom",
+        "DW_b"
+      ],
+      "E8_X_lens": {
+        "raw_rational": "-11/9",
+        "mod_Z": "7/9"
+      },
+      "E8_X_CP2_times_S1": {
+        "raw_rational": "-1/3",
+        "mod_Z": "2/3"
+      },
+      "DW_b_lens": {
+        "raw_rational": "1/3",
+        "mod_Z": "1/3"
+      },
+      "DW_b_CP2_times_S1": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relation_N_X_equals_q_b": 1,
+      "presentation_E8_first": [
+        [
+          3,
+          -1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "invariant_factors": [
+        9
+      ],
+      "distinct_two_manifold_detections": 9
+    },
+    {
+      "N": 4,
+      "scope": "reduced oriented bosonic E8-decoration plus DW phase subgroup",
+      "generator_order": [
+        "E8_X_geom",
+        "DW_b"
+      ],
+      "E8_X_lens": {
+        "raw_rational": "-3/2",
+        "mod_Z": "1/2"
+      },
+      "E8_X_CP2_times_S1": {
+        "raw_rational": "-1/4",
+        "mod_Z": "3/4"
+      },
+      "DW_b_lens": {
+        "raw_rational": "1/4",
+        "mod_Z": "1/4"
+      },
+      "DW_b_CP2_times_S1": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relation_N_X_equals_q_b": 0,
+      "presentation_E8_first": [
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "invariant_factors": [
+        4,
+        4
+      ],
+      "distinct_two_manifold_detections": 16
+    },
+    {
+      "N": 5,
+      "scope": "reduced oriented bosonic E8-decoration plus DW phase subgroup",
+      "generator_order": [
+        "E8_X_geom",
+        "DW_b"
+      ],
+      "E8_X_lens": {
+        "raw_rational": "-9/5",
+        "mod_Z": "1/5"
+      },
+      "E8_X_CP2_times_S1": {
+        "raw_rational": "-1/5",
+        "mod_Z": "4/5"
+      },
+      "DW_b_lens": {
+        "raw_rational": "1/5",
+        "mod_Z": "1/5"
+      },
+      "DW_b_CP2_times_S1": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relation_N_X_equals_q_b": 0,
+      "presentation_E8_first": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "invariant_factors": [
+        5,
+        5
+      ],
+      "distinct_two_manifold_detections": 25
+    },
+    {
+      "N": 6,
+      "scope": "reduced oriented bosonic E8-decoration plus DW phase subgroup",
+      "generator_order": [
+        "E8_X_geom",
+        "DW_b"
+      ],
+      "E8_X_lens": {
+        "raw_rational": "-19/9",
+        "mod_Z": "8/9"
+      },
+      "E8_X_CP2_times_S1": {
+        "raw_rational": "-1/6",
+        "mod_Z": "5/6"
+      },
+      "DW_b_lens": {
+        "raw_rational": "1/6",
+        "mod_Z": "1/6"
+      },
+      "DW_b_CP2_times_S1": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relation_N_X_equals_q_b": 2,
+      "presentation_E8_first": [
+        [
+          6,
+          -2
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "invariant_factors": [
+        2,
+        18
+      ],
+      "distinct_two_manifold_detections": 36
+    },
+    {
+      "N": 9,
+      "scope": "reduced oriented bosonic E8-decoration plus DW phase subgroup",
+      "generator_order": [
+        "E8_X_geom",
+        "DW_b"
+      ],
+      "E8_X_lens": {
+        "raw_rational": "-83/27",
+        "mod_Z": "25/27"
+      },
+      "E8_X_CP2_times_S1": {
+        "raw_rational": "-1/9",
+        "mod_Z": "8/9"
+      },
+      "DW_b_lens": {
+        "raw_rational": "1/9",
+        "mod_Z": "1/9"
+      },
+      "DW_b_CP2_times_S1": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relation_N_X_equals_q_b": 3,
+      "presentation_E8_first": [
+        [
+          9,
+          -3
+        ],
+        [
+          0,
+          9
+        ]
+      ],
+      "invariant_factors": [
+        3,
+        27
+      ],
+      "distinct_two_manifold_detections": 81
+    },
+    {
+      "N": 12,
+      "scope": "reduced oriented bosonic E8-decoration plus DW phase subgroup",
+      "generator_order": [
+        "E8_X_geom",
+        "DW_b"
+      ],
+      "E8_X_lens": {
+        "raw_rational": "-73/18",
+        "mod_Z": "17/18"
+      },
+      "E8_X_CP2_times_S1": {
+        "raw_rational": "-1/12",
+        "mod_Z": "11/12"
+      },
+      "DW_b_lens": {
+        "raw_rational": "1/12",
+        "mod_Z": "1/12"
+      },
+      "DW_b_CP2_times_S1": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relation_N_X_equals_q_b": 4,
+      "presentation_E8_first": [
+        [
+          12,
+          -4
+        ],
+        [
+          0,
+          12
+        ]
+      ],
+      "invariant_factors": [
+        4,
+        36
+      ],
+      "distinct_two_manifold_detections": 144
+    }
+  ],
+  "eta_comparisons": [
+    {
+      "N": 2,
+      "representation_weight_s": -1,
+      "parallel_transport_holonomy": "1/2",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "3",
+        "mod_Z": "0"
+      },
+      "integer_difference": -3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 2,
+      "representation_weight_s": 0,
+      "parallel_transport_holonomy": "0",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 2,
+      "representation_weight_s": 1,
+      "parallel_transport_holonomy": "1/2",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "-3",
+        "mod_Z": "0"
+      },
+      "integer_difference": 3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 3,
+      "representation_weight_s": -1,
+      "parallel_transport_holonomy": "1/3",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "1/9",
+        "mod_Z": "1/9"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "28/9",
+        "mod_Z": "1/9"
+      },
+      "integer_difference": -3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 3,
+      "representation_weight_s": -1,
+      "parallel_transport_holonomy": "1/3",
+      "operator": "spin_Dirac",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "-1/9",
+        "mod_Z": "8/9"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "-1/9",
+        "mod_Z": "8/9"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 3,
+      "representation_weight_s": 0,
+      "parallel_transport_holonomy": "0",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 3,
+      "representation_weight_s": 0,
+      "parallel_transport_holonomy": "0",
+      "operator": "spin_Dirac",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 3,
+      "representation_weight_s": 1,
+      "parallel_transport_holonomy": "2/3",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "-1/9",
+        "mod_Z": "8/9"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "-28/9",
+        "mod_Z": "8/9"
+      },
+      "integer_difference": 3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 3,
+      "representation_weight_s": 1,
+      "parallel_transport_holonomy": "2/3",
+      "operator": "spin_Dirac",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "1/9",
+        "mod_Z": "1/9"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "1/9",
+        "mod_Z": "1/9"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 4,
+      "representation_weight_s": -1,
+      "parallel_transport_holonomy": "1/4",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "1/2",
+        "mod_Z": "1/2"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "7/2",
+        "mod_Z": "1/2"
+      },
+      "integer_difference": -3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 4,
+      "representation_weight_s": 0,
+      "parallel_transport_holonomy": "0",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 4,
+      "representation_weight_s": 1,
+      "parallel_transport_holonomy": "3/4",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "-1/2",
+        "mod_Z": "1/2"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "-7/2",
+        "mod_Z": "1/2"
+      },
+      "integer_difference": 3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 5,
+      "representation_weight_s": -1,
+      "parallel_transport_holonomy": "1/5",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "1",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "4",
+        "mod_Z": "0"
+      },
+      "integer_difference": -3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 5,
+      "representation_weight_s": -1,
+      "parallel_transport_holonomy": "1/5",
+      "operator": "spin_Dirac",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "-1/5",
+        "mod_Z": "4/5"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "-1/5",
+        "mod_Z": "4/5"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 5,
+      "representation_weight_s": 0,
+      "parallel_transport_holonomy": "0",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 5,
+      "representation_weight_s": 0,
+      "parallel_transport_holonomy": "0",
+      "operator": "spin_Dirac",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 5,
+      "representation_weight_s": 1,
+      "parallel_transport_holonomy": "4/5",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "-1",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "-4",
+        "mod_Z": "0"
+      },
+      "integer_difference": 3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 5,
+      "representation_weight_s": 1,
+      "parallel_transport_holonomy": "4/5",
+      "operator": "spin_Dirac",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "1/5",
+        "mod_Z": "1/5"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "1/5",
+        "mod_Z": "1/5"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 6,
+      "representation_weight_s": -1,
+      "parallel_transport_holonomy": "1/6",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "14/9",
+        "mod_Z": "5/9"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "41/9",
+        "mod_Z": "5/9"
+      },
+      "integer_difference": -3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 6,
+      "representation_weight_s": 0,
+      "parallel_transport_holonomy": "0",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 6,
+      "representation_weight_s": 1,
+      "parallel_transport_holonomy": "5/6",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "-14/9",
+        "mod_Z": "4/9"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "-41/9",
+        "mod_Z": "4/9"
+      },
+      "integer_difference": 3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 9,
+      "representation_weight_s": -1,
+      "parallel_transport_holonomy": "1/9",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "91/27",
+        "mod_Z": "10/27"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "172/27",
+        "mod_Z": "10/27"
+      },
+      "integer_difference": -3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 9,
+      "representation_weight_s": -1,
+      "parallel_transport_holonomy": "1/9",
+      "operator": "spin_Dirac",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "-10/27",
+        "mod_Z": "17/27"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "-10/27",
+        "mod_Z": "17/27"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 9,
+      "representation_weight_s": 0,
+      "parallel_transport_holonomy": "0",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 9,
+      "representation_weight_s": 0,
+      "parallel_transport_holonomy": "0",
+      "operator": "spin_Dirac",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 9,
+      "representation_weight_s": 1,
+      "parallel_transport_holonomy": "8/9",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "-91/27",
+        "mod_Z": "17/27"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "-172/27",
+        "mod_Z": "17/27"
+      },
+      "integer_difference": 3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 9,
+      "representation_weight_s": 1,
+      "parallel_transport_holonomy": "8/9",
+      "operator": "spin_Dirac",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "10/27",
+        "mod_Z": "10/27"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "10/27",
+        "mod_Z": "10/27"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 12,
+      "representation_weight_s": -1,
+      "parallel_transport_holonomy": "1/12",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "95/18",
+        "mod_Z": "5/18"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "149/18",
+        "mod_Z": "5/18"
+      },
+      "integer_difference": -3,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 12,
+      "representation_weight_s": 0,
+      "parallel_transport_holonomy": "0",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "0",
+        "mod_Z": "0"
+      },
+      "integer_difference": 0,
+      "equal_mod_Z": true
+    },
+    {
+      "N": 12,
+      "representation_weight_s": 1,
+      "parallel_transport_holonomy": "11/12",
+      "operator": "signature",
+      "exact_cyclotomic_sum": {
+        "raw_rational": "-95/18",
+        "mod_Z": "13/18"
+      },
+      "relative_characteristic_integral": {
+        "raw_rational": "-149/18",
+        "mod_Z": "13/18"
+      },
+      "integer_difference": 3,
+      "equal_mod_Z": true
+    }
+  ],
+  "eta_comparison_count": 30,
+  "C3_dictionary": {
+    "E8_X_geom_minus_C": {
+      "raw_rational": "-11/9",
+      "mod_Z": "7/9"
+    },
+    "E8_X_eta_equal_X_geom_plus_b": {
+      "raw_rational": "1/9",
+      "mod_Z": "1/9"
+    },
+    "charged_I_spin_restriction": {
+      "raw_rational": "-1/9",
+      "mod_Z": "8/9"
+    },
+    "DW_b": {
+      "raw_rational": "1/3",
+      "mod_Z": "1/3"
+    },
+    "STZ_rho_1_signature_eta": {
+      "raw_rational": "-1/9",
+      "mod_Z": "8/9"
+    },
+    "generator_change": "x X_eta + k b = x X_geom + (k+x) b",
+    "relations": [
+      "3 X_geom = b",
+      "X_eta = 4 X_geom = X_geom+b",
+      "3 I = 2 b",
+      "3 (X_geom+I) = 0"
+    ],
+    "charged_scope": "spin background, trivial electromagnetic Spin-c determinant, flat C3 line; not a complete charged bordism calibration"
+  },
+  "electronic_embedding_of_generated_neutral_subgroup": {
+    "symmetry": "split U1f x C_N, tangential/background structure Spin-c x BC_N",
+    "lens_Spin_c_determinant": "restriction of (3-N)h from the complex disk bundle W_N",
+    "CP2_times_S1_Spin_c_determinant": "h, reducing to w2 modulo2",
+    "claim": "the same two-manifold periods distinguish all N^2 generated neutral/DW classes after electronic pullback",
+    "proof": "eta_dictionary.md section5; neutral responses ignore the chosen electromagnetic determinant connection",
+    "limitation": "no quotient declaring electromagnetic or intrinsic invertible responses trivial; no claim to classify all charged phases"
+  },
+  "spacetime_dimension": "4+1D",
+  "spatial_dimension": 4,
+  "state_notation": [
+    "e_2",
+    "n_2",
+    "n_4",
+    "nu_5"
+  ]
+}

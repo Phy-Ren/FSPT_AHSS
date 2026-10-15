@@ -1,5 +1,10 @@
 # Exact U(1)^f formula implementation
 
+This TeX reference preserves the calibrated CI baseline. The separately
+reviewed E8-first extension and its exact scope are documented in
+[the E8 reference](../docs/e8/README.md); its provenance is recorded in
+`e8_provenance.json`. The global classifier remains CI-only.
+
 The TeX files here reproduce the consolidated v0.7 mathematical specification.
 `provenance.json` records source hashes and the archive hash. The executable
 package is `insulator`; it loads only the calibrated sheet-linear convention,

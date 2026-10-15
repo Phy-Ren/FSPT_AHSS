@@ -1,0 +1,51 @@
+{
+  "status": "PASS for implemented operations; full mathematical closure NOT claimed",
+  "notation": "(e_p,n_p,n_{p+2},nu_{p+3}); E8 first; p=spatial_dimension-2",
+  "formal_group_domain": "Discrete finite extension of Z^r, rank r<=spatial dimension<=4; continuous groups exploratory",
+  "base_commit": "daa276772fedca8ba863983d963eb3aa32323745",
+  "unit_tests": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "count": 56,
+    "seconds": 67.589,
+    "status": "PASS",
+    "log_sha256": "5600c46f5bb3bbc660443dd9f8918b4ec2c81f8a46990f5432afdd509be2115a"
+  },
+  "exact_audits": {
+    "infinite_presentations": 9,
+    "free_sheet_bar_identities": 9000,
+    "independent_production_free_sheet_checks": 24,
+    "cyclotomic_APS_comparisons": 30,
+    "cyclic_two_manifold_controls": 7,
+    "mirror_detector_pairs": 16,
+    "closed_charge_bridge_identities": 96,
+    "parity_source_checks": 4,
+    "parity_nonbinary_product_face_checks": 28,
+    "parity_valuation_packets": 10
+  },
+  "code_sha256": {
+    "insulator/e8.py": "b663d78c2e595f7233e6ea5fd64fe182b8cc3b477b716ed051c7167e1e5ed58a",
+    "insulator/e8_h1.py": "d39bbe2565e933c65641b6ad5886faf81f175f094643c82fb4cdb1a994c8d272",
+    "insulator/_engine/e8_4p1.py": "e2b75db3ddc36ba9d6dbba3ec97095573ee1fd2b87bcadd010f32806bc0a4626",
+    "insulator/parity_bridge.py": "8b336fdcce16bbc0c8ee4562b88149ba5a15bb4c9d6c969b31c36f2660989032"
+  },
+  "peer_review": {
+    "neutral_runtime": "No substantive valid-input defect; independent global free-sheet checks passed",
+    "pure_sixteen_parity": "Transfer invariants and conservative valuation proof independently reviewed; numerical nonbinary checks distinguished from binary proof"
+  },
+  "closed_items": [
+    "Space-group rational E8 phase existence, including free e2",
+    "C3 eta/root dictionary under explicit APS conventions",
+    "Pure E8 sixteen-sheet source/product/prism-gauge bridge on the legal reference domain",
+    "Closed-charge circle source/product/short-gauge bridge",
+    "Primitive intrinsic Spin-c coefficient lattice and pure Spin restriction",
+    "Local E8-first API with uniform e0 and full phase validation"
+  ],
+  "open_items": [
+    "Universal nonzero-CI terminal R and paired product K",
+    "Integral intrinsic-row d3/d5/d6 with signed backgrounds",
+    "Full retained-CI-to-physical-kernel identification",
+    "Uniform nonzero-n0 microscopic product dictionary",
+    "Global E8 classification backend and tables"
+  ],
+  "no_missing_operation_installed_as_zero": true
+}

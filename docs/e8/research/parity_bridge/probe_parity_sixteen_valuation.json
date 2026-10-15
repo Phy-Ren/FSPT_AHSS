@@ -1,0 +1,357 @@
+{
+  "status": "PASS",
+  "meaning": "Universal conservative divisibility certificate; not random sampling",
+  "substitution": "n,m divisible16; a,b,c,cp,y=0; s,w arbitrary integer arrays; conclusions on legal lower towers",
+  "public_reference": "/home/xingyu/FSPT_AHSS_public",
+  "programs": [
+    {
+      "name": "source_4_majorana",
+      "outputs": [
+        [
+          1000000000,
+          0
+        ]
+      ],
+      "nodes": 66,
+      "opcodes": [
+        "add",
+        "const",
+        "field",
+        "mod",
+        "mul"
+      ],
+      "exact_divisions_not_proved_by_valuation": 0,
+      "sha256": "c6d395970e8f8ea1e627ce269506c10d28ba29d70debbf5c300c29452ad4b7b3"
+    },
+    {
+      "name": "source_4_fermion",
+      "outputs": [
+        [
+          1000000000,
+          0
+        ]
+      ],
+      "nodes": 413,
+      "opcodes": [
+        "add",
+        "const",
+        "field",
+        "floor",
+        "mod",
+        "mul"
+      ],
+      "exact_divisions_not_proved_by_valuation": 0,
+      "sha256": "9eb14a3670dbe5a11fd8223203418a6532e2bb4b5aafe32066f1efd5fd3104d3"
+    },
+    {
+      "name": "product_4_majorana",
+      "outputs": [
+        [
+          1000000000,
+          0
+        ]
+      ],
+      "nodes": 26,
+      "opcodes": [
+        "add",
+        "const",
+        "field",
+        "mod",
+        "mul"
+      ],
+      "exact_divisions_not_proved_by_valuation": 0,
+      "sha256": "972f1f2fc51440ce5b75eaae450a4262517437d365726f1292443be2f02e1fed"
+    },
+    {
+      "name": "product_4_fermion",
+      "outputs": [
+        [
+          1000000000,
+          0
+        ]
+      ],
+      "nodes": 558,
+      "opcodes": [
+        "add",
+        "const",
+        "div",
+        "field",
+        "mod",
+        "mul"
+      ],
+      "exact_divisions_not_proved_by_valuation": 0,
+      "sha256": "7cc3a08f5ad16ace60627752d3e3e93c2072603f0d0fe102f3e46983820677e2"
+    },
+    {
+      "name": "y6",
+      "outputs": [
+        [
+          1000000000,
+          0
+        ]
+      ],
+      "nodes": 173707,
+      "opcodes": [
+        "add",
+        "bit",
+        "const",
+        "div",
+        "field",
+        "floor",
+        "mod",
+        "mul"
+      ],
+      "exact_divisions_not_proved_by_valuation": 291,
+      "sha256": "f89838de8524321b688089e3c8a7fce5592e6b6327893e84607a8cd40c0fe0c2"
+    },
+    {
+      "name": "h6",
+      "outputs": [
+        [
+          1000000000,
+          0
+        ]
+      ],
+      "nodes": 35616,
+      "opcodes": [
+        "add",
+        "const",
+        "div",
+        "field",
+        "floor",
+        "mod",
+        "mul"
+      ],
+      "exact_divisions_not_proved_by_valuation": 2,
+      "sha256": "070809f164fd0e44ce75f43edfeb59099fc0b4ac47ea480485d9d7eecea96092"
+    },
+    {
+      "name": "high6",
+      "outputs": [
+        [
+          1000000000,
+          0
+        ],
+        [
+          12,
+          null
+        ]
+      ],
+      "nodes": 36150,
+      "opcodes": [
+        "add",
+        "const",
+        "div",
+        "field",
+        "floor",
+        "mod",
+        "mul"
+      ],
+      "exact_divisions_not_proved_by_valuation": 8,
+      "sha256": "51f81b670d50bbd9e52d170226c8bf94be4de49adf79c2a3ccb82a98b95a6a0a"
+    },
+    {
+      "name": "rho4",
+      "outputs": [
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ],
+        [
+          1000000000,
+          0
+        ]
+      ],
+      "nodes": 13162,
+      "opcodes": [
+        "add",
+        "const",
+        "div",
+        "field",
+        "floor",
+        "mod",
+        "mul"
+      ],
+      "exact_divisions_not_proved_by_valuation": 10,
+      "sha256": "c43fe14c69de0b09d4df3d07a566bcb9497a04bf56ad012e2660f759bd838904"
+    },
+    {
+      "name": "tensor4",
+      "outputs": [
+        [
+          1000000000,
+          0
+        ]
+      ],
+      "nodes": 1658,
+      "opcodes": [
+        "add",
+        "bit",
+        "const",
+        "div",
+        "field",
+        "floor",
+        "mod",
+        "mul"
+      ],
+      "exact_divisions_not_proved_by_valuation": 0,
+      "sha256": "70e4cd786461fd3bbfb8d8c83e3cb8e6d42f14dfc136d6db6a248792b0253efd"
+    },
+    {
+      "name": "nonbinary4",
+      "outputs": [
+        [
+          4,
+          null
+        ]
+      ],
+      "nodes": 3075,
+      "opcodes": [
+        "add",
+        "const",
+        "div",
+        "field",
+        "mod",
+        "mul"
+      ],
+      "exact_divisions_not_proved_by_valuation": 2,
+      "sha256": "25a97cfe4a71c699d0ff6207aa827c79ac945dd5cbf3ef352f3d60dea32f529e"
+    }
+  ]
+}

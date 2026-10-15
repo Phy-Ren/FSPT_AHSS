@@ -1,0 +1,16 @@
+{
+  "archive": "E8_AHSS_v0_9_complete.zip",
+  "archive_sha256": "da3ad9368390e8d075f27e0039e8486f14890fefb3ccbf0aea4d85a5ba0685cd",
+  "upstream_files": {
+    "e8_4p1.py": "b0c37fc6d626dc6101f323f9ad61cba1a4be9c3fb29806da9c61138003ea935a",
+    "twisted_h1.py": "06fcca2d132b14437cf17ab9176703614e0fd723ca130755930a56d06f9cf672"
+  },
+  "changes": [
+    "Replace source-tree import-path injection with branch-local imports.",
+    "Validate exact cochain structure in neutral operations.",
+    "Reject wrong source degree in neutral gauge.",
+    "Add independently derived gauge-composition primitive.",
+    "Permit the empty presentation of the trivial group in the H1 solver."
+  ],
+  "scope": "Local closed-sheet CI/charge/E8 model; H1 from arbitrary finite presentations. No full physical spectrum or continuous-group completion claim."
+}

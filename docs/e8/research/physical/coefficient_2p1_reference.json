@@ -1,0 +1,33 @@
+{
+  "status": "primary_source_coefficient_dictionary",
+  "spacetime_dimension": "2+1D",
+  "spatial_dimension": 2,
+  "state_notation_E8_first": [
+    "e_0",
+    "n_0",
+    "n_2",
+    "nu_3"
+  ],
+  "coefficient_order_E8_first": [
+    "e_0",
+    "n_0"
+  ],
+  "neutral_E8": {
+    "chiral_central_charge": 8,
+    "Hall_conductance": 0
+  },
+  "electronic_IQH": {
+    "chiral_central_charge": 1,
+    "Hall_conductance": 1
+  },
+  "response_dictionary": {
+    "chiral_central_charge": "8 e_0+n_0",
+    "Hall_conductance": "n_0"
+  },
+  "inverse_dictionary": {
+    "e_0": "(c-sigma_H)/8",
+    "n_0": "sigma_H"
+  },
+  "source": "Ning, Mao, Li, Wang, arXiv:2105.02682v1 SecIII.B.1 roots(i)-(ii), source lines494-502",
+  "scope": "uniform charge-conserving invertible coefficient lattice; not a wallpaper classification or a production solver calculation"
+}
