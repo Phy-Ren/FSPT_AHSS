@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "/home/xingyu/AllFSPT_reviews/completed_h_replacements_download_20261015/run_download.py",
+    "--interval",
+    "60",
+    "--maximum-hours",
+    "10"
+  ],
+  "configSHA256": "eba6c9ef69beecfcff1d7348392a45ebafed561916353c2c5d53752469af32e8",
+  "existingDownloaderArgv": [
+    "/usr/bin/python3",
+    "/home/xingyu/AllFSPT_reviews/completed_campaign_download_20261015/download_completed.py",
+    "--interval",
+    "60",
+    "--maximum-hours",
+    "6"
+  ],
+  "existingDownloaderArgvUnchanged": true,
+  "existingDownloaderModuleUnchanged": true,
+  "existingDownloaderPID": 7779,
+  "helperSHA256": "15b4501bb0bfbb35c316221cbfdcd77299ff4590ed7d6928abf4b616fa8b7ba3",
+  "noClassificationOrSignals": true,
+  "pid": 223851,
+  "schema": "u1-isolated-completion-downloader-launch-v1",
+  "startedUTC": "2026-10-15T15:22:53.999785+00:00",
+  "wrapperSHA256": "c2c9a3dd03d905bb5696936cce62ad2e000d9b04edfdffcd96675cc3632bdc27"
+}

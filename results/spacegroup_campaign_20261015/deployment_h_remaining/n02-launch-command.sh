@@ -1,0 +1,1 @@
+ssh -n -o BatchMode=yes -o ControlMaster=auto -o ControlPersist=43200 -o ControlPath=/home/user/xyren/.ssh/cm-%r@%h:%p n02 '/home/user/xyren/AllFSPT_insulator/runtime/bin/python3 /home/user/xyren/AllFSPT_insulator/snapshots/u1_launch_h_remaining_20261015.py launch n02 c539a014cd8fe2fce6656a5af8b8c864511b37583f81dc419e3bf888569a4b63'

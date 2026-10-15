@@ -1,0 +1,64 @@
+{
+  "acceptanceClaim": false,
+  "availabilityAndLaunchOnly": true,
+  "exactCanonicalInputHashes": true,
+  "existingNativeExclusionsWithHashes": 173,
+  "launches": [
+    {
+      "caseCount": 12,
+      "cases": [
+        "spacegroup_223_spin_half",
+        "spacegroup_224_spin_half",
+        "spacegroup_227_spin_half",
+        "spacegroup_228_spin_half",
+        "spacegroup_201_spinless",
+        "spacegroup_206_spin_half",
+        "spacegroup_210_spinless",
+        "spacegroup_219_spin_half",
+        "spacegroup_220_spin_half",
+        "spacegroup_133_spinless",
+        "spacegroup_140_spin_half",
+        "spacegroup_142_spin_half"
+      ],
+      "finalizerPID": 42071,
+      "node": "n02",
+      "runnerPID": 42054,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "startedUTC": "2026-10-15T15:17:56.448996+00:00",
+      "statusCountsAtCapture": {
+        "running": 12
+      }
+    },
+    {
+      "caseCount": 12,
+      "cases": [
+        "spacegroup_223_spinless",
+        "spacegroup_224_spinless",
+        "spacegroup_227_spinless",
+        "spacegroup_228_spinless",
+        "spacegroup_203_spinless",
+        "spacegroup_206_spinless",
+        "spacegroup_218_spinless",
+        "spacegroup_219_spinless",
+        "spacegroup_220_spinless",
+        "spacegroup_134_spinless",
+        "spacegroup_140_spinless",
+        "spacegroup_142_spinless"
+      ],
+      "finalizerPID": 40348,
+      "node": "n03",
+      "runnerPID": 40335,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "startedUTC": "2026-10-15T15:18:03.871594+00:00",
+      "statusCountsAtCapture": {
+        "running": 12
+      }
+    }
+  ],
+  "noPairedJobs": true,
+  "noTailOverlap": true,
+  "originalCoverageUnique": 460,
+  "schema": "u1-h-remaining-initial-evidence-v1",
+  "totalNewCases": 24,
+  "verifiedUTC": "2026-10-15T15:20:06.745808+00:00"
+}

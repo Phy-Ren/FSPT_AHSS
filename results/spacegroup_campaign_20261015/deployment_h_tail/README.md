@@ -1,0 +1,13 @@
+# H control launch: SG226 and SG230, both spins
+
+This package records four additional control cases launched on n08 at 2026-10-15 14:57:09 UTC, with runner PID 10773 and finalizer PID 10776. The unique remote tag is `sgfull-20261015-h-tail-n08`. Two paired geometry jobs use 8g per job and 14400 seconds per case, enforced as a shared 28800-second budget for each pair. Existing G/H campaigns were left running. This package does not establish successful completion or acceptance.
+
+The immutable H source is commit `ea44c1f55314ddd66587cf452bbaae9331f3a1db`, source SHA256 `80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b`. Before launch, every recorded source file, the snapshot archive, all four catalogue inputs, the native VM, optimized GAP executable and finalizer were rehashed. The VM is `0c026ca103e9ba8b674c006d6042ca23bfe526ca62b4e96b3c1b79c4d318dec2`; GAP is `873e902ee797706160601846c1ad6582c05e0aebd069bdd7efcff3d081f96fea`. Modes are native charge-primary, Smith cycles, certified closed source and canonical vacuum reduction.
+
+Resource preflight found 56 logical CPUs, load 1.20 and an estimated 114.56 GiB available. The combined GAP workspace cap is 16 GiB, plus ordinary process overhead. The recorded time limits are bounds, not predictions. No speed comparison is inferred from different nodes, resolutions or background loads.
+
+`initial_metadata.tar.gz` preserves nine original remote metadata/script files, captured at 14:57:50 UTC. Its SHA256 is `10c280471c257cc34d65fdd4f01bebdada981543580ca4852cbce43a4dedb660`. `download.json` records each member's original path, size and hash. Archive paths are relative to `/home/user/xyren/AllFSPT_insulator`. The captured finalizer was waiting. Full source archives and executables are not duplicated; source files are checked against the recorded Git commit and runtime identities against the [primary H deployment](../deployment_h/README.md).
+
+Run `python results/spacegroup_campaign_20261015/deployment_h_tail/verify.py`. It checks package/archive hashes, all 60 source files and four catalogue inputs against Git, exact selections, commands, modes, resource caps, source/runtime links and recorded finalizer identities. Its shared offline helpers are in the adjacent H-remaining package. It never queries a recorded PID, sends a signal, launches a classification, or treats a waiting finalizer as complete.
+
+A separate completion downloader for this tag and the two H-remaining tags is documented in [deployment_h_remaining](../deployment_h_remaining/README.md). It writes verified future downloads to `/home/xingyu/insulator-campaign-download/TAG-finalized`; those later outputs are outside this launch-only package.
