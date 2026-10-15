@@ -13,9 +13,11 @@ import json
 import os
 from pathlib import Path
 import platform
+import select
 import shutil
 import signal
 import subprocess
+import threading
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -142,6 +144,55 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
     return metadata
 
 
+def _pump_pair_stdout(stream, log, case_ids, observed, stop, errors, capture):
+    """Copy exact bytes and timestamp complete, ordered marker lines on this node.
+
+    A stopped child may leave stdout inherited by another process. After the
+    runner has exited, drain available bytes but do not wait forever for that
+    inherited descriptor. Normal GAP shutdown supplies EOF before this limit.
+    Markers in the same pipe read share one observation timestamp, so a very
+    short second interval can legitimately be zero at this timing granularity.
+    """
+    markers = [("U1_PAIR_CASE_DONE " + case).encode("utf-8") for case in case_ids]
+    max_line = max(map(len, markers))
+    pending = b""
+    next_case = 0
+    drain_started = None
+    try:
+        while True:
+            if stop.is_set() and drain_started is None:
+                drain_started = time.monotonic()
+            ready, _, _ = select.select([stream.fileno()], [], [], 0.05)
+            if ready:
+                chunk = os.read(stream.fileno(), 65536)
+                seen = time.monotonic()  # Before potentially slow shared-filesystem writes.
+                if not chunk:
+                    capture["eofObserved"] = True
+                    break
+                parts = chunk.split(b"\n")
+                for index, part in enumerate(parts):
+                    # Only marker-sized lines need buffering; every byte is logged below.
+                    pending += part[:max(0, max_line + 1 - len(pending))]
+                    if index < len(parts) - 1:
+                        if next_case < len(markers) and pending == markers[next_case]:
+                            observed[case_ids[next_case]] = seen
+                            next_case += 1
+                        pending = b""
+                log.write(chunk)
+                log.flush()  # Make completion evidence promptly visible to offline recovery.
+            if drain_started is not None:
+                if not ready:
+                    capture["inheritedPipeClosedAfterIdle"] = True
+                    break
+                if time.monotonic() - drain_started >= 1.0:
+                    capture["inheritedPipeDrainLimitReached"] = True
+                    break
+    except Exception as error:
+        errors.append(error)
+    finally:
+        stream.close()
+
+
 def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh=False,
                   charge_primary="native", phase_class="cycles", closed_charge_source="certified"):
     """One GAP process, separate immutable outputs and independent omega contexts."""
@@ -180,6 +231,7 @@ def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh
     command = [gap, "-q", "-b", "--quitonbreak", "-m", "256m", "-K", memory,
                str(directories[0] / "driver.g")]
     started = time.time()
+    started_monotonic = time.monotonic()
     metadata = []
     for data, path, directory in zip(inputs, input_paths, directories):
         row = {"id": data["id"], "status": "running", "command": command,
@@ -191,47 +243,76 @@ def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh
                "chargePrimaryRequested": charge_primary, "phaseClassRequested": phase_class,
                "closedChargeSourceRequested": closed_charge_source,
                "pairedSpins": True, "batchCaseIDs": [item["id"] for item in inputs],
+               "timingMethod": "ordered-stdout-completion-markers-observed-with-time.monotonic",
+               "timingGranularity": "one-observation-timestamp-per-pipe-read",
+               "batchTimingMethod": "time.monotonic-including-stdout-drain",
+               "startedUTCMethod": "batch-wall-anchor-plus-monotonic-offset",
                "reusePolicy": "same group/resolution/bar and identical character linear algebra; independent omega/source contexts"}
         write_json(directory / "run.json", row)
         metadata.append(row)
     timed_out = False
-    with (directories[0] / "stdout.log").open("w") as out, (directories[0] / "stderr.log").open("w") as err:
-        process = subprocess.Popen(command, cwd=ROOT, stdout=out, stderr=err, start_new_session=True)
+    observed, pump_errors = {}, []
+    capture = {"eofObserved": False, "inheritedPipeClosedAfterIdle": False,
+               "inheritedPipeDrainLimitReached": False}
+    stop_pump = threading.Event()
+    with (directories[0] / "stdout.log").open("wb") as out, (directories[0] / "stderr.log").open("wb") as err:
+        process = subprocess.Popen(command, cwd=ROOT, stdout=subprocess.PIPE, stderr=err,
+                                   bufsize=0, start_new_session=True)
+        pump = threading.Thread(target=_pump_pair_stdout,
+                                args=(process.stdout, out, [data["id"] for data in inputs],
+                                      observed, stop_pump, pump_errors, capture), daemon=True)
+        pump.start()
         try:
-            code = process.wait(timeout=timeout * len(inputs))
-        except subprocess.TimeoutExpired:
-            timed_out = True
-            os.killpg(process.pid, signal.SIGTERM)
             try:
-                process.wait(timeout=5)
+                code = process.wait(timeout=timeout * len(inputs))
             except subprocess.TimeoutExpired:
-                os.killpg(process.pid, signal.SIGKILL)
-                process.wait()
-            code = process.returncode
+                timed_out = True
+                os.killpg(process.pid, signal.SIGTERM)
+                try:
+                    process.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    os.killpg(process.pid, signal.SIGKILL)
+                    process.wait()
+                code = process.returncode
+        finally:
+            stop_pump.set()
+            pump.join()
+        if pump_errors:
+            raise pump_errors[0]
+    ended_monotonic = time.monotonic()
     for directory in directories[1:]:
         for name in ("stdout.log", "stderr.log"):
             shutil.copyfile(directories[0] / name, directory / name)
-    previous_completion = started
+    previous_completion = started_monotonic
     for data, directory, row in zip(inputs, directories, metadata):
         native = directory / "native.json"
+        completed = observed.get(data["id"])
+        row.update(completionMarkerObserved=completed is not None,
+                   caseStartBoundaryAvailable=previous_completion is not None,
+                   caseTimingAvailable=completed is not None and previous_completion is not None,
+                   elapsedSeconds=None, stdoutCapture=dict(capture))
+        if previous_completion is not None:
+            row["startedUTC"] = datetime.fromtimestamp(
+                started + previous_completion - started_monotonic, timezone.utc).isoformat()
+        else:
+            row["startedUTCMethod"] = "batch-wall-anchor; individual-case-start-unavailable"
+        if row["caseTimingAvailable"]:
+            row["elapsedSeconds"] = round(completed - previous_completion, 3)
+        else:
+            row["timingUnavailableReason"] = "exact ordered completion marker or previous boundary not observed"
         row.update(status="timeout" if timed_out else "failed", exitCode=code,
-                   batchExitCode=code, batchElapsedSeconds=round(time.time() - started, 3))
+                   batchExitCode=code, batchElapsedSeconds=round(ended_monotonic - started_monotonic, 3))
         if native.is_file():
             try:
                 classification = json.loads(native.read_text())
                 required = {"torsion", "freeRank", "presentation", "witnesses", "scope"}
                 if not required <= classification.keys():
                     raise ValueError("Incomplete paired classification result")
-                completed = native.stat().st_mtime
-                row.update(status="complete", exitCode=0,
-                           startedUTC=datetime.fromtimestamp(previous_completion, timezone.utc).isoformat(),
-                           elapsedSeconds=round(completed - previous_completion, 3))
-                previous_completion = completed
+                row.update(status="complete", exitCode=0)
                 write_json(directory / "result.json", {"input": data, "classification": classification, "run": row})
             except (ValueError, TypeError) as error:
                 row["error"] = str(error)
-        if "elapsedSeconds" not in row:
-            row["elapsedSeconds"] = round(time.time() - previous_completion, 3)
+        previous_completion = completed
         write_json(directory / "run.json", row)
     return metadata
 
