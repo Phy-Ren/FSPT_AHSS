@@ -1,0 +1,1588 @@
+[
+  {
+    "classification": {
+      "actualGroupOrder": 1,
+      "background": {
+        "description": "Unitary internal C_N commuting with U(1)^f; no crystalline spin label",
+        "omega": 0,
+        "rho": 0,
+        "s": 0
+      },
+      "barCompletionChecks": 0,
+      "expectedOrderFromFiltration": 1,
+      "freeRank": 0,
+      "generators": [],
+      "group": {
+        "family": "internal_cyclic",
+        "order": 1
+      },
+      "incomingCohomology": {
+        "charge": [],
+        "sheet": []
+      },
+      "integerSourceIdenticallyZero": true,
+      "nativeCompletionChecks": 1,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "physicalClassificationCertified": false,
+      "physicalScopeCaveat": "Identification of the fixed CI model with the full physical kernel remains separate",
+      "presentation": [],
+      "presentationGeneratorCount": 0,
+      "scope": "Complete stacking group of the original four-data model for this cyclic background; intrinsic r0 excluded by scope",
+      "sourceConvention": {
+        "calibration": "sheet-linear",
+        "cubic": "1/6",
+        "epsilon": 0
+      },
+      "spatialDimension": 4,
+      "terminalObstructionTargetOrders": [],
+      "theory": "U(1)^f insulator",
+      "torsion": [],
+      "witnesses": []
+    },
+    "input": {
+      "crystallineSpinConvention": "not_assumed",
+      "dimension": 4,
+      "family": "internal_cyclic",
+      "id": "internal_cyclic_1_4p1",
+      "intrinsicR0Included": false,
+      "omega": "0",
+      "order": 1,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "rho": 0,
+      "s": 0
+    },
+    "run": {
+      "command": [
+        "/home/user/xyren/software/gap-4.13.1/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgpilot-20261015-a-cyclic12/internal_cyclic_1_4p1/driver.g"
+      ],
+      "elapsedSeconds": 17.09,
+      "exitCode": 0,
+      "host": "n08.local",
+      "id": "internal_cyclic_1_4p1",
+      "inputSHA256": "e69a7c648dc7bf8ff7465ed4ebd0c772453a822c163a321bdbf9d6ed1d57cdac",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "startedUTC": "2026-10-15T11:17:47.269298+00:00",
+      "status": "complete",
+      "timeoutSeconds": 1800
+    }
+  },
+  {
+    "classification": {
+      "actualGroupOrder": 16,
+      "background": {
+        "description": "Unitary internal C_N commuting with U(1)^f; no crystalline spin label",
+        "omega": 0,
+        "rho": 0,
+        "s": 0
+      },
+      "barCompletionChecks": 4,
+      "canonicalCochains": {
+        "CIPhase": "a1 cup x2 cup x2 / (6N)",
+        "a1": "least nonnegative exponent",
+        "charge": "x2 cup x2",
+        "neutralPhase": "a1 cup x2 cup x2 / (3N)",
+        "phaseRoot": "a1 cup x2 cup x2 / N",
+        "x2": "d a1 / N"
+      },
+      "expectedOrderFromFiltration": 16,
+      "freeRank": 0,
+      "generators": [
+        {
+          "kind": "neutral-E8",
+          "nativeState": {
+            "e_p": [
+              1
+            ],
+            "n_p": [
+              0
+            ],
+            "n_p2": [
+              0
+            ],
+            "nu_p3": [
+              "1/6"
+            ]
+          }
+        },
+        {
+          "kind": "CI-sheet",
+          "nativeState": {
+            "e_p": [
+              0
+            ],
+            "n_p": [
+              1
+            ],
+            "n_p2": [
+              0
+            ],
+            "nu_p3": [
+              "1/12"
+            ]
+          }
+        },
+        {
+          "kind": "charge",
+          "nativeState": {
+            "e_p": [
+              0
+            ],
+            "n_p": [
+              0
+            ],
+            "n_p2": [
+              1
+            ],
+            "nu_p3": [
+              0
+            ]
+          }
+        },
+        {
+          "kind": "shared-phase",
+          "nativeState": {
+            "e_p": [
+              0
+            ],
+            "n_p": [
+              0
+            ],
+            "n_p2": [
+              0
+            ],
+            "nu_p3": [
+              "1/2"
+            ]
+          }
+        }
+      ],
+      "group": {
+        "family": "internal_cyclic",
+        "order": 2
+      },
+      "incomingCohomology": {
+        "charge": [],
+        "sheet": []
+      },
+      "integerSourceIdenticallyZero": true,
+      "nativeCompletionChecks": 16,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "physicalClassificationCertified": false,
+      "physicalScopeCaveat": "Identification of the fixed CI model with the full physical kernel remains separate",
+      "presentation": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          2,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "presentationGeneratorCount": 4,
+      "scope": "Complete stacking group of the original four-data model for this cyclic background; intrinsic r0 excluded by scope",
+      "sourceConvention": {
+        "calibration": "sheet-linear",
+        "cubic": "1/6",
+        "epsilon": 0
+      },
+      "spatialDimension": 4,
+      "terminalObstructionTargetOrders": [],
+      "theory": "U(1)^f insulator",
+      "torsion": [
+        2,
+        8
+      ],
+      "witnesses": [
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0
+          ],
+          "nativeChargeGauge": [
+            0
+          ],
+          "nativeNeutralGauge": [
+            -1
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 2,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "neutral-E8"
+        },
+        {
+          "chargeCoefficient": 1,
+          "nativeCIGauge": [
+            -1
+          ],
+          "nativeChargeGauge": [
+            0
+          ],
+          "nativeNeutralGauge": [
+            0
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 1,
+          "power": 2,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "CI-sheet"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0
+          ],
+          "nativeChargeGauge": [
+            -1
+          ],
+          "nativeNeutralGauge": [
+            0
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 1,
+          "power": 2,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "charge"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0
+          ],
+          "nativeChargeGauge": [
+            0
+          ],
+          "nativeNeutralGauge": [
+            0
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 2,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "shared-phase"
+        }
+      ]
+    },
+    "input": {
+      "crystallineSpinConvention": "not_assumed",
+      "dimension": 4,
+      "family": "internal_cyclic",
+      "id": "internal_cyclic_2_4p1",
+      "intrinsicR0Included": false,
+      "omega": "0",
+      "order": 2,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "rho": 0,
+      "s": 0
+    },
+    "run": {
+      "command": [
+        "/home/user/xyren/software/gap-4.13.1/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgpilot-20261015-a-cyclic12/internal_cyclic_2_4p1/driver.g"
+      ],
+      "elapsedSeconds": 17.439,
+      "exitCode": 0,
+      "host": "n08.local",
+      "id": "internal_cyclic_2_4p1",
+      "inputSHA256": "c07ca5e27cabad6a2abfde87fc472e931fb428be971c41eba149c09013ec95a1",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "startedUTC": "2026-10-15T11:18:04.365957+00:00",
+      "status": "complete",
+      "timeoutSeconds": 1800
+    }
+  },
+  {
+    "classification": {
+      "actualGroupOrder": 81,
+      "background": {
+        "description": "Unitary internal C_N commuting with U(1)^f; no crystalline spin label",
+        "omega": 0,
+        "rho": 0,
+        "s": 0
+      },
+      "barCompletionChecks": 8,
+      "canonicalCochains": {
+        "CIPhase": "a1 cup x2 cup x2 / (6N)",
+        "a1": "least nonnegative exponent",
+        "charge": "x2 cup x2",
+        "neutralPhase": "a1 cup x2 cup x2 / (3N)",
+        "phaseRoot": "a1 cup x2 cup x2 / N",
+        "x2": "d a1 / N"
+      },
+      "expectedOrderFromFiltration": 81,
+      "freeRank": 0,
+      "generators": [
+        {
+          "kind": "neutral-E8",
+          "nativeState": {
+            "e_p": [
+              1
+            ],
+            "n_p": [
+              0
+            ],
+            "n_p2": [
+              0
+            ],
+            "nu_p3": [
+              "1/9"
+            ]
+          }
+        },
+        {
+          "kind": "CI-sheet",
+          "nativeState": {
+            "e_p": [
+              0
+            ],
+            "n_p": [
+              1
+            ],
+            "n_p2": [
+              0
+            ],
+            "nu_p3": [
+              "1/18"
+            ]
+          }
+        },
+        {
+          "kind": "charge",
+          "nativeState": {
+            "e_p": [
+              0
+            ],
+            "n_p": [
+              0
+            ],
+            "n_p2": [
+              1
+            ],
+            "nu_p3": [
+              0
+            ]
+          }
+        },
+        {
+          "kind": "shared-phase",
+          "nativeState": {
+            "e_p": [
+              0
+            ],
+            "n_p": [
+              0
+            ],
+            "n_p2": [
+              0
+            ],
+            "nu_p3": [
+              "1/3"
+            ]
+          }
+        }
+      ],
+      "group": {
+        "family": "internal_cyclic",
+        "order": 3
+      },
+      "incomingCohomology": {
+        "charge": [],
+        "sheet": []
+      },
+      "integerSourceIdenticallyZero": true,
+      "nativeCompletionChecks": 16,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "physicalClassificationCertified": false,
+      "physicalScopeCaveat": "Identification of the fixed CI model with the full physical kernel remains separate",
+      "presentation": [
+        [
+          3,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          3,
+          0,
+          -2
+        ],
+        [
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "presentationGeneratorCount": 4,
+      "scope": "Complete stacking group of the original four-data model for this cyclic background; intrinsic r0 excluded by scope",
+      "sourceConvention": {
+        "calibration": "sheet-linear",
+        "cubic": "1/6",
+        "epsilon": 0
+      },
+      "spatialDimension": 4,
+      "terminalObstructionTargetOrders": [],
+      "theory": "U(1)^f insulator",
+      "torsion": [
+        3,
+        3,
+        9
+      ],
+      "witnesses": [
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0
+          ],
+          "nativeChargeGauge": [
+            0
+          ],
+          "nativeNeutralGauge": [
+            -1
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 1,
+          "power": 3,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "neutral-E8"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            -1
+          ],
+          "nativeChargeGauge": [
+            -1
+          ],
+          "nativeNeutralGauge": [
+            0
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 2,
+          "power": 3,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "CI-sheet"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0
+          ],
+          "nativeChargeGauge": [
+            -1
+          ],
+          "nativeNeutralGauge": [
+            0
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 3,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "charge"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0
+          ],
+          "nativeChargeGauge": [
+            0
+          ],
+          "nativeNeutralGauge": [
+            0
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 3,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "shared-phase"
+        }
+      ]
+    },
+    "input": {
+      "crystallineSpinConvention": "not_assumed",
+      "dimension": 4,
+      "family": "internal_cyclic",
+      "id": "internal_cyclic_3_4p1",
+      "intrinsicR0Included": false,
+      "omega": "0",
+      "order": 3,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "rho": 0,
+      "s": 0
+    },
+    "run": {
+      "command": [
+        "/home/user/xyren/software/gap-4.13.1/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgpilot-20261015-a-cyclic3/internal_cyclic_3_4p1/driver.g"
+      ],
+      "elapsedSeconds": 20.648,
+      "exitCode": 0,
+      "host": "n08.local",
+      "id": "internal_cyclic_3_4p1",
+      "inputSHA256": "029ef4987eb284d4b7c1c267ef356cbc67ae5cabf7d49f8d6881d938fdf76c23",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "startedUTC": "2026-10-15T11:17:47.426362+00:00",
+      "status": "complete",
+      "timeoutSeconds": 1800
+    }
+  },
+  {
+    "classification": {
+      "actualGroupOrder": 256,
+      "background": {
+        "description": "Unitary internal C_N commuting with U(1)^f; no crystalline spin label",
+        "omega": 0,
+        "rho": 0,
+        "s": 0
+      },
+      "barCompletionChecks": 12,
+      "canonicalCochains": {
+        "CIPhase": "a1 cup x2 cup x2 / (6N)",
+        "a1": "least nonnegative exponent",
+        "charge": "x2 cup x2",
+        "neutralPhase": "a1 cup x2 cup x2 / (3N)",
+        "phaseRoot": "a1 cup x2 cup x2 / N",
+        "x2": "d a1 / N"
+      },
+      "expectedOrderFromFiltration": 256,
+      "freeRank": 0,
+      "generators": [
+        {
+          "kind": "neutral-E8",
+          "nativeState": {
+            "e_p": [
+              1,
+              0
+            ],
+            "n_p": [
+              0,
+              0
+            ],
+            "n_p2": [
+              0,
+              0
+            ],
+            "nu_p3": [
+              "1/6",
+              "1/12"
+            ]
+          }
+        },
+        {
+          "kind": "CI-sheet",
+          "nativeState": {
+            "e_p": [
+              0,
+              0
+            ],
+            "n_p": [
+              1,
+              0
+            ],
+            "n_p2": [
+              0,
+              0
+            ],
+            "nu_p3": [
+              "1/12",
+              "1/24"
+            ]
+          }
+        },
+        {
+          "kind": "charge",
+          "nativeState": {
+            "e_p": [
+              0,
+              0
+            ],
+            "n_p": [
+              0,
+              0
+            ],
+            "n_p2": [
+              1,
+              0
+            ],
+            "nu_p3": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "kind": "shared-phase",
+          "nativeState": {
+            "e_p": [
+              0,
+              0
+            ],
+            "n_p": [
+              0,
+              0
+            ],
+            "n_p2": [
+              0,
+              0
+            ],
+            "nu_p3": [
+              "1/2",
+              "1/4"
+            ]
+          }
+        }
+      ],
+      "group": {
+        "family": "internal_cyclic",
+        "order": 4
+      },
+      "incomingCohomology": {
+        "charge": [],
+        "sheet": []
+      },
+      "integerSourceIdenticallyZero": true,
+      "nativeCompletionChecks": 16,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "physicalClassificationCertified": false,
+      "physicalScopeCaveat": "Identification of the fixed CI model with the full physical kernel remains separate",
+      "presentation": [
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          -2,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          -2
+        ],
+        [
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "presentationGeneratorCount": 4,
+      "scope": "Complete stacking group of the original four-data model for this cyclic background; intrinsic r0 excluded by scope",
+      "sourceConvention": {
+        "calibration": "sheet-linear",
+        "cubic": "1/6",
+        "epsilon": 0
+      },
+      "spatialDimension": 4,
+      "terminalObstructionTargetOrders": [],
+      "theory": "U(1)^f insulator",
+      "torsion": [
+        2,
+        2,
+        4,
+        16
+      ],
+      "witnesses": [
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0,
+            0
+          ],
+          "nativeChargeGauge": [
+            0,
+            0
+          ],
+          "nativeNeutralGauge": [
+            -2,
+            -1
+          ],
+          "nativePhasePrimitive": [
+            0,
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 4,
+          "residualNativePhase": [
+            0,
+            0
+          ],
+          "root": "neutral-E8"
+        },
+        {
+          "chargeCoefficient": 2,
+          "nativeCIGauge": [
+            -2,
+            -1
+          ],
+          "nativeChargeGauge": [
+            -2,
+            -1
+          ],
+          "nativeNeutralGauge": [
+            0,
+            0
+          ],
+          "nativePhasePrimitive": [
+            0,
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 4,
+          "residualNativePhase": [
+            0,
+            0
+          ],
+          "root": "CI-sheet"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0,
+            0
+          ],
+          "nativeChargeGauge": [
+            -2,
+            -1
+          ],
+          "nativeNeutralGauge": [
+            0,
+            0
+          ],
+          "nativePhasePrimitive": [
+            0,
+            0
+          ],
+          "phaseCoefficient": 2,
+          "power": 4,
+          "residualNativePhase": [
+            0,
+            0
+          ],
+          "root": "charge"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0,
+            0
+          ],
+          "nativeChargeGauge": [
+            0,
+            0
+          ],
+          "nativeNeutralGauge": [
+            0,
+            0
+          ],
+          "nativePhasePrimitive": [
+            0,
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 4,
+          "residualNativePhase": [
+            0,
+            0
+          ],
+          "root": "shared-phase"
+        }
+      ]
+    },
+    "input": {
+      "crystallineSpinConvention": "not_assumed",
+      "dimension": 4,
+      "family": "internal_cyclic",
+      "id": "internal_cyclic_4_4p1",
+      "intrinsicR0Included": false,
+      "omega": "0",
+      "order": 4,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "rho": 0,
+      "s": 0
+    },
+    "run": {
+      "command": [
+        "/home/user/xyren/software/gap-4.13.1/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgpilot-20261015-a-cyclic4/internal_cyclic_4_4p1/driver.g"
+      ],
+      "elapsedSeconds": 27.054,
+      "exitCode": 0,
+      "host": "n08.local",
+      "id": "internal_cyclic_4_4p1",
+      "inputSHA256": "761497c6be62876947e815560d93a7c6df3bede1c00c799a240eeadc0c1e6b32",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "startedUTC": "2026-10-15T11:21:06.093485+00:00",
+      "status": "complete",
+      "timeoutSeconds": 3600
+    }
+  },
+  {
+    "classification": {
+      "actualGroupOrder": 625,
+      "background": {
+        "description": "Unitary internal C_N commuting with U(1)^f; no crystalline spin label",
+        "omega": 0,
+        "rho": 0,
+        "s": 0
+      },
+      "barCompletionChecks": 12,
+      "canonicalCochains": {
+        "CIPhase": "a1 cup x2 cup x2 / (6N)",
+        "a1": "least nonnegative exponent",
+        "charge": "x2 cup x2",
+        "neutralPhase": "a1 cup x2 cup x2 / (3N)",
+        "phaseRoot": "a1 cup x2 cup x2 / N",
+        "x2": "d a1 / N"
+      },
+      "expectedOrderFromFiltration": 625,
+      "freeRank": 0,
+      "generators": [
+        {
+          "kind": "neutral-E8",
+          "nativeState": {
+            "e_p": [
+              3
+            ],
+            "n_p": [
+              0
+            ],
+            "n_p2": [
+              0
+            ],
+            "nu_p3": [
+              "4/5"
+            ]
+          }
+        },
+        {
+          "kind": "CI-sheet",
+          "nativeState": {
+            "e_p": [
+              0
+            ],
+            "n_p": [
+              3
+            ],
+            "n_p2": [
+              0
+            ],
+            "nu_p3": [
+              "9/10"
+            ]
+          }
+        },
+        {
+          "kind": "charge",
+          "nativeState": {
+            "e_p": [
+              0
+            ],
+            "n_p": [
+              0
+            ],
+            "n_p2": [
+              9
+            ],
+            "nu_p3": [
+              "1/10"
+            ]
+          }
+        },
+        {
+          "kind": "shared-phase",
+          "nativeState": {
+            "e_p": [
+              0
+            ],
+            "n_p": [
+              0
+            ],
+            "n_p2": [
+              0
+            ],
+            "nu_p3": [
+              "2/5"
+            ]
+          }
+        }
+      ],
+      "group": {
+        "family": "internal_cyclic",
+        "order": 5
+      },
+      "incomingCohomology": {
+        "charge": [],
+        "sheet": []
+      },
+      "integerSourceIdenticallyZero": true,
+      "nativeCompletionChecks": 16,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "physicalClassificationCertified": false,
+      "physicalScopeCaveat": "Identification of the fixed CI model with the full physical kernel remains separate",
+      "presentation": [
+        [
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      "presentationGeneratorCount": 4,
+      "scope": "Complete stacking group of the original four-data model for this cyclic background; intrinsic r0 excluded by scope",
+      "sourceConvention": {
+        "calibration": "sheet-linear",
+        "cubic": "1/6",
+        "epsilon": 0
+      },
+      "spatialDimension": 4,
+      "terminalObstructionTargetOrders": [],
+      "theory": "U(1)^f insulator",
+      "torsion": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "witnesses": [
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0
+          ],
+          "nativeChargeGauge": [
+            0
+          ],
+          "nativeNeutralGauge": [
+            -3
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 5,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "neutral-E8"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            -3
+          ],
+          "nativeChargeGauge": [
+            -18
+          ],
+          "nativeNeutralGauge": [
+            0
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 5,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "CI-sheet"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0
+          ],
+          "nativeChargeGauge": [
+            -9
+          ],
+          "nativeNeutralGauge": [
+            0
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 5,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "charge"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0
+          ],
+          "nativeChargeGauge": [
+            0
+          ],
+          "nativeNeutralGauge": [
+            0
+          ],
+          "nativePhasePrimitive": [
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 5,
+          "residualNativePhase": [
+            0
+          ],
+          "root": "shared-phase"
+        }
+      ]
+    },
+    "input": {
+      "crystallineSpinConvention": "not_assumed",
+      "dimension": 4,
+      "family": "internal_cyclic",
+      "id": "internal_cyclic_5_4p1",
+      "intrinsicR0Included": false,
+      "omega": "0",
+      "order": 5,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "rho": 0,
+      "s": 0
+    },
+    "run": {
+      "command": [
+        "/home/user/xyren/software/gap-4.13.1/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgpilot-20261015-a-cyclic5/internal_cyclic_5_4p1/driver.g"
+      ],
+      "elapsedSeconds": 40.468,
+      "exitCode": 0,
+      "host": "n08.local",
+      "id": "internal_cyclic_5_4p1",
+      "inputSHA256": "291b2d7f03379a1b9eef5ad795ce360c05fea12c121223c80cafaa8431f9a6fd",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "startedUTC": "2026-10-15T11:21:06.307049+00:00",
+      "status": "complete",
+      "timeoutSeconds": 3600
+    }
+  },
+  {
+    "classification": {
+      "actualGroupOrder": 1296,
+      "background": {
+        "description": "Unitary internal C_N commuting with U(1)^f; no crystalline spin label",
+        "omega": 0,
+        "rho": 0,
+        "s": 0
+      },
+      "barCompletionChecks": 12,
+      "canonicalCochains": {
+        "CIPhase": "a1 cup x2 cup x2 / (6N)",
+        "a1": "least nonnegative exponent",
+        "charge": "x2 cup x2",
+        "neutralPhase": "a1 cup x2 cup x2 / (3N)",
+        "phaseRoot": "a1 cup x2 cup x2 / N",
+        "x2": "d a1 / N"
+      },
+      "expectedOrderFromFiltration": 1296,
+      "freeRank": 0,
+      "generators": [
+        {
+          "kind": "neutral-E8",
+          "nativeState": {
+            "e_p": [
+              1,
+              2,
+              1
+            ],
+            "n_p": [
+              0,
+              0,
+              0
+            ],
+            "n_p2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "nu_p3": [
+              "1/6",
+              "8/9",
+              "8/9",
+              "17/18"
+            ]
+          }
+        },
+        {
+          "kind": "CI-sheet",
+          "nativeState": {
+            "e_p": [
+              0,
+              0,
+              0
+            ],
+            "n_p": [
+              1,
+              2,
+              1
+            ],
+            "n_p2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "nu_p3": [
+              "1/12",
+              "4/9",
+              "17/18",
+              "35/36"
+            ]
+          }
+        },
+        {
+          "kind": "charge",
+          "nativeState": {
+            "e_p": [
+              0,
+              0,
+              0
+            ],
+            "n_p": [
+              0,
+              0,
+              0
+            ],
+            "n_p2": [
+              1,
+              4,
+              -1,
+              2
+            ],
+            "nu_p3": [
+              0,
+              "1/6",
+              "1/3",
+              0
+            ]
+          }
+        },
+        {
+          "kind": "shared-phase",
+          "nativeState": {
+            "e_p": [
+              0,
+              0,
+              0
+            ],
+            "n_p": [
+              0,
+              0,
+              0
+            ],
+            "n_p2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "nu_p3": [
+              "1/2",
+              "2/3",
+              "2/3",
+              "5/6"
+            ]
+          }
+        }
+      ],
+      "group": {
+        "family": "internal_cyclic",
+        "order": 6
+      },
+      "incomingCohomology": {
+        "charge": [],
+        "sheet": []
+      },
+      "integerSourceIdenticallyZero": true,
+      "nativeCompletionChecks": 16,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "physicalClassificationCertified": false,
+      "physicalScopeCaveat": "Identification of the fixed CI model with the full physical kernel remains separate",
+      "presentation": [
+        [
+          6,
+          0,
+          0,
+          -2
+        ],
+        [
+          0,
+          6,
+          -3,
+          -1
+        ],
+        [
+          0,
+          0,
+          6,
+          -3
+        ],
+        [
+          0,
+          0,
+          0,
+          6
+        ]
+      ],
+      "presentationGeneratorCount": 4,
+      "scope": "Complete stacking group of the original four-data model for this cyclic background; intrinsic r0 excluded by scope",
+      "sourceConvention": {
+        "calibration": "sheet-linear",
+        "cubic": "1/6",
+        "epsilon": 0
+      },
+      "spatialDimension": 4,
+      "terminalObstructionTargetOrders": [],
+      "theory": "U(1)^f insulator",
+      "torsion": [
+        3,
+        6,
+        72
+      ],
+      "witnesses": [
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0,
+            0
+          ],
+          "nativeChargeGauge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nativeNeutralGauge": [
+            -4,
+            -3
+          ],
+          "nativePhasePrimitive": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "phaseCoefficient": 2,
+          "power": 6,
+          "residualNativePhase": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "root": "neutral-E8"
+        },
+        {
+          "chargeCoefficient": 3,
+          "nativeCIGauge": [
+            -4,
+            -3
+          ],
+          "nativeChargeGauge": [
+            -6,
+            -16,
+            8,
+            0
+          ],
+          "nativeNeutralGauge": [
+            0,
+            0
+          ],
+          "nativePhasePrimitive": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "phaseCoefficient": 1,
+          "power": 6,
+          "residualNativePhase": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "root": "CI-sheet"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0,
+            0
+          ],
+          "nativeChargeGauge": [
+            -3,
+            -8,
+            4,
+            0
+          ],
+          "nativeNeutralGauge": [
+            0,
+            0
+          ],
+          "nativePhasePrimitive": [
+            "1/2",
+            0,
+            0,
+            0
+          ],
+          "phaseCoefficient": 3,
+          "power": 6,
+          "residualNativePhase": [
+            0,
+            0,
+            0,
+            "1/2"
+          ],
+          "root": "charge"
+        },
+        {
+          "chargeCoefficient": 0,
+          "nativeCIGauge": [
+            0,
+            0
+          ],
+          "nativeChargeGauge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nativeNeutralGauge": [
+            0,
+            0
+          ],
+          "nativePhasePrimitive": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "phaseCoefficient": 0,
+          "power": 6,
+          "residualNativePhase": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "root": "shared-phase"
+        }
+      ]
+    },
+    "input": {
+      "crystallineSpinConvention": "not_assumed",
+      "dimension": 4,
+      "family": "internal_cyclic",
+      "id": "internal_cyclic_6_4p1",
+      "intrinsicR0Included": false,
+      "omega": "0",
+      "order": 6,
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "rho": 0,
+      "s": 0
+    },
+    "run": {
+      "command": [
+        "/home/user/xyren/software/gap-4.13.1/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgpilot-20261015-a-cyclic6/internal_cyclic_6_4p1/driver.g"
+      ],
+      "elapsedSeconds": 101.503,
+      "exitCode": 0,
+      "host": "n08.local",
+      "id": "internal_cyclic_6_4p1",
+      "inputSHA256": "54e5bc329842cc602e08a0a6214c3f48dd5594dbc9c2c66de47855573f6ca4c7",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "startedUTC": "2026-10-15T11:21:06.508234+00:00",
+      "status": "complete",
+      "timeoutSeconds": 3600
+    }
+  }
+]

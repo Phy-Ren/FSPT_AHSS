@@ -1,0 +1,1290 @@
+{
+  "title": "2+1D Spin-1/2 point groups: n0=0, e0=0",
+  "scope": "The uniform E8 response is fixed to e0=0. The uniform IQH response is fixed to n0=0. The four data columns are final filtration groups after incoming identifications; their product need not be the final stacking group.",
+  "spatial_dimension": 2,
+  "spacetime_dimension": 3,
+  "physical_spin": "spin_half",
+  "family": "point2",
+  "n0_scope": "n0_zero",
+  "e0_scope": "e0_zero",
+  "e8_scope": "fixed_uniform_zero",
+  "columns": [
+    {
+      "key": "e",
+      "label": "e0 (E8)"
+    },
+    {
+      "key": "n",
+      "label": "n0 (CI)"
+    },
+    {
+      "key": "charge",
+      "label": "n2 (charge)"
+    },
+    {
+      "key": "phase",
+      "label": "nu3 (phase)"
+    },
+    {
+      "key": "stacking",
+      "label": "Final stacking"
+    },
+    {
+      "key": "Debray_relative",
+      "label": "Debray 2026v3, matching relative sector"
+    },
+    {
+      "key": "R2_journal",
+      "label": "Zhang–Yang–Qi–Gu 2022 stacking"
+    },
+    {
+      "key": "R2_arxiv",
+      "label": "Zhang–Yang–Qi–Gu 2023v2 stacking"
+    }
+  ],
+  "sources": {
+    "Debray": {
+      "authors": "Arun Debray",
+      "year": 2026,
+      "title": "Invertible phases for mixed spatial symmetries and the fermionic crystalline equivalence principle",
+      "url": "https://arxiv.org/abs/2102.02941v3",
+      "version": "v3, 2026-02-03",
+      "method": "Spin-c/Pin-c bordism, Adams spectral sequences, Anderson-dual equivariant phase homology",
+      "location": "Tables 1–6 and theorems specified separately in each row; extracted Class A phase groups",
+      "author": "Arun Debray",
+      "first_version": "2021-02-05",
+      "source_url": "https://arxiv.org/src/2102.02941v3",
+      "source_archive_sha256": "0e015df95d1b6fb9ac405446ed4edc7f9e843999c551ed81b15a9126412eb9ad",
+      "files_sha256": {
+        "cyclic.tex": "f7c48f8ac882841a4deff8fa6997b4f0891c43c4a92aa417f0a7e298c75e8d15",
+        "spinc_rotation.tex": "9feecd5aef6e761aa06976eba047c91414641d5df471763dff65787a507f9766",
+        "dihedral.tex": "5f9c2d2a50a2223a6741a96f5c34cc8b759ebb5ab537d550f412adda9f9341f8",
+        "para_n_gonal.tex": "771404e4a3389d1284998cbfb8f3b671ed0224b56d28abf9f91326ffc0fbfa1f",
+        "pin_reflection.tex": "8e4470ba32e4ab31a57183b8504a3a54db2966f32cf74a46ed878aaf21a57e65",
+        "inversion.tex": "2e80b964f34f0902342fa82d70e1f22929000714aaca59f7718171fe54d198c1",
+        "tet_oct_icos_generalities.tex": "2f53ce2fb93f4c8176062b8c6a44fdb8c7ef5aced1f89e140afe6094d54d71df"
+      },
+      "scope": "Interacting Class A only, under the generalized-homology ansatz. Class D columns are not extracted. Includes independent intrinsic responses and neutral bosonic contributions.",
+      "independence_limit": "Different mathematical method; v3 explicitly acknowledges revisions following comparison with Zhang-Ning-Qi-Gu2025. Not blind independence of the final tables."
+    },
+    "R2_journal": {
+      "authors": "Jian-Hao Zhang, Shuo Yang, Yang Qi, Zheng-Cheng Gu",
+      "year": 2022,
+      "title": "Real-space construction of crystalline topological superconductors and insulators in 2D interacting fermionic systems",
+      "url": "https://doi.org/10.1103/PhysRevResearch.4.033081",
+      "version": "Published 2022-07-29",
+      "method": "Interacting real-space block states, bubbles and stacking",
+      "location": "Table III p.4 (wallpaper); Supplement Table I p.2 (points)"
+    },
+    "R2_arxiv": {
+      "authors": "Jian-Hao Zhang, Shuo Yang, Yang Qi, Zheng-Cheng Gu",
+      "year": 2023,
+      "title": "Real-space construction of crystalline topological superconductors and insulators in 2D interacting fermionic systems",
+      "url": "https://arxiv.org/abs/2012.15657v2",
+      "version": "arXiv v2, 2023-06-20",
+      "method": "Interacting real-space block states, bubbles and stacking",
+      "location": "Main Table III; Supplemental Table I"
+    }
+  },
+  "rows": [
+    {
+      "id": "point2_01_spin_half",
+      "name": "C1",
+      "hermann_mauguin": "1",
+      "family": "point2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "Debray_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "scope": "relative_n0_e0_zero",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I p.2",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I; v2 TeX lines3547-3568",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 0,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "a871d6ed4ff4f649cc567b7760e3f503aef5af17755c62a3181566619a78ec92",
+        "started_utc": "2026-10-13T15:58:40.077853+00:00",
+        "record_sha256": "c8b75e0648d91d688cf3cb05076632c6b08eedea75f6bce16f412c8578955f81"
+      }
+    },
+    {
+      "id": "point2_02_spin_half",
+      "name": "C2",
+      "hermann_mauguin": "2",
+      "family": "point2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "Debray_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "scope": "relative_n0_e0_zero",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I p.2",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I; v2 TeX lines3547-3568",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 64,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "c301ffb999cedce06a6186359b426f678fda3202837138f933c1dafa20b7aba9",
+        "started_utc": "2026-10-15T05:37:10.284833+00:00",
+        "record_sha256": "6edc3fda183ba6d98c15be08b30e847110c1b66f75b7719357ca424b1698c746"
+      }
+    },
+    {
+      "id": "point2_03_spin_half",
+      "name": "Cs",
+      "hermann_mauguin": "m",
+      "family": "point2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "Debray_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "scope": "relative_n0_e0_zero",
+          "source_location": {
+            "source_file": "pin_reflection.tex",
+            "location": "Table 1, p.29, d=2"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I p.2",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I; v2 TeX lines3547-3568",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 4,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "481173c06b4769603765fa3e7ce52b41a37e008813756e261af28f1de8a8e12a",
+        "started_utc": "2026-10-13T15:58:56.680661+00:00",
+        "record_sha256": "42561057f5b4902f6323123760af7a4cd2aa8b27616e9929c103109514d76ebd"
+      }
+    },
+    {
+      "id": "point2_04_spin_half",
+      "name": "C2v",
+      "hermann_mauguin": "2mm",
+      "family": "point2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "Debray_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "scope": "relative_n0_e0_zero",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I p.2",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I; v2 TeX lines3547-3568",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 66,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "12110cf45247049aa29d96f3f34433fe7e532cff1a478864d9b052bca1f5d169",
+        "started_utc": "2026-10-15T05:37:10.285088+00:00",
+        "record_sha256": "1f502a5771cfb333e97a64bf5aaa19e2a8ad8d997fd604f9d5e0ed482bf62ddc"
+      }
+    },
+    {
+      "id": "point2_05_spin_half",
+      "name": "C4",
+      "hermann_mauguin": "4",
+      "family": "point2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          }
+        },
+        "Debray_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "scope": "relative_n0_e0_zero",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I p.2",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              4,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I; v2 TeX lines3547-3568",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 68,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "0c0cc9b5fb1085497fd0d62b7d67bf0d18842cc360557436e61f74fcd1e100d5",
+        "started_utc": "2026-10-15T05:37:10.287739+00:00",
+        "record_sha256": "21cdff60c1338a945d4d8f706a9fdfcd8f2ce911543c7b9e7f20f88c06e66219"
+      }
+    },
+    {
+      "id": "point2_06_spin_half",
+      "name": "C4v",
+      "hermann_mauguin": "4mm",
+      "family": "point2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "Debray_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "scope": "relative_n0_e0_zero",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I p.2",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I; v2 TeX lines3547-3568",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 70,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "636169aa61b7a080e86d93598cc33c5db100ff7c3fab1c8aac4bd2d7b8d0ae68",
+        "started_utc": "2026-10-15T05:37:27.151005+00:00",
+        "record_sha256": "ce3c62f413a0429307635675a52271f7cb3ecec790afee78414b153bd69c5f86"
+      }
+    },
+    {
+      "id": "point2_07_spin_half",
+      "name": "C3",
+      "hermann_mauguin": "3",
+      "family": "point2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "Debray_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "scope": "relative_n0_e0_zero",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I p.2",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I; v2 TeX lines3547-3568",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 12,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "a7e299eee7cae41dcf94a3356a1ca23bb298318c7f6e36b7a2a10999813214b9",
+        "started_utc": "2026-10-13T15:59:30.026155+00:00",
+        "record_sha256": "c765a2fd670b2cd0a9a2b2e32f0791c6530f35c76a1a95f8d5edc430224adc62"
+      }
+    },
+    {
+      "id": "point2_08_spin_half",
+      "name": "C3v",
+      "hermann_mauguin": "3m",
+      "family": "point2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "Debray_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "scope": "relative_n0_e0_zero",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I p.2",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I; v2 TeX lines3547-3568",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 14,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "d6a6c0ed60f763b86ae9457b64608ea4274c1b3f769edc9b734551dc033761ef",
+        "started_utc": "2026-10-13T15:59:31.732714+00:00",
+        "record_sha256": "f1916d4f14bea7ae7de6e9cfb866ec25826565bf2685aa152f0e30a87378f07b"
+      }
+    },
+    {
+      "id": "point2_09_spin_half",
+      "name": "C6",
+      "hermann_mauguin": "6",
+      "family": "point2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              12
+            ],
+            "freeRank": 0
+          }
+        },
+        "Debray_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              12
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "scope": "relative_n0_e0_zero",
+          "source_location": {
+            "source_file": "cyclic.tex",
+            "location": "Table 3, p.33; Sec.4.3.3, Theorem 4.14"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              6,
+              6
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I p.2",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              6,
+              6
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I; v2 TeX lines3547-3568",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 72,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "9ac3b943049390786fe6f1150c59578f2a843f156b0b8337d352a98bfe645fb2",
+        "started_utc": "2026-10-15T05:37:27.341471+00:00",
+        "record_sha256": "bfb3d1972e9810934c2127882e43fecfc787566ce8dffff0e12df93936c57b7b"
+      }
+    },
+    {
+      "id": "point2_10_spin_half",
+      "name": "C6v",
+      "hermann_mauguin": "6mm",
+      "family": "point2",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "Debray_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              6
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "scope": "relative_n0_e0_zero",
+          "source_location": {
+            "source_file": "dihedral.tex",
+            "location": "Table 4, p.36, d=2; Secs.4.4.3-4.4.4"
+          },
+          "comparison_limit": "For cyclic rotations, forgetting rotation restricts onto the two-integer intrinsic electronic response lattice; the finite kernel is the torsion subgroup. Setting e0=0 retains one free response integer. For reflection groups both uniform responses vanish. These are abstract subgroup types, not a dictionary for the solver's primitive roots or product convention."
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              6
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I p.2",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              6
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Supplement Table I; v2 TeX lines3547-3568",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 74,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "e9a3d68eb9b3034778d8d4b11ae731a8d2b52808db62450eb32480ecc4a818d5",
+        "started_utc": "2026-10-15T05:37:27.441830+00:00",
+        "record_sha256": "025a20a90498687753d322378e3a5f63811deddbfdaabd6fa137356bd4f7447c"
+      }
+    }
+  ],
+  "comparison_counts": {
+    "e": {
+      "not_compared": 10
+    },
+    "n": {
+      "not_compared": 10
+    },
+    "charge": {
+      "not_compared": 10
+    },
+    "phase": {
+      "not_compared": 10
+    },
+    "stacking": {
+      "not_compared": 10
+    },
+    "Debray_relative": {
+      "match": 10
+    },
+    "R2_journal": {
+      "match": 7,
+      "mismatch": 3
+    },
+    "R2_arxiv": {
+      "match": 7,
+      "mismatch": 3
+    }
+  },
+  "availability_counts": {
+    "e": {
+      "available": 10
+    },
+    "n": {
+      "available": 10
+    },
+    "charge": {
+      "available": 10
+    },
+    "phase": {
+      "available": 10
+    },
+    "stacking": {
+      "available": 10
+    },
+    "Debray_relative": {
+      "available": 10
+    },
+    "R2_journal": {
+      "available": 10
+    },
+    "R2_arxiv": {
+      "available": 10
+    }
+  }
+}

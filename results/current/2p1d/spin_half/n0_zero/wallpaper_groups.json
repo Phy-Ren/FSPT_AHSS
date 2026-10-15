@@ -1,0 +1,2589 @@
+{
+  "title": "2+1D Spin-1/2 wallpaper groups: n0=0, e0=0",
+  "scope": "The uniform E8 response is fixed to e0=0. The uniform IQH response is fixed to n0=0. The four data columns are final filtration groups after incoming identifications; their product need not be the final stacking group.",
+  "spatial_dimension": 2,
+  "spacetime_dimension": 3,
+  "physical_spin": "spin_half",
+  "family": "wallpaper",
+  "n0_scope": "n0_zero",
+  "e0_scope": "e0_zero",
+  "e8_scope": "fixed_uniform_zero",
+  "columns": [
+    {
+      "key": "e",
+      "label": "e0 (E8)"
+    },
+    {
+      "key": "n",
+      "label": "n0 (CI)"
+    },
+    {
+      "key": "charge",
+      "label": "n2 (charge)"
+    },
+    {
+      "key": "phase",
+      "label": "nu3 (phase)"
+    },
+    {
+      "key": "stacking",
+      "label": "Final stacking"
+    },
+    {
+      "key": "R2_journal",
+      "label": "Zhang–Yang–Qi–Gu 2022 stacking"
+    },
+    {
+      "key": "R2_arxiv",
+      "label": "Zhang–Yang–Qi–Gu 2023v2 stacking"
+    },
+    {
+      "key": "MCB_relative",
+      "label": "Manjunath–Calvera–Barkeshli 2024, C=c-=0"
+    },
+    {
+      "key": "L2_charge",
+      "label": "Wang–Qi–Fang–Cheng–Gu 2021v1 charge layer"
+    },
+    {
+      "key": "L2_phase",
+      "label": "Wang–Qi–Fang–Cheng–Gu 2021v1 final phase layer"
+    }
+  ],
+  "sources": {
+    "R2_journal": {
+      "authors": "Jian-Hao Zhang, Shuo Yang, Yang Qi, Zheng-Cheng Gu",
+      "year": 2022,
+      "title": "Real-space construction of crystalline topological superconductors and insulators in 2D interacting fermionic systems",
+      "url": "https://doi.org/10.1103/PhysRevResearch.4.033081",
+      "version": "Published 2022-07-29",
+      "method": "Interacting real-space block states, bubbles and stacking",
+      "location": "Table III p.4 (wallpaper); Supplement Table I p.2 (points)"
+    },
+    "R2_arxiv": {
+      "authors": "Jian-Hao Zhang, Shuo Yang, Yang Qi, Zheng-Cheng Gu",
+      "year": 2023,
+      "title": "Real-space construction of crystalline topological superconductors and insulators in 2D interacting fermionic systems",
+      "url": "https://arxiv.org/abs/2012.15657v2",
+      "version": "arXiv v2, 2023-06-20",
+      "method": "Interacting real-space block states, bubbles and stacking",
+      "location": "Main Table III; Supplemental Table I"
+    },
+    "MCB": {
+      "authors": "Naren Manjunath, Vladimir Calvera, Maissam Barkeshli",
+      "year": 2024,
+      "title": "Characterization and classification of interacting (2+1)D topological crystalline insulators with orientation-preserving wallpaper groups",
+      "url": "https://doi.org/10.1103/PhysRevB.109.035168",
+      "version": "PRB109,035168 (2024); extraction pinned to arXiv2309.12389v1",
+      "method": "Interacting invertible-phase response invariants",
+      "location": "Table I and Sec.III; response-defined subgroups C=c-=0 or k1=0"
+    },
+    "L2": {
+      "authors": "Qing-Rui Wang, Yang Qi, Chen Fang, Meng Cheng, Zheng-Cheng Gu",
+      "year": 2021,
+      "title": "Exactly solvable lattice models for interacting electronic insulators in two dimensions",
+      "url": "https://arxiv.org/abs/2112.15533v1",
+      "version": "arXiv v1, 2021-12-31; journal PRB108,L121104 (2023), journal tables not separately verified",
+      "method": "Interacting charge decoration, super-cocycle equations and commuting-projector construction",
+      "location": "Supplement H, Tables II and III p.17; final charge and phase layers"
+    }
+  },
+  "rows": [
+    {
+      "id": "wallpaper_01_spin_half",
+      "name": "p1",
+      "hermann_mauguin": "p1",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line340",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "MCB",
+          "scope": "C=c_minus=0, hence n0=e0=0",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6022",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6022",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 20,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "38f9d9bd88f81f2de7db91fe07eea51849dbfcb5c09ea697e5648d17e18f2aac",
+        "started_utc": "2026-10-13T16:00:09.359559+00:00",
+        "record_sha256": "64598d63e94a527f3729c60a061217082abb3800c83a1dc7cac514d0574e89f1"
+      }
+    },
+    {
+      "id": "wallpaper_02_spin_half",
+      "name": "p2",
+      "hermann_mauguin": "p2",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              4
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line342",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "MCB",
+          "scope": "C=c_minus=0, hence n0=e0=0",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6023",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6023",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 22,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "8fc0fa0dbdaee8884712df41340286a2ee3ead51311f90c03f5fa6fe57485c23",
+        "started_utc": "2026-10-13T16:00:09.358104+00:00",
+        "record_sha256": "a04a4bf7b6c174f8028a7731c5df5f6dc9a6fd3743d55d46726a08c7e0879198"
+      }
+    },
+    {
+      "id": "wallpaper_03_spin_half",
+      "name": "pm",
+      "hermann_mauguin": "pm",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line344",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6024",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6024",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 24,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "bcd9fe09e0547d5cfd58532c6804a83d25ecd46f75168c30f3c293a87d079dc6",
+        "started_utc": "2026-10-13T16:00:26.260300+00:00",
+        "record_sha256": "167046823aab621cd920a851f08e2eb2c6edb49fe4238562fa7e0188a00c802e"
+      }
+    },
+    {
+      "id": "wallpaper_04_spin_half",
+      "name": "pg",
+      "hermann_mauguin": "pg",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line346",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6025",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6025",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 76,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "5aae60741424e4260c77e72fa4e5be5071cef7d7f6d67950cff2f2ee895601fb",
+        "started_utc": "2026-10-15T05:37:44.339428+00:00",
+        "record_sha256": "c76453445e74a8c14fc3e57612ec2792d8608178ae2509a1e06ddf485df1cab7"
+      }
+    },
+    {
+      "id": "wallpaper_05_spin_half",
+      "name": "cm",
+      "hermann_mauguin": "cm",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line348",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6026",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6026",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 28,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "54b87171daa3143d5413e274bd2b630b4c130d231691ff14f58dafdc92544289",
+        "started_utc": "2026-10-13T16:00:44.809500+00:00",
+        "record_sha256": "996ca0c5ce009451cbfc877c6874bcece921f745bb72f908c43fd2f8949e851d"
+      }
+    },
+    {
+      "id": "wallpaper_06_spin_half",
+      "name": "pmm",
+      "hermann_mauguin": "pmm",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line350",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6027",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6027",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 30,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "0001631fffa501c16df59c18e255f7092e615b7afb68639483b78a5750708e99",
+        "started_utc": "2026-10-13T16:00:46.579142+00:00",
+        "record_sha256": "305968ec1426eb981527daa874ebe7b6427a6a6dcfb0c0699e8e61016fe49daf"
+      }
+    },
+    {
+      "id": "wallpaper_07_spin_half",
+      "name": "pmg",
+      "hermann_mauguin": "pmg",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line352",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6028",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6028",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 32,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "aa9cb192fdcb702b5914624bd2939608a4c4afaacfb4d46c00499285f70cbcee",
+        "started_utc": "2026-10-13T16:01:03.820227+00:00",
+        "record_sha256": "c717aa1f6f031bfcaf18825c99d43c6726e76066405e916dbe1a28041ed365bf"
+      }
+    },
+    {
+      "id": "wallpaper_08_spin_half",
+      "name": "pgg",
+      "hermann_mauguin": "pgg",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line354",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6029",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6029",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 78,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "893acbb89200842426b81fe14e4fb3cbf582e0e7d05c5e591c820d630bda25a0",
+        "started_utc": "2026-10-15T05:37:45.643700+00:00",
+        "record_sha256": "8cfffa34f7d940fd456445320e0a4db7722029449613b322c79ddb714bdc4bec"
+      }
+    },
+    {
+      "id": "wallpaper_09_spin_half",
+      "name": "cmm",
+      "hermann_mauguin": "cmm",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line356",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6030",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6030",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 36,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "d1ac32315a436b9e1da455189b1a23889b79c3edf51fc27466788d88a2b122d1",
+        "started_utc": "2026-10-13T16:01:29.184066+00:00",
+        "record_sha256": "516a6c956457e626e15c0e758df8a5818ffd14ae2dbbf99c6f59b29f27172fb8"
+      }
+    },
+    {
+      "id": "wallpaper_10_spin_half",
+      "name": "p4",
+      "hermann_mauguin": "p4",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line358",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              8
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "MCB",
+          "scope": "C=c_minus=0, hence n0=e0=0",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6031",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6031",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 80,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "b7dd41b903fe5825f27594a8e6180edd38df1b04e220d67345e819545943fe67",
+        "started_utc": "2026-10-15T05:37:47.899437+00:00",
+        "record_sha256": "1cbebd322a5f791469b7d2fe9f2c9c9353ca44901a6edf74e9190363039d8e8e"
+      }
+    },
+    {
+      "id": "wallpaper_11_spin_half",
+      "name": "p4m",
+      "hermann_mauguin": "p4m",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line360",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6032",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6032",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 40,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "d7866c8b59b9f4e4fe69107325365d16cfb7853f1d1da1d9accc93d89fada5c8",
+        "started_utc": "2026-10-13T16:01:50.736581+00:00",
+        "record_sha256": "d137c783ea4ea8c2165dc3755274731863198a9b7b485f47dd62ba6b17f598be"
+      }
+    },
+    {
+      "id": "wallpaper_12_spin_half",
+      "name": "p4g",
+      "hermann_mauguin": "p4g",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line362",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6033",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6033",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 82,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "fa92892fe710dec80a4be16c08be3d8afca0717e4448543b0cec9b6f45c82a88",
+        "started_utc": "2026-10-15T05:38:03.092197+00:00",
+        "record_sha256": "a90174d465522cf938c6332f5ca0b08842d442e7ec531811e1281b15f603c287"
+      }
+    },
+    {
+      "id": "wallpaper_13_spin_half",
+      "name": "p3",
+      "hermann_mauguin": "p3",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line364",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "MCB",
+          "scope": "C=c_minus=0, hence n0=e0=0",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6034",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6034",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 44,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "b384402132b5dc5fb7155c4d80d73741de77db37eeb00706f2d1c6e7044bc7de",
+        "started_utc": "2026-10-13T16:02:22.655308+00:00",
+        "record_sha256": "817fc94bb0cc683effb9965daf314eac8047ed8c655071115cc0f6e5f5f3b748"
+      }
+    },
+    {
+      "id": "wallpaper_14_spin_half",
+      "name": "p3m1",
+      "hermann_mauguin": "p3m1",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              6
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              6
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              6
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line366",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6035",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6035",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 46,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "977f62984d1e2cfd3b55b58a1a0168293c7d946e268aa7af5f43df9ab512c2dd",
+        "started_utc": "2026-10-13T16:02:42.858884+00:00",
+        "record_sha256": "d8524de0c4508269f145ac0ae4f054a996e25240e3abdfd0cc6936e9af65374b"
+      }
+    },
+    {
+      "id": "wallpaper_15_spin_half",
+      "name": "p31m",
+      "hermann_mauguin": "p31m",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              6
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              6
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              6
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line368",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6036",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              6
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6036",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 48,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "58a5913a8c634d3183781e91a724bc77bf1317eda160578b8184fec27111d701",
+        "started_utc": "2026-10-13T16:02:44.538199+00:00",
+        "record_sha256": "fffb5abd98c8da6e1d2e34f37a666f3fff37d80aa46a0bd2286dc549d3149f8d"
+      }
+    },
+    {
+      "id": "wallpaper_16_spin_half",
+      "name": "p6",
+      "hermann_mauguin": "p6",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              6
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              6,
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              6,
+              12
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              6,
+              12
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              6,
+              12
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line370",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3,
+              6,
+              12
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "MCB",
+          "scope": "C=c_minus=0, hence n0=e0=0",
+          "source_location": "Table I and Sec.III response restrictions",
+          "comparison_limit": "Only response-defined abstract subgroup types are compared. No map from stored native roots to all source response invariants, nor a universal physical calibration of the nonzero-n0 cochain product, is established by this audit."
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              6
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6037",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              6,
+              6
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6037",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/two_dimensional_20261013/results.json",
+        "array_index": 50,
+        "selector": "classification.relativeUniformIQH0",
+        "source_sha256": "23348286149c2f923abb021aa09e1dd0537597beba67e2ffbbec07e642809b58",
+        "input_sha256": "dbe73d12eab9ca34c8e8fcac46c6c0de16032e34a6a6c4b637d4aaabc128742d",
+        "started_utc": "2026-10-13T16:03:09.901035+00:00",
+        "record_sha256": "97fd815c99529b0f8c218dd9245a4bb5e2c6e7517b091dc4299531c7bca7223f"
+      }
+    },
+    {
+      "id": "wallpaper_17_spin_half",
+      "name": "p6m",
+      "hermann_mauguin": "p6m",
+      "family": "wallpaper",
+      "physical_spin": "spin_half",
+      "spatial_dimension": 2,
+      "spacetime_dimension": 3,
+      "n0_scope": "n0_zero",
+      "e0_scope": "e0_zero",
+      "e8_scope": "fixed_uniform_zero",
+      "cells": {
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              6
+            ],
+            "freeRank": 1
+          }
+        },
+        "R2_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              6
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_journal",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III p.033081-4",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "R2_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              6
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "R2_arxiv",
+          "scope": "n0=e0=0",
+          "source_location": "Main Table III; v2 TeX line372",
+          "comparison_limit": "Abstract stacking only; free wallpaper charge embedding not identified"
+        },
+        "MCB_relative": {
+          "availability": "not_applicable",
+          "reason": "source covers orientation-preserving wallpaper groups",
+          "comparison_status": "not_compared"
+        },
+        "L2_charge": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              3
+            ],
+            "freeRank": 1
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final charge layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6038",
+          "comparison_limit": null
+        },
+        "L2_phase": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "L2",
+          "scope": "final phase layer; not a stacking group",
+          "source_location": "Supplement H, II, TeX line6038",
+          "comparison_limit": null
+        }
+      },
+      "provenance": {
+        "path": "results/four_data_campaign_20261015/results.json",
+        "array_index": 84,
+        "selector": "classification",
+        "source_sha256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+        "input_sha256": "638deead8490c4d7d521886403d9534f2df92ce4f4cc61a68efeabbb3e9aa874",
+        "started_utc": "2026-10-15T05:38:07.103636+00:00",
+        "record_sha256": "8e3ce917f9f659721be455493c81dbae493dca2d742dd72daa31acf33fb196f2"
+      }
+    }
+  ],
+  "comparison_counts": {
+    "e": {
+      "not_compared": 17
+    },
+    "n": {
+      "not_compared": 17
+    },
+    "charge": {
+      "not_compared": 17
+    },
+    "phase": {
+      "not_compared": 17
+    },
+    "stacking": {
+      "not_compared": 17
+    },
+    "R2_journal": {
+      "match": 17
+    },
+    "R2_arxiv": {
+      "match": 17
+    },
+    "MCB_relative": {
+      "match": 5,
+      "not_compared": 12
+    },
+    "L2_charge": {
+      "match": 17
+    },
+    "L2_phase": {
+      "match": 17
+    }
+  },
+  "availability_counts": {
+    "e": {
+      "available": 17
+    },
+    "n": {
+      "available": 17
+    },
+    "charge": {
+      "available": 17
+    },
+    "phase": {
+      "available": 17
+    },
+    "stacking": {
+      "available": 17
+    },
+    "R2_journal": {
+      "available": 17
+    },
+    "R2_arxiv": {
+      "available": 17
+    },
+    "MCB_relative": {
+      "available": 5,
+      "not_applicable": 12
+    },
+    "L2_charge": {
+      "available": 17
+    },
+    "L2_phase": {
+      "available": 17
+    }
+  }
+}

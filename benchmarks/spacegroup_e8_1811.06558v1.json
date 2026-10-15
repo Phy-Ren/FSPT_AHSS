@@ -1,0 +1,2651 @@
+{
+  "source": {
+    "authors": [
+      "Hao Song",
+      "Charles Zhaoxi Xiong",
+      "Sheng-Jie Huang"
+    ],
+    "title": "Bosonic Crystalline Symmetry Protected Topological Phases Beyond the Group Cohomology Proposal",
+    "arxiv": "1811.06558v1",
+    "arxiv_date": "2018-11-15",
+    "url": "https://arxiv.org/abs/1811.06558v1",
+    "journal": "Physical Review B 101, 165129 (2020)",
+    "doi": "10.1103/PhysRevB.101.165129",
+    "method": "Interacting bosonic cellular E8 construction and signed integral H1; Appendix A signed-H1 theorem and Table II, fourth column.",
+    "scope": "Neutral E8 decoration H1(G,Z_orientation) only. Not the full electronic stacking group.",
+    "sourceFile": "cSRE_arXiv_v1.tex",
+    "sourceSHA256": "949b201a508de0b09be967ecc7ca9a2500224d76be3c3dbd9ea1aaffe5e599a1"
+  },
+  "rows": [
+    {
+      "spaceGroupNumber": 1,
+      "symbolTeX": "P1",
+      "neutralE8": {
+        "freeRank": 3,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}^{3}$}",
+      "sourceLine": 2414
+    },
+    {
+      "spaceGroupNumber": 2,
+      "symbolTeX": "P\\overline{1}",
+      "neutralE8": {
+        "freeRank": 3,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}^{3}$}",
+      "sourceLine": 2415
+    },
+    {
+      "spaceGroupNumber": 3,
+      "symbolTeX": "P2",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2416
+    },
+    {
+      "spaceGroupNumber": 4,
+      "symbolTeX": "P2_{1}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2417
+    },
+    {
+      "spaceGroupNumber": 5,
+      "symbolTeX": "C2",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2418
+    },
+    {
+      "spaceGroupNumber": 6,
+      "symbolTeX": "Pm",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2419
+    },
+    {
+      "spaceGroupNumber": 7,
+      "symbolTeX": "Pc",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2420
+    },
+    {
+      "spaceGroupNumber": 8,
+      "symbolTeX": "Cm",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2421
+    },
+    {
+      "spaceGroupNumber": 9,
+      "symbolTeX": "Cc",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2422
+    },
+    {
+      "spaceGroupNumber": 10,
+      "symbolTeX": "P2/m",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2423
+    },
+    {
+      "spaceGroupNumber": 11,
+      "symbolTeX": "P2_{1}/m",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2424
+    },
+    {
+      "spaceGroupNumber": 12,
+      "symbolTeX": "C2/m",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2425
+    },
+    {
+      "spaceGroupNumber": 13,
+      "symbolTeX": "P2/c",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2426
+    },
+    {
+      "spaceGroupNumber": 14,
+      "symbolTeX": "P2_{1}/c",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2427
+    },
+    {
+      "spaceGroupNumber": 15,
+      "symbolTeX": "C2/c",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2428
+    },
+    {
+      "spaceGroupNumber": 16,
+      "symbolTeX": "P222",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2429
+    },
+    {
+      "spaceGroupNumber": 17,
+      "symbolTeX": "P222_{1}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2430
+    },
+    {
+      "spaceGroupNumber": 18,
+      "symbolTeX": "P2_{1}2_{1}2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2431
+    },
+    {
+      "spaceGroupNumber": 19,
+      "symbolTeX": "P2_{1}2_{1}2_{1}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2432
+    },
+    {
+      "spaceGroupNumber": 20,
+      "symbolTeX": "C222_{1}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2433
+    },
+    {
+      "spaceGroupNumber": 21,
+      "symbolTeX": "C222",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2434
+    },
+    {
+      "spaceGroupNumber": 22,
+      "symbolTeX": "F222",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2435
+    },
+    {
+      "spaceGroupNumber": 23,
+      "symbolTeX": "I222",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2436
+    },
+    {
+      "spaceGroupNumber": 24,
+      "symbolTeX": "I2_{1}2_{1}2_{1}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2437
+    },
+    {
+      "spaceGroupNumber": 25,
+      "symbolTeX": "Pmm2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2438
+    },
+    {
+      "spaceGroupNumber": 26,
+      "symbolTeX": "Pmc2_{1}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2439
+    },
+    {
+      "spaceGroupNumber": 27,
+      "symbolTeX": "Pcc2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2440
+    },
+    {
+      "spaceGroupNumber": 28,
+      "symbolTeX": "Pma2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2441
+    },
+    {
+      "spaceGroupNumber": 29,
+      "symbolTeX": "Pca2_{1}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2442
+    },
+    {
+      "spaceGroupNumber": 30,
+      "symbolTeX": "Pnc2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2443
+    },
+    {
+      "spaceGroupNumber": 31,
+      "symbolTeX": "Pmn2_{1}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2444
+    },
+    {
+      "spaceGroupNumber": 32,
+      "symbolTeX": "Pba2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2445
+    },
+    {
+      "spaceGroupNumber": 33,
+      "symbolTeX": "Pna2_{1}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2446
+    },
+    {
+      "spaceGroupNumber": 34,
+      "symbolTeX": "Pnn2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2447
+    },
+    {
+      "spaceGroupNumber": 35,
+      "symbolTeX": "Cmm2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2448
+    },
+    {
+      "spaceGroupNumber": 36,
+      "symbolTeX": "Cmc2_{1}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2449
+    },
+    {
+      "spaceGroupNumber": 37,
+      "symbolTeX": "Ccc2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2450
+    },
+    {
+      "spaceGroupNumber": 38,
+      "symbolTeX": "Amm2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2451
+    },
+    {
+      "spaceGroupNumber": 39,
+      "symbolTeX": "Aem2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2452
+    },
+    {
+      "spaceGroupNumber": 40,
+      "symbolTeX": "Ama2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2453
+    },
+    {
+      "spaceGroupNumber": 41,
+      "symbolTeX": "Aea2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2454
+    },
+    {
+      "spaceGroupNumber": 42,
+      "symbolTeX": "Fmm2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2455
+    },
+    {
+      "spaceGroupNumber": 43,
+      "symbolTeX": "Fdd2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2468
+    },
+    {
+      "spaceGroupNumber": 44,
+      "symbolTeX": "Imm2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2469
+    },
+    {
+      "spaceGroupNumber": 45,
+      "symbolTeX": "Iba2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2470
+    },
+    {
+      "spaceGroupNumber": 46,
+      "symbolTeX": "Ima2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2471
+    },
+    {
+      "spaceGroupNumber": 47,
+      "symbolTeX": "Pmmm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2472
+    },
+    {
+      "spaceGroupNumber": 48,
+      "symbolTeX": "Pnnn",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2473
+    },
+    {
+      "spaceGroupNumber": 49,
+      "symbolTeX": "Pccm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2474
+    },
+    {
+      "spaceGroupNumber": 50,
+      "symbolTeX": "Pban",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2475
+    },
+    {
+      "spaceGroupNumber": 51,
+      "symbolTeX": "Pmma",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2476
+    },
+    {
+      "spaceGroupNumber": 52,
+      "symbolTeX": "Pnna",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2477
+    },
+    {
+      "spaceGroupNumber": 53,
+      "symbolTeX": "Pmna",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2478
+    },
+    {
+      "spaceGroupNumber": 54,
+      "symbolTeX": "Pcca",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2479
+    },
+    {
+      "spaceGroupNumber": 55,
+      "symbolTeX": "Pbam",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2480
+    },
+    {
+      "spaceGroupNumber": 56,
+      "symbolTeX": "Pccn",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2481
+    },
+    {
+      "spaceGroupNumber": 57,
+      "symbolTeX": "Pbcm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2482
+    },
+    {
+      "spaceGroupNumber": 58,
+      "symbolTeX": "Pnnm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2483
+    },
+    {
+      "spaceGroupNumber": 59,
+      "symbolTeX": "Pmmn",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2484
+    },
+    {
+      "spaceGroupNumber": 60,
+      "symbolTeX": "Pbcn",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2485
+    },
+    {
+      "spaceGroupNumber": 61,
+      "symbolTeX": "Pbca",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2486
+    },
+    {
+      "spaceGroupNumber": 62,
+      "symbolTeX": "Pnma",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2487
+    },
+    {
+      "spaceGroupNumber": 63,
+      "symbolTeX": "Cmcm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2488
+    },
+    {
+      "spaceGroupNumber": 64,
+      "symbolTeX": "Cmca",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2489
+    },
+    {
+      "spaceGroupNumber": 65,
+      "symbolTeX": "Cmmm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2490
+    },
+    {
+      "spaceGroupNumber": 66,
+      "symbolTeX": "Cccm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2491
+    },
+    {
+      "spaceGroupNumber": 67,
+      "symbolTeX": "Cmme",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2492
+    },
+    {
+      "spaceGroupNumber": 68,
+      "symbolTeX": "Ccce",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2493
+    },
+    {
+      "spaceGroupNumber": 69,
+      "symbolTeX": "Fmmm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2494
+    },
+    {
+      "spaceGroupNumber": 70,
+      "symbolTeX": "Fddd",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2495
+    },
+    {
+      "spaceGroupNumber": 71,
+      "symbolTeX": "Immm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2496
+    },
+    {
+      "spaceGroupNumber": 72,
+      "symbolTeX": "Ibam",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2497
+    },
+    {
+      "spaceGroupNumber": 73,
+      "symbolTeX": "Ibca",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2498
+    },
+    {
+      "spaceGroupNumber": 74,
+      "symbolTeX": "Imma",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2499
+    },
+    {
+      "spaceGroupNumber": 75,
+      "symbolTeX": "P4",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2500
+    },
+    {
+      "spaceGroupNumber": 76,
+      "symbolTeX": "P4_{1}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2501
+    },
+    {
+      "spaceGroupNumber": 77,
+      "symbolTeX": "P4_{2}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2502
+    },
+    {
+      "spaceGroupNumber": 78,
+      "symbolTeX": "P4_{3}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2503
+    },
+    {
+      "spaceGroupNumber": 79,
+      "symbolTeX": "I4",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2504
+    },
+    {
+      "spaceGroupNumber": 80,
+      "symbolTeX": "I4_{1}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2505
+    },
+    {
+      "spaceGroupNumber": 81,
+      "symbolTeX": "P\\overline{4}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2506
+    },
+    {
+      "spaceGroupNumber": 82,
+      "symbolTeX": "I\\overline{4}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2507
+    },
+    {
+      "spaceGroupNumber": 83,
+      "symbolTeX": "P4/m",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2508
+    },
+    {
+      "spaceGroupNumber": 84,
+      "symbolTeX": "P4_{2}/m",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2509
+    },
+    {
+      "spaceGroupNumber": 85,
+      "symbolTeX": "P4/n",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2510
+    },
+    {
+      "spaceGroupNumber": 86,
+      "symbolTeX": "P4_{2}/n",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2511
+    },
+    {
+      "spaceGroupNumber": 87,
+      "symbolTeX": "I4/m",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2512
+    },
+    {
+      "spaceGroupNumber": 88,
+      "symbolTeX": "I4_{1}/a",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2513
+    },
+    {
+      "spaceGroupNumber": 89,
+      "symbolTeX": "P422",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2514
+    },
+    {
+      "spaceGroupNumber": 90,
+      "symbolTeX": "P42_{1}2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2515
+    },
+    {
+      "spaceGroupNumber": 91,
+      "symbolTeX": "P4_{1}22",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2516
+    },
+    {
+      "spaceGroupNumber": 92,
+      "symbolTeX": "P4_{1}2_{1}2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2517
+    },
+    {
+      "spaceGroupNumber": 93,
+      "symbolTeX": "P4_{2}22",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2530
+    },
+    {
+      "spaceGroupNumber": 94,
+      "symbolTeX": "P4_{2}2_{1}2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2531
+    },
+    {
+      "spaceGroupNumber": 95,
+      "symbolTeX": "P4_{3}22",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2532
+    },
+    {
+      "spaceGroupNumber": 96,
+      "symbolTeX": "P4_{3}2_{1}2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2533
+    },
+    {
+      "spaceGroupNumber": 97,
+      "symbolTeX": "I422",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2534
+    },
+    {
+      "spaceGroupNumber": 98,
+      "symbolTeX": "I4_{1}22",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2535
+    },
+    {
+      "spaceGroupNumber": 99,
+      "symbolTeX": "P4mm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2536
+    },
+    {
+      "spaceGroupNumber": 100,
+      "symbolTeX": "P4bm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2537
+    },
+    {
+      "spaceGroupNumber": 101,
+      "symbolTeX": "P4_{2}cm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2538
+    },
+    {
+      "spaceGroupNumber": 102,
+      "symbolTeX": "P4_{2}nm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2539
+    },
+    {
+      "spaceGroupNumber": 103,
+      "symbolTeX": "P4cc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2540
+    },
+    {
+      "spaceGroupNumber": 104,
+      "symbolTeX": "P4nc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2541
+    },
+    {
+      "spaceGroupNumber": 105,
+      "symbolTeX": "P4_{2}mc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2542
+    },
+    {
+      "spaceGroupNumber": 106,
+      "symbolTeX": "P4_{2}bc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2543
+    },
+    {
+      "spaceGroupNumber": 107,
+      "symbolTeX": "I4mm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2544
+    },
+    {
+      "spaceGroupNumber": 108,
+      "symbolTeX": "I4cm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2545
+    },
+    {
+      "spaceGroupNumber": 109,
+      "symbolTeX": "I4_{1}md",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2546
+    },
+    {
+      "spaceGroupNumber": 110,
+      "symbolTeX": "I4_{1}cd",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2547
+    },
+    {
+      "spaceGroupNumber": 111,
+      "symbolTeX": "P\\overline{4}2m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2548
+    },
+    {
+      "spaceGroupNumber": 112,
+      "symbolTeX": "P\\overline{4}2c",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2549
+    },
+    {
+      "spaceGroupNumber": 113,
+      "symbolTeX": "P\\overline{4}2_{1}m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2550
+    },
+    {
+      "spaceGroupNumber": 114,
+      "symbolTeX": "P\\overline{4}2_{1}c",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2551
+    },
+    {
+      "spaceGroupNumber": 115,
+      "symbolTeX": "P\\overline{4}m2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2552
+    },
+    {
+      "spaceGroupNumber": 116,
+      "symbolTeX": "P\\overline{4}c2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2553
+    },
+    {
+      "spaceGroupNumber": 117,
+      "symbolTeX": "P\\overline{4}b2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2554
+    },
+    {
+      "spaceGroupNumber": 118,
+      "symbolTeX": "P\\overline{4}n2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2555
+    },
+    {
+      "spaceGroupNumber": 119,
+      "symbolTeX": "I\\overline{4}m2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2556
+    },
+    {
+      "spaceGroupNumber": 120,
+      "symbolTeX": "I\\overline{4}c2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2557
+    },
+    {
+      "spaceGroupNumber": 121,
+      "symbolTeX": "I\\overline{4}2m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2558
+    },
+    {
+      "spaceGroupNumber": 122,
+      "symbolTeX": "I\\overline{4}2d",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2559
+    },
+    {
+      "spaceGroupNumber": 123,
+      "symbolTeX": "P4/mmm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2560
+    },
+    {
+      "spaceGroupNumber": 124,
+      "symbolTeX": "P4/mcc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2561
+    },
+    {
+      "spaceGroupNumber": 125,
+      "symbolTeX": "P4/nbm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2562
+    },
+    {
+      "spaceGroupNumber": 126,
+      "symbolTeX": "P4/nnc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2563
+    },
+    {
+      "spaceGroupNumber": 127,
+      "symbolTeX": "P4/mbm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2564
+    },
+    {
+      "spaceGroupNumber": 128,
+      "symbolTeX": "P4/mnc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2565
+    },
+    {
+      "spaceGroupNumber": 129,
+      "symbolTeX": "P4/nmm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2566
+    },
+    {
+      "spaceGroupNumber": 130,
+      "symbolTeX": "P4/ncc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2567
+    },
+    {
+      "spaceGroupNumber": 131,
+      "symbolTeX": "P4_{2}/mmc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2568
+    },
+    {
+      "spaceGroupNumber": 132,
+      "symbolTeX": "P4_{2}/mcm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2569
+    },
+    {
+      "spaceGroupNumber": 133,
+      "symbolTeX": "P4_{2}/nbc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2570
+    },
+    {
+      "spaceGroupNumber": 134,
+      "symbolTeX": "P4_{2}/nnm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2571
+    },
+    {
+      "spaceGroupNumber": 135,
+      "symbolTeX": "P4_{2}/mbc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2572
+    },
+    {
+      "spaceGroupNumber": 136,
+      "symbolTeX": "P4_{2}/mnm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2573
+    },
+    {
+      "spaceGroupNumber": 137,
+      "symbolTeX": "P4_{2}/nmc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2574
+    },
+    {
+      "spaceGroupNumber": 138,
+      "symbolTeX": "P4_{2}/ncm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2575
+    },
+    {
+      "spaceGroupNumber": 139,
+      "symbolTeX": "I4/mmm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2576
+    },
+    {
+      "spaceGroupNumber": 140,
+      "symbolTeX": "I4/mcm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2577
+    },
+    {
+      "spaceGroupNumber": 141,
+      "symbolTeX": "I4_{1}/amd",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2578
+    },
+    {
+      "spaceGroupNumber": 142,
+      "symbolTeX": "I4_{1}/acd",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2579
+    },
+    {
+      "spaceGroupNumber": 143,
+      "symbolTeX": "P3",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2592
+    },
+    {
+      "spaceGroupNumber": 144,
+      "symbolTeX": "P3_{1}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2593
+    },
+    {
+      "spaceGroupNumber": 145,
+      "symbolTeX": "P3_{2}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2594
+    },
+    {
+      "spaceGroupNumber": 146,
+      "symbolTeX": "R3",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2595
+    },
+    {
+      "spaceGroupNumber": 147,
+      "symbolTeX": "P\\overline{3}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2596
+    },
+    {
+      "spaceGroupNumber": 148,
+      "symbolTeX": "R\\overline{3}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2597
+    },
+    {
+      "spaceGroupNumber": 149,
+      "symbolTeX": "P312",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2598
+    },
+    {
+      "spaceGroupNumber": 150,
+      "symbolTeX": "P321",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2599
+    },
+    {
+      "spaceGroupNumber": 151,
+      "symbolTeX": "P3_{1}12",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2600
+    },
+    {
+      "spaceGroupNumber": 152,
+      "symbolTeX": "P3_{1}21",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2601
+    },
+    {
+      "spaceGroupNumber": 153,
+      "symbolTeX": "P3_{2}12",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2602
+    },
+    {
+      "spaceGroupNumber": 154,
+      "symbolTeX": "P3_{2}21",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2603
+    },
+    {
+      "spaceGroupNumber": 155,
+      "symbolTeX": "R32",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2604
+    },
+    {
+      "spaceGroupNumber": 156,
+      "symbolTeX": "P3m1",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2605
+    },
+    {
+      "spaceGroupNumber": 157,
+      "symbolTeX": "P31m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2606
+    },
+    {
+      "spaceGroupNumber": 158,
+      "symbolTeX": "P3c1",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2607
+    },
+    {
+      "spaceGroupNumber": 159,
+      "symbolTeX": "P31c",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2608
+    },
+    {
+      "spaceGroupNumber": 160,
+      "symbolTeX": "R3m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2609
+    },
+    {
+      "spaceGroupNumber": 161,
+      "symbolTeX": "R3c",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2610
+    },
+    {
+      "spaceGroupNumber": 162,
+      "symbolTeX": "P\\overline{3}1m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2611
+    },
+    {
+      "spaceGroupNumber": 163,
+      "symbolTeX": "P\\overline{3}1c",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2612
+    },
+    {
+      "spaceGroupNumber": 164,
+      "symbolTeX": "P\\overline{3}m1",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2613
+    },
+    {
+      "spaceGroupNumber": 165,
+      "symbolTeX": "P\\overline{3}c1",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2614
+    },
+    {
+      "spaceGroupNumber": 166,
+      "symbolTeX": "R\\overline{3}m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2615
+    },
+    {
+      "spaceGroupNumber": 167,
+      "symbolTeX": "R\\overline{3}c",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2616
+    },
+    {
+      "spaceGroupNumber": 168,
+      "symbolTeX": "P6",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2617
+    },
+    {
+      "spaceGroupNumber": 169,
+      "symbolTeX": "P6_{1}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2618
+    },
+    {
+      "spaceGroupNumber": 170,
+      "symbolTeX": "P6_{5}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2619
+    },
+    {
+      "spaceGroupNumber": 171,
+      "symbolTeX": "P6_{2}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2620
+    },
+    {
+      "spaceGroupNumber": 172,
+      "symbolTeX": "P6_{4}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2621
+    },
+    {
+      "spaceGroupNumber": 173,
+      "symbolTeX": "P6_{3}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}$}",
+      "sourceLine": 2622
+    },
+    {
+      "spaceGroupNumber": 174,
+      "symbolTeX": "P\\overline{6}",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2623
+    },
+    {
+      "spaceGroupNumber": 175,
+      "symbolTeX": "P6/m",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2624
+    },
+    {
+      "spaceGroupNumber": 176,
+      "symbolTeX": "P6_{3}/m",
+      "neutralE8": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "{$\\mathbb{Z}_2\\times\\mathbb{Z}$}",
+      "sourceLine": 2625
+    },
+    {
+      "spaceGroupNumber": 177,
+      "symbolTeX": "P622",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2626
+    },
+    {
+      "spaceGroupNumber": 178,
+      "symbolTeX": "P6_{1}22",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2627
+    },
+    {
+      "spaceGroupNumber": 179,
+      "symbolTeX": "P6_{5}22",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2628
+    },
+    {
+      "spaceGroupNumber": 180,
+      "symbolTeX": "P6_{2}22",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2629
+    },
+    {
+      "spaceGroupNumber": 181,
+      "symbolTeX": "P6_{4}22",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2630
+    },
+    {
+      "spaceGroupNumber": 182,
+      "symbolTeX": "P6_{3}22",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2631
+    },
+    {
+      "spaceGroupNumber": 183,
+      "symbolTeX": "P6mm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2632
+    },
+    {
+      "spaceGroupNumber": 184,
+      "symbolTeX": "P6cc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2633
+    },
+    {
+      "spaceGroupNumber": 185,
+      "symbolTeX": "P6_{3}cm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2634
+    },
+    {
+      "spaceGroupNumber": 186,
+      "symbolTeX": "P6_{3}mc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2635
+    },
+    {
+      "spaceGroupNumber": 187,
+      "symbolTeX": "P\\overline{6}m2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2636
+    },
+    {
+      "spaceGroupNumber": 188,
+      "symbolTeX": "P\\overline{6}c2",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2637
+    },
+    {
+      "spaceGroupNumber": 189,
+      "symbolTeX": "P\\overline{6}2m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2638
+    },
+    {
+      "spaceGroupNumber": 190,
+      "symbolTeX": "P\\overline{6}2c",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2639
+    },
+    {
+      "spaceGroupNumber": 191,
+      "symbolTeX": "P6/mmm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2640
+    },
+    {
+      "spaceGroupNumber": 192,
+      "symbolTeX": "P6/mcc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2641
+    },
+    {
+      "spaceGroupNumber": 193,
+      "symbolTeX": "P6_{3}/mcm",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2656
+    },
+    {
+      "spaceGroupNumber": 194,
+      "symbolTeX": "P6_{3}/mmc",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2657
+    },
+    {
+      "spaceGroupNumber": 195,
+      "symbolTeX": "P23",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2658
+    },
+    {
+      "spaceGroupNumber": 196,
+      "symbolTeX": "F23",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2659
+    },
+    {
+      "spaceGroupNumber": 197,
+      "symbolTeX": "I23",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2660
+    },
+    {
+      "spaceGroupNumber": 198,
+      "symbolTeX": "P2_{1}3",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2661
+    },
+    {
+      "spaceGroupNumber": 199,
+      "symbolTeX": "I2_{1}3",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2662
+    },
+    {
+      "spaceGroupNumber": 200,
+      "symbolTeX": "Pm\\overline{3}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2663
+    },
+    {
+      "spaceGroupNumber": 201,
+      "symbolTeX": "Pn\\overline{3}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2664
+    },
+    {
+      "spaceGroupNumber": 202,
+      "symbolTeX": "Fm\\overline{3}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2665
+    },
+    {
+      "spaceGroupNumber": 203,
+      "symbolTeX": "Fd\\overline{3}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2666
+    },
+    {
+      "spaceGroupNumber": 204,
+      "symbolTeX": "Im\\overline{3}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2667
+    },
+    {
+      "spaceGroupNumber": 205,
+      "symbolTeX": "Pa\\overline{3}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2668
+    },
+    {
+      "spaceGroupNumber": 206,
+      "symbolTeX": "Ia\\overline{3}",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2669
+    },
+    {
+      "spaceGroupNumber": 207,
+      "symbolTeX": "P432",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2670
+    },
+    {
+      "spaceGroupNumber": 208,
+      "symbolTeX": "P4_{2}32",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2671
+    },
+    {
+      "spaceGroupNumber": 209,
+      "symbolTeX": "F432",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2672
+    },
+    {
+      "spaceGroupNumber": 210,
+      "symbolTeX": "F4_{1}32",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2673
+    },
+    {
+      "spaceGroupNumber": 211,
+      "symbolTeX": "I432",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2674
+    },
+    {
+      "spaceGroupNumber": 212,
+      "symbolTeX": "P4_{3}32",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2675
+    },
+    {
+      "spaceGroupNumber": 213,
+      "symbolTeX": "P4_{1}32",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2676
+    },
+    {
+      "spaceGroupNumber": 214,
+      "symbolTeX": "I4_{1}32",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceCellTeX": "",
+      "sourceLine": 2677
+    },
+    {
+      "spaceGroupNumber": 215,
+      "symbolTeX": "P\\overline{4}3m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2678
+    },
+    {
+      "spaceGroupNumber": 216,
+      "symbolTeX": "F\\overline{4}3m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2679
+    },
+    {
+      "spaceGroupNumber": 217,
+      "symbolTeX": "I\\overline{4}3m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2680
+    },
+    {
+      "spaceGroupNumber": 218,
+      "symbolTeX": "P\\overline{4}3n",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2681
+    },
+    {
+      "spaceGroupNumber": 219,
+      "symbolTeX": "F\\overline{4}3c",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2682
+    },
+    {
+      "spaceGroupNumber": 220,
+      "symbolTeX": "I\\overline{4}3d",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2683
+    },
+    {
+      "spaceGroupNumber": 221,
+      "symbolTeX": "Pm\\overline{3}m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2684
+    },
+    {
+      "spaceGroupNumber": 222,
+      "symbolTeX": "Pn\\overline{3}n",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2685
+    },
+    {
+      "spaceGroupNumber": 223,
+      "symbolTeX": "Pm\\overline{3}n",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2686
+    },
+    {
+      "spaceGroupNumber": 224,
+      "symbolTeX": "Pn\\overline{3}m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2687
+    },
+    {
+      "spaceGroupNumber": 225,
+      "symbolTeX": "Fm\\overline{3}m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2688
+    },
+    {
+      "spaceGroupNumber": 226,
+      "symbolTeX": "Fm\\overline{3}c",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2689
+    },
+    {
+      "spaceGroupNumber": 227,
+      "symbolTeX": "Fd\\overline{3}m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2690
+    },
+    {
+      "spaceGroupNumber": 228,
+      "symbolTeX": "Fd\\overline{3}c",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2691
+    },
+    {
+      "spaceGroupNumber": 229,
+      "symbolTeX": "Im\\overline{3}m",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2692
+    },
+    {
+      "spaceGroupNumber": 230,
+      "symbolTeX": "Ia\\overline{3}d",
+      "neutralE8": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceCellTeX": "$\\mathbb{Z}_2$",
+      "sourceLine": 2693
+    }
+  ]
+}
