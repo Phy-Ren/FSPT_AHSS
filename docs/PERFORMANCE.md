@@ -85,6 +85,13 @@ mode retains the original lower-field callbacks after vacuum gauges.
 
 Measurements below refer to specific workloads, not universal speed factors.
 
+The [adjacent native-vector reuse check](../results/spacegroup_campaign_20261015/native_vector_reuse/README.md)
+reduces native transfer calls from **384 to 352 across ten complete classifications**
+by immediately reusing vectors already returned by the full completed-state check.
+All output fields other than resolution construction timings agree, including
+every check and witness; 864 signed gauge-phase values also agree exactly.
+This is an operation-count result, with no measured wall-time speedup claim.
+
 | Workload on the same local host | Reference | Accelerated | Scope |
 | --- | ---: | ---: | --- |
 | Complete SG14 classification, exact simplex engine versus added source/product DAG | 70.919 s | 32.456 s | Complete roots, gauges, primitives and presentation agree |

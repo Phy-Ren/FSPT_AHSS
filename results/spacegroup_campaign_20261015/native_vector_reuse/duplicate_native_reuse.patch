@@ -1,0 +1,38 @@
+--- a/gap/classification.g
++++ b/gap/classification.g
+@@ -131,7 +131,7 @@
+   return rec(nativeSheet:=sheet,nativeCharge:=charge,nativePhase:=phase);
+ end);
+ BindGlobal("U1ReduceVacuum",function(c,d,state)
+-  local a,u,v,record,mode;
++  local a,u,v,record,mode,checked;
+   # Internal precondition: a completed full bar state with removable sheet and
+   # charge classes. For closed f the integral comparison identity gives
+   # d(U1Solve(f))=f pointwise; native solvability alone is not this premise.
+@@ -154,8 +154,10 @@
+   record.nativeChargeParameter:=U1Native(c,d-1,"Zr",v);
+   a:=U1Gauge(c,d,a,U1Zero,v);
+   if mode="canonical" then a.charge:=U1Zero;fi;
+-  U1CheckCompletedState(c,d,a);
+-  record.nativeFinalPhase:=U1Native(c,d+1,"U1s",a.phase);
++  # Reuse the exact vector from the immediately preceding full check.
++  # No callback, context or coefficient action changes between these uses.
++  checked:=U1CheckCompletedState(c,d,a);
++  record.nativeFinalPhase:=checked.nativePhase;
+   if not IsBound(c.reductionWitnesses) then c.reductionWitnesses:=[];fi;
+   Add(c.reductionWitnesses,record);return a.phase;
+ end);
+@@ -356,9 +358,10 @@
+     Add(witnesses,rec(kind:="charge-root",coefficients:=v,phaseCoordinates:=co));
+   od;
+   reduceCharge:=function(a)
+-    local qco,coords,target,diff,pco;
+-    U1CheckCompletedState(c,d,a);
+-    qco:=HQ.coordinates(U1Native(c,d,"Zr",a.charge));
++    local qco,coords,target,diff,pco,checked;
++    # The full check already transferred this unchanged charge callback.
++    checked:=U1CheckCompletedState(c,d,a);
++    qco:=HQ.coordinates(checked.nativeCharge);
+     if qco=fail then Error("Root charge is not closed");fi;
+     if nq=0 then coords:=[];else coords:=qco*Ki;fi;
+     if not ForAll(coords,IsInt) then Error("Root charge not in obstruction kernel");fi;
