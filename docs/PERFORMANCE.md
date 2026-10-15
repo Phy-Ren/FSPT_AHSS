@@ -92,6 +92,12 @@ All output fields other than resolution construction timings agree, including
 every check and witness; 864 signed gauge-phase values also agree exactly.
 This is an operation-count result, with no measured wall-time speedup claim.
 
+The isolated [q2 mod-two transfer control](../results/spacegroup_campaign_20261015/q2_full_control/README.md)
+preserves all 35 scientific fields in a complete same-node SG141 spin-half
+comparison, but shows no whole-run benefit: 1342.36 versus 1356.01 wall seconds.
+It is not part of the production defaults. A faster individual source
+evaluation is insufficient evidence for a faster complete classification.
+
 | Workload on the same local host | Reference | Accelerated | Scope |
 | --- | ---: | ---: | --- |
 | Complete SG14 classification, exact simplex engine versus added source/product DAG | 70.919 s | 32.456 s | Complete roots, gauges, primitives and presentation agree |
@@ -166,3 +172,9 @@ budget per case, doubled for a paired process. Concurrency must also leave room
 for the Python workers. The separate [32g spin-half launch evidence](../results/spacegroup_campaign_20261015/deployment_h_tail_highmem/README.md)
 records the higher-memory controls; it does not establish their completion or
 a performance gain.
+
+The [accepted high-memory tail](../results/spacegroup_campaign_20261015/completed_h_tail_highmem/README.md)
+records the subsequently completed SG226 and SG230 spin-half classifications.
+The separate [12g SG226 spinless failure](../results/spacegroup_campaign_20261015/failed_h_spinless_12g/README.md)
+retains its workspace-exhaustion error and a bounded profile showing garbage
+collection. It is not an accepted result; its retry has independent provenance.

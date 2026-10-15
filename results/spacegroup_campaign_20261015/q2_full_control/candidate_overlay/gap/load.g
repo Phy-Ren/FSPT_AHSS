@@ -1,0 +1,14 @@
+if not IsBound(U1_ROOT) then U1_ROOT:=".";fi;
+Read(Concatenation(U1_ROOT,"/gap/backend.g"));
+Read(Concatenation(U1_ROOT,"/gap/cup_data.g"));
+Read(Concatenation(U1_ROOT,"/gap/cochains.g"));
+Read(Concatenation(U1_ROOT,"/gap/context.g"));
+Read(Concatenation(U1_ROOT,"/gap/class_coordinates.g"));
+if not IsBound(U1_USE_MOD2_CONTRACTION) then U1_USE_MOD2_CONTRACTION:=true;fi;
+Read(Concatenation(U1_ROOT,"/gap/backend_mod2_contraction.g"));
+Read(Concatenation(U1_ROOT,"/gap/backend_bar_mod2.g"));
+Read(Concatenation(U1_ROOT,"/gap/backend_diagonal.g"));
+Read(Concatenation(U1_ROOT,"/gap/charge_primary.g"));
+Read(Concatenation(U1_ROOT,"/gap/backend_half_phase.g"));
+Read(Concatenation(U1_ROOT,"/gap/charge_source.g"));
+Read(Concatenation(U1_ROOT,"/gap/classification.g"));

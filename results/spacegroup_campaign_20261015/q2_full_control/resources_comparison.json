@@ -1,0 +1,34 @@
+{
+  "baselineDividedByCandidate": {
+    "maximumResidentSetSizeKiB": 0.9960529503556558,
+    "totalCPUSeconds": 0.977116686767407,
+    "wallSeconds": 0.9899337025538159
+  },
+  "classificationOrIntegrationOrPublicationLaunched": false,
+  "collectorSHA256": "1fd8a1e1c62b5c962d4dc2d3202b6d1b7aa1df688219078aee71e4a01bcfc518",
+  "comparatorSHA256": "544c85ee58913087babfb26076a6d41d17f71bf1af8c6e0e93ded1800c0abaa7",
+  "comparisonSHA256": "7ebab49f8b9d7191ca8631768492e70589655d27820c58c01748be0b91d24a7b",
+  "diagnosticOnly": true,
+  "exactScientificFields": 35,
+  "existingHistoricalReferenceAndFreshBaselineBothMatch": true,
+  "runs": {
+    "baseline": {
+      "exitStatus": 0,
+      "maximumResidentSetSizeKiB": 10590784,
+      "systemCPUSeconds": 6.18,
+      "totalCPUSeconds": 1239.5800000000002,
+      "userCPUSeconds": 1233.4,
+      "wallSeconds": 1342.36
+    },
+    "candidate": {
+      "exitStatus": 0,
+      "maximumResidentSetSizeKiB": 10632752,
+      "systemCPUSeconds": 20.24,
+      "totalCPUSeconds": 1268.61,
+      "userCPUSeconds": 1248.37,
+      "wallSeconds": 1356.01
+    }
+  },
+  "sameNode": "n08",
+  "scope": "One concurrent same-node SG141 spin-half diagnostic; not a universal speed or memory claim. GNU time maximum RSS is its reported process high-water metric, not a sampled aggregate simultaneous process-tree peak."
+}
