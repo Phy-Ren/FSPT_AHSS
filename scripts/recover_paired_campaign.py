@@ -306,6 +306,10 @@ def _inspect_case(read_raw, report, batches, source, selection, case):
         expected_native = str(PurePosixPath(report['originalCampaignRoot']) / case / 'native.json')
         if command[-1] != expected_driver:
             raise ValueError('Singleton command does not target its original campaign driver')
+        from scripts.classify import gap_literal
+        input_line = 'U1_INPUT:=' + gap_literal(data) + ';;'
+        if driver.count('U1_INPUT:=') != 1 or input_line not in driver.splitlines():
+            raise ValueError('Singleton driver does not embed its exact original input')
         targets = re.findall(r'^output:=OutputTextFile\(("(?:[^"\\]|\\.)*"),false\);;$', driver, re.MULTILINE)
         if (len(targets) != 1 or json.loads(targets[0]) != expected_native
                 or driver.count('OutputTextFile(') != 1

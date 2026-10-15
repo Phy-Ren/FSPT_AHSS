@@ -10,6 +10,7 @@ import tempfile
 import unittest
 
 from scripts.collect_expansion import load_campaign
+from scripts.classify import gap_literal
 from scripts.extend_e8_3p1 import extend_run, source_manifest
 from scripts.recover_paired_campaign import (encoded, parse, preserve_campaign,
     sha, validate_preserved_ordinary_case, validate_recovered_case, validate_stop_report)
@@ -102,6 +103,7 @@ class PairedRecovery(unittest.TestCase):
         run['command'][-1] = self.remote + '/' + SINGLE + '/driver.g'
         driver = ('U1_ROOT:=' + json.dumps(self.snapshot) + ';;\n'
                   'Read(Concatenation(U1_ROOT,"/gap/load.g"));;\n'
+                  'U1_INPUT:=' + gap_literal(data) + ';;\n'
                   'output:=OutputTextFile(' + json.dumps(self.remote + '/' + SINGLE + '/native.json') + ',false);;\n'
                   'PrintTo(output,U1JSON(result),"\\n");;\nCloseStream(output);;\nQUIT;\n')
         (directory / 'driver.g').write_text(driver)
@@ -200,7 +202,7 @@ class PairedRecovery(unittest.TestCase):
         directory = self.add_ordinary_singleton()
         originals = {name: (directory / name).read_bytes() for name in ('run.json', 'result.json', 'driver.g')}
         kinds = ['incomplete', 'failed', 'boolean_exit', 'batch_field', 'paired_false_batch',
-                 'paired_flag', 'wrong_driver', 'wrong_source', 'wrong_native', 'extra_native',
+                 'paired_flag', 'wrong_driver', 'wrong_source', 'wrong_input', 'wrong_native', 'extra_native',
                  'marker_in_driver', 'mismatched_result', 'missing_stderr']
         stderr = (directory / 'stderr.log').read_bytes()
         for kind in kinds:
@@ -221,6 +223,10 @@ class PairedRecovery(unittest.TestCase):
                 elif kind == 'paired_flag': run['pairedSpins'] = 1
                 elif kind == 'wrong_driver': run['command'][-1] += '.wrong'
                 elif kind == 'wrong_source': driver = driver.replace(self.snapshot, self.snapshot + '-wrong')
+                elif kind == 'wrong_input':
+                    data = parse((directory / 'input.json').read_bytes())
+                    wrong = dict(data, id=SECOND)
+                    driver = driver.replace('U1_INPUT:=' + gap_literal(data), 'U1_INPUT:=' + gap_literal(wrong))
                 elif kind == 'wrong_native': driver = driver.replace('/' + SINGLE + '/native.json', '/' + FIRST + '/native.json')
                 elif kind == 'extra_native': driver += 'output:=OutputTextFile("/extra/native.json",false);;\n'
                 elif kind == 'marker_in_driver': driver += 'Print("U1_PAIR_CASE_DONE ");;\n'
