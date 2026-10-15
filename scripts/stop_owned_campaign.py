@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import signal
 import socket
@@ -91,6 +92,59 @@ def descendants(rows, parent):
         selected = expanded
 
 
+def gap_literal(value):
+    """Exact input serializer copied from classify.py at c26f3de; no runtime import."""
+    if value is True:
+        return "true"
+    if value is False:
+        return "false"
+    if isinstance(value, str):
+        return json.dumps(value, ensure_ascii=True)
+    if isinstance(value, int):
+        return str(value)
+    if isinstance(value, list):
+        return "[" + ",".join(map(gap_literal, value)) + "]"
+    if isinstance(value, dict):
+        if not all(k and k.replace("_", "").isalnum() and not k[0].isdigit() for k in value):
+            raise ValueError("Unsupported GAP record key")
+        return "rec(" + ",".join(k + ":=" + gap_literal(v) for k, v in value.items()) + ")"
+    raise TypeError("Catalog input must contain only exact JSON values")
+
+
+def validate_singleton_driver(driver, record, runner, root):
+    """Bind an ordinary active child to exactly its input/source/output files.
+
+    This is process ownership evidence only. It does not authorize recovery of
+    an incomplete singleton and never creates a completed result or batch.
+    """
+    case = driver.parent.name
+    if (record.get('id') != case
+            or ('pairedSpins' in record and record['pairedSpins'] is not False)
+            or any(key.startswith('batch') for key in record)):
+        raise RuntimeError('Singleton metadata contains a wrong ID or paired-batch fields')
+    raw = (driver.parent / 'input.json').read_bytes()
+    data = json.loads(raw)
+    if (not isinstance(data, dict) or data.get('id') != case
+            or record.get('inputSHA256') != hashlib.sha256(raw).hexdigest()):
+        raise RuntimeError('Singleton input identity/hash does not match its saved run')
+    classifiers = [Path(x) for x in runner['argv'] if x.endswith('/scripts/classify.py')]
+    if len(classifiers) != 1 or not classifiers[0].is_absolute():
+        raise RuntimeError('Runner does not identify one immutable classifier snapshot')
+    snapshot = classifiers[0].parents[1]
+    text = driver.read_text()
+    match = re.search(r'^U1_ROOT:=("(?:[^"\\]|\\.)*");;', text)
+    if match is None or json.loads(match.group(1)) != str(snapshot):
+        raise RuntimeError('Singleton driver uses a different source snapshot')
+    exact_input = 'U1_INPUT:=' + gap_literal(data) + ';;'
+    if text.count('U1_INPUT:=') != 1 or exact_input not in text.splitlines():
+        raise RuntimeError('Singleton driver does not embed its exact input')
+    targets = re.findall(r'^output:=OutputTextFile\(("(?:[^"\\]|\\.)*"),false\);;$', text, re.MULTILINE)
+    if (len(targets) != 1 or json.loads(targets[0]) != str(root / case / 'native.json')
+            or text.count('OutputTextFile(') != 1 or text.count('CloseStream(output);;') != 1
+            or 'U1_PAIR_CASE_DONE' in text or 'U1SiblingContext' in text):
+        raise RuntimeError('Singleton driver does not bind exactly its own native output')
+
+
 def validate_tree(rows, runner, root, source, selection):
     """Read-only identity/topology validation, before or after scheduling stops."""
     current = rows.get(runner['pid'])
@@ -124,22 +178,28 @@ def validate_tree(rows, runner, root, source, selection):
                 or row['argv'][-len(command[1:]):] != command[1:]
                 or command[-1] != str(driver)):
             raise RuntimeError('GAP launch arguments differ from the saved run')
-        cases = record.get('batchCaseIDs')
-        if (not isinstance(cases, list) or len(cases) != 2 or len(set(cases)) != 2
-                or not set(cases) <= set(selection) or cases[0] != driver.parent.name
-                or record.get('id') != cases[0] or record.get('pairedSpins') is not True
-                or record.get('sourceSHA256') != source['sha256']
+        if (record.get('sourceSHA256') != source['sha256']
                 or record.get('host') != row['host']):
-            raise RuntimeError('GAP batch metadata does not identify the owned campaign')
+            raise RuntimeError('GAP source/host metadata does not identify the owned campaign')
+        cases = None
+        if record.get('pairedSpins') is True:
+            cases = record.get('batchCaseIDs')
+            if (not isinstance(cases, list) or len(cases) != 2 or len(set(cases)) != 2
+                    or not set(cases) <= set(selection) or cases[0] != driver.parent.name
+                    or record.get('id') != cases[0]):
+                raise RuntimeError('GAP batch metadata does not identify the owned campaign')
+        else:
+            validate_singleton_driver(driver, record, runner, root)
         if any(item['pgid'] == pid and item['pid'] not in owned for item in rows.values()):
             raise RuntimeError('A GAP process group contains an unrelated process')
         launcher = Path(command[0])
         if not launcher.is_absolute() or not launcher.is_file():
             raise RuntimeError('The recorded GAP launcher has no exact file identity')
         gaps.append(row)
-        batches.append(dict(caseIDs=cases, host=row['host'], gapPID=pid,
-                            runnerPID=runner['pid'], launchedCommand=command,
-                            launcherPath=command[0], launcherSHA256=sha(launcher)))
+        if cases is not None:
+            batches.append(dict(caseIDs=cases, host=row['host'], gapPID=pid,
+                                runnerPID=runner['pid'], launchedCommand=command,
+                                launcherPath=command[0], launcherSHA256=sha(launcher)))
     return captured, gaps, batches
 
 

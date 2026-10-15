@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "localOnly": true,
+  "clusterContact": false,
+  "helperSHA256": "574ee600775d6daa858cb6b20f97bb60843c126669a576daa82b4723dd467871",
+  "testScriptSHA256": "e0fa7d46803f91041b794d7f3c05c29539b67fc176d88545ac0bbf003c7e217e",
+  "tests": [
+    {
+      "name": "mixed_pair_singleton_tree",
+      "accepted": true,
+      "ownedProcesses": 5,
+      "gapProcesses": 2,
+      "pairedBatches": 1,
+      "signalsAttempted": 0
+    },
+    {
+      "name": "wrong_runner",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "wrong_command",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "wrong_source",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "wrong_host",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "wrong_case_id",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "false_pair_with_batch",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "nonboolean_pair",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "unknown_batch_field",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "wrong_input_hash",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "changed_input",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "wrong_driver_root",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "wrong_embedded_input",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "duplicated_input",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "wrong_output",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "paired_marker",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "missing_argv",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "wrong_pgid",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "missing_executable",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    },
+    {
+      "name": "changed_runner_start",
+      "rejected": true,
+      "signalsAttempted": 0,
+      "ownedAndSentinelAlive": true
+    }
+  ],
+  "noValidationSignalsAttempted": true,
+  "rawCampaignUnchanged": true,
+  "unrelatedSentinelAlive": true,
+  "workdir": "/home/xingyu/AllFSPT_reviews/stop_helper_singleton_20261015/local-9ilxx1w0"
+}
