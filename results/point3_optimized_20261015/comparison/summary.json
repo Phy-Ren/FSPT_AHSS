@@ -1,0 +1,24 @@
+{
+  "candidateSourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+  "completed": 64,
+  "countsBySpin": {
+    "spin_half": {
+      "different": 31,
+      "matched": 1
+    },
+    "spinless": {
+      "different": 30,
+      "matched": 2
+    }
+  },
+  "incomplete": [],
+  "normalization": "none; every preexisting native field compared exactly",
+  "reference": {
+    "path": "source/results/four_data_campaign_20261015/e8_results.json",
+    "sector": "classification.ciSector; E8 postprocessor not rerun",
+    "sha256": "32256407a0968620174f45f5459f3ac31e53a5482c53ca515d2d3275ccf364fc"
+  },
+  "scope": "Same physical backgrounds and retained CI model; no new physical-completeness or literature-match claim.",
+  "selected": 64,
+  "status": "INCOMPLETE_OR_DIFFERENCE"
+}

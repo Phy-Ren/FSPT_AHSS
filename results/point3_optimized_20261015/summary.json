@@ -1,0 +1,35 @@
+{
+  "GAP": "4.12.1",
+  "HAP": "1.62",
+  "campaignProcessSystemCPUSeconds": 4.51,
+  "campaignProcessUserCPUSeconds": 152.16,
+  "campaignWallSeconds": 56.08,
+  "commit": "c07c6e5d4a69d79c9c2aeb0739ae1e189029f824",
+  "comparisonNormalization": "Raw reports use none. Explicit serialization rules and environmental controls are in control_audit.json.",
+  "completeCases": 64,
+  "completeGroupsExactlyMatchAccepted": 64,
+  "completePresentationsExactlyMatchAccepted": 64,
+  "exactAfterOnlyProvedSerializationRules": 62,
+  "immutableArchives": {
+    "point3_g_raw.tar.gz": "42d76d9804575523cd68e30ecb5bcbaa1150ef17075c83abee999779735a884b",
+    "representative_controls.tar.gz": "1acc3ebb1decbd892eec9b4b45ee5afddfe9f64212b81c15a61a17bfca02dad8"
+  },
+  "nativeVM_SHA256": "7c3288b10176c7fe814c2f202bea4e07bcd0b71a842a80253bb222bba7a0afdc",
+  "physicalSpins": {
+    "spin_half": 32,
+    "spinless": 32
+  },
+  "rawNativeFieldAllEqualCases": 3,
+  "rawNativeFieldDifferenceCases": 61,
+  "runtimeSourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+  "sameSourceEnvironmentalRepresentativeDifferences": [
+    "point3_30_spinless",
+    "point3_31_spinless"
+  ],
+  "scope": "64 point3 physical backgrounds, CI classifications; E8 extension is separate.",
+  "tests": {
+    "count": 99,
+    "seconds": 54.088,
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "controls": [
+    {
+      "checks": {
+        "oldLocalInputExactlyMatchesArchivedInput": true,
+        "oldLocalSourceExactlyMatchesArchivedSource": true,
+        "oldLocalVersusCurrentReferenceEqualAfterRecordedZeroGaugeSerialization": true,
+        "pairedOptimizedVersusReferenceOnlyDiffersInPrimaryCounters": true,
+        "pairedVersusStandaloneOnlyDiffersInReuseMetadata": true,
+        "standaloneOptimizedVersusReferenceOnlyDiffersInPrimaryCounters": true
+      },
+      "id": "point3_30_spinless",
+      "oldSourceSHA256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+      "sameOldSourceLocalVersusClusterChangedFields": [
+        "gaugeReductionWitnesses",
+        "generators",
+        "witnesses"
+      ],
+      "zeroGaugeSerializationChanges": 1
+    },
+    {
+      "checks": {
+        "oldLocalInputExactlyMatchesArchivedInput": true,
+        "oldLocalSourceExactlyMatchesArchivedSource": true,
+        "oldLocalVersusCurrentReferenceEqualAfterRecordedZeroGaugeSerialization": true,
+        "pairedOptimizedVersusReferenceOnlyDiffersInPrimaryCounters": true,
+        "pairedVersusStandaloneOnlyDiffersInReuseMetadata": true,
+        "standaloneOptimizedVersusReferenceOnlyDiffersInPrimaryCounters": true
+      },
+      "id": "point3_31_spinless",
+      "oldSourceSHA256": "4912fd1e468bc69def0b46b33cda78973e3c63564a710082c84a6bc5f4550187",
+      "sameOldSourceLocalVersusClusterChangedFields": [
+        "gaugeReductionWitnesses",
+        "generators",
+        "obstructedSheets",
+        "witnesses"
+      ],
+      "zeroGaugeSerializationChanges": 1
+    }
+  ],
+  "exactCompletePresentations": 64,
+  "exactFinalGroups": 64,
+  "explicitSerializationRules": {
+    "addedSheetRelationCoordinates": 31,
+    "omittedZeroSheetGauge": 62
+  },
+  "files": {
+    "old_code_local/point3_30_spinless/result.json": "47c8836da6240355d30576031e77cfc8f44e833842bd11a2b685d6f3e7c4c3c3",
+    "old_code_local/point3_31_spinless/result.json": "8f2665a6d8f2ed51292f3a7dd0931c6f24d6c68865cfe52296c88aa46574b714",
+    "paired_reference/point3_30_spin_half/result.json": "ea48090f188ba35adb6995143606109fbe78476d25b9f1f7fc8f90fab96a5cff",
+    "paired_reference/point3_30_spinless/result.json": "e28b6d4ffe5f3380fc4844faa56c5ab16aa003c17b7b5927214cadc7f7aab33e",
+    "paired_reference/point3_31_spin_half/result.json": "1c06515c4f2834a3a5d8984422f7649d62c41c2e8eb2663d1d88ddc60c57e0cc",
+    "paired_reference/point3_31_spinless/result.json": "eba1ed1b3eff1cab603d8b6b61e8de86712b205d871e42f3da5354ea882855d8",
+    "run/point3_01_spin_half/result.json": "bfe9c74f072276782b05379f7d3cefda93cf9f18bc1f4bed725271e8d6cecee5",
+    "run/point3_01_spinless/result.json": "f57102f470b0123ae3f136968fbf8b10f5154585196e25dc4cdd7f1c2daa1b06",
+    "run/point3_02_spin_half/result.json": "aeb18e0655a31315a280b40027d0397ca92424ea09a40321283ad946a8dae63b",
+    "run/point3_02_spinless/result.json": "0183278b0b9bd8c398d87ca760d34cb88c9c3fc84b54bc11851e06adfa969fc2",
+    "run/point3_03_spin_half/result.json": "f2ea34ee40bf75ee5afa1bc2a94fea809b14eefae59613d8fbd7e59672db3d09",
+    "run/point3_03_spinless/result.json": "5f48c15ad061cc9cb5db0c04fae7111c8cd1ec99a8c2b152d5099f05086915a7",
+    "run/point3_04_spin_half/result.json": "49d1d52bf94839e017edb37b1f4e8f5fc1e9facb8452a40ca55c0b37b776cb90",
+    "run/point3_04_spinless/result.json": "14ce416bd3df4f052a52a1b83ec4e58cb18d27be3c03ac5cd7d9d4087c714164",
+    "run/point3_05_spin_half/result.json": "9fa08da215272343f27ab0a6ecbe9f7f901a14f0cb566e20ae4351393ba3c436",
+    "run/point3_05_spinless/result.json": "854d99d9fa69d309d90ed99263915b7e109b95276ddfd1abd4db88faa1f61f91",
+    "run/point3_06_spin_half/result.json": "14ec2d8dccb0d0548bc7fcd56e877be664e604b69d075d7891078501e2a06275",
+    "run/point3_06_spinless/result.json": "ae3d031f71440890ef9822f836b27514d7fef461618174166dd4f6804c589197",
+    "run/point3_07_spin_half/result.json": "6c7b3ddca0d7a1a56506ad6d8829187bf0a70270b9dcb85cd1a2400afe5bbd27",
+    "run/point3_07_spinless/result.json": "a82e0b540d3b20a614abbf8f12ad10510e7c6da3717a2e933555531fa8d539fb",
+    "run/point3_08_spin_half/result.json": "e6e38c28b401af032cbbbc28ac66e0da5ec50aa359dddf4d2efc75dc153a7447",
+    "run/point3_08_spinless/result.json": "d5897845837484ea83aca4d7923300d7fa42bbf0248272da6ffc3692c15bfb11",
+    "run/point3_09_spin_half/result.json": "9cb2d718f61962fe71bd0ac886c3ef84906461f5506e646a195cd22484ec2e20",
+    "run/point3_09_spinless/result.json": "ba6674fbf684f279386fa3fb197bfb33a26ce0f0663a8f6efb99e77f13541f18",
+    "run/point3_10_spin_half/result.json": "362fc59f0d744a25f86f1245bf3f62dae5d9920cd11ba8424cf07e4c3bafa98a",
+    "run/point3_10_spinless/result.json": "ee61b82d9a3570733b5cfc3c8f06ead9687653b1034157ca24d3c17b4cb6c2bd",
+    "run/point3_11_spin_half/result.json": "1db37323cd6e9ea317940ddd74e822bafd759585f18fc15d0a624bf973ff2838",
+    "run/point3_11_spinless/result.json": "6e16fb9ed242716bed9a4cf7159a5214d90ad8cf013cdb9ac8f7ede04ec2572a",
+    "run/point3_12_spin_half/result.json": "aca034118fa5c6a4a6711a1a23266abc1842837c8ad71d9f707a263ef1575cc0",
+    "run/point3_12_spinless/result.json": "ca633950094ac0ed2f2099c527726462eac5c763ad4900e7aa166a89e6d2461b",
+    "run/point3_13_spin_half/result.json": "2eb93330ac7ddd77f7b14bc3d66fc38155c95173c93a68ae2bd8707f993caff2",
+    "run/point3_13_spinless/result.json": "0f319729b3c3f013f977e932d01b3b3ff3e70c9ef5d7b80cf77dcc082b130891",
+    "run/point3_14_spin_half/result.json": "f6952dc5a5b3ebae81a0bc6ad57e5b8c921231dbe619f125f09aaa2ead54a9fe",
+    "run/point3_14_spinless/result.json": "7cddbb025b0b22be2c276ff2e8575de55166fcb8cb498e37ec6533c543b83d7a",
+    "run/point3_15_spin_half/result.json": "4580bfd7de935b3bed587d77858e1445984bc5c04fc2c8755a53c59f0c039106",
+    "run/point3_15_spinless/result.json": "7df474024bbdfb514f594a27916375c7975570703a27b5945f77f6b9ced38465",
+    "run/point3_16_spin_half/result.json": "95ca55fa7d238bdbb534ff568ab031636acc0711c93663cf7ebf1f7c5b24210b",
+    "run/point3_16_spinless/result.json": "0bff93b38b371d1fd5fcef27a054ee3a6d8ee356428f8e5df7a4beda7dd9fd9e",
+    "run/point3_17_spin_half/result.json": "3188f5db2a03cf4593ec44d0953ccfac19424e761a388597f89a95331f25fb52",
+    "run/point3_17_spinless/result.json": "61ee8e47ae6d8996a218e569921de5f7079aaac322dde6ebd73465ec97fc186b",
+    "run/point3_18_spin_half/result.json": "bc735f8f8b710f3ed82ef169648fcdab570af0cdc8ca88c7e49111d5f9f5642a",
+    "run/point3_18_spinless/result.json": "6c488ef271bdefcbb59dcfa3ba59c75150ae5731aff90c3a798670413f36c1c7",
+    "run/point3_19_spin_half/result.json": "d008bdfc975c47e162d4da275596218aa8fb56c46cdd2f43681b7ef3c46eba8e",
+    "run/point3_19_spinless/result.json": "285660d96e7e72868618d6f4bd0ccb5798253c710c6b9dd6714c7331ad2c1bf1",
+    "run/point3_20_spin_half/result.json": "421409621fec358755893d4c9ad7148298e046adccb9c30c21e2cae1a4cc07af",
+    "run/point3_20_spinless/result.json": "51fa7f2f0e9a72264db083fc2f34d62ccff77a72d7a9b3bf18720ce16db309dd",
+    "run/point3_21_spin_half/result.json": "e9d3f506d634efd378274cf5a91aa91758114ce3870e6c2bda557d787164064f",
+    "run/point3_21_spinless/result.json": "d1519b5037408d9ac64f046f9263d3aa1e9622dc19d37ebc7a69639a1809b0a3",
+    "run/point3_22_spin_half/result.json": "882d2f012a31348fca69d07ea6299314e76bb828fac972af3c2361e9e27203bb",
+    "run/point3_22_spinless/result.json": "93efb4b44d825d25978223a2e9794bb44c7ffa9064a873d9e79cc7d83b8edf7b",
+    "run/point3_23_spin_half/result.json": "4d1e75dbd82d75feaf4527736ac2cd51d5ef81ef2bcfaa98387ab2de6f1147e0",
+    "run/point3_23_spinless/result.json": "bdc072f1f78cbe9d21726200b76bef3df93be0f806e917e25616ab6e6a74d951",
+    "run/point3_24_spin_half/result.json": "c1056c44cc61dc8d23f542583c28f561b8dd0515b19bfe1273590af7676e563d",
+    "run/point3_24_spinless/result.json": "9961227d329864a27c6843102a2bf9b6f031b9d60a4e07ecab8525c9098de252",
+    "run/point3_25_spin_half/result.json": "8fc1418ddb7bf121fafb82b9a4c2dda162225c96d3bde7bbb017f048f217719f",
+    "run/point3_25_spinless/result.json": "ce504f85dafe245447e23e1f65497d394464ef9334c0d71060348a6e6753f039",
+    "run/point3_26_spin_half/result.json": "c43dbfca8d2a5859b4c4241f0d6cdea2e70232cfef1b4733648404c7a07322f3",
+    "run/point3_26_spinless/result.json": "d940d65b341f6e3cbc8075f49da724a8368139eb5f042bed246a776a94d15758",
+    "run/point3_27_spin_half/result.json": "afd8de9a5aae3656d574b7d1d59765ada5c34f136b0b71d26b0ce75cfa3b2a01",
+    "run/point3_27_spinless/result.json": "95c5abe686128ea1cb81d3bebad8e70741f92dfb347296488050ae2db6631402",
+    "run/point3_28_spin_half/result.json": "9345fca292a7155dd719006a908000781856e571f1a5d4704c1d96c6c34dcd9c",
+    "run/point3_28_spinless/result.json": "4edfb1572a42cf2f1696c95c4bf5126fdfec8da180b156944bf1b116cee814a7",
+    "run/point3_29_spin_half/result.json": "ac931ad4f08eeb149164b691131e1dbf06c4d2bf117e5528c1d1bd1b33a5726f",
+    "run/point3_29_spinless/result.json": "5d973de52e83dc2262925fc923be1ce55f0ced25165a7a1dbf6e7cf602f17c6c",
+    "run/point3_30_spin_half/result.json": "0257497c0a3729919de965460fb67b516757941331e7abd91021cb63dcecbc4f",
+    "run/point3_30_spinless/result.json": "2343a7cbb03bc6649d7543b2ee7dc5751a96ef1163fa3b98e68edbdc0cca36a9",
+    "run/point3_31_spin_half/result.json": "6dfca7c0163a269066cf038528e3c2dd042013b0dbe2da3927d2347fd0313975",
+    "run/point3_31_spinless/result.json": "1f27739a7547ca039f6e357084f7bab093bd44a33953d4e78221fde1b7e2e424",
+    "run/point3_32_spin_half/result.json": "1ab22003becf457074a9f185ed0f81e735cd3aedc73d907a430eb450458fa136",
+    "run/point3_32_spinless/result.json": "3ef38310f27299e02f118d5d568bb6e2320d38b7e8e3bb129c9ee17a7c97850d",
+    "standalone_optimized/point3_30_spinless/result.json": "85183f73000c3fc01c4d0d7745db4a39e881e209a5f46749c502a22fc737850e",
+    "standalone_optimized/point3_31_spinless/result.json": "af1f8216f1d63f1f03890946e4985f828e80ab70065982a3f420ee5c2b1c3512",
+    "standalone_reference/point3_30_spinless/result.json": "849a470e1555fd06d4040f9253726707a3a48af8381a1a3949d65349a631bbde",
+    "standalone_reference/point3_31_spinless/result.json": "2308904fe78e1d57107fe2695200366691b77c591d941c566fb0e1bab46bcac8"
+  },
+  "proofScope": "The two serialization rules are proved by the saved coefficient equality and literal-zero semantics of U1Bar/U1ReduceVacuum. Raw comparison reports remain unchanged. Same-source local-versus-cluster replay identifies an environmental difference; the exact transport map was not reconstructed.",
+  "remainingRawRepresentativeDifferences": [
+    {
+      "fields": [
+        "gaugeReductionWitnesses",
+        "generators",
+        "witnesses"
+      ],
+      "id": "point3_30_spinless"
+    },
+    {
+      "fields": [
+        "gaugeReductionWitnesses",
+        "generators",
+        "obstructedSheets",
+        "witnesses"
+      ],
+      "id": "point3_31_spinless"
+    }
+  ],
+  "status": "PASS"
+}
