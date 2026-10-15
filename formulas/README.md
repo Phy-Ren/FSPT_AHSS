@@ -105,3 +105,9 @@ General nonsplit nonzero-chiral cochain requests remain unsupported. The optiona
 experimental descent API is not a validated physical endpoint and is not used by
 any accepted public example. These scope statements do not remove any 3+1D or
 4+1D obstruction or stacking term.
+
+## Representative comparisons
+
+The [comparison three-cochains](comparison_cochains_3d/README.md) archive the
+finite lift and suspension polynomials used in the manuscript, with explicit
+input ordering and evaluation rules.
