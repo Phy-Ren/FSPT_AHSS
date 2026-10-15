@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-sbuqsegg/invoke_helper.py", line 26, in <module>
+    m.main()
+  File "/tmp/stop_owned_u1_campaign.py", line 244, in main
+    verify_source_runtime(root, snapshot, source)
+  File "/tmp/stop_owned_u1_campaign.py", line 210, in verify_source_runtime
+    raise RuntimeError('Recorded formula runtime library changed')
+RuntimeError: Recorded formula runtime library changed

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-sbuqsegg/invoke_helper.py", line 26, in <module>
+    m.main()
+  File "/tmp/stop_owned_u1_campaign.py", line 246, in main
+    captured, gaps, batches = validate_tree(scan_owned(runner['uid']), runner, root, source, selection)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/stop_owned_u1_campaign.py", line 114, in validate_tree
+    raise RuntimeError('GAP launch arguments differ from the saved run')
+RuntimeError: GAP launch arguments differ from the saved run

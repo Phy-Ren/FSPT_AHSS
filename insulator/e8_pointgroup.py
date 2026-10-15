@@ -184,11 +184,18 @@ def presentation_invariants(rows: list[list[int]], columns: int) -> dict:
             "freeRank": columns - len(diagonal), "smithNonzeroDiagonal": diagonal}
 
 
-def _extend_classification(result: dict, neutral_computation) -> dict:
+def _extend_classification(result: dict, neutral_computation, recovery_root=None) -> dict:
     """Extend one completed CI result without certifying a physical identification."""
     data, ci, run = result["input"], result["classification"], result["run"]
-    if run.get("status") != "complete" or run.get("exitCode") != 0:
-        raise ValueError("Only successfully completed CI runs can be extended.")
+    if run.get("status") == "recovered_complete" and recovery_root is not None:
+        from pathlib import Path
+        from scripts.recover_paired_campaign import parse, validate_recovered_case
+        validate_recovered_case(recovery_root, data.get("id"))
+        original = Path(recovery_root) / data["id"] / "result.json"
+        if parse(original.read_bytes()) != result:
+            raise ValueError("Recovery validation is not bound to this exact CI result.")
+    elif run.get("status") != "complete" or run.get("exitCode") != 0:
+        raise ValueError("Only successfully completed or explicitly validated recovered CI runs can be extended.")
     if data.get("id") != run.get("id") or data.get("spin") not in ("spinless", "spin_half"):
         raise ValueError("CI run identity or physical-spin metadata is inconsistent.")
     if ci.get("spatialDimension") != 3:
@@ -257,6 +264,6 @@ def _extend_classification(result: dict, neutral_computation) -> dict:
     }
 
 
-def extend_classification(result: dict) -> dict:
+def extend_classification(result: dict, *, recovery_root=None) -> dict:
     """Extend a finite point-group result in the selected neutral section."""
-    return _extend_classification(result, finite_pointgroup_h1)
+    return _extend_classification(result, finite_pointgroup_h1, recovery_root=recovery_root)

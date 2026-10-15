@@ -110,7 +110,7 @@ def cyclic_filtration(classification):
     return result
 
 
-def load_campaign(root, kind):
+def load_campaign(root, kind, allow_recovered=False):
     root = root.resolve()
     selection, source = read(root / "selection.json"), read(root / "source.json")
     if not isinstance(selection, list) or not selection or len(set(selection)) != len(selection):
@@ -125,8 +125,16 @@ def load_campaign(root, kind):
             raise ValueError(f"Invalid selected case: {case}")
         directory = root / case
         run, result, data = read(directory / "run.json"), read(directory / "result.json"), read(directory / "input.json")
-        if run.get("status") != "complete" or run.get("exitCode") != 0 or result["run"] != run:
-            raise ValueError(f"Failed, incomplete, or inconsistent selected run: {directory}")
+        recovery_check = None
+        if run.get("status") == "recovered_complete":
+            if not allow_recovered or kind != "ci":
+                raise ValueError(f"Recovered CI runs require explicit --allow-recovered: {directory}")
+            from scripts.recover_paired_campaign import validate_recovered_case
+            recovery_check = validate_recovered_case(root, case)
+        elif run.get("status") != "complete" or run.get("exitCode") != 0:
+            raise ValueError(f"Failed or incomplete selected run: {directory}")
+        if result["run"] != run:
+            raise ValueError(f"Inconsistent selected run metadata: {directory}")
         if data != result["input"] or data["id"] != case or run["id"] != case:
             raise ValueError(f"Input identity mismatch: {directory}")
         if sha(directory / "input.json") != run["inputSHA256"] or run["sourceSHA256"] != source["sha256"]:
@@ -134,6 +142,8 @@ def load_campaign(root, kind):
         c = result["classification"]
         check = {"id": case, "inputHashVerified": True, "sourceHashVerified": True,
                  "independentSmithGroup": presentation_check(c)}
+        if recovery_check is not None:
+            check["explicitRecoveryAcceptance"] = recovery_check
         if kind in ("ci", "four"):
             if read(directory / "native.json") != c:
                 raise ValueError(f"Native output differs from the accepted result: {directory}")
@@ -180,6 +190,12 @@ def load_campaign(root, kind):
                 raise ValueError(f"Not an accepted 3+1D E8 extension: {case}")
             parent_path = directory / "ci_result.json"
             parent = read(parent_path)
+            if parent.get("run", {}).get("status") == "recovered_complete":
+                proof = run.get("ciRecoveryValidation", {})
+                if (not allow_recovered or proof.get("recoveredComplete") is not True
+                        or proof.get("cancellationReportSHA256") != parent["run"].get("cancellationReportSHA256")):
+                    raise ValueError(f"Recovered CI parent requires explicit validated recovery: {case}")
+                check["recoveredCIParentRequiresMatchingValidatedCICampaign"] = True
             if sha(parent_path) != run["ciResultSHA256"] or parent["input"] != data or c["ciSector"] != parent["classification"]:
                 raise ValueError(f"E8 parent record mismatch: {case}")
             if parent["run"]["sourceSHA256"] != run["ciSourceSHA256"] or parent["run"] != run["ciRun"]:
@@ -198,6 +214,8 @@ def main():
     for kind in ("ci", "e8", "four"):
         parser.add_argument("--" + kind + "-root", type=Path, action="append", default=[])
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--allow-recovered", action="store_true",
+                        help="Revalidate stopped-campaign recovery evidence; ordinary acceptance remains the default")
     args = parser.parse_args()
     if not any((args.ci_root, args.e8_root, args.four_root)):
         parser.error("At least one calculation root is required.")
@@ -205,7 +223,7 @@ def main():
     checks, provenance = [], []
     for kind in records:
         for root in getattr(args, kind + "_root"):
-            loaded, audited, source = load_campaign(root, kind)
+            loaded, audited, source = load_campaign(root, kind, allow_recovered=args.allow_recovered)
             duplicates = set(records[kind]) & set(loaded)
             if duplicates:
                 raise ValueError(f"Duplicate {kind} cases: {sorted(duplicates)}")

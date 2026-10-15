@@ -30,11 +30,13 @@ def write_json(path: Path, value) -> None:
     path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
 
 
-def source_manifest() -> dict:
+def source_manifest(include_recovery=False) -> dict:
     import sympy
 
     files = ["insulator/e8_pointgroup.py", "insulator/e8_h1.py", "insulator/e8_spacegroup.py",
              "scripts/extend_e8_3p1.py", "docs/e8/3p1.md"]
+    if include_recovery:
+        files += ["scripts/recover_paired_campaign.py", "scripts/collect_expansion.py"]
     hashes = {name: digest(ROOT / name) for name in files}
     encoded = json.dumps(hashes, sort_keys=True, separators=(",", ":")).encode()
     return {"sha256": hashlib.sha256(encoded).hexdigest(), "files": hashes,
@@ -42,13 +44,21 @@ def source_manifest() -> dict:
             "model": MODEL, "physicalScopeCaveat": PHYSICAL_CAVEAT}
 
 
-def extend_run(path: Path, output: Path, source: dict) -> dict:
+def extend_run(path: Path, output: Path, source: dict, allow_recovered=False) -> dict:
     raw = path.read_bytes()
     result = json.loads(raw)
+    recovery_root = None
+    recovery_check = None
+    if result.get("run", {}).get("status") == "recovered_complete":
+        if not allow_recovered:
+            raise ValueError("Recovered CI inputs require explicit --allow-recovered.")
+        from scripts.recover_paired_campaign import validate_recovered_case
+        recovery_root = path.parent.parent
+        recovery_check = validate_recovered_case(recovery_root, result["input"]["id"])
     if result.get("input", {}).get("family") == "spacegroup":
-        classification = extend_spacegroup_classification(result)
+        classification = extend_spacegroup_classification(result, recovery_root=recovery_root)
     else:
-        classification = extend_classification(result)
+        classification = extend_classification(result, recovery_root=recovery_root)
     case = result["input"]["id"]
     if not isinstance(case, str) or Path(case).name != case or case in ("", ".", ".."):
         raise ValueError("Invalid case identifier.")
@@ -70,6 +80,8 @@ def extend_run(path: Path, output: Path, source: dict) -> dict:
                 "ciResultPath": str(path.resolve()), "ciResultSHA256": result_hash,
                 "ciSourceSHA256": ci_source_hash, "ciRun": result["run"],
                 "physicalClassificationCertified": False}
+    if recovery_check is not None:
+        metadata["ciRecoveryValidation"] = recovery_check
     directory = output / case
     directory.mkdir()  # An existing accepted result must never be overwritten.
     (directory / "input.json").write_bytes(input_raw)
@@ -96,6 +108,8 @@ def main(argv=None) -> int:
                         help="A new separate immutable E8-inclusive campaign directory")
     parser.add_argument("--case", action="append", help="Catalog ID; repeat to select cases")
     parser.add_argument("--spin", choices=("spinless", "spin_half"))
+    parser.add_argument("--allow-recovered", action="store_true",
+                        help="Validate full stop/recovery evidence before extending a recovered CI input")
     args = parser.parse_args(argv)
     root = args.ci_root.resolve()
     selection_path = root / "selection.json"
@@ -126,17 +140,17 @@ def main(argv=None) -> int:
         parser.error("Selection includes missing or incompatible cases.")
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=False)
-    source = source_manifest()
+    source = source_manifest(include_recovery=args.allow_recovered)
     source["ciSelectionSHA256"] = digest(selection_path)
     write_json(output / "source.json", source)
     write_json(output / "selection.json", [p.parent.name for p in paths])
     summaries = []
     for path in paths:
-        row = extend_run(path, output, source)
+        row = extend_run(path, output, source, allow_recovered=args.allow_recovered)
         summaries.append(row)
         print(row["id"], row["torsion"], "freeRank=" + str(row["freeRank"]), flush=True)
         write_json(output / "summary.json", sorted(summaries, key=lambda item: item["id"]))
-    current = source_manifest()
+    current = source_manifest(include_recovery=args.allow_recovered)
     if current["sha256"] != source["sha256"]:
         raise RuntimeError("Extension source changed during the calculation.")
     return 0

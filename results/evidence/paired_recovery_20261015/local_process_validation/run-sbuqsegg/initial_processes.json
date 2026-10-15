@@ -1,0 +1,71 @@
+{
+  "owned": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-sbuqsegg/snapshot/scripts/fake_gap.py",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-sbuqsegg/campaign/spacegroup_019_spin_half/driver.g"
+      ],
+      "executablePath": "/usr/bin/python3.12",
+      "executableSHA256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "host": "youran-9950X3D",
+      "pgid": 3548120,
+      "pid": 3548120,
+      "ppid": 3548117,
+      "startTicks": 844005453,
+      "state": "S",
+      "uid": 1001
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-c",
+        "import time; time.sleep(1000)"
+      ],
+      "executablePath": "/usr/bin/python3.12",
+      "executableSHA256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "host": "youran-9950X3D",
+      "pgid": 3548120,
+      "pid": 3548121,
+      "ppid": 3548120,
+      "startTicks": 844005455,
+      "state": "S",
+      "uid": 1001
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-sbuqsegg/snapshot/scripts/classify.py",
+        "--output",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-sbuqsegg/campaign",
+        "--ready",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-sbuqsegg/ready.json"
+      ],
+      "executablePath": "/usr/bin/python3.12",
+      "executableSHA256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "host": "youran-9950X3D",
+      "pgid": 3548117,
+      "pid": 3548117,
+      "ppid": 3548112,
+      "startTicks": 844005452,
+      "state": "S",
+      "uid": 1001
+    }
+  ],
+  "sentinel": {
+    "argv": [
+      "/usr/bin/python3",
+      "-c",
+      "import time; time.sleep(1000)"
+    ],
+    "executablePath": "/usr/bin/python3.12",
+    "executableSHA256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "host": "youran-9950X3D",
+    "pgid": 3548116,
+    "pid": 3548116,
+    "ppid": 3548112,
+    "startTicks": 844005452,
+    "state": "S",
+    "uid": 1001
+  }
+}

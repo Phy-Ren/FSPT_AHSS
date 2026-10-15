@@ -1,0 +1,109 @@
+{
+  "clusterSignalsSent": false,
+  "helperSHA256": "3a871509d01b9b268b3b18f5955edcf1ab5a2c80da598bf5fa481358256d5e49",
+  "localOnly": true,
+  "ownedPIDs": {
+    "gap": 3561524,
+    "runner": 3561523,
+    "worker": 3561525
+  },
+  "rawCampaignUnchanged": true,
+  "recoveredCase": "spacegroup_019_spin_half",
+  "retryCase": "spacegroup_019_spinless",
+  "sentinelPID": 3561511,
+  "sourceSnapshotSHA256": "079f07d125d5ef2faeb506b44827c4cb3ce1b47c0d5337b1ecfedfd29874cf79",
+  "status": "PASS",
+  "tests": [
+    {
+      "exitCode": 1,
+      "name": "wrong_runner",
+      "output": "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/wrong_runner",
+      "signals": []
+    },
+    {
+      "exitCode": 1,
+      "name": "mismatched_child_argv",
+      "output": "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/mismatched_child_argv",
+      "signals": []
+    },
+    {
+      "exitCode": 1,
+      "name": "missing_child_argv",
+      "output": "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/missing_child_argv",
+      "signals": []
+    },
+    {
+      "exitCode": 1,
+      "name": "post_freeze_failure",
+      "output": "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/post_freeze_failure",
+      "signals": [
+        {
+          "call": "kill",
+          "pid": 3561523,
+          "signal": 19
+        },
+        {
+          "call": "kill",
+          "pid": 3561523,
+          "signal": 18
+        }
+      ]
+    },
+    {
+      "exitCode": 1,
+      "name": "changed_runtime",
+      "output": "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/changed_runtime",
+      "signals": []
+    },
+    {
+      "exitCode": 1,
+      "name": "changed_snapshot",
+      "output": "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/changed_snapshot",
+      "signals": []
+    },
+    {
+      "exitCode": 0,
+      "name": "confirmed_stop",
+      "output": "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/confirmed_stop",
+      "signals": [
+        {
+          "call": "kill",
+          "pid": 3561523,
+          "signal": 19
+        },
+        {
+          "call": "kill",
+          "pid": 3561524,
+          "signal": 19
+        },
+        {
+          "call": "kill",
+          "pid": 3561525,
+          "signal": 19
+        },
+        {
+          "call": "killpg",
+          "pid": 3561524,
+          "signal": 15
+        },
+        {
+          "call": "killpg",
+          "pid": 3561524,
+          "signal": 18
+        },
+        {
+          "call": "kill",
+          "pid": 3561523,
+          "signal": 15
+        },
+        {
+          "call": "kill",
+          "pid": 3561523,
+          "signal": 18
+        }
+      ]
+    }
+  ],
+  "unrelatedSentinelAlive": true,
+  "workdir": "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx"
+}

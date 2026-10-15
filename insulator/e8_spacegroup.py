@@ -112,5 +112,5 @@ def spacegroup_h1(data: dict) -> dict:
                             "neutralPhaseAndTwister": "zero in the selected 3+1D section"}}
 
 
-def extend_spacegroup_classification(result: dict) -> dict:
-    return _extend_classification(result, spacegroup_h1)
+def extend_spacegroup_classification(result: dict, *, recovery_root=None) -> dict:
+    return _extend_classification(result, spacegroup_h1, recovery_root=recovery_root)

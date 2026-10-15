@@ -1,0 +1,125 @@
+{
+  "allOwnedProcessesStopped": true,
+  "artifactsSHA256": {
+    "selection.json": "71b419dde34cee6e5f9a3f733a6cdcf15173f55ed1ef1c25856e1617c5457b11",
+    "source.json": "c9d4d27354d0555539c4965b995421cb4610248e8b1f7d0b4525b76f3d577eaf",
+    "spacegroup_019_spin_half/driver.g": "d6456b55b464fc027852a119203249f75761ff99903a97e79ea75ea099243dc7",
+    "spacegroup_019_spin_half/input.json": "5f212868f40f7ff4c34158728377a5d2e79a69a47d5454ef72e0e80369d99f55",
+    "spacegroup_019_spin_half/native.json": "cca1e70d381bd335e78d24d43574541ef27ec575dd41fec760d9583f932f55cf",
+    "spacegroup_019_spin_half/run.json": "1214a05cc6bfe5c9327a4fe49acb17d8c8d24acf3f52a66ff670331ff801ef3b",
+    "spacegroup_019_spin_half/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "spacegroup_019_spin_half/stdout.log": "e98561b373d1e62ba7b666f1ec84fc71a58ae3ad615886a6f119d021455e96d6",
+    "spacegroup_019_spinless/driver.g": "d6456b55b464fc027852a119203249f75761ff99903a97e79ea75ea099243dc7",
+    "spacegroup_019_spinless/input.json": "06aab1b83217c3ae3abeb350130a91347be45e11a382446375586c275e6d6b9c",
+    "spacegroup_019_spinless/run.json": "3fc723207174d007148997144cb059794294ca9b7b4fc2310e6ab7d9aea69125"
+  },
+  "batches": [
+    {
+      "allOwnedDescendantsStopped": true,
+      "caseIDs": [
+        "spacegroup_019_spin_half",
+        "spacegroup_019_spinless"
+      ],
+      "gapPID": 3561524,
+      "host": "youran-9950X3D",
+      "launchedCommand": [
+        "/usr/bin/python3",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/snapshot/scripts/fake_gap.py",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/campaign/spacegroup_019_spin_half/driver.g"
+      ],
+      "launcherPath": "/usr/bin/python3",
+      "launcherSHA256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "remainingOwnedPIDs": [],
+      "runnerPID": 3561523
+    }
+  ],
+  "evidence": [
+    {
+      "path": "processes_before.json",
+      "sha256": "96df18997d969068ca58a64032b970fa1fc832caa47f0574e4bb520280bca41d"
+    },
+    {
+      "path": "processes_after.json",
+      "sha256": "b3a068cc9c39a74d3261a76d10d347cf9445cb055b9bed361d8607a2c3a2a6a1"
+    },
+    {
+      "path": "source_verification.json",
+      "sha256": "42012cc48d36dfad010515151daaf13b4538549dc41d3bde732a780f9108f82b"
+    }
+  ],
+  "formulaRuntimeVerification": {
+    "configured": false,
+    "reason": "not_configured"
+  },
+  "formulaRuntimeVerified": true,
+  "originalCampaignRoot": "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/campaign",
+  "processes": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/snapshot/scripts/classify.py",
+        "--output",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/campaign",
+        "--ready",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/ready.json"
+      ],
+      "executablePath": "/usr/bin/python3.12",
+      "executableSHA256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "host": "youran-9950X3D",
+      "observedState": "zombie",
+      "pgid": 3561523,
+      "pid": 3561523,
+      "ppid": 3561508,
+      "role": "runner",
+      "startTicks": 844014970,
+      "state": "T",
+      "uid": 1001
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/snapshot/scripts/fake_gap.py",
+        "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/campaign/spacegroup_019_spin_half/driver.g"
+      ],
+      "executablePath": "/usr/bin/python3.12",
+      "executableSHA256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "host": "youran-9950X3D",
+      "observedState": "zombie",
+      "pgid": 3561524,
+      "pid": 3561524,
+      "ppid": 3561523,
+      "role": "gap",
+      "startTicks": 844014972,
+      "state": "T",
+      "uid": 1001
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-c",
+        "import time; time.sleep(1000)"
+      ],
+      "executablePath": "/usr/bin/python3.12",
+      "executableSHA256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "host": "youran-9950X3D",
+      "observedState": "absent",
+      "pgid": 3561524,
+      "pid": 3561525,
+      "ppid": 3561524,
+      "role": "formula-worker",
+      "startTicks": 844014973,
+      "state": "T",
+      "uid": 1001
+    }
+  ],
+  "reason": "Exact native primary, Smith-period and formula-DAG paths independently validated; preserve completed records and migrate unfinished cases",
+  "replacement": "synthetic-local-validation-only",
+  "schema": "u1-paired-stop-v1",
+  "sourceSHA256": "079f07d125d5ef2faeb506b44827c4cb3ce1b47c0d5337b1ecfedfd29874cf79",
+  "sourceSnapshotPath": "/home/xingyu/AllFSPT_reviews/stop_helper_local_validation_20261015/run-k7teaapx/snapshot",
+  "sourceSnapshotVerified": true,
+  "stoppedObservedUTC": "2026-10-15T13:43:51.897920+00:00",
+  "uncapturedExitedProcesses": [],
+  "verifiedSourceFileCount": 2,
+  "verifiedSourceSHA256": "079f07d125d5ef2faeb506b44827c4cb3ce1b47c0d5337b1ecfedfd29874cf79"
+}
