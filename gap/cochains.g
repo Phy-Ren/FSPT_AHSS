@@ -63,7 +63,7 @@ InstallGlobalFunction(U1JSON,function(x)
   Error("Unsupported JSON type");
 end);
 BindGlobal("U1Worker",function(c,request)
-  local line,out,key,cached;
+  local line,out,key,cached,python;
   # Cache the complete exact request, including all signs, background/lower
   # cochains, operation, dimensions and output component. Bound retained memory
   # by clearing at capacity; eviction changes only execution cost.
@@ -73,7 +73,12 @@ BindGlobal("U1Worker",function(c,request)
   cached:=LookupDictionary(c.requestCache,key);
   if cached<>fail then c.requestCacheHits:=c.requestCacheHits+1;return cached;fi;
   if not IsBound(c.worker) then
-    c.worker:=InputOutputLocalProcess(Directory(U1_ROOT),Filename(DirectoriesSystemPrograms(),"python3"),["-u",Concatenation(U1_ROOT,"/scripts/formula_worker.py")]);
+    # Python launchers pin their own interpreter. Direct GAP callers keep PATH lookup.
+    if IsBoundGlobal("U1_FORMULA_PYTHON") then
+      python:=ValueGlobal("U1_FORMULA_PYTHON");
+      if not IsString(python) or Length(python)=0 then Error("Invalid formula worker interpreter");fi;
+    else python:=Filename(DirectoriesSystemPrograms(),"python3");fi;
+    c.worker:=InputOutputLocalProcess(Directory(U1_ROOT),python,["-u",Concatenation(U1_ROOT,"/scripts/formula_worker.py")]);
     c.workerCalls:=0;
   fi;
   WriteLine(c.worker,key);line:=ReadLine(c.worker);

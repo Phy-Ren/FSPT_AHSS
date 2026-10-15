@@ -17,6 +17,7 @@ import select
 import shutil
 import signal
 import subprocess
+import sys
 import threading
 import time
 
@@ -92,8 +93,11 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
     shutil.copyfile(input_path, directory / "input.json")
     native = directory / "native.json"
     driver = directory / "driver.g"
+    # Keep virtualenv symlink spelling: resolving it can select another environment.
+    worker_python = os.path.abspath(sys.executable)
     driver.write_text(
         "U1_ROOT:=" + gap_literal(str(ROOT)) + ";;\n"
+        + "U1_FORMULA_PYTHON:=" + gap_literal(worker_python) + ";;\n"
         + ("U1_USE_KOSZUL:=true;;\n" if data["family"] == "spacegroup" else "")
         +
         "Read(Concatenation(U1_ROOT,\"/gap/load.g\"));;\n"
@@ -112,6 +116,7 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
     metadata = {"id": data["id"], "status": "running", "command": command,
                 "host": platform.node(), "startedUTC": datetime.now(timezone.utc).isoformat(),
                 "inputSHA256": digest(input_path), "sourceSHA256": source["sha256"],
+                "formulaWorkerPython": worker_python,
                 "timeoutSeconds": timeout, "uniformIQHRequested": uniform_iqh,
                 "chargePrimaryRequested": charge_primary, "phaseClassRequested": phase_class,
                 "closedChargeSourceRequested": closed_charge_source, "vacuumReductionRequested": vacuum_reduction}
@@ -214,7 +219,9 @@ def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh
     for directory, path in zip(directories, input_paths):
         directory.mkdir()
         shutil.copyfile(path, directory / "input.json")
+    worker_python = os.path.abspath(sys.executable)
     text = "U1_ROOT:=" + gap_literal(str(ROOT)) + ";;\n"
+    text += "U1_FORMULA_PYTHON:=" + gap_literal(worker_python) + ";;\n"
     if inputs[0]["family"] == "spacegroup":
         text += "U1_USE_KOSZUL:=true;;\n"
     text += 'Read(Concatenation(U1_ROOT,"/gap/load.g"));;\n'
@@ -242,6 +249,7 @@ def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh
         row = {"id": data["id"], "status": "running", "command": command,
                "host": platform.node(), "startedUTC": datetime.fromtimestamp(started, timezone.utc).isoformat(),
                "inputSHA256": digest(path), "sourceSHA256": source["sha256"],
+               "formulaWorkerPython": worker_python,
                "timeoutSeconds": timeout, "batchTimeoutSeconds": timeout * len(inputs),
                "timeoutEnforcement": "shared batch budget; individual cases are not killed separately",
                "uniformIQHRequested": uniform_iqh,
