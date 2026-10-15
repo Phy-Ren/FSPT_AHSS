@@ -1,0 +1,374 @@
+{
+  "cases": [
+    {
+      "independentBarCheck": {
+        "canonicalChargePhasePairing": "0",
+        "cycleTerms": 0,
+        "presentation": []
+      },
+      "order": 1,
+      "resultSHA256": "2204d7f01b0a27a28bcd63e03cf0e58c98dd9b7e2c140ddfe25dce92aefb3d5a",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "torsion": []
+    },
+    {
+      "independentBarCheck": {
+        "canonicalChargePhasePairing": "0",
+        "cycleTerms": 1,
+        "presentation": [
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "rootPhasePairings": [
+          "0",
+          "1/2",
+          "1/2"
+        ]
+      },
+      "order": 2,
+      "resultSHA256": "dd25a3ccfd6fa44fde742aa3976c21a16091cb23c0658aaa338cd6db20e4e159",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "torsion": [
+        2,
+        8
+      ]
+    },
+    {
+      "independentBarCheck": {
+        "canonicalChargePhasePairing": "0",
+        "cycleTerms": 4,
+        "presentation": [
+          [
+            3,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            3,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3
+          ]
+        ],
+        "rootPhasePairings": [
+          "1/3",
+          "2/3",
+          "0"
+        ]
+      },
+      "order": 3,
+      "resultSHA256": "910d879b0308f2eacfc6b46f868c0a395fa494d4432e4e9dba595cc6f8859639",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "torsion": [
+        3,
+        3,
+        9
+      ]
+    },
+    {
+      "independentBarCheck": {
+        "canonicalChargePhasePairing": "0",
+        "cycleTerms": 9,
+        "presentation": [
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            -2,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            -2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "rootPhasePairings": [
+          "0",
+          "0",
+          "1/2"
+        ]
+      },
+      "order": 4,
+      "resultSHA256": "0ab170cfe2c24771e0baa2bbf10b604a17169ddbe7ee8454239f49081573094a",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "torsion": [
+        2,
+        2,
+        4,
+        16
+      ]
+    },
+    {
+      "independentBarCheck": {
+        "canonicalChargePhasePairing": "0",
+        "cycleTerms": 16,
+        "presentation": [
+          [
+            5,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            5
+          ]
+        ],
+        "rootPhasePairings": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "order": 5,
+      "resultSHA256": "4c05d02a17beb28c93962e11927401d487608c1d45a77367b90b4ed70b416937",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "torsion": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "independentBarCheck": {
+        "canonicalChargePhasePairing": "0",
+        "cycleTerms": 25,
+        "presentation": [
+          [
+            6,
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            6,
+            -3,
+            -1
+          ],
+          [
+            0,
+            0,
+            6,
+            -3
+          ],
+          [
+            0,
+            0,
+            0,
+            6
+          ]
+        ],
+        "rootPhasePairings": [
+          "1/3",
+          "1/6",
+          "1/2"
+        ]
+      },
+      "order": 6,
+      "resultSHA256": "579f37cc148ed9752965d7bb1b74aef38e2294f3c4d47b1ba7b2397fb7753a60",
+      "sourceSHA256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
+      "torsion": [
+        3,
+        6,
+        72
+      ]
+    }
+  ],
+  "nativePhaseBoundaryCheckCount": 20,
+  "nativePhaseBoundaryChecks": [
+    {
+      "nonzeroResidual": false,
+      "order": 2,
+      "root": "neutral-E8",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 2,
+      "root": "CI-sheet",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 2,
+      "root": "charge",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 2,
+      "root": "shared-phase",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 3,
+      "root": "neutral-E8",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 3,
+      "root": "CI-sheet",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 3,
+      "root": "charge",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 3,
+      "root": "shared-phase",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 4,
+      "root": "neutral-E8",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 4,
+      "root": "CI-sheet",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 4,
+      "root": "charge",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 4,
+      "root": "shared-phase",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 5,
+      "root": "neutral-E8",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 5,
+      "root": "CI-sheet",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 5,
+      "root": "charge",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 5,
+      "root": "shared-phase",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 6,
+      "root": "neutral-E8",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 6,
+      "root": "CI-sheet",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": true,
+      "order": 6,
+      "root": "charge",
+      "verified": true
+    },
+    {
+      "nonzeroResidual": false,
+      "order": 6,
+      "root": "shared-phase",
+      "verified": true
+    }
+  ],
+  "orderedFields": [
+    "e_2",
+    "n_2",
+    "n_4",
+    "nu_5"
+  ],
+  "scope": "Unsigned internal cyclic original four-data model; physical identification not inferred",
+  "scriptSHA256": "bff3e19d6d0f21c69eb674807d454d3647fdf9700af688ec8be9a752dc019102",
+  "spatialDimension": 4,
+  "status": "PASS"
+}

@@ -1,124 +1,109 @@
 # U(1)^f insulator AHSS
 
-The `insulator` branch implements the supplied U(1)^f cochain tower independently
-of the superconducting implementation on `main`. It has its own formula package,
-GAP classification backend, group inputs, tests, results and documentation.
+Exact obstruction equations, decoration layers, and stacking for interacting
+U(1)^f insulators with crystalline or discrete internal symmetries. The
+`insulator` branch has its own formula engine, group inputs, classifier, and
+results.
 
-The formula authority is `U1f_AHSS_Consolidated_v0_7_complete.zip`, SHA-256
-`a1410f854828f012dc9be56cfd62dc0eb4a195779c09eed273e6a70f2ca97a4a`.
-The implementation uses its calibrated sheet-linear convention throughout:
-cubic coefficient `1/6`, additional product coefficient `epsilon=0`, and matched
-source, stacking and gauge representatives. See [the formula reference](formulas/README.md)
-for equations, provenance and coverage.
+- **[Computed examples](results/current/README.md):** one current catalogue,
+  organized by spacetime dimension, physical spin, and response sector.
+- **[Formula guide](docs/FORMULA_GUIDE.md):** the E8-first four-data tower,
+  obstruction equations, stacking twisters, and gauge transformations.
+- **[Provenance and scope](results/current/PROVENANCE.md):** accepted inputs,
+  source versions, calculation records, and the limits of each comparison.
 
-The reviewed E8 addition is available through
-`insulator.E8State(e_p,n_p,n_p2,nu_p3)`, with E8 first and one shared phase.
-It implements exact local source, stacking, gauge, inverse and integer powers,
-including uniform `e0`. See [the notation](docs/e8/notation.md) and separate
-[2+1D](docs/e8/2p1.md), [3+1D](docs/e8/3p1.md), and
-[4+1D](docs/e8/4p1.md) specifications. The base CLI uses the CI-only
-classifier. The separate `scripts/extend_e8_3p1.py` now computes the
-selected 3+1D finite-point-group E8 section with global cocycle/gauge
-witnesses and a combined integer presentation. Its physical interpretation
-retains the unresolved CI-kernel identification caveat.
+## Computed examples
 
-**Start with the [fresh campaign](results/four_data_campaign_20261015/README.md):
-108 new CI calculations and 64 selected-model E8 extensions, all complete.**
-The separate [3+1D](results/four_data_campaign_20261015/3p1d/README.md) directory
-covers all 32 point groups for each spin, with and without E8 in separate files.
-The [2+1D](results/four_data_campaign_20261015/2p1d/README.md) directory covers
-selected diagnostic cases, keeping spinless, spin-half, `n0=0` and all allowed
-`n0` separate; these calculations fix `e0=0`. Each source and version has its own
-column. E8-inclusive results compute the specified finite-point-group section;
-the physical CI-kernel identification remains unresolved.
-Main comparison tables use interacting classifications; band-generated
-interacting reductions appear only in separate diagnostic tables.
-Table cells mark matching groups with **✓** and differing groups with **×**.
+The current catalogue covers **118 crystalline backgrounds and six internal
+cyclic backgrounds**, with 178 response-sector entries:
 
-The first campaigns are complete: **172 successful calculations** across both
-physical spin conventions, including independent `n0=0` and all-allowed-`n0`
-2D runs, both with `e0=0`.
-The [original campaign report](results/README.md) preserves computation
-provenance. The [foundation review](docs/foundations/README.md) and
-[2026-10-14 tables](results/foundation_review_20261014/README.md) retain the
-broader earlier coverage and source audits. All 108 newly rerun CI groups agree
-with their saved predecessors. Successful computations and matching group types
-do not certify complete physical calibration.
+- [2+1D](results/current/2p1d/README.md): all 10 planar point groups and 17
+  wallpaper groups, for spinless and spin-1/2 electrons. Each background has
+  separate `n0=0` and all-allowed-`n0` tables; both fix `e0=0`.
+- [3+1D](results/current/3p1d/README.md): all 32 crystallographic point groups,
+  for both physical spins, with the computed neutral E8 data included.
+- [4+1D](results/current/4p1d/README.md): internal unitary `C1` through `C6`,
+  with `s=rho=omega=0`, including the shared-phase E8 stacking relations.
 
-## Mathematical scope
+Each row records the four final filtration groups
+`(e_p,n_p,n_(p+2),nu_(p+3))`, with `p=d−2`, and the final stacking group.
+The layers include incoming identifications; their direct product need not
+equal the stacking group. Wallpaper calculations use the full infinite
+affine group, including translations and glides.
 
-For spatial dimension `d`, a complete state has an integer CI sheet `n_(d-2)`
-with sign `s1`, an integer charge `n_d` with sign `rho1`, and a phase `nu_(d+1)`
-with sign `s1`. The extension lift has sign `rho1+s1`. These coefficient actions
-are independent in the formula engine and in the global backend.
+Interacting literature classifications have separate, versioned columns.
+**✓** marks the same reported group; **×** marks a different reported group.
+Layer comparisons remain distinct from stacking comparisons. The 3+1D result
+is the selected four-data model; its identification with the complete physical
+CI kernel remains conditional. Matching group types alone do not establish
+that identification.
 
-The local engine covers **2+1D, 3+1D and 4+1D** obstruction sources, stacking
-twisters, complete-state gauges and inverses. The current global campaigns cover
-the **10 planar point groups, 17 full affine wallpaper groups, and 32 spatial
-point groups**, each for physical spinless and spin-half electrons. Wallpaper
-cohomology uses the infinite affine group, including translations and glides.
+## Formulas
 
-The computed sector is CI-generated, localized-charge and group-cohomological
-phase data. The independent neutral E8 sector and intrinsic higher-response
-sectors are outside the default global classifier. No missing operation is installed as zero.
-The default 2+1D comparison fixes the uniform IQH index to zero; the optional
-`--uniform-iqh` calculation solves its obstruction and supplies a completed lift.
-Free filling classes remain present.
+The [formula guide](docs/FORMULA_GUIDE.md) uses one notation throughout
+2+1D, 3+1D, and 4+1D. It presents obstruction equations before stacking,
+then specifies gauge transformations and the operations needed to evaluate
+the formulas. The [implementation reference](formulas/README.md) records
+the supplied formula packages and their normalization.
 
-Global classifications retain the complete charge/CI lifts, incoming gauge
-identifications, root relations and an integer presentation. Smith normal form
-determines arbitrary torsion invariant factors and free rank. Graded layers
-are not multiplied together to guess the final stacking group.
+The local API uses `E8State(e_p,n_p,n_p2,nu_p3)`, with one shared phase.
+Integer lifts, signed coefficients, source terms, stacking corrections, and
+changes of representatives are transported together. Independent actions
+`s1`, `rho1`, and `rho1+s1` remain explicit.
 
-## Run
+The global CI classifier retains completed states, incoming gauge
+identifications, arbitrary root relations, and an integer presentation.
+The 3+1D E8 extension computes signed integer `H1(G,Z_s)` for finite point
+groups or full affine space groups and combines its section with that
+presentation. Affine CI roots retain the full integer obstruction kernels;
+free translations are not replaced by finite holonomy. The 4+1D cyclic pilot
+computes all four layers together. Intrinsic higher-response sectors and a
+general global 4+1D classification remain outside the current catalogue.
+Missing operations are not assigned zero.
 
-The formula worker and campaign runner require Python 3.8 or newer. The GAP
-backend requires GAP with HAP, Polycyclic, Cryst and CrystCat. SymPy is required
-to rebuild catalogs, extend E8 results and independently check integer
-presentations in the campaign reports. Precomputed catalogs
-contain exact symmetry geometry and backgrounds, never classification answers.
+## Install and run
+
+Python 3.8 or newer and GAP with HAP, Polycyclic, Cryst, and CrystCat are
+required. SymPy supports exact presentation checks and the E8 extension.
 
 ```bash
 python3 -m unittest discover -s tests
 python3 scripts/classify.py --family point2 --jobs 4 --output runs/point2
 python3 scripts/classify.py --family wallpaper --jobs 4 --output runs/wallpaper
 python3 scripts/classify.py --family point3 --jobs 4 --output runs/point3
-python3 scripts/report_campaign.py runs/point2 runs/wallpaper runs/point3 --output results/campaign
+python3 scripts/extend_e8_3p1.py --ci-root runs/point3 --output runs/point3_e8
+python3 scripts/classify.py --family spacegroup --pair-spins --largest-first --jobs 4 --output runs/spacegroup
+python3 scripts/extend_e8_3p1.py --ci-root runs/spacegroup --output runs/spacegroup_e8
 ```
 
-Select one case with `--case point2_02_spin_half`, or one physical spin convention
-with `--spin spinless`. Use `--uniform-iqh` in a separate 2+1D run to include the
-uniform Hall layer. `--gap` selects the GAP executable, `--timeout` bounds each
-case, and `--memory` caps each GAP workspace. Output directories must be new.
+Use `--case point2_02_spin_half` for one input or `--spin spinless` for one
+physical spin. A separate 2+1D run with `--uniform-iqh` includes all allowed
+uniform Hall responses. Each output directory must be new. Run classification
+campaigns on compute nodes with immutable source snapshots.
 
-Every case records the exact input, generated GAP driver, stdout/stderr, source
-and input hashes, host, timing, classification, integer presentation and witnesses.
-A missing or failed result is reported explicitly. Run large campaigns on compute
-nodes using immutable source snapshots.
+`--pair-spins` reuses geometry, the resolution, and linear algebra with
+identical coefficient actions, while keeping independent extension inputs
+and classification states. `--largest-first` starts larger holonomy groups
+first. Set concurrency and memory limits from the available compute node;
+each GAP process has one persistent exact-arithmetic Python worker.
 
-## Validation and comparisons
-
-Tests check cochain closure, source/product compatibility, gauge compatibility,
-inverses, independent coefficient actions, coefficient-level universal certificates,
-and completed root orders. Global internal-symmetry controls include the 2+1D
-`U(1)^f x C2` root `Z4` and the 3+1D AIII/AII/AI CI-sector values `Z8`, `Z2^2`, `0`.
-
-[Independent primary-source benchmark tables](benchmarks/README.md) distinguish
-final stacking groups from graded layers and record published-source discrepancies.
-Full classifications containing a neutral E8 sector require a justified sector
-comparison; the comparison script never deletes a factor to manufacture a match.
-
-For the implemented 3+1D finite-point-group section, extend a completed run
-into a new, separate directory:
+Every calculation retains its exact symmetry input, source and input hashes,
+integer presentation, witnesses, and execution logs. Literature answers are
+read only after classification. Rebuild or verify the active catalogue with:
 
 ```bash
-python3 scripts/extend_e8_3p1.py --ci-root runs/point3 --output runs/point3_with_e8
+python3 scripts/build_current_tables.py
+python3 scripts/build_current_tables.py --check
 ```
 
-The extension reads no literature answers and preserves the exact consumed
-CI results. Its mandatory scope metadata distinguishes the selected model
-from a certified complete physical classification.
+## Verification
 
-The generic resolution and Smith-normal-form infrastructure was adapted from
-`main` commit `ac45fa7ed0acd992a2f3a69273762dc9dceb2a97`. No runtime import or filesystem
-dependency on that branch remains.
+Checks cover source closure, product and gauge compatibility, inverse and
+root relations, signed coefficient actions, integer presentations, and the
+actual uniform-response kernel. The catalogue's
+[provenance guide](results/current/PROVENANCE.md) links the source audits and
+immutable records without introducing duplicate reader tables.
+
+The insulator implementation has no runtime dependency on the superconducting
+branch. Generic geometry and integer-resolution infrastructure retain their
+source attribution in the implementation documentation.
