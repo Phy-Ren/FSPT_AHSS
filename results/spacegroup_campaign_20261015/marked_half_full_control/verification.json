@@ -1,0 +1,24 @@
+{
+  "defaultVerification": {
+    "command": [
+      "python3",
+      "results/spacegroup_campaign_20261015/marked_half_full_control/verify.py"
+    ],
+    "cwd": "/home/xingyu/FSPT_AHSS_insulator",
+    "exitCode": 0
+  },
+  "pythonVersion": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "relocatedVerification": {
+    "command": [
+      "/usr/bin/python3",
+      "/tmp/u1-marked-full-relocated-0ttaemvb/package/verify.py",
+      "--repository",
+      "/home/xingyu/FSPT_AHSS_insulator"
+    ],
+    "cwd": "/",
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"archiveMembers\": 46,\n  \"baselineGitFiles\": 1268,\n  \"catalogueSelectionChanged\": false,\n  \"exactScientificFields\": 35,\n  \"markedHalfDoubleHits\": {\n    \"baseline\": 0,\n    \"candidate\": 6\n  },\n  \"resources\": {\n    \"baseline\": {\n      \"exitStatus\": 0,\n      \"maximumResidentSetSizeKiB\": 10212128,\n      \"systemCPUSeconds\": 1.47,\n      \"totalCPUSeconds\": 1249.46,\n      \"userCPUSeconds\": 1247.99,\n      \"wallSeconds\": 1359.28\n    },\n    \"candidate\": {\n      \"exitStatus\": 0,\n      \"maximumResidentSetSizeKiB\": 10541104,\n      \"systemCPUSeconds\": 2.57,\n      \"totalCPUSeconds\": 1250.85,\n      \"userCPUSeconds\": 1248.28,\n      \"wallSeconds\": 1360.11\n    }\n  },\n  \"solverRerun\": false,\n  \"sourceFilesPerRole\": 61,\n  \"status\": \"PASS\",\n  \"wholeRunImprovement\": false\n}\n"
+  },
+  "solverOrCollectorRerun": false
+}

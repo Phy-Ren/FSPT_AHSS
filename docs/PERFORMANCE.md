@@ -98,6 +98,12 @@ comparison, but shows no whole-run benefit: 1342.36 versus 1356.01 wall seconds.
 It is not part of the production defaults. A faster individual source
 evaluation is insufficient evidence for a faster complete classification.
 
+The isolated [marked-half doubling control](../results/spacegroup_campaign_20261015/marked_half_full_control/README.md)
+also preserves all 35 scientific fields in SG141 spin-half and exercises six
+marked doubles, but shows no whole-run improvement: 1359.28 versus 1360.11 wall
+seconds, with slightly higher CPU time and maximum RSS. It was not adopted;
+no marked-only SG226 run was launched.
+
 | Workload on the same local host | Reference | Accelerated | Scope |
 | --- | ---: | ---: | --- |
 | Complete SG14 classification, exact simplex engine versus added source/product DAG | 70.919 s | 32.456 s | Complete roots, gauges, primitives and presentation agree |

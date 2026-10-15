@@ -1,0 +1,52 @@
+{
+  "benchmarkGate": "Mathematically justified for a separately authorized bounded comparison with actual hits and full successful outputs; no automatic adoption.",
+  "classificationsRerunByReviewer": false,
+  "clusterActions": false,
+  "findings": {
+    "damagedRelevantCertificateFieldsFallBack": true,
+    "exportedSeedMutationCannotChangeCapturedBarCopy": true,
+    "fullOriginalCompletionAndGaugeRootWitnessesRetained": true,
+    "historicalClassOnlyShortcutNotUsed": true,
+    "integerDoubledChargeRetained": true,
+    "newGenericProductUnmarked": true,
+    "originalFullChargeTwisterRetained": true,
+    "pointwiseHalfSourceCancellation": true,
+    "quarterNativeSeedsPreserved": true,
+    "stateContextActionsSourcePhaseChargeIdentityGuards": true
+  },
+  "limitations": [
+    "Internal registry is a mutable GAP record, under the existing immutable-callback/context contract; not an adversarial mutation boundary.",
+    "No performance gain follows from exactness tests. Full affine classification controls have no marked hits; direct affine cochain controls do exercise the path.",
+    "Prototype excludes both q2 and adjacent-native reuse. A future combined production source requires its own validation."
+  ],
+  "method": "Read-only proof/code inspection,106-file offline verifier, direct parsing and equality comparison of eleven final complete raw classifications; no mathematical rerun",
+  "observedEvidence": {
+    "directDoubles": 49,
+    "focusedTestsPassed": 6,
+    "fullClassificationsEqualExceptResolutionTimings": 11,
+    "fullRemovalGaugeChecks": 46,
+    "guardChecks": 26,
+    "markedHitsInFullAffineControls": 0,
+    "markedHitsInFullPointControls": 6,
+    "nonzeroDoubledIntegerCharges": 49,
+    "pointwisePhaseComparisons": 4696,
+    "quarterSeeds": 8
+  },
+  "prototypeDirectory": "/home/xingyu/AllFSPT_reviews/marked_half_double_20261015",
+  "repositoryEdited": false,
+  "reviewedFilesSHA256": {
+    "candidate/gap/backend_half_phase.g": "4afa5967e53bbe117e8ecaaeda1afcb2e966f27c961a53a1cfa4bad869051a8b",
+    "candidate/gap/classification.g": "d9442b31c89455fb671d8db8e5b3038ce7c53d54d415a87fdefd6de89b69e26d",
+    "candidate_source.json": "9b8745f969cb882ae017809ba548b5a95e4839331053c3328bb041dc4e17dd22",
+    "complete_controls_final/comparison.json": "050aa345dc7217e7a480b60011c169d1901fe465d4a739be7cedf409a5675731",
+    "focused_tests.log": "998698d60de6c9bce6bad5d360fa6deac1533226da6d86b29b1addd5402fedd9",
+    "freeze_manifest.json": "01e2b75f331b18d58442a823371d651637bcbe80541225790f4fc4cf286967df",
+    "marked_half_double.patch": "c145c0cffcdc9c64d6b27dce67dd86f2eaa25e61c471c40074eb08d61fadd5ea",
+    "proof.md": "5f2578f54cf5e5f82424abe7d50cc7f7b0fa1879c0a76af07adf70ac8914a22b"
+  },
+  "reviewedUTC": "2026-10-15T19:29:07.341559+00:00",
+  "reviewer": "formulas peer agent",
+  "schema": "u1-marked-half-double-independent-review-v1",
+  "sourceSHA256": "0512f9f1b50b2ff476f278198047e08e50bcaea8d6ba1e48753d793258f1ddb7",
+  "status": "PASS"
+}
