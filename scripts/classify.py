@@ -66,17 +66,20 @@ def write_json(path, value):
     path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
 
 
-def acceleration_options(charge_primary, phase_class):
+def acceleration_options(charge_primary, phase_class, closed_charge_source):
     if charge_primary not in {"bar", "native", "compare"}:
         raise ValueError("Unknown charge primary mode")
     if phase_class not in {"cycles", "native", "compare"}:
         raise ValueError("Unknown phase class mode")
+    if closed_charge_source not in {"certified", "reference", "compare"}:
+        raise ValueError("Unknown closed charge source mode")
     return ("c.chargePrimaryMode:=" + gap_literal(charge_primary) + ";;\n"
-            "c.phaseClassMode:=" + gap_literal(phase_class) + ";;\n")
+            "c.phaseClassMode:=" + gap_literal(phase_class) + ";;\n"
+            "c.closedChargeSourceMode:=" + gap_literal(closed_charge_source) + ";;\n")
 
 
 def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False,
-             charge_primary="native", phase_class="cycles"):
+             charge_primary="native", phase_class="cycles", closed_charge_source="certified"):
     data = json.loads(input_path.read_text())
     directory = output / data["id"]
     directory.mkdir()  # Never overwrite accepted results or another running case.
@@ -90,7 +93,7 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
         "Read(Concatenation(U1_ROOT,\"/gap/load.g\"));;\n"
         "U1_INPUT:=" + gap_literal(data) + ";;\n"
         "c:=U1CatalogContext(U1_INPUT,6);;\n"
-        + acceleration_options(charge_primary, phase_class) +
+        + acceleration_options(charge_primary, phase_class, closed_charge_source) +
         "result:=U1Classify(c,U1_INPUT.dimension,rec(uniformIQH:="
         + gap_literal(uniform_iqh) + "));;\n"
         "output:=OutputTextFile(" + gap_literal(str(native)) + ",false);;\n"
@@ -104,7 +107,8 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
                 "host": platform.node(), "startedUTC": datetime.now(timezone.utc).isoformat(),
                 "inputSHA256": digest(input_path), "sourceSHA256": source["sha256"],
                 "timeoutSeconds": timeout, "uniformIQHRequested": uniform_iqh,
-                "chargePrimaryRequested": charge_primary, "phaseClassRequested": phase_class}
+                "chargePrimaryRequested": charge_primary, "phaseClassRequested": phase_class,
+                "closedChargeSourceRequested": closed_charge_source}
     write_json(directory / "run.json", metadata)
     with (directory / "stdout.log").open("w") as out, (directory / "stderr.log").open("w") as err:
         process = subprocess.Popen(command, cwd=ROOT, stdout=out, stderr=err,
@@ -139,11 +143,11 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
 
 
 def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh=False,
-                  charge_primary="native", phase_class="cycles"):
+                  charge_primary="native", phase_class="cycles", closed_charge_source="certified"):
     """One GAP process, separate immutable outputs and independent omega contexts."""
     if len(input_paths) == 1:
         return [run_case(input_paths[0], output, gap, timeout, memory, source, uniform_iqh,
-                         charge_primary, phase_class)]
+                         charge_primary, phase_class, closed_charge_source)]
     if len(input_paths) != 2:
         raise ValueError("A paired run requires the two physical spins of one geometry")
     inputs = [json.loads(path.read_text()) for path in input_paths]
@@ -165,7 +169,7 @@ def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh
         else:
             text += "if IsBound(c.classificationStates) then Unbind(c.classificationStates);fi;\n"
             text += "c:=U1SiblingContext(c,U1_INPUT);;\n"
-        text += acceleration_options(charge_primary, phase_class)
+        text += acceleration_options(charge_primary, phase_class, closed_charge_source)
         text += "result:=U1Classify(c,U1_INPUT.dimension,rec(uniformIQH:=" + gap_literal(uniform_iqh) + "));;\n"
         text += "output:=OutputTextFile(" + gap_literal(str(directory / "native.json")) + ",false);;\n"
         text += "SetPrintFormattingStatus(output,false);;\nPrintTo(output,U1JSON(result),\"\\n\");;\nCloseStream(output);;\n"
@@ -185,6 +189,7 @@ def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh
                "timeoutEnforcement": "shared batch budget; individual cases are not killed separately",
                "uniformIQHRequested": uniform_iqh,
                "chargePrimaryRequested": charge_primary, "phaseClassRequested": phase_class,
+               "closedChargeSourceRequested": closed_charge_source,
                "pairedSpins": True, "batchCaseIDs": [item["id"] for item in inputs],
                "reusePolicy": "same group/resolution/bar and identical character linear algebra; independent omega/source contexts"}
         write_json(directory / "run.json", row)
@@ -251,6 +256,8 @@ def main():
                         help="Primary charge obstruction class: native exact operations, bar reference, or agreement check")
     parser.add_argument("--phase-class", choices=("cycles", "native", "compare"), default="cycles",
                         help="Closed bar phase class: Smith cycle periods, all native cells, or agreement check")
+    parser.add_argument("--closed-charge-source", choices=("certified", "reference", "compare"), default="certified",
+                        help="Full closed charge source: certified binary expression, original expression, or pointwise agreement check")
     args = parser.parse_args()
     if not args.family and not args.case:
         parser.error("Select --family or --case")
@@ -290,11 +297,13 @@ def main():
                 pairs.setdefault((data["family"], data["index"]), []).append(path)
             tasks = [pool.submit(run_spin_pair, paths, args.output, args.gap, args.timeout,
                                  args.memory, source, args.uniform_iqh,
-                                 args.charge_primary, args.phase_class) for paths in pairs.values()]
+                                 args.charge_primary, args.phase_class,
+                                 args.closed_charge_source) for paths in pairs.values()]
         else:
             tasks = [pool.submit(run_case, p, args.output, args.gap, args.timeout,
                                  args.memory, source, args.uniform_iqh,
-                                 args.charge_primary, args.phase_class) for p in inputs]
+                                 args.charge_primary, args.phase_class,
+                                 args.closed_charge_source) for p in inputs]
         for task in as_completed(tasks):
             completed = task.result()
             if isinstance(completed, dict):

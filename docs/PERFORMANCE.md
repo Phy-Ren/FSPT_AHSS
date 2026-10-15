@@ -26,6 +26,13 @@ gauge formulas remain in this branch.
    an optional checked C++ VM falls back to Python on overflow. The original
    public validation runs first. Unsupported domains retain the original
    evaluator. See the [compiled formula specification](../insulator/_compiled/README.md).
+4. **Certified closed charge sources.** The full source of a checked integer
+   native cocycle has an exact binary expression modulo one. Its zero derivative
+   is not repeatedly expanded. An even native charge has a literally zero U1
+   source while retaining its full integer charge. Every nonzero source still
+   uses the comparison homotopy when solving its primitive. Ordered contiguous
+   group products also avoid redundant inversions in cup evaluation, including
+   for nonabelian groups. See [charge_source.g](../gap/charge_source.g).
 
 These optimizations supplement the existing exact simplex plans, bounded
 request caches, paired-spin geometry reuse, and optimized GAP executable.
@@ -40,6 +47,7 @@ against both bar class projections. The full reference is:
 ```sh
 U1_DAG_MODE=reference python scripts/classify.py \
   --case point3_06_spin_half --charge-primary bar --phase-class native \
+  --closed-charge-source reference \
   --output /absolute/path/new-reference-run
 ```
 
@@ -50,6 +58,8 @@ requested modes and actual native/bar primary call counts. Each campaign
 records source hashes, selected inputs, logs, witnesses and
 `formula_runtime.json`, including the optional VM binary hash. The runner
 rejects a campaign whose source or selected VM artifact changes during execution.
+`--closed-charge-source compare` additionally checks the certified full-source
+expression against the original expression pointwise modulo one.
 
 ## Measured checks
 
@@ -60,6 +70,7 @@ Measurements below refer to specific workloads, not universal speed factors.
 | Complete SG14 classification, exact simplex engine versus added source/product DAG | 70.919 s | 32.456 s | Complete roots, gauges, primitives and presentation agree |
 | Replay of 19,099 captured SG14 cache-miss responses | 41.520 CPU s | 4.448 CPU s, Python DAG; 3.991 CPU s, native DAG | Every response agrees; includes unchanged gauge operations |
 | Seven-generator SG221 spin-half primary charge obstruction map | Not complete after 120 wall s | 0.547 CPU s | One stage only; not an end-to-end speed comparison |
+| Complete SG221 spinless, native primary/DAG baseline versus added closed-source and cup optimizations | 429.263 s | 268.854 s | All mathematical fields agree literally; peak RSS 2.46 to 1.74 GiB |
 
 The primary class tests include 32 affine charge generators, 16 nonzero
 obstructions, independent coefficient signs and general rational fallback.

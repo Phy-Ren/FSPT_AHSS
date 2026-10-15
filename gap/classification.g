@@ -6,13 +6,23 @@ BindGlobal("U1IntegerSource",function(c,d,sheet)
   return U1Formula(c,"integer_obstruction",d,rec(sheet:=sheet,charge:=U1Zero),rec(),fail,d+1);
 end);
 BindGlobal("U1Source",function(c,d,state)
-  local source;
+  local source,certificate;
   if IsBound(state.sourceCache) and IsBound(state.sourceCache.context) and
       IsIdenticalObj(state.sourceCache.context,c) and state.sourceCache.dimension=d and
+      IsBound(state.sourceCache.actions) and state.sourceCache.actions=[c.s,c.rho,c.omega] and
       state.sourceCache.sheet=state.sheet and state.sourceCache.charge=state.charge then return state.sourceCache.source;fi;
-  if state.sheet=U1Zero then source:=U1ChargeSource(c,d,state.charge);
+  if state.sheet=U1Zero then
+    if IsBound(state.closedChargeSourceCertificate) then certificate:=state.closedChargeSourceCertificate;else certificate:=fail;fi;
+    if certificate<>fail and IsRecord(certificate) and IsBound(certificate.context)
+      and IsIdenticalObj(certificate.context,c) and IsBound(certificate.dimension) and certificate.dimension=d
+      and IsBound(certificate.charge) and IsIdenticalObj(certificate.charge,state.charge)
+      and IsBound(certificate.actions) and certificate.actions=[c.s,c.rho,c.omega]
+      and IsBound(certificate.source) then
+      source:=certificate.source;
+    else source:=U1ChargeSource(c,d,state.charge);fi;
   else source:=U1Formula(c,"source",d,state,rec(),fail,d+2);fi;
-  state.sourceCache:=rec(context:=c,dimension:=d,sheet:=state.sheet,charge:=state.charge,source:=source);
+  state.sourceCache:=rec(context:=c,dimension:=d,sheet:=state.sheet,charge:=state.charge,
+    actions:=[c.s,c.rho,c.omega],source:=source);
   return source;
 end);
 BindGlobal("U1Product",function(c,d,a,b)
@@ -247,7 +257,7 @@ BindGlobal("U1Classify",function(c,d,options...)
   if K=[] then Ki:=[];else Ki:=Inverse(K);fi;
   chargeStates:=[];witnesses:=[];
   for v in K do
-    state:=rec(sheet:=U1Zero,charge:=U1CochainCombination(chargeBasis,v),phase:=U1Zero);
+    state:=U1CertifiedClosedChargeState(c,d,v*HQ.generators);
     source:=U1Source(c,d,state);phase:=U1SolveData(c,d+2,"U1s",source);
     if phase=fail then Error("Kernel charge lift has a terminal obstruction");fi;
     state.phase:=phase.primitive;U1CheckCompletedState(c,d,state);Add(chargeStates,state);

@@ -101,6 +101,28 @@ original bar obstruction. Witnesses and generators retain exact native seeds,
 obstruction vectors, charge corrections, incoming images and root relations.
 Finite exact phases are encoded as rational strings by `U1JSON`.
 
+Initial charge-kernel lifts carry a certificate for their actual closed
+integer native vector and exact bar pullback. With a validated half-integral
+extension, the full charge source equals
+`((2*omega mod 2) cup (q mod 2) + (q mod 2) cup_(d-2) (q mod 2))/2`
+pointwise modulo one. The omitted open-cochain term contains
+`delta(q mod 2)=0`. An even native vector therefore has literally zero phase
+source, while its full integer charge and all gauge reductions are retained.
+This does not replace an exact or cohomologically zero source by zero.
+Nonzero sources still use the full comparison-homotopy primitive. The
+certificate and source cache both bind the actual coefficient callbacks;
+changing the charge or background invalidates them. Set
+`c.closedChargeSourceMode := "reference"` to retain the unrestricted formula,
+or `"compare"` to compare every evaluated simplex with it. The default is
+`"certified"`; uncertified and non-half-integral inputs use the reference.
+
+Cup products use consecutive edge products `x_a ... x_(b-1)` in their
+original order instead of repeated inversions of prefix vertices. The two
+expressions agree by adjacent cancellation for nonabelian groups as well.
+Coefficient-action base vertices, higher-cup cuts and all signs are retained.
+The regression compares 19,440 signed rational/nonabelian values, including
+degree-zero factors, with the original prefix implementation.
+
 The 2D fixed-sheet charge gauge is the supplied short CF gauge. Higher joint
 sheet/charge gauges use the calibrated cylinder formula. Those two valid gauge
 representatives can differ by closed phases; they are not assumed pointwise
