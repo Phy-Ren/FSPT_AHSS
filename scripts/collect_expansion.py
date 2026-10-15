@@ -48,6 +48,46 @@ def presentation_check(classification):
     return group(actual)
 
 
+def filling_check(classification):
+    """Check the saved primitive-cell charge descends through every relation."""
+    filling = classification["spaceGroupFilling"]
+    values = filling["generatorFillings"]
+    generators = classification["generators"]
+    count = classification["presentationGeneratorCount"]
+    if (len(values) != count or len(generators) != count
+            or any(type(value) is not int for value in values)
+            or any(root["kind"] not in ("phase", "charge", "CI") for root in generators)):
+        raise ValueError("Primitive filling must give one integer per presentation generator.")
+    if any(len(row) != count or sum(x*y for x,y in zip(row, values)) != 0
+           for row in classification["presentation"]):
+        raise ValueError("A presentation relation changes primitive-cell filling.")
+    charge = [value for value, root in zip(values, generators) if root["kind"] == "charge"]
+    sheet = [value for value, root in zip(values, generators) if root["kind"] == "CI"]
+    if (charge != filling["chargeRootSubgroupGeneratorFillings"]
+            or sheet != filling["ciGeneratorFillings"]
+            or any(value != 0 for value, root in zip(values, generators) if root["kind"] == "phase")):
+        raise ValueError("Primitive filling does not respect the saved root decomposition.")
+    step = reduce(gcd, map(abs, values), 0)
+    charge_step = reduce(gcd, map(abs, charge), 0)
+    if step != filling["fillingStep"] or charge_step != filling["chargeRootSubgroupFillingStep"]:
+        raise ValueError("The claimed filling subgroup disagrees with the generator gcd.")
+    basis = filling["primitiveTranslationVectors"]
+    if len(basis) != 3 or any(len(row) != 3 for row in basis):
+        raise ValueError("Primitive translation filling requires a rank-three basis.")
+    a, b, c = [[Fraction(str(x)) for x in row] for row in basis]
+    volume = (a[0]*(b[1]*c[2]-b[2]*c[1]) - a[1]*(b[0]*c[2]-b[2]*c[0])
+              + a[2]*(b[0]*c[1]-b[1]*c[0]))
+    if volume <= 0 or volume != Fraction(str(filling["primitiveCellVolume"])):
+        raise ValueError("Primitive-cell orientation or volume is inconsistent.")
+    if (filling.get("primitiveBasisGeneratesFullTranslationKernel") is not True
+            or filling.get("allPresentationRelationsHaveZeroFilling") is not True):
+        raise ValueError("The native primitive-lattice certificate is missing.")
+    return {"fillingStep": step, "chargeSubgroupFillingStep": charge_step,
+            "everyPresentationRelationPreservesFilling": True,
+            "positivePrimitiveCellVolume": str(volume),
+            "nativePrimitiveLatticeCertificatePresent": True}
+
+
 def cyclic_filtration(classification):
     """F_k/F_(k+1) by exact elimination, F_k=span of root indices k,... ."""
     count = classification["presentationGeneratorCount"]
@@ -106,6 +146,8 @@ def load_campaign(root, kind):
             if c.get("nativeChainIdentitiesVerified") is not True:
                 raise ValueError(f"Missing native chain certificate: {case}")
             check["nativeChainIdentitiesVerified"] = True
+            if data["family"] == "spacegroup":
+                check["independentPresentationFillingCheck"] = filling_check(c)
         elif kind == "four":
             if (data["dimension"], data["family"], data["s"], data["rho"], data["omega"], data["intrinsicR0Included"]) != (4, "internal_cyclic", 0, 0, "0", False):
                 raise ValueError(f"Unexpected cyclic4D symmetry or coefficient scope: {case}")
