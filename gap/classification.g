@@ -7,11 +7,12 @@ BindGlobal("U1IntegerSource",function(c,d,sheet)
 end);
 BindGlobal("U1Source",function(c,d,state)
   local source;
-  if IsBound(state.sourceCache) and state.sourceCache.dimension=d and
+  if IsBound(state.sourceCache) and IsBound(state.sourceCache.context) and
+      IsIdenticalObj(state.sourceCache.context,c) and state.sourceCache.dimension=d and
       state.sourceCache.sheet=state.sheet and state.sourceCache.charge=state.charge then return state.sourceCache.source;fi;
   if state.sheet=U1Zero then source:=U1ChargeSource(c,d,state.charge);
   else source:=U1Formula(c,"source",d,state,rec(),fail,d+2);fi;
-  state.sourceCache:=rec(dimension:=d,sheet:=state.sheet,charge:=state.charge,source:=source);
+  state.sourceCache:=rec(context:=c,dimension:=d,sheet:=state.sheet,charge:=state.charge,source:=source);
   return source;
 end);
 BindGlobal("U1Product",function(c,d,a,b)
