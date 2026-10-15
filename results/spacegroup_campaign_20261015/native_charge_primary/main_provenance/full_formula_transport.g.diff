@@ -1,0 +1,17 @@
+--- main0864495/gap/full_formula_transport.g
++++ remote/gap/full_formula_transport.g
+@@ -66,9 +66,11 @@
+   fi;
+   if IsBoundGlobal("AFS_FULL_COORDINATE") and ValueGlobal("AFS_FULL_COORDINATE")<>"publication" then
+     coordinate:=ValueGlobal("AFS_FULL_COORDINATE");
+-    if not coordinate in ["majorana-ca","majorana-operator"] then Error("unknown coordinate");fi;
+-    worker:=Concatenation(AFS_ROOT,"/scripts/closed_majorana_worker.py");
+-    if coordinate="majorana-ca" then coordinate:="ca";else coordinate:="operator";fi;
++    if not coordinate in ["majorana-ca","majorana-operator","majorana-ca-sq2sq1-diagnostic","majorana-operator-sq2sq1-diagnostic"] then Error("unknown coordinate");fi;
++    if coordinate in ["majorana-ca-sq2sq1-diagnostic","majorana-operator-sq2sq1-diagnostic"] then
++      worker:=Concatenation(AFS_ROOT,"/scripts/diagnostic_majorana_worker.py");
++    else worker:=Concatenation(AFS_ROOT,"/scripts/closed_majorana_worker.py");fi;
++    if coordinate in ["majorana-ca","majorana-ca-sq2sq1-diagnostic"] then coordinate:="ca";else coordinate:="operator";fi;
+     args:=["-u",worker,"--coordinate",coordinate];
+   fi;
+   stream:=IO_Popen2(python,args);

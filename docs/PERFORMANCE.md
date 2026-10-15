@@ -57,7 +57,7 @@ Measurements below refer to specific workloads, not universal speed factors.
 
 | Workload on the same local host | Reference | Accelerated | Scope |
 | --- | ---: | ---: | --- |
-| Complete SG14 classification, exact simplex engine versus added source/product DAG | 70.919 s | 30.402 s | Complete roots, gauges, primitives and presentation agree |
+| Complete SG14 classification, exact simplex engine versus added source/product DAG | 70.919 s | 32.456 s | Complete roots, gauges, primitives and presentation agree |
 | Replay of 19,099 captured SG14 cache-miss responses | 41.520 CPU s | 4.448 CPU s, Python DAG; 3.991 CPU s, native DAG | Every response agrees; includes unchanged gauge operations |
 | Seven-generator SG221 spin-half primary charge obstruction map | Not complete after 120 wall s | 0.547 CPU s | One stage only; not an end-to-end speed comparison |
 
@@ -67,6 +67,10 @@ The period tests include torsion orders 2, 3, 4, 6, 8 and 9. Formula tests
 include negative carries, huge integers, native overflow, invalid inputs and
 context isolation. The combined implementation passed all 95 tests before
 the first deployment snapshot.
+
+The [formula evidence](../results/spacegroup_campaign_20261015/compiled_formula_performance/README.md)
+and [native primary evidence](../results/spacegroup_campaign_20261015/native_charge_primary/README.md)
+contain immutable records, source identities and reproducible checks.
 
 Space-group campaigns run on compute nodes with immutable source snapshots.
 Concurrency is bounded by measured memory as well as CPU capacity. A failed

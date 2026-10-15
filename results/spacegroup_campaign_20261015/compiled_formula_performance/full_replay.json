@@ -1,0 +1,28 @@
+{
+  "requests": 19099,
+  "modes": {
+    "reference": {
+      "cpu_seconds": 41.520470308,
+      "responses_sha256": "fc0e36dd2ee7a5c73d15a9e294b5ebb9563294d3295ec9acb941f6c6dabde259"
+    },
+    "auto": {
+      "cpu_seconds": 3.990593500000003,
+      "responses_sha256": "fc0e36dd2ee7a5c73d15a9e294b5ebb9563294d3295ec9acb941f6c6dabde259"
+    },
+    "python": {
+      "cpu_seconds": 4.448447213999998,
+      "responses_sha256": "fc0e36dd2ee7a5c73d15a9e294b5ebb9563294d3295ec9acb941f6c6dabde259"
+    }
+  },
+  "status": "PASS",
+  "source": {
+    "native_hits": 2030,
+    "integer_fallbacks": 0,
+    "nodes": 1876
+  },
+  "product": {
+    "native_hits": 2152,
+    "integer_fallbacks": 0,
+    "nodes": 3391
+  }
+}

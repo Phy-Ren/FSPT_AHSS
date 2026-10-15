@@ -1,0 +1,1077 @@
+{
+  "campaign": "UNRECORDED in this file",
+  "complete": true,
+  "expectedGroups": "UNRECORDED in this file",
+  "fileSHA256": "16e79d238876920000963a3d1d58605d1081174a7f63b3ef4ba5ff07d065f20b",
+  "markedWitnessScope": {
+    "groups_with_complete_marked_evidence": 214,
+    "unique_full_groups": 230,
+    "unresolved_upper_families": []
+  },
+  "maxSingleTaskRSS": {
+    "hostname": "n03.local",
+    "maximum_resident_set_size_gib": 21.574188232421875,
+    "maximum_resident_set_size_kib": 22622176,
+    "space_group": 219
+  },
+  "observer": {
+    "classification_elapsed_seconds": 13339.390009641647,
+    "full_elapsed_seconds": 13654.803965568542,
+    "polling_interval_seconds": 15.0,
+    "timing_scope": "single login-node observer, including queue delay; computation completion is separate from uniqueness"
+  },
+  "path": "results/space_groups_spinless/performance.json",
+  "physicalSpin": "spinless",
+  "scope": {
+    "classification": "For a nonzero background the current checkpoint follows the integrated background stacking routine, including the H0 incoming quotient when present; it is not a standalone classification benchmark.",
+    "rss": "Maximum single-task GNU time RSS, not total concurrent node memory",
+    "upper": "Unique abstract extension and actual marked upper phase witnesses are distinct"
+  },
+  "selectedMeasurements": [
+    {
+      "audit_kind": "nonzero-background-complete-lower-stacking",
+      "gap_classification_cpu_seconds": 13332.453,
+      "gap_post_classification_cpu_seconds": 309.89,
+      "gap_total_cpu_seconds": 13642.343,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 22622176,
+        "process_cpu_seconds": 13644.15,
+        "system_cpu_seconds": 1.67,
+        "user_cpu_seconds": 13642.48,
+        "wall_seconds": 13643.0
+      },
+      "hostname": "n03.local",
+      "pbs_job": "115923.head.local",
+      "queue": "spinless_230_v1_20260927T040004Z_q3",
+      "result_wall_seconds": 13643.133840084076,
+      "space_group": 219,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 106868,
+          "cpu_seconds": 106.868,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 108515,
+          "cpu_seconds": 1.647,
+          "cpu_start_ms": 106868,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 577500,
+          "cpu_seconds": 468.985,
+          "cpu_start_ms": 108515,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 580835,
+          "cpu_seconds": 3.335,
+          "cpu_start_ms": 577500,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 583844,
+          "cpu_seconds": 3.009,
+          "cpu_start_ms": 580835,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 583845,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 583844,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 4546573,
+          "cpu_seconds": 3962.728,
+          "cpu_start_ms": 583845,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 4547002,
+          "cpu_seconds": 0.429,
+          "cpu_start_ms": 4546573,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 4547014,
+          "cpu_seconds": 0.012,
+          "cpu_start_ms": 4547002,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 4547015,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 4547014,
+          "stage": "stack_lift_D1"
+        },
+        {
+          "cpu_end_ms": 4547016,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 4547015,
+          "stage": "stack_lift_D2"
+        },
+        {
+          "cpu_end_ms": 5497198,
+          "cpu_seconds": 950.182,
+          "cpu_start_ms": 4547016,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 5907932,
+          "cpu_seconds": 410.734,
+          "cpu_start_ms": 5497198,
+          "stage": "stack_lift_C2"
+        },
+        {
+          "cpu_end_ms": 6343841,
+          "cpu_seconds": 435.909,
+          "cpu_start_ms": 5907932,
+          "stage": "stack_lift_C3"
+        },
+        {
+          "cpu_end_ms": 9484333,
+          "cpu_seconds": 3140.492,
+          "cpu_start_ms": 6343841,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 12319565,
+          "cpu_seconds": 2835.232,
+          "cpu_start_ms": 9484333,
+          "stage": "stack_lift_B2"
+        },
+        {
+          "cpu_end_ms": 12319565,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 12319565,
+          "stage": "stack_relation_D1"
+        },
+        {
+          "cpu_end_ms": 12319565,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 12319565,
+          "stage": "stack_relation_D2"
+        },
+        {
+          "cpu_end_ms": 12426669,
+          "cpu_seconds": 107.104,
+          "cpu_start_ms": 12319565,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 12533925,
+          "cpu_seconds": 107.256,
+          "cpu_start_ms": 12426669,
+          "stage": "stack_relation_C2"
+        },
+        {
+          "cpu_end_ms": 12641199,
+          "cpu_seconds": 107.274,
+          "cpu_start_ms": 12533925,
+          "stage": "stack_relation_C3"
+        },
+        {
+          "cpu_end_ms": 12978566,
+          "cpu_seconds": 337.367,
+          "cpu_start_ms": 12641199,
+          "stage": "stack_relation_B1"
+        },
+        {
+          "cpu_end_ms": 13642343,
+          "cpu_seconds": 663.777,
+          "cpu_start_ms": 12978566,
+          "stage": "stack_relation_B2"
+        }
+      ],
+      "task_id": "spinless_230_v3-p012-sg219",
+      "unique_full_group": true,
+      "worker_task_wall_seconds": 13644.541989564896
+    },
+    {
+      "audit_kind": "nonzero-background-complete-lower-stacking",
+      "gap_classification_cpu_seconds": 1447.293,
+      "gap_post_classification_cpu_seconds": 45.21,
+      "gap_total_cpu_seconds": 1492.503,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 3747104,
+        "process_cpu_seconds": 1493.02,
+        "system_cpu_seconds": 0.36,
+        "user_cpu_seconds": 1492.66,
+        "wall_seconds": 1498.51
+      },
+      "hostname": "n03.local",
+      "pbs_job": "115923.head.local",
+      "queue": "spinless_230_v1_20260927T040004Z_q3",
+      "result_wall_seconds": 1497.792913198471,
+      "space_group": 214,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 47372,
+          "cpu_seconds": 47.372,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 48103,
+          "cpu_seconds": 0.731,
+          "cpu_start_ms": 47372,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 119602,
+          "cpu_seconds": 71.499,
+          "cpu_start_ms": 48103,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 120597,
+          "cpu_seconds": 0.995,
+          "cpu_start_ms": 119602,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 121747,
+          "cpu_seconds": 1.15,
+          "cpu_start_ms": 120597,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 121749,
+          "cpu_seconds": 0.002,
+          "cpu_start_ms": 121747,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 285858,
+          "cpu_seconds": 164.109,
+          "cpu_start_ms": 121749,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 285875,
+          "cpu_seconds": 0.017,
+          "cpu_start_ms": 285858,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 285889,
+          "cpu_seconds": 0.014,
+          "cpu_start_ms": 285875,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 285890,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 285889,
+          "stage": "stack_lift_D1"
+        },
+        {
+          "cpu_end_ms": 285892,
+          "cpu_seconds": 0.002,
+          "cpu_start_ms": 285890,
+          "stage": "stack_lift_D2"
+        },
+        {
+          "cpu_end_ms": 492700,
+          "cpu_seconds": 206.808,
+          "cpu_start_ms": 285892,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 600520,
+          "cpu_seconds": 107.82,
+          "cpu_start_ms": 492700,
+          "stage": "stack_lift_C2"
+        },
+        {
+          "cpu_end_ms": 1157820,
+          "cpu_seconds": 557.3,
+          "cpu_start_ms": 600520,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 1157820,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 1157820,
+          "stage": "stack_relation_D1"
+        },
+        {
+          "cpu_end_ms": 1157820,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 1157820,
+          "stage": "stack_relation_D2"
+        },
+        {
+          "cpu_end_ms": 1227701,
+          "cpu_seconds": 69.881,
+          "cpu_start_ms": 1157820,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 1262214,
+          "cpu_seconds": 34.513,
+          "cpu_start_ms": 1227701,
+          "stage": "stack_relation_C2"
+        },
+        {
+          "cpu_end_ms": 1492503,
+          "cpu_seconds": 230.289,
+          "cpu_start_ms": 1262214,
+          "stage": "stack_relation_B1"
+        }
+      ],
+      "task_id": "spinless_230_v3-p022-sg214",
+      "unique_full_group": true,
+      "worker_task_wall_seconds": 1499.040057182312
+    },
+    {
+      "audit_kind": "nonzero-background-complete-lower-stacking",
+      "gap_classification_cpu_seconds": 183.684,
+      "gap_post_classification_cpu_seconds": 8.937,
+      "gap_total_cpu_seconds": 192.621,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 1301264,
+        "process_cpu_seconds": 193.02,
+        "system_cpu_seconds": 0.25,
+        "user_cpu_seconds": 192.77,
+        "wall_seconds": 193.53
+      },
+      "hostname": "n05.local",
+      "pbs_job": "115925.head.local",
+      "queue": "spinless_230_v1_20260927T040004Z_q5",
+      "result_wall_seconds": 193.41363668441772,
+      "space_group": 166,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 26855,
+          "cpu_seconds": 26.855,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 27172,
+          "cpu_seconds": 0.317,
+          "cpu_start_ms": 26855,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 32675,
+          "cpu_seconds": 5.503,
+          "cpu_start_ms": 27172,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 32914,
+          "cpu_seconds": 0.239,
+          "cpu_start_ms": 32675,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 33390,
+          "cpu_seconds": 0.476,
+          "cpu_start_ms": 32914,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 33400,
+          "cpu_seconds": 0.01,
+          "cpu_start_ms": 33390,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 46035,
+          "cpu_seconds": 12.635,
+          "cpu_start_ms": 33400,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 46123,
+          "cpu_seconds": 0.088,
+          "cpu_start_ms": 46035,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 46133,
+          "cpu_seconds": 0.01,
+          "cpu_start_ms": 46123,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 46134,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 46133,
+          "stage": "stack_lift_D1"
+        },
+        {
+          "cpu_end_ms": 46136,
+          "cpu_seconds": 0.002,
+          "cpu_start_ms": 46134,
+          "stage": "stack_lift_D2"
+        },
+        {
+          "cpu_end_ms": 46137,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 46136,
+          "stage": "stack_lift_D3"
+        },
+        {
+          "cpu_end_ms": 46138,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 46137,
+          "stage": "stack_lift_D4"
+        },
+        {
+          "cpu_end_ms": 54896,
+          "cpu_seconds": 8.758,
+          "cpu_start_ms": 46138,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 60706,
+          "cpu_seconds": 5.81,
+          "cpu_start_ms": 54896,
+          "stage": "stack_lift_C2"
+        },
+        {
+          "cpu_end_ms": 66471,
+          "cpu_seconds": 5.765,
+          "cpu_start_ms": 60706,
+          "stage": "stack_lift_C3"
+        },
+        {
+          "cpu_end_ms": 72333,
+          "cpu_seconds": 5.862,
+          "cpu_start_ms": 66471,
+          "stage": "stack_lift_C4"
+        },
+        {
+          "cpu_end_ms": 112783,
+          "cpu_seconds": 40.45,
+          "cpu_start_ms": 72333,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 112783,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 112783,
+          "stage": "stack_relation_D1"
+        },
+        {
+          "cpu_end_ms": 112783,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 112783,
+          "stage": "stack_relation_D2"
+        },
+        {
+          "cpu_end_ms": 112783,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 112783,
+          "stage": "stack_relation_D3"
+        },
+        {
+          "cpu_end_ms": 112783,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 112783,
+          "stage": "stack_relation_D4"
+        },
+        {
+          "cpu_end_ms": 133267,
+          "cpu_seconds": 20.484,
+          "cpu_start_ms": 112783,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 138428,
+          "cpu_seconds": 5.161,
+          "cpu_start_ms": 133267,
+          "stage": "stack_relation_C2"
+        },
+        {
+          "cpu_end_ms": 143600,
+          "cpu_seconds": 5.172,
+          "cpu_start_ms": 138428,
+          "stage": "stack_relation_C3"
+        },
+        {
+          "cpu_end_ms": 148796,
+          "cpu_seconds": 5.196,
+          "cpu_start_ms": 143600,
+          "stage": "stack_relation_C4"
+        },
+        {
+          "cpu_end_ms": 192621,
+          "cpu_seconds": 43.825,
+          "cpu_start_ms": 148796,
+          "stage": "stack_relation_B1"
+        }
+      ],
+      "task_id": "spinless_230_v3-p136-sg166",
+      "unique_full_group": true,
+      "worker_task_wall_seconds": 193.9141697883606
+    },
+    {
+      "audit_kind": "nonzero-background-complete-lower-stacking",
+      "gap_classification_cpu_seconds": 130.672,
+      "gap_post_classification_cpu_seconds": 4.342,
+      "gap_total_cpu_seconds": 135.014,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 1146976,
+        "process_cpu_seconds": 135.32,
+        "system_cpu_seconds": 0.17,
+        "user_cpu_seconds": 135.15,
+        "wall_seconds": 135.74
+      },
+      "hostname": "n05.local",
+      "pbs_job": "115925.head.local",
+      "queue": "spinless_230_v1_20260927T040004Z_q5",
+      "result_wall_seconds": 135.6277515888214,
+      "space_group": 195,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 21127,
+          "cpu_seconds": 21.127,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 21337,
+          "cpu_seconds": 0.21,
+          "cpu_start_ms": 21127,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 24583,
+          "cpu_seconds": 3.246,
+          "cpu_start_ms": 21337,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 24708,
+          "cpu_seconds": 0.125,
+          "cpu_start_ms": 24583,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 24884,
+          "cpu_seconds": 0.176,
+          "cpu_start_ms": 24708,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 24887,
+          "cpu_seconds": 0.003,
+          "cpu_start_ms": 24884,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 35870,
+          "cpu_seconds": 10.983,
+          "cpu_start_ms": 24887,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 35883,
+          "cpu_seconds": 0.013,
+          "cpu_start_ms": 35870,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 35894,
+          "cpu_seconds": 0.011,
+          "cpu_start_ms": 35883,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 35895,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 35894,
+          "stage": "stack_lift_D1"
+        },
+        {
+          "cpu_end_ms": 40407,
+          "cpu_seconds": 4.512,
+          "cpu_start_ms": 35895,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 43692,
+          "cpu_seconds": 3.285,
+          "cpu_start_ms": 40407,
+          "stage": "stack_lift_C2"
+        },
+        {
+          "cpu_end_ms": 47388,
+          "cpu_seconds": 3.696,
+          "cpu_start_ms": 43692,
+          "stage": "stack_lift_C3"
+        },
+        {
+          "cpu_end_ms": 50352,
+          "cpu_seconds": 2.964,
+          "cpu_start_ms": 47388,
+          "stage": "stack_lift_C4"
+        },
+        {
+          "cpu_end_ms": 74947,
+          "cpu_seconds": 24.595,
+          "cpu_start_ms": 50352,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 74947,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 74947,
+          "stage": "stack_relation_D1"
+        },
+        {
+          "cpu_end_ms": 78021,
+          "cpu_seconds": 3.074,
+          "cpu_start_ms": 74947,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 103438,
+          "cpu_seconds": 25.417,
+          "cpu_start_ms": 78021,
+          "stage": "stack_relation_C2"
+        },
+        {
+          "cpu_end_ms": 106495,
+          "cpu_seconds": 3.057,
+          "cpu_start_ms": 103438,
+          "stage": "stack_relation_C3"
+        },
+        {
+          "cpu_end_ms": 120937,
+          "cpu_seconds": 14.442,
+          "cpu_start_ms": 106495,
+          "stage": "stack_relation_C4"
+        },
+        {
+          "cpu_end_ms": 135014,
+          "cpu_seconds": 14.077,
+          "cpu_start_ms": 120937,
+          "stage": "stack_relation_B1"
+        }
+      ],
+      "task_id": "spinless_230_v3-p148-sg195",
+      "unique_full_group": true,
+      "worker_task_wall_seconds": 136.67464423179626
+    },
+    {
+      "audit_kind": "gauge-zero-complete-marked-stacking",
+      "gap_classification_cpu_seconds": 23.738,
+      "gap_post_classification_cpu_seconds": 91.576,
+      "gap_total_cpu_seconds": 115.314,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 1074864,
+        "process_cpu_seconds": 115.84,
+        "system_cpu_seconds": 0.37,
+        "user_cpu_seconds": 115.47,
+        "wall_seconds": 116.72999999999999
+      },
+      "hostname": "n01.local",
+      "pbs_job": "115921.head.local",
+      "queue": "spinless_dev_20260927T033520Z",
+      "result_wall_seconds": 116.58164119720459,
+      "space_group": 19,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 23333,
+          "cpu_seconds": 23.333,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 23490,
+          "cpu_seconds": 0.157,
+          "cpu_start_ms": 23333,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 23490,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 23490,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 23490,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 23490,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 23724,
+          "cpu_seconds": 0.234,
+          "cpu_start_ms": 23490,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 23724,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 23724,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 23725,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 23724,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 23738,
+          "cpu_seconds": 0.013,
+          "cpu_start_ms": 23725,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 24212,
+          "cpu_seconds": 0.474,
+          "cpu_start_ms": 23738,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 40754,
+          "cpu_seconds": 16.542,
+          "cpu_start_ms": 24212,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 72338,
+          "cpu_seconds": 31.584,
+          "cpu_start_ms": 40754,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 98572,
+          "cpu_seconds": 26.234,
+          "cpu_start_ms": 72338,
+          "stage": "stack_lift_B2"
+        },
+        {
+          "cpu_end_ms": 103484,
+          "cpu_seconds": 4.912,
+          "cpu_start_ms": 98572,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 107936,
+          "cpu_seconds": 4.452,
+          "cpu_start_ms": 103484,
+          "stage": "stack_relation_B1"
+        },
+        {
+          "cpu_end_ms": 115314,
+          "cpu_seconds": 7.378,
+          "cpu_start_ms": 107936,
+          "stage": "stack_relation_B2"
+        }
+      ],
+      "task_id": "spinless_230_v3-p170-sg019",
+      "unique_full_group": true,
+      "worker_task_wall_seconds": 117.53893613815308
+    },
+    {
+      "audit_kind": "gauge-zero-complete-marked-stacking",
+      "gap_classification_cpu_seconds": 60.589,
+      "gap_post_classification_cpu_seconds": 27.299,
+      "gap_total_cpu_seconds": 87.888,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 943440,
+        "process_cpu_seconds": 88.16,
+        "system_cpu_seconds": 0.17,
+        "user_cpu_seconds": 87.99,
+        "wall_seconds": 88.64
+      },
+      "hostname": "n01.local",
+      "pbs_job": "115921.head.local",
+      "queue": "spinless_dev_20260927T033520Z",
+      "result_wall_seconds": 88.54133725166321,
+      "space_group": 14,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 20632,
+          "cpu_seconds": 20.632,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 20810,
+          "cpu_seconds": 0.178,
+          "cpu_start_ms": 20632,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 20810,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 20810,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 22312,
+          "cpu_seconds": 1.502,
+          "cpu_start_ms": 20810,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 22503,
+          "cpu_seconds": 0.191,
+          "cpu_start_ms": 22312,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 24682,
+          "cpu_seconds": 2.179,
+          "cpu_start_ms": 22503,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 24682,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 24682,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 24733,
+          "cpu_seconds": 0.051,
+          "cpu_start_ms": 24682,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 24743,
+          "cpu_seconds": 0.01,
+          "cpu_start_ms": 24733,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 24743,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 24743,
+          "stage": "free_pip_parity_candidates"
+        },
+        {
+          "cpu_end_ms": 24781,
+          "cpu_seconds": 0.038,
+          "cpu_start_ms": 24743,
+          "stage": "free_pip_parity_1"
+        },
+        {
+          "cpu_end_ms": 25596,
+          "cpu_seconds": 0.815,
+          "cpu_start_ms": 24781,
+          "stage": "pip_d3"
+        },
+        {
+          "cpu_end_ms": 60589,
+          "cpu_seconds": 34.993,
+          "cpu_start_ms": 25596,
+          "stage": "free_pip_surviving_phase_lift"
+        },
+        {
+          "cpu_end_ms": 61448,
+          "cpu_seconds": 0.859,
+          "cpu_start_ms": 60589,
+          "stage": "free_pip_classification_end"
+        },
+        {
+          "cpu_end_ms": 61449,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 61448,
+          "stage": "stack_lift_D1"
+        },
+        {
+          "cpu_end_ms": 61950,
+          "cpu_seconds": 0.501,
+          "cpu_start_ms": 61449,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 62443,
+          "cpu_seconds": 0.493,
+          "cpu_start_ms": 61950,
+          "stage": "stack_lift_C2"
+        },
+        {
+          "cpu_end_ms": 77639,
+          "cpu_seconds": 15.196,
+          "cpu_start_ms": 62443,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 77639,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 77639,
+          "stage": "stack_relation_D1"
+        },
+        {
+          "cpu_end_ms": 80224,
+          "cpu_seconds": 2.585,
+          "cpu_start_ms": 77639,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 82761,
+          "cpu_seconds": 2.537,
+          "cpu_start_ms": 80224,
+          "stage": "stack_relation_C2"
+        },
+        {
+          "cpu_end_ms": 87888,
+          "cpu_seconds": 5.127,
+          "cpu_start_ms": 82761,
+          "stage": "stack_relation_B1"
+        }
+      ],
+      "task_id": "spinless_230_v3-p181-sg014",
+      "unique_full_group": true,
+      "worker_task_wall_seconds": 89.49225044250488
+    },
+    {
+      "audit_kind": "gauge-zero-complete-marked-stacking",
+      "gap_classification_cpu_seconds": 19.096,
+      "gap_post_classification_cpu_seconds": 0.596,
+      "gap_total_cpu_seconds": 19.692,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 804128,
+        "process_cpu_seconds": 19.98,
+        "system_cpu_seconds": 0.16,
+        "user_cpu_seconds": 19.82,
+        "wall_seconds": 20.51
+      },
+      "hostname": "n05.local",
+      "pbs_job": "115925.head.local",
+      "queue": "spinless_230_v1_20260927T040004Z_q5",
+      "result_wall_seconds": 20.384121656417847,
+      "space_group": 1,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 19029,
+          "cpu_seconds": 19.029,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 19037,
+          "cpu_seconds": 0.008,
+          "cpu_start_ms": 19029,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 19037,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 19037,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 19037,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 19037,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 19076,
+          "cpu_seconds": 0.039,
+          "cpu_start_ms": 19037,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 19076,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 19076,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 19077,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 19076,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 19082,
+          "cpu_seconds": 0.005,
+          "cpu_start_ms": 19077,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 19096,
+          "cpu_seconds": 0.014,
+          "cpu_start_ms": 19082,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 19564,
+          "cpu_seconds": 0.468,
+          "cpu_start_ms": 19096,
+          "stage": "free_pip_classification_end"
+        },
+        {
+          "cpu_end_ms": 19567,
+          "cpu_seconds": 0.003,
+          "cpu_start_ms": 19564,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 19570,
+          "cpu_seconds": 0.003,
+          "cpu_start_ms": 19567,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 19574,
+          "cpu_seconds": 0.004,
+          "cpu_start_ms": 19570,
+          "stage": "stack_lift_B2"
+        },
+        {
+          "cpu_end_ms": 19641,
+          "cpu_seconds": 0.067,
+          "cpu_start_ms": 19574,
+          "stage": "stack_lift_B3"
+        },
+        {
+          "cpu_end_ms": 19644,
+          "cpu_seconds": 0.003,
+          "cpu_start_ms": 19641,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 19650,
+          "cpu_seconds": 0.006,
+          "cpu_start_ms": 19644,
+          "stage": "stack_relation_B1"
+        },
+        {
+          "cpu_end_ms": 19656,
+          "cpu_seconds": 0.006,
+          "cpu_start_ms": 19650,
+          "stage": "stack_relation_B2"
+        },
+        {
+          "cpu_end_ms": 19692,
+          "cpu_seconds": 0.036,
+          "cpu_start_ms": 19656,
+          "stage": "stack_relation_B3"
+        }
+      ],
+      "task_id": "spinless_230_v3-p229-sg001",
+      "unique_full_group": true,
+      "worker_task_wall_seconds": 21.086548805236816
+    }
+  ],
+  "sourceID": "73e7bae91a1c02156431ddc1c072c06d32517e287b5aa6314203f416cff1b252",
+  "totals": {
+    "gap_classification_cpu_seconds": 142477.67699999997,
+    "gap_total_cpu_seconds": 148463.70100000006,
+    "process_cpu_seconds": 148558.07,
+    "tasks": 230
+  }
+}

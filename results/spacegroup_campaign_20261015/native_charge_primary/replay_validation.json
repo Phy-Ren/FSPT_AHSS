@@ -1,0 +1,22 @@
+{
+  "command": "python3 replay_independent.py --output /tmp/u1-native-primary-packaged-replay-20261015",
+  "ignoredFields": [
+    "setupMilliseconds",
+    "nativeMilliseconds",
+    "barMilliseconds"
+  ],
+  "records": [
+    {
+      "exactScientificRecordsEqual": true,
+      "file": "result.json",
+      "replayedSHA256": "1a0e2cf7fe98eade20889b29a365cca1d488a01be853a3b973b1c261ee8c3281"
+    },
+    {
+      "exactScientificRecordsEqual": true,
+      "file": "result_extra.json",
+      "replayedSHA256": "8fc5ffc5e459c5222a0f5c0edeabace6d52f79c3489b6b60f96cf6a9a62e1879"
+    }
+  ],
+  "restoredPinnedSources": true,
+  "status": "PASS"
+}

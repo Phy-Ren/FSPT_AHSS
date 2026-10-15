@@ -1,0 +1,548 @@
+{
+  "classification": {
+    "chargeKernelLattice": [
+      [
+        1
+      ]
+    ],
+    "chargeObstructionMap": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "chargeObstructionTargetOrders": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "chargeOrders": [
+      2
+    ],
+    "chargePrimaryStats": {
+      "barFallbacks": 0,
+      "comparisons": 1,
+      "emptyTargetClasses": 0,
+      "nativeCalls": 1,
+      "omegaClosureChecks": 1,
+      "phaseModeOverrides": 0
+    },
+    "coefficientActions": [
+      "CI: s1",
+      "charge: rho1",
+      "extension: rho1+s1",
+      "phase: s1"
+    ],
+    "filtrationPresentations": {
+      "charge": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "phase": [
+        [
+          -2,
+          7
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "sheet": []
+    },
+    "finalChargeFreeRank": 0,
+    "finalChargeOrders": [],
+    "finalPhaseFreeRank": 0,
+    "finalPhaseOrders": [],
+    "finalSheetFreeRank": 0,
+    "finalSheetOrders": [],
+    "formulaCacheStats": {
+      "entryLimitPerCache": 8192,
+      "geometryEntries": 42,
+      "geometryFlushes": 0,
+      "geometryHits": 252,
+      "requestEntries": 148,
+      "requestFlushes": 0,
+      "requestHits": 146
+    },
+    "formulaWorkerCalls": 148,
+    "freeRank": 0,
+    "gaugeReductionWitnesses": [
+      {
+        "nativeChargeParameter": [
+          -1,
+          0,
+          -1
+        ],
+        "nativeFinalPhase": [
+          0,
+          0,
+          0,
+          "1/2",
+          "1/2"
+        ],
+        "nativeSheetParameter": []
+      },
+      {
+        "nativeChargeParameter": [
+          0,
+          0,
+          0
+        ],
+        "nativeFinalPhase": [
+          0,
+          0,
+          0,
+          "1/2",
+          "1/2"
+        ],
+        "nativeSheetParameter": []
+      },
+      {
+        "nativeChargeParameter": [
+          0,
+          0,
+          0
+        ],
+        "nativeFinalPhase": [
+          0,
+          0,
+          "1/2",
+          "1/2",
+          0
+        ],
+        "nativeSheetParameter": []
+      },
+      {
+        "nativeChargeParameter": [
+          0,
+          0,
+          0
+        ],
+        "nativeFinalPhase": [
+          "1/8",
+          "1/8",
+          0,
+          "1/8",
+          "1/2"
+        ],
+        "nativeSheetParameter": []
+      }
+    ],
+    "generators": [
+      {
+        "kind": "phase",
+        "nativePhase": [
+          "1/2",
+          0,
+          "1/2",
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "phase",
+        "nativePhase": [
+          0,
+          "1/2",
+          0,
+          0,
+          "1/2"
+        ]
+      },
+      {
+        "kind": "charge",
+        "nativeCharge": [
+          0,
+          0,
+          -1,
+          1
+        ],
+        "nativePhase": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "inputValidation": {
+      "associativityTriples": 64,
+      "groupOrder": 4,
+      "independentCharactersChecked": true,
+      "twistedExtensionTriples": 64
+    },
+    "nativeChainIdentitiesVerified": true,
+    "nativeCompletionChecks": 8,
+    "neutralE8AbsentByCohomology": true,
+    "obstructedSheets": [],
+    "pairedGeometryReuse": true,
+    "phaseOrders": [
+      2,
+      2
+    ],
+    "presentation": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        -1,
+        2
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ]
+    ],
+    "presentationGeneratorCount": 3,
+    "resolutionDimensions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "scope": "CI-generated, localized-charge and group-cohomological phase sector",
+    "sheetOrders": [],
+    "spatialDimension": 3,
+    "theory": "U(1)^f insulator",
+    "torsion": [],
+    "uniformIQHIncluded": false,
+    "witnesses": [
+      {
+        "chargeCohomology": [
+          1
+        ],
+        "kind": "charge-lift",
+        "nativePhase": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nativeSource": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "coefficients": [
+          2
+        ],
+        "kind": "charge-root",
+        "phaseCoordinates": [
+          0,
+          1
+        ]
+      },
+      {
+        "chargeCoordinates": [
+          0
+        ],
+        "index": 1,
+        "kind": "incoming-charge-gauge",
+        "phaseCoordinates": [
+          0,
+          1
+        ]
+      },
+      {
+        "chargeCoordinates": [
+          0
+        ],
+        "index": 2,
+        "kind": "incoming-charge-gauge",
+        "phaseCoordinates": [
+          1,
+          0
+        ]
+      },
+      {
+        "chargeCoordinates": [
+          1
+        ],
+        "index": 1,
+        "kind": "incoming-CI-gauge",
+        "phaseCoordinates": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "input": {
+    "circle_action": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "dimension": 3,
+    "effective_extension": "half_pin_minus",
+    "family": "point3",
+    "geometric_pin_minus": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        1
+      ]
+    ],
+    "hermann_mauguin": "222",
+    "id": "point3_06_spinless",
+    "identity_index": 0,
+    "index": 6,
+    "input_scope": "geometry_and_background_only",
+    "matrices": [
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ]
+    ],
+    "multiplication": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        3,
+        2
+      ],
+      [
+        2,
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        2,
+        1,
+        0
+      ]
+    ],
+    "name": "D2",
+    "omega": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "1/2"
+      ]
+    ],
+    "order": 4,
+    "physical_symmetry": "unitary_charge_preserving_crystalline",
+    "representative_catalog_number": 16,
+    "rho": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "s": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "spin": "spinless",
+    "translation_subgroup_present": false
+  },
+  "run": {
+    "batchCaseIDs": [
+      "point3_06_spin_half",
+      "point3_06_spinless"
+    ],
+    "batchElapsedSeconds": 1.517,
+    "batchExitCode": 0,
+    "batchTimeoutSeconds": 240,
+    "chargePrimaryRequested": "compare",
+    "command": [
+      "gap",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "-m",
+      "256m",
+      "-K",
+      "2g",
+      "/home/xingyu/AllFSPT_reviews/z2_reuse_runner_20261015/compare/point3_06_spin_half/driver.g"
+    ],
+    "elapsedSeconds": 0.487,
+    "exitCode": 0,
+    "host": "youran-9950X3D",
+    "id": "point3_06_spinless",
+    "inputSHA256": "f188d9cfd100c73d914cb9abd13affca027d5ab51d5a88cc112131670cbab63b",
+    "pairedSpins": true,
+    "phaseClassRequested": "compare",
+    "reusePolicy": "same group/resolution/bar and identical character linear algebra; independent omega/source contexts",
+    "sourceSHA256": "67b361e640a9ea5b598b0e9fbde7399f2a7988285a61081684327c8870babe2d",
+    "startedUTC": "2026-10-15T13:13:20.672778+00:00",
+    "status": "complete",
+    "timeoutEnforcement": "shared batch budget; individual cases are not killed separately",
+    "timeoutSeconds": 120,
+    "uniformIQHRequested": false
+  }
+}

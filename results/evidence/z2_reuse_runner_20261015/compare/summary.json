@@ -1,0 +1,72 @@
+[
+  {
+    "batchCaseIDs": [
+      "point3_06_spin_half",
+      "point3_06_spinless"
+    ],
+    "batchElapsedSeconds": 1.516,
+    "batchExitCode": 0,
+    "batchTimeoutSeconds": 240,
+    "chargePrimaryRequested": "compare",
+    "command": [
+      "gap",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "-m",
+      "256m",
+      "-K",
+      "2g",
+      "/home/xingyu/AllFSPT_reviews/z2_reuse_runner_20261015/compare/point3_06_spin_half/driver.g"
+    ],
+    "elapsedSeconds": 0.997,
+    "exitCode": 0,
+    "host": "youran-9950X3D",
+    "id": "point3_06_spin_half",
+    "inputSHA256": "cb3bc0e85109b2dfaab72d7defb080a566e212d068fbd20d5c5fae2a9aa2a5fb",
+    "pairedSpins": true,
+    "phaseClassRequested": "compare",
+    "reusePolicy": "same group/resolution/bar and identical character linear algebra; independent omega/source contexts",
+    "sourceSHA256": "67b361e640a9ea5b598b0e9fbde7399f2a7988285a61081684327c8870babe2d",
+    "startedUTC": "2026-10-15T13:13:19.676135+00:00",
+    "status": "complete",
+    "timeoutEnforcement": "shared batch budget; individual cases are not killed separately",
+    "timeoutSeconds": 120,
+    "uniformIQHRequested": false
+  },
+  {
+    "batchCaseIDs": [
+      "point3_06_spin_half",
+      "point3_06_spinless"
+    ],
+    "batchElapsedSeconds": 1.517,
+    "batchExitCode": 0,
+    "batchTimeoutSeconds": 240,
+    "chargePrimaryRequested": "compare",
+    "command": [
+      "gap",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "-m",
+      "256m",
+      "-K",
+      "2g",
+      "/home/xingyu/AllFSPT_reviews/z2_reuse_runner_20261015/compare/point3_06_spin_half/driver.g"
+    ],
+    "elapsedSeconds": 0.487,
+    "exitCode": 0,
+    "host": "youran-9950X3D",
+    "id": "point3_06_spinless",
+    "inputSHA256": "f188d9cfd100c73d914cb9abd13affca027d5ab51d5a88cc112131670cbab63b",
+    "pairedSpins": true,
+    "phaseClassRequested": "compare",
+    "reusePolicy": "same group/resolution/bar and identical character linear algebra; independent omega/source contexts",
+    "sourceSHA256": "67b361e640a9ea5b598b0e9fbde7399f2a7988285a61081684327c8870babe2d",
+    "startedUTC": "2026-10-15T13:13:20.672778+00:00",
+    "status": "complete",
+    "timeoutEnforcement": "shared batch budget; individual cases are not killed separately",
+    "timeoutSeconds": 120,
+    "uniformIQHRequested": false
+  }
+]

@@ -1,0 +1,14 @@
+--- main0864495/scripts/run_full_space_group.py
++++ remote/scripts/run_full_space_group.py
+@@ -14,9 +14,11 @@
+ sys.path.insert(0, str(ROOT))
+ from fspt.finite_examples import gap_literal
+ from fspt.full_run import freeze_runtime, publish_result
++from fspt.allocation_audit import run_pending_node_audit
+ 
+ 
+ def main():
++    run_pending_node_audit(ROOT)
+     parser = argparse.ArgumentParser(description=__doc__)
+     parser.add_argument("group", type=int)
+     parser.add_argument("--crystalline-spin", choices=("half", "spinless"), default="half")

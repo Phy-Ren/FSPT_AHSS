@@ -1,0 +1,6 @@
+{
+  "reviewer": "global_solver",
+  "scope": "Independent read-only compiler/runtime/native VM audit",
+  "finding": "No arithmetic or dispatch defect identified. Fixed denominator rational arithmetic, negative mod/floor, checked int64 overflow with full big-integer restart, exact quotient rejection, symbolic branch rejection, guards for nonzero sheets/integer fields/half-integral omega, unchanged gauges and original validation all verified.",
+  "limitation": "The fast-domain guard does not assert lower-tower closure; validate=False retains its original partial-simplex meaning."
+}

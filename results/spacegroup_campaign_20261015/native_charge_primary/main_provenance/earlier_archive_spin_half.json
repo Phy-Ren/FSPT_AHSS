@@ -1,0 +1,853 @@
+{
+  "campaign": "/home/user/xyren/AllFSPT/runs/full_closed_cf_v09",
+  "complete": true,
+  "expectedGroups": 230,
+  "fileSHA256": "f0db4858cd67c3de0770c4eecb694ae44be89e44f0304ce03fb95208ecafcc8a",
+  "markedWitnessScope": {},
+  "maxSingleTaskRSS": {
+    "hostname": "n01.local",
+    "maximum_resident_set_size_gib": 16.8690185546875,
+    "maximum_resident_set_size_kib": 17688448,
+    "space_group": 219,
+    "task_id": "full_closed_cf_v09-p000-sg219"
+  },
+  "observer": {
+    "classification_elapsed_seconds": 783.0171189308167,
+    "full_elapsed_seconds": 12699.327845096588,
+    "latest_event": {
+      "classification_checkpoints": 230,
+      "elapsed_seconds": 12699.327845096588,
+      "full_results": 230,
+      "observed_at": 1790456887.9654956
+    },
+    "observer_restarts": [],
+    "polling_interval_seconds": 10.0,
+    "submitted_at": 1790444188.6376505,
+    "timing_scope": "single login-node observer clock; includes queue delays; detection can lag by one polling interval while the observer is running; any observer restarts are recorded",
+    "wall_time_clock": "one observer clock; no cross-node timestamp subtraction"
+  },
+  "path": "results/space_groups/performance.json",
+  "physicalSpin": "spin_half",
+  "scope": {
+    "deadline_extensions": "Original worker states are retained. Separately audited predeadline extensions require original worker exit 0, GNU time exit 0 and a completed guard/watchdog ledger. Worker elapsed can include delayed reaping; GNU time and guard observation intervals describe the command runtime. Observer campaign times are unchanged.",
+    "gap_cpu": "GAP Runtime() values; classification includes setup and free-pip classification",
+    "mathematical_audit_performed": false,
+    "observer": "completion detection may lag; recorded observer restarts can add gaps beyond the polling interval",
+    "partial": "CPU sums cover only the separately counted available records; unfinished task CPU is not estimated. Classification can cover more groups than full results; classification_for_full_results plus post_classification reconciles to total GAP CPU.",
+    "post_classification_cpu": "total GAP Runtime minus classification Runtime; includes stacking, witness export and surrounding driver work",
+    "process_cpu": "GNU time user+system CPU for the task command including child processes and Python wrappers; separate from GAP Runtime",
+    "reference_answers_read": false,
+    "rss": "largest GNU time maximum resident set size among measured tasks, in Linux KiB; NOT simultaneous memory across processes, tasks or nodes; RSS values are never summed",
+    "source_check": "saved manifest source hash and every available checkpoint/result provenance agree",
+    "stage_intervals": "each recorded GAP stage timestamp to the next timestamp, or final Runtime; includes intervening work"
+  },
+  "selectedMeasurements": [
+    {
+      "gap_classification_cpu_seconds": 18.305,
+      "gap_post_classification_cpu_seconds": 0.605,
+      "gap_total_cpu_seconds": 18.91,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 839024,
+        "process_cpu_seconds": 19.19,
+        "system_cpu_seconds": 0.14,
+        "user_cpu_seconds": 19.05,
+        "wall_seconds": 19.76
+      },
+      "hostname": "n04.local",
+      "pbs_job": "115918.head.local",
+      "queue": "campaign4_queue",
+      "result_wall_seconds": 19.644360065460205,
+      "space_group": 1,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 18210,
+          "cpu_seconds": 18.21,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 18216,
+          "cpu_seconds": 0.006,
+          "cpu_start_ms": 18210,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 18216,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 18216,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 18217,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 18216,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 18281,
+          "cpu_seconds": 0.064,
+          "cpu_start_ms": 18217,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 18281,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 18281,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 18283,
+          "cpu_seconds": 0.002,
+          "cpu_start_ms": 18281,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 18287,
+          "cpu_seconds": 0.004,
+          "cpu_start_ms": 18283,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 18305,
+          "cpu_seconds": 0.018,
+          "cpu_start_ms": 18287,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 18782,
+          "cpu_seconds": 0.477,
+          "cpu_start_ms": 18305,
+          "stage": "free_pip_classification_end"
+        },
+        {
+          "cpu_end_ms": 18785,
+          "cpu_seconds": 0.003,
+          "cpu_start_ms": 18782,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 18788,
+          "cpu_seconds": 0.003,
+          "cpu_start_ms": 18785,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 18792,
+          "cpu_seconds": 0.004,
+          "cpu_start_ms": 18788,
+          "stage": "stack_lift_B2"
+        },
+        {
+          "cpu_end_ms": 18861,
+          "cpu_seconds": 0.069,
+          "cpu_start_ms": 18792,
+          "stage": "stack_lift_B3"
+        },
+        {
+          "cpu_end_ms": 18864,
+          "cpu_seconds": 0.003,
+          "cpu_start_ms": 18861,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 18870,
+          "cpu_seconds": 0.006,
+          "cpu_start_ms": 18864,
+          "stage": "stack_relation_B1"
+        },
+        {
+          "cpu_end_ms": 18875,
+          "cpu_seconds": 0.005,
+          "cpu_start_ms": 18870,
+          "stage": "stack_relation_B2"
+        },
+        {
+          "cpu_end_ms": 18910,
+          "cpu_seconds": 0.035,
+          "cpu_start_ms": 18875,
+          "stage": "stack_relation_B3"
+        }
+      ],
+      "task_id": "full_closed_cf_v09-p229-sg001",
+      "task_status": "done",
+      "worker_task_wall_seconds": 20.09771490097046
+    },
+    {
+      "gap_classification_cpu_seconds": 62.974,
+      "gap_post_classification_cpu_seconds": 27.468,
+      "gap_total_cpu_seconds": 90.442,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 982880,
+        "process_cpu_seconds": 90.71,
+        "system_cpu_seconds": 0.14,
+        "user_cpu_seconds": 90.57,
+        "wall_seconds": 97.19
+      },
+      "hostname": "n02.local",
+      "pbs_job": "115916.head.local",
+      "queue": "stacking_queue",
+      "result_wall_seconds": 96.36436033248901,
+      "space_group": 14,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 21720,
+          "cpu_seconds": 21.72,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 21906,
+          "cpu_seconds": 0.186,
+          "cpu_start_ms": 21720,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 21906,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 21906,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 23436,
+          "cpu_seconds": 1.53,
+          "cpu_start_ms": 21906,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 23641,
+          "cpu_seconds": 0.205,
+          "cpu_start_ms": 23436,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 25841,
+          "cpu_seconds": 2.2,
+          "cpu_start_ms": 23641,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 25842,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 25841,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 25893,
+          "cpu_seconds": 0.051,
+          "cpu_start_ms": 25842,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 25902,
+          "cpu_seconds": 0.009,
+          "cpu_start_ms": 25893,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 25902,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 25902,
+          "stage": "free_pip_parity_candidates"
+        },
+        {
+          "cpu_end_ms": 25939,
+          "cpu_seconds": 0.037,
+          "cpu_start_ms": 25902,
+          "stage": "free_pip_parity_1"
+        },
+        {
+          "cpu_end_ms": 26752,
+          "cpu_seconds": 0.813,
+          "cpu_start_ms": 25939,
+          "stage": "pip_d3"
+        },
+        {
+          "cpu_end_ms": 62974,
+          "cpu_seconds": 36.222,
+          "cpu_start_ms": 26752,
+          "stage": "free_pip_surviving_phase_lift"
+        },
+        {
+          "cpu_end_ms": 63454,
+          "cpu_seconds": 0.48,
+          "cpu_start_ms": 62974,
+          "stage": "free_pip_classification_end"
+        },
+        {
+          "cpu_end_ms": 63455,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 63454,
+          "stage": "stack_lift_D1"
+        },
+        {
+          "cpu_end_ms": 63963,
+          "cpu_seconds": 0.508,
+          "cpu_start_ms": 63455,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 64484,
+          "cpu_seconds": 0.521,
+          "cpu_start_ms": 63963,
+          "stage": "stack_lift_C2"
+        },
+        {
+          "cpu_end_ms": 79719,
+          "cpu_seconds": 15.235,
+          "cpu_start_ms": 64484,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 79719,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 79719,
+          "stage": "stack_relation_D1"
+        },
+        {
+          "cpu_end_ms": 82303,
+          "cpu_seconds": 2.584,
+          "cpu_start_ms": 79719,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 84837,
+          "cpu_seconds": 2.534,
+          "cpu_start_ms": 82303,
+          "stage": "stack_relation_C2"
+        },
+        {
+          "cpu_end_ms": 90442,
+          "cpu_seconds": 5.605,
+          "cpu_start_ms": 84837,
+          "stage": "stack_relation_B1"
+        }
+      ],
+      "task_id": "full_closed_cf_v09-p097-sg014",
+      "task_status": "done",
+      "worker_task_wall_seconds": 97.74020481109619
+    },
+    {
+      "gap_classification_cpu_seconds": 22.599,
+      "gap_post_classification_cpu_seconds": 81.166,
+      "gap_total_cpu_seconds": 103.765,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 1033120,
+        "process_cpu_seconds": 104.06,
+        "system_cpu_seconds": 0.18,
+        "user_cpu_seconds": 103.88,
+        "wall_seconds": 111.71000000000001
+      },
+      "hostname": "n04.local",
+      "pbs_job": "115918.head.local",
+      "queue": "campaign4_queue",
+      "result_wall_seconds": 110.6986083984375,
+      "space_group": 19,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 22165,
+          "cpu_seconds": 22.165,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 22331,
+          "cpu_seconds": 0.166,
+          "cpu_start_ms": 22165,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 22331,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 22331,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 22332,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 22331,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 22586,
+          "cpu_seconds": 0.254,
+          "cpu_start_ms": 22332,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 22586,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 22586,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 22587,
+          "cpu_seconds": 0.001,
+          "cpu_start_ms": 22586,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 22599,
+          "cpu_seconds": 0.012,
+          "cpu_start_ms": 22587,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 23209,
+          "cpu_seconds": 0.61,
+          "cpu_start_ms": 22599,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 35882,
+          "cpu_seconds": 12.673,
+          "cpu_start_ms": 23209,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 63595,
+          "cpu_seconds": 27.713,
+          "cpu_start_ms": 35882,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 87097,
+          "cpu_seconds": 23.502,
+          "cpu_start_ms": 63595,
+          "stage": "stack_lift_B2"
+        },
+        {
+          "cpu_end_ms": 91979,
+          "cpu_seconds": 4.882,
+          "cpu_start_ms": 87097,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 96450,
+          "cpu_seconds": 4.471,
+          "cpu_start_ms": 91979,
+          "stage": "stack_relation_B1"
+        },
+        {
+          "cpu_end_ms": 103765,
+          "cpu_seconds": 7.315,
+          "cpu_start_ms": 96450,
+          "stage": "stack_relation_B2"
+        }
+      ],
+      "task_id": "full_closed_cf_v09-p101-sg019",
+      "task_status": "done",
+      "worker_task_wall_seconds": 111.93422770500183
+    },
+    {
+      "gap_classification_cpu_seconds": 33.771,
+      "gap_post_classification_cpu_seconds": 0.495,
+      "gap_total_cpu_seconds": 34.266,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 870256,
+        "process_cpu_seconds": 34.54,
+        "system_cpu_seconds": 0.17,
+        "user_cpu_seconds": 34.37,
+        "wall_seconds": 35.14
+      },
+      "hostname": "n05.local",
+      "pbs_job": "115919.head.local",
+      "queue": "derivation_queue",
+      "result_wall_seconds": 35.048219442367554,
+      "space_group": 166,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 25503,
+          "cpu_seconds": 25.503,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 25889,
+          "cpu_seconds": 0.386,
+          "cpu_start_ms": 25503,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 32394,
+          "cpu_seconds": 6.505,
+          "cpu_start_ms": 25889,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 33247,
+          "cpu_seconds": 0.853,
+          "cpu_start_ms": 32394,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 33684,
+          "cpu_seconds": 0.437,
+          "cpu_start_ms": 33247,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 33694,
+          "cpu_seconds": 0.01,
+          "cpu_start_ms": 33684,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 33694,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 33694,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 33771,
+          "cpu_seconds": 0.077,
+          "cpu_start_ms": 33694,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 34245,
+          "cpu_seconds": 0.474,
+          "cpu_start_ms": 33771,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 34260,
+          "cpu_seconds": 0.015,
+          "cpu_start_ms": 34245,
+          "stage": "stack_native_CF1"
+        },
+        {
+          "cpu_end_ms": 34266,
+          "cpu_seconds": 0.006,
+          "cpu_start_ms": 34260,
+          "stage": "stack_native_CF2"
+        }
+      ],
+      "task_id": "full_closed_cf_v09-p205-sg166",
+      "task_status": "done",
+      "worker_task_wall_seconds": 35.177772521972656
+    },
+    {
+      "gap_classification_cpu_seconds": 31.485,
+      "gap_post_classification_cpu_seconds": 0.485,
+      "gap_total_cpu_seconds": 31.97,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 852608,
+        "process_cpu_seconds": 32.27,
+        "system_cpu_seconds": 0.18,
+        "user_cpu_seconds": 32.09,
+        "wall_seconds": 32.9
+      },
+      "hostname": "n02.local",
+      "pbs_job": "115916.head.local",
+      "queue": "stacking_queue",
+      "result_wall_seconds": 32.755518674850464,
+      "space_group": 195,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 24593,
+          "cpu_seconds": 24.593,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 24817,
+          "cpu_seconds": 0.224,
+          "cpu_start_ms": 24593,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 28413,
+          "cpu_seconds": 3.596,
+          "cpu_start_ms": 24817,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 28969,
+          "cpu_seconds": 0.556,
+          "cpu_start_ms": 28413,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 29139,
+          "cpu_seconds": 0.17,
+          "cpu_start_ms": 28969,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 31472,
+          "cpu_seconds": 2.333,
+          "cpu_start_ms": 29139,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 31472,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 31472,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 31485,
+          "cpu_seconds": 0.013,
+          "cpu_start_ms": 31472,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 31970,
+          "cpu_seconds": 0.485,
+          "cpu_start_ms": 31485,
+          "stage": "classification_end"
+        }
+      ],
+      "task_id": "full_closed_cf_v09-p210-sg195",
+      "task_status": "done",
+      "worker_task_wall_seconds": 33.19429326057434
+    },
+    {
+      "gap_classification_cpu_seconds": 162.162,
+      "gap_post_classification_cpu_seconds": 0.479,
+      "gap_total_cpu_seconds": 162.641,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 1033552,
+        "process_cpu_seconds": 162.92,
+        "system_cpu_seconds": 0.17,
+        "user_cpu_seconds": 162.75,
+        "wall_seconds": 170.07
+      },
+      "hostname": "n05.local",
+      "pbs_job": "115919.head.local",
+      "queue": "derivation_queue",
+      "result_wall_seconds": 169.1750648021698,
+      "space_group": 214,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 44406,
+          "cpu_seconds": 44.406,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 45149,
+          "cpu_seconds": 0.743,
+          "cpu_start_ms": 44406,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 115571,
+          "cpu_seconds": 70.422,
+          "cpu_start_ms": 45149,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 118796,
+          "cpu_seconds": 3.225,
+          "cpu_start_ms": 115571,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 119861,
+          "cpu_seconds": 1.065,
+          "cpu_start_ms": 118796,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 162146,
+          "cpu_seconds": 42.285,
+          "cpu_start_ms": 119861,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 162146,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 162146,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 162162,
+          "cpu_seconds": 0.016,
+          "cpu_start_ms": 162146,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 162641,
+          "cpu_seconds": 0.479,
+          "cpu_start_ms": 162162,
+          "stage": "classification_end"
+        }
+      ],
+      "task_id": "full_closed_cf_v09-p077-sg214",
+      "task_status": "done",
+      "worker_task_wall_seconds": 170.26565718650818
+    },
+    {
+      "deadline_extension": {
+        "completion_observed_at": 1790456918.9893446,
+        "effective_status": "done_with_audited_deadline_extension",
+        "exit_time_interval": [
+          1790456917.98674,
+          1790456918.9893446
+        ],
+        "extended_deadline": 1790471225.6607072,
+        "kernel_waitstatus_available": false,
+        "ledger": "/home/user/xyren/AllFSPT/runs/deadline_guards/queue_20260926T202700Z",
+        "original_deadline": 1790458625.6607072,
+        "original_worker_reap_at": 1790456919.8214428,
+        "original_worker_status": "done",
+        "scope": "successful original worker reap plus GNU time and predeadline guard evidence; original status preserved",
+        "task_wall_seconds_interval": [
+          12692.326032876968,
+          12693.328637361526
+        ]
+      },
+      "effective_task_status": "done_with_audited_deadline_extension",
+      "gap_classification_cpu_seconds": 766.859,
+      "gap_post_classification_cpu_seconds": 11922.91,
+      "gap_total_cpu_seconds": 12689.769,
+      "gnu_time": {
+        "exit_status": 0,
+        "maximum_resident_set_size_kib": 17688448,
+        "process_cpu_seconds": 12691.369999999999,
+        "system_cpu_seconds": 1.48,
+        "user_cpu_seconds": 12689.89,
+        "wall_seconds": 12692.0
+      },
+      "hostname": "n01.local",
+      "pbs_job": "115915.head.local",
+      "queue": "queue",
+      "result_wall_seconds": 12691.840667963028,
+      "space_group": 219,
+      "stage_intervals": [
+        {
+          "cpu_end_ms": 105977,
+          "cpu_seconds": 105.977,
+          "cpu_start_ms": 0,
+          "stage": "startup_and_resolution"
+        },
+        {
+          "cpu_end_ms": 107645,
+          "cpu_seconds": 1.668,
+          "cpu_start_ms": 105977,
+          "stage": "cohomology"
+        },
+        {
+          "cpu_end_ms": 575515,
+          "cpu_seconds": 467.87,
+          "cpu_start_ms": 107645,
+          "stage": "primary_cf"
+        },
+        {
+          "cpu_end_ms": 596032,
+          "cpu_seconds": 20.517,
+          "cpu_start_ms": 575515,
+          "stage": "primary_mc_and_bos"
+        },
+        {
+          "cpu_end_ms": 598901,
+          "cpu_seconds": 2.869,
+          "cpu_start_ms": 596032,
+          "stage": "incoming_mc"
+        },
+        {
+          "cpu_end_ms": 598903,
+          "cpu_seconds": 0.002,
+          "cpu_start_ms": 598901,
+          "stage": "secondary_bos"
+        },
+        {
+          "cpu_end_ms": 598903,
+          "cpu_seconds": 0.0,
+          "cpu_start_ms": 598903,
+          "stage": "secondary_mc"
+        },
+        {
+          "cpu_end_ms": 599286,
+          "cpu_seconds": 0.383,
+          "cpu_start_ms": 598903,
+          "stage": "pip"
+        },
+        {
+          "cpu_end_ms": 766859,
+          "cpu_seconds": 167.573,
+          "cpu_start_ms": 599286,
+          "stage": "pip_d3"
+        },
+        {
+          "cpu_end_ms": 767336,
+          "cpu_seconds": 0.477,
+          "cpu_start_ms": 766859,
+          "stage": "classification_end"
+        },
+        {
+          "cpu_end_ms": 1939656,
+          "cpu_seconds": 1172.32,
+          "cpu_start_ms": 767336,
+          "stage": "stack_lift_C1"
+        },
+        {
+          "cpu_end_ms": 2105942,
+          "cpu_seconds": 166.286,
+          "cpu_start_ms": 1939656,
+          "stage": "stack_lift_C2"
+        },
+        {
+          "cpu_end_ms": 6394204,
+          "cpu_seconds": 4288.262,
+          "cpu_start_ms": 2105942,
+          "stage": "stack_lift_B1"
+        },
+        {
+          "cpu_end_ms": 6736470,
+          "cpu_seconds": 342.266,
+          "cpu_start_ms": 6394204,
+          "stage": "stack_relation_C1"
+        },
+        {
+          "cpu_end_ms": 7238021,
+          "cpu_seconds": 501.551,
+          "cpu_start_ms": 6736470,
+          "stage": "stack_relation_C2"
+        },
+        {
+          "cpu_end_ms": 7737880,
+          "cpu_seconds": 499.859,
+          "cpu_start_ms": 7238021,
+          "stage": "stack_relation_B1"
+        },
+        {
+          "cpu_end_ms": 11779765,
+          "cpu_seconds": 4041.885,
+          "cpu_start_ms": 7737880,
+          "stage": "stack_pip_phase_lift"
+        },
+        {
+          "cpu_end_ms": 12689769,
+          "cpu_seconds": 910.004,
+          "cpu_start_ms": 11779765,
+          "stage": "stack_pip_square"
+        }
+      ],
+      "task_id": "full_closed_cf_v09-p000-sg219",
+      "task_status": "done",
+      "worker_task_wall_seconds": 12694.160582065582
+    }
+  ],
+  "sourceID": "9c16c0714da16a1ed5dc23b7830701afc01e6d7a37ee6d243f536ee4dc9ecd96",
+  "totals": {
+    "classification_cpu_records": 230,
+    "full_cpu_records": 230,
+    "gap_classification_cpu_seconds": 19549.685,
+    "gap_classification_cpu_seconds_for_full_results": 19549.685,
+    "gap_post_classification_cpu_seconds": 43413.33700000001,
+    "gap_total_cpu_seconds": 62963.021999999975,
+    "metrics_records": 230,
+    "process_cpu_seconds": 63036.04999999997,
+    "process_system_cpu_seconds": 46.94999999999997,
+    "process_user_cpu_seconds": 62989.1,
+    "tasks": 230
+  }
+}

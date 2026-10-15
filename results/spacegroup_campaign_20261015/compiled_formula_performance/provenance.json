@@ -1,0 +1,34 @@
+{
+  "compiled_programs": {
+    "product": {
+      "denominator": 8,
+      "nodes": 3391,
+      "payload_sha256": "f0db5acd269837b5fabee5c417a82fa442121dec434da24786bbad32b849979f",
+      "replay_payload_identical_to_integrated": true
+    },
+    "source": {
+      "denominator": 8,
+      "nodes": 1876,
+      "payload_sha256": "715bf8dbf007ba4fb10b86cc68240f8412ed1225a351a735f740dda38b7e6fcb",
+      "replay_payload_identical_to_integrated": true
+    }
+  },
+  "formula_input_archive_sha256": "a1410f854828f012dc9be56cfd62dc0eb4a195779c09eed273e6a70f2ca97a4a",
+  "generic_infrastructure": {
+    "commit": "0864495b90297d3e1a0747b77aae17980f6d1f3f",
+    "files": {
+      "fspt/formulas_pip_compile.py": "509da7564db26c56e967e5e23d3632e903c7e3d69f3631b23951cb075357da38",
+      "fspt/full_formula/native.cpp": "ccc236ca0975088f8e27e3358f9418940cbbf8810393f43ff976e448454bfb11"
+    },
+    "repository": "/home/xingyu/FSPT_AHSS_public"
+  },
+  "integrated_commit": "d922a1257f3bf436ce38a987a68e1b7b5a3d72a7",
+  "isolated_baseline_commit": "65ec94408da09b50249a891b7c443363885a98ef",
+  "no_external_runtime_imports": true,
+  "requests": {
+    "compressed_sha256": "6daf0cfc279236f5a85d4653404d0114819bd92a671af3369e314fe6bbccca10",
+    "count": 19099,
+    "file": "full_requests.jsonl.gz",
+    "uncompressed_sha256": "387b33d1b3e2abcd146ab04aa34325399a20d959032edf92c159fd3f4673124e"
+  }
+}

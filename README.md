@@ -86,6 +86,9 @@ identical coefficient actions, while keeping independent extension inputs
 and classification states. `--largest-first` starts larger holonomy groups
 first. Set concurrency and memory limits from the available compute node;
 each GAP process has one persistent exact-arithmetic Python worker.
+The [performance guide](docs/PERFORMANCE.md) documents the reused native
+cohomology operations, generated U1 formulas, reference-comparison switches,
+and measured complete-run checks.
 
 Every calculation retains its exact symmetry input, source and input hashes,
 integer presentation, witnesses, and execution logs. Literature answers are
