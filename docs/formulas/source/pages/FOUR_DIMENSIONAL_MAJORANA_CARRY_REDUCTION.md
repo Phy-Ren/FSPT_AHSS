@@ -11,7 +11,7 @@ The following notation is local to this proof. Write
 {{equation:four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--1}}
 
 Here $`A,A'`$ are binary differentials, canonically lifted in integer
-arithmetic. Thus $`dB=-r`$, $`dB'=-r'`$, and $`dX=-(r+r')`$.
+arithmetic. Thus $`d(\beta^\circ u)=-r`$, $`d(\beta^\circ v)=-r'`$, and $`dX=-(r+r')`$.
 All higher cups below are signed integer cups.
 
 The old integer numerator before taking its second digit is

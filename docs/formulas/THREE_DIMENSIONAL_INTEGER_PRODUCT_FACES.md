@@ -5,10 +5,10 @@
 The coefficient table below specifies the following part of the terminal stacking phase:
 
 ```math
-\frac12\sum_{(f,g)\in\mathcal C_4^\psi}f\,g.
+\frac12\sum_{(f,g)\in\mathcal I_4^{\psi,\mathrm{face}}}f\,g.
 ```
 
-The following table gives every pair in $`\mathcal C_4^\psi`$. Its first
+The following table gives every pair in $`\mathcal I_4^{\psi,\mathrm{face}}`$. Its first
 entry is a polynomial in the displayed physical integer digits; its second
 entry is a polynomial in physical background faces. All arithmetic in the
 table is binary. Repeated factors are ordinary products of face values.

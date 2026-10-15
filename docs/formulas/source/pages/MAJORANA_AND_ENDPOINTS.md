@@ -511,7 +511,7 @@ selected on this subspace.
 {{equation:four-dimensional--majorana-decoration--33}}
 
 The carries and coefficient sets are the shared
-[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`R_5`$ is the same
+[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`\widehat B_5`$ is the same
 [phase-change cochain](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 The earlier compact closed-product expression differs by its explicit
 output coboundary as well as the phase-coordinate comparison. It is not

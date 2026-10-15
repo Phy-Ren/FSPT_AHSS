@@ -60,7 +60,7 @@ or output gauge has been changed by these table reductions.
 
 
 The [integer-only carry identity](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md#reusing-the-integer-only-carry)
-normalizes all occurrences of $`B_4[n_2,0]`$ to $`B_4^\psi[n_2]`$,
+normalizes all occurrences of $`\beta_4[n_2,0]`$ to $`\beta_4^\psi[n_2]`$,
 including their differentials and binary digits. Its complete semantic
 replay compares every factor definition and every outer row with the prior
 expression: [mixed receipt](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/NORMALIZATION_CHECK.json)

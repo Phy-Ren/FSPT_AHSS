@@ -50,10 +50,10 @@ The p+ip layer is a surviving subgroup of
 $`H^1(G,\mathbb Z_{s_1})`$. Its only possible torsion factor is a single $`\mathbb Z_2`$.
 
 Indeed, if a signed integer cocycle $`n_1`$ represents a torsion class,
-then $`m n_1=d_{s_1} k`$ for an integer zero-cochain $`k`$. Since
+then $`m n_1=d_{s_1}B_0`$ for an integer zero-cochain $`B_0`$. Since
 
 ```math
-d_{s_1} k(g)=\big((-1)^{s_1(g)}-1\big)k=-2k s_1(g),
+d_{s_1}B_0(g)=\big((-1)^{s_1(g)}-1\big)B_0=-2B_0 s_1(g),
 ```
 
 trivial $`s_1`$ forces $`n_1=0`$. For nontrivial $`s_1`$, this equation forces
@@ -258,17 +258,17 @@ $`Y=\mathsf D^aP`$ agree. Apply the full integer gauge to $`X`$, obtaining
 $`X_g`$ with exactly the same integer cochain as $`Y`$. Then
 
 ```math
-z=\hat\nu_5(\mathsf D^2X_g)-\hat\nu_5(\mathsf D^2Y),
-\qquad [z]=4tq[P].
+\widehat C_5=\hat\nu_5(\mathsf D^2X_g)-\hat\nu_5(\mathsf D^2Y),
+\qquad [\widehat C_5]=4tq[P].
 ```
 
 The factor $`4`$ records the two additional doublings. Because the two
 intermediate layers are binary, the odd parts of the lower group $`A`$
-and its bosonic subgroup $`B`$ coincide. Hence the odd extension class
+and its bosonic subgroup $`H^{\mathrm{bos}}`$ coincide. Hence the odd extension class
 is recovered by ordinary linear arithmetic:
 
 ```math
-[qP]=(4t)^{-1}[z]\quad\text{in }B_{\rm odd}/rB_{\rm odd}.
+[qP]=(4t)^{-1}[\widehat C_5]\quad\text{in }H^{\mathrm{bos}}_{\rm odd}/rH^{\mathrm{bos}}_{\rm odd}.
 ```
 
 This uses no unequal-input Majorana or p+ip stacking. The necessary

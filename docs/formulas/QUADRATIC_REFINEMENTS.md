@@ -87,20 +87,20 @@ $`z_2x/2`$ to the quarter-valued phase.
 ## The quadratic part of the 4+1D obstruction
 
 The [integer carries](FOUR_DIMENSIONAL.md#eq-s1) are already fixed:
-$`B_4^\gamma=\beta^\circ\check n_3`$ and
-$`B_4=B_4^\gamma+B_4^\psi`$. The quadratic quarter-valued terms in the
+$`\beta_4^\gamma=\beta^\circ\check n_3`$ and
+$`\beta_4=\beta_4^\gamma+\beta_4^\psi`$. The quadratic quarter-valued terms in the
 three physical contributions are, respectively,
 
 <a id="obstruction-specialization"></a>
 
 ```math
 \begin{aligned}
-\gamma:\quad&\frac14\mathcal Q_{\omega_2}[B_4^\gamma],\\
+\gamma:\quad&\frac14\mathcal Q_{\omega_2}[\beta_4^\gamma],\\
 \gamma\psi:\quad&\frac14\Big(
- \mathcal Q_{\omega_2}[B_4^\gamma+B_4^\psi]
- -\mathcal Q_{\omega_2}[B_4^\gamma]
- -\mathcal Q_{\omega_2}[B_4^\psi]\Big),\\
-\psi:\quad&\frac14\mathcal Q_{\omega_2}[B_4^\psi].
+ \mathcal Q_{\omega_2}[\beta_4^\gamma+\beta_4^\psi]
+ -\mathcal Q_{\omega_2}[\beta_4^\gamma]
+ -\mathcal Q_{\omega_2}[\beta_4^\psi]\Big),\\
+\psi:\quad&\frac14\mathcal Q_{\omega_2}[\beta_4^\psi].
 \end{aligned}
 ```
 
@@ -108,7 +108,7 @@ This is exactly the previous three-, four-, and three-term division into
 physical contributions. All other terms of those obstructions retain
 their existing values and physical labels. The same operation occurs
 in the product: the characteristic part of the integer kernel is
-$`\Delta\mathcal Q_{\omega_2}[B_4]`$, where $`\Delta`$ uses the actual
+$`\Delta\mathcal Q_{\omega_2}[\beta_4]`$, where $`\Delta`$ uses the actual
 lower stacking output. This reuse changes neither representative nor
 coefficients. It reduces repeated definitions; it does not reduce the
 number of scalar monomials obtained by expanding them.
@@ -119,14 +119,14 @@ Use the two $`4+1`$D inputs with their common backgrounds. The already
 defined integer stacking carry $`\lambda_3`$ obeys
 
 ```math
-\Delta B_4=d\lambda_3-n'_2n_2,
+\Delta \beta_4=d\lambda_3-n'_2n_2,
 \qquad
-dB_4=-(\beta_{s_1}\check\omega_2)n_2,
+d\beta_4=-(\beta_{s_1}\check\omega_2)n_2,
 \qquad
-dB'_4=-(\beta_{s_1}\check\omega_2)n'_2.
+d\beta'_4=-(\beta_{s_1}\check\omega_2)n'_2.
 ```
 
-The integer $`B_4,B'_4,\lambda_3`$ are untwisted; $`n_2,n'_2`$ have
+The integer $`\beta_4,\beta'_4,\lambda_3`$ are untwisted; $`n_2,n'_2`$ have
 coefficients $`\mathbb Z_{s_1}`$. Products of the twisted inputs include
 their local coefficient transports. In particular $`d(n'_2n_2)=0`$.
 
@@ -137,9 +137,9 @@ The integer transgression of the quadratic cochain is
 ```math
 \begin{aligned}
 \mathcal{ℰ}^{\mathcal Q}_5={}&
- B_4\cup_3B'_4-dB_4\cup_4B'_4
- +(B_4+B'_4)\cup_3\Delta B_4
- -(dB_4+dB'_4)\cup_4\Delta B_4\\
+ \beta_4\cup_3\beta'_4-d\beta_4\cup_4\beta'_4
+ +(\beta_4+\beta'_4)\cup_3\Delta \beta_4
+ -(d\beta_4+d\beta'_4)\cup_4\Delta \beta_4\\
 &+\lambda_3\cup_1\lambda_3+\lambda_3\cup_2d\lambda_3
  +\omega_2\lambda_3-(n'_2n_2)\cup_3d\lambda_3.
 \end{aligned}
@@ -149,7 +149,7 @@ It has degree five and integer coefficients. This is a transgression of
 the stated quadratic cochain, not the complete bosonic stacking phase.
 Its name records that role. There are **ten ordinary cup terms** after
 distributing sums of input carries; expanding
-$`\Delta B_4=d\lambda_3-n'_2n_2`$ gives fourteen terms.
+$`\Delta \beta_4=d\lambda_3-n'_2n_2`$ gives fourteen terms.
 
 The complete variation law is
 
@@ -157,12 +157,12 @@ The complete variation law is
 
 ```math
 \begin{aligned}
-\Delta\mathcal Q_{\omega_2}[B_4]
+\Delta\mathcal Q_{\omega_2}[\beta_4]
 ={}&d_{s_1}\mathcal{ℰ}^{\mathcal Q}_5\\
 &+2\Big[
- B_4\cup_2B'_4-dB_4\cup_3B'_4
- +(B_4+B'_4)\cup_2\Delta B_4
- -(dB_4+dB'_4)\cup_3\Delta B_4\\
+ \beta_4\cup_2\beta'_4-d\beta_4\cup_3\beta'_4
+ +(\beta_4+\beta'_4)\cup_2\Delta \beta_4
+ -(d\beta_4+d\beta'_4)\cup_3\Delta \beta_4\\
 &\qquad+\lambda_3\cup_1d\lambda_3+\lambda_3^2
  -(\beta\omega_2)\lambda_3-(n'_2n_2)\cup_2d\lambda_3
  +s_1\mathcal{ℰ}^{\mathcal Q}_5\Big]\\
@@ -205,7 +205,7 @@ V_5^{\mathbb Z}={}&\mathcal{ℰ}^{\mathcal Q}_5
 ```
 
 The equality is literal binary reduction of the integer expression,
-using the existing definitions of $`B_4,\lambda_3,\Delta B_4`$.
+using the existing definitions of $`\beta_4,\lambda_3,\Delta \beta_4`$.
 There are thirteen outer terms after the ten-term transgression is
 substituted, with **seven binary terms inside the protected whole lift**.
 The two mixed cups outside that lift are ordinary integer products.
@@ -220,7 +220,7 @@ Define its integral
 lift difference
 
 ```math
-\kappa_5=\frac{V_5^{\mathbb Z}-\overline{V_5}}2.
+B_5^{\mathrm{lift}}=\frac{V_5^{\mathbb Z}-\overline{V_5}}2.
 ```
 
 Suppose the existing normalized contraction is written
@@ -230,11 +230,11 @@ twisted contraction, not a stacking input. It is the fully specified contraction
 of the terminal appendix. The lift change must transport **both** data:
 
 ```math
-\rho_6^{\rm new}=\rho_6+d\bar\kappa_5,
+\rho_6^{\rm new}=\rho_6+d\barB_5^{\mathrm{lift}},
 \qquad
-L_5^{\rm new}=L_5+(\mathsf{sh}^{\rm tw})^*\bar\kappa_5,
+L_5^{\rm new}=L_5+(\mathsf{sh}^{\rm tw})^*\barB_5^{\mathrm{lift}},
 \qquad
-Z_5^{\rm new}=Z_5+\bar\kappa_5+d(\mathsf h^{\rm tw})^*\bar\kappa_5.
+Z_5^{\rm new}=Z_5+\barB_5^{\mathrm{lift}}+d(\mathsf h^{\rm tw})^*\barB_5^{\mathrm{lift}}.
 ```
 
 Replacing $`\overline{V_5}/4+Z_5/2`$ by
@@ -244,7 +244,7 @@ $`V_5^{\mathbb Z}/4+Z_5^{\rm new}/2`$ then gives exactly
 
 ```math
 \widehat{\mathcal{ℰ}}_5^{\rm new}-\widehat{\mathcal{ℰ}}_5
- =d_{s_1}\left[\frac12(\mathsf h^{\rm tw})^*\bar\kappa_5\right]\pmod1.
+ =d_{s_1}\left[\frac12(\mathsf h^{\rm tw})^*\barB_5^{\mathrm{lift}}\right]\pmod1.
 ```
 
 The source and lower multiplication laws stay in the same representative.
@@ -270,8 +270,8 @@ The signed cup differential identity gives
 ```
 
 This holds without closure hypotheses. Apply its $`r=0`$ case to
-$`B_4+B'_4`$, and then apply it with
-$`x=B_4+B'_4`$, $`r=\lambda_3`$, $`y=-n'_2n_2`$.
+$`\beta_4+\beta'_4`$, and then apply it with
+$`x=\beta_4+\beta'_4`$, $`r=\lambda_3`$, $`y=-n'_2n_2`$.
 Use $`d\omega_2=2\beta\omega_2`$ and
 $`d=d_{s_1}+2s_1\cup`$. The result is precisely the variation above.
 All canonical lift boundaries are preserved throughout.

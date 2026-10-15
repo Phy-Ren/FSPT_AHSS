@@ -34,6 +34,15 @@ first vertex of the entire evaluated simplex.
 
 ## Arithmetic and carries
 
+An exact change of representative is written as $`dB_q`$ or
+$`d_{s_1}\widehat B_q`$; the hat denotes an additive phase. A freely
+chosen cocycle is denoted by $`C_q`$, or $`\widehat C_q`$ for an additive phase. The integer carries in the
+three- and four-dimensional towers are $`\beta_3,\beta_4`$, with
+their stated physical superscripts; $`\lambda_q`$ denotes the carry
+of a product. These names distinguish carries from the reference
+cochains $`\mathcal B_q`$. The usual cochain space $`C^q`$ and physical
+operator or endpoint labels retain their standard meanings.
+
 $`\bar x`$ is pointwise reduction modulo two. A named binary cochain is
 represented by its values $`0,1`$ whenever it occurs in integer arithmetic;
 no extra symbol is needed for this canonical representative. Operations

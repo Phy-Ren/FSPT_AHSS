@@ -13,15 +13,14 @@ The following notation is local to this proof. Write
 ```math
 \begin{gathered}
 u=\check n_3,\quad v=\check n'_3,\quad
-A=du,\quad A'=dv,\quad
-B=\beta^\circ u,\quad B'=\beta^\circ v,\\
+A=du,\quad A'=dv,\\
 r=\beta A,\quad r'=\beta A',\quad
-L=u\cup_3v,\quad J=A\cup_4A',\quad X=B+B'-dL.
+L=u\cup_3v,\quad J=A\cup_4A',\quad X=\beta^\circ u+\beta^\circ v-dL.
 \end{gathered}
 ```
 
 Here $`A,A'`$ are binary differentials, canonically lifted in integer
-arithmetic. Thus $`dB=-r`$, $`dB'=-r'`$, and $`dX=-(r+r')`$.
+arithmetic. Thus $`d(\beta^\circ u)=-r`$, $`d(\beta^\circ v)=-r'`$, and $`dX=-(r+r')`$.
 All higher cups below are signed integer cups.
 
 The old integer numerator before taking its second digit is

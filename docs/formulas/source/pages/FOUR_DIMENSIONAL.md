@@ -157,7 +157,7 @@ The quadratic cochain is defined once in the
 [common notation](../FORMULA_GUIDE.md#integral-quadratic-cochain).
 The mixed quarter phase reuses its exact addition polarization, which
 expands to four ordered cups with no background remainder. Here
-$`B_4=\beta^\circ\check n_3+B_4^\psi`$ is ordinary integer addition.
+$`\beta_4=\beta^\circ\check n_3+\beta_4^\psi`$ is ordinary integer addition.
 The explicit $`s_1\mathcal{𝒪}_5^\psi/2`$ is required by the same phase
 change that fixes the compact Majorana formula; it does not redefine
 the fixed binary completion $`y_6`$.
@@ -251,7 +251,7 @@ The two finite polynomials in this contribution are
 The output fields are those of the preceding three stacking laws. The
 following formulas use the operator ordering of the complex-fermion
 contribution. The terminal phase is the same compact-Majorana coordinate as the obstruction above.
-The cochain $`R_5[\check n_3,n_4]`$ is defined once in the
+The cochain $`\widehat B_5[\check n_3,n_4]`$ is defined once in the
 [paired phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md); its backgrounds
 are kept fixed in every evaluation below. Setting its second argument
 to zero removes only the term $`s_1n_4/2`$.
@@ -312,10 +312,10 @@ retained. This replaces the previous 6,176-term expansion. Defined lower
 differentials, Bocksteins, and binary-addition carries remain structured
 arguments; $`d`$ denotes the cochain differential.
 
-The three displayed $`R_5`$ evaluations and the term
+The three displayed $`\widehat B_5`$ evaluations and the term
 $`-s_1\mathcal{ℰ}_4^\gamma/2`$ transport this expression to the same
 phase coordinate as the compact pure Majorana obstruction. Each
-$`R_5[x,0]`$ has **44 half-valued terms and one quarter-valued term**;
+$`\widehat B_5[x,0]`$ has **44 half-valued terms and one quarter-valued term**;
 the complete 32-word sum and the remaining terms are written in the
 [phase-change definition](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 The inputs $`\check n_3+\check n'_3`$ are binary sums, including inside
@@ -340,7 +340,7 @@ linear sums and the three quarter numerators adds **1,262 terms**, giving
 their scopes; their complete interior terms are recorded separately in
 the coefficient table.
 
-The three $`R_5[\cdot,0]`$ evaluations supply the polarization of the
+The three $`\widehat B_5[\cdot,0]`$ evaluations supply the polarization of the
 same phase map between $`\check n_3+\check n'_3`$ and
 $`\check{\mathcal{ℰ}}_3`$; the additional half term uses the already
 defined mixed lower twister. Each evaluation contains 45 explicit
@@ -399,8 +399,8 @@ stacked bosonic phase.
 
 {{equation:four-dimensional--majorana-quarter-numerator--41}}
 
-Here $`B_4^\gamma=\beta^\circ\check n_3`$ is the Majorana part of the
-already defined carry $`B_4=B_4^\gamma+B_4^\psi`$. Primes mean the second
+Here $`\beta_4^\gamma=\beta^\circ\check n_3`$ is the Majorana part of the
+already defined carry $`\beta_4=\beta_4^\gamma+\beta_4^\psi`$. Primes mean the second
 stacking input. The three parts of $`\lambda_3`$ are those defined in the
 main stacking formula.
 
@@ -443,6 +443,6 @@ both the obstruction and the stacking law. To check the sum of its three
 physical contributions, use the actual lower output
 $`\check N_3=\check n_3+\check n'_3+\check{\mathcal{ℰ}}_3`$ and
 $`N_4=n_4+n'_4+\mathcal{ℰ}_4`$. The displayed corrections sum exactly to
-$`-R_5[\check N_3,N_4]+R_5[\check n_3,n_4]+R_5[\check n'_3,n'_4]`$.
+$`-\widehat B_5[\check N_3,N_4]+\widehat B_5[\check n_3,n_4]+\widehat B_5[\check n'_3,n'_4]`$.
 The lower twisters, finite coefficient sets, and existing output coboundary
 are unchanged; the full terminal formula uses this one transported phase.

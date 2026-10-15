@@ -266,12 +266,12 @@ in its first term.
 \widehat{\mathcal{ℰ}}_{4}^{\gamma\psi}
 ={}&\frac12\sum_{f\in\mathcal F_4^{\gamma\psi}}f\\
 &+\frac12\Big[
- B_3\cup_2d\check n_2
+ \beta_3\cup_2d\check n_2
  +d_{s_1}(\beta^\circ\check n_2\cup_2\check n_2)
  -\beta^\circ\check n_2\cup_1\check n_2\Big]\\
 &+\frac14\Big[
- -\beta^\circ\check n_2\cup_2B_3^\psi
- -B_3^\psi\cup_2\beta^\circ\check n_2
+ -\beta^\circ\check n_2\cup_2\beta_3^\psi
+ -\beta_3^\psi\cup_2\beta^\circ\check n_2
  +\beta^\circ\check n_2\cup_3
        [ (\beta_{s_1}\check\omega_2)s_1]\\
 &\qquad+(\check n_2-s_1^2)\cup_1d\check n_2
@@ -294,8 +294,8 @@ The existing lower integer carries specialize to
 
 ```math
 \begin{aligned}
-B_3&=\beta^\circ\check n_2+B_3^\psi,\\
-B_3^\psi
+\beta_3&=\beta^\circ\check n_2+\beta_3^\psi,\\
+\beta_3^\psi
  &=\overline{\check\omega_2s_1}
    -\overline{(s_1\cup_1\check\omega_2)s_1},\\
 \lambda_2^\gamma&=\check n_2,\qquad
@@ -316,8 +316,8 @@ systems; its value must not be replaced by an unsigned product.
 \widehat{\mathcal{ℰ}}_{4}^\psi
 ={}&\frac12\sum_{f\in\mathcal F_4^\psi}f-\frac12s_1^4\\
 &+\frac14\Big[
- -B_3^\psi\cup_2B_3^\psi
- +B_3^\psi\cup_3[(\beta_{s_1}\check\omega_2)s_1]
+ -\beta_3^\psi\cup_2\beta_3^\psi
+ +\beta_3^\psi\cup_3[(\beta_{s_1}\check\omega_2)s_1]
  -\omega_2s_1^2
  -\overline{\widetilde{\beta_{s_1}\check\omega_2}\,s_1}\Big]\\
 &+\frac18\check\omega_2s_1^2.

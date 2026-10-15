@@ -61,7 +61,7 @@ Here the output term vanishes because $`\check N_3=0`$, and the mixed input sour
 ### Majorana decoration
 
 Use the shared self-stacking expression, with $`n_2=0`$,
-$`d\check n_3=0`$, and $`B_4^\gamma=\beta n_3`$:
+$`d\check n_3=0`$, and $`\beta_4^\gamma=\beta n_3`$:
 
 ```math
 \begin{aligned}
@@ -73,10 +73,10 @@ $`d\check n_3=0`$, and $`B_4^\gamma=\beta n_3`$:
  +(d\check n_3)_{01235}(\check n_3)_{0345}
  +\check n_3\cup_1\check n_3-s_1\mathcal{ℰ}_4^\gamma\Big]\\
 &+\frac14\Big[
- B_4^\gamma\cup_3B_4^\gamma
+ \beta_4^\gamma\cup_3\beta_4^\gamma
  +\check n_3\cup_1\check n_3-\omega_2\check n_3
  +\check n_3\cup_2d\check n_3
- -\beta\big(\check{\mathcal{𝒪}}_4[n_2]\big)\cup_4B_4^\gamma\\
+ -\beta\big(\check{\mathcal{𝒪}}_4[n_2]\big)\cup_4\beta_4^\gamma\\
 &\qquad-(d\check n_3)_{01234}(d\check n_3)_{01245}
  -(d\check n_3)_{01234}(d\check n_3)_{02345}\\
 &\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
@@ -91,7 +91,7 @@ This is the same terminal coordinate as the current obstruction.
 
 The full lower output here has $`\check N_3=0`$ and
 $`N_4=\mathcal{ℰ}_4^\gamma`$. The common phase map consequently gives
-$`-\Delta R_5=\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$.
+$`-\Delta \widehat B_5=\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$.
 Those two terms already appear in the imported Majorana formula above.
 No separate diagonal representative or additional output gauge is chosen.
 The existing output coboundary is part of the shared general formula.

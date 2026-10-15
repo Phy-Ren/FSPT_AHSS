@@ -10,7 +10,7 @@ They do not introduce additional fields into the formulas. The numerical kernels
 
 The explicit $`4+1`$D Majorana stacking expression additionally uses the
 [displayed output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md):
-subtract $`d_{s_1}G_4`$ from the previous terminal product cochain, and add
+subtract $`d_{s_1}\widehat B_4^{\mathrm{out}}`$ from the previous terminal product cochain, and add
 it for the inverse comparison. The obstruction is unchanged since
 $`d_{s_1}^2=0`$. This is a documented representative conversion; no runtime
 algorithm or stored classification/stacking result was modified.
@@ -156,8 +156,8 @@ and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a), with the
 
 | Readable-source name or former formula label | Current mathematical expression |
 |---|---|
-| `B`, former $`B_4`$ | $`B_4`$ |
-| `K`, former $`K_4`$ | $`B_4^\psi`$ |
+| `B`, former $`B_4`$ | $`\beta_4`$ |
+| `K`, former $`K_4`$ | $`\beta_4^\psi`$ |
 | `beta_open(u)`, local `b` in `full3/source.py:blocks`, former $`j_4`$ | $`\beta^\circ\check n_3`$ |
 | Former $`A_4`$ | $`\check{\mathcal O}_4=d\check n_3`$ |
 | Background integer carry, former $`v_3`$ | $`\beta_{s_1}\check\omega_2`$ |
@@ -165,18 +165,33 @@ and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a), with the
 | `hw`, former $`h_\omega`$ | $`\widetilde{\beta_{s_1}\check\omega_2}`$ |
 | `ell(w,s)`, former $`\ell^\omega_3`$ | $`\overline{\beta\omega_2}+s_1\omega_2`$ |
 | Background `P`, former $`\mathcal P_s(W)`$ | $`\mathcal P_{s_1}(\check\omega_2)`$ |
-| `Bp`, former $`B'`$ | $`B'_4=B_4(n'_2,\check n'_3)`$ |
+| `Bp`, former $`B'`$ | $`\beta'_4=\beta_4(n'_2,\check n'_3)`$ |
 | `la`, dictionary key `lambda`, former $`\lambda`$ | $`\lambda_3`$ |
-| `r`, `rp` in `collected_blocks` | $`\bar B_4,\bar B'_4`$ |
+| `r`, `rp` in `collected_blocks` | $`\bar \beta_4,\bar \beta'_4`$ |
 | `l` in `collected_blocks` | $`\bar\lambda_3`$ |
 | Former $`R`$ | Ordered integer product $`n'_2n_2`$ |
-| Former $`D`$ | $`\Delta B_4=d\lambda_3-n'_2n_2`$ |
-| `Db` | $`\overline{\Delta B_4}`$ |
+| Former $`D`$ | $`\Delta \beta_4=d\lambda_3-n'_2n_2`$ |
+| `Db` | $`\overline{\Delta \beta_4}`$ |
 | `V5` | $`V_5`$, the binary quarter numerator; $`\mathcal V_5`$ denotes the stacked bosonic phase |
 | `Phi5` | The expanded lower-field portion of the half-valued bracket in [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
 | `Pi5` | The expanded integer terms accompanying $`V_5`$ in the quarter-valued bracket of [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
 | `epsilon5` | The expanded complex-fermion terms in the half-valued bracket of [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
 | `Zvalue`, `binary_phase` | Evaluation of $`Z_5`$ |
+
+Frozen coefficient files and runtime identifiers keep their historical spellings.
+In serialized field labels, `B_3` and `B_4` mean $`\beta_3`$ and
+$`\beta_4`$; bars, digits, primes, and physical superscripts are preserved.
+In particular, `B_4^psi` and `barB4gamma` denote
+$`\beta_4^\psi`$ and $`\bar\beta_4^\gamma`$. The runtime function
+`R5` evaluates the phase primitive $`\widehat B_5`$; the earlier
+$`\Lambda_5`$ and $`G_4`$ are $`\widehat B_5^{\mathrm{ref}}`$ and
+$`\widehat B_4^{\mathrm{out}}`$. Historical face-set labels
+$`\mathcal C_q^\psi`$ mean $`\mathcal I_q^{\psi,\mathrm{face}}`$;
+tensor-set labels $`\mathcal C_{2,3},\mathcal C_{3,2}`$ mean
+$`\mathcal I_{2,3},\mathcal I_{3,2}`$. These are notation changes;
+the serialized coefficients and their hashes are unchanged.
+The finite word rearrangement formerly written `C(J)` is $`\mathsf R(J)`$;
+its ordered prefix-and-tail rule is unchanged.
 
 The former source-sum names are now expanded in the
 [4+1D source](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4):
@@ -225,7 +240,7 @@ not independent lifts of the three fields. The notation-to-runtime map is:
 | $`\mathop{\mathrm{ev}}\nolimits_5`$ | `lift3_source`, then the signed six-simplex interval sum |
 | $`\mathop{\mathrm{ev}}\nolimits_4`$ | `lift3_product`, then the signed fifteen-simplex triangle sum |
 | $`\uparrow n_1,\uparrow\check n_2,\uparrow n_3`$ | The three components `n,u,c` returned by the relevant lift |
-| $`B_4^\uparrow,B_4^{\psi,\uparrow}`$ | The same integer residuals `B,K` on those components |
+| $`\beta_4^\uparrow,\beta_4^{\psi,\uparrow}`$ | The same integer residuals `B,K` on those components |
 
 The full six-cochain's cubic term has zero transgression on both parameter
 spaces, so the runtime may omit it without changing either phase. The
@@ -234,7 +249,7 @@ explicit sixteenth-valued source and negative eighth-valued product in
 the reader guide; they are not omitted.
 The former $`D_3`$ and $`g_2`$ are expanded directly
 in those retained parameter fields. This statement precedes the current
-geometric conversion, which must also be applied as specified above. The older fermion-coordinate change $`\kappa_3`$ keeps its name.
+geometric conversion, which must also be applied as specified above. The older fermion-coordinate change, formerly $`\kappa_3`$, is written $`\mathcal B_3^{\mathrm{ref}}`$.
 The older coordinate change must be applied to its source and product
 together; it is not implied by renaming `c` to $`n_3`$.
 

@@ -809,22 +809,22 @@ selected on this subspace.
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
        \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)
- +s_1\big[(\bar B_4^\gamma+\bar B_4^{\gamma\prime})
+ +s_1\big[(\bar \beta_4^\gamma+\bar \beta_4^{\gamma\prime})
                          \cup_3\bar\lambda_3^\gamma\big]\\
 &\qquad+(\bar\lambda_4^\gamma)_{12345}
                   (\bar\lambda_3^\gamma)_{0145}
  +(\bar\lambda_4^\gamma)_{01235}
                   (\bar\lambda_3^\gamma)_{0345}-s_1\mathcal{ℰ}_4^\gamma\Big]\\
 &+\frac14\Big[
- B_4^\gamma\cup_3B_4^{\gamma\prime}
- -(B_4^\gamma+B_4^{\gamma\prime})\cup_2\lambda_3^\gamma\\
+ \beta_4^\gamma\cup_3\beta_4^{\gamma\prime}
+ -(\beta_4^\gamma+\beta_4^{\gamma\prime})\cup_2\lambda_3^\gamma\\
 &\qquad+\lambda_3^\gamma\cup_2\beta^\circ(\check n_3+\check n'_3)
  +\lambda_3^\gamma\cup_1\lambda_3^\gamma+\omega_2\lambda_3^\gamma\\
-&\qquad-(dB_4^\gamma+dB_4^{\gamma\prime})\cup_3\lambda_3^\gamma
+&\qquad-(d\beta_4^\gamma+d\beta_4^{\gamma\prime})\cup_3\lambda_3^\gamma
  +\lambda_3^\gamma\cup_2\lambda_4^\gamma
- +dB_4^\gamma\cup_4B_4^{\gamma\prime}\\
-&\qquad+(dB_4^\gamma+dB_4^{\gamma\prime})\cup_4d\lambda_3^\gamma
- -(B_4^\gamma+B_4^{\gamma\prime}+d\lambda_3^\gamma)
+ +d\beta_4^\gamma\cup_4\beta_4^{\gamma\prime}\\
+&\qquad+(d\beta_4^\gamma+d\beta_4^{\gamma\prime})\cup_4d\lambda_3^\gamma
+ -(\beta_4^\gamma+\beta_4^{\gamma\prime}+d\lambda_3^\gamma)
                                       \cup_3\lambda_4^\gamma\\
 &\qquad-(\lambda_4^\gamma)_{01235}(\lambda_4^\gamma)_{01345}
  +(\lambda_4^\gamma)_{02345}(\lambda_4^\gamma)_{01245}\\
@@ -834,13 +834,13 @@ selected on this subspace.
  \epsilon\;\overline{
        \sum_{\eta\in\mathcal P}\prod_{(x,f)\in\eta}x_f}
  \Big]\\
-&-R_5[\check n_3+\check n'_3,0]
- +R_5[\check n_3,0]+R_5[\check n'_3,0]\pmod1.
+&-\widehat B_5[\check n_3+\check n'_3,0]
+ +\widehat B_5[\check n_3,0]+\widehat B_5[\check n'_3,0]\pmod1.
 \end{aligned}
 ```
 
 The carries and coefficient sets are the shared
-[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`R_5`$ is the same
+[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`\widehat B_5`$ is the same
 [phase-change cochain](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 The earlier compact closed-product expression differs by its explicit
 output coboundary as well as the phase-coordinate comparison. It is not

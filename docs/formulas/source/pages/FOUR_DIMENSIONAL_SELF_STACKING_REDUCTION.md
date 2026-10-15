@@ -57,7 +57,7 @@ identity. Thus the quarter-valued self-stacking term can be written
 
 This directly reuses the lower obstruction and introduces no new
 polynomial or gauge. The term count is unchanged. The open-cochain
-formula with $`dB_4^\gamma`$ remains valid without imposing the lower
+formula with $`d\beta_4^\gamma`$ remains valid without imposing the lower
 tower, while its right-hand expression uses the stated physical equation.
 
 ## Reusing the integer-only carry

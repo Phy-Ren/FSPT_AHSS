@@ -236,15 +236,15 @@ The boundary product also receives the face-reference phase on that page.
 ## Transporting representatives together
 
 A terminal coordinate change
-$`\widehat\nu_D^{\,\mathrm{new}}=\widehat\nu_D+f_D(X)`$
+$`\widehat\nu_D^{\,\mathrm{new}}=\widehat\nu_D+\widehat B_D(X)`$
 has the paired transport
 
 ```math
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_{D+1}^{\,\mathrm{new}}
- &=\widehat{\mathcal{𝒪}}_{D+1}+d_{s_1}f_D,\\
+ &=\widehat{\mathcal{𝒪}}_{D+1}+d_{s_1}\widehat B_D,\\
 \widehat{\mathcal{ℰ}}_D^{\,\mathrm{new}}
- &=\widehat{\mathcal{ℰ}}_D+\Delta f_D .
+ &=\widehat{\mathcal{ℰ}}_D+\Delta \widehat B_D .
 \end{aligned}
 ```
 

@@ -13,7 +13,7 @@ The inverse subtracts the displayed phase. All lower fields of this auxiliary ca
 the actual lower stacked tower, minus the two input evaluations.
 The nine-term `H4` is printed in [the stacking formulas](THREE_DIMENSIONAL.md#eq-t3b).
 The former `P4` has been replaced by its [exact lower-obstruction identity](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md); this changes no phase value.
-The additive phase `hat f_cstar` is one half of the explicitly indexed
+The additive phase $`\widehat B_4^{c,*}`$ is one half of the explicitly indexed
 binary numerator in [the CF index rule](THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md#cf-block).
 
 The constructions in this coordinate proof define the comparison with the
@@ -42,29 +42,36 @@ Use the canonical binary value of this entire sum in the integer quotient
 Every integer product retains its actual local system. In particular the
 numerator subtracts the positively defined signed primitive
 `theta(n cup1phi)m`. On an interval the primed and triangle-only terms are
-absent. The integer phase numerator is `f_natural=tau_I F5` there, with the
+absent. The integer phase numerator is $`B_4^{\mathrm{int}}=\tau_I F_5`$ there, with the
 oriented normalized shuffle sum acting on a base four-simplex.
 
 Let `Re,Ee` be the output-edge restrictions of the displayed triangle
-fields, and put `S=theta lambda`, `X=B+Bprime`. The corresponding degree-three
+fields, and put $`S=\theta\lambda`$, $`X=\beta_3+\beta'_3`$. The corresponding degree-three
 integer output gauge is
 
 {{equation:three-dimensional-paired-representative--integer-characteristic-phase--5}}
 
 The two `lambda cup1lambda` terms have canceled as integers. The exact
-identity `B_high=C+dR+E` and integer cup polarization give
-`O_new=O_native+d_s f_natural/4` and
-`E_new=E_native+Delta f_natural/4-d_s g_natural/4` before the other displayed
+identity $`\beta_4^{\uparrow}=\beta_4^{\mathrm{par}}+dR+E`$ and integer cup polarization give
+$`\widehat{\mathcal O}_5^{\mathrm{new}}=\widehat{\mathcal O}_5^{\mathrm{native}}+d_{s_1}B_4^{\mathrm{int}}/4`$ and
+$`\widehat{\mathcal E}_4^{\mathrm{new}}=\widehat{\mathcal E}_4^{\mathrm{native}}+\Delta B_4^{\mathrm{int}}/4-d_{s_1}B_3^{\mathrm{int}}/4`$ before the other displayed
 coordinate changes. All even polarization terms remain in the half-valued
 physical formulas.
 
 ## Complete output gauge
 
-For the CF construction let `C_CF=theta n3+phi n3prime` and let `G_CF` be
+For the CF construction let $`G_{\mathrm{CF}}`$ be
 the retained binary CF lift with both incoming CF decorations set to zero.
 Its complete ordinary-word definition is the `G` seed and the explicit
 index rearrangement in [the CF index rule](THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md#cf-block).
-Then `g_CF=tau_triangle[G_CF cup3C_CF+dG_CF cup4C_CF]` is binary.
+Its binary output primitive is
+
+```math
+B_3^c=\tau_\triangle\big[
+ G_{\mathrm{CF}}\cup_3(\theta n_3+\phi n'_3)
+ +dG_{\mathrm{CF}}\cup_4(\theta n_3+\phi n'_3)\big].
+```
+
 Its intrinsic Majorana restriction, continued as the same ordinary words,
 is
 

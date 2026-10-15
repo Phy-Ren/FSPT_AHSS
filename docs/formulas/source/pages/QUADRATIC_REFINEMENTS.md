@@ -60,8 +60,8 @@ $`z_2x/2`$ to the quarter-valued phase.
 ## The quadratic part of the 4+1D obstruction
 
 The [integer carries](FOUR_DIMENSIONAL.md#eq-s1) are already fixed:
-$`B_4^\gamma=\beta^\circ\check n_3`$ and
-$`B_4=B_4^\gamma+B_4^\psi`$. The quadratic quarter-valued terms in the
+$`\beta_4^\gamma=\beta^\circ\check n_3`$ and
+$`\beta_4=\beta_4^\gamma+\beta_4^\psi`$. The quadratic quarter-valued terms in the
 three physical contributions are, respectively,
 
 <a id="obstruction-specialization"></a>
@@ -72,7 +72,7 @@ This is exactly the previous three-, four-, and three-term division into
 physical contributions. All other terms of those obstructions retain
 their existing values and physical labels. The same operation occurs
 in the product: the characteristic part of the integer kernel is
-$`\Delta\mathcal Q_{\omega_2}[B_4]`$, where $`\Delta`$ uses the actual
+$`\Delta\mathcal Q_{\omega_2}[\beta_4]`$, where $`\Delta`$ uses the actual
 lower stacking output. This reuse changes neither representative nor
 coefficients. It reduces repeated definitions; it does not reduce the
 number of scalar monomials obtained by expanding them.
@@ -84,7 +84,7 @@ defined integer stacking carry $`\lambda_3`$ obeys
 
 {{equation:quadratic-refinements--degree-four-variation-on-the-physical-lower-tower--6}}
 
-The integer $`B_4,B'_4,\lambda_3`$ are untwisted; $`n_2,n'_2`$ have
+The integer $`\beta_4,\beta'_4,\lambda_3`$ are untwisted; $`n_2,n'_2`$ have
 coefficients $`\mathbb Z_{s_1}`$. Products of the twisted inputs include
 their local coefficient transports. In particular $`d(n'_2n_2)=0`$.
 
@@ -98,7 +98,7 @@ It has degree five and integer coefficients. This is a transgression of
 the stated quadratic cochain, not the complete bosonic stacking phase.
 Its name records that role. There are **ten ordinary cup terms** after
 distributing sums of input carries; expanding
-$`\Delta B_4=d\lambda_3-n'_2n_2`$ gives fourteen terms.
+$`\Delta \beta_4=d\lambda_3-n'_2n_2`$ gives fourteen terms.
 
 The complete variation law is
 
@@ -123,7 +123,7 @@ binary quarter correction:
 {{equation:quadratic-refinements--an-integer-lift-compatible-with-the-polarization--9}}
 
 The equality is literal binary reduction of the integer expression,
-using the existing definitions of $`B_4,\lambda_3,\Delta B_4`$.
+using the existing definitions of $`\beta_4,\lambda_3,\Delta \beta_4`$.
 There are thirteen outer terms after the ten-term transgression is
 substituted, with **seven binary terms inside the protected whole lift**.
 The two mixed cups outside that lift are ordinary integer products.
@@ -168,8 +168,8 @@ The signed cup differential identity gives
 {{equation:quadratic-refinements--algebraic-proof-of-the-variation--13}}
 
 This holds without closure hypotheses. Apply its $`r=0`$ case to
-$`B_4+B'_4`$, and then apply it with
-$`x=B_4+B'_4`$, $`r=\lambda_3`$, $`y=-n'_2n_2`$.
+$`\beta_4+\beta'_4`$, and then apply it with
+$`x=\beta_4+\beta'_4`$, $`r=\lambda_3`$, $`y=-n'_2n_2`$.
 Use $`d\omega_2=2\beta\omega_2`$ and
 $`d=d_{s_1}+2s_1\cup`$. The result is precisely the variation above.
 All canonical lift boundaries are preserved throughout.

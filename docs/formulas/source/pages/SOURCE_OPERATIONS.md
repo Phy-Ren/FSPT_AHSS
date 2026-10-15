@@ -19,7 +19,7 @@ fixed in [Operations](OPERATIONS.md).
 The shifted background is $`\check\omega_2=\omega_2+s_1\cup s_1`$ and the
 closed degree-four source is
 $`\check{\mathcal{𝒪}}_4=\bar n_2^2+\check\omega_2\bar n_2`$.
-The source $`\mathcal{𝒪}^\psi_5`$, the residual $`B_4^\psi`$, and the
+The source $`\mathcal{𝒪}^\psi_5`$, the residual $`\beta_4^\psi`$, and the
 Pontryagin-square representative $`\mathcal P_{s_1}`$ have the definitions
 in the guide. The Bocksteins $`\beta,\beta_{s_1},\beta^+`$ and finite cup
 operations have the definitions in [Operations](OPERATIONS.md).

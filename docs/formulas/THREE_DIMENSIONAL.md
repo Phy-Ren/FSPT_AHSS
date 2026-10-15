@@ -241,8 +241,8 @@ $`\beta^\circ=\beta`$; no phase redefinition is involved.
 ={}&\frac12\sum_{(v;\mathbf x)\in\mathcal I_5^{\gamma\psi}}
        \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)\\
 &+\frac14\Big[
- (\beta^\circ\check n_2)\cup_1B_3^\psi
- +B_3^\psi\cup_1(\beta^\circ\check n_2)
+ (\beta^\circ\check n_2)\cup_1\beta_3^\psi
+ +\beta_3^\psi\cup_1(\beta^\circ\check n_2)
  -[(\beta_{s_1}\check\omega_2)n_1]\cup_2(\beta^\circ\check n_2)\\
 &\qquad-(\check\omega_2\bar n_1)\check n_2
         -\check n_2(\check\omega_2\bar n_1)\Big].
@@ -256,7 +256,7 @@ complete half-valued sum; the quarter-valued terms are separate.
 The integer carry and the twisted Bockstein are
 
 ```math
-B_3^\psi
+\beta_3^\psi
  =\frac{\overline{\check\omega_2\bar n_1}
                   +\check\omega_2 n_1}{2},
 \qquad
@@ -280,12 +280,12 @@ On the ordered five-simplex $`(012345)`$, the complete contribution is
 ={}&\frac12\Bigg[
  \sum_{(v;\mathbf x)\in\mathcal I_5^\psi}
        \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)
- +\sum_{(f,g)\in\mathcal C_5^\psi}f\,g
+ +\sum_{(f,g)\in\mathcal I_5^{\psi,\mathrm{face}}}f\,g
  \Bigg]\\
 &+\frac14\left\{\begin{aligned}
-&B_3^\psi\cup_1B_3^\psi
- -[(\beta_{s_1}\check\omega_2)n_1]\cup_2B_3^\psi
- -\omega_2B_3^\psi\\
+&\beta_3^\psi\cup_1\beta_3^\psi
+ -[(\beta_{s_1}\check\omega_2)n_1]\cup_2\beta_3^\psi
+ -\omega_2\beta_3^\psi\\
 &+(-1)^{s_1(34)}(\beta_{s_1}\check\omega_2)(0123)
   [(\beta_{s_1}\check\omega_2)(0124)
    +(\beta_{s_1}\check\omega_2)(0234)]n_1(34)n_1(45)\\
@@ -307,7 +307,7 @@ Every cochain expression without explicit arguments is evaluated on
 $`(012345)`$. The [word indices](THREE_DIMENSIONAL_WORD_INDICES.md#final-physical-index-sets)
 fix $`\mathcal I_5^\psi`$, and the
 [physical-face coefficient table](THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md#physical-integer-source-coefficients)
-prints every pair in $`\mathcal C_5^\psi`$. Its factors involve only the
+prints every pair in $`\mathcal I_5^{\psi,\mathrm{face}}`$. Its factors involve only the
 physical values of $`n_1`$, $`s_1`$, and $`\omega_2`$ on faces of this same
 five-simplex. The table is finite and complete; no auxiliary simplex or
 lifted-field evaluation is part of this formula.
@@ -607,13 +607,13 @@ lift scopes.
 &\qquad+\omega_2\lambda_2^\gamma
  +d_{s_1}(\lambda_2^\gamma\cup_1\lambda_2^\gamma)\Big]\\
 &+\frac14\Big[
- -\beta^\circ\check n_2\cup_2 B_3^{\psi\prime}
- -B_3^\psi\cup_2\beta^\circ\check n'_2
+ -\beta^\circ\check n_2\cup_2 \beta_3^{\psi\prime}
+ -\beta_3^\psi\cup_2\beta^\circ\check n'_2
  +\beta^\circ\check n_2\cup_3
        [ (\beta_{s_1}\check\omega_2)n'_1]\\
 &\quad+(\beta^\circ\check n_2+\beta^\circ\check n'_2)
        \cup_2d\lambda_2
- +(B_3^\psi+B_3^{\psi\prime})
+ +(\beta_3^\psi+\beta_3^{\psi\prime})
        \cup_2d(\lambda_2^\gamma+\lambda_2^{\gamma\psi})\\
 &\quad+\lambda_2\cup_1d\lambda_2-\lambda_2^2
  -\lambda_2^\psi\cup_1d\lambda_2^\psi+(\lambda_2^\psi)^2
@@ -668,11 +668,11 @@ sufficient.
 \widehat{\mathcal{ℰ}}^{\psi}_4={}&
  \frac12\left[
  \sum_{(v;\boldsymbol x)\in\mathcal I_{4,\psi}}
-         \mathop{\mathrm{MS}}\nolimits_v(\boldsymbol x)+\sum_{(f,g)\in\mathcal C_4^\psi}f\,g\right]\\
+         \mathop{\mathrm{MS}}\nolimits_v(\boldsymbol x)+\sum_{(f,g)\in\mathcal I_4^{\psi,\mathrm{face}}}f\,g\right]\\
 &+\frac14\Big[
- -B_3^\psi\cup_2B_3^{\psi\prime}
- +B_3^\psi\cup_3[(\beta_{s_1}\check\omega_2)n'_1]
- +(B_3^\psi+B_3^{\psi\prime})\cup_2d\lambda_2^\psi\\
+ -\beta_3^\psi\cup_2\beta_3^{\psi\prime}
+ +\beta_3^\psi\cup_3[(\beta_{s_1}\check\omega_2)n'_1]
+ +(\beta_3^\psi+\beta_3^{\psi\prime})\cup_2d\lambda_2^\psi\\
 &\quad+\lambda_2^\psi\cup_1d\lambda_2^\psi
        -(\lambda_2^\psi)^2+\omega_2\lambda_2^\psi
        -(\bar n_1\bar n'_1)^2
@@ -692,7 +692,7 @@ On an ordered four-simplex the remaining half-valued term is the following
 finite polynomial in the physical integer digits and background faces:
 
 ```math
-\frac12\sum_{(f,g)\in\mathcal C_4^\psi}f\,g.
+\frac12\sum_{(f,g)\in\mathcal I_4^{\psi,\mathrm{face}}}f\,g.
 ```
 
 This sum contains **4,094 physical-face monomials** after every background
@@ -726,9 +726,9 @@ All cochain Steenrod squares include their differential terms. The integer carri
 ```math
 \begin{aligned}
 \beta^\circ x&=(dx-\overline{dx})/2,\\
-B_3&=\beta^\circ\check n_2+B_3^\psi
+\beta_3&=\beta^\circ\check n_2+\beta_3^\psi
  =\frac{d\check n_2+\check\omega_2n_1}{2},\\
-B_3^\psi&=(\overline{\check\omega_2\bar n_1}
+\beta_3^\psi&=(\overline{\check\omega_2\bar n_1}
                          +\check\omega_2n_1)/2,\\
 \lambda_2^\gamma&=\check n_2\cup_2\check n'_2,\\
 \lambda_2^{\gamma\psi}
@@ -745,8 +745,8 @@ Every binary field in an integer expression means its canonical zero-or-one
 lift. Bars on full sums retain their complete reduction boundary. The
 integer products in $`\check\omega_2n_1`$ and $`n_1n'_1`$ use the inherited
 local systems; the latter is closed and untwisted. In particular the full
-residual satisfies $`dB_3=(\beta_{s_1}\check\omega_2)n_1`$, whereas differentiating
-$`B_3^\psi`$ alone need not give that expression. The origin selection uses the
+residual satisfies $`d\beta_3=(\beta_{s_1}\check\omega_2)n_1`$, whereas differentiating
+$`\beta_3^\psi`$ alone need not give that expression. The origin selection uses the
 full legal derivative before selecting its p+ip descendant.
 
 #### The finite phase polynomials

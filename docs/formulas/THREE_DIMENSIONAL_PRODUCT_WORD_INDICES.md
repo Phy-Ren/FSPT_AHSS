@@ -115,7 +115,7 @@ slot has appeared once, rejecting a word with a marked repeat before that
 point. Delete earlier marked letters. Require every marker slot now to
 occur once, then erase all marker slots and normalize.
 
-One more index rearrangement, C, is used in a seed below. Color marker
+One more index rearrangement, $`\mathsf R`$, is used in a seed below. Color marker
 slots zero and physical slots one. For each occurrence j of a color-one
 label in a word `p j t`, form `p j t0 j t1`, with `t0,t1` the respective
 colored subwords of the tail in their original order. Sum and normalize.
@@ -188,7 +188,7 @@ D_3({\bar n_1},{\widetilde n_1},{\check n_2})&={\check\omega_2}{\widetilde n_1}+
 g_2&={\widetilde n_1}{\bar n'_1}+({\bar n_1}+{\widetilde n_1}){\widetilde n'_1}+({\bar n_1}{\bar n'_1})\cup_2({\check n_2}+{\check n'_2})+{\bar n_1}{\bar n'_1}\\
 &\quad+({s_1}\cup_1{\bar n_1})({\bar n_1}\cup_1{\bar n'_1})
  +({s_1}\cup_1({\bar n_1}\cup_1{\bar n'_1}))({\bar n_1}+{\bar n'_1}),\\
-G&=C(J)+LD_3({\bar n_1},{\widetilde n_1},{\check n_2})+RD_3({\bar n'_1},{\widetilde n'_1},{\check n'_2})\\
+G&=\mathsf R(J)+LD_3({\bar n_1},{\widetilde n_1},{\check n_2})+RD_3({\bar n'_1},{\widetilde n'_1},{\check n'_2})\\
 &\quad+D\big[{\mathcal{ℰ}_3}+D_3({\bar n_1}+{\bar n'_1},{\widetilde n_1}+{\widetilde n'_1}+{\bar n_1}\cup_1{\bar n'_1},{\check N_2})
                  +D_3({\bar n_1},{\widetilde n_1},{\check n_2})+D_3({\bar n'_1},{\widetilde n'_1},{\check n'_2})\big]+LRg_2,\\
 dG&=J+L{\mathcal{𝒪}_4}+R{\mathcal{𝒪}_4}'.
@@ -201,7 +201,7 @@ Then use the displayed J with those reduced seeds. The binary phase numerator is
 
 ```math
 f_{c,*}({\bar n_1},{\widetilde n_1},{\check n_2},n_3)
- =S1\big[(C(J)+LD_3({\bar n_1},{\widetilde n_1},{\check n_2}))\cup_3(Ln_3)
+ =S1\big[(\mathsf R(J)+LD_3({\bar n_1},{\widetilde n_1},{\check n_2}))\cup_3(Ln_3)
        +(J+L\mathcal{𝒪}_4[n_1,{\check n_2}])\cup_4(Ln_3)\big].
 ```
 
@@ -221,8 +221,8 @@ relative CF tables; adding either a second time would change the product.
 
 ### Quarter-polarization half block
 
-Only for these finite seeds, write $`\bar B_3`$, $`\bar B'_3`$, and $`\alpha=\overline{\beta_{s_1}\check\omega_2}`$. They are existing integral residuals reduced modulo
-two, not new fields. Use $`d\bar B_3=\alpha\bar n_1,\ d\bar B'_3=\alpha\bar n'_1`$. Define
+Only for these finite seeds, write $`\bar \beta_3`$, $`\bar \beta'_3`$, and $`\alpha=\overline{\beta_{s_1}\check\omega_2}`$. They are existing integral residuals reduced modulo
+two, not new fields. Use $`d\bar \beta_3=\alpha\bar n_1,\ d\bar \beta'_3=\alpha\bar n'_1`$. Define
 
 ```math
 \begin{aligned}
@@ -240,21 +240,23 @@ R_q&=\sum_{i\lt j}x_i\cup_3x_j+D\bar\lambda_2^\psi
  +(LR\cup_2{\check\omega_2})({\bar n_1}\cup_1{\bar n'_1})\\
 &\quad+L[({\widetilde n_1}\cup_1R){\bar n'_1}+({\bar n_1}\cup_1R){\widetilde n'_1}+(({s_1}\cup_1{\bar n_1})\cup_1R){\bar n'_1}],
 \qquad (x_1,x_2,x_3,x_4)=(x,y,z,q_L+q_R+q_N),\\
-C_q&=L\bar B_3+R\bar B'_3,\qquad
+\overline{\beta_4^{\mathrm{par}}}&=L\bar \beta_3+R\bar \beta'_3,\qquad
 Z=(\alpha\cup_1L){\bar n_1}+(\alpha\cup_1R){\bar n'_1},
 \qquad\eta=dR_q+Z.
 \end{aligned}
 ```
 
+Here $`\overline{\beta_4^{\mathrm{par}}}`$ is the binary parameter carry
+for this product construction; its definition uses both stacking inputs.
 Differentiate every seed by the word boundary and displayed input laws.
 The bulk indices are
 
 ```math
 \begin{aligned}
-I_{q,2}=S2[&C_q\cup_2\eta+dC_q\cup_3\eta
+I_{q,2}=S2[&\overline{\beta_4^{\mathrm{par}}}\cup_2\eta+d\overline{\beta_4^{\mathrm{par}}}\cup_3\eta
  +R_q\cup_1dR_q+R_q^2+(\mathrm{Sq}^1{\omega_2})R_q
  +Z\cup_2dR_q+dZ\cup_3dR_q]\\
- +{s_1}S2[&C_q\cup_3\eta+dC_q\cup_4\eta
+ +{s_1}S2[&\overline{\beta_4^{\mathrm{par}}}\cup_3\eta+d\overline{\beta_4^{\mathrm{par}}}\cup_4\eta
  +R_q\cup_1R_q+R_q\cup_2dR_q+{\omega_2}R_q
  +Z\cup_3dR_q+dZ\cup_4dR_q].
 \end{aligned}
@@ -264,7 +266,7 @@ For the edge indices set, in binary word arithmetic only,
 
 ```math
 \begin{aligned}
-\lambda&={\check n_2}\cup_2{\check n'_2}+({\check n_2}+{\check n'_2})\cup_2({\bar n_1}{\bar n'_1})+\bar\lambda_2^\psi,\quad B=\bar B_3+\bar B'_3,\\
+\lambda&={\check n_2}\cup_2{\check n'_2}+({\check n_2}+{\check n'_2})\cup_2({\bar n_1}{\bar n'_1})+\bar\lambda_2^\psi,\quad \beta=\bar \beta_3+\bar \beta'_3,\\
 R_{\rm edge}&=(L{\check N_2})\cup_3\mathop{\mathrm{MS}}\nolimits_{1213}({\check\omega_2},L,{\bar n_1}+{\bar n'_1})
        +Q(L,{\bar n_1}+{\bar n'_1},{\widetilde n_1}+{\widetilde n'_1}+{\bar n_1}\cup_1{\bar n'_1})+L\lambda,\\
 Z_{\rm edge}&=(\alpha\cup_1L)({\bar n_1}+{\bar n'_1}),\qquad S=L\lambda.
@@ -275,9 +277,9 @@ The remaining indices and the full quarter-polarization half set are
 
 ```math
 \begin{aligned}
-I_{q,1}={}&B\cup_1\lambda+\lambda\cup_1B+\lambda^2
- +\lambda\cup_1d\lambda+\lambda\cup_2dB\\
-&+{s_1}[\lambda\cup_2B+B\cup_2\lambda+\lambda\cup_2d\lambda]\\
+I_{q,1}={}&\beta\cup_1\lambda+\lambda\cup_1\beta+\lambda^2
+ +\lambda\cup_1d\lambda+\lambda\cup_2d\beta\\
+&+{s_1}[\lambda\cup_2\beta+\beta\cup_2\lambda+\lambda\cup_2d\lambda]\\
 &+S1[S\cup_2dR_{\rm edge}+R_{\rm edge}\cup_1S+Z_{\rm edge}\cup_3dS]\\
 &+{s_1}S1[S\cup_3dR_{\rm edge}+R_{\rm edge}\cup_2S+Z_{\rm edge}\cup_4dS],\\
 \mathcal I_q={}&I_{q,2}+I_{q,1}.
@@ -310,8 +312,8 @@ summands
 
 ```math
 \begin{aligned}
-B_3&=\beta^\circ {\check n_2}+B_3^\psi,&
-B'_3&=\beta^\circ {\check n'_2}+B_3^{\psi\prime},\\
+\beta_3&=\beta^\circ {\check n_2}+\beta_3^\psi,&
+\beta'_3&=\beta^\circ {\check n'_2}+\beta_3^{\psi\prime},\\
 {\mathcal{𝒪}_4}&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[{\check n_2}]+\mathcal{𝒪}_4^\psi[n_1],&
 {\mathcal{𝒪}_4}'&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[{\check n'_2}]+\mathcal{𝒪}_4^\psi[n'_1],\\
 {\mathcal{ℰ}_3}&=\mathcal{ℰ}_3^\gamma+\mathcal{ℰ}_3^{\gamma\psi}+\mathcal{ℰ}_3^\psi,&

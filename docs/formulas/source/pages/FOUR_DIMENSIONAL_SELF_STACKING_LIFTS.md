@@ -10,7 +10,7 @@ Sum every product in the following table in binary arithmetic, then lift the who
 
 | Term | Binary product |
 |---:|---|
-| 1 | $`(\bar B_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
+| 1 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
 | 2 | $`(\check n_3)_{0234}(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
 | 3 | $`(\check n_3)_{0234}(\check n_3)_{2345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
 | 4 | $`(\check n_3)_{0234}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
@@ -24,9 +24,9 @@ Sum every product in the following table in binary arithmetic, then lift the who
 
 | Term | Binary product |
 |---:|---|
-| 1 | $`(\bar B_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}`$ |
-| 2 | $`(\bar B_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}`$ |
-| 3 | $`(\bar B_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
+| 1 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}`$ |
+| 2 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}`$ |
+| 3 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
 | 4 | $`(\check n_3)_{0124}(\check n_3)_{0145}(\overline{d\check n_3})_{01234}`$ |
 | 5 | $`(\check n_3)_{0124}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}`$ |
 | 6 | $`(\check n_3)_{0124}(\check n_3)_{1245}(\overline{d\check n_3})_{01234}`$ |
@@ -48,8 +48,8 @@ Sum every product in the following table in binary arithmetic, then lift the who
 
 | Term | Binary product |
 |---:|---|
-| 1 | $`(\bar B_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
-| 2 | $`(\bar B_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
+| 1 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
+| 2 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
 | 3 | $`(\check n_3)_{0125}(\check n_3)_{0145}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
 | 4 | $`(\check n_3)_{0125}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
 | 5 | $`(\check n_3)_{0125}(\check n_3)_{1245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
@@ -67,14 +67,14 @@ Sum every product in the following table in binary arithmetic, then lift the who
 
 | Term | Binary product |
 |---:|---|
-| 1 | $`(\bar B_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 2 | $`(\bar B_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 3 | $`(\bar B_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 4 | $`(\bar B_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
-| 5 | $`(\bar B_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 6 | $`(\bar B_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 7 | $`(\bar B_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 8 | $`(\bar B_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
+| 1 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
+| 2 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
+| 3 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
+| 4 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
+| 5 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
+| 6 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
+| 7 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
+| 8 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
 | 9 | $`(\check n_3)_{0123}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{01345}`$ |
 | 10 | $`(\check n_3)_{0123}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{12345}`$ |
 | 11 | $`(\check n_3)_{0125}(\check n_3)_{0145}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |

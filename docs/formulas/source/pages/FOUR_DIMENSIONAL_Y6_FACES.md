@@ -29,12 +29,12 @@ values with mathematical floor. The three digits suffice because the
 complete polynomial is unchanged when any independent integer root value
 is shifted by eight.
 
-For that periodicity check, replace the integer cochain by $`n_2+8z_2`$, where
-$`z_2`$ is any twisted integer cocycle. The first two digits and the binary
+For that periodicity check, replace the integer cochain by $`n_2+8C_2`$, where
+$`C_2`$ is any twisted integer cocycle. The first two digits and the binary
 lower sources remain fixed. The fixed integer seed changes modulo sixteen
-only through eight times the Pontryagin representative multiplied by $`z_2`$.
+only through eight times the Pontryagin representative multiplied by $`C_2`$.
 Its twisted differential is a multiple of sixteen: the differential of
-the Pontryagin representative is even and $`z_2`$ is twisted closed. Thus the
+the Pontryagin representative is even and $`C_2`$ is twisted closed. Thus the
 parity after the whole exact division by eight is unchanged. The numerical
 coefficients have generalized binomial orders at most four; their parity
 also has period eight. This covers both parts of the source polynomial.

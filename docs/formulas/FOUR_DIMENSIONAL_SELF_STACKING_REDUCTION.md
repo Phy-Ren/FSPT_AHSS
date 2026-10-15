@@ -51,9 +51,9 @@ On the actual lower tower, the integer derivative of the existing
 Majorana carry is fixed by the lower obstruction:
 
 ```math
-dB_4^\gamma
+d\beta_4^\gamma
  =-\beta\big(\check{\mathcal{𝒪}}_4[n_2]\big),
-\qquad B_4^\gamma=\beta^\circ\check n_3.
+\qquad \beta_4^\gamma=\beta^\circ\check n_3.
 ```
 
 Here $`\beta`$ is the ordinary integer Bockstein of a closed binary
@@ -72,14 +72,14 @@ before the integer subtraction. Applying $`d`$ and using $`d^2=0`$ proves the st
 identity. Thus the quarter-valued self-stacking term can be written
 
 ```math
-\frac14dB_4^\gamma\cup_4B_4^\gamma
+\frac14d\beta_4^\gamma\cup_4\beta_4^\gamma
  =-\frac14\beta\big(\check{\mathcal{𝒪}}_4[n_2]\big)
-                 \cup_4B_4^\gamma.
+                 \cup_4\beta_4^\gamma.
 ```
 
 This directly reuses the lower obstruction and introduces no new
 polynomial or gauge. The term count is unchanged. The open-cochain
-formula with $`dB_4^\gamma`$ remains valid without imposing the lower
+formula with $`d\beta_4^\gamma`$ remains valid without imposing the lower
 tower, while its right-hand expression uses the stated physical equation.
 
 ## Reusing the integer-only carry
@@ -87,14 +87,14 @@ tower, while its right-hand expression uses the stated physical equation.
 The integer carry was defined on arbitrary binary degree-three inputs by
 
 ```math
-B_4[n_2,x]=\beta^\circ x+B_4^\psi[n_2].
+\beta_4[n_2,x]=\beta^\circ x+\beta_4^\psi[n_2].
 ```
 
 Its zero-input specialization is therefore an exact integral identity:
 
 ```math
-B_4[n_2,0]=B_4^\psi[n_2],
-\qquad dB_4[n_2,0]=dB_4^\psi[n_2].
+\beta_4[n_2,0]=\beta_4^\psi[n_2],
+\qquad d\beta_4[n_2,0]=d\beta_4^\psi[n_2].
 ```
 
 Every binary digit of these equal integer cochains agrees. This statement

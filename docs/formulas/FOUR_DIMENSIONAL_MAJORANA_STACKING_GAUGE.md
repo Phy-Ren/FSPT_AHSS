@@ -10,14 +10,14 @@ The output-gauge step is
 
 ```math
 \widehat{\mathcal{ℰ}}_{5,\mathrm{new}}^\gamma
-=\widehat{\mathcal{ℰ}}_{5,\mathrm{old}}^\gamma-d_{s_1}G_4.
+=\widehat{\mathcal{ℰ}}_{5,\mathrm{old}}^\gamma-d_{s_1}\widehat B_4^{\mathrm{out}}.
 ```
 
 On the ordered four-simplex, its complete output gauge is
 
 ```math
 \begin{aligned}
-G_4={}&\frac12\sum_{\eta\in\mathcal K_4}
+\widehat B_4^{\mathrm{out}}={}&\frac12\sum_{\eta\in\mathcal K_4}
           \prod_{(x,f)\in\eta}x(f)\\
 &-\frac14(\beta^\circ\check n_3+\beta^\circ\check n'_3)
        \cup_3(\check n_3\cup_3\check n'_3).

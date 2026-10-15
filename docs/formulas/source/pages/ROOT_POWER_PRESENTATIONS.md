@@ -44,7 +44,7 @@ The p+ip layer is a surviving subgroup of
 $`H^1(G,\mathbb Z_{s_1})`$. Its only possible torsion factor is a single $`\mathbb Z_2`$.
 
 Indeed, if a signed integer cocycle $`n_1`$ represents a torsion class,
-then $`m n_1=d_{s_1} k`$ for an integer zero-cochain $`k`$. Since
+then $`m n_1=d_{s_1}B_0`$ for an integer zero-cochain $`B_0`$. Since
 
 {{equation:root-power-presentations--3-1d-choose-the-basis-around-the-one-distinguished-t--3}}
 
@@ -230,7 +230,7 @@ $`X_g`$ with exactly the same integer cochain as $`Y`$. Then
 
 The factor $`4`$ records the two additional doublings. Because the two
 intermediate layers are binary, the odd parts of the lower group $`A`$
-and its bosonic subgroup $`B`$ coincide. Hence the odd extension class
+and its bosonic subgroup $`H^{\mathrm{bos}}`$ coincide. Hence the odd extension class
 is recovered by ordinary linear arithmetic:
 
 {{equation:root-power-presentations--odd-p-ip-orders-from-doubling-and-a-bosonic-comparis--13}}

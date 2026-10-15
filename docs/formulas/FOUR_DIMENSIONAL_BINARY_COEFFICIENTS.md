@@ -85,7 +85,7 @@ calls to an unspecified terminal operation. Let
 
 ```math
 \check{\mathcal{𝒪}}_4^{(j)}=(\bar n_2^{(j)})^2+\check\omega_2\bar n_2^{(j)},\qquad
-B_4^{\psi,(j)}=\frac{\overline{\check{\mathcal{𝒪}}_4^{(j)}}-(n_2^{(j)})^2-\check\omega_2n_2^{(j)}}2.
+\beta_4^{\psi,(j)}=\frac{\overline{\check{\mathcal{𝒪}}_4^{(j)}}-(n_2^{(j)})^2-\check\omega_2n_2^{(j)}}2.
 ```
 
 Both are pure p+ip-origin factors. Integer coefficients have the same
@@ -98,16 +98,16 @@ summands of the complete Bockstein and carry:
 (\beta^\circ\check n_3)_{\psi}^{(j)}=\beta^\circ \check n_{3;\psi}^{(j)},\\
 (\beta^\circ\check n_3)_{\gamma\psi}^{(j)}&=-d(\check n_{3;\gamma}^{(j)}\cup_3\check n_{3;\psi}^{(j)})
              +\overline{d\check n_{3;\gamma}^{(j)}}\cup_4\overline{d\check n_{3;\psi}^{(j)}},\\
-B_{4;\gamma}^{(j)}&=(\beta^\circ\check n_3)_{\gamma}^{(j)},\qquad
-B_{4;\gamma\psi}^{(j)}=(\beta^\circ\check n_3)_{\gamma\psi}^{(j)},\qquad
-B_{4;\psi}^{(j)}=(\beta^\circ\check n_3)_{\psi}^{(j)}+B_4^{\psi,(j)}.
+\beta_{4;\gamma}^{(j)}&=(\beta^\circ\check n_3)_{\gamma}^{(j)},\qquad
+\beta_{4;\gamma\psi}^{(j)}=(\beta^\circ\check n_3)_{\gamma\psi}^{(j)},\qquad
+\beta_{4;\psi}^{(j)}=(\beta^\circ\check n_3)_{\psi}^{(j)}+\beta_4^{\psi,(j)}.
 \end{aligned}
 ```
 
 All factors in the expression for $`(\beta^\circ\check n_3)_{\gamma\psi}`$ take their canonical integer
 values before the integer differential and products. Their sum is
 exactly $`\beta^\circ(\check n_{3;\gamma}^{(j)}+\check n_{3;\psi}^{(j)})`$; hence the sum of the three
-$`B_{4;r}^{(j)}`$ is the original integral carry on that column.
+$`\beta_{4;r}^{(j)}`$ is the original integral carry on that column.
 
 The lower obstruction coefficients are
 
@@ -177,15 +177,15 @@ The remaining one-input terms have the complete coefficients
 \mathcal H_{6;\gamma}^{(j)}={}&\mathcal T_{6;\gamma}^{(j)}+\check n_{3;\gamma}^{(j)}(\overline{\beta \omega_2}+s_1\omega_2),\\
 \mathcal H_{6;\gamma\psi}^{(j)}={}&\mathcal T_{6;\gamma\psi}^{(j)}
  +((\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma}^{(j)}+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma\psi}^{(j)})\cup_4\mathcal{𝒪}_5^\psi[n_2^{(j)}]\\
-&+(\overline{(\beta^\circ\check n_3)_{\gamma}}^{(j)}+\overline{(\beta^\circ\check n_3)_{\gamma\psi}}^{(j)})\cup_2\bar B_4^{\psi,(j)}
- +s_1[(\overline{(\beta^\circ\check n_3)_{\gamma}}^{(j)}+\overline{(\beta^\circ\check n_3)_{\gamma\psi}}^{(j)})\cup_3\bar B_4^{\psi,(j)}]
- +\bar n_2^{(j)}(\bar B_{4;\gamma}^{(j)}+\bar B_{4;\gamma\psi}^{(j)}),\\
+&+(\overline{(\beta^\circ\check n_3)_{\gamma}}^{(j)}+\overline{(\beta^\circ\check n_3)_{\gamma\psi}}^{(j)})\cup_2\bar \beta_4^{\psi,(j)}
+ +s_1[(\overline{(\beta^\circ\check n_3)_{\gamma}}^{(j)}+\overline{(\beta^\circ\check n_3)_{\gamma\psi}}^{(j)})\cup_3\bar \beta_4^{\psi,(j)}]
+ +\bar n_2^{(j)}(\bar \beta_{4;\gamma}^{(j)}+\bar \beta_{4;\gamma\psi}^{(j)}),\\
 \mathcal H_{6;\psi}^{(j)}={}&\mathcal T_{6;\psi}^{(j)}+\check n_{3;\psi}^{(j)}(\overline{\beta \omega_2}+s_1\omega_2)
  +(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\psi}^{(j)}\cup_4\mathcal{𝒪}_5^\psi[n_2^{(j)}]
  +y_6[n_2^{(j)};\omega_2,s_1]\\
-&+\overline{(\beta^\circ\check n_3)_{\psi}}^{(j)}\cup_2\bar B_4^{\psi,(j)}
- +s_1[\overline{(\beta^\circ\check n_3)_{\psi}}^{(j)}\cup_3\bar B_4^{\psi,(j)}]
- +\bar n_2^{(j)}\bar B_{4;\psi}^{(j)}
+&+\overline{(\beta^\circ\check n_3)_{\psi}}^{(j)}\cup_2\bar \beta_4^{\psi,(j)}
+ +s_1[\overline{(\beta^\circ\check n_3)_{\psi}}^{(j)}\cup_3\bar \beta_4^{\psi,(j)}]
+ +\bar n_2^{(j)}\bar \beta_{4;\psi}^{(j)}
  +(\bar n_2^{(j)}\cup_1\overline{\beta_{s_1}\check\omega_2})\bar n_2^{(j)}.
 \end{aligned}
 ```
@@ -203,7 +203,7 @@ Define the parity of the lower integral product carry by
 \bar\lambda_{3;r}={}&\sum_{i\vee j=r}\check n_{3;i}^{\mathrm{in}}\cup_3\check n_{3;j}^{\mathrm{in}'}
  +\sum_{i\vee\psi=r}(\check n_{3;i}^{\mathrm{in}}+\check n_{3;i}^{\mathrm{in}'})\cup_3\check{\mathcal{ℰ}}_3
  +\mathbf1_{r=\psi}\overline{\frac{\check{\mathcal{ℰ}}_3+n_2\cup_1n'_2}{2}},\\
-\bar B_{4;r}={}&\bar B_{4;r}^{\mathrm{in}},\qquad \bar B_{4;r}'=\bar B_{4;r}^{\mathrm{in}'}.
+\bar \beta_{4;r}={}&\bar \beta_{4;r}^{\mathrm{in}},\qquad \bar \beta_{4;r}'=\bar \beta_{4;r}^{\mathrm{in}'}.
 \end{aligned}
 ```
 
@@ -214,9 +214,9 @@ The binary quarter numerator is the sum of the following coefficients:
 ```math
 \begin{aligned}
 V_{5;r}={}&\sum_{i\vee j=r}\big[
- \bar B_{4;i}\cup_3\bar B_{4;j}'+d\bar B_{4;i}\cup_4\bar B_{4;j}'
- +(\bar B_{4;i}+\bar B_{4;i}')\cup_3[d\bar\lambda_{3;j}+\mathbf1_{j=\psi}\bar n'_2\bar n_2]
- +(d\bar B_{4;i}+d\bar B_{4;i}')\cup_4[d\bar\lambda_{3;j}+\mathbf1_{j=\psi}\bar n'_2\bar n_2]\\
+ \bar \beta_{4;i}\cup_3\bar \beta_{4;j}'+d\bar \beta_{4;i}\cup_4\bar \beta_{4;j}'
+ +(\bar \beta_{4;i}+\bar \beta_{4;i}')\cup_3[d\bar\lambda_{3;j}+\mathbf1_{j=\psi}\bar n'_2\bar n_2]
+ +(d\bar \beta_{4;i}+d\bar \beta_{4;i}')\cup_4[d\bar\lambda_{3;j}+\mathbf1_{j=\psi}\bar n'_2\bar n_2]\\
 &\qquad+\bar\lambda_{3;i}\cup_1\bar\lambda_{3;j}+\bar\lambda_{3;i}\cup_2d\bar\lambda_{3;j}\big]
  +\sum_{\psi\vee j=r}(\bar n'_2\bar n_2)\cup_3d\bar\lambda_{3;j}+\omega_2 \bar\lambda_{3;r}\\
 &+\sum_{i\vee\psi=r}\big[\check n_{3;i}^{\mathrm{in}'}\bar n_2+\bar n'_2 \check n_{3;i}^{\mathrm{in}}\big]\\
@@ -237,23 +237,23 @@ For the integral part use the signed column sum
 For the two repeated integral polynomials, use $`Q(X)=X\cup_2X+X\cup_3dX`$ and
 
 ```math
-C(X,Y)=X\cup_2Y+Y\cup_2X+X\cup_3dY+Y\cup_3dX.
+Q(X,Y)=X\cup_2Y+Y\cup_2X+X\cup_3dY+Y\cup_3dX.
 ```
 
 Then set
 
 ```math
 \begin{aligned}
-\mathcal D_{6;\gamma}={}&\sum_j^{\pm}[Q(B_{4;\gamma}^{(j)})+\omega_2 B_{4;\gamma}^{(j)}]-d_{s_1}\bar{V_{5;\gamma}},\\
-\mathcal D_{6;\psi}={}&\sum_j^{\pm}[Q(B_{4;\psi}^{(j)})+\omega_2 B_{4;\psi}^{(j)}]-d_{s_1}\bar{V_{5;\psi}}\\
+\mathcal D_{6;\gamma}={}&\sum_j^{\pm}[Q(\beta_{4;\gamma}^{(j)})+\omega_2 \beta_{4;\gamma}^{(j)}]-d_{s_1}\bar{V_{5;\gamma}},\\
+\mathcal D_{6;\psi}={}&\sum_j^{\pm}[Q(\beta_{4;\psi}^{(j)})+\omega_2 \beta_{4;\psi}^{(j)}]-d_{s_1}\bar{V_{5;\psi}}\\
 &-\Delta\overline{\big[
  \mathop{\mathrm{MS}}\nolimits_{12132434}(\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
  +\widetilde{\beta_{s_1}\check\omega_2}(\bar n_2\cup_1\bar n_2)
  +(s_1\overline{\beta_{s_1}\check\omega_2})\widetilde n_2+s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\big]}\\
 &+\check\omega_2(n'_2n_2)+(\beta_{s_1}\check\omega_2)(n_2\cup_1n'_2),\\
-\mathcal D_{6;\gamma\psi}={}&\sum_j^{\pm}[Q(B_{4;\gamma\psi}^{(j)})+\omega_2 B_{4;\gamma\psi}^{(j)}
- +C(B_{4;\gamma}^{(j)},B_{4;\gamma\psi}^{(j)})+C(B_{4;\gamma}^{(j)},B_{4;\psi}^{(j)})
- +C(B_{4;\gamma\psi}^{(j)},B_{4;\psi}^{(j)})]-d_{s_1}\bar{V_{5;\gamma\psi}}.
+\mathcal D_{6;\gamma\psi}={}&\sum_j^{\pm}[Q(\beta_{4;\gamma\psi}^{(j)})+\omega_2 \beta_{4;\gamma\psi}^{(j)}
+ +Q(\beta_{4;\gamma}^{(j)},\beta_{4;\gamma\psi}^{(j)})+Q(\beta_{4;\gamma}^{(j)},\beta_{4;\psi}^{(j)})
+ +Q(\beta_{4;\gamma\psi}^{(j)},\beta_{4;\psi}^{(j)})]-d_{s_1}\bar{V_{5;\gamma\psi}}.
 \end{aligned}
 ```
 
@@ -264,8 +264,8 @@ The three binary coefficients of the divided numerator are
 
 ```math
 \begin{aligned}
-\mathcal C_{6;\gamma}&=\widetilde{\mathcal D_{6;\gamma}},\qquad \mathcal C_{6;\psi}=\widetilde{\mathcal D_{6;\psi}},\\
-\mathcal C_{6;\gamma\psi}&=\widetilde{\mathcal D_{6;\gamma\psi}}+\bar{\mathcal D_{6;\gamma}}\cup_6\bar{\mathcal D_{6;\gamma\psi}}
+\mathcal R_{6;\gamma}&=\widetilde{\mathcal D_{6;\gamma}},\qquad \mathcal R_{6;\psi}=\widetilde{\mathcal D_{6;\psi}},\\
+\mathcal R_{6;\gamma\psi}&=\widetilde{\mathcal D_{6;\gamma\psi}}+\bar{\mathcal D_{6;\gamma}}\cup_6\bar{\mathcal D_{6;\gamma\psi}}
  +\bar{\mathcal D_{6;\gamma}}\cup_6\bar{\mathcal D_{6;\psi}}+\bar{\mathcal D_{6;\gamma\psi}}\cup_6\bar{\mathcal D_{6;\psi}}
  +d[V_{5;\gamma}\cup_5V_{5;\gamma\psi}+V_{5;\gamma}\cup_5V_{5;\psi}+V_{5;\gamma\psi}\cup_5V_{5;\psi}].
 \end{aligned}
@@ -351,7 +351,7 @@ The three completely specified degree-six coefficients are
 &\qquad+(\mathcal{𝒪}_{5;i}^{\mathrm{in}}+\mathcal{𝒪}_{5;i}^{\mathrm{in}'})\cup_3\mathcal{ℰ}_{4;j}^{\mathrm{ker}}
  +\mathcal{ℰ}_{4;i}^{\mathrm{ker}}\cup_3(\mathcal{𝒪}_{5;j}^{\mathrm{in}}+\mathcal{𝒪}_{5;j}^{\mathrm{in}'})\big]\\
 &+\sum_{j\in\{\mathrm{in},\mathrm{in}',\mathrm{out}\}} \mathcal H_{6;r}^{(j)}
- +\mathbf1_{r=\psi}[\check\omega_2d\check{\mathcal{ℰ}}_3+\overline{\beta_{s_1}\check\omega_2} \check{\mathcal{ℰ}}_3]+\mathcal C_{6;r}.
+ +\mathbf1_{r=\psi}[\check\omega_2d\check{\mathcal{ℰ}}_3+\overline{\beta_{s_1}\check\omega_2} \check{\mathcal{ℰ}}_3]+\mathcal R_{6;r}.
 \end{aligned}
 ```
 
@@ -466,7 +466,7 @@ required binary digits before rule 3. Keeping the five digits through
 $`2^4`$, that is the integer input modulo 32, is sufficient for these
 binary coefficients: their largest denominator is eight and their
 only input-dependent preparatory exact division is the factor two
-in the integral $`B_4^\psi`$. This is a bound for the binary index
+in the integral $`\beta_4^\psi`$. This is a bound for the binary index
 calculation, not a periodicity claim about the separately displayed
 denominator-three cubic response.
 

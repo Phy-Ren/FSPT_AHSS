@@ -29,7 +29,7 @@ odd orders are handled. The complete two-input law remains available; this
 page specifies its exact equal-input specialization. The
 [terminal phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is specialized at
 the same time. Since the binary sum of two equal Majorana inputs is zero,
-$`2R_5[\check n_3,0]=\tfrac12(\check n_3\cup_1\check n_3)`$ modulo
+$`2\widehat B_5[\check n_3,0]=\tfrac12(\check n_3\cup_1\check n_3)`$ modulo
 one; the half-valued part doubles to an integer. This gives the short
 extra terms below directly from the general law.
 
@@ -144,7 +144,7 @@ would discard an upper-layer correction.
 
 ### Majorana decoration
 
-With the existing integer carry $`B_4^\gamma=\beta^\circ\check n_3`$,
+With the existing integer carry $`\beta_4^\gamma=\beta^\circ\check n_3`$,
 
 ```math
 \begin{aligned}
@@ -156,10 +156,10 @@ With the existing integer carry $`B_4^\gamma=\beta^\circ\check n_3`$,
  +(d\check n_3)_{01235}(\check n_3)_{0345}
  +\check n_3\cup_1\check n_3-s_1\mathcal{ℰ}_4^\gamma\Big]\\
 &+\frac14\Big[
- B_4^\gamma\cup_3B_4^\gamma
+ \beta_4^\gamma\cup_3\beta_4^\gamma
  +\check n_3\cup_1\check n_3-\omega_2\check n_3
  +\check n_3\cup_2d\check n_3
- -\beta\big(\check{\mathcal{𝒪}}_4[n_2]\big)\cup_4B_4^\gamma\\
+ -\beta\big(\check{\mathcal{𝒪}}_4[n_2]\big)\cup_4\beta_4^\gamma\\
 &\qquad-(d\check n_3)_{01234}(d\check n_3)_{01245}
  -(d\check n_3)_{01234}(d\check n_3)_{02345}\\
 &\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
@@ -180,7 +180,7 @@ their 106 interior products. Every lift boundary is retained.
 The [exact cochain-identity reduction](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md)
 collects the earlier 218 MS terms into 187, without changing any quarter phase. The derivative in the quarter bracket
 uses the exact lower-obstruction identity
-$`dB_4^\gamma=-\beta(\check{\mathcal{𝒪}}_4[n_2])`$
+$`d\beta_4^\gamma=-\beta(\check{\mathcal{𝒪}}_4[n_2])`$
 on the stated input tower.
 This is the same open-cochain representative as the general formula.
 No cocycle hypothesis on $`\check n_3`$ has been imposed. The phase
@@ -219,7 +219,7 @@ protected mixed lift has eight interior terms. This large residual is
 preserved as exact verification data and remains a target for structural
 simplification. The additional term
 $`-s_1\mathcal{ℰ}_4^{\gamma\psi}/2`$ is its entire coordinate
-correction on equal inputs: the three general $`R_5`$ evaluations cancel
+correction on equal inputs: the three general $`\widehat B_5`$ evaluations cancel
 exactly here.
 
 ### p+ip decoration
@@ -241,7 +241,7 @@ exactly here.
  +\check\omega_2\check N_3\\
 &\quad+n_2\check N_3+(n_2\cup_1\check\omega_2)n_2-s_1\mathcal{ℰ}_4^\psi\Big]
  +\frac14\overline{V_5^\psi}
- +\frac18\check\omega_2(n_2\cup_1n_2)-R_5[\check N_3,0]\pmod1.
+ +\frac18\check\omega_2(n_2\cup_1n_2)-\widehat B_5[\check N_3,0]\pmod1.
 \end{aligned}
 ```
 
@@ -252,7 +252,7 @@ use the same lower-operation conventions as the general formula. The
 remaining displayed terms add **14 outer terms**, giving **793,683 before the phase transport**.
 The protected pure lift has twelve interior terms. The denominator-three
 term of the general law vanishes identically on equal inputs.
-The extra half term and $`-R_5[\check N_3,0]`$ are the remaining
+The extra half term and $`-\widehat B_5[\check N_3,0]`$ are the remaining
 pure-integer coordinate correction; the latter has 45 explicit terms
 with the defined output as its argument. Its complete coefficient list
 is shared with the general phase map rather than fitted on the diagonal.
@@ -278,15 +278,15 @@ records the arguments, scopes, checks, and remaining complexity.
 The quotient is integral with the fixed signed higher cup. The closed-input
 Bockstein on its last line is legal because $`d\check N_3=0`$.
 The already defined carries are
-$`B_4^\gamma=\beta^\circ\check n_3`$ and
-$`B_4^\psi=B_4-B_4^\gamma`$, with the exact integer-only definition
+$`\beta_4^\gamma=\beta^\circ\check n_3`$ and
+$`\beta_4^\psi=\beta_4-\beta_4^\gamma`$, with the exact integer-only definition
 [used in the general source and product](FOUR_DIMENSIONAL.md#eq-s1).
 In the following expressions all the $`\lambda_3^\psi`$ refer to their
 value just displayed.
 
 ```math
 V_5^\gamma
- =\mathrm{Sq}^1\bar B_4^\gamma+d\bar B_4^\gamma
+ =\mathrm{Sq}^1\bar \beta_4^\gamma+d\bar \beta_4^\gamma
    +\mathrm{Sq}^2\check n_3+\omega_2\check n_3.
 ```
 
@@ -296,11 +296,11 @@ This has **four terms**. The mixed numerator has **eight terms**:
 \begin{aligned}
 V_5^{\gamma\psi}
 ={}&d\Big[
- \bar B_4^\gamma\cup_4\bar B_4^\psi
+ \bar \beta_4^\gamma\cup_4\bar \beta_4^\psi
  +\check n_3\cup_2\bar\lambda_3^\psi
  +d\check n_3\cup_3\bar\lambda_3^\psi
  +\check n_3\cup_1\bar n_2\Big]\\
-&+d\bar B_4^\gamma\cup_5d\bar B_4^\psi
+&+d\bar \beta_4^\gamma\cup_5d\bar \beta_4^\psi
  +d\check n_3\cup_3d\bar\lambda_3^\psi
  +\bar n_2^2\cup_3d\check n_3
  +d\check n_3\cup_1\bar n_2.
@@ -314,7 +314,7 @@ The p+ip numerator has **twelve terms**:
 ```math
 \begin{aligned}
 V_5^\psi
-={}&\mathrm{Sq}^1\bar B_4^\psi+d\bar B_4^\psi
+={}&\mathrm{Sq}^1\bar \beta_4^\psi+d\bar \beta_4^\psi
  +\mathrm{Sq}^2\bar\lambda_3^\psi
  +\bar n_2^2\cup_3d\bar\lambda_3^\psi
  +\omega_2\bar\lambda_3^\psi\\

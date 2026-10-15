@@ -33,7 +33,7 @@ They also retain ordinary cochain differentials of these operations.
 For example, the integer carry has the open-cochain definition
 
 ```math
-B_4[n_2,x]=\beta^\circ x+B_4^\psi[n_2].
+\beta_4[n_2,x]=\beta^\circ x+\beta_4^\psi[n_2].
 ```
 
 Here $`x`$ is any binary degree-three cochain. This definition is integral

@@ -63,9 +63,9 @@ an operation on physical cochains.
    physical slots one. For each occurrence of a color-one label j in a
    word, retain the prefix through that occurrence; append the color-zero
    letters of the remaining tail, then j again, then the color-one tail.
-   Sum the normalized words. Denote this finite rule by C below.
+   Sum the normalized words. Denote this finite rule by $`\mathsf R`$ below.
 
-The symbols L and C in this technical definition are index transformations,
+The symbols L and $`\mathsf R`$ in this technical definition are index transformations,
 not renamed interval integrals or homotopies. Their complete action on
 each integer word has just been stated. The final physical sum contains
 neither symbol and contains no marker.
@@ -129,7 +129,7 @@ J={}&U\cup_1U+U\cup_2A+\omega_2 U+s_1 (U\cup_2U+U\cup_3A)+\Xi,\\
 F={}&\check n_2 ^2+\check n_2 \cup_1(\check\omega_2 \bar n_1 )+s_1 [\check n_2 \cup_1\check n_2 +\check n_2 \cup_2(\check\omega_2 \bar n_1 )]+\omega_2 \check n_2 \\
 &+\mathop{\mathrm{MS}}\nolimits_{123134}(\check\omega_2 ,\check\omega_2 ,\bar n_1 ,\bar n_1 )
  +(\check\omega_2 \cup_1\check\omega_2 +s_1 \check\omega_2 )\widetilde n_1 +[(\check\omega_2 \cup_1\check\omega_2 )\cup_1s_1 +s_1 (s_1 \cup_1\check\omega_2 )]\bar n_1 ,\\
-G={}&C(J)+\bullet D,\qquad dG=J+\bullet F.
+G={}&\mathsf R(J)+\bullet D,\qquad dG=J+\bullet F.
 \end{aligned}
 ```
 
@@ -211,7 +211,7 @@ physical formula still contains only the six inputs printed at the top.
 The two binary input polynomials in the quarter-polarization indices are
 
 ```math
-\overline{\beta^\circ\check n_2+B_3^\psi}=\check n_2 \cup_1\check n_2 +\check n_2 \cup_2(\check\omega_2 \bar n_1 )+\check\omega_2 \widetilde n_1 +(s_1 \cup_1\check\omega_2 )\bar n_1 +\check\omega_2 \bar n_1 ,
+\overline{\beta^\circ\check n_2+\beta_3^\psi}=\check n_2 \cup_1\check n_2 +\check n_2 \cup_2(\check\omega_2 \bar n_1 )+\check\omega_2 \widetilde n_1 +(s_1 \cup_1\check\omega_2 )\bar n_1 +\check\omega_2 \bar n_1 ,
 \qquad \overline{\beta_{s_1}\check\omega_2}=\check\omega_2 \cup_1\check\omega_2 +s_1 \check\omega_2 .
 ```
 
@@ -221,20 +221,22 @@ Use these same binary input polynomials in
 \begin{aligned}
 Q&=(\check\omega_2 \cup_1\bullet )\widetilde n_1 +[(s_1 \cup_1\check\omega_2 )\cup_1\bullet ]\bar n_1 ,\\
 R_q&=(\bullet \check n_2 )\cup_3[(\check\omega_2 \cup_1\bullet )\bar n_1 ]+Q,\\
-C_q&=\bullet \overline{\beta^\circ\check n_2+B_3^\psi},\qquad Z=(\overline{\beta_{s_1}\check\omega_2}\cup_1\bullet )\bar n_1 ,
+\overline{\beta_4^{\mathrm{par}}}&=\bullet \overline{\beta^\circ\check n_2+\beta_3^\psi},\qquad Z=(\overline{\beta_{s_1}\check\omega_2}\cup_1\bullet )\bar n_1 ,
 \qquad \eta=dR_q+Z.
 \end{aligned}
 ```
 
+Here $`\overline{\beta_4^{\mathrm{par}}}`$ is the binary parameter carry
+for this source construction, with the single marker $`\bullet`$.
 Differentiate by the previously stated word boundary and input rules,
-including $`d\overline{\beta^\circ\check n_2+B_3^\psi}=\overline{\beta_{s_1}\check\omega_2}\bar n_1`$. Then
+including $`d\overline{\beta^\circ\check n_2+\beta_3^\psi}=\overline{\beta_{s_1}\check\omega_2}\bar n_1`$. Then
 
 ```math
 \begin{aligned}
-\mathcal I_q=L[&C_q\cup_2\eta+dC_q\cup_3\eta
+\mathcal I_q=L[&\overline{\beta_4^{\mathrm{par}}}\cup_2\eta+d\overline{\beta_4^{\mathrm{par}}}\cup_3\eta
  +R_q\cup_1dR_q+R_q^2+(\mathrm{Sq}^1\omega_2 )R_q
  +Z\cup_2dR_q+dZ\cup_3dR_q]\\
- +s_1 L[&C_q\cup_3\eta+dC_q\cup_4\eta
+ +s_1 L[&\overline{\beta_4^{\mathrm{par}}}\cup_3\eta+d\overline{\beta_4^{\mathrm{par}}}\cup_4\eta
  +R_q\cup_1R_q+R_q\cup_2dR_q+\omega_2 R_q
  +Z\cup_3dR_q+dZ\cup_4dR_q].
 \end{aligned}

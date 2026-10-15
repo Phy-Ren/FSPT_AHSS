@@ -21,11 +21,11 @@ are then defined explicitly:
 | $`Z_5`$ | Binary degree-five finite transfer | (K12) |
 
 The lower correction $`\mathcal{ℰ}_4`$, its shifted predecessor
-$`\check{\mathcal{ℰ}}_3=\bar n_2\cup_1\bar n'_2`$, the carry $`B_4`$,
-$`\lambda_3`$, and $`\Delta B_4=d\lambda_3-n'_2n_2`$ are already defined in
+$`\check{\mathcal{ℰ}}_3=\bar n_2\cup_1\bar n'_2`$, the carry $`\beta_4`$,
+$`\lambda_3`$, and $`\Delta \beta_4=d\lambda_3-n'_2n_2`$ are already defined in
 the guide. For any one-input expression the signed difference is
 $`\Delta X=X[N_2,\check N_3]-X[n_2,\check n_3]-X[n'_2,\check n'_3]`$.
-As elsewhere, $`B'_4=B_4[n'_2,\check n'_3]`$ and an unlabelled $`B_4`$ refers
+As elsewhere, $`\beta'_4=\beta_4[n'_2,\check n'_3]`$ and an unlabelled $`\beta_4`$ refers
 to the first input. All products remain ordered.
 
 <a id="transfer"></a>
@@ -94,14 +94,14 @@ guide, not additional input fields.
 &\qquad+(\mathrm{Sq}^2\check n_3+s_1\mathrm{Sq}^1\check n_3
  +\omega_2\check n_3)\cup_4\mathcal{𝒪}^\psi_5
  +y_6[n_2;\omega_2,s_1]\\
-&\qquad+\overline{\beta^\circ\check n_3}\cup_2\overline{B_4^\psi}
- +s_1(\overline{\beta^\circ\check n_3}\cup_3\overline{B_4^\psi})\\
-&\qquad+\bar n_2\overline{B_4}
+&\qquad+\overline{\beta^\circ\check n_3}\cup_2\overline{\beta_4^\psi}
+ +s_1(\overline{\beta^\circ\check n_3}\cup_3\overline{\beta_4^\psi})\\
+&\qquad+\bar n_2\overline{\beta_4}
  +(\bar n_2\cup_1\overline{\beta_{s_1}\check\omega_2})\bar n_2\Big]\\
 &+\check\omega_2\,d\check{\mathcal{ℰ}}_3
  +\overline{\beta_{s_1}\check\omega_2}\,\check{\mathcal{ℰ}}_3\\
 &+\frac12\Big\{
- \Delta\mathcal Q_{\omega_2}[B_4]\\
+ \Delta\mathcal Q_{\omega_2}[\beta_4]\\
 &\qquad-\Delta\overline{\left[\begin{gathered}\mathop{\mathrm{MS}}\nolimits_{12132434}
  (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
  +\widetilde{\beta_{s_1}\check\omega_2}(\bar n_2\cup_1\bar n_2)\\{}+(s_1\overline{\beta_{s_1}\check\omega_2})\widetilde n_2
@@ -120,11 +120,11 @@ exhibits the differential and ordinary-cup corrections before any lift is
 expanded. This rewriting leaves the kernel and its coefficient tables unchanged.
 
 Every derivative differentiates a specified expression. In the binary
-part, $`d\overline{B_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and
+part, $`d\overline{\beta_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and
 $`d\check{\mathcal{ℰ}}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
 Inside the final integer braces, $`d_{s_1}V_5`$ differentiates the
 canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
-inputs, including $`B_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The bar on
+inputs, including $`\beta_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The bar on
 the polynomial following the minus sign is taken **before** its signed
 stacking difference. The free complex-fermion solutions $`n_4,n'_4`$ do not
 enter this kernel.
@@ -347,7 +347,7 @@ $`n_2(012)`$.
 Only in this subsection set $`\omega_2=s_1=0`$, so
 $`dn_2=dn'_2=0`$, $`d\check n_3=\bar n_2^2`$, and
 $`d\check n'_3=(\bar n'_2)^2`$. Evaluate the guide's
-$`B_4,B'_4,\Delta B_4,\lambda_3`$ at these backgrounds. Form
+$`\beta_4,\beta'_4,\Delta \beta_4,\lambda_3`$ at these backgrounds. Form
 
 <a id="eq-k10"></a>
 
@@ -356,7 +356,7 @@ $`B_4,B'_4,\Delta B_4,\lambda_3`$ at these backgrounds. Form
 ```math
 \begin{aligned}
 D^0_5=\frac12\Big\{&
- B_4\cup_3B'_4+(B_4+B'_4)\cup_3\Delta B_4
+ \beta_4\cup_3\beta'_4+(\beta_4+\beta'_4)\cup_3\Delta \beta_4
  +\lambda_3\cup_1\lambda_3+\lambda_3\cup_2d\lambda_3
  +(n'_2n_2)\cup_3d\lambda_3\\
 &+\zeta^{\mathbb Z}_{2,2}(n'_2,n_2)

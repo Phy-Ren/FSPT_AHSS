@@ -61,9 +61,9 @@ the obstruction and on the triangle fields for stacking:
 \widehat{\mathcal{𝒪}}_6^J={}&\frac12\Big[\mathrm{Sq}^2 {n_4^J}+\omega_2 {n_4^J}+T_6[\check n_3^J;\omega_2,s_1]+\check n_3^J(\overline{\beta\omega_2}+s_1\omega_2)\\
  &\qquad +(\mathrm{Sq}^2\check n_3^J+s_1\mathrm{Sq}^1\check n_3^J+\omega_2\check n_3^J)
  \cup_4\mathcal{𝒪}_5^{\psi,J}+y_6[{n_2^J};\omega_2,s_1]\\
- &\qquad +\overline{\beta^\circ\check n_3^J}\cup_2\overline{B_4^{\psi,J}}
- +s_1(\overline{\beta^\circ\check n_3^J}\cup_3\overline{B_4^{\psi,J}})\Big]\\
- &+\frac14\big[B_4^J\cup_2B_4^J+B_4^J\cup_3dB_4^J+\omega_2 B_4^J\big]\\
+ &\qquad +\overline{\beta^\circ\check n_3^J}\cup_2\overline{\beta_4^{\psi,J}}
+ +s_1(\overline{\beta^\circ\check n_3^J}\cup_3\overline{\beta_4^{\psi,J}})\Big]\\
+ &+\frac14\big[\beta_4^J\cup_2\beta_4^J+\beta_4^J\cup_3d\beta_4^J+\omega_2 \beta_4^J\big]\\
  &-\frac14\overline{\big[\mathop{\mathrm{MS}}\nolimits_{12132434}
  (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\overline{n_2^J},\overline{n_2^J})
  +\widetilde{\beta_{s_1}\check\omega_2}(\overline{n_2^J}\cup_1\overline{n_2^J})
@@ -96,8 +96,8 @@ lift uses both inputs and their displayed lower stacking corrections:
 | $`\uparrow n_1`$ | $`n_2^I`$ | $`n_2^\triangle`$ |
 | $`\uparrow\check n_2`$ | $`\check n_3^I`$ | $`\check n_3^\triangle`$ |
 | $`\uparrow n_3`$ | $`n_4^I`$ | $`n_4^\triangle`$ |
-| $`B_4^\uparrow`$ | $`B_4^I`$ | $`B_4^\triangle`$ |
-| $`B_4^{\psi,\uparrow}`$ | $`B_4^{\psi,I}`$ | $`B_4^{\psi,\triangle}`$ |
+| $`\beta_4^\uparrow`$ | $`\beta_4^I`$ | $`\beta_4^\triangle`$ |
+| $`\beta_4^{\psi,\uparrow}`$ | $`\beta_4^{\psi,I}`$ | $`\beta_4^{\psi,\triangle}`$ |
 | $`\mathcal{𝒪}_5^\psi[\uparrow n_1]`$ | $`\mathcal{𝒪}_5^{\psi,I}`$ | $`\mathcal{𝒪}_5^{\psi,\triangle}`$ |
 
 Every entry on the right is defined explicitly below. In particular,
@@ -128,10 +128,10 @@ space. The definitions are local to the auxiliary fields:
 \begin{aligned}
 \check{\mathcal{𝒪}}_4^J&=\overline{n_2^J}^2+\check\omega_2\overline{n_2^J}
  \quad\text{in }\mathbb Z_2,\\
-B_4^{\psi,J}&=\frac{\check{\mathcal{𝒪}}_4^J-{n_2^J}^2-\check\omega_2{n_2^J}}{2},\\
-B_4^J&=\beta^\circ\check n_3^J+B_4^{\psi,J}
+\beta_4^{\psi,J}&=\frac{\check{\mathcal{𝒪}}_4^J-{n_2^J}^2-\check\omega_2{n_2^J}}{2},\\
+\beta_4^J&=\beta^\circ\check n_3^J+\beta_4^{\psi,J}
  =\frac{d\check n_3^J-{n_2^J}^2-\check\omega_2{n_2^J}}{2},\\
-dB_4^J&=-(\beta_{s_1}\check\omega_2){n_2^J}.
+d\beta_4^J&=-(\beta_{s_1}\check\omega_2){n_2^J}.
 \end{aligned}
 ```
 

@@ -171,7 +171,7 @@ Every cochain expression without explicit arguments is evaluated on
 $`(012345)`$. The [word indices](THREE_DIMENSIONAL_WORD_INDICES.md#final-physical-index-sets)
 fix $`\mathcal I_5^\psi`$, and the
 [physical-face coefficient table](THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md#physical-integer-source-coefficients)
-prints every pair in $`\mathcal C_5^\psi`$. Its factors involve only the
+prints every pair in $`\mathcal I_5^{\psi,\mathrm{face}}`$. Its factors involve only the
 physical values of $`n_1`$, $`s_1`$, and $`\omega_2`$ on faces of this same
 five-simplex. The table is finite and complete; no auxiliary simplex or
 lifted-field evaluation is part of this formula.
@@ -373,8 +373,8 @@ Every binary field in an integer expression means its canonical zero-or-one
 lift. Bars on full sums retain their complete reduction boundary. The
 integer products in $`\check\omega_2n_1`$ and $`n_1n'_1`$ use the inherited
 local systems; the latter is closed and untwisted. In particular the full
-residual satisfies $`dB_3=(\beta_{s_1}\check\omega_2)n_1`$, whereas differentiating
-$`B_3^\psi`$ alone need not give that expression. The origin selection uses the
+residual satisfies $`d\beta_3=(\beta_{s_1}\check\omega_2)n_1`$, whereas differentiating
+$`\beta_3^\psi`$ alone need not give that expression. The origin selection uses the
 full legal derivative before selecting its p+ip descendant.
 
 #### The finite phase polynomials

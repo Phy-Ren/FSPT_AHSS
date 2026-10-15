@@ -10,8 +10,8 @@ Return to the [four-lift definition](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md
 | --- | --- |
 | 1 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0124}`$ |
 | 2 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\overline{d\check n'_3})_{02345} (\check n_3)_{0234}`$ |
-| 3 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\bar B_4^{\gamma\prime})_{01245}`$ |
-| 4 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\bar B_4^{\gamma\prime})_{02345}`$ |
+| 3 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\bar \beta_4^{\gamma\prime})_{01245}`$ |
+| 4 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\bar \beta_4^{\gamma\prime})_{02345}`$ |
 | 5 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0124} (\check n'_3)_{0145}`$ |
 | 6 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0124} (\check n'_3)_{0245}`$ |
 | 7 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0124} (\check n'_3)_{1245}`$ |
@@ -19,7 +19,7 @@ Return to the [four-lift definition](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md
 | 9 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0234} (\check n'_3)_{0345}`$ |
 | 10 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0234} (\check n'_3)_{2345}`$ |
 | 11 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\overline{d\check n'_3})_{02345} (\check n_3)_{0234}`$ |
-| 12 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\bar B_4^{\gamma\prime})_{02345}`$ |
+| 12 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\bar \beta_4^{\gamma\prime})_{02345}`$ |
 | 13 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0234} (\check n'_3)_{0234}`$ |
 | 14 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0234} (\check n'_3)_{0345}`$ |
 | 15 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0234} (\check n'_3)_{2345}`$ |

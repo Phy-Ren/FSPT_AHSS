@@ -5,7 +5,7 @@
 The following finite table specifies the indicated part of the terminal obstruction:
 
 ```math
-\frac12\sum_{(f,g)\in\mathcal C_5^\psi}f\,g.
+\frac12\sum_{(f,g)\in\mathcal I_5^{\psi,\mathrm{face}}}f\,g.
 ```
 
 Each row gives one pair $`(f,g)`$: the first factor is a polynomial in the

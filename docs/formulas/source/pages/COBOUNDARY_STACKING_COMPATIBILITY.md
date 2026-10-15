@@ -154,7 +154,7 @@ The boundary product also receives the face-reference phase on that page.
 ## Transporting representatives together
 
 A terminal coordinate change
-$`\widehat\nu_D^{\,\mathrm{new}}=\widehat\nu_D+f_D(X)`$
+$`\widehat\nu_D^{\,\mathrm{new}}=\widehat\nu_D+\widehat B_D(X)`$
 has the paired transport
 
 {{equation:coboundary-stacking-compatibility--transporting-representatives-together--15}}

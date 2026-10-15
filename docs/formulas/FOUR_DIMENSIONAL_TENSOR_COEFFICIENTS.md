@@ -7,14 +7,14 @@ $`(012345)`$:
 
 ```math
 \begin{aligned}
-&\sum_{(i,j,k,l,e)\in\mathcal C_{2,3}}
+&\sum_{(i,j,k,l,e)\in\mathcal I_{2,3}}
  \overline{\binom{n_2(012)}i}
  \overline{\binom{(-1)^{s_1(02)}n'_2(234)}j}
  \overline{\binom{(-1)^{s_1(02)}[n'_2(235)-n'_2(234)]}k}\\
 &\qquad\times
  \overline{\binom{(-1)^{s_1(03)}n'_2(345)}l}
  [\check n'_3(2345)+\check\omega_2(023)\bar n'_2(345)]^e\\
-&+\sum_{(i,j,k,l,e)\in\mathcal C_{3,2}}
+&+\sum_{(i,j,k,l,e)\in\mathcal I_{3,2}}
  \overline{\binom{(-1)^{s_1(03)}n'_2(345)}i}
  \overline{\binom{n_2(012)}j}
  \overline{\binom{n_2(013)-n_2(012)}k}\\
@@ -58,7 +58,7 @@ $`\gamma\psi`$, and its displayed integer-layer correction contributes
 $`\psi`$. Apply the same rule to any additional background correction
 in the physical path. The five-cup polynomial is entirely $`\psi`$.
 
-## The 120 rows of $`\mathcal C_{2,3}`$
+## The 120 rows of $`\mathcal I_{2,3}`$
 
 | $`i`$ | Tuples $`(j,k,l,e)`$ |
 |---|---|
@@ -85,7 +85,7 @@ in the physical path. The five-cup polynomial is entirely $`\psi`$.
 | 4 | (2,2,0,0), (3,1,0,0) |
 | 5 | (0,1,2,0), (0,2,1,0), (1,2,0,0), (2,1,0,0) |
 
-## The 106 rows of $`\mathcal C_{3,2}`$
+## The 106 rows of $`\mathcal I_{3,2}`$
 
 | $`i`$ | Tuples $`(j,k,l,e)`$ |
 |---|---|

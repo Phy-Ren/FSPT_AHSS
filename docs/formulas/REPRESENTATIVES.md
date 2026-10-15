@@ -17,17 +17,17 @@ The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOM
 **(T3D)**
 
 ```math
-{n_3^{\mathrm{old}}}={n_{3}}+\kappa_3({n_{1}},{\check n_{2}}),\qquad
-\kappa_3=({\bar n_{1}}+{s_1}){\check n_{2}}+{\check\omega_2}{\widetilde n_{1}}+[{\check\omega_2}\cup_1({\bar n_{1}}+{s_1})]{\bar n_{1}}.
+{n_3^{\mathrm{old}}}={n_{3}}+\mathcal B_3^{\mathrm{ref}}({n_{1}},{\check n_{2}}),\qquad
+\mathcal B_3^{\mathrm{ref}}=({\bar n_{1}}+{s_1}){\check n_{2}}+{\check\omega_2}{\widetilde n_{1}}+[{\check\omega_2}\cup_1({\bar n_{1}}+{s_1})]{\bar n_{1}}.
 ```
 
 Its stacking correction changes at the same time:
 
 ```math
-\mathcal{ℰ}_{3,\mathrm{old}}=\mathcal{ℰ}_3+\Delta\kappa_3.
+\mathcal{ℰ}_{3,\mathrm{old}}=\mathcal{ℰ}_3+\Delta\mathcal B_3^{\mathrm{ref}}.
 ```
 
-The obstruction is transported by the same substitution and $`d\kappa_3`$.
+The obstruction is transported by the same substitution and $`d\mathcal B_3^{\mathrm{ref}}`$.
 In particular, $`n_1=0`$ alone does not remove this coordinate change when
 $`s_1\ne0`$.
 
@@ -43,12 +43,12 @@ This earlier change precedes the operator reordering below. Its source and produ
 **(T4E)**
 
 ```math
-{\widehat{\mathcal{𝒪}}}_6=\widehat{\mathcal{𝒪}}_{6,\mathrm{raw}}+d_{s_1}\Lambda_5+\frac1{12}{n_{2}}^3,
-\qquad \Lambda_5=\frac14{\beta^\circ\check n_3}\cup_3{B_4^\psi}.
+{\widehat{\mathcal{𝒪}}}_6=\widehat{\mathcal{𝒪}}_{6,\mathrm{raw}}+d_{s_1}\widehat B_5^{\mathrm{ref}}+\frac1{12}{n_{2}}^3,
+\qquad \widehat B_5^{\mathrm{ref}}=\frac14{\beta^\circ\check n_3}\cup_3{\beta_4^\psi}.
 ```
 
 The corresponding terminal redefinition contributes
-$`\Delta\Lambda_5`$ to the stacking correction. The separate cubic term
+$`\Delta\widehat B_5^{\mathrm{ref}}`$ to the stacking correction. The separate cubic term
 shown in (T4e) is retained in (T4); it is not being called a coboundary.
 
 <a id="operator-phase-4d"></a>
@@ -83,10 +83,10 @@ The actual stacked output is used in the last line. This yields the displayed c,
 ## 4+1D: current compact Majorana phase
 
 The guide then applies the single [explicit phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-$`\widehat\nu_5\mapsto\widehat\nu_5-R_5[\check n_3,n_4]`$.
-Its source changes by $`-d_{s_1}R_5`$ and its product by $`-\Delta R_5`$,
+$`\widehat\nu_5\mapsto\widehat\nu_5-\widehat B_5[\check n_3,n_4]`$.
+Its source changes by $`-d_{s_1}\widehat B_5`$ and its product by $`-\Delta \widehat B_5`$,
 evaluated on the same actual lower stacking output. The inverse adds
-$`R_5`$; every lower decoration and lower product is fixed.
+$`\widehat B_5`$; every lower decoration and lower product is fixed.
 
 The [general](FOUR_DIMENSIONAL.md#stacking-4d) and
 [self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md) formulas include this
@@ -104,13 +104,13 @@ gauge and lower-layer changes. A nonzero cochain may be exact; only a
 nontrivial final obstruction class rules out the decoration. Stack accepted
 representatives using the paired product and reduce by the same equivalences.
 
-For a terminal phase change $`\widehat\nu\mapsto\widehat\nu+f`$, with
+For a terminal phase change $`\widehat\nu\mapsto\widehat\nu+\widehat B`$, with
 lower fields and their product fixed, the source and correction transform
 together:
 
 ```math
-\widehat{\mathcal{𝒪}}\longmapsto\widehat{\mathcal{𝒪}}+d_{s_1}f,\qquad
-\widehat{\mathcal{ℰ}}\longmapsto\widehat{\mathcal{ℰ}}+\Delta f.
+\widehat{\mathcal{𝒪}}\longmapsto\widehat{\mathcal{𝒪}}+d_{s_1}\widehat B,\qquad
+\widehat{\mathcal{ℰ}}\longmapsto\widehat{\mathcal{ℰ}}+\Delta \widehat B.
 ```
 
 A change of a lower decoration must also be substituted into every higher

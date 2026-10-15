@@ -70,8 +70,8 @@ lift uses both inputs and their displayed lower stacking corrections:
 | $`\uparrow n_1`$ | $`n_2^I`$ | $`n_2^\triangle`$ |
 | $`\uparrow\check n_2`$ | $`\check n_3^I`$ | $`\check n_3^\triangle`$ |
 | $`\uparrow n_3`$ | $`n_4^I`$ | $`n_4^\triangle`$ |
-| $`B_4^\uparrow`$ | $`B_4^I`$ | $`B_4^\triangle`$ |
-| $`B_4^{\psi,\uparrow}`$ | $`B_4^{\psi,I}`$ | $`B_4^{\psi,\triangle}`$ |
+| $`\beta_4^\uparrow`$ | $`\beta_4^I`$ | $`\beta_4^\triangle`$ |
+| $`\beta_4^{\psi,\uparrow}`$ | $`\beta_4^{\psi,I}`$ | $`\beta_4^{\psi,\triangle}`$ |
 | $`\mathcal{𝒪}_5^\psi[\uparrow n_1]`$ | $`\mathcal{𝒪}_5^{\psi,I}`$ | $`\mathcal{𝒪}_5^{\psi,\triangle}`$ |
 
 Every entry on the right is defined explicitly below. In particular,
