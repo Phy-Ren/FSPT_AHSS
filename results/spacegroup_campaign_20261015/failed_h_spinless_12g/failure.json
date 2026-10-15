@@ -1,0 +1,33 @@
+{
+  "archiveSHA256": "69f2fdfde8c2b17b28b2d8405660bc437aee3c63d69b1056a607a7bfe8ba492f",
+  "failedRun": {
+    "chargePrimaryRequested": "native",
+    "closedChargeSourceRequested": "certified",
+    "command": [
+      "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "-m",
+      "256m",
+      "-K",
+      "12g",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-spinless-n08/spacegroup_226_spinless/driver.g"
+    ],
+    "elapsedSeconds": 11708.782,
+    "exitCode": 1,
+    "host": "n08.local",
+    "id": "spacegroup_226_spinless",
+    "inputSHA256": "5b76bb1a33df025ad7d0ce6be11b33130d910b7ec098d4da54423e7c09682a4c",
+    "phaseClassRequested": "cycles",
+    "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+    "startedUTC": "2026-10-15T15:38:19.429728+00:00",
+    "status": "failed",
+    "timeoutSeconds": 14400,
+    "uniformIQHRequested": false,
+    "vacuumReductionRequested": "canonical"
+  },
+  "files": 21,
+  "stderr": "Panic in /home/user/xyren/software/gap-4.13.1/src/gasman.c:1379: cannot extend the workspace any more!!\n",
+  "verifiedRemoteLocalHashes": true
+}
