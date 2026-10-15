@@ -1,0 +1,320 @@
+{
+  "allOwnedProcessesStopped": true,
+  "artifactsSHA256": {
+    "formula_runtime.json": "b3b0169a518f9799def5034c1e051d549e8f82cffa53308beeffa767ba815cc8",
+    "selection.json": "7511c61229da05c111301f60d058c34b3f0b0201d03e3b5e8a60a7a1cf86dfbd",
+    "source.json": "1577569eaefcbab4db12b9f8c60084ed1c86684fc10ee249762ca540a93715f5",
+    "spacegroup_138_spin_half/driver.g": "c6d9bf9300b9659697035e4fab80bdf361d681af09552872f48db5daa7437ad1",
+    "spacegroup_138_spin_half/input.json": "2c76250e28e5bf7e59a7ce6668a293662fa61238fad0560489097a928425bd02",
+    "spacegroup_138_spin_half/native.json": "9277d2b898dfdf77827b85bcd5abfce7425aea388333bb46d6b7a56774198b4b",
+    "spacegroup_138_spin_half/run.json": "69a05af0b5f7d9fd7e7eea9d90e0a7fed2ff4711b4c37472c0507ea8d7d2ec4d",
+    "spacegroup_138_spin_half/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "spacegroup_138_spin_half/stdout.log": "80146d8563fdff5fef21e6ca4a39b203b876995e7064bf4879e33421c1623eae",
+    "spacegroup_138_spinless/driver.g": "c6d9bf9300b9659697035e4fab80bdf361d681af09552872f48db5daa7437ad1",
+    "spacegroup_138_spinless/input.json": "fa287df7bc51b4fa995d8eea2254a4e72c7aecf3f2a6457068e23a326f0cb06c",
+    "spacegroup_138_spinless/run.json": "8d33b3d591fa9764bcc21fdba956e47a9663cee38fe8f6f3d268193fb157091f",
+    "spacegroup_214_spin_half/driver.g": "b3f39c237d39bd2a07bee48ca71e61aaf8fd20b982d0ce70e406981694adf395",
+    "spacegroup_214_spin_half/input.json": "99f8dd2c8617a1a318a68b1b56de8747fd015afe4f74568f9b75c0bb510952a2",
+    "spacegroup_214_spin_half/native.json": "db3943d4a51883f53efbf74a73b5004b59ecc3ef04d6c161b573974c29f0087b",
+    "spacegroup_214_spin_half/run.json": "ce985210cd0b4340507a47b5dc63013493cf2d323f4a6f360187ebaf727685a8",
+    "spacegroup_214_spin_half/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "spacegroup_214_spin_half/stdout.log": "f336b5dde486079af64e32ed694ef56ebb363fb38790d5dd54212e0265c8f98f",
+    "spacegroup_214_spinless/driver.g": "b3f39c237d39bd2a07bee48ca71e61aaf8fd20b982d0ce70e406981694adf395",
+    "spacegroup_214_spinless/input.json": "0741a07f6ec0d6fb542bd4633ed1391f201746a43c46d8fd62a472edd38bcef8",
+    "spacegroup_214_spinless/run.json": "2e61f0de4920b8f07dba2e3df3af98b3c8ba7d8e68390d9ff4784e722be2576c",
+    "spacegroup_229_spin_half/driver.g": "287f2d547b26c2a1e32839e01523730e9841ec39ae5ae106881c11989c853077",
+    "spacegroup_229_spin_half/input.json": "f4864c09d5d6c40a4505e3bf68ebb9b27a3c304b64b477876fce1e2fcbac94bf",
+    "spacegroup_229_spin_half/run.json": "89ec176a7bd124c377b4f4090432376c57b92f8755271c5557a0657e698b0ca6",
+    "spacegroup_229_spin_half/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "spacegroup_229_spin_half/stdout.log": "7e4f79872f4dd284e485b59891e10436781b0fc9fa58f346c34c38fb91e0c416",
+    "spacegroup_229_spinless/driver.g": "287f2d547b26c2a1e32839e01523730e9841ec39ae5ae106881c11989c853077",
+    "spacegroup_229_spinless/input.json": "07d19eb0b54baf619c38891cbe51bc66aac3eca02cf5952e749dc290d51eb914",
+    "spacegroup_229_spinless/run.json": "689dae8a067bebdd5fc058e5f59da7174f2b19232103e580c86fdd4f7f8c94cf"
+  },
+  "batches": [
+    {
+      "allOwnedDescendantsStopped": true,
+      "caseIDs": [
+        "spacegroup_138_spin_half",
+        "spacegroup_138_spinless"
+      ],
+      "gapPID": 37886,
+      "host": "n03.local",
+      "launchedCommand": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-f-n03-pilot/spacegroup_138_spin_half/driver.g"
+      ],
+      "launcherPath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+      "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+      "remainingOwnedPIDs": [],
+      "runnerPID": 37879
+    },
+    {
+      "allOwnedDescendantsStopped": true,
+      "caseIDs": [
+        "spacegroup_214_spin_half",
+        "spacegroup_214_spinless"
+      ],
+      "gapPID": 37887,
+      "host": "n03.local",
+      "launchedCommand": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-f-n03-pilot/spacegroup_214_spin_half/driver.g"
+      ],
+      "launcherPath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+      "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+      "remainingOwnedPIDs": [],
+      "runnerPID": 37879
+    },
+    {
+      "allOwnedDescendantsStopped": true,
+      "caseIDs": [
+        "spacegroup_229_spin_half",
+        "spacegroup_229_spinless"
+      ],
+      "gapPID": 37888,
+      "host": "n03.local",
+      "launchedCommand": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-f-n03-pilot/spacegroup_229_spin_half/driver.g"
+      ],
+      "launcherPath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+      "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+      "remainingOwnedPIDs": [],
+      "runnerPID": 37879
+    }
+  ],
+  "evidence": [
+    {
+      "path": "processes_before.json",
+      "sha256": "4462fd08a667db878fa870b5d37d54d7d25dc36cb5b86f69058fc1e04c40f494"
+    },
+    {
+      "path": "processes_after.json",
+      "sha256": "458e81815ae715abc1cac410f1c3928b6ca6942a46ac95b92e40d80b60d17208"
+    },
+    {
+      "path": "source_verification.json",
+      "sha256": "a23d9139e19b48c8a7c5bb6a3224b665ac53087c966ed94bf1004eb2ca9d4267"
+    }
+  ],
+  "formulaRuntimeVerification": {
+    "configured": true,
+    "libraryPath": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-f/insulator/_compiled/u1_dag_vm.so",
+    "libraryPresent": true,
+    "librarySHA256": "0c026ca103e9ba8b674c006d6042ca23bfe526ca62b4e96b3c1b79c4d318dec2",
+    "manifestSHA256": "b3b0169a518f9799def5034c1e051d549e8f82cffa53308beeffa767ba815cc8"
+  },
+  "formulaRuntimeVerified": true,
+  "originalCampaignRoot": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-f-n03-pilot",
+  "processes": [
+    {
+      "argv": [
+        "python3",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-f/scripts/classify.py",
+        "--output",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-f-n03-pilot",
+        "--gap",
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+        "--jobs",
+        "3",
+        "--memory",
+        "8g",
+        "--timeout",
+        "3600",
+        "--pair-spins",
+        "--largest-first",
+        "--charge-primary",
+        "native",
+        "--phase-class",
+        "cycles",
+        "--case",
+        "spacegroup_138_spin_half",
+        "--case",
+        "spacegroup_138_spinless",
+        "--case",
+        "spacegroup_214_spin_half",
+        "--case",
+        "spacegroup_214_spinless",
+        "--case",
+        "spacegroup_229_spin_half",
+        "--case",
+        "spacegroup_229_spinless"
+      ],
+      "executablePath": "/home/apps/anaconda3-4.9.2/bin/python3.8",
+      "executableSHA256": "d9b22de7a640ddb6dee6ce00f809048e27b0b5ad4ac664c5ba9c531ae65f8190",
+      "host": "n03.local",
+      "observedState": "absent",
+      "pgid": 37879,
+      "pid": 37879,
+      "ppid": 1,
+      "role": "runner",
+      "startTicks": 2689090435,
+      "state": "T",
+      "uid": 5866
+    },
+    {
+      "argv": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-f-n03-pilot/spacegroup_138_spin_half/driver.g"
+      ],
+      "executablePath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+      "executableSHA256": "873e902ee797706160601846c1ad6582c05e0aebd069bdd7efcff3d081f96fea",
+      "host": "n03.local",
+      "observedState": "absent",
+      "pgid": 37886,
+      "pid": 37886,
+      "ppid": 37879,
+      "role": "gap",
+      "startTicks": 2689090519,
+      "state": "T",
+      "uid": 5866
+    },
+    {
+      "argv": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-f-n03-pilot/spacegroup_214_spin_half/driver.g"
+      ],
+      "executablePath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+      "executableSHA256": "873e902ee797706160601846c1ad6582c05e0aebd069bdd7efcff3d081f96fea",
+      "host": "n03.local",
+      "observedState": "absent",
+      "pgid": 37887,
+      "pid": 37887,
+      "ppid": 37879,
+      "role": "gap",
+      "startTicks": 2689090519,
+      "state": "T",
+      "uid": 5866
+    },
+    {
+      "argv": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-f-n03-pilot/spacegroup_229_spin_half/driver.g"
+      ],
+      "executablePath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+      "executableSHA256": "873e902ee797706160601846c1ad6582c05e0aebd069bdd7efcff3d081f96fea",
+      "host": "n03.local",
+      "observedState": "absent",
+      "pgid": 37888,
+      "pid": 37888,
+      "ppid": 37879,
+      "role": "gap",
+      "startTicks": 2689090519,
+      "state": "T",
+      "uid": 5866
+    },
+    {
+      "argv": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-f/scripts/formula_worker.py"
+      ],
+      "executablePath": "/home/apps/anaconda3-4.9.2/bin/python3.8",
+      "executableSHA256": "d9b22de7a640ddb6dee6ce00f809048e27b0b5ad4ac664c5ba9c531ae65f8190",
+      "host": "n03.local",
+      "observedState": "absent",
+      "pgid": 37887,
+      "pid": 37920,
+      "ppid": 37887,
+      "role": "formula-worker",
+      "startTicks": 2689137680,
+      "state": "T",
+      "uid": 5866
+    },
+    {
+      "argv": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-f/scripts/formula_worker.py"
+      ],
+      "executablePath": "/home/apps/anaconda3-4.9.2/bin/python3.8",
+      "executableSHA256": "d9b22de7a640ddb6dee6ce00f809048e27b0b5ad4ac664c5ba9c531ae65f8190",
+      "host": "n03.local",
+      "observedState": "absent",
+      "pgid": 37886,
+      "pid": 37972,
+      "ppid": 37886,
+      "role": "formula-worker",
+      "startTicks": 2689185021,
+      "state": "T",
+      "uid": 5866
+    },
+    {
+      "argv": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-f/scripts/formula_worker.py"
+      ],
+      "executablePath": "/home/apps/anaconda3-4.9.2/bin/python3.8",
+      "executableSHA256": "d9b22de7a640ddb6dee6ce00f809048e27b0b5ad4ac664c5ba9c531ae65f8190",
+      "host": "n03.local",
+      "observedState": "absent",
+      "pgid": 37888,
+      "pid": 38128,
+      "ppid": 37888,
+      "role": "formula-worker",
+      "startTicks": 2689249849,
+      "state": "T",
+      "uid": 5866
+    }
+  ],
+  "reason": "Exact native primary, Smith-period and formula-DAG paths independently validated; preserve completed records and migrate unfinished cases",
+  "replacement": "sgfull-20261015-h",
+  "schema": "u1-paired-stop-v1",
+  "sourceSHA256": "67b361e640a9ea5b598b0e9fbde7399f2a7988285a61081684327c8870babe2d",
+  "sourceSnapshotPath": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-f",
+  "sourceSnapshotVerified": true,
+  "stoppedObservedUTC": "2026-10-15T14:33:28.120901+00:00",
+  "uncapturedExitedProcesses": [],
+  "verifiedSourceFileCount": 56,
+  "verifiedSourceSHA256": "67b361e640a9ea5b598b0e9fbde7399f2a7988285a61081684327c8870babe2d"
+}

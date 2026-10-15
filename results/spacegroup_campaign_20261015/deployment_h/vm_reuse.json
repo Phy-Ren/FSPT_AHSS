@@ -1,0 +1,20 @@
+{
+  "archiveSHA256": "033dd6e611032dc465fa6f50874c69eb8ee3126f1aae9a1e1cf18cde8f84d23f",
+  "formulaRuntime": {
+    "fallbackPolicy": "exact Python integer DAG or original U1 formula according to request eligibility",
+    "libraryPath": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/insulator/_compiled/u1_dag_vm.so",
+    "libraryPresent": true,
+    "librarySHA256": "0c026ca103e9ba8b674c006d6042ca23bfe526ca62b4e96b3c1b79c4d318dec2",
+    "requestedMode": "auto"
+  },
+  "preparedUTC": "2026-10-15T14:31:35.902316+00:00",
+  "reason": "Generic integer VM and generated U1 DAG bytes are unchanged; only certified GAP operations and runner timing changed.",
+  "reusedFrom": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/insulator/_compiled/u1_dag_vm.so",
+  "sourceCommit": "ea44c1f55314ddd66587cf452bbaae9331f3a1db",
+  "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+  "verifiedIdenticalSources": {
+    "insulator/_compiled/product3.json": "5b6b2c65cc9e28443483208629371da2cd7889f34d8be55b167258098f614bbd",
+    "insulator/_compiled/source3.json": "5d0c1c88b34ac347ba9614d1335bdc30e11f2c824013e1661c218b2983478fa4",
+    "insulator/_compiled/u1_dag_vm.cpp": "247ddb27b17b0a543423d259f49be176210471cae8bd1a15987fcb54be6e7b7b"
+  }
+}

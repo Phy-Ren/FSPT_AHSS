@@ -1,0 +1,34 @@
+[
+  {
+    "collectorExitCode": 0,
+    "command": [
+      "/usr/bin/python3",
+      "/tmp/u1-frozen-f-preserve-5ed-64676w32/scripts/collect_expansion.py",
+      "--ci-root",
+      "/home/xingyu/insulator-campaign-download/sgfull-20261015-f-preserved-5ed6b9c/sgfull-20261015-f-n02-pilot-preserved",
+      "--e8-root",
+      "/home/xingyu/insulator-campaign-download/sgfull-20261015-f-preserved-5ed6b9c/sgfull-20261015-f-n02-pilot-preserved-e8",
+      "--allow-recovered",
+      "--output",
+      "/home/xingyu/insulator-campaign-download/sgfull-20261015-f-preserved-5ed6b9c/sgfull-20261015-f-n02-pilot-local-rechecked"
+    ],
+    "exactOriginalResultAndValidationHashes": true,
+    "node": "n02"
+  },
+  {
+    "collectorExitCode": 0,
+    "command": [
+      "/usr/bin/python3",
+      "/tmp/u1-frozen-f-preserve-5ed-64676w32/scripts/collect_expansion.py",
+      "--ci-root",
+      "/home/xingyu/insulator-campaign-download/sgfull-20261015-f-preserved-5ed6b9c/sgfull-20261015-f-n03-pilot-preserved",
+      "--e8-root",
+      "/home/xingyu/insulator-campaign-download/sgfull-20261015-f-preserved-5ed6b9c/sgfull-20261015-f-n03-pilot-preserved-e8",
+      "--allow-recovered",
+      "--output",
+      "/home/xingyu/insulator-campaign-download/sgfull-20261015-f-preserved-5ed6b9c/sgfull-20261015-f-n03-pilot-local-rechecked"
+    ],
+    "exactOriginalResultAndValidationHashes": true,
+    "node": "n03"
+  }
+]

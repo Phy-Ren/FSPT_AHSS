@@ -1,0 +1,46 @@
+[
+  {
+    "family": "spacegroup",
+    "path": "3p1d/space_groups",
+    "count": 2,
+    "filesSHA256": {
+      "results.json": "6721860f2eeff65d4c650a076758406d0d65499bb005e666533e35d1d0e4e93a",
+      "validation.json": "6757b20f8537af0ac2c9b6c39076adae1421145c7438e14b54d6bc289c57e981",
+      "provenance.json": "b81f8007849833826099c16494e87365c7f3072e7201b0da1f276d54de75847e",
+      "ci_results.json": "cee8c917f9d51642d691f17b3d2ef574c846c2c9999c300a42b41cb78b435237"
+    }
+  }
+]
+[
+  {
+    "family": "spacegroup",
+    "path": "3p1d/space_groups",
+    "count": 2,
+    "filesSHA256": {
+      "results.json": "e42820f052e0aa616245328dcd16f99ab8d202ebd1687e76e9fbc40528adac63",
+      "validation.json": "aa849c7b1e12db6ffddb95e199124821e5ac47e52a695656339564825dc478a6",
+      "provenance.json": "4d7ba97eb463ba61674f0e0b47a47390dd52a1b5335e7c02f0af8e9e9f477075",
+      "ci_results.json": "38bf0c0b0f858a9eb639c988443d42e58e87738253f37a74d94753c88ead7321"
+    }
+  }
+]
+{
+  "frozenCollectorRepeated": true,
+  "nodes": [
+    {
+      "node": "n02",
+      "ordinary": 2,
+      "preserved": 2,
+      "recovered": 0,
+      "retry": 2
+    },
+    {
+      "node": "n03",
+      "ordinary": 0,
+      "preserved": 2,
+      "recovered": 2,
+      "retry": 4
+    }
+  ],
+  "verified": true
+}
