@@ -1,0 +1,13 @@
+#I  HAP warning: Set NEATO_PATH manually if needed.
+#I  HAP warning: Set DOT_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+LAZY_NONABELIAN_NEGATIVE_INTEGER_CHECKS 98304
+Syntax warning: Unbound global variable in /home/xingyu/AllFSPT_reviews/u1_hal\
+f_phase_20261015/lazy_domain.g:29
+  if ident in xs then return 0;fi;
+     ^^^^^
+Syntax warning: Unbound global variable in /home/xingyu/AllFSPT_reviews/u1_hal\
+f_phase_20261015/lazy_domain.g:30
+  return ((Sum(List([1..Length(xs)],i->i*Position(es,xs[i]))) mod 5)-2)/2;
+                                                  ^^
+HALF_NATIVE_AND_SMITH_CHECKS 32

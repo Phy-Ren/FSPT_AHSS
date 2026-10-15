@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "comparisons": [
+    {
+      "group": 141,
+      "completeNativeRootRecordsExactlyEqual": true,
+      "lowerDataExactlyEqual": true,
+      "baselineCompletionCPUSeconds": 60.853,
+      "candidateCompletionCPUSeconds": 20.573,
+      "observedStageSpeedup": 2.957905993292179,
+      "completedRoots": 5
+    },
+    {
+      "group": 229,
+      "completeNativeRootRecordsExactlyEqual": true,
+      "lowerDataExactlyEqual": true,
+      "baselineCompletionCPUSeconds": 74.107,
+      "candidateCompletionCPUSeconds": 21.351,
+      "observedStageSpeedup": 3.470891293147862,
+      "completedRoots": 6
+    }
+  ]
+}

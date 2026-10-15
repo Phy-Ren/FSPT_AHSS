@@ -1,0 +1,57 @@
+#I  HAP warning: Set NEATO_PATH manually if needed.
+#I  HAP warning: Set DOT_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+U1_BUILD holonomy_start cpu_ms=791
+U1_BUILD RP_start order=16 cpu_ms=800
+U1_BUILD RL_start cpu_ms=889
+U1_BUILD section_start cpu_ms=889
+U1_BUILD extension_start cpu_ms=890
+U1_BUILD extension_done timings=rec(
+  RL_ms := 0,
+  RP_ms := 89,
+  extension_ms := 1231,
+  holonomy_ms := 9,
+  section_ms := 1 )
+CONTEXT_MS 1370
+COHOMOLOGY_MS 1481
+STAGE_STARTED primary
+PRIMARY_COMPLETE CPU_MS 4442
+STAGE_STARTED completion
+ROOT_BEGIN 1 CPU_MS 0
+SOURCE_READY 1 literalZero=false CPU_MS 0
+PRIMITIVE_READY 1 CPU_MS 11814
+ROOT_COMPLETE 1 CPU_MS 12733
+ROOT_BEGIN 2 CPU_MS 12733
+SOURCE_READY 2 literalZero=false CPU_MS 12733
+PRIMITIVE_READY 2 CPU_MS 14608
+ROOT_COMPLETE 2 CPU_MS 15073
+ROOT_BEGIN 3 CPU_MS 15073
+SOURCE_READY 3 literalZero=false CPU_MS 15073
+PRIMITIVE_READY 3 CPU_MS 16317
+ROOT_COMPLETE 3 CPU_MS 16842
+ROOT_BEGIN 4 CPU_MS 16842
+SOURCE_READY 4 literalZero=false CPU_MS 16842
+PRIMITIVE_READY 4 CPU_MS 18319
+ROOT_COMPLETE 4 CPU_MS 18850
+ROOT_BEGIN 5 CPU_MS 18850
+SOURCE_READY 5 literalZero=false CPU_MS 18850
+PRIMITIVE_READY 5 CPU_MS 20125
+ROOT_COMPLETE 5 CPU_MS 20573
+COMPLETION_ALL_DONE CPU_MS 20573
+  count  self/ms  chld/ms  stor/kb  chld/kb  package  function                                                                                                                                      
+      0        0        0        0        0           U1SolveData                                                                                                                                   
+      0        0        0        0        0           U1ChainHomotopy                                                                                                                               
+      5        4        0      427      192           U1SolveNative                                                                                                                                 
+   5334      382      696    98692   220596           U1ChainToBar                                                                                                                                  
+ 422278      889      368   325824   144198           U1ContractCellMod2                                                                                                                            
+ 176935     1859      357   747362   133880           U1CombineChain                                                                                                                                
+     26     1635     1248   203583   481184           U1Native                                                                                                                                      
+      5        1     2884      483   684847           U1CheckCompletedState                                                                                                                         
+8351780     3511       17  1253402        0           U1Key                                                                                                                                         
+ 179908      380     4282    16086  1205271           U1ContractFromBar                                                                                                                             
+ 338448     6536      506  1915828   111647           U1ContractCell                                                                                                                                
+ 388822     1596     8831   279375  2635528           U1ChainFromBar                                                                                                                                
+    510     5368    11235   555035  3290956           U1EvaluateHalfPhaseChain                                                                                                                      
+      5        0    17681        5  4165177           U1NativeHalfPhase                                                                                                                             
+      5        0    17685       31  4165803           U1SolveHalfPhaseData                                                                                                                          
+           22161           5396141                    TOTAL                                                                                                                                         

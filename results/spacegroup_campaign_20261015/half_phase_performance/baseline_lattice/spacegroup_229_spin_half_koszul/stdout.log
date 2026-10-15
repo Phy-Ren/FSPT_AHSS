@@ -1,0 +1,58 @@
+#I  HAP warning: Set NEATO_PATH manually if needed.
+#I  HAP warning: Set DOT_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+U1_BUILD holonomy_start cpu_ms=870
+U1_BUILD RP_start order=48 cpu_ms=883
+U1_BUILD RL_start cpu_ms=951
+U1_BUILD section_start cpu_ms=952
+U1_BUILD extension_start cpu_ms=955
+U1_BUILD extension_done timings=rec(
+  RL_ms := 1,
+  RP_ms := 68,
+  extension_ms := 1255,
+  holonomy_ms := 13,
+  section_ms := 3 )
+CONTEXT_MS 1391
+COHOMOLOGY_MS 1761
+STAGE_STARTED primary
+PRIMARY_COMPLETE CPU_MS 2966
+STAGE_STARTED completion
+ROOT_BEGIN 1 CPU_MS 0
+SOURCE_READY 1 literalZero=false CPU_MS 0
+PRIMITIVE_READY 1 CPU_MS 26096
+ROOT_COMPLETE 1 CPU_MS 27142
+ROOT_BEGIN 2 CPU_MS 27142
+SOURCE_READY 2 literalZero=false CPU_MS 27142
+PRIMITIVE_READY 2 CPU_MS 36194
+ROOT_COMPLETE 2 CPU_MS 36724
+ROOT_BEGIN 3 CPU_MS 36724
+SOURCE_READY 3 literalZero=false CPU_MS 36724
+PRIMITIVE_READY 3 CPU_MS 46065
+ROOT_COMPLETE 3 CPU_MS 46547
+ROOT_BEGIN 4 CPU_MS 46547
+SOURCE_READY 4 literalZero=false CPU_MS 46547
+PRIMITIVE_READY 4 CPU_MS 55196
+ROOT_COMPLETE 4 CPU_MS 55672
+ROOT_BEGIN 5 CPU_MS 55672
+SOURCE_READY 5 literalZero=false CPU_MS 55672
+PRIMITIVE_READY 5 CPU_MS 64519
+ROOT_COMPLETE 5 CPU_MS 65013
+ROOT_BEGIN 6 CPU_MS 65013
+SOURCE_READY 6 literalZero=false CPU_MS 65013
+PRIMITIVE_READY 6 CPU_MS 73585
+ROOT_COMPLETE 6 CPU_MS 74107
+COMPLETION_ALL_DONE CPU_MS 74107
+  count  self/ms  chld/ms  stor/kb  chld/kb  package  function                                                                                                                                      
+      0        0        0        0        0           U1ChainHomotopy                                                                                                                               
+      6        3        2      838      210           U1SolveNative                                                                                                                                 
+ 255247      995      387   310143   148529           U1ContractCellMod2                                                                                                                            
+   7392      956      514    63644   151270           U1ChainToBar                                                                                                                                  
+ 353014     2590      613   992728   119651           U1CombineChain                                                                                                                                
+      6        4     3540      715   684688           U1CheckCompletedState                                                                                                                         
+ 400198      970     6635    31685  1738821           U1ContractFromBar                                                                                                                             
+138635*     7859      135  2749199        0           U1Key                                                                                                                                         
+ 545708     8618      618  2080291   144940           U1ContractCell                                                                                                                                
+ 994731     4874    12993   575188  3271604           U1ChainFromBar                                                                                                                                
+      6        0    70557       45  152227*           U1SolveData                                                                                                                                   
+     37    48776    25316  9605133  6301152           U1Native                                                                                                                                      
+           75645           164096*                    TOTAL                                                                                                                                         

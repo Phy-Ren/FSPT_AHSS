@@ -1,0 +1,28 @@
+[
+  {
+    "chargePrimaryRequested": "native",
+    "closedChargeSourceRequested": "certified",
+    "command": [
+      "gap",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "-m",
+      "256m",
+      "-K",
+      "8g",
+      "/home/xingyu/AllFSPT_reviews/point3_optimized_g_20261015/sg221_spin_half/spacegroup_221_spin_half/driver.g"
+    ],
+    "elapsedSeconds": 234.922,
+    "exitCode": 0,
+    "host": "youran-9950X3D",
+    "id": "spacegroup_221_spin_half",
+    "inputSHA256": "2d702578b4b6486c203ee9485eda56e0d460466b32426bc04bd3d7f1864d3616",
+    "phaseClassRequested": "cycles",
+    "sourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+    "startedUTC": "2026-10-15T13:38:56.599538+00:00",
+    "status": "complete",
+    "timeoutSeconds": 3600,
+    "uniformIQHRequested": false
+  }
+]

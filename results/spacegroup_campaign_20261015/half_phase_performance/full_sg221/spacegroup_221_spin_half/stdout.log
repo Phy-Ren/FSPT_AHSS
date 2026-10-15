@@ -1,0 +1,14 @@
+#I  HAP warning: Set NEATO_PATH manually if needed.
+#I  HAP warning: Set DOT_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+U1_BUILD holonomy_start cpu_ms=728
+U1_BUILD RP_start order=48 cpu_ms=738
+U1_BUILD RL_start cpu_ms=799
+U1_BUILD section_start cpu_ms=799
+U1_BUILD extension_start cpu_ms=802
+U1_BUILD extension_done timings=rec(
+  RL_ms := 0,
+  RP_ms := 61,
+  extension_ms := 342,
+  holonomy_ms := 10,
+  section_ms := 3 )

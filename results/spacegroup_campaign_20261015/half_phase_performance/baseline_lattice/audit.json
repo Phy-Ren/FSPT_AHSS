@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "scope": "Independent exact integer/phase native equations and abstract initial charge kernel; no assertion of literal cross-resolution coordinates or final stacking group",
+  "cases": [
+    {
+      "group": 141,
+      "latticeResolution": "koszul",
+      "chargeOrders": [
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "phaseOrders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "targetOrders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "survivingChargeSubgroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "kernelIndex": 4,
+      "completedRoots": 5,
+      "literalEvenRoots": 0,
+      "nativeEquationsVerified": true,
+      "result": {
+        "workerCalls": 0,
+        "nativeCompletionChecks": 5,
+        "primaryMilliseconds": 4851,
+        "completionMilliseconds": 60853,
+        "completedRoots": 5
+      }
+    },
+    {
+      "group": 141,
+      "latticeResolution": "hap",
+      "chargeOrders": [
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "phaseOrders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "targetOrders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "survivingChargeSubgroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "kernelIndex": 4,
+      "completedRoots": 5,
+      "literalEvenRoots": 2,
+      "nativeEquationsVerified": true,
+      "result": {
+        "workerCalls": 0,
+        "nativeCompletionChecks": 5,
+        "primaryMilliseconds": 5427,
+        "completionMilliseconds": 41902,
+        "completedRoots": 5
+      }
+    },
+    {
+      "group": 229,
+      "latticeResolution": "koszul",
+      "chargeOrders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "phaseOrders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "targetOrders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "survivingChargeSubgroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "kernelIndex": 8,
+      "completedRoots": 6,
+      "literalEvenRoots": 0,
+      "nativeEquationsVerified": true,
+      "result": {
+        "workerCalls": 0,
+        "nativeCompletionChecks": 6,
+        "primaryMilliseconds": 2966,
+        "completionMilliseconds": 74107,
+        "completedRoots": 6
+      }
+    },
+    {
+      "group": 229,
+      "latticeResolution": "hap",
+      "chargeOrders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "phaseOrders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "targetOrders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "survivingChargeSubgroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "kernelIndex": 8,
+      "completedRoots": 6,
+      "literalEvenRoots": 0,
+      "nativeEquationsVerified": true,
+      "result": {
+        "workerCalls": 0,
+        "nativeCompletionChecks": 6,
+        "primaryMilliseconds": 3830,
+        "completionMilliseconds": 73837,
+        "completedRoots": 6
+      }
+    }
+  ]
+}

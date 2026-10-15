@@ -8,5 +8,6 @@ if not IsBound(U1_USE_MOD2_CONTRACTION) then U1_USE_MOD2_CONTRACTION:=true;fi;
 Read(Concatenation(U1_ROOT,"/gap/backend_mod2_contraction.g"));
 Read(Concatenation(U1_ROOT,"/gap/backend_diagonal.g"));
 Read(Concatenation(U1_ROOT,"/gap/charge_primary.g"));
+Read(Concatenation(U1_ROOT,"/gap/backend_half_phase.g"));
 Read(Concatenation(U1_ROOT,"/gap/charge_source.g"));
 Read(Concatenation(U1_ROOT,"/gap/classification.g"));

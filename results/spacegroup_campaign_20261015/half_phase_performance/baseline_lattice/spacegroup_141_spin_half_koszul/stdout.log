@@ -1,0 +1,54 @@
+#I  HAP warning: Set NEATO_PATH manually if needed.
+#I  HAP warning: Set DOT_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+U1_BUILD holonomy_start cpu_ms=825
+U1_BUILD RP_start order=16 cpu_ms=835
+U1_BUILD RL_start cpu_ms=924
+U1_BUILD section_start cpu_ms=925
+U1_BUILD extension_start cpu_ms=927
+U1_BUILD extension_done timings=rec(
+  RL_ms := 1,
+  RP_ms := 89,
+  extension_ms := 1315,
+  holonomy_ms := 10,
+  section_ms := 2 )
+CONTEXT_MS 1458
+COHOMOLOGY_MS 1581
+STAGE_STARTED primary
+PRIMARY_COMPLETE CPU_MS 4851
+STAGE_STARTED completion
+ROOT_BEGIN 1 CPU_MS 0
+SOURCE_READY 1 literalZero=false CPU_MS 0
+PRIMITIVE_READY 1 CPU_MS 26054
+ROOT_COMPLETE 1 CPU_MS 27120
+ROOT_BEGIN 2 CPU_MS 27120
+SOURCE_READY 2 literalZero=false CPU_MS 27120
+PRIMITIVE_READY 2 CPU_MS 35130
+ROOT_COMPLETE 2 CPU_MS 35731
+ROOT_BEGIN 3 CPU_MS 35731
+SOURCE_READY 3 literalZero=false CPU_MS 35731
+PRIMITIVE_READY 3 CPU_MS 43452
+ROOT_COMPLETE 3 CPU_MS 44063
+ROOT_BEGIN 4 CPU_MS 44063
+SOURCE_READY 4 literalZero=false CPU_MS 44063
+PRIMITIVE_READY 4 CPU_MS 52093
+ROOT_COMPLETE 4 CPU_MS 52686
+ROOT_BEGIN 5 CPU_MS 52686
+SOURCE_READY 5 literalZero=false CPU_MS 52686
+PRIMITIVE_READY 5 CPU_MS 60261
+ROOT_COMPLETE 5 CPU_MS 60853
+COMPLETION_ALL_DONE CPU_MS 60853
+  count  self/ms  chld/ms  stor/kb  chld/kb  package  function                                                                                                                                      
+      0        0        0        0        0           U1ChainHomotopy                                                                                                                               
+      5        4        0      428      192           U1SolveNative                                                                                                                                 
+ 422278     1156      317   325824   144198           U1ContractCellMod2                                                                                                                            
+   5334      249     1302    98690   220596           U1ChainToBar                                                                                                                                  
+      5        2     3456      483   665502           U1CheckCompletedState                                                                                                                         
+ 261987     3930      649  1102368   169553           U1CombineChain                                                                                                                                
+140096*     6104      151  2270824        0           U1Key                                                                                                                                         
+ 308197      732     6454    23197  1413187           U1ContractFromBar                                                                                                                             
+ 536569    10128      678  2436259   144075           U1ContractCell                                                                                                                                
+ 662319     3672    14899   487003  3637693           U1ChainFromBar                                                                                                                                
+      5        0    57390       31  126552*           U1SolveData                                                                                                                                   
+     31    36761    24081  7121164  6198922           U1Native                                                                                                                                      
+           62738           138662*                    TOTAL                                                                                                                                         

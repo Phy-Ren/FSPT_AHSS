@@ -258,7 +258,7 @@ BindGlobal("U1Classify",function(c,d,options...)
   chargeStates:=[];witnesses:=[];
   for v in K do
     state:=U1CertifiedClosedChargeState(c,d,v*HQ.generators);
-    source:=U1Source(c,d,state);phase:=U1SolveData(c,d+2,"U1s",source);
+    source:=U1Source(c,d,state);phase:=U1SolveCertifiedChargeData(c,d,state);
     if phase=fail then Error("Kernel charge lift has a terminal obstruction");fi;
     state.phase:=phase.primitive;U1CheckCompletedState(c,d,state);Add(chargeStates,state);
     Add(witnesses,rec(kind:="charge-lift",chargeCohomology:=v,nativeSource:=phase.nativeObstruction,nativePhase:=phase.nativePrimitive));

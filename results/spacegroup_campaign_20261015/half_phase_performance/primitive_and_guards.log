@@ -1,0 +1,10 @@
+#I  HAP warning: Set NEATO_PATH manually if needed.
+#I  HAP warning: Set DOT_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+Syntax warning: Unbound global variable in /home/xingyu/AllFSPT_reviews/u1_hal\
+f_phase_20261015/primitive_and_guards.g:5
+ c:=CallFuncList(U1CyclicContext,args);;els:=Filtered(Elements(c.G),g->g<>Iden\
+tity(c.G));;
+                                                                              \
+     ^
+NATIVE_SOLVES 42 EXACT_PRIMITIVE_VALUES 1005 QUARTER_PRIMITIVES 2

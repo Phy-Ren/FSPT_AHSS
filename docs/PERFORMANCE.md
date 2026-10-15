@@ -34,6 +34,16 @@ gauge formulas remain in this branch.
    group products also avoid redundant inversions in cup evaluation, including
    for nonabelian groups. See [charge_source.g](../gap/charge_source.g).
 
+5. **Certified half-valued source transfer.** For an initial closed charge root,
+   even comparison-chain coefficients contribute zero to its half-valued phase
+   source. The source evaluator skips those terms and evaluates the normalized
+   three-term degree-three cup-one expression lazily. The certificate binds the
+   exact context, charge/source callbacks and background actions. The native
+   primitive and full integral comparison homotopy remain unchanged, including
+   quarter-valued completed phases. Literal zero sources retain literal zero
+   primitives; uncertified or non-half-integral inputs retain the reference
+   route. See [backend_half_phase.g](../gap/backend_half_phase.g).
+
 These optimizations supplement the existing exact simplex plans, bounded
 request caches, paired-spin geometry reuse, and optimized GAP executable.
 The two spins retain separate extension cocycles and output files.
@@ -71,13 +81,18 @@ Measurements below refer to specific workloads, not universal speed factors.
 | Replay of 19,099 captured SG14 cache-miss responses | 41.520 CPU s | 4.448 CPU s, Python DAG; 3.991 CPU s, native DAG | Every response agrees; includes unchanged gauge operations |
 | Seven-generator SG221 spin-half primary charge obstruction map | Not complete after 120 wall s | 0.547 CPU s | One stage only; not an end-to-end speed comparison |
 | Complete SG221 spinless, native primary/DAG baseline versus added closed-source and cup optimizations | 429.263 s | 268.854 s | All mathematical fields agree literally; peak RSS 2.46 to 1.74 GiB |
+| SG141 spin-half, initial charge completion with fixed Koszul resolution | 60.853 CPU s | 20.573 CPU s | Five full charge lifts and every native witness agree; later gauges/stacking excluded |
+| SG229 spin-half, initial charge completion with fixed Koszul resolution | 74.107 CPU s | 21.351 CPU s | Six full charge lifts and every native witness agree; later gauges/stacking excluded |
+| Complete SG221 spin-half, G baseline versus half-source/lazy-cup candidate | 234.922 s | 224.534 s | All 37 mathematical/operation fields agree; only resolution timings differ; modest observed whole-run change |
 
 The primary class tests include 32 affine charge generators, 16 nonzero
 obstructions, independent coefficient signs and general rational fallback.
 The period tests include torsion orders 2, 3, 4, 6, 8 and 9. Formula tests
 include negative carries, huge integers, native overflow, invalid inputs and
-context isolation. The integrated implementation and recovery tooling passed
-all 105 tests. A complete rerun of all 64 spatial point-group backgrounds
+context isolation. The earlier integrated engine and recovery tooling passed all 105 tests.
+The half-source addition has focused tests covering 98,304 nonabelian source
+values, signed transfers, complete primitive values, quarter-valued primitives,
+and literal-zero identity. A complete rerun of all 64 spatial point-group backgrounds
 preserves every final group and integer presentation; the
 [point-group audit](../results/point3_optimized_20261015/README.md) also records
 and investigates environment-dependent cochain representatives.
@@ -87,6 +102,12 @@ and [native primary evidence](../results/spacegroup_campaign_20261015/native_cha
 contain immutable records, source identities and reproducible checks.
 The [closed-source and cup evidence](../results/spacegroup_campaign_20261015/generic_cochain_performance/README.md)
 includes the complete SG221 comparison and independent native-equation checks.
+The [half-source evidence](../results/spacegroup_campaign_20261015/half_phase_performance/README.md)
+preserves its bounded stage controls, full SG221 comparison, final zero-path
+regression, source overlays and independent review. The roughly threefold
+charge-stage gains do not imply the same speedup for a full classification.
+The full SG221 observation was only about 4.6%; it does not justify a general
+campaign speed estimate or changing active immutable runs.
 
 Space-group campaigns run on compute nodes with immutable source snapshots.
 Concurrency is bounded by measured memory as well as CPU capacity. A failed

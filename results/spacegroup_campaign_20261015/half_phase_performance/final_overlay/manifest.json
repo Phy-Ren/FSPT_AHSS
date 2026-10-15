@@ -1,0 +1,11 @@
+{
+  "baseCommit": "c07c6e5d4a69d79c9c2aeb0739ae1e189029f824",
+  "files": {
+    "gap/backend_half_phase.g": "2d92801f044d2162f75ec0e2ce3e1bab401ab2763c35110528fc190a9d78e963",
+    "gap/load.g": "7bbc2d7f02aa5fe83f565e2d79576cb0ba70af491a5797e9c3f3d2b657bc8863",
+    "gap/charge_source.g": "3ec9329ca97ace7e392447caa237d75f9aa825aa8cb862904e242814c04ad9b6",
+    "gap/classification.g": "bde6bd7de2ee8cc67b52e70ced7a08e7f0e2ef55c28996798c5ce56ea5a9029b",
+    "tests/test_half_phase_transfer.py": "4fa08727ab7bb1096d8d112b77dd24524f559e33882bc5c63e4087996905e564"
+  },
+  "changesSinceFullSG221Run": "Literal U1Zero source now delegates to original U1SolveData zero branch; all other runtime bytes unchanged. New focused tests also retained."
+}

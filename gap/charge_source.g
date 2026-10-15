@@ -21,6 +21,7 @@ BindGlobal("U1CertifiedClosedChargeState",function(c,d,v)
     or not IsBound(certificate.halfIntegralOmega) or certificate.halfIntegralOmega<>true then return state;fi;
   q2:=U1Bar(c,d,"F2",List(v,x->x mod 2));
   if q2=U1Zero then source:=U1Zero;
+  elif d=3 then source:=U1ClosedChargeSource3Lazy(c,q2);
   else
     w:=U1Memo(function(g,h) return (2*c.omega(g,h)) mod 2;end);
     binarySource:=U1Add(U1Cup(c,2,w,"F2",d,q2,"F2",0,true),
@@ -37,6 +38,6 @@ BindGlobal("U1CertifiedClosedChargeState",function(c,d,v)
     end);
   fi;
   state.closedChargeSourceCertificate:=rec(context:=c,dimension:=d,charge:=state.charge,
-    nativeCocycle:=ShallowCopy(v),actions:=[c.s,c.rho,c.omega],source:=source);
+    nativeCocycle:=ShallowCopy(v),halfValuedPhaseSource:=true,actions:=[c.s,c.rho,c.omega],source:=source);
   return state;
 end);

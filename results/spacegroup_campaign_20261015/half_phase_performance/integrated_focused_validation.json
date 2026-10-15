@@ -1,0 +1,25 @@
+{
+  "commands": [
+    {
+      "command": "python3 -m unittest discover -s tests -p test_half_phase_transfer.py",
+      "elapsedSeconds": 4.092,
+      "result": "OK",
+      "tests": 3
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -p test_closed_charge_source.py",
+      "elapsedSeconds": 2.965,
+      "result": "OK",
+      "tests": 3
+    }
+  ],
+  "dateUTC": "2026-10-15",
+  "offlineAudit": {
+    "exactCompletedChargeRoots": 11,
+    "fullClassificationFields": 38,
+    "onlyChangedField": "resolutionBuildTimings",
+    "unchangedFullFields": 37
+  },
+  "scope": "Integrated focused validation only; complete suite is coordinated separately by root.",
+  "status": "PASS"
+}
