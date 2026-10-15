@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Preserve certified completed cases from an already stopped paired campaign.
+"""Preserve certified completed cases from an already stopped mixed campaign.
 
 This offline program never queries or signals a process. A separately captured
 stop report supplies process-identity and stopped-state evidence. Raw inputs,
 outputs, logs and original metadata are copied without alteration to a new
 subset; a recovered result never receives a fabricated successful exit status.
+Ordinary completed singleton jobs retain their successful original metadata;
+incomplete singleton jobs never receive the paired-driver recovery treatment.
 """
 from __future__ import annotations
 
@@ -288,21 +290,47 @@ def _inspect_case(read_raw, report, batches, source, selection, case):
         raise ValueError('Case input/run identity mismatch')
     if run.get('inputSHA256') != sha(read_raw(prefix + 'input.json')) or run.get('sourceSHA256') != source['sha256']:
         raise ValueError('Original input/source hash mismatch')
+    command = _argv(run.get('command'))
+    driver_raw = read_raw(prefix + 'driver.g')
+    driver = driver_raw.decode('utf-8')
+    root_match = re.search(r'^U1_ROOT:=("(?:[^"\\]|\\.)*");;', driver)
+    if root_match is None or json.loads(root_match.group(1)) != report['sourceSnapshotPath']:
+        raise ValueError('Driver does not use the captured immutable source snapshot')
+    if run.get('pairedSpins') is not True:
+        if (('pairedSpins' in run and run['pairedSpins'] is not False)
+                or any(key.startswith('batch') for key in run)):
+            raise ValueError('A singleton contains misleading paired-batch metadata')
+        if run.get('status') != 'complete' or type(run.get('exitCode')) is not int or run['exitCode'] != 0:
+            raise ValueError('An incomplete singleton cannot be recovered from paired evidence')
+        expected_driver = str(PurePosixPath(report['originalCampaignRoot']) / case / 'driver.g')
+        expected_native = str(PurePosixPath(report['originalCampaignRoot']) / case / 'native.json')
+        if command[-1] != expected_driver:
+            raise ValueError('Singleton command does not target its original campaign driver')
+        targets = re.findall(r'^output:=OutputTextFile\(("(?:[^"\\]|\\.)*"),false\);;$', driver, re.MULTILINE)
+        if (len(targets) != 1 or json.loads(targets[0]) != expected_native
+                or driver.count('OutputTextFile(') != 1
+                or driver.count('CloseStream(output);;') != 1
+                or 'U1_PAIR_CASE_DONE' in driver or 'U1SiblingContext' in driver):
+            raise ValueError('Singleton driver does not bind exactly its native output')
+        stdout_name, stderr_name = prefix + 'stdout.log', prefix + 'stderr.log'
+        read_raw(stdout_name)
+        read_raw(stderr_name)
+        checks = scientific_checks(native, data)
+        result = parse(read_raw(prefix + 'result.json'))
+        if result != {'input': data, 'classification': native, 'run': run}:
+            raise ValueError('Existing completed singleton result is inconsistent')
+        return {'case': case, 'input': data, 'originalRun': run, 'classification': native,
+                'pair': [case], 'stdoutSource': stdout_name, 'stderrSource': stderr_name,
+                'checks': checks, 'kind': 'ordinary_complete'}
     pair = run.get('batchCaseIDs')
     if (run.get('pairedSpins') is not True or not isinstance(pair, list) or len(pair) != 2
             or len(set(pair)) != 2 or case not in pair or not set(pair) <= set(selection)):
         raise ValueError('Missing original ordered paired-batch metadata')
     for item in pair:
         _case(item)
-    command = _argv(run.get('command'))
     expected_driver = str(PurePosixPath(report['originalCampaignRoot']) / pair[0] / 'driver.g')
     if command[-1] != expected_driver:
         raise ValueError('Original command does not target the captured campaign driver')
-    driver_raw = read_raw(prefix + 'driver.g')
-    driver = driver_raw.decode('utf-8')
-    root_match = re.search(r'^U1_ROOT:=("(?:[^"\\]|\\.)*");;', driver)
-    if root_match is None or json.loads(root_match.group(1)) != report['sourceSnapshotPath']:
-        raise ValueError('Driver does not use the captured immutable source snapshot')
     if driver_raw != read_raw(pair[0] + '/driver.g'):
         raise ValueError('Paired driver copies differ')
     # The marker must be an entire output line, emitted only after closing the
@@ -446,13 +474,13 @@ def preserve_campaign(campaign, report_path, output, cases=None):
     return ledger
 
 
-def validate_recovered_case(root, case):
-    """Recheck a recovered record from copied evidence without the old campaign."""
+def _validated_preserved_original(root, case, ledger_key):
+    """Verify the copied stopped evidence, then reconstruct one original case."""
     root = Path(root)
     _case(case)
     ledger = parse((root / 'recovery.json').read_bytes())
-    if ledger.get('schema') != RECOVERY_SCHEMA or case not in ledger.get('recoveredCases', []):
-        raise ValueError('Missing explicit recovery ledger for the selected case')
+    if ledger.get('schema') != RECOVERY_SCHEMA or case not in ledger.get(ledger_key, []):
+        raise ValueError('Missing explicit preservation ledger for the selected case')
     report_raw = (root / '_recovery/cancellation.json').read_bytes()
     if sha(report_raw) != ledger.get('cancellationReportSHA256'):
         raise ValueError('Recovery report hash mismatch')
@@ -486,8 +514,31 @@ def validate_recovered_case(root, case):
     if 'formula_runtime.json' in originals and report.get('formulaRuntimeVerified') is not True:
         raise ValueError('Missing original formula-runtime verification')
     item = _inspect_case(read_raw, report, batches, source, selection, case)
-    if item['kind'] != 'recovered_complete' or item['checks'] != ledger['checks'][case]:
-        raise ValueError('Recovered scientific checks changed')
+    if item['checks'] != ledger['checks'][case]:
+        raise ValueError('Preserved scientific checks changed')
+    return item, report, report_raw, read_raw
+
+
+def validate_preserved_ordinary_case(root, case):
+    """Revalidate an ordinary completed copy, including singleton driver binding."""
+    root = Path(root)
+    item, report, report_raw, read_raw = _validated_preserved_original(root, case, 'ordinaryCompleteCases')
+    if item['kind'] != 'ordinary_complete':
+        raise ValueError('The preserved case is not an original ordinary completion')
+    for name in ('run.json', 'result.json'):
+        if (root / case / name).read_bytes() != read_raw(case + '/' + name):
+            raise ValueError('Original ordinary completion bytes changed')
+    return dict(item['checks'], ordinaryComplete=True, cancellationReportSHA256=sha(report_raw),
+                originalExitMetadataPreserved=True, originalDriverAndOutputBindingVerified=True,
+                originalInputSourceAndNativeBytesVerified=True)
+
+
+def validate_recovered_case(root, case):
+    """Recheck a recovered record from copied evidence without the old campaign."""
+    root = Path(root)
+    item, report, report_raw, read_raw = _validated_preserved_original(root, case, 'recoveredCases')
+    if item['kind'] != 'recovered_complete':
+        raise ValueError('Recovered case no longer requires paired recovery')
     expected = _recovered_run(case, item['originalRun'], report, sha(report_raw), sha(read_raw(case + '/run.json')))
     run, result = parse((root / case / 'run.json').read_bytes()), parse((root / case / 'result.json').read_bytes())
     if run != expected or result != {'input': item['input'], 'classification': item['classification'], 'run': expected}:

@@ -5,18 +5,20 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import tarfile
 import tempfile
 import unittest
 
 from scripts.collect_expansion import load_campaign
 from scripts.extend_e8_3p1 import extend_run, source_manifest
 from scripts.recover_paired_campaign import (encoded, parse, preserve_campaign,
-    sha, validate_recovered_case, validate_stop_report)
+    sha, validate_preserved_ordinary_case, validate_recovered_case, validate_stop_report)
 from insulator.e8_spacegroup import extend_spacegroup_classification
 
 ROOT = Path(__file__).resolve().parents[1]
 FIXTURES = ROOT / 'results/spacegroup_campaign_20261015/performance/cluster_d'
 FIRST, SECOND = 'spacegroup_019_spin_half', 'spacegroup_019_spinless'
+SINGLE = 'spacegroup_010_spin_half'
 
 
 class PairedRecovery(unittest.TestCase):
@@ -81,6 +83,34 @@ class PairedRecovery(unittest.TestCase):
         output = self.base / name
         return output, preserve_campaign(self.campaign, self.report_path, output)
 
+    def add_ordinary_singleton(self):
+        """Real saved scientific data with explicitly synthetic execution paths."""
+        tag = 'sgfull-20261015-g-n08'
+        archive_path = ROOT / 'results/spacegroup_campaign_20261015/completed_g/archives' / (tag + '-evidence.tar.gz')
+        directory = self.campaign / SINGLE
+        directory.mkdir()
+        with tarfile.open(archive_path) as archive:
+            for name in ('input.json', 'native.json', 'driver.g', 'stdout.log', 'stderr.log'):
+                (directory / name).write_bytes(archive.extractfile(tag + '/' + SINGLE + '/' + name).read())
+        data = parse((directory / 'input.json').read_bytes())
+        native = parse((directory / 'native.json').read_bytes())
+        run = parse((FIXTURES / FIRST / 'run.json').read_bytes())
+        for name in list(run):
+            if name.startswith('batch') or name == 'pairedSpins':
+                del run[name]
+        run.update(id=SINGLE, inputSHA256=sha((directory / 'input.json').read_bytes()))
+        run['command'][-1] = self.remote + '/' + SINGLE + '/driver.g'
+        driver = ('U1_ROOT:=' + json.dumps(self.snapshot) + ';;\n'
+                  'Read(Concatenation(U1_ROOT,"/gap/load.g"));;\n'
+                  'output:=OutputTextFile(' + json.dumps(self.remote + '/' + SINGLE + '/native.json') + ',false);;\n'
+                  'PrintTo(output,U1JSON(result),"\\n");;\nCloseStream(output);;\nQUIT;\n')
+        (directory / 'driver.g').write_text(driver)
+        (directory / 'run.json').write_bytes(encoded(run))
+        (directory / 'result.json').write_bytes(encoded({'input': data, 'classification': native, 'run': run}))
+        (self.campaign / 'selection.json').write_bytes(encoded([FIRST, SECOND, SINGLE]))
+        self.refresh()
+        return directory
+
     def test_complete_first_case_recovered_and_incomplete_second_queued(self):
         before = {str(p.relative_to(self.campaign)): p.read_bytes() for p in self.campaign.rglob('*') if p.is_file()}
         output, ledger = self.preserve()
@@ -142,6 +172,69 @@ class PairedRecovery(unittest.TestCase):
         for name in ('run.json', 'result.json'):
             self.assertEqual((directory / name).read_bytes(), (output / FIRST / name).read_bytes())
         load_campaign(output, 'ci')
+
+    def test_mixed_ordinary_singleton_and_paired_recovery_revalidate_portably(self):
+        directory = self.add_ordinary_singleton()
+        before = {str(p.relative_to(self.campaign)): p.read_bytes() for p in self.campaign.rglob('*') if p.is_file()}
+        output, ledger = self.preserve('mixed')
+        self.assertEqual(ledger['ordinaryCompleteCases'], [SINGLE])
+        self.assertEqual(ledger['recoveredCases'], [FIRST])
+        self.assertEqual(ledger['retryCases'], [SECOND])
+        for name in ('input.json', 'native.json', 'driver.g', 'run.json', 'result.json', 'stdout.log', 'stderr.log'):
+            self.assertEqual((output / SINGLE / name).read_bytes(), before[SINGLE + '/' + name])
+        self.assertEqual(before, {str(p.relative_to(self.campaign)): p.read_bytes() for p in self.campaign.rglob('*') if p.is_file()})
+        self.campaign.rename(self.base / 'original-unavailable')
+        self.assertTrue(validate_preserved_ordinary_case(output, SINGLE)['originalExitMetadataPreserved'])
+        self.assertTrue(validate_recovered_case(output, FIRST)['capturedProcessTreeStopped'])
+        records, _, _ = load_campaign(output, 'ci', allow_recovered=True)
+        self.assertEqual(set(records), {FIRST, SINGLE})
+        with self.assertRaises(ValueError):
+            validate_recovered_case(output, SINGLE)
+        with self.assertRaises(ValueError):
+            validate_preserved_ordinary_case(output, FIRST)
+        (output / SINGLE / 'stdout.log').write_bytes(b'changed original log')
+        with self.assertRaises(ValueError):
+            validate_preserved_ordinary_case(output, SINGLE)
+
+    def test_singleton_rejects_incomplete_failed_misleading_and_unbound_evidence(self):
+        directory = self.add_ordinary_singleton()
+        originals = {name: (directory / name).read_bytes() for name in ('run.json', 'result.json', 'driver.g')}
+        kinds = ['incomplete', 'failed', 'boolean_exit', 'batch_field', 'paired_false_batch',
+                 'paired_flag', 'wrong_driver', 'wrong_source', 'wrong_native', 'extra_native',
+                 'marker_in_driver', 'mismatched_result', 'missing_stderr']
+        stderr = (directory / 'stderr.log').read_bytes()
+        for kind in kinds:
+            with self.subTest(kind=kind):
+                for name, raw in originals.items():
+                    (directory / name).write_bytes(raw)
+                (directory / 'stderr.log').write_bytes(stderr)
+                run = parse(originals['run.json'])
+                result = parse(originals['result.json'])
+                driver = originals['driver.g'].decode()
+                if kind == 'incomplete':
+                    run['status'] = 'running'
+                    run.pop('exitCode')
+                elif kind == 'failed': run['exitCode'] = 1
+                elif kind == 'boolean_exit': run['exitCode'] = False
+                elif kind == 'batch_field': run['batchCaseIDs'] = [SINGLE]
+                elif kind == 'paired_false_batch': run.update(pairedSpins=False, batchCaseIDs=[SINGLE])
+                elif kind == 'paired_flag': run['pairedSpins'] = 1
+                elif kind == 'wrong_driver': run['command'][-1] += '.wrong'
+                elif kind == 'wrong_source': driver = driver.replace(self.snapshot, self.snapshot + '-wrong')
+                elif kind == 'wrong_native': driver = driver.replace('/' + SINGLE + '/native.json', '/' + FIRST + '/native.json')
+                elif kind == 'extra_native': driver += 'output:=OutputTextFile("/extra/native.json",false);;\n'
+                elif kind == 'marker_in_driver': driver += 'Print("U1_PAIR_CASE_DONE ");;\n'
+                elif kind == 'missing_stderr': (directory / 'stderr.log').unlink()
+                result['run'] = run
+                if kind == 'mismatched_result': result['classification']['freeRank'] += 1
+                (directory / 'run.json').write_bytes(encoded(run))
+                (directory / 'result.json').write_bytes(encoded(result))
+                (directory / 'driver.g').write_text(driver)
+                self.refresh()
+                _, ledger = self.preserve('single-rejected-' + kind)
+                self.assertNotIn(SINGLE, ledger['preservedCases'])
+                self.assertIn(SINGLE, ledger['retryCases'])
+                self.assertEqual(ledger['recoveredCases'], [FIRST])
 
     def test_missing_process_identity_or_stop_evidence_rejected(self):
         for field in ('pid', 'ppid', 'pgid', 'uid', 'startTicks', 'argv', 'executablePath', 'executableSHA256', 'host'):
