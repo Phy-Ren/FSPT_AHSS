@@ -24,8 +24,11 @@ missing layer or `d5/d6` operation of this four-coordinate tower.
 The `insulator.E8State` API implements these local completed-state operations,
 with exact integers/rationals, one phase, complete inverses and integer powers.
 It validates the degree and coefficient action of every phase. The existing
-CLI/global campaigns still use the CI-only model. No full E8-inclusive
-classification table is being claimed or released by this change.
+base CLI still uses the CI-only model. The separate
+`scripts/extend_e8_3p1.py` computes the selected 3+1D E8 section for finite
+point groups from integer H1, principal gauges, and the combined
+presentation. Its output retains the physical CI-kernel caveat; it is
+not a general space-group or coupled 4+1D global classifier.
 
 ## Gaps closed in this work
 
@@ -73,9 +76,10 @@ includes the finite source-cylinder background transport and its proof.
    physical kernel remains unproved for the entire stated group domain.
    The nonzero-uniform-IQH microscopic product-coordinate dictionary also
    remains distinct from the proved free-quotient abstract splitting.
-3. A global E8 classifier must implement the common phase presentation,
+3. A general global E8 classifier must implement the common phase presentation,
    incoming identifications, resolution transfers, and actual root powers.
-   The new local API and existence theorem do not constitute that campaign.
+   The selected 3+1D finite-point-group postprocessor is now implemented;
+   the general space-group and coupled 4+1D computations remain open.
 
 The required deliverable is the complete `d2,d3,d4`, stacking twisters,
 and equivalences for this tower. Knowing only an isomorphic final group

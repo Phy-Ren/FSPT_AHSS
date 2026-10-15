@@ -1,0 +1,17 @@
+{
+  "files": {
+    "audit.g": "91f81656c02b86e6f6429aec8848816bb626740e29f87cb20dadb26745ae7d1f",
+    "audit.log": "3bce46c3da4f3699102f691749a890c8654319406f797db17dd88d6011d141aa",
+    "bar_completion.g": "d987769858ee00add34ba669ef1cb6f79e30c83f8ba5ce108c44cc0229ec959a",
+    "bar_completion.log": "0e2dc69f3157bc2f447ceafdc818a2befbace70f8d0e644d110713d6c744351e",
+    "odd_primary.g": "41966bd32a5f970bbd0ba5c6bffebdcbcc4d2771a93c83b796689027be7946b2",
+    "odd_primary.log": "09ba2c36d1643754bad42f4d9247900f2c1918c6f325ec8b12ee403c95886c7a",
+    "unittest.log": "efd1af8b9d748a66f3ec6d41f0330cf290a82f54e5fe7c98eff713b69474410a"
+  },
+  "testCount": 69,
+  "testSeconds": 72.719,
+  "status": "PASS",
+  "sourceCacheFixCommit": "f572a98",
+  "e8ExtensionCommit": "b5c2fdb",
+  "auditNote": "audit.log records discovery before the cache fix; bar_completion.log records later validation. GAP audit files retain their original repository path; the committed cache regression is portable."
+}

@@ -16,8 +16,11 @@ The reviewed E8 addition is available through
 It implements exact local source, stacking, gauge, inverse and integer powers,
 including uniform `e0`. See [the notation](docs/e8/notation.md) and separate
 [2+1D](docs/e8/2p1.md), [3+1D](docs/e8/3p1.md), and
-[4+1D](docs/e8/4p1.md) specifications. The CLI and existing tables still
-use the CI-only classifier; the local API does not imply new global tables.
+[4+1D](docs/e8/4p1.md) specifications. The base CLI uses the CI-only
+classifier. The separate `scripts/extend_e8_3p1.py` now computes the
+selected 3+1D finite-point-group E8 section with global cocycle/gauge
+witnesses and a combined integer presentation. Its physical interpretation
+retains the unresolved CI-kernel identification caveat.
 
 **Start with the [foundation review](docs/foundations/README.md) and
 [rebuilt comparison tables](results/foundation_review_20261014/README.md).**
@@ -101,6 +104,17 @@ and completed root orders. Global internal-symmetry controls include the 2+1D
 final stacking groups from graded layers and record published-source discrepancies.
 Full classifications containing a neutral E8 sector require a justified sector
 comparison; the comparison script never deletes a factor to manufacture a match.
+
+For the implemented 3+1D finite-point-group section, extend a completed run
+into a new, separate directory:
+
+```bash
+python3 scripts/extend_e8_3p1.py --ci-root runs/point3 --output runs/point3_with_e8
+```
+
+The extension reads no literature answers and preserves the exact consumed
+CI results. Its mandatory scope metadata distinguishes the selected model
+from a certified complete physical classification.
 
 The generic resolution and Smith-normal-form infrastructure was adapted from
 `main` commit `ac45fa7ed0acd992a2f3a69273762dc9dceb2a97`. No runtime import or filesystem

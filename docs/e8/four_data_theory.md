@@ -167,9 +167,12 @@ identification problems, not unnamed higher differentials or an
 unselected coefficient in the operative twister. They remain required;
 abstract-group splitting does not replace them.
 
-The global CLI remains CI-only. E8-inclusive campaigns still require
-the shared-phase presentation and incoming/root computations above.
-A local identity test is not a completed global classification campaign.
+The base global CLI remains CI-only. A separate finite-point-group
+postprocessor now computes the selected 3+1D E8 section with explicit
+integer H1, principal gauges, and the combined relation presentation.
+General space-group and coupled 4+1D E8-inclusive campaigns still require
+the shared-phase and incoming/root computations above. A local identity
+test is not a completed global classification campaign.
 
 These boundaries have different consequences for the final stacking group:
 
@@ -177,7 +180,7 @@ These boundaries have different consequences for the final stacking group:
 | --- | --- |
 | Fixed source, product, and gauge convention | Within the adopted four-data model, these specify a group without an adjustable terminal twister. Its associated graded group alone still does not specify it. |
 | Universal pure-CI physical comparison | Needed to identify that model with the intended physical theory. Until it is proved, physical completeness and agreement of all extension relations remain conditional; matching selected examples cannot remove this condition. |
-| E8-inclusive global solver | A remaining computation and implementation task, not a new coefficient to choose. It must evaluate complete root powers and incoming relations in the shared phase. |
+| E8-inclusive global solver | The selected 3+1D finite-point-group section is implemented. General space groups and the coupled 4+1D presentation remain computation and implementation tasks, not new coefficients to choose. |
 | Separate intrinsic response sector | Deferred by scope. It is not an unresolved operation inside this four-data model. |
 
 Accordingly, “the formulas are specified” and “the complete physical

@@ -1,0 +1,16 @@
+#I  HAP warning: Set NEATO_PATH manually if needed.
+#I  HAP warning: Set DOT_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+Syntax warning: Unbound global variable in /tmp/u1_global_wiring_audit_2026101\
+5/bar_completion.g:10
+   belongs:=ForAll([1,2],i->image[i] mod orders[i]=0);;
+                            ^^^^^
+SATURATED_KERNEL_CHECKS=7500
+NONABELIAN_TABLE_CHECKS=64
+SOURCE_CACHE_REUSE=[ 1, 1 ]
+COMPLETED_BAR_CHECKS_spinless=36
+ROOT_STABILIZER_spinless=[{"vacuum":[0,1,0],"onRoot":[0,1,0]},{"vacuum":[0,1,0\
+],"onRoot":[0,1,0]},{"vacuum":[0,1,0],"onRoot":[0,1,0]}]
+COMPLETED_BAR_CHECKS_spin_half=36
+ROOT_STABILIZER_spin_half=[{"vacuum":[0,1,0],"onRoot":[0,1,0]},{"vacuum":[0,1,\
+0],"onRoot":[0,1,0]},{"vacuum":[0,1,0],"onRoot":[0,1,0]}]
