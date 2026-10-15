@@ -1,0 +1,228 @@
+{
+  "loadavg": [
+    1.62,
+    1.78,
+    2.04
+  ],
+  "logicalCPUs": 56,
+  "memoryKiB": {
+    "Buffers": 253860,
+    "Cached": 4241744,
+    "MemAvailable": null,
+    "MemFree": 117663112,
+    "MemTotal": 131885996,
+    "SwapFree": 961892,
+    "SwapTotal": 1023996
+  },
+  "physicalCores": 28,
+  "processes": [
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/classify.py",
+        "--family",
+        "spacegroup",
+        "--output",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-n08",
+        "--gap",
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+        "--pair-spins",
+        "--jobs",
+        "2",
+        "--memory",
+        "8g",
+        "--timeout",
+        "14400",
+        "--largest-first",
+        "--charge-primary",
+        "native",
+        "--phase-class",
+        "cycles",
+        "--closed-charge-source",
+        "certified",
+        "--vacuum-reduction",
+        "canonical",
+        "--case",
+        "spacegroup_226_spin_half",
+        "--case",
+        "spacegroup_226_spinless",
+        "--case",
+        "spacegroup_230_spin_half",
+        "--case",
+        "spacegroup_230_spinless"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 3.0,
+      "elapsedSeconds": 2308.25,
+      "family": "H",
+      "kind": "driverOrHelper",
+      "pid": 10773,
+      "ppid": 1,
+      "rssKiB": 12444,
+      "startTicks": 2689683735,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 0.13,
+      "elapsedSeconds": 1870.25,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 10871,
+      "ppid": 10778,
+      "rssKiB": 12220,
+      "startTicks": 2689727535,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/u1_finalize_campaign_20261015.py",
+        "--tag",
+        "sgfull-20261015-h-tail-n08",
+        "--runner-pid",
+        "10773",
+        "--node",
+        "n08",
+        "--source-tag",
+        "sgfull-20261015-h"
+      ],
+      "cpuPercentOverSample": 0.0,
+      "cpuSeconds": 0.07,
+      "elapsedSeconds": 2307.820000000298,
+      "family": "H",
+      "kind": "driverOrHelper",
+      "pid": 10776,
+      "ppid": 1,
+      "rssKiB": 10952,
+      "startTicks": 2689683778,
+      "state": "S"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-n08/spacegroup_226_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_226_spin_half",
+        "spacegroup_226_spinless"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_226_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        },
+        {
+          "id": "spacegroup_226_spinless",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 100.3311381434556,
+      "cpuSeconds": 2308.3,
+      "elapsedSeconds": 2307.790000002831,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 10778,
+      "ppid": 10773,
+      "rssKiB": 3832048,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2689683781,
+      "state": "R",
+      "totalCpuPercentOverSample": 100.3311381434556,
+      "totalRSSKiB": 3844268,
+      "workerPIDs": [
+        10871
+      ],
+      "workspaceLimit": "8g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-n08/spacegroup_230_spin_half/driver.g"
+      ],
+      "caseIDs": [
+        "spacegroup_230_spin_half",
+        "spacegroup_230_spinless"
+      ],
+      "caseOutputs": [
+        {
+          "id": "spacegroup_230_spin_half",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        },
+        {
+          "id": "spacegroup_230_spinless",
+          "nativeBytes": 0,
+          "status": "running",
+          "stderrBytes": 0
+        }
+      ],
+      "cpuPercentOverSample": 74.88128846804562,
+      "cpuSeconds": 2219.01,
+      "elapsedSeconds": 2307.780000001192,
+      "family": "H",
+      "kind": "GAP",
+      "pid": 10779,
+      "ppid": 10773,
+      "rssKiB": 4239736,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "stageEvidence": "formula-worker-created",
+      "startTicks": 2689683782,
+      "state": "R",
+      "totalCpuPercentOverSample": 98.37345739919431,
+      "totalRSSKiB": 4256916,
+      "workerPIDs": [
+        10805
+      ],
+      "workspaceLimit": "8g"
+    },
+    {
+      "args": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "-u",
+        "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/formula_worker.py"
+      ],
+      "cpuPercentOverSample": 23.49216893114869,
+      "cpuSeconds": 49.35,
+      "elapsedSeconds": 2120.760000001639,
+      "family": "H",
+      "kind": "formulaWorker",
+      "pid": 10805,
+      "ppid": 10779,
+      "rssKiB": 17180,
+      "startTicks": 2689702484,
+      "state": "S"
+    }
+  ],
+  "sampleSeconds": 2.043234072625637,
+  "sampleUTC": "2026-10-15T15:35:37.936142+00:00"
+}
