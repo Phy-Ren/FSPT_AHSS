@@ -134,6 +134,12 @@ nodes, scheduling, memory limits and older G timing method prevent a controlled
 speedup claim; the archived verifier checks the exact equality and independent
 Smith/filling calculations.
 
+The [twelve further G/H comparisons](../results/spacegroup_campaign_20261015/overlap_g_h_remaining/README.md)
+also agree literally in all 34 scientific fields. Five have both ordinary case
+records complete; seven are H ordinary / G native-only diagnostics. Their
+containing campaigns were incomplete at capture, so this is additional
+correctness coverage, not campaign acceptance or a controlled speedup result.
+
 New paired runs measure elapsed time from monotonic observations of exact
 completion markers. Older paired records that derived elapsed time from NFS
 file timestamps retain their original values, including negative values;

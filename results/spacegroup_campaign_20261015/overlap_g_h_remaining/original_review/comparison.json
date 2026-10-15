@@ -1,0 +1,1871 @@
+{
+  "acceptancePerformed": false,
+  "capturedUTC": "2026-10-15T16:29:23.130585+00:00",
+  "cases": [
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "441f6e9ef2834e9e2b503063f2888b3919aede900ff78f85c4f393f52e474984",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 1015,
+            "geometryFlushes": 227,
+            "geometryHits": 634853,
+            "requestEntries": 6584,
+            "requestFlushes": 55,
+            "requestHits": 2038308
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 1681,
+            "geometryFlushes": 120,
+            "geometryHits": 661322,
+            "requestEntries": 7755,
+            "requestFlushes": 27,
+            "requestHits": 1417104
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 457144,
+          "H": 228939
+        },
+        "pairedGeometryReuse": {
+          "G": true,
+          "H": false
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 1,
+            "RP_ms": 568,
+            "extension_ms": 12990,
+            "holonomy_ms": 166,
+            "section_ms": 9
+          },
+          "H": {
+            "RL_ms": 1,
+            "RP_ms": 276,
+            "extension_ms": 8339,
+            "holonomy_ms": 93,
+            "section_ms": 5
+          }
+        }
+      },
+      "gOrdinaryComplete": true,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4
+        ]
+      },
+      "id": "spacegroup_133_spinless",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 4,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 2,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 16
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "completed-parent-overlap"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "5aac912ddb829b892170582496095f170da8cae4c9d4fc37219fbf871a024ab2",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 3334,
+            "geometryFlushes": 278,
+            "geometryHits": 475098,
+            "requestEntries": 6055,
+            "requestFlushes": 37,
+            "requestHits": 2446649
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 561,
+            "geometryFlushes": 137,
+            "geometryHits": 511529,
+            "requestEntries": 5158,
+            "requestFlushes": 15,
+            "requestHits": 1506356
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 309159,
+          "H": 128038
+        },
+        "pairedGeometryReuse": {
+          "G": true,
+          "H": false
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 1,
+            "RP_ms": 274,
+            "extension_ms": 12104,
+            "holonomy_ms": 97,
+            "section_ms": 4
+          },
+          "H": {
+            "RL_ms": 1,
+            "RP_ms": 272,
+            "extension_ms": 7337,
+            "holonomy_ms": 116,
+            "section_ms": 5
+          }
+        }
+      },
+      "gOrdinaryComplete": true,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "id": "spacegroup_134_spinless",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": []
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 2,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 2,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 22
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "completed-parent-overlap"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "cb27919c39f6aa5787f024348673bf4401e5315db7c0ca5f4b19ffa242d581f7",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 7153,
+            "geometryFlushes": 185,
+            "geometryHits": 357189,
+            "requestEntries": 7184,
+            "requestFlushes": 39,
+            "requestHits": 1553190
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 3451,
+            "geometryFlushes": 99,
+            "geometryHits": 373525,
+            "requestEntries": 6619,
+            "requestFlushes": 4,
+            "requestHits": 1148597
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 326672,
+          "H": 39387
+        },
+        "pairedGeometryReuse": {
+          "G": true,
+          "H": false
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 1,
+            "RP_ms": 197,
+            "extension_ms": 5147,
+            "holonomy_ms": 121,
+            "section_ms": 12
+          },
+          "H": {
+            "RL_ms": 1,
+            "RP_ms": 95,
+            "extension_ms": 3254,
+            "holonomy_ms": 107,
+            "section_ms": 6
+          }
+        }
+      },
+      "gOrdinaryComplete": true,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          4,
+          24
+        ]
+      },
+      "id": "spacegroup_201_spinless",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              6
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 2,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 2,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            2,
+            4,
+            24
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 12
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "completed-parent-overlap"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "300ee6335ff8b66d3101f48c2b58750a4226b04ac7b86c6f082b508dac48ddda",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 7919,
+            "geometryFlushes": 209,
+            "geometryHits": 697360,
+            "requestEntries": 4607,
+            "requestFlushes": 64,
+            "requestHits": 1888512
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 7641,
+            "geometryFlushes": 123,
+            "geometryHits": 701156,
+            "requestEntries": 327,
+            "requestFlushes": 30,
+            "requestHits": 1470326
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 528895,
+          "H": 246087
+        },
+        "pairedGeometryReuse": {
+          "G": true,
+          "H": false
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 1,
+            "RP_ms": 271,
+            "extension_ms": 6983,
+            "holonomy_ms": 59,
+            "section_ms": 12
+          },
+          "H": {
+            "RL_ms": 0,
+            "RP_ms": 174,
+            "extension_ms": 3644,
+            "holonomy_ms": 32,
+            "section_ms": 7
+          }
+        }
+      },
+      "gOrdinaryComplete": true,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          4,
+          24
+        ]
+      },
+      "id": "spacegroup_203_spinless",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              6
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 2,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 2,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            4,
+            24
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 10
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "completed-parent-overlap"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "de285fff5ad5328b4c30dbd88b35a3a4762f9f466f02f2adb3601ad5a24f03e4",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 4638,
+            "geometryFlushes": 229,
+            "geometryHits": 621212,
+            "requestEntries": 3345,
+            "requestFlushes": 34,
+            "requestHits": 2219945
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 4300,
+            "geometryFlushes": 131,
+            "geometryHits": 636734,
+            "requestEntries": 5315,
+            "requestFlushes": 5,
+            "requestHits": 1667911
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 281873,
+          "H": 46275
+        },
+        "pairedGeometryReuse": {
+          "G": true,
+          "H": false
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 0,
+            "RP_ms": 204,
+            "extension_ms": 3505,
+            "holonomy_ms": 85,
+            "section_ms": 8
+          },
+          "H": {
+            "RL_ms": 1,
+            "RP_ms": 199,
+            "extension_ms": 3408,
+            "holonomy_ms": 102,
+            "section_ms": 7
+          }
+        }
+      },
+      "gOrdinaryComplete": true,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          8
+        ]
+      },
+      "id": "spacegroup_218_spinless",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 2,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 2,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            2,
+            2,
+            4,
+            8
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 12
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "completed-parent-overlap"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "c9bbaab358fb539161b0f7437323a6bf21f20a819b30148210170d3eda8c815e",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 3016,
+            "geometryFlushes": 392,
+            "geometryHits": 862480,
+            "requestEntries": 7743,
+            "requestFlushes": 32,
+            "requestHits": 3806873
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 6944,
+            "geometryFlushes": 183,
+            "geometryHits": 903517,
+            "requestEntries": 1668,
+            "requestFlushes": 4,
+            "requestHits": 2375161
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 269887,
+          "H": 34436
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 1,
+            "RP_ms": 658,
+            "extension_ms": 9568,
+            "holonomy_ms": 60,
+            "section_ms": 9
+          },
+          "H": {
+            "RL_ms": 1,
+            "RP_ms": 371,
+            "extension_ms": 5806,
+            "holonomy_ms": 34,
+            "section_ms": 4
+          }
+        }
+      },
+      "gOrdinaryComplete": false,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "id": "spacegroup_140_spin_half",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 2,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 2,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 22
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "native-only-diagnostic-not-accepted"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "a8d1d46072757b66c5a647773031bcfebde70953cdc3bf270eca14d34360afd7",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 3735,
+            "geometryFlushes": 349,
+            "geometryHits": 553178,
+            "requestEntries": 4453,
+            "requestFlushes": 68,
+            "requestHits": 2854412
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 3151,
+            "geometryFlushes": 191,
+            "geometryHits": 550110,
+            "requestEntries": 2978,
+            "requestFlushes": 9,
+            "requestHits": 2041227
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 561509,
+          "H": 76706
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 1,
+            "RP_ms": 721,
+            "extension_ms": 17602,
+            "holonomy_ms": 62,
+            "section_ms": 9
+          },
+          "H": {
+            "RL_ms": 1,
+            "RP_ms": 379,
+            "extension_ms": 9253,
+            "holonomy_ms": 35,
+            "section_ms": 4
+          }
+        }
+      },
+      "gOrdinaryComplete": false,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          8
+        ]
+      },
+      "id": "spacegroup_142_spin_half",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 4,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 4,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            8
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 14
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "native-only-diagnostic-not-accepted"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "a3abe213743dde000c1b851be333421ea3166a6dec9554c32682bcd25e1db398",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 7921,
+            "geometryFlushes": 420,
+            "geometryHits": 1247070,
+            "requestEntries": 1255,
+            "requestFlushes": 30,
+            "requestHits": 4448616
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 5,
+            "geometryFlushes": 268,
+            "geometryHits": 1238066,
+            "requestEntries": 3187,
+            "requestFlushes": 4,
+            "requestHits": 3397572
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 247015,
+          "H": 35955
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 1,
+            "RP_ms": 259,
+            "extension_ms": 12240,
+            "holonomy_ms": 50,
+            "section_ms": 12
+          },
+          "H": {
+            "RL_ms": 1,
+            "RP_ms": 153,
+            "extension_ms": 6786,
+            "holonomy_ms": 32,
+            "section_ms": 7
+          }
+        }
+      },
+      "gOrdinaryComplete": false,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          4,
+          24
+        ]
+      },
+      "id": "spacegroup_206_spin_half",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              6
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 4,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 4,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            4,
+            24
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 10
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "native-only-diagnostic-not-accepted"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "840ac895d465c710ff7ec61d1b8faaecdc8f1efd3b629ba7fa628e52de18e915",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 403,
+            "geometryFlushes": 393,
+            "geometryHits": 1622250,
+            "requestEntries": 3182,
+            "requestFlushes": 9,
+            "requestHits": 4765199
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 2354,
+            "geometryFlushes": 274,
+            "geometryHits": 1609869,
+            "requestEntries": 5901,
+            "requestFlushes": 1,
+            "requestHits": 3842738
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 76910,
+          "H": 14093
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 1,
+            "RP_ms": 484,
+            "extension_ms": 10990,
+            "holonomy_ms": 44,
+            "section_ms": 14
+          },
+          "H": {
+            "RL_ms": 1,
+            "RP_ms": 262,
+            "extension_ms": 5959,
+            "holonomy_ms": 25,
+            "section_ms": 7
+          }
+        }
+      },
+      "gOrdinaryComplete": false,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          4,
+          4
+        ]
+      },
+      "id": "spacegroup_220_spin_half",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              4
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 2,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 2,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            4,
+            4
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 8
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "native-only-diagnostic-not-accepted"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "a05876cd86145af3d01c74dfec9393cfeef5f356dacd94d21453177db4fec9cf",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 300,
+            "geometryFlushes": 428,
+            "geometryHits": 1031381,
+            "requestEntries": 7146,
+            "requestFlushes": 56,
+            "requestHits": 4071959
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 729,
+            "geometryFlushes": 216,
+            "geometryHits": 1028644,
+            "requestEntries": 5017,
+            "requestFlushes": 5,
+            "requestHits": 2752868
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 465898,
+          "H": 45977
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 0,
+            "RP_ms": 291,
+            "extension_ms": 8412,
+            "holonomy_ms": 130,
+            "section_ms": 15
+          },
+          "H": {
+            "RL_ms": 0,
+            "RP_ms": 211,
+            "extension_ms": 7782,
+            "holonomy_ms": 114,
+            "section_ms": 14
+          }
+        }
+      },
+      "gOrdinaryComplete": false,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          8
+        ]
+      },
+      "id": "spacegroup_223_spin_half",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 4,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 4,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            8
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 14
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "native-only-diagnostic-not-accepted"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "09e12dd45565b1e002df85b5b9bf7098ca5500331eecac268317e8059227513f",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 462,
+            "geometryFlushes": 314,
+            "geometryHits": 421527,
+            "requestEntries": 4940,
+            "requestFlushes": 55,
+            "requestHits": 2538777
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 6949,
+            "geometryFlushes": 149,
+            "geometryHits": 421132,
+            "requestEntries": 4425,
+            "requestFlushes": 9,
+            "requestHits": 1570536
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 455500,
+          "H": 78153
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 1,
+            "RP_ms": 220,
+            "extension_ms": 6635,
+            "holonomy_ms": 90,
+            "section_ms": 15
+          },
+          "H": {
+            "RL_ms": 0,
+            "RP_ms": 210,
+            "extension_ms": 4943,
+            "holonomy_ms": 107,
+            "section_ms": 16
+          }
+        }
+      },
+      "gOrdinaryComplete": false,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "id": "spacegroup_224_spin_half",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 4,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 4,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 18
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "native-only-diagnostic-not-accepted"
+    },
+    {
+      "acceptancePerformed": false,
+      "canonicalScientificSHA256": "a4e14a01c40198159f9d1a9fa19fe9b8a478c4da040e569db673e267a1c011aa",
+      "coordinateChangeRequired": false,
+      "entireNativeObjectsEqual": false,
+      "executionDifferences": {
+        "formulaCacheStats": {
+          "G": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 5354,
+            "geometryFlushes": 374,
+            "geometryHits": 635365,
+            "requestEntries": 4367,
+            "requestFlushes": 55,
+            "requestHits": 3249600
+          },
+          "H": {
+            "entryLimitPerCache": 8192,
+            "geometryEntries": 2917,
+            "geometryFlushes": 190,
+            "geometryHits": 629971,
+            "requestEntries": 5161,
+            "requestFlushes": 7,
+            "requestHits": 2126863
+          }
+        },
+        "formulaWorkerCalls": {
+          "G": 454927,
+          "H": 62505
+        },
+        "resolutionBuildTimings": {
+          "G": {
+            "RL_ms": 0,
+            "RP_ms": 534,
+            "extension_ms": 11269,
+            "holonomy_ms": 67,
+            "section_ms": 29
+          },
+          "H": {
+            "RL_ms": 1,
+            "RP_ms": 285,
+            "extension_ms": 7218,
+            "holonomy_ms": 40,
+            "section_ms": 15
+          }
+        }
+      },
+      "gOrdinaryComplete": false,
+      "group": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "id": "spacegroup_227_spin_half",
+      "independentChecks": {
+        "completeWitnessListsPresent": true,
+        "independentFiltrationSmithGroups": {
+          "charge": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2
+            ]
+          },
+          "phase": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "sheet": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          }
+        },
+        "independentPresentationFillingCheck": {
+          "chargeSubgroupFillingStep": 4,
+          "everyPresentationRelationPreservesFilling": true,
+          "fillingStep": 4,
+          "nativePrimitiveLatticeCertificatePresent": true,
+          "positivePrimitiveCellVolume": "1"
+        },
+        "independentSmithGroup": {
+          "freeRank": 1,
+          "torsion": [
+            2,
+            2,
+            2,
+            4,
+            4,
+            8
+          ]
+        },
+        "nativeChainIdentitiesVerified": true,
+        "nativeCompletionChecks": 14
+      },
+      "scientificDifferences": [],
+      "scientificFieldCount": 34,
+      "scientificFields": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "chargePrimaryStats",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "scientificFieldsLiterallyEqual": true,
+      "scope": "native-only-diagnostic-not-accepted"
+    }
+  ],
+  "cochainsRecomputed": false,
+  "comparisonScriptSHA256": "4eb4a6f1b0edc4fc1f2f6865f8e518867af1ed8bb4a8208382168eea2ca2ddbe",
+  "controlledSpeedupClaimed": false,
+  "counts": {
+    "completed-parent-overlap": 5,
+    "native-only-diagnostic-not-accepted": 7
+  },
+  "integerCheckSourceSHA256": "76ba8d03e186cab12fca075a363227bf35d001147e277c26e8b6ad2a6a98604f",
+  "scope": "Five complete-parent overlaps and seven G-native-only diagnostics; no completion/acceptance is inferred for missing parents.",
+  "sources": {
+    "sgfull-20261015-g-n02": {
+      "commit": "c07c6e5d4a69d79c9c2aeb0739ae1e189029f824",
+      "fileCount": 57,
+      "sha256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc"
+    },
+    "sgfull-20261015-g-n03": {
+      "commit": "c07c6e5d4a69d79c9c2aeb0739ae1e189029f824",
+      "fileCount": 57,
+      "sha256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc"
+    },
+    "sgfull-20261015-h-remaining-n02": {
+      "commit": "ea44c1f55314ddd66587cf452bbaae9331f3a1db",
+      "fileCount": 60,
+      "sha256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b"
+    },
+    "sgfull-20261015-h-remaining-n03": {
+      "commit": "ea44c1f55314ddd66587cf452bbaae9331f3a1db",
+      "fileCount": 60,
+      "sha256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b"
+    }
+  },
+  "status": "PASS"
+}

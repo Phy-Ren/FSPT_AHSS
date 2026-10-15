@@ -1,0 +1,13 @@
+# Finite new G/H overlap comparison
+
+This read-only batch excludes the previously archived SG210 spinless comparison. It downloaded one fixed set of12 newly available overlaps through the persistent SSH connection. No classification, cochain evaluation, acceptance, process signal or repeated polling was performed.
+
+Five pairs have ordinary complete CI result wrappers on both sides: SG133,134,201,203 and218 spinless. Seven further pairs have an ordinary complete H result but only a G native output and closed-output marker, with the G parent wrapper still absent: SG140,142,206,220,223,224 and227 spin-half. These seven remain **diagnostic only, not accepted**. Their original `run.json` statuses are retained.
+
+All12 pairs have34 literally equal scientific native-classification fields. This includes completed roots and their native phases, obstruction and kernel matrices, root-power and gauge-reduction witnesses, complete relation matrices, final filtrations, primitive filling and saved native certificates. No coordinate transformation, phase normalization or abstract-group-only comparison was needed. Differences are confined to resolution timings, request/cache statistics and (for the five second-spin paired records) geometry-reuse metadata.
+
+The independent verifier repeats Smith reductions of the full and filtration presentations, verifies filling on every relation and its exact gcd, checks positive primitive-cell volume, and checks exact root-vector dimensions and coefficient types. Both sides retain the same native completion counts and chain-certificate flags. It does not recompute those chain identities or cochains. The source hashes match frozen G and H commits; input bytes match both frozen catalogues and each other, and optional VM hashes match.
+
+`download.json` pins every copied remote byte, source path, original parent status and the successful per-pair stability check. `comparison.json` separates the five complete-parent comparisons from seven native-only diagnostics and lists every execution-field difference. Original `result.json`, `native.json`, `input.json`, `run.json`, drivers and logs are retained under `raw/` wherever they existed. Missing G wrappers are not synthesized. Timings are not used for a controlled speedup claim.
+
+Run `PYTHONDONTWRITEBYTECODE=1 python3 compare.py` for the offline check (`--repository` accepts a relocated checkout). `integer_checks.py` is a byte-identical copy of the committed SG210 package's portable verifier; only its pure integer validation function is used. The Git history and SymPy are required. The default comparison verifies its retained report without writing it. No E8 extension or complete physical-classification claim is introduced.

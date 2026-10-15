@@ -1,0 +1,46 @@
+{
+  "activeReportChange": "comparison.json preserves every original mathematical comparison, changes case-record scope labels, and explicitly disclaims campaign acceptance. Original bytes remain in original_review/comparison.json.",
+  "archiveBytes": 306850,
+  "archiveSHA256": "3ad2c016e808fd6b3452ca2994ac3aa24e8068b37a4f3aae79172f2111c4c622",
+  "campaignAcceptanceEstablished": false,
+  "controlledSpeedupClaimed": false,
+  "omittedTransport": {
+    "name": "transport.json",
+    "reason": "Redundant base64 encoding; all 173 underlying remote files are preserved byte-for-byte in raw.tar.gz.",
+    "sha256": "fc4c272b1b3722ff7d53c82e70b2e000b87cfbc9074233c85aa73ee2617b5311"
+  },
+  "originalComparisonSHA256": "ae402e94d6f792e127ae9e7f25c603c47664f0576aa67ec0a3a6f1cd0da59ba2",
+  "originalManifestSHA256": "af1ecd84ff4a3d904e41b20d92297fc4d9e3103ecffdb7e549f327233c57209d",
+  "originalReviewPath": "/home/xingyu/AllFSPT_reviews/spacegroup_h_g_new_overlaps_20261015_7vynduiz",
+  "physicalClassificationClaimed": false,
+  "rawMemberCount": 173,
+  "retainedOriginalSHA256": {
+    "README.md": "46cf8cd2759fc781d3ec50286c1847d289380ced03d6a88b2434b2d303e467a0",
+    "compare.py": "4eb4a6f1b0edc4fc1f2f6865f8e518867af1ed8bb4a8208382168eea2ca2ddbe",
+    "comparison.json": "ae402e94d6f792e127ae9e7f25c603c47664f0576aa67ec0a3a6f1cd0da59ba2",
+    "comparison.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "comparison.stdout.log": "16f331dc7f57911e0d6e5d66a3b140e9689fdff044304f8aa0542012e3b28f67",
+    "download.json": "a79b1bb13ec053213c1a70b694274e8e6e8e153f9233da0291baa74d14d1780f",
+    "fetch.py": "b8af89af7501c267e4b85974d1bb833baef740a59f6f978a6a61ebe123ab4905",
+    "fetch.stdout.log": "4146cf8d2bdf97d1785ed63995d11e5c7eff0c89783e7ce0a9a7edb8e5807b1b",
+    "integer_checks.py": "76ba8d03e186cab12fca075a363227bf35d001147e277c26e8b6ad2a6a98604f",
+    "manifest.json": "af1ecd84ff4a3d904e41b20d92297fc4d9e3103ecffdb7e549f327233c57209d",
+    "remote_read.sh": "20bf383327bcaebc33a1e39dff525dfcb059c26830b546808df37d068957c337",
+    "ssh.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "sharedLibrarySHA256": "0c026ca103e9ba8b674c006d6042ca23bfe526ca62b4e96b3c1b79c4d318dec2",
+  "sourcePins": {
+    "G": {
+      "commit": "c07c6e5d4a69d79c9c2aeb0739ae1e189029f824",
+      "fileCount": 57,
+      "sha256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc"
+    },
+    "H": {
+      "commit": "ea44c1f55314ddd66587cf452bbaae9331f3a1db",
+      "fileCount": 60,
+      "sha256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b"
+    }
+  },
+  "uncompressedTarBytes": 3706880,
+  "uncompressedTarSHA256": "e35251b42fadb0d5393d8b05d18d0246ca849a382990c769c2b794a5a93c2895"
+}
