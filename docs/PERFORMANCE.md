@@ -76,12 +76,17 @@ The primary class tests include 32 affine charge generators, 16 nonzero
 obstructions, independent coefficient signs and general rational fallback.
 The period tests include torsion orders 2, 3, 4, 6, 8 and 9. Formula tests
 include negative carries, huge integers, native overflow, invalid inputs and
-context isolation. The combined implementation passed all 95 tests before
-the first deployment snapshot.
+context isolation. The integrated implementation and recovery tooling passed
+all 105 tests. A complete rerun of all 64 spatial point-group backgrounds
+preserves every final group and integer presentation; the
+[point-group audit](../results/point3_optimized_20261015/README.md) also records
+and investigates environment-dependent cochain representatives.
 
 The [formula evidence](../results/spacegroup_campaign_20261015/compiled_formula_performance/README.md)
 and [native primary evidence](../results/spacegroup_campaign_20261015/native_charge_primary/README.md)
 contain immutable records, source identities and reproducible checks.
+The [closed-source and cup evidence](../results/spacegroup_campaign_20261015/generic_cochain_performance/README.md)
+includes the complete SG221 comparison and independent native-equation checks.
 
 Space-group campaigns run on compute nodes with immutable source snapshots.
 Concurrency is bounded by measured memory as well as CPU capacity. A failed

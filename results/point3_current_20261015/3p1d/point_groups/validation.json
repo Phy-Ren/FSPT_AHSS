@@ -1,0 +1,2276 @@
+{
+  "accepted": true,
+  "checks": [
+    {
+      "id": "point3_01_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 2,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_01_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 2,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_02_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 5,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_02_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 5,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_03_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_03_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_04_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 5,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_04_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 5,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_05_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_05_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_06_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 8,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_06_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 8,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_07_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_07_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 6,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_08_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 15,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_08_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 12,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_09_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_09_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_10_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 5,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_10_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 5,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_11_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_11_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_12_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 8,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_12_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 8,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_13_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_13_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 6,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_14_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_14_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 6,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_15_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 15,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_15_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 12,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_16_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_16_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_17_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 5,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_17_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 5,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_18_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_18_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_19_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 7,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_19_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 7,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_20_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_20_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_21_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_21_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_22_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 5,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_22_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 5,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_23_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_23_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_24_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 8,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_24_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 8,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_25_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_25_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 6,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_26_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_26_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 6,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_27_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 15,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_27_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 12,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_28_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 6,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_28_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 6,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_29_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 7,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_29_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 4,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_30_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 6,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_30_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 6,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_31_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_31_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 6,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_32_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 11,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_32_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 8,
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "bfe9c74f072276782b05379f7d3cefda93cf9f18bc1f4bed725271e8d6cecee5",
+      "id": "point3_01_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "f57102f470b0123ae3f136968fbf8b10f5154585196e25dc4cdd7f1c2daa1b06",
+      "id": "point3_01_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "aeb18e0655a31315a280b40027d0397ca92424ea09a40321283ad946a8dae63b",
+      "id": "point3_02_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "0183278b0b9bd8c398d87ca760d34cb88c9c3fc84b54bc11851e06adfa969fc2",
+      "id": "point3_02_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "f2ea34ee40bf75ee5afa1bc2a94fea809b14eefae59613d8fbd7e59672db3d09",
+      "id": "point3_03_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "5f48c15ad061cc9cb5db0c04fae7111c8cd1ec99a8c2b152d5099f05086915a7",
+      "id": "point3_03_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "49d1d52bf94839e017edb37b1f4e8f5fc1e9facb8452a40ca55c0b37b776cb90",
+      "id": "point3_04_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "14ce416bd3df4f052a52a1b83ec4e58cb18d27be3c03ac5cd7d9d4087c714164",
+      "id": "point3_04_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "9fa08da215272343f27ab0a6ecbe9f7f901a14f0cb566e20ae4351393ba3c436",
+      "id": "point3_05_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "854d99d9fa69d309d90ed99263915b7e109b95276ddfd1abd4db88faa1f61f91",
+      "id": "point3_05_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "14ec2d8dccb0d0548bc7fcd56e877be664e604b69d075d7891078501e2a06275",
+      "id": "point3_06_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "ae3d031f71440890ef9822f836b27514d7fef461618174166dd4f6804c589197",
+      "id": "point3_06_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "6c7b3ddca0d7a1a56506ad6d8829187bf0a70270b9dcb85cd1a2400afe5bbd27",
+      "id": "point3_07_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "a82e0b540d3b20a614abbf8f12ad10510e7c6da3717a2e933555531fa8d539fb",
+      "id": "point3_07_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "e6e38c28b401af032cbbbc28ac66e0da5ec50aa359dddf4d2efc75dc153a7447",
+      "id": "point3_08_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "d5897845837484ea83aca4d7923300d7fa42bbf0248272da6ffc3692c15bfb11",
+      "id": "point3_08_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "9cb2d718f61962fe71bd0ac886c3ef84906461f5506e646a195cd22484ec2e20",
+      "id": "point3_09_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "ba6674fbf684f279386fa3fb197bfb33a26ce0f0663a8f6efb99e77f13541f18",
+      "id": "point3_09_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "362fc59f0d744a25f86f1245bf3f62dae5d9920cd11ba8424cf07e4c3bafa98a",
+      "id": "point3_10_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "ee61b82d9a3570733b5cfc3c8f06ead9687653b1034157ca24d3c17b4cb6c2bd",
+      "id": "point3_10_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "1db37323cd6e9ea317940ddd74e822bafd759585f18fc15d0a624bf973ff2838",
+      "id": "point3_11_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "6e16fb9ed242716bed9a4cf7159a5214d90ad8cf013cdb9ac8f7ede04ec2572a",
+      "id": "point3_11_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "aca034118fa5c6a4a6711a1a23266abc1842837c8ad71d9f707a263ef1575cc0",
+      "id": "point3_12_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "ca633950094ac0ed2f2099c527726462eac5c763ad4900e7aa166a89e6d2461b",
+      "id": "point3_12_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "2eb93330ac7ddd77f7b14bc3d66fc38155c95173c93a68ae2bd8707f993caff2",
+      "id": "point3_13_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "0f319729b3c3f013f977e932d01b3b3ff3e70c9ef5d7b80cf77dcc082b130891",
+      "id": "point3_13_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "f6952dc5a5b3ebae81a0bc6ad57e5b8c921231dbe619f125f09aaa2ead54a9fe",
+      "id": "point3_14_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "7cddbb025b0b22be2c276ff2e8575de55166fcb8cb498e37ec6533c543b83d7a",
+      "id": "point3_14_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "4580bfd7de935b3bed587d77858e1445984bc5c04fc2c8755a53c59f0c039106",
+      "id": "point3_15_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "7df474024bbdfb514f594a27916375c7975570703a27b5945f77f6b9ced38465",
+      "id": "point3_15_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "95ca55fa7d238bdbb534ff568ab031636acc0711c93663cf7ebf1f7c5b24210b",
+      "id": "point3_16_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "0bff93b38b371d1fd5fcef27a054ee3a6d8ee356428f8e5df7a4beda7dd9fd9e",
+      "id": "point3_16_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "3188f5db2a03cf4593ec44d0953ccfac19424e761a388597f89a95331f25fb52",
+      "id": "point3_17_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "61ee8e47ae6d8996a218e569921de5f7079aaac322dde6ebd73465ec97fc186b",
+      "id": "point3_17_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "bc735f8f8b710f3ed82ef169648fcdab570af0cdc8ca88c7e49111d5f9f5642a",
+      "id": "point3_18_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "6c488ef271bdefcbb59dcfa3ba59c75150ae5731aff90c3a798670413f36c1c7",
+      "id": "point3_18_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "d008bdfc975c47e162d4da275596218aa8fb56c46cdd2f43681b7ef3c46eba8e",
+      "id": "point3_19_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "285660d96e7e72868618d6f4bd0ccb5798253c710c6b9dd6714c7331ad2c1bf1",
+      "id": "point3_19_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "421409621fec358755893d4c9ad7148298e046adccb9c30c21e2cae1a4cc07af",
+      "id": "point3_20_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "51fa7f2f0e9a72264db083fc2f34d62ccff77a72d7a9b3bf18720ce16db309dd",
+      "id": "point3_20_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "e9d3f506d634efd378274cf5a91aa91758114ce3870e6c2bda557d787164064f",
+      "id": "point3_21_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "d1519b5037408d9ac64f046f9263d3aa1e9622dc19d37ebc7a69639a1809b0a3",
+      "id": "point3_21_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "882d2f012a31348fca69d07ea6299314e76bb828fac972af3c2361e9e27203bb",
+      "id": "point3_22_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "93efb4b44d825d25978223a2e9794bb44c7ffa9064a873d9e79cc7d83b8edf7b",
+      "id": "point3_22_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "4d1e75dbd82d75feaf4527736ac2cd51d5ef81ef2bcfaa98387ab2de6f1147e0",
+      "id": "point3_23_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "bdc072f1f78cbe9d21726200b76bef3df93be0f806e917e25616ab6e6a74d951",
+      "id": "point3_23_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "c1056c44cc61dc8d23f542583c28f561b8dd0515b19bfe1273590af7676e563d",
+      "id": "point3_24_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "9961227d329864a27c6843102a2bf9b6f031b9d60a4e07ecab8525c9098de252",
+      "id": "point3_24_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "8fc1418ddb7bf121fafb82b9a4c2dda162225c96d3bde7bbb017f048f217719f",
+      "id": "point3_25_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "ce504f85dafe245447e23e1f65497d394464ef9334c0d71060348a6e6753f039",
+      "id": "point3_25_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "c43dbfca8d2a5859b4c4241f0d6cdea2e70232cfef1b4733648404c7a07322f3",
+      "id": "point3_26_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "d940d65b341f6e3cbc8075f49da724a8368139eb5f042bed246a776a94d15758",
+      "id": "point3_26_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "afd8de9a5aae3656d574b7d1d59765ada5c34f136b0b71d26b0ce75cfa3b2a01",
+      "id": "point3_27_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "95c5abe686128ea1cb81d3bebad8e70741f92dfb347296488050ae2db6631402",
+      "id": "point3_27_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "9345fca292a7155dd719006a908000781856e571f1a5d4704c1d96c6c34dcd9c",
+      "id": "point3_28_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "4edfb1572a42cf2f1696c95c4bf5126fdfec8da180b156944bf1b116cee814a7",
+      "id": "point3_28_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "ac931ad4f08eeb149164b691131e1dbf06c4d2bf117e5528c1d1bd1b33a5726f",
+      "id": "point3_29_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "5d973de52e83dc2262925fc923be1ce55f0ced25165a7a1dbf6e7cf602f17c6c",
+      "id": "point3_29_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "0257497c0a3729919de965460fb67b516757941331e7abd91021cb63dcecbc4f",
+      "id": "point3_30_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "2343a7cbb03bc6649d7543b2ee7dc5751a96ef1163fa3b98e68edbdc0cca36a9",
+      "id": "point3_30_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "6dfca7c0163a269066cf038528e3c2dd042013b0dbe2da3927d2347fd0313975",
+      "id": "point3_31_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "1f27739a7547ca039f6e357084f7bab093bd44a33953d4e78221fde1b7e2e424",
+      "id": "point3_31_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "1ab22003becf457074a9f185ed0f81e735cd3aedc73d907a430eb450458fa136",
+      "id": "point3_32_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "3ef38310f27299e02f118d5d568bb6e2320d38b7e8e3bb129c9ee17a7c97850d",
+      "id": "point3_32_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    }
+  ],
+  "completeResultCount": 64,
+  "missingOrFailedSelectedCases": [],
+  "scope": "E8-inclusive selected 3+1D four-data model, with the CI sector as computed",
+  "selectedCases": [
+    "point3_01_spin_half",
+    "point3_01_spinless",
+    "point3_02_spin_half",
+    "point3_02_spinless",
+    "point3_03_spin_half",
+    "point3_03_spinless",
+    "point3_04_spin_half",
+    "point3_04_spinless",
+    "point3_05_spin_half",
+    "point3_05_spinless",
+    "point3_06_spin_half",
+    "point3_06_spinless",
+    "point3_07_spin_half",
+    "point3_07_spinless",
+    "point3_08_spin_half",
+    "point3_08_spinless",
+    "point3_09_spin_half",
+    "point3_09_spinless",
+    "point3_10_spin_half",
+    "point3_10_spinless",
+    "point3_11_spin_half",
+    "point3_11_spinless",
+    "point3_12_spin_half",
+    "point3_12_spinless",
+    "point3_13_spin_half",
+    "point3_13_spinless",
+    "point3_14_spin_half",
+    "point3_14_spinless",
+    "point3_15_spin_half",
+    "point3_15_spinless",
+    "point3_16_spin_half",
+    "point3_16_spinless",
+    "point3_17_spin_half",
+    "point3_17_spinless",
+    "point3_18_spin_half",
+    "point3_18_spinless",
+    "point3_19_spin_half",
+    "point3_19_spinless",
+    "point3_20_spin_half",
+    "point3_20_spinless",
+    "point3_21_spin_half",
+    "point3_21_spinless",
+    "point3_22_spin_half",
+    "point3_22_spinless",
+    "point3_23_spin_half",
+    "point3_23_spinless",
+    "point3_24_spin_half",
+    "point3_24_spinless",
+    "point3_25_spin_half",
+    "point3_25_spinless",
+    "point3_26_spin_half",
+    "point3_26_spinless",
+    "point3_27_spin_half",
+    "point3_27_spinless",
+    "point3_28_spin_half",
+    "point3_28_spinless",
+    "point3_29_spin_half",
+    "point3_29_spinless",
+    "point3_30_spin_half",
+    "point3_30_spinless",
+    "point3_31_spin_half",
+    "point3_31_spinless",
+    "point3_32_spin_half",
+    "point3_32_spinless"
+  ]
+}
