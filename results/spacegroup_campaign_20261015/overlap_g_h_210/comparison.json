@@ -1,0 +1,318 @@
+{
+  "canonicalScientificObjectSHA256": "6e498e9eb09d79dcc68052127b7c6d5c1f2a38c2dc977cf34a93ce4745cc22d9",
+  "case": "spacegroup_210_spinless",
+  "checkedUTC": "2026-10-15T15:40:20.479321+00:00",
+  "checks": {
+    "G": {
+      "allSourceFileHashesMatchCommit": true,
+      "completeWitnessListsPresent": true,
+      "exactInputBytesMatchCatalogue": true,
+      "formulaRuntime": {
+        "fallbackPolicy": "exact Python integer DAG or original U1 formula according to request eligibility",
+        "libraryPath": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/insulator/_compiled/u1_dag_vm.so",
+        "libraryPresent": true,
+        "librarySHA256": "0c026ca103e9ba8b674c006d6042ca23bfe526ca62b4e96b3c1b79c4d318dec2",
+        "requestedMode": "auto"
+      },
+      "gaugeWitnessCount": 4,
+      "generatorCount": 4,
+      "independentFiltrationSmithGroups": {
+        "charge": {
+          "freeRank": 1,
+          "torsion": [
+            2
+          ]
+        },
+        "phase": {
+          "freeRank": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "sheet": {
+          "freeRank": 0,
+          "torsion": []
+        }
+      },
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 2,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 2,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          4
+        ]
+      },
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "nativeEqualsResultClassification": true,
+      "ordinaryComplete": true,
+      "rootWitnessCount": 7,
+      "sourceCommit": "c07c6e5d4a69d79c9c2aeb0739ae1e189029f824",
+      "sourceFileCount": 57,
+      "sourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc"
+    },
+    "H": {
+      "allSourceFileHashesMatchCommit": true,
+      "completeWitnessListsPresent": true,
+      "exactInputBytesMatchCatalogue": true,
+      "formulaRuntime": {
+        "fallbackPolicy": "exact Python integer DAG or original U1 formula according to request eligibility",
+        "libraryPath": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/insulator/_compiled/u1_dag_vm.so",
+        "libraryPresent": true,
+        "librarySHA256": "0c026ca103e9ba8b674c006d6042ca23bfe526ca62b4e96b3c1b79c4d318dec2",
+        "requestedMode": "auto"
+      },
+      "gaugeWitnessCount": 4,
+      "generatorCount": 4,
+      "independentFiltrationSmithGroups": {
+        "charge": {
+          "freeRank": 1,
+          "torsion": [
+            2
+          ]
+        },
+        "phase": {
+          "freeRank": 0,
+          "torsion": [
+            2
+          ]
+        },
+        "sheet": {
+          "freeRank": 0,
+          "torsion": []
+        }
+      },
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 2,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 2,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          4
+        ]
+      },
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "nativeEqualsResultClassification": true,
+      "ordinaryComplete": true,
+      "rootWitnessCount": 7,
+      "sourceCommit": "ea44c1f55314ddd66587cf452bbaae9331f3a1db",
+      "sourceFileCount": 60,
+      "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b"
+    }
+  },
+  "comparisonScriptSHA256": "3e4e3b14faf3adc374bb2c285677390d0927373efbd68d1302e0fe2e169e5a45",
+  "elapsedTimingCaveat": "Different nodes, paired/standalone scheduling, memory caps and old-G NFS-derived per-case timings preclude a controlled speedup claim.",
+  "entireNativeObjectEquality": false,
+  "executionMetadataDifferences": {
+    "formulaCacheStats": {
+      "G": {
+        "entryLimitPerCache": 8192,
+        "geometryEntries": 3492,
+        "geometryFlushes": 175,
+        "geometryHits": 0,
+        "requestEntries": 305,
+        "requestFlushes": 28,
+        "requestHits": 1207411
+      },
+      "H": {
+        "entryLimitPerCache": 8192,
+        "geometryEntries": 6976,
+        "geometryFlushes": 62,
+        "geometryHits": 0,
+        "requestEntries": 3160,
+        "requestFlushes": 5,
+        "requestHits": 470760
+      }
+    },
+    "formulaWorkerCalls": {
+      "G": 229681,
+      "H": 44120
+    },
+    "pairedGeometryReuse": {
+      "G": true,
+      "H": false
+    },
+    "resolutionBuildTimings": {
+      "G": {
+        "RL_ms": 1,
+        "RP_ms": 490,
+        "extension_ms": 11220,
+        "holonomy_ms": 47,
+        "section_ms": 16
+      },
+      "H": {
+        "RL_ms": 0,
+        "RP_ms": 291,
+        "extension_ms": 6227,
+        "holonomy_ms": 25,
+        "section_ms": 9
+      }
+    }
+  },
+  "group": {
+    "freeRank": 1,
+    "torsion": [
+      4
+    ]
+  },
+  "inputByteEquality": true,
+  "runMetadataDifferences": {
+    "batchCaseIDs": {
+      "G": [
+        "spacegroup_210_spin_half",
+        "spacegroup_210_spinless"
+      ],
+      "GPresent": true,
+      "H": null,
+      "HPresent": false
+    },
+    "batchElapsedSeconds": {
+      "G": 5148.979,
+      "GPresent": true,
+      "H": null,
+      "HPresent": false
+    },
+    "batchExitCode": {
+      "G": 0,
+      "GPresent": true,
+      "H": null,
+      "HPresent": false
+    },
+    "batchTimeoutSeconds": {
+      "G": 28800,
+      "GPresent": true,
+      "H": null,
+      "HPresent": false
+    },
+    "command": {
+      "G": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "8g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03/spacegroup_210_spin_half/driver.g"
+      ],
+      "GPresent": true,
+      "H": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02/spacegroup_210_spinless/driver.g"
+      ],
+      "HPresent": true
+    },
+    "elapsedSeconds": {
+      "G": 2361.523,
+      "GPresent": true,
+      "H": 844.399,
+      "HPresent": true
+    },
+    "host": {
+      "G": "n03.local",
+      "GPresent": true,
+      "H": "n02.local",
+      "HPresent": true
+    },
+    "pairedSpins": {
+      "G": true,
+      "GPresent": true,
+      "H": null,
+      "HPresent": false
+    },
+    "reusePolicy": {
+      "G": "same group/resolution/bar and identical character linear algebra; independent omega/source contexts",
+      "GPresent": true,
+      "H": null,
+      "HPresent": false
+    },
+    "sourceSHA256": {
+      "G": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+      "GPresent": true,
+      "H": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+      "HPresent": true
+    },
+    "startedUTC": {
+      "G": "2026-10-15T14:43:44.738879+00:00",
+      "GPresent": true,
+      "H": "2026-10-15T15:17:57.073019+00:00",
+      "HPresent": true
+    },
+    "timeoutEnforcement": {
+      "G": "shared batch budget; individual cases are not killed separately",
+      "GPresent": true,
+      "H": null,
+      "HPresent": false
+    },
+    "vacuumReductionRequested": {
+      "G": null,
+      "GPresent": false,
+      "H": "canonical",
+      "HPresent": true
+    }
+  },
+  "scientificFieldCount": 34,
+  "scientificFields": [
+    "chargeKernelLattice",
+    "chargeObstructionMap",
+    "chargeObstructionTargetOrders",
+    "chargeOrders",
+    "chargePrimaryStats",
+    "coefficientActions",
+    "filtrationPresentations",
+    "finalChargeFreeRank",
+    "finalChargeOrders",
+    "finalPhaseFreeRank",
+    "finalPhaseOrders",
+    "finalSheetFreeRank",
+    "finalSheetOrders",
+    "freeRank",
+    "gaugeReductionWitnesses",
+    "generators",
+    "inputValidation",
+    "nativeChainIdentitiesVerified",
+    "nativeCompletionChecks",
+    "neutralE8AbsentByCohomology",
+    "obstructedSheets",
+    "phaseOrders",
+    "presentation",
+    "presentationGeneratorCount",
+    "resolutionDimensions",
+    "scope",
+    "sheetOrders",
+    "spaceGroupFilling",
+    "spaceGroupSheetLattice",
+    "spatialDimension",
+    "theory",
+    "torsion",
+    "uniformIQHIncluded",
+    "witnesses"
+  ],
+  "scientificFieldsLiterallyEqual": true,
+  "scope": "Exact input and all scientific-field equality; independent presentation/filling/filtration checks; saved completed-state/chain/root/gauge certificates retained. No cochain recomputation or new physical-certification claim.",
+  "status": "PASS",
+  "validatorSourceSHA256": {
+    "insulator/e8_h1.py": "d39bbe2565e933c65641b6ad5886faf81f175f094643c82fb4cdb1a994c8d272",
+    "insulator/e8_pointgroup.py": "106d816f05f7eaf336a911d790b7aee0c5892b91e3368929eea8554e0862d4f8",
+    "scripts/collect_expansion.py": "1fd8a1e1c62b5c962d4dc2d3202b6d1b7aa1df688219078aee71e4a01bcfc518",
+    "scripts/recover_paired_campaign.py": "d522d83e00f0cf1f9583cf843d6a3c3545d44443b45a9814290a24243aa45fa7"
+  }
+}

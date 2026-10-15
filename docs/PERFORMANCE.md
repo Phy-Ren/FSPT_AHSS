@@ -126,6 +126,14 @@ preserves the complete before/after records and signed pointwise controls for
 its 1.85-fold observed improvement. Neither experiment establishes a universal
 campaign speed factor.
 
+An actual [SG210 spinless G/H overlap](../results/spacegroup_campaign_20261015/overlap_g_h_210/README.md)
+preserves 34 literally identical scientific fields, including complete roots,
+native phases, gauges, presentations and primitive filling. The paired G and
+standalone H native classifications differ only in four execution fields. Their different
+nodes, scheduling, memory limits and older G timing method prevent a controlled
+speedup claim; the archived verifier checks the exact equality and independent
+Smith/filling calculations.
+
 New paired runs measure elapsed time from monotonic observations of exact
 completion markers. Older paired records that derived elapsed time from NFS
 file timestamps retain their original values, including negative values;

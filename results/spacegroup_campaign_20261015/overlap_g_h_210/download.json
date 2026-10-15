@@ -1,0 +1,97 @@
+{
+  "capturedUTC": "2026-10-15T15:37:22.724900+00:00",
+  "command": [
+    "ssh",
+    "-o",
+    "BatchMode=yes",
+    "cuhk-cluster3",
+    "bash -s"
+  ],
+  "endedUTC": "2026-10-15T15:37:26.295393+00:00",
+  "exitCode": 0,
+  "files": {
+    "sgfull-20261015-g-n03/formula_runtime.json": {
+      "sha256": "8436116ce2bbe464c4a68285b51e9bfc573b6ca1411cd2526623101aa39ede97",
+      "size": 363
+    },
+    "sgfull-20261015-g-n03/selection.json": {
+      "sha256": "b960d1ea88d9a05c78d73050d420de23ecbd2a2baf84126fa0e75a12a1dda81a",
+      "size": 1756
+    },
+    "sgfull-20261015-g-n03/source.json": {
+      "sha256": "951824a662e82c8fb3c7c8fa2fc1622b7fba556773f8648ef2e9c15d1e4ffb3d",
+      "size": 5839
+    },
+    "sgfull-20261015-g-n03/spacegroup_210_spinless/driver.g": {
+      "sha256": "df520d33706e12113dff42cc8b42810cc26d8b38d7e5d20d72f652f4c30b60c4",
+      "size": 18377
+    },
+    "sgfull-20261015-g-n03/spacegroup_210_spinless/input.json": {
+      "sha256": "d8bc748cc0cb076ac2257ff6448506ca37a52c61c9d0e0d6ad4846055b09c4b6",
+      "size": 31477
+    },
+    "sgfull-20261015-g-n03/spacegroup_210_spinless/native.json": {
+      "sha256": "23152bc76dff165ebf4282a52f69c514cb1ec9702014214a040f070769396f04",
+      "size": 7692
+    },
+    "sgfull-20261015-g-n03/spacegroup_210_spinless/result.json": {
+      "sha256": "84ae4090afcecd6d3774f79ae7e99139ac4171f8bf095db90068d85748bb6284",
+      "size": 63395
+    },
+    "sgfull-20261015-g-n03/spacegroup_210_spinless/run.json": {
+      "sha256": "faf9e3042da1daaf7568af71e256cae6a399e57395cc85811c54baabf2aef69f",
+      "size": 1211
+    },
+    "sgfull-20261015-g-n03/spacegroup_210_spinless/stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "sgfull-20261015-g-n03/spacegroup_210_spinless/stdout.log": {
+      "sha256": "b10f8740cc7bbbd0a320ddb9d561821e8fb0f366baaad9866f9ab83271d0c31f",
+      "size": 623
+    },
+    "sgfull-20261015-h-remaining-n02/formula_runtime.json": {
+      "sha256": "8a22156ff7a656372327e521f6c366321cfe6642c80ec01b035605b2d7fab9a7",
+      "size": 363
+    },
+    "sgfull-20261015-h-remaining-n02/selection.json": {
+      "sha256": "c9cf92cfcc26c2153a06c8ec7a58ba5ded6c762505c382fecfaa0b19fb18bcd0",
+      "size": 360
+    },
+    "sgfull-20261015-h-remaining-n02/source.json": {
+      "sha256": "843704ea6cdf854e6df4c924e406116e53442ed5161ce326e62274ace90566b4",
+      "size": 6155
+    },
+    "sgfull-20261015-h-remaining-n02/spacegroup_210_spinless/driver.g": {
+      "sha256": "5d918661377c3b6bd9221f91648026bc33ea2dc6bbc0bfdd99e4142fabe7ff27",
+      "size": 9463
+    },
+    "sgfull-20261015-h-remaining-n02/spacegroup_210_spinless/input.json": {
+      "sha256": "d8bc748cc0cb076ac2257ff6448506ca37a52c61c9d0e0d6ad4846055b09c4b6",
+      "size": 31477
+    },
+    "sgfull-20261015-h-remaining-n02/spacegroup_210_spinless/native.json": {
+      "sha256": "1945d5696ee7dc9eda25341367b945c9491bb1eeeb4fe332d48ca8c653efed8e",
+      "size": 7688
+    },
+    "sgfull-20261015-h-remaining-n02/spacegroup_210_spinless/result.json": {
+      "sha256": "738de39d74a6b2041121b2d01edfc1cc60b9256127a9008a8213191ea35c02ba",
+      "size": 63015
+    },
+    "sgfull-20261015-h-remaining-n02/spacegroup_210_spinless/run.json": {
+      "sha256": "226c165698eddcf5f35df84c05236b989edcb9a06ca240146f78250a1e19d0d7",
+      "size": 853
+    },
+    "sgfull-20261015-h-remaining-n02/spacegroup_210_spinless/stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "sgfull-20261015-h-remaining-n02/spacegroup_210_spinless/stdout.log": {
+      "sha256": "a9dfd9c23d5f7565fca6cc20434cc2b639a1f11fa5cf2ec419164c8742429a23",
+      "size": 536
+    }
+  },
+  "remoteBase": "/home/user/xyren/AllFSPT_insulator/runs",
+  "startedUTC": "2026-10-15T15:37:22.149632+00:00",
+  "unchangedDuringRead": true
+}
