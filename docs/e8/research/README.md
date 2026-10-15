@@ -13,6 +13,8 @@ one internal-link adaptation are recorded in `review_import.json`.
 
 ## 3+1D
 
+- [Affine pre-production review](campaign_20261015/affine_preproduction_review.md): integral obstruction kernels, primitive filling and verified full-affine inputs.
+- [Interacting space-group reference scope](campaign_20261015/spacegroup_interacting_reference_search.md): conditional P1 derivation, single-glide controls and filling-only literature.
 - [Infinite translation, mirror, glide, screw, and magnetic examples](general_groups/examples_3p1.md).
 - [Interacting mirror calibration](physical/mirror_3p1.md).
 
