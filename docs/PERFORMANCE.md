@@ -101,7 +101,9 @@ obstructions, independent coefficient signs and general rational fallback.
 The period tests include torsion orders 2, 3, 4, 6, 8 and 9. Formula tests
 include negative carries, huge integers, native overflow, invalid inputs and
 context isolation. The integrated engine, canonical zero reduction, runner
-timing and recovery tooling passed all 116 tests in 68.609 seconds.
+timing, recovery and explicit collection-selection tooling passed all 122
+tests in 69.325 seconds. The [recorded invocation and source hashes](../results/spacegroup_campaign_20261015/deployment_h/README.md)
+distinguish this complete run from the earlier 116-test summary.
 The half-source addition has focused tests covering 98,304 nonabelian source
 values, signed transfers, complete primitive values, quarter-valued primitives,
 and literal-zero identity. A complete rerun of all 64 spatial point-group backgrounds
