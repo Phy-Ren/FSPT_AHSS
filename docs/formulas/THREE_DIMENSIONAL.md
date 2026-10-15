@@ -112,6 +112,59 @@ Integral background lift changes use
 use `omega_R -> omega_R+d_(rho+s)alpha_1` with charge unchanged. The phase
 is the same source-cylinder evaluation, and E8 is unchanged.
 
+## Why the global calculation can be factored
+
+The supplied E8 supplement fixes these **3+1D tensor coordinates** in
+Section 3, “Operative three-dimensional fields and equations”
+(`note.tex:151–164`; source and product labels `eq:3d-source` and
+`eq:3d-product`). Its additional neutral source, neutral and mixed
+twisters, and neutral gauge phase are zero **as cochains in these
+coordinates**, rather than terms discarded after a cohomology test.
+The archive is `E8_AHSS_v0_9_complete.zip`, SHA256
+`da3ad9368390e8d075f27e0039e8486f14890fefb3ccbf0aea4d85a5ba0685cd`;
+see [the retained provenance](../../formulas/e8_provenance.json).
+
+Let `C_CI` denote the completed CI states modulo their full joint gauges,
+phase coboundaries and incoming identifications. The equations above give
+an explicit isomorphism of stacking groups:
+
+```math
+\begin{aligned}
+\Phi:\mathcal C_{\mathrm{four\ data}}^{3+1}
+&\longrightarrow H^1(G,\mathbb Z_s)\oplus\mathcal C_{\rm CI},\\
+[e_1,n_1,n_3,\nu_4]&\longmapsto
+([e_1],[n_1,n_3,\nu_4]).
+\end{aligned}
+```
+
+To prove it, choose an integer cocycle representing `[e_1]` and a completed
+CI representative. Their four-tuple satisfies every displayed equation,
+which defines the inverse map. Changing the neutral representative by
+`d_s v_0` leaves all CI fields and the phase unchanged; changing the CI
+representative uses the same full CI gauge with `v_0=0`. Thus the inverse
+is independent of both choices. Conversely, projecting any joint gauge
+gives a principal neutral gauge and an allowed CI gauge. Thus `Phi` is
+well-defined, and the two maps are mutually inverse.
+Stacking adds the neutral cocycles and applies exactly the CI product to
+the other three fields, proving that the maps preserve the group law.
+There is only **one** phase coordinate: it is already part of `C_CI`.
+
+This proof also includes the incoming relations. A closed neutral gauge
+has `d_s v_0=0` and no charge or phase action, even on a nonzero CI state.
+Closed CI sheet and charge gauges retain their complete existing actions,
+independently of `e_1`. A neutral root-power relation therefore introduces
+no CI correction. If `P_E8` presents the integral cocycle lattice modulo
+principal gauges and `P_CI` is the full computed CI relation matrix, the
+four-data relation matrix is `diag(P_E8,P_CI)`.
+
+Consequently `extend_e8_3p1.py` computes the same group as a simultaneous
+solver of these equations: it computes the actual signed integer `H1`,
+retains its gauge witnesses, combines the presentations and takes Smith
+form. This factorization is an exact theorem of the supplied model, not
+an independent derivation of its physical coordinate convention. In
+4+1D the neutral cubic source and sheet-removal phase are nonzero; this
+argument does not apply there (see [4+1D](FOUR_DIMENSIONAL.md)).
+
 ## Neutral section, infinite groups, and remaining comparison
 
 For ordinary three-dimensional space groups with their orientation
