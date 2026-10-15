@@ -1,0 +1,23 @@
+{"archive": "/home/xingyu/AllFSPT_reviews/g_preservation_prepared_20261015/pipeline-local-v8jhl29q/runs/sgfull-20261015-g-n02-preserved-c26f3de-evidence.tar.gz", "archiveSHA256": "380cea8ac58e4e24a47b2a56d33d8888a8c994041a2eb029b7d7737d89bfafb7", "completion": "/home/xingyu/AllFSPT_reviews/g_preservation_prepared_20261015/pipeline-local-v8jhl29q/runs/sgfull-20261015-g-n02-preserved-c26f3de-completion.json", "preservedCount": 1, "requiredCount": 1}
+{"archiveSHA256": "380cea8ac58e4e24a47b2a56d33d8888a8c994041a2eb029b7d7737d89bfafb7", "completionSHA256": "3091d0e4e8ee410e7201a01f69f252fb555b33a0667eec7fffa64c70fdff5409", "frozenCollectorExactReplay": true, "helperCommit": "c26f3dea716a6f5b2552c9b340b918d44f6151cd", "helperTreeSHA256": "2b5fec1dcaf50b2e44184ad0bf421ce50f1a0aa1bd5b36c2e95800b9fcc107ad", "originalExtractedFilesUnchanged": true, "preservedCount": 1, "requiredCases": ["spacegroup_019_spin_half"], "signalsSent": false, "verifiedUTC": "2026-10-15T16:52:45.848254+00:00"}
+{
+  "status": "PASS",
+  "candidateSHA256": "70cc4c24c29a348b51b37bba0322e223cc29d234d89fd80030358dc76cea7c57",
+  "syntheticFixtureOnly": true,
+  "noClusterContact": true,
+  "noClassification": true,
+  "noSignals": true,
+  "originalRawBytesUnchanged": true,
+  "originalSelectionCount": 3,
+  "preservedCount": 1,
+  "requiredCount": 1,
+  "retryCount": 2,
+  "fullParentCI_E8Validated": true,
+  "frozenCollectorExactReplay": true,
+  "rejections": [
+    "existing-output-rejected",
+    "corrupt-download-rejected-before-extraction",
+    "wrong-required-subset-rejected-before-extraction"
+  ],
+  "workdir": "/home/xingyu/AllFSPT_reviews/g_preservation_prepared_20261015/pipeline-local-v8jhl29q"
+}

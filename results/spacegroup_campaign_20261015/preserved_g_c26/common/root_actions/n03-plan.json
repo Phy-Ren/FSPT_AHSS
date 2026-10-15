@@ -1,0 +1,428 @@
+{
+  "acceptedH24": [
+    "spacegroup_133_spinless",
+    "spacegroup_134_spinless",
+    "spacegroup_140_spin_half",
+    "spacegroup_140_spinless",
+    "spacegroup_142_spin_half",
+    "spacegroup_142_spinless",
+    "spacegroup_201_spinless",
+    "spacegroup_203_spinless",
+    "spacegroup_206_spin_half",
+    "spacegroup_206_spinless",
+    "spacegroup_210_spinless",
+    "spacegroup_218_spinless",
+    "spacegroup_219_spin_half",
+    "spacegroup_219_spinless",
+    "spacegroup_220_spin_half",
+    "spacegroup_220_spinless",
+    "spacegroup_223_spin_half",
+    "spacegroup_223_spinless",
+    "spacegroup_224_spin_half",
+    "spacegroup_224_spinless",
+    "spacegroup_227_spin_half",
+    "spacegroup_227_spinless",
+    "spacegroup_228_spin_half",
+    "spacegroup_228_spinless"
+  ],
+  "expectedRunner": {
+    "argv": [
+      "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+      "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/classify.py",
+      "--output",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03",
+      "--gap",
+      "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+      "--jobs",
+      "48",
+      "--memory",
+      "8g",
+      "--timeout",
+      "14400",
+      "--pair-spins",
+      "--largest-first",
+      "--charge-primary",
+      "native",
+      "--phase-class",
+      "cycles",
+      "--closed-charge-source",
+      "certified",
+      "--case",
+      "spacegroup_224_spin_half",
+      "--case",
+      "spacegroup_224_spinless",
+      "--case",
+      "spacegroup_227_spin_half",
+      "--case",
+      "spacegroup_227_spinless",
+      "--case",
+      "spacegroup_230_spin_half",
+      "--case",
+      "spacegroup_230_spinless",
+      "--case",
+      "spacegroup_225_spinless",
+      "--case",
+      "spacegroup_203_spin_half",
+      "--case",
+      "spacegroup_203_spinless",
+      "--case",
+      "spacegroup_210_spin_half",
+      "--case",
+      "spacegroup_210_spinless",
+      "--case",
+      "spacegroup_219_spin_half",
+      "--case",
+      "spacegroup_219_spinless",
+      "--case",
+      "spacegroup_191_spinless",
+      "--case",
+      "spacegroup_192_spinless",
+      "--case",
+      "spacegroup_194_spinless",
+      "--case",
+      "spacegroup_202_spinless",
+      "--case",
+      "spacegroup_205_spinless",
+      "--case",
+      "spacegroup_216_spinless",
+      "--case",
+      "spacegroup_133_spin_half",
+      "--case",
+      "spacegroup_133_spinless",
+      "--case",
+      "spacegroup_134_spin_half",
+      "--case",
+      "spacegroup_134_spinless",
+      "--case",
+      "spacegroup_142_spin_half",
+      "--case",
+      "spacegroup_142_spinless",
+      "--case",
+      "spacegroup_126_spinless",
+      "--case",
+      "spacegroup_128_spinless",
+      "--case",
+      "spacegroup_130_spinless",
+      "--case",
+      "spacegroup_132_spinless",
+      "--case",
+      "spacegroup_136_spinless",
+      "--case",
+      "spacegroup_139_spinless",
+      "--case",
+      "spacegroup_176_spinless",
+      "--case",
+      "spacegroup_086_spin_half",
+      "--case",
+      "spacegroup_086_spinless",
+      "--case",
+      "spacegroup_120_spin_half",
+      "--case",
+      "spacegroup_120_spinless",
+      "--case",
+      "spacegroup_048_spinless",
+      "--case",
+      "spacegroup_052_spinless",
+      "--case",
+      "spacegroup_060_spinless",
+      "--case",
+      "spacegroup_064_spinless",
+      "--case",
+      "spacegroup_070_spinless",
+      "--case",
+      "spacegroup_072_spinless",
+      "--case",
+      "spacegroup_074_spinless",
+      "--case",
+      "spacegroup_085_spinless",
+      "--case",
+      "spacegroup_100_spinless",
+      "--case",
+      "spacegroup_104_spinless",
+      "--case",
+      "spacegroup_106_spinless",
+      "--case",
+      "spacegroup_108_spinless",
+      "--case",
+      "spacegroup_110_spinless",
+      "--case",
+      "spacegroup_112_spinless",
+      "--case",
+      "spacegroup_114_spinless",
+      "--case",
+      "spacegroup_117_spinless",
+      "--case",
+      "spacegroup_119_spinless",
+      "--case",
+      "spacegroup_169_spin_half",
+      "--case",
+      "spacegroup_169_spinless",
+      "--case",
+      "spacegroup_171_spin_half",
+      "--case",
+      "spacegroup_171_spinless",
+      "--case",
+      "spacegroup_147_spinless",
+      "--case",
+      "spacegroup_157_spinless",
+      "--case",
+      "spacegroup_161_spinless"
+    ],
+    "executablePath": "/home/apps/anaconda3-4.9.2/bin/python3.8",
+    "executableSHA256": "d9b22de7a640ddb6dee6ce00f809048e27b0b5ad4ac664c5ba9c531ae65f8190",
+    "host": "n03.local",
+    "pgid": 38671,
+    "pid": 38671,
+    "ppid": 1,
+    "startTicks": 2689311341,
+    "state": "S",
+    "uid": 5866
+  },
+  "failedTail": [
+    "spacegroup_226_spin_half",
+    "spacegroup_226_spinless",
+    "spacegroup_230_spin_half",
+    "spacegroup_230_spinless"
+  ],
+  "node": "n03",
+  "readinessSHA256": "b3270e1916e91c319d0305f4f99dfd5d2fd12a2fecb22d94f9195cd5b90238e9",
+  "spec": {
+    "requiredCases": [
+      "spacegroup_048_spinless",
+      "spacegroup_052_spinless",
+      "spacegroup_060_spinless",
+      "spacegroup_064_spinless",
+      "spacegroup_070_spinless",
+      "spacegroup_072_spinless",
+      "spacegroup_074_spinless",
+      "spacegroup_085_spinless",
+      "spacegroup_086_spin_half",
+      "spacegroup_086_spinless",
+      "spacegroup_100_spinless",
+      "spacegroup_104_spinless",
+      "spacegroup_106_spinless",
+      "spacegroup_108_spinless",
+      "spacegroup_110_spinless",
+      "spacegroup_112_spinless",
+      "spacegroup_114_spinless",
+      "spacegroup_117_spinless",
+      "spacegroup_119_spinless",
+      "spacegroup_120_spin_half",
+      "spacegroup_120_spinless",
+      "spacegroup_126_spinless",
+      "spacegroup_128_spinless",
+      "spacegroup_130_spinless",
+      "spacegroup_132_spinless",
+      "spacegroup_133_spin_half",
+      "spacegroup_134_spin_half",
+      "spacegroup_136_spinless",
+      "spacegroup_139_spinless",
+      "spacegroup_147_spinless",
+      "spacegroup_157_spinless",
+      "spacegroup_161_spinless",
+      "spacegroup_169_spin_half",
+      "spacegroup_169_spinless",
+      "spacegroup_171_spin_half",
+      "spacegroup_171_spinless",
+      "spacegroup_176_spinless",
+      "spacegroup_191_spinless",
+      "spacegroup_192_spinless",
+      "spacegroup_194_spinless",
+      "spacegroup_202_spinless",
+      "spacegroup_203_spin_half",
+      "spacegroup_205_spinless",
+      "spacegroup_210_spin_half",
+      "spacegroup_216_spinless",
+      "spacegroup_225_spinless"
+    ],
+    "requiredHashes": {
+      "spacegroup_048_spinless": {
+        "inputSHA256": "cff4f6714e5a25f9e1de2c5dec1f1c51a10a6e2b9490f341f2daf0918fa5715a",
+        "nativeSHA256": "89df8eb54a83a6684ac50a957592c8506da9fc08308917662287fd4c2bd15d61"
+      },
+      "spacegroup_052_spinless": {
+        "inputSHA256": "51d322eedf39d925522d0740130787b54d08c4236e58309354c65d09e5831a38",
+        "nativeSHA256": "d8e88e399be6b378c7dd85c14e340e91ecb420e469d04792629e464bafe4f6ab"
+      },
+      "spacegroup_060_spinless": {
+        "inputSHA256": "d9e9f4eb778d278793941a60f47a02e4d4d81c191089e41ee6a446612d98e1bc",
+        "nativeSHA256": "c8298562f74ac70ade54601aa3d34f56c3a9c1cfb5002447a016e3b284cd5670"
+      },
+      "spacegroup_064_spinless": {
+        "inputSHA256": "e132f099a9cb30235358a79266adfbb193ee08d14892c6512bcf656ec40c37b7",
+        "nativeSHA256": "80e27315a45310ba25470d935707db33985955980bc929cde2e73d796aa2515b"
+      },
+      "spacegroup_070_spinless": {
+        "inputSHA256": "454581d0f60e5e6b140233d1292d2b30f78d5940af293c1f636ebfa4ab4eb89d",
+        "nativeSHA256": "07fa6de73fd581c24b21b0b08d27fbf2ff81fad86d02c15e3919283dfd0c4470"
+      },
+      "spacegroup_072_spinless": {
+        "inputSHA256": "50f291ca821f8b3ec630629f21b9abd945d287539ed8ae93750ab33781a34b34",
+        "nativeSHA256": "bdf508d0afdff269af461edd1f310410b082428d3e24ed6f6a20d9306a8ec9c7"
+      },
+      "spacegroup_074_spinless": {
+        "inputSHA256": "d68d8886b1721996224b78c8f9c84ca07fa59116e32087c2c76df67866daf5d2",
+        "nativeSHA256": "91fd5cc2913264223c6471691592bc63b8dd6df98bbc50623df259a899e6f752"
+      },
+      "spacegroup_085_spinless": {
+        "inputSHA256": "dd46efe5b82f16fc72eb1f3ec8f8d75cc57e77f30890900bfcabbf6c0a18e915",
+        "nativeSHA256": "7f9a89ba20503d2a1ea2850037f414c8f5e5a08f3ff836187c6bbaa25f6d9279"
+      },
+      "spacegroup_086_spin_half": {
+        "inputSHA256": "a22a006c44ae5cdc931937d044e118bb0d0914e2b52dc299a4fcd1d06823ff80",
+        "nativeSHA256": "0e5cc1cf02b6c3046732f86356ed01e0cd556c7ace400b80c77d6ada26672fd6"
+      },
+      "spacegroup_086_spinless": {
+        "inputSHA256": "a8cbca2bc76beb7d1859be45b9e3347b0fa469ca897963270f856878fb3e0f66",
+        "nativeSHA256": "74c98532f5c5d926730c984a64d0d8231c7100ef4c7d2120ecc5f448d2124a3e"
+      },
+      "spacegroup_100_spinless": {
+        "inputSHA256": "3cfb5b0ce2d55d6acb251bf858c5e46039ea368d40fbf729232ca01ec1914c11",
+        "nativeSHA256": "bf32170f3a12c337c2816240fd5e62a0495201bb25c14edeefb00ef36be1dfba"
+      },
+      "spacegroup_104_spinless": {
+        "inputSHA256": "44d218206e0198a5b022f9f166ed26a2df9e38c64c199b840221f57d935132fc",
+        "nativeSHA256": "0387e34ddeeaae7942256a1a4f783489ed141ba67a0b5a41eb9cd18bc96fba0e"
+      },
+      "spacegroup_106_spinless": {
+        "inputSHA256": "9750bd9ebaebe8ad467519dd431857d9fad152bf60b48b44ded5c16f35dc152b",
+        "nativeSHA256": "30d40f2f2156893ebbe67a174cd8ea36c63811b478763ce54f391ac44afb6e84"
+      },
+      "spacegroup_108_spinless": {
+        "inputSHA256": "72bdd2e17719d4a3c244e1e296a13c291eb13be48d4ad074e79ae19083001383",
+        "nativeSHA256": "ff78e55178dd101cd1164fd91b34dc00fcc654d94a9454b97c9ff460b40a449a"
+      },
+      "spacegroup_110_spinless": {
+        "inputSHA256": "2b6197f198225b6ae901dd9078ab9b9d3fb24040ade554c63555b7daa413bb7b",
+        "nativeSHA256": "550a1ce69583e525e673644f65690dc707cfa380d62d93484b26c73e8743be8e"
+      },
+      "spacegroup_112_spinless": {
+        "inputSHA256": "135e9df355b984f7162bb2d291dfc168e64f32ddfcfd175ee4650ddc3023aeaa",
+        "nativeSHA256": "1aee29d50e35d1ec9f6c13b1ae827e34184a05897fb4573ef2b0952ee5353466"
+      },
+      "spacegroup_114_spinless": {
+        "inputSHA256": "417f849478541757115918abcdc3ab805daa34368e8e9bce5d4acdc3d88e87d3",
+        "nativeSHA256": "199170e9f6abe0a066f1f88920018e170d82448f26fc4ab6b5aacec8ac6364e5"
+      },
+      "spacegroup_117_spinless": {
+        "inputSHA256": "acb6a0de04392325e56eedfbe8a36c2f41a8dca5a7816d2020d2de1065d079af",
+        "nativeSHA256": "6bc03d04e15a1b9d1f0a0ebf72a42e8f3396708e69186c42b828e4facb1d7c6b"
+      },
+      "spacegroup_119_spinless": {
+        "inputSHA256": "9f0e7db9dcc9372e578f56243325b8cd59a1cc0ec2893a41722db4267d88a9e3",
+        "nativeSHA256": "eb038ae909264b796b702b1911fdb7a40eb5e510ee19d0c818def306d47accad"
+      },
+      "spacegroup_120_spin_half": {
+        "inputSHA256": "d578f3b104ee87dba0e2a5eb852e3d714c2b28113ce7af688b289601c4f9b22b",
+        "nativeSHA256": "49a891de5f2cba43fddcc65d5e4fdb1d4d8287ccbf5de66ac342dd47c51017fd"
+      },
+      "spacegroup_120_spinless": {
+        "inputSHA256": "14534f0dc8c7a9935d0fef5a7d1857d109a7dbab993d49a3230ccf2237e0e611",
+        "nativeSHA256": "b3f3d98f96359baa85a2fd3ab599c03da772c0bbcbd3aeefa007c0061fb059e7"
+      },
+      "spacegroup_126_spinless": {
+        "inputSHA256": "64609659dbad2ad5075a5d84627063bfc99a3b109f97930f6b6746422abb4879",
+        "nativeSHA256": "8a19db9455de8932fb15a958673fc6b846409cce1a1b8c3b521c6bd6ca5e1ca6"
+      },
+      "spacegroup_128_spinless": {
+        "inputSHA256": "1d3839f6c1d2fcd146055e8acda4f3315f6fd5710ce51c2b256cf1dbbedab898",
+        "nativeSHA256": "ec70067c8307144f5a8ea55ad69af623bc20c6646300e6d1d1ca0d3038a6912f"
+      },
+      "spacegroup_130_spinless": {
+        "inputSHA256": "7cd5e5114ab82df052532069dadb5edb7a7d546710204ebf0971999539049a1f",
+        "nativeSHA256": "bc7dff43f9230e9bb04db8d75c722549cd98ff87575e911501863ece4db83065"
+      },
+      "spacegroup_132_spinless": {
+        "inputSHA256": "b96f1b99ac10f6e0b80c9df206d0ff95786f1bf6476a05507aa563eabf5ef063",
+        "nativeSHA256": "7de30c6c78ccd9a5f9fd9f974e9b5a6b706f2a707066b433cb9092b7f0f93e7c"
+      },
+      "spacegroup_133_spin_half": {
+        "inputSHA256": "a6fc74fe4a521826cf0481b96ad5b2b04a5b1e0ed070ce632e2a2fbf4dbad686",
+        "nativeSHA256": "a1e18316cdeef1e234124b5e445c292fb1eced2904272450d6cd0deaf69576e1"
+      },
+      "spacegroup_134_spin_half": {
+        "inputSHA256": "a736ca4364fb55b0dea37112e5a8590d13a221c0c8c32cbb8af14e6678794629",
+        "nativeSHA256": "95ed48cd176423379c91e03ab7d0ce0f1b1e4f15fcdb514cc849dba8d1eb28ef"
+      },
+      "spacegroup_136_spinless": {
+        "inputSHA256": "087a03eb76b730b22ffcf34f33b45aa2dcc6e6c138df1804b798515dd42e39ff",
+        "nativeSHA256": "944c737f7c2a281b3056002e7ff9ce124a56a839f1a6b663114e0717ca059e3b"
+      },
+      "spacegroup_139_spinless": {
+        "inputSHA256": "d80d6afbbf3ebaf658c1267b2cc3aa4867892dc4103190df11978b9b4ca55d21",
+        "nativeSHA256": "d7dbcab856ed1599a62dd7df30e34de8ab777f50ce9784e6af92bc46679691e7"
+      },
+      "spacegroup_147_spinless": {
+        "inputSHA256": "29f7ed41cf4ef581e487f96c92e885ab8df35c028b91f436b97daf40853a9a87",
+        "nativeSHA256": "3a413b2d60db0c26652324d0b87cad9988ec634810cfa071edafaf7f075bbf23"
+      },
+      "spacegroup_157_spinless": {
+        "inputSHA256": "ac7f0a172f8c7d8eff2b9c8e2412e92ce17673471b90726defc9aa5c05373ee4",
+        "nativeSHA256": "3f1398502cd2c477403f6e5a95931f15565a250aaa510eb1c31d0756325b4905"
+      },
+      "spacegroup_161_spinless": {
+        "inputSHA256": "22befea7df4bd00a23ab5cf63d2213428a8ebb34fe63ce7428fd39df41a3d901",
+        "nativeSHA256": "5c5e7db50882c0e5e3695c9df60e42870948855929455ed8421c4f4489fd9138"
+      },
+      "spacegroup_169_spin_half": {
+        "inputSHA256": "f6e1c33254d1f4d17379cfc878cdd1a470ec83b91fb36dd1c2e20d2734e020ff",
+        "nativeSHA256": "df085a9c52540205e4954e0cece6eb32ca37b300c7991abf5ce6a86da9abb6f0"
+      },
+      "spacegroup_169_spinless": {
+        "inputSHA256": "d8b29400a8376b8c709ca766aa68c2f855cf511808e516bd03ce959f6f6f9f26",
+        "nativeSHA256": "ed47a0efec46ba23a5348908533cbd0d20f9abe85b7aa819046cb084201468b4"
+      },
+      "spacegroup_171_spin_half": {
+        "inputSHA256": "1ade3b602447a416d8bc15f399012e018d07fd0735f85ad5779927061b7b491e",
+        "nativeSHA256": "49121cab9e55c20bbc649f2c7c4e5685febbb9fc499a73f64b7e7e1d1112b39f"
+      },
+      "spacegroup_171_spinless": {
+        "inputSHA256": "4f6696980f277a550716df0be7a40d02f52c20bd74b4da06bf3bd0fabf341e44",
+        "nativeSHA256": "e2bcdf322c256be85062cda02884b5bed653e7b94d569a2224898d60481db1c7"
+      },
+      "spacegroup_176_spinless": {
+        "inputSHA256": "c653561ba7085ba8d22bb8feab3111c7051329a75e3ae3614fca349c76effb27",
+        "nativeSHA256": "7a64bb4d93bf9ce8b8d3974573cfdf3c61f647b12b4fdb829df29ccba8dade6c"
+      },
+      "spacegroup_191_spinless": {
+        "inputSHA256": "beb2e657add2cc9fa5fb21d1d29790866cb4c1c968f5eb7fbbf4004d0398c669",
+        "nativeSHA256": "a28e5cc0374884d2f7eb2fa8d610ebac5cbc4c90a009dd66467e9980aac08c8d"
+      },
+      "spacegroup_192_spinless": {
+        "inputSHA256": "ac15be2cac16454cfd3a2bdde3264689d2617f2a9cfc3a8dab24dfba4160f2f2",
+        "nativeSHA256": "80c9f9cc24909419d4fa281b5338d37431f3c1274de6b5ec24c6aaa21d5e75ae"
+      },
+      "spacegroup_194_spinless": {
+        "inputSHA256": "139b4ac6268b3eda4302300d1fa92d28ea60fbe99a92a6ad6e337943da4f4486",
+        "nativeSHA256": "e532acfe5184d99cb0742d0727bf8425da95f3f6e7efeef6f65dd798a2540819"
+      },
+      "spacegroup_202_spinless": {
+        "inputSHA256": "3372136caeed2a5947603919e41dedcaaaae0c1a8c358f719913634c1fc81254",
+        "nativeSHA256": "ec1162ea4a49ddd18806cc10088e8fb962e9d6c93442f01d9734cbd4417089d3"
+      },
+      "spacegroup_203_spin_half": {
+        "inputSHA256": "7beb4591b21286a77c52c27371e8b42709b2e4da17fb1762c239ab43f10cc3f1",
+        "nativeSHA256": "883c1e41701ef83e6687564b874b7e4c0ca7d9a14a56a2d720e81a2b9f41bdcf"
+      },
+      "spacegroup_205_spinless": {
+        "inputSHA256": "b6378cf1b927122f4505c02a960040be5b14cbb5e8c401b207bc8e785e4439b6",
+        "nativeSHA256": "1f0461452a979f11ada73593ad05aade23003fceea3a0d9f11d1a7a17adf5c98"
+      },
+      "spacegroup_210_spin_half": {
+        "inputSHA256": "7350b291cdb85dc98066cafa12b4f4d3b0e149e9b5d51352d344dd8ca7f9af65",
+        "nativeSHA256": "b6467e329a06fba7f04e80a75888d5aa2937939b862c2cc368d94dc72281c708"
+      },
+      "spacegroup_216_spinless": {
+        "inputSHA256": "5754ca120bb75feca73863cf7fcd0d1fd19912b76af38812abcec4868f7b033f",
+        "nativeSHA256": "604745ee01d0f6540c3b3f2094aab7552738af0b32840fd246d3d9e3f4a9ce82"
+      },
+      "spacegroup_225_spinless": {
+        "inputSHA256": "181251a7ad255d0798c457537a892515966c2cae006b6574b7b547ba6be29c9b",
+        "nativeSHA256": "0e45d9c80cb5d97dada495b7c9119f9ad6b332b553200603b7d9e4f0cfa49032"
+      }
+    },
+    "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03",
+    "selectionSHA256": "b960d1ea88d9a05c78d73050d420de23ecbd2a2baf84126fa0e75a12a1dda81a",
+    "sourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc"
+  }
+}

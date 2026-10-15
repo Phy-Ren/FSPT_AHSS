@@ -1,0 +1,1593 @@
+{
+  "acceptedH24": true,
+  "acceptedHParents": [
+    {
+      "acceptedDownloadEvidence": {
+        "acceptedCollectionSHA256": "7d29ecaae1a1a142420bfde005543e32417c2152b7775eea1f50ebcd8a3b0001",
+        "archiveSHA256": "8e98548743b45eb6168adbdf0dc62c712dfd63b795f8cd3a75d7222d71246e74",
+        "ciSourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+        "downloadProofSHA256": "6d5b07eedbf82d70b044e7ba5f6b63cc1ff03b442b98ffcfedae655d0cb8e2b0",
+        "e8SourceSHA256": "994af05b2ab8cea90002e6c75dd2442736b3f1096bf0ceab98703f6e90dc2214",
+        "finalizationSHA256": "6a6db658168fa424528a861441a0294d374d9c450abe922a29aa93bee159b40c",
+        "formulaVMSHA256": "0c026ca103e9ba8b674c006d6042ca23bfe526ca62b4e96b3c1b79c4d318dec2"
+      },
+      "cases": [
+        "spacegroup_133_spinless",
+        "spacegroup_140_spin_half",
+        "spacegroup_142_spin_half",
+        "spacegroup_201_spinless",
+        "spacegroup_206_spin_half",
+        "spacegroup_210_spinless",
+        "spacegroup_219_spin_half",
+        "spacegroup_220_spin_half",
+        "spacegroup_223_spin_half",
+        "spacegroup_224_spin_half",
+        "spacegroup_227_spin_half",
+        "spacegroup_228_spin_half"
+      ],
+      "ci": {
+        "directory": "/home/xingyu/insulator-campaign-download/sgfull-20261015-h-remaining-n02-finalized/sgfull-20261015-h-remaining-n02",
+        "kind": "ci",
+        "resultHashes": {
+          "spacegroup_133_spinless": "cae648c2d075ddc09d1f78a34408c74a17979cd072ff5707233e805bda5726ee",
+          "spacegroup_140_spin_half": "25e12f5a83b37c5d619779112e1b09e0a95445013b1acdac534dc2cf36a5dccd",
+          "spacegroup_142_spin_half": "3d1452804b7df6bede781f3a41a34dcf0a08b298670fed168e6bb6b984209fdc",
+          "spacegroup_201_spinless": "3b195d1dda8927a236226a2bc868f382eddf963389d3f96726e59fd429b3f292",
+          "spacegroup_206_spin_half": "c0e3d78bcd00c894b116dc35a733d9e09bf3615800a573d66aa1689d6a402122",
+          "spacegroup_210_spinless": "738de39d74a6b2041121b2d01edfc1cc60b9256127a9008a8213191ea35c02ba",
+          "spacegroup_219_spin_half": "0fa2ecc91d218dc034dcfda65adaba464432c90f819d661a292835e5344ac4ff",
+          "spacegroup_220_spin_half": "0e87ab83ae54fd9e8be875aec0d93488802e483c258fa5500d308012478ebe5a",
+          "spacegroup_223_spin_half": "14f244d8a4576af6b02f6803ca85dd83ee5942301b5b7e52df4fef0a25402297",
+          "spacegroup_224_spin_half": "188cd88496a49a1aa0d9660c9d9b726ac2e4745063776a1eeff011fee9432292",
+          "spacegroup_227_spin_half": "77489ea0962ab603e0904d18d02ae26a213df56ea8e73fcb284a8b46cff70a77",
+          "spacegroup_228_spin_half": "ba3c228ff4459e6e64d9847d48bb35a39139668e63395f711866a24ab704afb7"
+        },
+        "selection": [
+          "spacegroup_223_spin_half",
+          "spacegroup_224_spin_half",
+          "spacegroup_227_spin_half",
+          "spacegroup_228_spin_half",
+          "spacegroup_201_spinless",
+          "spacegroup_206_spin_half",
+          "spacegroup_210_spinless",
+          "spacegroup_219_spin_half",
+          "spacegroup_220_spin_half",
+          "spacegroup_133_spinless",
+          "spacegroup_140_spin_half",
+          "spacegroup_142_spin_half"
+        ],
+        "selectionSHA256": "c9cf92cfcc26c2153a06c8ec7a58ba5ded6c762505c382fecfaa0b19fb18bcd0",
+        "source": {
+          "files": {
+            "gap/audit_d2.g": "46431258979bad217c091bddfe6467b6f901076064a590f474df211d7d6b1cfe",
+            "gap/audit_d2d.g": "d1a39cef89d29422a96d6a4a60cae202dfe10cb7978c95ff9f0caa92cc32ccea",
+            "gap/audit_odd_kernel.g": "4a69f672803e10d3db63c501ff1f7b2eeb52cdf77fd37562970bd77bf84e5819",
+            "gap/audit_oh.g": "7c790f0010fc0398ceb237a2c9dd3dbe43ca1934e37681c1284b2035f57c5552",
+            "gap/backend.g": "4b89be1fe09c2eec8b33b59e7cdce2e9f0b11ebd7a72ceb7e84e38392e7c6be5",
+            "gap/backend_bar.g": "0cfaa3e9b4bf1ba32c2c4da1ec6fe25340b01ba86bf80a763dc60c6e62112624",
+            "gap/backend_diagonal.g": "94302da4bb68fef860f96a71c99ddfda67085a7667fc19ad08d9df2e5d7b8e76",
+            "gap/backend_half_phase.g": "2d92801f044d2162f75ec0e2ce3e1bab401ab2763c35110528fc190a9d78e963",
+            "gap/backend_mod2_contraction.g": "4a530e0e7ad6d82186c7f976364d5254a6b7011d2d762732e12f999ce86cc993",
+            "gap/backend_resolution.g": "10a4f6e90fb0ff12e53b250f6216e78c05702eeb46dd5bbe96d082c1d34b9ba1",
+            "gap/backend_smith_transfer.g": "07de0031335f77e51370e3bbaca85cf1211d5b6913962b374c45ca013e644389",
+            "gap/backend_smith_units.g": "3172e911bfc4b7cd2af3683a6e563a00bdfbc0badf38fae5869d7014571207f1",
+            "gap/charge_primary.g": "2f4f1c1fcf551ba32baccb3eb1b2e8fd587f33496bb3b0a24f74a5f5560d0f4a",
+            "gap/charge_source.g": "3ec9329ca97ace7e392447caa237d75f9aa825aa8cb862904e242814c04ad9b6",
+            "gap/class_coordinates.g": "cd1503c964faa753fe33d84c5729efababf074e8295d6aed524d63fbadead31a",
+            "gap/classification.g": "8f259fd5d03e689f2a12e91b5ba73600b6eacf1c91b2a246a57802a6cb4ca80e",
+            "gap/cochains.g": "ff75e998cfaf426198a78bd87362a45d245b922b0f7e37bdaf1c906d6dd2717c",
+            "gap/context.g": "0300695dcfd7c88890c14ab419b6df65a57c1a672fc5e0ecb615182fea55410f",
+            "gap/cup_data.g": "0fdcfb5d5b0b031a2315215f0a1e541a10c6059ef6a734be7e70dcc5d124a552",
+            "gap/load.g": "7bbc2d7f02aa5fe83f565e2d79576cb0ba70af491a5797e9c3f3d2b657bc8863",
+            "insulator/__init__.py": "1492a00d5af33a873fe5caf8d8497a0ee58a734e8acb9c6af2fc0c26594b8e8c",
+            "insulator/_compiled/__init__.py": "d4d65cde9994b4e988d9a416c6af8f1492b52597477794a8921d1a8ebeb4d4b4",
+            "insulator/_compiled/compiler.py": "a90ea268dee8ff87b15045da84ba05ca2655dc555c1775d830175e02f2693209",
+            "insulator/_compiled/product3.json": "5b6b2c65cc9e28443483208629371da2cd7889f34d8be55b167258098f614bbd",
+            "insulator/_compiled/runtime.py": "25fab18b8b320bf9358d47ece48e75da73a080e709a4e1c25992f099edb6e2d4",
+            "insulator/_compiled/source3.json": "5d0c1c88b34ac347ba9614d1335bdc30e11f2c824013e1661c218b2983478fa4",
+            "insulator/_compiled/u1_dag_vm.cpp": "247ddb27b17b0a543423d259f49be176210471cae8bd1a15987fcb54be6e7b7b",
+            "insulator/_engine/__init__.py": "5df2c333c5e8f2edcff422a21719dd04a9fd306f0bc6204adfc1a1dca3c7e814",
+            "insulator/_engine/calibrated.py": "0756ff9f4633f2058d74774866457e495e4209749a120f53e6bc131e9b3ebd1d",
+            "insulator/_engine/cartan32_polarizer.json": "843983264e2cf11b5b8f4a0a62f0af06c7c4e70c8be7c8fd76b75e3d0a0646f3",
+            "insulator/_engine/cochains.py": "31791ddb47c6f61c6d4af42c624594726b995ef6fd6059221db9a5c7eed0d491",
+            "insulator/_engine/e8_4p1.py": "e2b75db3ddc36ba9d6dbba3ec97095573ee1fd2b87bcadd010f32806bc0a4626",
+            "insulator/_engine/gauge4d.py": "86fd245b2fedb68601baab04a3e420c4613cee8863be279628fd4a54b0b75b48",
+            "insulator/_engine/prism.py": "ccf8ee6b68a65896385afa8da74a1cbdc8834a66f0153e314d26d5449e42e5be",
+            "insulator/_engine/product4d.py": "b72bc717f6267a5501a808d8d1c3faf631548e30433a9825a5f46058d0cc9446",
+            "insulator/_engine/r_polarizer.json": "e66a691d41a94b520eee8b09386e3c3a63bf3779ab21f43f8813641026fadb2c",
+            "insulator/_engine/simplex.py": "e441f0db3afec72fde9382544ad4ae6402f9a135a8e5b898da1779049b2d1b94",
+            "insulator/_engine/transgression.py": "ac9f551dedb567499fa8535e6b9ac9529f595e94f19198ea16513790e99e3a88",
+            "insulator/api.py": "dfd3240ebce3683e0fff73c6e5e3a1b43d843815bb30c6e4136ff4da6a9c8fdb",
+            "insulator/e8.py": "eb7f6bd338f0786c945e27bb42beeb38b4cbbfdbd6aa851b9970f973f04917bb",
+            "insulator/e8_h1.py": "d39bbe2565e933c65641b6ad5886faf81f175f094643c82fb4cdb1a994c8d272",
+            "insulator/e8_pointgroup.py": "106d816f05f7eaf336a911d790b7aee0c5892b91e3368929eea8554e0862d4f8",
+            "insulator/e8_spacegroup.py": "aa3eaf00bd1016c157e83b7eedcba8a56b8097c3c4f03d3da9c1a65656c54d57",
+            "insulator/parity_bridge.py": "99b3f5c0a4f1b0e15b38941681db1511b99da18f9ecee1861c427ee389274866",
+            "insulator/worker.py": "74ab7bca5fddb4dcb0857bacd46aae18b0bd9a5461c4d27244978ad640bee01e",
+            "scripts/audit_cyclic_4p1.py": "bff3e19d6d0f21c69eb674807d454d3647fdf9700af688ec8be9a752dc019102",
+            "scripts/build_catalog.py": "c9d25f9cdc70403aa083e84909bbf4124cb3687c693e340b31ddbc45f58773d7",
+            "scripts/build_current_tables.py": "ec6eee7de9aaf90e05bd764053891757500b2ac6c79b6454e53774d0d8b6c6d4",
+            "scripts/build_formula_vm.py": "1aa735ea412aea0dda1eb7f028c283642703815d4a188e4124a28da1f1389db0",
+            "scripts/build_foundation_tables.py": "930d2102c2f036d38de9055f083be6182662e40a6f2b91e0ae7017d45404d2de",
+            "scripts/classify.py": "e9ca54fc3caaeef00479b20e868fe96a3ac5473eeaf577a022eb7fe470b5358b",
+            "scripts/collect_expansion.py": "0c232b4894d4be400aed8aab7ceb97ba26437630fb856f703469295778507318",
+            "scripts/extend_e8_3p1.py": "c64543712be5fd61ee00b94666fc05aac8a07f32c974e351713d351faa451a17",
+            "scripts/formula_worker.py": "111548620b49f4b67f38c0f49c626feb4d7dd03ab8275e88841dbcfdacef467c",
+            "scripts/pilot_cyclic_4p1.py": "733b7668d782a636a7cbaccfe09676a4e31464527626cfd6ebf3f830ea1b5c42",
+            "scripts/recover_paired_campaign.py": "28f8b5bc99a0286c623950a3176d033465ae0e12edf74c4ee34973c647c5d40d",
+            "scripts/report_campaign.py": "0189ee75df7c50e98158cf1168835faed0a1d383cb5dd6d2f0f449af2f27527f",
+            "scripts/report_four_data_campaign.py": "e433bfeb77996b3e6bbfb108e8da6382696ed4a78461e2f1b8ed36a191742fb5",
+            "scripts/stop_owned_campaign.py": "3a871509d01b9b268b3b18f5955edcf1ab5a2c80da598bf5fa481358256d5e49",
+            "scripts/summarize_results.py": "db7071f7edd70ca06315dd0a8316907ec7e34a67f11337a889c4340ecafd3018"
+          },
+          "sha256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b"
+        }
+      },
+      "e8": {
+        "directory": "/home/xingyu/insulator-campaign-download/sgfull-20261015-h-remaining-n02-finalized/sgfull-20261015-h-remaining-n02-e8",
+        "kind": "e8",
+        "resultHashes": {
+          "spacegroup_133_spinless": "6cd7d89be059b81bff77996803cacc64bfc06cd9c860c5e564ad92e1204c2aa9",
+          "spacegroup_140_spin_half": "d29e4691913372db52ce4e5701a9b9aa2e900e54765c0112b798c824ab0c16ce",
+          "spacegroup_142_spin_half": "703617a9b7c440e03846ff360fe63143bc9a11505156bacfe859445237fb11b3",
+          "spacegroup_201_spinless": "80f747eb5cade3dfc0c7cb09cc53c22d55f41f36ad485bd8f3c481734120fc19",
+          "spacegroup_206_spin_half": "37c7b1d9deb785030fc6e76b3bbfcdecb37c3a4ec86311a836a48dd38a34413b",
+          "spacegroup_210_spinless": "d3a8773e147bcd9fcbe3b28ce9f9caa0c3082426b4b62ff540c75fd94096b4ea",
+          "spacegroup_219_spin_half": "b0019bd4827a692737232d42b73273f5e43f04e9abe6f0ac30c46485c55b9666",
+          "spacegroup_220_spin_half": "b65a57d962dcae869031463f5c22a74e82bc0b4bb1199212d22256860e8c4826",
+          "spacegroup_223_spin_half": "113e4291b5f3423fd828f5e98abcb79a76e5e9dab44d5d2b998d0859956c77e1",
+          "spacegroup_224_spin_half": "6254a5b62d0e5ae3ee388884c0de8e602c9cd9ed42e0058bc861c68f6cc624b6",
+          "spacegroup_227_spin_half": "b77aff6f8ceec0b5e4d24e2580ee71498a7ffe97377700d873b686109756190f",
+          "spacegroup_228_spin_half": "edefbb0a2c90412c739b0aafaf73c3cbfc3fa3b67e7d0113a6e960a0a0dd6c68"
+        },
+        "selection": [
+          "spacegroup_223_spin_half",
+          "spacegroup_224_spin_half",
+          "spacegroup_227_spin_half",
+          "spacegroup_228_spin_half",
+          "spacegroup_201_spinless",
+          "spacegroup_206_spin_half",
+          "spacegroup_210_spinless",
+          "spacegroup_219_spin_half",
+          "spacegroup_220_spin_half",
+          "spacegroup_133_spinless",
+          "spacegroup_140_spin_half",
+          "spacegroup_142_spin_half"
+        ],
+        "selectionSHA256": "c9cf92cfcc26c2153a06c8ec7a58ba5ded6c762505c382fecfaa0b19fb18bcd0",
+        "source": {
+          "ciSelectionSHA256": "c9cf92cfcc26c2153a06c8ec7a58ba5ded6c762505c382fecfaa0b19fb18bcd0",
+          "files": {
+            "docs/e8/3p1.md": "b6c224f8322c4e7c12772ba2f3c692f9228bc722e6194db0eae5958b09a898f8",
+            "insulator/e8_h1.py": "d39bbe2565e933c65641b6ad5886faf81f175f094643c82fb4cdb1a994c8d272",
+            "insulator/e8_pointgroup.py": "eb8a8043c5e5e5205598e76e7e7b13c4fb92c723dbf5c3ae938dc1c8a2ca26cb",
+            "insulator/e8_spacegroup.py": "45be021c4fcf607b553af0e333234c49603d1e561196fd657f4b96b3cb4ef340",
+            "scripts/extend_e8_3p1.py": "63943b99c4c427545d0096e86b78e77565307a601bea799754a4079af853d904"
+          },
+          "model": "3p1-selected-neutral-section-direct-product-v1",
+          "physicalScopeCaveat": "This is the E8-inclusive selected four-data model. Identification with the full physical classification additionally requires identifying the CI model with the physical kernel; the universal nonzero-CI terminal comparison is not certified by this calculation.",
+          "pythonVersion": "3.8.16",
+          "sha256": "994af05b2ab8cea90002e6c75dd2442736b3f1096bf0ceab98703f6e90dc2214",
+          "sympyVersion": "1.12"
+        }
+      },
+      "label": "Accepted H24 n02",
+      "scientificChecks": [
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_133_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 4,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 16
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_140_spin_half",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 22
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_142_spin_half",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 4,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 4,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              8
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 14
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_201_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              4,
+              24
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 12
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_206_spin_half",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 4,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 4,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              4,
+              24
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 10
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_210_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 9
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_219_spin_half",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 12
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_220_spin_half",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 8
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_223_spin_half",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 4,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 4,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              8
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 14
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_224_spin_half",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 4,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 4,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 18
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_227_spin_half",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 4,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 4,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              4,
+              4,
+              8
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 14
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_228_spin_half",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 4,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 4,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              8
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 12
+        }
+      ],
+      "state": "validated"
+    },
+    {
+      "acceptedDownloadEvidence": {
+        "acceptedCollectionSHA256": "93dfe0f175bf1c19c5da74c2e7c46a0023c97ca66fd282e11fa19290fa3c7f1d",
+        "archiveSHA256": "e804c1625ad7f9ac74290bcd542c1d58934bfd49c40f7d4695138de9ed8a1dca",
+        "ciSourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+        "downloadProofSHA256": "e2c53ab4a9a72f29ec26a42231e2707a56c23c412a8fcef04dc7043c8c5553f5",
+        "e8SourceSHA256": "994af05b2ab8cea90002e6c75dd2442736b3f1096bf0ceab98703f6e90dc2214",
+        "finalizationSHA256": "d21bb76737f3e3219b2d6ac1675645bbdb0716979c66487ecaeb1ce163522a82",
+        "formulaVMSHA256": "0c026ca103e9ba8b674c006d6042ca23bfe526ca62b4e96b3c1b79c4d318dec2"
+      },
+      "cases": [
+        "spacegroup_134_spinless",
+        "spacegroup_140_spinless",
+        "spacegroup_142_spinless",
+        "spacegroup_203_spinless",
+        "spacegroup_206_spinless",
+        "spacegroup_218_spinless",
+        "spacegroup_219_spinless",
+        "spacegroup_220_spinless",
+        "spacegroup_223_spinless",
+        "spacegroup_224_spinless",
+        "spacegroup_227_spinless",
+        "spacegroup_228_spinless"
+      ],
+      "ci": {
+        "directory": "/home/xingyu/insulator-campaign-download/sgfull-20261015-h-remaining-n03-finalized/sgfull-20261015-h-remaining-n03",
+        "kind": "ci",
+        "resultHashes": {
+          "spacegroup_134_spinless": "cd4b57809a1a7e660c86a6eb402f3f3ddf2a838d64657a0f9120947f640e7401",
+          "spacegroup_140_spinless": "b311ea67f39aee22c178637dd9d26efabefba5f5d1c17659656f825f9e2e600c",
+          "spacegroup_142_spinless": "15c4c0423e08cf77c6cf17c35455d86f6c1bf8e862422ec3d481f633444a8b34",
+          "spacegroup_203_spinless": "0e5b2169cc593ae12316664bb796d87d0c4dfc44b0b7e77ab7508e5451b3d8fa",
+          "spacegroup_206_spinless": "19b6d12fbc966b04777c26c1adad3f3a096936aba52f9def6f43953fb39c36f9",
+          "spacegroup_218_spinless": "0d1dbb80ae31d7c8bffbaa6d0057466a186fbbae749f432571950519c9c8df93",
+          "spacegroup_219_spinless": "4adb77bf2ff0aae97c382d20342bbb0f5bddb567ed44771db23fa2ce0b3b50e7",
+          "spacegroup_220_spinless": "4c9c8e7a1e64757029ed3aaa6c62d36edd88cc2cbe661eeffa9cedfa5fbc64a2",
+          "spacegroup_223_spinless": "2f7986926c200e98574c8fbab568e76f3da40162ab195d77c51588e8ca7dc4db",
+          "spacegroup_224_spinless": "a386c84ace25bc10e7fa494a5b3a2e99bd8c438c172b0513fc4514642fbe5451",
+          "spacegroup_227_spinless": "901734ab56d1797f38e7a6e64c6a4ef424a598258795e3550d6c15b12c8b95dc",
+          "spacegroup_228_spinless": "a2dd62b6bf68f06cede6b38beb6f8efc64a6af34cd1a66d7f8aaee65d66d6685"
+        },
+        "selection": [
+          "spacegroup_223_spinless",
+          "spacegroup_224_spinless",
+          "spacegroup_227_spinless",
+          "spacegroup_228_spinless",
+          "spacegroup_203_spinless",
+          "spacegroup_206_spinless",
+          "spacegroup_218_spinless",
+          "spacegroup_219_spinless",
+          "spacegroup_220_spinless",
+          "spacegroup_134_spinless",
+          "spacegroup_140_spinless",
+          "spacegroup_142_spinless"
+        ],
+        "selectionSHA256": "67b02d58259218c71bdb740fcd9d919c0515d47d5c3a9089c95a10e54a388f6e",
+        "source": {
+          "files": {
+            "gap/audit_d2.g": "46431258979bad217c091bddfe6467b6f901076064a590f474df211d7d6b1cfe",
+            "gap/audit_d2d.g": "d1a39cef89d29422a96d6a4a60cae202dfe10cb7978c95ff9f0caa92cc32ccea",
+            "gap/audit_odd_kernel.g": "4a69f672803e10d3db63c501ff1f7b2eeb52cdf77fd37562970bd77bf84e5819",
+            "gap/audit_oh.g": "7c790f0010fc0398ceb237a2c9dd3dbe43ca1934e37681c1284b2035f57c5552",
+            "gap/backend.g": "4b89be1fe09c2eec8b33b59e7cdce2e9f0b11ebd7a72ceb7e84e38392e7c6be5",
+            "gap/backend_bar.g": "0cfaa3e9b4bf1ba32c2c4da1ec6fe25340b01ba86bf80a763dc60c6e62112624",
+            "gap/backend_diagonal.g": "94302da4bb68fef860f96a71c99ddfda67085a7667fc19ad08d9df2e5d7b8e76",
+            "gap/backend_half_phase.g": "2d92801f044d2162f75ec0e2ce3e1bab401ab2763c35110528fc190a9d78e963",
+            "gap/backend_mod2_contraction.g": "4a530e0e7ad6d82186c7f976364d5254a6b7011d2d762732e12f999ce86cc993",
+            "gap/backend_resolution.g": "10a4f6e90fb0ff12e53b250f6216e78c05702eeb46dd5bbe96d082c1d34b9ba1",
+            "gap/backend_smith_transfer.g": "07de0031335f77e51370e3bbaca85cf1211d5b6913962b374c45ca013e644389",
+            "gap/backend_smith_units.g": "3172e911bfc4b7cd2af3683a6e563a00bdfbc0badf38fae5869d7014571207f1",
+            "gap/charge_primary.g": "2f4f1c1fcf551ba32baccb3eb1b2e8fd587f33496bb3b0a24f74a5f5560d0f4a",
+            "gap/charge_source.g": "3ec9329ca97ace7e392447caa237d75f9aa825aa8cb862904e242814c04ad9b6",
+            "gap/class_coordinates.g": "cd1503c964faa753fe33d84c5729efababf074e8295d6aed524d63fbadead31a",
+            "gap/classification.g": "8f259fd5d03e689f2a12e91b5ba73600b6eacf1c91b2a246a57802a6cb4ca80e",
+            "gap/cochains.g": "ff75e998cfaf426198a78bd87362a45d245b922b0f7e37bdaf1c906d6dd2717c",
+            "gap/context.g": "0300695dcfd7c88890c14ab419b6df65a57c1a672fc5e0ecb615182fea55410f",
+            "gap/cup_data.g": "0fdcfb5d5b0b031a2315215f0a1e541a10c6059ef6a734be7e70dcc5d124a552",
+            "gap/load.g": "7bbc2d7f02aa5fe83f565e2d79576cb0ba70af491a5797e9c3f3d2b657bc8863",
+            "insulator/__init__.py": "1492a00d5af33a873fe5caf8d8497a0ee58a734e8acb9c6af2fc0c26594b8e8c",
+            "insulator/_compiled/__init__.py": "d4d65cde9994b4e988d9a416c6af8f1492b52597477794a8921d1a8ebeb4d4b4",
+            "insulator/_compiled/compiler.py": "a90ea268dee8ff87b15045da84ba05ca2655dc555c1775d830175e02f2693209",
+            "insulator/_compiled/product3.json": "5b6b2c65cc9e28443483208629371da2cd7889f34d8be55b167258098f614bbd",
+            "insulator/_compiled/runtime.py": "25fab18b8b320bf9358d47ece48e75da73a080e709a4e1c25992f099edb6e2d4",
+            "insulator/_compiled/source3.json": "5d0c1c88b34ac347ba9614d1335bdc30e11f2c824013e1661c218b2983478fa4",
+            "insulator/_compiled/u1_dag_vm.cpp": "247ddb27b17b0a543423d259f49be176210471cae8bd1a15987fcb54be6e7b7b",
+            "insulator/_engine/__init__.py": "5df2c333c5e8f2edcff422a21719dd04a9fd306f0bc6204adfc1a1dca3c7e814",
+            "insulator/_engine/calibrated.py": "0756ff9f4633f2058d74774866457e495e4209749a120f53e6bc131e9b3ebd1d",
+            "insulator/_engine/cartan32_polarizer.json": "843983264e2cf11b5b8f4a0a62f0af06c7c4e70c8be7c8fd76b75e3d0a0646f3",
+            "insulator/_engine/cochains.py": "31791ddb47c6f61c6d4af42c624594726b995ef6fd6059221db9a5c7eed0d491",
+            "insulator/_engine/e8_4p1.py": "e2b75db3ddc36ba9d6dbba3ec97095573ee1fd2b87bcadd010f32806bc0a4626",
+            "insulator/_engine/gauge4d.py": "86fd245b2fedb68601baab04a3e420c4613cee8863be279628fd4a54b0b75b48",
+            "insulator/_engine/prism.py": "ccf8ee6b68a65896385afa8da74a1cbdc8834a66f0153e314d26d5449e42e5be",
+            "insulator/_engine/product4d.py": "b72bc717f6267a5501a808d8d1c3faf631548e30433a9825a5f46058d0cc9446",
+            "insulator/_engine/r_polarizer.json": "e66a691d41a94b520eee8b09386e3c3a63bf3779ab21f43f8813641026fadb2c",
+            "insulator/_engine/simplex.py": "e441f0db3afec72fde9382544ad4ae6402f9a135a8e5b898da1779049b2d1b94",
+            "insulator/_engine/transgression.py": "ac9f551dedb567499fa8535e6b9ac9529f595e94f19198ea16513790e99e3a88",
+            "insulator/api.py": "dfd3240ebce3683e0fff73c6e5e3a1b43d843815bb30c6e4136ff4da6a9c8fdb",
+            "insulator/e8.py": "eb7f6bd338f0786c945e27bb42beeb38b4cbbfdbd6aa851b9970f973f04917bb",
+            "insulator/e8_h1.py": "d39bbe2565e933c65641b6ad5886faf81f175f094643c82fb4cdb1a994c8d272",
+            "insulator/e8_pointgroup.py": "106d816f05f7eaf336a911d790b7aee0c5892b91e3368929eea8554e0862d4f8",
+            "insulator/e8_spacegroup.py": "aa3eaf00bd1016c157e83b7eedcba8a56b8097c3c4f03d3da9c1a65656c54d57",
+            "insulator/parity_bridge.py": "99b3f5c0a4f1b0e15b38941681db1511b99da18f9ecee1861c427ee389274866",
+            "insulator/worker.py": "74ab7bca5fddb4dcb0857bacd46aae18b0bd9a5461c4d27244978ad640bee01e",
+            "scripts/audit_cyclic_4p1.py": "bff3e19d6d0f21c69eb674807d454d3647fdf9700af688ec8be9a752dc019102",
+            "scripts/build_catalog.py": "c9d25f9cdc70403aa083e84909bbf4124cb3687c693e340b31ddbc45f58773d7",
+            "scripts/build_current_tables.py": "ec6eee7de9aaf90e05bd764053891757500b2ac6c79b6454e53774d0d8b6c6d4",
+            "scripts/build_formula_vm.py": "1aa735ea412aea0dda1eb7f028c283642703815d4a188e4124a28da1f1389db0",
+            "scripts/build_foundation_tables.py": "930d2102c2f036d38de9055f083be6182662e40a6f2b91e0ae7017d45404d2de",
+            "scripts/classify.py": "e9ca54fc3caaeef00479b20e868fe96a3ac5473eeaf577a022eb7fe470b5358b",
+            "scripts/collect_expansion.py": "0c232b4894d4be400aed8aab7ceb97ba26437630fb856f703469295778507318",
+            "scripts/extend_e8_3p1.py": "c64543712be5fd61ee00b94666fc05aac8a07f32c974e351713d351faa451a17",
+            "scripts/formula_worker.py": "111548620b49f4b67f38c0f49c626feb4d7dd03ab8275e88841dbcfdacef467c",
+            "scripts/pilot_cyclic_4p1.py": "733b7668d782a636a7cbaccfe09676a4e31464527626cfd6ebf3f830ea1b5c42",
+            "scripts/recover_paired_campaign.py": "28f8b5bc99a0286c623950a3176d033465ae0e12edf74c4ee34973c647c5d40d",
+            "scripts/report_campaign.py": "0189ee75df7c50e98158cf1168835faed0a1d383cb5dd6d2f0f449af2f27527f",
+            "scripts/report_four_data_campaign.py": "e433bfeb77996b3e6bbfb108e8da6382696ed4a78461e2f1b8ed36a191742fb5",
+            "scripts/stop_owned_campaign.py": "3a871509d01b9b268b3b18f5955edcf1ab5a2c80da598bf5fa481358256d5e49",
+            "scripts/summarize_results.py": "db7071f7edd70ca06315dd0a8316907ec7e34a67f11337a889c4340ecafd3018"
+          },
+          "sha256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b"
+        }
+      },
+      "e8": {
+        "directory": "/home/xingyu/insulator-campaign-download/sgfull-20261015-h-remaining-n03-finalized/sgfull-20261015-h-remaining-n03-e8",
+        "kind": "e8",
+        "resultHashes": {
+          "spacegroup_134_spinless": "40bd331b51b31287e58e4254628d5605b33d84c5f696b77d1c76b633f3595096",
+          "spacegroup_140_spinless": "ccbddc42b8aa6cc4c891b1188def5079e04b3ae4e33fe06b3ca163aff374c607",
+          "spacegroup_142_spinless": "0bc41cba9a232134528bdb2c03682d755de981faa8135ba2c14a8ce9db97c996",
+          "spacegroup_203_spinless": "48e0d87076e5dce00da70e027225c97008b64563bd99021832de8d5b6448db59",
+          "spacegroup_206_spinless": "5f8457e90c63da32f9e26ecc89b98f7cfa24d73f306d76d48afe70f118dce996",
+          "spacegroup_218_spinless": "b9c115551f82952f274118296024c50521c5bb0d93be116e1a5ca6f6712db050",
+          "spacegroup_219_spinless": "41cef6605210548371852bab2bd2c0d15da5a2d0ff7c851d913453392f2a0496",
+          "spacegroup_220_spinless": "c5561bd44e7944fa558dd85ad124d05317e7f5bcc347af703259ac9dd2b0a62a",
+          "spacegroup_223_spinless": "8357ae2320cbe1c2c813c8abb4806253361895206117afb919c01f656289d279",
+          "spacegroup_224_spinless": "8c2c85a558f83ba64e6488f21276ea38e0242d5ebcd32b6e43aa13cc187b027b",
+          "spacegroup_227_spinless": "137e2b512ba451b403ee191f2088f04b34695c33574275cd0e3d2a5a08de3a2b",
+          "spacegroup_228_spinless": "59c46e26d0d6aa77902a5ea629b85999072d32f88a929965c4e938f76bf4c084"
+        },
+        "selection": [
+          "spacegroup_223_spinless",
+          "spacegroup_224_spinless",
+          "spacegroup_227_spinless",
+          "spacegroup_228_spinless",
+          "spacegroup_203_spinless",
+          "spacegroup_206_spinless",
+          "spacegroup_218_spinless",
+          "spacegroup_219_spinless",
+          "spacegroup_220_spinless",
+          "spacegroup_134_spinless",
+          "spacegroup_140_spinless",
+          "spacegroup_142_spinless"
+        ],
+        "selectionSHA256": "67b02d58259218c71bdb740fcd9d919c0515d47d5c3a9089c95a10e54a388f6e",
+        "source": {
+          "ciSelectionSHA256": "67b02d58259218c71bdb740fcd9d919c0515d47d5c3a9089c95a10e54a388f6e",
+          "files": {
+            "docs/e8/3p1.md": "b6c224f8322c4e7c12772ba2f3c692f9228bc722e6194db0eae5958b09a898f8",
+            "insulator/e8_h1.py": "d39bbe2565e933c65641b6ad5886faf81f175f094643c82fb4cdb1a994c8d272",
+            "insulator/e8_pointgroup.py": "eb8a8043c5e5e5205598e76e7e7b13c4fb92c723dbf5c3ae938dc1c8a2ca26cb",
+            "insulator/e8_spacegroup.py": "45be021c4fcf607b553af0e333234c49603d1e561196fd657f4b96b3cb4ef340",
+            "scripts/extend_e8_3p1.py": "63943b99c4c427545d0096e86b78e77565307a601bea799754a4079af853d904"
+          },
+          "model": "3p1-selected-neutral-section-direct-product-v1",
+          "physicalScopeCaveat": "This is the E8-inclusive selected four-data model. Identification with the full physical classification additionally requires identifying the CI model with the physical kernel; the universal nonzero-CI terminal comparison is not certified by this calculation.",
+          "pythonVersion": "3.8.16",
+          "sha256": "994af05b2ab8cea90002e6c75dd2442736b3f1096bf0ceab98703f6e90dc2214",
+          "sympyVersion": "1.12"
+        }
+      },
+      "label": "Accepted H24 n03",
+      "scientificChecks": [
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_134_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 22
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_140_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 22
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_142_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 4,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 14
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_203_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              4,
+              24
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 10
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_206_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 4,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              4,
+              12
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 10
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_218_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              4,
+              8
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 12
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_219_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              8
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 12
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_220_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 8
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_223_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 14
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_224_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 18
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_227_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 2,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 14
+        },
+        {
+          "completeWitnessListsPresent": true,
+          "id": "spacegroup_228_spinless",
+          "independentPresentationFillingCheck": {
+            "chargeSubgroupFillingStep": 4,
+            "everyPresentationRelationPreservesFilling": true,
+            "fillingStep": 2,
+            "nativePrimitiveLatticeCertificatePresent": true,
+            "positivePrimitiveCellVolume": "1"
+          },
+          "independentSmithGroup": {
+            "freeRank": 1,
+            "torsion": [
+              2,
+              2,
+              4,
+              4
+            ]
+          },
+          "nativeChainIdentitiesVerified": true,
+          "nativeCompletionChecks": 12
+        }
+      ],
+      "state": "validated"
+    }
+  ],
+  "activeGCaseIDs": [
+    "spacegroup_140_spin_half",
+    "spacegroup_140_spinless",
+    "spacegroup_142_spin_half",
+    "spacegroup_142_spinless",
+    "spacegroup_206_spin_half",
+    "spacegroup_206_spinless",
+    "spacegroup_220_spin_half",
+    "spacegroup_220_spinless",
+    "spacegroup_223_spin_half",
+    "spacegroup_223_spinless",
+    "spacegroup_227_spin_half",
+    "spacegroup_227_spinless",
+    "spacegroup_228_spin_half",
+    "spacegroup_228_spinless"
+  ],
+  "allFailedGRecords": {
+    "spacegroup_219_spin_half": {
+      "exitCode": 1,
+      "node": "n03",
+      "runSHA256": "dd99da2e709a8151429fd93e7562953d01ffe5f93e0683c986c22bd83ce48f07"
+    },
+    "spacegroup_219_spinless": {
+      "exitCode": 1,
+      "node": "n03",
+      "runSHA256": "77dd1f1d8e52901e2cf6beff86009a5f846a93e5162d1306265171284948235c"
+    },
+    "spacegroup_226_spin_half": {
+      "exitCode": 1,
+      "node": "n02",
+      "runSHA256": "c45d39d1bf0b4681fcb1d8b8d85c8d1d72eb23a170ae533af7ad9dff46573e8f"
+    },
+    "spacegroup_226_spinless": {
+      "exitCode": 1,
+      "node": "n02",
+      "runSHA256": "e7037a66a1fcdfc12c0dc364acba46d8bf58e9ddae2faa20abbeb8b9db4dd587"
+    },
+    "spacegroup_230_spin_half": {
+      "exitCode": 1,
+      "node": "n03",
+      "runSHA256": "3a3422af4ddb6f6107a6cfbd07e3c54963c53fa88e84a5adc6dc3670388e34f8"
+    },
+    "spacegroup_230_spinless": {
+      "exitCode": 1,
+      "node": "n03",
+      "runSHA256": "c99251ac5e5a7e9d6635fb012bcf84c86c61f2bbc745cc204bd92b7c7e481536"
+    }
+  },
+  "authorizesSignals": false,
+  "condition": "Root may review redundant live G cleanup only while observations are fresh and must repeat exact live identity and active-batch coverage before stopping. Final460 still requires accepted tail4; this record does not claim them.",
+  "configSHA256": "1e71b3216a5d287d979a8286052ef484795ad4adfdb6c516e4d6530bc1ea95b0",
+  "everyActiveGCaseCoveredByAcceptedH24": true,
+  "helperTreeSHA256": "2b5fec1dcaf50b2e44184ad0bf421ce50f1a0aa1bd5b36c2e95800b9fcc107ad",
+  "nodes": [
+    {
+      "activeBatches": [
+        {
+          "caseIDs": [
+            "spacegroup_206_spin_half",
+            "spacegroup_206_spinless"
+          ],
+          "gapPID": 40488,
+          "host": "n02.local",
+          "launchedCommand": [
+            "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+            "-q",
+            "-b",
+            "--quitonbreak",
+            "-m",
+            "256m",
+            "-K",
+            "8g",
+            "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_206_spin_half/driver.g"
+          ],
+          "launcherPath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+          "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+          "runnerPID": 40405
+        },
+        {
+          "caseIDs": [
+            "spacegroup_228_spin_half",
+            "spacegroup_228_spinless"
+          ],
+          "gapPID": 40490,
+          "host": "n02.local",
+          "launchedCommand": [
+            "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+            "-q",
+            "-b",
+            "--quitonbreak",
+            "-m",
+            "256m",
+            "-K",
+            "8g",
+            "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_228_spin_half/driver.g"
+          ],
+          "launcherPath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+          "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+          "runnerPID": 40405
+        },
+        {
+          "caseIDs": [
+            "spacegroup_223_spin_half",
+            "spacegroup_223_spinless"
+          ],
+          "gapPID": 40491,
+          "host": "n02.local",
+          "launchedCommand": [
+            "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+            "-q",
+            "-b",
+            "--quitonbreak",
+            "-m",
+            "256m",
+            "-K",
+            "8g",
+            "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_223_spin_half/driver.g"
+          ],
+          "launcherPath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+          "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+          "runnerPID": 40405
+        },
+        {
+          "caseIDs": [
+            "spacegroup_140_spin_half",
+            "spacegroup_140_spinless"
+          ],
+          "gapPID": 40497,
+          "host": "n02.local",
+          "launchedCommand": [
+            "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+            "-q",
+            "-b",
+            "--quitonbreak",
+            "-m",
+            "256m",
+            "-K",
+            "8g",
+            "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_140_spin_half/driver.g"
+          ],
+          "launcherPath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+          "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+          "runnerPID": 40405
+        },
+        {
+          "caseIDs": [
+            "spacegroup_220_spin_half",
+            "spacegroup_220_spinless"
+          ],
+          "gapPID": 40498,
+          "host": "n02.local",
+          "launchedCommand": [
+            "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+            "-q",
+            "-b",
+            "--quitonbreak",
+            "-m",
+            "256m",
+            "-K",
+            "8g",
+            "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_220_spin_half/driver.g"
+          ],
+          "launcherPath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+          "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+          "runnerPID": 40405
+        }
+      ],
+      "activeCaseIDs": [
+        "spacegroup_206_spin_half",
+        "spacegroup_206_spinless",
+        "spacegroup_228_spin_half",
+        "spacegroup_228_spinless",
+        "spacegroup_223_spin_half",
+        "spacegroup_223_spinless",
+        "spacegroup_140_spin_half",
+        "spacegroup_140_spinless",
+        "spacegroup_220_spin_half",
+        "spacegroup_220_spinless"
+      ],
+      "ageSeconds": 221.569943,
+      "allActiveCasesCoveredByAcceptedH24": true,
+      "capture": "/home/xingyu/AllFSPT_reviews/spacegroup_full_d_monitor_20261015/g_readiness_20261015T165242Z/n02-capture-20261015T165242Z.json",
+      "captureSHA256": "313615d30f9acfe3385356d1b5532c9764d9319b3e2b7a3a301cc58fbe3ec3a5",
+      "captureUTC": "2026-10-15T16:53:15.218260+00:00",
+      "fresh": true,
+      "noSourceOrRootMatchesOutsideValidatedTree": true,
+      "node": "n02",
+      "ordinaryProbe": "/home/xingyu/AllFSPT_reviews/g_cleanup_supplement_20261015/n02-ordinary-probe.json",
+      "ordinaryProbeAgeSeconds": 30.639767,
+      "ordinaryProbeFresh": true,
+      "ordinaryProbeSHA256": "d9e6dbe974d7d4f11784acbcca5ca929a1569536f8d79c2673cd5bbbdb919ed4",
+      "ordinaryProbeUTC": "2026-10-15T16:56:26.148436+00:00",
+      "originalRequiredBytesEqualPrelaunchAndFreshProbe": true,
+      "requiredCases": [
+        "spacegroup_058_spinless",
+        "spacegroup_062_spinless",
+        "spacegroup_067_spinless",
+        "spacegroup_071_spinless",
+        "spacegroup_073_spinless",
+        "spacegroup_084_spinless",
+        "spacegroup_087_spinless",
+        "spacegroup_088_spin_half",
+        "spacegroup_088_spinless",
+        "spacegroup_102_spinless",
+        "spacegroup_105_spinless",
+        "spacegroup_107_spinless",
+        "spacegroup_109_spinless",
+        "spacegroup_111_spinless",
+        "spacegroup_113_spinless",
+        "spacegroup_116_spinless",
+        "spacegroup_118_spinless",
+        "spacegroup_121_spinless",
+        "spacegroup_122_spin_half",
+        "spacegroup_122_spinless",
+        "spacegroup_125_spinless",
+        "spacegroup_127_spinless",
+        "spacegroup_129_spinless",
+        "spacegroup_131_spinless",
+        "spacegroup_135_spinless",
+        "spacegroup_137_spinless",
+        "spacegroup_158_spinless",
+        "spacegroup_163_spinless",
+        "spacegroup_167_spinless",
+        "spacegroup_170_spin_half",
+        "spacegroup_170_spinless",
+        "spacegroup_172_spin_half",
+        "spacegroup_172_spinless",
+        "spacegroup_185_spinless",
+        "spacegroup_193_spinless",
+        "spacegroup_200_spinless",
+        "spacegroup_201_spin_half",
+        "spacegroup_204_spinless",
+        "spacegroup_215_spinless",
+        "spacegroup_217_spinless",
+        "spacegroup_218_spin_half",
+        "spacegroup_222_spinless"
+      ],
+      "requiredOrdinaryCount": 42,
+      "runner": {
+        "argv": [
+          "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+          "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/classify.py",
+          "--output",
+          "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02",
+          "--gap",
+          "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+          "--jobs",
+          "48",
+          "--memory",
+          "8g",
+          "--timeout",
+          "14400",
+          "--pair-spins",
+          "--largest-first",
+          "--charge-primary",
+          "native",
+          "--phase-class",
+          "cycles",
+          "--closed-charge-source",
+          "certified",
+          "--case",
+          "spacegroup_223_spin_half",
+          "--case",
+          "spacegroup_223_spinless",
+          "--case",
+          "spacegroup_226_spin_half",
+          "--case",
+          "spacegroup_226_spinless",
+          "--case",
+          "spacegroup_228_spin_half",
+          "--case",
+          "spacegroup_228_spinless",
+          "--case",
+          "spacegroup_222_spinless",
+          "--case",
+          "spacegroup_201_spin_half",
+          "--case",
+          "spacegroup_201_spinless",
+          "--case",
+          "spacegroup_206_spin_half",
+          "--case",
+          "spacegroup_206_spinless",
+          "--case",
+          "spacegroup_218_spin_half",
+          "--case",
+          "spacegroup_218_spinless",
+          "--case",
+          "spacegroup_220_spin_half",
+          "--case",
+          "spacegroup_220_spinless",
+          "--case",
+          "spacegroup_193_spinless",
+          "--case",
+          "spacegroup_200_spinless",
+          "--case",
+          "spacegroup_204_spinless",
+          "--case",
+          "spacegroup_215_spinless",
+          "--case",
+          "spacegroup_217_spinless",
+          "--case",
+          "spacegroup_140_spin_half",
+          "--case",
+          "spacegroup_140_spinless",
+          "--case",
+          "spacegroup_125_spinless",
+          "--case",
+          "spacegroup_127_spinless",
+          "--case",
+          "spacegroup_129_spinless",
+          "--case",
+          "spacegroup_131_spinless",
+          "--case",
+          "spacegroup_135_spinless",
+          "--case",
+          "spacegroup_137_spinless",
+          "--case",
+          "spacegroup_163_spinless",
+          "--case",
+          "spacegroup_167_spinless",
+          "--case",
+          "spacegroup_185_spinless",
+          "--case",
+          "spacegroup_088_spin_half",
+          "--case",
+          "spacegroup_088_spinless",
+          "--case",
+          "spacegroup_122_spin_half",
+          "--case",
+          "spacegroup_122_spinless",
+          "--case",
+          "spacegroup_058_spinless",
+          "--case",
+          "spacegroup_062_spinless",
+          "--case",
+          "spacegroup_067_spinless",
+          "--case",
+          "spacegroup_071_spinless",
+          "--case",
+          "spacegroup_073_spinless",
+          "--case",
+          "spacegroup_084_spinless",
+          "--case",
+          "spacegroup_087_spinless",
+          "--case",
+          "spacegroup_102_spinless",
+          "--case",
+          "spacegroup_105_spinless",
+          "--case",
+          "spacegroup_107_spinless",
+          "--case",
+          "spacegroup_109_spinless",
+          "--case",
+          "spacegroup_111_spinless",
+          "--case",
+          "spacegroup_113_spinless",
+          "--case",
+          "spacegroup_116_spinless",
+          "--case",
+          "spacegroup_118_spinless",
+          "--case",
+          "spacegroup_121_spinless",
+          "--case",
+          "spacegroup_170_spin_half",
+          "--case",
+          "spacegroup_170_spinless",
+          "--case",
+          "spacegroup_172_spin_half",
+          "--case",
+          "spacegroup_172_spinless",
+          "--case",
+          "spacegroup_158_spinless"
+        ],
+        "executablePath": "/home/apps/anaconda3-4.9.2/bin/python3.8",
+        "executableSHA256": "d9b22de7a640ddb6dee6ce00f809048e27b0b5ad4ac664c5ba9c531ae65f8190",
+        "host": "n02.local",
+        "pgid": 40405,
+        "pid": 40405,
+        "ppid": 1,
+        "startTicks": 2689538654,
+        "state": "S",
+        "uid": 5866
+      }
+    },
+    {
+      "activeBatches": [
+        {
+          "caseIDs": [
+            "spacegroup_227_spin_half",
+            "spacegroup_227_spinless"
+          ],
+          "gapPID": 38764,
+          "host": "n03.local",
+          "launchedCommand": [
+            "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+            "-q",
+            "-b",
+            "--quitonbreak",
+            "-m",
+            "256m",
+            "-K",
+            "8g",
+            "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03/spacegroup_227_spin_half/driver.g"
+          ],
+          "launcherPath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+          "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+          "runnerPID": 38671
+        },
+        {
+          "caseIDs": [
+            "spacegroup_142_spin_half",
+            "spacegroup_142_spinless"
+          ],
+          "gapPID": 38767,
+          "host": "n03.local",
+          "launchedCommand": [
+            "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+            "-q",
+            "-b",
+            "--quitonbreak",
+            "-m",
+            "256m",
+            "-K",
+            "8g",
+            "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03/spacegroup_142_spin_half/driver.g"
+          ],
+          "launcherPath": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+          "launcherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+          "runnerPID": 38671
+        }
+      ],
+      "activeCaseIDs": [
+        "spacegroup_227_spin_half",
+        "spacegroup_227_spinless",
+        "spacegroup_142_spin_half",
+        "spacegroup_142_spinless"
+      ],
+      "ageSeconds": 216.078967,
+      "allActiveCasesCoveredByAcceptedH24": true,
+      "capture": "/home/xingyu/AllFSPT_reviews/spacegroup_full_d_monitor_20261015/g_readiness_20261015T165242Z/n03-capture-20261015T165242Z.json",
+      "captureSHA256": "bf0feb3a09daf8547eaff225533997ba95e42b0f88ff3610d85d6caaa56ad821",
+      "captureUTC": "2026-10-15T16:53:20.709236+00:00",
+      "fresh": true,
+      "noSourceOrRootMatchesOutsideValidatedTree": true,
+      "node": "n03",
+      "ordinaryProbe": "/home/xingyu/AllFSPT_reviews/g_cleanup_supplement_20261015/n03-ordinary-probe.json",
+      "ordinaryProbeAgeSeconds": 25.127553,
+      "ordinaryProbeFresh": true,
+      "ordinaryProbeSHA256": "9e8f1154885c007fcdd72d4279e1e3b0a3964c955ea141c9445cbb14f97a94b4",
+      "ordinaryProbeUTC": "2026-10-15T16:56:31.660650+00:00",
+      "originalRequiredBytesEqualPrelaunchAndFreshProbe": true,
+      "requiredCases": [
+        "spacegroup_048_spinless",
+        "spacegroup_052_spinless",
+        "spacegroup_060_spinless",
+        "spacegroup_064_spinless",
+        "spacegroup_070_spinless",
+        "spacegroup_072_spinless",
+        "spacegroup_074_spinless",
+        "spacegroup_085_spinless",
+        "spacegroup_086_spin_half",
+        "spacegroup_086_spinless",
+        "spacegroup_100_spinless",
+        "spacegroup_104_spinless",
+        "spacegroup_106_spinless",
+        "spacegroup_108_spinless",
+        "spacegroup_110_spinless",
+        "spacegroup_112_spinless",
+        "spacegroup_114_spinless",
+        "spacegroup_117_spinless",
+        "spacegroup_119_spinless",
+        "spacegroup_120_spin_half",
+        "spacegroup_120_spinless",
+        "spacegroup_126_spinless",
+        "spacegroup_128_spinless",
+        "spacegroup_130_spinless",
+        "spacegroup_132_spinless",
+        "spacegroup_133_spin_half",
+        "spacegroup_134_spin_half",
+        "spacegroup_136_spinless",
+        "spacegroup_139_spinless",
+        "spacegroup_147_spinless",
+        "spacegroup_157_spinless",
+        "spacegroup_161_spinless",
+        "spacegroup_169_spin_half",
+        "spacegroup_169_spinless",
+        "spacegroup_171_spin_half",
+        "spacegroup_171_spinless",
+        "spacegroup_176_spinless",
+        "spacegroup_191_spinless",
+        "spacegroup_192_spinless",
+        "spacegroup_194_spinless",
+        "spacegroup_202_spinless",
+        "spacegroup_203_spin_half",
+        "spacegroup_205_spinless",
+        "spacegroup_210_spin_half",
+        "spacegroup_216_spinless",
+        "spacegroup_225_spinless"
+      ],
+      "requiredOrdinaryCount": 46,
+      "runner": {
+        "argv": [
+          "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+          "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/classify.py",
+          "--output",
+          "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03",
+          "--gap",
+          "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+          "--jobs",
+          "48",
+          "--memory",
+          "8g",
+          "--timeout",
+          "14400",
+          "--pair-spins",
+          "--largest-first",
+          "--charge-primary",
+          "native",
+          "--phase-class",
+          "cycles",
+          "--closed-charge-source",
+          "certified",
+          "--case",
+          "spacegroup_224_spin_half",
+          "--case",
+          "spacegroup_224_spinless",
+          "--case",
+          "spacegroup_227_spin_half",
+          "--case",
+          "spacegroup_227_spinless",
+          "--case",
+          "spacegroup_230_spin_half",
+          "--case",
+          "spacegroup_230_spinless",
+          "--case",
+          "spacegroup_225_spinless",
+          "--case",
+          "spacegroup_203_spin_half",
+          "--case",
+          "spacegroup_203_spinless",
+          "--case",
+          "spacegroup_210_spin_half",
+          "--case",
+          "spacegroup_210_spinless",
+          "--case",
+          "spacegroup_219_spin_half",
+          "--case",
+          "spacegroup_219_spinless",
+          "--case",
+          "spacegroup_191_spinless",
+          "--case",
+          "spacegroup_192_spinless",
+          "--case",
+          "spacegroup_194_spinless",
+          "--case",
+          "spacegroup_202_spinless",
+          "--case",
+          "spacegroup_205_spinless",
+          "--case",
+          "spacegroup_216_spinless",
+          "--case",
+          "spacegroup_133_spin_half",
+          "--case",
+          "spacegroup_133_spinless",
+          "--case",
+          "spacegroup_134_spin_half",
+          "--case",
+          "spacegroup_134_spinless",
+          "--case",
+          "spacegroup_142_spin_half",
+          "--case",
+          "spacegroup_142_spinless",
+          "--case",
+          "spacegroup_126_spinless",
+          "--case",
+          "spacegroup_128_spinless",
+          "--case",
+          "spacegroup_130_spinless",
+          "--case",
+          "spacegroup_132_spinless",
+          "--case",
+          "spacegroup_136_spinless",
+          "--case",
+          "spacegroup_139_spinless",
+          "--case",
+          "spacegroup_176_spinless",
+          "--case",
+          "spacegroup_086_spin_half",
+          "--case",
+          "spacegroup_086_spinless",
+          "--case",
+          "spacegroup_120_spin_half",
+          "--case",
+          "spacegroup_120_spinless",
+          "--case",
+          "spacegroup_048_spinless",
+          "--case",
+          "spacegroup_052_spinless",
+          "--case",
+          "spacegroup_060_spinless",
+          "--case",
+          "spacegroup_064_spinless",
+          "--case",
+          "spacegroup_070_spinless",
+          "--case",
+          "spacegroup_072_spinless",
+          "--case",
+          "spacegroup_074_spinless",
+          "--case",
+          "spacegroup_085_spinless",
+          "--case",
+          "spacegroup_100_spinless",
+          "--case",
+          "spacegroup_104_spinless",
+          "--case",
+          "spacegroup_106_spinless",
+          "--case",
+          "spacegroup_108_spinless",
+          "--case",
+          "spacegroup_110_spinless",
+          "--case",
+          "spacegroup_112_spinless",
+          "--case",
+          "spacegroup_114_spinless",
+          "--case",
+          "spacegroup_117_spinless",
+          "--case",
+          "spacegroup_119_spinless",
+          "--case",
+          "spacegroup_169_spin_half",
+          "--case",
+          "spacegroup_169_spinless",
+          "--case",
+          "spacegroup_171_spin_half",
+          "--case",
+          "spacegroup_171_spinless",
+          "--case",
+          "spacegroup_147_spinless",
+          "--case",
+          "spacegroup_157_spinless",
+          "--case",
+          "spacegroup_161_spinless"
+        ],
+        "executablePath": "/home/apps/anaconda3-4.9.2/bin/python3.8",
+        "executableSHA256": "d9b22de7a640ddb6dee6ce00f809048e27b0b5ad4ac664c5ba9c531ae65f8190",
+        "host": "n03.local",
+        "pgid": 38671,
+        "pid": 38671,
+        "ppid": 1,
+        "startTicks": 2689311341,
+        "state": "S",
+        "uid": 5866
+      }
+    }
+  ],
+  "originalFailedTailCases": [
+    "spacegroup_226_spin_half",
+    "spacegroup_226_spinless",
+    "spacegroup_230_spin_half",
+    "spacegroup_230_spinless"
+  ],
+  "priorLedgerUnchanged": true,
+  "readyForRootStopReview": true,
+  "requiredG88OrdinaryVerified": true,
+  "sampleUTC": "2026-10-15T16:56:56.788203+00:00",
+  "schema": "u1-g-active-coverage-cleanup-supplement-v1",
+  "scriptSHA256": "f595527cd634c24eb66b5090d5470155c0ef92847cfdb48d0bb2dc4695bc4103"
+}

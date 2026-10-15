@@ -1,0 +1,25 @@
+{
+  "archiveSHA256": "0986e8439e1244d44261861b95d5d311e78fb366c75e7e6726c7375993cbfd37",
+  "completionSHA256": "375e1160fa9d365982cd7447a604d262d533e38c918d838e038f6dede6240bbc",
+  "completionUnchangedAcrossDownload": true,
+  "node": "n03",
+  "output": "/home/xingyu/insulator-campaign-download/sgfull-20261015-g-n03-preserved-c26f3de-bundle",
+  "verificationCommand": [
+    "/usr/bin/python",
+    "/home/xingyu/AllFSPT_reviews/g_preservation_prepared_20261015/postprocess_g.py",
+    "verify",
+    "--node",
+    "n03",
+    "--completion",
+    "/home/xingyu/insulator-campaign-download/sgfull-20261015-g-preserved-c26f3de-download/n03/completion.json",
+    "--archive",
+    "/home/xingyu/insulator-campaign-download/sgfull-20261015-g-preserved-c26f3de-download/n03/evidence.tar.gz",
+    "--output",
+    "/home/xingyu/insulator-campaign-download/sgfull-20261015-g-n03-preserved-c26f3de-bundle",
+    "--helper",
+    "/home/xingyu/AllFSPT_reviews/spacegroup_full_catalogue_20261015/accelerated_gate/preservation-helper-c26f3de",
+    "--catalog",
+    "/home/xingyu/FSPT_AHSS_insulator/insulator_catalog/generated"
+  ],
+  "verificationExitCode": 0
+}
