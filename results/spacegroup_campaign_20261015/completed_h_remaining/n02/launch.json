@@ -1,0 +1,401 @@
+{
+  "availabilityScope": "Parsed native + saved native completion, chain, root-vector, Smith and filling checks; NOT acceptance or recovery.",
+  "campaignMetadataVerified": true,
+  "caseCount": 12,
+  "cases": [
+    "spacegroup_223_spin_half",
+    "spacegroup_224_spin_half",
+    "spacegroup_227_spin_half",
+    "spacegroup_228_spin_half",
+    "spacegroup_201_spinless",
+    "spacegroup_206_spin_half",
+    "spacegroup_210_spinless",
+    "spacegroup_219_spin_half",
+    "spacegroup_220_spin_half",
+    "spacegroup_133_spinless",
+    "spacegroup_140_spin_half",
+    "spacegroup_142_spin_half"
+  ],
+  "command": [
+    "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+    "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/scripts/classify.py",
+    "--family",
+    "spacegroup",
+    "--output",
+    "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02",
+    "--gap",
+    "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+    "--jobs",
+    "12",
+    "--memory",
+    "12g",
+    "--timeout",
+    "14400",
+    "--largest-first",
+    "--charge-primary",
+    "native",
+    "--phase-class",
+    "cycles",
+    "--closed-charge-source",
+    "certified",
+    "--vacuum-reduction",
+    "canonical",
+    "--case",
+    "spacegroup_223_spin_half",
+    "--case",
+    "spacegroup_224_spin_half",
+    "--case",
+    "spacegroup_227_spin_half",
+    "--case",
+    "spacegroup_228_spin_half",
+    "--case",
+    "spacegroup_201_spinless",
+    "--case",
+    "spacegroup_206_spin_half",
+    "--case",
+    "spacegroup_210_spinless",
+    "--case",
+    "spacegroup_219_spin_half",
+    "--case",
+    "spacegroup_220_spin_half",
+    "--case",
+    "spacegroup_133_spinless",
+    "--case",
+    "spacegroup_140_spin_half",
+    "--case",
+    "spacegroup_142_spin_half"
+  ],
+  "excludedTailCases": [
+    "spacegroup_226_spin_half",
+    "spacegroup_226_spinless",
+    "spacegroup_230_spin_half",
+    "spacegroup_230_spinless"
+  ],
+  "expectedSHA256": "eeacaf7af536f1cdcc5634535c559aeac3570d5116947dd80369af691d5252df",
+  "finalAvailabilityChecks": [
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_223_spin_half",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_223_spin_half/native.json'",
+          "id": "spacegroup_223_spin_half",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02",
+          "sampleUTC": "2026-10-15T15:17:56.401924+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_224_spin_half",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03/spacegroup_224_spin_half/native.json'",
+          "id": "spacegroup_224_spin_half",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03",
+          "sampleUTC": "2026-10-15T15:17:56.406260+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_227_spin_half",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03/spacegroup_227_spin_half/native.json'",
+          "id": "spacegroup_227_spin_half",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03",
+          "sampleUTC": "2026-10-15T15:17:56.408206+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_228_spin_half",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_228_spin_half/native.json'",
+          "id": "spacegroup_228_spin_half",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02",
+          "sampleUTC": "2026-10-15T15:17:56.410141+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_201_spinless",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_201_spinless/native.json'",
+          "id": "spacegroup_201_spinless",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02",
+          "sampleUTC": "2026-10-15T15:17:56.411870+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_206_spin_half",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_206_spin_half/native.json'",
+          "id": "spacegroup_206_spin_half",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02",
+          "sampleUTC": "2026-10-15T15:17:56.413620+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_210_spinless",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03/spacegroup_210_spinless/native.json'",
+          "id": "spacegroup_210_spinless",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03",
+          "sampleUTC": "2026-10-15T15:17:56.415329+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_219_spin_half",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03/spacegroup_219_spin_half/native.json'",
+          "id": "spacegroup_219_spin_half",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03",
+          "sampleUTC": "2026-10-15T15:17:56.417234+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_220_spin_half",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_220_spin_half/native.json'",
+          "id": "spacegroup_220_spin_half",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02",
+          "sampleUTC": "2026-10-15T15:17:56.419129+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_133_spinless",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03/spacegroup_133_spinless/native.json'",
+          "id": "spacegroup_133_spinless",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03",
+          "sampleUTC": "2026-10-15T15:17:56.420856+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_140_spin_half",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02/spacegroup_140_spin_half/native.json'",
+          "id": "spacegroup_140_spin_half",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n02",
+          "sampleUTC": "2026-10-15T15:17:56.422753+00:00"
+        }
+      ]
+    },
+    {
+      "excludedAvailable": false,
+      "id": "spacegroup_142_spin_half",
+      "observations": [
+        {
+          "availabilityNote": "FileNotFoundError: [Errno 2] No such file or directory: '/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03/spacegroup_142_spin_half/native.json'",
+          "id": "spacegroup_142_spin_half",
+          "nativeAvailable": false,
+          "ordinaryCompleteValidated": false,
+          "root": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-g-n03",
+          "sampleUTC": "2026-10-15T15:17:56.424453+00:00"
+        }
+      ]
+    }
+  ],
+  "finalizerPID": 42071,
+  "finalizerSHA256": "87a6d4c21fe690a58ebbd14405aa7a9d04a7e909db671772ab023cb9faff78d0",
+  "formulaRuntime": {
+    "fallbackPolicy": "exact Python integer DAG or original U1 formula according to request eligibility",
+    "libraryPath": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h/insulator/_compiled/u1_dag_vm.so",
+    "libraryPresent": true,
+    "librarySHA256": "0c026ca103e9ba8b674c006d6042ca23bfe526ca62b4e96b3c1b79c4d318dec2",
+    "requestedMode": "auto"
+  },
+  "formulaRuntimeVerifiedBeforeLaunch": true,
+  "gapBinarySHA256": "873e902ee797706160601846c1ad6582c05e0aebd069bdd7efcff3d081f96fea",
+  "gapLauncherSHA256": "535dc34f434a4bb52bba27f0fd43de099e6f501163e82ee2f5c9c82c0f156de1",
+  "inputSHA256": {
+    "spacegroup_133_spinless": "66f9e265b68f3c1d0d2f7967fed8847e27faa3e3c1fa88501cbe5eb2c8180546",
+    "spacegroup_140_spin_half": "7568b5e452563f63f622964560f7fb884f3e7db4bf0b4dd68a4ff0c33c441b17",
+    "spacegroup_142_spin_half": "124eb1f3ef2e7bfea9d6d81fa71e4405141a88a29d939d205efc9f9f0acf7bc6",
+    "spacegroup_201_spinless": "c5786881c59e6cb606df7d6863a963552a50b1e74531611dc707f7fba25a4623",
+    "spacegroup_206_spin_half": "bb69c40eeaadcdf5cf18e94a346aa60d8f651bbb529d9a95370042cf70f5ce06",
+    "spacegroup_210_spinless": "d8bc748cc0cb076ac2257ff6448506ca37a52c61c9d0e0d6ad4846055b09c4b6",
+    "spacegroup_219_spin_half": "40d4983bf47662b7ebf89ee147fe75e0cb258652a8fe4a193ed820d6d3933185",
+    "spacegroup_220_spin_half": "8bc96555b9fc1e8d4705eb32cdd36fa62758db998e012e87b52457f3a6a61adf",
+    "spacegroup_223_spin_half": "4bdf2ce5a164dd36dc63778e7eecaa6832685d3fdc2ea1aa8774cb1be6a61910",
+    "spacegroup_224_spin_half": "be2e5de7f20990e7eb312f193965737f5f283b8bd6894b63f5bf87a45c740781",
+    "spacegroup_227_spin_half": "fd7ae1f27c8fdc0bd6e2694381f3420e1927d76391ca51b1d98cab9d8b2f8a98",
+    "spacegroup_228_spin_half": "dcafdd438130a8af1d1fe64312f72286a58816dc4f7a9082614286f2b910b637"
+  },
+  "jobs": 12,
+  "launcherSHA256": "c8e666d1f845b2d4630120a0610dec91151f1a5f7ef95f8fe1600f83de6ff6c9",
+  "log": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02.log",
+  "memoryPerJob": "12g",
+  "node": "n02",
+  "output": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-remaining-n02",
+  "paired": false,
+  "pid": 42054,
+  "planPath": "/home/user/xyren/AllFSPT_insulator/snapshots/u1_h_remaining_plan_20261015.json",
+  "planSHA256": "c539a014cd8fe2fce6656a5af8b8c864511b37583f81dc419e3bf888569a4b63",
+  "proposedCases": [
+    "spacegroup_223_spin_half",
+    "spacegroup_224_spin_half",
+    "spacegroup_227_spin_half",
+    "spacegroup_228_spin_half",
+    "spacegroup_201_spinless",
+    "spacegroup_206_spin_half",
+    "spacegroup_210_spinless",
+    "spacegroup_219_spin_half",
+    "spacegroup_220_spin_half",
+    "spacegroup_133_spinless",
+    "spacegroup_140_spin_half",
+    "spacegroup_142_spin_half"
+  ],
+  "recordedEnvironment": {
+    "LANG": "C",
+    "LC_ALL": "C",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PATH": "/home/user/xyren/AllFSPT_insulator/runtime/bin:/home/user/xyren/bin:/home/user/xyren/bin:/opt/openmpi/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/opt/bio/ncbi/bin:/opt/bio/mpiblast/bin:/opt/bio/EMBOSS/bin:/opt/bio/clustalw/bin:/opt/bio/tcoffee/bin:/opt/bio/hmmer/bin:/opt/bio/phylip/exe:/opt/bio/mrbayes:/opt/bio/fasta:/opt/bio/glimmer/bin:/opt/bio/glimmer/scripts:/opt/bio/gromacs/bin:/opt/bio/gmap/bin:/opt/bio/tigr/bin:/opt/bio/autodocksuite/bin:/opt/bio/wgs/bin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/ibutils/bin:/usr/java/latest/bin:/usr/local/sbin:/usr/local/bin:/opt/pdsh/bin:/opt/rocks/bin:/opt/condor/bin:/opt/condor/sbin:/opt/gridengine/bin/linux-x64",
+    "U1_DAG_MODE": "auto"
+  },
+  "resourcePreflight": {
+    "additionalConcurrentJobs": 12,
+    "additionalGAPMemoryCapGiB": 144,
+    "availableEstimateGiB": 457.4549560546875,
+    "availableEstimateMethod": "MemAvailable or MemFree+Buffers+Cached+SReclaimable-Shmem",
+    "host": "n02.local",
+    "loadAverage": [
+      4.95,
+      4.31,
+      5.15
+    ],
+    "logicalCPUs": 56,
+    "memoryKiB": {
+      "Buffers": 122116,
+      "Cached": 542316,
+      "MemAvailable": null,
+      "MemFree": 478872588,
+      "MemTotal": 529033836,
+      "SReclaimable": 139276,
+      "Shmem": 8
+    },
+    "sampleUTC": "2026-10-15T15:17:56.401594+00:00"
+  },
+  "role": "Additional H replacements; all original G/H tasks remain untouched; final acceptance is separate.",
+  "schema": "u1-h-remaining-launch-v1",
+  "snapshotSHA256": "033dd6e611032dc465fa6f50874c69eb8ee3126f1aae9a1e1cf18cde8f84d23f",
+  "source": {
+    "files": {
+      "gap/audit_d2.g": "46431258979bad217c091bddfe6467b6f901076064a590f474df211d7d6b1cfe",
+      "gap/audit_d2d.g": "d1a39cef89d29422a96d6a4a60cae202dfe10cb7978c95ff9f0caa92cc32ccea",
+      "gap/audit_odd_kernel.g": "4a69f672803e10d3db63c501ff1f7b2eeb52cdf77fd37562970bd77bf84e5819",
+      "gap/audit_oh.g": "7c790f0010fc0398ceb237a2c9dd3dbe43ca1934e37681c1284b2035f57c5552",
+      "gap/backend.g": "4b89be1fe09c2eec8b33b59e7cdce2e9f0b11ebd7a72ceb7e84e38392e7c6be5",
+      "gap/backend_bar.g": "0cfaa3e9b4bf1ba32c2c4da1ec6fe25340b01ba86bf80a763dc60c6e62112624",
+      "gap/backend_diagonal.g": "94302da4bb68fef860f96a71c99ddfda67085a7667fc19ad08d9df2e5d7b8e76",
+      "gap/backend_half_phase.g": "2d92801f044d2162f75ec0e2ce3e1bab401ab2763c35110528fc190a9d78e963",
+      "gap/backend_mod2_contraction.g": "4a530e0e7ad6d82186c7f976364d5254a6b7011d2d762732e12f999ce86cc993",
+      "gap/backend_resolution.g": "10a4f6e90fb0ff12e53b250f6216e78c05702eeb46dd5bbe96d082c1d34b9ba1",
+      "gap/backend_smith_transfer.g": "07de0031335f77e51370e3bbaca85cf1211d5b6913962b374c45ca013e644389",
+      "gap/backend_smith_units.g": "3172e911bfc4b7cd2af3683a6e563a00bdfbc0badf38fae5869d7014571207f1",
+      "gap/charge_primary.g": "2f4f1c1fcf551ba32baccb3eb1b2e8fd587f33496bb3b0a24f74a5f5560d0f4a",
+      "gap/charge_source.g": "3ec9329ca97ace7e392447caa237d75f9aa825aa8cb862904e242814c04ad9b6",
+      "gap/class_coordinates.g": "cd1503c964faa753fe33d84c5729efababf074e8295d6aed524d63fbadead31a",
+      "gap/classification.g": "8f259fd5d03e689f2a12e91b5ba73600b6eacf1c91b2a246a57802a6cb4ca80e",
+      "gap/cochains.g": "ff75e998cfaf426198a78bd87362a45d245b922b0f7e37bdaf1c906d6dd2717c",
+      "gap/context.g": "0300695dcfd7c88890c14ab419b6df65a57c1a672fc5e0ecb615182fea55410f",
+      "gap/cup_data.g": "0fdcfb5d5b0b031a2315215f0a1e541a10c6059ef6a734be7e70dcc5d124a552",
+      "gap/load.g": "7bbc2d7f02aa5fe83f565e2d79576cb0ba70af491a5797e9c3f3d2b657bc8863",
+      "insulator/__init__.py": "1492a00d5af33a873fe5caf8d8497a0ee58a734e8acb9c6af2fc0c26594b8e8c",
+      "insulator/_compiled/__init__.py": "d4d65cde9994b4e988d9a416c6af8f1492b52597477794a8921d1a8ebeb4d4b4",
+      "insulator/_compiled/compiler.py": "a90ea268dee8ff87b15045da84ba05ca2655dc555c1775d830175e02f2693209",
+      "insulator/_compiled/product3.json": "5b6b2c65cc9e28443483208629371da2cd7889f34d8be55b167258098f614bbd",
+      "insulator/_compiled/runtime.py": "25fab18b8b320bf9358d47ece48e75da73a080e709a4e1c25992f099edb6e2d4",
+      "insulator/_compiled/source3.json": "5d0c1c88b34ac347ba9614d1335bdc30e11f2c824013e1661c218b2983478fa4",
+      "insulator/_compiled/u1_dag_vm.cpp": "247ddb27b17b0a543423d259f49be176210471cae8bd1a15987fcb54be6e7b7b",
+      "insulator/_engine/__init__.py": "5df2c333c5e8f2edcff422a21719dd04a9fd306f0bc6204adfc1a1dca3c7e814",
+      "insulator/_engine/calibrated.py": "0756ff9f4633f2058d74774866457e495e4209749a120f53e6bc131e9b3ebd1d",
+      "insulator/_engine/cartan32_polarizer.json": "843983264e2cf11b5b8f4a0a62f0af06c7c4e70c8be7c8fd76b75e3d0a0646f3",
+      "insulator/_engine/cochains.py": "31791ddb47c6f61c6d4af42c624594726b995ef6fd6059221db9a5c7eed0d491",
+      "insulator/_engine/e8_4p1.py": "e2b75db3ddc36ba9d6dbba3ec97095573ee1fd2b87bcadd010f32806bc0a4626",
+      "insulator/_engine/gauge4d.py": "86fd245b2fedb68601baab04a3e420c4613cee8863be279628fd4a54b0b75b48",
+      "insulator/_engine/prism.py": "ccf8ee6b68a65896385afa8da74a1cbdc8834a66f0153e314d26d5449e42e5be",
+      "insulator/_engine/product4d.py": "b72bc717f6267a5501a808d8d1c3faf631548e30433a9825a5f46058d0cc9446",
+      "insulator/_engine/r_polarizer.json": "e66a691d41a94b520eee8b09386e3c3a63bf3779ab21f43f8813641026fadb2c",
+      "insulator/_engine/simplex.py": "e441f0db3afec72fde9382544ad4ae6402f9a135a8e5b898da1779049b2d1b94",
+      "insulator/_engine/transgression.py": "ac9f551dedb567499fa8535e6b9ac9529f595e94f19198ea16513790e99e3a88",
+      "insulator/api.py": "dfd3240ebce3683e0fff73c6e5e3a1b43d843815bb30c6e4136ff4da6a9c8fdb",
+      "insulator/e8.py": "eb7f6bd338f0786c945e27bb42beeb38b4cbbfdbd6aa851b9970f973f04917bb",
+      "insulator/e8_h1.py": "d39bbe2565e933c65641b6ad5886faf81f175f094643c82fb4cdb1a994c8d272",
+      "insulator/e8_pointgroup.py": "106d816f05f7eaf336a911d790b7aee0c5892b91e3368929eea8554e0862d4f8",
+      "insulator/e8_spacegroup.py": "aa3eaf00bd1016c157e83b7eedcba8a56b8097c3c4f03d3da9c1a65656c54d57",
+      "insulator/parity_bridge.py": "99b3f5c0a4f1b0e15b38941681db1511b99da18f9ecee1861c427ee389274866",
+      "insulator/worker.py": "74ab7bca5fddb4dcb0857bacd46aae18b0bd9a5461c4d27244978ad640bee01e",
+      "scripts/audit_cyclic_4p1.py": "bff3e19d6d0f21c69eb674807d454d3647fdf9700af688ec8be9a752dc019102",
+      "scripts/build_catalog.py": "c9d25f9cdc70403aa083e84909bbf4124cb3687c693e340b31ddbc45f58773d7",
+      "scripts/build_current_tables.py": "ec6eee7de9aaf90e05bd764053891757500b2ac6c79b6454e53774d0d8b6c6d4",
+      "scripts/build_formula_vm.py": "1aa735ea412aea0dda1eb7f028c283642703815d4a188e4124a28da1f1389db0",
+      "scripts/build_foundation_tables.py": "930d2102c2f036d38de9055f083be6182662e40a6f2b91e0ae7017d45404d2de",
+      "scripts/classify.py": "e9ca54fc3caaeef00479b20e868fe96a3ac5473eeaf577a022eb7fe470b5358b",
+      "scripts/collect_expansion.py": "0c232b4894d4be400aed8aab7ceb97ba26437630fb856f703469295778507318",
+      "scripts/extend_e8_3p1.py": "c64543712be5fd61ee00b94666fc05aac8a07f32c974e351713d351faa451a17",
+      "scripts/formula_worker.py": "111548620b49f4b67f38c0f49c626feb4d7dd03ab8275e88841dbcfdacef467c",
+      "scripts/pilot_cyclic_4p1.py": "733b7668d782a636a7cbaccfe09676a4e31464527626cfd6ebf3f830ea1b5c42",
+      "scripts/recover_paired_campaign.py": "28f8b5bc99a0286c623950a3176d033465ae0e12edf74c4ee34973c647c5d40d",
+      "scripts/report_campaign.py": "0189ee75df7c50e98158cf1168835faed0a1d383cb5dd6d2f0f449af2f27527f",
+      "scripts/report_four_data_campaign.py": "e433bfeb77996b3e6bbfb108e8da6382696ed4a78461e2f1b8ed36a191742fb5",
+      "scripts/stop_owned_campaign.py": "3a871509d01b9b268b3b18f5955edcf1ab5a2c80da598bf5fa481358256d5e49",
+      "scripts/summarize_results.py": "db7071f7edd70ca06315dd0a8316907ec7e34a67f11337a889c4340ecafd3018"
+    },
+    "sha256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b"
+  },
+  "sourceCommit": "ea44c1f55314ddd66587cf452bbaae9331f3a1db",
+  "sourceTag": "sgfull-20261015-h",
+  "sourceVerifiedBeforeLaunch": true,
+  "startedUTC": "2026-10-15T15:17:56.448996+00:00",
+  "state": "launched",
+  "tag": "sgfull-20261015-h-remaining-n02",
+  "timeoutSecondsPerCase": 14400
+}
