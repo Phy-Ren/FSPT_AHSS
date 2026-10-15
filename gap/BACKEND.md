@@ -36,6 +36,49 @@ The phase cohomology adapter is used only above the group's virtual
 cohomological dimension, so there are no omitted continuous phase summands.
 Integer charge groups retain arbitrary torsion orders and free summands.
 
+The initial charge obstruction class uses the generic Smith dual-cycle
+projection adapted from main commit `0864495b90297d3e1a0747b77aae17980f6d1f3f`,
+`gap/class_coordinates.g`. This evaluates the closed phase on the exact
+signed cycles needed for its class, instead of expanding every target cell.
+The source adapter verifies the native integer charge is closed and requires
+a validated, function-bound extension certificate; arbitrary contexts retain
+the full native cocycle check. `c.phaseClassMode := "native"` selects that
+reference route, and `"compare"` checks both. The period API rejects absent or
+mismatched closure certificates. It is restricted to phase degrees above the
+virtual cohomological dimension. Full primitives, completed roots and gauge
+witnesses still use the original native/bar transfer and homotopy correction.
+
+For the initial charge obstruction with zero CI sheet, a certified
+half-integral extension also permits native binary operations. Write
+`qbar = q mod 2` and `w = 2 omega mod 2`. The exact integral equation
+`delta_rho q = 0` and the validated twisted extension equation imply that both
+are binary cocycles. The coefficient map `j: F2 -> (Q/Z)_s`, `j(1)=1/2`,
+is equivariant for every `s`. Consequently
+`[omega cup q + Sq2(q)/2] = j([w cup qbar + Sq2(qbar)])`.
+The native higher diagonal computes the same cohomology operations as the bar
+resolution. Its half-valued result is projected using the actual signed
+phase cohomology object; the map induced by `j` is not assumed injective.
+Only this primary obstruction class uses binary data. Integral charge
+lattices, free CI sheets, full bar sources, primitives, stacking and incoming
+gauge relations retain their original exact data.
+
+`gap/charge_primary.g` verifies the actual native integral charge, its signed
+closure and the canonical target cohomology. Its background certificate is
+bound to the context's action and extension callbacks. General rational
+extensions and uncertified contexts fall back to the phase-class route above.
+`c.chargePrimaryMode` accepts `"native"`, `"bar"` or `"compare"`; the last
+compares the native primary class to the selected `c.phaseClassMode` route.
+An explicit charge mode takes precedence. If only a phase mode is supplied,
+the bar route remains selected for existing reference audits. The command-line
+defaults are `--charge-primary native --phase-class cycles`.
+
+The reusable diagonal and mod-two contraction modules come from main commit
+`0864495b90297d3e1a0747b77aae17980f6d1f3f`, with only the public symbol prefix
+changed. They contain generic resolution operations and load no other theory
+engine. `tests/test_charge_primary.py` checks nonzero obstructions in the full
+affine groups SG16 and SG25, all four independent sign choices, the general
+rational-extension fallback and rejection of invalid charge/target inputs.
+
 For charge cohomology generators, the code evaluates d2 in terminal cohomology,
 constructs its exact integer kernel lattice, and solves the full phase for each
 kernel generator. Torsion powers are evaluated by the supplied product and

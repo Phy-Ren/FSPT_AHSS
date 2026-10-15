@@ -86,6 +86,8 @@ BindGlobal("U1FiniteContext",function(data,depth)
   c:=U1NewContext(G,R,g->data.s[index(g)],g->data.rho[index(g)],
     function(g,h) return Rat(data.omega[index(g)][index(h)]);end,0);
   c.input:=data;c.elementIndex:=index;c.inputValidation:=validation;
+  c.backgroundClosureCertificate:=rec(actions:=[c.s,c.rho,c.omega],integralTwistedCoboundary:=true,
+    halfIntegralOmega:=ForAll(Concatenation(data.omega),x->IsInt(2*Rat(x))));
   return c;
 end);
 BindGlobal("U1CyclicContext",function(n,sbit,rbit,extension)
@@ -104,7 +106,9 @@ BindGlobal("U1CyclicContext",function(n,sbit,rbit,extension)
     rho:=x->(x!.exponents[1]*rbit) mod 2;
     omega:=function(x,y) return extension*QuoInt(x!.exponents[1]+y!.exponents[1],n);end;
   fi;
-  R:=U1FiniteHolonomyResolution(G,7);c:=U1NewContext(G,R,s,rho,omega,0);return c;
+  R:=U1FiniteHolonomyResolution(G,7);c:=U1NewContext(G,R,s,rho,omega,0);
+  c.backgroundClosureCertificate:=rec(actions:=[c.s,c.rho,c.omega],integralTwistedCoboundary:=true,
+    halfIntegralOmega:=IsInt(2*extension));return c;
 end);
 BindGlobal("U1AffineContext",function(data,depth)
   local affine,iso,G,pointMap,pointIndex,R,c,validation,matrices,expected;
@@ -123,7 +127,9 @@ BindGlobal("U1AffineContext",function(data,depth)
   R:=U1ResolutionSpaceGroup(iso,depth);
   c:=U1NewContext(G,R,g->data.s[pointIndex(g)],g->data.rho[pointIndex(g)],
     function(g,h) return Rat(data.omega[pointIndex(g)][pointIndex(h)]);end,data.dimension);
-  c.input:=data;c.inputValidation:=validation;c.affine:=affine;c.iso:=iso;c.pointIndex:=pointIndex;return c;
+  c.input:=data;c.inputValidation:=validation;c.affine:=affine;c.iso:=iso;c.pointIndex:=pointIndex;
+  c.backgroundClosureCertificate:=rec(actions:=[c.s,c.rho,c.omega],integralTwistedCoboundary:=true,
+    halfIntegralOmega:=ForAll(Concatenation(data.omega),x->IsInt(2*Rat(x))));return c;
 end);
 BindGlobal("U1WallpaperContext",U1AffineContext);
 BindGlobal("U1CatalogContext",function(data,depth)
@@ -150,6 +156,8 @@ BindGlobal("U1SiblingContext",function(previous,data)
   c.bar:=previous.bar;c.differentialCache:=previous.differentialCache;
   c.smithCache:=previous.smithCache;c.cohomologyCache:=previous.cohomologyCache;
   c.f2SolveCache:=previous.f2SolveCache;c.input:=data;c.inputValidation:=validation;
+  c.backgroundClosureCertificate:=rec(actions:=[c.s,c.rho,c.omega],integralTwistedCoboundary:=true,
+    halfIntegralOmega:=ForAll(Concatenation(data.omega),x->IsInt(2*Rat(x))));
   if IsBound(previous.affine) then
     c.affine:=previous.affine;c.iso:=previous.iso;c.pointIndex:=previous.pointIndex;
   else c.elementIndex:=previous.elementIndex;fi;

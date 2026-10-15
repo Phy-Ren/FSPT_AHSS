@@ -156,6 +156,10 @@ def source(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: C
     if spatial_dimension == 4:
         return _cal.source4(symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.rho1).mod(1)
     if spatial_dimension == 3:
+        from ._compiled.runtime import phase3
+        accelerated = phase3("source", symmetry, sheet, charge)
+        if accelerated is not None:
+            return accelerated
         return _cal.source3(symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.rho1).mod(1)
     extension = symmetry.omega2_real
     quadratic = extension.cup(extension) + extension.cup(extension.d(), 1)
@@ -187,8 +191,11 @@ def product(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: 
         phase = _cal.product4(symmetry.omega2_real, sheet, charge, sheet_prime, charge_prime,
                               symmetry.s1, symmetry.rho1)
     elif spatial_dimension == 3:
-        phase = _cal.product3(symmetry.omega2_real, sheet, charge, sheet_prime, charge_prime,
-                              symmetry.s1, symmetry.rho1)
+        from ._compiled.runtime import phase3
+        phase = phase3("product", symmetry, sheet, charge, sheet_prime, charge_prime)
+        if phase is None:
+            phase = _cal.product3(symmetry.omega2_real, sheet, charge, sheet_prime, charge_prime,
+                                  symmetry.s1, symmetry.rho1)
     else:
         binary_derivative = bin0(symmetry.omega2_real.d())
         phase = (charge_product(symmetry, charge, charge_prime)

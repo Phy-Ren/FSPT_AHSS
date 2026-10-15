@@ -241,7 +241,7 @@ BindGlobal("U1Classify",function(c,d,options...)
   HQ:=U1Cohomology(c,d,"Zr");HP:=U1Cohomology(c,d+1,"U1s");HO:=U1Cohomology(c,d+2,"U1s");
   chargeBasis:=List(HQ.generators,x->U1Bar(c,d,"Zr",x));
   phaseBasis:=List(HP.generators,x->U1Bar(c,d+1,"U1s",x));
-  sourceMap:=List(chargeBasis,q->HO.coordinates(U1Native(c,d+2,"U1s",U1ChargeSource(c,d,q))));
+  sourceMap:=List(HQ.generators,q->U1ChargeObstructionCoordinates(c,d,HO,q));
   if fail in sourceMap then Error("Charge obstruction was not a cocycle");fi;
   K:=U1MapKernel(sourceMap,HO.orders,Length(chargeBasis));
   if K=[] then Ki:=[];else Ki:=Inverse(K);fi;
@@ -396,6 +396,7 @@ BindGlobal("U1Classify",function(c,d,options...)
     List(sheetStates,x->rec(kind:="CI",nativeSheet:=U1Native(c,d-2,"Zs",x.sheet),nativeCharge:=U1Native(c,d,"Zr",x.charge),nativePhase:=U1Native(c,d+1,"U1s",x.phase))));
   result.nativeCompletionChecks:=c.completedStateChecks;
   result.formulaWorkerCalls:=0;if IsBound(c.workerCalls) then result.formulaWorkerCalls:=c.workerCalls;fi;
+  if IsBound(c.chargePrimaryStats) then result.chargePrimaryStats:=ShallowCopy(c.chargePrimaryStats);fi;
   result.formulaCacheStats:=rec(entryLimitPerCache:=8192);
   if IsBound(c.requestCache) then
     result.formulaCacheStats.requestHits:=c.requestCacheHits;

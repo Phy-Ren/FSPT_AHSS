@@ -1,0 +1,74 @@
+# Exact classification performance
+
+The insulator engine reuses the generic fast paths used by the superconducting
+`main` branch at commit `0864495b90297d3e1a0747b77aae17980f6d1f3f`.
+There is no runtime dependency on that checkout. U1 obstruction, stacking and
+gauge formulas remain in this branch.
+
+## Reused algorithms
+
+1. **Native primary obstruction classes.** For a certified closed integer
+   charge `q` and half-integral extension `omega`, compute the class of
+   `j[(2 omega mod 2) cup (q mod 2) + Sq^2(q mod 2)]`, where `j(1)=1/2`.
+   The coefficient map is equivariant for every phase sign. Its induced map
+   on cohomology need not be injective: the result is evaluated in the actual
+   signed U1 target. Integer charge lattices, arbitrary torsion orders and
+   free generators remain intact. General rational extensions use the bar
+   reference. See [charge_primary.g](../gap/charge_primary.g).
+2. **Smith cycle periods.** A certified closed phase can be projected to its
+   cohomology class by evaluating the dual Smith cycles. This avoids evaluating
+   every resolution cell merely to obtain a class. Complete cochains and
+   comparison homotopies are still used to solve primitives and construct
+   roots and gauge witnesses. See [class_coordinates.g](../gap/class_coordinates.g).
+3. **Generated integer formulas.** The generic scalar DAG execution method
+   from `main` evaluates expressions generated from the U1 3+1D source and
+   stacking formulas. Python integers provide the default portable execution;
+   an optional checked C++ VM falls back to Python on overflow. The original
+   public validation runs first. Unsupported domains retain the original
+   evaluator. See the [compiled formula specification](../insulator/_compiled/README.md).
+
+These optimizations supplement the existing exact simplex plans, bounded
+request caches, paired-spin geometry reuse, and optimized GAP executable.
+The two spins retain separate extension cocycles and output files.
+
+## Controls and provenance
+
+The production defaults are `--charge-primary native --phase-class cycles`.
+`--charge-primary compare --phase-class compare` checks the native primary
+against both bar class projections. The full reference is:
+
+```sh
+U1_DAG_MODE=reference python scripts/classify.py \
+  --case point3_06_spin_half --charge-primary bar --phase-class native \
+  --output /absolute/path/new-reference-run
+```
+
+`--phase-class` controls the bar class projection when that route is used;
+explicit `--charge-primary native` takes precedence for eligible primaries.
+It does not change the full primitive calculation. Each case records the
+requested modes and actual native/bar primary call counts. Each campaign
+records source hashes, selected inputs, logs, witnesses and
+`formula_runtime.json`, including the optional VM binary hash. The runner
+rejects a campaign whose source or selected VM artifact changes during execution.
+
+## Measured checks
+
+Measurements below refer to specific workloads, not universal speed factors.
+
+| Workload on the same local host | Reference | Accelerated | Scope |
+| --- | ---: | ---: | --- |
+| Complete SG14 classification, exact simplex engine versus added source/product DAG | 70.919 s | 30.402 s | Complete roots, gauges, primitives and presentation agree |
+| Replay of 19,099 captured SG14 cache-miss responses | 41.520 CPU s | 4.448 CPU s, Python DAG; 3.991 CPU s, native DAG | Every response agrees; includes unchanged gauge operations |
+| Seven-generator SG221 spin-half primary charge obstruction map | Not complete after 120 wall s | 0.547 CPU s | One stage only; not an end-to-end speed comparison |
+
+The primary class tests include 32 affine charge generators, 16 nonzero
+obstructions, independent coefficient signs and general rational fallback.
+The period tests include torsion orders 2, 3, 4, 6, 8 and 9. Formula tests
+include negative carries, huge integers, native overflow, invalid inputs and
+context isolation. The combined implementation passed all 95 tests before
+the first deployment snapshot.
+
+Space-group campaigns run on compute nodes with immutable source snapshots.
+Concurrency is bounded by measured memory as well as CPU capacity. A failed
+or incomplete process is retained as evidence and retried separately; launch
+coverage is never reported as completed classification coverage.

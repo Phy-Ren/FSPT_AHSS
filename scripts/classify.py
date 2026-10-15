@@ -27,12 +27,21 @@ def digest(path):
 
 def source_manifest():
     files = []
-    for directory, suffixes in (("gap", {".g"}), ("insulator", {".py", ".json"}),
+    for directory, suffixes in (("gap", {".g"}), ("insulator", {".py", ".json", ".cpp", ".h"}),
                                 ("scripts", {".py"})):
         files.extend(p for p in (ROOT / directory).rglob("*") if p.suffix in suffixes)
     hashes = {str(p.relative_to(ROOT)): digest(p) for p in sorted(files)}
     encoded = json.dumps(hashes, sort_keys=True, separators=(",", ":")).encode()
     return {"sha256": hashlib.sha256(encoded).hexdigest(), "files": hashes}
+
+
+def formula_runtime_manifest():
+    """Record the selected VM artifact; individual requests may use exact fallback."""
+    library = Path(os.environ.get("U1_DAG_LIBRARY", str(ROOT / "insulator/_compiled/u1_dag_vm.so"))).resolve()
+    return {"requestedMode": os.environ.get("U1_DAG_MODE", "auto"),
+            "libraryPath": str(library), "libraryPresent": library.is_file(),
+            "librarySHA256": digest(library) if library.is_file() else None,
+            "fallbackPolicy": "exact Python integer DAG or original U1 formula according to request eligibility"}
 
 
 def gap_literal(value):
@@ -57,7 +66,17 @@ def write_json(path, value):
     path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
 
 
-def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False):
+def acceleration_options(charge_primary, phase_class):
+    if charge_primary not in {"bar", "native", "compare"}:
+        raise ValueError("Unknown charge primary mode")
+    if phase_class not in {"cycles", "native", "compare"}:
+        raise ValueError("Unknown phase class mode")
+    return ("c.chargePrimaryMode:=" + gap_literal(charge_primary) + ";;\n"
+            "c.phaseClassMode:=" + gap_literal(phase_class) + ";;\n")
+
+
+def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False,
+             charge_primary="native", phase_class="cycles"):
     data = json.loads(input_path.read_text())
     directory = output / data["id"]
     directory.mkdir()  # Never overwrite accepted results or another running case.
@@ -71,6 +90,7 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
         "Read(Concatenation(U1_ROOT,\"/gap/load.g\"));;\n"
         "U1_INPUT:=" + gap_literal(data) + ";;\n"
         "c:=U1CatalogContext(U1_INPUT,6);;\n"
+        + acceleration_options(charge_primary, phase_class) +
         "result:=U1Classify(c,U1_INPUT.dimension,rec(uniformIQH:="
         + gap_literal(uniform_iqh) + "));;\n"
         "output:=OutputTextFile(" + gap_literal(str(native)) + ",false);;\n"
@@ -83,7 +103,8 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
     metadata = {"id": data["id"], "status": "running", "command": command,
                 "host": platform.node(), "startedUTC": datetime.now(timezone.utc).isoformat(),
                 "inputSHA256": digest(input_path), "sourceSHA256": source["sha256"],
-                "timeoutSeconds": timeout, "uniformIQHRequested": uniform_iqh}
+                "timeoutSeconds": timeout, "uniformIQHRequested": uniform_iqh,
+                "chargePrimaryRequested": charge_primary, "phaseClassRequested": phase_class}
     write_json(directory / "run.json", metadata)
     with (directory / "stdout.log").open("w") as out, (directory / "stderr.log").open("w") as err:
         process = subprocess.Popen(command, cwd=ROOT, stdout=out, stderr=err,
@@ -117,10 +138,12 @@ def run_case(input_path, output, gap, timeout, memory, source, uniform_iqh=False
     return metadata
 
 
-def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh=False):
+def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh=False,
+                  charge_primary="native", phase_class="cycles"):
     """One GAP process, separate immutable outputs and independent omega contexts."""
     if len(input_paths) == 1:
-        return [run_case(input_paths[0], output, gap, timeout, memory, source, uniform_iqh)]
+        return [run_case(input_paths[0], output, gap, timeout, memory, source, uniform_iqh,
+                         charge_primary, phase_class)]
     if len(input_paths) != 2:
         raise ValueError("A paired run requires the two physical spins of one geometry")
     inputs = [json.loads(path.read_text()) for path in input_paths]
@@ -142,6 +165,7 @@ def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh
         else:
             text += "if IsBound(c.classificationStates) then Unbind(c.classificationStates);fi;\n"
             text += "c:=U1SiblingContext(c,U1_INPUT);;\n"
+        text += acceleration_options(charge_primary, phase_class)
         text += "result:=U1Classify(c,U1_INPUT.dimension,rec(uniformIQH:=" + gap_literal(uniform_iqh) + "));;\n"
         text += "output:=OutputTextFile(" + gap_literal(str(directory / "native.json")) + ",false);;\n"
         text += "SetPrintFormattingStatus(output,false);;\nPrintTo(output,U1JSON(result),\"\\n\");;\nCloseStream(output);;\n"
@@ -160,6 +184,7 @@ def run_spin_pair(input_paths, output, gap, timeout, memory, source, uniform_iqh
                "timeoutSeconds": timeout, "batchTimeoutSeconds": timeout * len(inputs),
                "timeoutEnforcement": "shared batch budget; individual cases are not killed separately",
                "uniformIQHRequested": uniform_iqh,
+               "chargePrimaryRequested": charge_primary, "phaseClassRequested": phase_class,
                "pairedSpins": True, "batchCaseIDs": [item["id"] for item in inputs],
                "reusePolicy": "same group/resolution/bar and identical character linear algebra; independent omega/source contexts"}
         write_json(directory / "run.json", row)
@@ -222,6 +247,10 @@ def main():
     parser.add_argument("--memory", default="8g", help="GAP workspace limit per process")
     parser.add_argument("--uniform-iqh", action="store_true",
                         help="Include the 2+1D uniform integer Hall layer")
+    parser.add_argument("--charge-primary", choices=("bar", "native", "compare"), default="native",
+                        help="Primary charge obstruction class: native exact operations, bar reference, or agreement check")
+    parser.add_argument("--phase-class", choices=("cycles", "native", "compare"), default="cycles",
+                        help="Closed bar phase class: Smith cycle periods, all native cells, or agreement check")
     args = parser.parse_args()
     if not args.family and not args.case:
         parser.error("Select --family or --case")
@@ -248,7 +277,9 @@ def main():
     args.output = args.output.resolve()
     args.output.mkdir(parents=True, exist_ok=False)
     source = source_manifest()
+    formula_runtime = formula_runtime_manifest()
     write_json(args.output / "source.json", source)
+    write_json(args.output / "formula_runtime.json", formula_runtime)
     write_json(args.output / "selection.json", [p.stem for p in inputs])
     rows = []
     with ThreadPoolExecutor(max_workers=args.jobs) as pool:
@@ -258,10 +289,12 @@ def main():
                 data = json.loads(path.read_text())
                 pairs.setdefault((data["family"], data["index"]), []).append(path)
             tasks = [pool.submit(run_spin_pair, paths, args.output, args.gap, args.timeout,
-                                 args.memory, source, args.uniform_iqh) for paths in pairs.values()]
+                                 args.memory, source, args.uniform_iqh,
+                                 args.charge_primary, args.phase_class) for paths in pairs.values()]
         else:
             tasks = [pool.submit(run_case, p, args.output, args.gap, args.timeout,
-                                 args.memory, source, args.uniform_iqh) for p in inputs]
+                                 args.memory, source, args.uniform_iqh,
+                                 args.charge_primary, args.phase_class) for p in inputs]
         for task in as_completed(tasks):
             completed = task.result()
             if isinstance(completed, dict):
@@ -272,6 +305,8 @@ def main():
             write_json(args.output / "summary.json", sorted(rows, key=lambda r: r["id"]))
     if source_manifest() != source:
         raise RuntimeError("Source changed during campaign; results cannot be accepted")
+    if formula_runtime_manifest() != formula_runtime:
+        raise RuntimeError("Formula VM artifact changed during campaign; results cannot be accepted")
     return 0 if all(r["status"] == "complete" for r in rows) else 1
 
 
