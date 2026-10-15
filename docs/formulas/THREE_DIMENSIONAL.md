@@ -107,6 +107,12 @@ incoming relation. Closed charge parameters produce the incoming phase
 from the common charge block. None of these phases are dropped during
 sheet removal or root-power calculations.
 
+For a completed pure-charge root with half-integral extension background,
+[even charge-root relations](CHARGE_ROOT_RELATIONS.md) gives the exact bar
+identity and a derived native cohomology-class formula, including negative
+even powers. The class formula is unimplemented and does not replace the
+full phase, gauge or incoming-relation witnesses.
+
 Integral background lift changes use
 `omega_R -> omega_R+z_2`, `n_3 -> n_3-z_2 cup n_1`; real section changes
 use `omega_R -> omega_R+d_(rho+s)alpha_1` with charge unchanged. The phase
