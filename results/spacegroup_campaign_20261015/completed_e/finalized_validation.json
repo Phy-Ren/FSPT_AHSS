@@ -1,0 +1,607 @@
+{
+  "allSixCIAndE8NormallyAccepted": true,
+  "archiveSHA256": "e5dba0ad1b3310ba18aa33d1ca251a1484f7b652ed6b0c0d173a644c08f45369",
+  "auditUTC": "2026-10-15T14:06:46.012009+00:00",
+  "ciChecks": [
+    {
+      "id": "spacegroup_214_spin_half",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 4,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 4,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "spacegroup_214_spinless",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 2,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 2,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 9,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "spacegroup_166_spin_half",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 1,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 1,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 16,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "spacegroup_166_spinless",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 1,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 1,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 16,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "spacegroup_014_spin_half",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 2,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 2,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 13,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "spacegroup_014_spinless",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 2,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 2,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 13,
+      "sourceHashVerified": true
+    }
+  ],
+  "ciSourceSHA256": "6817ca7af3c20dbb89139308046456129171d08340014eab83c7c7d6487b86bd",
+  "collectorSHA256": "0c232b4894d4be400aed8aab7ceb97ba26437630fb856f703469295778507318",
+  "duplicateComparisons": [
+    {
+      "DResultPath": "/home/xingyu/insulator-campaign-download/sgfull-20261015-d-preserved-6065593/sgfull-20261015-d-n08-preserved/spacegroup_014_spin_half/result.json",
+      "DResultSHA256": "0f954b41946eeb51047291675c35307aef731b1b62fc151e6994c282d58a4db8",
+      "EResultSHA256": "ec83d94407c18f8fa5b54bd88970321135b0d5d06fc786b334477fdf74931579",
+      "allFieldNames": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "formulaCacheStats",
+        "formulaWorkerCalls",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "pairedGeometryReuse",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionBuildTimings",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "differingFieldNames": [
+        "resolutionBuildTimings"
+      ],
+      "exactDifferences": {
+        "resolutionBuildTimings": {
+          "D": {
+            "RL_ms": 0,
+            "RP_ms": 7,
+            "extension_ms": 236,
+            "holonomy_ms": 15,
+            "section_ms": 1
+          },
+          "E": {
+            "RL_ms": 1,
+            "RP_ms": 7,
+            "extension_ms": 241,
+            "holonomy_ms": 15,
+            "section_ms": 1
+          }
+        }
+      },
+      "exactlyEqualFieldCount": 36,
+      "explicitExcludedTimingFieldNames": [
+        "resolutionBuildTimings"
+      ],
+      "id": "spacegroup_014_spin_half",
+      "sameCompleteClassificationExceptRecordedTiming": true,
+      "sameCompletePresentation": true,
+      "sameInput": true,
+      "scientificDifferenceFieldNames": []
+    },
+    {
+      "DResultPath": "/home/xingyu/insulator-campaign-download/sgfull-20261015-d-preserved-6065593/sgfull-20261015-d-n02-preserved/spacegroup_166_spin_half/result.json",
+      "DResultSHA256": "ffee41c3f766bb259cbedaa7d030dfc183660c3f907e1773678fbb845112f354",
+      "EResultSHA256": "df23569bcce5738c11bb3b5103c225138c90cd170c5bdbd039bc324d7628c35a",
+      "allFieldNames": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "formulaCacheStats",
+        "formulaWorkerCalls",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "pairedGeometryReuse",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionBuildTimings",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "differingFieldNames": [
+        "resolutionBuildTimings"
+      ],
+      "exactDifferences": {
+        "resolutionBuildTimings": {
+          "D": {
+            "RL_ms": 1,
+            "RP_ms": 102,
+            "extension_ms": 265,
+            "holonomy_ms": 18,
+            "section_ms": 3
+          },
+          "E": {
+            "RL_ms": 0,
+            "RP_ms": 160,
+            "extension_ms": 383,
+            "holonomy_ms": 34,
+            "section_ms": 4
+          }
+        }
+      },
+      "exactlyEqualFieldCount": 36,
+      "explicitExcludedTimingFieldNames": [
+        "resolutionBuildTimings"
+      ],
+      "id": "spacegroup_166_spin_half",
+      "sameCompleteClassificationExceptRecordedTiming": true,
+      "sameCompletePresentation": true,
+      "sameInput": true,
+      "scientificDifferenceFieldNames": []
+    },
+    {
+      "DResultPath": "/home/xingyu/insulator-campaign-download/sgfull-20261015-d-preserved-6065593/sgfull-20261015-d-n02-preserved/spacegroup_166_spinless/result.json",
+      "DResultSHA256": "344b7adb0f656be3bd9479a526c4eec22828632370235ea1da442dca8b18edb6",
+      "EResultSHA256": "64b5e864145e4a2b5521542e8db3c92259236249f8927c5df1a42a4dba25f137",
+      "allFieldNames": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "formulaCacheStats",
+        "formulaWorkerCalls",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "pairedGeometryReuse",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionBuildTimings",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "differingFieldNames": [
+        "resolutionBuildTimings"
+      ],
+      "exactDifferences": {
+        "resolutionBuildTimings": {
+          "D": {
+            "RL_ms": 1,
+            "RP_ms": 102,
+            "extension_ms": 265,
+            "holonomy_ms": 18,
+            "section_ms": 3
+          },
+          "E": {
+            "RL_ms": 0,
+            "RP_ms": 160,
+            "extension_ms": 383,
+            "holonomy_ms": 34,
+            "section_ms": 4
+          }
+        }
+      },
+      "exactlyEqualFieldCount": 36,
+      "explicitExcludedTimingFieldNames": [
+        "resolutionBuildTimings"
+      ],
+      "id": "spacegroup_166_spinless",
+      "sameCompleteClassificationExceptRecordedTiming": true,
+      "sameCompletePresentation": true,
+      "sameInput": true,
+      "scientificDifferenceFieldNames": []
+    },
+    {
+      "DResultPath": "/home/xingyu/insulator-campaign-download/sgfull-20261015-d-preserved-6065593/sgfull-20261015-d-n02-preserved/spacegroup_214_spin_half/result.json",
+      "DResultSHA256": "ec7a36144f67cf73515440d654a4db2b5692fcbd2a2ad808be1535537d1ef395",
+      "EResultSHA256": "e870eb5e4cd8481c0edd7a7b6b0cca099d975448d5d116822609b40d42deb318",
+      "allFieldNames": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "formulaCacheStats",
+        "formulaWorkerCalls",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "pairedGeometryReuse",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionBuildTimings",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ],
+      "differingFieldNames": [
+        "resolutionBuildTimings"
+      ],
+      "exactDifferences": {
+        "resolutionBuildTimings": {
+          "D": {
+            "RL_ms": 1,
+            "RP_ms": 266,
+            "extension_ms": 4974,
+            "holonomy_ms": 27,
+            "section_ms": 7
+          },
+          "E": {
+            "RL_ms": 1,
+            "RP_ms": 420,
+            "extension_ms": 3729,
+            "holonomy_ms": 32,
+            "section_ms": 12
+          }
+        }
+      },
+      "exactlyEqualFieldCount": 36,
+      "explicitExcludedTimingFieldNames": [
+        "resolutionBuildTimings"
+      ],
+      "id": "spacegroup_214_spin_half",
+      "sameCompleteClassificationExceptRecordedTiming": true,
+      "sameCompletePresentation": true,
+      "sameInput": true,
+      "scientificDifferenceFieldNames": []
+    }
+  ],
+  "e8Checks": [
+    {
+      "ciParentSHA256": "e870eb5e4cd8481c0edd7a7b6b0cca099d975448d5d116822609b40d42deb318",
+      "id": "spacegroup_214_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "475895dc4f9199bbff45bacbe2aa1bbf292c82638d05cc162c061fc118dec026",
+      "id": "spacegroup_214_spinless",
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "df23569bcce5738c11bb3b5103c225138c90cd170c5bdbd039bc324d7628c35a",
+      "id": "spacegroup_166_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "64b5e864145e4a2b5521542e8db3c92259236249f8927c5df1a42a4dba25f137",
+      "id": "spacegroup_166_spinless",
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "ec83d94407c18f8fa5b54bd88970321135b0d5d06fc786b334477fdf74931579",
+      "id": "spacegroup_014_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 3,
+        "torsion": [
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "neutralSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "929c52fd7003b217e522d5196c238a86c82dc638acdbf86b6ac2aa957eb977d1",
+      "id": "spacegroup_014_spinless",
+      "independentSmithGroup": {
+        "freeRank": 3,
+        "torsion": [
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "neutralSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    }
+  ],
+  "e8SourceSHA256": "994af05b2ab8cea90002e6c75dd2442736b3f1096bf0ceab98703f6e90dc2214",
+  "exactCIParentBytesVerified": true,
+  "finalizationReportSHA256": "b2ee6b6992037edaa517d888aec2ce85e47fbad2a1c27fae280d5701bc6b99fd",
+  "originalCIArtifactsUnchanged": true,
+  "physicalScopeUnchanged": true,
+  "recoveryOptIn": false,
+  "resultHashes": {
+    "CI": {
+      "spacegroup_014_spin_half": "ec83d94407c18f8fa5b54bd88970321135b0d5d06fc786b334477fdf74931579",
+      "spacegroup_014_spinless": "929c52fd7003b217e522d5196c238a86c82dc638acdbf86b6ac2aa957eb977d1",
+      "spacegroup_166_spin_half": "df23569bcce5738c11bb3b5103c225138c90cd170c5bdbd039bc324d7628c35a",
+      "spacegroup_166_spinless": "64b5e864145e4a2b5521542e8db3c92259236249f8927c5df1a42a4dba25f137",
+      "spacegroup_214_spin_half": "e870eb5e4cd8481c0edd7a7b6b0cca099d975448d5d116822609b40d42deb318",
+      "spacegroup_214_spinless": "475895dc4f9199bbff45bacbe2aa1bbf292c82638d05cc162c061fc118dec026"
+    },
+    "E8": {
+      "spacegroup_014_spin_half": "b4b9b3968a0062486b2b9dc02235803bacf93b3a89015de627deb751880abf0c",
+      "spacegroup_014_spinless": "25328659137f6086a70dba45473b20e843c142783dd0e31a2fd1b027d9f2f9e4",
+      "spacegroup_166_spin_half": "09591a93b0b496df87703cafbd578e94dd87b6b39f34e79188b361e423530554",
+      "spacegroup_166_spinless": "a5170f83650dc42353de17585e535722056c72eb594017a9c8a3218ee7ab2a34",
+      "spacegroup_214_spin_half": "9a5457c9dcf72dad8265ec0d0120263bd5afa079ddbcc675c5954b18bac12a5c",
+      "spacegroup_214_spinless": "d3119114a5f87b8e315d25223f4a0a5eb093d5f224c4f0df712f4fa49f232f62"
+    }
+  },
+  "schema": "u1-e6-finalized-independent-audit-v1",
+  "scriptSHA256": "947ab570e4d4f5bb7e3e275fcf0a5bd220b1b3d258f7956f82b142f33d35cc58"
+}
