@@ -43,6 +43,14 @@ gauge formulas remain in this branch.
    quarter-valued completed phases. Literal zero sources retain literal zero
    primitives; uncertified or non-half-integral inputs retain the reference
    route. See [backend_half_phase.g](../gap/backend_half_phase.g).
+6. **Canonical zero lower fields.** After the complete vacuum gauge has
+   eliminated a sheet or charge cocycle, replace its proved pointwise-zero
+   callback by the canonical zero function. The full phase transformation
+   still uses the original completed state and unchanged gauge parameters.
+   This avoids repeatedly expanding zero lower fields inside later stacking
+   operations. It applies to completed states in the internal reduction
+   routine; the unrestricted local formula API is unchanged. See the
+   [full-cochain proof](../results/spacegroup_campaign_20261015/vacuum_reduction_performance/proof.md).
 
 These optimizations supplement the existing exact simplex plans, bounded
 request caches, paired-spin geometry reuse, and optimized GAP executable.
@@ -57,7 +65,7 @@ against both bar class projections. The full reference is:
 ```sh
 U1_DAG_MODE=reference python scripts/classify.py \
   --case point3_06_spin_half --charge-primary bar --phase-class native \
-  --closed-charge-source reference \
+  --closed-charge-source reference --vacuum-reduction reference \
   --output /absolute/path/new-reference-run
 ```
 
@@ -70,6 +78,8 @@ records source hashes, selected inputs, logs, witnesses and
 rejects a campaign whose source or selected VM artifact changes during execution.
 `--closed-charge-source compare` additionally checks the certified full-source
 expression against the original expression pointwise modulo one.
+`--vacuum-reduction canonical` is the production default; its `reference`
+mode retains the original lower-field callbacks after vacuum gauges.
 
 ## Measured checks
 
@@ -84,12 +94,14 @@ Measurements below refer to specific workloads, not universal speed factors.
 | SG141 spin-half, initial charge completion with fixed Koszul resolution | 60.853 CPU s | 20.573 CPU s | Five full charge lifts and every native witness agree; later gauges/stacking excluded |
 | SG229 spin-half, initial charge completion with fixed Koszul resolution | 74.107 CPU s | 21.351 CPU s | Six full charge lifts and every native witness agree; later gauges/stacking excluded |
 | Complete SG221 spin-half, G baseline versus half-source/lazy-cup candidate | 234.922 s | 224.534 s | All 37 mathematical/operation fields agree; only resolution timings differ; modest observed whole-run change |
+| Complete SG221 spin-half, G baseline versus canonical zero lower fields | 234.922 s | 127.065 s | All 35 mathematical fields agree literally; peak RSS 1,823,532 to 1,301,088 KiB |
 
 The primary class tests include 32 affine charge generators, 16 nonzero
 obstructions, independent coefficient signs and general rational fallback.
 The period tests include torsion orders 2, 3, 4, 6, 8 and 9. Formula tests
 include negative carries, huge integers, native overflow, invalid inputs and
-context isolation. The earlier integrated engine and recovery tooling passed all 105 tests.
+context isolation. The integrated engine, canonical zero reduction, runner
+timing and recovery tooling passed all 116 tests in 68.609 seconds.
 The half-source addition has focused tests covering 98,304 nonabelian source
 values, signed transfers, complete primitive values, quarter-valued primitives,
 and literal-zero identity. A complete rerun of all 64 spatial point-group backgrounds
@@ -106,8 +118,17 @@ The [half-source evidence](../results/spacegroup_campaign_20261015/half_phase_pe
 preserves its bounded stage controls, full SG221 comparison, final zero-path
 regression, source overlays and independent review. The roughly threefold
 charge-stage gains do not imply the same speedup for a full classification.
-The full SG221 observation was only about 4.6%; it does not justify a general
-campaign speed estimate or changing active immutable runs.
+The full SG221 half-source observation was only about 4.6%.
+The separate [canonical zero-field experiment](../results/spacegroup_campaign_20261015/vacuum_reduction_performance/README.md)
+preserves the complete before/after records and signed pointwise controls for
+its 1.85-fold observed improvement. Neither experiment establishes a universal
+campaign speed factor.
+
+New paired runs measure elapsed time from monotonic observations of exact
+completion markers. Older paired records that derived elapsed time from NFS
+file timestamps retain their original values, including negative values;
+those values cannot support timing comparisons. Classification acceptance is
+independent of these timing fields.
 
 Space-group campaigns run on compute nodes with immutable source snapshots.
 Concurrency is bounded by measured memory as well as CPU capacity. A failed
