@@ -109,6 +109,11 @@ The source equality also implies equality of the **specified prism gauges**: use
 
 Thus the pure neutral source, product, and a compatible gauge are matched. This removes that particular uncertainty without claiming the full charged–neutral bridge.
 
+The later [relative mixed E8–CI proof](../general_groups/mixed_bridge_4p1.md)
+extends the pure-neutral result to arbitrary base CI sheets. It supplies
+the extra source, product, and gauge corrections, while leaving the
+pure-CI universal terminal map below open.
+
 ## 5. What remains for a universal nonzero-CI comparison
 
 Let $f$ be the complete lower map, including carries, and let $a,b$ denote E8-first states. A terminal comparison still requires specified universal cochains satisfying

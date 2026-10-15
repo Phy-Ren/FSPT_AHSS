@@ -1,0 +1,1373 @@
+{
+  "status": "COMPLETE",
+  "claim": "Per-packet conservative periodicity certificates only; UNKNOWN is not disproved",
+  "scope": "Legal integral parity cochains; shift n and/or m by arbitrary multiples of sixteen",
+  "public_reference": "/home/xingyu/FSPT_AHSS_public",
+  "scenarios": [
+    {
+      "name": "arbitrary_first_shift",
+      "shifted_fields": [
+        "n"
+      ],
+      "zero_base_fields": [],
+      "packets": [
+        {
+          "packet": "source_4_majorana",
+          "sha256": "c6d395970e8f8ea1e627ce269506c10d28ba29d70debbf5c300c29452ad4b7b3",
+          "nodes": 66,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "source_4_fermion",
+          "sha256": "9eb14a3670dbe5a11fd8223203418a6532e2bb4b5aafe32066f1efd5fd3104d3",
+          "nodes": 413,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "product_4_majorana",
+          "sha256": "972f1f2fc51440ce5b75eaae450a4262517437d365726f1292443be2f02e1fed",
+          "nodes": 26,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "product_4_fermion",
+          "sha256": "7cc3a08f5ad16ace60627752d3e3e93c2072603f0d0fe102f3e46983820677e2",
+          "nodes": 558,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 15,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "y6",
+          "sha256": "f89838de8524321b688089e3c8a7fce5592e6b6327893e84607a8cd40c0fe0c2",
+          "nodes": 173707,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 2117,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "h6",
+          "sha256": "070809f164fd0e44ce75f43edfeb59099fc0b4ac47ea480485d9d7eecea96092",
+          "nodes": 35616,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 55,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "high6",
+          "sha256": "51f81b670d50bbd9e52d170226c8bf94be4de49adf79c2a3ccb82a98b95a6a0a",
+          "nodes": 36150,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 4
+            }
+          ],
+          "exact_divisions_not_independently_proved": 84,
+          "required_difference_v2": 4,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "rho4",
+          "sha256": "c43fe14c69de0b09d4df3d07a566bcb9497a04bf56ad012e2660f759bd838904",
+          "nodes": 13162,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 178,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "tensor4",
+          "sha256": "70e4cd786461fd3bbfb8d8c83e3cb8e6d42f14dfc136d6db6a248792b0253efd",
+          "nodes": 1658,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 61,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "nonbinary4",
+          "sha256": "25a97cfe4a71c699d0ff6207aa827c79ac945dd5cbf3ef352f3d60dea32f529e",
+          "nodes": 3075,
+          "outputs": [
+            {
+              "base_v2": 1,
+              "perturbed_v2": 1,
+              "difference_v2": 4
+            }
+          ],
+          "exact_divisions_not_independently_proved": 62,
+          "required_difference_v2": 4,
+          "certificate_status": "PROVED"
+        }
+      ]
+    },
+    {
+      "name": "arbitrary_both_shift",
+      "shifted_fields": [
+        "n",
+        "m"
+      ],
+      "zero_base_fields": [],
+      "packets": [
+        {
+          "packet": "source_4_majorana",
+          "sha256": "c6d395970e8f8ea1e627ce269506c10d28ba29d70debbf5c300c29452ad4b7b3",
+          "nodes": 66,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "source_4_fermion",
+          "sha256": "9eb14a3670dbe5a11fd8223203418a6532e2bb4b5aafe32066f1efd5fd3104d3",
+          "nodes": 413,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "product_4_majorana",
+          "sha256": "972f1f2fc51440ce5b75eaae450a4262517437d365726f1292443be2f02e1fed",
+          "nodes": 26,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "product_4_fermion",
+          "sha256": "7cc3a08f5ad16ace60627752d3e3e93c2072603f0d0fe102f3e46983820677e2",
+          "nodes": 558,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 15,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "y6",
+          "sha256": "f89838de8524321b688089e3c8a7fce5592e6b6327893e84607a8cd40c0fe0c2",
+          "nodes": 173707,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 2117,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "h6",
+          "sha256": "070809f164fd0e44ce75f43edfeb59099fc0b4ac47ea480485d9d7eecea96092",
+          "nodes": 35616,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 55,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "high6",
+          "sha256": "51f81b670d50bbd9e52d170226c8bf94be4de49adf79c2a3ccb82a98b95a6a0a",
+          "nodes": 36150,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 4
+            }
+          ],
+          "exact_divisions_not_independently_proved": 84,
+          "required_difference_v2": 4,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "rho4",
+          "sha256": "c43fe14c69de0b09d4df3d07a566bcb9497a04bf56ad012e2660f759bd838904",
+          "nodes": 13162,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 178,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "tensor4",
+          "sha256": "70e4cd786461fd3bbfb8d8c83e3cb8e6d42f14dfc136d6db6a248792b0253efd",
+          "nodes": 1658,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 61,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "nonbinary4",
+          "sha256": "25a97cfe4a71c699d0ff6207aa827c79ac945dd5cbf3ef352f3d60dea32f529e",
+          "nodes": 3075,
+          "outputs": [
+            {
+              "base_v2": 1,
+              "perturbed_v2": 1,
+              "difference_v2": 4
+            }
+          ],
+          "exact_divisions_not_independently_proved": 62,
+          "required_difference_v2": 4,
+          "certificate_status": "PROVED"
+        }
+      ]
+    },
+    {
+      "name": "right_neutral_from_identity",
+      "shifted_fields": [
+        "m"
+      ],
+      "zero_base_fields": [
+        "m",
+        "b",
+        "cp"
+      ],
+      "packets": [
+        {
+          "packet": "source_4_majorana",
+          "sha256": "c6d395970e8f8ea1e627ce269506c10d28ba29d70debbf5c300c29452ad4b7b3",
+          "nodes": 66,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "source_4_fermion",
+          "sha256": "9eb14a3670dbe5a11fd8223203418a6532e2bb4b5aafe32066f1efd5fd3104d3",
+          "nodes": 413,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "product_4_majorana",
+          "sha256": "972f1f2fc51440ce5b75eaae450a4262517437d365726f1292443be2f02e1fed",
+          "nodes": 26,
+          "outputs": [
+            {
+              "base_v2": 1000000000,
+              "perturbed_v2": 1000000000,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "product_4_fermion",
+          "sha256": "7cc3a08f5ad16ace60627752d3e3e93c2072603f0d0fe102f3e46983820677e2",
+          "nodes": 558,
+          "outputs": [
+            {
+              "base_v2": 1000000000,
+              "perturbed_v2": 1000000000,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 10,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "y6",
+          "sha256": "f89838de8524321b688089e3c8a7fce5592e6b6327893e84607a8cd40c0fe0c2",
+          "nodes": 173707,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 2117,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "h6",
+          "sha256": "070809f164fd0e44ce75f43edfeb59099fc0b4ac47ea480485d9d7eecea96092",
+          "nodes": 35616,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 55,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "high6",
+          "sha256": "51f81b670d50bbd9e52d170226c8bf94be4de49adf79c2a3ccb82a98b95a6a0a",
+          "nodes": 36150,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 84,
+          "required_difference_v2": 4,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "rho4",
+          "sha256": "c43fe14c69de0b09d4df3d07a566bcb9497a04bf56ad012e2660f759bd838904",
+          "nodes": 13162,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 124,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "tensor4",
+          "sha256": "70e4cd786461fd3bbfb8d8c83e3cb8e6d42f14dfc136d6db6a248792b0253efd",
+          "nodes": 1658,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 15,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "nonbinary4",
+          "sha256": "25a97cfe4a71c699d0ff6207aa827c79ac945dd5cbf3ef352f3d60dea32f529e",
+          "nodes": 3075,
+          "outputs": [
+            {
+              "base_v2": 2,
+              "perturbed_v2": 2,
+              "difference_v2": 4
+            }
+          ],
+          "exact_divisions_not_independently_proved": 43,
+          "required_difference_v2": 4,
+          "certificate_status": "PROVED"
+        }
+      ]
+    },
+    {
+      "name": "left_neutral_from_identity",
+      "shifted_fields": [
+        "n"
+      ],
+      "zero_base_fields": [
+        "n",
+        "a",
+        "c"
+      ],
+      "packets": [
+        {
+          "packet": "source_4_majorana",
+          "sha256": "c6d395970e8f8ea1e627ce269506c10d28ba29d70debbf5c300c29452ad4b7b3",
+          "nodes": 66,
+          "outputs": [
+            {
+              "base_v2": 1000000000,
+              "perturbed_v2": 1000000000,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "source_4_fermion",
+          "sha256": "9eb14a3670dbe5a11fd8223203418a6532e2bb4b5aafe32066f1efd5fd3104d3",
+          "nodes": 413,
+          "outputs": [
+            {
+              "base_v2": 1000000000,
+              "perturbed_v2": 1000000000,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "product_4_majorana",
+          "sha256": "972f1f2fc51440ce5b75eaae450a4262517437d365726f1292443be2f02e1fed",
+          "nodes": 26,
+          "outputs": [
+            {
+              "base_v2": 1000000000,
+              "perturbed_v2": 1000000000,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 0,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "product_4_fermion",
+          "sha256": "7cc3a08f5ad16ace60627752d3e3e93c2072603f0d0fe102f3e46983820677e2",
+          "nodes": 558,
+          "outputs": [
+            {
+              "base_v2": 1000000000,
+              "perturbed_v2": 1000000000,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 5,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "y6",
+          "sha256": "f89838de8524321b688089e3c8a7fce5592e6b6327893e84607a8cd40c0fe0c2",
+          "nodes": 173707,
+          "outputs": [
+            {
+              "base_v2": 1000000000,
+              "perturbed_v2": 1000000000,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 291,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "h6",
+          "sha256": "070809f164fd0e44ce75f43edfeb59099fc0b4ac47ea480485d9d7eecea96092",
+          "nodes": 35616,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 2,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "high6",
+          "sha256": "51f81b670d50bbd9e52d170226c8bf94be4de49adf79c2a3ccb82a98b95a6a0a",
+          "nodes": 36150,
+          "outputs": [
+            {
+              "base_v2": 3,
+              "perturbed_v2": 3,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 1000000000,
+              "perturbed_v2": 12,
+              "difference_v2": 12
+            }
+          ],
+          "exact_divisions_not_independently_proved": 8,
+          "required_difference_v2": 4,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "rho4",
+          "sha256": "c43fe14c69de0b09d4df3d07a566bcb9497a04bf56ad012e2660f759bd838904",
+          "nodes": 13162,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            },
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 115,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "tensor4",
+          "sha256": "70e4cd786461fd3bbfb8d8c83e3cb8e6d42f14dfc136d6db6a248792b0253efd",
+          "nodes": 1658,
+          "outputs": [
+            {
+              "base_v2": 0,
+              "perturbed_v2": 0,
+              "difference_v2": 1000000000
+            }
+          ],
+          "exact_divisions_not_independently_proved": 18,
+          "required_difference_v2": 1,
+          "certificate_status": "PROVED"
+        },
+        {
+          "packet": "nonbinary4",
+          "sha256": "25a97cfe4a71c699d0ff6207aa827c79ac945dd5cbf3ef352f3d60dea32f529e",
+          "nodes": 3075,
+          "outputs": [
+            {
+              "base_v2": 2,
+              "perturbed_v2": 2,
+              "difference_v2": 4
+            }
+          ],
+          "exact_divisions_not_independently_proved": 36,
+          "required_difference_v2": 4,
+          "certificate_status": "PROVED"
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,16 @@
-"""Exact circle/carry and closed-charge comparison maps for U(1)^f states.
+"""Exact circle/carry, closed-charge, and relative E8 comparison maps.
 
 This is a comparison interface, not a superconducting classifier. The same
 G_f has quotients G=G_f/U(1)^f and G_b=G_f/Z2^f. X1 is the circle section
 coordinate on G_b, with sign rho1+s1. All other inputs are pulled back to
-that same simplex. Nonzero CI-sheet terminal maps are not supplied here.
+that same simplex. The E8 helpers supply the additional mixed correction
+relative to a pure-CI map; that universal pure-CI terminal map is still
+not supplied here.
 """
 from fractions import Fraction
 
 from . import api as ci
+from ._engine import e8_4p1 as neutral
 
 
 def circle_carry(symmetry: ci.Symmetry, X1: ci.Cochain) -> ci.Cochain:
@@ -52,3 +55,33 @@ def charge_gauge_phase(symmetry: ci.Symmetry, X1: ci.Cochain,
     """Primitive -X1 cup u/2 for the difference of the two short gauges."""
     _charge_input(symmetry, X1, charge_parameter)
     return X1.cup(charge_parameter).sc(Fraction(-1, 2))
+
+
+def e8_ci_source_bridge_4p1(e2: ci.Cochain, n2: ci.Cochain) -> ci.Cochain:
+    """Relative mixed R5=P(2n2,e2), with E8 first.
+
+    The parity sheet changes from 2n2 to 2n2+16e2. This is the additional
+    source rephasing after the pure-CI comparison, not that missing map.
+    """
+    neutral._closed_pair(e2, n2)
+    return neutral.product(n2.sc(2), e2)
+
+
+def e8_ci_product_bridge_4p1(e2: ci.Cochain, n2: ci.Cochain,
+                            e2_prime: ci.Cochain, n2_prime: ci.Cochain) -> ci.Cochain:
+    """Relative mixed K4, retaining the middle-factor exchange correction."""
+    neutral._closed_pair(e2, n2)
+    neutral._closed_pair(e2_prime, n2_prime)
+    neutral._closed_pair(e2, e2_prime)
+    a, b, e, f = n2.sc(2), n2_prime.sc(2), e2, e2_prime
+    return (neutral.commutator(b, e)
+            + neutral.associator(a, b, e) - neutral.associator(a, e, b)
+            - neutral.associator(a + b, e, f) + neutral.associator(a + e, b, f))
+
+
+def e8_ci_gauge_bridge_4p1(e2: ci.Cochain, n2: ci.Cochain,
+                          e_parameter: ci.Cochain, n_parameter: ci.Cochain) -> ci.Cochain:
+    """Relative mixed H4 from the fixed product prism, with E8-first inputs."""
+    neutral.gauge(e2, e_parameter)
+    neutral.gauge(n2, n_parameter)
+    return neutral.pair_gauge(n2.sc(2), e2, n_parameter.sc(2), e_parameter)

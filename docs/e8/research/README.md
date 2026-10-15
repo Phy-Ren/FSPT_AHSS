@@ -18,9 +18,16 @@ one internal-link adaptation are recorded in `review_import.json`.
 
 ## 4+1D
 
+- [Explicit relative E8–CI source, product, and gauge bridge](general_groups/mixed_bridge_4p1.md).
+- [Arbitrary-base sixteen-sheet periodicity and normalized-transfer proof](physical/parity_sheet_period.md).
 - [Free translation decorations and explicit completions](general_groups/examples_4p1.md).
 - [Lens/APS dictionary and cyclic electronic controls](physical/eta_dictionary.md).
-- [Intrinsic Spin-c response lattice and remaining operations](parity_bridge/intrinsic_response.md).
+
+## Deferred intrinsic extension
+
+The user has prioritized the original four-data theory. The separate
+[intrinsic-response notes](parity_bridge/intrinsic_response.md) preserve
+earlier work; they are not part of the active four-data specification.
 
 ## General proofs and comparison maps
 

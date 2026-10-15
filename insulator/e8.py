@@ -30,6 +30,7 @@ def _sheet(e_p: Cochain, symmetry: Symmetry, dimension: int) -> None:
     if dimension not in (2, 3, 4):
         raise ValueError('spatial_dimension must be 2, 3, or 4.')
     _typed(e_p, dimension - 2, symmetry, integral=True)
+    ci._uniform_response_domain(symmetry, dimension, e_p, 'E8')
     if e_p.d().maxabs():
         raise ValueError('The signed integer E8 decoration is not closed.')
 

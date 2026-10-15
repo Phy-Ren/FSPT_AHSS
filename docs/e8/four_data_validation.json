@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-15",
+  "scope": "Original four-data theory (e_p,n_p,n_{p+2},nu_{p+3}); intrinsic r0 deferred",
+  "unit_tests": {
+    "command": "python3 -m unittest discover -s tests -v",
+    "count": 63,
+    "seconds": 68.837,
+    "status": "PASS"
+  },
+  "new_runtime_operations": [
+    "2+1D integral-lift and real-section transport",
+    "relative 4+1D E8-CI source bridge",
+    "relative 4+1D E8-CI product bridge",
+    "relative 4+1D E8-CI gauge bridge"
+  ],
+  "proof_evidence": {
+    "mixed_product_and_gauge_signed_checks": 128,
+    "period_certificate_local_packets": 10,
+    "normalization_symbolic_degeneracies": 29,
+    "zero_factor_reductions": 6,
+    "homotopy_projection_identities": 5,
+    "independent_peer_review": "PASS",
+    "audited_reference_path": "Generic publication formula, use_specializations=False"
+  },
+  "active_document_links": "PASS",
+  "still_open": [
+    "Universal pure-CI terminal source/product comparison including circle carries",
+    "Universal nonzero-uniform-IQH physical product comparison",
+    "Global E8-inclusive shared-phase presentation and complete root/incoming computation"
+  ],
+  "global_E8_classifier_claimed": false,
+  "full_physical_equivalence_claimed": false,
+  "domain_corrections": [
+    "Nonzero uniform CI/E8 responses require a trivial chirality character, including when validate=False"
+  ]
+}

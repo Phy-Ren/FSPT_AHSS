@@ -10,9 +10,11 @@ The TeX files here reproduce the consolidated v0.7 mathematical specification.
 package is `insulator`; it loads only the calibrated sheet-linear convention,
 with cubic coefficient `1/6` and additional product coefficient `epsilon=0`.
 
-The scope is the CI-generated, localized-charge and group-cohomological phase
-sector. Neutral E8, intrinsic higher-response sectors, and unconstructed
-terminal parity-comparison maps are not supplied as operations.
+The preserved TeX baseline covers CI, localized charge, and the shared
+phase. The active [four-data specification](../docs/e8/four_data_theory.md)
+adds neutral E8 with explicit local operations and dimension-separated
+references. Intrinsic higher-response sectors are deferred; the remaining
+universal pure-CI terminal comparison is not supplied as an operation.
 
 | Operation | Python API | Specification |
 | --- | --- | --- |
@@ -23,7 +25,7 @@ terminal parity-comparison maps are not supplied as operations.
 | Complete stacking twister | `product` | Dimensional hatted product equations |
 | Joint sheet/charge gauge | `gauge` | Dimensional source-cylinder constructions |
 | Shorter charge gauge at fixed sheet | `charge_gauge` | `02_operations.tex`, CF-gauge |
-| Extension lift or section transport | `background_change` | `06_equivalence.tex`, background-changes, dimensions 3 and 4 |
+| Extension lift or section transport | `background_change` | `06_equivalence.tex`, dimensions 3 and 4; [2+1D endpoint derivation](../docs/e8/2p1.md) |
 | Lower exchange homotopy | `lower_exchange` | `06_equivalence.tex`, lower-comm3 and lower-comm4 |
 | Canonical 3+1D associator | `associator_3p1` | Parameter tetrahedron integration |
 | Complete inverse and arbitrary powers | `State.inverse`, `State.power` | Complete lower product and phase twister |

@@ -1,0 +1,1057 @@
+{
+  "status": "PASS",
+  "method": "Conservative exact symbolic rewriting and finite projection-chain identities; no sampled field values",
+  "script_sha256": "cfa35e953737ff5ce416ddb086824c92a216238c6c1ae64f51d6d583ff59026f",
+  "programs": [
+    {
+      "name": "y6",
+      "sha256": "f89838de8524321b688089e3c8a7fce5592e6b6327893e84607a8cd40c0fe0c2",
+      "degeneracies": [
+        {
+          "collapsed_vertex": 0,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 53
+        },
+        {
+          "collapsed_vertex": 1,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 53
+        },
+        {
+          "collapsed_vertex": 2,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 53
+        },
+        {
+          "collapsed_vertex": 3,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 53
+        },
+        {
+          "collapsed_vertex": 4,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 53
+        },
+        {
+          "collapsed_vertex": 5,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 53
+        }
+      ],
+      "zero_factor_reductions": [
+        {
+          "collapsed_vertex": null,
+          "zero_fields": [
+            "n"
+          ],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 34
+        }
+      ]
+    },
+    {
+      "name": "h6",
+      "sha256": "070809f164fd0e44ce75f43edfeb59099fc0b4ac47ea480485d9d7eecea96092",
+      "degeneracies": [
+        {
+          "collapsed_vertex": 0,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 9
+        },
+        {
+          "collapsed_vertex": 1,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 9
+        },
+        {
+          "collapsed_vertex": 2,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 9
+        },
+        {
+          "collapsed_vertex": 3,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 9
+        },
+        {
+          "collapsed_vertex": 4,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 9
+        },
+        {
+          "collapsed_vertex": 5,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 9
+        }
+      ],
+      "zero_factor_reductions": [
+        {
+          "collapsed_vertex": null,
+          "zero_fields": [
+            "n",
+            "a",
+            "y"
+          ],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 4
+        }
+      ]
+    },
+    {
+      "name": "high6",
+      "sha256": "51f81b670d50bbd9e52d170226c8bf94be4de49adf79c2a3ccb82a98b95a6a0a",
+      "degeneracies": [
+        {
+          "collapsed_vertex": 0,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            true
+          ],
+          "remaining_output_terms": [
+            0,
+            0
+          ],
+          "peak_polynomial_terms": 12
+        },
+        {
+          "collapsed_vertex": 1,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            true
+          ],
+          "remaining_output_terms": [
+            0,
+            0
+          ],
+          "peak_polynomial_terms": 12
+        },
+        {
+          "collapsed_vertex": 2,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            true
+          ],
+          "remaining_output_terms": [
+            0,
+            0
+          ],
+          "peak_polynomial_terms": 12
+        },
+        {
+          "collapsed_vertex": 3,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            true
+          ],
+          "remaining_output_terms": [
+            0,
+            0
+          ],
+          "peak_polynomial_terms": 12
+        },
+        {
+          "collapsed_vertex": 4,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            true
+          ],
+          "remaining_output_terms": [
+            0,
+            0
+          ],
+          "peak_polynomial_terms": 34
+        },
+        {
+          "collapsed_vertex": 5,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            true
+          ],
+          "remaining_output_terms": [
+            0,
+            0
+          ],
+          "peak_polynomial_terms": 34
+        }
+      ],
+      "zero_factor_reductions": []
+    },
+    {
+      "name": "rho4",
+      "sha256": "c43fe14c69de0b09d4df3d07a566bcb9497a04bf56ad012e2660f759bd838904",
+      "degeneracies": [
+        {
+          "collapsed_vertex": 0,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "remaining_output_terms": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "peak_polynomial_terms": 17,
+          "U_is_degenerate_pullback": true
+        },
+        {
+          "collapsed_vertex": 1,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "remaining_output_terms": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "peak_polynomial_terms": 17,
+          "U_is_degenerate_pullback": true
+        },
+        {
+          "collapsed_vertex": 2,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            true,
+            false,
+            false
+          ],
+          "remaining_output_terms": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "peak_polynomial_terms": 17,
+          "U_is_degenerate_pullback": true
+        },
+        {
+          "collapsed_vertex": 3,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            true
+          ],
+          "remaining_output_terms": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "peak_polynomial_terms": 17,
+          "U_is_degenerate_pullback": true
+        },
+        {
+          "collapsed_vertex": 4,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            true,
+            true
+          ],
+          "remaining_output_terms": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "peak_polynomial_terms": 17,
+          "U_is_degenerate_pullback": true
+        },
+        {
+          "collapsed_vertex": 5,
+          "zero_fields": [],
+          "outputs_zero": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            true,
+            true,
+            true
+          ],
+          "remaining_output_terms": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "peak_polynomial_terms": 17,
+          "U_is_degenerate_pullback": true
+        }
+      ],
+      "zero_factor_reductions": [
+        {
+          "collapsed_vertex": null,
+          "zero_fields": [
+            "n",
+            "a"
+          ],
+          "outputs_zero": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "remaining_output_terms": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "peak_polynomial_terms": 54,
+          "U_equals_other_factor": true
+        },
+        {
+          "collapsed_vertex": null,
+          "zero_fields": [
+            "m",
+            "b"
+          ],
+          "outputs_zero": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "remaining_output_terms": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "peak_polynomial_terms": 54,
+          "U_equals_other_factor": true
+        }
+      ]
+    },
+    {
+      "name": "tensor4",
+      "sha256": "70e4cd786461fd3bbfb8d8c83e3cb8e6d42f14dfc136d6db6a248792b0253efd",
+      "degeneracies": [
+        {
+          "collapsed_vertex": 0,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 22
+        },
+        {
+          "collapsed_vertex": 1,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 22
+        },
+        {
+          "collapsed_vertex": 2,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 3
+        },
+        {
+          "collapsed_vertex": 3,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 23
+        },
+        {
+          "collapsed_vertex": 4,
+          "zero_fields": [],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 23
+        }
+      ],
+      "zero_factor_reductions": [
+        {
+          "collapsed_vertex": null,
+          "zero_fields": [
+            "n",
+            "a"
+          ],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 22
+        },
+        {
+          "collapsed_vertex": null,
+          "zero_fields": [
+            "m",
+            "b"
+          ],
+          "outputs_zero": [
+            true
+          ],
+          "remaining_output_terms": [
+            0
+          ],
+          "peak_polynomial_terms": 23
+        }
+      ]
+    }
+  ],
+  "transfer_degeneracies": [
+    {
+      "collapsed_vertex": 0,
+      "remaining_projection_chains": 0
+    },
+    {
+      "collapsed_vertex": 1,
+      "remaining_projection_chains": 0
+    },
+    {
+      "collapsed_vertex": 2,
+      "remaining_projection_chains": 0
+    },
+    {
+      "collapsed_vertex": 3,
+      "remaining_projection_chains": 0
+    },
+    {
+      "collapsed_vertex": 4,
+      "remaining_projection_chains": 0
+    }
+  ],
+  "reference_source_sha256": {
+    "fspt/full_formula/runtime.py": "b927b0ca7a0dcc286283827d02793993b005073df24016e1a73d36964c6cbcb8",
+    "fspt/full_formula/compiler.py": "7470f4b431f604a66be22593fce54b7f851884c511a7a393b2831776f6c3a346",
+    "formulas/publication_source/full4/graded_full.py": "cc5c15cde645af5ac2cd1bf3b4bd1a91b897be4be2bc5fc91b8675e47844efd3",
+    "formulas/publication_source/full4/product_full.py": "87dacc4b7926b19be12b0020ca35f622f8a6a95f019bebc9008e8f3a5e359e75"
+  }
+}

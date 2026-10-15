@@ -69,6 +69,23 @@ class Symmetry:
         return background(self.omega2_real, self.s1)[1]
 
 
+def _uniform_response_domain(symmetry: Symmetry, spatial_dimension: int,
+                             response: Cochain, label: str = 'CI') -> None:
+    """Uniform physical responses lie in H0(G,Z_s), not arbitrary local sections.
+
+    This restriction also applies when higher lower-tower validation is
+    disabled for a degree-matched formula evaluation.
+    """
+    if spatial_dimension != 2:
+        return
+    _exact(response, 0)
+    _integer(response)
+    if response.N != symmetry.s1.N or response.tw != symmetry.s1.tw:
+        raise ValueError(f'The uniform {label} response has the wrong simplex or coefficient sign.')
+    if symmetry.s1.maxabs() and response.maxabs():
+        raise ValueError(f'A nonzero uniform {label} response requires a trivial s1 character.')
+
+
 def _state(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: Cochain) -> None:
     if spatial_dimension not in (2, 3, 4):
         raise ValueError('The public interface covers spatial dimensions 2, 3, and 4.')
@@ -78,6 +95,7 @@ def _state(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: C
         _integer(cochain)
         if cochain.N != symmetry.omega2_real.N or cochain.tw != sign:
             raise ValueError('Decoration simplex or coefficient sign does not match the symmetry.')
+    _uniform_response_domain(symmetry, spatial_dimension, sheet)
     if sheet.d().maxabs():
         raise ValueError('The integer CI sheet is not closed in its sign system.')
     if (charge.d() - integer_obstruction(symmetry, spatial_dimension, sheet)).maxabs():
@@ -90,6 +108,7 @@ def integer_obstruction(symmetry: Symmetry, spatial_dimension: int, sheet: Cocha
     _integer(sheet)
     if sheet.N != symmetry.omega2_real.N or sheet.tw != symmetry.s1.tw:
         raise ValueError('The CI sheet has the wrong simplex or coefficient action.')
+    _uniform_response_domain(symmetry, spatial_dimension, sheet)
     if spatial_dimension == 2:
         return symmetry.omega2_real.d().cup(sheet).sc(-1)
     if spatial_dimension == 3:
@@ -129,6 +148,7 @@ def charge_gauge(symmetry: Symmetry, charge: Cochain, parameter: Cochain) -> Coc
 
 def source(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: Cochain, *, validate: bool = True) -> Cochain:
     """Adopted hatted source; explicit checks reject invalid lower configurations."""
+    _uniform_response_domain(symmetry, spatial_dimension, sheet)
     if validate:
         _state(symmetry, spatial_dimension, sheet, charge)
     if spatial_dimension not in (2, 3, 4):
@@ -143,6 +163,8 @@ def source(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: C
 
 
 def integer_product(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, sheet_prime: Cochain) -> Cochain:
+    _uniform_response_domain(symmetry, spatial_dimension, sheet)
+    _uniform_response_domain(symmetry, spatial_dimension, sheet_prime)
     if spatial_dimension == 4:
         return _E4(sheet, sheet_prime, symmetry.rho1)
     if spatial_dimension == 3:
@@ -155,6 +177,8 @@ def integer_product(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, 
 def product(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: Cochain,
             sheet_prime: Cochain, charge_prime: Cochain, *, validate: bool = True) -> tuple[Cochain, Cochain, Cochain]:
     """Return (N_{d-2}, N_d, hatted E_{d+1}); input phases are added separately."""
+    _uniform_response_domain(symmetry, spatial_dimension, sheet)
+    _uniform_response_domain(symmetry, spatial_dimension, sheet_prime)
     if validate:
         _state(symmetry, spatial_dimension, sheet, charge)
         _state(symmetry, spatial_dimension, sheet_prime, charge_prime)
@@ -175,6 +199,7 @@ def product(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: 
 def gauge(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: Cochain,
           sheet_parameter: Optional[Cochain], charge_parameter: Cochain, *, validate: bool = True) -> tuple[Cochain, Cochain, Cochain]:
     """Return the complete gauge endpoint and hatted phase correction."""
+    _uniform_response_domain(symmetry, spatial_dimension, sheet)
     if validate:
         _state(symmetry, spatial_dimension, sheet, charge)
     _exact(charge_parameter, spatial_dimension - 1)
@@ -235,20 +260,22 @@ def cubic_polarizer(n2: Cochain, n2_prime: Cochain) -> Cochain:
 def background_change(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain,
                       charge: Cochain, parameter: Cochain, kind: str, *,
                       validate: bool = True) -> tuple[Symmetry, Cochain, Cochain, Cochain]:
-    """Transport a 3+1D or 4+1D state under an integral lift or real section change.
+    """Transport a state under an integral lift or real section change.
 
     This is the parameter-first source-cylinder prescription of Equation
     (background-changes). Derived differentials are evaluated on the cylinder
-    before any projection degeneracy is removed. The 2+1D endpoint transport is
-    not specified by that equation and is deliberately not installed here.
+    before any projection degeneracy is removed. In 2+1D the same cylinder
+    solves d_rho(n2)=-d_(rho+s)(omega_real)*n0, with constant n0. Its
+    endpoint derivation is recorded in docs/e8/2p1.md.
     """
     from itertools import combinations
     from ._engine.prism import pull_on_path, evalface, interval_paths
 
-    if spatial_dimension not in (3, 4):
-        raise NotImplementedError('Background cylinder transport is supplied for dimensions 3 and 4.')
+    if spatial_dimension not in (2, 3, 4):
+        raise ValueError('spatial_dimension must be 2, 3, or 4.')
     if kind not in ('lift', 'section'):
         raise ValueError("kind must be 'lift' or 'section'.")
+    _uniform_response_domain(symmetry, spatial_dimension, sheet)
     if validate:
         _state(symmetry, spatial_dimension, sheet, charge)
     _exact(parameter, 2 if kind == 'lift' else 1)

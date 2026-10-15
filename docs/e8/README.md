@@ -8,9 +8,14 @@ and are not a completion condition for this work.
 
 All extended states use **E8 first**:
 `(e_p,n_p,n_{p+2},nu_{p+3})`, `p=d-2`.
+This specified tower has coefficient rows `q=3,1,0`; its potentially
+nonzero AHSS operations end at **d4**. See [the page-index convention](notation.md).
+Extra uniform intrinsic 4+1D responses are a separate enlargement, not a
+missing layer or `d5/d6` operation of this four-coordinate tower.
 
 ## Separate dimensional specifications
 
+- [The four-data theory and the final-group procedure](four_data_theory.md).
 - [Notation and coefficient actions](notation.md).
 - [2+1D uniform coordinates](2p1.md).
 - [3+1D neutral section and integer cocycles](3p1.md).
@@ -50,35 +55,43 @@ closed-charge bridge is exact through source, short product, and gauge:
 The executable comparison helpers are in `insulator/parity_bridge.py`.
 They reject the open-charge case rather than omit its residual term.
 
-The [intrinsic coefficient calculation](research/parity_bridge/intrinsic_response.md)
-fixes a primitive integral 4+1D interacting response basis
-`I=(c^3-c p1)/48`, `J=c^3/2`. It also establishes their restriction to
-pure Spin/parity as zero. Reorganizing the same U1f symmetry over its parity
-quotient retains the charge circle and therefore retains these responses;
-actual symmetry breaking is a different map.
+The [relative mixed E8–CI bridge](research/general_groups/mixed_bridge_4p1.md)
+now supplies explicit single-state, product, and gauge corrections.
+Arbitrary-base sixteen-sheet periodicity is proved for the generic
+publication formula, including its normalized binary transfer; it is not
+inferred from the pure-neutral test. The executable E8-first helpers are
+in `insulator/parity_bridge.py`. The [2+1D endpoint](2p1.md) also now
+includes the finite source-cylinder background transport and its proof.
 
-## Still open; not replaced by zero
+## Still open within the specified four-coordinate tower
 
 1. The universal nonzero-CI terminal comparison `R_{p+3}` and its paired
    two-input correction `K_{p+2}` are not yet constructed on the full circle
-   quotient. Pure E8 and closed-charge results do not prove this mixed map.
-2. The additional intrinsic row `r0 in H0(G,Z_rho^2)` has possible integral
-   `d3`, `d5`, and `d6` operations. A formal characteristic-polynomial
-   transgression fixes a candidate rational expression, not its torsion
-   normalization. Those differentials are not implemented.
-3. Identification of the retained CI cochain model with the complete
+   quotient. The relative E8 bridge and closed-charge result do not supply
+   the remaining pure-CI map.
+2. Identification of the retained CI cochain model with the complete
    physical kernel remains unproved for the entire stated group domain.
    The nonzero-uniform-IQH microscopic product-coordinate dictionary also
    remains distinct from the proved free-quotient abstract splitting.
-4. A global E8 classifier must implement the common phase presentation,
+3. A global E8 classifier must implement the common phase presentation,
    incoming identifications, resolution transfers, and actual root powers.
    The new local API and existence theorem do not constitute that campaign.
 
+The required deliverable is the complete `d2,d3,d4`, stacking twisters,
+and equivalences for this tower. Knowing only an isomorphic final group
+does not replace those formulas. Abstract splitting and transfer arguments
+are auxiliary checks or an explicitly identified fallback.
+
 Consequently the supplied neutral cochain block is substantially closed and
-implemented locally, while **the entire physical AHSS is not yet certified
-closed**. The four-coordinate state is the reduced decoration tower; full
-intrinsic 4+1D responses require the extra `r0` data. This boundary persists
-even with the user's narrower space-group scope.
+implemented locally, while the universal physical identification and the
+global coupled classifier are not yet certified complete.
+
+## Deferred research
+
+The user has deferred the separate intrinsic `r0` enlargement until the
+four-data theory is complete. Existing calculations remain in the
+[separate intrinsic-response notes](research/parity_bridge/intrinsic_response.md).
+They do not enter the active dimensional specifications or runtime.
 
 ## Evidence and source discipline
 

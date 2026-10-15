@@ -57,7 +57,7 @@ class E8Operations(unittest.TestCase):
 
     def test_background_transport_keeps_neutral_coordinate(self):
         rng = random.Random(8301)
-        for d in (3, 4):
+        for d in (2, 3, 4):
             bg, state = complete(d, rng)
             for kind, degree in (('lift', 2), ('section', 1)):
                 parameter = rand(state.e_p.N, degree, bg.omega2_real.tw, rng)

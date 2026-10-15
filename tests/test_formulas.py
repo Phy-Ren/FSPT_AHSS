@@ -108,7 +108,7 @@ class FormulaIdentities(unittest.TestCase):
                             self.equal(cylinder, unoptimized_gauge3(a,k,n,s,r,u,v,O3canonical), 1)
 
     def test_background_lifts_sections(self):
-        for d in (3, 4):
+        for d in (2, 3, 4):
             sym, state, rng = random_state(d, d + 2, 567 + d)
             for kind, degree in (('lift', 2), ('section', 1)):
                 parameter = rand(state.sheet.N, degree, sym.omega2_real.tw, rng)
@@ -117,6 +117,27 @@ class FormulaIdentities(unittest.TestCase):
                 new_sym, k, n, phase = U.background_change(sym, d, state.sheet, state.charge,
                                                            parameter, kind)
                 U.State(k, n, (state.phase + phase).mod(1)).validate(new_sym, d)
+
+    def test_background_endpoint_pure_charge_signs(self):
+        N = 4
+        for sb in (0, 1):
+            for rb in (0, 1):
+                rng = random.Random(22000 + 2 * sb + rb)
+                st = [sb * (i % 2) for i in range(N + 1)]
+                rt = [rb * (i % 2) for i in range(N + 1)]
+                tt = [a ^ b for a, b in zip(st, rt)]
+                sym = U.Symmetry(rand(N, 1, tt, rng).d().sc(F(1, 5)),
+                                 U.char(N, st).ret(st), U.char(N, rt).ret(rt))
+                sheet = U.Cochain(N, 0, {}, st)
+                charge = rand(N, 1, rt, rng).d()
+                phase = primitive(U.source(sym, 2, sheet, charge))
+                for kind, degree in (('lift', 2), ('section', 1)):
+                    parameter = rand(N, degree, tt, rng)
+                    if kind == 'section':
+                        parameter = parameter.sc(F(1, 7))
+                    out_sym, out_sheet, out_charge, correction = U.background_change(
+                        sym, 2, sheet, charge, parameter, kind)
+                    U.State(out_sheet, out_charge, phase + correction).validate(out_sym, 2)
 
     def test_lower_exchange(self):
         for d in (3, 4):
@@ -141,9 +162,9 @@ class FormulaIdentities(unittest.TestCase):
         self.assertEqual([U.halves(c)((i,)) for i in range(3)], [1, 1, 0])
         with self.assertRaises(TypeError):
             U.Symmetry(U.Cochain(2, 2, {(0, 1, 2): .5}), U.char(2, [0]*3), U.char(2, [0]*3))
-        with self.assertRaises(NotImplementedError):
+        with self.assertRaises(ValueError):
             sym, state, _ = random_state(2, 4, 125)
-            U.background_change(sym, 2, state.sheet, state.charge, sym.omega2_real, 'lift')
+            U.background_change(sym, 1, state.sheet, state.charge, sym.omega2_real, 'lift')
 
 
 class CompleteC2Roots(unittest.TestCase):
