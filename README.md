@@ -71,7 +71,7 @@ python3 -m unittest discover -s tests
 python3 scripts/classify.py --family point2 --jobs 4 --output runs/point2
 python3 scripts/classify.py --family wallpaper --jobs 4 --output runs/wallpaper
 python3 scripts/classify_3p1d.py --family point3 --jobs 4 --output runs/point3
-python3 scripts/classify_3p1d.py --family spacegroup --pair-spins --largest-first --jobs 4 --output runs/spacegroup
+python3 scripts/classify_3p1d.py --family spacegroup --pair-spins --largest-first --jobs 4 --memory 32g --timeout 14400 --output runs/spacegroup
 ```
 
 For 3+1D, the unified command runs CI classification, the exact neutral E8
@@ -87,6 +87,12 @@ one physical spin. Each output directory must be new; there is no automatic
 resume or overwrite. Run classification campaigns on compute nodes with
 immutable source snapshots. The unified entrypoint accepts only `point3`
 and `spacegroup`; it does not offer a general 4+1D solver.
+
+The full-space-group example sets a `32g` workspace cap per GAP process and
+14,400 seconds per case; a paired process shares twice that time budget.
+Choose `--jobs` so all concurrent GAP processes and their Python workers fit
+the compute node's memory. The [recorded 8g failure](docs/PERFORMANCE.md)
+explains the larger workspace allowance.
 
 The separate 2+1D `classify.py` command supports `--uniform-iqh` for all
 allowed uniform Hall responses. For advanced staged 3+1D workflows,

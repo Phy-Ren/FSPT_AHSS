@@ -150,3 +150,12 @@ Space-group campaigns run on compute nodes with immutable source snapshots.
 Concurrency is bounded by measured memory as well as CPU capacity. A failed
 or incomplete process is retained as evidence and retried separately; launch
 coverage is never reported as completed classification coverage.
+
+The [paired 8g tail control](../results/spacegroup_campaign_20261015/failed_h_tail_control/README.md)
+exhausted GAP workspace during SG226 spin-half; its spinless partner never
+started. The README's full-space-group example therefore explicitly requests
+`--memory 32g --timeout 14400`: a workspace cap per GAP process and a time
+budget per case, doubled for a paired process. Concurrency must also leave room
+for the Python workers. The separate [32g spin-half launch evidence](../results/spacegroup_campaign_20261015/deployment_h_tail_highmem/README.md)
+records the higher-memory controls; it does not establish their completion or
+a performance gain.
