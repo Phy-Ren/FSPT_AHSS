@@ -1,0 +1,182 @@
+{
+  "allFieldCount": 38,
+  "allFieldNames": [
+    "chargeKernelLattice",
+    "chargeObstructionMap",
+    "chargeObstructionTargetOrders",
+    "chargeOrders",
+    "chargePrimaryStats",
+    "coefficientActions",
+    "filtrationPresentations",
+    "finalChargeFreeRank",
+    "finalChargeOrders",
+    "finalPhaseFreeRank",
+    "finalPhaseOrders",
+    "finalSheetFreeRank",
+    "finalSheetOrders",
+    "formulaCacheStats",
+    "formulaWorkerCalls",
+    "freeRank",
+    "gaugeReductionWitnesses",
+    "generators",
+    "inputValidation",
+    "nativeChainIdentitiesVerified",
+    "nativeCompletionChecks",
+    "neutralE8AbsentByCohomology",
+    "obstructedSheets",
+    "pairedGeometryReuse",
+    "phaseOrders",
+    "presentation",
+    "presentationGeneratorCount",
+    "resolutionBuildTimings",
+    "resolutionDimensions",
+    "scope",
+    "sheetOrders",
+    "spaceGroupFilling",
+    "spaceGroupSheetLattice",
+    "spatialDimension",
+    "theory",
+    "torsion",
+    "uniformIQHIncluded",
+    "witnesses"
+  ],
+  "baselineElapsedSeconds": 234.922,
+  "baselineResultSHA256": "43c19e116edec7e9456aa74aa4e97f5011ebffb636693ca5acbb9133e848bfeb",
+  "baselineSourceSHA256": "17150f175fffd703f2d1008ec0066f53f25d23abfc63dbb15dd71440243a08fc",
+  "candidateElapsedSeconds": 127.065,
+  "candidateResultSHA256": "ca7f128cddb2217ac760ff589ef0e40bbf1032bbfc890a726d9b99ea40ba92d4",
+  "candidateSourceSHA256": "9f05e72fbeb02560f7d55f19f7045e4cf2c76c41ea1b7b13042a596053d12db4",
+  "changedRunnerSourceFiles": [
+    "gap/classification.g"
+  ],
+  "differentFieldNames": [
+    "formulaCacheStats",
+    "formulaWorkerCalls",
+    "resolutionBuildTimings"
+  ],
+  "exactDifferences": {
+    "formulaCacheStats": {
+      "baseline": {
+        "entryLimitPerCache": 8192,
+        "geometryEntries": 6691,
+        "geometryFlushes": 62,
+        "geometryHits": 155244,
+        "requestEntries": 7757,
+        "requestFlushes": 14,
+        "requestHits": 547394
+      },
+      "candidate": {
+        "entryLimitPerCache": 8192,
+        "geometryEntries": 1338,
+        "geometryFlushes": 29,
+        "geometryHits": 174145,
+        "requestEntries": 754,
+        "requestFlushes": 3,
+        "requestHits": 387721
+      }
+    },
+    "formulaWorkerCalls": {
+      "baseline": 122445,
+      "candidate": 25330
+    },
+    "resolutionBuildTimings": {
+      "baseline": {
+        "RL_ms": 0,
+        "RP_ms": 61,
+        "extension_ms": 341,
+        "holonomy_ms": 10,
+        "section_ms": 3
+      },
+      "candidate": {
+        "RL_ms": 0,
+        "RP_ms": 61,
+        "extension_ms": 347,
+        "holonomy_ms": 10,
+        "section_ms": 4
+      }
+    }
+  },
+  "exactlyEqualFieldNames": [
+    "chargeKernelLattice",
+    "chargeObstructionMap",
+    "chargeObstructionTargetOrders",
+    "chargeOrders",
+    "chargePrimaryStats",
+    "coefficientActions",
+    "filtrationPresentations",
+    "finalChargeFreeRank",
+    "finalChargeOrders",
+    "finalPhaseFreeRank",
+    "finalPhaseOrders",
+    "finalSheetFreeRank",
+    "finalSheetOrders",
+    "freeRank",
+    "gaugeReductionWitnesses",
+    "generators",
+    "inputValidation",
+    "nativeChainIdentitiesVerified",
+    "nativeCompletionChecks",
+    "neutralE8AbsentByCohomology",
+    "obstructedSheets",
+    "pairedGeometryReuse",
+    "phaseOrders",
+    "presentation",
+    "presentationGeneratorCount",
+    "resolutionDimensions",
+    "scope",
+    "sheetOrders",
+    "spaceGroupFilling",
+    "spaceGroupSheetLattice",
+    "spatialDimension",
+    "theory",
+    "torsion",
+    "uniformIQHIncluded",
+    "witnesses"
+  ],
+  "id": "spacegroup_221_spin_half",
+  "independentAcceptanceChecks": [
+    {
+      "id": "spacegroup_221_spin_half",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 2,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 2,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 20,
+      "sourceHashVerified": true
+    }
+  ],
+  "mathematicalFieldCount": 35,
+  "observedWallTimeRatio": 1.8488332743084248,
+  "passed": true,
+  "sameExactInput": true,
+  "sameNativeVM_SHA256": "7c3288b10176c7fe814c2f202bea4e07bcd0b71a842a80253bb222bba7a0afdc",
+  "schema": "u1-zero-reduction-full-comparison-v1",
+  "scriptSHA256": "59ff2f5673418be443e0608bac9fa16b13b0bf8ac60549a62dfb917a71facd95",
+  "sourceFileCount": 57
+}

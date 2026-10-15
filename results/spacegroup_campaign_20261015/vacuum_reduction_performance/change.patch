@@ -1,0 +1,16 @@
+--- /home/xingyu/AllFSPT_reviews/point3_optimized_g_20261015/source/gap/classification.g	2026-10-15 09:29:37.000000000 -0400
++++ /home/xingyu/AllFSPT_reviews/zero_reduction_callbacks_20261015/candidate/gap/classification.g	2026-10-15 10:17:35.974042677 -0400
+@@ -139,11 +139,12 @@
+     if u=fail then Error("Requested sheet reduction is not exact");fi;
+     record.nativeSheetParameter:=U1Native(c,d-3,"Zs",u);
+     a:=U1Gauge(c,d,a,u,U1Zero);
++    a.sheet:=U1Zero;
+   fi;
+   v:=U1Solve(c,d,"Zr",U1Scale(-1,a.charge));
+   if v=fail then Error("Requested charge reduction is not exact");fi;
+   record.nativeChargeParameter:=U1Native(c,d-1,"Zr",v);
+-  a:=U1Gauge(c,d,a,U1Zero,v);U1CheckCompletedState(c,d,a);
++  a:=U1Gauge(c,d,a,U1Zero,v);a.charge:=U1Zero;U1CheckCompletedState(c,d,a);
+   record.nativeFinalPhase:=U1Native(c,d+1,"U1s",a.phase);
+   if not IsBound(c.reductionWitnesses) then c.reductionWitnesses:=[];fi;
+   Add(c.reductionWitnesses,record);return a.phase;
