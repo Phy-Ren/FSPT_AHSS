@@ -1,5 +1,11 @@
 # Completed insulator campaigns — 2026-10-13
 
+**Current results:** the [2026-10-15 campaign](four_data_campaign_20261015/README.md)
+contains 108 fresh CI calculations and 64 finite-point-group E8 extensions,
+with dimensions, spins and response sectors in separate files. The report below
+is the preserved historical account of the original campaigns; its E8 scope
+statements describe that earlier implementation.
+
 **Interpretation update, 2026-10-14:** read the
 [rebuilt per-case tables](foundation_review_20261014/README.md) and
 [separate foundation documents](../docs/foundations/README.md) first. The statistics below

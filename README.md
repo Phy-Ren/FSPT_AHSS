@@ -22,14 +22,15 @@ selected 3+1D finite-point-group E8 section with global cocycle/gauge
 witnesses and a combined integer presentation. Its physical interpretation
 retains the unresolved CI-kernel identification caveat.
 
-**Start with the [foundation review](docs/foundations/README.md) and
-[rebuilt comparison tables](results/foundation_review_20261014/README.md).**
-Start with separate [2+1D](results/foundation_review_20261014/2p1d/README.md)
-and [3+1D](results/foundation_review_20261014/3p1d/README.md) directories
-and index pages. Each then separates spinless and spin-half files. In 2+1D, the
-`n0=0` and all-allowed-`n0` tables are also separate; all current tables
-exclude independent E8 decoration (`e0=0` in 2+1D). Each source has its own
-column. E8 decoration and full E8-inclusive tables are deferred.
+**Start with the [fresh campaign](results/four_data_campaign_20261015/README.md):
+108 new CI calculations and 64 selected-model E8 extensions, all complete.**
+The separate [3+1D](results/four_data_campaign_20261015/3p1d/README.md) directory
+covers all 32 point groups for each spin, with and without E8 in separate files.
+The [2+1D](results/four_data_campaign_20261015/2p1d/README.md) directory covers
+selected diagnostic cases, keeping spinless, spin-half, `n0=0` and all allowed
+`n0` separate; these calculations fix `e0=0`. Each source and version has its own
+column. E8-inclusive results compute the specified finite-point-group section;
+the physical CI-kernel identification remains unresolved.
 Main comparison tables use interacting classifications; band-generated
 interacting reductions appear only in separate diagnostic tables.
 Table cells mark matching groups with **✓** and differing groups with **×**.
@@ -38,10 +39,11 @@ The first campaigns are complete: **172 successful calculations** across both
 physical spin conventions, including independent `n0=0` and all-allowed-`n0`
 2D runs, both with `e0=0`.
 The [original campaign report](results/README.md) preserves computation
-provenance. Its first summary is historical; use the rebuilt per-case tables
-for current comparisons, source versions, bordism evidence and unresolved
-physical maps. Successful runs and abstract group matches do not certify
-complete physical calibration.
+provenance. The [foundation review](docs/foundations/README.md) and
+[2026-10-14 tables](results/foundation_review_20261014/README.md) retain the
+broader earlier coverage and source audits. All 108 newly rerun CI groups agree
+with their saved predecessors. Successful computations and matching group types
+do not certify complete physical calibration.
 
 ## Mathematical scope
 
@@ -72,7 +74,8 @@ are not multiplied together to guess the final stacking group.
 
 The formula worker and campaign runner require Python 3.8 or newer. The GAP
 backend requires GAP with HAP, Polycyclic, Cryst and CrystCat. SymPy is required
-only to rebuild catalogs and perform literature comparisons. Precomputed catalogs
+to rebuild catalogs, extend E8 results and independently check integer
+presentations in the campaign reports. Precomputed catalogs
 contain exact symmetry geometry and backgrounds, never classification answers.
 
 ```bash

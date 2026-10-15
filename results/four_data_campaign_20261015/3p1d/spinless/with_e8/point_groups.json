@@ -1,0 +1,2606 @@
+{
+  "title": "3+1D Spinless point groups: E8-inclusive selected model",
+  "scope": "The neutral H1(G,Z_s) presentation is computed independently from each group and joined to the fresh CI presentation using the specified 3+1D section. This computes the selected four-data model. Identification of its CI kernel with the complete physical theory remains conditional. Reference columns give the full interacting groups, including E8; no factors are deleted to improve agreement.",
+  "family": "point3",
+  "physical_spin": "spinless",
+  "spatial_dimension": 3,
+  "spacetime_dimension": 4,
+  "dimension_label": "3+1D",
+  "n0_scope": "not_applicable_in_3d",
+  "e0_scope": "not_applicable_in_3d",
+  "row_rule": "One group per row; one dimension, family, physical spin and n0 scope per file",
+  "columns": [
+    {
+      "key": "model",
+      "label": "Computed with E8"
+    },
+    {
+      "key": "neutral",
+      "label": "Computed E8 H1"
+    },
+    {
+      "key": "Debray",
+      "label": "Debray 2026v3 (bordism)"
+    },
+    {
+      "key": "NMLW",
+      "label": "Ning–Mao–Li–Wang 2021"
+    },
+    {
+      "key": "R3_arxiv",
+      "label": "Zhang–Ning–Qi–Gu 2024v2"
+    },
+    {
+      "key": "R3_journal",
+      "label": "Zhang–Ning–Qi–Gu 2025"
+    }
+  ],
+  "sources": {
+    "R3_arxiv": {
+      "authors": "Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi, Zheng-Cheng Gu",
+      "year": 2024,
+      "title": "Construction and classification of crystalline topological superconductor and insulators in three-dimensional interacting fermion systems",
+      "url": "https://arxiv.org/abs/2204.13558v2",
+      "version": "arXiv v2, 2024-06-18",
+      "method": "Interacting real-space topological crystals, boundary gapping, bubble equivalence and stacking",
+      "location": "Table II and named E8 root lists"
+    },
+    "R3_journal": {
+      "authors": "Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi, Zheng-Cheng Gu",
+      "year": 2025,
+      "title": "Construction and Classification of Crystalline Topological Superconductor and Insulators in Three-Dimensional Interacting Fermion Systems",
+      "url": "https://doi.org/10.1103/PhysRevX.15.031029",
+      "version": "Published 2025-07-28; supplement dated 2025-07-08",
+      "method": "Interacting real-space topological crystals, boundary gapping, bubble equivalence and stacking",
+      "location": "Table II p.031029-5 and independently reread named E8 root lists"
+    },
+    "Debray": {
+      "authors": "Arun Debray",
+      "year": 2026,
+      "title": "Invertible phases for mixed spatial symmetries and the fermionic crystalline equivalence principle",
+      "url": "https://arxiv.org/abs/2102.02941v3",
+      "version": "v3, 2026-02-03",
+      "method": "Spin-c/Pin-c bordism, Adams spectral sequences, Anderson-dual equivariant phase homology",
+      "location": "Tables 1–6 and theorems specified separately in each row; extracted Class A phase groups",
+      "author": "Arun Debray",
+      "first_version": "2021-02-05",
+      "source_url": "https://arxiv.org/src/2102.02941v3",
+      "source_archive_sha256": "0e015df95d1b6fb9ac405446ed4edc7f9e843999c551ed81b15a9126412eb9ad",
+      "files_sha256": {
+        "cyclic.tex": "f7c48f8ac882841a4deff8fa6997b4f0891c43c4a92aa417f0a7e298c75e8d15",
+        "spinc_rotation.tex": "9feecd5aef6e761aa06976eba047c91414641d5df471763dff65787a507f9766",
+        "dihedral.tex": "5f9c2d2a50a2223a6741a96f5c34cc8b759ebb5ab537d550f412adda9f9341f8",
+        "para_n_gonal.tex": "771404e4a3389d1284998cbfb8f3b671ed0224b56d28abf9f91326ffc0fbfa1f",
+        "pin_reflection.tex": "8e4470ba32e4ab31a57183b8504a3a54db2966f32cf74a46ed878aaf21a57e65",
+        "inversion.tex": "2e80b964f34f0902342fa82d70e1f22929000714aaca59f7718171fe54d198c1",
+        "tet_oct_icos_generalities.tex": "2f53ce2fb93f4c8176062b8c6a44fdb8c7ef5aced1f89e140afe6094d54d71df"
+      },
+      "scope": "Interacting Class A only, under the generalized-homology ansatz. Class D columns are not extracted. Includes independent intrinsic responses and neutral bosonic contributions.",
+      "independence_limit": "Different mathematical method; v3 explicitly acknowledges revisions following comparison with Zhang-Ning-Qi-Gu2025. Not blind independence of the final tables."
+    },
+    "NMLW": {
+      "authors": "Shang-Qiang Ning, Bin-Bin Mao, Zhengqiao Li, Chenjie Wang",
+      "title": "Anomaly indicators and bulk-boundary correspondences for 3D interacting topological crystalline phases with mirror and continuous symmetries",
+      "arxiv": "2105.02682v1",
+      "arxiv_date": "2021-05-06",
+      "url": "https://arxiv.org/abs/2105.02682v1",
+      "journal": "Physical Review B 104, 075111 (2021)",
+      "doi": "10.1103/PhysRevB.104.075111",
+      "sourceSHA256": "5bd95ecdc861c595961da177f202f4126f0aed91524044ac4ebe049a858292db",
+      "method": "Interacting dimensional reduction, folding, and complete bulk anomaly indicators for the stated symmetry.",
+      "independence_limit": "Distinct physical detectors, but the mirror classification builds on Song-Huang-Fu-Hermele2017; not blind independence.",
+      "version": "arXiv2105.02682v1, 2021-05-06; PRB104,075111 (2021)",
+      "location": "Table II; Sec.III.B.1 Eqs.19-20 pp.12-13; AppendixB.1 Eq.B4 p.31"
+    }
+  },
+  "comparison_counts": {
+    "model": {
+      "not_compared": 32
+    },
+    "neutral": {
+      "not_compared": 32
+    },
+    "Debray": {
+      "match": 19,
+      "not_compared": 12,
+      "mismatch": 1
+    },
+    "NMLW": {
+      "not_compared": 31,
+      "match": 1
+    },
+    "R3_arxiv": {
+      "match": 26,
+      "mismatch": 6
+    },
+    "R3_journal": {
+      "match": 27,
+      "mismatch": 5
+    }
+  },
+  "availability_counts": {
+    "model": {
+      "available": 32
+    },
+    "neutral": {
+      "available": 32
+    },
+    "Debray": {
+      "available": 20,
+      "unverified": 12
+    },
+    "NMLW": {
+      "not_applicable": 31,
+      "available": 1
+    },
+    "R3_arxiv": {
+      "available": 32
+    },
+    "R3_journal": {
+      "available": 32
+    }
+  },
+  "rows": [
+    {
+      "id": "point3_01_spinless",
+      "family": "point3",
+      "index": 1,
+      "name": "C1",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "1",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 3, p.33, d=3"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_02_spinless",
+      "family": "point3",
+      "index": 2,
+      "name": "Ci",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-1",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 2, p.31, d=3"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_03_spinless",
+      "family": "point3",
+      "index": 3,
+      "name": "C2",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "2",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 3, p.33, d=3"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_04_spinless",
+      "family": "point3",
+      "index": 4,
+      "name": "Cs",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "m",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 1, p.29, d=3"
+        },
+        "NMLW": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "NMLW",
+          "source_location": "Table II; Sec.III.B.1, Eqs.(19)-(20), pp.12-13; Appendix B.1, Eq.(B4), p.31 (arXiv v1)"
+        }
+      }
+    },
+    {
+      "id": "point3_05_spinless",
+      "family": "point3",
+      "index": 5,
+      "name": "C2h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "2/m",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_06_spinless",
+      "family": "point3",
+      "index": 6,
+      "name": "D2",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "222",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_07_spinless",
+      "family": "point3",
+      "index": 7,
+      "name": "C2v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "mm2",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 4, p.36, d=3"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_08_spinless",
+      "family": "point3",
+      "index": 8,
+      "name": "D2h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "mmm",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_09_spinless",
+      "family": "point3",
+      "index": 9,
+      "name": "C4",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 3, p.33, d=3"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_10_spinless",
+      "family": "point3",
+      "index": 10,
+      "name": "S4",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-4",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_11_spinless",
+      "family": "point3",
+      "index": 11,
+      "name": "C4h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4/m",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_12_spinless",
+      "family": "point3",
+      "index": 12,
+      "name": "D4",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "422",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_13_spinless",
+      "family": "point3",
+      "index": 13,
+      "name": "C4v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4mm",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 4, p.36, d=3"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_14_spinless",
+      "family": "point3",
+      "index": 14,
+      "name": "D2d",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-42m",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_15_spinless",
+      "family": "point3",
+      "index": 15,
+      "name": "D4h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "4/mmm",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_16_spinless",
+      "family": "point3",
+      "index": 16,
+      "name": "C3",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "3",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 3, p.33, d=3"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_17_spinless",
+      "family": "point3",
+      "index": 17,
+      "name": "C3i",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-3",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_18_spinless",
+      "family": "point3",
+      "index": 18,
+      "name": "D3",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "32",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_19_spinless",
+      "family": "point3",
+      "index": 19,
+      "name": "C3v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "3m",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 4, p.36, d=3"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_20_spinless",
+      "family": "point3",
+      "index": 20,
+      "name": "D3d",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-3m",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_21_spinless",
+      "family": "point3",
+      "index": 21,
+      "name": "C6",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 3, p.33, d=3"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_22_spinless",
+      "family": "point3",
+      "index": 22,
+      "name": "C3h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-6",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_23_spinless",
+      "family": "point3",
+      "index": 23,
+      "name": "C6h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6/m",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              8
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_24_spinless",
+      "family": "point3",
+      "index": 24,
+      "name": "D6",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "622",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_25_spinless",
+      "family": "point3",
+      "index": 25,
+      "name": "C6v",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6mm",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 4, p.36, d=3"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_26_spinless",
+      "family": "point3",
+      "index": 26,
+      "name": "D3h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-6m2",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_27_spinless",
+      "family": "point3",
+      "index": 27,
+      "name": "D6h",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "6/mmm",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "unverified",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_28_spinless",
+      "family": "point3",
+      "index": 28,
+      "name": "T",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "23",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 6, p.60; Secs.5.1-5.5"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_29_spinless",
+      "family": "point3",
+      "index": 29,
+      "name": "Th",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "m-3",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 6, p.60; Secs.5.1-5.5"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_30_spinless",
+      "family": "point3",
+      "index": 30,
+      "name": "O",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "432",
+      "orientation_reversing": false,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 6, p.60; Secs.5.1-5.5"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_31_spinless",
+      "family": "point3",
+      "index": 31,
+      "name": "Td",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "-43m",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "match",
+          "source": "Debray",
+          "source_location": "Table 6, p.60; Secs.5.1-5.5"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    },
+    {
+      "id": "point3_32_spinless",
+      "family": "point3",
+      "index": 32,
+      "name": "Oh",
+      "physical_spin": "spinless",
+      "hermann_mauguin": "m-3m",
+      "orientation_reversing": true,
+      "n0_scope": "not_applicable_in_3d",
+      "e0_scope": "not_applicable_in_3d",
+      "spatial_dimension": 3,
+      "spacetime_dimension": 4,
+      "dimension_label": "3+1D",
+      "e8_scope": "included",
+      "cells": {
+        "model": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "neutral": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "not_compared"
+        },
+        "R3_arxiv": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_arxiv"
+        },
+        "R3_journal": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "R3_journal"
+        },
+        "Debray": {
+          "availability": "available",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          },
+          "comparison_status": "mismatch",
+          "source": "Debray",
+          "source_location": "Table 6, p.60; Secs.5.1-5.5"
+        },
+        "NMLW": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared",
+          "reason": "No version-pinned full-group fixture extracted for this case."
+        }
+      }
+    }
+  ],
+  "e8_scope": "included"
+}

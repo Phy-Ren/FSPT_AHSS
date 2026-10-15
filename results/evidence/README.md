@@ -1,5 +1,9 @@
 # Immutable campaign evidence
 
+The [2026-10-15 evidence](four_data_20261015/README.md) separately preserves
+108 new CI calculations, 64 selected-model E8 extensions, launchers, logs and
+source-commit checks. The archives described below belong to the earlier runs.
+
 `two_dimensional_runs.tar.gz` contains the four 2D campaigns (108 calculations).
 `three_dimensional_runs.tar.gz` contains the 3D campaign (64 calculations).
 The [manifest](manifest.json) records archive hashes and a SHA-256 for every
