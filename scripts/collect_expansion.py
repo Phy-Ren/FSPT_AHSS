@@ -209,27 +209,98 @@ def load_campaign(root, kind, allow_recovered=False):
     return records, checks, provenance
 
 
+def selection_plan_requests(path):
+    """Parse explicit subsets; relative roots are relative to the plan file.
+
+    A plan never edits or weakens a parent's selection/recovery ledger. The
+    caller validates the complete parent before applying any subset below.
+    """
+    path = path.resolve()
+    raw = path.read_bytes()
+    entries = json.loads(raw)
+    if not isinstance(entries, list) or not entries:
+        raise ValueError("A selection plan must be a nonempty JSON list.")
+    requests = []
+    for index, entry in enumerate(entries):
+        if not isinstance(entry, dict) or set(entry) != {"kind", "root", "cases"}:
+            raise ValueError("Each selection-plan entry requires exactly kind, root and cases.")
+        kind, name, cases = entry["kind"], entry["root"], entry["cases"]
+        if not isinstance(kind, str) or kind not in ("ci", "e8", "four"):
+            raise ValueError("Unknown selection-plan calculation kind.")
+        if not isinstance(name, str) or not name.strip() or "\x00" in name:
+            raise ValueError("A selection-plan root must be a nonempty filesystem path.")
+        root = Path(name)
+        if not root.is_absolute():
+            root = path.parent / root
+        root = root.resolve()
+        if not root.is_dir():
+            raise ValueError(f"Selection-plan root is not a directory: {root}")
+        if (not isinstance(cases, list) or not cases
+                or any(not isinstance(case, str) or not case or Path(case).name != case
+                       or case in (".", "..") for case in cases)
+                or len(set(cases)) != len(cases)):
+            raise ValueError("Selection-plan cases must be distinct, nonempty case identifiers.")
+        requests.append({"kind": kind, "root": root, "cases": cases,
+                         "plan": {"path": str(path), "SHA256": hashlib.sha256(raw).hexdigest(),
+                                  "entryIndex": index}})
+    return requests
+
+
+def load_requests(requests, allow_recovered=False):
+    """Validate every original campaign, then select explicit complete cases."""
+    seen = set()
+    for request in requests:
+        key = (request["kind"], request["root"].resolve())
+        if key in seen:
+            raise ValueError(f"Duplicate campaign request: {key[0]} {key[1]}")
+        seen.add(key)
+    records = {kind: {} for kind in ("ci", "e8", "four")}
+    checks, provenance = [], []
+    for request in requests:
+        kind = request["kind"]
+        loaded, audited, source = load_campaign(request["root"], kind, allow_recovered=allow_recovered)
+        if request["cases"] is not None:
+            selected = request["cases"]
+            missing = set(selected) - set(loaded)
+            if missing:
+                raise ValueError(f"Selection-plan cases are missing from the validated {kind} parent: {sorted(missing)}")
+            # Keep the original selection-file identity, including the recovery
+            # ledger's full selection. Only result/check inclusion is narrowed.
+            source.update(originalSelection=list(source["selection"]),
+                          originalSelectionSHA256=source["selectionSHA256"],
+                          requestedSubset=list(selected), acceptedSelection=list(selected),
+                          fullParentValidation={"allSelectedParentCasesPassed": True,
+                                                "caseCount": len(loaded)},
+                          selectionPlan=request["plan"])
+            loaded = {case: loaded[case] for case in selected}
+            audited = [item for item in audited if item["id"] in loaded]
+            source["resultHashes"] = {case: source["resultHashes"][case] for case in selected}
+        duplicates = set(records[kind]) & set(loaded)
+        if duplicates:
+            raise ValueError(f"Duplicate {kind} cases: {sorted(duplicates)}")
+        records[kind].update(loaded)
+        checks.extend(dict(item, kind=kind) for item in audited)
+        provenance.append(source)
+    return records, checks, provenance
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     for kind in ("ci", "e8", "four"):
         parser.add_argument("--" + kind + "-root", type=Path, action="append", default=[])
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--selection-plan", type=Path,
+                        help="JSON list of {kind, root, cases}; fully validate each original parent before selecting its subset. Relative roots use the plan directory.")
     parser.add_argument("--allow-recovered", action="store_true",
                         help="Revalidate stopped-campaign recovery evidence; ordinary acceptance remains the default")
     args = parser.parse_args()
-    if not any((args.ci_root, args.e8_root, args.four_root)):
+    if not any((args.ci_root, args.e8_root, args.four_root, args.selection_plan)):
         parser.error("At least one calculation root is required.")
-    records = {kind: {} for kind in ("ci", "e8", "four")}
-    checks, provenance = [], []
-    for kind in records:
-        for root in getattr(args, kind + "_root"):
-            loaded, audited, source = load_campaign(root, kind, allow_recovered=args.allow_recovered)
-            duplicates = set(records[kind]) & set(loaded)
-            if duplicates:
-                raise ValueError(f"Duplicate {kind} cases: {sorted(duplicates)}")
-            records[kind].update(loaded)
-            checks.extend(dict(item, kind=kind) for item in audited)
-            provenance.append(source)
+    requests = [{"kind": kind, "root": root.resolve(), "cases": None}
+                for kind in ("ci", "e8", "four") for root in getattr(args, kind + "_root")]
+    if args.selection_plan:
+        requests.extend(selection_plan_requests(args.selection_plan))
+    records, checks, provenance = load_requests(requests, allow_recovered=args.allow_recovered)
     if set(records["ci"]) != set(records["e8"]):
         raise ValueError("The selected 3+1D CI and E8 cases must cover exactly the same inputs.")
     for case, extended in records["e8"].items():
