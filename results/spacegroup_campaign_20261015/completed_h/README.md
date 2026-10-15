@@ -1,0 +1,15 @@
+# Completed primary H evidence: 3+1D space groups
+
+All five primary H cases completed ordinary CI classification, selected neutral E8 extension and collector acceptance: SG138 spinless, SG141 both spins and SG229 both spins. No stopped-run recovery is used. This package is separate from the later H-tail controls and H overlap campaigns.
+
+The n08 finalizer finished at `2026-10-15T15:10:27.096565+00:00`. Its byte-exact archive is 306,845 bytes with SHA256 `707122f17a18f0a0380edce7abd205ae0752a31ccd10fe879075065f16c326c0`. It contains the original CI inputs, wrappers, native outputs, full witnesses and logs, plus the complete E8 and accepted-output trees. Small files under `nodes/n08/` are bound to exact archive members by `archive_mirrors.json`.
+
+CI computation used frozen H commit `ea44c1f55314ddd66587cf452bbaae9331f3a1db`, source manifest SHA256 `80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b`. E8 extension and acceptance used the unchanged frozen G postprocessor at `c07c6e5d4a69d79c9c2aeb0739ae1e189029f824`. Their distinct source identities and exact commands remain in the finalization, source and run records. The source and optional native-library hashes agree with the [primary H launch evidence](../deployment_h/README.md).
+
+These are accepted computations of the supplied E8-inclusive four-data model. All five records retain `physicalClassificationCertified: false`; successful computation does not establish the remaining physical CI-kernel identification. The five IDs exactly match the primary H plan and are disjoint from preserved D/F and all reserved G assignments.
+
+The persistent-SSH downloader waited for `state: complete`, checked the archive size/hash and unchanged completion report, rejected unsafe or duplicate archive members, and replayed the frozen G collector locally. CI results, E8 results and validation hashes reproduce exactly. It then checked every extracted original file remained unchanged and atomically published the local tree at `/home/xingyu/insulator-campaign-download/sgfull-20261015-h-n08-finalized`. Recorded replay commands retain their actual temporary extraction paths; replay provenance paths differ from the originals. `download_tool/` preserves the downloader, launch identity and its three offline checks, including a genuine completed 85-case archive replay.
+
+All five cases ran independently, and their raw elapsed durations are retained in `timing_summary.json`. No paired file-mtime duration is inferred. This package never rewrites original records or signals a process.
+
+Run `python results/spacegroup_campaign_20261015/completed_h/verify.py` to check package/archive hashes, completion and launch links, every retained original-file hash, exact CI/E8 parent identity, native completion flags and acceptance provenance. It does not recompute the nonlinear bar cochains. Add `--validator-root /path/to/checkout-at-c07c6e5` to replay the exact frozen collector in temporary directories and require identical mathematical and validation artifacts.

@@ -1,0 +1,304 @@
+{
+  "accepted": true,
+  "checks": [
+    {
+      "id": "spacegroup_229_spin_half",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 2,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 2,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 18,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "spacegroup_229_spinless",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 1,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 1,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 18,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "spacegroup_138_spinless",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 4,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 4,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 18,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "spacegroup_141_spin_half",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 4,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 4,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 16,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "spacegroup_141_spinless",
+      "independentPresentationFillingCheck": {
+        "chargeSubgroupFillingStep": 2,
+        "everyPresentationRelationPreservesFilling": true,
+        "fillingStep": 2,
+        "nativePrimitiveLatticeCertificatePresent": true,
+        "positivePrimitiveCellVolume": "1"
+      },
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 16,
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "0325f4c44b3746e4e66e12fe40344580b5eaa51d065852928baada8fab2baf9b",
+      "id": "spacegroup_229_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "2b7ec9585a8e8d29241bb14b9de53bda5fabf19dda5da4c671529b039526dc2f",
+      "id": "spacegroup_229_spinless",
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "1af5bad1ed3226980a80f45d6f04a948046c70a5c97092d590ad5de83c8597f3",
+      "id": "spacegroup_138_spinless",
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "b933d1ca8e80f9b79cd177e0513fcc2e1d4d851eadf797815272c22777cc9188",
+      "id": "spacegroup_141_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "e319b83b9b50e3aa581bff01e4160bf68311869b1c32c2adbad7631858a152b7",
+      "id": "spacegroup_141_spinless",
+      "independentSmithGroup": {
+        "freeRank": 1,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    }
+  ],
+  "completeResultCount": 5,
+  "missingOrFailedSelectedCases": [],
+  "scope": "E8-inclusive selected 3+1D four-data model, with the CI sector as computed",
+  "selectedCases": [
+    "spacegroup_138_spinless",
+    "spacegroup_141_spin_half",
+    "spacegroup_141_spinless",
+    "spacegroup_229_spin_half",
+    "spacegroup_229_spinless"
+  ]
+}

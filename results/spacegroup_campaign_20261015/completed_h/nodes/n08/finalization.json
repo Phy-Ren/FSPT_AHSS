@@ -1,0 +1,39 @@
+{
+  "acceptedCount": 5,
+  "archive": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-n08-evidence.tar.gz",
+  "archiveBytes": 306845,
+  "archiveSHA256": "707122f17a18f0a0380edce7abd205ae0752a31ccd10fe879075065f16c326c0",
+  "commands": [
+    [
+      "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+      "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/extend_e8_3p1.py",
+      "--ci-root",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-n08",
+      "--output",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-n08-e8"
+    ],
+    [
+      "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+      "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/collect_expansion.py",
+      "--ci-root",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-n08",
+      "--e8-root",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-n08-e8",
+      "--output",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-n08-accepted"
+    ]
+  ],
+  "endedUTC": "2026-10-15T15:10:27.096565+00:00",
+  "node": "n08",
+  "postprocessor": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g",
+  "runnerPID": 10189,
+  "runtimeVerified": true,
+  "selectedCount": 5,
+  "selectionSHA256": "9c2d9ab585785d7c2e490d9402385ff190ceeab85aa8f8551c83e4068cf1cb95",
+  "source": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h",
+  "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+  "sourceVerified": true,
+  "startedUTC": "2026-10-15T14:41:42.801884+00:00",
+  "state": "complete",
+  "tag": "sgfull-20261015-h-n08"
+}

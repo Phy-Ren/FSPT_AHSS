@@ -1,0 +1,10 @@
+test_archive_rejects_traversal_links_duplicates_and_unexpected_root (__main__.DownloadTests.test_archive_rejects_traversal_links_duplicates_and_unexpected_root) ... ok
+test_incomplete_report_rejected_before_download (__main__.DownloadTests.test_incomplete_report_rejected_before_download) ... ok
+test_offline_actual_archive_and_frozen_replay (__main__.DownloadTests.test_offline_actual_archive_and_frozen_replay) ... /usr/lib/python3.12/tarfile.py:2301: DeprecationWarning: Python 3.14 will, by default, filter extracted tar archives and reject files or modify their metadata. Use the filter argument to control this behavior.
+  warnings.warn(
+ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.552s
+
+OK
