@@ -1,0 +1,35 @@
+{
+  "archive": "snapshot-observed-ended-1f2df5fb.tar.gz",
+  "archiveSHA256": "b080f70b21b703ca269cfb0515ac3e7fdd3c0530b1c54ea06a5e0c795a9ab259",
+  "deployed": false,
+  "fileCount": 5,
+  "files": {
+    "attest_natural_exit.py": {
+      "bytes": 12317,
+      "sha256": "1f2df5fbed694bb85e959f501bbc66f5a81e75975b19f214ae890ae7bf7cba57"
+    },
+    "captures/capture_manifest-20261015T160458Z.json": {
+      "bytes": 9502,
+      "sha256": "1b42809b7e04f512a06986d88bf95e3e1dbc0ca164717de95faa6b703d5cc682"
+    },
+    "captures/n02-capture-20261015T160458Z.json": {
+      "bytes": 124272,
+      "sha256": "4cb0ac863ff3c58e951d7e7610ad7b3391a68f5b41e90cbc98141250a6450b35"
+    },
+    "captures/n03-capture-20261015T160458Z.json": {
+      "bytes": 131280,
+      "sha256": "56aa10795b63a72cc105f6fd1d9f3dbc6773f178c78e9bd79a3c122fb950e09f"
+    },
+    "stop_owned_campaign.py": {
+      "bytes": 20139,
+      "sha256": "574ee600775d6daa858cb6b20f97bb60843c126669a576daa82b4723dd467871"
+    }
+  },
+  "name": "observed-ended-1f2df5fb",
+  "offlinePreserverCommit": "c26f3dea716a6f5b2552c9b340b918d44f6151cd",
+  "priorHelperCommit": "cd448267b31b34cafe0d85954d138fc197306558",
+  "realEndedCampaignAttestationPerformed": false,
+  "schema": "u1-observed-ended-immutable-snapshot-v1",
+  "signalsSent": false,
+  "treeSHA256": "dca53883a5134a8f17312899ca9f922a88ae7bf8b16421259cd72e85fe3d5f26"
+}

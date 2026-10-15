@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "localOnly": true,
+  "clusterContact": false,
+  "productionSignals": false,
+  "testChecks": [
+    {
+      "name": "live_runner_rejected",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/live_runner_rejected",
+      "rejection": "Campaign absence is not established: captured active=[791984, 791985, 791987, 791988, 791983], scoped/group active=[791982, 791983, 791984, 791985, 791987, 791988]"
+    },
+    {
+      "name": "real_cli_live_runner_rejected",
+      "passed": true,
+      "realCLISubprocess": true,
+      "exitCode": 1,
+      "signalsAttempted": 0,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/real_cli_live_runner_rejected"
+    },
+    {
+      "name": "scoped_orphan_worker_rejected",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/scoped_orphan_worker_rejected",
+      "rejection": "Campaign absence is not established: captured active=[], scoped/group active=[791982]"
+    },
+    {
+      "name": "real_cli_scoped_child_rejected",
+      "passed": true,
+      "realCLISubprocess": true,
+      "exitCode": 1,
+      "signalsAttempted": 0,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/real_cli_scoped_child_rejected"
+    },
+    {
+      "name": "source_changed",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/source_changed",
+      "rejection": "Original source snapshot file changed: scripts/fake_gap.py"
+    },
+    {
+      "name": "durable_input_changed",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/durable_input_changed",
+      "rejection": "Previously durable artifact changed: spacegroup_019_spin_half/input.json"
+    },
+    {
+      "name": "durable_native_changed",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/durable_native_changed",
+      "rejection": "Previously durable artifact changed: spacegroup_019_spin_half/native.json"
+    },
+    {
+      "name": "wrong_prior_owner_rejected",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/wrong_prior_owner_rejected",
+      "rejection": "Prior live capture does not identify this exact owned campaign"
+    },
+    {
+      "name": "new_runtime_manifest_rejected",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/new_runtime_manifest_rejected",
+      "rejection": "Prior live capture does not identify this exact owned campaign"
+    },
+    {
+      "name": "observer_argv_change_rejected",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/observer_argv_change_rejected",
+      "rejection": "The attestor identity changed during a process census"
+    },
+    {
+      "name": "late_worker_second_scan_rejected",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/late_worker_second_scan_rejected",
+      "rejection": "Campaign absence is not established: captured active=[], scoped/group active=[987654]"
+    },
+    {
+      "name": "post_exit_artifact_race_rejected",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/post_exit_artifact_race_rejected",
+      "rejection": "Campaign artifacts changed during absence observation"
+    },
+    {
+      "name": "attested_natural_exit",
+      "signalsAttempted": 0,
+      "passed": true,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/attested_natural_exit"
+    },
+    {
+      "name": "real_cli_observed_ended",
+      "passed": true,
+      "realCLISubprocess": true,
+      "exitCode": 0,
+      "signalsAttempted": 0,
+      "output": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei/real_cli_observed_ended"
+    }
+  ],
+  "helperSHA256": "574ee600775d6daa858cb6b20f97bb60843c126669a576daa82b4723dd467871",
+  "attestorSHA256": "1f2df5fbed694bb85e959f501bbc66f5a81e75975b19f214ae890ae7bf7cba57",
+  "captureSHA256": "888adfee04657c5ab64e61bc1ac2696191410d8cd25803718eed4538c841f386",
+  "preservedOriginalPerCaseStatus": true,
+  "actualFailedBatchExitRetained": true,
+  "incompleteSingletonNotRecovered": true,
+  "originalArtifactsUnchanged": true,
+  "preservationHelperSHA256": "d99e0914f901c29adeb0f418cdae4b4df3895143f5c439bc8b0d07e5839e8388",
+  "workdir": "/home/xingyu/AllFSPT_reviews/natural_exit_attestation_self_identity_20261015/local-natural-hc0ciqei"
+}
