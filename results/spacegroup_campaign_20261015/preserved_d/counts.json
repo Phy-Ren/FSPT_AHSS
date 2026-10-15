@@ -1,0 +1,43 @@
+{
+  "dimension": "3+1D",
+  "e8Accepted": 250,
+  "nodes": [
+    {
+      "node": "n02",
+      "ordinaryComplete": 52,
+      "preserved": 76,
+      "recoveredComplete": 24,
+      "retry": 88,
+      "retryReasons": {
+        "ValueError: Missing regular original artifact: CASE/input.json": 32,
+        "ValueError: Missing regular original artifact: CASE/native.json": 56
+      }
+    },
+    {
+      "node": "n03",
+      "ordinaryComplete": 46,
+      "preserved": 74,
+      "recoveredComplete": 28,
+      "retry": 90,
+      "retryReasons": {
+        "ValueError: Missing regular original artifact: CASE/input.json": 38,
+        "ValueError: Missing regular original artifact: CASE/native.json": 52
+      }
+    },
+    {
+      "node": "n08",
+      "ordinaryComplete": 82,
+      "preserved": 100,
+      "recoveredComplete": 18,
+      "retry": 32,
+      "retryReasons": {
+        "ValueError: Missing regular original artifact: CASE/native.json": 32
+      }
+    }
+  ],
+  "ordinaryComplete": 180,
+  "physicalClassificationCertified": false,
+  "preserved": 250,
+  "recoveredComplete": 70,
+  "retry": 210
+}

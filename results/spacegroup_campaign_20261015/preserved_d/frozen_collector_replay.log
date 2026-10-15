@@ -1,0 +1,66 @@
+[
+  {
+    "family": "spacegroup",
+    "path": "3p1d/space_groups",
+    "count": 76,
+    "filesSHA256": {
+      "results.json": "255311091d4547ae1f9cc121e3a41cda8380365676dabac2f51e4033ab5dd711",
+      "validation.json": "cc7eda4b1fde406db42021d9b9c721b65a9c6abfc8b2fe2bef410b97b8b32cfa",
+      "provenance.json": "75365cddedf79e9b32cc4451f4d76922167bac90499e293142dacdfbaa9dc14a",
+      "ci_results.json": "db043264c8ad7213e4915bc0d4f0cfb92f7889b0536c587ecc543d1ccc1498c0"
+    }
+  }
+]
+[
+  {
+    "family": "spacegroup",
+    "path": "3p1d/space_groups",
+    "count": 74,
+    "filesSHA256": {
+      "results.json": "4753dd1bbefe65e93e9c48d923b38ee2a1269c7671c96771f7fb3505218bf801",
+      "validation.json": "1dabcb4d9ae61d25a74664ce3699b4baefa538db1608b94f2b78be897af73f45",
+      "provenance.json": "6561e2bb551603c884a3390f7671c7e738c339f2c7d3ce263f029c362152a11c",
+      "ci_results.json": "ff81106e3d538d4ede831a2ce300edf821870654b02e58eff6880510baf14e14"
+    }
+  }
+]
+[
+  {
+    "family": "spacegroup",
+    "path": "3p1d/space_groups",
+    "count": 100,
+    "filesSHA256": {
+      "results.json": "9fc1a68f046518325471ca708831fd1585fd0e7249c9c0b3e813fef83498510a",
+      "validation.json": "beaf102d6f1f5a4d2a976ab3384b8db157727439ac8fabe3c1a91f1366aea264",
+      "provenance.json": "6380f91f2093af222b3c527430c1ef78f53ca4808eb4d160f2ece8744eb3f057",
+      "ci_results.json": "c7e75f626cc762389557a87eaea216ada6c37b872a4e0f55eea95dc40575556c"
+    }
+  }
+]
+{
+  "frozenCollectorRepeated": true,
+  "nodes": [
+    {
+      "node": "n02",
+      "ordinary": 52,
+      "preserved": 76,
+      "recovered": 24,
+      "retry": 88
+    },
+    {
+      "node": "n03",
+      "ordinary": 46,
+      "preserved": 74,
+      "recovered": 28,
+      "retry": 90
+    },
+    {
+      "node": "n08",
+      "ordinary": 82,
+      "preserved": 100,
+      "recovered": 18,
+      "retry": 32
+    }
+  ],
+  "verified": true
+}

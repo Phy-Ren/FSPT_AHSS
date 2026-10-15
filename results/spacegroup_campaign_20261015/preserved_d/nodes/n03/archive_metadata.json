@@ -1,0 +1,699 @@
+{
+  "archive": {
+    "bytes": 2793395,
+    "command": [
+      "tar",
+      "-C",
+      "/home/user/xyren/AllFSPT_insulator/runs",
+      "-czf",
+      "/home/user/xyren/AllFSPT_insulator/archives/sgfull-20261015-d-n03-preserved-6065593.tar.gz",
+      "sgfull-20261015-d-n03-preserved",
+      "sgfull-20261015-d-n03-stop",
+      "sgfull-20261015-d-n03-postprocess-v2",
+      "sgfull-20261015-d-n03-preserved-e8",
+      "sgfull-20261015-d-n03-preserved-accepted"
+    ],
+    "exitCode": 0,
+    "path": "/home/user/xyren/AllFSPT_insulator/archives/sgfull-20261015-d-n03-preserved-6065593.tar.gz",
+    "sha256": "78260d1f0e14da2618726154daef39e124694e9005082193484eb5db43fb39f9"
+  },
+  "commands": [
+    {
+      "command": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "/home/user/xyren/AllFSPT_insulator/repository/scripts/recover_paired_campaign.py",
+        "--campaign",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03",
+        "--stop-report",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03-stop/cancellation.json",
+        "--output",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03-preserved"
+      ],
+      "elapsedSeconds": 3.279268331825733,
+      "exitCode": 0,
+      "finishedUTC": "2026-10-15T13:54:59.429845+00:00",
+      "stage": "preservation",
+      "startedUTC": "2026-10-15T13:54:56.149233+00:00"
+    },
+    {
+      "command": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "/home/user/xyren/AllFSPT_insulator/repository/scripts/extend_e8_3p1.py",
+        "--ci-root",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03-preserved",
+        "--allow-recovered",
+        "--output",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03-preserved-e8"
+      ],
+      "elapsedSeconds": 29.290937069803476,
+      "exitCode": 0,
+      "finishedUTC": "2026-10-15T13:55:28.739245+00:00",
+      "stage": "e8",
+      "startedUTC": "2026-10-15T13:54:59.445997+00:00"
+    },
+    {
+      "command": [
+        "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+        "/home/user/xyren/AllFSPT_insulator/repository/scripts/collect_expansion.py",
+        "--ci-root",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03-preserved",
+        "--e8-root",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03-preserved-e8",
+        "--allow-recovered",
+        "--output",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03-preserved-accepted"
+      ],
+      "elapsedSeconds": 15.381843607872725,
+      "exitCode": 0,
+      "finishedUTC": "2026-10-15T13:55:44.137298+00:00",
+      "stage": "acceptance",
+      "startedUTC": "2026-10-15T13:55:28.742187+00:00"
+    }
+  ],
+  "e8": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03-preserved-e8",
+  "finishedUTC": "2026-10-15T13:55:45.233070+00:00",
+  "node": "n03",
+  "ordinaryCompleteCases": [
+    "spacegroup_207_spin_half",
+    "spacegroup_207_spinless",
+    "spacegroup_213_spin_half",
+    "spacegroup_213_spinless",
+    "spacegroup_123_spin_half",
+    "spacegroup_123_spinless",
+    "spacegroup_162_spin_half",
+    "spacegroup_162_spinless",
+    "spacegroup_164_spin_half",
+    "spacegroup_164_spinless",
+    "spacegroup_177_spin_half",
+    "spacegroup_177_spinless",
+    "spacegroup_180_spin_half",
+    "spacegroup_180_spinless",
+    "spacegroup_183_spin_half",
+    "spacegroup_183_spinless",
+    "spacegroup_188_spin_half",
+    "spacegroup_188_spinless",
+    "spacegroup_195_spin_half",
+    "spacegroup_195_spinless",
+    "spacegroup_198_spin_half",
+    "spacegroup_198_spinless",
+    "spacegroup_050_spin_half",
+    "spacegroup_050_spinless",
+    "spacegroup_053_spin_half",
+    "spacegroup_053_spinless",
+    "spacegroup_056_spin_half",
+    "spacegroup_056_spinless",
+    "spacegroup_059_spin_half",
+    "spacegroup_059_spinless",
+    "spacegroup_089_spin_half",
+    "spacegroup_089_spinless",
+    "spacegroup_092_spin_half",
+    "spacegroup_092_spinless",
+    "spacegroup_095_spin_half",
+    "spacegroup_095_spinless",
+    "spacegroup_098_spin_half",
+    "spacegroup_098_spinless",
+    "spacegroup_103_spin_half",
+    "spacegroup_103_spinless",
+    "spacegroup_150_spin_half",
+    "spacegroup_150_spinless",
+    "spacegroup_152_spin_half",
+    "spacegroup_152_spinless",
+    "spacegroup_155_spin_half",
+    "spacegroup_155_spinless"
+  ],
+  "original": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03",
+  "preservationCompleteUTC": "2026-10-15T13:54:59.435100+00:00",
+  "preserved": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-d-n03-preserved",
+  "preservedCases": [
+    "spacegroup_222_spin_half",
+    "spacegroup_225_spin_half",
+    "spacegroup_191_spin_half",
+    "spacegroup_194_spin_half",
+    "spacegroup_204_spin_half",
+    "spacegroup_207_spin_half",
+    "spacegroup_207_spinless",
+    "spacegroup_213_spin_half",
+    "spacegroup_213_spinless",
+    "spacegroup_215_spin_half",
+    "spacegroup_123_spin_half",
+    "spacegroup_123_spinless",
+    "spacegroup_126_spin_half",
+    "spacegroup_129_spin_half",
+    "spacegroup_131_spin_half",
+    "spacegroup_137_spin_half",
+    "spacegroup_162_spin_half",
+    "spacegroup_162_spinless",
+    "spacegroup_164_spin_half",
+    "spacegroup_164_spinless",
+    "spacegroup_167_spin_half",
+    "spacegroup_177_spin_half",
+    "spacegroup_177_spinless",
+    "spacegroup_180_spin_half",
+    "spacegroup_180_spinless",
+    "spacegroup_183_spin_half",
+    "spacegroup_183_spinless",
+    "spacegroup_185_spin_half",
+    "spacegroup_188_spin_half",
+    "spacegroup_188_spinless",
+    "spacegroup_195_spin_half",
+    "spacegroup_195_spinless",
+    "spacegroup_198_spin_half",
+    "spacegroup_198_spinless",
+    "spacegroup_048_spin_half",
+    "spacegroup_050_spin_half",
+    "spacegroup_050_spinless",
+    "spacegroup_053_spin_half",
+    "spacegroup_053_spinless",
+    "spacegroup_056_spin_half",
+    "spacegroup_056_spinless",
+    "spacegroup_059_spin_half",
+    "spacegroup_059_spinless",
+    "spacegroup_062_spin_half",
+    "spacegroup_064_spin_half",
+    "spacegroup_067_spin_half",
+    "spacegroup_070_spin_half",
+    "spacegroup_073_spin_half",
+    "spacegroup_084_spin_half",
+    "spacegroup_089_spin_half",
+    "spacegroup_089_spinless",
+    "spacegroup_092_spin_half",
+    "spacegroup_092_spinless",
+    "spacegroup_095_spin_half",
+    "spacegroup_095_spinless",
+    "spacegroup_098_spin_half",
+    "spacegroup_098_spinless",
+    "spacegroup_100_spin_half",
+    "spacegroup_103_spin_half",
+    "spacegroup_103_spinless",
+    "spacegroup_106_spin_half",
+    "spacegroup_109_spin_half",
+    "spacegroup_112_spin_half",
+    "spacegroup_114_spin_half",
+    "spacegroup_117_spin_half",
+    "spacegroup_147_spin_half",
+    "spacegroup_150_spin_half",
+    "spacegroup_150_spinless",
+    "spacegroup_152_spin_half",
+    "spacegroup_152_spinless",
+    "spacegroup_155_spin_half",
+    "spacegroup_155_spinless",
+    "spacegroup_158_spin_half",
+    "spacegroup_161_spin_half"
+  ],
+  "recoveredCases": [
+    "spacegroup_222_spin_half",
+    "spacegroup_225_spin_half",
+    "spacegroup_191_spin_half",
+    "spacegroup_194_spin_half",
+    "spacegroup_204_spin_half",
+    "spacegroup_215_spin_half",
+    "spacegroup_126_spin_half",
+    "spacegroup_129_spin_half",
+    "spacegroup_131_spin_half",
+    "spacegroup_137_spin_half",
+    "spacegroup_167_spin_half",
+    "spacegroup_185_spin_half",
+    "spacegroup_048_spin_half",
+    "spacegroup_062_spin_half",
+    "spacegroup_064_spin_half",
+    "spacegroup_067_spin_half",
+    "spacegroup_070_spin_half",
+    "spacegroup_073_spin_half",
+    "spacegroup_084_spin_half",
+    "spacegroup_100_spin_half",
+    "spacegroup_106_spin_half",
+    "spacegroup_109_spin_half",
+    "spacegroup_112_spin_half",
+    "spacegroup_114_spin_half",
+    "spacegroup_117_spin_half",
+    "spacegroup_147_spin_half",
+    "spacegroup_158_spin_half",
+    "spacegroup_161_spin_half"
+  ],
+  "retryCases": [
+    "spacegroup_222_spinless",
+    "spacegroup_225_spinless",
+    "spacegroup_228_spin_half",
+    "spacegroup_228_spinless",
+    "spacegroup_191_spinless",
+    "spacegroup_194_spinless",
+    "spacegroup_201_spin_half",
+    "spacegroup_201_spinless",
+    "spacegroup_204_spinless",
+    "spacegroup_210_spin_half",
+    "spacegroup_210_spinless",
+    "spacegroup_215_spinless",
+    "spacegroup_218_spin_half",
+    "spacegroup_218_spinless",
+    "spacegroup_126_spinless",
+    "spacegroup_129_spinless",
+    "spacegroup_131_spinless",
+    "spacegroup_134_spin_half",
+    "spacegroup_134_spinless",
+    "spacegroup_137_spinless",
+    "spacegroup_140_spin_half",
+    "spacegroup_140_spinless",
+    "spacegroup_167_spinless",
+    "spacegroup_185_spinless",
+    "spacegroup_048_spinless",
+    "spacegroup_062_spinless",
+    "spacegroup_064_spinless",
+    "spacegroup_067_spinless",
+    "spacegroup_070_spinless",
+    "spacegroup_073_spinless",
+    "spacegroup_084_spinless",
+    "spacegroup_086_spin_half",
+    "spacegroup_086_spinless",
+    "spacegroup_100_spinless",
+    "spacegroup_106_spinless",
+    "spacegroup_109_spinless",
+    "spacegroup_112_spinless",
+    "spacegroup_114_spinless",
+    "spacegroup_117_spinless",
+    "spacegroup_120_spin_half",
+    "spacegroup_120_spinless",
+    "spacegroup_147_spinless",
+    "spacegroup_158_spinless",
+    "spacegroup_161_spinless",
+    "spacegroup_170_spin_half",
+    "spacegroup_170_spinless",
+    "spacegroup_172_spin_half",
+    "spacegroup_172_spinless",
+    "spacegroup_010_spin_half",
+    "spacegroup_010_spinless",
+    "spacegroup_013_spin_half",
+    "spacegroup_013_spinless",
+    "spacegroup_016_spin_half",
+    "spacegroup_016_spinless",
+    "spacegroup_019_spin_half",
+    "spacegroup_019_spinless",
+    "spacegroup_021_spin_half",
+    "spacegroup_021_spinless",
+    "spacegroup_024_spin_half",
+    "spacegroup_024_spinless",
+    "spacegroup_027_spin_half",
+    "spacegroup_027_spinless",
+    "spacegroup_030_spin_half",
+    "spacegroup_030_spinless",
+    "spacegroup_033_spin_half",
+    "spacegroup_033_spinless",
+    "spacegroup_035_spin_half",
+    "spacegroup_035_spinless",
+    "spacegroup_038_spin_half",
+    "spacegroup_038_spinless",
+    "spacegroup_041_spin_half",
+    "spacegroup_041_spinless",
+    "spacegroup_044_spin_half",
+    "spacegroup_044_spinless",
+    "spacegroup_075_spin_half",
+    "spacegroup_075_spinless",
+    "spacegroup_077_spin_half",
+    "spacegroup_077_spinless",
+    "spacegroup_080_spin_half",
+    "spacegroup_080_spinless",
+    "spacegroup_143_spin_half",
+    "spacegroup_143_spinless",
+    "spacegroup_146_spin_half",
+    "spacegroup_146_spinless",
+    "spacegroup_004_spin_half",
+    "spacegroup_004_spinless",
+    "spacegroup_006_spin_half",
+    "spacegroup_006_spinless",
+    "spacegroup_009_spin_half",
+    "spacegroup_009_spinless"
+  ],
+  "retryReasons": [
+    {
+      "id": "spacegroup_222_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_222_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_225_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_225_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_228_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_228_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_228_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_228_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_191_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_191_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_194_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_194_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_201_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_201_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_201_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_201_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_204_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_204_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_210_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_210_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_210_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_210_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_215_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_215_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_218_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_218_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_218_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_218_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_126_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_126_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_129_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_129_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_131_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_131_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_134_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_134_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_134_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_134_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_137_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_137_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_140_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_140_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_140_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_140_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_167_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_167_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_185_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_185_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_048_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_048_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_062_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_062_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_064_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_064_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_067_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_067_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_070_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_070_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_073_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_073_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_084_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_084_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_086_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_086_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_086_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_086_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_100_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_100_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_106_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_106_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_109_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_109_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_112_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_112_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_114_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_114_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_117_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_117_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_120_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_120_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_120_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_120_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_147_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_147_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_158_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_158_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_161_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_161_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_170_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_170_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_170_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_170_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_172_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_172_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_172_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_172_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_010_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_010_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_010_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_010_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_013_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_013_spin_half/native.json"
+    },
+    {
+      "id": "spacegroup_013_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_013_spinless/native.json"
+    },
+    {
+      "id": "spacegroup_016_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_016_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_016_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_016_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_019_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_019_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_019_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_019_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_021_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_021_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_021_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_021_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_024_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_024_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_024_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_024_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_027_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_027_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_027_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_027_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_030_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_030_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_030_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_030_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_033_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_033_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_033_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_033_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_035_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_035_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_035_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_035_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_038_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_038_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_038_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_038_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_041_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_041_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_041_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_041_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_044_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_044_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_044_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_044_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_075_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_075_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_075_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_075_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_077_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_077_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_077_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_077_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_080_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_080_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_080_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_080_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_143_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_143_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_143_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_143_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_146_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_146_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_146_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_146_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_004_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_004_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_004_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_004_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_006_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_006_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_006_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_006_spinless/input.json"
+    },
+    {
+      "id": "spacegroup_009_spin_half",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_009_spin_half/input.json"
+    },
+    {
+      "id": "spacegroup_009_spinless",
+      "reason": "ValueError: Missing regular original artifact: spacegroup_009_spinless/input.json"
+    }
+  ],
+  "sourceCommit": "6065593d15a85c9e6eff57e8fcc4bb1413d5ae56",
+  "sourceFilesSHA256": {
+    "insulator/e8_h1.py": "d39bbe2565e933c65641b6ad5886faf81f175f094643c82fb4cdb1a994c8d272",
+    "insulator/e8_pointgroup.py": "106d816f05f7eaf336a911d790b7aee0c5892b91e3368929eea8554e0862d4f8",
+    "insulator/e8_spacegroup.py": "aa3eaf00bd1016c157e83b7eedcba8a56b8097c3c4f03d3da9c1a65656c54d57",
+    "scripts/collect_expansion.py": "0c232b4894d4be400aed8aab7ceb97ba26437630fb856f703469295778507318",
+    "scripts/extend_e8_3p1.py": "c64543712be5fd61ee00b94666fc05aac8a07f32c974e351713d351faa451a17",
+    "scripts/recover_paired_campaign.py": "28f8b5bc99a0286c623950a3176d033465ae0e12edf74c4ee34973c647c5d40d"
+  },
+  "startedUTC": "2026-10-15T13:54:56.058510+00:00",
+  "status": "complete",
+  "stopReportSHA256": "d335129af6f6bd6ef5b7a16ea051d38b90b40934da97f657b02d6dd92d36334e"
+}
