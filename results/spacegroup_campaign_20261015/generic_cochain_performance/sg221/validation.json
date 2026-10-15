@@ -1,0 +1,94 @@
+{
+  "status": "pass",
+  "normalization": "none; all compared field values are literally equal",
+  "id": "spacegroup_221_spinless",
+  "fieldsChecked": [
+    "chargeKernelLattice",
+    "chargeObstructionMap",
+    "chargeObstructionTargetOrders",
+    "chargeOrders",
+    "chargePrimaryStats",
+    "coefficientActions",
+    "filtrationPresentations",
+    "finalChargeFreeRank",
+    "finalChargeOrders",
+    "finalPhaseFreeRank",
+    "finalPhaseOrders",
+    "finalSheetFreeRank",
+    "finalSheetOrders",
+    "formulaCacheStats",
+    "formulaWorkerCalls",
+    "freeRank",
+    "gaugeReductionWitnesses",
+    "generators",
+    "inputValidation",
+    "nativeChainIdentitiesVerified",
+    "nativeCompletionChecks",
+    "neutralE8AbsentByCohomology",
+    "obstructedSheets",
+    "pairedGeometryReuse",
+    "phaseOrders",
+    "presentation",
+    "presentationGeneratorCount",
+    "resolutionDimensions",
+    "scope",
+    "sheetOrders",
+    "spaceGroupFilling",
+    "spaceGroupSheetLattice",
+    "spatialDimension",
+    "theory",
+    "torsion",
+    "uniformIQHIncluded",
+    "witnesses"
+  ],
+  "changedRuntimeFiles": [
+    "gap/charge_source.g",
+    "gap/classification.g",
+    "gap/cochains.g",
+    "gap/load.g"
+  ],
+  "beforeSeconds": 429.263,
+  "afterSeconds": 268.854,
+  "observedSpeedRatio": 1.5966398119425413,
+  "peakRSSKiB": {
+    "baseline": 2583856,
+    "candidate": 1827896
+  },
+  "nativeVM_SHA256": "7c3288b10176c7fe814c2f202bea4e07bcd0b71a842a80253bb222bba7a0afdc",
+  "results": {
+    "/home/xingyu/AllFSPT_reviews/sg221_native_dag_20261015/run/spacegroup_221_spinless/result.json": "cc1027e1137b62b479e6737a630023be74e32dbb7db333a6458f3eb1dc445b92",
+    "/home/xingyu/AllFSPT_reviews/spacegroup_full_d_performance_20261015/closed_charge_and_cup_sg221/run/spacegroup_221_spinless/result.json": "27710b7d678b4d8612b27f84791f508ec87c69bb4c744dd922cac75033d1bc33"
+  },
+  "sourceSHAs": [
+    "67b361e640a9ea5b598b0e9fbde7399f2a7988285a61081684327c8870babe2d",
+    "91a52f772941ec5ed955389677ec8221aa875516695b94d654f1664ee245dbbd"
+  ],
+  "classification": {
+    "torsion": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4,
+      8
+    ],
+    "freeRank": 1,
+    "nativeChainIdentitiesVerified": true
+  },
+  "limits": "Same local host, input, GAP/runtime and native VM; sequential observations with ordinary varying machine load. No cluster or all-group extrapolation.",
+  "allClassificationFieldsCompared": 38,
+  "literalEqualClassificationFields": 37,
+  "differentClassificationFields": [
+    "resolutionBuildTimings"
+  ]
+}

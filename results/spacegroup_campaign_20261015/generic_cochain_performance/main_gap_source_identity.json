@@ -1,0 +1,68 @@
+{
+  "dateUTC": "2026-10-15",
+  "localCommit": "0864495b90297d3e1a0747b77aae17980f6d1f3f",
+  "clusterSource": "/home/user/xyren/AllFSPT",
+  "method": "Read-only SHA256 via existing persistent cuhk-cluster3 SSH master, project Python3.8; local hashes independently recomputed. The cluster source directory has no git metadata.",
+  "files": [
+    {
+      "file": "gap/backend.g",
+      "localSHA256": "a084bb19c1d542cb788dc334a216dbd91cf4914c575f74082467262ecfd005f4",
+      "cluster3SHA256": "a084bb19c1d542cb788dc334a216dbd91cf4914c575f74082467262ecfd005f4",
+      "equal": true
+    },
+    {
+      "file": "gap/backend_bar.g",
+      "localSHA256": "2ec02c92db0c666dd2fd566d006c061cf6aa0ac0df61915bd3675e2d1903e23f",
+      "cluster3SHA256": "2ec02c92db0c666dd2fd566d006c061cf6aa0ac0df61915bd3675e2d1903e23f",
+      "equal": true
+    },
+    {
+      "file": "gap/backend_diagonal.g",
+      "localSHA256": "11e04411cb2afe51fa98f2ac205f8e9c2c1e69f9bfa4e686767e3511dfa29afc",
+      "cluster3SHA256": "11e04411cb2afe51fa98f2ac205f8e9c2c1e69f9bfa4e686767e3511dfa29afc",
+      "equal": true
+    },
+    {
+      "file": "gap/backend_hash_cache.g",
+      "localSHA256": "30958c3bb86a23cb25d5a11ef0dbb888126f8c5da3325c2d0d50b47f9ade10fe",
+      "cluster3SHA256": "30958c3bb86a23cb25d5a11ef0dbb888126f8c5da3325c2d0d50b47f9ade10fe",
+      "equal": true
+    },
+    {
+      "file": "gap/backend_mod2_contraction.g",
+      "localSHA256": "0562ebbdc4cfceddc9ff10d3caedef1f1ce4d6de529097bbd385874f1b7fd854",
+      "cluster3SHA256": "0562ebbdc4cfceddc9ff10d3caedef1f1ce4d6de529097bbd385874f1b7fd854",
+      "equal": true
+    },
+    {
+      "file": "gap/backend_resolution.g",
+      "localSHA256": "5453332bb4da63383f706423b767d636c9e9277b8660200ab190f2912552192b",
+      "cluster3SHA256": "5453332bb4da63383f706423b767d636c9e9277b8660200ab190f2912552192b",
+      "equal": true
+    },
+    {
+      "file": "gap/class_coordinates.g",
+      "localSHA256": "681d6ab197b249c9312d9fb46762cfef801441379488c250e8b10e3f64973165",
+      "cluster3SHA256": "681d6ab197b249c9312d9fb46762cfef801441379488c250e8b10e3f64973165",
+      "equal": true
+    },
+    {
+      "file": "gap/finite_full.g",
+      "localSHA256": "fe98a99a450af36b06aeb4f74dc1182be498f199e9f2f4d2fed9140131eecc48",
+      "cluster3SHA256": "ea323ba90a5b672da58841ab28377d9d6b8ceef9bdeb256563eb8e161fd279ce",
+      "equal": false
+    },
+    {
+      "file": "gap/full_stacking.g",
+      "localSHA256": "f7bce4823c7b1724e67fe4dc19449e7e2179f382a7157db81b6b9ef738b10682",
+      "cluster3SHA256": "f7bce4823c7b1724e67fe4dc19449e7e2179f382a7157db81b6b9ef738b10682",
+      "equal": true
+    },
+    {
+      "file": "gap/run_full_space_group.g",
+      "localSHA256": "a3849832a95ce4eb7b3f612afcea765b56fd730d8a08f14d322fa7f48fe0dcb6",
+      "cluster3SHA256": "a3849832a95ce4eb7b3f612afcea765b56fd730d8a08f14d322fa7f48fe0dcb6",
+      "equal": true
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "boundedHighOrderProfiles": {
+    "baseline": {
+      "completedFunctionCounters": {
+        "Polycy*  InverseImmutable: for pcp elements": {
+          "childrenMilliseconds": 9694,
+          "count": 872629,
+          "selfMilliseconds": 559
+        },
+        "Polycy*  PcpElementConstruction": {
+          "childrenMilliseconds": 4295,
+          "count": 2633733,
+          "selfMilliseconds": 1153
+        },
+        "U1ChainFromBar": {
+          "childrenMilliseconds": 8137,
+          "count": 42918,
+          "selfMilliseconds": 66
+        },
+        "U1Cohomology": {
+          "childrenMilliseconds": 650,
+          "count": 3,
+          "selfMilliseconds": 0
+        },
+        "U1ContractCell": {
+          "childrenMilliseconds": 5707,
+          "count": 48839,
+          "selfMilliseconds": 133
+        },
+        "U1NativeContract": {
+          "childrenMilliseconds": 6213,
+          "count": 24646,
+          "selfMilliseconds": 14
+        },
+        "U1Smith": {
+          "childrenMilliseconds": 553,
+          "count": 4,
+          "selfMilliseconds": 0
+        },
+        "U1SmithUnits": {
+          "childrenMilliseconds": 564,
+          "count": 3,
+          "selfMilliseconds": 50
+        }
+      },
+      "logSHA256": "c39bd96df9c2304b290b68feb0b92a3115cac5b5d8adc9c80e250c441296de60",
+      "workerStarted": false
+    },
+    "candidate": {
+      "completedFunctionCounters": {
+        "Polycy*  InverseImmutable: for pcp elements": {
+          "childrenMilliseconds": 1101,
+          "count": 167496,
+          "selfMilliseconds": 73
+        },
+        "Polycy*  PcpElementConstruction": {
+          "childrenMilliseconds": 3301,
+          "count": 2988427,
+          "selfMilliseconds": 877
+        },
+        "U1ChainFromBar": {
+          "childrenMilliseconds": 8155,
+          "count": 115156,
+          "selfMilliseconds": 89
+        },
+        "U1Cohomology": {
+          "childrenMilliseconds": 689,
+          "count": 3,
+          "selfMilliseconds": 0
+        },
+        "U1ContractCell": {
+          "childrenMilliseconds": 5450,
+          "count": 85976,
+          "selfMilliseconds": 109
+        },
+        "U1NativeContract": {
+          "childrenMilliseconds": 5952,
+          "count": 42288,
+          "selfMilliseconds": 26
+        },
+        "U1Smith": {
+          "childrenMilliseconds": 581,
+          "count": 4,
+          "selfMilliseconds": 0
+        },
+        "U1SmithUnits": {
+          "childrenMilliseconds": 589,
+          "count": 3,
+          "selfMilliseconds": 65
+        }
+      },
+      "logSHA256": "f2d87ec8b514262ecbae0d52e6b1259cc1a31c3609d0fbd3c08d693d3d5ce3d4",
+      "workerStarted": false
+    }
+  },
+  "limits": "120s SG221 profiles are incomplete and function clocks only include completed calls; call-count progress is not an end-to-end speed ratio. Full local SG195 pair timings are sequential measurements on the same host/runtime with unchanged inputs, but are not isolated system microbenchmarks. No physical model formula or gauge representative changed.",
+  "matchedLocalRows": [
+    {
+      "afterBatchSeconds": 39.024,
+      "afterSeconds": 15.573,
+      "beforeBatchSeconds": 63.223,
+      "beforeSeconds": 28.473,
+      "files": {
+        "/home/xingyu/AllFSPT_reviews/spacegroup_full_d_performance_20261015/cup_candidate/sg195_pair/spacegroup_195_spin_half/result.json": "4f85e7db24373a0a1e5dfa40a536fd768e1a5bac2fee460adb70c78ed0428b84",
+        "/home/xingyu/AllFSPT_reviews/spacegroup_full_d_performance_20261015/sg195_local_baseline/spacegroup_195_spin_half/result.json": "998547466258da197454c3a65e5982a68f40c25bbda2278c096571687870790a"
+      },
+      "id": "spacegroup_195_spin_half",
+      "mathematicalFieldsChecked": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ]
+    },
+    {
+      "afterBatchSeconds": 39.025,
+      "afterSeconds": 23.41,
+      "beforeBatchSeconds": 63.224,
+      "beforeSeconds": 34.736,
+      "files": {
+        "/home/xingyu/AllFSPT_reviews/spacegroup_full_d_performance_20261015/cup_candidate/sg195_pair/spacegroup_195_spinless/result.json": "c742902796ef6dfd1112f0e379b916ae9e6d2b3d51e9031e397bdb3281c54297",
+        "/home/xingyu/AllFSPT_reviews/spacegroup_full_d_performance_20261015/sg195_local_baseline/spacegroup_195_spinless/result.json": "916da334ff9c5932a5e9968a13283d283205a3c84c5933744d96cc75956b2f0f"
+      },
+      "id": "spacegroup_195_spinless",
+      "mathematicalFieldsChecked": [
+        "chargeKernelLattice",
+        "chargeObstructionMap",
+        "chargeObstructionTargetOrders",
+        "chargeOrders",
+        "coefficientActions",
+        "filtrationPresentations",
+        "finalChargeFreeRank",
+        "finalChargeOrders",
+        "finalPhaseFreeRank",
+        "finalPhaseOrders",
+        "finalSheetFreeRank",
+        "finalSheetOrders",
+        "freeRank",
+        "gaugeReductionWitnesses",
+        "generators",
+        "inputValidation",
+        "nativeChainIdentitiesVerified",
+        "nativeCompletionChecks",
+        "neutralE8AbsentByCohomology",
+        "obstructedSheets",
+        "phaseOrders",
+        "presentation",
+        "presentationGeneratorCount",
+        "resolutionDimensions",
+        "scope",
+        "sheetOrders",
+        "spaceGroupFilling",
+        "spaceGroupSheetLattice",
+        "spatialDimension",
+        "theory",
+        "torsion",
+        "uniformIQHIncluded",
+        "witnesses"
+      ]
+    }
+  ],
+  "nonabelianExactComparisons": 19440,
+  "nonabelianLogSHA256": "220d7e45fe90c676e1b05e9e6005054d1c017409c0608c73a731eb318ee1ac4f",
+  "observedFullPairTimeRatio": 1.6200896860986547,
+  "onlyChangedRuntimeFile": "gap/cochains.g",
+  "status": "pass"
+}

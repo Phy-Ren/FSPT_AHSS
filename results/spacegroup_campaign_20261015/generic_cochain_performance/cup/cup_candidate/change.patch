@@ -1,0 +1,27 @@
+--- baseline/gap/cochains.g
++++ candidate/gap/cochains.g
+@@ -12,13 +12,20 @@
+   if a=U1Zero or b=U1Zero or i<0 or i>Minimum(p,q) then return U1Zero;fi;
+   degree:=p+q-i;cuts:=U1CupCuts.(Concatenation("c",String(p),"_",String(q),"_",String(i)));
+   return U1Memo(function(xs...)
+-    local vs,g,term,left,right,value,sg,j;
++    local vs,g,term,left,right,value,sg,j,edges,edgeStart,edgeEnd;
+     if Length(xs)<>degree then Error("cup arity mismatch");fi;
+-    vs:=[Identity(c.G)];for g in xs do Add(vs,vs[Length(vs)]*g);od;
++    # In a nonabelian group, (x1...xi)^-1*(x1...xj)=x(i+1)...xj.
++    # Preserve the original order; all coefficient actions still use prefixes.
++    edges:=[];
++    for edgeStart in [1..degree] do
++      edges[edgeStart]:=[];g:=xs[edgeStart];edges[edgeStart][edgeStart+1]:=g;
++      for edgeEnd in [edgeStart+2..degree+1] do g:=g*xs[edgeEnd-1];edges[edgeStart][edgeEnd]:=g;od;
++    od;
++    vs:=[Identity(c.G)];for j in [2..degree+1] do Add(vs,edges[1][j]);od;
+     value:=0;
+     for term in cuts do
+-      left:=List([1..Length(term[1])-1],j->vs[term[1][j]]^-1*vs[term[1][j+1]]);
+-      right:=List([1..Length(term[2])-1],j->vs[term[2][j]]^-1*vs[term[2][j+1]]);
++      left:=List([1..Length(term[1])-1],j->edges[term[1][j]][term[1][j+1]]);
++      right:=List([1..Length(term[2])-1],j->edges[term[2][j]][term[2][j+1]]);
+       sg:=1;
+       if not binary then sg:=term[3]*U1CoefficientAction(c,ca,vs[term[1][1]])*U1CoefficientAction(c,cb,vs[term[2][1]]);fi;
+       value:=value+sg*CallFuncList(a,left)*CallFuncList(b,right);

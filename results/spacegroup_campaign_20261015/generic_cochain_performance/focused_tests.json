@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "tests": [
+    {
+      "command": "python3 -m unittest discover -s tests -p 'test_closed_charge_source.py' -v",
+      "count": 3,
+      "seconds": 2.862,
+      "coverage": [
+        "9664 exact pointwise modulo-one source comparisons",
+        "60 even-native literal-zero checks",
+        "stale context/charge cache guards",
+        "nonclosed native integer input rejection"
+      ]
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -p 'test_cup_geometry.py' -v",
+      "count": 1,
+      "seconds": 0.874,
+      "coverage": [
+        "19440 nonabelian signed/rational comparisons with the original prefix implementation"
+      ]
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -p 'test_backend*.py' -v",
+      "count": 14,
+      "seconds": 9.162,
+      "coverage": [
+        "complete charge/CI/gauge regressions",
+        "both D2d discrepancy audits",
+        "full affine P1 paired-run/filling validation"
+      ]
+    }
+  ],
+  "runtimeHashes": {
+    "gap/charge_source.g": "a9afa799fcfb10e48b699b68799cd5fb78238a36268ba3e8892df3998cd69829",
+    "gap/classification.g": "1f881363c33df9fc481e8cde8bd8bf691151a7f80a76094305f134dadbf84a6e",
+    "gap/cochains.g": "ff75e998cfaf426198a78bd87362a45d245b922b0f7e37bdaf1c906d6dd2717c",
+    "gap/load.g": "692ba6ad404f9d9bc5fe41ae52cf89f7bf2973e260b332727be549db21aa1a1e",
+    "tests/test_closed_charge_source.py": "3d93c09ac62744bb2f8a9a855cfd312ea7ff8f2979c960652a8696d8032a947a",
+    "tests/test_cup_geometry.py": "2e0c229bd0f47d322626c22492a573e747b62b0b23dfa5ccf9469eac294dc6bc"
+  }
+}
