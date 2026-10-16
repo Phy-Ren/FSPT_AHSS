@@ -8,9 +8,8 @@ extracted Debray comparisons give 19 matches and one difference: Oh computes
 Z2^5 x Z4, while the reference prints Z2^4 x Z4. The remaining 12 comparisons
 are unverified.
 
-The [Oh diagnostic](../../../../docs/e8/research/campaign_20261015/3p1d/spinless/oh_diagnostic.md)
-checks the saved CI presentation and the explicitly printed real-space
-relations. The new run reproduces that presentation exactly. The discrepancy
-still lacks a complete physical generator and adjoining-equivalence map;
-the arithmetic issue in the real-space source alone does not settle the
-independent bordism comparison.
+The [independent Oh bordism calculation](../../../../benchmarks/point3_mismatch_audit_20261016/oh_audit.md)
+gives `ku4(X)=Z4 x Z2^4` and `ku0(X)=Z2` for `X=(BOh)^(3-V)`.
+The Spin-c splitting gives the full E8-inclusive group `Z4 x Z2^5`, with
+the relevant differentials and extensions resolved. A microscopic identification
+of every computed generator is a separate question.

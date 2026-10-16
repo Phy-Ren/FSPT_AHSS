@@ -96,7 +96,7 @@ $S_4\times C_2$; no group-name or physical-spin exchange explains the
 discrepancy. An explicit universal cochain-to-bordism root map is still
 not supplied by these input checks.
 
-## What the pinned references establish
+## Full interacting bordism result
 
 [Debray, arXiv:2102.02941v3](https://arxiv.org/abs/2102.02941v3), Table 6
 (p.60), is unambiguous. Its `full_octahedral.tex`, lines 583–599, identifies
@@ -105,43 +105,32 @@ $\widetilde\Omega^{\mathrm{Spin}^c}_4((BO_h)^{3-V_\lambda})$ and states
 $\mathbb Z_4\oplus\mathbb Z_2^4$. Lines 601–710 give an Adams
 $\mathcal E(1)$-module calculation and claim no relevant differentials or
 hidden extensions. This is interacting bordism under the phase-homology
-ansatz, not a free-band result or an E8-removed table. The displayed
-calculation has not been independently reconstructed in this bounded
-diagnostic. Its Adams filtration is not automatically the same as the
-charge/phase filtration above.
+ansatz, not a free-band result or an E8-removed table.
 
 The journal [PRX 15, 031029 (2025)](https://doi.org/10.1103/PhysRevX.15.031029),
-Table II, prints the same full group for this cell. Its 0D-bubble paragraph
-also retains the relation family
-`(8n1+6n2+12n3, (-1)^n2, +)` followed by the claimed quotient $\mathbb Z_4$.
-The existing [printed-relation audit](../../../../../../benchmarks/point3_Oh_spinless_printed_relation_audit.json)
-shows that those listed relations alone instead give
-$\mathbb Z_4\oplus\mathbb Z_2$. The journal text can be located in the
-cached extraction at lines 7696–7703. This is a concrete source-side
-arithmetic issue, but does **not** identify one of our $p_i$ with that
-extra center character or independently refute the bordism calculation.
-An unlisted physical relation remains a possible explanation of the
-real-space paragraph.
+Table II, prints the same full group for this cell.
 
-Debray v3 explicitly says its sporadic-group calculations were revised
-after comparison with that work (`tet_oct_icos_generalities.tex`, lines
-4–10). Agreement of these two printed cells therefore does not establish
-blind independence. There is no version change of this particular cell
-in the pinned journal/arXiv comparison, and no E8-scope adjustment turns
-the current two full answers into equal groups.
+The [independent Steenrod/Koszul reconstruction](../../../../../../benchmarks/point3_mismatch_audit_20261016/oh_audit.md)
+computes $ku_4(X)=\mathbb Z_4\oplus\mathbb Z_2^4$ for
+$X=(BO_h)^{3-V_\lambda}$. The low-degree Spin-c splitting additionally
+requires $ku_0(X)=\mathbb Z_2$. Thus
 
-## Remaining calibration question
+$$
+\widetilde\Omega_4^{\mathrm{Spin}^c}(X)
+\cong ku_4(X)\oplus ku_0(X)
+\cong\mathbb Z_4\oplus\mathbb Z_2^5.
+$$
 
-Within the selected model, the presentation and all stated incoming
-relations are explicit. The unresolved question is whether its physical
-CI kernel has an additional identification, or the printed bordism
-degree-four count misses a class. The factor-of-two difference alone
-does not choose between them or identify a canonical “extra root.”
-Resolving it requires either a cochain-to-bordism map on the five phase
-classes and the completed charge lift, or an independent reconstruction
-of the cited low-degree $\mathcal E(1)$ calculation. Adding an arbitrary
-relation, removing the neutral root, or altering the spin convention to
-match the printed order is not justified by the present evidence.
+The relevant differentials and extensions are resolved, and there is no
+degree-five free contribution to the Anderson-dual phase group. This gives
+the full E8-inclusive interacting group, agreeing with the current result.
+Debray's displayed calculation omits the shifted $ku_0$ contribution.
+
+This determines the group within the crystalline/bordism framework. A
+microscopic identification of every cochain generator and a universal map
+from the four-data formulas to the physical spectrum remain separate
+questions. In particular, the added spectral summand is not automatically
+a canonical E8 generator in the coordinates above.
 
 ## Immutable evidence
 

@@ -1,6 +1,6 @@
 # Independent audit: spinless O_h in 3+1 dimensions
 
-Date: 2026-10-16 UTC. Scope: the full interacting Class-A point-group problem, including the neutral decoration, with physical spinless fermions. No runtime formulas, accepted results, reference fixtures, or cluster jobs were changed.
+Date: 2026-10-16 UTC. Scope: the full interacting Class-A point-group problem, including the neutral decoration, with physical spinless fermions.
 
 ## Finding
 
@@ -12,14 +12,14 @@ $$
 
 An independent reconstruction of the relevant bordism calculation gives this group. Debray's v3 Theorem 5.92 prints $\mathbb Z_4\oplus(\mathbb Z_2)^4$, but the displayed calculation on the same page computes connective complex K-homology $ku_4$, not the complete Spin-c bordism group. The low-degree Spin-c splitting requires a further $ku_0=\mathbb Z_2$ summand. The discrepancy is therefore localized to the transition from the Adams calculation to the stated Spin-c theorem.
 
-This is substantially stronger than agreement with our own cochain engine or a suspicious real-space paragraph. It independently computes the same bordism problem Debray assigns to physical spinless O_h. It does not prove a universal equivalence between our entire four-data theory and the physical spectrum.
+The calculation independently solves the bordism problem Debray assigns to physical spinless O_h. Its conclusion concerns this group; it does not prove a universal equivalence between the four-data theory and the physical spectrum.
 
 Confidence is high for this particular stacking group, after a separate peer review of the Steenrod action, Koszul computation, filtration bounds, differentials, extensions, and Spin-c splitting. The paper's authors have not confirmed a correction; the stored reference remains the result they actually printed.
 
 ## Sources and precise locations
 
 1. Arun Debray, *Invertible phases for mixed spatial symmetries and the fermionic crystalline equivalence principle*, [arXiv:2102.02941v3](https://arxiv.org/abs/2102.02941v3), revised 3 February 2026. Relevant locations: p.22, low-degree Spin-c splitting; p.60, Table 6; pp.81–82, full-octahedral cohomology and Stiefel–Whitney classes; p.85, §5.5.3, Theorem 5.92, equations (5.93) and (5.94). The current cached source agrees byte for byte with the previously pinned v3 source for `full_octahedral.tex`.
-2. Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi, Zheng-Cheng Gu, *Construction and Classification of Crystalline Topological Superconductor and Insulators in Three-Dimensional Interacting Fermion Systems*, [Physical Review X 15, 031029 (2025)](https://doi.org/10.1103/PhysRevX.15.031029), published 28 July 2025. Relevant locations: Table II on p.031029-5; §IV G, pp.031029-48–50; the atomic states explicitly reused in the insulator discussion are equations (209)–(210), p.031029-37. The journal PDF, rather than only the arXiv draft, was checked.
+2. Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi, Zheng-Cheng Gu, *Construction and Classification of Crystalline Topological Superconductor and Insulators in Three-Dimensional Interacting Fermion Systems*, [Physical Review X 15, 031029 (2025)](https://doi.org/10.1103/PhysRevX.15.031029), published 28 July 2025. Relevant locations: Table II on p.031029-5; §IV G, pp.031029-48–50; The journal PDF, rather than only the arXiv draft, was checked.
 3. The independent peer reviewer also checked the modern Spin-c splitting statement in [Buchanan–McKean, Algebraic & Geometric Topology 26 (2026), 485–551](https://doi.org/10.2140/agt.2026.26.485), Theorem 3.6 on p.492 and Table 3 on p.538. Up to degree seven, the two relevant connective-complex-K summands are the unshifted summand and its degree-four shift; no additional mod-two Eilenberg–Mac Lane summand occurs in this range. See `oh_peer_d2.json` and the independent D2 audit for the source check.
 
 ## Reconstructing the bordism calculation
@@ -154,39 +154,17 @@ $$
 
 This agrees with both Debray Theorem 5.95 and our current spin-half result. It is a useful control against a uniform convention error or indiscriminately adding one Z2 to every printed answer.
 
-## What the real-space paper does and does not prove
+## Comparison with the real-space classification
 
-The old printed-relation audit is arithmetically correct but is insufficient to identify the physical extra root. The published p.031029-49 prints the three atomic relations
-
-$$
-(8,0,0),\quad(6,1,0),\quad(12,0,0)
-$$
-
-in coordinates (integer charge, coordinate-reflection bit, diagonal-reflection bit). Including the two character periods, Smith reduction gives (1,2,4), hence a quotient Z4 × Z2, whereas the paragraph claims Z4.
-
-However, a literal filled orbit of twelve spinless scalar fermions on the edge directions has diagonal-reflection sign minus one. For reflection (x,y,z) ↦ (y,x,z), the twelve-site permutation has two fixed points and five transpositions. Its many-body determinant is therefore minus one. The correct literal orbit relation is
-
-$$
-(12,0,1).
-$$
-
-The paper's own equations (209)–(210), p.031029-37, provide the same check: the xy four-fermion state changes sign, while the yz and xz blocks are exchanged. Exchanging two even-parity four-fermion blocks contributes plus one. Their product thus has the negative sign, contrary to the later insulator paragraph.
-
-With this corrected sign the three orbit relations give Smith form (1,1,4), so the center quotient is Z4, as claimed in the paper. Generic 24- and 48-site orbits add no new relation in this scalar-orbital check. Therefore the old argument “the printed 0D relation leaves an extra Z2, so our extra Z2 is correct” must not be used as a physical proof. The independent bordism reconstruction above supplies the stronger evidence.
-
-There is a separate inconsistency in the real-space presentation. Table II gives only Z2 for the spinless O_h one-dimensional block layer, but §IV G 2 on p.031029-49 explicitly gives Z2², with Haldane chains on the two axis orbits. The same body's two-dimensional layer is Z2³ on p.031029-48, and its corrected center quotient is Z4. Taking those stated surviving body layers gives total order 8 × 4 × 4 = 128, whereas Table II and the final group have order 64. A group extension cannot reduce the order by two. An additional identification would have to be supplied to reconcile the smaller table with those body claims. We did not locate such a relation in the relevant insulator section. The body's higher-order-surface paragraph also calls the 2D layer Z2², another incompatible count.
-
-These internal contradictions are specific, checkable statements. They do not show that every calculation by any author is unreliable. They also do not establish a causal story about why Debray's revision agrees with the real-space table.
-
-## Dependence and independence of the two sources
-
-The introductory paragraph to Debray's sporadic-group section states that discrepancies in the first version were corrected following comparison with Zhang–Ning–Qi–Gu, and thanks Zheng-Cheng Gu, Yang Qi, and Weicheng Ye. Thus blind independence of the two final tables should not be asserted.
-
-However, §5.5.3 contains its own E(1)-module and Adams calculation. It does not invoke a theorem of Zhang–Ning–Qi–Gu as the mathematical proof of O_h. Our audit locates an internal missing summand using that calculation and a separately checked spectrum splitting. Agreement of the final tables alone would not establish which author's calculation influenced a particular erroneous step.
+Zhang–Ning–Qi–Gu, PRX 15, 031029 (2025), Table II, p.031029-5, prints
+Z4 × Z2⁴ for spinless O_h. The independent Spin-c bordism calculation above
+gives Z4 × Z2⁵ for the same physical symmetry, with E8 included. Its Adams
+differentials and additive extensions are fixed, so the printed group cannot
+be reconciled with this bordism calculation by a different stacking extension.
 
 ## Relation to our saved cochain results
 
-Our selected four-data model has an explicit completed-charge/phase presentation with group Z4 × Z2⁴ and an independently calculated neutral section of order two. Previous audits checked the saved native closures, phase completions, incoming charge-gauge image, Smith form, physical symmetry input, and restrictions to D4h, Th, O, and Td. Those checks already made a basic cochain implementation failure unlikely, but did not establish the physical identification.
+Our selected four-data model has an explicit completed-charge/phase presentation with group Z4 × Z2⁴ and an independently calculated neutral section of order two. The saved native closures, phase completions, incoming charge-gauge image, Smith form, physical symmetry input, and restrictions to D4h, Th, O, and Td pass their exact checks. The independent Spin-c calculation fixes the full group for this case.
 
 The calculation in this note supplies an independent bordism-group cross-check for this one case. It does not construct the canonical map from the individual cochain generators to the real-space Haldane or atomic generators, and it does not certify the universal CI-kernel comparison or every other point/space group. No arbitrary quotient relation should be added to force agreement with the smaller published cell.
 
@@ -197,8 +175,6 @@ All paths below are in this audit directory unless specified otherwise.
 - `oh_ext_audit.py` / `.json`: independent polynomial Steenrod module and dual-Koszul calculation, h_0 rank, and final groups. Initial operation/complex checks: 382.
 - `oh_peer_d2.json`: separate review, including higher-filtration and 91 h_0 chain-map checks.
 - `oh_spin_half_ext_control.py` / `.json`: positive control using the determinant Thom twist.
-- `oh_atomic_orbits.py` / `.json`: explicit 48 signed-permutation matrices, orbit permutations, Fock-state signs, and both printed/corrected Smith forms.
-- `oh_printed_relations.json`: rerun of the existing printed-TeX relation extractor.
 - `debray_v3.pdf`, plus extracted relevant pages `debray_p22.txt`, `debray_p60.txt`, `debray_p82.txt`, `debray_p85.txt`.
 - `prx_p37.txt`, `prx_p48.txt`, `prx_p49.txt`, `prx_p50.txt`: relevant journal-page extracts; canonical full PDF is `/home/arxiv/10.1103_physrevx.15.031029.pdf`.
 
@@ -208,4 +184,6 @@ Source hashes:
 - Debray `full_octahedral.tex`: `223b5c061bbae1a16cf60101a709a25fd248be859147b85db1cafaaebb7cfed9`.
 - PRX journal PDF: `eda983b3c093877d7b6d34da1092ae8c8c5dc272746e6f4eaf28f35a7438c692`.
 
-The live reference tables should continue to show the printed references with a difference marker, accompanied by the audit conclusion. This audit provides grounds to label the spinless O_h discrepancy as a specific likely source-side omission, rather than an unresolved anonymous mismatch.
+The reference tables retain the printed values and difference markers. The
+independent calculation identifies the omitted shifted-ku summand and supports
+the current full group Z4 × Z2⁵.

@@ -54,22 +54,6 @@ extension, not just the abstract finite group. Odd-primary and rational pieces
 are checked separately. Thus an isomorphism of graded AHSS layers alone is
 never used to infer a final extension.
 
-## A correction to our own previous argument
-
-The old printed-relation audit for spinless Oh must not be used to claim an
-extra atomic Z2. Its literal twelve-site fermion orbit has a negative
-diagonal-reflection sign. Correcting the printed row from `(12,0,0)` to
-`(12,0,1)` gives the paper's stated center quotient Z4. The source's printed
-rows were inconsistent, but that inconsistency did not prove our physical
-classification. The independent bordism calculation above supplies the
-stronger evidence. The old note now points to this correction.
-
-The PRX Oh discussion also assigns two Haldane factors in its body but one in
-Table II. This is a separate internal inconsistency. We do not infer any
-author's motives or the causal origin of an error from agreement of tables.
-Debray explicitly acknowledges revisions after comparison with that work;
-the final tables therefore should not be treated as blind independent checks.
-
 ## Implementation control
 
 All three Debray mismatch cases were freshly recomputed on **n08**, through
@@ -110,7 +94,6 @@ From the repository root, representative reproducibility commands are:
 ```bash
 python3 benchmarks/point3_mismatch_audit_20261016/d2_polynomial_audit.py
 python3 benchmarks/point3_mismatch_audit_20261016/oh_ext_audit.py
-python3 benchmarks/point3_mismatch_audit_20261016/oh_atomic_orbits.py
 python3 benchmarks/point3_mismatch_audit_20261016/d2d_geometry_audit.py
 python3 benchmarks/point3_mismatch_audit_20261016/d2d_ext_audit.py
 python3 benchmarks/point3_mismatch_audit_20261016/d2d_peer_oh.py

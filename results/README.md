@@ -135,12 +135,11 @@ Several differences have checks independent of the classification run:
 - D2d has explicit obstruction, proper-D2 restriction and charge-gauge checks.
   The two supplied gauge representatives give identical cohomology classes.
   Its remaining physical root and adjoining-equivalence comparison is unresolved.
-- For spinless Oh, the source's explicitly printed center relations have Smith
-  quotient `Z4 x Z2`, whereas its next sentence claims `Z4`. This provides a
-  source-internal arithmetic discrepancy consistent with an extra factor, but
-  does not exclude additional unlisted physical relations. Its 1D-layer count
-  also differs between the discussion and table. See the
-  [independent final review](../benchmarks/final_point3_review_20261013.md).
+- For spinless Oh, the independent full bordism calculation gives
+  `ku4(X)=Z4 x Z2^4` and `ku0(X)=Z2` for `X=(BOh)^(3-V)`.
+  The low-degree Spin-c splitting therefore gives the full E8-inclusive
+  group `Z4 x Z2^5`, including all relevant differentials and extensions.
+  See the [bordism derivation](../benchmarks/point3_mismatch_audit_20261016/oh_audit.md).
   A [saved-witness audit](audits/Oh_spinless_saved_witnesses.json) verifies 15
   native equations and the incoming quotient. Its entire surviving phase group
   injects into the independently computed D4h phase quotient. These checks give

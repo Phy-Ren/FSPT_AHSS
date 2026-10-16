@@ -98,11 +98,6 @@ on n08, including E8 and acceptance. All mathematical output fields agree
 with the current records. This checks implementation consistency; the independent
 bordism arguments above justify the particular groups.
 
-We also corrected our own earlier Oh argument: the twelve-site atomic orbit
-has a negative fermionic permutation sign. Correcting that sign restores the
-source's center quotient Z4, so that old argument does not prove an extra Z2.
-The bordism calculation above supplies the justification instead.
-
 These checks do not establish a universal equivalence between the four-data
 formulas and the physical spectrum, or a microscopic map for every generator.
 The [complete audit](../benchmarks/point3_mismatch_audit_20261016/README.md)

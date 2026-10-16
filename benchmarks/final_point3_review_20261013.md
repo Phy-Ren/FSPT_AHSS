@@ -46,10 +46,11 @@ Interpretation limits:
 - D2d has independent charge-obstruction and root-square checks. Its separate
   atomic-orbit induction quotient remains conditional until an explicit
   allowed inverse-paired bubble/adjoining path realizes the proposed rows.
-- Oh spinless has an internal source arithmetic conflict: its explicitly
-  printed 0D relations give Z4 x Z2 by Smith reduction, while the following
-  sentence claims Z4. Extra unlisted physical relations have not been ruled
-  out. The source's 1D-layer count is also internally inconsistent.
+- The independent full spinless Oh bordism calculation gives
+  `ku4(X)=Z4 x Z2^4` and `ku0(X)=Z2` for `X=(BOh)^(3-V)`.
+  Their Spin-c sum is the full E8-inclusive group `Z4 x Z2^5`, with the
+  relevant differentials and extensions resolved. See the
+  [bordism derivation](point3_mismatch_audit_20261016/oh_audit.md).
 - None of the 13 discrepancies has been converted into a match by editing
   the primary table or fitting the backend. Numerical agreement elsewhere
   establishes the stated sector comparison, not completeness of every
