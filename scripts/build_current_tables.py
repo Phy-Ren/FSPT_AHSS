@@ -363,50 +363,122 @@ class Catalogue:
         self.put("index.json", encoded(self.index))
         self.put("collections.json", encoded({"accepted_expansion_directories": self.expansions}))
         self.put("README.md", "# Computed U(1)^f insulator examples\n\n"
-                 f"The current catalogue contains {backgrounds} distinct backgrounds and {count} response-sector entries. "
-                 "It includes all 54 planar/wallpaper backgrounds and all 64 spatial point-group backgrounds. "
-                 "Each 2+1D background has separate n0=0 and all-allowed-n0 tables, both with e0=0. "
-                 "The 3+1D tables include the computed neutral E8 section.\n\n"
-                 "- [2+1D: point groups and wallpaper groups](2p1d/README.md).\n"
-                 "- [3+1D: crystalline groups](3p1d/README.md).\n"
-                 + (f"- [4+1D: internal cyclic groups](4p1d/README.md), {cyclic_count} completed inputs.\n" if cyclic_count else "")
-                 + (f"\nThe 3+1D collection also contains {space_count} completed space-group inputs, counted separately for each physical spin.\n" if space_count else "")
-                 + "\n"
-                 "Each row gives the four final data layers, final stacking group, and separately cited interacting references. "
-                 "Physical spins and response sectors have separate files. **✓** marks the same reported group; **×** marks a different reported group.\n\n"
-                 "[Calculation provenance and scope](PROVENANCE.md) · [Machine-readable example index](index.json).\n")
+                 f"The current catalogue contains **{backgrounds} distinct backgrounds** and "
+                 f"**{count} response-sector entries in {table_count} tables**. "
+                 "Each calculation fixes the symmetry group, physical spin, extension data, "
+                 "and response sector. Dimensions and physical spins have separate result files.\n\n"
+                 "| Collection | Backgrounds | Response-sector entries |\n"
+                 "| --- | ---: | ---: |\n"
+                 "| [2+1D planar point groups](2p1d/README.md) | 20 | 40 |\n"
+                 "| [2+1D wallpaper groups](2p1d/README.md) | 34 | 68 |\n"
+                 "| [3+1D crystallographic point groups](3p1d/README.md) | 64 | 64 |\n"
+                 + (f"| [3+1D space groups](3p1d/README.md) | {space_count} | {space_count} |\n" if space_count else "")
+                 + (f"| [4+1D internal cyclic groups](4p1d/README.md) | {cyclic_count} | {cyclic_count} |\n" if cyclic_count else "")
+                 + "\nThe 2+1D collections keep `n0=0` and all allowed `n0` in separate files, "
+                 "both with `e0=0`. The 3+1D collections include E8 in the completed four-data calculation. "
+                 "The 4+1D cyclic examples retain the coupled E8 and shared-phase root relations.\n\n"
+                 "## Reading the tables\n\n"
+                 "Each row records the final filtration in the order "
+                 "`(e_p,n_p,n_{p+2},nu_{p+3})`, followed by the **final stacking group**, "
+                 "with `p=d-2` in spatial dimension `d`. Filtration layers already include "
+                 "incoming identifications; multiplying their groups does not determine the stacking extensions. "
+                 "Wallpaper and space groups use the full infinite affine groups.\n\n"
+                 "Every interacting reference source and version has its own cited column. "
+                 "**✓** marks the same reported group; **×** marks a different reported group. "
+                 "`UNVERIFIED` means no verified comparison is available; `N/A` means the source does not apply. "
+                 "Layer comparisons are labeled separately from full stacking comparisons. "
+                 "In particular, the space-group Song–Xiong–Huang column compares the neutral E8 layer only.\n\n"
+                 "The results are complete calculations of the selected four-data model. "
+                 "Its universal identification with the full physical CI kernel remains conditional. "
+                 "[Calculation provenance and scope](PROVENANCE.md) explains acceptance and reference domains.\n\n"
+                 "[Formula guide](../../docs/FORMULA_GUIDE.md) · "
+                 "[Machine-readable example index](index.json) · "
+                 "[Reference source ledger](../../docs/reference_ledger_20261014.md).\n")
+        self.put("2p1d/README.md", "# 2+1D insulator examples\n\n"
+                 "All **10 planar point groups and 17 wallpaper groups** are computed for each physical spin: "
+                 "54 backgrounds and 108 response-sector entries. The uniform E8 response is **`e0=0`** "
+                 "throughout this collection. The `n0=0` sector and all allowed uniform IQH responses "
+                 "have separate tables.\n\n"
+                 "## Spinless\n\n"
+                 "- [n0=0: point groups and wallpaper groups](spinless/n0_zero/README.md).\n"
+                 "- [All allowed n0: point groups and wallpaper groups](spinless/n0_all/README.md).\n\n"
+                 "## Spin-1/2\n\n"
+                 "- [n0=0: point groups and wallpaper groups](spin_half/n0_zero/README.md).\n"
+                 "- [All allowed n0: point groups and wallpaper groups](spin_half/n0_all/README.md).\n\n"
+                 "Each table gives `(e0,n0,n2,nu3)` and the final stacking group, with separate "
+                 "versioned interacting-reference columns. The zero-IQH sector is the kernel of "
+                 "the actual response homomorphism, including its stacking relations. "
+                 "Wallpaper calculations retain translations and glides.\n\n"
+                 "[2+1D formulas](../../../docs/formulas/TWO_DIMENSIONAL.md) · "
+                 "[Catalogue](../README.md) · [Provenance and scope](../PROVENANCE.md).\n")
+        self.put("3p1d/README.md", "# 3+1D insulator examples\n\n"
+                 "All **32 crystallographic point groups** are computed for each physical spin. "
+                 + (f"The space-group collection contains **{space_count} completed backgrounds**, "
+                    + ("covering all **230 space groups for both spins**. " if space_count == 460 else "counting each physical spin separately. ")
+                    if space_count else "")
+                 + "Every entry includes the four data `(e1,n1,n3,nu4)`, E8 first, and the final stacking group.\n\n"
+                 "## Spinless\n\n"
+                 "- [32 point groups](spinless/point_groups.md) · [CSV](spinless/point_groups.csv).\n"
+                 + ("- [Space groups](spinless/space_groups.md) · [CSV](spinless/space_groups.csv).\n" if any(r["family"] == "spacegroup" and r["physical_spin"] == "spinless" for r in self.index) else "")
+                 + "\n## Spin-1/2\n\n"
+                 "- [32 point groups](spin_half/point_groups.md) · [CSV](spin_half/point_groups.csv).\n"
+                 + ("- [Space groups](spin_half/space_groups.md) · [CSV](spin_half/space_groups.csv).\n" if any(r["family"] == "spacegroup" and r["physical_spin"] == "spin_half" for r in self.index) else "")
+                 + "\nSpace groups use the full infinite affine group, retaining translations, weak phases, "
+                 "and nonsymmorphic operations. The neutral E8 section and CI, charge, and phase relations "
+                 "are assembled into the final integer presentation.\n\n"
+                 "Point-group reference columns cite full interacting classifications. "
+                 "The space-group Song–Xiong–Huang comparison concerns **only the neutral E8 layer**; "
+                 "full interacting electronic references remain unverified. The computed four-data model's "
+                 "identification with the complete physical CI kernel remains conditional.\n\n"
+                 "[3+1D formulas](../../../docs/formulas/THREE_DIMENSIONAL.md) · "
+                 "[Catalogue](../README.md) · [Provenance and scope](../PROVENANCE.md).\n")
         for d in (2, 3):
-            self.put(f"{d}p1d/README.md", f"# {d}+1D insulator examples\n\n"
-                     + "\n".join(f"- [{label}]({spin}/README.md)." for spin, label in SPINS.items()) + "\n")
             for spin, label in SPINS.items():
                 base = f"{d}p1d/{spin}"
                 if d == 2:
-                    self.put(base + "/README.md", f"# 2+1D {label}\n\nUniform E8 response: e0=0.\n\n"
-                             "- [n0=0](n0_zero/README.md).\n- [All allowed n0](n0_all/README.md).\n")
+                    self.put(base + "/README.md", f"# 2+1D {label}\n\n"
+                             "All 10 planar point groups and 17 wallpaper groups. Uniform E8 response: **e0=0**.\n\n"
+                             "- [n0=0](n0_zero/README.md).\n- [All allowed n0](n0_all/README.md).\n\n"
+                             "[2+1D catalogue](../README.md).\n")
                     for sector, scope in (("n0_zero", "n0=0"), ("n0_all", "all allowed n0")):
                         self.put(base + f"/{sector}/README.md", f"# 2+1D {label}: {scope}, e0=0\n\n"
-                                 "- [Point groups](point_groups.md) · [CSV](point_groups.csv).\n"
-                                 "- [Wallpaper groups](wallpaper_groups.md) · [CSV](wallpaper_groups.csv).\n")
+                                 "- [10 point groups](point_groups.md) · [CSV](point_groups.csv).\n"
+                                 "- [17 wallpaper groups](wallpaper_groups.md) · [CSV](wallpaper_groups.csv).\n\n"
+                                 "[Response sectors](../README.md) · [2+1D catalogue](../../README.md).\n")
                 else:
                     self.put(base + "/README.md", f"# 3+1D {label}\n\n"
-                             "- [Point groups, with E8 data](point_groups.md) · [CSV](point_groups.csv).\n"
-                             + ("- [Space groups, with E8 data](space_groups.md) · [CSV](space_groups.csv).\n"
-                                if any(r["family"] == "spacegroup" and r["physical_spin"] == spin for r in self.index) else ""))
+                             "Completed four-data results `(e1,n1,n3,nu4)`, including E8 and final stacking.\n\n"
+                             "- [32 point groups](point_groups.md) · [CSV](point_groups.csv).\n"
+                             + ("- [Space groups](space_groups.md) · [CSV](space_groups.csv).\n"
+                                if any(r["family"] == "spacegroup" and r["physical_spin"] == spin for r in self.index) else "")
+                             + "\n[3+1D catalogue](../README.md).\n")
         if cyclic_count:
             self.put("4p1d/README.md", "# 4+1D internal insulator examples\n\n"
-                     "- [Unitary cyclic groups, s=rho=omega=0](internal_cyclic.md) · [CSV](internal_cyclic.csv).\n\n"
-                     "These are internal symmetries without crystalline spin labels. The original four-data tower is included; intrinsic r0 remains outside the scope.\n")
+                     "The cyclic pilot computes **C1 through C6** for unitary internal symmetry "
+                     "`U(1)^f x C_N`, with `s=rho=omega=0`. Internal backgrounds have no crystalline spin labels.\n\n"
+                     "- [Six cyclic groups](internal_cyclic.md) · [CSV](internal_cyclic.csv) · [JSON](internal_cyclic.json).\n\n"
+                     "The four data are `(e2,n2,n4,nu5)`. E8, CI, charge, and the single shared phase "
+                     "enter the actual root-relation presentation; the final group includes their stacking extensions. "
+                     "The 3+1D E8 factorization is not assumed here.\n\n"
+                     "These are completed examples of the original four-data model. A general global 4+1D "
+                     "classifier and the intrinsic `r0` response are outside this collection. "
+                     "Independent full interacting electronic comparisons remain unverified.\n\n"
+                     "[4+1D formulas](../../../docs/formulas/FOUR_DIMENSIONAL.md) · "
+                     "[Cyclic construction and root checks](../../../docs/formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md) · "
+                     "[Catalogue](../README.md).\n")
         self.put("PROVENANCE.md", "# Calculation provenance and scope\n\n"
                  "The catalogue selects one accepted calculation per exact input and response sector. It uses the 64 completed E8-inclusive point-group records and 44 completed 2+1D records from the October 15 campaign. "
                  "The remaining 64 2+1D sector entries use the exhaustive October 13 campaign. For an entry without a separate n0=0 rerun, its value is the saved kernel of the actual IQH response homomorphism, not an inferred removal of a free factor. "
                  "Dates, input/source hashes, immutable record locations and exact selectors are retained in [index.json](index.json); consumed file hashes are in [manifest.json](manifest.json).\n\n"
-                 "The final filtration columns are e_p, n_p, n_(p+2), nu_(p+3), with p=d−2. They already include the computed incoming identifications. Their direct product is not assumed to equal the final stacking group. "
+                 "The final filtration columns follow `(e_p,n_p,n_{p+2},nu_{p+3})`, with p=d−2. They already include the computed incoming identifications. Their direct product is not assumed to equal the final stacking group. "
                  "The 2+1D tables impose e0=0; the 3+1D tables include independently computed H1(G,Z_s) and the selected E8 section. The remaining identification of the CI model with the complete physical kernel is not certified by a matching abstract group. Intrinsic higher-response sectors are outside these tables.\n\n"
                  "Every literature version has its own column. The 3+1D point-group reference columns use full interacting source groups, without removing E8 factors. The 2+1D references are restricted to the stated n0/e0 sector. Wang–Qi–Fang–Cheng–Gu columns are charge and phase filtration layers, not stacking groups. Unavailable source values remain UNVERIFIED; an inapplicable source is N/A. No free-band classification or band-generated subgroup is used as a complete interacting benchmark.\n\n"
                  "The [source ledger](../../docs/reference_ledger_20261014.md), [foundation review](../../docs/foundations/README.md), and immutable [October 15 campaign](../four_data_campaign_20261015/README.md) retain detailed calibration and validation evidence. "
                  "Printed Debray D2/D6 values remain unchanged, with their specific proof-grading audit linked in the tables. "
                  "Published tables are comparisons, never solver inputs.\n\n"
                  "Additional accepted collections are listed explicitly in [collections.json](collections.json). "
+                 + ("The [complete space-group collection](../spacegroup_full_20261015/README.md) retains all 460 selected CI and E8 records, the explicit assembly ledger, and a portable saved-record verifier. " if space_count == 460 else "")
+                 +
                  "The builder never scans unfinished runs. Each expansion is accepted by `scripts/collect_expansion.py`, which verifies every selected run, exact CI parent artifacts, source/input hashes, native completion records, and independent integer presentations. "
                  "Space-group Song–Xiong–Huang comparisons concern only the neutral E8 coefficient; full electronic references remain unverified. "
                  "4+1D cyclic filtration entries are derived from the actual root-relation matrix by saturated integer elimination, without treating equal layer orders as the stacking answer.\n\n"

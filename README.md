@@ -14,29 +14,36 @@ results.
 
 ## Computed examples
 
-The current catalogue covers **118 crystalline backgrounds and six internal
-cyclic backgrounds**, with 178 response-sector entries:
+The current catalogue contains **584 distinct backgrounds**: 578 crystalline
+backgrounds and six internal cyclic backgrounds. Their **638 response-sector
+entries** are organized into 13 tables:
 
 - [2+1D](results/current/2p1d/README.md): all 10 planar point groups and 17
   wallpaper groups, for spinless and spin-1/2 electrons. Each background has
   separate `n0=0` and all-allowed-`n0` tables; both fix `e0=0`.
-- [3+1D](results/current/3p1d/README.md): all 32 crystallographic point groups,
-  for both physical spins, with the computed neutral E8 data included.
+- [3+1D](results/current/3p1d/README.md): all 32 crystallographic point groups
+  and all **230 space groups**, for spinless and spin-1/2 electrons, with
+  E8 included in the four-data calculation.
 - [4+1D](results/current/4p1d/README.md): internal unitary `C1` through `C6`,
   with `s=rho=omega=0`, including the shared-phase E8 stacking relations.
 
 Each row records the four final filtration groups
-`(e_p,n_p,n_(p+2),nu_(p+3))`, with `p=d−2`, and the final stacking group.
+`(e_p,n_p,n_{p+2},nu_{p+3})`, with `p=d−2`, and the final stacking group.
 The layers include incoming identifications; their direct product need not
-equal the stacking group. Wallpaper calculations use the full infinite
-affine group, including translations and glides.
+equal the stacking group. Wallpaper and space-group calculations use the
+full infinite affine groups, including translations and nonsymmorphic
+operations. A background means a group with its physical spin and extension
+data fixed. The two 2+1D response sectors produce separate entries for the
+same background.
 
 Interacting literature classifications have separate, versioned columns.
 **✓** marks the same reported group; **×** marks a different reported group.
-Layer comparisons remain distinct from stacking comparisons. The 3+1D result
-is the selected four-data model; its identification with the complete physical
-CI kernel remains conditional. Matching group types alone do not establish
-that identification.
+Layer comparisons remain distinct from stacking comparisons. In the
+space-group tables, the Song–Xiong–Huang comparison tests the neutral E8
+layer; a full interacting electronic benchmark remains unverified. The
+catalogue computes the selected four-data model. Its identification with
+the complete physical CI kernel remains conditional; agreement of final
+group types alone does not establish that identification.
 
 ## Formulas
 

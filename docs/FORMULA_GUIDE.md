@@ -6,6 +6,9 @@ theory. Every state is ordered **E8, CI, charge, shared phase**:
 Each dimensional page specifies its own physical fields, obstruction
 equations, stacking twisters, and complete gauges.
 
+[Computed examples](../results/current/README.md) use the same notation and
+keep dimensions, physical spins, and 2+1D response sectors in separate tables.
+
 | Dimension | Obstruction functions | Stacking twisters | Gauges |
 | --- | --- | --- | --- |
 | 2+1D | [Obstructions](formulas/TWO_DIMENSIONAL.md#obstructions-2d) | [Twisters](formulas/TWO_DIMENSIONAL.md#stacking-2d) | [Gauges](formulas/TWO_DIMENSIONAL.md#gauges-2d) |
@@ -21,6 +24,13 @@ how the full twister and gauges determine the final stacking group.
 the exact local API and persistent worker. The
 [4+1D cyclic examples](formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md) retain
 completed roots, coupled powers, and an independent bar-cycle audit.
+
+The [3+1D factorization proof](formulas/THREE_DIMENSIONAL.md#why-the-global-calculation-can-be-factored)
+explains why the supplied model permits an exact neutral E8 calculation
+followed by assembly with the CI, charge, and shared-phase presentation.
+The public classifier accepts the result only after both parts and the final
+presentation pass validation. The coupled 4+1D formulas do not use this
+factorization.
 
 ## Conventions and coordinates
 
@@ -81,6 +91,10 @@ nonzero-CI terminal map and paired product comparison. The physical
 nonzero-uniform-IQH product-coordinate comparison is also separate.
 Published group agreement does not by itself prove these identifications.
 Intrinsic higher-response coordinates are outside this four-data scope.
+
+The [even charge-root identity](formulas/CHARGE_ROOT_RELATIONS.md) is a
+derived cohomology-class simplification. It is recorded separately from the
+implemented full cochain and gauge witnesses; it does not replace them.
 
 The [source provenance](../formulas/provenance.json),
 [E8 provenance](../formulas/e8_provenance.json), and
