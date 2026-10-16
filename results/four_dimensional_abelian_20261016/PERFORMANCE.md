@@ -50,11 +50,18 @@ issue; they are not described as stage wall times.
   did not reach a completed presentation.
 - [C2⁴ bar pilot](failed_rank4_pilot/internal_abelian_2x2x2x2_4p1/run.json):
   timeout at 900.018 seconds, during root relations.
+- [C2⁴ native-primary run](failed_rank4_native/internal_abelian_2x2x2x2_4p1/run.json):
+  timeout at 2400.017 seconds, during incoming-charge gauges, after completing
+  root relations. The final presentation and all remaining checks did not
+  complete. The [terminal audit](verification/native_rank4_terminal_audit.json)
+  records the timeout, source verification and worker cleanup; the original
+  campaign remains `incomplete` and contains no `result.json`.
 
 The complete primary obstruction matrices of the bar pilot and the separate
 native rank-four attempt agree, with kernel index16; see
 [the explicitly stage-limited comparison](verification/rank4_primary_parity.json).
-This is not a completed `C2⁴` classification. Any later accepted rerun must
+Both attempts have now terminated. This is not a completed `C2⁴`
+classification. Any later accepted rerun must
 have its own full record and certificate; the timeout evidence remains.
 
 The bottleneck therefore includes actual phase completions and their repeated

@@ -6,6 +6,11 @@ bounded campaign. Ten are noncyclic groups; the other two,
 previous cyclic controls. The `C4 × C8` attempt timed out after 1800 seconds
 and is **not included in the classification tables**.
 
+The separate `C2⁴` native-primary attempt also timed out after 2400 seconds,
+during incoming-gauge checks. Its [complete terminal evidence](failed_rank4_native/)
+is preserved alongside the earlier 900-second pilot. Neither attempt supplies
+a final classification; the accepted count remains 12.
+
 The [original campaign](raw/abelian/campaign.json) remains marked
 `incomplete`. Its full raw directory, including the timeout, is preserved
 unchanged. The [explicit completed selection](completed_selections.json)

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "artifactScope": "Bounded failed run: no computed classification is asserted",
+  "rawDirectory": "/home/xingyu/AllFSPT_reviews/abelian4p1_batch2_20261016/native_rank4/output",
+  "launcherLog": "/home/xingyu/AllFSPT_reviews/abelian4p1_batch2_20261016/native_rank4/launcher.log",
+  "terminalArchiveSHA256": "fbcf2b8ef7fff94d9af45e9da07d9d41054992e0701ae1eb9a0ac89c899300d5",
+  "sourceSHA256": "a5df31562ea0e8e1f19dba8cf304256d5ca658c0ec8bbba6ff6e0ccef7550fc4",
+  "sourceFilesVerified": 73,
+  "runStatus": "timeout",
+  "runExitCode": 124,
+  "elapsedSeconds": 2400.016817,
+  "timeoutSeconds": 2400,
+  "finishedUTC": "2026-10-16T09:05:54.838676+00:00",
+  "lastStage": "incoming_charge",
+  "lastStageCount": 6,
+  "lastStageGAPCPUSeconds": 1135.9,
+  "classificationArtifactPresent": false,
+  "campaignStatus": "incomplete",
+  "ownedRemoteWorkersRemaining": 0,
+  "workerCheck": "Final ps -u xyren check on both n07 and n08 found no GAP or Python process; no owned worker remains."
+}
