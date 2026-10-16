@@ -11,8 +11,9 @@ results.
   obstruction equations, stacking twisters, and gauge transformations.
 - **[Provenance and scope](results/current/PROVENANCE.md):** accepted inputs,
   source versions, calculation records, and the limits of each comparison.
-- **[3+1D mismatch audit](benchmarks/point3_mismatch_audit_20261016/README.md):**
-  independent bordism checks, specific source errors, and separate spin tables.
+- **[3+1D mismatch justification](docs/POINT3_MISMATCH_JUSTIFICATION.md):**
+  a short explanation of the discrepancies, with separate spin tables and
+  [full audit evidence](benchmarks/point3_mismatch_audit_20261016/README.md).
 
 ## Computed examples
 
