@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "reviewed_script_sha256": "eed6655832040f12bea2bea07806dd0fd691d7d24dc6df24cbb47fbfe709daa3",
+  "primary_source": "Debray v3, dihedral.tex lines52\u201369 and dihedral_spinless_0mod4.tex lines30\u201343: x=v,y=u,w=w2(W), relationu\u00b2+uv; Sq1(w)=vw.",
+  "spatial_matrices": {
+    "r": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "s": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "section_C2_generator_sr": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "representation_check": "V=W+(u+v), w1(V)=u, w2(V)=w+uv+v\u00b2; inverse spinless twist has w2=w+v\u00b2. Spin-half det(V)-1 has w1=u,w2=0.",
+  "h0_chain_map_and_retract_checks": 296,
+  "spin_half_retract_Ext": {
+    "0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "1": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "2": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "3": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "4": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "5": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "spin_half_retract_h0_stem4": [
+    1,
+    1,
+    0,
+    0
+  ],
+  "differentials": "Spinless stem4 occupies filtrations0,1; no incoming dr for r>=2 and no outgoing target in stem3. Spin-half only possible incoming target in stem4 filtration2 belongs to actual split BC2 Thom summand. Its stem3 and stem5 vanish, so its Z8 tower survives. Complementary stem4 consists of two filtration0 classes and has no possible differentials.",
+  "extensions": "Spinless h0 acts as0 and filtration>=2 vanishes, so all three ku4 classes have order2. Spin-half the actual spectrum splitting gives an independent Z8; complementary ku4 has only filtration0 and isZ2\u00b2. Add independent ku0=Z2 viaABP in both cases.",
+  "full_Spin_c_degree4": {
+    "spinless": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "spin_half": [
+      2,
+      2,
+      2,
+      8
+    ]
+  }
+}

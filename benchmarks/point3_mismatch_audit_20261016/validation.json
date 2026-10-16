@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "date": "2026-10-16",
+  "baselineCommit": "f413c19f8dadbc51953b77acadf7457be64fb603",
+  "referenceRerun": {
+    "cases": 3,
+    "accepted": 3,
+    "mathematicalFieldsEqual": true,
+    "inputsEqual": true,
+    "ignoredExecutionFields": [
+      "chargePrimaryStats",
+      "pairedGeometryReuse"
+    ]
+  },
+  "replayedScripts": [
+    "d2_polynomial_audit.py",
+    "oh_ext_audit.py",
+    "oh_spin_half_ext_control.py",
+    "oh_atomic_orbits.py",
+    "d2d_geometry_audit.py",
+    "d2d_ext_audit.py",
+    "d2d_peer_oh.py",
+    "check_odd_c3_maps.py",
+    "S4_gysin.py",
+    "build_tables.py"
+  ],
+  "markdownLocalLinksChecked": 58,
+  "brokenLocalLinks": [],
+  "separateTables": {
+    "spinless": 6,
+    "spin_half": 8
+  },
+  "tableSourceRowsAndHashesEqual": true,
+  "independentPeerReview": [
+    "Oh Ext, Thom connectivity, shifted-ku and extensions",
+    "D2d geometry, differentials, protected retract and extensions",
+    "S4 natural Gysin map, connective truncation and Smith presentation",
+    "Integrated table values, counts, links, run hashes and scope"
+  ],
+  "boundary": "Specific groups audited under the crystalline/bordism ansatz. No universal cochain-spectrum equivalence or microscopic generator map is certified."
+}

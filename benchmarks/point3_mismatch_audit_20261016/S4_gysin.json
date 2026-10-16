@@ -1,0 +1,171 @@
+{
+  "method": "Hashimoto Gysin generators, natural fiber-squaring map, exact integer Smith forms",
+  "cofiber": "BC2_+ -> BC4_+ -> (BC4)^sigma",
+  "X": "(BC4)^(sigma-1)",
+  "basis": "B0,B1,B2 in ku5; columns are relations or images",
+  "A2": [
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      0,
+      0,
+      2
+    ]
+  ],
+  "A4": [
+    [
+      4,
+      6,
+      4
+    ],
+    [
+      0,
+      4,
+      6
+    ],
+    [
+      0,
+      0,
+      4
+    ]
+  ],
+  "Q_inclusion": [
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      0,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      2
+    ]
+  ],
+  "factorization_A4_equals_Q_A2": true,
+  "SNF_A2": [
+    1,
+    1,
+    8
+  ],
+  "SNF_A4": [
+    2,
+    2,
+    16
+  ],
+  "SNF_Q": [
+    1,
+    2,
+    4
+  ],
+  "ku4_X_torsion": [
+    2,
+    4
+  ],
+  "ku0_X_torsion": [
+    2
+  ],
+  "Omega4_Spinc_X_torsion": [
+    2,
+    2,
+    4
+  ],
+  "freeRank": 0,
+  "ku1_X_and_ku5_X_zero": true,
+  "inclusion_is_injective_reason": "A4=Q A2 and det(Q)!=0; the same argument in degree1",
+  "inclusion_map_polynomial": "[4]_F(x)/[2]_F(x)=2+2ux+u^2x^2",
+  "natural_pairing_assumed": false,
+  "geometry": [
+    {
+      "id": "point3_10_spinless",
+      "input_sha256": "605555d3ff80af945c261061c2650cefc05a3aa2f532e9d88774e99809736ec8",
+      "decomposition": "one real sign line plus one complex rotation line",
+      "intertwiner": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "generator_after_conjugacy": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "point3_10_spin_half",
+      "input_sha256": "3abc9a7ab29763dfce9942020b424559f6956fdfd6dbc8f558196a45a85a1cda",
+      "decomposition": "one real sign line plus one complex rotation line",
+      "intertwiner": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "generator_after_conjugacy": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ]
+    }
+  ],
+  "all_checks_pass": true
+}

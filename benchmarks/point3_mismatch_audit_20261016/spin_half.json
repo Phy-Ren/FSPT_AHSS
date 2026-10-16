@@ -1,0 +1,1047 @@
+{
+  "auditDate": "2026-10-16",
+  "physicalSpin": "spin_half",
+  "spacetimeDimension": 4,
+  "e8Included": true,
+  "sourceTable": "results/current/3p1d/spin_half/point_groups.json",
+  "sourceTableSHA256": "b7add9e249689b6b6594feafbe5f68a802f4a702ba7ada114c3571f6f537a395",
+  "sources": {
+    "Debray": {
+      "authors": "Arun Debray",
+      "year": 2026,
+      "title": "Invertible phases for mixed spatial symmetries and the fermionic crystalline equivalence principle",
+      "url": "https://arxiv.org/abs/2102.02941v3",
+      "version": "v3, 2026-02-03",
+      "method": "Spin-c/Pin-c bordism, Adams spectral sequences, Anderson-dual equivariant phase homology",
+      "location": "Tables 1\u20136 and theorems specified separately in each row; extracted Class A phase groups",
+      "author": "Arun Debray",
+      "first_version": "2021-02-05",
+      "source_url": "https://arxiv.org/src/2102.02941v3",
+      "source_archive_sha256": "0e015df95d1b6fb9ac405446ed4edc7f9e843999c551ed81b15a9126412eb9ad",
+      "files_sha256": {
+        "cyclic.tex": "f7c48f8ac882841a4deff8fa6997b4f0891c43c4a92aa417f0a7e298c75e8d15",
+        "spinc_rotation.tex": "9feecd5aef6e761aa06976eba047c91414641d5df471763dff65787a507f9766",
+        "dihedral.tex": "5f9c2d2a50a2223a6741a96f5c34cc8b759ebb5ab537d550f412adda9f9341f8",
+        "para_n_gonal.tex": "771404e4a3389d1284998cbfb8f3b671ed0224b56d28abf9f91326ffc0fbfa1f",
+        "pin_reflection.tex": "8e4470ba32e4ab31a57183b8504a3a54db2966f32cf74a46ed878aaf21a57e65",
+        "inversion.tex": "2e80b964f34f0902342fa82d70e1f22929000714aaca59f7718171fe54d198c1",
+        "tet_oct_icos_generalities.tex": "2f53ce2fb93f4c8176062b8c6a44fdb8c7ef5aced1f89e140afe6094d54d71df"
+      },
+      "scope": "Interacting Class A only, under the generalized-homology ansatz. Class D columns are not extracted. Includes independent intrinsic responses and neutral bosonic contributions.",
+      "independence_limit": "Different mathematical method; v3 explicitly acknowledges revisions following comparison with Zhang-Ning-Qi-Gu2025. Not blind independence of the final tables."
+    },
+    "R3_arxiv": {
+      "authors": "Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi, Zheng-Cheng Gu",
+      "year": 2024,
+      "title": "Construction and classification of crystalline topological superconductor and insulators in three-dimensional interacting fermion systems",
+      "url": "https://arxiv.org/abs/2204.13558v2",
+      "version": "arXiv v2, 2024-06-18",
+      "method": "Interacting real-space topological crystals, boundary gapping, bubble equivalence and stacking",
+      "location": "Table II and named E8 root lists"
+    },
+    "R3_journal": {
+      "authors": "Jian-Hao Zhang, Shang-Qiang Ning, Yang Qi, Zheng-Cheng Gu",
+      "year": 2025,
+      "title": "Construction and Classification of Crystalline Topological Superconductor and Insulators in Three-Dimensional Interacting Fermion Systems",
+      "url": "https://doi.org/10.1103/PhysRevX.15.031029",
+      "version": "Published 2025-07-28; supplement dated 2025-07-08",
+      "method": "Interacting real-space topological crystals, boundary gapping, bubble equivalence and stacking",
+      "location": "Table II p.031029-5 and independently reread named E8 root lists"
+    }
+  },
+  "rows": [
+    {
+      "current_row": {
+        "id": "point3_06_spin_half",
+        "name": "D2",
+        "hermann_mauguin": "222",
+        "family": "point3",
+        "physical_spin": "spin_half",
+        "spatial_dimension": 3,
+        "spacetime_dimension": 4,
+        "n0_scope": "not_applicable",
+        "e0_scope": "not_applicable",
+        "e8_scope": "selected_section_included",
+        "cells": {
+          "e": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [],
+              "freeRank": 0
+            }
+          },
+          "n": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [],
+              "freeRank": 0
+            }
+          },
+          "charge": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [],
+              "freeRank": 0
+            }
+          },
+          "phase": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "stacking": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "Debray": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "Debray",
+            "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)",
+            "proof_audit": {
+              "path": "docs/foundations/debray_d2_grading_audit.md",
+              "result_path": "results/foundation_review_20261014/diagnostics/debray_d2_ku_grading_audit.json",
+              "summary": "Printed Z2^3 is preserved. Our source-internal audit finds two, not three, degree-four monomials in the cited graded splitting; this is not a published erratum or a general verdict on the reference.",
+              "source_location": "Table 5 p.52; Theorem 4.82 proof item (4) p.57 versus Eq.(4.59) p.49",
+              "printed_group_unchanged": true
+            }
+          },
+          "NMLW": {
+            "availability": "not_applicable",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "R3_arxiv": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_arxiv"
+          },
+          "R3_journal": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_journal"
+          }
+        },
+        "provenance": {
+          "path": "results/point3_current_20261015/3p1d/point_groups/results.json",
+          "array_index": 10,
+          "selector": "classification",
+          "source_sha256": "20aa099243067387824b8a8ecef247491b7f86a38424fcac8d3bb5dc3ff5eab4",
+          "input_sha256": "cb3bc0e85109b2dfaab72d7defb080a566e212d068fbd20d5c5fae2a9aa2a5fb",
+          "started_utc": "2026-10-15T13:50:56.762196+00:00",
+          "record_sha256": "dd27bb70e3e13a592ede311b394dcea35144c2d8507d4fe957868fffba8fb5ce"
+        }
+      },
+      "audit": {
+        "method": "D2 degree count and independent charge obstruction",
+        "note": "debray_d2.md",
+        "conclusion": "Independent bordism supports current stacking group",
+        "scope": "Under the interacting crystalline/bordism ansatz; no universal formula-spectrum equivalence asserted"
+      }
+    },
+    {
+      "current_row": {
+        "id": "point3_10_spin_half",
+        "name": "S4",
+        "hermann_mauguin": "-4",
+        "family": "point3",
+        "physical_spin": "spin_half",
+        "spatial_dimension": 3,
+        "spacetime_dimension": 4,
+        "n0_scope": "not_applicable",
+        "e0_scope": "not_applicable",
+        "e8_scope": "selected_section_included",
+        "cells": {
+          "e": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "n": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "charge": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "phase": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "stacking": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                4
+              ],
+              "freeRank": 0
+            }
+          },
+          "Debray": {
+            "availability": "unverified",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "NMLW": {
+            "availability": "not_applicable",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "R3_arxiv": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_arxiv"
+          },
+          "R3_journal": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_journal"
+          }
+        },
+        "provenance": {
+          "path": "results/point3_current_20261015/3p1d/point_groups/results.json",
+          "array_index": 18,
+          "selector": "classification",
+          "source_sha256": "20aa099243067387824b8a8ecef247491b7f86a38424fcac8d3bb5dc3ff5eab4",
+          "input_sha256": "3abc9a7ab29763dfce9942020b424559f6956fdfd6dbc8f558196a45a85a1cda",
+          "started_utc": "2026-10-15T13:50:56.771953+00:00",
+          "record_sha256": "53ddf0a15e0920aa8b827f1845e804045789e114d039510b4811ecb6234911b6"
+        }
+      },
+      "audit": {
+        "method": "C4 determinant Thom cofiber and exact Gysin presentation",
+        "note": "S4_gysin.md",
+        "conclusion": "Independent bordism supports current stacking group",
+        "scope": "Under the interacting crystalline/bordism ansatz; no universal formula-spectrum equivalence asserted"
+      }
+    },
+    {
+      "current_row": {
+        "id": "point3_14_spin_half",
+        "name": "D2d",
+        "hermann_mauguin": "-42m",
+        "family": "point3",
+        "physical_spin": "spin_half",
+        "spatial_dimension": 3,
+        "spacetime_dimension": 4,
+        "n0_scope": "not_applicable",
+        "e0_scope": "not_applicable",
+        "e8_scope": "selected_section_included",
+        "cells": {
+          "e": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "n": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "charge": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "phase": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "stacking": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2,
+                8
+              ],
+              "freeRank": 0
+            }
+          },
+          "Debray": {
+            "availability": "unverified",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "NMLW": {
+            "availability": "not_applicable",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "R3_arxiv": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                8
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_arxiv"
+          },
+          "R3_journal": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2,
+                2,
+                8
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_journal"
+          }
+        },
+        "provenance": {
+          "path": "results/point3_current_20261015/3p1d/point_groups/results.json",
+          "array_index": 26,
+          "selector": "classification",
+          "source_sha256": "20aa099243067387824b8a8ecef247491b7f86a38424fcac8d3bb5dc3ff5eab4",
+          "input_sha256": "7e508e1b45bdbff49573955a61fec64c05e2d64f226411de9ae1f11111f0d9b1",
+          "started_utc": "2026-10-15T13:50:56.781868+00:00",
+          "record_sha256": "16bbe4c43633ed38e56eafd3ded9f1a8c661db5e59a75ac9527ff56d50169e80"
+        }
+      },
+      "audit": {
+        "method": "Independent D8 Steenrod/Koszul bordism computation",
+        "note": "d2d_bordism.md",
+        "conclusion": "Independent bordism supports current stacking group",
+        "scope": "Under the interacting crystalline/bordism ansatz; no universal formula-spectrum equivalence asserted"
+      }
+    },
+    {
+      "current_row": {
+        "id": "point3_17_spin_half",
+        "name": "C3i",
+        "hermann_mauguin": "-3",
+        "family": "point3",
+        "physical_spin": "spin_half",
+        "spatial_dimension": 3,
+        "spacetime_dimension": 4,
+        "n0_scope": "not_applicable",
+        "e0_scope": "not_applicable",
+        "e8_scope": "selected_section_included",
+        "cells": {
+          "e": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "n": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "charge": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "phase": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "stacking": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                8
+              ],
+              "freeRank": 0
+            }
+          },
+          "Debray": {
+            "availability": "unverified",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "NMLW": {
+            "availability": "not_applicable",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "R3_arxiv": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                4
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_arxiv"
+          },
+          "R3_journal": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                4
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_journal"
+          }
+        },
+        "provenance": {
+          "path": "results/point3_current_20261015/3p1d/point_groups/results.json",
+          "array_index": 32,
+          "selector": "classification",
+          "source_sha256": "20aa099243067387824b8a8ecef247491b7f86a38424fcac8d3bb5dc3ff5eab4",
+          "input_sha256": "de03f2b3e3eb176e0016a0b7e299dd2974647b924f567196e7799ca75c227f84",
+          "started_utc": "2026-10-15T13:50:56.791334+00:00",
+          "record_sha256": "88c970ae07330e0c89e648d34576328e621e40205ec3d986de874f69b0f90f66"
+        }
+      },
+      "audit": {
+        "method": "Normal C3 reduction to the Pin-c/Ci anchor",
+        "note": "other_mismatches.md",
+        "conclusion": "Independent bordism supports current stacking group",
+        "scope": "Under the interacting crystalline/bordism ansatz; no universal formula-spectrum equivalence asserted"
+      }
+    },
+    {
+      "current_row": {
+        "id": "point3_20_spin_half",
+        "name": "D3d",
+        "hermann_mauguin": "-3m",
+        "family": "point3",
+        "physical_spin": "spin_half",
+        "spatial_dimension": 3,
+        "spacetime_dimension": 4,
+        "n0_scope": "not_applicable",
+        "e0_scope": "not_applicable",
+        "e8_scope": "selected_section_included",
+        "cells": {
+          "e": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "n": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "charge": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "phase": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "stacking": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                4,
+                8
+              ],
+              "freeRank": 0
+            }
+          },
+          "Debray": {
+            "availability": "unverified",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "NMLW": {
+            "availability": "not_applicable",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "R3_arxiv": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2,
+                8
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_arxiv"
+          },
+          "R3_journal": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2,
+                8
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_journal"
+          }
+        },
+        "provenance": {
+          "path": "results/point3_current_20261015/3p1d/point_groups/results.json",
+          "array_index": 38,
+          "selector": "classification",
+          "source_sha256": "20aa099243067387824b8a8ecef247491b7f86a38424fcac8d3bb5dc3ff5eab4",
+          "input_sha256": "376b3eabe92998fe1eb93665e521af2108bff58e39df0354ba5974245bc85f62",
+          "started_utc": "2026-10-15T13:50:56.797636+00:00",
+          "record_sha256": "5b6acdc63acdc69e38c0dd273c7693233827843d1089c26bb8d24edabdea204f"
+        }
+      },
+      "audit": {
+        "method": "Normal C3 reduction to the independent C2h anchor",
+        "note": "other_mismatches.md",
+        "conclusion": "Independent bordism supports current stacking group",
+        "scope": "Under the interacting crystalline/bordism ansatz; no universal formula-spectrum equivalence asserted"
+      }
+    },
+    {
+      "current_row": {
+        "id": "point3_23_spin_half",
+        "name": "C6h",
+        "hermann_mauguin": "6/m",
+        "family": "point3",
+        "physical_spin": "spin_half",
+        "spatial_dimension": 3,
+        "spacetime_dimension": 4,
+        "n0_scope": "not_applicable",
+        "e0_scope": "not_applicable",
+        "e8_scope": "selected_section_included",
+        "cells": {
+          "e": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "n": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "charge": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "phase": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "stacking": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                4,
+                8
+              ],
+              "freeRank": 0
+            }
+          },
+          "Debray": {
+            "availability": "unverified",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "NMLW": {
+            "availability": "not_applicable",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "R3_arxiv": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                4,
+                8
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "match",
+            "source": "R3_arxiv"
+          },
+          "R3_journal": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2,
+                8
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_journal"
+          }
+        },
+        "provenance": {
+          "path": "results/point3_current_20261015/3p1d/point_groups/results.json",
+          "array_index": 44,
+          "selector": "classification",
+          "source_sha256": "20aa099243067387824b8a8ecef247491b7f86a38424fcac8d3bb5dc3ff5eab4",
+          "input_sha256": "d77f48b84f215fcd73c41b5ec5abe178e4cd998742ffb9edd7fdcc790b1ba912",
+          "started_utc": "2026-10-15T13:50:56.805251+00:00",
+          "record_sha256": "79bbf160ef5f308f686b3c4a38907ada3b7222a61975790e70e14f7932a21967"
+        }
+      },
+      "audit": {
+        "method": "Normal C3 reduction to the independent C2h anchor",
+        "note": "other_mismatches.md",
+        "conclusion": "Independent bordism supports current stacking group",
+        "scope": "Under the interacting crystalline/bordism ansatz; no universal formula-spectrum equivalence asserted"
+      }
+    },
+    {
+      "current_row": {
+        "id": "point3_24_spin_half",
+        "name": "D6",
+        "hermann_mauguin": "622",
+        "family": "point3",
+        "physical_spin": "spin_half",
+        "spatial_dimension": 3,
+        "spacetime_dimension": 4,
+        "n0_scope": "not_applicable",
+        "e0_scope": "not_applicable",
+        "e8_scope": "selected_section_included",
+        "cells": {
+          "e": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [],
+              "freeRank": 0
+            }
+          },
+          "n": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [],
+              "freeRank": 0
+            }
+          },
+          "charge": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [],
+              "freeRank": 0
+            }
+          },
+          "phase": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "stacking": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "Debray": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "Debray",
+            "source_location": "Table 5, p.52; Sec.4.5.4 (spin-half)",
+            "proof_audit": {
+              "path": "docs/foundations/debray_d2_grading_audit.md",
+              "result_path": "results/foundation_review_20261014/diagnostics/debray_d2_ku_grading_audit.json",
+              "summary": "Printed Z2^3 is preserved. Our source-internal audit finds two, not three, degree-four monomials in the cited graded splitting; this is not a published erratum or a general verdict on the reference.",
+              "source_location": "Table 5 p.52; Theorem 4.82 proof item (4) p.57 versus Eq.(4.59) p.49",
+              "printed_group_unchanged": true
+            }
+          },
+          "NMLW": {
+            "availability": "not_applicable",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "R3_arxiv": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_arxiv"
+          },
+          "R3_journal": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_journal"
+          }
+        },
+        "provenance": {
+          "path": "results/point3_current_20261015/3p1d/point_groups/results.json",
+          "array_index": 46,
+          "selector": "classification",
+          "source_sha256": "20aa099243067387824b8a8ecef247491b7f86a38424fcac8d3bb5dc3ff5eab4",
+          "input_sha256": "c1fe8e4ebf9358874c4da0b45a8c05e2126491825e434e09cb9a386d652f5b8e",
+          "started_utc": "2026-10-15T13:50:56.808379+00:00",
+          "record_sha256": "7fd737f2654706761b75cf1a2fe71e78f624521d44ea6aa7991cca80c9e655a1"
+        }
+      },
+      "audit": {
+        "method": "D2 bordism anchor and odd-kernel/odd-prime checks",
+        "note": "debray_d2.md",
+        "conclusion": "Independent bordism supports current stacking group",
+        "scope": "Under the interacting crystalline/bordism ansatz; no universal formula-spectrum equivalence asserted"
+      }
+    },
+    {
+      "current_row": {
+        "id": "point3_26_spin_half",
+        "name": "D3h",
+        "hermann_mauguin": "-6m2",
+        "family": "point3",
+        "physical_spin": "spin_half",
+        "spatial_dimension": 3,
+        "spacetime_dimension": 4,
+        "n0_scope": "not_applicable",
+        "e0_scope": "not_applicable",
+        "e8_scope": "selected_section_included",
+        "cells": {
+          "e": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "n": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "charge": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "phase": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                2
+              ],
+              "freeRank": 0
+            }
+          },
+          "stacking": {
+            "availability": "available",
+            "comparison_status": "not_compared",
+            "group": {
+              "torsion": [
+                2,
+                4,
+                8
+              ],
+              "freeRank": 0
+            }
+          },
+          "Debray": {
+            "availability": "unverified",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "NMLW": {
+            "availability": "not_applicable",
+            "comparison_status": "not_compared",
+            "reason": "No version-pinned full-group fixture extracted for this case."
+          },
+          "R3_arxiv": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                2,
+                4,
+                8
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_arxiv"
+          },
+          "R3_journal": {
+            "availability": "available",
+            "group": {
+              "torsion": [
+                2,
+                2,
+                4,
+                8
+              ],
+              "freeRank": 0
+            },
+            "comparison_status": "mismatch",
+            "source": "R3_journal"
+          }
+        },
+        "provenance": {
+          "path": "results/point3_current_20261015/3p1d/point_groups/results.json",
+          "array_index": 50,
+          "selector": "classification",
+          "source_sha256": "20aa099243067387824b8a8ecef247491b7f86a38424fcac8d3bb5dc3ff5eab4",
+          "input_sha256": "f36f510c3bd493384c560d37d8e8152b35961f206d2532fdab8d75c77996dff2",
+          "started_utc": "2026-10-15T13:50:56.814783+00:00",
+          "record_sha256": "59dd56c0a6e205d2ca8863e876e1550595e9af78bb0bbf153ef0b298d1db8962"
+        }
+      },
+      "audit": {
+        "method": "Normal C3 reduction to the C2v anchor",
+        "note": "other_mismatches.md",
+        "conclusion": "Independent bordism supports current stacking group",
+        "scope": "Under the interacting crystalline/bordism ansatz; no universal formula-spectrum equivalence asserted"
+      }
+    }
+  ]
+}

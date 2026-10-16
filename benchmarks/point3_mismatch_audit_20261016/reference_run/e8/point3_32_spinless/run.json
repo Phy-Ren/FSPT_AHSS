@@ -1,0 +1,42 @@
+{
+  "ciResultPath": "/home/user/xyren/AllFSPT_insulator/mismatch_audit_20261016/reference_run/ci/point3_32_spinless/result.json",
+  "ciResultSHA256": "d5069a1f8f0f303dde6dbc34dd0ee3e3dfbb2dd0bae9b07d09a10fb85a9049ab",
+  "ciRun": {
+    "chargePrimaryRequested": "bar",
+    "closedChargeSourceRequested": "reference",
+    "command": [
+      "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "-m",
+      "256m",
+      "-K",
+      "8g",
+      "/home/user/xyren/AllFSPT_insulator/mismatch_audit_20261016/reference_run/ci/point3_32_spinless/driver.g"
+    ],
+    "elapsedSeconds": 54.042,
+    "exitCode": 0,
+    "formulaWorkerPython": "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+    "host": "n08.local",
+    "id": "point3_32_spinless",
+    "inputSHA256": "a52500d844681368e71e3317a5b4b1d8865907688e26d4c9a1bd6e7b01ad63dd",
+    "phaseClassRequested": "native",
+    "sourceSHA256": "9c54faafde763e240487f2c93768a973e2f129094d79894ce49a2d9a66cf8791",
+    "startedUTC": "2026-10-16T05:20:03.386710+00:00",
+    "status": "complete",
+    "timeoutSeconds": 1200,
+    "uniformIQHRequested": false,
+    "vacuumReductionRequested": "reference"
+  },
+  "ciSourceSHA256": "9c54faafde763e240487f2c93768a973e2f129094d79894ce49a2d9a66cf8791",
+  "exitCode": 0,
+  "host": "n08.local",
+  "id": "point3_32_spinless",
+  "inputSHA256": "a52500d844681368e71e3317a5b4b1d8865907688e26d4c9a1bd6e7b01ad63dd",
+  "operation": "exact-selected-section-E8-extension",
+  "physicalClassificationCertified": false,
+  "sourceSHA256": "20aa099243067387824b8a8ecef247491b7f86a38424fcac8d3bb5dc3ff5eab4",
+  "startedUTC": "2026-10-16T05:20:58.088514+00:00",
+  "status": "complete"
+}

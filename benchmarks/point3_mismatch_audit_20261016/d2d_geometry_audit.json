@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "r_catalogue_index": 2,
+  "s_catalogue_index": 5,
+  "split_C2_section_generator_index": 6,
+  "group_checks": 64,
+  "u": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+  ],
+  "v": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+  ],
+  "spatial_decomposition": "V = W_xy + line_(u+v), det(W)=v",
+  "source_ring": "F2[u,v,w]/(u^2+uv), w=w2(W)",
+  "spinless_Thom": "3-V: w1=u,w2=w+v^2",
+  "spin_half_Thom": "det(V)-1: w1=u,w2=0",
+  "section": "u:D8->C2 with section1->s*r; the determinant Thom line is its pullback",
+  "catalogue_sha256": {
+    "point3_14_spinless.json": "05d450e3f31ab268e621c23adb540ba7dc81c865ff5a132234399b8d2c8a89bf",
+    "point3_14_spin_half.json": "7e508e1b45bdbff49573955a61fec64c05e2d64f226411de9ae1f11111f0d9b1"
+  }
+}

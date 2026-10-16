@@ -1,0 +1,42 @@
+{
+  "ciResultPath": "/home/user/xyren/AllFSPT_insulator/mismatch_audit_20261016/reference_run/ci/point3_24_spin_half/result.json",
+  "ciResultSHA256": "53c5b1e254e36633c5ca97b924b7bc7024b585c2aa2f164d5a4beccc1f372511",
+  "ciRun": {
+    "chargePrimaryRequested": "bar",
+    "closedChargeSourceRequested": "reference",
+    "command": [
+      "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "-m",
+      "256m",
+      "-K",
+      "8g",
+      "/home/user/xyren/AllFSPT_insulator/mismatch_audit_20261016/reference_run/ci/point3_24_spin_half/driver.g"
+    ],
+    "elapsedSeconds": 11.938,
+    "exitCode": 0,
+    "formulaWorkerPython": "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+    "host": "n08.local",
+    "id": "point3_24_spin_half",
+    "inputSHA256": "c1fe8e4ebf9358874c4da0b45a8c05e2126491825e434e09cb9a386d652f5b8e",
+    "phaseClassRequested": "native",
+    "sourceSHA256": "9c54faafde763e240487f2c93768a973e2f129094d79894ce49a2d9a66cf8791",
+    "startedUTC": "2026-10-16T05:20:03.385408+00:00",
+    "status": "complete",
+    "timeoutSeconds": 1200,
+    "uniformIQHRequested": false,
+    "vacuumReductionRequested": "reference"
+  },
+  "ciSourceSHA256": "9c54faafde763e240487f2c93768a973e2f129094d79894ce49a2d9a66cf8791",
+  "exitCode": 0,
+  "host": "n08.local",
+  "id": "point3_24_spin_half",
+  "inputSHA256": "c1fe8e4ebf9358874c4da0b45a8c05e2126491825e434e09cb9a386d652f5b8e",
+  "operation": "exact-selected-section-E8-extension",
+  "physicalClassificationCertified": false,
+  "sourceSHA256": "20aa099243067387824b8a8ecef247491b7f86a38424fcac8d3bb5dc3ff5eab4",
+  "startedUTC": "2026-10-16T05:20:58.047184+00:00",
+  "status": "complete"
+}

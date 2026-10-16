@@ -1,0 +1,107 @@
+{
+  "ring": "F2[x,a,b,c]/(ac), degrees(1,1,2,3)",
+  "thom": "X=(B(S4 x C2))^(3-V), w1=x, w2=a^2+b",
+  "module_dimensions_0_to_8": [
+    1,
+    2,
+    4,
+    7,
+    10,
+    14,
+    19,
+    24,
+    30
+  ],
+  "E1_Ext_rows_by_stem_then_filtration_0_to_6": {
+    "0": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "1": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "2": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "3": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "4": [
+      5,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "5": [
+      6,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "6": [
+      9,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "checks": 382,
+  "method": "Dual Koszul complex C^(s,t)=directsum_{j=0}^s M_(t-s-2j)^*, differential h0 Q0^*+v1 Q1^*",
+  "degree4_total_F2_dimension": 6,
+  "h0_rank_stem4_filtration0_to1": 1,
+  "ku4_from_Einf": {
+    "torsion": [
+      2,
+      2,
+      2,
+      2,
+      4
+    ],
+    "order": 64
+  },
+  "Spin_c_degree4_after_shifted_ku0": {
+    "torsion": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      4
+    ],
+    "order": 128
+  },
+  "stability_note": "For stems 0..5 the source, target and incoming cell j ranges and matrices stabilize by filtration 4, because all module degrees are nonnegative. Thus the displayed vanishing persists above the checked range.",
+  "differentials_note": "Adams dr has(s,n)->(s+r,n-1), r>=2. Stem 3 has only filtration0, so no outgoing differential from stem 4. Incoming differentials from stem 5 cannot reach stem 4 filtration 0 or 1. All stem 4 E2 classes survive. h0 rank 1 plus only one positive-filtration class fixes ku4 as Z4 plus four Z2."
+}

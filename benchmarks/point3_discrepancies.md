@@ -1,5 +1,13 @@
 # Point-group discrepancy evidence
 
+Historical audit of the earlier comparison. Use the
+[2026-10-16 E8-inclusive mismatch review](point3_mismatch_audit_20261016/README.md)
+for current conclusions and separately versioned reference values. In particular,
+the printed O_h center relations below contain a fermionic orbit-sign error:
+correcting that sign restores the source's Z4 center quotient. The old center
+argument does **not** establish an extra physical Z2. The new independent
+bordism calculation supplies different evidence for the full O_h group.
+
 These audits explain specific disagreements with
 [arXiv:2204.13558v2](https://arxiv.org/abs/2204.13558v2). They do not change
 the primary-source tables or supply expected groups to the AHSS backend.
@@ -118,6 +126,12 @@ root independently of GAP and distinguishes the source extension claim from
 a transport-arithmetic failure.
 
 ## Oh spinless: internal arithmetic of the printed center relations
+
+**Updated interpretation (2026-10-16):** the literal twelve-site orbit has
+diagonal-reflection sign minus one. Its corrected row is `(12,0,1)`, and the
+corrected quotient is Z4. The arithmetic below is a faithful check of the
+*printed* rows, not a classification of the physical atomic sector. See the
+[orbit and bordism audit](point3_mismatch_audit_20261016/oh_audit.md).
 
 The source's spinless Oh paragraph (`main.tex:4249-4253`) starts from
 `Z x Z2 x Z2` and explicitly lists its trivial 0D states as

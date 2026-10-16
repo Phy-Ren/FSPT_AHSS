@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "baselineCommit": "f413c19f8dadbc51953b77acadf7457be64fb603",
+  "host": "n08 via persistent cluster3 SSH",
+  "referenceSettings": {
+    "charge_primary": "bar",
+    "phase_class": "native",
+    "closed_charge_source": "reference",
+    "vacuum_reduction": "reference",
+    "formula_mode": "reference"
+  },
+  "currentResultsSHA256": "0f9f0eadd8a0f75f9e250a1020042fa0b7ec6dc02cc9be5427f6802c571e9673",
+  "referenceResultsSHA256": "a73feddefd231f97aa4c628d03256d5b5de4977d8e675f94f018f5a68227eaa2",
+  "elapsedSeconds": 55.832188,
+  "acceptedCount": 3,
+  "comparison": "All full classification fields equal after removing only chargePrimaryStats and pairedGeometryReuse execution metadata. Inputs equal. No mathematical field ignored.",
+  "rows": [
+    {
+      "id": "point3_06_spin_half",
+      "torsion": [
+        2,
+        2
+      ],
+      "freeRank": 0,
+      "scientificClassificationEqual": true,
+      "inputEqual": true,
+      "ignoredExecutionStatistics": {
+        "chargePrimaryStats": {
+          "reference": {
+            "barFallbacks": 1,
+            "comparisons": 0,
+            "emptyTargetClasses": 0,
+            "nativeCalls": 0,
+            "omegaClosureChecks": 0,
+            "phaseModeOverrides": 0
+          },
+          "current": {
+            "barFallbacks": 0,
+            "comparisons": 0,
+            "emptyTargetClasses": 0,
+            "nativeCalls": 1,
+            "omegaClosureChecks": 1,
+            "phaseModeOverrides": 0
+          }
+        },
+        "pairedGeometryReuse": {
+          "reference": false,
+          "current": false
+        }
+      }
+    },
+    {
+      "id": "point3_24_spin_half",
+      "torsion": [
+        2,
+        2
+      ],
+      "freeRank": 0,
+      "scientificClassificationEqual": true,
+      "inputEqual": true,
+      "ignoredExecutionStatistics": {
+        "chargePrimaryStats": {
+          "reference": {
+            "barFallbacks": 1,
+            "comparisons": 0,
+            "emptyTargetClasses": 0,
+            "nativeCalls": 0,
+            "omegaClosureChecks": 0,
+            "phaseModeOverrides": 0
+          },
+          "current": {
+            "barFallbacks": 0,
+            "comparisons": 0,
+            "emptyTargetClasses": 0,
+            "nativeCalls": 1,
+            "omegaClosureChecks": 1,
+            "phaseModeOverrides": 0
+          }
+        },
+        "pairedGeometryReuse": {
+          "reference": false,
+          "current": false
+        }
+      }
+    },
+    {
+      "id": "point3_32_spinless",
+      "torsion": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "freeRank": 0,
+      "scientificClassificationEqual": true,
+      "inputEqual": true,
+      "ignoredExecutionStatistics": {
+        "chargePrimaryStats": {
+          "reference": {
+            "barFallbacks": 3,
+            "comparisons": 0,
+            "emptyTargetClasses": 0,
+            "nativeCalls": 0,
+            "omegaClosureChecks": 0,
+            "phaseModeOverrides": 0
+          },
+          "current": {
+            "barFallbacks": 0,
+            "comparisons": 0,
+            "emptyTargetClasses": 0,
+            "nativeCalls": 3,
+            "omegaClosureChecks": 1,
+            "phaseModeOverrides": 0
+          }
+        },
+        "pairedGeometryReuse": {
+          "reference": false,
+          "current": true
+        }
+      }
+    }
+  ]
+}

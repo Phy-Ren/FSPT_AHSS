@@ -1,0 +1,16 @@
+U1_ROOT:="/home/user/xyren/AllFSPT_insulator/mismatch_audit_20261016/source";;
+U1_FORMULA_PYTHON:="/home/user/xyren/AllFSPT_insulator/runtime/bin/python3";;
+Read(Concatenation(U1_ROOT,"/gap/load.g"));;
+U1_INPUT:=rec(id:="point3_06_spin_half",family:="point3",index:=6,name:="D2",hermann_mauguin:="222",dimension:=3,spin:="spin_half",identity_index:=0,order:=4,matrices:=[[[1,0,0],[0,1,0],[0,0,1]],[[-1,0,0],[0,1,0],[0,0,-1]],[[-1,0,0],[0,-1,0],[0,0,1]],[[1,0,0],[0,-1,0],[0,0,-1]]],multiplication:=[[0,1,2,3],[1,0,3,2],[2,3,0,1],[3,2,1,0]],translation_subgroup_present:=false,input_scope:="geometry_and_background_only",s:=[0,0,0,0],rho:=[0,0,0,0],circle_action:=[0,0,0,0],omega:=[["0","0","0","0"],["0","0","0","0"],["0","0","0","0"],["0","0","0","0"]],geometric_pin_minus:=[[0,0,0,0],[0,1,1,0],[0,0,1,1],[0,1,0,1]],effective_extension:="zero",physical_symmetry:="unitary_charge_preserving_crystalline",representative_catalog_number:=16);;
+c:=U1CatalogContext(U1_INPUT,6);;
+c.chargePrimaryMode:="bar";;
+c.phaseClassMode:="native";;
+c.closedChargeSourceMode:="reference";;
+c.vacuumReductionMode:="reference";;
+result:=U1Classify(c,U1_INPUT.dimension,rec(uniformIQH:=false));;
+output:=OutputTextFile("/home/user/xyren/AllFSPT_insulator/mismatch_audit_20261016/reference_run/ci/point3_06_spin_half/native.json",false);;
+SetPrintFormattingStatus(output,false);;
+PrintTo(output,U1JSON(result),"\n");;
+CloseStream(output);;
+if IsBound(c.worker) then CloseStream(c.worker);fi;
+QUIT;

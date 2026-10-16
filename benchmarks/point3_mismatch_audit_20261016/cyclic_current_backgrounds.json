@@ -1,0 +1,90 @@
+[
+  {
+    "source": "point3_10_spinless",
+    "input_sha256": "605555d3ff80af945c261061c2650cefc05a3aa2f532e9d88774e99809736ec8",
+    "cyclic_power_to_catalog_index": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "standard_s_rho": "parity",
+    "omega_gauge_to_zero": [
+      "0",
+      "1/8",
+      "1/4",
+      "-1/8"
+    ],
+    "gauge_equation": "omega(a,b) = lambda(a)+lambda(b)-lambda(a+b) mod 1",
+    "pair_checks": 16,
+    "all_checks_pass": true
+  },
+  {
+    "source": "point3_10_spin_half",
+    "input_sha256": "3abc9a7ab29763dfce9942020b424559f6956fdfd6dbc8f558196a45a85a1cda",
+    "cyclic_power_to_catalog_index": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "standard_s_rho": "parity",
+    "omega_gauge_to_zero": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "gauge_equation": "omega(a,b) = lambda(a)+lambda(b)-lambda(a+b) mod 1",
+    "pair_checks": 16,
+    "all_checks_pass": true
+  },
+  {
+    "source": "point3_17_spinless",
+    "input_sha256": "67ba5bfb42168248b27224bbe3ceed2b36d2f7a7568c888b374366df26a9d788",
+    "cyclic_power_to_catalog_index": [
+      0,
+      3,
+      4,
+      1,
+      2,
+      5
+    ],
+    "standard_s_rho": "parity",
+    "omega_gauge_to_zero": [
+      "0",
+      "1/6",
+      "-1/6",
+      "0",
+      "1/6",
+      "-1/6"
+    ],
+    "gauge_equation": "omega(a,b) = lambda(a)+lambda(b)-lambda(a+b) mod 1",
+    "pair_checks": 36,
+    "all_checks_pass": true
+  },
+  {
+    "source": "point3_17_spin_half",
+    "input_sha256": "de03f2b3e3eb176e0016a0b7e299dd2974647b924f567196e7799ca75c227f84",
+    "cyclic_power_to_catalog_index": [
+      0,
+      3,
+      4,
+      1,
+      2,
+      5
+    ],
+    "standard_s_rho": "parity",
+    "omega_gauge_to_zero": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "gauge_equation": "omega(a,b) = lambda(a)+lambda(b)-lambda(a+b) mod 1",
+    "pair_checks": 36,
+    "all_checks_pass": true
+  }
+]

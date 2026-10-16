@@ -1,0 +1,714 @@
+{
+  "method": "Independent Python finite-table exhaustive subgroup/gauge and exact rational intertwiner audit",
+  "runtime_classifier_imported": false,
+  "rows": [
+    {
+      "source": "point3_17_spinless",
+      "target": "point3_02_spinless",
+      "source_name": "C3i",
+      "target_name": "Ci",
+      "physical_spin": "spinless",
+      "input_sha256": [
+        "67ba5bfb42168248b27224bbe3ceed2b36d2f7a7568c888b374366df26a9d788",
+        "eaba102cdc404f99f11944bd7cfc3a40bfc4929e4d076bf9d0944d198d6be3b5"
+      ],
+      "normal_C3_indices": [
+        0,
+        2,
+        4
+      ],
+      "complement_indices": [
+        0,
+        1
+      ],
+      "section_target_to_source": [
+        0,
+        1
+      ],
+      "quotient_source_to_target": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "full_quotient_multiplication_checks": 36,
+      "intertwiner_source_X_equals_X_target": [
+        [
+          "-1",
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "-1",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "-1"
+        ]
+      ],
+      "intertwiner_determinant": "1",
+      "full_effective_extension_gauge_lambda": [
+        "0",
+        "0",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "geometric_pin_minus_coboundary_bits": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "gauge_equation": "omega_source - quotient^*omega_target = d(lambda) mod 1",
+      "physical_spin_extension_checked": true,
+      "E8_orientation_root_pulls_back_exactly": true,
+      "E8_root_has_order_two": true,
+      "all_checks_pass": true
+    },
+    {
+      "source": "point3_17_spin_half",
+      "target": "point3_02_spin_half",
+      "source_name": "C3i",
+      "target_name": "Ci",
+      "physical_spin": "spin_half",
+      "input_sha256": [
+        "de03f2b3e3eb176e0016a0b7e299dd2974647b924f567196e7799ca75c227f84",
+        "fe15ca09c24ac593392e281c06a1625ef484bc8b3b8dea9e974701743b709084"
+      ],
+      "normal_C3_indices": [
+        0,
+        2,
+        4
+      ],
+      "complement_indices": [
+        0,
+        1
+      ],
+      "section_target_to_source": [
+        0,
+        1
+      ],
+      "quotient_source_to_target": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "full_quotient_multiplication_checks": 36,
+      "intertwiner_source_X_equals_X_target": [
+        [
+          "-1",
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "-1",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "-1"
+        ]
+      ],
+      "intertwiner_determinant": "1",
+      "full_effective_extension_gauge_lambda": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "geometric_pin_minus_coboundary_bits": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "gauge_equation": "omega_source - quotient^*omega_target = d(lambda) mod 1",
+      "physical_spin_extension_checked": true,
+      "E8_orientation_root_pulls_back_exactly": true,
+      "E8_root_has_order_two": true,
+      "all_checks_pass": true
+    },
+    {
+      "source": "point3_20_spinless",
+      "target": "point3_05_spinless",
+      "source_name": "D3d",
+      "target_name": "C2h",
+      "physical_spin": "spinless",
+      "input_sha256": [
+        "8866dc0c7d49de62fb37284a56772793c882417c788edc98ad61c4b1b1c3658b",
+        "28171d223f8af19dfaa7fafdf67e2975f8b6104f580519c0219b7c18a8acbdab"
+      ],
+      "normal_C3_indices": [
+        0,
+        3,
+        8
+      ],
+      "complement_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "section_target_to_source": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "quotient_source_to_target": [
+        0,
+        1,
+        2,
+        0,
+        3,
+        1,
+        2,
+        2,
+        0,
+        3,
+        3,
+        1
+      ],
+      "full_quotient_multiplication_checks": 144,
+      "intertwiner_source_X_equals_X_target": [
+        [
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ]
+      ],
+      "intertwiner_determinant": "2",
+      "full_effective_extension_gauge_lambda": [
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "1/2",
+        "1/2",
+        "0",
+        "1/2",
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "geometric_pin_minus_coboundary_bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "gauge_equation": "omega_source - quotient^*omega_target = d(lambda) mod 1",
+      "physical_spin_extension_checked": true,
+      "E8_orientation_root_pulls_back_exactly": true,
+      "E8_root_has_order_two": true,
+      "all_checks_pass": true
+    },
+    {
+      "source": "point3_20_spin_half",
+      "target": "point3_05_spin_half",
+      "source_name": "D3d",
+      "target_name": "C2h",
+      "physical_spin": "spin_half",
+      "input_sha256": [
+        "376b3eabe92998fe1eb93665e521af2108bff58e39df0354ba5974245bc85f62",
+        "5c9f48602d66c1e166715b3cdb09f7976517765cf81ee9be0d198c96671dc61e"
+      ],
+      "normal_C3_indices": [
+        0,
+        3,
+        8
+      ],
+      "complement_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "section_target_to_source": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "quotient_source_to_target": [
+        0,
+        1,
+        2,
+        0,
+        3,
+        1,
+        2,
+        2,
+        0,
+        3,
+        3,
+        1
+      ],
+      "full_quotient_multiplication_checks": 144,
+      "intertwiner_source_X_equals_X_target": [
+        [
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ]
+      ],
+      "intertwiner_determinant": "2",
+      "full_effective_extension_gauge_lambda": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "geometric_pin_minus_coboundary_bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "gauge_equation": "omega_source - quotient^*omega_target = d(lambda) mod 1",
+      "physical_spin_extension_checked": true,
+      "E8_orientation_root_pulls_back_exactly": true,
+      "E8_root_has_order_two": true,
+      "all_checks_pass": true
+    },
+    {
+      "source": "point3_23_spinless",
+      "target": "point3_05_spinless",
+      "source_name": "C6h",
+      "target_name": "C2h",
+      "physical_spin": "spinless",
+      "input_sha256": [
+        "7fa3d1af04df6b0ea3f5b75ca6e706f71573b67c6e60e362d27588c4341a82b1",
+        "28171d223f8af19dfaa7fafdf67e2975f8b6104f580519c0219b7c18a8acbdab"
+      ],
+      "normal_C3_indices": [
+        0,
+        3,
+        7
+      ],
+      "complement_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "section_target_to_source": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "quotient_source_to_target": [
+        0,
+        1,
+        2,
+        0,
+        3,
+        1,
+        2,
+        0,
+        3,
+        1,
+        2,
+        3
+      ],
+      "full_quotient_multiplication_checks": 144,
+      "intertwiner_source_X_equals_X_target": [
+        [
+          "-1",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      "intertwiner_determinant": "-1",
+      "full_effective_extension_gauge_lambda": [
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "1/2",
+        "0",
+        "1/2",
+        "0",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "geometric_pin_minus_coboundary_bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "gauge_equation": "omega_source - quotient^*omega_target = d(lambda) mod 1",
+      "physical_spin_extension_checked": true,
+      "E8_orientation_root_pulls_back_exactly": true,
+      "E8_root_has_order_two": true,
+      "all_checks_pass": true
+    },
+    {
+      "source": "point3_23_spin_half",
+      "target": "point3_05_spin_half",
+      "source_name": "C6h",
+      "target_name": "C2h",
+      "physical_spin": "spin_half",
+      "input_sha256": [
+        "d77f48b84f215fcd73c41b5ec5abe178e4cd998742ffb9edd7fdcc790b1ba912",
+        "5c9f48602d66c1e166715b3cdb09f7976517765cf81ee9be0d198c96671dc61e"
+      ],
+      "normal_C3_indices": [
+        0,
+        3,
+        7
+      ],
+      "complement_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "section_target_to_source": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "quotient_source_to_target": [
+        0,
+        1,
+        2,
+        0,
+        3,
+        1,
+        2,
+        0,
+        3,
+        1,
+        2,
+        3
+      ],
+      "full_quotient_multiplication_checks": 144,
+      "intertwiner_source_X_equals_X_target": [
+        [
+          "-1",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      "intertwiner_determinant": "-1",
+      "full_effective_extension_gauge_lambda": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "geometric_pin_minus_coboundary_bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "gauge_equation": "omega_source - quotient^*omega_target = d(lambda) mod 1",
+      "physical_spin_extension_checked": true,
+      "E8_orientation_root_pulls_back_exactly": true,
+      "E8_root_has_order_two": true,
+      "all_checks_pass": true
+    },
+    {
+      "source": "point3_26_spinless",
+      "target": "point3_07_spinless",
+      "source_name": "D3h",
+      "target_name": "C2v",
+      "physical_spin": "spinless",
+      "input_sha256": [
+        "e05911d1f5f14cec76d00183c0f0e8436417ef01a1da77ec893a7d56d82f49cc",
+        "22bdd2d51c43fcc2540b167db564690f4a43ad3983b76b32aa24f68b80b56a87"
+      ],
+      "normal_C3_indices": [
+        0,
+        3,
+        8
+      ],
+      "complement_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "section_target_to_source": [
+        0,
+        1,
+        4,
+        2
+      ],
+      "quotient_source_to_target": [
+        0,
+        1,
+        3,
+        0,
+        2,
+        1,
+        3,
+        1,
+        0,
+        2,
+        2,
+        3
+      ],
+      "full_quotient_multiplication_checks": 144,
+      "intertwiner_source_X_equals_X_target": [
+        [
+          "0",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ]
+      ],
+      "intertwiner_determinant": "-2",
+      "full_effective_extension_gauge_lambda": [
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "1/2",
+        "0",
+        "1/2",
+        "1/2"
+      ],
+      "geometric_pin_minus_coboundary_bits": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "gauge_equation": "omega_source - quotient^*omega_target = d(lambda) mod 1",
+      "physical_spin_extension_checked": true,
+      "E8_orientation_root_pulls_back_exactly": true,
+      "E8_root_has_order_two": true,
+      "all_checks_pass": true
+    },
+    {
+      "source": "point3_26_spin_half",
+      "target": "point3_07_spin_half",
+      "source_name": "D3h",
+      "target_name": "C2v",
+      "physical_spin": "spin_half",
+      "input_sha256": [
+        "f36f510c3bd493384c560d37d8e8152b35961f206d2532fdab8d75c77996dff2",
+        "f9db3fa804062e6fec57d294697cb011876cda22b2545e994e885099f4fa4622"
+      ],
+      "normal_C3_indices": [
+        0,
+        3,
+        8
+      ],
+      "complement_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "section_target_to_source": [
+        0,
+        1,
+        4,
+        2
+      ],
+      "quotient_source_to_target": [
+        0,
+        1,
+        3,
+        0,
+        2,
+        1,
+        3,
+        1,
+        0,
+        2,
+        2,
+        3
+      ],
+      "full_quotient_multiplication_checks": 144,
+      "intertwiner_source_X_equals_X_target": [
+        [
+          "0",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ]
+      ],
+      "intertwiner_determinant": "-2",
+      "full_effective_extension_gauge_lambda": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "geometric_pin_minus_coboundary_bits": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "gauge_equation": "omega_source - quotient^*omega_target = d(lambda) mod 1",
+      "physical_spin_extension_checked": true,
+      "E8_orientation_root_pulls_back_exactly": true,
+      "E8_root_has_order_two": true,
+      "all_checks_pass": true
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "chargePrimaryRequested": "bar",
+  "closedChargeSourceRequested": "reference",
+  "command": [
+    "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+    "-q",
+    "-b",
+    "--quitonbreak",
+    "-m",
+    "256m",
+    "-K",
+    "8g",
+    "/home/user/xyren/AllFSPT_insulator/mismatch_audit_20261016/reference_run/ci/point3_24_spin_half/driver.g"
+  ],
+  "elapsedSeconds": 11.938,
+  "exitCode": 0,
+  "formulaWorkerPython": "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+  "host": "n08.local",
+  "id": "point3_24_spin_half",
+  "inputSHA256": "c1fe8e4ebf9358874c4da0b45a8c05e2126491825e434e09cb9a386d652f5b8e",
+  "phaseClassRequested": "native",
+  "sourceSHA256": "9c54faafde763e240487f2c93768a973e2f129094d79894ce49a2d9a66cf8791",
+  "startedUTC": "2026-10-16T05:20:03.385408+00:00",
+  "status": "complete",
+  "timeoutSeconds": 1200,
+  "uniformIQHRequested": false,
+  "vacuumReductionRequested": "reference"
+}

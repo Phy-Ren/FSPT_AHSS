@@ -1,0 +1,121 @@
+{
+  "accepted": true,
+  "checks": [
+    {
+      "id": "point3_06_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 8,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_24_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 8,
+      "sourceHashVerified": true
+    },
+    {
+      "id": "point3_32_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "ci",
+      "nativeChainIdentitiesVerified": true,
+      "nativeCompletionChecks": 8,
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "ca4398b9b511e6d45e79701c1f33cada6d28dbd30b3037d3e26d4e8526d4694f",
+      "id": "point3_06_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "53c5b1e254e36633c5ca97b924b7bc7024b585c2aa2f164d5a4beccc1f372511",
+      "id": "point3_24_spin_half",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "sourceHashVerified": true
+    },
+    {
+      "ciParentSHA256": "d5069a1f8f0f303dde6dbc34dd0ee3e3dfbb2dd0bae9b07d09a10fb85a9049ab",
+      "id": "point3_32_spinless",
+      "independentSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      },
+      "inputHashVerified": true,
+      "kind": "e8",
+      "neutralSmithGroup": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "sourceHashVerified": true
+    }
+  ],
+  "completeResultCount": 3,
+  "missingOrFailedSelectedCases": [],
+  "scope": "E8-inclusive selected 3+1D four-data model, with the CI sector as computed",
+  "selectedCases": [
+    "point3_06_spin_half",
+    "point3_24_spin_half",
+    "point3_32_spinless"
+  ]
+}
