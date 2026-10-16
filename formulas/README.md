@@ -11,10 +11,15 @@ spacetime dimensions.
   [exact coefficients](../docs/formulas/COEFFICIENTS.md), and
   [root-power presentations](../docs/formulas/ROOT_POWER_PRESENTATIONS.md).
 - [Executable API and worker](../docs/formulas/IMPLEMENTATION.md).
-- [Fourteen computed 4+1D cyclic examples](../docs/formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md),
+- [Computed 4+1D cyclic examples](../docs/formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md),
   including the complete physical relation kernel and the uniform response section.
+- [Finite abelian products](../docs/4p1d/calibration/ABELIAN_PRODUCTS.md), including
+  mixed cohomology, incoming gauges, and complete stacking presentations.
+- [Infinite translations](../docs/4p1d/calibration/TRANSLATIONS.md), including
+  the full integer cochain/gauge quotient and integral stacking coordinates.
 - [Signed C2 calculations](../docs/4p1d/calibration/SIGNED_C2.md) and
   [independent interacting bordism targets](../docs/4p1d/calibration/BORDISM_TARGETS.md).
+- [Additional finite-group and translation benchmarks](../docs/4p1d/calibration/BATCH2_TARGETS.md).
 
 The TeX source, coefficient appendices, frozen regression vectors, and
 universal certificates in this directory preserve the supplied calibrated
@@ -32,14 +37,20 @@ not replace the active reduced source/product/gauge convention.
 
 Current 4+1D tables separate [cyclic intrinsic-zero](../results/current/4p1d/internal_cyclic/intrinsic_zero.md),
 [cyclic all-intrinsic](../results/current/4p1d/internal_cyclic/intrinsic_all.md),
+[abelian intrinsic-zero](../results/current/4p1d/internal_abelian/intrinsic_zero.md),
+[abelian all-intrinsic](../results/current/4p1d/internal_abelian/intrinsic_all.md),
+[translation intrinsic-zero](../results/current/4p1d/translations/intrinsic_zero.md),
+[translation all-intrinsic](../results/current/4p1d/translations/intrinsic_all.md),
 [unitary charge conjugation](../results/current/4p1d/charge_conjugation.md),
 and [AI/AII intrinsic-zero](../results/current/4p1d/time_reversal_intrinsic_zero.md).
-The [accepted campaign](../results/four_dimensional_20261016/accepted.json)
-contains fourteen cyclic and four signed backgrounds. The cyclic physical
-comparison checks the entire relation lattice; the all-intrinsic result
-uses the explicit trivial-action `Z²` section. The signed comparison uses
-source-specific bordism targets. Neither supplies a general opened-intrinsic
-solver or a universal terminal CI comparison.
+The [current index](../results/current/4p1d/README.md) links every accepted
+batch and derives its counts from that lineage. The cyclic physical
+comparison checks the entire relation lattice; abelian and signed
+comparisons use source-specific interacting bordism targets, and
+translations use the stable torus splitting. The all-intrinsic direct-product
+results use the explicit trivial-action `Z²` section. These family-specific
+checks do not supply a general opened-intrinsic solver or a universal
+terminal CI comparison.
 
 The [research record](../docs/e8/research/README.md) separates mathematical
 cochain identities, completed global computations, and the remaining

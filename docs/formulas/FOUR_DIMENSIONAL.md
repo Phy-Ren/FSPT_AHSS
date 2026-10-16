@@ -259,26 +259,46 @@ not prove that the retained CI model is the entire physical kernel.
 
 ## Complete examples and physical calibration
 
-The accepted [4+1D campaign](../../results/four_dimensional_20261016/accepted.json)
-contains fourteen commuting cyclic backgrounds and four signed `C2`
-backgrounds. Each calculation includes the full `(e2,n2,n4,nu5)` source,
+The [current 4+1D catalogue](../../results/current/4p1d/README.md) lists
+accepted cyclic, abelian-product, translation, and signed `C2` inputs,
+with their pinned calculation lineage. Each calculation includes the full `(e2,n2,n4,nu5)` source,
 stacking, joint gauges, incoming identifications, and completed root powers.
 The results are organized by symmetry and response sector:
 
 - [Internal cyclic groups, zero intrinsic response](../../results/current/4p1d/internal_cyclic/intrinsic_zero.md).
 - [Internal cyclic groups, all intrinsic responses](../../results/current/4p1d/internal_cyclic/intrinsic_all.md).
+- [Internal abelian products, zero intrinsic response](../../results/current/4p1d/internal_abelian/intrinsic_zero.md).
+- [Internal abelian products, all intrinsic responses](../../results/current/4p1d/internal_abelian/intrinsic_all.md).
+- [Translations, zero intrinsic response](../../results/current/4p1d/translations/intrinsic_zero.md).
+- [Translations, all intrinsic responses](../../results/current/4p1d/translations/intrinsic_all.md).
 - [Unitary charge conjugation](../../results/current/4p1d/charge_conjugation.md).
 - [AI/AII, zero intrinsic response](../../results/current/4p1d/time_reversal_intrinsic_zero.md).
 
 For `U(1)^f × C_N`, `s=rho=omega=0`, the
-[cyclic calculation](FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md) covers
-`N=1,2,3,4,5,6,7,8,9,10,12,15,16,18`. Complete powers and actual
+[cyclic calculation](FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md) computes every
+order selected in the current tables. Complete powers and actual
 gauges are evaluated on the full cyclic five-cycle. An independent
 Spin-c eta calculation then identifies the **entire relation lattice**
 in the reviewed electronic-root dictionary. An independent bordism order
 bound proves completeness of that physical character group. This certifies
 these specified cyclic presentations without supplying a universal
 terminal CI comparison.
+
+The [abelian-product calculation](../4p1d/calibration/ABELIAN_PRODUCTS.md)
+retains the mixed integral charge kernel, native phase cohomology, incoming
+charge-gauge images, completed root relations, and commutator witnesses.
+Its [bordism comparisons](../4p1d/calibration/BATCH2_TARGETS.md) test the
+additive classification. They do not establish a labelled character
+dictionary for every root. Coprime product presentations are kept as
+independent controls even when the underlying group is cyclic.
+
+The [translation calculation](../4p1d/calibration/TRANSLATIONS.md) uses the
+complete finite simplicial torus `B Z^r`, `1<=r<=4`. Its unimodular
+certificates determine the entire integral cochain/gauge quotient. The
+nonzero stacking term `n2 cup n2'` is resolved by the integral coordinate
+`Q=[n4]-[n2]^2/2`; it is not discarded. The independent physical comparison
+uses stable torus splitting and the interacting Spin-c coefficient groups.
+Only rank four is a full four-dimensional translation lattice.
 
 For the signed cases, write `alpha(c)=1` and `omega=k alpha²/2`.
 The [complete normalized-bar calculation](../4p1d/calibration/SIGNED_C2.md)
@@ -314,13 +334,15 @@ and from the scalar 2+1D IQH coefficient. Their possible outgoing
 `d3,d5,d6` belong to this additional coefficient row; they do not change
 the `d2,d3,d4` scope of the original four-data equations above.
 
-For the direct product `U(1)^f × C_N`, forgetting `C_N` has the identity
-inclusion as a section. Pulling a uniform phase back with trivial `C_N`
+For each specified commuting direct product `U(1)^f × G`, forgetting `G` has the identity
+inclusion as a section. Pulling a uniform phase back with trivial `G`
 action therefore gives a natural group splitting into the intrinsic-zero
 kernel and `Z{I} ⊕ Z{J}`. At `s=rho=omega=0`, direct substitution into
 the reviewed intrinsic equations permits zero lower data for both unit
 roots. The [cyclic section proof](FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md#uniform-intrinsic-pair-and-its-natural-section)
-justifies the all-intrinsic table. It is not an implementation of a
+gives this physical section argument, also used for the abelian-product
+and translation tables with their respective physical comparison scopes.
+It is not an implementation of a
 general opened-intrinsic solver or a section for arbitrary signed backgrounds.
 
 The exact closed-sheet operations, the accepted global examples, and the

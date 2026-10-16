@@ -11,6 +11,8 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 import hashlib
+import gzip
+import io
 import json
 import os
 from pathlib import Path
@@ -63,7 +65,23 @@ def uniform_response(relative_torsion):
         'scope': 'Separate physical natural-section statement for the direct product only; the recorded cochain campaign is the original four-data relative theory.'}
 
 
-def case_worker(order, directory, expected_source, cache):
+def write_evidence(directory, evidence, evidence_format):
+    if evidence_format == 'json':
+        path = directory / 'cycle_evidence.json'
+        write_json(path, evidence)
+    elif evidence_format == 'json-gzip':
+        path = directory / 'cycle_evidence.json.gz'
+        with path.open('wb') as raw:
+            with gzip.GzipFile(filename='', mode='wb', fileobj=raw, mtime=0, compresslevel=6) as compressed:
+                with io.TextIOWrapper(compressed, encoding='utf-8') as stream:
+                    json.dump(evidence, stream, sort_keys=True, separators=(',', ':'))
+                    stream.write('\n')
+    else:
+        raise ValueError('Unknown evidence format')
+    return path
+
+
+def case_worker(order, directory, expected_source, cache, evidence_format='json'):
     current = manifest()
     if current['sha256'] != expected_source:
         raise RuntimeError('The immutable source snapshot changed before the case')
@@ -75,9 +93,9 @@ def case_worker(order, directory, expected_source, cache):
         raise RuntimeError('Run metadata has the wrong source hash')
     start = time.monotonic()
     classification, evidence, stats = calculate(order, cache=cache)
-    write_json(directory / 'cycle_evidence.json', evidence)
-    evidence_hash = hashlib.sha256((directory / 'cycle_evidence.json').read_bytes()).hexdigest()
-    evidence_record = {'path': 'cycle_evidence.json', 'sha256': evidence_hash,
+    evidence_path = write_evidence(directory, evidence, evidence_format)
+    evidence_hash = hashlib.sha256(evidence_path.read_bytes()).hexdigest()
+    evidence_record = {'path': evidence_path.name, 'sha256': evidence_hash,
                        'cycleTerms': classification['cycleTerms'],
                        'scope': 'All normalized periodic-cycle terms with actual complete states, powers and sheet/charge gauges.'}
     # Always retain the computed mathematics before consulting a physical
@@ -108,14 +126,14 @@ def case_worker(order, directory, expected_source, cache):
     return run
 
 
-def launch(order, output, source, timeout, cache):
+def launch(order, output, source, timeout, cache, evidence_format='json'):
     inputs = input_record(order)
     directory = output / inputs['id']
     directory.mkdir()
     write_json(directory / 'input.json', inputs)
     command = [sys.executable, str(Path(__file__).resolve()), '--worker-order', str(order),
                '--worker-directory', str(directory), '--worker-source', source['sha256'],
-               '--cache', 'on' if cache else 'off']
+               '--cache', 'on' if cache else 'off', '--evidence-format', evidence_format]
     run = {'id': inputs['id'], 'status': 'running', 'host': platform.node(),
            'python': sys.version, 'command': command,
            'startedUTC': datetime.now(timezone.utc).isoformat(),
@@ -157,12 +175,14 @@ def main():
     parser.add_argument('--jobs', type=int, default=1)
     parser.add_argument('--timeout', type=int, default=600)
     parser.add_argument('--cache', choices=('on', 'off'), default='on')
+    parser.add_argument('--evidence-format', choices=('json', 'json-gzip'), default='json',
+                        help='Losslessly compress complete cycle witnesses for larger batches')
     parser.add_argument('--worker-order', type=int, help=argparse.SUPPRESS)
     parser.add_argument('--worker-directory', type=Path, help=argparse.SUPPRESS)
     parser.add_argument('--worker-source', help=argparse.SUPPRESS)
     args = parser.parse_args()
     if args.worker_order is not None:
-        record = case_worker(args.worker_order, args.worker_directory, args.worker_source, args.cache == 'on')
+        record = case_worker(args.worker_order, args.worker_directory, args.worker_source, args.cache == 'on', args.evidence_format)
         return record['exitCode']
     orders = args.order or ORDERS
     if not args.output or any(n < 1 for n in orders) or len(orders) != len(set(orders)) or args.jobs < 1 or args.timeout < 1:
@@ -174,7 +194,7 @@ def main():
     write_json(output / 'selection.json', orders)
     rows = []
     with ThreadPoolExecutor(max_workers=args.jobs) as pool:
-        futures = {pool.submit(launch, n, output, source, args.timeout, args.cache == 'on'): n
+        futures = {pool.submit(launch, n, output, source, args.timeout, args.cache == 'on', args.evidence_format): n
                    for n in sorted(orders, reverse=True)}
         for future in as_completed(futures):
             row = future.result()
@@ -187,6 +207,7 @@ def main():
     write_json(output / 'campaign.json', {'schema': 'u1-cyclic-4p1-campaign-v1',
         'status': 'complete' if complete else 'failed', 'orders': orders, 'completed': len(rows),
         'sourceSHA256': source['sha256'], 'jobs': args.jobs, 'cache': args.cache,
+        'evidenceFormat': args.evidence_format,
         'scope': 'Four-data exact cyclic roots plus independent physical eta-kernel comparison; uniform I,J physical section recorded separately.'})
     return 0 if complete else 1
 

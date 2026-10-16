@@ -1,0 +1,108 @@
+{
+  "classification": {
+    "actualGroupOrder": "infinite",
+    "coordinateStacking": {
+      "additiveCharge": "Q=q-(n wedge n)/2",
+      "freeKernelProof": "(e,n,q) -> (e,n,Q) is an explicit integral bijection and homomorphism. The unimodular kernel certificates prove every state and every incoming gauge are represented.",
+      "integerPower": "(k e,k n,k q+binomial(k,2) n wedge n), for every k in Z",
+      "integrality": "The computed polarizer is symmetric with zero diagonal, so the half-square is integral for every integer sheet.",
+      "inverse": "(-e,-n,-q+n wedge n)",
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "rawProduct": "(e+f,n+m,q+t+n wedge m)",
+      "sheetPolarizer": [
+        [
+          []
+        ]
+      ]
+    },
+    "finalFiltration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "e": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "n": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": []
+      }
+    },
+    "freeRank": 2,
+    "generators": [
+      {
+        "coordinates": [
+          0,
+          1
+        ],
+        "kind": "neutral-E8",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          0,
+          1
+        ],
+        "kind": "CI-sheet",
+        "order": "infinite"
+      }
+    ],
+    "incomingCohomology": {
+      "CIGaugeFreeRank": 2,
+      "E8GaugeFreeRank": 2,
+      "action": "Trivial on periods: B=rho=0 and C^5(T^r,R/Z)=0; complete nonclosed gauge images retained.",
+      "chargeGaugeFreeRank": 0,
+      "phaseGaugeFreeRank": 0
+    },
+    "modelClassificationComplete": true,
+    "physicalClassificationCertified": false,
+    "presentation": [],
+    "presentationGeneratorCount": 2,
+    "scope": "Complete four-data model on the finite K(Z^r,1), with s=rho=omega=0 and intrinsic pair zero; physical stable-splitting comparison is separate.",
+    "torsion": []
+  },
+  "evidence": {
+    "path": "simplicial_evidence.json",
+    "sha256": "108201668b82142254e05551049e85e50bcf8032bffe65b0b4df41d37a8015aa"
+  },
+  "input": {
+    "atomicFillingRetained": true,
+    "dimension": 4,
+    "family": "translations",
+    "id": "translations_z2_4p1",
+    "intrinsicRowIncluded": false,
+    "omega": "0",
+    "orderedFields": [
+      "e_2",
+      "n_2",
+      "n_4",
+      "nu_5"
+    ],
+    "physicalSpin": "not_applicable",
+    "referenceTarget": "translations_z2",
+    "rho": 0,
+    "s": 0,
+    "spatialInterpretation": "partial translations in four spatial dimensions",
+    "spinScope": "Pure translations have no rotation-spin lift distinction.",
+    "translationRank": 2
+  },
+  "run": {
+    "host": "n09.local",
+    "id": "translations_z2_4p1",
+    "inputSHA256": "faf73018fc8da23bfad3a0056a4c737bd42a35342dab0759142ca79c6feebd9a",
+    "pythonVersion": "3.13.12",
+    "sourceSHA256": "572651d215dddac0bd409badd51e7794cacecc85017dbef15cc13b5670e9dfef",
+    "startedUTC": "2026-10-16T08:15:19.894522+00:00",
+    "status": "computed"
+  }
+}

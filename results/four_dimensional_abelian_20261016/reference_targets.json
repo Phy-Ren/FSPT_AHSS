@@ -1,0 +1,7039 @@
+{
+  "cases": [
+    {
+      "background": {
+        "G": "C1",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": []
+      },
+      "id": "internal_cyclic_1",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": []
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C1",
+      "tangential_structure": "Spin-c x C1",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": []
+      }
+    },
+    {
+      "background": {
+        "G": "C2",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "id": "internal_cyclic_2",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              8
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        },
+        {
+          "confidence": "high; published formula specialized",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              8
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "bahri_gilkey_1987",
+          "specialization": {
+            "A_degrees": [
+              5,
+              1
+            ],
+            "N": 2,
+            "bordism_degree": 5
+          }
+        },
+        {
+          "confidence": "high; independent theorem combination",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              8
+            ]
+          },
+          "method": "reduced Omega5 Spin-c(BC2) = Omega4 Pin-c",
+          "scope": "zero_uniform",
+          "sources": [
+            "smith_v2",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C2",
+      "tangential_structure": "Spin-c x C2",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C3",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          3,
+          3,
+          9
+        ]
+      },
+      "id": "internal_cyclic_3",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              3,
+              3,
+              9
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C3",
+      "tangential_structure": "Spin-c x C3",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          3,
+          3,
+          9
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C4",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          4,
+          16
+        ]
+      },
+      "id": "internal_cyclic_4",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              4,
+              16
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        },
+        {
+          "confidence": "high; published formula specialized",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              4,
+              16
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "bahri_gilkey_1987",
+          "specialization": {
+            "A_degrees": [
+              5,
+              1
+            ],
+            "N": 4,
+            "bordism_degree": 5
+          }
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C4",
+      "tangential_structure": "Spin-c x C4",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4,
+          16
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C5",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "id": "internal_cyclic_5",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C5",
+      "tangential_structure": "Spin-c x C5",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          5,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C6",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          3,
+          6,
+          72
+        ]
+      },
+      "id": "internal_cyclic_6",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              3,
+              6,
+              72
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C6",
+      "tangential_structure": "Spin-c x C6",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          3,
+          6,
+          72
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C7",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      "id": "internal_cyclic_7",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              7,
+              7,
+              7,
+              7
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C7",
+      "tangential_structure": "Spin-c x C7",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          7,
+          7,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C8",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          4,
+          4,
+          8,
+          32
+        ]
+      },
+      "id": "internal_cyclic_8",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              4,
+              4,
+              8,
+              32
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        },
+        {
+          "confidence": "high; published formula specialized",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              4,
+              4,
+              8,
+              32
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "bahri_gilkey_1987",
+          "specialization": {
+            "A_degrees": [
+              5,
+              1
+            ],
+            "N": 8,
+            "bordism_degree": 5
+          }
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C8",
+      "tangential_structure": "Spin-c x C8",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          4,
+          8,
+          32
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C9",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          3,
+          9,
+          9,
+          27
+        ]
+      },
+      "id": "internal_cyclic_9",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              3,
+              9,
+              9,
+              27
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C9",
+      "tangential_structure": "Spin-c x C9",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          3,
+          9,
+          9,
+          27
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C10",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          5,
+          5,
+          10,
+          40
+        ]
+      },
+      "id": "internal_cyclic_10",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              5,
+              5,
+              10,
+              40
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C10",
+      "tangential_structure": "Spin-c x C10",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          5,
+          5,
+          10,
+          40
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C12",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          6,
+          12,
+          144
+        ]
+      },
+      "id": "internal_cyclic_12",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              6,
+              12,
+              144
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C12",
+      "tangential_structure": "Spin-c x C12",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          6,
+          12,
+          144
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C15",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          5,
+          15,
+          15,
+          45
+        ]
+      },
+      "id": "internal_cyclic_15",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              5,
+              15,
+              15,
+              45
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C15",
+      "tangential_structure": "Spin-c x C15",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          5,
+          15,
+          15,
+          45
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C16",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          8,
+          8,
+          16,
+          64
+        ]
+      },
+      "id": "internal_cyclic_16",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              8,
+              8,
+              16,
+              64
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        },
+        {
+          "confidence": "high; published formula specialized",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              8,
+              8,
+              16,
+              64
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "bahri_gilkey_1987",
+          "specialization": {
+            "A_degrees": [
+              5,
+              1
+            ],
+            "N": 16,
+            "bordism_degree": 5
+          }
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C16",
+      "tangential_structure": "Spin-c x C16",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          8,
+          8,
+          16,
+          64
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C18",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          3,
+          9,
+          18,
+          216
+        ]
+      },
+      "id": "internal_cyclic_18",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; reviewed analytic physical proof",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              3,
+              9,
+              18,
+              216
+            ]
+          },
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C18",
+      "tangential_structure": "Spin-c x C18",
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          3,
+          9,
+          18,
+          216
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C2",
+        "alpha": "alpha(c)=1",
+        "omega": "alpha cup alpha / 2",
+        "rho": "alpha",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      },
+      "id": "unitary_charge_conjugation_Hminus",
+      "intrinsic_response_image": "0",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "smith_wall": "Pin-tilde-c+",
+      "sources": [
+        {
+          "confidence": "high; independently reviewed derivation",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2
+            ]
+          },
+          "method": "Derived Smith sequence with specified tangent spin twist; not copied 4+1D table",
+          "scope": "full_and_zero_uniform",
+          "sources": [
+            "smith_v2",
+            "freed_hopkins_v6",
+            "debray_ye_yu_v2"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "spin_twist": "TM + E + L",
+      "symmetry": "unitary C, C^2=(-1)^F",
+      "tangential_structure": "(Spin x Pin-(2))/diagonal Z2",
+      "tests": "E8 retained; CI obstruction, square, incoming phases, and exponent-two physical detector",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C2",
+        "alpha": "alpha(c)=1",
+        "omega": "0",
+        "rho": "alpha",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "id": "unitary_charge_conjugation_Hplus",
+      "intrinsic_response_image": "0",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "smith_wall": "Pin-tilde-c-",
+      "sources": [
+        {
+          "confidence": "high; independently reviewed derivation",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "method": "Derived Smith sequence with specified tangent spin twist; not copied 4+1D table",
+          "scope": "full_and_zero_uniform",
+          "sources": [
+            "smith_v2",
+            "freed_hopkins_v6",
+            "debray_ye_yu_v2"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "spin_twist": "TM + E + 3L",
+      "symmetry": "unitary C, C^2=1",
+      "tangential_structure": "(Spin x Pin+(2))/diagonal Z2",
+      "tests": "E8 retained; CI obstruction, square, incoming phases, and exponent-two physical detector",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C2^T",
+        "omega": "0",
+        "rho": "0",
+        "s": "alpha"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": []
+      },
+      "id": "time_reversal_AI",
+      "intrinsic_image_source": "v0.15 signed primary obstruction plus actual electronic realizations; FH gives abstract group",
+      "intrinsic_response_image": "2Z{I} + 2Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; directly published interacting TP5",
+          "group": {
+            "freeRank": 2,
+            "torsion": []
+          },
+          "locator": "Corollary 9.95",
+          "scope": "full",
+          "source": "freed_hopkins_v6"
+        },
+        {
+          "confidence": "high",
+          "group": {
+            "freeRank": 0,
+            "torsion": []
+          },
+          "locator": "Theorem 9.87: Omega5=0",
+          "method": "No finite torsion and finite-index rank-two uniform image",
+          "scope": "zero_uniform",
+          "source": "freed_hopkins_v6"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "AI: antiunitary T^2=1",
+      "tangential_structure": "Pin-tilde-c-",
+      "tests": "Vanishing zero-uniform group; do not confuse labelled AI and AII uniform lattices",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": []
+      }
+    },
+    {
+      "background": {
+        "G": "C2^T",
+        "omega": "alpha cup alpha / 2",
+        "rho": "0",
+        "s": "alpha"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": []
+      },
+      "id": "time_reversal_AII",
+      "intrinsic_image_source": "v0.15 signed primary obstruction plus actual electronic realizations; FH gives abstract group",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; directly published interacting TP5",
+          "group": {
+            "freeRank": 2,
+            "torsion": []
+          },
+          "locator": "Corollary 9.93",
+          "scope": "full",
+          "source": "freed_hopkins_v6"
+        },
+        {
+          "confidence": "high",
+          "group": {
+            "freeRank": 0,
+            "torsion": []
+          },
+          "locator": "Theorem 9.87: Omega5=0",
+          "method": "No finite torsion and finite-index rank-two uniform image",
+          "scope": "zero_uniform",
+          "source": "freed_hopkins_v6"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "AII: antiunitary T^2=(-1)^F",
+      "tangential_structure": "Pin-tilde-c+",
+      "tests": "Vanishing zero-uniform group; do not confuse labelled AI and AII uniform lattices",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": []
+      }
+    },
+    {
+      "background": {
+        "G": "C2 x C2",
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          4,
+          8,
+          8
+        ]
+      },
+      "id": "internal_c2_product_c2",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "confidence": "high; derived from exact primary decompositions",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              4,
+              8,
+              8
+            ]
+          },
+          "method": "Omega5=ku5+ku1; ku5=Z8^2+Z4 and ku1=Z2^2; even-degree HF2 grading",
+          "scope": "zero_uniform",
+          "sources": [
+            "bmss_v1",
+            "buchanan_mckean_2026"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "symmetry": "U(1)^f x C2 x C2",
+      "tangential_structure": "Spin-c x C2 x C2",
+      "tests": "First noncyclic mixed roots, differential and stacking extensions; retain shifted ku1 summand",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^4",
+        "omega": "0",
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action with the stated independent translation rank",
+        "translationRank": 4
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 15,
+        "torsion": []
+      },
+      "id": "translations_z4",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 13,
+            "torsion": []
+          },
+          "method": "Derived exact torus stable splitting with interacting coefficient phases and atomic filling retained",
+          "scope": "zero_uniform",
+          "sources": [
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Infinite discrete group, free positive filtration, and lower-layer multiplicities",
+      "zero_uniform_layer_ranks": {
+        "e2": 6,
+        "n2": 6,
+        "n4": 1,
+        "nu5": 0
+      },
+      "zero_uniform_target": {
+        "freeRank": 13,
+        "torsion": []
+      }
+    },
+    {
+      "background": {
+        "G": "C11",
+        "omega": "0",
+        "order": 11,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      "id": "internal_cyclic_11",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              11,
+              11,
+              11,
+              11
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          11,
+          11,
+          11,
+          11
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C13",
+        "omega": "0",
+        "order": 13,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          13,
+          13,
+          13,
+          13
+        ]
+      },
+      "id": "internal_cyclic_13",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              13,
+              13,
+              13,
+              13
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          13,
+          13,
+          13,
+          13
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C14",
+        "omega": "0",
+        "order": 14,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          7,
+          7,
+          14,
+          56
+        ]
+      },
+      "id": "internal_cyclic_14",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              7,
+              7,
+              14,
+              56
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          7,
+          7,
+          14,
+          56
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C17",
+        "omega": "0",
+        "order": 17,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          17,
+          17,
+          17,
+          17
+        ]
+      },
+      "id": "internal_cyclic_17",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              17,
+              17,
+              17,
+              17
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          17,
+          17,
+          17,
+          17
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C19",
+        "omega": "0",
+        "order": 19,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          19,
+          19,
+          19,
+          19
+        ]
+      },
+      "id": "internal_cyclic_19",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              19,
+              19,
+              19,
+              19
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          19,
+          19,
+          19,
+          19
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C20",
+        "omega": "0",
+        "order": 20,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          10,
+          10,
+          20,
+          80
+        ]
+      },
+      "id": "internal_cyclic_20",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              10,
+              10,
+              20,
+              80
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          10,
+          10,
+          20,
+          80
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C21",
+        "omega": "0",
+        "order": 21,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          7,
+          21,
+          21,
+          63
+        ]
+      },
+      "id": "internal_cyclic_21",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              7,
+              21,
+              21,
+              63
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          7,
+          21,
+          21,
+          63
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C22",
+        "omega": "0",
+        "order": 22,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          11,
+          11,
+          22,
+          88
+        ]
+      },
+      "id": "internal_cyclic_22",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              11,
+              11,
+              22,
+              88
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          11,
+          11,
+          22,
+          88
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C23",
+        "omega": "0",
+        "order": 23,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          23,
+          23,
+          23,
+          23
+        ]
+      },
+      "id": "internal_cyclic_23",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              23,
+              23,
+              23,
+              23
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          23,
+          23,
+          23,
+          23
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C24",
+        "omega": "0",
+        "order": 24,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          4,
+          12,
+          24,
+          288
+        ]
+      },
+      "id": "internal_cyclic_24",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              4,
+              12,
+              24,
+              288
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          4,
+          12,
+          24,
+          288
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C25",
+        "omega": "0",
+        "order": 25,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      "id": "internal_cyclic_25",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              25,
+              25,
+              25,
+              25
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          25,
+          25,
+          25,
+          25
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C26",
+        "omega": "0",
+        "order": 26,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          13,
+          13,
+          26,
+          104
+        ]
+      },
+      "id": "internal_cyclic_26",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              13,
+              13,
+              26,
+              104
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          13,
+          13,
+          26,
+          104
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C27",
+        "omega": "0",
+        "order": 27,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          9,
+          27,
+          27,
+          81
+        ]
+      },
+      "id": "internal_cyclic_27",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              9,
+              27,
+              27,
+              81
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          9,
+          27,
+          27,
+          81
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C28",
+        "omega": "0",
+        "order": 28,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          14,
+          14,
+          28,
+          112
+        ]
+      },
+      "id": "internal_cyclic_28",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              14,
+              14,
+              28,
+              112
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          14,
+          14,
+          28,
+          112
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C29",
+        "omega": "0",
+        "order": 29,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          29,
+          29,
+          29,
+          29
+        ]
+      },
+      "id": "internal_cyclic_29",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              29,
+              29,
+              29,
+              29
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          29,
+          29,
+          29,
+          29
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C30",
+        "omega": "0",
+        "order": 30,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          5,
+          15,
+          30,
+          360
+        ]
+      },
+      "id": "internal_cyclic_30",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              5,
+              15,
+              30,
+              360
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          5,
+          15,
+          30,
+          360
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C31",
+        "omega": "0",
+        "order": 31,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          31,
+          31,
+          31,
+          31
+        ]
+      },
+      "id": "internal_cyclic_31",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              31,
+              31,
+              31,
+              31
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          31,
+          31,
+          31,
+          31
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C32",
+        "omega": "0",
+        "order": 32,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          16,
+          16,
+          32,
+          128
+        ]
+      },
+      "id": "internal_cyclic_32",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              16,
+              16,
+              32,
+              128
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        },
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              16,
+              16,
+              32,
+              128
+            ]
+          },
+          "method": "Published cyclic 2-group formula specialized to degree five",
+          "scope": "zero_uniform",
+          "source": "bahri_gilkey_1987",
+          "specialization": {
+            "A_degrees": [
+              5,
+              1
+            ],
+            "N": 32,
+            "bordism_degree": 5
+          }
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          16,
+          16,
+          32,
+          128
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C36",
+        "omega": "0",
+        "order": 36,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          6,
+          18,
+          36,
+          432
+        ]
+      },
+      "id": "internal_cyclic_36",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              6,
+              18,
+              36,
+              432
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          6,
+          18,
+          36,
+          432
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C40",
+        "omega": "0",
+        "order": 40,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          20,
+          20,
+          40,
+          160
+        ]
+      },
+      "id": "internal_cyclic_40",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              20,
+              20,
+              40,
+              160
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          20,
+          20,
+          40,
+          160
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C48",
+        "omega": "0",
+        "order": 48,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          8,
+          24,
+          48,
+          576
+        ]
+      },
+      "id": "internal_cyclic_48",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              8,
+              24,
+              48,
+              576
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          8,
+          24,
+          48,
+          576
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C54",
+        "omega": "0",
+        "order": 54,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          9,
+          27,
+          54,
+          648
+        ]
+      },
+      "id": "internal_cyclic_54",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              9,
+              27,
+              54,
+              648
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          9,
+          27,
+          54,
+          648
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C64",
+        "omega": "0",
+        "order": 64,
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          32,
+          32,
+          64,
+          256
+        ]
+      },
+      "id": "internal_cyclic_64",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              32,
+              32,
+              64,
+              256
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "source": "v015_cyclic"
+        },
+        {
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              32,
+              32,
+              64,
+              256
+            ]
+          },
+          "method": "Published cyclic 2-group formula specialized to degree five",
+          "scope": "zero_uniform",
+          "source": "bahri_gilkey_1987",
+          "specialization": {
+            "A_degrees": [
+              5,
+              1
+            ],
+            "N": 64,
+            "bordism_degree": 5
+          }
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "All root powers, complete gauge phases, and exact physical character kernel at larger orders",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          32,
+          32,
+          64,
+          256
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C2 x C2",
+        "factors": [
+          2,
+          2
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          2,
+          2,
+          4,
+          8,
+          8
+        ],
+        "ku5_cyclic_terms": [
+          [
+            8
+          ],
+          [
+            8
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 8,
+          "domain_relation_rows": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "kernel_order": 4,
+          "kernel_prime_power_annihilator_counts": {
+            "2": [
+              1,
+              2,
+              4
+            ]
+          },
+          "torsion": [
+            4
+          ]
+        },
+        "shifted_ku1": [
+          2,
+          2
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          4,
+          8,
+          8
+        ]
+      },
+      "id": "internal_abelian_2x2",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              4,
+              8,
+              8
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C2 x C3",
+        "factors": [
+          2,
+          3
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              0
+            ],
+            [
+              1,
+              3,
+              3
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          3,
+          6,
+          72
+        ],
+        "ku5_cyclic_terms": [
+          [
+            8
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 8,
+          "domain_relation_rows": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              3,
+              0,
+              3
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "kernel_order": 1,
+          "kernel_prime_power_annihilator_counts": {
+            "2": [
+              1
+            ]
+          },
+          "torsion": []
+        },
+        "shifted_ku1": [
+          2,
+          3
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          3,
+          6,
+          72
+        ]
+      },
+      "id": "internal_abelian_2x3",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              3,
+              6,
+              72
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          3,
+          6,
+          72
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C2 x C4",
+        "factors": [
+          2,
+          4
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              6,
+              4,
+              0
+            ],
+            [
+              4,
+              6,
+              4
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8,
+          16
+        ],
+        "ku5_cyclic_terms": [
+          [
+            8
+          ],
+          [
+            2,
+            2,
+            16
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 8,
+          "domain_relation_rows": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              4,
+              0,
+              6
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "kernel_order": 8,
+          "kernel_prime_power_annihilator_counts": {
+            "2": [
+              1,
+              4,
+              8
+            ]
+          },
+          "torsion": [
+            2,
+            4
+          ]
+        },
+        "shifted_ku1": [
+          2,
+          4
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8,
+          16
+        ]
+      },
+      "id": "internal_abelian_2x4",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8,
+              16
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8,
+          16
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C3 x C3",
+        "factors": [
+          3,
+          3
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              0
+            ],
+            [
+              1,
+              3,
+              3
+            ]
+          ],
+          [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              0
+            ],
+            [
+              1,
+              3,
+              3
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          9,
+          9
+        ],
+        "ku5_cyclic_terms": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 27,
+          "domain_relation_rows": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              3,
+              0,
+              3
+            ],
+            [
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "kernel_order": 27,
+          "kernel_prime_power_annihilator_counts": {
+            "3": [
+              1,
+              27
+            ]
+          },
+          "torsion": [
+            3,
+            3,
+            3
+          ]
+        },
+        "shifted_ku1": [
+          3,
+          3
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          9,
+          9
+        ]
+      },
+      "id": "internal_abelian_3x3",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              9,
+              9
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          9,
+          9
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C2 x C6",
+        "factors": [
+          2,
+          6
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              15,
+              6,
+              0
+            ],
+            [
+              20,
+              15,
+              6
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          2,
+          2,
+          12,
+          24,
+          72
+        ],
+        "ku5_cyclic_terms": [
+          [
+            8
+          ],
+          [
+            3,
+            72
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 8,
+          "domain_relation_rows": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              6,
+              0,
+              15
+            ],
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              6
+            ]
+          ],
+          "kernel_order": 4,
+          "kernel_prime_power_annihilator_counts": {
+            "2": [
+              1,
+              2,
+              4
+            ]
+          },
+          "torsion": [
+            4
+          ]
+        },
+        "shifted_ku1": [
+          2,
+          6
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          12,
+          24,
+          72
+        ]
+      },
+      "id": "internal_abelian_2x6",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              12,
+              24,
+              72
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          12,
+          24,
+          72
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C2 x C8",
+        "factors": [
+          2,
+          8
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              28,
+              8,
+              0
+            ],
+            [
+              56,
+              28,
+              8
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          2,
+          2,
+          4,
+          4,
+          4,
+          8,
+          8,
+          32
+        ],
+        "ku5_cyclic_terms": [
+          [
+            8
+          ],
+          [
+            4,
+            4,
+            32
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 8,
+          "domain_relation_rows": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              8,
+              0,
+              28
+            ],
+            [
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              8
+            ]
+          ],
+          "kernel_order": 8,
+          "kernel_prime_power_annihilator_counts": {
+            "2": [
+              1,
+              4,
+              8
+            ]
+          },
+          "torsion": [
+            2,
+            4
+          ]
+        },
+        "shifted_ku1": [
+          2,
+          8
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          4,
+          4,
+          4,
+          8,
+          8,
+          32
+        ]
+      },
+      "id": "internal_abelian_2x8",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              4,
+              4,
+              4,
+              8,
+              8,
+              32
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4,
+          4,
+          4,
+          8,
+          8,
+          32
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C3 x C6",
+        "factors": [
+          3,
+          6
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              0
+            ],
+            [
+              1,
+              3,
+              3
+            ]
+          ],
+          [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              15,
+              6,
+              0
+            ],
+            [
+              20,
+              15,
+              6
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          18,
+          72
+        ],
+        "ku5_cyclic_terms": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            72
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 27,
+          "domain_relation_rows": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              6,
+              0,
+              15
+            ],
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              6
+            ]
+          ],
+          "kernel_order": 27,
+          "kernel_prime_power_annihilator_counts": {
+            "3": [
+              1,
+              27
+            ]
+          },
+          "torsion": [
+            3,
+            3,
+            3
+          ]
+        },
+        "shifted_ku1": [
+          3,
+          6
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          18,
+          72
+        ]
+      },
+      "id": "internal_abelian_3x6",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              18,
+              72
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          18,
+          72
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C4 x C4",
+        "factors": [
+          4,
+          4
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              6,
+              4,
+              0
+            ],
+            [
+              4,
+              6,
+              4
+            ]
+          ],
+          [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              6,
+              4,
+              0
+            ],
+            [
+              4,
+              6,
+              4
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8,
+          16,
+          16
+        ],
+        "ku5_cyclic_terms": [
+          [
+            2,
+            2,
+            16
+          ],
+          [
+            2,
+            2,
+            16
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 64,
+          "domain_relation_rows": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              6,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              4,
+              0,
+              6
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "kernel_order": 32,
+          "kernel_prime_power_annihilator_counts": {
+            "2": [
+              1,
+              8,
+              16,
+              32
+            ]
+          },
+          "torsion": [
+            2,
+            2,
+            8
+          ]
+        },
+        "shifted_ku1": [
+          4,
+          4
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8,
+          16,
+          16
+        ]
+      },
+      "id": "internal_abelian_4x4",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8,
+              16,
+              16
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8,
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C3 x C9",
+        "factors": [
+          3,
+          9
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              0
+            ],
+            [
+              1,
+              3,
+              3
+            ]
+          ],
+          [
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              36,
+              9,
+              0
+            ],
+            [
+              84,
+              36,
+              9
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          9,
+          9,
+          9,
+          27
+        ],
+        "ku5_cyclic_terms": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            9,
+            27
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 27,
+          "domain_relation_rows": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              9,
+              0,
+              36
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "kernel_order": 27,
+          "kernel_prime_power_annihilator_counts": {
+            "3": [
+              1,
+              27
+            ]
+          },
+          "torsion": [
+            3,
+            3,
+            3
+          ]
+        },
+        "shifted_ku1": [
+          3,
+          9
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          9,
+          9,
+          9,
+          27
+        ]
+      },
+      "id": "internal_abelian_3x9",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              9,
+              9,
+              9,
+              27
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          9,
+          9,
+          9,
+          27
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C4 x C8",
+        "factors": [
+          4,
+          8
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              6,
+              4,
+              0
+            ],
+            [
+              4,
+              6,
+              4
+            ]
+          ],
+          [
+            [
+              8,
+              0,
+              0
+            ],
+            [
+              28,
+              8,
+              0
+            ],
+            [
+              56,
+              28,
+              8
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          8,
+          8,
+          16,
+          32
+        ],
+        "ku5_cyclic_terms": [
+          [
+            2,
+            2,
+            16
+          ],
+          [
+            4,
+            4,
+            32
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 64,
+          "domain_relation_rows": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              6,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              8,
+              0,
+              28
+            ],
+            [
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              8
+            ]
+          ],
+          "kernel_order": 64,
+          "kernel_prime_power_annihilator_counts": {
+            "2": [
+              1,
+              8,
+              32,
+              64
+            ]
+          },
+          "torsion": [
+            2,
+            4,
+            8
+          ]
+        },
+        "shifted_ku1": [
+          4,
+          8
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          8,
+          8,
+          16,
+          32
+        ]
+      },
+      "id": "internal_abelian_4x8",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              4,
+              4,
+              4,
+              4,
+              8,
+              8,
+              16,
+              32
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          8,
+          8,
+          16,
+          32
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C5 x C5",
+        "factors": [
+          5,
+          5
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              10,
+              5,
+              0
+            ],
+            [
+              10,
+              10,
+              5
+            ]
+          ],
+          [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              10,
+              5,
+              0
+            ],
+            [
+              10,
+              10,
+              5
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "ku5_cyclic_terms": [
+          [
+            5,
+            5,
+            5
+          ],
+          [
+            5,
+            5,
+            5
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 125,
+          "domain_relation_rows": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              10,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              5,
+              0,
+              10
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "kernel_order": 125,
+          "kernel_prime_power_annihilator_counts": {
+            "5": [
+              1,
+              125
+            ]
+          },
+          "torsion": [
+            5,
+            5,
+            5
+          ]
+        },
+        "shifted_ku1": [
+          5,
+          5
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "id": "internal_abelian_5x5",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C2 x C12",
+        "factors": [
+          2,
+          12
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              12,
+              0,
+              0
+            ],
+            [
+              66,
+              12,
+              0
+            ],
+            [
+              220,
+              66,
+              12
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          12,
+          24,
+          144
+        ],
+        "ku5_cyclic_terms": [
+          [
+            8
+          ],
+          [
+            2,
+            6,
+            144
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 8,
+          "domain_relation_rows": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              12,
+              0,
+              66
+            ],
+            [
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              12
+            ]
+          ],
+          "kernel_order": 8,
+          "kernel_prime_power_annihilator_counts": {
+            "2": [
+              1,
+              4,
+              8
+            ]
+          },
+          "torsion": [
+            2,
+            4
+          ]
+        },
+        "shifted_ku1": [
+          2,
+          12
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          12,
+          24,
+          144
+        ]
+      },
+      "id": "internal_abelian_2x12",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              12,
+              24,
+              144
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          4,
+          12,
+          24,
+          144
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "(C2)^3",
+        "factors": [
+          2,
+          2,
+          2
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cartesian_multiplicities": [
+          3,
+          3,
+          1
+        ],
+        "ku5_smash_terms_by_number_of_factors": {
+          "1": [
+            8
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "4": [
+            2,
+            2,
+            2
+          ]
+        },
+        "shifted_ku1": [
+          2,
+          2,
+          2
+        ],
+        "zero_uniform_group_order": 4194304
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          8,
+          8,
+          8
+        ]
+      },
+      "id": "internal_abelian_2x2x2",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Ossa/Spin-c derivation",
+          "confidence": "high; exact spectrum splittings determine additive extensions",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4,
+              8,
+              8,
+              8
+            ]
+          },
+          "method": "Derived from actual Ossa spectrum splitting, iterated smash products, and the low 2-local Spin-c splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Triple and higher mixed terms, complete incoming quotient; torsion beyond representation-only cyclic restrictions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          8,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "(C2)^4",
+        "factors": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cartesian_multiplicities": [
+          4,
+          6,
+          4,
+          1
+        ],
+        "ku5_smash_terms_by_number_of_factors": {
+          "1": [
+            8
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "4": [
+            2,
+            2,
+            2
+          ]
+        },
+        "shifted_ku1": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "zero_uniform_group_order": 140737488355328
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "id": "internal_abelian_2x2x2x2",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Ossa/Spin-c derivation",
+          "confidence": "high; exact spectrum splittings determine additive extensions",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              8,
+              8,
+              8,
+              8
+            ]
+          },
+          "method": "Derived from actual Ossa spectrum splitting, iterated smash products, and the low 2-local Spin-c splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Triple and higher mixed terms, complete incoming quotient; torsion beyond representation-only cyclic restrictions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          8,
+          8,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^1",
+        "omega": "0",
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action with the stated independent translation rank",
+        "translationRank": 1
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": []
+      },
+      "id": "translations_z1",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": []
+          },
+          "method": "Derived exact torus stable splitting with interacting coefficient phases and atomic filling retained",
+          "scope": "zero_uniform",
+          "sources": [
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Infinite discrete group, free positive filtration, and lower-layer multiplicities",
+      "zero_uniform_layer_ranks": {
+        "e2": 0,
+        "n2": 0,
+        "n4": 0,
+        "nu5": 0
+      },
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": []
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^2",
+        "omega": "0",
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action with the stated independent translation rank",
+        "translationRank": 2
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 4,
+        "torsion": []
+      },
+      "id": "translations_z2",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 2,
+            "torsion": []
+          },
+          "method": "Derived exact torus stable splitting with interacting coefficient phases and atomic filling retained",
+          "scope": "zero_uniform",
+          "sources": [
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Infinite discrete group, free positive filtration, and lower-layer multiplicities",
+      "zero_uniform_layer_ranks": {
+        "e2": 1,
+        "n2": 1,
+        "n4": 0,
+        "nu5": 0
+      },
+      "zero_uniform_target": {
+        "freeRank": 2,
+        "torsion": []
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^3",
+        "omega": "0",
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action with the stated independent translation rank",
+        "translationRank": 3
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 8,
+        "torsion": []
+      },
+      "id": "translations_z3",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 6,
+            "torsion": []
+          },
+          "method": "Derived exact torus stable splitting with interacting coefficient phases and atomic filling retained",
+          "scope": "zero_uniform",
+          "sources": [
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Infinite discrete group, free positive filtration, and lower-layer multiplicities",
+      "zero_uniform_layer_ranks": {
+        "e2": 3,
+        "n2": 3,
+        "n4": 0,
+        "nu5": 0
+      },
+      "zero_uniform_target": {
+        "freeRank": 6,
+        "torsion": []
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^1 x C2",
+        "factors": [
+          2
+        ],
+        "omega": "0",
+        "order": 2,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 1
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          2
+        ],
+        "cyclic_TP3_torsion": [
+          4
+        ],
+        "cyclic_TP5_torsion": [
+          2,
+          8
+        ],
+        "full_free_rank": 2,
+        "torus_multiplicities": {
+          "TP1": 0,
+          "TP3": 0,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          8
+        ]
+      },
+      "id": "translations_z1_cyclic_2",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              8
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          8
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^1 x C3",
+        "factors": [
+          3
+        ],
+        "omega": "0",
+        "order": 3,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 1
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          3
+        ],
+        "cyclic_TP3_torsion": [
+          3,
+          3
+        ],
+        "cyclic_TP5_torsion": [
+          3,
+          3,
+          9
+        ],
+        "full_free_rank": 2,
+        "torus_multiplicities": {
+          "TP1": 0,
+          "TP3": 0,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          3,
+          3,
+          9
+        ]
+      },
+      "id": "translations_z1_cyclic_3",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              3,
+              3,
+              9
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          3,
+          3,
+          9
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^1 x C4",
+        "factors": [
+          4
+        ],
+        "omega": "0",
+        "order": 4,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 1
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          4
+        ],
+        "cyclic_TP3_torsion": [
+          2,
+          8
+        ],
+        "cyclic_TP5_torsion": [
+          2,
+          2,
+          4,
+          16
+        ],
+        "full_free_rank": 2,
+        "torus_multiplicities": {
+          "TP1": 0,
+          "TP3": 0,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          4,
+          16
+        ]
+      },
+      "id": "translations_z1_cyclic_4",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              4,
+              16
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          2,
+          4,
+          16
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^2 x C2",
+        "factors": [
+          2
+        ],
+        "omega": "0",
+        "order": 2,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 2
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          2
+        ],
+        "cyclic_TP3_torsion": [
+          4
+        ],
+        "cyclic_TP5_torsion": [
+          2,
+          8
+        ],
+        "full_free_rank": 4,
+        "torus_multiplicities": {
+          "TP1": 0,
+          "TP3": 1,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 4,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      },
+      "id": "translations_z2_cyclic_2",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              2,
+              4,
+              8
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^2 x C3",
+        "factors": [
+          3
+        ],
+        "omega": "0",
+        "order": 3,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 2
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          3
+        ],
+        "cyclic_TP3_torsion": [
+          3,
+          3
+        ],
+        "cyclic_TP5_torsion": [
+          3,
+          3,
+          9
+        ],
+        "full_free_rank": 4,
+        "torus_multiplicities": {
+          "TP1": 0,
+          "TP3": 1,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 4,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          9
+        ]
+      },
+      "id": "translations_z2_cyclic_3",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              9
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 2,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          9
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^2 x C4",
+        "factors": [
+          4
+        ],
+        "omega": "0",
+        "order": 4,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 2
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          4
+        ],
+        "cyclic_TP3_torsion": [
+          2,
+          8
+        ],
+        "cyclic_TP5_torsion": [
+          2,
+          2,
+          4,
+          16
+        ],
+        "full_free_rank": 4,
+        "torus_multiplicities": {
+          "TP1": 0,
+          "TP3": 1,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 4,
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          8,
+          16
+        ]
+      },
+      "id": "translations_z2_cyclic_4",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              2,
+              2,
+              2,
+              4,
+              8,
+              16
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          2,
+          2,
+          4,
+          8,
+          16
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^3 x C2",
+        "factors": [
+          2
+        ],
+        "omega": "0",
+        "order": 2,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 3
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          2
+        ],
+        "cyclic_TP3_torsion": [
+          4
+        ],
+        "cyclic_TP5_torsion": [
+          2,
+          8
+        ],
+        "full_free_rank": 8,
+        "torus_multiplicities": {
+          "TP1": 0,
+          "TP3": 3,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 8,
+        "torsion": [
+          2,
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      "id": "translations_z3_cyclic_2",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 6,
+            "torsion": [
+              2,
+              4,
+              4,
+              4,
+              8
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 6,
+        "torsion": [
+          2,
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^3 x C3",
+        "factors": [
+          3
+        ],
+        "omega": "0",
+        "order": 3,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 3
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          3
+        ],
+        "cyclic_TP3_torsion": [
+          3,
+          3
+        ],
+        "cyclic_TP5_torsion": [
+          3,
+          3,
+          9
+        ],
+        "full_free_rank": 8,
+        "torus_multiplicities": {
+          "TP1": 0,
+          "TP3": 3,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 8,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          9
+        ]
+      },
+      "id": "translations_z3_cyclic_3",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 6,
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              9
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 6,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          9
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^3 x C4",
+        "factors": [
+          4
+        ],
+        "omega": "0",
+        "order": 4,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 3
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          4
+        ],
+        "cyclic_TP3_torsion": [
+          2,
+          8
+        ],
+        "cyclic_TP5_torsion": [
+          2,
+          2,
+          4,
+          16
+        ],
+        "full_free_rank": 8,
+        "torus_multiplicities": {
+          "TP1": 0,
+          "TP3": 3,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 8,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          8,
+          8,
+          8,
+          16
+        ]
+      },
+      "id": "translations_z3_cyclic_4",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 6,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              8,
+              8,
+              8,
+              16
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 6,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          8,
+          8,
+          8,
+          16
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^4 x C2",
+        "factors": [
+          2
+        ],
+        "omega": "0",
+        "order": 2,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 4
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          2
+        ],
+        "cyclic_TP3_torsion": [
+          4
+        ],
+        "cyclic_TP5_torsion": [
+          2,
+          8
+        ],
+        "full_free_rank": 15,
+        "torus_multiplicities": {
+          "TP1": 1,
+          "TP3": 6,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 15,
+        "torsion": [
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      "id": "translations_z4_cyclic_2",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 13,
+            "torsion": [
+              2,
+              2,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              8
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 13,
+        "torsion": [
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^4 x C3",
+        "factors": [
+          3
+        ],
+        "omega": "0",
+        "order": 3,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 4
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          3
+        ],
+        "cyclic_TP3_torsion": [
+          3,
+          3
+        ],
+        "cyclic_TP5_torsion": [
+          3,
+          3,
+          9
+        ],
+        "full_free_rank": 15,
+        "torus_multiplicities": {
+          "TP1": 1,
+          "TP3": 6,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 15,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          9
+        ]
+      },
+      "id": "translations_z4_cyclic_3",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 13,
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              9
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 13,
+        "torsion": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          9
+        ]
+      }
+    },
+    {
+      "atomic_filling_retained": true,
+      "background": {
+        "G": "Z^4 x C4",
+        "factors": [
+          4
+        ],
+        "omega": "0",
+        "order": 4,
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action, independent translations and commuting internal C_N",
+        "translationRank": 4
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_TP1_torsion": [
+          4
+        ],
+        "cyclic_TP3_torsion": [
+          2,
+          8
+        ],
+        "cyclic_TP5_torsion": [
+          2,
+          2,
+          4,
+          16
+        ],
+        "full_free_rank": 15,
+        "torus_multiplicities": {
+          "TP1": 1,
+          "TP3": 6,
+          "TP5": 1
+        }
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 15,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          16
+        ]
+      },
+      "id": "translations_z4_cyclic_4",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 2,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Torus/Freed\u2013Hopkins derivation",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 13,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              16
+            ]
+          },
+          "method": "Derived exact torus stable splitting with lower cyclic interacting phase groups; prospective mixed infinite-group case",
+          "scope": "zero_uniform",
+          "sources": [
+            "v015_cyclic",
+            "bruner_greenlees_2003",
+            "abs_1964",
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed finite torsion and weak translation indices; direct-product benchmark before nonsymmorphic actions",
+      "zero_uniform_target": {
+        "freeRank": 13,
+        "torsion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          16
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C3 x C4",
+        "factors": [
+          3,
+          4
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              0
+            ],
+            [
+              1,
+              3,
+              3
+            ]
+          ],
+          [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              6,
+              4,
+              0
+            ],
+            [
+              4,
+              6,
+              4
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          2,
+          6,
+          12,
+          144
+        ],
+        "ku5_cyclic_terms": [
+          [
+            3,
+            9
+          ],
+          [
+            2,
+            2,
+            16
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 27,
+          "domain_relation_rows": [
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              4,
+              0,
+              6
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "kernel_order": 1,
+          "kernel_prime_power_annihilator_counts": {
+            "3": [
+              1
+            ]
+          },
+          "torsion": []
+        },
+        "shifted_ku1": [
+          3,
+          4
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          6,
+          12,
+          144
+        ]
+      },
+      "id": "internal_abelian_3x4",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              6,
+              12,
+              144
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          6,
+          12,
+          144
+        ]
+      }
+    },
+    {
+      "background": {
+        "G": "C2 x C10",
+        "factors": [
+          2,
+          10
+        ],
+        "omega": "0",
+        "rho": "0",
+        "s": "0"
+      },
+      "calculation_completed": false,
+      "comparison_status": "not_compared",
+      "derivation": {
+        "cyclic_presentation_rows": [
+          [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              45,
+              10,
+              0
+            ],
+            [
+              120,
+              45,
+              10
+            ]
+          ]
+        ],
+        "decomposition_invariant_factors": [
+          2,
+          10,
+          20,
+          40,
+          40
+        ],
+        "ku5_cyclic_terms": [
+          [
+            8
+          ],
+          [
+            5,
+            5,
+            40
+          ]
+        ],
+        "ku5_mixed_kernel": {
+          "canonical_representatives": "0<=x,y,z<N; reduce N*y by -binom(N,2)*x",
+          "coordinate_order": [
+            "u_z0",
+            "z1",
+            "second_z0"
+          ],
+          "domain_order": 8,
+          "domain_relation_rows": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          "endomorphism_column_matrix": [
+            [
+              10,
+              0,
+              45
+            ],
+            [
+              0,
+              10,
+              0
+            ],
+            [
+              0,
+              0,
+              10
+            ]
+          ],
+          "kernel_order": 4,
+          "kernel_prime_power_annihilator_counts": {
+            "2": [
+              1,
+              2,
+              4
+            ]
+          },
+          "torsion": [
+            4
+          ]
+        },
+        "shifted_ku1": [
+          2,
+          10
+        ]
+      },
+      "e8_included": true,
+      "full_target": {
+        "freeRank": 2,
+        "torsion": [
+          2,
+          10,
+          20,
+          40,
+          40
+        ]
+      },
+      "id": "internal_abelian_2x10",
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "physical_spin": "not_applicable_no_rotation",
+      "priority": 1,
+      "record_kind": "prospective_reference_target",
+      "sources": [
+        {
+          "columnLabel": "Spin-c bordism derivation",
+          "confidence": "high; exact primary theorem combination with displayed integral orientation argument",
+          "derivationURL": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+          "derivation_document": "BATCH2_TARGETS.md",
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              10,
+              20,
+              40,
+              40
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "sources": [
+            "bruner_greenlees_2003",
+            "bmss_v1",
+            "buchanan_mckean_2026",
+            "abs_1964",
+            "freed_hopkins_v6"
+          ]
+        }
+      ],
+      "spacetime_dimension": 5,
+      "spatial_dimension": 4,
+      "tangential_structure": "Spin-c with the stated commuting direct-product background",
+      "tests": "Mixed obstruction, incoming quotient and stacking extensions; no target imported into solver",
+      "zero_uniform_target": {
+        "freeRank": 0,
+        "torsion": [
+          2,
+          10,
+          20,
+          40,
+          40
+        ]
+      }
+    }
+  ],
+  "review_date": "2026-10-16",
+  "schema": "4p1d_prospective_bordism_targets_v1",
+  "scope": "Reference targets only, not classifier outputs. Interacting electronic phases; original four-data sector retains E8 and zero uniform I,J. Full intrinsic groups are sourced separately.",
+  "source_corrections": [
+    "Smith arXiv2405.04649v2 Spin-c/Pin-c equivalence is Example7.13 p36, not unversionedExample7.11.",
+    "Keep tangent spin twists explicit: unitary Hminus and Hplus are different from antiunitary AII and AI.",
+    "No published erroneous crystalline table is used as a benchmark."
+  ],
+  "sources": {
+    "abs_1964": {
+      "authors": [
+        "Michael F. Atiyah",
+        "Raoul Bott",
+        "Arnold Shapiro"
+      ],
+      "locator": "Theorem 12.3(ii)",
+      "method": "Spin-c K-theory Thom orientation; combined with the connective complex Euler class in the reduced degree-five argument",
+      "scope": "Bordism orientation, not a free-fermion classification",
+      "title": "Clifford modules",
+      "url": "https://doi.org/10.1016/0040-9383(64)90003-5",
+      "year": 1964
+    },
+    "bahri_gilkey_1987": {
+      "authors": [
+        "Anthony Bahri",
+        "Peter Gilkey"
+      ],
+      "locator": "Theorem 0.1(b) and following Remark, printed p.1",
+      "method": "Published reduced Spin-c bordism formula, specialized to degree five",
+      "scope": "Cyclic 2-groups; no attribution of the all-N formula",
+      "title": "The eta invariant, Pinc bordism, and equivariant Spinc bordism for cyclic 2-groups",
+      "url": "https://doi.org/10.2140/pjm.1987.128.1",
+      "year": 1987
+    },
+    "bmss_v1": {
+      "authors": [
+        "Robert Bruner",
+        "Khairia Mira",
+        "Laura Stanley",
+        "Victor Snaith"
+      ],
+      "locator": "Corollary 2.5; Theorem 2.12",
+      "method": "Exact graded connective complex K-homology, used as a bordism summand",
+      "publication_year": 2015,
+      "title": "Ossa's Theorem via the Kunneth formula",
+      "url": "https://arxiv.org/abs/1008.0166v1",
+      "version": "arXiv:1008.0166v1",
+      "year": 2010
+    },
+    "bruner_greenlees_2003": {
+      "authors": [
+        "Robert R. Bruner",
+        "John P. C. Greenlees"
+      ],
+      "fulltext_url": "https://digitalcommons.wayne.edu/mathfrp/84/",
+      "locator": "Section 2.2 pp.32-33; Proposition 3.4.3 pp.69-70; Proposition 4.2.3 p.83",
+      "method": "Cyclic Gysin presentation, exact connective K-homology and spectrum splitting, used to compute interacting Spin-c bordism",
+      "title": "The connective K-theory of finite groups",
+      "url": "https://doi.org/10.1090/memo/0785",
+      "year": 2003
+    },
+    "buchanan_mckean_2026": {
+      "authors": [
+        "Jonathan Buchanan",
+        "Stephen McKean"
+      ],
+      "locator": "Theorem 3.6 p.492; Table 3 p.538",
+      "method": "2-local Spin-c spectrum splitting through the needed range",
+      "title": "KSp-characteristic classes determine Spin^h cobordism",
+      "url": "https://doi.org/10.2140/agt.2026.26.485",
+      "year": 2026
+    },
+    "debray_ye_yu_v2": {
+      "authors": [
+        "Arun Debray",
+        "Weicheng Ye",
+        "Matthew Yu"
+      ],
+      "locator": "Proposition 6.27 and proof, p.48",
+      "method": "Pin-tilde-c+ twist 3E and explicit wall bordism generators",
+      "title": "Bosonization and Anomaly Indicators of (2+1)-D Fermionic Topological Orders",
+      "url": "https://arxiv.org/abs/2312.13341v2",
+      "version": "arXiv:2312.13341v2, 2025-05-21",
+      "year": 2025
+    },
+    "freed_hopkins_v6": {
+      "authors": [
+        "Daniel S. Freed",
+        "Michael J. Hopkins"
+      ],
+      "locator": "Theorem 9.87/Table 9.88 p.93; Corollaries 9.89, 9.93, 9.95",
+      "method": "Interacting invertible-field-theory TP column and bordism coefficient groups",
+      "scope": "Specified tangential structure; do not use FF column",
+      "title": "Reflection Positivity and Invertible Topological Phases",
+      "url": "https://arxiv.org/abs/1604.06527v6",
+      "version": "arXiv:1604.06527v6, 2022-12-18",
+      "year": 2021
+    },
+    "smith_v2": {
+      "authors": [
+        "Arun Debray",
+        "Sanath K. Devalapurkar",
+        "Cameron Krulewski",
+        "Yu Leon Liu",
+        "Natalia Pacheco-Tallaj",
+        "Ryan Thorngren"
+      ],
+      "locator": "Theorem 5.1; Corollary 5.8; Example 7.13 p.36",
+      "method": "Smith exact sequence / Spin-c to Pin-c equivalence",
+      "title": "The Smith Fiber Sequence and Invertible Field Theories",
+      "url": "https://arxiv.org/abs/2405.04649v2",
+      "version": "arXiv:2405.04649v2, 2026-04-19",
+      "year": 2026
+    },
+    "thorngren_else_v6": {
+      "authors": [
+        "Ryan Thorngren",
+        "Dominic V. Else"
+      ],
+      "locator": "Section III.C",
+      "method": "Crystalline equivalence on contractible space, under crystalline topological liquid assumptions",
+      "title": "Gauging spatial symmetries and the classification of topological crystalline phases",
+      "url": "https://arxiv.org/abs/1612.00846v6",
+      "version": "arXiv:1612.00846v6, 2017-09-12",
+      "year": 2018
+    },
+    "v015_cyclic": {
+      "authors": "Project electronic AHSS supplement",
+      "locator": "Section 5; Appendix K",
+      "method": "Independent physical eta pairing, bordism order bound, and augmentation presentation; project proof, not an external printed classification table",
+      "scope": "All N physical target; complete candidate comparison only at thirteen listed N",
+      "title": "Electronic Insulator AHSS v0.15",
+      "version": "v0.15 reviewed 2026-10-16",
+      "year": 2026
+    }
+  }
+}

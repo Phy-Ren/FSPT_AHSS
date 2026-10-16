@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap-o2",
+    "-q",
+    "-b",
+    "--quitonbreak",
+    "-m",
+    "256m",
+    "-K",
+    "16g",
+    "/home/user/xyren/AllFSPT_insulator/runs/abelian4p1_batch2_20261016/campaign/output/internal_abelian_2x10_4p1/driver.g"
+  ],
+  "elapsedSeconds": 453.356585,
+  "exitCode": 0,
+  "finishedUTC": "2026-10-16T08:28:03.922036+00:00",
+  "formulaRuntime": {
+    "fallbackPolicy": "exact Python integer DAG or original U1 formula according to request eligibility",
+    "libraryPath": "/home/user/xyren/AllFSPT_insulator/runs/abelian4p1_batch2_20261016/campaign/source/insulator/_compiled/u1_dag_vm.so",
+    "libraryPresent": false,
+    "librarySHA256": null,
+    "requestedMode": "auto"
+  },
+  "host": "n07.local",
+  "id": "internal_abelian_2x10_4p1",
+  "inputSHA256": "f883bad1669968aff5e2b8e9709d31c14186ff28499922f55f4760f7ca709239",
+  "sourceSHA256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+  "startedUTC": "2026-10-16T08:20:30.564188+00:00",
+  "status": "complete",
+  "timeoutSeconds": 1800
+}

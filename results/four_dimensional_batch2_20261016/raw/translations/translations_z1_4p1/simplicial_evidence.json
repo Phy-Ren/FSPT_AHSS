@@ -1,0 +1,460 @@
+{
+  "apiChecks": {
+    "completedRootSimplexChecks": 0,
+    "integerObstructionCells": 0,
+    "phaseGaugeCells": 0,
+    "phaseProductCells": 0,
+    "sourceCells": 0,
+    "unitGaugeEvaluations": 1
+  },
+  "checks": {
+    "allCanonicalPeriodsPrimitive": true,
+    "allCoboundariesSquareZero": true,
+    "allProductGaugeCorrectionsIntegral": true,
+    "allSheetBasisProductsEvaluated": true,
+    "allSmithTransformsUnimodular": true,
+    "entireClosedIntegerKernelDecomposed": true,
+    "freeStackingCoordinatesProved": true
+  },
+  "completedIntegerProducts": [],
+  "resolution": {
+    "cellCounts": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degrees": [
+      {
+        "canonicalCocycles": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "cells": [
+          []
+        ],
+        "coboundary": {
+          "cols": 1,
+          "entries": [
+            [
+              0
+            ]
+          ],
+          "rows": 1
+        },
+        "coboundaryRank": 0,
+        "cohomologyBasisSubsets": [
+          []
+        ],
+        "cohomologyFreeRank": 1,
+        "degree": 0,
+        "gaugeBasis": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelBasis": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "kernelCoordinates": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "kernelCoordinatesInverse": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "periods": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "smithDiagonal": {
+          "cols": 1,
+          "entries": [
+            [
+              0
+            ]
+          ],
+          "rows": 1
+        },
+        "smithLeft": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "smithRight": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        }
+      },
+      {
+        "canonicalCocycles": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "cells": [
+          [
+            1
+          ]
+        ],
+        "coboundary": {
+          "cols": 1,
+          "entries": [],
+          "rows": 0
+        },
+        "coboundaryRank": 0,
+        "cohomologyBasisSubsets": [
+          [
+            0
+          ]
+        ],
+        "cohomologyFreeRank": 1,
+        "degree": 1,
+        "gaugeBasis": {
+          "cols": 0,
+          "entries": [
+            []
+          ],
+          "rows": 1
+        },
+        "kernelBasis": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "kernelCoordinates": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "kernelCoordinatesInverse": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "periods": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        },
+        "smithDiagonal": {
+          "cols": 1,
+          "entries": [],
+          "rows": 0
+        },
+        "smithLeft": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithRight": {
+          "cols": 1,
+          "entries": [
+            [
+              1
+            ]
+          ],
+          "rows": 1
+        }
+      },
+      {
+        "canonicalCocycles": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "cells": [],
+        "coboundary": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "coboundaryRank": 0,
+        "cohomologyBasisSubsets": [],
+        "cohomologyFreeRank": 0,
+        "degree": 2,
+        "gaugeBasis": {
+          "cols": 0,
+          "entries": [
+            []
+          ],
+          "rows": 1
+        },
+        "kernelBasis": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelCoordinates": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelCoordinatesInverse": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "periods": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithDiagonal": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithLeft": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithRight": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        }
+      },
+      {
+        "canonicalCocycles": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "cells": [],
+        "coboundary": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "coboundaryRank": 0,
+        "cohomologyBasisSubsets": [],
+        "cohomologyFreeRank": 0,
+        "degree": 3,
+        "gaugeBasis": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelBasis": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelCoordinates": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelCoordinatesInverse": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "periods": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithDiagonal": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithLeft": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithRight": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        }
+      },
+      {
+        "canonicalCocycles": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "cells": [],
+        "coboundary": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "coboundaryRank": 0,
+        "cohomologyBasisSubsets": [],
+        "cohomologyFreeRank": 0,
+        "degree": 4,
+        "gaugeBasis": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelBasis": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelCoordinates": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelCoordinatesInverse": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "periods": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithDiagonal": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithLeft": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithRight": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        }
+      },
+      {
+        "canonicalCocycles": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "cells": [],
+        "coboundary": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "coboundaryRank": 0,
+        "cohomologyBasisSubsets": [],
+        "cohomologyFreeRank": 0,
+        "degree": 5,
+        "gaugeBasis": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelBasis": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelCoordinates": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "kernelCoordinatesInverse": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "periods": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithDiagonal": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithLeft": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        },
+        "smithRight": {
+          "cols": 0,
+          "entries": [],
+          "rows": 0
+        }
+      }
+    ],
+    "isClassifyingSpace": "Product of r circles, hence K(Z^r,1); not a truncated resolution.",
+    "model": "(Delta[1]/boundary Delta[1])^r",
+    "rank": 1
+  },
+  "schema": "u1-translation-4p1-simplicial-certificate-v1",
+  "terminalTargets": {
+    "C5": 0,
+    "C6": 0,
+    "reason": "The finite simplicial classifying space has dimension r<=4. Every formula target above that dimension is the zero cochain module, not an omitted operation."
+  }
+}

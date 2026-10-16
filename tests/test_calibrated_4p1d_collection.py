@@ -38,6 +38,26 @@ def digest(path):
 
 
 class CalibratedFourDimensionalCollectionTests(unittest.TestCase):
+    def test_inherited_acceptance_is_hash_pinned_and_does_not_duplicate_records(self):
+        parent = FIXTURE / 'accepted.json'
+        child = self.base / 'inherited.json'
+        data = {'schemaVersion': 1, 'accepted': True, 'filesSHA256': {}, 'records': [], 'sources': {},
+                'extends': [{'path': str(parent.relative_to(ROOT)), 'sha256': digest(parent)}]}
+        write(child, data)
+        merged = load_collection(self._catalogue(), child)
+        expected = read(parent)['records']
+        self.assertEqual([r['input']['id'] for r in merged['records']], [r['input']['id'] for r in expected])
+        self.assertEqual(merged['records'][0]['provenance'], expected[0]['provenance'])
+        data['extends'][0]['sha256'] = '0' * 64
+        write(child, data)
+        with self.assertRaisesRegex(ValueError, 'Inherited accepted collection changed'):
+            load_collection(self._catalogue(), child)
+        data['extends'][0]['sha256'] = digest(parent)
+        data['records'] = [expected[0]]
+        write(child, data)
+        with self.assertRaisesRegex(ValueError, 'silently replace'):
+            load_collection(self._catalogue(), child)
+
     def setUp(self):
         # Collector provenance deliberately uses paths relative to ROOT.
         temporary = tempfile.TemporaryDirectory(prefix=".test-calibrated-4p1-", dir=ROOT)

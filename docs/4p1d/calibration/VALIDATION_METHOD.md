@@ -150,3 +150,31 @@ These finite calculations do not settle the unrestricted terminal
 `R5/K4` comparison or justify a finite-group argument for infinite space
 groups. Those scope boundaries remain explicit even when every stated
 case passes its independent physical calibration.
+
+## Finite products and infinite translations
+
+The subsequent [abelian-product engine](ABELIAN_PRODUCTS.md) retains all mixed
+charge and phase classes. Its independent certificate replay checks the
+complete obstruction-kernel index, every native phase primitive and finite
+sheet gauge, every non-phase root-pair commutator, and the full relation matrix
+reconstructed from the witnesses. Incoming images must agree at the vacuum
+and each generating state **modulo the pre-incoming lattice**. Checking them
+only after their own quotient would conceal an incorrect state-dependent
+action. Saturated integer elimination reconstructs all four final filtration
+lattices from the presentation.
+
+The [translation engine](TRANSLATIONS.md) instead uses a complete finite
+simplicial `K(Z^r,1)`. Independent replay derives its faces and coboundaries,
+checks unimodular cycle/gauge decompositions and primitive periods, and
+recomputes all ordered CI cup products. Each layer and the ordered generator
+dictionary are bound to these cohomology bases. This retains the nonzero
+charge stacking correction before the integral straightening coordinate.
+The input translation rank is checked against the certificate's actual space.
+
+These arithmetic checks use no physical target group. The separate
+[reference replay](batch2_reference_replay.json) derives the
+[second-batch bordism targets](BATCH2_TARGETS.md) using only the specified
+primary theorems and elementary integer arithmetic. Agreement tests the
+resulting group types and additive extensions. It is not the stronger
+labelled eta-character comparison available for the cyclic inputs, nor a
+universal physical identification of the four-data model.

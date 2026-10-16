@@ -1,0 +1,137 @@
+{
+  "certificateVerification": {
+    "degreesVerified": 6,
+    "freeRank": 0,
+    "orderedProductsVerified": 0,
+    "referenceGroupUsed": false,
+    "status": "PASS"
+  },
+  "classification": {
+    "actualGroupOrder": 1,
+    "coordinateStacking": {
+      "additiveCharge": "Q=q-(n wedge n)/2",
+      "freeKernelProof": "(e,n,q) -> (e,n,Q) is an explicit integral bijection and homomorphism. The unimodular kernel certificates prove every state and every incoming gauge are represented.",
+      "integerPower": "(k e,k n,k q+binomial(k,2) n wedge n), for every k in Z",
+      "integrality": "The computed polarizer is symmetric with zero diagonal, so the half-square is integral for every integer sheet.",
+      "inverse": "(-e,-n,-q+n wedge n)",
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "rawProduct": "(e+f,n+m,q+t+n wedge m)",
+      "sheetPolarizer": []
+    },
+    "finalFiltration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": []
+      }
+    },
+    "freeRank": 0,
+    "generators": [],
+    "incomingCohomology": {
+      "CIGaugeFreeRank": 1,
+      "E8GaugeFreeRank": 1,
+      "action": "Trivial on periods: B=rho=0 and C^5(T^r,R/Z)=0; complete nonclosed gauge images retained.",
+      "chargeGaugeFreeRank": 0,
+      "phaseGaugeFreeRank": 0
+    },
+    "modelClassificationComplete": true,
+    "physicalClassificationCertified": false,
+    "presentation": [],
+    "presentationGeneratorCount": 0,
+    "scope": "Complete four-data model on the finite K(Z^r,1), with s=rho=omega=0 and intrinsic pair zero; physical stable-splitting comparison is separate.",
+    "torsion": []
+  },
+  "evidence": {
+    "path": "simplicial_evidence.json",
+    "sha256": "76822eead638204581331640b624276035f3c79671598ded22bc0afca2b31808"
+  },
+  "input": {
+    "atomicFillingRetained": true,
+    "dimension": 4,
+    "family": "translations",
+    "id": "translations_z1_4p1",
+    "intrinsicRowIncluded": false,
+    "omega": "0",
+    "orderedFields": [
+      "e_2",
+      "n_2",
+      "n_4",
+      "nu_5"
+    ],
+    "physicalSpin": "not_applicable",
+    "referenceTarget": "translations_z1",
+    "rho": 0,
+    "s": 0,
+    "spatialInterpretation": "partial translations in four spatial dimensions",
+    "spinScope": "Pure translations have no rotation-spin lift distinction.",
+    "translationRank": 1
+  },
+  "physicalComparison": {
+    "status": "independent_target_not_loaded_by_solver",
+    "universalPhysicalSpectrumCertified": false
+  },
+  "run": {
+    "completedUTC": "2026-10-16T08:15:19.880498+00:00",
+    "elapsedSeconds": 0.010447,
+    "exitCode": 0,
+    "host": "n09.local",
+    "id": "translations_z1_4p1",
+    "inputSHA256": "f62952c40a1e805b9fb3e40568bb504daa1caaf1015167da6f8f07d782d0dbf5",
+    "pythonVersion": "3.13.12",
+    "sourceSHA256": "572651d215dddac0bd409badd51e7794cacecc85017dbef15cc13b5670e9dfef",
+    "startedUTC": "2026-10-16T08:15:19.869539+00:00",
+    "status": "complete"
+  },
+  "schema": "u1-translation-4p1-complete-v1",
+  "uniformResponse": {
+    "cochainIntrinsicImplemented": false,
+    "fullGroup": {
+      "freeRank": 2,
+      "torsion": []
+    },
+    "intrinsicBasis": [
+      "I",
+      "J"
+    ],
+    "intrinsicFreeRank": 2,
+    "section": "Pull back each symmetry-independent intrinsic root along B(U1f x Z^r) -> BU1f; forgetting translations is a retraction.",
+    "splitting": "The physical natural section splits off Z I plus Z J from the zero-uniform kernel.",
+    "zeroLowerLift": {
+      "background": "s=rho=omega=0",
+      "check": "B=0 and all opened-sheet, charge, and terminal terms vanish by direct zero-input substitution.",
+      "evidenceType": "Physical natural section and direct substitution, not an intrinsic formula-runtime execution.",
+      "intrinsicInputs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "lowerFields": {
+        "e_2": 0,
+        "n_2": 0,
+        "n_4": 0,
+        "nu_5": 0
+      }
+    }
+  }
+}

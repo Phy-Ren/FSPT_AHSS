@@ -1,0 +1,154 @@
+{
+  "cases": [
+    {
+      "allClassificationFieldsEqual": true,
+      "allSavedNativeFieldsEqual": true,
+      "candidateOverBaselineWallRatio": 0.9960775957281098,
+      "canonicalClassificationSHA256": "fe709503aba12e64953a94f5446c362ac83b455fdaa0d66aa535ee676d851b11",
+      "chargeCompletionCPUms": {
+        "baseline": 182,
+        "candidate": 209
+      },
+      "classificationFieldCount": 34,
+      "formulaWorkerCalls": 842,
+      "gapStageEntryCPUms": {
+        "baseline": {
+          "charge_lifts": 4088,
+          "cohomology": 4018,
+          "commutators": 4832,
+          "incoming_charge": 4468,
+          "root_relations": 4270
+        },
+        "candidate": {
+          "charge_lifts": 4071,
+          "cohomology": 4003,
+          "commutators": 5183,
+          "incoming_charge": 4671,
+          "root_relations": 4280
+        }
+      },
+      "id": "internal_abelian_2x2_4p1",
+      "previousImmutableBarClassificationEqual": true,
+      "rawFileSHA256": {
+        "baseline": {
+          "input.json": "0e0556b814c2db0d44125f1acf3b0207bf53d8334ec1a2017e173dfe7a25a840",
+          "native.json": "d79eacc8c4de5fc98ea195245bf219d547a9eb0d4c7732d3c2ca1079ca18b1bb",
+          "result.json": "dd00d4d564021f967b03fb134528a09c86ded91469ab7fc2dd116252046fc85c",
+          "run.json": "70b9b034a7174a79f99e5a54929b92bb6d202607e1bc5a405d0fc8fa0c44eff3",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "76ae8eb119be8627e5d8e18c92b95ea9b1ea7c61df35196b5ee1ecf68b9d71c4"
+        },
+        "candidate": {
+          "input.json": "0e0556b814c2db0d44125f1acf3b0207bf53d8334ec1a2017e173dfe7a25a840",
+          "native.json": "ad613a0333850efce138416aa4c2dae64f42d2270190bfccddccf80c03d4c4a9",
+          "result.json": "b033e5c619ba4e8534176820f5f9e52969eafba359123558dd674017c3181b5b",
+          "run.json": "a00fd99ef2af6e1c0b695e417ec46648950b2cc86fdba1a81169161029ae005c",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "a15a3460cea2f01fe0779814315f5b9fc79665fb9a7952db3f24d8d7f0621214"
+        }
+      },
+      "wallSeconds": {
+        "baseline": 12.431406,
+        "candidate": 12.382645
+      }
+    },
+    {
+      "allClassificationFieldsEqual": true,
+      "allSavedNativeFieldsEqual": true,
+      "candidateOverBaselineWallRatio": 1.008546545152921,
+      "canonicalClassificationSHA256": "7b5a3a7037e08a973f47e40ada1cc0919c9f4d90ce613709adbd626ce8ab70fe",
+      "chargeCompletionCPUms": {
+        "baseline": 4509,
+        "candidate": 3631
+      },
+      "classificationFieldCount": 34,
+      "formulaWorkerCalls": 2314,
+      "gapStageEntryCPUms": {
+        "baseline": {
+          "charge_lifts": 5503,
+          "cohomology": 3690,
+          "commutators": 44904,
+          "incoming_charge": 16979,
+          "root_relations": 10012
+        },
+        "candidate": {
+          "charge_lifts": 5498,
+          "cohomology": 3684,
+          "commutators": 43838,
+          "incoming_charge": 16092,
+          "root_relations": 9129
+        }
+      },
+      "id": "internal_abelian_2x2x2_4p1",
+      "previousImmutableBarClassificationEqual": true,
+      "rawFileSHA256": {
+        "baseline": {
+          "input.json": "fe142a5cbb7485bd68dc07ea8ba7822abc45138ff545ed36a2b98f217e75300a",
+          "native.json": "8d894640fda8013d0b614ea75c5cef41eb69010f40909f7bdf33b4d2a4ef43d7",
+          "result.json": "e20d0f011ce7851d0488d44995df8fe06aa2e0b130cf230a2909a08dba12b733",
+          "run.json": "612d784dda1001100d85063f58798195fd5171ed6404e0955ae6e668199701c3",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "b8fc73eaf598e247849217d957d9e3032dd667763b1e9328f7413bb1580a2705"
+        },
+        "candidate": {
+          "input.json": "fe142a5cbb7485bd68dc07ea8ba7822abc45138ff545ed36a2b98f217e75300a",
+          "native.json": "90d07d406a68df043c06213e505f519f9a701b88a6e04dbbed78ddaf71a165e2",
+          "result.json": "f482cce54760540317931b6980eddc3209d5ce0527001432392ab7a249a862e4",
+          "run.json": "04e2a81d319c8979c5f6bb9bb697943bec771a34ffd0f1422c49aa2b6688fb12",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout.log": "9928a6174d920d683c044f63cda9709b6e9f4a83ae2df65da857916e7a3a1d21"
+        }
+      },
+      "wallSeconds": {
+        "baseline": 117.269257,
+        "candidate": 118.271504
+      }
+    }
+  ],
+  "changedSnapshotFiles": [
+    "gap/abelian4p1.g",
+    "gap/charge_source.g",
+    "scripts/classify_abelian_4p1.py"
+  ],
+  "classificationParityExcludedKeys": [
+    "closedChargeCompletionMode"
+  ],
+  "classificationParityIncludesRuntimeAndFormulaWorkerCalls": true,
+  "recommendation": "Do not adopt this isolated shortcut alone: complete-run wall time showed no speedup. Preserve prototype for future cache/completion integration.",
+  "sourceControl": {
+    "cases": [
+      {
+        "factors": [
+          2,
+          2
+        ],
+        "fullIntegerChargePreserved": true,
+        "integerChargeVectors": 10,
+        "pointwiseReferenceComparisons": 640
+      },
+      {
+        "factors": [
+          2,
+          2,
+          2
+        ],
+        "fullIntegerChargePreserved": true,
+        "integerChargeVectors": 22,
+        "pointwiseReferenceComparisons": 1408
+      }
+    ],
+    "scope": "Closed degree-four sources only; exact unsigned trivial background; negative, even and mixed native charge vectors",
+    "status": "PASS"
+  },
+  "sourceManifests": {
+    "baseline": {
+      "sha256": "a5df31562ea0e8e1f19dba8cf304256d5ca658c0ec8bbba6ff6e0ccef7550fc4",
+      "verifiedFiles": 73
+    },
+    "candidate": {
+      "sha256": "3414eeaeb8162f29266dadd9582c54cc7f02e7cc66ef430b60300dc6a484a53c",
+      "verifiedFiles": 73
+    }
+  },
+  "status": "PASS"
+}

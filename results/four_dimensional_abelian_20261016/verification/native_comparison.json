@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "excludedClassificationFields": [
+    "chargePrimaryMode",
+    "chargePrimaryCompared"
+  ],
+  "comparison": "Every other classification field, including complete integer matrices, all native witnesses, and all root-pair commutators, is literally identical.",
+  "scope": "Finite unsigned commuting C2^2 and C2^3; all full cochain completions and gauges retained.",
+  "performanceConclusion": "These single complete runs show no overall speed improvement; bar remains the default.",
+  "cases": [
+    {
+      "factors": [
+        2,
+        2
+      ],
+      "modes": {
+        "bar": {
+          "resultPath": "native_benchmark/bar/internal_abelian_2x2_4p1/result.json",
+          "resultSHA256": "21f2b392a0012c5e8216ae2ea18b06f4482df1694df8c8ba692ebabe54785775",
+          "sourceSHA256": "16386d261c48ec93fd66577141f4a0220645c88a3e336da92d2c294b917465d3",
+          "elapsedSeconds": 12.832595,
+          "host": "n08.local"
+        },
+        "native": {
+          "resultPath": "native_only/internal_abelian_2x2_4p1/result.json",
+          "resultSHA256": "68722f7d4ac095dc2fb166c9e500812f6ff32ccf398d8d0469ec2929653ef13d",
+          "sourceSHA256": "16386d261c48ec93fd66577141f4a0220645c88a3e336da92d2c294b917465d3",
+          "elapsedSeconds": 13.183533,
+          "host": "n08.local"
+        },
+        "compare": {
+          "resultPath": "native_compare/internal_abelian_2x2_4p1/result.json",
+          "resultSHA256": "cf8d9797b99742533050e2453ad24cea9577e062fe0766f1858788ed9f1b1ef4",
+          "sourceSHA256": "16386d261c48ec93fd66577141f4a0220645c88a3e336da92d2c294b917465d3",
+          "elapsedSeconds": 13.284526,
+          "host": "n08.local"
+        }
+      },
+      "allMathematicalFieldsAndWitnessesIdentical": true,
+      "torsion": [
+        2,
+        2,
+        4,
+        8,
+        8
+      ],
+      "chargeObstructionMapNonzero": false,
+      "preIncomingOrder": 2048,
+      "actualGroupOrder": 1024,
+      "barOverNativeTime": 0.973380580152528
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2
+      ],
+      "modes": {
+        "bar": {
+          "resultPath": "native_benchmark/bar/internal_abelian_2x2x2_4p1/result.json",
+          "resultSHA256": "ad23e30590b6f92721286efa7342d073e2f710b32fb0ba387d8d47ce87942996",
+          "sourceSHA256": "16386d261c48ec93fd66577141f4a0220645c88a3e336da92d2c294b917465d3",
+          "elapsedSeconds": 118.35727,
+          "host": "n08.local"
+        },
+        "native": {
+          "resultPath": "native_only/internal_abelian_2x2x2_4p1/result.json",
+          "resultSHA256": "0682ea0806ac2bcfe543ad97c5f40926270a952a6a23147a1de816f73830e65a",
+          "sourceSHA256": "16386d261c48ec93fd66577141f4a0220645c88a3e336da92d2c294b917465d3",
+          "elapsedSeconds": 119.670564,
+          "host": "n08.local"
+        },
+        "compare": {
+          "resultPath": "native_compare/internal_abelian_2x2x2_4p1/result.json",
+          "resultSHA256": "25a3eb4ac3a4e2f5f0cb068e2dd7a193e03a2201f9fa29d4e4f1456dc47c432d",
+          "sourceSHA256": "16386d261c48ec93fd66577141f4a0220645c88a3e336da92d2c294b917465d3",
+          "elapsedSeconds": 121.026209,
+          "host": "n08.local"
+        }
+      },
+      "allMathematicalFieldsAndWitnessesIdentical": true,
+      "torsion": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        8,
+        8,
+        8
+      ],
+      "chargeObstructionMapNonzero": true,
+      "preIncomingOrder": 33554432,
+      "actualGroupOrder": 4194304,
+      "barOverNativeTime": 0.989025755740568
+    }
+  ]
+}

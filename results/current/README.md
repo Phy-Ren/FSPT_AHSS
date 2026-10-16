@@ -1,16 +1,16 @@
 # Computed U(1)^f insulator examples
 
-The current catalogue contains **596 distinct backgrounds** and **664 response-sector entries in 16 tables**. Each calculation fixes the symmetry group, physical spin, extension data, and response sector. Dimensions and physical spins have separate result files.
+The current catalogue contains **635 configured symmetry inputs** and **742 response-sector entries in 20 tables**. Each calculation fixes the group presentation, physical spin where applicable, extension data, and response sector. Dimensions and physical spins have separate result files. Isomorphic product presentations used as independent controls count as separate configured inputs, not as distinct group isomorphism types.
 
-| Collection | Backgrounds | Response-sector entries |
+| Collection | Configured inputs | Response-sector entries |
 | --- | ---: | ---: |
 | [2+1D planar point groups](2p1d/README.md) | 20 | 40 |
 | [2+1D wallpaper groups](2p1d/README.md) | 34 | 68 |
 | [3+1D crystallographic point groups](3p1d/README.md) | 64 | 64 |
 | [3+1D space groups](3p1d/README.md) | 460 | 460 |
-| [4+1D internal groups](4p1d/README.md) | 18 | 32 |
+| [4+1D internal groups and translations](4p1d/README.md) | 57 | 110 |
 
-The 2+1D collections keep `n0=0` and all allowed `n0` in separate files, both with `e0=0`. The 3+1D collections include E8 in the completed four-data calculation. The 4+1D cyclic examples retain the coupled E8 and shared-phase root relations.
+The 2+1D collections keep `n0=0` and all allowed `n0` in separate files, both with `e0=0`. The 3+1D collections include E8 in the completed four-data calculation. The 4+1D collections retain complete E8, CI, charge, phase, incoming, and stacking relations; intrinsic-zero and all-intrinsic responses have separate files.
 
 ## Reading the tables
 

@@ -1,0 +1,47 @@
+{
+  "cache": {
+    "capacity": 4096,
+    "enabled": true,
+    "entries": 933,
+    "evictions": 0,
+    "hits": {
+      "ci_gauge": 1718,
+      "ci_product": 6059,
+      "neutral_gauge": 1791,
+      "neutral_product": 6077,
+      "source": 24638
+    },
+    "misses": {
+      "ci_gauge": 330,
+      "ci_product": 85,
+      "neutral_gauge": 257,
+      "neutral_product": 67,
+      "source": 194
+    }
+  },
+  "command": [
+    "/home/user/xyren/AllFSPT_insulator/runtime4p1-v015/bin/python3",
+    "/home/user/xyren/AllFSPT_insulator/runs/cyclic4p1_batch2_20261016/source/scripts/classify_cyclic_4p1.py",
+    "--worker-order",
+    "17",
+    "--worker-directory",
+    "/home/user/xyren/AllFSPT_insulator/runs/cyclic4p1_batch2_20261016/cyclic/internal_cyclic_17_4p1",
+    "--worker-source",
+    "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+    "--cache",
+    "on",
+    "--evidence-format",
+    "json-gzip"
+  ],
+  "elapsedSeconds": 10.350553,
+  "exitCode": 0,
+  "finishedUTC": "2026-10-16T08:06:43.344947+00:00",
+  "host": "n08.local",
+  "id": "internal_cyclic_17_4p1",
+  "inputSHA256": "881e0c10b19cc30e10ab5dd16510e540fd8b4f478535e427585dbea2d374e327",
+  "python": "3.13.12 | packaged by conda-forge | (main, Feb  5 2026, 05:53:46) [GCC 14.3.0]",
+  "sourceSHA256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+  "startedUTC": "2026-10-16T08:06:32.817347+00:00",
+  "status": "complete",
+  "timeoutSeconds": 1800
+}

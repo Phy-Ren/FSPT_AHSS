@@ -17,9 +17,8 @@ results.
 
 ## Computed examples
 
-The current catalogue contains **596 distinct backgrounds**: 578 crystalline
-backgrounds and 18 internal backgrounds. Their **664 response-sector
-entries** are organized into 16 tables:
+The [current catalogue](results/current/README.md) reports the accepted input,
+response-sector, and table counts directly from its pinned calculation lineage:
 
 - [2+1D](results/current/2p1d/README.md): all 10 planar point groups and 17
   wallpaper groups, for spinless and spin-1/2 electrons. Each background has
@@ -27,19 +26,22 @@ entries** are organized into 16 tables:
 - [3+1D](results/current/3p1d/README.md): all 32 crystallographic point groups
   and all **230 space groups**, for spinless and spin-1/2 electrons, with
   E8 included in the four-data calculation.
-- [4+1D](results/current/4p1d/README.md): 14 commuting cyclic backgrounds
-  through `C18`, two unitary charge-conjugation backgrounds, and the
-  zero-intrinsic AI/AII sectors. Cyclic intrinsic-zero and full-response
-  classifications have separate tables, with explicit bordism sources.
+- [4+1D](results/current/4p1d/README.md): commuting cyclic groups, finite
+  abelian products, translations of ranks one through four, unitary charge
+  conjugation, and the zero-intrinsic AI/AII sectors. Intrinsic-zero and
+  full-response classifications have separate tables, with explicit
+  interacting bordism sources.
 
 Each row records the four final filtration groups
 `(e_p,n_p,n_{p+2},nu_{p+3})`, with `p=d−2`, and the final stacking group.
 The layers include incoming identifications; their direct product need not
 equal the stacking group. Wallpaper and space-group calculations use the
 full infinite affine groups, including translations and nonsymmorphic
-operations. A background means a group with its physical spin and extension
-data fixed. The two 2+1D response sectors produce separate entries for the
-same background.
+operations. A configured input fixes the group presentation, physical spin
+where applicable, and extension data. Isomorphic product presentations,
+such as coprime cyclic products, are retained as independent calculation
+controls and are not counted as new group isomorphism types. Different
+response sectors produce separate entries for the same configured input.
 
 Interacting literature classifications have separate, versioned columns.
 **✓** marks the same reported group; **×** marks a different reported group.
@@ -69,10 +71,14 @@ identifications, arbitrary root relations, and an integer presentation.
 The 3+1D E8 extension computes signed integer `H1(G,Z_s)` for finite point
 groups or full affine space groups and combines its section with that
 presentation. Affine CI roots retain the full integer obstruction kernels;
-free translations are not replaced by finite holonomy. The 4+1D cyclic and
-signed C2 engines compute all four layers together. For commuting cyclic
-symmetry, the two intrinsic roots supply an independently justified uniform
-section. A general opened intrinsic solver and unrestricted global 4+1D
+free translations are not replaced by finite holonomy. The 4+1D cyclic,
+abelian-product, signed C2, and translation engines compute all four layers
+together. [Abelian products](docs/4p1d/calibration/ABELIAN_PRODUCTS.md)
+retain mixed cohomology and incoming relations; the
+[translation calculation](docs/4p1d/calibration/TRANSLATIONS.md) retains the
+full integer gauge quotient and its nonzero CI stacking correction. For the
+specified commuting direct products, the two intrinsic roots supply an
+independently justified uniform section. A general opened intrinsic solver and unrestricted global 4+1D
 classification remain outside the current catalogue.
 Missing operations are not assigned zero.
 
@@ -80,6 +86,8 @@ Missing operations are not assigned zero.
 
 Python 3.8 or newer and GAP with HAP, Polycyclic, Cryst, and CrystCat are
 required. SymPy supports exact presentation checks and the E8 extension.
+The new 4+1D campaigns are tested with Python 3.13.12 and SymPy 1.14.0;
+the translation certificate uses the Smith decomposition API in SymPy 1.14.
 
 ```bash
 python3 -m unittest discover -s tests
@@ -89,6 +97,8 @@ python3 scripts/classify_3p1d.py --family point3 --jobs 4 --output runs/point3
 python3 scripts/classify_3p1d.py --family spacegroup --pair-spins --largest-first --jobs 4 --memory 32g --timeout 14400 --output runs/spacegroup
 python3 scripts/classify_cyclic_4p1.py --jobs 4 --output runs/cyclic4p1
 python3 scripts/signed_charge_conjugation_4p1.py --output runs/signed4p1
+python3 scripts/classify_abelian_4p1.py --factors 2x2 --factors 2x4 --jobs 2 --memory 16g --output runs/abelian4p1
+python3 scripts/classify_translation_4p1.py --output runs/translations4p1
 ```
 
 For 3+1D, the unified command runs CI classification, the exact neutral E8

@@ -1,0 +1,1593 @@
+{
+  "title": "4+1D internal abelian products: all intrinsic responses",
+  "scope": "Each row is one exact internal electronic symmetry; crystalline spin labels do not apply. E8, CI, charge and the common phase are computed with complete products and gauges. Rows retain the specified product presentation. Coprime cyclic products can be isomorphic to cyclic inputs in the separate table and serve as independent calculation controls. The two symmetry-independent intrinsic roots I,J supply an explicit canonical Z^2 section for this direct-product symmetry. The general opened intrinsic solver is not inferred. Reference answers are applied after calculation. Physical derivations and their exact scope are recorded in the cited sources and accepted evidence.",
+  "family": "internal_abelian",
+  "spatial_dimension": 4,
+  "spacetime_dimension": 5,
+  "physical_spin": "not_applicable_internal",
+  "n0_scope": "intrinsic_all",
+  "e0_scope": "not_applicable",
+  "e8_scope": "four_data_included",
+  "columns": [
+    {
+      "key": "e",
+      "label": "e2 (E8)"
+    },
+    {
+      "key": "n",
+      "label": "n2 (CI)"
+    },
+    {
+      "key": "charge",
+      "label": "n4 (charge)"
+    },
+    {
+      "key": "phase",
+      "label": "nu5 (phase)"
+    },
+    {
+      "key": "intrinsic",
+      "label": "(n0I,n0J)"
+    },
+    {
+      "key": "stacking",
+      "label": "Final stacking"
+    },
+    {
+      "key": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+      "label": "Spin-c bordism derivation"
+    },
+    {
+      "key": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37",
+      "label": "Ossa/Spin-c derivation"
+    }
+  ],
+  "sources": {
+    "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+      "authors": "Independent bordism derivation",
+      "columnLabel": "Spin-c bordism derivation",
+      "location": "Explicit derivation from the linked primary theorems",
+      "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting; [Section 2.2 pp.32-33; Proposition 3.4.3 pp.69-70; Proposition 4.2.3 p.83](https://doi.org/10.1090/memo/0785); [Corollary 2.5; Theorem 2.12](https://arxiv.org/abs/1008.0166v1); [Theorem 3.6 p.492; Table 3 p.538](https://doi.org/10.2140/agt.2026.26.485); [Theorem 12.3(ii)](https://doi.org/10.1016/0040-9383(64)90003-5); [Theorem 9.87/Table 9.88 p.93; Corollaries 9.89, 9.93, 9.95](https://arxiv.org/abs/1604.06527v6)",
+      "title": "Specified Spin-c bordism decomposition",
+      "url": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+      "version": "2026 review of pinned primary theorems"
+    },
+    "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+      "authors": "Independent bordism derivation",
+      "columnLabel": "Ossa/Spin-c derivation",
+      "location": "Explicit derivation from the linked primary theorems",
+      "method": "Derived from actual Ossa spectrum splitting, iterated smash products, and the low 2-local Spin-c splitting; [Section 2.2 pp.32-33; Proposition 3.4.3 pp.69-70; Proposition 4.2.3 p.83](https://doi.org/10.1090/memo/0785); [Corollary 2.5; Theorem 2.12](https://arxiv.org/abs/1008.0166v1); [Theorem 3.6 p.492; Table 3 p.538](https://doi.org/10.2140/agt.2026.26.485)",
+      "title": "Specified Spin-c bordism decomposition",
+      "url": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+      "version": "2026 review of pinned primary theorems"
+    }
+  },
+  "rows": [
+    {
+      "id": "internal_abelian_2x2_4p1",
+      "name": "C2 x C2",
+      "hermann_mauguin": null,
+      "display_name": "C2 x C2",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8,
+              8
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              2,
+              2,
+              4,
+              8,
+              8
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "0e0556b814c2db0d44125f1acf3b0207bf53d8334ec1a2017e173dfe7a25a840",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_2x2_4p1/result.json",
+        "physical_reference_target": "internal_abelian_2x2",
+        "record_sha256": "655ecfaf5a5a6862eb9edee1a543d3163ceb4ff614ae0ccd0f80e3e1fdc77b90",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:10:12.534826+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_2x3_4p1",
+      "name": "C2 x C3",
+      "hermann_mauguin": null,
+      "display_name": "C2 x C3",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              6,
+              72
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              3,
+              6,
+              72
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "f23025bc88f08a560e4b8a368a08fbc6ae0f0b05fa46d1a9c7f8e19bc2c1b80b",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_2x3_4p1/result.json",
+        "physical_reference_target": "internal_abelian_2x3",
+        "record_sha256": "0d52d09899247978f073454b5d735944bb1f083effdab3631c26b6aa1a1b6b6b",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:10:12.535073+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_2x2x2_4p1",
+      "name": "(C2)^3",
+      "hermann_mauguin": null,
+      "display_name": "(C2)^3",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4,
+              8,
+              8,
+              8
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              4,
+              8,
+              8,
+              8
+            ]
+          },
+          "method": "Derived from actual Ossa spectrum splitting, iterated smash products, and the low 2-local Spin-c splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "fe142a5cbb7485bd68dc07ea8ba7822abc45138ff545ed36a2b98f217e75300a",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_2x2x2_4p1/result.json",
+        "physical_reference_target": "internal_abelian_2x2x2",
+        "record_sha256": "fc47ff019fe3d86a00b203489ec1d16648d86637ae71c5c3bb41384e5990fa05",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:17:47.231681+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_2x4_4p1",
+      "name": "C2 x C4",
+      "hermann_mauguin": null,
+      "display_name": "C2 x C4",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8,
+              16
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8,
+              16
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "e13c19561b748baa297e3cf80bad5353b98c16e4fa865d6d0884e6661e3e47c7",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_2x4_4p1/result.json",
+        "physical_reference_target": "internal_abelian_2x4",
+        "record_sha256": "05e88858cf4e365ad2de39c2af95dd2c6ae21e54691e9f971c93a53b206c727f",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:10:12.535427+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_3x3_4p1",
+      "name": "C3 x C3",
+      "hermann_mauguin": null,
+      "display_name": "C3 x C3",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              9,
+              9
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              9,
+              9
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "6c5125f4a01f1cf90505f71763e20453f4ef253df35d8d81cb5e914254acfb91",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_3x3_4p1/result.json",
+        "physical_reference_target": "internal_abelian_3x3",
+        "record_sha256": "75af009e96e3eac81d7191b449d7b695cd963ec76d6ed8d5edc6dd1bf1202744",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:10:24.223569+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_2x6_4p1",
+      "name": "C2 x C6",
+      "hermann_mauguin": null,
+      "display_name": "C2 x C6",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              12,
+              24,
+              72
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              2,
+              2,
+              12,
+              24,
+              72
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "bc207a703a053f6fcdc78adc677081565e72cdada82538eab9899a5516c4c8ad",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_2x6_4p1/result.json",
+        "physical_reference_target": "internal_abelian_2x6",
+        "record_sha256": "8e90aea0e56a52eb38e77ece6753c73e09603cfe896aae3c52240b18f78291bb",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:10:26.130229+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_3x4_4p1",
+      "name": "C3 x C4",
+      "hermann_mauguin": null,
+      "display_name": "C3 x C4",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              12
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              12
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              12
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              12
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              6,
+              12,
+              144
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              2,
+              6,
+              12,
+              144
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "f9b2e408dbc87bb8d1609b330c4320c655503c346a5557c71511803643e24503",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_3x4_4p1/result.json",
+        "physical_reference_target": "internal_abelian_3x4",
+        "record_sha256": "b5da5834612b4d47c5f34f1ffdcd388dc5bbf1f76942a372ebb04e8ba7c17d7a",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:19:49.783765+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_2x8_4p1",
+      "name": "C2 x C8",
+      "hermann_mauguin": null,
+      "display_name": "C2 x C8",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              8
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              4,
+              4,
+              8,
+              8,
+              32
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              2,
+              2,
+              4,
+              4,
+              4,
+              8,
+              8,
+              32
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "668672b147314a94d300abc52523ec6a380a5c6bf17c03fbaa76a4ce3d23ca94",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_2x8_4p1/result.json",
+        "physical_reference_target": "internal_abelian_2x8",
+        "record_sha256": "a126a966696b25bb0e576210deca579913c2e9314e8bc4314a565c912d5b434f",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:10:51.463453+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_4x4_4p1",
+      "name": "C4 x C4",
+      "hermann_mauguin": null,
+      "display_name": "C4 x C4",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              4,
+              4,
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              4,
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              4,
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              4,
+              4,
+              4
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8,
+              16,
+              16
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              4,
+              4,
+              8,
+              16,
+              16
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "be5174e8bcc6934b1293a917050aa632a19316f298c0432299fa690caec82380",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_4x4_4p1/result.json",
+        "physical_reference_target": "internal_abelian_4x4",
+        "record_sha256": "efc478711e1f2d5f18cbbafcfb28c14ccb0625a249aa283ecb7f5fb582ddac5b",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:12:17.297167+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_3x6_4p1",
+      "name": "C3 x C6",
+      "hermann_mauguin": null,
+      "display_name": "C3 x C6",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              6
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              18,
+              72
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              18,
+              72
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "2e5cb6728bf698b47c3586576817ff35939c82f292bd0827e1bb1015c9974f13",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_3x6_4p1/result.json",
+        "physical_reference_target": "internal_abelian_3x6",
+        "record_sha256": "fb53054baee95aca24f8df381c816e3c5150b4a8cd65bb9a2bde5d45a9b35348",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:11:11.364473+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_2x10_4p1",
+      "name": "C2 x C10",
+      "hermann_mauguin": null,
+      "display_name": "C2 x C10",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              10
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              10
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              10
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              10
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              10,
+              20,
+              40,
+              40
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              2,
+              10,
+              20,
+              40,
+              40
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "f883bad1669968aff5e2b8e9709d31c14186ff28499922f55f4760f7ca709239",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_2x10_4p1/result.json",
+        "physical_reference_target": "internal_abelian_2x10",
+        "record_sha256": "b1cdb48cb514b549c5f45a84ce15848cae57500bc4f56602dc6dd651cb55cbae",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:20:30.564188+00:00"
+      }
+    },
+    {
+      "id": "internal_abelian_3x9_4p1",
+      "name": "C3 x C9",
+      "hermann_mauguin": null,
+      "display_name": "C3 x C9",
+      "family": "internal_abelian",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_all",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              9
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              9
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              9
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              9
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              9,
+              9,
+              9,
+              27
+            ],
+            "freeRank": 2
+          }
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+          "availability": "available",
+          "source": "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809",
+          "group": {
+            "freeRank": 2,
+            "torsion": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              9,
+              9,
+              9,
+              27
+            ]
+          },
+          "method": "Derived interacting Spin-c bordism via reduced degree-five bridge, cyclic presentations, exact degree-four Tor kernel, and stable product splitting",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "2fb01472c4e4b71479f0287efe55134568a56883d3299fed844c542e85c7acb3",
+        "path": "results/four_dimensional_abelian_20261016/raw/abelian/internal_abelian_3x9_4p1/result.json",
+        "physical_reference_target": "internal_abelian_3x9",
+        "record_sha256": "df258d240ac5e9709308b5c3e9dc50a4088732812f343bfe812cb7c47ada521c",
+        "source_sha256": "b3fe9afa7fa79ee55ae2a5510cd3aea4b288d3ad94fe19599ac11e542654eefa",
+        "started_utc": "2026-10-16T08:14:32.370711+00:00"
+      }
+    }
+  ],
+  "comparison_counts": {
+    "e": {
+      "not_compared": 12
+    },
+    "n": {
+      "not_compared": 12
+    },
+    "charge": {
+      "not_compared": 12
+    },
+    "phase": {
+      "not_compared": 12
+    },
+    "intrinsic": {
+      "not_compared": 12
+    },
+    "stacking": {
+      "not_compared": 12
+    },
+    "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+      "match": 11,
+      "not_compared": 1
+    },
+    "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+      "not_compared": 11,
+      "match": 1
+    }
+  },
+  "availability_counts": {
+    "e": {
+      "available": 12
+    },
+    "n": {
+      "available": 12
+    },
+    "charge": {
+      "available": 12
+    },
+    "phase": {
+      "available": 12
+    },
+    "intrinsic": {
+      "available": 12
+    },
+    "stacking": {
+      "available": 12
+    },
+    "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026__abs_1964__freed_hopkins_v6_1bd0f936b809": {
+      "available": 11,
+      "not_applicable": 1
+    },
+    "derived_bruner_greenlees_2003__bmss_v1__buchanan_mckean_2026_a4373b883f37": {
+      "not_applicable": 11,
+      "available": 1
+    }
+  }
+}

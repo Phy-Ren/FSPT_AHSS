@@ -25,6 +25,11 @@ the exact local API and persistent worker. The
 [4+1D cyclic examples](formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md) retain
 completed roots, coupled powers, full bar-cycle gauge reductions, and an
 independent physical eta-kernel comparison.
+The [abelian-product calculation](4p1d/calibration/ABELIAN_PRODUCTS.md)
+retains mixed charge and phase classes, incoming images, and complete root
+relations. The [translation calculation](4p1d/calibration/TRANSLATIONS.md)
+gives an exact finite classifying-space computation and integral stacking
+coordinates for infinite groups of ranks one through four.
 
 The [3+1D factorization proof](formulas/THREE_DIMENSIONAL.md#why-the-global-calculation-can-be-factored)
 explains why the supplied model permits an exact neutral E8 calculation
@@ -98,21 +103,29 @@ family-specific identification, not a universal terminal-map theorem.
 
 ## 4+1D examples and intrinsic response scope
 
-The [accepted evidence](../results/four_dimensional_20261016/accepted.json)
-contains fourteen commuting internal cyclic groups,
-`N=1,2,3,4,5,6,7,8,9,10,12,15,16,18`, and four signed `C2` backgrounds.
-Internal groups do not carry crystalline spinless/spin-half labels.
+The [current 4+1D index](../results/current/4p1d/README.md) records the
+accepted inputs and pinned batch lineage. It includes commuting cyclic
+and abelian groups, pure translations, and signed `C2` backgrounds.
+Internal groups have no crystalline spin labels; pure translations have
+no rotations and therefore no separate spin lifts. Coprime product
+presentations provide independent controls of isomorphic cyclic inputs.
 
 - [Cyclic groups: zero intrinsic response](../results/current/4p1d/internal_cyclic/intrinsic_zero.md).
 - [Cyclic groups: all intrinsic responses](../results/current/4p1d/internal_cyclic/intrinsic_all.md).
+- [Abelian products: zero intrinsic response](../results/current/4p1d/internal_abelian/intrinsic_zero.md).
+- [Abelian products: all intrinsic responses](../results/current/4p1d/internal_abelian/intrinsic_all.md).
+- [Translations: zero intrinsic response](../results/current/4p1d/translations/intrinsic_zero.md).
+- [Translations: all intrinsic responses](../results/current/4p1d/translations/intrinsic_all.md).
 - [Unitary charge conjugation](../results/current/4p1d/charge_conjugation.md), where symmetry forces the intrinsic row to zero.
 - [AI/AII: zero intrinsic response](../results/current/4p1d/time_reversal_intrinsic_zero.md).
 
 The extra 4+1D response pair `(n0I,n0J)` is separate from the four-data
-tuple and from the scalar 2+1D IQH coefficient. For `U(1)^f × C_N`,
-trivial `C_N` action gives an explicit natural section for both uniform
-roots. Thus the all-intrinsic cyclic group is its computed and physically
-calibrated intrinsic-zero group times `Z²`. The
+tuple and from the scalar 2+1D IQH coefficient. For the specified
+commuting direct products `U(1)^f × G`, trivial `G` action gives an
+explicit physical natural section for both uniform roots. The
+all-intrinsic tables therefore add `Z²` to the corresponding
+intrinsic-zero presentations, with each family's physical comparison
+scope retained. The
 [section proof](formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md#uniform-intrinsic-pair-and-its-natural-section)
 also records the zero-lower-data substitution and its scope. A general
 opened-intrinsic cochain solver is not inferred from this section.
@@ -122,7 +135,11 @@ products and all incoming gauges. Its reference comparison uses the
 specified [interacting bordism targets](4p1d/calibration/BORDISM_TARGETS.md).
 AI/AII are restricted to intrinsic zero; their full uniform-response
 lattices are not outputs of that solver. A general global 4+1D classifier
-is not supplied by these finite families.
+is not supplied by these specialized families. The
+[additional bordism benchmarks](4p1d/calibration/BATCH2_TARGETS.md)
+derive independent finite-product and translation targets from interacting
+coefficient groups and published bordism results. An additive group
+comparison is distinguished from a labelled physical root dictionary.
 
 The [even charge-root identity](formulas/CHARGE_ROOT_RELATIONS.md) is a
 derived cohomology-class simplification. It is recorded separately from the

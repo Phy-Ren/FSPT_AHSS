@@ -99,6 +99,7 @@ python3 scripts/build_current_tables.py --four-dimensional results/NEW_ACCEPTED/
 python3 scripts/build_current_tables.py --check
 ```
 
-The next independently sourced targets are commuting `C2 x C2` and rank-four
-translations `Z^4`. They remain prospective targets in the reference ledger;
-they are not included among these 18 computed backgrounds.
+Commuting `C2 x C2` and rank-four translations `Z^4` are computed in the
+subsequent accepted batches linked from the
+[current 4+1D catalogue](../current/4p1d/README.md#accepted-calculation-lineage).
+They are separate from the 18 backgrounds retained in this immutable batch.

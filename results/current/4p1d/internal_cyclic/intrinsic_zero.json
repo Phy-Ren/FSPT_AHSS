@@ -1247,6 +1247,120 @@
       }
     },
     {
+      "id": "internal_cyclic_11_4p1",
+      "name": "C11",
+      "hermann_mauguin": null,
+      "display_name": "C11",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              11
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              11
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              11
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              11
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              11,
+              11,
+              11,
+              11
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              11,
+              11,
+              11,
+              11
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "4f17773deb95e171ea6dd5ca421f1ff96a25df5948442c84f1ebaca9940cb039",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_11_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_11",
+        "record_sha256": "7b8f25f1f7cbc3f83599c6f97e2ac8c824917e1076e4a64b6d76c5afaf89ba72",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:38.349371+00:00"
+      }
+    },
+    {
       "id": "internal_cyclic_12_4p1",
       "name": "C12",
       "hermann_mauguin": null,
@@ -1358,6 +1472,234 @@
         "record_sha256": "54ccbbf04089509f553acc05333a177348c6e14e32c3a62bb8f31d32d6ff1ebd",
         "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
         "started_utc": "2026-10-16T07:38:07.016555+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_13_4p1",
+      "name": "C13",
+      "hermann_mauguin": null,
+      "display_name": "C13",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              13
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              13
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              13
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              13
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              13,
+              13,
+              13,
+              13
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              13,
+              13,
+              13,
+              13
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "ca298f0d19cd69d523a837298f8d2ddd0ae42496db728a81bae0fbcbfd57efdd",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_13_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_13",
+        "record_sha256": "9793108e7c97838657d395227edd884fc8a9390aec2777fe0ce50e80f5d52851",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:33.646390+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_14_4p1",
+      "name": "C14",
+      "hermann_mauguin": null,
+      "display_name": "C14",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              14
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              14
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              14
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              14
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              7,
+              7,
+              14,
+              56
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              7,
+              7,
+              14,
+              56
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "4f34f1db1a5ded051c26d620843ae64db40e9cb543e545ac471fd9dd8d7e9695",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_14_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_14",
+        "record_sha256": "1c1604db1852cff0f479c02e241a9f5c280c5f82893721a3a89e3d36225872ea",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:33.288816+00:00"
       }
     },
     {
@@ -1602,6 +1944,120 @@
       }
     },
     {
+      "id": "internal_cyclic_17_4p1",
+      "name": "C17",
+      "hermann_mauguin": null,
+      "display_name": "C17",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              17
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              17
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              17
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              17
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              17,
+              17,
+              17,
+              17
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              17,
+              17,
+              17,
+              17
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "881e0c10b19cc30e10ab5dd16510e540fd8b4f478535e427585dbea2d374e327",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_17_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_17",
+        "record_sha256": "a4172f1c203218de5bebd8f6f4b41bc6b6871cd31e466b6f837755af43842e52",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:32.817347+00:00"
+      }
+    },
+    {
       "id": "internal_cyclic_18_4p1",
       "name": "C18",
       "hermann_mauguin": null,
@@ -1714,68 +2170,2260 @@
         "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
         "started_utc": "2026-10-16T07:38:07.016015+00:00"
       }
+    },
+    {
+      "id": "internal_cyclic_19_4p1",
+      "name": "C19",
+      "hermann_mauguin": null,
+      "display_name": "C19",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              19
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              19
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              19
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              19
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              19,
+              19,
+              19,
+              19
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              19,
+              19,
+              19,
+              19
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "6d0af7b01b0da9c6700d828434b605a7ab1ec472ba5c91d80cd00a610a740217",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_19_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_19",
+        "record_sha256": "974dfc1ca76d3330d05f404fc0a0a37256358654b9d5295b548d44040de49a83",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:31.990119+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_20_4p1",
+      "name": "C20",
+      "hermann_mauguin": null,
+      "display_name": "C20",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              20
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              20
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              20
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              20
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              10,
+              10,
+              20,
+              80
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              10,
+              10,
+              20,
+              80
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "68926ed61017b6c12e151c18a485c77af865d1066de33fc0358b185d484f8a89",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_20_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_20",
+        "record_sha256": "c578e6b03d677ca17b3cb3bed41ac6243d41a578cc69d2dc8c3e697d4cbace98",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:29.163410+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_21_4p1",
+      "name": "C21",
+      "hermann_mauguin": null,
+      "display_name": "C21",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              21
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              21
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              21
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              21
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              7,
+              21,
+              21,
+              63
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              7,
+              21,
+              21,
+              63
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "380990213f46059ce2586941b3ac6a4a3a2ec45ed36911bee4d47f67f2498e1b",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_21_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_21",
+        "record_sha256": "97ff5323d494a93ecf810d2496c37fd852ba9f29320f2440f8d8a8f00c6ce557",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:22.460009+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_22_4p1",
+      "name": "C22",
+      "hermann_mauguin": null,
+      "display_name": "C22",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              22
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              22
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              22
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              22
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              11,
+              11,
+              22,
+              88
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              11,
+              11,
+              22,
+              88
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "541c4e5a9055e472cd3fe6aaedd465d942262f0aca4c358463ecc6b5d8e8c01d",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_22_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_22",
+        "record_sha256": "29a50c7e5750c54cbdfd4e1caef2a475055813cd41991597c157eb990a223995",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:14.444064+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_23_4p1",
+      "name": "C23",
+      "hermann_mauguin": null,
+      "display_name": "C23",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              23
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              23
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              23
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              23
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              23,
+              23,
+              23,
+              23
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              23,
+              23,
+              23,
+              23
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "5ad96d131c4d99d2519ca09ea85d7970d47b41a2867ead62e8441edf14d58f9f",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_23_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_23",
+        "record_sha256": "374e751b7a53e8e3a5e4f119dbb74dbacf3cbaae89a022891736e8a892c2a214",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:13.801932+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_24_4p1",
+      "name": "C24",
+      "hermann_mauguin": null,
+      "display_name": "C24",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              24
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              24
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              24
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              24
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              4,
+              12,
+              24,
+              288
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              4,
+              12,
+              24,
+              288
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "64d43909cb0f97fcd3526a1092486e6aa7a52030c0ba09034f31ac04dde8fd20",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_24_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_24",
+        "record_sha256": "6aedd73519183ef09b2ec635d3d7531d4694ae4e8b458d340f45dfa61b4e4e9d",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:11.244074+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_25_4p1",
+      "name": "C25",
+      "hermann_mauguin": null,
+      "display_name": "C25",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              25
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              25
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              25
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              25
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              25,
+              25,
+              25,
+              25
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              25,
+              25,
+              25,
+              25
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "78e83263847911c440573abb9bf36f9eb3e9acc54dab189636850e347f38a013",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_25_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_25",
+        "record_sha256": "89af7924e549fb1ce34ea3ff643cafb80dca1fd0524ec66412a7239bb71c62be",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:06:06.816062+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_26_4p1",
+      "name": "C26",
+      "hermann_mauguin": null,
+      "display_name": "C26",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              26
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              26
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              26
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              26
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              13,
+              13,
+              26,
+              104
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              13,
+              13,
+              26,
+              104
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "43a5079b77cc849163873f05327a318afa98f627cc0e8774b4a3567b9b80c037",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_26_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_26",
+        "record_sha256": "9668c0136ac99ccf7481968b103c4739a1e15317c438f3a60fb01c913c846c3c",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:56.708884+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_27_4p1",
+      "name": "C27",
+      "hermann_mauguin": null,
+      "display_name": "C27",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              27
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              27
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              27
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              27
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              9,
+              27,
+              27,
+              81
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              9,
+              27,
+              27,
+              81
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "03a062ae59620567e961427f70de8b17d80421f6a08c6d98488d02ed8f07749a",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_27_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_27",
+        "record_sha256": "8bb366804ef23f48ac6237d9112e6a522836acab62a61cc718f10f0416586453",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:44.541850+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_28_4p1",
+      "name": "C28",
+      "hermann_mauguin": null,
+      "display_name": "C28",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              28
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              28
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              28
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              28
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              14,
+              14,
+              28,
+              112
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              14,
+              14,
+              28,
+              112
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "e9a76714fc123a8ba9e80347aeeb65ba3cd606f547c2d1e7300be7594a4bd5dc",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_28_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_28",
+        "record_sha256": "afd241a6af5c78bd3e08affb0d1c4d3e12077b4d0a010abbec17f1a568678709",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:44.541588+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_29_4p1",
+      "name": "C29",
+      "hermann_mauguin": null,
+      "display_name": "C29",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              29
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              29
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              29
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              29
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              29,
+              29,
+              29,
+              29
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              29,
+              29,
+              29,
+              29
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "be45435cf6ca6ba8431b07c277eca9370b8af901e60a7427ca6811abaaec5871",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_29_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_29",
+        "record_sha256": "eace22791c257e607b517e9e8a7d650da166721a60fe60ba5c71bf91ee61f058",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:43.880486+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_30_4p1",
+      "name": "C30",
+      "hermann_mauguin": null,
+      "display_name": "C30",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              30
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              30
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              30
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              30
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              5,
+              15,
+              30,
+              360
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              5,
+              15,
+              30,
+              360
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "072c3ab146474f121fe96b13dd7d7ce9d40666f7072f08fa18f443b9bdab0b70",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_30_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_30",
+        "record_sha256": "cada170adde9fd6ad34a328ec7333650b6fc1f1b455edceaf945ed4fdd6b13e0",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:07.810217+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_31_4p1",
+      "name": "C31",
+      "hermann_mauguin": null,
+      "display_name": "C31",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              31
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              31
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              31
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              31
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              31,
+              31,
+              31,
+              31
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              31,
+              31,
+              31,
+              31
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "a6a65f4efd53f9431dc8c781de9cae08525fa178454d5cf3471adc4c2eabfea8",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_31_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_31",
+        "record_sha256": "d3c6ad90d6d3bbeeb260de704d31eedc2345108574bfb928ee06f1cd25c738a2",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:07.810054+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_32_4p1",
+      "name": "C32",
+      "hermann_mauguin": null,
+      "display_name": "C32",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              32
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              32
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              32
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              32
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              16,
+              16,
+              32,
+              128
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "available",
+          "source": "bahri_gilkey_1987",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              16,
+              16,
+              32,
+              128
+            ]
+          },
+          "method": "Published cyclic 2-group formula specialized to degree five",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              16,
+              16,
+              32,
+              128
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "cbc6baf161594c0e42a8137800aba41cc13893839e8803b07c4028c8e615e458",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_32_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_32",
+        "record_sha256": "7c729d6ecd53a93e0b5b6a6b6a9637138b0c9b85bd5b8d0b1c7e7ff3fb907f63",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:07.809753+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_36_4p1",
+      "name": "C36",
+      "hermann_mauguin": null,
+      "display_name": "C36",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              36
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              36
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              36
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              36
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              6,
+              18,
+              36,
+              432
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              6,
+              18,
+              36,
+              432
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "6e079926067e9c9e55cac4732a1ed95324d6d0d5eedd0be1ccfb6c633e72644f",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_36_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_36",
+        "record_sha256": "ab898f9a6f1ec43a00a2ea115ad2d77bcfc5d2e718f580bbbfe1cf1040256ea1",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:07.809985+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_40_4p1",
+      "name": "C40",
+      "hermann_mauguin": null,
+      "display_name": "C40",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              40
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              40
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              40
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              40
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              20,
+              20,
+              40,
+              160
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              20,
+              20,
+              40,
+              160
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "1038bec83e344d3baf9e01ff30dba28252b7ad21cbb98e19e0473ffae9f1e461",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_40_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_40",
+        "record_sha256": "88caf22de8e52c26ee643684ab4571c14cf94bf68b0e33d805dfb25a175cb1f7",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:07.809665+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_48_4p1",
+      "name": "C48",
+      "hermann_mauguin": null,
+      "display_name": "C48",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              48
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              48
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              48
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              48
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              8,
+              24,
+              48,
+              576
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              8,
+              24,
+              48,
+              576
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "e1c2ac5c93066b2429ddb494cd101a304bbd0f017006d985890d7cd44c1f8aab",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_48_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_48",
+        "record_sha256": "9e391d9841b5fc1231f088c979ae2b4e302d0dff5f1e06f8ff9920469371a17b",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:07.809119+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_54_4p1",
+      "name": "C54",
+      "hermann_mauguin": null,
+      "display_name": "C54",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              54
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              54
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              54
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              54
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              9,
+              27,
+              54,
+              648
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              9,
+              27,
+              54,
+              648
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "5a39f21ab8b2c19fc908c13073b51562b7028aff54bb34248b30333a2e9301a3",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_54_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_54",
+        "record_sha256": "7a8d5f21842e7794b71fdd45a05bd48992eec0a4ad43c80aa9b5d62cb516ee52",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:07.809565+00:00"
+      }
+    },
+    {
+      "id": "internal_cyclic_64_4p1",
+      "name": "C64",
+      "hermann_mauguin": null,
+      "display_name": "C64",
+      "family": "internal_cyclic",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              64
+            ],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              64
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              64
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              64
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              32,
+              32,
+              64,
+              256
+            ],
+            "freeRank": 0
+          }
+        },
+        "bahri_gilkey_1987": {
+          "availability": "available",
+          "source": "bahri_gilkey_1987",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              32,
+              32,
+              64,
+              256
+            ]
+          },
+          "method": "Published cyclic 2-group formula specialized to degree five",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        },
+        "derived_smith_v2__freed_hopkins_v6": {
+          "availability": "not_applicable",
+          "comparison_status": "not_compared"
+        },
+        "v015_cyclic": {
+          "availability": "available",
+          "source": "v015_cyclic",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              32,
+              32,
+              64,
+              256
+            ]
+          },
+          "method": "Reviewed all-N physical eta-kernel and bordism-order proof",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "omega": "0",
+        "rho": 0,
+        "s": 0
+      },
+      "provenance": {
+        "input_sha256": "024f4ddd019584c02e62c032885bec3282f78796198f307f5549c585e7d0bd20",
+        "path": "results/four_dimensional_batch2_20261016/raw/cyclic/internal_cyclic_64_4p1/result.json",
+        "physical_reference_target": "internal_cyclic_64",
+        "record_sha256": "a204f48b7310d3d05467499da665b89a848c3707fcdd10bd518ba9da576b3530",
+        "source_sha256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+        "started_utc": "2026-10-16T08:05:07.809226+00:00"
+      }
     }
   ],
   "comparison_counts": {
     "e": {
-      "not_compared": 14
+      "not_compared": 37
     },
     "n": {
-      "not_compared": 14
+      "not_compared": 37
     },
     "charge": {
-      "not_compared": 14
+      "not_compared": 37
     },
     "phase": {
-      "not_compared": 14
+      "not_compared": 37
     },
     "intrinsic": {
-      "not_compared": 14
+      "not_compared": 37
     },
     "stacking": {
-      "not_compared": 14
+      "not_compared": 37
     },
     "bahri_gilkey_1987": {
-      "not_compared": 10,
-      "match": 4
+      "not_compared": 31,
+      "match": 6
     },
     "derived_smith_v2__freed_hopkins_v6": {
-      "not_compared": 13,
+      "not_compared": 36,
       "match": 1
     },
     "v015_cyclic": {
-      "match": 14
+      "match": 37
     }
   },
   "availability_counts": {
     "e": {
-      "available": 14
+      "available": 37
     },
     "n": {
-      "available": 14
+      "available": 37
     },
     "charge": {
-      "available": 14
+      "available": 37
     },
     "phase": {
-      "available": 14
+      "available": 37
     },
     "intrinsic": {
-      "available": 14
+      "available": 37
     },
     "stacking": {
-      "available": 14
+      "available": 37
     },
     "bahri_gilkey_1987": {
-      "not_applicable": 10,
-      "available": 4
+      "not_applicable": 31,
+      "available": 6
     },
     "derived_smith_v2__freed_hopkins_v6": {
-      "not_applicable": 13,
+      "not_applicable": 36,
       "available": 1
     },
     "v015_cyclic": {
-      "available": 14
+      "available": 37
     }
   }
 }

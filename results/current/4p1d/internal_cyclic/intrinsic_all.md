@@ -16,10 +16,33 @@ Each row is one exact internal electronic symmetry; crystalline spin labels do n
 | C8 | Z8 | Z8 | Z8 | Z8 | Z^2 | Z^2 x Z4^2 x Z8 x Z32 | **✓** Z^2 x Z4^2 x Z8 x Z32 | N/A | **✓** Z^2 x Z4^2 x Z8 x Z32 |
 | C9 | Z9 | Z9 | Z9 | Z9 | Z^2 | Z^2 x Z3 x Z9^2 x Z27 | N/A | N/A | **✓** Z^2 x Z3 x Z9^2 x Z27 |
 | C10 | Z10 | Z10 | Z10 | Z10 | Z^2 | Z^2 x Z5^2 x Z10 x Z40 | N/A | N/A | **✓** Z^2 x Z5^2 x Z10 x Z40 |
+| C11 | Z11 | Z11 | Z11 | Z11 | Z^2 | Z^2 x Z11^4 | N/A | N/A | **✓** Z^2 x Z11^4 |
 | C12 | Z12 | Z12 | Z12 | Z12 | Z^2 | Z^2 x Z2 x Z6 x Z12 x Z144 | N/A | N/A | **✓** Z^2 x Z2 x Z6 x Z12 x Z144 |
+| C13 | Z13 | Z13 | Z13 | Z13 | Z^2 | Z^2 x Z13^4 | N/A | N/A | **✓** Z^2 x Z13^4 |
+| C14 | Z14 | Z14 | Z14 | Z14 | Z^2 | Z^2 x Z7^2 x Z14 x Z56 | N/A | N/A | **✓** Z^2 x Z7^2 x Z14 x Z56 |
 | C15 | Z15 | Z15 | Z15 | Z15 | Z^2 | Z^2 x Z5 x Z15^2 x Z45 | N/A | N/A | **✓** Z^2 x Z5 x Z15^2 x Z45 |
 | C16 | Z16 | Z16 | Z16 | Z16 | Z^2 | Z^2 x Z8^2 x Z16 x Z64 | **✓** Z^2 x Z8^2 x Z16 x Z64 | N/A | **✓** Z^2 x Z8^2 x Z16 x Z64 |
+| C17 | Z17 | Z17 | Z17 | Z17 | Z^2 | Z^2 x Z17^4 | N/A | N/A | **✓** Z^2 x Z17^4 |
 | C18 | Z18 | Z18 | Z18 | Z18 | Z^2 | Z^2 x Z3 x Z9 x Z18 x Z216 | N/A | N/A | **✓** Z^2 x Z3 x Z9 x Z18 x Z216 |
+| C19 | Z19 | Z19 | Z19 | Z19 | Z^2 | Z^2 x Z19^4 | N/A | N/A | **✓** Z^2 x Z19^4 |
+| C20 | Z20 | Z20 | Z20 | Z20 | Z^2 | Z^2 x Z10^2 x Z20 x Z80 | N/A | N/A | **✓** Z^2 x Z10^2 x Z20 x Z80 |
+| C21 | Z21 | Z21 | Z21 | Z21 | Z^2 | Z^2 x Z7 x Z21^2 x Z63 | N/A | N/A | **✓** Z^2 x Z7 x Z21^2 x Z63 |
+| C22 | Z22 | Z22 | Z22 | Z22 | Z^2 | Z^2 x Z11^2 x Z22 x Z88 | N/A | N/A | **✓** Z^2 x Z11^2 x Z22 x Z88 |
+| C23 | Z23 | Z23 | Z23 | Z23 | Z^2 | Z^2 x Z23^4 | N/A | N/A | **✓** Z^2 x Z23^4 |
+| C24 | Z24 | Z24 | Z24 | Z24 | Z^2 | Z^2 x Z4 x Z12 x Z24 x Z288 | N/A | N/A | **✓** Z^2 x Z4 x Z12 x Z24 x Z288 |
+| C25 | Z25 | Z25 | Z25 | Z25 | Z^2 | Z^2 x Z25^4 | N/A | N/A | **✓** Z^2 x Z25^4 |
+| C26 | Z26 | Z26 | Z26 | Z26 | Z^2 | Z^2 x Z13^2 x Z26 x Z104 | N/A | N/A | **✓** Z^2 x Z13^2 x Z26 x Z104 |
+| C27 | Z27 | Z27 | Z27 | Z27 | Z^2 | Z^2 x Z9 x Z27^2 x Z81 | N/A | N/A | **✓** Z^2 x Z9 x Z27^2 x Z81 |
+| C28 | Z28 | Z28 | Z28 | Z28 | Z^2 | Z^2 x Z14^2 x Z28 x Z112 | N/A | N/A | **✓** Z^2 x Z14^2 x Z28 x Z112 |
+| C29 | Z29 | Z29 | Z29 | Z29 | Z^2 | Z^2 x Z29^4 | N/A | N/A | **✓** Z^2 x Z29^4 |
+| C30 | Z30 | Z30 | Z30 | Z30 | Z^2 | Z^2 x Z5 x Z15 x Z30 x Z360 | N/A | N/A | **✓** Z^2 x Z5 x Z15 x Z30 x Z360 |
+| C31 | Z31 | Z31 | Z31 | Z31 | Z^2 | Z^2 x Z31^4 | N/A | N/A | **✓** Z^2 x Z31^4 |
+| C32 | Z32 | Z32 | Z32 | Z32 | Z^2 | Z^2 x Z16^2 x Z32 x Z128 | **✓** Z^2 x Z16^2 x Z32 x Z128 | N/A | **✓** Z^2 x Z16^2 x Z32 x Z128 |
+| C36 | Z36 | Z36 | Z36 | Z36 | Z^2 | Z^2 x Z6 x Z18 x Z36 x Z432 | N/A | N/A | **✓** Z^2 x Z6 x Z18 x Z36 x Z432 |
+| C40 | Z40 | Z40 | Z40 | Z40 | Z^2 | Z^2 x Z20^2 x Z40 x Z160 | N/A | N/A | **✓** Z^2 x Z20^2 x Z40 x Z160 |
+| C48 | Z48 | Z48 | Z48 | Z48 | Z^2 | Z^2 x Z8 x Z24 x Z48 x Z576 | N/A | N/A | **✓** Z^2 x Z8 x Z24 x Z48 x Z576 |
+| C54 | Z54 | Z54 | Z54 | Z54 | Z^2 | Z^2 x Z9 x Z27 x Z54 x Z648 | N/A | N/A | **✓** Z^2 x Z9 x Z27 x Z54 x Z648 |
+| C64 | Z64 | Z64 | Z64 | Z64 | Z^2 | Z^2 x Z32^2 x Z64 x Z256 | **✓** Z^2 x Z32^2 x Z64 x Z256 | N/A | **✓** Z^2 x Z32^2 x Z64 x Z256 |
 
 Sources:
 

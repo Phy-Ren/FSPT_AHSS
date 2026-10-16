@@ -1,0 +1,10 @@
+#I  polymake command not found. Please set POLYMAKE_COMMAND by hand
+#I  HAP warning: Set DISPLAY_PATH manually if needed.
+#I  HAP warning: Set BROWSER_PATH manually if needed.
+#I  HAP warning: Set ASY_PATH manually if needed.
+U1_ABELIAN stage=cohomology factors=[ 2, 6 ] cpu_ms=3556
+U1_ABELIAN stage=charge_lifts target=[ 2, 2, 2 ] map=
+[ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 0 ] ] cpu_ms=5152
+U1_ABELIAN stage=root_relations cpu_ms=8926
+U1_ABELIAN stage=incoming_charge count=1 cpu_ms=18188
+U1_ABELIAN stage=commutators count=21 cpu_ms=29373

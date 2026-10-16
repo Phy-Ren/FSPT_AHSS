@@ -1,17 +1,17 @@
 # 4+1D computed examples: internal cyclic symmetry
 
-The accepted calculations cover
-`N=1,2,3,4,5,6,7,8,9,10,12,15,16,18` for a unitary internal `C_N`
-commuting with `U(1)^f`. Their backgrounds are exactly `s=rho=omega=0`.
+The accepted calculations cover the orders listed in the
+[current cyclic tables](../../results/current/4p1d/internal_cyclic/intrinsic_zero.md)
+for a unitary internal `C_N` commuting with `U(1)^f`.
+Their backgrounds are exactly `s=rho=omega=0`.
 The original four-data model is ordered `(e_2,n_2,n_4,nu_5)`. A cyclic
 label here does not specify a crystalline rotation or physical spin lift.
 
 The results are separated into [zero intrinsic response](../../results/current/4p1d/internal_cyclic/intrinsic_zero.md)
 and [all intrinsic responses](../../results/current/4p1d/internal_cyclic/intrinsic_all.md).
-The [accepted evidence](../../results/four_dimensional_20261016/accepted.json)
-and [validation](../../results/four_dimensional_20261016/validation.json)
-retain the complete presentations and physical comparisons. All fourteen
-cases pass; the nontrivial cases agree with the entire independent eta
+The [accepted calculation lineage](../../results/current/4p1d/README.md#accepted-calculation-lineage)
+retains the complete presentations and physical comparisons. The accepted
+nontrivial cases agree with the entire independent eta
 character kernel in the specified physical-root dictionary, not just its
 Smith factors. The all-intrinsic table additionally uses the uniform
 section proved below.
@@ -86,7 +86,8 @@ For each cycle term the solver constructs the canonical cochains,
 computes the complete powers, removes sheets with `v=-a` or `u=-a`,
 and removes a remaining charge multiple `kN x^2` with `w=-k a x`.
 It checks that all lower fields vanish before taking the final pairing.
-The [raw case records](../../results/four_dimensional_20261016/raw/cyclic/)
+The raw case records, identified by the provenance paths in the
+[machine-readable index](../../results/current/index.json),
 retain the intermediate states, actual gauges, phase corrections, source
 checks, and cycle contributions. A zero pairing proves a phase boundary
 here; the cycle method does not claim to construct a full bar primitive.
@@ -228,19 +229,21 @@ omitting `Z1`. Its all-`N` presentation follows from the integral
 representation-ring relation `(1+R)^N=1` and the vanishing of the
 degree-five anomaly of `R^4`; Appendix K gives the unimodular physical
 basis change and Smith calculation. The complete **cochain-to-physical
-relation comparison** here covers the fourteen listed cases, not every `N`.
+relation comparison** covers the orders actually listed in the accepted
+tables; it is not inferred for an uncomputed order.
 
 External sources have distinct scopes. [Freed–Hopkins, Theorem 9.87 and
 Table 9.88, v6](https://arxiv.org/abs/1604.06527v6) supplies the interacting
 bordism framework and coefficient groups. [Bahri–Gilkey (1987),
 Theorem 0.1(b) and its following Remark](https://doi.org/10.2140/pjm.1987.128.1)
-gives a published cyclic **2-power** comparison, used at `N=2,4,8,16`;
+gives a published cyclic **2-power** comparison for the accepted powers of two;
 its Lemmas 2.2–2.3 give eta input. [Hsieh (2018), §2.3,
 v1](https://arxiv.org/abs/1808.02881v1) provides related eta arithmetic
 for a different finite charge symmetry. The all-`N` formula above is the
 reviewed project derivation, not an all-`N` result attributed to either
 paper. Exact source-specific targets are recorded in the
-[bordism reference ledger](../4p1d/calibration/BORDISM_TARGETS.md).
+[bordism reference ledger](../4p1d/calibration/BORDISM_TARGETS.md) and its
+[additional targets](../4p1d/calibration/BATCH2_TARGETS.md).
 
 ## Uniform intrinsic pair and its natural section
 
@@ -277,11 +280,13 @@ Run the [exact cyclic driver](../../scripts/classify_cyclic_4p1.py) on an
 idle compute node with a new output directory:
 
 ```bash
-python3 scripts/classify_cyclic_4p1.py --jobs 4 --timeout 600 --output NEW_DIRECTORY
+python3 scripts/classify_cyclic_4p1.py --order 16 --order 32 --order 64 --jobs 3 --timeout 1800 --evidence-format json-gzip --output NEW_DIRECTORY
 ```
 
-This selects all fourteen orders. Repeated `--order N` options select a
-subset. The runner saves computed cochain results before the independent
+Repeated `--order N` options specify the exact orders for a new campaign;
+the example above selects three powers of two. Omitting them selects the
+runner's bounded default set. Compressed evidence retains every exact
+cochain value and gauge witness. The runner saves computed cochain results before the independent
 physical comparison, so a disagreement preserves the mathematical
 evidence. Acceptance additionally verifies source/input/evidence hashes
 and the integer presentation independently.
@@ -306,3 +311,7 @@ The other accepted signed backgrounds are documented separately:
 and [AI/AII at zero intrinsic response](../../results/current/4p1d/time_reversal_intrinsic_zero.md).
 Their complete gauge calculation and distinct physical comparison scope
 are given in [Signed C2](../4p1d/calibration/SIGNED_C2.md).
+The separate [abelian-product calculation](../4p1d/calibration/ABELIAN_PRODUCTS.md)
+adds mixed cohomology and incoming classes, including independent coprime
+product controls of cyclic groups. The [translation calculation](../4p1d/calibration/TRANSLATIONS.md)
+treats infinite groups using their complete finite classifying spaces.

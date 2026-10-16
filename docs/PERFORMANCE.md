@@ -99,6 +99,24 @@ including physical calibration, used four processes with a 13.23 s case
 execution interval. C18 took 11.41 s. Exact source evaluations for C6 fell
 from 2175 to 156 and CI-product evaluations from 525 to 72.
 
+The [expanded cyclic and translation batch](../results/four_dimensional_batch2_20261016/PERFORMANCE.md)
+adds 23 cyclic inputs through C64: eight workers completed the full batch,
+including physical calibration, in 150.817 seconds. Complete witness JSON is
+retained with deterministic lossless gzip, reducing 189,833,767 bytes to
+3,234,519 bytes. Four infinite translation inputs use complete finite
+classifying spaces and took 6.969 seconds of case time including certificate
+replay; rank four took 6.746 seconds.
+
+The finite-abelian engine also offers `--charge-primary native|compare`.
+It replaces only the degree-four primary class calculation; actual phase
+completions, root powers, gauges and mixed commutators remain unchanged.
+Full C2² and C2³ calculations agree literally in bar, native and compare
+modes after excluding the two mode flags. The native path shows no overall
+speedup in these measurements (13.184 versus 12.833 seconds for C2²;
+119.671 versus 118.357 seconds for C2³), so `bar` remains the default.
+The [abelian campaign evidence](../results/four_dimensional_abelian_20261016/README.md)
+records the comparisons and any bounded run failures separately.
+
 The [adjacent native-vector reuse check](../results/spacegroup_campaign_20261015/native_vector_reuse/README.md)
 reduces native transfer calls from **384 to 352 across ten complete classifications**
 by immediately reusing vectors already returned by the full completed-state check.

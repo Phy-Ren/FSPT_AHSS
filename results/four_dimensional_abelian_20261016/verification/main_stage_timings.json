@@ -1,0 +1,352 @@
+{
+  "measurement": "GAP cumulative CPU timestamp when stage starts; wall time measured by runner. These are not per-stage wall times.",
+  "cases": [
+    {
+      "id": "internal_abelian_2x10_4p1",
+      "status": "complete",
+      "wallSeconds": 453.356585,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.526
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 10.634
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 28.042
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 84.38
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 150.748
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_2x2_4p1",
+      "status": "complete",
+      "wallSeconds": 13.58505,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 4.027
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 4.097
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 4.395
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 4.811
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 5.343
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_2x2x2_4p1",
+      "status": "complete",
+      "wallSeconds": 122.534324,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.746
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 5.617
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 10.213
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 17.423
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 46.591
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_2x3_4p1",
+      "status": "complete",
+      "wallSeconds": 11.681354,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.976
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 4.049
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 4.323
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 5.078
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 5.079
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_2x4_4p1",
+      "status": "complete",
+      "wallSeconds": 38.919503,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.981
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 4.476
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 5.628
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 8.091
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 11.523
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_2x6_4p1",
+      "status": "complete",
+      "wallSeconds": 111.159572,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.556
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 5.152
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 8.926
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 18.188
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 29.373
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_2x8_4p1",
+      "status": "complete",
+      "wallSeconds": 220.899554,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.532
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 6.962
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 14.773
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 30.631
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 56.177
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_3x3_4p1",
+      "status": "complete",
+      "wallSeconds": 47.132255,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.531
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 4.186
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 5.7
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 8.796
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 13.159
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_3x4_4p1",
+      "status": "complete",
+      "wallSeconds": 40.773349,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.497
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 4.201
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 6.062
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 12.414
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 12.414
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_3x6_4p1",
+      "status": "complete",
+      "wallSeconds": 395.858073,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.523
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 9.409
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 23.039
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 65.401
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 118.748
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_3x9_4p1",
+      "status": "complete",
+      "wallSeconds": 1076.733067,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.694
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 24.235
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 77.789
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 226.552
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 400.826
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_4x4_4p1",
+      "status": "complete",
+      "wallSeconds": 171.560859,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 3.523
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 6.561
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 13.714
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 30.235
+        },
+        {
+          "stage": "commutators",
+          "gapCPUSecondsAtEntry": 51.252
+        }
+      ]
+    },
+    {
+      "id": "internal_abelian_4x8_4p1",
+      "status": "timeout",
+      "wallSeconds": 1800.016814,
+      "stages": [
+        {
+          "stage": "cohomology",
+          "gapCPUSecondsAtEntry": 13.442
+        },
+        {
+          "stage": "charge_lifts",
+          "gapCPUSecondsAtEntry": 108.504
+        },
+        {
+          "stage": "root_relations",
+          "gapCPUSecondsAtEntry": 324.271
+        },
+        {
+          "stage": "incoming_charge",
+          "gapCPUSecondsAtEntry": 788.555
+        }
+      ]
+    }
+  ]
+}

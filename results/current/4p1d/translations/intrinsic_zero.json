@@ -1,0 +1,464 @@
+{
+  "title": "4+1D translations: zero intrinsic response",
+  "scope": "Each row specifies the free translation rank in four spatial dimensions. Only rank four is a full space-group translation lattice; lower ranks impose fewer translations. There are no rotations and hence no distinct spin lifts. The complete finite simplicial torus retains E8, CI, charge, gauges and the actual stacking correction. The intrinsic response pair (n0I,n0J) is fixed to zero. Reference answers are applied after calculation. Physical derivations and their exact scope are recorded in the cited sources and accepted evidence.",
+  "family": "translations",
+  "spatial_dimension": 4,
+  "spacetime_dimension": 5,
+  "physical_spin": "not_applicable_translations",
+  "n0_scope": "intrinsic_zero",
+  "e0_scope": "not_applicable",
+  "e8_scope": "four_data_included",
+  "columns": [
+    {
+      "key": "e",
+      "label": "e2 (E8)"
+    },
+    {
+      "key": "n",
+      "label": "n2 (CI)"
+    },
+    {
+      "key": "charge",
+      "label": "n4 (charge)"
+    },
+    {
+      "key": "phase",
+      "label": "nu5 (phase)"
+    },
+    {
+      "key": "intrinsic",
+      "label": "(n0I,n0J)"
+    },
+    {
+      "key": "stacking",
+      "label": "Final stacking"
+    },
+    {
+      "key": "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6",
+      "label": "Torus/Freed–Hopkins derivation"
+    }
+  ],
+  "sources": {
+    "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6": {
+      "authors": "Independent bordism derivation",
+      "columnLabel": "Torus/Freed–Hopkins derivation",
+      "location": "Explicit derivation from the linked primary theorems",
+      "method": "Derived exact torus stable splitting with interacting coefficient phases and atomic filling retained; [Theorem 9.87/Table 9.88 p.93; Corollaries 9.89, 9.93, 9.95](https://arxiv.org/abs/1604.06527v6); [Section III.C](https://arxiv.org/abs/1612.00846v6)",
+      "title": "Specified Spin-c bordism decomposition",
+      "url": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BATCH2_TARGETS.md",
+      "version": "2026 review of pinned primary theorems"
+    }
+  },
+  "rows": [
+    {
+      "id": "translations_z1_4p1",
+      "name": "Z^1",
+      "hermann_mauguin": null,
+      "display_name": "Z^1",
+      "family": "translations",
+      "physical_spin": "not_applicable_translations",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6": {
+          "availability": "available",
+          "source": "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 0,
+            "torsion": []
+          },
+          "method": "Derived exact torus stable splitting with interacting coefficient phases and atomic filling retained",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "G": "Z^1",
+        "omega": "0",
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action with the stated independent translation rank",
+        "translationRank": 1
+      },
+      "provenance": {
+        "input_sha256": "f62952c40a1e805b9fb3e40568bb504daa1caaf1015167da6f8f07d782d0dbf5",
+        "path": "results/four_dimensional_batch2_20261016/raw/translations/translations_z1_4p1/result.json",
+        "physical_reference_target": "translations_z1",
+        "record_sha256": "30ce5eafcdd52c2699a08725c030e9fc028e8a907fa5aea24d4804522d3a7832",
+        "source_sha256": "572651d215dddac0bd409badd51e7794cacecc85017dbef15cc13b5670e9dfef",
+        "started_utc": "2026-10-16T08:15:19.869539+00:00"
+      }
+    },
+    {
+      "id": "translations_z2_4p1",
+      "name": "Z^2",
+      "hermann_mauguin": null,
+      "display_name": "Z^2",
+      "family": "translations",
+      "physical_spin": "not_applicable_translations",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          }
+        },
+        "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6": {
+          "availability": "available",
+          "source": "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 2,
+            "torsion": []
+          },
+          "method": "Derived exact torus stable splitting with interacting coefficient phases and atomic filling retained",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "G": "Z^2",
+        "omega": "0",
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action with the stated independent translation rank",
+        "translationRank": 2
+      },
+      "provenance": {
+        "input_sha256": "faf73018fc8da23bfad3a0056a4c737bd42a35342dab0759142ca79c6feebd9a",
+        "path": "results/four_dimensional_batch2_20261016/raw/translations/translations_z2_4p1/result.json",
+        "physical_reference_target": "translations_z2",
+        "record_sha256": "c663e8643ad3af43ab289405f0439eb6bd662394792af8dd4cc198a771d5ac5d",
+        "source_sha256": "572651d215dddac0bd409badd51e7794cacecc85017dbef15cc13b5670e9dfef",
+        "started_utc": "2026-10-16T08:15:19.894522+00:00"
+      }
+    },
+    {
+      "id": "translations_z3_4p1",
+      "name": "Z^3",
+      "hermann_mauguin": null,
+      "display_name": "Z^3",
+      "family": "translations",
+      "physical_spin": "not_applicable_translations",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 3
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 3
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 6
+          }
+        },
+        "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6": {
+          "availability": "available",
+          "source": "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 6,
+            "torsion": []
+          },
+          "method": "Derived exact torus stable splitting with interacting coefficient phases and atomic filling retained",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "G": "Z^3",
+        "omega": "0",
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action with the stated independent translation rank",
+        "translationRank": 3
+      },
+      "provenance": {
+        "input_sha256": "afe497cfb75e0fae05540500fc73767617afe350e5d14c89cdbf036282d20080",
+        "path": "results/four_dimensional_batch2_20261016/raw/translations/translations_z3_4p1/result.json",
+        "physical_reference_target": "translations_z3",
+        "record_sha256": "29430c423fe64bf9300ef47079b3bce1457ade12b798011b5b3fed2821875add",
+        "source_sha256": "572651d215dddac0bd409badd51e7794cacecc85017dbef15cc13b5670e9dfef",
+        "started_utc": "2026-10-16T08:15:19.949650+00:00"
+      }
+    },
+    {
+      "id": "translations_z4_4p1",
+      "name": "Z^4",
+      "hermann_mauguin": null,
+      "display_name": "Z^4",
+      "family": "translations",
+      "physical_spin": "not_applicable_translations",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 1
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 6
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 6
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 13
+          }
+        },
+        "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6": {
+          "availability": "available",
+          "source": "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6",
+          "fullUniformSectionApplicable": true,
+          "group": {
+            "freeRank": 13,
+            "torsion": []
+          },
+          "method": "Derived exact torus stable splitting with interacting coefficient phases and atomic filling retained",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "G": "Z^4",
+        "omega": "0",
+        "rho": "0",
+        "s": "0",
+        "spatial_representation": "Identity linear action with the stated independent translation rank",
+        "translationRank": 4
+      },
+      "provenance": {
+        "input_sha256": "bf1e42a4acf9f611d8e722206cf8a4571732e768ed5aad730e8901904bcee29b",
+        "path": "results/four_dimensional_batch2_20261016/raw/translations/translations_z4_4p1/result.json",
+        "physical_reference_target": "translations_z4",
+        "record_sha256": "fea7c624e21143bee9a3b23f21358d106af44f392832c64f6401942364ca944e",
+        "source_sha256": "572651d215dddac0bd409badd51e7794cacecc85017dbef15cc13b5670e9dfef",
+        "started_utc": "2026-10-16T08:15:20.136084+00:00"
+      }
+    }
+  ],
+  "comparison_counts": {
+    "e": {
+      "not_compared": 4
+    },
+    "n": {
+      "not_compared": 4
+    },
+    "charge": {
+      "not_compared": 4
+    },
+    "phase": {
+      "not_compared": 4
+    },
+    "intrinsic": {
+      "not_compared": 4
+    },
+    "stacking": {
+      "not_compared": 4
+    },
+    "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6": {
+      "match": 4
+    }
+  },
+  "availability_counts": {
+    "e": {
+      "available": 4
+    },
+    "n": {
+      "available": 4
+    },
+    "charge": {
+      "available": 4
+    },
+    "phase": {
+      "available": 4
+    },
+    "intrinsic": {
+      "available": 4
+    },
+    "stacking": {
+      "available": 4
+    },
+    "derived_freed_hopkins_v6__thorngren_else_v6_f9119dd5e5a6": {
+      "available": 4
+    }
+  }
+}

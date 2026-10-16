@@ -1,5 +1,6 @@
 """Complete cyclic roots, independent physical lattices, and cache isolation."""
 from fractions import Fraction as F
+import gzip
 import json
 from pathlib import Path
 import tempfile
@@ -14,6 +15,18 @@ from scripts import classify_cyclic_4p1 as runner
 
 
 class CompleteCyclicTests(unittest.TestCase):
+    def test_compressed_evidence_retains_every_exact_value_and_is_deterministic(self):
+        evidence = calculate(2)[1]
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            plain = runner.write_evidence(directory, evidence, 'json')
+            compressed = runner.write_evidence(directory, evidence, 'json-gzip')
+            before = compressed.read_bytes()
+            with gzip.open(compressed, 'rt', encoding='utf-8') as stream:
+                self.assertEqual(json.load(stream), json.loads(plain.read_text()))
+            runner.write_evidence(directory, evidence, 'json-gzip')
+            self.assertEqual(before, compressed.read_bytes())
+
     def test_cached_and_uncached_complete_witnesses_and_existing_audit(self):
         for order in (1, 2, 3):
             reference = calculate(order, cache=False)

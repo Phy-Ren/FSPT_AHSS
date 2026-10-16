@@ -1,0 +1,315 @@
+{
+  "classification": {
+    "actualGroupOrder": "infinite",
+    "coordinateStacking": {
+      "additiveCharge": "Q=q-(n wedge n)/2",
+      "freeKernelProof": "(e,n,q) -> (e,n,Q) is an explicit integral bijection and homomorphism. The unimodular kernel certificates prove every state and every incoming gauge are represented.",
+      "integerPower": "(k e,k n,k q+binomial(k,2) n wedge n), for every k in Z",
+      "integrality": "The computed polarizer is symmetric with zero diagonal, so the half-square is integral for every integer sheet.",
+      "inverse": "(-e,-n,-q+n wedge n)",
+      "orderedFields": [
+        "e_2",
+        "n_2",
+        "n_4",
+        "nu_5"
+      ],
+      "rawProduct": "(e+f,n+m,q+t+n wedge m)",
+      "sheetPolarizer": [
+        [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            -1
+          ],
+          [
+            0
+          ]
+        ],
+        [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        [
+          [
+            0
+          ],
+          [
+            -1
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        [
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ]
+      ]
+    },
+    "finalFiltration": {
+      "charge": {
+        "freeRank": 1,
+        "torsion": []
+      },
+      "e": {
+        "freeRank": 6,
+        "torsion": []
+      },
+      "n": {
+        "freeRank": 6,
+        "torsion": []
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": []
+      }
+    },
+    "freeRank": 13,
+    "generators": [
+      {
+        "coordinates": [
+          0,
+          1
+        ],
+        "kind": "neutral-E8",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          0,
+          2
+        ],
+        "kind": "neutral-E8",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          0,
+          3
+        ],
+        "kind": "neutral-E8",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          1,
+          2
+        ],
+        "kind": "neutral-E8",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          1,
+          3
+        ],
+        "kind": "neutral-E8",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          2,
+          3
+        ],
+        "kind": "neutral-E8",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          0,
+          1
+        ],
+        "kind": "CI-sheet",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          0,
+          2
+        ],
+        "kind": "CI-sheet",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          0,
+          3
+        ],
+        "kind": "CI-sheet",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          1,
+          2
+        ],
+        "kind": "CI-sheet",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          1,
+          3
+        ],
+        "kind": "CI-sheet",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          2,
+          3
+        ],
+        "kind": "CI-sheet",
+        "order": "infinite"
+      },
+      {
+        "coordinates": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "kind": "charge",
+        "order": "infinite"
+      }
+    ],
+    "incomingCohomology": {
+      "CIGaugeFreeRank": 4,
+      "E8GaugeFreeRank": 4,
+      "action": "Trivial on periods: B=rho=0 and C^5(T^r,R/Z)=0; complete nonclosed gauge images retained.",
+      "chargeGaugeFreeRank": 4,
+      "phaseGaugeFreeRank": 1
+    },
+    "modelClassificationComplete": true,
+    "physicalClassificationCertified": false,
+    "presentation": [],
+    "presentationGeneratorCount": 13,
+    "scope": "Complete four-data model on the finite K(Z^r,1), with s=rho=omega=0 and intrinsic pair zero; physical stable-splitting comparison is separate.",
+    "torsion": []
+  },
+  "evidence": {
+    "path": "simplicial_evidence.json",
+    "sha256": "e1743ac1360e0e120da2aa2f3df71853ff28dc34bdf9ba1527ec8685b5ed85a5"
+  },
+  "input": {
+    "atomicFillingRetained": true,
+    "dimension": 4,
+    "family": "translations",
+    "id": "translations_z4_4p1",
+    "intrinsicRowIncluded": false,
+    "omega": "0",
+    "orderedFields": [
+      "e_2",
+      "n_2",
+      "n_4",
+      "nu_5"
+    ],
+    "physicalSpin": "not_applicable",
+    "referenceTarget": "translations_z4",
+    "rho": 0,
+    "s": 0,
+    "spatialInterpretation": "full four-dimensional translations",
+    "spinScope": "Pure translations have no rotation-spin lift distinction.",
+    "translationRank": 4
+  },
+  "run": {
+    "host": "n09.local",
+    "id": "translations_z4_4p1",
+    "inputSHA256": "bf1e42a4acf9f611d8e722206cf8a4571732e768ed5aad730e8901904bcee29b",
+    "pythonVersion": "3.13.12",
+    "sourceSHA256": "572651d215dddac0bd409badd51e7794cacecc85017dbef15cc13b5670e9dfef",
+    "startedUTC": "2026-10-16T08:15:20.136084+00:00",
+    "status": "computed"
+  }
+}

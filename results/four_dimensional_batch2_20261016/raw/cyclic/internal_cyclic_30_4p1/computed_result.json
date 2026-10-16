@@ -1,0 +1,203 @@
+{
+  "classification": {
+    "actualGroupOrder": 810000,
+    "cycleTerms": 841,
+    "expectedOrderFromFiltration": 810000,
+    "filtrationOrders": [
+      [
+        30
+      ],
+      [
+        30
+      ],
+      [
+        30
+      ],
+      [
+        30
+      ]
+    ],
+    "freeRank": 0,
+    "generators": [
+      {
+        "kind": "neutral-E8"
+      },
+      {
+        "kind": "CI-sheet"
+      },
+      {
+        "kind": "charge"
+      },
+      {
+        "kind": "shared-phase"
+      }
+    ],
+    "group": {
+      "family": "internal_cyclic",
+      "order": 30
+    },
+    "incomingCohomology": {
+      "charge": [],
+      "sheet": []
+    },
+    "integerSourceIdenticallyZero": true,
+    "nonvacuousRootCompletionChecks": 3364,
+    "orderedFields": [
+      "e_2",
+      "n_2",
+      "n_4",
+      "nu_5"
+    ],
+    "phaseDetection": {
+      "cycle": "sum_(i,j=0)^(N-1) [g|g^i|g|g^j|g]",
+      "phasePrimitive": "Relations are certified as exact by complete periodic-cycle detection; no explicit full-bar primitive is asserted.",
+      "phaseRootPeriod": "1/30",
+      "reason": "H^5(C_N,R/Z)=Z_N and this normalized cycle generates H_5(C_N,Z); pairing determines the entire phase class."
+    },
+    "physicalClassificationCertified": false,
+    "presentation": [
+      [
+        30,
+        0,
+        0,
+        -10
+      ],
+      [
+        0,
+        30,
+        -15,
+        -5
+      ],
+      [
+        0,
+        0,
+        30,
+        -15
+      ],
+      [
+        0,
+        0,
+        0,
+        30
+      ]
+    ],
+    "presentationGeneratorCount": 4,
+    "rootPhasePairings": [
+      "1/3",
+      "1/6",
+      "1/2",
+      "0"
+    ],
+    "rootWitnesses": [
+      {
+        "chargeCoefficient": 0,
+        "phaseCoefficient": 10,
+        "power": 30,
+        "root": "X"
+      },
+      {
+        "chargeCoefficient": 15,
+        "phaseCoefficient": 5,
+        "power": 30,
+        "root": "Y"
+      },
+      {
+        "chargeCoefficient": 0,
+        "phaseCoefficient": 15,
+        "power": 30,
+        "root": "Q"
+      },
+      {
+        "chargeCoefficient": 0,
+        "phaseCoefficient": 0,
+        "power": 30,
+        "root": "b"
+      }
+    ],
+    "scope": "Complete original four-data model for internal s=rho=omega=0; intrinsic row excluded from this cochain calculation.",
+    "sourceIdentity": [
+      "da=Nx and dx=0 give d(a*x^2/(3N))=x^3/3 and d(a*x^2/(6N))=x^3/6.",
+      "The integral Cartan identity gives d(zeta_22(x,x)/2)=Sq^2(bar(x^2))/2 modulo one.",
+      "Full source/product/gauge identities transport these completed roots through every operation."
+    ],
+    "spatialDimension": 4,
+    "terminalObstructionTargetOrders": [],
+    "theory": "U(1)^f insulator",
+    "torsion": [
+      5,
+      15,
+      30,
+      360
+    ]
+  },
+  "evidence": {
+    "cycleTerms": 841,
+    "path": "cycle_evidence.json.gz",
+    "scope": "All normalized periodic-cycle terms with actual complete states, powers and sheet/charge gauges.",
+    "sha256": "9a44eb1a640f127e9b6458b4d0cf659aa26072483bd4b12c6f7829f68f62e4c4"
+  },
+  "input": {
+    "crystallineSpinConvention": "not_assumed",
+    "dimension": 4,
+    "family": "internal_cyclic",
+    "id": "internal_cyclic_30_4p1",
+    "intrinsicR0Included": false,
+    "intrinsicRowIncluded": false,
+    "omega": "0",
+    "order": 30,
+    "orderedFields": [
+      "e_2",
+      "n_2",
+      "n_4",
+      "nu_5"
+    ],
+    "physicalSpin": "not_applicable",
+    "rho": 0,
+    "s": 0
+  },
+  "run": {
+    "cache": {
+      "capacity": 4096,
+      "enabled": true,
+      "entries": 2306,
+      "evictions": 0,
+      "hits": {
+        "ci_gauge": 5761,
+        "ci_product": 34341,
+        "neutral_gauge": 5886,
+        "neutral_product": 34392,
+        "source": 123359
+      },
+      "misses": {
+        "ci_gauge": 967,
+        "ci_product": 140,
+        "neutral_gauge": 842,
+        "neutral_product": 89,
+        "source": 268
+      }
+    },
+    "command": [
+      "/home/user/xyren/AllFSPT_insulator/runtime4p1-v015/bin/python3",
+      "/home/user/xyren/AllFSPT_insulator/runs/cyclic4p1_batch2_20261016/source/scripts/classify_cyclic_4p1.py",
+      "--worker-order",
+      "30",
+      "--worker-directory",
+      "/home/user/xyren/AllFSPT_insulator/runs/cyclic4p1_batch2_20261016/cyclic/internal_cyclic_30_4p1",
+      "--worker-source",
+      "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+      "--cache",
+      "on",
+      "--evidence-format",
+      "json-gzip"
+    ],
+    "elapsedSeconds": 35.600151,
+    "host": "n08.local",
+    "id": "internal_cyclic_30_4p1",
+    "inputSHA256": "072c3ab146474f121fe96b13dd7d7ce9d40666f7072f08fa18f443b9bdab0b70",
+    "python": "3.13.12 | packaged by conda-forge | (main, Feb  5 2026, 05:53:46) [GCC 14.3.0]",
+    "sourceSHA256": "e495b618d055c265a63078e73a6ec7526b0044170631ca582305e15c2f2e096a",
+    "startedUTC": "2026-10-16T08:05:07.810217+00:00",
+    "status": "computed",
+    "timeoutSeconds": 1800
+  }
+}
