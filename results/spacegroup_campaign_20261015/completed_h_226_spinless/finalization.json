@@ -1,0 +1,39 @@
+{
+  "acceptedCount": 1,
+  "archive": "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-226-spinless-32g-shadow-n08-evidence.tar.gz",
+  "archiveBytes": 97219,
+  "archiveSHA256": "5e10ffe764668ddc6ef8d75f029f888c22f7bcf5b594eee8263ba251eab78578",
+  "commands": [
+    [
+      "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+      "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/extend_e8_3p1.py",
+      "--ci-root",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-226-spinless-32g-shadow-n08",
+      "--output",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-226-spinless-32g-shadow-n08-e8"
+    ],
+    [
+      "/home/user/xyren/AllFSPT_insulator/runtime/bin/python3",
+      "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g/scripts/collect_expansion.py",
+      "--ci-root",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-226-spinless-32g-shadow-n08",
+      "--e8-root",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-226-spinless-32g-shadow-n08-e8",
+      "--output",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-226-spinless-32g-shadow-n08-accepted"
+    ]
+  ],
+  "endedUTC": "2026-10-15T22:02:38.112154+00:00",
+  "node": "n08",
+  "postprocessor": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-g",
+  "runnerPID": 14874,
+  "runtimeVerified": true,
+  "selectedCount": 1,
+  "selectionSHA256": "4910e09b4b8397fbebdb09c01f1313e81535b989e3dce783a7324cc088b593d2",
+  "source": "/home/user/xyren/AllFSPT_insulator/snapshots/sgfull-20261015-h",
+  "sourceSHA256": "80e0a57b1ac611b348d748da2becbfe64d4aa17f196df9ffae3addea3e22940b",
+  "sourceVerified": true,
+  "startedUTC": "2026-10-15T18:48:44.914985+00:00",
+  "state": "complete",
+  "tag": "sgfull-20261015-h-226-spinless-32g-shadow-n08"
+}

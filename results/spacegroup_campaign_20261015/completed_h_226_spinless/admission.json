@@ -1,0 +1,246 @@
+{
+  "expectedSHA256": "966e61c582b58533fc58c809d759a7be347d10256eeb078e2849bbe6e25c2f4b",
+  "launcherSHA256": "b58cd5c408eb8e16c8282c336ebbfad35b6fa1ea202a693f0c642bae8381cc8e",
+  "originalExactLiveIdentity": {
+    "argv": [
+      "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+      "-l",
+      "/home/user/xyren/software/gap-4.13.1",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "-m",
+      "256m",
+      "-K",
+      "12g",
+      "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-spinless-n08/spacegroup_226_spinless/driver.g"
+    ],
+    "executable": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+    "pgid": 11603,
+    "pid": 11603,
+    "ppid": 11599,
+    "rssKiB": 12599444,
+    "sid": 11603,
+    "startTicks": "2689930714",
+    "state": "R",
+    "uid": 5866
+  },
+  "originalFilesModified": false,
+  "originalInputsSourceAndRunPins": {
+    "formula_runtime.json": "8a22156ff7a656372327e521f6c366321cfe6642c80ec01b035605b2d7fab9a7",
+    "selection.json": "c2422d869346e3dd1c9d4382a870a0a707b7e2274e2a637244fb847ce70f750c",
+    "source.json": "843704ea6cdf854e6df4c924e406116e53442ed5161ce326e62274ace90566b4",
+    "spacegroup_226_spinless/driver.g": "3c36c74ad0871ae190776fab0e5bd907ecddf548a7c15188e253cc5a13af19ae",
+    "spacegroup_226_spinless/input.json": "5b76bb1a33df025ad7d0ce6be11b33130d910b7ec098d4da54423e7c09682a4c",
+    "spacegroup_226_spinless/run.json": "fd2f38bc188e9b735ea1bfc0624089a76513531834d6c9a1832ae91bc98e736c"
+  },
+  "perfEvidence": {
+    "directory": "/home/user/xyren/AllFSPT_insulator/runs/sg226-spinless-readonly-perf-20261015T1839",
+    "files": {
+      "observation.json": "0f3744d8e4b941aeeba89f8bbb684bdcfe8188bd27451e339229877e6edf08df",
+      "perf.data": "6ba1cbb8ab9d8ce1c5b7dec9cc9591582493f251ae59a52828269270260e557a",
+      "record.stderr.log": "32725f350d264f661e2b97ef3cb75c1750d27c507a696dee5a16a2a609a9a32b",
+      "record.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "report.stderr.log": "f060916a0433ca57831f00d70f219d7f3e9e6b2db87b82cc23f05d47e10dfaa7",
+      "report.txt": "b78612fca7e8d1ea2c55bfa9f93bd64514fd73d11b9b84a70d9d007fc2b449c2"
+    },
+    "observation": {
+      "command": [
+        "/usr/bin/perf",
+        "record",
+        "-e",
+        "cpu-clock:u",
+        "-F",
+        "49",
+        "-p",
+        "11603",
+        "-g",
+        "-o",
+        "/home/user/xyren/AllFSPT_insulator/runs/sg226-spinless-readonly-perf-20261015T1839/perf.data",
+        "--",
+        "sleep",
+        "5"
+      ],
+      "exitCode": 0,
+      "signalsSent": false,
+      "sourceUnchanged": true,
+      "targetCommand": [
+        "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "-l",
+        "/home/user/xyren/software/gap-4.13.1",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "-m",
+        "256m",
+        "-K",
+        "12g",
+        "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-spinless-n08/spacegroup_226_spinless/driver.g"
+      ],
+      "targetPID": 11603,
+      "targetStartTicks": "2689930714",
+      "utc": "2026-10-15T18:39:21.460140+00:00"
+    },
+    "report": "# To display the perf.data header info, please use --header/--header-only options.\n#\n# Samples: 244  of event 'cpu-clock:u'\n# Event count (approx.): 4979591772\n#\n# Overhead  Command  Shared Object  Symbol                    \n# ........  .......  .............  ..........................\n#\n    91.80%  gap      gap            [.] CollectBags           \n                |\n                ---CollectBags\n\n     6.15%  gap      gap            [.] MarkArrayOfBags       \n                |\n                ---MarkArrayOfBags\n\n     0.82%  gap      gap            [.] CollectBags_Mark      \n                |\n                ---CollectBags_Mark\n\n     0.82%  gap      gap            [.] MarkBag               \n                |\n                ---MarkBag\n\n     0.41%  gap      gap            [.] MarkAllButFirstSubBags\n                |\n                ---MarkAllButFirstSubBags\n\n\n\n#\n# (For a higher level overview, try: perf report --sort comm,dso)\n#\n"
+  },
+  "resources": {
+    "additionalCapsGiB": 64,
+    "allConfiguredGAPCapsGiB": 108,
+    "capBudgetFitsPhysicalMemory": true,
+    "existingGAPProcesses": [
+      {
+        "argv": [
+          "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+          "-l",
+          "/home/user/xyren/software/gap-4.13.1",
+          "-q",
+          "-b",
+          "--quitonbreak",
+          "-m",
+          "256m",
+          "-K",
+          "12g",
+          "/home/user/xyren/AllFSPT_insulator/runs/sgfull-20261015-h-tail-spinless-n08/spacegroup_226_spinless/driver.g"
+        ],
+        "configuredCapGiB": 12,
+        "executable": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "pgid": 11603,
+        "pid": 11603,
+        "ppid": 11599,
+        "rssKiB": 12599444,
+        "sid": 11603,
+        "startTicks": "2689930714",
+        "state": "R",
+        "uid": 5866
+      },
+      {
+        "argv": [
+          "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+          "-l",
+          "/home/user/xyren/software/gap-4.13.1",
+          "-q",
+          "-b",
+          "--quitonbreak",
+          "-m",
+          "256m",
+          "-K",
+          "16g",
+          "/home/user/xyren/AllFSPT_insulator/runs/sg141-h-q2mod2-overlap-n08-retry-20261015/spacegroup_141_spin_half/driver.g"
+        ],
+        "configuredCapGiB": 16,
+        "executable": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "pgid": 14111,
+        "pid": 14111,
+        "ppid": 14105,
+        "rssKiB": 1996616,
+        "sid": 14111,
+        "startTicks": "2690981929",
+        "state": "R",
+        "uid": 5866
+      },
+      {
+        "argv": [
+          "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+          "-l",
+          "/home/user/xyren/software/gap-4.13.1",
+          "-q",
+          "-b",
+          "--quitonbreak",
+          "-m",
+          "256m",
+          "-K",
+          "16g",
+          "/home/user/xyren/AllFSPT_insulator/runs/sg141-h-baseline-overlap-n08-20261015/spacegroup_141_spin_half/driver.g"
+        ],
+        "configuredCapGiB": 16,
+        "executable": "/home/user/xyren/software/gap-4.13.1-o2-20261015/gap",
+        "pgid": 14114,
+        "pid": 14114,
+        "ppid": 14107,
+        "rssKiB": 1984144,
+        "sid": 14114,
+        "startTicks": "2690981931",
+        "state": "R",
+        "uid": 5866
+      }
+    ],
+    "existingGAPResidentKiB": 16580204,
+    "extraNonGAPHeadroomGiB": 8,
+    "host": "n08.local",
+    "loadAverage": [
+      2.88,
+      2.63,
+      2.1
+    ],
+    "memoryKiB": {
+      "Active": 18127380,
+      "Active(anon)": 16645728,
+      "Active(file)": 1481652,
+      "AnonHugePages": 16668672,
+      "AnonPages": 16875716,
+      "Bounce": 0,
+      "Buffers": 253944,
+      "Cached": 4474376,
+      "CommitLimit": 66966992,
+      "Committed_AS": 23691444,
+      "DirectMap1G": 132120576,
+      "DirectMap2M": 2019328,
+      "DirectMap4k": 4096,
+      "Dirty": 4,
+      "HardwareCorrupted": 0,
+      "HugePages_Free": 0,
+      "HugePages_Rsvd": 0,
+      "HugePages_Surp": 0,
+      "HugePages_Total": 0,
+      "Hugepagesize": 2048,
+      "Inactive": 3250492,
+      "Inactive(anon)": 15564,
+      "Inactive(file)": 3234928,
+      "KernelStack": 10776,
+      "Mapped": 27052,
+      "MemFree": 108816852,
+      "MemTotal": 131885996,
+      "Mlocked": 45996,
+      "NFS_Unstable": 0,
+      "PageTables": 39164,
+      "SReclaimable": 182868,
+      "SUnreclaim": 88956,
+      "Shmem": 8,
+      "Slab": 271824,
+      "SwapCached": 8744,
+      "SwapFree": 961892,
+      "SwapTotal": 1023996,
+      "Unevictable": 52128,
+      "VmallocChunk": 34290695416,
+      "VmallocTotal": 34359738367,
+      "VmallocUsed": 519068,
+      "Writeback": 0,
+      "WritebackTmp": 0
+    },
+    "nonGAPUsedUpperBoundKiB": 6488940,
+    "unreadableOwnNonGAPProcesses": [
+      {
+        "classification": "known non-GAP comm; resident memory retained in conservative non-GAP budget",
+        "comm": "sshd",
+        "executableReadable": false,
+        "pid": 1294,
+        "uid": 5866
+      }
+    ],
+    "utc": "2026-10-15T18:48:44.384700+00:00"
+  },
+  "signalsSent": false,
+  "utc": "2026-10-15T18:48:44.387221+00:00",
+  "workerPings": {
+    "q2_diagnostic": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "\nU1_WORKER_PREFLIGHT_PYTHON /home/user/xyren/AllFSPT_insulator/runtime/bin/python3\nU1_WORKER_PREFLIGHT_PING_PASS\n"
+    },
+    "unchanged_h": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "\nU1_WORKER_PREFLIGHT_PYTHON /home/user/xyren/AllFSPT_insulator/runtime/bin/python3\nU1_WORKER_PREFLIGHT_PING_PASS\n"
+    }
+  }
+}
