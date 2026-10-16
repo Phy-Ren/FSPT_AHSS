@@ -1,0 +1,50 @@
+\section{From a tower to the physical stacking group}\label{sec:classification}
+Fix the physical symmetry, its extension representative, and all local coefficient systems. A complete state solves the lower equations in order and supplies a trivialization of the final obstruction. The product of two complete states includes its induced higher fields. Only afterwards are exact fields removed by their full joint gauge. This procedure retains the nontrivial extensions that an associated-graded answer misses.
+
+In a finite presentation, choose completed roots $x_1,\ldots,x_m$. For each torsion leading field, take its actual order-many product, apply the required lower gauges, and express the residual in already retained roots. These relations, together with incoming identifications, give an integer relation matrix. Smith normal form determines the abstract group; retaining the original matrix and physical generator dictionary determines the labeled response relations. The rules are the same for CI, $E_8$ and intrinsic inputs. The arithmetic must use an integral completion, not an uncertified solution modulo a convenient denominator.
+
+\subsection{Uniform roots do not create new abstract torsion extensions}
+For finite $G$, the most time-consuming intrinsic formulas need not all be fixed to answer every group-theoretic question. Let $F^1\mathcal C^{d+1}(G_f)$ be the subgroup with zero leading uniform coefficient, including all its incoming identifications. Let $L_d$ be the actual image of the uniform response map. Thus $L_d$ is a subgroup of the invariant coefficient lattice, not an assumed copy of its full primitive lattice.
+
+\begin{theorem}[Finite-quotient separation of torsion and uniform response]\label{thm:uniform-split}
+Assume the convergent electronic AHSS with the coefficient ledger above and the usual Abelian stacking law. For finite $G$, $F^1\mathcal C^{d+1}$ is finite and
+\begin{equation}\label{eq:uniform-exact}
+0\longrightarrow F^1\mathcal C^{d+1}(G_f)
+\longrightarrow\mathcal C^{d+1}(G_f)
+\longrightarrow L_d\longrightarrow0
+\end{equation}
+splits as a sequence of abstract Abelian groups. The image $L_d$ has finite index in the invariant uniform coefficient. In particular,
+\begin{equation}\label{eq:abstract-ranks}
+\begin{aligned}
+\mathcal C^{2+1}(G_f)&\cong F^1\mathcal C^{2+1}(G_f)\oplus
+\begin{cases}\Z^2,&s_1=0,\\0,&s_1\ne0,\end{cases}\\
+\mathcal C^{4+1}(G_f)&\cong F^1\mathcal C^{4+1}(G_f)\oplus
+\begin{cases}\Z^2,&\rho_1=0,\\0,&\rho_1\ne0.\end{cases}
+\end{aligned}
+\end{equation}
+In $3+1$ dimensions there is no uniform coefficient in this ledger, and the full finite-group classification is torsion.
+\end{theorem}
+\begin{proof}
+For a finite group, positive-degree cohomology with each finitely generated coefficient module is finite; positive-degree cohomology with the relevant phase coefficients is finite as well. Equivalently, after rationalization the positive-filtration terms vanish by averaging. Only the invariant uniform coefficient survives rationally. The finitely many outgoing operations can therefore reduce its integer image only to a finite-index subgroup. No incoming operation reaches filtration zero. The positive-filtration kernel is finite, while $L_d$, a subgroup of a free Abelian lattice, is free. Choosing lifts of a basis of $L_d$ defines a group section; equivalently $\operatorname{Ext}^1_\Z(L_d,F^1\mathcal C)=0$.
+\end{proof}
+
+This theorem removes a genuine source of unnecessary work for the \emph{abstract} classification: an unresolved intrinsic response sublattice cannot change the free rank or generate a new torsion extension of $F^1\mathcal C$. For example, $\Z^2$, $2\Z\oplus2\Z$, and $3\Z\oplus\Z$ give the same abstract free factor but have different primitive physical responses. The theorem does not identify these labeled lattices, choose a canonical local section, or prove that an arbitrary candidate reduced model equals the physical $F^1\mathcal C$. It is not asserted for infinite crystalline quotients, whose positive filtration can have rational classes.
+
+\subsection{A certificate that determines a physical group without a universal local map}
+A local parity-to-charge map is one route to physical identification, but not the only route. The following elementary criterion is particularly effective for explicit calculations.
+
+\begin{theorem}[Faithful-character recognition]\label{thm:recognition}
+Let an independently defined finite physical group $P$ have order at most $M$. Let $p_1,\ldots,p_m$ be actual invertible phases, evaluated on specified structured bordism cycles by a matrix $H$ with entries in $\Q/\Z$. If
+\[
+[\Z^m:\{v:Hv=0\}]=M,
+\]
+then the phases generate all of $P$, the cycle evaluations detect $P$ faithfully, and the displayed kernel is its full relation lattice. If a completed-cochain calculation has the same relation lattice, its stacking group is identified with $P$ in the stated physical-root dictionary.
+\end{theorem}
+\begin{proof}
+The evaluated subgroup already has $M$ elements, while its domain subgroup has order at most $|P|\le M$. Both inequalities are equalities. Consequently the evaluation has zero kernel on the generated physical subgroup and that subgroup is all of $P$. Its integral presentation kernel is therefore the one stated.
+\end{proof}
+
+This is stronger than agreement of invariant factors and weaker than a universal equality of local formulas. It is exactly the distinction needed for classification: it proves that no additional phase or extension is missing in the specified symmetry problem. The cycles must possess the correct tangential structure; ordinary group-homology cycles cannot silently replace them. A collection of such certificates proves the cases it covers, not a theorem for every finite group.
+
+\subsection{What has to be held fixed under a change of formula}
+Changing a single-state phase by $R$ changes the obstruction by $dR$ and the product by the same polarization $\Delta_\mu R$, together with any induced lower-output gauge. The \emph{actual} product $\mu$ enters that polarization. The resulting completed-state group is unchanged. In contrast, adding an arbitrary closed cocycle to an obstruction or product can alter its physical class. Such changes must be removed by a deformation-space calculation or by a faithful physical calibration; closure alone is not a normalization principle. The fixed-model coherence and calibration proofs are collected in Appendices~\ref{sec:coherence} and~\ref{sec:normalization}.

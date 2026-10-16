@@ -38879,6 +38879,336 @@
     }
   },
   {
+    "id": "internal_cyclic_10_4p1",
+    "name": "C10",
+    "hermann_mauguin": null,
+    "display_name": "C10",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "4f42f95b50b06bec533dcb7e6098d0c224dab08b84f9d95c56b051b2ffa427f7",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_10_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_10",
+      "record_sha256": "d8f0555137cf7a0f58cef3e7135e2534402ac8151b8936e37e334ba1492338ec",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:12.561898+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        5,
+        5,
+        10,
+        40
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          10
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          10
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          10
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          10
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_12_4p1",
+    "name": "C12",
+    "hermann_mauguin": null,
+    "display_name": "C12",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "032c65ee42c5c2a044594cbed1c95b5ea80a7bc9b4f8e5f70273062aeb06a6a4",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_12_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_12",
+      "record_sha256": "54ccbbf04089509f553acc05333a177348c6e14e32c3a62bb8f31d32d6ff1ebd",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:07.016555+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        2,
+        6,
+        12,
+        144
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          12
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          12
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          12
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          12
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_15_4p1",
+    "name": "C15",
+    "hermann_mauguin": null,
+    "display_name": "C15",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "542ca8b60307839191c2bff8bd4a609ea0ed5b7265b8bb217ba82edb7fa9d38e",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_15_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_15",
+      "record_sha256": "6241f58da6873fdd750c1253c357e2db67c19fe4de98827b6468a1c8d0e55d60",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:07.016640+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        5,
+        15,
+        15,
+        45
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          15
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          15
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          15
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          15
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_16_4p1",
+    "name": "C16",
+    "hermann_mauguin": null,
+    "display_name": "C16",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "f7409dc5fb0fafcdc80a008d65248f393097fc47770f13b1a4315aff5a65430e",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_16_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_16",
+      "record_sha256": "48283bcbc2e6d0ee4cec7f3e06ce2f75f4e5468bb7c940c22c76913c1b27ee3c",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:07.016191+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        8,
+        8,
+        16,
+        64
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          16
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          16
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          16
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          16
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_18_4p1",
+    "name": "C18",
+    "hermann_mauguin": null,
+    "display_name": "C18",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "02b12991bb7a4a9e9a043ee13f3f7351730a61919b7a5fb1d0d63da8851c4a9b",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_18_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_18",
+      "record_sha256": "ba1988c75b37217e99cedbab2c24b2cfdf5a3f77e412e22d4126d1dd4dbbfefb",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:07.016015+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        3,
+        9,
+        18,
+        216
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          18
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          18
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          18
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          18
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
     "id": "internal_cyclic_1_4p1",
     "name": "C1",
     "hermann_mauguin": null,
@@ -38887,31 +39217,930 @@
     "physical_spin": "not_applicable_internal",
     "spatial_dimension": 4,
     "spacetime_dimension": 5,
-    "n0_scope": "not_applicable",
+    "n0_scope": "intrinsic_all",
     "e0_scope": "not_applicable",
-    "e8_scope": "original_four_data_included",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
     "provenance": {
-      "path": "results/expansion_20261015/4p1d/internal_cyclic/results.json",
-      "array_index": 0,
-      "selector": "classification",
-      "source_sha256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
-      "input_sha256": "e69a7c648dc7bf8ff7465ed4ebd0c772453a822c163a321bdbf9d6ed1d57cdac",
-      "started_utc": "2026-10-15T11:17:47.269298+00:00",
-      "record_sha256": "dc9d9ad155d1935c2835b9c0b02da7ecd041c18f9d15cf876c203b3f5b3f76f5",
-      "independent_root_audit": {
-        "path": "results/expansion_20261015/4p1d/cyclic_root_audit.json",
-        "sha256": "1854cf27018fb4dec846c51517f0c5d09d53998b6a76d0261b406dc8551b7732",
-        "order": 1,
-        "status": "PASS"
+      "input_sha256": "23ea3bd1d0096589e7821ba6f4329c1649e82aa830650c65845d5b28f10f30fe",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_1_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_1",
+      "record_sha256": "1d96489219a330eb719bd23cd76d28e394aa3160b14e555498b828f5f9cc26b6",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:19.731887+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": []
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": []
       }
     },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_2_4p1",
+    "name": "C2",
+    "hermann_mauguin": null,
+    "display_name": "C2",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
     "background": {
-      "s": 0,
-      "rho": 0,
       "omega": "0",
-      "intrinsic_r0_included": false
+      "rho": 0,
+      "s": 0
     },
-    "table": "4p1d/internal_cyclic.json",
+    "provenance": {
+      "input_sha256": "f7bc9c7f7f47189debac774fbdd7c2cff077bd5702da05c85bbc1d0c75cfceca",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_2_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_2",
+      "record_sha256": "ea25c25679a5640804440c16c361d307c3bde421822327299332d7ded6fbecf8",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:19.445908+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        2,
+        8
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          2
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_3_4p1",
+    "name": "C3",
+    "hermann_mauguin": null,
+    "display_name": "C3",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "ed7e056f5a8d4624808d8cb3603e74b42de424bb6b38a4dafbb1482fa48e5801",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_3_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_3",
+      "record_sha256": "8968c32eec0eae6257ab9a934ef2d8280ae2a06df249ed6982312581a3012466",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:18.826000+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        3,
+        3,
+        9
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          3
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          3
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_4_4p1",
+    "name": "C4",
+    "hermann_mauguin": null,
+    "display_name": "C4",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "5ea10112cf47733d06c1d747bf11ae857a4cde46a5765ae520a4e5fe85d95fd8",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_4_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_4",
+      "record_sha256": "c79af5768d23e8c1c5edd605f0557dfc1817e7994962fc0eccf8c6e780eaa190",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:18.759075+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        2,
+        2,
+        4,
+        16
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          4
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          4
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          4
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          4
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_5_4p1",
+    "name": "C5",
+    "hermann_mauguin": null,
+    "display_name": "C5",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "bca3657d369ca021ea846e8044a93b618e76140a9cde46ca0b5c140959f83c63",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_5_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_5",
+      "record_sha256": "b08ec63c20c9d0ec30a6bf773b70488191dda6002b8fcbc53230d0770018e2d9",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:18.736664+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          5
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          5
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_6_4p1",
+    "name": "C6",
+    "hermann_mauguin": null,
+    "display_name": "C6",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "27d76710a9b9b358916dfaa3d0296f818ad68ae06b5dc47caf0813f89b10bc06",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_6_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_6",
+      "record_sha256": "50d76d2f744a3efa94ffd7cfc38b18410871fee1c013647e2c1285ad60974c7f",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:18.667355+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        3,
+        6,
+        72
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          6
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          6
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          6
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          6
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_7_4p1",
+    "name": "C7",
+    "hermann_mauguin": null,
+    "display_name": "C7",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "d48beac6ec7f04a145eda80116dce11ad10487650deb5aa02fdc7d3af711dad2",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_7_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_7",
+      "record_sha256": "2c0406fdcc28c275db9e91a71b36a4b50a6fd24e8f365ca6fe6a78a9a097a578",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:16.599377+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          7
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_8_4p1",
+    "name": "C8",
+    "hermann_mauguin": null,
+    "display_name": "C8",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "ae3ef5b90caf02b1e382a410eb2348f7bc75f8054ed76bbb8abaf4635e887261",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_8_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_8",
+      "record_sha256": "b355229f68d66de53d875b44bca840b242bd2fb049240937c8df3cc37e698b13",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:16.028816+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        4,
+        4,
+        8,
+        32
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_9_4p1",
+    "name": "C9",
+    "hermann_mauguin": null,
+    "display_name": "C9",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_all",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "3a61cb0b24f848600ad6fb30b2b798f710d492d4ba64e79418efe25b34c6cdd8",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_9_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_9",
+      "record_sha256": "c02fb5be64960cac599cf1008bcf9065db75693543d5f6a01bb8f7b78aa07560",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:15.385014+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_all.json",
+    "stacking": {
+      "torsion": [
+        3,
+        9,
+        9,
+        27
+      ],
+      "freeRank": 2
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          9
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          9
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          9
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          9
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 2
+    }
+  },
+  {
+    "id": "internal_cyclic_10_4p1",
+    "name": "C10",
+    "hermann_mauguin": null,
+    "display_name": "C10",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "4f42f95b50b06bec533dcb7e6098d0c224dab08b84f9d95c56b051b2ffa427f7",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_10_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_10",
+      "record_sha256": "d8f0555137cf7a0f58cef3e7135e2534402ac8151b8936e37e334ba1492338ec",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:12.561898+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
+    "stacking": {
+      "torsion": [
+        5,
+        5,
+        10,
+        40
+      ],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          10
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          10
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          10
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          10
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "internal_cyclic_12_4p1",
+    "name": "C12",
+    "hermann_mauguin": null,
+    "display_name": "C12",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "032c65ee42c5c2a044594cbed1c95b5ea80a7bc9b4f8e5f70273062aeb06a6a4",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_12_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_12",
+      "record_sha256": "54ccbbf04089509f553acc05333a177348c6e14e32c3a62bb8f31d32d6ff1ebd",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:07.016555+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
+    "stacking": {
+      "torsion": [
+        2,
+        6,
+        12,
+        144
+      ],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          12
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          12
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          12
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          12
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "internal_cyclic_15_4p1",
+    "name": "C15",
+    "hermann_mauguin": null,
+    "display_name": "C15",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "542ca8b60307839191c2bff8bd4a609ea0ed5b7265b8bb217ba82edb7fa9d38e",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_15_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_15",
+      "record_sha256": "6241f58da6873fdd750c1253c357e2db67c19fe4de98827b6468a1c8d0e55d60",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:07.016640+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
+    "stacking": {
+      "torsion": [
+        5,
+        15,
+        15,
+        45
+      ],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          15
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          15
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          15
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          15
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "internal_cyclic_16_4p1",
+    "name": "C16",
+    "hermann_mauguin": null,
+    "display_name": "C16",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "f7409dc5fb0fafcdc80a008d65248f393097fc47770f13b1a4315aff5a65430e",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_16_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_16",
+      "record_sha256": "48283bcbc2e6d0ee4cec7f3e06ce2f75f4e5468bb7c940c22c76913c1b27ee3c",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:07.016191+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
+    "stacking": {
+      "torsion": [
+        8,
+        8,
+        16,
+        64
+      ],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          16
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          16
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          16
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          16
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "internal_cyclic_18_4p1",
+    "name": "C18",
+    "hermann_mauguin": null,
+    "display_name": "C18",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "02b12991bb7a4a9e9a043ee13f3f7351730a61919b7a5fb1d0d63da8851c4a9b",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_18_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_18",
+      "record_sha256": "ba1988c75b37217e99cedbab2c24b2cfdf5a3f77e412e22d4126d1dd4dbbfefb",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:07.016015+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
+    "stacking": {
+      "torsion": [
+        3,
+        9,
+        18,
+        216
+      ],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          18
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          18
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          18
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          18
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "internal_cyclic_1_4p1",
+    "name": "C1",
+    "hermann_mauguin": null,
+    "display_name": "C1",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "23ea3bd1d0096589e7821ba6f4329c1649e82aa830650c65845d5b28f10f30fe",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_1_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_1",
+      "record_sha256": "1d96489219a330eb719bd23cd76d28e394aa3160b14e555498b828f5f9cc26b6",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:19.731887+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
     "stacking": {
       "torsion": [],
       "freeRank": 0
@@ -38933,6 +40162,10 @@
         "freeRank": 0,
         "torsion": []
       }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
     }
   },
   {
@@ -38944,31 +40177,23 @@
     "physical_spin": "not_applicable_internal",
     "spatial_dimension": 4,
     "spacetime_dimension": 5,
-    "n0_scope": "not_applicable",
+    "n0_scope": "intrinsic_zero",
     "e0_scope": "not_applicable",
-    "e8_scope": "original_four_data_included",
-    "provenance": {
-      "path": "results/expansion_20261015/4p1d/internal_cyclic/results.json",
-      "array_index": 1,
-      "selector": "classification",
-      "source_sha256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
-      "input_sha256": "c07ca5e27cabad6a2abfde87fc472e931fb428be971c41eba149c09013ec95a1",
-      "started_utc": "2026-10-15T11:18:04.365957+00:00",
-      "record_sha256": "9f4ceeb6bfd48a439c3bb958615dbef6a5f1ff5f1d544b00ff0355c1ade1e4ae",
-      "independent_root_audit": {
-        "path": "results/expansion_20261015/4p1d/cyclic_root_audit.json",
-        "sha256": "1854cf27018fb4dec846c51517f0c5d09d53998b6a76d0261b406dc8551b7732",
-        "order": 2,
-        "status": "PASS"
-      }
-    },
+    "e8_scope": "four_data_included",
     "background": {
-      "s": 0,
-      "rho": 0,
       "omega": "0",
-      "intrinsic_r0_included": false
+      "rho": 0,
+      "s": 0
     },
-    "table": "4p1d/internal_cyclic.json",
+    "provenance": {
+      "input_sha256": "f7bc9c7f7f47189debac774fbdd7c2cff077bd5702da05c85bbc1d0c75cfceca",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_2_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_2",
+      "record_sha256": "ea25c25679a5640804440c16c361d307c3bde421822327299332d7ded6fbecf8",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:19.445908+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
     "stacking": {
       "torsion": [
         2,
@@ -39001,6 +40226,10 @@
           2
         ]
       }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
     }
   },
   {
@@ -39012,31 +40241,23 @@
     "physical_spin": "not_applicable_internal",
     "spatial_dimension": 4,
     "spacetime_dimension": 5,
-    "n0_scope": "not_applicable",
+    "n0_scope": "intrinsic_zero",
     "e0_scope": "not_applicable",
-    "e8_scope": "original_four_data_included",
-    "provenance": {
-      "path": "results/expansion_20261015/4p1d/internal_cyclic/results.json",
-      "array_index": 2,
-      "selector": "classification",
-      "source_sha256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
-      "input_sha256": "029ef4987eb284d4b7c1c267ef356cbc67ae5cabf7d49f8d6881d938fdf76c23",
-      "started_utc": "2026-10-15T11:17:47.426362+00:00",
-      "record_sha256": "f79fca606d504c44b8063f78c32d30c22dcc5f51428d0f47702c18418a9d82a1",
-      "independent_root_audit": {
-        "path": "results/expansion_20261015/4p1d/cyclic_root_audit.json",
-        "sha256": "1854cf27018fb4dec846c51517f0c5d09d53998b6a76d0261b406dc8551b7732",
-        "order": 3,
-        "status": "PASS"
-      }
-    },
+    "e8_scope": "four_data_included",
     "background": {
-      "s": 0,
-      "rho": 0,
       "omega": "0",
-      "intrinsic_r0_included": false
+      "rho": 0,
+      "s": 0
     },
-    "table": "4p1d/internal_cyclic.json",
+    "provenance": {
+      "input_sha256": "ed7e056f5a8d4624808d8cb3603e74b42de424bb6b38a4dafbb1482fa48e5801",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_3_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_3",
+      "record_sha256": "8968c32eec0eae6257ab9a934ef2d8280ae2a06df249ed6982312581a3012466",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:18.826000+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
     "stacking": {
       "torsion": [
         3,
@@ -39070,6 +40291,10 @@
           3
         ]
       }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
     }
   },
   {
@@ -39081,31 +40306,23 @@
     "physical_spin": "not_applicable_internal",
     "spatial_dimension": 4,
     "spacetime_dimension": 5,
-    "n0_scope": "not_applicable",
+    "n0_scope": "intrinsic_zero",
     "e0_scope": "not_applicable",
-    "e8_scope": "original_four_data_included",
-    "provenance": {
-      "path": "results/expansion_20261015/4p1d/internal_cyclic/results.json",
-      "array_index": 3,
-      "selector": "classification",
-      "source_sha256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
-      "input_sha256": "761497c6be62876947e815560d93a7c6df3bede1c00c799a240eeadc0c1e6b32",
-      "started_utc": "2026-10-15T11:21:06.093485+00:00",
-      "record_sha256": "cebd1fcb63045ec9ffcb1cfbe8401a21fb883406ade0f4d40747f97787b438dd",
-      "independent_root_audit": {
-        "path": "results/expansion_20261015/4p1d/cyclic_root_audit.json",
-        "sha256": "1854cf27018fb4dec846c51517f0c5d09d53998b6a76d0261b406dc8551b7732",
-        "order": 4,
-        "status": "PASS"
-      }
-    },
+    "e8_scope": "four_data_included",
     "background": {
-      "s": 0,
-      "rho": 0,
       "omega": "0",
-      "intrinsic_r0_included": false
+      "rho": 0,
+      "s": 0
     },
-    "table": "4p1d/internal_cyclic.json",
+    "provenance": {
+      "input_sha256": "5ea10112cf47733d06c1d747bf11ae857a4cde46a5765ae520a4e5fe85d95fd8",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_4_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_4",
+      "record_sha256": "c79af5768d23e8c1c5edd605f0557dfc1817e7994962fc0eccf8c6e780eaa190",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:18.759075+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
     "stacking": {
       "torsion": [
         2,
@@ -39140,6 +40357,10 @@
           4
         ]
       }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
     }
   },
   {
@@ -39151,31 +40372,23 @@
     "physical_spin": "not_applicable_internal",
     "spatial_dimension": 4,
     "spacetime_dimension": 5,
-    "n0_scope": "not_applicable",
+    "n0_scope": "intrinsic_zero",
     "e0_scope": "not_applicable",
-    "e8_scope": "original_four_data_included",
-    "provenance": {
-      "path": "results/expansion_20261015/4p1d/internal_cyclic/results.json",
-      "array_index": 4,
-      "selector": "classification",
-      "source_sha256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
-      "input_sha256": "291b2d7f03379a1b9eef5ad795ce360c05fea12c121223c80cafaa8431f9a6fd",
-      "started_utc": "2026-10-15T11:21:06.307049+00:00",
-      "record_sha256": "72b19667a1b14c5d7c30d8aea196bd60bb6b415cfd7c028b9736f49745476a54",
-      "independent_root_audit": {
-        "path": "results/expansion_20261015/4p1d/cyclic_root_audit.json",
-        "sha256": "1854cf27018fb4dec846c51517f0c5d09d53998b6a76d0261b406dc8551b7732",
-        "order": 5,
-        "status": "PASS"
-      }
-    },
+    "e8_scope": "four_data_included",
     "background": {
-      "s": 0,
-      "rho": 0,
       "omega": "0",
-      "intrinsic_r0_included": false
+      "rho": 0,
+      "s": 0
     },
-    "table": "4p1d/internal_cyclic.json",
+    "provenance": {
+      "input_sha256": "bca3657d369ca021ea846e8044a93b618e76140a9cde46ca0b5c140959f83c63",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_5_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_5",
+      "record_sha256": "b08ec63c20c9d0ec30a6bf773b70488191dda6002b8fcbc53230d0770018e2d9",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:18.736664+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
     "stacking": {
       "torsion": [
         5,
@@ -39210,6 +40423,10 @@
           5
         ]
       }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
     }
   },
   {
@@ -39221,31 +40438,23 @@
     "physical_spin": "not_applicable_internal",
     "spatial_dimension": 4,
     "spacetime_dimension": 5,
-    "n0_scope": "not_applicable",
+    "n0_scope": "intrinsic_zero",
     "e0_scope": "not_applicable",
-    "e8_scope": "original_four_data_included",
-    "provenance": {
-      "path": "results/expansion_20261015/4p1d/internal_cyclic/results.json",
-      "array_index": 5,
-      "selector": "classification",
-      "source_sha256": "7a006f84bcb019362d5272c405154dd0af264dc75dfd81adf2e1b760aa297bff",
-      "input_sha256": "54e5bc329842cc602e08a0a6214c3f48dd5594dbc9c2c66de47855573f6ca4c7",
-      "started_utc": "2026-10-15T11:21:06.508234+00:00",
-      "record_sha256": "a585b1f4b0c824867e363bd779471e382d8710f317a36ffec0f72ea9ba2b3fee",
-      "independent_root_audit": {
-        "path": "results/expansion_20261015/4p1d/cyclic_root_audit.json",
-        "sha256": "1854cf27018fb4dec846c51517f0c5d09d53998b6a76d0261b406dc8551b7732",
-        "order": 6,
-        "status": "PASS"
-      }
-    },
+    "e8_scope": "four_data_included",
     "background": {
-      "s": 0,
-      "rho": 0,
       "omega": "0",
-      "intrinsic_r0_included": false
+      "rho": 0,
+      "s": 0
     },
-    "table": "4p1d/internal_cyclic.json",
+    "provenance": {
+      "input_sha256": "27d76710a9b9b358916dfaa3d0296f818ad68ae06b5dc47caf0813f89b10bc06",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_6_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_6",
+      "record_sha256": "50d76d2f744a3efa94ffd7cfc38b18410871fee1c013647e2c1285ad60974c7f",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:18.667355+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
     "stacking": {
       "torsion": [
         3,
@@ -39279,6 +40488,570 @@
           6
         ]
       }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "internal_cyclic_7_4p1",
+    "name": "C7",
+    "hermann_mauguin": null,
+    "display_name": "C7",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "d48beac6ec7f04a145eda80116dce11ad10487650deb5aa02fdc7d3af711dad2",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_7_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_7",
+      "record_sha256": "2c0406fdcc28c275db9e91a71b36a4b50a6fd24e8f365ca6fe6a78a9a097a578",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:16.599377+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
+    "stacking": {
+      "torsion": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          7
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          7
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "internal_cyclic_8_4p1",
+    "name": "C8",
+    "hermann_mauguin": null,
+    "display_name": "C8",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "ae3ef5b90caf02b1e382a410eb2348f7bc75f8054ed76bbb8abaf4635e887261",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_8_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_8",
+      "record_sha256": "b355229f68d66de53d875b44bca840b242bd2fb049240937c8df3cc37e698b13",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:16.028816+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
+    "stacking": {
+      "torsion": [
+        4,
+        4,
+        8,
+        32
+      ],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          8
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "internal_cyclic_9_4p1",
+    "name": "C9",
+    "hermann_mauguin": null,
+    "display_name": "C9",
+    "family": "internal_cyclic",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "omega": "0",
+      "rho": 0,
+      "s": 0
+    },
+    "provenance": {
+      "input_sha256": "3a61cb0b24f848600ad6fb30b2b798f710d492d4ba64e79418efe25b34c6cdd8",
+      "path": "results/four_dimensional_20261016/raw/cyclic/internal_cyclic_9_4p1/result.json",
+      "physical_reference_target": "internal_cyclic_9",
+      "record_sha256": "c02fb5be64960cac599cf1008bcf9065db75693543d5f6a01bb8f7b78aa07560",
+      "source_sha256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "started_utc": "2026-10-16T07:38:15.385014+00:00"
+    },
+    "table": "4p1d/internal_cyclic/intrinsic_zero.json",
+    "stacking": {
+      "torsion": [
+        3,
+        9,
+        9,
+        27
+      ],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "torsion": [
+          9
+        ]
+      },
+      "e": {
+        "freeRank": 0,
+        "torsion": [
+          9
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "torsion": [
+          9
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "torsion": [
+          9
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "signed_AII_relative_4p1",
+    "name": "AII: antiunitary T^2=(-1)^F",
+    "hermann_mauguin": null,
+    "display_name": "AII: antiunitary T^2=(-1)^F",
+    "family": "time_reversal",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "G": "C2^T",
+      "omega": "alpha cup alpha / 2",
+      "rho": "0",
+      "s": "alpha"
+    },
+    "provenance": {
+      "input_sha256": "d9758086d05063bb232c9927e06fe7f9dd1ac41edc9aa67baee4aab5b5609408",
+      "path": "results/four_dimensional_20261016/raw/signed/signed_AII_relative_4p1/result.json",
+      "physical_reference_target": "time_reversal_AII",
+      "record_sha256": "b32264b5d9727a6814f80286048018717aa6a3a0aa24ae116099ab1092b931b7",
+      "source_sha256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+      "started_utc": "2026-10-16T07:38:35.596461+00:00"
+    },
+    "table": "4p1d/time_reversal_intrinsic_zero.json",
+    "stacking": {
+      "torsion": [],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "e": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "n": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "phase": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "signed_AI_relative_4p1",
+    "name": "AI: antiunitary T^2=1",
+    "hermann_mauguin": null,
+    "display_name": "AI: antiunitary T^2=1",
+    "family": "time_reversal",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "G": "C2^T",
+      "omega": "0",
+      "rho": "0",
+      "s": "alpha"
+    },
+    "provenance": {
+      "input_sha256": "54b4a80be19341eac4c16835f178fc88040c0edc8955c8eff0a7f7254843338a",
+      "path": "results/four_dimensional_20261016/raw/signed/signed_AI_relative_4p1/result.json",
+      "physical_reference_target": "time_reversal_AI",
+      "record_sha256": "90add0932b725940eeab07cb0d53ea6b1133676715c99d415f690084bd46bcf9",
+      "source_sha256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+      "started_utc": "2026-10-16T07:38:31.266983+00:00"
+    },
+    "table": "4p1d/time_reversal_intrinsic_zero.json",
+    "stacking": {
+      "torsion": [],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "e": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "n": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "phase": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "signed_H_minus_4p1",
+    "name": "unitary C, C^2=(-1)^F",
+    "hermann_mauguin": null,
+    "display_name": "unitary C, C^2=(-1)^F",
+    "family": "charge_conjugation",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "G": "C2",
+      "alpha": "alpha(c)=1",
+      "omega": "alpha cup alpha / 2",
+      "rho": "alpha",
+      "s": "0"
+    },
+    "provenance": {
+      "input_sha256": "d4d2953ad55674490ee91a85721d367cbccf6a5fefba2324f6885d60e38246e4",
+      "path": "results/four_dimensional_20261016/raw/signed/signed_H_minus_4p1/result.json",
+      "physical_reference_target": "unitary_charge_conjugation_Hminus",
+      "record_sha256": "c7448de1e7bdc88621cab2bfe6160284c27987a26422d41dddf4bf8e77ae4d6e",
+      "source_sha256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+      "started_utc": "2026-10-16T07:38:13.802248+00:00"
+    },
+    "table": "4p1d/charge_conjugation.json",
+    "stacking": {
+      "torsion": [
+        2,
+        2,
+        2
+      ],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0,
+          1
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0,
+          1
+        ],
+        "torsion": []
+      },
+      "e": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 2,
+        "subgroupClasses": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "torsion": [
+          2
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0,
+          1
+        ],
+        "order": 2,
+        "subgroupClasses": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "torsion": [
+          2
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 2,
+        "subgroupClasses": [
+          0,
+          1
+        ],
+        "torsion": [
+          2
+        ]
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
+    }
+  },
+  {
+    "id": "signed_H_plus_4p1",
+    "name": "unitary C, C^2=1",
+    "hermann_mauguin": null,
+    "display_name": "unitary C, C^2=1",
+    "family": "charge_conjugation",
+    "physical_spin": "not_applicable_internal",
+    "spatial_dimension": 4,
+    "spacetime_dimension": 5,
+    "n0_scope": "intrinsic_zero",
+    "e0_scope": "not_applicable",
+    "e8_scope": "four_data_included",
+    "background": {
+      "G": "C2",
+      "alpha": "alpha(c)=1",
+      "omega": "0",
+      "rho": "alpha",
+      "s": "0"
+    },
+    "provenance": {
+      "input_sha256": "299b333ebfb7fc027788d7df32b0f75cf3af51413dc53f87fb107eae59673fad",
+      "path": "results/four_dimensional_20261016/raw/signed/signed_H_plus_4p1/result.json",
+      "physical_reference_target": "unitary_charge_conjugation_Hplus",
+      "record_sha256": "38d5465860086a1582fe19eb04e263598ed29830e7433a5babfe8039557272a6",
+      "source_sha256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+      "started_utc": "2026-10-16T07:38:06.983336+00:00"
+    },
+    "table": "4p1d/charge_conjugation.json",
+    "stacking": {
+      "torsion": [
+        2
+      ],
+      "freeRank": 0
+    },
+    "final_filtration": {
+      "charge": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "e": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 2,
+        "subgroupClasses": [
+          0,
+          1
+        ],
+        "torsion": [
+          2
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "phase": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      }
+    },
+    "intrinsic_response": {
+      "torsion": [],
+      "freeRank": 0
     }
   }
 ]

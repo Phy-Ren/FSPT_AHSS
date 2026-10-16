@@ -1,6 +1,6 @@
 # Computed U(1)^f insulator examples
 
-The current catalogue contains **584 distinct backgrounds** and **638 response-sector entries in 13 tables**. Each calculation fixes the symmetry group, physical spin, extension data, and response sector. Dimensions and physical spins have separate result files.
+The current catalogue contains **596 distinct backgrounds** and **664 response-sector entries in 16 tables**. Each calculation fixes the symmetry group, physical spin, extension data, and response sector. Dimensions and physical spins have separate result files.
 
 | Collection | Backgrounds | Response-sector entries |
 | --- | ---: | ---: |
@@ -8,7 +8,7 @@ The current catalogue contains **584 distinct backgrounds** and **638 response-s
 | [2+1D wallpaper groups](2p1d/README.md) | 34 | 68 |
 | [3+1D crystallographic point groups](3p1d/README.md) | 64 | 64 |
 | [3+1D space groups](3p1d/README.md) | 460 | 460 |
-| [4+1D internal cyclic groups](4p1d/README.md) | 6 | 6 |
+| [4+1D internal groups](4p1d/README.md) | 18 | 32 |
 
 The 2+1D collections keep `n0=0` and all allowed `n0` in separate files, both with `e0=0`. The 3+1D collections include E8 in the completed four-data calculation. The 4+1D cyclic examples retain the coupled E8 and shared-phase root relations.
 

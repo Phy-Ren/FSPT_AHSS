@@ -1,0 +1,300 @@
+{
+  "title": "4+1D unitary charge conjugation",
+  "scope": "Each row is one exact internal electronic symmetry; crystalline spin labels do not apply. E8, CI, charge and the common phase are computed with complete products and gauges. The intrinsic response pair (n0I,n0J) is fixed to zero. The invariant intrinsic row vanishes for these backgrounds, so this is the full group. Reference answers are applied after calculation. Physical derivations and their exact scope are recorded in the cited sources and accepted evidence.",
+  "family": "charge_conjugation",
+  "spatial_dimension": 4,
+  "spacetime_dimension": 5,
+  "physical_spin": "not_applicable_internal",
+  "n0_scope": "intrinsic_zero",
+  "e0_scope": "not_applicable",
+  "e8_scope": "four_data_included",
+  "columns": [
+    {
+      "key": "e",
+      "label": "e2 (E8)"
+    },
+    {
+      "key": "n",
+      "label": "n2 (CI)"
+    },
+    {
+      "key": "charge",
+      "label": "n4 (charge)"
+    },
+    {
+      "key": "phase",
+      "label": "nu5 (phase)"
+    },
+    {
+      "key": "intrinsic",
+      "label": "(n0I,n0J)"
+    },
+    {
+      "key": "stacking",
+      "label": "Final stacking"
+    },
+    {
+      "key": "derived_smith_v2__freed_hopkins_v6__debray_ye_yu_v2",
+      "label": "Smith/Freed–Hopkins derivation"
+    }
+  ],
+  "sources": {
+    "derived_smith_v2__freed_hopkins_v6__debray_ye_yu_v2": {
+      "authors": "Independent bordism derivation",
+      "columnLabel": "Smith/Freed–Hopkins derivation",
+      "location": "Source-specific tangent structures and exact sequence",
+      "method": "Derived Smith sequence with specified tangent spin twist; not copied 4+1D table; [Theorem 5.1; Corollary 5.8; Example 7.13 p.36](https://arxiv.org/abs/2405.04649v2); [Theorem 9.87/Table 9.88 p.93; Corollaries 9.89, 9.93, 9.95](https://arxiv.org/abs/1604.06527v6); [Proposition 6.27 and proof, p.48](https://arxiv.org/abs/2312.13341v2)",
+      "title": "Specified Smith sequence and bordism coefficients",
+      "url": "https://github.com/Phy-Ren/FSPT_AHSS/blob/insulator/docs/4p1d/calibration/BORDISM_TARGETS.md",
+      "version": "2026 review of pinned primary theorems"
+    }
+  },
+  "rows": [
+    {
+      "id": "signed_H_minus_4p1",
+      "name": "unitary C, C^2=(-1)^F",
+      "hermann_mauguin": null,
+      "display_name": "unitary C, C^2=(-1)^F",
+      "family": "charge_conjugation",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "derived_smith_v2__freed_hopkins_v6__debray_ye_yu_v2": {
+          "availability": "available",
+          "source": "derived_smith_v2__freed_hopkins_v6__debray_ye_yu_v2",
+          "fullUniformSectionApplicable": false,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2,
+              2,
+              2
+            ]
+          },
+          "method": "Derived Smith sequence with specified tangent spin twist; not copied 4+1D table",
+          "scope": "full_and_zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "G": "C2",
+        "alpha": "alpha(c)=1",
+        "omega": "alpha cup alpha / 2",
+        "rho": "alpha",
+        "s": "0"
+      },
+      "provenance": {
+        "input_sha256": "d4d2953ad55674490ee91a85721d367cbccf6a5fefba2324f6885d60e38246e4",
+        "path": "results/four_dimensional_20261016/raw/signed/signed_H_minus_4p1/result.json",
+        "physical_reference_target": "unitary_charge_conjugation_Hminus",
+        "record_sha256": "c7448de1e7bdc88621cab2bfe6160284c27987a26422d41dddf4bf8e77ae4d6e",
+        "source_sha256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+        "started_utc": "2026-10-16T07:38:13.802248+00:00"
+      }
+    },
+    {
+      "id": "signed_H_plus_4p1",
+      "name": "unitary C, C^2=1",
+      "hermann_mauguin": null,
+      "display_name": "unitary C, C^2=1",
+      "family": "charge_conjugation",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          }
+        },
+        "derived_smith_v2__freed_hopkins_v6__debray_ye_yu_v2": {
+          "availability": "available",
+          "source": "derived_smith_v2__freed_hopkins_v6__debray_ye_yu_v2",
+          "fullUniformSectionApplicable": false,
+          "group": {
+            "freeRank": 0,
+            "torsion": [
+              2
+            ]
+          },
+          "method": "Derived Smith sequence with specified tangent spin twist; not copied 4+1D table",
+          "scope": "full_and_zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "G": "C2",
+        "alpha": "alpha(c)=1",
+        "omega": "0",
+        "rho": "alpha",
+        "s": "0"
+      },
+      "provenance": {
+        "input_sha256": "299b333ebfb7fc027788d7df32b0f75cf3af51413dc53f87fb107eae59673fad",
+        "path": "results/four_dimensional_20261016/raw/signed/signed_H_plus_4p1/result.json",
+        "physical_reference_target": "unitary_charge_conjugation_Hplus",
+        "record_sha256": "38d5465860086a1582fe19eb04e263598ed29830e7433a5babfe8039557272a6",
+        "source_sha256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+        "started_utc": "2026-10-16T07:38:06.983336+00:00"
+      }
+    }
+  ],
+  "comparison_counts": {
+    "e": {
+      "not_compared": 2
+    },
+    "n": {
+      "not_compared": 2
+    },
+    "charge": {
+      "not_compared": 2
+    },
+    "phase": {
+      "not_compared": 2
+    },
+    "intrinsic": {
+      "not_compared": 2
+    },
+    "stacking": {
+      "not_compared": 2
+    },
+    "derived_smith_v2__freed_hopkins_v6__debray_ye_yu_v2": {
+      "match": 2
+    }
+  },
+  "availability_counts": {
+    "e": {
+      "available": 2
+    },
+    "n": {
+      "available": 2
+    },
+    "charge": {
+      "available": 2
+    },
+    "phase": {
+      "available": 2
+    },
+    "intrinsic": {
+      "available": 2
+    },
+    "stacking": {
+      "available": 2
+    },
+    "derived_smith_v2__freed_hopkins_v6__debray_ye_yu_v2": {
+      "available": 2
+    }
+  }
+}

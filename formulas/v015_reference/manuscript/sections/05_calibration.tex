@@ -1,0 +1,52 @@
+\section{Physical calibration that determines entire stacking groups}\label{sec:calibration}
+A useful calibration must distinguish candidate extensions, not only count leading decorations. We prioritize explicit anomaly theories on structured manifolds, exact root relations, and independent coefficient bounds. Large tables of local samples or matrix pivots are not part of the argument; they are retained in the supplementary reports.
+
+\subsection{A closed expression for every commuting cyclic symmetry}\label{v14:cyclic}
+Let $G_f=U(1)^f\times C_N$, with $N\ge2$. The tangential structure is $\Spinc\times C_N$. Write $g_2=\gcd(N,2)$ and $g_3=\gcd(N,3)$.
+\begin{theorem}[Physical cyclic family]\label{thm:all-cyclic}\label{v14:cyclicsize}
+Under the invertible-field-theory classification, the relative $4+1$-dimensional group is
+\begin{equation}\label{eq:all-cyclic}
+\boxed{\mathcal C^{4+1}_{\mathrm{rel}}(U(1)^f\times C_N)
+\cong
+\Z_{N/(g_2g_3)}\oplus\Z_{N/g_2}\oplus\Z_N\oplus\Z_{g_2^2g_3N}.}
+\end{equation}
+Factors $\Z_1$ are omitted. Allowing the two intrinsic uniform roots adds a free $\Z^2$. Independently computed complete-root relations of the adopted cochain model agree with a faithful physical pairing at
+\[
+N=2,3,4,5,6,7,8,9,10,12,15,16,18.
+\]
+The all-$N$ physical formula is analytic; the cochain comparison is asserted for these actually evaluated cases, not extrapolated from them.
+\end{theorem}
+
+The proof is sufficiently small to describe conceptually. Four actual Weyl-anomaly combinations realize the neutral, CI, charge and bosonic leading coefficients. They are evaluated on lens spaces $L^5(N;1,1,1)$ with specified $\Spinc$ structures and on $S^1\times\CP^2$. Their character matrix has determinant magnitude $N^{-4}$. The independent bordism AHSS bounds the group order by $N^4$, so the characters are complete. This is the upper-and-lower-bound criterion of Theorem~\ref{thm:recognition}.
+
+An integral change of physical generators makes the entire relation matrix transparent. Three generators are the charge-one anomaly theories of $R,R^2,R^3$, where $R=\lambda-1$ is the augmentation element of the auxiliary cyclic character. Their relations follow from $(1+R)^N=1$ and $R^4=0$ in the relevant five-dimensional anomaly theory. The fourth generator has the integral response $-xc^2$ and order $N$. Thus the physical presentation is $\Z_N$ together with
+\begin{equation}\label{eq:cyclic-Toeplitz}
+\begin{pmatrix}
+N&\binom N2&\binom N3\\
+0&N&\binom N2\\
+0&0&N
+\end{pmatrix}.
+\end{equation}
+Its Smith form gives \eqref{eq:all-cyclic}. The complete character construction, the determinant proof, and the prime-by-prime Smith calculation are in Appendix~\ref{app:cyclic-proof}. The fixed-point eta formula is an external input; its rational evaluation and the resulting full relation kernels are independently checked~\cite{BahriGilkey,Hsieh}. Bahri--Gilkey's classification presentation is cited only in its stated cyclic-two-group scope, not silently extended to all $N$.
+
+Three cases display the mechanisms without a long table. $C_2$ gives $\Z_2\oplus\Z_8$; $C_3$ gives $\Z_3^2\oplus\Z_9$; $C_{15}$ gives $\Z_5\oplus\Z_{15}^2\oplus\Z_{45}$. In the last case the fresh complete-state calculation gives
+\begin{equation}\label{eq:C15-relations}
+15X=5b,\qquad15Y=10b,\qquad15Q=15b=0.
+\end{equation}
+Here $X,Y,Q,b$ are the specified completed roots, not bare cocycles. The phase left by eliminating accumulated sheets and charge is included. A separate $C_7$ calculation gives four order-seven factors and provides a control with neither two- nor three-primary extension.
+
+\subsection{Finite charge restriction is a different calibration}\label{v14:restriction}
+Restricting $U(1)^f$ itself to $C_{2m}^f$ produces $\Spin\times_{\Z_2}C_{2m}$, not $\Spinc\times C_m$. For the intrinsic roots, the two physical characters are
+\begin{equation}\label{eq:finite-charge-map}
+\Phi_m(n_0)=\left(
+\frac{m^2-1}{24m}n_0^I+\frac{2m^2+m+1}{2m}n_0^J,
+\frac{m+1}{2m}n_0^I\right)\pmod1.
+\end{equation}
+They follow from the discrete eta-anomaly formula with cubic and mixed coefficients $n_0^I+24n_0^J$ and $n_0^I$~\cite{Hsieh}. In particular $\Phi_m(2J)=(1/m,0)$, the bosonic cubic character. For all $m$ together these maps separate the free intrinsic lattice; finitely many restrictions do not. They also cannot detect a natural mixed operation that vanishes when the extra quotient $G$ is trivial.
+
+\subsection{Signed backgrounds and lower-dimensional anchors}\label{subsec:3d-examples}
+The nontrivial signed tests use actual symmetric Hamiltonians before evaluating the cochain candidate. On $C_2^T\times C_2$, the eight specified half-valued representatives and the intrinsic inputs $I,J,2I,2J,2I+2J$ were all checked. Exact integer solvers include every sheet and CF completion class. All $28$ physically allowed intrinsic inputs have a completed cochain lift; all $76$ charge-completable sheet classes pass after the full CF quotient. This is a model-existence calibration, not a new independently tabulated full bordism group for the extra symmetry. Details and representative distinctions are retained in the supplementary record.
+
+The familiar anchors test different information. In $2+1$ dimensions, a completed charge root for $U(1)^f\times C_2$ satisfies $2x=b$ and $4x=0$, matching the relative $\Spinc$/$\mathrm{Pin}^c$ Smith comparison. In $3+1$ dimensions, the AIII CI root satisfies $4X=b$, $8X=0$; the physical eta identity identifies $b$ with $(-1)^{\int w_1^4}$, not merely an abstract order-two element~\cite{Metlitski,FreedHopkins,SmithFiber}. The independent neutral $E_8$ factor is retained. AI and AII use different circle extensions and must not be interchanged.
+
+A separate $4+1$-dimensional unitary charge-conjugation test with $C^2=(-1)^F$ fixes the previously isolated closed product term. In that background a hypothetical additional $\rho_1\bar n_2\bar n'_2/2$ would make a CI root square to a bosonic character detected by $\RP^5$. The corresponding independently identified bordism group has exponent two, so the coefficient is zero in the selected coordinate. The full structure identification and root calculation are retained in Appendix~\ref{app:physical-tests}; no crystalline classification table is used to select that coefficient.

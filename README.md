@@ -17,9 +17,9 @@ results.
 
 ## Computed examples
 
-The current catalogue contains **584 distinct backgrounds**: 578 crystalline
-backgrounds and six internal cyclic backgrounds. Their **638 response-sector
-entries** are organized into 13 tables:
+The current catalogue contains **596 distinct backgrounds**: 578 crystalline
+backgrounds and 18 internal backgrounds. Their **664 response-sector
+entries** are organized into 16 tables:
 
 - [2+1D](results/current/2p1d/README.md): all 10 planar point groups and 17
   wallpaper groups, for spinless and spin-1/2 electrons. Each background has
@@ -27,8 +27,10 @@ entries** are organized into 13 tables:
 - [3+1D](results/current/3p1d/README.md): all 32 crystallographic point groups
   and all **230 space groups**, for spinless and spin-1/2 electrons, with
   E8 included in the four-data calculation.
-- [4+1D](results/current/4p1d/README.md): internal unitary `C1` through `C6`,
-  with `s=rho=omega=0`, including the shared-phase E8 stacking relations.
+- [4+1D](results/current/4p1d/README.md): 14 commuting cyclic backgrounds
+  through `C18`, two unitary charge-conjugation backgrounds, and the
+  zero-intrinsic AI/AII sectors. Cyclic intrinsic-zero and full-response
+  classifications have separate tables, with explicit bordism sources.
 
 Each row records the four final filtration groups
 `(e_p,n_p,n_{p+2},nu_{p+3})`, with `p=d−2`, and the final stacking group.
@@ -44,9 +46,10 @@ Interacting literature classifications have separate, versioned columns.
 Layer comparisons remain distinct from stacking comparisons. In the
 space-group tables, the Song–Xiong–Huang comparison tests the neutral E8
 layer; a full interacting electronic benchmark remains unverified. The
-catalogue computes the selected four-data model. Its identification with
-the complete physical CI kernel remains conditional; agreement of final
-group types alone does not establish that identification.
+catalogue computes the selected four-data model. The general identification
+with the complete physical CI kernel remains conditional; the calibrated
+4+1D cases have their own stated character-kernel or bordism checks.
+Agreement of final group types alone does not establish a general identification.
 
 ## Formulas
 
@@ -66,9 +69,11 @@ identifications, arbitrary root relations, and an integer presentation.
 The 3+1D E8 extension computes signed integer `H1(G,Z_s)` for finite point
 groups or full affine space groups and combines its section with that
 presentation. Affine CI roots retain the full integer obstruction kernels;
-free translations are not replaced by finite holonomy. The 4+1D cyclic pilot
-computes all four layers together. Intrinsic higher-response sectors and a
-general global 4+1D classification remain outside the current catalogue.
+free translations are not replaced by finite holonomy. The 4+1D cyclic and
+signed C2 engines compute all four layers together. For commuting cyclic
+symmetry, the two intrinsic roots supply an independently justified uniform
+section. A general opened intrinsic solver and unrestricted global 4+1D
+classification remain outside the current catalogue.
 Missing operations are not assigned zero.
 
 ## Install and run
@@ -82,6 +87,8 @@ python3 scripts/classify.py --family point2 --jobs 4 --output runs/point2
 python3 scripts/classify.py --family wallpaper --jobs 4 --output runs/wallpaper
 python3 scripts/classify_3p1d.py --family point3 --jobs 4 --output runs/point3
 python3 scripts/classify_3p1d.py --family spacegroup --pair-spins --largest-first --jobs 4 --memory 32g --timeout 14400 --output runs/spacegroup
+python3 scripts/classify_cyclic_4p1.py --jobs 4 --output runs/cyclic4p1
+python3 scripts/signed_charge_conjugation_4p1.py --output runs/signed4p1
 ```
 
 For 3+1D, the unified command runs CI classification, the exact neutral E8

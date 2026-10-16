@@ -11,7 +11,10 @@ spacetime dimensions.
   [exact coefficients](../docs/formulas/COEFFICIENTS.md), and
   [root-power presentations](../docs/formulas/ROOT_POWER_PRESENTATIONS.md).
 - [Executable API and worker](../docs/formulas/IMPLEMENTATION.md).
-- [Computed 4+1D cyclic examples](../docs/formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md).
+- [Fourteen computed 4+1D cyclic examples](../docs/formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md),
+  including the complete physical relation kernel and the uniform response section.
+- [Signed C2 calculations](../docs/4p1d/calibration/SIGNED_C2.md) and
+  [independent interacting bordism targets](../docs/4p1d/calibration/BORDISM_TARGETS.md).
 
 The TeX source, coefficient appendices, frozen regression vectors, and
 universal certificates in this directory preserve the supplied calibrated
@@ -21,6 +24,22 @@ alternative runtime conventions. The CI archive is pinned in
 in [e8_provenance.json](e8_provenance.json). The fixed convention remains
 sheet-linear, cubic coefficient `1/6`, and additional coefficient
 `epsilon=0`. Source, product, and gauge coordinates are changed together.
+
+The [v0.15 provenance](v015_provenance.json) pins the reviewed intrinsic
+pair `(n0I,n0J)` and physical cyclic calibration. The retained
+[reference extracts](v015_reference/) support those arguments; they do
+not replace the active reduced source/product/gauge convention.
+
+Current 4+1D tables separate [cyclic intrinsic-zero](../results/current/4p1d/internal_cyclic/intrinsic_zero.md),
+[cyclic all-intrinsic](../results/current/4p1d/internal_cyclic/intrinsic_all.md),
+[unitary charge conjugation](../results/current/4p1d/charge_conjugation.md),
+and [AI/AII intrinsic-zero](../results/current/4p1d/time_reversal_intrinsic_zero.md).
+The [accepted campaign](../results/four_dimensional_20261016/accepted.json)
+contains fourteen cyclic and four signed backgrounds. The cyclic physical
+comparison checks the entire relation lattice; the all-intrinsic result
+uses the explicit trivial-action `Z²` section. The signed comparison uses
+source-specific bordism targets. Neither supplies a general opened-intrinsic
+solver or a universal terminal CI comparison.
 
 The [research record](../docs/e8/research/README.md) separates mathematical
 cochain identities, completed global computations, and the remaining

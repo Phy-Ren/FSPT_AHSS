@@ -1,0 +1,73 @@
+\section{A faithful cyclic pairing and its Smith normal form}\label{app:cyclic-proof}
+The analytic theorem below is a physical calculation using bordism and actual anomaly theories. The additional complete-cochain calculations are compared with it separately. In particular, the all-$N$ theorem does not follow by interpolation from a finite list of computed Smith forms.
+
+\subsection{Complete cochain roots and an independent physical dictionary}
+For residues $g\in\{0,\ldots,N-1\}$ let $a_1(g)=g/N$ and $x_2=da_1$. In the data order $(e_2,n_2,n_4,\nub_5)$ the completed roots used in the cochain calculation are
+\begin{align}
+X&=(x_2,0,0,a_1x_2^2/3),&Y&=(0,x_2,0,a_1x_2^2/6),\\
+Q&=(0,0,x_2^2,\zeta^{\Z}_{2,2}(x_2,x_2)/2),&b&=(0,0,0,a_1x_2^2).
+\label{v14:roots}
+\end{align}
+Their powers are computed with the actual product and the gauge eliminating accumulated integers. The relations have the form $NX=q_Xb$, $NY=r_NQ+q_Yb$, $NQ=r_Nb$, $Nb=0$, with $r_N=\binom N2\bmod N$. All such complete presentations for the evaluated cases are in the reports. The determinant is $N^4$, but a physical identification also needs an independent target.
+
+Only in this representation-ring calculation let $R=\lambda-1$. Let $\mathcal A_q(V)$ denote the anomaly theory of charge-$q$ Weyl fermions in a virtual auxiliary representation $V$. Negative coefficients mean inverse phases. The independent physical generators are
+\begin{align}
+X_\eta&=\mathcal A_1(9R-3R^2+2R^3)-\mathcal A_3(R),\\
+Y_\eta&=\mathcal A_1(R-R^2+R^3),\\
+Q_\eta&=\mathcal A_1(R^2-R^3),\qquad
+b_\eta=\mathcal A_1(R^3).
+\label{v14:physicalcharacters}
+\end{align}
+The representation is first defined on an auxiliary circle and restricted to $C_N$. Writing $x$ for its characteristic class, their degree-six index polynomials are
+\begin{equation}\label{v14:polydictionary}
+\begin{array}{c|l}
+X_\eta&(x^3-xp_1)/3\\
+Y_\eta&x(f^2/2-p_1/24)-fx^2/2+x^3/6\\
+Q_\eta&fx^2\\
+b_\eta&x^3.
+\end{array}
+\end{equation}
+The charge-three term has the local composite-electron realization in Appendix~\ref{app:physical-inputs}. Thus this dictionary is not manufactured from a candidate terminal cochain. It has the stated electric and thermal leading coefficients; a consistent lower bosonic relabeling is still a choice of physical root convention.
+
+\subsection{Exact eta values and the order certificate}
+Let $L_p=L^5(N;1,1,1)$ with determinant $(3+2p)x$, and let $P=S^1\times\CP^2$ have unit cyclic holonomy and determinant $h$ on $\CP^2$. The fixed-point eta formula gives, in the chosen common anomaly sign,
+\begin{equation}\label{v14:etamatrix}
+\begin{array}{c|cccc}
+ &X_\eta&Y_\eta&Q_\eta&b_\eta\\\hline
+L_p&\dfrac{2(N^2-1)}{3N}&\dfrac{N^2-6N+5+6p(p+2-N)}{12N}
+ &\dfrac{2p+N+3}{2N}&\dfrac1N\\[5pt]
+P&-\dfrac1N&0&0&0
+\end{array}\pmod1.
+\end{equation}
+The external inputs are the Spin-c index/eta theorem and the appropriate lens-space action~\cite{BahriGilkey,Hsieh}. Its arithmetic can be done exactly, rather than with approximate roots of unity. In $\Q[t]/(t^N-1)$ set
+\begin{equation}\label{v14:etaD}
+D_N(t)=\sum_{j=0}^{N-1}\frac{N-1-2j}{2N}t^j,
+\quad
+(1-t)D_N=1-\frac1N\sum_{j=0}^{N-1}t^j.
+\end{equation}
+The eta sum for auxiliary weight $z$, odd electric charge $q$, and structure $p$ is the constant coefficient of $t^{(3q+3)/2+qp+z}D_N(t)^3$. This reproduces every entry in \eqref{v14:etamatrix}. The product manifold uses the index $(q^2-1)/8$ and the circle character $z/N$.
+
+The four rational rows $(L_0,L_1,L_2,P)$ have determinant magnitude $N^{-4}$. Let $K$ be the kernel of their mod-one evaluation on $\Z^4$. Since $H K\subseteq\Z^4$, $|\det H|[\Z^4:K]$ is a positive integer, so the image has at least $N^4$ elements. The independent coefficient calculation gives
+\[
+\Omega_0^{\Spinc}=\Z,\quad\Omega_2^{\Spinc}=\Z,
+\quad\Omega_4^{\Spinc}=\Z^2,\quad\Omega_1^{\Spinc}=\Omega_3^{\Spinc}=\Omega_5^{\Spinc}=0.
+\]
+In total degree five the reduced bordism AHSS therefore has order at most $N^4$, from $(p,q)=(5,0),(3,2),(1,4)$~\cite{FreedHopkins}. The bounds agree. The reduced degree-six bordism has no rational part, so the relative deformation group is the character group of this finite degree-five bordism. The evaluation is faithful and complete by Theorem~\ref{thm:recognition}.
+
+\subsection{The integral relation matrix for all $N$}
+Use the physical generators
+\[
+S=X_\eta-8Y_\eta-4Q_\eta+b_\eta,
+\qquad\mathcal A_1(R),\quad\mathcal A_1(R^2),\quad\mathcal A_1(R^3).
+\]
+The change of basis from $(X_\eta,Y_\eta,Q_\eta,b_\eta)$ has determinant one. From \eqref{v14:polydictionary}, $S$ has the integral response $-xc^2$. It is of order dividing $N$ after the auxiliary circle is restricted, and evaluates to $-1/N$ on $P$. The other three generators evaluate to zero on $P$.
+
+On $\Spinc\times U(1)$, the relevant continuous-background degree-five bordism vanishes and the degree-six bordism is free: its AHSS has only even-degree free entries in this range. Consequently the anomaly of $R^4$ is trivial in this dimension, since its characteristic series starts in degree eight. Restricting to $C_N$ preserves this equality. Expanding $(1+R)^N-1=0$ and multiplying by $R,R^2$ gives the three rows of \eqref{eq:cyclic-Toeplitz}. Along with $NS=0$ they define a presentation of order $N^4$. The already established physical group has exactly that order and is generated by these phases, so there are no additional relations. This proves the presentation for arbitrary $N$.
+
+\subsection{Prime-by-prime Smith calculation}
+Write $k=v_p(N)$. At a prime $p\ge5$ the valuations of the three elementary divisors of \eqref{eq:cyclic-Toeplitz} are $(k,k,k)$. At $p=3$, they are $(k-1,k,k+1)$: the first determinantal divisor has valuation $k-1$, the second has valuation $2k-1$, and the determinant has valuation $3k$. At $p=2$, they are $(k-1,k-1,k+2)$, with second determinantal divisor of valuation $2k-2$. The relevant minor is $\binom N2^2-N\binom N3$; its leading valuation cannot cancel in either exceptional case. Adding the independent $\Z_N$ factor and assembling coprime primary pieces yields \eqref{eq:all-cyclic}.
+
+The exact arithmetic script verifies the determinant, the integral basis change, the full character kernel, and the Smith form for $N=2,\ldots,128$ and nine further composite/prime-power controls. These finite checks are certificates of the printed analytic calculation, not its logical replacement.
+
+\subsection{What the actual cochain calculation adds}
+For each of the thirteen stated cyclic cases, the exact row lattice from complete root powers is compared with the full kernel of \eqref{v14:etamatrix}, using Hermite normal form. This comparison is stronger than equality of Smith factors. The two additional cases $N=7,15$ were computed afresh with the unchanged evaluator; the preceding eleven were also rerun. No all-$N$ local parity transfer or cochain classification is inferred solely from these finite comparisons.

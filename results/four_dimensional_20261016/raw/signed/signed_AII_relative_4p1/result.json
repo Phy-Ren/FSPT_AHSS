@@ -1,0 +1,488 @@
+{
+  "classification": {
+    "actualGroupOrder": 1,
+    "finalFiltration": {
+      "charge": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "e": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "n": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      },
+      "phase": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0
+        ],
+        "torsion": []
+      }
+    },
+    "freeRank": 0,
+    "generators": [],
+    "incomingGeneratorCount": 2,
+    "intrinsicScope": {
+      "n0I": 0,
+      "n0J": 0,
+      "status": "restricted_zero"
+    },
+    "physicalCertificationScope": "Independent order/character calibration is external to this solver",
+    "physicalClassificationCertified": false,
+    "preIncomingStateCount": 1,
+    "presentation": [],
+    "presentationGeneratorCount": 0,
+    "smithDiagonal": [],
+    "status": "complete_fixed_four_data_model",
+    "torsion": [],
+    "witnesses": {
+      "canonicalStates": [
+        {
+          "e_2": 0,
+          "n_2": 0,
+          "n_4": 0,
+          "nu_5": "0"
+        }
+      ],
+      "checks": {
+        "associativityChecks": 1,
+        "commutativityChecks": 1,
+        "fullGaugeMoveChecks": 8,
+        "gaugeEvaluations": 10,
+        "normalizationFaceChecks": 1087,
+        "productEvaluations": 1,
+        "quotientCompatibilityChecks": 1,
+        "sourceEvaluations": 2
+      },
+      "finalProductTable": [
+        [
+          0
+        ]
+      ],
+      "fullGaugeMoves": [
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": -1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 2,
+            "nu_5": "0"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 2,
+                "nu_5": "0"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": -1,
+                "v_1": 0
+              },
+              "phaseCorrection": "0"
+            }
+          ]
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 0,
+            "u_3": -1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": -2,
+            "nu_5": "0"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": -2,
+                "nu_5": "0"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 1,
+                "v_1": 0
+              },
+              "phaseCorrection": "0"
+            }
+          ]
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 1,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 2,
+            "nu_5": "0"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 2,
+                "nu_5": "0"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": -1,
+                "v_1": 0
+              },
+              "phaseCorrection": "0"
+            }
+          ]
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": -1,
+            "u_3": -1,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": -2,
+            "nu_5": "0"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": -2,
+                "nu_5": "0"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 1,
+                "v_1": 0
+              },
+              "phaseCorrection": "0"
+            }
+          ]
+        }
+      ],
+      "identityClass": 0,
+      "incomingActions": [
+        {
+          "canonicalEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "input": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "inputIndex": 0,
+          "name": "closed_E8_v1",
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": [],
+          "relation": []
+        },
+        {
+          "canonicalEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "input": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "inputIndex": 0,
+          "name": "closed_CI_u1",
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": [],
+          "relation": []
+        }
+      ],
+      "orderedProducts": [
+        {
+          "left": 0,
+          "output": 0,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": [],
+          "right": 0
+        }
+      ],
+      "preIncomingProductTable": [
+        [
+          0
+        ]
+      ],
+      "quotientClassOfState": [
+        0
+      ],
+      "quotientRepresentatives": [
+        0
+      ],
+      "resolution": {
+        "basis": "(c,...,c); alpha(c)=1",
+        "chargeParameterDegree": 3,
+        "closedIncomingScalarFormulas": {
+          "charge_H3": "0",
+          "u1=m": "n4 -> n4 + (omega_half-1)*m; phase is an exact signed U(1) gauge",
+          "v1=m": "lower state unchanged; phase is exact"
+        },
+        "completeness": [
+          "All normalized cochains are scalar; every degree-five and degree-six equation is evaluated.",
+          "For trivial integer signs the even-degree cohomology representatives are 0,1; exact parts are removed by actual joint gauges.",
+          "For the nontrivial integer sign closed even-degree cochains vanish; odd-degree closed parameters generate the recorded incoming actions.",
+          "Every integer gauge parameter is generated by unit scalar parameters; after sheet/charge normalization the remaining closed parameter actions are included on every complete state.",
+          "For s=1 every closed phase is removed by the surjective rational phase gauge d_4=-2; for s=0 the two exact phase completions are retained.",
+          "The complete ordered product table, incoming compatibility, abelian group laws and presentation order are checked exactly."
+        ],
+        "complex": "complete normalized inhomogeneous C2 bar complex",
+        "differentialFormula": "d_chi in degree p = (-1)^chi + (-1)^(p+1)",
+        "integerSignedDifferentials": {
+          "0": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          "1": [
+            -2,
+            0,
+            -2,
+            0,
+            -2,
+            0,
+            -2
+          ]
+        },
+        "limitations": [
+          "Only the four declared signed C2 backgrounds are accepted.",
+          "n0I=n0J=0; forced for H+/H-, a restriction for AI/AII.",
+          "This proves the fixed four-data cochain quotient; physical-spectrum identification needs independent calibration."
+        ],
+        "nondegenerateCellsInEachDegree": 1,
+        "phaseParameterDegree": 4,
+        "sheetParameterDegree": 1
+      },
+      "rootRelations": [],
+      "stateWords": [
+        []
+      ]
+    }
+  },
+  "input": {
+    "dimension": 4,
+    "family": "time_reversal",
+    "generatorSquare": "(-1)^F",
+    "group": "C2",
+    "id": "signed_AII_relative_4p1",
+    "intrinsic": {
+      "n0I": 0,
+      "n0J": 0,
+      "status": "restricted_zero"
+    },
+    "omega": "alpha^2/2",
+    "orderedFields": [
+      "e_2",
+      "n_2",
+      "n_4",
+      "nu_5"
+    ],
+    "phaseGaugeConvention": "adopted joint source-cylinder gauge",
+    "physicalSpin": "not_applicable_internal",
+    "referenceTarget": "time_reversal_AII",
+    "rho": "0",
+    "s": "alpha"
+  },
+  "physicalComparison": {
+    "status": "independent_target_not_loaded_by_solver",
+    "universalPhysicalSpectrumCertified": false
+  },
+  "run": {
+    "elapsedSeconds": 1.238319,
+    "exitCode": 0,
+    "host": "n08.local",
+    "id": "signed_AII_relative_4p1",
+    "inputSHA256": "d9758086d05063bb232c9927e06fe7f9dd1ac41edc9aa67baee4aab5b5609408",
+    "pythonVersion": "3.13.12",
+    "sourceSHA256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+    "startedUTC": "2026-10-16T07:38:35.596461+00:00",
+    "status": "complete"
+  }
+}

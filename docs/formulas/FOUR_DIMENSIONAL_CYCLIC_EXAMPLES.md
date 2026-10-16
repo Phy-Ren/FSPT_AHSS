@@ -1,16 +1,20 @@
 # 4+1D computed examples: internal cyclic symmetry
 
-These are global calculations of the original four-data model, ordered
-`(e_2,n_2,n_4,nu_5)`, for a unitary internal `C_N` commuting with `U(1)^f`.
-The backgrounds are exactly `s=rho=0` and `omega=0`. A cyclic label here
-does not stand for a crystalline rotation or a spin convention.
+The accepted calculations cover
+`N=1,2,3,4,5,6,7,8,9,10,12,15,16,18` for a unitary internal `C_N`
+commuting with `U(1)^f`. Their backgrounds are exactly `s=rho=omega=0`.
+The original four-data model is ordered `(e_2,n_2,n_4,nu_5)`. A cyclic
+label here does not specify a crystalline rotation or physical spin lift.
 
-The [current results](../../results/current/4p1d/internal_cyclic.md) and
-[accepted records](../../results/expansion_20261015/4p1d/internal_cyclic/results.json)
-contain the six actual cluster computations. The
-[independent root audit](../../results/expansion_20261015/4p1d/cyclic_root_audit.json)
-checks the complete root relations by a different evaluation path and
-verifies every saved native phase-boundary witness.
+The results are separated into [zero intrinsic response](../../results/current/4p1d/internal_cyclic/intrinsic_zero.md)
+and [all intrinsic responses](../../results/current/4p1d/internal_cyclic/intrinsic_all.md).
+The [accepted evidence](../../results/four_dimensional_20261016/accepted.json)
+and [validation](../../results/four_dimensional_20261016/validation.json)
+retain the complete presentations and physical comparisons. All fourteen
+cases pass; the nontrivial cases agree with the entire independent eta
+character kernel in the specified physical-root dictionary, not just its
+Smith factors. The all-intrinsic table additionally uses the uniform
+section proved below.
 
 ## Cohomology, obstructions, and incoming completeness
 
@@ -25,15 +29,15 @@ H^2(C_N,\mathbb Z)=H^4(C_N,\mathbb Z)
 The integer source vanishes identically because `B3=rho=0`. The terminal
 target vanishes, so both sheet roots and the charge root admit phase
 completions. Closed incoming sheet and charge parameters are classified
-by `H1(C_N,Z)=0` and `H3(C_N,Z)=0`; there is no additional incoming
-cohomology class to quotient. Their exact representatives are already
-covered by the full cochain gauges. The four filtration layers each
-have order `N`, so the completed presentation must have order `N^4`.
-This order check alone does not determine its extensions.
+by `H^1(C_N,Z)=H^3(C_N,Z)=0`; there is no additional incoming
+cohomology class to quotient. Their exact representatives are covered by
+the full cochain gauges. The four filtration layers each have order `N`,
+so the completed presentation has order `N^4`. This order alone does not
+determine the stacking extensions. For `N=1` the relative group is zero.
 
 ## Canonical completed roots
 
-Write group elements as `g^j`, `0<=j<N`, and use
+Write group elements as `g^j`, `0<=j<N`, and use the integer cochains
 
 ```math
 a(g^j)=j,\qquad
@@ -41,113 +45,264 @@ x(g^i,g^j)=\left\lfloor\frac{i+j}{N}\right\rfloor,
 \qquad da=Nx,\qquad dx=0.
 ```
 
-In the order E8, CI, charge, phase, choose
+In E8, CI, charge, phase order the roots are
 
 ```math
-X=\left(x,0,0,\frac{a x^2}{3N}\right),\qquad
-Y=\left(0,x,0,\frac{a x^2}{6N}\right),\qquad
-b=\left(0,0,0,\frac{a x^2}{N}\right).
+\begin{aligned}
+X&=\left(x,0,0,\frac{a x^2}{3N}\right),&
+Y&=\left(0,x,0,\frac{a x^2}{6N}\right),\\
+Q&=\left(0,0,x^2,\frac12\zeta^{\mathbb Z}_{2,2}(x,x)\right),&
+b&=\left(0,0,0,\frac{a x^2}{N}\right).
+\end{aligned}
 ```
 
-The charge root has `n4=x^2`. The global solver obtains its phase from
-an exact resolution primitive. The independent Python audit instead uses
-the explicit phase `zeta^Z_(2,2)(x,x)/2`. Its differential is the charge
-source: the two `x^3` terms in the integral Cartan identity cancel over
-`F2`. These are two specified completion procedures; their phases need
-not be pointwise equal.
+The Cartan identity supplies the phase completion of `Q`: its differential
+is the charge source, with the two `x^3` terms cancelling modulo two.
+The integer identities `da=Nx`, `dx=0`, the Cartan identity, and the full
+source/product/gauge identities justify these constructions globally.
+The retained six-simplex checks test the implementations of those identities;
+they are not presented as an enumeration of all bar six-simplices.
 
-The canonical sheets solve the complete source equations. Each root is
-checked on the native resolution and on explicit normalized bar
-simplices. The pilot then forms every `N`th power with the full product,
-removes its sheets with the complete joint gauge, extracts and removes
-its charge root, and solves the final exact phase. No phase from sheet
-or charge removal is discarded.
+The calculation forms every `N`th power using the complete product,
+removes its sheets by the actual joint gauge, extracts and removes the
+charge root, and evaluates the remaining closed phase. Every step retains
+its induced higher fields and phase correction.
 
-## Actual root relations and final groups
+## Complete powers and detection of the shared phase
 
-All rows below use the same generator names `X,Y,Q,b`. The last relation
-is always `Nb=0`.
-
-| Internal group | Neutral root | CI root | Charge root | Final stacking group |
-| --- | --- | --- | --- | --- |
-| `C1` | no positive-degree root | no positive-degree root | no positive-degree root | `0` |
-| `C2` | `2X=0` | `2Y=Q+b` | `2Q=b` | `Z2 × Z8` |
-| `C3` | `3X=b` | `3Y=2b` | `3Q=0` | `Z3² × Z9` |
-| `C4` | `4X=0` | `4Y=2Q` | `4Q=2b` | `Z2² × Z4 × Z16` |
-| `C5` | `5X=0` | `5Y=0` | `5Q=0` | `Z5⁴` |
-| `C6` | `6X=2b` | `6Y=3Q+b` | `6Q=3b` | `Z3 × Z6 × Z72` |
-
-For example, `C2` has `4Y=b`, hence an order-eight CI root, while the
-neutral root supplies an independent order-two class. For `C3`, `X`
-has order nine, `Y-2X` has order three, and `Q` has order three. The two
-sheet relations share `b`; the result is not the product of independent
-E8 and CI classifications. The `C6` group also has the same primary
-decomposition as the product of the computed `C2` and `C3` groups.
-
-## Independent checks
-
-The standard normalized cyclic five-cycle is
+The normalized cyclic five-cycle is
 
 ```math
 \tau_5=\sum_{i,j=0}^{N-1}[g\mid g^i\mid g\mid g^j\mid g].
 ```
 
-Terms containing an identity vanish. Pairing with `tau5` detects
-`H5(C_N,R/Z)`, and `b(tau5)=1/N`. The Python audit constructs the
-canonical cochains directly on these simplices, computes full powers
-with `insulator.E8State`, removes sheets using `v=-a` or `u=-a`, and
-removes a remaining charge multiple `kN x^2` using `w=-k a x`.
-It reproduces every displayed presentation for `N=2,...,6`, without the
-GAP resolution, its completed charge root, or its primitive solver.
+Terms containing an identity vanish, leaving `(N-1)^2` evaluations.
+This cycle generates `H_5(C_N,Z)=Z_N`. Since `R/Z` is divisible,
+the pairing identifies `H^5(C_N,R/Z)` with its character group;
+`b(tau5)=1/N`. Thus evaluation on the **whole cycle** determines the
+remaining phase class exactly.
 
-The neutral coefficient also has a closed analytic check. The carry
-cocycle `x` is binary and `x cup_1 x=0` over integers: in
-`x(023)x(012)-x(013)x(123)`, closure equates the sums of two binary pairs,
-and therefore their products. Neutral stacking produces no twister for
-multiples of `x`. After removing `Nx` with `v=-a`, the phase is
+For each cycle term the solver constructs the canonical cochains,
+computes the complete powers, removes sheets with `v=-a` or `u=-a`,
+and removes a remaining charge multiple `kN x^2` with `w=-k a x`.
+It checks that all lower fields vanish before taking the final pairing.
+The [raw case records](../../results/four_dimensional_20261016/raw/cyclic/)
+retain the intermediate states, actual gauges, phase corrections, source
+checks, and cycle contributions. A zero pairing proves a phase boundary
+here; the cycle method does not claim to construct a full bar primitive.
+
+With `r_N=binom(N,2) mod N`, the computed relations have the form
+
+```math
+NX=q_Xb,\qquad NY=r_NQ+q_Yb,\qquad NQ=r_Nb,\qquad Nb=0.
+```
+
+Here `q_X,q_Y` are measured after the complete reductions just described.
+In the generator order `(X,Y,Q,b)`, the retained row lattice is
+
+```math
+L_N=\operatorname{rowspan}_{\mathbb Z}
+\begin{pmatrix}
+N&0&0&-q_X\\
+0&N&-r_N&-q_Y\\
+0&0&N&-r_N\\
+0&0&0&N
+\end{pmatrix}.
+```
+
+For `C2`, `2X=0`, `2Y=Q+b`, and `2Q=b`: the CI root has order eight,
+giving `Z2 × Z8`. For `C3`, `3X=b`, `3Y=2b`, and `3Q=0`, giving
+`Z3² × Z9`. For `C15`, `15X=5b`, `15Y=10b`, and `15Q=0`, giving
+`Z5 × Z15² × Z45`. The two sheet sectors share `b`; multiplying
+independently classified E8 and CI sectors would lose these relations.
+
+There is also an analytic neutral check. The carry cocycle `x` is binary,
+and `x cup_1 x=0` over integers: closure equates the sums of the two
+binary pairs in `x(023)x(012)-x(013)x(123)`, hence their products.
+The neutral self-products therefore have no twister. After removing
+`Nx` with `v=-a`, the phase is
 
 ```math
 \frac{a x^2-N^2x^2a}{3}.
 ```
 
-Both ordered numerators pair to one with `tau5`, so
+Both ordered monomials pair to one with `tau5`, so
 
 ```math
-NX=\left[\frac{N(1-N^2)}3\bmod N\right]b
- =\begin{cases}(N/3)b,&3\mid N,\\0,&3\nmid N.\end{cases}
+q_X=\frac{N(1-N^2)}3\bmod N
+ =\begin{cases}N/3,&3\mid N,\\0,&3\nmid N.\end{cases}
 ```
 
-A separate resolution-only audit verifies
-`d(nativePhasePrimitive)=residualNativePhase mod1` for all twenty stored
-nontrivial root relations. The `C6` charge relation has a nonzero exact
-residual and a nonzero primitive; requiring the residual cochain itself
-to vanish would incorrectly reject this valid relation.
+The independent GAP resolution implementation and its native phase
+primitives provide a further control at `C2,C3,C4`. A valid relation
+requires its residual phase to be exact, not to vanish as a cochain.
+
+## Independent physical generators and the complete relation kernel
+
+The reviewed [v0.15 Appendix K](../../formulas/v015_reference/manuscript/appendices/K_cyclic_proof.tex)
+gives a physical calculation using Spin-c bordism and electronic anomaly
+theories. In this paragraph only, let `R=lambda-1` in the representation
+ring of an auxiliary circle. Let `A_q(V)` denote the anomaly theory of
+odd-charge `q` Weyl fermions in a virtual auxiliary representation `V`;
+negative coefficients denote inverse phases. Its physical roots are
+
+```math
+\begin{aligned}
+X_\eta&=\mathcal A_1(9R-3R^2+2R^3)-\mathcal A_3(R),\\
+Y_\eta&=\mathcal A_1(R-R^2+R^3),\\
+Q_\eta&=\mathcal A_1(R^2-R^3),\qquad
+b_\eta=\mathcal A_1(R^3).
+\end{aligned}
+```
+
+The auxiliary circle is restricted to `C_N`. The charge-three term is
+an allowed composite-electron response; these generators do not assert
+a free-band classification. Their index polynomials, in this order, are
+
+```math
+\frac{x^3-xp_1}{3},\qquad
+x\left(\frac{f^2}{2}-\frac{p_1}{24}\right)-\frac{fx^2}{2}+\frac{x^3}{6},
+\qquad fx^2,\qquad x^3.
+```
+
+Here `f` is the electric curvature class, `x` the auxiliary first Chern
+class, and `p1` the tangent first Pontryagin class.
+These fix the electric and thermal leading responses and the chosen
+lower-layer convention independently of the cochain calculation.
+
+Let `L_p=L^5(N;1,1,1)` carry the canonical complex-induced Spin-c
+structure twisted by `lambda^p`. Its determinant is `(3+2p)x`; the
+determinant alone would not specify the structure for even `N`.
+Let `P=S^1 × CP^2` have unit cyclic holonomy and determinant `h` on
+`CP^2`. In the common anomaly sign, their eta evaluations are
+
+```math
+\begin{array}{c|cccc}
+ &X_\eta&Y_\eta&Q_\eta&b_\eta\\\hline
+L_p&\dfrac{2(N^2-1)}{3N}
+ &\dfrac{N^2-6N+5+6p(p+2-N)}{12N}
+ &\dfrac{2p+N+3}{2N}&\dfrac1N\\[5pt]
+P&-\dfrac1N&0&0&0
+\end{array}\pmod1.
+```
+
+The [physical evaluator](../../insulator/cyclic_physical.py) independently
+reconstructs the lens entries using exact arithmetic in `Q[t]/(t^N-1)`:
+
+```math
+D_N(t)=\sum_{j=0}^{N-1}\frac{N-1-2j}{2N}t^j,\qquad
+(1-t)D_N=1-\frac1N\sum_{j=0}^{N-1}t^j.
+```
+
+For odd charge `q`, auxiliary weight `z`, and structure `p`, it takes the
+constant coefficient of `t^((3q+3)/2+qp+z) D_N^3`, then forms the stated
+virtual representations. No cochain root relations or expected Smith
+factors enter this calculation. It finds the exact integral kernel
+
+```math
+K_N=\ker\left[\mathbb Z^4\xrightarrow{(L_0,\ldots,L_{N-1},P)}
+ (\mathbb Q/\mathbb Z)^{N+1}\right]
+```
+
+and compares its Hermite normal form with `L_N`. Every accepted nontrivial
+case satisfies **`L_N=K_N`**.
+
+Completeness has an independent order certificate. The low Spin-c
+coefficients are `Omega_0=Z`, `Omega_2=Z`, `Omega_4=Z²`, and zero in
+odd degrees through five. The total-degree-five bordism AHSS therefore
+bounds the relative group order by `N^4`, from bidegrees `(5,0)`, `(3,2)`,
+and `(1,4)`. The four rational eta rows `(L_0,L_1,L_2,P)` have determinant
+magnitude `N^-4`, forcing the character image to have order at least
+`N^4`. The bounds coincide. Reduced degree-six bordism has no rational
+part, so there is no additional relative free response.
+
+The physical proof holds for every positive `N`. With
+`g2=gcd(N,2)` and `g3=gcd(N,3)`, its relative group is
+
+```math
+\mathbb Z_{N/(g_2g_3)}\oplus\mathbb Z_{N/g_2}
+\oplus\mathbb Z_N\oplus\mathbb Z_{g_2^2g_3N},
+```
+
+omitting `Z1`. Its all-`N` presentation follows from the integral
+representation-ring relation `(1+R)^N=1` and the vanishing of the
+degree-five anomaly of `R^4`; Appendix K gives the unimodular physical
+basis change and Smith calculation. The complete **cochain-to-physical
+relation comparison** here covers the fourteen listed cases, not every `N`.
+
+External sources have distinct scopes. [Freed–Hopkins, Theorem 9.87 and
+Table 9.88, v6](https://arxiv.org/abs/1604.06527v6) supplies the interacting
+bordism framework and coefficient groups. [Bahri–Gilkey (1987),
+Theorem 0.1(b) and its following Remark](https://doi.org/10.2140/pjm.1987.128.1)
+gives a published cyclic **2-power** comparison, used at `N=2,4,8,16`;
+its Lemmas 2.2–2.3 give eta input. [Hsieh (2018), §2.3,
+v1](https://arxiv.org/abs/1808.02881v1) provides related eta arithmetic
+for a different finite charge symmetry. The all-`N` formula above is the
+reviewed project derivation, not an all-`N` result attributed to either
+paper. Exact source-specific targets are recorded in the
+[bordism reference ledger](../4p1d/calibration/BORDISM_TARGETS.md).
+
+## Uniform intrinsic pair and its natural section
+
+The extra 4+1D coefficient row is the pair `(n0I,n0J)`, separate from
+`(e_2,n_2,n_4,nu_5)`. With `c=2f` the Spin-c determinant class, its
+integral response basis is
+
+```math
+I=\frac{c^3-cp_1}{48},\qquad J=\frac{c^3}{2}.
+```
+
+For this direct-product symmetry, let `p:U(1)^f × C_N -> U(1)^f`
+forget `C_N`, and let `i` insert its identity. Pullback gives
+`i* p*=id`. Thus assigning trivial `C_N` action to either uniform root
+defines a natural group section of the restriction map, and
+
+```math
+\mathcal C^{4+1}(U(1)^f\times C_N)
+ \cong\ker i^*\oplus\mathbb Z\{I\}\oplus\mathbb Z\{J\}.
+```
+
+The all-intrinsic table uses exactly this section. Substitution into the
+reviewed opened-sheet equations at `s=rho=omega=0` gives `B3=0` and
+allows `e2=n2=n4=nu5=0` for either unit intrinsic root. This is a direct
+zero-input check plus the physical section argument; it is not an
+execution of a general opened-intrinsic cochain solver. The pair is not
+the scalar uniform IQH coefficient used in 2+1D. No analogous canonical
+section is assumed for charge-conjugating, time-reversing, projective,
+or general crystalline backgrounds.
 
 ## Reproduction and scope
 
-The isolated implementation is
-[cyclic_4p1.g](../../formulas/examples/cyclic_4p1.g). It is valid for a
-positive cyclic order with these specified backgrounds and does not
-relax the general classifier's dimension checks. Run a fresh case with
+Run the [exact cyclic driver](../../scripts/classify_cyclic_4p1.py) on an
+idle compute node with a new output directory:
 
 ```bash
-python scripts/pilot_cyclic_4p1.py --order 2 --order 3 --output /path/to/new-run
+python3 scripts/classify_cyclic_4p1.py --jobs 4 --timeout 600 --output NEW_DIRECTORY
 ```
 
-Run the independent audit on saved records with
+This selects all fourteen orders. Repeated `--order N` options select a
+subset. The runner saves computed cochain results before the independent
+physical comparison, so a disagreement preserves the mathematical
+evidence. Acceptance additionally verifies source/input/evidence hashes
+and the integer presentation independently.
+
+The implementation caches exact source, product, and gauge evaluations
+with complete cochain and symmetry keys. The bounded reference comparison
+checks literal equality of every retained classification and witness:
 
 ```bash
-python scripts/audit_cyclic_4p1.py --input /path/to/saved-run --output /path/to/new-audit.json
+python3 scripts/benchmark_cyclic_4p1.py --order 3 --order 6 --output NEW_BENCHMARK.json
 ```
 
-`tests/test_pilot_cyclic_4p1.py` checks the smallest complete presentations,
-the neutral `C3` cube on every normalized bar five-simplex, and the
-independent bar-cycle reduction. The actual campaign additionally retains
-the frozen source hash, input hashes, runtime logs, roots, gauges,
-primitive witnesses, and Smith presentations.
+The cyclic engine uses the Python standard library and the repository's
+exact operation arrays. GAP is needed only for the separate resolution
+controls. Raw model records keep their universal physical-certification
+flag false; `physicalComparison` records the stronger, **family-specific**
+kernel certificate. That certificate does not construct a universal
+terminal CI comparison or a general global 4+1D classifier.
 
-These are complete global results of the specified four-data cochain
-model. The records explicitly set `physicalClassificationCertified=false`:
-the universal physical CI-kernel identification is not proved by these
-calculations or by a matching abstract group. No intrinsic uniform
-4+1D response has been added to this scoped calculation.
+The other accepted signed backgrounds are documented separately:
+[unitary charge conjugation](../../results/current/4p1d/charge_conjugation.md)
+and [AI/AII at zero intrinsic response](../../results/current/4p1d/time_reversal_intrinsic_zero.md).
+Their complete gauge calculation and distinct physical comparison scope
+are given in [Signed C2](../4p1d/calibration/SIGNED_C2.md).

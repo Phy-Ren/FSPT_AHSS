@@ -1,0 +1,375 @@
+{
+  "classification": {
+    "actualGroupOrder": 16,
+    "cycleTerms": 1,
+    "expectedOrderFromFiltration": 16,
+    "filtrationOrders": [
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [
+        2
+      ]
+    ],
+    "freeRank": 0,
+    "generators": [
+      {
+        "kind": "neutral-E8"
+      },
+      {
+        "kind": "CI-sheet"
+      },
+      {
+        "kind": "charge"
+      },
+      {
+        "kind": "shared-phase"
+      }
+    ],
+    "group": {
+      "family": "internal_cyclic",
+      "order": 2
+    },
+    "incomingCohomology": {
+      "charge": [],
+      "sheet": []
+    },
+    "integerSourceIdenticallyZero": true,
+    "nonvacuousRootCompletionChecks": 4,
+    "orderedFields": [
+      "e_2",
+      "n_2",
+      "n_4",
+      "nu_5"
+    ],
+    "phaseDetection": {
+      "cycle": "sum_(i,j=0)^(N-1) [g|g^i|g|g^j|g]",
+      "phasePrimitive": "Relations are certified as exact by complete periodic-cycle detection; no explicit full-bar primitive is asserted.",
+      "phaseRootPeriod": "1/2",
+      "reason": "H^5(C_N,R/Z)=Z_N and this normalized cycle generates H_5(C_N,Z); pairing determines the entire phase class."
+    },
+    "physicalClassificationCertified": false,
+    "presentation": [
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        2,
+        -1
+      ],
+      [
+        0,
+        0,
+        0,
+        2
+      ]
+    ],
+    "presentationGeneratorCount": 4,
+    "rootPhasePairings": [
+      "0",
+      "1/2",
+      "1/2",
+      "0"
+    ],
+    "rootWitnesses": [
+      {
+        "chargeCoefficient": 0,
+        "phaseCoefficient": 0,
+        "power": 2,
+        "root": "X"
+      },
+      {
+        "chargeCoefficient": 1,
+        "phaseCoefficient": 1,
+        "power": 2,
+        "root": "Y"
+      },
+      {
+        "chargeCoefficient": 0,
+        "phaseCoefficient": 1,
+        "power": 2,
+        "root": "Q"
+      },
+      {
+        "chargeCoefficient": 0,
+        "phaseCoefficient": 0,
+        "power": 2,
+        "root": "b"
+      }
+    ],
+    "scope": "Complete original four-data model for internal s=rho=omega=0; intrinsic row excluded from this cochain calculation.",
+    "sourceIdentity": [
+      "da=Nx and dx=0 give d(a*x^2/(3N))=x^3/3 and d(a*x^2/(6N))=x^3/6.",
+      "The integral Cartan identity gives d(zeta_22(x,x)/2)=Sq^2(bar(x^2))/2 modulo one.",
+      "Full source/product/gauge identities transport these completed roots through every operation."
+    ],
+    "spatialDimension": 4,
+    "terminalObstructionTargetOrders": [],
+    "theory": "U(1)^f insulator",
+    "torsion": [
+      2,
+      8
+    ]
+  },
+  "evidence": {
+    "cycleTerms": 1,
+    "path": "cycle_evidence.json",
+    "scope": "All normalized periodic-cycle terms with actual complete states, powers and sheet/charge gauges.",
+    "sha256": "b532e807cfcc31e1a52b6e9a8fff464e12f4ce4e112ca342079ddc2032a42a3d"
+  },
+  "input": {
+    "crystallineSpinConvention": "not_assumed",
+    "dimension": 4,
+    "family": "internal_cyclic",
+    "id": "internal_cyclic_2_4p1",
+    "intrinsicR0Included": false,
+    "intrinsicRowIncluded": false,
+    "omega": "0",
+    "order": 2,
+    "orderedFields": [
+      "e_2",
+      "n_2",
+      "n_4",
+      "nu_5"
+    ],
+    "physicalSpin": "not_applicable",
+    "rho": 0,
+    "s": 0
+  },
+  "physicalComparison": {
+    "etaCycles": [
+      "L5(N;1,1,1), canonical complex-induced Spin-c structure twisted by lambda^p (determinant (3+2p)x), p=0",
+      "L5(N;1,1,1), canonical complex-induced Spin-c structure twisted by lambda^p (determinant (3+2p)x), p=1",
+      "S1 x CP2, unit cyclic holonomy, determinant h"
+    ],
+    "etaEvaluations": "Exact Q[C_N] pseudoinverse cube; independently checked against analytic eta formula.",
+    "etaKernelHNF": [
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        2,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "etaPairing": [
+      [
+        "0",
+        "7/8",
+        "1/4",
+        "1/2"
+      ],
+      [
+        "0",
+        "1/8",
+        "3/4",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "exactRelationLatticeMatch": true,
+    "generatorOrder": [
+      "X_E8",
+      "Y_CI",
+      "Q_charge",
+      "b_phase"
+    ],
+    "independentAHSSOrderBound": 16,
+    "modelRelationHNF": [
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        2,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "orderBoundReason": "Omega_q^Spin-c: Z at q=0,2; Z^2 at q=4; zero at odd q<=5. Total-degree-five reduced AHSS has size at most N^4.",
+    "physicalGenerators": [
+      "A1(9R-3R^2+2R^3)-A3(R)",
+      "A1(R-R^2+R^3)",
+      "A1(R^2-R^3)",
+      "A1(R^3)"
+    ],
+    "physicalRelativeOrder": 16,
+    "references": [
+      {
+        "authors": "D. S. Freed and M. J. Hopkins",
+        "id": "FreedHopkins",
+        "title": "Reflection positivity and invertible topological phases",
+        "url": "https://arxiv.org/abs/1604.06527v6",
+        "use": "Structured invertible phases and low Spin-c coefficient groups.",
+        "version": "v6",
+        "year": 2021
+      },
+      {
+        "authors": "A. Bahri and P. Gilkey",
+        "doi": "10.2140/pjm.1987.128.1",
+        "id": "BahriGilkey",
+        "title": "The eta invariant, Pin^c bordism, and equivariant Spin^c bordism for cyclic 2-groups",
+        "url": "https://doi.org/10.2140/pjm.1987.128.1",
+        "use": "Spin-c lens eta input; Theorem 0.1 is not an all-N classification theorem.",
+        "year": 1987
+      },
+      {
+        "authors": "C.-T. Hsieh",
+        "id": "Hsieh",
+        "title": "Discrete gauge anomalies revisited",
+        "url": "https://arxiv.org/abs/1808.02881v1",
+        "use": "Exact lens eta arithmetic. Its finite fermionic-charge symmetry is not identified with Spin-c x C_N.",
+        "version": "v1",
+        "year": 2018
+      },
+      {
+        "id": "SuppliedV015",
+        "locator": "Appendix K, v14:physicalcharacters, v14:etamatrix, faithful cyclic pairing",
+        "title": "Electronic Insulator AHSS v0.15",
+        "use": "Reviewed independent physical generator dictionary and all-N order proof; supplied manuscript, not a published external classification."
+      }
+    ],
+    "relationCharacterChecks": 12,
+    "scope": "Full relation lattice in the reviewed physical-root dictionary for this internal direct-product cyclic symmetry; no universal terminal map claimed.",
+    "status": "PASS"
+  },
+  "run": {
+    "cache": {
+      "capacity": 4096,
+      "enabled": true,
+      "entries": 28,
+      "evictions": 0,
+      "hits": {
+        "ci_gauge": 4,
+        "ci_product": 4,
+        "neutral_gauge": 6,
+        "neutral_product": 8,
+        "source": 45
+      },
+      "misses": {
+        "ci_gauge": 4,
+        "ci_product": 7,
+        "neutral_gauge": 2,
+        "neutral_product": 3,
+        "source": 12
+      }
+    },
+    "command": [
+      "/home/user/xyren/AllFSPT_insulator/runtime4p1-v015/bin/python3",
+      "/home/user/xyren/AllFSPT_insulator/runs/calibrated_4p1d_20261016/source/scripts/classify_cyclic_4p1.py",
+      "--worker-order",
+      "2",
+      "--worker-directory",
+      "/home/user/xyren/AllFSPT_insulator/runs/calibrated_4p1d_20261016/cyclic/internal_cyclic_2_4p1",
+      "--worker-source",
+      "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+      "--cache",
+      "on"
+    ],
+    "elapsedSeconds": 0.164104,
+    "exitCode": 0,
+    "finishedUTC": "2026-10-16T07:38:19.781208+00:00",
+    "host": "n08.local",
+    "id": "internal_cyclic_2_4p1",
+    "inputSHA256": "f7bc9c7f7f47189debac774fbdd7c2cff077bd5702da05c85bbc1d0c75cfceca",
+    "python": "3.13.12 | packaged by conda-forge | (main, Feb  5 2026, 05:53:46) [GCC 14.3.0]",
+    "sourceSHA256": "af7dd7fec371d10d548e551f7ea8155d063926c3fe7aecc1d196a36b1487465d",
+    "startedUTC": "2026-10-16T07:38:19.445908+00:00",
+    "status": "complete",
+    "timeoutSeconds": 600
+  },
+  "schema": "u1-cyclic-4p1-complete-roots-v1",
+  "uniformResponse": {
+    "cochainIntrinsicImplemented": false,
+    "fullGroup": {
+      "freeRank": 2,
+      "torsion": [
+        2,
+        8
+      ]
+    },
+    "intrinsicBasis": [
+      "I",
+      "J"
+    ],
+    "intrinsicFreeRank": 2,
+    "scope": "Separate physical natural-section statement for the direct product only; the recorded cochain campaign is the original four-data relative theory.",
+    "section": "Give each symmetry-independent I or J root the trivial C_N action; equivalently pull back along B(U1f x C_N) -> BU1f.",
+    "splitting": "Forgetting C_N composed with this section is the identity, so the full physical group is canonically the relative kernel plus Z I plus Z J.",
+    "zeroLowerLift": {
+      "background": "s=rho=omega=0",
+      "check": "B=0; all primary, charge, and terminal terms in the reviewed intrinsic formulas vanish on these inputs.",
+      "evidenceType": "Direct zero-input substitution and the physical natural section, not an intrinsic formula-runtime execution.",
+      "intrinsicInputs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "lowerFields": {
+        "e_2": 0,
+        "n_2": 0,
+        "n_4": 0,
+        "nu_5": 0
+      }
+    }
+  }
+}

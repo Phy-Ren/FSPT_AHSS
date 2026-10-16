@@ -1,0 +1,1294 @@
+{
+  "schema": "4p1d_prospective_bordism_targets_v1",
+  "review_date": "2026-10-16",
+  "scope": "Reference targets only, not classifier outputs. Interacting electronic phases; original four-data sector retains E8 and zero uniform I,J. Full intrinsic groups are sourced separately.",
+  "sources": {
+    "v015_cyclic": {
+      "authors": "Project electronic AHSS supplement",
+      "year": 2026,
+      "version": "v0.15 reviewed 2026-10-16",
+      "locator": "Section 5; Appendix K",
+      "method": "Independent physical eta pairing, bordism order bound, and augmentation presentation; project proof, not an external printed classification table",
+      "scope": "All N physical target; complete candidate comparison only at thirteen listed N",
+      "title": "Electronic Insulator AHSS v0.15"
+    },
+    "bahri_gilkey_1987": {
+      "authors": [
+        "Anthony Bahri",
+        "Peter Gilkey"
+      ],
+      "year": 1987,
+      "title": "The eta invariant, Pinc bordism, and equivariant Spinc bordism for cyclic 2-groups",
+      "url": "https://doi.org/10.2140/pjm.1987.128.1",
+      "locator": "Theorem 0.1(b) and following Remark, printed p.1",
+      "method": "Published reduced Spin-c bordism formula, specialized to degree five",
+      "scope": "Cyclic 2-groups; no attribution of the all-N formula"
+    },
+    "freed_hopkins_v6": {
+      "authors": [
+        "Daniel S. Freed",
+        "Michael J. Hopkins"
+      ],
+      "year": 2021,
+      "version": "arXiv:1604.06527v6, 2022-12-18",
+      "url": "https://arxiv.org/abs/1604.06527v6",
+      "locator": "Theorem 9.87/Table 9.88 p.93; Corollaries 9.89, 9.93, 9.95",
+      "method": "Interacting invertible-field-theory TP column and bordism coefficient groups",
+      "scope": "Specified tangential structure; do not use FF column",
+      "title": "Reflection Positivity and Invertible Topological Phases"
+    },
+    "smith_v2": {
+      "authors": [
+        "Arun Debray",
+        "Sanath K. Devalapurkar",
+        "Cameron Krulewski",
+        "Yu Leon Liu",
+        "Natalia Pacheco-Tallaj",
+        "Ryan Thorngren"
+      ],
+      "year": 2026,
+      "version": "arXiv:2405.04649v2, 2026-04-19",
+      "url": "https://arxiv.org/abs/2405.04649v2",
+      "locator": "Theorem 5.1; Corollary 5.8; Example 7.13 p.36",
+      "method": "Smith exact sequence / Spin-c to Pin-c equivalence",
+      "title": "The Smith Fiber Sequence and Invertible Field Theories"
+    },
+    "debray_ye_yu_v2": {
+      "authors": [
+        "Arun Debray",
+        "Weicheng Ye",
+        "Matthew Yu"
+      ],
+      "year": 2025,
+      "version": "arXiv:2312.13341v2, 2025-05-21",
+      "url": "https://arxiv.org/abs/2312.13341v2",
+      "locator": "Proposition 6.27 and proof, p.48",
+      "method": "Pin-tilde-c+ twist 3E and explicit wall bordism generators",
+      "title": "Bosonization and Anomaly Indicators of (2+1)-D Fermionic Topological Orders"
+    },
+    "bmss_v1": {
+      "authors": [
+        "Robert Bruner",
+        "Khairia Mira",
+        "Laura Stanley",
+        "Victor Snaith"
+      ],
+      "year": 2010,
+      "publication_year": 2015,
+      "version": "arXiv:1008.0166v1",
+      "url": "https://arxiv.org/abs/1008.0166v1",
+      "locator": "Corollary 2.5; Theorem 2.12",
+      "method": "Exact graded connective complex K-homology, used as a bordism summand",
+      "title": "Ossa's Theorem via the Kunneth formula"
+    },
+    "buchanan_mckean_2026": {
+      "authors": [
+        "Jonathan Buchanan",
+        "Stephen McKean"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.2140/agt.2026.26.485",
+      "locator": "Theorem 3.6 p.492; Table 3 p.538",
+      "method": "2-local Spin-c spectrum splitting through the needed range",
+      "title": "KSp-characteristic classes determine Spin^h cobordism"
+    },
+    "thorngren_else_v6": {
+      "authors": [
+        "Ryan Thorngren",
+        "Dominic V. Else"
+      ],
+      "year": 2018,
+      "version": "arXiv:1612.00846v6, 2017-09-12",
+      "url": "https://arxiv.org/abs/1612.00846v6",
+      "locator": "Section III.C",
+      "method": "Crystalline equivalence on contractible space, under crystalline topological liquid assumptions",
+      "title": "Gauging spatial symmetries and the classification of topological crystalline phases"
+    }
+  },
+  "cases": [
+    {
+      "id": "internal_cyclic_1",
+      "priority": 1,
+      "symmetry": "U(1)^f x C1",
+      "background": {
+        "G": "C1",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C1",
+      "zero_uniform_target": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_2",
+      "priority": 1,
+      "symmetry": "U(1)^f x C2",
+      "background": {
+        "G": "C2",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C2",
+      "zero_uniform_target": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          2,
+          8
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        },
+        {
+          "source": "bahri_gilkey_1987",
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "specialization": {
+            "N": 2,
+            "bordism_degree": 5,
+            "A_degrees": [
+              5,
+              1
+            ]
+          },
+          "confidence": "high; published formula specialized"
+        },
+        {
+          "sources": [
+            "smith_v2",
+            "freed_hopkins_v6"
+          ],
+          "group": {
+            "torsion": [
+              2,
+              8
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "method": "reduced Omega5 Spin-c(BC2) = Omega4 Pin-c",
+          "confidence": "high; independent theorem combination"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_3",
+      "priority": 1,
+      "symmetry": "U(1)^f x C3",
+      "background": {
+        "G": "C3",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C3",
+      "zero_uniform_target": {
+        "torsion": [
+          3,
+          3,
+          9
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          3,
+          3,
+          9
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              3,
+              3,
+              9
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_4",
+      "priority": 1,
+      "symmetry": "U(1)^f x C4",
+      "background": {
+        "G": "C4",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C4",
+      "zero_uniform_target": {
+        "torsion": [
+          2,
+          2,
+          4,
+          16
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          2,
+          2,
+          4,
+          16
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              16
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        },
+        {
+          "source": "bahri_gilkey_1987",
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              16
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "specialization": {
+            "N": 4,
+            "bordism_degree": 5,
+            "A_degrees": [
+              5,
+              1
+            ]
+          },
+          "confidence": "high; published formula specialized"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_5",
+      "priority": 1,
+      "symmetry": "U(1)^f x C5",
+      "background": {
+        "G": "C5",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C5",
+      "zero_uniform_target": {
+        "torsion": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              5,
+              5,
+              5,
+              5
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_6",
+      "priority": 1,
+      "symmetry": "U(1)^f x C6",
+      "background": {
+        "G": "C6",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C6",
+      "zero_uniform_target": {
+        "torsion": [
+          3,
+          6,
+          72
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          3,
+          6,
+          72
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              3,
+              6,
+              72
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_7",
+      "priority": 1,
+      "symmetry": "U(1)^f x C7",
+      "background": {
+        "G": "C7",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C7",
+      "zero_uniform_target": {
+        "torsion": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_8",
+      "priority": 1,
+      "symmetry": "U(1)^f x C8",
+      "background": {
+        "G": "C8",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C8",
+      "zero_uniform_target": {
+        "torsion": [
+          4,
+          4,
+          8,
+          32
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          4,
+          4,
+          8,
+          32
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              4,
+              4,
+              8,
+              32
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        },
+        {
+          "source": "bahri_gilkey_1987",
+          "group": {
+            "torsion": [
+              4,
+              4,
+              8,
+              32
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "specialization": {
+            "N": 8,
+            "bordism_degree": 5,
+            "A_degrees": [
+              5,
+              1
+            ]
+          },
+          "confidence": "high; published formula specialized"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_9",
+      "priority": 1,
+      "symmetry": "U(1)^f x C9",
+      "background": {
+        "G": "C9",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C9",
+      "zero_uniform_target": {
+        "torsion": [
+          3,
+          9,
+          9,
+          27
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          3,
+          9,
+          9,
+          27
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              3,
+              9,
+              9,
+              27
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_10",
+      "priority": 1,
+      "symmetry": "U(1)^f x C10",
+      "background": {
+        "G": "C10",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C10",
+      "zero_uniform_target": {
+        "torsion": [
+          5,
+          5,
+          10,
+          40
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          5,
+          5,
+          10,
+          40
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              5,
+              5,
+              10,
+              40
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_12",
+      "priority": 1,
+      "symmetry": "U(1)^f x C12",
+      "background": {
+        "G": "C12",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C12",
+      "zero_uniform_target": {
+        "torsion": [
+          2,
+          6,
+          12,
+          144
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          2,
+          6,
+          12,
+          144
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              2,
+              6,
+              12,
+              144
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_15",
+      "priority": 1,
+      "symmetry": "U(1)^f x C15",
+      "background": {
+        "G": "C15",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C15",
+      "zero_uniform_target": {
+        "torsion": [
+          5,
+          15,
+          15,
+          45
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          5,
+          15,
+          15,
+          45
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              5,
+              15,
+              15,
+              45
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_16",
+      "priority": 1,
+      "symmetry": "U(1)^f x C16",
+      "background": {
+        "G": "C16",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C16",
+      "zero_uniform_target": {
+        "torsion": [
+          8,
+          8,
+          16,
+          64
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          8,
+          8,
+          16,
+          64
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              8,
+              8,
+              16,
+              64
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        },
+        {
+          "source": "bahri_gilkey_1987",
+          "group": {
+            "torsion": [
+              8,
+              8,
+              16,
+              64
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "specialization": {
+            "N": 16,
+            "bordism_degree": 5,
+            "A_degrees": [
+              5,
+              1
+            ]
+          },
+          "confidence": "high; published formula specialized"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_cyclic_18",
+      "priority": 1,
+      "symmetry": "U(1)^f x C18",
+      "background": {
+        "G": "C18",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C18",
+      "zero_uniform_target": {
+        "torsion": [
+          3,
+          9,
+          18,
+          216
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          3,
+          9,
+          18,
+          216
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "source": "v015_cyclic",
+          "group": {
+            "torsion": [
+              3,
+              9,
+              18,
+              216
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "confidence": "high; reviewed analytic physical proof"
+        }
+      ],
+      "tests": "Full sheet/charge gauge phases and nontrivial root extensions",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "unitary_charge_conjugation_Hminus",
+      "priority": 1,
+      "symmetry": "unitary C, C^2=(-1)^F",
+      "background": {
+        "G": "C2",
+        "alpha": "alpha(c)=1",
+        "s": "0",
+        "rho": "alpha",
+        "omega": "alpha cup alpha / 2"
+      },
+      "tangential_structure": "(Spin x Pin-(2))/diagonal Z2",
+      "spin_twist": "TM + E + L",
+      "smith_wall": "Pin-tilde-c+",
+      "zero_uniform_target": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          2,
+          2,
+          2
+        ],
+        "freeRank": 0
+      },
+      "intrinsic_response_image": "0",
+      "sources": [
+        {
+          "sources": [
+            "smith_v2",
+            "freed_hopkins_v6",
+            "debray_ye_yu_v2"
+          ],
+          "group": {
+            "torsion": [
+              2,
+              2,
+              2
+            ],
+            "freeRank": 0
+          },
+          "scope": "full_and_zero_uniform",
+          "method": "Derived Smith sequence with specified tangent spin twist; not copied 4+1D table",
+          "confidence": "high; independently reviewed derivation"
+        }
+      ],
+      "tests": "E8 retained; CI obstruction, square, incoming phases, and exponent-two physical detector",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "unitary_charge_conjugation_Hplus",
+      "priority": 1,
+      "symmetry": "unitary C, C^2=1",
+      "background": {
+        "G": "C2",
+        "alpha": "alpha(c)=1",
+        "s": "0",
+        "rho": "alpha",
+        "omega": "0"
+      },
+      "tangential_structure": "(Spin x Pin+(2))/diagonal Z2",
+      "spin_twist": "TM + E + 3L",
+      "smith_wall": "Pin-tilde-c-",
+      "zero_uniform_target": {
+        "torsion": [
+          2
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          2
+        ],
+        "freeRank": 0
+      },
+      "intrinsic_response_image": "0",
+      "sources": [
+        {
+          "sources": [
+            "smith_v2",
+            "freed_hopkins_v6",
+            "debray_ye_yu_v2"
+          ],
+          "group": {
+            "torsion": [
+              2
+            ],
+            "freeRank": 0
+          },
+          "scope": "full_and_zero_uniform",
+          "method": "Derived Smith sequence with specified tangent spin twist; not copied 4+1D table",
+          "confidence": "high; independently reviewed derivation"
+        }
+      ],
+      "tests": "E8 retained; CI obstruction, square, incoming phases, and exponent-two physical detector",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "time_reversal_AI",
+      "priority": 1,
+      "symmetry": "AI: antiunitary T^2=1",
+      "background": {
+        "G": "C2^T",
+        "s": "alpha",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Pin-tilde-c-",
+      "zero_uniform_target": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "2Z{I} + 2Z{J}",
+      "intrinsic_image_source": "v0.15 signed primary obstruction plus actual electronic realizations; FH gives abstract group",
+      "sources": [
+        {
+          "source": "freed_hopkins_v6",
+          "locator": "Corollary 9.95",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          },
+          "scope": "full",
+          "confidence": "high; directly published interacting TP5"
+        },
+        {
+          "source": "freed_hopkins_v6",
+          "locator": "Theorem 9.87: Omega5=0",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "method": "No finite torsion and finite-index rank-two uniform image",
+          "confidence": "high"
+        }
+      ],
+      "tests": "Vanishing zero-uniform group; do not confuse labelled AI and AII uniform lattices",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "time_reversal_AII",
+      "priority": 1,
+      "symmetry": "AII: antiunitary T^2=(-1)^F",
+      "background": {
+        "G": "C2^T",
+        "s": "alpha",
+        "rho": "0",
+        "omega": "alpha cup alpha / 2"
+      },
+      "tangential_structure": "Pin-tilde-c+",
+      "zero_uniform_target": {
+        "torsion": [],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "intrinsic_image_source": "v0.15 signed primary obstruction plus actual electronic realizations; FH gives abstract group",
+      "sources": [
+        {
+          "source": "freed_hopkins_v6",
+          "locator": "Corollary 9.93",
+          "group": {
+            "torsion": [],
+            "freeRank": 2
+          },
+          "scope": "full",
+          "confidence": "high; directly published interacting TP5"
+        },
+        {
+          "source": "freed_hopkins_v6",
+          "locator": "Theorem 9.87: Omega5=0",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "method": "No finite torsion and finite-index rank-two uniform image",
+          "confidence": "high"
+        }
+      ],
+      "tests": "Vanishing zero-uniform group; do not confuse labelled AI and AII uniform lattices",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "internal_c2_product_c2",
+      "priority": 2,
+      "symmetry": "U(1)^f x C2 x C2",
+      "background": {
+        "G": "C2 x C2",
+        "s": "0",
+        "rho": "0",
+        "omega": "0"
+      },
+      "tangential_structure": "Spin-c x C2 x C2",
+      "zero_uniform_target": {
+        "torsion": [
+          2,
+          2,
+          4,
+          8,
+          8
+        ],
+        "freeRank": 0
+      },
+      "full_target": {
+        "torsion": [
+          2,
+          2,
+          4,
+          8,
+          8
+        ],
+        "freeRank": 2
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "sources": [
+        {
+          "sources": [
+            "bmss_v1",
+            "buchanan_mckean_2026"
+          ],
+          "group": {
+            "torsion": [
+              2,
+              2,
+              4,
+              8,
+              8
+            ],
+            "freeRank": 0
+          },
+          "scope": "zero_uniform",
+          "method": "Omega5=ku5+ku1; ku5=Z8^2+Z4 and ku1=Z2^2; even-degree HF2 grading",
+          "confidence": "high; derived from exact primary decompositions"
+        }
+      ],
+      "tests": "First noncyclic mixed roots, differential and stacking extensions; retain shifted ku1 summand",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    },
+    {
+      "id": "translations_z4",
+      "priority": 2,
+      "symmetry": "U(1)^f with four independent spatial translations",
+      "background": {
+        "G": "Z^4",
+        "s": "0",
+        "rho": "0",
+        "omega": "0",
+        "spatial_representation": "identity linear part; rank-four translation lattice"
+      },
+      "tangential_structure": "Spin-c with map to T^4",
+      "zero_uniform_target": {
+        "torsion": [],
+        "freeRank": 13
+      },
+      "full_target": {
+        "torsion": [],
+        "freeRank": 15
+      },
+      "zero_uniform_layer_ranks": {
+        "e2": 6,
+        "n2": 6,
+        "n4": 1,
+        "nu5": 0
+      },
+      "intrinsic_response_image": "Z{I} + Z{J}",
+      "atomic_filling_retained": true,
+      "sources": [
+        {
+          "sources": [
+            "freed_hopkins_v6",
+            "thorngren_else_v6"
+          ],
+          "group": {
+            "torsion": [],
+            "freeRank": 13
+          },
+          "scope": "zero_uniform",
+          "method": "Derived stable splitting T4_+ = wedge binom(4,k) S^k; TP5=Z^2, TP3=Z^2, TP1=Z",
+          "confidence": "high within stated crystalline/generalized-cohomology framework"
+        }
+      ],
+      "tests": "Infinite group with free positive filtration; E8 and CI layer multiplicities and atomic charge",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "physical_spin": "not_applicable_no_rotation",
+      "e8_included": true,
+      "comparison_status": "not_compared",
+      "record_kind": "prospective_reference_target",
+      "calculation_completed": false
+    }
+  ],
+  "source_corrections": [
+    "Smith arXiv2405.04649v2 Spin-c/Pin-c equivalence is Example7.13 p36, not unversionedExample7.11.",
+    "Keep tangent spin twists explicit: unitary Hminus and Hplus are different from antiunitary AII and AI.",
+    "No published erroneous crystalline table is used as a benchmark."
+  ]
+}

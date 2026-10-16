@@ -1,0 +1,4392 @@
+{
+  "classification": {
+    "actualGroupOrder": 8,
+    "finalFiltration": {
+      "charge": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0,
+          1
+        ],
+        "order": 1,
+        "subgroupClasses": [
+          0,
+          1
+        ],
+        "torsion": []
+      },
+      "e": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "order": 2,
+        "subgroupClasses": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "torsion": [
+          2
+        ]
+      },
+      "n": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0,
+          1
+        ],
+        "order": 2,
+        "subgroupClasses": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "torsion": [
+          2
+        ]
+      },
+      "phase": {
+        "freeRank": 0,
+        "lowerSubgroupClasses": [
+          0
+        ],
+        "order": 2,
+        "subgroupClasses": [
+          0,
+          1
+        ],
+        "torsion": [
+          2
+        ]
+      }
+    },
+    "freeRank": 0,
+    "generators": [
+      {
+        "name": "E8",
+        "quotientClass": 4,
+        "state": {
+          "e_2": 1,
+          "n_2": 0,
+          "n_4": 0,
+          "nu_5": "1/6"
+        }
+      },
+      {
+        "name": "CI",
+        "quotientClass": 2,
+        "state": {
+          "e_2": 0,
+          "n_2": 1,
+          "n_4": 0,
+          "nu_5": "7/48"
+        }
+      },
+      {
+        "name": "phase",
+        "quotientClass": 1,
+        "state": {
+          "e_2": 0,
+          "n_2": 0,
+          "n_4": 0,
+          "nu_5": "1/2"
+        }
+      }
+    ],
+    "incomingGeneratorCount": 1,
+    "intrinsicScope": {
+      "n0I": 0,
+      "n0J": 0,
+      "status": "forced_zero"
+    },
+    "physicalCertificationScope": "Independent order/character calibration is external to this solver",
+    "physicalClassificationCertified": false,
+    "preIncomingStateCount": 8,
+    "presentation": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ]
+    ],
+    "presentationGeneratorCount": 3,
+    "smithDiagonal": [
+      2,
+      2,
+      2
+    ],
+    "status": "complete_fixed_four_data_model",
+    "torsion": [
+      2,
+      2,
+      2
+    ],
+    "witnesses": {
+      "canonicalStates": [
+        {
+          "e_2": 0,
+          "n_2": 0,
+          "n_4": 0,
+          "nu_5": "0"
+        },
+        {
+          "e_2": 0,
+          "n_2": 0,
+          "n_4": 0,
+          "nu_5": "1/2"
+        },
+        {
+          "e_2": 0,
+          "n_2": 1,
+          "n_4": 0,
+          "nu_5": "7/48"
+        },
+        {
+          "e_2": 0,
+          "n_2": 1,
+          "n_4": 0,
+          "nu_5": "31/48"
+        },
+        {
+          "e_2": 1,
+          "n_2": 0,
+          "n_4": 0,
+          "nu_5": "1/6"
+        },
+        {
+          "e_2": 1,
+          "n_2": 0,
+          "n_4": 0,
+          "nu_5": "2/3"
+        },
+        {
+          "e_2": 1,
+          "n_2": 1,
+          "n_4": 0,
+          "nu_5": "5/16"
+        },
+        {
+          "e_2": 1,
+          "n_2": 1,
+          "n_4": 0,
+          "nu_5": "13/16"
+        }
+      ],
+      "checks": {
+        "associativityChecks": 512,
+        "commutativityChecks": 64,
+        "fullGaugeMoveChecks": 64,
+        "gaugeEvaluations": 112,
+        "normalizationFaceChecks": 17266,
+        "productEvaluations": 64,
+        "quotientCompatibilityChecks": 64,
+        "sourceEvaluations": 4
+      },
+      "finalProductTable": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          6,
+          7,
+          4,
+          5
+        ],
+        [
+          3,
+          2,
+          1,
+          0,
+          7,
+          6,
+          5,
+          4
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          4,
+          7,
+          6,
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          6,
+          7,
+          4,
+          5,
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "fullGaugeMoves": [
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 2,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/3"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/3"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -2,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "2/3"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": -2,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "19/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "19/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": -1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": -2,
+            "n_4": 3,
+            "nu_5": "17/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": -2,
+                "n_4": 3,
+                "nu_5": "17/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "7/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 0,
+            "u_3": -1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 1,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 2,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "1/8"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "1/8"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "7/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 0,
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": -1,
+            "u_3": -1,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -2,
+            "n_2": -2,
+            "n_4": 3,
+            "nu_5": "3/8"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": -2,
+                "n_2": -2,
+                "n_4": 3,
+                "nu_5": "3/8"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "5/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 1,
+          "outputIndex": 1,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 2,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "5/6"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "5/6"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 1,
+          "outputIndex": 1,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -2,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": -2,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 1,
+          "outputIndex": 1,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "7/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "7/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 1,
+          "outputIndex": 1,
+          "parameters": {
+            "u_1": -1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": -2,
+            "n_4": 3,
+            "nu_5": "5/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": -2,
+                "n_4": 3,
+                "nu_5": "5/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "7/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 1,
+          "outputIndex": 1,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/2"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 1,
+          "outputIndex": 1,
+          "parameters": {
+            "u_1": 0,
+            "u_3": -1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/2"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 1,
+          "outputIndex": 1,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 1,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 2,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "5/8"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "5/8"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "7/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 1,
+          "outputIndex": 1,
+          "parameters": {
+            "u_1": -1,
+            "u_3": -1,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -2,
+            "n_2": -2,
+            "n_4": 3,
+            "nu_5": "7/8"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": -2,
+                "n_2": -2,
+                "n_4": 3,
+                "nu_5": "7/8"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "5/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 2,
+          "outputIndex": 2,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "23/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "23/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 2,
+          "outputIndex": 2,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "before": {
+                "e_2": -2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "13/16"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 2,
+          "outputIndex": 2,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 3,
+            "n_4": 3,
+            "nu_5": "7/16"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 3,
+                "n_4": 3,
+                "nu_5": "7/16"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "17/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 2,
+          "outputIndex": 2,
+          "parameters": {
+            "u_1": -1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": -1,
+            "n_4": 1,
+            "nu_5": "17/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": -1,
+                "n_4": 1,
+                "nu_5": "17/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "19/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 2,
+          "outputIndex": 2,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 2,
+          "outputIndex": 2,
+          "parameters": {
+            "u_1": 0,
+            "u_3": -1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 2,
+          "outputIndex": 2,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 1,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 2,
+            "n_2": 3,
+            "n_4": 3,
+            "nu_5": "37/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 3,
+                "n_4": 3,
+                "nu_5": "37/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "3/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 2,
+          "outputIndex": 2,
+          "parameters": {
+            "u_1": -1,
+            "u_3": -1,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -2,
+            "n_2": -1,
+            "n_4": 1,
+            "nu_5": "1/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "before": {
+                "e_2": -2,
+                "n_2": -1,
+                "n_4": 1,
+                "nu_5": "1/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 3,
+          "outputIndex": 3,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "47/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "47/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 3,
+          "outputIndex": 3,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "before": {
+                "e_2": -2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "5/16"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 3,
+          "outputIndex": 3,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 3,
+            "n_4": 3,
+            "nu_5": "15/16"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 3,
+                "n_4": 3,
+                "nu_5": "15/16"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "17/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 3,
+          "outputIndex": 3,
+          "parameters": {
+            "u_1": -1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": -1,
+            "n_4": 1,
+            "nu_5": "41/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": -1,
+                "n_4": 1,
+                "nu_5": "41/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "19/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 3,
+          "outputIndex": 3,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "31/48"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 3,
+          "outputIndex": 3,
+          "parameters": {
+            "u_1": 0,
+            "u_3": -1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "31/48"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 3,
+          "outputIndex": 3,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 1,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 2,
+            "n_2": 3,
+            "n_4": 3,
+            "nu_5": "13/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 3,
+                "n_4": 3,
+                "nu_5": "13/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "3/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 3,
+          "outputIndex": 3,
+          "parameters": {
+            "u_1": -1,
+            "u_3": -1,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -2,
+            "n_2": -1,
+            "n_4": 1,
+            "nu_5": "25/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "before": {
+                "e_2": -2,
+                "n_2": -1,
+                "n_4": 1,
+                "nu_5": "25/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 4,
+          "outputIndex": 4,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 3,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/2"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "before": {
+                "e_2": 3,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 4,
+          "outputIndex": 4,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "5/6"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "before": {
+                "e_2": -1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "5/6"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 4,
+          "outputIndex": 4,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "23/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "23/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 4,
+          "outputIndex": 4,
+          "parameters": {
+            "u_1": -1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": -2,
+            "n_4": 3,
+            "nu_5": "7/8"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": -2,
+                "n_4": 3,
+                "nu_5": "7/8"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "7/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 4,
+          "outputIndex": 4,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 4,
+          "outputIndex": 4,
+          "parameters": {
+            "u_1": 0,
+            "u_3": -1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 4,
+          "outputIndex": 4,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 1,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 3,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "7/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "before": {
+                "e_2": 3,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "7/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "7/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 4,
+          "outputIndex": 4,
+          "parameters": {
+            "u_1": -1,
+            "u_3": -1,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -1,
+            "n_2": -2,
+            "n_4": 3,
+            "nu_5": "13/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "before": {
+                "e_2": -1,
+                "n_2": -2,
+                "n_4": 3,
+                "nu_5": "13/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "5/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 5,
+          "outputIndex": 5,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 3,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "before": {
+                "e_2": 3,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 5,
+          "outputIndex": 5,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/3"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "before": {
+                "e_2": -1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/3"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 5,
+          "outputIndex": 5,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "11/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "11/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 5,
+          "outputIndex": 5,
+          "parameters": {
+            "u_1": -1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": -2,
+            "n_4": 3,
+            "nu_5": "3/8"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": -2,
+                "n_4": 3,
+                "nu_5": "3/8"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "7/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 5,
+          "outputIndex": 5,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "2/3"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 5,
+          "outputIndex": 5,
+          "parameters": {
+            "u_1": 0,
+            "u_3": -1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "2/3"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 5,
+          "outputIndex": 5,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 1,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 3,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "19/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "before": {
+                "e_2": 3,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "19/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "7/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 5,
+          "outputIndex": 5,
+          "parameters": {
+            "u_1": -1,
+            "u_3": -1,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -1,
+            "n_2": -2,
+            "n_4": 3,
+            "nu_5": "1/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "before": {
+                "e_2": -1,
+                "n_2": -2,
+                "n_4": 3,
+                "nu_5": "1/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "5/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 6,
+          "outputIndex": 6,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 3,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "31/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "5/16"
+              },
+              "before": {
+                "e_2": 3,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 6,
+          "outputIndex": 6,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "47/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "5/16"
+              },
+              "before": {
+                "e_2": -1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "47/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 6,
+          "outputIndex": 6,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 3,
+            "n_4": 3,
+            "nu_5": "29/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "5/16"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 3,
+                "n_4": 3,
+                "nu_5": "29/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "17/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 6,
+          "outputIndex": 6,
+          "parameters": {
+            "u_1": -1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": -1,
+            "n_4": 1,
+            "nu_5": "25/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "5/16"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": -1,
+                "n_4": 1,
+                "nu_5": "25/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "19/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 6,
+          "outputIndex": 6,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 6,
+          "outputIndex": 6,
+          "parameters": {
+            "u_1": 0,
+            "u_3": -1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 6,
+          "outputIndex": 6,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 1,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 3,
+            "n_2": 3,
+            "n_4": 3,
+            "nu_5": "15/16"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "5/16"
+              },
+              "before": {
+                "e_2": 3,
+                "n_2": 3,
+                "n_4": 3,
+                "nu_5": "15/16"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "3/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 6,
+          "outputIndex": 6,
+          "parameters": {
+            "u_1": -1,
+            "u_3": -1,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -1,
+            "n_2": -1,
+            "n_4": 1,
+            "nu_5": "3/16"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "5/16"
+              },
+              "before": {
+                "e_2": -1,
+                "n_2": -1,
+                "n_4": 1,
+                "nu_5": "3/16"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 7,
+          "outputIndex": 7,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 3,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "13/16"
+              },
+              "before": {
+                "e_2": 3,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 7,
+          "outputIndex": 7,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 0,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "23/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "13/16"
+              },
+              "before": {
+                "e_2": -1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "23/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/3"
+            }
+          ]
+        },
+        {
+          "inputIndex": 7,
+          "outputIndex": 7,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 3,
+            "n_4": 3,
+            "nu_5": "5/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "13/16"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 3,
+                "n_4": 3,
+                "nu_5": "5/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "17/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 7,
+          "outputIndex": 7,
+          "parameters": {
+            "u_1": -1,
+            "u_3": 0,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": -1,
+            "n_4": 1,
+            "nu_5": "1/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "13/16"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": -1,
+                "n_4": 1,
+                "nu_5": "1/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "19/24"
+            }
+          ]
+        },
+        {
+          "inputIndex": 7,
+          "outputIndex": 7,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 7,
+          "outputIndex": 7,
+          "parameters": {
+            "u_1": 0,
+            "u_3": -1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": []
+        },
+        {
+          "inputIndex": 7,
+          "outputIndex": 7,
+          "parameters": {
+            "u_1": 1,
+            "u_3": 1,
+            "v_1": 1
+          },
+          "rawEndpoint": {
+            "e_2": 3,
+            "n_2": 3,
+            "n_4": 3,
+            "nu_5": "7/16"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "13/16"
+              },
+              "before": {
+                "e_2": 3,
+                "n_2": 3,
+                "n_4": 3,
+                "nu_5": "7/16"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "3/8"
+            }
+          ]
+        },
+        {
+          "inputIndex": 7,
+          "outputIndex": 7,
+          "parameters": {
+            "u_1": -1,
+            "u_3": -1,
+            "v_1": -1
+          },
+          "rawEndpoint": {
+            "e_2": -1,
+            "n_2": -1,
+            "n_4": 1,
+            "nu_5": "11/16"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "13/16"
+              },
+              "before": {
+                "e_2": -1,
+                "n_2": -1,
+                "n_4": 1,
+                "nu_5": "11/16"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 1,
+                "u_3": 0,
+                "v_1": 1
+              },
+              "phaseCorrection": "1/8"
+            }
+          ]
+        }
+      ],
+      "identityClass": 0,
+      "incomingActions": [
+        {
+          "canonicalEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "input": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "inputIndex": 0,
+          "name": "closed_charge_u3",
+          "outputIndex": 0,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": [],
+          "relation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "canonicalEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/2"
+          },
+          "input": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/2"
+          },
+          "inputIndex": 1,
+          "name": "closed_charge_u3",
+          "outputIndex": 1,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/2"
+          },
+          "reduction": [],
+          "relation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "canonicalEndpoint": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "input": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "inputIndex": 2,
+          "name": "closed_charge_u3",
+          "outputIndex": 2,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "reduction": [],
+          "relation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "canonicalEndpoint": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "31/48"
+          },
+          "input": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "31/48"
+          },
+          "inputIndex": 3,
+          "name": "closed_charge_u3",
+          "outputIndex": 3,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "31/48"
+          },
+          "reduction": [],
+          "relation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "canonicalEndpoint": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "input": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "inputIndex": 4,
+          "name": "closed_charge_u3",
+          "outputIndex": 4,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "reduction": [],
+          "relation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "canonicalEndpoint": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "2/3"
+          },
+          "input": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "2/3"
+          },
+          "inputIndex": 5,
+          "name": "closed_charge_u3",
+          "outputIndex": 5,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "2/3"
+          },
+          "reduction": [],
+          "relation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "canonicalEndpoint": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "input": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "inputIndex": 6,
+          "name": "closed_charge_u3",
+          "outputIndex": 6,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": [],
+          "relation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "canonicalEndpoint": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "input": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "inputIndex": 7,
+          "name": "closed_charge_u3",
+          "outputIndex": 7,
+          "parameters": {
+            "u_1": 0,
+            "u_3": 1,
+            "v_1": 0
+          },
+          "rawEndpoint": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": [],
+          "relation": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "orderedProducts": [
+        {
+          "left": 0,
+          "output": 0,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": [],
+          "right": 0
+        },
+        {
+          "left": 0,
+          "output": 1,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/2"
+          },
+          "reduction": [],
+          "right": 1
+        },
+        {
+          "left": 0,
+          "output": 2,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "reduction": [],
+          "right": 2
+        },
+        {
+          "left": 0,
+          "output": 3,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "31/48"
+          },
+          "reduction": [],
+          "right": 3
+        },
+        {
+          "left": 0,
+          "output": 4,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "reduction": [],
+          "right": 4
+        },
+        {
+          "left": 0,
+          "output": 5,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "2/3"
+          },
+          "reduction": [],
+          "right": 5
+        },
+        {
+          "left": 0,
+          "output": 6,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": [],
+          "right": 6
+        },
+        {
+          "left": 0,
+          "output": 7,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": [],
+          "right": 7
+        },
+        {
+          "left": 1,
+          "output": 1,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/2"
+          },
+          "reduction": [],
+          "right": 0
+        },
+        {
+          "left": 1,
+          "output": 0,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": [],
+          "right": 1
+        },
+        {
+          "left": 1,
+          "output": 3,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "31/48"
+          },
+          "reduction": [],
+          "right": 2
+        },
+        {
+          "left": 1,
+          "output": 2,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "reduction": [],
+          "right": 3
+        },
+        {
+          "left": 1,
+          "output": 5,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "2/3"
+          },
+          "reduction": [],
+          "right": 4
+        },
+        {
+          "left": 1,
+          "output": 4,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "reduction": [],
+          "right": 5
+        },
+        {
+          "left": 1,
+          "output": 7,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": [],
+          "right": 6
+        },
+        {
+          "left": 1,
+          "output": 6,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": [],
+          "right": 7
+        },
+        {
+          "left": 2,
+          "output": 2,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "reduction": [],
+          "right": 0
+        },
+        {
+          "left": 2,
+          "output": 3,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "31/48"
+          },
+          "reduction": [],
+          "right": 1
+        },
+        {
+          "left": 2,
+          "output": 0,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "19/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "19/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 2
+        },
+        {
+          "left": 2,
+          "output": 1,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "7/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "7/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 3
+        },
+        {
+          "left": 2,
+          "output": 6,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": [],
+          "right": 4
+        },
+        {
+          "left": 2,
+          "output": 7,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": [],
+          "right": 5
+        },
+        {
+          "left": 2,
+          "output": 4,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "23/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "23/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 6
+        },
+        {
+          "left": 2,
+          "output": 5,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "11/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "11/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 7
+        },
+        {
+          "left": 3,
+          "output": 3,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "31/48"
+          },
+          "reduction": [],
+          "right": 0
+        },
+        {
+          "left": 3,
+          "output": 2,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "reduction": [],
+          "right": 1
+        },
+        {
+          "left": 3,
+          "output": 1,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "7/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "7/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 2
+        },
+        {
+          "left": 3,
+          "output": 0,
+          "rawProduct": {
+            "e_2": 0,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "19/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "19/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 3
+        },
+        {
+          "left": 3,
+          "output": 7,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": [],
+          "right": 4
+        },
+        {
+          "left": 3,
+          "output": 6,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": [],
+          "right": 5
+        },
+        {
+          "left": 3,
+          "output": 5,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "11/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "11/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 6
+        },
+        {
+          "left": 3,
+          "output": 4,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "23/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "23/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 7
+        },
+        {
+          "left": 4,
+          "output": 4,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "reduction": [],
+          "right": 0
+        },
+        {
+          "left": 4,
+          "output": 5,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "2/3"
+          },
+          "reduction": [],
+          "right": 1
+        },
+        {
+          "left": 4,
+          "output": 6,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": [],
+          "right": 2
+        },
+        {
+          "left": 4,
+          "output": 7,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": [],
+          "right": 3
+        },
+        {
+          "left": 4,
+          "output": 0,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/3"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/3"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 4
+        },
+        {
+          "left": 4,
+          "output": 1,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "5/6"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "5/6"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 5
+        },
+        {
+          "left": 4,
+          "output": 2,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "23/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "23/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 6
+        },
+        {
+          "left": 4,
+          "output": 3,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "47/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "47/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 7
+        },
+        {
+          "left": 5,
+          "output": 5,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "2/3"
+          },
+          "reduction": [],
+          "right": 0
+        },
+        {
+          "left": 5,
+          "output": 4,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "reduction": [],
+          "right": 1
+        },
+        {
+          "left": 5,
+          "output": 7,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": [],
+          "right": 2
+        },
+        {
+          "left": 5,
+          "output": 6,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": [],
+          "right": 3
+        },
+        {
+          "left": 5,
+          "output": 1,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "5/6"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "5/6"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 4
+        },
+        {
+          "left": 5,
+          "output": 0,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/3"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/3"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 5
+        },
+        {
+          "left": 5,
+          "output": 3,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "47/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "47/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 6
+        },
+        {
+          "left": 5,
+          "output": 2,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "23/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "23/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 7
+        },
+        {
+          "left": 6,
+          "output": 6,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": [],
+          "right": 0
+        },
+        {
+          "left": 6,
+          "output": 7,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": [],
+          "right": 1
+        },
+        {
+          "left": 6,
+          "output": 4,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "23/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "23/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 2
+        },
+        {
+          "left": 6,
+          "output": 5,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "11/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "11/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 3
+        },
+        {
+          "left": 6,
+          "output": 2,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "23/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "23/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 4
+        },
+        {
+          "left": 6,
+          "output": 3,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "47/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "47/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 5
+        },
+        {
+          "left": 6,
+          "output": 0,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "1/8"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "1/8"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "7/8"
+            }
+          ],
+          "right": 6
+        },
+        {
+          "left": 6,
+          "output": 1,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "5/8"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "5/8"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "7/8"
+            }
+          ],
+          "right": 7
+        },
+        {
+          "left": 7,
+          "output": 7,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "13/16"
+          },
+          "reduction": [],
+          "right": 0
+        },
+        {
+          "left": 7,
+          "output": 6,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "5/16"
+          },
+          "reduction": [],
+          "right": 1
+        },
+        {
+          "left": 7,
+          "output": 5,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "11/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "2/3"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "11/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 2
+        },
+        {
+          "left": 7,
+          "output": 4,
+          "rawProduct": {
+            "e_2": 1,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "23/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 1,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/6"
+              },
+              "before": {
+                "e_2": 1,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "23/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "right": 3
+        },
+        {
+          "left": 7,
+          "output": 3,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "47/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "31/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "47/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 4
+        },
+        {
+          "left": 7,
+          "output": 2,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "23/48"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "7/48"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 1,
+                "n_4": 0,
+                "nu_5": "23/48"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "right": 5
+        },
+        {
+          "left": 7,
+          "output": 1,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "5/8"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/2"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "5/8"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "7/8"
+            }
+          ],
+          "right": 6
+        },
+        {
+          "left": 7,
+          "output": 0,
+          "rawProduct": {
+            "e_2": 2,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "1/8"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "1/8"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "7/8"
+            }
+          ],
+          "right": 7
+        }
+      ],
+      "preIncomingProductTable": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          6,
+          7,
+          4,
+          5
+        ],
+        [
+          3,
+          2,
+          1,
+          0,
+          7,
+          6,
+          5,
+          4
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          5,
+          4,
+          7,
+          6,
+          1,
+          0,
+          3,
+          2
+        ],
+        [
+          6,
+          7,
+          4,
+          5,
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "quotientClassOfState": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "quotientRepresentatives": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "resolution": {
+        "basis": "(c,...,c); alpha(c)=1",
+        "chargeParameterDegree": 3,
+        "closedIncomingScalarFormulas": {
+          "CI_H1": "0",
+          "E8_H1": "0",
+          "u3=m": "nu5 -> nu5 + (omega_half+1)*m/2 mod 1"
+        },
+        "completeness": [
+          "All normalized cochains are scalar; every degree-five and degree-six equation is evaluated.",
+          "For trivial integer signs the even-degree cohomology representatives are 0,1; exact parts are removed by actual joint gauges.",
+          "For the nontrivial integer sign closed even-degree cochains vanish; odd-degree closed parameters generate the recorded incoming actions.",
+          "Every integer gauge parameter is generated by unit scalar parameters; after sheet/charge normalization the remaining closed parameter actions are included on every complete state.",
+          "For s=1 every closed phase is removed by the surjective rational phase gauge d_4=-2; for s=0 the two exact phase completions are retained.",
+          "The complete ordered product table, incoming compatibility, abelian group laws and presentation order are checked exactly."
+        ],
+        "complex": "complete normalized inhomogeneous C2 bar complex",
+        "differentialFormula": "d_chi in degree p = (-1)^chi + (-1)^(p+1)",
+        "integerSignedDifferentials": {
+          "0": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          "1": [
+            -2,
+            0,
+            -2,
+            0,
+            -2,
+            0,
+            -2
+          ]
+        },
+        "limitations": [
+          "Only the four declared signed C2 backgrounds are accepted.",
+          "n0I=n0J=0; forced for H+/H-, a restriction for AI/AII.",
+          "This proves the fixed four-data cochain quotient; physical-spectrum identification needs independent calibration."
+        ],
+        "nondegenerateCellsInEachDegree": 1,
+        "phaseParameterDegree": 4,
+        "sheetParameterDegree": 1
+      },
+      "rootRelations": [
+        {
+          "canonicalEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "input": {
+            "e_2": 1,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/6"
+          },
+          "power": 2,
+          "rawPower": {
+            "e_2": 2,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/3"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 2,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "1/3"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": 0,
+                "u_3": 0,
+                "v_1": -1
+              },
+              "phaseCorrection": "2/3"
+            }
+          ],
+          "relation": [
+            2,
+            0,
+            0
+          ],
+          "root": "E8"
+        },
+        {
+          "canonicalEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "input": {
+            "e_2": 0,
+            "n_2": 1,
+            "n_4": 0,
+            "nu_5": "7/48"
+          },
+          "power": 2,
+          "rawPower": {
+            "e_2": 0,
+            "n_2": 2,
+            "n_4": 1,
+            "nu_5": "19/24"
+          },
+          "reduction": [
+            {
+              "after": {
+                "e_2": 0,
+                "n_2": 0,
+                "n_4": 0,
+                "nu_5": "0"
+              },
+              "before": {
+                "e_2": 0,
+                "n_2": 2,
+                "n_4": 1,
+                "nu_5": "19/24"
+              },
+              "parameters": {
+                "lambda_4": "0",
+                "u_1": -1,
+                "u_3": 0,
+                "v_1": 0
+              },
+              "phaseCorrection": "5/24"
+            }
+          ],
+          "relation": [
+            0,
+            2,
+            0
+          ],
+          "root": "CI"
+        },
+        {
+          "canonicalEndpoint": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "input": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "1/2"
+          },
+          "power": 2,
+          "rawPower": {
+            "e_2": 0,
+            "n_2": 0,
+            "n_4": 0,
+            "nu_5": "0"
+          },
+          "reduction": [],
+          "relation": [
+            0,
+            0,
+            2
+          ],
+          "root": "phase"
+        }
+      ],
+      "stateWords": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "input": {
+    "dimension": 4,
+    "family": "charge_conjugation",
+    "generatorSquare": "(-1)^F",
+    "group": "C2",
+    "id": "signed_H_minus_4p1",
+    "intrinsic": {
+      "n0I": 0,
+      "n0J": 0,
+      "status": "forced_zero"
+    },
+    "omega": "alpha^2/2",
+    "orderedFields": [
+      "e_2",
+      "n_2",
+      "n_4",
+      "nu_5"
+    ],
+    "phaseGaugeConvention": "adopted joint source-cylinder gauge",
+    "physicalSpin": "not_applicable_internal",
+    "referenceTarget": "unitary_charge_conjugation_Hminus",
+    "rho": "alpha",
+    "s": "0"
+  },
+  "physicalComparison": {
+    "status": "independent_target_not_loaded_by_solver",
+    "universalPhysicalSpectrumCertified": false
+  },
+  "run": {
+    "elapsedSeconds": 17.457207,
+    "exitCode": 0,
+    "host": "n08.local",
+    "id": "signed_H_minus_4p1",
+    "inputSHA256": "d4d2953ad55674490ee91a85721d367cbccf6a5fefba2324f6885d60e38246e4",
+    "pythonVersion": "3.13.12",
+    "sourceSHA256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+    "startedUTC": "2026-10-16T07:38:13.802248+00:00",
+    "status": "complete"
+  }
+}

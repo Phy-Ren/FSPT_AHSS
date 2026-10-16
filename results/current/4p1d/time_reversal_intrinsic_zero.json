@@ -1,0 +1,284 @@
+{
+  "title": "4+1D time reversal: zero intrinsic response",
+  "scope": "Each row is one exact internal electronic symmetry; crystalline spin labels do not apply. E8, CI, charge and the common phase are computed with complete products and gauges. The intrinsic response pair (n0I,n0J) is fixed to zero. The cited zero-intrinsic targets follow from the full physical groups and their uniform response maps. Full AI/AII intrinsic classifications are not computed in this table. Reference answers are applied after calculation. Physical derivations and their exact scope are recorded in the cited sources and accepted evidence.",
+  "family": "time_reversal",
+  "spatial_dimension": 4,
+  "spacetime_dimension": 5,
+  "physical_spin": "not_applicable_internal",
+  "n0_scope": "intrinsic_zero",
+  "e0_scope": "not_applicable",
+  "e8_scope": "four_data_included",
+  "columns": [
+    {
+      "key": "e",
+      "label": "e2 (E8)"
+    },
+    {
+      "key": "n",
+      "label": "n2 (CI)"
+    },
+    {
+      "key": "charge",
+      "label": "n4 (charge)"
+    },
+    {
+      "key": "phase",
+      "label": "nu5 (phase)"
+    },
+    {
+      "key": "intrinsic",
+      "label": "(n0I,n0J)"
+    },
+    {
+      "key": "stacking",
+      "label": "Final stacking"
+    },
+    {
+      "key": "freed_hopkins_v6",
+      "label": "Freed–Hopkins v6: stated sector"
+    }
+  ],
+  "sources": {
+    "freed_hopkins_v6": {
+      "authors": [
+        "Daniel S. Freed",
+        "Michael J. Hopkins"
+      ],
+      "columnLabel": "Freed–Hopkins v6: stated sector",
+      "location": "Theorem 9.87: Omega5=0",
+      "locator": "Theorem 9.87/Table 9.88 p.93; Corollaries 9.89, 9.93, 9.95",
+      "method": "Interacting invertible-field-theory TP column and bordism coefficient groups",
+      "scope": "Specified tangential structure; do not use FF column",
+      "title": "Reflection Positivity and Invertible Topological Phases",
+      "url": "https://arxiv.org/abs/1604.06527v6",
+      "version": "arXiv:1604.06527v6, 2022-12-18",
+      "year": 2021
+    }
+  },
+  "rows": [
+    {
+      "id": "signed_AII_relative_4p1",
+      "name": "AII: antiunitary T^2=(-1)^F",
+      "hermann_mauguin": null,
+      "display_name": "AII: antiunitary T^2=(-1)^F",
+      "family": "time_reversal",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "freed_hopkins_v6": {
+          "availability": "available",
+          "source": "freed_hopkins_v6",
+          "fullUniformSectionApplicable": false,
+          "group": {
+            "freeRank": 0,
+            "torsion": []
+          },
+          "method": "No finite torsion and finite-index rank-two uniform image",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "G": "C2^T",
+        "omega": "alpha cup alpha / 2",
+        "rho": "0",
+        "s": "alpha"
+      },
+      "provenance": {
+        "input_sha256": "d9758086d05063bb232c9927e06fe7f9dd1ac41edc9aa67baee4aab5b5609408",
+        "path": "results/four_dimensional_20261016/raw/signed/signed_AII_relative_4p1/result.json",
+        "physical_reference_target": "time_reversal_AII",
+        "record_sha256": "b32264b5d9727a6814f80286048018717aa6a3a0aa24ae116099ab1092b931b7",
+        "source_sha256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+        "started_utc": "2026-10-16T07:38:35.596461+00:00"
+      }
+    },
+    {
+      "id": "signed_AI_relative_4p1",
+      "name": "AI: antiunitary T^2=1",
+      "hermann_mauguin": null,
+      "display_name": "AI: antiunitary T^2=1",
+      "family": "time_reversal",
+      "physical_spin": "not_applicable_internal",
+      "spatial_dimension": 4,
+      "spacetime_dimension": 5,
+      "n0_scope": "intrinsic_zero",
+      "e0_scope": "not_applicable",
+      "e8_scope": "four_data_included",
+      "cells": {
+        "charge": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "e": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "n": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "phase": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "intrinsic": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "stacking": {
+          "availability": "available",
+          "comparison_status": "not_compared",
+          "group": {
+            "torsion": [],
+            "freeRank": 0
+          }
+        },
+        "freed_hopkins_v6": {
+          "availability": "available",
+          "source": "freed_hopkins_v6",
+          "fullUniformSectionApplicable": false,
+          "group": {
+            "freeRank": 0,
+            "torsion": []
+          },
+          "method": "No finite torsion and finite-index rank-two uniform image",
+          "scope": "zero_uniform",
+          "comparison_status": "match"
+        }
+      },
+      "background": {
+        "G": "C2^T",
+        "omega": "0",
+        "rho": "0",
+        "s": "alpha"
+      },
+      "provenance": {
+        "input_sha256": "54b4a80be19341eac4c16835f178fc88040c0edc8955c8eff0a7f7254843338a",
+        "path": "results/four_dimensional_20261016/raw/signed/signed_AI_relative_4p1/result.json",
+        "physical_reference_target": "time_reversal_AI",
+        "record_sha256": "90add0932b725940eeab07cb0d53ea6b1133676715c99d415f690084bd46bcf9",
+        "source_sha256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+        "started_utc": "2026-10-16T07:38:31.266983+00:00"
+      }
+    }
+  ],
+  "comparison_counts": {
+    "e": {
+      "not_compared": 2
+    },
+    "n": {
+      "not_compared": 2
+    },
+    "charge": {
+      "not_compared": 2
+    },
+    "phase": {
+      "not_compared": 2
+    },
+    "intrinsic": {
+      "not_compared": 2
+    },
+    "stacking": {
+      "not_compared": 2
+    },
+    "freed_hopkins_v6": {
+      "match": 2
+    }
+  },
+  "availability_counts": {
+    "e": {
+      "available": 2
+    },
+    "n": {
+      "available": 2
+    },
+    "charge": {
+      "available": 2
+    },
+    "phase": {
+      "available": 2
+    },
+    "intrinsic": {
+      "available": 2
+    },
+    "stacking": {
+      "available": 2
+    },
+    "freed_hopkins_v6": {
+      "available": 2
+    }
+  }
+}

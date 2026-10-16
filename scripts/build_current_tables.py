@@ -32,7 +32,7 @@ def encoded(value):
 
 
 class Catalogue:
-    def __init__(self, output, expansions=()):
+    def __init__(self, output, expansions=(), four_dimensional=None):
         self.output = output
         self.inputs, self.files, self.index = {}, {}, []
         saved_path = "results/two_dimensional_20261013/results.json"
@@ -109,6 +109,18 @@ class Catalogue:
                         self.records[case, "four_data"] = entry
                     else:
                         self.extra[case] = entry
+
+        self.calibrated_four = None
+        if four_dimensional is not None:
+            from build_calibrated_4p1d import load_collection
+            self.calibrated_four = load_collection(self, four_dimensional)
+            current_ids = {r["input"]["id"] for r in self.calibrated_four["records"]}
+            old_cyclic = {case for case, entry in self.extra.items()
+                          if entry["input"]["family"] == "internal_cyclic"}
+            if not old_cyclic <= current_ids:
+                raise ValueError("The current cyclic replacement must retain every accepted background.")
+            for case in old_cyclic:
+                del self.extra[case]
 
     @staticmethod
     def path_name(path):
@@ -300,7 +312,7 @@ class Catalogue:
         table["comparison_counts"] = {key: dict(Counter(row["cells"][key]["comparison_status"] for row in table["rows"])) for key in keys}
         table["availability_counts"] = {key: dict(Counter(row["cells"][key]["availability"] for row in table["rows"])) for key in keys}
         self.put(destination.with_suffix(".json"), encoded(table))
-        headers = ["Group" if table["family"] == "internal_cyclic" else "Group (HM)"] + [c["label"] for c in table["columns"]]
+        headers = ["Group" if table["physical_spin"] == "not_applicable_internal" else "Group (HM)"] + [c["label"] for c in table["columns"]]
         def row_name(row):
             return row.get("display_name", f"{row['name']} ({row['hermann_mauguin']})")
         def display(cell, markdown):
@@ -350,18 +362,30 @@ class Catalogue:
                     self.table(2, spin, family, sector)
             self.table(3, spin, "point3", "four_data")
             self.expansion_table("spacegroup", spin)
-        self.expansion_table("internal_cyclic")
+        if self.calibrated_four is None:
+            self.expansion_table("internal_cyclic")
+        else:
+            from build_calibrated_4p1d import build_tables
+            build_tables(self, self.calibrated_four)
         count = len(self.records) + len(self.extra)
+        if self.calibrated_four is not None:
+            count += sum(2 if r["input"]["family"] == "internal_cyclic" else 1
+                         for r in self.calibrated_four["records"])
         assert len(self.index) == count
         assert len({(x["id"], x["n0_scope"]) for x in self.index}) == count
         backgrounds = len({r["id"] for r in self.index})
         space_count = sum(r["family"] == "spacegroup" for r in self.index)
-        cyclic_count = sum(r["family"] == "internal_cyclic" for r in self.index)
+        cyclic_count = len({r["id"] for r in self.index if r["family"] == "internal_cyclic"})
+        four_count = sum(r["spatial_dimension"] == 4 for r in self.index)
+        four_backgrounds = len({r["id"] for r in self.index if r["spatial_dimension"] == 4})
         table_count = sum(name.endswith(".json") and "columns" in json.loads(text)
                           for name, text in self.files.items() if name.endswith(".json"))
         self.index.sort(key=lambda r: (r["spatial_dimension"], r["physical_spin"], r["n0_scope"], r["id"]))
         self.put("index.json", encoded(self.index))
-        self.put("collections.json", encoded({"accepted_expansion_directories": self.expansions}))
+        collection_config = {"accepted_expansion_directories": self.expansions}
+        if self.calibrated_four is not None:
+            collection_config["calibrated_4p1d"] = self.calibrated_four["acceptedPath"]
+        self.put("collections.json", encoded(collection_config))
         self.put("README.md", "# Computed U(1)^f insulator examples\n\n"
                  f"The current catalogue contains **{backgrounds} distinct backgrounds** and "
                  f"**{count} response-sector entries in {table_count} tables**. "
@@ -373,7 +397,7 @@ class Catalogue:
                  "| [2+1D wallpaper groups](2p1d/README.md) | 34 | 68 |\n"
                  "| [3+1D crystallographic point groups](3p1d/README.md) | 64 | 64 |\n"
                  + (f"| [3+1D space groups](3p1d/README.md) | {space_count} | {space_count} |\n" if space_count else "")
-                 + (f"| [4+1D internal cyclic groups](4p1d/README.md) | {cyclic_count} | {cyclic_count} |\n" if cyclic_count else "")
+                 + (f"| [4+1D internal groups](4p1d/README.md) | {four_backgrounds} | {four_count} |\n" if four_count else "")
                  + "\nThe 2+1D collections keep `n0=0` and all allowed `n0` in separate files, "
                  "both with `e0=0`. The 3+1D collections include E8 in the completed four-data calculation. "
                  "The 4+1D cyclic examples retain the coupled E8 and shared-phase root relations.\n\n"
@@ -452,7 +476,27 @@ class Catalogue:
                              + ("- [Space groups](space_groups.md) · [CSV](space_groups.csv).\n"
                                 if any(r["family"] == "spacegroup" and r["physical_spin"] == spin for r in self.index) else "")
                              + "\n[3+1D catalogue](../README.md).\n")
-        if cyclic_count:
+        if self.calibrated_four is not None:
+            self.put("4p1d/README.md", "# 4+1D internal insulator examples\n\n"
+                     f"This collection contains **{four_backgrounds} exact symmetry backgrounds** and "
+                     f"**{four_count} response-sector entries**. Internal groups carry no crystalline spin labels.\n\n"
+                     f"- [{cyclic_count} commuting cyclic groups: zero intrinsic response](internal_cyclic/intrinsic_zero.md).\n"
+                     f"- [{cyclic_count} commuting cyclic groups: all intrinsic responses](internal_cyclic/intrinsic_all.md).\n"
+                     "- [Unitary charge conjugation](charge_conjugation.md): the intrinsic row is symmetry-forbidden.\n"
+                     "- [AI/AII: zero intrinsic response](time_reversal_intrinsic_zero.md).\n\n"
+                     "Each computation retains the full `(e2,n2,n4,nu5)` products, joint gauges, "
+                     "incoming identifications and root relations. The cyclic physical comparison tests "
+                     "the entire relation lattice against independently constructed eta characters. "
+                     "The all-intrinsic cyclic table additionally uses the explicit symmetry-independent "
+                     "I,J section; this does not assert a general opened-intrinsic implementation.\n\n"
+                     "References appear in separate columns with their exact symmetry and response scope. "
+                     "AI/AII full groups and embedded response lattices remain distinct from their "
+                     "computed zero-intrinsic kernels.\n\n"
+                     "[Cyclic formulas and physical calibration](../../../docs/formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md) · "
+                     "[Bordism targets](../../../docs/4p1d/calibration/BORDISM_TARGETS.md) · "
+                     "[Accepted calculation evidence](../../four_dimensional_20261016/README.md) · "
+                     "[Catalogue](../README.md).\n")
+        elif cyclic_count:
             self.put("4p1d/README.md", "# 4+1D internal insulator examples\n\n"
                      "The cyclic pilot computes **C1 through C6** for unitary internal symmetry "
                      "`U(1)^f x C_N`, with `s=rho=omega=0`. Internal backgrounds have no crystalline spin labels.\n\n"
@@ -471,7 +515,7 @@ class Catalogue:
                  "The remaining 64 2+1D sector entries use the exhaustive October 13 campaign. For an entry without a separate n0=0 rerun, its value is the saved kernel of the actual IQH response homomorphism, not an inferred removal of a free factor. "
                  "Dates, input/source hashes, immutable record locations and exact selectors are retained in [index.json](index.json); consumed file hashes are in [manifest.json](manifest.json).\n\n"
                  "The final filtration columns follow `(e_p,n_p,n_{p+2},nu_{p+3})`, with p=d−2. They already include the computed incoming identifications. Their direct product is not assumed to equal the final stacking group. "
-                 "The 2+1D tables impose e0=0; the 3+1D tables include independently computed H1(G,Z_s) and the selected E8 section. The remaining identification of the CI model with the complete physical kernel is not certified by a matching abstract group. Intrinsic higher-response sectors are outside these tables.\n\n"
+                 "The 2+1D tables impose e0=0; the 3+1D tables include independently computed H1(G,Z_s) and the selected E8 section. The remaining general identification of the CI model with the physical kernel is not certified by matching group types. The calibrated 4+1D cases use their stated independent bordism/character certificates. The all-intrinsic cyclic sector uses an explicit symmetry-independent section, not a general intrinsic solver.\n\n"
                  "Every literature version has its own column. The 3+1D point-group reference columns use full interacting source groups, without removing E8 factors. The 2+1D references are restricted to the stated n0/e0 sector. Wang–Qi–Fang–Cheng–Gu columns are charge and phase filtration layers, not stacking groups. Unavailable source values remain UNVERIFIED; an inapplicable source is N/A. No free-band classification or band-generated subgroup is used as a complete interacting benchmark.\n\n"
                  "The [source ledger](../../docs/reference_ledger_20261014.md), [foundation review](../../docs/foundations/README.md), and immutable [October 15 campaign](../four_data_campaign_20261015/README.md) retain detailed calibration and validation evidence. "
                  "Printed Debray D2/D6 values remain unchanged, with their specific proof-grading audit linked in the tables. "
@@ -482,11 +526,14 @@ class Catalogue:
                  "The builder never scans unfinished runs. Each expansion is accepted by `scripts/collect_expansion.py`, which verifies every selected run, exact CI parent artifacts, source/input hashes, native completion records, and independent integer presentations. "
                  "Space-group Song–Xiong–Huang comparisons concern only the neutral E8 coefficient; full electronic references remain unverified. "
                  "4+1D cyclic filtration entries are derived from the actual root-relation matrix by saturated integer elimination, without treating equal layer orders as the stacking answer.\n\n"
-                 + "".join(f"- [Independent cyclic complete-root and native-boundary audit]({os.path.relpath(ROOT / path, self.output)}): {len(audit['cases'])} presentations and {audit['nativePhaseBoundaryCheckCount']} native phase boundaries verified. Its result/source hashes are checked against the accepted collection.\n" for path, audit in sorted(self.audits.items()))
-                 + ("\n" if self.audits else "")
+                 + ("- [Accepted 4+1D evidence](../four_dimensional_20261016/README.md): 18 selected backgrounds, complete character-kernel and integer-presentation checks, and independent source/gauge audits. The [validation method](../../docs/4p1d/calibration/VALIDATION_METHOD.md) states why the retained computations are complete for these backgrounds.\n\n" if self.calibrated_four is not None else
+                    "".join(f"- [Independent cyclic complete-root and native-boundary audit]({os.path.relpath(ROOT / path, self.output)}): {len(audit['cases'])} presentations and {audit['nativePhaseBoundaryCheckCount']} native phase boundaries verified. Its result/source hashes are checked against the accepted collection.\n" for path, audit in sorted(self.audits.items())) + ("\n" if self.audits else ""))
                  +
                  "Rebuild with `python3 scripts/build_current_tables.py`; verify deterministic output with `python3 scripts/build_current_tables.py --check`. Historical artifacts are read-only.\n")
         self.inputs["scripts/build_current_tables.py"] = digest(Path(__file__).read_bytes())
+        if self.calibrated_four is not None:
+            helper = ROOT / "scripts/build_calibrated_4p1d.py"
+            self.inputs["scripts/build_calibrated_4p1d.py"] = digest(helper.read_bytes())
         self.put("manifest.json", encoded({"input_sha256": self.inputs,
                  "output_sha256": {name: digest(text.encode()) for name, text in sorted(self.files.items())},
                  "background_count": backgrounds, "sector_entry_count": count, "table_count": table_count,
@@ -523,12 +570,19 @@ def main():
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--expansion", type=Path, action="append", default=None,
                         help="Accepted collection directory; repeat for separate immutable campaigns.")
+    parser.add_argument("--four-dimensional", type=Path,
+                        help="Explicitly accepted calibrated 4+1D collection JSON.")
     args = parser.parse_args()
     expansions = args.expansion
     if expansions is None:
         config = args.output / "collections.json"
         expansions = [ROOT / name for name in json.loads(config.read_text())["accepted_expansion_directories"]] if config.exists() else []
-    builder = Catalogue(args.output.resolve(), expansions)
+    four_dimensional = args.four_dimensional
+    if four_dimensional is None:
+        config = args.output / "collections.json"
+        if config.exists():
+            four_dimensional = json.loads(config.read_text()).get("calibrated_4p1d")
+    builder = Catalogue(args.output.resolve(), expansions, four_dimensional)
     builder.build()
     builder.save(args.check)
 

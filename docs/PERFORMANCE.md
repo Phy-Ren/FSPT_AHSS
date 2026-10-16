@@ -85,6 +85,20 @@ mode retains the original lower-field callbacks after vacuum gauges.
 
 Measurements below refer to specific workloads, not universal speed factors.
 
+The [calibrated 4+1D campaign](../results/four_dimensional_20261016/README.md)
+uses a bounded exact cache keyed by the full background and cochain values,
+binary completed-state powers, and faithful cyclic cohomology pairings.
+The signed C2 path uses its complete normalized one-generator complex.
+All source, stacking and gauge corrections remain in the calculation.
+On `n08.local`, cache off/on measurements for the complete cyclic cochain
+classification were **0.744347/0.313270 s for C3** and
+**5.161713/1.492532 s for C6** (2.38x and 3.46x). Every retained mathematical
+field and witness agrees literally; independent eta calibration and process
+overhead are outside these microbenchmark timings. The full 14-order batch,
+including physical calibration, used four processes with a 13.23 s case
+execution interval. C18 took 11.41 s. Exact source evaluations for C6 fell
+from 2175 to 156 and CI-product evaluations from 525 to 72.
+
 The [adjacent native-vector reuse check](../results/spacegroup_campaign_20261015/native_vector_reuse/README.md)
 reduces native transfer calls from **384 to 352 across ten complete classifications**
 by immediately reusing vectors already returned by the full completed-state check.

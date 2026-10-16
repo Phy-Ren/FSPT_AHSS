@@ -4,6 +4,8 @@ The ordered fields are `(e_2,n_2,n_4,nu_5)`: neutral E8, CI sheet,
 localized charge, and **one shared phase**. This page concerns that
 four-tuple. Its AHSS operations are `d2`, `d3`, and `d4`; a subscript such
 as `O6` specifies a cochain's degree, not an additional differential page.
+The extra uniform pair `(n0I,n0J)` is recorded separately below; it is
+not part of this tuple.
 
 The operations and coefficient conventions are fixed in
 [Operations](OPERATIONS.md). The two finite binary kernels are defined
@@ -255,11 +257,73 @@ map, its circle carries, and its lower product path are still required
 to identify both complete physical presentations. The E8 result does
 not prove that the retained CI model is the entire physical kernel.
 
-The operations are exact in the selected shared-phase closed-sheet model.
-Bosonic tensor inclusion and identification of the actual zero-E8
-physical theory with the retained CI presentation are the precise
-physical inputs for promoting that model to a complete physical claim.
-The [cyclic examples](FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md) carry out the
-global completion and full root-power presentation for specified internal
-symmetries. They are separate calculations, not conclusions drawn from
-local identities alone.
+## Complete examples and physical calibration
+
+The accepted [4+1D campaign](../../results/four_dimensional_20261016/accepted.json)
+contains fourteen commuting cyclic backgrounds and four signed `C2`
+backgrounds. Each calculation includes the full `(e2,n2,n4,nu5)` source,
+stacking, joint gauges, incoming identifications, and completed root powers.
+The results are organized by symmetry and response sector:
+
+- [Internal cyclic groups, zero intrinsic response](../../results/current/4p1d/internal_cyclic/intrinsic_zero.md).
+- [Internal cyclic groups, all intrinsic responses](../../results/current/4p1d/internal_cyclic/intrinsic_all.md).
+- [Unitary charge conjugation](../../results/current/4p1d/charge_conjugation.md).
+- [AI/AII, zero intrinsic response](../../results/current/4p1d/time_reversal_intrinsic_zero.md).
+
+For `U(1)^f × C_N`, `s=rho=omega=0`, the
+[cyclic calculation](FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md) covers
+`N=1,2,3,4,5,6,7,8,9,10,12,15,16,18`. Complete powers and actual
+gauges are evaluated on the full cyclic five-cycle. An independent
+Spin-c eta calculation then identifies the **entire relation lattice**
+in the reviewed electronic-root dictionary. An independent bordism order
+bound proves completeness of that physical character group. This certifies
+these specified cyclic presentations without supplying a universal
+terminal CI comparison.
+
+For the signed cases, write `alpha(c)=1` and `omega=k alpha²/2`.
+The [complete normalized-bar calculation](../4p1d/calibration/SIGNED_C2.md)
+uses the scalar differential
+`d_chi(alpha^p)=[(-1)^chi(c)+(-1)^(p+1)]alpha^(p+1)` and evaluates
+every completed product and incoming action.
+
+- Unitary charge conjugation has `s=0,rho=alpha`. For `k=0`,
+  `C²=1` and the result is `Z2`; for `k=1`, `C²=(-1)^F` and the
+  result is `Z2³`. Symmetry forces the intrinsic pair to vanish, so
+  these tables cover the full response sector.
+- Time reversal has `s=alpha,rho=0`. For `k=0` (AI) and `k=1` (AII),
+  the computed **intrinsic-zero** group is zero. Their full groups and
+  allowed uniform lattices are separate physical inputs.
+
+These signed groups agree with the independently derived
+[bordism targets](../4p1d/calibration/BORDISM_TARGETS.md), with each source
+and tangent structure specified there. This is a group comparison for
+these backgrounds; a full signed-root character dictionary is not asserted.
+
+## Additional uniform response pair
+
+The reviewed [v0.15 supplement](../../formulas/v015_provenance.json)
+has two intrinsic 4+1D integer coordinates `(n0I,n0J)`. With `c=2f`
+the Spin-c determinant class, their response polynomials are
+
+```math
+I=\frac{c^3-cp_1}{48},\qquad J=\frac{c^3}{2}.
+```
+
+These are additional bulk responses, separate from the E8-first tuple
+and from the scalar 2+1D IQH coefficient. Their possible outgoing
+`d3,d5,d6` belong to this additional coefficient row; they do not change
+the `d2,d3,d4` scope of the original four-data equations above.
+
+For the direct product `U(1)^f × C_N`, forgetting `C_N` has the identity
+inclusion as a section. Pulling a uniform phase back with trivial `C_N`
+action therefore gives a natural group splitting into the intrinsic-zero
+kernel and `Z{I} ⊕ Z{J}`. At `s=rho=omega=0`, direct substitution into
+the reviewed intrinsic equations permits zero lower data for both unit
+roots. The [cyclic section proof](FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md#uniform-intrinsic-pair-and-its-natural-section)
+justifies the all-intrinsic table. It is not an implementation of a
+general opened-intrinsic solver or a section for arbitrary signed backgrounds.
+
+The exact closed-sheet operations, the accepted global examples, and the
+independent physical identifications have these stated scopes. A general
+global 4+1D classifier and a universal pure-CI terminal source/product
+comparison remain separate requirements; no missing operation is set to zero.

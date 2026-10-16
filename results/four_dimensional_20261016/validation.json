@@ -1,0 +1,177 @@
+{
+  "accepted": true,
+  "checks": [
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_10_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_12_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_15_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_16_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "bahri_gilkey_1987": "match",
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_18_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_1_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_2_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "bahri_gilkey_1987": "match",
+        "derived_smith_v2__freed_hopkins_v6": "match",
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_3_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_4_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "bahri_gilkey_1987": "match",
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_5_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_6_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_7_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_8_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "bahri_gilkey_1987": "match",
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "internal_cyclic_9_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "v015_cyclic": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "signed_AII_relative_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "freed_hopkins_v6": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "signed_AI_relative_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "freed_hopkins_v6": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "signed_H_minus_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "derived_smith_v2__freed_hopkins_v6__debray_ye_yu_v2": "match"
+      }
+    },
+    {
+      "caseEvidenceHash": "PASS",
+      "id": "signed_H_plus_4p1",
+      "independentSmith": "PASS",
+      "referenceComparisons": {
+        "derived_smith_v2__freed_hopkins_v6__debray_ye_yu_v2": "match"
+      }
+    }
+  ],
+  "completeResultCount": 18,
+  "policy": "Complete mathematical runs are preserved even if an independent physical reference disagrees.",
+  "selectedCases": [
+    "internal_cyclic_10_4p1",
+    "internal_cyclic_12_4p1",
+    "internal_cyclic_15_4p1",
+    "internal_cyclic_16_4p1",
+    "internal_cyclic_18_4p1",
+    "internal_cyclic_1_4p1",
+    "internal_cyclic_2_4p1",
+    "internal_cyclic_3_4p1",
+    "internal_cyclic_4_4p1",
+    "internal_cyclic_5_4p1",
+    "internal_cyclic_6_4p1",
+    "internal_cyclic_7_4p1",
+    "internal_cyclic_8_4p1",
+    "internal_cyclic_9_4p1",
+    "signed_AII_relative_4p1",
+    "signed_AI_relative_4p1",
+    "signed_H_minus_4p1",
+    "signed_H_plus_4p1"
+  ],
+  "status": "PASS"
+}

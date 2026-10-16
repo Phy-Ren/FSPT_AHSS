@@ -7,7 +7,7 @@ Each dimensional page specifies its own physical fields, obstruction
 equations, stacking twisters, and complete gauges.
 
 [Computed examples](../results/current/README.md) use the same notation and
-keep dimensions, physical spins, and 2+1D response sectors in separate tables.
+keep dimensions, physical spins, and response sectors in separate tables.
 
 | Dimension | Obstruction functions | Stacking twisters | Gauges |
 | --- | --- | --- | --- |
@@ -23,7 +23,8 @@ how the full twister and gauges determine the final stacking group.
 [Executable interfaces](formulas/IMPLEMENTATION.md) maps the equations to
 the exact local API and persistent worker. The
 [4+1D cyclic examples](formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md) retain
-completed roots, coupled powers, and an independent bar-cycle audit.
+completed roots, coupled powers, full bar-cycle gauge reductions, and an
+independent physical eta-kernel comparison.
 
 The [3+1D factorization proof](formulas/THREE_DIMENSIONAL.md#why-the-global-calculation-can-be-factored)
 explains why the supplied model permits an exact neutral E8 calculation
@@ -90,7 +91,38 @@ identification with the complete physical CI kernel still requires the
 nonzero-CI terminal map and paired product comparison. The physical
 nonzero-uniform-IQH product-coordinate comparison is also separate.
 Published group agreement does not by itself prove these identifications.
-Intrinsic higher-response coordinates are outside this four-data scope.
+The accepted cyclic cases have a stronger certificate: equality of the
+full cochain relation lattice with the independently computed physical
+character kernel, together with a bordism order bound. This is a
+family-specific identification, not a universal terminal-map theorem.
+
+## 4+1D examples and intrinsic response scope
+
+The [accepted evidence](../results/four_dimensional_20261016/accepted.json)
+contains fourteen commuting internal cyclic groups,
+`N=1,2,3,4,5,6,7,8,9,10,12,15,16,18`, and four signed `C2` backgrounds.
+Internal groups do not carry crystalline spinless/spin-half labels.
+
+- [Cyclic groups: zero intrinsic response](../results/current/4p1d/internal_cyclic/intrinsic_zero.md).
+- [Cyclic groups: all intrinsic responses](../results/current/4p1d/internal_cyclic/intrinsic_all.md).
+- [Unitary charge conjugation](../results/current/4p1d/charge_conjugation.md), where symmetry forces the intrinsic row to zero.
+- [AI/AII: zero intrinsic response](../results/current/4p1d/time_reversal_intrinsic_zero.md).
+
+The extra 4+1D response pair `(n0I,n0J)` is separate from the four-data
+tuple and from the scalar 2+1D IQH coefficient. For `U(1)^f × C_N`,
+trivial `C_N` action gives an explicit natural section for both uniform
+roots. Thus the all-intrinsic cyclic group is its computed and physically
+calibrated intrinsic-zero group times `Z²`. The
+[section proof](formulas/FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md#uniform-intrinsic-pair-and-its-natural-section)
+also records the zero-lower-data substitution and its scope. A general
+opened-intrinsic cochain solver is not inferred from this section.
+
+The [signed C2 calculation](4p1d/calibration/SIGNED_C2.md) retains complete
+products and all incoming gauges. Its reference comparison uses the
+specified [interacting bordism targets](4p1d/calibration/BORDISM_TARGETS.md).
+AI/AII are restricted to intrinsic zero; their full uniform-response
+lattices are not outputs of that solver. A general global 4+1D classifier
+is not supplied by these finite families.
 
 The [even charge-root identity](formulas/CHARGE_ROOT_RELATIONS.md) is a
 derived cohomology-class simplification. It is recorded separately from the
@@ -98,6 +130,8 @@ implemented full cochain and gauge witnesses; it does not replace them.
 
 The [source provenance](../formulas/provenance.json),
 [E8 provenance](../formulas/e8_provenance.json), and
-[research record](e8/research/README.md) retain the exact inputs and proofs.
+[v0.15 intrinsic/calibration provenance](../formulas/v015_provenance.json)
+pin the reviewed formula inputs. The
+[research record](e8/research/README.md) retains the supporting proofs.
 The preserved TeX files are source evidence and coefficient appendices;
 the dimensional pages linked above are the current narrative.

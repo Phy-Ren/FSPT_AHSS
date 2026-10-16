@@ -1,0 +1,59 @@
+{
+  "caseCount": 4,
+  "completedUTC": "2026-10-16T07:38:36.848781+00:00",
+  "runs": [
+    {
+      "elapsedSeconds": 6.812108,
+      "exitCode": 0,
+      "host": "n08.local",
+      "id": "signed_H_plus_4p1",
+      "inputSHA256": "299b333ebfb7fc027788d7df32b0f75cf3af51413dc53f87fb107eae59673fad",
+      "pythonVersion": "3.13.12",
+      "sourceSHA256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+      "startedUTC": "2026-10-16T07:38:06.983336+00:00",
+      "status": "complete"
+    },
+    {
+      "elapsedSeconds": 17.457207,
+      "exitCode": 0,
+      "host": "n08.local",
+      "id": "signed_H_minus_4p1",
+      "inputSHA256": "d4d2953ad55674490ee91a85721d367cbccf6a5fefba2324f6885d60e38246e4",
+      "pythonVersion": "3.13.12",
+      "sourceSHA256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+      "startedUTC": "2026-10-16T07:38:13.802248+00:00",
+      "status": "complete"
+    },
+    {
+      "elapsedSeconds": 4.32442,
+      "exitCode": 0,
+      "host": "n08.local",
+      "id": "signed_AI_relative_4p1",
+      "inputSHA256": "54b4a80be19341eac4c16835f178fc88040c0edc8955c8eff0a7f7254843338a",
+      "pythonVersion": "3.13.12",
+      "sourceSHA256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+      "startedUTC": "2026-10-16T07:38:31.266983+00:00",
+      "status": "complete"
+    },
+    {
+      "elapsedSeconds": 1.238319,
+      "exitCode": 0,
+      "host": "n08.local",
+      "id": "signed_AII_relative_4p1",
+      "inputSHA256": "d9758086d05063bb232c9927e06fe7f9dd1ac41edc9aa67baee4aab5b5609408",
+      "pythonVersion": "3.13.12",
+      "sourceSHA256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+      "startedUTC": "2026-10-16T07:38:35.596461+00:00",
+      "status": "complete"
+    }
+  ],
+  "selectedCases": [
+    "H_plus",
+    "H_minus",
+    "AI_relative",
+    "AII_relative"
+  ],
+  "sourceSHA256": "a8af8b369c4f925dfcedeb15e6451e0104770f494071d3f4e12f2bbd41535112",
+  "startedUTC": "2026-10-16T07:38:06.980404+00:00",
+  "status": "complete"
+}
