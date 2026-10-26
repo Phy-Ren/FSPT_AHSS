@@ -1,0 +1,3527 @@
+{
+  "scope": "Existing full mathematical groups; no terminal-independence inference.",
+  "input_catalog": "FSPT_AHSS/results/computed_examples/tables/internal_4d_symbolic.json",
+  "catalog_sha256": "beb6140e2b32fb896a9153e3fdb86b338a989ff680bad61a0a7177f2d60a9a52",
+  "selected_backgrounds": [
+    {
+      "background_id": "C2_orbit_000",
+      "orders": [
+        2
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [],
+      "final_layers": {
+        "bosonic": [],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": []
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C2_w0_s0.json",
+      "sha256": "965e97d1756ac8fc0df97a4c23e545179ebc1a3e91afeef39d7a9e6dc3a29de8",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 23.432410717010498,
+      "cpu_ms": 18679,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {}
+    },
+    {
+      "background_id": "C2_orbit_001",
+      "orders": [
+        2
+      ],
+      "power_bits": [
+        1
+      ],
+      "full_group": [
+        16
+      ],
+      "final_layers": {
+        "bosonic": [
+          2
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [
+          2
+        ],
+        "pip": [
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C2_w1_s0.json",
+      "sha256": "619742bd66ce9addc6dbab65bfc9bbfd526a919860b32b2e4d2748e3df823dc9",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 25.668802738189697,
+      "cpu_ms": 19277,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "16": 1
+      },
+      "normalized_distinguished_order": 2,
+      "normalized_spectator_orders": []
+    },
+    {
+      "background_id": "C3_orbit_000",
+      "orders": [
+        3
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        9
+      ],
+      "final_layers": {
+        "bosonic": [
+          3
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          3
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C3_w0_s0.json",
+      "sha256": "2bc823701e14497a43370f98389df6588d5e724304855e8f5db2684d10cc38c1",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 26.30827760696411,
+      "cpu_ms": 20307,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "9": 1
+      }
+    },
+    {
+      "background_id": "C4_orbit_000",
+      "orders": [
+        4
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        4
+      ],
+      "final_layers": {
+        "bosonic": [
+          2
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4_w0_s0.json",
+      "sha256": "a3752e986e6d783e0c1cc773f6a98054209be8f2f9cfa7da2ab4befbd7ab1684",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 32.074315786361694,
+      "cpu_ms": 26460,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "4": 1
+      }
+    },
+    {
+      "background_id": "C4_orbit_001",
+      "orders": [
+        4
+      ],
+      "power_bits": [
+        1
+      ],
+      "full_group": [
+        2,
+        32
+      ],
+      "final_layers": {
+        "bosonic": [
+          4
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [
+          2
+        ],
+        "pip": [
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4_orbit_001.json",
+      "sha256": "4a48ecb7e20c17ed40accf01fff76315a40fdcce227f0e26c0530bc1e8652d5a",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 39.081647872924805,
+      "cpu_ms": 32591,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "2": 1,
+        "32": 1
+      },
+      "normalized_distinguished_order": 4,
+      "normalized_spectator_orders": []
+    },
+    {
+      "background_id": "C5_orbit_000",
+      "orders": [
+        5
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        5,
+        5
+      ],
+      "final_layers": {
+        "bosonic": [
+          5
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          5
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C5_w0_s0.json",
+      "sha256": "6d572193ed4d74c8ccb43b7b63658dfece26a99d12f277c8c8c068184fc0690e",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 36.110674142837524,
+      "cpu_ms": 29750,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "5": 2
+      }
+    },
+    {
+      "background_id": "C6_orbit_000",
+      "orders": [
+        6
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        9
+      ],
+      "final_layers": {
+        "bosonic": [
+          3
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          3
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C6_w0_s0.json",
+      "sha256": "96f43744d505c79b165c2a0efd32bee4e2f43a490ceebf50d65bf24cb7f7f21d",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 46.145493507385254,
+      "cpu_ms": 38751,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "primary_multiplicities": {
+        "9": 1
+      }
+    },
+    {
+      "background_id": "C6_orbit_001",
+      "orders": [
+        6
+      ],
+      "power_bits": [
+        1
+      ],
+      "full_group": [
+        144
+      ],
+      "final_layers": {
+        "bosonic": [
+          6
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [
+          2
+        ],
+        "pip": [
+          6
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C6_orbit_001.json",
+      "sha256": "ad49c02ed079056a9762e2adbcf7c2dfbce9ad6a849f3595293075458648c4aa",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 78.96329069137573,
+      "cpu_ms": 53204,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "primary_multiplicities": {
+        "9": 1,
+        "16": 1
+      }
+    },
+    {
+      "background_id": "C7_orbit_000",
+      "orders": [
+        7
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        7,
+        7
+      ],
+      "final_layers": {
+        "bosonic": [
+          7
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          7
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C7_orbit_000.json",
+      "sha256": "fabfb6bc449d738df301021cc6a793641990e931710ffb1b95816cd5401052fe",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 50.462294578552246,
+      "cpu_ms": 45898,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "7": 2
+      }
+    },
+    {
+      "background_id": "C8_orbit_000",
+      "orders": [
+        8
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        2,
+        8
+      ],
+      "final_layers": {
+        "bosonic": [
+          4
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C8_w0_s0.json",
+      "sha256": "f6e6cdfd1e66a68566d962a25a4fde17c4b0aaabfb4091efb1a4571b8e991972",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 77.25853967666626,
+      "cpu_ms": 70563,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "2": 1,
+        "8": 1
+      }
+    },
+    {
+      "background_id": "C8_orbit_001",
+      "orders": [
+        8
+      ],
+      "power_bits": [
+        1
+      ],
+      "full_group": [
+        4,
+        64
+      ],
+      "final_layers": {
+        "bosonic": [
+          8
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [
+          2
+        ],
+        "pip": [
+          8
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C8_orbit_001.json",
+      "sha256": "cda551d789a59d8977a385806ca05745b95729017e44bffb75fc87f3f7bef969",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 127.88471055030823,
+      "cpu_ms": 108547,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "4": 1,
+        "64": 1
+      },
+      "normalized_distinguished_order": 8,
+      "normalized_spectator_orders": []
+    },
+    {
+      "background_id": "C9_orbit_000",
+      "orders": [
+        9
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        3,
+        27
+      ],
+      "final_layers": {
+        "bosonic": [
+          9
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          9
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C9_orbit_000.json",
+      "sha256": "8772b0209dd747042dad32832bf2556701615ab753f634411a41d7e48817f262",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 83.99343180656433,
+      "cpu_ms": 78245,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "3": 1,
+        "27": 1
+      }
+    },
+    {
+      "background_id": "C10_orbit_000",
+      "orders": [
+        10
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        5,
+        5
+      ],
+      "final_layers": {
+        "bosonic": [
+          5
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          5
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C10_orbit_000.json",
+      "sha256": "0d6b3e92563ff9a948069dc51532d5146d597cf9a1f5867b472de8000b0504ad",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 120.11936807632446,
+      "cpu_ms": 116462,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "5": 2
+      }
+    },
+    {
+      "background_id": "C10_orbit_001",
+      "orders": [
+        10
+      ],
+      "power_bits": [
+        1
+      ],
+      "full_group": [
+        5,
+        80
+      ],
+      "final_layers": {
+        "bosonic": [
+          10
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [
+          2
+        ],
+        "pip": [
+          10
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C10_orbit_001.json",
+      "sha256": "608241611d9551ec5cad0bd1c32a1956fa3a9534a771dcfe572e2988b77080cd",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 202.50336384773254,
+      "cpu_ms": 182902,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "5": 2,
+        "16": 1
+      }
+    },
+    {
+      "background_id": "C12_orbit_000",
+      "orders": [
+        12
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        36
+      ],
+      "final_layers": {
+        "bosonic": [
+          6
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          6
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C12_orbit_000.json",
+      "sha256": "13eb54f3487be00b3bd33773d16770929ee16bbbd62f6797d2a133568d25d630",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 183.8226239681244,
+      "cpu_ms": 179633,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "4": 1,
+        "9": 1
+      }
+    },
+    {
+      "background_id": "C12_orbit_001",
+      "orders": [
+        12
+      ],
+      "power_bits": [
+        1
+      ],
+      "full_group": [
+        2,
+        288
+      ],
+      "final_layers": {
+        "bosonic": [
+          12
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [
+          2
+        ],
+        "pip": [
+          12
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C12_orbit_001.json",
+      "sha256": "5debc4d82ecfba87753107b403e20bc886652da728aefa0f19ce460910a2e8f0",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 306.4196696281433,
+      "cpu_ms": 287708,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "2": 1,
+        "9": 1,
+        "32": 1
+      }
+    },
+    {
+      "background_id": "C16_orbit_000",
+      "orders": [
+        16
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        4,
+        16
+      ],
+      "final_layers": {
+        "bosonic": [
+          8
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          8
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C16_w0_s0.json",
+      "sha256": "29e6720d19dd4a4bc68b7652b58a950854f42503bfc240b61064385155f21009",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 374.1180646419525,
+      "cpu_ms": 365239,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "4": 1,
+        "16": 1
+      }
+    },
+    {
+      "background_id": "C16_orbit_001",
+      "orders": [
+        16
+      ],
+      "power_bits": [
+        1
+      ],
+      "full_group": [
+        8,
+        128
+      ],
+      "final_layers": {
+        "bosonic": [
+          16
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [
+          2
+        ],
+        "pip": [
+          16
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C16_orbit_001.json",
+      "sha256": "9d154ff10437c7ec2fc55aa349b93a368e9356a8a5927b41d1db965717a30e48",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 632.3489475250244,
+      "cpu_ms": 603375,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "8": 1,
+        "128": 1
+      },
+      "normalized_distinguished_order": 16,
+      "normalized_spectator_orders": []
+    },
+    {
+      "background_id": "C27_s0_w0",
+      "orders": [
+        27
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        9,
+        81
+      ],
+      "final_layers": {
+        "bosonic": [
+          27
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          27
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C27_s0_w0.json",
+      "sha256": "e1e33237bc1ec110a4bac518cd938a94127f0aa6bb2897b6f692985f90ff573e",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "input-generators",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "9": 1,
+        "81": 1
+      }
+    },
+    {
+      "background_id": "C32_w0_s0",
+      "orders": [
+        32
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        8,
+        32
+      ],
+      "final_layers": {
+        "bosonic": [
+          16
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          16
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C32_w0_s0.json",
+      "sha256": "3cfdc6a4fcf4d433ddfaac34757216b5076681ebdfbad2703a96dbf4e3b282d0",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 2562.577872991562,
+      "cpu_ms": 2549739,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "8": 1,
+        "32": 1
+      }
+    },
+    {
+      "background_id": "C32_w1_s0",
+      "orders": [
+        32
+      ],
+      "power_bits": [
+        1
+      ],
+      "full_group": [
+        16,
+        256
+      ],
+      "final_layers": {
+        "bosonic": [
+          32
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [
+          2
+        ],
+        "pip": [
+          32
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C32_w1_s0.json",
+      "sha256": "8b3803ae0ec9703637e18e08002325e97b1ca322c032788f5b4514a7da0f254a",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 4182.035884380341,
+      "cpu_ms": 4150472,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "16": 1,
+        "256": 1
+      },
+      "normalized_distinguished_order": 32,
+      "normalized_spectator_orders": []
+    },
+    {
+      "background_id": "C64_w0_s0",
+      "orders": [
+        64
+      ],
+      "power_bits": [
+        0
+      ],
+      "full_group": [
+        16,
+        64
+      ],
+      "final_layers": {
+        "bosonic": [
+          32
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          32
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C64_w0_s0.json",
+      "sha256": "f5cf627908622355b747b0e5df80dac0019747b2bc8ea4e58b30e73915f9c373",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 2728.9581167697906,
+      "cpu_ms": 2702631,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "16": 1,
+        "64": 1
+      }
+    },
+    {
+      "background_id": "C64_w1_s0",
+      "orders": [
+        64
+      ],
+      "power_bits": [
+        1
+      ],
+      "full_group": [
+        32,
+        512
+      ],
+      "final_layers": {
+        "bosonic": [
+          64
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [
+          2
+        ],
+        "pip": [
+          64
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C64_w1_s0.json",
+      "sha256": "beba2f58e3471af5d5815e7e7ee622ee4fd89c29017e52a0647d1105871bb09d",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 4534.039700269699,
+      "cpu_ms": 4506518,
+      "native_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "primary_multiplicities": {
+        "32": 1,
+        "512": 1
+      },
+      "normalized_distinguished_order": 64,
+      "normalized_spectator_orders": []
+    },
+    {
+      "background_id": "C2xC2_orbit_000",
+      "orders": [
+        2,
+        2
+      ],
+      "power_bits": [
+        0,
+        0
+      ],
+      "full_group": [],
+      "final_layers": {
+        "bosonic": [],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": []
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_V4_w0_s0.json",
+      "sha256": "7fe9e95b7b83f166f0731550b51a6f06b4347d10d0e19156ba0386c33c976c5c",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 40.70502281188965,
+      "cpu_ms": 39690,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "primary_multiplicities": {}
+    },
+    {
+      "background_id": "C2xC2_orbit_001",
+      "orders": [
+        2,
+        2
+      ],
+      "power_bits": [
+        1,
+        1
+      ],
+      "full_group": [
+        8,
+        16
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2
+        ],
+        "pip": [
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C2xC2_orbit_001.json",
+      "sha256": "39a6560628b6f647989651c8378329c1c61815ab6f1eadd0e8c4ac4336cbd6ad",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 96.03885912895203,
+      "cpu_ms": 81062,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "primary_multiplicities": {
+        "8": 1,
+        "16": 1
+      },
+      "normalized_distinguished_order": 2,
+      "normalized_spectator_orders": [
+        2
+      ]
+    },
+    {
+      "background_id": "C2xC2xC2_orbit_000",
+      "orders": [
+        2,
+        2,
+        2
+      ],
+      "power_bits": [
+        0,
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        2
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": []
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C2xC2xC2_orbit_000.json",
+      "sha256": "e8c28f84af70e57643624f9f01052eea0ecd1361830271e419e49c5822868700",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 406.66825318336487,
+      "cpu_ms": 405944,
+      "native_dimensions": [
+        1,
+        3,
+        6,
+        10,
+        15,
+        21,
+        28,
+        36
+      ],
+      "primary_multiplicities": {
+        "2": 3
+      }
+    },
+    {
+      "background_id": "C2xC2xC2_orbit_001",
+      "orders": [
+        2,
+        2,
+        2
+      ],
+      "power_bits": [
+        1,
+        1,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        4,
+        8,
+        8,
+        16
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2,
+          2
+        ],
+        "pip": [
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C2xC2xC2_orbit_001.json",
+      "sha256": "97fbb1a715c3231850ec5e08a49302e3f26c065024d17938a6be82e6b790c658",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 976.6224303245544,
+      "cpu_ms": 963365,
+      "native_dimensions": [
+        1,
+        3,
+        6,
+        10,
+        15,
+        21,
+        28,
+        36
+      ],
+      "primary_multiplicities": {
+        "2": 2,
+        "4": 1,
+        "8": 2,
+        "16": 1
+      },
+      "normalized_distinguished_order": 2,
+      "normalized_spectator_orders": [
+        2,
+        2
+      ]
+    },
+    {
+      "background_id": "C4xC2_orbit_000",
+      "orders": [
+        4,
+        2
+      ],
+      "power_bits": [
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        4
+      ],
+      "final_layers": {
+        "bosonic": [
+          2
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [],
+        "pip": [
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4xC2_orbit_000.json",
+      "sha256": "515130dbb86d40c7d9f6d70779f5f302c63ac65cd8fb8a26e2821f705df28b83",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 278.1893107891083,
+      "cpu_ms": 272887,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "primary_multiplicities": {
+        "2": 1,
+        "4": 1
+      }
+    },
+    {
+      "background_id": "C4xC2_orbit_001",
+      "orders": [
+        4,
+        2
+      ],
+      "power_bits": [
+        0,
+        1
+      ],
+      "full_group": [
+        2,
+        2,
+        8,
+        16
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2
+        ],
+        "pip": [
+          2,
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4xC2_orbit_001.json",
+      "sha256": "d82af3d41b9d99faa451c7eb11655c09c7dc96be7ba7aac546e45d3be23744bb",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 670.6240808963776,
+      "cpu_ms": 642601,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "primary_multiplicities": {
+        "2": 2,
+        "8": 1,
+        "16": 1
+      },
+      "normalized_distinguished_order": 2,
+      "normalized_spectator_orders": [
+        4
+      ]
+    },
+    {
+      "background_id": "C4xC2_orbit_004",
+      "orders": [
+        4,
+        2
+      ],
+      "power_bits": [
+        1,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        8,
+        32
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          4
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2
+        ],
+        "pip": [
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4xC2_orbit_004.json",
+      "sha256": "8983c6afaa0b8cf760adc75a5f3214c522c09dc7780c1e8bf8cc0a9dc664f76e",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 527.6371898651123,
+      "cpu_ms": 448261,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "primary_multiplicities": {
+        "2": 2,
+        "8": 1,
+        "32": 1
+      },
+      "normalized_distinguished_order": 4,
+      "normalized_spectator_orders": [
+        2
+      ]
+    },
+    {
+      "background_id": "C3xC3_orbit_000",
+      "orders": [
+        3,
+        3
+      ],
+      "power_bits": [
+        0,
+        0
+      ],
+      "full_group": [
+        3,
+        3,
+        9,
+        9
+      ],
+      "final_layers": {
+        "bosonic": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          3,
+          3
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C3xC3_orbit_000.json",
+      "sha256": "c65efcb8bca81745695233c1760b48a987ffb5e82348d9279665ab6bb02bfe45",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 192.17554664611816,
+      "cpu_ms": 183834,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "primary_multiplicities": {
+        "3": 2,
+        "9": 2
+      }
+    },
+    {
+      "background_id": "C3xC2xC2_orbit_000",
+      "orders": [
+        3,
+        2,
+        2
+      ],
+      "power_bits": [
+        0,
+        0,
+        0
+      ],
+      "full_group": [
+        9
+      ],
+      "final_layers": {
+        "bosonic": [
+          3
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": [
+          3
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C3xC2xC2_orbit_000.json",
+      "sha256": "de1ee159a9709527035df0f8fe2a4da07f555fbf6563cb86714c9f6121b6ead0",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 438.0008442401886,
+      "cpu_ms": 432677,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "primary_multiplicities": {
+        "9": 1
+      }
+    },
+    {
+      "background_id": "C3xC2xC2_orbit_001",
+      "orders": [
+        3,
+        2,
+        2
+      ],
+      "power_bits": [
+        0,
+        1,
+        1
+      ],
+      "full_group": [
+        8,
+        144
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          6
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2
+        ],
+        "pip": [
+          6
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C3xC2xC2_orbit_001.json",
+      "sha256": "df5e62f8794a7153ad8c438e79f01f03c8276d29343c2679cd7f92604b47ebbe",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 804.7122976779938,
+      "cpu_ms": 768736,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "primary_multiplicities": {
+        "8": 1,
+        "9": 1,
+        "16": 1
+      }
+    },
+    {
+      "background_id": "C2xC2xC2xC2_orbit_000",
+      "orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "power_bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [],
+        "majorana": [],
+        "pip": []
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C2xC2xC2xC2_orbit_000.json",
+      "sha256": "9f6b50b8ba7f9d27fc3f9050b560e05f0d34d6bbe2c4afb15ee33ce4a4c952a1",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 15
+      }
+    },
+    {
+      "background_id": "C2xC2xC2xC2_orbit_001",
+      "orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "power_bits": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        8,
+        8,
+        8,
+        16
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "pip": [
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C2xC2xC2xC2_orbit_001.json",
+      "sha256": "10ba08aae3d9add2c0c26dc487eb6da00aca1e3158acd13fe964edd324efeffe",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 12,
+        "4": 3,
+        "8": 3,
+        "16": 1
+      },
+      "normalized_distinguished_order": 2,
+      "normalized_spectator_orders": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "background_id": "C4xC2xC2_orbit_000",
+      "orders": [
+        4,
+        2,
+        2
+      ],
+      "power_bits": [
+        0,
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [],
+        "pip": [
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC2xC2_orbit_000.json",
+      "sha256": "3cc3bb7bef67438c4f83f6c0df41b5cc429eb354333ca083535d613e14ecddd5",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 6,
+        "4": 1
+      }
+    },
+    {
+      "background_id": "C4xC2xC2_orbit_001",
+      "orders": [
+        4,
+        2,
+        2
+      ],
+      "power_bits": [
+        0,
+        1,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        8,
+        8,
+        16
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2,
+          2
+        ],
+        "pip": [
+          2,
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC2xC2_orbit_001.json",
+      "sha256": "27ae5a7d7765fadaf299dae0e7910e8aa922c5509151a29dde8a71e5806cd457",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 5,
+        "4": 1,
+        "8": 2,
+        "16": 1
+      },
+      "normalized_distinguished_order": 2,
+      "normalized_spectator_orders": [
+        2,
+        4
+      ]
+    },
+    {
+      "background_id": "C4xC2xC2_orbit_007",
+      "orders": [
+        4,
+        2,
+        2
+      ],
+      "power_bits": [
+        1,
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        8,
+        8,
+        32
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4
+        ],
+        "complex_fermion": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2,
+          2
+        ],
+        "pip": [
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC2xC2_orbit_007.json",
+      "sha256": "ead299541a417582eb920b391b33e628e31d13bdb48bbfd7a06f65511a68fb1d",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 5,
+        "4": 1,
+        "8": 2,
+        "32": 1
+      },
+      "normalized_distinguished_order": 4,
+      "normalized_spectator_orders": [
+        2,
+        2
+      ]
+    },
+    {
+      "background_id": "C4xC4_orbit_000",
+      "orders": [
+        4,
+        4
+      ],
+      "power_bits": [
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        4,
+        4,
+        4
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [],
+        "pip": [
+          2,
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4xC4_orbit_000.json",
+      "sha256": "e33e71f057b0f81d1c97e91cbe189330931a768d080d0edb14d65dc5a2fea8ef",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 1443.9631023406982,
+      "cpu_ms": 1436269,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "primary_multiplicities": {
+        "2": 1,
+        "4": 3
+      }
+    },
+    {
+      "background_id": "C4xC4_orbit_001",
+      "orders": [
+        4,
+        4
+      ],
+      "power_bits": [
+        1,
+        1
+      ],
+      "full_group": [
+        2,
+        2,
+        2,
+        2,
+        16,
+        32
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          4,
+          4
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2
+        ],
+        "pip": [
+          2,
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4xC4_orbit_001.json",
+      "sha256": "b1024783ec365222baac825c75ff0950107e6620cd7aade3b1d9d7341ad5c8f6",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 2576.01615691185,
+      "cpu_ms": 2380985,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "primary_multiplicities": {
+        "2": 4,
+        "16": 1,
+        "32": 1
+      },
+      "normalized_distinguished_order": 4,
+      "normalized_spectator_orders": [
+        4
+      ]
+    },
+    {
+      "background_id": "C8xC2_orbit_000",
+      "orders": [
+        8,
+        2
+      ],
+      "power_bits": [
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        4,
+        8
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          4
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [],
+        "pip": [
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C8xC2_orbit_000.json",
+      "sha256": "e7e69566c2c5ddd0d8aff919e2912bafbfd96eabc9bbc87b6ad248e81a772cd8",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 1056.2332730293274,
+      "cpu_ms": 1044023,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "primary_multiplicities": {
+        "2": 1,
+        "4": 1,
+        "8": 1
+      }
+    },
+    {
+      "background_id": "C8xC2_orbit_001",
+      "orders": [
+        8,
+        2
+      ],
+      "power_bits": [
+        0,
+        1
+      ],
+      "full_group": [
+        4,
+        4,
+        8,
+        16
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          4
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2
+        ],
+        "pip": [
+          2,
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C8xC2_orbit_001.json",
+      "sha256": "bd3a57dffe71dd88c9b492cdc1b8f5bd5c3aa10a598f740d4254560559e1ca3d",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 2559.397544145584,
+      "cpu_ms": 2493771,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "primary_multiplicities": {
+        "4": 2,
+        "8": 1,
+        "16": 1
+      },
+      "normalized_distinguished_order": 2,
+      "normalized_spectator_orders": [
+        8
+      ]
+    },
+    {
+      "background_id": "C8xC2_orbit_004",
+      "orders": [
+        8,
+        2
+      ],
+      "power_bits": [
+        1,
+        0
+      ],
+      "full_group": [
+        2,
+        4,
+        8,
+        64
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          8
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2
+        ],
+        "pip": [
+          8
+        ]
+      },
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C8xC2_orbit_004.json",
+      "sha256": "189b6a802bb40dc3eadb6c50dbe97aa72e2e98962c2a01b6372e44c6d4b0e034",
+      "schema": "fspt-complete-finite-v1",
+      "resolution_strategy": null,
+      "wall_seconds": 1967.0708663463593,
+      "cpu_ms": 1836106,
+      "native_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "primary_multiplicities": {
+        "2": 1,
+        "4": 1,
+        "8": 1,
+        "64": 1
+      },
+      "normalized_distinguished_order": 8,
+      "normalized_spectator_orders": [
+        2
+      ]
+    },
+    {
+      "background_id": "C4xC4xC2_orbit_000",
+      "orders": [
+        4,
+        4,
+        2
+      ],
+      "power_bits": [
+        0,
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "majorana": [],
+        "pip": [
+          2,
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC4xC2_orbit_000.json",
+      "sha256": "925341ff4edbb2d9b39d6a6a570b9459c75c7ba3a390c681f734dc5c019987ba",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 6,
+        "4": 4
+      }
+    },
+    {
+      "background_id": "C4xC4xC2_orbit_001",
+      "orders": [
+        4,
+        4,
+        2
+      ],
+      "power_bits": [
+        1,
+        1,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        8,
+        16,
+        32
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4
+        ],
+        "complex_fermion": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2,
+          2
+        ],
+        "pip": [
+          2,
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC4xC2_orbit_001.json",
+      "sha256": "6d6eadbaf24a5baa32ddabd0c054fbf3f91143de45d298b66d837a7cb5eecd7c",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 7,
+        "4": 2,
+        "8": 1,
+        "16": 1,
+        "32": 1
+      },
+      "normalized_distinguished_order": 4,
+      "normalized_spectator_orders": [
+        2,
+        4
+      ]
+    },
+    {
+      "background_id": "C4xC4xC2_orbit_006",
+      "orders": [
+        4,
+        4,
+        2
+      ],
+      "power_bits": [
+        0,
+        0,
+        1
+      ],
+      "full_group": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        8,
+        8,
+        16
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "complex_fermion": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2,
+          2
+        ],
+        "pip": [
+          2,
+          2,
+          2
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC4xC2_orbit_006.json",
+      "sha256": "770322761c96fe5eea95d545cceda9ea0643a7cb84902a0e6644ea68c47b7c77",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 8,
+        "4": 1,
+        "8": 2,
+        "16": 1
+      },
+      "normalized_distinguished_order": 2,
+      "normalized_spectator_orders": [
+        4,
+        4
+      ]
+    },
+    {
+      "background_id": "C4xC8_orbit_000",
+      "orders": [
+        4,
+        8
+      ],
+      "power_bits": [
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        4,
+        8,
+        8
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          2,
+          4,
+          4
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [],
+        "pip": [
+          2,
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC8_orbit_000.json",
+      "sha256": "1e136664d1c77152d45bc2cd6b3d271e3a93a950e7336a9cd9619cae77f79f48",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 2,
+        "4": 1,
+        "8": 2
+      }
+    },
+    {
+      "background_id": "C4xC8_orbit_001",
+      "orders": [
+        4,
+        8
+      ],
+      "power_bits": [
+        1,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        4,
+        4,
+        16,
+        32
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2
+        ],
+        "pip": [
+          4,
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC8_orbit_001.json",
+      "sha256": "7db3244f1ddf9224be40514e78ac85ba28db0bf2882ad39aa1f8924e6d8a676d",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 2,
+        "4": 2,
+        "16": 1,
+        "32": 1
+      },
+      "normalized_distinguished_order": 4,
+      "normalized_spectator_orders": [
+        8
+      ]
+    },
+    {
+      "background_id": "C4xC8_orbit_004",
+      "orders": [
+        4,
+        8
+      ],
+      "power_bits": [
+        1,
+        1
+      ],
+      "full_group": [
+        2,
+        2,
+        4,
+        4,
+        16,
+        64
+      ],
+      "final_layers": {
+        "bosonic": [
+          2,
+          4,
+          4,
+          8
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2
+        ],
+        "pip": [
+          2,
+          8
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC8_orbit_004.json",
+      "sha256": "1dabc931b51846aad70d2c68419e9ee878a100c07959142eb3d4a5ce07c624bd",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 2,
+        "4": 2,
+        "16": 1,
+        "64": 1
+      },
+      "normalized_distinguished_order": 8,
+      "normalized_spectator_orders": [
+        4
+      ]
+    },
+    {
+      "background_id": "C8xC8_orbit_000",
+      "orders": [
+        8,
+        8
+      ],
+      "power_bits": [
+        0,
+        0
+      ],
+      "full_group": [
+        2,
+        2,
+        4,
+        8,
+        8,
+        8
+      ],
+      "final_layers": {
+        "bosonic": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "complex_fermion": [
+          2
+        ],
+        "majorana": [],
+        "pip": [
+          4,
+          4
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C8xC8_orbit_000.json",
+      "sha256": "a81bad40437b241c9e7095a65d4890fa11488ee2d543d1063e147356c77b8b48",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "2": 2,
+        "4": 1,
+        "8": 3
+      }
+    },
+    {
+      "background_id": "C8xC8_orbit_001",
+      "orders": [
+        8,
+        8
+      ],
+      "power_bits": [
+        1,
+        1
+      ],
+      "full_group": [
+        4,
+        4,
+        4,
+        4,
+        32,
+        64
+      ],
+      "final_layers": {
+        "bosonic": [
+          4,
+          4,
+          8,
+          8
+        ],
+        "complex_fermion": [
+          2,
+          2
+        ],
+        "majorana": [
+          2,
+          2
+        ],
+        "pip": [
+          4,
+          8
+        ]
+      },
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C8xC8_orbit_001.json",
+      "sha256": "d4b36df5832df2ae51a2eb460f1d260fdf978978992b3ea435568abefa7233d2",
+      "schema": "fspt-accepted-scientific-summary-v1",
+      "resolution_strategy": "tensor-abelian",
+      "wall_seconds": null,
+      "cpu_ms": null,
+      "native_dimensions": null,
+      "primary_multiplicities": {
+        "4": 4,
+        "32": 1,
+        "64": 1
+      },
+      "normalized_distinguished_order": 8,
+      "normalized_spectator_orders": [
+        8
+      ]
+    }
+  ],
+  "split_support_blocks": [
+    {
+      "orders": [
+        2
+      ],
+      "primary_multiplicities": {},
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {}
+      },
+      "group": "0",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C2_w0_s0.json",
+      "background_id": "C2_orbit_000"
+    },
+    {
+      "orders": [
+        4
+      ],
+      "primary_multiplicities": {
+        "4": 1
+      },
+      "layer_support": {
+        "pip": {
+          "2": 1
+        },
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {
+          "2": 1
+        }
+      },
+      "group": "Z_4",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4_w0_s0.json",
+      "background_id": "C4_orbit_000"
+    },
+    {
+      "orders": [
+        8
+      ],
+      "primary_multiplicities": {
+        "2": 1,
+        "8": 1
+      },
+      "layer_support": {
+        "pip": {
+          "4": 1
+        },
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {
+          "4": 1
+        }
+      },
+      "group": "Z_2 x Z_8",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C8_w0_s0.json",
+      "background_id": "C8_orbit_000"
+    },
+    {
+      "orders": [
+        16
+      ],
+      "primary_multiplicities": {
+        "4": 1,
+        "16": 1
+      },
+      "layer_support": {
+        "pip": {
+          "8": 1
+        },
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {
+          "8": 1
+        }
+      },
+      "group": "Z_4 x Z_16",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C16_w0_s0.json",
+      "background_id": "C16_orbit_000"
+    },
+    {
+      "orders": [
+        32
+      ],
+      "primary_multiplicities": {
+        "8": 1,
+        "32": 1
+      },
+      "layer_support": {
+        "pip": {
+          "16": 1
+        },
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {
+          "16": 1
+        }
+      },
+      "group": "Z_8 x Z_32",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C32_w0_s0.json",
+      "background_id": "C32_w0_s0"
+    },
+    {
+      "orders": [
+        64
+      ],
+      "primary_multiplicities": {
+        "16": 1,
+        "64": 1
+      },
+      "layer_support": {
+        "pip": {
+          "32": 1
+        },
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {
+          "32": 1
+        }
+      },
+      "group": "Z_16 x Z_64",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C64_w0_s0.json",
+      "background_id": "C64_w0_s0"
+    },
+    {
+      "orders": [
+        2,
+        2
+      ],
+      "primary_multiplicities": {},
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {}
+      },
+      "group": "0",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_V4_w0_s0.json",
+      "background_id": "C2xC2_orbit_000"
+    },
+    {
+      "orders": [
+        2,
+        4
+      ],
+      "primary_multiplicities": {
+        "2": 1
+      },
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {}
+      },
+      "group": "Z_2",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4xC2_orbit_000.json",
+      "background_id": "C4xC2_orbit_000"
+    },
+    {
+      "orders": [
+        2,
+        8
+      ],
+      "primary_multiplicities": {
+        "4": 1
+      },
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 1
+        }
+      },
+      "group": "Z_4",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C8xC2_orbit_000.json",
+      "background_id": "C8xC2_orbit_000"
+    },
+    {
+      "orders": [
+        4,
+        4
+      ],
+      "primary_multiplicities": {
+        "2": 1,
+        "4": 1
+      },
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 2
+        }
+      },
+      "group": "Z_2 x Z_4",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4xC4_orbit_000.json",
+      "background_id": "C4xC4_orbit_000"
+    },
+    {
+      "orders": [
+        4,
+        8
+      ],
+      "primary_multiplicities": {
+        "2": 1,
+        "8": 1
+      },
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 1,
+          "4": 1
+        }
+      },
+      "group": "Z_2 x Z_8",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC8_orbit_000.json",
+      "background_id": "C4xC8_orbit_000"
+    },
+    {
+      "orders": [
+        8,
+        8
+      ],
+      "primary_multiplicities": {
+        "4": 1,
+        "8": 1
+      },
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "4": 2
+        }
+      },
+      "group": "Z_4 x Z_8",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C8xC8_orbit_000.json",
+      "background_id": "C8xC8_orbit_000"
+    },
+    {
+      "orders": [
+        2,
+        2,
+        2
+      ],
+      "primary_multiplicities": {
+        "2": 3
+      },
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {
+          "2": 3
+        }
+      },
+      "group": "Z_2^3",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C2xC2xC2_orbit_000.json",
+      "background_id": "C2xC2xC2_orbit_000"
+    },
+    {
+      "orders": [
+        2,
+        2,
+        4
+      ],
+      "primary_multiplicities": {
+        "2": 4
+      },
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {
+          "2": 4
+        }
+      },
+      "group": "Z_2^4",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC2xC2_orbit_000.json",
+      "background_id": "C4xC2xC2_orbit_000"
+    },
+    {
+      "orders": [
+        2,
+        4,
+        4
+      ],
+      "primary_multiplicities": {
+        "2": 3,
+        "4": 1
+      },
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 4
+        }
+      },
+      "group": "Z_2^3 x Z_4",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC4xC2_orbit_000.json",
+      "background_id": "C4xC4xC2_orbit_000"
+    },
+    {
+      "orders": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "primary_multiplicities": {
+        "2": 3
+      },
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {
+          "2": 3
+        }
+      },
+      "group": "Z_2^3",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C2xC2xC2xC2_orbit_000.json",
+      "background_id": "C2xC2xC2xC2_orbit_000"
+    }
+  ],
+  "distinguished_factor_support_blocks": [
+    {
+      "distinguished_order": 2,
+      "spectator_orders": [],
+      "layer_support": {
+        "pip": {
+          "2": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 1
+        }
+      },
+      "primary_multiplicities": {
+        "16": 1
+      },
+      "group": "Z_16",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C2_w1_s0.json",
+      "background_id": "C2_orbit_001"
+    },
+    {
+      "distinguished_order": 2,
+      "spectator_orders": [
+        2
+      ],
+      "layer_support": {
+        "pip": {},
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 1
+        }
+      },
+      "primary_multiplicities": {
+        "8": 1
+      },
+      "group": "Z_8",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C2xC2_orbit_001.json",
+      "background_id": "C2xC2_orbit_001"
+    },
+    {
+      "distinguished_order": 2,
+      "spectator_orders": [
+        4
+      ],
+      "layer_support": {
+        "pip": {
+          "2": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 2
+        }
+      },
+      "primary_multiplicities": {
+        "2": 2,
+        "8": 1
+      },
+      "group": "Z_2^2 x Z_8",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4xC2_orbit_001.json",
+      "background_id": "C4xC2_orbit_001"
+    },
+    {
+      "distinguished_order": 2,
+      "spectator_orders": [
+        8
+      ],
+      "layer_support": {
+        "pip": {
+          "4": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 1,
+          "4": 1
+        }
+      },
+      "primary_multiplicities": {
+        "4": 2,
+        "8": 1
+      },
+      "group": "Z_4^2 x Z_8",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C8xC2_orbit_001.json",
+      "background_id": "C8xC2_orbit_001"
+    },
+    {
+      "distinguished_order": 2,
+      "spectator_orders": [
+        2,
+        2
+      ],
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 3
+        }
+      },
+      "primary_multiplicities": {
+        "2": 2,
+        "4": 1
+      },
+      "group": "Z_2^2 x Z_4",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C2xC2xC2_orbit_001.json",
+      "background_id": "C2xC2xC2_orbit_001"
+    },
+    {
+      "distinguished_order": 2,
+      "spectator_orders": [
+        2,
+        4
+      ],
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 4
+        }
+      },
+      "primary_multiplicities": {
+        "2": 3,
+        "4": 1
+      },
+      "group": "Z_2^3 x Z_4",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC2xC2_orbit_001.json",
+      "background_id": "C4xC2xC2_orbit_001"
+    },
+    {
+      "distinguished_order": 2,
+      "spectator_orders": [
+        4,
+        4
+      ],
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 5
+        }
+      },
+      "primary_multiplicities": {
+        "2": 4,
+        "4": 1
+      },
+      "group": "Z_2^4 x Z_4",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC4xC2_orbit_006.json",
+      "background_id": "C4xC4xC2_orbit_006"
+    },
+    {
+      "distinguished_order": 2,
+      "spectator_orders": [
+        2,
+        2,
+        2
+      ],
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {},
+        "bosonic": {
+          "2": 6
+        }
+      },
+      "primary_multiplicities": {
+        "2": 6
+      },
+      "group": "Z_2^6",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C2xC2xC2xC2_orbit_001.json",
+      "background_id": "C2xC2xC2xC2_orbit_001"
+    },
+    {
+      "distinguished_order": 4,
+      "spectator_orders": [],
+      "layer_support": {
+        "pip": {
+          "4": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "4": 1
+        }
+      },
+      "primary_multiplicities": {
+        "2": 1,
+        "32": 1
+      },
+      "group": "Z_2 x Z_32",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4_orbit_001.json",
+      "background_id": "C4_orbit_001"
+    },
+    {
+      "distinguished_order": 4,
+      "spectator_orders": [
+        2
+      ],
+      "layer_support": {
+        "pip": {},
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 2
+        }
+      },
+      "primary_multiplicities": {
+        "2": 1,
+        "8": 1
+      },
+      "group": "Z_2 x Z_8",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4xC2_orbit_004.json",
+      "background_id": "C4xC2_orbit_004"
+    },
+    {
+      "distinguished_order": 4,
+      "spectator_orders": [
+        4
+      ],
+      "layer_support": {
+        "pip": {
+          "2": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 2,
+          "4": 1
+        }
+      },
+      "primary_multiplicities": {
+        "2": 3,
+        "16": 1
+      },
+      "group": "Z_2^3 x Z_16",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C4xC4_orbit_001.json",
+      "background_id": "C4xC4_orbit_001"
+    },
+    {
+      "distinguished_order": 4,
+      "spectator_orders": [
+        8
+      ],
+      "layer_support": {
+        "pip": {
+          "4": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 1,
+          "4": 2
+        }
+      },
+      "primary_multiplicities": {
+        "2": 1,
+        "4": 2,
+        "16": 1
+      },
+      "group": "Z_2 x Z_4^2 x Z_16",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC8_orbit_001.json",
+      "background_id": "C4xC8_orbit_001"
+    },
+    {
+      "distinguished_order": 4,
+      "spectator_orders": [
+        2,
+        2
+      ],
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 3
+        }
+      },
+      "primary_multiplicities": {
+        "2": 2,
+        "4": 1
+      },
+      "group": "Z_2^2 x Z_4",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC2xC2_orbit_007.json",
+      "background_id": "C4xC2xC2_orbit_007"
+    },
+    {
+      "distinguished_order": 4,
+      "spectator_orders": [
+        2,
+        4
+      ],
+      "layer_support": {
+        "pip": {},
+        "majorana": {},
+        "complex_fermion": {
+          "2": 2
+        },
+        "bosonic": {
+          "2": 4
+        }
+      },
+      "primary_multiplicities": {
+        "2": 2,
+        "4": 2
+      },
+      "group": "Z_2^2 x Z_4^2",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC4xC2_orbit_001.json",
+      "background_id": "C4xC4xC2_orbit_001"
+    },
+    {
+      "distinguished_order": 8,
+      "spectator_orders": [],
+      "layer_support": {
+        "pip": {
+          "8": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "8": 1
+        }
+      },
+      "primary_multiplicities": {
+        "4": 1,
+        "64": 1
+      },
+      "group": "Z_4 x Z_64",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C8_orbit_001.json",
+      "background_id": "C8_orbit_001"
+    },
+    {
+      "distinguished_order": 8,
+      "spectator_orders": [
+        2
+      ],
+      "layer_support": {
+        "pip": {},
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 2
+        }
+      },
+      "primary_multiplicities": {
+        "2": 1,
+        "8": 1
+      },
+      "group": "Z_2 x Z_8",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C8xC2_orbit_004.json",
+      "background_id": "C8xC2_orbit_004"
+    },
+    {
+      "distinguished_order": 8,
+      "spectator_orders": [
+        4
+      ],
+      "layer_support": {
+        "pip": {
+          "2": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "2": 1,
+          "4": 2
+        }
+      },
+      "primary_multiplicities": {
+        "2": 2,
+        "4": 1,
+        "16": 1
+      },
+      "group": "Z_2^2 x Z_4 x Z_16",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C4xC8_orbit_004.json",
+      "background_id": "C4xC8_orbit_004"
+    },
+    {
+      "distinguished_order": 8,
+      "spectator_orders": [
+        8
+      ],
+      "layer_support": {
+        "pip": {
+          "4": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "4": 2,
+          "8": 1
+        }
+      },
+      "primary_multiplicities": {
+        "4": 3,
+        "32": 1
+      },
+      "group": "Z_4^3 x Z_32",
+      "result": "FSPT_AHSS/results/computed_examples/records/d4_C8xC8_orbit_001.json",
+      "background_id": "C8xC8_orbit_001"
+    },
+    {
+      "distinguished_order": 16,
+      "spectator_orders": [],
+      "layer_support": {
+        "pip": {
+          "16": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "16": 1
+        }
+      },
+      "primary_multiplicities": {
+        "8": 1,
+        "128": 1
+      },
+      "group": "Z_8 x Z_128",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C16_orbit_001.json",
+      "background_id": "C16_orbit_001"
+    },
+    {
+      "distinguished_order": 32,
+      "spectator_orders": [],
+      "layer_support": {
+        "pip": {
+          "32": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "32": 1
+        }
+      },
+      "primary_multiplicities": {
+        "16": 1,
+        "256": 1
+      },
+      "group": "Z_16 x Z_256",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C32_w1_s0.json",
+      "background_id": "C32_w1_s0"
+    },
+    {
+      "distinguished_order": 64,
+      "spectator_orders": [],
+      "layer_support": {
+        "pip": {
+          "64": 1
+        },
+        "majorana": {
+          "2": 1
+        },
+        "complex_fermion": {
+          "2": 1
+        },
+        "bosonic": {
+          "64": 1
+        }
+      },
+      "primary_multiplicities": {
+        "32": 1,
+        "512": 1
+      },
+      "group": "Z_32 x Z_512",
+      "result": "FSPT_AHSS/results/complete_formulas/raw/d4_C64_w1_s0.json",
+      "background_id": "C64_w1_s0"
+    }
+  ],
+  "normalization": "For powers of two, keep the largest-order factor with a nonzero power bit. For any other nonzero bit, multiply its generator by the appropriate power of the marked generator; this removes that bit while preserving the marked fermion parity."
+}

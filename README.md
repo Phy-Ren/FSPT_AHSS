@@ -7,6 +7,7 @@ representatives. Independent symmetry backgrounds can run in parallel.
 
 - **[Computed examples](results/computed_examples/README.md):** all completed
   examples in one catalogue, organized by dimension, symmetry family and use.
+- **[General finite Abelian classification in 4+1D](results/finite_abelian_4d_20261026/README.md):** closed formulas for arbitrary cyclic orders and rank, with a direct evaluator, symbolic proofs and independent cochain checks.
 - **[Formula guide](docs/FORMULA_GUIDE.md):** one notation system for the complete
   3+1D and 4+1D obstruction and stacking formulas, with explicit definitions of
   the operations and coefficients.
@@ -54,7 +55,7 @@ phases. Point groups use the finite three-dimensional matrix group.
 ## Formulas
 
 Start with the [canonical formula guide](docs/FORMULA_GUIDE.md). It introduces
-the decoration fields once, then gives the obstruction tower and stacking law
+the decoration fields once, then gives the obstruction equations and stacking law
 in their order of evaluation. Shared expressions are defined once and reused;
 the appendices specify the finite operations and fixed coefficients needed to
 expand every term. The [implementation map](formulas/README.md) connects these
