@@ -653,5 +653,871 @@
     "exact_Smith_identity": "passed",
     "original_result_sha256": "cc7376eef4899a153ef8322326ee18f9675b18d63d95fcd36bb6f2089518da99"
   },
-  "bundled_file_hashes_verified": 45
+  "final_decoration_layers": {
+    "nonsplit": {
+      "archived_nonsplit_final_layer_comparisons": 25,
+      "archived_support_layer_comparisons": 21,
+      "exhaustive_symbolic_bosonic_layer_certificates": 62,
+      "elementary_corollary_ranks": "0 through 8",
+      "independent_elementary_higher_support_matrices": 4,
+      "status": "passed"
+    },
+    "split": {
+      "proof": "proofs/SPLIT_DECORATION_LAYERS.md",
+      "archived_cases": 26,
+      "all_archived_match": true,
+      "archived_layer_checks": [
+        {
+          "background_id": "C2_orbit_000",
+          "orders": [
+            2
+          ],
+          "predicted": {
+            "pip": [],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": []
+          },
+          "archived": {
+            "pip": [],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": []
+          },
+          "match": true,
+          "result_sha256": "965e97d1756ac8fc0df97a4c23e545179ebc1a3e91afeef39d7a9e6dc3a29de8"
+        },
+        {
+          "background_id": "C3_orbit_000",
+          "orders": [
+            3
+          ],
+          "predicted": {
+            "pip": [
+              3
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              3
+            ]
+          },
+          "archived": {
+            "pip": [
+              3
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              3
+            ]
+          },
+          "match": true,
+          "result_sha256": "2bc823701e14497a43370f98389df6588d5e724304855e8f5db2684d10cc38c1"
+        },
+        {
+          "background_id": "C4_orbit_000",
+          "orders": [
+            4
+          ],
+          "predicted": {
+            "pip": [
+              2
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              2
+            ]
+          },
+          "archived": {
+            "pip": [
+              2
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              2
+            ]
+          },
+          "match": true,
+          "result_sha256": "a3752e986e6d783e0c1cc773f6a98054209be8f2f9cfa7da2ab4befbd7ab1684"
+        },
+        {
+          "background_id": "C5_orbit_000",
+          "orders": [
+            5
+          ],
+          "predicted": {
+            "pip": [
+              5
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              5
+            ]
+          },
+          "archived": {
+            "pip": [
+              5
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              5
+            ]
+          },
+          "match": true,
+          "result_sha256": "6d572193ed4d74c8ccb43b7b63658dfece26a99d12f277c8c8c068184fc0690e"
+        },
+        {
+          "background_id": "C6_orbit_000",
+          "orders": [
+            6
+          ],
+          "predicted": {
+            "pip": [
+              3
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              3
+            ]
+          },
+          "archived": {
+            "pip": [
+              3
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              3
+            ]
+          },
+          "match": true,
+          "result_sha256": "96f43744d505c79b165c2a0efd32bee4e2f43a490ceebf50d65bf24cb7f7f21d"
+        },
+        {
+          "background_id": "C7_orbit_000",
+          "orders": [
+            7
+          ],
+          "predicted": {
+            "pip": [
+              7
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              7
+            ]
+          },
+          "archived": {
+            "pip": [
+              7
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              7
+            ]
+          },
+          "match": true,
+          "result_sha256": "fabfb6bc449d738df301021cc6a793641990e931710ffb1b95816cd5401052fe"
+        },
+        {
+          "background_id": "C8_orbit_000",
+          "orders": [
+            8
+          ],
+          "predicted": {
+            "pip": [
+              4
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              4
+            ]
+          },
+          "archived": {
+            "pip": [
+              4
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              4
+            ]
+          },
+          "match": true,
+          "result_sha256": "f6e6cdfd1e66a68566d962a25a4fde17c4b0aaabfb4091efb1a4571b8e991972"
+        },
+        {
+          "background_id": "C9_orbit_000",
+          "orders": [
+            9
+          ],
+          "predicted": {
+            "pip": [
+              9
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              9
+            ]
+          },
+          "archived": {
+            "pip": [
+              9
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              9
+            ]
+          },
+          "match": true,
+          "result_sha256": "8772b0209dd747042dad32832bf2556701615ab753f634411a41d7e48817f262"
+        },
+        {
+          "background_id": "C10_orbit_000",
+          "orders": [
+            10
+          ],
+          "predicted": {
+            "pip": [
+              5
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              5
+            ]
+          },
+          "archived": {
+            "pip": [
+              5
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              5
+            ]
+          },
+          "match": true,
+          "result_sha256": "0d6b3e92563ff9a948069dc51532d5146d597cf9a1f5867b472de8000b0504ad"
+        },
+        {
+          "background_id": "C12_orbit_000",
+          "orders": [
+            12
+          ],
+          "predicted": {
+            "pip": [
+              6
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              6
+            ]
+          },
+          "archived": {
+            "pip": [
+              6
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              6
+            ]
+          },
+          "match": true,
+          "result_sha256": "13eb54f3487be00b3bd33773d16770929ee16bbbd62f6797d2a133568d25d630"
+        },
+        {
+          "background_id": "C16_orbit_000",
+          "orders": [
+            16
+          ],
+          "predicted": {
+            "pip": [
+              8
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              8
+            ]
+          },
+          "archived": {
+            "pip": [
+              8
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              8
+            ]
+          },
+          "match": true,
+          "result_sha256": "29e6720d19dd4a4bc68b7652b58a950854f42503bfc240b61064385155f21009"
+        },
+        {
+          "background_id": "C27_s0_w0",
+          "orders": [
+            27
+          ],
+          "predicted": {
+            "pip": [
+              27
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              27
+            ]
+          },
+          "archived": {
+            "pip": [
+              27
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              27
+            ]
+          },
+          "match": true,
+          "result_sha256": "e1e33237bc1ec110a4bac518cd938a94127f0aa6bb2897b6f692985f90ff573e"
+        },
+        {
+          "background_id": "C32_w0_s0",
+          "orders": [
+            32
+          ],
+          "predicted": {
+            "pip": [
+              16
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              16
+            ]
+          },
+          "archived": {
+            "pip": [
+              16
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              16
+            ]
+          },
+          "match": true,
+          "result_sha256": "3cfdc6a4fcf4d433ddfaac34757216b5076681ebdfbad2703a96dbf4e3b282d0"
+        },
+        {
+          "background_id": "C64_w0_s0",
+          "orders": [
+            64
+          ],
+          "predicted": {
+            "pip": [
+              32
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              32
+            ]
+          },
+          "archived": {
+            "pip": [
+              32
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              32
+            ]
+          },
+          "match": true,
+          "result_sha256": "f5cf627908622355b747b0e5df80dac0019747b2bc8ea4e58b30e73915f9c373"
+        },
+        {
+          "background_id": "C2xC2_orbit_000",
+          "orders": [
+            2,
+            2
+          ],
+          "predicted": {
+            "pip": [],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": []
+          },
+          "archived": {
+            "pip": [],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": []
+          },
+          "match": true,
+          "result_sha256": "7fe9e95b7b83f166f0731550b51a6f06b4347d10d0e19156ba0386c33c976c5c"
+        },
+        {
+          "background_id": "C2xC2xC2_orbit_000",
+          "orders": [
+            2,
+            2,
+            2
+          ],
+          "predicted": {
+            "pip": [],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              2,
+              2,
+              2
+            ]
+          },
+          "archived": {
+            "pip": [],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              2,
+              2,
+              2
+            ]
+          },
+          "match": true,
+          "result_sha256": "e8c28f84af70e57643624f9f01052eea0ecd1361830271e419e49c5822868700"
+        },
+        {
+          "background_id": "C4xC2_orbit_000",
+          "orders": [
+            4,
+            2
+          ],
+          "predicted": {
+            "pip": [
+              2
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2
+            ],
+            "bosonic": [
+              2
+            ]
+          },
+          "archived": {
+            "pip": [
+              2
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2
+            ],
+            "bosonic": [
+              2
+            ]
+          },
+          "match": true,
+          "result_sha256": "515130dbb86d40c7d9f6d70779f5f302c63ac65cd8fb8a26e2821f705df28b83"
+        },
+        {
+          "background_id": "C3xC3_orbit_000",
+          "orders": [
+            3,
+            3
+          ],
+          "predicted": {
+            "pip": [
+              3,
+              3
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          "archived": {
+            "pip": [
+              3,
+              3
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          "match": true,
+          "result_sha256": "c65efcb8bca81745695233c1760b48a987ffb5e82348d9279665ab6bb02bfe45"
+        },
+        {
+          "background_id": "C3xC2xC2_orbit_000",
+          "orders": [
+            3,
+            2,
+            2
+          ],
+          "predicted": {
+            "pip": [
+              3
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              3
+            ]
+          },
+          "archived": {
+            "pip": [
+              3
+            ],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              3
+            ]
+          },
+          "match": true,
+          "result_sha256": "de1ee159a9709527035df0f8fe2a4da07f555fbf6563cb86714c9f6121b6ead0"
+        },
+        {
+          "background_id": "C2xC2xC2xC2_orbit_000",
+          "orders": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "predicted": {
+            "pip": [],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "archived": {
+            "pip": [],
+            "majorana": [],
+            "complex_fermion": [],
+            "bosonic": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "match": true,
+          "result_sha256": "9f6b50b8ba7f9d27fc3f9050b560e05f0d34d6bbe2c4afb15ee33ce4a4c952a1"
+        },
+        {
+          "background_id": "C4xC2xC2_orbit_000",
+          "orders": [
+            4,
+            2,
+            2
+          ],
+          "predicted": {
+            "pip": [
+              2
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2,
+              2
+            ],
+            "bosonic": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "archived": {
+            "pip": [
+              2
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2,
+              2
+            ],
+            "bosonic": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "match": true,
+          "result_sha256": "3cc3bb7bef67438c4f83f6c0df41b5cc429eb354333ca083535d613e14ecddd5"
+        },
+        {
+          "background_id": "C4xC4_orbit_000",
+          "orders": [
+            4,
+            4
+          ],
+          "predicted": {
+            "pip": [
+              2,
+              2
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2
+            ],
+            "bosonic": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "archived": {
+            "pip": [
+              2,
+              2
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2
+            ],
+            "bosonic": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "match": true,
+          "result_sha256": "e33e71f057b0f81d1c97e91cbe189330931a768d080d0edb14d65dc5a2fea8ef"
+        },
+        {
+          "background_id": "C8xC2_orbit_000",
+          "orders": [
+            8,
+            2
+          ],
+          "predicted": {
+            "pip": [
+              4
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2
+            ],
+            "bosonic": [
+              2,
+              4
+            ]
+          },
+          "archived": {
+            "pip": [
+              4
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2
+            ],
+            "bosonic": [
+              2,
+              4
+            ]
+          },
+          "match": true,
+          "result_sha256": "e7e69566c2c5ddd0d8aff919e2912bafbfd96eabc9bbc87b6ad248e81a772cd8"
+        },
+        {
+          "background_id": "C4xC4xC2_orbit_000",
+          "orders": [
+            4,
+            4,
+            2
+          ],
+          "predicted": {
+            "pip": [
+              2,
+              2
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "bosonic": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "archived": {
+            "pip": [
+              2,
+              2
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "bosonic": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "match": true,
+          "result_sha256": "925341ff4edbb2d9b39d6a6a570b9459c75c7ba3a390c681f734dc5c019987ba"
+        },
+        {
+          "background_id": "C4xC8_orbit_000",
+          "orders": [
+            4,
+            8
+          ],
+          "predicted": {
+            "pip": [
+              2,
+              4
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2
+            ],
+            "bosonic": [
+              2,
+              2,
+              4,
+              4
+            ]
+          },
+          "archived": {
+            "pip": [
+              2,
+              4
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2
+            ],
+            "bosonic": [
+              2,
+              2,
+              4,
+              4
+            ]
+          },
+          "match": true,
+          "result_sha256": "1e136664d1c77152d45bc2cd6b3d271e3a93a950e7336a9cd9619cae77f79f48"
+        },
+        {
+          "background_id": "C8xC8_orbit_000",
+          "orders": [
+            8,
+            8
+          ],
+          "predicted": {
+            "pip": [
+              4,
+              4
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2
+            ],
+            "bosonic": [
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "archived": {
+            "pip": [
+              4,
+              4
+            ],
+            "majorana": [],
+            "complex_fermion": [
+              2
+            ],
+            "bosonic": [
+              4,
+              4,
+              4,
+              4
+            ]
+          },
+          "match": true,
+          "result_sha256": "a81bad40437b241c9e7095a65d4890fa11488ee2d543d1063e147356c77b8b48"
+        }
+      ],
+      "elementary_formula_checks": "ranks 0 through 10"
+    }
+  },
+  "bundled_file_hashes_verified": 56
 }

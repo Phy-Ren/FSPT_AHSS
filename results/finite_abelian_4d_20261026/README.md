@@ -9,7 +9,9 @@ G_f=C_{2m}^{f}\times\prod_i C_{N_i}.
 Fermion parity is the element of order two in the distinguished cyclic factor.
 The default `--fermionic-order 2` is the split case, \(C_2^f\times A\).
 Arbitrary positive spectator orders are allowed.
-The output lists cyclic invariant factors in divisibility order.
+The output lists the stacking group and the four final decoration layers.
+Each list gives cyclic invariant factors in divisibility order.
+The decoration layers are associated-graded quotients after all obstructions and incoming identifications; their product is generally not the stacking group.
 An empty list denotes the trivial group.
 The calculation first separates prime powers and then uses closed formulas for factors of bounded rank; it does not rerun the full AHSS computation.
 
@@ -75,7 +77,8 @@ Its geometric index rows generate the entire lattice; the stored integer left in
 4. Every one of the 56 exhaustive symbolic order-pattern certificates, regenerated from the cochain matrices, together with the one-spectator symbolic identities and primitive index certificate.
 5. Four independent marked-Majorana obstruction calculations, including their raw-file SHA-256 receipts.
 6. A separate full computation for \(C_2^f\times C_4^3\), including its exact Smith transformations, giving \(C_2^4\times C_4^{10}\).
-7. The hashes of the distributed files in `SHA256SUMS.json`.
+7. All 51 archived final decoration filtrations, all 21 nonsplit support filtrations, and 62 additional exhaustive symbolic certificates for the nonsplit bosonic layers.
+8. The hashes of the distributed files in `SHA256SUMS.json`.
 
 `verification_report.json` records the completed default checks.
 `data/high_support_grid_original.json` records the separate 1,822-case regression grid.
@@ -101,7 +104,10 @@ The full presentation and both unimodular Smith transformations are checked dire
 
 ## Code map
 
-- `classify.py`: command-line interface using the physical order of the fermionic factor.
+- `classify.py`: command-line interface using the physical order of the fermionic factor, displaying both the stacking group and final decoration layers.
+- `split_layers.py`, `nonsplit_layers.py`: the four final decoration-layer quotients for arbitrary finite cyclic orders.
+- `nonsplit_layer_certificates.py`: exhaustive symbolic Smith identities for the bosonic layer quotients.
+- `proofs/SPLIT_DECORATION_LAYERS.md`, `proofs/NONSPLIT_DECORATION_LAYERS.md`: layer derivations and the doubling extensions.
 - `split_closed_formula.py`, `nonsplit_closed_formula.py`, `higher_support.py`: the closed formulas.
 - `supercohomology_blocks.py`: independent exact cochain-matrix computation for nonsplit higher supports.
 - `koszul_stabilization.py`: construction and verification of the exhaustive symbolic Smith certificates.

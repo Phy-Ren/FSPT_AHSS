@@ -14,6 +14,8 @@ from supercohomology_blocks import compute
 from higher_support import closed
 from koszul_stabilization import all_signatures,signature,certificate,certificate_three
 from one_spectator_symbolic_certificate import symbolic_certificate
+from check_nonsplit_layers import run as check_nonsplit_layers
+from check_split_layers import main as check_split_layers
 
 ROOT=Path(__file__).resolve().parent
 
@@ -142,7 +144,9 @@ def main():
     args=parser.parse_args()
     report={'status':'passed','archived':check_archived(),'elementary_and_cyclic':check_corollaries(),
             'higher_support_archived':check_higher_archived(),'all_exponent_proof':check_symbolic(),
-            'marked_Majorana':check_marked(),'independent_full_run':check_full_run()}
+            'marked_Majorana':check_marked(),'independent_full_run':check_full_run(),
+            'final_decoration_layers':{'nonsplit':check_nonsplit_layers(),
+              'split':check_split_layers(ROOT/'data/archived_51.json')}}
     if args.deep:report['optional_numeric_grid']=check_deep()
     manifest=ROOT/'SHA256SUMS.json'
     if manifest.exists():

@@ -5,8 +5,10 @@ from collections import Counter
 from math import prod
 try:
     from .nonsplit_closed_formula import nonsplit_closed_formula
+    from .nonsplit_layers import nonsplit_layers
 except ImportError:
     from nonsplit_closed_formula import nonsplit_closed_formula
+    from nonsplit_layers import nonsplit_layers
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
@@ -22,6 +24,7 @@ def main():
     notation=' x '.join(f'C_{n}'+(f'^{k}' if k>1 else '') for n,k in Counter(factors).items()) or '0'
     print(json.dumps({'fermionic_order':args.fermionic_order,'spectator_orders':args.spectators,
                       'invariant_factors':factors,'stacking_group':notation,'group_order':prod(factors),
+                      'final_decoration_layers':nonsplit_layers(args.fermionic_order//2,args.spectators),
                       'scope':'Full mathematical classification; the general result does not assert a physical construction of the terminal p+ip Berry phase.'},indent=2))
 
 if __name__=='__main__':

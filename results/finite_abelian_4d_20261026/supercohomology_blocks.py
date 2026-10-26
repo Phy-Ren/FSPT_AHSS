@@ -116,9 +116,10 @@ def invariant_factors(matrix):
             if abs(diagonal[i,i])>1]
 
 
-def compute(orders,include_presentation=False):
-    if len(orders)<3 or any(n<2 or n&(n-1) for n in orders):
-        raise ValueError('Need distinguished m plus at least two spectators, all powers of two >=2')
+def compute_cf_bosonic(orders,include_presentation=False):
+    """Exact CF and bosonic subsystem; higher-decoration layers are separate."""
+    if len(orders)<1 or any(n<2 or n&(n-1) for n in orders):
+        raise ValueError('Need a distinguished m and optional spectators, all powers of two >=2')
     d4=differential(4,orders);d5=differential(5,orders);d6=differential(6,orders)
     assert d5*d4==zeros(d5.rows,d4.cols)
     assert d6*d5==zeros(d6.rows,d5.cols)
@@ -171,6 +172,13 @@ def compute(orders,include_presentation=False):
                        'bosonic_incoming':incoming_bosonic.tolist(),
                        'doubling_carries':carry.tolist()})
     return answer
+
+
+def compute(orders,include_presentation=False):
+    """The full stacking group of a nonsplit support with >=2 spectators."""
+    if len(orders)<3:
+        raise ValueError('The full higher-support computation requires at least two spectators')
+    return compute_cf_bosonic(orders,include_presentation)
 
 
 if __name__=='__main__':
