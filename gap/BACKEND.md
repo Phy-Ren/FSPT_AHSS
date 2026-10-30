@@ -29,9 +29,9 @@ the formula worker. A global dimension-four campaign is rejected explicitly.
 
 ## Integer and phase coordinates
 
-Each context has immutable, independent `s`, `rho` and `omega` functions.
-Coefficient keys `Zs`, `Zr`, `Zt`, `U1s` mean respectively Z_s, Z_rho,
-Z_(rho+s), (R/Z)_s; every differential/Smith/cohomology cache includes that key.
+Each context has immutable, independent `s`, `r` and `omega` functions.
+Coefficient keys `Zs`, `Zr`, `Zt`, `U1s` mean respectively Z_s, Z_r,
+Z_(rho), (R/Z)_s; every differential/Smith/cohomology cache includes that key.
 The phase cohomology adapter is used only above the group's virtual
 cohomological dimension, so there are no omitted continuous phase summands.
 Integer charge groups retain arbitrary torsion orders and free summands.
@@ -51,7 +51,7 @@ witnesses still use the original native/bar transfer and homotopy correction.
 For the initial charge obstruction with zero CI sheet, a certified
 half-integral extension also permits native binary operations. Write
 `qbar = q mod 2` and `w = 2 omega mod 2`. The exact integral equation
-`delta_rho q = 0` and the validated twisted extension equation imply that both
+`delta_r q = 0` and the validated twisted extension equation imply that both
 are binary cocycles. The coefficient map `j: F2 -> (Q/Z)_s`, `j(1)=1/2`,
 is equivariant for every `s`. Consequently
 `[omega cup q + Sq2(q)/2] = j([w cup qbar + Sq2(qbar)])`.
@@ -145,7 +145,7 @@ triple of the twisted U(1) extension equation. Completed generators, incoming
 states and gauge reductions are checked against their exact native chain
 equations, including source closure. The output records the check count and
 integer gauge parameters. This is supplemented by 108 independent bar-tuple
-checks with distinct s/rho characters, a half-valued extension, negative
+checks with distinct s/r characters, a half-valued extension, negative
 integer gauges and comparison-homotopy primitives. Native identities and these
 bar regressions are explicit verification levels, not an exhaustive bar
 examination of every large campaign group.

@@ -41,24 +41,38 @@ def _integer(cochain: Cochain) -> None:
 
 @dataclass(frozen=True)
 class Symmetry:
-    """The unshifted real extension lift and the two actual symmetry characters."""
+    """Real extension, antiunitarity s1, and charge reversal r1.
+
+    The circle character rho1 is derived as r1+s1 in Z2.  The third
+    constructor argument is charge reversal; a keyword rho1 is not accepted.
+    """
     omega2_real: Cochain
     s1: Cochain
-    rho1: Cochain
+    r1: Cochain
 
     def __post_init__(self) -> None:
         _exact(self.omega2_real, 2)
         _exact(self.s1, 1)
-        _exact(self.rho1, 1)
-        if len({self.omega2_real.N, self.s1.N, self.rho1.N}) != 1:
+        _exact(self.r1, 1)
+        if len({self.omega2_real.N, self.s1.N, self.r1.N}) != 1:
             raise ValueError('All background cochains must be on the same simplex.')
-        for character in (self.s1, self.rho1):
+        for character in (self.s1, self.r1):
             if (character - char(character.N, character.tw)).maxabs():
                 raise ValueError('A character must be the bit difference of its vertex signs.')
-        extension_sign = tuple(a ^ b for a, b in zip(self.s1.tw, self.rho1.tw))
-        if self.omega2_real.tw != extension_sign:
-            raise ValueError('omega2_real must have coefficient sign rho1+s1.')
+        if self.omega2_real.tw != self.rho1.tw:
+            raise ValueError('omega2_real must have circle coefficient sign rho1=r1+s1 mod 2.')
         _integer(self.omega2_real.d())
+
+    @property
+    def rho1(self) -> Cochain:
+        """Circle automorphism, using the binary lift of r1+s1."""
+        signs = tuple(a ^ b for a, b in zip(self.s1.tw, self.r1.tw))
+        return char(self.s1.N, signs).ret(signs)
+
+    @classmethod
+    def from_legacy(cls, omega2_real: Cochain, s1: Cochain, rho1: Cochain) -> 'Symmetry':
+        """Explicitly import pre-v2 rho1, which meant charge reversal."""
+        return cls(omega2_real=omega2_real, s1=s1, r1=rho1)
 
     @property
     def checked_omega2_real(self) -> Cochain:
@@ -90,7 +104,7 @@ def _state(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: C
     if spatial_dimension not in (2, 3, 4):
         raise ValueError('The public interface covers spatial dimensions 2, 3, and 4.')
     for cochain, degree, sign in ((sheet, spatial_dimension - 2, symmetry.s1.tw),
-                                  (charge, spatial_dimension, symmetry.rho1.tw)):
+                                  (charge, spatial_dimension, symmetry.r1.tw)):
         _exact(cochain, degree)
         _integer(cochain)
         if cochain.N != symmetry.omega2_real.N or cochain.tw != sign:
@@ -114,7 +128,7 @@ def integer_obstruction(symmetry: Symmetry, spatial_dimension: int, sheet: Cocha
     if spatial_dimension == 3:
         return symmetry.B3.cup(sheet).sc(-1)
     if spatial_dimension == 4:
-        return (symmetry.B3.cup(sheet) + symmetry.rho1.cup(sheet.cup(sheet))).sc(-1)
+        return (symmetry.B3.cup(sheet) + symmetry.r1.cup(sheet.cup(sheet))).sc(-1)
     raise ValueError('spatial_dimension must be 2, 3, or 4.')
 
 
@@ -139,7 +153,7 @@ def charge_gauge(symmetry: Symmetry, charge: Cochain, parameter: Cochain) -> Coc
     _integer(charge)
     _integer(parameter)
     if (charge.N != symmetry.omega2_real.N or parameter.N != charge.N
-            or charge.tw != symmetry.rho1.tw or parameter.tw != charge.tw):
+            or charge.tw != symmetry.r1.tw or parameter.tw != charge.tw):
         raise ValueError('The charge gauge has the wrong simplex or coefficient action.')
     return (symmetry.omega2_real.cup(parameter)
             + bin0(parameter).sq(2).sc(Fraction(1, 2))
@@ -154,13 +168,13 @@ def source(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: C
     if spatial_dimension not in (2, 3, 4):
         raise ValueError('spatial_dimension must be 2, 3, or 4.')
     if spatial_dimension == 4:
-        return _cal.source4(symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.rho1).mod(1)
+        return _cal.source4(symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.r1).mod(1)
     if spatial_dimension == 3:
         from ._compiled.runtime import phase3
         accelerated = phase3("source", symmetry, sheet, charge)
         if accelerated is not None:
             return accelerated
-        return _cal.source3(symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.rho1).mod(1)
+        return _cal.source3(symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.r1).mod(1)
     extension = symmetry.omega2_real
     quadratic = extension.cup(extension) + extension.cup(extension.d(), 1)
     return (charge_source(symmetry, charge) + sheet.cup(quadratic).sc(Fraction(1, 2))).ret(symmetry.s1.tw).mod(1)
@@ -170,11 +184,11 @@ def integer_product(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, 
     _uniform_response_domain(symmetry, spatial_dimension, sheet)
     _uniform_response_domain(symmetry, spatial_dimension, sheet_prime)
     if spatial_dimension == 4:
-        return _E4(sheet, sheet_prime, symmetry.rho1)
+        return _E4(sheet, sheet_prime, symmetry.r1)
     if spatial_dimension == 3:
-        return symmetry.rho1.cup(sheet).cup(sheet_prime).sc(-1)
+        return symmetry.r1.cup(sheet).cup(sheet_prime).sc(-1)
     if spatial_dimension == 2:
-        return Cochain(sheet.N, 2, {}, symmetry.rho1.tw)
+        return Cochain(sheet.N, 2, {}, symmetry.r1.tw)
     raise ValueError('spatial_dimension must be 2, 3, or 4.')
 
 
@@ -189,13 +203,13 @@ def product(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: 
     correction = integer_product(symmetry, spatial_dimension, sheet, sheet_prime)
     if spatial_dimension == 4:
         phase = _cal.product4(symmetry.omega2_real, sheet, charge, sheet_prime, charge_prime,
-                              symmetry.s1, symmetry.rho1)
+                              symmetry.s1, symmetry.r1)
     elif spatial_dimension == 3:
         from ._compiled.runtime import phase3
         phase = phase3("product", symmetry, sheet, charge, sheet_prime, charge_prime)
         if phase is None:
             phase = _cal.product3(symmetry.omega2_real, sheet, charge, sheet_prime, charge_prime,
-                                  symmetry.s1, symmetry.rho1)
+                                  symmetry.s1, symmetry.r1)
     else:
         binary_derivative = bin0(symmetry.omega2_real.d())
         phase = (charge_product(symmetry, charge, charge_prime)
@@ -211,7 +225,7 @@ def gauge(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: Co
         _state(symmetry, spatial_dimension, sheet, charge)
     _exact(charge_parameter, spatial_dimension - 1)
     _integer(charge_parameter)
-    if charge_parameter.tw != symmetry.rho1.tw or charge_parameter.N != sheet.N:
+    if charge_parameter.tw != symmetry.r1.tw or charge_parameter.N != sheet.N:
         raise ValueError('The charge gauge has the wrong coefficient sign.')
     if spatial_dimension == 2:
         if sheet_parameter is not None:
@@ -226,13 +240,13 @@ def gauge(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain, charge: Co
         raise ValueError('The sheet gauge has the wrong coefficient sign.')
     if spatial_dimension == 4:
         sheet_out, charge_out = _gauge4(symmetry.omega2_real, sheet, charge, sheet_parameter,
-                                         charge_parameter, symmetry.s1, symmetry.rho1)
-        phase = _cal.gauge4(symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.rho1,
+                                         charge_parameter, symmetry.s1, symmetry.r1)
+        phase = _cal.gauge4(symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.r1,
                             sheet_parameter, charge_parameter)
     else:
         sheet_out = sheet + sheet_parameter.d()
         charge_out = charge + symmetry.B3.cup(sheet_parameter) + charge_parameter.d()
-        phase = _cal.gauge3(symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.rho1,
+        phase = _cal.gauge3(symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.r1,
                             sheet_parameter, charge_parameter)
     return sheet_out, charge_out, phase.ret(symmetry.s1.tw).mod(1)
 
@@ -272,7 +286,7 @@ def background_change(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain
     This is the parameter-first source-cylinder prescription of Equation
     (background-changes). Derived differentials are evaluated on the cylinder
     before any projection degeneracy is removed. In 2+1D the same cylinder
-    solves d_rho(n2)=-d_(rho+s)(omega_real)*n0, with constant n0. Its
+    solves d_r(n2)=-d_rho(omega_real)*n0, with constant n0. Its
     endpoint derivation is recorded in docs/e8/2p1.md.
     """
     from itertools import combinations
@@ -295,15 +309,15 @@ def background_change(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain
     else:
         new_omega = symmetry.omega2_real + parameter.d()
         new_charge = charge
-    new_symmetry = Symmetry(new_omega, symmetry.s1, symmetry.rho1)
+    new_symmetry = Symmetry(new_omega, symmetry.s1, symmetry.r1)
     phase_degree = spatial_dimension + 1
     values = {}
     for face in combinations(range(sheet.N + 1), phase_degree + 1):
         total = Fraction(0)
         for local_path, sign in interval_paths(phase_degree):
             path = tuple((height, face[j]) for height, j in local_path)
-            a, k, n, s, rho = [pull_on_path(c, path) for c in
-                                (symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.rho1)]
+            a, k, n, s, r = [pull_on_path(c, path) for c in
+                                (symmetry.omega2_real, sheet, charge, symmetry.s1, symmetry.r1)]
             cylinder_N = len(path) - 1
             parameter_on_cylinder = Cochain(cylinder_N, parameter.p, {
                 f: path[f[0]][0] * evalface(parameter, tuple(path[j][1] for j in f))
@@ -313,7 +327,7 @@ def background_change(symmetry: Symmetry, spatial_dimension: int, sheet: Cochain
                 n = n - parameter_on_cylinder.cup(k)
             else:
                 a = a + parameter_on_cylinder.d()
-            cylinder_symmetry = Symmetry(a, s, rho)
+            cylinder_symmetry = Symmetry(a, s, r)
             total += sign * source(cylinder_symmetry, spatial_dimension, k, n,
                                    validate=validate)(tuple(range(cylinder_N + 1)))
         values[face] = total % 1
@@ -324,13 +338,13 @@ def lower_exchange(symmetry: Symmetry, spatial_dimension: int,
                    sheet: Cochain, sheet_prime: Cochain) -> Cochain:
     """Charge gauge from the reversed lower product to the ordered product."""
     if spatial_dimension == 4:
-        return (sheet.cup(sheet_prime, 1).ret(symmetry.rho1.tw).sc(-1)
-                + symmetry.rho1.cup(sheet.cup(sheet_prime, 2)))
+        return (sheet.cup(sheet_prime, 1).ret(symmetry.r1.tw).sc(-1)
+                + symmetry.r1.cup(sheet.cup(sheet_prime, 2)))
     if spatial_dimension == 3:
-        return (sheet.cup(sheet_prime).ret(symmetry.rho1.tw)
-                + symmetry.rho1.cup(sheet.cup(sheet_prime, 1)))
+        return (sheet.cup(sheet_prime).ret(symmetry.r1.tw)
+                + symmetry.r1.cup(sheet.cup(sheet_prime, 1)))
     if spatial_dimension == 2:
-        return Cochain(sheet.N, 1, {}, symmetry.rho1.tw)
+        return Cochain(sheet.N, 1, {}, symmetry.r1.tw)
     raise ValueError('spatial_dimension must be 2, 3, or 4.')
 
 
@@ -342,7 +356,7 @@ def associator_3p1(symmetry: Symmetry, sheets: list[Cochain], charges: list[Coch
     for sheet, charge in zip(sheets, charges):
         _state(symmetry, 3, sheet, charge)
     return A3canonical(symmetry.omega2_real, sheets, charges,
-                       symmetry.s1, symmetry.rho1).ret(symmetry.s1.tw).mod(1)
+                       symmetry.s1, symmetry.r1).ret(symmetry.s1.tw).mod(1)
 
 
 @dataclass(frozen=True)

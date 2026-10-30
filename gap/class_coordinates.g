@@ -15,7 +15,7 @@ BindGlobal("U1NativePhaseClosureCertificate",function(c,k,H,f)
     Error("Phase class certificate has the wrong cohomology context");fi;
   co:=H.coordinates(U1Native(c,k,"U1s",f));
   if co=fail then return fail;fi;
-  return rec(context:=c,degree:=k,cochain:=f,actions:=[c.s,c.rho,c.omega],
+  return rec(context:=c,degree:=k,cochain:=f,actions:=[c.s,c.r,c.omega],
     proof:="native-cocycle-check",nativeCoordinates:=co);
 end);
 
@@ -25,7 +25,7 @@ BindGlobal("U1ClosedBarPhaseCoordinates",function(c,k,H,f,certificate)
     or not IsBound(certificate.context) or not IsIdenticalObj(certificate.context,c)
     or not IsBound(certificate.degree) or certificate.degree<>k
     or not IsBound(certificate.cochain) or not IsIdenticalObj(certificate.cochain,f)
-    or not IsBound(certificate.actions) or certificate.actions<>[c.s,c.rho,c.omega]
+    or not IsBound(certificate.actions) or certificate.actions<>[c.s,c.r,c.omega]
     or not IsBound(certificate.proof)
     or not certificate.proof in ["native-cocycle-check","closed-integral-charge-source"] then
     Error("Closed phase coordinates require a matching closure certificate");fi;
@@ -76,8 +76,8 @@ BindGlobal("U1ClosedBarPhaseCoordinates",function(c,k,H,f,certificate)
 end);
 
 # q is constructed here from its actual integer native vector, not accepted as
-# an arbitrary callback. The chain-map identity gives delta_rho q=0. A validated
-# background has integral delta_(rho+s) omega. Consequently omega cup q and
+# an arbitrary callback. The chain-map identity gives delta_r q=0. A validated
+# background has integral delta_(r+s) omega. Consequently omega cup q and
 # Sq2(q mod 2)/2 have integral signed coboundaries, proving closure modulo one.
 BindGlobal("U1ChargeObstructionCoordinatesCycles",function(c,d,H,nativeCharge)
   local q,f,certificate,valid;
@@ -94,10 +94,10 @@ BindGlobal("U1ChargeObstructionCoordinatesCycles",function(c,d,H,nativeCharge)
   if IsBound(c.phaseClassMode) and c.phaseClassMode="native" then
     return H.coordinates(U1Native(c,d+2,"U1s",f));fi;
   valid:=IsBound(c.backgroundClosureCertificate)
-    and c.backgroundClosureCertificate.actions=[c.s,c.rho,c.omega]
+    and c.backgroundClosureCertificate.actions=[c.s,c.r,c.omega]
     and c.backgroundClosureCertificate.integralTwistedCoboundary=true;
   if valid then
-    certificate:=rec(context:=c,degree:=d+2,cochain:=f,actions:=[c.s,c.rho,c.omega],
+    certificate:=rec(context:=c,degree:=d+2,cochain:=f,actions:=[c.s,c.r,c.omega],
       proof:="closed-integral-charge-source");
   else
     certificate:=U1NativePhaseClosureCertificate(c,d+2,H,f);

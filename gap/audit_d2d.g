@@ -9,9 +9,9 @@ BindGlobal("U1AuditD2d",function(spin)
   HQ:=U1Cohomology(c,3,"Zr");HP:=U1Cohomology(c,4,"U1s");HO:=U1Cohomology(c,5,"U1s");
   HC:=U1Cohomology(c,1,"Zs");HI:=U1Cohomology(c,4,"Zr");
   proper:=Filtered([1..Length(input.s)],i->input.s[i]=0);
-  subdata:=rec(identity_index:=Position(proper,input.identity_index+1)-1,
+  subdata:=rec(schema_version:=2,identity_index:=Position(proper,input.identity_index+1)-1,
     multiplication:=List(proper,i->List(proper,j->Position(proper,input.multiplication[i][j]+1)-1)),
-    s:=input.s{proper},rho:=input.rho{proper},omega:=List(proper,i->input.omega[i]{proper}));
+    s:=input.s{proper},r:=input.r{proper},omega:=List(proper,i->input.omega[i]{proper}));
   h:=U1FiniteContext(subdata,7);
   fullElements:=List([1..Length(input.s)],i->First(Elements(c.G),g->c.elementIndex(g)=i));
   embed:=g->fullElements[proper[h.elementIndex(g)]];

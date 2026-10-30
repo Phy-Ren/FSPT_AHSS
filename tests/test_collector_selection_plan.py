@@ -5,6 +5,7 @@ import shutil
 import subprocess
 import sys
 import unittest
+from insulator.notation import legacy_metadata_view
 
 from scripts.collect_expansion import selection_plan_requests
 from scripts.extend_e8_3p1 import extend_run, source_manifest
@@ -62,9 +63,9 @@ class CollectorSelectionPlan(unittest.TestCase):
             self.assertEqual(self.tree_bytes(Path(path)), expected)
         target = output / '3p1d/space_groups'
         self.assertEqual(parse((target / 'ci_results.json').read_bytes()),
-                         [parse((self.ci / FIRST / 'result.json').read_bytes())])
+                         legacy_metadata_view([parse((self.ci / FIRST / 'result.json').read_bytes())]))
         self.assertEqual(parse((target / 'results.json').read_bytes()),
-                         [parse((self.e8 / FIRST / 'result.json').read_bytes())])
+                         legacy_metadata_view([parse((self.e8 / FIRST / 'result.json').read_bytes())]))
         provenance = parse((target / 'provenance.json').read_bytes())
         self.assertEqual(len(provenance), 2)
         for item in provenance:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run an isolated, exact 4+1D four-data cyclic classification pilot.
 
-Inputs are internal unitary C_N with s=rho=0 and omega=0. No crystalline
+Inputs are internal unitary C_N with s=r=0 and omega=0. No crystalline
 spin convention or intrinsic r0 coefficient is inferred from the cyclic name.
 Each case retains its full cochain-root relation witnesses and source hashes.
 """
@@ -28,7 +28,7 @@ def run_case(order, output, source, gap, timeout, memory):
     directory = output / case
     directory.mkdir()
     data = {"id": case, "dimension": 4, "family": "internal_cyclic", "order": order,
-            "s": 0, "rho": 0, "omega": "0", "orderedFields": ["e_2", "n_2", "n_4", "nu_5"],
+            "schema_version": 2, "s": 0, "r": 0, "rho": 0, "omega": "0", "orderedFields": ["e_2", "n_2", "n_4", "nu_5"],
             "intrinsicR0Included": False, "crystallineSpinConvention": "not_assumed"}
     write_json(directory / "input.json", data)
     native = directory / "native.json"

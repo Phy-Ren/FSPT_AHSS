@@ -29,6 +29,10 @@ alternative runtime conventions. The CI archive is pinned in
 in [e8_provenance.json](e8_provenance.json). The fixed convention remains
 sheet-linear, cubic coefficient `1/6`, and additional coefficient
 `epsilon=0`. Source, product, and gauge coordinates are changed together.
+The retained source packages use historical charge-`rho` notation.
+In current guides and APIs their `rho1` is written `r1`, and their `rho1+s1`
+is written `rho1`; see the [fixed notation and migration guide](../docs/NOTATION_AND_INPUTS.md).
+The historical source files and reference vectors are not rewritten.
 
 The [v0.15 provenance](v015_provenance.json) pins the reviewed intrinsic
 pair `(n0I,n0J)` and physical cyclic calibration. The retained

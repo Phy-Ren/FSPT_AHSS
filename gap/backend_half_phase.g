@@ -94,7 +94,7 @@ BindGlobal("U1SolveCertifiedChargeData",function(c,d,state)
       and IsIdenticalObj(certificate.context,c)
       and IsBound(certificate.dimension) and certificate.dimension=d
       and IsBound(certificate.charge) and IsIdenticalObj(certificate.charge,state.charge)
-      and IsBound(certificate.actions) and certificate.actions=[c.s,c.rho,c.omega]
+      and IsBound(certificate.actions) and certificate.actions=[c.s,c.r,c.omega]
       and IsBound(certificate.source) and IsIdenticalObj(certificate.source,source)
       and IsBound(certificate.halfValuedPhaseSource) and certificate.halfValuedPhaseSource=true
       and state.sheet=U1Zero then

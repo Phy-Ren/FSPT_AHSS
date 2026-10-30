@@ -3,8 +3,8 @@
 BindGlobal("U1AuditD2",function()
   local data,c,x,y,q,nq,O,no,bo,HQ,HO,H6,HF6,q2,polynomial,power,
     bx,qx,px,incoming,lambda,HP,g,h,j,k,tuple,barClosureCount,result,classification;
-  data:=rec(identity_index:=0,multiplication:=[[0,1,2,3],[1,0,3,2],[2,3,0,1],[3,2,1,0]],
-    s:=[0,0,0,0],rho:=[0,0,0,0],omega:=List([1..4],i->List([1..4],j->"0")));
+  data:=rec(schema_version:=2,identity_index:=0,multiplication:=[[0,1,2,3],[1,0,3,2],[2,3,0,1],[3,2,1,0]],
+    s:=[0,0,0,0],r:=[0,0,0,0],omega:=List([1..4],i->List([1..4],j->"0")));
   c:=U1FiniteContext(data,7);
   x:=g->[0,1,0,1][c.elementIndex(g)];y:=g->[0,0,1,1][c.elementIndex(g)];
   # Integral Bockstein of the real lift x cup y: q = d(x cup y)/2.
@@ -39,7 +39,7 @@ BindGlobal("U1AuditD2",function()
   od;
   if ForAny(Flat(incoming),i->i<>0) then Error("Expected vanishing incoming charge images");fi;
   classification:=U1Classify(c,3);
-  result:=rec(group:="C2 x C2",background:=rec(s1:=0,rho1:=0,omega2:=0),
+  result:=rec(group:="C2 x C2",background:=rec(schema_version:=2,s1:=0,r1:=0,rho1:=0,omega2:=0),
     integralChargeFormula:="q(g,h,k)=x(g)x(h)y(k)-x(g)y(h)y(k)=d(x cup y)/2",
     integralChargeOrders:=HQ.orders,integralChargeNative:=nq,integralChargeClass:=HQ.coordinates(nq),
     mod2ChargeClass:="x^2 y+x y^2",phaseObstructionClassPolynomial:="(x^4 y+x y^4)/2",

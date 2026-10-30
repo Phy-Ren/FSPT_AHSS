@@ -9,7 +9,7 @@ apply.
 Write `alpha(c)=1` and `omega=k alpha²/2`. The ordered data are
 `(e2,n2,n4,nu5)`.
 
-| Symmetry | (s,rho,k) | E8 e2 | CI n2 | Charge n4 | Phase nu5 | Computed stacking | Independent target | Comparison |
+| Symmetry | (s,r,k) | E8 e2 | CI n2 | Charge n4 | Phase nu5 | Computed stacking | Independent target | Comparison |
 |---|---|---|---|---|---|---|---|---|
 | Unitary C²=1, H+ | (0,alpha,0) | Z2 | 0 | 0 | 0 | Z2 | Z2 | **✓** |
 | Unitary C²=(-1)^F, H− | (0,alpha,1) | Z2 | Z2 | 0 | Z2 | Z2³ | Z2³ | **✓** |

@@ -11,11 +11,11 @@ This file concerns only 2+1D.
 
 ```math
 d_s e_0=d_s n_0=0,\qquad
-d_\rho n_2=-d_{\rho+s}\omega_R\cup n_0,
+d_r n_2=-d_{\rho}\omega_R\cup n_0,
 ```
 ```math
 d_s\nu_3=\widehat O_4
- =\widehat O^c_4(n_2)+\frac{n_0}{2}\mathcal P_{\rho+s}(\omega_R),
+ =\widehat O^c_4(n_2)+\frac{n_0}{2}\mathcal P_{\rho}(\omega_R),
 \qquad \mathcal P_\chi(x)=x\cup x+x\cup_1d_\chi x.
 ```
 
@@ -53,7 +53,7 @@ For completed inputs the three lower coordinates add. The phase is
 ```math
 \boxed{\widehat E_3=\tfrac12
  [\bar n_2\cup_1\bar n'_2+d\bar n_2\cup_2\bar n'_2]
- +\tfrac14 n_0n'_0\,\overline{d_{\rho+s}\omega_R}.}
+ +\tfrac14 n_0n'_0\,\overline{d_{\rho}\omega_R}.}
 ```
 
 The last overbar means the canonical binary lift of the entire connecting
@@ -70,10 +70,10 @@ this is separate from the fact that the displayed multiplication is fixed.
 ## Gauges and incoming phases
 
 There is no degree-minus-one gauge for either uniform integer. For
-`u_1 in C1(G,Z_rho)` and `lambda_2 in C2(G,R/Z_s)`,
+`u_1 in C1(G,Z_r)` and `lambda_2 in C2(G,R/Z_s)`,
 
 ```math
-e_0^g=e_0,\quad n_0^g=n_0,\quad n_2^g=n_2+d_\rho u_1,
+e_0^g=e_0,\quad n_0^g=n_0,\quad n_2^g=n_2+d_r u_1,
 \qquad
 \nu_3^g=\nu_3+\widehat G^c_3(u_1;n_2)+d_s\lambda_2.
 ```
@@ -87,12 +87,12 @@ root's initial phase and its charge-removal gauge also contribute.
 ## Background representative transport
 
 This supplies the endpoint transport absent from the earlier runtime.
-For integral `z_2` or real `alpha_1`, both of sign `rho+s`, use
+For integral `z_2` or real `alpha_1`, both of sign `rho`, use
 
 ```math
 \omega_R'=\omega_R+z_2,\quad n'_2=n_2-z_2\cup n_0,
 \qquad\text{or}\qquad
-\omega_R'=\omega_R+d_{\rho+s}\alpha_1,\quad n'_2=n_2.
+\omega_R'=\omega_R+d_{\rho}\alpha_1,\quad n'_2=n_2.
 ```
 
 Both uniform coordinates remain unchanged. Let the height `eta` on `I`
@@ -106,7 +106,7 @@ n_2^I=n_2-(\eta z_2)\cup n_0.
 For a section change set
 
 ```math
-\omega_R^I=\omega_R+d_{\rho+s}(\eta\alpha_1),\qquad n_2^I=n_2.
+\omega_R^I=\omega_R+d_{\rho}(\eta\alpha_1),\qquad n_2^I=n_2.
 ```
 
 The specified phase correction is
@@ -119,7 +119,7 @@ T_3=\mathcal I_1\widehat O_4(\omega_R^I;n_0,n_2^I),\qquad
 `I1` is the parameter-first signed prism sum: exactly four source
 evaluations on a base three-simplex, not an unspecified primitive.
 The cylinder solves the lower equation because `d_s n_0=0`; in particular
-`d_rho((eta z_2) cup n_0)=d_(rho+s)(eta z_2) cup n_0`.
+`d_r((eta z_2) cup n_0)=d_(rho)(eta z_2) cup n_0`.
 For a section change use `d^2=0`. Source closure and signed Stokes yield
 `d_s T_3=Ohat_4(new)-Ohat_4(old)`. Applying the natural source/product
 identity on the parameter product gives compatibility with stacking up

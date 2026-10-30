@@ -39,9 +39,9 @@ $$r_0^I\frac{c^3-cp_1}{48}+r_0^J\frac{c^3}{2}.$$
 
 ## 2. Coefficient action and forgetting charge
 
-The determinant class changes as $c\mapsto(-1)^{\rho_1+s_1}c$. Both six-form basis polynomials are odd in $c$. Incorporating the phase orientation/antiunitary sign $(-1)^{s_1}$ gives coefficient action $(-1)^{\rho_1}$. Hence the missing intrinsic module is
+The determinant class changes as $c\mapsto(-1)^{\rho_1}c$. Both six-form basis polynomials are odd in $c$. Incorporating the phase orientation/antiunitary sign $(-1)^{s_1}$ gives coefficient action $(-1)^{r_1}$. Hence the missing intrinsic module is
 
-$$\mathbb Z_{\rho_1}^2.$$
+$$\mathbb Z_{r_1}^2.$$
 
 For actual restriction to pure parity, take the map $\mathrm{Spin}\to\mathrm{Spin}^c$ with trivial determinant line. Both polynomials vanish at $c=0$. There is no residual torsion response: Freed–Hopkins have $\Omega_5^{\mathrm{Spin}}=\Omega_6^{\mathrm{Spin}}=0$ and $\mathrm{TP}_5(\mathrm{Spin})=0$ (`positive.arxiv6.tex:6439–6473`, Eqs. (84),(85)). Thus the intrinsic coefficient map to pure parity is zero.
 
@@ -57,19 +57,19 @@ The bosonic intrinsic $w_2w_3$ class is not an additional independent Spin-c coe
 
 In the note's convention $d_r:(a,q)\mapsto(a+r,q-r+1)$, spacetime dimension five has total degree five. The new coefficient row is $q=5$, with initial uniform data
 
-$$E_2^{0,5}=H^0(G,\mathbb Z_{\rho_1}^2).$$
+$$E_2^{0,5}=H^0(G,\mathbb Z_{r_1}^2).$$
 
-If $\rho_1$ is nontrivial this invariant lattice is zero. If $\rho_1=0$ it begins as $\mathbb Z^2$, but invariance alone does not prove an equivariant lift. The possible outgoing slots are:
+If $r_1$ is nontrivial this invariant lattice is zero. If $r_1=0$ it begins as $\mathbb Z^2$, but invariance alone does not prove an equivariant lift. The possible outgoing slots are:
 
 | Differential from $(0,5)$ | Target row | Status |
 |---|---|---|
 | $d_2$ | $(2,4)$ | Intrinsic spatial-dimension-three row is zero |
 | $d_3$ | $(3,3)$, E8/CI coefficient $\mathbb Z_{s_1}^2$ | Requires the integral operation and its lift convention |
 | $d_4$ | $(4,2)$ | Intrinsic spatial-dimension-one row is zero |
-| $d_5$ | $(5,1)$, charge coefficient $\mathbb Z_{\rho_1}$ | Requires secondary operation after earlier trivializations |
+| $d_5$ | $(5,1)$, charge coefficient $\mathbb Z_{r_1}$ | Requires secondary operation after earlier trivializations |
 | $d_6$ | $(6,0)$, phase coefficient $\mathbb R/\mathbb Z_{s_1}$ | Requires terminal operation after earlier trivializations |
 
-These are page targets, subject to earlier quotients, not a claim that raw cohomology targets are unchanged on every page. There is no incoming differential to filtration zero. Nor can this new $q=5$ row introduce an incoming relation into an existing total-degree-five positive-filtration class: such an incoming source would have total degree four and therefore negative filtration in row five. Write $L=E_\infty^{0,5}\subseteq H^0(G,\mathbb Z_{\rho_1}^2)$ for the admissible intrinsic lattice. Under the full physical-spectrum identification and convergence of this filtration, the exact sequence is
+These are page targets, subject to earlier quotients, not a claim that raw cohomology targets are unchanged on every page. There is no incoming differential to filtration zero. Nor can this new $q=5$ row introduce an incoming relation into an existing total-degree-five positive-filtration class: such an incoming source would have total degree four and therefore negative filtration in row five. Write $L=E_\infty^{0,5}\subseteq H^0(G,\mathbb Z_{r_1}^2)$ for the admissible intrinsic lattice. Under the full physical-spectrum identification and convergence of this filtration, the exact sequence is
 
 $$0\longrightarrow F^1\longrightarrow E\longrightarrow L\longrightarrow0.$$
 

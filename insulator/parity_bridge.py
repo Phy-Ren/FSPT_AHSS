@@ -2,7 +2,7 @@
 
 This is a comparison interface, not a superconducting classifier. The same
 G_f has quotients G=G_f/U(1)^f and G_b=G_f/Z2^f. X1 is the circle section
-coordinate on G_b, with sign rho1+s1. All other inputs are pulled back to
+coordinate on G_b, with sign rho1. All other inputs are pulled back to
 that same simplex. The E8 helpers supply the additional mixed correction
 relative to a pure-CI map; that universal pure-CI terminal map is still
 not supplied here.
@@ -14,10 +14,10 @@ from ._engine import e8_4p1 as neutral
 
 
 def circle_carry(symmetry: ci.Symmetry, X1: ci.Cochain) -> ci.Cochain:
-    """Return integer M2=d_(rho+s) X1+2 omega_real on the circle quotient."""
+    """Return integer M2=d_rho X1+2 omega_real on the circle quotient."""
     ci._exact(X1, 1)
     if X1.N != symmetry.s1.N or X1.tw != symmetry.omega2_real.tw:
-        raise ValueError('The circle coordinate must have sign rho1+s1 on the same simplex.')
+        raise ValueError('The circle coordinate must have sign rho1 on the same simplex.')
     carry = X1.d() + symmetry.omega2_real.sc(2)
     ci._integer(carry)
     return carry
@@ -33,15 +33,15 @@ def _charge_input(symmetry: ci.Symmetry, X1: ci.Cochain,
     circle_carry(symmetry, X1)
     ci._exact(value)
     ci._integer(value)
-    if value.N != X1.N or value.tw != symmetry.rho1.tw:
-        raise ValueError('The integer charge input must have sign rho1 on the same simplex.')
+    if value.N != X1.N or value.tw != symmetry.r1.tw:
+        raise ValueError('The integer charge input must have sign r1 on the same simplex.')
 
 
 def charge_phase_correction(symmetry: ci.Symmetry, X1: ci.Cochain,
                             n_p2: ci.Cochain) -> ci.Cochain:
     """R=X1 cup n_(p+2)/2, for the closed-charge comparison only.
 
-For open charge, an additional X1 cup d_rho(n_(p+2))/2 remains in the
+For open charge, an additional X1 cup d_r(n_(p+2))/2 remains in the
 source equation; silently applying this closed-sector map would lose it.
 """
     _charge_input(symmetry, X1, n_p2)

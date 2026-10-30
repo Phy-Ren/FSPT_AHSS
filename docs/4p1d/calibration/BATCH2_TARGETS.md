@@ -4,7 +4,7 @@ This is an independent reference ledger, not a list of completed classifier runs
 [batch2_targets.json](batch2_targets.json) records the exact backgrounds, groups,
 source versions, and the small integer calculations used below. The targets are
 for interacting electronic invertible phases with commuting internal symmetry,
-`s=rho=omega=0`. The lower tuple is `(e2,n2,n4,nu5)`, with E8 included; the
+`s=r=omega=0`. The lower tuple is `(e2,n2,n4,nu5)`, with E8 included; the
 uniform pair `(n0I,n0J)` is recorded separately. Internal groups have no
 crystalline spinless/spin-half label.
 

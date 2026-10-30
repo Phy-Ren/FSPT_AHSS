@@ -21,7 +21,7 @@ class AbelianInputTests(unittest.TestCase):
         item = input_record(parse_factors('2x4'))
         self.assertEqual(item['factors'], [2, 4])
         self.assertEqual(item['referenceTarget'], 'internal_abelian_2x4')
-        self.assertEqual(item['background'], {'s': 0, 'rho': 0, 'omega': '0'})
+        self.assertEqual(item['background'], {'schema_version': 2, 's': 0, 'r': 0, 'rho': 0, 'omega': '0'})
         self.assertFalse(item['intrinsicRowIncluded'])
         self.assertEqual(item['physicalSpin'], 'not_applicable')
         for bad in ('1x2', '0x4', '-2x2'):

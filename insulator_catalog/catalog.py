@@ -156,7 +156,8 @@ def _pin_minus(matrices):
 def crystalline_background(matrices, spin):
     """Effective onsite background for unitary charge-preserving spatial symmetry.
 
-    In the supplied formula convention s=rho=w1; the circle action is zero.
+    The approved convention is s=r=w1 and rho=0: r reverses charge,
+    rho acts on the charge circle, and r=rho+s modulo two.
     Physical spinless gives half the Pin-minus cocycle, physical spin-1/2
     cancels that class. A representative omega=0 is used for the latter.
     """
@@ -167,7 +168,8 @@ def crystalline_background(matrices, spin):
     pin = _pin_minus(mats)
     omega = [["1/2" if value and spin == "spinless" else "0" for value in row]
              for row in pin]
-    return {"s": signs, "rho": signs.copy(), "circle_action": [0] * len(mats),
+    return {"schema_version": 2, "s": signs, "r": signs.copy(),
+            "rho": [0] * len(mats), "circle_action": [0] * len(mats),
             "omega": omega, "geometric_pin_minus": [list(row) for row in pin],
             "effective_extension": "half_pin_minus" if spin == "spinless" else "zero",
             "physical_symmetry": "unitary_charge_preserving_crystalline"}

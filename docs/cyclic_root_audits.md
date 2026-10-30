@@ -60,7 +60,7 @@ Write group elements as (a\in\{0,1,2,3\}), with addition modulo four, and set
 \[
  \alpha(a)=a\bmod2,\qquad
  \beta(a,b)=\left\lfloor\frac{a+b}{4}\right\rfloor,
- \qquad s_1=\rho_1=\alpha,\quad\omega_2=0.
+ \qquad s_1=r_1=\alpha,\quad\omega_2=0.
 \]
 
 All products of displayed scalar functions below are ordinary products of their
@@ -84,7 +84,7 @@ columns indexed by (a,b=1,2,3):
 
 \[
  v_2=\begin{pmatrix}0&-1&0\\0&1&1\\1&0&0\end{pmatrix},
- \qquad d_{\rho_1}v_2=-\alpha(a)\alpha(b)\alpha(c).
+ \qquad d_{r_1}v_2=-\alpha(a)\alpha(b)\alpha(c).
 \]
 
 The last identity is checked on all 27 normalized triples. After this gauge the
@@ -107,14 +107,14 @@ this period. The closed differences between the three paths are exact. There
 are no incoming classes available to erase the nonzero period:
 
 \[
- H^2(C_4;\mathbb Z_{\rho_1})=0,
+ H^2(C_4;\mathbb Z_{r_1})=0,
  \qquad H^0(C_4;\mathbb Z_{s_1})=0.
 \]
 
 An independent charge generator is (q_3(a,b,c)=\alpha(a)\beta(b,c)). The audit
 constructs its exact quarter-valued phase completion and checks its source
 equation on all 243 normalized five-tuples. Its square is removed with
-(v_2=\beta), since (d_{\rho_1}\beta=-2q_3); the residual phase period is zero.
+(v_2=\beta), since (d_{r_1}\beta=-2q_3); the residual phase period is zero.
 Taking (b) as the nonzero pure phase root gives
 
 \[
@@ -129,7 +129,7 @@ choice and the GAP resolution do not account for this difference.
 
 ## C6: a split restriction forces an order-eight root
 
-For (C_6=\langle g\rangle), again take (s_1=\rho_1=\mathrm{parity}) and
+For (C_6=\langle g\rangle), again take (s_1=r_1=\mathrm{parity}) and
 (\omega_2=0). The homomorphisms
 
 \[
@@ -144,7 +144,7 @@ pullback of the certified C2 AIII root of order eight still has order eight.
 
 The signed periodic maps are (-2) and (1-1+1-1+1-1=0). The three retained
 coefficient groups are (H^1(\mathbb Z_{s_1})=\mathbb Z_2),
-(H^3(\mathbb Z_{\rho_1})=\mathbb Z_2), and
+(H^3(\mathbb Z_{r_1})=\mathbb Z_2), and
 (H^4(U(1)_{s_1})=\mathbb Z_2), with zero incoming gauge groups in degrees zero
 and two. Their total order is eight. Together with the injected complete root,
 this forces (\mathcal G_{\mathrm{retained}}=\mathbb Z_8).

@@ -50,7 +50,7 @@ In the supplied endpoint convention the lower equations are
 
 \[
  d_{s_1}n_0=0,\qquad
- d_{\rho_1}n_2=-n_0d_{\rho_1+s_1}\omega_2^{\mathbb R}.
+ d_{r_1}n_2=-n_0d_{\rho_1}\omega_2^{\mathbb R}.
 \]
 
 After an allowed charge completion is chosen, the phase satisfies the

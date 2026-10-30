@@ -1,8 +1,8 @@
 # Crystalline insulator symmetry catalog
 
 The catalog supplies 10 crystallographic planar point groups, 17 wallpaper
-groups, and 32 three-dimensional crystallographic point groups, each with
-physical `spinless` and `spin_half` conventions. The 118 inputs contain geometry
+groups, 32 three-dimensional crystallographic point groups, and 230 space groups, each with
+physical `spinless` and `spin_half` conventions. The 578 inputs contain geometry
 and backgrounds only. Nothing under `benchmarks/` is read by the catalog or the
 classification solver.
 
@@ -12,6 +12,14 @@ indices in both formats start at **zero**, with the identity at index zero.
 `omega` contains exact rational strings; GAP consumers should apply `Rat` to
 these strings. `dimension` is the spatial dimension. The corresponding spacetime
 dimension is `dimension + 1`.
+Current records have `schema_version=2`, `s` for antiunitarity, `r` for charge
+reversal, and `rho` for the circle action, with `r=rho XOR s`.
+The retained `circle_action` metadata is a redundant copy of `rho`.
+Both the generated JSON and GAP records use these definitions.
+Archived run inputs retain their historical schema and must be converted
+explicitly before reuse; see [notation and inputs](../docs/NOTATION_AND_INPUTS.md).
+The [migration record](notation_migration.json) verifies all 578 backgrounds
+against the previous revision and an independent regeneration of the JSON/GAP pairs.
 
 For wallpaper groups, `multiplication`, `order`, `matrices`, and the three
 character tables describe **finite holonomy only**. The classification group is
@@ -28,19 +36,22 @@ charge. Let `w1(g)=(1-det(R_g))/2`. Crystalline equivalence keeps the abstract
 circle extension while changing the wavefunction antiunitarity:
 
 - `s1_eff = w1`;
-- `circle_action_eff = 0`;
-- `rho1_eff = circle_action_eff + s1_eff = w1`.
+- `rho1_eff = 0`;
+- `r1_eff = rho1_eff + s1_eff = w1`.
 
 Thus effective orientation-reversing elements act by charge conjugation in the
 onsite description. They are **not** ordinary charge-preserving time reversal,
-which would instead have package `rho1=0, s1=1`. This distinction is required
+which would instead have `r1=0, s1=1, rho1=1`. This distinction is required
 for charge cohomology of wallpaper groups, including the free filling class in
 `H^2(G,Z_w1)`.
 
 The notation conversion follows Wang–Qi–Fang–Cheng–Gu,
 [arXiv:2112.15533](https://arxiv.org/abs/2112.15533), equations labeled `rho1`,
-`Q`, and `n2symm`: that paper's `rho1` is the circle automorphism, which equals
-`rho1+s1` in the supplied v0.7 formula package. Its Supplement H states the
+`Q`, and `n2symm`: that paper's `rho1` is the circle automorphism, with the
+same meaning as current `rho1`; its charge character is `rho1+s1=r1`.
+The frozen v0.7 package instead called the charge character `rho1`.
+Its translation is documented separately and is not a current alternative convention.
+Supplement H of the paper states the
 spinless/spin-half exchange under crystalline equivalence.
 
 For the conventional physical spin-half point-group representation, inversion

@@ -59,7 +59,7 @@ class Program:
     def inputs(self, fields):
         values = []
         for name, face in self.slots:
-            value = fields[name][face[0]] if name in ('s', 'rho') else fields[name](face)
+            value = fields[name][face[0]] if name in ('s', 'r') else fields[name](face)
             if name == 'omega':
                 value *= 2
             if isinstance(value, Fraction):
@@ -143,10 +143,10 @@ def phase3(operation, symmetry, sheet, charge, sheet_prime=None, charge_prime=No
     if mode not in ('auto', 'python'):
         raise ValueError('U1_DAG_MODE must be auto, python, or reference')
     N = 5 if operation == 'source' else 4
-    s, rho, omega = symmetry.s1.tw, symmetry.rho1.tw, symmetry.omega2_real
-    pairs = [(sheet, 1, s), (charge, 3, rho)]
+    s, r, omega = symmetry.s1.tw, symmetry.r1.tw, symmetry.omega2_real
+    pairs = [(sheet, 1, s), (charge, 3, r)]
     if operation == 'product':
-        pairs += [(sheet_prime, 1, s), (charge_prime, 3, rho)]
+        pairs += [(sheet_prime, 1, s), (charge_prime, 3, r)]
     elif operation != 'source':
         return None
     if omega.N != N or any(not _integer_field(c, N, p, t) for c, p, t in pairs):
@@ -163,7 +163,7 @@ def phase3(operation, symmetry, sheet, charge, sheet_prime=None, charge_prime=No
     program = _program(operation, mode, library)
     if program is None:
         return None
-    fields = dict(s=s, rho=rho, omega=omega, sheet=sheet, charge=charge,
+    fields = dict(s=s, r=r, omega=omega, sheet=sheet, charge=charge,
                   sheet_prime=sheet_prime, charge_prime=charge_prime)
     value = program.evaluate(fields)
     return C(N, N, {tuple(range(N + 1)): value}, s)

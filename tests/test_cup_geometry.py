@@ -36,7 +36,7 @@ r:=(1,2,3,4);;m:=(2,4);;G:=Group(r,m);;
 if r*m=m*r then Error("Nonabelian control collapsed");fi;
 labels:=Cartesian([0..3],[0..1]);;elements:=List(labels,a->r^a[1]*m^a[2]);;
 idx:=g->Position(elements,g);;
-c:=rec(G:=G,s:=g->labels[idx(g)][2],rho:=g->labels[idx(g)][1] mod 2);;
+c:=rec(G:=G,s:=g->labels[idx(g)][2],r:=g->labels[idx(g)][1] mod 2);;
 a:=function(xs...) local v;v:=Sum([1..Length(xs)],i->(2*i+1)*idx(xs[i]))-5;
  if v mod 4=0 then return 0;fi;return v/3;end;;
 b:=function(xs...) local v;v:=Sum([1..Length(xs)],i->(3*i+2)*idx(xs[i]))-7;

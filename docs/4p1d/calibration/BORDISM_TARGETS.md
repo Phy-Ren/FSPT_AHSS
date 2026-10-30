@@ -13,13 +13,13 @@ label. Translation-only symmetry has no nontrivial rotational spin lift.
 
 | Priority | Exact symmetry/background | Zero-uniform target | Full target | Independent source and test |
 |---|---|---|---|---|
-| 1 | U(1)^f × C_N; s=rho=omega=0 | Cyclic formula below | Relative group × Z² | v0.15 Appendix K derives a faithful Spin-c eta pairing and complete physical presentation; tests sheet/charge gauges and stacking extensions |
-| 1 | Unitary C, C²=(-1)^F; rho=alpha, s=0, omega=alpha²/2 | Z2³ | Z2³ | Derived Smith calculation below, using [FH, Theorem 9.87](https://arxiv.org/abs/1604.06527v6) and [Smith, Theorem 5.1/Corollary 5.8](https://arxiv.org/abs/2405.04649v2); tests the calibrated CI square and neutral sector |
-| 1 | Unitary C, C²=1; rho=alpha, s=0, omega=0 | Z2 | Z2 | Same derivation with the other tangential twist; tests obstruction and incoming removal of the CI/charge/phase sector |
-| 1 | AI, antiunitary T²=1; rho=0, s=alpha, omega=0 | 0 | Z² | [FH, Corollary 9.95](https://arxiv.org/abs/1604.06527v6); tests a vanishing zero-uniform group. Uniform image is 2Z{I}⊕2Z{J}, with the stronger labelled statement derived in v0.15 |
-| 1 | AII, antiunitary T²=(-1)^F; rho=0, s=alpha, omega=alpha²/2 | 0 | Z² | [FH, Corollary 9.93](https://arxiv.org/abs/1604.06527v6); same abstract full rank as AI, but uniform image Z{I,J} |
-| 2 | U(1)^f × (C2)²; s=rho=omega=0 | Z2² × Z4 × Z8² | Relative group × Z² | Derived below from [BMSS, Theorem 2.12](https://arxiv.org/abs/1008.0166v1) and [Buchanan–McKean, Theorem 3.6](https://doi.org/10.2140/agt.2026.26.485); first genuinely noncyclic finite benchmark |
-| 2 | Four independent translations, G=Z⁴; s=rho=omega=0 | Z¹³ | Z¹⁵ | Stable splitting of T⁴ plus Spin-c coefficient phases; tests six E8, six CI, and one charge direction, with atomic filling retained |
+| 1 | U(1)^f × C_N; s=r=omega=0 | Cyclic formula below | Relative group × Z² | v0.15 Appendix K derives a faithful Spin-c eta pairing and complete physical presentation; tests sheet/charge gauges and stacking extensions |
+| 1 | Unitary C, C²=(-1)^F; r=alpha, s=0, omega=alpha²/2 | Z2³ | Z2³ | Derived Smith calculation below, using [FH, Theorem 9.87](https://arxiv.org/abs/1604.06527v6) and [Smith, Theorem 5.1/Corollary 5.8](https://arxiv.org/abs/2405.04649v2); tests the calibrated CI square and neutral sector |
+| 1 | Unitary C, C²=1; r=alpha, s=0, omega=0 | Z2 | Z2 | Same derivation with the other tangential twist; tests obstruction and incoming removal of the CI/charge/phase sector |
+| 1 | AI, antiunitary T²=1; r=0, s=alpha, omega=0 | 0 | Z² | [FH, Corollary 9.95](https://arxiv.org/abs/1604.06527v6); tests a vanishing zero-uniform group. Uniform image is 2Z{I}⊕2Z{J}, with the stronger labelled statement derived in v0.15 |
+| 1 | AII, antiunitary T²=(-1)^F; r=0, s=alpha, omega=alpha²/2 | 0 | Z² | [FH, Corollary 9.93](https://arxiv.org/abs/1604.06527v6); same abstract full rank as AI, but uniform image Z{I,J} |
+| 2 | U(1)^f × (C2)²; s=r=omega=0 | Z2² × Z4 × Z8² | Relative group × Z² | Derived below from [BMSS, Theorem 2.12](https://arxiv.org/abs/1008.0166v1) and [Buchanan–McKean, Theorem 3.6](https://doi.org/10.2140/agt.2026.26.485); first genuinely noncyclic finite benchmark |
+| 2 | Four independent translations, G=Z⁴; s=r=omega=0 | Z¹³ | Z¹⁵ | Stable splitting of T⁴ plus Spin-c coefficient phases; tests six E8, six CI, and one charge direction, with atomic filling retained |
 
 ## Cyclic targets and response scope
 

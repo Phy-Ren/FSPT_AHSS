@@ -183,15 +183,15 @@ def compile_program(operation='source'):
     builder = Builder()
     N = 5 if operation == 'source' else 4
     s = [builder.field('s', (j,)) for j in range(N + 1)]
-    rho = [builder.field('rho', (j,)) for j in range(N + 1)]
-    twist = [a ^ b for a, b in zip(s, rho)]
+    r = [builder.field('r', (j,)) for j in range(N + 1)]
+    twist = [a ^ b for a, b in zip(s, r)]
 
     def field(name, degree, sign, denominator=1):
         return S.C(N, degree, {face: builder.field(name, face, denominator)
                               for face in combinations(range(N + 1), degree + 1)}, sign)
 
-    omega, sheet, charge = field('omega', 2, twist, 2), field('sheet', 1, s), field('charge', 3, rho)
-    ss, rr = S.char(N, s).ret(s), S.char(N, rho).ret(rho)
+    omega, sheet, charge = field('omega', 2, twist, 2), field('sheet', 1, s), field('charge', 3, r)
+    ss, rr = S.char(N, s).ret(s), S.char(N, r).ret(r)
     original_cup = S.C.cup
     S.C.cup = trace_cup
     try:
@@ -199,7 +199,7 @@ def compile_program(operation='source'):
             output = T.O3canonical(omega, sheet, charge, ss, rr) + K.calibration(omega, sheet, ss, rr)
         else:
             output = T.E4canonical(omega, sheet, charge, field('sheet_prime', 1, s),
-                                   field('charge_prime', 3, rho), ss, rr)
+                                   field('charge_prime', 3, r), ss, rr)
         result = builder.scalar(output(tuple(range(N + 1))) % 1)
     finally:
         S.C.cup = original_cup

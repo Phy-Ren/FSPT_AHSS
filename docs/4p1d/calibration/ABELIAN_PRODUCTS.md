@@ -1,7 +1,7 @@
 # Commuting finite abelian products in 4+1D
 
 The new engine computes the complete original four-data model for
-`U(1)^f × G`, where `G=∏ C_Ni` and `s=rho=omega=0`. The ordered fields are
+`U(1)^f × G`, where `G=∏ C_Ni` and `s=r=omega=0`. The ordered fields are
 `(e2,n2,n4,nu5)`, with one shared phase. The calculation fixes the additional
 intrinsic pair `(n0I,n0J)=(0,0)`. No physical reference group is imported by
 the solver, and an additive bordism-group match is not a proof of a labelled

@@ -3,8 +3,11 @@
 Use `(e_p,n_p,n_{p+2},nu_{p+3})`, with `p=spatial_dimension-2`.
 The first coordinate is neutral E8, the second is integer CI, the third is
 localized integer charge, and the last is the **one shared phase**.
-Both leading coordinates have sign `s1`; charge has sign `rho1`; phase
-has sign `s1`. The extension lift has sign `rho1+s1`.
+Both leading coordinates have sign `s1`; charge has sign `r1`; phase
+has sign `s1`. The extension lift has sign `rho1`.
+The approved meanings are `rho1` for the charge-circle action, `s1` for
+antiunitarity, and `r1=rho1+s1` modulo two for charge reversal.
+See [notation and current inputs](../NOTATION_AND_INPUTS.md).
 
 The Python representation is `insulator.E8State(e_p,n_p,n_p2,nu_p3)`.
 Source arguments and gauge parameters follow the same E8-first order.

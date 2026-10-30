@@ -7,8 +7,8 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 PROGRAM = r'''checks:=0;;evenChecks:=0;;
-data:=rec(multiplication:=[[0,1,2,3],[1,0,3,2],[2,3,0,1],[3,2,1,0]],identity_index:=0,
- s:=[0,1,0,1],rho:=[0,0,1,1],omega:=[["0","0","0","0"],["0","1/2","0","1/2"],["0","0","0","0"],["0","1/2","0","1/2"]]);;
+data:=rec(schema_version:=2,multiplication:=[[0,1,2,3],[1,0,3,2],[2,3,0,1],[3,2,1,0]],identity_index:=0,
+ s:=[0,1,0,1],r:=[0,0,1,1],omega:=[["0","0","0","0"],["0","1/2","0","1/2"],["0","0","0","0"],["0","1/2","0","1/2"]]);;
 contexts:=[U1FiniteContext(data,6),U1CyclicContext(3,0,0,1/2),U1CyclicContext(4,0,1,1/2),U1CyclicContext(2,1,0,1/2)];;
 for c in contexts do
  els:=Filtered(Elements(c.G),g->g<>Identity(c.G));;

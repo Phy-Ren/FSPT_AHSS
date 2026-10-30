@@ -13,8 +13,8 @@ class CochainBackendTests(unittest.TestCase):
         program=r'''
 OnBreak:=function() Where(12);QUIT_GAP(1);end;;
 U1_ROOT:="@ROOT@";;Read(Concatenation(U1_ROOT,"/gap/load.g"));
-data:=rec(multiplication:=[[0,1,2,3],[1,0,3,2],[2,3,0,1],[3,2,1,0]],identity_index:=0,
-s:=[0,1,0,1],rho:=[0,0,1,1],omega:=[["0","0","0","0"],["0","1/2","0","1/2"],["0","0","0","0"],["0","1/2","0","1/2"]]);;
+data:=rec(schema_version:=2,multiplication:=[[0,1,2,3],[1,0,3,2],[2,3,0,1],[3,2,1,0]],identity_index:=0,
+s:=[0,1,0,1],r:=[0,0,1,1],omega:=[["0","0","0","0"],["0","1/2","0","1/2"],["0","0","0","0"],["0","1/2","0","1/2"]]);;
 c:=U1FiniteContext(data,6);;
 if U1Differential(c,0,"Zs")=U1Differential(c,0,"Zr") then Error("Independent sign caches collapsed");fi;
 if U1Differential(c,0,"Zt")=U1Differential(c,0,"Zr") then Error("Extension sign collapsed into charge sign");fi;

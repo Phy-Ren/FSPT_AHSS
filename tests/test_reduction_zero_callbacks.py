@@ -13,8 +13,8 @@ U1_ROOT:="@ROOT@";;
 Read(Concatenation(U1_ROOT,"/gap/load.g"));;
 rows:=[];;
 for spec in [[0,0],[0,1],[1,0],[1,1]] do
- data:=rec(multiplication:=[[0,1,2,3],[1,0,3,2],[2,3,0,1],[3,2,1,0]],identity_index:=0,
- s:=List([0,1,0,1],x->spec[1]*x),rho:=List([0,0,1,1],x->spec[2]*x),
+ data:=rec(schema_version:=2,multiplication:=[[0,1,2,3],[1,0,3,2],[2,3,0,1],[3,2,1,0]],identity_index:=0,
+ s:=List([0,1,0,1],x->spec[1]*x),r:=List([0,0,1,1],x->spec[2]*x),
  omega:=[["0","0","0","0"],["0","1/2","0","1/2"],["0","0","0","0"],["0","1/2","0","1/2"]]);;
  c:=U1FiniteContext(data,6);;one:=Identity(c.G);;els:=Filtered(Elements(c.G),g->g<>one);;
  for d in [2,3] do

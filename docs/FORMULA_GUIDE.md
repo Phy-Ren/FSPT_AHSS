@@ -40,20 +40,23 @@ factorization.
 
 ## Conventions and coordinates
 
-The independent characters are `s,rho:G -> Z2`. The first reverses
-chirality and the additive phase; the second reverses integer charge.
-The charge-circle automorphism has character `rho+s`. The input is the
-actual normalized extension lift
-`omega_R in C2(G,R_(rho+s))`, with integral differential. Set
+The approved characters are `rho,s:G -> Z2`, with `r=rho+s` modulo two.
+Here `rho` acts on the charge circle, `s` records antiunitarity, and `r`
+reverses integer charge.
+The sheet chirality and additive phase transform with `s`.
+The [notation and input guide](NOTATION_AND_INPUTS.md) fixes these meanings
+for all current interfaces and explains the historical source notation.
+The input is the actual normalized extension lift
+`omega_R in C2(G,R_rho)`, with integral differential. Set
 
 ```math
 \check\omega_R=\omega_R-\frac12s\cup s,
-\qquad B_3=d_{\rho+s}\check\omega_R.
+\qquad B_3=d_{\rho}\check\omega_R.
 ```
 
-Both sheets have coefficients `Z_s`; charge has coefficients `Z_rho`;
+Both sheets have coefficients `Z_s`; charge has coefficients `Z_r`;
 the one phase has coefficients `R/Z_s`. The 2+1D endpoint uses the
-unshifted connecting cochain `d_(rho+s) omega_R`, as stated on its page.
+unshifted connecting cochain `d_(rho) omega_R`, as stated on its page.
 All phases in this reference are additive. A prime denotes the second
 input. Juxtaposition denotes an ordered cup product, never a pointwise
 product or a product of arbitrary `R/Z` representatives.

@@ -5,7 +5,7 @@ from fractions import Fraction
 from itertools import product
 import unittest
 
-from insulator_catalog.catalog import build_group, POINT2, POINT3, WALLPAPER
+from insulator_catalog.catalog import build_group, gap_literal, POINT2, POINT3, WALLPAPER
 
 GENERATED = Path(__file__).resolve().parents[1] / "insulator_catalog" / "generated"
 
@@ -24,8 +24,13 @@ class CatalogTests(unittest.TestCase):
                 pin = r["geometric_pin_minus"]
                 self.assertEqual(table[0], list(range(n)))
                 self.assertEqual([row[0] for row in table], list(range(n)))
-                self.assertEqual(r["s"], r["rho"])
-                self.assertEqual(r["circle_action"], [0] * n)
+                self.assertEqual(r["schema_version"], 2)
+                self.assertEqual(r["s"], r["r"])
+                self.assertEqual(r["rho"], [0] * n)
+                self.assertEqual(r["circle_action"], r["rho"])
+                self.assertEqual(r["r"], [a ^ b for a, b in zip(r["rho"], r["s"])])
+                self.assertEqual((GENERATED / (r["id"] + ".g")).read_text(),
+                                 "U1_INPUT := " + gap_literal(r) + ";;\n")
                 self.assertTrue(all(0 in row for row in table))
                 self.assertEqual(pin[0], [0] * n)
                 self.assertEqual([row[0] for row in pin], [0] * n)
@@ -54,6 +59,9 @@ class CatalogTests(unittest.TestCase):
                                       ("point3", 2, "0"), ("point3", 3, "1/2"),
                                       ("point3", 4, "1/2")]:
             r = build_group(family, index)
+            self.assertEqual(r["schema_version"], 2)
+            self.assertEqual(r["r"], r["s"])
+            self.assertEqual(r["rho"], [0] * r["order"])
             self.assertEqual(r["omega"][1][1], square)
             self.assertTrue(all(x == "0" for row in build_group(family, index, "spin_half")["omega"] for x in row))
 

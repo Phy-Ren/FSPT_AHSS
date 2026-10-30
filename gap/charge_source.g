@@ -16,7 +16,7 @@ BindGlobal("U1CertifiedClosedChargeState",function(c,d,v)
   if mode="reference" or not IsBound(c.backgroundClosureCertificate) then return state;fi;
   certificate:=c.backgroundClosureCertificate;
   if not IsRecord(certificate) or not IsBound(certificate.actions)
-    or certificate.actions<>[c.s,c.rho,c.omega]
+    or certificate.actions<>[c.s,c.r,c.omega]
     or not IsBound(certificate.integralTwistedCoboundary) or certificate.integralTwistedCoboundary<>true
     or not IsBound(certificate.halfIntegralOmega) or certificate.halfIntegralOmega<>true then return state;fi;
   q2:=U1Bar(c,d,"F2",List(v,x->x mod 2));
@@ -38,6 +38,6 @@ BindGlobal("U1CertifiedClosedChargeState",function(c,d,v)
     end);
   fi;
   state.closedChargeSourceCertificate:=rec(context:=c,dimension:=d,charge:=state.charge,
-    nativeCocycle:=ShallowCopy(v),halfValuedPhaseSource:=true,actions:=[c.s,c.rho,c.omega],source:=source);
+    nativeCocycle:=ShallowCopy(v),halfValuedPhaseSource:=true,actions:=[c.s,c.r,c.omega],source:=source);
   return state;
 end);

@@ -9,20 +9,20 @@ BindGlobal("U1Source",function(c,d,state)
   local source,certificate;
   if IsBound(state.sourceCache) and IsBound(state.sourceCache.context) and
       IsIdenticalObj(state.sourceCache.context,c) and state.sourceCache.dimension=d and
-      IsBound(state.sourceCache.actions) and state.sourceCache.actions=[c.s,c.rho,c.omega] and
+      IsBound(state.sourceCache.actions) and state.sourceCache.actions=[c.s,c.r,c.omega] and
       state.sourceCache.sheet=state.sheet and state.sourceCache.charge=state.charge then return state.sourceCache.source;fi;
   if state.sheet=U1Zero then
     if IsBound(state.closedChargeSourceCertificate) then certificate:=state.closedChargeSourceCertificate;else certificate:=fail;fi;
     if certificate<>fail and IsRecord(certificate) and IsBound(certificate.context)
       and IsIdenticalObj(certificate.context,c) and IsBound(certificate.dimension) and certificate.dimension=d
       and IsBound(certificate.charge) and IsIdenticalObj(certificate.charge,state.charge)
-      and IsBound(certificate.actions) and certificate.actions=[c.s,c.rho,c.omega]
+      and IsBound(certificate.actions) and certificate.actions=[c.s,c.r,c.omega]
       and IsBound(certificate.source) then
       source:=certificate.source;
     else source:=U1ChargeSource(c,d,state.charge);fi;
   else source:=U1Formula(c,"source",d,state,rec(),fail,d+2);fi;
   state.sourceCache:=rec(context:=c,dimension:=d,sheet:=state.sheet,charge:=state.charge,
-    actions:=[c.s,c.rho,c.omega],source:=source);
+    actions:=[c.s,c.r,c.omega],source:=source);
   return source;
 end);
 BindGlobal("U1Product",function(c,d,a,b)
@@ -406,7 +406,7 @@ BindGlobal("U1Classify",function(c,d,options...)
     phaseOrders:=HP.orders,chargeOrders:=HQ.orders,chargeObstructionTargetOrders:=HO.orders,
     chargeObstructionMap:=sourceMap,chargeKernelLattice:=K,sheetOrders:=sheetOrders,
     obstructedSheets:=obstructedSheets,witnesses:=witnesses,
-    coefficientActions:=["CI: s1","charge: rho1","extension: rho1+s1","phase: s1"],
+    coefficientActions:=["CI: s1","charge: r1","extension: rho1","phase: s1"],
     resolutionDimensions:=List([0..d+3],k->Dimension(c.R)(k)));
   if d=2 and not uniform then result.scope:=Concatenation(result.scope,"; relative n0=0");fi;
   fp:=U1Filtration(relations,rank,0,np);fq:=U1Filtration(relations,rank,np,nq);fs:=U1Filtration(relations,rank,np+nq,ns);

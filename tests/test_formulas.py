@@ -15,6 +15,7 @@ from insulator._engine.transgression import O3canonical, E4canonical
 from insulator._engine.product4d import E5
 from insulator._engine.prism import gauge3 as unoptimized_gauge3
 from insulator.worker import evaluate
+from insulator.notation import migrate_legacy_request
 
 
 def c2(N, p, value, twist=0):
@@ -24,8 +25,8 @@ def c2(N, p, value, twist=0):
         [twist * color for color in colors])
 
 
-def c2_background(N, rho, s, omega):
-    return U.Symmetry(c2(N, 2, omega, rho ^ s), c2(N, 1, s, s), c2(N, 1, rho, rho))
+def c2_background(N, r, s, omega):
+    return U.Symmetry(c2(N, 2, omega, r ^ s), c2(N, 1, s, s), c2(N, 1, r, r))
 
 
 def random_state(d, N, seed):
@@ -60,7 +61,7 @@ class FormulaIdentities(unittest.TestCase):
                 doubled = state.stack(state, sym, d)
                 doubled.validate(sym, d)
                 u = None if d == 2 else rand(state.sheet.N, d - 3, sym.s1.tw, rng)
-                v = rand(state.sheet.N, d - 1, sym.rho1.tw, rng)
+                v = rand(state.sheet.N, d - 1, sym.r1.tw, rng)
                 gauged = state.gauge(sym, d, u, v)
                 gauged.validate(sym, d)
                 zero = state.stack(state.inverse(sym, d), sym, d)
@@ -75,7 +76,7 @@ class FormulaIdentities(unittest.TestCase):
         for d in (2, 3, 4):
             for sb in (0, 1):
                 for rb in (0, 1):
-                    with self.subTest(d=d, s=sb, rho=rb):
+                    with self.subTest(d=d, s=sb, r=rb):
                         N = d + 2
                         st = [sb * (i % 2) for i in range(N + 1)]
                         rt = [rb * (i % 2) for i in range(N + 1)]
@@ -88,7 +89,7 @@ class FormulaIdentities(unittest.TestCase):
                         self.equal(U.source(sym, d, k, n), U.charge_source(sym, n), 1)
                         self.equal(U.product(sym, d, k, n, k, m)[2], U.charge_product(sym, n, m), 1)
                         if d in (3, 4):
-                            a, s, r = sym.omega2_real, sym.s1, sym.rho1
+                            a, s, r = sym.omega2_real, sym.s1, sym.r1
                             raw_source = O3canonical(a,k,n,s,r) if d == 3 else O4d(a,k,n,s,r)
                             raw_product = E4canonical(a,k,n,k,m,s,r) if d == 3 else E5(a,k,n,k,m,s,r)
                             self.equal(U.source(sym, d, k, n), raw_source, 1)
@@ -150,7 +151,7 @@ class FormulaIdentities(unittest.TestCase):
         sym, state, rng = random_state(3, 4, 74501)
         sheets = [state.sheet] + [rand(4, 0, sym.s1.tw, rng).d() for _ in range(2)]
         charges = [primitive(U.integer_obstruction(sym, 3, k))
-                   + rand(4, 2, sym.rho1.tw, rng).d() for k in sheets]
+                   + rand(4, 2, sym.r1.tw, rng).d() for k in sheets]
         k01, n01, e01 = U.product(sym, 3, sheets[0], charges[0], sheets[1], charges[1])
         k12, n12, e12 = U.product(sym, 3, sheets[1], charges[1], sheets[2], charges[2])
         left = e01 + U.product(sym, 3, k01, n01, sheets[2], charges[2])[2]
@@ -168,10 +169,10 @@ class FormulaIdentities(unittest.TestCase):
 
 
 class CompleteC2Roots(unittest.TestCase):
-    def run_root(self, d, rho, s, omega, root):
+    def run_root(self, d, r, s, omega, root):
         N = d + 2
-        sym = c2_background(N, rho, s, omega)
-        state = U.State(c2(N, d - 2, root[0], s), c2(N, d, root[1], rho),
+        sym = c2_background(N, r, s, omega)
+        state = U.State(c2(N, d - 2, root[0], s), c2(N, d, root[1], r),
                         c2(N, d + 1, root[2], s))
         def coordinates(x):
             return [x.sheet(tuple(range(d - 1))), x.charge(tuple(range(d + 1))),
@@ -182,16 +183,16 @@ class CompleteC2Roots(unittest.TestCase):
             state = state.stack(state, sym, d)
             k, n, _ = coordinates(state)
             if d == 4 and s == 0 and k // 2:
-                state = state.gauge(sym, d, c2(N, 1, -(k // 2), s), c2(N, 3, 0, rho))
+                state = state.gauge(sym, d, c2(N, 1, -(k // 2), s), c2(N, 3, 0, r))
             elif d == 3 and s == 1 and k // 2:
-                state = state.gauge(sym, d, c2(N, 0, k // 2, s), c2(N, 2, 0, rho))
+                state = state.gauge(sym, d, c2(N, 0, k // 2, s), c2(N, 2, 0, r))
             _, n, _ = coordinates(state)
-            if d == 4 and rho == 0 and n // 2:
-                state = state.gauge(sym, d, c2(N, 1, 0, s), c2(N, 3, -(n // 2), rho))
-            elif d == 3 and rho == 1 and n // 2:
-                state = state.gauge(sym, d, c2(N, 0, 0, s), c2(N, 2, n // 2, rho))
-            elif d == 2 and rho == 0 and n // 2:
-                state = state.gauge(sym, d, None, c2(N, 1, -(n // 2), rho))
+            if d == 4 and r == 0 and n // 2:
+                state = state.gauge(sym, d, c2(N, 1, 0, s), c2(N, 3, -(n // 2), r))
+            elif d == 3 and r == 1 and n // 2:
+                state = state.gauge(sym, d, c2(N, 0, 0, s), c2(N, 2, n // 2, r))
+            elif d == 2 and r == 0 and n // 2:
+                state = state.gauge(sym, d, None, c2(N, 1, -(n // 2), r))
             state.validate(sym, d)
             result.append(coordinates(state))
         self.assertEqual(result[-1], [0, 0, 0])
@@ -206,10 +207,10 @@ class CompleteC2Roots(unittest.TestCase):
         self.assertEqual(self.run_root(4, 1, 0, F(1, 2), (1, 0, F(7, 48)))[1], [0, 0, 0])
 
     def test_incoming_charge_images_and_obstructed_AI(self):
-        for p, rho, s, w, expected in ((2, 0, 1, 0, F(1,2)), (2, 0, 1, F(1,2), 0),
+        for p, r, s, w, expected in ((2, 0, 1, 0, F(1,2)), (2, 0, 1, F(1,2), 0),
                                         (3, 1, 0, F(1,2), 0), (3, 1, 0, 0, F(1,2))):
             N = p + 2
-            value = U.d2(c2_background(N, rho, s, w), c2(N, p, 1, rho))(tuple(range(N + 1))) % 1
+            value = U.d2(c2_background(N, r, s, w), c2(N, p, 1, r))(tuple(range(N + 1))) % 1
             self.assertEqual(value, expected)
         with self.assertRaises(ValueError):
             sym = c2_background(5, 0, 1, 0)
@@ -229,7 +230,7 @@ class WorkerProtocol(unittest.TestCase):
         self.assertEqual(len(vectors), 9)
         for item in vectors:
             with self.subTest(dimension=item['request']['dimension'], op=item['request']['op']):
-                self.assertEqual(evaluate(item['request']), item['expected'])
+                self.assertEqual(evaluate(migrate_legacy_request(item['request'])), item['expected'])
 
     def test_persistent_json_recovery_and_gap_format(self):
         requests = [
@@ -239,6 +240,10 @@ class WorkerProtocol(unittest.TestCase):
              'charge': {','.join(map(str, f)): str(v) for f, v in c2(4,2,1).v.items()}, 'return': 'top'},
             {'id': 4, 'op': 'd3', 'simplex_dimension': 3, 'return': 'top', 'response_format': 'gap'},
         ]
+        for request in requests:
+            if 'simplex_dimension' in request:
+                request.update(schema_version=2, s=[0] * (request['simplex_dimension'] + 1),
+                               r=[0] * (request['simplex_dimension'] + 1))
         worker = Path(__file__).resolve().parents[1] / 'scripts/formula_worker.py'
         completed = subprocess.run([sys.executable, str(worker)], input=''.join(json.dumps(r)+'\n' for r in requests),
                                    capture_output=True, text=True, check=True, cwd='/tmp')

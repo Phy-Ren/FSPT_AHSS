@@ -39,7 +39,8 @@ Set `lambda_l=i_l-i_(l-1)+1` for inner intervals and
 
 ```math
 (-1)^{i(p+q)+\binom i2+
-\sum_{l\ {m inner}}i_l+
+\sum_{l\ {
+m inner}}i_l+
 \sum_{l<m,\ w_l>w_m}\lambda_l\lambda_m}.
 ```
 
@@ -65,7 +66,7 @@ The derivative term remains present when a sheet opens the charge equation.
 
 ## Charge source, twister, and gauge
 
-For integer `z_k` of sign `rho`, define
+For integer `z_k` of sign `r`, define
 
 ```math
 \widehat O^c_{k+2}(z)=\omega_R\cup z+\frac12\mathrm{Sq}^2\bar z,
@@ -78,14 +79,14 @@ For integer `z_k` of sign `rho`, define
 
 ```math
 \widehat G^c_{k+1}(u;z)=\omega_R\cup u+
- \frac12\mathrm{Sq}^2\bar u+\widehat E^c_{k+1}(z,d_\rho u).
+ \frac12\mathrm{Sq}^2\bar u+\widehat E^c_{k+1}(z,d_r u).
 ```
 
 Their outputs have phase sign `s`. On closed charge, the class of `O^c`
 represents `d2`. Closed gauge parameters can produce nonzero incoming
 phases; they are included in the global quotient.
 
-For a closed pure charge in 3+1D (`n1=0`, `d_rho n3=0`) and no sheet
+For a closed pure charge in 3+1D (`n1=0`, `d_r n3=0`) and no sheet
 gauge, the canonical source-cylinder representative obeys the exact
 identity
 
@@ -187,6 +188,6 @@ A rephasing `nu -> nu+F` must change the whole source/product/gauge triple:
 Here `a*b` is the actual lower product, including its generated charge.
 Integral extension-lift changes use
 `omega_R -> omega_R+z2`, `n_(p+2) -> n_(p+2)-z2 cup n_p`;
-real section changes use `omega_R -> omega_R+d_(rho+s)alpha1` and leave
+real section changes use `omega_R -> omega_R+d_(rho)alpha1` and leave
 charge fixed. The phase is the dimensional source evaluated on the
 specified height cylinder. Neutral E8 remains unchanged.

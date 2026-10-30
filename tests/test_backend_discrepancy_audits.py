@@ -69,6 +69,7 @@ class DiscrepancyAuditTests(unittest.TestCase):
             self.assertEqual(sorted(image), list(range(4)))
             for i in range(4):
                 self.assertEqual(source["s"][h[i]], target["s"][image[i]])
+                self.assertEqual(source["r"][h[i]], target["r"][image[i]])
                 self.assertEqual(source["rho"][h[i]], target["rho"][image[i]])
                 for j in range(4):
                     product = ht[i][j]

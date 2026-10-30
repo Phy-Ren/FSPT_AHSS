@@ -45,7 +45,7 @@ def manifest():
 
 def input_record(order):
     return {'id': 'internal_cyclic_{}_4p1'.format(order), 'dimension': 4,
-            'family': 'internal_cyclic', 'order': order, 's': 0, 'rho': 0, 'omega': '0',
+            'family': 'internal_cyclic', 'order': order, 'schema_version': 2, 's': 0, 'r': 0, 'rho': 0, 'omega': '0',
             'physicalSpin': 'not_applicable', 'crystallineSpinConvention': 'not_assumed',
             'orderedFields': ['e_2', 'n_2', 'n_4', 'nu_5'],
             'intrinsicRowIncluded': False, 'intrinsicR0Included': False}
@@ -57,7 +57,7 @@ def uniform_response(relative_torsion):
         'fullGroup': {'torsion': relative_torsion, 'freeRank': 2},
         'section': 'Give each symmetry-independent I or J root the trivial C_N action; equivalently pull back along B(U1f x C_N) -> BU1f.',
         'splitting': 'Forgetting C_N composed with this section is the identity, so the full physical group is canonically the relative kernel plus Z I plus Z J.',
-        'zeroLowerLift': {'background': 's=rho=omega=0', 'intrinsicInputs': [[1, 0], [0, 1]],
+        'zeroLowerLift': {'background': 's=r=omega=0', 'intrinsicInputs': [[1, 0], [0, 1]],
                          'lowerFields': {'e_2': 0, 'n_2': 0, 'n_4': 0, 'nu_5': 0},
                          'check': 'B=0; all primary, charge, and terminal terms in the reviewed intrinsic formulas vanish on these inputs.',
                          'evidenceType': 'Direct zero-input substitution and the physical natural section, not an intrinsic formula-runtime execution.'},

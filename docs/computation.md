@@ -6,8 +6,8 @@ Neither component reads the literature benchmark tables.
 
 ## Coefficient systems and resolutions
 
-The CI, charge, extension and phase coefficients carry the actions `s1`, `rho1`,
-`rho1+s1` and `s1`, respectively. Differential/cohomology caches distinguish these
+The CI, charge, extension and phase coefficients carry the actions `s1`, `r1`,
+`rho1` and `s1`, respectively. Differential/cohomology caches distinguish these
 actions. Finite inputs are checked for associativity, identity, sign characters
 and the twisted U(1) extension cocycle equation.
 
@@ -24,7 +24,7 @@ and differential operations supply coefficient transport between vertices.
 
 ## Obstructions and completed roots
 
-For spatial dimension `d`, begin with charge cohomology `H^d(G,Z_rho)` and phase
+For spatial dimension `d`, begin with charge cohomology `H^d(G,Z_r)` and phase
 cohomology `H^(d+1)(G,U(1)_s)`. Apply the supplied charge source to each integral
 charge generator. Its class lies in `H^(d+2)(G,U(1)_s)`. The kernel is computed as
 an integer lattice, including the original charge relation lattice. Every

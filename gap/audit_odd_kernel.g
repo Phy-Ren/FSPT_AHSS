@@ -20,12 +20,12 @@ BindGlobal("U1AuditOddKernel",function(sourceIndex,targetIndex,spin)
   hi:=Filtered([1..source.order],i->perms[i] in H);
   if hi[1]<>source.identity_index+1 or target.identity_index<>0 then Error("Unexpected identity ordering");fi;
   ht:=List(hi,i->List(hi,j->Position(hi,source.multiplication[i][j]+1)));
-  if ForAny(ni,i->source.s[i]<>0 or source.rho[i]<>0) then Error("Odd kernel carries a nontrivial sign");fi;
+  if ForAny(ni,i->source.s[i]<>0 or source.r[i]<>0) then Error("Odd kernel carries a nontrivial sign");fi;
   traces:=List(hi,i->TraceMat(source.matrices[i]));choices:=[];
   for map in PermutationsList([2..target.order]) do
     map:=Concatenation([1],map);
     if ForAll([1..4],i->traces[i]=TraceMat(target.matrices[map[i]]) and
-      source.s[hi[i]]=target.s[map[i]] and source.rho[hi[i]]=target.rho[map[i]]) and
+      source.s[hi[i]]=target.s[map[i]] and source.r[hi[i]]=target.r[map[i]]) and
       ForAll([1..4],i->ForAll([1..4],j->map[ht[i][j]]=target.multiplication[map[i]][map[j]]+1)) then
       Add(choices,map);
     fi;

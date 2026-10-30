@@ -14,11 +14,15 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from insulator.notation import legacy_metadata_view
 
 from build_foundation_tables import group_text, signature
 from summarize_results import uniform_multiplicity
 
-ROOT = Path(__file__).resolve().parents[1]
 SPINS = {"spinless": "Spinless", "spin_half": "Spin-1/2"}
 ZERO = {"torsion": [], "freeRank": 0}
 
@@ -133,7 +137,7 @@ class Catalogue:
         path = ROOT / name
         data = path.read_bytes()
         self.inputs[self.path_name(path)] = digest(data)
-        return json.loads(data)
+        return legacy_metadata_view(json.loads(data))
 
     def expansion_table(self, family, spin=None):
         selected = [r for r in self.extra.values() if r["input"]["family"] == family
@@ -162,7 +166,7 @@ class Catalogue:
                      "The physical CI-kernel identification remains conditional.")
         else:
             destination = Path("4p1d/internal_cyclic")
-            title = "4+1D internal cyclic groups: s=rho=omega=0"
+            title = "4+1D internal cyclic groups: s=r=omega=0"
             scope = ("Unitary internal U(1)^f x C_N; no crystalline spin convention is assigned. "
                      "The original four-data tower includes e2,n2,n4,nu5 and excludes the deferred intrinsic r0 response. "
                      "Filtration groups are derived from the actual root-relation presentation by saturated integer elimination. "
@@ -196,7 +200,7 @@ class Catalogue:
                    "e8_scope": "selected_section_included" if dimension == 3 else "original_four_data_included",
                    "cells": cells, "provenance": deepcopy(selected_record["provenance"])}
             if dimension == 4:
-                row["background"] = {"s": 0, "rho": 0, "omega": "0", "intrinsic_r0_included": False}
+                row["background"] = {"schema_version": 2, "s": 0, "r": 0, "rho": 0, "omega": "0", "intrinsic_r0_included": False}
             rows.append(row)
             self.index.append({**{k: deepcopy(v) for k,v in row.items() if k != "cells"},
                                "table": str(destination.with_suffix(".json")), "stacking": signature(c),
@@ -534,7 +538,7 @@ class Catalogue:
         elif cyclic_count:
             self.put("4p1d/README.md", "# 4+1D internal insulator examples\n\n"
                      "The cyclic pilot computes **C1 through C6** for unitary internal symmetry "
-                     "`U(1)^f x C_N`, with `s=rho=omega=0`. Internal backgrounds have no crystalline spin labels.\n\n"
+                     "`U(1)^f x C_N`, with `s=r=omega=0`. Internal backgrounds have no crystalline spin labels.\n\n"
                      "- [Six cyclic groups](internal_cyclic.md) · [CSV](internal_cyclic.csv) · [JSON](internal_cyclic.json).\n\n"
                      "The four data are `(e2,n2,n4,nu5)`. E8, CI, charge, and the single shared phase "
                      "enter the actual root-relation presentation; the final group includes their stacking extensions. "

@@ -21,7 +21,7 @@ def _freeze(value):
         return ('cochain', value.N, value.p, value.tw,
                 tuple((face, F(v)) for face, v in sorted(value.v.items()) if v))
     if isinstance(value, ci.Symmetry):
-        return ('symmetry', _freeze(value.omega2_real), _freeze(value.s1), _freeze(value.rho1))
+        return ('symmetry', _freeze(value.omega2_real), _freeze(value.s1), _freeze(value.r1))
     if isinstance(value, e8.State):
         return ('state', *(_freeze(c) for c in (value.e_p, value.n_p, value.n_p2, value.nu_p3)))
     if isinstance(value, tuple):
@@ -287,7 +287,7 @@ def calculate(order, cache=True, retain_ledger=True):
             'phaseRootPeriod': str(F(1, order)) if order > 1 else '0',
             'reason': 'H^5(C_N,R/Z)=Z_N and this normalized cycle generates H_5(C_N,Z); pairing determines the entire phase class.',
             'phasePrimitive': 'Relations are certified as exact by complete periodic-cycle detection; no explicit full-bar primitive is asserted.'},
-        'scope': 'Complete original four-data model for internal s=rho=omega=0; intrinsic row excluded from this cochain calculation.',
+        'scope': 'Complete original four-data model for internal s=r=omega=0; intrinsic row excluded from this cochain calculation.',
         'physicalClassificationCertified': False,
     }
     evidence = {'orderedFields': classification['orderedFields'], 'order': order,

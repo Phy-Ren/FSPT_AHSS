@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
+from copy import deepcopy
 from functools import reduce
 import hashlib
 from itertools import combinations, product
@@ -172,7 +173,7 @@ def ossa_odd_ku(factors, degree):
 
 def derive_case(case):
     background, identifier = case["background"], case["id"]
-    require(all(str(background[key]) == "0" for key in ("s", "rho", "omega")),
+    require(all(str(background[key]) == "0" for key in ("s", "r", "omega")),
             "The reference derivation requires the stated trivial direct-product background")
     detail, free = {}, 0
     if identifier.startswith("internal_cyclic_"):
@@ -257,6 +258,22 @@ def derive_case(case):
 
 
 def replay(ledger):
+    # This arithmetic-only verifier deliberately reads the frozen legacy
+    # reference ledger without importing the formula/classification package.
+    # Its domain is the trivial direct-product action, so the conversion is
+    # exact without introducing a second general character adapter.
+    ledger = deepcopy(ledger)
+    for case in ledger["cases"]:
+        background = case["background"]
+        if "r" not in background:
+            require("rho" in background and str(background["s"]) == "0"
+                    and str(background["rho"]) == "0",
+                    "Historical reference background must have trivial s and charge-rho")
+            background["r"] = background["rho"]
+            background["rho"] = "0"
+            background["schema_version"] = 2
+        require(str(background.get("rho", "0")) == "0",
+                "The reference derivation requires trivial circle action")
     cases = ledger["cases"]
     require(len({case["id"] for case in cases}) == len(cases), "Duplicate target IDs")
     for case in cases:
@@ -278,7 +295,7 @@ def replay(ledger):
                 "No formula-engine run, differential, stacking primitive, or physical cochain-root identification is certified here.",
                 "All ledger entries remain prospective reference targets; completed campaigns are recorded separately.",
                 "Mixed translation targets are future benchmarks, not computed formula examples.",
-                "Only commuting direct-product backgrounds s=rho=omega=0 are covered; twisted and nonsymmorphic groups are outside scope."],
+                "Only commuting direct-product backgrounds s=r=omega=0 are covered; twisted and nonsymmorphic groups are outside scope."],
             "records": records}
 
 

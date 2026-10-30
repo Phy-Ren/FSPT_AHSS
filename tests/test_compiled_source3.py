@@ -32,22 +32,22 @@ def request(operation, seed, scale=1, completed=False):
     N = 5 if operation == 'source' else 4
     rng = random.Random(seed)
     s = [rng.randrange(2) for _ in range(N + 1)]
-    rho = [rng.randrange(2) for _ in range(N + 1)]
-    sign = [a ^ b for a, b in zip(s, rho)]
+    r = [rng.randrange(2) for _ in range(N + 1)]
+    sign = [a ^ b for a, b in zip(s, r)]
     omega = field(N, 1, sign, rng, Fraction(1, 2)).d() + field(N, 2, sign, rng)
-    symmetry = U.Symmetry(omega, U.char(N, s).ret(s), U.char(N, rho).ret(rho))
+    symmetry = U.Symmetry(omega, U.char(N, s).ret(s), U.char(N, r).ret(r))
     fields = {}
     for suffix in ('', '_prime') if operation == 'product' else ('',):
         if completed:
             u = field(N, 0, s, rng, scale)
             sheet = u.d()
-            charge = symmetry.B3.cup(u) + field(N, 2, rho, rng, scale).d()
+            charge = symmetry.B3.cup(u) + field(N, 2, r, rng, scale).d()
         else:
             sheet = field(N, 1, s, rng, scale)
-            charge = field(N, 3, rho, rng, scale)
+            charge = field(N, 3, r, rng, scale)
         fields['sheet' + suffix] = wire(sheet)
         fields['charge' + suffix] = wire(charge)
-    return dict(op=operation, dimension=3, simplex_dimension=N, s=s, rho=rho,
+    return dict(schema_version=2,op=operation, dimension=3, simplex_dimension=N, s=s, r=r,
                 omega=wire(omega), validate=completed, **fields)
 
 
@@ -112,7 +112,7 @@ class CompiledSource3Tests(unittest.TestCase):
         for operation in ('source', 'product'):
             data = request(operation, 19)
             N = data['simplex_dimension']
-            sign = [a ^ b for a, b in zip(data['s'], data['rho'])]
+            sign = [a ^ b for a, b in zip(data['s'], data['r'])]
             omega = field(N, 1, sign, random.Random(52), Fraction(1, 3)).d()
             data['omega'] = wire(omega)
             self.assertTrue(self.assert_modes(data)['ok'])

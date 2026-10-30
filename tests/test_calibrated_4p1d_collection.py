@@ -18,6 +18,7 @@ FIXTURE = ROOT / "results/four_dimensional_20261016"
 
 from scripts.collect_calibrated_4p1d import collect, validate_background, validate_record
 from scripts.build_calibrated_4p1d import build_tables, load_collection
+from insulator.notation import legacy_metadata_view
 
 # The public catalogue script uses sibling CLI-module imports. Exercise its
 # real renderer without loading unrelated 2+1D/3+1D catalogues.
@@ -127,6 +128,13 @@ class CalibratedFourDimensionalCollectionTests(unittest.TestCase):
         self.assertEqual(set(validation["selectedCases"]),
                          {r["input"]["id"] for r in data["records"]})
         for record in data["records"]:
+            self.assertEqual(record["input"]["schema_version"], 2)
+            if record["input"]["id"] == "signed_AI_relative_4p1":
+                self.assertEqual(tuple(record["input"][key] for key in ("s", "r", "rho")),
+                                 ("alpha", "0", "alpha"))
+            if record["input"]["id"] == "signed_H_plus_4p1":
+                self.assertEqual(tuple(record["input"][key] for key in ("s", "r", "rho")),
+                                 ("0", "alpha", "alpha"))
             provenance = record["provenance"]
             self.assertFalse(Path(provenance["path"]).is_absolute())
             raw = ROOT / provenance["path"]
@@ -169,12 +177,12 @@ class CalibratedFourDimensionalCollectionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "different symmetry background: omega"):
             self._collect()
 
-    def test_signed_dictionary_checks_s_and_rho_independently(self):
-        ledger = read(FIXTURE / "reference_targets.json")
+    def test_signed_dictionary_checks_s_and_r_independently(self):
+        ledger = legacy_metadata_view(read(FIXTURE / "reference_targets.json"))
         target = next(case for case in ledger["cases"] if case["id"] == "unitary_charge_conjugation_Hplus")
-        inputs = read(self.signed / "signed_H_plus_4p1/input.json")
+        inputs = legacy_metadata_view(read(self.signed / "signed_H_plus_4p1/input.json"))
         validate_background(inputs, target)
-        for key, value in (("s", "alpha"), ("rho", "0")):
+        for key, value in (("s", "alpha"), ("r", "0"), ("rho", "0")):
             changed = dict(inputs, **{key: value})
             with self.subTest(key=key), self.assertRaisesRegex(ValueError, "different symmetry background: " + key):
                 validate_background(changed, target)

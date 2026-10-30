@@ -8,7 +8,7 @@ symmetry structures are recorded separately in [BORDISM_TARGETS.md](BORDISM_TARG
 
 ## Internal commuting cyclic symmetry
 
-For `U(1)^f × C_N`, set `s=rho=omega=0`. Let `a` be the integer residue
+For `U(1)^f × C_N`, set `s=r=omega=0`. Let `a` be the integer residue
 cochain and `x=da/N`. The canonical roots, in the stated field order, are
 
 \[
@@ -113,14 +113,14 @@ retains all inequivalent phase completions. Put `k=0,1` for
 `omega=k alpha²/2`. The arbitrary-integer gauge quotient is exhausted as
 follows, not merely sampled with small parameters:
 
-* For H+/H-, `s=0,rho=alpha`. The sheet gauges change `e,n` by `2v,2u`.
+* For H+/H-, `s=0,r=alpha`. The sheet gauges change `e,n` by `2v,2u`.
   Normalize both to `0,1` and solve the charge equation. Between these
   canonical representatives a residual transformation has `v=u=0`.
   The remaining closed charge parameter is any integer `w=m`, with
   `Delta nu=(k+1)m/2 mod 1`. Its unit generator includes every residual
   incoming action. H+ has k=0, obstructs odd CI and removes the phase
   root; H- has k=1 and retains the two sheets and phase.
-* For AI/AII, `s=alpha,rho=0`. Closed integral sheets vanish. Every
+* For AI/AII, `s=alpha,r=0`. Closed integral sheets vanish. Every
   charge transformation is `q -> q+(k-1)u+2w`; every phase is removed by
   the surjective signed phase gauge `d4=-2`. For AI the unit CI parameter
   removes charge parity. For AII the terminal source already rejects

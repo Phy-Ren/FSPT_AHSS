@@ -17,17 +17,17 @@ def complete(d, rng, signs=None):
     s = signs if signs is not None else [0] + [rng.randrange(2) for _ in range(N)]
     if d == 2:
         s = [0] * (N + 1)
-    rho = [0] + [rng.randrange(2) for _ in range(N)]
-    omega_sign = [x ^ y for x, y in zip(s, rho)]
+    r = [0] + [rng.randrange(2) for _ in range(N)]
+    omega_sign = [x ^ y for x, y in zip(s, r)]
     bg = ci.Symmetry(rand(N, 2, omega_sign, rng)
                      + rand(N, 1, omega_sign, rng).d().sc(F(1, 5)),
-                     char(N, s).ret(s), char(N, rho).ret(rho))
+                     char(N, s).ret(s), char(N, r).ret(r))
     def sheet():
         if d == 2:
             return C(N, 0, {(i,): 3 for i in range(N + 1)}, s)
         return rand(N, d - 3, s, rng).d()
     e, n = sheet(), sheet()
-    charge = primitive(ci.integer_obstruction(bg, d, n)) + rand(N, d - 1, rho, rng).d()
+    charge = primitive(ci.integer_obstruction(bg, d, n)) + rand(N, d - 1, r, rng).d()
     phase = primitive(source(bg, d, e, n, charge)).mod(1)
     return bg, State(e, n, charge, phase)
 
@@ -51,7 +51,7 @@ class E8Operations(unittest.TestCase):
                 N = state.e_p.N
                 ep = None if d == 2 else rand(N, d - 3, bg.s1.tw, rng)
                 np = None if d == 2 else rand(N, d - 3, bg.s1.tw, rng)
-                state.gauge(bg, d, ep, np, rand(N, d - 1, bg.rho1.tw, rng),
+                state.gauge(bg, d, ep, np, rand(N, d - 1, bg.r1.tw, rng),
                             rand(N, d, bg.s1.tw, rng).sc(F(1, 7))).validate(bg, d)
                 state.power(-3, bg, d).validate(bg, d)
 

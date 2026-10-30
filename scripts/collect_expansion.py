@@ -19,10 +19,11 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from insulator.e8_h1 import saturated_kernel
 from insulator.e8_pointgroup import presentation_invariants
+from insulator.notation import legacy_metadata_view
 
 
 def read(path):
-    return json.loads(path.read_text())
+    return legacy_metadata_view(json.loads(path.read_text()))
 
 
 def sha(path):
@@ -159,7 +160,7 @@ def load_campaign(root, kind, allow_recovered=False):
             if data["family"] == "spacegroup":
                 check["independentPresentationFillingCheck"] = filling_check(c)
         elif kind == "four":
-            if (data["dimension"], data["family"], data["s"], data["rho"], data["omega"], data["intrinsicR0Included"]) != (4, "internal_cyclic", 0, 0, "0", False):
+            if (data["dimension"], data["family"], data["s"], data["r"], data["omega"], data["intrinsicR0Included"]) != (4, "internal_cyclic", 0, 0, "0", False):
                 raise ValueError(f"Unexpected cyclic4D symmetry or coefficient scope: {case}")
             if data["crystallineSpinConvention"] != "not_assumed" or data["orderedFields"] != ["e_2", "n_2", "n_4", "nu_5"]:
                 raise ValueError(f"Unexpected cyclic4D field/spin convention: {case}")

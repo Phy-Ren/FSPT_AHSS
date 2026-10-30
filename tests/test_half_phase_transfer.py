@@ -12,7 +12,7 @@ DOMAIN = r'''G:=Group((1,2,3,4),(2,4));;els:=Elements(G);;one:=Identity(G);;
 C2:=Group((1,2));;mr:=GroupHomomorphismByImages(G,C2,[(1,2,3,4),(2,4)],[(1,2),Identity(C2)]);;
 ms:=GroupHomomorphismByImages(G,C2,[(1,2,3,4),(2,4)],[Identity(C2),(1,2)]);;
 r:=function(g)if Image(mr,g)=Identity(C2) then return 0;else return 1;fi;end;;s:=function(g)if Image(ms,g)=Identity(C2) then return 0;else return 1;fi;end;;
-c:=rec(G:=G,s:=s,rho:=r,omega:=function(g,h)return (s(g)*r(h))/2;end);;
+c:=rec(G:=G,s:=s,r:=r,omega:=function(g,h)return (s(g)*r(h))/2;end);;
 checks:=0;;
 for seed in [0,1,2] do
  q:=function(g,h,j)

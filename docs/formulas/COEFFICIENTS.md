@@ -8,7 +8,7 @@ twister `P5^E8`.
 | Kernel | Variables on `[012345]` | Terms | Exact array |
 | --- | --- | --- | --- |
 | `P5^Cartan(z3;x2,y2)` | `z(0ijk)`, then `x(0ij)`, then `y(0ij)`, each lexicographic | 814 | [cartan32_polarizer.json](../../insulator/_engine/cartan32_polarizer.json) |
-| `R5(rho,s;n2,n2')` | `rho(0i)`, `s(0i)`, `bar n(0ij)`, `bar n'(0ij)`, `tilde n(0ij)`, `tilde n'(0ij)`, each lexicographic | 3,117 | [r_polarizer.json](../../insulator/_engine/r_polarizer.json) |
+| `R5(r,s;n2,n2')` | `r(0i)`, `s(0i)`, `bar n(0ij)`, `bar n'(0ij)`, `tilde n(0ij)`, `tilde n'(0ij)`, each lexicographic | 3,117 | [r_polarizer.json](../../insulator/_engine/r_polarizer.json) |
 
 For `P5^Cartan`, each stored triple `(iz,ix,iy)` means
 `product(z[j] for j in iz) * x[ix] * y[iy]`; sum modulo two.
@@ -20,7 +20,7 @@ enabled in the operative array.
 Evaluate on any ordered five-simplex by induced vertex relabeling.
 The `R5` variables retain the two actual integer-sheet digits, including
 negative carries. Both kernels vanish with either sheet input zero and
-on normalized degeneracies. `R5` vanishes for `rho=0`.
+on normalized degeneracies. `R5` vanishes for `r=0`.
 
 The independent polynomial identities and degeneracy certificates are in
 [universal_certificates.json](../../formulas/universal_certificates.json).

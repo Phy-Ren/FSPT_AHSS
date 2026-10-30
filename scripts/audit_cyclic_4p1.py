@@ -21,6 +21,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from insulator import api as ci, e8
+from insulator.notation import legacy_metadata_view
 from scripts.classify import gap_literal, write_json
 
 
@@ -118,11 +119,11 @@ def native_witness_audit(records, gap="gap"):
 def audit(paths, gap="gap"):
     records, output = [], []
     for path in sorted(paths):
-        data = json.loads(path.read_text())
+        data = legacy_metadata_view(json.loads(path.read_text()))
         result, inputs, run = data["classification"], data["input"], data["run"]
         order = inputs["order"]
         assert inputs["family"] == "internal_cyclic" and inputs["dimension"] == 4
-        assert inputs["s"] == inputs["rho"] == 0 and inputs["omega"] == "0"
+        assert inputs["s"] == inputs["r"] == 0 and inputs["omega"] == "0"
         assert run["status"] == "complete" and run["exitCode"] == 0
         assert not result["physicalClassificationCertified"]
         assert result["incomingCohomology"] == {"sheet": [], "charge": []}

@@ -43,7 +43,7 @@ def input_record(factors):
     name = 'x'.join(map(str, factors))
     return {'id': 'internal_abelian_{}_4p1'.format(name), 'dimension': 4,
             'family': 'internal_abelian', 'referenceTarget': 'internal_abelian_' + name, 'factors': list(factors), 'order': math.prod(factors),
-            's': 0, 'rho': 0, 'omega': '0', 'background': {'s': 0, 'rho': 0, 'omega': '0'},
+            'schema_version': 2, 's': 0, 'r': 0, 'rho': 0, 'omega': '0', 'background': {'schema_version': 2, 's': 0, 'r': 0, 'rho': 0, 'omega': '0'},
             'physicalSpin': 'not_applicable', 'crystallineSpinConvention': 'not_assumed',
             'orderedFields': ['e_2', 'n_2', 'n_4', 'nu_5'],
             'intrinsicRowIncluded': False, 'intrinsicPair': [0, 0]}

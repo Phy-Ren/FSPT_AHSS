@@ -69,7 +69,7 @@ co:=U1ChargeObstructionCoordinates(c,2,H,HQ.generators[1]);;
 if c.chargePrimaryStats.nativeCalls<>0 or c.chargePrimaryStats.barFallbacks<>1 then Error("Stale callback certificate reused");fi;
 # An uncertified arbitrary context uses the checked bar route.
 base:=U1CyclicContext(4,0,0,0);;
-c:=U1NewContext(base.G,base.R,base.s,base.rho,base.omega,0);;
+c:=U1NewContext(base.G,base.R,base.s,base.r,base.omega,0);;
 H:=U1Cohomology(c,4,"U1s");;HQ:=U1Cohomology(c,2,"Zr");;
 co:=U1ChargeObstructionCoordinates(c,2,H,HQ.generators[1]);;
 if c.chargePrimaryStats.nativeCalls<>0 then Error("Uncertified context used native primary");fi;

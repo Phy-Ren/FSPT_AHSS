@@ -36,7 +36,7 @@ All gauge operations and all 2+1D/4+1D operations remain in the reference engine
 The compiler permits no symbolic truth-value branch. Its cup implementation
 reuses the reference geometry and omits only structurally constant zero terms;
 it never assumes an unknown expression vanishes. All coefficient signs remain
-runtime inputs and `s` and `rho` are independent. Scalar common-subexpression
+runtime inputs and `s` and `r` are independent. Scalar common-subexpression
 elimination does not interchange ordered cochain factors or group arguments.
 
 ## Arithmetic and execution

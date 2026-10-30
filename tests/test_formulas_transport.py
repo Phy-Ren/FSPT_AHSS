@@ -40,10 +40,10 @@ def fields(d,xs,variant):
     else:
         u=local(N,1,lambda *x:seed(x),vs,st)
         v=local(N,3,lambda *x:seed(x),vs,rt)
-        k=u.d();n=sym.B3.cup(u)+sym.rho1.cup(u.cup(k))+v.d()
+        k=u.d();n=sym.B3.cup(u)+sym.r1.cup(u.cup(k))+v.d()
         up=local(N,1,lambda *x:seed(x,1),vs,st)
         vp=local(N,3,lambda *x:seed(x,1),vs,rt)
-        kp=up.d();np=sym.B3.cup(up)+sym.rho1.cup(up.cup(kp))+vp.d()
+        kp=up.d();np=sym.B3.cup(up)+sym.r1.cup(up.cup(kp))+vp.d()
     return sym,k,n,kp,np,up,vp
 
 
@@ -60,9 +60,9 @@ class FormulaTransport(unittest.TestCase):
         U1_ROOT:="%s";;Read(Concatenation(U1_ROOT,"/gap/load.g"));;
         r:=(1,2,3,4);;m:=(2,4);; G:=Group(r,m);;
         pairs:=Cartesian([0..3],[0..1]);;elts:=List(pairs,x->r^x[1]*m^x[2]);;
-        idx:=g->Position(elts,g);;s:=g->pairs[idx(g)][1] mod 2;;rho:=g->pairs[idx(g)][2];;
+        idx:=g->Position(elts,g);;s:=g->pairs[idx(g)][1] mod 2;;r:=g->pairs[idx(g)][2];;
         alph:=function(g) if g=Identity(G) then return 0;fi;return (2*pairs[idx(g)][1]+3*pairs[idx(g)][2]-3)/7;end;;
-        c:=rec(G:=G,s:=s,rho:=rho);;c.omega:=function(g,h) return (-1)^(s(g)+rho(g))*alph(h)-alph(g*h)+alph(g);end;;
+        c:=rec(G:=G,s:=s,r:=r);;c.omega:=function(g,h) return (-1)^(s(g)+r(g))*alph(h)-alph(g*h)+alph(g);end;;
         seed:=function(xs,offset) local total,j;if Identity(G) in xs then return 0;fi;total:=0;for j in [1..Length(xs)] do total:=total+j*idx(xs[j]);od;return total mod 9-4+offset;end;;
         ss:=function(g,h) return s(g)*s(h)/2;end;;
         checked:=U1Add(c.omega,U1Scale(-1,ss));;B:=U1Coboundary(c,"Zt",checked);;
@@ -70,7 +70,7 @@ class FormulaTransport(unittest.TestCase):
         '''%(ROOT,out)
          code=pre
          for d,op,indices,variant in spec:
-          code+='variant:=%d;;c.omega:=function(g,h) return (-1)^(s(g)+rho(g))*alph(h)-alph(g*h)+alph(g)+variant*s(g)*s(h)/2;end;;checked:=U1Add(c.omega,U1Scale(-1,ss));;B:=U1Coboundary(c,"Zt",checked);;\n'%variant
+          code+='variant:=%d;;c.omega:=function(g,h) return (-1)^(s(g)+r(g))*alph(h)-alph(g*h)+alph(g)+variant*s(g)*s(h)/2;end;;checked:=U1Add(c.omega,U1Scale(-1,ss));;B:=U1Coboundary(c,"Zt",checked);;\n'%variant
           if d==3:
            code+='u:=function() return -2;end;;v:=function(xs...) return seed(xs,0);end;;up:=function() return 3;end;;vp:=function(xs...) return seed(xs,1);end;;\n'
           else:code+='u:=function(xs...) return seed(xs,0);end;;v:=function(xs...) return seed(xs,0);end;;up:=function(xs...) return seed(xs,1);end;;vp:=function(xs...) return seed(xs,1);end;;\n'
@@ -79,8 +79,8 @@ class FormulaTransport(unittest.TestCase):
           code+='n:=U1Add(U1Cup(c,3,B,"Zt",%d,u,"Zs",0,false),U1Coboundary(c,"Zr",v));;\n'%(d-3)
           code+='np:=U1Add(U1Cup(c,3,B,"Zt",%d,up,"Zs",0,false),U1Coboundary(c,"Zr",vp));;\n'%(d-3)
           if d==4:
-           code+='n:=U1Add(n,U1Cup(c,1,rho,"Zr",3,U1Cup(c,1,u,"Zs",2,k,"Zs",0,false),"Z",0,false));;\n'
-           code+='np:=U1Add(np,U1Cup(c,1,rho,"Zr",3,U1Cup(c,1,up,"Zs",2,kp,"Zs",0,false),"Z",0,false));;\n'
+           code+='n:=U1Add(n,U1Cup(c,1,r,"Zr",3,U1Cup(c,1,u,"Zs",2,k,"Zs",0,false),"Z",0,false));;\n'
+           code+='np:=U1Add(np,U1Cup(c,1,r,"Zr",3,U1Cup(c,1,up,"Zs",2,kp,"Zs",0,false),"Z",0,false));;\n'
           extras='rec(sheet_prime:=kp,charge_prime:=np)' if op=='product' else ('rec(sheet_parameter:=up,charge_parameter:=vp)' if op=='gauge' else 'rec()')
           comp='"phase"' if op in ('product','gauge') else 'fail'
           code+='f:=U1Formula(c,"%s",%d,rec(sheet:=k,charge:=n),%s,%s,%d);;\n'%(op,d,extras,comp,len(indices))

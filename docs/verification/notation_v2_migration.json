@@ -1,0 +1,86 @@
+{
+  "baseline_commit": "45c37e933a048740338788fba73e26939ca3a265",
+  "canonical_characters": {
+    "r": "charge reversal",
+    "rho": "circle automorphism; r XOR s",
+    "s": "antiunitarity"
+  },
+  "catalogue": {
+    "current_backgrounds": 578,
+    "display_rows": 742,
+    "display_tables": 20,
+    "report": "insulator_catalog/notation_migration.json",
+    "unchanged_group_values": 4878
+  },
+  "compiled_arithmetic": {
+    "comparison": "Each arithmetic opcode, operand, output index and denominator equals baseline; only field name rho -> r changes",
+    "native_vm_cpp": "unchanged; compiled and exercised by the full native/fallback tests",
+    "product_nodes": 3391,
+    "source_nodes": 1876
+  },
+  "historical_assets": "No tracked raw result, immutable source fixture, reference vector, log or witness was rewritten; collectors adapt metadata only in memory",
+  "pre_migration_comparison": {
+    "canonical_and_explicit_legacy_outputs": "all exactly equal to baseline",
+    "exact_cases": 60,
+    "fixture": "tests/fixtures/notation_legacy_45c37e9.json",
+    "fixture_sha256": "ad3ea01adf67201a39f018f8569757069f5b6e6b25ce79c58f43837fbcaac6e4",
+    "implementation": "Unmodified git45c37e9 tree executed in a separate checkout",
+    "independent_sign_pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "lower_towers": "completed over the integers; antiunitary 2D uniform CI set to zero",
+    "operations": [
+      "source",
+      "integer_obstruction",
+      "product",
+      "integer_product",
+      "gauge"
+    ],
+    "spatial_dimensions": [
+      2,
+      3,
+      4
+    ]
+  },
+  "protocol": {
+    "canonical_version": 2,
+    "legacy": "Explicit adapter or schema_version=1 with notation=legacy-charge-rho",
+    "supplied_rho": "validated, never silently replaced",
+    "unversioned_policy": "Explicit s,r means v2; legacy rho-only is rejected",
+    "version_type": "exact integer; floats, bools and unknown versions rejected"
+  },
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "tests": {
+    "final_boundary_patch": {
+      "change": "Reject invalid schema versions before early-return ping/batch/cache operations",
+      "command": "python -m unittest discover -s tests -p 'test_notation_migration.py'",
+      "passed": true,
+      "seconds": 2.213,
+      "skipped": 0,
+      "tests": 5
+    },
+    "full_suite": {
+      "command": "python -m unittest discover -s tests",
+      "passed": true,
+      "seconds": 109.772,
+      "skipped": 0,
+      "tests": 196
+    }
+  },
+  "unresolved_failures": []
+}

@@ -4,7 +4,7 @@ Date: 2026-10-15 UTC. This is separate research on an **enlarged** theory with i
 
 ## 1. Statement and exact scope
 
-Take $s_1=\rho_1=0$: the symmetry is unitary and preserves charge. Its physical central-circle extension has class $\omega\in H^2(G,\mathbb R/\mathbb Z)$ and integral Bockstein
+Take $s_1=r_1=0$: the symmetry is unitary and preserves charge. Its physical central-circle extension has class $\omega\in H^2(G,\mathbb R/\mathbb Z)$ and integral Bockstein
 
 $$B=[d\omega_2^{\mathbb R}]\in H^3(G,\mathbb Z).$$
 
@@ -90,7 +90,7 @@ $$ (e_2,n_2)\longmapsto(e_2,n_2)+k_2v(r).$$
 
 There is no degree-minus-one gauge for $r_0$. These statements give a compatible first-stage representative and its additive/gauge behavior. They do not supply the remaining charge and phase completions or their stacking twisters in the enlarged theory.
 
-For signed backgrounds, restricting to any subgroup on which both $s_1$ and $\rho_1$ vanish must recover this theorem. This is a rigorous constraint on a future signed formula. It does not determine possible sign-dependent torsion operations; replacing $B$ by a twisted Bockstein in the displayed matrix alone is not asserted to be the complete signed answer.
+For signed backgrounds, restricting to any subgroup on which both $s_1$ and $r_1$ vanish must recover this theorem. This is a rigorous constraint on a future signed formula. It does not determine possible sign-dependent torsion operations; replacing $B$ by a twisted Bockstein in the displayed matrix alone is not asserted to be the complete signed answer.
 
 ## 5. Provenance and boundary
 

@@ -33,8 +33,11 @@ the gauge actually used.
 `Cochain(N, p, values, sign)` is a degree-p exact local cochain on an ordered
 N-simplex. `values` maps increasing vertex tuples to integers or `Fraction`;
 omitted faces have value zero. `sign` assigns one character bit to each vertex.
-The independent signs are `s1` for sheets/phases, `rho1` for charge, and
-`rho1+s1` for the extension. `Symmetry` takes the **unshifted** extension lift.
+The signs are `s1` for sheets/phases, `r1` for charge, and
+`rho1=r1+s1` for the extension.
+`Symmetry` stores the charge character as `r1`; its `rho1` property gives the
+circle character.
+It takes the **unshifted** extension lift.
 
 The local evaluator returns cochain representatives, not a cohomology verdict.
 The global solver must form the permitted quotient, include incoming images,
@@ -46,14 +49,20 @@ Run `python scripts/formula_worker.py`. Each input line is one JSON object and
 produces one response line. The process survives a malformed request. It does
 not require a finite multiplication table or another repository checkout.
 
-Required fields for a local evaluation are `op`, `dimension` (2, 3, or 4) and
-`simplex_dimension`. Vertex arrays `s` and `rho` default to zero. Cochain fields
+Required fields for a current local evaluation are `op`, `dimension` (2, 3, or 4),
+`simplex_dimension`, and explicit vertex arrays `s,r`.
+The optional `schema_version` tag defaults to 2; current examples write it explicitly.
+The optional circle array `rho` must equal `r XOR s` pointwise; if omitted,
+it is derived from those two arrays.
+Old `rho`-only requests without `r` are rejected rather than guessed to use an old convention.
+The [input guide](../NOTATION_AND_INPUTS.md) specifies explicit legacy conversion.
+Cochain fields
 are sparse dictionaries with comma-separated face indices or dense arrays in
 lexicographic face order. Scalars are integers or rational strings; floats are
 rejected. Omitted cochain fields are zero.
 
 ```json
-{"op":"d2","dimension":2,"simplex_dimension":4,"charge":{"0,1,2":"1","0,1,4":"1","0,3,4":"1","1,2,3":"1","2,3,4":"1"},"return":"top"}
+{"schema_version":2,"op":"d2","dimension":2,"simplex_dimension":4,"s":[0,0,0,0,0],"r":[0,0,0,0,0],"rho":[0,0,0,0,0],"charge":{"0,1,2":"1","0,1,4":"1","0,3,4":"1","1,2,3":"1","2,3,4":"1"},"return":"top"}
 ```
 
 The background field is `omega`; lower inputs are `sheet` and `charge`. A product

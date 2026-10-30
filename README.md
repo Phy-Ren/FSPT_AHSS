@@ -9,6 +9,8 @@ results.
   organized by spacetime dimension, physical spin, and response sector.
 - **[Formula guide](docs/FORMULA_GUIDE.md):** the E8-first four-data tower,
   obstruction equations, stacking twisters, and gauge transformations.
+- **[Notation and current inputs](docs/NOTATION_AND_INPUTS.md):** `rho1` acts on
+  the charge circle, `s1` records antiunitarity, and `r1=rho1+s1` reverses charge.
 - **[Provenance and scope](results/current/PROVENANCE.md):** accepted inputs,
   source versions, calculation records, and the limits of each comparison.
 - **[3+1D mismatch justification](docs/POINT3_MISMATCH_JUSTIFICATION.md):**
@@ -63,8 +65,14 @@ the supplied formula packages and their normalization.
 
 The local API uses `E8State(e_p,n_p,n_p2,nu_p3)`, with one shared phase.
 Integer lifts, signed coefficients, source terms, stacking corrections, and
-changes of representatives are transported together. Independent actions
-`s1`, `rho1`, and `rho1+s1` remain explicit.
+changes of representatives are transported together. The coefficient actions
+`s1` (sheets and phase), `r1` (charge), and `rho1` (extension) remain explicit,
+with `r1=rho1+s1` modulo two.
+Current inputs use `schema_version:2`, explicit `s,r`, and an optional `rho`
+that is strictly checked against `r XOR s`; generated backgrounds emit all three.
+If the version tag is omitted, explicit `s,r` identifies the current convention.
+Historical charge-`rho` records require the explicit conversion described in
+the [migration guide](docs/NOTATION_AND_INPUTS.md#historical-inputs).
 
 The global CI classifier retains completed states, incoming gauge
 identifications, arbitrary root relations, and an integer presentation.

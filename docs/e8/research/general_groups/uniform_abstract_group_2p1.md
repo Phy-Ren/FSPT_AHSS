@@ -69,7 +69,7 @@ currently retained CI evaluator already realizes every transferred class.
 
 If `s` is nontrivial, the invariant uniform coefficient group is zero,
 so neither uniform integer response is allowed. The criterion here is
-`s`, not the `rho` criterion for intrinsic 4+1D responses.
+`s`, not the `r` criterion for intrinsic 4+1D responses.
 
 ## Consequences within each response sector
 

@@ -13,6 +13,7 @@ import json
 import sys
 
 from . import api as U
+from .notation import character_signs, migrate_legacy_request, LEGACY_NOTATION
 
 
 def exact(value):
@@ -63,7 +64,9 @@ def encode(cochain, top=False):
 
 def _evaluate(request):
     if request['op'] == 'ping':
-        return {'protocol': 1, 'theory': 'U1f-insulator', 'convention': 'sheet-linear',
+        return {'protocol': 2, 'schema_version': 2, 'theory': 'U1f-insulator',
+                'characters': {'s': 'antiunitarity', 'r': 'charge reversal', 'rho': 'r XOR s; circle action'},
+                'convention': 'sheet-linear',
                 'cubic': '1/6', 'epsilon': 0, 'dimensions': [2, 3, 4]}
     if request['op'] == 'batch':
         return [evaluate(item) for item in request['requests']]
@@ -73,16 +76,12 @@ def _evaluate(request):
     N = request['simplex_dimension']
     if not isinstance(N, int) or N < 0:
         raise ValueError('simplex_dimension must be a nonnegative integer.')
-    s, rho = request.get('s', [0] * (N + 1)), request.get('rho', [0] * (N + 1))
-    for sign in (s, rho):
-        if len(sign) != N + 1 or any(bit not in (0, 1) for bit in sign):
-            raise ValueError('Each coefficient sign must contain one bit per vertex.')
-    extension_sign = [a ^ b for a, b in zip(s, rho)]
-    symmetry = U.Symmetry(decode(request.get('omega', {}), N, 2, extension_sign),
-                          U.char(N, s).ret(s), U.char(N, rho).ret(rho))
+    s, r, rho = character_signs(request, N + 1)
+    symmetry = U.Symmetry(decode(request.get('omega', {}), N, 2, rho),
+                          U.char(N, s).ret(s), U.char(N, r).ret(r))
     get = lambda key, degree, sign: decode(request.get(key, {}), N, degree, sign)
     sheet = get('sheet', d - 2, s)
-    charge = get('charge', d, rho)
+    charge = get('charge', d, r)
     op = request['op']
     validate = request.get('validate', True)
     if not isinstance(validate, bool):
@@ -92,15 +91,15 @@ def _evaluate(request):
     elif op in ('integer_obstruction', 'd3'):
         result = U.integer_obstruction(symmetry, d, sheet)
     elif op in ('charge_source', 'd2'):
-        result = U.charge_source(symmetry, get('charge', request.get('charge_degree', d), rho))
+        result = U.charge_source(symmetry, get('charge', request.get('charge_degree', d), r))
     elif op == 'charge_product':
         p = request.get('charge_degree', d)
-        result = U.charge_product(symmetry, get('charge', p, rho), get('charge_prime', p, rho))
+        result = U.charge_product(symmetry, get('charge', p, r), get('charge_prime', p, r))
     elif op == 'charge_gauge':
         p = request.get('charge_degree', d)
-        result = U.charge_gauge(symmetry, get('charge', p, rho), get('charge_parameter', p - 1, rho))
+        result = U.charge_gauge(symmetry, get('charge', p, r), get('charge_parameter', p - 1, r))
     elif op in ('product', 'integer_product', 'lower_exchange'):
-        sheet_prime, charge_prime = get('sheet_prime', d - 2, s), get('charge_prime', d, rho)
+        sheet_prime, charge_prime = get('sheet_prime', d - 2, s), get('charge_prime', d, r)
         if op == 'integer_product':
             result = U.integer_product(symmetry, d, sheet, sheet_prime)
         elif op == 'lower_exchange':
@@ -110,17 +109,17 @@ def _evaluate(request):
                 symmetry, d, sheet, charge, sheet_prime, charge_prime, validate=validate)))
     elif op == 'gauge':
         u = None if d == 2 else get('sheet_parameter', d - 3, s)
-        v = get('charge_parameter', d - 1, rho)
+        v = get('charge_parameter', d - 1, r)
         result = dict(zip(('sheet', 'charge', 'phase'), U.gauge(
             symmetry, d, sheet, charge, u, v, validate=validate)))
     elif op in ('background_lift', 'background_section'):
         kind = 'lift' if op == 'background_lift' else 'section'
-        parameter = get('background_parameter', 2 if kind == 'lift' else 1, extension_sign)
+        parameter = get('background_parameter', 2 if kind == 'lift' else 1, rho)
         new_sym, k, n, phase = U.background_change(symmetry, d, sheet, charge, parameter,
                                                   kind, validate=validate)
         result = {'omega': new_sym.omega2_real, 'sheet': k, 'charge': n, 'phase': phase}
     elif op == 'differential':
-        sign = {'s': s, 'rho': rho, 'extension': extension_sign,
+        sign = {'s': s, 'r': r, 'rho': rho,
                 'trivial': [0] * (N + 1)}[request.get('coefficient', 'trivial')]
         result = get('cochain', request['degree'], sign).d()
     else:
@@ -142,6 +141,13 @@ def _cached_evaluation(canonical_request):
 
 def evaluate(request):
     """Reuse identical local data independently of group-tuple names and IDs."""
+    version = request.get('schema_version', 2)
+    if type(version) is not int or version not in (1, 2):
+        raise ValueError('schema_version must be the integer 2, or explicit legacy version 1.')
+    if request.get('schema_version') == 1:
+        if request.get('notation') != LEGACY_NOTATION:
+            raise ValueError('schema_version=1 requires notation="legacy-charge-rho".')
+        request = migrate_legacy_request(request)
     if request.get('op') == 'cache_info':
         return dict(_cached_evaluation.cache_info()._asdict())
     if request.get('op') == 'cache_clear':

@@ -301,7 +301,7 @@ def calculate(rank):
                                "CIGaugeFreeRank": torus.basis[1].cols,
                                "chargeGaugeFreeRank": torus.basis[3].cols,
                                "phaseGaugeFreeRank": torus.basis[4].cols,
-                               "action": "Trivial on periods: B=rho=0 and C^5(T^r,R/Z)=0; complete nonclosed gauge images retained."},
+                               "action": "Trivial on periods: B=r=0 and C^5(T^r,R/Z)=0; complete nonclosed gauge images retained."},
         "coordinateStacking": {"orderedFields": ["e_2", "n_2", "n_4", "nu_5"],
                                "sheetPolarizer": polarizer,
                                "rawProduct": "(e+f,n+m,q+t+n wedge m)",
@@ -311,7 +311,7 @@ def calculate(rank):
                                "integerPower": "(k e,k n,k q+binomial(k,2) n wedge n), for every k in Z",
                                "freeKernelProof": "(e,n,q) -> (e,n,Q) is an explicit integral bijection and homomorphism. The unimodular kernel certificates prove every state and every incoming gauge are represented."},
         "modelClassificationComplete": True, "physicalClassificationCertified": False,
-        "scope": "Complete four-data model on the finite K(Z^r,1), with s=rho=omega=0 and intrinsic pair zero; physical stable-splitting comparison is separate."}
+        "scope": "Complete four-data model on the finite K(Z^r,1), with s=r=omega=0 and intrinsic pair zero; physical stable-splitting comparison is separate."}
     evidence = {"schema": "u1-translation-4p1-simplicial-certificate-v1", "resolution": torus.certificate(),
                 "completedIntegerProducts": products, "apiChecks": checks,
                 "terminalTargets": {"C5": 0, "C6": 0,

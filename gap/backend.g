@@ -47,8 +47,8 @@ Read(Concatenation(U1_ROOT,"/gap/backend_bar.g"));
 
 BindGlobal("U1CoefficientAction",function(c,coeff,g)
   if coeff="Zs" or coeff="U1s" then return (-1)^c.s(g); fi;
-  if coeff="Zr" then return (-1)^c.rho(g); fi;
-  if coeff="Zt" then return (-1)^(c.s(g)+c.rho(g)); fi;
+  if coeff="Zr" then return (-1)^c.r(g); fi;
+  if coeff="Zt" then return (-1)^(c.s(g)+c.r(g)); fi;
   if coeff="Z" or coeff="F2" then return 1; fi;
   Error("Unknown coefficient system: ",coeff);
 end);

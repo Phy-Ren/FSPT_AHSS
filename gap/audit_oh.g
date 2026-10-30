@@ -56,7 +56,7 @@ BindGlobal("U1AuditOh",function(saved)
     indices:=List(target.matrices,m->Position(source.matrices,m));
     if fail in indices then Error("The target catalog is not a literal geometric subgroup");fi;
     for i in [1..target.order] do
-      if target.s[i]<>source.s[indices[i]] or target.rho[i]<>source.rho[indices[i]] then Error("Subgroup signs differ");fi;
+      if target.s[i]<>source.s[indices[i]] or target.r[i]<>source.r[indices[i]] then Error("Subgroup signs differ");fi;
       for j in [1..target.order] do
         if indices[target.multiplication[i][j]+1]<>source.multiplication[indices[i]][indices[j]]+1 or
           target.omega[i][j]<>source.omega[indices[i]][indices[j]] then Error("Subgroup multiplication/background differs");fi;

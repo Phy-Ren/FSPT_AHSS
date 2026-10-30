@@ -13,15 +13,15 @@ supports them to different degrees.
 **Definition and convention.**
 
 The symmetry obeys `exp(i pi Q)=(-1)^F`. Write `G=G_f/U(1)^f`, with
-`gQg^-1=(-1)^rho1(g) Q` and antiunitarity character `s1`. The action on the
-charge circle is `rho1+s1`, not `rho1` alone. The extension is represented by
+`gQg^-1=(-1)^r1(g) Q` and antiunitarity character `s1`. The action on the
+charge circle is `rho1`, not `r1` alone. The extension is represented by
 `omega2` with that coefficient action and by a specified real lift.
 
 | Spacetime | CI decoration | Localized charge | Additive phase |
 |---|---|---|---|
-| 2+1D | `n0` in `C^0(G,Z_s1)` | `n2` in `C^2(G,Z_rho1)` | `nu3` in `C^3(G,R/Z_s1)` |
-| 3+1D | `n1` in `C^1(G,Z_s1)` | `n3` in `C^3(G,Z_rho1)` | `nu4` in `C^4(G,R/Z_s1)` |
-| 4+1D | `n2` in `C^2(G,Z_s1)` | `n4` in `C^4(G,Z_rho1)` | `nu5` in `C^5(G,R/Z_s1)` |
+| 2+1D | `n0` in `C^0(G,Z_s1)` | `n2` in `C^2(G,Z_r1)` | `nu3` in `C^3(G,R/Z_s1)` |
+| 3+1D | `n1` in `C^1(G,Z_s1)` | `n3` in `C^3(G,Z_r1)` | `nu4` in `C^4(G,R/Z_s1)` |
+| 4+1D | `n2` in `C^2(G,Z_s1)` | `n4` in `C^4(G,Z_r1)` | `nu5` in `C^5(G,R/Z_s1)` |
 
 These are cochains subject to the dimensional equations. The table does not
 declare every charge field closed. A complete state includes its phase
@@ -61,9 +61,9 @@ In 3+1D the archive verifies the following retained-model results:
 
 | Background on `G=C2`, with character `alpha` | Complete-root result |
 |---|---|
-| AIII: `rho1=s1=alpha`, `omega2=0` | `Z8`, with `4X=(0,0,alpha^4/2)` |
-| AII: `rho1=0`, `s1=alpha`, `omega2=alpha^2/2` | `Z2 x Z2`; the CI root squares to zero and the phase root survives |
-| AI: `rho1=0`, `s1=alpha`, `omega2=0` | Trivial; the odd CI root is obstructed and the remaining phase is an incoming charge image |
+| AIII: `r1=s1=alpha`, `omega2=0` | `Z8`, with `4X=(0,0,alpha^4/2)` |
+| AII: `r1=0`, `s1=alpha`, `omega2=alpha^2/2` | `Z2 x Z2`; the CI root squares to zero and the phase root survives |
+| AI: `r1=0`, `s1=alpha`, `omega2=0` | Trivial; the odd CI root is obstructed and the remaining phase is an incoming charge image |
 
 These labels specify operator symmetries: AIII antiunitarity reverses
 charge; AII and AI preserve charge and have squares `(-1)^F` and `1`,

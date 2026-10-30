@@ -37,7 +37,7 @@ class StopOwnedSingletonTests(unittest.TestCase):
         for index, case in enumerate(self.cases):
             folder = self.root / case
             folder.mkdir()
-            data = {'id': case, 'dimension': 3, 's': [0, 1], 'rho': [0, 1]}
+            data = {'id': case, 'dimension': 3, 's': [0, 1], 'r': [0, 1]}
             self.write(folder / 'input.json', data)
             driver_case = self.cases[0] if index < 2 else case
             command = [sys.executable, str(self.root / driver_case / 'driver.g')]

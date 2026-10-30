@@ -18,7 +18,7 @@ c0:=U1CyclicContext(2,0,0,0);;
 q:=function(g,h)
   return QuoInt(g!.exponents[1]+h!.exponents[1],2);
 end;;
-c1:=U1NewContext(c0.G,c0.R,c0.s,c0.rho,
+c1:=U1NewContext(c0.G,c0.R,c0.s,c0.r,
   function(g,h) return q(g,h)/2;end,0);;
 g:=GeneratorsOfGroup(c0.G)[1];;
 state:=rec(sheet:=U1Zero,charge:=q,phase:=U1Zero);;

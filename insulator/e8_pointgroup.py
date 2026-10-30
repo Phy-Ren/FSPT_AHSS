@@ -233,7 +233,7 @@ def _extend_classification(result: dict, neutral_computation, recovery_root=None
     return {
         "theory": "U(1)^f insulator", "spatialDimension": 3,
         "orderedFields": ["e_1", "n_1", "n_3", "nu_4"],
-        "coefficientActions": ["s", "s", "rho", "s"],
+        "coefficientActions": ["s", "s", "r", "s"],
         "model": MODEL,
         "scope": "E8-inclusive selected 3+1D four-data model, with the CI sector as computed",
         "neutralE8Included": True,

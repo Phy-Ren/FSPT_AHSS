@@ -11,7 +11,7 @@ BindGlobal("U1AbelianFourContext",function(factors)
   if List(GeneratorsOfGroup(G),Order)<>factors then Error("Abelian coordinate orders changed");fi;
   R:=U1FiniteHolonomyResolution(G,7);
   c:=U1NewContext(G,R,U1Zero,U1Zero,U1Zero,0);
-  c.backgroundClosureCertificate:=rec(actions:=[c.s,c.rho,c.omega],integralTwistedCoboundary:=true,halfIntegralOmega:=true);
+  c.backgroundClosureCertificate:=rec(actions:=[c.s,c.r,c.omega],integralTwistedCoboundary:=true,halfIntegralOmega:=true);
   c.fourCompletionChecks:=0;c.completedStateChecks:=0;c.reductionWitnesses:=[];
   return c;
 end);
@@ -37,7 +37,7 @@ end);
 BindGlobal("U1AbelianFourChargeClass",function(c,H,q,mode)
   local fast,reference;
   if not mode in ["bar","native","compare"] then Error("Unknown abelian charge-primary mode");fi;
-  if c.s<>U1Zero or c.rho<>U1Zero or c.omega<>U1Zero or c.vcd<>0 then
+  if c.s<>U1Zero or c.r<>U1Zero or c.omega<>U1Zero or c.vcd<>0 then
     Error("Unsigned abelian native charge class requires the exact trivial background");fi;
   if Length(q)<>Dimension(c.R)(4) or not ForAll(q,IsInt) or
     ForAny(U1ApplyDifferential(c,4,"Zr",q),x->x<>0) then
@@ -185,7 +185,7 @@ BindGlobal("U1AbelianFourData",function(factors,options...)
   fc:=U1Filtration(relations,total,np+nq,ns);fe:=U1Filtration(relations,total,np+nq+ns,ns);
   perm:=Concatenation([np+nq+ns+1..total],[np+nq+1..np+nq+ns],[np+1..np+nq],[1..np]);
   result:=rec(theory:="U(1)^f insulator",spatialDimension:=4,orderedFields:=["e_2","n_2","n_4","nu_5"],
-    group:=rec(family:="internal_abelian",factors:=factors),background:=rec(s:=0,rho:=0,omega:=0),
+    group:=rec(family:="internal_abelian",factors:=factors),background:=rec(s:=0,r:=0,omega:=0),
     scope:="Complete original four-data relative model for unsigned commuting finite abelian products; intrinsic pair excluded",
     physicalClassificationCertified:=false,physicalScopeCaveat:="Independent bordism comparison remains separate from this formula computation",
     torsion:=orders,freeRank:=total-S.rank,actualGroupOrder:=Product(orders),presentationGeneratorCount:=total,

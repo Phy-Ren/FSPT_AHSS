@@ -37,7 +37,7 @@ if exactNonzero=U1Zero or exactNonzero(g,g)<>2 then Error("Exact nonzero cochain
 # Geometry cache agrees with old inverse-prefix transport for every face.
 r:=(1,2,3,4);;m:=(2,4);;G:=Group(r,m);;
 elts:=Elements(G);;idx:=x->Position(elts,x);;
-cc:=rec(G:=G,s:=x->(1-SignPerm(x))/2,rho:=x->0,omega:=function(x,y) return (idx(x)-2*idx(y))/7;end);;
+cc:=rec(G:=G,s:=x->(1-SignPerm(x))/2,r:=x->0,omega:=function(x,y) return (idx(x)-2*idx(y))/7;end);;
 f:=function(xs...) return Sum([1..Length(xs)],i->i*idx(xs[i]))-3;end;;
 checks:=0;;
 for len in [1..6] do

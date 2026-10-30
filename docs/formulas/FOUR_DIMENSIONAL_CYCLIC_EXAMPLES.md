@@ -3,7 +3,7 @@
 The accepted calculations cover the orders listed in the
 [current cyclic tables](../../results/current/4p1d/internal_cyclic/intrinsic_zero.md)
 for a unitary internal `C_N` commuting with `U(1)^f`.
-Their backgrounds are exactly `s=rho=omega=0`.
+Their backgrounds are exactly `s=r=omega=0`.
 The original four-data model is ordered `(e_2,n_2,n_4,nu_5)`. A cyclic
 label here does not specify a crystalline rotation or physical spin lift.
 
@@ -26,7 +26,7 @@ H^2(C_N,\mathbb Z)=H^4(C_N,\mathbb Z)
 \qquad H^6(C_N,\mathbb R/\mathbb Z)=0.
 ```
 
-The integer source vanishes identically because `B3=rho=0`. The terminal
+The integer source vanishes identically because `B3=r=0`. The terminal
 target vanishes, so both sheet roots and the charge root admit phase
 completions. Closed incoming sheet and charge parameters are classified
 by `H^1(C_N,Z)=H^3(C_N,Z)=0`; there is no additional incoming
@@ -266,7 +266,7 @@ defines a natural group section of the restriction map, and
 ```
 
 The all-intrinsic table uses exactly this section. Substitution into the
-reviewed opened-sheet equations at `s=rho=omega=0` gives `B3=0` and
+reviewed opened-sheet equations at `s=r=omega=0` gives `B3=0` and
 allows `e2=n2=n4=nu5=0` for either unit intrinsic root. This is a direct
 zero-input check plus the physical section argument; it is not an
 execution of a general opened-intrinsic cochain solver. The pair is not

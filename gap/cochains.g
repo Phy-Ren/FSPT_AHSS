@@ -109,9 +109,9 @@ DeclareGlobalFunction("U1LocalFieldGeometry");
 # prefixes on every face. Contexts for paired spins do not share this cache.
 BindGlobal("U1FormulaGeometry",function(c,xs)
   local key,geom,g,i,j;
-  if not IsBound(c.formulaGeometryCache) or c.formulaGeometryBackground<>[c.s,c.rho,c.omega] then
+  if not IsBound(c.formulaGeometryCache) or c.formulaGeometryBackground<>[c.s,c.r,c.omega] then
     c.formulaGeometryCache:=NewDictionary([1],true);c.formulaGeometryCount:=0;c.formulaGeometryHits:=0;c.formulaGeometryFlushes:=0;
-    c.formulaGeometryBackground:=[c.s,c.rho,c.omega];
+    c.formulaGeometryBackground:=[c.s,c.r,c.omega];
   fi;
   key:=U1Key(xs);geom:=LookupDictionary(c.formulaGeometryCache,key);
   if geom<>fail then c.formulaGeometryHits:=c.formulaGeometryHits+1;return geom;fi;
@@ -121,7 +121,7 @@ BindGlobal("U1FormulaGeometry",function(c,xs)
     for j in [i+1..Length(xs)+1] do g:=g*xs[j-1];geom.edges[i][j]:=g;od;
   od;
   for j in [2..Length(xs)+1] do Add(geom.vs,geom.edges[1][j]);od;
-  geom.s:=List(geom.vs,c.s);geom.rho:=List(geom.vs,c.rho);
+  geom.s:=List(geom.vs,c.s);geom.r:=List(geom.vs,c.r);
   geom.omega:=U1LocalFieldGeometry(c,2,c.omega,geom);
   if c.formulaGeometryCount>=8192 then
     c.formulaGeometryCache:=NewDictionary([1],true);c.formulaGeometryCount:=0;c.formulaGeometryFlushes:=c.formulaGeometryFlushes+1;
@@ -152,7 +152,8 @@ BindGlobal("U1Formula",function(c,op,d,state,extra,component,degree)
     if Length(xs)<>degree then Error("formula arity mismatch");fi;
     if Identity(c.G) in xs then return 0;fi;
     geom:=U1FormulaGeometry(c,xs);
-    request:=rec(op:=op,dimension:=d,simplex_dimension:=degree,s:=geom.s,rho:=geom.rho,
+    request:=rec(schema_version:=2,op:=op,dimension:=d,simplex_dimension:=degree,s:=geom.s,r:=geom.r,
+      rho:=List([1..Length(geom.s)],i->(geom.s[i]+geom.r[i]) mod 2),
       omega:=geom.omega,sheet:=U1LocalFieldGeometry(c,d-2,state.sheet,geom),charge:=U1LocalFieldGeometry(c,d,state.charge,geom));
     if component<>fail then request.output_component:=component;fi;
     for name in RecNames(extra) do

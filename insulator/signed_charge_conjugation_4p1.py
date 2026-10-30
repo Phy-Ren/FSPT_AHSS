@@ -1,8 +1,8 @@
 """Complete intrinsic-zero four-data calculation on the normalized C2 bar complex.
 
 There is one nondegenerate simplex (c,...,c) in every degree. A normalized
-cochain is therefore one scalar, and d_chi in degree p is
-(-1)^chi + (-1)^(p+1). All source, product and joint-gauge operations below
+cochain is therefore one scalar, and d_alpha in degree p is
+(-1)^alpha + (-1)^(p+1). All source, product and joint-gauge operations below
 are evaluated by the adopted exact engine, including their shared phase.
 This is a global computation for the four specified backgrounds, not a
 general 4+1D classifier or a physical-spectrum identification theorem.
@@ -20,16 +20,16 @@ from . import e8
 
 
 CASES = {
-    "H_plus": {"s": 0, "rho": 1, "omega_half": 0,
+    "H_plus": {"s": 0, "r": 1, "omega_half": 0,
                "family": "charge_conjugation", "generator_square": "+1",
                "referenceTarget": "unitary_charge_conjugation_Hplus"},
-    "H_minus": {"s": 0, "rho": 1, "omega_half": 1,
+    "H_minus": {"s": 0, "r": 1, "omega_half": 1,
                 "family": "charge_conjugation", "generator_square": "(-1)^F",
                 "referenceTarget": "unitary_charge_conjugation_Hminus"},
-    "AI_relative": {"s": 1, "rho": 0, "omega_half": 0,
+    "AI_relative": {"s": 1, "r": 0, "omega_half": 0,
                     "family": "time_reversal", "generator_square": "+1",
                     "referenceTarget": "time_reversal_AI"},
-    "AII_relative": {"s": 1, "rho": 0, "omega_half": 1,
+    "AII_relative": {"s": 1, "r": 0, "omega_half": 1,
                      "family": "time_reversal", "generator_square": "(-1)^F",
                      "referenceTarget": "time_reversal_AII"},
 }
@@ -87,10 +87,10 @@ class C2FourData:
             raise ValueError("Unknown signed C2 background: " + case)
         self.case = case
         self.data = CASES[case]
-        self.s, self.rho, self.k = (self.data[key] for key in ("s", "rho", "omega_half"))
+        self.s, self.r, self.k = (self.data[key] for key in ("s", "r", "omega_half"))
         self.symmetry = ci.Symmetry(
-            self.cochain(2, Fraction(self.k, 2), self.s ^ self.rho),
-            self.cochain(1, self.s, self.s), self.cochain(1, self.rho, self.rho))
+            self.cochain(2, Fraction(self.k, 2), self.s ^ self.r),
+            self.cochain(1, self.s, self.s), self.cochain(1, self.r, self.r))
         self.counts = {"normalizationFaceChecks": 0, "sourceEvaluations": 0,
                        "productEvaluations": 0, "gaugeEvaluations": 0}
 
@@ -124,7 +124,7 @@ class C2FourData:
     def embed(self, state):
         return e8.State(self.cochain(2, state.e, self.s),
                         self.cochain(2, state.n, self.s),
-                        self.cochain(4, state.charge, self.rho),
+                        self.cochain(4, state.charge, self.r),
                         self.cochain(5, state.phase, self.s))
 
     def decode(self, state):
@@ -141,14 +141,14 @@ class C2FourData:
         self.counts["sourceEvaluations"] += 1
         return self.scalar(e8.source(self.symmetry, 4, self.cochain(2, e, self.s),
                                     self.cochain(2, n, self.s),
-                                    self.cochain(4, charge, self.rho)), phase=True)
+                                    self.cochain(4, charge, self.r)), phase=True)
 
     def completions(self, e, n, charge=None):
         """All phase cohomology choices after solving the actual lower source."""
         if differential(2, self.s) * e or differential(2, self.s) * n:
             return []
         obstruction = self.integer_source(n)
-        delta = differential(4, self.rho)
+        delta = differential(4, self.r)
         if delta:
             unique_charge = Fraction(obstruction, delta)
             if unique_charge.denominator != 1:
@@ -187,7 +187,7 @@ class C2FourData:
         return self.decode(self.embed(state).gauge(
             self.symmetry, 4, self.cochain(1, e_parameter, self.s),
             self.cochain(1, n_parameter, self.s),
-            self.cochain(3, charge_parameter, self.rho),
+            self.cochain(3, charge_parameter, self.r),
             self.cochain(4, phase_parameter, self.s)))
 
     def canonicalize(self, state):
@@ -212,7 +212,7 @@ class C2FourData:
                 apply(e_parameter=e_parameter, n_parameter=n_parameter)
         elif state.e or state.n:
             raise AssertionError("A signed closed integer sheet must vanish")
-        if not self.rho:
+        if not self.r:
             parameter = (state.charge % 2 - state.charge) // 2
             if parameter:
                 apply(charge_parameter=parameter)
@@ -222,8 +222,9 @@ class C2FourData:
 
     def input(self):
         return {"id": "signed_" + self.case + "_4p1", "dimension": 4,
-                "family": self.data["family"], "group": "C2",
-                "s": "alpha" if self.s else "0", "rho": "alpha" if self.rho else "0",
+                "family": self.data["family"], "group": "C2", "schema_version": 2,
+                "s": "alpha" if self.s else "0", "r": "alpha" if self.r else "0",
+                "rho": "alpha" if self.s ^ self.r else "0",
                 "omega": "alpha^2/2" if self.k else "0",
                 "generatorSquare": self.data["generator_square"],
                 "referenceTarget": self.data["referenceTarget"],
@@ -235,7 +236,7 @@ class C2FourData:
 
     def classify(self):
         sheets = [0, 1] if not self.s else [0]
-        charges = [None] if self.rho else [0, 1]
+        charges = [None] if self.r else [0, 1]
         states = sorted(state for e, n, charge in product(sheets, sheets, charges)
                         for state in self.completions(e, n, charge))
         index = {state: i for i, state in enumerate(states)}
@@ -256,7 +257,7 @@ class C2FourData:
         loops = []
         if self.s:
             loops += [("closed_E8_v1", (1, 0, 0)), ("closed_CI_u1", (0, 1, 0))]
-        if self.rho:
+        if self.r:
             loops += [("closed_charge_u3", (0, 0, 1))]
         incoming = []
         for name, parameters in loops:
@@ -408,7 +409,7 @@ class C2FourData:
         return {"complex": "complete normalized inhomogeneous C2 bar complex",
                 "nondegenerateCellsInEachDegree": 1,
                 "basis": "(c,...,c); alpha(c)=1",
-                "differentialFormula": "d_chi in degree p = (-1)^chi + (-1)^(p+1)",
+                "differentialFormula": "d_alpha in degree p = (-1)^alpha + (-1)^(p+1)",
                 "integerSignedDifferentials": {str(sign): [differential(p, sign) for p in range(7)]
                                                for sign in (0, 1)},
                 "sheetParameterDegree": 1, "chargeParameterDegree": 3, "phaseParameterDegree": 4,

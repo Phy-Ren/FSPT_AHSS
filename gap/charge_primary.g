@@ -1,5 +1,5 @@
 # Class-only primary charge obstruction for a certified half-integral extension.
-# For an integral rho-cocycle q and w=2*omega mod 2,
+# For an integral r-cocycle q and w=2*omega mod 2,
 # [omega cup q + Sq2(q)/2] = j([w cup (q mod 2) + Sq2(q mod 2)]),
 # where j:F2 -> (Q/Z)_s sends 1 to 1/2. This coefficient map is equivariant
 # for every sign s; its induced cohomology map need not be injective.
@@ -26,7 +26,7 @@ BindGlobal("U1NativeChargePrimaryCoordinates",function(c,d,H,nativeCharge)
   fi;
   certificate:=c.backgroundClosureCertificate;
   if not IsRecord(certificate) or not IsBound(certificate.actions)
-    or certificate.actions<>[c.s,c.rho,c.omega]
+    or certificate.actions<>[c.s,c.r,c.omega]
     or not IsBound(certificate.integralTwistedCoboundary)
     or certificate.integralTwistedCoboundary<>true
     or not IsBound(certificate.halfIntegralOmega)
@@ -43,7 +43,7 @@ BindGlobal("U1NativeChargePrimaryCoordinates",function(c,d,H,nativeCharge)
     Error("Native charge primary has the wrong signed target cohomology");fi;
   if IsBound(c.nativeChargePrimaryOmega) then
     entry:=c.nativeChargePrimaryOmega;
-    if entry.actions<>[c.s,c.rho,c.omega] or not IsIdenticalObj(entry.resolution,c.R) then
+    if entry.actions<>[c.s,c.r,c.omega] or not IsIdenticalObj(entry.resolution,c.R) then
       Error("Native charge primary cache context changed");fi;
     w:=entry.cocycle;
   else
@@ -55,7 +55,7 @@ BindGlobal("U1NativeChargePrimaryCoordinates",function(c,d,H,nativeCharge)
     end);
     if w<>[] and Dimension(c.R)(3)>0 and ForAny(w*U1Differential(c,2,"F2"),x->x mod 2<>0) then
       Error("Doubled extension is not a native binary cocycle");fi;
-    c.nativeChargePrimaryOmega:=rec(actions:=[c.s,c.rho,c.omega],resolution:=c.R,cocycle:=w);
+    c.nativeChargePrimaryOmega:=rec(actions:=[c.s,c.r,c.omega],resolution:=c.R,cocycle:=w);
     c.chargePrimaryStats.omegaClosureChecks:=c.chargePrimaryStats.omegaClosureChecks+1;
   fi;
   c.chargePrimaryStats.nativeCalls:=c.chargePrimaryStats.nativeCalls+1;

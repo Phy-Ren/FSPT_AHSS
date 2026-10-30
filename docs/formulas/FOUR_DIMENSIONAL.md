@@ -16,12 +16,12 @@ belong to one calibrated convention and use the actual lower outputs.
 
 ## Obstruction functions
 
-Let `s` be the chirality sign, `rho` the charge sign, and
-`B3=d_(rho+s)(omega_real-s1^2/2)` in the retained convention. Then
+Let `s` be the chirality sign, `r` the charge sign, and
+`B3=d_(rho)(omega_real-s1^2/2)` in the retained convention. Then
 
 ```math
 d_s e_2=d_s n_2=0,\qquad
-d_\rho n_4=-B_3\cup n_2-\rho_1\cup n_2\cup n_2,
+d_r n_4=-B_3\cup n_2-r_1\cup n_2\cup n_2,
 ```
 ```math
 d_s\nu_5=e_2\cup e_2\cup e_2/3+\widehat O_6^{\rm CI}(n_2,n_4).
@@ -32,28 +32,28 @@ write `A2=check omega_R` and define the binary charge-conjugation block
 
 ```math
 \begin{aligned}
-\mathcal J_6(n_2)={}&\zeta_{1,4}(\rho,\bar n_2^2)
- +\rho^2\widetilde{(n_2^2)}
- +\rho\zeta^{\mathbb Z}_{2,2}(n_2,n_2)\\
-&+[(\rho\cup_1s)\rho+(s^2\cup_1\rho)]\bar n_2^2.
+\mathcal J_6(n_2)={}&\zeta_{1,4}(r,\bar n_2^2)
+ +r^2\widetilde{(n_2^2)}
+ +r\zeta^{\mathbb Z}_{2,2}(n_2,n_2)\\
+&+[(r\cup_1s)r+(s^2\cup_1r)]\bar n_2^2.
 \end{aligned}
 ```
 
 The square inside the tilde is the actual signed integer cup square.
-With `O5=-B3 n2-rho n2^2`, the complete terminal contribution is
+With `O5=-B3 n2-r n2^2`, the complete terminal contribution is
 
 ```math
 \begin{aligned}
 \widehat O_6^{\rm CI}={}&\widehat O^c_6(n_4)
- +\frac12\mathcal P_{\rho+s}(A_2)n_2
- -\frac12 A_2\cup(n_2^2)_\rho\\
-&+\frac14(\rho^2n_2^2)_s
- +\frac14(s)_{\rho+s}\cup\mathcal O_5
+ +\frac12\mathcal P_{\rho}(A_2)n_2
+ -\frac12 A_2\cup(n_2^2)_r\\
+&+\frac14(r^2n_2^2)_s
+ +\frac14(s)_{\rho}\cup\mathcal O_5
  +\frac16n_2^3\\
 &+\frac12\left[
  \zeta^{\mathbb Z}_{3,2}(B_3,n_2)+\mathcal J_6(n_2)
- +(\bar B_3\bar n_2)\cup_4(\rho\bar n_2^2)
- +\rho\bar B_3\bar n_2\right].
+ +(\bar B_3\bar n_2)\cup_4(r\bar n_2^2)
+ +r\bar B_3\bar n_2\right].
 \end{aligned}
 ```
 
@@ -85,8 +85,8 @@ e_2^{\rm out}=e_2+e'_2,\qquad n_2^{\rm out}=n_2+n'_2,
 ```
 ```math
 n_4^{\rm out}=n_4+n'_4+\mathcal E_4(n_2,n'_2),
-\qquad\mathcal E_4=(n_2\cup n'_2)_\rho
-                  +\rho_1\cup(n_2\cup_1n'_2).
+\qquad\mathcal E_4=(n_2\cup n'_2)_r
+                  +r_1\cup(n_2\cup_1n'_2).
 ```
 
 The first cup in `E4` is formed in the sheet coefficient systems and then
@@ -115,17 +115,17 @@ Using the charge block from [Operations](OPERATIONS.md), the full formula is
 \widehat E_5^{\rm CI}={}&
  \widehat E^c_5(n_4,n'_4)
  +\widehat E^c_5(n_4+n'_4,\mathcal E_4)\\
-&-\frac12 A_2\cup(n_2\cup_1n'_2)_\rho
- +\frac14[\rho^2(n_2\cup_1n'_2)]_s
+&-\frac12 A_2\cup(n_2\cup_1n'_2)_r
+ +\frac14[r^2(n_2\cup_1n'_2)]_s
  +\frac16\mathcal C_5(n_2,n'_2)
- -\frac14(s)_{\rho+s}\cup\mathcal E_4\\
+ -\frac14(s)_{\rho}\cup\mathcal E_4\\
 &+\frac12\left[
  \zeta^{\mathbb Z}_{2,2}(n_2,n'_2)
  +\mathcal P^{\rm Cartan}_5(\bar B_3;\bar n_2,\bar n'_2)
  +\widetilde B_3(\bar n_2\cup_2\bar n'_2)\right.\\
 &\hspace{23mm}\left.
- +(\rho\bar n_2^2)\cup_5(\bar B_3\bar n'_2)
- +\mathcal R_5(\rho,s;n_2,n'_2)\right].
+ +(r\bar n_2^2)\cup_5(\bar B_3\bar n'_2)
+ +\mathcal R_5(r,s;n_2,n'_2)\right].
 \end{aligned}
 ```
 
@@ -149,15 +149,15 @@ must be identified, rather than multiplying graded groups.
 ## Gauges and inverse
 
 Use E8-first gauge parameters `v_1,u_1,lambda_3,lambda_4`, with the first
-two signed by `s`, charge by `rho`, and phase by `s`. The lower endpoint is
+two signed by `s`, charge by `r`, and phase by `s`. The lower endpoint is
 
 ```math
 e_2^{\rm g}=e_2+d_sv_1,\qquad n_2^{\rm g}=n_2+d_su_1,
 ```
 ```math
 n_4^{\rm g}=n_4+B_3\cup u_1
- +\rho_1\cup[n_2\cup u_1+u_1\cup n_2+u_1\cup d_su_1]
- +d_\rho\lambda_3.
+ +r_1\cup[n_2\cup u_1+u_1\cup n_2+u_1\cup d_su_1]
+ +d_r\lambda_3.
 ```
 
 The phase transforms by
@@ -274,7 +274,7 @@ The results are organized by symmetry and response sector:
 - [Unitary charge conjugation](../../results/current/4p1d/charge_conjugation.md).
 - [AI/AII, zero intrinsic response](../../results/current/4p1d/time_reversal_intrinsic_zero.md).
 
-For `U(1)^f × C_N`, `s=rho=omega=0`, the
+For `U(1)^f × C_N`, `s=r=omega=0`, the
 [cyclic calculation](FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md) computes every
 order selected in the current tables. Complete powers and actual
 gauges are evaluated on the full cyclic five-cycle. An independent
@@ -306,11 +306,11 @@ uses the scalar differential
 `d_chi(alpha^p)=[(-1)^chi(c)+(-1)^(p+1)]alpha^(p+1)` and evaluates
 every completed product and incoming action.
 
-- Unitary charge conjugation has `s=0,rho=alpha`. For `k=0`,
+- Unitary charge conjugation has `s=0,r=alpha`. For `k=0`,
   `C²=1` and the result is `Z2`; for `k=1`, `C²=(-1)^F` and the
   result is `Z2³`. Symmetry forces the intrinsic pair to vanish, so
   these tables cover the full response sector.
-- Time reversal has `s=alpha,rho=0`. For `k=0` (AI) and `k=1` (AII),
+- Time reversal has `s=alpha,r=0`. For `k=0` (AI) and `k=1` (AII),
   the computed **intrinsic-zero** group is zero. Their full groups and
   allowed uniform lattices are separate physical inputs.
 
@@ -337,7 +337,7 @@ the `d2,d3,d4` scope of the original four-data equations above.
 For each specified commuting direct product `U(1)^f × G`, forgetting `G` has the identity
 inclusion as a section. Pulling a uniform phase back with trivial `G`
 action therefore gives a natural group splitting into the intrinsic-zero
-kernel and `Z{I} ⊕ Z{J}`. At `s=rho=omega=0`, direct substitution into
+kernel and `Z{I} ⊕ Z{J}`. At `s=r=omega=0`, direct substitution into
 the reviewed intrinsic equations permits zero lower data for both unit
 roots. The [cyclic section proof](FOUR_DIMENSIONAL_CYCLIC_EXAMPLES.md#uniform-intrinsic-pair-and-its-natural-section)
 gives this physical section argument, also used for the abelian-product

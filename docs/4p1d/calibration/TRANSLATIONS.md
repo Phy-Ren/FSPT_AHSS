@@ -1,7 +1,7 @@
 # 4+1D translations: the complete integer kernel and stacking law
 
 The calculation applies to `U(1)^f × Z^r`, `1 <= r <= 4`, with
-`s=rho=omega=0`. Rank four is the full translation subgroup in four spatial
+`s=r=omega=0`. Rank four is the full translation subgroup in four spatial
 dimensions. Lower ranks describe partial translations in the same spatial
 dimension. Pure translations have no rotation-spin lift distinction.
 The four fields are ordered `(e2,n2,n4,nu5)`, and the intrinsic pair `(n0I,n0J)`

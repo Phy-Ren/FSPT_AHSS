@@ -10,12 +10,12 @@ existing differential, product and gauge conventions are those of
 
 ## Hypotheses and completion
 
-Let `q in Z3(G,Z_rho)` be the actual closed integer bar cochain. Assume the
+Let `q in Z3(G,Z_r)` be the actual closed integer bar cochain. Assume the
 chosen extension lift satisfies
 
 ```math
-2\omega_R\in C^2(G,\mathbb Z_{\rho+s}),\qquad
-d_{\rho+s}\omega_R\in C^3(G,\mathbb Z_{\rho+s}).
+2\omega_R\in C^2(G,\mathbb Z_{\rho}),\qquad
+d_{\rho}\omega_R\in C^3(G,\mathbb Z_{\rho}).
 ```
 
 Then `W=2 omega_R mod 2` is a closed ordinary binary two-cochain. The
@@ -51,14 +51,14 @@ Let `m in 2Z`, positive, zero or negative. A charge-removal relation
 requires an integer native two-cochain `x` with
 
 ```math
-A=F^*q,\qquad d_\rho x=-mA.
+A=F^*q,\qquad d_r x=-mA.
 ```
 
 The full solver then supplies the bar parameter
 
 ```math
 v=G^*x+mH^*q,\qquad
-d_\rho v=-mG^*F^*q+m(G^*F^*q-q)=-mq,
+d_r v=-mG^*F^*q+m(G^*F^*q-q)=-mq,
 \qquad \bar v=G^*\bar x.
 ```
 
@@ -86,7 +86,7 @@ G^{\rm cylinder}_4(v;mq)-\widehat G^c_4(v;mq)
 ```
 
 The last equality is pointwise because `m` is even. In the short gauge,
-the extra product `E^c_4(mq,d_rho v)` also vanishes pointwise, while
+the extra product `E^c_4(mq,d_r v)` also vanishes pointwise, while
 `d bar v=0`. Combining the full product and charge removal therefore
 gives the actual reduced bar phase
 
@@ -108,7 +108,7 @@ when `b` has quarter entries.
 ## The native cohomology class
 
 All binary inputs below are closed. Set `W_R=F*W` and
-`rho_R=F*rho`, using binary coefficients. The coefficient map
+`r_R=F*r`, using binary coefficients. The coefficient map
 
 ```math
 j:\mathbb F_2\longrightarrow(\mathbb R/\mathbb Z)_s,
@@ -127,32 +127,32 @@ induced cohomology map. Naturality under the comparison maps gives
 ```
 
 The degree-two square is the cup square. The other square can also be
-written using ordinary native cups. With `rho(g)` lifted to `0` or `1`,
+written using ordinary native cups. With `r(g)` lifted to `0` or `1`,
 the inhomogeneous differential gives the exact integer identity
 
 ```math
-(d_0q-d_\rho q)(g_1,g_2,g_3,g_4)
-=2\rho(g_1)q(g_2,g_3,g_4).
+(d_0q-d_r q)(g_1,g_2,g_3,g_4)
+=2r(g_1)q(g_2,g_3,g_4).
 ```
 
-Thus `d_0q=2 rho cup q`, with an ordinary untwisted cup in this integer
+Thus `d_0q=2 r cup q`, with an ordinary untwisted cup in this integer
 identity: here `q` is viewed as an integer function without its coefficient
 transport. All cups in the resulting binary class formula are ordinary.
 The ordinary integral Bockstein, reduced modulo two, is `Sq1`; hence
-`Sq1[bar q]=[rho] cup [bar q]`. Transfer gives
+`Sq1[bar q]=[r] cup [bar q]`. Transfer gives
 
 ```math
 \boxed{\displaystyle
 [R_m]=\left[
 mb+\frac12\left(
-\epsilon_m\,\rho_R\cup\bar A
+\epsilon_m\,r_R\cup\bar A
 +W_R\cup\bar x+\bar x\cup\bar x
 \right)\right].}
 ```
 
 The cups on the right are native binary cups from a compatible diagonal.
 This is equality of classes, not equality to the transferred vector
-`F*R_m`. If `rho=0`, the `Sq1` term vanishes as a class; the original bar
+`F*R_m`. If `r=0`, the `Sq1` term vanishes as a class; the original bar
 twister need not be pointwise zero. The derivation requires neither a
 finite group nor commuting group elements.
 

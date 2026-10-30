@@ -13,6 +13,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from insulator.e8_pointgroup import presentation_invariants
+from insulator.notation import legacy_metadata_view
 from insulator.cyclic_physical import compare_physical
 from scripts.collect_expansion import cyclic_filtration
 
@@ -22,7 +23,7 @@ def digest(path):
 
 
 def read(path):
-    return json.loads(path.read_text())
+    return legacy_metadata_view(json.loads(path.read_text()))
 
 
 def write(path, value):
@@ -94,7 +95,7 @@ def validate_record(path, source):
     if evidence and digest(path.parent / evidence["path"]) != evidence["sha256"]:
         raise ValueError("Complete root/gauge evidence hash mismatch.")
     if inputs["family"] == "internal_cyclic":
-        if inputs["s"] != 0 or inputs["rho"] != 0 or inputs["omega"] != "0":
+        if inputs["s"] != 0 or inputs["r"] != 0 or inputs["omega"] != "0":
             raise ValueError("Cyclic physical calibration has the wrong symmetry background.")
         physical = compare_physical(inputs["order"], classification["presentation"])
         if record["physicalComparison"] != physical:
@@ -106,7 +107,7 @@ def validate_record(path, source):
         from insulator.translation4p1 import verify_certificate
         certificate = read(path.parent / evidence['path'])
         if (certificate['resolution']['rank'] != inputs['translationRank']
-                or (inputs['s'], inputs['rho'], inputs['omega']) != (0, 0, '0')):
+                or (inputs['s'], inputs['r'], inputs['omega']) != (0, 0, '0')):
             raise ValueError('Translation certificate has a different input rank or symmetry background.')
         replay = verify_certificate(classification, certificate)
         if replay != record['certificateVerification']:
@@ -114,8 +115,8 @@ def validate_record(path, source):
     elif inputs['family'] == 'internal_abelian':
         from scripts.verify_abelian_4p1 import verify
         if (classification['group'] != {'family': 'internal_abelian', 'factors': inputs['factors']}
-                or classification['background'] != {'s': 0, 'rho': 0, 'omega': 0}
-                or (inputs['s'], inputs['rho'], inputs['omega']) != (0, 0, '0')):
+                or classification['background'] != {'schema_version': 2, 's': 0, 'r': 0, 'rho': 0, 'omega': 0}
+                or (inputs['s'], inputs['r'], inputs['omega']) != (0, 0, '0')):
             raise ValueError('Finite abelian certificate has a different input group or symmetry background.')
         if read(path.parent / 'native.json') != classification:
             raise ValueError('Saved native abelian output differs from the mathematical record.')
@@ -135,7 +136,7 @@ def validate_background(inputs, target):
     """A group match alone cannot validate the symmetry dictionary."""
     def canonical(value):
         return str(value).replace("alpha cup alpha / 2", "alpha^2/2")
-    for key in ("s", "rho", "omega"):
+    for key in ("s", "r", "rho", "omega"):
         if canonical(inputs[key]) != canonical(target["background"][key]):
             raise ValueError("Physical reference uses a different symmetry background: " + key)
     if inputs["family"] == "internal_cyclic":
@@ -154,14 +155,14 @@ def validate_background(inputs, target):
 
 def natural_uniform_section(inputs):
     """Independent physical section; never an intrinsic cochain calculation."""
-    if (inputs['family'] != 'internal_abelian' or inputs['s'] != 0 or inputs['rho'] != 0
+    if (inputs['family'] != 'internal_abelian' or inputs['s'] != 0 or inputs['r'] != 0
             or inputs['omega'] != '0' or inputs.get('intrinsicPair') != [0, 0]):
         raise ValueError('The natural-section attachment requires the stated commuting direct product.')
     return {'intrinsicFreeRank': 2, 'intrinsicBasis': ['I', 'J'],
             'cochainIntrinsicImplemented': False,
             'zeroLowerLift': {'intrinsicInputs': [[1, 0], [0, 1]],
                              'lowerFields': {'e_2': 0, 'n_2': 0, 'n_4': 0, 'nu_5': 0},
-                             'check': 'At s=rho=omega=0, B=0 and the reviewed opened-sheet equations admit both zero-lower-data unit roots.',
+                             'check': 'At s=r=omega=0, B=0 and the reviewed opened-sheet equations admit both zero-lower-data unit roots.',
                              'evidenceType': 'Direct substitution and naturality, not execution of an intrinsic solver.'},
             'section': 'Give each intrinsic I,J root the trivial action of the finite abelian group.',
             'splitting': 'Restriction composed with this inflation is the identity; the full physical group splits into its true relative kernel and Z^2.',
@@ -188,7 +189,7 @@ def collect(campaigns, output, additional_ledgers=(), extends=(), completed_sele
         for case in extra['cases']:
             if case['id'] in overlaps:
                 old = existing[case['id']]
-                if (any(case['background'][k] != old['background'][k] for k in ('G', 's', 'rho', 'omega'))
+                if (any(case['background'][k] != old['background'][k] for k in ('G', 's', 'r', 'rho', 'omega'))
                         or case['zero_uniform_target'] != old['zero_uniform_target']
                         or case['full_target'] != old['full_target']):
                     raise ValueError('A metadata refinement changed the physical target.')
@@ -248,7 +249,7 @@ def collect(campaigns, output, additional_ledgers=(), extends=(), completed_sele
             sources.update(additions)
             if inputs["family"] == "internal_cyclic":
                 inputs["name"] = "C" + str(inputs["order"])
-                inputs["background"] = {"s": 0, "rho": 0, "omega": "0"}
+                inputs["background"] = {"schema_version": 2, "s": 0, "r": 0, "rho": 0, "omega": "0"}
             else:
                 inputs.setdefault("name", target.get("symmetry", target['background']['G']))
                 inputs.setdefault("background", deepcopy(target["background"]))

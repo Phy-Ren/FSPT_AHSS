@@ -33,7 +33,7 @@ def manifest():
 
 def input_record(rank):
     return {"id": "translations_z{}_4p1".format(rank), "dimension": 4,
-            "family": "translations", "translationRank": rank, "s": 0, "rho": 0, "omega": "0",
+            "family": "translations", "translationRank": rank, "schema_version": 2, "s": 0, "r": 0, "rho": 0, "omega": "0",
             "referenceTarget": "translations_z{}".format(rank),
             "spatialInterpretation": "full four-dimensional translations" if rank == 4 else "partial translations in four spatial dimensions",
             "physicalSpin": "not_applicable", "spinScope": "Pure translations have no rotation-spin lift distinction.",
@@ -46,7 +46,7 @@ def uniform_response(free_rank):
             "fullGroup": {"torsion": [], "freeRank": free_rank + 2},
             "section": "Pull back each symmetry-independent intrinsic root along B(U1f x Z^r) -> BU1f; forgetting translations is a retraction.",
             "splitting": "The physical natural section splits off Z I plus Z J from the zero-uniform kernel.",
-            "zeroLowerLift": {"background": "s=rho=omega=0", "intrinsicInputs": [[1, 0], [0, 1]],
+            "zeroLowerLift": {"background": "s=r=omega=0", "intrinsicInputs": [[1, 0], [0, 1]],
                               "lowerFields": {"e_2": 0, "n_2": 0, "n_4": 0, "nu_5": 0},
                               "check": "B=0 and all opened-sheet, charge, and terminal terms vanish by direct zero-input substitution.",
                               "evidenceType": "Physical natural section and direct substitution, not an intrinsic formula-runtime execution."},

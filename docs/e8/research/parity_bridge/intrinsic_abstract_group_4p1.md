@@ -2,7 +2,7 @@
 
 Date: 2026-10-15 UTC. Status: independently reviewed proof within the stated tangential-spectrum framework. This is an auxiliary abstract-group theorem, not completion of the required differential and stacking formulas. This note concerns **4+1D only**, and only the optional enlargement by an intrinsic coefficient row. It is not a missing part of the specified four-coordinate theory. Reduced states retain E8-first notation $(e_2,n_2,n_4,\nu_5)$; the extra uniform intrinsic coordinate is $r_0=(r_0^I,r_0^J)$.
 
-The distinction is between the abstract Abelian group and its physical response coordinates. Under the symmetry-spectrum assumptions stated below, the intrinsic row contributes an abstract $\mathbb Z^2$ whenever $\rho_1=0$. Its uncomputed integral outgoing operations can restrict the response lattice to finite index, but cannot change that abstract contribution. This does not identify the implemented reduced cochain model with the full physical positive-filtration subgroup.
+The distinction is between the abstract Abelian group and its physical response coordinates. Under the symmetry-spectrum assumptions stated below, the intrinsic row contributes an abstract $\mathbb Z^2$ whenever $r_1=0$. Its uncomputed integral outgoing operations can restrict the response lattice to finite index, but cannot change that abstract contribution. This does not identify the implemented reduced cochain model with the full physical positive-filtration subgroup.
 
 ## 1. Scope and claim
 
@@ -11,11 +11,11 @@ Assume an ordinary discrete symmetry quotient
 $$1\longrightarrow\Lambda\longrightarrow G\longrightarrow P\longrightarrow1,
 \qquad\Lambda\cong\mathbb Z^r,\quad |P|<\infty,\quad r\le4,$$
 
-with the specified fermionic $U(1)^f$ extension, signs $s_1,\rho_1$, and spatial tangent representation of finite holonomy. The circle action is $\chi=\rho_1+s_1$. Arbitrary projective magnetic-translation cocycles $\omega\in H^2(G,\mathbb R/\mathbb Z_\chi)$ are allowed, including irrational commutators. No splitting of this extension as a group is assumed.
+with the specified fermionic $U(1)^f$ extension, signs $s_1,r_1$, and spatial tangent representation of finite holonomy. The circle action is $\chi=\rho_1$. Arbitrary projective magnetic-translation cocycles $\omega\in H^2(G,\mathbb R/\mathbb Z_\chi)$ are allowed, including irrational commutators. No splitting of this extension as a group is assumed.
 
 Use the interacting generalized-cohomology/tangential-spectrum classification of symmetry-preserving invertible phases, with the actual symmetry type pulled back under restriction. The classification is by deformation classes with unrestricted allowed filling and response; imposing a fixed filling, fixed Hall response, or a fixed intrinsic sector is a different problem. Assume the indicated AHSS converges to this classification and has the stated intrinsic coefficient row. The already established coefficient basis is
 
-$$I=\frac{c^3-cp_1}{48},\qquad J=\frac{c^3}{2},\qquad A=\mathbb Z_{\rho_1}^2.$$
+$$I=\frac{c^3-cp_1}{48},\qquad J=\frac{c^3}{2},\qquad A=\mathbb Z_{r_1}^2.$$
 
 Its integrality and primitivity, from the interacting Spin-c coefficient group, are proved in [intrinsic_response.md](intrinsic_response.md). This note does not substitute a free-band classification for that group.
 
@@ -25,13 +25,13 @@ $$L=\operatorname{im}\bigl(E\longrightarrow H^0(G,A)\bigr)=E_\infty^{0,5}$$
 
 be its admissible intrinsic response lattice. Write $F^1=\ker(E\to L)$ for the physical positive-filtration subgroup. The claim is
 
-$$\rho_1=0:\qquad N\mathbb Z^2\subseteq L\subseteq\mathbb Z^2,
+$$r_1=0:\qquad N\mathbb Z^2\subseteq L\subseteq\mathbb Z^2,
 \qquad N=2^r|P|,$$
 
 and hence
 
-$$E\cong F^1\oplus\mathbb Z^2\quad(\rho_1=0),
-\qquad E=F^1\quad(\rho_1\ne0).$$
+$$E\cong F^1\oplus\mathbb Z^2\quad(r_1=0),
+\qquad E=F^1\quad(r_1\ne0).$$
 
 The isomorphism is abstract and generally noncanonical. The inclusion bound is sufficient, not asserted to be minimal. The identification $F^1\cong$ the implemented reduced CI/E8 model remains a separate theorem to establish.
 
@@ -75,9 +75,9 @@ For clarity, only the transfer's **coefficient edge** is needed. Pull the cover 
 
 $$a\longmapsto\sum_{gK\in G/K}g\cdot a.$$
 
-The action on $A$ is $(-1)^{\rho_1(g)}$ on each of the two generators. When $\rho_1=0$, transferring the two phases constructed above gives intrinsic coefficients $N(1,0)$ and $N(0,1)$. Thus $N\mathbb Z^2\subseteq L$. Weak decorations produced by transfer are allowed and do not affect this conclusion.
+The action on $A$ is $(-1)^{r_1(g)}$ on each of the two generators. When $r_1=0$, transferring the two phases constructed above gives intrinsic coefficients $N(1,0)$ and $N(0,1)$. Thus $N\mathbb Z^2\subseteq L$. Weak decorations produced by transfer are allowed and do not affect this conclusion.
 
-This proof does not assert that transfer followed by restriction, or restriction followed by transfer, is multiplication by $N$ on the entire generalized-cohomology group. Only the coefficient-edge norm is used. If $\rho_1$ is nontrivial, $H^0(G,\mathbb Z_{\rho_1}^2)=0$ from the outset, so the uniform intrinsic quotient is absent.
+This proof does not assert that transfer followed by restriction, or restriction followed by transfer, is multiplication by $N$ on the entire generalized-cohomology group. Only the coefficient-edge norm is used. If $r_1$ is nontrivial, $H^0(G,\mathbb Z_{r_1}^2)=0$ from the outset, so the uniform intrinsic quotient is absent.
 
 Primary transfer reference: J. C. Becker and D. H. Gottlieb, *The transfer map and fiber bundles*, Topology **14** (1975), 1–12, [DOI:10.1016/0040-9383(75)90029-4](https://doi.org/10.1016/0040-9383(75)90029-4). The facts used here are the pullback property in §3, Eq. (3.2), and the finite-cover specialization in §4, pp. 6–7; the Thom version uses the pulled-back stable tangent bundle. The paper explicitly notes that the vertical tangent is zero for a finite cover. Full text is cached at `/home/arxiv/10.1016_0040-9383(75)90029-4.pdf`, SHA256 `3daa4b7004afb96e11b7f2f9514818771b2c5a2482b34c8f024206f687bbce60`. The argument above specifies its application to the actual twisted symmetry and the coefficient edge.
 
@@ -91,7 +91,7 @@ The exact sequence
 
 $$0\longrightarrow F^1\longrightarrow E\longrightarrow L\longrightarrow0$$
 
-splits as a sequence of abstract Abelian groups because $L$ is free. Since $L$ has rank two for $\rho_1=0$, the unknown integral outgoing operations affect the embedding $L\subseteq\mathbb Z^2$, its index, and the smallest physical response generators, but not the abstract factor $\mathbb Z^2$. There is no additional torsion extension ambiguity from a free quotient.
+splits as a sequence of abstract Abelian groups because $L$ is free. Since $L$ has rank two for $r_1=0$, the unknown integral outgoing operations affect the embedding $L\subseteq\mathbb Z^2$, its index, and the smallest physical response generators, but not the abstract factor $\mathbb Z^2$. There is no additional torsion extension ambiguity from a free quotient.
 
 Nor can this new $q=5$ row generate an incoming relation that kills a retained total-degree-five class: an incoming differential would have source total degree four, requiring negative filtration in row five. These statements concern the actual physical filtration; they do not certify a proposed cochain presentation of $F^1$.
 

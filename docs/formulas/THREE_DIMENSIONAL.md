@@ -1,7 +1,7 @@
 # 3+1D: the complete four-data domain-wall theory
 
 The ordered fields are `(e_1,n_1,n_3,nu_4)`, with coefficient actions
-`(s,s,rho,s)`. Use the cochains and charge blocks in
+`(s,s,r,s)`. Use the cochains and charge blocks in
 [the four-data reference](OPERATIONS.md). This file concerns 3+1D.
 
 <a id="obstructions-3d"></a>
@@ -9,11 +9,11 @@ The ordered fields are `(e_1,n_1,n_3,nu_4)`, with coefficient actions
 ## Obstruction functions
 
 ```math
-d_s e_1=d_s n_1=0,\qquad d_\rho n_3=-B_3\cup n_1,
+d_s e_1=d_s n_1=0,\qquad d_r n_3=-B_3\cup n_1,
 \qquad d_s\nu_4=\widehat O_5^{\rm CI}(n_1,n_3),
 ```
 ```math
-B_3=d_{\rho+s}(\omega_R-s\cup s/2).
+B_3=d_{\rho}(\omega_R-s\cup s/2).
 ```
 
 The integer source represents the CI component of `d3`; the neutral
@@ -42,8 +42,8 @@ k_2=\sum_i\theta_i n_1^{(i)},
 ```
 ```math
 z_4=\sum_i[\theta_i n_3^{(i)}+(B_3\cup_1\theta_i)n_1^{(i)}]
- +\rho\ell_3
- +d_\rho\left\{\sum_{i<j}[\rho\cup_1(\theta_i\cup_1\theta_j)]
+ +r\ell_3
+ +d_r\left\{\sum_{i<j}[r\cup_1(\theta_i\cup_1\theta_j)]
  (n_1^{(i)}n_1^{(j)})\right\}.
 ```
 
@@ -72,7 +72,7 @@ associator identity; the detailed face proof is in
 E_1=e_1+e'_1,\qquad N_1=n_1+n'_1,
 ```
 ```math
-N_3=n_3+n'_3-\rho\cup(n_1\cup n'_1),
+N_3=n_3+n'_3-r\cup(n_1\cup n'_1),
 \qquad \Nu_4=\nu_4+\nu'_4+\widehat E_4^{\rm CI}.
 ```
 
@@ -85,11 +85,11 @@ section argument below, not a statement that E8 has no gravitational response.
 
 ## Gauges and incoming identifications
 
-For independent `v_0,u_0 in C0(G,Z_s)` and `w_2 in C2(G,Z_rho)`,
+For independent `v_0,u_0 in C0(G,Z_s)` and `w_2 in C2(G,Z_r)`,
 
 ```math
 e_1^g=e_1+d_s v_0,\qquad n_1^g=n_1+d_s u_0,
-\qquad n_3^g=n_3+B_3u_0+d_\rho w_2.
+\qquad n_3^g=n_3+B_3u_0+d_r w_2.
 ```
 
 For height `eta` on `I`, take the same expressions with `u_0,w_2`
@@ -115,7 +115,7 @@ full phase, gauge or incoming-relation witnesses.
 
 Integral background lift changes use
 `omega_R -> omega_R+z_2`, `n_3 -> n_3-z_2 cup n_1`; real section changes
-use `omega_R -> omega_R+d_(rho+s)alpha_1` with charge unchanged. The phase
+use `omega_R -> omega_R+d_(rho)alpha_1` with charge unchanged. The phase
 is the same source-cylinder evaluation, and E8 is unchanged.
 
 ## Why the global calculation can be factored
