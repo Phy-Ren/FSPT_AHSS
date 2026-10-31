@@ -6,8 +6,8 @@ Return to the [four-lift definition](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md
 
 | Term | Physical face product |
 | --- | --- |
-| 1 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\overline{d\check n'_3})_{02345} (\check n_3)_{0234}`$ |
-| 2 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\bar \beta_4^{\gamma\prime})_{02345}`$ |
-| 3 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0234} (\check n'_3)_{0234}`$ |
-| 4 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0234} (\check n'_3)_{0345}`$ |
-| 5 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0234} (\check n'_3)_{2345}`$ |
+| 1 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} ([d\widetilde{n}'_3]_2)_{02345} (\widetilde{n}_3)_{0234}`$ |
+| 2 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} ([\beta_4^{\gamma\prime}]_2)_{02345}`$ |
+| 3 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} (\widetilde{n}_3)_{0234} (\widetilde{n}'_3)_{0234}`$ |
+| 4 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} (\widetilde{n}_3)_{0234} (\widetilde{n}'_3)_{0345}`$ |
+| 5 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} (\widetilde{n}_3)_{0234} (\widetilde{n}'_3)_{2345}`$ |

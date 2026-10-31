@@ -19,7 +19,7 @@ The contributions below are grouped in the shifted Majorana coordinate
 <a id="eq-c1-4d"></a>
 
 ```math
-\check n_3=n_3+s_1\widetilde n_2.
+\widetilde{n}_3=n_3+s_1[\lfloor n_2/2\rfloor]_2.
 ```
 
 <a id="obstructions-4d"></a>
@@ -44,13 +44,13 @@ dn_3=\mathcal{𝒪}_4=\mathcal{𝒪}_4^\psi.
 **p+ip contribution.**
 
 ```math
-\mathcal{𝒪}_4^\psi=\mathrm{Sq}^2\bar n_2+\omega_2\bar n_2+s_1\mathrm{Sq}^1\bar n_2.
+\mathcal{𝒪}_4^\psi=\mathrm{Sq}^2[n_2]_2+\omega_2[n_2]_2+s_1\mathrm{Sq}^1[n_2]_2.
 ```
 
 Equivalently, in the shifted Majorana coordinate,
 
 ```math
-d\check n_3=\check{\mathcal{𝒪}}_4=\bar n_2^2+\check\omega_2\bar n_2.
+d\widetilde{n}_3=\widetilde{\mathcal{𝒪}}_4=[n_2]_2^2+\widetilde{\omega}_2[n_2]_2.
 ```
 
 ### 3. Complex-fermion obstruction
@@ -64,16 +64,16 @@ dn_4=\mathcal{𝒪}_5=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}+\mat
 **Majorana contribution.**
 
 ```math
-\mathcal{𝒪}_5^\gamma=\check n_3\cup_1\check n_3+s_1(\check n_3\cup_2\check n_3)+\omega_2\check n_3.
+\mathcal{𝒪}_5^\gamma=\widetilde{n}_3\cup_1\widetilde{n}_3+s_1(\widetilde{n}_3\cup_2\widetilde{n}_3)+\omega_2\widetilde{n}_3.
 ```
 
 **Mixed Majorana–p+ip contribution.**
 
 ```math
-\mathcal{𝒪}_5^{\gamma\psi}=\check n_3\cup_2d\check n_3+s_1(\check n_3\cup_3d\check n_3).
+\mathcal{𝒪}_5^{\gamma\psi}=\widetilde{n}_3\cup_2d\widetilde{n}_3+s_1(\widetilde{n}_3\cup_3d\widetilde{n}_3).
 ```
 
-Here $`d\check n_3`$ is fixed by the preceding obstruction.
+Here $`d\widetilde{n}_3`$ is fixed by the preceding obstruction.
 
 **p+ip contribution.**
 
@@ -81,16 +81,16 @@ Here $`d\check n_3`$ is fixed by the preceding obstruction.
 
 ```math
 \begin{aligned}
-{\mathcal{𝒪}^\psi_5}={}&\zeta_{2,2}({\bar n_{2}},{\bar n_{2}})+\zeta_{2,2}({\check\omega_2},{\bar n_{2}})
- +{\bar n_{2}}^2\cup_3({\check\omega_2}{\bar n_{2}})+\mathrm{Sq}^3{\widetilde n_{2}}+{(\bar n_2\cup_1\bar n_2)}\cup_1({s_1}{\bar n_{2}})\\
-&+{s_1}\big[{\bar n_{2}}^2\cup_4({\check\omega_2}{\bar n_{2}})+({\bar n_{2}}\cup_1{s_1}){\bar n_{2}}+{\bar n_{2}}\cup_1{(\bar n_2\cup_1\bar n_2)}+{\bar n_{2}}^2\big]\\
-&+({\check\omega_2}\cup_1{\check\omega_2}+{s_1}{\check\omega_2}){\widetilde n_{2}}
- +\big[({\check\omega_2}\cup_1{\check\omega_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\check\omega_2})\big]{\bar n_{2}},\\
+{\mathcal{𝒪}^\psi_5}={}&\zeta_{2,2}({[n_{2}]_2},{[n_{2}]_2})+\zeta_{2,2}({\widetilde{\omega}_2},{[n_{2}]_2})
+ +{[n_{2}]_2}^2\cup_3({\widetilde{\omega}_2}{[n_{2}]_2})+\mathrm{Sq}^3{[\lfloor n_{2}/2\rfloor]_2}+{([n_2]_2\cup_1[n_2]_2)}\cup_1({s_1}{[n_{2}]_2})\\
+&+{s_1}\big[{[n_{2}]_2}^2\cup_4({\widetilde{\omega}_2}{[n_{2}]_2})+({[n_{2}]_2}\cup_1{s_1}){[n_{2}]_2}+{[n_{2}]_2}\cup_1{([n_2]_2\cup_1[n_2]_2)}+{[n_{2}]_2}^2\big]\\
+&+({\widetilde{\omega}_2}\cup_1{\widetilde{\omega}_2}+{s_1}{\widetilde{\omega}_2}){[\lfloor n_{2}/2\rfloor]_2}
+ +\big[({\widetilde{\omega}_2}\cup_1{\widetilde{\omega}_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\widetilde{\omega}_2})\big]{[n_{2}]_2},\\
 \zeta_{2,2}(x,y)={}&\mathop{\mathrm{MS}}\nolimits_{1231343}(x,x,y,y).
 \end{aligned}
 ```
 
-The second digit obeys $`d\widetilde n_2=\bar n_2\cup_1\bar n_2+s_1\bar n_2`$.
+The second digit obeys $`d[\lfloor n_2/2\rfloor]_2=[n_2]_2\cup_1[n_2]_2+s_1[n_2]_2`$.
 
 The [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md)
 gives the complete F-move count, its explicit local reference, and the
@@ -136,9 +136,9 @@ In the current phase coordinate the contributions are:
 ```
 
 The bracket reuses the complete Majorana parity from the preceding layer:
-$`\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}=\mathrm{Sq}^2\check n_3
-+\omega_2\check n_3+s_1\mathrm{Sq}^1\check n_3`$.
-Its mixed component retains the terms proportional to $`d\check n_3`$;
+$`\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}=\mathrm{Sq}^2\widetilde{n}_3
++\omega_2\widetilde{n}_3+s_1\mathrm{Sq}^1\widetilde{n}_3`$.
+Its mixed component retains the terms proportional to $`d\widetilde{n}_3`$;
 no closed-input assumption is made. The outer superscript records the
 exchanged fermion operators. Reusing their full parity does not change
 that physical origin.
@@ -174,26 +174,26 @@ contribution.
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_6^\gamma
 ={}&\frac12\Big[
- \zeta_{2,3}(\omega_2,\check n_3)+\mathcal X_6(\check n_3)\\
-&\qquad+(\check n_3\cup_1\check n_3)\cup_4(\omega_2\check n_3)
- +(\check n_3\cup_1\check n_3)\cup_4
-       (s_1\overline{\beta^\circ\check n_3})\\
-&\qquad+(\omega_2\check n_3)\cup_4
-       (s_1\overline{\beta^\circ\check n_3})
- +\zeta_{1,4}(s_1,\overline{\beta^\circ\check n_3})\\
-&\qquad+(\omega_2\cup_1s_1)\overline{\beta^\circ\check n_3}
- +s_1(\check n_3\cup_1\check n_3)\Big]\\
+ \zeta_{2,3}(\omega_2,\widetilde{n}_3)+\mathcal X_6(\widetilde{n}_3)\\
+&\qquad+(\widetilde{n}_3\cup_1\widetilde{n}_3)\cup_4(\omega_2\widetilde{n}_3)
+ +(\widetilde{n}_3\cup_1\widetilde{n}_3)\cup_4
+       (s_1[\beta^-\widetilde{n}_3]_2)\\
+&\qquad+(\omega_2\widetilde{n}_3)\cup_4
+       (s_1[\beta^-\widetilde{n}_3]_2)
+ +\zeta_{1,4}(s_1,[\beta^-\widetilde{n}_3]_2)\\
+&\qquad+(\omega_2\cup_1s_1)[\beta^-\widetilde{n}_3]_2
+ +s_1(\widetilde{n}_3\cup_1\widetilde{n}_3)\Big]\\
 &+\frac14\Big[
- \omega_2\beta^\circ\check n_3
- +(\beta^\circ\check n_3)\cup_2(\beta^\circ\check n_3)
- +s_1^2(\beta^\circ\check n_3+\overline{\beta^\circ\check n_3})
+ \omega_2\beta^-\widetilde{n}_3
+ +(\beta^-\widetilde{n}_3)\cup_2(\beta^-\widetilde{n}_3)
+ +s_1^2(\beta^-\widetilde{n}_3+[\beta^-\widetilde{n}_3]_2)
  \Big].
 \end{aligned}
 ```
 
-The formula is defined for arbitrary $`\check n_3`$ through the open
-integer carry $`\beta^\circ`$. It does not impose
-$`d\check n_3=0`$. The intrinsic polynomial and the two Cartan operations
+The formula is defined for arbitrary $`\widetilde{n}_3`$ through the open
+integer carry $`\beta^-`$. It does not impose
+$`d\widetilde{n}_3=0`$. The intrinsic polynomial and the two Cartan operations
 are
 
 ```math
@@ -222,9 +222,9 @@ the defined first squares.
 ```
 
 Each Cartan operation contains **one MS term**. The carry numerator
-$`\beta^\circ\check n_3+\overline{\beta^\circ\check n_3}`$ is even,
+$`\beta^-\widetilde{n}_3+[\beta^-\widetilde{n}_3]_2`$ is even,
 including for negative integer values. When the integer decoration is
-zero, $`\check n_3=n_3`$ and $`\beta^\circ n_3=\beta n_3`$; this same
+zero, $`\widetilde{n}_3=n_3`$ and $`\beta^- n_3=\beta n_3`$; this same
 formula is the compact closed-Majorana expression.
 
 **Majorana–p+ip contribution.**
@@ -237,30 +237,30 @@ formula is the compact closed-Majorana expression.
        \mathop{\mathrm{MS}}\nolimits_\vartheta(x_1,\ldots,x_q)\\
 &\qquad+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})
                                   \cup_4\mathcal{𝒪}_5^\psi
- +\overline{\beta^\circ\check n_3}\cup_2\overline{\beta_4^\psi}\\
+ +[\beta^-\widetilde{n}_3]_2\cup_2[\beta_4^\psi]_2\\
 &\qquad+s_1\big(
-    \overline{\beta^\circ\check n_3}\cup_3\overline{\beta_4^\psi}
+    [\beta^-\widetilde{n}_3]_2\cup_3[\beta_4^\psi]_2
  \big)\Big]\\
 &+\frac14\Big[
  \mathcal Q_{\omega_2}[\beta_4]
- -\mathcal Q_{\omega_2}[\beta^\circ\check n_3]
+ -\mathcal Q_{\omega_2}[\beta^-\widetilde{n}_3]
  -\mathcal Q_{\omega_2}[\beta_4^\psi]\\
-&\qquad-(\beta^\circ\check n_3)\cup_3
-                       \beta(d\check n_3)
- -(d\check n_3)\cup_1\check n_3
- +\check n_3\cup_1(d\check n_3)\Big].
+&\qquad-(\beta^-\widetilde{n}_3)\cup_3
+                       \beta(d\widetilde{n}_3)
+ -(d\widetilde{n}_3)\cup_1\widetilde{n}_3
+ +\widetilde{n}_3\cup_1(d\widetilde{n}_3)\Big].
 \end{aligned}
 ```
 
 This finite sum contains **1,897 specified MS terms** with the defined
 Majorana differential retained as an input. Every word and its arguments
 are given in the [relative coefficient table](FOUR_DIMENSIONAL_MAJORANA_RELATIVE_WORD_COEFFICIENTS.md).
-The complete finite sum vanishes on $`d\check n_3=0`$; this need not hold
+The complete finite sum vanishes on $`d\widetilde{n}_3=0`$; this need not hold
 word by word. The [phase construction](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
 derives this relative continuation and transports the stacking law with
 it. The other displayed half-valued cups are outside the sum. The mixed
 quarter phase contains the four-cup quadratic polarization and **three
-additional ordered integer cups**. The binary cochain $`d\check n_3`$
+additional ordered integer cups**. The binary cochain $`d\widetilde{n}_3`$
 is lifted as a whole in the last two cups.
 
 
@@ -271,17 +271,17 @@ is lifted as a whole in the last two cups.
 \widehat{\mathcal{𝒪}}_6^\psi
 ={}&\frac12\Big[y_6[n_2;\omega_2,s_1]+s_1\mathcal{𝒪}_5^\psi\Big]\\
  &+\frac14\mathcal Q_{\omega_2}[\beta_4^\psi]\\
- &-\frac14\overline{\Big[
+ &-\frac14[\Big[
  \mathop{\mathrm{MS}}\nolimits_{12132434}
- (\overline{\beta_{s_1}\check\omega_2},
-  \overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
- +\widetilde{\beta_{s_1}\check\omega_2}
-       (\bar n_2\cup_1\bar n_2)
- +(s_1\overline{\beta_{s_1}\check\omega_2})\widetilde n_2
- +s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2
- \Big]}\\
- &+\frac18\check\omega_2n_2^2
-   +\frac1{16}\mathcal P_{s_1}(\check\omega_2)n_2+\frac1{12}n_2^3.
+ ([\beta_{s_1}\widetilde{\omega}_2]_2,
+  [\beta_{s_1}\widetilde{\omega}_2]_2,[n_2]_2,[n_2]_2)
+ +[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2
+       ([n_2]_2\cup_1[n_2]_2)
+ +(s_1[\beta_{s_1}\widetilde{\omega}_2]_2)[\lfloor n_2/2\rfloor]_2
+ +s_1([\beta_{s_1}\widetilde{\omega}_2]_2\cup_1s_1)[n_2]_2
+ \Big]]_2\\
+ &+\frac18\widetilde{\omega}_2n_2^2
+   +\frac1{16}\mathcal P_{s_1}(\widetilde{\omega}_2)n_2+\frac1{12}n_2^3.
 \end{aligned}
 ```
 
@@ -289,7 +289,7 @@ The quadratic cochain is defined once in the
 [common notation](../FORMULA_GUIDE.md#integral-quadratic-cochain).
 The mixed quarter phase reuses its exact addition polarization, which
 expands to four ordered cups with no background remainder. Here
-$`\beta_4=\beta^\circ\check n_3+\beta_4^\psi`$ is ordinary integer addition.
+$`\beta_4=\beta^-\widetilde{n}_3+\beta_4^\psi`$ is ordinary integer addition.
 The explicit $`s_1\mathcal{𝒪}_5^\psi/2`$ is required by the same phase
 change that fixes the compact Majorana formula; it does not redefine
 the fixed binary completion $`y_6`$.
@@ -308,21 +308,21 @@ displayed rational terms are additional.
 
 ```math
 \begin{aligned}
-\check{\mathcal{𝒪}}_4&=\bar n_2^2+\check\omega_2\bar n_2
+\widetilde{\mathcal{𝒪}}_4&=[n_2]_2^2+\widetilde{\omega}_2[n_2]_2
  \quad\text{in }\mathbb Z_2,\\
-\beta_4^\psi&=\frac{\check{\mathcal{𝒪}}_4-n_2^2-\check\omega_2n_2}{2},\\
-\beta_4&=\beta^\circ\check n_3+\beta_4^\psi
- =\frac{d\check n_3-n_2^2-\check\omega_2n_2}{2},\\
-d\beta_4&=-(\beta_{s_1}\check\omega_2)n_2.
+\beta_4^\psi&=\frac{\widetilde{\mathcal{𝒪}}_4-n_2^2-\widetilde{\omega}_2n_2}{2},\\
+\beta_4&=\beta^-\widetilde{n}_3+\beta_4^\psi
+ =\frac{d\widetilde{n}_3-n_2^2-\widetilde{\omega}_2n_2}{2},\\
+d\beta_4&=-(\beta_{s_1}\widetilde{\omega}_2)n_2.
 \end{aligned}
 ```
 
 The fixed quadratic background cochain is:
 
 ```math
-\mathcal P_{s_1}(\check\omega_2)
- =\check\omega_2\check\omega_2
-  +\check\omega_2\cup_1d_{s_1}\check\omega_2\quad\text{in }\mathbb Z.
+\mathcal P_{s_1}(\widetilde{\omega}_2)
+ =\widetilde{\omega}_2\widetilde{\omega}_2
+  +\widetilde{\omega}_2\cup_1d_{s_1}\widetilde{\omega}_2\quad\text{in }\mathbb Z.
 ```
 
 This is a fixed integer representative of the twisted Pontryagin-square
@@ -330,7 +330,7 @@ expression; keep the displayed representative when it is multiplied by
 $`1/16`$. It is not an unspecified modulo-four class.
 
 The half-valued brackets are binary. Quarter-valued brackets are integer;
-the whole barred polynomial is reduced before its integer use. The pure binary cochain $`y_6`$ has a [complete finite source definition](SOURCE_OPERATIONS.md#source-completion),
+the whole polynomial enclosed in $`[\cdot]_2`$ is reduced before its integer use. The pure binary cochain $`y_6`$ has a [complete finite source definition](SOURCE_OPERATIONS.md#source-completion),
 with every coefficient listed in [Coefficients](COEFFICIENTS.md). The Majorana word coefficients are the explicit four-dimensional table linked above.
 
 <a id="stacking-4d"></a>
@@ -355,22 +355,22 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad\mathcal{ℰ}_3=\mathcal{ℰ}_3^\psi.
 **p+ip contribution.**
 
 ```math
-\mathcal{ℰ}_3^\psi=\bar n_2\cup_1\bar n'_2+s_1(\bar n_2\cup_2\bar n'_2).
+\mathcal{ℰ}_3^\psi=[n_2]_2\cup_1[n'_2]_2+s_1([n_2]_2\cup_2[n'_2]_2).
 ```
 
 The same product in the shifted coordinate is
 
 ```math
-\check N_3=\check n_3+\check n'_3+\check{\mathcal{ℰ}}_3,\qquad\check{\mathcal{ℰ}}_3=\bar n_2\cup_1\bar n'_2.
+\widetilde{N}_3=\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal{ℰ}}_3,\qquad\widetilde{\mathcal{ℰ}}_3=[n_2]_2\cup_1[n'_2]_2.
 ```
 
 Its integer digit carry is
 
 ```math
-\widetilde N_2=\widetilde n_2+\widetilde n'_2+\bar n_2\cup_2\bar n'_2.
+[\lfloor N_2/2\rfloor]_2=[\lfloor n_2/2\rfloor]_2+[\lfloor n'_2/2\rfloor]_2+[n_2]_2\cup_2[n'_2]_2.
 ```
 
-Consequently $`d\check{\mathcal{ℰ}}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
+Consequently $`d\widetilde{\mathcal{ℰ}}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 
 ### 3. Complex-fermion stacking
 
@@ -386,30 +386,30 @@ N_4&=n_4+n'_4+\mathcal{ℰ}_4,\\
 **Majorana contribution.**
 
 ```math
-\mathcal{ℰ}_4^\gamma=\check n_3\cup_2\check n'_3+s_1(\check n_3\cup_3\check n'_3).
+\mathcal{ℰ}_4^\gamma=\widetilde{n}_3\cup_2\widetilde{n}'_3+s_1(\widetilde{n}_3\cup_3\widetilde{n}'_3).
 ```
 
 **Mixed Majorana–p+ip contribution.**
 
 ```math
 \begin{aligned}
-\mathcal{ℰ}_4^{\gamma\psi}={}&d\check n_3\cup_3\check n'_3
- +(\check n_3+\check n'_3)\cup_2\check{\mathcal{ℰ}}_3\\
- &+s_1\big[(\check n_3+\check n'_3)
-                \cup_3\check{\mathcal{ℰ}}_3\big].
+\mathcal{ℰ}_4^{\gamma\psi}={}&d\widetilde{n}_3\cup_3\widetilde{n}'_3
+ +(\widetilde{n}_3+\widetilde{n}'_3)\cup_2\widetilde{\mathcal{ℰ}}_3\\
+ &+s_1\big[(\widetilde{n}_3+\widetilde{n}'_3)
+                \cup_3\widetilde{\mathcal{ℰ}}_3\big].
 \end{aligned}
 ```
 
 **p+ip contribution.**
 
 ```math
-\begin{aligned}\mathcal{ℰ}_4^\psi={}&{z^\psi_4}({\bar n_{2}},{\bar n'_{2}})+[{\check\omega_2}({\bar n_{2}}+{\bar n'_{2}})]\cup_3{\check{\mathcal{ℰ}}_{3}}
- +(\check\omega_2\cup_2\bar n_2)
-       [\bar n'_2+(\bar n_2\cup_2\bar n'_2)]
- +(\check\omega_2\cup_2\bar n'_2)\bar n_2\\
-&+{\widetilde n_{2}}({\widetilde n'_{2}}+{\bar n'_{2}})+{\bar n_{2}}{\widetilde n'_{2}}+d{\widetilde n_{2}}\cup_1{\widetilde n'_{2}}+({\widetilde n_{2}}+{\widetilde n'_{2}}){(\bar n_{2}\cup_{2}\bar n'_{2})}\\
-&+({s_1}{\bar n_{2}})\cup_2({\bar n'_{2}}\cup_1{\bar n'_{2}})+{\bar n_{2}}\cup_1({s_1}{\bar n'_{2}})+{(\bar n_{2}\cup_{2}\bar n'_{2})}\cup_1[{s_1}({\bar n_{2}}+{\bar n'_{2}})]\\
-&+{s_1}\big[{s_1}{(\bar n_{2}\cup_{2}\bar n'_{2})}+{\bar n_{2}}\cup_2d{\widetilde n'_{2}}+{(\bar n_{2}\cup_{2}\bar n'_{2})}\cup_1({\bar n_{2}}+{\bar n'_{2}})+\ell_3({\bar n_{2}},{\bar n'_{2}})\big].
+\begin{aligned}\mathcal{ℰ}_4^\psi={}&{z^\psi_4}({[n_{2}]_2},{[n'_{2}]_2})+[{\widetilde{\omega}_2}({[n_{2}]_2}+{[n'_{2}]_2})]\cup_3{\widetilde{\mathcal{ℰ}}_{3}}
+ +(\widetilde{\omega}_2\cup_2[n_2]_2)
+       [[n'_2]_2+([n_2]_2\cup_2[n'_2]_2)]
+ +(\widetilde{\omega}_2\cup_2[n'_2]_2)[n_2]_2\\
+&+{[\lfloor n_{2}/2\rfloor]_2}({[\lfloor n'_{2}/2\rfloor]_2}+{[n'_{2}]_2})+{[n_{2}]_2}{[\lfloor n'_{2}/2\rfloor]_2}+d{[\lfloor n_{2}/2\rfloor]_2}\cup_1{[\lfloor n'_{2}/2\rfloor]_2}+({[\lfloor n_{2}/2\rfloor]_2}+{[\lfloor n'_{2}/2\rfloor]_2}){([n_{2}]_2\cup_{2}[n'_{2}]_2)}\\
+&+({s_1}{[n_{2}]_2})\cup_2({[n'_{2}]_2}\cup_1{[n'_{2}]_2})+{[n_{2}]_2}\cup_1({s_1}{[n'_{2}]_2})+{([n_{2}]_2\cup_{2}[n'_{2}]_2)}\cup_1[{s_1}({[n_{2}]_2}+{[n'_{2}]_2})]\\
+&+{s_1}\big[{s_1}{([n_{2}]_2\cup_{2}[n'_{2}]_2)}+{[n_{2}]_2}\cup_2d{[\lfloor n'_{2}/2\rfloor]_2}+{([n_{2}]_2\cup_{2}[n'_{2}]_2)}\cup_1({[n_{2}]_2}+{[n'_{2}]_2})+\ell_3({[n_{2}]_2},{[n'_{2}]_2})\big].
 \end{aligned}
 ```
 
@@ -419,11 +419,11 @@ The two finite polynomials in this contribution are
 
 ```math
 \begin{aligned}
-{z^\psi_4}({\bar n_{2}},{\bar n'_{2}})={}&\mathop{\mathrm{MS}}\nolimits_{12413423}({\bar n_{2}},{\bar n_{2}},{\bar n_{2}},{\bar n'_{2}})\\
+{z^\psi_4}({[n_{2}]_2},{[n'_{2}]_2})={}&\mathop{\mathrm{MS}}\nolimits_{12413423}({[n_{2}]_2},{[n_{2}]_2},{[n_{2}]_2},{[n'_{2}]_2})\\
 &+(\mathop{\mathrm{MS}}\nolimits_{12314132}+\mathop{\mathrm{MS}}\nolimits_{12314324}
- +\mathop{\mathrm{MS}}\nolimits_{12341321})({\bar n_{2}},{\bar n_{2}},{\bar n'_{2}},{\bar n'_{2}})\\
-&+(\mathop{\mathrm{MS}}\nolimits_{12132413}+\mathop{\mathrm{MS}}\nolimits_{12324214})({\bar n_{2}},{\bar n'_{2}},{\bar n'_{2}},{\bar n'_{2}}),\\
-\ell_3({\bar n_{2}},{\bar n'_{2}})(0123)={}&{\bar n_{2}}(023){\bar n'_{2}}(012)[1+{\bar n_{2}}(013){\bar n'_{2}}(123)].
+ +\mathop{\mathrm{MS}}\nolimits_{12341321})({[n_{2}]_2},{[n_{2}]_2},{[n'_{2}]_2},{[n'_{2}]_2})\\
+&+(\mathop{\mathrm{MS}}\nolimits_{12132413}+\mathop{\mathrm{MS}}\nolimits_{12324214})({[n_{2}]_2},{[n'_{2}]_2},{[n'_{2}]_2},{[n'_{2}]_2}),\\
+\ell_3({[n_{2}]_2},{[n'_{2}]_2})(0123)={}&{[n_{2}]_2}(023){[n'_{2}]_2}(012)[1+{[n_{2}]_2}(013){[n'_{2}]_2}(123)].
 \end{aligned}
 ```
 
@@ -449,7 +449,7 @@ The two finite polynomials in this contribution are
 The output fields are those of the preceding three stacking laws. The
 following formulas use the operator ordering of the complex-fermion
 contribution. The terminal phase is the same compact-Majorana coordinate as the obstruction above.
-The cochain $`\widehat B_5[\check n_3,n_4]`$ is defined once in the
+The cochain $`\widehat B_5[\widetilde{n}_3,n_4]`$ is defined once in the
 [paired phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md); its backgrounds
 are kept fixed in every evaluation below. Setting its second argument
 to zero removes only the term $`s_1n_4/2`$.
@@ -474,7 +474,7 @@ to zero removes only the term $`s_1n_4/2`$.
 \end{aligned}
 ```
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_4,\check N_3)`$ minus the values at $`(n_4,\check n_3)`$ and $`(n'_4,\check n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential terms. This is an exact rewriting of the same contribution.
+The $`\Delta`$ has its defined three terms: the value at $`(N_4,\widetilde{N}_3)`$ minus the values at $`(n_4,\widetilde{n}_3)`$ and $`(n'_4,\widetilde{n}'_3)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential terms. This is an exact rewriting of the same contribution.
 
 #### Complex fermions and p+ip decoration
 
@@ -494,16 +494,16 @@ On an ordered five-simplex, the complete Majorana contribution is
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
        \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)
- +s_1\big[(\bar \beta_4^\gamma+\bar \beta_4^{\gamma\prime})
-                         \cup_3\bar\lambda_3^\gamma\big]\\
-&\qquad+(\bar\lambda_4^\gamma)_{12345}
-                  (\bar\lambda_3^\gamma)_{0145}
- +(\bar\lambda_4^\gamma)_{01235}
-                  (\bar\lambda_3^\gamma)_{0345}-s_1\mathcal{ℰ}_4^\gamma\Big]\\
+ +s_1\big[([\beta_4^\gamma]_2+[\beta_4^{\gamma\prime}]_2)
+                         \cup_3[\lambda_3^\gamma]_2\big]\\
+&\qquad+([\lambda_4^\gamma]_2)_{12345}
+                  ([\lambda_3^\gamma]_2)_{0145}
+ +([\lambda_4^\gamma]_2)_{01235}
+                  ([\lambda_3^\gamma]_2)_{0345}-s_1\mathcal{ℰ}_4^\gamma\Big]\\
 &+\frac14\Big[
  \beta_4^\gamma\cup_3\beta_4^{\gamma\prime}
  -(\beta_4^\gamma+\beta_4^{\gamma\prime})\cup_2\lambda_3^\gamma\\
-&\qquad+\lambda_3^\gamma\cup_2\beta^\circ(\check n_3+\check n'_3)
+&\qquad+\lambda_3^\gamma\cup_2\beta^-(\widetilde{n}_3+\widetilde{n}'_3)
  +\lambda_3^\gamma\cup_1\lambda_3^\gamma+\omega_2\lambda_3^\gamma\\
 &\qquad-(d\beta_4^\gamma+d\beta_4^{\gamma\prime})\cup_3\lambda_3^\gamma
  +\lambda_3^\gamma\cup_2\lambda_4^\gamma
@@ -516,11 +516,11 @@ On an ordered five-simplex, the complete Majorana contribution is
 &\qquad-(\lambda_4^\gamma)_{01235}(\lambda_4^\gamma)_{12345}
  -(\lambda_4^\gamma)_{01345}(\lambda_4^\gamma)_{12345}\\
 &\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
- \epsilon\;\overline{
-       \sum_{\eta\in\mathcal P}\prod_{(x,f)\in\eta}x_f}
+ \epsilon\;[
+       \sum_{\eta\in\mathcal P}\prod_{(x,f)\in\eta}x_f]_2
  \Big]\\
-&-\widehat B_5[\check n_3+\check n'_3,0]
- +\widehat B_5[\check n_3,0]+\widehat B_5[\check n'_3,0]\pmod1.
+&-\widehat B_5[\widetilde{n}_3+\widetilde{n}'_3,0]
+ +\widehat B_5[\widetilde{n}_3,0]+\widehat B_5[\widetilde{n}'_3,0]\pmod1.
 \end{aligned}
 ```
 
@@ -530,11 +530,11 @@ The integer carries are
 
 ```math
 \begin{aligned}
-\beta_4^\gamma&=\beta^\circ\check n_3,
-& \beta_4^{\gamma\prime}&=\beta^\circ\check n'_3,\\
-\lambda_3^\gamma&=-\check n_3\cup_3\check n'_3,
-&\lambda_4^\gamma&=-\overline{d\check n_3}
-                         \cup_4\overline{d\check n'_3}.
+\beta_4^\gamma&=\beta^-\widetilde{n}_3,
+& \beta_4^{\gamma\prime}&=\beta^-\widetilde{n}'_3,\\
+\lambda_3^\gamma&=-\widetilde{n}_3\cup_3\widetilde{n}'_3,
+&\lambda_4^\gamma&=-[d\widetilde{n}_3]_2
+                         \cup_4[d\widetilde{n}'_3]_2.
 \end{aligned}
 ```
 
@@ -549,7 +549,7 @@ differentials**, not the integer differentials of the lifted fields.
 The compatibility of the two carries is
 
 ```math
-\beta^\circ(\check n_3+\check n'_3)
+\beta^-(\widetilde{n}_3+\widetilde{n}'_3)
 =\beta_4^\gamma+\beta_4^{\gamma\prime}
  +d\lambda_3^\gamma-\lambda_4^\gamma.
 ```
@@ -578,7 +578,7 @@ phase coordinate as the compact pure Majorana obstruction. Each
 $`\widehat B_5[x,0]`$ has **44 half-valued terms and one quarter-valued term**;
 the complete 32-word sum and the remaining terms are written in the
 [phase-change definition](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
-The inputs $`\check n_3+\check n'_3`$ are binary sums, including inside
+The inputs $`\widetilde{n}_3+\widetilde{n}'_3`$ are binary sums, including inside
 all integer carries. These evaluations are not counted as single MS terms.
 
 The existing [output-gauge relation](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md)
@@ -596,20 +596,20 @@ the additional paired phase change is proved separately.
  \sum_{\eta\in\mathcal I_5^{\gamma\psi}}
        \prod_{(x,f)\in\eta}x(f)
  +(\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi})
-                   \cup_3(\bar n_2\bar n'_2)\\
+                   \cup_3([n_2]_2[n'_2]_2)\\
 &\quad+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})
-                  [N_2,\check N_3]\cup_4(\bar n_2\bar n'_2)\\
-&\quad+\bar N_2\big[
-  \check n_3\cup_3\check n'_3
-  +(\check n_3+\check n'_3)\cup_3\check{\mathcal{ℰ}}_3\big]\\
+                  [N_2,\widetilde{N}_3]\cup_4([n_2]_2[n'_2]_2)\\
+&\quad+[N_2]_2\big[
+  \widetilde{n}_3\cup_3\widetilde{n}'_3
+  +(\widetilde{n}_3+\widetilde{n}'_3)\cup_3\widetilde{\mathcal{ℰ}}_3\big]\\
 &\quad+V_5^\gamma\cup_5V_5^{\gamma\psi}
  +V_5^\gamma\cup_5V_5^\psi
  +V_5^{\gamma\psi}\cup_5V_5^\psi-s_1\mathcal{ℰ}_4^{\gamma\psi}\Big]\\
 &+\frac14\Big[
- \overline{V_5^{\gamma\psi}}
- +n_2\check n'_3+n'_2\check n_3\Big]\\
-&-\widehat B_5[\check N_3,0]+\widehat B_5[\check n_3+\check n'_3,0]
- +\widehat B_5[\check{\mathcal{ℰ}}_3,0].
+ [V_5^{\gamma\psi}]_2
+ +n_2\widetilde{n}'_3+n'_2\widetilde{n}_3\Big]\\
+&-\widehat B_5[\widetilde{N}_3,0]+\widehat B_5[\widetilde{n}_3+\widetilde{n}'_3,0]
+ +\widehat B_5[\widetilde{\mathcal{ℰ}}_3,0].
 \end{aligned}
 ```
 
@@ -623,8 +623,8 @@ their scopes; their complete interior terms are recorded separately in
 the coefficient table.
 
 The three $`\widehat B_5[\cdot,0]`$ evaluations supply the polarization of the
-same phase map between $`\check n_3+\check n'_3`$ and
-$`\check{\mathcal{ℰ}}_3`$; the additional half term uses the already
+same phase map between $`\widetilde{n}_3+\widetilde{n}'_3`$ and
+$`\widetilde{\mathcal{ℰ}}_3`$; the additional half term uses the already
 defined mixed lower twister. Each evaluation contains 45 explicit
 cochain terms before argument expansion and cancellations. In particular
 this correction vanishes when the p+ip carry and mixed lower twister vanish.
@@ -640,27 +640,27 @@ quarter-valued contribution into physical parts.
 \widehat{\mathcal{ℰ}}_5^\psi
 ={}&\frac12\Big[
  \sum_{\eta\in\mathcal I_5^\psi}\prod_{(x,f)\in\eta}x(f)
- +(\mathcal{ℰ}_4^\psi+\bar n_2\bar n'_2)
-                    \cup_3(\bar n_2\bar n'_2)\\
-&\quad+\mathcal{𝒪}_5^\psi[N_2]\cup_4(\bar n_2\bar n'_2)
- +\zeta_{2,2}(\bar n_2,\bar n'_2)
- +\bar n_2\cup_1[(\bar n'_2)^2+\check\omega_2\bar n'_2]\\
-&\quad+\widetilde n_2(\bar n'_2\cup_1\bar n'_2)
- +(\check\omega_2\cup_1\bar n_2)\bar n'_2
- +s_1\bar n_2\widetilde n'_2
- +s_1(\bar n_2\cup_1s_1)\bar n'_2\\
-&\quad+\check{\mathcal{ℰ}}_3(\bar n_2+\bar n'_2)
- +\check\omega_2\check{\mathcal{ℰ}}_3-s_1\mathcal{ℰ}_4^\psi\Big]\\
+ +(\mathcal{ℰ}_4^\psi+[n_2]_2[n'_2]_2)
+                    \cup_3([n_2]_2[n'_2]_2)\\
+&\quad+\mathcal{𝒪}_5^\psi[N_2]\cup_4([n_2]_2[n'_2]_2)
+ +\zeta_{2,2}([n_2]_2,[n'_2]_2)
+ +[n_2]_2\cup_1[([n'_2]_2)^2+\widetilde{\omega}_2[n'_2]_2]\\
+&\quad+[\lfloor n_2/2\rfloor]_2([n'_2]_2\cup_1[n'_2]_2)
+ +(\widetilde{\omega}_2\cup_1[n_2]_2)[n'_2]_2
+ +s_1[n_2]_2[\lfloor n'_2/2\rfloor]_2
+ +s_1([n_2]_2\cup_1s_1)[n'_2]_2\\
+&\quad+\widetilde{\mathcal{ℰ}}_3([n_2]_2+[n'_2]_2)
+ +\widetilde{\omega}_2\widetilde{\mathcal{ℰ}}_3-s_1\mathcal{ℰ}_4^\psi\Big]\\
 &+\frac14\Big[
- \overline{V_5^\psi}
- +N_2\check{\mathcal{ℰ}}_3
- +(n_2\cup_1\check\omega_2)n'_2
- +(n'_2\cup_1\check\omega_2)n_2\Big]\\
-&+\frac18\check\omega_2(n_2\cup_1n'_2)\\
+ [V_5^\psi]_2
+ +N_2\widetilde{\mathcal{ℰ}}_3
+ +(n_2\cup_1\widetilde{\omega}_2)n'_2
+ +(n'_2\cup_1\widetilde{\omega}_2)n_2\Big]\\
+&+\frac18\widetilde{\omega}_2(n_2\cup_1n'_2)\\
 &+\frac13\Big[
  (n'_2-n_2)(n_2\cup_1n'_2)
  -(n_2\cup_1n'_2)(n'_2-n_2)\Big]\\
-&-\widehat B_5[\check{\mathcal{ℰ}}_3,0]\pmod1.
+&-\widehat B_5[\widetilde{\mathcal{ℰ}}_3,0]\pmod1.
 \end{aligned}
 ```
 
@@ -673,7 +673,7 @@ The protected whole quarter numerator has 20 interior terms, displayed
 below; the other nonlinear interiors are specified in the coefficient table.
 
 The final phase-map evaluation has 45 explicit cochain terms, with
-$`\check{\mathcal{ℰ}}_3`$ as its defined input. Together with
+$`\widetilde{\mathcal{ℰ}}_3`$ as its defined input. Together with
 $`-s_1\mathcal{ℰ}_4^\psi/2`$, it is the pure-integer part of the same
 terminal coordinate change, not a separately chosen p+ip correction.
 
@@ -688,34 +688,34 @@ The carry already used in the full product has the exact integral split
 
 ```math
 \begin{aligned}
-\lambda_3&=\frac{\check N_3-\check n_3-\check n'_3+n_2\cup_1n'_2}{2}\\
+\lambda_3&=\frac{\widetilde{N}_3-\widetilde{n}_3-\widetilde{n}'_3+n_2\cup_1n'_2}{2}\\
  &=\lambda_3^\gamma
            +\lambda_3^{\gamma\psi}+\lambda_3^\psi,\\
-\lambda_3^\gamma&=-\check n_3\cup_3\check n'_3,\\
+\lambda_3^\gamma&=-\widetilde{n}_3\cup_3\widetilde{n}'_3,\\
 \lambda_3^{\gamma\psi}
- &=-\overline{\check n_3+\check n'_3}
-                        \cup_3\check{\mathcal{ℰ}}_3,\\
-\lambda_3^\psi&=\frac{\check{\mathcal{ℰ}}_3+n_2\cup_1n'_2}{2}.
+ &=-[\widetilde{n}_3+\widetilde{n}'_3]_2
+                        \cup_3\widetilde{\mathcal{ℰ}}_3,\\
+\lambda_3^\psi&=\frac{\widetilde{\mathcal{ℰ}}_3+n_2\cup_1n'_2}{2}.
 \end{aligned}
 ```
 
-The products in these three definitions are integral. Binary factors use their canonical values, and the full bar on the middle line is retained. In the same convention,
+The products in these three definitions are integral. Binary factors use their canonical values, and the reduction modulo two of the full expression on the middle line is retained. In the same convention,
 
 ```math
 \Delta \beta_4=d\lambda_3-n'_2n_2,\qquad
-\overline{\Delta \beta_4}=d\bar\lambda_3+\bar n'_2\bar n_2.
+[\Delta \beta_4]_2=d[\lambda_3]_2+[n'_2]_2[n_2]_2.
 ```
 
 The three binary quarter numerators are expanded below. Their sum is the original binary numerator. The identity used above is
 
 ```math
 \begin{aligned}
-\frac14\overline{V_5^\gamma
-                  +V_5^{\gamma\psi}+V_5^\psi}
+\frac14[V_5^\gamma
+                  +V_5^{\gamma\psi}+V_5^\psi]_2
 ={}&\frac14\big[
- \overline{V_5^\gamma}
- +\overline{V_5^{\gamma\psi}}
- +\overline{V_5^\psi}\big]\\
+ [V_5^\gamma]_2
+ +[V_5^{\gamma\psi}]_2
+ +[V_5^\psi]_2\big]\\
 &+\frac12\big[
  V_5^\gamma\cup_5V_5^{\gamma\psi}
  +V_5^\gamma\cup_5V_5^\psi
@@ -737,16 +737,16 @@ stacked bosonic phase.
 ```math
 \begin{aligned}
 V_5^\gamma={}&
- \bar \beta_4^\gamma\cup_3\bar \beta_4^{\gamma\prime}
- +d\bar \beta_4^\gamma\cup_4\bar \beta_4^{\gamma\prime}\\
-&+(\bar \beta_4^\gamma+\bar \beta_4^{\gamma\prime})\cup_3d\bar\lambda_3^\gamma
- +(d\bar \beta_4^\gamma+d\bar \beta_4^{\gamma\prime})\cup_4d\bar\lambda_3^\gamma\\
-&+\mathrm{Sq}^2\bar\lambda_3^\gamma
- +\omega_2\bar\lambda_3^\gamma.
+ [\beta_4^\gamma]_2\cup_3[\beta_4^{\gamma\prime}]_2
+ +d[\beta_4^\gamma]_2\cup_4[\beta_4^{\gamma\prime}]_2\\
+&+([\beta_4^\gamma]_2+[\beta_4^{\gamma\prime}]_2)\cup_3d[\lambda_3^\gamma]_2
+ +(d[\beta_4^\gamma]_2+d[\beta_4^{\gamma\prime}]_2)\cup_4d[\lambda_3^\gamma]_2\\
+&+\mathrm{Sq}^2[\lambda_3^\gamma]_2
+ +\omega_2[\lambda_3^\gamma]_2.
 \end{aligned}
 ```
 
-Here $`\beta_4^\gamma=\beta^\circ\check n_3`$ is the Majorana part of the
+Here $`\beta_4^\gamma=\beta^-\widetilde{n}_3`$ is the Majorana part of the
 already defined carry $`\beta_4=\beta_4^\gamma+\beta_4^\psi`$. Primes mean the second
 stacking input. The three parts of $`\lambda_3`$ are those defined in the
 main stacking formula.
@@ -760,28 +760,28 @@ linear sums.
 ```math
 \begin{aligned}
 V_5^{\gamma\psi}={}&
- \bar \beta_4^\gamma\cup_3\bar \beta_4^{\psi\prime}
- +d\bar \beta_4^\gamma\cup_4\bar \beta_4^{\psi\prime}
- +\bar \beta_4^\psi\cup_3\bar \beta_4^{\gamma\prime}
- +d\bar \beta_4^\psi\cup_4\bar \beta_4^{\gamma\prime}\\
-&+(\bar \beta_4^\gamma+\bar \beta_4^{\gamma\prime})
-       \cup_3[d(\bar\lambda_3^{\gamma\psi}+\bar\lambda_3^\psi)
-                       +\bar n'_2\bar n_2]\\
-&+(d\bar \beta_4^\gamma+d\bar \beta_4^{\gamma\prime})
-       \cup_4[d(\bar\lambda_3^{\gamma\psi}+\bar\lambda_3^\psi)
-                       +\bar n'_2\bar n_2]\\
-&+(\bar \beta_4^\psi+\bar \beta_4^{\psi\prime})
-                      \cup_3d(\bar\lambda_3^\gamma+\bar\lambda_3^{\gamma\psi})\\
-&+(d\bar \beta_4^\psi+d\bar \beta_4^{\psi\prime})
-                      \cup_4d(\bar\lambda_3^\gamma+\bar\lambda_3^{\gamma\psi})\\
-&+\mathrm{Sq}^2\bar\lambda_3^{\gamma\psi}
- +(\bar n'_2\bar n_2)\cup_3d(\bar\lambda_3^\gamma+\bar\lambda_3^{\gamma\psi})
- +\omega_2\bar\lambda_3^{\gamma\psi}
- +\check n'_3\bar n_2+\bar n'_2\check n_3\\
+ [\beta_4^\gamma]_2\cup_3[\beta_4^{\psi\prime}]_2
+ +d[\beta_4^\gamma]_2\cup_4[\beta_4^{\psi\prime}]_2
+ +[\beta_4^\psi]_2\cup_3[\beta_4^{\gamma\prime}]_2
+ +d[\beta_4^\psi]_2\cup_4[\beta_4^{\gamma\prime}]_2\\
+&+([\beta_4^\gamma]_2+[\beta_4^{\gamma\prime}]_2)
+       \cup_3[d([\lambda_3^{\gamma\psi}]_2+[\lambda_3^\psi]_2)
+                       +[n'_2]_2[n_2]_2]\\
+&+(d[\beta_4^\gamma]_2+d[\beta_4^{\gamma\prime}]_2)
+       \cup_4[d([\lambda_3^{\gamma\psi}]_2+[\lambda_3^\psi]_2)
+                       +[n'_2]_2[n_2]_2]\\
+&+([\beta_4^\psi]_2+[\beta_4^{\psi\prime}]_2)
+                      \cup_3d([\lambda_3^\gamma]_2+[\lambda_3^{\gamma\psi}]_2)\\
+&+(d[\beta_4^\psi]_2+d[\beta_4^{\psi\prime}]_2)
+                      \cup_4d([\lambda_3^\gamma]_2+[\lambda_3^{\gamma\psi}]_2)\\
+&+\mathrm{Sq}^2[\lambda_3^{\gamma\psi}]_2
+ +([n'_2]_2[n_2]_2)\cup_3d([\lambda_3^\gamma]_2+[\lambda_3^{\gamma\psi}]_2)
+ +\omega_2[\lambda_3^{\gamma\psi}]_2
+ +\widetilde{n}'_3[n_2]_2+[n'_2]_2\widetilde{n}_3\\
 &+\sum_{i\lt j}\Big[
- d(\bar\lambda_3^i\cup_2\bar\lambda_3^j)
- +d(d\bar\lambda_3^i\cup_3\bar\lambda_3^j)
- +d\bar\lambda_3^i\cup_3d\bar\lambda_3^j\Big].
+ d([\lambda_3^i]_2\cup_2[\lambda_3^j]_2)
+ +d(d[\lambda_3^i]_2\cup_3[\lambda_3^j]_2)
+ +d[\lambda_3^i]_2\cup_3d[\lambda_3^j]_2\Big].
 \end{aligned}
 ```
 
@@ -801,23 +801,23 @@ protected-quotient convention.
 ```math
 \begin{aligned}
 V_5^\psi={}&
- \bar \beta_4^\psi\cup_3\bar \beta_4^{\psi\prime}
- +d\bar \beta_4^\psi\cup_4\bar \beta_4^{\psi\prime}\\
-&+(\bar \beta_4^\psi+\bar \beta_4^{\psi\prime})
-          \cup_3(d\bar\lambda_3^\psi+\bar n'_2\bar n_2)\\
-&+(d\bar \beta_4^\psi+d\bar \beta_4^{\psi\prime})
-          \cup_4(d\bar\lambda_3^\psi+\bar n'_2\bar n_2)\\
-&+\mathrm{Sq}^2\bar\lambda_3^\psi
- +(\bar n'_2\bar n_2)\cup_3d\bar\lambda_3^\psi
- +\omega_2\bar\lambda_3^\psi\\
-&+(\widetilde{\beta_{s_1}\check\omega_2}
-       +\overline{\beta_{s_1}\check\omega_2})
-                        (\bar n_2\cup_2\bar n'_2)\\
-&+\zeta_{2,2}(\bar n'_2,\bar n_2)
- +(\check\omega_2\cup_1\bar n'_2)\bar n_2
- +\widetilde n'_2(\bar n_2\cup_1\bar n_2)\\
-&+s_1\bar n'_2\widetilde n_2
- +s_1(\bar n'_2\cup_1s_1)\bar n_2.
+ [\beta_4^\psi]_2\cup_3[\beta_4^{\psi\prime}]_2
+ +d[\beta_4^\psi]_2\cup_4[\beta_4^{\psi\prime}]_2\\
+&+([\beta_4^\psi]_2+[\beta_4^{\psi\prime}]_2)
+          \cup_3(d[\lambda_3^\psi]_2+[n'_2]_2[n_2]_2)\\
+&+(d[\beta_4^\psi]_2+d[\beta_4^{\psi\prime}]_2)
+          \cup_4(d[\lambda_3^\psi]_2+[n'_2]_2[n_2]_2)\\
+&+\mathrm{Sq}^2[\lambda_3^\psi]_2
+ +([n'_2]_2[n_2]_2)\cup_3d[\lambda_3^\psi]_2
+ +\omega_2[\lambda_3^\psi]_2\\
+&+([\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2
+       +[\beta_{s_1}\widetilde{\omega}_2]_2)
+                        ([n_2]_2\cup_2[n'_2]_2)\\
+&+\zeta_{2,2}([n'_2]_2,[n_2]_2)
+ +(\widetilde{\omega}_2\cup_1[n'_2]_2)[n_2]_2
+ +[\lfloor n'_2/2\rfloor]_2([n_2]_2\cup_1[n_2]_2)\\
+&+s_1[n'_2]_2[\lfloor n_2/2\rfloor]_2
+ +s_1([n'_2]_2\cup_1s_1)[n_2]_2.
 \end{aligned}
 ```
 
@@ -835,8 +835,8 @@ $`\widehat{\mathcal{ℰ}}_5^{\gamma\psi}`$.
 The [paired phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is applied to
 both the obstruction and the stacking law. To check the sum of its three
 physical contributions, use the actual lower output
-$`\check N_3=\check n_3+\check n'_3+\check{\mathcal{ℰ}}_3`$ and
+$`\widetilde{N}_3=\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal{ℰ}}_3`$ and
 $`N_4=n_4+n'_4+\mathcal{ℰ}_4`$. The displayed corrections sum exactly to
-$`-\widehat B_5[\check N_3,N_4]+\widehat B_5[\check n_3,n_4]+\widehat B_5[\check n'_3,n'_4]`$.
+$`-\widehat B_5[\widetilde{N}_3,N_4]+\widehat B_5[\widetilde{n}_3,n_4]+\widehat B_5[\widetilde{n}'_3,n'_4]`$.
 The lower twisters, finite coefficient sets, and existing output coboundary
 are unchanged; the full terminal formula uses this one transported phase.

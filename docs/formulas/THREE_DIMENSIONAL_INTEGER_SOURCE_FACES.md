@@ -17,12 +17,12 @@ All table arithmetic is binary. There are 45 rows, accounting for all 52
 integer-digit monomials; equal background coefficients have been grouped.
 
 Every argument is a face of the original ordered five-simplex $`(012345)`$.
-The bar and tilde retain their fixed meanings, and the rare third digit is
-written explicitly as $`\overline{\lfloor n_1(ij)/4\rfloor}`$.
+The first two binary digits are $`[x]_2`$ and $`[\lfloor x/2\rfloor]_2`$; the rare third digit is
+written explicitly as $`[\lfloor n_1(ij)/4\rfloor]_2`$.
 Non-root faces such as $`\omega_2(123)`$ denote the actual physical cochain
 values. Their equality with root-face expansions uses only
 $`ds_1=d\omega_2=0`$. The shifted background, when displayed, is the already
-defined $`\check\omega_2=\omega_2+s_1\cup s_1`$.
+defined $`\widetilde{\omega}_2=\omega_2+s_1\cup s_1`$.
 
 The table defines only this binary half-valued term. Integer values in the
 other quarter- and sixteenth-valued terms of the obstruction remain
@@ -33,7 +33,7 @@ unrestricted. No reduction of the full phase modulo eight is implied.
 Integer factor:
 
 ```math
-\bar n_1(01)
+[n_1]_2(01)
 ```
 
 Background factor (continued across successive displays):
@@ -84,7 +84,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\widetilde n_1(01)
+[\lfloor n_1/2\rfloor]_2(01)
 ```
 
 Background factor:
@@ -110,7 +110,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n_1(01)
+[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)
 ```
 
 Background factor:
@@ -148,7 +148,7 @@ Background factor:
 Integer factor:
 
 ```math
-\overline{\left\lfloor n_1(01)/4\right\rfloor}
+[\left\lfloor n_1(01)/4\right\rfloor]_2
 ```
 
 Background factor:
@@ -173,7 +173,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)
+[n_1]_2(12)
 ```
 
 Background factor (continued across successive displays):
@@ -265,7 +265,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)
+[n_1]_2(01)[n_1]_2(12)
 ```
 
 Background factor:
@@ -286,7 +286,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n_1(12)
+[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)
 ```
 
 Background factor:
@@ -313,9 +313,9 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\widetilde n_1(01)\bar n_1(12)\\
-+\widetilde n_1(01)\widetilde n_1(12)\\
-+\bar n_1(01)\bar n_1(12)\widetilde n_1(12)\end{gathered}
+\begin{gathered}[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(01)[\lfloor n_1/2\rfloor]_2(12)\\
++[n_1]_2(01)[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)\end{gathered}
 ```
 
 Background factor:
@@ -333,7 +333,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)
+[\lfloor n_1/2\rfloor]_2(12)
 ```
 
 Background factor:
@@ -368,7 +368,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n_1(12)
+[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(12)
 ```
 
 Background factor:
@@ -388,7 +388,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n_1(12)
+[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)
 ```
 
 Background factor:
@@ -416,7 +416,7 @@ Background factor:
 Integer factor:
 
 ```math
-\overline{\left\lfloor n_1(12)/4\right\rfloor}
+[\left\lfloor n_1(12)/4\right\rfloor]_2
 ```
 
 Background factor:
@@ -435,7 +435,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)
+[n_1]_2(23)
 ```
 
 Background factor (continued across successive displays):
@@ -640,7 +640,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)
+[n_1]_2(12)[n_1]_2(23)
 ```
 
 Background factor:
@@ -683,7 +683,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n_1(23)
+[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)
 ```
 
 Background factor:
@@ -697,7 +697,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n_1(12)\bar n_1(23)
+[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n_1]_2(23)
 ```
 
 Background factor:
@@ -711,7 +711,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\bar n_1(23)
+[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)
 ```
 
 Background factor:
@@ -750,8 +750,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(12)\widetilde n_1(12)\bar n_1(23)\\
-+\bar n_1(12)\bar n_1(23)\widetilde n_1(23)\end{gathered}
+\begin{gathered}[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)\\
++[n_1]_2(12)[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(23)\end{gathered}
 ```
 
 Background factor:
@@ -775,7 +775,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(23)
+[\lfloor n_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -806,7 +806,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n_1(23)
+[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -835,7 +835,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\widetilde n_1(23)
+[\lfloor n_1/2\rfloor]_2(12)[\lfloor n_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -859,7 +859,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\widetilde n_1(23)
+[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(23)
 ```
 
 Background factor (continued across successive displays):
@@ -927,7 +927,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\bar n_1(34)
+[n_1]_2(34)
 ```
 
 Background factor (continued across successive displays):
@@ -1263,7 +1263,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n_1(34)
+[n_1]_2(23)[n_1]_2(34)
 ```
 
 Background factor (continued across successive displays):
@@ -1343,7 +1343,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n_1(34)
+[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)
 ```
 
 Background factor:
@@ -1359,7 +1359,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n_1(34)
+[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)
 ```
 
 Background factor:
@@ -1373,8 +1373,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(12)\bar n_1(23)\bar n_1(34)\\
-+\bar n_1(12)\bar n_1(23)\widetilde n_1(34)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[n_1]_2(34)\\
++[n_1]_2(12)[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1388,15 +1388,15 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(23)\bar n_1(34)
+[\lfloor n_1/2\rfloor]_2(23)[n_1]_2(34)
 ```
 
 Background factor (continued across successive displays):
 
 ```math
 \begin{aligned}&\omega_2(045)\omega_2(015)\bigl(1+(1+s_1(01))\omega_2(025)\bigr)\\
-&+\omega_2(045)(1+\check{\omega}_2(012))\omega_2(025)\\
-&+\omega_2(045)(1+\check{\omega}_2(012))(1+s_1(01))\omega_2(015)\\
+&+\omega_2(045)(1+\widetilde{\omega}_2(012))\omega_2(025)\\
+&+\omega_2(045)(1+\widetilde{\omega}_2(012))(1+s_1(01))\omega_2(015)\\
 &+\omega_2(145)\omega_2(045)\bigl(1+(1+s_1(01))\omega_2(015)\bigr)\\
 &+\omega_2(145)(1+s_1(02))s_1(01)\\
 &+\omega_2(145)(1+\omega_2(125))(1+s_1(01))\omega_2(045)\\
@@ -1442,9 +1442,9 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(23)\widetilde n_1(23)\bar n_1(34)\\
-+\widetilde n_1(23)\widetilde n_1(34)\\
-+\bar n_1(23)\bar n_1(34)\widetilde n_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(23)[n_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(23)[\lfloor n_1/2\rfloor]_2(34)\\
++[n_1]_2(23)[n_1]_2(34)[\lfloor n_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1472,7 +1472,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(34)
+[\lfloor n_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -1498,7 +1498,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\widetilde n_1(34)
+[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -1539,7 +1539,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(34)\widetilde n_1(34)
+[n_1]_2(34)[\lfloor n_1/2\rfloor]_2(34)
 ```
 
 Background factor (continued across successive displays):
@@ -1588,10 +1588,10 @@ Background factor (continued across successive displays):
 &+s_1(12)(1+\omega_2(023))s_1(01)\omega_2(024)\omega_2(034)\\
 &+s_1(12)(1+\omega_2(023))s_1(01)s_1(03)\omega_2(025)\\
 &+s_1(12)(1+\omega_2(023))s_1(01)s_1(03)\omega_2(024)\\
-&+s_1(12)(1+\omega_2(023))(1+\check{\omega}_2(013))s_1(01)\omega_2(025)(1+\omega_2(035))\omega_2(015)\\
-&+s_1(12)(1+\omega_2(023))(1+\check{\omega}_2(013))s_1(01)\omega_2(025)(1+\omega_2(035))s_1(03)\\
-&+s_1(12)(1+\omega_2(023))(1+\check{\omega}_2(013))s_1(01)(1+\omega_2(034))\omega_2(024)\omega_2(014)\\
-&+s_1(12)(1+\omega_2(023))(1+\check{\omega}_2(013))s_1(01)(1+\omega_2(034))\omega_2(024)s_1(03)\\
+&+s_1(12)(1+\omega_2(023))(1+\widetilde{\omega}_2(013))s_1(01)\omega_2(025)(1+\omega_2(035))\omega_2(015)\\
+&+s_1(12)(1+\omega_2(023))(1+\widetilde{\omega}_2(013))s_1(01)\omega_2(025)(1+\omega_2(035))s_1(03)\\
+&+s_1(12)(1+\omega_2(023))(1+\widetilde{\omega}_2(013))s_1(01)(1+\omega_2(034))\omega_2(024)\omega_2(014)\\
+&+s_1(12)(1+\omega_2(023))(1+\widetilde{\omega}_2(013))s_1(01)(1+\omega_2(034))\omega_2(024)s_1(03)\\
 &+s_1(12)(1+\omega_2(012))s_1(01)s_1(03)\omega_2(035)\\
 &+s_1(12)(1+\omega_2(012))s_1(01)s_1(03)\omega_2(025)\\
 &+s_1(12)(1+\omega_2(012))s_1(01)(1+\omega_2(024))\omega_2(014)\omega_2(025)\omega_2(035)\\
@@ -1669,7 +1669,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\bar n_1(45)
+[n_1]_2(45)
 ```
 
 Background factor (continued across successive displays):
@@ -2034,7 +2034,7 @@ Background factor (continued across successive displays):
 &+s_1(12)\omega_2(125)(1+\omega_2(035))\omega_2(012)s_1(04)s_1(01)(1+\omega_2(015))\omega_2(023)\\
 &+s_1(12)\omega_2(125)(1+\omega_2(035))\omega_2(134)\omega_2(013)\\
 &+s_1(12)\omega_2(125)(1+\omega_2(035))\omega_2(134)\omega_2(012)\\
-&+s_1(12)\omega_2(125)(1+\omega_2(035))s_1(34)\check{\omega}_2(014)\\
+&+s_1(12)\omega_2(125)(1+\omega_2(035))s_1(34)\widetilde{\omega}_2(014)\\
 &+s_1(12)\omega_2(125)(1+\omega_2(035))s_1(34)(1+\omega_2(023))s_1(01)s_1(04)\bigl(\omega_2(015)+(1+\omega_2(013))\bigr)\\
 &+\omega_2(345)\omega_2(012)\omega_2(024)\omega_2(034)\\
 &+\omega_2(345)\omega_2(012)s_1(04)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
@@ -2107,22 +2107,22 @@ Background factor (continued across successive displays):
 &+\omega_2(345)\omega_2(123)(1+s_1(13))s_1(34)s_1(02)\omega_2(014)\\
 &+\omega_2(345)\omega_2(123)(1+s_1(13))s_1(34)s_1(02)\omega_2(013)\\
 &+\omega_2(345)\omega_2(123)(1+s_1(13))s_1(34)(1+s_1(03))s_1(02)\\
-&+\omega_2(345)\omega_2(123)\check{\omega}_2(024)\bigl(\omega_2(015)+\omega_2(012)\bigr)\\
-&+\omega_2(345)\omega_2(123)\check{\omega}_2(024)(1+s_1(02))s_1(03)s_1(04)\bigl(\omega_2(015)+\omega_2(012)\bigr)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))\bigl(\omega_2(015)+\omega_2(013)\bigr)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))\omega_2(012)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(02))s_1(01)(1+s_1(04))\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))\omega_2(013)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))\omega_2(012)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))s_1(02)\omega_2(015)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))s_1(02)\omega_2(012)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))s_1(01)\omega_2(015)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))s_1(01)\omega_2(013)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))s_1(01)s_1(02)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))s_1(04)s_1(01)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))s_1(04)s_1(01)\omega_2(014)\omega_2(015)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))s_1(04)s_1(01)\omega_2(013)\omega_2(015)\\
-&+\omega_2(345)\omega_2(123)(1+\check{\omega}_2(034))(1+s_1(03))s_1(04)s_1(01)\omega_2(013)(1+\omega_2(014))\\
+&+\omega_2(345)\omega_2(123)\widetilde{\omega}_2(024)\bigl(\omega_2(015)+\omega_2(012)\bigr)\\
+&+\omega_2(345)\omega_2(123)\widetilde{\omega}_2(024)(1+s_1(02))s_1(03)s_1(04)\bigl(\omega_2(015)+\omega_2(012)\bigr)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))\bigl(\omega_2(015)+\omega_2(013)\bigr)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))\omega_2(012)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(02))s_1(01)(1+s_1(04))\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))\omega_2(013)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))\omega_2(012)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))s_1(02)\omega_2(015)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))s_1(02)\omega_2(012)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))s_1(01)\omega_2(015)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))s_1(01)\omega_2(013)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))s_1(01)s_1(02)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))s_1(04)s_1(01)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))s_1(04)s_1(01)\omega_2(014)\omega_2(015)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))s_1(04)s_1(01)\omega_2(013)\omega_2(015)\\
+&+\omega_2(345)\omega_2(123)(1+\widetilde{\omega}_2(034))(1+s_1(03))s_1(04)s_1(01)\omega_2(013)(1+\omega_2(014))\\
 &+\omega_2(345)\omega_2(125)(1+s_1(01))\omega_2(015)\omega_2(024)\\
 &+\omega_2(345)\omega_2(125)\omega_2(013)s_1(01)\omega_2(015)\\
 &+\omega_2(345)\omega_2(125)\omega_2(013)s_1(01)s_1(04)\\
@@ -2137,9 +2137,9 @@ Background factor (continued across successive displays):
 &+\omega_2(345)\omega_2(125)\omega_2(012)s_1(01)\omega_2(024)\\
 &+\omega_2(345)\omega_2(125)\omega_2(012)s_1(01)\omega_2(015)\\
 &+\omega_2(345)\omega_2(125)\omega_2(012)s_1(01)s_1(04)\\
-&+\omega_2(345)\omega_2(125)\check{\omega}_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
-&+\omega_2(345)\omega_2(125)\check{\omega}_2(014)\omega_2(013)\\
-&+\omega_2(345)\omega_2(125)\check{\omega}_2(014)(1+\omega_2(012))\\
+&+\omega_2(345)\omega_2(125)\widetilde{\omega}_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+\omega_2(345)\omega_2(125)\widetilde{\omega}_2(014)\omega_2(013)\\
+&+\omega_2(345)\omega_2(125)\widetilde{\omega}_2(014)(1+\omega_2(012))\\
 &+\omega_2(345)\omega_2(125)s_1(12)\omega_2(013)\\
 &+\omega_2(345)\omega_2(125)s_1(12)s_1(04)\omega_2(034)\omega_2(013)\\
 &+\omega_2(345)\omega_2(125)s_1(12)s_1(04)\omega_2(034)\omega_2(012)\\
@@ -2219,8 +2219,8 @@ Background factor (continued across successive displays):
 &+\omega_2(345)(1+\omega_2(235))s_1(13)\omega_2(013)\omega_2(023)\\
 &+\omega_2(345)(1+\omega_2(235))s_1(13)\omega_2(013)\omega_2(012)\\
 &+\omega_2(345)(1+\omega_2(235))s_1(13)\omega_2(013)s_1(04)\\
-&+\omega_2(345)(1+\omega_2(235))s_1(13)\omega_2(013)\check{\omega}_2(014)\\
-&+\omega_2(345)(1+\omega_2(235))s_1(13)\omega_2(013)\check{\omega}_2(014)(1+s_1(01))\omega_2(015)\\
+&+\omega_2(345)(1+\omega_2(235))s_1(13)\omega_2(013)\widetilde{\omega}_2(014)\\
+&+\omega_2(345)(1+\omega_2(235))s_1(13)\omega_2(013)\widetilde{\omega}_2(014)(1+s_1(01))\omega_2(015)\\
 &+\omega_2(345)(1+\omega_2(235))s_1(13)(1+\omega_2(024))s_1(01)\\
 &+\omega_2(345)(1+\omega_2(235))s_1(13)(1+\omega_2(034))s_1(01)\omega_2(013)\\
 &+\omega_2(345)(1+\omega_2(235))s_1(13)(1+\omega_2(034))s_1(01)s_1(04)(1+\omega_2(013))\omega_2(014)\\
@@ -2274,7 +2274,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\bar n_1(34)\bar n_1(45)
+[n_1]_2(34)[n_1]_2(45)
 ```
 
 Background factor (continued across successive displays):
@@ -2339,7 +2339,7 @@ Background factor (continued across successive displays):
 &+\omega_2(235)(1+\omega_2(013))\omega_2(015)\\
 &+\omega_2(235)(1+\omega_2(023))\omega_2(013)\\
 &+\omega_2(235)(1+s_1(01))s_1(02)\omega_2(015)\\
-&+\omega_2(235)\check{\omega}_2(012)\\
+&+\omega_2(235)\widetilde{\omega}_2(012)\\
 &+\omega_2(235)(1+s_1(04))\omega_2(023)\bigl(\omega_2(015)+\omega_2(013)\bigr)\\
 &+\omega_2(235)(1+s_1(04))\omega_2(012)\omega_2(015)\\
 &+\omega_2(235)(1+s_1(04))s_1(01)\omega_2(023)\\
@@ -2395,7 +2395,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n_1(34)\bar n_1(45)
+[n_1]_2(23)[n_1]_2(34)[n_1]_2(45)
 ```
 
 Background factor:
@@ -2413,7 +2413,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n_1(45)
+[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)[n_1]_2(45)
 ```
 
 Background factor:
@@ -2427,7 +2427,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(23)\bar n_1(34)\bar n_1(45)
+[\lfloor n_1/2\rfloor]_2(23)[n_1]_2(34)[n_1]_2(45)
 ```
 
 Background factor:
@@ -2441,7 +2441,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(34)\bar n_1(45)
+[\lfloor n_1/2\rfloor]_2(34)[n_1]_2(45)
 ```
 
 Background factor (continued across successive displays):
@@ -2499,7 +2499,7 @@ Background factor (continued across successive displays):
 &+\omega_2(235)s_1(12)(1+\omega_2(135))(1+\omega_2(013))\\
 &+\omega_2(235)s_1(12)(1+\omega_2(135))(1+\omega_2(035))\\
 &+\omega_2(235)s_1(12)(1+\omega_2(135))(1+\omega_2(035))s_1(01)\omega_2(012)\omega_2(025)\\
-&+\omega_2(235)s_1(12)(1+\omega_2(135))(1+\omega_2(035))\check{\omega}_2(013)s_1(01)\omega_2(025)\\
+&+\omega_2(235)s_1(12)(1+\omega_2(135))(1+\omega_2(035))\widetilde{\omega}_2(013)s_1(01)\omega_2(025)\\
 &+\omega_2(235)s_1(12)(1+\omega_2(135))s_1(14)\omega_2(035)\\
 &+\omega_2(235)s_1(12)(1+\omega_2(135))s_1(14)\omega_2(025)\\
 &+\omega_2(235)s_1(12)(1+\omega_2(135))s_1(14)\omega_2(013)\\
@@ -2511,8 +2511,8 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(34)\widetilde n_1(34)\bar n_1(45)\\
-+\bar n_1(34)\bar n_1(45)\widetilde n_1(45)\end{gathered}
+\begin{gathered}[n_1]_2(34)[\lfloor n_1/2\rfloor]_2(34)[n_1]_2(45)\\
++[n_1]_2(34)[n_1]_2(45)[\lfloor n_1/2\rfloor]_2(45)\end{gathered}
 ```
 
 Background factor:
@@ -2539,7 +2539,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(45)
+[\lfloor n_1/2\rfloor]_2(45)
 ```
 
 Background factor:
@@ -2572,7 +2572,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(34)\widetilde n_1(45)
+[n_1]_2(34)[\lfloor n_1/2\rfloor]_2(45)
 ```
 
 Background factor (continued across successive displays):
@@ -2629,7 +2629,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n_1(34)\widetilde n_1(45)
+[n_1]_2(23)[n_1]_2(34)[\lfloor n_1/2\rfloor]_2(45)
 ```
 
 Background factor:
@@ -2643,7 +2643,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(34)\widetilde n_1(45)
+[\lfloor n_1/2\rfloor]_2(34)[\lfloor n_1/2\rfloor]_2(45)
 ```
 
 Background factor:
@@ -2652,9 +2652,9 @@ Background factor:
 \begin{aligned}&s_1(12)s_1(23)\omega_2(015)\bigl(\omega_2(012)+s_1(03)(1+\omega_2(012))\bigr)\\
 &+\omega_2(135)(1+s_1(01))\omega_2(015)\bigl(\omega_2(035)+\omega_2(012)\bigr)\\
 &+\omega_2(135)(1+s_1(02))s_1(01)s_1(03)\\
-&+\check{\omega}_2(123)\omega_2(135)+\check{\omega}_2(123)(1+s_1(01))\omega_2(035)\\
-&+\check{\omega}_2(123)(1+s_1(01))\omega_2(012)\bigl(\omega_2(015)+\omega_2(013)\bigr)\\
-&+\check{\omega}_2(123)(1+s_1(02))s_1(01)s_1(03)\\
+&+\widetilde{\omega}_2(123)\omega_2(135)+\widetilde{\omega}_2(123)(1+s_1(01))\omega_2(035)\\
+&+\widetilde{\omega}_2(123)(1+s_1(01))\omega_2(012)\bigl(\omega_2(015)+\omega_2(013)\bigr)\\
+&+\widetilde{\omega}_2(123)(1+s_1(02))s_1(01)s_1(03)\\
 &+\omega_2(235)\omega_2(023)\omega_2(035)\\
 &+\omega_2(235)s_1(02)\bigl(1+\omega_2(023)\omega_2(035)\bigr)\\
 &+\omega_2(235)(1+\omega_2(015))\bigl(1+s_1(02)\omega_2(012)\bigr)\\
@@ -2668,7 +2668,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(45)\widetilde n_1(45)
+[n_1]_2(45)[\lfloor n_1/2\rfloor]_2(45)
 ```
 
 Background factor (continued across successive displays):
@@ -2772,7 +2772,7 @@ Background factor (continued across successive displays):
 &+s_1(12)\omega_2(125)(1+\omega_2(035))\omega_2(013)s_1(01)\omega_2(025)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
 &+s_1(12)\omega_2(125)(1+\omega_2(045))s_1(01)s_1(04)\\
 &+s_1(12)\omega_2(125)(1+\omega_2(045))(1+\omega_2(025))\\
-&+s_1(12)\omega_2(125)(1+\omega_2(045))(1+\omega_2(024))\omega_2(025)(1+\check{\omega}_2(014))s_1(01)\\
+&+s_1(12)\omega_2(125)(1+\omega_2(045))(1+\omega_2(024))\omega_2(025)(1+\widetilde{\omega}_2(014))s_1(01)\\
 &+s_1(12)\omega_2(125)(1+\omega_2(012))s_1(04)\\
 &+s_1(12)\omega_2(125)(1+\omega_2(012))s_1(01)(1+s_1(04))\\
 &+s_1(12)\omega_2(125)(1+\omega_2(012))\omega_2(245)s_1(01)\omega_2(025)\bigl(\omega_2(045)+\omega_2(035)\bigr)\end{aligned}
@@ -2815,62 +2815,62 @@ Background factor (continued across successive displays):
 
 ```math
 \begin{aligned}&{}+s_1(12)(1+s_1(13))\omega_2(345)\omega_2(135)\omega_2(134)\\
-&+(1+\check{\omega}_2(234))s_1(01)\omega_2(024)\bigl(\omega_2(035)+\omega_2(025)\bigr)\\
-&+(1+\check{\omega}_2(234))s_1(01)\omega_2(024)\omega_2(014)\\
-&+(1+\check{\omega}_2(234))s_1(01)\omega_2(034)\bigl(\omega_2(025)+\omega_2(024)\bigr)\\
-&+(1+\check{\omega}_2(234))s_1(01)\omega_2(034)\omega_2(014)\\
-&+(1+\check{\omega}_2(234))s_1(01)\omega_2(013)\bigl(\omega_2(035)+\omega_2(034)\bigr)\\
-&+(1+\check{\omega}_2(234))s_1(01)\omega_2(013)\omega_2(025)\\
-&+(1+\check{\omega}_2(234))s_1(01)\omega_2(013)\omega_2(014)\\
-&+(1+\check{\omega}_2(234))s_1(01)(1+\omega_2(135))\omega_2(035)\\
-&+(1+\check{\omega}_2(234))s_1(01)(1+\omega_2(135))\omega_2(025)\\
-&+(1+\check{\omega}_2(234))s_1(01)(1+\omega_2(135))\omega_2(013)\\
-&+(1+\check{\omega}_2(234))\omega_2(012)\bigl(\omega_2(035)+\omega_2(034)+\omega_2(025)\bigr)\\
-&+(1+\check{\omega}_2(234))\omega_2(012)\omega_2(024)\\
-&+(1+\check{\omega}_2(234))\omega_2(012)s_1(01)\bigl(\omega_2(025)+\omega_2(024)\bigr)\\
-&+(1+\check{\omega}_2(234))\omega_2(012)s_1(01)\omega_2(015)\\
-&+(1+\check{\omega}_2(234))\omega_2(012)s_1(01)\omega_2(014)\\
-&+(1+\check{\omega}_2(234))s_1(34)s_1(01)\omega_2(034)\\
-&+(1+\check{\omega}_2(234))s_1(34)(1+s_1(14))\omega_2(012)\\
-&+(1+\check{\omega}_2(234))s_1(34)(1+s_1(14))s_1(01)\omega_2(014)\\
-&+(1+\check{\omega}_2(234))s_1(34)(1+s_1(14))s_1(01)\omega_2(013)\\
-&+(1+\check{\omega}_2(234))s_1(12)\omega_2(014)(1+\omega_2(035))\\
-&+(1+\check{\omega}_2(234))s_1(12)\omega_2(015)\bigl(\omega_2(035)+\omega_2(014)\bigr)\\
-&+(1+\check{\omega}_2(234))s_1(12)s_1(01)\omega_2(025)\omega_2(035)\\
-&+(1+\check{\omega}_2(234))s_1(12)s_1(01)\omega_2(024)\\
-&+(1+\check{\omega}_2(234))s_1(12)s_1(01)s_1(03)\omega_2(025)\\
-&+(1+\check{\omega}_2(234))s_1(12)s_1(01)s_1(03)\omega_2(024)\\
-&+(1+\check{\omega}_2(234))s_1(12)s_1(34)s_1(03)\omega_2(015)\\
-&+(1+\check{\omega}_2(234))s_1(12)s_1(34)s_1(03)\omega_2(014)\\
-&+(1+\check{\omega}_2(234))s_1(12)s_1(34)(1+s_1(01))\omega_2(012)\\
-&+(1+\check{\omega}_2(234))s_1(12)s_1(34)(1+\omega_2(024))s_1(01)\\
-&+(1+\check{\omega}_2(234))s_1(12)(1+\omega_2(135))s_1(01)\omega_2(025)(1+\omega_2(035))\bigl(\omega_2(015)+\omega_2(012)+(1+s_1(03))\bigr)\\
-&+(1+\check{\omega}_2(234))s_1(12)(1+\check{\omega}_2(034))\omega_2(015)\end{aligned}
+&+(1+\widetilde{\omega}_2(234))s_1(01)\omega_2(024)\bigl(\omega_2(035)+\omega_2(025)\bigr)\\
+&+(1+\widetilde{\omega}_2(234))s_1(01)\omega_2(024)\omega_2(014)\\
+&+(1+\widetilde{\omega}_2(234))s_1(01)\omega_2(034)\bigl(\omega_2(025)+\omega_2(024)\bigr)\\
+&+(1+\widetilde{\omega}_2(234))s_1(01)\omega_2(034)\omega_2(014)\\
+&+(1+\widetilde{\omega}_2(234))s_1(01)\omega_2(013)\bigl(\omega_2(035)+\omega_2(034)\bigr)\\
+&+(1+\widetilde{\omega}_2(234))s_1(01)\omega_2(013)\omega_2(025)\\
+&+(1+\widetilde{\omega}_2(234))s_1(01)\omega_2(013)\omega_2(014)\\
+&+(1+\widetilde{\omega}_2(234))s_1(01)(1+\omega_2(135))\omega_2(035)\\
+&+(1+\widetilde{\omega}_2(234))s_1(01)(1+\omega_2(135))\omega_2(025)\\
+&+(1+\widetilde{\omega}_2(234))s_1(01)(1+\omega_2(135))\omega_2(013)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(012)\bigl(\omega_2(035)+\omega_2(034)+\omega_2(025)\bigr)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(012)\omega_2(024)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(012)s_1(01)\bigl(\omega_2(025)+\omega_2(024)\bigr)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(012)s_1(01)\omega_2(015)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(012)s_1(01)\omega_2(014)\\
+&+(1+\widetilde{\omega}_2(234))s_1(34)s_1(01)\omega_2(034)\\
+&+(1+\widetilde{\omega}_2(234))s_1(34)(1+s_1(14))\omega_2(012)\\
+&+(1+\widetilde{\omega}_2(234))s_1(34)(1+s_1(14))s_1(01)\omega_2(014)\\
+&+(1+\widetilde{\omega}_2(234))s_1(34)(1+s_1(14))s_1(01)\omega_2(013)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)\omega_2(014)(1+\omega_2(035))\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)\omega_2(015)\bigl(\omega_2(035)+\omega_2(014)\bigr)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)s_1(01)\omega_2(025)\omega_2(035)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)s_1(01)\omega_2(024)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)s_1(01)s_1(03)\omega_2(025)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)s_1(01)s_1(03)\omega_2(024)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)s_1(34)s_1(03)\omega_2(015)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)s_1(34)s_1(03)\omega_2(014)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)s_1(34)(1+s_1(01))\omega_2(012)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)s_1(34)(1+\omega_2(024))s_1(01)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)(1+\omega_2(135))s_1(01)\omega_2(025)(1+\omega_2(035))\bigl(\omega_2(015)+\omega_2(012)+(1+s_1(03))\bigr)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)(1+\widetilde{\omega}_2(034))\omega_2(015)\end{aligned}
 ```
 
 ```math
-\begin{aligned}&{}+(1+\check{\omega}_2(234))s_1(12)(1+\check{\omega}_2(034))\omega_2(014)\\
-&+(1+\check{\omega}_2(234))s_1(12)(1+\check{\omega}_2(034))s_1(01)\omega_2(024)\\
-&+(1+\check{\omega}_2(234))s_1(12)(1+\check{\omega}_2(034))s_1(01)\omega_2(024)\omega_2(012)\omega_2(014)\\
-&+(1+\check{\omega}_2(234))s_1(12)(1+\check{\omega}_2(034))s_1(01)\omega_2(024)s_1(04)\omega_2(012)\\
-&+(1+\check{\omega}_2(234))s_1(12)(1+\check{\omega}_2(034))\check{\omega}_2(013)s_1(01)\omega_2(024)\bigl(\omega_2(014)+\omega_2(012)+(1+s_1(04))\bigr)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)s_1(02)\bigl(\omega_2(015)+\omega_2(014)\bigr)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)s_1(02)s_1(01)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)\omega_2(135)s_1(01)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+\check{\omega}_2(124))s_1(01)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+s_1(03))\omega_2(013)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+s_1(03))\omega_2(012)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+s_1(03))s_1(02)\omega_2(025)\omega_2(035)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+s_1(03))(1+s_1(24))s_1(01)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+s_1(03))(1+\omega_2(024))s_1(02)\omega_2(035)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)s_1(01)\omega_2(035)\omega_2(025)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)s_1(01)\omega_2(035)(1+\omega_2(024))\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(035)\omega_2(025)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(035)(1+\omega_2(024))\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(135)\omega_2(025)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(135)\omega_2(024)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(135)\omega_2(015)\\
-&+(1+\check{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(135)(1+\omega_2(014))\end{aligned}
+\begin{aligned}&{}+(1+\widetilde{\omega}_2(234))s_1(12)(1+\widetilde{\omega}_2(034))\omega_2(014)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)(1+\widetilde{\omega}_2(034))s_1(01)\omega_2(024)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)(1+\widetilde{\omega}_2(034))s_1(01)\omega_2(024)\omega_2(012)\omega_2(014)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)(1+\widetilde{\omega}_2(034))s_1(01)\omega_2(024)s_1(04)\omega_2(012)\\
+&+(1+\widetilde{\omega}_2(234))s_1(12)(1+\widetilde{\omega}_2(034))\widetilde{\omega}_2(013)s_1(01)\omega_2(024)\bigl(\omega_2(014)+\omega_2(012)+(1+s_1(04))\bigr)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)s_1(02)\bigl(\omega_2(015)+\omega_2(014)\bigr)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)s_1(02)s_1(01)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)\omega_2(135)s_1(01)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+\widetilde{\omega}_2(124))s_1(01)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+s_1(03))\omega_2(013)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+s_1(03))\omega_2(012)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+s_1(03))s_1(02)\omega_2(025)\omega_2(035)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+s_1(03))(1+s_1(24))s_1(01)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+s_1(03))(1+\omega_2(024))s_1(02)\omega_2(035)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)s_1(01)\omega_2(035)\omega_2(025)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)s_1(01)\omega_2(035)(1+\omega_2(024))\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(035)\omega_2(025)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(035)(1+\omega_2(024))\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(135)\omega_2(025)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(135)\omega_2(024)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(135)\omega_2(015)\\
+&+(1+\widetilde{\omega}_2(234))\omega_2(345)(1+\omega_2(134))s_1(23)(1+s_1(13))\omega_2(135)(1+\omega_2(014))\end{aligned}
 ```
 
 ## Row 45
@@ -2878,7 +2878,7 @@ Background factor (continued across successive displays):
 Integer factor:
 
 ```math
-\overline{\left\lfloor n_1(45)/4\right\rfloor}
+[\left\lfloor n_1(45)/4\right\rfloor]_2
 ```
 
 Background factor:

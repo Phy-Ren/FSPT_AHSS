@@ -1,10 +1,10 @@
 # Auxiliary phase comparison in 3+1D
 
 This retained comparison is evaluated after the current lower-field map
-$`n_3\mapsto\check n_3=n_3+\mathcal B_3`$. Its output is
-$`\check N_3+d\mathcal B_2`$. The current formulas additionally include
+$`n_3\mapsto\widetilde{n}_3=n_3+\mathcal B_3`$. Its output is
+$`\widetilde{N}_3+d\mathcal B_2`$. The current formulas additionally include
 the explicit face phase in [the geometric reference](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
-In this auxiliary calculation only, symbols without checks on the CF field denote that mapped field.
+In this auxiliary calculation only, symbols without tildes on the CF field denote that mapped field.
 The following terminal change then applies:
 
 {{equation:three-dimensional-paired-representative--paired-phase-representative-in-3-1d--1}}
@@ -25,8 +25,8 @@ formulas, which contain no auxiliary field evaluation.
 The interval and triangle cochains, orientation, normalized shuffle sums,
 and first-vertex coefficient transport are fixed in
 [the retained mathematical construction](THREE_DIMENSIONAL_TERMINAL.md).
-For the following comparison only, write `n=n1,m=n1prime`,
-`u=check n2,v=check n2prime`, and `W=check omega2`. Their integral residuals are
+For the following comparison only, write $`n=n_1,m=n'_1`$, $`u=\widetilde{n}_2,v=\widetilde{n}'_2`$, and $`W=\widetilde{\omega}_2`$.
+Their integral residuals are
 
 {{equation:three-dimensional-paired-representative--integer-characteristic-phase--2}}
 

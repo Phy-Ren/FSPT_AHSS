@@ -31,11 +31,11 @@ specified cup terms**.
 Its binary reduction is the familiar open-cochain Steenrod expression:
 
 ```math
-\overline{\mathcal Q_{\omega_2}[x]}
- =\mathrm{Sq}^2\bar x+\omega_2\bar x,
+[\mathcal Q_{\omega_2}[x]]_2
+ =\mathrm{Sq}^2[x]_2+\omega_2[x]_2,
 \qquad
-d\overline{\mathcal Q_{\omega_2}[x]}
- =\mathrm{Sq}^2(d\bar x)+\omega_2d\bar x.
+d[\mathcal Q_{\omega_2}[x]]_2
+ =\mathrm{Sq}^2(d[x]_2)+\omega_2d[x]_2.
 ```
 
 The second identity assumes the stated closed binary background. The
@@ -87,7 +87,7 @@ $`z_2x/2`$ to the quarter-valued phase.
 ## The quadratic part of the 4+1D obstruction
 
 The [integer carries](FOUR_DIMENSIONAL.md#eq-s1) are already fixed:
-$`\beta_4^\gamma=\beta^\circ\check n_3`$ and
+$`\beta_4^\gamma=\beta^-\widetilde{n}_3`$ and
 $`\beta_4=\beta_4^\gamma+\beta_4^\psi`$. The quadratic quarter-valued terms in the
 three physical contributions are, respectively,
 
@@ -121,9 +121,9 @@ defined integer stacking carry $`\lambda_3`$ obeys
 ```math
 \Delta \beta_4=d\lambda_3-n'_2n_2,
 \qquad
-d\beta_4=-(\beta_{s_1}\check\omega_2)n_2,
+d\beta_4=-(\beta_{s_1}\widetilde{\omega}_2)n_2,
 \qquad
-d\beta'_4=-(\beta_{s_1}\check\omega_2)n'_2.
+d\beta'_4=-(\beta_{s_1}\widetilde{\omega}_2)n'_2.
 ```
 
 The integer $`\beta_4,\beta'_4,\lambda_3`$ are untwisted; $`n_2,n'_2`$ have
@@ -167,8 +167,8 @@ The complete variation law is
  -(\beta\omega_2)\lambda_3-(n'_2n_2)\cup_2d\lambda_3
  +s_1\mathcal{ℰ}^{\mathcal Q}_5\Big]\\
 &+(n'_2n_2)\cup_2(n'_2n_2)-\omega_2n'_2n_2\\
-&-[(\beta_{s_1}\check\omega_2)n_2]
-       \cup_4[(\beta_{s_1}\check\omega_2)n'_2].
+&-[(\beta_{s_1}\widetilde{\omega}_2)n_2]
+       \cup_4[(\beta_{s_1}\widetilde{\omega}_2)n'_2].
 \end{aligned}
 ```
 
@@ -189,18 +189,18 @@ binary quarter correction:
 ```math
 \begin{aligned}
 V_5^{\mathbb Z}={}&\mathcal{ℰ}^{\mathcal Q}_5
- +\check n'_3\bar n_2+\bar n'_2\check n_3\\
-&+\overline{\Big[
- (\widetilde{\beta_{s_1}\check\omega_2}
-   +\overline{\beta_{s_1}\check\omega_2})
-              (\bar n_2\cup_2\bar n'_2)
- +\mathop{\mathrm{MS}}\nolimits_{1231343}(\bar n'_2,\bar n'_2,\bar n_2,\bar n_2)
- +(\check\omega_2\cup_1\bar n'_2)\bar n_2
- +\tilde n'_2(\bar n_2\cup_1\bar n_2)
- +s_1\bar n'_2\tilde n_2
- +s_1(\bar n'_2\cup_1s_1)\bar n_2
- \Big]},\\
-\overline{V_5^{\mathbb Z}}={}&V_5.
+ +\widetilde{n}'_3[n_2]_2+[n'_2]_2\widetilde{n}_3\\
+&+[\Big[
+ ([\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2
+   +[\beta_{s_1}\widetilde{\omega}_2]_2)
+              ([n_2]_2\cup_2[n'_2]_2)
+ +\mathop{\mathrm{MS}}\nolimits_{1231343}([n'_2]_2,[n'_2]_2,[n_2]_2,[n_2]_2)
+ +(\widetilde{\omega}_2\cup_1[n'_2]_2)[n_2]_2
+ +[\lfloor n'_2/2\rfloor]_2([n_2]_2\cup_1[n_2]_2)
+ +s_1[n'_2]_2[\lfloor n_2/2\rfloor]_2
+ +s_1([n'_2]_2\cup_1s_1)[n_2]_2
+ \Big]]_2,\\
+[V_5^{\mathbb Z}]_2={}&V_5.
 \end{aligned}
 ```
 
@@ -220,7 +220,7 @@ Define its integral
 lift difference
 
 ```math
-B_5^{\mathrm{lift}}=\frac{V_5^{\mathbb Z}-\overline{V_5}}2.
+B_5^{\mathrm{lift}}=\frac{V_5^{\mathbb Z}-[V_5]_2}2.
 ```
 
 Suppose the existing normalized contraction is written
@@ -230,21 +230,21 @@ twisted contraction, not a stacking input. It is the fully specified contraction
 of the terminal appendix. The lift change must transport **both** data:
 
 ```math
-\rho_6^{\rm new}=\rho_6+d\barB_5^{\mathrm{lift}},
+\rho_6^{\rm new}=\rho_6+d[B_5^{\mathrm{lift}}]_2,
 \qquad
-L_5^{\rm new}=L_5+(\mathsf{sh}^{\rm tw})^*\barB_5^{\mathrm{lift}},
+L_5^{\rm new}=L_5+(\mathsf{sh}^{\rm tw})^*[B_5^{\mathrm{lift}}]_2,
 \qquad
-Z_5^{\rm new}=Z_5+\barB_5^{\mathrm{lift}}+d(\mathsf h^{\rm tw})^*\barB_5^{\mathrm{lift}}.
+Z_5^{\rm new}=Z_5+[B_5^{\mathrm{lift}}]_2+d(\mathsf h^{\rm tw})^*[B_5^{\mathrm{lift}}]_2.
 ```
 
-Replacing $`\overline{V_5}/4+Z_5/2`$ by
+Replacing $`[V_5]_2/4+Z_5/2`$ by
 $`V_5^{\mathbb Z}/4+Z_5^{\rm new}/2`$ then gives exactly
 
 <a id="paired-lift-transport"></a>
 
 ```math
 \widehat{\mathcal{ℰ}}_5^{\rm new}-\widehat{\mathcal{ℰ}}_5
- =d_{s_1}\left[\frac12(\mathsf h^{\rm tw})^*\barB_5^{\mathrm{lift}}\right]\pmod1.
+ =d_{s_1}\left[\frac12(\mathsf h^{\rm tw})^*[B_5^{\mathrm{lift}}]_2\right]\pmod1.
 ```
 
 The source and lower multiplication laws stay in the same representative.

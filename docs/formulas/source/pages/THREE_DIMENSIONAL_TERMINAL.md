@@ -68,14 +68,14 @@ lift uses both inputs and their displayed lower stacking corrections:
 | Symbol in this construction | Obstruction evaluation | Stacking evaluation |
 |---|---|---|
 | $`\uparrow n_1`$ | $`n_2^I`$ | $`n_2^\triangle`$ |
-| $`\uparrow\check n_2`$ | $`\check n_3^I`$ | $`\check n_3^\triangle`$ |
+| $`\uparrow\widetilde{n}_2`$ | $`\widetilde{n}_3^I`$ | $`\widetilde{n}_3^\triangle`$ |
 | $`\uparrow n_3`$ | $`n_4^I`$ | $`n_4^\triangle`$ |
 | $`\beta_4^\uparrow`$ | $`\beta_4^I`$ | $`\beta_4^\triangle`$ |
 | $`\beta_4^{\psi,\uparrow}`$ | $`\beta_4^{\psi,I}`$ | $`\beta_4^{\psi,\triangle}`$ |
 | $`\mathcal{𝒪}_5^\psi[\uparrow n_1]`$ | $`\mathcal{𝒪}_5^{\psi,I}`$ | $`\mathcal{𝒪}_5^{\psi,\triangle}`$ |
 
 Every entry on the right is defined explicitly below. In particular,
-$`\uparrow\check n_2`$ and $`\uparrow n_3`$ include the mixed terms and
+$`\uparrow\widetilde{n}_2`$ and $`\uparrow n_3`$ include the mixed terms and
 fixed cochain fills in those definitions. They are not independently
 chosen linear suspensions of the individual fields. Backgrounds are pulled
 from the physical base throughout.
@@ -105,13 +105,13 @@ space. The definitions are local to the auxiliary fields:
 This construction uses cochains on an interval or triangle times the
 physical base. They are **auxiliary**, not additional physical decorations.
 A superscript $`J\in\{I,\triangle\}`$ always marks them: $`n_2^J`$ is
-integer, while $`\check n_3^J,n_4^J`$ are binary. The physical $`n_2`$ in
+integer, while $`\widetilde{n}_3^J,n_4^J`$ are binary. The physical $`n_2`$ in
 this section remains Majorana decoration.
 
 On the oriented triangle $`012`$, the integer one-cocycles
 $`\theta_1,\theta'_1`$ have edge values $`(01,12,02)=(1,0,1),(0,1,1)`$.
 The binary $`\chi_1`$ has values $`(0,0,1)`$ and satisfies
-$`d\chi_1=\bar\theta_1\bar\theta'_1`$. Backgrounds and physical
+$`d\chi_1=[\theta_1]_2[\theta'_1]_2`$. Backgrounds and physical
 fields are pulled from the base; parameter cochains are pulled from the
 triangle. Integer parameter cochains act through their reductions inside
 binary expressions.
@@ -167,8 +167,8 @@ The extra integer terms have the exact signed transgressions
 
 | Auxiliary term | $`\tau_I`$ | $`\tau_\triangle`$ |
 |---|---|---|
-| $`\mathcal P_{s_1}(\check\omega_2)n_2^J`$ | $`\mathcal P_{s_1}(\check\omega_2)n_1`$ | $`0`$ |
-| $`\check\omega_2(n_2^J)^2`$ | $`0`$ | $`-\check\omega_2 n_1n'_1`$ |
+| $`\mathcal P_{s_1}(\widetilde{\omega}_2)n_2^J`$ | $`\mathcal P_{s_1}(\widetilde{\omega}_2)n_1`$ | $`0`$ |
+| $`\widetilde{\omega}_2(n_2^J)^2`$ | $`0`$ | $`-\widetilde{\omega}_2 n_1n'_1`$ |
 | $`(n_2^J)^3`$ | $`0`$ | $`0`$ |
 
 These identities use the displayed interval/triangle fields and the fixed
@@ -177,5 +177,5 @@ coefficient transport, so the compact pair includes all fractional terms.
 The operations $`T_6,y_6`$ are the finite operations of
 [Finite cochain formulas for the bosonic obstruction](SOURCE_OPERATIONS.md), applied to the displayed
 auxiliary fields. Each $`1/2`$ bracket is binary. Each $`1/4`$ bracket is
-integer, with the barred polynomial reduced as a whole before its
+integer, with the polynomial enclosed in $`[\cdot]_2`$ reduced as a whole before its
 implicit lift. The parameter integration then gives phases modulo one.

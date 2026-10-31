@@ -4,7 +4,7 @@
 
 The index set $`\mathcal I_6^{\gamma\psi}`$ in the [bosonic obstruction](FOUR_DIMENSIONAL.md#eq-t4) consists of the following blocks. Each displayed word is evaluated once on its ordered argument tuple, with coefficient one modulo two.
 
-There are **1,897 ordinary MS terms**. The cochains $`\check n_3`$ and $`d\check n_3`$ have degrees three and four; the latter is the already defined lower obstruction $`\check{\mathcal{𝒪}}_4`$. The backgrounds are closed. The complete finite sum is a relative correction: it vanishes when $`d\check n_3=0`$, although this cancellation need not occur within each individual word.
+There are **1,897 ordinary MS terms**. The cochains $`\widetilde{n}_3`$ and $`d\widetilde{n}_3`$ have degrees three and four; the latter is the already defined lower obstruction $`\widetilde{\mathcal{𝒪}}_4`$. The backgrounds are closed. The complete finite sum is a relative correction: it vanishes when $`d\widetilde{n}_3=0`$, although this cancellation need not occur within each individual word.
 
 The [phase construction](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) explains why this correction belongs to the continuation of the Majorana phase after the integer layer is turned on. Physical origin is not inferred by inspecting the variables in one expanded summand. This count is exact, not a claim of minimality.
 
@@ -13,7 +13,7 @@ A [lossless coefficient file](data/four_dimensional_majorana_relative_words.json
 ## Coefficient block 1
 
 ```math
-(d\check n_3,d\check n_3,s_1,\check n_3,d\check n_3).
+(d\widetilde{n}_3,d\widetilde{n}_3,s_1,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **24 terms**.
@@ -28,7 +28,7 @@ This block contains **24 terms**.
 ## Coefficient block 2
 
 ```math
-(d\check n_3,d\check n_3,s_1,\check n_3,\check n_3).
+(d\widetilde{n}_3,d\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **16 terms**.
@@ -42,7 +42,7 @@ This block contains **16 terms**.
 ## Coefficient block 3
 
 ```math
-(d\check n_3,s_1,d\check n_3,\check n_3,d\check n_3).
+(d\widetilde{n}_3,s_1,d\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **9 terms**.
@@ -55,7 +55,7 @@ This block contains **9 terms**.
 ## Coefficient block 4
 
 ```math
-(d\check n_3,s_1,d\check n_3,\check n_3,\check n_3).
+(d\widetilde{n}_3,s_1,d\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **6 terms**.
@@ -67,7 +67,7 @@ This block contains **6 terms**.
 ## Coefficient block 5
 
 ```math
-(d\check n_3,s_1,\check n_3,d\check n_3).
+(d\widetilde{n}_3,s_1,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **3 terms**.
@@ -79,7 +79,7 @@ This block contains **3 terms**.
 ## Coefficient block 6
 
 ```math
-(d\check n_3,s_1,\check n_3,\check n_3).
+(d\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **3 terms**.
@@ -91,7 +91,7 @@ This block contains **3 terms**.
 ## Coefficient block 7
 
 ```math
-(d\check n_3,s_1,\omega_2).
+(d\widetilde{n}_3,s_1,\omega_2).
 ```
 
 This block contains **1 terms**.
@@ -103,7 +103,7 @@ This block contains **1 terms**.
 ## Coefficient block 8
 
 ```math
-(d\check n_3,\check n_3,d\check n_3).
+(d\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **3 terms**.
@@ -115,7 +115,7 @@ This block contains **3 terms**.
 ## Coefficient block 9
 
 ```math
-(d\check n_3,\check n_3,s_1,\check n_3,d\check n_3).
+(d\widetilde{n}_3,\widetilde{n}_3,s_1,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **14 terms**.
@@ -128,7 +128,7 @@ This block contains **14 terms**.
 ## Coefficient block 10
 
 ```math
-(d\check n_3,\check n_3,s_1,\check n_3,\check n_3).
+(d\widetilde{n}_3,\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **23 terms**.
@@ -143,7 +143,7 @@ This block contains **23 terms**.
 ## Coefficient block 11
 
 ```math
-(d\check n_3,\check n_3,\check n_3).
+(d\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **3 terms**.
@@ -155,7 +155,7 @@ This block contains **3 terms**.
 ## Coefficient block 12
 
 ```math
-(d\check n_3,\check n_3,\check n_3,\check n_3).
+(d\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **32 terms**.
@@ -171,7 +171,7 @@ This block contains **32 terms**.
 ## Coefficient block 13
 
 ```math
-(d\check n_3,\check n_3,\omega_2,\check n_3).
+(d\widetilde{n}_3,\widetilde{n}_3,\omega_2,\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -183,7 +183,7 @@ This block contains **1 terms**.
 ## Coefficient block 14
 
 ```math
-(d\check n_3,\omega_2,\check n_3).
+(d\widetilde{n}_3,\omega_2,\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -195,7 +195,7 @@ This block contains **1 terms**.
 ## Coefficient block 15
 
 ```math
-(d\check n_3,\omega_2,\check n_3,\check n_3).
+(d\widetilde{n}_3,\omega_2,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -207,7 +207,7 @@ This block contains **1 terms**.
 ## Coefficient block 16
 
 ```math
-(d\check n_3,\omega_2,\omega_2).
+(d\widetilde{n}_3,\omega_2,\omega_2).
 ```
 
 This block contains **1 terms**.
@@ -219,7 +219,7 @@ This block contains **1 terms**.
 ## Coefficient block 17
 
 ```math
-(s_1,s_1,\check n_3,d\check n_3,d\check n_3,d\check n_3).
+(s_1,s_1,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **12 terms**.
@@ -232,7 +232,7 @@ This block contains **12 terms**.
 ## Coefficient block 18
 
 ```math
-(s_1,s_1,\check n_3,d\check n_3,d\check n_3,\check n_3).
+(s_1,s_1,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **12 terms**.
@@ -245,7 +245,7 @@ This block contains **12 terms**.
 ## Coefficient block 19
 
 ```math
-(s_1,s_1,\check n_3,d\check n_3,\check n_3,d\check n_3).
+(s_1,s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **9 terms**.
@@ -258,7 +258,7 @@ This block contains **9 terms**.
 ## Coefficient block 20
 
 ```math
-(s_1,s_1,\check n_3,d\check n_3,\check n_3,\check n_3).
+(s_1,s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **6 terms**.
@@ -270,7 +270,7 @@ This block contains **6 terms**.
 ## Coefficient block 21
 
 ```math
-(s_1,s_1,\check n_3,\check n_3,d\check n_3,d\check n_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **6 terms**.
@@ -282,7 +282,7 @@ This block contains **6 terms**.
 ## Coefficient block 22
 
 ```math
-(s_1,s_1,\check n_3,\check n_3,d\check n_3,\check n_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **9 terms**.
@@ -295,7 +295,7 @@ This block contains **9 terms**.
 ## Coefficient block 23
 
 ```math
-(s_1,s_1,\check n_3,\check n_3,\check n_3,d\check n_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **9 terms**.
@@ -308,7 +308,7 @@ This block contains **9 terms**.
 ## Coefficient block 24
 
 ```math
-(s_1,s_1,\check n_3,\check n_3,\check n_3,\check n_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **12 terms**.
@@ -321,7 +321,7 @@ This block contains **12 terms**.
 ## Coefficient block 25
 
 ```math
-(s_1,\check n_3,d\check n_3,\check n_3,d\check n_3).
+(s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **29 terms**.
@@ -337,7 +337,7 @@ This block contains **29 terms**.
 ## Coefficient block 26
 
 ```math
-(s_1,\check n_3,d\check n_3,\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **20 terms**.
@@ -351,7 +351,7 @@ This block contains **20 terms**.
 ## Coefficient block 27
 
 ```math
-(s_1,\check n_3,\check n_3,d\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **3 terms**.
@@ -363,7 +363,7 @@ This block contains **3 terms**.
 ## Coefficient block 28
 
 ```math
-(s_1,\check n_3,\check n_3,d\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **20 terms**.
@@ -377,7 +377,7 @@ This block contains **20 terms**.
 ## Coefficient block 29
 
 ```math
-(s_1,\check n_3,\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **3 terms**.
@@ -389,7 +389,7 @@ This block contains **3 terms**.
 ## Coefficient block 30
 
 ```math
-(s_1,\check n_3,\check n_3,\check n_3,d\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **17 terms**.
@@ -403,7 +403,7 @@ This block contains **17 terms**.
 ## Coefficient block 31
 
 ```math
-(s_1,\check n_3,\check n_3,\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **27 terms**.
@@ -418,7 +418,7 @@ This block contains **27 terms**.
 ## Coefficient block 32
 
 ```math
-(s_1,\omega_2,\check n_3,\check n_3,d\check n_3).
+(s_1,\omega_2,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -430,7 +430,7 @@ This block contains **1 terms**.
 ## Coefficient block 33
 
 ```math
-(\check n_3,d\check n_3,d\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **4 terms**.
@@ -442,7 +442,7 @@ This block contains **4 terms**.
 ## Coefficient block 34
 
 ```math
-(\check n_3,d\check n_3,d\check n_3,d\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **213 terms**.
@@ -484,7 +484,7 @@ This block contains **213 terms**.
 ## Coefficient block 35
 
 ```math
-(\check n_3,d\check n_3,d\check n_3,\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **36 terms**.
@@ -501,7 +501,7 @@ This block contains **36 terms**.
 ## Coefficient block 36
 
 ```math
-(\check n_3,d\check n_3,s_1,d\check n_3,d\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,s_1,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **18 terms**.
@@ -515,7 +515,7 @@ This block contains **18 terms**.
 ## Coefficient block 37
 
 ```math
-(\check n_3,d\check n_3,s_1,\check n_3,d\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,s_1,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **35 terms**.
@@ -531,7 +531,7 @@ This block contains **35 terms**.
 ## Coefficient block 38
 
 ```math
-(\check n_3,d\check n_3,s_1,\check n_3,\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **43 terms**.
@@ -549,7 +549,7 @@ This block contains **43 terms**.
 ## Coefficient block 39
 
 ```math
-(\check n_3,d\check n_3,\check n_3,d\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **128 terms**.
@@ -579,7 +579,7 @@ This block contains **128 terms**.
 ## Coefficient block 40
 
 ```math
-(\check n_3,d\check n_3,\check n_3,\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **80 terms**.
@@ -602,7 +602,7 @@ This block contains **80 terms**.
 ## Coefficient block 41
 
 ```math
-(\check n_3,d\check n_3,\omega_2,d\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,\omega_2,d\widetilde{n}_3).
 ```
 
 This block contains **4 terms**.
@@ -614,7 +614,7 @@ This block contains **4 terms**.
 ## Coefficient block 42
 
 ```math
-(\check n_3,d\check n_3,\omega_2,\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,\omega_2,\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -626,7 +626,7 @@ This block contains **1 terms**.
 ## Coefficient block 43
 
 ```math
-(\check n_3,s_1,d\check n_3,d\check n_3).
+(\widetilde{n}_3,s_1,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **4 terms**.
@@ -638,7 +638,7 @@ This block contains **4 terms**.
 ## Coefficient block 44
 
 ```math
-(\check n_3,s_1,d\check n_3,d\check n_3,d\check n_3).
+(\widetilde{n}_3,s_1,d\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **18 terms**.
@@ -652,7 +652,7 @@ This block contains **18 terms**.
 ## Coefficient block 45
 
 ```math
-(\check n_3,s_1,d\check n_3,d\check n_3,\check n_3).
+(\widetilde{n}_3,s_1,d\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **6 terms**.
@@ -664,7 +664,7 @@ This block contains **6 terms**.
 ## Coefficient block 46
 
 ```math
-(\check n_3,s_1,d\check n_3,\check n_3,d\check n_3).
+(\widetilde{n}_3,s_1,d\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **6 terms**.
@@ -676,7 +676,7 @@ This block contains **6 terms**.
 ## Coefficient block 47
 
 ```math
-(\check n_3,s_1,\check n_3,d\check n_3).
+(\widetilde{n}_3,s_1,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **4 terms**.
@@ -688,7 +688,7 @@ This block contains **4 terms**.
 ## Coefficient block 48
 
 ```math
-(\check n_3,s_1,\check n_3,d\check n_3,d\check n_3).
+(\widetilde{n}_3,s_1,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **6 terms**.
@@ -700,7 +700,7 @@ This block contains **6 terms**.
 ## Coefficient block 49
 
 ```math
-(\check n_3,s_1,\check n_3,d\check n_3,\check n_3).
+(\widetilde{n}_3,s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **29 terms**.
@@ -716,7 +716,7 @@ This block contains **29 terms**.
 ## Coefficient block 50
 
 ```math
-(\check n_3,s_1,\check n_3,\check n_3).
+(\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **5 terms**.
@@ -728,7 +728,7 @@ This block contains **5 terms**.
 ## Coefficient block 51
 
 ```math
-(\check n_3,s_1,\check n_3,\check n_3,d\check n_3).
+(\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **17 terms**.
@@ -742,7 +742,7 @@ This block contains **17 terms**.
 ## Coefficient block 52
 
 ```math
-(\check n_3,s_1,\check n_3,\check n_3,\check n_3).
+(\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **64 terms**.
@@ -763,7 +763,7 @@ This block contains **64 terms**.
 ## Coefficient block 53
 
 ```math
-(\check n_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -775,7 +775,7 @@ This block contains **1 terms**.
 ## Coefficient block 54
 
 ```math
-(\check n_3,\check n_3,d\check n_3,d\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **205 terms**.
@@ -816,7 +816,7 @@ This block contains **205 terms**.
 ## Coefficient block 55
 
 ```math
-(\check n_3,\check n_3,d\check n_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **126 terms**.
@@ -845,7 +845,7 @@ This block contains **126 terms**.
 ## Coefficient block 56
 
 ```math
-(\check n_3,\check n_3,s_1,d\check n_3,d\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,s_1,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **45 terms**.
@@ -863,7 +863,7 @@ This block contains **45 terms**.
 ## Coefficient block 57
 
 ```math
-(\check n_3,\check n_3,s_1,\check n_3,d\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,s_1,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **61 terms**.
@@ -883,7 +883,7 @@ This block contains **61 terms**.
 ## Coefficient block 58
 
 ```math
-(\check n_3,\check n_3,s_1,\check n_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **75 terms**.
@@ -905,7 +905,7 @@ This block contains **75 terms**.
 ## Coefficient block 59
 
 ```math
-(\check n_3,\check n_3,\check n_3,d\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **127 terms**.
@@ -935,7 +935,7 @@ This block contains **127 terms**.
 ## Coefficient block 60
 
 ```math
-(\check n_3,\check n_3,\check n_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **155 terms**.
@@ -969,7 +969,7 @@ This block contains **155 terms**.
 ## Coefficient block 61
 
 ```math
-(\check n_3,\check n_3,\omega_2,d\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,\omega_2,d\widetilde{n}_3).
 ```
 
 This block contains **3 terms**.
@@ -981,7 +981,7 @@ This block contains **3 terms**.
 ## Coefficient block 62
 
 ```math
-(\check n_3,\check n_3,\omega_2,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,\omega_2,\widetilde{n}_3).
 ```
 
 This block contains **9 terms**.
@@ -994,7 +994,7 @@ This block contains **9 terms**.
 ## Coefficient block 63
 
 ```math
-(\check n_3,\omega_2,d\check n_3).
+(\widetilde{n}_3,\omega_2,d\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -1006,7 +1006,7 @@ This block contains **1 terms**.
 ## Coefficient block 64
 
 ```math
-(\check n_3,\omega_2,d\check n_3,d\check n_3).
+(\widetilde{n}_3,\omega_2,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **6 terms**.
@@ -1018,7 +1018,7 @@ This block contains **6 terms**.
 ## Coefficient block 65
 
 ```math
-(\check n_3,\omega_2,d\check n_3,\check n_3).
+(\widetilde{n}_3,\omega_2,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **3 terms**.
@@ -1030,7 +1030,7 @@ This block contains **3 terms**.
 ## Coefficient block 66
 
 ```math
-(\check n_3,\omega_2,\check n_3).
+(\widetilde{n}_3,\omega_2,\widetilde{n}_3).
 ```
 
 This block contains **2 terms**.
@@ -1042,7 +1042,7 @@ This block contains **2 terms**.
 ## Coefficient block 67
 
 ```math
-(\check n_3,\omega_2,\check n_3,d\check n_3).
+(\widetilde{n}_3,\omega_2,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -1054,7 +1054,7 @@ This block contains **1 terms**.
 ## Coefficient block 68
 
 ```math
-(\check n_3,\omega_2,\check n_3,\check n_3).
+(\widetilde{n}_3,\omega_2,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **4 terms**.
@@ -1066,7 +1066,7 @@ This block contains **4 terms**.
 ## Coefficient block 69
 
 ```math
-(\omega_2,s_1,\check n_3,d\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -1078,7 +1078,7 @@ This block contains **1 terms**.
 ## Coefficient block 70
 
 ```math
-(\omega_2,s_1,\check n_3,d\check n_3,d\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **2 terms**.
@@ -1090,7 +1090,7 @@ This block contains **2 terms**.
 ## Coefficient block 71
 
 ```math
-(\omega_2,s_1,\check n_3,d\check n_3,\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **2 terms**.
@@ -1102,7 +1102,7 @@ This block contains **2 terms**.
 ## Coefficient block 72
 
 ```math
-(\omega_2,s_1,\check n_3,\check n_3,d\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -1114,7 +1114,7 @@ This block contains **1 terms**.
 ## Coefficient block 73
 
 ```math
-(\omega_2,\check n_3,d\check n_3,\check n_3).
+(\omega_2,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **4 terms**.
@@ -1126,7 +1126,7 @@ This block contains **4 terms**.
 ## Coefficient block 74
 
 ```math
-(\omega_2,\check n_3,\check n_3).
+(\omega_2,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -1138,7 +1138,7 @@ This block contains **1 terms**.
 ## Coefficient block 75
 
 ```math
-(\omega_2,\check n_3,\check n_3,\check n_3).
+(\omega_2,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **2 terms**.
@@ -1150,7 +1150,7 @@ This block contains **2 terms**.
 ## Coefficient block 76
 
 ```math
-(\omega_2,\omega_2,\check n_3).
+(\omega_2,\omega_2,\widetilde{n}_3).
 ```
 
 This block contains **1 terms**.
@@ -1162,7 +1162,7 @@ This block contains **1 terms**.
 ## Coefficient block 77
 
 ```math
-(\omega_2,\omega_2,\check n_3,\check n_3).
+(\omega_2,\omega_2,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 This block contains **2 terms**.

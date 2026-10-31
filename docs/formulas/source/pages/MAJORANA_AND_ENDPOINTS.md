@@ -18,8 +18,8 @@ Use the [common notation](../FORMULA_GUIDE.md#conventions-and-coordinates).
 Lower-layer equations and half-valued brackets are binary. In integer
 expressions, each named binary cochain means its canonical zero-or-one
 representative; sums, differentials, and cups are then integral.
-An outer bar first reduces the entire indicated expression modulo two.
-Thus an integer $`x\cup_i y`$ and $`\overline{x\cup_i y}`$ are different
+An outer $`[\cdot]_2`$ first reduces the entire indicated expression modulo two.
+Thus an integer $`x\cup_i y`$ and $`[x\cup_i y]_2`$ are different
 operations in a quarter-valued phase. Their complete evaluation rules are
 in [Operations](OPERATIONS.md#arithmetic-and-carries).
 
@@ -160,8 +160,8 @@ There is no stacking correction in this layer.
 
 {{equation:majorana-and-endpoints--majorana-contribution--14}}
 
-The bar inside $`\Delta[\overline{n_1^3}]`$ and the bar on
-$`\overline{s_1n_1n'_1}`$ reduce each complete indicated product. The
+The reduction modulo two inside $`\Delta[[n_1^3]_2]`$ and the reduction modulo two of
+$`[s_1n_1n'_1]_2`$ reduce each complete indicated product. The
 $`\Delta`$ in the mixed half-valued contribution is binary; in the
 eighth-valued contribution it subtracts the complete integer lifts. In contrast, $`n_1\cup_1n'_1`$ in the
 quarter-valued bracket is a signed integer cup; its differential is also
@@ -190,8 +190,8 @@ inputs.
 
 These are restrictions of the geometric pairing coordinate. The lower
 parity and its product coincide pointwise with the original Majorana laws.
-For the phase use $`\check n_3=n_3+n_2\cup_1n_2`$,
-$`\mathcal B_2=n_2\cup_2n'_2`$, and the checked quantities defined in
+For the phase use $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$,
+$`\mathcal B_2=n_2\cup_2n'_2`$, and the shifted quantities defined in
 [the full reference](THREE_DIMENSIONAL.md#eq-t3b).
 The displayed point-fermion phase includes the output-face conversion.
 The microscopic ordinary modes and the original projection schedule are unchanged.
@@ -256,8 +256,8 @@ the binary complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
 **(M4, 3+1D)**
 
 This is the same pure Majorana formula as in the complete 3+1D tower.
-Here $`n_1=0`$, so $`\check n_2=n_2`$ and
-$`\beta^\circ n_2=\beta n_2`$. Its physical origin is Majorana;
+Here $`n_1=0`$, so $`\widetilde{n}_2=n_2`$ and
+$`\beta^- n_2=\beta n_2`$. Its physical origin is Majorana;
 the common expression also defines this contribution for a nonclosed
 Majorana input in the full tower.
 
@@ -334,10 +334,10 @@ There is no stacking correction in this layer.
 **(M7, 3+1D)**
 
 Use the same $`\widehat{\mathcal{ℰ}}_4^\gamma`$ as in the complete
-3+1D product, with $`\check n_2=n_2`$, $`\check n'_2=n'_2`$,
-$`\beta^\circ=\beta`$, and
-$`\lambda_2^\gamma=\overline{n_2\cup_2n'_2}`$.
-The lower output here is $`N_2=\overline{n_2+n'_2}`$, and
+3+1D product, with $`\widetilde{n}_2=n_2`$, $`\widetilde{n}'_2=n'_2`$,
+$`\beta^-=\beta`$, and
+$`\lambda_2^\gamma=[n_2\cup_2n'_2]_2`$.
+The lower output here is $`N_2=[n_2+n'_2]_2`$, and
 $`\mathcal{ℰ}_3^\gamma=\mathcal{ℰ}_3`$.
 
 {{equation:three-dimensional--majorana-decoration--31}}
@@ -350,7 +350,7 @@ Here the binary completion is
 
 {{equation:three-dimensional--majorana-decoration--32}}
 
-The second carry obeys $`\beta^{\circ+}=\beta^+`$ in this closed sector.
+The second carry obeys $`\beta^{-+}=\beta^+`$ in this closed sector.
 The complete intrinsic term is the same two-input operation as in the
 full product:
 
@@ -422,8 +422,8 @@ the binary complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
 
 **(M4, 4+1D)**
 
-Here the integer decoration is zero, so $`\check n_3=n_3`$ and
-$`\beta^\circ n_3=\beta n_3`$. The following is the same maintained
+Here the integer decoration is zero, so $`\widetilde{n}_3=n_3`$ and
+$`\beta^- n_3=\beta n_3`$. The following is the same maintained
 formula as in the full 4+1D tower:
 
 {{equation:four-dimensional--4-bosonic-obstruction--14}}
@@ -501,8 +501,8 @@ Use $`\mathcal{𝒪}_5^{\gamma\psi}=0`$ and the actual binary lower output in th
 **(M7, 4+1D)**
 
 This is the restriction of the same complete two-input law to
-$`n_2=n'_2=0`$, $`\check n_3=n_3`$, and $`dn_3=dn'_3=0`$.
-In particular $`\beta^\circ=\beta`$,
+$`n_2=n'_2=0`$, $`\widetilde{n}_3=n_3`$, and $`dn_3=dn'_3=0`$.
+In particular $`\beta^-=\beta`$,
 $`\lambda_4^\gamma=0`$, and
 $`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; all displayed derivatives
 of the closed integer Bocksteins vanish. No extra phase coordinate is
@@ -665,7 +665,7 @@ The word sum in this formula consists of the following ordered evaluations.
 | `12131432412`, `12134341321` | $`((x+y),y,y,x)`$ |
 | `1212312` | $`((x+y),y,(x\cup_qy))`$ |
 | `12313123` | $`(y,x,(x\cup_{q-1}y))`$ |
-| `12131232` | $`(\overline{\beta x},y,y)`$ |
+| `12131232` | $`([\beta x]_2,y,y)`$ |
 | `123131212` | $`(y\cup_{q-2}y,x,(x+y))`$ |
 | `123131212` | $`((x+y)\cup_{q-2}(x+y),y,x)`$ |
 
@@ -682,7 +682,7 @@ whose first input has degree greater than $`q`$.
 The displayed physical laws use the operator representative. The maps
 below record the exact change from the previous phase coordinate and its
 inverse. These terminal maps keep their lower inputs fixed. In 3+1D the
-current geometric reference first applies the explicit checked-CF and
+current geometric reference first applies the explicit shifted-CF and
 output-face conversion linked above. Source
 and product transform together; these equations do not introduce a new
 physical contribution.

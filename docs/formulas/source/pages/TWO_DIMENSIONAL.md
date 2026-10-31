@@ -74,8 +74,8 @@ There is no stacking correction in this layer.
 
 {{equation:majorana-and-endpoints--majorana-contribution--14}}
 
-The bar inside $`\Delta[\overline{n_1^3}]`$ and the bar on
-$`\overline{s_1n_1n'_1}`$ reduce each complete indicated product. The
+The reduction modulo two inside $`\Delta[[n_1^3]_2]`$ and the reduction modulo two of
+$`[s_1n_1n'_1]_2`$ reduce each complete indicated product. The
 $`\Delta`$ in the mixed half-valued contribution is binary; in the
 eighth-valued contribution it subtracts the complete integer lifts. In contrast, $`n_1\cup_1n'_1`$ in the
 quarter-valued bracket is a signed integer cup; its differential is also

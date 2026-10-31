@@ -33,18 +33,18 @@ They also retain ordinary cochain differentials of these operations.
 For example, the integer carry has the open-cochain definition
 
 ```math
-\beta_4[n_2,x]=\beta^\circ x+\beta_4^\psi[n_2].
+\beta_4[n_2,x]=\beta^- x+\beta_4^\psi[n_2].
 ```
 
 Here $`x`$ is any binary degree-three cochain. This definition is integral
-without imposing $`dx=\check{\mathcal O}_4[n_2]`$ on an individual argument.
+without imposing $`dx=\widetilde{\mathcal O}_4[n_2]`$ on an individual argument.
 The quotient using $`d x`$ in place of the lower obstruction agrees with it
 on the actual lower tower; it must not be substituted on an arbitrary
 component. Its useful polarization is the exact integer identity
 
 ```math
-\beta^\circ(x+y)-\beta^\circ x-\beta^\circ y
- =-d(x\cup_3y)+\overline{dx}\cup_4\overline{dy}.
+\beta^-(x+y)-\beta^- x-\beta^- y
+ =-d(x\cup_3y)+[dx]_2\cup_4[dy]_2.
 ```
 
 All binary inputs in this integer equation use their canonical values.
@@ -57,7 +57,7 @@ Likewise, the [integral stacking carry](FOUR_DIMENSIONAL.md#eq-t4a) is
 ```math
 \lambda_3[n_2,x;n'_2,y]
  =\frac{
- \overline{x+y+\check{\mathcal E}_3[n_2,n'_2]}
+ [x+y+\widetilde{\mathcal E}_3[n_2,n'_2]]_2
  -x-y+n_2\cup_1n'_2}{2}.
 ```
 
@@ -103,7 +103,7 @@ Each factor entry specifies either a named physical cochain and its face,
 an existing operation with every argument face written out, or a canonical
 lift/floor with its full numerator. For an integer face value, digit zero
 means reduction modulo two, digit one means the second binary digit, and
-higher digits mean $`\overline{\lfloor x/2^k\rfloor}`$. This convention
+higher digits mean $`[\lfloor x/2^k\rfloor]_2`$. This convention
 also applies to negative integers. All argument polynomials include their
 coefficient precision.
 

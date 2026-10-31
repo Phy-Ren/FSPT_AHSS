@@ -40,8 +40,8 @@ some mixed terms.
 
 ### Arithmetic and modifiers
 
-A prime denotes the second stacking input. On an individual field it is
-placed outside the modifier: $`\bar n'_j,\widetilde n'_j,\check n'_j`$. The outputs are $`N_j`$ and
+A prime denotes the second stacking input, as in $`n'_j`$ and $`\widetilde{n}'_j`$.
+The outputs are $`N_j`$ and
 $`\mathcal V_j`$. A hat denotes the additive phase:
 $`\nu_j=\exp(2\pi i\widehat\nu_j)`$ and
 $`\mathcal V_j=\exp(2\pi i\widehat{\mathcal V}_j)`$, with
@@ -49,23 +49,23 @@ both hatted phases in $`\mathbb R/\mathbb Z`$. The same convention applies to
 phase obstructions $`\widehat{\mathcal{𝒪}}`$ and corrections
 $`\widehat{\mathcal{ℰ}}`$.
 
-A bar means reduction modulo two; a tilde means the second binary digit:
+Square brackets with subscript two denote the canonical binary value:
 
 ```math
-\bar x=x\pmod2,\qquad
-\widetilde x=\overline{\lfloor x/2\rfloor}.
+[x]_2=x-2\lfloor x/2\rfloor\in\{0,1\}.
 ```
 
-Floors are mathematical floors, including for negative integers. Integer
-lifts are implicit, so tilde always has the meaning above. A check denotes
-an explicitly defined shift. The background shift is
+The second binary digit is written explicitly as $`[\lfloor x/2\rfloor]_2`$.
+Floors are mathematical floors, including for negative integers.
+A tilde denotes an explicitly defined change of cochain variables, not a binary digit or an integer lift.
+The background shift is
 
 <a id="eq-c1"></a>
 
 **(C1)**
 
 ```math
-\check\omega_2=\omega_2+s_1\cup s_1.
+\widetilde{\omega}_2=\omega_2+s_1\cup s_1.
 ```
 
 ### Integer lifts are implicit in integer arithmetic
@@ -74,13 +74,13 @@ A named binary cochain in an integer expression means its canonical
 $`0,1`$ lift. No lift symbol is needed. Sums, differences, differentials, and
 higher cups in such an expression use integer arithmetic and its stated
 coefficient transport. If an entire compound expression must first be
-reduced, its bar stays explicit. For binary values, for example,
+reduced, its reduction modulo two stays explicit. For binary values, for example,
 
 ```math
-\overline{x+y}=x+y-2xy\quad\text{in }\mathbb Z.
+[x+y]_2=x+y-2xy\quad\text{in }\mathbb Z.
 ```
 
-Thus $`(x+y)/4`$ and $`\overline{x+y}/4`$ need not be the same phase. A
+Thus $`(x+y)/4`$ and $`[x+y]_2/4`$ need not be the same phase. A
 previously defined binary polynomial is first evaluated as that binary
 polynomial, then lifted when used in an integer expression. Integer
 numerators are assembled completely before exact division.
@@ -123,15 +123,15 @@ $`d_r`$ and its specified cochain representative.
 | Operation | Definition and domain |
 |---|---|
 | $`\beta x=dx/2`$ | Integer Bockstein, for binary $`dx=0`$; numerator is the **integer** differential |
-| $`\beta^\circ x=(dx-\overline{dx})/2`$ | Integer carry for a possibly open binary cochain |
-| $`\beta^+x=(\beta x+\overline{\beta x})/2`$ | The plus carry of a closed binary cochain |
-| $`\beta_{s_1}\check\omega_2=d_{s_1}\check\omega_2/2`$ | Twisted integer background carry |
+| $`\beta^- x=(dx-[dx]_2)/2`$ | Integer carry for a possibly open binary cochain |
+| $`\beta^+x=(\beta x+[\beta x]_2)/2`$ | The plus carry of a closed binary cochain |
+| $`\beta_{s_1}\widetilde{\omega}_2=d_{s_1}\widetilde{\omega}_2/2`$ | Twisted integer background carry |
 | $`\Delta f=f(N)-f(n)-f(n')`$ | Full change under the displayed lower stacking law, with fixed backgrounds |
 
-The integer lifts of $`\check\omega_2`$ and the p+ip field have coefficients
+The integer lifts of $`\widetilde{\omega}_2`$ and the p+ip field have coefficients
 $`\mathbb Z_{s_1}`$; those of $`\omega_2`$ and the Majorana field have ordinary
 integer coefficients. [Operations](formulas/OPERATIONS.md#eq-o7) specifies
-all coefficient transports. A check is never an instruction to change
+all coefficient transports. A tilde is never an instruction to change
 those coefficient systems.
 
 Finite definitions of higher cups and ordered word operations are in
@@ -154,7 +154,7 @@ For an untwisted integer cochain $`x`$ of degree $`r\ge2`$, define
 ```
 
 It has three terms and degree $`r+2`$. Its parity is
-$`\mathrm{Sq}^2\bar x+\omega_2\bar x`$; its integer value retains the
+$`\mathrm{Sq}^2[x]_2+\omega_2[x]_2`$; its integer value retains the
 information required by a quarter-valued phase. The
 [exact addition and stacking identities](formulas/QUADRATIC_REFINEMENTS.md)
 explain its reuse in the obstruction and twister. It is a specified

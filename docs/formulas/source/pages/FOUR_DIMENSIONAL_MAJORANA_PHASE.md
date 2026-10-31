@@ -14,7 +14,7 @@ coordinate without changing the lower decorations:
 Here $`\Delta \widehat B_5`$ is evaluated on the actual lower stacking output and
 then subtracts its values on the two inputs. In particular, the shifted
 Majorana output contains the integer-layer correction; it is not simply
-$`\check n_3+\check n'_3`$. This transport is invertible by adding the same
+$`\widetilde{n}_3+\widetilde{n}'_3`$. This transport is invertible by adding the same
 five-cochain. It is applied to the source and product together.
 
 ## The fixed change of phase
@@ -42,11 +42,11 @@ above, and coefficient one modulo two:
 
 ## Why the pure contribution stays compact
 
-For an arbitrary binary cochain, $`\beta^\circ x=(dx-\overline{dx})/2`$
+For an arbitrary binary cochain, $`\beta^- x=(dx-[dx]_2)/2`$
 uses integer arithmetic in the numerator. Its parity is the specified
 open-cochain operation $`\mathrm{Sq}^1x`$. Thus every Bockstein and carry
 in the compact [Majorana formula](FOUR_DIMENSIONAL.md#majorana-phase-4d)
-is defined even when $`d\check n_3\ne0`$.
+is defined even when $`d\widetilde{n}_3\ne0`$.
 
 Its intrinsic and Cartan polynomials are fixed operations:
 
@@ -67,20 +67,20 @@ when the input becomes open.
 Differentiate the displayed five-cochain using the signed integral cup
 identity. On writing the original binary field differential as its binary
 value plus twice the open Bockstein, its quarter part contributes exactly
-the two ordered cups involving $`d\check n_3`$ in the mixed obstruction.
+the two ordered cups involving $`d\widetilde{n}_3`$ in the mixed obstruction.
 The derivative term of the preceding integer quadratic cochain contributes
 the third quarter cup. Their sum is
 
 ```math
 \frac14\Big[
- -(\beta^\circ\check n_3)\cup_3\beta(d\check n_3)
- -(d\check n_3)\cup_1\check n_3
- +\check n_3\cup_1(d\check n_3)\Big].
+ -(\beta^-\widetilde{n}_3)\cup_3\beta(d\widetilde{n}_3)
+ -(d\widetilde{n}_3)\cup_1\widetilde{n}_3
+ +\widetilde{n}_3\cup_1(d\widetilde{n}_3)\Big].
 ```
 
 All three cups vanish when the lower Majorana differential is zero.
-In the last two cups the binary cochain $`d\check n_3`$ is lifted as a
-whole; it is not the unreduced integer differential of $`\check n_3`$.
+In the last two cups the binary cochain $`d\widetilde{n}_3`$ is lifted as a
+whole; it is not the unreduced integer differential of $`\widetilde{n}_3`$.
 The Bockstein is defined because the binary differential is closed.
 
 The remaining binary derivative is expanded by the ordinary differential
@@ -89,7 +89,7 @@ and composition of the MS operations. Collecting equal words gives the
 [complete coefficient table](FOUR_DIMENSIONAL_MAJORANA_RELATIVE_WORD_COEFFICIENTS.md).
 It is evaluated directly from that table; no old obstruction formula or
 unspecified primitive is needed to define it. Its zero restriction to
-$`d\check n_3=0`$ follows from the same exact closed-input dictionary.
+$`d\widetilde{n}_3=0`$ follows from the same exact closed-input dictionary.
 Individual terms need not display the differential explicitly.
 
 The term $`s_1n_4/2`$ in the phase change is essential. Its derivative

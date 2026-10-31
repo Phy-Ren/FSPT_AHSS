@@ -82,15 +82,15 @@ Every Majorana face factor becomes the following explicit sum:
 
 ```math
 \begin{aligned}
-\check n_3^{(a)}(ijkl)\longmapsto{}&
- \check n_3^{(a)}(P^a(i),P^a(j),P^a(k),P^a(l))\\
-&+\Big[\check\omega_2(0,P^a(i),P^a(j))
- +\check\omega_2(P^0(0),P^0(i),P^0(j))\\
+\widetilde{n}_3^{(a)}(ijkl)\longmapsto{}&
+ \widetilde{n}_3^{(a)}(P^a(i),P^a(j),P^a(k),P^a(l))\\
+&+\Big[\widetilde{\omega}_2(0,P^a(i),P^a(j))
+ +\widetilde{\omega}_2(P^0(0),P^0(i),P^0(j))\\
 &\qquad+\sum_{\ell=1}^{J}\epsilon_\ell
-  \big\{\check\omega_2(r_\ell,t_\ell,A_\ell^a(i))
-       +\check\omega_2(r_\ell,t_\ell,A_\ell^a(j))\big\}\Big]\\
+  \big\{\widetilde{\omega}_2(r_\ell,t_\ell,A_\ell^a(i))
+       +\widetilde{\omega}_2(r_\ell,t_\ell,A_\ell^a(j))\big\}\Big]\\
 &\hspace{20mm}\times
- \bar n_2^{(a)}(P^a(j),P^a(k),P^a(l)).
+ [n_2^{(a)}]_2(P^a(j),P^a(k),P^a(l)).
 \end{aligned}
 ```
 
@@ -98,8 +98,8 @@ The first term has Majorana origin. Every term in the square bracket
 times the parity of the integer face has p+ip origin. Expand this sum
 before collecting the physical contributions in the
 [binary coefficient formula](FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md).
-The formula uses $`\check n_3^{(1)}=\check n_3`$ and
-$`\check n_3^{(2)}=\check n'_3`$.
+The formula uses $`\widetilde{n}_3^{(1)}=\widetilde{n}_3`$ and
+$`\widetilde{n}_3^{(2)}=\widetilde{n}'_3`$.
 
 Every cup or MS operation in the coefficient definition supplies its
 ordinary finite list of faces. Substituting the factors above therefore
@@ -125,7 +125,7 @@ P_{\ell-1}^0(0)<P_{\ell-1}^0(1)
 All vertex maps and physical face factors remain as defined above. If the
 inequality fails, write the coincident vertex as $`r`$. The two choices
 of $`\epsilon_\ell`$ then give identical inputs: normalization gives
-$`s_1(r,r)=0`$ and $`\check\omega_2(r,r,x)=0`$. Their binary contributions
+$`s_1(r,r)=0`$ and $`\widetilde{\omega}_2(r,r,x)=0`$. Their binary contributions
 cancel exactly, including their integer transports before the indicated
 divisions. Every length-five path contains such a pair. No cochain
 representative or phase convention is changed by omitting these pairs.

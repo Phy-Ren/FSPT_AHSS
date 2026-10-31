@@ -60,7 +60,7 @@ $`z_2x/2`$ to the quarter-valued phase.
 ## The quadratic part of the 4+1D obstruction
 
 The [integer carries](FOUR_DIMENSIONAL.md#eq-s1) are already fixed:
-$`\beta_4^\gamma=\beta^\circ\check n_3`$ and
+$`\beta_4^\gamma=\beta^-\widetilde{n}_3`$ and
 $`\beta_4=\beta_4^\gamma+\beta_4^\psi`$. The quadratic quarter-valued terms in the
 three physical contributions are, respectively,
 
@@ -147,7 +147,7 @@ of the terminal appendix. The lift change must transport **both** data:
 
 {{equation:quadratic-refinements--changing-the-lift-in-the-terminal-product--11}}
 
-Replacing $`\overline{V_5}/4+Z_5/2`$ by
+Replacing $`[V_5]_2/4+Z_5/2`$ by
 $`V_5^{\mathbb Z}/4+Z_5^{\rm new}/2`$ then gives exactly
 
 <a id="paired-lift-transport"></a>

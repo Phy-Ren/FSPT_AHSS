@@ -2,10 +2,10 @@
 
 # Ordinary MS coefficients for 4+1D Majorana self-stacking
 
-The sum in the [self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md) contains **187 terms**. Each word specifies one standard MS operation on the ordered physical inputs above it. The reduction uses the exact open-cochain identity $`\overline{\beta^\circ\check n_3}=\mathrm{Sq}^1\check n_3`$ and closed backgrounds. It does not assume $`d\check n_3=0`$ and changes no representative.
+The sum in the [self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md) contains **187 terms**. Each word specifies one standard MS operation on the ordered physical inputs above it. The reduction uses the exact open-cochain identity $`[\beta^-\widetilde{n}_3]_2=\mathrm{Sq}^1\widetilde{n}_3`$ and closed backgrounds. It does not assume $`d\widetilde{n}_3=0`$ and changes no representative.
 
 ```math
-(\check n_3,\check n_3,\check n_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -28,7 +28,7 @@ The sum in the [self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md) contai
 This block contains **109 terms**.
 
 ```math
-(\check n_3,\check n_3,\check n_3,\overline{d\check n_3}).
+(\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,[d\widetilde{n}_3]_2).
 ```
 
 ```text
@@ -38,7 +38,7 @@ This block contains **109 terms**.
 This block contains **4 terms**.
 
 ```math
-(\check n_3,\check n_3,\omega_2,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,\omega_2,\widetilde{n}_3).
 ```
 
 ```text
@@ -48,7 +48,7 @@ This block contains **4 terms**.
 This block contains **2 terms**.
 
 ```math
-(\check n_3,\check n_3,\overline{d\check n_3},\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,[d\widetilde{n}_3]_2,\widetilde{n}_3).
 ```
 
 ```text
@@ -58,7 +58,7 @@ This block contains **2 terms**.
 This block contains **5 terms**.
 
 ```math
-(\check n_3,\check n_3,d\overline{\beta^\circ\check n_3}).
+(\widetilde{n}_3,\widetilde{n}_3,d[\beta^-\widetilde{n}_3]_2).
 ```
 
 ```text
@@ -68,7 +68,7 @@ This block contains **5 terms**.
 This block contains **1 terms**.
 
 ```math
-(\check n_3,\check n_3,s_1,\check n_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -79,7 +79,7 @@ This block contains **1 terms**.
 This block contains **9 terms**.
 
 ```math
-(\check n_3,\check n_3,s_1,\check n_3,\overline{d\check n_3}).
+(\widetilde{n}_3,\widetilde{n}_3,s_1,\widetilde{n}_3,[d\widetilde{n}_3]_2).
 ```
 
 ```text
@@ -89,7 +89,7 @@ This block contains **9 terms**.
 This block contains **2 terms**.
 
 ```math
-(\check n_3,\overline{d\check n_3},\check n_3,\check n_3).
+(\widetilde{n}_3,[d\widetilde{n}_3]_2,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -99,7 +99,7 @@ This block contains **2 terms**.
 This block contains **1 terms**.
 
 ```math
-(\check n_3,s_1,\check n_3,\check n_3,\check n_3).
+(\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -109,7 +109,7 @@ This block contains **1 terms**.
 This block contains **4 terms**.
 
 ```math
-(\omega_2,\check n_3,\check n_3,\check n_3).
+(\omega_2,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -119,7 +119,7 @@ This block contains **4 terms**.
 This block contains **7 terms**.
 
 ```math
-(\omega_2,s_1,\check n_3,\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -129,7 +129,7 @@ This block contains **7 terms**.
 This block contains **1 terms**.
 
 ```math
-(\omega_2,s_1,\check n_3,\check n_3,\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -139,7 +139,7 @@ This block contains **1 terms**.
 This block contains **7 terms**.
 
 ```math
-(\overline{\beta^\circ\check n_3},\check n_3).
+([\beta^-\widetilde{n}_3]_2,\widetilde{n}_3).
 ```
 
 ```text
@@ -149,7 +149,7 @@ This block contains **7 terms**.
 This block contains **1 terms**.
 
 ```math
-(s_1,\check n_3,\check n_3,\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -162,7 +162,7 @@ This block contains **1 terms**.
 This block contains **28 terms**.
 
 ```math
-(s_1,\check n_3,\check n_3,s_1,\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -172,7 +172,7 @@ This block contains **28 terms**.
 This block contains **2 terms**.
 
 ```math
-(s_1,\overline{\beta^\circ\check n_3},\check n_3,\check n_3).
+(s_1,[\beta^-\widetilde{n}_3]_2,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -182,7 +182,7 @@ This block contains **2 terms**.
 This block contains **1 terms**.
 
 ```math
-(s_1,\overline{\beta^\circ\check n_3},\overline{\beta^\circ\check n_3}).
+(s_1,[\beta^-\widetilde{n}_3]_2,[\beta^-\widetilde{n}_3]_2).
 ```
 
 ```text
@@ -192,7 +192,7 @@ This block contains **1 terms**.
 This block contains **1 terms**.
 
 ```math
-(s_1,s_1,\check n_3,\check n_3,\check n_3,\check n_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text

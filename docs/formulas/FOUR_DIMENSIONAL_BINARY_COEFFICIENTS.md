@@ -41,21 +41,21 @@ For a face $`(ijkl)`$ use the maps
 $`P^a,A_\ell^a,r_\ell,t_\ell,\epsilon_\ell`$
 defined in [Physical paths](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md).
 The two input labels are $`a=1,2`$, with
-$`\check n_3^{(1)}=\check n_3`$, $`\check n_3^{(2)}=\check n'_3`$
+$`\widetilde{n}_3^{(1)}=\widetilde{n}_3`$, $`\widetilde{n}_3^{(2)}=\widetilde{n}'_3`$
 and the same convention for $`n_2`$. The two origin coefficients are
 
 ```math
 \begin{aligned}
-\check n_{3;\gamma}^{(a)}(ijkl)
- &=\check n_3^{(a)}
+\widetilde{n}_{3;\gamma}^{(a)}(ijkl)
+ &=\widetilde{n}_3^{(a)}
        (P^a(i),P^a(j),P^a(k),P^a(l)),\\
-\check n_{3;\psi}^{(a)}(ijkl)
- &=\Big[\check\omega_2(0,P^a(i),P^a(j))
-        +\check\omega_2(P^0(0),P^0(i),P^0(j))\\
+\widetilde{n}_{3;\psi}^{(a)}(ijkl)
+ &=\Big[\widetilde{\omega}_2(0,P^a(i),P^a(j))
+        +\widetilde{\omega}_2(P^0(0),P^0(i),P^0(j))\\
  &\qquad+\sum_{\ell=1}^{J}\epsilon_\ell
-  \big\{\check\omega_2(r_\ell,t_\ell,A_\ell^a(i))
-       +\check\omega_2(r_\ell,t_\ell,A_\ell^a(j))\big\}\Big]\\
- &\qquad\times\bar n_2^{(a)}(P^a(j),P^a(k),P^a(l)).
+  \big\{\widetilde{\omega}_2(r_\ell,t_\ell,A_\ell^a(i))
+       +\widetilde{\omega}_2(r_\ell,t_\ell,A_\ell^a(j))\big\}\Big]\\
+ &\qquad\times[n_2^{(a)}]_2(P^a(j),P^a(k),P^a(l)).
 \end{aligned}
 ```
 
@@ -67,8 +67,8 @@ ones the second input. Their $`\gamma\psi`$ input component is zero.
 Put
 
 ```math
-\check{\mathcal{ℰ}}_3=\bar n_2\cup_1\bar n'_2,
-\qquad \check\omega_2=\omega_2+s_1^2.
+\widetilde{\mathcal{ℰ}}_3=[n_2]_2\cup_1[n'_2]_2,
+\qquad \widetilde{\omega}_2=\omega_2+s_1^2.
 ```
 
 Use $`j\in\{\mathrm{in},\mathrm{in}',\mathrm{out}\}`$ for the first input, second input, and actual stacked output:
@@ -76,16 +76,16 @@ Use $`j\in\{\mathrm{in},\mathrm{in}',\mathrm{out}\}`$ for the first input, secon
 | coefficient | first input | second input | output |
 |---|---|---|---|
 | $`n_2^{(j)}`$ | $`n_2`$ | $`n'_2`$ | $`N_2=n_2+n'_2`$ |
-| $`\check n_{3;\gamma}^{(j)}`$ | $`\check n_{3;\gamma}`$ | $`\check n'_{3;\gamma}`$ | $`\check n_{3;\gamma}+\check n'_{3;\gamma}`$ |
-| $`\check n_{3;\psi}^{(j)}`$ | $`\check n_{3;\psi}`$ | $`\check n'_{3;\psi}`$ | $`\check n_{3;\psi}+\check n'_{3;\psi}+\check{\mathcal{ℰ}}_3`$ |
+| $`\widetilde{n}_{3;\gamma}^{(j)}`$ | $`\widetilde{n}_{3;\gamma}`$ | $`\widetilde{n}'_{3;\gamma}`$ | $`\widetilde{n}_{3;\gamma}+\widetilde{n}'_{3;\gamma}`$ |
+| $`\widetilde{n}_{3;\psi}^{(j)}`$ | $`\widetilde{n}_{3;\psi}`$ | $`\widetilde{n}'_{3;\psi}`$ | $`\widetilde{n}_{3;\psi}+\widetilde{n}'_{3;\psi}+\widetilde{\mathcal{ℰ}}_3`$ |
 
 The output in the last row is the actual lower stacking output. These
 three columns are substitutions in the displayed polynomials, not three
 calls to an unspecified terminal operation. Let
 
 ```math
-\check{\mathcal{𝒪}}_4^{(j)}=(\bar n_2^{(j)})^2+\check\omega_2\bar n_2^{(j)},\qquad
-\beta_4^{\psi,(j)}=\frac{\overline{\check{\mathcal{𝒪}}_4^{(j)}}-(n_2^{(j)})^2-\check\omega_2n_2^{(j)}}2.
+\widetilde{\mathcal{𝒪}}_4^{(j)}=([n_2^{(j)}]_2)^2+\widetilde{\omega}_2[n_2^{(j)}]_2,\qquad
+\beta_4^{\psi,(j)}=\frac{[\widetilde{\mathcal{𝒪}}_4^{(j)}]_2-(n_2^{(j)})^2-\widetilde{\omega}_2n_2^{(j)}}2.
 ```
 
 Both are pure p+ip-origin factors. Integer coefficients have the same
@@ -94,47 +94,47 @@ summands of the complete Bockstein and carry:
 
 ```math
 \begin{aligned}
-(\beta^\circ\check n_3)_{\gamma}^{(j)}&=\beta^\circ \check n_{3;\gamma}^{(j)},\qquad
-(\beta^\circ\check n_3)_{\psi}^{(j)}=\beta^\circ \check n_{3;\psi}^{(j)},\\
-(\beta^\circ\check n_3)_{\gamma\psi}^{(j)}&=-d(\check n_{3;\gamma}^{(j)}\cup_3\check n_{3;\psi}^{(j)})
-             +\overline{d\check n_{3;\gamma}^{(j)}}\cup_4\overline{d\check n_{3;\psi}^{(j)}},\\
-\beta_{4;\gamma}^{(j)}&=(\beta^\circ\check n_3)_{\gamma}^{(j)},\qquad
-\beta_{4;\gamma\psi}^{(j)}=(\beta^\circ\check n_3)_{\gamma\psi}^{(j)},\qquad
-\beta_{4;\psi}^{(j)}=(\beta^\circ\check n_3)_{\psi}^{(j)}+\beta_4^{\psi,(j)}.
+(\beta^-\widetilde{n}_3)_{\gamma}^{(j)}&=\beta^- \widetilde{n}_{3;\gamma}^{(j)},\qquad
+(\beta^-\widetilde{n}_3)_{\psi}^{(j)}=\beta^- \widetilde{n}_{3;\psi}^{(j)},\\
+(\beta^-\widetilde{n}_3)_{\gamma\psi}^{(j)}&=-d(\widetilde{n}_{3;\gamma}^{(j)}\cup_3\widetilde{n}_{3;\psi}^{(j)})
+             +[d\widetilde{n}_{3;\gamma}^{(j)}]_2\cup_4[d\widetilde{n}_{3;\psi}^{(j)}]_2,\\
+\beta_{4;\gamma}^{(j)}&=(\beta^-\widetilde{n}_3)_{\gamma}^{(j)},\qquad
+\beta_{4;\gamma\psi}^{(j)}=(\beta^-\widetilde{n}_3)_{\gamma\psi}^{(j)},\qquad
+\beta_{4;\psi}^{(j)}=(\beta^-\widetilde{n}_3)_{\psi}^{(j)}+\beta_4^{\psi,(j)}.
 \end{aligned}
 ```
 
-All factors in the expression for $`(\beta^\circ\check n_3)_{\gamma\psi}`$ take their canonical integer
+All factors in the expression for $`(\beta^-\widetilde{n}_3)_{\gamma\psi}`$ take their canonical integer
 values before the integer differential and products. Their sum is
-exactly $`\beta^\circ(\check n_{3;\gamma}^{(j)}+\check n_{3;\psi}^{(j)})`$; hence the sum of the three
+exactly $`\beta^-(\widetilde{n}_{3;\gamma}^{(j)}+\widetilde{n}_{3;\psi}^{(j)})`$; hence the sum of the three
 $`\beta_{4;r}^{(j)}`$ is the original integral carry on that column.
 
 The lower obstruction coefficients are
 
 ```math
 \begin{aligned}
-(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma}^{(j)}={}&\check n_{3;\gamma}^{(j)}\cup_1\check n_{3;\gamma}^{(j)}
- +s_1(\check n_{3;\gamma}^{(j)}\cup_2\check n_{3;\gamma}^{(j)})+\omega_2 \check n_{3;\gamma}^{(j)},\\
-(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma\psi}^{(j)}={}&\check n_{3;\gamma}^{(j)}\cup_1\check n_{3;\psi}^{(j)}
- +\check n_{3;\psi}^{(j)}\cup_1\check n_{3;\gamma}^{(j)}+\check n_{3;\gamma}^{(j)}\cup_2\check{\mathcal{𝒪}}_4^{(j)}\\
-&+s_1[\check n_{3;\gamma}^{(j)}\cup_2\check n_{3;\psi}^{(j)}
-    +\check n_{3;\psi}^{(j)}\cup_2\check n_{3;\gamma}^{(j)}+\check n_{3;\gamma}^{(j)}\cup_3\check{\mathcal{𝒪}}_4^{(j)}],\\
-(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\psi}^{(j)}={}&\check n_{3;\psi}^{(j)}\cup_1\check n_{3;\psi}^{(j)}
- +\check n_{3;\psi}^{(j)}\cup_2\check{\mathcal{𝒪}}_4^{(j)}
- +s_1[\check n_{3;\psi}^{(j)}\cup_2\check n_{3;\psi}^{(j)}+\check n_{3;\psi}^{(j)}\cup_3\check{\mathcal{𝒪}}_4^{(j)}]
- +\omega_2 \check n_{3;\psi}^{(j)},\\
+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma}^{(j)}={}&\widetilde{n}_{3;\gamma}^{(j)}\cup_1\widetilde{n}_{3;\gamma}^{(j)}
+ +s_1(\widetilde{n}_{3;\gamma}^{(j)}\cup_2\widetilde{n}_{3;\gamma}^{(j)})+\omega_2 \widetilde{n}_{3;\gamma}^{(j)},\\
+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma\psi}^{(j)}={}&\widetilde{n}_{3;\gamma}^{(j)}\cup_1\widetilde{n}_{3;\psi}^{(j)}
+ +\widetilde{n}_{3;\psi}^{(j)}\cup_1\widetilde{n}_{3;\gamma}^{(j)}+\widetilde{n}_{3;\gamma}^{(j)}\cup_2\widetilde{\mathcal{𝒪}}_4^{(j)}\\
+&+s_1[\widetilde{n}_{3;\gamma}^{(j)}\cup_2\widetilde{n}_{3;\psi}^{(j)}
+    +\widetilde{n}_{3;\psi}^{(j)}\cup_2\widetilde{n}_{3;\gamma}^{(j)}+\widetilde{n}_{3;\gamma}^{(j)}\cup_3\widetilde{\mathcal{𝒪}}_4^{(j)}],\\
+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\psi}^{(j)}={}&\widetilde{n}_{3;\psi}^{(j)}\cup_1\widetilde{n}_{3;\psi}^{(j)}
+ +\widetilde{n}_{3;\psi}^{(j)}\cup_2\widetilde{\mathcal{𝒪}}_4^{(j)}
+ +s_1[\widetilde{n}_{3;\psi}^{(j)}\cup_2\widetilde{n}_{3;\psi}^{(j)}+\widetilde{n}_{3;\psi}^{(j)}\cup_3\widetilde{\mathcal{𝒪}}_4^{(j)}]
+ +\omega_2 \widetilde{n}_{3;\psi}^{(j)},\\
 \mathcal{𝒪}_{5;r}^{(j)}={}&(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{r}^{(j)}+\mathbf1_{r=\psi}\mathcal{𝒪}_5^\psi[n_2^{(j)}].
 \end{aligned}
 ```
 
 The parenthesized label is the full open Majorana polynomial, including both of its native physical contributions. Adding the pure p+ip term gives the complete lower obstruction. In particular the open
-Sq terms use the actual first-tower equation $`d\check n_3=\check{\mathcal{𝒪}}_4`$; they have not been
+Sq terms use the actual first-tower equation $`d\widetilde{n}_3=\widetilde{\mathcal{𝒪}}_4`$; they have not been
 discarded under a cocycle assumption.
 
 ## The ordinary Majorana word contribution
 
 Use the [1,090 fixed ordinary rows](FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md) $`(\vartheta;x_1,\ldots,x_q)`$, whose atoms are
-$`\check n_3,d\check n_3,\omega_2,s_1`$, obtained from the explicitly specified 453-word source table
+$`\widetilde{n}_3,d\widetilde{n}_3,\omega_2,s_1`$, obtained from the explicitly specified 453-word source table
 by the explicit finite coefficient rule given with that table. Each row denotes the usual
 $`\mathop{\mathrm{MS}}\nolimits_{\vartheta}`$, with no homotopy or parameter field in its
 arguments. For each $`(j,r)`$, its contribution is the following ordinary
@@ -143,29 +143,29 @@ finite sum:
 ```math
 \sum_{(\vartheta;x_1,\ldots,x_q)}\;
 \sum_{\substack{c_1\vee\cdots\vee c_q=r\\
-  c_\ell\in\{\gamma,\psi\}\ (x_\ell=\check n_3),\;
-  c_\ell=\psi\ (x_\ell=d\check n_3),\;
+  c_\ell\in\{\gamma,\psi\}\ (x_\ell=\widetilde{n}_3),\;
+  c_\ell=\psi\ (x_\ell=d\widetilde{n}_3),\;
   c_\ell=\varnothing\ (x_\ell=\omega_2,s_1)}}
 \mathop{\mathrm{MS}}\nolimits_{\vartheta}
  \big(x_{1,c_1}^{(j)},\ldots,x_{q,c_q}^{(j)}\big).
 ```
 
-Use the displayed input/output column for each field. Replace every $`d\check n_3`$ argument by $`\check{\mathcal{𝒪}}_4^{(j)}`$; the background arguments remain $`\omega_2,s_1`$.
+Use the displayed input/output column for each field. Replace every $`d\widetilde{n}_3`$ argument by $`\widetilde{\mathcal{𝒪}}_4^{(j)}`$; the background arguments remain $`\omega_2,s_1`$.
 The one extra carry has the three explicit coefficients
 
 ```math
 \begin{aligned}
-[\widetilde{\beta^\circ\check n_3}]_{\gamma}^{(j)}&=\widetilde{(\beta^\circ\check n_3)_{\gamma}^{(j)}},\qquad
-[\widetilde{\beta^\circ\check n_3}]_{\psi}^{(j)}=\widetilde{(\beta^\circ\check n_3)_{\psi}^{(j)}},\\
-[\widetilde{\beta^\circ\check n_3}]_{\gamma\psi}^{(j)}&=\widetilde{(\beta^\circ\check n_3)_{\gamma\psi}^{(j)}}
- +\overline{(\beta^\circ\check n_3)_{\gamma}^{(j)}}\cup_4\overline{(\beta^\circ\check n_3)_{\psi}^{(j)}}
- +\overline{(\beta^\circ\check n_3)_{\gamma}^{(j)}}\cup_4\overline{(\beta^\circ\check n_3)_{\gamma\psi}^{(j)}}
- +\overline{(\beta^\circ\check n_3)_{\psi}^{(j)}}\cup_4\overline{(\beta^\circ\check n_3)_{\gamma\psi}^{(j)}}.
+[[\lfloor \beta^-\widetilde{n}_3/2\rfloor]_2]_{\gamma}^{(j)}&=[\lfloor (\beta^-\widetilde{n}_3)_{\gamma}^{(j)}/2\rfloor]_2,\qquad
+[[\lfloor \beta^-\widetilde{n}_3/2\rfloor]_2]_{\psi}^{(j)}=[\lfloor (\beta^-\widetilde{n}_3)_{\psi}^{(j)}/2\rfloor]_2,\\
+[[\lfloor \beta^-\widetilde{n}_3/2\rfloor]_2]_{\gamma\psi}^{(j)}&=[\lfloor (\beta^-\widetilde{n}_3)_{\gamma\psi}^{(j)}/2\rfloor]_2
+ +[(\beta^-\widetilde{n}_3)_{\gamma}^{(j)}]_2\cup_4[(\beta^-\widetilde{n}_3)_{\psi}^{(j)}]_2
+ +[(\beta^-\widetilde{n}_3)_{\gamma}^{(j)}]_2\cup_4[(\beta^-\widetilde{n}_3)_{\gamma\psi}^{(j)}]_2
+ +[(\beta^-\widetilde{n}_3)_{\psi}^{(j)}]_2\cup_4[(\beta^-\widetilde{n}_3)_{\gamma\psi}^{(j)}]_2.
 \end{aligned}
 ```
 
-In this display $`\widetilde x=\overline{\lfloor x/2\rfloor}`$ is the
-second digit of an integer, including negative integers. Add $`s_1^2[\widetilde{\beta^\circ\check n_3}]_r^{(j)}`$
+In this display $`[\lfloor x/2\rfloor]_2`$ is the
+second digit of an integer, including negative integers. Add $`s_1^2[[\lfloor \beta^-\widetilde{n}_3/2\rfloor]_2]_r^{(j)}`$
 to the finite word sum. Denote that explicitly printed sum plus this
 single carry by $`\mathcal T_{6;r}^{(j)}`$ only in the next display; it is not a new
 primitive or an implicit evaluation prescription.
@@ -174,19 +174,19 @@ The remaining one-input terms have the complete coefficients
 
 ```math
 \begin{aligned}
-\mathcal H_{6;\gamma}^{(j)}={}&\mathcal T_{6;\gamma}^{(j)}+\check n_{3;\gamma}^{(j)}(\overline{\beta \omega_2}+s_1\omega_2),\\
+\mathcal H_{6;\gamma}^{(j)}={}&\mathcal T_{6;\gamma}^{(j)}+\widetilde{n}_{3;\gamma}^{(j)}([\beta \omega_2]_2+s_1\omega_2),\\
 \mathcal H_{6;\gamma\psi}^{(j)}={}&\mathcal T_{6;\gamma\psi}^{(j)}
  +((\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma}^{(j)}+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma\psi}^{(j)})\cup_4\mathcal{𝒪}_5^\psi[n_2^{(j)}]\\
-&+(\overline{(\beta^\circ\check n_3)_{\gamma}}^{(j)}+\overline{(\beta^\circ\check n_3)_{\gamma\psi}}^{(j)})\cup_2\bar \beta_4^{\psi,(j)}
- +s_1[(\overline{(\beta^\circ\check n_3)_{\gamma}}^{(j)}+\overline{(\beta^\circ\check n_3)_{\gamma\psi}}^{(j)})\cup_3\bar \beta_4^{\psi,(j)}]
- +\bar n_2^{(j)}(\bar \beta_{4;\gamma}^{(j)}+\bar \beta_{4;\gamma\psi}^{(j)}),\\
-\mathcal H_{6;\psi}^{(j)}={}&\mathcal T_{6;\psi}^{(j)}+\check n_{3;\psi}^{(j)}(\overline{\beta \omega_2}+s_1\omega_2)
+&+([(\beta^-\widetilde{n}_3)_{\gamma}]_2^{(j)}+[(\beta^-\widetilde{n}_3)_{\gamma\psi}]_2^{(j)})\cup_2[\beta_4^{\psi,(j)}]_2
+ +s_1[([(\beta^-\widetilde{n}_3)_{\gamma}]_2^{(j)}+[(\beta^-\widetilde{n}_3)_{\gamma\psi}]_2^{(j)})\cup_3[\beta_4^{\psi,(j)}]_2]
+ +[n_2^{(j)}]_2([\beta_{4;\gamma}^{(j)}]_2+[\beta_{4;\gamma\psi}^{(j)}]_2),\\
+\mathcal H_{6;\psi}^{(j)}={}&\mathcal T_{6;\psi}^{(j)}+\widetilde{n}_{3;\psi}^{(j)}([\beta \omega_2]_2+s_1\omega_2)
  +(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\psi}^{(j)}\cup_4\mathcal{𝒪}_5^\psi[n_2^{(j)}]
  +y_6[n_2^{(j)};\omega_2,s_1]\\
-&+\overline{(\beta^\circ\check n_3)_{\psi}}^{(j)}\cup_2\bar \beta_4^{\psi,(j)}
- +s_1[\overline{(\beta^\circ\check n_3)_{\psi}}^{(j)}\cup_3\bar \beta_4^{\psi,(j)}]
- +\bar n_2^{(j)}\bar \beta_{4;\psi}^{(j)}
- +(\bar n_2^{(j)}\cup_1\overline{\beta_{s_1}\check\omega_2})\bar n_2^{(j)}.
+&+[(\beta^-\widetilde{n}_3)_{\psi}]_2^{(j)}\cup_2[\beta_4^{\psi,(j)}]_2
+ +s_1[[(\beta^-\widetilde{n}_3)_{\psi}]_2^{(j)}\cup_3[\beta_4^{\psi,(j)}]_2]
+ +[n_2^{(j)}]_2[\beta_{4;\psi}^{(j)}]_2
+ +([n_2^{(j)}]_2\cup_1[\beta_{s_1}\widetilde{\omega}_2]_2)[n_2^{(j)}]_2.
 \end{aligned}
 ```
 
@@ -200,31 +200,31 @@ Define the parity of the lower integral product carry by
 
 ```math
 \begin{aligned}
-\bar\lambda_{3;r}={}&\sum_{i\vee j=r}\check n_{3;i}^{\mathrm{in}}\cup_3\check n_{3;j}^{\mathrm{in}'}
- +\sum_{i\vee\psi=r}(\check n_{3;i}^{\mathrm{in}}+\check n_{3;i}^{\mathrm{in}'})\cup_3\check{\mathcal{ℰ}}_3
- +\mathbf1_{r=\psi}\overline{\frac{\check{\mathcal{ℰ}}_3+n_2\cup_1n'_2}{2}},\\
-\bar \beta_{4;r}={}&\bar \beta_{4;r}^{\mathrm{in}},\qquad \bar \beta_{4;r}'=\bar \beta_{4;r}^{\mathrm{in}'}.
+[\lambda_{3;r}]_2={}&\sum_{i\vee j=r}\widetilde{n}_{3;i}^{\mathrm{in}}\cup_3\widetilde{n}_{3;j}^{\mathrm{in}'}
+ +\sum_{i\vee\psi=r}(\widetilde{n}_{3;i}^{\mathrm{in}}+\widetilde{n}_{3;i}^{\mathrm{in}'})\cup_3\widetilde{\mathcal{ℰ}}_3
+ +\mathbf1_{r=\psi}[\frac{\widetilde{\mathcal{ℰ}}_3+n_2\cup_1n'_2}{2}]_2,\\
+[\beta_{4;r}]_2={}&[\beta_{4;r}^{\mathrm{in}}]_2,\qquad [\beta_{4;r}']_2=[\beta_{4;r}^{\mathrm{in}'}]_2.
 \end{aligned}
 ```
 
-The half division in this one line is exact because $`\check{\mathcal{ℰ}}_3\equiv n_2\cup_1n'_2`$
+The half division in this one line is exact because $`\widetilde{\mathcal{ℰ}}_3\equiv n_2\cup_1n'_2`$
 modulo two. Its sum gives precisely the parity of the original lambda.
 The binary quarter numerator is the sum of the following coefficients:
 
 ```math
 \begin{aligned}
 V_{5;r}={}&\sum_{i\vee j=r}\big[
- \bar \beta_{4;i}\cup_3\bar \beta_{4;j}'+d\bar \beta_{4;i}\cup_4\bar \beta_{4;j}'
- +(\bar \beta_{4;i}+\bar \beta_{4;i}')\cup_3[d\bar\lambda_{3;j}+\mathbf1_{j=\psi}\bar n'_2\bar n_2]
- +(d\bar \beta_{4;i}+d\bar \beta_{4;i}')\cup_4[d\bar\lambda_{3;j}+\mathbf1_{j=\psi}\bar n'_2\bar n_2]\\
-&\qquad+\bar\lambda_{3;i}\cup_1\bar\lambda_{3;j}+\bar\lambda_{3;i}\cup_2d\bar\lambda_{3;j}\big]
- +\sum_{\psi\vee j=r}(\bar n'_2\bar n_2)\cup_3d\bar\lambda_{3;j}+\omega_2 \bar\lambda_{3;r}\\
-&+\sum_{i\vee\psi=r}\big[\check n_{3;i}^{\mathrm{in}'}\bar n_2+\bar n'_2 \check n_{3;i}^{\mathrm{in}}\big]\\
+ [\beta_{4;i}]_2\cup_3[\beta_{4;j}']_2+d[\beta_{4;i}]_2\cup_4[\beta_{4;j}']_2
+ +([\beta_{4;i}]_2+[\beta_{4;i}']_2)\cup_3[d[\lambda_{3;j}]_2+\mathbf1_{j=\psi}[n'_2]_2[n_2]_2]
+ +(d[\beta_{4;i}]_2+d[\beta_{4;i}']_2)\cup_4[d[\lambda_{3;j}]_2+\mathbf1_{j=\psi}[n'_2]_2[n_2]_2]\\
+&\qquad+[\lambda_{3;i}]_2\cup_1[\lambda_{3;j}]_2+[\lambda_{3;i}]_2\cup_2d[\lambda_{3;j}]_2\big]
+ +\sum_{\psi\vee j=r}([n'_2]_2[n_2]_2)\cup_3d[\lambda_{3;j}]_2+\omega_2 [\lambda_{3;r}]_2\\
+&+\sum_{i\vee\psi=r}\big[\widetilde{n}_{3;i}^{\mathrm{in}'}[n_2]_2+[n'_2]_2 \widetilde{n}_{3;i}^{\mathrm{in}}\big]\\
 &+\mathbf1_{r=\psi}\big[
-  (\widetilde{\beta_{s_1}\check\omega_2}+\overline{\beta_{s_1}\check\omega_2})(\bar n_2\cup_2\bar n'_2)
-  +\mathop{\mathrm{MS}}\nolimits_{1231343}(\bar n'_2,\bar n'_2,\bar n_2,\bar n_2)
-  +(\check\omega_2\cup_1\bar n'_2)\bar n_2+\widetilde n'_2(\bar n_2\cup_1\bar n_2)\\
-&\qquad +(s_1\bar n'_2)\widetilde n_2+s_1(\bar n'_2\cup_1s_1)\bar n_2\big].
+  ([\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2+[\beta_{s_1}\widetilde{\omega}_2]_2)([n_2]_2\cup_2[n'_2]_2)
+  +\mathop{\mathrm{MS}}\nolimits_{1231343}([n'_2]_2,[n'_2]_2,[n_2]_2,[n_2]_2)
+  +(\widetilde{\omega}_2\cup_1[n'_2]_2)[n_2]_2+[\lfloor n'_2/2\rfloor]_2([n_2]_2\cup_1[n_2]_2)\\
+&\qquad +(s_1[n'_2]_2)[\lfloor n_2/2\rfloor]_2+s_1([n'_2]_2\cup_1s_1)[n_2]_2\big].
 \end{aligned}
 ```
 
@@ -244,29 +244,29 @@ Then set
 
 ```math
 \begin{aligned}
-\mathcal D_{6;\gamma}={}&\sum_j^{\pm}[Q(\beta_{4;\gamma}^{(j)})+\omega_2 \beta_{4;\gamma}^{(j)}]-d_{s_1}\bar{V_{5;\gamma}},\\
-\mathcal D_{6;\psi}={}&\sum_j^{\pm}[Q(\beta_{4;\psi}^{(j)})+\omega_2 \beta_{4;\psi}^{(j)}]-d_{s_1}\bar{V_{5;\psi}}\\
-&-\Delta\overline{\big[
- \mathop{\mathrm{MS}}\nolimits_{12132434}(\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
- +\widetilde{\beta_{s_1}\check\omega_2}(\bar n_2\cup_1\bar n_2)
- +(s_1\overline{\beta_{s_1}\check\omega_2})\widetilde n_2+s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\big]}\\
-&+\check\omega_2(n'_2n_2)+(\beta_{s_1}\check\omega_2)(n_2\cup_1n'_2),\\
+\mathcal D_{6;\gamma}={}&\sum_j^{\pm}[Q(\beta_{4;\gamma}^{(j)})+\omega_2 \beta_{4;\gamma}^{(j)}]-d_{s_1}[V_{5;\gamma}]_2,\\
+\mathcal D_{6;\psi}={}&\sum_j^{\pm}[Q(\beta_{4;\psi}^{(j)})+\omega_2 \beta_{4;\psi}^{(j)}]-d_{s_1}[V_{5;\psi}]_2\\
+&-\Delta[\big[
+ \mathop{\mathrm{MS}}\nolimits_{12132434}([\beta_{s_1}\widetilde{\omega}_2]_2,[\beta_{s_1}\widetilde{\omega}_2]_2,[n_2]_2,[n_2]_2)
+ +[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2([n_2]_2\cup_1[n_2]_2)
+ +(s_1[\beta_{s_1}\widetilde{\omega}_2]_2)[\lfloor n_2/2\rfloor]_2+s_1([\beta_{s_1}\widetilde{\omega}_2]_2\cup_1s_1)[n_2]_2\big]]_2\\
+&+\widetilde{\omega}_2(n'_2n_2)+(\beta_{s_1}\widetilde{\omega}_2)(n_2\cup_1n'_2),\\
 \mathcal D_{6;\gamma\psi}={}&\sum_j^{\pm}[Q(\beta_{4;\gamma\psi}^{(j)})+\omega_2 \beta_{4;\gamma\psi}^{(j)}
  +Q(\beta_{4;\gamma}^{(j)},\beta_{4;\gamma\psi}^{(j)})+Q(\beta_{4;\gamma}^{(j)},\beta_{4;\psi}^{(j)})
- +Q(\beta_{4;\gamma\psi}^{(j)},\beta_{4;\psi}^{(j)})]-d_{s_1}\bar{V_{5;\gamma\psi}}.
+ +Q(\beta_{4;\gamma\psi}^{(j)},\beta_{4;\psi}^{(j)})]-d_{s_1}[V_{5;\gamma\psi}]_2.
 \end{aligned}
 ```
 
-The whole bar on the four-term Cartan polynomial is taken before its
+The reduction modulo two of the whole four-term Cartan polynomial is taken before its
 signed difference. All other symbols on these lines have explicit
 definitions above.
 The three binary coefficients of the divided numerator are
 
 ```math
 \begin{aligned}
-\mathcal R_{6;\gamma}&=\widetilde{\mathcal D_{6;\gamma}},\qquad \mathcal R_{6;\psi}=\widetilde{\mathcal D_{6;\psi}},\\
-\mathcal R_{6;\gamma\psi}&=\widetilde{\mathcal D_{6;\gamma\psi}}+\bar{\mathcal D_{6;\gamma}}\cup_6\bar{\mathcal D_{6;\gamma\psi}}
- +\bar{\mathcal D_{6;\gamma}}\cup_6\bar{\mathcal D_{6;\psi}}+\bar{\mathcal D_{6;\gamma\psi}}\cup_6\bar{\mathcal D_{6;\psi}}
+\mathcal R_{6;\gamma}&=[\lfloor \mathcal D_{6;\gamma}/2\rfloor]_2,\qquad \mathcal R_{6;\psi}=[\lfloor \mathcal D_{6;\psi}/2\rfloor]_2,\\
+\mathcal R_{6;\gamma\psi}&=[\lfloor \mathcal D_{6;\gamma\psi}/2\rfloor]_2+[\mathcal D_{6;\gamma}]_2\cup_6[\mathcal D_{6;\gamma\psi}]_2
+ +[\mathcal D_{6;\gamma}]_2\cup_6[\mathcal D_{6;\psi}]_2+[\mathcal D_{6;\gamma\psi}]_2\cup_6[\mathcal D_{6;\psi}]_2
  +d[V_{5;\gamma}\cup_5V_{5;\gamma\psi}+V_{5;\gamma}\cup_5V_{5;\psi}+V_{5;\gamma\psi}\cup_5V_{5;\psi}].
 \end{aligned}
 ```
@@ -280,57 +280,57 @@ binary coefficient variables before imposing the tower equations.
 ## The complete binary coefficient in each physical sector
 
 The lower coefficient used here is the actual complex-fermion stacking
-correction plus $`\bar n_2\bar n'_2`$. Its origin components are the
+correction plus $`[n_2]_2[n'_2]_2`$. Its origin components are the
 following explicit polynomials:
 
 ```math
 \begin{aligned}
 \mathcal{ℰ}_{4;r}^{\mathrm{ker}}
 ={}&\sum_{i\vee j=r}\Big[
- \check n_{3;i}^{\mathrm{in}}\cup_2\check n_{3;j}^{\mathrm{in}'}
- +s_1(\check n_{3;i}^{\mathrm{in}}\cup_3\check n_{3;j}^{\mathrm{in}'})\Big]\\
+ \widetilde{n}_{3;i}^{\mathrm{in}}\cup_2\widetilde{n}_{3;j}^{\mathrm{in}'}
+ +s_1(\widetilde{n}_{3;i}^{\mathrm{in}}\cup_3\widetilde{n}_{3;j}^{\mathrm{in}'})\Big]\\
 &+\sum_{\psi\vee j=r}\Big[
- \check{\mathcal{𝒪}}_4[n_2]\cup_3\check n_{3;j}^{\mathrm{in}'}\Big]\\
+ \widetilde{\mathcal{𝒪}}_4[n_2]\cup_3\widetilde{n}_{3;j}^{\mathrm{in}'}\Big]\\
 &+\sum_{i\vee\psi=r}\Big[
- (\check n_{3;i}^{\mathrm{in}}+\check n_{3;i}^{\mathrm{in}'})
-                                  \cup_2\check{\mathcal{ℰ}}_3\\
-&\qquad+s_1\big((\check n_{3;i}^{\mathrm{in}}
-              +\check n_{3;i}^{\mathrm{in}'})
-                                  \cup_3\check{\mathcal{ℰ}}_3\big)\Big]\\
+ (\widetilde{n}_{3;i}^{\mathrm{in}}+\widetilde{n}_{3;i}^{\mathrm{in}'})
+                                  \cup_2\widetilde{\mathcal{ℰ}}_3\\
+&\qquad+s_1\big((\widetilde{n}_{3;i}^{\mathrm{in}}
+              +\widetilde{n}_{3;i}^{\mathrm{in}'})
+                                  \cup_3\widetilde{\mathcal{ℰ}}_3\big)\Big]\\
 &+\mathbf1_{r=\psi}\Big[
  \mathop{\mathrm{MS}}\nolimits_{12413423}
-       (\bar n_2,\bar n_2,\bar n_2,\bar n'_2)
+       ([n_2]_2,[n_2]_2,[n_2]_2,[n'_2]_2)
  +\mathop{\mathrm{MS}}\nolimits_{12314132}
-       (\bar n_2,\bar n_2,\bar n'_2,\bar n'_2)\\
+       ([n_2]_2,[n_2]_2,[n'_2]_2,[n'_2]_2)\\
 &\qquad+\mathop{\mathrm{MS}}\nolimits_{12314324}
-       (\bar n_2,\bar n_2,\bar n'_2,\bar n'_2)
+       ([n_2]_2,[n_2]_2,[n'_2]_2,[n'_2]_2)
  +\mathop{\mathrm{MS}}\nolimits_{12341321}
-       (\bar n_2,\bar n_2,\bar n'_2,\bar n'_2)\\
+       ([n_2]_2,[n_2]_2,[n'_2]_2,[n'_2]_2)\\
 &\qquad+\mathop{\mathrm{MS}}\nolimits_{12132413}
-       (\bar n_2,\bar n'_2,\bar n'_2,\bar n'_2)
+       ([n_2]_2,[n'_2]_2,[n'_2]_2,[n'_2]_2)
  +\mathop{\mathrm{MS}}\nolimits_{12324214}
-       (\bar n_2,\bar n'_2,\bar n'_2,\bar n'_2)\\
-&\qquad+\big[\check\omega_2(\bar n_2+\bar n'_2)\big]
-                                  \cup_3\check{\mathcal{ℰ}}_3
- +(\check\omega_2\cup_2\bar n_2)
-                  [\bar n'_2+(\bar n_2\cup_2\bar n'_2)]\\
-&\qquad+(\check\omega_2\cup_2\bar n'_2)\bar n_2
- +(\widetilde n_2+\bar n_2)(\widetilde n'_2+\bar n'_2)
- +d\widetilde n_2\cup_1\widetilde n'_2\\
-&\qquad+(\widetilde n_2+\widetilde n'_2)(\bar n_2\cup_2\bar n'_2)
- +(s_1\bar n_2)\cup_2(\bar n'_2\cup_1\bar n'_2)
- +\bar n_2\cup_1(s_1\bar n'_2)\\
-&\qquad+(\bar n_2\cup_2\bar n'_2)
-                           \cup_1[s_1(\bar n_2+\bar n'_2)]\\
+       ([n_2]_2,[n'_2]_2,[n'_2]_2,[n'_2]_2)\\
+&\qquad+\big[\widetilde{\omega}_2([n_2]_2+[n'_2]_2)\big]
+                                  \cup_3\widetilde{\mathcal{ℰ}}_3
+ +(\widetilde{\omega}_2\cup_2[n_2]_2)
+                  [[n'_2]_2+([n_2]_2\cup_2[n'_2]_2)]\\
+&\qquad+(\widetilde{\omega}_2\cup_2[n'_2]_2)[n_2]_2
+ +([\lfloor n_2/2\rfloor]_2+[n_2]_2)([\lfloor n'_2/2\rfloor]_2+[n'_2]_2)
+ +d[\lfloor n_2/2\rfloor]_2\cup_1[\lfloor n'_2/2\rfloor]_2\\
+&\qquad+([\lfloor n_2/2\rfloor]_2+[\lfloor n'_2/2\rfloor]_2)([n_2]_2\cup_2[n'_2]_2)
+ +(s_1[n_2]_2)\cup_2([n'_2]_2\cup_1[n'_2]_2)
+ +[n_2]_2\cup_1(s_1[n'_2]_2)\\
+&\qquad+([n_2]_2\cup_2[n'_2]_2)
+                           \cup_1[s_1([n_2]_2+[n'_2]_2)]\\
 &\qquad+s_1\Big(
-  s_1(\bar n_2\cup_2\bar n'_2)
-  +\bar n_2\cup_2d\widetilde n'_2
-  +(\bar n_2\cup_2\bar n'_2)\cup_1(\bar n_2+\bar n'_2)\\
+  s_1([n_2]_2\cup_2[n'_2]_2)
+  +[n_2]_2\cup_2d[\lfloor n'_2/2\rfloor]_2
+  +([n_2]_2\cup_2[n'_2]_2)\cup_1([n_2]_2+[n'_2]_2)\\
 &\hspace{6.5em}
   +\mathop{\mathrm{MS}}\nolimits_{123142341}
-                  (\bar n_2,\bar n'_2,\bar n_2,\bar n'_2)
+                  ([n_2]_2,[n'_2]_2,[n_2]_2,[n'_2]_2)
   +\mathop{\mathrm{MS}}\nolimits_{123412143}
-                  (\bar n'_2,\bar n'_2,\bar n_2,\bar n'_2)
+                  ([n'_2]_2,[n'_2]_2,[n_2]_2,[n'_2]_2)
   \Big)\Big].
 \end{aligned}
 ```
@@ -338,7 +338,7 @@ following explicit polynomials:
 The input components with index $`\gamma\psi`$ are zero; the displayed
 finite sums keep the same origin-index convention as the other
 coefficients. The first-tower equation has already replaced
-$`d\check n_3`$ by $`\check{\mathcal{𝒪}}_4[n_2]`$ in the second line.
+$`d\widetilde{n}_3`$ by $`\widetilde{\mathcal{𝒪}}_4[n_2]`$ in the second line.
 
 
 The three completely specified degree-six coefficients are
@@ -351,7 +351,7 @@ The three completely specified degree-six coefficients are
 &\qquad+(\mathcal{𝒪}_{5;i}^{\mathrm{in}}+\mathcal{𝒪}_{5;i}^{\mathrm{in}'})\cup_3\mathcal{ℰ}_{4;j}^{\mathrm{ker}}
  +\mathcal{ℰ}_{4;i}^{\mathrm{ker}}\cup_3(\mathcal{𝒪}_{5;j}^{\mathrm{in}}+\mathcal{𝒪}_{5;j}^{\mathrm{in}'})\big]\\
 &+\sum_{j\in\{\mathrm{in},\mathrm{in}',\mathrm{out}\}} \mathcal H_{6;r}^{(j)}
- +\mathbf1_{r=\psi}[\check\omega_2d\check{\mathcal{ℰ}}_3+\overline{\beta_{s_1}\check\omega_2} \check{\mathcal{ℰ}}_3]+\mathcal R_{6;r}.
+ +\mathbf1_{r=\psi}[\widetilde{\omega}_2d\widetilde{\mathcal{ℰ}}_3+[\beta_{s_1}\widetilde{\omega}_2]_2 \widetilde{\mathcal{ℰ}}_3]+\mathcal R_{6;r}.
 \end{aligned}
 ```
 
@@ -448,11 +448,11 @@ product of binary physical factors, its $`k`$-th binary digit is
 the completely explicit finite sum
 
 ```math
-\overline{\binom{P}{2^k}}
+[\binom{P}{2^k}]_2
  =\sum_{\substack{0\le q_\ell\le2^k\\
                   \sum_\ell q_\ell=2^k}}
    \left(\prod_{\ell:q_\ell>0}
-                    \overline{\binom{c_\ell}{q_\ell}}\right)
+                    [\binom{c_\ell}{q_\ell}]_2\right)
    \left(\prod_{\ell:q_\ell>0}P_\ell\right).
 ```
 

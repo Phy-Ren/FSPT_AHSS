@@ -5,7 +5,7 @@
 Take a complete state with $`n_2=0`$, closed binary Majorana cochain
 $`n_3`$, complex-fermion cochain $`n_4`$ satisfying
 $`dn_4=\mathcal{𝒪}_5^\gamma[n_3]`$, and phase $`\widehat\nu_5`$
-satisfying the terminal obstruction equation. Here $`\check n_3=n_3`$.
+satisfying the terminal obstruction equation. Here $`\widetilde{n}_3=n_3`$.
 All stacking corrections below have identical complete inputs. The current phase and product are exactly the zero-p+ip restrictions of the complete formulas. The explanation below specializes the same phase change without introducing a second diagonal law.
 
 ## 1. p+ip stacking
@@ -52,16 +52,16 @@ N_4=\mathcal{ℰ}_4^\gamma[n_3,n_3]
 \widehat{\mathcal{ℰ}}_5^{c\gamma}
 =\frac12\Big[
  [\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}]
-        [n_2,\check n_3]\cup_4n_4
- +N_4\cup_4\mathcal{𝒪}_5^\gamma[\check N_3]\Big].
+        [n_2,\widetilde{n}_3]\cup_4n_4
+ +N_4\cup_4\mathcal{𝒪}_5^\gamma[\widetilde{N}_3]\Big].
 ```
 
-Here the output term vanishes because $`\check N_3=0`$, and the mixed input source is zero.
+Here the output term vanishes because $`\widetilde{N}_3=0`$, and the mixed input source is zero.
 
 ### Majorana decoration
 
 Use the shared self-stacking expression, with $`n_2=0`$,
-$`d\check n_3=0`$, and $`\beta_4^\gamma=\beta n_3`$:
+$`d\widetilde{n}_3=0`$, and $`\beta_4^\gamma=\beta n_3`$:
 
 ```math
 \begin{aligned}
@@ -69,19 +69,19 @@ $`d\check n_3=0`$, and $`\beta_4^\gamma=\beta n_3`$:
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
  \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)\\
-&\qquad+(d\check n_3)_{12345}(\check n_3)_{0145}
- +(d\check n_3)_{01235}(\check n_3)_{0345}
- +\check n_3\cup_1\check n_3-s_1\mathcal{ℰ}_4^\gamma\Big]\\
+&\qquad+(d\widetilde{n}_3)_{12345}(\widetilde{n}_3)_{0145}
+ +(d\widetilde{n}_3)_{01235}(\widetilde{n}_3)_{0345}
+ +\widetilde{n}_3\cup_1\widetilde{n}_3-s_1\mathcal{ℰ}_4^\gamma\Big]\\
 &+\frac14\Big[
  \beta_4^\gamma\cup_3\beta_4^\gamma
- +\check n_3\cup_1\check n_3-\omega_2\check n_3
- +\check n_3\cup_2d\check n_3
- -\beta\big(\check{\mathcal{𝒪}}_4[n_2]\big)\cup_4\beta_4^\gamma\\
-&\qquad-(d\check n_3)_{01234}(d\check n_3)_{01245}
- -(d\check n_3)_{01234}(d\check n_3)_{02345}\\
+ +\widetilde{n}_3\cup_1\widetilde{n}_3-\omega_2\widetilde{n}_3
+ +\widetilde{n}_3\cup_2d\widetilde{n}_3
+ -\beta\big(\widetilde{\mathcal{𝒪}}_4[n_2]\big)\cup_4\beta_4^\gamma\\
+&\qquad-(d\widetilde{n}_3)_{01234}(d\widetilde{n}_3)_{01245}
+ -(d\widetilde{n}_3)_{01234}(d\widetilde{n}_3)_{02345}\\
 &\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
- \epsilon\;\overline{\sum_{\eta\in\mathcal P}
-                         \prod_{(x,f)\in\eta}x_f}\Big]\pmod1.
+ \epsilon\;[\sum_{\eta\in\mathcal P}
+                         \prod_{(x,f)\in\eta}x_f]_2\Big]\pmod1.
 \end{aligned}
 ```
 
@@ -89,7 +89,7 @@ This is the same terminal coordinate as the current obstruction.
 
 ## Specialization of the common phase change
 
-The full lower output here has $`\check N_3=0`$ and
+The full lower output here has $`\widetilde{N}_3=0`$ and
 $`N_4=\mathcal{ℰ}_4^\gamma`$. The common phase map consequently gives
 $`-\Delta \widehat B_5=\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$.
 Those two terms already appear in the imported Majorana formula above.

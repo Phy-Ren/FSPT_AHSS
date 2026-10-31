@@ -15,8 +15,8 @@ root triangles for $`n_2`$. In the notation of the principal formula, the
 integer digits are
 
 ```math
-\bar n_2,\qquad\widetilde n_2,\qquad
-\overline{\lfloor n_2/4\rfloor}.
+[n_2]_2,\qquad[\lfloor n_2/2\rfloor]_2,\qquad
+[\lfloor n_2/4\rfloor]_2.
 ```
 
 The coefficient file prints these mathematical names in its factor

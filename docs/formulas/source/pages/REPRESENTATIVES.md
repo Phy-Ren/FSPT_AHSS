@@ -4,7 +4,7 @@ All changes here act on the source and stacking correction together.
 
 ## 3+1D: physical terminal formulas
 
-The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), including its lower-field map, inverse, and finite output-face phase. The earlier [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) is a retained construction step evaluated on the checked complex-fermion inputs. Both conversions are required; the current lower product is the compact geometric formula.
+The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), including its lower-field map, inverse, and finite output-face phase. The earlier [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) is a retained construction step evaluated on the shifted complex-fermion inputs. Both conversions are required; the current lower product is the compact geometric formula.
 
 ## 3+1D: earlier complex-fermion coordinate
 
@@ -60,7 +60,7 @@ The actual stacked output is used in the last line. This yields the displayed c,
 ## 4+1D: current compact Majorana phase
 
 The guide then applies the single [explicit phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-$`\widehat\nu_5\mapsto\widehat\nu_5-\widehat B_5[\check n_3,n_4]`$.
+$`\widehat\nu_5\mapsto\widehat\nu_5-\widehat B_5[\widetilde{n}_3,n_4]`$.
 Its source changes by $`-d_{s_1}\widehat B_5`$ and its product by $`-\Delta \widehat B_5`$,
 evaluated on the same actual lower stacking output. The inverse adds
 $`\widehat B_5`$; every lower decoration and lower product is fixed.

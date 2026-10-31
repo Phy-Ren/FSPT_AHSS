@@ -8,17 +8,17 @@ Their [paired phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is included
 in both obstruction and stacking. The finite pure p+ip completion remains
 the same fixed polynomial.
 
-The backgrounds are $`\omega_2,s_1`$. A bar takes parity and a tilde takes
-the second binary digit, as in [Operations](OPERATIONS.md). In integer
-arithmetic a binary field means its canonical value $`0,1`$. A bar around
-a composite expression means: form that entire binary expression first,
+The backgrounds are $`\omega_2,s_1`$.
+The binary digits are $`[x]_2`$ and $`[\lfloor x/2\rfloor]_2`$, as in [Operations](OPERATIONS.md).
+In integer arithmetic a binary field means its canonical value $`0,1`$.
+Square brackets with subscript two around a composite expression mean: form that entire binary expression first,
 then use its value $`0,1`$. In particular it cannot be replaced by the
 unreduced sum of its integer-valued terms. The coefficient transports are
 fixed in [Operations](OPERATIONS.md).
 
-The shifted background is $`\check\omega_2=\omega_2+s_1\cup s_1`$ and the
+The shifted background is $`\widetilde{\omega}_2=\omega_2+s_1\cup s_1`$ and the
 closed degree-four source is
-$`\check{\mathcal{𝒪}}_4=\bar n_2^2+\check\omega_2\bar n_2`$.
+$`\widetilde{\mathcal{𝒪}}_4=[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$.
 The source $`\mathcal{𝒪}^\psi_5`$, the residual $`\beta_4^\psi`$, and the
 Pontryagin-square representative $`\mathcal P_{s_1}`$ have the definitions
 in the guide. The Bocksteins $`\beta,\beta_{s_1},\beta^+`$ and finite cup
@@ -100,10 +100,10 @@ Majorana or complex-fermion decoration is chosen here. Assemble the
 
 The numerator is pointwise divisible by eight. All operations inside the
 outer braces are integer operations, including the differential on the
-square bracket. Each barred subexpression supplies its canonical binary
+square bracket. Each subexpression enclosed in $`[\cdot]_2`$ supplies its canonical binary
 value before that integer assembly. In particular no fraction is reduced
 modulo one partway through the calculation. The ordinary Bockstein of
-$`\check{\mathcal{𝒪}}_4`$ is defined because that source is closed.
+$`\widetilde{\mathcal{𝒪}}_4`$ is defined because that source is closed.
 
 For the first term use the three-factor grid (O11), ordered
 $`(s_1,n_2,\omega_2)`$. On grid vertices $`(r_i,t_i,v_i)`$, pull $`s_1`$ along

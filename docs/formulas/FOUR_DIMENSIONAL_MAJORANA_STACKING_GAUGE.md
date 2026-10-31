@@ -19,8 +19,8 @@ On the ordered four-simplex, its complete output gauge is
 \begin{aligned}
 \widehat B_4^{\mathrm{out}}={}&\frac12\sum_{\eta\in\mathcal K_4}
           \prod_{(x,f)\in\eta}x(f)\\
-&-\frac14(\beta^\circ\check n_3+\beta^\circ\check n'_3)
-       \cup_3(\check n_3\cup_3\check n'_3).
+&-\frac14(\beta^-\widetilde{n}_3+\beta^-\widetilde{n}'_3)
+       \cup_3(\widetilde{n}_3\cup_3\widetilde{n}'_3).
 \end{aligned}
 ```
 

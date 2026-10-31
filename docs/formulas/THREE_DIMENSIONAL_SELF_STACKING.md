@@ -5,8 +5,8 @@
 This page stacks two identical **complete states**, including the complex-fermion
 completion and bosonic phase. The lower fields obey the obstruction equations
 in [the 3+1D reference](THREE_DIMENSIONAL.md). The coordinate convention is
-$`\check n_2=n_2+s_1\widetilde n_1`$ and
-$`\check\omega_2=\omega_2+s_1^2`$.
+$`\widetilde{n}_2=n_2+s_1[\lfloor n_1/2\rfloor]_2`$ and
+$`\widetilde{\omega}_2=\omega_2+s_1^2`$.
 The formulas use the same phase representative as that reference.
 
 The terminal formulas below cover $`n_1=0`$ and the canonical signed torsion
@@ -27,8 +27,8 @@ The value $`2n_1`$ is retained as a cochain, even when its cohomology class is z
 ## 2. Majorana self-stacking
 
 ```math
-N_2=\bar n_1^2+s_1\bar n_1=d\widetilde n_1,
-\qquad \check N_2=\bar n_1^2.
+N_2=[n_1]_2^2+s_1[n_1]_2=d[\lfloor n_1/2\rfloor]_2,
+\qquad \widetilde{N}_2=[n_1]_2^2.
 ```
 
 This is the output before removing the integer decoration. The corresponding
@@ -46,30 +46,30 @@ N_3=\mathcal{ℰ}_{3}^\gamma
 
 ```math
 \mathcal{ℰ}_{3}^\gamma
- =\check n_2\cup_1\check n_2+s_1\check n_2.
+ =\widetilde{n}_2\cup_1\widetilde{n}_2+s_1\widetilde{n}_2.
 ```
 
 **Majorana–p+ip contribution.**
 
 ```math
-\mathcal{ℰ}_3^{\gamma\psi}=\check n_2\cup_2d\check n_2.
+\mathcal{ℰ}_3^{\gamma\psi}=\widetilde{n}_2\cup_2d\widetilde{n}_2.
 ```
 
 **p+ip contribution.**
 
 ```math
-\mathcal{ℰ}_3^\psi=\widetilde n_1\bar n_1^2+s_1\widetilde n_1\bar n_1.
+\mathcal{ℰ}_3^\psi=[\lfloor n_1/2\rfloor]_2[n_1]_2^2+s_1[\lfloor n_1/2\rfloor]_2[n_1]_2.
 ```
 
 There are **five terms**. Their total is
-$`\mathrm{Sq}^1\check n_2+s_1\check n_2+\mathcal{ℰ}_3^\psi`$,
+$`\mathrm{Sq}^1\widetilde{n}_2+s_1\widetilde{n}_2+\mathcal{ℰ}_3^\psi`$,
 with the open-cochain square. The changed cup order is essential.
 The diagonal Cartan term vanishes because the input parity is closed.
 
-The phase uses the explicitly defined $`\check n_3=n_3+\mathcal B_3`$.
-For both finite-root branches below, $`\mathcal B_2=\check n_2`$ and
-$`\mathcal B_3[\check N_2]=0`$. The previous phase output is therefore
-$`N_3+d\check n_2`$. The point-fermion phase includes the full finite
+The phase uses the explicitly defined $`\widetilde{n}_3=n_3+\mathcal B_3`$.
+For both finite-root branches below, $`\mathcal B_2=\widetilde{n}_2`$ and
+$`\mathcal B_3[\widetilde{N}_2]=0`$. The previous phase output is therefore
+$`N_3+d\widetilde{n}_2`$. The point-fermion phase includes the full finite
 face-conversion term; all other blocks use the transported inputs and output.
 These are the current formulas, not an instruction to retain the old product.
 
@@ -96,16 +96,16 @@ contributions are
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&\check n_3\cup_2\check n_3
- +\omega_2\check n_2+\check n_2^2
- +d\check n_2\cup_1\check n_2\\
- &+(N_3+d\check n_2)\cup_2d\check n_2\Big].
+\widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&\widetilde{n}_3\cup_2\widetilde{n}_3
+ +\omega_2\widetilde{n}_2+\widetilde{n}_2^2
+ +d\widetilde{n}_2\cup_1\widetilde{n}_2\\
+ &+(N_3+d\widetilde{n}_2)\cup_2d\widetilde{n}_2\Big].
 \end{aligned}
 ```
 
 ```math
 \widehat{\mathcal{ℰ}}_{4}^{c\gamma}
- =\frac12\mathcal{𝒪}_4^\gamma[n_2]\cup_3\check n_3.
+ =\frac12\mathcal{𝒪}_4^\gamma[n_2]\cup_3\widetilde{n}_3.
 ```
 
 ```math
@@ -113,18 +113,18 @@ contributions are
 \widehat{\mathcal{ℰ}}_{4}^\gamma
 ={}&\frac12\Big[
  (\omega_2\cup_1s_1)n_2
- +\overline{\beta n_2}\cup_2(s_1n_2)
- +s_1(N_3+d\check n_2)+s_1\big[(s_1n_2)\cup_2n_2\big]+n_2^2\Big]\\
+ +[\beta n_2]_2\cup_2(s_1n_2)
+ +s_1(N_3+d\widetilde{n}_2)+s_1\big[(s_1n_2)\cup_2n_2\big]+n_2^2\Big]\\
 &+\frac14\Big[
  (\beta n_2)\cup_2(\beta n_2)
- +s_1\overline{\beta n_2}
- -\overline{\mathcal{𝒪}_4^\gamma[n_2]}\Big].
+ +s_1[\beta n_2]_2
+ -[\mathcal{𝒪}_4^\gamma[n_2]]_2\Big].
 \end{aligned}
 ```
 
 On this closed branch the last two derivative terms of the point-fermion block vanish.
 The complete phase has **twelve terms: nine half terms and three quarter terms**,
-retaining the defined checked coordinate, lower output and obstruction.
+retaining the defined shifted coordinate, lower output and obstruction.
 The quarter-valued obstruction is the canonical integer lift of its
 **whole binary value**. It must not be distributed into separately lifted
 summands. The earlier ten-term kernel is retained as a fixed input to the coordinate transport;
@@ -153,16 +153,16 @@ The complete bosonic output, before the integer gauge, is
 The earlier lower outputs specialize to
 
 ```math
-N_1=2s_1,\qquad N_2=0,\qquad \check N_2=s_1^2,
+N_1=2s_1,\qquad N_2=0,\qquad \widetilde{N}_2=s_1^2,
 ```
 
 ```math
-N_3=\mathrm{Sq}^1\check n_2+s_1\check n_2.
+N_3=\mathrm{Sq}^1\widetilde{n}_2+s_1\widetilde{n}_2.
 ```
 
 In particular,
-$`d\check n_2=\check\omega_2s_1`$ and
-$`dn_3=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\check n_2]
+$`d\widetilde{n}_2=\widetilde{\omega}_2s_1`$ and
+$`dn_3=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\widetilde{n}_2]
 +\mathcal{𝒪}_4^\psi[s_1]`$.
 The six labels retain their fermionic exchange origins. The point-fermion block also carries the finite phase of the output point-occupation reference change.
 
@@ -170,10 +170,10 @@ The six labels retain their fermionic exchange origins. The point-fermion block 
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&\check n_3\cup_2\check n_3
- +\omega_2\check n_2+\check n_2^2
- +d\check n_2\cup_1\check n_2\\
- &+(N_3+d\check n_2)\cup_2d\check n_2\Big].
+\widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&\widetilde{n}_3\cup_2\widetilde{n}_3
+ +\omega_2\widetilde{n}_2+\widetilde{n}_2^2
+ +d\widetilde{n}_2\cup_1\widetilde{n}_2\\
+ &+(N_3+d\widetilde{n}_2)\cup_2d\widetilde{n}_2\Big].
 \end{aligned}
 ```
 
@@ -183,13 +183,13 @@ The six labels retain their fermionic exchange origins. The point-fermion block 
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_{4}^{c\gamma}
 =\frac12\Big[&
- (\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3)[\check n_2]\cup_3\check n_3\\
-&+(N_3+d\check n_2)\cup_3\mathcal{𝒪}_4^\gamma[s_1^2]
+ (\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3)[\widetilde{n}_2]\cup_3\widetilde{n}_3\\
+&+(N_3+d\widetilde{n}_2)\cup_3\mathcal{𝒪}_4^\gamma[s_1^2]
 \Big].
 \end{aligned}
 ```
 
-The bracket includes $`d\mathcal B_3`$, and its output is $`N_3+d\check n_2`$.
+The bracket includes $`d\mathcal B_3`$, and its output is $`N_3+d\widetilde{n}_2`$.
 The output mixed part vanishes exactly because $`d(s_1^2)=0`$, so
 $`\mathcal{𝒪}_4^{\gamma\psi}[s_1^2]=0`$. The individual lower differential
 representatives remain defined structures.
@@ -202,61 +202,61 @@ On the ordered four-simplex,
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_{4}^{c\psi}(01234)
 ={}&\frac12\Big[
- \mathcal{𝒪}_4^\psi[s_1]\cup_3\check n_3
- +(N_3+d\check n_2)\cup_3\mathcal{𝒪}_4^\psi[2s_1]\Big](01234)\\
-&+\frac12(d\check n_3)(01234)\Big[
- \check n_2(123)(d\check n_2)(0134)\\
-&\hspace{35mm}+\check n_2(014)(d\check n_2)(1234)
- +\check n_2(234)(d\check n_2)(0124)\Big].
+ \mathcal{𝒪}_4^\psi[s_1]\cup_3\widetilde{n}_3
+ +(N_3+d\widetilde{n}_2)\cup_3\mathcal{𝒪}_4^\psi[2s_1]\Big](01234)\\
+&+\frac12(d\widetilde{n}_3)(01234)\Big[
+ \widetilde{n}_2(123)(d\widetilde{n}_2)(0134)\\
+&\hspace{35mm}+\widetilde{n}_2(014)(d\widetilde{n}_2)(1234)
+ +\widetilde{n}_2(234)(d\widetilde{n}_2)(0124)\Big].
 \end{aligned}
 ```
 
-This is the transported six-term expression; the two output terms retain $`N_3+d\check n_2`$. The three face products replace the
+This is the transported six-term expression; the two output terms retain $`N_3+d\widetilde{n}_2`$. The three face products replace the
 entire 132-word open-Majorana correction on identical inputs. This is an
 exact cochain identity; the two other open-Majorana product terms vanish
 because their complex-fermion argument is $`n_3+n_3=0`$.
 The output evaluation $`\mathcal{𝒪}_4^\psi[2s_1]`$ retains the second digit:
-$`\widetilde{2s_1}=s_1`$.
+$`[\lfloor 2s_1/2\rfloor]_2=s_1`$.
 
 ### Majorana decoration
 
 ```math
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^\gamma(01234)
-={}&\frac12\check n_2(012)\check n_2(123)\check n_2(234)
-                          (d\check n_2)(0134)\\
+={}&\frac12\widetilde{n}_2(012)\widetilde{n}_2(123)\widetilde{n}_2(234)
+                          (d\widetilde{n}_2)(0134)\\
 &+\frac12\Big[
- \mathop{\mathrm{MS}}\nolimits_{123131}(\check n_2,\check n_2,
-                            \check n_2\cup_1\check n_2)\\
-&\quad +(\check n_2\cup_2d\check n_2)\cup_1\check n_2
- +\check n_2\cup_1(\check n_2\cup_1\check n_2)\\
-&\quad +\check n_2\cup_2
-      [\check n_2\cup_1(\check n_2\cup_1\check n_2)]
- +\check n_2^2\\
-&\quad +(\omega_2\cup_1s_1)\check n_2
- +(\check n_2\cup_1\check n_2)\cup_2(s_1\check n_2)
- +s_1^2\check n_2
- +s_1\big[(s_1\check n_2)\cup_2\check n_2\big]
+ \mathop{\mathrm{MS}}\nolimits_{123131}(\widetilde{n}_2,\widetilde{n}_2,
+                            \widetilde{n}_2\cup_1\widetilde{n}_2)\\
+&\quad +(\widetilde{n}_2\cup_2d\widetilde{n}_2)\cup_1\widetilde{n}_2
+ +\widetilde{n}_2\cup_1(\widetilde{n}_2\cup_1\widetilde{n}_2)\\
+&\quad +\widetilde{n}_2\cup_2
+      [\widetilde{n}_2\cup_1(\widetilde{n}_2\cup_1\widetilde{n}_2)]
+ +\widetilde{n}_2^2\\
+&\quad +(\omega_2\cup_1s_1)\widetilde{n}_2
+ +(\widetilde{n}_2\cup_1\widetilde{n}_2)\cup_2(s_1\widetilde{n}_2)
+ +s_1^2\widetilde{n}_2
+ +s_1\big[(s_1\widetilde{n}_2)\cup_2\widetilde{n}_2\big]
  \Big](01234)\\
 &+\frac14\Big[
- (\beta^\circ\check n_2)\cup_2(\beta^\circ\check n_2)
- -s_1\overline{\beta^\circ\check n_2}\\
+ (\beta^-\widetilde{n}_2)\cup_2(\beta^-\widetilde{n}_2)
+ -s_1[\beta^-\widetilde{n}_2]_2\\
 &\hspace{13mm}
- -\overline{\mathcal{𝒪}_4^\gamma[\check n_2]
-             +s_1(\check n_2\cup_2d\check n_2)}
+ -[\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]
+             +s_1(\widetilde{n}_2\cup_2d\widetilde{n}_2)]_2
  \Big](01234).
 \end{aligned}
 ```
 
 This is **13 outer terms: ten half terms and three quarter terms**,
-valid also for an arbitrary open $`\check n_2`$. The whole lift contains
+valid also for an arbitrary open $`\widetilde{n}_2`$. The whole lift contains
 **two terms**, retaining the existing lower obstruction. Replacing its
 wrapper by those two interior terms in the count gives **14 leaves**.
 The [lower-obstruction carry identity](THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md)
 replaces six former terms by three with exact equality modulo one.
 The first face product is the exact diagonal of seven intrinsic Majorana
 MS terms. Integer cups and the whole binary lift retain their scopes;
-$`\beta^\circ x=(dx-\overline{dx})/2`$ uses the integer differential
+$`\beta^- x=(dx-[dx]_2)/2`$ uses the integer differential
 in its first term.
 
 ### Majorana and p+ip decoration
@@ -266,19 +266,19 @@ in its first term.
 \widehat{\mathcal{ℰ}}_{4}^{\gamma\psi}
 ={}&\frac12\sum_{f\in\mathcal F_4^{\gamma\psi}}f\\
 &+\frac12\Big[
- \beta_3\cup_2d\check n_2
- +d_{s_1}(\beta^\circ\check n_2\cup_2\check n_2)
- -\beta^\circ\check n_2\cup_1\check n_2\Big]\\
+ \beta_3\cup_2d\widetilde{n}_2
+ +d_{s_1}(\beta^-\widetilde{n}_2\cup_2\widetilde{n}_2)
+ -\beta^-\widetilde{n}_2\cup_1\widetilde{n}_2\Big]\\
 &+\frac14\Big[
- -\beta^\circ\check n_2\cup_2\beta_3^\psi
- -\beta_3^\psi\cup_2\beta^\circ\check n_2
- +\beta^\circ\check n_2\cup_3
-       [ (\beta_{s_1}\check\omega_2)s_1]\\
-&\qquad+(\check n_2-s_1^2)\cup_1d\check n_2
- +\check n_2s_1^2+s_1^2\check n_2\\
+ -\beta^-\widetilde{n}_2\cup_2\beta_3^\psi
+ -\beta_3^\psi\cup_2\beta^-\widetilde{n}_2
+ +\beta^-\widetilde{n}_2\cup_3
+       [ (\beta_{s_1}\widetilde{\omega}_2)s_1]\\
+&\qquad+(\widetilde{n}_2-s_1^2)\cup_1d\widetilde{n}_2
+ +\widetilde{n}_2s_1^2+s_1^2\widetilde{n}_2\\
 &\qquad+d_{s_1}\Big[
- \overline{\check\omega_2s_1}
- -\overline{\check n_2\cup_1\check n_2}\Big]\Big].
+ [\widetilde{\omega}_2s_1]_2
+ -[\widetilde{n}_2\cup_1\widetilde{n}_2]_2\Big]\Big].
 \end{aligned}
 ```
 
@@ -287,26 +287,26 @@ in the [coefficient table](THREE_DIMENSIONAL_SELF_STACKING_FACES.md#majoranapip-
 It includes the entire current half-valued contribution. The three ordinary
 half terms and nine distributed quarter terms are additional, giving
 **1,142 terms** in this contribution. Every differential in these fractional
-brackets acts on the indicated integer cochain; a whole bar selects a
+brackets acts on the indicated integer cochain; $`[\cdot]_2`$ selects a
 binary value before its integer lift.
 
 The existing lower integer carries specialize to
 
 ```math
 \begin{aligned}
-\beta_3&=\beta^\circ\check n_2+\beta_3^\psi,\\
+\beta_3&=\beta^-\widetilde{n}_2+\beta_3^\psi,\\
 \beta_3^\psi
- &=\overline{\check\omega_2s_1}
-   -\overline{(s_1\cup_1\check\omega_2)s_1},\\
-\lambda_2^\gamma&=\check n_2,\qquad
+ &=[\widetilde{\omega}_2s_1]_2
+   -[(s_1\cup_1\widetilde{\omega}_2)s_1]_2,\\
+\lambda_2^\gamma&=\widetilde{n}_2,\qquad
 \lambda_2^{\gamma\psi}=0,\qquad
 \lambda_2^\psi=-s_1^2,\qquad
-\lambda_2=\check n_2-s_1^2.
+\lambda_2=\widetilde{n}_2-s_1^2.
 \end{aligned}
 ```
 
 Here $`d\lambda_2^\psi=0`$ as an integer identity. The signed product in
-$`(\beta_{s_1}\check\omega_2)s_1`$ keeps both inherited sign coefficient
+$`(\beta_{s_1}\widetilde{\omega}_2)s_1`$ keeps both inherited sign coefficient
 systems; its value must not be replaced by an unsigned product.
 
 ### p+ip decoration
@@ -317,10 +317,10 @@ systems; its value must not be replaced by an unsigned product.
 ={}&\frac12\sum_{f\in\mathcal F_4^\psi}f-\frac12s_1^4\\
 &+\frac14\Big[
  -\beta_3^\psi\cup_2\beta_3^\psi
- +\beta_3^\psi\cup_3[(\beta_{s_1}\check\omega_2)s_1]
+ +\beta_3^\psi\cup_3[(\beta_{s_1}\widetilde{\omega}_2)s_1]
  -\omega_2s_1^2
- -\overline{\widetilde{\beta_{s_1}\check\omega_2}\,s_1}\Big]\\
-&+\frac18\check\omega_2s_1^2.
+ -[[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2\,s_1]_2\Big]\\
+&+\frac18\widetilde{\omega}_2s_1^2.
 \end{aligned}
 ```
 
@@ -328,7 +328,7 @@ The finite sum contains **244 explicitly listed physical-face products**
 in the [coefficient table](THREE_DIMENSIONAL_SELF_STACKING_FACES.md#pure-pip-half-contribution).
 The six remaining ordinary terms give **250 terms** in this contribution.
 The eighth-valued sign follows from the signed integer identity
-$`s_1s_1=-\overline{s_1^2}`$ when both factors are copies of the p+ip
+$`s_1s_1=-[s_1^2]_2`$ when both factors are copies of the p+ip
 integer decoration. The binary square $`s_1^2`$ elsewhere keeps its stated
 canonical integer lift.
 

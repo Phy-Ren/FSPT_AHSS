@@ -17,7 +17,7 @@ MS word with its printed arguments counts once.
 ## Block 1: 1 term
 
 ```math
-(\overline{d\check n_3},\check n'_3,d\overline{\beta^\circ\check n'_3}).
+([d\widetilde{n}_3]_2,\widetilde{n}'_3,d[\beta^-\widetilde{n}'_3]_2).
 ```
 
 ```text
@@ -27,7 +27,7 @@ MS word with its printed arguments counts once.
 ## Block 2: 2 terms
 
 ```math
-(\overline{\beta^\circ\check n_3},\check n'_3,\check n_3).
+([\beta^-\widetilde{n}_3]_2,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -37,7 +37,7 @@ MS word with its printed arguments counts once.
 ## Block 3: 1 term
 
 ```math
-(\overline{\beta^\circ\check n'_3},\overline{d\check n_3},\check n'_3).
+([\beta^-\widetilde{n}'_3]_2,[d\widetilde{n}_3]_2,\widetilde{n}'_3).
 ```
 
 ```text
@@ -47,7 +47,7 @@ MS word with its printed arguments counts once.
 ## Block 4: 1 term
 
 ```math
-(\overline{\beta^\circ\check n'_3},\check n_3,\check n'_3).
+([\beta^-\widetilde{n}'_3]_2,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -57,7 +57,7 @@ MS word with its printed arguments counts once.
 ## Block 5: 2 terms
 
 ```math
-(\overline{\beta^\circ\check n'_3},\check n'_3,\check n_3).
+([\beta^-\widetilde{n}'_3]_2,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -67,7 +67,7 @@ MS word with its printed arguments counts once.
 ## Block 6: 1 term
 
 ```math
-(s_1,\overline{\beta^\circ\check n_3},\overline{\beta^\circ\check n'_3}).
+(s_1,[\beta^-\widetilde{n}_3]_2,[\beta^-\widetilde{n}'_3]_2).
 ```
 
 ```text
@@ -77,7 +77,7 @@ MS word with its printed arguments counts once.
 ## Block 7: 1 term
 
 ```math
-(s_1,\overline{\beta^\circ\check n_3},\check n_3,\overline{d\check n'_3}).
+(s_1,[\beta^-\widetilde{n}_3]_2,\widetilde{n}_3,[d\widetilde{n}'_3]_2).
 ```
 
 ```text
@@ -87,7 +87,7 @@ MS word with its printed arguments counts once.
 ## Block 8: 2 terms
 
 ```math
-(s_1,\overline{\beta^\circ\check n_3},\check n_3,\check n'_3).
+(s_1,[\beta^-\widetilde{n}_3]_2,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -97,7 +97,7 @@ MS word with its printed arguments counts once.
 ## Block 9: 2 terms
 
 ```math
-(s_1,\overline{\beta^\circ\check n_3},\check n'_3,\check n_3).
+(s_1,[\beta^-\widetilde{n}_3]_2,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -107,7 +107,7 @@ MS word with its printed arguments counts once.
 ## Block 10: 1 term
 
 ```math
-(s_1,\overline{\beta^\circ\check n'_3},\check n'_3,\check n_3).
+(s_1,[\beta^-\widetilde{n}'_3]_2,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -117,7 +117,7 @@ MS word with its printed arguments counts once.
 ## Block 11: 2 terms
 
 ```math
-(s_1,s_1,\check n_3,\check n_3,\check n_3,\check n'_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -127,7 +127,7 @@ MS word with its printed arguments counts once.
 ## Block 12: 3 terms
 
 ```math
-(s_1,s_1,\check n_3,\check n_3,\check n'_3,\check n_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -137,7 +137,7 @@ MS word with its printed arguments counts once.
 ## Block 13: 4 terms
 
 ```math
-(s_1,s_1,\check n_3,\check n'_3,\check n'_3,\check n_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -147,7 +147,7 @@ MS word with its printed arguments counts once.
 ## Block 14: 1 term
 
 ```math
-(s_1,s_1,\check n'_3,\check n_3,\check n_3,\check n'_3).
+(s_1,s_1,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -157,7 +157,7 @@ MS word with its printed arguments counts once.
 ## Block 15: 5 terms
 
 ```math
-(s_1,s_1,\check n'_3,\check n_3,\check n'_3,\check n_3).
+(s_1,s_1,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -167,7 +167,7 @@ MS word with its printed arguments counts once.
 ## Block 16: 6 terms
 
 ```math
-(s_1,s_1,\check n'_3,\check n'_3,\check n'_3,\check n_3).
+(s_1,s_1,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -177,7 +177,7 @@ MS word with its printed arguments counts once.
 ## Block 17: 5 terms
 
 ```math
-(s_1,\check n_3,\check n_3,\check n_3,\check n'_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -187,7 +187,7 @@ MS word with its printed arguments counts once.
 ## Block 18: 11 terms
 
 ```math
-(s_1,\check n_3,\check n_3,\check n'_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -198,7 +198,7 @@ MS word with its printed arguments counts once.
 ## Block 19: 7 terms
 
 ```math
-(s_1,\check n_3,\check n_3,\check n'_3,\check n'_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -208,7 +208,7 @@ MS word with its printed arguments counts once.
 ## Block 20: 1 term
 
 ```math
-(s_1,\check n_3,\check n'_3).
+(s_1,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -218,7 +218,7 @@ MS word with its printed arguments counts once.
 ## Block 21: 2 terms
 
 ```math
-(s_1,\check n_3,\check n'_3,s_1,\check n'_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}'_3,s_1,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -228,7 +228,7 @@ MS word with its printed arguments counts once.
 ## Block 22: 8 terms
 
 ```math
-(s_1,\check n_3,\check n'_3,\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -238,7 +238,7 @@ MS word with its printed arguments counts once.
 ## Block 23: 10 terms
 
 ```math
-(s_1,\check n_3,\check n'_3,\check n_3,\check n'_3).
+(s_1,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -249,7 +249,7 @@ MS word with its printed arguments counts once.
 ## Block 24: 10 terms
 
 ```math
-(s_1,\check n_3,\check n'_3,\check n'_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -260,7 +260,7 @@ MS word with its printed arguments counts once.
 ## Block 25: 18 terms
 
 ```math
-(s_1,\check n_3,\check n'_3,\check n'_3,\check n'_3).
+(s_1,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -272,7 +272,7 @@ MS word with its printed arguments counts once.
 ## Block 26: 2 terms
 
 ```math
-(s_1,\check n'_3,\check n_3,\check n_3,\check n'_3).
+(s_1,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -282,7 +282,7 @@ MS word with its printed arguments counts once.
 ## Block 27: 4 terms
 
 ```math
-(s_1,\check n'_3,\check n_3,\check n'_3,\check n_3).
+(s_1,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -292,7 +292,7 @@ MS word with its printed arguments counts once.
 ## Block 28: 7 terms
 
 ```math
-(s_1,\check n'_3,\check n_3,\check n'_3,\check n'_3).
+(s_1,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -302,7 +302,7 @@ MS word with its printed arguments counts once.
 ## Block 29: 2 terms
 
 ```math
-(s_1,\check n'_3,\check n'_3,\check n_3,\check n_3).
+(s_1,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -312,7 +312,7 @@ MS word with its printed arguments counts once.
 ## Block 30: 4 terms
 
 ```math
-(s_1,\check n'_3,\check n'_3,\check n_3,\check n'_3).
+(s_1,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -322,7 +322,7 @@ MS word with its printed arguments counts once.
 ## Block 31: 4 terms
 
 ```math
-(s_1,\check n'_3,\check n'_3,\check n'_3,\check n_3).
+(s_1,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -332,7 +332,7 @@ MS word with its printed arguments counts once.
 ## Block 32: 1 term
 
 ```math
-(\check n_3,\overline{d\check n_3},\check n'_3,\check n'_3).
+(\widetilde{n}_3,[d\widetilde{n}_3]_2,\widetilde{n}'_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -342,7 +342,7 @@ MS word with its printed arguments counts once.
 ## Block 33: 4 terms
 
 ```math
-(\check n_3,s_1,\check n'_3,\check n_3,\check n'_3).
+(\widetilde{n}_3,s_1,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -352,7 +352,7 @@ MS word with its printed arguments counts once.
 ## Block 34: 1 term
 
 ```math
-(\check n_3,\check n_3,\overline{d\check n'_3},\check n'_3).
+(\widetilde{n}_3,\widetilde{n}_3,[d\widetilde{n}'_3]_2,\widetilde{n}'_3).
 ```
 
 ```text
@@ -362,7 +362,7 @@ MS word with its printed arguments counts once.
 ## Block 35: 25 terms
 
 ```math
-(\check n_3,\check n_3,\check n_3,\check n'_3).
+(\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -375,7 +375,7 @@ MS word with its printed arguments counts once.
 ## Block 36: 18 terms
 
 ```math
-(\check n_3,\check n_3,\check n'_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -387,7 +387,7 @@ MS word with its printed arguments counts once.
 ## Block 37: 27 terms
 
 ```math
-(\check n_3,\check n_3,\check n'_3,\check n'_3).
+(\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -400,7 +400,7 @@ MS word with its printed arguments counts once.
 ## Block 38: 4 terms
 
 ```math
-(\check n_3,\check n'_3,\overline{d\check n_3},\check n'_3).
+(\widetilde{n}_3,\widetilde{n}'_3,[d\widetilde{n}_3]_2,\widetilde{n}'_3).
 ```
 
 ```text
@@ -410,7 +410,7 @@ MS word with its printed arguments counts once.
 ## Block 39: 1 term
 
 ```math
-(\check n_3,\check n'_3,d\overline{\beta^\circ\check n'_3}).
+(\widetilde{n}_3,\widetilde{n}'_3,d[\beta^-\widetilde{n}'_3]_2).
 ```
 
 ```text
@@ -420,7 +420,7 @@ MS word with its printed arguments counts once.
 ## Block 40: 2 terms
 
 ```math
-(\check n_3,\check n'_3,s_1,\check n_3,\overline{d\check n'_3}).
+(\widetilde{n}_3,\widetilde{n}'_3,s_1,\widetilde{n}_3,[d\widetilde{n}'_3]_2).
 ```
 
 ```text
@@ -430,7 +430,7 @@ MS word with its printed arguments counts once.
 ## Block 41: 3 terms
 
 ```math
-(\check n_3,\check n'_3,s_1,\check n_3,\check n'_3).
+(\widetilde{n}_3,\widetilde{n}'_3,s_1,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -440,7 +440,7 @@ MS word with its printed arguments counts once.
 ## Block 42: 6 terms
 
 ```math
-(\check n_3,\check n'_3,s_1,\check n'_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}'_3,s_1,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -450,7 +450,7 @@ MS word with its printed arguments counts once.
 ## Block 43: 6 terms
 
 ```math
-(\check n_3,\check n'_3,s_1,\check n'_3,\check n'_3).
+(\widetilde{n}_3,\widetilde{n}'_3,s_1,\widetilde{n}'_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -460,7 +460,7 @@ MS word with its printed arguments counts once.
 ## Block 44: 4 terms
 
 ```math
-(\check n_3,\check n'_3,\check n_3,\overline{d\check n'_3}).
+(\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3,[d\widetilde{n}'_3]_2).
 ```
 
 ```text
@@ -470,7 +470,7 @@ MS word with its printed arguments counts once.
 ## Block 45: 20 terms
 
 ```math
-(\check n_3,\check n'_3,\check n_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -482,7 +482,7 @@ MS word with its printed arguments counts once.
 ## Block 46: 23 terms
 
 ```math
-(\check n_3,\check n'_3,\check n_3,\check n'_3).
+(\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -494,7 +494,7 @@ MS word with its printed arguments counts once.
 ## Block 47: 24 terms
 
 ```math
-(\check n_3,\check n'_3,\check n'_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -506,7 +506,7 @@ MS word with its printed arguments counts once.
 ## Block 48: 24 terms
 
 ```math
-(\check n_3,\check n'_3,\check n'_3,\check n'_3).
+(\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -518,7 +518,7 @@ MS word with its printed arguments counts once.
 ## Block 49: 2 terms
 
 ```math
-(\check n_3,\check n'_3,\omega_2,\check n'_3).
+(\widetilde{n}_3,\widetilde{n}'_3,\omega_2,\widetilde{n}'_3).
 ```
 
 ```text
@@ -528,7 +528,7 @@ MS word with its printed arguments counts once.
 ## Block 50: 1 term
 
 ```math
-(\check n'_3,d\overline{\beta^\circ\check n'_3},\check n_3).
+(\widetilde{n}'_3,d[\beta^-\widetilde{n}'_3]_2,\widetilde{n}_3).
 ```
 
 ```text
@@ -538,7 +538,7 @@ MS word with its printed arguments counts once.
 ## Block 51: 1 term
 
 ```math
-(\check n'_3,\check n_3,d\overline{\beta^\circ\check n_3}).
+(\widetilde{n}'_3,\widetilde{n}_3,d[\beta^-\widetilde{n}_3]_2).
 ```
 
 ```text
@@ -548,7 +548,7 @@ MS word with its printed arguments counts once.
 ## Block 52: 1 term
 
 ```math
-(\check n'_3,\check n_3,d\overline{\beta^\circ\check n'_3}).
+(\widetilde{n}'_3,\widetilde{n}_3,d[\beta^-\widetilde{n}'_3]_2).
 ```
 
 ```text
@@ -558,7 +558,7 @@ MS word with its printed arguments counts once.
 ## Block 53: 5 terms
 
 ```math
-(\check n'_3,\check n_3,\check n_3,\check n_3).
+(\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -568,7 +568,7 @@ MS word with its printed arguments counts once.
 ## Block 54: 15 terms
 
 ```math
-(\check n'_3,\check n_3,\check n_3,\check n'_3).
+(\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -579,7 +579,7 @@ MS word with its printed arguments counts once.
 ## Block 55: 13 terms
 
 ```math
-(\check n'_3,\check n_3,\check n'_3,\check n_3).
+(\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -590,7 +590,7 @@ MS word with its printed arguments counts once.
 ## Block 56: 16 terms
 
 ```math
-(\check n'_3,\check n_3,\check n'_3,\check n'_3).
+(\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -601,7 +601,7 @@ MS word with its printed arguments counts once.
 ## Block 57: 17 terms
 
 ```math
-(\check n'_3,\check n'_3,\check n_3,\check n_3).
+(\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -613,7 +613,7 @@ MS word with its printed arguments counts once.
 ## Block 58: 23 terms
 
 ```math
-(\check n'_3,\check n'_3,\check n_3,\check n'_3).
+(\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -625,7 +625,7 @@ MS word with its printed arguments counts once.
 ## Block 59: 17 terms
 
 ```math
-(\check n'_3,\check n'_3,\check n'_3,\check n_3).
+(\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -637,7 +637,7 @@ MS word with its printed arguments counts once.
 ## Block 60: 1 term
 
 ```math
-(\omega_2,s_1,\check n_3,\check n_3,\check n'_3).
+(\omega_2,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -647,7 +647,7 @@ MS word with its printed arguments counts once.
 ## Block 61: 2 terms
 
 ```math
-(\omega_2,s_1,\check n_3,\check n'_3,\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -657,7 +657,7 @@ MS word with its printed arguments counts once.
 ## Block 62: 1 term
 
 ```math
-(\omega_2,s_1,\check n_3,\check n'_3,\check n'_3).
+(\omega_2,s_1,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -667,7 +667,7 @@ MS word with its printed arguments counts once.
 ## Block 63: 1 term
 
 ```math
-(\omega_2,s_1,\check n'_3,\check n_3).
+(\omega_2,s_1,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -677,7 +677,7 @@ MS word with its printed arguments counts once.
 ## Block 64: 1 term
 
 ```math
-(\omega_2,s_1,\check n'_3,\check n_3,\check n_3).
+(\omega_2,s_1,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -687,7 +687,7 @@ MS word with its printed arguments counts once.
 ## Block 65: 1 term
 
 ```math
-(\omega_2,s_1,\check n'_3,\check n_3,\check n'_3).
+(\omega_2,s_1,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -697,7 +697,7 @@ MS word with its printed arguments counts once.
 ## Block 66: 1 term
 
 ```math
-(\omega_2,s_1,\check n'_3,\check n'_3,\check n_3).
+(\omega_2,s_1,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -707,7 +707,7 @@ MS word with its printed arguments counts once.
 ## Block 67: 2 terms
 
 ```math
-(\omega_2,\check n_3,\check n_3,\check n'_3).
+(\omega_2,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -717,7 +717,7 @@ MS word with its printed arguments counts once.
 ## Block 68: 4 terms
 
 ```math
-(\omega_2,\check n_3,\check n'_3,\check n_3).
+(\omega_2,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -727,7 +727,7 @@ MS word with its printed arguments counts once.
 ## Block 69: 5 terms
 
 ```math
-(\omega_2,\check n_3,\check n'_3,\check n'_3).
+(\omega_2,\widetilde{n}_3,\widetilde{n}'_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -737,7 +737,7 @@ MS word with its printed arguments counts once.
 ## Block 70: 1 term
 
 ```math
-(\omega_2,\check n'_3,\check n_3,\check n'_3).
+(\omega_2,\widetilde{n}'_3,\widetilde{n}_3,\widetilde{n}'_3).
 ```
 
 ```text
@@ -747,7 +747,7 @@ MS word with its printed arguments counts once.
 ## Block 71: 1 term
 
 ```math
-(\omega_2,\check n'_3,\check n'_3,\check n_3).
+(\omega_2,\widetilde{n}'_3,\widetilde{n}'_3,\widetilde{n}_3).
 ```
 
 ```text

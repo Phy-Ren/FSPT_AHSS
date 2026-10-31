@@ -20,8 +20,8 @@ Use the [common notation](../FORMULA_GUIDE.md#conventions-and-coordinates).
 Lower-layer equations and half-valued brackets are binary. In integer
 expressions, each named binary cochain means its canonical zero-or-one
 representative; sums, differentials, and cups are then integral.
-An outer bar first reduces the entire indicated expression modulo two.
-Thus an integer $`x\cup_i y`$ and $`\overline{x\cup_i y}`$ are different
+An outer $`[\cdot]_2`$ first reduces the entire indicated expression modulo two.
+Thus an integer $`x\cup_i y`$ and $`[x\cup_i y]_2`$ are different
 operations in a quarter-valued phase. Their complete evaluation rules are
 in [Operations](OPERATIONS.md#arithmetic-and-carries).
 
@@ -74,7 +74,7 @@ dn_2=\mathcal{𝒪}_3=\mathcal{𝒪}^{\gamma}_3.
 
 ```math
 \mathcal{𝒪}^{\gamma}_3
- =\omega_2n_1+s_1\overline{\beta n_1}.
+ =\omega_2n_1+s_1[\beta n_1]_2.
 ```
 
 #### Bosonic obstruction
@@ -123,8 +123,8 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
 \begin{aligned}
 \widehat{\mathcal{𝒪}}^\gamma_4(n_1)={}&\frac12\big[
  \mathop{\mathrm{MS}}\nolimits_{123134}(\omega_2,\omega_2,n_1,n_1)\\
-&\qquad+(\omega_2n_1)\cup_2(s_1\overline{\beta n_1})\\
-&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_1}+s_1(s_1+n_1)\overline{\beta n_1}\big]\\
+&\qquad+(\omega_2n_1)\cup_2(s_1[\beta n_1]_2)\\
+&\qquad+(\omega_2\cup_1s_1)[\beta n_1]_2+s_1(s_1+n_1)[\beta n_1]_2\big]\\
 &+\frac14\big[{\omega_2} \beta n_1+{s_1}\,{n_1}\,\beta n_1\big].
 \end{aligned}
 ```
@@ -223,14 +223,14 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 &\qquad-(\beta n_1+\beta n'_1)({n_1}\cup_1{n'_1})\\
 &\qquad-({n_1}\cup_1{n'_1})(\beta n_1+\beta n'_1)\\
 &\qquad+({n_1}\cup_1{n'_1})d({n_1}\cup_1{n'_1})
- -\omega_2(n_1\cup_1n'_1)+\overline{s_1n_1n'_1}\Big]\\
-&-\frac18\Delta\!\left[\overline{n_1^3}\right]
+ -\omega_2(n_1\cup_1n'_1)+[s_1n_1n'_1]_2\Big]\\
+&-\frac18\Delta\!\left[[n_1^3]_2\right]
  \pmod1.
 \end{aligned}
 ```
 
-The bar inside $`\Delta[\overline{n_1^3}]`$ and the bar on
-$`\overline{s_1n_1n'_1}`$ reduce each complete indicated product. The
+The reduction modulo two inside $`\Delta[[n_1^3]_2]`$ and the reduction modulo two of
+$`[s_1n_1n'_1]_2`$ reduce each complete indicated product. The
 $`\Delta`$ in the mixed half-valued contribution is binary; in the
 eighth-valued contribution it subtracts the complete integer lifts. In contrast, $`n_1\cup_1n'_1`$ in the
 quarter-valued bracket is a signed integer cup; its differential is also
@@ -268,8 +268,8 @@ inputs.
 
 These are restrictions of the geometric pairing coordinate. The lower
 parity and its product coincide pointwise with the original Majorana laws.
-For the phase use $`\check n_3=n_3+n_2\cup_1n_2`$,
-$`\mathcal B_2=n_2\cup_2n'_2`$, and the checked quantities defined in
+For the phase use $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$,
+$`\mathcal B_2=n_2\cup_2n'_2`$, and the shifted quantities defined in
 [the full reference](THREE_DIMENSIONAL.md#eq-t3b).
 The displayed point-fermion phase includes the output-face conversion.
 The microscopic ordinary modes and the original projection schedule are unchanged.
@@ -307,7 +307,7 @@ dn_3=\mathcal{𝒪}_4=\mathcal{𝒪}^{\gamma}_4.
 
 ```math
 \mathcal{𝒪}^{\gamma}_4
- =\mathrm{Sq}^2n_2+\omega_2n_2+s_1\overline{\beta n_2}.
+ =\mathrm{Sq}^2n_2+\omega_2n_2+s_1[\beta n_2]_2.
 ```
 
 #### Bosonic obstruction
@@ -331,8 +331,8 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 
 ```math
 \widehat{\mathcal{𝒪}}^{c}_5
- =\frac12\big[\omega_2\check n_3+\check n_3\cup_1\check n_3
-   +d\check n_3\cup_2\check n_3\big].
+ =\frac12\big[\omega_2\widetilde{n}_3+\widetilde{n}_3\cup_1\widetilde{n}_3
+   +d\widetilde{n}_3\cup_2\widetilde{n}_3\big].
 ```
 
 ##### Complex-fermion–Majorana contribution
@@ -343,7 +343,7 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 
 ```math
 \widehat{\mathcal{𝒪}}^{c\gamma}_5
- =\frac12\big[d\check n_3\cup_3d\check n_3\big].
+ =\frac12\big[d\widetilde{n}_3\cup_3d\widetilde{n}_3\big].
 ```
 
 ##### Majorana contribution
@@ -353,8 +353,8 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 **(M4, 3+1D)**
 
 This is the same pure Majorana formula as in the complete 3+1D tower.
-Here $`n_1=0`$, so $`\check n_2=n_2`$ and
-$`\beta^\circ n_2=\beta n_2`$. Its physical origin is Majorana;
+Here $`n_1=0`$, so $`\widetilde{n}_2=n_2`$ and
+$`\beta^- n_2=\beta n_2`$. Its physical origin is Majorana;
 the common expression also defines this contribution for a nonclosed
 Majorana input in the full tower.
 
@@ -362,19 +362,19 @@ Majorana input in the full tower.
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_5^\gamma
 ={}&\frac12\Big[
- \zeta_{2,2}(\omega_2,\check n_2)\\
-&\qquad+\mathcal X_5(\check n_2)
- +(\check n_2^2)\cup_3(\omega_2\check n_2)\\
-&\qquad+(\check n_2^2)\cup_3(s_1\overline{\beta^\circ\check n_2})
- +(\omega_2\check n_2)\cup_3(s_1\overline{\beta^\circ\check n_2})\\
-&\qquad+\zeta_{1,3}(s_1,\overline{\beta^\circ\check n_2})
- +(\omega_2\cup_1s_1)\overline{\beta^\circ\check n_2}
- +s_1\check n_2^2\Big]\\
+ \zeta_{2,2}(\omega_2,\widetilde{n}_2)\\
+&\qquad+\mathcal X_5(\widetilde{n}_2)
+ +(\widetilde{n}_2^2)\cup_3(\omega_2\widetilde{n}_2)\\
+&\qquad+(\widetilde{n}_2^2)\cup_3(s_1[\beta^-\widetilde{n}_2]_2)
+ +(\omega_2\widetilde{n}_2)\cup_3(s_1[\beta^-\widetilde{n}_2]_2)\\
+&\qquad+\zeta_{1,3}(s_1,[\beta^-\widetilde{n}_2]_2)
+ +(\omega_2\cup_1s_1)[\beta^-\widetilde{n}_2]_2
+ +s_1\widetilde{n}_2^2\Big]\\
 &+\frac14\Big[
- \omega_2\beta^\circ\check n_2
- +(\beta^\circ\check n_2)\cup_1(\beta^\circ\check n_2)
- +s_1^2(\beta^\circ\check n_2+
-             \overline{\beta^\circ\check n_2})\Big].
+ \omega_2\beta^-\widetilde{n}_2
+ +(\beta^-\widetilde{n}_2)\cup_1(\beta^-\widetilde{n}_2)
+ +s_1^2(\beta^-\widetilde{n}_2+
+             [\beta^-\widetilde{n}_2]_2)\Big].
 \end{aligned}
 ```
 
@@ -463,11 +463,11 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 ```math
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&
- \check n_3\cup_2\check n'_3
- +(\check n_3+\check n'_3)\cup_2(\mathcal{ℰ}_3+\Delta\mathcal B_3)\\
+ \widetilde{n}_3\cup_2\widetilde{n}'_3
+ +(\widetilde{n}_3+\widetilde{n}'_3)\cup_2(\mathcal{ℰ}_3+\Delta\mathcal B_3)\\
  &+\omega_2\mathcal B_2+\mathcal B_2^2
  +d\mathcal B_2\cup_1\mathcal B_2
- +\check{\mathcal{ℰ}}_3\cup_2d\mathcal B_2\Big].
+ +\widetilde{\mathcal{ℰ}}_3\cup_2d\mathcal B_2\Big].
 \end{aligned}
 ```
 
@@ -480,9 +480,9 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 ```math
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^{c\gamma}=\frac12\Big[&
- d\check n_3\cup_3\check n'_3
- +\Delta(\check n_3\cup_3d\check n_3)\\
- &+d\mathcal B_2\cup_3d\check N_3\Big].
+ d\widetilde{n}_3\cup_3\widetilde{n}'_3
+ +\Delta(\widetilde{n}_3\cup_3d\widetilde{n}_3)\\
+ &+d\mathcal B_2\cup_3d\widetilde{N}_3\Big].
 \end{aligned}
 ```
 
@@ -493,21 +493,21 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 **(M7, 3+1D)**
 
 Use the same $`\widehat{\mathcal{ℰ}}_4^\gamma`$ as in the complete
-3+1D product, with $`\check n_2=n_2`$, $`\check n'_2=n'_2`$,
-$`\beta^\circ=\beta`$, and
-$`\lambda_2^\gamma=\overline{n_2\cup_2n'_2}`$.
-The lower output here is $`N_2=\overline{n_2+n'_2}`$, and
+3+1D product, with $`\widetilde{n}_2=n_2`$, $`\widetilde{n}'_2=n'_2`$,
+$`\beta^-=\beta`$, and
+$`\lambda_2^\gamma=[n_2\cup_2n'_2]_2`$.
+The lower output here is $`N_2=[n_2+n'_2]_2`$, and
 $`\mathcal{ℰ}_3^\gamma=\mathcal{ℰ}_3`$.
 
 ```math
 \begin{aligned}
 \widehat{\mathcal{ℰ}}^{\gamma}_4={}&\frac12z_4^\gamma
  +\frac14\big[
- -\beta^\circ\check n_2\cup_2\beta^\circ\check n'_2\\
- &+(\beta^\circ\check n_2+\beta^\circ\check n'_2)
+ -\beta^-\widetilde{n}_2\cup_2\beta^-\widetilde{n}'_2\\
+ &+(\beta^-\widetilde{n}_2+\beta^-\widetilde{n}'_2)
        \cup_1\lambda_2^\gamma
  -\lambda_2^\gamma\cup_1
-       \beta^\circ\overline{\check n_2+\check n'_2}\\
+       \beta^-[\widetilde{n}_2+\widetilde{n}'_2]_2\\
  &+(\lambda_2^\gamma)^2-\omega_2\lambda_2^\gamma\big].
 \end{aligned}
 ```
@@ -520,34 +520,34 @@ Here the binary completion is
 
 ```math
 \begin{aligned}
-z_4^\gamma={}&z^0_4(\check n_2,\check n'_2)
- +(\omega_2\overline{\check n_2+\check n'_2})\cup_3\mathcal{ℰ}_3^\gamma
- +d(\check n_2\cup_1\check n'_2)\cup_4
-       (\omega_2\overline{\check n_2+\check n'_2})\\
-&+(\check n'_2)^2\cup_4(\omega_2\check n_2)
- +[(\check n'_2)^2+\omega_2\check n'_2]\cup_4
-                     (s_1\overline{\beta^\circ\check n_2})\\
+z_4^\gamma={}&z^0_4(\widetilde{n}_2,\widetilde{n}'_2)
+ +(\omega_2[\widetilde{n}_2+\widetilde{n}'_2]_2)\cup_3\mathcal{ℰ}_3^\gamma
+ +d(\widetilde{n}_2\cup_1\widetilde{n}'_2)\cup_4
+       (\omega_2[\widetilde{n}_2+\widetilde{n}'_2]_2)\\
+&+(\widetilde{n}'_2)^2\cup_4(\omega_2\widetilde{n}_2)
+ +[(\widetilde{n}'_2)^2+\omega_2\widetilde{n}'_2]\cup_4
+                     (s_1[\beta^-\widetilde{n}_2]_2)\\
 &+(\omega_2\cup_1s_1)\lambda_2^\gamma
- +(\check n_2\cup_1\check n'_2)\cup_3
-       [s_1(\overline{\beta^\circ\check n_2}
-                       +\overline{\beta^\circ\check n'_2})]\\
-&+\overline{\check n_2+\check n'_2}^{\,2}\cup_3(s_1\lambda_2^\gamma)
- +(\check n_2\cup_1\check n'_2)\cup_2(s_1\lambda_2^\gamma)\\
+ +(\widetilde{n}_2\cup_1\widetilde{n}'_2)\cup_3
+       [s_1([\beta^-\widetilde{n}_2]_2
+                       +[\beta^-\widetilde{n}'_2]_2)]\\
+&+[\widetilde{n}_2+\widetilde{n}'_2]_2^{\,2}\cup_3(s_1\lambda_2^\gamma)
+ +(\widetilde{n}_2\cup_1\widetilde{n}'_2)\cup_2(s_1\lambda_2^\gamma)\\
 &+s_1\Big[\mathcal{ℰ}_3^\gamma
- +\overline{\beta^\circ\check n_2}\cup_3
-                     \overline{\beta^\circ\check n'_2}
+ +[\beta^-\widetilde{n}_2]_2\cup_3
+                     [\beta^-\widetilde{n}'_2]_2
  +\lambda_2^\gamma\cup_1\lambda_2^\gamma\\
-&\qquad+(\overline{\beta^\circ\check n_2}
-                      +\overline{\beta^\circ\check n'_2})
+&\qquad+([\beta^-\widetilde{n}_2]_2
+                      +[\beta^-\widetilde{n}'_2]_2)
                     \cup_3(s_1\lambda_2^\gamma)
  +(s_1\lambda_2^\gamma)\cup_2\lambda_2^\gamma\\
-&\qquad+\overline{
- \beta^{\circ+}\overline{\check n_2+\check n'_2}
- -\beta^{\circ+}\check n_2-\beta^{\circ+}\check n'_2}\Big].
+&\qquad+[
+ \beta^{-+}[\widetilde{n}_2+\widetilde{n}'_2]_2
+ -\beta^{-+}\widetilde{n}_2-\beta^{-+}\widetilde{n}'_2]_2\Big].
 \end{aligned}
 ```
 
-The second carry obeys $`\beta^{\circ+}=\beta^+`$ in this closed sector.
+The second carry obeys $`\beta^{-+}=\beta^+`$ in this closed sector.
 The complete intrinsic term is the same two-input operation as in the
 full product:
 
@@ -558,12 +558,12 @@ z^0_4(x,y)={}&\sum_{\substack{v\in\{12123434,12134131,12314324,12314342,\\
 &+\mathop{\mathrm{MS}}\nolimits_{12123}(x+y,y,x\cup_2y)
  +\mathop{\mathrm{MS}}\nolimits_{123131}(y,x,x\cup_1y)\\
 &+(x\cup_1y)\cup_1y
- +(\overline{\beta^\circ x}+\overline{\beta^\circ y})\cup_1(x\cup_2y)\\
+ +([\beta^- x]_2+[\beta^- y]_2)\cup_1(x\cup_2y)\\
 &+(x\cup_2y)\cup_1
-  (\overline{\beta^\circ x}+\overline{\beta^\circ y}+y\cup_1x)\\
+  ([\beta^- x]_2+[\beta^- y]_2+y\cup_1x)\\
 &+(x\cup_1y)\cup_3(x^2+y^2)
  +y\cup_2[x\cup_1(x\cup_1y)]
- +\overline{\beta^\circ y}\cup_2\overline{\beta^\circ x}.
+ +[\beta^- y]_2\cup_2[\beta^- x]_2.
 \end{aligned}
 ```
 
@@ -607,7 +607,7 @@ dn_4=\mathcal{𝒪}_5=\mathcal{𝒪}^{\gamma}_5.
 
 ```math
 \mathcal{𝒪}^{\gamma}_5
- =\mathrm{Sq}^2n_3+\omega_2n_3+s_1\overline{\beta n_3}.
+ =\mathrm{Sq}^2n_3+\omega_2n_3+s_1[\beta n_3]_2.
 ```
 
 #### Bosonic obstruction
@@ -652,27 +652,27 @@ d_{s_1}\widehat\nu_5=\widehat{\mathcal{𝒪}}_6
 
 **(M4, 4+1D)**
 
-Here the integer decoration is zero, so $`\check n_3=n_3`$ and
-$`\beta^\circ n_3=\beta n_3`$. The following is the same maintained
+Here the integer decoration is zero, so $`\widetilde{n}_3=n_3`$ and
+$`\beta^- n_3=\beta n_3`$. The following is the same maintained
 formula as in the full 4+1D tower:
 
 ```math
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_6^\gamma
 ={}&\frac12\Big[
- \zeta_{2,3}(\omega_2,\check n_3)+\mathcal X_6(\check n_3)\\
-&\qquad+(\check n_3\cup_1\check n_3)\cup_4(\omega_2\check n_3)
- +(\check n_3\cup_1\check n_3)\cup_4
-       (s_1\overline{\beta^\circ\check n_3})\\
-&\qquad+(\omega_2\check n_3)\cup_4
-       (s_1\overline{\beta^\circ\check n_3})
- +\zeta_{1,4}(s_1,\overline{\beta^\circ\check n_3})\\
-&\qquad+(\omega_2\cup_1s_1)\overline{\beta^\circ\check n_3}
- +s_1(\check n_3\cup_1\check n_3)\Big]\\
+ \zeta_{2,3}(\omega_2,\widetilde{n}_3)+\mathcal X_6(\widetilde{n}_3)\\
+&\qquad+(\widetilde{n}_3\cup_1\widetilde{n}_3)\cup_4(\omega_2\widetilde{n}_3)
+ +(\widetilde{n}_3\cup_1\widetilde{n}_3)\cup_4
+       (s_1[\beta^-\widetilde{n}_3]_2)\\
+&\qquad+(\omega_2\widetilde{n}_3)\cup_4
+       (s_1[\beta^-\widetilde{n}_3]_2)
+ +\zeta_{1,4}(s_1,[\beta^-\widetilde{n}_3]_2)\\
+&\qquad+(\omega_2\cup_1s_1)[\beta^-\widetilde{n}_3]_2
+ +s_1(\widetilde{n}_3\cup_1\widetilde{n}_3)\Big]\\
 &+\frac14\Big[
- \omega_2\beta^\circ\check n_3
- +(\beta^\circ\check n_3)\cup_2(\beta^\circ\check n_3)
- +s_1^2(\beta^\circ\check n_3+\overline{\beta^\circ\check n_3})
+ \omega_2\beta^-\widetilde{n}_3
+ +(\beta^-\widetilde{n}_3)\cup_2(\beta^-\widetilde{n}_3)
+ +s_1^2(\beta^-\widetilde{n}_3+[\beta^-\widetilde{n}_3]_2)
  \Big].
 \end{aligned}
 ```
@@ -796,8 +796,8 @@ Use $`\mathcal{𝒪}_5^{\gamma\psi}=0`$ and the actual binary lower output in th
 **(M7, 4+1D)**
 
 This is the restriction of the same complete two-input law to
-$`n_2=n'_2=0`$, $`\check n_3=n_3`$, and $`dn_3=dn'_3=0`$.
-In particular $`\beta^\circ=\beta`$,
+$`n_2=n'_2=0`$, $`\widetilde{n}_3=n_3`$, and $`dn_3=dn'_3=0`$.
+In particular $`\beta^-=\beta`$,
 $`\lambda_4^\gamma=0`$, and
 $`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; all displayed derivatives
 of the closed integer Bocksteins vanish. No extra phase coordinate is
@@ -809,16 +809,16 @@ selected on this subspace.
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
        \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)
- +s_1\big[(\bar \beta_4^\gamma+\bar \beta_4^{\gamma\prime})
-                         \cup_3\bar\lambda_3^\gamma\big]\\
-&\qquad+(\bar\lambda_4^\gamma)_{12345}
-                  (\bar\lambda_3^\gamma)_{0145}
- +(\bar\lambda_4^\gamma)_{01235}
-                  (\bar\lambda_3^\gamma)_{0345}-s_1\mathcal{ℰ}_4^\gamma\Big]\\
+ +s_1\big[([\beta_4^\gamma]_2+[\beta_4^{\gamma\prime}]_2)
+                         \cup_3[\lambda_3^\gamma]_2\big]\\
+&\qquad+([\lambda_4^\gamma]_2)_{12345}
+                  ([\lambda_3^\gamma]_2)_{0145}
+ +([\lambda_4^\gamma]_2)_{01235}
+                  ([\lambda_3^\gamma]_2)_{0345}-s_1\mathcal{ℰ}_4^\gamma\Big]\\
 &+\frac14\Big[
  \beta_4^\gamma\cup_3\beta_4^{\gamma\prime}
  -(\beta_4^\gamma+\beta_4^{\gamma\prime})\cup_2\lambda_3^\gamma\\
-&\qquad+\lambda_3^\gamma\cup_2\beta^\circ(\check n_3+\check n'_3)
+&\qquad+\lambda_3^\gamma\cup_2\beta^-(\widetilde{n}_3+\widetilde{n}'_3)
  +\lambda_3^\gamma\cup_1\lambda_3^\gamma+\omega_2\lambda_3^\gamma\\
 &\qquad-(d\beta_4^\gamma+d\beta_4^{\gamma\prime})\cup_3\lambda_3^\gamma
  +\lambda_3^\gamma\cup_2\lambda_4^\gamma
@@ -831,11 +831,11 @@ selected on this subspace.
 &\qquad-(\lambda_4^\gamma)_{01235}(\lambda_4^\gamma)_{12345}
  -(\lambda_4^\gamma)_{01345}(\lambda_4^\gamma)_{12345}\\
 &\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
- \epsilon\;\overline{
-       \sum_{\eta\in\mathcal P}\prod_{(x,f)\in\eta}x_f}
+ \epsilon\;[
+       \sum_{\eta\in\mathcal P}\prod_{(x,f)\in\eta}x_f]_2
  \Big]\\
-&-\widehat B_5[\check n_3+\check n'_3,0]
- +\widehat B_5[\check n_3,0]+\widehat B_5[\check n'_3,0]\pmod1.
+&-\widehat B_5[\widetilde{n}_3+\widetilde{n}'_3,0]
+ +\widehat B_5[\widetilde{n}_3,0]+\widehat B_5[\widetilde{n}'_3,0]\pmod1.
 \end{aligned}
 ```
 
@@ -1027,12 +1027,12 @@ $`z^0_5(n_3,n'_3)`$. All sums and word evaluations in this section are binary.
 \begin{aligned}
 z^0_{q+2}(x,y)={}&\text{word sum}
  +(x\cup_{q-1}y)\cup_{q-1}y\\
-&+(\overline{\beta x}+\overline{\beta y})\cup_{q-1}(x\cup_qy)
+&+([\beta x]_2+[\beta y]_2)\cup_{q-1}(x\cup_qy)
 \\
-&+(x\cup_qy)\cup_{q-1}(\overline{\beta x}+\overline{\beta y}+y\cup_{q-1}x)\\
+&+(x\cup_qy)\cup_{q-1}([\beta x]_2+[\beta y]_2+y\cup_{q-1}x)\\
 &+(x\cup_{q-1}y)\cup_{q+1}(x\cup_{q-2}x+y\cup_{q-2}y)
 \\
-&+y\cup_q(x\cup_{q-1}(x\cup_{q-1}y))+\overline{\beta y}\cup_q\overline{\beta x}.
+&+y\cup_q(x\cup_{q-1}(x\cup_{q-1}y))+[\beta y]_2\cup_q[\beta x]_2.
 \end{aligned}
 ```
 
@@ -1048,7 +1048,7 @@ The word sum in this formula consists of the following ordered evaluations.
 | `12131432412`, `12134341321` | $`((x+y),y,y,x)`$ |
 | `1212312` | $`((x+y),y,(x\cup_qy))`$ |
 | `12313123` | $`(y,x,(x\cup_{q-1}y))`$ |
-| `12131232` | $`(\overline{\beta x},y,y)`$ |
+| `12131232` | $`([\beta x]_2,y,y)`$ |
 | `123131212` | $`(y\cup_{q-2}y,x,(x+y))`$ |
 | `123131212` | $`((x+y)\cup_{q-2}(x+y),y,x)`$ |
 
@@ -1065,7 +1065,7 @@ whose first input has degree greater than $`q`$.
 The displayed physical laws use the operator representative. The maps
 below record the exact change from the previous phase coordinate and its
 inverse. These terminal maps keep their lower inputs fixed. In 3+1D the
-current geometric reference first applies the explicit checked-CF and
+current geometric reference first applies the explicit shifted-CF and
 output-face conversion linked above. Source
 and product transform together; these equations do not introduce a new
 physical contribution.

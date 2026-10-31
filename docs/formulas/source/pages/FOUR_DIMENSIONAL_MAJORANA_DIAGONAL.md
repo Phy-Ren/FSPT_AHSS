@@ -3,7 +3,7 @@
 Take a complete state with $`n_2=0`$, closed binary Majorana cochain
 $`n_3`$, complex-fermion cochain $`n_4`$ satisfying
 $`dn_4=\mathcal{𝒪}_5^\gamma[n_3]`$, and phase $`\widehat\nu_5`$
-satisfying the terminal obstruction equation. Here $`\check n_3=n_3`$.
+satisfying the terminal obstruction equation. Here $`\widetilde{n}_3=n_3`$.
 All stacking corrections below have identical complete inputs. The current phase and product are exactly the zero-p+ip restrictions of the complete formulas. The explanation below specializes the same phase change without introducing a second diagonal law.
 
 ## 1. p+ip stacking
@@ -30,12 +30,12 @@ All stacking corrections below have identical complete inputs. The current phase
 
 {{equation:four-dimensional-self-stacking--complex-fermions-and-majorana-decoration--8}}
 
-Here the output term vanishes because $`\check N_3=0`$, and the mixed input source is zero.
+Here the output term vanishes because $`\widetilde{N}_3=0`$, and the mixed input source is zero.
 
 ### Majorana decoration
 
 Use the shared self-stacking expression, with $`n_2=0`$,
-$`d\check n_3=0`$, and $`\beta_4^\gamma=\beta n_3`$:
+$`d\widetilde{n}_3=0`$, and $`\beta_4^\gamma=\beta n_3`$:
 
 {{equation:four-dimensional-self-stacking--majorana-decoration--10}}
 
@@ -43,7 +43,7 @@ This is the same terminal coordinate as the current obstruction.
 
 ## Specialization of the common phase change
 
-The full lower output here has $`\check N_3=0`$ and
+The full lower output here has $`\widetilde{N}_3=0`$ and
 $`N_4=\mathcal{ℰ}_4^\gamma`$. The common phase map consequently gives
 $`-\Delta \widehat B_5=\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$.
 Those two terms already appear in the imported Majorana formula above.

@@ -10,17 +10,17 @@ Their [paired phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is included
 in both obstruction and stacking. The finite pure p+ip completion remains
 the same fixed polynomial.
 
-The backgrounds are $`\omega_2,s_1`$. A bar takes parity and a tilde takes
-the second binary digit, as in [Operations](OPERATIONS.md). In integer
-arithmetic a binary field means its canonical value $`0,1`$. A bar around
-a composite expression means: form that entire binary expression first,
+The backgrounds are $`\omega_2,s_1`$.
+The binary digits are $`[x]_2`$ and $`[\lfloor x/2\rfloor]_2`$, as in [Operations](OPERATIONS.md).
+In integer arithmetic a binary field means its canonical value $`0,1`$.
+Square brackets with subscript two around a composite expression mean: form that entire binary expression first,
 then use its value $`0,1`$. In particular it cannot be replaced by the
 unreduced sum of its integer-valued terms. The coefficient transports are
 fixed in [Operations](OPERATIONS.md).
 
-The shifted background is $`\check\omega_2=\omega_2+s_1\cup s_1`$ and the
+The shifted background is $`\widetilde{\omega}_2=\omega_2+s_1\cup s_1`$ and the
 closed degree-four source is
-$`\check{\mathcal{𝒪}}_4=\bar n_2^2+\check\omega_2\bar n_2`$.
+$`\widetilde{\mathcal{𝒪}}_4=[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$.
 The source $`\mathcal{𝒪}^\psi_5`$, the residual $`\beta_4^\psi`$, and the
 Pontryagin-square representative $`\mathcal P_{s_1}`$ have the definitions
 in the guide. The Bocksteins $`\beta,\beta_{s_1},\beta^+`$ and finite cup
@@ -50,7 +50,7 @@ T_6[z;\omega_2,s_1]=\tau_J\big[&
  (\mathrm{Sq}^2z^J+s_1\mathrm{Sq}^1z^J+\omega_2z^J)\\
 &+\mathrm{Sq}^3\mathrm{Sq}^1z^J
  +s_1\mathrm{Sq}^2\mathrm{Sq}^1z^J\\
-&+(\overline{\beta\omega_2}+s_1\omega_2)\mathrm{Sq}^1z^J
+&+([\beta\omega_2]_2+s_1\omega_2)\mathrm{Sq}^1z^J
  +M_7[dz^J;\omega_2,s_1]\big].
 \end{aligned}
 ```
@@ -83,11 +83,11 @@ For a closed binary four-cochain $`z`$, define
 M_7[z;\omega_2,s_1]={}&\mathop{\mathrm{MS}}\nolimits_{123134343}(\omega_2,\omega_2,z,z)
  +\sum_{\eta\in\mathcal W_4}\mathop{\mathrm{MS}}\nolimits_\eta(z,z,z,z)\\
 &+(z\cup_2z)\cup_5(\omega_2z)
- +(z\cup_2z)\cup_5(s_1\overline{\beta z})\\
-&+(\omega_2z)\cup_5(s_1\overline{\beta z})
- +\mathop{\mathrm{MS}}\nolimits_{123143434}(s_1,s_1,\overline{\beta z},\overline{\beta z})\\
-&+(\omega_2\cup_1s_1)\overline{\beta z}
- +s_1(z\cup_2z)+s_1^2\overline{\beta^+z}.
+ +(z\cup_2z)\cup_5(s_1[\beta z]_2)\\
+&+(\omega_2z)\cup_5(s_1[\beta z]_2)
+ +\mathop{\mathrm{MS}}\nolimits_{123143434}(s_1,s_1,[\beta z]_2,[\beta z]_2)\\
+&+(\omega_2\cup_1s_1)[\beta z]_2
+ +s_1(z\cup_2z)+s_1^2[\beta^+z]_2.
 \end{aligned}
 ```
 
@@ -129,32 +129,32 @@ Majorana or complex-fermion decoration is chosen here. Assemble the
 \begin{aligned}
 R_7=\frac18\Big\{&d_{s_1}\Big[
  4\big(\omega_2\beta_4^\psi+\beta_4^\psi\cup_2\beta_4^\psi
- +(\beta\check{\mathcal{𝒪}}_4)\cup_3\beta_4^\psi
- -\beta_4^\psi\cup_3[(\beta_{s_1}\check\omega_2)n_2]\big)\\
-&\qquad-4\overline{\left[\begin{gathered}\mathop{\mathrm{MS}}\nolimits_{12132434}
- (\overline{\beta_{s_1}\check\omega_2},\overline{\beta_{s_1}\check\omega_2},\bar n_2,\bar n_2)
- +\widetilde{\beta_{s_1}\check\omega_2}(\bar n_2\cup_1\bar n_2)\\{}+(s_1\overline{\beta_{s_1}\check\omega_2})\widetilde n_2
- +s_1(\overline{\beta_{s_1}\check\omega_2}\cup_1s_1)\bar n_2\end{gathered}\right]}\\
-&\qquad+\mathcal P_{s_1}(\check\omega_2)n_2
- +2\check\omega_2n_2^2+4\omega_2\check{\mathcal{𝒪}}_4
- +8\overline{\big[\check{\mathcal{𝒪}}_4\cup_1(\overline{\beta\omega_2}+s_1\omega_2)\big]}\Big]\\
-&+8\overline{\big[\mathcal{𝒪}^\psi_5\cup_3\mathcal{𝒪}^\psi_5
- +(\mathrm{Sq}^2\check{\mathcal{𝒪}}_4+s_1\mathrm{Sq}^1\check{\mathcal{𝒪}}_4
- +\omega_2\check{\mathcal{𝒪}}_4)\cup_4\mathcal{𝒪}^\psi_5
- +\omega_2\mathcal{𝒪}^\psi_5\big]}\\
-&+8M_7[\check{\mathcal{𝒪}}_4;\omega_2,s_1]
- +4\big[\omega_2\beta\check{\mathcal{𝒪}}_4
- +(\beta\check{\mathcal{𝒪}}_4)\cup_3(\beta\check{\mathcal{𝒪}}_4)\big]\Big\}
+ +(\beta\widetilde{\mathcal{𝒪}}_4)\cup_3\beta_4^\psi
+ -\beta_4^\psi\cup_3[(\beta_{s_1}\widetilde{\omega}_2)n_2]\big)\\
+&\qquad-4[\left[\begin{gathered}\mathop{\mathrm{MS}}\nolimits_{12132434}
+ ([\beta_{s_1}\widetilde{\omega}_2]_2,[\beta_{s_1}\widetilde{\omega}_2]_2,[n_2]_2,[n_2]_2)
+ +[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2([n_2]_2\cup_1[n_2]_2)\\{}+(s_1[\beta_{s_1}\widetilde{\omega}_2]_2)[\lfloor n_2/2\rfloor]_2
+ +s_1([\beta_{s_1}\widetilde{\omega}_2]_2\cup_1s_1)[n_2]_2\end{gathered}\right]]_2\\
+&\qquad+\mathcal P_{s_1}(\widetilde{\omega}_2)n_2
+ +2\widetilde{\omega}_2n_2^2+4\omega_2\widetilde{\mathcal{𝒪}}_4
+ +8[\big[\widetilde{\mathcal{𝒪}}_4\cup_1([\beta\omega_2]_2+s_1\omega_2)\big]]_2\Big]\\
+&+8[\big[\mathcal{𝒪}^\psi_5\cup_3\mathcal{𝒪}^\psi_5
+ +(\mathrm{Sq}^2\widetilde{\mathcal{𝒪}}_4+s_1\mathrm{Sq}^1\widetilde{\mathcal{𝒪}}_4
+ +\omega_2\widetilde{\mathcal{𝒪}}_4)\cup_4\mathcal{𝒪}^\psi_5
+ +\omega_2\mathcal{𝒪}^\psi_5\big]]_2\\
+&+8M_7[\widetilde{\mathcal{𝒪}}_4;\omega_2,s_1]
+ +4\big[\omega_2\beta\widetilde{\mathcal{𝒪}}_4
+ +(\beta\widetilde{\mathcal{𝒪}}_4)\cup_3(\beta\widetilde{\mathcal{𝒪}}_4)\big]\Big\}
  \pmod2.
 \end{aligned}
 ```
 
 The numerator is pointwise divisible by eight. All operations inside the
 outer braces are integer operations, including the differential on the
-square bracket. Each barred subexpression supplies its canonical binary
+square bracket. Each subexpression enclosed in $`[\cdot]_2`$ supplies its canonical binary
 value before that integer assembly. In particular no fraction is reduced
 modulo one partway through the calculation. The ordinary Bockstein of
-$`\check{\mathcal{𝒪}}_4`$ is defined because that source is closed.
+$`\widetilde{\mathcal{𝒪}}_4`$ is defined because that source is closed.
 
 For the first term use the three-factor grid (O11), ordered
 $`(s_1,n_2,\omega_2)`$. On grid vertices $`(r_i,t_i,v_i)`$, pull $`s_1`$ along

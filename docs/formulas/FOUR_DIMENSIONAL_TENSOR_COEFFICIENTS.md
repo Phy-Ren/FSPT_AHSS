@@ -8,19 +8,19 @@ $`(012345)`$:
 ```math
 \begin{aligned}
 &\sum_{(i,j,k,l,e)\in\mathcal I_{2,3}}
- \overline{\binom{n_2(012)}i}
- \overline{\binom{(-1)^{s_1(02)}n'_2(234)}j}
- \overline{\binom{(-1)^{s_1(02)}[n'_2(235)-n'_2(234)]}k}\\
+ [\binom{n_2(012)}i]_2
+ [\binom{(-1)^{s_1(02)}n'_2(234)}j]_2
+ [\binom{(-1)^{s_1(02)}[n'_2(235)-n'_2(234)]}k]_2\\
 &\qquad\times
- \overline{\binom{(-1)^{s_1(03)}n'_2(345)}l}
- [\check n'_3(2345)+\check\omega_2(023)\bar n'_2(345)]^e\\
+ [\binom{(-1)^{s_1(03)}n'_2(345)}l]_2
+ [\widetilde{n}'_3(2345)+\widetilde{\omega}_2(023)[n'_2]_2(345)]^e\\
 &+\sum_{(i,j,k,l,e)\in\mathcal I_{3,2}}
- \overline{\binom{(-1)^{s_1(03)}n'_2(345)}i}
- \overline{\binom{n_2(012)}j}
- \overline{\binom{n_2(013)-n_2(012)}k}\\
+ [\binom{(-1)^{s_1(03)}n'_2(345)}i]_2
+ [\binom{n_2(012)}j]_2
+ [\binom{n_2(013)-n_2(012)}k]_2\\
 &\qquad\times
- \overline{\binom{(-1)^{s_1(01)}n_2(123)}l}
- [\check n_3(0123)]^e.
+ [\binom{(-1)^{s_1(01)}n_2(123)}l]_2
+ [\widetilde{n}_3(0123)]^e.
 \end{aligned}
 ```
 
@@ -33,16 +33,16 @@ The additional background contribution is the ordinary cochain polynomial
 
 ```math
 \begin{aligned}
-s_1\Big[&\bar n_2\widetilde n'_2
- +(\widetilde n_2+\bar n_2)
-                  \overline{\lfloor n'_2/4\rfloor}\\
-&+(\overline{\lfloor n_2/4\rfloor}+\widetilde n_2
-                         +\bar n_2\cup_2\widetilde n_2)
-                      (\bar n'_2\cup_2\widetilde n'_2)\\
-&+[s_1\cup_1(\widetilde n_2+\bar n_2)]
-                     (\widetilde n'_2+\bar n'_2\cup_2\widetilde n'_2)\\
-&+[s_1\cup_1(\overline{\lfloor n_2/4\rfloor}
-                         +\bar n_2\cup_2\widetilde n_2)]\bar n'_2\Big].
+s_1\Big[&[n_2]_2[\lfloor n'_2/2\rfloor]_2
+ +([\lfloor n_2/2\rfloor]_2+[n_2]_2)
+                  [\lfloor n'_2/4\rfloor]_2\\
+&+([\lfloor n_2/4\rfloor]_2+[\lfloor n_2/2\rfloor]_2
+                         +[n_2]_2\cup_2[\lfloor n_2/2\rfloor]_2)
+                      ([n'_2]_2\cup_2[\lfloor n'_2/2\rfloor]_2)\\
+&+[s_1\cup_1([\lfloor n_2/2\rfloor]_2+[n_2]_2)]
+                     ([\lfloor n'_2/2\rfloor]_2+[n'_2]_2\cup_2[\lfloor n'_2/2\rfloor]_2)\\
+&+[s_1\cup_1([\lfloor n_2/4\rfloor]_2
+                         +[n_2]_2\cup_2[\lfloor n_2/2\rfloor]_2)][n'_2]_2\Big].
 \end{aligned}
 ```
 

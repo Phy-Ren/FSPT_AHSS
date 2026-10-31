@@ -31,7 +31,7 @@ dn_2=\mathcal{𝒪}_3=\mathcal{𝒪}^{\gamma}_3.
 
 ```math
 \mathcal{𝒪}^{\gamma}_3
- =\omega_2n_1+s_1\overline{\beta n_1}.
+ =\omega_2n_1+s_1[\beta n_1]_2.
 ```
 
 ### 3. Bosonic obstruction
@@ -64,8 +64,8 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
 \begin{aligned}
 \widehat{\mathcal{𝒪}}^\gamma_4(n_1)={}&\frac12\big[
  \mathop{\mathrm{MS}}\nolimits_{123134}(\omega_2,\omega_2,n_1,n_1)\\
-&\qquad+(\omega_2n_1)\cup_2(s_1\overline{\beta n_1})\\
-&\qquad+(\omega_2\cup_1s_1)\overline{\beta n_1}+s_1(s_1+n_1)\overline{\beta n_1}\big]\\
+&\qquad+(\omega_2n_1)\cup_2(s_1[\beta n_1]_2)\\
+&\qquad+(\omega_2\cup_1s_1)[\beta n_1]_2+s_1(s_1+n_1)[\beta n_1]_2\big]\\
 &+\frac14\big[{\omega_2} \beta n_1+{s_1}\,{n_1}\,\beta n_1\big].
 \end{aligned}
 ```
@@ -137,14 +137,14 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 &\qquad-(\beta n_1+\beta n'_1)({n_1}\cup_1{n'_1})\\
 &\qquad-({n_1}\cup_1{n'_1})(\beta n_1+\beta n'_1)\\
 &\qquad+({n_1}\cup_1{n'_1})d({n_1}\cup_1{n'_1})
- -\omega_2(n_1\cup_1n'_1)+\overline{s_1n_1n'_1}\Big]\\
-&-\frac18\Delta\!\left[\overline{n_1^3}\right]
+ -\omega_2(n_1\cup_1n'_1)+[s_1n_1n'_1]_2\Big]\\
+&-\frac18\Delta\!\left[[n_1^3]_2\right]
  \pmod1.
 \end{aligned}
 ```
 
-The bar inside $`\Delta[\overline{n_1^3}]`$ and the bar on
-$`\overline{s_1n_1n'_1}`$ reduce each complete indicated product. The
+The reduction modulo two inside $`\Delta[[n_1^3]_2]`$ and the reduction modulo two of
+$`[s_1n_1n'_1]_2`$ reduce each complete indicated product. The
 $`\Delta`$ in the mixed half-valued contribution is binary; in the
 eighth-valued contribution it subtracts the complete integer lifts. In contrast, $`n_1\cup_1n'_1`$ in the
 quarter-valued bracket is a signed integer cup; its differential is also

@@ -8,18 +8,18 @@ Return to the [four-lift definition](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md
 
 | Term | Physical face product |
 | --- | --- |
-| 1 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0124}`$ |
-| 2 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\overline{d\check n'_3})_{02345} (\check n_3)_{0234}`$ |
-| 3 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\bar \beta_4^{\gamma\prime})_{01245}`$ |
-| 4 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\bar \beta_4^{\gamma\prime})_{02345}`$ |
-| 5 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0124} (\check n'_3)_{0145}`$ |
-| 6 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0124} (\check n'_3)_{0245}`$ |
-| 7 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0124} (\check n'_3)_{1245}`$ |
-| 8 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0234} (\check n'_3)_{0245}`$ |
-| 9 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0234} (\check n'_3)_{0345}`$ |
-| 10 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01234} (\check n_3)_{0234} (\check n'_3)_{2345}`$ |
-| 11 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\overline{d\check n'_3})_{02345} (\check n_3)_{0234}`$ |
-| 12 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\bar \beta_4^{\gamma\prime})_{02345}`$ |
-| 13 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0234} (\check n'_3)_{0234}`$ |
-| 14 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0234} (\check n'_3)_{0345}`$ |
-| 15 | $`(\overline{d\check n_3})_{01234} (\overline{d\check n'_3})_{01245} (\check n_3)_{0234} (\check n'_3)_{2345}`$ |
+| 1 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} (\widetilde{n}_3)_{0124}`$ |
+| 2 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{02345} (\widetilde{n}_3)_{0234}`$ |
+| 3 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01234} ([\beta_4^{\gamma\prime}]_2)_{01245}`$ |
+| 4 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01234} ([\beta_4^{\gamma\prime}]_2)_{02345}`$ |
+| 5 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01234} (\widetilde{n}_3)_{0124} (\widetilde{n}'_3)_{0145}`$ |
+| 6 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01234} (\widetilde{n}_3)_{0124} (\widetilde{n}'_3)_{0245}`$ |
+| 7 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01234} (\widetilde{n}_3)_{0124} (\widetilde{n}'_3)_{1245}`$ |
+| 8 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01234} (\widetilde{n}_3)_{0234} (\widetilde{n}'_3)_{0245}`$ |
+| 9 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01234} (\widetilde{n}_3)_{0234} (\widetilde{n}'_3)_{0345}`$ |
+| 10 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01234} (\widetilde{n}_3)_{0234} (\widetilde{n}'_3)_{2345}`$ |
+| 11 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} ([d\widetilde{n}'_3]_2)_{02345} (\widetilde{n}_3)_{0234}`$ |
+| 12 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} ([\beta_4^{\gamma\prime}]_2)_{02345}`$ |
+| 13 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} (\widetilde{n}_3)_{0234} (\widetilde{n}'_3)_{0234}`$ |
+| 14 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} (\widetilde{n}_3)_{0234} (\widetilde{n}'_3)_{0345}`$ |
+| 15 | $`([d\widetilde{n}_3]_2)_{01234} ([d\widetilde{n}'_3]_2)_{01245} (\widetilde{n}_3)_{0234} (\widetilde{n}'_3)_{2345}`$ |

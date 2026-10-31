@@ -10,19 +10,19 @@ the [relative coefficients](FOUR_DIMENSIONAL_MAJORANA_RELATIVE_WORD_COEFFICIENTS
 The auxiliary binary expression is
 
 ```math
-\mathcal T_6[\check n_3;\omega_2,s_1]=\sum_{(\vartheta;\,x_1,\ldots,x_q)\in\mathcal W_6}\mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)+s_1^2\widetilde{\beta^\circ\check n_3}.
+\mathcal T_6[\widetilde{n}_3;\omega_2,s_1]=\sum_{(\vartheta;\,x_1,\ldots,x_q)\in\mathcal W_6}\mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)+s_1^2[\lfloor \beta^-\widetilde{n}_3/2\rfloor]_2.
 ```
 
 The index set $`\mathcal W_6`$ is exactly the 41 blocks below. In each block, use the displayed ordered argument tuple and every listed word once. Every coefficient is one in $`\mathbb Z_2`$. Equal contributions cancel modulo two. The lists contain 1,090 words in total. They are fixed mathematical coefficient data, independent of the symmetry group.
 
-All words use the ordinary interval-cut MS convention in [Operations](OPERATIONS.md). The input $`\check n_3`$ is an arbitrary binary degree-three cochain; $`d\check n_3`$ is its actual differential. The backgrounds $`\omega_2,s_1`$ are closed. The final term is the second binary digit of the integral open Bockstein, including negative integer representatives. It is not included again in the word lists.
+All words use the ordinary interval-cut MS convention in [Operations](OPERATIONS.md). The input $`\widetilde{n}_3`$ is an arbitrary binary degree-three cochain; $`d\widetilde{n}_3`$ is its actual differential. The backgrounds $`\omega_2,s_1`$ are closed. The final term is the second binary digit of the integral open Bockstein, including negative integer representatives. It is not included again in the word lists.
 
 These lists omit identically equal binary contributions in pairs, using the specified cochain degrees and closed backgrounds. This is an exact equality of the displayed cochains; the phase coordinate is unchanged.
 
 ## Coefficient block 1
 
 ```math
-(s_1,s_1,\check n_3,d\check n_3,d\check n_3,d\check n_3).
+(s_1,s_1,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -33,7 +33,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 2
 
 ```math
-(s_1,s_1,\check n_3,d\check n_3,d\check n_3,\check n_3).
+(s_1,s_1,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -44,7 +44,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 3
 
 ```math
-(s_1,s_1,\check n_3,d\check n_3,\check n_3,d\check n_3).
+(s_1,s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -55,7 +55,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 4
 
 ```math
-(s_1,s_1,\check n_3,d\check n_3,\check n_3,\check n_3).
+(s_1,s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -65,7 +65,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 5
 
 ```math
-(s_1,s_1,\check n_3,\check n_3,d\check n_3,d\check n_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -75,7 +75,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 6
 
 ```math
-(s_1,s_1,\check n_3,\check n_3,\check n_3,d\check n_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -87,7 +87,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 7
 
 ```math
-(s_1,s_1,\check n_3,\check n_3,\check n_3,\check n_3).
+(s_1,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -98,7 +98,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 8
 
 ```math
-(s_1,\check n_3,d\check n_3).
+(s_1,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -108,7 +108,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 9
 
 ```math
-(s_1,\check n_3,d\check n_3,\check n_3,d\check n_3).
+(s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -120,7 +120,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 10
 
 ```math
-(s_1,\check n_3,d\check n_3,\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -131,7 +131,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 11
 
 ```math
-(s_1,\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -141,7 +141,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 12
 
 ```math
-(s_1,\check n_3,\check n_3,d\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -152,7 +152,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 13
 
 ```math
-(s_1,\check n_3,\check n_3,\check n_3,d\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -162,7 +162,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 14
 
 ```math
-(s_1,\check n_3,\check n_3,\check n_3,\check n_3).
+(s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -173,7 +173,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 15
 
 ```math
-(s_1,\omega_2,\check n_3,\check n_3,d\check n_3).
+(s_1,\omega_2,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -183,7 +183,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 16
 
 ```math
-(\check n_3,d\check n_3,d\check n_3,d\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -219,7 +219,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 17
 
 ```math
-(\check n_3,d\check n_3,d\check n_3,\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -233,7 +233,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 18
 
 ```math
-(\check n_3,d\check n_3,s_1,d\check n_3,d\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,s_1,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -244,7 +244,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 19
 
 ```math
-(\check n_3,d\check n_3,\check n_3,d\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -268,7 +268,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 20
 
 ```math
-(\check n_3,d\check n_3,\check n_3,\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -283,7 +283,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 21
 
 ```math
-(\check n_3,d\check n_3,\omega_2,d\check n_3).
+(\widetilde{n}_3,d\widetilde{n}_3,\omega_2,d\widetilde{n}_3).
 ```
 
 ```text
@@ -293,7 +293,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 22
 
 ```math
-(\check n_3,s_1,d\check n_3,d\check n_3,d\check n_3).
+(\widetilde{n}_3,s_1,d\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -305,7 +305,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 23
 
 ```math
-(\check n_3,s_1,d\check n_3,d\check n_3,\check n_3).
+(\widetilde{n}_3,s_1,d\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -315,7 +315,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 24
 
 ```math
-(\check n_3,s_1,d\check n_3,\check n_3,d\check n_3).
+(\widetilde{n}_3,s_1,d\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -325,7 +325,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 25
 
 ```math
-(\check n_3,\check n_3,d\check n_3,d\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -360,7 +360,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 26
 
 ```math
-(\check n_3,\check n_3,d\check n_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -381,7 +381,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 27
 
 ```math
-(\check n_3,\check n_3,s_1,d\check n_3,d\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,s_1,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -391,7 +391,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 28
 
 ```math
-(\check n_3,\check n_3,\check n_3,d\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -412,7 +412,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 29
 
 ```math
-(\check n_3,\check n_3,\check n_3,\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -427,7 +427,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 30
 
 ```math
-(\check n_3,\check n_3,\omega_2,d\check n_3).
+(\widetilde{n}_3,\widetilde{n}_3,\omega_2,d\widetilde{n}_3).
 ```
 
 ```text
@@ -437,7 +437,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 31
 
 ```math
-(\check n_3,\omega_2,d\check n_3,d\check n_3).
+(\widetilde{n}_3,\omega_2,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -447,7 +447,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 32
 
 ```math
-(\check n_3,\omega_2,d\check n_3,\check n_3).
+(\widetilde{n}_3,\omega_2,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -457,7 +457,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 33
 
 ```math
-(\check n_3,\omega_2,\check n_3,d\check n_3).
+(\widetilde{n}_3,\omega_2,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -467,7 +467,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 34
 
 ```math
-(\omega_2,s_1,\check n_3,d\check n_3,d\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,d\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -477,7 +477,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 35
 
 ```math
-(\omega_2,s_1,\check n_3,d\check n_3,\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -487,7 +487,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 36
 
 ```math
-(\omega_2,s_1,\check n_3,\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -497,7 +497,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 37
 
 ```math
-(\omega_2,s_1,\check n_3,\check n_3,d\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,\widetilde{n}_3,d\widetilde{n}_3).
 ```
 
 ```text
@@ -507,7 +507,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 38
 
 ```math
-(\omega_2,s_1,\check n_3,\check n_3,\check n_3).
+(\omega_2,s_1,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -517,7 +517,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 39
 
 ```math
-(\omega_2,\check n_3,d\check n_3,\check n_3).
+(\omega_2,\widetilde{n}_3,d\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -527,7 +527,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 40
 
 ```math
-(\omega_2,\check n_3,\check n_3,\check n_3).
+(\omega_2,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text
@@ -537,7 +537,7 @@ These lists omit identically equal binary contributions in pairs, using the spec
 ## Coefficient block 41
 
 ```math
-(\omega_2,\omega_2,\check n_3,\check n_3).
+(\omega_2,\omega_2,\widetilde{n}_3,\widetilde{n}_3).
 ```
 
 ```text

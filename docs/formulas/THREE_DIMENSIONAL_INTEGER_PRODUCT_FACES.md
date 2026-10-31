@@ -14,9 +14,9 @@ entry is a polynomial in physical background faces. All arithmetic in the
 table is binary. Repeated factors are ordinary products of face values.
 There are no omitted coefficients.
 
-The bar and tilde have their usual meanings. The rare third digit is
-written explicitly as $`\overline{\lfloor n_1(ij)/4\rfloor}`$.
-The shifted background is $`\check\omega_2=\omega_2+s_1\cup s_1`$.
+The first two binary digits are $`[x]_2`$ and $`[\lfloor x/2\rfloor]_2`$. The rare third digit is
+written explicitly as $`[\lfloor n_1(ij)/4\rfloor]_2`$.
+The shifted background is $`\widetilde{\omega}_2=\omega_2+s_1\cup s_1`$.
 Non-root faces such as $`\omega_2(123)`$ are the actual physical face values;
 closedness of $`s_1`$ and $`\omega_2`$ ensures that this expression equals
 its expansion in the root faces on the same simplex.
@@ -29,7 +29,7 @@ multiplied before summing over rows. The two stacking inputs remain ordered.
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(01)
+[n_1]_2(01)[n'_1]_2(01)
 ```
 
 Background factor:
@@ -48,7 +48,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n'_1(01)
+[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(01)
 ```
 
 Background factor:
@@ -67,7 +67,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n_1(01)\bar n'_1(01)
+[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(01)
 ```
 
 Background factor:
@@ -81,7 +81,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(01)
+[n_1]_2(12)[n'_1]_2(01)
 ```
 
 Background factor:
@@ -95,7 +95,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n'_1(01)
+[n_1]_2(01)[n_1]_2(12)[n'_1]_2(01)
 ```
 
 Background factor:
@@ -110,10 +110,10 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(01)\bar n_1(12)\bar n'_1(01)\\
-+\bar n_1(01)\widetilde n_1(12)\bar n'_1(01)\\
-+\bar n_1(12)\widetilde n_1(12)\bar n'_1(01)\\
-+\bar n_1(01)\widetilde n_1(01)\bar n'_1(12)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n'_1]_2(01)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(01)\\
++[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(01)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)\end{gathered}
 ```
 
 Background factor:
@@ -127,33 +127,33 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(01)\\
-+\widetilde n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\\
-+\widetilde n_1(01)\widetilde n_1(23)\bar n'_1(12)\\
-+\bar n_1(23)\bar n'_1(01)\bar n'_1(12)\\
-+\bar n_1(01)\bar n_1(23)\bar n'_1(01)\bar n'_1(12)\\
-+\bar n_1(12)\bar n_1(23)\bar n'_1(01)\bar n'_1(12)\\
-+\bar n_1(01)\bar n_1(12)\bar n_1(23)\widetilde n'_1(12)\\
-+\bar n_1(01)\widetilde n_1(23)\widetilde n'_1(12)\\
-+\bar n_1(01)\bar n_1(23)\bar n'_1(12)\widetilde n'_1(12)\\
-+\widetilde n_1(01)\widetilde n_1(12)\bar n'_1(23)\\
-+\widetilde n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(23)\\
-+\bar n_1(01)\bar n_1(12)\widetilde n_1(23)\bar n'_1(23)\\
-+\bar n_1(12)\bar n'_1(01)\bar n'_1(23)\\
-+\bar n_1(12)\bar n_1(23)\bar n'_1(01)\bar n'_1(23)\\
-+\bar n_1(01)\widetilde n_1(01)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\widetilde n_1(12)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\widetilde n_1(23)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\bar n'_1(01)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(23)\bar n'_1(01)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\bar n_1(12)\widetilde n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\bar n_1(23)\widetilde n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\bar n_1(12)\widetilde n'_1(23)\\
-+\widetilde n_1(01)\bar n_1(12)\widetilde n'_1(23)\\
-+\bar n_1(01)\bar n_1(12)\bar n_1(23)\widetilde n'_1(23)\\
-+\widetilde n_1(01)\bar n'_1(12)\widetilde n'_1(23)\\
-+\bar n_1(01)\bar n_1(12)\bar n'_1(12)\widetilde n'_1(23)\\
-+\bar n_1(01)\bar n_1(23)\bar n'_1(12)\widetilde n'_1(23)\end{gathered}
+\begin{gathered}[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(01)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(01)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(12)\\
++[n_1]_2(23)[n'_1]_2(01)[n'_1]_2(12)\\
++[n_1]_2(01)[n_1]_2(23)[n'_1]_2(01)[n'_1]_2(12)\\
++[n_1]_2(12)[n_1]_2(23)[n'_1]_2(01)[n'_1]_2(12)\\
++[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(12)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(23)[\lfloor n'_1/2\rfloor]_2(12)\\
++[n_1]_2(01)[n_1]_2(23)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(23)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(23)\\
++[n_1]_2(01)[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(23)\\
++[n_1]_2(12)[n'_1]_2(01)[n'_1]_2(23)\\
++[n_1]_2(12)[n_1]_2(23)[n'_1]_2(01)[n'_1]_2(23)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[n'_1]_2(01)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(23)[n'_1]_2(01)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)\\
++[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(01)[n_1]_2(12)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(01)[n_1]_2(23)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)\end{gathered}
 ```
 
 Background factor:
@@ -167,7 +167,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n'_1(01)
+[n_1]_2(01)[\lfloor n'_1/2\rfloor]_2(01)
 ```
 
 Background factor:
@@ -187,8 +187,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(01)\widetilde n'_1(01)\\
-+\bar n_1(01)\bar n'_1(01)\widetilde n'_1(01)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(01)[\lfloor n'_1/2\rfloor]_2(01)\\
++[n_1]_2(01)[n'_1]_2(01)[\lfloor n'_1/2\rfloor]_2(01)\end{gathered}
 ```
 
 Background factor:
@@ -206,8 +206,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(12)\widetilde n'_1(01)\\
-+\bar n_1(01)\bar n_1(12)\widetilde n'_1(12)\end{gathered}
+\begin{gathered}[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(01)\\
++[n_1]_2(01)[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(12)\end{gathered}
 ```
 
 Background factor:
@@ -221,16 +221,16 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(12)\widetilde n'_1(01)\\
-+\widetilde n_1(01)\widetilde n_1(12)\bar n'_1(12)\\
-+\widetilde n_1(01)\bar n'_1(01)\bar n'_1(12)\\
-+\widetilde n_1(12)\bar n'_1(01)\bar n'_1(12)\\
-+\bar n_1(12)\widetilde n'_1(01)\bar n'_1(12)\\
-+\widetilde n_1(01)\widetilde n'_1(12)\\
-+\bar n_1(01)\widetilde n_1(01)\widetilde n'_1(12)\\
-+\bar n_1(01)\widetilde n_1(12)\widetilde n'_1(12)\\
-+\widetilde n_1(01)\bar n'_1(12)\widetilde n'_1(12)\\
-+\bar n_1(01)\bar n_1(12)\bar n'_1(12)\widetilde n'_1(12)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(12)[\lfloor n'_1/2\rfloor]_2(01)\\
++[\lfloor n_1/2\rfloor]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(01)[n'_1]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(01)[n'_1]_2(12)\\
++[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(01)[n'_1]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(01)[\lfloor n'_1/2\rfloor]_2(12)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[\lfloor n'_1/2\rfloor]_2(12)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(12)[\lfloor n'_1/2\rfloor]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(12)\\
++[n_1]_2(01)[n_1]_2(12)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(12)\end{gathered}
 ```
 
 Background factor:
@@ -244,7 +244,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(12)
+[n_1]_2(01)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -264,7 +264,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n'_1(12)
+[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -280,7 +280,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(12)
+[n_1]_2(12)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -303,7 +303,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n'_1(12)
+[n_1]_2(01)[n_1]_2(12)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -318,8 +318,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(01)\bar n_1(12)\bar n'_1(12)\\
-+\bar n_1(01)\widetilde n_1(12)\bar n'_1(12)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n'_1]_2(12)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(12)\end{gathered}
 ```
 
 Background factor:
@@ -333,7 +333,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\bar n'_1(12)
+[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -360,7 +360,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n_1(12)\bar n'_1(12)
+[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -376,7 +376,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n'_1(12)
+[n_1]_2(23)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -391,7 +391,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(23)\bar n'_1(12)
+[n_1]_2(01)[n_1]_2(23)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -405,8 +405,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(01)\bar n_1(23)\bar n'_1(12)\\
-+\bar n_1(01)\bar n_1(12)\bar n'_1(12)\bar n'_1(23)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(23)[n'_1]_2(12)\\
++[n_1]_2(01)[n_1]_2(12)[n'_1]_2(12)[n'_1]_2(23)\end{gathered}
 ```
 
 Background factor:
@@ -420,7 +420,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n'_1(12)
+[n_1]_2(12)[n_1]_2(23)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -437,13 +437,13 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\\
-+\bar n_1(12)\bar n_1(23)\widetilde n'_1(12)\\
-+\widetilde n_1(12)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\bar n_1(23)\bar n'_1(12)\bar n'_1(23)\\
-+\widetilde n_1(23)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(23)\widetilde n'_1(12)\bar n'_1(23)\\
-+\bar n_1(12)\bar n'_1(12)\widetilde n'_1(23)\end{gathered}
+\begin{gathered}[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(12)\\
++[n_1]_2(12)[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[n_1]_2(23)[n'_1]_2(12)[n'_1]_2(23)\\
++[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(12)[n'_1]_2(23)\\
++[n_1]_2(12)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)\end{gathered}
 ```
 
 Background factor:
@@ -457,10 +457,10 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(12)\bar n_1(23)\bar n'_1(12)\\
-+\bar n_1(23)\widetilde n_1(23)\bar n'_1(12)\\
-+\widetilde n_1(12)\bar n_1(23)\bar n'_1(23)\\
-+\bar n_1(12)\widetilde n_1(23)\bar n'_1(23)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[n'_1]_2(12)\\
++[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[n'_1]_2(23)\\
++[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(23)\end{gathered}
 ```
 
 Background factor:
@@ -474,7 +474,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n_1(23)\bar n'_1(12)
+[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -488,7 +488,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n_1(23)\bar n'_1(12)
+[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -503,10 +503,10 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\\
-+\bar n_1(01)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\bar n_1(23)\bar n'_1(12)\bar n'_1(34)\\
-+\bar n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\bar n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(01)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(12)\\
++[n_1]_2(01)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[n_1]_2(23)[n'_1]_2(12)[n'_1]_2(34)\\
++[n_1]_2(01)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -520,23 +520,23 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\\
-+\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\\
-+\widetilde n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\widetilde n_1(01)\bar n_1(23)\bar n'_1(12)\bar n'_1(34)\\
-+\widetilde n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\bar n'_1(34)\\
-+\widetilde n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\bar n'_1(34)\\
-+\bar n_1(12)\widetilde n_1(12)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(01)\widetilde n_1(12)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\\
-+\widetilde n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(01)\widetilde n_1(01)\bar n_1(23)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
-+\widetilde n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(01)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(01)\widetilde n_1(01)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
-+\widetilde n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(12)\widetilde n_1(12)\widetilde n'_1(23)\bar n'_1(34)\\
-+\bar n_1(12)\widetilde n_1(23)\bar n'_1(34)\widetilde n'_1(34)\\
-+\bar n_1(12)\bar n_1(23)\overline{\left\lfloor n'_1(34)/4\right\rfloor}\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(12)\\
++[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(23)[n'_1]_2(12)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(12)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(34)\\
++[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(23)[n'_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(01)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)\\
++[n_1]_2(12)[n_1]_2(23)[\left\lfloor n'_1(34)/4\right\rfloor]_2\end{gathered}
 ```
 
 Background factor:
@@ -550,22 +550,22 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(12)\\
-+\widetilde n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\\
-+\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(12)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(23)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(12)\bar n_1(23)\bar n_1(34)\widetilde n'_1(23)\\
-+\bar n_1(12)\widetilde n_1(34)\widetilde n'_1(23)\\
-+\widetilde n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(34)\\
-+\bar n_1(23)\bar n'_1(12)\bar n'_1(34)\\
-+\bar n_1(23)\bar n_1(34)\bar n'_1(12)\bar n'_1(34)\\
-+\bar n_1(12)\widetilde n_1(23)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(12)\widetilde n_1(34)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(12)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)\\
-+\widetilde n_1(12)\bar n_1(23)\widetilde n'_1(34)\\
-+\bar n_1(12)\bar n_1(23)\bar n_1(34)\widetilde n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(12)\\
++[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(23)\\
++[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(12)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(23)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(34)[\lfloor n'_1/2\rfloor]_2(23)\\
++[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(34)\\
++[n_1]_2(23)[n'_1]_2(12)[n'_1]_2(34)\\
++[n_1]_2(23)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(34)\\
++[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(12)[n'_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\\
++[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -579,7 +579,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(01)\bar n'_1(12)
+[n_1]_2(12)[n'_1]_2(01)[n'_1]_2(12)
 ```
 
 Background factor:
@@ -593,7 +593,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n'_1(12)
+[n_1]_2(01)[\lfloor n'_1/2\rfloor]_2(12)
 ```
 
 Background factor:
@@ -607,7 +607,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n'_1(12)
+[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(12)
 ```
 
 Background factor:
@@ -633,7 +633,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\widetilde n'_1(12)
+[\lfloor n_1/2\rfloor]_2(12)[\lfloor n'_1/2\rfloor]_2(12)
 ```
 
 Background factor:
@@ -655,7 +655,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(23)\widetilde n'_1(12)
+[n_1]_2(01)[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(12)
 ```
 
 Background factor:
@@ -669,7 +669,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(12)\widetilde n'_1(12)
+[n_1]_2(01)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(12)
 ```
 
 Background factor:
@@ -685,7 +685,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(12)\widetilde n'_1(12)
+[n_1]_2(12)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(12)
 ```
 
 Background factor:
@@ -708,7 +708,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(23)
+[n_1]_2(01)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -731,7 +731,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n'_1(23)
+[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -751,7 +751,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n_1(01)\bar n'_1(23)
+[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -765,14 +765,14 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(23)
+[n_1]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
 
 ```math
 \begin{aligned}&\omega_2(034)s_1(01)\bigl(\omega_2(024)+s_1(02)\bigr)\\
-&+\omega_2(034)\check{\omega}_2(012)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
+&+\omega_2(034)\widetilde{\omega}_2(012)\bigl(\omega_2(024)+\omega_2(013)\bigr)\\
 &+\omega_2(134)\bigl(\omega_2(013)\omega_2(034)+(1+\omega_2(024))\omega_2(012)\bigr)\\
 &+\omega_2(134)s_1(01)\bigl(\omega_2(024)+\omega_2(012)\bigr)\\
 &+\omega_2(134)s_1(01)(1+s_1(02))\omega_2(024)\\
@@ -788,7 +788,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n'_1(23)
+[n_1]_2(01)[n_1]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -808,7 +808,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n_1(12)\bar n'_1(23)
+[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -822,7 +822,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\bar n'_1(23)
+[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -837,7 +837,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n_1(12)\bar n'_1(23)
+[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -851,7 +851,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n_1(12)\bar n'_1(23)
+[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -866,7 +866,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n'_1(23)
+[n_1]_2(23)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -878,9 +878,9 @@ Background factor:
 &+\omega_2(134)(1+\omega_2(014))\omega_2(024)\\
 &+\omega_2(134)(1+\omega_2(034))\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
 &+\omega_2(134)(1+\omega_2(034))s_1(01)s_1(02)\omega_2(014)\\
-&+\omega_2(134)(1+\check{\omega}_2(012))\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
-&+\omega_2(134)(1+\check{\omega}_2(012))s_1(01)s_1(02)\omega_2(034)\\
-&+\omega_2(134)(1+\check{\omega}_2(012))s_1(01)s_1(02)(1+\omega_2(024))\\
+&+\omega_2(134)(1+\widetilde{\omega}_2(012))\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\omega_2(134)(1+\widetilde{\omega}_2(012))s_1(01)s_1(02)\omega_2(034)\\
+&+\omega_2(134)(1+\widetilde{\omega}_2(012))s_1(01)s_1(02)(1+\omega_2(024))\\
 &+\omega_2(234)\omega_2(013)\bigl(\omega_2(024)+\omega_2(014)+s_1(01)\bigr)\\
 &+\omega_2(234)\omega_2(012)\\
 &+\omega_2(234)s_1(02)\omega_2(024)\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
@@ -895,7 +895,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(23)\bar n'_1(23)
+[n_1]_2(01)[n_1]_2(23)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -913,7 +913,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n'_1(23)
+[n_1]_2(12)[n_1]_2(23)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -934,7 +934,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(23)
+[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -948,7 +948,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(23)\bar n'_1(23)
+[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -984,7 +984,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\widetilde n_1(23)\bar n'_1(23)
+[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1000,16 +1000,16 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(34)\bar n'_1(23)
+[n_1]_2(34)[n'_1]_2(23)
 ```
 
 Background factor:
 
 ```math
 \begin{aligned}&s_1(01)s_1(23)s_1(03)\omega_2(014)\\
-&+\check{\omega}_2(012)\omega_2(024)\bigl(\omega_2(014)+s_1(02)s_1(03)\bigr)\\
-&+\check{\omega}_2(012)\omega_2(024)s_1(13)s_1(03)\omega_2(014)\\
-&+\check{\omega}_2(012)\omega_2(024)s_1(13)(1+s_1(02))\end{aligned}
+&+\widetilde{\omega}_2(012)\omega_2(024)\bigl(\omega_2(014)+s_1(02)s_1(03)\bigr)\\
+&+\widetilde{\omega}_2(012)\omega_2(024)s_1(13)s_1(03)\omega_2(014)\\
+&+\widetilde{\omega}_2(012)\omega_2(024)s_1(13)(1+s_1(02))\end{aligned}
 ```
 
 ## Row 53
@@ -1017,7 +1017,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(34)\bar n'_1(23)
+[n_1]_2(01)[n_1]_2(34)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1033,7 +1033,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(34)\bar n'_1(23)
+[n_1]_2(12)[n_1]_2(34)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1050,7 +1050,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(23)
+[n_1]_2(01)[n_1]_2(12)[n_1]_2(34)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1064,7 +1064,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\bar n_1(34)\bar n'_1(23)
+[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(34)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1078,16 +1078,16 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\widetilde n_1(12)\bar n_1(34)\bar n'_1(23)\\
-+\widetilde n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\\
-+\widetilde n_1(34)\widetilde n'_1(23)\\
-+\bar n_1(12)\bar n_1(23)\widetilde n_1(23)\bar n'_1(34)\\
-+\overline{\left\lfloor n_1(23)/4\right\rfloor}\bar n'_1(34)\\
-+\widetilde n_1(23)\widetilde n_1(34)\bar n'_1(34)\\
-+\bar n_1(01)\widetilde n_1(01)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\\
-+\widetilde n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(23)\widetilde n_1(23)\widetilde n'_1(34)\\
-+\bar n_1(23)\widetilde n_1(34)\widetilde n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(34)[n'_1]_2(23)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(23)\\
++[\lfloor n_1/2\rfloor]_2(34)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(12)[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[\left\lfloor n_1(23)/4\right\rfloor]_2[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(23)[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(34)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\\
++[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(34)[\lfloor n'_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1101,7 +1101,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n_1(34)\bar n'_1(23)
+[n_1]_2(23)[n_1]_2(34)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1120,8 +1120,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\\
-+\bar n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(01)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(23)\\
++[n_1]_2(01)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1136,7 +1136,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(23)
+[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1150,15 +1150,15 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(23)\bar n_1(34)\bar n'_1(23)\\
-+\bar n_1(34)\widetilde n_1(34)\bar n'_1(23)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(23)[n_1]_2(34)[n'_1]_2(23)\\
++[n_1]_2(34)[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(23)\end{gathered}
 ```
 
 Background factor:
 
 ```math
 \begin{aligned}&s_1(01)(1+s_1(02))\omega_2(014)\\
-&+\check{\omega}_2(012)\omega_2(024)\bigl(1+(1+s_1(01))\omega_2(014)\bigr)\end{aligned}
+&+\widetilde{\omega}_2(012)\omega_2(024)\bigl(1+(1+s_1(01))\omega_2(014)\bigr)\end{aligned}
 ```
 
 ## Row 62
@@ -1166,7 +1166,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n_1(34)\bar n'_1(23)
+[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1180,9 +1180,9 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(12)\widetilde n_1(34)\bar n'_1(23)\\
-+\bar n_1(12)\bar n_1(23)\widetilde n_1(34)\bar n'_1(34)\\
-+\bar n_1(12)\widetilde n_1(12)\bar n'_1(23)\bar n'_1(34)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(12)[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(23)\\
++[n_1]_2(12)[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(34)\\
++[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(23)[n'_1]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1196,15 +1196,15 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\widetilde n_1(34)\bar n'_1(23)
+[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(23)
 ```
 
 Background factor:
 
 ```math
 \begin{aligned}&s_1(01)\bigl(\omega_2(024)+s_1(02)\omega_2(014)\bigr)\\
-&+\check{\omega}_2(012)\bigl(\omega_2(024)+s_1(01)\bigr)\\
-&+\check{\omega}_2(012)\omega_2(014)(1+s_1(01))\omega_2(024)\end{aligned}
+&+\widetilde{\omega}_2(012)\bigl(\omega_2(024)+s_1(01)\bigr)\\
+&+\widetilde{\omega}_2(012)\omega_2(014)(1+s_1(01))\omega_2(024)\end{aligned}
 ```
 
 ## Row 65
@@ -1212,7 +1212,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(12)\bar n'_1(23)
+[n_1]_2(01)[n'_1]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1228,7 +1228,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n'_1(12)\bar n'_1(23)
+[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1242,7 +1242,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(12)\bar n'_1(23)
+[n_1]_2(12)[n'_1]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1256,7 +1256,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n'_1(12)\bar n'_1(23)
+[n_1]_2(23)[n'_1]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1271,7 +1271,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\bar n'_1(23)
+[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1285,8 +1285,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(12)\bar n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(01)[n_1]_2(12)[n_1]_2(34)[n'_1]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(12)[n'_1]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1300,7 +1300,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n'_1(12)\bar n'_1(23)
+[n_1]_2(01)[\lfloor n'_1/2\rfloor]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1315,7 +1315,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\widetilde n'_1(12)\bar n'_1(23)
+[\lfloor n_1/2\rfloor]_2(01)[\lfloor n'_1/2\rfloor]_2(12)[n'_1]_2(23)
 ```
 
 Background factor:
@@ -1329,9 +1329,9 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\bar n'_1(12)\widetilde n'_1(12)\bar n'_1(23)\\
-+\bar n_1(01)\widetilde n'_1(12)\widetilde n'_1(23)\\
-+\bar n_1(01)\bar n'_1(12)\bar n'_1(23)\widetilde n'_1(23)\end{gathered}
+\begin{gathered}[n_1]_2(01)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(12)[n'_1]_2(23)\\
++[n_1]_2(01)[\lfloor n'_1/2\rfloor]_2(12)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(01)[n'_1]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)\end{gathered}
 ```
 
 Background factor:
@@ -1345,7 +1345,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n'_1(23)
+[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -1361,7 +1361,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\widetilde n'_1(23)
+[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -1404,8 +1404,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(23)\widetilde n'_1(23)\\
-+\bar n_1(23)\bar n'_1(23)\widetilde n'_1(23)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(23)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(23)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)\end{gathered}
 ```
 
 Background factor:
@@ -1428,8 +1428,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(34)\widetilde n'_1(23)\\
-+\bar n_1(12)\widetilde n_1(12)\bar n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(34)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1443,7 +1443,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(34)\widetilde n'_1(23)
+[n_1]_2(12)[n_1]_2(34)[\lfloor n'_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -1457,8 +1457,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(23)\bar n_1(34)\widetilde n'_1(23)\\
-+\bar n_1(23)\bar n'_1(23)\widetilde n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(23)[n_1]_2(34)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(23)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1472,7 +1472,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(12)\widetilde n'_1(23)
+[n_1]_2(01)[n'_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -1487,7 +1487,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(23)\widetilde n'_1(23)
+[n_1]_2(01)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -1505,8 +1505,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(01)\bar n'_1(23)\widetilde n'_1(23)\\
-+\bar n_1(01)\bar n_1(23)\bar n'_1(23)\widetilde n'_1(23)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(01)[n_1]_2(23)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)\end{gathered}
 ```
 
 Background factor:
@@ -1525,7 +1525,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(23)\widetilde n'_1(23)
+[n_1]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -1544,7 +1544,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n'_1(23)\widetilde n'_1(23)
+[n_1]_2(01)[n_1]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -1552,8 +1552,8 @@ Background factor:
 ```math
 \begin{aligned}&\omega_2(024)+\omega_2(023)+s_1(12)\omega_2(014)(1+\omega_2(024))\\
 &+s_1(12)(1+\omega_2(023))\omega_2(013)\\
-&+\check{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)\bigr)\\
-&+\check{\omega}_2(012)s_1(12)\omega_2(013)\end{aligned}
+&+\widetilde{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+\omega_2(023)+\omega_2(014)\bigr)\\
+&+\widetilde{\omega}_2(012)s_1(12)\omega_2(013)\end{aligned}
 ```
 
 ## Row 85
@@ -1561,7 +1561,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\bar n'_1(23)\widetilde n'_1(23)
+[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -1576,7 +1576,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n'_1(23)\widetilde n'_1(23)
+[n_1]_2(12)[n_1]_2(23)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)
 ```
 
 Background factor:
@@ -1593,12 +1593,12 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\bar n_1(34)\bar n'_1(23)\widetilde n'_1(23)\\
-+\bar n_1(01)\bar n_1(23)\widetilde n'_1(23)\bar n'_1(34)\\
-+\bar n_1(01)\bar n_1(34)\widetilde n'_1(23)\bar n'_1(34)\\
-+\widetilde n_1(01)\bar n'_1(23)\widetilde n'_1(34)\\
-+\bar n_1(01)\bar n_1(23)\bar n'_1(23)\widetilde n'_1(34)\\
-+\bar n_1(01)\bar n_1(34)\bar n'_1(23)\widetilde n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(01)[n_1]_2(34)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(01)[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[n_1]_2(01)[n_1]_2(34)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\\
++[n_1]_2(01)[n_1]_2(23)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\\
++[n_1]_2(01)[n_1]_2(34)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1613,11 +1613,11 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(12)\bar n_1(34)\bar n'_1(23)\widetilde n'_1(23)\\
-+\bar n_1(12)\bar n_1(23)\widetilde n'_1(23)\bar n'_1(34)\\
-+\bar n_1(12)\bar n_1(34)\widetilde n'_1(23)\bar n'_1(34)\\
-+\bar n_1(12)\bar n_1(23)\bar n'_1(23)\widetilde n'_1(34)\\
-+\bar n_1(12)\bar n_1(34)\bar n'_1(23)\widetilde n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(12)[n_1]_2(34)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)\\
++[n_1]_2(12)[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[n_1]_2(12)[n_1]_2(34)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[n_1]_2(12)[n_1]_2(23)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\\
++[n_1]_2(12)[n_1]_2(34)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1632,7 +1632,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(34)
+[n_1]_2(01)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1648,13 +1648,13 @@ Background factor:
 &+s_1(01)\bigl(\omega_2(034)+s_1(02)\omega_2(024)\bigr)\\
 &+s_1(01)(1+s_1(03))\omega_2(014)\bigl(\omega_2(024)+s_1(02)\bigr)\\
 &+s_1(01)(1+s_1(03))\omega_2(134)(1+\omega_2(013))\\
-&+s_1(01)\check{\omega}_2(023)\bigl(\omega_2(013)+s_1(03)(1+\omega_2(013))\bigr)\\
-&+\check{\omega}_2(012)\omega_2(013)\\
-&+\check{\omega}_2(012)(1+\omega_2(024))\bigl(\omega_2(014)+s_1(01)s_1(02)\bigr)\\
-&+\check{\omega}_2(012)(1+s_1(13))(1+\omega_2(024))\\
-&+\check{\omega}_2(012)(1+s_1(13))(1+s_1(01))\omega_2(014)\\
-&+\check{\omega}_2(012)(1+s_1(13))(1+s_1(01))(1+\omega_2(013))\\
-&+\check{\omega}_2(012)\check{\omega}_2(023)\bigl(s_1(03)+(1+\check{\omega}_2(013))\bigr)\end{aligned}
+&+s_1(01)\widetilde{\omega}_2(023)\bigl(\omega_2(013)+s_1(03)(1+\omega_2(013))\bigr)\\
+&+\widetilde{\omega}_2(012)\omega_2(013)\\
+&+\widetilde{\omega}_2(012)(1+\omega_2(024))\bigl(\omega_2(014)+s_1(01)s_1(02)\bigr)\\
+&+\widetilde{\omega}_2(012)(1+s_1(13))(1+\omega_2(024))\\
+&+\widetilde{\omega}_2(012)(1+s_1(13))(1+s_1(01))\omega_2(014)\\
+&+\widetilde{\omega}_2(012)(1+s_1(13))(1+s_1(01))(1+\omega_2(013))\\
+&+\widetilde{\omega}_2(012)\widetilde{\omega}_2(023)\bigl(s_1(03)+(1+\widetilde{\omega}_2(013))\bigr)\end{aligned}
 ```
 
 ## Row 90
@@ -1662,7 +1662,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1692,8 +1692,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\widetilde n_1(01)\bar n'_1(34)\\
-+\bar n_1(01)\widetilde n_1(12)\bar n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(34)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -1707,7 +1707,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(34)
+[n_1]_2(12)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1725,7 +1725,7 @@ Background factor:
 &+\omega_2(134)\omega_2(013)(1+\omega_2(014))\\
 &+\omega_2(134)s_1(01)s_1(03)\omega_2(014)\\
 &+\omega_2(134)s_1(12)s_1(01)s_1(03)(1+\omega_2(024))\\
-&+\omega_2(134)\check{\omega}_2(012)\bigl(\omega_2(013)+(1+s_1(01))\bigr)\\
+&+\omega_2(134)\widetilde{\omega}_2(012)\bigl(\omega_2(013)+(1+s_1(01))\bigr)\\
 &+\omega_2(234)\omega_2(013)\bigl(\omega_2(024)+s_1(01)s_1(02)\bigr)\\
 &+\omega_2(234)\omega_2(012)\bigl(\omega_2(034)+s_1(01)\bigr)\\
 &+\omega_2(234)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)+\omega_2(013)\bigr)\\
@@ -1733,7 +1733,7 @@ Background factor:
 &+\omega_2(234)s_1(23)s_1(01)s_1(02)\omega_2(034)\\
 &+\omega_2(234)s_1(23)s_1(01)s_1(02)\omega_2(024)\\
 &+\omega_2(234)s_1(23)\omega_2(013)s_1(12)\\
-&+\omega_2(234)s_1(23)\check{\omega}_2(012)s_1(12)\end{aligned}
+&+\omega_2(234)s_1(23)\widetilde{\omega}_2(012)s_1(12)\end{aligned}
 ```
 
 ## Row 93
@@ -1741,7 +1741,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(12)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1753,11 +1753,11 @@ Background factor:
 &+s_1(13)\omega_2(024)s_1(03)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
 &+s_1(13)\omega_2(024)s_1(02)\\
 &+\omega_2(134)s_1(23)s_1(03)\bigl(\omega_2(034)+\omega_2(013)\bigr)\\
-&+\omega_2(134)\check{\omega}_2(023)\\
+&+\omega_2(134)\widetilde{\omega}_2(023)\\
 &+\omega_2(134)\omega_2(234)\bigl(1+s_1(12)s_1(03)\bigr)\\
-&+\check{\omega}_2(123)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
-&+\check{\omega}_2(123)s_1(13)s_1(03)\bigl(\omega_2(023)+(1+\omega_2(013))\bigr)\\
-&+\check{\omega}_2(123)s_1(12)s_1(03)\bigl(\omega_2(024)+(1+\omega_2(014))\bigr)\end{aligned}
+&+\widetilde{\omega}_2(123)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
+&+\widetilde{\omega}_2(123)s_1(13)s_1(03)\bigl(\omega_2(023)+(1+\omega_2(013))\bigr)\\
+&+\widetilde{\omega}_2(123)s_1(12)s_1(03)\bigl(\omega_2(024)+(1+\omega_2(014))\bigr)\end{aligned}
 ```
 
 ## Row 94
@@ -1765,7 +1765,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n_1(12)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1779,7 +1779,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1803,7 +1803,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n'_1(34)
+[n_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1816,21 +1816,21 @@ Background factor:
 &+s_1(01)(1+\omega_2(012))s_1(02)\omega_2(013)\\
 &+s_1(01)s_1(03)\bigl(\omega_2(013)+\omega_2(012)\bigr)\\
 &+s_1(01)s_1(03)(1+\omega_2(014))\omega_2(034)\\
-&+\check{\omega}_2(023)\bigl(\omega_2(034)\bigl(\omega_2(014)+\omega_2(012)\bigr)+\omega_2(013)\bigr)\\
-&+\check{\omega}_2(023)s_1(01)(1+s_1(02))\omega_2(013)\\
-&+\check{\omega}_2(023)s_1(01)(1+\omega_2(134))\\
-&+\check{\omega}_2(023)s_1(23)\bigl(s_1(01)+(1+\omega_2(013))\omega_2(012)\bigr)\\
-&+\check{\omega}_2(023)s_1(23)s_1(12)\omega_2(013)\\
-&+\check{\omega}_2(023)s_1(23)s_1(12)s_1(01)\omega_2(013)\\
-&+\check{\omega}_2(023)s_1(23)s_1(12)s_1(01)\omega_2(012)\\
+&+\widetilde{\omega}_2(023)\bigl(\omega_2(034)\bigl(\omega_2(014)+\omega_2(012)\bigr)+\omega_2(013)\bigr)\\
+&+\widetilde{\omega}_2(023)s_1(01)(1+s_1(02))\omega_2(013)\\
+&+\widetilde{\omega}_2(023)s_1(01)(1+\omega_2(134))\\
+&+\widetilde{\omega}_2(023)s_1(23)\bigl(s_1(01)+(1+\omega_2(013))\omega_2(012)\bigr)\\
+&+\widetilde{\omega}_2(023)s_1(23)s_1(12)\omega_2(013)\\
+&+\widetilde{\omega}_2(023)s_1(23)s_1(12)s_1(01)\omega_2(013)\\
+&+\widetilde{\omega}_2(023)s_1(23)s_1(12)s_1(01)\omega_2(012)\\
 &+\omega_2(124)\omega_2(013)\bigl(\omega_2(014)+s_1(13)s_1(01)\bigr)\\
-&+\omega_2(124)(1+\omega_2(034))\bigl(s_1(01)+(1+\check{\omega}_2(013))\bigr)\\
-&+\omega_2(124)(1+\check{\omega}_2(012))\omega_2(034)\\
-&+\omega_2(124)(1+\check{\omega}_2(012))(1+\omega_2(014))s_1(01)s_1(03)\\
-&+\omega_2(124)(1+\check{\omega}_2(012))s_1(02)\omega_2(014)\\
-&+\omega_2(124)(1+\check{\omega}_2(012))s_1(02)s_1(13)s_1(01)\\
-&+\omega_2(124)(1+\check{\omega}_2(012))(1+\omega_2(013))\\
-&+\omega_2(124)\check{\omega}_2(023)\bigl(\omega_2(014)+\omega_2(013)+s_1(01)\bigr)\end{aligned}
+&+\omega_2(124)(1+\omega_2(034))\bigl(s_1(01)+(1+\widetilde{\omega}_2(013))\bigr)\\
+&+\omega_2(124)(1+\widetilde{\omega}_2(012))\omega_2(034)\\
+&+\omega_2(124)(1+\widetilde{\omega}_2(012))(1+\omega_2(014))s_1(01)s_1(03)\\
+&+\omega_2(124)(1+\widetilde{\omega}_2(012))s_1(02)\omega_2(014)\\
+&+\omega_2(124)(1+\widetilde{\omega}_2(012))s_1(02)s_1(13)s_1(01)\\
+&+\omega_2(124)(1+\widetilde{\omega}_2(012))(1+\omega_2(013))\\
+&+\omega_2(124)\widetilde{\omega}_2(023)\bigl(\omega_2(014)+\omega_2(013)+s_1(01)\bigr)\end{aligned}
 ```
 
 ## Row 97
@@ -1838,7 +1838,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(23)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1853,10 +1853,10 @@ Background factor:
 &+(1+\omega_2(234))s_1(13)s_1(03)(1+\omega_2(013))\\
 &+(1+\omega_2(234))s_1(23)s_1(03)\omega_2(034)\\
 &+(1+\omega_2(234))s_1(23)s_1(03)(1+\omega_2(024))\\
-&+\check{\omega}_2(012)s_1(13)s_1(03)\omega_2(023)\\
-&+\check{\omega}_2(012)s_1(12)s_1(03)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
-&+\check{\omega}_2(012)s_1(12)(1+s_1(01))\\
-&+\check{\omega}_2(012)(1+\check{\omega}_2(013))\bigl(1+s_1(13)s_1(03)\bigr)\end{aligned}
+&+\widetilde{\omega}_2(012)s_1(13)s_1(03)\omega_2(023)\\
+&+\widetilde{\omega}_2(012)s_1(12)s_1(03)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\widetilde{\omega}_2(012)s_1(12)(1+s_1(01))\\
+&+\widetilde{\omega}_2(012)(1+\widetilde{\omega}_2(013))\bigl(1+s_1(13)s_1(03)\bigr)\end{aligned}
 ```
 
 ## Row 98
@@ -1864,7 +1864,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n_1(23)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1878,7 +1878,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n'_1(34)
+[n_1]_2(12)[n_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1898,8 +1898,8 @@ Background factor:
 &+s_1(23)(1+s_1(12))\omega_2(013)\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
 &+s_1(23)(1+s_1(12))s_1(01)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
 &+s_1(23)(1+s_1(12))s_1(01)\omega_2(013)\\
-&+s_1(23)\check{\omega}_2(012)s_1(01)\\
-&+s_1(23)\check{\omega}_2(012)(1+s_1(02))\bigl(\omega_2(024)+\omega_2(014)\bigr)\end{aligned}
+&+s_1(23)\widetilde{\omega}_2(012)s_1(01)\\
+&+s_1(23)\widetilde{\omega}_2(012)(1+s_1(02))\bigl(\omega_2(024)+\omega_2(014)\bigr)\end{aligned}
 ```
 
 ## Row 100
@@ -1907,13 +1907,13 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
 
 ```math
-\begin{aligned}&\omega_2(012)+s_1(13)\omega_2(024)+\check{\omega}_2(013)\\
+\begin{aligned}&\omega_2(012)+s_1(13)\omega_2(024)+\widetilde{\omega}_2(013)\\
 &+s_1(23)\bigl(\omega_2(034)+\omega_2(023)+s_1(13)+\omega_2(124)\bigr)\end{aligned}
 ```
 
@@ -1922,7 +1922,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\bar n_1(23)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1937,7 +1937,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n_1(12)\bar n_1(23)\bar n'_1(34)
+[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1951,7 +1951,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(23)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1959,10 +1959,10 @@ Background factor:
 ```math
 \begin{aligned}&s_1(12)\omega_2(014)+s_1(13)s_1(01)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
 &+\omega_2(234)s_1(01)(1+s_1(02))\\
-&+\check{\omega}_2(012)s_1(01)\bigl(\omega_2(013)+(1+\omega_2(024))s_1(02)\bigr)\\
-&+\check{\omega}_2(012)s_1(01)(1+\omega_2(014))\omega_2(024)\\
-&+\check{\omega}_2(012)s_1(23)\\
-&+\check{\omega}_2(012)\check{\omega}_2(023)\bigl((1+\omega_2(013))+s_1(13)s_1(03)\bigr)\end{aligned}
+&+\widetilde{\omega}_2(012)s_1(01)\bigl(\omega_2(013)+(1+\omega_2(024))s_1(02)\bigr)\\
+&+\widetilde{\omega}_2(012)s_1(01)(1+\omega_2(014))\omega_2(024)\\
+&+\widetilde{\omega}_2(012)s_1(23)\\
+&+\widetilde{\omega}_2(012)\widetilde{\omega}_2(023)\bigl((1+\omega_2(013))+s_1(13)s_1(03)\bigr)\end{aligned}
 ```
 
 ## Row 104
@@ -1970,7 +1970,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n_1(23)\bar n'_1(34)
+[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -1984,11 +1984,11 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(01)\widetilde n_1(23)\bar n'_1(34)\\
-+\bar n_1(01)\bar n_1(23)\widetilde n_1(23)\bar n'_1(34)\\
-+\widetilde n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(34)\\
-+\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(34)\\
-+\bar n_1(01)\widetilde n_1(23)\bar n_1(34)\bar n'_1(34)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(01)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[n_1]_2(01)[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(34)\\
++[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(34)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(23)[n_1]_2(34)[n'_1]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -2002,13 +2002,13 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n_1(23)\bar n'_1(34)
+[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
 
 ```math
-\begin{aligned}&\omega_2(012)+s_1(02)\omega_2(014)+(1+s_1(23))\check{\omega}_2(012)\end{aligned}
+\begin{aligned}&\omega_2(012)+s_1(02)\omega_2(014)+(1+s_1(23))\widetilde{\omega}_2(012)\end{aligned}
 ```
 
 ## Row 107
@@ -2016,7 +2016,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\widetilde n_1(23)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2030,8 +2030,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(12)\widetilde n_1(23)\bar n'_1(34)\\
-+\bar n_1(12)\widetilde n'_1(23)\widetilde n'_1(34)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(12)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -2045,7 +2045,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\widetilde n_1(23)\bar n'_1(34)
+[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2063,7 +2063,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(34)\bar n'_1(34)
+[n_1]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2091,13 +2091,13 @@ Background factor:
 &+(1+\omega_2(134))\omega_2(123)\omega_2(013)\\
 &+(1+\omega_2(134))s_1(03)\omega_2(014)s_1(02)\omega_2(023)\\
 &+(1+\omega_2(134))s_1(03)\omega_2(014)s_1(01)\omega_2(013)\\
-&+(1+\omega_2(134))s_1(03)\check{\omega}_2(012)\\
-&+(1+\omega_2(134))s_1(03)\check{\omega}_2(012)s_1(02)\omega_2(023)\\
+&+(1+\omega_2(134))s_1(03)\widetilde{\omega}_2(012)\\
+&+(1+\omega_2(134))s_1(03)\widetilde{\omega}_2(012)s_1(02)\omega_2(023)\\
 &+(1+\omega_2(134))\omega_2(124)\omega_2(014)\\
-&+(1+\omega_2(134))\omega_2(124)(1+\check{\omega}_2(023))\\
-&+(1+\omega_2(134))\omega_2(124)(1+\check{\omega}_2(023))s_1(02)s_1(03)\\
-&+(1+\omega_2(134))\omega_2(124)(1+\check{\omega}_2(123))(1+s_1(01))\\
-&+(1+\omega_2(134))\omega_2(124)(1+\check{\omega}_2(123))s_1(12)s_1(03)\end{aligned}
+&+(1+\omega_2(134))\omega_2(124)(1+\widetilde{\omega}_2(023))\\
+&+(1+\omega_2(134))\omega_2(124)(1+\widetilde{\omega}_2(023))s_1(02)s_1(03)\\
+&+(1+\omega_2(134))\omega_2(124)(1+\widetilde{\omega}_2(123))(1+s_1(01))\\
+&+(1+\omega_2(134))\omega_2(124)(1+\widetilde{\omega}_2(123))s_1(12)s_1(03)\end{aligned}
 ```
 
 ## Row 111
@@ -2105,7 +2105,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(34)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2128,7 +2128,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(34)\bar n'_1(34)
+[n_1]_2(12)[n_1]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2155,7 +2155,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(12)[n_1]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2169,7 +2169,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n_1(34)\bar n'_1(34)
+[n_1]_2(23)[n_1]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2202,7 +2202,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(23)\bar n_1(34)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2217,7 +2217,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(34)
+[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2232,14 +2232,14 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(23)\bar n_1(34)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(23)[n_1]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
 
 ```math
 \begin{aligned}&s_1(01)(1+s_1(02))\bigl(\omega_2(014)+s_1(03)\bigr)\\
-&+\check{\omega}_2(012)\omega_2(024)\bigl(1+(1+s_1(01))\omega_2(014)\bigr)\end{aligned}
+&+\widetilde{\omega}_2(012)\omega_2(024)\bigl(1+(1+s_1(01))\omega_2(014)\bigr)\end{aligned}
 ```
 
 ## Row 118
@@ -2247,7 +2247,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n_1(23)\bar n_1(34)\bar n'_1(34)
+[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(23)[n_1]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2261,7 +2261,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(34)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2299,10 +2299,10 @@ Background factor:
 &+(1+s_1(02))\omega_2(234)\omega_2(023)\bigl(\omega_2(012)+s_1(03)\bigr)\\
 &+(1+s_1(02))\omega_2(234)\omega_2(034)s_1(01)\\
 &+(1+s_1(02))\omega_2(234)\omega_2(034)(1+s_1(13))\omega_2(023)\\
-&+(1+s_1(02))\omega_2(234)(1+\check{\omega}_2(013))\omega_2(034)\\
-&+(1+s_1(02))\omega_2(234)(1+\check{\omega}_2(013))\omega_2(023)\\
-&+(1+s_1(02))\omega_2(234)(1+\check{\omega}_2(013))\omega_2(012)\\
-&+(1+s_1(02))\omega_2(234)(1+\check{\omega}_2(013))s_1(01)\\
+&+(1+s_1(02))\omega_2(234)(1+\widetilde{\omega}_2(013))\omega_2(034)\\
+&+(1+s_1(02))\omega_2(234)(1+\widetilde{\omega}_2(013))\omega_2(023)\\
+&+(1+s_1(02))\omega_2(234)(1+\widetilde{\omega}_2(013))\omega_2(012)\\
+&+(1+s_1(02))\omega_2(234)(1+\widetilde{\omega}_2(013))s_1(01)\\
 &+(1+s_1(02))\omega_2(234)(1+\omega_2(134))\omega_2(013)\\
 &+(1+s_1(02))\omega_2(234)(1+\omega_2(134))s_1(01)\\
 &+(1+s_1(02))\omega_2(234)(1+\omega_2(134))(1+\omega_2(034))\\
@@ -2317,15 +2317,15 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\widetilde n_1(34)\bar n'_1(34)
+[n_1]_2(23)[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
 
 ```math
 \begin{aligned}&s_1(01)(1+s_1(02))\bigl(\omega_2(014)+(1+s_1(03))\bigr)\\
-&+\check{\omega}_2(012)\omega_2(024)\bigl(1+(1+s_1(01))\omega_2(014)\bigr)\\
-&+\check{\omega}_2(012)\check{\omega}_2(023)\end{aligned}
+&+\widetilde{\omega}_2(012)\omega_2(024)\bigl(1+(1+s_1(01))\omega_2(014)\bigr)\\
+&+\widetilde{\omega}_2(012)\widetilde{\omega}_2(023)\end{aligned}
 ```
 
 ## Row 121
@@ -2333,7 +2333,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(34)\widetilde n_1(34)\bar n'_1(34)
+[n_1]_2(34)[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2351,7 +2351,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(01)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2369,7 +2369,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n'_1(23)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2386,13 +2386,13 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n_1(01)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
 
 ```math
-\begin{aligned}&\check{\omega}_2(012)s_1(12)\end{aligned}
+\begin{aligned}&\widetilde{\omega}_2(012)s_1(12)\end{aligned}
 ```
 
 ## Row 125
@@ -2400,7 +2400,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2421,7 +2421,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2439,7 +2439,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n_1(12)\bar n'_1(23)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2453,7 +2453,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\bar n'_1(23)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2468,11 +2468,11 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(01)\widetilde n_1(12)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(01)\bar n_1(12)\widetilde n_1(12)\bar n'_1(23)\bar n'_1(34)\\
-+\widetilde n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(01)\widetilde n_1(12)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(01)[n_1]_2(12)[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(23)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(01)[\lfloor n_1/2\rfloor]_2(12)[n_1]_2(23)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -2486,7 +2486,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(23)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2500,7 +2500,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(23)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2517,7 +2517,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(12)[n_1]_2(23)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2534,7 +2534,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n_1(23)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2548,9 +2548,9 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(23)\bar n'_1(23)\bar n'_1(34)\\
-+\widetilde n_1(34)\bar n'_1(23)\bar n'_1(34)\\
-+\bar n_1(34)\widetilde n'_1(23)\bar n'_1(34)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(23)[n'_1]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(34)[n'_1]_2(23)[n'_1]_2(34)\\
++[n_1]_2(34)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -2564,7 +2564,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2572,7 +2572,7 @@ Background factor:
 ```math
 \begin{aligned}&\omega_2(012)\omega_2(024)+s_1(12)s_1(01)(1+\omega_2(012))\\
 &+\omega_2(124)\bigl((1+\omega_2(024))+s_1(13)s_1(01)\bigr)\\
-&+\omega_2(124)\check{\omega}_2(012)\bigl(1+s_1(01)\omega_2(024)\bigr)\end{aligned}
+&+\omega_2(124)\widetilde{\omega}_2(012)\bigl(1+s_1(01)\omega_2(024)\bigr)\end{aligned}
 ```
 
 ## Row 136
@@ -2580,7 +2580,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2597,7 +2597,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(12)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2614,7 +2614,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(12)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2628,7 +2628,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n_1(12)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2642,7 +2642,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n_1(34)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(12)[n_1]_2(23)[n_1]_2(34)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2656,7 +2656,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)
+[n_1]_2(01)[n'_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2670,7 +2670,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\bar n'_1(12)\bar n'_1(23)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2684,7 +2684,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\widetilde n'_1(23)\bar n'_1(34)
+[n_1]_2(01)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2692,7 +2692,7 @@ Background factor:
 ```math
 \begin{aligned}&\omega_2(012)(1+\omega_2(014))\\
 &+s_1(12)s_1(01)\bigl(\omega_2(012)+s_1(03)\bigr)\\
-&+\omega_2(124)\bigl(s_1(03)+(1+s_1(01))\omega_2(014)+\check{\omega}_2(012)\bigr)\end{aligned}
+&+\omega_2(124)\bigl(s_1(03)+(1+s_1(01))\omega_2(014)+\widetilde{\omega}_2(012)\bigr)\end{aligned}
 ```
 
 ## Row 144
@@ -2700,7 +2700,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(01)\widetilde n'_1(23)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(01)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2715,7 +2715,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n'_1(23)\bar n'_1(34)
+[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2733,7 +2733,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\widetilde n'_1(23)\bar n'_1(34)
+[n_1]_2(01)[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2748,7 +2748,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\widetilde n'_1(23)\bar n'_1(34)
+[\lfloor n_1/2\rfloor]_2(12)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)
 ```
 
 Background factor:
@@ -2763,9 +2763,9 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\bar n'_1(23)\widetilde n'_1(23)\bar n'_1(34)\\
-+\bar n_1(01)\widetilde n'_1(23)\widetilde n'_1(34)\\
-+\bar n_1(01)\bar n'_1(23)\bar n'_1(34)\widetilde n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(01)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[n_1]_2(01)[\lfloor n'_1/2\rfloor]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\\
++[n_1]_2(01)[n'_1]_2(23)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -2779,8 +2779,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(12)\bar n'_1(23)\widetilde n'_1(23)\bar n'_1(34)\\
-+\bar n_1(12)\bar n'_1(23)\bar n'_1(34)\widetilde n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(23)[n'_1]_2(34)\\
++[n_1]_2(12)[n'_1]_2(23)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -2794,7 +2794,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\widetilde n'_1(34)
+[n_1]_2(12)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -2808,16 +2808,16 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\widetilde n'_1(34)
+[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
 
 ```math
 \begin{aligned}&\omega_2(012)\omega_2(024)+s_1(12)s_1(01)s_1(03)\\
-&+\check{\omega}_2(023)s_1(02)\omega_2(012)\\
+&+\widetilde{\omega}_2(023)s_1(02)\omega_2(012)\\
 &+\omega_2(124)\bigl(s_1(01)s_1(02)+(1+\omega_2(024))\bigr)\\
-&+\omega_2(124)\check{\omega}_2(012)\bigl(1+s_1(01)\omega_2(024)\bigr)\end{aligned}
+&+\omega_2(124)\widetilde{\omega}_2(012)\bigl(1+s_1(01)\omega_2(024)\bigr)\end{aligned}
 ```
 
 ## Row 152
@@ -2825,7 +2825,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\widetilde n'_1(34)
+[n_1]_2(12)[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -2839,10 +2839,10 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\bar n_1(01)\bar n_1(12)\bar n_1(23)\widetilde n'_1(34)\\
-+\widetilde n_1(01)\bar n_1(12)\bar n'_1(23)\widetilde n'_1(34)\\
-+\bar n_1(01)\bar n'_1(12)\bar n'_1(23)\widetilde n'_1(34)\\
-+\widetilde n_1(01)\bar n'_1(12)\bar n'_1(23)\widetilde n'_1(34)\end{gathered}
+\begin{gathered}[n_1]_2(01)[n_1]_2(12)[n_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(01)[n_1]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\\
++[n_1]_2(01)[n'_1]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\\
++[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -2856,13 +2856,13 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(23)\widetilde n'_1(34)
+[\lfloor n_1/2\rfloor]_2(23)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
 
 ```math
-\begin{aligned}&\check{\omega}_2(012)\check{\omega}_2(023)\end{aligned}
+\begin{aligned}&\widetilde{\omega}_2(012)\widetilde{\omega}_2(023)\end{aligned}
 ```
 
 ## Row 155
@@ -2870,14 +2870,14 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(34)\widetilde n'_1(34)
+[n_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
 
 ```math
 \begin{aligned}&s_1(01)(1+s_1(02))\bigl(\omega_2(034)+\omega_2(014)\bigr)\\
-&+\check{\omega}_2(012)\omega_2(023)\omega_2(034)+\omega_2(123)\omega_2(034)\\
+&+\widetilde{\omega}_2(012)\omega_2(023)\omega_2(034)+\omega_2(123)\omega_2(034)\\
 &+\omega_2(123)(1+s_1(01))\omega_2(034)\bigl(\omega_2(023)+\omega_2(012)\bigr)\\
 &+\omega_2(123)(1+s_1(01))\omega_2(014)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
 &+\omega_2(123)(1+s_1(01))\omega_2(014)\omega_2(012)\\
@@ -2906,8 +2906,8 @@ Background factor:
 &+\omega_2(234)(1+s_1(02))s_1(01)\bigl(\omega_2(023)+\omega_2(012)\bigr)\\
 &+\omega_2(234)(1+s_1(02))(1+\omega_2(034))s_1(03)\\
 &+\omega_2(234)(1+s_1(02))(1+\omega_2(034))s_1(13)\omega_2(023)\\
-&+\omega_2(234)(1+s_1(02))\check{\omega}_2(013)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
-&+\omega_2(234)(1+s_1(02))\check{\omega}_2(013)(1+\omega_2(012))\\
+&+\omega_2(234)(1+s_1(02))\widetilde{\omega}_2(013)\bigl(\omega_2(034)+\omega_2(023)\bigr)\\
+&+\omega_2(234)(1+s_1(02))\widetilde{\omega}_2(013)(1+\omega_2(012))\\
 &+\omega_2(234)(1+s_1(02))(1+\omega_2(134))\omega_2(034)\\
 &+\omega_2(234)(1+s_1(02))(1+\omega_2(134))\omega_2(013)\\
 &+\omega_2(234)(1+s_1(02))(1+\omega_2(134))(1+\omega_2(023))s_1(01)s_1(03)(1+\omega_2(034))\\
@@ -2920,7 +2920,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n_1(34)\widetilde n'_1(34)
+[n_1]_2(23)[n_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -2934,7 +2934,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(34)\widetilde n'_1(34)
+[\lfloor n_1/2\rfloor]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -2958,14 +2958,14 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(23)\widetilde n'_1(34)
+[n_1]_2(01)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
 
 ```math
 \begin{aligned}&\omega_2(012)\bigl((1+\omega_2(014))+s_1(12)s_1(01)\bigr)\\
-&+\omega_2(124)\bigl(s_1(02)+(1+s_1(01))\omega_2(014)+\check{\omega}_2(012)\bigr)\end{aligned}
+&+\omega_2(124)\bigl(s_1(02)+(1+s_1(01))\omega_2(014)+\widetilde{\omega}_2(012)\bigr)\end{aligned}
 ```
 
 ## Row 159
@@ -2973,7 +2973,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(23)\widetilde n'_1(34)
+[n_1]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -2990,14 +2990,14 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n'_1(23)\widetilde n'_1(34)
+[n_1]_2(01)[n_1]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
 
 ```math
 \begin{aligned}&(1+\omega_2(024))+s_1(12)\bigl(s_1(01)+(1+\omega_2(024))\omega_2(014)\bigr)\\
-&+\check{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+\omega_2(014)\bigr)\end{aligned}
+&+\widetilde{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+\omega_2(014)\bigr)\end{aligned}
 ```
 
 ## Row 161
@@ -3005,7 +3005,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\bar n'_1(23)\widetilde n'_1(34)
+[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(23)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3020,7 +3020,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n'_1(34)\widetilde n'_1(34)
+[n_1]_2(01)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3030,11 +3030,11 @@ Background factor:
 &+\omega_2(024)(1+s_1(02))\bigl(\omega_2(034)+s_1(13)\bigr)\\
 &+\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
 &+\omega_2(014)s_1(01)\bigl(\omega_2(034)+s_1(23)\bigr)\\
-&+\check{\omega}_2(013)\bigl(\omega_2(034)+(1+s_1(01))\omega_2(024)\bigr)\\
+&+\widetilde{\omega}_2(013)\bigl(\omega_2(034)+(1+s_1(01))\omega_2(024)\bigr)\\
 &+(1+\omega_2(124))\omega_2(024)\\
 &+(1+\omega_2(124))(1+s_1(01))\bigl(\omega_2(014)+\omega_2(013)\bigr)\\
-&+\check{\omega}_2(023)\bigl(\omega_2(034)+(1+s_1(02))\omega_2(024)\bigr)\\
-&+\check{\omega}_2(023)(1+s_1(01))\omega_2(013)+\check{\omega}_2(023)\check{\omega}_2(012)\end{aligned}
+&+\widetilde{\omega}_2(023)\bigl(\omega_2(034)+(1+s_1(02))\omega_2(024)\bigr)\\
+&+\widetilde{\omega}_2(023)(1+s_1(01))\omega_2(013)+\widetilde{\omega}_2(023)\widetilde{\omega}_2(012)\end{aligned}
 ```
 
 ## Row 163
@@ -3042,8 +3042,8 @@ Background factor:
 Integer factor:
 
 ```math
-\begin{gathered}\widetilde n_1(01)\bar n'_1(34)\widetilde n'_1(34)\\
-+\bar n_1(01)\bar n_1(34)\bar n'_1(34)\widetilde n'_1(34)\end{gathered}
+\begin{gathered}[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)\\
++[n_1]_2(01)[n_1]_2(34)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)\end{gathered}
 ```
 
 Background factor:
@@ -3052,11 +3052,11 @@ Background factor:
 \begin{aligned}&s_1(12)\omega_2(014)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
 &+s_1(23)(1+\omega_2(034))\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
 &+\omega_2(134)s_1(13)\bigl(\omega_2(034)+\omega_2(014)+s_1(03)\bigr)\\
-&+\check{\omega}_2(023)s_1(13)\omega_2(013)\\
-&+\check{\omega}_2(023)s_1(23)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
-&+\check{\omega}_2(012)s_1(13)\omega_2(013)\\
-&+\check{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
-&+\check{\omega}_2(012)\check{\omega}_2(023)s_1(13)\end{aligned}
+&+\widetilde{\omega}_2(023)s_1(13)\omega_2(013)\\
+&+\widetilde{\omega}_2(023)s_1(23)\bigl(\omega_2(034)+\omega_2(024)\bigr)\\
+&+\widetilde{\omega}_2(012)s_1(13)\omega_2(013)\\
+&+\widetilde{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+\omega_2(014)\bigr)\\
+&+\widetilde{\omega}_2(012)\widetilde{\omega}_2(023)s_1(13)\end{aligned}
 ```
 
 ## Row 164
@@ -3064,7 +3064,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n'_1(34)\widetilde n'_1(34)
+[n_1]_2(12)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3080,7 +3080,7 @@ Background factor:
 &+\omega_2(234)s_1(02)s_1(01)\bigl(\omega_2(024)+\omega_2(023)\bigr)\\
 &+\omega_2(234)(1+\omega_2(014))s_1(01)\\
 &+\omega_2(234)\omega_2(124)\bigl(s_1(01)s_1(03)+s_1(12)\bigr)\\
-&+\omega_2(234)\check{\omega}_2(123)s_1(01)s_1(03)\end{aligned}
+&+\omega_2(234)\widetilde{\omega}_2(123)s_1(01)s_1(03)\end{aligned}
 ```
 
 ## Row 165
@@ -3088,7 +3088,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(12)\bar n'_1(34)\widetilde n'_1(34)
+[n_1]_2(01)[n_1]_2(12)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3110,7 +3110,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(12)\bar n'_1(34)\widetilde n'_1(34)
+[\lfloor n_1/2\rfloor]_2(12)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3129,7 +3129,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n'_1(34)\widetilde n'_1(34)
+[n_1]_2(23)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3159,7 +3159,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(01)\bar n_1(23)\bar n'_1(34)\widetilde n'_1(34)
+[n_1]_2(01)[n_1]_2(23)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3181,7 +3181,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(23)\bar n'_1(34)\widetilde n'_1(34)
+[n_1]_2(12)[n_1]_2(23)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3202,7 +3202,7 @@ Background factor:
 Integer factor:
 
 ```math
-\widetilde n_1(23)\bar n'_1(34)\widetilde n'_1(34)
+[\lfloor n_1/2\rfloor]_2(23)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3210,7 +3210,7 @@ Background factor:
 ```math
 \begin{aligned}&s_1(01)s_1(02)\omega_2(124)\\
 &+(1+s_1(03))\bigl(s_1(02)\omega_2(014)+s_1(01)\omega_2(024)\bigr)\\
-&+(1+s_1(03))\check{\omega}_2(012)s_1(12)\end{aligned}
+&+(1+s_1(03))\widetilde{\omega}_2(012)s_1(12)\end{aligned}
 ```
 
 ## Row 171
@@ -3218,7 +3218,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(34)\bar n'_1(34)\widetilde n'_1(34)
+[n_1]_2(34)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3242,7 +3242,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(12)\bar n_1(34)\bar n'_1(34)\widetilde n'_1(34)
+[n_1]_2(12)[n_1]_2(34)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3262,7 +3262,7 @@ Background factor:
 Integer factor:
 
 ```math
-\bar n_1(23)\bar n_1(34)\bar n'_1(34)\widetilde n'_1(34)
+[n_1]_2(23)[n_1]_2(34)[n'_1]_2(34)[\lfloor n'_1/2\rfloor]_2(34)
 ```
 
 Background factor:
@@ -3275,7 +3275,7 @@ Background factor:
 &+s_1(01)(1+\omega_2(023))\bigl(\omega_2(034)+\omega_2(024)+\omega_2(013)\bigr)\\
 &+s_1(01)(1+s_1(02))s_1(03)\omega_2(023)\\
 &+s_1(01)(1+s_1(02))(1+\omega_2(013))\\
-&+\check{\omega}_2(012)s_1(01)\bigl(\omega_2(023)+(1+\omega_2(013))\bigr)\\
-&+\check{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+(1+\omega_2(014))\bigr)\\
-&+\check{\omega}_2(012)s_1(12)s_1(13)s_1(03)\end{aligned}
+&+\widetilde{\omega}_2(012)s_1(01)\bigl(\omega_2(023)+(1+\omega_2(013))\bigr)\\
+&+\widetilde{\omega}_2(012)s_1(12)\bigl(\omega_2(024)+(1+\omega_2(014))\bigr)\\
+&+\widetilde{\omega}_2(012)s_1(12)s_1(13)s_1(03)\end{aligned}
 ```

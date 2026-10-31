@@ -33,12 +33,12 @@ The reference is explicitly
 
 ```math
 \begin{aligned}
- \mathcal B_4(01234)={}&(\check n_3\cup_2\check n_3)(01234)\\
- &+s_1(02)\widetilde n_2(012)\bar n_2(234)\\
- &+s_1(01)(\bar n_2\cup_1\bar n_2)(1234)
-       [\bar n_2(124)+\bar n_2(234)]\\
- &+s_1(01)(\bar n_2\cup_1\bar n_2)(0134)\bar n_2(123)\\
- &+s_1(02)(\bar n_2\cup_1\bar n_2)(0124)\bar n_2(234)\mod2.
+ \mathcal B_4(01234)={}&(\widetilde{n}_3\cup_2\widetilde{n}_3)(01234)\\
+ &+s_1(02)[\lfloor n_2/2\rfloor]_2(012)[n_2]_2(234)\\
+ &+s_1(01)([n_2]_2\cup_1[n_2]_2)(1234)
+       [[n_2]_2(124)+[n_2]_2(234)]\\
+ &+s_1(01)([n_2]_2\cup_1[n_2]_2)(0134)[n_2]_2(123)\\
+ &+s_1(02)([n_2]_2\cup_1[n_2]_2)(0124)[n_2]_2(234)\mod2.
  \end{aligned}
 ```
 
@@ -65,24 +65,24 @@ $`\Delta\mathcal B_4`$ is the actual lower product:
 
 ```math
 N_2=n_2+n'_2,\qquad
-N_3=n_3+n'_3+\bar n_2\cup_1\bar n'_2
-             +s_1(\bar n_2\cup_2\bar n'_2).
+N_3=n_3+n'_3+[n_2]_2\cup_1[n'_2]_2
+             +s_1([n_2]_2\cup_2[n'_2]_2).
 ```
 
-Equivalently $`\check N_3=\check n_3+\check n'_3+\check{\mathcal E}_3`$,
-with $`\check{\mathcal E}_3=\bar n_2\cup_1\bar n'_2`$. The two-input
+Equivalently $`\widetilde{N}_3=\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal E}_3`$,
+with $`\widetilde{\mathcal E}_3=[n_2]_2\cup_1[n'_2]_2`$. The two-input
 three-cochain is
 
 ```math
 \begin{aligned}
 \mathcal B_3(0123)={}&
- \big[\check n_3\cup_3\check n'_3
- +\check{\mathcal E}_3\cup_3(\check n_3+\check n'_3)
- +\widetilde n_2\cup_1\widetilde n'_2\big](0123)\\
-&+\bar n_2(013)\widetilde n'_2(123)
- +(1+s_1(01))\widetilde n_2(013)\bar n'_2(123)\\
-&+s_1(01)\bar n_2(013)\bar n'_2(013)
-       [\bar n_2(123)+\bar n'_2(123)]\mod2.
+ \big[\widetilde{n}_3\cup_3\widetilde{n}'_3
+ +\widetilde{\mathcal E}_3\cup_3(\widetilde{n}_3+\widetilde{n}'_3)
+ +[\lfloor n_2/2\rfloor]_2\cup_1[\lfloor n'_2/2\rfloor]_2\big](0123)\\
+&+[n_2]_2(013)[\lfloor n'_2/2\rfloor]_2(123)
+ +(1+s_1(01))[\lfloor n_2/2\rfloor]_2(013)[n'_2]_2(123)\\
+&+s_1(01)[n_2]_2(013)[n'_2]_2(013)
+       [[n_2]_2(123)+[n'_2]_2(123)]\mod2.
 \end{aligned}
 ```
 

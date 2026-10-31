@@ -11,9 +11,9 @@ $`d(dx\cup_3y)=dx\cup_3dy+dx\cup_2y+y\cup_2dx`$.
 
 In the general 4+1D mixed quarter numerator, use this equality for the
 three pairs
-$`(x,y)=(\bar\lambda_3^\gamma,\bar\lambda_3^{\gamma\psi})`$,
-$`(\bar\lambda_3^\gamma,\bar\lambda_3^\psi)`$, and
-$`(\bar\lambda_3^{\gamma\psi},\bar\lambda_3^\psi)`$.
+$`(x,y)=([\lambda_3^\gamma]_2,[\lambda_3^{\gamma\psi}]_2)`$,
+$`([\lambda_3^\gamma]_2,[\lambda_3^\psi]_2)`$, and
+$`([\lambda_3^{\gamma\psi}]_2,[\lambda_3^\psi]_2)`$.
 Its last twelve terms become the following nine:
 
 {{equation:general-mixed-quarter-polarization--polarization-of-the-binary-majorana-stacking-carry--2}}

@@ -12,9 +12,9 @@ This page compares to the previous coordinate and proves the full phase transpor
 
 ```math
 \begin{aligned}
-\mathcal B_3[\check n_2]&=\check n_2\cup_1\check n_2,\\
-\check n_3&=n_3+\mathcal B_3[\check n_2],\\
-d\check n_3&=\mathcal{𝒪}_4+d\mathcal B_3.
+\mathcal B_3[\widetilde{n}_2]&=\widetilde{n}_2\cup_1\widetilde{n}_2,\\
+\widetilde{n}_3&=n_3+\mathcal B_3[\widetilde{n}_2],\\
+d\widetilde{n}_3&=\mathcal{𝒪}_4+d\mathcal B_3.
 \end{aligned}
 ```
 
@@ -31,25 +31,25 @@ The pure p+ip obstruction is unchanged.
 
 ```math
 \begin{aligned}
-\mathcal B_2(012)={}&\bar n_1(01)\widetilde n'_1(12)
- +\widetilde n_1(01)\bar n'_1(12)
- +\widetilde n_1(01)\widetilde n'_1(12)\\
-&+\check n_2(012)\check n'_2(012)
- +\bar n_1(01)\bar n'_1(12)[\check n_2(012)+\check n'_2(012)]\\
-&+s_1(01)\{\widetilde n_1(01)\bar n'_1(12)
- +\bar n_1(01)\bar n'_1(01)[\bar n_1(12)+\bar n'_1(12)]\}.
+\mathcal B_2(012)={}&[n_1]_2(01)[\lfloor n'_1/2\rfloor]_2(12)
+ +[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)
+ +[\lfloor n_1/2\rfloor]_2(01)[\lfloor n'_1/2\rfloor]_2(12)\\
+&+\widetilde{n}_2(012)\widetilde{n}'_2(012)
+ +[n_1]_2(01)[n'_1]_2(12)[\widetilde{n}_2(012)+\widetilde{n}'_2(012)]\\
+&+s_1(01)\{[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)
+ +[n_1]_2(01)[n'_1]_2(01)[[n_1]_2(12)+[n'_1]_2(12)]\}.
 \end{aligned}
 ```
 
 ```math
 \begin{aligned}
-\check{\mathcal{ℰ}}_3&=\mathcal{ℰ}_3+\Delta\mathcal B_3+d\mathcal B_2,\\
-\check N_3&=N_3+\mathcal B_3[\check N_2]
- =\check n_3+\check n'_3+\check{\mathcal{ℰ}}_3+d\mathcal B_2.
+\widetilde{\mathcal{ℰ}}_3&=\mathcal{ℰ}_3+\Delta\mathcal B_3+d\mathcal B_2,\\
+\widetilde{N}_3&=N_3+\mathcal B_3[\widetilde{N}_2]
+ =\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal{ℰ}}_3+d\mathcal B_2.
 \end{aligned}
 ```
 
-Thus the previous product, evaluated on the checked inputs, has output
+Thus the previous product, evaluated on the shifted inputs, has output
 `check N3+dB2`; the current product mapped into that coordinate has
 output `check N3`. The face conversion changes adjacent point occupations
 together. The lower source/product identity is exact, with the full
@@ -61,12 +61,12 @@ Majorana laws. Their original projector sequence is retained.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_5(n)&=\widehat{\mathcal{𝒪}}_{5,\mathrm{old}}(n_1,n_2,\check n_3),\\
+\widehat{\mathcal{𝒪}}_5(n)&=\widehat{\mathcal{𝒪}}_{5,\mathrm{old}}(n_1,n_2,\widetilde{n}_3),\\
 \widehat{\mathcal{ℰ}}_4(n,n')&=\widehat{\mathcal{ℰ}}_{4,\mathrm{old}}
- (n_1,n_2,\check n_3;n'_1,n'_2,\check n'_3)\\
+ (n_1,n_2,\widetilde{n}_3;n'_1,n'_2,\widetilde{n}'_3)\\
 &\quad+\frac12\left[\omega_2\mathcal B_2+\mathcal B_2^2
  +d\mathcal B_2\cup_1\mathcal B_2
- +(\check N_3+d\mathcal B_2)\cup_2d\mathcal B_2\right].
+ +(\widetilde{N}_3+d\mathcal B_2)\cup_2d\mathcal B_2\right].
 \end{aligned}
 ```
 
@@ -103,7 +103,7 @@ exchange homotopies; a source-only substitution would be incorrect.
 
 The diagonal of the new pure sheet term has two terms, because
 The nested cup $[a\cup_1(a^2)]a$ vanishes for a closed binary one-cochain $a$. Thus
-`N3=Sq1(check n2)+s1 check n2+tilde n1 (bar n1)^2+s1 tilde n1 bar n1`.
+$`N_3=\mathrm{Sq}^1\widetilde{n}_2+s_1\widetilde{n}_2+[\lfloor n_1/2\rfloor]_2[n_1]_2^2+s_1[\lfloor n_1/2\rfloor]_2[n_1]_2`$.
 For either finite-root branch, `n1=0` or `n1=s1`, one has
 `B2=check n2` and `B3[check N2]=0`. The previous output in every retained
 self-stacking coefficient formula is consequently `N3+d check n2`.

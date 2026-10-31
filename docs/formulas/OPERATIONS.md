@@ -43,31 +43,30 @@ of a product. These names distinguish carries from the reference
 cochains $`\mathcal B_q`$. The usual cochain space $`C^q`$ and physical
 operator or endpoint labels retain their standard meanings.
 
-$`\bar x`$ is pointwise reduction modulo two. A named binary cochain is
+$`[x]_2`$ is pointwise reduction modulo two. A named binary cochain is
 represented by its values $`0,1`$ whenever it occurs in integer arithmetic;
 no extra symbol is needed for this canonical representative. Operations
 are then performed in the indicated coefficient ring, with the signed
 differential and cups in integer expressions.
 
 In particular, an integer sum $`x+y`$ of binary inputs can have value two,
-whereas $`\overline{x+y}`$ has values zero or one. The latter means reduce
+whereas $`[x+y]_2`$ has values zero or one. The latter means reduce
 the **entire sum** first, then use its canonical representative. The same
 distinction applies to a differential or a higher cup: $`dx`$ and
 $`x\cup_i y`$ in integer arithmetic are not automatically reduced modulo
-two; $`\overline{dx}`$ and $`\overline{x\cup_i y}`$ are. A binary cochain
+two; $`[dx]_2`$ and $`[x\cup_i y]_2`$ are. A binary cochain
 defined by an earlier equation is evaluated in its own binary arithmetic
 before its named value is used in an integer expression.
 
 The half-valued binary brackets in the phase formulas are reduced modulo
 two before division by two. Quarter- and eighth-valued expressions instead
-use integer arithmetic and the explicit bars shown in them. This retains
+use integer arithmetic and the explicit reductions modulo two shown in them. This retains
 the distinction between an integer product of binary representatives and
 the binary value of an entire product.
 
-For an integer $`x`$, a tilde denotes its second binary digit:
-$`\widetilde x=\overline{\lfloor x/2\rfloor}`$.
-It always has this meaning; canonical integer lifts remain implicit as
-stated above. Floors are mathematical floors also for negative integers.
+For an integer $`x`$, the second binary digit is $`[\lfloor x/2\rfloor]_2`$.
+Floors are mathematical floors also for negative integers.
+A tilde is reserved for the explicitly defined changes of cochain variables.
 If a higher digit is needed, its floor and reduction are written explicitly.
 The Bockstein and second carry of a **closed** binary cochain are
 
@@ -77,7 +76,7 @@ The Bockstein and second carry of a **closed** binary cochain are
 
 ```math
 \beta x=\frac{dx}{2},\qquad
-\beta^+x=\frac{\beta x+\overline{\beta x}}2.
+\beta^+x=\frac{\beta x+[\beta x]_2}2.
 ```
 
 Both are integer cochains; the differential in (O2) is ordinary, not twisted.
@@ -88,11 +87,14 @@ For an open binary cochain use the separately named integer carry
 **(O3)**
 
 ```math
-\beta^\circ x=\frac{dx-\overline{dx}}2.
+\beta^- x=\frac{dx-[dx]_2}2.
 ```
 
+The minus sign records the subtraction of $`[dx]_2`$ before halving.
+It does not mean $`-\beta^+x`$; the two definitions apply to different integer numerators.
+
 The twisted lift carry is
-$`\beta_{s_1}\check\omega_2=d_{s_1}\check\omega_2/2`$; this integer
+$`\beta_{s_1}\widetilde{\omega}_2=d_{s_1}\widetilde{\omega}_2/2`$; this integer
 background carry has coefficient type $`\mathbb Z_{s_1}`$. Ordinary
 Majorana Bocksteins above have untwisted integer coefficients.
 Whenever a formula divides by $`2`$ or $`8`$, first form its **entire integer

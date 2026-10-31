@@ -11,15 +11,15 @@ Both use existing lower-layer operations with their original domains.
 For every binary degree-three cochain,
 
 ```math
-\overline{\beta^\circ\check n_3}
- =\mathrm{Sq}^1\check n_3,
+[\beta^-\widetilde{n}_3]_2
+ =\mathrm{Sq}^1\widetilde{n}_3,
 \qquad
-d\overline{\beta^\circ\check n_3}
- =\mathrm{Sq}^1(d\check n_3).
+d[\beta^-\widetilde{n}_3]_2
+ =\mathrm{Sq}^1(d\widetilde{n}_3).
 ```
 
 These are cochain identities, including the differential terms in the
-Steenrod square. They do not require $`d\check n_3=0`$.
+Steenrod square. They do not require $`d\widetilde{n}_3=0`$.
 Using these relations and the closed-background equations, the earlier
 218 MS terms in the self-stacking coefficient have the following exact
 pointwise replacement:
@@ -52,28 +52,28 @@ Majorana carry is fixed by the lower obstruction:
 
 ```math
 d\beta_4^\gamma
- =-\beta\big(\check{\mathcal{𝒪}}_4[n_2]\big),
-\qquad \beta_4^\gamma=\beta^\circ\check n_3.
+ =-\beta\big(\widetilde{\mathcal{𝒪}}_4[n_2]\big),
+\qquad \beta_4^\gamma=\beta^-\widetilde{n}_3.
 ```
 
 Here $`\beta`$ is the ordinary integer Bockstein of a closed binary
 cochain. Its input is closed because
-$`\check{\mathcal{𝒪}}_4[n_2]=d\check n_3`$ on this tower.
+$`\widetilde{\mathcal{𝒪}}_4[n_2]=d\widetilde{n}_3`$ on this tower.
 For an arbitrary binary cochain, the defining integer identity is
 
 ```math
-2\beta^\circ\check n_3
- =d\check n_3-\overline{d\check n_3},
+2\beta^-\widetilde{n}_3
+ =d\widetilde{n}_3-[d\widetilde{n}_3]_2,
 ```
 
-where the unbarred differential is taken over the integers on the
-canonical input values, and the whole bar gives its binary reduction
+where the differential outside $`[\cdot]_2`$ is taken over the integers on the
+canonical input values, and $`[\cdot]_2`$ gives its binary reduction
 before the integer subtraction. Applying $`d`$ and using $`d^2=0`$ proves the stated carry
 identity. Thus the quarter-valued self-stacking term can be written
 
 ```math
 \frac14d\beta_4^\gamma\cup_4\beta_4^\gamma
- =-\frac14\beta\big(\check{\mathcal{𝒪}}_4[n_2]\big)
+ =-\frac14\beta\big(\widetilde{\mathcal{𝒪}}_4[n_2]\big)
                  \cup_4\beta_4^\gamma.
 ```
 
@@ -87,7 +87,7 @@ tower, while its right-hand expression uses the stated physical equation.
 The integer carry was defined on arbitrary binary degree-three inputs by
 
 ```math
-\beta_4[n_2,x]=\beta^\circ x+\beta_4^\psi[n_2].
+\beta_4[n_2,x]=\beta^- x+\beta_4^\psi[n_2].
 ```
 
 Its zero-input specialization is therefore an exact integral identity:

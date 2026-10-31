@@ -11,7 +11,7 @@ The following notation is local to this proof. Write
 {{equation:four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--1}}
 
 Here $`A,A'`$ are binary differentials, canonically lifted in integer
-arithmetic. Thus $`d(\beta^\circ u)=-r`$, $`d(\beta^\circ v)=-r'`$, and $`dX=-(r+r')`$.
+arithmetic. Thus $`d(\beta^- u)=-r`$, $`d(\beta^- v)=-r'`$, and $`dX=-(r+r')`$.
 All higher cups below are signed integer cups.
 
 The old integer numerator before taking its second digit is
@@ -42,7 +42,7 @@ six, above the degree-five cochain $`F`$. Consequently no new output gauge,
 ordinary or twisted, remains in this reduction.
 
 For every integer $`P`$,
-$`\widetilde P/2=(P-\bar P)/4\pmod1`$. The preceding identity therefore
+$`[\lfloor P/2\rfloor]_2/2=(P-[P]_2)/4\pmod1`$. The preceding identity therefore
 gives
 
 {{equation:four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--5}}
@@ -54,7 +54,7 @@ identity is an identity of binary cochains. Its terms are explicit:
 
 {{equation:four-dimensional-majorana-carry-reduction--why-the-complete-majorana-carry-becomes-smaller--7}}
 
-Finally, $`-H_{\mathbb Z}\bar P`$ is exactly the four signed canonical
+Finally, $`-H_{\mathbb Z}[P]_2`$ is exactly the four signed canonical
 lifts in the [complete coefficient table](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md).
 Substituting $`L=-\lambda_3^\gamma`$ and $`J=-\lambda_4^\gamma`$ yields
 the revised physical formula. Whole binary lifts are retained throughout;

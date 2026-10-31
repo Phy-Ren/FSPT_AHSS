@@ -54,12 +54,12 @@ $`\Delta\mathcal B_4`$ is the actual lower product:
 
 ```math
 N_2=n_2+n'_2,\qquad
-N_3=n_3+n'_3+\bar n_2\cup_1\bar n'_2
-             +s_1(\bar n_2\cup_2\bar n'_2).
+N_3=n_3+n'_3+[n_2]_2\cup_1[n'_2]_2
+             +s_1([n_2]_2\cup_2[n'_2]_2).
 ```
 
-Equivalently $`\check N_3=\check n_3+\check n'_3+\check{\mathcal E}_3`$,
-with $`\check{\mathcal E}_3=\bar n_2\cup_1\bar n'_2`$. The two-input
+Equivalently $`\widetilde{N}_3=\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal E}_3`$,
+with $`\widetilde{\mathcal E}_3=[n_2]_2\cup_1[n'_2]_2`$. The two-input
 three-cochain is
 
 {{equation:four-dimensional-geometric-reference--pair--2}}

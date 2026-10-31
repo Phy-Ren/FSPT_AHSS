@@ -1,11 +1,10 @@
 # Finite binary transfer in the 4+1D product
 
 This appendix retains the construction of the binary five-cochain $`Z_5`$ in the supplied 4+1D product. Its complete physical-face expansion and three physical parts are now given in the [coefficient appendix](FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md). The [current full stacking formula](FOUR_DIMENSIONAL.md#eq-t4c) also applies the paired complex-fermion phase map stated in [Representatives](REPRESENTATIVES.md#operator-phase-4d). The inputs are
-$`(n_2,\check n_3)`$ and $`(n'_2,\check n'_3)`$, with common backgrounds
-$`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,\check
-N_3`$ are the output. Bars, tildes, and checks have the same meanings as in the guide. In integer
+$`(n_2,\widetilde{n}_3)`$ and $`(n'_2,\widetilde{n}'_3)`$, with common backgrounds
+$`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,\widetilde{N}_3`$ are the output. Binary reductions and tildes have the same meanings as in the guide. In integer
 arithmetic each binary field supplies its canonical value $`0,1`$; a whole
-composite binary expression is reduced first whenever a bar surrounds it.
+composite binary expression is reduced first whenever it is enclosed in $`[\cdot]_2`$.
 
 The full formula comes first; its kernel, coordinates, and coefficients
 are then defined explicitly:
@@ -19,11 +18,11 @@ are then defined explicitly:
 | $`Z_5`$ | Binary degree-five finite transfer | (K12) |
 
 The lower correction $`\mathcal{ℰ}_4`$, its shifted predecessor
-$`\check{\mathcal{ℰ}}_3=\bar n_2\cup_1\bar n'_2`$, the carry $`\beta_4`$,
+$`\widetilde{\mathcal{ℰ}}_3=[n_2]_2\cup_1[n'_2]_2`$, the carry $`\beta_4`$,
 $`\lambda_3`$, and $`\Delta \beta_4=d\lambda_3-n'_2n_2`$ are already defined in
 the guide. For any one-input expression the signed difference is
-$`\Delta X=X[N_2,\check N_3]-X[n_2,\check n_3]-X[n'_2,\check n'_3]`$.
-As elsewhere, $`\beta'_4=\beta_4[n'_2,\check n'_3]`$ and an unlabelled $`\beta_4`$ refers
+$`\Delta X=X[N_2,\widetilde{N}_3]-X[n_2,\widetilde{n}_3]-X[n'_2,\widetilde{n}'_3]`$.
+As elsewhere, $`\beta'_4=\beta_4[n'_2,\widetilde{n}'_3]`$ and an unlabelled $`\beta_4`$ refers
 to the first input. All products remain ordered.
 
 <a id="transfer"></a>
@@ -51,8 +50,8 @@ Let $`\mathsf h^{(3)}`$ denote the three-factor grid homotopy, whose component
 in degree $`D`$ is $`\mathsf h_D^{(3)}`$ from (O11). Order its factors as
 $`(\text{common background},\text{first input},\text{second input})`$.
 For grid vertices $`(r_i,t_i,v_i)`$, pull both $`s_1,\omega_2`$ along $`r`$,
-the complete graded pair $`(n_2^{\rm gr},\check n_3^{\rm gr})`$ along $`t`$,
-and $`(n_2^{{\rm gr}\prime},\check n_3^{{\rm gr}\prime})`$ along $`v`$.
+the complete graded pair $`(n_2^{\rm gr},\widetilde{n}_3^{\rm gr})`$ along $`t`$,
+and $`(n_2^{{\rm gr}\prime},\widetilde{n}_3^{{\rm gr}\prime})`$ along $`v`$.
 After pulling back, decode (K4) before evaluating $`\rho_6`$.
 
 ## The binary kernel
@@ -62,7 +61,7 @@ single-input and even-integer pieces. All terms before the final braces are bina
 acts on the entire following binary bracket. The final braces form one
 integer numerator; it is pointwise even, and is divided by two before the
 final reduction modulo two. The binary source values
-$`\mathcal{𝒪}_5[n_2,\check n_3]`$ are the complex-fermion obstruction of the
+$`\mathcal{𝒪}_5[n_2,\widetilde{n}_3]`$ are the complex-fermion obstruction of the
 guide, not additional input fields.
 
 <a id="eq-k1"></a>
@@ -80,11 +79,11 @@ exhibits the differential and ordinary-cup corrections before any lift is
 expanded. This rewriting leaves the kernel and its coefficient tables unchanged.
 
 Every derivative differentiates a specified expression. In the binary
-part, $`d\overline{\beta_4}=\overline{\beta_{s_1}\check\omega_2}\bar n_2`$ and
-$`d\check{\mathcal{ℰ}}_3=\bar n_2\bar n'_2+\bar n'_2\bar n_2`$.
+part, $`d[\beta_4]_2=[\beta_{s_1}\widetilde{\omega}_2]_2[n_2]_2`$ and
+$`d\widetilde{\mathcal{ℰ}}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 Inside the final integer braces, $`d_{s_1}V_5`$ differentiates the
 canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
-inputs, including $`\beta_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The bar on
+inputs, including $`\beta_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The reduction modulo two of
 the polynomial following the minus sign is taken **before** its signed
 stacking difference. The free complex-fermion solutions $`n_4,n'_4`$ do not
 enter this kernel.
@@ -146,9 +145,9 @@ every simplex in (K12).
 
 ### Background-degree-one contribution
 
-The background-degree-one contribution $`L^s_5`$ uses $`\bar x`$ and
-$`\widetilde x`$. Where the third binary digit is needed, it is written
-explicitly as $`\overline{\lfloor x/4\rfloor}`$:
+The background-degree-one contribution $`L^s_5`$ uses $`[x]_2`$ and
+$`[\lfloor x/2\rfloor]_2`$. Where the third binary digit is needed, it is written
+explicitly as $`[\lfloor x/4\rfloor]_2`$:
 
 <a id="eq-k6"></a>
 
@@ -177,15 +176,15 @@ The ordered-cup polynomial is
 
 Its tetrahedral polynomials are defined on one input at a time.
 
-For one zero-background input $`(n_2,\check n_3)`$ on $`0123`$, define three
+For one zero-background input $`(n_2,\widetilde{n}_3)`$ on $`0123`$, define three
 local integer face coordinates:
 
 {{equation:terminal-transfer--background-degree-zero-contribution--10}}
 
 The indices after the semicolon specify the face or difference of faces.
-Applying the same bar and tilde rules gives all bits needed below.
+Taking $`[x]_2`$ and $`[\lfloor x/2\rfloor]_2`$ gives all bits needed below.
 Products in (K8) are ordinary products of bits on this tetrahedron, and
-$`\check n_3(0123)`$ is the binary Majorana value on the same face:
+$`\widetilde{n}_3(0123)`$ is the binary Majorana value on the same face:
 
 <a id="eq-k8"></a>
 
@@ -194,15 +193,15 @@ $`\check n_3(0123)`$ is the binary Majorana value on the same face:
 {{equation:terminal-transfer--background-degree-zero-contribution--11}}
 
 Rows referenced on the right use the same input and face. In particular,
-$`\widetilde n_{2;013-012}`$ is the second bit of the integer
+$`[\lfloor n_{2;013-012}/2\rfloor]_2`$ is the second bit of the integer
 difference; it is not the sum of the second bits of $`n_2(013)`$ and
 $`n_2(012)`$.
 
 ### The balanced integer carry
 
 Only in this subsection set $`\omega_2=s_1=0`$, so
-$`dn_2=dn'_2=0`$, $`d\check n_3=\bar n_2^2`$, and
-$`d\check n'_3=(\bar n'_2)^2`$. Evaluate the guide's
+$`dn_2=dn'_2=0`$, $`d\widetilde{n}_3=[n_2]_2^2`$, and
+$`d\widetilde{n}'_3=([n'_2]_2)^2`$. Evaluate the guide's
 $`\beta_4,\beta'_4,\Delta \beta_4,\lambda_3`$ at these backgrounds. Form
 
 <a id="eq-k10"></a>
@@ -218,7 +217,7 @@ polynomial
 
 $`V_{5,0}`$ is the binary polynomial (T4b) at
 $`\omega_2=s_1=0`$, supplying its canonical value $`0,1`$ to the integer
-numerator. The same rule applies to each barred expression. In particular,
+numerator. The same rule applies to each expression enclosed in $`[\cdot]_2`$. In particular,
 $`d`$ in the fourth line is the **integer** differential after reduction
 of the expression it acts on. The stacking differences are also taken over
 the integers. Assemble the complete numerator, which is pointwise even,

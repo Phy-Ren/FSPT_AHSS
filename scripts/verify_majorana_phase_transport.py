@@ -19,7 +19,7 @@ pure=[];oldmixed=[]
 for block in text.split('## Coefficient block ')[1:]:
     args=re.search(r'```math\n\((.*?)\)\.\n```',block,re.S).group(1).split(',')
     ws=re.search(r'```text\n(.*?)\n```',block,re.S).group(1).split()
-    (oldmixed if r'd\check n_3' in args else pure).extend((w,args)for w in ws)
+    (oldmixed if r'd\widetilde{n}_3' in args else pure).extend((w,args)for w in ws)
 assert len(pure)==85 and len(oldmixed)==1005
 coefficient_path=PUBLIC/'docs/formulas/data/four_dimensional_majorana_relative_words.json'
 rows=json.loads(coefficient_path.read_text())['terms']
@@ -28,7 +28,7 @@ assert len(rows)==1897
 # lossless machine copy. Compare multiplicities as well as ordered inputs.
 relative_text=(PUBLIC/'docs/formulas/source/pages/FOUR_DIMENSIONAL_MAJORANA_RELATIVE_WORD_COEFFICIENTS.md').read_text()
 relative_blocks=relative_text.split('## Coefficient block ')[1:]
-input_names={r'\check n_3':'u',r'd\check n_3':'A',r'\omega_2':'w',r's_1':'s'}
+input_names={r'\widetilde{n}_3':'u',r'd\widetilde{n}_3':'A',r'\omega_2':'w',r's_1':'s'}
 reader_rows=[]
 for block in relative_blocks:
     args=re.search(r'```math\n\((.*?)\)\.\n```',block,re.S).group(1).split(',')
@@ -66,7 +66,7 @@ def J(u,w,s):
     return H.lift().scaled(2)+cup(w.lift(),B)+cup(B,B,2)
 
 def Gamma(u,w,s):
-    B=beta_open(u);b=B.reduce(2);fields={r'\check n_3':u,r'\omega_2':w,r's_1':s}
+    B=beta_open(u);b=B.reduce(2);fields={r'\widetilde{n}_3':u,r'\omega_2':w,r's_1':s}
     T=sum((op(word,*(fields[a]for a in args))for word,args in pure),C(6))
     ell=beta_open(w).reduce(2)+cup(s,w)
     H=T+cup(cup(s,s),(B-b.lift()).div(2).reduce(2))+cup(u,ell)
@@ -80,7 +80,7 @@ def balanced(items):
 
 def residual(U,W,S):
     A=U.d();B=beta_open(U)
-    f={r'\check n_3':U,r'd\check n_3':A,r'\omega_2':W,r's_1':S}
+    f={r'\widetilde{n}_3':U,r'd\widetilde{n}_3':A,r'\omega_2':W,r's_1':S}
     mixed=balanced(op(word,*(f[a]for a in args))for word,args in oldmixed)
     nf={'u':U,'A':A,'w':W,'s':S}
     K=balanced(op(row['word'],*(nf[a]for a in row['inputs']))for row in rows)

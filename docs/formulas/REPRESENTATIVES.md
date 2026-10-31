@@ -6,7 +6,7 @@ All changes here act on the source and stacking correction together.
 
 ## 3+1D: physical terminal formulas
 
-The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), including its lower-field map, inverse, and finite output-face phase. The earlier [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) is a retained construction step evaluated on the checked complex-fermion inputs. Both conversions are required; the current lower product is the compact geometric formula.
+The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), including its lower-field map, inverse, and finite output-face phase. The earlier [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) is a retained construction step evaluated on the shifted complex-fermion inputs. Both conversions are required; the current lower product is the compact geometric formula.
 
 ## 3+1D: earlier complex-fermion coordinate
 
@@ -17,8 +17,8 @@ The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOM
 **(T3D)**
 
 ```math
-{n_3^{\mathrm{old}}}={n_{3}}+\mathcal B_3^{\mathrm{ref}}({n_{1}},{\check n_{2}}),\qquad
-\mathcal B_3^{\mathrm{ref}}=({\bar n_{1}}+{s_1}){\check n_{2}}+{\check\omega_2}{\widetilde n_{1}}+[{\check\omega_2}\cup_1({\bar n_{1}}+{s_1})]{\bar n_{1}}.
+{n_3^{\mathrm{old}}}={n_{3}}+\mathcal B_3^{\mathrm{ref}}({n_{1}},{\widetilde{n}_{2}}),\qquad
+\mathcal B_3^{\mathrm{ref}}=({[n_{1}]_2}+{s_1}){\widetilde{n}_{2}}+{\widetilde{\omega}_2}{[\lfloor n_{1}/2\rfloor]_2}+[{\widetilde{\omega}_2}\cup_1({[n_{1}]_2}+{s_1})]{[n_{1}]_2}.
 ```
 
 Its stacking correction changes at the same time:
@@ -44,7 +44,7 @@ This earlier change precedes the operator reordering below. Its source and produ
 
 ```math
 {\widehat{\mathcal{𝒪}}}_6=\widehat{\mathcal{𝒪}}_{6,\mathrm{raw}}+d_{s_1}\widehat B_5^{\mathrm{ref}}+\frac1{12}{n_{2}}^3,
-\qquad \widehat B_5^{\mathrm{ref}}=\frac14{\beta^\circ\check n_3}\cup_3{\beta_4^\psi}.
+\qquad \widehat B_5^{\mathrm{ref}}=\frac14{\beta^-\widetilde{n}_3}\cup_3{\beta_4^\psi}.
 ```
 
 The corresponding terminal redefinition contributes
@@ -83,7 +83,7 @@ The actual stacked output is used in the last line. This yields the displayed c,
 ## 4+1D: current compact Majorana phase
 
 The guide then applies the single [explicit phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-$`\widehat\nu_5\mapsto\widehat\nu_5-\widehat B_5[\check n_3,n_4]`$.
+$`\widehat\nu_5\mapsto\widehat\nu_5-\widehat B_5[\widetilde{n}_3,n_4]`$.
 Its source changes by $`-d_{s_1}\widehat B_5`$ and its product by $`-\Delta \widehat B_5`$,
 evaluated on the same actual lower stacking output. The inverse adds
 $`\widehat B_5`$; every lower decoration and lower product is fixed.

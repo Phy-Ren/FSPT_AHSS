@@ -19,7 +19,7 @@ The contributions below are grouped in the shifted Majorana coordinate
 <a id="eq-c1-3d"></a>
 
 ```math
-\check n_2=n_2+s_1\widetilde n_1.
+\widetilde{n}_2=n_2+s_1[\lfloor n_1/2\rfloor]_2.
 ```
 
 <a id="obstructions-3d"></a>
@@ -45,13 +45,13 @@ dn_2=\mathcal{𝒪}_3=\mathcal{𝒪}_3^\psi.
 **p+ip contribution.**
 
 ```math
-\mathcal{𝒪}_3^\psi=\omega_2\bar n_1+s_1\bar n_1^2.
+\mathcal{𝒪}_3^\psi=\omega_2[n_1]_2+s_1[n_1]_2^2.
 ```
 
 Equivalently, in the shifted Majorana coordinate,
 
 ```math
-d\check n_2=\check\omega_2\bar n_1.
+d\widetilde{n}_2=\widetilde{\omega}_2[n_1]_2.
 ```
 
 ### 3. Complex-fermion obstruction
@@ -65,16 +65,16 @@ dn_3=\mathcal{𝒪}_4=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+\mat
 **Majorana contribution.**
 
 ```math
-\mathcal{𝒪}_4^\gamma=\check n_2^2+s_1(\check n_2\cup_1\check n_2)+\omega_2\check n_2.
+\mathcal{𝒪}_4^\gamma=\widetilde{n}_2^2+s_1(\widetilde{n}_2\cup_1\widetilde{n}_2)+\omega_2\widetilde{n}_2.
 ```
 
 **Mixed Majorana–p+ip contribution.**
 
 ```math
-\mathcal{𝒪}_4^{\gamma\psi}=d\check n_2\cup_1\check n_2+s_1(\check n_2\cup_2d\check n_2).
+\mathcal{𝒪}_4^{\gamma\psi}=d\widetilde{n}_2\cup_1\widetilde{n}_2+s_1(\widetilde{n}_2\cup_2d\widetilde{n}_2).
 ```
 
-Here $`d\check n_2=\check\omega_2\bar n_1`$ is fixed by the preceding obstruction.
+Here $`d\widetilde{n}_2=\widetilde{\omega}_2[n_1]_2`$ is fixed by the preceding obstruction.
 
 **p+ip contribution.**
 
@@ -82,13 +82,13 @@ Here $`d\check n_2=\check\omega_2\bar n_1`$ is fixed by the preceding obstructio
 
 ```math
 \begin{aligned}
-{\mathcal{𝒪}^\psi_4}={}&\zeta_{2,1}({\check\omega_2},{\bar n_{1}})+({\check\omega_2}\cup_1{\check\omega_2}+{s_1}{\check\omega_2}){\widetilde n_{1}}\\
-&+\big[({\check\omega_2}\cup_1{\check\omega_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\check\omega_2})\big]{\bar n_{1}},\\
-\zeta_{2,1}({\check\omega_2},{\bar n_{1}})(01234)={}&{\check\omega_2}(012){\check\omega_2}(023){\bar n_{1}}(23){\bar n_{1}}(34).
+{\mathcal{𝒪}^\psi_4}={}&\zeta_{2,1}({\widetilde{\omega}_2},{[n_{1}]_2})+({\widetilde{\omega}_2}\cup_1{\widetilde{\omega}_2}+{s_1}{\widetilde{\omega}_2}){[\lfloor n_{1}/2\rfloor]_2}\\
+&+\big[({\widetilde{\omega}_2}\cup_1{\widetilde{\omega}_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\widetilde{\omega}_2})\big]{[n_{1}]_2},\\
+\zeta_{2,1}({\widetilde{\omega}_2},{[n_{1}]_2})(01234)={}&{\widetilde{\omega}_2}(012){\widetilde{\omega}_2}(023){[n_{1}]_2}(23){[n_{1}]_2}(34).
 \end{aligned}
 ```
 
-The second digit obeys $`d\widetilde n_1=\bar n_1^2+s_1\bar n_1`$.
+The second digit obeys $`d[\lfloor n_1/2\rfloor]_2=[n_1]_2^2+s_1[n_1]_2`$.
 
 ### 4. Bosonic obstruction
 
@@ -110,15 +110,15 @@ fermionic operator reference:
 
 ```math
 \begin{aligned}
-\mathcal B_3[\check n_2]&=\check n_2\cup_1\check n_2,\\
-\check n_3&=n_3+\mathcal B_3[\check n_2],\\
-d\check n_3&=\mathcal{𝒪}_4+d\mathcal B_3.
+\mathcal B_3[\widetilde{n}_2]&=\widetilde{n}_2\cup_1\widetilde{n}_2,\\
+\widetilde{n}_3&=n_3+\mathcal B_3[\widetilde{n}_2],\\
+d\widetilde{n}_3&=\mathcal{𝒪}_4+d\mathcal B_3.
 \end{aligned}
 ```
 
 This is an explicit binary coordinate, with the same map as its inverse.
 It is not an extra decoration. Every CF argument in the phase coefficient
-tables is $`\check n_3`$, and every CF differential is $`d\check n_3`$.
+tables is $`\widetilde{n}_3`$, and every CF differential is $`d\widetilde{n}_3`$.
 The source and product are transported together as proved in
 [the reference comparison](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 
@@ -129,7 +129,7 @@ The source and product are transported together as proved in
 
 ```math
 \widehat{\mathcal{𝒪}}_5^c
- =\frac12[\omega_2\check n_3+\check n_3\cup_1\check n_3+d\check n_3\cup_2\check n_3].
+ =\frac12[\omega_2\widetilde{n}_3+\widetilde{n}_3\cup_1\widetilde{n}_3+d\widetilde{n}_3\cup_2\widetilde{n}_3].
 ```
 
 #### Complex fermions and Majorana decoration
@@ -143,9 +143,9 @@ The source and product are transported together as proved in
 ```
 
 The bracket includes the reference correction to the preceding parity:
-$`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2\check n_2
-+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2+d\mathcal B_3`$.
-Its mixed component retains the terms proportional to $`d\check n_2`$;
+$`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2\widetilde{n}_2
++\omega_2\widetilde{n}_2+s_1\mathrm{Sq}^1\widetilde{n}_2+d\mathcal B_3`$.
+Its mixed component retains the terms proportional to $`d\widetilde{n}_2`$;
 no closed-input assumption is made. The outer superscript records the
 exchanged fermion operators. Reusing their full parity does not change
 that physical origin.
@@ -155,8 +155,8 @@ that physical origin.
 ```math
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_5^{c\psi}
- =\frac12\Big[&d\check n_3\cup_3\mathcal{𝒪}_4^\psi
-  +\mathcal{𝒪}_4^\psi\cup_3d\check n_3
+ =\frac12\Big[&d\widetilde{n}_3\cup_3\mathcal{𝒪}_4^\psi
+  +\mathcal{𝒪}_4^\psi\cup_3d\widetilde{n}_3
   +\mathcal{𝒪}_4^\psi\cup_3\mathcal{𝒪}_4^\psi\\
  &+\sum_{(v;\mathbf x)\in\mathcal I_5^{c\psi}}
        \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)\Big].
@@ -167,19 +167,19 @@ that physical origin.
 \begin{aligned}
 \sum_{(v;\boldsymbol x)\in\mathcal I_5^{c\psi}}
  \mathop{\mathrm{MS}}\nolimits_v(\boldsymbol x)
-={}&\mathop{\mathrm{MS}}\nolimits_{1212313}(d\check n_3,\omega_2,d\check n_2)\\
+={}&\mathop{\mathrm{MS}}\nolimits_{1212313}(d\widetilde{n}_3,\omega_2,d\widetilde{n}_2)\\
 &+\big(\mathop{\mathrm{MS}}\nolimits_{121341431}+\mathop{\mathrm{MS}}\nolimits_{241431341}
  +\mathop{\mathrm{MS}}\nolimits_{124214131}+\mathop{\mathrm{MS}}\nolimits_{121431341}\\
 &\qquad+\mathop{\mathrm{MS}}\nolimits_{142141314}+\mathop{\mathrm{MS}}\nolimits_{142141341}\big)
- (d\check n_3,s_1,\check n_2,d\check n_2).
+ (d\widetilde{n}_3,s_1,\widetilde{n}_2,d\widetilde{n}_2).
 \end{aligned}
 ```
 
 The finite sum contains **seven specified MS terms**,
 [listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices).
 Together with the three displayed cups, this gives **ten terms**.
-Every MS term contains $`d\check n_2=\check\omega_2\bar n_1`$ and
-$`d\check n_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3
+Every MS term contains $`d\widetilde{n}_2=\widetilde{\omega}_2[n_1]_2`$ and
+$`d\widetilde{n}_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3
 +\mathcal{𝒪}_4^\psi`$. Thus the complex-fermion exchange correction
 depends on its full lower parity differential. The
 [exact reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
@@ -191,23 +191,23 @@ changes neither the source representative nor the paired stacking law.
 \begin{aligned}
 \widehat{\mathcal{𝒪}}_5^\gamma
 ={}&\frac12\Big[
- \zeta_{2,2}(\omega_2,\check n_2)\\
-&\qquad+\mathcal X_5(\check n_2)
- +(\check n_2^2)\cup_3(\omega_2\check n_2)\\
-&\qquad+(\check n_2^2)\cup_3(s_1\overline{\beta^\circ\check n_2})
- +(\omega_2\check n_2)\cup_3(s_1\overline{\beta^\circ\check n_2})\\
-&\qquad+\zeta_{1,3}(s_1,\overline{\beta^\circ\check n_2})
- +(\omega_2\cup_1s_1)\overline{\beta^\circ\check n_2}
- +s_1\check n_2^2\Big]\\
+ \zeta_{2,2}(\omega_2,\widetilde{n}_2)\\
+&\qquad+\mathcal X_5(\widetilde{n}_2)
+ +(\widetilde{n}_2^2)\cup_3(\omega_2\widetilde{n}_2)\\
+&\qquad+(\widetilde{n}_2^2)\cup_3(s_1[\beta^-\widetilde{n}_2]_2)
+ +(\omega_2\widetilde{n}_2)\cup_3(s_1[\beta^-\widetilde{n}_2]_2)\\
+&\qquad+\zeta_{1,3}(s_1,[\beta^-\widetilde{n}_2]_2)
+ +(\omega_2\cup_1s_1)[\beta^-\widetilde{n}_2]_2
+ +s_1\widetilde{n}_2^2\Big]\\
 &+\frac14\Big[
- \omega_2\beta^\circ\check n_2
- +(\beta^\circ\check n_2)\cup_1(\beta^\circ\check n_2)
- +s_1^2(\beta^\circ\check n_2+
-             \overline{\beta^\circ\check n_2})\Big].
+ \omega_2\beta^-\widetilde{n}_2
+ +(\beta^-\widetilde{n}_2)\cup_1(\beta^-\widetilde{n}_2)
+ +s_1^2(\beta^-\widetilde{n}_2+
+             [\beta^-\widetilde{n}_2]_2)\Big].
 \end{aligned}
 ```
 
-Here $`\beta^\circ x=(dx-\overline{dx})/2`$, with the first differential
+Here $`\beta^- x=(dx-[dx]_2)/2`$, with the first differential
 formed in integers. It agrees with the ordinary Bockstein on a cocycle.
 The word operations are
 
@@ -230,8 +230,8 @@ The intrinsic Adem cochain of a binary two-cochain $`x`$ is
 ```
 
 This operation has four word terms. The closed-Majorana presentation
-uses this same expression with $`\check n_2=n_2`$ and
-$`\beta^\circ=\beta`$; no phase redefinition is involved.
+uses this same expression with $`\widetilde{n}_2=n_2`$ and
+$`\beta^-=\beta`$; no phase redefinition is involved.
 
 #### Majorana and p+ip decoration
 
@@ -241,11 +241,11 @@ $`\beta^\circ=\beta`$; no phase redefinition is involved.
 ={}&\frac12\sum_{(v;\mathbf x)\in\mathcal I_5^{\gamma\psi}}
        \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)\\
 &+\frac14\Big[
- (\beta^\circ\check n_2)\cup_1\beta_3^\psi
- +\beta_3^\psi\cup_1(\beta^\circ\check n_2)
- -[(\beta_{s_1}\check\omega_2)n_1]\cup_2(\beta^\circ\check n_2)\\
-&\qquad-(\check\omega_2\bar n_1)\check n_2
-        -\check n_2(\check\omega_2\bar n_1)\Big].
+ (\beta^-\widetilde{n}_2)\cup_1\beta_3^\psi
+ +\beta_3^\psi\cup_1(\beta^-\widetilde{n}_2)
+ -[(\beta_{s_1}\widetilde{\omega}_2)n_1]\cup_2(\beta^-\widetilde{n}_2)\\
+&\qquad-(\widetilde{\omega}_2[n_1]_2)\widetilde{n}_2
+        -\widetilde{n}_2(\widetilde{\omega}_2[n_1]_2)\Big].
 \end{aligned}
 ```
 
@@ -257,13 +257,13 @@ The integer carry and the twisted Bockstein are
 
 ```math
 \beta_3^\psi
- =\frac{\overline{\check\omega_2\bar n_1}
-                  +\check\omega_2 n_1}{2},
+ =\frac{[\widetilde{\omega}_2[n_1]_2]_2
+                  +\widetilde{\omega}_2 n_1}{2},
 \qquad
-\beta_{s_1}\check\omega_2=\frac{d_{s_1}\check\omega_2}{2}.
+\beta_{s_1}\widetilde{\omega}_2=\frac{d_{s_1}\widetilde{\omega}_2}{2}.
 ```
 
-Both divisions are exact. The product $`\check\omega_2n_1`$ has the
+Both divisions are exact. The product $`\widetilde{\omega}_2n_1`$ has the
 local-coefficient transport of its two signed integer factors.
 The finite index set $`\mathcal I_5^{\gamma\psi}`$ is defined in the
 [coefficient appendix](THREE_DIMENSIONAL_WORD_INDICES.md#final-physical-index-sets).
@@ -284,17 +284,17 @@ On the ordered five-simplex $`(012345)`$, the complete contribution is
  \Bigg]\\
 &+\frac14\left\{\begin{aligned}
 &\beta_3^\psi\cup_1\beta_3^\psi
- -[(\beta_{s_1}\check\omega_2)n_1]\cup_2\beta_3^\psi
+ -[(\beta_{s_1}\widetilde{\omega}_2)n_1]\cup_2\beta_3^\psi
  -\omega_2\beta_3^\psi\\
-&+(-1)^{s_1(34)}(\beta_{s_1}\check\omega_2)(0123)
-  [(\beta_{s_1}\check\omega_2)(0124)
-   +(\beta_{s_1}\check\omega_2)(0234)]n_1(34)n_1(45)\\
-&-\overline{[\mathrm{Sq}^1\overline{\beta_{s_1}\check\omega_2}]\bar n_1
- +s_1\overline{\beta_{s_1}\check\omega_2}\widetilde n_1
- +s_1(s_1\cup_1\overline{\beta_{s_1}\check\omega_2})\bar n_1}
- +\overline{\widetilde{\beta_{s_1}\check\omega_2}\bar n_1^2}
+&+(-1)^{s_1(34)}(\beta_{s_1}\widetilde{\omega}_2)(0123)
+  [(\beta_{s_1}\widetilde{\omega}_2)(0124)
+   +(\beta_{s_1}\widetilde{\omega}_2)(0234)]n_1(34)n_1(45)\\
+&-[[\mathrm{Sq}^1[\beta_{s_1}\widetilde{\omega}_2]_2][n_1]_2
+ +s_1[\beta_{s_1}\widetilde{\omega}_2]_2[\lfloor n_1/2\rfloor]_2
+ +s_1(s_1\cup_1[\beta_{s_1}\widetilde{\omega}_2]_2)[n_1]_2]_2
+ +[[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2[n_1]_2^2]_2
 \end{aligned}\right\}
- +\frac1{16}[\mathcal P_{s_1}(\check\omega_2)\cup n_1](012345).
+ +\frac1{16}[\mathcal P_{s_1}(\widetilde{\omega}_2)\cup n_1](012345).
 \end{aligned}
 ```
 
@@ -315,9 +315,9 @@ lifted-field evaluation is part of this formula.
 The Pontryagin-square convention in the last term is
 
 ```math
-\mathcal P_{s_1}(\check\omega_2)
-=\check\omega_2^2
- +\check\omega_2\cup_1d_{s_1}\check\omega_2.
+\mathcal P_{s_1}(\widetilde{\omega}_2)
+=\widetilde{\omega}_2^2
+ +\widetilde{\omega}_2\cup_1d_{s_1}\widetilde{\omega}_2.
 ```
 
 <a id="stacking-3d"></a>
@@ -343,19 +343,19 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad \mathcal{ℰ}_2=\mathcal{ℰ}_2^\psi.
 **p+ip contribution.**
 
 ```math
-\mathcal{ℰ}_2^\psi=\bar n_1\bar n'_1+s_1(\bar n_1\cup_1\bar n'_1).
+\mathcal{ℰ}_2^\psi=[n_1]_2[n'_1]_2+s_1([n_1]_2\cup_1[n'_1]_2).
 ```
 
 The same product in the shifted coordinate is
 
 ```math
-\check N_2=\check n_2+\check n'_2+\check{\mathcal{ℰ}}_2,\qquad\check{\mathcal{ℰ}}_2=\bar n_1\bar n'_1.
+\widetilde{N}_2=\widetilde{n}_2+\widetilde{n}'_2+\widetilde{\mathcal{ℰ}}_2,\qquad\widetilde{\mathcal{ℰ}}_2=[n_1]_2[n'_1]_2.
 ```
 
 Its integer digit carry is
 
 ```math
-\widetilde N_1=\widetilde n_1+\widetilde n'_1+\bar n_1\cup_1\bar n'_1.
+[\lfloor N_1/2\rfloor]_2=[\lfloor n_1/2\rfloor]_2+[\lfloor n'_1/2\rfloor]_2+[n_1]_2\cup_1[n'_1]_2.
 ```
 
 ### 3. Complex-fermion stacking
@@ -372,24 +372,24 @@ N_3&=n_3+n'_3+\mathcal{ℰ}_3,\\
 **Majorana contribution.**
 
 ```math
-\mathcal{ℰ}_3^\gamma=\check n_2\cup_1\check n'_2+s_1(\check n_2\cup_2\check n'_2).
+\mathcal{ℰ}_3^\gamma=\widetilde{n}_2\cup_1\widetilde{n}'_2+s_1(\widetilde{n}_2\cup_2\widetilde{n}'_2).
 ```
 
 **Mixed Majorana–p+ip contribution.**
 
 ```math
 \mathcal{ℰ}_3^{\gamma\psi}
- =\check n_2\cup_2d\check n'_2
- +(\check n_2+\check n'_2)\cup_1\check{\mathcal{ℰ}}_2
- +s_1\big[(\check n_2+\check n'_2)\cup_2\check{\mathcal{ℰ}}_2\big].
+ =\widetilde{n}_2\cup_2d\widetilde{n}'_2
+ +(\widetilde{n}_2+\widetilde{n}'_2)\cup_1\widetilde{\mathcal{ℰ}}_2
+ +s_1\big[(\widetilde{n}_2+\widetilde{n}'_2)\cup_2\widetilde{\mathcal{ℰ}}_2\big].
 ```
 
 **p+ip contribution.**
 
 ```math
 \mathcal{ℰ}_3^\psi=
- [\bar n_1\cup_1(\bar n_1\bar n'_1)]\bar n'_1
- +\widetilde n_1(\bar n'_1)^2+s_1\widetilde n_1\bar n'_1.
+ [[n_1]_2\cup_1([n_1]_2[n'_1]_2)][n'_1]_2
+ +[\lfloor n_1/2\rfloor]_2([n'_1]_2)^2+s_1[\lfloor n_1/2\rfloor]_2[n'_1]_2.
 ```
 
 The pure sheet contribution has three terms. The signed floor is taken before reduction. The complete parity is counted directly by the geometric pairing construction, including both backgrounds.
@@ -416,23 +416,23 @@ The finite pair reference is
 
 ```math
 \begin{aligned}
-\mathcal B_2(012)={}&\bar n_1(01)\widetilde n'_1(12)
- +\widetilde n_1(01)\bar n'_1(12)
- +\widetilde n_1(01)\widetilde n'_1(12)\\
-&+\check n_2(012)\check n'_2(012)
- +\bar n_1(01)\bar n'_1(12)[\check n_2(012)+\check n'_2(012)]\\
-&+s_1(01)\{\widetilde n_1(01)\bar n'_1(12)
- +\bar n_1(01)\bar n'_1(01)[\bar n_1(12)+\bar n'_1(12)]\}.
+\mathcal B_2(012)={}&[n_1]_2(01)[\lfloor n'_1/2\rfloor]_2(12)
+ +[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)
+ +[\lfloor n_1/2\rfloor]_2(01)[\lfloor n'_1/2\rfloor]_2(12)\\
+&+\widetilde{n}_2(012)\widetilde{n}'_2(012)
+ +[n_1]_2(01)[n'_1]_2(12)[\widetilde{n}_2(012)+\widetilde{n}'_2(012)]\\
+&+s_1(01)\{[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)
+ +[n_1]_2(01)[n'_1]_2(01)[[n_1]_2(12)+[n'_1]_2(12)]\}.
 \end{aligned}
 ```
 
-The two checked quantities needed by the phase formulas are
+The two shifted quantities needed by the phase formulas are
 
 ```math
 \begin{aligned}
-\check{\mathcal{ℰ}}_3&=\mathcal{ℰ}_3+\Delta\mathcal B_3+d\mathcal B_2,\\
-\check N_3&=N_3+\mathcal B_3[\check N_2]
- =\check n_3+\check n'_3+\check{\mathcal{ℰ}}_3+d\mathcal B_2.
+\widetilde{\mathcal{ℰ}}_3&=\mathcal{ℰ}_3+\Delta\mathcal B_3+d\mathcal B_2,\\
+\widetilde{N}_3&=N_3+\mathcal B_3[\widetilde{N}_2]
+ =\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal{ℰ}}_3+d\mathcal B_2.
 \end{aligned}
 ```
 
@@ -452,11 +452,11 @@ It retains the complex-fermion completion and uses the same phase representative
 ```math
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&
- \check n_3\cup_2\check n'_3
- +(\check n_3+\check n'_3)\cup_2(\mathcal{ℰ}_3+\Delta\mathcal B_3)\\
+ \widetilde{n}_3\cup_2\widetilde{n}'_3
+ +(\widetilde{n}_3+\widetilde{n}'_3)\cup_2(\mathcal{ℰ}_3+\Delta\mathcal B_3)\\
  &+\omega_2\mathcal B_2+\mathcal B_2^2
  +d\mathcal B_2\cup_1\mathcal B_2
- +\check{\mathcal{ℰ}}_3\cup_2d\mathcal B_2\Big].
+ +\widetilde{\mathcal{ℰ}}_3\cup_2d\mathcal B_2\Big].
 \end{aligned}
 ```
 
@@ -466,14 +466,14 @@ It retains the complex-fermion completion and uses the same phase representative
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^{c\gamma}
 ={}&\frac12\Big[
- \big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big]\cup_3\check n'_3\\
+ \big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big]\cup_3\widetilde{n}'_3\\
 &\qquad+\Delta\Big[
- \check n_3\cup_3\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big]\Big]\\
-&\qquad+d\mathcal B_2\cup_3\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big][\check N_2]\Big].
+ \widetilde{n}_3\cup_3\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big]\Big]\\
+&\qquad+d\mathcal B_2\cup_3\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big][\widetilde{N}_2]\Big].
 \end{aligned}
 ```
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ minus the values at $`(n_3,\check n_2)`$ and $`(n'_3,\check n'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential and the $`d\mathcal B_3`$ terms. The last term transports the output evaluation to its actual face reference.
+The $`\Delta`$ has its defined three terms: the value at $`(N_3,\widetilde{N}_2)`$ minus the values at $`(n_3,\widetilde{n}_2)`$ and $`(n'_3,\widetilde{n}'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential and the $`d\mathcal B_3`$ terms. The last term transports the output evaluation to its actual face reference.
 
 #### Complex fermions and p+ip decoration
 
@@ -481,37 +481,37 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ mi
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^{c\psi}(01234)
 ={}&\frac12\Big[
- \mathcal{𝒪}_4^\psi[n_1]\cup_3\check n'_3
- +\Delta\big(\check n_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
+ \mathcal{𝒪}_4^\psi[n_1]\cup_3\widetilde{n}'_3
+ +\Delta\big(\widetilde{n}_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
 &\qquad+d\mathcal B_2\cup_3\mathcal{𝒪}_4^\psi[N_1]\\
-&\qquad+(d\check n_3+d\check n'_3)\cup_4\Big[
- \mathcal{𝒪}_4^\gamma[\check N_2]
- +\mathcal{𝒪}_4^\gamma[\check n_2+\check n'_2]\\
-&\hspace{53mm}+\check N_2^2+(\check n_2+\check n'_2)^2
+&\qquad+(d\widetilde{n}_3+d\widetilde{n}'_3)\cup_4\Big[
+ \mathcal{𝒪}_4^\gamma[\widetilde{N}_2]
+ +\mathcal{𝒪}_4^\gamma[\widetilde{n}_2+\widetilde{n}'_2]\\
+&\hspace{53mm}+\widetilde{N}_2^2+(\widetilde{n}_2+\widetilde{n}'_2)^2
  \Big]\Big](01234)\\
-&+\frac12(d\check n_3)(01234)\Big[
- \check n'_2(012)(d\check n_2)(0234)
- +\check n_2(034)(d\check n'_2)(0123)\\
-&\qquad+\check n'_2(123)(d\check n_2)(0134)
- +\check n_2(014)(d\check n'_2)(1234)
- +\check n'_2(234)(d\check n_2)(0124)\\
+&+\frac12(d\widetilde{n}_3)(01234)\Big[
+ \widetilde{n}'_2(012)(d\widetilde{n}_2)(0234)
+ +\widetilde{n}_2(034)(d\widetilde{n}'_2)(0123)\\
+&\qquad+\widetilde{n}'_2(123)(d\widetilde{n}_2)(0134)
+ +\widetilde{n}_2(014)(d\widetilde{n}'_2)(1234)
+ +\widetilde{n}'_2(234)(d\widetilde{n}_2)(0124)\\
 &\qquad+s_1(01)\Big\{
- \check n'_2(124)(d\check n_2)(1234)
- +[\check n_2(123)+\check n'_2(123)](d\check n'_2)(1234)
+ \widetilde{n}'_2(124)(d\widetilde{n}_2)(1234)
+ +[\widetilde{n}_2(123)+\widetilde{n}'_2(123)](d\widetilde{n}'_2)(1234)
  \Big\}\Big]\\
-&+\frac12(d\check n'_3)(01234)\Big[
- \check n'_2(012)(d\check n_2)(0234)
- +\check n_2(034)(d\check n'_2)(0123)\\
+&+\frac12(d\widetilde{n}'_3)(01234)\Big[
+ \widetilde{n}'_2(012)(d\widetilde{n}_2)(0234)
+ +\widetilde{n}_2(034)(d\widetilde{n}'_2)(0123)\\
 &\qquad+s_1(01)\Big\{
- [\check n_2(123)+\check n'_2(124)](d\check n_2)(1234)
- +\check n_2(123)(d\check n'_2)(1234)
+ [\widetilde{n}_2(123)+\widetilde{n}'_2(124)](d\widetilde{n}_2)(1234)
+ +\widetilde{n}_2(123)(d\widetilde{n}'_2)(1234)
  \Big\}\Big].
 \end{aligned}
 ```
 
 The two unchanged face brackets contain **13 products** after distributing the
-binary parentheses: eight multiply $`d\check n_3`$ and five multiply $`d\check n'_3`$.
-Their CF differentials are $`d\check n_3`$ and $`d\check n'_3`$. They replace the former 132-word sum exactly, as proved in the
+binary parentheses: eight multiply $`d\widetilde{n}_3`$ and five multiply $`d\widetilde{n}'_3`$.
+Their CF differentials are $`d\widetilde{n}_3`$ and $`d\widetilde{n}'_3`$. They replace the former 132-word sum exactly, as proved in the
 [exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md).
 The lower Majorana differentials retain their physical meanings.
 
@@ -529,11 +529,11 @@ binary argument; it must not be linearized.
 \begin{aligned}
 \widehat{\mathcal{ℰ}}^{\gamma}_4={}&\frac12z_4^\gamma
  +\frac14\big[
- -\beta^\circ\check n_2\cup_2\beta^\circ\check n'_2\\
- &+(\beta^\circ\check n_2+\beta^\circ\check n'_2)
+ -\beta^-\widetilde{n}_2\cup_2\beta^-\widetilde{n}'_2\\
+ &+(\beta^-\widetilde{n}_2+\beta^-\widetilde{n}'_2)
        \cup_1\lambda_2^\gamma
  -\lambda_2^\gamma\cup_1
-       \beta^\circ\overline{\check n_2+\check n'_2}\\
+       \beta^-[\widetilde{n}_2+\widetilde{n}'_2]_2\\
  &+(\lambda_2^\gamma)^2-\omega_2\lambda_2^\gamma\big].
 \end{aligned}
 ```
@@ -542,36 +542,36 @@ The binary completion is
 
 ```math
 \begin{aligned}
-z_4^\gamma={}&z^0_4(\check n_2,\check n'_2)
- +(\omega_2\overline{\check n_2+\check n'_2})\cup_3\mathcal{ℰ}_3^\gamma
- +d(\check n_2\cup_1\check n'_2)\cup_4
-       (\omega_2\overline{\check n_2+\check n'_2})\\
-&+(\check n'_2)^2\cup_4(\omega_2\check n_2)
- +[(\check n'_2)^2+\omega_2\check n'_2]\cup_4
-                     (s_1\overline{\beta^\circ\check n_2})\\
+z_4^\gamma={}&z^0_4(\widetilde{n}_2,\widetilde{n}'_2)
+ +(\omega_2[\widetilde{n}_2+\widetilde{n}'_2]_2)\cup_3\mathcal{ℰ}_3^\gamma
+ +d(\widetilde{n}_2\cup_1\widetilde{n}'_2)\cup_4
+       (\omega_2[\widetilde{n}_2+\widetilde{n}'_2]_2)\\
+&+(\widetilde{n}'_2)^2\cup_4(\omega_2\widetilde{n}_2)
+ +[(\widetilde{n}'_2)^2+\omega_2\widetilde{n}'_2]\cup_4
+                     (s_1[\beta^-\widetilde{n}_2]_2)\\
 &+(\omega_2\cup_1s_1)\lambda_2^\gamma
- +(\check n_2\cup_1\check n'_2)\cup_3
-       [s_1(\overline{\beta^\circ\check n_2}
-                       +\overline{\beta^\circ\check n'_2})]\\
-&+\overline{\check n_2+\check n'_2}^{\,2}\cup_3(s_1\lambda_2^\gamma)
- +(\check n_2\cup_1\check n'_2)\cup_2(s_1\lambda_2^\gamma)\\
+ +(\widetilde{n}_2\cup_1\widetilde{n}'_2)\cup_3
+       [s_1([\beta^-\widetilde{n}_2]_2
+                       +[\beta^-\widetilde{n}'_2]_2)]\\
+&+[\widetilde{n}_2+\widetilde{n}'_2]_2^{\,2}\cup_3(s_1\lambda_2^\gamma)
+ +(\widetilde{n}_2\cup_1\widetilde{n}'_2)\cup_2(s_1\lambda_2^\gamma)\\
 &+s_1\Big[\mathcal{ℰ}_3^\gamma
- +\overline{\beta^\circ\check n_2}\cup_3
-                     \overline{\beta^\circ\check n'_2}
+ +[\beta^-\widetilde{n}_2]_2\cup_3
+                     [\beta^-\widetilde{n}'_2]_2
  +\lambda_2^\gamma\cup_1\lambda_2^\gamma\\
-&\qquad+(\overline{\beta^\circ\check n_2}
-                      +\overline{\beta^\circ\check n'_2})
+&\qquad+([\beta^-\widetilde{n}_2]_2
+                      +[\beta^-\widetilde{n}'_2]_2)
                     \cup_3(s_1\lambda_2^\gamma)
  +(s_1\lambda_2^\gamma)\cup_2\lambda_2^\gamma\\
-&\qquad+\overline{
- \beta^{\circ+}\overline{\check n_2+\check n'_2}
- -\beta^{\circ+}\check n_2-\beta^{\circ+}\check n'_2}\Big].
+&\qquad+[
+ \beta^{-+}[\widetilde{n}_2+\widetilde{n}'_2]_2
+ -\beta^{-+}\widetilde{n}_2-\beta^{-+}\widetilde{n}'_2]_2\Big].
 \end{aligned}
 ```
 
-Here $`\mathcal{ℰ}_3^\gamma=\check n_2\cup_1\check n'_2
-+s_1(\check n_2\cup_2\check n'_2)`$ and
-$`\beta^{\circ+}x=(\beta^\circ x+\overline{\beta^\circ x})/2`$.
+Here $`\mathcal{ℰ}_3^\gamma=\widetilde{n}_2\cup_1\widetilde{n}'_2
++s_1(\widetilde{n}_2\cup_2\widetilde{n}'_2)`$ and
+$`\beta^{-+}x=(\beta^- x+[\beta^- x]_2)/2`$.
 Its intrinsic binary polynomial is
 
 ```math
@@ -581,12 +581,12 @@ z^0_4(x,y)={}&\sum_{\substack{v\in\{12123434,12134131,12314324,12314342,\\
 &+\mathop{\mathrm{MS}}\nolimits_{12123}(x+y,y,x\cup_2y)
  +\mathop{\mathrm{MS}}\nolimits_{123131}(y,x,x\cup_1y)\\
 &+(x\cup_1y)\cup_1y
- +(\overline{\beta^\circ x}+\overline{\beta^\circ y})\cup_1(x\cup_2y)\\
+ +([\beta^- x]_2+[\beta^- y]_2)\cup_1(x\cup_2y)\\
 &+(x\cup_2y)\cup_1
-  (\overline{\beta^\circ x}+\overline{\beta^\circ y}+y\cup_1x)\\
+  ([\beta^- x]_2+[\beta^- y]_2+y\cup_1x)\\
 &+(x\cup_1y)\cup_3(x^2+y^2)
  +y\cup_2[x\cup_1(x\cup_1y)]
- +\overline{\beta^\circ y}\cup_2\overline{\beta^\circ x}.
+ +[\beta^- y]_2\cup_2[\beta^- x]_2.
 \end{aligned}
 ```
 
@@ -607,28 +607,28 @@ lift scopes.
 &\qquad+\omega_2\lambda_2^\gamma
  +d_{s_1}(\lambda_2^\gamma\cup_1\lambda_2^\gamma)\Big]\\
 &+\frac14\Big[
- -\beta^\circ\check n_2\cup_2 \beta_3^{\psi\prime}
- -\beta_3^\psi\cup_2\beta^\circ\check n'_2
- +\beta^\circ\check n_2\cup_3
-       [ (\beta_{s_1}\check\omega_2)n'_1]\\
-&\quad+(\beta^\circ\check n_2+\beta^\circ\check n'_2)
+ -\beta^-\widetilde{n}_2\cup_2 \beta_3^{\psi\prime}
+ -\beta_3^\psi\cup_2\beta^-\widetilde{n}'_2
+ +\beta^-\widetilde{n}_2\cup_3
+       [ (\beta_{s_1}\widetilde{\omega}_2)n'_1]\\
+&\quad+(\beta^-\widetilde{n}_2+\beta^-\widetilde{n}'_2)
        \cup_2d\lambda_2
  +(\beta_3^\psi+\beta_3^{\psi\prime})
        \cup_2d(\lambda_2^\gamma+\lambda_2^{\gamma\psi})\\
 &\quad+\lambda_2\cup_1d\lambda_2-\lambda_2^2
  -\lambda_2^\psi\cup_1d\lambda_2^\psi+(\lambda_2^\psi)^2
  +\omega_2\lambda_2^{\gamma\psi}\\
-&\quad-\big[\check N_2^2-\check n_2^2-(\check n'_2)^2
-                      -(\bar n_1\bar n'_1)^2\big]\\
+&\quad-\big[\widetilde{N}_2^2-\widetilde{n}_2^2-(\widetilde{n}'_2)^2
+                      -([n_1]_2[n'_1]_2)^2\big]\\
 &\quad+d_{s_1}\Big[
- (\beta^\circ\check n_2+\beta^\circ\check n'_2)
+ (\beta^-\widetilde{n}_2+\beta^-\widetilde{n}'_2)
                      \cup_2\lambda_2^\gamma
  +(d\lambda_2^\gamma)\cup_3d\lambda_2^\gamma
- -\overline{\check n_2\cup_1\check n'_2}\Big]\\
-&\quad-(\beta^\circ\check n_2+\beta^\circ\check n'_2)
+ -[\widetilde{n}_2\cup_1\widetilde{n}'_2]_2\Big]\\
+&\quad-(\beta^-\widetilde{n}_2+\beta^-\widetilde{n}'_2)
                   \cup_1\lambda_2^\gamma
  +\lambda_2^\gamma\cup_1
-        \beta^\circ\overline{\check n_2+\check n'_2}
+        \beta^-[\widetilde{n}_2+\widetilde{n}'_2]_2
  -(\lambda_2^\gamma)^2
  \Big].
 \end{aligned}
@@ -671,14 +671,14 @@ sufficient.
          \mathop{\mathrm{MS}}\nolimits_v(\boldsymbol x)+\sum_{(f,g)\in\mathcal I_4^{\psi,\mathrm{face}}}f\,g\right]\\
 &+\frac14\Big[
  -\beta_3^\psi\cup_2\beta_3^{\psi\prime}
- +\beta_3^\psi\cup_3[(\beta_{s_1}\check\omega_2)n'_1]
+ +\beta_3^\psi\cup_3[(\beta_{s_1}\widetilde{\omega}_2)n'_1]
  +(\beta_3^\psi+\beta_3^{\psi\prime})\cup_2d\lambda_2^\psi\\
 &\quad+\lambda_2^\psi\cup_1d\lambda_2^\psi
        -(\lambda_2^\psi)^2+\omega_2\lambda_2^\psi
-       -(\bar n_1\bar n'_1)^2
- -\overline{\widetilde{\beta_{s_1}\check\omega_2}
-                   (\bar n_1\cup_1\bar n'_1)}\Big]\\
-&-\frac18\check\omega_2 n_1n'_1.
+       -([n_1]_2[n'_1]_2)^2
+ -[[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2
+                   ([n_1]_2\cup_1[n'_1]_2)]_2\Big]\\
+&-\frac18\widetilde{\omega}_2 n_1n'_1.
 \end{aligned}
 ```
 
@@ -702,9 +702,9 @@ Every pair $`(f,g)`$ is printed in the
 Its 173 factored rows group 306 integer-digit monomials by common
 background coefficients; neither of those two row counts is the expanded
 term count. Each table entry contains
-only $`\bar n_1`$, $`\widetilde n_1`$, their primed counterparts, the
-explicit third digit $`\overline{\lfloor n_1/4\rfloor}`$, and the
-physical faces of $`s_1`$, $`\omega_2`$, and $`\check\omega_2`$.
+only $`[n_1]_2`$, $`[\lfloor n_1/2\rfloor]_2`$, their primed counterparts, the
+explicit third digit $`[\lfloor n_1/4\rfloor]_2`$, and the
+physical faces of $`s_1`$, $`\omega_2`$, and $`\widetilde{\omega}_2`$.
 
 #### Physical fields, carries, and arithmetic
 
@@ -713,9 +713,9 @@ The lower product and source in these displays are the already fixed laws
 ```math
 \begin{aligned}
 N_1&=n_1+n'_1,\qquad
-\check N_2=\check n_2+\check n'_2+\bar n_1\bar n'_1,\\
+\widetilde{N}_2=\widetilde{n}_2+\widetilde{n}'_2+[n_1]_2[n'_1]_2,\\
 N_3&=n_3+n'_3+\mathcal{ℰ}_3,\qquad
- dn_3=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\check n_2]+\mathcal{𝒪}_4^\psi[n_1],\\
+ dn_3=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\widetilde{n}_2]+\mathcal{𝒪}_4^\psi[n_1],\\
 \mathcal{𝒪}_4^\gamma[x]&=x^2+s_1(x\cup_1x)+\omega_2x,\\
 \mathcal{𝒪}_4^{\gamma\psi}[x]&=x\cup_1dx+s_1(x\cup_2dx).
 \end{aligned}
@@ -725,27 +725,27 @@ All cochain Steenrod squares include their differential terms. The integer carri
 
 ```math
 \begin{aligned}
-\beta^\circ x&=(dx-\overline{dx})/2,\\
-\beta_3&=\beta^\circ\check n_2+\beta_3^\psi
- =\frac{d\check n_2+\check\omega_2n_1}{2},\\
-\beta_3^\psi&=(\overline{\check\omega_2\bar n_1}
-                         +\check\omega_2n_1)/2,\\
-\lambda_2^\gamma&=\check n_2\cup_2\check n'_2,\\
+\beta^- x&=(dx-[dx]_2)/2,\\
+\beta_3&=\beta^-\widetilde{n}_2+\beta_3^\psi
+ =\frac{d\widetilde{n}_2+\widetilde{\omega}_2n_1}{2},\\
+\beta_3^\psi&=([\widetilde{\omega}_2[n_1]_2]_2
+                         +\widetilde{\omega}_2n_1)/2,\\
+\lambda_2^\gamma&=\widetilde{n}_2\cup_2\widetilde{n}'_2,\\
 \lambda_2^{\gamma\psi}
- &=\overline{\check n_2+\check n'_2}
-                  \cup_2(\bar n_1\bar n'_1),\\
-\lambda_2^\psi&=(n_1n'_1-\overline{\bar n_1\bar n'_1})/2,\\
+ &=[\widetilde{n}_2+\widetilde{n}'_2]_2
+                  \cup_2([n_1]_2[n'_1]_2),\\
+\lambda_2^\psi&=(n_1n'_1-[[n_1]_2[n'_1]_2]_2)/2,\\
 \lambda_2&=\lambda_2^\gamma+\lambda_2^{\gamma\psi}
             +\lambda_2^\psi
- =\frac{\check n_2+\check n'_2+n_1n'_1-\check N_2}{2}.
+ =\frac{\widetilde{n}_2+\widetilde{n}'_2+n_1n'_1-\widetilde{N}_2}{2}.
 \end{aligned}
 ```
 
 Every binary field in an integer expression means its canonical zero-or-one
 lift. Bars on full sums retain their complete reduction boundary. The
-integer products in $`\check\omega_2n_1`$ and $`n_1n'_1`$ use the inherited
+integer products in $`\widetilde{\omega}_2n_1`$ and $`n_1n'_1`$ use the inherited
 local systems; the latter is closed and untwisted. In particular the full
-residual satisfies $`d\beta_3=(\beta_{s_1}\check\omega_2)n_1`$, whereas differentiating
+residual satisfies $`d\beta_3=(\beta_{s_1}\widetilde{\omega}_2)n_1`$, whereas differentiating
 $`\beta_3^\psi`$ alone need not give that expression. The origin selection uses the
 full legal derivative before selecting its p+ip descendant.
 

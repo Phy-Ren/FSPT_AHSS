@@ -10,11 +10,11 @@ Sum every product in the following table in binary arithmetic, then lift the who
 
 | Term | Binary product |
 |---:|---|
-| 1 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 2 | $`(\check n_3)_{0234}(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 3 | $`(\check n_3)_{0234}(\check n_3)_{2345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 4 | $`(\check n_3)_{0234}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 5 | $`(\check n_3)_{0234}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{02345}`$ |
+| 1 | $`([\beta_4^\gamma]_2)_{02345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 2 | $`(\widetilde{n}_3)_{0234}(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 3 | $`(\widetilde{n}_3)_{0234}(\widetilde{n}_3)_{2345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 4 | $`(\widetilde{n}_3)_{0234}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 5 | $`(\widetilde{n}_3)_{0234}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{02345}`$ |
 
 ## Row 2
 
@@ -24,21 +24,21 @@ Sum every product in the following table in binary arithmetic, then lift the who
 
 | Term | Binary product |
 |---:|---|
-| 1 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}`$ |
-| 2 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}`$ |
-| 3 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 4 | $`(\check n_3)_{0124}(\check n_3)_{0145}(\overline{d\check n_3})_{01234}`$ |
-| 5 | $`(\check n_3)_{0124}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}`$ |
-| 6 | $`(\check n_3)_{0124}(\check n_3)_{1245}(\overline{d\check n_3})_{01234}`$ |
-| 7 | $`(\check n_3)_{0124}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 8 | $`(\check n_3)_{0234}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}`$ |
-| 9 | $`(\check n_3)_{0234}(\check n_3)_{0345}(\overline{d\check n_3})_{01234}`$ |
-| 10 | $`(\check n_3)_{0234}(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 11 | $`(\check n_3)_{0234}(\check n_3)_{2345}(\overline{d\check n_3})_{01234}`$ |
-| 12 | $`(\check n_3)_{0234}(\check n_3)_{2345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 13 | $`(\check n_3)_{0234}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 14 | $`(\check n_3)_{0234}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{02345}`$ |
-| 15 | $`(\check n_3)_{0234}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
+| 1 | $`([\beta_4^\gamma]_2)_{01245}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 2 | $`([\beta_4^\gamma]_2)_{02345}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 3 | $`([\beta_4^\gamma]_2)_{02345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 4 | $`(\widetilde{n}_3)_{0124}(\widetilde{n}_3)_{0145}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 5 | $`(\widetilde{n}_3)_{0124}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 6 | $`(\widetilde{n}_3)_{0124}(\widetilde{n}_3)_{1245}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 7 | $`(\widetilde{n}_3)_{0124}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 8 | $`(\widetilde{n}_3)_{0234}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 9 | $`(\widetilde{n}_3)_{0234}(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 10 | $`(\widetilde{n}_3)_{0234}(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 11 | $`(\widetilde{n}_3)_{0234}(\widetilde{n}_3)_{2345}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 12 | $`(\widetilde{n}_3)_{0234}(\widetilde{n}_3)_{2345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 13 | $`(\widetilde{n}_3)_{0234}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 14 | $`(\widetilde{n}_3)_{0234}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 15 | $`(\widetilde{n}_3)_{0234}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
 
 ## Row 3
 
@@ -48,16 +48,16 @@ Sum every product in the following table in binary arithmetic, then lift the who
 
 | Term | Binary product |
 |---:|---|
-| 1 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
-| 2 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
-| 3 | $`(\check n_3)_{0125}(\check n_3)_{0145}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
-| 4 | $`(\check n_3)_{0125}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
-| 5 | $`(\check n_3)_{0125}(\check n_3)_{1245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
-| 6 | $`(\check n_3)_{0125}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{01245}`$ |
-| 7 | $`(\check n_3)_{0235}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
-| 8 | $`(\check n_3)_{0235}(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
-| 9 | $`(\check n_3)_{0235}(\check n_3)_{2345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}`$ |
-| 10 | $`(\check n_3)_{0235}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{02345}`$ |
+| 1 | $`([\beta_4^\gamma]_2)_{01245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01235}`$ |
+| 2 | $`([\beta_4^\gamma]_2)_{02345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01235}`$ |
+| 3 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{0145}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01235}`$ |
+| 4 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01235}`$ |
+| 5 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{1245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01235}`$ |
+| 6 | $`(\widetilde{n}_3)_{0125}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 7 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01235}`$ |
+| 8 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01235}`$ |
+| 9 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{2345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01235}`$ |
+| 10 | $`(\widetilde{n}_3)_{0235}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{02345}`$ |
 
 ## Row 4
 
@@ -67,81 +67,81 @@ Sum every product in the following table in binary arithmetic, then lift the who
 
 | Term | Binary product |
 |---:|---|
-| 1 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 2 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 3 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 4 | $`(\bar \beta_4^\gamma)_{01245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
-| 5 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 6 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 7 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 8 | $`(\bar \beta_4^\gamma)_{02345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
-| 9 | $`(\check n_3)_{0123}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{01345}`$ |
-| 10 | $`(\check n_3)_{0123}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{12345}`$ |
-| 11 | $`(\check n_3)_{0125}(\check n_3)_{0145}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 12 | $`(\check n_3)_{0125}(\check n_3)_{0145}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 13 | $`(\check n_3)_{0125}(\check n_3)_{0145}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 14 | $`(\check n_3)_{0125}(\check n_3)_{0145}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
-| 15 | $`(\check n_3)_{0125}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 16 | $`(\check n_3)_{0125}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 17 | $`(\check n_3)_{0125}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 18 | $`(\check n_3)_{0125}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
-| 19 | $`(\check n_3)_{0125}(\check n_3)_{1245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 20 | $`(\check n_3)_{0125}(\check n_3)_{1245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 21 | $`(\check n_3)_{0125}(\check n_3)_{1245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 22 | $`(\check n_3)_{0125}(\check n_3)_{1245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
-| 23 | $`(\check n_3)_{0125}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 24 | $`(\check n_3)_{0125}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{01345}`$ |
-| 25 | $`(\check n_3)_{0125}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{02345}`$ |
-| 26 | $`(\check n_3)_{0125}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{12345}`$ |
-| 27 | $`(\check n_3)_{0125}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{01345}`$ |
-| 28 | $`(\check n_3)_{0125}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{12345}`$ |
-| 29 | $`(\check n_3)_{0134}(\overline{d\check n_3})_{01345}(\overline{d\check n_3})_{12345}`$ |
-| 30 | $`(\check n_3)_{0135}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{01345}`$ |
-| 31 | $`(\check n_3)_{0135}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{12345}`$ |
-| 32 | $`(\check n_3)_{0135}(\overline{d\check n_3})_{01345}(\overline{d\check n_3})_{12345}`$ |
-| 33 | $`(\check n_3)_{0145}(\overline{d\check n_3})_{01234}`$ |
-| 34 | $`(\check n_3)_{0145}(\overline{d\check n_3})_{01345}(\overline{d\check n_3})_{12345}`$ |
-| 35 | $`(\check n_3)_{0234}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{02345}`$ |
-| 36 | $`(\check n_3)_{0235}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 37 | $`(\check n_3)_{0235}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 38 | $`(\check n_3)_{0235}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 39 | $`(\check n_3)_{0235}(\check n_3)_{0245}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
-| 40 | $`(\check n_3)_{0235}(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 41 | $`(\check n_3)_{0235}(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 42 | $`(\check n_3)_{0235}(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 43 | $`(\check n_3)_{0235}(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
-| 44 | $`(\check n_3)_{0235}(\check n_3)_{2345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 45 | $`(\check n_3)_{0235}(\check n_3)_{2345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 46 | $`(\check n_3)_{0235}(\check n_3)_{2345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 47 | $`(\check n_3)_{0235}(\check n_3)_{2345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
-| 48 | $`(\check n_3)_{0235}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{02345}`$ |
-| 49 | $`(\check n_3)_{0235}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}(\overline{d\check n_3})_{02345}`$ |
-| 50 | $`(\check n_3)_{0235}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 51 | $`(\check n_3)_{0235}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}(\overline{d\check n_3})_{12345}`$ |
-| 52 | $`(\check n_3)_{0235}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{01345}`$ |
-| 53 | $`(\check n_3)_{0235}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{12345}`$ |
-| 54 | $`(\check n_3)_{0235}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{02345}`$ |
-| 55 | $`(\check n_3)_{0245}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{02345}`$ |
-| 56 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01245}`$ |
-| 57 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{01345}`$ |
-| 58 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{02345}`$ |
-| 59 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01234}(\overline{d\check n_3})_{12345}`$ |
-| 60 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01235}`$ |
-| 61 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{01245}`$ |
-| 62 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{01345}`$ |
-| 63 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{02345}`$ |
-| 64 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{12345}`$ |
-| 65 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{02345}`$ |
-| 66 | $`(\check n_3)_{0345}(\overline{d\check n_3})_{01345}(\overline{d\check n_3})_{12345}`$ |
-| 67 | $`(\check n_3)_{1235}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{01345}`$ |
-| 68 | $`(\check n_3)_{1235}(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{12345}`$ |
-| 69 | $`(\check n_3)_{1245}(\overline{d\check n_3})_{01234}`$ |
-| 70 | $`(\check n_3)_{1345}(\overline{d\check n_3})_{01345}(\overline{d\check n_3})_{12345}`$ |
-| 71 | $`(\check n_3)_{2345}(\overline{d\check n_3})_{01234}`$ |
-| 72 | $`(\check n_3)_{2345}(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{02345}`$ |
-| 73 | $`(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{01345}`$ |
-| 74 | $`(\overline{d\check n_3})_{01235}(\overline{d\check n_3})_{12345}`$ |
-| 75 | $`(\overline{d\check n_3})_{01245}(\overline{d\check n_3})_{02345}`$ |
-| 76 | $`(\overline{d\check n_3})_{01345}(\overline{d\check n_3})_{12345}`$ |
+| 1 | $`([\beta_4^\gamma]_2)_{01245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 2 | $`([\beta_4^\gamma]_2)_{01245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 3 | $`([\beta_4^\gamma]_2)_{01245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 4 | $`([\beta_4^\gamma]_2)_{01245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 5 | $`([\beta_4^\gamma]_2)_{02345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 6 | $`([\beta_4^\gamma]_2)_{02345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 7 | $`([\beta_4^\gamma]_2)_{02345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 8 | $`([\beta_4^\gamma]_2)_{02345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 9 | $`(\widetilde{n}_3)_{0123}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 10 | $`(\widetilde{n}_3)_{0123}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 11 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{0145}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 12 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{0145}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 13 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{0145}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 14 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{0145}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 15 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 16 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 17 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 18 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 19 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{1245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 20 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{1245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 21 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{1245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 22 | $`(\widetilde{n}_3)_{0125}(\widetilde{n}_3)_{1245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 23 | $`(\widetilde{n}_3)_{0125}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 24 | $`(\widetilde{n}_3)_{0125}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 25 | $`(\widetilde{n}_3)_{0125}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 26 | $`(\widetilde{n}_3)_{0125}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 27 | $`(\widetilde{n}_3)_{0125}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 28 | $`(\widetilde{n}_3)_{0125}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 29 | $`(\widetilde{n}_3)_{0134}([d\widetilde{n}_3]_2)_{01345}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 30 | $`(\widetilde{n}_3)_{0135}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 31 | $`(\widetilde{n}_3)_{0135}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 32 | $`(\widetilde{n}_3)_{0135}([d\widetilde{n}_3]_2)_{01345}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 33 | $`(\widetilde{n}_3)_{0145}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 34 | $`(\widetilde{n}_3)_{0145}([d\widetilde{n}_3]_2)_{01345}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 35 | $`(\widetilde{n}_3)_{0234}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 36 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 37 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 38 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 39 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 40 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 41 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 42 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 43 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 44 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{2345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 45 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{2345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 46 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{2345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 47 | $`(\widetilde{n}_3)_{0235}(\widetilde{n}_3)_{2345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 48 | $`(\widetilde{n}_3)_{0235}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 49 | $`(\widetilde{n}_3)_{0235}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01345}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 50 | $`(\widetilde{n}_3)_{0235}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 51 | $`(\widetilde{n}_3)_{0235}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 52 | $`(\widetilde{n}_3)_{0235}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 53 | $`(\widetilde{n}_3)_{0235}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 54 | $`(\widetilde{n}_3)_{0235}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 55 | $`(\widetilde{n}_3)_{0245}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 56 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 57 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 58 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 59 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01234}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 60 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01235}`$ |
+| 61 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{01245}`$ |
+| 62 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 63 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 64 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 65 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 66 | $`(\widetilde{n}_3)_{0345}([d\widetilde{n}_3]_2)_{01345}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 67 | $`(\widetilde{n}_3)_{1235}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 68 | $`(\widetilde{n}_3)_{1235}([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 69 | $`(\widetilde{n}_3)_{1245}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 70 | $`(\widetilde{n}_3)_{1345}([d\widetilde{n}_3]_2)_{01345}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 71 | $`(\widetilde{n}_3)_{2345}([d\widetilde{n}_3]_2)_{01234}`$ |
+| 72 | $`(\widetilde{n}_3)_{2345}([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 73 | $`([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{01345}`$ |
+| 74 | $`([d\widetilde{n}_3]_2)_{01235}([d\widetilde{n}_3]_2)_{12345}`$ |
+| 75 | $`([d\widetilde{n}_3]_2)_{01245}([d\widetilde{n}_3]_2)_{02345}`$ |
+| 76 | $`([d\widetilde{n}_3]_2)_{01345}([d\widetilde{n}_3]_2)_{12345}`$ |
 
 There are **106 interior terms** in total. The [same four complete rows](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_GAMMA_DIAGONAL_LIFTS.json) are available as mathematical coefficient data.

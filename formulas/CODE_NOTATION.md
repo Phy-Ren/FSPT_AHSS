@@ -66,12 +66,12 @@ with `w,s` in `background`.
 |---|---|---|
 | $`n_{d-2}`$ | `n` | Degree $`d-2`$, signed integers with twist $`s_1`$ |
 | $`n_{d-1}`$ | `a` | Degree $`d-1`$, native binary Majorana field |
-| $`\check n_3`$ in 3+1D; $`n_4`$ in 4+1D | `c` | Degree $`d`$, binary CF argument of the retained kernel |
+| $`\widetilde{n}_3`$ in 3+1D; $`n_4`$ in 4+1D | `c` | Degree $`d`$, binary CF argument of the retained kernel |
 | $`\omega_2`$ | `w` | Degree two, binary extension cocycle |
 | $`s_1`$ | `s` | Degree one, binary antiunitary cocycle |
 
 For a product, `right['n']`, `right['a']`, `right['c']` represent
-$`n'_{d-2},n'_{d-1}`$ and the same checked-CF convention. The runtime packs them into compiled fields
+$`n'_{d-2},n'_{d-1}`$ and the same shifted-CF convention. The runtime packs them into compiled fields
 `m,b,cp`. Thus **compiled input `b` is the second native Majorana field**;
 it is not the parity variable called `b` inside some readable definitions.
 The returned product value is a correction, not the entire output $`N_j`$.
@@ -88,8 +88,8 @@ denominator; their raw values must be divided accordingly.
 The internal conversion uses [C1](../docs/FORMULA_GUIDE.md#eq-c1):
 
 ```math
-\check\omega_2=\omega_2+s_1\cup s_1,\qquad
-\check n_{d-1}=n_{d-1}+s_1\cup\widetilde n_{d-2}.
+\widetilde{\omega}_2=\omega_2+s_1\cup s_1,\qquad
+\widetilde{n}_{d-1}=n_{d-1}+s_1\cup[\lfloor n_{d-2}/2\rfloor]_2.
 ```
 
 `Backend` accepts the native Majorana field and performs the required shift.
@@ -98,7 +98,7 @@ shifted Majorana field `u`. Apply the conversion once, according to the entry
 point; do not pass a shifted field as the native API input.
 
 Integer values retain their signs. `carry(n)` means
-$`\widetilde n_{d-2}=\overline{\lfloor n_{d-2}/2\rfloor}`$.
+$`[\lfloor n_{d-2}/2\rfloor]_2`$.
 Floors, canonical binary representatives, and exact divisions follow the
 mathematical definitions. A required nonintegral quotient raises an error.
 
@@ -109,12 +109,12 @@ lift operations:
 | Source-code expression | Mathematical expression in integer arithmetic |
 |---|---|
 | `x.lift()` for a named binary cochain | $`x`$ |
-| `(x+y).lift()` after binary addition | $`\overline{x+y}`$ |
-| `cup(x,y,i).lift()` with binary inputs and binary cup | $`\overline{x\cup_i y}`$ |
+| `(x+y).lift()` after binary addition | $`[x+y]_2`$ |
+| `cup(x,y,i).lift()` with binary inputs and binary cup | $`[x\cup_i y]_2`$ |
 | `cup(x.lift(),y.lift(),i)` with signed integer cup | $`x\cup_i y`$ |
-| `x.d().lift()` with binary differential | $`\overline{dx}`$ |
+| `x.d().lift()` with binary differential | $`[dx]_2`$ |
 | `x.lift().d()` with integer differential | $`dx`$ |
-| `x.reduce(2)` for an integer cochain | $`\bar x`$ |
+| `x.reduce(2)` for an integer cochain | $`[x]_2`$ |
 
 This convention removes notation from the formulas, not arithmetic from
 the evaluator. In particular, the two cup expressions and the two
@@ -129,14 +129,14 @@ formula-guide abbreviations. It does not redefine the public API keys.
 | Local or former name | Current mathematical notation |
 |---|---|
 | `n`, `m` | $`n_{d-2},n'_{d-2}`$ |
-| `a=n.reduce(2)`, `b=m.reduce(2)` | $`\bar n_{d-2},\bar n'_{d-2}`$ |
-| `h=carry(n)`, `k=carry(m)` | $`\widetilde n_{d-2},\widetilde n'_{d-2}`$ |
-| `W` | $`\check\omega_2`$ |
-| `u`, `v` | $`\check n_{d-1},\check n'_{d-1}`$ |
+| `a=n.reduce(2)`, `b=m.reduce(2)` | $`[n_{d-2}]_2,[n'_{d-2}]_2`$ |
+| `h=carry(n)`, `k=carry(m)` | $`[\lfloor n_{d-2}/2\rfloor]_2,[\lfloor n'_{d-2}/2\rfloor]_2`$ |
+| `W` | $`\widetilde{\omega}_2`$ |
+| `u`, `v` | $`\widetilde{n}_{d-1},\widetilde{n}'_{d-1}`$ |
 | `c`, `cp` | $`n_d,n'_d`$ |
-| `N`, `U`, `C` or `Cnew` | $`N_{d-2},\check N_{d-1},N_d`$ |
-| `t` | $`\check{\mathcal E}_{d-1}=\bar n_{d-2}\cup_{d-3}\bar n'_{d-2}`$ |
-| `q` in lower-product local variables | $`\bar n_{d-2}\cup_{d-2}\bar n'_{d-2}`$ |
+| `N`, `U`, `C` or `Cnew` | $`N_{d-2},\widetilde{N}_{d-1},N_d`$ |
+| `t` | $`\widetilde{\mathcal E}_{d-1}=[n_{d-2}]_2\cup_{d-3}[n'_{d-2}]_2`$ |
+| `q` in lower-product local variables | $`[n_{d-2}]_2\cup_{d-2}[n'_{d-2}]_2`$ |
 | `e`, former $`e_d`$ | $`\mathcal E_d`$ |
 | Former $`F_{d+1}`$ | $`\mathcal O_{d+1}`$ |
 | Former $`\Xi_{d+1}`$ | $`\mathcal O^\psi_{d+1}`$ |
@@ -158,20 +158,20 @@ and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a), with the
 |---|---|
 | `B`, former $`B_4`$ | $`\beta_4`$ |
 | `K`, former $`K_4`$ | $`\beta_4^\psi`$ |
-| `beta_open(u)`, local `b` in `full3/source.py:blocks`, former $`j_4`$ | $`\beta^\circ\check n_3`$ |
-| Former $`A_4`$ | $`\check{\mathcal O}_4=d\check n_3`$ |
-| Background integer carry, former $`v_3`$ | $`\beta_{s_1}\check\omega_2`$ |
-| `alpha`, former $`\alpha_3`$ | $`\overline{\beta_{s_1}\check\omega_2}`$ |
-| `hw`, former $`h_\omega`$ | $`\widetilde{\beta_{s_1}\check\omega_2}`$ |
-| `ell(w,s)`, former $`\ell^\omega_3`$ | $`\overline{\beta\omega_2}+s_1\omega_2`$ |
-| Background `P`, former $`\mathcal P_s(W)`$ | $`\mathcal P_{s_1}(\check\omega_2)`$ |
-| `Bp`, former $`B'`$ | $`\beta'_4=\beta_4(n'_2,\check n'_3)`$ |
+| `beta_open(u)`, local `b` in `full3/source.py:blocks`, former $`j_4`$ | $`\beta^-\widetilde{n}_3`$ |
+| Former $`A_4`$ | $`\widetilde{\mathcal O}_4=d\widetilde{n}_3`$ |
+| Background integer carry, former $`v_3`$ | $`\beta_{s_1}\widetilde{\omega}_2`$ |
+| `alpha`, former $`\alpha_3`$ | $`[\beta_{s_1}\widetilde{\omega}_2]_2`$ |
+| `hw`, former $`h_\omega`$ | $`[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2`$ |
+| `ell(w,s)`, former $`\ell^\omega_3`$ | $`[\beta\omega_2]_2+s_1\omega_2`$ |
+| Background `P`, former $`\mathcal P_s(W)`$ | $`\mathcal P_{s_1}(\widetilde{\omega}_2)`$ |
+| `Bp`, former $`B'`$ | $`\beta'_4=\beta_4(n'_2,\widetilde{n}'_3)`$ |
 | `la`, dictionary key `lambda`, former $`\lambda`$ | $`\lambda_3`$ |
-| `r`, `rp` in `collected_blocks` | $`\bar \beta_4,\bar \beta'_4`$ |
-| `l` in `collected_blocks` | $`\bar\lambda_3`$ |
+| `r`, `rp` in `collected_blocks` | $`[\beta_4]_2,[\beta'_4]_2`$ |
+| `l` in `collected_blocks` | $`[\lambda_3]_2`$ |
 | Former $`R`$ | Ordered integer product $`n'_2n_2`$ |
 | Former $`D`$ | $`\Delta \beta_4=d\lambda_3-n'_2n_2`$ |
-| `Db` | $`\overline{\Delta \beta_4}`$ |
+| `Db` | $`[\Delta \beta_4]_2`$ |
 | `V5` | $`V_5`$, the binary quarter numerator; $`\mathcal V_5`$ denotes the stacked bosonic phase |
 | `Phi5` | The expanded lower-field portion of the half-valued bracket in [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
 | `Pi5` | The expanded integer terms accompanying $`V_5`$ in the quarter-valued bracket of [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
@@ -182,7 +182,7 @@ Frozen coefficient files and runtime identifiers keep their historical spellings
 In serialized field labels, `B_3` and `B_4` mean $`\beta_3`$ and
 $`\beta_4`$; bars, digits, primes, and physical superscripts are preserved.
 In particular, `B_4^psi` and `barB4gamma` denote
-$`\beta_4^\psi`$ and $`\bar\beta_4^\gamma`$. The runtime function
+$`\beta_4^\psi`$ and $`[\beta_4^\gamma]_2`$. The runtime function
 `R5` evaluates the phase primitive $`\widehat B_5`$; the earlier
 $`\Lambda_5`$ and $`G_4`$ are $`\widehat B_5^{\mathrm{ref}}`$ and
 $`\widehat B_4^{\mathrm{out}}`$. Historical face-set labels
@@ -206,24 +206,24 @@ The former source-sum names are now expanded in the
 
 In particular, the source variable `H` includes the complex-fermion terms;
 it was never just the former $`\mathcal H_6`$. The other entries `Pn,Wnn`
-returned by `blocks` are $`\mathcal P_{s_1}(\check\omega_2)n_2`$ and
-$`\check\omega_2n_2^2`$, with the stated coefficient transports.
+returned by `blocks` are $`\mathcal P_{s_1}(\widetilde{\omega}_2)n_2`$ and
+$`\widetilde{\omega}_2n_2^2`$, with the stated coefficient transports.
 `high_source16` returns the weighted integer numerator for `H,Q,Pn,Wnn`
 with weights `8,4,1,2`; divide it by sixteen to obtain the phase. The 4+1D
 source additionally retains $`n_2^3/12`$.
 
 ## 3+1D parameter fields
 
-The current physical $`3+1`$D fields are $`n_1,\check n_2,n_3`$.
-The retained parameter construction takes $`\check n_3=n_3+\mathcal B_3`$
-in its CF slot and the previous product output $`\check N_3+d\mathcal B_2`$.
+The current physical $`3+1`$D fields are $`n_1,\widetilde{n}_2,n_3`$.
+The retained parameter construction takes $`\widetilde{n}_3=n_3+\mathcal B_3`$
+in its CF slot and the previous product output $`\widetilde{N}_3+d\mathcal B_2`$.
 Its raised fields are defined in
 [T3a–T3c](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3b):
 
 | Earlier notation or construction | Current notation |
 |---|---|
-| $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the triangle; output of `fields_on_triangle` | $`n_2^\triangle,\check n_3^\triangle,n_4^\triangle`$ |
-| $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the interval; output of `fields_on_interval` | $`n_2^I,\check n_3^I,n_4^I`$ |
+| $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the triangle; output of `fields_on_triangle` | $`n_2^\triangle,\widetilde{n}_3^\triangle,n_4^\triangle`$ |
+| $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the interval; output of `fields_on_interval` | $`n_2^I,\widetilde{n}_3^I,n_4^I`$ |
 | $`\theta,\phi,\chi`$ | $`\theta_1,\theta'_1,\chi_1`$ |
 | Former $`J_5=F_5(\mathfrak n,\mathfrak u)`$ | $`\mathcal O_5^\triangle`$ |
 | Former $`\mathcal H_4`$ acting on that source | $`(\mathsf h_4^{(2)})^*`$ |
@@ -239,7 +239,7 @@ not independent lifts of the three fields. The notation-to-runtime map is:
 |---|---|
 | $`\mathop{\mathrm{ev}}\nolimits_5`$ | `lift3_source`, then the signed six-simplex interval sum |
 | $`\mathop{\mathrm{ev}}\nolimits_4`$ | `lift3_product`, then the signed fifteen-simplex triangle sum |
-| $`\uparrow n_1,\uparrow\check n_2,\uparrow n_3`$ | The three components `n,u,c` returned by the relevant lift |
+| $`\uparrow n_1,\uparrow\widetilde{n}_2,\uparrow n_3`$ | The three components `n,u,c` returned by the relevant lift |
 | $`\beta_4^\uparrow,\beta_4^{\psi,\uparrow}`$ | The same integer residuals `B,K` on those components |
 
 The full six-cochain's cubic term has zero transgression on both parameter
@@ -264,7 +264,7 @@ $`q=1,2,3`$ denotes the Majorana degree and spatial dimension is $`q+1`$.
 | `a`, `b` | $`n_q,n'_q`$ |
 | `c`, `cp` | $`n_{q+1},n'_{q+1}`$ |
 | `w`, `s` | $`\omega_2,s_1`$ |
-| `p=a.beta()`, `r=p.reduce()` | $`\beta n_q,\overline{\beta n_q}`$ |
+| `p=a.beta()`, `r=p.reduce()` | $`\beta n_q,[\beta n_q]_2`$ |
 | `second_carry(a)` | $`\beta^+n_q`$ |
 | `n=a+b` in `intrinsic` | $`N_q`$ |
 | `u=cup(a,b,q)` in `intrinsic` | $`n_q\cup_qn'_q`$ |
@@ -322,7 +322,7 @@ source functions and coefficient lists retain their existing identifiers.
 | $`L^\star_5`$ | The shuffle contribution written directly in $`L_5`$, [K11](../docs/formulas/TERMINAL_TRANSFER.md#eq-k11) |
 
 No retained numerical coefficient, word, quotient, or signed transport is
-changed by expanding these names. In particular, a bar on a whole integer
+changed by expanding these names. In particular, $`[\cdot]_2`$ on a whole integer
 numerator fixes the same reduction boundary that the reference evaluator
 expresses with explicit `reduce(2)` and `lift()` calls.
 
@@ -379,19 +379,27 @@ terminal operations are expanded in the main guide, with the finite lift
 and summation rules in the [technical file](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md).
 No compiled program or coefficient table changes in this regrouping.
 
+## Reader notation and archived field labels
+
+The reader formulas use tildes for the explicitly defined changes of cochain variables and $`\beta^-x=(dx-[dx]_2)/2`$ for the integer carry of a possibly nonclosed binary cochain.
+Binary reduction is $`[x]_2`$, and the second binary digit is $`[\lfloor x/2\rfloor]_2`$.
+Frozen coefficient files retain their original field labels so their checksums and recorded calculations remain reproducible.
+In those files, `check` denotes the current tilde, `beta_open` denotes $`\beta^-`$, and an old `tilde` field denotes the explicit second binary digit.
+These are translations of labels, with no change to the cochains, coefficients, or numerical API.
+
 ## GitHub script-glyph encoding
 
 The reader Markdown writes `\mathcal{ℰ}` and `\mathcal{𝒪}` for the same
 stacking correction and obstruction denoted by `\mathcal{E}` and
 `\mathcal{O}` in TeX. GitHub's native MathML display can ignore the script
 font on an ASCII letter; the explicit Unicode script glyph preserves its
-visible shape, including under a hat or check. This is a rendering fallback,
+visible shape, including under a hat or tilde. This is a rendering fallback,
 not a different mathematical symbol or program variable.
 
 For manuscript TeX export, replace `\mathcal{ℰ}` with `\mathcal{E}` and
 `\mathcal{𝒪}` with `\mathcal{O}` before passing the formulas to LaTeX.
 The replacement is literal, including inside `\widehat{...}` and
-`\check{...}`. Formula token comparisons apply the same normalization.
+`\widetilde{...}`. Formula token comparisons apply the same normalization.
 
 ## Exact formula reductions and term counting
 

@@ -17,7 +17,7 @@ in F2. Add all rows modulo two; there are no other rows, recursions, or
 implicit summations.
 
 The cochain names in the table are the physical notation of the principal
-formula. Bars mean parity, and tildes mean the second binary digit. In
+formula. Binary digits are written with explicit floors and reductions modulo two. In
 particular, the second digit of the integral open Bockstein is included
 where printed. Standard Bocksteins of the Majorana differential use its
 binary value; that differential is closed even when the Majorana input
@@ -26,17 +26,17 @@ itself is open.
 These two standard expressions are related by the exact identities
 
 ```math
-d\beta^\circ\check n_3
-=-\beta\overline{d\check n_3},\qquad
-d\overline{\beta^\circ\check n_3}
-=\overline{\beta\overline{d\check n_3}}.
+d\beta^-\widetilde{n}_3
+=-\beta[d\widetilde{n}_3]_2,\qquad
+d[\beta^-\widetilde{n}_3]_2
+=[\beta[d\widetilde{n}_3]_2]_2.
 ```
 
 Thus the Bockstein-of-differential factors in this table and the
 differential-of-Bockstein arguments in the MS table describe the same
 open-input constraint, in integer and binary coefficients respectively.
 The identities follow from the definition of the open Bockstein and
-$`d^2=0`$; they do not impose $`d\check n_3=0`$.
+$`d^2=0`$; they do not impose $`d\widetilde{n}_3=0`$.
 
 This is the fully materialized coefficient list, not an instruction to
 solve for a primitive or evaluate a higher-dimensional field. The
@@ -49,7 +49,7 @@ The explicitly defined lower differentials are legitimate structured
 arguments of higher cochain operations. They need not be expanded into
 their lower decoration fields every time they occur. Here $`d`$ denotes
 the ordinary cochain differential; it is distinct from the AHSS maps
-$`d_r`$. In particular, $`d\check n_3`$ is not assumed to vanish.
+$`d_r`$. In particular, $`d\widetilde{n}_3`$ is not assumed to vanish.
 
 ## Supplemental lower-equation substitution
 

@@ -56,7 +56,7 @@ Equivalently, in the shifted Majorana coordinate,
 
 {{equation:three-dimensional--3-complex-fermion-obstruction--8}}
 
-Here $`d\check n_2=\check\omega_2\bar n_1`$ is fixed by the preceding obstruction.
+Here $`d\widetilde{n}_2=\widetilde{\omega}_2[n_1]_2`$ is fixed by the preceding obstruction.
 
 **p+ip contribution.**
 
@@ -64,7 +64,7 @@ Here $`d\check n_2=\check\omega_2\bar n_1`$ is fixed by the preceding obstructio
 
 {{equation:three-dimensional--3-complex-fermion-obstruction--9}}
 
-The second digit obeys $`d\widetilde n_1=\bar n_1^2+s_1\bar n_1`$.
+The second digit obeys $`d[\lfloor n_1/2\rfloor]_2=[n_1]_2^2+s_1[n_1]_2`$.
 
 ### 4. Bosonic obstruction
 
@@ -80,7 +80,7 @@ fermionic operator reference:
 
 This is an explicit binary coordinate, with the same map as its inverse.
 It is not an extra decoration. Every CF argument in the phase coefficient
-tables is $`\check n_3`$, and every CF differential is $`d\check n_3`$.
+tables is $`\widetilde{n}_3`$, and every CF differential is $`d\widetilde{n}_3`$.
 The source and product are transported together as proved in
 [the reference comparison](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 
@@ -96,9 +96,9 @@ The source and product are transported together as proved in
 {{equation:three-dimensional--complex-fermions-and-majorana-decoration--12}}
 
 The bracket includes the reference correction to the preceding parity:
-$`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2\check n_2
-+\omega_2\check n_2+s_1\mathrm{Sq}^1\check n_2+d\mathcal B_3`$.
-Its mixed component retains the terms proportional to $`d\check n_2`$;
+$`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2\widetilde{n}_2
++\omega_2\widetilde{n}_2+s_1\mathrm{Sq}^1\widetilde{n}_2+d\mathcal B_3`$.
+Its mixed component retains the terms proportional to $`d\widetilde{n}_2`$;
 no closed-input assumption is made. The outer superscript records the
 exchanged fermion operators. Reusing their full parity does not change
 that physical origin.
@@ -112,8 +112,8 @@ that physical origin.
 The finite sum contains **seven specified MS terms**,
 [listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices).
 Together with the three displayed cups, this gives **ten terms**.
-Every MS term contains $`d\check n_2=\check\omega_2\bar n_1`$ and
-$`d\check n_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3
+Every MS term contains $`d\widetilde{n}_2=\widetilde{\omega}_2[n_1]_2`$ and
+$`d\widetilde{n}_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3
 +\mathcal{𝒪}_4^\psi`$. Thus the complex-fermion exchange correction
 depends on its full lower parity differential. The
 [exact reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
@@ -123,7 +123,7 @@ changes neither the source representative nor the paired stacking law.
 
 {{equation:three-dimensional--majorana-decoration--14}}
 
-Here $`\beta^\circ x=(dx-\overline{dx})/2`$, with the first differential
+Here $`\beta^- x=(dx-[dx]_2)/2`$, with the first differential
 formed in integers. It agrees with the ordinary Bockstein on a cocycle.
 The word operations are
 
@@ -134,8 +134,8 @@ The intrinsic Adem cochain of a binary two-cochain $`x`$ is
 {{equation:majorana-and-endpoints--majorana-contribution--24}}
 
 This operation has four word terms. The closed-Majorana presentation
-uses this same expression with $`\check n_2=n_2`$ and
-$`\beta^\circ=\beta`$; no phase redefinition is involved.
+uses this same expression with $`\widetilde{n}_2=n_2`$ and
+$`\beta^-=\beta`$; no phase redefinition is involved.
 
 #### Majorana and p+ip decoration
 
@@ -149,7 +149,7 @@ The integer carry and the twisted Bockstein are
 
 {{equation:three-dimensional--majorana-and-p-ip-decoration--17}}
 
-Both divisions are exact. The product $`\check\omega_2n_1`$ has the
+Both divisions are exact. The product $`\widetilde{\omega}_2n_1`$ has the
 local-coefficient transport of its two signed integer factors.
 The finite index set $`\mathcal I_5^{\gamma\psi}`$ is defined in the
 [coefficient appendix](THREE_DIMENSIONAL_WORD_INDICES.md#final-physical-index-sets).
@@ -238,7 +238,7 @@ The finite pair reference is
 
 {{equation:three-dimensional-geometric-reference--pair-cochain}}
 
-The two checked quantities needed by the phase formulas are
+The two shifted quantities needed by the phase formulas are
 
 {{equation:three-dimensional-geometric-reference--phase-input-product}}
 
@@ -261,15 +261,15 @@ It retains the complex-fermion completion and uses the same phase representative
 
 {{equation:three-dimensional--complex-fermions-and-majorana-decoration--29}}
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_3,\check N_2)`$ minus the values at $`(n_3,\check n_2)`$ and $`(n'_3,\check n'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential and the $`d\mathcal B_3`$ terms. The last term transports the output evaluation to its actual face reference.
+The $`\Delta`$ has its defined three terms: the value at $`(N_3,\widetilde{N}_2)`$ minus the values at $`(n_3,\widetilde{n}_2)`$ and $`(n'_3,\widetilde{n}'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential and the $`d\mathcal B_3`$ terms. The last term transports the output evaluation to its actual face reference.
 
 #### Complex fermions and p+ip decoration
 
 {{equation:three-dimensional--complex-fermions-and-p-ip-decoration--30}}
 
 The two unchanged face brackets contain **13 products** after distributing the
-binary parentheses: eight multiply $`d\check n_3`$ and five multiply $`d\check n'_3`$.
-Their CF differentials are $`d\check n_3`$ and $`d\check n'_3`$. They replace the former 132-word sum exactly, as proved in the
+binary parentheses: eight multiply $`d\widetilde{n}_3`$ and five multiply $`d\widetilde{n}'_3`$.
+Their CF differentials are $`d\widetilde{n}_3`$ and $`d\widetilde{n}'_3`$. They replace the former 132-word sum exactly, as proved in the
 [exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md).
 The lower Majorana differentials retain their physical meanings.
 
@@ -289,9 +289,9 @@ The binary completion is
 
 {{equation:three-dimensional--majorana-decoration--32}}
 
-Here $`\mathcal{ℰ}_3^\gamma=\check n_2\cup_1\check n'_2
-+s_1(\check n_2\cup_2\check n'_2)`$ and
-$`\beta^{\circ+}x=(\beta^\circ x+\overline{\beta^\circ x})/2`$.
+Here $`\mathcal{ℰ}_3^\gamma=\widetilde{n}_2\cup_1\widetilde{n}'_2
++s_1(\widetilde{n}_2\cup_2\widetilde{n}'_2)`$ and
+$`\beta^{-+}x=(\beta^- x+[\beta^- x]_2)/2`$.
 Its intrinsic binary polynomial is
 
 {{equation:three-dimensional--majorana-decoration--33}}
@@ -355,9 +355,9 @@ Every pair $`(f,g)`$ is printed in the
 Its 173 factored rows group 306 integer-digit monomials by common
 background coefficients; neither of those two row counts is the expanded
 term count. Each table entry contains
-only $`\bar n_1`$, $`\widetilde n_1`$, their primed counterparts, the
-explicit third digit $`\overline{\lfloor n_1/4\rfloor}`$, and the
-physical faces of $`s_1`$, $`\omega_2`$, and $`\check\omega_2`$.
+only $`[n_1]_2`$, $`[\lfloor n_1/2\rfloor]_2`$, their primed counterparts, the
+explicit third digit $`[\lfloor n_1/4\rfloor]_2`$, and the
+physical faces of $`s_1`$, $`\omega_2`$, and $`\widetilde{\omega}_2`$.
 
 #### Physical fields, carries, and arithmetic
 
@@ -371,9 +371,9 @@ All cochain Steenrod squares include their differential terms. The integer carri
 
 Every binary field in an integer expression means its canonical zero-or-one
 lift. Bars on full sums retain their complete reduction boundary. The
-integer products in $`\check\omega_2n_1`$ and $`n_1n'_1`$ use the inherited
+integer products in $`\widetilde{\omega}_2n_1`$ and $`n_1n'_1`$ use the inherited
 local systems; the latter is closed and untwisted. In particular the full
-residual satisfies $`d\beta_3=(\beta_{s_1}\check\omega_2)n_1`$, whereas differentiating
+residual satisfies $`d\beta_3=(\beta_{s_1}\widetilde{\omega}_2)n_1`$, whereas differentiating
 $`\beta_3^\psi`$ alone need not give that expression. The origin selection uses the
 full legal derivative before selecting its p+ip descendant.
 

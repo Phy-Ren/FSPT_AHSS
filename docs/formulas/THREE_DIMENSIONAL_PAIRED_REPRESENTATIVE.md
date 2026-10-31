@@ -3,10 +3,10 @@
 # Auxiliary phase comparison in 3+1D
 
 This retained comparison is evaluated after the current lower-field map
-$`n_3\mapsto\check n_3=n_3+\mathcal B_3`$. Its output is
-$`\check N_3+d\mathcal B_2`$. The current formulas additionally include
+$`n_3\mapsto\widetilde{n}_3=n_3+\mathcal B_3`$. Its output is
+$`\widetilde{N}_3+d\mathcal B_2`$. The current formulas additionally include
 the explicit face phase in [the geometric reference](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
-In this auxiliary calculation only, symbols without checks on the CF field denote that mapped field.
+In this auxiliary calculation only, symbols without tildes on the CF field denote that mapped field.
 The following terminal change then applies:
 
 ```math
@@ -15,8 +15,8 @@ The following terminal change then applies:
  &=\widehat\nu_4^{\rm native}+\widehat B_4,\\
 \widehat B_4
  &=\widehat B_4^{c,*}+\frac14B_4^{\mathrm{int}}
- -\frac12[s_1n_3+H_4[\check n_2]+(dn_3)\cup_4[\mathcal{𝒪}_4^\gamma[\check n_2]+\check n_2^2]]
- -\frac14\check n_2^2,\\
+ -\frac12[s_1n_3+H_4[\widetilde{n}_2]+(dn_3)\cup_4[\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]+\widetilde{n}_2^2]]
+ -\frac14\widetilde{n}_2^2,\\
 \widehat{\mathcal{𝒪}}_5^{\rm new}
  &=\widehat{\mathcal{𝒪}}_5^{\rm native}+d_{s_1}\widehat B_4,\\
 \widehat{\mathcal{ℰ}}_4^{\rm new}
@@ -41,21 +41,21 @@ formulas, which contain no auxiliary field evaluation.
 The interval and triangle cochains, orientation, normalized shuffle sums,
 and first-vertex coefficient transport are fixed in
 [the retained mathematical construction](THREE_DIMENSIONAL_TERMINAL.md).
-For the following comparison only, write `n=n1,m=n1prime`,
-`u=check n2,v=check n2prime`, and `W=check omega2`. Their integral residuals are
+For the following comparison only, write $`n=n_1,m=n'_1`$, $`u=\widetilde{n}_2,v=\widetilde{n}'_2`$, and $`W=\widetilde{\omega}_2`$.
+Their integral residuals are
 
 ```math
 \beta_3=(du+Wn)/2,\qquad \beta'_3=(dv+Wm)/2,\qquad
-\lambda=(u+v+nm-\overline{u+v+\bar n\bar m})/2.
+\lambda=(u+v+nm-[u+v+[n]_2[m]_2]_2)/2.
 ```
 
 On the triangle let `theta,phi,chi` be its fixed one-cochains and let
 `mathcal U` be the retained binary Majorana lift. Explicitly,
 
 ```math
-\mathcal U=\theta u+\phi v+(W\cup_1\theta)\bar n
- +(W\cup_1\phi)\bar m+\chi(\bar n\bar m)
- +\theta(\bar n\cup_1\phi)\bar m.
+\mathcal U=\theta u+\phi v+(W\cup_1\theta)[n]_2
+ +(W\cup_1\phi)[m]_2+\chi([n]_2[m]_2)
+ +\theta([n]_2\cup_1\phi)[m]_2.
 ```
 
 Use the canonical binary value of this entire sum in the integer quotient
@@ -132,7 +132,7 @@ characteristic gauge is the following integer cochain:
 ```math
 B_3^{\mathrm{int},\gamma}
  =2\lambda_\gamma\cup_1\lambda_\gamma
- +(\beta^\circ u+\beta^\circ v)\cup_2\lambda_\gamma
+ +(\beta^- u+\beta^- v)\cup_2\lambda_\gamma
  +(d\lambda_\gamma)\cup_3d\lambda_\gamma.
 ```
 
@@ -142,7 +142,7 @@ Finally let
 \begin{aligned}
 \widehat B_3^{\mathrm{ord}}={}&\frac12\big[
  (u\cup_1v+s_1(u\cup_2v))\cup_3(n_3+n'_3)
- +H_3^{\rm pure}[u,v]\big]+\frac14\overline{u\cup_1v},\\
+ +H_3^{\rm pure}[u,v]\big]+\frac14[u\cup_1v]_2,\\
 \widehat B_3={}&\frac12(B_3^c-B_3^{c\gamma})
  -\frac14(B_3^{\mathrm{int}}-B_3^{\mathrm{int},\gamma})
  -\widehat B_3^{\mathrm{ord}}.

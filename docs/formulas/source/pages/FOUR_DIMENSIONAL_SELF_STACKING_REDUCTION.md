@@ -11,7 +11,7 @@ For every binary degree-three cochain,
 {{equation:four-dimensional-self-stacking-reduction--open-majorana-cochains--1}}
 
 These are cochain identities, including the differential terms in the
-Steenrod square. They do not require $`d\check n_3=0`$.
+Steenrod square. They do not require $`d\widetilde{n}_3=0`$.
 Using these relations and the closed-background equations, the earlier
 218 MS terms in the self-stacking coefficient have the following exact
 pointwise replacement:
@@ -43,13 +43,13 @@ Majorana carry is fixed by the lower obstruction:
 
 Here $`\beta`$ is the ordinary integer Bockstein of a closed binary
 cochain. Its input is closed because
-$`\check{\mathcal{𝒪}}_4[n_2]=d\check n_3`$ on this tower.
+$`\widetilde{\mathcal{𝒪}}_4[n_2]=d\widetilde{n}_3`$ on this tower.
 For an arbitrary binary cochain, the defining integer identity is
 
 {{equation:four-dimensional-self-stacking-reduction--the-lower-obstruction-inside-the-fractional-correcti--4}}
 
-where the unbarred differential is taken over the integers on the
-canonical input values, and the whole bar gives its binary reduction
+where the differential outside $`[\cdot]_2`$ is taken over the integers on the
+canonical input values, and $`[\cdot]_2`$ gives its binary reduction
 before the integer subtraction. Applying $`d`$ and using $`d^2=0`$ proves the stated carry
 identity. Thus the quarter-valued self-stacking term can be written
 

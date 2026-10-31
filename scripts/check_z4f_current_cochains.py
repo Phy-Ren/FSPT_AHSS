@@ -45,7 +45,7 @@ def phase_transport_functions():
     pure = []
     for block in text.split('## Coefficient block ')[1:]:
         args = re.search(r'```math\n\((.*?)\)\.\n```', block, re.S).group(1).split(',')
-        if r'd\check n_3' not in args:
+        if r'd\widetilde{n}_3' not in args:
             words = re.search(r'```text\n(.*?)\n```', block, re.S).group(1).split()
             pure.extend((word, args) for word in words)
     assert len(pure) == 85

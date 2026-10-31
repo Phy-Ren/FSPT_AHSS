@@ -1,7 +1,7 @@
 # Self-stacking in 3+1D with no p+ip decoration
 
 The current complex-fermion coordinate is the geometric pairing occupation.
-Use $`\check n_3=n_3+n_2\cup_1n_2`$ in the phase blocks below.
+Use $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$ in the phase blocks below.
 The point-fermion phase includes $`(\omega_2n_2+n_2^2)/2`$ from the output reference conversion.
 The old ten-term coefficient certificate is a retained kernel, not the complete current phase.
 
@@ -33,7 +33,7 @@ removed. The remaining intrinsic binary terms reduce using
 {{equation:three-dimensional-majorana-self-stacking--why-the-intrinsic-word-terms-disappear--9}}
 
 This identity has **three specified terms**. The other copy of
-$`\overline{\beta x}\cup_1x/2`$ cancels the half-valued reduction of
+$`[\beta x]_2\cup_1x/2`$ cancels the half-valued reduction of
 $`(\beta x)\cup_1x/2`$ in the integer part.
 
 Finally, for three binary degree-four cochains, their three pairwise
@@ -41,7 +41,7 @@ pointwise products give exactly the carry between the integer sum of
 individual values and the canonical value of their binary sum, modulo
 one after division by two. Apply this to
 $`n_2^2`$, $`\omega_2n_2`$, and
-$`s_1\overline{\beta n_2}`$. Their binary sum is the already defined
+$`s_1[\beta n_2]_2`$. Their binary sum is the already defined
 $`\mathcal{𝒪}_4^\gamma`$. This accounts for the whole obstruction in the
 quarter bracket without dropping its carry.
 

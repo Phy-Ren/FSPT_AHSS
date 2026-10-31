@@ -8,9 +8,9 @@ lower obstruction remains a defined standard operation. This is an exact
 identity modulo one, with no change of source, lower product, output gauge,
 or physical contribution.
 
-The result holds for an arbitrary binary two-cochain $`\check n_2`$, not just
+The result holds for an arbitrary binary two-cochain $`\widetilde{n}_2`$, not just
 a cocycle. It therefore applies to the canonical p+ip torsion branch with
-$`d\check n_2=\check\omega_2s_1`$. No integer output gauge has been applied.
+$`d\widetilde{n}_2=\widetilde{\omega}_2s_1`$. No integer output gauge has been applied.
 
 ## Replacement formula
 
@@ -19,43 +19,43 @@ On the ordered four-simplex, the complete contribution is
 ```math
 \begin{aligned}
 \widehat{\mathcal{ℰ}}_4^\gamma(01234)
-={}&\frac12\check n_2(012)\check n_2(123)\check n_2(234)
-                          (d\check n_2)(0134)\\
+={}&\frac12\widetilde{n}_2(012)\widetilde{n}_2(123)\widetilde{n}_2(234)
+                          (d\widetilde{n}_2)(0134)\\
 &+\frac12\Big[
- \mathop{\mathrm{MS}}\nolimits_{123131}(\check n_2,\check n_2,
-                            \check n_2\cup_1\check n_2)\\
-&\quad +(\check n_2\cup_2d\check n_2)\cup_1\check n_2
- +\check n_2\cup_1(\check n_2\cup_1\check n_2)\\
-&\quad +\check n_2\cup_2
-      [\check n_2\cup_1(\check n_2\cup_1\check n_2)]
- +\check n_2^2\\
-&\quad +(\omega_2\cup_1s_1)\check n_2
- +(\check n_2\cup_1\check n_2)\cup_2(s_1\check n_2)
- +s_1^2\check n_2
- +s_1\big[(s_1\check n_2)\cup_2\check n_2\big]
+ \mathop{\mathrm{MS}}\nolimits_{123131}(\widetilde{n}_2,\widetilde{n}_2,
+                            \widetilde{n}_2\cup_1\widetilde{n}_2)\\
+&\quad +(\widetilde{n}_2\cup_2d\widetilde{n}_2)\cup_1\widetilde{n}_2
+ +\widetilde{n}_2\cup_1(\widetilde{n}_2\cup_1\widetilde{n}_2)\\
+&\quad +\widetilde{n}_2\cup_2
+      [\widetilde{n}_2\cup_1(\widetilde{n}_2\cup_1\widetilde{n}_2)]
+ +\widetilde{n}_2^2\\
+&\quad +(\omega_2\cup_1s_1)\widetilde{n}_2
+ +(\widetilde{n}_2\cup_1\widetilde{n}_2)\cup_2(s_1\widetilde{n}_2)
+ +s_1^2\widetilde{n}_2
+ +s_1\big[(s_1\widetilde{n}_2)\cup_2\widetilde{n}_2\big]
  \Big](01234)\\
 &+\frac14\Big[
- (\beta^\circ\check n_2)\cup_2(\beta^\circ\check n_2)
- -s_1\overline{\beta^\circ\check n_2}\\
+ (\beta^-\widetilde{n}_2)\cup_2(\beta^-\widetilde{n}_2)
+ -s_1[\beta^-\widetilde{n}_2]_2\\
 &\hspace{13mm}
- -\overline{\mathcal{𝒪}_4^\gamma[\check n_2]
-             +s_1(\check n_2\cup_2d\check n_2)}
+ -[\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]
+             +s_1(\widetilde{n}_2\cup_2d\widetilde{n}_2)]_2
  \Big](01234).
 \end{aligned}
 ```
 
-The whole bar in the last line is essential. It is evaluated in binary
+The reduction of the whole expression in the last line is essential. It is evaluated in binary
 coefficients before taking its canonical integer lift. Its interior has
 **two terms**, retaining the already defined lower differential
 
 ```math
-\mathcal{𝒪}_4^\gamma[\check n_2]
- =\check n_2^2+s_1(\check n_2\cup_1\check n_2)
-  +\omega_2\check n_2.
+\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]
+ =\widetilde{n}_2^2+s_1(\widetilde{n}_2\cup_1\widetilde{n}_2)
+  +\omega_2\widetilde{n}_2.
 ```
 
 Equivalently, its interior is
-$`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\check n_2]+d\check n_2\cup_1\check n_2`$.
+$`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\widetilde{n}_2]+d\widetilde{n}_2\cup_1\widetilde{n}_2`$.
 The two-term expression above avoids expanding and then cancelling that
 additional lower-source term. No new polynomial symbol is introduced in
 the reader formula.
@@ -68,23 +68,23 @@ the half-valued sum:
 ```math
 \begin{aligned}
  &\frac12\Big[
- \check n_2^2\cup_4(\omega_2\check n_2)
- +(\check n_2^2+\omega_2\check n_2)
-             \cup_4(s_1\overline{\beta^\circ\check n_2})
- +s_1\overline{\beta^\circ\check n_2}\Big]\\
+ \widetilde{n}_2^2\cup_4(\omega_2\widetilde{n}_2)
+ +(\widetilde{n}_2^2+\omega_2\widetilde{n}_2)
+             \cup_4(s_1[\beta^-\widetilde{n}_2]_2)
+ +s_1[\beta^-\widetilde{n}_2]_2\Big]\\
  &\hspace{25mm}
- +\frac14\big[\check n_2^2-\omega_2\check n_2\big].
+ +\frac14\big[\widetilde{n}_2^2-\omega_2\widetilde{n}_2\big].
 \end{aligned}
 ```
 
 They are replaced by exactly three outer terms:
 
 ```math
-\frac12\check n_2^2
+\frac12\widetilde{n}_2^2
  -\frac14\Big[
- s_1\overline{\beta^\circ\check n_2}
- +\overline{\mathcal{𝒪}_4^\gamma[\check n_2]
-             +s_1(\check n_2\cup_2d\check n_2)}\Big].
+ s_1[\beta^-\widetilde{n}_2]_2
+ +[\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]
+             +s_1(\widetilde{n}_2\cup_2d\widetilde{n}_2)]_2\Big].
 ```
 
 Every other term is unchanged. This is a use of the intrinsic lower
@@ -97,7 +97,7 @@ For a binary degree-two cochain $`u`$, the open Bockstein satisfies the exact
 cochain identity
 
 ```math
-\overline{\beta^\circ u}
+[\beta^- u]_2
  =u\cup_1u+u\cup_2du=\mathrm{Sq}^1u.
 ```
 
@@ -106,18 +106,18 @@ on a three-simplex. The exact certificate checks all coefficients without
 assuming $`du=0`$. Therefore
 
 ```math
-u^2+\omega_2u+s_1\overline{\beta^\circ u}
+u^2+\omega_2u+s_1[\beta^- u]_2
  =\mathcal{𝒪}_4^\gamma[u]+s_1(u\cup_2du)
 ```
 
 in binary coefficients.
 
 For this proof only, write the three binary values on the four-simplex
-as $`X=u^2`$, $`Y=\omega_2u`$, and $`Z=s_1\overline{\beta^\circ u}`$. Their separate integer
+as $`X=u^2`$, $`Y=\omega_2u`$, and $`Z=s_1[\beta^- u]_2`$. Their separate integer
 values are all zero or one. The elementary lift identity is
 
 ```math
-\overline{X+Y+Z}
+[X+Y+Z]_2
  =X+Y+Z-2(XY+XZ+YZ)+4XYZ.
 ```
 
@@ -125,7 +125,7 @@ Consequently, as phases modulo one,
 
 ```math
 \frac12\big[XY+(X+Y)Z+Z\big]+\frac14(X-Y)
- =\frac12X-\frac14\big[Z+\overline{X+Y+Z}\big].
+ =\frac12X-\frac14\big[Z+[X+Y+Z]_2\big].
 ```
 
 The top cup $`\cup_4`$ of binary degree-four cochains is their pointwise
