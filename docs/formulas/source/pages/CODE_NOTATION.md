@@ -8,7 +8,7 @@ They do not introduce additional fields into the formulas. The numerical kernels
 
 The explicit $`4+1`$D Majorana stacking expression additionally uses the
 [displayed output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md):
-subtract $`d_{s_1}\widehat B_4^{\mathrm{out}}`$ from the previous terminal product cochain, and add
+subtract $`d_{s_1}B_4^{\mathrm{out}}`$ from the previous terminal product cochain, and add
 it for the inverse comparison. The obstruction is unchanged since
 $`d_{s_1}^2=0`$. This is a documented representative conversion; no runtime
 algorithm or stored classification/stacking result was modified.
@@ -75,11 +75,12 @@ it is not the parity variable called `b` inside some readable definitions.
 The returned product value is a correction, not the entire output $`N_j`$.
 The lower input sums and the phase sum are added by the caller.
 
-The additive phase $`\widehat\nu_{d+1}`$ is not one of the five lower source
+The additive phase $`\nu_{d+1}`$ is not one of the five lower source
 inputs. A terminal source or product call returns a `Fraction` modulo one,
-representing $`\widehat{\mathcal O}_{d+2}`$ or
-$`\widehat{\mathcal E}_{d+1}`$. The multiplicative phase is always
-$`\nu_{d+1}=\exp(2\pi i\widehat\nu_{d+1})`$. The readable reference functions
+representing $`\mathcal O_{d+2}`$ or
+$`\mathcal E_{d+1}`$.
+The same symbol $`\nu_{d+1}`$ denotes the multiplicative phase; exponentiating the additive value gives its $`U(1)`$ value.
+The readable reference functions
 ending in `16` or `48` instead return integer numerators with the indicated
 denominator; their raw values must be divided accordingly.
 
@@ -178,9 +179,9 @@ In serialized field labels, `B_3` and `B_4` mean $`\beta_3`$ and
 $`\beta_4`$; bars, digits, primes, and physical superscripts are preserved.
 In particular, `B_4^psi` and `barB4gamma` denote
 $`\beta_4^\psi`$ and $`[\beta_4^\gamma]_2`$. The runtime function
-`R5` evaluates the phase primitive $`\widehat B_5`$; the earlier
-$`\Lambda_5`$ and $`G_4`$ are $`\widehat B_5^{\mathrm{ref}}`$ and
-$`\widehat B_4^{\mathrm{out}}`$. Historical face-set labels
+`R5` evaluates the phase primitive $`B_5`$; the earlier
+$`\Lambda_5`$ and $`G_4`$ are $`B_5^{\mathrm{ref}}`$ and
+$`B_4^{\mathrm{out}}`$. Historical face-set labels
 $`\mathcal C_q^\psi`$ mean $`\mathcal I_q^{\psi,\mathrm{face}}`$;
 tensor-set labels $`\mathcal C_{2,3},\mathcal C_{3,2}`$ mean
 $`\mathcal I_{2,3},\mathcal I_{3,2}`$. These are notation changes;
@@ -197,7 +198,7 @@ The former source-sum names are now expanded in the
 | Former $`\mathcal H_6`$ | The half-valued Majorana, p+ip, and mixed contributions after subtracting those complex-fermion terms |
 | Local `Q`, former $`\mathcal Q_6`$ | All quarter-valued source terms, including the separately displayed subtraction |
 | `cartan_word`, former $`\mathcal C_6`$ | The complete reduced background-and-digit polynomial in that subtraction |
-| Former $`\widehat{\mathcal O}^{\mathrm{base}}_6`$ | The complete source before the final ordered cubic term |
+| Former $`\mathcal O^{\mathrm{base}}_6`$ | The complete source before the final ordered cubic term |
 
 In particular, the source variable `H` includes the complex-fermion terms;
 it was never just the former $`\mathcal H_6`$. The other entries `Pn,Wnn`
@@ -264,7 +265,7 @@ $`q=1,2,3`$ denotes the Majorana degree and spatial dimension is $`q+1`$.
 | `n=a+b` in `intrinsic` | $`N_q`$ |
 | `u=cup(a,b,q)` in `intrinsic` | $`n_q\cup_qn'_q`$ |
 | `t=cup(a,b,q-1)` in `intrinsic` | $`n_q\cup_{q-1}n'_q`$ |
-| `gamma(a,w,s)` | Pure Majorana source $`\widehat{\mathcal O}^\gamma_{q+3}`$ |
+| `gamma(a,w,s)` | Pure Majorana source $`\mathcal O^\gamma_{q+3}`$ |
 | `operator_gauge(c)` | $`\tfrac12n_{q+1}\cup_{q+1}dn_{q+1}`$ |
 
 The coordinate string `operator` selects the reader's displayed phase
@@ -289,7 +290,7 @@ The degree-zero fMPS endpoint in `fspt/full_formula/fmps1.py` uses:
 |---|---|
 | `gamma=a` | $`n_0`$ |
 | `beta=c` | $`n_1`$ |
-| `alpha=v` | $`\widehat\nu_2`$ |
+| `alpha=v` | $`\nu_2`$ |
 
 Here `beta` names a **field**, whereas $`\beta`$ elsewhere in the formulas
 denotes the Bockstein operation. The coordinate identifier remains
@@ -333,9 +334,9 @@ expresses with explicit `reduce(2)` and `lift()` calls.
 | 4+1D $`\mathcal E_3`$; [P1–P2](../docs/formulas/FOUR_DIMENSIONAL.md#eq-p1-4d) | `product`, stage `majorana` | `product_4_majorana` |
 | 3+1D $`\mathcal E_3`$; [P3](../docs/formulas/THREE_DIMENSIONAL.md#eq-p3) | `product`, stage `fermion` | `product_3_fermion` |
 | 4+1D $`\mathcal E_4`$; [P4–P5](../docs/formulas/FOUR_DIMENSIONAL.md#eq-p4) | `product`, stage `fermion` | `product_4_fermion` |
-| $`\widehat{\mathcal O}_5,\widehat{\mathcal E}_4`$; [T3](../docs/formulas/THREE_DIMENSIONAL.md#eq-t3) | `full3/source.py:source16,product16` | `lift3_source`, `lift3_product`, `high6` |
-| $`\widehat{\mathcal O}_6`$; [T4](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4) | `full4/product_full.py:full_source48` and runtime assembly | `high6` |
-| $`\widehat{\mathcal E}_5`$; [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a) | `full4/product_full.py:phase48` | `nonbinary4`, `rho4`, `tensor4` |
+| $`\mathcal O_5,\mathcal E_4`$; [T3](../docs/formulas/THREE_DIMENSIONAL.md#eq-t3) | `full3/source.py:source16,product16` | `lift3_source`, `lift3_product`, `high6` |
+| $`\mathcal O_6`$; [T4](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4) | `full4/product_full.py:full_source48` and runtime assembly | `high6` |
+| $`\mathcal E_5`$; [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a) | `full4/product_full.py:phase48` | `nonbinary4`, `rho4`, `tensor4` |
 | Closed-Majorana source/product; [3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d), [4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d), [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d) | `ClosedMajoranaBackend`, `majorana_complete.py` | `majorana_{q}_{operation}_{coordinate}` |
 | fMPS source and product; [M13–M14](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m13) | `FMPS1Backend.source`, `FMPS1Backend.product` | Direct exact endpoint evaluation |
 
@@ -379,6 +380,7 @@ No compiled program or coefficient table changes in this regrouping.
 The reader formulas use tildes for the explicitly defined changes of cochain variables and $`\beta^-x=(dx-[dx]_2)/2`$ for the integer carry of a possibly nonclosed binary cochain.
 Binary reduction is $`[x]_2`$, and the second binary digit is $`[\lfloor x/2\rfloor]_2`$.
 Frozen coefficient files retain their original field labels so their checksums and recorded calculations remain reproducible.
+The current formulas use the same symbol for a phase and its additive value; an archived phase hat denotes the additive value.
 In those files, `check` denotes the current tilde, `beta_open` denotes $`\beta^-`$, and an old `tilde` field denotes the explicit second binary digit.
 These are translations of labels, with no change to the cochains, coefficients, or numerical API.
 
@@ -388,13 +390,13 @@ The reader Markdown writes `\mathcal{ℰ}` and `\mathcal{𝒪}` for the same
 stacking correction and obstruction denoted by `\mathcal{E}` and
 `\mathcal{O}` in TeX. GitHub's native MathML display can ignore the script
 font on an ASCII letter; the explicit Unicode script glyph preserves its
-visible shape, including under a hat or tilde. This is a rendering fallback,
+visible shape, including under a tilde. This is a rendering fallback,
 not a different mathematical symbol or program variable.
 
 For manuscript TeX export, replace `\mathcal{ℰ}` with `\mathcal{E}` and
 `\mathcal{𝒪}` with `\mathcal{O}` before passing the formulas to LaTeX.
-The replacement is literal, including inside `\widehat{...}` and
-`\widetilde{...}`. Formula token comparisons apply the same normalization.
+The replacement is literal, including inside `\widetilde{...}`.
+Formula token comparisons apply the same normalization.
 
 ## Exact formula reductions and term counting
 

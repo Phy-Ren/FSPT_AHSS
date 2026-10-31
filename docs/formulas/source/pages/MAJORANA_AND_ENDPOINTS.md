@@ -26,8 +26,9 @@ in [Operations](OPERATIONS.md#arithmetic-and-carries).
 The Bockstein $`\beta`$, its second carry $`\beta^+`$, and their signed
 products have untwisted integer coefficients here. The phase instead has
 coefficients $`(\mathbb R/\mathbb Z)_{s_1}`$ and differential $`d_{s_1}`$.
-A hat denotes an additive phase, a prime the second input, and $`N_j`$ the
-stacked binary field. The lower fields and all subscripts are fixed anew
+A phase and its additive value use the same symbol, as in the common notation above.
+A prime denotes the second input, and $`N_j`$ the stacked binary field.
+The lower fields and all subscripts are fixed anew
 at the start of each dimensional section.
 
 The physical formulas below use the manuscript's operator phase coordinate.
@@ -333,7 +334,7 @@ There is no stacking correction in this layer.
 
 **(M7, 3+1D)**
 
-Use the same $`\widehat{\mathcal{ℰ}}_4^\gamma`$ as in the complete
+Use the same $`\mathcal{ℰ}_4^\gamma`$ as in the complete
 3+1D product, with $`\widetilde{n}_2=n_2`$, $`\widetilde{n}'_2=n'_2`$,
 $`\beta^-=\beta`$, and
 $`\lambda_2^\gamma=[n_2\cup_2n'_2]_2`$.
@@ -511,7 +512,7 @@ selected on this subspace.
 {{equation:four-dimensional--majorana-decoration--33}}
 
 The carries and coefficient sets are the shared
-[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`\widehat B_5`$ is the same
+[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`B_5`$ is the same
 [phase-change cochain](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 The earlier compact closed-product expression differs by its explicit
 output coboundary as well as the phase-coordinate comparison. It is not
@@ -529,7 +530,7 @@ second terminal stacking convention.
 
 The physical fields are $`n_0\in Z^0(G_b,\mathbb Z_2)`$,
 $`n_1\in C^1(G_b,\mathbb Z_2)`$, and
-$`\widehat\nu_2\in C^2(G_b,(\mathbb R/\mathbb Z)_{s_1})`$.
+$`\nu_2\in C^2(G_b,(\mathbb R/\mathbb Z)_{s_1})`$.
 There is no integer layer. This fMPS representative is a distinct phase
 coordinate; its physical field names do not imply an unstated coordinate
 transformation to another manuscript representative.
@@ -636,7 +637,7 @@ $`n_0=0`$.
 {{equation:majorana-and-endpoints--majorana-contribution--62}}
 
 Classification also quotients by the residual parity gauge
-$`\widehat\nu_2\sim\widehat\nu_2+\omega_2/2`$; this remains part of the
+$`\nu_2\sim\nu_2+\omega_2/2`$; this remains part of the
 equivalence relation.
 
 <a id="intrinsic-word-products"></a>

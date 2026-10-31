@@ -13,15 +13,15 @@ coordinate without changing the lower decorations:
 
 ```math
 \begin{aligned}
-\widehat\nu_5&=\widehat\nu_5^{\rm previous}-\widehat B_5,\\
-\widehat{\mathcal{𝒪}}_6
- &=\widehat{\mathcal{𝒪}}_6^{\rm previous}-d_{s_1}\widehat B_5,\\
-\widehat{\mathcal{ℰ}}_5
- &=\widehat{\mathcal{ℰ}}_5^{\rm previous}-\Delta \widehat B_5.
+\nu_5&=\nu_5^{\rm previous}-B_5,\\
+\mathcal{𝒪}_6
+ &=\mathcal{𝒪}_6^{\rm previous}-d_{s_1}B_5,\\
+\mathcal{ℰ}_5
+ &=\mathcal{ℰ}_5^{\rm previous}-\Delta B_5.
 \end{aligned}
 ```
 
-Here $`\Delta \widehat B_5`$ is evaluated on the actual lower stacking output and
+Here $`\Delta B_5`$ is evaluated on the actual lower stacking output and
 then subtracts its values on the two inputs. In particular, the shifted
 Majorana output contains the integer-layer correction; it is not simply
 $`\widetilde{n}_3+\widetilde{n}'_3`$. This transport is invertible by adding the same
@@ -31,7 +31,7 @@ five-cochain. It is applied to the source and product together.
 
 ```math
 \begin{aligned}
-\widehat B_5[\widetilde{n}_3,n_4]={}&\frac12\Bigg[
+B_5[\widetilde{n}_3,n_4]={}&\frac12\Bigg[
  \sum_{v\in\mathcal W_5}\mathop{\mathrm{MS}}\nolimits_v
        (\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3,\widetilde{n}_3)
  +\widetilde{n}_3\cup_2[\beta^-\widetilde{n}_3]_2
@@ -145,7 +145,7 @@ uses the complete lower equation for $`dn_4`$, so it changes both the
 Majorana continuation and the pure integer contribution. The latter
 therefore contains $`s_1\mathcal{𝒪}_5^\psi/2`$ in addition to $`y_6/2`$.
 The fixed polynomial $`y_6`$ is unchanged. Likewise the terminal product
-retains the contribution of the full lower twister through $`\Delta \widehat B_5`$.
+retains the contribution of the full lower twister through $`\Delta B_5`$.
 
 The [exact verification receipt](data/four_dimensional_majorana_relative_verification.json)
 checks every coefficient modulo four on 56 independent simplex variables,

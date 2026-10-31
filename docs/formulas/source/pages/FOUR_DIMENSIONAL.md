@@ -101,7 +101,7 @@ that physical origin.
 {{equation:four-dimensional--4-bosonic-obstruction--13}}
 
 These terms use the paired operator phase
-$`\widehat\nu_5^{\rm op}=\widehat\nu_5^{\rm raw}
+$`\nu_5^{\rm op}=\nu_5^{\rm raw}
 +\tfrac12n_4\cup_4dn_4`$, followed by the fixed
 [Majorana phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 Both changes are included in the terminal stacking law. The lower fields
@@ -251,7 +251,7 @@ The two finite polynomials in this contribution are
 The output fields are those of the preceding three stacking laws. The
 following formulas use the operator ordering of the complex-fermion
 contribution. The terminal phase is the same compact-Majorana coordinate as the obstruction above.
-The cochain $`\widehat B_5[\widetilde{n}_3,n_4]`$ is defined once in the
+The cochain $`B_5[\widetilde{n}_3,n_4]`$ is defined once in the
 [paired phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md); its backgrounds
 are kept fixed in every evaluation below. Setting its second argument
 to zero removes only the term $`s_1n_4/2`$.
@@ -312,10 +312,10 @@ retained. This replaces the previous 6,176-term expansion. Defined lower
 differentials, Bocksteins, and binary-addition carries remain structured
 arguments; $`d`$ denotes the cochain differential.
 
-The three displayed $`\widehat B_5`$ evaluations and the term
+The three displayed $`B_5`$ evaluations and the term
 $`-s_1\mathcal{ℰ}_4^\gamma/2`$ transport this expression to the same
 phase coordinate as the compact pure Majorana obstruction. Each
-$`\widehat B_5[x,0]`$ has **44 half-valued terms and one quarter-valued term**;
+$`B_5[x,0]`$ has **44 half-valued terms and one quarter-valued term**;
 the complete 32-word sum and the remaining terms are written in the
 [phase-change definition](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 The inputs $`\widetilde{n}_3+\widetilde{n}'_3`$ are binary sums, including inside
@@ -340,7 +340,7 @@ linear sums and the three quarter numerators adds **1,262 terms**, giving
 their scopes; their complete interior terms are recorded separately in
 the coefficient table.
 
-The three $`\widehat B_5[\cdot,0]`$ evaluations supply the polarization of the
+The three $`B_5[\cdot,0]`$ evaluations supply the polarization of the
 same phase map between $`\widetilde{n}_3+\widetilde{n}'_3`$ and
 $`\widetilde{\mathcal{ℰ}}_3`$; the additional half term uses the already
 defined mixed lower twister. Each evaluation contains 45 explicit
@@ -436,13 +436,13 @@ Their sum is exactly the original binary numerator
 $`V_5=V_5^\gamma+V_5^{\gamma\psi}
 +V_5^\psi`$. Splitting its canonical integer lift produces the
 three half-valued carry terms already included in
-$`\widehat{\mathcal{ℰ}}_5^{\gamma\psi}`$.
+$`\mathcal{ℰ}_5^{\gamma\psi}`$.
 
 The [paired phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is applied to
 both the obstruction and the stacking law. To check the sum of its three
 physical contributions, use the actual lower output
 $`\widetilde{N}_3=\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal{ℰ}}_3`$ and
 $`N_4=n_4+n'_4+\mathcal{ℰ}_4`$. The displayed corrections sum exactly to
-$`-\widehat B_5[\widetilde{N}_3,N_4]+\widehat B_5[\widetilde{n}_3,n_4]+\widehat B_5[\widetilde{n}'_3,n'_4]`$.
+$`-B_5[\widetilde{N}_3,N_4]+B_5[\widetilde{n}_3,n_4]+B_5[\widetilde{n}'_3,n'_4]`$.
 The lower twisters, finite coefficient sets, and existing output coboundary
 are unchanged; the full terminal formula uses this one transported phase.

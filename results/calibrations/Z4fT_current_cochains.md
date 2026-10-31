@@ -5,13 +5,13 @@ $`\omega_2=m_1^2`$, where the normalized bar cochain is
 $`m_1(g)=g`$ for $`g\in\{0,1\}`$.
 Its ordered cup powers are
 $`m_1^q(g_1,\ldots,g_q)=\prod_j g_j`$.
-The additive phase is defined by
-$`\nu_4=\exp(2\pi i\widehat\nu_4)`$.
+The table below gives additive phases in $`\mathbb R/\mathbb Z`$.
+Exponentiating them gives the corresponding $`U(1)`$ amplitudes, denoted by the same symbols when written multiplicatively.
 
 These representatives use the [current 3+1D formulas](../../docs/formulas/THREE_DIMENSIONAL.md)
 in the geometric pairing coordinate.
 
-| Decoration | $`n_1`$ | $`n_2`$ | $`n_3`$ | $`\widehat{\mathcal O}_5`$ | $`\widehat\nu_4`$ |
+| Decoration | $`n_1`$ | $`n_2`$ | $`n_3`$ | $`\mathcal O_5`$ | $`\nu_4`$ |
 |---|---|---|---|---|---|
 | p+ip | $`m_1`$ | $`0`$ | $`0`$ | $`\tfrac12m_1^5`$ | $`\tfrac14m_1^4`$ |
 | Majorana | $`0`$ | $`m_1^2`$ | $`0`$ | $`\tfrac12m_1^5`$ | $`\tfrac14m_1^4`$ |

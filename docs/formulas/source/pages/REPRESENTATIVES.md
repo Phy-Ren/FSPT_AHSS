@@ -28,7 +28,7 @@ $`s_1\ne0`$.
 
 
 
-Write $`\widehat{\mathcal{𝒪}}_{6,\mathrm{raw}}`$ for the earlier source.
+Write $`\mathcal{𝒪}_{6,\mathrm{raw}}`$ for the earlier source.
 This earlier change precedes the operator reordering below. Its source and product use the same coordinates:
 
 <a id="eq-t4e"></a>
@@ -38,7 +38,7 @@ This earlier change precedes the operator reordering below. Its source and produ
 {{equation:representatives--4-1d-historical-source-convention--3}}
 
 The corresponding terminal redefinition contributes
-$`\Delta\widehat B_5^{\mathrm{ref}}`$ to the stacking correction. The separate cubic term
+$`\Delta B_5^{\mathrm{ref}}`$ to the stacking correction. The separate cubic term
 shown in (T4e) is retained in (T4); it is not being called a coboundary.
 
 <a id="operator-phase-4d"></a>
@@ -60,10 +60,10 @@ The actual stacked output is used in the last line. This yields the displayed c,
 ## 4+1D: current compact Majorana phase
 
 The guide then applies the single [explicit phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-$`\widehat\nu_5\mapsto\widehat\nu_5-\widehat B_5[\widetilde{n}_3,n_4]`$.
-Its source changes by $`-d_{s_1}\widehat B_5`$ and its product by $`-\Delta \widehat B_5`$,
+$`\nu_5\mapsto\nu_5-B_5[\widetilde{n}_3,n_4]`$.
+Its source changes by $`-d_{s_1}B_5`$ and its product by $`-\Delta B_5`$,
 evaluated on the same actual lower stacking output. The inverse adds
-$`\widehat B_5`$; every lower decoration and lower product is fixed.
+$`B_5`$; every lower decoration and lower product is fixed.
 
 The [general](FOUR_DIMENSIONAL.md#stacking-4d) and
 [self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md) formulas include this
@@ -81,7 +81,7 @@ gauge and lower-layer changes. A nonzero cochain may be exact; only a
 nontrivial final obstruction class rules out the decoration. Stack accepted
 representatives using the paired product and reduce by the same equivalences.
 
-For a terminal phase change $`\widehat\nu\mapsto\widehat\nu+\widehat B`$, with
+For a terminal phase change $`\nu\mapsto\nu+B`$, with
 lower fields and their product fixed, the source and correction transform
 together:
 

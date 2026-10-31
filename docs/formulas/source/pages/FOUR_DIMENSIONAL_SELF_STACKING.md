@@ -1,7 +1,7 @@
 # Complete 4+1D self-stacking, including p+ip decoration
 
 These formulas give the square of a complete lifted state
-$`(n_2,\widetilde{n}_3,n_4,\widehat\nu_5)`$. Every stacking twister and
+$`(n_2,\widetilde{n}_3,n_4,\nu_5)`$. Every stacking twister and
 coefficient set on this page is specialized to two copies of that same
 input; no extra input label is needed.
 
@@ -27,7 +27,7 @@ odd orders are handled. The complete two-input law remains available; this
 page specifies its exact equal-input specialization. The
 [terminal phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is specialized at
 the same time. Since the binary sum of two equal Majorana inputs is zero,
-$`2\widehat B_5[\widetilde{n}_3,0]=\tfrac12(\widetilde{n}_3\cup_1\widetilde{n}_3)`$ modulo
+$`2B_5[\widetilde{n}_3,0]=\tfrac12(\widetilde{n}_3\cup_1\widetilde{n}_3)`$ modulo
 one; the half-valued part doubles to an integer. This gives the short
 extra terms below directly from the general law.
 
@@ -134,7 +134,7 @@ protected mixed lift has eight interior terms. This large residual is
 preserved as exact verification data and remains a target for structural
 simplification. The additional term
 $`-s_1\mathcal{ℰ}_4^{\gamma\psi}/2`$ is its entire coordinate
-correction on equal inputs: the three general $`\widehat B_5`$ evaluations cancel
+correction on equal inputs: the three general $`B_5`$ evaluations cancel
 exactly here.
 
 ### p+ip decoration
@@ -148,7 +148,7 @@ use the same lower-operation conventions as the general formula. The
 remaining displayed terms add **14 outer terms**, giving **793,683 before the phase transport**.
 The protected pure lift has twelve interior terms. The denominator-three
 term of the general law vanishes identically on equal inputs.
-The extra half term and $`-\widehat B_5[\widetilde{N}_3,0]`$ are the remaining
+The extra half term and $`-B_5[\widetilde{N}_3,0]`$ are the remaining
 pure-integer coordinate correction; the latter has 45 explicit terms
 with the defined output as its argument. Its complete coefficient list
 is shared with the general phase map rather than fitted on the diagonal.

@@ -258,8 +258,8 @@ $`Y=\mathsf D^aP`$ agree. Apply the full integer gauge to $`X`$, obtaining
 $`X_g`$ with exactly the same integer cochain as $`Y`$. Then
 
 ```math
-\widehat C_5=\hat\nu_5(\mathsf D^2X_g)-\hat\nu_5(\mathsf D^2Y),
-\qquad [\widehat C_5]=4tq[P].
+C_5=\nu_5(\mathsf D^2X_g)-\nu_5(\mathsf D^2Y),
+\qquad [C_5]=4tq[P].
 ```
 
 The factor $`4`$ records the two additional doublings. Because the two
@@ -268,7 +268,7 @@ and its bosonic subgroup $`H^{\mathrm{bos}}`$ coincide. Hence the odd extension 
 is recovered by ordinary linear arithmetic:
 
 ```math
-[qP]=(4t)^{-1}[\widehat C_5]\quad\text{in }H^{\mathrm{bos}}_{\rm odd}/rH^{\mathrm{bos}}_{\rm odd}.
+[qP]=(4t)^{-1}[C_5]\quad\text{in }H^{\mathrm{bos}}_{\rm odd}/rH^{\mathrm{bos}}_{\rm odd}.
 ```
 
 This uses no unequal-input Majorana or p+ip stacking. The necessary

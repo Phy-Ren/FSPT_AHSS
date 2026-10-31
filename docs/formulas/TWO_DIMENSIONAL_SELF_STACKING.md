@@ -29,23 +29,23 @@ retained when the doubled state is used in a subsequent doubling.
 ## 3. Bosonic self-stacking
 
 ```math
-\widehat{\mathcal V}_3
-=2\widehat\nu_3+
-\widehat{\mathcal{ℰ}}_3^c+
-\widehat{\mathcal{ℰ}}_3^{c\gamma}+
-\widehat{\mathcal{ℰ}}_3^\gamma.
+\mathcal V_3
+=2\nu_3+
+\mathcal{ℰ}_3^c+
+\mathcal{ℰ}_3^{c\gamma}+
+\mathcal{ℰ}_3^\gamma.
 ```
 
 ### Complex fermions
 
 ```math
-\widehat{\mathcal{ℰ}}_3^c=\frac12n_2\cup_1n_2.
+\mathcal{ℰ}_3^c=\frac12n_2\cup_1n_2.
 ```
 
 ### Complex fermions and Majorana decoration
 
 ```math
-\widehat{\mathcal{ℰ}}_3^{c\gamma}
+\mathcal{ℰ}_3^{c\gamma}
 =\frac12\mathcal{𝒪}_3^\gamma[n_1]\cup_2n_2.
 ```
 
@@ -56,7 +56,7 @@ obstruction. Every allowed completion $`n_2`$ is included.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_3^\gamma
+\mathcal{ℰ}_3^\gamma
 ={}&\frac12\Big[
  n_1^2\cup_1(s_1n_1)
  +\big[s_1\cup_1(s_1n_1)\big]n_1

@@ -15,7 +15,7 @@ do not change the physical roles of the fields in that section.
 The physical phase equation is
 
 ```math
-d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5.
+d_{s_1}\nu_4=\mathcal{𝒪}_5.
 ```
 
 Its obstruction is the following fixed finite sum, with the
@@ -26,7 +26,7 @@ Its obstruction is the following fixed finite sum, with the
 **(T3)**
 
 ```math
-\boxed{\widehat{\mathcal{𝒪}}_5=\tau_I\widehat{\mathcal{𝒪}}_6^I.}
+\boxed{\mathcal{𝒪}_5=\tau_I\mathcal{𝒪}_6^I.}
 ```
 
 ## Bosonic stacking correction
@@ -34,7 +34,7 @@ Its obstruction is the following fixed finite sum, with the
 The physical phase stacks as
 
 ```math
-\widehat{\mathcal V}_4=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4.
+\mathcal V_4=\nu_4+\nu'_4+\mathcal{ℰ}_4.
 ```
 
 The correction evaluates the same polynomial on the triangle fields:
@@ -44,7 +44,7 @@ The correction evaluates the same polynomial on the triangle fields:
 **(T3 product)**
 
 ```math
-\boxed{\widehat{\mathcal{ℰ}}_4=\tau_\triangle\widehat{\mathcal{𝒪}}_6^\triangle.}
+\boxed{\mathcal{ℰ}_4=\tau_\triangle\mathcal{𝒪}_6^\triangle.}
 ```
 
 ## Polynomial evaluated in both formulas
@@ -58,7 +58,7 @@ the obstruction and on the triangle fields for stacking:
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_6^J={}&\frac12\Big[\mathrm{Sq}^2 {n_4^J}+\omega_2 {n_4^J}+T_6[\widetilde{n}_3^J;\omega_2,s_1]+\widetilde{n}_3^J([\beta\omega_2]_2+s_1\omega_2)\\
+\mathcal{𝒪}_6^J={}&\frac12\Big[\mathrm{Sq}^2 {n_4^J}+\omega_2 {n_4^J}+T_6[\widetilde{n}_3^J;\omega_2,s_1]+\widetilde{n}_3^J([\beta\omega_2]_2+s_1\omega_2)\\
  &\qquad +(\mathrm{Sq}^2\widetilde{n}_3^J+s_1\mathrm{Sq}^1\widetilde{n}_3^J+\omega_2\widetilde{n}_3^J)
  \cup_4\mathcal{𝒪}_5^{\psi,J}+y_6[{n_2^J};\omega_2,s_1]\\
  &\qquad +[\beta^-\widetilde{n}_3^J]_2\cup_2[\beta_4^{\psi,J}]_2
@@ -172,7 +172,7 @@ n_2^I=\theta_1 n_1,\qquad
 
 The following binary degree-five source is evaluated on these auxiliary
 fields. Its superscript keeps it separate from the physical terminal
-phase obstruction $`\widehat{\mathcal{𝒪}}_5`$:
+phase obstruction $`\mathcal{𝒪}_5`$:
 
 <a id="eq-aux-o5"></a>
 

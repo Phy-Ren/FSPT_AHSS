@@ -9,7 +9,7 @@ The old ten-term coefficient certificate is a retained kernel, not the complete 
 
 Take a complete state with $`n_1=0`$, closed binary Majorana cochain
 $`n_2`$, binary complex-fermion cochain $`n_3`$, and additive phase
-$`\widehat\nu_4`$. The input satisfies the obstruction equations in the
+$`\nu_4`$. The input satisfies the obstruction equations in the
 [3+1D formula section](THREE_DIMENSIONAL.md), including
 $`dn_3=\mathcal{𝒪}_4^\gamma[n_2]`$. The backgrounds are shared by both
 copies. The restriction is **zero p+ip decoration**, not merely a closed

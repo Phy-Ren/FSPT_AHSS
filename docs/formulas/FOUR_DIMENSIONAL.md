@@ -105,13 +105,13 @@ graph.
 
 ```math
 \begin{aligned}
-d_{s_1}\widehat\nu_5=\widehat{\mathcal{𝒪}}_6
-={}&\widehat{\mathcal{𝒪}}_6^c
- +\widehat{\mathcal{𝒪}}_6^{c\gamma}
- +\widehat{\mathcal{𝒪}}_6^{c\psi}\\
- &+\widehat{\mathcal{𝒪}}_6^\gamma
- +\widehat{\mathcal{𝒪}}_6^{\gamma\psi}
- +\widehat{\mathcal{𝒪}}_6^\psi.
+d_{s_1}\nu_5=\mathcal{𝒪}_6
+={}&\mathcal{𝒪}_6^c
+ +\mathcal{𝒪}_6^{c\gamma}
+ +\mathcal{𝒪}_6^{c\psi}\\
+ &+\mathcal{𝒪}_6^\gamma
+ +\mathcal{𝒪}_6^{\gamma\psi}
+ +\mathcal{𝒪}_6^\psi.
 \end{aligned}
 ```
 
@@ -120,7 +120,7 @@ In the current phase coordinate the contributions are:
 **Complex-fermion contribution.**
 
 ```math
-\widehat{\mathcal{𝒪}}_6^c
+\mathcal{𝒪}_6^c
 =\frac12\big[
  \omega_2n_4+n_4\cup_2n_4+dn_4\cup_3n_4\big].
 ```
@@ -129,7 +129,7 @@ In the current phase coordinate the contributions are:
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_6^{c\gamma}
+\mathcal{𝒪}_6^{c\gamma}
 ={}&\frac12\big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\cup_4\!\big[\\
 &\qquad\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big].
 \end{aligned}
@@ -147,7 +147,7 @@ that physical origin.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_6^{c\psi}
+\mathcal{𝒪}_6^{c\psi}
 =\frac12\Big[&
  (\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})
                                       \cup_4\mathcal{𝒪}_5^\psi\\
@@ -158,7 +158,7 @@ that physical origin.
 ```
 
 These terms use the paired operator phase
-$`\widehat\nu_5^{\rm op}=\widehat\nu_5^{\rm raw}
+$`\nu_5^{\rm op}=\nu_5^{\rm raw}
 +\tfrac12n_4\cup_4dn_4`$, followed by the fixed
 [Majorana phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 Both changes are included in the terminal stacking law. The lower fields
@@ -172,7 +172,7 @@ contribution.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_6^\gamma
+\mathcal{𝒪}_6^\gamma
 ={}&\frac12\Big[
  \zeta_{2,3}(\omega_2,\widetilde{n}_3)+\mathcal X_6(\widetilde{n}_3)\\
 &\qquad+(\widetilde{n}_3\cup_1\widetilde{n}_3)\cup_4(\omega_2\widetilde{n}_3)
@@ -231,7 +231,7 @@ formula is the compact closed-Majorana expression.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_6^{\gamma\psi}
+\mathcal{𝒪}_6^{\gamma\psi}
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_6^{\gamma\psi}}
        \mathop{\mathrm{MS}}\nolimits_\vartheta(x_1,\ldots,x_q)\\
@@ -268,7 +268,7 @@ is lifted as a whole in the last two cups.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_6^\psi
+\mathcal{𝒪}_6^\psi
 ={}&\frac12\Big[y_6[n_2;\omega_2,s_1]+s_1\mathcal{𝒪}_5^\psi\Big]\\
  &+\frac14\mathcal Q_{\omega_2}[\beta_4^\psi]\\
  &-\frac14[\Big[
@@ -434,22 +434,22 @@ The two finite polynomials in this contribution are
 
 ```math
 \begin{aligned}
-\widehat{\mathcal V}_5
- &=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal{ℰ}}_5,\\
-\widehat{\mathcal{ℰ}}_5
- &=\widehat{\mathcal{ℰ}}_5^c
-  +\widehat{\mathcal{ℰ}}_5^{c\gamma}
-  +\widehat{\mathcal{ℰ}}_5^{c\psi}
-  +\widehat{\mathcal{ℰ}}_5^\gamma
-  +\widehat{\mathcal{ℰ}}_5^{\gamma\psi}
-  +\widehat{\mathcal{ℰ}}_5^\psi.
+\mathcal V_5
+ &=\nu_5+\nu'_5+\mathcal{ℰ}_5,\\
+\mathcal{ℰ}_5
+ &=\mathcal{ℰ}_5^c
+  +\mathcal{ℰ}_5^{c\gamma}
+  +\mathcal{ℰ}_5^{c\psi}
+  +\mathcal{ℰ}_5^\gamma
+  +\mathcal{ℰ}_5^{\gamma\psi}
+  +\mathcal{ℰ}_5^\psi.
 \end{aligned}
 ```
 
 The output fields are those of the preceding three stacking laws. The
 following formulas use the operator ordering of the complex-fermion
 contribution. The terminal phase is the same compact-Majorana coordinate as the obstruction above.
-The cochain $`\widehat B_5[\widetilde{n}_3,n_4]`$ is defined once in the
+The cochain $`B_5[\widetilde{n}_3,n_4]`$ is defined once in the
 [paired phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md); its backgrounds
 are kept fixed in every evaluation below. Setting its second argument
 to zero removes only the term $`s_1n_4/2`$.
@@ -457,7 +457,7 @@ to zero removes only the term $`s_1n_4/2`$.
 #### Complex fermions
 
 ```math
-\widehat{\mathcal{ℰ}}_5^c
+\mathcal{ℰ}_5^c
 =\frac12\big[n_4\cup_3n'_4
  +(n_4+n'_4)\cup_3\mathcal{ℰ}_4\big].
 ```
@@ -466,7 +466,7 @@ to zero removes only the term $`s_1n_4/2`$.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5^{c\gamma}
+\mathcal{ℰ}_5^{c\gamma}
 ={}&\frac12\Big[
  \big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\cup_4n'_4\\
 &\qquad+\Delta\Big[
@@ -479,7 +479,7 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_4,\widetilde{N}_3)
 #### Complex fermions and p+ip decoration
 
 ```math
-\widehat{\mathcal{ℰ}}_5^{c\psi}
+\mathcal{ℰ}_5^{c\psi}
 =\frac12\Big[\mathcal{𝒪}_5^\psi\cup_4n'_4
  +\Delta\big(n_4\cup_4\mathcal{𝒪}_5^\psi\big)\Big].
 ```
@@ -490,7 +490,7 @@ On an ordered five-simplex, the complete Majorana contribution is
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5^\gamma
+\mathcal{ℰ}_5^\gamma
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
        \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)
@@ -519,8 +519,8 @@ On an ordered five-simplex, the complete Majorana contribution is
  \epsilon\;[
        \sum_{\eta\in\mathcal P}\prod_{(x,f)\in\eta}x_f]_2
  \Big]\\
-&-\widehat B_5[\widetilde{n}_3+\widetilde{n}'_3,0]
- +\widehat B_5[\widetilde{n}_3,0]+\widehat B_5[\widetilde{n}'_3,0]\pmod1.
+&-B_5[\widetilde{n}_3+\widetilde{n}'_3,0]
+ +B_5[\widetilde{n}_3,0]+B_5[\widetilde{n}'_3,0]\pmod1.
 \end{aligned}
 ```
 
@@ -572,10 +572,10 @@ retained. This replaces the previous 6,176-term expansion. Defined lower
 differentials, Bocksteins, and binary-addition carries remain structured
 arguments; $`d`$ denotes the cochain differential.
 
-The three displayed $`\widehat B_5`$ evaluations and the term
+The three displayed $`B_5`$ evaluations and the term
 $`-s_1\mathcal{ℰ}_4^\gamma/2`$ transport this expression to the same
 phase coordinate as the compact pure Majorana obstruction. Each
-$`\widehat B_5[x,0]`$ has **44 half-valued terms and one quarter-valued term**;
+$`B_5[x,0]`$ has **44 half-valued terms and one quarter-valued term**;
 the complete 32-word sum and the remaining terms are written in the
 [phase-change definition](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 The inputs $`\widetilde{n}_3+\widetilde{n}'_3`$ are binary sums, including inside
@@ -591,7 +591,7 @@ the additional paired phase change is proved separately.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5^{\gamma\psi}
+\mathcal{ℰ}_5^{\gamma\psi}
 ={}&\frac12\Big[
  \sum_{\eta\in\mathcal I_5^{\gamma\psi}}
        \prod_{(x,f)\in\eta}x(f)
@@ -608,8 +608,8 @@ the additional paired phase change is proved separately.
 &+\frac14\Big[
  [V_5^{\gamma\psi}]_2
  +n_2\widetilde{n}'_3+n'_2\widetilde{n}_3\Big]\\
-&-\widehat B_5[\widetilde{N}_3,0]+\widehat B_5[\widetilde{n}_3+\widetilde{n}'_3,0]
- +\widehat B_5[\widetilde{\mathcal{ℰ}}_3,0].
+&-B_5[\widetilde{N}_3,0]+B_5[\widetilde{n}_3+\widetilde{n}'_3,0]
+ +B_5[\widetilde{\mathcal{ℰ}}_3,0].
 \end{aligned}
 ```
 
@@ -622,7 +622,7 @@ linear sums and the three quarter numerators adds **1,262 terms**, giving
 their scopes; their complete interior terms are recorded separately in
 the coefficient table.
 
-The three $`\widehat B_5[\cdot,0]`$ evaluations supply the polarization of the
+The three $`B_5[\cdot,0]`$ evaluations supply the polarization of the
 same phase map between $`\widetilde{n}_3+\widetilde{n}'_3`$ and
 $`\widetilde{\mathcal{ℰ}}_3`$; the additional half term uses the already
 defined mixed lower twister. Each evaluation contains 45 explicit
@@ -637,7 +637,7 @@ quarter-valued contribution into physical parts.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5^\psi
+\mathcal{ℰ}_5^\psi
 ={}&\frac12\Big[
  \sum_{\eta\in\mathcal I_5^\psi}\prod_{(x,f)\in\eta}x(f)
  +(\mathcal{ℰ}_4^\psi+[n_2]_2[n'_2]_2)
@@ -660,7 +660,7 @@ quarter-valued contribution into physical parts.
 &+\frac13\Big[
  (n'_2-n_2)(n_2\cup_1n'_2)
  -(n_2\cup_1n'_2)(n'_2-n_2)\Big]\\
-&-\widehat B_5[\widetilde{\mathcal{ℰ}}_3,0]\pmod1.
+&-B_5[\widetilde{\mathcal{ℰ}}_3,0]\pmod1.
 \end{aligned}
 ```
 
@@ -830,13 +830,13 @@ Their sum is exactly the original binary numerator
 $`V_5=V_5^\gamma+V_5^{\gamma\psi}
 +V_5^\psi`$. Splitting its canonical integer lift produces the
 three half-valued carry terms already included in
-$`\widehat{\mathcal{ℰ}}_5^{\gamma\psi}`$.
+$`\mathcal{ℰ}_5^{\gamma\psi}`$.
 
 The [paired phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is applied to
 both the obstruction and the stacking law. To check the sum of its three
 physical contributions, use the actual lower output
 $`\widetilde{N}_3=\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal{ℰ}}_3`$ and
 $`N_4=n_4+n'_4+\mathcal{ℰ}_4`$. The displayed corrections sum exactly to
-$`-\widehat B_5[\widetilde{N}_3,N_4]+\widehat B_5[\widetilde{n}_3,n_4]+\widehat B_5[\widetilde{n}'_3,n'_4]`$.
+$`-B_5[\widetilde{N}_3,N_4]+B_5[\widetilde{n}_3,n_4]+B_5[\widetilde{n}'_3,n'_4]`$.
 The lower twisters, finite coefficient sets, and existing output coboundary
 are unchanged; the full terminal formula uses this one transported phase.

@@ -4,7 +4,7 @@
 
 Take a complete state with $`n_2=0`$, closed binary Majorana cochain
 $`n_3`$, complex-fermion cochain $`n_4`$ satisfying
-$`dn_4=\mathcal{𝒪}_5^\gamma[n_3]`$, and phase $`\widehat\nu_5`$
+$`dn_4=\mathcal{𝒪}_5^\gamma[n_3]`$, and phase $`\nu_5`$
 satisfying the terminal obstruction equation. Here $`\widetilde{n}_3=n_3`$.
 All stacking corrections below have identical complete inputs. The current phase and product are exactly the zero-p+ip restrictions of the complete formulas. The explanation below specializes the same phase change without introducing a second diagonal law.
 
@@ -31,25 +31,25 @@ N_4=\mathcal{ℰ}_4^\gamma[n_3,n_3]
 
 ```math
 \begin{aligned}
-\widehat{\mathcal V}_5&=2\widehat\nu_5
-     +\widehat{\mathcal{ℰ}}_{5,\mathrm{diag}},\\
-\widehat{\mathcal{ℰ}}_{5,\mathrm{diag}}
- &=\widehat{\mathcal{ℰ}}_5^c
-  +\widehat{\mathcal{ℰ}}_5^{c\gamma}
-  +\widehat{\mathcal{ℰ}}_{5,\mathrm{diag}}^\gamma.
+\mathcal V_5&=2\nu_5
+     +\mathcal{ℰ}_{5,\mathrm{diag}},\\
+\mathcal{ℰ}_{5,\mathrm{diag}}
+ &=\mathcal{ℰ}_5^c
+  +\mathcal{ℰ}_5^{c\gamma}
+  +\mathcal{ℰ}_{5,\mathrm{diag}}^\gamma.
 \end{aligned}
 ```
 
 ### Complex fermions
 
 ```math
-\widehat{\mathcal{ℰ}}_5^c=\frac12n_4\cup_3n_4.
+\mathcal{ℰ}_5^c=\frac12n_4\cup_3n_4.
 ```
 
 ### Complex fermions and Majorana decoration
 
 ```math
-\widehat{\mathcal{ℰ}}_5^{c\gamma}
+\mathcal{ℰ}_5^{c\gamma}
 =\frac12\Big[
  [\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}]
         [n_2,\widetilde{n}_3]\cup_4n_4
@@ -65,7 +65,7 @@ $`d\widetilde{n}_3=0`$, and $`\beta_4^\gamma=\beta n_3`$:
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5^\gamma
+\mathcal{ℰ}_5^\gamma
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
  \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)\\
@@ -91,7 +91,7 @@ This is the same terminal coordinate as the current obstruction.
 
 The full lower output here has $`\widetilde{N}_3=0`$ and
 $`N_4=\mathcal{ℰ}_4^\gamma`$. The common phase map consequently gives
-$`-\Delta \widehat B_5=\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$.
+$`-\Delta B_5=\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$.
 Those two terms already appear in the imported Majorana formula above.
 No separate diagonal representative or additional output gauge is chosen.
 The existing output coboundary is part of the shared general formula.

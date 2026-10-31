@@ -21,7 +21,7 @@ systems explicit.
 
 Let the boundary spacetime dimension be $`D`$. Write its decoration
 data as $`X`$ and its additive phase as
-$`\widehat\nu_D\in C^D((\mathbb R/\mathbb Z)_{s_1})`$.
+$`\nu_D\in C^D((\mathbb R/\mathbb Z)_{s_1})`$.
 The boundary product is
 
 {{equation:coboundary-stacking-compatibility--the-compatibility-identity--2}}
@@ -33,12 +33,12 @@ In the fermionic-coboundary convention used here, the top bulk phase is
 {{equation:coboundary-stacking-compatibility--the-compatibility-identity--3}}
 
 Suppose the chosen cochain representatives satisfy
-$`\delta((X,\widehat\nu_D)*(Y,\widehat\nu_D')) =\delta(X,\widehat\nu_D)*\delta(Y,\widehat\nu_D')`$.
+$`\delta((X,\nu_D)*(Y,\nu_D')) =\delta(X,\nu_D)*\delta(Y,\nu_D')`$.
 Comparison of their top components gives the displayed identity:
 the left construction has phase
-$`\widehat{\mathcal{𝒪}}_{D+1}(X*Y)-d_{s_1}\widehat\nu_D -d_{s_1}\widehat\nu_D'-d_{s_1}\widehat{\mathcal{ℰ}}_D`$;
+$`\mathcal{𝒪}_{D+1}(X*Y)-d_{s_1}\nu_D -d_{s_1}\nu_D'-d_{s_1}\mathcal{ℰ}_D`$;
 the right construction has phase
-$`\widehat{\mathcal{𝒪}}_{D+1}(X)+\widehat{\mathcal{𝒪}}_{D+1}(Y) -d_{s_1}\widehat\nu_D-d_{s_1}\widehat\nu_D' +\widehat{\mathcal{ℰ}}_{D+1}`$.
+$`\mathcal{𝒪}_{D+1}(X)+\mathcal{𝒪}_{D+1}(Y) -d_{s_1}\nu_D-d_{s_1}\nu_D' +\mathcal{ℰ}_{D+1}`$.
 
 All terms have degree $`D+1`$ and coefficients
 $`(\mathbb R/\mathbb Z)_{s_1}`$.
@@ -115,7 +115,7 @@ c-gamma, and gamma contributions in their stated operator ordering.
 No contribution is reassigned by its dependence on decoration fields.
 
 The cancellation is independent of the chosen representative of
-$`\widehat{\mathcal{ℰ}}_5^\gamma(u,u)`$, provided that the same
+$`\mathcal{ℰ}_5^\gamma(u,u)`$, provided that the same
 representative is used in the inverse and the product. In particular,
 its quarter-valued terms cancel before any lift is expanded.
 
@@ -154,7 +154,7 @@ The boundary product also receives the face-reference phase on that page.
 ## Transporting representatives together
 
 A terminal coordinate change
-$`\widehat\nu_D^{\,\mathrm{new}}=\widehat\nu_D+\widehat B_D(X)`$
+$`\nu_D^{\,\mathrm{new}}=\nu_D+B_D(X)`$
 has the paired transport
 
 {{equation:coboundary-stacking-compatibility--transporting-representatives-together--15}}
@@ -177,6 +177,6 @@ cross product. For a closed high-dimensional cochain on a triangle,
 {{equation:coboundary-stacking-compatibility--transporting-representatives-together--17}}
 
 The triangle formula explains the common sign in
-$`d_{s_1}\widehat{\mathcal{ℰ}}=\Delta\widehat{\mathcal{𝒪}}`$.
+$`d_{s_1}\mathcal{ℰ}=\Delta\mathcal{𝒪}`$.
 It also fixes the source and product signs when an explicit
 parameter-dependent representative is changed.

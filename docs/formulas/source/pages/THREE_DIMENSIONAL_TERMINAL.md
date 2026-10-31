@@ -128,7 +128,7 @@ For the interval, $`\theta_1(01)=1`$ and the second input is absent:
 
 The following binary degree-five source is evaluated on these auxiliary
 fields. Its superscript keeps it separate from the physical terminal
-phase obstruction $`\widehat{\mathcal{𝒪}}_5`$:
+phase obstruction $`\mathcal{𝒪}_5`$:
 
 <a id="eq-aux-o5"></a>
 

@@ -16,19 +16,19 @@ the targets below are proposed further reductions.
 
 | Contribution | Current terms |
 | --- | ---: |
-| $`\widehat{\mathcal{𝒪}}_6^{\gamma\psi}`$ | 1,907, including 1,897 MS terms |
-| $`\widehat{\mathcal{𝒪}}_6^\psi`$ | 623,886 |
-| $`\widehat{\mathcal{ℰ}}_5^{\gamma\psi}`$ | 5,685,587 |
-| $`\widehat{\mathcal{ℰ}}_5^\psi`$ | 2,869,266 |
+| $`\mathcal{𝒪}_6^{\gamma\psi}`$ | 1,907, including 1,897 MS terms |
+| $`\mathcal{𝒪}_6^\psi`$ | 623,886 |
+| $`\mathcal{ℰ}_5^{\gamma\psi}`$ | 5,685,587 |
+| $`\mathcal{ℰ}_5^\psi`$ | 2,869,266 |
 
 ## Current targets in 3+1D
 
 | Contribution | Current terms |
 | --- | ---: |
-| $`\widehat{\mathcal{𝒪}}_5^{\gamma\psi}`$ | 2,281 |
-| $`\widehat{\mathcal{𝒪}}_5^\psi`$ | 11,416 |
-| $`\widehat{\mathcal{ℰ}}_4^{\gamma\psi}`$ | 16,059 |
-| $`\widehat{\mathcal{ℰ}}_4^\psi`$ | 10,583 |
+| $`\mathcal{𝒪}_5^{\gamma\psi}`$ | 2,281 |
+| $`\mathcal{𝒪}_5^\psi`$ | 11,416 |
+| $`\mathcal{ℰ}_4^{\gamma\psi}`$ | 16,059 |
+| $`\mathcal{ℰ}_4^\psi`$ | 10,583 |
 
 These are uncollected expression occurrences at the current
 [displayed-expression counting boundary](TERM_COUNTS.md):

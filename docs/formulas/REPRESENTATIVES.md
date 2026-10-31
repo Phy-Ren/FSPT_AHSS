@@ -35,7 +35,7 @@ $`s_1\ne0`$.
 
 
 
-Write $`\widehat{\mathcal{𝒪}}_{6,\mathrm{raw}}`$ for the earlier source.
+Write $`\mathcal{𝒪}_{6,\mathrm{raw}}`$ for the earlier source.
 This earlier change precedes the operator reordering below. Its source and product use the same coordinates:
 
 <a id="eq-t4e"></a>
@@ -43,12 +43,12 @@ This earlier change precedes the operator reordering below. Its source and produ
 **(T4E)**
 
 ```math
-{\widehat{\mathcal{𝒪}}}_6=\widehat{\mathcal{𝒪}}_{6,\mathrm{raw}}+d_{s_1}\widehat B_5^{\mathrm{ref}}+\frac1{12}{n_{2}}^3,
-\qquad \widehat B_5^{\mathrm{ref}}=\frac14{\beta^-\widetilde{n}_3}\cup_3{\beta_4^\psi}.
+{\mathcal{𝒪}}_6=\mathcal{𝒪}_{6,\mathrm{raw}}+d_{s_1}B_5^{\mathrm{ref}}+\frac1{12}{n_{2}}^3,
+\qquad B_5^{\mathrm{ref}}=\frac14{\beta^-\widetilde{n}_3}\cup_3{\beta_4^\psi}.
 ```
 
 The corresponding terminal redefinition contributes
-$`\Delta\widehat B_5^{\mathrm{ref}}`$ to the stacking correction. The separate cubic term
+$`\Delta B_5^{\mathrm{ref}}`$ to the stacking correction. The separate cubic term
 shown in (T4e) is retained in (T4); it is not being called a coboundary.
 
 <a id="operator-phase-4d"></a>
@@ -58,19 +58,19 @@ shown in (T4e) is retained in (T4); it is not being called a coboundary.
 The first step from the supplied full terminal formula is the operator-ordering change
 
 ```math
-\widehat\nu_5^{\rm op}
- =\widehat\nu_5^{\rm supplied}+\frac12 n_4\cup_4dn_4.
+\nu_5^{\rm op}
+ =\nu_5^{\rm supplied}+\frac12 n_4\cup_4dn_4.
 ```
 
 The inverse subtracts the same half-valued cochain. The paired formulas are
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_6^{\rm op}
- &=\widehat{\mathcal{𝒪}}_6^{\rm supplied}
+\mathcal{𝒪}_6^{\rm op}
+ &=\mathcal{𝒪}_6^{\rm supplied}
    +d_{s_1}\left(\frac12n_4\cup_4dn_4\right),\\
-\widehat{\mathcal{ℰ}}_5^{\rm op}
- &=\widehat{\mathcal{ℰ}}_5^{\rm supplied}
+\mathcal{ℰ}_5^{\rm op}
+ &=\mathcal{ℰ}_5^{\rm supplied}
    +\frac12\left[N_4\cup_4dN_4-n_4\cup_4dn_4
                                   -n'_4\cup_4dn'_4\right].
 \end{aligned}
@@ -83,10 +83,10 @@ The actual stacked output is used in the last line. This yields the displayed c,
 ## 4+1D: current compact Majorana phase
 
 The guide then applies the single [explicit phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-$`\widehat\nu_5\mapsto\widehat\nu_5-\widehat B_5[\widetilde{n}_3,n_4]`$.
-Its source changes by $`-d_{s_1}\widehat B_5`$ and its product by $`-\Delta \widehat B_5`$,
+$`\nu_5\mapsto\nu_5-B_5[\widetilde{n}_3,n_4]`$.
+Its source changes by $`-d_{s_1}B_5`$ and its product by $`-\Delta B_5`$,
 evaluated on the same actual lower stacking output. The inverse adds
-$`\widehat B_5`$; every lower decoration and lower product is fixed.
+$`B_5`$; every lower decoration and lower product is fixed.
 
 The [general](FOUR_DIMENSIONAL.md#stacking-4d) and
 [self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md) formulas include this
@@ -104,13 +104,13 @@ gauge and lower-layer changes. A nonzero cochain may be exact; only a
 nontrivial final obstruction class rules out the decoration. Stack accepted
 representatives using the paired product and reduce by the same equivalences.
 
-For a terminal phase change $`\widehat\nu\mapsto\widehat\nu+\widehat B`$, with
+For a terminal phase change $`\nu\mapsto\nu+B`$, with
 lower fields and their product fixed, the source and correction transform
 together:
 
 ```math
-\widehat{\mathcal{𝒪}}\longmapsto\widehat{\mathcal{𝒪}}+d_{s_1}\widehat B,\qquad
-\widehat{\mathcal{ℰ}}\longmapsto\widehat{\mathcal{ℰ}}+\Delta \widehat B.
+\mathcal{𝒪}\longmapsto\mathcal{𝒪}+d_{s_1}B,\qquad
+\mathcal{ℰ}\longmapsto\mathcal{ℰ}+\Delta B.
 ```
 
 A change of a lower decoration must also be substituted into every higher

@@ -61,8 +61,8 @@ Majorana laws. Their original projector sequence is retained.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_5(n)&=\widehat{\mathcal{𝒪}}_{5,\mathrm{old}}(n_1,n_2,\widetilde{n}_3),\\
-\widehat{\mathcal{ℰ}}_4(n,n')&=\widehat{\mathcal{ℰ}}_{4,\mathrm{old}}
+\mathcal{𝒪}_5(n)&=\mathcal{𝒪}_{5,\mathrm{old}}(n_1,n_2,\widetilde{n}_3),\\
+\mathcal{ℰ}_4(n,n')&=\mathcal{ℰ}_{4,\mathrm{old}}
  (n_1,n_2,\widetilde{n}_3;n'_1,n'_2,\widetilde{n}'_3)\\
 &\quad+\frac12\left[\omega_2\mathcal B_2+\mathcal B_2^2
  +d\mathcal B_2\cup_1\mathcal B_2

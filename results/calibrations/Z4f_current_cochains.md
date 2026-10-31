@@ -3,9 +3,10 @@
 Take $`G_f=\mathbb Z_4^f`$, $`G_b=\mathbb Z_2`$, $`\omega_2=m_1^2`$, and $`s_1=0`$.
 Here $`m_1(g)=g`$ for $`g\in\{0,1\}`$, and $`m_1^q`$ is the ordered cup power. It equals one precisely when all its arguments are one. Binary inputs have their canonical integer values whenever integer arithmetic is required.
 
-The following representatives solve the [current obstruction equations](../../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4). The multiplicative phase is $`\nu_5=\exp(2\pi i\widehat\nu_5)`$.
+The following representatives solve the [current obstruction equations](../../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4).
+The table gives additive phases in $`\mathbb R/\mathbb Z`$; exponentiating them gives the corresponding $`U(1)`$ amplitudes.
 
-| Root layer | $`n_2`$ | $`n_3`$ | $`n_4`$ | $`\widehat\nu_5`$ | $`\widehat{\mathcal O}_6`$ |
+| Root layer | $`n_2`$ | $`n_3`$ | $`n_4`$ | $`\nu_5`$ | $`\mathcal O_6`$ |
 |---|---|---|---|---|---|
 | p+ip | $`m_1^2`$ | $`0`$ | $`0`$ | $`25m_1^5/96`$ | $`25m_1^6/48`$ |
 | Majorana | $`0`$ | $`m_1^3`$ | $`0`$ | $`m_1^5/8`$ | $`m_1^6/4`$ |
@@ -14,10 +15,10 @@ The following representatives solve the [current obstruction equations](../../do
 
 All four lower solutions have $`dn_2=dn_3=dn_4=0`$. Their lower obstruction cochains vanish pointwise. Since $`dm_1^5=2m_1^6`$ over the integers, every phase in the table obeys its full terminal equation. The nonzero terminal cochains are coboundaries and do not obstruct these solutions.
 
-For the p+ip root the fixed binary completion is $`y_6=m_1^6`$, and $`B_4^\psi=-m_1^4`$. The signed integral cup gives $`m_1^4\cup_2m_1^4=4m_1^6`$. Thus the half-valued completion, integer quadratic term, background terms, and cubic normalization give
+For the p+ip root the fixed binary completion is $`y_6=m_1^6`$, and $`\beta_4^\psi=-m_1^4`$. The signed integral cup gives $`m_1^4\cup_2m_1^4=4m_1^6`$. Thus the half-valued completion, integer quadratic term, background terms, and cubic normalization give
 
 ```math
-\widehat{\mathcal O}_6
+\mathcal O_6
 =\left(\frac12+\frac34+\frac18+\frac1{16}+\frac1{12}\right)m_1^6
 =\frac{25}{48}m_1^6\pmod1.
 ```

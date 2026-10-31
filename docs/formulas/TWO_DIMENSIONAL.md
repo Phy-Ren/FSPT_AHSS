@@ -37,16 +37,16 @@ dn_2=\mathcal{𝒪}_3=\mathcal{𝒪}^{\gamma}_3.
 ### 3. Bosonic obstruction
 
 ```math
-d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
- =\widehat{\mathcal{𝒪}}^{c}_4
-  +\widehat{\mathcal{𝒪}}^{c\gamma}_4
-  +\widehat{\mathcal{𝒪}}^{\gamma}_4.
+d_{s_1}\nu_3=\mathcal{𝒪}_4
+ =\mathcal{𝒪}^{c}_4
+  +\mathcal{𝒪}^{c\gamma}_4
+  +\mathcal{𝒪}^{\gamma}_4.
 ```
 
 #### Complex-fermion contribution
 
 ```math
-\widehat{\mathcal{𝒪}}^{c}_4
+\mathcal{𝒪}^{c}_4
  =\frac12\big[\omega_2n_2+n_2\cup n_2
    +dn_2\cup_1n_2\big].
 ```
@@ -54,7 +54,7 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
 #### Complex-fermion–Majorana contribution
 
 ```math
-\widehat{\mathcal{𝒪}}^{c\gamma}_4
+\mathcal{𝒪}^{c\gamma}_4
  =\frac12\big[dn_2\cup_2dn_2\big].
 ```
 
@@ -62,7 +62,7 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}^\gamma_4(n_1)={}&\frac12\big[
+\mathcal{𝒪}^\gamma_4(n_1)={}&\frac12\big[
  \mathop{\mathrm{MS}}\nolimits_{123134}(\omega_2,\omega_2,n_1,n_1)\\
 &\qquad+(\omega_2n_1)\cup_2(s_1[\beta n_1]_2)\\
 &\qquad+(\omega_2\cup_1s_1)[\beta n_1]_2+s_1(s_1+n_1)[\beta n_1]_2\big]\\
@@ -98,19 +98,19 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal V}_3
- &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal{ℰ}}_3,\\
-\widehat{\mathcal{ℰ}}_3
- &=\widehat{\mathcal{ℰ}}^{c}_3
-  +\widehat{\mathcal{ℰ}}^{c\gamma}_3
-  +\widehat{\mathcal{ℰ}}^{\gamma}_3.
+\mathcal V_3
+ &=\nu_3+\nu'_3+\mathcal{ℰ}_3,\\
+\mathcal{ℰ}_3
+ &=\mathcal{ℰ}^{c}_3
+  +\mathcal{ℰ}^{c\gamma}_3
+  +\mathcal{ℰ}^{\gamma}_3.
 \end{aligned}
 ```
 
 #### Complex-fermion contribution
 
 ```math
-\widehat{\mathcal{ℰ}}^{c}_3
+\mathcal{ℰ}^{c}_3
  =\frac12\big[n_2\cup_1n'_2
  +(n_2+n'_2)\cup_1\mathcal{ℰ}_2\big].
 ```
@@ -118,7 +118,7 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 #### Complex-fermion–Majorana contribution
 
 ```math
-\widehat{\mathcal{ℰ}}^{c\gamma}_3
+\mathcal{ℰ}^{c\gamma}_3
  =\frac12\Big[dn_2\cup_2n'_2
    +\Delta[n_2\cup_2dn_2]\Big].
 ```
@@ -127,7 +127,7 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^\gamma_3={}&
+\mathcal{ℰ}^\gamma_3={}&
 \frac12\Big[[n_1\cup_1(n_1n'_1)]n'_1
  +(\omega_2N_1)\cup_2(n_1n'_1)+\mathcal L_3\\
 &\qquad+(\omega_2\cup_1s_1)(n_1\cup_1n'_1)\\

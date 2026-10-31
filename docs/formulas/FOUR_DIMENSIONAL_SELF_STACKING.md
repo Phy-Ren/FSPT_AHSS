@@ -3,7 +3,7 @@
 # Complete 4+1D self-stacking, including p+ip decoration
 
 These formulas give the square of a complete lifted state
-$`(n_2,\widetilde{n}_3,n_4,\widehat\nu_5)`$. Every stacking twister and
+$`(n_2,\widetilde{n}_3,n_4,\nu_5)`$. Every stacking twister and
 coefficient set on this page is specialized to two copies of that same
 input; no extra input label is needed.
 
@@ -29,7 +29,7 @@ odd orders are handled. The complete two-input law remains available; this
 page specifies its exact equal-input specialization. The
 [terminal phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is specialized at
 the same time. Since the binary sum of two equal Majorana inputs is zero,
-$`2\widehat B_5[\widetilde{n}_3,0]=\tfrac12(\widetilde{n}_3\cup_1\widetilde{n}_3)`$ modulo
+$`2B_5[\widetilde{n}_3,0]=\tfrac12(\widetilde{n}_3\cup_1\widetilde{n}_3)`$ modulo
 one; the half-valued part doubles to an integer. This gives the short
 extra terms below directly from the general law.
 
@@ -99,26 +99,26 @@ identically when its two closed inputs $`[n_2]_2`$ coincide.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal V}_5
- &=2\widehat\nu_5+\widehat{\mathcal{ℰ}}_5^c
- +\widehat{\mathcal{ℰ}}_5^{c\gamma}
- +\widehat{\mathcal{ℰ}}_5^{c\psi}\\
- &\qquad+\widehat{\mathcal{ℰ}}_5^\gamma
- +\widehat{\mathcal{ℰ}}_5^{\gamma\psi}
- +\widehat{\mathcal{ℰ}}_5^\psi\pmod1.
+\mathcal V_5
+ &=2\nu_5+\mathcal{ℰ}_5^c
+ +\mathcal{ℰ}_5^{c\gamma}
+ +\mathcal{ℰ}_5^{c\psi}\\
+ &\qquad+\mathcal{ℰ}_5^\gamma
+ +\mathcal{ℰ}_5^{\gamma\psi}
+ +\mathcal{ℰ}_5^\psi\pmod1.
 \end{aligned}
 ```
 
 ### Complex fermions
 
 ```math
-\widehat{\mathcal{ℰ}}_5^c=\frac12n_4\cup_3n_4.
+\mathcal{ℰ}_5^c=\frac12n_4\cup_3n_4.
 ```
 
 ### Complex fermions and Majorana decoration
 
 ```math
-\widehat{\mathcal{ℰ}}_5^{c\gamma}
+\mathcal{ℰ}_5^{c\gamma}
 =\frac12\Big[
  [\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}]
         [n_2,\widetilde{n}_3]\cup_4n_4
@@ -128,7 +128,7 @@ identically when its two closed inputs $`[n_2]_2`$ coincide.
 ### Complex fermions and p+ip decoration
 
 ```math
-\widehat{\mathcal{ℰ}}_5^{c\psi}
+\mathcal{ℰ}_5^{c\psi}
 =\frac12\Big[
  \mathcal{𝒪}_5^\psi[n_2]\cup_4n_4
  +N_4\cup_4
@@ -148,7 +148,7 @@ With the existing integer carry $`\beta_4^\gamma=\beta^-\widetilde{n}_3`$,
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5^\gamma
+\mathcal{ℰ}_5^\gamma
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
  \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)\\
@@ -193,7 +193,7 @@ it does not select a separate terminal coordinate.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5^{\gamma\psi}
+\mathcal{ℰ}_5^{\gamma\psi}
 ={}&\frac12\Big[
  \sum_{\eta\in\mathcal I_5^{\gamma\psi}}
       \prod_{(x,f)\in\eta}x(f)
@@ -219,14 +219,14 @@ protected mixed lift has eight interior terms. This large residual is
 preserved as exact verification data and remains a target for structural
 simplification. The additional term
 $`-s_1\mathcal{ℰ}_4^{\gamma\psi}/2`$ is its entire coordinate
-correction on equal inputs: the three general $`\widehat B_5`$ evaluations cancel
+correction on equal inputs: the three general $`B_5`$ evaluations cancel
 exactly here.
 
 ### p+ip decoration
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5^\psi
+\mathcal{ℰ}_5^\psi
 ={}&\frac12\Big[
  \sum_{\eta\in\mathcal I_5^\psi}\prod_{(x,f)\in\eta}x(f)
  +(\mathcal{ℰ}_4^\psi+[n_2]_2^2)\cup_3[n_2]_2^2\\
@@ -241,7 +241,7 @@ exactly here.
  +\widetilde{\omega}_2\widetilde{N}_3\\
 &\quad+n_2\widetilde{N}_3+(n_2\cup_1\widetilde{\omega}_2)n_2-s_1\mathcal{ℰ}_4^\psi\Big]
  +\frac14[V_5^\psi]_2
- +\frac18\widetilde{\omega}_2(n_2\cup_1n_2)-\widehat B_5[\widetilde{N}_3,0]\pmod1.
+ +\frac18\widetilde{\omega}_2(n_2\cup_1n_2)-B_5[\widetilde{N}_3,0]\pmod1.
 \end{aligned}
 ```
 
@@ -252,7 +252,7 @@ use the same lower-operation conventions as the general formula. The
 remaining displayed terms add **14 outer terms**, giving **793,683 before the phase transport**.
 The protected pure lift has twelve interior terms. The denominator-three
 term of the general law vanishes identically on equal inputs.
-The extra half term and $`-\widehat B_5[\widetilde{N}_3,0]`$ are the remaining
+The extra half term and $`-B_5[\widetilde{N}_3,0]`$ are the remaining
 pure-integer coordinate correction; the latter has 45 explicit terms
 with the defined output as its argument. Its complete coefficient list
 is shared with the general phase map rather than fitted on the diagonal.

@@ -78,11 +78,11 @@ These are the current formulas, not an instruction to retain the old product.
 For $`n_1=0`$, the complete bosonic output is
 
 ```math
-\widehat{\mathcal V}_4
- =2\widehat\nu_4+
-   \widehat{\mathcal{ℰ}}_{4}^c+
-   \widehat{\mathcal{ℰ}}_{4}^{c\gamma}+
-   \widehat{\mathcal{ℰ}}_{4}^\gamma.
+\mathcal V_4
+ =2\nu_4+
+   \mathcal{ℰ}_{4}^c+
+   \mathcal{ℰ}_{4}^{c\gamma}+
+   \mathcal{ℰ}_{4}^\gamma.
 ```
 
 The earlier lower equations specialize to
@@ -96,7 +96,7 @@ contributions are
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&\widetilde{n}_3\cup_2\widetilde{n}_3
+\mathcal{ℰ}_4^c=\frac12\Big[&\widetilde{n}_3\cup_2\widetilde{n}_3
  +\omega_2\widetilde{n}_2+\widetilde{n}_2^2
  +d\widetilde{n}_2\cup_1\widetilde{n}_2\\
  &+(N_3+d\widetilde{n}_2)\cup_2d\widetilde{n}_2\Big].
@@ -104,13 +104,13 @@ contributions are
 ```
 
 ```math
-\widehat{\mathcal{ℰ}}_{4}^{c\gamma}
+\mathcal{ℰ}_{4}^{c\gamma}
  =\frac12\mathcal{𝒪}_4^\gamma[n_2]\cup_3\widetilde{n}_3.
 ```
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_{4}^\gamma
+\mathcal{ℰ}_{4}^\gamma
 ={}&\frac12\Big[
  (\omega_2\cup_1s_1)n_2
  +[\beta n_2]_2\cup_2(s_1n_2)
@@ -138,15 +138,15 @@ The complete bosonic output, before the integer gauge, is
 
 ```math
 \begin{aligned}
-\widehat{\mathcal V}_4
- &=2\widehat\nu_4+\widehat{\mathcal{ℰ}}_{4},\\
-\widehat{\mathcal{ℰ}}_{4}
- &=\widehat{\mathcal{ℰ}}_{4}^c
-  +\widehat{\mathcal{ℰ}}_{4}^{c\gamma}
-  +\widehat{\mathcal{ℰ}}_{4}^{c\psi}
-  +\widehat{\mathcal{ℰ}}_{4}^\gamma
-  +\widehat{\mathcal{ℰ}}_{4}^{\gamma\psi}
-  +\widehat{\mathcal{ℰ}}_{4}^\psi.
+\mathcal V_4
+ &=2\nu_4+\mathcal{ℰ}_{4},\\
+\mathcal{ℰ}_{4}
+ &=\mathcal{ℰ}_{4}^c
+  +\mathcal{ℰ}_{4}^{c\gamma}
+  +\mathcal{ℰ}_{4}^{c\psi}
+  +\mathcal{ℰ}_{4}^\gamma
+  +\mathcal{ℰ}_{4}^{\gamma\psi}
+  +\mathcal{ℰ}_{4}^\psi.
 \end{aligned}
 ```
 
@@ -170,7 +170,7 @@ The six labels retain their fermionic exchange origins. The point-fermion block 
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&\widetilde{n}_3\cup_2\widetilde{n}_3
+\mathcal{ℰ}_4^c=\frac12\Big[&\widetilde{n}_3\cup_2\widetilde{n}_3
  +\omega_2\widetilde{n}_2+\widetilde{n}_2^2
  +d\widetilde{n}_2\cup_1\widetilde{n}_2\\
  &+(N_3+d\widetilde{n}_2)\cup_2d\widetilde{n}_2\Big].
@@ -181,7 +181,7 @@ The six labels retain their fermionic exchange origins. The point-fermion block 
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_{4}^{c\gamma}
+\mathcal{ℰ}_{4}^{c\gamma}
 =\frac12\Big[&
  (\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3)[\widetilde{n}_2]\cup_3\widetilde{n}_3\\
 &+(N_3+d\widetilde{n}_2)\cup_3\mathcal{𝒪}_4^\gamma[s_1^2]
@@ -200,7 +200,7 @@ On the ordered four-simplex,
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_{4}^{c\psi}(01234)
+\mathcal{ℰ}_{4}^{c\psi}(01234)
 ={}&\frac12\Big[
  \mathcal{𝒪}_4^\psi[s_1]\cup_3\widetilde{n}_3
  +(N_3+d\widetilde{n}_2)\cup_3\mathcal{𝒪}_4^\psi[2s_1]\Big](01234)\\
@@ -222,7 +222,7 @@ $`[\lfloor 2s_1/2\rfloor]_2=s_1`$.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^\gamma(01234)
+\mathcal{ℰ}_4^\gamma(01234)
 ={}&\frac12\widetilde{n}_2(012)\widetilde{n}_2(123)\widetilde{n}_2(234)
                           (d\widetilde{n}_2)(0134)\\
 &+\frac12\Big[
@@ -263,7 +263,7 @@ in its first term.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_{4}^{\gamma\psi}
+\mathcal{ℰ}_{4}^{\gamma\psi}
 ={}&\frac12\sum_{f\in\mathcal F_4^{\gamma\psi}}f\\
 &+\frac12\Big[
  \beta_3\cup_2d\widetilde{n}_2
@@ -313,7 +313,7 @@ systems; its value must not be replaced by an unsigned product.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_{4}^\psi
+\mathcal{ℰ}_{4}^\psi
 ={}&\frac12\sum_{f\in\mathcal F_4^\psi}f-\frac12s_1^4\\
 &+\frac14\Big[
  -\beta_3^\psi\cup_2\beta_3^\psi

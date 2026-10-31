@@ -13,7 +13,7 @@ The inverse subtracts the displayed phase. All lower fields of this auxiliary ca
 the actual lower stacked tower, minus the two input evaluations.
 The nine-term `H4` is printed in [the stacking formulas](THREE_DIMENSIONAL.md#eq-t3b).
 The former `P4` has been replaced by its [exact lower-obstruction identity](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md); this changes no phase value.
-The additive phase $`\widehat B_4^{c,*}`$ is one half of the explicitly indexed
+The additive phase $`B_4^{c,*}`$ is one half of the explicitly indexed
 binary numerator in [the CF index rule](THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md#cf-block).
 
 The constructions in this coordinate proof define the comparison with the
@@ -53,8 +53,8 @@ integer output gauge is
 
 The two `lambda cup1lambda` terms have canceled as integers. The exact
 identity $`\beta_4^{\uparrow}=\beta_4^{\mathrm{par}}+dR+E`$ and integer cup polarization give
-$`\widehat{\mathcal O}_5^{\mathrm{new}}=\widehat{\mathcal O}_5^{\mathrm{native}}+d_{s_1}B_4^{\mathrm{int}}/4`$ and
-$`\widehat{\mathcal E}_4^{\mathrm{new}}=\widehat{\mathcal E}_4^{\mathrm{native}}+\Delta B_4^{\mathrm{int}}/4-d_{s_1}B_3^{\mathrm{int}}/4`$ before the other displayed
+$`\mathcal O_5^{\mathrm{new}}=\mathcal O_5^{\mathrm{native}}+d_{s_1}B_4^{\mathrm{int}}/4`$ and
+$`\mathcal E_4^{\mathrm{new}}=\mathcal E_4^{\mathrm{native}}+\Delta B_4^{\mathrm{int}}/4-d_{s_1}B_3^{\mathrm{int}}/4`$ before the other displayed
 coordinate changes. All even polarization terms remain in the half-valued
 physical formulas.
 

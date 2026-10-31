@@ -18,7 +18,7 @@ On the ordered four-simplex, the complete contribution is
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^\gamma(01234)
+\mathcal{ℰ}_4^\gamma(01234)
 ={}&\frac12\widetilde{n}_2(012)\widetilde{n}_2(123)\widetilde{n}_2(234)
                           (d\widetilde{n}_2)(0134)\\
 &+\frac12\Big[

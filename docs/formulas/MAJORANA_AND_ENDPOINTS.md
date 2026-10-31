@@ -28,8 +28,9 @@ in [Operations](OPERATIONS.md#arithmetic-and-carries).
 The Bockstein $`\beta`$, its second carry $`\beta^+`$, and their signed
 products have untwisted integer coefficients here. The phase instead has
 coefficients $`(\mathbb R/\mathbb Z)_{s_1}`$ and differential $`d_{s_1}`$.
-A hat denotes an additive phase, a prime the second input, and $`N_j`$ the
-stacked binary field. The lower fields and all subscripts are fixed anew
+A phase and its additive value use the same symbol, as in the common notation above.
+A prime denotes the second input, and $`N_j`$ the stacked binary field.
+The lower fields and all subscripts are fixed anew
 at the start of each dimensional section.
 
 The physical formulas below use the manuscript's operator phase coordinate.
@@ -84,10 +85,10 @@ dn_2=\mathcal{𝒪}_3=\mathcal{𝒪}^{\gamma}_3.
 **(M3, 2+1D: obstruction)**
 
 ```math
-d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
- =\widehat{\mathcal{𝒪}}^{c}_4
-  +\widehat{\mathcal{𝒪}}^{c\gamma}_4
-  +\widehat{\mathcal{𝒪}}^{\gamma}_4.
+d_{s_1}\nu_3=\mathcal{𝒪}_4
+ =\mathcal{𝒪}^{c}_4
+  +\mathcal{𝒪}^{c\gamma}_4
+  +\mathcal{𝒪}^{\gamma}_4.
 ```
 
 ##### Complex-fermion contribution
@@ -97,7 +98,7 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
 **(M3c, 2+1D)**
 
 ```math
-\widehat{\mathcal{𝒪}}^{c}_4
+\mathcal{𝒪}^{c}_4
  =\frac12\big[\omega_2n_2+n_2\cup n_2
    +dn_2\cup_1n_2\big].
 ```
@@ -109,7 +110,7 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
 **(M3cγ, 2+1D)**
 
 ```math
-\widehat{\mathcal{𝒪}}^{c\gamma}_4
+\mathcal{𝒪}^{c\gamma}_4
  =\frac12\big[dn_2\cup_2dn_2\big].
 ```
 
@@ -121,7 +122,7 @@ d_{s_1}\widehat\nu_3=\widehat{\mathcal{𝒪}}_4
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}^\gamma_4(n_1)={}&\frac12\big[
+\mathcal{𝒪}^\gamma_4(n_1)={}&\frac12\big[
  \mathop{\mathrm{MS}}\nolimits_{123134}(\omega_2,\omega_2,n_1,n_1)\\
 &\qquad+(\omega_2n_1)\cup_2(s_1[\beta n_1]_2)\\
 &\qquad+(\omega_2\cup_1s_1)[\beta n_1]_2+s_1(s_1+n_1)[\beta n_1]_2\big]\\
@@ -172,12 +173,12 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal V}_3
- &=\widehat\nu_3+\widehat\nu'_3+\widehat{\mathcal{ℰ}}_3,\\
-\widehat{\mathcal{ℰ}}_3
- &=\widehat{\mathcal{ℰ}}^{c}_3
-  +\widehat{\mathcal{ℰ}}^{c\gamma}_3
-  +\widehat{\mathcal{ℰ}}^{\gamma}_3.
+\mathcal V_3
+ &=\nu_3+\nu'_3+\mathcal{ℰ}_3,\\
+\mathcal{ℰ}_3
+ &=\mathcal{ℰ}^{c}_3
+  +\mathcal{ℰ}^{c\gamma}_3
+  +\mathcal{ℰ}^{\gamma}_3.
 \end{aligned}
 ```
 
@@ -188,7 +189,7 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 **(M3Ec, 2+1D)**
 
 ```math
-\widehat{\mathcal{ℰ}}^{c}_3
+\mathcal{ℰ}^{c}_3
  =\frac12\big[n_2\cup_1n'_2
  +(n_2+n'_2)\cup_1\mathcal{ℰ}_2\big].
 ```
@@ -200,7 +201,7 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 **(M3Ecγ, 2+1D)**
 
 ```math
-\widehat{\mathcal{ℰ}}^{c\gamma}_3
+\mathcal{ℰ}^{c\gamma}_3
  =\frac12\Big[dn_2\cup_2n'_2
    +\Delta[n_2\cup_2dn_2]\Big].
 ```
@@ -213,7 +214,7 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^\gamma_3={}&
+\mathcal{ℰ}^\gamma_3={}&
 \frac12\Big[[n_1\cup_1(n_1n'_1)]n'_1
  +(\omega_2N_1)\cup_2(n_1n'_1)+\mathcal L_3\\
 &\qquad+(\omega_2\cup_1s_1)(n_1\cup_1n'_1)\\
@@ -317,10 +318,10 @@ dn_3=\mathcal{𝒪}_4=\mathcal{𝒪}^{\gamma}_4.
 **(M3, 3+1D: obstruction)**
 
 ```math
-d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
- =\widehat{\mathcal{𝒪}}^{c}_5
-  +\widehat{\mathcal{𝒪}}^{c\gamma}_5
-  +\widehat{\mathcal{𝒪}}^{\gamma}_5.
+d_{s_1}\nu_4=\mathcal{𝒪}_5
+ =\mathcal{𝒪}^{c}_5
+  +\mathcal{𝒪}^{c\gamma}_5
+  +\mathcal{𝒪}^{\gamma}_5.
 ```
 
 ##### Complex-fermion contribution
@@ -330,7 +331,7 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 **(M3c, 3+1D)**
 
 ```math
-\widehat{\mathcal{𝒪}}^{c}_5
+\mathcal{𝒪}^{c}_5
  =\frac12\big[\omega_2\widetilde{n}_3+\widetilde{n}_3\cup_1\widetilde{n}_3
    +d\widetilde{n}_3\cup_2\widetilde{n}_3\big].
 ```
@@ -342,7 +343,7 @@ d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
 **(M3cγ, 3+1D)**
 
 ```math
-\widehat{\mathcal{𝒪}}^{c\gamma}_5
+\mathcal{𝒪}^{c\gamma}_5
  =\frac12\big[d\widetilde{n}_3\cup_3d\widetilde{n}_3\big].
 ```
 
@@ -360,7 +361,7 @@ Majorana input in the full tower.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_5^\gamma
+\mathcal{𝒪}_5^\gamma
 ={}&\frac12\Big[
  \zeta_{2,2}(\omega_2,\widetilde{n}_2)\\
 &\qquad+\mathcal X_5(\widetilde{n}_2)
@@ -445,12 +446,12 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal V}_4
- &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4,\\
-\widehat{\mathcal{ℰ}}_4
- &=\widehat{\mathcal{ℰ}}^{c}_4
-  +\widehat{\mathcal{ℰ}}^{c\gamma}_4
-  +\widehat{\mathcal{ℰ}}^{\gamma}_4.
+\mathcal V_4
+ &=\nu_4+\nu'_4+\mathcal{ℰ}_4,\\
+\mathcal{ℰ}_4
+ &=\mathcal{ℰ}^{c}_4
+  +\mathcal{ℰ}^{c\gamma}_4
+  +\mathcal{ℰ}^{\gamma}_4.
 \end{aligned}
 ```
 
@@ -462,7 +463,7 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&
+\mathcal{ℰ}_4^c=\frac12\Big[&
  \widetilde{n}_3\cup_2\widetilde{n}'_3
  +(\widetilde{n}_3+\widetilde{n}'_3)\cup_2(\mathcal{ℰ}_3+\Delta\mathcal B_3)\\
  &+\omega_2\mathcal B_2+\mathcal B_2^2
@@ -479,7 +480,7 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^{c\gamma}=\frac12\Big[&
+\mathcal{ℰ}_4^{c\gamma}=\frac12\Big[&
  d\widetilde{n}_3\cup_3\widetilde{n}'_3
  +\Delta(\widetilde{n}_3\cup_3d\widetilde{n}_3)\\
  &+d\mathcal B_2\cup_3d\widetilde{N}_3\Big].
@@ -492,7 +493,7 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 
 **(M7, 3+1D)**
 
-Use the same $`\widehat{\mathcal{ℰ}}_4^\gamma`$ as in the complete
+Use the same $`\mathcal{ℰ}_4^\gamma`$ as in the complete
 3+1D product, with $`\widetilde{n}_2=n_2`$, $`\widetilde{n}'_2=n'_2`$,
 $`\beta^-=\beta`$, and
 $`\lambda_2^\gamma=[n_2\cup_2n'_2]_2`$.
@@ -501,7 +502,7 @@ $`\mathcal{ℰ}_3^\gamma=\mathcal{ℰ}_3`$.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^{\gamma}_4={}&\frac12z_4^\gamma
+\mathcal{ℰ}^{\gamma}_4={}&\frac12z_4^\gamma
  +\frac14\big[
  -\beta^-\widetilde{n}_2\cup_2\beta^-\widetilde{n}'_2\\
  &+(\beta^-\widetilde{n}_2+\beta^-\widetilde{n}'_2)
@@ -617,10 +618,10 @@ dn_4=\mathcal{𝒪}_5=\mathcal{𝒪}^{\gamma}_5.
 **(M3, 4+1D: obstruction)**
 
 ```math
-d_{s_1}\widehat\nu_5=\widehat{\mathcal{𝒪}}_6
- =\widehat{\mathcal{𝒪}}^{c}_6
-  +\widehat{\mathcal{𝒪}}^{c\gamma}_6
-  +\widehat{\mathcal{𝒪}}^{\gamma}_6.
+d_{s_1}\nu_5=\mathcal{𝒪}_6
+ =\mathcal{𝒪}^{c}_6
+  +\mathcal{𝒪}^{c\gamma}_6
+  +\mathcal{𝒪}^{\gamma}_6.
 ```
 
 ##### Complex-fermion contribution
@@ -630,7 +631,7 @@ d_{s_1}\widehat\nu_5=\widehat{\mathcal{𝒪}}_6
 **(M3c, 4+1D)**
 
 ```math
-\widehat{\mathcal{𝒪}}^{c}_6
+\mathcal{𝒪}^{c}_6
  =\frac12\big[\omega_2n_4+n_4\cup_2n_4
    +dn_4\cup_3n_4\big].
 ```
@@ -642,7 +643,7 @@ d_{s_1}\widehat\nu_5=\widehat{\mathcal{𝒪}}_6
 **(M3cγ, 4+1D)**
 
 ```math
-\widehat{\mathcal{𝒪}}^{c\gamma}_6
+\mathcal{𝒪}^{c\gamma}_6
  =\frac12\big[dn_4\cup_4dn_4\big].
 ```
 
@@ -658,7 +659,7 @@ formula as in the full 4+1D tower:
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_6^\gamma
+\mathcal{𝒪}_6^\gamma
 ={}&\frac12\Big[
  \zeta_{2,3}(\omega_2,\widetilde{n}_3)+\mathcal X_6(\widetilde{n}_3)\\
 &\qquad+(\widetilde{n}_3\cup_1\widetilde{n}_3)\cup_4(\omega_2\widetilde{n}_3)
@@ -750,12 +751,12 @@ N_4=n_4+n'_4+\mathcal{ℰ}_4,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal V}_5
- &=\widehat\nu_5+\widehat\nu'_5+\widehat{\mathcal{ℰ}}_5,\\
-\widehat{\mathcal{ℰ}}_5
- &=\widehat{\mathcal{ℰ}}^{c}_5
-  +\widehat{\mathcal{ℰ}}^{c\gamma}_5
-  +\widehat{\mathcal{ℰ}}^{\gamma}_5.
+\mathcal V_5
+ &=\nu_5+\nu'_5+\mathcal{ℰ}_5,\\
+\mathcal{ℰ}_5
+ &=\mathcal{ℰ}^{c}_5
+  +\mathcal{ℰ}^{c\gamma}_5
+  +\mathcal{ℰ}^{\gamma}_5.
 \end{aligned}
 ```
 
@@ -766,7 +767,7 @@ N_4=n_4+n'_4+\mathcal{ℰ}_4,\qquad
 **(M3Ec, 4+1D)**
 
 ```math
-\widehat{\mathcal{ℰ}}_5^c
+\mathcal{ℰ}_5^c
 =\frac12\big[n_4\cup_3n'_4
  +(n_4+n'_4)\cup_3\mathcal{ℰ}_4\big].
 ```
@@ -781,7 +782,7 @@ Use $`\mathcal{𝒪}_5^{\gamma\psi}=0`$ and the actual binary lower output in th
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5^{c\gamma}
+\mathcal{ℰ}_5^{c\gamma}
 ={}&\frac12\Big[
  \big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\cup_4n'_4\\
 &\qquad+\Delta\Big[
@@ -805,7 +806,7 @@ selected on this subspace.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5^\gamma
+\mathcal{ℰ}_5^\gamma
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
        \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)
@@ -834,13 +835,13 @@ selected on this subspace.
  \epsilon\;[
        \sum_{\eta\in\mathcal P}\prod_{(x,f)\in\eta}x_f]_2
  \Big]\\
-&-\widehat B_5[\widetilde{n}_3+\widetilde{n}'_3,0]
- +\widehat B_5[\widetilde{n}_3,0]+\widehat B_5[\widetilde{n}'_3,0]\pmod1.
+&-B_5[\widetilde{n}_3+\widetilde{n}'_3,0]
+ +B_5[\widetilde{n}_3,0]+B_5[\widetilde{n}'_3,0]\pmod1.
 \end{aligned}
 ```
 
 The carries and coefficient sets are the shared
-[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`\widehat B_5`$ is the same
+[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`B_5`$ is the same
 [phase-change cochain](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 The earlier compact closed-product expression differs by its explicit
 output coboundary as well as the phase-coordinate comparison. It is not
@@ -858,7 +859,7 @@ second terminal stacking convention.
 
 The physical fields are $`n_0\in Z^0(G_b,\mathbb Z_2)`$,
 $`n_1\in C^1(G_b,\mathbb Z_2)`$, and
-$`\widehat\nu_2\in C^2(G_b,(\mathbb R/\mathbb Z)_{s_1})`$.
+$`\nu_2\in C^2(G_b,(\mathbb R/\mathbb Z)_{s_1})`$.
 There is no integer layer. This fMPS representative is a distinct phase
 coordinate; its physical field names do not imply an unstated coordinate
 transformation to another manuscript representative.
@@ -906,28 +907,28 @@ it explicitly before using that sector.
 **(M13O, 1+1D)**
 
 ```math
-d_{s_1}\widehat\nu_2=\widehat{\mathcal{𝒪}}_3
- =\widehat{\mathcal{𝒪}}^{c}_3
-  +\widehat{\mathcal{𝒪}}^{c\gamma}_3
-  +\widehat{\mathcal{𝒪}}^{\gamma}_3.
+d_{s_1}\nu_2=\mathcal{𝒪}_3
+ =\mathcal{𝒪}^{c}_3
+  +\mathcal{𝒪}^{c\gamma}_3
+  +\mathcal{𝒪}^{\gamma}_3.
 ```
 
 ##### Complex-fermion contribution
 
 ```math
-\widehat{\mathcal{𝒪}}^{c}_3=\frac12n_1\omega_2.
+\mathcal{𝒪}^{c}_3=\frac12n_1\omega_2.
 ```
 
 ##### Complex-fermion–Majorana contribution
 
 ```math
-\widehat{\mathcal{𝒪}}^{c\gamma}_3=0.
+\mathcal{𝒪}^{c\gamma}_3=0.
 ```
 
 ##### Majorana contribution
 
 ```math
-\widehat{\mathcal{𝒪}}^{\gamma}_3=0.
+\mathcal{𝒪}^{\gamma}_3=0.
 ```
 
 ### Stacking twisters
@@ -973,25 +974,25 @@ N_1=n_1+n'_1+\mathcal{ℰ}_1,\qquad
 
 ```math
 \begin{aligned}
-\widehat{\mathcal V}_2
- &=\widehat\nu_2+\widehat\nu'_2+\widehat{\mathcal{ℰ}}_2,\\
-\widehat{\mathcal{ℰ}}_2
- &=\widehat{\mathcal{ℰ}}^{c}_2
-  +\widehat{\mathcal{ℰ}}^{c\gamma}_2
-  +\widehat{\mathcal{ℰ}}^{\gamma}_2.
+\mathcal V_2
+ &=\nu_2+\nu'_2+\mathcal{ℰ}_2,\\
+\mathcal{ℰ}_2
+ &=\mathcal{ℰ}^{c}_2
+  +\mathcal{ℰ}^{c\gamma}_2
+  +\mathcal{ℰ}^{\gamma}_2.
 \end{aligned}
 ```
 
 ##### Complex-fermion contribution
 
 ```math
-\widehat{\mathcal{ℰ}}^{c}_2=\frac12n_1n'_1.
+\mathcal{ℰ}^{c}_2=\frac12n_1n'_1.
 ```
 
 ##### Complex-fermion–Majorana contribution
 
 ```math
-\widehat{\mathcal{ℰ}}^{c\gamma}_2
+\mathcal{ℰ}^{c\gamma}_2
  =\begin{cases}
  \frac12(n_1^{\mathrm{even}})^2,&n_0\ne n'_0,\\
  0,&n_0=n'_0.
@@ -1004,11 +1005,11 @@ $`n_0=0`$.
 ##### Majorana contribution
 
 ```math
-\widehat{\mathcal{ℰ}}^{\gamma}_2=0.
+\mathcal{ℰ}^{\gamma}_2=0.
 ```
 
 Classification also quotients by the residual parity gauge
-$`\widehat\nu_2\sim\widehat\nu_2+\omega_2/2`$; this remains part of the
+$`\nu_2\sim\nu_2+\omega_2/2`$; this remains part of the
 equivalence relation.
 
 <a id="intrinsic-word-products"></a>
@@ -1078,10 +1079,10 @@ physical contribution.
 
 ```math
 \begin{aligned}
-\widehat\nu_3
- &=\widehat\nu^{\mathrm{old}}_3+\frac12n_2\cup_2dn_2,\\
-\widehat\nu^{\mathrm{old}}_3
- &=\widehat\nu_3-\frac12n_2\cup_2dn_2.
+\nu_3
+ &=\nu^{\mathrm{old}}_3+\frac12n_2\cup_2dn_2,\\
+\nu^{\mathrm{old}}_3
+ &=\nu_3-\frac12n_2\cup_2dn_2.
 \end{aligned}
 ```
 
@@ -1092,8 +1093,8 @@ physical contribution.
 **(M12O, 2+1D)**
 
 ```math
-\widehat{\mathcal{𝒪}}_4
- =\widehat{\mathcal{𝒪}}^{\mathrm{old}}_4
+\mathcal{𝒪}_4
+ =\mathcal{𝒪}^{\mathrm{old}}_4
  +d_{s_1}\!\left[\frac12n_2\cup_2dn_2\right].
 ```
 
@@ -1105,8 +1106,8 @@ physical contribution.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_3
- =\widehat{\mathcal{ℰ}}^{\mathrm{old}}_3
+\mathcal{ℰ}_3
+ =\mathcal{ℰ}^{\mathrm{old}}_3
  &+\frac12N_2\cup_2dN_2\\
  &-\frac12n_2\cup_2dn_2
   -\frac12n'_2\cup_2dn'_2.
@@ -1121,10 +1122,10 @@ physical contribution.
 
 ```math
 \begin{aligned}
-\widehat\nu_4
- &=\widehat\nu^{\mathrm{old}}_4+\frac12n_3\cup_3dn_3,\\
-\widehat\nu^{\mathrm{old}}_4
- &=\widehat\nu_4-\frac12n_3\cup_3dn_3.
+\nu_4
+ &=\nu^{\mathrm{old}}_4+\frac12n_3\cup_3dn_3,\\
+\nu^{\mathrm{old}}_4
+ &=\nu_4-\frac12n_3\cup_3dn_3.
 \end{aligned}
 ```
 
@@ -1135,8 +1136,8 @@ physical contribution.
 **(M12O, 3+1D)**
 
 ```math
-\widehat{\mathcal{𝒪}}_5
- =\widehat{\mathcal{𝒪}}^{\mathrm{old}}_5
+\mathcal{𝒪}_5
+ =\mathcal{𝒪}^{\mathrm{old}}_5
  +d_{s_1}\!\left[\frac12n_3\cup_3dn_3\right].
 ```
 
@@ -1148,8 +1149,8 @@ physical contribution.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4
- =\widehat{\mathcal{ℰ}}^{\mathrm{old}}_4
+\mathcal{ℰ}_4
+ =\mathcal{ℰ}^{\mathrm{old}}_4
  &+\frac12N_3\cup_3dN_3\\
  &-\frac12n_3\cup_3dn_3
   -\frac12n'_3\cup_3dn'_3.
@@ -1164,10 +1165,10 @@ physical contribution.
 
 ```math
 \begin{aligned}
-\widehat\nu_5
- &=\widehat\nu^{\mathrm{old}}_5+\frac12n_4\cup_4dn_4,\\
-\widehat\nu^{\mathrm{old}}_5
- &=\widehat\nu_5-\frac12n_4\cup_4dn_4.
+\nu_5
+ &=\nu^{\mathrm{old}}_5+\frac12n_4\cup_4dn_4,\\
+\nu^{\mathrm{old}}_5
+ &=\nu_5-\frac12n_4\cup_4dn_4.
 \end{aligned}
 ```
 
@@ -1178,8 +1179,8 @@ physical contribution.
 **(M12O, 4+1D)**
 
 ```math
-\widehat{\mathcal{𝒪}}_6
- =\widehat{\mathcal{𝒪}}^{\mathrm{old}}_6
+\mathcal{𝒪}_6
+ =\mathcal{𝒪}^{\mathrm{old}}_6
  +d_{s_1}\!\left[\frac12n_4\cup_4dn_4\right].
 ```
 
@@ -1191,8 +1192,8 @@ physical contribution.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_5
- =\widehat{\mathcal{ℰ}}^{\mathrm{old}}_5
+\mathcal{ℰ}_5
+ =\mathcal{ℰ}^{\mathrm{old}}_5
  &+\frac12N_4\cup_4dN_4\\
  &-\frac12n_4\cup_4dn_4
   -\frac12n'_4\cup_4dn'_4.

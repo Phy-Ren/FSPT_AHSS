@@ -34,9 +34,9 @@ first vertex of the entire evaluated simplex.
 
 ## Arithmetic and carries
 
-An exact change of representative is written as $`dB_q`$ or
-$`d_{s_1}\widehat B_q`$; the hat denotes an additive phase. A freely
-chosen cocycle is denoted by $`C_q`$, or $`\widehat C_q`$ for an additive phase. The integer carries in the
+An exact change of representative is written as $`dB_q`$ or $`d_{s_1}B_q`$ for an additive phase.
+A freely chosen cocycle is denoted by $`C_q`$, with its coefficient group specified by the equation.
+The integer carries in the
 three- and four-dimensional towers are $`\beta_3,\beta_4`$, with
 their stated physical superscripts; $`\lambda_q`$ denotes the carry
 of a product. These names distinguish carries from the reference

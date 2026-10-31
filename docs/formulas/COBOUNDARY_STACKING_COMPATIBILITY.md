@@ -7,9 +7,9 @@ dimensions. In coordinates where the two constructions commute as
 cochains, their phase identity is
 
 ```math
-\Delta\widehat{\mathcal{𝒪}}_{D+1}(X,Y)
--d_{s_1}\widehat{\mathcal{ℰ}}_D(X,Y)
-=\widehat{\mathcal{ℰ}}_{D+1}(\delta_{\mathrm{lower}}X,
+\Delta\mathcal{𝒪}_{D+1}(X,Y)
+-d_{s_1}\mathcal{ℰ}_D(X,Y)
+=\mathcal{ℰ}_{D+1}(\delta_{\mathrm{lower}}X,
                            \delta_{\mathrm{lower}}Y).
 ```
 
@@ -28,13 +28,13 @@ systems explicit.
 
 Let the boundary spacetime dimension be $`D`$. Write its decoration
 data as $`X`$ and its additive phase as
-$`\widehat\nu_D\in C^D((\mathbb R/\mathbb Z)_{s_1})`$.
+$`\nu_D\in C^D((\mathbb R/\mathbb Z)_{s_1})`$.
 The boundary product is
 
 ```math
-(X,\widehat\nu_D)*(Y,\widehat\nu_D')
-=\bigl(X*Y,\widehat\nu_D+\widehat\nu_D'
-                  +\widehat{\mathcal{ℰ}}_D(X,Y)\bigr).
+(X,\nu_D)*(Y,\nu_D')
+=\bigl(X*Y,\nu_D+\nu_D'
+                  +\mathcal{ℰ}_D(X,Y)\bigr).
 ```
 
 Here $`X*Y`$ includes every lower stacking twister. Define
@@ -42,17 +42,17 @@ $`\Delta f(X,Y)=f(X*Y)-f(X)-f(Y)`$.
 In the fermionic-coboundary convention used here, the top bulk phase is
 
 ```math
-\delta(X,\widehat\nu_D)_{\mathrm{phase}}
-=\widehat{\mathcal{𝒪}}_{D+1}(X)-d_{s_1}\widehat\nu_D.
+\delta(X,\nu_D)_{\mathrm{phase}}
+=\mathcal{𝒪}_{D+1}(X)-d_{s_1}\nu_D.
 ```
 
 Suppose the chosen cochain representatives satisfy
-$`\delta((X,\widehat\nu_D)*(Y,\widehat\nu_D')) =\delta(X,\widehat\nu_D)*\delta(Y,\widehat\nu_D')`$.
+$`\delta((X,\nu_D)*(Y,\nu_D')) =\delta(X,\nu_D)*\delta(Y,\nu_D')`$.
 Comparison of their top components gives the displayed identity:
 the left construction has phase
-$`\widehat{\mathcal{𝒪}}_{D+1}(X*Y)-d_{s_1}\widehat\nu_D -d_{s_1}\widehat\nu_D'-d_{s_1}\widehat{\mathcal{ℰ}}_D`$;
+$`\mathcal{𝒪}_{D+1}(X*Y)-d_{s_1}\nu_D -d_{s_1}\nu_D'-d_{s_1}\mathcal{ℰ}_D`$;
 the right construction has phase
-$`\widehat{\mathcal{𝒪}}_{D+1}(X)+\widehat{\mathcal{𝒪}}_{D+1}(Y) -d_{s_1}\widehat\nu_D-d_{s_1}\widehat\nu_D' +\widehat{\mathcal{ℰ}}_{D+1}`$.
+$`\mathcal{𝒪}_{D+1}(X)+\mathcal{𝒪}_{D+1}(Y) -d_{s_1}\nu_D-d_{s_1}\nu_D' +\mathcal{ℰ}_{D+1}`$.
 
 All terms have degree $`D+1`$ and coefficients
 $`(\mathbb R/\mathbb Z)_{s_1}`$.
@@ -61,8 +61,8 @@ $`\delta_{\mathrm{lower}}X=\delta_{\mathrm{lower}}Y=0`$.
 Normalization of the bulk product then reduces the identity to
 
 ```math
-d_{s_1}\widehat{\mathcal{ℰ}}_D
-=\Delta\widehat{\mathcal{𝒪}}_{D+1}.
+d_{s_1}\mathcal{ℰ}_D
+=\Delta\mathcal{𝒪}_{D+1}.
 ```
 
 For more general boundary data the bulk term must be retained.
@@ -77,8 +77,8 @@ cohomology classes.
 Work entirely in the 4+1D context in this section. Let
 
 ```math
-X=(0,u,c,\widehat\nu_5),\qquad
-Y=(0,u,c',\widehat\nu'_5),
+X=(0,u,c,\nu_5),\qquad
+Y=(0,u,c',\nu'_5),
 ```
 
 where the entries are the p+ip, Majorana, complex-fermion, and phase
@@ -102,7 +102,7 @@ The complete current product has the exact specialization
 X*Y^{-1}
 =\left(
 0,0,c+c',
-\widehat\nu_5-\widehat\nu'_5
+\nu_5-\nu'_5
 +\frac12\left[
 (c+c')\cup_3c'
 +(c+c')\cup_4\mathcal{𝒪}_5^\gamma(u)
@@ -132,8 +132,8 @@ $`(0,u,c'+T)`$. Its phase is
 
 ```math
 \begin{aligned}
-\widehat\nu_5(Y^{-1})
-={}&-\widehat\nu'_5-\widehat{\mathcal{ℰ}}_5^\gamma(u,u)\\
+\nu_5(Y^{-1})
+={}&-\nu'_5-\mathcal{ℰ}_5^\gamma(u,u)\\
 &-\frac12\left[
 c'\cup_3(c'+T)+T\cup_3T
 +k\cup_4(c'+T)+T\cup_4k
@@ -152,7 +152,7 @@ For $`X*Y^{-1}`$, the direct product adds
 
 ```math
 \begin{aligned}
-&\widehat{\mathcal{ℰ}}_5^\gamma(u,u)\\
+&\mathcal{ℰ}_5^\gamma(u,u)\\
 &\quad+\frac12\left[
 c\cup_3(c'+T)+(c+c'+T)\cup_3T
 +k\cup_4(c'+T)+(c+c'+T)\cup_4k
@@ -177,7 +177,7 @@ c-gamma, and gamma contributions in their stated operator ordering.
 No contribution is reassigned by its dependence on decoration fields.
 
 The cancellation is independent of the chosen representative of
-$`\widehat{\mathcal{ℰ}}_5^\gamma(u,u)`$, provided that the same
+$`\mathcal{ℰ}_5^\gamma(u,u)`$, provided that the same
 representative is used in the inverse and the product. In particular,
 its quarter-valued terms cancel before any lift is expanded.
 
@@ -236,15 +236,15 @@ The boundary product also receives the face-reference phase on that page.
 ## Transporting representatives together
 
 A terminal coordinate change
-$`\widehat\nu_D^{\,\mathrm{new}}=\widehat\nu_D+\widehat B_D(X)`$
+$`\nu_D^{\,\mathrm{new}}=\nu_D+B_D(X)`$
 has the paired transport
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_{D+1}^{\,\mathrm{new}}
- &=\widehat{\mathcal{𝒪}}_{D+1}+d_{s_1}\widehat B_D,\\
-\widehat{\mathcal{ℰ}}_D^{\,\mathrm{new}}
- &=\widehat{\mathcal{ℰ}}_D+\Delta \widehat B_D .
+\mathcal{𝒪}_{D+1}^{\,\mathrm{new}}
+ &=\mathcal{𝒪}_{D+1}+d_{s_1}B_D,\\
+\mathcal{ℰ}_D^{\,\mathrm{new}}
+ &=\mathcal{ℰ}_D+\Delta B_D .
 \end{aligned}
 ```
 
@@ -272,6 +272,6 @@ d_{s_1}\tau_{012}Q
 ```
 
 The triangle formula explains the common sign in
-$`d_{s_1}\widehat{\mathcal{ℰ}}=\Delta\widehat{\mathcal{𝒪}}`$.
+$`d_{s_1}\mathcal{ℰ}=\Delta\mathcal{𝒪}`$.
 It also fixes the source and product signs when an explicit
 parameter-dependent representative is changed.

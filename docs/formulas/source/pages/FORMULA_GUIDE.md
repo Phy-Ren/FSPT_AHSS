@@ -39,13 +39,12 @@ some mixed terms.
 ### Arithmetic and modifiers
 
 A prime denotes the second stacking input, as in $`n'_j`$ and $`\widetilde{n}'_j`$.
-The outputs are $`N_j`$ and
-$`\mathcal V_j`$. A hat denotes the additive phase:
-$`\nu_j=\exp(2\pi i\widehat\nu_j)`$ and
-$`\mathcal V_j=\exp(2\pi i\widehat{\mathcal V}_j)`$, with
-both hatted phases in $`\mathbb R/\mathbb Z`$. The same convention applies to
-phase obstructions $`\widehat{\mathcal{𝒪}}`$ and corrections
-$`\widehat{\mathcal{ℰ}}`$.
+The outputs are $`N_j`$ and $`\mathcal V_j`$.
+We use the same symbol for a $`U(1)`$ phase and its additive value in $`\mathbb R/\mathbb Z`$, identified by $`x\mapsto\exp(2\pi ix)`$.
+Products and ratios of phases use the multiplicative convention; sums, differences, and phase equations modulo one use the additive convention.
+An exponential takes the additive value as its argument.
+This convention applies to $`\nu_j,\mathcal V_j`$, phase obstruction functions $`\mathcal{𝒪}`$, stacking twisters $`\mathcal{ℰ}`$, and their phase cochains $`B,C`$.
+Binary obstruction functions and twisters retain their stated arithmetic modulo two.
 
 Square brackets with subscript two denote the canonical binary value:
 

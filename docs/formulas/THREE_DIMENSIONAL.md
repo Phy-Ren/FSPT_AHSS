@@ -95,13 +95,13 @@ The second digit obeys $`d[\lfloor n_1/2\rfloor]_2=[n_1]_2^2+s_1[n_1]_2`$.
 <a id="eq-t3"></a>
 
 ```math
-d_{s_1}\widehat\nu_4=\widehat{\mathcal{𝒪}}_5
- =\widehat{\mathcal{𝒪}}_5^c
-  +\widehat{\mathcal{𝒪}}_5^{c\gamma}
-  +\widehat{\mathcal{𝒪}}_5^{c\psi}
-  +\widehat{\mathcal{𝒪}}_5^\gamma
-  +\widehat{\mathcal{𝒪}}_5^{\gamma\psi}
-  +\widehat{\mathcal{𝒪}}_5^\psi.
+d_{s_1}\nu_4=\mathcal{𝒪}_5
+ =\mathcal{𝒪}_5^c
+  +\mathcal{𝒪}_5^{c\gamma}
+  +\mathcal{𝒪}_5^{c\psi}
+  +\mathcal{𝒪}_5^\gamma
+  +\mathcal{𝒪}_5^{\gamma\psi}
+  +\mathcal{𝒪}_5^\psi.
 ```
 
 The decoration $`n_3`$ is the occupation in the geometric pairing reference.
@@ -128,7 +128,7 @@ The source and product are transported together as proved in
 #### Complex fermions
 
 ```math
-\widehat{\mathcal{𝒪}}_5^c
+\mathcal{𝒪}_5^c
  =\frac12[\omega_2\widetilde{n}_3+\widetilde{n}_3\cup_1\widetilde{n}_3+d\widetilde{n}_3\cup_2\widetilde{n}_3].
 ```
 
@@ -136,7 +136,7 @@ The source and product are transported together as proved in
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_5^{c\gamma}
+\mathcal{𝒪}_5^{c\gamma}
 ={}&\frac12\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big]\cup_3\!\big[\\
 &\qquad\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big].
 \end{aligned}
@@ -154,7 +154,7 @@ that physical origin.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_5^{c\psi}
+\mathcal{𝒪}_5^{c\psi}
  =\frac12\Big[&d\widetilde{n}_3\cup_3\mathcal{𝒪}_4^\psi
   +\mathcal{𝒪}_4^\psi\cup_3d\widetilde{n}_3
   +\mathcal{𝒪}_4^\psi\cup_3\mathcal{𝒪}_4^\psi\\
@@ -189,7 +189,7 @@ changes neither the source representative nor the paired stacking law.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_5^\gamma
+\mathcal{𝒪}_5^\gamma
 ={}&\frac12\Big[
  \zeta_{2,2}(\omega_2,\widetilde{n}_2)\\
 &\qquad+\mathcal X_5(\widetilde{n}_2)
@@ -237,7 +237,7 @@ $`\beta^-=\beta`$; no phase redefinition is involved.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_5^{\gamma\psi}
+\mathcal{𝒪}_5^{\gamma\psi}
 ={}&\frac12\sum_{(v;\mathbf x)\in\mathcal I_5^{\gamma\psi}}
        \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)\\
 &+\frac14\Big[
@@ -276,7 +276,7 @@ On the ordered five-simplex $`(012345)`$, the complete contribution is
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_5^\psi(012345)
+\mathcal{𝒪}_5^\psi(012345)
 ={}&\frac12\Bigg[
  \sum_{(v;\mathbf x)\in\mathcal I_5^\psi}
        \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)
@@ -400,15 +400,15 @@ The pure sheet contribution has three terms. The signed floor is taken before re
 
 ```math
 \begin{aligned}
-\widehat{\mathcal V}_4
- &=\widehat\nu_4+\widehat\nu'_4+\widehat{\mathcal{ℰ}}_4,\\
-\widehat{\mathcal{ℰ}}_4
- &=\widehat{\mathcal{ℰ}}^{c}_4
-  +\widehat{\mathcal{ℰ}}^{c\gamma}_4
-  +\widehat{\mathcal{ℰ}}^{c\psi}_4
-  +\widehat{\mathcal{ℰ}}^{\gamma}_4
-  +\widehat{\mathcal{ℰ}}^{\gamma\psi}_4
-  +\widehat{\mathcal{ℰ}}^{\psi}_4.
+\mathcal V_4
+ &=\nu_4+\nu'_4+\mathcal{ℰ}_4,\\
+\mathcal{ℰ}_4
+ &=\mathcal{ℰ}^{c}_4
+  +\mathcal{ℰ}^{c\gamma}_4
+  +\mathcal{ℰ}^{c\psi}_4
+  +\mathcal{ℰ}^{\gamma}_4
+  +\mathcal{ℰ}^{\gamma\psi}_4
+  +\mathcal{ℰ}^{\psi}_4.
 \end{aligned}
 ```
 
@@ -451,7 +451,7 @@ It retains the complex-fermion completion and uses the same phase representative
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^c=\frac12\Big[&
+\mathcal{ℰ}_4^c=\frac12\Big[&
  \widetilde{n}_3\cup_2\widetilde{n}'_3
  +(\widetilde{n}_3+\widetilde{n}'_3)\cup_2(\mathcal{ℰ}_3+\Delta\mathcal B_3)\\
  &+\omega_2\mathcal B_2+\mathcal B_2^2
@@ -464,7 +464,7 @@ It retains the complex-fermion completion and uses the same phase representative
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^{c\gamma}
+\mathcal{ℰ}_4^{c\gamma}
 ={}&\frac12\Big[
  \big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d\mathcal B_3\big]\cup_3\widetilde{n}'_3\\
 &\qquad+\Delta\Big[
@@ -479,7 +479,7 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,\widetilde{N}_2)
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^{c\psi}(01234)
+\mathcal{ℰ}_4^{c\psi}(01234)
 ={}&\frac12\Big[
  \mathcal{𝒪}_4^\psi[n_1]\cup_3\widetilde{n}'_3
  +\Delta\big(\widetilde{n}_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
@@ -527,7 +527,7 @@ binary argument; it must not be linearized.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^{\gamma}_4={}&\frac12z_4^\gamma
+\mathcal{ℰ}^{\gamma}_4={}&\frac12z_4^\gamma
  +\frac14\big[
  -\beta^-\widetilde{n}_2\cup_2\beta^-\widetilde{n}'_2\\
  &+(\beta^-\widetilde{n}_2+\beta^-\widetilde{n}'_2)
@@ -600,7 +600,7 @@ lift scopes.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^{\gamma\psi}_4={}&
+\mathcal{ℰ}^{\gamma\psi}_4={}&
  \frac12\Big[z_4^\gamma+
    \sum_{(v;\boldsymbol x)\in\mathcal I_{4,\neg\psi}}
           \mathop{\mathrm{MS}}\nolimits_v(\boldsymbol x)\\
@@ -665,7 +665,7 @@ sufficient.
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}^{\psi}_4={}&
+\mathcal{ℰ}^{\psi}_4={}&
  \frac12\left[
  \sum_{(v;\boldsymbol x)\in\mathcal I_{4,\psi}}
          \mathop{\mathrm{MS}}\nolimits_v(\boldsymbol x)+\sum_{(f,g)\in\mathcal I_4^{\psi,\mathrm{face}}}f\,g\right]\\

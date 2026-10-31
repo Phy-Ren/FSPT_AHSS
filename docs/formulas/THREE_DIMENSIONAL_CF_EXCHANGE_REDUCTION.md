@@ -10,7 +10,7 @@ obstruction representatives:
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{ℰ}}_4^{c\psi}(01234)
+\mathcal{ℰ}_4^{c\psi}(01234)
 ={}&\frac12\Big[
  \mathcal{𝒪}_4^\psi[n_1]\cup_3\widetilde{n}'_3
  +\Delta\big(\widetilde{n}_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
@@ -116,7 +116,7 @@ The complete source contribution is
 
 ```math
 \begin{aligned}
-\widehat{\mathcal{𝒪}}_5^{c\psi}
+\mathcal{𝒪}_5^{c\psi}
  =\frac12\Big[&d\widetilde{n}_3\cup_3\mathcal{𝒪}_4^\psi
   +\mathcal{𝒪}_4^\psi\cup_3d\widetilde{n}_3
   +\mathcal{𝒪}_4^\psi\cup_3\mathcal{𝒪}_4^\psi\\

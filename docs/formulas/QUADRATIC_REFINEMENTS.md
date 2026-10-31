@@ -243,7 +243,7 @@ $`V_5^{\mathbb Z}/4+Z_5^{\rm new}/2`$ then gives exactly
 <a id="paired-lift-transport"></a>
 
 ```math
-\widehat{\mathcal{ℰ}}_5^{\rm new}-\widehat{\mathcal{ℰ}}_5
+\mathcal{ℰ}_5^{\rm new}-\mathcal{ℰ}_5
  =d_{s_1}\left[\frac12(\mathsf h^{\rm tw})^*[B_5^{\mathrm{lift}}]_2\right]\pmod1.
 ```
 
