@@ -59,6 +59,9 @@ def fields(edges, has_n, has_u, has_c):
     second_v = C(3, fun=lambda f: beta_W(f) // 2)
     whole = cup(cup(v, v, 2), a) + cup(cup(s, v), h)
     whole = whole + cup(cup(s, cup(s, v, 1)), a)
+    # These exact keys belong to the frozen term-census manifests.
+    # Current reader notation is translated in formulas/CODE_NOTATION.md;
+    # retaining the archived keys preserves their checksums and replay.
     values = {
         r'\bar n_1': a, r'\widetilde n_1': h,
         r'\overline{\lfloor n_1/4\rfloor}': C(1, fun=lambda f: n(f) // 4),
@@ -225,7 +228,7 @@ def check():
         pins[relative] = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
     return {'status': 'PASS', 'dimension': '3+1D',
             'symmetry': {'Gf': 'Z4^{f,T}', 'Gb': 'C2', 'omega2': 'm1^2', 's1': 'm1'},
-            'phase_convention': 'Current geometric pairing coordinate, with the checked CF phase input and complete output-face phase.',
+            'phase_convention': 'Current geometric pairing coordinate, with the shifted CF phase input and complete output-face phase.',
             'normalization': 'm1^q(g1,...,gq)=product(gj), gj in {0,1}; all tuples included.',
             'five_tuples_checked_per_root': 32,
             'lower_equations': {'d_s_n1': 'PASS all 4 pairs', 'd_n2': 'PASS all 8 triples',

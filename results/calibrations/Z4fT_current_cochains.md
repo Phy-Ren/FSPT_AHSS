@@ -19,8 +19,8 @@ in the geometric pairing coordinate.
 | Bosonic | $`0`$ | $`0`$ | $`0`$ | $`0`$ | $`\tfrac12m_1^4`$ |
 
 Every row satisfies all lower obstruction equations. In particular,
-$`\check\omega_2=\omega_2+s_1^2=0`$ and the second integer digit
-$`\widetilde n_1`$ vanishes on the p+ip representative.
+$`\widetilde{\omega}_2=\omega_2+s_1^2=0`$ and the second integer digit
+$`[\lfloor n_1/2\rfloor]_2`$ vanishes on the p+ip representative.
 These facts do **not** make its terminal obstruction vanish: the complete
 binary physical-face contribution evaluates to $`m_1^5`$, while its MS sum
 and all higher-denominator terms vanish. Thus its required phase is
@@ -36,7 +36,7 @@ d_{s_1}(q\,m_1^4)=-2q\,m_1^5.
 ```
 
 Consequently, the nonzero sources in the first two rows are coboundaries
-in $`U(1)_{s_1}`$: they require the displayed phase and do not obstruct
+in $`U(1)_T`$: they require the displayed phase and do not obstruct
 the states. Adding $`m_1^4/2`$ gives the alternative solution differing
 by the bosonic root.
 
@@ -50,7 +50,7 @@ integer output by its fermionic coboundary. This verifies concrete
 representatives; it is not a repeated classification calculation.
 
 The reference change is also evaluated explicitly. All four roots have
-$`\mathcal B_3=\check n_2\cup_1\check n_2=0`$. The p+ip square has
+$`\mathcal B_3=\widetilde{n}_2\cup_1\widetilde{n}_2=0`$. The p+ip square has
 $`\mathcal B_2=0`$, while the Majorana square has $`\mathcal B_2=m_1^2`$;
 in the latter case $`d\mathcal B_2=0`$ and
 $`(\omega_2\mathcal B_2+\mathcal B_2^2)/2=0\mod1`$.
