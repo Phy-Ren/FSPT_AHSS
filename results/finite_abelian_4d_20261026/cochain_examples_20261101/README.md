@@ -95,6 +95,14 @@ Together with the independent cyclic `Z16` contribution, this gives the full sta
 The surviving layer quotients and nontriviality of the bosonic root are given by the parent package's layer calculation.
 `verify_abelian_z4f_z2.py` exhaustively checks the displayed obstruction equations, coboundary, and doubling chain using the published closed-Majorana formulas.
 
+## General commuting power extensions
+
+[POWER_EXTENSIONS.md](POWER_EXTENSIONS.md) gives the cyclic and mixed complex-fermion primitives for `G_f=Z_(2M)^f x Z_N`, including the necessary Cartan corrections.
+It also documents an exact audit of every bosonic change to the integer-root power relations in six small nonsplit two-primary cases.
+Together with prime decomposition, these cases establish abstract terminal-phase independence for arbitrary odd factors coprime to three when the two-primary quotient orders are at most four.
+The nontrivial power extension is required for this statement; split fermion parity has different cyclic extensions.
+The saved power-extension reports contain the pointwise checks, transported bosonic subgroups, and compact-formula comparisons.
+
 ## Run
 
 From the repository root:
@@ -104,11 +112,16 @@ python results/finite_abelian_4d_20261026/cochain_examples_20261101/check_split_
 python results/finite_abelian_4d_20261026/cochain_examples_20261101/check_split_pair_secondary.py
 python results/finite_abelian_4d_20261026/cochain_examples_20261101/verify_abelian_z4f_z2.py
 python results/finite_abelian_4d_20261026/cochain_examples_20261101/check_split_lowrank_groups.py
+python results/finite_abelian_4d_20261026/cochain_examples_20261101/check_power_extension_cochains.py
+python results/finite_abelian_4d_20261026/cochain_examples_20261101/check_power_extension_terminal.py
+python results/finite_abelian_4d_20261026/cochain_examples_20261101/check_power_extension_formulas.py
 ```
 
-The first three commands discover this checkout automatically and accept `--formula-repo /path/to/FSPT_AHSS` to use another checkout.
+The cochain commands discover this checkout automatically and accept `--formula-repo /path/to/FSPT_AHSS` to use another checkout.
 They require only the Python standard library and this repository's formula implementation.
-The final command uses the parent package's exact-arithmetic dependencies.
-It compares the compact cyclic and terminal-independent two-factor results against the retained prime-power formulas: 500 cyclic orders and 820 pairs.
+The formula-comparison commands and the terminal-extension audit use the parent package's exact-arithmetic dependencies.
+The split comparison checks 500 cyclic orders and 820 pairs against the retained prime-power formulas.
+The power-extension comparison checks 3200 layer results and 1458 group results.
 That comparison checks assembly of the known groups and layers; it does not rerun the full AHSS.
 `verification_report.json` records the actual checks and hashes the scripts and formula implementation used for the run.
+`power_extension_report.json` records the added power-extension checks and their implementation hashes.

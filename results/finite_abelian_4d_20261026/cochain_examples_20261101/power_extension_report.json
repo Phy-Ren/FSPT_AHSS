@@ -1,0 +1,47 @@
+{
+  "scope": "Unitary Abelian full symmetry with commuting nontrivial fermion-parity power extensions.",
+  "status": "passed",
+  "portability_check": "All three copied scripts were run by absolute path from a working directory outside the checkout, using their default package discovery.",
+  "cochains": {
+    "records": "power_extension_cochain_results.json",
+    "cases": 13,
+    "six_simplices_checked": 34256,
+    "exhaustive_cases": 3,
+    "all_phase_residuals_zero": true
+  },
+  "terminal_extensions": {
+    "records": "power_extension_terminal_results.json",
+    "exhaustive_cases": 6,
+    "bosonic_changes_tested": [
+      2,
+      4,
+      4,
+      64,
+      16,
+      4096
+    ],
+    "all_six_groups_unchanged": true,
+    "fourth_obstruction_zero_on_generators": true,
+    "higher_order_counterexamples": 3
+  },
+  "formula_comparisons": {
+    "orders_through": 80,
+    "layer_pairs_checked": 3200,
+    "group_pairs_checked": 1458,
+    "all_comparisons_passed": true
+  },
+  "sha256": {
+    "results/finite_abelian_4d_20261026/cochain_examples_20261101/check_power_extension_cochains.py": "c2ee7ff12580a17435c7996e120b6ca7e61528499155f2b50ed7847e1409367a",
+    "results/finite_abelian_4d_20261026/cochain_examples_20261101/check_power_extension_terminal.py": "42c387d61cd6b486657c3be46c60de1532f06435194a46e7c3e80736d5a70e8b",
+    "results/finite_abelian_4d_20261026/cochain_examples_20261101/check_power_extension_formulas.py": "170a69543d88efab9f71599b6b71de27f0399a3cc2c04651764a9ffb0fb04619",
+    "results/finite_abelian_4d_20261026/cochain_examples_20261101/power_extension_cochain_results.json": "3c2b2863a761a20ac879f0cfaa0ff177bf19455ea1b782a7a882a27f9ddf883e",
+    "results/finite_abelian_4d_20261026/cochain_examples_20261101/power_extension_terminal_results.json": "aba60b5100109922c4970b09c013b4cbad5825a4c4215e1ee2d6887dab93f132",
+    "results/finite_abelian_4d_20261026/cochain_examples_20261101/power_extension_formula_results.json": "bf6c445bce4f5cc93582d17a036eab5ca2561909b0fc7e0a4a115ac16727cfdd",
+    "fspt/formulas.py": "ac7f18a679038227992e79d02ae6ead49f3148f889db12f6bb1f3f0e1bb70fc0",
+    "fspt/majorana_complete.py": "183c836d66a73e1dd9a1f394a6c52c703166fafd740e08062216de997b91428d",
+    "results/finite_abelian_4d_20261026/nonsplit_closed_formula.py": "61cc19b6f2dbd3cc1f8c891674ffa1bc086ea6c9374ea1cfb33ccfc4b1a03f92",
+    "results/finite_abelian_4d_20261026/nonsplit_layers.py": "e7d27e16db224bb57d06218375adeb7496562d639d6de4b3042b9e4318db7d48",
+    "results/finite_abelian_4d_20261026/split_closed_formula.py": "dd6716a8b263a2645dc0786dd0d8368736127904575f43c4900ea2591600416c",
+    "results/finite_abelian_4d_20261026/split_layers.py": "7806ff858e9e7b9e3343caa868cfb42324b36de7c50820e3db22a3c67a3a622a"
+  }
+}

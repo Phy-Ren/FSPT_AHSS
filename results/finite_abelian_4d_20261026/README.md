@@ -69,6 +69,8 @@ Its geometric index rows generate the entire lattice; the stored integer left in
 
 The [explicit cyclic and two-factor cochain examples](cochain_examples_20261101/README.md) give a normalized-bar Cartan primitive for the mixed complex-fermion phase, the incoming Majorana calculation for $\mathbb Z_2\times\mathbb Z_4$, and the order-eight Majorana root of $\mathbb Z_4^f\times\mathbb Z_2$.
 Their scripts check the phase equations and stacking relations directly.
+The [commuting power-extension checks](cochain_examples_20261101/POWER_EXTENSIONS.md) add cyclic and mixed Cartan primitives and an exhaustive audit of the abstract terminal-phase independence of six nonsplit two-primary groups.
+They also state the extension of this result to odd factors coprime to three and its limits at other orders.
 
 ## Reproducibility checks
 

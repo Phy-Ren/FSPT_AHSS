@@ -1,0 +1,942 @@
+[
+  {
+    "source": "results/complete_formulas/raw/d4_C2_w1_s0.json",
+    "sha256": "619742bd66ce9addc6dbab65bfc9bbfd526a919860b32b2e4d2748e3df823dc9",
+    "background": "C2_w1_s0",
+    "original_group": [
+      16
+    ],
+    "non_integer_subgroup": [
+      8
+    ],
+    "bosonic_subgroup_order": 2,
+    "bosonic_generator_names": [
+      "D1"
+    ],
+    "bosonic_embeddings": [
+      [
+        4
+      ]
+    ],
+    "integer_generator_names": [
+      "P1"
+    ],
+    "integer_quotient_orders": [
+      2
+    ],
+    "reduced_relation_matrix": [
+      [
+        8,
+        0
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    "exhaustive": true,
+    "fourth_obstruction_zero_on_generators": true,
+    "integer_layer_before_and_after_fourth_obstruction": [
+      2
+    ],
+    "shifts_checked": 2,
+    "groups_obtained": [
+      [
+        16
+      ]
+    ],
+    "all_bosonic_changes_leave_group_unchanged": true
+  },
+  {
+    "source": "results/complete_formulas/raw/d4_C4_orbit_001.json",
+    "sha256": "4a48ecb7e20c17ed40accf01fff76315a40fdcce227f0e26c0530bc1e8652d5a",
+    "background": "C4_orbit_001",
+    "original_group": [
+      2,
+      32
+    ],
+    "non_integer_subgroup": [
+      2,
+      8
+    ],
+    "bosonic_subgroup_order": 4,
+    "bosonic_generator_names": [
+      "D1"
+    ],
+    "bosonic_embeddings": [
+      [
+        0,
+        2
+      ]
+    ],
+    "integer_generator_names": [
+      "P1"
+    ],
+    "integer_quotient_orders": [
+      4
+    ],
+    "reduced_relation_matrix": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        0
+      ],
+      [
+        -4,
+        -5,
+        4
+      ]
+    ],
+    "exhaustive": true,
+    "fourth_obstruction_zero_on_generators": true,
+    "integer_layer_before_and_after_fourth_obstruction": [
+      4
+    ],
+    "shifts_checked": 4,
+    "groups_obtained": [
+      [
+        2,
+        32
+      ]
+    ],
+    "all_bosonic_changes_leave_group_unchanged": true
+  },
+  {
+    "source": "results/complete_formulas/raw/d4_C2xC2_orbit_001.json",
+    "sha256": "39a6560628b6f647989651c8378329c1c61815ab6f1eadd0e8c4ac4336cbd6ad",
+    "background": "C2xC2_orbit_001",
+    "original_group": [
+      8,
+      16
+    ],
+    "non_integer_subgroup": [
+      8,
+      8
+    ],
+    "bosonic_subgroup_order": 4,
+    "bosonic_generator_names": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "bosonic_embeddings": [
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "integer_generator_names": [
+      "P1"
+    ],
+    "integer_quotient_orders": [
+      2
+    ],
+    "reduced_relation_matrix": [
+      [
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        0
+      ],
+      [
+        -1,
+        5,
+        2
+      ]
+    ],
+    "exhaustive": true,
+    "fourth_obstruction_zero_on_generators": true,
+    "integer_layer_before_and_after_fourth_obstruction": [
+      2
+    ],
+    "shifts_checked": 4,
+    "groups_obtained": [
+      [
+        8,
+        16
+      ]
+    ],
+    "all_bosonic_changes_leave_group_unchanged": true
+  },
+  {
+    "source": "results/complete_formulas/raw/d4_C4xC2_orbit_001.json",
+    "sha256": "d82af3d41b9d99faa451c7eb11655c09c7dc96be7ba7aac546e45d3be23744bb",
+    "background": "C4xC2_orbit_001",
+    "original_group": [
+      2,
+      2,
+      8,
+      16
+    ],
+    "non_integer_subgroup": [
+      2,
+      2,
+      4,
+      8
+    ],
+    "bosonic_subgroup_order": 8,
+    "bosonic_generator_names": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "bosonic_embeddings": [
+      [
+        0,
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "integer_generator_names": [
+      "P1",
+      "P2"
+    ],
+    "integer_quotient_orders": [
+      2,
+      2
+    ],
+    "reduced_relation_matrix": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        -7889,
+        3264,
+        -4625,
+        2,
+        0
+      ],
+      [
+        3,
+        15192,
+        -6281,
+        8910,
+        0,
+        2
+      ]
+    ],
+    "exhaustive": true,
+    "fourth_obstruction_zero_on_generators": true,
+    "integer_layer_before_and_after_fourth_obstruction": [
+      2,
+      2
+    ],
+    "shifts_checked": 64,
+    "groups_obtained": [
+      [
+        2,
+        2,
+        8,
+        16
+      ]
+    ],
+    "all_bosonic_changes_leave_group_unchanged": true
+  },
+  {
+    "source": "results/complete_formulas/raw/d4_C4xC2_orbit_004.json",
+    "sha256": "8983c6afaa0b8cf760adc75a5f3214c522c09dc7780c1e8bf8cc0a9dc664f76e",
+    "background": "C4xC2_orbit_004",
+    "original_group": [
+      2,
+      2,
+      8,
+      32
+    ],
+    "non_integer_subgroup": [
+      2,
+      2,
+      8,
+      8
+    ],
+    "bosonic_subgroup_order": 16,
+    "bosonic_generator_names": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "bosonic_embeddings": [
+      [
+        1,
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        1,
+        0,
+        6,
+        0
+      ]
+    ],
+    "integer_generator_names": [
+      "P1"
+    ],
+    "integer_quotient_orders": [
+      4
+    ],
+    "reduced_relation_matrix": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      [
+        -2,
+        -1,
+        1,
+        4,
+        4
+      ]
+    ],
+    "exhaustive": true,
+    "fourth_obstruction_zero_on_generators": true,
+    "integer_layer_before_and_after_fourth_obstruction": [
+      4
+    ],
+    "shifts_checked": 16,
+    "groups_obtained": [
+      [
+        2,
+        2,
+        8,
+        32
+      ]
+    ],
+    "all_bosonic_changes_leave_group_unchanged": true
+  },
+  {
+    "source": "results/complete_formulas/raw/d4_C4xC4_orbit_001.json",
+    "sha256": "b1024783ec365222baac825c75ff0950107e6620cd7aade3b1d9d7341ad5c8f6",
+    "background": "C4xC4_orbit_001",
+    "original_group": [
+      2,
+      2,
+      2,
+      2,
+      16,
+      32
+    ],
+    "non_integer_subgroup": [
+      2,
+      2,
+      2,
+      2,
+      8,
+      8
+    ],
+    "bosonic_subgroup_order": 64,
+    "bosonic_generator_names": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "bosonic_embeddings": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        6,
+        6
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "integer_generator_names": [
+      "P1",
+      "P2"
+    ],
+    "integer_quotient_orders": [
+      2,
+      4
+    ],
+    "reduced_relation_matrix": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        -1,
+        15,
+        4,
+        -63,
+        3,
+        59,
+        2,
+        0
+      ],
+      [
+        0,
+        5,
+        4,
+        -29,
+        3,
+        26,
+        0,
+        4
+      ]
+    ],
+    "exhaustive": true,
+    "fourth_obstruction_zero_on_generators": true,
+    "integer_layer_before_and_after_fourth_obstruction": [
+      2,
+      4
+    ],
+    "shifts_checked": 4096,
+    "groups_obtained": [
+      [
+        2,
+        2,
+        2,
+        2,
+        16,
+        32
+      ]
+    ],
+    "all_bosonic_changes_leave_group_unchanged": true
+  },
+  {
+    "source": "results/complete_formulas/raw/d4_C8_orbit_001.json",
+    "sha256": "cda551d789a59d8977a385806ca05745b95729017e44bffb75fc87f3f7bef969",
+    "background": "C8_orbit_001",
+    "original_group": [
+      4,
+      64
+    ],
+    "non_integer_subgroup": [
+      2,
+      16
+    ],
+    "bosonic_subgroup_order": 8,
+    "bosonic_generator_names": [
+      "D1"
+    ],
+    "bosonic_embeddings": [
+      [
+        0,
+        14
+      ]
+    ],
+    "integer_generator_names": [
+      "P1"
+    ],
+    "integer_quotient_orders": [
+      8
+    ],
+    "reduced_relation_matrix": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        16,
+        0
+      ],
+      [
+        1,
+        10,
+        8
+      ]
+    ],
+    "exhaustive": false,
+    "fourth_obstruction_zero_on_generators": true,
+    "integer_layer_before_and_after_fourth_obstruction": [
+      8
+    ],
+    "counterexample": {
+      "bosonic_shifts": [
+        [
+          0,
+          2
+        ]
+      ],
+      "group": [
+        8,
+        32
+      ]
+    },
+    "shifts_checked": 2,
+    "groups_obtained": [
+      [
+        4,
+        64
+      ],
+      [
+        8,
+        32
+      ]
+    ],
+    "all_bosonic_changes_leave_group_unchanged": false
+  },
+  {
+    "source": "results/complete_formulas/raw/d4_C8xC2_orbit_001.json",
+    "sha256": "bd3a57dffe71dd88c9b492cdc1b8f5bd5c3aa10a598f740d4254560559e1ca3d",
+    "background": "C8xC2_orbit_001",
+    "original_group": [
+      4,
+      4,
+      8,
+      16
+    ],
+    "non_integer_subgroup": [
+      2,
+      4,
+      4,
+      8
+    ],
+    "bosonic_subgroup_order": 16,
+    "bosonic_generator_names": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "bosonic_embeddings": [
+      [
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "integer_generator_names": [
+      "P1",
+      "P2"
+    ],
+    "integer_quotient_orders": [
+      2,
+      4
+    ],
+    "reduced_relation_matrix": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        2,
+        0
+      ],
+      [
+        43,
+        -2,
+        104,
+        -64,
+        0,
+        4
+      ]
+    ],
+    "exhaustive": false,
+    "fourth_obstruction_zero_on_generators": true,
+    "integer_layer_before_and_after_fourth_obstruction": [
+      2,
+      4
+    ],
+    "counterexample": {
+      "bosonic_shifts": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "group": [
+        2,
+        4,
+        16,
+        16
+      ]
+    },
+    "shifts_checked": 25,
+    "groups_obtained": [
+      [
+        2,
+        4,
+        16,
+        16
+      ],
+      [
+        4,
+        4,
+        8,
+        16
+      ]
+    ],
+    "all_bosonic_changes_leave_group_unchanged": false
+  },
+  {
+    "source": "results/complete_formulas/raw/d4_C8xC2_orbit_004.json",
+    "sha256": "189b6a802bb40dc3eadb6c50dbe97aa72e2e98962c2a01b6372e44c6d4b0e034",
+    "background": "C8xC2_orbit_004",
+    "original_group": [
+      2,
+      4,
+      8,
+      64
+    ],
+    "non_integer_subgroup": [
+      2,
+      2,
+      8,
+      16
+    ],
+    "bosonic_subgroup_order": 32,
+    "bosonic_generator_names": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "bosonic_embeddings": [
+      [
+        1,
+        1,
+        4,
+        8
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        2,
+        6
+      ]
+    ],
+    "integer_generator_names": [
+      "P1"
+    ],
+    "integer_quotient_orders": [
+      8
+    ],
+    "reduced_relation_matrix": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        16,
+        0
+      ],
+      [
+        -78,
+        -803,
+        -16786,
+        -15218,
+        8
+      ]
+    ],
+    "exhaustive": false,
+    "fourth_obstruction_zero_on_generators": true,
+    "integer_layer_before_and_after_fourth_obstruction": [
+      8
+    ],
+    "counterexample": {
+      "bosonic_shifts": [
+        [
+          0,
+          0,
+          2,
+          2
+        ]
+      ],
+      "group": [
+        2,
+        8,
+        16,
+        16
+      ]
+    },
+    "shifts_checked": 5,
+    "groups_obtained": [
+      [
+        2,
+        4,
+        8,
+        64
+      ],
+      [
+        2,
+        8,
+        16,
+        16
+      ]
+    ],
+    "all_bosonic_changes_leave_group_unchanged": false
+  }
+]
