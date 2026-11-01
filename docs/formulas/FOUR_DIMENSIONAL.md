@@ -157,10 +157,8 @@ that physical origin.
 \end{aligned}
 ```
 
-These terms use the paired operator phase
-$`\nu_5^{\rm op}=\nu_5^{\rm raw}
-+\tfrac12n_4\cup_4dn_4`$, followed by the fixed
-[Majorana phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
+These terms use the phase redefinition
+$`\nu_5\longmapsto\nu_5+\tfrac12n_4\cup_4dn_4`$ to put the complex fermions in operator order, followed by the fixed [Majorana phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 Both changes are included in the terminal stacking law. The lower fields
 are unchanged. This convention retains the compact intrinsic Majorana
 formula and places its differential-dependent continuation in the mixed

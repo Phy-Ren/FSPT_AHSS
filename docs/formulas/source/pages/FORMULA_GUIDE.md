@@ -112,8 +112,8 @@ $`d_r`$ and its specified cochain representative.
 | Operation | Definition and domain |
 |---|---|
 | $`\beta x=dx/2`$ | Integer Bockstein, for binary $`dx=0`$; numerator is the **integer** differential |
-| $`\beta^- x=(dx-[dx]_2)/2`$ | Integer carry for a possibly open binary cochain |
-| $`\beta^+x=(\beta x+[\beta x]_2)/2`$ | The plus carry of a closed binary cochain |
+| $`\beta^- x=(dx-[dx]_2)/2=\lfloor dx/2\rfloor`$ | Integer carry for a possibly open binary cochain |
+| $`\beta^+x=(\beta x+[\beta x]_2)/2=\lfloor(dx+2)/4\rfloor`$ | The plus carry of a closed binary cochain |
 | $`\beta_{s_1}\widetilde{\omega}_2=d_{s_1}\widetilde{\omega}_2/2`$ | Twisted integer background carry |
 | $`\Delta f=f(N)-f(n)-f(n')`$ | Full change under the displayed lower stacking law, with fixed backgrounds |
 

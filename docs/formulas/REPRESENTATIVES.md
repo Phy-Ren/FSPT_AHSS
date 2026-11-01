@@ -35,21 +35,21 @@ $`s_1\ne0`$.
 
 
 
-Write $`\mathcal{𝒪}_{6,\mathrm{raw}}`$ for the earlier source.
-This earlier change precedes the operator reordering below. Its source and product use the same coordinates:
+Before the operator reordering below, the earlier obstruction function is related to the displayed $`\mathcal O_6`$ by
+
 
 <a id="eq-t4e"></a>
 
 **(T4E)**
 
 ```math
-{\mathcal{𝒪}}_6=\mathcal{𝒪}_{6,\mathrm{raw}}+d_{s_1}B_5^{\mathrm{ref}}+\frac1{12}{n_{2}}^3,
+\mathcal O_6-d_{s_1}B_5^{\mathrm{ref}}-\frac1{12}n_2^3,
 \qquad B_5^{\mathrm{ref}}=\frac14{\beta^-\widetilde{n}_3}\cup_3{\beta_4^\psi}.
 ```
 
-The corresponding terminal redefinition contributes
-$`\Delta B_5^{\mathrm{ref}}`$ to the stacking correction. The separate cubic term
-shown in (T4e) is retained in (T4); it is not being called a coboundary.
+The right-hand side is evaluated in the current convention; the subtraction recovers the earlier obstruction function without an additional symbol for it.
+The corresponding terminal redefinition contributes $`\Delta B_5^{\mathrm{ref}}`$ to the stacking correction.
+The cubic term in (T4E) is retained separately in the later formulas; it is not a coboundary.
 
 <a id="operator-phase-4d"></a>
 

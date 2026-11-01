@@ -75,11 +75,15 @@ The Bockstein and second carry of a **closed** binary cochain are
 **(O2)**
 
 ```math
-\beta x=\frac{dx}{2},\qquad
-\beta^+x=\frac{\beta x+[\beta x]_2}2.
+\begin{aligned}
+\beta x&=\frac{dx}{2},\\
+\beta^+x&=\frac{\beta x+[\beta x]_2}2
+ =\left\lfloor\frac{dx+2}{4}\right\rfloor.
+\end{aligned}
 ```
 
 Both are integer cochains; the differential in (O2) is ordinary, not twisted.
+The floor is evaluated simplexwise and agrees with the exact division also for negative integer differentials.
 For an open binary cochain use the separately named integer carry
 
 <a id="eq-o3"></a>
@@ -87,7 +91,7 @@ For an open binary cochain use the separately named integer carry
 **(O3)**
 
 ```math
-\beta^- x=\frac{dx-[dx]_2}2.
+\beta^- x=\frac{dx-[dx]_2}2=\left\lfloor\frac{dx}{2}\right\rfloor.
 ```
 
 The minus sign records the subtraction of $`[dx]_2`$ before halving.

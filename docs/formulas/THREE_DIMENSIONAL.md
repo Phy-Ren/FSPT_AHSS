@@ -571,7 +571,7 @@ z_4^\gamma={}&z^0_4(\widetilde{n}_2,\widetilde{n}'_2)
 
 Here $`\mathcal{ℰ}_3^\gamma=\widetilde{n}_2\cup_1\widetilde{n}'_2
 +s_1(\widetilde{n}_2\cup_2\widetilde{n}'_2)`$ and
-$`\beta^{-+}x=(\beta^- x+[\beta^- x]_2)/2`$.
+$`\beta^{-+}x=(\beta^- x+[\beta^- x]_2)/2=\lfloor(dx+2)/4\rfloor`$.
 Its intrinsic binary polynomial is
 
 ```math
@@ -725,7 +725,7 @@ All cochain Steenrod squares include their differential terms. The integer carri
 
 ```math
 \begin{aligned}
-\beta^- x&=(dx-[dx]_2)/2,\\
+\beta^- x&=(dx-[dx]_2)/2=\lfloor dx/2\rfloor,\\
 \beta_3&=\beta^-\widetilde{n}_2+\beta_3^\psi
  =\frac{d\widetilde{n}_2+\widetilde{\omega}_2n_1}{2},\\
 \beta_3^\psi&=([\widetilde{\omega}_2[n_1]_2]_2

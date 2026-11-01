@@ -291,7 +291,7 @@ The binary completion is
 
 Here $`\mathcal{ℰ}_3^\gamma=\widetilde{n}_2\cup_1\widetilde{n}'_2
 +s_1(\widetilde{n}_2\cup_2\widetilde{n}'_2)`$ and
-$`\beta^{-+}x=(\beta^- x+[\beta^- x]_2)/2`$.
+$`\beta^{-+}x=(\beta^- x+[\beta^- x]_2)/2=\lfloor(dx+2)/4\rfloor`$.
 Its intrinsic binary polynomial is
 
 {{equation:three-dimensional--majorana-decoration--33}}

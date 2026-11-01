@@ -71,6 +71,7 @@ The Bockstein and second carry of a **closed** binary cochain are
 {{equation:operations--arithmetic-and-carries--2}}
 
 Both are integer cochains; the differential in (O2) is ordinary, not twisted.
+The floor is evaluated simplexwise and agrees with the exact division also for negative integer differentials.
 For an open binary cochain use the separately named integer carry
 
 <a id="eq-o3"></a>
