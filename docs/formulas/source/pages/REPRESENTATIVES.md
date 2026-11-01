@@ -49,7 +49,8 @@ The first step from the supplied full terminal formula is the operator-ordering 
 
 {{equation:representatives--4-1d-operator-phase-in-the-current-guide--4}}
 
-The inverse subtracts the same half-valued cochain. The paired formulas are
+The inverse subtracts the same half-valued cochain.
+The obstruction function and stacking twister change together:
 
 {{equation:representatives--4-1d-operator-phase-in-the-current-guide--5}}
 

@@ -58,19 +58,19 @@ The cubic term in (T4E) is retained separately in the later formulas; it is not 
 The first step from the supplied full terminal formula is the operator-ordering change
 
 ```math
-\nu_5^{\rm op}
- =\nu_5^{\rm supplied}+\frac12 n_4\cup_4dn_4.
+\nu_5\longmapsto\nu_5+\frac12 n_4\cup_4dn_4.
 ```
 
-The inverse subtracts the same half-valued cochain. The paired formulas are
+The inverse subtracts the same half-valued cochain.
+The obstruction function and stacking twister change together:
 
 ```math
 \begin{aligned}
-\mathcal{𝒪}_6^{\rm op}
- &=\mathcal{𝒪}_6^{\rm supplied}
+\mathcal O_6
+ &\longmapsto\mathcal O_6
    +d_{s_1}\left(\frac12n_4\cup_4dn_4\right),\\
-\mathcal{ℰ}_5^{\rm op}
- &=\mathcal{ℰ}_5^{\rm supplied}
+\mathcal E_5
+ &\longmapsto\mathcal E_5
    +\frac12\left[N_4\cup_4dN_4-n_4\cup_4dn_4
                                   -n'_4\cup_4dn'_4\right].
 \end{aligned}
