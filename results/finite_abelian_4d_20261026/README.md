@@ -67,6 +67,9 @@ The principal proof files are:
 The six primitive index polynomials have an independent integral certificate in `data/primitive_index_lattice.json`.
 Its geometric index rows generate the entire lattice; the stored integer left inverse and determinant-one evaluation matrix are checked by `check.py`.
 
+The [explicit cyclic and two-factor cochain examples](cochain_examples_20261101/README.md) give a normalized-bar Cartan primitive for the mixed complex-fermion phase, the incoming Majorana calculation for $\mathbb Z_2\times\mathbb Z_4$, and the order-eight Majorana root of $\mathbb Z_4^f\times\mathbb Z_2$.
+Their scripts check the phase equations and stacking relations directly.
+
 ## Reproducibility checks
 
 `check.py` verifies the following:

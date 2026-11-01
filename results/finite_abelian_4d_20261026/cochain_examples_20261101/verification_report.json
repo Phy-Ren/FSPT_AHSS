@@ -1,0 +1,195 @@
+{
+  "description": "Executed cochain identities and low-rank assembly comparisons.",
+  "results": {
+    "check_split_pair_cochains.py": {
+      "passed": true,
+      "elapsed_seconds": 2.541,
+      "checks": [
+        {
+          "orders": [
+            2,
+            2
+          ],
+          "simplices": 4096,
+          "cartan_residual": 0,
+          "Sq1_carry": 0,
+          "phase_obstruction_residual": 0
+        },
+        {
+          "orders": [
+            2,
+            4
+          ],
+          "simplices": 1000,
+          "cartan_residual": 0,
+          "Sq1_carry": 0,
+          "phase_obstruction_residual": 0
+        },
+        {
+          "orders": [
+            2,
+            8
+          ],
+          "simplices": 1000,
+          "cartan_residual": 0,
+          "Sq1_carry": 0,
+          "phase_obstruction_residual": 0
+        },
+        {
+          "orders": [
+            4,
+            4
+          ],
+          "simplices": 1000,
+          "cartan_residual": 0,
+          "Sq1_carry": 0,
+          "phase_obstruction_residual": 0
+        },
+        {
+          "orders": [
+            4,
+            8
+          ],
+          "simplices": 1000,
+          "cartan_residual": 0,
+          "Sq1_carry": 0,
+          "phase_obstruction_residual": 0
+        },
+        {
+          "orders": [
+            8,
+            16
+          ],
+          "simplices": 1000,
+          "cartan_residual": 0,
+          "Sq1_carry": 0,
+          "phase_obstruction_residual": 0
+        },
+        {
+          "orders": [
+            6,
+            10
+          ],
+          "simplices": 1000,
+          "cartan_residual": 0,
+          "Sq1_carry": 0,
+          "phase_obstruction_residual": 0
+        },
+        {
+          "orders": [
+            5,
+            7
+          ],
+          "simplices": 1000,
+          "cartan_residual": 0,
+          "Sq1_carry": 0,
+          "phase_obstruction_residual": 0
+        }
+      ]
+    },
+    "check_split_pair_secondary.py": {
+      "passed": true,
+      "elapsed_seconds": 0.252,
+      "checks": {
+        "group": "Z2 x Z4",
+        "four_simplices_checked": 4096,
+        "period_columns": [
+          "Majorana secondary obstruction",
+          "C5^(1)",
+          "C5^(2)"
+        ],
+        "periods": [
+          [
+            "0",
+            "0",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2",
+            "0"
+          ]
+        ],
+        "result": "The incoming Majorana class equals C5^(1)."
+      }
+    },
+    "verify_abelian_z4f_z2.py": {
+      "passed": true,
+      "elapsed_seconds": 5.188,
+      "checks": {
+        "group": "Z4f x Z2",
+        "checks": [
+          {
+            "check": "Incoming Majorana secondary obstruction vanishes",
+            "ordered_tuples": 1024,
+            "passed": true
+          },
+          {
+            "check": "Majorana primary obstruction vanishes",
+            "ordered_tuples": 1024,
+            "passed": true
+          },
+          {
+            "check": "Majorana phase has explicit primitive",
+            "ordered_tuples": 4096,
+            "passed": true
+          },
+          {
+            "check": "Majorana phase has two terms",
+            "ordered_tuples": 4096,
+            "passed": true
+          },
+          {
+            "check": "Majorana self-stacking complex decoration",
+            "ordered_tuples": 256,
+            "passed": true
+          },
+          {
+            "check": "Majorana self-stacking phase",
+            "ordered_tuples": 1024,
+            "passed": true
+          },
+          {
+            "check": "Two copies give the stated complex lift",
+            "ordered_tuples": 1024,
+            "passed": true
+          },
+          {
+            "check": "Complex lift solves its obstruction",
+            "ordered_tuples": 4096,
+            "passed": true
+          },
+          {
+            "check": "Complex self-stacking phase vanishes",
+            "ordered_tuples": 1024,
+            "passed": true
+          },
+          {
+            "check": "Four copies give the bosonic root",
+            "ordered_tuples": 1024,
+            "passed": true
+          }
+        ]
+      }
+    },
+    "check_split_lowrank_groups.py": {
+      "passed": true,
+      "elapsed_seconds": 0.174,
+      "checks": {
+        "cyclic_orders_checked": 500,
+        "eligible_two_factor_pairs_checked": 820,
+        "all_comparisons_passed": true
+      }
+    }
+  },
+  "sha256": {
+    "results/finite_abelian_4d_20261026/cochain_examples_20261101/check_split_pair_cochains.py": "031ad5d107d2c0c570752e24c89330a00e02172019484e5b928a2b3abd0f9beb",
+    "results/finite_abelian_4d_20261026/cochain_examples_20261101/check_split_pair_secondary.py": "b5a8175e475793c7c586b2ebe9fccec1c1ec355325e56557e43e32cb643062c9",
+    "results/finite_abelian_4d_20261026/cochain_examples_20261101/verify_abelian_z4f_z2.py": "442c999b4c5daf90806d2d83e694d6d1d52131a0d1059001c8aefeaccb31a660",
+    "results/finite_abelian_4d_20261026/cochain_examples_20261101/check_split_lowrank_groups.py": "519e03e9f7ed7eb927ffd8df0decbb117e71be21a71fc4f27e15dbd31b0f4cec",
+    "fspt/formulas.py": "ac7f18a679038227992e79d02ae6ead49f3148f889db12f6bb1f3f0e1bb70fc0",
+    "fspt/majorana_complete.py": "183c836d66a73e1dd9a1f394a6c52c703166fafd740e08062216de997b91428d",
+    "results/finite_abelian_4d_20261026/split_closed_formula.py": "dd6716a8b263a2645dc0786dd0d8368736127904575f43c4900ea2591600416c",
+    "results/finite_abelian_4d_20261026/split_layers.py": "7806ff858e9e7b9e3343caa868cfb42324b36de7c50820e3db22a3c67a3a622a"
+  }
+}
