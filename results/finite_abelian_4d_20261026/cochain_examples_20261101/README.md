@@ -4,6 +4,7 @@ These calculations complement the complete group and layer formulas in the paren
 They evaluate the obstruction functions and stacking twisters on explicit normalized cochains.
 The two mixed examples use no terminal p+ip phase.
 All phases below are additive elements of `R/Z`; products are cup products.
+They use the unified phase convention of the [formula guide](../../../docs/FORMULA_GUIDE.md): `n4` is the physical point-fermion occupation, and the closed-Majorana phase has quarter-valued bracket `-1/4`.
 
 ## Cyclic generators
 
@@ -69,15 +70,17 @@ Here `G_b=Z2 x Z2`, `omega2=m1^2`, and both degree-one cochains are binary.
 The additional Majorana root has
 
 ```math
-n_2=n_4=0,\qquad n_3=m_1^2m_1',\qquad
+n_2=0,\qquad n_3=m_1^2m_1',\qquad n_4=n_3\cup_2n_3=m_1^2(m_1')^2,\qquad
 \nu_5=\frac14m_1^3(m_1')^2+\frac38m_1(m_1')^4.
 ```
 
-The canonical Majorana obstruction is
+This physical occupation is closed and corresponds to the shifted occupation
+`n~4 = n4 + n3 cup_2 n3 = 0` of the complete formulas. The closed-sector
+obstruction is
 
 ```math
-\mathcal O_6^\gamma=\frac12m_1^4(m_1')^2
-+\frac34m_1^2(m_1')^4=d\nu_5\mod1.
+\mathcal O_6^c[n_4]+\mathcal O_6^\gamma[n_3]=\frac12m_1^4(m_1')^2
+-\frac14m_1^2(m_1')^4=d\nu_5\mod1.
 ```
 
 Self-stacking gives `E4^gamma=m1^2(m1')^2` and `E5^gamma=m1^4 m1'/2`.
@@ -85,15 +88,16 @@ Consequently,
 
 ```math
 2\nu_5+\mathcal E_5^\gamma
-=\frac34m_1(m_1')^4+d\left[\frac14m_1^3m_1'\right]\mod1.
+=-\frac14m_1(m_1')^4+d\left[\frac14m_1^3m_1'\right]\mod1.
 ```
 
-After dropping this coboundary, two copies give the complex-fermion root with `n4=m1^2(m1')^2` and phase `3m1(m1')^4/4`.
+After dropping this coboundary, two copies give the complex-fermion root with `n4=m1^2(m1')^2` and phase `-m1(m1')^4/4`.
 Its self-stacking twister vanishes pointwise.
 Four copies give the surviving bosonic root `m1(m1')^4/2`, and eight copies are trivial.
 Together with the independent cyclic `Z16` contribution, this gives the full stacking group `Z16 x Z8`.
 The surviving layer quotients and nontriviality of the bosonic root are given by the parent package's layer calculation.
-`verify_abelian_z4f_z2.py` exhaustively checks the displayed obstruction equations, coboundary, and doubling chain using the published closed-Majorana formulas.
+`verify_abelian_z4f_z2.py` exhaustively checks the displayed obstruction equations, coboundary, and doubling chain using the published closed-Majorana formulas in this convention.
+Before the 2026-11-04 convention unification these values were written with `n4=0` and the opposite quarter sign (`3/4` in place of `-1/4`); the stacking group is unchanged.
 
 ## General commuting power extensions
 

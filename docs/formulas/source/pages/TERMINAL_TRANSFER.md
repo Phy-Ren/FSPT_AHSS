@@ -87,7 +87,7 @@ Inside the final integer braces, $`d_{s_1}V_5`$ differentiates the
 canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
 inputs, including $`\beta_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The reduction modulo two of
 the polynomial following the minus sign is taken **before** its signed
-stacking difference. The free complex-fermion solutions $`n_4,n'_4`$ do not
+stacking difference. The free complex-fermion solutions $`\widetilde{n}_4,\widetilde{n}'_4`$ do not
 enter this kernel.
 
 ## Shared-background coordinates

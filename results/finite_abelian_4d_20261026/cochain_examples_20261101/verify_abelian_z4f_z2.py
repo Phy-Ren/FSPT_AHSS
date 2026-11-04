@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Exhaustive pointwise checks for the extra Majorana root of Z4f x Z2.
 
-Uses the published closed-Majorana operations, with additive phases represented
-by integer numerators modulo eight. No terminal p+ip operation is used.
+Uses the published closed-Majorana operations in the unified physical
+convention (physical occupation n4, Majorana quarter bracket -1/4), with
+additive phases represented by integer numerators modulo eight. No terminal
+p+ip operation is used. The Majorana root has n4 = n3 cup_2 n3, so that the
+shifted occupation of the complete formulas vanishes.
 Run: python verify_abelian_z4f_z2.py [--formula-repo /path/to/FSPT_AHSS]
 """
 import argparse, json, sys
@@ -24,19 +27,22 @@ b2,b4=b*b,b*b*b*b
 w=a2
 n3=a2*b
 n4=a2*b2
+m4=cup(n3,n3,2)
 nu=phase((2,a3*b2),(3,a*b4))
+nuc=phase((-2,a*b4))
 B4=phase((2,a3*b))
 checks={
  'Incoming Majorana secondary obstruction vanishes':obstruction(a2,zero(3),w,zero(1)),
  'Majorana primary obstruction vanishes':majorana_source(n3,w,zero(1)),
- 'Majorana phase has explicit primitive':(obstruction(n3,zero(4),w,zero(1))-nu.differential()).reduce(8),
- 'Majorana phase has two terms':(obstruction(n3,zero(4),w,zero(1))-phase((4,a4*b2),(6,a2*b4))).reduce(8),
+ 'Physical occupation of the Majorana root':(m4-n4).reduce(2),
+ 'Majorana phase has explicit primitive':(obstruction(n3,m4,w,zero(1))-nu.differential()).reduce(8),
+ 'Majorana phase has two terms':(obstruction(n3,m4,w,zero(1))-phase((4,a4*b2),(-2,a2*b4))).reduce(8),
  'Majorana self-stacking complex decoration':(cup(n3,n3,2)-n4).reduce(2),
- 'Majorana self-stacking phase':(stacking(n3,zero(4),n3,zero(4),w,zero(1))-phase((4,a4*b))).reduce(8),
- 'Two copies give the stated complex lift':(nu.scale(2)+stacking(n3,zero(4),n3,zero(4),w,zero(1))-phase((6,a*b4))-B4.differential()).reduce(8),
- 'Complex lift solves its obstruction':(obstruction(zero(3),n4,w,zero(1))-phase((6,a*b4)).differential()).reduce(8),
+ 'Majorana self-stacking phase':(stacking(n3,m4,n3,m4,w,zero(1))-phase((4,a4*b))).reduce(8),
+ 'Two copies give the stated complex lift':(nu.scale(2)+stacking(n3,m4,n3,m4,w,zero(1))-nuc-B4.differential()).reduce(8),
+ 'Complex lift solves its obstruction':(obstruction(zero(3),n4,w,zero(1))-nuc.differential()).reduce(8),
  'Complex self-stacking phase vanishes':stacking(zero(3),n4,zero(3),n4,w,zero(1)),
- 'Four copies give the bosonic root':(phase((6,a*b4)).scale(2)-phase((4,a*b4))).reduce(8),
+ 'Four copies give the bosonic root':(nuc.scale(2)-phase((4,a*b4))).reduce(8),
 }
 results=[]
 for name,expr in checks.items():

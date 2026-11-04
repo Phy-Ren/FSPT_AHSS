@@ -23,13 +23,18 @@ Both inputs and the output use this same one-layer rule.
 The complete directed F-move count, including all reference dimers, gives
 
 ```math
-\Delta P_f=\mathcal O_5+d\mathcal B_4\mod2.
+\Delta P_f=\mathcal O_5+dR_4\mod2.
 ```
 
-Here $`\mathcal O_5`$ is the complete canonical function in
+Here $`\mathcal O_5`$ is the complete function in
 [the 4+1D formula page](FOUR_DIMENSIONAL.md#eq-l4).
-The point occupation of this physical pairing reference is $`n_4+\mathcal B_4`$.
-The reference is explicitly
+The occupation $`n_4`$ of the point fermions in this physical pairing
+reference therefore obeys $`dn_4=\mathcal O_5+dR_4`$, and the shifted
+occupation $`\widetilde{n}_4=n_4+R_4`$ obeys $`d\widetilde{n}_4=\mathcal O_5`$.
+The terminal layer of the 4+1D formulas uses $`\widetilde{n}_4`$.
+The fixed binary four-cochain is explicitly
+
+<a id="eq-r4"></a>
 
 {{equation:four-dimensional-geometric-reference--single-state--1}}
 
@@ -47,12 +52,12 @@ channels, the three-copy contacts, and the output state with the same
 single-layer pairing rule. Its count is
 
 ```math
-\Delta P_f=\mathcal E_4+\Delta\mathcal B_4+d\mathcal B_3\mod2.
+\Delta P_f=\mathcal E_4+\Delta R_4+d\mathcal B_3\mod2.
 ```
 
-$`\mathcal E_4`$ is the complete canonical twister in
+$`\mathcal E_4`$ is the complete twister in
 [the same formula page](FOUR_DIMENSIONAL.md#eq-p4). The output used in
-$`\Delta\mathcal B_4`$ is the actual lower product:
+$`\Delta R_4`$ is the actual lower product:
 
 ```math
 N_2=n_2+n'_2,\qquad
@@ -66,6 +71,11 @@ three-cochain is
 
 {{equation:four-dimensional-geometric-reference--pair--2}}
 
+It is a coboundary primitive rather than a decoration: the stacking law on
+the formula page composes the P move with the complex-fermion gauge
+transformation that removes $`d\mathcal B_3`$, and records the
+corresponding phase.
+
 The paired identities imply, pointwise,
 
 ```math
@@ -73,9 +83,10 @@ d(\Delta P_f\text{ for }P)=\Delta(\Delta P_f\text{ for }F).
 ```
 
 No term is discarded merely because the discrepancy is closed.
-The canonical lower and terminal formulas, self-products and examples
-remain in their existing common coordinate. The two displayed witnesses
-relate the physical matching convention to that coordinate.
+The lower formulas use the physical occupation $`n_4`$; the terminal
+formulas, self-products and examples use the shifted occupation
+$`\widetilde{n}_4=n_4+R_4`$. The two displayed witnesses relate the physical
+matching convention to these formulas.
 
 ## Parity and output cleanup
 

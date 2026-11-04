@@ -5,7 +5,8 @@
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
 These formulas give the square of a complete lifted state
-$`(n_2,\widetilde{n}_3,n_4,\nu_5)`$. Every stacking twister and
+$`(n_2,\widetilde{n}_3,\widetilde{n}_4,\nu_5)`$, written in the terminal-layer
+occupation $`\widetilde{n}_4=n_4+R_4`$ of the [general formulas](FOUR_DIMENSIONAL.md#terminal-occupation-4d). Every stacking twister and
 coefficient set on this page is specialized to two copies of that same
 input; no extra input label is needed.
 
@@ -14,10 +15,10 @@ input includes the upper decorations required by
 $`d_{s_1}n_2=0`$,
 $`d\widetilde{n}_3=\widetilde{\mathcal{𝒪}}_4[n_2]
  =[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$, and
-$`dn_4=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}
- +\mathcal{𝒪}_5^\psi`$. The bosonic obstruction is the same
+$`d\widetilde{n}_4=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}
+ +\mathcal{𝒪}_5^\psi`$, equivalently $`dn_4=\mathcal{𝒪}_5+dR_4`$. The bosonic obstruction is the same
 [4+1D obstruction](FOUR_DIMENSIONAL.md). Neither $`\widetilde{n}_3`$ nor
-$`n_4`$ is set to zero. The output Majorana cochain shown below is closed and need not vanish.
+$`\widetilde{n}_4`$ is set to zero. The output Majorana cochain shown below is closed and need not vanish.
 
 Bars, second digits, canonical lifts, and signed integer products have
 the conventions of the general formula. Every $`d\widetilde{n}_3`$ in a
@@ -52,7 +53,7 @@ The native output is $`N_3=\widetilde{N}_3+s_1[n_2]_2`$.
 ## 3. Complex-fermion decoration
 
 ```math
-N_4=\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi}+\mathcal{ℰ}_4^\psi.
+\widetilde{N}_4=\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi}+\mathcal{ℰ}_4^\psi.
 ```
 
 ### Majorana decoration
@@ -114,7 +115,7 @@ identically when its two closed inputs $`[n_2]_2`$ coincide.
 ### Complex fermions
 
 ```math
-\mathcal{ℰ}_5^c=\frac12n_4\cup_3n_4.
+\mathcal{ℰ}_5^c=\frac12\widetilde{n}_4\cup_3\widetilde{n}_4.
 ```
 
 ### Complex fermions and Majorana decoration
@@ -123,8 +124,8 @@ identically when its two closed inputs $`[n_2]_2`$ coincide.
 \mathcal{ℰ}_5^{c\gamma}
 =\frac12\Big[
  [\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}]
-        [n_2,\widetilde{n}_3]\cup_4n_4
- +N_4\cup_4\mathcal{𝒪}_5^\gamma[\widetilde{N}_3]\Big].
+        [n_2,\widetilde{n}_3]\cup_4\widetilde{n}_4
+ +\widetilde{N}_4\cup_4\mathcal{𝒪}_5^\gamma[\widetilde{N}_3]\Big].
 ```
 
 ### Complex fermions and p+ip decoration
@@ -132,8 +133,8 @@ identically when its two closed inputs $`[n_2]_2`$ coincide.
 ```math
 \mathcal{ℰ}_5^{c\psi}
 =\frac12\Big[
- \mathcal{𝒪}_5^\psi[n_2]\cup_4n_4
- +N_4\cup_4
+ \mathcal{𝒪}_5^\psi[n_2]\cup_4\widetilde{n}_4
+ +\widetilde{N}_4\cup_4
    ([\beta_{s_1}\widetilde{\omega}_2]_2\,[n_2]_2)\Big].
 ```
 
@@ -141,7 +142,7 @@ These have respectively **one, three, and two structured terms**, retaining
 the already defined lower obstructions. In particular
 $`\mathcal{𝒪}_5^\psi[2n_2]
  =[\beta_{s_1}\widetilde{\omega}_2]_2\,[n_2]_2`$.
-The actual output $`N_4`$ is used in both formulas; replacing it by zero
+The actual output $`\widetilde{N}_4`$ of the lower self-stacking law is used in both formulas; replacing it by zero
 would discard an upper-layer correction.
 
 ### Majorana decoration
@@ -188,8 +189,11 @@ This is the same open-cochain representative as the general formula.
 No cocycle hypothesis on $`\widetilde{n}_3`$ has been imposed. The phase
 transport adds the two displayed half terms
 $`[\widetilde{n}_3\cup_1\widetilde{n}_3-s_1\mathcal{ℰ}_4^\gamma]/2`$.
-The zero-p+ip sector uses this same expression with its lower constraints;
-it does not select a separate terminal coordinate.
+In the shifted argument $`\widetilde{n}_4`$ the quarter-valued terms carry the
+sign of the complete tower. The [zero-p+ip self-stacking page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
+writes the same sector in the physical occupation $`n_4`$, where the
+quarter-valued terms have the opposite sign; the
+[bridging identity](FOUR_DIMENSIONAL.md#bridging-identity-4d) relates the two.
 
 ### Majorana and p+ip decoration
 

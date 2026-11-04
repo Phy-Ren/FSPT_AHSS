@@ -11,7 +11,7 @@ Throughout this section the physical fields are:
 |---|---|---|
 | $`n_2`$ | p+ip decoration | $`\mathbb Z_{s_1}`$ |
 | $`n_3`$ | Majorana decoration | $`\mathbb Z_2`$ |
-| $`n_4`$ | Complex-fermion decoration | $`\mathbb Z_2`$ |
+| $`n_4`$ | Complex-fermion decoration (physical point-fermion occupation) | $`\mathbb Z_2`$ |
 | $`\nu_5`$ | Bosonic phase | $`U(1)_{s_1}`$ |
 
 The contributions below are grouped in the shifted Majorana coordinate
@@ -67,10 +67,25 @@ Here $`d\widetilde{n}_3`$ is fixed by the preceding obstruction.
 
 The second digit obeys $`d[\lfloor n_2/2\rfloor]_2=[n_2]_2\cup_1[n_2]_2+s_1[n_2]_2`$.
 
-The [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md)
-gives the complete F-move count, its explicit local reference, and the
-paired stacking comparison while retaining the original ordinary Majorana
-graph.
+<a id="terminal-occupation-4d"></a>
+
+Here $`n_4`$ is the physical point-fermion occupation of the original
+pairing arrows. The directed F-move count differs from $`\mathcal{𝒪}_5`$ by
+the coboundary of the fixed binary four-cochain $`R_4`$ given explicitly in
+the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#eq-r4).
+That page also gives the complete F-move count and the paired stacking
+comparison while retaining the original ordinary Majorana graph.
+The terminal layer (the bosonic obstruction, the bosonic stacking twister,
+and self-stacking) is written in the shifted occupation
+
+```math
+\widetilde{n}_4=n_4+R_4\pmod2,\qquad d\widetilde{n}_4=\mathcal{𝒪}_5.
+```
+
+This is the only change of variable on this page. In this argument the
+displayed terminal formulas are in the physical phase convention; the
+retained runtime uses the same argument in its complex-fermion slot. For $`n_2=0`$ every $`s_1`$ face term of
+$`R_4`$ vanishes and $`\widetilde{n}_4=n_4+\mathrm{Sq}^1n_3`$.
 
 ### 4. Bosonic obstruction
 
@@ -103,7 +118,7 @@ that physical origin.
 {{equation:four-dimensional--4-bosonic-obstruction--13}}
 
 These terms use the phase redefinition
-$`\nu_5\longmapsto\nu_5+\tfrac12n_4\cup_4dn_4`$ to put the complex fermions in operator order, followed by the fixed [Majorana phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
+$`\nu_5\longmapsto\nu_5+\tfrac12\widetilde{n}_4\cup_4d\widetilde{n}_4`$ to put the complex fermions in operator order, followed by the fixed [Majorana phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 Both changes are included in the terminal stacking law. The lower fields
 are unchanged. This convention retains the compact intrinsic Majorana
 formula and places its differential-dependent continuation in the mixed
@@ -130,8 +145,27 @@ the defined first squares.
 Each Cartan operation contains **one MS term**. The carry numerator
 $`\beta^-\widetilde{n}_3+[\beta^-\widetilde{n}_3]_2`$ is even,
 including for negative integer values. When the integer decoration is
-zero, $`\widetilde{n}_3=n_3`$ and $`\beta^- n_3=\beta n_3`$; this same
-formula is the compact closed-Majorana expression.
+zero, $`\widetilde{n}_3=n_3`$ and $`\beta^- n_3=\beta n_3`$. In the argument
+$`\widetilde{n}_4`$ this contribution then carries the quarter sign opposite
+to the [closed-Majorana formula](MAJORANA_AND_ENDPOINTS.md#eq-m4-4d), which is
+written in the physical occupation $`n_4`$ with quarter-valued bracket
+$`-1/4`$. The two forms of the complete obstruction are related by the
+following identity.
+
+<a id="bridging-identity-4d"></a>
+
+**Bridging identity.** For a closed binary $`n_3`$ and any binary $`n_4`$,
+with $`\mathrm{Sq}^1n_3=n_3\cup_2n_3=[\beta n_3]_2`$ as cochains, the
+closed-sector contributions obey
+
+{{equation:four-dimensional--bridging-identity--44}}
+
+Hence, for $`n_2=0`$, the complete obstruction at
+$`\widetilde{n}_4=n_4+\mathrm{Sq}^1n_3`$ equals the closed obstruction in
+$`n_4`$ plus $`d_{s_1}\bigl(\tfrac12n_4\cup_3\mathrm{Sq}^1n_3\bigr)`$; both use
+the same physical phase convention. The identity has been checked
+pointwise on all faces of 1600 random seven-simplex configurations with
+general closed $`\omega_2,s_1`$.
 
 **Majorana–p+ip contribution.**
 
@@ -223,6 +257,12 @@ Consequently $`d\widetilde{\mathcal{ℰ}}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 
 {{equation:four-dimensional--3-complex-fermion-stacking--24}}
 
+The first line is the physical occupation of the output, with $`R_4`$
+evaluated on the actual lower output $`(N_2,N_3)`$ in $`\Delta R_4`$; the
+second line is the same law in the shifted occupation. Both include the
+complex-fermion gauge transformation by the two-input cochain
+$`\mathcal B_3`$ described under the bosonic stacking law below.
+
 **Majorana contribution.**
 
 {{equation:four-dimensional--3-complex-fermion-stacking--25}}
@@ -251,10 +291,26 @@ The two finite polynomials in this contribution are
 The output fields are those of the preceding three stacking laws. The
 following formulas use the operator ordering of the complex-fermion
 contribution. The terminal phase is the same compact-Majorana coordinate as the obstruction above.
-The cochain $`B_5[\widetilde{n}_3,n_4]`$ is defined once in the
+Every complex-fermion argument is the terminal occupation $`\widetilde{n}_4`$,
+and the output is $`\widetilde{N}_4=\widetilde{n}_4+\widetilde{n}'_4+\mathcal{ℰ}_4`$ of the
+lower law above.
+The cochain $`B_5[\widetilde{n}_3,\widetilde{n}_4]`$ is defined once in the
 [paired phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md); its backgrounds
 are kept fixed in every evaluation below. Setting its second argument
-to zero removes only the term $`s_1n_4/2`$.
+to zero removes only the term $`s_1\widetilde{n}_4/2`$.
+
+The directed pairing count of the physical P move gives the output
+$`\widetilde{N}_4+d\mathcal B_3`$, where $`\mathcal B_3`$ is the two-input
+three-cochain of the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#stacking-and-its-paired-comparison).
+It is a coboundary primitive, not a decoration. The lower law above composes
+the P move with the complex-fermion gauge transformation that removes
+$`d\mathcal B_3`$. If the uncorrected output is used instead, add
+
+{{equation:four-dimensional--4-bosonic-stacking--45}}
+
+to $`\mathcal{ℰ}_5`$. This is the primitive of
+$`\mathcal{𝒪}_6^c[\widetilde{N}_4+d\mathcal B_3]-\mathcal{𝒪}_6^c[\widetilde{N}_4]`$;
+the mixed contribution depends only on $`d\widetilde{N}_4`$ and is unchanged.
 
 #### Complex fermions
 
@@ -264,7 +320,7 @@ to zero removes only the term $`s_1n_4/2`$.
 
 {{equation:four-dimensional--complex-fermions-and-majorana-decoration--31}}
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_4,\widetilde{N}_3)`$ minus the values at $`(n_4,\widetilde{n}_3)`$ and $`(n'_4,\widetilde{n}'_3)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential terms. This is an exact rewriting of the same contribution.
+The $`\Delta`$ has its defined three terms: the value at $`(\widetilde{N}_4,\widetilde{N}_3)`$ minus the values at $`(\widetilde{n}_4,\widetilde{n}_3)`$ and $`(\widetilde{n}'_4,\widetilde{n}'_3)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential terms. This is an exact rewriting of the same contribution.
 
 #### Complex fermions and p+ip decoration
 
@@ -442,7 +498,7 @@ The [paired phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is applied to
 both the obstruction and the stacking law. To check the sum of its three
 physical contributions, use the actual lower output
 $`\widetilde{N}_3=\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal{ℰ}}_3`$ and
-$`N_4=n_4+n'_4+\mathcal{ℰ}_4`$. The displayed corrections sum exactly to
-$`-B_5[\widetilde{N}_3,N_4]+B_5[\widetilde{n}_3,n_4]+B_5[\widetilde{n}'_3,n'_4]`$.
+$`\widetilde{N}_4=\widetilde{n}_4+\widetilde{n}'_4+\mathcal{ℰ}_4`$. The displayed corrections sum exactly to
+$`-B_5[\widetilde{N}_3,\widetilde{N}_4]+B_5[\widetilde{n}_3,\widetilde{n}_4]+B_5[\widetilde{n}'_3,\widetilde{n}'_4]`$.
 The lower twisters, finite coefficient sets, and existing output coboundary
 are unchanged; the full terminal formula uses this one transported phase.

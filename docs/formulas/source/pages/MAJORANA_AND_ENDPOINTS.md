@@ -382,6 +382,16 @@ fixes their finite cochain evaluation.
 
 The physical fields are the binary Majorana cochain $`n_3`$,
 the binary complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
+Here $`n_4`$ is the physical point-fermion occupation of the original
+pairing arrows, and the Majorana contribution has the lattice sign of the
+heptagon loop: its quarter-valued bracket is $`-1/4`$. The complete
+[4+1D tower](FOUR_DIMENSIONAL.md) writes its terminal layer in the shifted
+occupation $`\widetilde{n}_4=n_4+R_4`$; for $`n_2=0`$ this is
+$`\widetilde{n}_4=n_4+\mathrm{Sq}^1n_3`$. In that argument the same Majorana
+contribution appears with the opposite quarter sign. The two forms are
+related by the [bridging identity](FOUR_DIMENSIONAL.md#bridging-identity-4d).
+Since $`d\,\mathrm{Sq}^1n_3=0`$ for closed $`n_3`$, the lower equations
+below are the same in both arguments.
 
 ### Obstruction functions
 
@@ -440,10 +450,18 @@ the binary complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
 **(M4, 4+1D)**
 
 Here the integer decoration is zero, so $`\widetilde{n}_3=n_3`$ and
-$`\beta^- n_3=\beta n_3`$. The following is the same maintained
-formula as in the full 4+1D tower:
+$`\beta^- n_3=\beta n_3`$. In the physical occupation $`n_4`$ the
+Majorana contribution is
 
-{{equation:four-dimensional--4-bosonic-obstruction--14}}
+{{equation:majorana-and-endpoints--majorana-contribution--73}}
+
+Here $`\beta^+n_3=(\beta n_3+[\beta n_3]_2)/2`$. This is exactly the
+negative of the [compact formula](FOUR_DIMENSIONAL.md#majorana-phase-4d)
+of the complete tower at $`n_2=0`$: the half-valued terms are unchanged, and
+$`\tfrac14s_1^2(\beta n_3+[\beta n_3]_2)=\tfrac12s_1^2\beta^+n_3`$.
+Because the complex-fermion contributions are half-valued, the complete
+closed obstruction in $`n_4`$ is pointwise the negative of the complete
+tower's obstruction evaluated at the same argument.
 
 Its word operations are
 
@@ -499,7 +517,7 @@ There is no stacking correction in this layer.
 
 **(M3Ec, 4+1D)**
 
-{{equation:four-dimensional--complex-fermions--30}}
+{{equation:majorana-and-endpoints--complex-fermion-contribution--45}}
 
 ##### Complex-fermion–Majorana contribution
 
@@ -507,9 +525,9 @@ There is no stacking correction in this layer.
 
 **(M3Ecγ, 4+1D)**
 
-Use $`\mathcal{𝒪}_5^{\gamma\psi}=0`$ and the actual binary lower output in the common formula:
+Here $`dn_4=\mathcal{𝒪}_5^\gamma`$ and $`N_4`$ is the binary output above:
 
-{{equation:four-dimensional--complex-fermions-and-majorana-decoration--31}}
+{{equation:majorana-and-endpoints--complex-fermion-majorana-contribution--46}}
 
 ##### Majorana contribution
 
@@ -517,24 +535,29 @@ Use $`\mathcal{𝒪}_5^{\gamma\psi}=0`$ and the actual binary lower output in th
 
 **(M7, 4+1D)**
 
-This is the restriction of the same complete two-input law to
-$`n_2=n'_2=0`$, $`\widetilde{n}_3=n_3`$, and $`dn_3=dn'_3=0`$.
-In particular $`\beta^-=\beta`$,
-$`\lambda_4^\gamma=0`$, and
-$`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; all displayed derivatives
-of the closed integer Bocksteins vanish. No extra phase coordinate is
-selected on this subspace.
+This is the negative of the [complete two-input law](FOUR_DIMENSIONAL.md#eq-t4c)
+restricted to $`n_2=n'_2=0`$, $`\widetilde{n}_3=n_3`$, and $`dn_3=dn'_3=0`$.
+In particular $`\beta^-=\beta`$, $`\lambda_4^\gamma=0`$, and
+$`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; the terms containing
+$`\lambda_4^\gamma`$ or a derivative of a closed integer Bockstein vanish
+and are omitted. The half-valued terms are unchanged; the quarter-valued
+bracket and the quarter-valued term of each $`B_5[\cdot,0]`$ change sign.
 
-{{equation:four-dimensional--majorana-decoration--33}}
+{{equation:majorana-and-endpoints--majorana-contribution--74}}
 
-The carries and coefficient sets are the shared
-[general definitions](FOUR_DIMENSIONAL.md#eq-t4c); $`B_5`$ is the same
+The coefficient sets $`\mathcal I_5^\gamma`$ and $`\mathcal J_5^\gamma`$ are the shared
+[general definitions](FOUR_DIMENSIONAL.md#eq-t4c), evaluated on closed inputs;
+$`B_5`$ is the same
 [phase-change cochain](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
+Since the lower laws coincide and every displayed phase is the negative
+of the corresponding phase of the complete tower at the same arguments,
+$`d_{s_1}\mathcal{ℰ}_5=\mathcal{𝒪}_6[N]-\mathcal{𝒪}_6[n]-\mathcal{𝒪}_6[n']`$
+holds here exactly as it does for the complete tower.
 The earlier compact closed-product expression differs by its explicit
 output coboundary as well as the phase-coordinate comparison. It is not
 an additional primary law for the same displayed phase.
-The common [self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md)
-may likewise be restricted to this sector without changing representatives.
+The [zero-p+ip self-stacking formula](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
+is the equal-input specialization of these closed laws.
 
 <a id="eq-m8-4d"></a>
 The mathematical intrinsic word operation is retained in the

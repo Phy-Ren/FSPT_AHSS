@@ -170,9 +170,10 @@ Replacing only those four wrappers by their interiors gives 304 expression
 leaves for that contribution and 4,407,738 for the corresponding total.
 The full restricted mixed and pure finite sums contain 3,613,517 and
 793,669 terms. Their nonlinear interiors and lower-operation argument
-arrays are recorded separately in the coefficient indices. The zero-p+ip 4+1D sector uses the restriction of this same
-canonical expression, with the lower fields specified on its
-[dedicated page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md).
+arrays are recorded separately in the coefficient indices. The zero-p+ip 4+1D sector uses the negative of the restriction of this same
+expression, written in the physical occupation $`n_4`$, with the lower fields specified on its
+[dedicated page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md); the negation changes
+only the sign of the quarter-valued terms.
 No alternative closed-diagonal formula is counted as another current law.
 For the full self-stack, the phase transport adds two Majorana terms,
 one mixed term, and 46 pure p+ip occurrences at the same boundary.
@@ -342,8 +343,8 @@ complex-fermion completion and the incoming bosonic phase.
 
 The 3+1D correction has seven half-valued and three quarter-valued
 terms. It is in exactly the same representative as the general formula.
-The 4+1D zero-p+ip case instead uses the restriction of the common
-canonical self-stacking law counted above. Its lower equation and full
+The 4+1D zero-p+ip case instead uses the negative of the restriction of the common
+self-stacking law counted above, in the physical occupation $`n_4`$. Its lower equation and full
 phase convention are given on the [restriction page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md).
 The former standalone diagonal expression is no longer an independently
 maintained current formula.

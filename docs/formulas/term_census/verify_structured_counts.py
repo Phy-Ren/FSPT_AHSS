@@ -62,7 +62,7 @@ def main():
     assert len(words) == len(set(words)) == 32
     phase = (EQUATIONS / 'four-dimensional-majorana-phase--phase-change--1.tex').read_text()
     assert len(re.findall(r'\\nolimits_\{\d+\}', phase)) == 10
-    assert all(term in phase for term in (r'\widetilde{n}_3\cup_2', r's_1n_4', r'\widetilde{n}_3\cup_1[\beta\omega_2]_2'))
+    assert all(term in phase for term in (r'\widetilde{n}_3\cup_2', r's_1\widetilde{n}_4', r'\widetilde{n}_3\cup_1[\beta\omega_2]_2'))
     assert r'\frac14\widetilde{n}_3\cup_1\widetilde{n}_3' in phase
     assert 32 + 10 + 3 == 45
     zero_half, zero_quarter = 44, 1

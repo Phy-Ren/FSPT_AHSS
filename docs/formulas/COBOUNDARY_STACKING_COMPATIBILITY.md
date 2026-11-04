@@ -94,7 +94,10 @@ dc=dc'=\mathcal{𝒪}_5^\gamma(u),\qquad
 ```
 
 Thus $`u`$ has degree three, $`c,c'`$ have degree four, and
-$`c+c'`$ is closed. All these lower fields are binary. The backgrounds
+$`c+c'`$ is closed. All these lower fields are binary. As in the complete
+[4+1D formulas](FOUR_DIMENSIONAL.md#terminal-occupation-4d), $`c,c'`$ are the
+terminal-layer occupations $`\widetilde{n}_4,\widetilde{n}'_4`$; here
+$`\widetilde{n}_4=n_4+\mathrm{Sq}^1u`$, and $`c+c'=n_4+n'_4`$. The backgrounds
 $`\omega_2,s_1`$ are closed and remain fixed.
 
 The complete current product has the exact specialization

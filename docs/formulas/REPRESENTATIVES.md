@@ -35,6 +35,10 @@ $`s_1\ne0`$.
 
 ## 4+1D: historical source convention
 
+The 4+1D terminal maps below act on the terminal-layer occupation
+$`\widetilde{n}_4=n_4+R_4`$ of the [4+1D formulas](FOUR_DIMENSIONAL.md#terminal-occupation-4d).
+They are changes of representative within one phase convention.
+
 
 
 Before the operator reordering below, the earlier obstruction function is related to the displayed $`\mathcal O_6`$ by
@@ -60,7 +64,7 @@ The cubic term in (T4E) is retained separately in the later formulas; it is not 
 The first step from the supplied full terminal formula is the operator-ordering change
 
 ```math
-\nu_5\longmapsto\nu_5+\frac12 n_4\cup_4dn_4.
+\nu_5\longmapsto\nu_5+\frac12 \widetilde{n}_4\cup_4d\widetilde{n}_4.
 ```
 
 The inverse subtracts the same half-valued cochain.
@@ -70,11 +74,11 @@ The obstruction function and stacking twister change together:
 \begin{aligned}
 \mathcal O_6
  &\longmapsto\mathcal O_6
-   +d_{s_1}\left(\frac12n_4\cup_4dn_4\right),\\
+   +d_{s_1}\left(\frac12\widetilde{n}_4\cup_4d\widetilde{n}_4\right),\\
 \mathcal E_5
  &\longmapsto\mathcal E_5
-   +\frac12\left[N_4\cup_4dN_4-n_4\cup_4dn_4
-                                  -n'_4\cup_4dn'_4\right].
+   +\frac12\left[\widetilde{N}_4\cup_4d\widetilde{N}_4-\widetilde{n}_4\cup_4d\widetilde{n}_4
+                                  -\widetilde{n}'_4\cup_4d\widetilde{n}'_4\right].
 \end{aligned}
 ```
 
@@ -85,7 +89,7 @@ The actual stacked output is used in the last line. This yields the displayed c,
 ## 4+1D: current compact Majorana phase
 
 The guide then applies the single [explicit phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-$`\nu_5\mapsto\nu_5-B_5[\widetilde{n}_3,n_4]`$.
+$`\nu_5\mapsto\nu_5-B_5[\widetilde{n}_3,\widetilde{n}_4]`$.
 Its source changes by $`-d_{s_1}B_5`$ and its product by $`-\Delta B_5`$,
 evaluated on the same actual lower stacking output. The inverse adds
 $`B_5`$; every lower decoration and lower product is fixed.
