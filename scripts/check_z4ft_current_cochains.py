@@ -5,6 +5,10 @@ The complete physical O5 manifests, including the finite face polynomial,
 are evaluated on all 32 C2 bar five-tuples. No classification or cohomology
 solver is run. This checker deliberately does not substitute the historical
 independent low-degree candidate for the current paired reader coordinate.
+
+Phase convention: physical (unified with the published lattice papers): the
+forward F move carries nu_4 and d_{s1} nu_4 = O_5. Relative to the earlier
+complex-conjugate receipt every fractional phase below one half changes sign.
 """
 from __future__ import annotations
 
@@ -27,8 +31,8 @@ from fspt.geometric_reference_3d import (single_reference, checked_fermion, pair
 
 MANIFESTS = ROOT / 'docs/formulas/term_census/three_dimensional'
 SECTORS = ('C', 'CGAMMA', 'CPSI', 'GAMMA', 'GAMMAPSI', 'PSI')
-ROOTS = (('p_ip', 1, 0, 0, Fraction(1, 4)),
-         ('Majorana', 0, 1, 0, Fraction(1, 4)),
+ROOTS = (('p_ip', 1, 0, 0, Fraction(-1, 4)),
+         ('Majorana', 0, 1, 0, Fraction(-1, 4)),
          ('complex_fermion', 0, 0, 1, Fraction(0)),
          ('bosonic', 0, 0, 0, Fraction(1, 2)))
 
@@ -163,7 +167,7 @@ def self_stacking_check():
                 half += cup(cup(w, s, 1), u) + cup(b.reduce(2), cup(s, u), 2)
                 half += cup(s, old_N3) + cup(s, cup(cup(s, u), u, 2)) + cup(u, u)
                 quarter = cup(b, b, 2) + cup(s.lift(), b.reduce(2).lift()) - lower.lift()
-                correction = Fraction(half(top), 2) + Fraction(quarter(top), 4)
+                correction = Fraction(half(top), 2) - Fraction(quarter(top), 4)
             K = face_phase_numerator(old_N3,B2,w)
             if not has_n: correction += Fraction(K(top),2)
             rows.append({'tuple': list(edges), 'E4': fraction(correction),
@@ -172,7 +176,7 @@ def self_stacking_check():
                          'face_phase': fraction(Fraction(K(top),2)),
                          'N3': N3((0, 1, 2, 3)),
                          'output_phase': fraction(2 * nu * m(4)(top) + correction)})
-        expected = {'p_ip': Fraction(1, 4), 'Majorana': Fraction(1, 2),
+        expected = {'p_ip': Fraction(-1, 4), 'Majorana': Fraction(1, 2),
                     'complex_fermion': Fraction(1, 2), 'bosonic': Fraction(0)}[name]
         assert all(row['E4'] == fraction(expected * all(row['tuple'])) for row in rows)
         result[name] = {'E4_coefficient': fraction(expected), 'values': rows,
@@ -228,7 +232,7 @@ def check():
         pins[relative] = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
     return {'status': 'PASS', 'dimension': '3+1D',
             'symmetry': {'Gf': 'Z4^{f,T}', 'Gb': 'C2', 'omega2': 'm1^2', 's1': 'm1'},
-            'phase_convention': 'Current geometric pairing coordinate, with the shifted CF phase input and complete output-face phase.',
+            'phase_convention': 'Physical convention (forward F move carries nu_4, d_s nu_4 = O_5), unified with the published lattice papers; current geometric pairing coordinate, with the shifted CF phase input and complete output-face phase.',
             'normalization': 'm1^q(g1,...,gq)=product(gj), gj in {0,1}; all tuples included.',
             'five_tuples_checked_per_root': 32,
             'lower_equations': {'d_s_n1': 'PASS all 4 pairs', 'd_n2': 'PASS all 8 triples',

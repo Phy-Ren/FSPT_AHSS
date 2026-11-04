@@ -3,6 +3,11 @@
 The source and product representative are unchanged. The public verifier is
 used only for its standard cochain arithmetic; both displayed phase formulas
 are transcribed independently below. No solver or sampled assignments occur.
+
+Phase convention: both formulas are the displayed physical ones (unified
+lattice convention). Their quarter-valued terms have the sign opposite to the
+retained frozen sector, which is in the complex-conjugate orientation, so the
+frozen sector is negated before comparison.
 """
 from pathlib import Path
 from itertools import combinations
@@ -25,7 +30,7 @@ def old_gamma(u,w,s):
           +cup(cup(u,u)+cup(w,u),cup(s,b),4)+cup(cup(w,s,1),u)
           +cup(t,cup(s,u),2)+cup(cup(s,s),u)+cup(s,b)+cup(s,cup(cup(s,u),u,2)))
     quarter=cup(B,B,2)+cup(u.lift(16),u.lift(16))-cup(w.lift(16),u.lift(16))
-    return phase(half,2)+phase(quarter,4)
+    return phase(half,2)-phase(quarter,4)
 
 def new_gamma(u,w,s):
     A=u.differential();B=p.beta_open(u)
@@ -40,7 +45,7 @@ def new_gamma(u,w,s):
           +cup(s,cup(cup(s,u),u,2)))
     quarter=(cup(B,B,2)-cup(s,B.binary()).lift(16)
              -(O_gamma+cup(s,cup(u,A,2))).lift(16))
-    return phase(half,2)+phase(quarter,4)
+    return phase(half,2)-phase(quarter,4)
 
 def build_fields(tower=False):
     labels=[]
@@ -73,13 +78,14 @@ assert not old-new
 # An independent three-bit integer carry identity proves the only changed
 # arithmetic step without reusing either cochain assembly above.
 X,Y,Z=[P({1<<i:1},2)for i in range(3)]
-left=phase(X*Y+(X+Y)*Z,2)+phase(X.lift(16)-Y.lift(16),4)
-right=phase(X,2)+phase(Z.lift(16)-(X+Y+Z).lift(16),4)
+left=phase(X*Y+(X+Y)*Z,2)-phase(X.lift(16)-Y.lift(16),4)
+right=phase(X,2)-phase(Z.lift(16)-(X+Y+Z).lift(16),4)
 assert not left-right
 ut,wt,st,tower_labels=build_fields(True)
 data=json.loads((HERE/'three_dimensional_canonical_self_stacking.json').read_text())
 assert data['variables'][:len(tower_labels)]==tower_labels
-frozen=P(dict(data['reference_sector_phases_mod16']['GAMMA']),16)
+# The retained frozen sector has the conjugate orientation: negate it.
+frozen=-P(dict(data['reference_sector_phases_mod16']['GAMMA']),16)
 assert not new_gamma(ut,wt,st)-frozen
 report={'status':'PASS','scope':'The complete previously designated 3D Majorana diagonal contribution for arbitrary open binary u2 and closed binary s1,omega2.',
  'independent_open_input_bits':len(labels),'open_input_labels':labels,
@@ -90,7 +96,7 @@ report={'status':'PASS','scope':'The complete previously designated 3D Majorana 
  'old_outer_terms':16,'new_half_terms':10,'new_quarter_terms':3,'new_outer_terms':13,
  'whole_binary_lift_interior_terms':2,'new_terms_with_lift_interior_counted':14,
  'standard_lower_source_retained':'O4_gamma[u]',
- 'cochain_equality':'exact modulo one','source_changed':False,'new_gauge':False,'physical_sector_reassignment':False,
+ 'cochain_equality':'exact modulo one','phase_convention':'physical (unified lattice convention); frozen sector negated','source_changed':False,'new_gauge':False,'physical_sector_reassignment':False,
  'public_arithmetic_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'seconds':time.monotonic()-start}
 (HERE/'OPEN_GAMMA_LIFT_REDUCTION_CHECK.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:v for k,v in report.items()if k!='open_input_labels'},indent=2))

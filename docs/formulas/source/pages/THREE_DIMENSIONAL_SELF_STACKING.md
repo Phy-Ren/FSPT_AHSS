@@ -7,7 +7,11 @@ completion and bosonic phase. The lower fields obey the obstruction equations
 in [the 3+1D reference](THREE_DIMENSIONAL.md). The coordinate convention is
 $`\widetilde{n}_2=n_2+s_1[\lfloor n_1/2\rfloor]_2`$ and
 $`\widetilde{\omega}_2=\omega_2+s_1^2`$.
-The formulas use the same phase representative as that reference.
+The formulas use the same phase representative as that reference: the
+terminal phase is written in $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$
+with physical phases, so its quarter-, eighth- and sixteenth-valued terms
+have the sign opposite to the retained coefficient kernels, which are in the
+complex-conjugate orientation.
 
 The terminal formulas below cover $`n_1=0`$ and the canonical signed torsion
 representative $`n_1=s_1`$. These are the two branches required for finite root
@@ -50,9 +54,9 @@ $`\mathrm{Sq}^1\widetilde{n}_2+s_1\widetilde{n}_2+\mathcal{ℰ}_3^\psi`$,
 with the open-cochain square. The changed cup order is essential.
 The diagonal Cartan term vanishes because the input parity is closed.
 
-The phase uses the explicitly defined $`\widetilde{n}_3=n_3+\mathcal B_3`$.
+The phase uses the explicitly defined $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$.
 For both finite-root branches below, $`\mathcal B_2=\widetilde{n}_2`$ and
-$`\mathcal B_3[\widetilde{N}_2]=0`$. The previous phase output is therefore
+$`\widetilde{N}_2\cup_1\widetilde{N}_2=0`$. The previous phase output is therefore
 $`N_3+d\widetilde{n}_2`$. The point-fermion phase includes the full finite
 face-conversion term; all other blocks use the transported inputs and output.
 These are the current formulas, not an instruction to retain the old product.
@@ -83,7 +87,10 @@ The quarter-valued obstruction is the canonical integer lift of its
 **whole binary value**. It must not be distributed into separately lifted
 summands. The earlier ten-term kernel is retained as a fixed input to the coordinate transport;
 [its self-contained coefficient proof](coefficients/verify_three_dimensional_majorana_self_stacking.py)
-also checks the complex-fermion completion.
+also checks the complex-fermion completion. That kernel and its proof are in the
+retained complex-conjugate orientation; the physical phase displayed here is
+its negative after the transport, which changes only the sign of the three
+quarter terms.
 
 ## 5. Bosonic self-stacking of the canonical p+ip torsion root
 
@@ -112,7 +119,7 @@ The six labels retain their fermionic exchange origins. The point-fermion block 
 
 {{equation:three-dimensional-self-stacking--complex-fermions-and-majorana-decoration--15}}
 
-The bracket includes $`d\mathcal B_3`$, and its output is $`N_3+d\widetilde{n}_2`$.
+The bracket includes $`d(\widetilde{n}_2\cup_1\widetilde{n}_2)`$, and its output is $`N_3+d\widetilde{n}_2`$.
 The output mixed part vanishes exactly because $`d(s_1^2)=0`$, so
 $`\mathcal{𝒪}_4^{\gamma\psi}[s_1^2]=0`$. The individual lower differential
 representatives remain defined structures.
@@ -196,7 +203,8 @@ counting its interior gives 1,423 leaves instead of 1,422 outer terms.
 It is not a claim of minimality.
 The [standalone exact verifier](coefficients/verify_three_dimensional_geometric_self_stacking.py)
 checks every physical sector and the total against the explicitly transported frozen baseline
-on all 20 independent valid-tower bits. All seven residuals are zero.
+on all 20 independent valid-tower bits. The frozen baseline is in the retained
+complex-conjugate orientation and is negated before the comparison. All seven residuals are zero.
 The [additional lift-identity verifier](coefficients/verify_three_dimensional_open_gamma_lift_reduction.py)
 checks the current 13-term Majorana expression against that same baseline.
 The fully collected scalar phase has 2,742 coefficients modulo 16; that

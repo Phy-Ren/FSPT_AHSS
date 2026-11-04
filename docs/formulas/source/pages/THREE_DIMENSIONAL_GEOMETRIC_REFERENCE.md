@@ -14,11 +14,11 @@ This page compares to the previous coordinate and proves the full phase transpor
 
 The previous complex-fermion coordinate is `check n3`; the current one is
 `n3`. All other single-state fields, including the additive phase, retain
-their values. The inverse adds the same binary B3. In particular this map
+their values. The inverse adds the same binary `check n2 cup1 check n2`. In particular this map
 does not move or reverse any ordinary Majorana operator.
-The previous obstruction is `O4+dB3`. The difference is exactly the
+The previous obstruction is `O4+d(check n2 cup1 check n2)`. The difference is exactly the
 higher-cup boundary
-`dB3 = d(check n2) cup1 check n2 + check n2 cup1 d(check n2)`.
+`d(check n2 cup1 check n2) = d(check n2) cup1 check n2 + check n2 cup1 d(check n2)`.
 The pure p+ip obstruction is unchanged.
 
 ## Product map
@@ -32,7 +32,7 @@ Thus the previous product, evaluated on the shifted inputs, has output
 output `check N3`. The face conversion changes adjacent point occupations
 together. The lower source/product identity is exact, with the full
 Majorana output, for both omega2 and s1. When the sheets vanish,
-`dB3=0` and `Delta B3=dB2`, so O4 and E3 reduce pointwise to the original
+`d(check n2 cup1 check n2)=0` and `Delta(check n2 cup1 check n2)=dB2`, so O4 and E3 reduce pointwise to the original
 Majorana laws. Their original projector sequence is retained.
 
 ## Complete phase transport
@@ -41,7 +41,9 @@ Majorana laws. Their original projector sequence is retained.
 
 The suffix `old` is confined to this comparison. The main page prints all
 six transported contributions in the current variables. No additional
-phase primitive has to be solved for. Its point-fermion contribution
+phase primitive has to be solved for. This transport is half-valued, so it is
+the same in the physical convention and in the retained complex-conjugate
+orientation of the previous coordinate. Its point-fermion contribution
 includes the explicitly displayed face-reference phase; the other two
 CF exchange contributions include their changed output evaluations.
 The remaining three contributions retain their existing coefficient tables.
@@ -74,13 +76,13 @@ The diagonal of the new pure sheet term has two terms, because
 The nested cup $[a\cup_1(a^2)]a$ vanishes for a closed binary one-cochain $a$. Thus
 $`N_3=\mathrm{Sq}^1\widetilde{n}_2+s_1\widetilde{n}_2+[\lfloor n_1/2\rfloor]_2[n_1]_2^2+s_1[\lfloor n_1/2\rfloor]_2[n_1]_2`$.
 For either finite-root branch, `n1=0` or `n1=s1`, one has
-`B2=check n2` and `B3[check N2]=0`. The previous output in every retained
+`B2=check n2` and `check N2 cup1 check N2=0`. The previous output in every retained
 self-stacking coefficient formula is consequently `N3+d check n2`.
 The current self-stacking page applies this substitution and its finite
 phase together.
 
 For Z4^{f,T}, `s1=m1`, `omega2=m1^2`, the displayed root representatives
-have B3=0. B2 vanishes for the p+ip square and equals m1^2 for the
+have check n2 cup1 check n2 = 0. B2 vanishes for the p+ip square and equals m1^2 for the
 Majorana square. Its differential vanishes, and its phase is
 `(omega2 B2+B2^2)/2=0 mod 1`. The complete root phases and the Z16 group
 therefore remain unchanged, now checked in the new coordinate.

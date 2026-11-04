@@ -291,13 +291,17 @@ inputs.
 <a id="majorana-3d"></a>
 ## 3+1D
 
-These are restrictions of the geometric pairing coordinate. The lower
-parity and its product coincide pointwise with the original Majorana laws.
-For the phase use $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$,
-$`\mathcal B_2=n_2\cup_2n'_2`$, and the shifted quantities defined in
-[the full reference](THREE_DIMENSIONAL.md#eq-t3b).
-The displayed point-fermion phase includes the output-face conversion.
-The microscopic ordinary modes and the original projection schedule are unchanged.
+These formulas are written in the physical point-fermion occupation $`n_3`$
+of the original geometric Majorana pairing, with the lattice sign of the
+Majorana phase: they are the hand-written closed-sector formulas, with the
+local stacking rephasing of the layer-combining move absorbed. The lower
+parity and its product coincide pointwise with the restriction of
+[the full reference](THREE_DIMENSIONAL.md). The terminal phase of that
+reference is instead written in $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$, where the
+quarter-valued Majorana terms have the opposite sign; the explicit
+[bridging identity and dictionary](THREE_DIMENSIONAL.md#closed-sector-bridging-identity)
+relate the two forms. The microscopic ordinary modes and the original
+projection schedule are unchanged.
 
 The physical fields are the binary Majorana cochain $`n_2`$,
 the binary complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
@@ -356,8 +360,8 @@ d_{s_1}\nu_4=\mathcal{𝒪}_5
 
 ```math
 \mathcal{𝒪}^{c}_5
- =\frac12\big[\omega_2\widetilde{n}_3+\widetilde{n}_3\cup_1\widetilde{n}_3
-   +d\widetilde{n}_3\cup_2\widetilde{n}_3\big].
+ =\frac12\big[\omega_2n_3+n_3\cup_1n_3
+   +dn_3\cup_2n_3\big].
 ```
 
 ##### Complex-fermion–Majorana contribution
@@ -368,7 +372,7 @@ d_{s_1}\nu_4=\mathcal{𝒪}_5
 
 ```math
 \mathcal{𝒪}^{c\gamma}_5
- =\frac12\big[d\widetilde{n}_3\cup_3d\widetilde{n}_3\big].
+ =\frac12\big[dn_3\cup_3dn_3\big].
 ```
 
 ##### Majorana contribution
@@ -377,29 +381,26 @@ d_{s_1}\nu_4=\mathcal{𝒪}_5
 
 **(M4, 3+1D)**
 
-This is the same pure Majorana formula as in the complete 3+1D tower.
-Here $`n_1=0`$, so $`\widetilde{n}_2=n_2`$ and
-$`\beta^- n_2=\beta n_2`$. Its physical origin is Majorana;
-the common expression also defines this contribution for a nonclosed
-Majorana input in the full tower.
+This is the pure Majorana polynomial of the complete 3+1D tower at
+$`n_1=0`$, where $`\widetilde{n}_2=n_2`$ and $`\beta^- n_2=\beta n_2`$, with the
+lattice sign of the quarter bracket appropriate to the physical occupation
+$`n_3`$:
 
 ```math
 \begin{aligned}
 \mathcal{𝒪}_5^\gamma
 ={}&\frac12\Big[
- \zeta_{2,2}(\omega_2,\widetilde{n}_2)\\
-&\qquad+\mathcal X_5(\widetilde{n}_2)
- +(\widetilde{n}_2^2)\cup_3(\omega_2\widetilde{n}_2)\\
-&\qquad+(\widetilde{n}_2^2)\cup_3(s_1[\beta^-\widetilde{n}_2]_2)
- +(\omega_2\widetilde{n}_2)\cup_3(s_1[\beta^-\widetilde{n}_2]_2)\\
-&\qquad+\zeta_{1,3}(s_1,[\beta^-\widetilde{n}_2]_2)
- +(\omega_2\cup_1s_1)[\beta^-\widetilde{n}_2]_2
- +s_1\widetilde{n}_2^2\Big]\\
+ \zeta_{2,2}(\omega_2,n_2)+\mathcal X_5(n_2)
+ +(n_2^2)\cup_3(\omega_2n_2)\\
+&\qquad+(n_2^2)\cup_3(s_1[\beta n_2]_2)
+ +(\omega_2n_2)\cup_3(s_1[\beta n_2]_2)\\
+&\qquad+\zeta_{1,3}(s_1,[\beta n_2]_2)
+ +(\omega_2\cup_1s_1)[\beta n_2]_2
+ +s_1n_2^2\Big]\\
 &+\frac14\Big[
- \omega_2\beta^-\widetilde{n}_2
- +(\beta^-\widetilde{n}_2)\cup_1(\beta^-\widetilde{n}_2)
- +s_1^2(\beta^-\widetilde{n}_2+
-             [\beta^-\widetilde{n}_2]_2)\Big].
+ \omega_2\beta n_2
+ +(\beta n_2)\cup_1(\beta n_2)
+ +s_1^2(\beta n_2+[\beta n_2]_2)\Big].
 \end{aligned}
 ```
 
@@ -486,14 +487,8 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 **(M3Ec, 3+1D)**
 
 ```math
-\begin{aligned}
-\mathcal{ℰ}_4^c=\frac12\Big[&
- \widetilde{n}_3\cup_2\widetilde{n}'_3
- +(\widetilde{n}_3+\widetilde{n}'_3)\cup_2(\mathcal{ℰ}_3+\Delta\mathcal B_3)\\
- &+\omega_2\mathcal B_2+\mathcal B_2^2
- +d\mathcal B_2\cup_1\mathcal B_2
- +\widetilde{\mathcal{ℰ}}_3\cup_2d\mathcal B_2\Big].
-\end{aligned}
+\mathcal{ℰ}_4^c=\frac12\Big[
+ n_3\cup_2n'_3+(n_3+n'_3)\cup_2\mathcal{ℰ}_3\Big].
 ```
 
 ##### Complex-fermion–Majorana contribution
@@ -503,12 +498,8 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 **(M3Ecγ, 3+1D)**
 
 ```math
-\begin{aligned}
-\mathcal{ℰ}_4^{c\gamma}=\frac12\Big[&
- d\widetilde{n}_3\cup_3\widetilde{n}'_3
- +\Delta(\widetilde{n}_3\cup_3d\widetilde{n}_3)\\
- &+d\mathcal B_2\cup_3d\widetilde{N}_3\Big].
-\end{aligned}
+\mathcal{ℰ}_4^{c\gamma}=\frac12\Big[
+ dn_3\cup_3n'_3+\Delta(n_3\cup_3dn_3)\Big].
 ```
 
 ##### Majorana contribution
@@ -517,23 +508,21 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 
 **(M7, 3+1D)**
 
-Use the same $`\mathcal{ℰ}_4^\gamma`$ as in the complete
-3+1D product, with $`\widetilde{n}_2=n_2`$, $`\widetilde{n}'_2=n'_2`$,
-$`\beta^-=\beta`$, and
-$`\lambda_2^\gamma=[n_2\cup_2n'_2]_2`$.
-The lower output here is $`N_2=[n_2+n'_2]_2`$, and
+This is the Majorana contribution of the complete 3+1D product with
+$`\widetilde{n}_2=n_2`$, $`\widetilde{n}'_2=n'_2`$, $`\beta^-=\beta`$, and
+$`\lambda_2^\gamma=[n_2\cup_2n'_2]_2`$, again with the lattice sign of the
+quarter bracket. The lower output here is $`N_2=[n_2+n'_2]_2`$, and
 $`\mathcal{ℰ}_3^\gamma=\mathcal{ℰ}_3`$.
 
 ```math
 \begin{aligned}
 \mathcal{ℰ}^{\gamma}_4={}&\frac12z_4^\gamma
  +\frac14\big[
- -\beta^-\widetilde{n}_2\cup_2\beta^-\widetilde{n}'_2\\
- &+(\beta^-\widetilde{n}_2+\beta^-\widetilde{n}'_2)
-       \cup_1\lambda_2^\gamma
- -\lambda_2^\gamma\cup_1
-       \beta^-[\widetilde{n}_2+\widetilde{n}'_2]_2\\
- &+(\lambda_2^\gamma)^2-\omega_2\lambda_2^\gamma\big].
+ -\beta n_2\cup_2\beta n'_2\\
+ &+(\beta n_2+\beta n'_2)
+       \cup_1[n_2\cup_2n'_2]_2
+ -[n_2\cup_2n'_2]_2\cup_1\beta N_2\\
+ &+([n_2\cup_2n'_2]_2)^2-\omega_2[n_2\cup_2n'_2]_2\big].
 \end{aligned}
 ```
 
@@ -1089,9 +1078,10 @@ whose first input has degree greater than $`q`$.
 
 The displayed physical laws use the operator representative. The maps
 below record the exact change from the previous phase coordinate and its
-inverse. These terminal maps keep their lower inputs fixed. In 3+1D the
-current geometric reference first applies the explicit shifted-CF and
-output-face conversion linked above. Source
+inverse. These terminal maps keep their lower inputs fixed. In 3+1D they
+act on the closed-sector formulas above, in the physical occupation $`n_3`$;
+the shifted-CF form of the full reference is related to them by the
+[bridging identity and dictionary](THREE_DIMENSIONAL.md#closed-sector-bridging-identity). Source
 and product transform together; these equations do not introduce a new
 physical contribution.
 

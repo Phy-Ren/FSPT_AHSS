@@ -36,7 +36,7 @@ On the ordered four-simplex, the complete contribution is
  +s_1^2\widetilde{n}_2
  +s_1\big[(s_1\widetilde{n}_2)\cup_2\widetilde{n}_2\big]
  \Big](01234)\\
-&+\frac14\Big[
+&-\frac14\Big[
  (\beta^-\widetilde{n}_2)\cup_2(\beta^-\widetilde{n}_2)
  -s_1[\beta^-\widetilde{n}_2]_2\\
 &\hspace{13mm}
@@ -75,7 +75,7 @@ the half-valued sum:
              \cup_4(s_1[\beta^-\widetilde{n}_2]_2)
  +s_1[\beta^-\widetilde{n}_2]_2\Big]\\
  &\hspace{25mm}
- +\frac14\big[\widetilde{n}_2^2-\omega_2\widetilde{n}_2\big].
+ -\frac14\big[\widetilde{n}_2^2-\omega_2\widetilde{n}_2\big].
 \end{aligned}
 ```
 
@@ -83,7 +83,7 @@ They are replaced by exactly three outer terms:
 
 ```math
 \frac12\widetilde{n}_2^2
- -\frac14\Big[
+ +\frac14\Big[
  s_1[\beta^-\widetilde{n}_2]_2
  +[\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]
              +s_1(\widetilde{n}_2\cup_2d\widetilde{n}_2)]_2\Big].
@@ -126,8 +126,8 @@ values are all zero or one. The elementary lift identity is
 Consequently, as phases modulo one,
 
 ```math
-\frac12\big[XY+(X+Y)Z+Z\big]+\frac14(X-Y)
- =\frac12X-\frac14\big[Z+[X+Y+Z]_2\big].
+\frac12\big[XY+(X+Y)Z+Z\big]-\frac14(X-Y)
+ =\frac12X+\frac14\big[Z+[X+Y+Z]_2\big].
 ```
 
 The top cup $`\cup_4`$ of binary degree-four cochains is their pointwise
@@ -148,6 +148,8 @@ without a coordinate transformation.
    Majorana and closed-background variables of a four-simplex.
 4. The new formula against the frozen current pure-Majorana sector on
    the canonical torsion tower, including its open Majorana differential.
+   The frozen sector is in the retained complex-conjugate orientation, so
+   it is negated before this comparison.
 
 The [verification receipt](coefficients/OPEN_GAMMA_LIFT_REDUCTION_CHECK.json) records zero coefficient residuals modulo 16. This is simultaneous exact
 coefficient verification, not random sampling. The count is 13 outer

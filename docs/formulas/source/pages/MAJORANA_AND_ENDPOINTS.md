@@ -203,13 +203,17 @@ inputs.
 <a id="majorana-3d"></a>
 ## 3+1D
 
-These are restrictions of the geometric pairing coordinate. The lower
-parity and its product coincide pointwise with the original Majorana laws.
-For the phase use $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$,
-$`\mathcal B_2=n_2\cup_2n'_2`$, and the shifted quantities defined in
-[the full reference](THREE_DIMENSIONAL.md#eq-t3b).
-The displayed point-fermion phase includes the output-face conversion.
-The microscopic ordinary modes and the original projection schedule are unchanged.
+These formulas are written in the physical point-fermion occupation $`n_3`$
+of the original geometric Majorana pairing, with the lattice sign of the
+Majorana phase: they are the hand-written closed-sector formulas, with the
+local stacking rephasing of the layer-combining move absorbed. The lower
+parity and its product coincide pointwise with the restriction of
+[the full reference](THREE_DIMENSIONAL.md). The terminal phase of that
+reference is instead written in $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$, where the
+quarter-valued Majorana terms have the opposite sign; the explicit
+[bridging identity and dictionary](THREE_DIMENSIONAL.md#closed-sector-bridging-identity)
+relate the two forms. The microscopic ordinary modes and the original
+projection schedule are unchanged.
 
 The physical fields are the binary Majorana cochain $`n_2`$,
 the binary complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
@@ -270,13 +274,12 @@ the binary complex-fermion cochain $`n_3`$, and the phase $`\nu_4`$.
 
 **(M4, 3+1D)**
 
-This is the same pure Majorana formula as in the complete 3+1D tower.
-Here $`n_1=0`$, so $`\widetilde{n}_2=n_2`$ and
-$`\beta^- n_2=\beta n_2`$. Its physical origin is Majorana;
-the common expression also defines this contribution for a nonclosed
-Majorana input in the full tower.
+This is the pure Majorana polynomial of the complete 3+1D tower at
+$`n_1=0`$, where $`\widetilde{n}_2=n_2`$ and $`\beta^- n_2=\beta n_2`$, with the
+lattice sign of the quarter bracket appropriate to the physical occupation
+$`n_3`$:
 
-{{equation:three-dimensional--majorana-decoration--14}}
+{{equation:majorana-and-endpoints--majorana-contribution--22}}
 
 Its word operations are
 
@@ -332,7 +335,7 @@ There is no stacking correction in this layer.
 
 **(M3Ec, 3+1D)**
 
-{{equation:majorana-and-endpoints--complex-fermion-contribution--28}}
+{{equation:majorana-and-endpoints--complex-fermion-contribution--23}}
 
 ##### Complex-fermion–Majorana contribution
 
@@ -348,14 +351,13 @@ There is no stacking correction in this layer.
 
 **(M7, 3+1D)**
 
-Use the same $`\mathcal{ℰ}_4^\gamma`$ as in the complete
-3+1D product, with $`\widetilde{n}_2=n_2`$, $`\widetilde{n}'_2=n'_2`$,
-$`\beta^-=\beta`$, and
-$`\lambda_2^\gamma=[n_2\cup_2n'_2]_2`$.
-The lower output here is $`N_2=[n_2+n'_2]_2`$, and
+This is the Majorana contribution of the complete 3+1D product with
+$`\widetilde{n}_2=n_2`$, $`\widetilde{n}'_2=n'_2`$, $`\beta^-=\beta`$, and
+$`\lambda_2^\gamma=[n_2\cup_2n'_2]_2`$, again with the lattice sign of the
+quarter bracket. The lower output here is $`N_2=[n_2+n'_2]_2`$, and
 $`\mathcal{ℰ}_3^\gamma=\mathcal{ℰ}_3`$.
 
-{{equation:three-dimensional--majorana-decoration--31}}
+{{equation:majorana-and-endpoints--majorana-contribution--30}}
 
 Here the binary completion is
 
@@ -696,9 +698,10 @@ whose first input has degree greater than $`q`$.
 
 The displayed physical laws use the operator representative. The maps
 below record the exact change from the previous phase coordinate and its
-inverse. These terminal maps keep their lower inputs fixed. In 3+1D the
-current geometric reference first applies the explicit shifted-CF and
-output-face conversion linked above. Source
+inverse. These terminal maps keep their lower inputs fixed. In 3+1D they
+act on the closed-sector formulas above, in the physical occupation $`n_3`$;
+the shifted-CF form of the full reference is related to them by the
+[bridging identity and dictionary](THREE_DIMENSIONAL.md#closed-sector-bridging-identity). Source
 and product transform together; these equations do not introduce a new
 physical contribution.
 

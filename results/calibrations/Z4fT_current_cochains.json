@@ -7,7 +7,7 @@
     "omega2": "m1^2",
     "s1": "m1"
   },
-  "phase_convention": "Current geometric pairing coordinate, with the shifted CF phase input and complete output-face phase.",
+  "phase_convention": "Physical convention (forward F move carries nu_4, d_s nu_4 = O_5), unified with the published lattice papers; current geometric pairing coordinate, with the shifted CF phase input and complete output-face phase.",
   "normalization": "m1^q(g1,...,gq)=product(gj), gj in {0,1}; all tuples included.",
   "five_tuples_checked_per_root": 32,
   "lower_equations": {
@@ -17,7 +17,7 @@
   },
   "roots": {
     "p_ip": {
-      "phase_coefficient": "1/4",
+      "phase_coefficient": "3/4",
       "source_coefficient": "1/2",
       "nonzero_residual_count": 0,
       "values": [
@@ -1624,7 +1624,7 @@
       ]
     },
     "Majorana": {
-      "phase_coefficient": "1/4",
+      "phase_coefficient": "3/4",
       "source_coefficient": "1/2",
       "nonzero_residual_count": 0,
       "values": [
@@ -6447,7 +6447,7 @@
   },
   "self_stacking_before_integer_gauge": {
     "p_ip": {
-      "E4_coefficient": "1/4",
+      "E4_coefficient": "3/4",
       "values": [
         {
           "tuple": [
@@ -6681,16 +6681,16 @@
             1,
             1
           ],
-          "E4": "1/4",
+          "E4": "3/4",
           "single_reference_zero": true,
           "B2": 0,
           "dB2": 0,
           "face_phase": "0/1",
           "N3": 0,
-          "output_phase": "3/4"
+          "output_phase": "1/4"
         }
       ],
-      "output_phase_coefficient": "3/4"
+      "output_phase_coefficient": "1/4"
     },
     "Majorana": {
       "E4_coefficient": "1/2",
@@ -7435,18 +7435,18 @@
     "docs/formulas/term_census/three_dimensional/O5_C_TERMS.json": "0247b35511ecc7523c09b1303619d7c9506a5238fe2d8ea72d4b30c2c256129b",
     "docs/formulas/term_census/three_dimensional/O5_CGAMMA_TERMS.json": "f8abeb033fa010c185139a7de6deec2dc97153270254602f75d92e8addeb2001",
     "docs/formulas/term_census/three_dimensional/O5_CPSI_TERMS.json": "dfd30110e908c38c0fbf0332afc3ba85db6108ff0b62ba5bcf5f33fdd7907a7a",
-    "docs/formulas/term_census/three_dimensional/O5_GAMMA_TERMS.json": "e19f663a80ff5eb49e917b5e4e076ec1514d21ee50d4602c31194956c565a944",
-    "docs/formulas/term_census/three_dimensional/O5_GAMMAPSI_TERMS.json": "c5e059d34491c50e9866b4b868c9b85b24a393ed25be16919050fbd3b0b71993",
-    "docs/formulas/term_census/three_dimensional/O5_PSI_TERMS.json": "231efd76be643eac2f0908492c801889b9ea37beaea81bdd4341437249cfcc81",
+    "docs/formulas/term_census/three_dimensional/O5_GAMMA_TERMS.json": "44a054cb9b35e5b909e0c75e6ad40166d18a7e0dc855f55109c45657127c4408",
+    "docs/formulas/term_census/three_dimensional/O5_GAMMAPSI_TERMS.json": "434637ba65df442be501ae3b435e93e69da0f0e02532a3fc06b60ffcd9efaac0",
+    "docs/formulas/term_census/three_dimensional/O5_PSI_TERMS.json": "674a2b9d36c21fca23b2f10829b23c85683c66a657676e73f3cff4b4238a30fa",
     "fspt/geometric_reference_3d.py": "30574b9fcc4eb06c99d76dfa22f656e53b49fc3ccadbd2de749d5d394add58fd",
-    "docs/formulas/source/equations/three-dimensional-geometric-reference--checked-fermion.tex": "c6199118bfffef2b184038fcbf3dfc4bc304e90dc8a5aaa692e60a1af3ee8056",
+    "docs/formulas/source/equations/three-dimensional-geometric-reference--checked-fermion.tex": "830d7ba754e5d2089eda06c76e41caaed66ee8073b5b0c53da24b11177a69fbb",
     "docs/formulas/source/equations/three-dimensional-geometric-reference--pair-cochain.tex": "75d38d0b3741acbd98e612c604facbedfe28028d4454a5c038e02f8faa0acf01",
     "docs/formulas/source/equations/three-dimensional-geometric-reference--phase-transport.tex": "be0f4b950b1bc2dd2b515125302dca93cbcbe154bf3c8153b8d99353408f2ea4",
-    "docs/formulas/source/equations/three-dimensional--p-ip-decoration--18.tex": "48df64a8f9a56d8d2beb8a446fd46c5ae15b2386037c6a62cc96e3a9e2f333cd",
-    "docs/formulas/source/equations/three-dimensional--majorana-decoration--14.tex": "6654e5b82a09c2deb9ff0ada8686ea20aa5533066a47caca8d058b5d46a1be6d",
-    "docs/formulas/source/pages/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md": "6d26c717da0443c7c2cb9fee87fd8d2d939fc07482f7d381448a2a2209f54d16",
-    "docs/formulas/coefficients/three_dimensional_geometric_self_stacking.json": "b467f3302afff26d08b0a38773a73dc884170be0953d0b00793eb4f469db3af3",
-    "docs/formulas/source/equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--11.tex": "c3ef2aa1c95133df6096fd6df25c19ec6a6591416bf7997d30369e4da3a9f73d"
+    "docs/formulas/source/equations/three-dimensional--p-ip-decoration--18.tex": "cb13f6a8648bbea17bcb93f028c3622830639dfb8ce3f3bbc3a439efa6abcca0",
+    "docs/formulas/source/equations/three-dimensional--majorana-decoration--14.tex": "dcbd1572a6c413f3548d254eff2709bc6cbc9ad935663a6d2ca371816b03f675",
+    "docs/formulas/source/pages/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md": "9f81d8abd56b044e9b6a4cb90ba5d1eb1afcdfc716d4a9c7ff68cbf8868e2921",
+    "docs/formulas/coefficients/three_dimensional_geometric_self_stacking.json": "c52c86ef147dde812a534246612376d34da08697df7ffc21e7035a1a5cfc7e3b",
+    "docs/formulas/source/equations/three-dimensional-self-stacking--4-bosonic-self-stacking-with-zero-p-ip-input--11.tex": "20b639b928c8de699aed0b83bfa7e51534351893e40de2d3e846a3dcb43652c0"
   },
   "scope": "Exact cochain solutions and raw self products in the current reader coordinate. No new classification or claim that a raw integer-root square is already gauge reduced."
 }

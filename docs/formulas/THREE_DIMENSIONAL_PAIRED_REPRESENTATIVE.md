@@ -5,10 +5,15 @@
 **Phase convention:** this page records a retained construction in the complex-conjugate orientation; the [physical convention](../FORMULA_GUIDE.md#phase-convention) is its negative, as stated below.
 
 This retained comparison is evaluated after the current lower-field map
-$`n_3\mapsto\widetilde{n}_3=n_3+\mathcal B_3`$. Its output is
+$`n_3\mapsto\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$. Its output is
 $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas additionally include
 the explicit face phase in [the geometric reference](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 In this auxiliary calculation only, symbols without tildes on the CF field denote that mapped field.
+This comparison, the native representative and the new representative below
+are all stated in the retained complex-conjugate orientation of the supplied
+source. The physical phases of the [formula pages](THREE_DIMENSIONAL.md) are
+the negatives of the new representative: negate $`B_4`$ and $`B_3`$ to state the
+same change in the physical orientation.
 The following terminal change then applies:
 
 ```math

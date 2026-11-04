@@ -5,9 +5,15 @@
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
 The current complex-fermion coordinate is the geometric pairing occupation.
-Use $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$ in the phase blocks below.
+Use $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$ in the phase blocks below; as in the
+terminal layer of the [3+1D formulas](THREE_DIMENSIONAL.md), the phases are
+physical and the quarter-valued Majorana terms carry the sign opposite to the
+closed-sector formulas written in $`n_3`$.
 The point-fermion phase includes $`(\omega_2n_2+n_2^2)/2`$ from the output reference conversion.
-The old ten-term coefficient certificate is a retained kernel, not the complete current phase.
+The old ten-term coefficient certificate is a retained kernel, not the complete current phase;
+it and the identities below are stated in the retained complex-conjugate
+orientation, and the physical phase is their negative. Since every identity
+used here is an exact equality, negation does not affect it.
 
 Take a complete state with $`n_1=0`$, closed binary Majorana cochain
 $`n_2`$, binary complex-fermion cochain $`n_3`$, and additive phase

@@ -4,6 +4,12 @@
 The existing certificate supplies only arithmetic and the retained exact
 coefficient kernels. All physical CF root bits below are in the NEW coordinate.
 No source files or frozen coefficients are modified by this verification.
+
+Phase convention: the transcribed phases are the displayed physical formulas
+(forward F move carries nu, unified lattice convention). Their quarter- and
+eighth-valued terms have the sign opposite to the retained frozen kernel,
+which is in the complex-conjugate orientation; the frozen reference is
+therefore negated before comparison. Half-valued terms are sign-free.
 """
 from verify_three_dimensional_canonical_self_stacking import *
 
@@ -57,16 +63,16 @@ def run():
                 +cup(cup(u,u),cup(w,u),4)+cup(cup(u,u)+cup(w,u),cup(s,b),4)
                 +cup(cup(w,s,1),u)+cup(t,cup(s,u),2)+cup(cup(s,s),u)+cup(s,b)+cup(s,cup(cup(s,u),u,2)))
     gamma_quarter=cup(Bgamma,Bgamma,2)+cup(integer_u,integer_u)-cup(integer_w,integer_u)
-    phases['GAMMA']=phase(gamma_half,2)+phase(gamma_quarter,4)
+    phases['GAMMA']=phase(gamma_half,2)-phase(gamma_quarter,4)
     mixed_half=cup(B,integer_u.differential(),2)+ds(cup(Bgamma,integer_u,2),s)-cup(Bgamma,integer_u,1)
     mixed_quarter=(-cup(Bgamma,Bpsi,2)-cup(Bpsi,Bgamma,2)+cup(Bgamma,alpha_n,3)
                    +cup(integer_u-t2.lift(16),integer_u.differential(),1)
                    +cup(integer_u,t2.lift(16))+cup(t2.lift(16),integer_u)
                    +ds(A.lift(16)-t.lift(16),s))
-    phases['GAMMAPSI']=phase(table('mixed_half_monomials'),2)+phase(mixed_half,2)+phase(mixed_quarter,4)
+    phases['GAMMAPSI']=phase(table('mixed_half_monomials'),2)+phase(mixed_half,2)-phase(mixed_quarter,4)
     second=(alpha-alpha.binary().lift(16)).divide(2).binary()
     psi_quarter=-cup(Bpsi,Bpsi,2)+cup(Bpsi,alpha_n,3)-cup(integer_w,t2.lift(16))-cup(second,s).lift(16)
-    phases['PSI']=phase(table('pure_half_monomials')-cup(t2,t2)(top),2)+phase(psi_quarter,4)+phase(cup(integer_W,t2.lift(16)),8)
+    phases['PSI']=phase(table('pure_half_monomials')-cup(t2,t2)(top),2)-phase(psi_quarter,4)-phase(cup(integer_W,t2.lift(16)),8)
     face_phase=cup(w,u)+cup(u,u)+cup(du,u,1)+cup(previous_N3,du,2)
     K=phase(face_phase,2)
     phases['C']=phases['C']+K
@@ -84,11 +90,12 @@ def run():
             for i in touched:value=value*replacements[i]
             out=out+Polynomial({m:coefficient for m in value.terms},16)
         return out
-    expected={name:transported_table(rows) for name,rows in data['reference_sector_phases_mod16'].items()}
+    # The retained frozen kernel has the conjugate orientation: negate it.
+    expected={name:-transported_table(rows) for name,rows in data['reference_sector_phases_mod16'].items()}
     expected['C']=expected['C']+K
     residuals={name:len((value-expected[name]).terms) for name,value in phases.items()}
     total=sum(phases.values(),Polynomial(0,16))
-    reference=transported_table(data['reference_total_phase_mod16'])+K
+    reference=-transported_table(data['reference_total_phase_mod16'])+K
     total_res=len((total-reference).terms)
     assert not any(residuals.values()) and not total_res,(residuals,total_res)
     report={'status':'PASS','scope':'Current geometric coordinate; n1=s1, both backgrounds, arbitrary valid Majorana and CF completions',
@@ -101,7 +108,8 @@ def run():
         'face_phase_binary_terms':len(face_phase(top).terms),
         'single_state_map':'checked n3 = n3 + checked n2 cup1 checked n2',
         'current_lower_output':'Sq1(checked n2) + s1 checked n2',
-        'previous_phase_output':'N3 + d checked n2','integer_output_gauge_applied':False}
+        'previous_phase_output':'N3 + d checked n2','integer_output_gauge_applied':False,
+        'phase_convention':'physical (unified lattice convention); equals minus the retained conjugate-orientation kernel'}
     return report
 
 if __name__=='__main__':

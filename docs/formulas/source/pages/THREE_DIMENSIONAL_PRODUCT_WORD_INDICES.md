@@ -2,7 +2,7 @@
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
-This is a retained coefficient/derivation kernel. Its CF input `n3` means the current $`\widetilde{n}_3=n_3+\mathcal B_3`$; its product uses the previous output $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is $`N_3+d\widetilde{n}_2`$. Frozen coefficient values are unchanged.
+This is a retained coefficient/derivation kernel. Its CF input `n3` means the current $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$; its product uses the previous output $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is $`N_3+d\widetilde{n}_2`$. Frozen coefficient values are unchanged.
 
 This coefficient definition replaces the 24,935-row ordinary product
 list by finite seed and index rules. Every final summand is a standard
@@ -339,9 +339,12 @@ They are taken in formal ordinary cochain expressions, not by setting
 illegal root-face variables to zero. The accepted gamma half polynomial
 is then added to the relative mixed part and displayed positively as the
 intrinsic gamma part; their identical binary copies cancel in the total.
-The exact paired bridge proves that the relative mixed *phase* vanishes
-on the closed-Majorana tower, including its quarter terms. A term inside
-one displayed coefficient bracket need not vanish independently.
+On the closed-Majorana tower the relative mixed *phase*, including its
+quarter terms, is not zero pointwise: it equals the coboundary
+$`d_{s_1}(\frac12[\lambda_2^\gamma\cup_1\lambda_2^\gamma+\lambda_2^\gamma\cup_2d\lambda_2^\gamma])`$,
+$`\lambda_2^\gamma=n_2\cup_2n'_2`$, given in the
+[closed-sector dictionary](THREE_DIMENSIONAL.md#closed-sector-bridging-identity).
+A term inside one displayed coefficient bracket need not vanish independently.
 
 The pure word set comprises the 8,593 ordinary indices plus
 

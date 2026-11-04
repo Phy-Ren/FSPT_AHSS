@@ -9,12 +9,16 @@ The table below gives additive phases in $`\mathbb R/\mathbb Z`$.
 Exponentiating them gives the corresponding $`U(1)`$ amplitudes, denoted by the same symbols when written multiplicatively.
 
 These representatives use the [current 3+1D formulas](../../docs/formulas/THREE_DIMENSIONAL.md)
-in the geometric pairing coordinate.
+in the geometric pairing coordinate. Phases are in the physical convention of the
+[formula guide](../../docs/FORMULA_GUIDE.md), unified with the published lattice
+papers: the forward F move carries $`\nu_4`$ and $`d_{s_1}\nu_4=\mathcal O_5`$.
+The earlier receipt of this calculation used the complex-conjugate convention;
+there every fractional phase below one half had the opposite sign.
 
 | Decoration | $`n_1`$ | $`n_2`$ | $`n_3`$ | $`\mathcal O_5`$ | $`\nu_4`$ |
 |---|---|---|---|---|---|
-| p+ip | $`m_1`$ | $`0`$ | $`0`$ | $`\tfrac12m_1^5`$ | $`\tfrac14m_1^4`$ |
-| Majorana | $`0`$ | $`m_1^2`$ | $`0`$ | $`\tfrac12m_1^5`$ | $`\tfrac14m_1^4`$ |
+| p+ip | $`m_1`$ | $`0`$ | $`0`$ | $`\tfrac12m_1^5`$ | $`-\tfrac14m_1^4`$ |
+| Majorana | $`0`$ | $`m_1^2`$ | $`0`$ | $`\tfrac12m_1^5`$ | $`-\tfrac14m_1^4`$ |
 | Complex fermion | $`0`$ | $`0`$ | $`m_1^3`$ | $`0`$ | $`0`$ |
 | Bosonic | $`0`$ | $`0`$ | $`0`$ | $`0`$ | $`\tfrac12m_1^4`$ |
 
@@ -24,7 +28,7 @@ $`[\lfloor n_1/2\rfloor]_2`$ vanishes on the p+ip representative.
 These facts do **not** make its terminal obstruction vanish: the complete
 binary physical-face contribution evaluates to $`m_1^5`$, while its MS sum
 and all higher-denominator terms vanish. Thus its required phase is
-$`\nu_4=i^{m_1^4}`$.
+$`\nu_4=(-i)^{m_1^4}`$.
 
 For the Majorana row, the integral Bockstein of $`m_1^2`$ vanishes;
 the half-valued part gives the displayed source. In the complex-fermion
@@ -50,7 +54,7 @@ integer output by its fermionic coboundary. This verifies concrete
 representatives; it is not a repeated classification calculation.
 
 The reference change is also evaluated explicitly. All four roots have
-$`\mathcal B_3=\widetilde{n}_2\cup_1\widetilde{n}_2=0`$. The p+ip square has
+$`\widetilde{n}_2\cup_1\widetilde{n}_2=0`$. The p+ip square has
 $`\mathcal B_2=0`$, while the Majorana square has $`\mathcal B_2=m_1^2`$;
 in the latter case $`d\mathcal B_2=0`$ and
 $`(\omega_2\mathcal B_2+\mathcal B_2^2)/2=0\mod1`$.
@@ -58,7 +62,7 @@ Their complete products before the integer gauge are
 
 | Input root | $`N_1`$ | $`N_2`$ | $`N_3`$ | $`\mathcal V_4`$ |
 |---|---|---|---|---|
-| p+ip | $`2m_1`$ | $`0`$ | $`0`$ | $`(-i)^{m_1^4}`$ |
+| p+ip | $`2m_1`$ | $`0`$ | $`0`$ | $`i^{m_1^4}`$ |
 | Majorana | $`0`$ | $`0`$ | $`m_1^3`$ | $`1`$ |
 | Complex fermion | $`0`$ | $`0`$ | $`0`$ | $`(-1)^{m_1^4}`$ |
 | Bosonic | $`0`$ | $`0`$ | $`0`$ | $`1`$ |
