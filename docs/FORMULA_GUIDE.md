@@ -85,10 +85,11 @@ $`\mathcal P_{s_1}(\widetilde{\omega}_2)\cup n_1`$, the integer lift of
 $`\widetilde{\omega}_2`$ instead carries the $`\mathbb Z_{s_1}`$ twist of the
 p+ip field, as specified in [Operations](formulas/OPERATIONS.md#eq-o7).
 
-The retained numerical runtime evaluates fixed compiled programs in its own
-documented coordinates. Their relation to this convention, including the
-complex conjugation of the 3+1D publication programs, is stated in the
-[programmer translation](../formulas/CODE_NOTATION.md#phase-convention-of-the-runtime).
+The numerical runtime evaluates fixed compiled programs in its own documented
+cochain coordinates, in this same phase convention; the
+[programmer translation](../formulas/CODE_NOTATION.md#phase-convention-of-the-runtime)
+states the coordinate maps. Archived results keep the frozen sources recorded
+with them.
 
 ## Notation
 

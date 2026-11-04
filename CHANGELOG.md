@@ -28,15 +28,21 @@ page names it in its header.
   $n_4$ with the quarter bracket $-\tfrac14$; lower p+ip layers use $n_4$
   with $dn_4=\mathcal O_5+dR_4$; the terminal p+ip layer is written in
   $\widetilde n_4=n_4+R_4$, where the existing expressions were already
-  physical. The microscopic heptagon table is related by
+  physical. The two-input pairing reference of the physical P move is
+  written out explicitly. The microscopic heptagon table is related by
   $\mathcal O^{\mathrm{phys}}=-\mathcal O^{\mathrm{table}}$.
 - Code: the closed-Majorana transcriptions (`fspt/formulas.py`,
   `fspt/majorana_complete.py`) and their generated GAP data and compiled
   programs use the same convention: they evaluate the displayed formulas,
   except that the 4+1D closed product keeps its documented output
-  coboundary and phase-coordinate change. The retained 3+1D publication
-  programs are documented as the complex conjugate of the displayed phases;
-  see the [programmer translation](formulas/CODE_NOTATION.md#phase-convention-of-the-runtime).
+  coboundary and phase-coordinate change. The complete runtime evaluates the
+  same convention in every dimension: the backend applies the orientation
+  sign of the 3+1D parameter integration to all 3+1D phase outputs, and no
+  routine of the complete GAP engine computes a 3+1D quarter-, eighth- or
+  sixteenth-valued phase itself. The compiled programs are unchanged. Archived results keep the
+  frozen sources recorded with them, which use the earlier orientation, and
+  remain reproducible as historical records; see the
+  [programmer translation](formulas/CODE_NOTATION.md#phase-convention-of-the-runtime).
 - Calibration cochains and printed example values were converted and
   re-verified with their scripts.
 - Results: in 3+1D and 4+1D the changes are a global complex conjugation

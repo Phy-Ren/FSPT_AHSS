@@ -23,25 +23,40 @@ compiled targets.
 
 ## Phase convention of the runtime
 
-The reader formulas use the [unified physical convention](../docs/FORMULA_GUIDE.md#phase-convention).
-The executable paths relate to it as follows.
+The reader formulas and every executable path use the
+[unified physical convention](../docs/FORMULA_GUIDE.md#phase-convention).
+Their representatives and coordinates are related as follows.
 
 | Path | Relation to the displayed physical formulas |
 |---|---|
 | Closed-Majorana programs `majorana_1_*` (2+1D, `fspt/majorana_complete.py`, `fspt/formulas.py`) | Equal. The stacking law contains the lattice term $`-\tfrac14[s_1n_1n'_1]_2`$. |
 | Closed-Majorana programs `majorana_2_*` (3+1D) | Equal; the CF field `c` is the physical occupation $`n_3`$ and the quarter bracket is $`+\tfrac14`$. |
-| Closed-Majorana programs `majorana_3_*` (4+1D) | The obstruction is equal; the CF field `c` is the physical occupation $`n_4`$ and the quarter brackets are $`-\tfrac14`$. The product is the compact closed product, which differs from the displayed closed twister by the explicit output coboundary and phase-coordinate change of the [4+1D section](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m7-4d). Both are the complex conjugates of the earlier $`+\tfrac14`$ forms, so that relation holds with its phase parts negated. |
-| Publication programs, 4+1D (`fspt/data/full_formula`, compiled from `formulas/publication_source`) | Same orientation. The CF slot is the canonical argument $`\widetilde{n}_4=n_4+R_4`$; the documented representative maps below apply. |
-| Publication programs, 3+1D | Complex conjugate. Every phase value is minus the physical value in the same runtime coordinates; binary values are unchanged. Compose with the documented representative maps, whose phase parts change sign in the same way. |
+| Closed-Majorana programs `majorana_3_*` (4+1D) | The obstruction is equal; the CF field `c` is the physical occupation $`n_4`$ and the quarter brackets are $`-\tfrac14`$. The product is the compact closed product, which differs from the displayed closed twister by the explicit output coboundary and phase-coordinate change of the [4+1D section](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m7-4d). That comparison is stated in the same convention. |
+| Publication programs, 4+1D (`fspt/data/full_formula`, compiled from `formulas/publication_source`) | Same convention. The CF slot is the canonical argument $`\widetilde{n}_4=n_4+R_4`$; the documented representative maps below apply. |
+| Publication programs, 3+1D | Same convention. `Backend` returns the 3+1D phases as minus the parameter integrals of the shared degree-six source, exactly as in the [finite construction](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md) (`physical3` in `fspt/full_formula/runtime.py`); this applies to the source, the product and both gauge corrections. The CF slot is $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$, and the documented representative maps below apply. |
 
-The 3+1D publication programs and their source are retained verbatim, so
-this conjugation is a stated dictionary rather than a recompilation.
-Complex conjugation $`x\mapsto-x`$ is an automorphism of
+The compiled programs are unchanged and still compile identically from the
+retained readable source; the orientation sign of the 3+1D parameter
+integration is applied once, in the backend. No routine of the complete GAP
+engine computes a 3+1D
+phase of denominator four, eight or sixteen itself: every such value reaches
+the group engine through this backend, and the native GAP shortcuts with
+quarter- or finer-valued phases (`AFSFullCubePrimitive`,
+`AFSFullBinaryPrimitive`, `AFSFullCFSquareLift`, `AFSFullCharacterMCLift`)
+act only in 4+1D. The native 3+1D shortcut `AFSFullClosedCFSource3` is
+half-valued. The earlier campaign engine (`gap/classification.g` with the
+generated formula data and the p+ip O5 programs `gap/pip_o5_*.g`) is not used
+by the complete engine; it is kept only to replay archived campaigns, whose
+results record their own frozen sources, and it is not converted.
+
+Archived results keep the frozen source snapshots recorded with them, which
+evaluate the 3+1D phases with the opposite orientation (their complex
+conjugates). They remain reproducible as historical records from those
+snapshots. Complex conjugation $`x\mapsto-x`$ is an automorphism of
 $`(\mathbb R/\mathbb Z)_{s_1}`$ that commutes with $`d_{s_1}`$, $`\Delta`$,
-cup products with integer cochains and every gauge action. Applied to all
-obstruction functions, stacking twisters and gauge witnesses at once, it
-maps solutions to solutions and gives the same classification group,
-stacking extension and layer filtration.
+cup products with integer cochains and every gauge action, so both
+evaluations give the same classification groups, stacking extensions and
+layer filtrations.
 
 ## Exact simplifications in the reader formulas
 
@@ -301,7 +316,7 @@ source in the [4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d) sec
 the 4+1D product is related as stated in the table above. All three degrees
 follow the [phase convention](#phase-convention-of-the-runtime): the `ca`
 targets for $`q=1`$ contain the lattice term $`-\tfrac14[s_1n_1n'_1]_2`$, and
-those for $`q=3`$ are the complex conjugates of the earlier $`+\tfrac14`$ law.
+those for $`q=3`$ have the quarter brackets $`-\tfrac14`$ in the physical $`n_4`$.
 The `ca` target is the coordinate denoted by the superscript `old` there. Recover it by subtracting the displayed
 single-state rephase from the source and its full stacking change from
 the product: [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-2d),

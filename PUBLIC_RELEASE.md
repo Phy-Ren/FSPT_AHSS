@@ -114,10 +114,10 @@ The readable source under `formulas/publication_source` and its fixed coefficien
 tables are retained verbatim. The scalar evaluator and shared-background transfer
 are implemented separately. The guide's
 [phase convention](docs/FORMULA_GUIDE.md#phase-convention) is the physical one;
-the [runtime dictionary](formulas/CODE_NOTATION.md#phase-convention-of-the-runtime)
-states how each compiled path relates to it. In particular the retained 3+1D
-publication programs evaluate the complex conjugate of the displayed phases,
-which gives the same groups and filtrations. Recompile a core formula into a fresh directory:
+the runtime evaluates the same convention, and the
+[runtime dictionary](formulas/CODE_NOTATION.md#phase-convention-of-the-runtime)
+states its coordinate maps. Archived results keep the frozen sources recorded
+with them and remain reproducible as historical records. Recompile a core formula into a fresh directory:
 
 ```sh
 python3 -m fspt.full_formula.compiler \

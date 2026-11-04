@@ -319,6 +319,18 @@ def degenerate_fields(d,items):
     return False
 
 
+def physical3(numerator16):
+    """3+1D phase value in the physical convention of the formula guide.
+
+    The retained 3+1D publication programs, compiled verbatim from the frozen
+    source, evaluate the complex conjugate of the physical phases. Every 3+1D
+    phase output of this backend (source, product and gauge corrections) is
+    converted here, so the backend evaluates the displayed physical formulas
+    up to their documented representative maps. Binary outputs are unchanged.
+    """
+    return Fraction((-numerator16)%16,16)
+
+
 class Backend:
     def __init__(self,data_dir=None,native_path=None,use_native=True,use_specializations=True,
                  use_pure_cf_source=False,use_n0_source=False):
@@ -448,7 +460,7 @@ class Backend:
                 # publication's off-shell CF coordinate and signed background.
                 self.stats['specialized_pure_cf_source_calls']+=1
                 value=self.program('source3_pure_cf_bosonic',fields)[0]
-                return Fraction(value%16,16)
+                return physical3(value)
             if self.use_specializations and self.use_n0_source and not any(fields['n']):
                 lower=self.source3_n0_lower(tuple(fields['a']),tuple(fields['w']),tuple(fields['s']))
                 if lower is not None:
@@ -460,8 +472,8 @@ class Backend:
                     if legal:
                         self.stats['specialized_n0_source_calls']+=1
                         value=self.program('source3_majorana_n0_bosonic',fields)[0]
-                        return Fraction(value%16,16)
-            return Fraction(self.suspended('source',fields),16)
+                        return physical3(value)
+            return physical3(self.suspended('source',fields))
         if dimension==4:
             shifted=self.shift(4,fields)
             high,cubic=self.high6(shifted)
@@ -479,8 +491,8 @@ class Backend:
         if set(fields)!=set(('a','c','beta','w','s')):
             raise ValueError('Non-vacuum Majorana gauge requires a,c,beta,w,s')
         value=self.program('gauge_mc{}_n0_'.format(dimension)+stage,fields)[0]
-        modulus=16 if dimension==3 else 48
-        return value%2 if stage=='fermion' else Fraction(value%modulus,modulus)
+        if stage=='fermion':return value%2
+        return physical3(value) if dimension==3 else Fraction(value%48,48)
 
     def fermion_gauge_n0(self,dimension,stage,fields):
         """Literal d3/d4 pure-CF gauge carry with n=a=lambda=beta=0."""
@@ -489,8 +501,7 @@ class Backend:
         if set(fields)!=set(('c','gamma','w','s')):
             raise ValueError('Non-vacuum fermion gauge requires c,gamma,w,s')
         value=self.program('gauge_cf{}_n0_bosonic'.format(dimension),fields)[0]
-        modulus=16 if dimension==3 else 48
-        return Fraction(value%modulus,modulus)
+        return physical3(value) if dimension==3 else Fraction(value%48,48)
 
     def vacuum_majorana_gauge(self,dimension,stage,fields):
         """Literal current-coordinate vacuum cylinder, lambda=gamma=0.
@@ -528,7 +539,7 @@ class Backend:
             return self.program('product_{}_{}'.format(dimension,stage),fields)[0]%2
         if stage!='bosonic':raise ValueError(stage)
         if dimension==3:
-            return Fraction(self.suspended('product',fields),16)
+            return physical3(self.suspended('product',fields))
         if dimension!=4:raise ValueError('Only spatial dimensions 3 and 4 are supported')
         if self.use_specializations and not any(left['n']) and not any(right['n']):
             self.stats['specialized_product_calls']+=1
