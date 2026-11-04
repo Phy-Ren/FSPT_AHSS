@@ -209,7 +209,10 @@ def _j4(a,s):
 
 
 def stacking(a,c,b,cp,w,s):
-    """Manuscript U3/U4, same CA coordinate as obstruction()."""
+    """Manuscript U3/U4, same CA coordinate as obstruction().
+
+    p=1 is the lattice 2+1D twister, with antiunitary term -[s n n']_2/4.
+    """
     p=a.degree
     N=a+b; P=a.beta(); Q=b.beta()
     u=cup(a,b,p); S=cup(a,b,p,integer=True); T=S.differential()
@@ -220,7 +223,7 @@ def stacking(a,c,b,cp,w,s):
         lw=phase((4,cup(w*N,a*b,2)),(-2,cup(w,S,integer=True)))
         ea,eb,eu=cup(s,a,1),cup(s,b,1),cup(s,u,1)
         ls=s*(ea+eb+eu)*u+ea*u*N+(ea*a+a*eb+s*a+a*s)*u+s*(u*a+a*b+b*u)
-        pure_s=phase((4,ls),(2,s*a*b))
+        pure_s=phase((4,ls),(-2,s*a*b))
         mixed=phase((4,cup(w,s,1)*u+cup(w*N,s*u,2)+cup(w*b,s*a*a,3)))
     elif p == 2:
         r,rp=P.reduce(),Q.reduce(); t,tb=cup(a,b,1),cup(b,a,1);v=s*u

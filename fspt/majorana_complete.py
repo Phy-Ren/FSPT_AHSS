@@ -4,6 +4,8 @@ This is an independent transcription of the displayed cochain formulas. The
 input Majorana degree q is 1, 2, or 3. Phases are exact integer numerators over
 eight. The CA and operator coordinates are transported together; neither is
 silently identified with the integer-layer publication coordinate.
+All degrees use the physical phase convention of the formula guide; the
+complex-fermion field c is the physical occupation n_{q+1}.
 """
 from functools import lru_cache
 
@@ -33,8 +35,11 @@ def gamma(a, w, s):
               + cup(sq, wa, 4) + cup(sq, sr, 4) + cup(wa, sr, 4)
               + word("12314343", s, s, r, r) + cup(w, s, 1)*r
               + s*sq + s*s*second_carry(a).reduce())
-    return phase((4, binary), (2, cup(w, p, integer=True)),
-                 (2, cup(p, p, 2, integer=True)))
+    # Physical 4+1D closed-sector Majorana phase in the occupation n_4:
+    # quarter bracket -1/4 (the global complex conjugate of the +1/4 form,
+    # which is the same law written in n~_4 = n_4 + Sq^1 n_3).
+    return phase((4, binary), (-2, cup(w, p, integer=True)),
+                 (-2, cup(p, p, 2, integer=True)))
 
 
 def operator_gauge(c):
@@ -124,7 +129,9 @@ def pure_stacking(a, b, w, s):
                - cup(ulift, rp, q-1, integer=True)
                + cup(ulift, ulift, q-2, integer=True)
                - cup(w, ulift, integer=True))
-    return phase((4, binary), (2, quarter))
+    # q=3: physical occupation n_4, so the quarter part changes sign with
+    # the closed-sector obstruction (global conjugation, see gamma()).
+    return phase((4, binary), (2 if q == 2 else -2, quarter))
 
 
 def stacking(a, c, b, cp, w, s, coordinate="ca"):
