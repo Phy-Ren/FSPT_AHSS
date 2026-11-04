@@ -62,13 +62,14 @@ obstruction. Every allowed completion $`n_2`$ is included.
 ={}&\frac12\Big[
  n_1^2\cup_1(s_1n_1)
  +\big[s_1\cup_1(s_1n_1)\big]n_1
- +(\omega_2\cup_1s_1)n_1+s_1\beta n_1\Big]\\
+ +(\omega_2\cup_1s_1)n_1\Big]\\
 &-\frac14\Big[n_1^3+\mathcal{𝒪}_3^\gamma[n_1]\Big].
 \end{aligned}
 ```
 
-The complete bosonic twister has **eight terms: six half-valued and two
-quarter-valued terms**. The obstruction in the quarter bracket is the
+The complete bosonic twister has **seven terms: five half-valued and two
+quarter-valued terms**. It is the general lattice twister of the
+[2+1D reference](TWO_DIMENSIONAL.md#stacking-2d) evaluated at equal inputs. The obstruction in the quarter bracket is the
 canonical integer lift of its whole binary value. It must not be replaced
 by the sum of separately lifted terms. The integer Bockstein is
 $`\beta n_1=dn_1/2`$, with the differential taken before reduction;

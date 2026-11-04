@@ -226,7 +226,7 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 &\qquad-(\beta n_1+\beta n'_1)({n_1}\cup_1{n'_1})\\
 &\qquad-({n_1}\cup_1{n'_1})(\beta n_1+\beta n'_1)\\
 &\qquad+({n_1}\cup_1{n'_1})d({n_1}\cup_1{n'_1})
- -\omega_2(n_1\cup_1n'_1)+[s_1n_1n'_1]_2\Big]\\
+ -\omega_2(n_1\cup_1n'_1)-[s_1n_1n'_1]_2\Big]\\
 &-\frac18\Delta\!\left[[n_1^3]_2\right]
  \pmod1.
 \end{aligned}
@@ -238,6 +238,28 @@ $`\Delta`$ in the mixed half-valued contribution is binary; in the
 eighth-valued contribution it subtracts the complete integer lifts. In contrast, $`n_1\cup_1n'_1`$ in the
 quarter-valued bracket is a signed integer cup; its differential is also
 integral.
+
+This twister is the lattice result: the Majorana stacking amplitude of the
+fixed-point construction with the forward and inverse moves of the
+[phase convention](../FORMULA_GUIDE.md#phase-convention) (the SptSet
+`AddTwister2D` table), written in the present phase coordinate. With
+$`\Delta\big(\frac14\omega_2n_1\big)=\frac12\omega_2(n_1\cup_1n'_1)`$, the
+lattice quantities (superscript lat) are related by
+
+```math
+\begin{aligned}
+\nu_3&=\nu_3^{\mathrm{lat}}+\frac14\,\omega_2n_1,\qquad
+\mathcal{𝒪}_4=\mathcal{𝒪}_4^{\mathrm{lat}}+d_{s_1}\Big(\frac14\,\omega_2n_1\Big),\\
+\mathcal{ℰ}_3&=\mathcal{ℰ}_3^{\mathrm{lat}}+\frac12\,\omega_2(n_1\cup_1n'_1)+d_{s_1}\mu_2,\\
+\mu_2&=\frac38\,n_1n'_1+\frac18\,n'_1n_1-\frac18\,(n_1\cup_1n'_1)n_1
+ -\frac38\big[n_1(n_1\cup_1n'_1)+(n_1\cup_1n'_1)n'_1\\
+&\qquad+n'_1(n_1\cup_1n'_1)+(n_1\cup_1n'_1)^2\big]
+ +\frac12\big[n_2\cup_2n'_2+\mathcal{ℰ}_2\cup_2(n_2+n'_2)\big].
+\end{aligned}
+```
+
+Here the integer cups in $`\mu_2`$ use the canonical lifts. In particular
+the antiunitary quarter term is $`-\frac14[s_1n_1n'_1]_2`$.
 
 The binary antiunitary term is
 

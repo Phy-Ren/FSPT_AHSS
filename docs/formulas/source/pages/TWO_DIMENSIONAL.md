@@ -83,6 +83,10 @@ eighth-valued contribution it subtracts the complete integer lifts. In contrast,
 quarter-valued bracket is a signed integer cup; its differential is also
 integral.
 
+This is the lattice Majorana stacking twister, written in the present phase
+coordinate; its [explicit relation to the lattice phase](MAJORANA_AND_ENDPOINTS.md#eq-m11)
+is stated with the closed-Majorana formulas.
+
 The binary antiunitary term is
 
 {{equation:majorana-and-endpoints--majorana-contribution--15}}

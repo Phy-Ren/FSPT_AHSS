@@ -139,7 +139,7 @@ N_2=n_2+n'_2+\mathcal{ℰ}_2,\qquad
 &\qquad-(\beta n_1+\beta n'_1)({n_1}\cup_1{n'_1})\\
 &\qquad-({n_1}\cup_1{n'_1})(\beta n_1+\beta n'_1)\\
 &\qquad+({n_1}\cup_1{n'_1})d({n_1}\cup_1{n'_1})
- -\omega_2(n_1\cup_1n'_1)+[s_1n_1n'_1]_2\Big]\\
+ -\omega_2(n_1\cup_1n'_1)-[s_1n_1n'_1]_2\Big]\\
 &-\frac18\Delta\!\left[[n_1^3]_2\right]
  \pmod1.
 \end{aligned}
@@ -151,6 +151,10 @@ $`\Delta`$ in the mixed half-valued contribution is binary; in the
 eighth-valued contribution it subtracts the complete integer lifts. In contrast, $`n_1\cup_1n'_1`$ in the
 quarter-valued bracket is a signed integer cup; its differential is also
 integral.
+
+This is the lattice Majorana stacking twister, written in the present phase
+coordinate; its [explicit relation to the lattice phase](MAJORANA_AND_ENDPOINTS.md#eq-m11)
+is stated with the closed-Majorana formulas.
 
 The binary antiunitary term is
 

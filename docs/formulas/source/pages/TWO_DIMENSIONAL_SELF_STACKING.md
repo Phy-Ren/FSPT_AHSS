@@ -41,8 +41,9 @@ obstruction. Every allowed completion $`n_2`$ is included.
 
 {{equation:two-dimensional-self-stacking--majorana-decoration--5}}
 
-The complete bosonic twister has **eight terms: six half-valued and two
-quarter-valued terms**. The obstruction in the quarter bracket is the
+The complete bosonic twister has **seven terms: five half-valued and two
+quarter-valued terms**. It is the general lattice twister of the
+[2+1D reference](TWO_DIMENSIONAL.md#stacking-2d) evaluated at equal inputs. The obstruction in the quarter bracket is the
 canonical integer lift of its whole binary value. It must not be replaced
 by the sum of separately lifted terms. The integer Bockstein is
 $`\beta n_1=dn_1/2`$, with the differential taken before reduction;

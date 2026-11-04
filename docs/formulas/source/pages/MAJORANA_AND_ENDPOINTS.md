@@ -170,6 +170,18 @@ eighth-valued contribution it subtracts the complete integer lifts. In contrast,
 quarter-valued bracket is a signed integer cup; its differential is also
 integral.
 
+This twister is the lattice result: the Majorana stacking amplitude of the
+fixed-point construction with the forward and inverse moves of the
+[phase convention](../FORMULA_GUIDE.md#phase-convention) (the SptSet
+`AddTwister2D` table), written in the present phase coordinate. With
+$`\Delta\big(\frac14\omega_2n_1\big)=\frac12\omega_2(n_1\cup_1n'_1)`$, the
+lattice quantities (superscript lat) are related by
+
+{{equation:majorana-and-endpoints--2-1d-lattice-dictionary}}
+
+Here the integer cups in $`\mu_2`$ use the canonical lifts. In particular
+the antiunitary quarter term is $`-\frac14[s_1n_1n'_1]_2`$.
+
 The binary antiunitary term is
 
 <a id="eq-m10"></a>
