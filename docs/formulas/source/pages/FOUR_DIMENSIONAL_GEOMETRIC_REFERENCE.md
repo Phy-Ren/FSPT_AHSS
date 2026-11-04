@@ -49,11 +49,9 @@ already required for intrinsic and projective modes.
 
 The actual P graph includes the two complete input states, the cross-copy
 channels, the three-copy contacts, and the output state with the same
-single-layer pairing rule. Its count is
-
-```math
-\Delta P_f=\mathcal E_4+\Delta R_4+d\mathcal B_3\mod2.
-```
+single-layer pairing rule. Its count is displayed below. Besides the twister
+and $`\Delta R_4`$, it contains the coboundary of an explicit two-input
+reference, written out as its alternating face sum.
 
 $`\mathcal E_4`$ is the complete twister in
 [the same formula page](FOUR_DIMENSIONAL.md#eq-p4). The output used in
@@ -66,15 +64,13 @@ N_3=n_3+n'_3+[n_2]_2\cup_1[n'_2]_2
 ```
 
 Equivalently $`\widetilde{N}_3=\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal E}_3`$,
-with $`\widetilde{\mathcal E}_3=[n_2]_2\cup_1[n'_2]_2`$. The two-input
-three-cochain is
+with $`\widetilde{\mathcal E}_3=[n_2]_2\cup_1[n'_2]_2`$. The complete count is
 
 {{equation:four-dimensional-geometric-reference--pair--2}}
 
-It is a coboundary primitive rather than a decoration: the stacking law on
-the formula page composes the P move with the complex-fermion gauge
-transformation that removes $`d\mathcal B_3`$, and records the
-corresponding phase.
+The summed term is a coboundary, not a decoration: the stacking law on the
+formula page composes the P move with the complex-fermion gauge
+transformation that removes it, and records the corresponding phase.
 
 The paired identities imply, pointwise,
 

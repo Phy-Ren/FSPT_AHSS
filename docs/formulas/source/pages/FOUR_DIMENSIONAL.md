@@ -260,8 +260,8 @@ Consequently $`d\widetilde{\mathcal{ℰ}}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 The first line is the physical occupation of the output, with $`R_4`$
 evaluated on the actual lower output $`(N_2,N_3)`$ in $`\Delta R_4`$; the
 second line is the same law in the shifted occupation. Both include the
-complex-fermion gauge transformation by the two-input cochain
-$`\mathcal B_3`$ described under the bosonic stacking law below.
+complex-fermion gauge transformation by the explicit two-input pairing
+reference described under the bosonic stacking law below.
 
 **Majorana contribution.**
 
@@ -300,16 +300,17 @@ are kept fixed in every evaluation below. Setting its second argument
 to zero removes only the term $`s_1\widetilde{n}_4/2`$.
 
 The directed pairing count of the physical P move gives the output
-$`\widetilde{N}_4+d\mathcal B_3`$, where $`\mathcal B_3`$ is the two-input
-three-cochain of the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#stacking-and-its-paired-comparison).
-It is a coboundary primitive, not a decoration. The lower law above composes
-the P move with the complex-fermion gauge transformation that removes
-$`d\mathcal B_3`$. If the uncorrected output is used instead, add
+$`\widetilde{N}_4`$ plus the coboundary of the two-input pairing reference
+written out in the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#stacking-and-its-paired-comparison).
+That coboundary is not a decoration. The lower law above composes the P move
+with the complex-fermion gauge transformation that removes it. If the
+uncorrected output $`\widetilde{N}_4+dx`$ is used instead, with $`x`$ the written-out
+two-input reference, add
 
 {{equation:four-dimensional--4-bosonic-stacking--45}}
 
-to $`\mathcal{ℰ}_5`$. This is the primitive of
-$`\mathcal{𝒪}_6^c[\widetilde{N}_4+d\mathcal B_3]-\mathcal{𝒪}_6^c[\widetilde{N}_4]`$;
+to $`\mathcal{ℰ}_5`$. For any binary three-cochain $`x`$ this is the primitive of
+$`\mathcal{𝒪}_6^c[\widetilde{N}_4+dx]-\mathcal{𝒪}_6^c[\widetilde{N}_4]`$;
 the mixed contribution depends only on $`d\widetilde{N}_4`$ and is unchanged.
 
 #### Complex fermions
