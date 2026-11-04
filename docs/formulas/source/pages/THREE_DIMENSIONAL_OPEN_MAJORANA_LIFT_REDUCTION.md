@@ -148,8 +148,8 @@ without a coordinate transformation.
    Majorana and closed-background variables of a four-simplex.
 4. The new formula against the frozen current pure-Majorana sector on
    the canonical torsion tower, including its open Majorana differential.
-   The frozen sector is in the retained complex-conjugate orientation, so
-   it is negated before this comparison.
+   The frozen sector is historical data in the orientation used before the
+   convention unification, so it is negated before this comparison.
 
 The [verification receipt](coefficients/OPEN_GAMMA_LIFT_REDUCTION_CHECK.json) records zero coefficient residuals modulo 16. This is simultaneous exact
 coefficient verification, not random sampling. The count is 13 outer

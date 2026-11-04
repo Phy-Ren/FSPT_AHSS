@@ -6,7 +6,7 @@ are transcribed independently below. No solver or sampled assignments occur.
 
 Phase convention: both formulas are the displayed physical ones (unified
 lattice convention). Their quarter-valued terms have the sign opposite to the
-retained frozen sector, which is in the complex-conjugate orientation, so the
+retained frozen sector, historical data in the pre-unification orientation, so the
 frozen sector is negated before comparison.
 """
 from pathlib import Path
@@ -84,7 +84,7 @@ assert not left-right
 ut,wt,st,tower_labels=build_fields(True)
 data=json.loads((HERE/'three_dimensional_canonical_self_stacking.json').read_text())
 assert data['variables'][:len(tower_labels)]==tower_labels
-# The retained frozen sector has the conjugate orientation: negate it.
+# The frozen sector is historical data in the pre-unification orientation: negate it.
 frozen=-P(dict(data['reference_sector_phases_mod16']['GAMMA']),16)
 assert not new_gamma(ut,wt,st)-frozen
 report={'status':'PASS','scope':'The complete previously designated 3D Majorana diagonal contribution for arbitrary open binary u2 and closed binary s1,omega2.',

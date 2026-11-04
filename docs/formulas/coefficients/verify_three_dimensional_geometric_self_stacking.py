@@ -8,7 +8,7 @@ No source files or frozen coefficients are modified by this verification.
 Phase convention: the transcribed phases are the displayed physical formulas
 (forward F move carries nu, unified lattice convention). Their quarter- and
 eighth-valued terms have the sign opposite to the retained frozen kernel,
-which is in the complex-conjugate orientation; the frozen reference is
+which is historical data in the pre-unification orientation; the frozen reference is
 therefore negated before comparison. Half-valued terms are sign-free.
 """
 from verify_three_dimensional_canonical_self_stacking import *
@@ -90,7 +90,7 @@ def run():
             for i in touched:value=value*replacements[i]
             out=out+Polynomial({m:coefficient for m in value.terms},16)
         return out
-    # The retained frozen kernel has the conjugate orientation: negate it.
+    # The frozen kernel is historical data in the pre-unification orientation: negate it.
     expected={name:-transported_table(rows) for name,rows in data['reference_sector_phases_mod16'].items()}
     expected['C']=expected['C']+K
     residuals={name:len((value-expected[name]).terms) for name,value in phases.items()}
@@ -109,7 +109,7 @@ def run():
         'single_state_map':'checked n3 = n3 + checked n2 cup1 checked n2',
         'current_lower_output':'Sq1(checked n2) + s1 checked n2',
         'previous_phase_output':'N3 + d checked n2','integer_output_gauge_applied':False,
-        'phase_convention':'physical (unified lattice convention); equals minus the retained conjugate-orientation kernel'}
+        'phase_convention':'physical (unified lattice convention); equals minus the frozen pre-unification kernel'}
     return report
 
 if __name__=='__main__':

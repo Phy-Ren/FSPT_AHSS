@@ -9,9 +9,9 @@ physical and the quarter-valued Majorana terms carry the sign opposite to the
 closed-sector formulas written in $`n_3`$.
 The point-fermion phase includes $`(\omega_2n_2+n_2^2)/2`$ from the output reference conversion.
 The old ten-term coefficient certificate is a retained kernel, not the complete current phase;
-it and the identities below are stated in the retained complex-conjugate
-orientation, and the physical phase is their negative. Since every identity
-used here is an exact equality, negation does not affect it.
+it is historical data in the orientation used before the convention
+unification, and the physical phase is its negative. The identities below are
+exact binary equalities and do not depend on that orientation.
 
 Take a complete state with $`n_1=0`$, closed binary Majorana cochain
 $`n_2`$, binary complex-fermion cochain $`n_3`$, and additive phase

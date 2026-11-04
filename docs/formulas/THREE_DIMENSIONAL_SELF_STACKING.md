@@ -11,9 +11,10 @@ $`\widetilde{n}_2=n_2+s_1[\lfloor n_1/2\rfloor]_2`$ and
 $`\widetilde{\omega}_2=\omega_2+s_1^2`$.
 The formulas use the same phase representative as that reference: the
 terminal phase is written in $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$
-with physical phases, so its quarter-, eighth- and sixteenth-valued terms
-have the sign opposite to the retained coefficient kernels, which are in the
-complex-conjugate orientation.
+with physical phases. The retained coefficient kernels used by the verifiers
+are historical data in the orientation used before the convention
+unification; their quarter-, eighth- and sixteenth-valued terms have the
+opposite sign.
 
 The terminal formulas below cover $`n_1=0`$ and the canonical signed torsion
 representative $`n_1=s_1`$. These are the two branches required for finite root
@@ -135,10 +136,10 @@ The quarter-valued obstruction is the canonical integer lift of its
 **whole binary value**. It must not be distributed into separately lifted
 summands. The earlier ten-term kernel is retained as a fixed input to the coordinate transport;
 [its self-contained coefficient proof](coefficients/verify_three_dimensional_majorana_self_stacking.py)
-also checks the complex-fermion completion. That kernel and its proof are in the
-retained complex-conjugate orientation; the physical phase displayed here is
-its negative after the transport, which changes only the sign of the three
-quarter terms.
+also checks the complex-fermion completion. That kernel is historical data in
+the orientation used before the convention unification; the physical phase
+displayed here is its negative after the transport, which changes only the
+sign of the three quarter terms.
 
 ## 5. Bosonic self-stacking of the canonical p+ip torsion root
 
@@ -360,8 +361,8 @@ counting its interior gives 1,423 leaves instead of 1,422 outer terms.
 It is not a claim of minimality.
 The [standalone exact verifier](coefficients/verify_three_dimensional_geometric_self_stacking.py)
 checks every physical sector and the total against the explicitly transported frozen baseline
-on all 20 independent valid-tower bits. The frozen baseline is in the retained
-complex-conjugate orientation and is negated before the comparison. All seven residuals are zero.
+on all 20 independent valid-tower bits. The frozen baseline is historical data
+in the earlier orientation and is negated before the comparison. All seven residuals are zero.
 The [additional lift-identity verifier](coefficients/verify_three_dimensional_open_gamma_lift_reduction.py)
 checks the current 13-term Majorana expression against that same baseline.
 The fully collected scalar phase has 2,742 coefficients modulo 16; that

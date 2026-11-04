@@ -2,18 +2,18 @@
 
 # Auxiliary phase comparison in 3+1D
 
-**Phase convention:** this page records a retained construction in the complex-conjugate orientation; the [physical convention](../FORMULA_GUIDE.md#phase-convention) is its negative, as stated below.
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
 This retained comparison is evaluated after the current lower-field map
 $`n_3\mapsto\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$. Its output is
 $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas additionally include
 the explicit face phase in [the geometric reference](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 In this auxiliary calculation only, symbols without tildes on the CF field denote that mapped field.
-This comparison, the native representative and the new representative below
-are all stated in the retained complex-conjugate orientation of the supplied
-source. The physical phases of the [formula pages](THREE_DIMENSIONAL.md) are
-the negatives of the new representative: negate $`B_4`$ and $`B_3`$ to state the
-same change in the physical orientation.
+The native representative is the one evaluated by the runtime, with the
+3+1D phases of the [finite construction](THREE_DIMENSIONAL_TERMINAL.md); the new
+representative is that of the [formula pages](THREE_DIMENSIONAL.md). Both are in
+the physical convention. (Before the convention unification this comparison was
+stated for the complex conjugates of both, with $`B_4,B_3`$ of the opposite sign.)
 The following terminal change then applies:
 
 ```math
@@ -21,9 +21,9 @@ The following terminal change then applies:
 \nu_4^{\rm new}
  &=\nu_4^{\rm native}+B_4,\\
 B_4
- &=B_4^{c,*}+\frac14B_4^{\mathrm{int}}
+ &=B_4^{c,*}-\frac14B_4^{\mathrm{int}}
  -\frac12[s_1n_3+H_4[\widetilde{n}_2]+(dn_3)\cup_4[\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]+\widetilde{n}_2^2]]
- -\frac14\widetilde{n}_2^2,\\
+ +\frac14\widetilde{n}_2^2,\\
 \mathcal{𝒪}_5^{\rm new}
  &=\mathcal{𝒪}_5^{\rm native}+d_{s_1}B_4,\\
 \mathcal{ℰ}_4^{\rm new}
@@ -101,8 +101,8 @@ B_3^{\mathrm{int}}={}&\tau_\triangle F_5
 
 The two `lambda cup1lambda` terms have canceled as integers. The exact
 identity $`\beta_4^{\uparrow}=\beta_4^{\mathrm{par}}+dR+E`$ and integer cup polarization give
-$`\mathcal O_5^{\mathrm{new}}=\mathcal O_5^{\mathrm{native}}+d_{s_1}B_4^{\mathrm{int}}/4`$ and
-$`\mathcal E_4^{\mathrm{new}}=\mathcal E_4^{\mathrm{native}}+\Delta B_4^{\mathrm{int}}/4-d_{s_1}B_3^{\mathrm{int}}/4`$ before the other displayed
+$`\mathcal O_5^{\mathrm{new}}=\mathcal O_5^{\mathrm{native}}-d_{s_1}B_4^{\mathrm{int}}/4`$ and
+$`\mathcal E_4^{\mathrm{new}}=\mathcal E_4^{\mathrm{native}}-\Delta B_4^{\mathrm{int}}/4+d_{s_1}B_3^{\mathrm{int}}/4`$ before the other displayed
 coordinate changes. All even polarization terms remain in the half-valued
 physical formulas.
 
@@ -149,9 +149,9 @@ Finally let
 \begin{aligned}
 B_3^{\mathrm{ord}}={}&\frac12\big[
  (u\cup_1v+s_1(u\cup_2v))\cup_3(n_3+n'_3)
- +H_3^{\rm pure}[u,v]\big]+\frac14[u\cup_1v]_2,\\
+ +H_3^{\rm pure}[u,v]\big]-\frac14[u\cup_1v]_2,\\
 B_3={}&\frac12(B_3^c-B_3^{c\gamma})
- -\frac14(B_3^{\mathrm{int}}-B_3^{\mathrm{int},\gamma})
+ +\frac14(B_3^{\mathrm{int}}-B_3^{\mathrm{int},\gamma})
  -B_3^{\mathrm{ord}}.
 \end{aligned}
 ```

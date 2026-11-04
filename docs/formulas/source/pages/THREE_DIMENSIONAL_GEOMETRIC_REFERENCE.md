@@ -41,9 +41,8 @@ Majorana laws. Their original projector sequence is retained.
 
 The suffix `old` is confined to this comparison. The main page prints all
 six transported contributions in the current variables. No additional
-phase primitive has to be solved for. This transport is half-valued, so it is
-the same in the physical convention and in the retained complex-conjugate
-orientation of the previous coordinate. Its point-fermion contribution
+phase primitive has to be solved for. This transport is half-valued, so it does
+not depend on the orientation of the phase convention. Its point-fermion contribution
 includes the explicitly displayed face-reference phase; the other two
 CF exchange contributions include their changed output evaluations.
 The remaining three contributions retain their existing coefficient tables.
