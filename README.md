@@ -69,6 +69,10 @@ reductions already incorporated and remaining large blocks; the
 pages are generated from [one maintained source](docs/formulas/source/README.md),
 including shared equations and the programmer translation.
 
+All formula pages use one physical phase convention, unified with the
+published lattice papers and stated once in the
+[guide](docs/FORMULA_GUIDE.md#phase-convention); the
+[changelog](CHANGELOG.md) records the unification.
 Integer lifts, negative carries, local coefficients and cochain representative
 changes are explicit. Source and stacking coordinates must be transported
 together. The complete publication-coordinate implementation covers 3+1D and

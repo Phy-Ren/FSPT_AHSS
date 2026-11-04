@@ -1,5 +1,7 @@
 # Integral quadratic cochains and their stacking polarization
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The fractional Majorana and p+ip obstructions repeatedly contain the same
 quadratic expression in an integer lift carry. Defining this expression
 once exposes the relation between the obstruction and its stacking

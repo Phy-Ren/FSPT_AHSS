@@ -1,5 +1,7 @@
 # Auxiliary phase comparison in 3+1D
 
+**Phase convention:** this page records a retained construction in the complex-conjugate orientation; the [physical convention](../FORMULA_GUIDE.md#phase-convention) is its negative, as stated below.
+
 This retained comparison is evaluated after the current lower-field map
 $`n_3\mapsto\widetilde{n}_3=n_3+\mathcal B_3`$. Its output is
 $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas additionally include

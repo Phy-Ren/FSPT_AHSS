@@ -1,5 +1,7 @@
 # Coefficient indices for the 3+1D obstructions
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The half-source polynomial used to define the final indices below is
 
 ```math

@@ -1,5 +1,7 @@
 # Further formula simplification
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The [Majorana carry reduction](FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
 rewrites its coefficient part exactly. The current
 [phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) transports the complete

@@ -2,6 +2,8 @@
 
 # Physical-face coefficients for canonical 3+1D self-stacking
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This is a retained coefficient/derivation kernel. Its CF input `n3` means the current $`\widetilde{n}_3=n_3+\mathcal B_3`$; its product uses the previous output $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is $`N_3+d\widetilde{n}_2`$. Frozen coefficient values are unchanged.
 
 The input has $`n_1=s_1`$ and satisfies the complete lower equations. Each linked row is one explicitly specified binary product of physical cochain faces on $`(01234)`$. Integer output $`2s_1`$ has not yet been gauged away. No summand or background coefficient is hidden.

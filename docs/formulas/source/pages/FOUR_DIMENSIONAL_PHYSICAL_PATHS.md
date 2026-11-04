@@ -1,5 +1,7 @@
 # Physical face indices in the 4+1D stacking coefficients
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This appendix specifies the finite integer indices of the coefficient
 sum. Every factor is a value of the original physical fields on the
 original simplex $`(012345)`$. The maps below act on vertex numbers.

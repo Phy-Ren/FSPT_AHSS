@@ -2,6 +2,8 @@
 
 # Height-transgression coefficients in 4+1D
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This table specifies the auxiliary height transgression used in the
 [construction](SOURCE_OPERATIONS.md#eq-s5) and its exact comparison check.
 It is not a second reader formula for the intrinsic Majorana obstruction.

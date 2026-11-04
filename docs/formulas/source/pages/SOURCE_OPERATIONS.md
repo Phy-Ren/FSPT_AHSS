@@ -1,5 +1,7 @@
 # Finite cochain formulas for the bosonic obstruction
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This file gives the degree-six cochains used to construct the 4+1D source.
 The auxiliary height transgression below is a construction step; the
 current reader formula uses the compact intrinsic Majorana expression and

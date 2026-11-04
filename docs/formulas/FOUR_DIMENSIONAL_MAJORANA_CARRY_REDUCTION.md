@@ -2,6 +2,8 @@
 
 # Why the complete Majorana carry becomes smaller
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The revised four-dimensional formula is exactly the previous open-cochain
 representative. Its 5,707-term binary carry can be replaced before expanding
 the second binary digit. The result has two half-valued face products,

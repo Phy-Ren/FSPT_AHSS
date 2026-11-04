@@ -2,6 +2,8 @@
 
 # Majorana–p+ip half contribution: terms 201–400
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This page contains **200** of the **1,130** terms in the [complete coefficient set](THREE_DIMENSIONAL_SELF_STACKING_FACES.md#majoranapip-half-contribution). Every row has phase coefficient $`1/2`$.
 
 | Term | Physical face product |

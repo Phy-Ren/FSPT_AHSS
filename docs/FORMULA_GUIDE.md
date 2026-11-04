@@ -2,6 +2,8 @@
 
 # FSPT obstruction functions and stacking twisters
 
+**Phase convention:** one physical convention for all pages, [stated below](#phase-convention).
+
 Each dimension has its own formula reference. Obstructions, general twisters,
 and self-stacking twisters are linked together below; the self-stacking
 formulas live in separate files. The notation is shared, while physical
@@ -17,6 +19,76 @@ fields are defined separately in each dimension.
 explains the hypotheses, complete root relations, and gauge reductions.
 [The simplification record](formulas/SIMPLIFICATION_PROGRESS.md) distinguishes
 reductions already incorporated in these formulas from remaining targets.
+
+<a id="phase-convention"></a>
+
+## Phase convention
+
+All formula pages use one physical phase convention, the one of the
+published fixed-point lattice constructions. It is stated once here.
+
+- **F moves.** The standard forward F move carries $`\nu_{d+1}(01\cdots d{+}1)`$
+  and its inverse carries $`\nu_{d+1}^{-1}`$. The nonstandard move is
+  $`U(g_0)FU(g_0)^\dagger`$, so its scalar is $`\nu_{d+1}^{1-2s_1(g_0)}`$.
+- **Consistency loop.** The faces of the consistency polytope split into
+  the path $`N`$ (even omitted vertex; it contains the nonstandard move) and
+  the path $`D`$ (odd omitted vertex). The Majorana phase is
+  $`\mathcal{𝒪}^\gamma=\langle\psi|(\text{inverse moves of }N\text{, in reverse order})(\text{forward moves of }D)|\psi\rangle`$:
+  forward along $`D`$, then back along $`N`$. With the twisted coboundary
+  this gives $`d_{s_1}\nu_{d+1}=\mathcal{𝒪}_{d+2}`$ without an inverse.
+- **Majorana insertions.** A forward move inserts $`X=P\Gamma`$ ($`\Gamma`$
+  acts first); its inverse inserts $`\bar X=\bar P\Gamma^\dagger`$, with
+  $`\Gamma^\dagger`$ the Hermitian adjoint. The rule is the same in every
+  dimension.
+- **Stacking.** The layer-combining P move carries no scalar, and
+  $`\mathcal V_{d+1}=\nu_{d+1}+\nu'_{d+1}+\mathcal{ℰ}_{d+1}`$. The
+  Majorana stacking phase is the loop $`\bar P`$(initial), $`FF'`$,
+  $`P`$(final), $`\bar F_{\mathrm{tot}}`$, and
+  $`d_{s_1}\mathcal{ℰ}_{d+1}=\mathcal{𝒪}_{d+2}[N]-\mathcal{𝒪}_{d+2}[n]-\mathcal{𝒪}_{d+2}[n']`$.
+- **Coefficients.** Phase coefficients are signed minimal representatives,
+  for example $`-\tfrac14`$ rather than $`\tfrac34`$. Half-valued terms are
+  unchanged under complex conjugation; quarter-, eighth- and
+  sixteenth-valued terms are not.
+- **Occupations.** $`n_d`$ is the physical point-fermion occupation of the
+  original Majorana pairing arrows. The closed-Majorana sector and the
+  lower p+ip layers use it directly. Only the terminal layer with p+ip
+  decoration, in 3+1D and 4+1D, is written in a shifted argument
+  $`\widetilde{n}_d=n_d+R_d`$ with an explicit fixed polynomial $`R_d`$:
+  $`R_3=\widetilde{n}_2\cup_1\widetilde{n}_2`$ in
+  [3+1D](formulas/THREE_DIMENSIONAL.md) and the four-face polynomial
+  $`R_4`$ of the [4+1D pairing reference](formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
+  The phases there are still physical.
+
+For a closed Majorana field $`n_{d-1}`$ the two arguments are related by the
+**bridging identity**
+
+```math
+\mathcal{𝒪}^c[n+\mathrm{Sq}^1n_{d-1}]+\mathcal{𝒪}^{c\gamma}[n+\mathrm{Sq}^1n_{d-1}]
+-\mathcal{𝒪}^c[n]-\mathcal{𝒪}^{c\gamma}[n]
+=2\,\mathcal{𝒪}^\gamma+d_{s_1}\Big(\frac12\,n\cup_{d-1}\mathrm{Sq}^1n_{d-1}\Big),
+\qquad 4\,\mathcal{𝒪}^\gamma=0\pmod 1,
+```
+
+with $`\mathcal{𝒪}^c,\mathcal{𝒪}^{c\gamma},\mathcal{𝒪}^\gamma`$ the closed-sector
+contributions in degree $`d+2`$. Since $`3\,\mathcal{𝒪}^\gamma=-\mathcal{𝒪}^\gamma`$,
+the Majorana contribution enters with the opposite quarter sign when the
+same physical obstruction is written in the shifted argument. The
+[3+1D](formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d) and
+[4+1D](formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d) closed-Majorana sections
+give both forms and the accompanying stacking dictionaries.
+
+**Twisted coefficients of integer terms.** In an integer expression,
+$`[x]_2`$ and a bracket such as $`\widetilde{\omega}_2[n_1]_2`$ denote the
+untwisted zero-or-one lift of a binary value or binary product. Inside
+$`\widetilde{\omega}_2n_1`$ and in the Pontryagin term
+$`\mathcal P_{s_1}(\widetilde{\omega}_2)\cup n_1`$, the integer lift of
+$`\widetilde{\omega}_2`$ instead carries the $`\mathbb Z_{s_1}`$ twist of the
+p+ip field, as specified in [Operations](formulas/OPERATIONS.md#eq-o7).
+
+The retained numerical runtime evaluates fixed compiled programs in its own
+documented coordinates. Their relation to this convention, including the
+complex conjugation of the 3+1D publication programs, is stated in the
+[programmer translation](../formulas/CODE_NOTATION.md#phase-convention-of-the-runtime).
 
 ## Notation
 

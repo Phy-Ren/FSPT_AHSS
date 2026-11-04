@@ -2,6 +2,8 @@
 
 # An exact lower-obstruction organization of 3+1D Majorana self-stacking
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The full open-input Majorana contribution simplifies from 16 to 13 outer
 cochain terms. There are ten half-valued terms and three quarter-valued
 terms. One quarter term contains a whole binary lift with two explicit

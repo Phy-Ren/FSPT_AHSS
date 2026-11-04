@@ -2,6 +2,8 @@
 
 # Formula-to-code translation
 
+**Phase convention:** the formulas use the [physical convention](../docs/FORMULA_GUIDE.md#phase-convention); the runtime paths relate to it as stated [below](#phase-convention-of-the-runtime).
+
 This is the programmer's companion to the
 [formula guide](../docs/FORMULA_GUIDE.md). The mathematical notation is defined
 there; this page translates it into existing API keys, local source variables,
@@ -18,6 +20,30 @@ algorithm or stored classification/stacking result was modified.
 See the [runtime interface](README.md#runtime-interface) for calling conventions
 and the [operation registry](FORMULA_REGISTRY.json) for exact source hashes and
 compiled targets.
+
+<a id="phase-convention-of-the-runtime"></a>
+
+## Phase convention of the runtime
+
+The reader formulas use the [unified physical convention](../docs/FORMULA_GUIDE.md#phase-convention).
+The executable paths relate to it as follows.
+
+| Path | Relation to the displayed physical formulas |
+|---|---|
+| Closed-Majorana programs `majorana_1_*` (2+1D, `fspt/majorana_complete.py`, `fspt/formulas.py`) | Equal. The stacking law contains the lattice term $`-\tfrac14[s_1n_1n'_1]_2`$. |
+| Closed-Majorana programs `majorana_2_*` (3+1D) | Equal; the CF field `c` is the physical occupation $`n_3`$ and the quarter bracket is $`+\tfrac14`$. |
+| Closed-Majorana programs `majorana_3_*` (4+1D) | The obstruction is equal; the CF field `c` is the physical occupation $`n_4`$ and the quarter brackets are $`-\tfrac14`$. The product is the compact closed product, which differs from the displayed closed twister by the explicit output coboundary and phase-coordinate change of the [4+1D section](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m7-4d). Both are the complex conjugates of the earlier $`+\tfrac14`$ forms, so that relation holds with its phase parts negated. |
+| Publication programs, 4+1D (`fspt/data/full_formula`, compiled from `formulas/publication_source`) | Same orientation. The CF slot is the canonical argument $`\widetilde{n}_4=n_4+R_4`$; the documented representative maps below apply. |
+| Publication programs, 3+1D | Complex conjugate. Every phase value is minus the physical value in the same runtime coordinates; binary values are unchanged. Compose with the documented representative maps, whose phase parts change sign in the same way. |
+
+The 3+1D publication programs and their source are retained verbatim, so
+this conjugation is a stated dictionary rather than a recompilation.
+Complex conjugation $`x\mapsto-x`$ is an automorphism of
+$`(\mathbb R/\mathbb Z)_{s_1}`$ that commutes with $`d_{s_1}`$, $`\Delta`$,
+cup products with integer cochains and every gauge action. Applied to all
+obstruction functions, stacking twisters and gauge witnesses at once, it
+maps solutions to solutions and gives the same classification group,
+stacking extension and layer filtration.
 
 ## Exact simplifications in the reader formulas
 
@@ -66,7 +92,7 @@ with `w,s` in `background`.
 |---|---|---|
 | $`n_{d-2}`$ | `n` | Degree $`d-2`$, signed integers with twist $`s_1`$ |
 | $`n_{d-1}`$ | `a` | Degree $`d-1`$, native binary Majorana field |
-| $`\widetilde{n}_3`$ in 3+1D; $`n_4`$ in 4+1D | `c` | Degree $`d`$, binary CF argument of the retained kernel |
+| $`\widetilde{n}_3`$ in 3+1D; $`\widetilde{n}_4=n_4+R_4`$ in 4+1D | `c` | Degree $`d`$, binary CF argument of the retained kernel |
 | $`\omega_2`$ | `w` | Degree two, binary extension cocycle |
 | $`s_1`$ | `s` | Degree one, binary antiunitary cocycle |
 
@@ -199,7 +225,7 @@ The former source-sum names are now expanded in the
 
 | Existing local or former formula name | Location in the expanded formula |
 |---|---|
-| Local `H`, former $`\mathcal A_6`$ | The sum of the half-valued physical contributions, including $`\mathrm{Sq}^2n_4+\omega_2n_4`$ |
+| Local `H`, former $`\mathcal A_6`$ | The sum of the half-valued physical contributions, including $`\mathrm{Sq}^2\widetilde{n}_4+\omega_2\widetilde{n}_4`$ |
 | Former $`\mathcal H_6`$ | The half-valued Majorana, p+ip, and mixed contributions after subtracting those complex-fermion terms |
 | Local `Q`, former $`\mathcal Q_6`$ | All quarter-valued source terms, including the separately displayed subtraction |
 | `cartan_word`, former $`\mathcal C_6`$ | The complete reduced background-and-digit polynomial in that subtraction |
@@ -216,7 +242,7 @@ source additionally retains $`n_2^3/12`$.
 ## 3+1D parameter fields
 
 The current physical $`3+1`$D fields are $`n_1,\widetilde{n}_2,n_3`$.
-The retained parameter construction takes $`\widetilde{n}_3=n_3+\mathcal B_3`$
+The retained parameter construction takes $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$
 in its CF slot and the previous product output $`\widetilde{N}_3+d\mathcal B_2`$.
 Its raised fields are defined in
 [T3a–T3c](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3b):
@@ -274,11 +300,14 @@ $`q=1,2,3`$ denotes the Majorana degree and spatial dimension is $`q+1`$.
 | `operator_gauge(c)` | $`\tfrac12n_{q+1}\cup_{q+1}dn_{q+1}`$ |
 
 The coordinate string `operator` selects the reader's displayed phase
-source and product in the [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d),
-[3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d), and
-[4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d) sections.
-The existing `ca` target remains unchanged and is the coordinate denoted
-by the superscript `old` there. Recover it by subtracting the displayed
+source and product in the [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d) and
+[3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d) sections, and the displayed
+source in the [4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d) section;
+the 4+1D product is related as stated in the table above. All three degrees
+follow the [phase convention](#phase-convention-of-the-runtime): the `ca`
+targets for $`q=1`$ contain the lattice term $`-\tfrac14[s_1n_1n'_1]_2`$, and
+those for $`q=3`$ are the complex conjugates of the earlier $`+\tfrac14`$ law.
+The `ca` target is the coordinate denoted by the superscript `old` there. Recover it by subtracting the displayed
 single-state rephase from the source and its full stacking change from
 the product: [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-2d),
 [3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12), and

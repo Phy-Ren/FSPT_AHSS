@@ -1,5 +1,7 @@
 # Complete root self-stacking in 3+1D
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This page stacks two identical **complete states**, including the complex-fermion
 completion and bosonic phase. The lower fields obey the obstruction equations
 in [the 3+1D reference](THREE_DIMENSIONAL.md). The coordinate convention is

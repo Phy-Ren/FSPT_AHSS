@@ -1,5 +1,7 @@
 # Self-stacking in 4+1D with no p+ip decoration
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 Take a complete state with $`n_2=0`$, closed binary Majorana cochain
 $`n_3`$, complex-fermion cochain $`n_4`$ satisfying
 $`dn_4=\mathcal{𝒪}_5^\gamma[n_3]`$, and phase $`\nu_5`$

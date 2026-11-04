@@ -2,6 +2,8 @@
 
 # Self-stacking in 3+1D with no p+ip decoration
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The current complex-fermion coordinate is the geometric pairing occupation.
 Use $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$ in the phase blocks below.
 The point-fermion phase includes $`(\omega_2n_2+n_2^2)/2`$ from the output reference conversion.

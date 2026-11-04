@@ -1,5 +1,7 @@
 # Fermionic coboundary and stacking
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 Fermionic coboundary and stacking constrain the formulas in adjacent
 dimensions. In coordinates where the two constructions commute as
 cochains, their phase identity is

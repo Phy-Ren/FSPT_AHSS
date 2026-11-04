@@ -1,5 +1,7 @@
 # Physical pairings and the canonical 4+1D formulas
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The single-layer construction retains the original ordinary Majorana pairings.
 Its five positions, in cyclic order, are
 `0123 B, 0134 B, 1234 B, 0124 A, 0234 A`.

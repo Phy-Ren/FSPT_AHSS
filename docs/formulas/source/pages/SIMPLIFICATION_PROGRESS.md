@@ -1,5 +1,7 @@
 # Formula simplification: incorporated results and remaining work
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The 2026-10-09 geometric pairing update changes the current 3+1D CF product to ten distributed lower-operation terms (two Majorana, five mixed, three pure sheet), and its diagonal to five. The terminal coefficient corpus below is retained; its previous total counts do not include the explicitly printed current coordinate/face-phase transport. The full current formula is the six transported blocks on the 3+1D page, with the shifted CF field and finite B2 phase.
 
 The [guide](../FORMULA_GUIDE.md) links the current obstruction, general

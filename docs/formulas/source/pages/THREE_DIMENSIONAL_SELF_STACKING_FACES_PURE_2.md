@@ -1,5 +1,7 @@
 # Pure p+ip half contribution: terms 201–244
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This page contains **44** of the **244** terms in the [complete coefficient set](THREE_DIMENSIONAL_SELF_STACKING_FACES.md#pure-pip-half-contribution). Every row has phase coefficient $`1/2`$.
 
 | Term | Physical face product |

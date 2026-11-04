@@ -2,6 +2,8 @@
 
 # Archived face expansion of the 4+1D Majorana stacking formula
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This is the previous fully expanded carry, retained for exact verification.
 The [current principal formula](FOUR_DIMENSIONAL.md) replaces it by an
 integer-carry identity, with **482 outer addends and 624 explicit expression

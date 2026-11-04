@@ -1,5 +1,7 @@
 # Closed Majorana obstructions and stacking twisters
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 Read the complete section for the physical dimension:
 [2+1D](#majorana-2d), [3+1D](#majorana-3d), or [4+1D](#majorana-4d).
 The [1+1D fMPS endpoint](#fmps-1d) is stated separately.

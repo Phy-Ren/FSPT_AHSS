@@ -2,6 +2,8 @@
 
 # Physical coefficients of the 4+1D p+ip source
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The binary cochain $`y_6`$ in the bosonic obstruction contains exactly
 **623,880 distinct physical face monomials**. The
 [complete coefficient table](coefficients/FOUR_DIMENSIONAL_Y6_FACES.json)

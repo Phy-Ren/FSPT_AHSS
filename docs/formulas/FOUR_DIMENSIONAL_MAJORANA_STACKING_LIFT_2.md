@@ -2,6 +2,8 @@
 
 # Majorana canonical lift 2
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 Return to the [four-lift definition](FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md). Reduce this entire polynomial modulo two before taking its canonical integer value.
 
 ## Row 2: coefficient -1, 15 terms

@@ -1,5 +1,7 @@
 # Recovering the stacking group from root powers
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 An abelian stacking group can be reconstructed from the power of each
 cyclic filtration generator, provided the result is known as a complete
 element of the lower group. A generator's order alone is insufficient.

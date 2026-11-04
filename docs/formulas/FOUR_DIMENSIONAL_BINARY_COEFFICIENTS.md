@@ -2,6 +2,8 @@
 
 # Physical coefficient indices for the 4+1D half-valued terms
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This appendix gives the retained coefficient construction for the mixed
 Majorana–p+ip and pure p+ip sums of the 4+1D stacking formula. The
 previously designated Majorana coefficient is also specified here as the

@@ -2,6 +2,8 @@
 
 # Ordinary MS coefficients for 4+1D Majorana self-stacking
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The sum in the [self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md) contains **187 terms**. Each word specifies one standard MS operation on the ordered physical inputs above it. The reduction uses the exact open-cochain identity $`[\beta^-\widetilde{n}_3]_2=\mathrm{Sq}^1\widetilde{n}_3`$ and closed backgrounds. It does not assume $`d\widetilde{n}_3=0`$ and changes no representative.
 
 ```math

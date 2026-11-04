@@ -1,5 +1,7 @@
 # Complete 4+1D self-stacking, including p+ip decoration
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 These formulas give the square of a complete lifted state
 $`(n_2,\widetilde{n}_3,n_4,\nu_5)`$. Every stacking twister and
 coefficient set on this page is specialized to two copies of that same

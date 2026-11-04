@@ -6,7 +6,11 @@ explicit finite operations. The [operation registry](FORMULA_REGISTRY.json)
 connects its equation labels to source files and compiler targets.
 All field-name translations are in the separate
 [formula-to-code dictionary](CODE_NOTATION.md). This page describes the
-implementation entry points and calling conventions.
+implementation entry points and calling conventions. The guide fixes one
+[physical phase convention](../docs/FORMULA_GUIDE.md#phase-convention); the
+[runtime dictionary](CODE_NOTATION.md#phase-convention-of-the-runtime) states how
+each compiled path relates to it, including the complex conjugation of the
+retained 3+1D publication programs.
 
 The complete 3+1D and 4+1D engine evaluates every supplied obstruction and stacking
 correction. This directory supplies the readable definitions used to compile the

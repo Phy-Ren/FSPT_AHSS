@@ -1,5 +1,7 @@
 # Whole canonical lifts in 4+1D Majorana self-stacking
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The last sum in the [Majorana self-stacking phase](FOUR_DIMENSIONAL_SELF_STACKING.md) has four rows with signs $`+,-,-,+`$. Each displayed binary sum is reduced as a whole before its canonical integer value enters the quarter-valued phase.
 
 ## Row 1

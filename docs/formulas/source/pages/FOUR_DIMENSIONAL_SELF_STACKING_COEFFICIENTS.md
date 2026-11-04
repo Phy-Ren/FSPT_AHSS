@@ -1,5 +1,7 @@
 # Complete coefficient data for 4+1D self-stacking
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The [complete self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md)
 retains two large, fully specified binary coefficient sums. They are
 specializations of the completed general stacking expression: both input

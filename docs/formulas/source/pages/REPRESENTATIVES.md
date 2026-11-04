@@ -1,5 +1,7 @@
 # Changes of cochain representative
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 All changes here act on the source and stacking correction together.
 
 ## 3+1D: physical terminal formulas

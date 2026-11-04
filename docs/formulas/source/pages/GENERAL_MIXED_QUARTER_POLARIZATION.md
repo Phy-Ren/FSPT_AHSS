@@ -1,5 +1,7 @@
 # Polarization of the binary Majorana stacking carry
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 For arbitrary binary degree-three cochains, the cochain cup identity gives
 
 {{equation:general-mixed-quarter-polarization--polarization-of-the-binary-majorana-stacking-carry--1}}

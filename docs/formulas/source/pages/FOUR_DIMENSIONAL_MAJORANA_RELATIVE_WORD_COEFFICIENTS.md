@@ -1,5 +1,7 @@
 # Relative Majorana–p+ip coefficients in 4+1D
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The index set $`\mathcal I_6^{\gamma\psi}`$ in the [bosonic obstruction](FOUR_DIMENSIONAL.md#eq-t4) consists of the following blocks. Each displayed word is evaluated once on its ordered argument tuple, with coefficient one modulo two.
 
 There are **1,897 ordinary MS terms**. The cochains $`\widetilde{n}_3`$ and $`d\widetilde{n}_3`$ have degrees three and four; the latter is the already defined lower obstruction $`\widetilde{\mathcal{𝒪}}_4`$. The backgrounds are closed. The complete finite sum is a relative correction: it vanishes when $`d\widetilde{n}_3=0`$, although this cancellation need not occur within each individual word.

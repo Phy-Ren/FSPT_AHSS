@@ -1,5 +1,7 @@
 # Cartan–Adem Majorana phase in 4+1D
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The pure Majorana contribution has one formula for arbitrary binary
 three-cochain input. Turning on the integer decoration changes its lower
 differential and introduces the accompanying mixed contribution; it does

@@ -2,6 +2,8 @@
 
 # Finite binary transfer in the 4+1D product
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This appendix retains the construction of the binary five-cochain $`Z_5`$ in the supplied 4+1D product. Its complete physical-face expansion and three physical parts are now given in the [coefficient appendix](FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md). The [current full stacking formula](FOUR_DIMENSIONAL.md#eq-t4c) also applies the paired complex-fermion phase map stated in [Representatives](REPRESENTATIVES.md#operator-phase-4d). The inputs are
 $`(n_2,\widetilde{n}_3)`$ and $`(n'_2,\widetilde{n}'_3)`$, with common backgrounds
 $`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,\widetilde{N}_3`$ are the output. Binary reductions and tildes have the same meanings as in the guide. In integer

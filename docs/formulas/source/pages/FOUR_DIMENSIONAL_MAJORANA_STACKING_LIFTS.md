@@ -1,5 +1,7 @@
 # Canonical lifts in the 4+1D Majorana stacking formula
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The four rows below define the finite list $`\mathcal J_5^\gamma`$. In each row, add its listed products over $`\mathbb Z_2`$, take the canonical integer lift of that **whole** binary sum, and then apply the indicated sign. The four lift interiors contain **5, 15, 10, and 116 terms**, respectively: **146 explicit products** in total.
 
 The [machine-readable table](coefficients/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.json) contains exactly the same products. Its serialized field labels retain the historical `B` names, decoded in [Code notation](CODE_NOTATION.md#shared-source-and-41d-residuals); the equations here use $`\beta_4`$. The [standalone replay](coefficients/verify_majorana_carry_reduction.py) compares the replacement with the archived 5,707-term coefficient using only public files and Python’s standard library.

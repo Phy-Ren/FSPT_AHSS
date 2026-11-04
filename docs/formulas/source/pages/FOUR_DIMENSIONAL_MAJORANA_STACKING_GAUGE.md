@@ -1,5 +1,7 @@
 # Output coboundary in the 4+1D Majorana stacking formula
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 This intermediate output-gauge step precedes the current [compact-Majorana phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md). Its explicit expression rewrites the previously designated Majorana
 cochain contribution. No summand is moved to another contribution,
 including terms containing the Majorana differential.

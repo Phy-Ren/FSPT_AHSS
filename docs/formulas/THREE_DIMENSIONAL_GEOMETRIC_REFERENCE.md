@@ -2,6 +2,8 @@
 
 # Geometric pairing coordinate in 3+1D
 
+**Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
+
 The current reference uses the original Majorana arrows on every ordinary
 component and the same single-layer rule for both inputs and the output.
 The direct parity count is the current O4 and E3 in
