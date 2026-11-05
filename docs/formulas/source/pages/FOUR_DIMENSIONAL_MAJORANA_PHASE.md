@@ -156,5 +156,7 @@ checked on its own six-simplex. The stacking law of the complete formulas
 (operator coordinate) agrees with this microscopic stacking phase up to
 $`B_5^\gamma[N]-B_5^\gamma[n]-B_5^\gamma[n']+d_{s_1}\sigma_4`$. Here $`\sigma_4`$ is a
 local four-face function of $`n_3,n'_3,n_4,n'_4,\omega_2(012),s_1(01),s_1(02)`$,
-and the agreement holds on all 8,388,608 rows. The microscopic tables
-themselves are not part of this repository.
+and the agreement holds on all 8,388,608 rows. The lattice programs, the
+construction they implement and all of these checks are in
+[lattice/majorana_phase_4d](../../lattice/majorana_phase_4d/README.md); the tables are
+regenerated there and compared with stored SHA-256 sums.

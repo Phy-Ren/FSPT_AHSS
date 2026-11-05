@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-11-05: lattice Majorana phases of 4+1D
+
+[lattice/majorana_phase_4d](lattice/majorana_phase_4d/README.md) computes the
+heptagon phase $\mathcal O_6^\gamma$ and the stacking phase $\mathcal E_5^\gamma$
+from the fixed-point lattice construction, for every local configuration with
+general $\omega_2,s_1$, by an exact Gauss-sum evaluation of the projector words.
+
+- One insertion rule for F and $\mathcal P$ moves: the first Majorana of a fixed
+  priority list on each parity-changing transition loop, acting in priority order.
+- The stacking compatibility holds on all $2^{23}$ rows; both phases agree with
+  `majorana_complete` (operator coordinate) up to the local $B_5^\gamma$ and
+  $\sigma_4$ stored with the programs.
+
 ## 2026-11-04: phase convention unified with the published lattice papers
 
 All formula pages, manuscript exports and evaluators use one phase convention,

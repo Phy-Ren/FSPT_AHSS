@@ -8,6 +8,7 @@ representatives. Independent symmetry backgrounds can run in parallel.
 - **[Computed examples](results/computed_examples/README.md):** all completed
   examples in one catalogue, organized by dimension, symmetry family and use.
 - **[General finite Abelian classification in 4+1D](results/finite_abelian_4d_20261026/README.md):** closed formulas for arbitrary cyclic orders and rank, with a direct evaluator, symbolic proofs and independent cochain checks.
+- **[Lattice Majorana phases in 4+1D](lattice/majorana_phase_4d/README.md):** the heptagon and stacking Berry phases computed from the lattice construction for all configurations, with the checks against the formulas.
 - **[Formula guide](docs/FORMULA_GUIDE.md):** one notation system for the complete
   3+1D and 4+1D obstruction and stacking formulas, with explicit definitions of
   the operations and coefficients.
