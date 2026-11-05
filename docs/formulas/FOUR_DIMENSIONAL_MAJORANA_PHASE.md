@@ -176,8 +176,10 @@ carries $`\nu_5`$, the heptagon loop runs forward along the three moves with odd
 omitted vertex ($`012346,012456,023456`$) and back along the four moves with
 even omitted vertex, and the inserted Majoranas act as $`X=P\Gamma`$ on forward
 moves and $`\bar X=\bar P\Gamma^\dagger`$ on inverse moves, with
-$`\Gamma=g_{1235A}^{\,d}g_{0123B}^{\,c}g_{1234B}^{\,b}g_{2345B}^{\,a}`$. The
-microscopic heptagon phase then satisfies, pointwise,
+$`\Gamma=g_{1235A}^{\,d}g_{0123B}^{\,c}g_{1234B}^{\,b}g_{2345B}^{\,a}`$. On every
+parity-changing transition loop the first of $`g_{2345B},g_{1234B},g_{0123B},g_{1235A}`$
+lying on the loop is inserted; the rule covers every loop. The microscopic
+heptagon phase then satisfies, pointwise,
 
 ```math
 \mathcal O_6^\gamma=\mathcal O_{\mathrm{CA}}+d_{s_1}B_5^\gamma,
@@ -186,18 +188,21 @@ microscopic heptagon phase then satisfies, pointwise,
 where $`\mathcal O_{\mathrm{CA}}`$ is the
 [closed-Majorana Cartan–Adem polynomial](MAJORANA_AND_ENDPOINTS.md#eq-m4-4d),
 with quarter-valued bracket $`-1/4`$, and $`B_5^\gamma`$ is the explicit local
-phase-reference cochain obtained with the microscopic tables. The identity
-holds row by row on all 1,048,576 rows with $`\omega_2=s_1=0`$ and on 20,000
-random rows with general closed $`\omega_2,s_1`$. The $`n_2=0`$ restriction of
-the terminal formula agrees with the microscopic phase on 4,000 of 4,000 rows.
+phase-reference cochain obtained with the microscopic tables. The microscopic
+table has 33,554,432 rows ($`n_3`$ with general closed $`\omega_2,s_1`$). The
+identity holds on all of them: it is checked directly on 30,000 random
+configurations and holds row by row through the exact rephasing of the F move
+relative to the earlier table.
 
-With the same moves and insertions, the microscopic stacking amplitudes
-($`\omega_2=s_1=0`$) and the root complex-fermion twisters satisfy
-$`d(\mathcal{ℰ}^c+\mathcal{ℰ}^{c\gamma}+\mathcal{ℰ}^\gamma)
-=\mathcal O_6[N]-\mathcal O_6[n]-\mathcal O_6[n']`$ pointwise on 19,988 of 20,000
-random configurations on the six-simplex. Each of the other 12 involves a
-stored row excluded by the internal audit of that table. At $`n_2=0`$ the
-stacking law of the complete formulas agrees with this microscopic stacking
-phase up to $`d\sigma_4`$ of a local four-face function (2,500
-configurations). The microscopic tables themselves are not part of this
-repository.
+The stacking amplitudes use the same F moves. The $`\mathcal P`$ moves use the same
+rule with the candidates $`g'_{1234B},g'_{0134B},g'_{0124A}`$, acting in this
+order. With the root complex-fermion twisters,
+$`d_{s_1}(\mathcal{ℰ}^c+\mathcal{ℰ}^{c\gamma}+\mathcal{ℰ}^\gamma)
+=\mathcal O_6[N]-\mathcal O_6[n]-\mathcal O_6[n']`$ holds pointwise for every one
+of the 8,388,608 stacking rows with general closed $`\omega_2,s_1`$. Each row is
+checked on its own six-simplex. The stacking law of the complete formulas
+(operator coordinate) agrees with this microscopic stacking phase up to
+$`B_5^\gamma[N]-B_5^\gamma[n]-B_5^\gamma[n']+d_{s_1}\sigma_4`$. Here $`\sigma_4`$ is a
+local four-face function of $`n_3,n'_3,n_4,n'_4,\omega_2(012),s_1(01),s_1(02)`$,
+and the agreement holds on all 8,388,608 rows. The microscopic tables
+themselves are not part of this repository.
