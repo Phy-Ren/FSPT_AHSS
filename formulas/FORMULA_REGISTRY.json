@@ -247,7 +247,7 @@
         },
         {
           "path": "fspt/full_formula/runtime.py",
-          "sha256": "5ba22812b5c59cbd65418c3237470866c04f567ecc0a437e320dd6366a2e75eb"
+          "sha256": "b927b0ca7a0dcc286283827d02793993b005073df24016e1a73d36964c6cbcb8"
         }
       ],
       "compiled_targets": [
@@ -255,7 +255,7 @@
         "lift3_product",
         "high6"
       ],
-      "description": "Six interval paths and fifteen triangle paths, with complete explicit fermion fills. The backend returns minus these parameter integrals, the physical 3+1D phases."
+      "description": "Six interval paths and fifteen triangle paths, with complete explicit fermion fills; parameter orientation of Operations (O8)."
     },
     {
       "id": "integer.d4.terminal_source",
@@ -280,7 +280,7 @@
         },
         {
           "path": "fspt/full_formula/runtime.py",
-          "sha256": "5ba22812b5c59cbd65418c3237470866c04f567ecc0a437e320dd6366a2e75eb"
+          "sha256": "b927b0ca7a0dcc286283827d02793993b005073df24016e1a73d36964c6cbcb8"
         }
       ],
       "compiled_targets": [
@@ -371,7 +371,7 @@
         },
         {
           "path": "fspt/full_formula/runtime.py",
-          "sha256": "5ba22812b5c59cbd65418c3237470866c04f567ecc0a437e320dd6366a2e75eb"
+          "sha256": "b927b0ca7a0dcc286283827d02793993b005073df24016e1a73d36964c6cbcb8"
         }
       ],
       "compiled_targets": [
@@ -402,9 +402,6 @@
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-4d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m4-4d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m5-4d",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-source-2d",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-source",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-source-4d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m2-gamma-2d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m2-gamma",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m2-gamma-4d"
@@ -451,9 +448,6 @@
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-4d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m7-4d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m8-4d",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-stacking-2d",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-stacking",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-stacking-4d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1-2d",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1",
         "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m1-4d",
@@ -492,13 +486,13 @@
         3,
         4
       ],
-      "coordinate": "closed-majorana-ca-to-operator",
+      "coordinate": "closed-majorana-operator",
       "inputs": "a,c;w,s and pair",
-      "outputs": "paired source/product transport",
+      "outputs": "displayed phase source and product",
       "equations": [
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-2d",
-        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-4d"
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-2d",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3",
+        "docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m3-4d"
       ],
       "source_files": [
         {
@@ -514,7 +508,7 @@
         "majorana_3_obstruction_operator",
         "majorana_3_stacking_operator"
       ],
-      "description": "Reader-default operator phase coordinate; exact paired map and inverse to the unchanged ca runtime targets."
+      "description": "Reader-default operator phase coordinate: the displayed closed-Majorana source and product."
     },
     {
       "id": "endpoint.d1.fmps",

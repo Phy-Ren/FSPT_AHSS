@@ -301,7 +301,10 @@ class Compiler:
             fields = lower.fields_on_triangle(*self.fields(1,pair=True))
             parameter, base = (0,1,2), tuple(range(5))
         outputs, calls = [], []
-        for path, sign in prism.shuffles(parameter,base):
+        # The 3+1D source and product integrate over the interval and the
+        # triangle with orientation epsilon=-1 (formula Operations, O8).
+        for path, shuffle_sign in prism.shuffles(parameter,base):
+            sign = -shuffle_sign
             start = len(outputs)
             for x in fields:
                 outputs.extend(x(tuple(path[i] for i in face))

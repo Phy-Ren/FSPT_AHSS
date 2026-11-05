@@ -203,10 +203,13 @@ $`\mathop{\mathrm{inv}}\nolimits(P)`$ count base steps preceding parameter steps
 **(O8)**
 
 ```math
-(\tau_T Q)(f)=\sum_{|P|=r}(-1)^{\mathop{\mathrm{inv}}\nolimits(P)}
+(\tau_T Q)(f)=\epsilon_T\sum_{|P|=r}(-1)^{\mathop{\mathrm{inv}}\nolimits(P)}
  Q(\sigma_P(T,f)).
 ```
 
+Here $`\epsilon_T=\pm1`$ is the orientation of $`T`$. The interval $`I`$ and the
+triangle $`\triangle`$ of the 3+1D source and product carry $`\epsilon=-1`$; every
+other use of (O8) has $`\epsilon=+1`$.
 Pull each cochain along its own projection, retaining coefficient
 transports in each operation. All summands begin over the same base vertex,
 so no additional transport is inserted between summands. The $`3+1`$D source

@@ -11,9 +11,9 @@ No external source package is imported by the runtime. All required DAGs are in
 `fspt/data/full_formula/`. The readable compiler input is included in
 `formulas/publication_source/`; the [reproduction guide](../../PUBLIC_RELEASE.md)
 contains build and verification commands. Every phase output is in the
-[physical convention](../../docs/FORMULA_GUIDE.md#phase-convention); for 3+1D the
-backend applies the orientation sign of the parameter integration, as stated in
-the [runtime dictionary](../../formulas/CODE_NOTATION.md#phase-convention-of-the-runtime).
+[phase convention](../../docs/FORMULA_GUIDE.md#phase-convention); the 3+1D
+parameter integration uses the orientation of
+[Operations (O8)](../../docs/formulas/OPERATIONS.md#eq-o8).
 
 The optional native evaluator uses exact signed integers with checked overflow
 and an arbitrary-precision Python fallback. Required nonintegral divisions fail

@@ -3,10 +3,9 @@
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
 This is a retained coefficient/derivation kernel. Its CF input `n3` means the current `check n3=n3+check n2 cup1 check n2`; its product uses the previous output `check N3+dB2`. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is `N3+d check n2`. Frozen coefficient values are unchanged.
-The degree-six source below is the physical 4+1D terminal source evaluated on
-auxiliary fields; the 3+1D phases are minus its parameter integrals, as in (T3)
-and (T3 product). The frozen source of the archived results integrated with the
-opposite sign.
+The degree-six source below is the 4+1D terminal source evaluated on
+auxiliary fields; (T3) and (T3 product) integrate it over the interval and the
+triangle with the orientation fixed in (O8).
 
 This file records the finite construction in the supplied terminal phase coordinate. The [current physical formulas](THREE_DIMENSIONAL.md#three-dimensional) use the explicit [paired phase change](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md). Throughout this construction, the unqualified obstruction and stacking symbols refer to the supplied coordinate; apply that map and its output coboundary to compare with the guide.
 All parameter fields below are auxiliary mathematical cochains. Their degrees
@@ -65,9 +64,7 @@ $`\mathop{\mathrm{ev}}\nolimits_4=\tau_\triangle`$ for stacking. Both act on
 a degree-six cochain. The subscript gives the output degree: the first
 uses the six signed paths on an interval times a five-simplex; the second
 uses the fifteen signed paths on a triangle times a four-simplex. Their
-orientations and coefficient transports are exactly (O8). The physical 3+1D
-phases are $`-\mathop{\mathrm{ev}}\nolimits_5`$ and $`-\mathop{\mathrm{ev}}\nolimits_4`$
-of the degree-six source.
+orientations and coefficient transports are exactly (O8).
 
 The upward marks identify components of the **fixed lift of the complete
 physical input**. The obstruction lift uses one input, whereas the stacking
@@ -175,14 +172,13 @@ The extra integer terms have the exact signed transgressions
 
 | Auxiliary term | $`\tau_I`$ | $`\tau_\triangle`$ |
 |---|---|---|
-| $`\mathcal P_{s_1}(\widetilde{\omega}_2)n_2^J`$ | $`\mathcal P_{s_1}(\widetilde{\omega}_2)n_1`$ | $`0`$ |
-| $`\widetilde{\omega}_2(n_2^J)^2`$ | $`0`$ | $`-\widetilde{\omega}_2 n_1n'_1`$ |
+| $`\mathcal P_{s_1}(\widetilde{\omega}_2)n_2^J`$ | $`-\mathcal P_{s_1}(\widetilde{\omega}_2)n_1`$ | $`0`$ |
+| $`\widetilde{\omega}_2(n_2^J)^2`$ | $`0`$ | $`\widetilde{\omega}_2 n_1n'_1`$ |
 | $`(n_2^J)^3`$ | $`0`$ | $`0`$ |
 
 These identities use the displayed interval/triangle fields and the fixed
 coefficient transport, so the compact pair includes all fractional terms.
-With the overall sign of (T3) and (T3 product) they give
-$`-\tfrac1{16}\mathcal P_{s_1}(\widetilde{\omega}_2)n_1`$ in $`\mathcal{𝒪}_5`$ and
+They give $`-\tfrac1{16}\mathcal P_{s_1}(\widetilde{\omega}_2)n_1`$ in $`\mathcal{𝒪}_5`$ and
 $`+\tfrac18\widetilde{\omega}_2n_1n'_1`$ in $`\mathcal{ℰ}_4`$.
 
 The operations $`T_6,y_6`$ are the finite operations of

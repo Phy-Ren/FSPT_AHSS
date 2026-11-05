@@ -29,36 +29,25 @@ The reader formulas and every executable path use the
 [unified physical convention](../docs/FORMULA_GUIDE.md#phase-convention).
 Their representatives and coordinates are related as follows.
 
-| Path | Relation to the displayed physical formulas |
+| Path | Relation to the displayed formulas |
 |---|---|
 | Closed-Majorana programs `majorana_1_*` (2+1D, `fspt/majorana_complete.py`, `fspt/formulas.py`) | Equal. The stacking law contains the lattice term $`-\tfrac14[s_1n_1n'_1]_2`$. |
-| Closed-Majorana programs `majorana_2_*` (3+1D) | Equal; the CF field `c` is the physical occupation $`n_3`$ and the quarter bracket is $`+\tfrac14`$. |
-| Closed-Majorana programs `majorana_3_*` (4+1D) | The obstruction is equal; the CF field `c` is the physical occupation $`n_4`$ and the quarter brackets are $`-\tfrac14`$. The product is the compact closed product, which differs from the displayed closed twister by the explicit output coboundary and phase-coordinate change of the [4+1D section](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m7-4d). That comparison is stated in the same convention. |
-| Publication programs, 4+1D (`fspt/data/full_formula`, compiled from `formulas/publication_source`) | Same convention. The CF slot is the canonical argument $`\widetilde{n}_4=n_4+R_4`$; the documented representative maps below apply. |
-| Publication programs, 3+1D | Same convention. `Backend` returns the 3+1D phases as minus the parameter integrals of the shared degree-six source, exactly as in the [finite construction](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md) (`physical3` in `fspt/full_formula/runtime.py`); this applies to the source, the product and both gauge corrections. The CF slot is $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$, and the documented representative maps below apply. |
+| Closed-Majorana programs `majorana_2_*` (3+1D) | Equal; the CF field `c` is the physical occupation $`n_3`$. |
+| Closed-Majorana programs `majorana_3_*` (4+1D) | The obstruction is equal; the CF field `c` is the physical occupation $`n_4`$. The product is the compact closed product, which differs from the displayed closed twister by the explicit [output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md) and the [phase change](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_PHASE.md). |
+| Publication programs, 4+1D (`fspt/data/full_formula`, compiled from `formulas/publication_source`) | Equal up to the documented representative maps below; the CF slot is the terminal argument $`\widetilde{n}_4=n_4+R_4`$. |
+| Publication programs, 3+1D | Equal up to the documented representative maps below; the CF slot is $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$. The source and product are the parameter integrals of the [finite construction](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md), with the orientation of [(O8)](../docs/formulas/OPERATIONS.md#eq-o8) recorded in the call signs of `lift3_source` and `lift3_product`. |
 
-The compiled programs are unchanged and still compile identically from the
-retained readable source; the orientation sign of the 3+1D parameter
-integration is applied once, in the backend. No routine of the complete GAP
-engine computes a 3+1D
-phase of denominator four, eight or sixteen itself: every such value reaches
-the group engine through this backend, and the native GAP shortcuts with
-quarter- or finer-valued phases (`AFSFullCubePrimitive`,
-`AFSFullBinaryPrimitive`, `AFSFullCFSquareLift`, `AFSFullCharacterMCLift`)
-act only in 4+1D. The native 3+1D shortcut `AFSFullClosedCFSource3` is
-half-valued. The earlier campaign engine (`gap/classification.g` with the
-generated formula data and the p+ip O5 programs `gap/pip_o5_*.g`) is not used
-by the complete engine; it is kept only to replay archived campaigns, whose
-results record their own frozen sources, and it is not converted.
+No routine of the complete GAP engine computes a 3+1D phase of
+denominator four, eight or sixteen itself: every such value reaches the
+group engine through the backend. The native GAP shortcuts with quarter- or
+finer-valued phases (`AFSFullCubePrimitive`, `AFSFullBinaryPrimitive`,
+`AFSFullCFSquareLift`, `AFSFullCharacterMCLift`) act only in 4+1D, and the
+native 3+1D shortcut `AFSFullClosedCFSource3` is half-valued. The earlier
+campaign engine (`gap/classification.g` with the generated formula data and
+the p+ip O5 programs `gap/pip_o5_*.g`) is not used by the complete engine; it
+is kept only to replay archived campaigns.
 
-Archived results keep the frozen source snapshots recorded with them, which
-evaluate the 3+1D phases with the opposite orientation (their complex
-conjugates). They remain reproducible as historical records from those
-snapshots. Complex conjugation $`x\mapsto-x`$ is an automorphism of
-$`(\mathbb R/\mathbb Z)_{s_1}`$ that commutes with $`d_{s_1}`$, $`\Delta`$,
-cup products with integer cochains and every gauge action, so both
-evaluations give the same classification groups, stacking extensions and
-layer filtrations.
+Archived results keep the frozen sources recorded with them.
 
 ## Exact simplifications in the reader formulas
 
@@ -194,7 +183,7 @@ and four, even when constructed from a physical $`3+1`$D input.
 The following names belong to the shared six-cochain source or the $`4+1`$D
 product. Their current definitions are [S1–S3](../docs/formulas/FOUR_DIMENSIONAL.md#eq-s1)
 and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a), with the
-[earlier coordinate map](../docs/formulas/REPRESENTATIVES.md#eq-t4e) kept separately.
+[source coordinate of the retained construction](../docs/formulas/REPRESENTATIVES.md#eq-t4e) kept separately.
 
 | Readable-source name or former formula label | Current mathematical expression |
 |---|---|
@@ -291,9 +280,9 @@ explicit sixteenth-valued source and negative eighth-valued product in
 the reader guide; they are not omitted.
 The former $`D_3`$ and $`g_2`$ are expanded directly
 in those retained parameter fields. This statement precedes the current
-geometric conversion, which must also be applied as specified above. The older fermion-coordinate change, formerly $`\kappa_3`$, is written $`\mathcal B_3^{\mathrm{ref}}`$.
-The older coordinate change must be applied to its source and product
-together; it is not implied by renaming `c` to $`n_3`$.
+geometric conversion, which must also be applied as specified above. The [complex-fermion coordinate of the retained construction](../docs/formulas/REPRESENTATIVES.md#eq-t3d),
+formerly written with $`\kappa_3`$, uses $`\mathcal B_3^{\mathrm{ref}}`$. It must be applied to
+its source and product together; it is not implied by renaming `c` to $`n_3`$.
 
 ## Closed-Majorana and fMPS backends
 
@@ -314,21 +303,15 @@ $`q=1,2,3`$ denotes the Majorana degree and spatial dimension is $`q+1`$.
 | `gamma(a,w,s)` | Pure Majorana source $`\mathcal O^\gamma_{q+3}`$ |
 | `operator_gauge(c)` | $`\tfrac12n_{q+1}\cup_{q+1}dn_{q+1}`$ |
 
-The coordinate string `operator` selects the reader's displayed phase
-source and product in the [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d) and
+The coordinate string `operator` evaluates the displayed phase source and
+product in the [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d) and
 [3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d) sections, and the displayed
 source in the [4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d) section;
-the 4+1D product is related as stated in the table above. All three degrees
-follow the [phase convention](#phase-convention-of-the-runtime): the `ca`
-targets for $`q=1`$ contain the lattice term $`-\tfrac14[s_1n_1n'_1]_2`$, and
-those for $`q=3`$ have the quarter brackets $`-\tfrac14`$ in the physical $`n_4`$.
-The `ca` target is the coordinate denoted by the superscript `old` there. Recover it by subtracting the displayed
-single-state rephase from the source and its full stacking change from
-the product: [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-2d),
-[3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12), and
-[4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m12-4d).
-The binary lower laws agree in both coordinates. The documentation's
-reader default does not change the runtime's default argument.
+the 4+1D product is related as stated in the table above. The `ca` targets
+evaluate the same laws without the operator ordering of the complex fermions,
+which is the single-state term `operator_gauge(c)`. The binary lower laws
+agree in both. The documentation's reader default does not change the
+runtime's default argument.
 `ClosedMajoranaBackend` divides the compiled terminal numerator by eight.
 Its output is not silently substituted into the separate integer-layer
 publication coordinate.
