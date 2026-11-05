@@ -39,8 +39,9 @@ Majorana laws. Their original projector sequence is retained.
 
 {{equation:three-dimensional-geometric-reference--phase-transport}}
 
-The suffix `old` is confined to this comparison. The main page prints all
-six transported contributions in the current variables. No additional
+This map takes the retained construction to the geometric pairing
+coordinate. The main page prints all six transported contributions in the
+current variables. No additional
 phase primitive has to be solved for. This transport is half-valued, so it does
 not depend on the orientation of the phase convention. Its point-fermion contribution
 includes the explicitly displayed face-reference phase; the other two

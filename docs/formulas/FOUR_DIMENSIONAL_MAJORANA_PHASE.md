@@ -167,54 +167,37 @@ classification is used in these checks.
 ## Comparison with the microscopic phase tables
 
 The cochain $`B_5`$ above is a change of representative between two
-cochain formulas. It is distinct from the microscopic phase-reference
-cochain $`B_5^\gamma`$ of this section, which compares the lattice amplitude
-with the Cartan–Adem polynomial.
+cochain formulas. It is distinct from the local phase-reference cochain
+$`B_5^\gamma`$ of this section.
 
-In the common convention the forward F move carries $`\nu_5`$, the heptagon
-loop runs forward along the three moves with odd omitted vertex
-($`012346,012456,023456`$) and back along the four moves with even omitted
-vertex, and the inserted Majoranas act as $`X=P\Gamma`$ on forward moves and
-$`\bar X=\bar P\Gamma^\dagger`$ on inverse moves, with
-$`\Gamma=g_{1235A}^{\,d}g_{0123B}^{\,c}g_{1234B}^{\,b}g_{2345B}^{\,a}`$.
-The archived microscopic heptagon table of the lattice calculation uses
-these same insertion operators but traverses the loop forward along the
-four-move path and back along the three-move path. Reversing the loop
-complex-conjugates the amplitude, so pointwise
+With the moves and insertions of the
+[phase convention](../FORMULA_GUIDE.md#phase-convention), the forward F move
+carries $`\nu_5`$, the heptagon loop runs forward along the three moves with odd
+omitted vertex ($`012346,012456,023456`$) and back along the four moves with
+even omitted vertex, and the inserted Majoranas act as $`X=P\Gamma`$ on forward
+moves and $`\bar X=\bar P\Gamma^\dagger`$ on inverse moves, with
+$`\Gamma=g_{1235A}^{\,d}g_{0123B}^{\,c}g_{1234B}^{\,b}g_{2345B}^{\,a}`$. The
+microscopic heptagon phase then satisfies, pointwise,
 
 ```math
-\mathcal O_6^\gamma=-\mathcal O_6^{\gamma,\mathrm{tab}},\qquad
-B_5^\gamma=-B_5^{\gamma,\mathrm{tab}}.
+\mathcal O_6^\gamma=\mathcal O_{\mathrm{CA}}+d_{s_1}B_5^\gamma,
 ```
 
-Here the historical certificate is
-$`\mathcal O_6^{\gamma,\mathrm{tab}}=\mathcal O_{\mathrm{CA}}+d_{s_1}B_5^{\gamma,\mathrm{tab}}`$,
-where $`\mathcal O_{\mathrm{CA}}`$ is the Cartan–Adem polynomial with
-quarter-valued bracket $`+1/4`$ and $`B_5^{\gamma,\mathrm{tab}}`$ is the tabulated
-cochain plus the local phase $`\tfrac14s_1\cup[\beta n_3]_2`$. Thus
-$`\mathcal O_6^\gamma=-\mathcal O_{\mathrm{CA}}+d_{s_1}B_5^\gamma`$, and
-$`-\mathcal O_{\mathrm{CA}}`$ is the [closed-Majorana formula](MAJORANA_AND_ENDPOINTS.md#eq-m4-4d)
-with quarter-valued bracket $`-1/4`$. The identity holds row by row on all
-1,048,576 table rows with $`\omega_2=s_1=0`$ and on 20,000 random rows with
-general closed $`\omega_2,s_1`$; no insertion-order term occurs. The
-$`n_2=0`$ restriction of the terminal formula agrees with the table on
-4,000 of 4,000 rows.
+where $`\mathcal O_{\mathrm{CA}}`$ is the
+[closed-Majorana Cartan–Adem polynomial](MAJORANA_AND_ENDPOINTS.md#eq-m4-4d),
+with quarter-valued bracket $`-1/4`$, and $`B_5^\gamma`$ is the explicit local
+phase-reference cochain obtained with the microscopic tables. The identity
+holds row by row on all 1,048,576 rows with $`\omega_2=s_1=0`$ and on 20,000
+random rows with general closed $`\omega_2,s_1`$. The $`n_2=0`$ restriction of
+the terminal formula agrees with the microscopic phase on 4,000 of 4,000 rows.
 
-The archived stacking rows ($`\omega_2=s_1=0`$) have the physical stacking
-orientation. Their code inserts on $`F,F'`$ with the unreversed operator list
-and on $`\bar F_{\mathrm{tot}}`$ with the reversed list, which shifts the
-stacking phase by $`b_5[n]+b_5[n']+b_5[N]`$ with
-$`b_5=\tfrac12\binom m2`$ for $`m`$ inserted Majoranas on the move. Including
-this shift and the sign $`\tfrac12\sum_{\mathrm{pairs}}m_am_b`$ for the
-reversed order of commuting P moves (with $`m`$ the P-move parity
-$`n_3\cup_2n'_3`$ or $`n_3\cup_1n_3`$), the root complex-fermion twisters and the
-table satisfy $`d(\mathcal{ℰ}^c+\mathcal{ℰ}^{c\gamma}+\mathcal{ℰ}^\gamma)
+With the same moves and insertions, the microscopic stacking amplitudes
+($`\omega_2=s_1=0`$) and the root complex-fermion twisters satisfy
+$`d(\mathcal{ℰ}^c+\mathcal{ℰ}^{c\gamma}+\mathcal{ℰ}^\gamma)
 =\mathcal O_6[N]-\mathcal O_6[n]-\mathcal O_6[n']`$ pointwise on 19,988 of 20,000
 random configurations on the six-simplex. Each of the other 12 involves a
-stored row excluded by the internal audit of that table. With the
-unconverted heptagon table the check fails at quarter level
-(7,848 of 20,000 pass). At $`n_2=0`$ the stacking law of the complete
-formulas agrees with this code-derived physical stacking phase up to
-$`d\sigma_4`$ of a local four-face function (2,500 configurations). The
-microscopic tables themselves are not part of this repository.
-
+stored row excluded by the internal audit of that table. At $`n_2=0`$ the
+stacking law of the complete formulas agrees with this microscopic stacking
+phase up to $`d\sigma_4`$ of a local four-face function (2,500
+configurations). The microscopic tables themselves are not part of this
+repository.

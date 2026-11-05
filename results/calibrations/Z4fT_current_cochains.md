@@ -12,8 +12,6 @@ These representatives use the [current 3+1D formulas](../../docs/formulas/THREE_
 in the geometric pairing coordinate. Phases are in the physical convention of the
 [formula guide](../../docs/FORMULA_GUIDE.md), unified with the published lattice
 papers: the forward F move carries $`\nu_4`$ and $`d_{s_1}\nu_4=\mathcal O_5`$.
-The earlier receipt of this calculation used the complex-conjugate convention;
-there every fractional phase below one half had the opposite sign.
 
 | Decoration | $`n_1`$ | $`n_2`$ | $`n_3`$ | $`\mathcal O_5`$ | $`\nu_4`$ |
 |---|---|---|---|---|---|

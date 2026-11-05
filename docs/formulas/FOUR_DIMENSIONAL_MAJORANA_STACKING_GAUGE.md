@@ -11,8 +11,7 @@ including terms containing the Majorana differential.
 The output-gauge step is
 
 ```math
-\mathcal{ℰ}_{5,\mathrm{new}}^\gamma
-=\mathcal{ℰ}_{5,\mathrm{old}}^\gamma-d_{s_1}B_4^{\mathrm{out}}.
+\mathcal{ℰ}_5^\gamma\longmapsto\mathcal{ℰ}_5^\gamma-d_{s_1}B_4^{\mathrm{out}}.
 ```
 
 On the ordered four-simplex, its complete output gauge is

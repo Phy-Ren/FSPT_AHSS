@@ -795,9 +795,8 @@ The obstruction and stacking law use the same [paired phase convention](THREE_DI
 
 For $`n_1=n'_1=0`$ one has $`\widetilde{n}_2=n_2`$, $`\beta^-=\beta`$ and
 $`\widetilde{n}_3=n_3+[\beta n_2]_2`$. The
-[closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d), marked
-below by the superscript cl, are written in the physical occupation $`n_3`$
-with the lattice sign of the Majorana phase. With
+[closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d) are written in
+the physical occupation $`n_3`$ with the lattice sign of the Majorana phase. With
 $`\mathcal{𝒪}_5^c,\mathcal{𝒪}_5^{c\gamma}`$ the complex-fermion contributions and
 $`\mathcal{𝒪}_5^\gamma`$ the closed-sector Majorana contribution, the two
 forms obey the bridging identity
@@ -816,31 +815,18 @@ Here $`2\mathcal{𝒪}_5^\gamma=\frac12\big[\omega_2[\beta n_2]_2+[\beta n_2]_2\
 does not depend on the sign of the quarter bracket. Since
 $`-\mathcal{𝒪}_5^\gamma=\mathcal{𝒪}_5^\gamma-2\mathcal{𝒪}_5^\gamma`$, the Majorana
 contribution appears with the opposite sign in the argument $`\widetilde{n}_3`$.
-The complete formulas of this page, restricted to $`n_1=n'_1=0`$, and the
-closed-sector formulas are therefore related by
+Restricted to $`n_1=n'_1=0`$, the complete formulas of this page and the
+closed-sector formulas therefore describe the same states; their bosonic
+phases differ by the local term $`\frac12n_3\cup_2[\beta n_2]_2`$, and their
+stacking twisters by its change $`\Delta`$ on $`N_2=n_2+n'_2`$,
+$`N_3=n_3+n'_3+\mathcal{ℰ}_3`$ together with a coboundary. On these inputs
+$`\mathcal{𝒪}_5^{c\psi},\mathcal{𝒪}_5^{\gamma\psi},\mathcal{𝒪}_5^\psi,
+\mathcal{ℰ}_4^{c\psi},\mathcal{ℰ}_4^\psi`$ vanish, while the mixed Majorana–p+ip
+twister is the coboundary
 
 ```math
-\begin{aligned}
-\nu_4&=\nu_4^{\mathrm{cl}}+\frac12n_3\cup_2[\beta n_2]_2,\qquad
-\mathcal{𝒪}_5=\mathcal{𝒪}_5^{\mathrm{cl}}
- +d_{s_1}\Big(\frac12n_3\cup_2[\beta n_2]_2\Big),\\
-\mathcal{ℰ}_4^{c}+\mathcal{ℰ}_4^{c\gamma}+\mathcal{ℰ}_4^{\gamma}
-&=\mathcal{ℰ}_4^{\mathrm{cl}}
- +\Delta\Big(\frac12n_3\cup_2[\beta n_2]_2\Big)
- +d_{s_1}\Big\{\frac12\Big[n'_3\cup_3[\beta n_2]_2
- +([\beta n_2]_2+[\beta n'_2]_2)\cup_3\mathcal{ℰ}_3\\
-&\qquad+([\beta n_2]_2+[\beta n'_2]_2)\cup_2\lambda_2^\gamma
- +\lambda_2^\gamma\cup_1\lambda_2^\gamma\Big]\Big\},\\
-\mathcal{ℰ}_4^{\gamma\psi}
-&=d_{s_1}\Big(\frac12\big[\lambda_2^\gamma\cup_1\lambda_2^\gamma
+\mathcal{ℰ}_4^{\gamma\psi}\big|_{n_1=n'_1=0}
+=d_{s_1}\Big(\frac12\big[\lambda_2^\gamma\cup_1\lambda_2^\gamma
  +\lambda_2^\gamma\cup_2d\lambda_2^\gamma\big]\Big),\qquad
 \lambda_2^\gamma=n_2\cup_2n'_2\pmod1.
-\end{aligned}
 ```
-
-Here $`\Delta`$ uses $`N_2=n_2+n'_2`$ and $`N_3=n_3+n'_3+\mathcal{ℰ}_3`$, the
-complex-fermion contribution includes its output-face terms, and
-$`\mathcal{𝒪}_5^{c\psi},\mathcal{𝒪}_5^{\gamma\psi},\mathcal{𝒪}_5^\psi,
-\mathcal{ℰ}_4^{c\psi},\mathcal{ℰ}_4^\psi`$ vanish. The first line is a local
-rephasing of the bosonic phase, not a complex conjugation; the physical
-occupations, Majorana modes and projection sequence are unchanged.

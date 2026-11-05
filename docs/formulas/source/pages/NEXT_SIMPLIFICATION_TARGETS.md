@@ -7,7 +7,7 @@ rewrites its coefficient part exactly. The current
 [phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) transports the complete
 source and product together; the
 [closed diagonal](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md) is a restriction
-of that same canonical law. The
+of that same law. The
 [quadratic cochain](QUADRATIC_REFINEMENTS.md) organizes repeated fractional
 terms and supplies an exact variation law. These are established results;
 the targets below are proposed further reductions.

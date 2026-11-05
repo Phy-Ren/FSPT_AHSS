@@ -153,11 +153,11 @@ def run():
     top=tuple(range(5))
     upper=cup(c,c,2)+cup(q,c,3)
     # Units of 1/4. Half brackets are binary before multiplying by two.
-    literal=2*(z+upper)(top).lift()+Q(top)
+    literal=2*(z+upper)(top).lift()-Q(top)
     reduced_half=(upper+cup(cup(w,s,1),u)+cup(b,cup(s,u),2)
                   +cup(s,e)+cup(s,cup(cup(s,u),u,2))+cup(u,u))
     reduced_quarter=cup(B,B,2)+cup(s,b).lift()-q.lift()
-    reduced=2*reduced_half(top).lift()+reduced_quarter(top)
+    reduced=2*reduced_half(top).lift()-reduced_quarter(top)
     assert Q(top).modulus == reduced_quarter(top).modulus == 4
     assert literal.modulus == reduced.modulus == 4
     intrinsic=(operation('123131',u,u,b)+cup(u,b,1)+cup(u,cup(u,b,1),2))(top)

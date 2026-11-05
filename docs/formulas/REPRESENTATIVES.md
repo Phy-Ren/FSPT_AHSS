@@ -8,9 +8,9 @@ All changes here act on the source and stacking correction together.
 
 ## 3+1D: physical terminal formulas
 
-The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), including its lower-field map, inverse, and finite output-face phase. The earlier [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) is a retained construction step evaluated on the shifted complex-fermion inputs. Both conversions are required; the current lower product is the compact geometric formula.
+The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), including its lower-field map, inverse, and finite output-face phase. The [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) is a retained construction step evaluated on the shifted complex-fermion inputs. Both maps are required; the current lower product is the compact geometric formula.
 
-## 3+1D: earlier complex-fermion coordinate
+## 3+1D: complex-fermion coordinate of the retained construction
 
 
 
@@ -19,21 +19,22 @@ The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOM
 **(T3D)**
 
 ```math
-{n_3^{\mathrm{old}}}={n_{3}}+\mathcal B_3^{\mathrm{ref}}({n_{1}},{\widetilde{n}_{2}}),\qquad
+n_3\longmapsto n_3+\mathcal B_3^{\mathrm{ref}}({n_{1}},{\widetilde{n}_{2}}),\qquad
 \mathcal B_3^{\mathrm{ref}}=({[n_{1}]_2}+{s_1}){\widetilde{n}_{2}}+{\widetilde{\omega}_2}{[\lfloor n_{1}/2\rfloor]_2}+[{\widetilde{\omega}_2}\cup_1({[n_{1}]_2}+{s_1})]{[n_{1}]_2}.
 ```
 
-Its stacking correction changes at the same time:
+The retained construction evaluates its complex-fermion argument after
+this map; its stacking correction changes at the same time:
 
 ```math
-\mathcal{ℰ}_{3,\mathrm{old}}=\mathcal{ℰ}_3+\Delta\mathcal B_3^{\mathrm{ref}}.
+\mathcal{ℰ}_3\longmapsto\mathcal{ℰ}_3+\Delta\mathcal B_3^{\mathrm{ref}}.
 ```
 
 The obstruction is transported by the same substitution and $`d\mathcal B_3^{\mathrm{ref}}`$.
 In particular, $`n_1=0`$ alone does not remove this coordinate change when
 $`s_1\ne0`$.
 
-## 4+1D: historical source convention
+## 4+1D: source coordinate of the retained construction
 
 The 4+1D terminal maps below act on the terminal-layer occupation
 $`\widetilde{n}_4=n_4+R_4`$ of the [4+1D formulas](FOUR_DIMENSIONAL.md#terminal-occupation-4d).
@@ -41,7 +42,7 @@ They are changes of representative within one phase convention.
 
 
 
-Before the operator reordering below, the earlier obstruction function is related to the displayed $`\mathcal O_6`$ by
+Before the operator reordering below, the source of the retained construction is obtained from the displayed $`\mathcal O_6`$ as
 
 
 <a id="eq-t4e"></a>
@@ -53,7 +54,7 @@ Before the operator reordering below, the earlier obstruction function is relate
 \qquad B_5^{\mathrm{ref}}=\frac14{\beta^-\widetilde{n}_3}\cup_3{\beta_4^\psi}.
 ```
 
-The right-hand side is evaluated in the current convention; the subtraction recovers the earlier obstruction function without an additional symbol for it.
+It is written with the displayed obstruction and needs no additional symbol.
 The corresponding terminal redefinition contributes $`\Delta B_5^{\mathrm{ref}}`$ to the stacking correction.
 The cubic term in (T4E) is retained separately in the later formulas; it is not a coboundary.
 

@@ -44,9 +44,7 @@ published fixed-point lattice constructions. It is stated once here.
   $`P`$(final), $`\bar F_{\mathrm{tot}}`$, and
   $`d_{s_1}\mathcal{ℰ}_{d+1}=\mathcal{𝒪}_{d+2}[N]-\mathcal{𝒪}_{d+2}[n]-\mathcal{𝒪}_{d+2}[n']`$.
 - **Coefficients.** Phase coefficients are signed minimal representatives,
-  for example $`-\tfrac14`$ rather than $`\tfrac34`$. Half-valued terms are
-  unchanged under complex conjugation; quarter-, eighth- and
-  sixteenth-valued terms are not.
+  for example $`-\tfrac14`$ rather than $`\tfrac34`$.
 - **Occupations.** $`n_d`$ is the physical point-fermion occupation of the
   original Majorana pairing arrows. The closed-Majorana sector and the
   lower p+ip layers use it directly. Only the terminal layer with p+ip

@@ -11,11 +11,10 @@ satisfying the [closed obstruction equation](MAJORANA_AND_ENDPOINTS.md#eq-m3-4d)
 $`n_4`$ is the physical point-fermion occupation used in the
 [closed-Majorana 4+1D formulas](MAJORANA_AND_ENDPOINTS.md#majorana-4d).
 All stacking corrections below have identical complete inputs. They are the
-equal-input specialization of those closed laws, that is, the negative of the
-zero-p+ip restriction of the [complete self-stacking formulas](FOUR_DIMENSIONAL_SELF_STACKING.md)
-evaluated at the same arguments. The complex-fermion contributions are
-half-valued and unchanged in form; the quarter-valued Majorana terms change
-sign. The two forms are related by the
+equal-input specialization of those closed laws. They have the form of the
+zero-p+ip restriction of the [complete self-stacking formulas](FOUR_DIMENSIONAL_SELF_STACKING.md),
+written in the physical occupation $`n_4`$, where the quarter-valued Majorana
+terms carry the opposite sign. The two forms are related by the
 [bridging identity](FOUR_DIMENSIONAL.md#bridging-identity-4d); on equal inputs
 the polarization of $`\tfrac12n_4\cup_3\mathrm{Sq}^1n_3`$ vanishes.
 
@@ -67,7 +66,7 @@ The output term of the general formula vanishes because $`N_3=0`$, and the mixed
 
 ### Majorana decoration
 
-This is the negative of the shared self-stacking expression with $`n_2=0`$,
+This is the shared self-stacking expression, written in the physical occupation $`n_4`$, with $`n_2=0`$,
 $`d\widetilde{n}_3=0`$, and $`\beta_4^\gamma=\beta n_3`$. The terms
 containing $`d\widetilde{n}_3`$ or $`\beta(\widetilde{\mathcal{𝒪}}_4[n_2])`$
 vanish and are omitted:

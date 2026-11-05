@@ -6,9 +6,9 @@ All changes here act on the source and stacking correction together.
 
 ## 3+1D: physical terminal formulas
 
-The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), including its lower-field map, inverse, and finite output-face phase. The earlier [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) is a retained construction step evaluated on the shifted complex-fermion inputs. Both conversions are required; the current lower product is the compact geometric formula.
+The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), including its lower-field map, inverse, and finite output-face phase. The [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) is a retained construction step evaluated on the shifted complex-fermion inputs. Both maps are required; the current lower product is the compact geometric formula.
 
-## 3+1D: earlier complex-fermion coordinate
+## 3+1D: complex-fermion coordinate of the retained construction
 
 
 
@@ -18,7 +18,8 @@ The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOM
 
 {{equation:representatives--3-1d-earlier-complex-fermion-coordinate--1}}
 
-Its stacking correction changes at the same time:
+The retained construction evaluates its complex-fermion argument after
+this map; its stacking correction changes at the same time:
 
 {{equation:representatives--3-1d-earlier-complex-fermion-coordinate--2}}
 
@@ -26,7 +27,7 @@ The obstruction is transported by the same substitution and $`d\mathcal B_3^{\ma
 In particular, $`n_1=0`$ alone does not remove this coordinate change when
 $`s_1\ne0`$.
 
-## 4+1D: historical source convention
+## 4+1D: source coordinate of the retained construction
 
 The 4+1D terminal maps below act on the terminal-layer occupation
 $`\widetilde{n}_4=n_4+R_4`$ of the [4+1D formulas](FOUR_DIMENSIONAL.md#terminal-occupation-4d).
@@ -34,7 +35,7 @@ They are changes of representative within one phase convention.
 
 
 
-Before the operator reordering below, the earlier obstruction function is related to the displayed $`\mathcal O_6`$ by
+Before the operator reordering below, the source of the retained construction is obtained from the displayed $`\mathcal O_6`$ as
 
 
 <a id="eq-t4e"></a>
@@ -43,7 +44,7 @@ Before the operator reordering below, the earlier obstruction function is relate
 
 {{equation:representatives--4-1d-historical-source-convention--3}}
 
-The right-hand side is evaluated in the current convention; the subtraction recovers the earlier obstruction function without an additional symbol for it.
+It is written with the displayed obstruction and needs no additional symbol.
 The corresponding terminal redefinition contributes $`\Delta B_5^{\mathrm{ref}}`$ to the stacking correction.
 The cubic term in (T4E) is retained separately in the later formulas; it is not a coboundary.
 

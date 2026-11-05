@@ -10,9 +10,8 @@ Use the [common notation](../FORMULA_GUIDE.md#conventions-and-coordinates). Ever
 
 The physical fields are the binary Majorana cochain $`n_1`$,
 the binary complex-fermion cochain $`n_2`$, and the phase $`\nu_3`$.
-This is the zero-integer-decoration sector, in the manuscript operator
-phase coordinate. Its [paired coordinate map](MAJORANA_AND_ENDPOINTS.md#eq-m12-2d)
-is stated separately.
+This is the zero-integer-decoration sector, with the complex fermions in
+operator order.
 
 <a id="obstructions-2d"></a>
 ## Obstruction functions
@@ -152,9 +151,7 @@ eighth-valued contribution it subtracts the complete integer lifts. In contrast,
 quarter-valued bracket is a signed integer cup; its differential is also
 integral.
 
-This is the lattice Majorana stacking twister, written in the present phase
-coordinate; its [explicit relation to the lattice phase](MAJORANA_AND_ENDPOINTS.md#eq-m11)
-is stated with the closed-Majorana formulas.
+This is the Majorana stacking twister of the fixed-point lattice construction.
 
 The binary antiunitary term is
 

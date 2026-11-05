@@ -5,11 +5,8 @@ The existing certificate supplies only arithmetic and the retained exact
 coefficient kernels. All physical CF root bits below are in the NEW coordinate.
 No source files or frozen coefficients are modified by this verification.
 
-Phase convention: the transcribed phases are the displayed physical formulas
-(forward F move carries nu, unified lattice convention). Their quarter- and
-eighth-valued terms have the sign opposite to the retained frozen kernel,
-which is historical data in the pre-unification orientation; the frozen reference is
-therefore negated before comparison. Half-valued terms are sign-free.
+Phase convention: the transcribed phases are the displayed formulas of the
+formula guide's phase convention, as is the frozen reference.
 """
 from verify_three_dimensional_canonical_self_stacking import *
 
@@ -90,12 +87,11 @@ def run():
             for i in touched:value=value*replacements[i]
             out=out+Polynomial({m:coefficient for m in value.terms},16)
         return out
-    # The frozen kernel is historical data in the pre-unification orientation: negate it.
-    expected={name:-transported_table(rows) for name,rows in data['reference_sector_phases_mod16'].items()}
+    expected={name:transported_table(rows) for name,rows in data['reference_sector_phases_mod16'].items()}
     expected['C']=expected['C']+K
     residuals={name:len((value-expected[name]).terms) for name,value in phases.items()}
     total=sum(phases.values(),Polynomial(0,16))
-    reference=-transported_table(data['reference_total_phase_mod16'])+K
+    reference=transported_table(data['reference_total_phase_mod16'])+K
     total_res=len((total-reference).terms)
     assert not any(residuals.values()) and not total_res,(residuals,total_res)
     report={'status':'PASS','scope':'Current geometric coordinate; n1=s1, both backgrounds, arbitrary valid Majorana and CF completions',
@@ -109,7 +105,7 @@ def run():
         'single_state_map':'checked n3 = n3 + checked n2 cup1 checked n2',
         'current_lower_output':'Sq1(checked n2) + s1 checked n2',
         'previous_phase_output':'N3 + d checked n2','integer_output_gauge_applied':False,
-        'phase_convention':'physical (unified lattice convention); equals minus the frozen pre-unification kernel'}
+        'phase_convention':'formula guide phase convention'}
     return report
 
 if __name__=='__main__':

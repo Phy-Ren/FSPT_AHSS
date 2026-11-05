@@ -35,11 +35,7 @@ A prime denotes the second input, and $`N_j`$ the stacked binary field.
 The lower fields and all subscripts are fixed anew
 at the start of each dimensional section.
 
-The physical formulas below use the manuscript's operator phase coordinate.
-The [explicit change of phase representative](#phase-coordinate-maps)
-transports both obstruction and stacking laws. This coordinate is not
-implicitly identified with the full integer-layer phase coordinate in the
-main guide.
+The formulas below use the operator ordering of the complex fermions.
 
 <a id="majorana-2d"></a>
 ## 2+1D
@@ -239,27 +235,10 @@ eighth-valued contribution it subtracts the complete integer lifts. In contrast,
 quarter-valued bracket is a signed integer cup; its differential is also
 integral.
 
-This twister is the lattice result: the Majorana stacking amplitude of the
-fixed-point construction with the forward and inverse moves of the
-[phase convention](../FORMULA_GUIDE.md#phase-convention) (the SptSet
-`AddTwister2D` table), written in the present phase coordinate. With
-$`\Delta\big(\frac14\omega_2n_1\big)=\frac12\omega_2(n_1\cup_1n'_1)`$, the
-lattice quantities (superscript lat) are related by
-
-```math
-\begin{aligned}
-\nu_3&=\nu_3^{\mathrm{lat}}+\frac14\,\omega_2n_1,\qquad
-\mathcal{𝒪}_4=\mathcal{𝒪}_4^{\mathrm{lat}}+d_{s_1}\Big(\frac14\,\omega_2n_1\Big),\\
-\mathcal{ℰ}_3&=\mathcal{ℰ}_3^{\mathrm{lat}}+\frac12\,\omega_2(n_1\cup_1n'_1)+d_{s_1}\mu_2,\\
-\mu_2&=\frac38\,n_1n'_1+\frac18\,n'_1n_1-\frac18\,(n_1\cup_1n'_1)n_1
- -\frac38\big[n_1(n_1\cup_1n'_1)+(n_1\cup_1n'_1)n'_1\\
-&\qquad+n'_1(n_1\cup_1n'_1)+(n_1\cup_1n'_1)^2\big]
- +\frac12\big[n_2\cup_2n'_2+\mathcal{ℰ}_2\cup_2(n_2+n'_2)\big].
-\end{aligned}
-```
-
-Here the integer cups in $`\mu_2`$ use the canonical lifts. In particular
-the antiunitary quarter term is $`-\frac14[s_1n_1n'_1]_2`$.
+This twister is the Majorana stacking law of the fixed-point lattice
+construction, with the forward and inverse moves of the
+[phase convention](../FORMULA_GUIDE.md#phase-convention). Its antiunitary
+quarter term is $`-\frac14[s_1n_1n'_1]_2`$.
 
 The binary antiunitary term is
 
@@ -696,13 +675,12 @@ Majorana contribution is
 \end{aligned}
 ```
 
-Here $`\beta^+n_3=(\beta n_3+[\beta n_3]_2)/2`$. This is exactly the
-negative of the [compact formula](FOUR_DIMENSIONAL.md#majorana-phase-4d)
-of the complete tower at $`n_2=0`$: the half-valued terms are unchanged, and
+Here $`\beta^+n_3=(\beta n_3+[\beta n_3]_2)/2`$. It has the half-valued terms
+of the [compact formula](FOUR_DIMENSIONAL.md#majorana-phase-4d) of the complete
+tower at $`n_2=0`$, and its quarter-valued bracket has the opposite sign, as
+the [bridging identity](FOUR_DIMENSIONAL.md#bridging-identity-4d) requires for
+the physical occupation; here
 $`\tfrac14s_1^2(\beta n_3+[\beta n_3]_2)=\tfrac12s_1^2\beta^+n_3`$.
-Because the complex-fermion contributions are half-valued, the complete
-closed obstruction in $`n_4`$ is pointwise the negative of the complete
-tower's obstruction evaluated at the same argument.
 
 Its word operations are
 
@@ -820,13 +798,14 @@ Here $`dn_4=\mathcal{𝒪}_5^\gamma`$ and $`N_4`$ is the binary output above:
 
 **(M7, 4+1D)**
 
-This is the negative of the [complete two-input law](FOUR_DIMENSIONAL.md#eq-t4c)
-restricted to $`n_2=n'_2=0`$, $`\widetilde{n}_3=n_3`$, and $`dn_3=dn'_3=0`$.
+This is the [complete two-input law](FOUR_DIMENSIONAL.md#eq-t4c)
+restricted to $`n_2=n'_2=0`$, $`\widetilde{n}_3=n_3`$, and $`dn_3=dn'_3=0`$,
+written in the physical occupation $`n_4`$.
 In particular $`\beta^-=\beta`$, $`\lambda_4^\gamma=0`$, and
 $`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; the terms containing
 $`\lambda_4^\gamma`$ or a derivative of a closed integer Bockstein vanish
-and are omitted. The half-valued terms are unchanged; the quarter-valued
-bracket and the quarter-valued term of each $`B_5[\cdot,0]`$ change sign.
+and are omitted. In the physical occupation the quarter-valued bracket and
+the quarter-valued term of each $`B_5[\cdot,0]`$ carry the opposite sign.
 
 ```math
 \begin{aligned}
@@ -855,13 +834,9 @@ The coefficient sets $`\mathcal I_5^\gamma`$ and $`\mathcal J_5^\gamma`$ are the
 [general definitions](FOUR_DIMENSIONAL.md#eq-t4c), evaluated on closed inputs;
 $`B_5`$ is the same
 [phase-change cochain](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
-Since the lower laws coincide and every displayed phase is the negative
-of the corresponding phase of the complete tower at the same arguments,
+The lower laws coincide with those of the complete tower, and
 $`d_{s_1}\mathcal{ℰ}_5=\mathcal{𝒪}_6[N]-\mathcal{𝒪}_6[n]-\mathcal{𝒪}_6[n']`$
-holds here exactly as it does for the complete tower.
-The earlier compact closed-product expression differs by its explicit
-output coboundary as well as the phase-coordinate comparison. It is not
-an additional primary law for the same displayed phase.
+holds exactly.
 The [zero-p+ip self-stacking formula](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
 is the equal-input specialization of these closed laws.
 
@@ -1075,144 +1050,3 @@ contain every label exactly once. Remove those final $`k-1`$ letters; if a
 label is then missing, the term is zero. Otherwise evaluate the shortened
 word on the listed inputs. This finite desuspension rule includes words
 whose first input has degree greater than $`q`$.
-
-<a id="phase-coordinate-maps"></a>
-## Change of phase representative
-
-The displayed physical laws use the operator representative. The maps
-below record the exact change from the previous phase coordinate and its
-inverse. These terminal maps keep their lower inputs fixed. In 3+1D they
-act on the closed-sector formulas above, in the physical occupation $`n_3`$;
-the shifted-CF form of the full reference is related to them by the
-[bridging identity and dictionary](THREE_DIMENSIONAL.md#closed-sector-bridging-identity). Source
-and product transform together; these equations do not introduce a new
-physical contribution.
-
-### 2+1D phase coordinate
-
-<a id="eq-m12-2d"></a>
-
-**(M12, 2+1D: phase coordinate)**
-
-```math
-\begin{aligned}
-\nu_3
- &=\nu^{\mathrm{old}}_3+\frac12n_2\cup_2dn_2,\\
-\nu^{\mathrm{old}}_3
- &=\nu_3-\frac12n_2\cup_2dn_2.
-\end{aligned}
-```
-
-#### Obstruction transport
-
-<a id="eq-m12-source-2d"></a>
-
-**(M12O, 2+1D)**
-
-```math
-\mathcal{𝒪}_4
- =\mathcal{𝒪}^{\mathrm{old}}_4
- +d_{s_1}\!\left[\frac12n_2\cup_2dn_2\right].
-```
-
-#### Stacking transport
-
-<a id="eq-m12-stacking-2d"></a>
-
-**(M12E, 2+1D)**
-
-```math
-\begin{aligned}
-\mathcal{ℰ}_3
- =\mathcal{ℰ}^{\mathrm{old}}_3
- &+\frac12N_2\cup_2dN_2\\
- &-\frac12n_2\cup_2dn_2
-  -\frac12n'_2\cup_2dn'_2.
-\end{aligned}
-```
-
-### 3+1D phase coordinate
-
-<a id="eq-m12"></a>
-
-**(M12, 3+1D: phase coordinate)**
-
-```math
-\begin{aligned}
-\nu_4
- &=\nu^{\mathrm{old}}_4+\frac12n_3\cup_3dn_3,\\
-\nu^{\mathrm{old}}_4
- &=\nu_4-\frac12n_3\cup_3dn_3.
-\end{aligned}
-```
-
-#### Obstruction transport
-
-<a id="eq-m12-source"></a>
-
-**(M12O, 3+1D)**
-
-```math
-\mathcal{𝒪}_5
- =\mathcal{𝒪}^{\mathrm{old}}_5
- +d_{s_1}\!\left[\frac12n_3\cup_3dn_3\right].
-```
-
-#### Stacking transport
-
-<a id="eq-m12-stacking"></a>
-
-**(M12E, 3+1D)**
-
-```math
-\begin{aligned}
-\mathcal{ℰ}_4
- =\mathcal{ℰ}^{\mathrm{old}}_4
- &+\frac12N_3\cup_3dN_3\\
- &-\frac12n_3\cup_3dn_3
-  -\frac12n'_3\cup_3dn'_3.
-\end{aligned}
-```
-
-### 4+1D phase coordinate
-
-<a id="eq-m12-4d"></a>
-
-**(M12, 4+1D: phase coordinate)**
-
-```math
-\begin{aligned}
-\nu_5
- &=\nu^{\mathrm{old}}_5+\frac12n_4\cup_4dn_4,\\
-\nu^{\mathrm{old}}_5
- &=\nu_5-\frac12n_4\cup_4dn_4.
-\end{aligned}
-```
-
-#### Obstruction transport
-
-<a id="eq-m12-source-4d"></a>
-
-**(M12O, 4+1D)**
-
-```math
-\mathcal{𝒪}_6
- =\mathcal{𝒪}^{\mathrm{old}}_6
- +d_{s_1}\!\left[\frac12n_4\cup_4dn_4\right].
-```
-
-#### Stacking transport
-
-<a id="eq-m12-stacking-4d"></a>
-
-**(M12E, 4+1D)**
-
-```math
-\begin{aligned}
-\mathcal{ℰ}_5
- =\mathcal{ℰ}^{\mathrm{old}}_5
- &+\frac12N_4\cup_4dN_4\\
- &-\frac12n_4\cup_4dn_4
-  -\frac12n'_4\cup_4dn'_4.
-\end{aligned}
-```

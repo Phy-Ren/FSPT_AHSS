@@ -7,8 +7,7 @@ solver is run. This checker deliberately does not substitute the historical
 independent low-degree candidate for the current paired reader coordinate.
 
 Phase convention: physical (unified with the published lattice papers): the
-forward F move carries nu_4 and d_{s1} nu_4 = O_5. Relative to the earlier
-complex-conjugate receipt every fractional phase below one half changes sign.
+forward F move carries nu_4 and d_{s1} nu_4 = O_5.
 """
 from __future__ import annotations
 

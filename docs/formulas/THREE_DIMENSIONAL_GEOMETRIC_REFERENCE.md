@@ -62,17 +62,17 @@ Majorana laws. Their original projector sequence is retained.
 
 ```math
 \begin{aligned}
-\mathcal{𝒪}_5(n)&=\mathcal{𝒪}_{5,\mathrm{old}}(n_1,n_2,\widetilde{n}_3),\\
-\mathcal{ℰ}_4(n,n')&=\mathcal{ℰ}_{4,\mathrm{old}}
- (n_1,n_2,\widetilde{n}_3;n'_1,n'_2,\widetilde{n}'_3)\\
-&\quad+\frac12\left[\omega_2\mathcal B_2+\mathcal B_2^2
+&n_3\longmapsto\widetilde{n}_3\quad\text{in every phase argument},\\
+&\mathcal{ℰ}_4\longmapsto\mathcal{ℰ}_4
+ +\frac12\left[\omega_2\mathcal B_2+\mathcal B_2^2
  +d\mathcal B_2\cup_1\mathcal B_2
  +(\widetilde{N}_3+d\mathcal B_2)\cup_2d\mathcal B_2\right].
 \end{aligned}
 ```
 
-The suffix `old` is confined to this comparison. The main page prints all
-six transported contributions in the current variables. No additional
+This map takes the retained construction to the geometric pairing
+coordinate. The main page prints all six transported contributions in the
+current variables. No additional
 phase primitive has to be solved for. This transport is half-valued, so it does
 not depend on the orientation of the phase convention. Its point-fermion contribution
 includes the explicitly displayed face-reference phase; the other two

@@ -4,10 +4,8 @@ The source and product representative are unchanged. The public verifier is
 used only for its standard cochain arithmetic; both displayed phase formulas
 are transcribed independently below. No solver or sampled assignments occur.
 
-Phase convention: both formulas are the displayed physical ones (unified
-lattice convention). Their quarter-valued terms have the sign opposite to the
-retained frozen sector, historical data in the pre-unification orientation, so the
-frozen sector is negated before comparison.
+Phase convention: both formulas and the frozen sector use the formula guide's
+phase convention.
 """
 from pathlib import Path
 from itertools import combinations
@@ -84,8 +82,7 @@ assert not left-right
 ut,wt,st,tower_labels=build_fields(True)
 data=json.loads((HERE/'three_dimensional_canonical_self_stacking.json').read_text())
 assert data['variables'][:len(tower_labels)]==tower_labels
-# The frozen sector is historical data in the pre-unification orientation: negate it.
-frozen=-P(dict(data['reference_sector_phases_mod16']['GAMMA']),16)
+frozen=P(dict(data['reference_sector_phases_mod16']['GAMMA']),16)
 assert not new_gamma(ut,wt,st)-frozen
 report={'status':'PASS','scope':'The complete previously designated 3D Majorana diagonal contribution for arbitrary open binary u2 and closed binary s1,omega2.',
  'independent_open_input_bits':len(labels),'open_input_labels':labels,
@@ -96,7 +93,7 @@ report={'status':'PASS','scope':'The complete previously designated 3D Majorana 
  'old_outer_terms':16,'new_half_terms':10,'new_quarter_terms':3,'new_outer_terms':13,
  'whole_binary_lift_interior_terms':2,'new_terms_with_lift_interior_counted':14,
  'standard_lower_source_retained':'O4_gamma[u]',
- 'cochain_equality':'exact modulo one','phase_convention':'physical (unified lattice convention); frozen sector negated','source_changed':False,'new_gauge':False,'physical_sector_reassignment':False,
+ 'cochain_equality':'exact modulo one','phase_convention':'formula guide phase convention','source_changed':False,'new_gauge':False,'physical_sector_reassignment':False,
  'public_arithmetic_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'seconds':time.monotonic()-start}
 (HERE/'OPEN_GAMMA_LIFT_REDUCTION_CHECK.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:v for k,v in report.items()if k!='open_input_labels'},indent=2))
