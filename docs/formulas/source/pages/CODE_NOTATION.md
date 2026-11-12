@@ -190,7 +190,7 @@ and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a), with the
 | `alpha`, former $`\alpha_3`$ | $`[\beta_{s_1}\widetilde{\omega}_2]_2`$ |
 | `hw`, former $`h_\omega`$ | $`[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2`$ |
 | `ell(w,s)`, former $`\ell^\omega_3`$ | $`[\beta\omega_2]_2+s_1\omega_2`$ |
-| Background `P`, former $`\mathcal P_s(W)`$ | $`\mathcal P_{s_1}(\widetilde{\omega}_2)`$ |
+| Background `P`, former $`\mathcal P_s(W)`$ | $`\mathfrak P_{s_1}(\widetilde{\omega}_2)`$ |
 | `Bp`, former $`B'`$ | $`\beta'_4=\beta_4(n'_2,\widetilde{n}'_3)`$ |
 | `la`, dictionary key `lambda`, former $`\lambda`$ | $`\lambda_3`$ |
 | `r`, `rp` in `collected_blocks` | $`[\beta_4]_2,[\beta'_4]_2`$ |
@@ -232,7 +232,7 @@ The former source-sum names are now expanded in the
 
 In particular, the source variable `H` includes the complex-fermion terms;
 it was never just the former $`\mathcal H_6`$. The other entries `Pn,Wnn`
-returned by `blocks` are $`\mathcal P_{s_1}(\widetilde{\omega}_2)n_2`$ and
+returned by `blocks` are $`\mathfrak P_{s_1}(\widetilde{\omega}_2)n_2`$ and
 $`\widetilde{\omega}_2n_2^2`$, with the stated coefficient transports.
 `high_source16` returns the weighted integer numerator for `H,Q,Pn,Wnn`
 with weights `8,4,1,2`; divide it by sixteen to obtain the phase. The 4+1D

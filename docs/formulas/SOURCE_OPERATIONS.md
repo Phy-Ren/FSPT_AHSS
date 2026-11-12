@@ -24,7 +24,7 @@ The shifted background is $`\widetilde{\omega}_2=\omega_2+s_1\cup s_1`$ and the
 closed degree-four source is
 $`\widetilde{\mathcal{𝒪}}_4=[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$.
 The source $`\mathcal{𝒪}^\psi_5`$, the residual $`\beta_4^\psi`$, and the
-Pontryagin-square representative $`\mathcal P_{s_1}`$ have the definitions
+Pontryagin-square representative $`\mathfrak P_{s_1}`$ have the definitions
 in the guide. The Bocksteins $`\beta,\beta_{s_1},\beta^+`$ and finite cup
 operations have the definitions in [Operations](OPERATIONS.md).
 
@@ -137,7 +137,7 @@ R_7=\frac18\Big\{&d_{s_1}\Big[
  ([\beta_{s_1}\widetilde{\omega}_2]_2,[\beta_{s_1}\widetilde{\omega}_2]_2,[n_2]_2,[n_2]_2)
  +[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2([n_2]_2\cup_1[n_2]_2)\\{}+(s_1[\beta_{s_1}\widetilde{\omega}_2]_2)[\lfloor n_2/2\rfloor]_2
  +s_1([\beta_{s_1}\widetilde{\omega}_2]_2\cup_1s_1)[n_2]_2\end{gathered}\right]]_2\\
-&\qquad+\mathcal P_{s_1}(\widetilde{\omega}_2)n_2
+&\qquad+\mathfrak P_{s_1}(\widetilde{\omega}_2)n_2
  +2\widetilde{\omega}_2n_2^2+4\omega_2\widetilde{\mathcal{𝒪}}_4
  +8[\big[\widetilde{\mathcal{𝒪}}_4\cup_1([\beta\omega_2]_2+s_1\omega_2)\big]]_2\Big]\\
 &+8[\big[\mathcal{𝒪}^\psi_5\cup_3\mathcal{𝒪}^\psi_5

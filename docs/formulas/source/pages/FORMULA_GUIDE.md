@@ -77,7 +77,7 @@ give both forms and the accompanying stacking dictionaries.
 $`[x]_2`$ and a bracket such as $`\widetilde{\omega}_2[n_1]_2`$ denote the
 untwisted zero-or-one lift of a binary value or binary product. Inside
 $`\widetilde{\omega}_2n_1`$ and in the Pontryagin term
-$`\mathcal P_{s_1}(\widetilde{\omega}_2)\cup n_1`$, the integer lift of
+$`\mathfrak P_{s_1}(\widetilde{\omega}_2)\cup n_1`$, the integer lift of
 $`\widetilde{\omega}_2`$ instead carries the $`\mathbb Z_{s_1}`$ twist of the
 p+ip field, as specified in [Operations](formulas/OPERATIONS.md#eq-o7).
 

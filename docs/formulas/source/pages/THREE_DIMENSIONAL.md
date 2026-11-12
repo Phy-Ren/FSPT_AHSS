@@ -164,7 +164,7 @@ The integer terms are read with the following twists. In
 $`\widetilde{\omega}_2[n_1]_2`$ the factor is the untwisted canonical
 zero-or-one lift of the binary product. Inside $`\widetilde{\omega}_2n_1`$,
 for example in $`(\beta_{s_1}\widetilde{\omega}_2)n_1`$, and in the
-Pontryagin term $`\mathcal P_{s_1}(\widetilde{\omega}_2)\cup n_1`$, the cochain
+Pontryagin term $`\mathfrak P_{s_1}(\widetilde{\omega}_2)\cup n_1`$, the cochain
 $`\widetilde{\omega}_2`$ carries $`\mathbb Z_{s_1}`$ coefficients.
 The finite index set $`\mathcal I_5^{\gamma\psi}`$ is defined in the
 [coefficient appendix](THREE_DIMENSIONAL_WORD_INDICES.md#final-physical-index-sets).

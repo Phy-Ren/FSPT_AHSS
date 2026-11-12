@@ -277,7 +277,7 @@ The integer terms are read with the following twists. In
 $`\widetilde{\omega}_2[n_1]_2`$ the factor is the untwisted canonical
 zero-or-one lift of the binary product. Inside $`\widetilde{\omega}_2n_1`$,
 for example in $`(\beta_{s_1}\widetilde{\omega}_2)n_1`$, and in the
-Pontryagin term $`\mathcal P_{s_1}(\widetilde{\omega}_2)\cup n_1`$, the cochain
+Pontryagin term $`\mathfrak P_{s_1}(\widetilde{\omega}_2)\cup n_1`$, the cochain
 $`\widetilde{\omega}_2`$ carries $`\mathbb Z_{s_1}`$ coefficients.
 The finite index set $`\mathcal I_5^{\gamma\psi}`$ is defined in the
 [coefficient appendix](THREE_DIMENSIONAL_WORD_INDICES.md#final-physical-index-sets).
@@ -308,7 +308,7 @@ On the ordered five-simplex $`(012345)`$, the complete contribution is
  +s_1(s_1\cup_1[\beta_{s_1}\widetilde{\omega}_2]_2)[n_1]_2]_2
  +[[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2[n_1]_2^2]_2
 \end{aligned}\right\}
- -\frac1{16}[\mathcal P_{s_1}(\widetilde{\omega}_2)\cup n_1](012345).
+ -\frac1{16}[\mathfrak P_{s_1}(\widetilde{\omega}_2)\cup n_1](012345).
 \end{aligned}
 ```
 
@@ -329,7 +329,7 @@ lifted-field evaluation is part of this formula.
 The Pontryagin-square convention in the last term is
 
 ```math
-\mathcal P_{s_1}(\widetilde{\omega}_2)
+\mathfrak P_{s_1}(\widetilde{\omega}_2)
 =\widetilde{\omega}_2^2
  +\widetilde{\omega}_2\cup_1d_{s_1}\widetilde{\omega}_2.
 ```

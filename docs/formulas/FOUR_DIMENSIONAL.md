@@ -325,7 +325,7 @@ is lifted as a whole in the last two cups.
  +s_1([\beta_{s_1}\widetilde{\omega}_2]_2\cup_1s_1)[n_2]_2
  \Big]]_2\\
  &+\frac18\widetilde{\omega}_2n_2^2
-   +\frac1{16}\mathcal P_{s_1}(\widetilde{\omega}_2)n_2+\frac1{12}n_2^3.
+   +\frac1{16}\mathfrak P_{s_1}(\widetilde{\omega}_2)n_2+\frac1{12}n_2^3.
 \end{aligned}
 ```
 
@@ -364,7 +364,7 @@ d\beta_4&=-(\beta_{s_1}\widetilde{\omega}_2)n_2.
 The fixed quadratic background cochain is:
 
 ```math
-\mathcal P_{s_1}(\widetilde{\omega}_2)
+\mathfrak P_{s_1}(\widetilde{\omega}_2)
  =\widetilde{\omega}_2\widetilde{\omega}_2
   +\widetilde{\omega}_2\cup_1d_{s_1}\widetilde{\omega}_2\quad\text{in }\mathbb Z.
 ```

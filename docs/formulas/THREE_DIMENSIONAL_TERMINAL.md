@@ -74,7 +74,7 @@ the obstruction and on the triangle fields for stacking:
  +[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2([n_2^J]_2\cup_1[n_2^J]_2)
  +(s_1[\beta_{s_1}\widetilde{\omega}_2]_2)[\lfloor n_2^J/2\rfloor]_2
  +s_1([\beta_{s_1}\widetilde{\omega}_2]_2\cup_1s_1)[n_2^J]_2\big]]_2\\
- &+\frac1{16}\mathcal P_{s_1}(\widetilde{\omega}_2){n_2^J}
+ &+\frac1{16}\mathfrak P_{s_1}(\widetilde{\omega}_2){n_2^J}
  +\frac18\widetilde{\omega}_2 {n_2^J}^2+\frac1{12}{n_2^J}^3.
 \end{aligned}
 ```
@@ -242,13 +242,13 @@ The extra integer terms have the exact signed transgressions
 
 | Auxiliary term | $`\tau_I`$ | $`\tau_\triangle`$ |
 |---|---|---|
-| $`\mathcal P_{s_1}(\widetilde{\omega}_2)n_2^J`$ | $`-\mathcal P_{s_1}(\widetilde{\omega}_2)n_1`$ | $`0`$ |
+| $`\mathfrak P_{s_1}(\widetilde{\omega}_2)n_2^J`$ | $`-\mathfrak P_{s_1}(\widetilde{\omega}_2)n_1`$ | $`0`$ |
 | $`\widetilde{\omega}_2(n_2^J)^2`$ | $`0`$ | $`\widetilde{\omega}_2 n_1n'_1`$ |
 | $`(n_2^J)^3`$ | $`0`$ | $`0`$ |
 
 These identities use the displayed interval/triangle fields and the fixed
 coefficient transport, so the compact pair includes all fractional terms.
-They give $`-\tfrac1{16}\mathcal P_{s_1}(\widetilde{\omega}_2)n_1`$ in $`\mathcal{𝒪}_5`$ and
+They give $`-\tfrac1{16}\mathfrak P_{s_1}(\widetilde{\omega}_2)n_1`$ in $`\mathcal{𝒪}_5`$ and
 $`+\tfrac18\widetilde{\omega}_2n_1n'_1`$ in $`\mathcal{ℰ}_4`$.
 
 The operations $`T_6,y_6`$ are the finite operations of
