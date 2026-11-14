@@ -5,7 +5,7 @@
 Take a complete state with $`n_2=0`$, closed binary Majorana cochain
 $`n_3`$, complex-fermion cochain $`n_4`$ satisfying
 $`dn_4=\mathcal{𝒪}_5^\gamma[n_3]`$, and phase $`\nu_5`$
-satisfying the [closed obstruction equation](MAJORANA_AND_ENDPOINTS.md#eq-m3-4d). Here $`\widetilde{n}_3=n_3`$, and
+satisfying the [closed obstruction equation](MAJORANA_AND_ENDPOINTS.md#eq-m3-4d). Here
 $`n_4`$ is the physical point-fermion occupation used in the
 [closed-Majorana 4+1D formulas](MAJORANA_AND_ENDPOINTS.md#majorana-4d).
 All stacking corrections below have identical complete inputs. They are the
@@ -45,8 +45,8 @@ The output term of the general formula vanishes because $`N_3=0`$, and the mixed
 ### Majorana decoration
 
 This is the shared self-stacking expression, written in the physical occupation $`n_4`$, with $`n_2=0`$,
-$`d\widetilde{n}_3=0`$, and $`\beta_4^\gamma=\beta n_3`$. The terms
-containing $`d\widetilde{n}_3`$ or $`\beta(\widetilde{\mathcal{𝒪}}_4[n_2])`$
+$`dn_3=0`$, and $`\beta_4^\gamma=\beta n_3`$. The terms
+containing $`dn_3`$ or $`\beta(\mathcal{𝒪}_4[n_2])`$
 vanish and are omitted:
 
 {{equation:four-dimensional-majorana-diagonal--majorana-decoration--7}}
@@ -56,7 +56,7 @@ bracket $`-1/4`$.
 
 ## Specialization of the common phase change
 
-The full lower output here has $`\widetilde{N}_3=0`$ and
+The full lower output here has $`N_3=0`$ and
 $`N_4=\mathcal{ℰ}_4^\gamma`$. The common phase map consequently gives
 $`-\Delta B_5=\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$; this
 half-valued cochain is unchanged by the overall sign.

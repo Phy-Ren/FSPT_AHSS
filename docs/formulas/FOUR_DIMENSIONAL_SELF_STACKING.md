@@ -5,7 +5,7 @@
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
 These formulas give the square of a complete lifted state
-$`(n_2,\widetilde{n}_3,\widetilde{n}_4,\nu_5)`$, written in the terminal-layer
+$`(n_2,n_3,\widetilde{n}_4,\nu_5)`$, written in the terminal-layer
 occupation $`\widetilde{n}_4=n_4+R_4`$ of the [general formulas](FOUR_DIMENSIONAL.md#terminal-occupation-4d). Every stacking twister and
 coefficient set on this page is specialized to two copies of that same
 input; no extra input label is needed.
@@ -13,15 +13,15 @@ input; no extra input label is needed.
 These formulas specialize the complete two-input law. In particular the
 input includes the upper decorations required by
 $`d_{s_1}n_2=0`$,
-$`d\widetilde{n}_3=\widetilde{\mathcal{𝒪}}_4[n_2]
+$`dn_3=\mathcal{𝒪}_4[n_2]
  =[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$, and
 $`d\widetilde{n}_4=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}
  +\mathcal{𝒪}_5^\psi`$, equivalently $`dn_4=\mathcal{𝒪}_5+dR_4`$. The bosonic obstruction is the same
-[4+1D obstruction](FOUR_DIMENSIONAL.md). Neither $`\widetilde{n}_3`$ nor
+[4+1D obstruction](FOUR_DIMENSIONAL.md). Neither $`n_3`$ nor
 $`\widetilde{n}_4`$ is set to zero. The output Majorana cochain shown below is closed and need not vanish.
 
 Bars, second digits, canonical lifts, and signed integer products have
-the conventions of the general formula. Every $`d\widetilde{n}_3`$ in a
+the conventions of the general formula. Every $`dn_3`$ in a
 binary expression below means the binary differential. Integer
 differentials appear explicitly inside Bocksteins or integer-carry
 identities.
@@ -32,7 +32,7 @@ odd orders are handled. The complete two-input law remains available; this
 page specifies its exact equal-input specialization. The
 [terminal phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is specialized at
 the same time. Since the binary sum of two equal Majorana inputs is zero,
-$`2B_5[\widetilde{n}_3,0]=\tfrac12(\widetilde{n}_3\cup_1\widetilde{n}_3)`$ modulo
+$`2B_5[n_3,0]=\tfrac12(n_3\cup_1n_3)`$ modulo
 one; the half-valued part doubles to an integer. This gives the short
 extra terms below directly from the general law.
 
@@ -45,10 +45,10 @@ N_2=2n_2.
 ## 2. Majorana decoration
 
 ```math
-\widetilde{N}_3=[n_2]_2\cup_1[n_2]_2.
+N_3=[n_2]_2\cup_1[n_2]_2.
 ```
 
-The native output is $`N_3=\widetilde{N}_3+s_1[n_2]_2`$.
+In the lift variable of the code input, this output is $`N_3+s_1[n_2]_2`$.
 
 ## 3. Complex-fermion decoration
 
@@ -59,7 +59,7 @@ The native output is $`N_3=\widetilde{N}_3+s_1[n_2]_2`$.
 ### Majorana decoration
 
 ```math
-\mathcal{ℰ}_4^\gamma=\widetilde{n}_3\cup_2\widetilde{n}_3+s_1\widetilde{n}_3.
+\mathcal{ℰ}_4^\gamma=n_3\cup_2n_3+s_1n_3.
 ```
 
 This contribution has **two terms**.
@@ -67,10 +67,10 @@ This contribution has **two terms**.
 ### Majorana and p+ip decoration
 
 ```math
-\mathcal{ℰ}_4^{\gamma\psi}=(d\widetilde{n}_3)\cup_3\widetilde{n}_3.
+\mathcal{ℰ}_4^{\gamma\psi}=(dn_3)\cup_3n_3.
 ```
 
-This contribution has **one term**. The sum of the two is $`\mathrm{Sq}^1\widetilde{n}_3+d\widetilde{n}_3+s_1\widetilde{n}_3`$.
+This contribution has **one term**. The sum of the two is $`\mathrm{Sq}^1n_3+dn_3+s_1n_3`$.
 
 
 ### p+ip decoration
@@ -84,7 +84,7 @@ The intrinsic p+ip contribution is
  +([\lfloor n_2/2\rfloor]_2)^2
  +[\lfloor n_2/2\rfloor]_2[n_2]_2+[n_2]_2[\lfloor n_2/2\rfloor]_2
  +d[\lfloor n_2/2\rfloor]_2\cup_1[\lfloor n_2/2\rfloor]_2\\
-&+(s_1[n_2]_2)\cup_2\widetilde{N}_3
+&+(s_1[n_2]_2)\cup_2N_3
  +[n_2]_2\cup_1(s_1[n_2]_2)
  +s_1^2[n_2]_2+s_1([n_2]_2\cup_2d[\lfloor n_2/2\rfloor]_2)\\
 &+s_1\Big[
@@ -124,8 +124,8 @@ identically when its two closed inputs $`[n_2]_2`$ coincide.
 \mathcal{ℰ}_5^{c\gamma}
 =\frac12\Big[
  [\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}]
-        [n_2,\widetilde{n}_3]\cup_4\widetilde{n}_4
- +\widetilde{N}_4\cup_4\mathcal{𝒪}_5^\gamma[\widetilde{N}_3]\Big].
+        [n_2,n_3]\cup_4\widetilde{n}_4
+ +\widetilde{N}_4\cup_4\mathcal{𝒪}_5^\gamma[N_3]\Big].
 ```
 
 ### Complex fermions and p+ip decoration
@@ -147,7 +147,7 @@ would discard an upper-layer correction.
 
 ### Majorana decoration
 
-With the existing integer carry $`\beta_4^\gamma=\beta^-\widetilde{n}_3`$,
+With the existing integer carry $`\beta_4^\gamma=\beta^-n_3`$,
 
 ```math
 \begin{aligned}
@@ -155,16 +155,16 @@ With the existing integer carry $`\beta_4^\gamma=\beta^-\widetilde{n}_3`$,
 ={}&\frac12\Big[
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
  \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)\\
-&\qquad+(d\widetilde{n}_3)_{12345}(\widetilde{n}_3)_{0145}
- +(d\widetilde{n}_3)_{01235}(\widetilde{n}_3)_{0345}
- +\widetilde{n}_3\cup_1\widetilde{n}_3-s_1\mathcal{ℰ}_4^\gamma\Big]\\
+&\qquad+(dn_3)_{12345}(n_3)_{0145}
+ +(dn_3)_{01235}(n_3)_{0345}
+ +n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma\Big]\\
 &+\frac14\Big[
  \beta_4^\gamma\cup_3\beta_4^\gamma
- +\widetilde{n}_3\cup_1\widetilde{n}_3-\omega_2\widetilde{n}_3
- +\widetilde{n}_3\cup_2d\widetilde{n}_3
+ +n_3\cup_1n_3-\omega_2n_3
+ +n_3\cup_2dn_3
  -\beta\big(\widetilde{\mathcal{𝒪}}_4[n_2]\big)\cup_4\beta_4^\gamma\\
-&\qquad-(d\widetilde{n}_3)_{01234}(d\widetilde{n}_3)_{01245}
- -(d\widetilde{n}_3)_{01234}(d\widetilde{n}_3)_{02345}\\
+&\qquad-(dn_3)_{01234}(dn_3)_{01245}
+ -(dn_3)_{01234}(dn_3)_{02345}\\
 &\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
  \epsilon\;[\sum_{\eta\in\mathcal P}
                          \prod_{(x,f)\in\eta}x_f]_2\Big]\pmod1.
@@ -183,12 +183,12 @@ their 106 interior products. Every lift boundary is retained.
 The [exact cochain-identity reduction](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md)
 collects the earlier 218 MS terms into 187, without changing any quarter phase. The derivative in the quarter bracket
 uses the exact lower-obstruction identity
-$`d\beta_4^\gamma=-\beta(\widetilde{\mathcal{𝒪}}_4[n_2])`$
+$`d\beta_4^\gamma=-\beta(\mathcal{𝒪}_4[n_2])`$
 on the stated input tower.
 This is the same open-cochain representative as the general formula.
-No cocycle hypothesis on $`\widetilde{n}_3`$ has been imposed. The phase
+No cocycle hypothesis on $`n_3`$ has been imposed. The phase
 transport adds the two displayed half terms
-$`[\widetilde{n}_3\cup_1\widetilde{n}_3-s_1\mathcal{ℰ}_4^\gamma]/2`$.
+$`[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]/2`$.
 In the shifted argument $`\widetilde{n}_4`$ the quarter-valued terms carry the
 sign of the complete tower. The [zero-p+ip self-stacking page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
 writes the same sector in the physical occupation $`n_4`$, where the
@@ -205,11 +205,11 @@ quarter-valued terms have the opposite sign; the
       \prod_{(x,f)\in\eta}x(f)
  +(\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi})
                          \cup_3[n_2]_2^2\\
-&\quad+\mathcal{𝒪}_5^\gamma[\widetilde{N}_3]\cup_4[n_2]_2^2
+&\quad+\mathcal{𝒪}_5^\gamma[N_3]\cup_4[n_2]_2^2
  +V_5^\gamma\cup_5V_5^{\gamma\psi}
  +V_5^\gamma\cup_5V_5^\psi
  +V_5^{\gamma\psi}\cup_5V_5^\psi
- +n_2\widetilde{n}_3-s_1\mathcal{ℰ}_4^{\gamma\psi}\Big]\\
+ +n_2n_3-s_1\mathcal{ℰ}_4^{\gamma\psi}\Big]\\
 &+\frac14[V_5^{\gamma\psi}]_2\pmod1.
 \end{aligned}
 ```
@@ -240,14 +240,14 @@ exactly here.
                                   \cup_4[n_2]_2^2
  +\mathop{\mathrm{MS}}\nolimits_{1231343}([n_2]_2,[n_2]_2,[n_2]_2,[n_2]_2)
  +[n_2]_2\cup_1\widetilde{\mathcal{𝒪}}_4[n_2]\\
-&\quad+[\lfloor n_2/2\rfloor]_2\widetilde{N}_3
+&\quad+[\lfloor n_2/2\rfloor]_2N_3
  +(\widetilde{\omega}_2\cup_1[n_2]_2)[n_2]_2
  +s_1[n_2]_2[\lfloor n_2/2\rfloor]_2
  +s_1([n_2]_2\cup_1s_1)[n_2]_2
- +\widetilde{\omega}_2\widetilde{N}_3\\
-&\quad+n_2\widetilde{N}_3+(n_2\cup_1\widetilde{\omega}_2)n_2-s_1\mathcal{ℰ}_4^\psi\Big]
+ +\widetilde{\omega}_2N_3\\
+&\quad+n_2N_3+(n_2\cup_1\widetilde{\omega}_2)n_2-s_1\mathcal{ℰ}_4^\psi\Big]
  +\frac14[V_5^\psi]_2
- +\frac18\widetilde{\omega}_2(n_2\cup_1n_2)-B_5[\widetilde{N}_3,0]\pmod1.
+ +\frac18\widetilde{\omega}_2(n_2\cup_1n_2)-B_5[N_3,0]\pmod1.
 \end{aligned}
 ```
 
@@ -258,7 +258,7 @@ use the same lower-operation conventions as the general formula. The
 remaining displayed terms add **14 outer terms**, giving **793,683 before the phase transport**.
 The protected pure lift has twelve interior terms. The denominator-three
 term of the general law vanishes identically on equal inputs.
-The extra half term and $`-B_5[\widetilde{N}_3,0]`$ are the remaining
+The extra half term and $`-B_5[N_3,0]`$ are the remaining
 pure-integer coordinate correction; the latter has 45 explicit terms
 with the defined output as its argument. Its complete coefficient list
 is shared with the general phase map rather than fitted on the diagonal.
@@ -274,17 +274,17 @@ records the arguments, scopes, checks, and remaining complexity.
 \begin{aligned}
 \lambda_3^\psi
  &=\frac{[[n_2]_2\cup_1[n_2]_2]_2+n_2\cup_1n_2}{2},\\
-\lambda_3^\gamma&=-\widetilde{n}_3,
+\lambda_3^\gamma&=-n_3,
  &\lambda_3^{\gamma\psi}&=0,\\
-\lambda_3&=-\widetilde{n}_3+\lambda_3^\psi,
- &d\lambda_3^\psi&=\beta\widetilde{N}_3.
+\lambda_3&=-n_3+\lambda_3^\psi,
+ &d\lambda_3^\psi&=\beta N_3.
 \end{aligned}
 ```
 
 The quotient is integral with the fixed signed higher cup. The closed-input
-Bockstein on its last line is legal because $`d\widetilde{N}_3=0`$.
+Bockstein on its last line is legal because $`dN_3=0`$.
 The already defined carries are
-$`\beta_4^\gamma=\beta^-\widetilde{n}_3`$ and
+$`\beta_4^\gamma=\beta^-n_3`$ and
 $`\beta_4^\psi=\beta_4-\beta_4^\gamma`$, with the exact integer-only definition
 [used in the general source and product](FOUR_DIMENSIONAL.md#eq-s1).
 In the following expressions all the $`\lambda_3^\psi`$ refer to their
@@ -293,7 +293,7 @@ value just displayed.
 ```math
 V_5^\gamma
  =\mathrm{Sq}^1[\beta_4^\gamma]_2+d[\beta_4^\gamma]_2
-   +\mathrm{Sq}^2\widetilde{n}_3+\omega_2\widetilde{n}_3.
+   +\mathrm{Sq}^2n_3+\omega_2n_3.
 ```
 
 This has **four terms**. The mixed numerator has **eight terms**:
@@ -303,13 +303,13 @@ This has **four terms**. The mixed numerator has **eight terms**:
 V_5^{\gamma\psi}
 ={}&d\Big[
  [\beta_4^\gamma]_2\cup_4[\beta_4^\psi]_2
- +\widetilde{n}_3\cup_2[\lambda_3^\psi]_2
- +d\widetilde{n}_3\cup_3[\lambda_3^\psi]_2
- +\widetilde{n}_3\cup_1[n_2]_2\Big]\\
+ +n_3\cup_2[\lambda_3^\psi]_2
+ +dn_3\cup_3[\lambda_3^\psi]_2
+ +n_3\cup_1[n_2]_2\Big]\\
 &+d[\beta_4^\gamma]_2\cup_5d[\beta_4^\psi]_2
- +d\widetilde{n}_3\cup_3d[\lambda_3^\psi]_2
- +[n_2]_2^2\cup_3d\widetilde{n}_3
- +d\widetilde{n}_3\cup_1[n_2]_2.
+ +dn_3\cup_3d[\lambda_3^\psi]_2
+ +[n_2]_2^2\cup_3dn_3
+ +dn_3\cup_1[n_2]_2.
 \end{aligned}
 ```
 
@@ -328,7 +328,7 @@ V_5^\psi
    +[\beta_{s_1}\widetilde{\omega}_2]_2)[n_2]_2
  +\mathop{\mathrm{MS}}\nolimits_{1231343}([n_2]_2,[n_2]_2,[n_2]_2,[n_2]_2)\\
 &+(\widetilde{\omega}_2\cup_1[n_2]_2)[n_2]_2
- +[\lfloor n_2/2\rfloor]_2\widetilde{N}_3+s_1[n_2]_2[\lfloor n_2/2\rfloor]_2
+ +[\lfloor n_2/2\rfloor]_2N_3+s_1[n_2]_2[\lfloor n_2/2\rfloor]_2
  +s_1([n_2]_2\cup_1s_1)[n_2]_2.
 \end{aligned}
 ```

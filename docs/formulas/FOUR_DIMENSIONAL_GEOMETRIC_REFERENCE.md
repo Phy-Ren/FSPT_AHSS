@@ -40,7 +40,7 @@ The fixed binary four-cochain is explicitly
 
 ```math
 \begin{aligned}
- R_4(01234)={}&(\widetilde{n}_3\cup_2\widetilde{n}_3)(01234)\\
+ R_4(01234)={}&(n_3\cup_2n_3)(01234)\\
  &+s_1(02)[\lfloor n_2/2\rfloor]_2(012)[n_2]_2(234)\\
  &+s_1(01)([n_2]_2\cup_1[n_2]_2)(1234)
        [[n_2]_2(124)+[n_2]_2(234)]\\
@@ -70,18 +70,16 @@ $`\Delta R_4`$ is the actual lower product:
 
 ```math
 N_2=n_2+n'_2,\qquad
-N_3=n_3+n'_3+[n_2]_2\cup_1[n'_2]_2
-             +s_1([n_2]_2\cup_2[n'_2]_2).
+N_3=n_3+n'_3+[n_2]_2\cup_1[n'_2]_2.
 ```
 
-Equivalently $`\widetilde{N}_3=\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal E}_3`$,
-with $`\widetilde{\mathcal E}_3=[n_2]_2\cup_1[n'_2]_2`$. The complete count is
+The complete count is
 
 ```math
 \begin{aligned}
 \Delta P_f(01234)={}&(\mathcal E_4+\Delta R_4)(01234)\\
-&+\sum_{i=0}^{4}\Big\{\big[\widetilde{n}_3\cup_3\widetilde{n}'_3
- +\widetilde{\mathcal E}_3\cup_3(\widetilde{n}_3+\widetilde{n}'_3)
+&+\sum_{i=0}^{4}\Big\{\big[n_3\cup_3n'_3
+ +\widetilde{\mathcal E}_3\cup_3(n_3+n'_3)
  +[\lfloor n_2/2\rfloor]_2\cup_1[\lfloor n'_2/2\rfloor]_2\big](abcd)\\
 &\qquad+[n_2]_2(abd)[\lfloor n'_2/2\rfloor]_2(bcd)
  +(1+s_1(ab))[\lfloor n_2/2\rfloor]_2(abd)[n'_2]_2(bcd)\\

@@ -361,7 +361,7 @@ d_{s_1}\nu_4=\mathcal{𝒪}_5
 **(M4, 3+1D)**
 
 This is the pure Majorana polynomial of the complete 3+1D tower at
-$`n_1=0`$, where $`\widetilde{n}_2=n_2`$ and $`\beta^- n_2=\beta n_2`$, with the
+$`n_1=0`$, where $`\beta^- n_2=\beta n_2`$, with the
 lattice sign of the quarter bracket appropriate to the physical occupation
 $`n_3`$:
 
@@ -488,7 +488,7 @@ N_3=n_3+n'_3+\mathcal{ℰ}_3,\qquad
 **(M7, 3+1D)**
 
 This is the Majorana contribution of the complete 3+1D product with
-$`\widetilde{n}_2=n_2`$, $`\widetilde{n}'_2=n'_2`$, $`\beta^-=\beta`$, and
+$`n_1=n'_1=0`$, $`\beta^-=\beta`$, and
 $`\lambda_2^\gamma=[n_2\cup_2n'_2]_2`$, again with the lattice sign of the
 quarter bracket. The lower output here is $`N_2=[n_2+n'_2]_2`$, and
 $`\mathcal{ℰ}_3^\gamma=\mathcal{ℰ}_3`$.
@@ -513,30 +513,30 @@ Here the binary completion is
 
 ```math
 \begin{aligned}
-z_4^\gamma={}&z^0_4(\widetilde{n}_2,\widetilde{n}'_2)
- +(\omega_2[\widetilde{n}_2+\widetilde{n}'_2]_2)\cup_3\mathcal{ℰ}_3^\gamma
- +d(\widetilde{n}_2\cup_1\widetilde{n}'_2)\cup_4
-       (\omega_2[\widetilde{n}_2+\widetilde{n}'_2]_2)\\
-&+(\widetilde{n}'_2)^2\cup_4(\omega_2\widetilde{n}_2)
- +[(\widetilde{n}'_2)^2+\omega_2\widetilde{n}'_2]\cup_4
-                     (s_1[\beta^-\widetilde{n}_2]_2)\\
+z_4^\gamma={}&z^0_4(n_2,n'_2)
+ +(\omega_2[n_2+n'_2]_2)\cup_3\mathcal{ℰ}_3^\gamma
+ +d(n_2\cup_1n'_2)\cup_4
+       (\omega_2[n_2+n'_2]_2)\\
+&+(n'_2)^2\cup_4(\omega_2n_2)
+ +[(n'_2)^2+\omega_2n'_2]\cup_4
+                     (s_1[\beta^-n_2]_2)\\
 &+(\omega_2\cup_1s_1)\lambda_2^\gamma
- +(\widetilde{n}_2\cup_1\widetilde{n}'_2)\cup_3
-       [s_1([\beta^-\widetilde{n}_2]_2
-                       +[\beta^-\widetilde{n}'_2]_2)]\\
-&+[\widetilde{n}_2+\widetilde{n}'_2]_2^{\,2}\cup_3(s_1\lambda_2^\gamma)
- +(\widetilde{n}_2\cup_1\widetilde{n}'_2)\cup_2(s_1\lambda_2^\gamma)\\
+ +(n_2\cup_1n'_2)\cup_3
+       [s_1([\beta^-n_2]_2
+                       +[\beta^-n'_2]_2)]\\
+&+[n_2+n'_2]_2^{\,2}\cup_3(s_1\lambda_2^\gamma)
+ +(n_2\cup_1n'_2)\cup_2(s_1\lambda_2^\gamma)\\
 &+s_1\Big[\mathcal{ℰ}_3^\gamma
- +[\beta^-\widetilde{n}_2]_2\cup_3
-                     [\beta^-\widetilde{n}'_2]_2
+ +[\beta^-n_2]_2\cup_3
+                     [\beta^-n'_2]_2
  +\lambda_2^\gamma\cup_1\lambda_2^\gamma\\
-&\qquad+([\beta^-\widetilde{n}_2]_2
-                      +[\beta^-\widetilde{n}'_2]_2)
+&\qquad+([\beta^-n_2]_2
+                      +[\beta^-n'_2]_2)
                     \cup_3(s_1\lambda_2^\gamma)
  +(s_1\lambda_2^\gamma)\cup_2\lambda_2^\gamma\\
 &\qquad+[
- \beta^{-+}[\widetilde{n}_2+\widetilde{n}'_2]_2
- -\beta^{-+}\widetilde{n}_2-\beta^{-+}\widetilde{n}'_2]_2\Big].
+ \beta^{-+}[n_2+n'_2]_2
+ -\beta^{-+}n_2-\beta^{-+}n'_2]_2\Big].
 \end{aligned}
 ```
 
@@ -655,7 +655,7 @@ d_{s_1}\nu_5=\mathcal{𝒪}_6
 
 **(M4, 4+1D)**
 
-Here the integer decoration is zero, so $`\widetilde{n}_3=n_3`$ and
+Here the integer decoration is zero, so
 $`\beta^- n_3=\beta n_3`$. In the physical occupation $`n_4`$ the
 Majorana contribution is
 
@@ -799,7 +799,7 @@ Here $`dn_4=\mathcal{𝒪}_5^\gamma`$ and $`N_4`$ is the binary output above:
 **(M7, 4+1D)**
 
 This is the [complete two-input law](FOUR_DIMENSIONAL.md#eq-t4c)
-restricted to $`n_2=n'_2=0`$, $`\widetilde{n}_3=n_3`$, and $`dn_3=dn'_3=0`$,
+restricted to $`n_2=n'_2=0`$ and $`dn_3=dn'_3=0`$,
 written in the physical occupation $`n_4`$.
 In particular $`\beta^-=\beta`$, $`\lambda_4^\gamma=0`$, and
 $`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; the terms containing

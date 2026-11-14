@@ -13,14 +13,14 @@ $`(012345)`$:
  [\binom{(-1)^{s_1(02)}[n'_2(235)-n'_2(234)]}k]_2\\
 &\qquad\times
  [\binom{(-1)^{s_1(03)}n'_2(345)}l]_2
- [\widetilde{n}'_3(2345)+\widetilde{\omega}_2(023)[n'_2]_2(345)]^e\\
+ [n'_3(2345)+\widetilde{\omega}_2(023)[n'_2]_2(345)]^e\\
 &+\sum_{(i,j,k,l,e)\in\mathcal I_{3,2}}
  [\binom{(-1)^{s_1(03)}n'_2(345)}i]_2
  [\binom{n_2(012)}j]_2
  [\binom{n_2(013)-n_2(012)}k]_2\\
 &\qquad\times
  [\binom{(-1)^{s_1(01)}n_2(123)}l]_2
- [\widetilde{n}_3(0123)]^e.
+ [n_3(0123)]^e.
 \end{aligned}
 ```
 

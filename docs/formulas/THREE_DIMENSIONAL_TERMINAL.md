@@ -63,11 +63,11 @@ the obstruction and on the triangle fields for stacking:
 
 ```math
 \begin{aligned}
-\mathcal{𝒪}_6^J={}&\frac12\Big[\mathrm{Sq}^2 {n_4^J}+\omega_2 {n_4^J}+T_6[\widetilde{n}_3^J;\omega_2,s_1]+\widetilde{n}_3^J([\beta\omega_2]_2+s_1\omega_2)\\
- &\qquad +(\mathrm{Sq}^2\widetilde{n}_3^J+s_1\mathrm{Sq}^1\widetilde{n}_3^J+\omega_2\widetilde{n}_3^J)
+\mathcal{𝒪}_6^J={}&\frac12\Big[\mathrm{Sq}^2 {n_4^J}+\omega_2 {n_4^J}+T_6[n_3^J;\omega_2,s_1]+n_3^J([\beta\omega_2]_2+s_1\omega_2)\\
+ &\qquad +(\mathrm{Sq}^2n_3^J+s_1\mathrm{Sq}^1n_3^J+\omega_2n_3^J)
  \cup_4\mathcal{𝒪}_5^{\psi,J}+y_6[{n_2^J};\omega_2,s_1]\\
- &\qquad +[\beta^-\widetilde{n}_3^J]_2\cup_2[\beta_4^{\psi,J}]_2
- +s_1([\beta^-\widetilde{n}_3^J]_2\cup_3[\beta_4^{\psi,J}]_2)\Big]\\
+ &\qquad +[\beta^-n_3^J]_2\cup_2[\beta_4^{\psi,J}]_2
+ +s_1([\beta^-n_3^J]_2\cup_3[\beta_4^{\psi,J}]_2)\Big]\\
  &+\frac14\big[\beta_4^J\cup_2\beta_4^J+\beta_4^J\cup_3d\beta_4^J+\omega_2 \beta_4^J\big]\\
  &-\frac14[\big[\mathop{\mathrm{MS}}\nolimits_{12132434}
  ([\beta_{s_1}\widetilde{\omega}_2]_2,[\beta_{s_1}\widetilde{\omega}_2]_2,[n_2^J]_2,[n_2^J]_2)
@@ -99,14 +99,14 @@ lift uses both inputs and their displayed lower stacking corrections:
 | Symbol in this construction | Obstruction evaluation | Stacking evaluation |
 |---|---|---|
 | $`\uparrow n_1`$ | $`n_2^I`$ | $`n_2^\triangle`$ |
-| $`\uparrow\widetilde{n}_2`$ | $`\widetilde{n}_3^I`$ | $`\widetilde{n}_3^\triangle`$ |
+| $`\uparrow n_2`$ | $`n_3^I`$ | $`n_3^\triangle`$ |
 | $`\uparrow n_3`$ | $`n_4^I`$ | $`n_4^\triangle`$ |
 | $`\beta_4^\uparrow`$ | $`\beta_4^I`$ | $`\beta_4^\triangle`$ |
 | $`\beta_4^{\psi,\uparrow}`$ | $`\beta_4^{\psi,I}`$ | $`\beta_4^{\psi,\triangle}`$ |
 | $`\mathcal{𝒪}_5^\psi[\uparrow n_1]`$ | $`\mathcal{𝒪}_5^{\psi,I}`$ | $`\mathcal{𝒪}_5^{\psi,\triangle}`$ |
 
 Every entry on the right is defined explicitly below. In particular,
-$`\uparrow\widetilde{n}_2`$ and $`\uparrow n_3`$ include the mixed terms and
+$`\uparrow n_2`$ and $`\uparrow n_3`$ include the mixed terms and
 fixed cochain fills in those definitions. They are not independently
 chosen linear suspensions of the individual fields. Backgrounds are pulled
 from the physical base throughout.
@@ -134,8 +134,8 @@ space. The definitions are local to the auxiliary fields:
 \widetilde{\mathcal{𝒪}}_4^J&=[n_2^J]_2^2+\widetilde{\omega}_2[n_2^J]_2
  \quad\text{in }\mathbb Z_2,\\
 \beta_4^{\psi,J}&=\frac{\widetilde{\mathcal{𝒪}}_4^J-{n_2^J}^2-\widetilde{\omega}_2{n_2^J}}{2},\\
-\beta_4^J&=\beta^-\widetilde{n}_3^J+\beta_4^{\psi,J}
- =\frac{d\widetilde{n}_3^J-{n_2^J}^2-\widetilde{\omega}_2{n_2^J}}{2},\\
+\beta_4^J&=\beta^-n_3^J+\beta_4^{\psi,J}
+ =\frac{dn_3^J-{n_2^J}^2-\widetilde{\omega}_2{n_2^J}}{2},\\
 d\beta_4^J&=-(\beta_{s_1}\widetilde{\omega}_2){n_2^J}.
 \end{aligned}
 ```
@@ -145,7 +145,7 @@ d\beta_4^J&=-(\beta_{s_1}\widetilde{\omega}_2){n_2^J}.
 This construction uses cochains on an interval or triangle times the
 physical base. They are **auxiliary**, not additional physical decorations.
 A superscript $`J\in\{I,\triangle\}`$ always marks them: $`n_2^J`$ is
-integer, while $`\widetilde{n}_3^J,n_4^J`$ are binary. The physical $`n_2`$ in
+integer, while $`n_3^J,n_4^J`$ are binary. The physical $`n_2`$ in
 this section remains Majorana decoration.
 
 On the oriented triangle $`012`$, the integer one-cocycles
@@ -163,8 +163,8 @@ binary expressions.
 ```math
 \begin{aligned}
 {n_2^\triangle}&={\theta_1} {n_{1}}+{\theta'_1} {n'_{1}},\\
-{\widetilde{n}_3^\triangle}&={\theta_1} {\widetilde{n}_{2}}+{\theta'_1} {\widetilde{n}'_{2}}+({\widetilde{\omega}_2}\cup_1{\theta_1}){[n_{1}]_2}
- +({\widetilde{\omega}_2}\cup_1{\theta'_1}){[n'_{1}]_2}+{\chi_1} {\widetilde{\mathcal{ℰ}}_{2}}+{\theta_1}({[n_{1}]_2}\cup_1{\theta'_1}){[n'_{1}]_2},
+{n_3^\triangle}&={\theta_1} {n_2}+{\theta'_1} {n'_2}+({\widetilde{\omega}_2}\cup_1{\theta_1}){[n_{1}]_2}
+ +({\widetilde{\omega}_2}\cup_1{\theta'_1}){[n'_{1}]_2}+{\chi_1} {\mathcal{ℰ}_{2}}+{\theta_1}({[n_{1}]_2}\cup_1{\theta'_1}){[n'_{1}]_2},
 \end{aligned}
 ```
 
@@ -172,7 +172,7 @@ For the interval, $`\theta_1(01)=1`$ and the second input is absent:
 
 ```math
 n_2^I=\theta_1 n_1,\qquad
-\widetilde{n}_3^I=\theta_1\widetilde{n}_2+(\widetilde{\omega}_2\cup_1\theta_1)[n_1]_2.
+n_3^I=\theta_1n_2+(\widetilde{\omega}_2\cup_1\theta_1)[n_1]_2.
 ```
 
 The following binary degree-five source is evaluated on these auxiliary
@@ -184,8 +184,8 @@ phase obstruction $`\mathcal{𝒪}_5`$:
 **(Auxiliary source)**
 
 ```math
-\mathcal{𝒪}_5^J=\mathrm{Sq}^2\widetilde{n}_3^J+s_1\mathrm{Sq}^1\widetilde{n}_3^J
- +\omega_2\widetilde{n}_3^J+\mathcal{𝒪}_5^{\psi,J}.
+\mathcal{𝒪}_5^J=\mathrm{Sq}^2n_3^J+s_1\mathrm{Sq}^1n_3^J
+ +\omega_2n_3^J+\mathcal{𝒪}_5^{\psi,J}.
 ```
 
 <a id="eq-aux-pip5"></a>
@@ -213,11 +213,11 @@ corrections are written directly, without additional named sum wrappers.
 ```math
 \begin{aligned}
 n_4^\triangle={}&(\mathsf h_4^{(2)})^*\mathcal{𝒪}_5^\triangle\\
- &+\theta_1\big[n_3+\widetilde{\omega}_2[\lfloor n_1/2\rfloor]_2+\widetilde{n}_2\cup_2d\widetilde{n}_2+(s_1\cup_1\omega_2)[n_1]_2\big]\\
- &+\theta'_1\big[n'_3+\widetilde{\omega}_2[\lfloor n'_1/2\rfloor]_2+\widetilde{n}'_2\cup_2d\widetilde{n}'_2+(s_1\cup_1\omega_2)[n'_1]_2\big]\\
- &+\chi_1\Big(\mathcal{ℰ}_3+\Delta\big[\widetilde{\omega}_2[\lfloor n_1/2\rfloor]_2+\widetilde{n}_2\cup_2d\widetilde{n}_2+(s_1\cup_1\omega_2)[n_1]_2\big]\Big)\\
+ &+\theta_1\big[n_3+\widetilde{\omega}_2[\lfloor n_1/2\rfloor]_2+n_2\cup_2dn_2+(s_1\cup_1\omega_2)[n_1]_2\big]\\
+ &+\theta'_1\big[n'_3+\widetilde{\omega}_2[\lfloor n'_1/2\rfloor]_2+n'_2\cup_2dn'_2+(s_1\cup_1\omega_2)[n'_1]_2\big]\\
+ &+\chi_1\Big(\mathcal{ℰ}_3+\Delta\big[\widetilde{\omega}_2[\lfloor n_1/2\rfloor]_2+n_2\cup_2dn_2+(s_1\cup_1\omega_2)[n_1]_2\big]\Big)\\
  &+(d\chi_1)\Big[[\lfloor n_1/2\rfloor]_2[n'_1]_2+([n_1]_2+[\lfloor n_1/2\rfloor]_2)[\lfloor n'_1/2\rfloor]_2
- +\widetilde{\mathcal{ℰ}}_2\cup_2(\widetilde{n}_2+\widetilde{n}'_2)+\widetilde{\mathcal{ℰ}}_2\\
+ +\mathcal{ℰ}_2\cup_2(n_2+n'_2)+\mathcal{ℰ}_2\\
  &\qquad +(s_1\cup_1[n_1]_2)([n_1]_2\cup_1[n'_1]_2)
  +[s_1\cup_1([n_1]_2\cup_1[n'_1]_2)]([n_1]_2+[n'_1]_2)\Big].
 \end{aligned}
@@ -229,7 +229,7 @@ n_4^\triangle={}&(\mathsf h_4^{(2)})^*\mathcal{𝒪}_5^\triangle\\
 
 ```math
 n_4^I=(\mathsf h_4^{(2)})^*\mathcal{𝒪}_5^I
- +\theta_1\big[n_3+\widetilde{\omega}_2[\lfloor n_1/2\rfloor]_2+\widetilde{n}_2\cup_2d\widetilde{n}_2+(s_1\cup_1\omega_2)[n_1]_2\big].
+ +\theta_1\big[n_3+\widetilde{\omega}_2[\lfloor n_1/2\rfloor]_2+n_2\cup_2dn_2+(s_1\cup_1\omega_2)[n_1]_2\big].
 ```
 
 All brackets defining these binary fields are evaluated modulo two.

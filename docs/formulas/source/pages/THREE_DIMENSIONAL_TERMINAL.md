@@ -73,14 +73,14 @@ lift uses both inputs and their displayed lower stacking corrections:
 | Symbol in this construction | Obstruction evaluation | Stacking evaluation |
 |---|---|---|
 | $`\uparrow n_1`$ | $`n_2^I`$ | $`n_2^\triangle`$ |
-| $`\uparrow\widetilde{n}_2`$ | $`\widetilde{n}_3^I`$ | $`\widetilde{n}_3^\triangle`$ |
+| $`\uparrow n_2`$ | $`n_3^I`$ | $`n_3^\triangle`$ |
 | $`\uparrow n_3`$ | $`n_4^I`$ | $`n_4^\triangle`$ |
 | $`\beta_4^\uparrow`$ | $`\beta_4^I`$ | $`\beta_4^\triangle`$ |
 | $`\beta_4^{\psi,\uparrow}`$ | $`\beta_4^{\psi,I}`$ | $`\beta_4^{\psi,\triangle}`$ |
 | $`\mathcal{𝒪}_5^\psi[\uparrow n_1]`$ | $`\mathcal{𝒪}_5^{\psi,I}`$ | $`\mathcal{𝒪}_5^{\psi,\triangle}`$ |
 
 Every entry on the right is defined explicitly below. In particular,
-$`\uparrow\widetilde{n}_2`$ and $`\uparrow n_3`$ include the mixed terms and
+$`\uparrow n_2`$ and $`\uparrow n_3`$ include the mixed terms and
 fixed cochain fills in those definitions. They are not independently
 chosen linear suspensions of the individual fields. Backgrounds are pulled
 from the physical base throughout.
@@ -110,7 +110,7 @@ space. The definitions are local to the auxiliary fields:
 This construction uses cochains on an interval or triangle times the
 physical base. They are **auxiliary**, not additional physical decorations.
 A superscript $`J\in\{I,\triangle\}`$ always marks them: $`n_2^J`$ is
-integer, while $`\widetilde{n}_3^J,n_4^J`$ are binary. The physical $`n_2`$ in
+integer, while $`n_3^J,n_4^J`$ are binary. The physical $`n_2`$ in
 this section remains Majorana decoration.
 
 On the oriented triangle $`012`$, the integer one-cocycles

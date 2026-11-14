@@ -14,8 +14,8 @@ This page compares to the previous coordinate and proves the full phase transpor
 
 ```math
 \begin{aligned}
-\widetilde{n}_3&=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2,\\
-d\widetilde{n}_3&=\mathcal{𝒪}_4+d(\widetilde{n}_2\cup_1\widetilde{n}_2).
+\widetilde{n}_3&=n_3+n_2\cup_1n_2,\\
+d\widetilde{n}_3&=\mathcal{𝒪}_4+d(n_2\cup_1n_2).
 \end{aligned}
 ```
 
@@ -35,8 +35,8 @@ The pure p+ip obstruction is unchanged.
 \mathcal B_2(012)={}&[n_1]_2(01)[\lfloor n'_1/2\rfloor]_2(12)
  +[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)
  +[\lfloor n_1/2\rfloor]_2(01)[\lfloor n'_1/2\rfloor]_2(12)\\
-&+\widetilde{n}_2(012)\widetilde{n}'_2(012)
- +[n_1]_2(01)[n'_1]_2(12)[\widetilde{n}_2(012)+\widetilde{n}'_2(012)]\\
+&+n_2(012)n'_2(012)
+ +[n_1]_2(01)[n'_1]_2(12)[n_2(012)+n'_2(012)]\\
 &+s_1(01)\{[\lfloor n_1/2\rfloor]_2(01)[n'_1]_2(12)
  +[n_1]_2(01)[n'_1]_2(01)[[n_1]_2(12)+[n'_1]_2(12)]\}.
 \end{aligned}
@@ -44,8 +44,8 @@ The pure p+ip obstruction is unchanged.
 
 ```math
 \begin{aligned}
-\widetilde{\mathcal{ℰ}}_3&=\mathcal{ℰ}_3+\Delta(\widetilde{n}_2\cup_1\widetilde{n}_2)+d\mathcal B_2,\\
-\widetilde{N}_3&=N_3+\widetilde{N}_2\cup_1\widetilde{N}_2
+\widetilde{\mathcal{ℰ}}_3&=\mathcal{ℰ}_3+\Delta(n_2\cup_1n_2)+d\mathcal B_2,\\
+\widetilde{N}_3&=N_3+N_2\cup_1N_2
  =\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal{ℰ}}_3+d\mathcal B_2.
 \end{aligned}
 ```
@@ -105,7 +105,7 @@ exchange homotopies; a source-only substitution would be incorrect.
 
 The diagonal of the new pure sheet term has two terms, because
 The nested cup $[a\cup_1(a^2)]a$ vanishes for a closed binary one-cochain $a$. Thus
-$`N_3=\mathrm{Sq}^1\widetilde{n}_2+s_1\widetilde{n}_2+[\lfloor n_1/2\rfloor]_2[n_1]_2^2+s_1[\lfloor n_1/2\rfloor]_2[n_1]_2`$.
+$`N_3=\mathrm{Sq}^1n_2+s_1n_2+[\lfloor n_1/2\rfloor]_2[n_1]_2^2+s_1[\lfloor n_1/2\rfloor]_2[n_1]_2`$.
 For either finite-root branch, `n1=0` or `n1=s1`, one has
 `B2=check n2` and `check N2 cup1 check N2=0`. The previous output in every retained
 self-stacking coefficient formula is consequently `N3+d check n2`.

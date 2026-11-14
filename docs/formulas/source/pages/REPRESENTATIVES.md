@@ -68,7 +68,7 @@ The actual stacked output is used in the last line. This yields the displayed c,
 ## 4+1D: current compact Majorana phase
 
 The guide then applies the single [explicit phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-$`\nu_5\mapsto\nu_5-B_5[\widetilde{n}_3,\widetilde{n}_4]`$.
+$`\nu_5\mapsto\nu_5-B_5[n_3,\widetilde{n}_4]`$.
 Its source changes by $`-d_{s_1}B_5`$ and its product by $`-\Delta B_5`$,
 evaluated on the same actual lower stacking output. The inverse adds
 $`B_5`$; every lower decoration and lower product is fixed.

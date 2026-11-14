@@ -22,7 +22,7 @@ fixed in [Operations](OPERATIONS.md).
 
 The shifted background is $`\widetilde{\omega}_2=\omega_2+s_1\cup s_1`$ and the
 closed degree-four source is
-$`\widetilde{\mathcal{𝒪}}_4=[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$.
+$`\mathcal{𝒪}_4=[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$.
 The source $`\mathcal{𝒪}^\psi_5`$, the residual $`\beta_4^\psi`$, and the
 Pontryagin-square representative $`\mathfrak P_{s_1}`$ have the definitions
 in the guide. The Bocksteins $`\beta,\beta_{s_1},\beta^+`$ and finite cup
@@ -156,7 +156,7 @@ outer braces are integer operations, including the differential on the
 square bracket. Each subexpression enclosed in $`[\cdot]_2`$ supplies its canonical binary
 value before that integer assembly. In particular no fraction is reduced
 modulo one partway through the calculation. The ordinary Bockstein of
-$`\widetilde{\mathcal{𝒪}}_4`$ is defined because that source is closed.
+$`\mathcal{𝒪}_4`$ is defined because that source is closed.
 
 For the first term use the three-factor grid (O11), ordered
 $`(s_1,n_2,\omega_2)`$. On grid vertices $`(r_i,t_i,v_i)`$, pull $`s_1`$ along

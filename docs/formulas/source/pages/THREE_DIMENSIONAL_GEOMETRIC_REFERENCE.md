@@ -74,7 +74,7 @@ exchange homotopies; a source-only substitution would be incorrect.
 
 The diagonal of the new pure sheet term has two terms, because
 The nested cup $[a\cup_1(a^2)]a$ vanishes for a closed binary one-cochain $a$. Thus
-$`N_3=\mathrm{Sq}^1\widetilde{n}_2+s_1\widetilde{n}_2+[\lfloor n_1/2\rfloor]_2[n_1]_2^2+s_1[\lfloor n_1/2\rfloor]_2[n_1]_2`$.
+$`N_3=\mathrm{Sq}^1n_2+s_1n_2+[\lfloor n_1/2\rfloor]_2[n_1]_2^2+s_1[\lfloor n_1/2\rfloor]_2[n_1]_2`$.
 For either finite-root branch, `n1=0` or `n1=s1`, one has
 `B2=check n2` and `check N2 cup1 check N2=0`. The previous output in every retained
 self-stacking coefficient formula is consequently `N3+d check n2`.

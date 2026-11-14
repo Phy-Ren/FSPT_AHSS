@@ -50,7 +50,7 @@ published fixed-point lattice constructions. It is stated once here.
   lower p+ip layers use it directly. Only the terminal layer with p+ip
   decoration, in 3+1D and 4+1D, is written in a shifted argument
   $`\widetilde{n}_d=n_d+R_d`$ with an explicit fixed polynomial $`R_d`$:
-  $`R_3=\widetilde{n}_2\cup_1\widetilde{n}_2`$ in
+  $`R_3=n_2\cup_1n_2`$ in
   [3+1D](formulas/THREE_DIMENSIONAL.md) and the four-face polynomial
   $`R_4`$ of the [4+1D pairing reference](formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
   The phases there are still physical.
@@ -102,7 +102,7 @@ labels for the variables appearing after lower equations are substituted.
 In particular, a c-gamma factor may depend on a Majorana differential;
 expanding that differential does not by itself change the exchange origin. A mixed superscript identifies an interaction between the indicated physical layers. The pieces are parts of the full
 cochain equation; they need not be separately closed. In the p+ip sections they refer to the
-displayed shifted Majorana field; rewriting it in native fields redistributes
+displayed fields; rewriting the formulas in other variables redistributes
 some mixed terms.
 
 <a id="conventions-and-coordinates"></a>

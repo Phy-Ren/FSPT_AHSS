@@ -4,7 +4,7 @@
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
-This is a retained coefficient/derivation kernel. Its CF input `n3` means the current $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$; its product uses the previous output $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is $`N_3+d\widetilde{n}_2`$. Frozen coefficient values are unchanged.
+This is a retained coefficient/derivation kernel. Its CF input `n3` means the current $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$; its product uses the previous output $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is $`N_3+dn_2`$. Frozen coefficient values are unchanged.
 
 This coefficient definition replaces the 24,935-row ordinary product
 list by finite seed and index rules. Every final summand is a standard
@@ -20,9 +20,9 @@ The lower half-valued polynomial is the ordinary sum with indices
 \begin{aligned}
 \mathcal I_4={}&\mathcal I_T+\mathcal I_{\rm other}
  +\mathcal I_q+\mathcal I_{\rm CF}
- +{s_1}^2[{\widetilde{n}_2}\cup_2({[n_1]_2}{[n'_1]_2})]\\
-&+{s_1}{\mathcal{ℰ}_3}+H_4[{\widetilde{N}_2}]+H_4[{\widetilde{n}_2}]+H_4[{\widetilde{n}'_2}]+P_4[{\widetilde{N}_2},{\mathcal{ℰ}_3}]
- +dH_3^{\rm pure}[{\widetilde{n}_2},{\widetilde{n}'_2}]\\
+ +{s_1}^2[{n_2}\cup_2({[n_1]_2}{[n'_1]_2})]\\
+&+{s_1}{\mathcal{ℰ}_3}+H_4[{N_2}]+H_4[{n_2}]+H_4[{n'_2}]+P_4[{N_2},{\mathcal{ℰ}_3}]
+ +dH_3^{\rm pure}[{n_2},{n'_2}]\\
 &+{\mathcal{𝒪}_4}\cup_4{\mathcal{𝒪}_4}'+{\mathcal{ℰ}_3}\cup_3{\mathcal{𝒪}_4}^{\rm out}
  +\mathcal I_{4,F}.
 \end{aligned}
@@ -34,12 +34,12 @@ The lower output and full CF obstruction inputs are
 
 ```math
 \begin{aligned}
-\widetilde{N}_2&=\widetilde{n}_2+\widetilde{n}'_2+[n_1]_2[n'_1]_2,\\
-\mathcal{𝒪}_4&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\widetilde{n}_2]
+N_2&=n_2+n'_2+[n_1]_2[n'_1]_2,\\
+\mathcal{𝒪}_4&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[n_2]
                   +\mathcal{𝒪}_4^\psi[n_1],\\
-\mathcal{𝒪}'_4&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\widetilde{n}'_2]
+\mathcal{𝒪}'_4&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[n'_2]
                   +\mathcal{𝒪}_4^\psi[n'_1],\\
-\mathcal{𝒪}^{\rm out}_4&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\widetilde{N}_2]
+\mathcal{𝒪}^{\rm out}_4&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[N_2]
                   +\mathcal{𝒪}_4^\psi[n_1+n'_1].
 \end{aligned}
 ```
@@ -131,7 +131,7 @@ For this coefficient definition only, put
 \begin{aligned}
 X&=L{[n_1]_2}+R{[n'_1]_2},\\
 H&=L{[\lfloor n_1/2\rfloor]_2}+R{[\lfloor n'_1/2\rfloor]_2}+({s_1}\cup_1L){[n_1]_2}+({s_1}\cup_1R){[n'_1]_2}+D({[n_1]_2}\cup_1{[n'_1]_2}),\\
-V&=L{\widetilde{n}_2}+R{\widetilde{n}'_2}+\mathop{\mathrm{MS}}\nolimits_{1213}({\widetilde{\omega}_2},L,{[n_1]_2})
+V&=L{n_2}+R{n'_2}+\mathop{\mathrm{MS}}\nolimits_{1213}({\widetilde{\omega}_2},L,{[n_1]_2})
               +\mathop{\mathrm{MS}}\nolimits_{1213}({\widetilde{\omega}_2},R,{[n'_1]_2})
               +D({[n_1]_2}{[n'_1]_2})+\mathop{\mathrm{MS}}\nolimits_{12324}(L,{[n_1]_2},R,{[n'_1]_2}),\\
 A&=\mathop{\mathrm{MS}}\nolimits_{1234}(L,{[n_1]_2},R,{[n'_1]_2})+{\widetilde{\omega}_2}L{[n_1]_2}+{\widetilde{\omega}_2}R{[n'_1]_2},\\
@@ -152,7 +152,7 @@ includes both p+ip input branches and the actual lower stacking carry.
 The background and low-field differential rules are
 
 ```math
-d{\widetilde{n}_2}={\widetilde{\omega}_2}{[n_1]_2},\quad d{\widetilde{n}'_2}={\widetilde{\omega}_2}{[n'_1]_2},\quad d{[\lfloor n_1/2\rfloor]_2}={[n_1]_2}^2+{s_1}{[n_1]_2},\quad d{[\lfloor n'_1/2\rfloor]_2}={[n'_1]_2}^2+{s_1}{[n'_1]_2},
+d{n_2}={\widetilde{\omega}_2}{[n_1]_2},\quad d{n'_2}={\widetilde{\omega}_2}{[n'_1]_2},\quad d{[\lfloor n_1/2\rfloor]_2}={[n_1]_2}^2+{s_1}{[n_1]_2},\quad d{[\lfloor n'_1/2\rfloor]_2}={[n'_1]_2}^2+{s_1}{[n'_1]_2},
 \quad dD=LR,
 \quad d{[n_1]_2}=d{[n'_1]_2}=d{\widetilde{\omega}_2}=d{\omega_2}=d{s_1}=dL=dR=0.
 ```
@@ -165,7 +165,7 @@ Keep its 1,176 ordinary words in the four formal arguments $`y,dy,\omega_2,s_1`$
 after replacing Bockstein parities by the stated cochain Sq1 expressions
 and separating the single second-carry term. Substitute `y=V,dy=A` and
 apply S2. This is `I_T`; it has 13,288 ordinary physical indices. The exact
-separated carry is the already displayed $`s_1^2[\widetilde{n}_2\cup_2([n_1]_2[n'_1]_2)]`$, and must not be
+separated carry is the already displayed $`s_1^2[n_2\cup_2([n_1]_2[n'_1]_2)]`$, and must not be
 added a second time.
 
 The two remaining source blocks have the short combined index seed
@@ -186,13 +186,13 @@ The small low-degree seed polynomials required here are
 
 ```math
 \begin{aligned}
-D_3({[n_1]_2},{[\lfloor n_1/2\rfloor]_2},{\widetilde{n}_2})&={\widetilde{\omega}_2}{[\lfloor n_1/2\rfloor]_2}+{\widetilde{n}_2}\cup_2({\widetilde{\omega}_2}{[n_1]_2})+({s_1}\cup_1{\omega_2}){[n_1]_2},\\
-g_2&={[\lfloor n_1/2\rfloor]_2}{[n'_1]_2}+({[n_1]_2}+{[\lfloor n_1/2\rfloor]_2}){[\lfloor n'_1/2\rfloor]_2}+({[n_1]_2}{[n'_1]_2})\cup_2({\widetilde{n}_2}+{\widetilde{n}'_2})+{[n_1]_2}{[n'_1]_2}\\
+D_3({[n_1]_2},{[\lfloor n_1/2\rfloor]_2},{n_2})&={\widetilde{\omega}_2}{[\lfloor n_1/2\rfloor]_2}+{n_2}\cup_2({\widetilde{\omega}_2}{[n_1]_2})+({s_1}\cup_1{\omega_2}){[n_1]_2},\\
+g_2&={[\lfloor n_1/2\rfloor]_2}{[n'_1]_2}+({[n_1]_2}+{[\lfloor n_1/2\rfloor]_2}){[\lfloor n'_1/2\rfloor]_2}+({[n_1]_2}{[n'_1]_2})\cup_2({n_2}+{n'_2})+{[n_1]_2}{[n'_1]_2}\\
 &\quad+({s_1}\cup_1{[n_1]_2})({[n_1]_2}\cup_1{[n'_1]_2})
  +({s_1}\cup_1({[n_1]_2}\cup_1{[n'_1]_2}))({[n_1]_2}+{[n'_1]_2}),\\
-G&=\mathsf R(J)+LD_3({[n_1]_2},{[\lfloor n_1/2\rfloor]_2},{\widetilde{n}_2})+RD_3({[n'_1]_2},{[\lfloor n'_1/2\rfloor]_2},{\widetilde{n}'_2})\\
-&\quad+D\big[{\mathcal{ℰ}_3}+D_3({[n_1]_2}+{[n'_1]_2},{[\lfloor n_1/2\rfloor]_2}+{[\lfloor n'_1/2\rfloor]_2}+{[n_1]_2}\cup_1{[n'_1]_2},{\widetilde{N}_2})
-                 +D_3({[n_1]_2},{[\lfloor n_1/2\rfloor]_2},{\widetilde{n}_2})+D_3({[n'_1]_2},{[\lfloor n'_1/2\rfloor]_2},{\widetilde{n}'_2})\big]+LRg_2,\\
+G&=\mathsf R(J)+LD_3({[n_1]_2},{[\lfloor n_1/2\rfloor]_2},{n_2})+RD_3({[n'_1]_2},{[\lfloor n'_1/2\rfloor]_2},{n'_2})\\
+&\quad+D\big[{\mathcal{ℰ}_3}+D_3({[n_1]_2}+{[n'_1]_2},{[\lfloor n_1/2\rfloor]_2}+{[\lfloor n'_1/2\rfloor]_2}+{[n_1]_2}\cup_1{[n'_1]_2},{N_2})
+                 +D_3({[n_1]_2},{[\lfloor n_1/2\rfloor]_2},{n_2})+D_3({[n'_1]_2},{[\lfloor n'_1/2\rfloor]_2},{n'_2})\big]+LRg_2,\\
 dG&=J+L{\mathcal{𝒪}_4}+R{\mathcal{𝒪}_4}'.
 \end{aligned}
 ```
@@ -202,9 +202,9 @@ in the common seeds: delete terms containing R or D and all primed inputs.
 Then use the displayed J with those reduced seeds. The binary phase numerator is
 
 ```math
-f_{c,*}({[n_1]_2},{[\lfloor n_1/2\rfloor]_2},{\widetilde{n}_2},n_3)
- =S1\big[(\mathsf R(J)+LD_3({[n_1]_2},{[\lfloor n_1/2\rfloor]_2},{\widetilde{n}_2}))\cup_3(Ln_3)
-       +(J+L\mathcal{𝒪}_4[n_1,{\widetilde{n}_2}])\cup_4(Ln_3)\big].
+f_{c,*}({[n_1]_2},{[\lfloor n_1/2\rfloor]_2},{n_2},n_3)
+ =S1\big[(\mathsf R(J)+LD_3({[n_1]_2},{[\lfloor n_1/2\rfloor]_2},{n_2}))\cup_3(Ln_3)
+       +(J+L\mathcal{𝒪}_4[n_1,{n_2}])\cup_4(Ln_3)\big].
 ```
 
 Every coefficient of this ordinary degree-four phase is fixed by these
@@ -214,7 +214,7 @@ by the substituted physical arguments. Then
 ```math
 \mathcal I_{\rm CF}
  =S2[G\cup_2G+G\cup_3dG+{\omega_2}G+dG\cup_4(L{\mathcal{𝒪}_4}+R{\mathcal{𝒪}_4}')]
-   +f_{c,*}({[n_1]_2}+{[n'_1]_2},{[\lfloor n_1/2\rfloor]_2}+{[\lfloor n'_1/2\rfloor]_2}+{[n_1]_2}\cup_1{[n'_1]_2},{\widetilde{N}_2},{\mathcal{ℰ}_3}).
+   +f_{c,*}({[n_1]_2}+{[n'_1]_2},{[\lfloor n_1/2\rfloor]_2}+{[\lfloor n'_1/2\rfloor]_2}+{[n_1]_2}\cup_1{[n'_1]_2},{N_2},{\mathcal{ℰ}_3}).
 ```
 
 This generates exactly 9,162 physical indices. The five-word intrinsic
@@ -228,8 +228,8 @@ two, not new fields. Use $`d[\beta_3]_2=\alpha[n_1]_2,\ d[\beta'_3]_2=\alpha[n'_
 
 ```math
 \begin{aligned}
-x&=L{\widetilde{n}_2},\\
-y&=R{\widetilde{n}'_2},\\
+x&=L{n_2},\\
+y&=R{n'_2},\\
 z&=D({[n_1]_2}{[n'_1]_2}),\\
 q_L&=\mathop{\mathrm{MS}}\nolimits_{1213}({\widetilde{\omega}_2},L,{[n_1]_2}),\\
 q_R&=\mathop{\mathrm{MS}}\nolimits_{1213}({\widetilde{\omega}_2},R,{[n'_1]_2}),\\
@@ -268,8 +268,8 @@ For the edge indices set, in binary word arithmetic only,
 
 ```math
 \begin{aligned}
-\lambda&={\widetilde{n}_2}\cup_2{\widetilde{n}'_2}+({\widetilde{n}_2}+{\widetilde{n}'_2})\cup_2({[n_1]_2}{[n'_1]_2})+[\lambda_2^\psi]_2,\quad \beta=[\beta_3]_2+[\beta'_3]_2,\\
-R_{\rm edge}&=(L{\widetilde{N}_2})\cup_3\mathop{\mathrm{MS}}\nolimits_{1213}({\widetilde{\omega}_2},L,{[n_1]_2}+{[n'_1]_2})
+\lambda&={n_2}\cup_2{n'_2}+({n_2}+{n'_2})\cup_2({[n_1]_2}{[n'_1]_2})+[\lambda_2^\psi]_2,\quad \beta=[\beta_3]_2+[\beta'_3]_2,\\
+R_{\rm edge}&=(L{N_2})\cup_3\mathop{\mathrm{MS}}\nolimits_{1213}({\widetilde{\omega}_2},L,{[n_1]_2}+{[n'_1]_2})
        +Q(L,{[n_1]_2}+{[n'_1]_2},{[\lfloor n_1/2\rfloor]_2}+{[\lfloor n'_1/2\rfloor]_2}+{[n_1]_2}\cup_1{[n'_1]_2})+L\lambda,\\
 Z_{\rm edge}&=(\alpha\cup_1L)({[n_1]_2}+{[n'_1]_2}),\qquad S=L\lambda.
 \end{aligned}
@@ -298,13 +298,13 @@ The ten-word polynomial whose derivative occurs in $`\mathcal I_4`$ is
 
 ```math
 \begin{aligned}
-H_3^{\rm pure}[{\widetilde{n}_2},{\widetilde{n}'_2}]={}&\mathop{\mathrm{MS}}\nolimits_{1231213}({\widetilde{n}_2},{\widetilde{n}'_2},\mathrm{Sq}^1{\widetilde{n}'_2})
- +\mathop{\mathrm{MS}}\nolimits_{12312312}({\widetilde{n}_2},\mathrm{Sq}^1{\widetilde{n}'_2},\mathrm{Sq}^1{\widetilde{n}'_2})\\
-&+(\mathop{\mathrm{MS}}\nolimits_{123412431}+\mathop{\mathrm{MS}}\nolimits_{124314324})({\widetilde{n}_2},{\widetilde{n}_2},{\widetilde{n}_2},{\widetilde{n}'_2})\\
+H_3^{\rm pure}[{n_2},{n'_2}]={}&\mathop{\mathrm{MS}}\nolimits_{1231213}({n_2},{n'_2},\mathrm{Sq}^1{n'_2})
+ +\mathop{\mathrm{MS}}\nolimits_{12312312}({n_2},\mathrm{Sq}^1{n'_2},\mathrm{Sq}^1{n'_2})\\
+&+(\mathop{\mathrm{MS}}\nolimits_{123412431}+\mathop{\mathrm{MS}}\nolimits_{124314324})({n_2},{n_2},{n_2},{n'_2})\\
 &+(\mathop{\mathrm{MS}}\nolimits_{123242314}+\mathop{\mathrm{MS}}\nolimits_{123413421}
   +\mathop{\mathrm{MS}}\nolimits_{132421324}+\mathop{\mathrm{MS}}\nolimits_{134213124}
-  +\mathop{\mathrm{MS}}\nolimits_{314324312})({\widetilde{n}_2},{\widetilde{n}_2},{\widetilde{n}'_2},{\widetilde{n}'_2})\\
-&+\mathop{\mathrm{MS}}\nolimits_{121341234}({\widetilde{n}_2},{\widetilde{n}'_2},{\widetilde{n}'_2},{\widetilde{n}'_2}).
+  +\mathop{\mathrm{MS}}\nolimits_{314324312})({n_2},{n_2},{n'_2},{n'_2})\\
+&+\mathop{\mathrm{MS}}\nolimits_{121341234}({n_2},{n'_2},{n'_2},{n'_2}).
 \end{aligned}
 ```
 
@@ -314,18 +314,18 @@ summands
 
 ```math
 \begin{aligned}
-\beta_3&=\beta^- {\widetilde{n}_2}+\beta_3^\psi,&
-\beta'_3&=\beta^- {\widetilde{n}'_2}+\beta_3^{\psi\prime},\\
-{\mathcal{𝒪}_4}&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[{\widetilde{n}_2}]+\mathcal{𝒪}_4^\psi[n_1],&
-{\mathcal{𝒪}_4}'&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[{\widetilde{n}'_2}]+\mathcal{𝒪}_4^\psi[n'_1],\\
+\beta_3&=\beta^- {n_2}+\beta_3^\psi,&
+\beta'_3&=\beta^- {n'_2}+\beta_3^{\psi\prime},\\
+{\mathcal{𝒪}_4}&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[{n_2}]+\mathcal{𝒪}_4^\psi[n_1],&
+{\mathcal{𝒪}_4}'&=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[{n'_2}]+\mathcal{𝒪}_4^\psi[n'_1],\\
 {\mathcal{ℰ}_3}&=\mathcal{ℰ}_3^\gamma+\mathcal{ℰ}_3^{\gamma\psi}+\mathcal{ℰ}_3^\psi,&
-{\widetilde{N}_2}&={\widetilde{n}_2}+{\widetilde{n}'_2}+{[n_1]_2}{[n'_1]_2}.
+{N_2}&={n_2}+{n'_2}+{[n_1]_2}{[n'_1]_2}.
 \end{aligned}
 ```
 
 The all-p+ip choice has no incoming Majorana decoration or its integer
 Bockstein. It retains the induced output
-$`\widetilde{N}_2=[n_1]_2[n'_1]_2`$ and its differential and Sq operations.
+$`N_2=[n_1]_2[n'_1]_2`$ and its differential and Sq operations.
 Choose $`\mathcal{𝒪}_4=\mathcal{𝒪}_4^\psi[n_1]`$, its primed counterpart,
 and $`\mathcal{ℰ}_3=\mathcal{ℰ}_3^\psi`$. In the output obstruction retain
 $`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[[n_1]_2[n'_1]_2]

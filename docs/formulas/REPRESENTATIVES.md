@@ -19,8 +19,8 @@ The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOM
 **(T3D)**
 
 ```math
-n_3\longmapsto n_3+\mathcal B_3^{\mathrm{ref}}({n_{1}},{\widetilde{n}_{2}}),\qquad
-\mathcal B_3^{\mathrm{ref}}=({[n_{1}]_2}+{s_1}){\widetilde{n}_{2}}+{\widetilde{\omega}_2}{[\lfloor n_{1}/2\rfloor]_2}+[{\widetilde{\omega}_2}\cup_1({[n_{1}]_2}+{s_1})]{[n_{1}]_2}.
+n_3\longmapsto n_3+\mathcal B_3^{\mathrm{ref}}({n_{1}},{n_2}),\qquad
+\mathcal B_3^{\mathrm{ref}}=({[n_{1}]_2}+{s_1}){n_2}+{\widetilde{\omega}_2}{[\lfloor n_{1}/2\rfloor]_2}+[{\widetilde{\omega}_2}\cup_1({[n_{1}]_2}+{s_1})]{[n_{1}]_2}.
 ```
 
 The retained construction evaluates its complex-fermion argument after
@@ -51,7 +51,7 @@ Before the operator reordering below, the source of the retained construction is
 
 ```math
 \mathcal O_6-d_{s_1}B_5^{\mathrm{ref}}-\frac1{12}n_2^3,
-\qquad B_5^{\mathrm{ref}}=\frac14{\beta^-\widetilde{n}_3}\cup_3{\beta_4^\psi}.
+\qquad B_5^{\mathrm{ref}}=\frac14{\beta^-n_3}\cup_3{\beta_4^\psi}.
 ```
 
 It is written with the displayed obstruction and needs no additional symbol.
@@ -90,7 +90,7 @@ The actual stacked output is used in the last line. This yields the displayed c,
 ## 4+1D: current compact Majorana phase
 
 The guide then applies the single [explicit phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-$`\nu_5\mapsto\nu_5-B_5[\widetilde{n}_3,\widetilde{n}_4]`$.
+$`\nu_5\mapsto\nu_5-B_5[n_3,\widetilde{n}_4]`$.
 Its source changes by $`-d_{s_1}B_5`$ and its product by $`-\Delta B_5`$,
 evaluated on the same actual lower stacking output. The inverse adds
 $`B_5`$; every lower decoration and lower product is fixed.

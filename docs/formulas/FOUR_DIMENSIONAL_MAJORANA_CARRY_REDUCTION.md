@@ -14,7 +14,7 @@ The following notation is local to this proof. Write
 
 ```math
 \begin{gathered}
-u=\widetilde{n}_3,\quad v=\widetilde{n}'_3,\quad
+u=n_3,\quad v=n'_3,\quad
 A=du,\quad A'=dv,\\
 r=\beta A,\quad r'=\beta A',\quad
 L=u\cup_3v,\quad J=A\cup_4A',\quad X=\beta^- u+\beta^- v-dL.

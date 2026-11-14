@@ -11,7 +11,7 @@ The half-source polynomial used to define the final indices below is
  \mathop{\mathrm{MS}}\nolimits_v(x_{i_1},\ldots,x_{i_k}),
 \qquad
 (x_1,x_2,x_3,x_4,x_5,x_6)
-=(\widetilde{n}_2,[n_1]_2,[\lfloor n_1/2\rfloor]_2,
+=(n_2,[n_1]_2,[\lfloor n_1/2\rfloor]_2,
   \widetilde{\omega}_2,\omega_2,s_1).
 ```
 
@@ -102,7 +102,7 @@ physical cochains. Products mean the word composition defined above.
 The derivatives of the physical input labels are
 
 ```math
-d\widetilde{n}_2 =\widetilde{\omega}_2 [n_1]_2 ,\qquad d[\lfloor n_1/2\rfloor]_2 =[n_1]_2 ^2+s_1 [n_1]_2 ,
+dn_2 =\widetilde{\omega}_2 [n_1]_2 ,\qquad d[\lfloor n_1/2\rfloor]_2 =[n_1]_2 ^2+s_1 [n_1]_2 ,
 \qquad d[n_1]_2 =d\widetilde{\omega}_2 =d\omega_2 =ds_1 =d\bullet =0.
 ```
 
@@ -111,9 +111,9 @@ The first seed index sets are
 ```math
 \begin{aligned}
 X&=\bullet [n_1]_2 ,& H&=\bullet [\lfloor n_1/2\rfloor]_2 +(s_1 \cup_1\bullet )[n_1]_2 ,\\
-U&=\bullet \widetilde{n}_2 +\mathop{\mathrm{MS}}\nolimits_{1213}(\widetilde{\omega}_2 ,\bullet ,[n_1]_2 ),
+U&=\bullet n_2 +\mathop{\mathrm{MS}}\nolimits_{1213}(\widetilde{\omega}_2 ,\bullet ,[n_1]_2 ),
 & A&=\widetilde{\omega}_2 X,\\
-D&=\widetilde{\omega}_2 [\lfloor n_1/2\rfloor]_2 +\widetilde{n}_2 \cup_2(\widetilde{\omega}_2 [n_1]_2 )+(s_1 \cup_1\omega_2 )[n_1]_2 ,\\
+D&=\widetilde{\omega}_2 [\lfloor n_1/2\rfloor]_2 +n_2 \cup_2(\widetilde{\omega}_2 [n_1]_2 )+(s_1 \cup_1\omega_2 )[n_1]_2 ,\\
 K&=HX+XH+(s_1 \cup_1X)X+\widetilde{\omega}_2 H+(s_1 \cup_1\widetilde{\omega}_2 )X
        +X^2\cup_4(\widetilde{\omega}_2 X).
 \end{aligned}
@@ -130,7 +130,7 @@ Define the finite binary obstruction seed
  +X^2\cup_3(\widetilde{\omega}_2 X)+H[(X\cup_1X)+s_1 X]+(X\cup_1X)\cup_1(s_1 X)\\
 &+s_1 [X^2\cup_4(\widetilde{\omega}_2 X)+(X\cup_1s_1 )X+X\cup_1(X\cup_1X)+X^2],\\
 J={}&U\cup_1U+U\cup_2A+\omega_2 U+s_1 (U\cup_2U+U\cup_3A)+\Xi,\\
-F={}&\widetilde{n}_2 ^2+\widetilde{n}_2 \cup_1(\widetilde{\omega}_2 [n_1]_2 )+s_1 [\widetilde{n}_2 \cup_1\widetilde{n}_2 +\widetilde{n}_2 \cup_2(\widetilde{\omega}_2 [n_1]_2 )]+\omega_2 \widetilde{n}_2 \\
+F={}&n_2 ^2+n_2 \cup_1(\widetilde{\omega}_2 [n_1]_2 )+s_1 [n_2 \cup_1n_2 +n_2 \cup_2(\widetilde{\omega}_2 [n_1]_2 )]+\omega_2 n_2 \\
 &+\mathop{\mathrm{MS}}\nolimits_{123134}(\widetilde{\omega}_2 ,\widetilde{\omega}_2 ,[n_1]_2 ,[n_1]_2 )
  +(\widetilde{\omega}_2 \cup_1\widetilde{\omega}_2 +s_1 \widetilde{\omega}_2 )[\lfloor n_1/2\rfloor]_2 +[(\widetilde{\omega}_2 \cup_1\widetilde{\omega}_2 )\cup_1s_1 +s_1 (s_1 \cup_1\widetilde{\omega}_2 )][n_1]_2 ,\\
 G={}&\mathsf R(J)+\bullet D,\qquad dG=J+\bullet F.
@@ -215,7 +215,7 @@ physical formula still contains only the six inputs printed at the top.
 The two binary input polynomials in the quarter-polarization indices are
 
 ```math
-[\beta^-\widetilde{n}_2+\beta_3^\psi]_2=\widetilde{n}_2 \cup_1\widetilde{n}_2 +\widetilde{n}_2 \cup_2(\widetilde{\omega}_2 [n_1]_2 )+\widetilde{\omega}_2 [\lfloor n_1/2\rfloor]_2 +(s_1 \cup_1\widetilde{\omega}_2 )[n_1]_2 +\widetilde{\omega}_2 [n_1]_2 ,
+[\beta^-n_2+\beta_3^\psi]_2=n_2 \cup_1n_2 +n_2 \cup_2(\widetilde{\omega}_2 [n_1]_2 )+\widetilde{\omega}_2 [\lfloor n_1/2\rfloor]_2 +(s_1 \cup_1\widetilde{\omega}_2 )[n_1]_2 +\widetilde{\omega}_2 [n_1]_2 ,
 \qquad [\beta_{s_1}\widetilde{\omega}_2]_2=\widetilde{\omega}_2 \cup_1\widetilde{\omega}_2 +s_1 \widetilde{\omega}_2 .
 ```
 
@@ -224,8 +224,8 @@ Use these same binary input polynomials in
 ```math
 \begin{aligned}
 Q&=(\widetilde{\omega}_2 \cup_1\bullet )[\lfloor n_1/2\rfloor]_2 +[(s_1 \cup_1\widetilde{\omega}_2 )\cup_1\bullet ][n_1]_2 ,\\
-R_q&=(\bullet \widetilde{n}_2 )\cup_3[(\widetilde{\omega}_2 \cup_1\bullet )[n_1]_2 ]+Q,\\
-[\beta_4^{\mathrm{par}}]_2&=\bullet [\beta^-\widetilde{n}_2+\beta_3^\psi]_2,\qquad Z=([\beta_{s_1}\widetilde{\omega}_2]_2\cup_1\bullet )[n_1]_2 ,
+R_q&=(\bullet n_2 )\cup_3[(\widetilde{\omega}_2 \cup_1\bullet )[n_1]_2 ]+Q,\\
+[\beta_4^{\mathrm{par}}]_2&=\bullet [\beta^-n_2+\beta_3^\psi]_2,\qquad Z=([\beta_{s_1}\widetilde{\omega}_2]_2\cup_1\bullet )[n_1]_2 ,
 \qquad \eta=dR_q+Z.
 \end{aligned}
 ```
@@ -233,7 +233,7 @@ R_q&=(\bullet \widetilde{n}_2 )\cup_3[(\widetilde{\omega}_2 \cup_1\bullet )[n_1]
 Here $`[\beta_4^{\mathrm{par}}]_2`$ is the binary parameter carry
 for this source construction, with the single marker $`\bullet`$.
 Differentiate by the previously stated word boundary and input rules,
-including $`d[\beta^-\widetilde{n}_2+\beta_3^\psi]_2=[\beta_{s_1}\widetilde{\omega}_2]_2[n_1]_2`$. Then
+including $`d[\beta^-n_2+\beta_3^\psi]_2=[\beta_{s_1}\widetilde{\omega}_2]_2[n_1]_2`$. Then
 
 ```math
 \begin{aligned}
@@ -257,8 +257,8 @@ Expand the two displayed binary input polynomials and form
 \mathcal I_5=
  \mathcal I_{\mathrm{CF}}+\mathcal I_T+\mathcal I_{\mathrm{other}}+\mathcal I_q
  +s_1 ^2\left[
-   \mathop{\mathrm{MS}}\nolimits_{1423141234}(\widetilde{n}_2 ,\widetilde{n}_2 ,\widetilde{n}_2 ,\widetilde{\omega}_2 [n_1]_2 )
-  +\mathop{\mathrm{MS}}\nolimits_{1321312}(\widetilde{n}_2 ,\widetilde{n}_2 ,\widetilde{\omega}_2 [n_1]_2 )\right].
+   \mathop{\mathrm{MS}}\nolimits_{1423141234}(n_2 ,n_2 ,n_2 ,\widetilde{\omega}_2 [n_1]_2 )
+  +\mathop{\mathrm{MS}}\nolimits_{1321312}(n_2 ,n_2 ,\widetilde{\omega}_2 [n_1]_2 )\right].
 ```
 
 All additions mean symmetric difference of index sets. There are 2,650
@@ -273,8 +273,8 @@ $`\mathcal I_5^{c\psi}`$. This set has **seven entries**.
 
 | Ordered inputs | MS words |
 |---|---|
-| $`(d\widetilde{n}_3,\omega_2,d\widetilde{n}_2)`$ | $`1212313`$ |
-| $`(d\widetilde{n}_3,s_1,\widetilde{n}_2,d\widetilde{n}_2)`$ | $`121341431,\ 241431341,\ 124214131,\ 121431341,\ 142141314,\ 142141341`$ |
+| $`(d\widetilde{n}_3,\omega_2,dn_2)`$ | $`1212313`$ |
+| $`(d\widetilde{n}_3,s_1,n_2,dn_2)`$ | $`121341431,\ 241431341,\ 124214131,\ 121431341,\ 142141314,\ 142141341`$ |
 
 The complete differential $`d\widetilde{n}_3`$ is the lower obstruction specified in
 its own layer. The [exact cochain proof](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
@@ -287,12 +287,12 @@ it introduces no additional free input.
 
 | Ordered inputs | MS words |
 |---|---|
-| $`(d\widetilde{n}_3,\omega_2,\widetilde{n}_2)`$ | $`121231,\ 121313`$ |
-| $`(\omega_2,d\widetilde{n}_3,\widetilde{n}_2)`$ | $`121323`$ |
-| $`(d\widetilde{n}_3,s_1,\widetilde{n}_2,\widetilde{n}_2)`$ | $`12131341,\ 12131413,\ 12134131,\ 12134143,\ 12313414,\ 12321341,\ 12321413,\ 12321431,\ 12341431`$ |
-| $`(d\widetilde{n}_3,\widetilde{n}_2,s_1,\widetilde{n}_2)`$ | $`12312141,\ 12312412,\ 12312421`$ |
-| $`(s_1,d\widetilde{n}_3,\widetilde{n}_2,\widetilde{n}_2)`$ | $`12324234,\ 12342423`$ |
-| $`(s_1,\widetilde{n}_2,d\widetilde{n}_3,\widetilde{n}_2)`$ | $`12324324,\ 12343423`$ |
+| $`(d\widetilde{n}_3,\omega_2,n_2)`$ | $`121231,\ 121313`$ |
+| $`(\omega_2,d\widetilde{n}_3,n_2)`$ | $`121323`$ |
+| $`(d\widetilde{n}_3,s_1,n_2,n_2)`$ | $`12131341,\ 12131413,\ 12134131,\ 12134143,\ 12313414,\ 12321341,\ 12321413,\ 12321431,\ 12341431`$ |
+| $`(d\widetilde{n}_3,n_2,s_1,n_2)`$ | $`12312141,\ 12312412,\ 12312421`$ |
+| $`(s_1,d\widetilde{n}_3,n_2,n_2)`$ | $`12324234,\ 12342423`$ |
+| $`(s_1,n_2,d\widetilde{n}_3,n_2)`$ | $`12324324,\ 12343423`$ |
 
 ## Final physical index sets
 
@@ -300,8 +300,8 @@ For an explicitly printed binary cochain polynomial $`F`$, write
 $`[F]_{\rm MS}`$ for its indices expanded by the word-composition and
 boundary rules above. This notation is used only to specify coefficient
 sets; each final summand remains a standard ordinary MS operation.
-The notation $`\mathcal I_5|_{\widetilde{n}_2\notin\mathbf x}`$ selects
-entries whose input list does not contain $`\widetilde{n}_2`$. It is an
+The notation $`\mathcal I_5|_{n_2\notin\mathbf x}`$ selects
+entries whose input list does not contain $`n_2`$. It is an
 algebraic selection of formal indices, not an evaluation of a physical
 solution at an inconsistent lower coordinate.
 
@@ -310,49 +310,49 @@ The integer-only coefficient set is
 ```math
 \begin{aligned}
 \mathcal I_5^\psi
-={}&\mathcal I_5|_{\widetilde{n}_2\notin\mathbf x}\\
+={}&\mathcal I_5|_{n_2\notin\mathbf x}\\
 &+\Big[s_1\mathcal{𝒪}_4^\psi
- +(d\widetilde{n}_2)\cup_1\mathrm{Sq}^1\omega_2
- +\mathop{\mathrm{MS}}\nolimits_{1321}(d\widetilde{n}_2,\omega_2,s_1)
+ +(dn_2)\cup_1\mathrm{Sq}^1\omega_2
+ +\mathop{\mathrm{MS}}\nolimits_{1321}(dn_2,\omega_2,s_1)
  +\mathcal{𝒪}_4^\psi\cup_3\mathcal{𝒪}_4^\psi\Big]_{\rm MS}.
 \end{aligned}
 ```
 
-Use $`d\widetilde{n}_2=\widetilde{\omega}_2[n_1]_2`$ in this expression.
+Use $`dn_2=\widetilde{\omega}_2[n_1]_2`$ in this expression.
 The mixed coefficient set is
 
 ```math
 \begin{aligned}
 \mathcal I_5^{\gamma\psi}
-={}&\mathcal I_5+\mathcal I_5|_{\widetilde{n}_2\notin\mathbf x}+\mathcal J_5\\
+={}&\mathcal I_5+\mathcal I_5|_{n_2\notin\mathbf x}+\mathcal J_5\\
 &+\Bigg[
  s_1(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})
  +d\Big\{
- \widetilde{n}_2\cup_1\mathrm{Sq}^1\omega_2
- +\mathop{\mathrm{MS}}\nolimits_{1321}(\widetilde{n}_2,\omega_2,s_1)
- +\mathop{\mathrm{MS}}\nolimits_{12131}(\widetilde{n}_2,\widetilde{n}_2,\widetilde{n}_2)\\
+ n_2\cup_1\mathrm{Sq}^1\omega_2
+ +\mathop{\mathrm{MS}}\nolimits_{1321}(n_2,\omega_2,s_1)
+ +\mathop{\mathrm{MS}}\nolimits_{12131}(n_2,n_2,n_2)\\
 &\qquad+\mathop{\mathrm{MS}}\nolimits_{132123}
-    (\widetilde{n}_2,\widetilde{n}_2,\mathrm{Sq}^1\widetilde{n}_2)
+    (n_2,n_2,\mathrm{Sq}^1n_2)
  +\mathop{\mathrm{MS}}\nolimits_{2321232}
-    (\widetilde{n}_2,\mathrm{Sq}^1\widetilde{n}_2,\mathrm{Sq}^1\widetilde{n}_2)\\
+    (n_2,\mathrm{Sq}^1n_2,\mathrm{Sq}^1n_2)\\
 &\qquad+(\mathop{\mathrm{MS}}\nolimits_{34123121}
          +\mathop{\mathrm{MS}}\nolimits_{34123212})
-       (\widetilde{n}_2,\mathrm{Sq}^1\widetilde{n}_2,\omega_2,s_1)
+       (n_2,\mathrm{Sq}^1n_2,\omega_2,s_1)
  +\mathop{\mathrm{MS}}\nolimits_{41231231}
-       (\widetilde{n}_2,\widetilde{n}_2,\mathrm{Sq}^1\widetilde{n}_2,s_1)\\
+       (n_2,n_2,\mathrm{Sq}^1n_2,s_1)\\
 &\qquad+\mathop{\mathrm{MS}}\nolimits_{12131243}
-       (\widetilde{n}_2,\widetilde{n}_2,\widetilde{n}_2,\widetilde{n}_2)\Big\}\\
-&\quad+\omega_2\mathrm{Sq}^1\widetilde{n}_2
-       +(\mathrm{Sq}^1\widetilde{n}_2)\widetilde{n}_2
-       +\widetilde{n}_2\mathrm{Sq}^1\widetilde{n}_2\\
-&\quad+\zeta_{2,2}(\omega_2,\widetilde{n}_2)+(\mathop{\mathrm{MS}}\nolimits_{1213243}+\mathop{\mathrm{MS}}\nolimits_{1213431}+\mathop{\mathrm{MS}}\nolimits_{1232141}+\mathop{\mathrm{MS}}\nolimits_{1234321})(\widetilde{n}_2,\widetilde{n}_2,\widetilde{n}_2,\widetilde{n}_2)
-       +(\widetilde{n}_2^2)\cup_3(\omega_2\widetilde{n}_2)\\
-&\quad+(\widetilde{n}_2^2)\cup_3(s_1\mathrm{Sq}^1\widetilde{n}_2)
-       +(\omega_2\widetilde{n}_2)\cup_3(s_1\mathrm{Sq}^1\widetilde{n}_2)
-       +\zeta_{1,3}(s_1,\mathrm{Sq}^1\widetilde{n}_2)\\
-&\quad+(\omega_2\cup_1s_1)\mathrm{Sq}^1\widetilde{n}_2
-       +(d\widetilde{n}_2)\cup_1\mathrm{Sq}^1\omega_2
-       +\mathop{\mathrm{MS}}\nolimits_{1321}(d\widetilde{n}_2,\omega_2,s_1)\\
+       (n_2,n_2,n_2,n_2)\Big\}\\
+&\quad+\omega_2\mathrm{Sq}^1n_2
+       +(\mathrm{Sq}^1n_2)n_2
+       +n_2\mathrm{Sq}^1n_2\\
+&\quad+\zeta_{2,2}(\omega_2,n_2)+(\mathop{\mathrm{MS}}\nolimits_{1213243}+\mathop{\mathrm{MS}}\nolimits_{1213431}+\mathop{\mathrm{MS}}\nolimits_{1232141}+\mathop{\mathrm{MS}}\nolimits_{1234321})(n_2,n_2,n_2,n_2)
+       +(n_2^2)\cup_3(\omega_2n_2)\\
+&\quad+(n_2^2)\cup_3(s_1\mathrm{Sq}^1n_2)
+       +(\omega_2n_2)\cup_3(s_1\mathrm{Sq}^1n_2)
+       +\zeta_{1,3}(s_1,\mathrm{Sq}^1n_2)\\
+&\quad+(\omega_2\cup_1s_1)\mathrm{Sq}^1n_2
+       +(dn_2)\cup_1\mathrm{Sq}^1\omega_2
+       +\mathop{\mathrm{MS}}\nolimits_{1321}(dn_2,\omega_2,s_1)\\
 &\quad+(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})\cup_3(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})
        +(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})\cup_3\mathcal{𝒪}_4^\psi
        +\mathcal{𝒪}_4^\psi\cup_3(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})

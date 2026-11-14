@@ -5,8 +5,8 @@
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
 This appendix retains the construction of the binary five-cochain $`Z_5`$ in the supplied 4+1D product. Its complete physical-face expansion and three physical parts are now given in the [coefficient appendix](FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md). The [current full stacking formula](FOUR_DIMENSIONAL.md#eq-t4c) also applies the paired complex-fermion phase map stated in [Representatives](REPRESENTATIVES.md#operator-phase-4d). The inputs are
-$`(n_2,\widetilde{n}_3)`$ and $`(n'_2,\widetilde{n}'_3)`$, with common backgrounds
-$`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,\widetilde{N}_3`$ are the output. Binary reductions and tildes have the same meanings as in the guide. In integer
+$`(n_2,n_3)`$ and $`(n'_2,n'_3)`$, with common backgrounds
+$`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,N_3`$ are the output. Binary reductions and tildes have the same meanings as in the guide. In integer
 arithmetic each binary field supplies its canonical value $`0,1`$; a whole
 composite binary expression is reduced first whenever it is enclosed in $`[\cdot]_2`$.
 
@@ -21,12 +21,12 @@ are then defined explicitly:
 | $`D^0_5`$ | Binary reduction of the complete zero-background integer carry | (K10) |
 | $`Z_5`$ | Binary degree-five finite transfer | (K12) |
 
-The lower correction $`\mathcal{ℰ}_4`$, its shifted predecessor
-$`\widetilde{\mathcal{ℰ}}_3=[n_2]_2\cup_1[n'_2]_2`$, the carry $`\beta_4`$,
+The lower correction $`\mathcal{ℰ}_4`$, the Majorana twister
+$`\mathcal{ℰ}_3=[n_2]_2\cup_1[n'_2]_2`$, the carry $`\beta_4`$,
 $`\lambda_3`$, and $`\Delta \beta_4=d\lambda_3-n'_2n_2`$ are already defined in
 the guide. For any one-input expression the signed difference is
-$`\Delta X=X[N_2,\widetilde{N}_3]-X[n_2,\widetilde{n}_3]-X[n'_2,\widetilde{n}'_3]`$.
-As elsewhere, $`\beta'_4=\beta_4[n'_2,\widetilde{n}'_3]`$ and an unlabelled $`\beta_4`$ refers
+$`\Delta X=X[N_2,N_3]-X[n_2,n_3]-X[n'_2,n'_3]`$.
+As elsewhere, $`\beta'_4=\beta_4[n'_2,n'_3]`$ and an unlabelled $`\beta_4`$ refers
 to the first input. All products remain ordered.
 
 <a id="transfer"></a>
@@ -59,8 +59,8 @@ Let $`\mathsf h^{(3)}`$ denote the three-factor grid homotopy, whose component
 in degree $`D`$ is $`\mathsf h_D^{(3)}`$ from (O11). Order its factors as
 $`(\text{common background},\text{first input},\text{second input})`$.
 For grid vertices $`(r_i,t_i,v_i)`$, pull both $`s_1,\omega_2`$ along $`r`$,
-the complete graded pair $`(n_2^{\rm gr},\widetilde{n}_3^{\rm gr})`$ along $`t`$,
-and $`(n_2^{{\rm gr}\prime},\widetilde{n}_3^{{\rm gr}\prime})`$ along $`v`$.
+the complete graded pair $`(n_2^{\rm gr},n_3^{\rm gr})`$ along $`t`$,
+and $`(n_2^{{\rm gr}\prime},n_3^{{\rm gr}\prime})`$ along $`v`$.
 After pulling back, decode (K4) before evaluating $`\rho_6`$.
 
 ## The binary kernel
@@ -70,7 +70,7 @@ single-input and even-integer pieces. All terms before the final braces are bina
 acts on the entire following binary bracket. The final braces form one
 integer numerator; it is pointwise even, and is divided by two before the
 final reduction modulo two. The binary source values
-$`\mathcal{𝒪}_5[n_2,\widetilde{n}_3]`$ are the complex-fermion obstruction of the
+$`\mathcal{𝒪}_5[n_2,n_3]`$ are the complex-fermion obstruction of the
 guide, not additional input fields.
 
 <a id="eq-k1"></a>
@@ -84,23 +84,23 @@ guide, not additional input fields.
 \rho_6={}&
  \mathrm{Sq}^2(\mathcal{ℰ}_4+[n_2]_2[n'_2]_2)
  +\omega_2(\mathcal{ℰ}_4+[n_2]_2[n'_2]_2)\\
-&+\mathcal{𝒪}_5[n_2,\widetilde{n}_3]\cup_4\mathcal{𝒪}_5[n'_2,\widetilde{n}'_3]\\
-&+\big(\mathcal{𝒪}_5[n_2,\widetilde{n}_3]+\mathcal{𝒪}_5[n'_2,\widetilde{n}'_3]\big)
+&+\mathcal{𝒪}_5[n_2,n_3]\cup_4\mathcal{𝒪}_5[n'_2,n'_3]\\
+&+\big(\mathcal{𝒪}_5[n_2,n_3]+\mathcal{𝒪}_5[n'_2,n'_3]\big)
  \cup_3(\mathcal{ℰ}_4+[n_2]_2[n'_2]_2)\\
 &+(\mathcal{ℰ}_4+[n_2]_2[n'_2]_2)\cup_3
- \big(\mathcal{𝒪}_5[n_2,\widetilde{n}_3]+\mathcal{𝒪}_5[n'_2,\widetilde{n}'_3]\big)\\
+ \big(\mathcal{𝒪}_5[n_2,n_3]+\mathcal{𝒪}_5[n'_2,n'_3]\big)\\
 &+\Delta\Big[
- T_6[\widetilde{n}_3;\omega_2,s_1]
- +\widetilde{n}_3([\beta\omega_2]_2+s_1\omega_2)\\
-&\qquad+(\mathrm{Sq}^2\widetilde{n}_3+s_1\mathrm{Sq}^1\widetilde{n}_3
- +\omega_2\widetilde{n}_3)\cup_4\mathcal{𝒪}^\psi_5
+ T_6[n_3;\omega_2,s_1]
+ +n_3([\beta\omega_2]_2+s_1\omega_2)\\
+&\qquad+(\mathrm{Sq}^2n_3+s_1\mathrm{Sq}^1n_3
+ +\omega_2n_3)\cup_4\mathcal{𝒪}^\psi_5
  +y_6[n_2;\omega_2,s_1]\\
-&\qquad+[\beta^-\widetilde{n}_3]_2\cup_2[\beta_4^\psi]_2
- +s_1([\beta^-\widetilde{n}_3]_2\cup_3[\beta_4^\psi]_2)\\
+&\qquad+[\beta^-n_3]_2\cup_2[\beta_4^\psi]_2
+ +s_1([\beta^-n_3]_2\cup_3[\beta_4^\psi]_2)\\
 &\qquad+[n_2]_2[\beta_4]_2
  +([n_2]_2\cup_1[\beta_{s_1}\widetilde{\omega}_2]_2)[n_2]_2\Big]\\
-&+\widetilde{\omega}_2\,d\widetilde{\mathcal{ℰ}}_3
- +[\beta_{s_1}\widetilde{\omega}_2]_2\,\widetilde{\mathcal{ℰ}}_3\\
+&+\widetilde{\omega}_2\,d\mathcal{ℰ}_3
+ +[\beta_{s_1}\widetilde{\omega}_2]_2\,\mathcal{ℰ}_3\\
 &+\frac12\Big\{
  \Delta\mathcal Q_{\omega_2}[\beta_4]\\
 &\qquad-\Delta[\left[\begin{gathered}\mathop{\mathrm{MS}}\nolimits_{12132434}
@@ -122,7 +122,7 @@ expanded. This rewriting leaves the kernel and its coefficient tables unchanged.
 
 Every derivative differentiates a specified expression. In the binary
 part, $`d[\beta_4]_2=[\beta_{s_1}\widetilde{\omega}_2]_2[n_2]_2`$ and
-$`d\widetilde{\mathcal{ℰ}}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
+$`d\mathcal{ℰ}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 Inside the final integer braces, $`d_{s_1}V_5`$ differentiates the
 canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
 inputs, including $`\beta_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The reduction modulo two of
@@ -138,11 +138,11 @@ simplex consists of the common backgrounds and two graded inputs:
 ```math
 \begin{gathered}
 S=(s_1,\omega_2;
- n_2^{\rm gr},\widetilde{n}_3^{\rm gr};
- n_2^{{\rm gr}\prime},\widetilde{n}_3^{{\rm gr}\prime}),\\
+ n_2^{\rm gr},n_3^{\rm gr};
+ n_2^{{\rm gr}\prime},n_3^{{\rm gr}\prime}),\\
 dn_2^{\rm gr}=dn_2^{{\rm gr}\prime}=0,\qquad
-d\widetilde{n}_3^{\rm gr}=([n_2^{\rm gr}]_2)^2,\qquad
-d\widetilde{n}_3^{{\rm gr}\prime}=([n_2^{{\rm gr}\prime}]_2)^2.
+dn_3^{\rm gr}=([n_2^{\rm gr}]_2)^2,\qquad
+dn_3^{{\rm gr}\prime}=([n_2^{{\rm gr}\prime}]_2)^2.
 \end{gathered}
 ```
 
@@ -157,7 +157,7 @@ the first input by
 ```math
 \begin{aligned}
 n_2(ijk)&=(-1)^{s_1(0i)}n_2^{\rm gr}(ijk),\\
-\widetilde{n}_3(ijkl)&=\widetilde{n}_3^{\rm gr}(ijkl)
+n_3(ijkl)&=n_3^{\rm gr}(ijkl)
  +\begin{cases}
  0,&i=0,\\
  \widetilde{\omega}_2(0ij)[n_2]_2(jkl),&i\gt0.
@@ -178,7 +178,7 @@ factorwise zeroth face its changes are
 ```math
 \begin{aligned}
 n_2^{\rm gr}&\longmapsto(-1)^{s_1(01)}n_2^{\rm gr},\\
-\widetilde{n}_3^{\rm gr}(ijkl)&\longmapsto\widetilde{n}_3^{\rm gr}(ijkl)
+n_3^{\rm gr}(ijkl)&\longmapsto n_3^{\rm gr}(ijkl)
  +[\widetilde{\omega}_2(01i)+\widetilde{\omega}_2(01j)][n_2]_2(jkl).
 \end{aligned}
 ```
@@ -261,16 +261,16 @@ The ordered-cup polynomial is
 **(K9)**
 
 ```math
-L^0_5[n_2,\widetilde{n}_3;n'_2,\widetilde{n}'_3]
+L^0_5[n_2,n_3;n'_2,n'_3]
  =\sum_{i=1}^4\left[
- [\binom{n_2}{i}]_2\,P^L_i[n'_2,\widetilde{n}'_3]
- +P^R_i[n_2,\widetilde{n}_3]\,[\binom{n'_2}{i}]_2
+ [\binom{n_2}{i}]_2\,P^L_i[n'_2,n'_3]
+ +P^R_i[n_2,n_3]\,[\binom{n'_2}{i}]_2
  \right].
 ```
 
 Its tetrahedral polynomials are defined on one input at a time.
 
-For one zero-background input $`(n_2,\widetilde{n}_3)`$ on $`0123`$, define three
+For one zero-background input $`(n_2,n_3)`$ on $`0123`$, define three
 local integer face coordinates:
 
 ```math
@@ -282,7 +282,7 @@ n_{2;123}=n_2(123).
 The indices after the semicolon specify the face or difference of faces.
 Taking $`[x]_2`$ and $`[\lfloor x/2\rfloor]_2`$ gives all bits needed below.
 Products in (K8) are ordinary products of bits on this tetrahedron, and
-$`\widetilde{n}_3(0123)`$ is the binary Majorana value on the same face:
+$`n_3(0123)`$ is the binary Majorana value on the same face:
 
 <a id="eq-k8"></a>
 
@@ -293,7 +293,7 @@ $`\widetilde{n}_3(0123)`$ is the binary Majorana value on the same face:
 P^L_1={}&
  ([n_{2;012}]_2+[n_{2;013-012}]_2)
  ([n_{2;123}]_2+[\lfloor n_{2;123}/2\rfloor]_2)\\
-&+\widetilde{n}_3(0123)\big[
+&+n_3(0123)\big[
  1+[n_{2;012}]_2+[n_{2;013-012}]_2+[n_{2;123}]_2
  +[n_{2;013-012}]_2[n_{2;123}]_2(1+[n_{2;012}]_2)\\
 &\qquad+([n_{2;012}]_2+[n_{2;013-012}]_2)
@@ -307,7 +307,7 @@ P^L_2={}&
  +[\lfloor n_{2;123}/2\rfloor]_2(1+[n_{2;012}]_2)\big],\\
 P^L_3={}&P^L_2
  +[\lfloor n_{2;013-012}/2\rfloor]_2([\lfloor n_{2;012}/2\rfloor]_2+[\lfloor n_{2;123}/2\rfloor]_2)\\
-&+\widetilde{n}_3(0123)\big[
+&+n_3(0123)\big[
  [n_{2;012}]_2+[n_{2;013-012}]_2+[n_{2;123}]_2
  +[n_{2;123}]_2([n_{2;012}]_2+[n_{2;013-012}]_2)\\
 &\qquad+([n_{2;012}]_2+[n_{2;013-012}]_2)
@@ -326,13 +326,13 @@ P^R_3={}&
  +[n_{2;012}]_2[n_{2;123}]_2([\lfloor n_{2;013-012}/2\rfloor]_2+[\lfloor n_{2;123}/2\rfloor]_2)\\
 &+[n_{2;013-012}]_2(
  [n_{2;012}]_2[\lfloor n_{2;013-012}/2\rfloor]_2+[\lfloor n_{2;012}/2\rfloor]_2[n_{2;123}]_2)\\
-&+\widetilde{n}_3(0123)\big[
+&+n_3(0123)\big[
  [n_{2;012}]_2+[n_{2;013-012}]_2+[n_{2;123}]_2\\
 &\qquad+([n_{2;012}]_2+[n_{2;013-012}]_2+[n_{2;123}]_2)
  ([\lfloor n_{2;012}/2\rfloor]_2+[\lfloor n_{2;013-012}/2\rfloor]_2+[\lfloor n_{2;123}/2\rfloor]_2)
  +[n_{2;012}]_2[n_{2;013-012}]_2[n_{2;123}]_2\big],\\
 P^R_1={}&P^R_3+[n_{2;012}]_2[n_{2;123}]_2(1+[n_{2;013-012}]_2)\\
-&+\widetilde{n}_3(0123)\big[
+&+n_3(0123)\big[
  1+[n_{2;012}]_2+[n_{2;013-012}]_2+[n_{2;123}]_2
  +[n_{2;012}]_2[n_{2;123}]_2(1+[n_{2;013-012}]_2)\big].
 \end{aligned}
@@ -346,8 +346,8 @@ $`n_2(012)`$.
 ### The balanced integer carry
 
 Only in this subsection set $`\omega_2=s_1=0`$, so
-$`dn_2=dn'_2=0`$, $`d\widetilde{n}_3=[n_2]_2^2`$, and
-$`d\widetilde{n}'_3=([n'_2]_2)^2`$. Evaluate the guide's
+$`dn_2=dn'_2=0`$, $`dn_3=[n_2]_2^2`$, and
+$`dn'_3=([n'_2]_2)^2`$. Evaluate the guide's
 $`\beta_4,\beta'_4,\Delta \beta_4,\lambda_3`$ at these backgrounds. Form
 
 <a id="eq-k10"></a>
@@ -364,11 +364,11 @@ D^0_5=\frac12\Big\{&
  -\binom{n'_2}2(n_2\cup_1n_2)\\
 &-3\big[(n_2+2n'_2)(n_2\cup_1n'_2)
  +(n_2\cup_1n'_2)(2n_2+n'_2)\big]-V_{5,0}\\
-&-d[\big[\widetilde{n}'_3\cup_1[n_2]_2
- +[n'_2]_2\cup_1\widetilde{\mathcal{ℰ}}_3
+&-d[\big[n'_3\cup_1[n_2]_2
+ +[n'_2]_2\cup_1\mathcal{ℰ}_3
  +\mathop{\mathrm{MS}}\nolimits_{23123}([n_2]_2,[n'_2]_2,[n'_2]_2)\big]]_2\\
-&-2\Delta[\big[\widetilde{n}_3[n_2]_2\big]]_2
- -\Delta(n_2\widetilde{n}_3)\Big\}\pmod2.
+&-2\Delta[\big[n_3[n_2]_2\big]]_2
+ -\Delta(n_2n_3)\Big\}\pmod2.
 \end{aligned}
 ```
 

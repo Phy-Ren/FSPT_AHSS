@@ -132,7 +132,7 @@ Return now to the 3+1D degree convention. Its lower equations give
 
 The two Majorana bulk fields relevant to the pure-layer
 fermionic-coboundary construction are the same closed three-cochain
-$`d\widetilde{n}_2=\widetilde{\omega}_2[n_1]_2`$. Their bulk p+ip coordinates vanish.
+$`dn_2=\widetilde{\omega}_2[n_1]_2`$. Their bulk p+ip coordinates vanish.
 Once the pure-layer bulk maps are expressed in the same cochain
 coordinates, the preceding exact identity applies with
 
@@ -151,7 +151,7 @@ of the specified pure-layer bulk maps.
 
 The complete phases of the pure-layer bulk maps are evaluated on their
 stated domains before this additional product correction is applied.
-Here $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$ is the explicit
+Here $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$ is the explicit
 [geometric-reference conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 Thus the bulk sum is $`d\widetilde{n}_3`$, not the current point occupation $`dn_3`$.
 The boundary product also receives the face-reference phase on that page.

@@ -35,7 +35,7 @@ Their representatives and coordinates are related as follows.
 | Closed-Majorana programs `majorana_2_*` (3+1D) | Equal; the CF field `c` is the physical occupation $`n_3`$. |
 | Closed-Majorana programs `majorana_3_*` (4+1D) | The obstruction is equal; the CF field `c` is the physical occupation $`n_4`$. The product is the compact closed product, which differs from the displayed closed twister by the explicit [output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md) and the [phase change](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_PHASE.md). |
 | Publication programs, 4+1D (`fspt/data/full_formula`, compiled from `formulas/publication_source`) | Equal up to the documented representative maps below; the CF slot is the terminal argument $`\widetilde{n}_4=n_4+R_4`$. |
-| Publication programs, 3+1D | Equal up to the documented representative maps below; the CF slot is $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$. The source and product are the parameter integrals of the [finite construction](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md), with the orientation of [(O8)](../docs/formulas/OPERATIONS.md#eq-o8) recorded in the call signs of `lift3_source` and `lift3_product`. |
+| Publication programs, 3+1D | Equal up to the documented representative maps below; the CF slot is $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$. The source and product are the parameter integrals of the [finite construction](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md), with the orientation of [(O8)](../docs/formulas/OPERATIONS.md#eq-o8) recorded in the call signs of `lift3_source` and `lift3_product`. |
 
 No routine of the complete GAP engine computes a 3+1D phase of
 denominator four, eight or sixteen itself: every such value reaches the
@@ -95,14 +95,14 @@ with `w,s` in `background`.
 | Mathematical field | API key | Degree and coefficients |
 |---|---|---|
 | $`n_{d-2}`$ | `n` | Degree $`d-2`$, signed integers with twist $`s_1`$ |
-| $`n_{d-1}`$ | `a` | Degree $`d-1`$, native binary Majorana field |
+| $`c_{d-1}=n_{d-1}+s_1\cup[\lfloor n_{d-2}/2\rfloor]_2`$ | `a` | Degree $`d-1`$, binary Majorana input |
 | $`\widetilde{n}_3`$ in 3+1D; $`\widetilde{n}_4=n_4+R_4`$ in 4+1D | `c` | Degree $`d`$, binary CF argument of the retained kernel |
 | $`\omega_2`$ | `w` | Degree two, binary extension cocycle |
 | $`s_1`$ | `s` | Degree one, binary antiunitary cocycle |
 
 For a product, `right['n']`, `right['a']`, `right['c']` represent
-$`n'_{d-2},n'_{d-1}`$ and the same shifted-CF convention. The runtime packs them into compiled fields
-`m,b,cp`. Thus **compiled input `b` is the second native Majorana field**;
+$`n'_{d-2},c'_{d-1}`$ and the same CF convention. The runtime packs them into compiled fields
+`m,b,cp`. Thus **compiled input `b` is the second Majorana input $`c'_{d-1}`$**;
 it is not the parity variable called `b` inside some readable definitions.
 The returned product value is a correction, not the entire output $`N_j`$.
 The lower input sums and the phase sum are added by the caller.
@@ -116,17 +116,19 @@ The readable reference functions
 ending in `16` or `48` instead return integer numerators with the indicated
 denominator; their raw values must be divided accordingly.
 
-The internal conversion uses [C1](../docs/FORMULA_GUIDE.md#eq-c1):
+The API key `a` holds the binary cochain $`c_{d-1}`$, not the Majorana
+decoration $`n_{d-1}`$ itself. The internal conversion uses the background
+[C1](../docs/FORMULA_GUIDE.md#eq-c1) and
 
 ```math
 \widetilde{\omega}_2=\omega_2+s_1\cup s_1,\qquad
-\widetilde{n}_{d-1}=n_{d-1}+s_1\cup[\lfloor n_{d-2}/2\rfloor]_2.
+n_{d-1}=c_{d-1}+s_1\cup[\lfloor n_{d-2}/2\rfloor]_2.
 ```
 
-`Backend` accepts the native Majorana field and performs the required shift.
-In contrast, readable functions with arguments `n,u,c,w,s` take the already
-shifted Majorana field `u`. Apply the conversion once, according to the entry
-point; do not pass a shifted field as the native API input.
+`Backend` accepts $`c_{d-1}`$ and forms $`n_{d-1}`$.
+In contrast, readable functions with arguments `n,u,c,w,s` take the
+decoration $`n_{d-1}`$ itself as `u`. Apply the conversion once, according to the entry
+point; do not pass $`n_{d-1}`$ as the API input `a`.
 
 Integer values retain their signs. `carry(n)` means
 $`[\lfloor n_{d-2}/2\rfloor]_2`$.
@@ -163,10 +165,10 @@ formula-guide abbreviations. It does not redefine the public API keys.
 | `a=n.reduce(2)`, `b=m.reduce(2)` | $`[n_{d-2}]_2,[n'_{d-2}]_2`$ |
 | `h=carry(n)`, `k=carry(m)` | $`[\lfloor n_{d-2}/2\rfloor]_2,[\lfloor n'_{d-2}/2\rfloor]_2`$ |
 | `W` | $`\widetilde{\omega}_2`$ |
-| `u`, `v` | $`\widetilde{n}_{d-1},\widetilde{n}'_{d-1}`$ |
+| `u`, `v` | $`n_{d-1},n'_{d-1}`$ |
 | `c`, `cp` | $`n_d,n'_d`$ |
-| `N`, `U`, `C` or `Cnew` | $`N_{d-2},\widetilde{N}_{d-1},N_d`$ |
-| `t` | $`\widetilde{\mathcal E}_{d-1}=[n_{d-2}]_2\cup_{d-3}[n'_{d-2}]_2`$ |
+| `N`, `U`, `C` or `Cnew` | $`N_{d-2},N_{d-1},N_d`$ |
+| `t` | $`\mathcal E_{d-1}=[n_{d-2}]_2\cup_{d-3}[n'_{d-2}]_2`$ |
 | `q` in lower-product local variables | $`[n_{d-2}]_2\cup_{d-2}[n'_{d-2}]_2`$ |
 | `e`, former $`e_d`$ | $`\mathcal E_d`$ |
 | Former $`F_{d+1}`$ | $`\mathcal O_{d+1}`$ |
@@ -189,14 +191,14 @@ and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a), with the
 |---|---|
 | `B`, former $`B_4`$ | $`\beta_4`$ |
 | `K`, former $`K_4`$ | $`\beta_4^\psi`$ |
-| `beta_open(u)`, local `b` in `full3/source.py:blocks`, former $`j_4`$ | $`\beta^-\widetilde{n}_3`$ |
-| Former $`A_4`$ | $`\widetilde{\mathcal O}_4=d\widetilde{n}_3`$ |
+| `beta_open(u)`, local `b` in `full3/source.py:blocks`, former $`j_4`$ | $`\beta^-n_3`$ |
+| Former $`A_4`$ | $`\mathcal O_4=dn_3`$ |
 | Background integer carry, former $`v_3`$ | $`\beta_{s_1}\widetilde{\omega}_2`$ |
 | `alpha`, former $`\alpha_3`$ | $`[\beta_{s_1}\widetilde{\omega}_2]_2`$ |
 | `hw`, former $`h_\omega`$ | $`[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2`$ |
 | `ell(w,s)`, former $`\ell^\omega_3`$ | $`[\beta\omega_2]_2+s_1\omega_2`$ |
 | Background `P`, former $`\mathcal P_s(W)`$ | $`\mathfrak P_{s_1}(\widetilde{\omega}_2)`$ |
-| `Bp`, former $`B'`$ | $`\beta'_4=\beta_4(n'_2,\widetilde{n}'_3)`$ |
+| `Bp`, former $`B'`$ | $`\beta'_4=\beta_4(n'_2,n'_3)`$ |
 | `la`, dictionary key `lambda`, former $`\lambda`$ | $`\lambda_3`$ |
 | `r`, `rp` in `collected_blocks` | $`[\beta_4]_2,[\beta'_4]_2`$ |
 | `l` in `collected_blocks` | $`[\lambda_3]_2`$ |
@@ -245,16 +247,16 @@ source additionally retains $`n_2^3/12`$.
 
 ## 3+1D parameter fields
 
-The current physical $`3+1`$D fields are $`n_1,\widetilde{n}_2,n_3`$.
-The retained parameter construction takes $`\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$
+The current physical $`3+1`$D fields are $`n_1,n_2,n_3`$.
+The retained parameter construction takes $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$
 in its CF slot and the previous product output $`\widetilde{N}_3+d\mathcal B_2`$.
 Its raised fields are defined in
 [T3a–T3c](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3b):
 
 | Earlier notation or construction | Current notation |
 |---|---|
-| $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the triangle; output of `fields_on_triangle` | $`n_2^\triangle,\widetilde{n}_3^\triangle,n_4^\triangle`$ |
-| $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the interval; output of `fields_on_interval` | $`n_2^I,\widetilde{n}_3^I,n_4^I`$ |
+| $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the triangle; output of `fields_on_triangle` | $`n_2^\triangle,n_3^\triangle,n_4^\triangle`$ |
+| $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the interval; output of `fields_on_interval` | $`n_2^I,n_3^I,n_4^I`$ |
 | $`\theta,\phi,\chi`$ | $`\theta_1,\theta'_1,\chi_1`$ |
 | Former $`J_5=F_5(\mathfrak n,\mathfrak u)`$ | $`\mathcal O_5^\triangle`$ |
 | Former $`\mathcal H_4`$ acting on that source | $`(\mathsf h_4^{(2)})^*`$ |
@@ -270,7 +272,7 @@ not independent lifts of the three fields. The notation-to-runtime map is:
 |---|---|
 | $`\mathop{\mathrm{ev}}\nolimits_5`$ | `lift3_source`, then the signed six-simplex interval sum |
 | $`\mathop{\mathrm{ev}}\nolimits_4`$ | `lift3_product`, then the signed fifteen-simplex triangle sum |
-| $`\uparrow n_1,\uparrow\widetilde{n}_2,\uparrow n_3`$ | The three components `n,u,c` returned by the relevant lift |
+| $`\uparrow n_1,\uparrow n_2,\uparrow n_3`$ | The three components `n,u,c` returned by the relevant lift |
 | $`\beta_4^\uparrow,\beta_4^{\psi,\uparrow}`$ | The same integer residuals `B,K` on those components |
 
 The full six-cochain's cubic term has zero transgression on both parameter

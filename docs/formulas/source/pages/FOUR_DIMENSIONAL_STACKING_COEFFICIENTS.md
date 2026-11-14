@@ -39,7 +39,7 @@ For example, the integer carry has the open-cochain definition
 ```
 
 Here $`x`$ is any binary degree-three cochain. This definition is integral
-without imposing $`dx=\widetilde{\mathcal O}_4[n_2]`$ on an individual argument.
+without imposing $`dx=\mathcal O_4[n_2]`$ on an individual argument.
 The quotient using $`d x`$ in place of the lower obstruction agrees with it
 on the actual lower tower; it must not be substituted on an arbitrary
 component. Its useful polarization is the exact integer identity
@@ -59,7 +59,7 @@ Likewise, the [integral stacking carry](FOUR_DIMENSIONAL.md#eq-t4a) is
 ```math
 \lambda_3[n_2,x;n'_2,y]
  =\frac{
- [x+y+\widetilde{\mathcal E}_3[n_2,n'_2]]_2
+ [x+y+\mathcal E_3[n_2,n'_2]]_2
  -x-y+n_2\cup_1n'_2}{2}.
 ```
 

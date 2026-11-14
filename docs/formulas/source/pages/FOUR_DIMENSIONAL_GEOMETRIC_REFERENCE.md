@@ -59,12 +59,10 @@ $`\Delta R_4`$ is the actual lower product:
 
 ```math
 N_2=n_2+n'_2,\qquad
-N_3=n_3+n'_3+[n_2]_2\cup_1[n'_2]_2
-             +s_1([n_2]_2\cup_2[n'_2]_2).
+N_3=n_3+n'_3+[n_2]_2\cup_1[n'_2]_2.
 ```
 
-Equivalently $`\widetilde{N}_3=\widetilde{n}_3+\widetilde{n}'_3+\widetilde{\mathcal E}_3`$,
-with $`\widetilde{\mathcal E}_3=[n_2]_2\cup_1[n'_2]_2`$. The complete count is
+The complete count is
 
 {{equation:four-dimensional-geometric-reference--pair--2}}
 

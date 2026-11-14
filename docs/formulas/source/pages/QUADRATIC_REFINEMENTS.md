@@ -62,7 +62,7 @@ $`z_2x/2`$ to the quarter-valued phase.
 ## The quadratic part of the 4+1D obstruction
 
 The [integer carries](FOUR_DIMENSIONAL.md#eq-s1) are already fixed:
-$`\beta_4^\gamma=\beta^-\widetilde{n}_3`$ and
+$`\beta_4^\gamma=\beta^-n_3`$ and
 $`\beta_4=\beta_4^\gamma+\beta_4^\psi`$. The quadratic quarter-valued terms in the
 three physical contributions are, respectively,
 

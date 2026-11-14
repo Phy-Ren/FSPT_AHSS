@@ -17,9 +17,9 @@
     "The fixed terminal phase change R5 has 45 half-valued terms and one quarter-valued term; its second argument zero removes one half term. Every displayed evaluation R5[x,0] therefore contributes 44 half plus one quarter occurrence. Its whole lower-output argument remains an explicitly specified binary field."
   ],
   "reader_hashes": {
-    "docs/formulas/TWO_DIMENSIONAL.md": "09df375ba13dd83945c6d3c2ec7488f72dfc9336cd1f02af897465e76952f2ca",
-    "docs/formulas/THREE_DIMENSIONAL.md": "7dc4c34a0315a962131059e34b3cb8b6e3ac55cd722c69a789f31f9b95527a4c",
-    "docs/formulas/FOUR_DIMENSIONAL.md": "2bc61852dbf0b2d217c495f6059b12f7ec65bde74cde7aff4071d36e4bb23d9c"
+    "docs/formulas/TWO_DIMENSIONAL.md": "92fa424193a482022df0b1a330eff2541eeafd0b26ce8b04a288026dc10edb68",
+    "docs/formulas/THREE_DIMENSIONAL.md": "4c5cfd064f5b6f85f37bfadca417a94fb7f967e36bd4a225e5754d4aef8eb124",
+    "docs/formulas/FOUR_DIMENSIONAL.md": "89c78eef00e3d3162190aed6cce54ae62cf04828f78fd1d6363671e76d0021b0"
   },
   "records": [
     {
@@ -181,15 +181,14 @@
       "law": "O3",
       "origin": "psi",
       "terms_by_coefficient": {
-        "binary_or_half": 2,
+        "binary_or_half": 1,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 2,
-      "note": "The equivalent shifted source has one term."
+      "total": 1
     },
     {
       "dimension": "3+1D",
@@ -338,15 +337,14 @@
       "law": "E2",
       "origin": "psi",
       "terms_by_coefficient": {
-        "binary_or_half": 2,
+        "binary_or_half": 1,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 2,
-      "note": "The equivalent shifted twister has one term."
+      "total": 1
     },
     {
       "dimension": "3+1D",
@@ -496,15 +494,14 @@
       "law": "O4",
       "origin": "psi",
       "terms_by_coefficient": {
-        "binary_or_half": 3,
+        "binary_or_half": 2,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 3,
-      "note": "The equivalent shifted source has two terms."
+      "total": 2
     },
     {
       "dimension": "4+1D",
@@ -656,15 +653,14 @@
       "law": "E3",
       "origin": "psi",
       "terms_by_coefficient": {
-        "binary_or_half": 2,
+        "binary_or_half": 1,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 2,
-      "note": "The equivalent shifted twister has one term."
+      "total": 1
     },
     {
       "dimension": "4+1D",
@@ -848,19 +844,19 @@
     "2+1D E2": 2,
     "2+1D E3": 25,
     "3+1D O2": 0,
-    "3+1D O3": 2,
+    "3+1D O3": 1,
     "3+1D O4": 10,
     "3+1D O5": 13729,
     "3+1D E1": 0,
-    "3+1D E2": 2,
+    "3+1D E2": 1,
     "3+1D E3": 20,
     "3+1D E4": 26721,
     "4+1D O3": 0,
-    "4+1D O4": 3,
+    "4+1D O4": 2,
     "4+1D O5": 18,
     "4+1D O6": 625821,
     "4+1D E2": 0,
-    "4+1D E3": 2,
+    "4+1D E3": 1,
     "4+1D E4": 34,
     "4+1D E5": 8555622
   },
@@ -1527,10 +1523,10 @@
     "source_expansion_phase": "The stored 4D source expansion and old 85/1005 word dictionaries belong to the preceding phase coordinate. Current O6 is counted in records, not by substituting that archive."
   },
   "supporting_reader_hashes": {
-    "docs/FORMULA_GUIDE.md": "e51953fb1131dc0b9e4178655652739bc8107c7fb1b05ad6ba0b6e7033ac0e17",
-    "docs/formulas/QUADRATIC_REFINEMENTS.md": "832d49a6786619cd0dab28cbaf9054de38862d3a5a62c4e6d636a6fcc1616d78",
-    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": "5cc624b61fa4281796b0004eab45f15bbd308d0ecf2e9760de20eb019acad305",
-    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "f3010a8ccba3cd265a1008aa3ecc3b74e880f6a40ea52c59a53a0e7b98421511"
+    "docs/FORMULA_GUIDE.md": "f3a5f834361b571e8c78109acd465ef4739c4475abb21b09de48dd04a464a6be",
+    "docs/formulas/QUADRATIC_REFINEMENTS.md": "cb16c7c09f21985733834acfd46eba042d6bde745aea42856779a293adf0d256",
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": "5e72a594e52ba203a8a179fc05627afd0528c066587757eff960fcbcab27d7f3",
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "c02e64e0c4527c292f40782a58fd028298f48a51ba15e82ea8e3d997fbaed9ea"
   },
   "self_stacking": {
     "scope": "Separate restricted formulas; complete input states; before full output gauge. These records do not replace general counts.",
@@ -1662,18 +1658,18 @@
     "representative_change": false
   },
   "counted_source_hashes": {
-    "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--14.tex": "4560b3413fafa17907803814bdb89e1b1e06d720fb84813a48ac8b1ec80c0b2d",
-    "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--15.tex": "7ba5729c14c540ac5166a0120f86fe562d9ecdea2d165aacd74c1ede0a18b0b7",
-    "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--16.tex": "b73242d0f8f54bd8c31cb0651734f6dec37223a6853a65361b33630cb44266c7",
-    "docs/formulas/source/equations/four-dimensional--majorana-decoration--33.tex": "9ef6b6ca6e93f9ff57e2b92d29fb1e37b8f4e441a28fdc5913bd3ff089f53d83",
-    "docs/formulas/source/equations/four-dimensional--majorana-and-p-ip-decoration--36.tex": "b6236ac0d28bf183ac61fdd77a61419fb83cfd3b0498a0c1b092219eb26cdc0c",
-    "docs/formulas/source/equations/four-dimensional--p-ip-decoration--37.tex": "d419b9a46b02fed31d7cd2f01ffa3d7d2e24e12044cf6a3b254bc3423393a1d9",
-    "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-decoration--10.tex": "02a08872811b20c005c33c94f4a4fcad23a9315b6bec27a8d95a1281f8af0fc9",
-    "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-and-p-ip-decoration--11.tex": "ddcc6cfc8915ba50723a2c673373bacdb9e305e8e3e9d6d3e324561d5493c532",
-    "docs/formulas/source/equations/four-dimensional-self-stacking--p-ip-decoration--12.tex": "58165e67a71c01c4cb3888176226071a29c510f2255a92bd55e5126b889a529f",
-    "docs/formulas/source/equations/four-dimensional-majorana-phase--phase-change--1.tex": "27f0a13d73bafbf1c37a6ca7d4468662601fb3a2b27fdf2a87ba06b038fff5f7",
+    "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--14.tex": "3a5c79a0beaea3fd4d9ae866d3ac405e3b89cef1df7534d389fcc6e05e877d18",
+    "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--15.tex": "47e450bf9dd0c452c30310d8b2cda76d46c72e3b83916413ac237192919c522d",
+    "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--16.tex": "df93bea24206d0e78b8c59b8cbd7af6f544204be9f3e09c7403704eb16d2ee33",
+    "docs/formulas/source/equations/four-dimensional--majorana-decoration--33.tex": "8cdf89eaeda51e0d5c2e314b051ad8818455de3b24fd2b344110fbc21cfcc896",
+    "docs/formulas/source/equations/four-dimensional--majorana-and-p-ip-decoration--36.tex": "02c6ad56b2ce798582673ddf11436fcab6f30ba97770be35af5dc575507a0260",
+    "docs/formulas/source/equations/four-dimensional--p-ip-decoration--37.tex": "2abbc65945e44bc4d9c5e5320b349298ea7e60522812f813270fcfc162d18bf0",
+    "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-decoration--10.tex": "61bf86de07fcf678688aac2ddb70b3b7d77cfb0747653b46dfdda3191d93f7e8",
+    "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-and-p-ip-decoration--11.tex": "bc562eb9390ec26a0c9e9225453b2f42ea319ed1370abe4872f9ae3c9dd982a2",
+    "docs/formulas/source/equations/four-dimensional-self-stacking--p-ip-decoration--12.tex": "e86bf3721bd0be51bf76bce78abd106b72afa6a1c56ead77298fe73f030d0b6b",
+    "docs/formulas/source/equations/four-dimensional-majorana-phase--phase-change--1.tex": "af4970b58a1c469a584f9b35e7b6cce4efcd6306364d9b226efafc6caa6a6f25",
     "docs/formulas/source/equations/four-dimensional-majorana-phase--intrinsic--1.tex": "a6a63ea9b1e0468ff6307cf6ddb6d2a600f2162c74617d45be9dcb89d4b2d812",
-    "docs/formulas/source/equations/three-dimensional--majorana-decoration--14.tex": "dcbd1572a6c413f3548d254eff2709bc6cbc9ad935663a6d2ca371816b03f675",
+    "docs/formulas/source/equations/three-dimensional--majorana-decoration--14.tex": "f18a00b09258141e48ec9b273b3cddaf23da5fbf7f7532922a07fd55ba32e5b0",
     "docs/formulas/source/equations/majorana-and-endpoints--majorana-contribution--24.tex": "8d84c434c7db48960989ed503d89384336a1dd4df97d9ee5697d723005ecd42a"
   }
 }

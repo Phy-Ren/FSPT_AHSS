@@ -83,19 +83,19 @@ listed in the [structured count ledger](term_census/STRUCTURED_TERM_COUNTS.json)
 | 2+1D | E2 | 0 | 0 | 0 | 2 | 0 | 0 | 2 |
 | 2+1D | E3 | 3 | 2 | 0 | 20 | 0 | 0 | 25 |
 | 3+1D | O2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 3+1D | O3 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 3+1D | O3 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
 | 3+1D | O4 | 0 | 0 | 0 | 3 | 2 | 5 | 10 |
 | 3+1D | O5 | 3 | 4 | 10 | 15 | 2,281 | 11,416 | 13,729 |
 | 3+1D | E1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 3+1D | E2 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 3+1D | E2 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
 | 3+1D | E3 | 0 | 0 | 0 | 2 | 5 | 13 | 20 |
 | 3+1D | E4 | 3 | 4 | 29 | 43 | 16,059 | 10,583 | 26,721 |
 | 4+1D | O3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 4+1D | O4 | 0 | 0 | 0 | 0 | 0 | 3 | 3 |
+| 4+1D | O4 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
 | 4+1D | O5 | 0 | 0 | 0 | 3 | 2 | 13 | 18 |
 | 4+1D | O6 | 3 | 4 | 5 | 16 | 1,907 | 623,886 | 625,821 |
 | 4+1D | E2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 4+1D | E3 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 4+1D | E3 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
 | 4+1D | E4 | 0 | 0 | 0 | 2 | 5 | 27 | 34 |
 | 4+1D | E5 | 3 | 4 | 2 | 760† | 5,685,587 | 2,869,266 | 8,555,622† |
 
@@ -179,8 +179,8 @@ For the full self-stack, the phase transport adds two Majorana terms,
 one mixed term, and 46 pure p+ip occurrences at the same boundary.
 
 The complete lower self-twister counts are: 2+1D E2 has two terms;
-3+1D E2 has two, and E3 has seven for a general signed integer input;
-4+1D E3 has two native terms (one in shifted coordinates), and E4 has
+3+1D E2 has one, and E3 has seven for a general signed integer input;
+4+1D E3 has one term, and E4 has
 fourteen terms. The 3+1D canonical torsion branch has a vanishing pure
 p+ip E3 contribution and retains its open-Majorana differential.
 

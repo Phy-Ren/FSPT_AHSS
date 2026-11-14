@@ -12,9 +12,9 @@ lower obstruction remains a defined standard operation. This is an exact
 identity modulo one, with no change of source, lower product, output gauge,
 or physical contribution.
 
-The result holds for an arbitrary binary two-cochain $`\widetilde{n}_2`$, not just
+The result holds for an arbitrary binary two-cochain $`n_2`$, not just
 a cocycle. It therefore applies to the canonical p+ip torsion branch with
-$`d\widetilde{n}_2=\widetilde{\omega}_2s_1`$. No integer output gauge has been applied.
+$`dn_2=\widetilde{\omega}_2s_1`$. No integer output gauge has been applied.
 
 ## Replacement formula
 
@@ -23,27 +23,27 @@ On the ordered four-simplex, the complete contribution is
 ```math
 \begin{aligned}
 \mathcal{ℰ}_4^\gamma(01234)
-={}&\frac12\widetilde{n}_2(012)\widetilde{n}_2(123)\widetilde{n}_2(234)
-                          (d\widetilde{n}_2)(0134)\\
+={}&\frac12n_2(012)n_2(123)n_2(234)
+                          (dn_2)(0134)\\
 &+\frac12\Big[
- \mathop{\mathrm{MS}}\nolimits_{123131}(\widetilde{n}_2,\widetilde{n}_2,
-                            \widetilde{n}_2\cup_1\widetilde{n}_2)\\
-&\quad +(\widetilde{n}_2\cup_2d\widetilde{n}_2)\cup_1\widetilde{n}_2
- +\widetilde{n}_2\cup_1(\widetilde{n}_2\cup_1\widetilde{n}_2)\\
-&\quad +\widetilde{n}_2\cup_2
-      [\widetilde{n}_2\cup_1(\widetilde{n}_2\cup_1\widetilde{n}_2)]
- +\widetilde{n}_2^2\\
-&\quad +(\omega_2\cup_1s_1)\widetilde{n}_2
- +(\widetilde{n}_2\cup_1\widetilde{n}_2)\cup_2(s_1\widetilde{n}_2)
- +s_1^2\widetilde{n}_2
- +s_1\big[(s_1\widetilde{n}_2)\cup_2\widetilde{n}_2\big]
+ \mathop{\mathrm{MS}}\nolimits_{123131}(n_2,n_2,
+                            n_2\cup_1n_2)\\
+&\quad +(n_2\cup_2dn_2)\cup_1n_2
+ +n_2\cup_1(n_2\cup_1n_2)\\
+&\quad +n_2\cup_2
+      [n_2\cup_1(n_2\cup_1n_2)]
+ +n_2^2\\
+&\quad +(\omega_2\cup_1s_1)n_2
+ +(n_2\cup_1n_2)\cup_2(s_1n_2)
+ +s_1^2n_2
+ +s_1\big[(s_1n_2)\cup_2n_2\big]
  \Big](01234)\\
 &-\frac14\Big[
- (\beta^-\widetilde{n}_2)\cup_2(\beta^-\widetilde{n}_2)
- -s_1[\beta^-\widetilde{n}_2]_2\\
+ (\beta^-n_2)\cup_2(\beta^-n_2)
+ -s_1[\beta^-n_2]_2\\
 &\hspace{13mm}
- -[\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]
-             +s_1(\widetilde{n}_2\cup_2d\widetilde{n}_2)]_2
+ -[\mathcal{𝒪}_4^\gamma[n_2]
+             +s_1(n_2\cup_2dn_2)]_2
  \Big](01234).
 \end{aligned}
 ```
@@ -53,13 +53,13 @@ coefficients before taking its canonical integer lift. Its interior has
 **two terms**, retaining the already defined lower differential
 
 ```math
-\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]
- =\widetilde{n}_2^2+s_1(\widetilde{n}_2\cup_1\widetilde{n}_2)
-  +\omega_2\widetilde{n}_2.
+\mathcal{𝒪}_4^\gamma[n_2]
+ =n_2^2+s_1(n_2\cup_1n_2)
+  +\omega_2n_2.
 ```
 
 Equivalently, its interior is
-$`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[\widetilde{n}_2]+d\widetilde{n}_2\cup_1\widetilde{n}_2`$.
+$`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[n_2]+dn_2\cup_1n_2`$.
 The two-term expression above avoids expanding and then cancelling that
 additional lower-source term. No new polynomial symbol is introduced in
 the reader formula.
@@ -72,23 +72,23 @@ the half-valued sum:
 ```math
 \begin{aligned}
  &\frac12\Big[
- \widetilde{n}_2^2\cup_4(\omega_2\widetilde{n}_2)
- +(\widetilde{n}_2^2+\omega_2\widetilde{n}_2)
-             \cup_4(s_1[\beta^-\widetilde{n}_2]_2)
- +s_1[\beta^-\widetilde{n}_2]_2\Big]\\
+ n_2^2\cup_4(\omega_2n_2)
+ +(n_2^2+\omega_2n_2)
+             \cup_4(s_1[\beta^-n_2]_2)
+ +s_1[\beta^-n_2]_2\Big]\\
  &\hspace{25mm}
- -\frac14\big[\widetilde{n}_2^2-\omega_2\widetilde{n}_2\big].
+ -\frac14\big[n_2^2-\omega_2n_2\big].
 \end{aligned}
 ```
 
 They are replaced by exactly three outer terms:
 
 ```math
-\frac12\widetilde{n}_2^2
+\frac12n_2^2
  +\frac14\Big[
- s_1[\beta^-\widetilde{n}_2]_2
- +[\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]
-             +s_1(\widetilde{n}_2\cup_2d\widetilde{n}_2)]_2\Big].
+ s_1[\beta^-n_2]_2
+ +[\mathcal{𝒪}_4^\gamma[n_2]
+             +s_1(n_2\cup_2dn_2)]_2\Big].
 ```
 
 Every other term is unchanged. This is a use of the intrinsic lower

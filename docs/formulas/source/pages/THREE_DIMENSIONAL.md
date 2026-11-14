@@ -14,12 +14,6 @@ Throughout this section the physical fields are:
 | $`n_3`$ | Complex-fermion decoration | $`\mathbb Z_2`$ |
 | $`\nu_4`$ | Bosonic phase | $`U(1)_{s_1}`$ |
 
-The contributions below are grouped in the shifted Majorana coordinate
-
-<a id="eq-c1-3d"></a>
-
-{{equation:three-dimensional--3-1d--1}}
-
 <a id="obstructions-3d"></a>
 <a id="lower-sources"></a>
 ## Obstruction functions
@@ -40,10 +34,6 @@ The contributions below are grouped in the shifted Majorana coordinate
 
 {{equation:three-dimensional--2-majorana-obstruction--4}}
 
-Equivalently, in the shifted Majorana coordinate,
-
-{{equation:three-dimensional--2-majorana-obstruction--5}}
-
 ### 3. Complex-fermion obstruction
 
 <a id="eq-l2"></a>
@@ -58,7 +48,7 @@ Equivalently, in the shifted Majorana coordinate,
 
 {{equation:three-dimensional--3-complex-fermion-obstruction--8}}
 
-Here $`d\widetilde{n}_2=\widetilde{\omega}_2[n_1]_2`$ is fixed by the preceding obstruction.
+Here $`dn_2=\widetilde{\omega}_2[n_1]_2`$ is fixed by the preceding obstruction.
 
 **p+ip contribution.**
 
@@ -103,9 +93,9 @@ The source and product are transported together as proved in
 {{equation:three-dimensional--complex-fermions-and-majorana-decoration--12}}
 
 The bracket includes the reference correction to the preceding parity:
-$`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2\widetilde{n}_2
-+\omega_2\widetilde{n}_2+s_1\mathrm{Sq}^1\widetilde{n}_2+d(\widetilde{n}_2\cup_1\widetilde{n}_2)`$.
-Its mixed component retains the terms proportional to $`d\widetilde{n}_2`$;
+$`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2n_2
++\omega_2n_2+s_1\mathrm{Sq}^1n_2+d(n_2\cup_1n_2)`$.
+Its mixed component retains the terms proportional to $`dn_2`$;
 no closed-input assumption is made. The outer superscript records the
 exchanged fermion operators. Reusing their full parity does not change
 that physical origin.
@@ -119,8 +109,8 @@ that physical origin.
 The finite sum contains **seven specified MS terms**,
 [listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices).
 Together with the three displayed cups, this gives **ten terms**.
-Every MS term contains $`d\widetilde{n}_2=\widetilde{\omega}_2[n_1]_2`$ and
-$`d\widetilde{n}_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d(\widetilde{n}_2\cup_1\widetilde{n}_2)
+Every MS term contains $`dn_2=\widetilde{\omega}_2[n_1]_2`$ and
+$`d\widetilde{n}_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d(n_2\cup_1n_2)
 +\mathcal{𝒪}_4^\psi`$. Thus the complex-fermion exchange correction
 depends on its full lower parity differential. The
 [exact reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
@@ -141,8 +131,7 @@ The intrinsic Adem cochain of a binary two-cochain $`x`$ is
 {{equation:majorana-and-endpoints--majorana-contribution--24}}
 
 This operation has four word terms. The closed-Majorana presentation
-uses the same polynomial with $`\widetilde{n}_2=n_2`$ and
-$`\beta^-=\beta`$, but in the physical occupation $`n_3`$ and with the
+uses the same polynomial with $`\beta^-=\beta`$, but in the physical occupation $`n_3`$ and with the
 opposite sign of the quarter bracket; the
 [bridging identity](#closed-sector-bridging-identity) relates the two.
 
@@ -215,14 +204,6 @@ The Pontryagin-square convention in the last term is
 
 {{equation:three-dimensional--2-majorana-stacking--21}}
 
-The same product in the shifted coordinate is
-
-{{equation:three-dimensional--2-majorana-stacking--22}}
-
-Its integer digit carry is
-
-{{equation:three-dimensional--2-majorana-stacking--23}}
-
 ### 3. Complex-fermion stacking
 
 <a id="eq-p3"></a>
@@ -276,7 +257,7 @@ It retains the complex-fermion completion and uses the same phase representative
 
 {{equation:three-dimensional--complex-fermions-and-majorana-decoration--29}}
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_3,\widetilde{N}_2)`$ minus the values at $`(n_3,\widetilde{n}_2)`$ and $`(n'_3,\widetilde{n}'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential and the $`d(\widetilde{n}_2\cup_1\widetilde{n}_2)`$ terms. The last term transports the output evaluation to its actual face reference.
+The $`\Delta`$ has its defined three terms: the value at $`(N_3,N_2)`$ minus the values at $`(n_3,n_2)`$ and $`(n'_3,n'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential and the $`d(n_2\cup_1n_2)`$ terms. The last term transports the output evaluation to its actual face reference.
 
 #### Complex fermions and p+ip decoration
 
@@ -304,8 +285,8 @@ The binary completion is
 
 {{equation:three-dimensional--majorana-decoration--32}}
 
-Here $`\mathcal{ℰ}_3^\gamma=\widetilde{n}_2\cup_1\widetilde{n}'_2
-+s_1(\widetilde{n}_2\cup_2\widetilde{n}'_2)`$ and
+Here $`\mathcal{ℰ}_3^\gamma=n_2\cup_1n'_2
++s_1(n_2\cup_2n'_2)`$ and
 $`\beta^{-+}x=(\beta^- x+[\beta^- x]_2)/2=\lfloor(dx+2)/4\rfloor`$.
 Its intrinsic binary polynomial is
 
@@ -410,7 +391,7 @@ The obstruction and stacking law use the same [paired phase convention](THREE_DI
 
 ## Closed sector and the bridging identity
 
-For $`n_1=n'_1=0`$ one has $`\widetilde{n}_2=n_2`$, $`\beta^-=\beta`$ and
+For $`n_1=n'_1=0`$ one has $`\beta^-=\beta`$ and
 $`\widetilde{n}_3=n_3+[\beta n_2]_2`$. The
 [closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d) are written in
 the physical occupation $`n_3`$ with the lattice sign of the Majorana phase. With

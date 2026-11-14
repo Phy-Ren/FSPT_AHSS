@@ -18,26 +18,26 @@ obstruction representatives:
  +\Delta\big(\widetilde{n}_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
 &\qquad+d\mathcal B_2\cup_3\mathcal{𝒪}_4^\psi[N_1]\\
 &\qquad+(d\widetilde{n}_3+d\widetilde{n}'_3)\cup_4\Big[
- \mathcal{𝒪}_4^\gamma[\widetilde{N}_2]
- +\mathcal{𝒪}_4^\gamma[\widetilde{n}_2+\widetilde{n}'_2]\\
-&\hspace{53mm}+\widetilde{N}_2^2+(\widetilde{n}_2+\widetilde{n}'_2)^2
+ \mathcal{𝒪}_4^\gamma[N_2]
+ +\mathcal{𝒪}_4^\gamma[n_2+n'_2]\\
+&\hspace{53mm}+N_2^2+(n_2+n'_2)^2
  \Big]\Big](01234)\\
 &+\frac12(d\widetilde{n}_3)(01234)\Big[
- \widetilde{n}'_2(012)(d\widetilde{n}_2)(0234)
- +\widetilde{n}_2(034)(d\widetilde{n}'_2)(0123)\\
-&\qquad+\widetilde{n}'_2(123)(d\widetilde{n}_2)(0134)
- +\widetilde{n}_2(014)(d\widetilde{n}'_2)(1234)
- +\widetilde{n}'_2(234)(d\widetilde{n}_2)(0124)\\
+ n'_2(012)(dn_2)(0234)
+ +n_2(034)(dn'_2)(0123)\\
+&\qquad+n'_2(123)(dn_2)(0134)
+ +n_2(014)(dn'_2)(1234)
+ +n'_2(234)(dn_2)(0124)\\
 &\qquad+s_1(01)\Big\{
- \widetilde{n}'_2(124)(d\widetilde{n}_2)(1234)
- +[\widetilde{n}_2(123)+\widetilde{n}'_2(123)](d\widetilde{n}'_2)(1234)
+ n'_2(124)(dn_2)(1234)
+ +[n_2(123)+n'_2(123)](dn'_2)(1234)
  \Big\}\Big]\\
 &+\frac12(d\widetilde{n}'_3)(01234)\Big[
- \widetilde{n}'_2(012)(d\widetilde{n}_2)(0234)
- +\widetilde{n}_2(034)(d\widetilde{n}'_2)(0123)\\
+ n'_2(012)(dn_2)(0234)
+ +n_2(034)(dn'_2)(0123)\\
 &\qquad+s_1(01)\Big\{
- [\widetilde{n}_2(123)+\widetilde{n}'_2(124)](d\widetilde{n}_2)(1234)
- +\widetilde{n}_2(123)(d\widetilde{n}'_2)(1234)
+ [n_2(123)+n'_2(124)](dn_2)(1234)
+ +n_2(123)(dn'_2)(1234)
  \Big\}\Big].
 \end{aligned}
 ```
@@ -46,8 +46,8 @@ The two face brackets contain **13 explicit products** after distributing
 the displayed binary parentheses: eight multiply $`dn_3`$ and five multiply
 $`dn'_3`$. They replace the entire previous **132-term MS sum** exactly.
 The lower differential arguments retain their meanings:
-$`d\widetilde{n}_2=\widetilde{\omega}_2[n_1]_2`$ and
-$`d\widetilde{n}'_2=\widetilde{\omega}_2[n'_1]_2`$.
+$`dn_2=\widetilde{\omega}_2[n_1]_2`$ and
+$`dn'_2=\widetilde{\omega}_2[n'_1]_2`$.
 The two former $`P_4`$ terms have also been eliminated. Their eight-word
 operation satisfies the exact identity
 
@@ -59,7 +59,7 @@ P_4[x,z]=(dz)\cup_4\big[\omega_2x+s_1(x\cup_1x)\big]
 Thus the rewritten contribution uses the already defined lower obstruction
 rather than an additional polynomial operation. This identity holds for
 arbitrary binary $`x`$ and $`z`$ of degrees two and three.
-The argument $`\widetilde{n}_2+\widetilde{n}'_2`$ inside
+The argument $`n_2+n'_2`$ inside
 $`\mathcal{𝒪}_4^\gamma`$ is the **complete binary sum**. The nonlinear
 obstruction must not be replaced by the sum of its values on the two inputs.
 
@@ -75,9 +75,9 @@ expression is exactly
 
 ```math
 \frac12(dn_3)(01234)\Big[
- \widetilde{n}_2(123)(d\widetilde{n}_2)(0134)
- +\widetilde{n}_2(014)(d\widetilde{n}_2)(1234)
- +\widetilde{n}_2(234)(d\widetilde{n}_2)(0124)\Big].
+ n_2(123)(dn_2)(0134)
+ +n_2(014)(dn_2)(1234)
+ +n_2(234)(dn_2)(0124)\Big].
 ```
 
 These **three face products** are the self-stacking correction already
@@ -103,8 +103,8 @@ reference, this reduces the complete $`c\psi`$ contribution from **202 to
 terms**. The reduction is 173 terms. The count is two initial lower/Delta terms,
 13 physical-face products, and 14 terms in the retained lower-obstruction
 part. In that last part the two individual lower-obstruction evaluations
-count once each, $`\widetilde{N}_2^2`$ contributes one term, and
-$`(\widetilde{n}_2+\widetilde{n}'_2)^2`$ contributes four; the two derivatives
+count once each, $`N_2^2`$ contributes one term, and
+$`(n_2+n'_2)^2`$ contributes four; the two derivatives
 $`dn_3+dn'_3`$ give $`2(2+1+4)=14`$. The nonlinear obstruction
 evaluations keep their complete arguments. No linearization is used. This product reduction leaves the source and every other physical
 contribution unchanged. The additional source reduction is given below. Fully substituted archival counts remain
@@ -133,8 +133,8 @@ Together with the three displayed cups, the complete contribution has
 **ten terms**, reduced from 30. The two independent reductions are:
 
 - The former 25-word correction equals seven MS words whose arguments
-  contain $`dn_3`$, $`d\widetilde{n}_2`$, and the backgrounds. This identity
-  holds for arbitrary binary $`\widetilde{n}_2`$ and $`n_3`$ with closed
+  contain $`dn_3`$, $`dn_2`$, and the backgrounds. This identity
+  holds for arbitrary binary $`n_2`$ and $`n_3`$ with closed
   $`\omega_2`$ and $`s_1`$; no lower source equation is imposed.
 - The remaining five cups become three by substituting the complete
   lower equation $`dn_3=\mathcal{𝒪}_4^\gamma+

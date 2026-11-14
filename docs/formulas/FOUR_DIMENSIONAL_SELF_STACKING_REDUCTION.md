@@ -13,15 +13,15 @@ Both use existing lower-layer operations with their original domains.
 For every binary degree-three cochain,
 
 ```math
-[\beta^-\widetilde{n}_3]_2
- =\mathrm{Sq}^1\widetilde{n}_3,
+[\beta^-n_3]_2
+ =\mathrm{Sq}^1n_3,
 \qquad
-d[\beta^-\widetilde{n}_3]_2
- =\mathrm{Sq}^1(d\widetilde{n}_3).
+d[\beta^-n_3]_2
+ =\mathrm{Sq}^1(dn_3).
 ```
 
 These are cochain identities, including the differential terms in the
-Steenrod square. They do not require $`d\widetilde{n}_3=0`$.
+Steenrod square. They do not require $`dn_3=0`$.
 Using these relations and the closed-background equations, the earlier
 218 MS terms in the self-stacking coefficient have the following exact
 pointwise replacement:
@@ -55,17 +55,17 @@ Majorana carry is fixed by the lower obstruction:
 ```math
 d\beta_4^\gamma
  =-\beta\big(\widetilde{\mathcal{𝒪}}_4[n_2]\big),
-\qquad \beta_4^\gamma=\beta^-\widetilde{n}_3.
+\qquad \beta_4^\gamma=\beta^-n_3.
 ```
 
 Here $`\beta`$ is the ordinary integer Bockstein of a closed binary
 cochain. Its input is closed because
-$`\widetilde{\mathcal{𝒪}}_4[n_2]=d\widetilde{n}_3`$ on this tower.
+$`\mathcal{𝒪}_4[n_2]=dn_3`$ on this tower.
 For an arbitrary binary cochain, the defining integer identity is
 
 ```math
-2\beta^-\widetilde{n}_3
- =d\widetilde{n}_3-[d\widetilde{n}_3]_2,
+2\beta^-n_3
+ =dn_3-[dn_3]_2,
 ```
 
 where the differential outside $`[\cdot]_2`$ is taken over the integers on the

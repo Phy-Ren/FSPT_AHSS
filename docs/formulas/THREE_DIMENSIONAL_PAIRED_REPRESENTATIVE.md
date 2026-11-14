@@ -5,7 +5,7 @@
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
 This retained comparison is evaluated after the current lower-field map
-$`n_3\mapsto\widetilde{n}_3=n_3+\widetilde{n}_2\cup_1\widetilde{n}_2`$. Its output is
+$`n_3\mapsto\widetilde{n}_3=n_3+n_2\cup_1n_2`$. Its output is
 $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas additionally include
 the explicit face phase in [the geometric reference](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 In this auxiliary calculation only, symbols without tildes on the CF field denote that mapped field.
@@ -21,8 +21,8 @@ The following terminal change then applies:
  &=\nu_4^{\rm native}+B_4,\\
 B_4
  &=B_4^{c,*}+\frac14B_4^{\mathrm{int}}
- -\frac12[s_1n_3+H_4[\widetilde{n}_2]+(dn_3)\cup_4[\mathcal{𝒪}_4^\gamma[\widetilde{n}_2]+\widetilde{n}_2^2]]
- +\frac14\widetilde{n}_2^2,\\
+ -\frac12[s_1n_3+H_4[n_2]+(dn_3)\cup_4[\mathcal{𝒪}_4^\gamma[n_2]+n_2^2]]
+ +\frac14n_2^2,\\
 \mathcal{𝒪}_5^{\rm new}
  &=\mathcal{𝒪}_5^{\rm native}+d_{s_1}B_4,\\
 \mathcal{ℰ}_4^{\rm new}
@@ -47,7 +47,7 @@ formulas, which contain no auxiliary field evaluation.
 The interval and triangle cochains, orientation, normalized shuffle sums,
 and first-vertex coefficient transport are fixed in
 [the retained mathematical construction](THREE_DIMENSIONAL_TERMINAL.md).
-For the following comparison only, write $`n=n_1,m=n'_1`$, $`u=\widetilde{n}_2,v=\widetilde{n}'_2`$, and $`W=\widetilde{\omega}_2`$.
+For the following comparison only, write $`n=n_1,m=n'_1`$, $`u=n_2,v=n'_2`$, and $`W=\widetilde{\omega}_2`$.
 Their integral residuals are
 
 ```math

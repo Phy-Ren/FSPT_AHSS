@@ -84,8 +84,8 @@ Every Majorana face factor becomes the following explicit sum:
 
 ```math
 \begin{aligned}
-\widetilde{n}_3^{(a)}(ijkl)\longmapsto{}&
- \widetilde{n}_3^{(a)}(P^a(i),P^a(j),P^a(k),P^a(l))\\
+n_3^{(a)}(ijkl)\longmapsto{}&
+ n_3^{(a)}(P^a(i),P^a(j),P^a(k),P^a(l))\\
 &+\Big[\widetilde{\omega}_2(0,P^a(i),P^a(j))
  +\widetilde{\omega}_2(P^0(0),P^0(i),P^0(j))\\
 &\qquad+\sum_{\ell=1}^{J}\epsilon_\ell
@@ -100,8 +100,8 @@ The first term has Majorana origin. Every term in the square bracket
 times the parity of the integer face has p+ip origin. Expand this sum
 before collecting the physical contributions in the
 [binary coefficient formula](FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md).
-The formula uses $`\widetilde{n}_3^{(1)}=\widetilde{n}_3`$ and
-$`\widetilde{n}_3^{(2)}=\widetilde{n}'_3`$.
+The formula uses $`n_3^{(1)}=n_3`$ and
+$`n_3^{(2)}=n'_3`$.
 
 Every cup or MS operation in the coefficient definition supplies its
 ordinary finite list of faces. Substituting the factors above therefore
