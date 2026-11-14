@@ -15,8 +15,6 @@ fields are defined separately in each dimension.
 
 [How self-stacking determines the group](formulas/ROOT_POWER_PRESENTATIONS.md)
 explains the hypotheses, complete root relations, and gauge reductions.
-[The simplification record](formulas/SIMPLIFICATION_PROGRESS.md) distinguishes
-reductions already incorporated in these formulas from remaining targets.
 
 <a id="phase-convention"></a>
 
@@ -84,8 +82,7 @@ p+ip field, as specified in [Operations](formulas/OPERATIONS.md#eq-o7).
 The numerical runtime evaluates fixed compiled programs in its own documented
 cochain coordinates, in this same phase convention; the
 [programmer translation](../formulas/CODE_NOTATION.md#phase-convention-of-the-runtime)
-states the coordinate maps. Archived results keep the frozen sources recorded
-with them.
+states the coordinate maps.
 
 ## Notation
 
@@ -235,7 +232,6 @@ cups are recorded once and their full substitutions are reported separately.
 - [Changes of representative](formulas/REPRESENTATIVES.md)
 - [Fermionic coboundary and stacking](formulas/COBOUNDARY_STACKING_COMPATIBILITY.md)
 - [Integer quadratic cochains and their polarization](formulas/QUADRATIC_REFINEMENTS.md)
-- [Further simplification targets](formulas/NEXT_SIMPLIFICATION_TARGETS.md)
 - [Formula-to-code translation](../formulas/CODE_NOTATION.md)
 
 A nonzero obstruction cochain may be a coboundary. Only its nontrivial
@@ -297,6 +293,4 @@ class after the permitted lower-layer changes obstructs the decoration.
 
 The [maintained source](formulas/source/README.md) generates these reader pages
 and their programmer translation. Shared display equations are stored once;
-this guide and its generated pages are published together. Frozen coefficient
-archives remain verification evidence, with their coordinate conventions
-stated explicitly.
+this guide and its generated pages are published together.

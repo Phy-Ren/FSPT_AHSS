@@ -63,8 +63,6 @@ definitions to the independently implemented runtime.
 
 The guide links obstructions, general twisters, and separate self-stacking
 references in that order for each dimension. The
-[simplification record](docs/formulas/SIMPLIFICATION_PROGRESS.md) identifies
-reductions already incorporated and remaining large blocks; the
 [term census](docs/formulas/TERM_COUNTS.md) gives exact counts. All reader
 pages are generated from [one maintained source](docs/formulas/source/README.md),
 including shared equations and the programmer translation.

@@ -4,8 +4,8 @@
 
 This is a retained coefficient/derivation kernel. Its CF input `n3` means the current $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$; its product uses the previous output $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is $`N_3+dn_2`$. Frozen coefficient values are unchanged.
 
-This coefficient definition replaces the 24,935-row ordinary product
-list by finite seed and index rules. Every final summand is a standard
+This coefficient definition specifies the ordinary product by finite
+seed and index rules instead of an explicit row list. Every final summand is a standard
 normalized MS operation on physical cochains. The temporary labels below
 belong only to the coefficient grammar. They are not cochains on an
 auxiliary space and are erased before evaluating the physical formula.

@@ -278,8 +278,7 @@ $`\mathcal I_5^{c\psi}`$. This set has **seven entries**.
 
 The complete differential $`d\widetilde{n}_3`$ is the lower obstruction specified in
 its own layer. The [exact cochain proof](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
-replaces the former 25 terms without a gauge change. The original list is
-preserved in the standalone coefficient verifier.
+establishes this seven-entry form without a gauge change.
 
 The following 19 indices form $`\mathcal J_5`$. The derivative $`d\widetilde{n}_3`$
 is the already specified $`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})+\mathcal{𝒪}_4^\psi`$;

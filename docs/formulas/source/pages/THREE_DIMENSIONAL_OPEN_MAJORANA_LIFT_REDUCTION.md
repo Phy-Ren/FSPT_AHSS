@@ -2,8 +2,7 @@
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
-The full open-input Majorana contribution simplifies from 16 to 13 outer
-cochain terms. There are ten half-valued terms and three quarter-valued
+The full open-input Majorana contribution has 13 outer cochain terms. There are ten half-valued terms and three quarter-valued
 terms. One quarter term contains a whole binary lift with two explicit
 interior terms; counting those leaves instead gives 14 terms. The existing
 lower obstruction remains a defined standard operation. This is an exact
@@ -14,7 +13,7 @@ The result holds for an arbitrary binary two-cochain $`n_2`$, not just
 a cocycle. It therefore applies to the canonical p+ip torsion branch with
 $`dn_2=\widetilde{\omega}_2s_1`$. No integer output gauge has been applied.
 
-## Replacement formula
+## Formula
 
 On the ordered four-simplex, the complete contribution is
 
@@ -62,10 +61,9 @@ The two-term expression above avoids expanding and then cancelling that
 additional lower-source term. No new polynomial symbol is introduced in
 the reader formula.
 
-## The changed terms only
+## The six-term identity
 
-The previous formula contains the following six terms after distributing
-the half-valued sum:
+Distributing a half-valued sum gives the following six terms:
 
 ```math
 \begin{aligned}
@@ -79,7 +77,7 @@ the half-valued sum:
 \end{aligned}
 ```
 
-They are replaced by exactly three outer terms:
+They are equal modulo one to exactly three outer terms:
 
 ```math
 \frac12n_2^2
@@ -89,7 +87,7 @@ They are replaced by exactly three outer terms:
              +s_1(n_2\cup_2dn_2)]_2\Big].
 ```
 
-Every other term is unchanged. This is a use of the intrinsic lower
+The formula above uses these three terms. This is a use of the intrinsic lower
 Majorana obstruction, not a reassignment of any derivative term to a
 different physical contribution.
 
@@ -144,9 +142,10 @@ without a coordinate transformation.
 1. The Bockstein identity on every three-face, for ten independent open
    Majorana face variables.
 2. The whole-lift identity using three independent binary variables.
-3. The complete old and new Majorana phase on all 20 independent open
-   Majorana and closed-background variables of a four-simplex.
-4. The new formula against the frozen current pure-Majorana sector on
+3. The complete Majorana phase in its six-term and three-term forms on all
+   20 independent open Majorana and closed-background variables of a
+   four-simplex.
+4. The formula against the frozen pure-Majorana sector on
    the canonical torsion tower, including its open Majorana differential.
 
 The [verification receipt](coefficients/OPEN_GAMMA_LIFT_REDUCTION_CHECK.json) records zero coefficient residuals modulo 16. This is simultaneous exact

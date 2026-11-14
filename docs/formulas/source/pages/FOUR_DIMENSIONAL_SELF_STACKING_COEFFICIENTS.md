@@ -18,9 +18,8 @@ The complete mathematical expressions are the
 [Majorana–p+ip table](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/INDEX.json)
 and the [p+ip table](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/INDEX.json).
 The latter includes the entire pure-source and tensor contributions.
-These large lists provide a reproducible restricted expression; their
-size remains a target for structural simplification. The counts do not
-assert optimality under other cochain identities.
+These large lists provide a reproducible restricted expression. The
+counts do not assert optimality under other cochain identities.
 
 Each outer row specifies an actual product of binary face values.
 Every factor is either a physical cochain face, a fully defined lower
@@ -64,15 +63,13 @@ or output gauge has been changed by these table reductions.
 The [integer-only carry identity](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md#reusing-the-integer-only-carry)
 normalizes all occurrences of $`\beta_4[n_2,0]`$ to $`\beta_4^\psi[n_2]`$,
 including their differentials and binary digits. Its complete semantic
-replay compares every factor definition and every outer row with the prior
-expression: [mixed receipt](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/NORMALIZATION_CHECK.json)
+replay compares every factor definition and every outer row with the
+unnormalized expression: [mixed receipt](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/NORMALIZATION_CHECK.json)
 and [pure receipt](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/NORMALIZATION_CHECK.json).
-The mixed sum loses 482 terms; the pure outer count is unchanged.
 
-To replay, obtain the original coefficient directory from public commit
+To replay, obtain the unnormalized coefficient directory from public commit
 `bc3e5f238513a632f48197363e4ee3e66e706418` and pass its path as `--original`
 to [verify_carry_normalization.py](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/verify_carry_normalization.py).
-The current directory is the default comparison target. The previous native
-readbacks verify the original specialized expressions; the exact
-normalization replay connects them to the current tables. Historical
-storage and diagonal-count receipts are explicitly prefixed `ARCHIVED_`.
+This directory is the default comparison target. The native readbacks
+above verify the unnormalized specialized expressions; the exact
+normalization replay connects them to these tables.

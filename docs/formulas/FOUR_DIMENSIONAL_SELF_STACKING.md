@@ -181,7 +181,7 @@ occurrences before that transport** when the four lift wrappers are replaced in 
 their 106 interior products. Every lift boundary is retained.
 
 The [exact cochain-identity reduction](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md)
-collects the earlier 218 MS terms into 187, without changing any quarter phase. The derivative in the quarter bracket
+gives this 187-term MS sum, without changing any quarter phase. The derivative in the quarter bracket
 uses the exact lower-obstruction identity
 $`d\beta_4^\gamma=-\beta(\mathcal{𝒪}_4[n_2])`$
 on the stated input tower.
@@ -220,10 +220,8 @@ include the completed transfer and tensor contributions before the two
 external inputs are identified. The remaining terms give **181 outer
 terms** after the three displayed quarter numerators are substituted and
 their linear sums distributed, retaining standard lower operations.
-Thus this contribution currently has **3,613,698 outer terms before the phase transport**; the
-protected mixed lift has eight interior terms. This large residual is
-preserved as exact verification data and remains a target for structural
-simplification. The additional term
+Thus this contribution has **3,613,698 outer terms before the phase transport**; the
+protected mixed lift has eight interior terms. The additional term
 $`-s_1\mathcal{ℰ}_4^{\gamma\psi}/2`$ is its entire coordinate
 correction on equal inputs: the three general $`B_5`$ evaluations cancel
 exactly here.
@@ -266,7 +264,7 @@ is shared with the general phase map rather than fitted on the diagonal.
 The two large coefficient lists are exact specializations of completed
 cochain expressions, not of their input kernels. The
 [coefficient appendix](FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md)
-records the arguments, scopes, checks, and remaining complexity.
+records the arguments, scopes, and checks.
 
 ## 5. Integer carries and binary quarter numerators
 

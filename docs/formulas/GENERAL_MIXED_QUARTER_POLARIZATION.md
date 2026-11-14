@@ -23,7 +23,7 @@ three pairs
 $`(x,y)=([\lambda_3^\gamma]_2,[\lambda_3^{\gamma\psi}]_2)`$,
 $`([\lambda_3^\gamma]_2,[\lambda_3^\psi]_2)`$, and
 $`([\lambda_3^{\gamma\psi}]_2,[\lambda_3^\psi]_2)`$.
-Its last twelve terms become the following nine:
+Its twelve pair terms equal the following nine:
 
 ```math
 \sum_{(i,j)\in\{(\gamma,\gamma\psi),(\gamma,\psi),(\gamma\psi,\psi)\}}
@@ -35,7 +35,7 @@ Its last twelve terms become the following nine:
 ```
 
 This finite sum has **nine explicitly specified cup terms**. The complete
-mixed binary numerator therefore has **39 terms instead of 42**, with the
+mixed binary numerator therefore has **39 terms**, with the
 same lower carries retained. Its whole canonical lift is unchanged.
 The differentials in the displayed identity have not been dropped; this
 is pointwise equality, not an output-gauge replacement. The bosonic

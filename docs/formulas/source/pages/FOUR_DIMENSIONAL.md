@@ -347,7 +347,7 @@ After distributing the displayed linear additions, the formula has
 terms before the compact-phase transport**. The four lift interiors contain **146 explicit products**.
 Counting those products in place of the four lift wrappers gives
 **624 explicit term occurrences before that transport**, with all four reduction boundaries
-retained. This replaces the previous 6,176-term expansion. Defined lower
+retained. Defined lower
 differentials, Bocksteins, and binary-addition carries remain structured
 arguments; $`d`$ denotes the cochain differential.
 
@@ -455,12 +455,9 @@ The last sum contains the three pairs
 $`(i,j)=(\gamma,\gamma\psi),(\gamma,\psi),(\gamma\psi,\psi)`$,
 and contains **nine cup terms** with the defined stacking carries
 retained. The entire mixed numerator contains **39 terms** at this boundary.
-The [exact polarization identity](GENERAL_MIXED_QUARTER_POLARIZATION.md)
-reduces the former twelve-term pair sum to these nine terms without
-changing its binary value or whole lift. The differentials remain present;
-no output coboundary is discarded. The archived 55-term substitution
-count refers to the preceding twelve-term expression and its stated
-protected-quotient convention.
+The pair sum is written in the nine-term form given by the
+[exact polarization identity](GENERAL_MIXED_QUARTER_POLARIZATION.md).
+The differentials remain present; no output coboundary is discarded.
 
 ##### p+ip quarter numerator
 

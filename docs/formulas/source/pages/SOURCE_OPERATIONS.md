@@ -4,7 +4,7 @@
 
 This file gives the degree-six cochains used to construct the 4+1D source.
 The auxiliary height transgression below is a construction step; the
-current reader formula uses the compact intrinsic Majorana expression and
+reader formula uses the compact intrinsic Majorana expression and
 its [relative coefficient table](FOUR_DIMENSIONAL_MAJORANA_RELATIVE_WORD_COEFFICIENTS.md).
 Their [paired phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is included
 in both obstruction and stacking. The finite pure p+ip completion remains
@@ -75,7 +75,7 @@ All **453 words** of $`\mathcal W_4`$ are printed in
 ## Integer-layer contribution
 
 The following definition of $`y_6`$ and its seed are held fixed under the
-Majorana phase change. In the current pure integer obstruction the half
+Majorana phase change. In the pure integer obstruction the half
 phase is $`[y_6+s_1\mathcal{𝒪}_5^\psi]/2`$. The additional term is
 displayed separately in the [principal formula](FOUR_DIMENSIONAL.md#eq-t4);
 it is not inserted into the residual or absorbed into this coefficient

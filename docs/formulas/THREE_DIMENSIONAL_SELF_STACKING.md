@@ -213,7 +213,7 @@ On the ordered four-simplex,
 \end{aligned}
 ```
 
-This is the transported six-term expression; the two output terms retain $`N_3+dn_2`$. The three face products replace the
+This is the transported six-term expression; the two output terms retain $`N_3+dn_2`$. The three face products equal the
 entire 132-word open-Majorana correction on identical inputs. This is an
 exact cochain identity; the two other open-Majorana product terms vanish
 because their complex-fermion argument is $`n_3+n_3=0`$.
@@ -255,7 +255,7 @@ valid also for an arbitrary open $`n_2`$. The whole lift contains
 **two terms**, retaining the existing lower obstruction. Replacing its
 wrapper by those two interior terms in the count gives **14 leaves**.
 The [lower-obstruction carry identity](THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md)
-replaces six former terms by three with exact equality modulo one.
+rewrites six terms as three with exact equality modulo one.
 The first face product is the exact diagonal of seven intrinsic Majorana
 MS terms. Integer cups and the whole binary lift retain their scopes;
 $`\beta^- x=(dx-[dx]_2)/2`$ uses the integer differential
@@ -286,7 +286,7 @@ in its first term.
 
 The finite sum contains **1,130 explicitly listed physical-face products**
 in the [coefficient table](THREE_DIMENSIONAL_SELF_STACKING_FACES.md#majoranapip-half-contribution).
-It includes the entire current half-valued contribution. The three ordinary
+It includes the entire half-valued contribution. The three ordinary
 half terms and nine distributed quarter terms are additional, giving
 **1,142 terms** in this contribution. Every differential in these fractional
 brackets acts on the indicated integer cochain; $`[\cdot]_2`$ selects a
@@ -355,7 +355,7 @@ The [standalone exact verifier](coefficients/verify_three_dimensional_geometric_
 checks every physical sector and the total against the explicitly transported frozen baseline
 on all 20 independent valid-tower bits. All seven residuals are zero.
 The [additional lift-identity verifier](coefficients/verify_three_dimensional_open_gamma_lift_reduction.py)
-checks the current 13-term Majorana expression against that same baseline.
+checks the 13-term Majorana expression against that same baseline.
 The fully collected scalar phase has 2,742 coefficients modulo 16; that
 supplementary coefficient count uses a different expansion boundary.
 

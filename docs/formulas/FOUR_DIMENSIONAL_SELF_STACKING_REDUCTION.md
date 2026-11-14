@@ -22,9 +22,8 @@ d[\beta^-n_3]_2
 
 These are cochain identities, including the differential terms in the
 Steenrod square. They do not require $`dn_3=0`$.
-Using these relations and the closed-background equations, the earlier
-218 MS terms in the self-stacking coefficient have the following exact
-pointwise replacement:
+Using these relations and the closed-background equations, the 218-term
+MS sum of the self-stacking coefficient is pointwise equal to
 
 ```math
 \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
@@ -32,15 +31,14 @@ pointwise replacement:
 ```
 
 This sum has **187 individually specified operations**, all printed in
-the [current word table](FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md).
+the [word table](FOUR_DIMENSIONAL_SELF_STACKING_WORDS.md).
 The two additional half-valued face products and all quarter-valued
 terms are unchanged. Thus the complete open-Majorana self contribution
-has **200 outer terms instead of 231**, or **302 instead of 333** when
-its unchanged 106 canonical-lift interior terms replace the four lift
-wrappers in the occurrence count.
+has **200 outer terms**, or **302** when its 106 canonical-lift interior
+terms replace the four lift wrappers in the occurrence count.
 
 The [standalone coefficient proof](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/verify_open_half_reduction.py)
-checks the original 218 operations against the new 187 operations on all
+checks the 218-term sum against the 187 operations on all
 thirty independent open-cochain/background face variables. The
 [exact receipt](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_HALF_UNIVERSAL_CHECK.json)
 and [independent 512-case native replay](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/OPEN_HALF_NATIVE_CHECK.json)
@@ -104,21 +102,15 @@ needs no separate lower-tower equation for $`x=0`$; it uses the open-domain
 definition rather than an on-tower quotient with a substituted differential.
 
 Applying this identity to every complete argument in the finite
-self-stacking coefficients identifies 112 previously distinct factor values
-in the Majorana–p+ip coefficient. Exact binary collection then gives
-**3,613,517 outer summands instead of 3,613,999**, removing 482 summands.
-The pure p+ip coefficient remains **793,669 summands**. Its 94 redundant
-factor definitions are removed, but that is not a reduction in its outer
-term count.
+self-stacking coefficients identifies 112 factor values in the
+Majorana–p+ip coefficient with other factor values. Exact binary
+collection then gives **3,613,517 outer summands**.
+The pure p+ip coefficient has **793,669 summands**.
 
 Every protected integer numerator is transformed within its original
 modulus and reduction scope. The same rule is applied to ordinary
 cochain differentials of the carries. No lift is distributed as integer
 addition and no microscopic contribution is reassigned by variable support.
 The [normalization script](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/normalize_integer_carries.py)
-and [complete updated tables](FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md)
+and [complete tables](FOUR_DIMENSIONAL_SELF_STACKING_COEFFICIENTS.md)
 make this reduction reproducible.
-
-These are finite improvements, not a claim that the two large remaining
-coefficient sums are optimally organized. They remain explicit verification
-data for further structural reduction.

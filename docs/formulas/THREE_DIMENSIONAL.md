@@ -496,14 +496,15 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,N_2)`$ minus the
 \end{aligned}
 ```
 
-The two unchanged face brackets contain **13 products** after distributing the
+The two face brackets contain **13 products** after distributing the
 binary parentheses: eight multiply $`d\widetilde{n}_3`$ and five multiply $`d\widetilde{n}'_3`$.
-Their CF differentials are $`d\widetilde{n}_3`$ and $`d\widetilde{n}'_3`$. They replace the former 132-word sum exactly, as proved in the
-[exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md).
+Their CF differentials are $`d\widetilde{n}_3`$ and $`d\widetilde{n}'_3`$. The
+[exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md) proves
+that this form is exact.
 The lower Majorana differentials retain their physical meanings.
 
-The former auxiliary eight-word phase polynomial has been eliminated in
-favor of the lower obstruction. Its two evaluations give **14 terms**:
+This contribution uses the lower obstruction directly. Its two
+evaluations give **14 terms**:
 two derivatives multiply two retained obstruction evaluations, one output
 square, and the four products in the displayed input square. Together with
 the three initial lower-operation/reference terms and thirteen face products, this

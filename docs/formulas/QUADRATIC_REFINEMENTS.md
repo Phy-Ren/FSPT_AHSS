@@ -106,8 +106,8 @@ three physical contributions are, respectively,
 \end{aligned}
 ```
 
-This is exactly the previous three-, four-, and three-term division into
-physical contributions. All other terms of those obstructions retain
+The three physical contributions contain three, four, and three of these
+terms, respectively. All other terms of those obstructions retain
 their existing values and physical labels. The same operation occurs
 in the product: the characteristic part of the integer kernel is
 $`\Delta\mathcal Q_{\omega_2}[\beta_4]`$, where $`\Delta`$ uses the actual

@@ -10,10 +10,10 @@ They do not introduce additional fields into the formulas. The numerical kernels
 
 The explicit $`4+1`$D Majorana stacking expression additionally uses the
 [displayed output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md):
-subtract $`d_{s_1}B_4^{\mathrm{out}}`$ from the previous terminal product cochain, and add
+subtract $`d_{s_1}B_4^{\mathrm{out}}`$ from the runtime terminal product cochain, and add
 it for the inverse comparison. The obstruction is unchanged since
-$`d_{s_1}^2=0`$. This is a documented representative conversion; no runtime
-algorithm or stored classification/stacking result was modified.
+$`d_{s_1}^2=0`$. This is a documented representative conversion; it does not
+change any runtime algorithm or stored classification/stacking result.
 
 See the [runtime interface](README.md#runtime-interface) for calling conventions
 and the [operation registry](FORMULA_REGISTRY.json) for exact source hashes and
@@ -40,18 +40,16 @@ denominator four, eight or sixteen itself: every such value reaches the
 group engine through the backend. The native GAP shortcuts with quarter- or
 finer-valued phases (`AFSFullCubePrimitive`, `AFSFullBinaryPrimitive`,
 `AFSFullCFSquareLift`, `AFSFullCharacterMCLift`) act only in 4+1D, and the
-native 3+1D shortcut `AFSFullClosedCFSource3` is half-valued. The earlier
+native 3+1D shortcut `AFSFullClosedCFSource3` is half-valued. The separate
 campaign engine (`gap/classification.g` with the generated formula data and
 the p+ip O5 programs `gap/pip_o5_*.g`) is not used by the complete engine; it
 is kept only to replay archived campaigns.
 
-Archived results keep the frozen sources recorded with them.
-
 ## Exact simplifications in the reader formulas
 
 The source exchange identity in 3+1D uses the complete kernel input `d checked_n3`, not
-only its pure-Majorana part. Its standalone verifier retains the former
-25 MS words and checks their equality with the seven current words.
+only its pure-Majorana part. Its standalone verifier checks that a 25-word
+MS sum equals the seven displayed words.
 The ordinary source cups also use that same complete lower differential.
 
 The open-Majorana self-stacking reductions in 3+1D and 4+1D preserve the
@@ -130,9 +128,9 @@ $`[\lfloor n_{d-2}/2\rfloor]_2`$.
 Floors, canonical binary representatives, and exact divisions follow the
 mathematical definitions. A required nonintegral quotient raises an error.
 
-The formulas now leave a named binary field's zero-or-one integer
-representative implicit. The source code still performs exactly the same
-lift operations:
+The formulas leave a named binary field's zero-or-one integer
+representative implicit. The source code performs these lift operations
+explicitly:
 
 | Source-code expression | Mathematical expression in integer arithmetic |
 |---|---|
@@ -146,15 +144,18 @@ lift operations:
 
 This convention removes notation from the formulas, not arithmetic from
 the evaluator. In particular, the two cup expressions and the two
-differentials in this table are distinct operations.
+differentials in this table are distinct operations. In particular,
+$`[\cdot]_2`$ on a whole integer numerator fixes the same reduction boundary
+that the reference evaluator expresses with explicit `reduce(2)` and
+`lift()` calls.
 
 ## Local names in the readable integer-layer definitions
 
 This table applies to local variables in functions such as
-`full3/lower.py`, `full3/source.py`, and `full4/product_full.py`, and to former
-formula-guide abbreviations. It does not redefine the public API keys.
+`full3/lower.py`, `full3/source.py`, and `full4/product_full.py`. It does
+not redefine the public API keys.
 
-| Local or former name | Current mathematical notation |
+| Local name | Mathematical notation |
 |---|---|
 | `n`, `m` | $`n_{d-2},n'_{d-2}`$ |
 | `a=n.reduce(2)`, `b=m.reduce(2)` | $`[n_{d-2}]_2,[n'_{d-2}]_2`$ |
@@ -165,10 +166,7 @@ formula-guide abbreviations. It does not redefine the public API keys.
 | `N`, `U`, `C` or `Cnew` | $`N_{d-2},N_{d-1},N_d`$ |
 | `t` | $`\mathcal E_{d-1}=[n_{d-2}]_2\cup_{d-3}[n'_{d-2}]_2`$ |
 | `q` in lower-product local variables | $`[n_{d-2}]_2\cup_{d-2}[n'_{d-2}]_2`$ |
-| `e`, former $`e_d`$ | $`\mathcal E_d`$ |
-| Former $`F_{d+1}`$ | $`\mathcal O_{d+1}`$ |
-| Former $`\Xi_{d+1}`$ | $`\mathcal O^\psi_{d+1}`$ |
-| Former $`S^j`$ | $`\mathrm{Sq}^j`$ |
+| `e` | $`\mathcal E_d`$ |
 
 The local product variable `q` is a cochain. It is unrelated to the degree
 index $`q`$ in the closed-Majorana appendix. Source-function arguments are
@@ -182,23 +180,19 @@ product. Their current definitions are [S1–S3](../docs/formulas/FOUR_DIMENSION
 and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a), with the
 [source coordinate of the retained construction](../docs/formulas/REPRESENTATIVES.md#eq-t4e) kept separately.
 
-| Readable-source name or former formula label | Current mathematical expression |
+| Readable-source name | Mathematical expression |
 |---|---|
-| `B`, former $`B_4`$ | $`\beta_4`$ |
-| `K`, former $`K_4`$ | $`\beta_4^\psi`$ |
-| `beta_open(u)`, local `b` in `full3/source.py:blocks`, former $`j_4`$ | $`\beta^-n_3`$ |
-| Former $`A_4`$ | $`\mathcal O_4=dn_3`$ |
-| Background integer carry, former $`v_3`$ | $`\beta_{s_1}\widetilde{\omega}_2`$ |
-| `alpha`, former $`\alpha_3`$ | $`[\beta_{s_1}\widetilde{\omega}_2]_2`$ |
-| `hw`, former $`h_\omega`$ | $`[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2`$ |
-| `ell(w,s)`, former $`\ell^\omega_3`$ | $`[\beta\omega_2]_2+s_1\omega_2`$ |
-| Background `P`, former $`\mathcal P_s(W)`$ | $`\mathfrak P_{s_1}(\widetilde{\omega}_2)`$ |
-| `Bp`, former $`B'`$ | $`\beta'_4=\beta_4(n'_2,n'_3)`$ |
-| `la`, dictionary key `lambda`, former $`\lambda`$ | $`\lambda_3`$ |
+| `B` | $`\beta_4`$ |
+| `K` | $`\beta_4^\psi`$ |
+| `beta_open(u)`, local `b` in `full3/source.py:blocks` | $`\beta^-n_3`$ |
+| `alpha` | $`[\beta_{s_1}\widetilde{\omega}_2]_2`$ |
+| `hw` | $`[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2`$ |
+| `ell(w,s)` | $`[\beta\omega_2]_2+s_1\omega_2`$ |
+| Background `P` | $`\mathfrak P_{s_1}(\widetilde{\omega}_2)`$ |
+| `Bp` | $`\beta'_4=\beta_4(n'_2,n'_3)`$ |
+| `la`, dictionary key `lambda` | $`\lambda_3`$ |
 | `r`, `rp` in `collected_blocks` | $`[\beta_4]_2,[\beta'_4]_2`$ |
 | `l` in `collected_blocks` | $`[\lambda_3]_2`$ |
-| Former $`R`$ | Ordered integer product $`n'_2n_2`$ |
-| Former $`D`$ | $`\Delta \beta_4=d\lambda_3-n'_2n_2`$ |
 | `Db` | $`[\Delta \beta_4]_2`$ |
 | `V5` | $`V_5`$, the binary quarter numerator; $`\mathcal V_5`$ denotes the stacked bosonic phase |
 | `Phi5` | The expanded lower-field portion of the half-valued bracket in [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
@@ -206,34 +200,24 @@ and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a), with the
 | `epsilon5` | The expanded complex-fermion terms in the half-valued bracket of [T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4d) |
 | `Zvalue`, `binary_phase` | Evaluation of $`Z_5`$ |
 
-Frozen coefficient files and runtime identifiers keep their historical spellings.
+Frozen coefficient files and runtime identifiers keep their own spellings.
 In serialized field labels, `B_3` and `B_4` mean $`\beta_3`$ and
 $`\beta_4`$; bars, digits, primes, and physical superscripts are preserved.
 In particular, `B_4^psi` and `barB4gamma` denote
 $`\beta_4^\psi`$ and $`[\beta_4^\gamma]_2`$. The runtime function
-`R5` evaluates the phase primitive $`B_5`$; the earlier
-$`\Lambda_5`$ and $`G_4`$ are $`B_5^{\mathrm{ref}}`$ and
-$`B_4^{\mathrm{out}}`$. Historical face-set labels
-$`\mathcal C_q^\psi`$ mean $`\mathcal I_q^{\psi,\mathrm{face}}`$;
-tensor-set labels $`\mathcal C_{2,3},\mathcal C_{3,2}`$ mean
-$`\mathcal I_{2,3},\mathcal I_{3,2}`$. These are notation changes;
-the serialized coefficients and their hashes are unchanged.
-The finite word rearrangement formerly written `C(J)` is $`\mathsf R(J)`$;
-its ordered prefix-and-tail rule is unchanged.
+`R5` evaluates the phase primitive $`B_5`$.
 
-The former source-sum names are now expanded in the
+The following local names refer to parts of the expanded
 [4+1D source](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4):
 
-| Existing local or former formula name | Location in the expanded formula |
+| Local name | Location in the expanded formula |
 |---|---|
-| Local `H`, former $`\mathcal A_6`$ | The sum of the half-valued physical contributions, including $`\mathrm{Sq}^2\widetilde{n}_4+\omega_2\widetilde{n}_4`$ |
-| Former $`\mathcal H_6`$ | The half-valued Majorana, p+ip, and mixed contributions after subtracting those complex-fermion terms |
-| Local `Q`, former $`\mathcal Q_6`$ | All quarter-valued source terms, including the separately displayed subtraction |
-| `cartan_word`, former $`\mathcal C_6`$ | The complete reduced background-and-digit polynomial in that subtraction |
-| Former $`\mathcal O^{\mathrm{base}}_6`$ | The complete source before the final ordered cubic term |
+| Local `H` | The sum of the half-valued physical contributions, including $`\mathrm{Sq}^2\widetilde{n}_4+\omega_2\widetilde{n}_4`$ |
+| Local `Q` | All quarter-valued source terms, including the separately displayed subtraction |
+| `cartan_word` | The complete reduced background-and-digit polynomial in that subtraction |
 
-In particular, the source variable `H` includes the complex-fermion terms;
-it was never just the former $`\mathcal H_6`$. The other entries `Pn,Wnn`
+In particular, the source variable `H` includes the complex-fermion terms.
+The other entries `Pn,Wnn`
 returned by `blocks` are $`\mathfrak P_{s_1}(\widetilde{\omega}_2)n_2`$ and
 $`\widetilde{\omega}_2n_2^2`$, with the stated coefficient transports.
 `high_source16` returns the weighted integer numerator for `H,Q,Pn,Wnn`
@@ -248,18 +232,16 @@ in its CF slot and the previous product output $`\widetilde{N}_3+d\mathcal B_2`$
 Its raised fields are defined in
 [T3a–T3c](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3b):
 
-| Earlier notation or construction | Current notation |
+| Construction or local name | Notation |
 |---|---|
-| $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the triangle; output of `fields_on_triangle` | $`n_2^\triangle,n_3^\triangle,n_4^\triangle`$ |
-| $`\mathfrak n,\mathfrak u,\mathfrak c`$ on the interval; output of `fields_on_interval` | $`n_2^I,n_3^I,n_4^I`$ |
-| $`\theta,\phi,\chi`$ | $`\theta_1,\theta'_1,\chi_1`$ |
-| Former $`J_5=F_5(\mathfrak n,\mathfrak u)`$ | $`\mathcal O_5^\triangle`$ |
-| Former $`\mathcal H_4`$ acting on that source | $`(\mathsf h_4^{(2)})^*`$ |
+| Output of `fields_on_triangle` | $`n_2^\triangle,n_3^\triangle,n_4^\triangle`$ |
+| Output of `fields_on_interval` | $`n_2^I,n_3^I,n_4^I`$ |
+| `theta()`, `phi()`, `chi()` in `prism.py` | $`\theta_1,\theta'_1,\chi_1`$ |
 
 The parameterized arguments `NN,UU,CC` of `high_blocks` have degrees two,
 three, and four. `lift3_source` and `lift3_product` construct the respective
 interval and triangle fields; the runtime then evaluates `high6` and performs
-the signed integration. The reader guide now prints the entire finite expression for both terminal
+the signed integration. The reader guide prints the entire finite expression for both terminal
 operations. Its upward marks denote these same constructed components,
 not independent lifts of the three fields. The notation-to-runtime map is:
 
@@ -275,9 +257,7 @@ spaces, so the runtime may omit it without changing either phase. The
 linear and quadratic fractional terms are already collapsed into the
 explicit sixteenth-valued source and negative eighth-valued product in
 the reader guide; they are not omitted.
-The former $`D_3`$ and $`g_2`$ are expanded directly
-in those retained parameter fields. This statement precedes the current
-geometric conversion, which must also be applied as specified above. The [complex-fermion coordinate of the retained construction](../docs/formulas/REPRESENTATIVES.md#eq-t3d),
+The geometric conversion specified above must also be applied. The [complex-fermion coordinate of the retained construction](../docs/formulas/REPRESENTATIVES.md#eq-t3d),
 formerly written with $`\kappa_3`$, uses $`\mathcal B_3^{\mathrm{ref}}`$. It must be applied to
 its source and product together; it is not implied by renaming `c` to $`n_3`$.
 
@@ -287,7 +267,7 @@ The closed-Majorana formulas use a different, explicitly named phase
 representative. In `fspt/majorana_complete.py` and `ClosedMajoranaBackend`,
 $`q=1,2,3`$ denotes the Majorana degree and spatial dimension is $`q+1`$.
 
-| Backend or local field | Current closed-Majorana notation |
+| Backend or local field | Closed-Majorana notation |
 |---|---|
 | `a`, `b` | $`n_q,n'_q`$ |
 | `c`, `cp` | $`n_{q+1},n'_{q+1}`$ |
@@ -315,7 +295,7 @@ publication coordinate.
 
 The degree-zero fMPS endpoint in `fspt/full_formula/fmps1.py` uses:
 
-| Existing fMPS field name | Current endpoint notation |
+| fMPS field name | Endpoint notation |
 |---|---|
 | `gamma=a` | $`n_0`$ |
 | `beta=c` | $`n_1`$ |
@@ -329,27 +309,14 @@ phase coordinate. Its residual parity quotient remains part of classification.
 Similarly, the keys `beta` and `gamma` in specialized gauge calls denote gauge
 parameters, not automatically a Bockstein or a pure Majorana phase source.
 
-## Expanded source and transfer polynomials
+## Expanded transfer polynomials
 
-The following single-use formula names were removed from the reader's
-appendices. Their polynomial terms remain in the stated expression; the
-source functions and coefficient lists retain their existing identifiers.
+The reader appendices write out the polynomial that this source function
+evaluates.
 
-| Former formula label | Present location of the expanded expression |
+| Source function | Location of the expanded expression |
 |---|---|
-| $`\mathcal X_7`$ | The explicit $`\mathcal W_4`$ word sum in $`M_7`$, [S4](../docs/formulas/SOURCE_OPERATIONS.md#eq-s4); [all 453 words](../docs/formulas/COEFFICIENTS.md#eq-y2) |
-| $`V_6,\Theta_6`$ | The two complete terms multiplied by sixteen inside the twisted differential in the numerator of $`R_7`$, [S6](../docs/formulas/SOURCE_OPERATIONS.md#eq-s6) |
-| $`B^{\mathrm{par}}_7`$ | The complete reduced binary polynomial with coefficient eight in that same numerator |
-| $`\widehat M_7`$ | The $`8M_7`$ term and the explicit integer Bockstein bracket with coefficient four in that numerator |
-| $`I_6`$ | The final even integer numerator, multiplied by one half, in $`\rho_6`$, [K1–K3](../docs/formulas/TERMINAL_TRANSFER.md#eq-k1) |
-| $`J_6`$ | The entire binary $`\Delta[\cdots]`$ bracket in that same kernel |
-| $`Q^{\mathrm{int}}_5,K^-_5,A^{\mathrm{pair}}_4,G^0_5`$ | Their full terms in the numerator defining $`D^0_5`$, [K10](../docs/formulas/TERMINAL_TRANSFER.md#eq-k10) |
-| $`L^\star_5`$ | The shuffle contribution written directly in $`L_5`$, [K11](../docs/formulas/TERMINAL_TRANSFER.md#eq-k11) |
-
-No retained numerical coefficient, word, quotient, or signed transport is
-changed by expanding these names. In particular, $`[\cdot]_2`$ on a whole integer
-numerator fixes the same reduction boundary that the reference evaluator
-expresses with explicit `reduce(2)` and `lift()` calls.
+| `Lstar` | The shuffle contribution written directly in $`L_5`$, [K11](../docs/formulas/TERMINAL_TRANSFER.md#eq-k11) |
 
 ## Equation-to-program index
 
@@ -379,7 +346,7 @@ its appendices.
 
 ## Physical contribution regrouping
 
-The full integer-layer runtime still returns the entire obstruction or
+The full integer-layer runtime returns the entire obstruction or
 product in its existing publication coordinate. The guide's gamma / psi /
 gamma-psi split of the lower formulas expands the same open-cochain
 Steenrod operation and partitions the existing product terms. For the
@@ -404,13 +371,13 @@ terminal operations are expanded in the main guide, with the finite lift
 and summation rules in the [technical file](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md).
 No compiled program or coefficient table changes in this regrouping.
 
-## Reader notation and archived field labels
+## Reader notation and frozen field labels
 
 The reader formulas use tildes for the explicitly defined changes of cochain variables and $`\beta^-x=(dx-[dx]_2)/2`$ for the integer carry of a possibly nonclosed binary cochain.
 Binary reduction is $`[x]_2`$, and the second binary digit is $`[\lfloor x/2\rfloor]_2`$.
 Frozen coefficient files retain their original field labels so their checksums and recorded calculations remain reproducible.
-The current formulas use the same symbol for a phase and its additive value; an archived phase hat denotes the additive value.
-In those files, `check` denotes the current tilde, `beta_open` denotes $`\beta^-`$, and an old `tilde` field denotes the explicit second binary digit.
+The formulas use the same symbol for a phase and its additive value; a phase hat in those files denotes the additive value.
+In those files, `check` denotes the reader tilde, `beta_open` denotes $`\beta^-`$, and a `tilde` field denotes the explicit second binary digit.
 These are translations of labels, with no change to the cochains, coefficients, or numerical API.
 
 ## GitHub script-glyph encoding
@@ -437,7 +404,7 @@ coefficient table is reduced with its stated closed backgrounds; the
 physical path sums omit identical binary branch pairs. These changes
 do not require a new source/product coordinate map.
 
-The numerical kernels retain the previously checked equivalent expressions.
+The numerical kernels evaluate checked equivalent expressions.
 The [term census](../docs/formulas/TERM_COUNTS.md) distinguishes expanded
 formula size, exact cochain cancellation, and raw construction occurrences;
 none of these counts is a runtime estimate. Finite sums and completion
@@ -446,26 +413,27 @@ polynomials are expanded in that census rather than assigned unit cost.
 
 ## Signed carry reduction and reusable quadratic cochain
 
-The revised [complete Majorana product](../docs/formulas/FOUR_DIMENSIONAL.md)
-is pointwise equal to the preceding reader representative: its existing
-output gauge is unchanged. The new carry at degree four is the same
-canonical binary-addition carry already used at degree three, applied to
+The [complete Majorana product](../docs/formulas/FOUR_DIMENSIONAL.md)
+is pointwise equal to the
+[face expansion](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md),
+with the same output gauge. Its carry at degree four is the same
+canonical binary-addition carry used at degree three, applied to
 the binary differentials of the inputs. It is not an integer differential
 of a lifted binary cochain. The four nonlinear lift boundaries must survive
 translation to code.
 
 The public [carry replay](../docs/formulas/coefficients/verify_majorana_carry_reduction.py)
-uses only the archived face polynomial and the four explicit lift tables.
+uses only the face polynomial and the four explicit lift tables.
 The [signed-transfer certificate](../docs/formulas/coefficients/verify_majorana_signed_transfer.py)
 checks the integer chain identity and normalization. The numerical runtime
-retains its equivalent frozen expression; the reader rewrite does not
+evaluates an equivalent frozen expression; the reader form does not
 change computed examples.
 
 The [quadratic cochain](../docs/formulas/QUADRATIC_REFINEMENTS.md) is the
-integer sum of its three printed cups. The new source substitutions and
+integer sum of its three printed cups. The source substitutions and
 terminal-kernel regrouping are literal identities. The optional quarter-lift
 transport in that appendix is a separate, fully stated output gauge; it is
-not silently applied to the runtime or to the current principal formula.
+not silently applied to the runtime or to the principal formula.
 
 
 ## Root-power formulas and reconstruction
@@ -475,11 +443,11 @@ proves that complete marked cyclic-power relations determine the abelian
 group. Its 3+1D adapted-basis construction has a reversible replay on all
 602 published presentations. The replay reorganizes existing certified
 integer relations; it does not re-evaluate cochains or benchmark a new
-runtime. The production reconstruction still uses its existing general
-reduction backend.
+runtime. The production reconstruction uses its general reduction
+backend.
 
 The [ten-term 3+1D zero-p+ip self-stack](../docs/formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md)
-is exactly equal to the current general reader formula in the same
+is exactly equal to the general reader formula in the same
 coordinates. Its standard-library verifier keeps integer Bocksteins
 modulo four by lifting modulo eight before exact division. It preserves
 the whole binary value of the lower obstruction in the quarter bracket.
@@ -487,7 +455,7 @@ Translations from older runtime coordinates still use the previously
 specified paired maps.
 
 The separate 4+1D closed diagonal retains its explicit output gauge
-relative to the current reader formula. Restricted counts never replace
+relative to the reader formula. Restricted counts never replace
 the general two-input counts, and neither zero-p+ip formula supplies a
 self-stack for a state with nonzero integer decoration.
 
@@ -496,23 +464,23 @@ self-stack for a state with nonzero integer decoration.
 The sole editable reader source is [docs/formulas/source](../docs/formulas/source/README.md).
 The builder generates the guide, dimensional pages, and this translation;
 shared display equations have one maintained definition. Frozen supplier
-sources and numerical regression fixtures retain their original coordinates.
+sources and numerical regression fixtures use their own coordinates.
 
-Complete restricted formulas now live in separate pages for
+Complete restricted formulas are on separate pages for
 [2+1D](../docs/formulas/TWO_DIMENSIONAL_SELF_STACKING.md),
 [3+1D](../docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md), and
 [4+1D](../docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md). The latter two
-include p+ip input in their stated domains. The old zero-p+ip pages are
+include p+ip input in their stated domains. The zero-p+ip pages are
 proofs or additional closed-input simplifications, not the full nonzero-p+ip law.
 
 The 4+1D adapted-root presentation has 320 reversible two-primary replays
 and 35 marked odd-extension checks. The odd check retains the factor 4t
 from two additional doublings after integer-gauge alignment. This is
 algebra on saved presentations, not a new execution of an optimized cochain
-backend. Production reconstruction still uses the existing general backend.
+backend. Production reconstruction uses the general backend.
 
-The current general 3+1D exchange reduction and 4+1D mixed-quarter
+The general 3+1D exchange reduction and 4+1D mixed-quarter
 polarization preserve the reader representative exactly. They do not
 authorize mixing reader cochains with older numerical phase coordinates;
-the same existing paired maps remain required. Exact formula certificates
-and current counts are linked from the [simplification record](../docs/formulas/SIMPLIFICATION_PROGRESS.md).
+the same existing paired maps remain required. Exact term counts are in
+the [term census](../docs/formulas/TERM_COUNTS.md).
