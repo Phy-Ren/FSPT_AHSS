@@ -64,25 +64,17 @@ The second digit obeys $`d[\lfloor n_1/2\rfloor]_2=[n_1]_2^2+s_1[n_1]_2`$.
 
 {{equation:three-dimensional--4-bosonic-obstruction--10}}
 
-The decoration $`n_3`$ is the occupation in the geometric pairing reference.
-The terminal layer, namely $`\mathcal{𝒪}_5`$ below, $`\mathcal{ℰ}_4`$ and the
-self-stacking twister, is written in the shifted point-fermion argument
+The decoration $`n_3`$ is the point-fermion occupation in the geometric pairing
+reference. The formulas below use the fixed binary three-cochain
 
-{{equation:three-dimensional-geometric-reference--checked-fermion}}
+```math
+R_3=n_2\cup_1n_2,
+```
 
-This is an explicit binary coordinate, with the same map as its inverse.
-It is not an extra decoration. All phases are in the physical convention of the
-[guide](../FORMULA_GUIDE.md#phase-convention). In the argument
-$`\widetilde{n}_3`$ the quarter-valued Majorana terms carry the sign opposite to
-the [closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d), which are
-written in the physical occupation $`n_3`$; the
-[bridging identity](#closed-sector-bridging-identity) relates the two forms. Every CF argument in the phase coefficient
-tables is $`\widetilde{n}_3`$, and every CF differential is $`d\widetilde{n}_3`$.
-The source and product are transported together as proved in
-[the reference comparison](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
-
-
-
+the pairing reference of the complex fermions. All phases are in the physical
+convention of the [guide](../FORMULA_GUIDE.md#phase-convention). For $`n_1=0`$
+every contribution reduces to the
+[closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d).
 
 #### Complex fermions
 
@@ -108,13 +100,13 @@ that physical origin.
 
 The finite sum contains **seven specified MS terms**,
 [listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices).
-Together with the three displayed cups, this gives **ten terms**.
+The displayed cups give eight terms after distributing their sums, so the contribution has **fifteen terms**.
 Every MS term contains $`dn_2=\widetilde{\omega}_2[n_1]_2`$ and
-$`d\widetilde{n}_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d(n_2\cup_1n_2)
-+\mathcal{𝒪}_4^\psi`$. Thus the complex-fermion exchange correction
-depends on its full lower parity differential. The
-[exact reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
-changes neither the source representative nor the paired stacking law.
+$`dn_3+dR_3=\mathcal{𝒪}_4+dR_3`$, so the complex-fermion exchange correction
+depends on the full lower parity differential. The terms with $`R_3`$ vanish
+for $`n_1=0`$. The
+[exact reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#the-obstruction)
+gives the seven-word form.
 
 #### Majorana decoration
 
@@ -130,10 +122,8 @@ The intrinsic Adem cochain of a binary two-cochain $`x`$ is
 
 {{equation:majorana-and-endpoints--majorana-contribution--24}}
 
-This operation has four word terms. The closed-Majorana presentation
-uses the same polynomial with $`\beta^-=\beta`$, but in the physical occupation $`n_3`$ and with the
-opposite sign of the quarter bracket; the
-[bridging identity](#closed-sector-bridging-identity) relates the two.
+This operation has four word terms. For $`n_1=0`$ one has $`\beta^-=\beta`$, and the
+contribution is the closed-Majorana formula.
 
 #### Majorana and p+ip decoration
 
@@ -230,24 +220,16 @@ The pure sheet contribution has three terms. The signed floor is taken before re
 
 {{equation:three-dimensional--4-bosonic-stacking--28}}
 
-The finite pair reference is
+The formulas below use $`R_3=n_2\cup_1n_2`$ on each input and on the output,
+$`\Delta R_3=R_3[N_2]-R_3[n_2]-R_3[n'_2]`$,
+$`R_3^+=[n_2+n'_2]_2\cup_1[n_2+n'_2]_2`$, $`\lambda_2^\gamma=n_2\cup_2n'_2`$,
+and the finite pair reference of the P move,
 
 {{equation:three-dimensional-geometric-reference--pair-cochain}}
 
-The two shifted quantities needed by the phase formulas are
-
-{{equation:three-dimensional-geometric-reference--phase-input-product}}
-
-The $`\Delta`$ below always uses the actual new output. The explicitly
-printed $`d\mathcal B_2`$ terms account for the change of its face reference.
-They are already included in the contributions below and must not be added a second time.
-
-
-
-
+The $`\Delta`$ below always uses the actual new output.
 For two identical complete states with $`n_1=0`$, the entire correction
-reduces to the [transported self-stacking formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md).
-It retains the complex-fermion completion and uses the same phase representative.
+reduces to the [zero-p+ip self-stacking formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md).
 
 #### Complex fermions
 
@@ -257,26 +239,20 @@ It retains the complex-fermion completion and uses the same phase representative
 
 {{equation:three-dimensional--complex-fermions-and-majorana-decoration--29}}
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_3,N_2)`$ minus the values at $`(n_3,n_2)`$ and $`(n'_3,n'_2)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential and the $`d(n_2\cup_1n_2)`$ terms. The last term transports the output evaluation to its actual face reference.
+The $`\Delta`$ has its defined three terms: the value at $`(N_3,N_2)`$ minus the values at $`(n_3,n_2)`$ and $`(n'_3,n'_2)`$. It uses the actual stacked fields, including their p+ip carries. Both parity brackets retain the cochain differential terms.
 
 #### Complex fermions and p+ip decoration
 
 {{equation:three-dimensional--complex-fermions-and-p-ip-decoration--30}}
 
 The two face brackets contain **13 products** after distributing the
-binary parentheses: eight multiply $`d\widetilde{n}_3`$ and five multiply $`d\widetilde{n}'_3`$.
-Their CF differentials are $`d\widetilde{n}_3`$ and $`d\widetilde{n}'_3`$. The
-[exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md) proves
-that this form is exact.
-The lower Majorana differentials retain their physical meanings.
-
-This contribution uses the lower obstruction directly. Its two
-evaluations give **14 terms**:
-two derivatives multiply two retained obstruction evaluations, one output
-square, and the four products in the displayed input square. Together with
-the three initial lower-operation/reference terms and thirteen face products, this
-contribution has **30 terms**. The lower obstruction acts on its whole
+binary parentheses: eight multiply $`dn_3+dR_3`$ and five multiply $`dn'_3+dR'_3`$.
+The [exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md) proves
+that this form is exact. The lower obstruction acts on its whole
 binary argument; it must not be linearized.
+The terms with $`R_3`$, $`\lambda_2^\gamma`$ and $`\mathcal B_2`$ come from the
+pairing references of the complex fermions; together they vanish for
+$`n_1=n'_1=0`$, so that the whole contribution vanishes there.
 
 #### Majorana decoration
 
@@ -318,19 +294,13 @@ distributed as an integer sum.
 
 The two repeated quarter-valued copies of $`\omega_2\lambda_2^\gamma`$
 have been combined in the half-valued bracket. The integer differential of
-$`2\lambda_2^\gamma\cup_1\lambda_2^\gamma`$ is likewise half-valued.
+
 These are exact coefficient combinations, with no change of phase
 coordinate or reassignment of physical contributions.
 
-On the closed-Majorana tower, $`n_1=n'_1=0`$, this explicitly continued
-relative phase is not zero pointwise: it is the coboundary displayed in the
-[closed-sector dictionary](#closed-sector-bridging-identity), with
-$`\lambda_2^\gamma=n_2\cup_2n'_2`$. Its half and quarter
-brackets need not separately vanish. The integer derivatives and whole
-binary lifts displayed here are part of that exact statement. The formula
-can be simplified further only while retaining both coefficients and its
-paired source map; canceling the binary parity of a quarter term is not
-sufficient.
+On the closed-Majorana tower, $`n_1=n'_1=0`$, this mixed Majorana–p+ip
+contribution vanishes. Its half and quarter brackets need not separately
+vanish; canceling the binary parity of a quarter term is not sufficient.
 
 #### p+ip decoration
 
@@ -386,33 +356,13 @@ The derivative of its integer quarter partner, the literal square of $`x`$,
 is already displayed in the mixed and pure quarter formulas. It has not
 been absorbed into a binary word table.
 
-The obstruction and stacking law use the same [paired phase convention](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md), including the explicit output gauge.
 
-<a id="closed-sector-bridging-identity"></a>
+<a id="closed-sector"></a>
 
-## Closed sector and the bridging identity
+## Closed sector
 
-For $`n_1=n'_1=0`$ one has $`\beta^-=\beta`$ and
-$`\widetilde{n}_3=n_3+[\beta n_2]_2`$. The
-[closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d) are written in
-the physical occupation $`n_3`$ with the lattice sign of the Majorana phase. With
-$`\mathcal{𝒪}_5^c,\mathcal{𝒪}_5^{c\gamma}`$ the complex-fermion contributions and
-$`\mathcal{𝒪}_5^\gamma`$ the closed-sector Majorana contribution, the two
-forms obey the bridging identity
-
-{{equation:three-dimensional--closed-sector-bridging-identity--40}}
-
-Here $`2\mathcal{𝒪}_5^\gamma=\frac12\big[\omega_2[\beta n_2]_2+[\beta n_2]_2\cup_1[\beta n_2]_2\big]`$
-does not depend on the sign of the quarter bracket. Since
-$`-\mathcal{𝒪}_5^\gamma=\mathcal{𝒪}_5^\gamma-2\mathcal{𝒪}_5^\gamma`$, the Majorana
-contribution appears with the opposite sign in the argument $`\widetilde{n}_3`$.
-Restricted to $`n_1=n'_1=0`$, the complete formulas of this page and the
-closed-sector formulas therefore describe the same states; their bosonic
-phases differ by the local term $`\frac12n_3\cup_2[\beta n_2]_2`$, and their
-stacking twisters by its change $`\Delta`$ on $`N_2=n_2+n'_2`$,
-$`N_3=n_3+n'_3+\mathcal{ℰ}_3`$ together with a coboundary. On these inputs
-$`\mathcal{𝒪}_5^{c\psi},\mathcal{𝒪}_5^{\gamma\psi},\mathcal{𝒪}_5^\psi,
-\mathcal{ℰ}_4^{c\psi},\mathcal{ℰ}_4^\psi`$ vanish, while the mixed Majorana–p+ip
-twister is the coboundary
-
-{{equation:three-dimensional--closed-sector-bridging-identity--41}}
+For $`n_1=n'_1=0`$ one has $`\beta^-=\beta`$, $`R_3`$ is closed, and every
+contribution on this page reduces to the
+[closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d); the
+contributions $`\mathcal{𝒪}_5^{c\psi},\mathcal{𝒪}_5^{\gamma\psi},\mathcal{𝒪}_5^\psi,
+\mathcal{ℰ}_4^{c\psi},\mathcal{ℰ}_4^{\gamma\psi},\mathcal{ℰ}_4^\psi`$ vanish.

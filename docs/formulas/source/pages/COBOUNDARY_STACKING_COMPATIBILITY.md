@@ -69,10 +69,8 @@ cochains. The lower fields satisfy
 {{equation:coboundary-stacking-compatibility--an-exact-4-1d-product-with-a-group-inverse--6}}
 
 Thus $`u`$ has degree three, $`c,c'`$ have degree four, and
-$`c+c'`$ is closed. All these lower fields are binary. As in the complete
-[4+1D formulas](FOUR_DIMENSIONAL.md#terminal-occupation-4d), $`c,c'`$ are the
-terminal-layer occupations $`\widetilde{n}_4,\widetilde{n}'_4`$; here
-$`\widetilde{n}_4=n_4+\mathrm{Sq}^1u`$, and $`c+c'=n_4+n'_4`$. The backgrounds
+$`c+c'`$ is closed. All these lower fields are binary; $`c,c'`$ are the
+point-fermion occupations of the [4+1D formulas](FOUR_DIMENSIONAL.md). The backgrounds
 $`\omega_2,s_1`$ are closed and remain fixed.
 
 The complete current product has the exact specialization
@@ -97,8 +95,7 @@ $`(0,u,c'+T)`$. Its phase is
 
 {{equation:coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--9}}
 
-This expression has six half-valued cup terms after distributing the
-two occurrences of $`c'+T`$. The Majorana diagonal is the same
+The last bracket comes from the pairing reference $`R_4=u\cup_2u`$. The Majorana diagonal is the same
 fully specified operation as in the original stacking law.
 This chooses the inverse representative for which $`Y*Y^{-1}`$ is the
 zero cochain state. It includes the lower carry as well as the phase
@@ -108,9 +105,9 @@ For $`X*Y^{-1}`$, the direct product adds
 
 {{equation:coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--10}}
 
-The half-valued bracket contains ten cup terms after distributing its
-displayed sums. Subtracting the inverse correction cancels the two
-identical Majorana diagonals as whole phase cochains. Bilinearity
+Subtracting the inverse correction cancels the two
+identical Majorana diagonals as whole phase cochains, and the two identical
+reference brackets. Bilinearity
 over $`\mathbb Z_2`$ cancels every $`T`$ term and leaves
 
 {{equation:coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--11}}
@@ -151,10 +148,10 @@ of the specified pure-layer bulk maps.
 
 The complete phases of the pure-layer bulk maps are evaluated on their
 stated domains before this additional product correction is applied.
-Here $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$ is the explicit
-[geometric-reference conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
-Thus the bulk sum is $`d\widetilde{n}_3`$, not the current point occupation $`dn_3`$.
-The boundary product also receives the face-reference phase on that page.
+Here $`R_3=n_2\cup_1n_2`$ is the pairing reference of the
+[3+1D formulas](THREE_DIMENSIONAL.md). The bulk fields are the compact
+parities, so their sum is $`dn_3+dR_3`$ rather than the point-occupation
+differential $`dn_3`$.
 
 ## Transporting representatives together
 

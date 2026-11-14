@@ -5,8 +5,7 @@
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
 These formulas give the square of a complete lifted state
-$`(n_2,n_3,\widetilde{n}_4,\nu_5)`$, written in the terminal-layer
-occupation $`\widetilde{n}_4=n_4+R_4`$ of the [general formulas](FOUR_DIMENSIONAL.md#terminal-occupation-4d). Every stacking twister and
+$`(n_2,n_3,n_4,\nu_5)`$ in the [general formulas](FOUR_DIMENSIONAL.md). Every stacking twister and
 coefficient set on this page is specialized to two copies of that same
 input; no extra input label is needed.
 
@@ -15,10 +14,9 @@ input includes the upper decorations required by
 $`d_{s_1}n_2=0`$,
 $`dn_3=\mathcal{𝒪}_4[n_2]
  =[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$, and
-$`d\widetilde{n}_4=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}
- +\mathcal{𝒪}_5^\psi`$, equivalently $`dn_4=\mathcal{𝒪}_5+dR_4`$. The bosonic obstruction is the same
+$`dn_4=\mathcal{𝒪}_5+dR_4`$. The bosonic obstruction is the same
 [4+1D obstruction](FOUR_DIMENSIONAL.md). Neither $`n_3`$ nor
-$`\widetilde{n}_4`$ is set to zero. The output Majorana cochain shown below is closed and need not vanish.
+$`n_4`$ is set to zero. The output Majorana cochain shown below is closed and need not vanish.
 
 Bars, second digits, canonical lifts, and signed integer products have
 the conventions of the general formula. Every $`dn_3`$ in a
@@ -30,9 +28,9 @@ The [root-power construction](ROOT_POWER_PRESENTATIONS.md) explains how
 relative self-power relations determine a finite abelian extension and how
 odd orders are handled. The complete two-input law remains available; this
 page specifies its exact equal-input specialization. The
-[terminal phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is specialized at
+[phase convention](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is specialized at
 the same time. Since the binary sum of two equal Majorana inputs is zero,
-$`2B_5[n_3,0]=\tfrac12(n_3\cup_1n_3)`$ modulo
+$`2B_5[n_3]=\tfrac12(n_3\cup_1n_3)`$ modulo
 one; the half-valued part doubles to an integer. This gives the short
 extra terms below directly from the general law.
 
@@ -53,7 +51,7 @@ In the lift variable of the code input, this output is $`N_3+s_1[n_2]_2`$.
 ## 3. Complex-fermion decoration
 
 ```math
-\widetilde{N}_4=\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi}+\mathcal{ℰ}_4^\psi.
+N_4=\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi}+\mathcal{ℰ}_4^\psi+R_4[N_2,N_3].
 ```
 
 ### Majorana decoration
@@ -115,17 +113,21 @@ identically when its two closed inputs $`[n_2]_2`$ coincide.
 ### Complex fermions
 
 ```math
-\mathcal{ℰ}_5^c=\frac12\widetilde{n}_4\cup_3\widetilde{n}_4.
+\mathcal{ℰ}_5^c=\frac12n_4\cup_3n_4.
 ```
 
 ### Complex fermions and Majorana decoration
 
 ```math
+\begin{aligned}
 \mathcal{ℰ}_5^{c\gamma}
-=\frac12\Big[
+={}&\frac12\Big[
  [\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}]
-        [n_2,n_3]\cup_4\widetilde{n}_4
- +\widetilde{N}_4\cup_4\mathcal{𝒪}_5^\gamma[N_3]\Big].
+        [n_2,n_3]\cup_4n_4
+ +N_4\cup_4\mathcal{𝒪}_5^\gamma[N_3]\Big]\\
+&+\frac12\Big[n_4\cup_3R_4+R_4\cup_3n_4+R_4\cup_3R_4+\mathcal{𝒪}_5\cup_4R_4\\
+&\qquad+R_4[N]\cup_4\mathcal{𝒪}_5[N]+N_4\cup_4dR_4[N]+N_4\cup_3R_4[N]\Big].
+\end{aligned}
 ```
 
 ### Complex fermions and p+ip decoration
@@ -133,17 +135,18 @@ identically when its two closed inputs $`[n_2]_2`$ coincide.
 ```math
 \mathcal{ℰ}_5^{c\psi}
 =\frac12\Big[
- \mathcal{𝒪}_5^\psi[n_2]\cup_4\widetilde{n}_4
- +\widetilde{N}_4\cup_4
+ \mathcal{𝒪}_5^\psi[n_2]\cup_4n_4
+ +N_4\cup_4
    ([\beta_{s_1}\widetilde{\omega}_2]_2\,[n_2]_2)\Big].
 ```
 
-These have respectively **one, three, and two structured terms**, retaining
+These have respectively **one, ten, and two structured terms**, retaining
 the already defined lower obstructions. In particular
 $`\mathcal{𝒪}_5^\psi[2n_2]
  =[\beta_{s_1}\widetilde{\omega}_2]_2\,[n_2]_2`$.
-The actual output $`\widetilde{N}_4`$ of the lower self-stacking law is used in both formulas; replacing it by zero
-would discard an upper-layer correction.
+The actual output $`N_4`$ of the lower self-stacking law is used in these formulas; replacing it by zero
+would discard an upper-layer correction. The terms with $`R_4`$ come from the
+pairing reference of the complex fermions; $`R_4[N]`$ is evaluated on the output.
 
 ### Majorana decoration
 
@@ -162,7 +165,7 @@ With the existing integer carry $`\beta_4^\gamma=\beta^-n_3`$,
  \beta_4^\gamma\cup_3\beta_4^\gamma
  +n_3\cup_1n_3-\omega_2n_3
  +n_3\cup_2dn_3
- -\beta\big(\widetilde{\mathcal{𝒪}}_4[n_2]\big)\cup_4\beta_4^\gamma\\
+ -\beta\big(\mathcal{𝒪}_4[n_2]\big)\cup_4\beta_4^\gamma\\
 &\qquad-(dn_3)_{01234}(dn_3)_{01245}
  -(dn_3)_{01234}(dn_3)_{02345}\\
 &\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
@@ -176,8 +179,8 @@ The first sum contains **187 specified MS terms** in the
 The final sum contains **four whole binary lifts**, with signs
 $`+,-,-,+`$ and respectively **5, 15, 10, and 76 interior terms** in the
 [self-stacking lift table](FOUR_DIMENSIONAL_SELF_STACKING_LIFTS.md).
-The complete contribution has **200 outer terms before the phase transport**, or **302 explicit
-occurrences before that transport** when the four lift wrappers are replaced in the count by
+The complete contribution has **200 outer terms without the two $`B_5`$ half terms**, or **302 explicit
+occurrences without them** when the four lift wrappers are replaced in the count by
 their 106 interior products. Every lift boundary is retained.
 
 The [exact cochain-identity reduction](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md)
@@ -187,13 +190,10 @@ $`d\beta_4^\gamma=-\beta(\mathcal{𝒪}_4[n_2])`$
 on the stated input tower.
 This is the same open-cochain representative as the general formula.
 No cocycle hypothesis on $`n_3`$ has been imposed. The phase
-transport adds the two displayed half terms
-$`[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]/2`$.
-In the shifted argument $`\widetilde{n}_4`$ the quarter-valued terms carry the
-sign of the complete tower. The [zero-p+ip self-stacking page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
-writes the same sector in the physical occupation $`n_4`$, where the
-quarter-valued terms have the opposite sign; the
-[bridging identity](FOUR_DIMENSIONAL.md#bridging-identity-4d) relates the two.
+convention contributes the two displayed half terms
+$`[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]/2`$. The
+[zero-p+ip self-stacking page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
+is the restriction $`n_2=0`$ of these formulas.
 
 ### Majorana and p+ip decoration
 
@@ -220,10 +220,10 @@ include the completed transfer and tensor contributions before the two
 external inputs are identified. The remaining terms give **181 outer
 terms** after the three displayed quarter numerators are substituted and
 their linear sums distributed, retaining standard lower operations.
-Thus this contribution has **3,613,698 outer terms before the phase transport**; the
+Thus this contribution has **3,613,698 outer terms without the phase-convention term**; the
 protected mixed lift has eight interior terms. The additional term
-$`-s_1\mathcal{ℰ}_4^{\gamma\psi}/2`$ is its entire coordinate
-correction on equal inputs: the three general $`B_5`$ evaluations cancel
+$`-s_1\mathcal{ℰ}_4^{\gamma\psi}/2`$ is its entire phase-convention
+term on equal inputs: the three general $`B_5`$ evaluations cancel
 exactly here.
 
 ### p+ip decoration
@@ -237,7 +237,7 @@ exactly here.
 &\quad+([\beta_{s_1}\widetilde{\omega}_2]_2\,[n_2]_2)
                                   \cup_4[n_2]_2^2
  +\mathop{\mathrm{MS}}\nolimits_{1231343}([n_2]_2,[n_2]_2,[n_2]_2,[n_2]_2)
- +[n_2]_2\cup_1\widetilde{\mathcal{𝒪}}_4[n_2]\\
+ +[n_2]_2\cup_1\mathcal{𝒪}_4[n_2]\\
 &\quad+[\lfloor n_2/2\rfloor]_2N_3
  +(\widetilde{\omega}_2\cup_1[n_2]_2)[n_2]_2
  +s_1[n_2]_2[\lfloor n_2/2\rfloor]_2
@@ -245,7 +245,7 @@ exactly here.
  +\widetilde{\omega}_2N_3\\
 &\quad+n_2N_3+(n_2\cup_1\widetilde{\omega}_2)n_2-s_1\mathcal{ℰ}_4^\psi\Big]
  +\frac14[V_5^\psi]_2
- +\frac18\widetilde{\omega}_2(n_2\cup_1n_2)-B_5[N_3,0]\pmod1.
+ +\frac18\widetilde{\omega}_2(n_2\cup_1n_2)-B_5[N_3]\pmod1.
 \end{aligned}
 ```
 
@@ -253,13 +253,13 @@ This finite sum contains **793,669 terms**, including the complete
 integer-decoration and tensor contributions. Its
 [explicit coefficient files](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/INDEX.json)
 use the same lower-operation conventions as the general formula. The
-remaining displayed terms add **14 outer terms**, giving **793,683 before the phase transport**.
+remaining displayed terms add **14 outer terms**, giving **793,683 without the phase-convention terms**.
 The protected pure lift has twelve interior terms. The denominator-three
 term of the general law vanishes identically on equal inputs.
-The extra half term and $`-B_5[N_3,0]`$ are the remaining
-pure-integer coordinate correction; the latter has 45 explicit terms
+The extra half term and $`-B_5[N_3]`$ are the remaining
+pure-integer phase-convention terms; the latter has 45 explicit terms
 with the defined output as its argument. Its complete coefficient list
-is shared with the general phase map rather than fitted on the diagonal.
+is shared with the general formula rather than fitted on the diagonal.
 
 The two large coefficient lists are exact specializations of completed
 cochain expressions, not of their input kernels. The

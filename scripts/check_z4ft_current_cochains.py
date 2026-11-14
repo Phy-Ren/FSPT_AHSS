@@ -219,9 +219,7 @@ def check():
                          'nonzero_residual_count': 0, 'values': rows}
     for relative in (
         'fspt/geometric_reference_3d.py',
-        'docs/formulas/source/equations/three-dimensional-geometric-reference--checked-fermion.tex',
         'docs/formulas/source/equations/three-dimensional-geometric-reference--pair-cochain.tex',
-        'docs/formulas/source/equations/three-dimensional-geometric-reference--phase-transport.tex',
         'docs/formulas/source/equations/three-dimensional--p-ip-decoration--18.tex',
         'docs/formulas/source/equations/three-dimensional--majorana-decoration--14.tex',
         'docs/formulas/source/pages/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md',

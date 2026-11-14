@@ -4,12 +4,18 @@
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
-This is a retained coefficient/derivation kernel. Its CF input `n3` means the current `check n3=n3+check n2 cup1 check n2`; its product uses the previous output `check N3+dB2`. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is `N3+d check n2`. Frozen coefficient values are unchanged.
-The degree-six source below is the 4+1D terminal source evaluated on
+**Code documentation.** This page documents how the numerical code in
+`formulas/publication_source/full3` generates part of the
+[3+1D formulas](THREE_DIMENSIONAL.md). The code evaluates its construction with
+the complex-fermion input $`n_3+R_3`$, $`R_3=n_2\cup_1n_2`$, on each state and
+with the stacked output $`N_3+R_3[N_2]+d\mathcal B_2`$; within this page
+$`n_3`$, $`n'_3`$ and $`N_3`$ denote these code arguments. The change to the
+bare formulas is stated in [From the code to the 3+1D formulas](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
+The degree-six source below is the 4+1D source of the code evaluated on
 auxiliary fields; (T3) and (T3 product) integrate it over the interval and the
 triangle with the orientation fixed in (O8).
 
-This file records the finite construction in the supplied terminal phase coordinate. The [current physical formulas](THREE_DIMENSIONAL.md#three-dimensional) use the explicit [paired phase change](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md). Throughout this construction, the unqualified obstruction and stacking symbols refer to the supplied coordinate; apply that map and its output coboundary to compare with the guide.
+The obstruction and stacking symbols on this page refer to the representative of the code; the [paired representative change](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) and the [change of argument](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md) give the formula pages.
 All parameter fields below are auxiliary mathematical cochains. Their degrees
 do not change the physical roles of the fields in that section.
 
@@ -82,9 +88,9 @@ the obstruction and on the triangle fields for stacking:
 Its fields, residuals, and finite constituent formulas are specified below.
 
 <a id="physical-field-evaluation"></a>
-## Evaluation notation in the retained construction
+## Evaluation notation in the code construction
 
-The retained construction can denote its two fixed sums as
+The code construction denotes its two fixed sums as
 $`\mathop{\mathrm{ev}}\nolimits_5=\tau_I`$ for the obstruction and
 $`\mathop{\mathrm{ev}}\nolimits_4=\tau_\triangle`$ for stacking. Both act on
 a degree-six cochain. The subscript gives the output degree: the first
@@ -131,9 +137,9 @@ space. The definitions are local to the auxiliary fields:
 
 ```math
 \begin{aligned}
-\widetilde{\mathcal{𝒪}}_4^J&=[n_2^J]_2^2+\widetilde{\omega}_2[n_2^J]_2
+\mathcal{𝒪}_4^J&=[n_2^J]_2^2+\widetilde{\omega}_2[n_2^J]_2
  \quad\text{in }\mathbb Z_2,\\
-\beta_4^{\psi,J}&=\frac{\widetilde{\mathcal{𝒪}}_4^J-{n_2^J}^2-\widetilde{\omega}_2{n_2^J}}{2},\\
+\beta_4^{\psi,J}&=\frac{\mathcal{𝒪}_4^J-{n_2^J}^2-\widetilde{\omega}_2{n_2^J}}{2},\\
 \beta_4^J&=\beta^-n_3^J+\beta_4^{\psi,J}
  =\frac{dn_3^J-{n_2^J}^2-\widetilde{\omega}_2{n_2^J}}{2},\\
 d\beta_4^J&=-(\beta_{s_1}\widetilde{\omega}_2){n_2^J}.

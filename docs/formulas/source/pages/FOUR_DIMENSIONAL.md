@@ -63,19 +63,9 @@ Here $`n_4`$ is the physical point-fermion occupation of the original
 pairing arrows. The directed F-move count differs from $`\mathcal{𝒪}_5`$ by
 the coboundary of the fixed binary four-cochain $`R_4`$ given explicitly in
 the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#eq-r4).
-That page also gives the complete F-move count and the paired stacking
-comparison while retaining the original ordinary Majorana graph.
-The terminal layer (the bosonic obstruction, the bosonic stacking twister,
-and self-stacking) is written in the shifted occupation
-
-```math
-\widetilde{n}_4=n_4+R_4\pmod2,\qquad d\widetilde{n}_4=\mathcal{𝒪}_5.
-```
-
-This is the only change of variable on this page. In this argument the
-displayed terminal formulas are in the physical phase convention; the
-retained runtime uses the same argument in its complex-fermion slot. For $`n_2=0`$ every $`s_1`$ face term of
-$`R_4`$ vanishes and $`\widetilde{n}_4=n_4+\mathrm{Sq}^1n_3`$.
+That page also gives the complete F-move and P-move counts.
+For $`n_2=0`$ every $`s_1`$ face term of $`R_4`$ vanishes and
+$`R_4=n_3\cup_2n_3`$.
 
 ### 4. Bosonic obstruction
 
@@ -85,7 +75,7 @@ $`R_4`$ vanishes and $`\widetilde{n}_4=n_4+\mathrm{Sq}^1n_3`$.
 
 {{equation:four-dimensional--4-bosonic-obstruction--10}}
 
-In the current phase coordinate the contributions are:
+The contributions are:
 
 **Complex-fermion contribution.**
 
@@ -107,12 +97,9 @@ that physical origin.
 
 {{equation:four-dimensional--4-bosonic-obstruction--13}}
 
-These terms use the phase redefinition
-$`\nu_5\longmapsto\nu_5+\tfrac12\widetilde{n}_4\cup_4d\widetilde{n}_4`$ to put the complex fermions in operator order, followed by the fixed [Majorana phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
-Both changes are included in the terminal stacking law. The lower fields
-are unchanged. This convention retains the compact intrinsic Majorana
-formula and places its differential-dependent continuation in the mixed
-contribution.
+The terms with $`R_4`$ vanish for $`n_2=0`$, where $`R_4=n_3\cup_2n_3`$
+and $`dR_4=0`$. The complex fermions are in operator order, and the
+Majorana contribution is in the [compact phase convention](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 
 **Majorana contribution.**
 
@@ -135,27 +122,8 @@ the defined first squares.
 Each Cartan operation contains **one MS term**. The carry numerator
 $`\beta^-n_3+[\beta^-n_3]_2`$ is even,
 including for negative integer values. When the integer decoration is
-zero, $`dn_3=0`$ and $`\beta^- n_3=\beta n_3`$. In the argument
-$`\widetilde{n}_4`$ this contribution then carries the quarter sign opposite
-to the [closed-Majorana formula](MAJORANA_AND_ENDPOINTS.md#eq-m4-4d), which is
-written in the physical occupation $`n_4`$ with quarter-valued bracket
-$`-1/4`$. The two forms of the complete obstruction are related by the
-following identity.
-
-<a id="bridging-identity-4d"></a>
-
-**Bridging identity.** For a closed binary $`n_3`$ and any binary $`n_4`$,
-with $`\mathrm{Sq}^1n_3=n_3\cup_2n_3=[\beta n_3]_2`$ as cochains, the
-closed-sector contributions obey
-
-{{equation:four-dimensional--bridging-identity--44}}
-
-Hence, for $`n_2=0`$, the complete obstruction at
-$`\widetilde{n}_4=n_4+\mathrm{Sq}^1n_3`$ equals the closed obstruction in
-$`n_4`$ plus $`d_{s_1}\bigl(\tfrac12n_4\cup_3\mathrm{Sq}^1n_3\bigr)`$; both use
-the same physical phase convention. The identity has been checked
-pointwise on all faces of 1600 random seven-simplex configurations with
-general closed $`\omega_2,s_1`$.
+zero, $`dn_3=0`$, $`\beta^- n_3=\beta n_3`$, and this is the
+[closed-Majorana formula](MAJORANA_AND_ENDPOINTS.md#eq-m4-4d).
 
 **Majorana–p+ip contribution.**
 
@@ -165,9 +133,8 @@ This finite sum contains **1,897 specified MS terms** with the defined
 Majorana differential retained as an input. Every word and its arguments
 are given in the [relative coefficient table](FOUR_DIMENSIONAL_MAJORANA_RELATIVE_WORD_COEFFICIENTS.md).
 The complete finite sum vanishes on $`dn_3=0`$; this need not hold
-word by word. The [phase construction](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-derives this relative continuation and transports the stacking law with
-it. The other displayed half-valued cups are outside the sum. The mixed
+word by word. The [phase convention page](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
+derives this relative continuation. The other displayed half-valued cups are outside the sum. The mixed
 quarter phase contains the four-cup quadratic polarization and **three
 additional ordered integer cups**. The binary cochain $`dn_3`$
 is lifted as a whole in the last two cups.
@@ -239,11 +206,10 @@ Consequently $`d\mathcal{ℰ}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 
 {{equation:four-dimensional--3-complex-fermion-stacking--24}}
 
-The first line is the physical occupation of the output, with $`R_4`$
-evaluated on the actual lower output $`(N_2,N_3)`$ in $`\Delta R_4`$; the
-second line is the same law in the shifted occupation. Both include the
-complex-fermion gauge transformation by the explicit two-input pairing
-reference described under the bosonic stacking law below.
+Here $`\Delta R_4=R_4[N_2,N_3]-R_4[n_2,n_3]-R_4[n'_2,n'_3]`$, evaluated on the
+actual lower output. The law includes the complex-fermion gauge transformation
+by the explicit two-input pairing reference described under the bosonic
+stacking law below.
 
 **Majorana contribution.**
 
@@ -270,30 +236,25 @@ The two finite polynomials in this contribution are
 
 {{equation:four-dimensional--4-bosonic-stacking--29}}
 
-The output fields are those of the preceding three stacking laws. The
-following formulas use the operator ordering of the complex-fermion
-contribution. The terminal phase is the same compact-Majorana coordinate as the obstruction above.
-Every complex-fermion argument is the terminal occupation $`\widetilde{n}_4`$,
-and the output is $`\widetilde{N}_4=\widetilde{n}_4+\widetilde{n}'_4+\mathcal{ℰ}_4`$ of the
-lower law above.
-The cochain $`B_5[n_3,\widetilde{n}_4]`$ is defined once in the
-[paired phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md); its backgrounds
-are kept fixed in every evaluation below. Setting its second argument
-to zero removes only the term $`s_1\widetilde{n}_4/2`$.
+The output fields are those of the preceding three stacking laws, and the
+phase convention is that of the obstruction above.
+The cochain $`B_5[n_3]`$ is defined once in the
+[phase convention page](FOUR_DIMENSIONAL_MAJORANA_PHASE.md); its backgrounds
+are kept fixed in every evaluation below.
 
 The directed pairing count of the physical P move gives the output
-$`\widetilde{N}_4`$ plus the coboundary of the two-input pairing reference
-written out in the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#stacking-and-its-paired-comparison).
+$`N_4`$ plus the coboundary of the two-input pairing reference
+written out in the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#stacking).
 That coboundary is not a decoration. The lower law above composes the P move
 with the complex-fermion gauge transformation that removes it. If the
-uncorrected output $`\widetilde{N}_4+dx`$ is used instead, with $`x`$ the written-out
+uncorrected output $`N_4+dx`$ is used instead, with $`x`$ the written-out
 two-input reference, add
 
 {{equation:four-dimensional--4-bosonic-stacking--45}}
 
 to $`\mathcal{ℰ}_5`$. For any binary three-cochain $`x`$ this is the primitive of
-$`\mathcal{𝒪}_6^c[\widetilde{N}_4+dx]-\mathcal{𝒪}_6^c[\widetilde{N}_4]`$;
-the mixed contribution depends only on $`d\widetilde{N}_4`$ and is unchanged.
+$`\mathcal{𝒪}_6^c[N_4+dx]-\mathcal{𝒪}_6^c[N_4]`$;
+the other contributions do not depend on $`N_4`$.
 
 #### Complex fermions
 
@@ -303,7 +264,7 @@ the mixed contribution depends only on $`d\widetilde{N}_4`$ and is unchanged.
 
 {{equation:four-dimensional--complex-fermions-and-majorana-decoration--31}}
 
-The $`\Delta`$ has its defined three terms: the value at $`(\widetilde{N}_4,N_3)`$ minus the values at $`(\widetilde{n}_4,n_3)`$ and $`(\widetilde{n}'_4,n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All three parity brackets retain the cochain differential terms. This is an exact rewriting of the same contribution.
+The $`\Delta`$ has its defined three terms: the value at $`(N_4,N_2,N_3)`$ minus the values at $`(n_4,n_2,n_3)`$ and $`(n'_4,n'_2,n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All parity brackets retain the cochain differential terms. The terms with $`R_4`$ come from the pairing reference of the complex fermions; $`\mathcal{𝒪}_5$ without a superscript is the complete parity obstruction of the first input.
 
 #### Complex fermions and p+ip decoration
 
@@ -344,27 +305,25 @@ quarter bracket. Distributing those lifts would lose their carries.
 
 After distributing the displayed linear additions, the formula has
 **459 half-valued terms and 23 outer quarter-valued terms: 482 outer
-terms before the compact-phase transport**. The four lift interiors contain **146 explicit products**.
+terms without the three $`B_5`$ evaluations**. The four lift interiors contain **146 explicit products**.
 Counting those products in place of the four lift wrappers gives
-**624 explicit term occurrences before that transport**, with all four reduction boundaries
+**624 explicit term occurrences without them**, with all four reduction boundaries
 retained. Defined lower
 differentials, Bocksteins, and binary-addition carries remain structured
 arguments; $`d`$ denotes the cochain differential.
 
 The three displayed $`B_5`$ evaluations and the term
-$`-s_1\mathcal{ℰ}_4^\gamma/2`$ transport this expression to the same
-phase coordinate as the compact pure Majorana obstruction. Each
-$`B_5[x,0]`$ has **44 half-valued terms and one quarter-valued term**;
+$`-s_1\mathcal{ℰ}_4^\gamma/2`$ put this expression in the
+phase convention of the pure Majorana obstruction. Each
+$`B_5[x]`$ has **44 half-valued terms and one quarter-valued term**;
 the complete 32-word sum and the remaining terms are written in the
 [phase-change definition](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 The inputs $`n_3+n'_3`$ are binary sums, including inside
 all integer carries. These evaluations are not counted as single MS terms.
 
-The existing [output-gauge relation](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md)
-precedes this terminal coordinate change and is retained in it. The
-[integer-carry derivation](FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
-explains the unchanged coefficient part. Its replay verifies that part;
-the additional paired phase change is proved separately.
+The [output-gauge relation](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md)
+and the [integer-carry derivation](FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
+explain the coefficient part; the $`B_5`$ terms are checked separately.
 
 #### Majorana and p+ip decoration
 
@@ -375,12 +334,12 @@ lower differentials, stacking twisters and integer carries retained.
 The [complete coefficient table](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md)
 specifies every factor and argument. Expanding the remaining displayed
 linear sums and the three quarter numerators adds **1,262 terms**, giving
-**5,685,451 terms before the displayed compact-phase correction**. Whole nonlinear lifts retain
+**5,685,451 terms without the three $`B_5`$ evaluations**. Whole nonlinear lifts retain
 their scopes; their complete interior terms are recorded separately in
 the coefficient table.
 
-The three $`B_5[\cdot,0]`$ evaluations supply the polarization of the
-same phase map between $`n_3+n'_3`$ and
+The three $`B_5[\cdot]`$ evaluations supply the polarization of
+$`B_5`$ between $`n_3+n'_3`$ and
 $`\mathcal{ℰ}_3`$; the additional half term uses the already
 defined mixed lower twister. Each evaluation contains 45 explicit
 cochain terms before argument expansion and cancellations. In particular
@@ -398,14 +357,14 @@ This finite sum contains **2,869,198 explicit terms**, including the entire
 pure-source and tensor contributions. The
 [complete coefficient table](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md)
 lists them with the same lower-operation convention. The other displayed
-terms add **22**, giving **2,869,220 terms before the displayed compact-phase correction**.
+terms add **22**, giving **2,869,220 terms without the $`B_5`$ evaluation**.
 The protected whole quarter numerator has 20 interior terms, displayed
 below; the other nonlinear interiors are specified in the coefficient table.
 
-The final phase-map evaluation has 45 explicit cochain terms, with
+The final $`B_5`$ evaluation has 45 explicit cochain terms, with
 $`\mathcal{ℰ}_3`$ as its defined input. Together with
-$`-s_1\mathcal{ℰ}_4^\psi/2`$, it is the pure-integer part of the same
-terminal coordinate change, not a separately chosen p+ip correction.
+$`-s_1\mathcal{ℰ}_4^\psi/2`$, it is the pure-integer part of the $`B_5`$
+terms, not a separately chosen p+ip correction.
 
 The final denominator-three term belongs to the integer cubic response.
 All displayed integer products use the fixed signed coefficient transports.
@@ -474,11 +433,7 @@ $`V_5=V_5^\gamma+V_5^{\gamma\psi}
 three half-valued carry terms already included in
 $`\mathcal{ℰ}_5^{\gamma\psi}`$.
 
-The [paired phase map](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) is applied to
-both the obstruction and the stacking law. To check the sum of its three
-physical contributions, use the actual lower output
-$`N_3=n_3+n'_3+\mathcal{ℰ}_3`$ and
-$`\widetilde{N}_4=\widetilde{n}_4+\widetilde{n}'_4+\mathcal{ℰ}_4`$. The displayed corrections sum exactly to
-$`-B_5[N_3,\widetilde{N}_4]+B_5[n_3,\widetilde{n}_4]+B_5[n'_3,\widetilde{n}'_4]`$.
-The lower twisters, finite coefficient sets, and existing output coboundary
-are unchanged; the full terminal formula uses this one transported phase.
+The $`B_5`$ terms of the three physical contributions sum to
+$`-B_5[N_3]+B_5[n_3]+B_5[n'_3]`$, evaluated on the actual lower output
+$`N_3=n_3+n'_3+\mathcal{ℰ}_3`$, together with $`-s_1\mathcal{ℰ}_4/2`$ from the
+complex-fermion output.

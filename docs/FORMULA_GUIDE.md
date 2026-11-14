@@ -46,32 +46,13 @@ published fixed-point lattice constructions. It is stated once here.
 - **Coefficients.** Phase coefficients are signed minimal representatives,
   for example $`-\tfrac14`$ rather than $`\tfrac34`$.
 - **Occupations.** $`n_d`$ is the physical point-fermion occupation of the
-  original Majorana pairing arrows. The closed-Majorana sector and the
-  lower p+ip layers use it directly. Only the terminal layer with p+ip
-  decoration, in 3+1D and 4+1D, is written in a shifted argument
-  $`\widetilde{n}_d=n_d+R_d`$ with an explicit fixed polynomial $`R_d`$:
-  $`R_3=n_2\cup_1n_2`$ in
-  [3+1D](formulas/THREE_DIMENSIONAL.md) and the four-face polynomial
-  $`R_4`$ of the [4+1D pairing reference](formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
-  The phases there are still physical.
-
-For a closed Majorana field $`n_{d-1}`$ the two arguments are related by the
-**bridging identity**
-
-```math
-\mathcal{𝒪}^c[n+\mathrm{Sq}^1n_{d-1}]+\mathcal{𝒪}^{c\gamma}[n+\mathrm{Sq}^1n_{d-1}]
--\mathcal{𝒪}^c[n]-\mathcal{𝒪}^{c\gamma}[n]
-=2\,\mathcal{𝒪}^\gamma+d_{s_1}\Big(\frac12\,n\cup_{d-1}\mathrm{Sq}^1n_{d-1}\Big),
-\qquad 4\,\mathcal{𝒪}^\gamma=0\pmod 1,
-```
-
-with $`\mathcal{𝒪}^c,\mathcal{𝒪}^{c\gamma},\mathcal{𝒪}^\gamma`$ the closed-sector
-contributions in degree $`d+2`$. Since $`3\,\mathcal{𝒪}^\gamma=-\mathcal{𝒪}^\gamma`$,
-the Majorana contribution enters with the opposite quarter sign when the
-same physical obstruction is written in the shifted argument. The
-[3+1D](formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d) and
-[4+1D](formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d) closed-Majorana sections
-give both forms and the accompanying stacking dictionaries.
+  original Majorana pairing arrows, and every formula uses it directly. With
+  p+ip decoration the formulas contain the fixed pairing reference of the
+  complex fermions: $`R_3=n_2\cup_1n_2`$ in [3+1D](formulas/THREE_DIMENSIONAL.md)
+  and the four-face polynomial $`R_4`$ of the
+  [4+1D pairing reference](formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#eq-r4).
+  For $`n_{d-2}=0`$ every formula reduces term by term to the
+  [closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md).
 
 **Twisted coefficients of integer terms.** In an integer expression,
 $`[x]_2`$ and a bracket such as $`\widetilde{\omega}_2[n_1]_2`$ denote the
@@ -81,10 +62,9 @@ $`\mathfrak P_{s_1}(\widetilde{\omega}_2)\cup n_1`$, the integer lift of
 $`\widetilde{\omega}_2`$ instead carries the $`\mathbb Z_{s_1}`$ twist of the
 p+ip field, as specified in [Operations](formulas/OPERATIONS.md#eq-o7).
 
-The numerical runtime evaluates fixed compiled programs in its own documented
-cochain coordinates, in this same phase convention; the
-[programmer translation](../formulas/CODE_NOTATION.md#phase-convention-of-the-runtime)
-states the coordinate maps.
+The numerical code evaluates the same phases with its own cochain arguments;
+[From the code to the formulas](../formulas/CODE_NOTATION.md#from-the-code-to-the-formulas)
+gives the maps.
 
 ## Notation
 
@@ -108,7 +88,7 @@ some mixed terms.
 
 ### Arithmetic and modifiers
 
-A prime denotes the second stacking input, as in $`n'_j`$ and $`\widetilde{n}'_j`$.
+A prime denotes the second stacking input, as in $`n'_j`$.
 The outputs are $`N_j`$ and $`\mathcal V_j`$.
 We use the same symbol for a $`U(1)`$ phase and its additive value in $`\mathbb R/\mathbb Z`$, identified by $`x\mapsto\exp(2\pi ix)`$.
 Products and ratios of phases use the multiplicative convention; sums, differences, and phase equations modulo one use the additive convention.
@@ -124,8 +104,7 @@ Square brackets with subscript two denote the canonical binary value:
 
 The second binary digit is written explicitly as $`[\lfloor x/2\rfloor]_2`$.
 Floors are mathematical floors, including for negative integers.
-A tilde denotes an explicitly defined change of cochain variables, not a binary digit or an integer lift.
-The background shift is
+The only tilde in the formulas is the background of the effective Majorana modes of the p+ip layers:
 
 <a id="eq-c1"></a>
 
@@ -198,8 +177,7 @@ $`d_r`$ and its specified cochain representative.
 The integer lifts of $`\widetilde{\omega}_2`$ and the p+ip field have coefficients
 $`\mathbb Z_{s_1}`$; those of $`\omega_2`$ and the Majorana field have ordinary
 integer coefficients. [Operations](formulas/OPERATIONS.md#eq-o7) specifies
-all coefficient transports. A tilde is never an instruction to change
-those coefficient systems.
+all coefficient transports.
 
 Finite definitions of higher cups and ordered word operations are in
 [Operations](formulas/OPERATIONS.md). The terminal formulas below use physical cochains. Long numerical coefficient lists and proofs of the paired representative changes are kept in separate appendices.
@@ -229,23 +207,31 @@ cochain operation, with integer lifts retained, rather than an additional
 physical field. In counts that retain this structure, its three defining
 cups are recorded once and their full substitutions are reported separately.
 
-## Finite definitions and coordinate maps
+## Finite definitions
 
-- 3+1D: [obstruction word coefficients](formulas/THREE_DIMENSIONAL_WORD_INDICES.md), [stacking word coefficients](formulas/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md), [complex-fermion stacking coefficients](formulas/THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md).
+- 3+1D: [obstruction word coefficients](formulas/THREE_DIMENSIONAL_WORD_INDICES.md), [complex-fermion exchange terms](formulas/THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md), [complex-fermion stacking words](formulas/THREE_DIMENSIONAL_PRODUCT_CF_WORDS.md).
 - 3+1D pure p+ip face coefficients: [obstruction](formulas/THREE_DIMENSIONAL_INTEGER_SOURCE_FACES.md), [stacking](formulas/THREE_DIMENSIONAL_INTEGER_PRODUCT_FACES.md).
 - 4+1D: [obstruction word coefficients](formulas/FOUR_DIMENSIONAL_MAJORANA_WORD_COEFFICIENTS.md), [Majorana stacking MS terms](formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_WORDS.md), [Majorana canonical lifts](formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md), [mixed and p+ip stacking coefficients](formulas/FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).
 - 4+1D construction data: [binary coefficients](formulas/FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md), [physical face indices](formulas/FOUR_DIMENSIONAL_PHYSICAL_PATHS.md), [tensor coefficients](formulas/FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md).
 - [4+1D pure-source construction](formulas/SOURCE_OPERATIONS.md#source-completion).
 - [4+1D pure-source physical face coefficients](formulas/FOUR_DIMENSIONAL_Y6_FACES.md).
 - [Root powers and the abelian stacking group](formulas/ROOT_POWER_PRESENTATIONS.md)
-- [Transported 3+1D zero-p+ip self-twister](formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md)
+- [3+1D zero-p+ip self-twister](formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md)
 - [Closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md), [4+1D zero-p+ip self-stacking](formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
 - [Exact Majorana carry reduction](formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
 - [Higher cups and finite sums](formulas/OPERATIONS.md), [fixed coefficients](formulas/COEFFICIENTS.md)
 - [Changes of representative](formulas/REPRESENTATIVES.md)
 - [Fermionic coboundary and stacking](formulas/COBOUNDARY_STACKING_COMPATIBILITY.md)
 - [Integer quadratic cochains and their polarization](formulas/QUADRATIC_REFINEMENTS.md)
+
+## Code documentation
+
+These pages describe how the numerical code evaluates the formulas; the
+formulas themselves do not depend on them.
+
 - [Formula-to-code translation](../formulas/CODE_NOTATION.md)
+- [From the code to the 3+1D formulas](formulas/THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), [native 3+1D phase representative](formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md), [3+1D code construction](formulas/THREE_DIMENSIONAL_TERMINAL.md)
+- [3+1D stacking word grammar](formulas/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md), [canonical 3+1D self-stacking face kernels](formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES.md)
 
 A nonzero obstruction cochain may be a coboundary. Only its nontrivial
 class after the permitted lower-layer changes obstructs the decoration.
@@ -275,7 +261,7 @@ class after the permitted lower-layer changes obstructs the decoration.
 <a id="eq-p3"></a>
 <a id="eq-t3b"></a>
 
-[Complete 3+1D formulas](formulas/THREE_DIMENSIONAL.md). The current geometric pairing coordinate and its full phase transport are fixed in [the paired comparison](formulas/THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
+[Complete 3+1D formulas](formulas/THREE_DIMENSIONAL.md).
 
 <a id="four-dimensional"></a>
 <a id="eq-c1-4d"></a>

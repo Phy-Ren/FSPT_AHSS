@@ -271,25 +271,25 @@ $`\mathcal I_5^{c\psi}`$. This set has **seven entries**.
 
 | Ordered inputs | MS words |
 |---|---|
-| $`(d\widetilde{n}_3,\omega_2,dn_2)`$ | $`1212313`$ |
-| $`(d\widetilde{n}_3,s_1,n_2,dn_2)`$ | $`121341431,\ 241431341,\ 124214131,\ 121431341,\ 142141314,\ 142141341`$ |
+| $`(dn_3+d(n_2\cup_1n_2),\omega_2,dn_2)`$ | $`1212313`$ |
+| $`(dn_3+d(n_2\cup_1n_2),s_1,n_2,dn_2)`$ | $`121341431,\ 241431341,\ 124214131,\ 121431341,\ 142141314,\ 142141341`$ |
 
-The complete differential $`d\widetilde{n}_3`$ is the lower obstruction specified in
-its own layer. The [exact cochain proof](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#source-exchange-through-the-lower-differential)
+The first input is the binary cochain $`dn_3+d(n_2\cup_1n_2)`$, with
+$`dn_3=\mathcal{𝒪}_4`$ the lower obstruction. The [exact cochain proof](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#the-obstruction)
 establishes this seven-entry form without a gauge change.
 
-The following 19 indices form $`\mathcal J_5`$. The derivative $`d\widetilde{n}_3`$
-is the already specified $`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})+\mathcal{𝒪}_4^\psi`$;
+The following 19 indices form $`\mathcal J_5`$. The input
+$`dn_3+d(n_2\cup_1n_2)`$ is fixed by the lower obstruction $`dn_3=\mathcal{𝒪}_4`$;
 it introduces no additional free input.
 
 | Ordered inputs | MS words |
 |---|---|
-| $`(d\widetilde{n}_3,\omega_2,n_2)`$ | $`121231,\ 121313`$ |
-| $`(\omega_2,d\widetilde{n}_3,n_2)`$ | $`121323`$ |
-| $`(d\widetilde{n}_3,s_1,n_2,n_2)`$ | $`12131341,\ 12131413,\ 12134131,\ 12134143,\ 12313414,\ 12321341,\ 12321413,\ 12321431,\ 12341431`$ |
-| $`(d\widetilde{n}_3,n_2,s_1,n_2)`$ | $`12312141,\ 12312412,\ 12312421`$ |
-| $`(s_1,d\widetilde{n}_3,n_2,n_2)`$ | $`12324234,\ 12342423`$ |
-| $`(s_1,n_2,d\widetilde{n}_3,n_2)`$ | $`12324324,\ 12343423`$ |
+| $`(dn_3+d(n_2\cup_1n_2),\omega_2,n_2)`$ | $`121231,\ 121313`$ |
+| $`(\omega_2,dn_3+d(n_2\cup_1n_2),n_2)`$ | $`121323`$ |
+| $`(dn_3+d(n_2\cup_1n_2),s_1,n_2,n_2)`$ | $`12131341,\ 12131413,\ 12134131,\ 12134143,\ 12313414,\ 12321341,\ 12321413,\ 12321431,\ 12341431`$ |
+| $`(dn_3+d(n_2\cup_1n_2),n_2,s_1,n_2)`$ | $`12312141,\ 12312412,\ 12312421`$ |
+| $`(s_1,dn_3+d(n_2\cup_1n_2),n_2,n_2)`$ | $`12324234,\ 12342423`$ |
+| $`(s_1,n_2,dn_3+d(n_2\cup_1n_2),n_2)`$ | $`12324324,\ 12343423`$ |
 
 ## Final physical index sets
 

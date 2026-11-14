@@ -94,10 +94,8 @@ dc=dc'=\mathcal{𝒪}_5^\gamma(u),\qquad
 ```
 
 Thus $`u`$ has degree three, $`c,c'`$ have degree four, and
-$`c+c'`$ is closed. All these lower fields are binary. As in the complete
-[4+1D formulas](FOUR_DIMENSIONAL.md#terminal-occupation-4d), $`c,c'`$ are the
-terminal-layer occupations $`\widetilde{n}_4,\widetilde{n}'_4`$; here
-$`\widetilde{n}_4=n_4+\mathrm{Sq}^1u`$, and $`c+c'=n_4+n'_4`$. The backgrounds
+$`c+c'`$ is closed. All these lower fields are binary; $`c,c'`$ are the
+point-fermion occupations of the [4+1D formulas](FOUR_DIMENSIONAL.md). The backgrounds
 $`\omega_2,s_1`$ are closed and remain fixed.
 
 The complete current product has the exact specialization
@@ -142,12 +140,14 @@ $`(0,u,c'+T)`$. Its phase is
 &-\frac12\left[
 c'\cup_3(c'+T)+T\cup_3T
 +k\cup_4(c'+T)+T\cup_4k
-\right].
+\right]\\
+&-\frac12\left[
+S\cup_3(c'+T)+(c'+T)\cup_3S+S\cup_3S+k\cup_4S
+\right],\qquad S=u\cup_2u.
 \end{aligned}
 ```
 
-This expression has six half-valued cup terms after distributing the
-two occurrences of $`c'+T`$. The Majorana diagonal is the same
+The last bracket comes from the pairing reference $`R_4=u\cup_2u`$. The Majorana diagonal is the same
 fully specified operation as in the original stacking law.
 This chooses the inverse representative for which $`Y*Y^{-1}`$ is the
 zero cochain state. It includes the lower carry as well as the phase
@@ -161,13 +161,16 @@ For $`X*Y^{-1}`$, the direct product adds
 &\quad+\frac12\left[
 c\cup_3(c'+T)+(c+c'+T)\cup_3T
 +k\cup_4(c'+T)+(c+c'+T)\cup_4k
+\right]\\
+&\quad+\frac12\left[
+S\cup_3(c'+T)+(c'+T)\cup_3S+S\cup_3S+k\cup_4S
 \right].
 \end{aligned}
 ```
 
-The half-valued bracket contains ten cup terms after distributing its
-displayed sums. Subtracting the inverse correction cancels the two
-identical Majorana diagonals as whole phase cochains. Bilinearity
+Subtracting the inverse correction cancels the two
+identical Majorana diagonals as whole phase cochains, and the two identical
+reference brackets. Bilinearity
 over $`\mathbb Z_2`$ cancels every $`T`$ term and leaves
 
 ```math
@@ -211,7 +214,7 @@ c_{\mathrm{bulk}}&=
 \mathrm{Sq}^2n_2
 +\omega_2n_2+s_1\mathrm{Sq}^1n_2,\\
 c'_{\mathrm{bulk}}&=\mathcal{𝒪}_4^\psi,\qquad
-c_{\mathrm{bulk}}+c'_{\mathrm{bulk}}=d\widetilde{n}_3.
+c_{\mathrm{bulk}}+c'_{\mathrm{bulk}}=(dn_3+dR_3).
 \end{aligned}
 ```
 
@@ -219,8 +222,8 @@ Its entire additional phase is consequently
 
 ```math
 \frac12\left[
-d\widetilde{n}_3\cup_3\mathcal{𝒪}_4^\psi
-+d\widetilde{n}_3\cup_4\mathcal{𝒪}_5^\gamma(dn_2)
+(dn_3+dR_3)\cup_3\mathcal{𝒪}_4^\psi
++(dn_3+dR_3)\cup_4\mathcal{𝒪}_5^\gamma(dn_2)
 \right].
 ```
 
@@ -233,10 +236,10 @@ of the specified pure-layer bulk maps.
 
 The complete phases of the pure-layer bulk maps are evaluated on their
 stated domains before this additional product correction is applied.
-Here $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$ is the explicit
-[geometric-reference conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
-Thus the bulk sum is $`d\widetilde{n}_3`$, not the current point occupation $`dn_3`$.
-The boundary product also receives the face-reference phase on that page.
+Here $`R_3=n_2\cup_1n_2`$ is the pairing reference of the
+[3+1D formulas](THREE_DIMENSIONAL.md). The bulk fields are the compact
+parities, so their sum is $`dn_3+dR_3`$ rather than the point-occupation
+differential $`dn_3`$.
 
 ## Transporting representatives together
 

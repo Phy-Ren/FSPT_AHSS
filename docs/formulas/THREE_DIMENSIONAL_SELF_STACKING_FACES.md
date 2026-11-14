@@ -4,7 +4,13 @@
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
-This is a retained coefficient/derivation kernel. Its CF input `n3` means the current $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$; its product uses the previous output $`\widetilde{N}_3+d\mathcal B_2`$. The current formulas apply the explicit [paired lower and phase conversion](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md). On the finite-root diagonal the previous output is $`N_3+dn_2`$. Frozen coefficient values are unchanged.
+**Code documentation.** This page documents how the numerical code in
+`formulas/publication_source/full3` generates part of the
+[3+1D formulas](THREE_DIMENSIONAL.md). The code evaluates its construction with
+the complex-fermion input $`n_3+R_3`$, $`R_3=n_2\cup_1n_2`$, on each state and
+with the stacked output $`N_3+R_3[N_2]+d\mathcal B_2`$; within this page
+$`n_3`$, $`n'_3`$ and $`N_3`$ denote these code arguments. The change to the
+bare formulas is stated in [From the code to the 3+1D formulas](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 
 The input has $`n_1=s_1`$ and satisfies the complete lower equations. Each linked row is one explicitly specified binary product of physical cochain faces on $`(01234)`$. Integer output $`2s_1`$ has not yet been gauged away. No summand or background coefficient is hidden.
 

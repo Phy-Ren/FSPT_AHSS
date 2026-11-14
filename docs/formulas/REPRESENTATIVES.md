@@ -4,109 +4,7 @@
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
-All changes here act on the source and stacking correction together.
-
-## 3+1D: physical terminal formulas
-
-The current guide uses the [geometric pairing coordinate](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), including its lower-field map, inverse, and finite output-face phase. The [paired terminal phase map](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md) is a retained construction step evaluated on the shifted complex-fermion inputs. Both maps are required; the current lower product is the compact geometric formula.
-
-## 3+1D: complex-fermion coordinate of the retained construction
-
-
-
-<a id="eq-t3d"></a>
-
-**(T3D)**
-
-```math
-n_3\longmapsto n_3+\mathcal B_3^{\mathrm{ref}}({n_{1}},{n_2}),\qquad
-\mathcal B_3^{\mathrm{ref}}=({[n_{1}]_2}+{s_1}){n_2}+{\widetilde{\omega}_2}{[\lfloor n_{1}/2\rfloor]_2}+[{\widetilde{\omega}_2}\cup_1({[n_{1}]_2}+{s_1})]{[n_{1}]_2}.
-```
-
-The retained construction evaluates its complex-fermion argument after
-this map; its stacking correction changes at the same time:
-
-```math
-\mathcal{ℰ}_3\longmapsto\mathcal{ℰ}_3+\Delta\mathcal B_3^{\mathrm{ref}}.
-```
-
-The obstruction is transported by the same substitution and $`d\mathcal B_3^{\mathrm{ref}}`$.
-In particular, $`n_1=0`$ alone does not remove this coordinate change when
-$`s_1\ne0`$.
-
-## 4+1D: source coordinate of the retained construction
-
-The 4+1D terminal maps below act on the terminal-layer occupation
-$`\widetilde{n}_4=n_4+R_4`$ of the [4+1D formulas](FOUR_DIMENSIONAL.md#terminal-occupation-4d).
-They are changes of representative within one phase convention.
-
-
-
-Before the operator reordering below, the source of the retained construction is obtained from the displayed $`\mathcal O_6`$ as
-
-
-<a id="eq-t4e"></a>
-
-**(T4E)**
-
-```math
-\mathcal O_6-d_{s_1}B_5^{\mathrm{ref}}-\frac1{12}n_2^3,
-\qquad B_5^{\mathrm{ref}}=\frac14{\beta^-n_3}\cup_3{\beta_4^\psi}.
-```
-
-It is written with the displayed obstruction and needs no additional symbol.
-The corresponding terminal redefinition contributes $`\Delta B_5^{\mathrm{ref}}`$ to the stacking correction.
-The cubic term in (T4E) is retained separately in the later formulas; it is not a coboundary.
-
-<a id="operator-phase-4d"></a>
-
-## 4+1D: preceding operator phase
-
-The first step from the supplied full terminal formula is the operator-ordering change
-
-```math
-\nu_5\longmapsto\nu_5+\frac12 \widetilde{n}_4\cup_4d\widetilde{n}_4.
-```
-
-The inverse subtracts the same half-valued cochain.
-The obstruction function and stacking twister change together:
-
-```math
-\begin{aligned}
-\mathcal O_6
- &\longmapsto\mathcal O_6
-   +d_{s_1}\left(\frac12\widetilde{n}_4\cup_4d\widetilde{n}_4\right),\\
-\mathcal E_5
- &\longmapsto\mathcal E_5
-   +\frac12\left[\widetilde{N}_4\cup_4d\widetilde{N}_4-\widetilde{n}_4\cup_4d\widetilde{n}_4
-                                  -\widetilde{n}'_4\cup_4d\widetilde{n}'_4\right].
-\end{aligned}
-```
-
-The actual stacked output is used in the last line. This yields the displayed c, c-gamma, and c-psi operator factors. The other terms are regrouped with all integer carries retained. This operator-ordering step introduces no additional output coboundary.
-
-<a id="compact-majorana-phase-4d"></a>
-
-## 4+1D: current compact Majorana phase
-
-The guide then applies the single [explicit phase change](FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-$`\nu_5\mapsto\nu_5-B_5[n_3,\widetilde{n}_4]`$.
-Its source changes by $`-d_{s_1}B_5`$ and its product by $`-\Delta B_5`$,
-evaluated on the same actual lower stacking output. The inverse adds
-$`B_5`$; every lower decoration and lower product is fixed.
-
-The [general](FOUR_DIMENSIONAL.md#stacking-4d) and
-[self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md) formulas include this
-change in each of the three lower physical contributions. The source,
-product, and their zero-p+ip restrictions therefore use one phase
-coordinate. The output coboundary already documented below precedes this
-step and remains included; no new output gauge is imposed here.
-
-## Terminal phase changes
-
-
-
-For fixed lower decorations, solve each obstruction modulo the permitted
+For fixed lower decorations, the obstruction is solved modulo the permitted
 gauge and lower-layer changes. A nonzero cochain may be exact; only a
 nontrivial final obstruction class rules out the decoration. Stack accepted
 representatives using the paired product and reduce by the same equivalences.
@@ -121,14 +19,8 @@ together:
 ```
 
 A change of a lower decoration must also be substituted into every higher
-source and product. These coordinate rules concern the full equations,
+source and product. These rules concern the full equations,
 not only the abstract group obtained in an example.
 
 The separate [programmer translation](../../formulas/CODE_NOTATION.md) records
 how the formulas correspond to existing variables and compiled operations.
-
-Before the compact-Majorana coordinate change, the terminal 4+1D Majorana contribution uses the
-[explicit output coboundary](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md).
-It changes the output cochain by an exact phase and leaves the obstruction
-and every other designated contribution unchanged. Its inverse adds the
-same displayed coboundary.

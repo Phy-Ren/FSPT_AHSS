@@ -52,7 +52,7 @@ Majorana carry is fixed by the lower obstruction:
 
 ```math
 d\beta_4^\gamma
- =-\beta\big(\widetilde{\mathcal{𝒪}}_4[n_2]\big),
+ =-\beta\big(\mathcal{𝒪}_4[n_2]\big),
 \qquad \beta_4^\gamma=\beta^-n_3.
 ```
 
@@ -73,7 +73,7 @@ identity. Thus the quarter-valued self-stacking term can be written
 
 ```math
 \frac14d\beta_4^\gamma\cup_4\beta_4^\gamma
- =-\frac14\beta\big(\widetilde{\mathcal{𝒪}}_4[n_2]\big)
+ =-\frac14\beta\big(\mathcal{𝒪}_4[n_2]\big)
                  \cup_4\beta_4^\gamma.
 ```
 

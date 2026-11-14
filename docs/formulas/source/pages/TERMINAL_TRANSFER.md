@@ -2,9 +2,9 @@
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
-This appendix retains the construction of the binary five-cochain $`Z_5`$ in the supplied 4+1D product. Its complete physical-face expansion and three physical parts are now given in the [coefficient appendix](FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md). The [current full stacking formula](FOUR_DIMENSIONAL.md#eq-t4c) also applies the paired complex-fermion phase map stated in [Representatives](REPRESENTATIVES.md#operator-phase-4d). The inputs are
+This appendix constructs the binary five-cochain $`Z_5`$ of the 4+1D product. Its complete physical-face expansion and three physical parts are given in the [coefficient appendix](FOUR_DIMENSIONAL_BINARY_COEFFICIENTS.md). The inputs are
 $`(n_2,n_3)`$ and $`(n'_2,n'_3)`$, with common backgrounds
-$`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,N_3`$ are the output. Binary reductions and tildes have the same meanings as in the guide. In integer
+$`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,N_3`$ are the output. Binary reductions have the same meaning as in the guide. In integer
 arithmetic each binary field supplies its canonical value $`0,1`$; a whole
 composite binary expression is reduced first whenever it is enclosed in $`[\cdot]_2`$.
 
@@ -87,7 +87,7 @@ Inside the final integer braces, $`d_{s_1}V_5`$ differentiates the
 canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
 inputs, including $`\beta_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The reduction modulo two of
 the polynomial following the minus sign is taken **before** its signed
-stacking difference. The free complex-fermion solutions $`\widetilde{n}_4,\widetilde{n}'_4`$ do not
+stacking difference. The complex-fermion decorations $`n_4,n'_4`$ do not
 enter this kernel.
 
 ## Shared-background coordinates

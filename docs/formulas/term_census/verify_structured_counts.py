@@ -56,16 +56,15 @@ def main():
         records[record['dimension'], record['law'], record['origin']] = record
     assert dict(totals) == ledger['totals'], (dict(totals), ledger['totals'])
 
-    # The fixed map's finite word list and explicit terms establish 45+1.
+    # The word list and explicit terms of B_5[n_3] establish 44+1.
     phase_page = (DOCS / 'source/pages/FOUR_DIMENSIONAL_MAJORANA_PHASE.md').read_text()
     words = re.search(r'```text\n(.*?)\n```', phase_page, re.S).group(1).split()
     assert len(words) == len(set(words)) == 32
     phase = (EQUATIONS / 'four-dimensional-majorana-phase--phase-change--1.tex').read_text()
     assert len(re.findall(r'\\nolimits_\{\d+\}', phase)) == 10
-    assert all(term in phase for term in (r'n_3\cup_2', r's_1\widetilde{n}_4', r'n_3\cup_1[\beta\omega_2]_2'))
+    assert all(term in phase for term in (r'n_3\cup_2', r'n_3\cup_1[\beta\omega_2]_2'))
     assert r'\frac14n_3\cup_1n_3' in phase
-    assert 32 + 10 + 3 == 45
-    zero_half, zero_quarter = 44, 1
+    zero_half, zero_quarter = 32 + 10 + 2, 1
     general = {
         'gamma': ('four-dimensional--majorana-decoration--33.tex', 3),
         'gammapsi': ('four-dimensional--majorana-and-p-ip-decoration--36.tex', 3),
@@ -73,7 +72,7 @@ def main():
     }
     for origin, (filename, expected_calls) in general.items():
         text = (EQUATIONS / filename).read_text()
-        calls = text.count('R_5[')
+        calls = text.count('B_5[')
         assert calls == expected_calls, filename
         assert r'-s_1\mathcal{ℰ}_4^' in text, filename
         expected = (zero_half + zero_quarter) * calls + 1
@@ -85,7 +84,7 @@ def main():
     }
     for origin, (filename, expected_calls, other) in diagonal.items():
         text = (EQUATIONS / filename).read_text()
-        calls = text.count('R_5[')
+        calls = text.count('B_5[')
         assert calls == expected_calls, filename
         assert r'-s_1\mathcal{ℰ}_4^' in text, filename
         assert ledger['current_majorana_phase_transport']['self_additional_by_origin'][origin] == 45 * calls + other
@@ -99,7 +98,7 @@ def main():
     gamma = records['4+1D', 'E5', 'gamma']
     assert gamma['total_outer'] - 4 + sum(gamma['protected_lift_interior_counts']) == gamma['total']
     terminal = ledger['self_stacking']['terminal']['4+1D_full']
-    assert sum(terminal['origins_outer']) == terminal['total_outer'] == 4407636
+    assert sum(terminal['origins_outer']) == terminal['total_outer'] == 4407643
     assert terminal['total_outer'] - 4 + sum(terminal['gamma_lift_interiors']) == terminal['total_with_gamma_lift_wrappers_replaced']
     print(json.dumps({'status': 'PASS', 'metric': 'uncollected displayed occurrences',
                       'O6': totals['4+1D O6'], 'E5': totals['4+1D E5'],

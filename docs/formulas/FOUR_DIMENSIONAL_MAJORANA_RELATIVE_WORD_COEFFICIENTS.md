@@ -6,7 +6,7 @@
 
 The index set $`\mathcal I_6^{\gamma\psi}`$ in the [bosonic obstruction](FOUR_DIMENSIONAL.md#eq-t4) consists of the following blocks. Each displayed word is evaluated once on its ordered argument tuple, with coefficient one modulo two.
 
-There are **1,897 ordinary MS terms**. The cochains $`n_3`$ and $`dn_3`$ have degrees three and four; the latter is the already defined lower obstruction $`\widetilde{\mathcal{𝒪}}_4`$. The backgrounds are closed. The complete finite sum is a relative correction: it vanishes when $`dn_3=0`$, although this cancellation need not occur within each individual word.
+There are **1,897 ordinary MS terms**. The cochains $`n_3`$ and $`dn_3`$ have degrees three and four; the latter is the already defined lower obstruction $`\mathcal{𝒪}_4`$. The backgrounds are closed. The complete finite sum is a relative correction: it vanishes when $`dn_3=0`$, although this cancellation need not occur within each individual word.
 
 The [phase construction](FOUR_DIMENSIONAL_MAJORANA_PHASE.md) explains why this correction belongs to the continuation of the Majorana phase after the integer layer is turned on. Physical origin is not inferred by inspecting the variables in one expanded summand. This count is exact, not a claim of minimality.
 

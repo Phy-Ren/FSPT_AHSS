@@ -11,12 +11,8 @@ satisfying the [closed obstruction equation](MAJORANA_AND_ENDPOINTS.md#eq-m3-4d)
 $`n_4`$ is the physical point-fermion occupation used in the
 [closed-Majorana 4+1D formulas](MAJORANA_AND_ENDPOINTS.md#majorana-4d).
 All stacking corrections below have identical complete inputs. They are the
-equal-input specialization of those closed laws. They have the form of the
-zero-p+ip restriction of the [complete self-stacking formulas](FOUR_DIMENSIONAL_SELF_STACKING.md),
-written in the physical occupation $`n_4`$, where the quarter-valued Majorana
-terms carry the opposite sign. The two forms are related by the
-[bridging identity](FOUR_DIMENSIONAL.md#bridging-identity-4d); on equal inputs
-the polarization of $`\tfrac12n_4\cup_3\mathrm{Sq}^1n_3`$ vanishes.
+equal-input specialization of those closed laws, and equally the
+zero-p+ip restriction of the [complete self-stacking formulas](FOUR_DIMENSIONAL_SELF_STACKING.md).
 
 ## 1. p+ip stacking
 
@@ -59,14 +55,18 @@ N_4=\mathcal{ℰ}_4^\gamma[n_3,n_3]
 ### Complex fermions and Majorana decoration
 
 ```math
-\mathcal{ℰ}_5^{c\gamma}=\frac12\,\mathcal{𝒪}_5^\gamma[n_3]\cup_4n_4.
+\begin{aligned}
+\mathcal{ℰ}_5^{c\gamma}=\frac12\big[&\mathcal{𝒪}_5^\gamma[n_3]\cup_4n_4
+ +n_4\cup_3R_4+R_4\cup_3n_4+R_4\cup_3R_4\\
+ &+\mathcal{𝒪}_5^\gamma[n_3]\cup_4R_4\big],\qquad R_4=n_3\cup_2n_3.
+\end{aligned}
 ```
 
-The output term of the general formula vanishes because $`N_3=0`$, and the mixed input source is zero.
+The output terms of the general formula vanish because $`N_3=0`$ and $`dN_4=0`$.
 
 ### Majorana decoration
 
-This is the shared self-stacking expression, written in the physical occupation $`n_4`$, with $`n_2=0`$,
+This is the shared self-stacking expression with $`n_2=0`$,
 $`dn_3=0`$, and $`\beta_4^\gamma=\beta n_3`$. The terms
 containing $`dn_3`$ or $`\beta(\mathcal{𝒪}_4[n_2])`$
 vanish and are omitted:
@@ -78,7 +78,7 @@ vanish and are omitted:
  \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
  \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)
  +n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma\Big]\\
-&-\frac14\Big[
+&+\frac14\Big[
  \beta n_3\cup_3\beta n_3
  +n_3\cup_1n_3-\omega_2n_3\\
 &\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
@@ -87,18 +87,13 @@ vanish and are omitted:
 \end{aligned}
 ```
 
-The phase convention is that of the closed obstruction, with quarter-valued
-bracket $`-1/4`$.
-
-## Specialization of the common phase change
+## Specialization of the phase convention
 
 The full lower output here has $`N_3=0`$ and
-$`N_4=\mathcal{ℰ}_4^\gamma`$. The common phase map consequently gives
-$`-\Delta B_5=\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$; this
+$`N_4=\mathcal{ℰ}_4^\gamma`$. The $`B_5`$ terms of the phase convention
+consequently give $`\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$; this
 half-valued cochain is unchanged by the overall sign.
 Those two terms already appear in the Majorana formula above.
-No separate diagonal representative or additional output gauge is chosen.
-The existing output coboundary is part of the shared general formula.
 
 All integer lifts and Bocksteins have their common meanings. In particular
 $`\beta n_3=dn_3/2`$ uses the integer differential of the binary cocycle,

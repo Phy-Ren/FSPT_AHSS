@@ -1,4 +1,4 @@
-# Cartan–Adem Majorana phase in 4+1D
+# The Majorana phase convention in 4+1D
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
@@ -7,24 +7,22 @@ three-cochain input. Turning on the integer decoration changes its lower
 differential and introduces the accompanying mixed contribution; it does
 not require a different intrinsic Majorana formula.
 
-The current obstruction and stacking correction use the same phase
-coordinate. The following fixed change relates them to the preceding
-coordinate without changing the lower decorations:
+The obstruction and the stacking law use one phase convention. It is
+fixed by the five-cochain $`B_5[n_3]`$ below together with the half term
+$`\tfrac12s_1(n_4+R_4)`$. The obstruction contains their differential:
+the relative Majorana–p+ip terms and the term $`s_1\mathcal{𝒪}_5^\psi/2`$.
+The stacking law contains their values on the output minus the values on
+the two inputs: the three $`B_5`$ evaluations and the terms
+$`-s_1\mathcal{ℰ}_4/2`$. The $`B_5`$ evaluations use the actual lower
+output, which contains the integer-layer twister; it is not simply
+$`n_3+n'_3`$.
 
-{{equation:four-dimensional-majorana-phase--paired-transport--3}}
-
-Here $`\Delta B_5`$ is evaluated on the actual lower stacking output and
-then subtracts its values on the two inputs. In particular, the
-Majorana output contains the integer-layer twister; it is not simply
-$`n_3+n'_3`$. This transport is invertible by adding the same
-five-cochain. It is applied to the source and product together.
-
-## The fixed change of phase
+## The five-cochain $`B_5`$
 
 {{equation:four-dimensional-majorana-phase--phase-change--1}}
 
 The finite sum has **32 MS terms**. The full half-valued bracket has
-**45 terms**, and the last integer cup is one additional quarter-valued
+**44 terms**, and the last integer cup is one additional quarter-valued
 term. That quarter cup is formed over the integers from the individual
 binary field values; it is not the lift of a reduced whole cup.
 
@@ -94,19 +92,16 @@ unspecified primitive is needed to define it. Its zero restriction to
 $`dn_3=0`$ follows from the same exact closed-input dictionary.
 Individual terms need not display the differential explicitly.
 
-The term $`s_1\widetilde{n}_4/2`$ in the phase change is essential. Its derivative
-uses the complete lower equation for $`d\widetilde{n}_4`$, so it changes both the
-Majorana continuation and the pure integer contribution. The latter
-therefore contains $`s_1\mathcal{𝒪}_5^\psi/2`$ in addition to $`y_6/2`$.
-The fixed polynomial $`y_6`$ is unchanged. Likewise the terminal product
-retains the contribution of the full lower twister through $`\Delta B_5`$.
+The half term $`\tfrac12s_1(n_4+R_4)`$ is essential. Its derivative is
+$`\tfrac12s_1\mathcal{𝒪}_5`$ by the lower equation $`dn_4=\mathcal{𝒪}_5+dR_4`$, so it
+enters both the Majorana continuation and the pure integer contribution. The
+latter therefore contains $`s_1\mathcal{𝒪}_5^\psi/2`$ in addition to $`y_6/2`$.
 
 The [exact verification receipt](data/four_dimensional_majorana_relative_verification.json)
 checks every coefficient modulo four on 56 independent simplex variables,
 with arbitrary open Majorana input and both closed backgrounds, and gives
 zero residual. The signed quarter cups and complete binary lifts are kept
-before reduction. This verifies a representative change; it does not infer
-a new physical normalization from cochain closure.
+before reduction. It does not infer a physical normalization from cochain closure.
 
 The standalone [coefficient verifier](../../scripts/verify_majorana_phase_transport.py)
 uses only the retained public cochain operations and coefficient files.
@@ -118,8 +113,7 @@ classification is used in these checks.
 
 ## Comparison with the microscopic phase tables
 
-The cochain $`B_5`$ above is a change of representative between two
-cochain formulas. It is distinct from the local phase-reference cochain
+The cochain $`B_5`$ above is distinct from the local phase-reference cochain
 $`B_5^\gamma`$ of this section.
 
 With the moves and insertions of the
@@ -152,9 +146,5 @@ order. With the root complex-fermion twisters,
 $`d_{s_1}(\mathcal{ℰ}^c+\mathcal{ℰ}^{c\gamma}+\mathcal{ℰ}^\gamma)
 =\mathcal O_6[N]-\mathcal O_6[n]-\mathcal O_6[n']`$ holds pointwise for every one
 of the 8,388,608 stacking rows with general closed $`\omega_2,s_1`$. Each row is
-checked on its own six-simplex. The stacking law of the complete formulas
-(operator coordinate) agrees with this microscopic stacking phase up to
-$`B_5^\gamma[N]-B_5^\gamma[n]-B_5^\gamma[n']+d_{s_1}\sigma_4`$. Here $`\sigma_4`$ is a
-local four-face function of $`n_3,n'_3,n_4,n'_4,\omega_2(012),s_1(01),s_1(02)`$,
-and the agreement holds on all 8,388,608 rows. The microscopic tables
-themselves are not part of this repository.
+checked on its own six-simplex. The microscopic tables themselves are not part
+of this repository.

@@ -8,9 +8,8 @@ This page stacks two identical **complete states**, including the complex-fermio
 completion and bosonic phase. The lower fields obey the obstruction equations
 in [the 3+1D reference](THREE_DIMENSIONAL.md). The background is
 $`\widetilde{\omega}_2=\omega_2+s_1^2`$.
-The formulas use the same phase representative as that reference: the
-terminal phase is written in $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$
-with physical phases.
+The formulas are the general laws of that reference with two equal inputs,
+with $`R_3=n_2\cup_1n_2`$ the pairing reference of the complex fermions.
 
 The terminal formulas below cover $`n_1=0`$ and the canonical signed torsion
 representative $`n_1=s_1`$. These are the two branches required for finite root
@@ -68,12 +67,8 @@ $`\mathrm{Sq}^1n_2+s_1n_2+\mathcal{ℰ}_3^\psi`$,
 with the open-cochain square. The changed cup order is essential.
 The diagonal Cartan term vanishes because the input parity is closed.
 
-The phase uses the explicitly defined $`\widetilde{n}_3=n_3+n_2\cup_1n_2`$.
-For both finite-root branches below, $`\mathcal B_2=n_2`$ and
-$`N_2\cup_1N_2=0`$. The previous phase output is therefore
-$`N_3+dn_2`$. The point-fermion phase includes the full finite
-face-conversion term; all other blocks use the transported inputs and output.
-These are the current formulas, not an instruction to retain the old product.
+For both finite-root branches below, the pair reference is $`\mathcal B_2=n_2`$ and
+$`N_2\cup_1N_2=0`$.
 
 ## 4. Bosonic self-stacking with zero p+ip input
 
@@ -97,17 +92,12 @@ Here $`dn_2=0`$ and $`dn_3=\mathcal{𝒪}_4^\gamma[n_2]`$. The three physical
 contributions are
 
 ```math
-\begin{aligned}
-\mathcal{ℰ}_4^c=\frac12\Big[&\widetilde{n}_3\cup_2\widetilde{n}_3
- +\omega_2n_2+n_2^2
- +dn_2\cup_1n_2\\
- &+(N_3+dn_2)\cup_2dn_2\Big].
-\end{aligned}
+\mathcal{ℰ}_4^c=\frac12n_3\cup_2n_3.
 ```
 
 ```math
 \mathcal{ℰ}_{4}^{c\gamma}
- =\frac12\mathcal{𝒪}_4^\gamma[n_2]\cup_3\widetilde{n}_3.
+ =\frac12\mathcal{𝒪}_4^\gamma[n_2]\cup_3n_3.
 ```
 
 ```math
@@ -117,7 +107,7 @@ contributions are
  (\omega_2\cup_1s_1)n_2
  +[\beta n_2]_2\cup_2(s_1n_2)
  +s_1(N_3+dn_2)+s_1\big[(s_1n_2)\cup_2n_2\big]+n_2^2\Big]\\
-&-\frac14\Big[
+&+\frac14\Big[
  (\beta n_2)\cup_2(\beta n_2)
  +s_1[\beta n_2]_2
  -[\mathcal{𝒪}_4^\gamma[n_2]]_2\Big].
@@ -125,12 +115,11 @@ contributions are
 ```
 
 On this closed branch the last two derivative terms of the point-fermion block vanish.
-The complete phase has **twelve terms: nine half terms and three quarter terms**,
-retaining the defined shifted coordinate, lower output and obstruction.
+The complete phase has **seven half terms and three quarter terms**,
+retaining the defined lower output and obstruction.
 The quarter-valued obstruction is the canonical integer lift of its
 **whole binary value**. It must not be distributed into separately lifted
-summands. The earlier ten-term kernel is retained as a fixed input to the coordinate transport;
-[its self-contained coefficient proof](coefficients/verify_three_dimensional_majorana_self_stacking.py)
+summands. The [coefficient proof](coefficients/verify_three_dimensional_majorana_self_stacking.py)
 also checks the complex-fermion completion.
 
 ## 5. Bosonic self-stacking of the canonical p+ip torsion root
@@ -171,27 +160,18 @@ The six labels retain their fermionic exchange origins. The point-fermion block 
 ### Complex fermions
 
 ```math
-\begin{aligned}
-\mathcal{ℰ}_4^c=\frac12\Big[&\widetilde{n}_3\cup_2\widetilde{n}_3
- +\omega_2n_2+n_2^2
- +dn_2\cup_1n_2\\
- &+(N_3+dn_2)\cup_2dn_2\Big].
-\end{aligned}
+\mathcal{ℰ}_4^c=\frac12n_3\cup_2n_3.
 ```
 
 ### Complex fermions and Majorana decoration
 
 ```math
-\begin{aligned}
 \mathcal{ℰ}_{4}^{c\gamma}
-=\frac12\Big[&
- (\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+d(n_2\cup_1n_2))[n_2]\cup_3\widetilde{n}_3\\
-&+(N_3+dn_2)\cup_3\mathcal{𝒪}_4^\gamma[s_1^2]
-\Big].
-\end{aligned}
+=\frac12\Big[
+ (\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[n_2]\cup_3n_3
+ +N_3\cup_3\mathcal{𝒪}_4^\gamma[s_1^2]\Big].
 ```
 
-The bracket includes $`d(n_2\cup_1n_2)`$, and its output is $`N_3+dn_2`$.
 The output mixed part vanishes exactly because $`d(s_1^2)=0`$, so
 $`\mathcal{𝒪}_4^{\gamma\psi}[s_1^2]=0`$. The individual lower differential
 representatives remain defined structures.
@@ -204,17 +184,19 @@ On the ordered four-simplex,
 \begin{aligned}
 \mathcal{ℰ}_{4}^{c\psi}(01234)
 ={}&\frac12\Big[
- \mathcal{𝒪}_4^\psi[s_1]\cup_3\widetilde{n}_3
- +(N_3+dn_2)\cup_3\mathcal{𝒪}_4^\psi[2s_1]\Big](01234)\\
-&+\frac12(d\widetilde{n}_3)(01234)\Big[
+ \mathcal{𝒪}_4^\psi[s_1]\cup_3n_3
+ +N_3\cup_3\mathcal{𝒪}_4^\psi[2s_1]
+ +R_3\cup_3dn_3+dn_3\cup_3R_3+dR_3\cup_3R_3\\
+&\qquad+(N_3+dn_2)\cup_2dn_2+dn_2\cup_3dN_3+dn_2\cup_2dn_2+dn_2\cup_1n_2\Big](01234)\\
+&+\frac12(dn_3+dR_3)(01234)\Big[
  n_2(123)(dn_2)(0134)\\
 &\hspace{35mm}+n_2(014)(dn_2)(1234)
- +n_2(234)(dn_2)(0124)\Big].
+ +n_2(234)(dn_2)(0124)\Big],\qquad R_3=n_2\cup_1n_2.
 \end{aligned}
 ```
 
-This is the transported six-term expression; the two output terms retain $`N_3+dn_2`$. The three face products equal the
-entire 132-word open-Majorana correction on identical inputs. This is an
+The three face products equal the
+entire 132-word complex-fermion exchange on identical inputs. This is an
 exact cochain identity; the two other open-Majorana product terms vanish
 because their complex-fermion argument is $`n_3+n_3=0`$.
 The output evaluation $`\mathcal{𝒪}_4^\psi[2s_1]`$ retains the second digit:
@@ -239,8 +221,8 @@ $`[\lfloor 2s_1/2\rfloor]_2=s_1`$.
  +(n_2\cup_1n_2)\cup_2(s_1n_2)
  +s_1^2n_2
  +s_1\big[(s_1n_2)\cup_2n_2\big]
- \Big](01234)\\
-&-\frac14\Big[
+ +s_1(n_2\cup_2dn_2)\Big](01234)\\
+&+\frac14\Big[
  (\beta^-n_2)\cup_2(\beta^-n_2)
  -s_1[\beta^-n_2]_2\\
 &\hspace{13mm}
@@ -250,10 +232,10 @@ $`[\lfloor 2s_1/2\rfloor]_2=s_1`$.
 \end{aligned}
 ```
 
-This is **13 outer terms: ten half terms and three quarter terms**,
+This is **14 outer terms: eleven half terms and three quarter terms**,
 valid also for an arbitrary open $`n_2`$. The whole lift contains
 **two terms**, retaining the existing lower obstruction. Replacing its
-wrapper by those two interior terms in the count gives **14 leaves**.
+wrapper by those two interior terms in the count gives **15 leaves**.
 The [lower-obstruction carry identity](THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md)
 rewrites six terms as three with exact equality modulo one.
 The first face product is the exact diagonal of seven intrinsic Majorana
@@ -270,7 +252,8 @@ in its first term.
 &+\frac12\Big[
  \beta_3\cup_2dn_2
  +d_{s_1}(\beta^-n_2\cup_2n_2)
- -\beta^-n_2\cup_1n_2\Big]\\
+ -\beta^-n_2\cup_1n_2
+ +d_{s_1}(n_2\cup_1n_2+n_2\cup_2dn_2)\Big]\\
 &-\frac14\Big[
  -\beta^-n_2\cup_2\beta_3^\psi
  -\beta_3^\psi\cup_2\beta^-n_2
@@ -287,8 +270,8 @@ in its first term.
 The finite sum contains **1,130 explicitly listed physical-face products**
 in the [coefficient table](THREE_DIMENSIONAL_SELF_STACKING_FACES.md#majoranapip-half-contribution).
 It includes the entire half-valued contribution. The three ordinary
-half terms and nine distributed quarter terms are additional, giving
-**1,142 terms** in this contribution. Every differential in these fractional
+half terms, the two terms of the displayed coboundary, and nine distributed
+quarter terms are additional, giving **1,144 terms** in this contribution. Every differential in these fractional
 brackets acts on the indicated integer cochain; $`[\cdot]_2`$ selects a
 binary value before its integer lift.
 
@@ -338,26 +321,23 @@ canonical integer lift.
 
 | Physical contribution | Explicit terms |
 |---|---:|
-| c | 6 |
-| c-gamma | 5 |
-| c-psi | 6 |
-| gamma | 13 |
-| gamma-psi | 1,142 |
+| c | 1 |
+| c-gamma | 3 |
+| c-psi | 16 |
+| gamma | 14 |
+| gamma-psi | 1,144 |
 | psi | 250 |
-| Complete canonical torsion self-twister | **1,422** |
+| Complete canonical torsion self-twister | **1,428** |
 
 The count retains the already defined lower differential representatives,
 Bocksteins and integer carries, while counting every finite coefficient
 product separately. The Majorana whole lift has two interior terms;
-counting its interior gives 1,423 leaves instead of 1,422 outer terms.
+counting its interior gives 1,429 leaves instead of 1,428 outer terms.
 It is not a claim of minimality.
-The [standalone exact verifier](coefficients/verify_three_dimensional_geometric_self_stacking.py)
-checks every physical sector and the total against the explicitly transported frozen baseline
-on all 20 independent valid-tower bits. All seven residuals are zero.
-The [additional lift-identity verifier](coefficients/verify_three_dimensional_open_gamma_lift_reduction.py)
-checks the 13-term Majorana expression against that same baseline.
-The fully collected scalar phase has 2,742 coefficients modulo 16; that
-supplementary coefficient count uses a different expansion boundary.
+The [bare-variable verifier](coefficients/verify_three_dimensional_bare_formulas.py)
+checks the complex-fermion contributions against the general law with equal
+inputs, and the [lift-identity verifier](coefficients/verify_three_dimensional_open_gamma_lift_reduction.py)
+checks the carry identity used in the Majorana expression.
 
 These are complete **self-stacking twisters before gauge reduction**.
 To obtain a root relation, subsequently remove $`N_1=2s_1`$ with the complete
