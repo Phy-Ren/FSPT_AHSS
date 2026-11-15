@@ -565,7 +565,7 @@ the binary complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
 Here $`n_4`$ is the physical point-fermion occupation of the original
 pairing arrows. These are the formulas of the complete
 [4+1D tower](FOUR_DIMENSIONAL.md) at $`n_2=0`$, where the pairing
-reference is $`R_4=n_3\cup_2n_3`$ with $`dR_4=0`$. The Majorana
+reference is $`B_4=n_3\cup_2n_3`$ with $`dB_4=0`$. The Majorana
 contribution has the lattice sign of the heptagon loop: its quarter-valued
 bracket is $`-1/4`$.
 
@@ -720,8 +720,8 @@ There is no stacking correction in this layer.
 **(M1c, 4+1D)**
 
 ```math
-N_4=n_4+n'_4+\mathcal{ℰ}_4+\Delta R_4,\qquad
-\mathcal{ℰ}_4=\mathcal{ℰ}^{\gamma}_4,\qquad R_4=n_3\cup_2n_3.
+N_4=n_4+n'_4+\mathcal{ℰ}_4+\Delta B_4,\qquad
+\mathcal{ℰ}_4=\mathcal{ℰ}^{\gamma}_4,\qquad B_4=n_3\cup_2n_3.
 ```
 
 ##### Majorana contribution
@@ -777,9 +777,9 @@ $`\Delta`$ takes the value on the output minus the values on the two inputs:
 \mathcal{ℰ}^{c\gamma}_5
  =\frac12\big[&dn_4\cup_4n'_4+N_4\cup_4dN_4
  +n_4\cup_4dn_4+n'_4\cup_4dn'_4\\
- &+n_4\cup_3R'_4+R_4\cup_3n'_4+R_4\cup_3R'_4
- +(R_4+R'_4)\cup_3\mathcal{ℰ}_4+dn_4\cup_4R'_4\\
- &+\Delta\big(R_4\cup_4dn_4+n_4\cup_3R_4\big)\big].
+ &+n_4\cup_3R'_4+B_4\cup_3n'_4+B_4\cup_3R'_4
+ +(B_4+R'_4)\cup_3\mathcal{ℰ}_4+dn_4\cup_4R'_4\\
+ &+\Delta\big(B_4\cup_4dn_4+n_4\cup_3B_4\big)\big].
 \end{aligned}
 ```
 

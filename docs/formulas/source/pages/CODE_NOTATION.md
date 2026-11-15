@@ -31,9 +31,9 @@ Their representatives and coordinates are related as follows.
 |---|---|
 | Closed-Majorana programs `majorana_1_*` (2+1D, `fspt/majorana_complete.py`, `fspt/formulas.py`) | Equal. The stacking law contains the lattice term $`-\tfrac14[s_1n_1n'_1]_2`$. |
 | Closed-Majorana programs `majorana_2_*` (3+1D) | Equal; the CF field `c` is the physical occupation $`n_3`$. |
-| Closed-Majorana programs `majorana_3_*` (4+1D) | The obstruction is equal; the CF field `c` is the physical occupation $`n_4`$. The product uses the complex-fermion law $`N_4=n_4+n'_4+\mathcal E_4^\gamma`$, whereas the displayed closed law adds $`\Delta R_4=d(n_3\cup_3n'_3)`$ for $`R_4=n_3\cup_2n_3`$; its phase also differs by the explicit [output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md) and the [phase convention](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_PHASE.md). |
-| Publication programs, 4+1D (`fspt/data/full_formula`, compiled from `formulas/publication_source`) | Equal after the [maps below](#from-the-code-to-the-formulas); the CF slot `c` holds $`n_4+R_4`$. |
-| Publication programs, 3+1D | Equal after the [maps below](#from-the-code-to-the-formulas); the CF slot `c` holds $`n_3+R_3`$, $`R_3=n_2\cup_1n_2`$. The source and product are the parameter integrals of the [finite construction](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md), with the orientation of [(O8)](../docs/formulas/OPERATIONS.md#eq-o8) recorded in the call signs of `lift3_source` and `lift3_product`. |
+| Closed-Majorana programs `majorana_3_*` (4+1D) | The obstruction is equal; the CF field `c` is the physical occupation $`n_4`$. The product uses the complex-fermion law $`N_4=n_4+n'_4+\mathcal E_4^\gamma`$, whereas the displayed closed law adds $`\Delta B_4=d(n_3\cup_3n'_3)`$ for $`B_4=n_3\cup_2n_3`$; its phase also differs by the explicit [output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md) and the [phase convention](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_PHASE.md). |
+| Publication programs, 4+1D (`fspt/data/full_formula`, compiled from `formulas/publication_source`) | Equal after the [maps below](#from-the-code-to-the-formulas); the CF slot `c` holds $`n_4+B_4`$. |
+| Publication programs, 3+1D | Equal after the [maps below](#from-the-code-to-the-formulas); the CF slot `c` holds $`n_3+B_3`$, $`B_3=n_2\cup_1n_2`$. The source and product are the parameter integrals of the [finite construction](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md), with the orientation of [(O8)](../docs/formulas/OPERATIONS.md#eq-o8) recorded in the call signs of `lift3_source` and `lift3_product`. |
 
 No routine of the complete GAP engine computes a 3+1D phase of
 denominator four, eight or sixteen itself: every such value reaches the
@@ -65,8 +65,8 @@ These algebraic reductions do not change a representative; the maps of the next 
 ## From the code to the formulas
 
 The publication kernels evaluate the bosonic layer with the complex-fermion
-argument $`n_3+R_3`$ in 3+1D and $`n_4+R_4`$ in 4+1D, where
-$`R_3=n_2\cup_1n_2`$ and $`R_4`$ is the
+argument $`n_3+B_3`$ in 3+1D and $`n_4+B_4`$ in 4+1D, where
+$`B_3=n_2\cup_1n_2`$ and $`B_4`$ is the
 [pairing reference](../docs/formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#eq-r4).
 The formula pages use the occupations $`n_3,n_4`$ themselves.
 
@@ -75,10 +75,10 @@ The formula pages use the occupations $`n_3,n_4`$ themselves.
 together with the [native phase representative](../docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md)
 of the code. Use `fspt/geometric_reference_3d.py` for the lower fields: its
 `obstruction` and `lower_product` return the displayed $`\mathcal O_4`$ and
-$`\mathcal E_3`$, and `source_arguments` returns the code argument $`n_3+R_3`$.
+$`\mathcal E_3`$, and `source_arguments` returns the code argument $`n_3+B_3`$.
 For the product, compute $`\mathcal B_2`$ on the actual signed inputs; the code
-output is $`N_3+R_3[N_2]+d\mathcal B_2`$. The frozen term-census JSON kernels
-use the key `n_3` for the code argument $`n_3+R_3`$, including in the primed input
+output is $`N_3+B_3[N_2]+d\mathcal B_2`$. The frozen term-census JSON kernels
+use the key `n_3` for the code argument $`n_3+B_3`$, including in the primed input
 and all derivatives.
 
 <a id="eq-t3d"></a>
@@ -94,7 +94,7 @@ and its stacking correction changes at the same time:
 
 The obstruction is transported by the same substitution and $`d\mathcal B_3^{\mathrm{ref}}`$.
 
-**4+1D.** In this paragraph, write $`x=n_4+R_4`$ for the code argument; its
+**4+1D.** In this paragraph, write $`x=n_4+B_4`$ for the code argument; its
 differential is $`\mathcal O_5`$. The source of the code construction is
 
 <a id="eq-t4e"></a>
@@ -108,7 +108,7 @@ not a coboundary. The changes are applied in order:
 1. the operator ordering $`\nu_5\mapsto\nu_5+\tfrac12x\cup_4dx`$;
 2. the [phase convention](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
    $`\nu_5\mapsto\nu_5-B_5[n_3]-\tfrac12s_1x`$;
-3. the occupation change $`\nu_5\mapsto\nu_5-\tfrac12\big[n_4\cup_3R_4+n_4\cup_4dR_4\big]`$.
+3. the occupation change $`\nu_5\mapsto\nu_5-\tfrac12\big[n_4\cup_3B_4+n_4\cup_4dB_4\big]`$.
 
 The [4+1D verifier](../docs/formulas/coefficients/verify_four_dimensional_bare_formulas.py)
 checks the identities behind the third change for arbitrary cochains; the
@@ -130,7 +130,7 @@ with `w,s` in `background`.
 |---|---|---|
 | $`n_{d-2}`$ | `n` | Degree $`d-2`$, signed integers with twist $`s_1`$ |
 | $`c_{d-1}=n_{d-1}+s_1\cup[\lfloor n_{d-2}/2\rfloor]_2`$ | `a` | Degree $`d-1`$, binary Majorana input |
-| $`n_3+R_3`$ in 3+1D; $`n_4+R_4`$ in 4+1D | `c` | Degree $`d`$, binary CF argument of the code |
+| $`n_3+B_3`$ in 3+1D; $`n_4+B_4`$ in 4+1D | `c` | Degree $`d`$, binary CF argument of the code |
 | $`\omega_2`$ | `w` | Degree two, binary extension cocycle |
 | $`s_1`$ | `s` | Degree one, binary antiunitary cocycle |
 
@@ -239,8 +239,8 @@ and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a); the
 | `Zvalue`, `binary_phase` | Evaluation of $`Z_5`$ |
 
 Frozen coefficient files and runtime identifiers keep their own spellings.
-In serialized field labels, `B_3` and `B_4` mean $`\beta_3`$ and
-$`\beta_4`$; bars, digits, primes, and physical superscripts are preserved.
+In serialized field labels, `B_3` and `B_4` mean the carries $`\beta_3`$ and
+$`\beta_4`$, not the cochains $`B_3,B_4`$ of the formulas; bars, digits, primes, and physical superscripts are preserved.
 In particular, `B_4^psi` and `barB4gamma` denote
 $`\beta_4^\psi`$ and $`[\beta_4^\gamma]_2`$. The runtime function
 `R5` evaluates the phase primitive $`B_5`$.
@@ -250,7 +250,7 @@ The following local names refer to parts of the expanded
 
 | Local name | Location in the expanded formula |
 |---|---|
-| Local `H` | The sum of the half-valued physical contributions, including $`\mathrm{Sq}^2x+\omega_2x`$ for the code argument $`x=n_4+R_4`$ |
+| Local `H` | The sum of the half-valued physical contributions, including $`\mathrm{Sq}^2x+\omega_2x`$ for the code argument $`x=n_4+B_4`$ |
 | Local `Q` | All quarter-valued source terms, including the separately displayed subtraction |
 | `cartan_word` | The complete reduced background-and-digit polynomial in that subtraction |
 
@@ -265,8 +265,8 @@ source additionally retains $`n_2^3/12`$.
 ## 3+1D parameter fields
 
 The physical $`3+1`$D fields are $`n_1,n_2,n_3`$.
-The code parameter construction takes $`n_3+R_3`$
-in its CF slot and the product output $`N_3+R_3[N_2]+d\mathcal B_2`$.
+The code parameter construction takes $`n_3+B_3`$
+in its CF slot and the product output $`N_3+B_3[N_2]+d\mathcal B_2`$.
 Its raised fields are defined in
 [T3a–T3c](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3b):
 
@@ -411,7 +411,7 @@ The reader formulas use $`\beta^-x=(dx-[dx]_2)/2`$ for the integer carry of a po
 Binary reduction is $`[x]_2`$, and the second binary digit is $`[\lfloor x/2\rfloor]_2`$.
 Frozen coefficient files retain their original field labels so their checksums and recorded calculations remain reproducible.
 The formulas use the same symbol for a phase and its additive value; a phase hat in those files denotes the additive value.
-In those files `\check n_2` is the Majorana decoration $`n_2`$, `\check\omega_2` is $`\widetilde{\omega}_2`$, `\check n_3` is the 3+1D code argument $`n_3+R_3`$, `beta_open` denotes $`\beta^-`$, and a `tilde` field denotes the explicit second binary digit.
+In those files `\check n_2` is the Majorana decoration $`n_2`$, `\check\omega_2` is $`\widetilde{\omega}_2`$, `\check n_3` is the 3+1D code argument $`n_3+B_3`$, `beta_open` denotes $`\beta^-`$, and a `tilde` field denotes the explicit second binary digit.
 These are translations of labels, with no change to the cochains, coefficients, or numerical API.
 
 ## GitHub script-glyph encoding

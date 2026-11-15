@@ -8,8 +8,8 @@ four-simplex is
 {{equation:three-dimensional--complex-fermions-and-p-ip-decoration--30}}
 
 The two face brackets contain **13 explicit products** after distributing
-the displayed binary parentheses: eight multiply $`dn_3+dR_3`$ and five multiply
-$`dn'_3+dR'_3`$, with $`R_3=n_2\cup_1n_2`$. The lower differentials are
+the displayed binary parentheses: eight multiply $`dn_3+dB_3`$ and five multiply
+$`dn'_3+dR'_3`$, with $`B_3=n_2\cup_1n_2`$. The lower differentials are
 $`dn_2=\widetilde{\omega}_2[n_1]_2`$ and $`dn'_2=\widetilde{\omega}_2[n'_1]_2`$.
 On identical complete inputs, the terms proportional to $`s_1(01)`$ and
 the first two products cancel between the two face brackets. The remaining
@@ -38,10 +38,10 @@ The complex-fermion–p+ip obstruction contribution is
 
 The sum has **seven MS terms**, given in the
 [word table](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices); their
-first input is the binary cochain $`dn_3+dR_3`$. The three cups in the first
+first input is the binary cochain $`dn_3+dB_3`$. The three cups in the first
 line come from the complete lower equation
 $`dn_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+\mathcal{𝒪}_4^\psi`$;
-the two cups with $`R_3`$ come from the pairing reference and vanish for
+the two cups with $`B_3`$ come from the pairing reference and vanish for
 $`n_1=0`$.
 
 The [standalone verifier](coefficients/verify_three_dimensional_source_cf_exchange.py)

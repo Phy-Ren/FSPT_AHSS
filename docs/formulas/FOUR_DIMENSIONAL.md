@@ -46,7 +46,7 @@ dn_3=\mathcal{𝒪}_4=\mathcal{𝒪}_4^\psi.
 <a id="eq-l2-4d"></a>
 
 ```math
-dn_4=\mathcal{𝒪}_5+dR_4,\qquad\mathcal{𝒪}_5=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}+\mathcal{𝒪}_5^\psi.
+dn_4=\mathcal{𝒪}_5+dB_4,\qquad\mathcal{𝒪}_5=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}+\mathcal{𝒪}_5^\psi.
 ```
 
 **Majorana contribution.**
@@ -84,11 +84,11 @@ The second digit obeys $`d[\lfloor n_2/2\rfloor]_2=[n_2]_2\cup_1[n_2]_2+s_1[n_2]
 
 Here $`n_4`$ is the physical point-fermion occupation of the original
 pairing arrows. The directed F-move count differs from $`\mathcal{𝒪}_5`$ by
-the coboundary of the fixed binary four-cochain $`R_4`$ given explicitly in
+the coboundary of the fixed binary four-cochain $`B_4`$ given explicitly in
 the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#eq-r4).
 That page also gives the complete F-move and P-move counts.
-For $`n_2=0`$ every $`s_1`$ face term of $`R_4`$ vanishes and
-$`R_4=n_3\cup_2n_3`$.
+For $`n_2=0`$ every $`s_1`$ face term of $`B_4`$ vanishes and
+$`B_4=n_3\cup_2n_3`$.
 
 ### 4. Bosonic obstruction
 
@@ -147,14 +147,14 @@ that physical origin.
  +\mathcal{𝒪}_5^\psi\cup_4
            (\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})
  +\mathcal{𝒪}_5^\psi\cup_4\mathcal{𝒪}_5^\psi\\
- &+\mathcal{𝒪}_5\cup_4dR_4+dR_4\cup_4dR_4+dR_4\cup_3R_4
- +R_4\cup_2R_4+(n_3\cup_2n_3)\cup_2(n_3\cup_2n_3)\\
- &+\omega_2(R_4+n_3\cup_2n_3)\Big].
+ &+\mathcal{𝒪}_5\cup_4dB_4+dB_4\cup_4dB_4+dB_4\cup_3B_4
+ +B_4\cup_2B_4+(n_3\cup_2n_3)\cup_2(n_3\cup_2n_3)\\
+ &+\omega_2(B_4+n_3\cup_2n_3)\Big].
 \end{aligned}
 ```
 
-The terms with $`R_4`$ vanish for $`n_2=0`$, where $`R_4=n_3\cup_2n_3`$
-and $`dR_4=0`$. The complex fermions are in operator order, and the
+The terms with $`B_4`$ vanish for $`n_2=0`$, where $`B_4=n_3\cup_2n_3`$
+and $`dB_4=0`$. The complex fermions are in operator order, and the
 Majorana contribution is in the [compact phase convention](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 
 **Majorana contribution.**
@@ -355,12 +355,12 @@ Consequently $`d\mathcal{ℰ}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 
 ```math
 \begin{aligned}
-N_4&=n_4+n'_4+\mathcal{ℰ}_4+\Delta R_4,\\
+N_4&=n_4+n'_4+\mathcal{ℰ}_4+\Delta B_4,\\
 \mathcal{ℰ}_4&=\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi}+\mathcal{ℰ}_4^\psi.
 \end{aligned}
 ```
 
-Here $`\Delta R_4=R_4[N_2,N_3]-R_4[n_2,n_3]-R_4[n'_2,n'_3]`$, evaluated on the
+Here $`\Delta B_4=B_4[N_2,N_3]-B_4[n_2,n_3]-B_4[n'_2,n'_3]`$, evaluated on the
 actual lower output. The law includes the complex-fermion gauge transformation
 by the explicit two-input pairing reference described under the bosonic
 stacking law below.
@@ -468,13 +468,13 @@ the other contributions do not depend on $`N_4`$.
  \big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\cup_4n'_4
  +\Delta\Big(
  n_4\cup_4\big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\Big)\Big]\\
-&+\frac12\Big[n_4\cup_3R'_4+R_4\cup_3n'_4+R_4\cup_3R'_4
- +(R_4+R'_4)\cup_3\mathcal{ℰ}_4+\mathcal{𝒪}_5\cup_4R'_4\\
-&\qquad+\Delta\big(R_4\cup_4\mathcal{𝒪}_5+n_4\cup_4dR_4+n_4\cup_3R_4\big)\Big].
+&+\frac12\Big[n_4\cup_3R'_4+B_4\cup_3n'_4+B_4\cup_3R'_4
+ +(B_4+R'_4)\cup_3\mathcal{ℰ}_4+\mathcal{𝒪}_5\cup_4R'_4\\
+&\qquad+\Delta\big(B_4\cup_4\mathcal{𝒪}_5+n_4\cup_4dB_4+n_4\cup_3B_4\big)\Big].
 \end{aligned}
 ```
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_4,N_2,N_3)`$ minus the values at $`(n_4,n_2,n_3)`$ and $`(n'_4,n'_2,n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All parity brackets retain the cochain differential terms. The terms with $`R_4`$ come from the pairing reference of the complex fermions; $`\mathcal{𝒪}_5$ without a superscript is the complete parity obstruction of the first input.
+The $`\Delta`$ has its defined three terms: the value at $`(N_4,N_2,N_3)`$ minus the values at $`(n_4,n_2,n_3)`$ and $`(n'_4,n'_2,n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All parity brackets retain the cochain differential terms. The terms with $`B_4`$ come from the pairing reference of the complex fermions; $`\mathcal{𝒪}_5$ without a superscript is the complete parity obstruction of the first input.
 
 #### Complex fermions and p+ip decoration
 

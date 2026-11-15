@@ -12,7 +12,7 @@ input includes the upper decorations required by
 $`d_{s_1}n_2=0`$,
 $`dn_3=\mathcal{𝒪}_4[n_2]
  =[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$, and
-$`dn_4=\mathcal{𝒪}_5+dR_4`$. The bosonic obstruction is the same
+$`dn_4=\mathcal{𝒪}_5+dB_4`$. The bosonic obstruction is the same
 [4+1D obstruction](FOUR_DIMENSIONAL.md). Neither $`n_3`$ nor
 $`n_4`$ is set to zero. The output Majorana cochain shown below is closed and need not vanish.
 
@@ -91,8 +91,8 @@ the already defined lower obstructions. In particular
 $`\mathcal{𝒪}_5^\psi[2n_2]
  =[\beta_{s_1}\widetilde{\omega}_2]_2\,[n_2]_2`$.
 The actual output $`N_4`$ of the lower self-stacking law is used in these formulas; replacing it by zero
-would discard an upper-layer correction. The terms with $`R_4`$ come from the
-pairing reference of the complex fermions; $`R_4[N]`$ is evaluated on the output.
+would discard an upper-layer correction. The terms with $`B_4`$ come from the
+pairing reference of the complex fermions; $`B_4[N]`$ is evaluated on the output.
 
 ### Majorana decoration
 

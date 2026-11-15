@@ -14,7 +14,7 @@ input includes the upper decorations required by
 $`d_{s_1}n_2=0`$,
 $`dn_3=\mathcal{𝒪}_4[n_2]
  =[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$, and
-$`dn_4=\mathcal{𝒪}_5+dR_4`$. The bosonic obstruction is the same
+$`dn_4=\mathcal{𝒪}_5+dB_4`$. The bosonic obstruction is the same
 [4+1D obstruction](FOUR_DIMENSIONAL.md). Neither $`n_3`$ nor
 $`n_4`$ is set to zero. The output Majorana cochain shown below is closed and need not vanish.
 
@@ -51,7 +51,7 @@ In the lift variable of the code input, this output is $`N_3+s_1[n_2]_2`$.
 ## 3. Complex-fermion decoration
 
 ```math
-N_4=\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi}+\mathcal{ℰ}_4^\psi+R_4[N_2,N_3].
+N_4=\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi}+\mathcal{ℰ}_4^\psi+B_4[N_2,N_3].
 ```
 
 ### Majorana decoration
@@ -125,8 +125,8 @@ identically when its two closed inputs $`[n_2]_2`$ coincide.
  [\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}]
         [n_2,n_3]\cup_4n_4
  +N_4\cup_4\mathcal{𝒪}_5^\gamma[N_3]\Big]\\
-&+\frac12\Big[n_4\cup_3R_4+R_4\cup_3n_4+R_4\cup_3R_4+\mathcal{𝒪}_5\cup_4R_4\\
-&\qquad+R_4[N]\cup_4\mathcal{𝒪}_5[N]+N_4\cup_4dR_4[N]+N_4\cup_3R_4[N]\Big].
+&+\frac12\Big[n_4\cup_3B_4+B_4\cup_3n_4+B_4\cup_3B_4+\mathcal{𝒪}_5\cup_4B_4\\
+&\qquad+B_4[N]\cup_4\mathcal{𝒪}_5[N]+N_4\cup_4dB_4[N]+N_4\cup_3B_4[N]\Big].
 \end{aligned}
 ```
 
@@ -145,8 +145,8 @@ the already defined lower obstructions. In particular
 $`\mathcal{𝒪}_5^\psi[2n_2]
  =[\beta_{s_1}\widetilde{\omega}_2]_2\,[n_2]_2`$.
 The actual output $`N_4`$ of the lower self-stacking law is used in these formulas; replacing it by zero
-would discard an upper-layer correction. The terms with $`R_4`$ come from the
-pairing reference of the complex fermions; $`R_4[N]`$ is evaluated on the output.
+would discard an upper-layer correction. The terms with $`B_4`$ come from the
+pairing reference of the complex fermions; $`B_4[N]`$ is evaluated on the output.
 
 ### Majorana decoration
 

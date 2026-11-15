@@ -68,7 +68,7 @@ The decoration $`n_3`$ is the point-fermion occupation in the geometric pairing
 reference. The formulas below use the fixed binary three-cochain
 
 ```math
-R_3=n_2\cup_1n_2,
+B_3=n_2\cup_1n_2,
 ```
 
 the pairing reference of the complex fermions. All phases are in the physical
@@ -102,8 +102,8 @@ The finite sum contains **seven specified MS terms**,
 [listed explicitly](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices).
 The displayed cups give eight terms after distributing their sums, so the contribution has **fifteen terms**.
 Every MS term contains $`dn_2=\widetilde{\omega}_2[n_1]_2`$ and
-$`dn_3+dR_3=\mathcal{𝒪}_4+dR_3`$, so the complex-fermion exchange correction
-depends on the full lower parity differential. The terms with $`R_3`$ vanish
+$`dn_3+dB_3=\mathcal{𝒪}_4+dB_3`$, so the complex-fermion exchange correction
+depends on the full lower parity differential. The terms with $`B_3`$ vanish
 for $`n_1=0`$. The
 [exact reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md#the-obstruction)
 gives the seven-word form.
@@ -220,9 +220,9 @@ The pure sheet contribution has three terms. The signed floor is taken before re
 
 {{equation:three-dimensional--4-bosonic-stacking--28}}
 
-The formulas below use $`R_3=n_2\cup_1n_2`$ on each input and on the output,
-$`\Delta R_3=R_3[N_2]-R_3[n_2]-R_3[n'_2]`$,
-$`R_3^+=[n_2+n'_2]_2\cup_1[n_2+n'_2]_2`$, $`\lambda_2^\gamma=n_2\cup_2n'_2`$,
+The formulas below use $`B_3=n_2\cup_1n_2`$ on each input and on the output,
+$`\Delta B_3=B_3[N_2]-B_3[n_2]-B_3[n'_2]`$,
+$`B_3^+=[n_2+n'_2]_2\cup_1[n_2+n'_2]_2`$, $`\lambda_2^\gamma=n_2\cup_2n'_2`$,
 and the finite pair reference of the P move,
 
 {{equation:three-dimensional-geometric-reference--pair-cochain}}
@@ -246,11 +246,11 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,N_2)`$ minus the
 {{equation:three-dimensional--complex-fermions-and-p-ip-decoration--30}}
 
 The two face brackets contain **13 products** after distributing the
-binary parentheses: eight multiply $`dn_3+dR_3`$ and five multiply $`dn'_3+dR'_3`$.
+binary parentheses: eight multiply $`dn_3+dB_3`$ and five multiply $`dn'_3+dR'_3`$.
 The [exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md) proves
 that this form is exact. The lower obstruction acts on its whole
 binary argument; it must not be linearized.
-The terms with $`R_3`$, $`\lambda_2^\gamma`$ and $`\mathcal B_2`$ come from the
+The terms with $`B_3`$, $`\lambda_2^\gamma`$ and $`\mathcal B_2`$ come from the
 pairing references of the complex fermions; together they vanish for
 $`n_1=n'_1=0`$, so that the whole contribution vanishes there.
 
@@ -361,7 +361,7 @@ been absorbed into a binary word table.
 
 ## Closed sector
 
-For $`n_1=n'_1=0`$ one has $`\beta^-=\beta`$, $`R_3`$ is closed, and every
+For $`n_1=n'_1=0`$ one has $`\beta^-=\beta`$, $`B_3`$ is closed, and every
 contribution on this page reduces to the
 [closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d); the
 contributions $`\mathcal{𝒪}_5^{c\psi},\mathcal{𝒪}_5^{\gamma\psi},\mathcal{𝒪}_5^\psi,

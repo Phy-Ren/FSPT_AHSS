@@ -18,8 +18,8 @@
   ],
   "reader_hashes": {
     "docs/formulas/TWO_DIMENSIONAL.md": "92fa424193a482022df0b1a330eff2541eeafd0b26ce8b04a288026dc10edb68",
-    "docs/formulas/THREE_DIMENSIONAL.md": "07f51c901d80cdedfa0d2a42d666cf098764707fe96b09e0d9fd2cf648c6dfb1",
-    "docs/formulas/FOUR_DIMENSIONAL.md": "4bb31205088314c554697c19e301291e4f1d8a27ec6366769e3afd2a987e10e2"
+    "docs/formulas/THREE_DIMENSIONAL.md": "6c8677fc7444d83f440f499b6dd484777cdee5ffa10825e5370a952748b366cd",
+    "docs/formulas/FOUR_DIMENSIONAL.md": "3119151f86f0de3c06f47be16918f76ffc5028de93bd6a222a092c6df7b07e68"
   },
   "records": [
     {
@@ -430,7 +430,7 @@
         "twelfth": 0
       },
       "total": 73,
-      "note": "Every displayed binary sum is distributed; Delta, E_3, Delta R_3, R_3^+ and E_2 count once. The two face brackets contribute 13 products, each multiplied by the two terms of dn_3+dR_3."
+      "note": "Every displayed binary sum is distributed; Delta, E_3, Delta B_3, B_3^+ and E_2 count once. The two face brackets contribute 13 products, each multiplied by the two terms of dn_3+dB_3."
     },
     {
       "dimension": "3+1D",
@@ -587,7 +587,7 @@
         "twelfth": 0
       },
       "total": 12,
-      "note": "Five exchange cups plus seven pairing-reference terms with R_4."
+      "note": "Five exchange cups plus seven pairing-reference terms with B_4."
     },
     {
       "dimension": "4+1D",
@@ -732,7 +732,7 @@
         "twelfth": 0
       },
       "total": 13,
-      "note": "Four exchange terms plus nine pairing-reference terms with R_4; Delta counts once per distributed term."
+      "note": "Four exchange terms plus nine pairing-reference terms with B_4; Delta counts once per distributed term."
     },
     {
       "dimension": "4+1D",
@@ -1524,10 +1524,10 @@
     "source_expansion_phase": "The stored 4D source expansion and old 85/1005 word dictionaries belong to the preceding phase coordinate. Current O6 is counted in records, not by substituting that archive."
   },
   "supporting_reader_hashes": {
-    "docs/FORMULA_GUIDE.md": "fac7b749dcfff588bf8d104378623175b6723315ce17b2d753a076fa5e0e19a0",
+    "docs/FORMULA_GUIDE.md": "c1c7f8bf14c0b3beb4846cda02eeaf27e704e59a3b99dcbecbd8a0470f30f79f",
     "docs/formulas/QUADRATIC_REFINEMENTS.md": "4744d32d5d79ee9975d483f4579f7f1e8b18eb78c8e44d3ce6b3d3bda50fe66f",
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": "8f4b63b50d87b136015b256463e715f915c2fed48ef79fbcd309d5c004a47f6a",
-    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "5fbcf0a54c49f622c29585b613afd8c95b3185dadc9d54c08d26162ded75fbb4"
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "511c6de256d86f48f95b9b7a75a616a2de519da10ef6403df50cf17dd646b6ca"
   },
   "self_stacking": {
     "scope": "Separate restricted formulas; complete input states; before full output gauge. These records do not replace general counts.",

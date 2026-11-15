@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""Checks of the 4+1D change from the code argument n_4 + R_4 to n_4, standard library only.
+"""Checks of the 4+1D change from the code argument n_4 + B_4 to n_4, standard library only.
 
 The publication code evaluates the complex-fermion layer with the argument
-x = n_4 + R_4.  The formula pages use n_4 itself; the change of phase is
-    rho = 1/2[n_4 cup_3 R_4 + n_4 cup_4 dR_4].
+x = n_4 + B_4.  The formula pages use n_4 itself; the change of phase is
+    rho = 1/2[n_4 cup_3 B_4 + n_4 cup_4 dB_4].
 For arbitrary binary cochains this script checks
 
 1. the obstruction identity, with F[x] = 1/2[w_2 x + x cup_2 x + dx cup_3 x + dx cup_4 dx],
        F[x+R] - F[x] = d(1/2[x cup_3 R + x cup_4 dR])
                        + 1/2[w_2 R + R cup_2 R + dR cup_3 R + dR cup_4 dx + dR cup_4 dR];
 2. the stacking identity: the code products c, c gamma, c psi in the arguments
-   n_4 + R_4, plus Delta(rho), equal the displayed E_5^c, E_5^{c gamma} and E_5^{c psi},
-   with N_4 = n_4 + n'_4 + E_4 + Delta R_4.
+   n_4 + B_4, plus Delta(rho), equal the displayed E_5^c, E_5^{c gamma} and E_5^{c psi},
+   with N_4 = n_4 + n'_4 + E_4 + Delta B_4.
 
 All half-valued phases are compared as binary cochains (twice the phase).
 """
@@ -107,7 +107,7 @@ def check_stacking_identity(trials=20):
         A, Am, AN, P, Pm, PN = (K.rnd(5, rng) for _ in range(6))
         O, Om, ON = add(A, P), add(Am, Pm), add(AN, PN)
         x, xm, X = add(n, R), add(m, Rm), add(N, RN)
-        E4 = add(X, x, xm)                      # N_4 = n_4 + n'_4 + E_4 + Delta R_4
+        E4 = add(X, x, xm)                      # N_4 = n_4 + n'_4 + E_4 + Delta B_4
         code = add(c3(x, xm), c3(add(x, xm), E4),
                    x54(A, xm), y45(X, AN), y45(x, A), y45(xm, Am),
                    x54(P, xm), y45(X, PN), y45(x, P), y45(xm, Pm))

@@ -7,7 +7,7 @@ completion and bosonic phase. The lower fields obey the obstruction equations
 in [the 3+1D reference](THREE_DIMENSIONAL.md). The background is
 $`\widetilde{\omega}_2=\omega_2+s_1^2`$.
 The formulas are the general laws of that reference with two equal inputs,
-with $`R_3=n_2\cup_1n_2`$ the pairing reference of the complex fermions.
+with $`B_3=n_2\cup_1n_2`$ the pairing reference of the complex fermions.
 
 The terminal formulas below cover $`n_1=0`$ and the canonical signed torsion
 representative $`n_1=s_1`$. These are the two branches required for finite root

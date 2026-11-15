@@ -23,13 +23,13 @@ Both inputs and the output use this same rule.
 The complete directed F-move count, including all reference dimers, gives
 
 ```math
-\Delta P_f=\mathcal O_5+dR_4\mod2.
+\Delta P_f=\mathcal O_5+dB_4\mod2.
 ```
 
 Here $`\mathcal O_5`$ is the complete function in
 [the 4+1D formula page](FOUR_DIMENSIONAL.md#eq-l4).
 The occupation $`n_4`$ of the point fermions therefore obeys
-$`dn_4=\mathcal O_5+dR_4`$. The fixed binary four-cochain is
+$`dn_4=\mathcal O_5+dB_4`$. The fixed binary four-cochain is
 
 <a id="eq-r4"></a>
 
@@ -41,17 +41,17 @@ formula. Its local identity holds for every length of the list of effective
 Majorana zero modes, and the common symmetry signs do not change it. The other
 terms come from the mass walls of the intrinsic and projective modes under
 anti-unitary symmetry. A different convention for steps that only order the
-effective Majorana zero modes changes $`R_4`$ by a fixed binary cochain and
+effective Majorana zero modes changes $`B_4`$ by a fixed binary cochain and
 leaves $`\mathcal O_5`$ unchanged.
 
 ## Stacking
 
 The P graph includes the two complete input states, the three-copy contacts,
 and the output state with the same pairing rule. Besides the twister and
-$`\Delta R_4`$, its count contains the coboundary of an explicit two-input
+$`\Delta B_4`$, its count contains the coboundary of an explicit two-input
 reference, written out as its alternating face sum.
 $`\mathcal E_4`$ is the complete twister in
-[the same formula page](FOUR_DIMENSIONAL.md#eq-p4), and $`\Delta R_4`$ uses the
+[the same formula page](FOUR_DIMENSIONAL.md#eq-p4), and $`\Delta B_4`$ uses the
 actual lower output
 
 ```math

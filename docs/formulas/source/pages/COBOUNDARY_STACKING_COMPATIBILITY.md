@@ -95,7 +95,7 @@ $`(0,u,c'+T)`$. Its phase is
 
 {{equation:coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--9}}
 
-The last bracket comes from the pairing reference $`R_4=u\cup_2u`$. The Majorana diagonal is the same
+The last bracket comes from the pairing reference $`B_4=u\cup_2u`$. The Majorana diagonal is the same
 fully specified operation as in the original stacking law.
 This chooses the inverse representative for which $`Y*Y^{-1}`$ is the
 zero cochain state. It includes the lower carry as well as the phase
@@ -148,9 +148,9 @@ of the specified pure-layer bulk maps.
 
 The complete phases of the pure-layer bulk maps are evaluated on their
 stated domains before this additional product correction is applied.
-Here $`R_3=n_2\cup_1n_2`$ is the pairing reference of the
+Here $`B_3=n_2\cup_1n_2`$ is the pairing reference of the
 [3+1D formulas](THREE_DIMENSIONAL.md). The bulk fields are the compact
-parities, so their sum is $`dn_3+dR_3`$ rather than the point-occupation
+parities, so their sum is $`dn_3+dB_3`$ rather than the point-occupation
 differential $`dn_3`$.
 
 ## Transporting representatives together

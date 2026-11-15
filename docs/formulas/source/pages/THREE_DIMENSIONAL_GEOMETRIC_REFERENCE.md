@@ -8,28 +8,28 @@
 
 ## Arguments of the code
 
-Write $`R_3=n_2\cup_1n_2`$ and let $`\mathcal B_2`$ be the pair reference
+Write $`B_3=n_2\cup_1n_2`$ and let $`\mathcal B_2`$ be the pair reference
 
 {{equation:three-dimensional-geometric-reference--pair-cochain}}
 
 The code evaluates its bosonic construction with the complex-fermion
-input $`n_3+R_3`$ on each state, and with the stacked complex-fermion output
-$`N_3+R_3[N_2]+d\mathcal B_2`$. Its lower differentials are therefore
-$`d(n_3+R_3)=\mathcal{𝒪}_4+dR_3`$. The ordinary Majorana operators and the
+input $`n_3+B_3`$ on each state, and with the stacked complex-fermion output
+$`N_3+B_3[N_2]+d\mathcal B_2`$. Its lower differentials are therefore
+$`d(n_3+B_3)=\mathcal{𝒪}_4+dB_3`$. The ordinary Majorana operators and the
 original projection schedule are the same as in the formulas; only the
 complex-fermion argument of the evaluation differs.
 
 ## Obstruction
 
 The formula-page obstruction is the code obstruction evaluated at
-$`n_3+R_3`$, followed by the [paired representative change](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md)
+$`n_3+B_3`$, followed by the [paired representative change](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md)
 and the phase change
 
 ```math
-\nu_4\longmapsto\nu_4-\frac12\big[n_3\cup_2R_3+n_3\cup_3dR_3\big].
+\nu_4\longmapsto\nu_4-\frac12\big[n_3\cup_2B_3+n_3\cup_3dB_3\big].
 ```
 
-The terms with $`R_3`$ in $`\mathcal{𝒪}_5^{c\psi}`$ and the sign of the
+The terms with $`B_3`$ in $`\mathcal{𝒪}_5^{c\psi}`$ and the sign of the
 quarter bracket in $`\mathcal{𝒪}_5^\gamma`$ come from this change.
 
 ## Product
@@ -40,10 +40,10 @@ representative change, plus
 ```math
 \begin{aligned}
 &\frac12\big[\omega_2\mathcal B_2+\mathcal B_2^2+d\mathcal B_2\cup_1\mathcal B_2
- +(N_3+R_3[N_2]+d\mathcal B_2)\cup_2d\mathcal B_2\big]\\
-&-\Delta\Big(\frac12\big[n_3\cup_2R_3+n_3\cup_3dR_3\big]\Big)\\
-&-d_{s_1}\Big(\frac12\big[R_3\cup_3(\mathcal{ℰ}_3+n'_3)+R'_3\cup_3\mathcal{ℰ}_3
- +R_3[N_2]\cup_2\lambda_2^\gamma\big]\Big),
+ +(N_3+B_3[N_2]+d\mathcal B_2)\cup_2d\mathcal B_2\big]\\
+&-\Delta\Big(\frac12\big[n_3\cup_2B_3+n_3\cup_3dB_3\big]\Big)\\
+&-d_{s_1}\Big(\frac12\big[B_3\cup_3(\mathcal{ℰ}_3+n'_3)+R'_3\cup_3\mathcal{ℰ}_3
+ +B_3[N_2]\cup_2\lambda_2^\gamma\big]\Big),
 \end{aligned}
 ```
 
@@ -58,7 +58,7 @@ gauges, associators, and exchange homotopies are transported with them.
 For either finite-root branch, $`n_1=0`$ or $`n_1=s_1`$, one has
 $`\mathcal B_2=n_2`$ and $`N_2\cup_1N_2=0`$.
 For $`\mathbb Z_4^{f,T}`$, $`s_1=m_1`$, $`\omega_2=m_1^2`$, the displayed root
-representatives have $`R_3=0`$. $`\mathcal B_2`$ vanishes for
+representatives have $`B_3=0`$. $`\mathcal B_2`$ vanishes for
 the p+ip square and equals $`m_1^2`$ for the Majorana square; its differential
 vanishes and its phase is $`(\omega_2\mathcal B_2+\mathcal B_2^2)/2=0`$ modulo one.
 The complete root phases and the $`\mathbb Z_{16}`$ group are unchanged.

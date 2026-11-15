@@ -167,8 +167,8 @@ def check(library):
                 current = Fraction(mc_phase4(u, c, w, s)(top), 4)
                 previous = Fraction(previous_gamma(u, w, s)[0](top), 4)
                 previous += Fraction((sq(c, 2) + cup(w, c))(top), 2)
-            # Physical point-fermion occupation n4 = n~4 + R4, with
-            # R4 = n~3 cup_2 n~3 here (s1 = 0, n2 = 0).  For the closed roots the
+            # The code argument is x = n4 + B4, with B4 = n3 cup_2 n3 here
+            # (s1 = 0, n2 = 0), so the occupation is n4 = x + n3 cup_2 n3.  For the closed roots the
             # physical obstruction is the negative of the terminal formula at the
             # physical argument, with Majorana quarter bracket -1/4 (dn4 = 0 here).
             n4_phys = c + cup(u, u, 2)
@@ -215,11 +215,11 @@ def check(library):
     return {
         'status': 'PASS', 'dimension': '4+1D',
         'symmetry': {'Gf': 'Z4^f', 'Gb': 'C2', 'omega2': 'm1^2', 's1': '0'},
-        'phase_convention': ('Unified physical convention. Terminal formulas use n~4 = n4 + R4 '
-                             '(here R4 = n3 cup_2 n3); current coordinate nu5 = nu5_previous - B5[n~3,n~4]. '
+        'phase_convention': ('Unified physical convention. The code evaluates the complex-fermion argument x = n4 + B4 '
+                             '(here B4 = n3 cup_2 n3); nu5 = nu5_previous - B5[n3] (s1 = 0). '
                              'Closed roots are also checked in the physical occupation n4 with the '
                              'closed-sector obstruction (Majorana quarter bracket -1/4).'),
-        'physical_n4': {'p_ip': '0', 'Majorana': 'm1^4 = m1^3 cup_2 m1^3 (n~4 = 0)',
+        'physical_n4': {'p_ip': '0', 'Majorana': 'm1^4 = m1^3 cup_2 m1^3 (code argument x = 0)',
                         'complex_fermion': 'm1^4', 'bosonic': '0'},
         'normalization': 'm1^q(g1,...,gq) = product(gj), with gj in {0,1}; all tuples are included.',
         'six_tuples_checked_per_root': 64,

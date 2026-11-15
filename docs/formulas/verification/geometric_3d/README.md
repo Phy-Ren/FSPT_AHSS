@@ -20,7 +20,7 @@ python docs/formulas/coefficients/verify_three_dimensional_geometric_self_stacki
 python scripts/check_z4ft_current_cochains.py
 ```
 
-The first checks the change from the code argument n3 + R3 to n3, the closed
+The first checks the change from the code argument n3 + B3 to n3, the closed
 sector and the self-stacking formulas. The second proves the change of the
 output face reference exactly in 45 independent bits; deleting omega2 B2 is a
 negative control. The third compares all six self-stacking contributions of

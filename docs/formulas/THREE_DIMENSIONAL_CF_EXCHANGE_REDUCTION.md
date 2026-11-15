@@ -13,19 +13,19 @@ four-simplex is
 ={}&\frac12\Big[
  \mathcal{𝒪}_4^\psi[n_1]\cup_3n'_3
  +\Delta\big(n_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
-&\qquad+(n_3+n'_3)\cup_2\Delta R_3+dR_3\cup_3n'_3+n_3\cup_2R'_3+R_3\cup_2n'_3\\
-&\qquad+(R_3+R'_3)\cup_2(\mathcal{ℰ}_3+\Delta R_3)+(dn_3+dR_3)\cup_3R'_3\\
-&\qquad+\Delta\big(R_3\cup_3(dn_3+dR_3)+n_3\cup_2R_3\big)\\
+&\qquad+(n_3+n'_3)\cup_2\Delta B_3+dB_3\cup_3n'_3+n_3\cup_2R'_3+B_3\cup_2n'_3\\
+&\qquad+(B_3+R'_3)\cup_2(\mathcal{ℰ}_3+\Delta B_3)+(dn_3+dB_3)\cup_3R'_3\\
+&\qquad+\Delta\big(B_3\cup_3(dn_3+dB_3)+n_3\cup_2B_3\big)\\
 &\qquad+\omega_2\mathcal B_2+\mathcal B_2^2+d\mathcal B_2\cup_1\mathcal B_2
- +(\mathcal{ℰ}_3+\Delta R_3+d\mathcal B_2)\cup_2d\mathcal B_2\\
-&\qquad+d\mathcal B_2\cup_3(dN_3+dR_3[N])\\
-&\qquad+(R_3+R'_3)\cup_1\lambda_2^\gamma+\lambda_2^\gamma\cup_1R_3^+
+ +(\mathcal{ℰ}_3+\Delta B_3+d\mathcal B_2)\cup_2d\mathcal B_2\\
+&\qquad+d\mathcal B_2\cup_3(dN_3+dB_3[N])\\
+&\qquad+(B_3+R'_3)\cup_1\lambda_2^\gamma+\lambda_2^\gamma\cup_1B_3^+
  +(\lambda_2^\gamma)^2+\omega_2\lambda_2^\gamma\\
 &\qquad+d_{s_1}\big(\lambda_2^\gamma\cup_1\lambda_2^\gamma+\lambda_2^\gamma\cup_2d\lambda_2^\gamma
- +R_3\cup_3(\mathcal{ℰ}_3+n'_3)+R'_3\cup_3\mathcal{ℰ}_3+R_3[N]\cup_2\lambda_2^\gamma\big)\\
-&\qquad+(dn_3+dn'_3+dR_3+dR'_3)\cup_4\big[
- \omega_2\mathcal{ℰ}_2+s_1(R_3[N]+R_3^+)\big]\Big](01234)\\
-&+\frac12(dn_3+dR_3)(01234)\Big[
+ +B_3\cup_3(\mathcal{ℰ}_3+n'_3)+R'_3\cup_3\mathcal{ℰ}_3+B_3[N]\cup_2\lambda_2^\gamma\big)\\
+&\qquad+(dn_3+dn'_3+dB_3+dR'_3)\cup_4\big[
+ \omega_2\mathcal{ℰ}_2+s_1(B_3[N]+B_3^+)\big]\Big](01234)\\
+&+\frac12(dn_3+dB_3)(01234)\Big[
  n'_2(012)(dn_2)(0234)
  +n_2(034)(dn'_2)(0123)\\
 &\qquad+n'_2(123)(dn_2)(0134)
@@ -46,15 +46,15 @@ four-simplex is
 ```
 
 The two face brackets contain **13 explicit products** after distributing
-the displayed binary parentheses: eight multiply $`dn_3+dR_3`$ and five multiply
-$`dn'_3+dR'_3`$, with $`R_3=n_2\cup_1n_2`$. The lower differentials are
+the displayed binary parentheses: eight multiply $`dn_3+dB_3`$ and five multiply
+$`dn'_3+dR'_3`$, with $`B_3=n_2\cup_1n_2`$. The lower differentials are
 $`dn_2=\widetilde{\omega}_2[n_1]_2`$ and $`dn'_2=\widetilde{\omega}_2[n'_1]_2`$.
 On identical complete inputs, the terms proportional to $`s_1(01)`$ and
 the first two products cancel between the two face brackets. The remaining
 expression is exactly
 
 ```math
-\frac12(dn_3+dR_3)(01234)\Big[
+\frac12(dn_3+dB_3)(01234)\Big[
  n_2(123)(dn_2)(0134)
  +n_2(014)(dn_2)(1234)
  +n_2(234)(dn_2)(0124)\Big].
@@ -92,10 +92,10 @@ The complex-fermion–p+ip obstruction contribution is
 
 The sum has **seven MS terms**, given in the
 [word table](THREE_DIMENSIONAL_WORD_INDICES.md#complex-fermion-indices); their
-first input is the binary cochain $`dn_3+dR_3`$. The three cups in the first
+first input is the binary cochain $`dn_3+dB_3`$. The three cups in the first
 line come from the complete lower equation
 $`dn_3=\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}+\mathcal{𝒪}_4^\psi`$;
-the two cups with $`R_3`$ come from the pairing reference and vanish for
+the two cups with $`B_3`$ come from the pairing reference and vanish for
 $`n_1=0`$.
 
 The [standalone verifier](coefficients/verify_three_dimensional_source_cf_exchange.py)

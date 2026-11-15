@@ -147,7 +147,7 @@ S\cup_3(c'+T)+(c'+T)\cup_3S+S\cup_3S+k\cup_4S
 \end{aligned}
 ```
 
-The last bracket comes from the pairing reference $`R_4=u\cup_2u`$. The Majorana diagonal is the same
+The last bracket comes from the pairing reference $`B_4=u\cup_2u`$. The Majorana diagonal is the same
 fully specified operation as in the original stacking law.
 This chooses the inverse representative for which $`Y*Y^{-1}`$ is the
 zero cochain state. It includes the lower carry as well as the phase
@@ -214,7 +214,7 @@ c_{\mathrm{bulk}}&=
 \mathrm{Sq}^2n_2
 +\omega_2n_2+s_1\mathrm{Sq}^1n_2,\\
 c'_{\mathrm{bulk}}&=\mathcal{𝒪}_4^\psi,\qquad
-c_{\mathrm{bulk}}+c'_{\mathrm{bulk}}=(dn_3+dR_3).
+c_{\mathrm{bulk}}+c'_{\mathrm{bulk}}=(dn_3+dB_3).
 \end{aligned}
 ```
 
@@ -222,8 +222,8 @@ Its entire additional phase is consequently
 
 ```math
 \frac12\left[
-(dn_3+dR_3)\cup_3\mathcal{𝒪}_4^\psi
-+(dn_3+dR_3)\cup_4\mathcal{𝒪}_5^\gamma(dn_2)
+(dn_3+dB_3)\cup_3\mathcal{𝒪}_4^\psi
++(dn_3+dB_3)\cup_4\mathcal{𝒪}_5^\gamma(dn_2)
 \right].
 ```
 
@@ -236,9 +236,9 @@ of the specified pure-layer bulk maps.
 
 The complete phases of the pure-layer bulk maps are evaluated on their
 stated domains before this additional product correction is applied.
-Here $`R_3=n_2\cup_1n_2`$ is the pairing reference of the
+Here $`B_3=n_2\cup_1n_2`$ is the pairing reference of the
 [3+1D formulas](THREE_DIMENSIONAL.md). The bulk fields are the compact
-parities, so their sum is $`dn_3+dR_3`$ rather than the point-occupation
+parities, so their sum is $`dn_3+dB_3`$ rather than the point-occupation
 differential $`dn_3`$.
 
 ## Transporting representatives together

@@ -367,7 +367,7 @@ the binary complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
 Here $`n_4`$ is the physical point-fermion occupation of the original
 pairing arrows. These are the formulas of the complete
 [4+1D tower](FOUR_DIMENSIONAL.md) at $`n_2=0`$, where the pairing
-reference is $`R_4=n_3\cup_2n_3`$ with $`dR_4=0`$. The Majorana
+reference is $`B_4=n_3\cup_2n_3`$ with $`dB_4=0`$. The Majorana
 contribution has the lattice sign of the heptagon loop: its quarter-valued
 bracket is $`-1/4`$.
 

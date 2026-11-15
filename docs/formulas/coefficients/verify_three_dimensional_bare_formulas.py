@@ -2,16 +2,16 @@
 """Checks of the 3+1D formulas written in the occupations n_3, standard library only.
 
 The publication code evaluates the complex-fermion layer with the argument
-x = n_3 + R_3, R_3 = n_2 cup_1 n_2, and returns the product output
-N_3 + R_3[N_2] + dB_2.  This script checks, on a six-vertex complex:
+x = n_3 + B_3, B_3 = n_2 cup_1 n_2, and returns the product output
+N_3 + B_3[N_2] + dB_2.  This script checks, on a six-vertex complex:
 
 1. the obstruction identity for arbitrary binary cochains x, R,
        F[x+R] - F[x] = d(rho) + (terms with R),
    F[x] = 1/2[w_2 x + x cup_1 x + dx cup_2 x],
    rho  = 1/2[x cup_2 R + x cup_3 dR];
 2. the stacking identity for arbitrary cochains: the code product in the
-   arguments n_3+R_3 plus Delta(rho) equals the displayed c, c gamma and
-   complex-fermion/p+ip terms with R_3;
+   arguments n_3+B_3 plus Delta(rho) equals the displayed c, c gamma and
+   complex-fermion/p+ip terms with B_3;
 3. on random towers with n_1 = n'_1 = 0, the code product with its face
    reference B_2 equals the closed-sector formulas after the displayed
    coboundary lambda_3;
@@ -193,7 +193,7 @@ def stack(X, Y, s, w, wt):
     return Z, dict(E2=E2, E3=E3, B2=B2)
 
 
-def R3(n2):
+def B3(n2):
     return cup(n2, 2, n2, 2, 1)
 
 
@@ -213,7 +213,7 @@ def E4_cpsi(X, Y, Z, L, s, w):
     """Equation 30 of the 3+1D page."""
     n, m, N = X['n3'], Y['n3'], Z['n3']
     n2, m2 = X['n2'], Y['n2']
-    R, Rm, RN, Rp = R3(n2), R3(m2), R3(Z['n2']), R3(add(n2, m2))
+    R, Rm, RN, Rp = B3(n2), B3(m2), B3(Z['n2']), B3(add(n2, m2))
     dR, dRm, dRN = d(R, 3), d(Rm, 3), d(RN, 3)
     DR = add(RN, R, Rm)
     E3, E2, B2 = L['E3'], L['E2'], L['B2']
@@ -251,7 +251,7 @@ def E4_cpsi(X, Y, Z, L, s, w):
 def O5_cpsi_cups(X):
     """The cup terms of equation 13; its MS terms all carry dn_2."""
     A, P = X['A'], X['P']
-    R = R3(X['n2'])
+    R = B3(X['n2'])
     dR = d(R, 3)
     return add(cup(A, 4, P, 4, 3), cup(P, 4, A, 4, 3), cup(P, 4, P, 4, 3),
                cup(dR, 4, R, 3, 2), cup(dR, 4, add(d(X['n3'], 3), dR), 4, 3))
@@ -261,7 +261,7 @@ def self_cpsi(X, Z):
     """Equation 16 of the 3+1D self-stacking page."""
     n, N, n2 = X['n3'], Z['n3'], X['n2']
     dn2, dn, dN = d(n2, 2), d(n, 3), d(N, 3)
-    R = R3(n2)
+    R = B3(n2)
     dR = d(R, 3)
     t = add(x43(X['P'], n), y34(N, Z['P']), y34(R, dn), x43(dn, R), x43(dR, R),
             c2(add(N, dn2), dn2), cup(dn2, 3, dN, 4, 3), c2(dn2, dn2), cup(dn2, 3, n2, 2, 1))
@@ -333,7 +333,7 @@ def check_closed_sector(trials=40):
         Z, L = stack(X, Y, s, w, wt)
         n, m, N, E3 = X['n3'], Y['n3'], Z['n3'], L['E3']
         n2, m2 = X['n2'], Y['n2']
-        R, Rm, RN = R3(n2), R3(m2), R3(Z['n2'])
+        R, Rm, RN = B3(n2), B3(m2), B3(Z['n2'])
         lam = cup(n2, 2, m2, 2, 2)
         assert L['B2'] == lam
         dl = d(lam, 2)
@@ -347,7 +347,7 @@ def check_closed_sector(trials=40):
         Drho = add(c2(N, RN), c2(n, R), c2(m, Rm))
         closed = add(E4_c(X, Y, L), E4_cgamma(X, Y, Z))
         Q = add(cup(R, 3, Rm, 3, 2), cup(add(R, Rm), 3, lam, 2, 1),
-                cup(lam, 2, R3(add(n2, m2)), 3, 1), cup(lam, 2, lam, 2), cup(w, 2, lam, 2))
+                cup(lam, 2, B3(add(n2, m2)), 3, 1), cup(lam, 2, lam, 2), cup(w, 2, lam, 2))
         G = d(add(cup(lam, 2, lam, 2, 1), cup(lam, 2, dl, 3, 2)), 3)
         lam3 = add(cup(R, 3, add(E3, m), 3, 3), cup(Rm, 3, E3, 3, 3), cup(RN, 3, lam, 2, 2))
         D = add(code, Drho, closed, Q, G, d(lam3, 3))

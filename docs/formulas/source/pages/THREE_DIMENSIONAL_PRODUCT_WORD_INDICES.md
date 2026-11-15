@@ -5,8 +5,8 @@
 **Code documentation.** This page documents how the numerical code in
 `formulas/publication_source/full3` generates part of the
 [3+1D formulas](THREE_DIMENSIONAL.md). The code evaluates its construction with
-the complex-fermion input $`n_3+R_3`$, $`R_3=n_2\cup_1n_2`$, on each state and
-with the stacked output $`N_3+R_3[N_2]+d\mathcal B_2`$; within this page
+the complex-fermion input $`n_3+B_3`$, $`B_3=n_2\cup_1n_2`$, on each state and
+with the stacked output $`N_3+B_3[N_2]+d\mathcal B_2`$; within this page
 $`n_3`$, $`n'_3`$ and $`N_3`$ denote these code arguments. The change to the
 bare formulas is stated in [From the code to the 3+1D formulas](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 

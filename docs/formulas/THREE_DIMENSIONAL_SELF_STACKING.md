@@ -9,7 +9,7 @@ completion and bosonic phase. The lower fields obey the obstruction equations
 in [the 3+1D reference](THREE_DIMENSIONAL.md). The background is
 $`\widetilde{\omega}_2=\omega_2+s_1^2`$.
 The formulas are the general laws of that reference with two equal inputs,
-with $`R_3=n_2\cup_1n_2`$ the pairing reference of the complex fermions.
+with $`B_3=n_2\cup_1n_2`$ the pairing reference of the complex fermions.
 
 The terminal formulas below cover $`n_1=0`$ and the canonical signed torsion
 representative $`n_1=s_1`$. These are the two branches required for finite root
@@ -186,12 +186,12 @@ On the ordered four-simplex,
 ={}&\frac12\Big[
  \mathcal{𝒪}_4^\psi[s_1]\cup_3n_3
  +N_3\cup_3\mathcal{𝒪}_4^\psi[2s_1]
- +R_3\cup_3dn_3+dn_3\cup_3R_3+dR_3\cup_3R_3\\
+ +B_3\cup_3dn_3+dn_3\cup_3B_3+dB_3\cup_3B_3\\
 &\qquad+(N_3+dn_2)\cup_2dn_2+dn_2\cup_3dN_3+dn_2\cup_2dn_2+dn_2\cup_1n_2\Big](01234)\\
-&+\frac12(dn_3+dR_3)(01234)\Big[
+&+\frac12(dn_3+dB_3)(01234)\Big[
  n_2(123)(dn_2)(0134)\\
 &\hspace{35mm}+n_2(014)(dn_2)(1234)
- +n_2(234)(dn_2)(0124)\Big],\qquad R_3=n_2\cup_1n_2.
+ +n_2(234)(dn_2)(0124)\Big],\qquad B_3=n_2\cup_1n_2.
 \end{aligned}
 ```
 
