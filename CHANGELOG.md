@@ -30,6 +30,9 @@ of the stacking move the corrected terms vanish when $`dn_2=dn'_2=0`$.
   their certificates). The 3+1D term manifests use the printed expressions as
   field names; the complex-fermion and Majorana phases of the code moved to
   `docs/formulas/verification/three_dimensional/code_phases`.
+- The face formula of $`\zeta_{2,1}`$ moved from the $`\mathcal O_4^\psi`$
+  display to the sentence below it, written for general arguments
+  $`\zeta_{2,1}(x,y)(01234)=x(012)\,x(023)\,y(23)\,y(34)`$.
 
 ## 2026-11-04: phase convention unified with the published lattice papers
 

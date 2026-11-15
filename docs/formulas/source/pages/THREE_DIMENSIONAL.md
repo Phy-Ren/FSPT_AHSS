@@ -56,6 +56,7 @@ Here $`dn_2=\widetilde{\omega}_2[n_1]_2`$ is fixed by the preceding obstruction.
 
 {{equation:three-dimensional--3-complex-fermion-obstruction--9}}
 
+Here $`\zeta_{2,1}(x,y)(01234)=x(012)\,x(023)\,y(23)\,y(34)`$.
 The second digit obeys $`d[\lfloor n_1/2\rfloor]_2=[n_1]_2^2+s_1[n_1]_2`$.
 
 ### 4. Bosonic obstruction

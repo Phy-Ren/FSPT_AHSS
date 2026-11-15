@@ -71,11 +71,11 @@ Here $`dn_2=\widetilde{\omega}_2[n_1]_2`$ is fixed by the preceding obstruction.
 ```math
 \begin{aligned}
 {\mathcal{𝒪}^\psi_4}={}&\zeta_{2,1}({\widetilde{\omega}_2},{[n_{1}]_2})+({\widetilde{\omega}_2}\cup_1{\widetilde{\omega}_2}+{s_1}{\widetilde{\omega}_2}){[\lfloor n_{1}/2\rfloor]_2}\\
-&+\big[({\widetilde{\omega}_2}\cup_1{\widetilde{\omega}_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\widetilde{\omega}_2})\big]{[n_{1}]_2},\\
-\zeta_{2,1}({\widetilde{\omega}_2},{[n_{1}]_2})(01234)={}&{\widetilde{\omega}_2}(012){\widetilde{\omega}_2}(023){[n_{1}]_2}(23){[n_{1}]_2}(34).
+&+\big[({\widetilde{\omega}_2}\cup_1{\widetilde{\omega}_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\widetilde{\omega}_2})\big]{[n_{1}]_2}.
 \end{aligned}
 ```
 
+Here $`\zeta_{2,1}(x,y)(01234)=x(012)\,x(023)\,y(23)\,y(34)`$.
 The second digit obeys $`d[\lfloor n_1/2\rfloor]_2=[n_1]_2^2+s_1[n_1]_2`$.
 
 ### 4. Bosonic obstruction
