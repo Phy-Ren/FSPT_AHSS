@@ -10,7 +10,8 @@
 
 ## Arguments of the code
 
-Write $`B_3=n_2\cup_1n_2`$ and let $`\mathcal B_2`$ be the pair reference
+Write $`B_3=n_2\cup_1n_2`$, $`B'_3=n'_2\cup_1n'_2`$, $`B_3[N]=N_2\cup_1N_2`$, and let
+$`\mathcal B_2`$ be the two-cochain of the general stacking formula,
 
 ```math
 \begin{aligned}
@@ -25,42 +26,39 @@ Write $`B_3=n_2\cup_1n_2`$ and let $`\mathcal B_2`$ be the pair reference
 ```
 
 The code evaluates its bosonic construction with the complex-fermion
-input $`n_3+B_3`$ on each state, and with the stacked complex-fermion output
-$`N_3+B_3[N_2]+d\mathcal B_2`$. Its lower differentials are therefore
-$`d(n_3+B_3)=\mathcal{𝒪}_4+dB_3`$. The ordinary Majorana operators and the
-original projection schedule are the same as in the formulas; only the
-complex-fermion argument of the evaluation differs.
+argument $`n_3+B_3`$ on each state, and with the stacked argument
+$`N_3+B_3[N]+d\mathcal B_2`$. Its lower differentials are therefore
+$`d(n_3+B_3)=\mathcal{𝒪}_4+dB_3`$. The phases of the code below are those after the
+[representative change of the code](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md).
 
 ## Obstruction
 
-The formula-page obstruction is the code obstruction evaluated at
-$`n_3+B_3`$, followed by the [paired representative change](THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md)
-and the phase change
+With $`\rho=\frac12[n_3\cup_2B_3+n_3\cup_3dB_3]`$,
 
 ```math
-\nu_4\longmapsto\nu_4-\frac12\big[n_3\cup_2B_3+n_3\cup_3dB_3\big].
+\mathcal{𝒪}_5=\mathcal{𝒪}_5^{\rm code}[n_3+B_3]+d_{s_1}\rho .
 ```
 
-The terms with $`B_3`$ in $`\mathcal{𝒪}_5^{c\psi}`$ and the sign of the
-quarter bracket in $`\mathcal{𝒪}_5^\gamma`$ come from this change.
+The terms with $`B_3`$ in $`\mathcal{𝒪}_5^{c\psi}`$, the four terms with
+$`n_2\cup_2dn_2`$ in $`\mathcal{𝒪}_5^{\gamma\psi}`$ and the sign of the quarter
+bracket in $`\mathcal{𝒪}_5^\gamma`$ come from this change.
 
 ## Product
 
-The formula-page stacking twister is the code twister, after the paired
-representative change, plus
-
 ```math
 \begin{aligned}
-&\frac12\big[\omega_2\mathcal B_2+\mathcal B_2^2+d\mathcal B_2\cup_1\mathcal B_2
- +(N_3+B_3[N_2]+d\mathcal B_2)\cup_2d\mathcal B_2\big]\\
-&-\Delta\Big(\frac12\big[n_3\cup_2B_3+n_3\cup_3dB_3\big]\Big)\\
-&-d_{s_1}\Big(\frac12\big[B_3\cup_3(\mathcal{ℰ}_3+n'_3)+R'_3\cup_3\mathcal{ℰ}_3
- +B_3[N_2]\cup_2\lambda_2^\gamma\big]\Big),
+\mathcal{ℰ}_4={}&\mathcal{ℰ}_4^{\rm code}[n_3+B_3,n'_3+B'_3]
+ +\frac12\big[\omega_2\mathcal B_2+\mathcal B_2^2+d\mathcal B_2\cup_1\mathcal B_2
+ +(N_3+B_3[N]+d\mathcal B_2)\cup_2d\mathcal B_2\big]\\
+&+\Delta\rho
+ +\frac12d_{s_1}\big[n'_3\cup_3B_3+(B_3+B'_3)\cup_3\mathcal{ℰ}_3
+ +(B_3+B'_3)\cup_2\lambda_2^\gamma+\lambda_2^\gamma\cup_2d\lambda_2^\gamma\big],
 \end{aligned}
 ```
 
-with $`\lambda_2^\gamma=n_2\cup_2n'_2`$. The first line is the change of the
-output face reference; the last line makes every contribution reduce to the
+with $`\lambda_2^\gamma=n_2\cup_2n'_2`$. The second term is the phase of the shift
+of the stacked argument by $`d\mathcal B_2`$. The last term is a rephasing of the
+stacking move; with it every contribution reduces exactly to the
 [closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d) at
 $`n_1=n'_1=0`$. The source and product change together, so all cylinder
 gauges, associators, and exchange homotopies are transported with them.
@@ -69,18 +67,18 @@ gauges, associators, and exchange homotopies are transported with them.
 
 For either finite-root branch, $`n_1=0`$ or $`n_1=s_1`$, one has
 $`\mathcal B_2=n_2`$ and $`N_2\cup_1N_2=0`$.
-For $`\mathbb Z_4^{f,T}`$, $`s_1=m_1`$, $`\omega_2=m_1^2`$, the displayed root
-representatives have $`B_3=0`$. $`\mathcal B_2`$ vanishes for
-the p+ip square and equals $`m_1^2`$ for the Majorana square; its differential
-vanishes and its phase is $`(\omega_2\mathcal B_2+\mathcal B_2^2)/2=0`$ modulo one.
-The complete root phases and the $`\mathbb Z_{16}`$ group are unchanged.
+For $`\mathbb Z_4^{f,T}`$, $`s_1=m_1`$, $`\omega_2=m_1^2`$, the root
+representatives have $`B_3=0`$ and $`dn_2=0`$. The root phases, the squares and the
+$`\mathbb Z_{16}`$ group follow from the formulas directly; the
+[3+1D verification](verification/three_dimensional/README.md) evaluates them on all
+bar simplices.
 
 ## Verification
 
-The [reproduction bundle](verification/geometric_3d/README.md) contains the
-complete directed-matching census of the code. The
-[bare-variable verifier](coefficients/verify_three_dimensional_bare_formulas.py)
-checks the change of argument above: the transport identities for arbitrary
-cochains, the vanishing of every $`p+ip`$ contribution at $`n_1=0`$ on random
-closed towers, and the self-stacking terms against the general law with
-equal inputs.
+[`check_code.py`](verification/three_dimensional/check_code.py) checks both
+equations above pointwise on random solutions of the lower equations. The code
+phases are stored as term lists in
+[`code_phases`](verification/three_dimensional/code_phases) for the
+complex-fermion and Majorana contributions; the mixed and p+ip contributions
+are the [term manifests](term_census/three_dimensional/INDEX.json) of the
+formula page.

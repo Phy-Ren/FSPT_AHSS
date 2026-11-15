@@ -64,14 +64,14 @@ The second digit obeys $`d[\lfloor n_1/2\rfloor]_2=[n_1]_2^2+s_1[n_1]_2`$.
 
 {{equation:three-dimensional--4-bosonic-obstruction--10}}
 
-The decoration $`n_3`$ is the point-fermion occupation in the geometric pairing
-reference. The formulas below use the fixed binary three-cochain
+The decoration $`n_3`$ is the occupation of the point fermions. The formulas
+below abbreviate
 
 ```math
-B_3=n_2\cup_1n_2,
+B_3=n_2\cup_1n_2.
 ```
 
-the pairing reference of the complex fermions. All phases are in the physical
+All phases are in the physical
 convention of the [guide](../FORMULA_GUIDE.md#phase-convention). For $`n_1=0`$
 every contribution reduces to the
 [closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d).
@@ -84,7 +84,7 @@ every contribution reduces to the
 
 {{equation:three-dimensional--complex-fermions-and-majorana-decoration--12}}
 
-The bracket includes the reference correction to the preceding parity:
+The bracket is the Majorana part of the complex-fermion parity:
 $`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2n_2
 +\omega_2n_2+s_1\mathrm{Sq}^1n_2+d(n_2\cup_1n_2)`$.
 Its mixed component retains the terms proportional to $`dn_2`$;
@@ -130,8 +130,10 @@ contribution is the closed-Majorana formula.
 {{equation:three-dimensional--majorana-and-p-ip-decoration--16}}
 
 The sum contains **2,276 ordinary MS terms** after substituting its finite
-definitions and collecting equal normalized cochains. This counts the
-complete half-valued sum; the quarter-valued terms are separate.
+definitions and collecting equal normalized cochains. The four further
+half-valued cup terms contain $`n_2\cup_2dn_2`$, the difference
+$`[\beta^-n_2]_2-n_2\cup_1n_2`$ of the two binary carries of an open
+Majorana decoration; they vanish for $`n_1=0`$. The quarter-valued terms are separate.
 
 The integer carry and the twisted Bockstein are
 
@@ -212,7 +214,7 @@ The Pontryagin-square convention in the last term is
 
 {{equation:three-dimensional--3-complex-fermion-stacking--27}}
 
-The pure sheet contribution has three terms. The signed floor is taken before reduction. The complete parity is counted directly by the geometric pairing construction, including both backgrounds.
+The p+ip contribution has three terms. The signed floor is taken before reduction. The parity of a lattice P move equals this formula for both backgrounds.
 
 ### 4. Bosonic stacking
 
@@ -220,10 +222,11 @@ The pure sheet contribution has three terms. The signed floor is taken before re
 
 {{equation:three-dimensional--4-bosonic-stacking--28}}
 
-The formulas below use $`B_3=n_2\cup_1n_2`$ on each input and on the output,
-$`\Delta B_3=B_3[N_2]-B_3[n_2]-B_3[n'_2]`$,
+The formulas below use $`B_3=n_2\cup_1n_2`$, $`B'_3=n'_2\cup_1n'_2`$ and
+$`B_3[N]=N_2\cup_1N_2`$,
+$`\Delta B_3=B_3[N]-B_3-B'_3`$,
 $`B_3^+=[n_2+n'_2]_2\cup_1[n_2+n'_2]_2`$, $`\lambda_2^\gamma=n_2\cup_2n'_2`$,
-and the finite pair reference of the P move,
+and the fixed two-cochain
 
 {{equation:three-dimensional-geometric-reference--pair-cochain}}
 
@@ -246,12 +249,15 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,N_2)`$ minus the
 {{equation:three-dimensional--complex-fermions-and-p-ip-decoration--30}}
 
 The two face brackets contain **13 products** after distributing the
-binary parentheses: eight multiply $`dn_3+dB_3`$ and five multiply $`dn'_3+dR'_3`$.
+binary parentheses: eight multiply $`dn_3+dB_3`$ and five multiply $`dn'_3+dB'_3`$.
 The [exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md) proves
-that this form is exact. The lower obstruction acts on its whole
+that these products equal the complex-fermion exchange words. The lower obstruction acts on its whole
 binary argument; it must not be linearized.
-The terms with $`B_3`$, $`\lambda_2^\gamma`$ and $`\mathcal B_2`$ come from the
-pairing references of the complex fermions; together they vanish for
+The terms with $`\mathcal B_2`$ are the phase of the shift
+$`N_3\mapsto N_3+d\mathcal B_2`$ of the stacked point-fermion occupation.
+The terms with $`[\beta^-n_2]_2`$ and $`\lambda_2^\gamma`$ compensate the
+quarter-valued Majorana terms; the derivative term is a rephasing of the
+stacking move. Together with the terms in $`B_3`$ they vanish for
 $`n_1=n'_1=0`$, so that the whole contribution vanishes there.
 
 #### Majorana decoration
@@ -293,7 +299,7 @@ binary lift in the mixed carry retains its two-term interior and is not
 distributed as an integer sum.
 
 The two repeated quarter-valued copies of $`\omega_2\lambda_2^\gamma`$
-have been combined in the half-valued bracket. The integer differential of
+have been combined in the half-valued bracket.
 
 These are exact coefficient combinations, with no change of phase
 coordinate or reassignment of physical contributions.

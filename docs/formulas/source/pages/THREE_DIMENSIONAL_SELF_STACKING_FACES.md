@@ -2,15 +2,7 @@
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
-**Code documentation.** This page documents how the numerical code in
-`formulas/publication_source/full3` generates part of the
-[3+1D formulas](THREE_DIMENSIONAL.md). The code evaluates its construction with
-the complex-fermion input $`n_3+B_3`$, $`B_3=n_2\cup_1n_2`$, on each state and
-with the stacked output $`N_3+B_3[N_2]+d\mathcal B_2`$; within this page
-$`n_3`$, $`n'_3`$ and $`N_3`$ denote these code arguments. The change to the
-bare formulas is stated in [From the code to the 3+1D formulas](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
-
-The input has $`n_1=s_1`$ and satisfies the complete lower equations. Each linked row is one explicitly specified binary product of physical cochain faces on $`(01234)`$. Integer output $`2s_1`$ has not yet been gauged away. No summand or background coefficient is hidden.
+The input has $`n_1=s_1`$ and satisfies the complete lower equations. Each linked row is one explicitly specified binary product of physical cochain faces on $`(01234)`$. Every factor is a value of $`s_1`$, $`\omega_2`$ or $`n_2`$ on a face containing the vertex $`0`$; these values determine all other faces through the lower equations. The [3+1D verification](verification/three_dimensional/README.md) regenerates both tables from the general law with two equal inputs, by evaluating it on all $`2^{16}`$ values of these face variables. Integer output $`2s_1`$ has not yet been gauged away. No summand or background coefficient is hidden.
 
 <a id="majoranapip-half-contribution"></a>
 ## Majorana–p+ip half contribution

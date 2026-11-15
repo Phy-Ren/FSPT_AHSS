@@ -65,6 +65,6 @@ def run(directory):
             assert all(tuple(sorted(set(t)))==t and all(0<=i<len(extra['factor_alphabet'])for i in t)for t in terms)
         reports.append({'file':entry['file'],'status':'PASS exact scalar coefficient identity','before_ms':half['before_word_count'],'after_ms':half['collected_word_count'],'scalar_coefficients':len(target)})
         interval_faces.cache_clear()
-    receipt={'status':'PASS','sectors':len(reports),'seconds':round(time.time()-start,3),'checks':reports,'scope':'All12 selected MS sums equal the explicit before scalar polynomial on arbitrary typed normalized binary cochains. Integer carry ASTs and physical face tables are present but are not re-derived by this binary comparison.'}
+    receipt={'status':'PASS','sectors':len(reports),'seconds':round(time.time()-start,3),'checks':reports,'scope':'All four MS sums equal the explicit before scalar polynomial on arbitrary typed normalized binary cochains. Integer carry ASTs and physical face tables are present but are not re-derived by this binary comparison.'}
     print(json.dumps(receipt,indent=2));return receipt
 if __name__=='__main__':run(Path(sys.argv[1])if len(sys.argv)>1 else Path(__file__).resolve().parent)

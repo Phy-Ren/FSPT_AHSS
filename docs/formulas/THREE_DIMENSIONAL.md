@@ -92,14 +92,14 @@ d_{s_1}\nu_4=\mathcal{𝒪}_5
   +\mathcal{𝒪}_5^\psi.
 ```
 
-The decoration $`n_3`$ is the point-fermion occupation in the geometric pairing
-reference. The formulas below use the fixed binary three-cochain
+The decoration $`n_3`$ is the occupation of the point fermions. The formulas
+below abbreviate
 
 ```math
-B_3=n_2\cup_1n_2,
+B_3=n_2\cup_1n_2.
 ```
 
-the pairing reference of the complex fermions. All phases are in the physical
+All phases are in the physical
 convention of the [guide](../FORMULA_GUIDE.md#phase-convention). For $`n_1=0`$
 every contribution reduces to the
 [closed-sector formulas](MAJORANA_AND_ENDPOINTS.md#majorana-3d).
@@ -118,7 +118,7 @@ every contribution reduces to the
 =\frac12\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}\big]\cup_3\big[\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}\big].
 ```
 
-The bracket includes the reference correction to the preceding parity:
+The bracket is the Majorana part of the complex-fermion parity:
 $`\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi}=\mathrm{Sq}^2n_2
 +\omega_2n_2+s_1\mathrm{Sq}^1n_2+d(n_2\cup_1n_2)`$.
 Its mixed component retains the terms proportional to $`dn_2`$;
@@ -215,8 +215,12 @@ contribution is the closed-Majorana formula.
 ```math
 \begin{aligned}
 \mathcal{𝒪}_5^{\gamma\psi}
-={}&\frac12\sum_{(v;\mathbf x)\in\mathcal I_5^{\gamma\psi}}
-       \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)\\
+={}&\frac12\Big[\sum_{(v;\mathbf x)\in\mathcal I_5^{\gamma\psi}}
+       \mathop{\mathrm{MS}}\nolimits_v(\mathbf x)
+ +\omega_2(n_2\cup_2dn_2)\\
+&\qquad+(n_2\cup_1n_2)\cup_1(n_2\cup_2dn_2)
+ +(n_2\cup_2dn_2)\cup_1(n_2\cup_1n_2)\\
+&\qquad+(n_2\cup_2dn_2)\cup_1(n_2\cup_2dn_2)\Big]\\
 &-\frac14\Big[
  (\beta^-n_2)\cup_1\beta_3^\psi
  +\beta_3^\psi\cup_1(\beta^-n_2)
@@ -227,8 +231,10 @@ contribution is the closed-Majorana formula.
 ```
 
 The sum contains **2,276 ordinary MS terms** after substituting its finite
-definitions and collecting equal normalized cochains. This counts the
-complete half-valued sum; the quarter-valued terms are separate.
+definitions and collecting equal normalized cochains. The four further
+half-valued cup terms contain $`n_2\cup_2dn_2`$, the difference
+$`[\beta^-n_2]_2-n_2\cup_1n_2`$ of the two binary carries of an open
+Majorana decoration; they vanish for $`n_1=0`$. The quarter-valued terms are separate.
 
 The integer carry and the twisted Bockstein are
 
@@ -363,7 +369,7 @@ N_3&=n_3+n'_3+\mathcal{ℰ}_3,\\
  +[\lfloor n_1/2\rfloor]_2([n'_1]_2)^2+s_1[\lfloor n_1/2\rfloor]_2[n'_1]_2.
 ```
 
-The pure sheet contribution has three terms. The signed floor is taken before reduction. The complete parity is counted directly by the geometric pairing construction, including both backgrounds.
+The p+ip contribution has three terms. The signed floor is taken before reduction. The parity of a lattice P move equals this formula for both backgrounds.
 
 ### 4. Bosonic stacking
 
@@ -383,10 +389,11 @@ The pure sheet contribution has three terms. The signed floor is taken before re
 \end{aligned}
 ```
 
-The formulas below use $`B_3=n_2\cup_1n_2`$ on each input and on the output,
-$`\Delta B_3=B_3[N_2]-B_3[n_2]-B_3[n'_2]`$,
+The formulas below use $`B_3=n_2\cup_1n_2`$, $`B'_3=n'_2\cup_1n'_2`$ and
+$`B_3[N]=N_2\cup_1N_2`$,
+$`\Delta B_3=B_3[N]-B_3-B'_3`$,
 $`B_3^+=[n_2+n'_2]_2\cup_1[n_2+n'_2]_2`$, $`\lambda_2^\gamma=n_2\cup_2n'_2`$,
-and the finite pair reference of the P move,
+and the fixed two-cochain
 
 ```math
 \begin{aligned}
@@ -431,17 +438,19 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,N_2)`$ minus the
 ={}&\frac12\Big[
  \mathcal{𝒪}_4^\psi[n_1]\cup_3n'_3
  +\Delta\big(n_3\cup_3\mathcal{𝒪}_4^\psi\big)\\
-&\qquad+(n_3+n'_3)\cup_2\Delta B_3+dB_3\cup_3n'_3+n_3\cup_2R'_3+B_3\cup_2n'_3\\
-&\qquad+(B_3+R'_3)\cup_2(\mathcal{ℰ}_3+\Delta B_3)+(dn_3+dB_3)\cup_3R'_3\\
+&\qquad+(n_3+n'_3)\cup_2\Delta B_3+dB_3\cup_3n'_3+n_3\cup_2B'_3+B_3\cup_2n'_3+B_3\cup_2B'_3\\
+&\qquad+(B_3+B'_3)\cup_2(\mathcal{ℰ}_3+\Delta B_3)+(dn_3+dB_3)\cup_3B'_3\\
 &\qquad+\Delta\big(B_3\cup_3(dn_3+dB_3)+n_3\cup_2B_3\big)\\
 &\qquad+\omega_2\mathcal B_2+\mathcal B_2^2+d\mathcal B_2\cup_1\mathcal B_2
- +(\mathcal{ℰ}_3+\Delta B_3+d\mathcal B_2)\cup_2d\mathcal B_2\\
-&\qquad+d\mathcal B_2\cup_3(dN_3+dB_3[N])\\
-&\qquad+(B_3+R'_3)\cup_1\lambda_2^\gamma+\lambda_2^\gamma\cup_1B_3^+
+ +(\mathcal{ℰ}_3+\Delta B_3+d\mathcal B_2)\cup_2d\mathcal B_2
+ +d\mathcal B_2\cup_3(dN_3+dB_3[N])\\
+&\qquad+[\beta^-n_2]_2\cup_2[\beta^-n'_2]_2
+ +([\beta^-n_2]_2+[\beta^-n'_2]_2)\cup_1\lambda_2^\gamma
+ +\lambda_2^\gamma\cup_1[\beta^-[n_2+n'_2]_2]_2
  +(\lambda_2^\gamma)^2+\omega_2\lambda_2^\gamma\\
-&\qquad+d_{s_1}\big(\lambda_2^\gamma\cup_1\lambda_2^\gamma+\lambda_2^\gamma\cup_2d\lambda_2^\gamma
- +B_3\cup_3(\mathcal{ℰ}_3+n'_3)+R'_3\cup_3\mathcal{ℰ}_3+B_3[N]\cup_2\lambda_2^\gamma\big)\\
-&\qquad+(dn_3+dn'_3+dB_3+dR'_3)\cup_4\big[
+&\qquad+d_{s_1}\big(n'_3\cup_3B_3+(B_3+B'_3)\cup_3\mathcal{ℰ}_3
+ +(B_3+B'_3)\cup_2\lambda_2^\gamma+\lambda_2^\gamma\cup_1\lambda_2^\gamma\big)\\
+&\qquad+(dn_3+dn'_3+dB_3+dB'_3)\cup_4\big[
  \omega_2\mathcal{ℰ}_2+s_1(B_3[N]+B_3^+)\big]\Big](01234)\\
 &+\frac12(dn_3+dB_3)(01234)\Big[
  n'_2(012)(dn_2)(0234)
@@ -453,7 +462,7 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,N_2)`$ minus the
  n'_2(124)(dn_2)(1234)
  +[n_2(123)+n'_2(123)](dn'_2)(1234)
  \Big\}\Big]\\
-&+\frac12(dn'_3+dR'_3)(01234)\Big[
+&+\frac12(dn'_3+dB'_3)(01234)\Big[
  n'_2(012)(dn_2)(0234)
  +n_2(034)(dn'_2)(0123)\\
 &\qquad+s_1(01)\Big\{
@@ -464,12 +473,15 @@ The $`\Delta`$ has its defined three terms: the value at $`(N_3,N_2)`$ minus the
 ```
 
 The two face brackets contain **13 products** after distributing the
-binary parentheses: eight multiply $`dn_3+dB_3`$ and five multiply $`dn'_3+dR'_3`$.
+binary parentheses: eight multiply $`dn_3+dB_3`$ and five multiply $`dn'_3+dB'_3`$.
 The [exchange reduction](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md) proves
-that this form is exact. The lower obstruction acts on its whole
+that these products equal the complex-fermion exchange words. The lower obstruction acts on its whole
 binary argument; it must not be linearized.
-The terms with $`B_3`$, $`\lambda_2^\gamma`$ and $`\mathcal B_2`$ come from the
-pairing references of the complex fermions; together they vanish for
+The terms with $`\mathcal B_2`$ are the phase of the shift
+$`N_3\mapsto N_3+d\mathcal B_2`$ of the stacked point-fermion occupation.
+The terms with $`[\beta^-n_2]_2`$ and $`\lambda_2^\gamma`$ compensate the
+quarter-valued Majorana terms; the derivative term is a rephasing of the
+stacking move. Together with the terms in $`B_3`$ they vanish for
 $`n_1=n'_1=0`$, so that the whole contribution vanishes there.
 
 #### Majorana decoration
@@ -597,7 +609,7 @@ binary lift in the mixed carry retains its two-term interior and is not
 distributed as an integer sum.
 
 The two repeated quarter-valued copies of $`\omega_2\lambda_2^\gamma`$
-have been combined in the half-valued bracket. The integer differential of
+have been combined in the half-valued bracket.
 
 These are exact coefficient combinations, with no change of phase
 coordinate or reassignment of physical contributions.

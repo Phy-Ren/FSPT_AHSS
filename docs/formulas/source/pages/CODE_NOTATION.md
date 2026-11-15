@@ -73,13 +73,14 @@ The formula pages use the occupations $`n_3,n_4`$ themselves.
 **3+1D.** The complete map is stated in
 [From the code to the 3+1D formulas](../docs/formulas/THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md),
 together with the [native phase representative](../docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md)
-of the code. Use `fspt/geometric_reference_3d.py` for the lower fields: its
-`obstruction` and `lower_product` return the displayed $`\mathcal O_4`$ and
-$`\mathcal E_3`$, and `source_arguments` returns the code argument $`n_3+B_3`$.
+of the code. The displayed lower fields $`\mathcal O_4`$ and $`\mathcal E_3`$ are
+evaluated by [`formulas.py`](../docs/formulas/verification/three_dimensional/formulas.py).
 For the product, compute $`\mathcal B_2`$ on the actual signed inputs; the code
-output is $`N_3+B_3[N_2]+d\mathcal B_2`$. The frozen term-census JSON kernels
-use the key `n_3` for the code argument $`n_3+B_3`$, including in the primed input
-and all derivatives.
+output is $`N_3+B_3[N_2]+d\mathcal B_2`$. The code phases in
+[`code_phases`](../docs/formulas/verification/three_dimensional/code_phases)
+name the code argument `n_3+B_3`, and
+[`check_code.py`](../docs/formulas/verification/three_dimensional/check_code.py)
+checks the complete map pointwise.
 
 <a id="eq-t3d"></a>
 
@@ -111,9 +112,7 @@ not a coboundary. The changes are applied in order:
 3. the occupation change $`\nu_5\mapsto\nu_5-\tfrac12\big[n_4\cup_3B_4+n_4\cup_4dB_4\big]`$.
 
 The [4+1D verifier](../docs/formulas/coefficients/verify_four_dimensional_bare_formulas.py)
-checks the identities behind the third change for arbitrary cochains; the
-[3+1D verifier](../docs/formulas/coefficients/verify_three_dimensional_bare_formulas.py)
-does the same one degree lower.
+checks the identities behind the third change for arbitrary cochains.
 
 Each change $`\nu\mapsto\nu+B`$ adds $`d_{s_1}B`$ to the obstruction and
 $`\Delta B`$ to the stacking correction, evaluated on the actual lower output.
@@ -409,9 +408,10 @@ No compiled program or coefficient table changes in this regrouping.
 
 The reader formulas use $`\beta^-x=(dx-[dx]_2)/2`$ for the integer carry of a possibly nonclosed binary cochain.
 Binary reduction is $`[x]_2`$, and the second binary digit is $`[\lfloor x/2\rfloor]_2`$.
-Frozen coefficient files retain their original field labels so their checksums and recorded calculations remain reproducible.
+The 3+1D term lists use the printed expressions as field names.
+The 4+1D coefficient files retain their original field labels so their checksums and recorded calculations remain reproducible.
 The formulas use the same symbol for a phase and its additive value; a phase hat in those files denotes the additive value.
-In those files `\check n_2` is the Majorana decoration $`n_2`$, `\check\omega_2` is $`\widetilde{\omega}_2`$, `\check n_3` is the 3+1D code argument $`n_3+B_3`$, `beta_open` denotes $`\beta^-`$, and a `tilde` field denotes the explicit second binary digit.
+In those files `\check n_2` is the Majorana decoration $`n_2`$, `\check\omega_2` is $`\widetilde{\omega}_2`$, `beta_open` denotes $`\beta^-`$, and a `tilde` field denotes the explicit second binary digit.
 These are translations of labels, with no change to the cochains, coefficients, or numerical API.
 
 ## GitHub script-glyph encoding

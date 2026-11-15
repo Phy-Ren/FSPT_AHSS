@@ -78,11 +78,11 @@ listed in the [structured count ledger](term_census/STRUCTURED_TERM_COUNTS.json)
 | 3+1D | O2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 3+1D | O3 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
 | 3+1D | O4 | 0 | 0 | 0 | 3 | 2 | 5 | 10 |
-| 3+1D | O5 | 3 | 4 | 15 | 15 | 2,281 | 11,416 | 13,734 |
+| 3+1D | O5 | 3 | 4 | 15 | 15 | 2,285 | 11,416 | 13,738 |
 | 3+1D | E1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 3+1D | E2 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
 | 3+1D | E3 | 0 | 0 | 0 | 2 | 5 | 13 | 20 |
-| 3+1D | E4 | 3 | 4 | 73 | 43 | 16,059 | 10,583 | 26,765 |
+| 3+1D | E4 | 3 | 4 | 75 | 43 | 16,059 | 10,583 | 26,767 |
 | 4+1D | O3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4+1D | O4 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
 | 4+1D | O5 | 0 | 0 | 0 | 3 | 2 | 13 | 18 |
@@ -149,12 +149,10 @@ completions. The integer output is retained before full gauge reduction.
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 2+1D, zero integer decoration | 1 | 1 | 0 | 6 | 0 | 0 | **8** |
 | 3+1D, zero p+ip | 1 | 1 | 0 | 8 | 0 | 0 | **10** |
-| 3+1D, canonical torsion p+ip | 1 | 3 | 16 | 14 | 1,144 | 250 | **1,428** |
+| 3+1D, canonical torsion p+ip | 1 | 3 | 19 | 18 | 1,144 | 250 | **1,435** |
 | 4+1D, arbitrary permitted p+ip | 1 | 10 | 2 | 202 | 3,613,699 | 793,729 | **4,407,643 outer terms** |
 
-The 3+1D open-Majorana entry has one whole lift with two interior terms;
-counting that interior gives 14 leaves for the contribution and 1,415 for
-the complete canonical torsion twister. The outer count remains 1,428.
+The 3+1D canonical torsion entries contain no whole lift.
 
 The 4+1D Majorana entry has four protected lifts containing 106 products.
 Replacing only those four wrappers by their interiors gives 304 expression

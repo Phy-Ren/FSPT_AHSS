@@ -46,10 +46,10 @@ published fixed-point lattice constructions. It is stated once here.
 - **Coefficients.** Phase coefficients are signed minimal representatives,
   for example $`-\tfrac14`$ rather than $`\tfrac34`$.
 - **Occupations.** $`n_d`$ is the physical point-fermion occupation of the
-  original Majorana pairing arrows, and every formula uses it directly. With
-  p+ip decoration the formulas contain the fixed pairing reference of the
-  complex fermions: $`B_3=n_2\cup_1n_2`$ in [3+1D](formulas/THREE_DIMENSIONAL.md)
-  and the four-face polynomial $`B_4`$ of the
+  original Majorana pairing arrows, and every formula uses it directly. The
+  [3+1D formulas](formulas/THREE_DIMENSIONAL.md) abbreviate
+  $`B_3=n_2\cup_1n_2`$; in 4+1D the complex-fermion parity contains the
+  four-face polynomial $`B_4`$ of the
   [4+1D pairing reference](formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#eq-r4).
   For $`n_{d-2}=0`$ every formula reduces term by term to the
   [closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md).
@@ -216,7 +216,7 @@ cups are recorded once and their full substitutions are reported separately.
 - [4+1D pure-source construction](formulas/SOURCE_OPERATIONS.md#source-completion).
 - [4+1D pure-source physical face coefficients](formulas/FOUR_DIMENSIONAL_Y6_FACES.md).
 - [Root powers and the abelian stacking group](formulas/ROOT_POWER_PRESENTATIONS.md)
-- [3+1D zero-p+ip self-twister](formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md)
+- [3+1D zero-p+ip self-twister](formulas/THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md), [3+1D torsion self-stacking face tables](formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES.md)
 - [Closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md), [4+1D zero-p+ip self-stacking](formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
 - [Exact Majorana carry reduction](formulas/FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
 - [Higher cups and finite sums](formulas/OPERATIONS.md), [fixed coefficients](formulas/COEFFICIENTS.md)
@@ -231,7 +231,8 @@ formulas themselves do not depend on them.
 
 - [Formula-to-code translation](../formulas/CODE_NOTATION.md)
 - [From the code to the 3+1D formulas](formulas/THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md), [native 3+1D phase representative](formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md), [3+1D code construction](formulas/THREE_DIMENSIONAL_TERMINAL.md)
-- [3+1D stacking word grammar](formulas/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md), [canonical 3+1D self-stacking face kernels](formulas/THREE_DIMENSIONAL_SELF_STACKING_FACES.md)
+- [3+1D stacking word grammar](formulas/THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md)
+- [3+1D verification](formulas/verification/three_dimensional/README.md)
 
 A nonzero obstruction cochain may be a coboundary. Only its nontrivial
 class after the permitted lower-layer changes obstructs the decoration.

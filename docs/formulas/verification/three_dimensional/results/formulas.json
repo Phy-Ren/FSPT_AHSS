@@ -1,0 +1,65 @@
+{
+ "status": "PASS",
+ "samples": 300,
+ "torsion_samples": 1200,
+ "failures": {
+  "closure": 0,
+  "stacking": 0,
+  "closed": {
+   "O5": 0,
+   "E4": 0,
+   "vanishing": 0
+  },
+  "self_zero": 0,
+  "self_torsion": {
+   "c": 0,
+   "cgamma": 0,
+   "cpsi": 0,
+   "gamma": 0,
+   "gammapsi": 0,
+   "psi": 0
+  },
+  "Z4fT": {
+   "p+ip": {
+    "nu4": "1/4 m1^4",
+    "square": "(2 m1, 1 m1^2, 0 m1^3, 1/4 m1^4)",
+    "failures": {
+     "lower": 0,
+     "obstruction": 0,
+     "square_fields": 0,
+     "square_phase": 0
+    }
+   },
+   "Majorana": {
+    "nu4": "1/4 m1^4",
+    "square": "(0 m1, 0 m1^2, 1 m1^3, 0 m1^4)",
+    "failures": {
+     "lower": 0,
+     "obstruction": 0,
+     "square_fields": 0,
+     "square_phase": 0
+    }
+   },
+   "complex fermion": {
+    "nu4": "0 m1^4",
+    "square": "(0 m1, 0 m1^2, 0 m1^3, 1/2 m1^4)",
+    "failures": {
+     "lower": 0,
+     "obstruction": 0,
+     "square_fields": 0,
+     "square_phase": 0
+    }
+   },
+   "bosonic": {
+    "nu4": "1/2 m1^4",
+    "square": "(0 m1, 0 m1^2, 0 m1^3, 0 m1^4)",
+    "failures": {
+     "lower": 0,
+     "obstruction": 0,
+     "square_fields": 0,
+     "square_phase": 0
+    }
+   }
+  }
+ }
+}

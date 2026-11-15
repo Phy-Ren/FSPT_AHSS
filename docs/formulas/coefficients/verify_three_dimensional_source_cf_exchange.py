@@ -8,7 +8,7 @@ cohomology-class test is used: the entire binary cochain is identical.
 """
 from itertools import combinations
 import json
-import verify_three_dimensional_canonical_self_stacking as m
+import exact_cochains as m
 
 
 def run():

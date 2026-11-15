@@ -9,7 +9,7 @@ four-simplex is
 
 The two face brackets contain **13 explicit products** after distributing
 the displayed binary parentheses: eight multiply $`dn_3+dB_3`$ and five multiply
-$`dn'_3+dR'_3`$, with $`B_3=n_2\cup_1n_2`$. The lower differentials are
+$`dn'_3+dB'_3`$, with $`B_3=n_2\cup_1n_2`$. The lower differentials are
 $`dn_2=\widetilde{\omega}_2[n_1]_2`$ and $`dn'_2=\widetilde{\omega}_2[n'_1]_2`$.
 On identical complete inputs, the terms proportional to $`s_1(01)`$ and
 the first two products cancel between the two face brackets. The remaining

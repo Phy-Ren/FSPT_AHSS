@@ -9,7 +9,7 @@ completion and bosonic phase. The lower fields obey the obstruction equations
 in [the 3+1D reference](THREE_DIMENSIONAL.md). The background is
 $`\widetilde{\omega}_2=\omega_2+s_1^2`$.
 The formulas are the general laws of that reference with two equal inputs,
-with $`B_3=n_2\cup_1n_2`$ the pairing reference of the complex fermions.
+with $`B_3=n_2\cup_1n_2`$.
 
 The terminal formulas below cover $`n_1=0`$ and the canonical signed torsion
 representative $`n_1=s_1`$. These are the two branches required for finite root
@@ -67,8 +67,8 @@ $`\mathrm{Sq}^1n_2+s_1n_2+\mathcal{ℰ}_3^\psi`$,
 with the open-cochain square. The changed cup order is essential.
 The diagonal Cartan term vanishes because the input parity is closed.
 
-For both finite-root branches below, the pair reference is $`\mathcal B_2=n_2`$ and
-$`N_2\cup_1N_2=0`$.
+For both finite-root branches below, the two-cochain $`\mathcal B_2`$ of the
+general formula equals $`n_2`$, and $`N_2\cup_1N_2=0`$.
 
 ## 4. Bosonic self-stacking with zero p+ip input
 
@@ -155,7 +155,7 @@ In particular,
 $`dn_2=\widetilde{\omega}_2s_1`$ and
 $`dn_3=(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[n_2]
 +\mathcal{𝒪}_4^\psi[s_1]`$.
-The six labels retain their fermionic exchange origins. The point-fermion block also carries the finite phase of the output point-occupation reference change.
+The six labels retain their fermionic exchange origins.
 
 ### Complex fermions
 
@@ -186,8 +186,10 @@ On the ordered four-simplex,
 ={}&\frac12\Big[
  \mathcal{𝒪}_4^\psi[s_1]\cup_3n_3
  +N_3\cup_3\mathcal{𝒪}_4^\psi[2s_1]
- +B_3\cup_3dn_3+dn_3\cup_3B_3+dB_3\cup_3B_3\\
-&\qquad+(N_3+dn_2)\cup_2dn_2+dn_2\cup_3dN_3+dn_2\cup_2dn_2+dn_2\cup_1n_2\Big](01234)\\
+ +dB_3\cup_3n_3+n_3\cup_3dB_3+dB_3\cup_3B_3+dB_3\\
+&\qquad+(N_3+dn_2)\cup_2dn_2+dn_2\cup_3dN_3+dn_2\cup_1n_2\\
+&\qquad+B_3\cup_2(n_2\cup_2dn_2)+(n_2\cup_2dn_2)\cup_2B_3
+ +(n_2\cup_2dn_2)\cup_2(n_2\cup_2dn_2)\Big](01234)\\
 &+\frac12(dn_3+dB_3)(01234)\Big[
  n_2(123)(dn_2)(0134)\\
 &\hspace{35mm}+n_2(014)(dn_2)(1234)
@@ -200,7 +202,9 @@ entire 132-word complex-fermion exchange on identical inputs. This is an
 exact cochain identity; the two other open-Majorana product terms vanish
 because their complex-fermion argument is $`n_3+n_3=0`$.
 The output evaluation $`\mathcal{𝒪}_4^\psi[2s_1]`$ retains the second digit:
-$`[\lfloor 2s_1/2\rfloor]_2=s_1`$.
+$`[\lfloor 2s_1/2\rfloor]_2=s_1`$. The three terms with $`n_2\cup_2dn_2`$ come from
+$`[\beta^-n_2]_2=n_2\cup_1n_2+n_2\cup_2dn_2`$; they vanish for a closed $`n_2`$.
+This contribution has **19 terms**.
 
 ### Majorana decoration
 
@@ -211,35 +215,32 @@ $`[\lfloor 2s_1/2\rfloor]_2=s_1`$.
                           (dn_2)(0134)\\
 &+\frac12\Big[
  \mathop{\mathrm{MS}}\nolimits_{123131}(n_2,n_2,
-                            n_2\cup_1n_2)\\
-&\quad +(n_2\cup_2dn_2)\cup_1n_2
- +n_2\cup_1(n_2\cup_1n_2)\\
-&\quad +n_2\cup_2
-      [n_2\cup_1(n_2\cup_1n_2)]
- +n_2^2\\
+                            n_2\cup_1n_2)
+ +(n_2\cup_1n_2)\cup_1n_2
+ +n_2\cup_1(n_2\cup_1n_2)
+ +n_2\cup_2[n_2\cup_1(n_2\cup_1n_2)]\\
+&\quad +[\beta^-n_2]_2\cup_2[\beta^-n_2]_2
+ +[\beta^-n_2]_2\cup_1n_2
+ +n_2^2\cup_4(\omega_2n_2)
+ +(n_2^2+\omega_2n_2)\cup_4(s_1[\beta^-n_2]_2)\\
 &\quad +(\omega_2\cup_1s_1)n_2
  +(n_2\cup_1n_2)\cup_2(s_1n_2)
  +s_1^2n_2
- +s_1\big[(s_1n_2)\cup_2n_2\big]
- +s_1(n_2\cup_2dn_2)\Big](01234)\\
+ +s_1\big([\beta^-n_2]_2\cup_3[\beta^-n_2]_2\big)
+ +s_1\big[(s_1n_2)\cup_2n_2\big]\Big](01234)\\
 &+\frac14\Big[
- (\beta^-n_2)\cup_2(\beta^-n_2)
- -s_1[\beta^-n_2]_2\\
-&\hspace{13mm}
- -[\mathcal{𝒪}_4^\gamma[n_2]
-             +s_1(n_2\cup_2dn_2)]_2
+ -(\beta^-n_2)\cup_2(\beta^-n_2)
+ +n_2^2-\omega_2n_2
  \Big](01234).
 \end{aligned}
 ```
 
-This is **14 outer terms: eleven half terms and three quarter terms**,
-valid also for an arbitrary open $`n_2`$. The whole lift contains
-**two terms**, retaining the existing lower obstruction. Replacing its
-wrapper by those two interior terms in the count gives **15 leaves**.
-The [lower-obstruction carry identity](THREE_DIMENSIONAL_OPEN_MAJORANA_LIFT_REDUCTION.md)
-rewrites six terms as three with exact equality modulo one.
+This is **18 terms: fifteen half terms and three quarter terms**,
+valid also for an arbitrary open $`n_2`$. It is the general Majorana
+contribution with two equal inputs.
 The first face product is the exact diagonal of seven intrinsic Majorana
-MS terms. Integer cups and the whole binary lift retain their scopes;
+MS terms. The quarter-valued terms are integer cups of $`\beta^-n_2`$ and of the
+canonical integer lift of $`n_2`$;
 $`\beta^- x=(dx-[dx]_2)/2`$ uses the integer differential
 in its first term.
 
@@ -323,21 +324,18 @@ canonical integer lift.
 |---|---:|
 | c | 1 |
 | c-gamma | 3 |
-| c-psi | 16 |
-| gamma | 14 |
+| c-psi | 19 |
+| gamma | 18 |
 | gamma-psi | 1,144 |
 | psi | 250 |
-| Complete canonical torsion self-twister | **1,428** |
+| Complete canonical torsion self-twister | **1,435** |
 
 The count retains the already defined lower differential representatives,
 Bocksteins and integer carries, while counting every finite coefficient
-product separately. The Majorana whole lift has two interior terms;
-counting its interior gives 1,429 leaves instead of 1,428 outer terms.
-It is not a claim of minimality.
-The [bare-variable verifier](coefficients/verify_three_dimensional_bare_formulas.py)
-checks the complex-fermion contributions against the general law with equal
-inputs, and the [lift-identity verifier](coefficients/verify_three_dimensional_open_gamma_lift_reduction.py)
-checks the carry identity used in the Majorana expression.
+product separately. It is not a claim of minimality.
+The [3+1D verification](verification/three_dimensional/README.md) checks every
+contribution of both branches pointwise against the general law with equal
+inputs, and regenerates the two face tables from the general law.
 
 These are complete **self-stacking twisters before gauge reduction**.
 To obtain a root relation, subsequently remove $`N_1=2s_1`$ with the complete

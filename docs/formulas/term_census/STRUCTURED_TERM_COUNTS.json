@@ -18,7 +18,7 @@
   ],
   "reader_hashes": {
     "docs/formulas/TWO_DIMENSIONAL.md": "92fa424193a482022df0b1a330eff2541eeafd0b26ce8b04a288026dc10edb68",
-    "docs/formulas/THREE_DIMENSIONAL.md": "6c8677fc7444d83f440f499b6dd484777cdee5ffa10825e5370a952748b366cd",
+    "docs/formulas/THREE_DIMENSIONAL.md": "2099a7964dbcef9237f1a57ec6cf77bf24aa5d1929b881c103a615822f549d16",
     "docs/formulas/FOUR_DIMENSIONAL.md": "3119151f86f0de3c06f47be16918f76ffc5028de93bd6a222a092c6df7b07e68"
   },
   "records": [
@@ -295,14 +295,15 @@
       "law": "O5",
       "origin": "gammapsi",
       "terms_by_coefficient": {
-        "binary_or_half": 2276,
+        "binary_or_half": 2280,
         "quarter": 5,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 2281
+      "total": 2285,
+      "note": "The MS sum has 2,276 terms; the four cup terms in n_2 cup_2 dn_2 are additional."
     },
     {
       "dimension": "3+1D",
@@ -422,14 +423,14 @@
       "law": "E4",
       "origin": "cpsi",
       "terms_by_coefficient": {
-        "binary_or_half": 73,
+        "binary_or_half": 75,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 73,
+      "total": 75,
       "note": "Every displayed binary sum is distributed; Delta, E_3, Delta B_3, B_3^+ and E_2 count once. The two face brackets contribute 13 products, each multiplied by the two terms of dn_3+dB_3."
     },
     {
@@ -847,11 +848,11 @@
     "3+1D O2": 0,
     "3+1D O3": 1,
     "3+1D O4": 10,
-    "3+1D O5": 13734,
+    "3+1D O5": 13738,
     "3+1D E1": 0,
     "3+1D E2": 1,
     "3+1D E3": 20,
-    "3+1D E4": 26765,
+    "3+1D E4": 26767,
     "4+1D O3": 0,
     "4+1D O4": 2,
     "4+1D O5": 18,
@@ -1336,195 +1337,8 @@
     "4+1D E5": 8555489,
     "scope": "Replace only 760 gamma leaves by 618 gamma outer addends; other declared boundaries unchanged."
   },
-  "archival_representations": {
-    "previous_structured_release": {
-      "label": "Pre-refinement displayed-expression boundary; retained for comparison, not the current reader count.",
-      "reader_hashes": {
-        "docs/formulas/TWO_DIMENSIONAL.md": "bdc4a7f835e90e2f5a5f35a2b6d880e08ed61661e29835a5f09f2621b47f7f81",
-        "docs/formulas/THREE_DIMENSIONAL.md": "212fda7e2ab0ed5a2036c20f278a969b8bfcf80a97a03c1911b0f23957cc4557",
-        "docs/formulas/FOUR_DIMENSIONAL.md": "77a4b0657c0e793932a567975f0de05d38a0ad35f65bc75b3577f6fe51820345"
-      },
-      "changed_records": [
-        {
-          "dimension": "3+1D",
-          "law": "O5",
-          "origin": "cgamma",
-          "terms_by_coefficient": {
-            "binary_or_half": 9,
-            "quarter": 0,
-            "eighth": 0,
-            "sixteenth": 0,
-            "third": 0,
-            "twelfth": 0
-          },
-          "total": 9
-        },
-        {
-          "dimension": "3+1D",
-          "law": "E4",
-          "origin": "cgamma",
-          "terms_by_coefficient": {
-            "binary_or_half": 6,
-            "quarter": 0,
-            "eighth": 0,
-            "sixteenth": 0,
-            "third": 0,
-            "twelfth": 0
-          },
-          "total": 6
-        },
-        {
-          "dimension": "3+1D",
-          "law": "E4",
-          "origin": "cpsi",
-          "terms_by_coefficient": {
-            "binary_or_half": 204,
-            "quarter": 0,
-            "eighth": 0,
-            "sixteenth": 0,
-            "third": 0,
-            "twelfth": 0
-          },
-          "total": 204
-        },
-        {
-          "dimension": "4+1D",
-          "law": "O6",
-          "origin": "cgamma",
-          "terms_by_coefficient": {
-            "binary_or_half": 9,
-            "quarter": 0,
-            "eighth": 0,
-            "sixteenth": 0,
-            "third": 0,
-            "twelfth": 0
-          },
-          "total": 9
-        },
-        {
-          "dimension": "4+1D",
-          "law": "O6",
-          "origin": "gamma",
-          "terms_by_coefficient": {
-            "binary_or_half": 88,
-            "quarter": 3,
-            "eighth": 0,
-            "sixteenth": 0,
-            "third": 0,
-            "twelfth": 0
-          },
-          "total": 91
-        },
-        {
-          "dimension": "4+1D",
-          "law": "O6",
-          "origin": "gammapsi",
-          "terms_by_coefficient": {
-            "binary_or_half": 1009,
-            "quarter": 4,
-            "eighth": 0,
-            "sixteenth": 0,
-            "third": 0,
-            "twelfth": 0
-          },
-          "total": 1013
-        },
-        {
-          "dimension": "4+1D",
-          "law": "O6",
-          "origin": "psi",
-          "terms_by_coefficient": {
-            "binary_or_half": 623880,
-            "quarter": 4,
-            "eighth": 1,
-            "sixteenth": 1,
-            "third": 0,
-            "twelfth": 1
-          },
-          "total": 623887
-        },
-        {
-          "dimension": "4+1D",
-          "law": "E5",
-          "origin": "cgamma",
-          "terms_by_coefficient": {
-            "binary_or_half": 6,
-            "quarter": 0,
-            "eighth": 0,
-            "sixteenth": 0,
-            "third": 0,
-            "twelfth": 0
-          },
-          "total": 6
-        },
-        {
-          "dimension": "4+1D",
-          "law": "E5",
-          "origin": "cpsi",
-          "terms_by_coefficient": {
-            "binary_or_half": 4,
-            "quarter": 0,
-            "eighth": 0,
-            "sixteenth": 0,
-            "third": 0,
-            "twelfth": 0
-          },
-          "total": 4
-        },
-        {
-          "dimension": "4+1D",
-          "law": "E5",
-          "origin": "gamma",
-          "terms_by_coefficient": {
-            "binary_or_half": 6164,
-            "quarter": 12,
-            "eighth": 0,
-            "sixteenth": 0,
-            "third": 0,
-            "twelfth": 0
-          },
-          "total": 6176
-        }
-      ],
-      "totals": {
-        "2+1D O2": 0,
-        "2+1D O3": 2,
-        "2+1D O4": 11,
-        "2+1D E1": 0,
-        "2+1D E2": 2,
-        "2+1D E3": 25,
-        "3+1D O2": 0,
-        "3+1D O3": 2,
-        "3+1D O4": 10,
-        "3+1D O5": 13754,
-        "3+1D E1": 0,
-        "3+1D E2": 2,
-        "3+1D E3": 20,
-        "3+1D E4": 26898,
-        "4+1D O3": 0,
-        "4+1D O4": 3,
-        "4+1D O5": 18,
-        "4+1D O6": 625008,
-        "4+1D E2": 0,
-        "4+1D E3": 2,
-        "4+1D E4": 34,
-        "4+1D E5": 8560944
-      }
-    },
-    "substituted_source": {
-      "manifest": "four_dimensional/SOURCE_SUBSTITUTED_TERMS.json",
-      "total": 628789,
-      "status": "Archived explicit source expansion; unchanged cochain, distinct count boundary."
-    },
-    "majorana_product": {
-      "standard_differentials_retained": 6176,
-      "lower_laws_substituted": 87189,
-      "status": "Carry-reduction comparison data from the preceding phase coordinate; append the current paired phase transport before comparing to the current reader formulas."
-    },
-    "source_expansion_phase": "The stored 4D source expansion and old 85/1005 word dictionaries belong to the preceding phase coordinate. Current O6 is counted in records, not by substituting that archive."
-  },
   "supporting_reader_hashes": {
-    "docs/FORMULA_GUIDE.md": "c1c7f8bf14c0b3beb4846cda02eeaf27e704e59a3b99dcbecbd8a0470f30f79f",
+    "docs/FORMULA_GUIDE.md": "fa1ebb48359094eaa0c0064b7de31b09aced35c9f5198d8fe35637e2a85d15d7",
     "docs/formulas/QUADRATIC_REFINEMENTS.md": "4744d32d5d79ee9975d483f4579f7f1e8b18eb78c8e44d3ce6b3d3bda50fe66f",
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": "8f4b63b50d87b136015b256463e715f915c2fed48ef79fbcd309d5c004a47f6a",
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "511c6de256d86f48f95b9b7a75a616a2de519da10ef6403df50cf17dd646b6ca"
@@ -1558,14 +1372,12 @@
         "origins": [
           1,
           3,
-          16,
-          14,
+          19,
+          18,
           1144,
           250
         ],
-        "total": 1428,
-        "gamma_whole_lift_interior_terms": 2,
-        "total_with_gamma_lift_wrapper_replaced": 1429
+        "total": 1435
       },
       "4+1D_full": {
         "origins_outer": [
