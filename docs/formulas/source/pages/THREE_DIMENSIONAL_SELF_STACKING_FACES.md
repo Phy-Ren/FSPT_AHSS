@@ -2,7 +2,7 @@
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
-The input has $`n_1=s_1`$ and satisfies the complete lower equations. Each linked row is one explicitly specified binary product of physical cochain faces on $`(01234)`$. Every factor is a value of $`s_1`$, $`\omega_2`$ or $`n_2`$ on a face containing the vertex $`0`$; these values determine all other faces through the lower equations. The [3+1D verification](verification/three_dimensional/README.md) regenerates both tables from the general law with two equal inputs, by evaluating it on all $`2^{16}`$ values of these face variables. Integer output $`2s_1`$ has not yet been gauged away. No summand or background coefficient is hidden.
+The state has $`n_1=s_1`$ and satisfies the complete lower equations. Each linked row is one explicitly specified binary product of physical cochain faces on $`(01234)`$. Every factor is a value of $`s_1`$, $`\omega_2`$ or $`n_2`$ on a face containing the vertex $`0`$; these values determine all other faces through the lower equations. The [3+1D verification](verification/three_dimensional/README.md) regenerates both tables from the general law with two equal inputs, by evaluating it on all $`2^{16}`$ values of these face variables. Integer output $`2s_1`$ has not yet been gauged away. No summand or background coefficient is hidden.
 
 <a id="majoranapip-half-contribution"></a>
 ## Majorana–p+ip half contribution

@@ -5,8 +5,8 @@
 **Code documentation.** This page documents how the numerical code in
 `formulas/publication_source/full3` generates part of the
 [3+1D formulas](THREE_DIMENSIONAL.md). The code evaluates its construction with
-the complex-fermion input $`n_3+n_2\cup_1n_2`$ on each state and
-with the stacked output $`N_3+N_2\cup_1N_2+d\mathcal B_2`$; within this page
+the complex-fermion argument $`n_3+n_2\cup_1n_2`$ on each state and
+with the stacked argument $`N_3+N_2\cup_1N_2+d\mathcal B_2`$; within this page
 $`n_3`$, $`n'_3`$ and $`N_3`$ denote these code arguments. The change to the
 bare formulas is stated in [From the code to the 3+1D formulas](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 
@@ -18,7 +18,7 @@ The following terminal change then applies:
 {{equation:three-dimensional-paired-representative--paired-phase-representative-in-3-1d--1}}
 
 The inverse subtracts the displayed phase. All lower fields of this auxiliary calculation are fixed; the preceding lower-coordinate map must not be omitted. The symbol `Delta` means evaluation on
-the actual lower stacked tower, minus the two input evaluations.
+the actual lower stacked tower, minus the evaluations on the upper and lower states.
 The nine-term `H4` is printed in [the stacking formulas](THREE_DIMENSIONAL.md#eq-t3b).
 The additive phase $`B_4^{c,*}`$ is one half of the explicitly indexed
 binary numerator in [the CF index rule](THREE_DIMENSIONAL_PRODUCT_WORD_INDICES.md#cf-block).

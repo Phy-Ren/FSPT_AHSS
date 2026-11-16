@@ -44,8 +44,8 @@ The lift interiors remain inside their nonlinear scopes.
 
 These are **uncollected expression occurrences**. Each displayed
 phase-map evaluation is expanded into its complete finite expression;
-its actual binary lower-output argument remains a field, just as in
-other higher formulas. We do not expand that output into all of its
+its argument, the actual binary lower field of the stacked state, remains a
+field, just as in other higher formulas. We do not expand that field into all of its
 face coordinates or cancel terms across physical contributions.
 The same boundary is used for the source and product tables below.
 
@@ -58,7 +58,7 @@ origin according to the variables appearing afterward.
 ### Counts by layer
 
 These primary counts retain the already defined lower obstruction and
-stacking operations, their actual output fields, the standard differential,
+stacking operations, the actual fields of the stacked state, the standard differential,
 Sq and Bockstein operations, Delta, the existing integer carries, the
 defined integral quadratic cochain and the fixed integer Pontryagin
 representative. Explicit linear parentheses and
@@ -127,9 +127,9 @@ It is not counted as one term.
 | gamma psi | 3 | 1 | 136 |
 | psi | 1 | 1 | 46 |
 
-The $`B_5`$ arguments are the actual complete lower outputs specified in
-[the general product](FOUR_DIMENSIONAL.md#eq-t4c). A binary sum used as an
-output is retained as that field before a word is evaluated. Consequently
+The $`B_5`$ arguments are the actual complete lower fields of the stacked state
+specified in [the general product](FOUR_DIMENSIONAL.md#eq-t4c). A binary sum used as
+a field of the stacked state is retained as that field before a word is evaluated. Consequently
 these counts mean 3 × 45 + 1, 3 × 45 + 1, and 45 + 1 occurrences in the
 printed expressions; they are not a fully distributed or collected
 polynomial in independent input bits. They include every $`B_5`$ term.
@@ -142,8 +142,8 @@ its reuse does not change the **15-term** pure Majorana O5 count.
 ## Self-stacking counts (separate domains)
 
 These restrictions have their own pages and do not replace the general
-counts above. Every input is a complete state with its allowed upper
-completions. The integer output is retained before full gauge reduction.
+counts above. Each separate state is a complete state with its allowed higher
+completions. The integer field of the stacked state is retained before full gauge reduction.
 
 | Dimension and scope | c | c gamma | c psi | gamma | gamma psi | psi | Complete terminal twister |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -180,8 +180,8 @@ See the separate [2+1D](TWO_DIMENSIONAL_SELF_STACKING.md),
 ## 4+1D bosonic stacking: expanded boundaries
 
 The c, c gamma and c psi contributions have respectively **75**, **2,216**
-and **3,262** terms after substituting their actual lower laws and output
-fields and collecting equal typed operations.
+and **3,262** terms after substituting their actual lower laws and the fields
+of the stacked state and collecting equal typed operations.
 
 The carry-reduced Majorana coefficient part preserves its four whole
 lifts and contributes 624 leaves before the $`B_5`$ terms. The
@@ -208,11 +208,11 @@ earlier definitions.
 
 ## Self-stacking is counted separately
 
-These formulas take two identical complete input states. Their restricted
-counts do not replace the general two-input totals above. Both retain the
+These formulas take equal complete upper and lower states. Their restricted
+counts do not replace the general totals above. Both retain the
 complex-fermion completion and the incoming bosonic phase.
 
-| Dimension and input | c | c gamma | gamma | Complete phase correction |
+| Dimension and state | c | c gamma | gamma | Complete phase correction |
 | --- | ---: | ---: | ---: | ---: |
 | [3+1D, zero p+ip decoration](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md) | 1 | 1 | 8 | **10** |
 
@@ -227,7 +227,7 @@ phase convention are given on the [restriction page](FOUR_DIMENSIONAL_MAJORANA_D
 The c gamma expressions reuse the complete lower Majorana parity, and
 the c psi products reuse the existing Delta. Both reuses preserve the
 complete contributions exactly, including open-cochain differential and
-actual output terms. The quadratic-cochain reuse is also an exact identity.
+actual terms of the stacked state. The quadratic-cochain reuse is also an exact identity.
 
 The Majorana stacking coefficient uses the
 [output gauge](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md).

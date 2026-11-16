@@ -42,7 +42,7 @@ microscopic factors; they are not reassigned according to variable support.
 For a face $`(ijkl)`$ use the maps
 $`P^a,A_\ell^a,r_\ell,t_\ell,\epsilon_\ell`$
 defined in [Physical paths](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md).
-The two input labels are $`a=1,2`$, with
+The labels $`a=1,2`$ denote the upper and lower states, with
 $`n_3^{(1)}=n_3`$, $`n_3^{(2)}=n'_3`$
 and the same convention for $`n_2`$. The two origin coefficients are
 
@@ -64,8 +64,8 @@ n_{3;\psi}^{(a)}(ijkl)
 Their sum is the decoded Majorana face in that coefficient. The integer
 and background face factors are the explicit signed values in
 [Physical paths](FOUR_DIMENSIONAL_PHYSICAL_PATHS.md).
-Below, unprimed origin coefficients mean the first input and primed
-ones the second input. Their $`\gamma\psi`$ input component is zero.
+Below, unprimed origin coefficients belong to the upper state and primed
+ones to the lower state. Their $`\gamma\psi`$ components are zero.
 Put
 
 ```math
@@ -73,15 +73,15 @@ Put
 \qquad \widetilde{\omega}_2=\omega_2+s_1^2.
 ```
 
-Use $`j\in\{\mathrm{in},\mathrm{in}',\mathrm{out}\}`$ for the first input, second input, and actual stacked output:
+Use $`j\in\{\mathrm{in},\mathrm{in}',\mathrm{out}\}`$ for the upper state, the lower state, and the actual stacked state:
 
-| coefficient | first input | second input | output |
+| coefficient | upper state | lower state | stacked state |
 |---|---|---|---|
 | $`n_2^{(j)}`$ | $`n_2`$ | $`n'_2`$ | $`N_2=n_2+n'_2`$ |
 | $`n_{3;\gamma}^{(j)}`$ | $`n_{3;\gamma}`$ | $`n'_{3;\gamma}`$ | $`n_{3;\gamma}+n'_{3;\gamma}`$ |
 | $`n_{3;\psi}^{(j)}`$ | $`n_{3;\psi}`$ | $`n'_{3;\psi}`$ | $`n_{3;\psi}+n'_{3;\psi}+\mathcal{ℰ}_3`$ |
 
-The output in the last row is the actual lower stacking output. These
+The stacked-state entry of the last row is the actual lower field of the stacked state. These
 three columns are substitutions in the displayed polynomials, not three
 calls to an unspecified terminal operation. Let
 
@@ -152,7 +152,7 @@ finite sum:
  \big(x_{1,c_1}^{(j)},\ldots,x_{q,c_q}^{(j)}\big).
 ```
 
-Use the displayed input/output column for each field. Replace every $`dn_3`$ argument by $`\mathcal{𝒪}_4^{(j)}`$; the background arguments remain $`\omega_2,s_1`$.
+Use the displayed column of the upper, lower or stacked state for each field. Replace every $`dn_3`$ argument by $`\mathcal{𝒪}_4^{(j)}`$; the background arguments remain $`\omega_2,s_1`$.
 The one extra carry has the three explicit coefficients
 
 ```math
@@ -172,7 +172,7 @@ to the finite word sum. Denote that explicitly printed sum plus this
 single carry by $`\mathcal T_{6;r}^{(j)}`$ only in the next display; it is not a new
 primitive or an implicit evaluation prescription.
 
-The remaining one-input terms have the complete coefficients
+The remaining terms that involve one state only have the complete coefficients
 
 ```math
 \begin{aligned}
@@ -337,7 +337,7 @@ following explicit polynomials:
 \end{aligned}
 ```
 
-The input components with index $`\gamma\psi`$ are zero; the displayed
+The components of the separate states with index $`\gamma\psi`$ are zero; the displayed
 finite sums keep the same origin-index convention as the other
 coefficients. The first-tower equation has already replaced
 $`dn_3`$ by $`\mathcal{𝒪}_4[n_2]`$ in the second line.

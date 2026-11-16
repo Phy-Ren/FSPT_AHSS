@@ -10,8 +10,9 @@ $`dn_4=\mathcal{𝒪}_5^\gamma[n_3]`$, and phase $`\nu_5`$
 satisfying the [closed obstruction equation](MAJORANA_AND_ENDPOINTS.md#eq-m3-4d). Here
 $`n_4`$ is the physical point-fermion occupation used in the
 [closed-Majorana 4+1D formulas](MAJORANA_AND_ENDPOINTS.md#majorana-4d).
-All stacking corrections below have identical complete inputs. They are the
-equal-input specialization of those closed laws, and equally the
+In all stacking corrections below the upper and lower states are the same
+complete state. They are the specialization of those closed laws to equal
+states, and equally the
 zero-p+ip restriction of the [complete self-stacking formulas](FOUR_DIMENSIONAL_SELF_STACKING.md).
 
 ## 1. p+ip stacking
@@ -62,7 +63,7 @@ N_4=\mathcal{ℰ}_4^\gamma[n_3,n_3]
 \end{aligned}
 ```
 
-The output terms of the general formula vanish because $`N_3=0`$ and $`dN_4=0`$.
+The terms of the general formula on the stacked state vanish because $`N_3=0`$ and $`dN_4=0`$.
 
 ### Majorana decoration
 
@@ -89,7 +90,7 @@ vanish and are omitted:
 
 ## Specialization of the phase convention
 
-The full lower output here has $`N_3=0`$ and
+The complete lower fields of the stacked state here are $`N_3=0`$ and
 $`N_4=\mathcal{ℰ}_4^\gamma`$. The $`B_5`$ terms of the phase convention
 consequently give $`\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$; this
 half-valued cochain is unchanged by the overall sign.
@@ -101,7 +102,7 @@ and the whole binary lifts inside the formula retain their scopes.
 The coefficient sets are the same ones used in
 [complete self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md); their values
 are specialized with the stated closed input rather than fitted again.
-The input complex-fermion completion and incoming phase are retained.
+The complex-fermion completion of the separate states and their incoming phase are retained.
 
 The [root-power presentation](ROOT_POWER_PRESENTATIONS.md) explains how
 these powers determine the final abelian group.

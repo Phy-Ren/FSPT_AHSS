@@ -231,7 +231,7 @@ and the fixed two-cochain
 
 {{equation:three-dimensional-geometric-reference--pair-cochain}}
 
-The $`\Delta`$ below always uses the actual new output.
+The $`\Delta`$ below always uses the actual stacked state.
 For two identical complete states with $`n_1=0`$, the entire correction
 reduces to the [zero-p+ip self-stacking formula](THREE_DIMENSIONAL_MAJORANA_SELF_STACKING.md).
 

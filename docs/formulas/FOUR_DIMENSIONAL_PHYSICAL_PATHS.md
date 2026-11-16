@@ -70,7 +70,7 @@ s_1(ij)\longmapsto s_1(P^0(i),P^0(j)),\qquad
 \omega_2(ijk)\longmapsto\omega_2(P^0(i),P^0(j),P^0(k)).
 ```
 
-For either physical integer input, the face factor is
+For the integer decoration of either state, the face factor is
 
 ```math
 n_2^{(a)}(ijk)\longmapsto
@@ -78,7 +78,7 @@ n_2^{(a)}(ijk)\longmapsto
 n_2^{(a)}(P^a(i),P^a(j),P^a(k)),\qquad a=1,2.
 ```
 
-Here the two input labels mean $`n_2^{(1)}=n_2`$ and
+Here the labels $`a=1,2`$ denote the upper and lower states, $`n_2^{(1)}=n_2`$ and
 $`n_2^{(2)}=n'_2`$; they do not introduce other physical decorations.
 Every Majorana face factor becomes the following explicit sum:
 

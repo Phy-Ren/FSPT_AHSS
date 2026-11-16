@@ -6,7 +6,7 @@ The 132 words below are the normalized MS-word form of the complex-fermion
 exchange in the [complex-fermion–p+ip stacking contribution](THREE_DIMENSIONAL.md#eq-t3b).
 The [thirteen-product identity](THREE_DIMENSIONAL_CF_EXCHANGE_REDUCTION.md)
 writes the same sum with the lower obstruction. Here
-$`B_3=n_2\cup_1n_2`$ on each input.
+$`B_3=n_2\cup_1n_2`$ on each state.
 
 Every row is the standard normalized MS operation on its displayed physical arguments. Binary arithmetic applies throughout. The source and its primed counterpart are the full lower obstruction, including both Majorana and integer contributions.
 

@@ -47,7 +47,7 @@ $`(\langle013\rangle_B,\langle123\rangle_B,\psi\ldots,\langle012\rangle_A,\langl
   closed-sector formulas on every face, and the $`c\psi`$, $`\gamma\psi`$, $`\psi`$
   contributions vanish;
 - self-stacking: the page formulas for $`n_1=0`$, and every contribution of
-  the page formulas for $`n_1=s_1`$, equal $`\mathcal E_4`$ with two equal inputs;
+  the page formulas for $`n_1=s_1`$, equal $`\mathcal E_4`$ with equal upper and lower states;
 - $`\mathbb Z_4^{f,T}`$ ($`s_1=m_1`$, $`\omega_2=m_1^2`$): on all bar simplices, the
   four roots $`(m_1,0,0,i^{m_1^4})`$, $`(0,m_1^2,0,i^{m_1^4})`$, $`(0,0,m_1^3,1)`$,
   $`(0,0,0,(-1)^{m_1^4})`$ solve all equations, and their squares are
@@ -58,7 +58,7 @@ code after the change stated in
 [From the code to the 3+1D formulas](../../THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 
 **Face tables** (`generate_self_tables.py`): for $`n_1=s_1`$ the mixed and pure
-p+ip contributions of the general formula with equal inputs, minus the
+p+ip contributions of the general formula with equal upper and lower states, minus the
 explicit terms of the self-stacking page, are evaluated on all $`2^{16}`$
 values of $`s_1`$, $`\omega_2`$, $`n_2`$ on the faces containing the vertex $`0`$.
 Their algebraic normal forms are the two

@@ -10,8 +10,8 @@ $`n_1`$, the binary complex-fermion cochain $`n_2`$, and the phase $`\nu_3`$.
 Use the [common notation](../FORMULA_GUIDE.md#conventions-and-coordinates)
 and the obstruction equations in the [2+1D reference](TWO_DIMENSIONAL.md).
 The phase representative is unchanged. As in that reference, this page
-covers the zero-integer-decoration sector; a general nonzero chiral input
-is outside its stated domain.
+covers the zero-integer-decoration sector; a general state with nonzero chiral
+decoration is outside its stated domain.
 
 ## 1. Majorana self-stacking
 
@@ -25,7 +25,7 @@ N_1=0.
 N_2=\mathcal{ℰ}_2^\gamma=n_1^2+s_1n_1.
 ```
 
-Both terms come from Majorana decoration. The nonzero output must be
+Both terms come from Majorana decoration. The nonzero result must be
 retained when the doubled state is used in a subsequent doubling.
 
 ## 3. Bosonic self-stacking
@@ -69,7 +69,7 @@ obstruction. Every allowed completion $`n_2`$ is included.
 
 The complete bosonic twister has **seven terms: five half-valued and two
 quarter-valued terms**. It is the general lattice twister of the
-[2+1D reference](TWO_DIMENSIONAL.md#stacking-2d) evaluated at equal inputs. The obstruction in the quarter bracket is the
+[2+1D reference](TWO_DIMENSIONAL.md#stacking-2d) evaluated at equal upper and lower states. The obstruction in the quarter bracket is the
 canonical integer lift of its whole binary value. It must not be replaced
 by the sum of separately lifted terms. The integer Bockstein is
 $`\beta n_1=dn_1/2`$, with the differential taken before reduction;

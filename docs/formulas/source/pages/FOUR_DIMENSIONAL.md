@@ -207,8 +207,8 @@ Consequently $`d\mathcal{ℰ}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 {{equation:four-dimensional--3-complex-fermion-stacking--24}}
 
 Here $`\Delta B_4=B_4[N_2,N_3]-B_4[n_2,n_3]-B_4[n'_2,n'_3]`$, evaluated on the
-actual lower output. The law includes the complex-fermion gauge transformation
-by the explicit two-input pairing reference described under the bosonic
+actual lower fields of the stacked state. The law includes the complex-fermion
+gauge transformation by the explicit pairing reference of the separate states described under the bosonic
 stacking law below.
 
 **Majorana contribution.**
@@ -236,19 +236,19 @@ The two finite polynomials in this contribution are
 
 {{equation:four-dimensional--4-bosonic-stacking--29}}
 
-The output fields are those of the preceding three stacking laws, and the
+The fields of the stacked state are those of the preceding three stacking laws, and the
 phase convention is that of the obstruction above.
 The cochain $`B_5[n_3]`$ is defined once in the
 [phase convention page](FOUR_DIMENSIONAL_MAJORANA_PHASE.md); its backgrounds
 are kept fixed in every evaluation below.
 
-The directed pairing count of the physical P move gives the output
-$`N_4`$ plus the coboundary of the two-input pairing reference
+The directed pairing count of the physical P move gives the stacked field
+$`N_4`$ plus the coboundary of the pairing reference of the separate states
 written out in the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#stacking).
 That coboundary is not a decoration. The lower law above composes the P move
 with the complex-fermion gauge transformation that removes it. If the
-uncorrected output $`N_4+dx`$ is used instead, with $`x`$ the written-out
-two-input reference, add
+uncorrected stacked field $`N_4+dx`$ is used instead, with $`x`$ the written-out
+reference of the separate states, add
 
 {{equation:four-dimensional--4-bosonic-stacking--45}}
 
@@ -283,7 +283,7 @@ The integer carries are
 {{equation:four-dimensional--majorana-decoration--34}}
 
 The two $`\lambda`$ cochains are the same binary-addition carry, applied
-to the Majorana inputs and to their lower differentials, respectively.
+to the Majorana fields of the separate states and to their lower differentials, respectively.
 For any pair of binary degree-$`k`$ cochains, that carry is the integer
 cochain $`-x\cup_kx'`$: the canonical integer value of their binary sum
 is $`x+x'-2(x\cup_kx')`$. Thus $`\lambda_4^\gamma`$ introduces no new
@@ -398,8 +398,8 @@ stacked bosonic phase.
 {{equation:four-dimensional--majorana-quarter-numerator--41}}
 
 Here $`\beta_4^\gamma=\beta^-n_3`$ is the Majorana part of the
-already defined carry $`\beta_4=\beta_4^\gamma+\beta_4^\psi`$. Primes mean the second
-stacking input. The three parts of $`\lambda_3`$ are those defined in the
+already defined carry $`\beta_4=\beta_4^\gamma+\beta_4^\psi`$. Primes mean the lower
+state. The three parts of $`\lambda_3`$ are those defined in the
 main stacking formula.
 
 With these defined carries and the standard Steenrod square retained,
@@ -434,6 +434,6 @@ three half-valued carry terms already included in
 $`\mathcal{ℰ}_5^{\gamma\psi}`$.
 
 The $`B_5`$ terms of the three physical contributions sum to
-$`-B_5[N_3]+B_5[n_3]+B_5[n'_3]`$, evaluated on the actual lower output
-$`N_3=n_3+n'_3+\mathcal{ℰ}_3`$, together with $`-s_1\mathcal{ℰ}_4/2`$ from the
-complex-fermion output.
+$`-B_5[N_3]+B_5[n_3]+B_5[n'_3]`$, evaluated on the actual lower field
+$`N_3=n_3+n'_3+\mathcal{ℰ}_3`$ of the stacked state, together with
+$`-s_1\mathcal{ℰ}_4/2`$ from the complex-fermion stacking law.

@@ -11,11 +11,11 @@ The obstruction and the stacking law use one phase convention. It is
 fixed by the five-cochain $`B_5[n_3]`$ below together with the half term
 $`\tfrac12s_1(n_4+B_4)`$. The obstruction contains their differential:
 the relative Majorana–p+ip terms and the term $`s_1\mathcal{𝒪}_5^\psi/2`$.
-The stacking law contains their values on the output minus the values on
-the two inputs: the three $`B_5`$ evaluations and the terms
-$`-s_1\mathcal{ℰ}_4/2`$. The $`B_5`$ evaluations use the actual lower
-output, which contains the integer-layer twister; it is not simply
-$`n_3+n'_3`$.
+The stacking law contains their values on the stacked state minus the values
+on the upper and lower states: the three $`B_5`$ evaluations and the terms
+$`-s_1\mathcal{ℰ}_4/2`$. The $`B_5`$ evaluations use the actual lower fields
+of the stacked state, whose $`N_3`$ contains the integer-layer twister and is
+not simply $`n_3+n'_3`$.
 
 ## The five-cochain $`B_5`$
 

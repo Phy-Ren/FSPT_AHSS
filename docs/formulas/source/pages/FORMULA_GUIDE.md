@@ -86,8 +86,9 @@ some mixed terms.
 
 ### Arithmetic and modifiers
 
-A prime denotes the second stacking input, as in $`n'_j`$.
-The outputs are $`N_j`$ and $`\mathcal V_j`$.
+In stacking, the upper state carries the unprimed fields and the lower state
+the primed ones, as in $`n'_j`$; together they are the separate states.
+The stacked state carries $`N_j`$ and $`\mathcal V_j`$.
 We use the same symbol for a $`U(1)`$ phase and its additive value in $`\mathbb R/\mathbb Z`$, identified by $`x\mapsto\exp(2\pi ix)`$.
 Products and ratios of phases use the multiplicative convention; sums, differences, and phase equations modulo one use the additive convention.
 An exponential takes the additive value as its argument.

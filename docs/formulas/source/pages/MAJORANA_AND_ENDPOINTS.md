@@ -29,7 +29,7 @@ The Bockstein $`\beta`$, its second carry $`\beta^+`$, and their signed
 products have untwisted integer coefficients here. The phase instead has
 coefficients $`(\mathbb R/\mathbb Z)_{s_1}`$ and differential $`d_{s_1}`$.
 A phase and its additive value use the same symbol, as in the common notation above.
-A prime denotes the second input, and $`N_j`$ the stacked binary field.
+A prime denotes the lower state, and $`N_j`$ the binary field of the stacked state.
 The lower fields and all subscripts are fixed anew
 at the start of each dimensional section.
 
@@ -336,7 +336,7 @@ There is no stacking correction in this layer.
 This is the Majorana contribution of the complete 3+1D product with
 $`n_1=n'_1=0`$, $`\beta^-=\beta`$, and
 $`\lambda_2^\gamma=[n_2\cup_2n'_2]_2`$, again with the lattice sign of the
-quarter bracket. The lower output here is $`N_2=[n_2+n'_2]_2`$, and
+quarter bracket. The lower field of the stacked state here is $`N_2=[n_2+n'_2]_2`$, and
 $`\mathcal{ℰ}_3^\gamma=\mathcal{ℰ}_3`$.
 
 {{equation:majorana-and-endpoints--majorana-contribution--30}}
@@ -350,7 +350,7 @@ Here the binary completion is
 {{equation:three-dimensional--majorana-decoration--32}}
 
 The second carry obeys $`\beta^{-+}=\beta^+`$ in this closed sector.
-The complete intrinsic term is the same two-input operation as in the
+The complete intrinsic term is the same operation on the two separate states as in the
 full product:
 
 {{equation:three-dimensional--majorana-decoration--33}}
@@ -500,8 +500,8 @@ There is no stacking correction in this layer.
 
 **(M3Ecγ, 4+1D)**
 
-Here $`dn_4=\mathcal{𝒪}_5^\gamma`$, $`N_4`$ is the binary output above, and
-$`\Delta`$ takes the value on the output minus the values on the two inputs:
+Here $`dn_4=\mathcal{𝒪}_5^\gamma`$, $`N_4`$ is the binary field of the stacked state above, and
+$`\Delta`$ takes the value on the stacked state minus the values on the upper and lower states:
 
 {{equation:majorana-and-endpoints--complex-fermion-majorana-contribution--46}}
 
@@ -511,7 +511,7 @@ $`\Delta`$ takes the value on the output minus the values on the two inputs:
 
 **(M7, 4+1D)**
 
-This is the [complete two-input law](FOUR_DIMENSIONAL.md#eq-t4c)
+This is the [complete stacking law](FOUR_DIMENSIONAL.md#eq-t4c)
 at $`n_2=n'_2=0`$ and $`dn_3=dn'_3=0`$.
 In particular $`\beta^-=\beta`$, $`\lambda_4^\gamma=0`$, and
 $`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; the terms containing
@@ -528,7 +528,7 @@ The lower laws coincide with those of the complete tower, and
 $`d_{s_1}\mathcal{ℰ}_5=\mathcal{𝒪}_6[N]-\mathcal{𝒪}_6[n]-\mathcal{𝒪}_6[n']`$
 holds exactly.
 The [zero-p+ip self-stacking formula](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
-is the equal-input specialization of these closed laws.
+is the specialization of these closed laws to equal upper and lower states.
 
 <a id="eq-m8-4d"></a>
 

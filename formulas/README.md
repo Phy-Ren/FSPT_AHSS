@@ -71,7 +71,7 @@ contains `w,s`. All entries are exact integers.
 
 The stage is `majorana`, `fermion` or `bosonic`. Source output degrees are
 `d,d+1,d+2`; product correction degrees are `d-1,d,d+1`. A product returns the
-correction only, before adding the two input fields. Binary outputs are bits;
+correction only, before adding the fields of the upper and lower states. Binary outputs are bits;
 terminal outputs are exact `Fraction` values modulo one. Local coefficients may
 have denominator 16 or 48; the state phases and gauge witnesses are not restricted
 to those denominators. Integer overflow in the optional native evaluator falls

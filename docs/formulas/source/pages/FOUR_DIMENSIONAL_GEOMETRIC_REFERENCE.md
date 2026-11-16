@@ -16,7 +16,7 @@ if no B position is occupied (the mode to A). Pair the remaining faces as
 without p+ip decoration: for four faces, start after the unique empty position
 in the cyclic list and pair consecutive positions. Every arrow follows the
 written linear order, including `0123 B` to `0234 A` on the closing edge.
-Both inputs and the output use this same rule.
+The separate states and the stacked state use this same rule.
 
 ## Obstruction and its reference
 
@@ -46,13 +46,13 @@ leaves $`\mathcal O_5`$ unchanged.
 
 ## Stacking
 
-The P graph includes the two complete input states, the three-copy contacts,
-and the output state with the same pairing rule. Besides the twister and
-$`\Delta B_4`$, its count contains the coboundary of an explicit two-input
-reference, written out as its alternating face sum.
+The P graph includes the complete upper and lower states, the three-copy
+contacts, and the stacked state with the same pairing rule. Besides the twister
+and $`\Delta B_4`$, its count contains the coboundary of an explicit reference
+that depends on both separate states, written out as its alternating face sum.
 $`\mathcal E_4`$ is the complete twister in
 [the same formula page](FOUR_DIMENSIONAL.md#eq-p4), and $`\Delta B_4`$ uses the
-actual lower output
+actual lower fields of the stacked state
 
 ```math
 N_2=n_2+n'_2,\qquad

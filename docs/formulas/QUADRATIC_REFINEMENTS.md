@@ -111,13 +111,13 @@ terms, respectively. All other terms of those obstructions retain
 their existing values and physical labels. The same operation occurs
 in the product: the characteristic part of the integer kernel is
 $`\Delta\mathcal Q_{\omega_2}[\beta_4]`$, where $`\Delta`$ uses the actual
-lower stacking output. This reuse changes neither representative nor
+lower fields of the stacked state. This reuse changes neither representative nor
 coefficients. It reduces repeated definitions; it does not reduce the
 number of scalar monomials obtained by expanding them.
 
 ## Degree-four variation on the physical lower tower
 
-Use the two $`4+1`$D inputs with their common backgrounds. The already
+Use the upper and lower $`4+1`$D states with their common backgrounds. The already
 defined integer stacking carry $`\lambda_3`$ obeys
 
 ```math
@@ -129,7 +129,7 @@ d\beta'_4=-(\beta_{s_1}\widetilde{\omega}_2)n'_2.
 ```
 
 The integer $`\beta_4,\beta'_4,\lambda_3`$ are untwisted; $`n_2,n'_2`$ have
-coefficients $`\mathbb Z_{s_1}`$. Products of the twisted inputs include
+coefficients $`\mathbb Z_{s_1}`$. Products of the twisted fields include
 their local coefficient transports. In particular $`d(n'_2n_2)=0`$.
 
 The integer transgression of the quadratic cochain is
@@ -228,7 +228,7 @@ B_5^{\mathrm{lift}}=\frac{V_5^{\mathbb Z}-[V_5]_2}2.
 Suppose the existing normalized contraction is written
 $`Z_5=(\mathsf h^{\rm tw})^*\rho_6+(\mathrm{AW}^{\rm tw})^*L_5`$, with
 $`dL_5=(\mathsf{sh}^{\rm tw})^*\rho_6`$. The superscript labels the
-twisted contraction, not a stacking input. It is the fully specified contraction
+twisted contraction, not one of the separate states. It is the fully specified contraction
 of the terminal appendix. The lift change must transport **both** data:
 
 ```math

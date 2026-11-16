@@ -99,7 +99,7 @@ Majorana roots, or to guess its CF and bosonic components.
 If the Majorana class is zero, remove its exact Majorana field by a
 complete gauge transformation and reduce it in the CF/bosonic subgroup.
 
-Every Majorana-root square has zero p+ip and Majorana output. The
+Every Majorana-root square is a stacked state with zero p+ip and Majorana decoration. The
 remaining incoming Majorana/CF gauges do too. Their reductions therefore
 need only the CF/bosonic product laws. The distinguished root's own
 square relation is retained: imposing $`Y=0`$ must also preserve any
@@ -112,7 +112,7 @@ quotients split abstractly and contribute their certified free rank.
 The strategy does not require arbitrary pairs of Majorana or p+ip roots.
 For the torsion p+ip relation the operation is strictly **two copies**,
 $`P+P`$; a third copy is unnecessary. Its subsequent lower-root square is
-a separate relation, again obtained by two equal inputs.
+a separate relation, again obtained by stacking two equal states.
 
 The [complete 3+1D self-stacking reference](THREE_DIMENSIONAL_SELF_STACKING.md)
 contains the required specializations. The
@@ -243,7 +243,7 @@ relations $`3D=0`$ and $`3P=D`$ give $`\mathbb Z_9`$.
 
 Let $`\mathsf D`$ denote complete self-stacking. Two states with the same
 integer cochain have the same Majorana cochain after one application of
-$`\mathsf D`$: the binary Majorana input adds to zero. After two
+$`\mathsf D`$: the binary Majorana cochains of the upper and lower states add to zero. After two
 applications their CF cochains also agree. Consequently their complete
 lower cochains agree and their phase difference is a bosonic cocycle.
 The common lower fields need not vanish.
@@ -273,7 +273,7 @@ is recovered by ordinary linear arithmetic:
 [qP]=(4t)^{-1}[C_5]\quad\text{in }H^{\mathrm{bos}}_{\rm odd}/rH^{\mathrm{bos}}_{\rm odd}.
 ```
 
-This uses no unequal-input Majorana or p+ip stacking. The necessary
+This uses no Majorana or p+ip stacking of unequal states. The necessary
 cohomology comparison is between bosonic cocycles. Complete upper-field
 gauge corrections are essential to the identity.
 
@@ -327,7 +327,7 @@ make the dependent-image checks reproducible as well.
 ### Equal-input root products versus strictly self-only enumeration
 
 The practical root algorithm above restricts the expensive Majorana and
-p+ip products to equal inputs. It still uses ordinary CF/bosonic products,
+p+ip products to equal upper and lower states. It still uses ordinary CF/bosonic products,
 complete gauge transport, and linear cohomology. It is therefore not a
 claim that every step uses the doubling operation alone.
 
@@ -343,7 +343,7 @@ b_k=\log_2|2^{k-1}A_2|-\log_2|2^kA_2|.
 Then $`b_k`$ is the number of cyclic factors whose order is at least
 $`2^k`$, and $`b_k-b_{k+1}`$ is the number of factors of order exactly
 $`2^k`$. Thus image counts of repeated self-stacking determine every
-two-primary invariant factor, without unequal-input products at any
+two-primary invariant factor, without products of unequal states at any
 layer. This method needs a complete enumeration, which can grow
 exponentially with the number of roots. The largest saved group has
 $`2^{31}`$ elements. It is an existence argument and fallback, not the

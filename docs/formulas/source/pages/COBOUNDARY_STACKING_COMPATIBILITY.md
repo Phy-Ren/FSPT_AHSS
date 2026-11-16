@@ -15,7 +15,7 @@ fields with different degree labels.
 
 This appendix derives the phase identity under the stated compatibility
 hypothesis and proves an exact simplification of the [4+1D stacking law](FOUR_DIMENSIONAL.md#4-bosonic-stacking)
-when the two bulk inputs have the same closed Majorana decoration.
+when the upper and lower states have the same closed Majorana decoration.
 It keeps all cochain representatives, inverse carries, and coefficient
 systems explicit.
 

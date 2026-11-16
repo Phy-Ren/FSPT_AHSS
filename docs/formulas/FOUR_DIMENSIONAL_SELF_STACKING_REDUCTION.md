@@ -4,7 +4,7 @@
 
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
-Two exact identities simplify the complete equal-input expression while
+Two exact identities simplify the complete expression for equal upper and lower states while
 preserving its obstruction, stacking representative, and physical labels.
 Both use existing lower-layer operations with their original domains.
 

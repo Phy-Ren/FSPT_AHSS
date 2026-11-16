@@ -24,7 +24,7 @@ closedness of $`s_1`$ and $`\omega_2`$ ensures that this expression equals
 its expansion in the root faces on the same simplex.
 
 Each numbered entry below is one table row. The displayed factors are
-multiplied before summing over rows. The two stacking inputs remain ordered.
+multiplied before summing over rows. The upper and lower states remain ordered.
 
 ## Row 1
 

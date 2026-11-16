@@ -75,8 +75,8 @@ The formula pages use the occupations $`n_3,n_4`$ themselves.
 together with the [native phase representative](../docs/formulas/THREE_DIMENSIONAL_PAIRED_REPRESENTATIVE.md)
 of the code. The displayed lower fields $`\mathcal O_4`$ and $`\mathcal E_3`$ are
 evaluated by [`formulas.py`](../docs/formulas/verification/three_dimensional/formulas.py).
-For the product, compute $`\mathcal B_2`$ on the actual signed inputs; the code
-output is $`N_3+B_3[N_2]+d\mathcal B_2`$. The code phases in
+For the product, compute $`\mathcal B_2`$ on the actual signed fields of the
+separate states; the code output is $`N_3+B_3[N_2]+d\mathcal B_2`$. The code phases in
 [`code_phases`](../docs/formulas/verification/three_dimensional/code_phases)
 name the code argument `n_3+B_3`, and
 [`check_code.py`](../docs/formulas/verification/three_dimensional/check_code.py)
@@ -115,7 +115,7 @@ The [4+1D verifier](../docs/formulas/coefficients/verify_four_dimensional_bare_f
 checks the identities behind the third change for arbitrary cochains.
 
 Each change $`\nu\mapsto\nu+B`$ adds $`d_{s_1}B`$ to the obstruction and
-$`\Delta B`$ to the stacking correction, evaluated on the actual lower output.
+$`\Delta B`$ to the stacking correction, evaluated on the actual lower fields of the stacked state.
 The explicit $`4+1`$D Majorana stacking expression additionally uses the
 [displayed output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md).
 
@@ -135,10 +135,10 @@ with `w,s` in `background`.
 
 For a product, `right['n']`, `right['a']`, `right['c']` represent
 $`n'_{d-2},c'_{d-1}`$ and the same CF convention. The runtime packs them into compiled fields
-`m,b,cp`. Thus **compiled input `b` is the second Majorana input $`c'_{d-1}`$**;
+`m,b,cp`. Thus **compiled input `b` is the Majorana field $`c'_{d-1}`$ of the lower state**;
 it is not the parity variable called `b` inside some readable definitions.
-The returned product value is a correction, not the entire output $`N_j`$.
-The lower input sums and the phase sum are added by the caller.
+The returned product value is a correction, not the entire stacked field $`N_j`$.
+The sums of the lower fields and the phase sum are added by the caller.
 
 The additive phase $`\nu_{d+1}`$ is not one of the five lower source
 inputs. A terminal source or product call returns a `Fraction` modulo one,
@@ -265,7 +265,7 @@ source additionally retains $`n_2^3/12`$.
 
 The physical $`3+1`$D fields are $`n_1,n_2,n_3`$.
 The code parameter construction takes $`n_3+B_3`$
-in its CF slot and the product output $`N_3+B_3[N_2]+d\mathcal B_2`$.
+in its CF slot and the stacked argument $`N_3+B_3[N_2]+d\mathcal B_2`$.
 Its raised fields are defined in
 [T3a–T3c](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md#eq-t3b):
 
@@ -393,12 +393,12 @@ recover the preceding `high6` coordinate plus its existing cubic term.
 The [maps above](#from-the-code-to-the-formulas) then give the displayed source
 and product; `R5(n3,x)` evaluates the phase-convention cochain
 $`B_5[n_3]+\tfrac12s_1x`$ on the code arguments, and the product uses its value
-on the actual output minus the values on the two inputs. Using componentwise
+on the actual stacked state minus the values on the upper and lower states. Using componentwise
 sums is incorrect. The source and general/self product are converted together.
 
 The 4+1D terminal product separates all freely variable complex-fermion
 terms. In its remaining term `dCnew` equals the lower fermion source at
-the displayed output. The c-free Majorana/p+ip transfer is retained as
+the displayed stacked state. The c-free Majorana/p+ip transfer is retained as
 a combined expression; `Zvalue` is not a pure-p+ip twister. The 3+1D
 terminal operations are expanded in the main guide, with the finite lift
 and summation rules in the [technical file](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md).
@@ -452,7 +452,7 @@ is pointwise equal to the
 [face expansion](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_FACES.md),
 with the same output gauge. Its carry at degree four is the same
 canonical binary-addition carry used at degree three, applied to
-the binary differentials of the inputs. It is not an integer differential
+the binary differentials of the separate states. It is not an integer differential
 of a lifted binary cochain. The four nonlinear lift boundaries must survive
 translation to code.
 
@@ -490,7 +490,7 @@ specified paired maps.
 
 The separate 4+1D closed diagonal retains its explicit output gauge
 relative to the reader formula. Restricted counts never replace
-the general two-input counts, and neither zero-p+ip formula supplies a
+the general counts for arbitrary upper and lower states, and neither zero-p+ip formula supplies a
 self-stack for a state with nonzero integer decoration.
 
 ## Maintained source and complete self-stacking references
@@ -504,7 +504,7 @@ Complete restricted formulas are on separate pages for
 [2+1D](../docs/formulas/TWO_DIMENSIONAL_SELF_STACKING.md),
 [3+1D](../docs/formulas/THREE_DIMENSIONAL_SELF_STACKING.md), and
 [4+1D](../docs/formulas/FOUR_DIMENSIONAL_SELF_STACKING.md). The latter two
-include p+ip input in their stated domains. The zero-p+ip pages are
+include p+ip decoration in their stated domains. The zero-p+ip pages are
 proofs or additional closed-input simplifications, not the full nonzero-p+ip law.
 
 The 4+1D adapted-root presentation has 320 reversible two-primary replays

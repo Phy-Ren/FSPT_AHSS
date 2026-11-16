@@ -148,7 +148,7 @@ dn_3^{{\rm gr}\prime}=([n_2^{{\rm gr}\prime}]_2)^2.
 
 The superscript $`{\rm gr}`$ denotes the untwisted coordinates relative to
 the simplex's first vertex. It does not change the cochain degree. Decode
-the first input by
+the upper state by
 
 <a id="eq-k4"></a>
 
@@ -165,7 +165,7 @@ n_3(ijkl)&=n_3^{\rm gr}(ijkl)
 \end{aligned}
 ```
 
-Apply the same rule to the primed input and take $`s_1(00)=0`$. Encoding is
+Apply the same rule to the primed lower state and take $`s_1(00)=0`$. Encoding is
 the inverse of (K4). Positive faces and degeneracies are factorwise. The
 actual zeroth face is obtained by decoding, restricting to
 $`[1,\ldots,D]`$, and re-encoding with vertex $`1`$ as root. Relative to the
@@ -184,7 +184,7 @@ n_3^{\rm gr}(ijkl)&\longmapsto n_3^{\rm gr}(ijkl)
 ```
 
 These formulas apply for $`1\le i\lt j\lt k\lt l\le D`$ and to the primed
-input as well. Let $`\delta S`$ be the binary sum of the actual and
+lower state as well. Let $`\delta S`$ be the binary sum of the actual and
 factorwise zeroth faces, extended linearly to binary chains. The root in
 (K4) is a coordinate choice on each simplex, not a global trivialization of
 either background; its failure on the zeroth face is precisely (K5).
@@ -205,8 +205,8 @@ L_5=L^s_5+L^0_5+\mathop{\mathrm{AW}}\nolimits^*
 
 This notation is a finite rule: for $`(p,q)=(2,3)`$ and $`(3,2)`$, use the
 front $`p`$-face and back $`q`$-face of a five-simplex, sharing vertex $`p`$.
-Enumerate the ten paths from $`(0,p)`$ to $`(p,5)`$. Pull the two complete
-zero-background inputs along coordinates one and two, evaluate $`D^0_5`$,
+Enumerate the ten paths from $`(0,p)`$ to $`(p,5)`$. Pull the complete
+zero-background upper and lower states along coordinates one and two, evaluate $`D^0_5`$,
 and sum modulo two. Together with $`L^0_5`$, these are the
 background-degree-zero terms. The contribution $`L^s_5`$ in (K6) uses the
 background-degree-one component. These prescriptions define $`L_5`$ on
@@ -268,9 +268,9 @@ L^0_5[n_2,n_3;n'_2,n'_3]
  \right].
 ```
 
-Its tetrahedral polynomials are defined on one input at a time.
+Its tetrahedral polynomials are defined on one state at a time.
 
-For one zero-background input $`(n_2,n_3)`$ on $`0123`$, define three
+For one zero-background state $`(n_2,n_3)`$ on $`0123`$, define three
 local integer face coordinates:
 
 ```math
@@ -338,7 +338,7 @@ P^R_1={}&P^B_3+[n_{2;012}]_2[n_{2;123}]_2(1+[n_{2;013-012}]_2)\\
 \end{aligned}
 ```
 
-Rows referenced on the right use the same input and face. In particular,
+Rows referenced on the right use the same state and face. In particular,
 $`[\lfloor n_{2;013-012}/2\rfloor]_2`$ is the second bit of the integer
 difference; it is not the sum of the second bits of $`n_2(013)`$ and
 $`n_2(012)`$.

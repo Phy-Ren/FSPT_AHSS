@@ -5,8 +5,8 @@
 **Code documentation.** This page documents how the numerical code in
 `formulas/publication_source/full3` generates part of the
 [3+1D formulas](THREE_DIMENSIONAL.md). The code evaluates its construction with
-the complex-fermion input $`n_3+B_3`$, $`B_3=n_2\cup_1n_2`$, on each state and
-with the stacked output $`N_3+B_3[N_2]+d\mathcal B_2`$; within this page
+the complex-fermion argument $`n_3+B_3`$, $`B_3=n_2\cup_1n_2`$, on each state and
+with the stacked argument $`N_3+B_3[N_2]+d\mathcal B_2`$; within this page
 $`n_3`$, $`n'_3`$ and $`N_3`$ denote these code arguments. The change to the
 bare formulas is stated in [From the code to the 3+1D formulas](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 
@@ -34,7 +34,7 @@ The lower half-valued polynomial is the ordinary sum with indices
 
 Here additions denote symmetric differences of ordinary-word index lists;
 the products and derivatives generate ordinary words as specified below.
-The lower output and full CF obstruction inputs are
+The lower fields of the stacked state and the full CF obstruction arguments are
 
 ```math
 \begin{aligned}
@@ -201,8 +201,8 @@ dG&=J+L{\mathcal{𝒪}_4}+R{\mathcal{𝒪}_4}'.
 \end{aligned}
 ```
 
-For the one-input phase, retain only the unprimed terms with the marker L
-in the common seeds: delete terms containing R or D and all primed inputs.
+For the phase of a single state, retain only the unprimed terms with the marker L
+in the common seeds: delete terms containing R or D and all primed fields.
 Then use the displayed J with those reduced seeds. The binary phase numerator is
 
 ```math
@@ -253,7 +253,7 @@ Z=(\alpha\cup_1L){[n_1]_2}+(\alpha\cup_1R){[n'_1]_2},
 ```
 
 Here $`[\beta_4^{\mathrm{par}}]_2`$ is the binary parameter carry
-for this product construction; its definition uses both stacking inputs.
+for this product construction; its definition uses both the upper and lower states.
 Differentiate every seed by the word boundary and displayed input laws.
 The bulk indices are
 
@@ -328,13 +328,13 @@ summands
 ```
 
 The all-p+ip choice has no incoming Majorana decoration or its integer
-Bockstein. It retains the induced output
-$`N_2=[n_1]_2[n'_1]_2`$ and its differential and Sq operations.
+Bockstein. It retains the lower field
+$`N_2=[n_1]_2[n'_1]_2`$ of the stacked state and its differential and Sq operations.
 Choose $`\mathcal{𝒪}_4=\mathcal{𝒪}_4^\psi[n_1]`$, its primed counterpart,
-and $`\mathcal{ℰ}_3=\mathcal{ℰ}_3^\psi`$. In the output obstruction retain
+and $`\mathcal{ℰ}_3=\mathcal{ℰ}_3^\psi`$. In the obstruction of the stacked state retain
 $`(\mathcal{𝒪}_4^\gamma+\mathcal{𝒪}_4^{\gamma\psi})[[n_1]_2[n'_1]_2]
 +\mathcal{𝒪}_4^\psi[n_1+n'_1]`$.
-Apply these same choices to each displayed source and output phase,
+Apply these same choices to each displayed source phase and phase of the stacked state,
 including $`H_4[[n_1]_2[n'_1]_2]`$ and
 $`P_4[[n_1]_2[n'_1]_2,\mathcal{ℰ}_3^\psi]`$.
 The full characteristic derivative is replaced by its legal pure-integer

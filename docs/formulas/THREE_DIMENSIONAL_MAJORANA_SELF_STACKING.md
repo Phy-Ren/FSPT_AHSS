@@ -6,7 +6,7 @@
 
 Take a complete state with $`n_1=0`$, closed binary Majorana cochain
 $`n_2`$, binary complex-fermion cochain $`n_3`$, and additive phase
-$`\nu_4`$. The input satisfies the obstruction equations in the
+$`\nu_4`$. The state satisfies the obstruction equations in the
 [3+1D formula section](THREE_DIMENSIONAL.md), including
 $`dn_3=\mathcal{𝒪}_4^\gamma[n_2]`$. The backgrounds are shared by both
 copies. The restriction is **zero p+ip decoration**, not merely a closed
@@ -14,7 +14,7 @@ Majorana cochain inside a state with nonzero p+ip decoration.
 
 The maintained formula is in the
 [complete self-stacking reference](THREE_DIMENSIONAL_SELF_STACKING.md#4-bosonic-self-stacking-with-zero-pip-input).
-This appendix proves that specialization. Its output includes the complete
+This appendix proves that specialization. The stacked state includes the complete
 complex-fermion completion and phase; subsequent root relations still use
 all lower gauge corrections. The quarter-valued obstruction always means
 the lift of its whole binary value.

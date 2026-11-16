@@ -7,8 +7,8 @@
 **Code documentation.** This page documents how the numerical code in
 `formulas/publication_source/full3` generates part of the
 [3+1D formulas](THREE_DIMENSIONAL.md). The code evaluates its construction with
-the complex-fermion input $`n_3+B_3`$, $`B_3=n_2\cup_1n_2`$, on each state and
-with the stacked output $`N_3+B_3[N_2]+d\mathcal B_2`$; within this page
+the complex-fermion argument $`n_3+B_3`$, $`B_3=n_2\cup_1n_2`$, on each state and
+with the stacked argument $`N_3+B_3[N_2]+d\mathcal B_2`$; within this page
 $`n_3`$, $`n'_3`$ and $`N_3`$ denote these code arguments. The change to the
 bare formulas is stated in [From the code to the 3+1D formulas](THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md).
 The degree-six source below is the 4+1D source of the code evaluated on
@@ -99,8 +99,8 @@ uses the fifteen signed paths on a triangle times a four-simplex. Their
 orientations and coefficient transports are exactly (O8).
 
 The upward marks identify components of the **fixed lift of the complete
-physical input**. The obstruction lift uses one input, whereas the stacking
-lift uses both inputs and their displayed lower stacking corrections:
+physical state**. The obstruction lift uses one state, whereas the stacking
+lift uses both separate states and their displayed lower stacking corrections:
 
 | Symbol in this construction | Obstruction evaluation | Stacking evaluation |
 |---|---|---|
@@ -174,7 +174,7 @@ binary expressions.
 \end{aligned}
 ```
 
-For the interval, $`\theta_1(01)=1`$ and the second input is absent:
+For the interval, $`\theta_1(01)=1`$ and the lower state is absent:
 
 ```math
 n_2^I=\theta_1 n_1,\qquad

@@ -4,8 +4,8 @@
 
 The [complete self-stacking formula](FOUR_DIMENSIONAL_SELF_STACKING.md)
 retains two large, fully specified binary coefficient sums. They are
-specializations of the completed general stacking expression: both input
-states are made equal in every physical factor and in every argument of
+specializations of the completed general stacking expression: the upper and
+lower states are made equal in every physical factor and in every argument of
 an existing lower operation. Internal faces of a contraction are not
 identified before that contraction is completed.
 
@@ -29,8 +29,8 @@ numerator. No unspecified finite polynomial is counted as one factor.
 The lower-operation domains and integer precisions are those of the
 [general coefficient conventions](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).
 
-All outer products are collected over $`\mathbb F_2`$ after the equal-input
-substitution. This includes cancellations within argument polynomials,
+All outer products are collected over $`\mathbb F_2`$ after the upper and
+lower states are set equal. This includes cancellations within argument polynomials,
 identical complete lower-operation values, and normalized lower operations
 with zero decorations. Identical names alone do not identify factors:
 the operation, all arguments, digit, and differential convention must
