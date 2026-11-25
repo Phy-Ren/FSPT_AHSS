@@ -31,8 +31,8 @@ Their representatives and coordinates are related as follows.
 |---|---|
 | Closed-Majorana programs `majorana_1_*` (2+1D, `fspt/majorana_complete.py`, `fspt/formulas.py`) | Equal. The stacking law contains the lattice term $`-\tfrac14[s_1n_1n'_1]_2`$. |
 | Closed-Majorana programs `majorana_2_*` (3+1D) | Equal; the CF field `c` is the physical occupation $`n_3`$. |
-| Closed-Majorana programs `majorana_3_*` (4+1D) | The obstruction is equal; the CF field `c` is the physical occupation $`n_4`$, and the product uses the displayed complex-fermion law $`N_4=n_4+n'_4+\mathcal E_4^\gamma`$. Its phase differs from the displayed closed law by the P-move rephasing $`\tfrac12(n_3\cup_2n_3)\cup_4n'_4`$, the explicit [output coboundary](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md) and the [phase convention](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_PHASE.md). |
-| Publication programs, 4+1D (`fspt/data/full_formula`, compiled from `formulas/publication_source`) | Equal after the [maps below](#from-the-code-to-the-formulas); the CF slot `c` holds $`n_4+y`$, with $`y`$ given below. |
+| Closed-Majorana programs `majorana_3_*` (4+1D) | The obstruction is equal; the CF field `c` is the physical occupation $`n_4`$. The product is the closed-Majorana law of the thesis; the 4+1D publication programs at $`n_2=n'_2=0`$ give the same values. |
+| Publication programs, 4+1D (`fspt/data/full_formula`, compiled from `formulas/publication_source`) | Equal; the CF slot `c` is the physical occupation $`n_4`$. `source_4_fermion`, `product_4_fermion`, `source_4_bosonic` and `y6` evaluate $`\mathcal O_5`$, $`\mathcal E_4`$, $`\mathcal O_6`$ and $`y_6`$; `product_4_bosonic` with the finite transfer evaluates $`\mathcal E_5`$, [below](#from-the-code-to-the-formulas). |
 | Publication programs, 3+1D | Equal after the [maps below](#from-the-code-to-the-formulas); the CF slot `c` holds $`n_3+B_3`$, $`B_3=n_2\cup_1n_2`$. The source and product are the parameter integrals of the [finite construction](../docs/formulas/THREE_DIMENSIONAL_TERMINAL.md), with the orientation of [(O8)](../docs/formulas/OPERATIONS.md#eq-o8) recorded in the call signs of `lift3_source` and `lift3_product`. |
 
 No routine of the complete GAP engine computes a 3+1D phase of
@@ -64,17 +64,9 @@ These algebraic reductions do not change a representative; the maps of the next 
 
 ## From the code to the formulas
 
-The publication kernels evaluate the bosonic layer with the complex-fermion
-argument $`n_3+B_3`$ in 3+1D and $`n_4+y`$ in 4+1D, where
-$`B_3=n_2\cup_1n_2`$ and
-
-```math
-y=n_3\cup_2n_3+x,\qquad x=(s_1\cup_1[\lfloor n_2/2\rfloor]_2)[n_2]_2+s_1(([n_2]_2\cup_1[n_2]_2)\cup_2[n_2]_2)+\mathop{\mathrm{MS}}\nolimits_{12131}([n_2]_2\cup_1[n_2]_2,s_1,[n_2]_2).
-```
-
-The kernels use the parity polynomial $`\\mathcal O_5+dy`$ of their compact
-form; its difference from the complete F-move count $`\\mathcal O_5`$ is $`dy`$.
-The formula pages use the occupations $`n_3,n_4`$ themselves.
+The 3+1D publication kernels evaluate the bosonic layer with the complex-fermion
+argument $`n_3+B_3`$, $`B_3=n_2\cup_1n_2`$. The 4+1D kernels take the occupation
+$`n_4`$ itself, with $`dn_4=\mathcal O_5`$.
 
 **3+1D.** The complete map is stated in
 [From the code to the 3+1D formulas](../docs/formulas/THREE_DIMENSIONAL_GEOMETRIC_REFERENCE.md),
@@ -101,40 +93,34 @@ and its stacking correction changes at the same time:
 
 The obstruction is transported by the same substitution and $`d\mathcal B_3^{\mathrm{ref}}`$.
 
-**4+1D.** In this paragraph, write $`c=n_4+y`$ for the code argument; its
-differential is $`\mathcal O_5+dy`$. The source of the code construction is
-
-<a id="eq-t4e"></a>
-
-{{equation:representatives--4-1d-historical-source-convention--3}}
-
-in terms of the obstruction $`\mathcal O_6`$ written with the argument $`c`$
-before the three changes below; the cubic term is retained separately and is
-not a coboundary. The changes are applied in order:
-
-1. the operator ordering $`\nu_5\mapsto\nu_5+\tfrac12c\cup_4dc`$;
-2. the [phase convention](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_PHASE.md)
-   with the code argument, $`\nu_5\mapsto\nu_5-B_5[n_3]-\tfrac12s_1c`$;
-3. the occupation change
+**4+1D.** `source_4_bosonic` is the six-cochain source written in $`n_4`$
+(`full4/physical.py:blocks`): its complex-fermion part is
 
 ```math
-\begin{aligned}
-\nu_5\mapsto\nu_5-\tfrac12\big[&n_4\cup_3y+n_4\cup_4dy+(n_3\cup_2n_3)\cup_3x+(n_3\cup_2n_3)\cup_4dx
- +(n_3\cup_2n_3)\cup_4d(n_3\cup_2n_3)\\
- &+x\cup_4dx+dx\cup_5\big(\mathcal O_5+d(n_3\cup_2n_3)\big)+s_1x\big].
-\end{aligned}
+\frac12\big[\mathrm{Sq}^2n_4+\omega_2n_4+\kappa(n_3)\cup_4\mathcal O_5^\psi
+ +\mathrm{Sq}^2(n_3\cup_2n_3)+\omega_2(n_3\cup_2n_3)+\mathcal O_5\cup_4d(n_3\cup_2n_3)\big],
+\qquad\kappa(n_3)=\mathrm{Sq}^2n_3+s_1\mathrm{Sq}^1n_3+\omega_2n_3,
 ```
 
-The result is the displayed obstruction; the three changes together contain
-the displayed phase convention $`-B_5[n_3]-\tfrac12s_1n_4`$.
-For the product, the stacked code argument is $`N_4+y_N+d(n_3\cup_3n'_3)`$,
-with $`N_4`$ of the displayed law. The formula pages remove
-$`d(n_3\cup_3n'_3)`$ by the complex-fermion gauge transformation of the
-bosonic stacking law and use the P-move rephasing $`\tfrac12y\cup_4n'_4`$;
-together with $`\Delta`$ of the three changes this gives the displayed twister.
+its pure completion is $`y_6`$ (program `y6`), and the program includes the
+operator order and the [phase convention](../docs/formulas/FOUR_DIMENSIONAL_MAJORANA_PHASE.md),
 
-The [4+1D verifier](../docs/formulas/coefficients/verify_four_dimensional_bare_formulas.py)
-checks the identities behind the third change for arbitrary cochains.
+```math
+\nu_5\mapsto\nu_5+\tfrac12\big[n_4\cup_4dn_4+d(n_3\cup_2n_3)\cup_5\mathcal O_5+s_1(n_3\cup_2n_3)\big]-B_5[n_3]-\tfrac12s_1n_4.
+```
+
+The result is the displayed obstruction. The 3+1D construction keeps its
+auxiliary source `high6` with the completion `y6_auxiliary` of its auxiliary
+p+ip source.
+
+`product_4_bosonic` and the finite transfer evaluate the stacking correction:
+the transfer of the [finite construction](../docs/formulas/TERMINAL_TRANSFER.md)
+(`rho4`, `tensor4`, `h6`) and its nonbinary part are converted to the
+occupation $`n_4`$ by the polarization of the one-state rephasing of the source,
+the gauge primitive of the stacked field, and an explicit P-move rephasing that
+makes the law at $`n_2=n'_2=0`$ equal to the closed-Majorana law; every term is
+written in `full4/physical.py:product48`. The specialization
+`majorana4_product_composed` is the same expression at $`n_2=n'_2=0`$.
 
 Each change $`\nu\mapsto\nu+B`$ adds $`d_{s_1}B`$ to the obstruction and
 $`\Delta B`$ to the stacking correction, evaluated on the actual lower fields of the stacked state.
@@ -151,7 +137,7 @@ with `w,s` in `background`.
 |---|---|---|
 | $`n_{d-2}`$ | `n` | Degree $`d-2`$, signed integers with twist $`s_1`$ |
 | $`c_{d-1}=n_{d-1}+s_1\cup[\lfloor n_{d-2}/2\rfloor]_2`$ | `a` | Degree $`d-1`$, binary Majorana input |
-| $`n_3+B_3`$ in 3+1D; $`n_4+y`$ in 4+1D | `c` | Degree $`d`$, binary CF argument of the code |
+| $`n_3+B_3`$ in 3+1D; $`n_4`$ in 4+1D | `c` | Degree $`d`$, binary CF argument of the code |
 | $`\omega_2`$ | `w` | Degree two, binary extension cocycle |
 | $`s_1`$ | `s` | Degree one, binary antiunitary cocycle |
 
@@ -237,7 +223,7 @@ and four, even when constructed from a physical $`3+1`$D input.
 The following names belong to the shared six-cochain source or the $`4+1`$D
 product. Their current definitions are [S1–S3](../docs/formulas/FOUR_DIMENSIONAL.md#eq-s1)
 and [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a); the
-[source of the code construction](#eq-t4e) is related to them above.
+[4+1D source of the code](#from-the-code-to-the-formulas) is related to them above.
 
 | Readable-source name | Mathematical expression |
 |---|---|
@@ -271,7 +257,7 @@ The following local names refer to parts of the expanded
 
 | Local name | Location in the expanded formula |
 |---|---|
-| Local `H` | The sum of the half-valued physical contributions, including $`\mathrm{Sq}^2c+\omega_2c`$ for the code argument $`c=n_4+y`$ |
+| Local `H` | The sum of the half-valued physical contributions, including $`\mathrm{Sq}^2c+\omega_2c`$ for the complex-fermion argument `c` |
 | Local `Q` | All quarter-valued source terms, including the separately displayed subtraction |
 | `cartan_word` | The complete reduced background-and-digit polynomial in that subtraction |
 

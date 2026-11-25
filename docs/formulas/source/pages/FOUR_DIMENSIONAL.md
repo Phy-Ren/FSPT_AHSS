@@ -154,12 +154,9 @@ expands to four ordered cups with no background remainder. Here
 $`\beta_4=\beta^-n_3+\beta_4^\psi`$ is ordinary integer addition.
 The explicit $`s_1\mathcal{𝒪}_5^\psi/2`$ is required by the same phase
 change that fixes the compact Majorana formula; it does not redefine
-the fixed binary completion $`y_6`$. The two terms after it vanish for
-$`s_1=0`$. Write $`x`$ for the polynomial in their brackets: $`y_6`$ completes
-the parity polynomial $`\mathcal{𝒪}_5^\psi+dx`$ of the code, and these two
-terms write the phase for the parity count $`\mathcal{𝒪}_5^\psi`$ itself.
+the fixed binary completion $`y_6`$.
 
-The polynomial $`y_6`$ contains **623,880 explicit physical-face monomials**
+The polynomial $`y_6`$ contains **458,647 explicit physical-face monomials**
 after its complete finite definition is expanded and equal binary
 monomials are collected. The [complete physical coefficient table](FOUR_DIMENSIONAL_Y6_FACES.md)
 specifies every monomial. It is not counted as one term. The remaining

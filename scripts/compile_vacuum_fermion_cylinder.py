@@ -28,7 +28,7 @@ def main():
     started = time.monotonic()
     builder = Builder()
     zero = builder.scalar(0)
-    source_path = args.data_dir/'high6.json'
+    source_path = args.data_dir/'source_4_bosonic.json'
     source_bytes = source_path.read_bytes()
     program = json.loads(source_bytes)
 
@@ -72,8 +72,7 @@ def main():
             elif op == 'bit': value = builder.bit(values[x[0]], x[1])
             else: raise ValueError(op)
             values.append(value)
-        high, cubic = (values[i] for i in program['outputs'])
-        return (3*high + 4*cubic) % 48
+        return values[program['outputs'][0]] % 48
 
     vertices = tuple((i, 1) for i in range(6))
     value = zero
@@ -87,7 +86,7 @@ def main():
         operation='literal-vacuum-complex-fermion-gauge-cylinder',
         inputs=dict(gamma=3, w=2, s=1),
         assumptions='vacuum input; lambda=beta=0; arbitrary gamma3',
-        component_sha256={'high6': hashlib.sha256(source_bytes).hexdigest()}))
+        component_sha256={'source_4_bosonic': hashlib.sha256(source_bytes).hexdigest()}))
     raw = (json.dumps(data, separators=(',', ':')) + '\n').encode()
     atomic_write_bytes(args.data_dir/(name+'.json'), raw)
     print(json.dumps(dict(status='compiled', seconds=time.monotonic()-started,

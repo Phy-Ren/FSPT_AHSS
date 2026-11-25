@@ -160,9 +160,15 @@ class Compiler:
         cc = self.cc
         src = importlib.import_module('source')
         n, u, c, w, s = self.fields(2, native=False)
-        if mode == 'y6':
+        if mode == 'y6_auxiliary':
+            # Completion of the auxiliary source of the 3+1D construction and
+            # of the 4+1D transfer kernel.
             explicit = importlib.import_module('explicit_pip')
             value = explicit.binary_completion(n, w, s, accelerate=False)
+            return [value(tuple(range(7)))], dict(top_degree=6, denominator=2)
+        if mode == 'y6':
+            # Completion y_6 of the physical parity O_5^psi.
+            value = importlib.import_module('physical_y6').physical_completion(n, w, s)
             return [value(tuple(range(7)))], dict(top_degree=6, denominator=2)
         y = self.field('y', 6)
         H, Q, Pn, Wnn = src.blocks(n, u, c, w, s, y)
@@ -182,20 +188,41 @@ class Compiler:
             n, u, c, w, s = self.fields(p)
             a = n.reduce(2)
             native = self.field('a', p+1)
-            result = (cc.sq(a, 2)+cup(w, a)+cup(s, cc.sq(a, 1))
-                      if stage == 'majorana' else cc.parity(n, native, w, s))
+            if stage == 'majorana':
+                result = cc.sq(a, 2)+cup(w, a)+cup(s, cc.sq(a, 1))
+            elif p == 2:
+                # 4+1D: the complete F-move parity count, dn_4 = O_5.
+                result = importlib.import_module('physical').parity(n, u, w, s)
+            else:
+                result = cc.parity(n, native, w, s)
         else:
             n, u, c, m, v, cp, w, s = self.fields(p, pair=True)
             if stage == 'majorana':
                 a, b = n.reduce(2), m.reduce(2)
                 result = cup(a,b,p-1)+cup(s,cup(a,b,p))
+            elif p == 2:
+                # 4+1D: N_4 = n_4 + n'_4 + E_4 in the physical occupation.
+                result = importlib.import_module('physical').lower_product(n,u,m,v,w,s)
             else:
                 third = importlib.import_module('fractional').third_product
                 result = third(n,u,m,v,w,s)
-                if p == 2:
-                    result = result + cup(n.reduce(2),m.reduce(2))
         degree = result.deg
         return [result(tuple(range(degree+1)))], dict(top_degree=degree, denominator=2)
+
+    def source4(self):
+        """O_6 in the physical occupation n_4, numerator over 48, displayed convention."""
+        physical = importlib.import_module('physical')
+        n, u, c, w, s = self.fields(2, native=False)
+        y = self.field('y', 6)
+        value = physical.source48(n, u, c, w, s, y)
+        return [value(tuple(range(7))) % 48], dict(top_degree=6, denominator=48)
+
+    def product4(self):
+        """Nonbinary part of E_5 in the physical occupations n_4, n'_4, over 48."""
+        physical = importlib.import_module('physical')
+        n, u, c, m, v, cp, w, s = self.fields(2, pair=True, native=False)
+        value = physical.product48(n, u, c, m, v, cp, w, s)
+        return [value(tuple(range(6))) % 48], dict(top_degree=5, denominator=48)
 
     def nonbinary4(self):
         product = importlib.import_module('product_full')
@@ -315,8 +342,12 @@ class Compiler:
                              high_degrees=[2,3,4,2,1], calls=calls)
 
     def build(self, name):
-        if name in ('y6','h6','high6'):
+        if name in ('y6','y6_auxiliary','h6','high6'):
             outputs, metadata = self.high(name)
+        elif name == 'source_4_bosonic':
+            outputs, metadata = self.source4()
+        elif name == 'product_4_bosonic':
+            outputs, metadata = self.product4()
         elif name == 'nonbinary4':
             outputs, metadata = self.nonbinary4()
         elif name == 'rho4':
@@ -342,7 +373,8 @@ class Compiler:
         return compact_program(self.builder, [self.builder.scalar(x) for x in outputs], metadata)
 
 
-TARGETS = ('y6','h6','high6','nonbinary4','rho4','tensor4','majorana4_product','dictionary4',
+TARGETS = ('y6','y6_auxiliary','h6','high6','source_4_bosonic','product_4_bosonic',
+           'nonbinary4','rho4','tensor4','majorana4_product','dictionary4',
            'lift3_source','lift3_product') + tuple(
     '{}_{}_{}'.format(mode,dimension,stage) for mode in ('source','product')
     for dimension in (3,4) for stage in ('majorana','fermion'))

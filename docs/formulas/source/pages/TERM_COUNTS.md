@@ -30,8 +30,8 @@ The pure Majorana O6 has **16 terms**: 12 half-valued and four
 quarter-valued terms. Its intrinsic operation contains four MS words
 and one product of standard squares. The mixed source contains
 **1,897 MS terms**, four other half terms, and six quarter terms,
-for **1,907** in total. The pure p+ip contribution has **623,888** terms.
-The complete O6 therefore has **625,829 terms** at this boundary.
+for **1,907** in total. The pure p+ip contribution has **458,653** terms.
+The complete O6 therefore has **460,594 terms** at this boundary.
 
 For the general 4+1D Majorana twister the count is
 **760 explicit expression leaves**, or **618 outer addends**.
@@ -84,7 +84,7 @@ listed in the [structured count ledger](term_census/STRUCTURED_TERM_COUNTS.json)
 | 4+1D | O3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4+1D | O4 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
 | 4+1D | O5 | 0 | 0 | 0 | 3 | 2 | 10 | 15 |
-| 4+1D | O6 | 3 | 4 | 11 | 16 | 1,907 | 623,888 | 625,829 |
+| 4+1D | O6 | 3 | 4 | 11 | 16 | 1,907 | 458,653 | 460,594 |
 | 4+1D | E2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4+1D | E3 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
 | 4+1D | E4 | 0 | 0 | 0 | 2 | 5 | 31 | 38 |

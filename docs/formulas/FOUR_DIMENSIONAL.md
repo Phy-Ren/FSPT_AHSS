@@ -261,11 +261,9 @@ is lifted as a whole in the last two cups.
 ```math
 \begin{aligned}
 \mathcal{𝒪}_6^\psi
-={}&\frac12\Big[y_6[n_2;\omega_2,s_1]+s_1\mathcal{𝒪}_5^\psi\\
- &+\mathcal Q_{\omega_2}\big[(s_1\cup_1[\lfloor n_2/2\rfloor]_2)[n_2]_2+s_1(([n_2]_2\cup_1[n_2]_2)\cup_2[n_2]_2)+\mathop{\mathrm{MS}}\nolimits_{12131}([n_2]_2\cup_1[n_2]_2,s_1,[n_2]_2)\big]\\
- &+\mathcal{𝒪}_5^\psi\cup_4d\big[(s_1\cup_1[\lfloor n_2/2\rfloor]_2)[n_2]_2+s_1(([n_2]_2\cup_1[n_2]_2)\cup_2[n_2]_2)+\mathop{\mathrm{MS}}\nolimits_{12131}([n_2]_2\cup_1[n_2]_2,s_1,[n_2]_2)\big]\Big]\\
- &+\frac14\mathcal Q_{\omega_2}[\beta_4^\psi]
- -\frac14[\Big[
+={}&\frac12\big[y_6[n_2;\omega_2,s_1]+s_1\mathcal{𝒪}_5^\psi\big]
+ +\frac14\mathcal Q_{\omega_2}[\beta_4^\psi]\\
+ &-\frac14[\Big[
  \mathop{\mathrm{MS}}\nolimits_{12132434}
  ([\beta_{s_1}\widetilde{\omega}_2]_2,
   [\beta_{s_1}\widetilde{\omega}_2]_2,[n_2]_2,[n_2]_2)
@@ -286,12 +284,9 @@ expands to four ordered cups with no background remainder. Here
 $`\beta_4=\beta^-n_3+\beta_4^\psi`$ is ordinary integer addition.
 The explicit $`s_1\mathcal{𝒪}_5^\psi/2`$ is required by the same phase
 change that fixes the compact Majorana formula; it does not redefine
-the fixed binary completion $`y_6`$. The two terms after it vanish for
-$`s_1=0`$. Write $`x`$ for the polynomial in their brackets: $`y_6`$ completes
-the parity polynomial $`\mathcal{𝒪}_5^\psi+dx`$ of the code, and these two
-terms write the phase for the parity count $`\mathcal{𝒪}_5^\psi`$ itself.
+the fixed binary completion $`y_6`$.
 
-The polynomial $`y_6`$ contains **623,880 explicit physical-face monomials**
+The polynomial $`y_6`$ contains **458,647 explicit physical-face monomials**
 after its complete finite definition is expanded and equal binary
 monomials are collected. The [complete physical coefficient table](FOUR_DIMENSIONAL_Y6_FACES.md)
 specifies every monomial. It is not counted as one term. The remaining

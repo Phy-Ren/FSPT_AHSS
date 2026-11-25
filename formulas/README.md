@@ -37,12 +37,13 @@ Each cited function is an executable, term-by-term definition.
 | Operation | Readable definition | Compiled/runtime implementation |
 |---|---|---|
 | Cup, higher cup, signed differential, ordered word operations, lifts and carries | `reference/d4_input/code/cochains.py` | `fspt/formulas.py`, compiler scalar operations |
-| Native lower obstruction tower | `cochains.py:parity`, `compact.py:kappa`; `full3/lower.py` | `source_3_majorana`, `source_3_fermion`, `source_4_majorana`, `source_4_fermion` |
-| Pure p+ip higher source terms and binary completion | `reference/d4_input/code/explicit_pip.py:pure_terms16,binary_completion`, adjacent `Y5_*`/`Y6_*` tables | `y6`, `h6`, `high6`; source assembly in `runtime.py` |
-| Shared six-cochain source blocks | `full3/source.py:blocks,high_source16`; `joint/cubic_repair.py` | `high6`, including its ordered cubic output |
+| Native lower obstruction tower | `cochains.py:parity`, `compact.py:kappa`; `full3/lower.py`; 4+1D complex-fermion source `full4/physical.py:parity` | `source_3_majorana`, `source_3_fermion`, `source_4_majorana`, `source_4_fermion` |
+| Pure p+ip higher source terms and binary completion | `reference/d4_input/code/physical_y6.py:physical_completion` with `physical_Y6_total.json`; for the 3+1D construction and the 4+1D transfer kernel `explicit_pip.py:pure_terms16,binary_completion` with the adjacent `Y5_*`/`Y6_*` tables | `y6`; `y6_auxiliary`, `h6`, `high6`; source assembly in `runtime.py` |
+| Six-cochain source blocks of the 3+1D construction | `full3/source.py:blocks,high_source16`; `joint/cubic_repair.py` | `high6`, including its ordered cubic output |
+| 4+1D bosonic source in the occupation $`n_4`$ | `full4/physical.py:blocks,source48` | `source_4_bosonic`, including the cubic term |
 | 3+1D full source and product | `full3/source.py:source16,product16`; `full3/lower.py`; `omega3/prism.py` | `lift3_source`, `lift3_product`, lower source/product DAGs and interval/triangle integration |
-| 4+1D lower product | `full4/product_full.py:lower` | `product_4_majorana`, `product_4_fermion` |
-| 4+1D nonbinary terminal product | `full4/product_full.py:collected_blocks,phase48` | `nonbinary4` |
+| 4+1D lower product | `full4/product_full.py:lower`; complex-fermion part `full4/physical.py:lower_product` | `product_4_majorana`, `product_4_fermion` |
+| 4+1D nonbinary terminal product | `full4/physical.py:product48`, with `full4/product_full.py:collected_blocks` | `product_4_bosonic` |
 | 4+1D binary terminal product | `full4/product_full.py:Zvalue,Ls`; `full4/kernel_full.py:rho`; `full4/graded_full.py` | `rho4`, `tensor4`, normalized finite transfer in `runtime.py` |
 | Balanced tensor polynomials | `terminal_general/tensor_compact.py`; `unitary4/transfer_model.py` | `tensor4` |
 | Closed-Majorana CA and operator laws, degrees 1–3 | `fspt/majorana_complete.py` | `majorana_*` DAGs and `fspt/majorana_backend.py` |

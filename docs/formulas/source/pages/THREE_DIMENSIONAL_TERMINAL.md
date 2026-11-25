@@ -189,6 +189,7 @@ $`+\tfrac18\widetilde{\omega}_2n_1n'_1`$ in $`\mathcal{ℰ}_4`$.
 
 The operations $`T_6,y_6`$ are the finite operations of
 [Finite cochain formulas for the bosonic obstruction](SOURCE_OPERATIONS.md), applied to the displayed
-auxiliary fields. Each $`1/2`$ bracket is binary. Each $`1/4`$ bracket is
+auxiliary fields; the parity term in (S6) of $`y_6`$ is the auxiliary source
+$`\mathcal{𝒪}_5^{\psi,J}`$, with the [numerical polynomial of the auxiliary source](COEFFICIENTS.md#auxiliary-numerical-polynomial). Each $`1/2`$ bracket is binary. Each $`1/4`$ bracket is
 integer, with the polynomial enclosed in $`[\cdot]_2`$ reduced as a whole before its
 implicit lift. The parameter integration then gives phases modulo one.

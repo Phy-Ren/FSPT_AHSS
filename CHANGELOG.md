@@ -1,5 +1,38 @@
 # Changelog
 
+## 2026-11-25: 4+1D code in the physical occupation n_4
+
+The 4+1D programs now take the physical point-fermion occupation $`n_4`$,
+with $`dn_4=\mathcal O_5`$ the complete F-move count. Every stored
+classification and stacking group and every layer filtration is unchanged.
+
+- `source_4_fermion` and `product_4_fermion` evaluate $`\mathcal O_5`$ and
+  $`\mathcal E_4`$ of the formula pages (`full4/physical.py:parity,lower_product`).
+- `source_4_bosonic` evaluates the displayed $`\mathcal O_6`$ in $`n_4`$
+  (`full4/physical.py:source48`); it replaces the shared `high6` in 4+1D, which
+  the 3+1D construction keeps.
+- $`y_6`$ is the completion of the F-move parity $`\mathcal O_5^\psi`$: the
+  residual (S6) uses $`\mathcal O_5^\psi`$, and two tridegrees of the numerical
+  polynomial change. The pure p+ip obstruction is
+  $`\tfrac12[y_6+s_1\mathcal O_5^\psi]`$ plus its fractional terms; the
+  completion has 458,647 physical-face monomials. The relation to the earlier
+  representative is the twisted differential of the Eilenberg–Zilber
+  pullback of the change of the completion, a local five-cochain of
+  $`n_2,\omega_2,s_1`$. The 3+1D auxiliary source keeps the completion of its
+  auxiliary p+ip source (`y6_auxiliary`).
+- `product_4_bosonic` replaces `nonbinary4`. At $`n_2=n'_2=0`$ the stacking
+  correction equals the closed-Majorana law of the thesis and of
+  `majorana_3_stacking_operator`; for $`n_2\neq0`$ it differs from the previous
+  correction by the polarization of the source rephasing and by explicit
+  P-move rephasings.
+- The gauge cylinders, `majorana4_product_composed` and the GAP
+  character-Majorana lift table were recompiled from these programs.
+- Every compiled 4+1D program was checked against its readable source; the
+  displayed $`\mathcal O_6`$, evaluated directly with the 1,897-word table and
+  the new $`y_6`$, is closed on random on-shell data; the stacking correction
+  satisfies $`d_{s_1}\mathcal E_5=\mathcal O_6[N]-\mathcal O_6[n]-\mathcal O_6[n']`$
+  on random data with and without p+ip decoration.
+
 ## 2026-11-25: 4+1D formulas in the parity count of the F move
 
 The 4+1D formula pages now write the complex-fermion layer with

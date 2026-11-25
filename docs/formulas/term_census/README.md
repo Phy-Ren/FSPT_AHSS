@@ -7,9 +7,9 @@ the fixed terminal phase map is expanded; the complete lower output
 cochains, standard operations, and protected integer lifts retain their
 stated scopes. These are not minimal cochain normal forms.
 
-The 4+1D source has **625,829 terms**. Its Majorana contribution
+The 4+1D source has **460,594 terms**. Its Majorana contribution
 has **16**, its mixed Majorana–p+ip contribution **1,907**, and its pure
-p+ip contribution **623,888**. The paired product has
+p+ip contribution **458,653**. The paired product has
 **8,555,644 expression occurrences**, including **760 Majorana leaves**
 in **618 outer addends**. Replacing that one lift-interior count by its
 outer count gives **8,555,502**. The four protected lift interiors
@@ -32,7 +32,7 @@ four Majorana lift interiors in the count gives **4,407,745**.
   word lists, integer and face terms, and the retained representative
   choices of the word-index pages.
 - [Pure-source polynomial](../FOUR_DIMENSIONAL_Y6_FACES.md)
-  contains 623,880 physical face monomials, unchanged by the phase map.
+  contains 458,647 physical face monomials, unchanged by the phase map.
 - [Majorana carry data](../FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md)
   specify every protected lift product. The carry-reduced coefficient
   part and the fixed paired transport are both included in these counts.

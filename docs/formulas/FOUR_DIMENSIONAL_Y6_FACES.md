@@ -5,7 +5,7 @@
 **Phase convention:** physical, as fixed in the [formula guide](../FORMULA_GUIDE.md#phase-convention): the forward F move carries $`\nu`$, the consistency loop runs forward along $`D`$ and back along $`N`$, the insertions are $`X=P\Gamma`$ and $`\bar X=\bar P\Gamma^\dagger`$, and coefficients are signed minimal representatives.
 
 The binary cochain $`y_6`$ in the bosonic obstruction contains exactly
-**623,880 distinct physical face monomials**. The
+**458,647 distinct physical face monomials**. The
 [complete coefficient table](coefficients/FOUR_DIMENSIONAL_Y6_FACES.json)
 lists every term after collection modulo two. This is the complete source
 polynomial, including its numerical and residual contributions.
@@ -23,7 +23,7 @@ integer digits are
 
 The coefficient file prints these mathematical names in its factor
 alphabet. A hexadecimal mask specifies which listed factors are multiplied
-in one term. Add the 623,880 products modulo two; every coefficient is one.
+in one term. Add the 458,647 products modulo two; every coefficient is one.
 The masks are exact strings, so reading the JSON cannot round a large
 integer. There is no recurrence, unlisted coefficient, or extra summation.
 
@@ -43,8 +43,8 @@ parity after the whole exact division by eight is unchanged. The numerical
 coefficients have generalized binomial orders at most four; their parity
 also has period eight. This covers both parts of the source polynomial.
 
-The coefficient table was obtained by exact symbolic expansion. Sixteen
-independent comparisons with the unchanged production expression passed,
+The coefficient table was obtained by exact symbolic expansion. Eighty
+independent comparisons with the production expression passed,
 including negative integer root values. Those comparisons check the
 implementation and lift conventions; the exact polynomial expansion,
 not interpolation from the sixteen cases, determines the coefficients.

@@ -26,7 +26,7 @@ def compile_mode(data_dir,mode,dimension=4):
     started=time.monotonic();builder=Builder();zero=builder.scalar(0)
     lower_name='source_{}_fermion'.format(dimension)
     phase_modulus=48 if dimension==4 else 16
-    names=['high6']+([lower_name] if mode=='majorana' else [])+(['lift3_source'] if dimension==3 else [])
+    names=(['source_4_bosonic'] if dimension==4 else ['high6'])+([lower_name] if mode=='majorana' else [])+(['lift3_source'] if dimension==3 else [])
     raw={name:(data_dir/(name+'.json')).read_bytes() for name in names}
     programs={name:json.loads(value) for name,value in raw.items()}
     def run(name,vertices,get_field=None):
@@ -84,8 +84,7 @@ def compile_mode(data_dir,mode,dimension=4):
     def upper_source(vertices):
         if degenerate(vertices):return zero
         if dimension==4:
-            high,cubic=run('high6',vertices)
-            return (3*high+4*cubic)%48
+            return run('source_4_bosonic',vertices)[0]%48
         outputs=run('lift3_source',vertices);metadata=programs['lift3_source'];total=zero
         for call in metadata['calls']:
             offset=call['offset'];arrays={}

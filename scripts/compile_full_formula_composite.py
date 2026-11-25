@@ -21,7 +21,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def main():
     started=time.monotonic();builder=Builder();zero=builder.scalar(0)
     directory=ROOT/'fspt/data/full_formula'
-    programs={name:json.loads((directory/(name+'.json')).read_text()) for name in ('rho4','h6','nonbinary4')}
+    programs={name:json.loads((directory/(name+'.json')).read_text()) for name in ('rho4','h6','product_4_bosonic')}
     def field(name,degree):
         values=[zero]*64
         for f in faces(5,degree):values[sum(1<<j for j in f)]=builder.make('field',name,f)
@@ -42,7 +42,7 @@ def main():
             else:raise ValueError(op)
             values.append(value)
         return [values[i] for i in program['outputs']]
-    nonbinary=run('nonbinary4',base)[0];binary=zero;cuts=0
+    nonbinary=run('product_4_bosonic',base)[0];binary=zero;cuts=0
     def pull(values,projection,degree):
         result=[zero]*128
         for face in faces(6,degree):

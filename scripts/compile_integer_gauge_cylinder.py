@@ -23,7 +23,7 @@ def degenerate(vertices):return any(a==b for a,b in zip(vertices,vertices[1:]))
 
 def compile_cylinder(data_dir):
     started=time.monotonic();builder=Builder();zero=builder.scalar(0)
-    names=['source_4_majorana','source_4_fermion','y6','high6']
+    names=['source_4_majorana','source_4_fermion','y6','source_4_bosonic']
     raw={name:(data_dir/(name+'.json')).read_bytes() for name in names}
     programs={name:json.loads(value) for name,value in raw.items()}
     def run(name,vertices,get_field):
@@ -90,8 +90,7 @@ def compile_cylinder(data_dir):
     @lru_cache(None)
     def upper_source(vertices):
         if degenerate(vertices):return zero
-        high,cubic=run('high6',vertices,operator_field)
-        return (3*high+4*cubic)%48
+        return run('source_4_bosonic',vertices,operator_field)[0]%48
     outputs=[('majorana',prism(majorana_source,tuple((i,1) for i in range(4)),2),3,2),
              ('fermion',prism(fermion_source,tuple((i,1) for i in range(5)),2),4,2),
              ('bosonic',prism(upper_source,tuple((i,1) for i in range(6)),48),5,48)]

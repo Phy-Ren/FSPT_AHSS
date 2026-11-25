@@ -19,7 +19,7 @@
   "reader_hashes": {
     "docs/formulas/TWO_DIMENSIONAL.md": "92fa424193a482022df0b1a330eff2541eeafd0b26ce8b04a288026dc10edb68",
     "docs/formulas/THREE_DIMENSIONAL.md": "eb910e5245cc3c51819603f596a4b8b0f0a25889d3bb228bae5dcab4f1058855",
-    "docs/formulas/FOUR_DIMENSIONAL.md": "78ffa1e2228d66ae56d67e0904f0afd27f9690a8ff02490b5c19f8beda296119"
+    "docs/formulas/FOUR_DIMENSIONAL.md": "f7752dbfa06b3cfa43a57f67ccc0d1992f37eb49325ce6e6342b50b56f148897"
   },
   "records": [
     {
@@ -626,15 +626,15 @@
       "law": "O6",
       "origin": "psi",
       "terms_by_coefficient": {
-        "binary_or_half": 623883,
+        "binary_or_half": 458648,
         "quarter": 2,
         "eighth": 1,
         "sixteenth": 1,
         "third": 0,
         "twelfth": 1
       },
-      "total": 623888,
-      "note": "The 623880-face completion and five existing fractional terms are retained; the phase transport adds the single defined lower contribution s1 O5psi/2, and the occupation conversion adds Q[x] and O5psi cup_4 dx."
+      "total": 458653,
+      "note": "The 458647-face completion of the parity count and five existing fractional terms are retained; the phase transport adds the single defined lower contribution s1 O5psi/2."
     },
     {
       "dimension": "4+1D",
@@ -856,7 +856,7 @@
     "4+1D O3": 0,
     "4+1D O4": 2,
     "4+1D O5": 15,
-    "4+1D O6": 625829,
+    "4+1D O6": 460594,
     "4+1D E2": 0,
     "4+1D E3": 1,
     "4+1D E4": 38,
@@ -1454,9 +1454,9 @@
     "source_counts": {
       "gamma": 16,
       "gammapsi": 1907,
-      "psi": 623888
+      "psi": 458653
     },
-    "source_total": 625829,
+    "source_total": 460594,
     "general_total": 8555644,
     "general_outer_total": 8555502,
     "self_outer_total": 4407643,
@@ -1473,7 +1473,7 @@
   "counted_source_hashes": {
     "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--14.tex": "62981a6fd5eaa942024d8a1bb58f57008cc8875fb2dde3d28b086e75bb79411c",
     "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--15.tex": "47e450bf9dd0c452c30310d8b2cda76d46c72e3b83916413ac237192919c522d",
-    "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--16.tex": "f516f5f2f29c63e39e3612020a5b98313db43b98850915faea351d4606f12e0f",
+    "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--16.tex": "03a5e077e9de1ebfb3c718ca5f274b40c42611e5716bba5c0a17775924c93ef8",
     "docs/formulas/source/equations/four-dimensional--majorana-decoration--33.tex": "640344b4d00d54f96c3dd6fc4c2d75592b137e087dbca214c1d13c203ad6c5f6",
     "docs/formulas/source/equations/four-dimensional--majorana-and-p-ip-decoration--36.tex": "cb19f9fa62805c51c5521f2947570aa561678d5130ebc92da16d9f249acde581",
     "docs/formulas/source/equations/four-dimensional--p-ip-decoration--37.tex": "45ae177f56c6b4ee27899b73a0e1b757af623852bae9d90e5dddf62dd22c7e62",

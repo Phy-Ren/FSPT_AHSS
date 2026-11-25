@@ -25,7 +25,7 @@ def main():
     ap.add_argument('--data-dir',type=Path,default=Path(__file__).resolve().parents[1]/'fspt/data/full_formula')
     args=ap.parse_args();started=time.monotonic();builder=Builder();zero=builder.scalar(0)
     programs={name:json.loads((args.data_dir/(name+'.json')).read_text())
-              for name in ['source_4_fermion','high6']}
+              for name in ['source_4_fermion','source_4_bosonic']}
     def run(name,vertices,field):
         values=[];program=programs[name]
         for op,*x in program['program']:
@@ -74,8 +74,7 @@ def main():
     @lru_cache(None)
     def upper_source(vertices):
         if degenerate(vertices):return zero
-        high,cubic=run('high6',vertices,fields)
-        return (3*high+4*cubic)%48
+        return run('source_4_bosonic',vertices,fields)[0]%48
     outputs=[fermion(tuple((i,1) for i in range(5))),
              prism(upper_source,tuple((i,1) for i in range(6)),48)]
     manifests=[]

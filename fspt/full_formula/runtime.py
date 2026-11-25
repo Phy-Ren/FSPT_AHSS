@@ -359,20 +359,36 @@ class Backend:
 
     @lru_cache(maxsize=12000)
     def y6(self,n,w,s):
+        """Completion y_6 of the physical parity O_5^psi (4+1D source)."""
         if not any(n) or degenerate_fields(6,((2,n),(2,w),(1,s))):return 0
         return self.program('y6',dict(n=n,w=w,s=s))[0]%2
 
     @lru_cache(maxsize=12000)
+    def y6_auxiliary(self,n,w,s):
+        """Completion of the auxiliary source of the 3+1D construction and of
+        the 4+1D transfer kernel."""
+        if not any(n) or degenerate_fields(6,((2,n),(2,w),(1,s))):return 0
+        return self.program('y6_auxiliary',dict(n=n,w=w,s=s))[0]%2
+
+    @lru_cache(maxsize=12000)
     def h6(self,n,a,w,s):
         if degenerate_fields(6,((2,n),(3,a),(2,w),(1,s))):return 0
-        y=[0]*128;y[127]=self.y6(n,w,s)
+        y=[0]*128;y[127]=self.y6_auxiliary(n,w,s)
         return self.program('h6',dict(n=n,a=a,w=w,s=s,y=y))[0]%2
 
     def high6(self,fields):
+        """Auxiliary six-cochain source of the 3+1D construction."""
+        f=dict(fields);y=[0]*128
+        y[127]=self.y6_auxiliary(tuple(f['n']),tuple(f['w']),tuple(f['s']))
+        f['y']=y
+        return self.program('high6',f)
+
+    def source4(self,fields):
+        """O_6 in the physical occupation n_4; fields carry the physical n_3 in 'a'."""
         f=dict(fields);y=[0]*128
         y[127]=self.y6(tuple(f['n']),tuple(f['w']),tuple(f['s']))
         f['y']=y
-        return self.program('high6',f)
+        return self.program('source_4_bosonic',f)[0]%48
 
     def suspended(self,operation,fields):
         name='lift3_'+operation
@@ -463,9 +479,7 @@ class Backend:
                         return Fraction(value%16,16)
             return Fraction(self.suspended('source',fields),16)
         if dimension==4:
-            shifted=self.shift(4,fields)
-            high,cubic=self.high6(shifted)
-            return Fraction((3*high+4*cubic)%48,48)
+            return Fraction(self.source4(self.shift(4,fields)),48)
         raise ValueError('Only spatial dimensions 3 and 4 are supported')
 
     def majorana_gauge_n0(self,dimension,stage,fields):
@@ -535,7 +549,7 @@ class Backend:
             return Fraction(self.program('majorana4_product_composed',fields)[0]%48,48)
         l=self.shift(4,dict(background,**left));r=self.shift(4,dict(background,**right))
         fields.update(a=l['a'],b=r['a'])
-        value=self.program('nonbinary4',fields)[0]
+        value=self.program('product_4_bosonic',fields)[0]
         state=encode(5,fields['n'],fields['a'],fields['m'],fields['b'],fields['w'],fields['s'])
         value+=24*self.binary4(state)
         return Fraction(value%48,48)

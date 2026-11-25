@@ -180,6 +180,8 @@ The second term is the finite numerical polynomial specified in
 tridegrees, uses explicit generalized integer binomials and first-vertex
 transport, and contains no implicit primitive. That appendix prints every
 coefficient, together with a lossless machine-readable copy.
+The parity term of (S6) is the F-move count $`\mathcal{𝒪}_5^\psi`$, so $`y_6`$
+completes the p+ip source of the physical occupation $`n_4`$.
 
 The three-factor formulas here and in the terminal stacking correction
 assign fields differently to the same grid. Here $`s_1`$ and $`\omega_2`$
