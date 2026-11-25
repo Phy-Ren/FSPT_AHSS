@@ -1,8 +1,9 @@
 """Verify the explicit finite coefficient tables using only the standard library.
 
 Run from any directory: python verify_coefficients.py
-The script checks the complete factor definitions, nonlinear scopes, row
-uniqueness, file hashes, and the stated summand counts for both contributions.
+The script checks the complete factor definitions, nonlinear scopes, polynomial
+factors, row uniqueness, file hashes, and the stated summand counts for both
+contributions.
 """
 from pathlib import Path
 import hashlib,json,gzip
@@ -10,7 +11,7 @@ ROOT=Path(__file__).resolve().parent
 
 def check(sector):
  directory=ROOT/sector;index=json.loads((directory/'INDEX.json').read_text())
- factors=[];seen=set();count=0;interiors=0;arguments=0
+ factors=[];seen=set();count=0;interiors=0;arguments=0;products=0
  def expression(rows,limit,modulus):
   nonlocal interiors
   for coefficient,ids in rows:
@@ -32,6 +33,9 @@ def check(sector):
      assert factor['operation'] and factor['degree']>=1
      for arg in factor['arguments']:
       expression(arg['terms'],identifier,1<<arg['precision_bits']);arguments+=len(arg['terms'])
+    elif kind=='polynomial':
+     assert factor['modulus']==2 and factor['divisor']==1
+     expression(factor['numerator'],identifier,2);products+=len(factor['numerator'])
     else:
      assert kind in ('canonical_binary_lift','binary_floor_digit')
      expression(factor['numerator'],identifier,factor['modulus']);interiors+=len(factor['numerator'])
@@ -46,8 +50,9 @@ def check(sector):
  assert count==index['term_count']==index['ledger']['outer_terms']
  assert interiors==index['ledger']['unique_protected_interiors']
  assert arguments==index['ledger']['standard_lower_argument_summands']
- print(sector,{'terms':count,'factors':len(factors),'nonlinear_interior_terms':interiors,'standard_operation_argument_terms':arguments})
- return {'sector':sector,'terms':count,'factors':len(factors),'nonlinear_interior_terms':interiors,'standard_operation_argument_terms':arguments}
+ assert products==index['ledger']['polynomial_factor_products']
+ print(sector,{'terms':count,'factors':len(factors),'nonlinear_interior_terms':interiors,'standard_operation_argument_terms':arguments,'polynomial_factor_products':products})
+ return {'sector':sector,'terms':count,'factors':len(factors),'nonlinear_interior_terms':interiors,'standard_operation_argument_terms':arguments,'polynomial_factor_products':products}
 
 if __name__=='__main__':
  result=[check(sector)for sector in ('gamma_psi','psi')]

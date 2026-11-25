@@ -213,55 +213,90 @@ def thesis_primitive(u, v, w, s):
     return C(4, fun=value)
 
 
-def stacking_rephasing(n, u, m, v, w, s):
-    """Four times the P-move rephasing that puts the twister of source48 in the
-    thesis form at n_2 = n'_2 = 0."""
+def transfer_parity(n, u, w, s):
+    """The compact F-move count of the transfer construction (TERMINAL_TRANSFER.md):
+    O_5^gamma + n_3 cup_2 dn_3 + s_1(n_3 cup_3 dn_3) + the auxiliary p+ip source."""
+    from cochains import pure_parity as auxiliary_parity
+    return kappa(u, w, s)+auxiliary_parity(n, w, s)
+
+
+def transfer_lower48(n, u, m, v, w, s):
+    """Part of the stacking correction of the transfer construction that does not
+    depend on the occupations, numerator over 48, without the transfer Z_5 (added
+    by the runtime). Its lower stacking correction is
+    E_4^tr = third_product + [n_2]_2[n'_2]_2, and the stacked parity is the compact count."""
+    from product_full import collected_blocks
+    zero = C(4)
+    D = collected_blocks(n, u, zero, m, v, zero, w, s)
+    a, b = n.reduce(2), m.reduce(2)
+    z = cup(a, b)
+    W = w+cup(s, s)
+    U = u+v+cup(a, b, 1)
+    eps = cup(D['e']+z, z, 3)+cup(transfer_parity(n+m, U, w, s), z, 4)
+    nq = cup(n, m, 1, s=s, twists=(1, 1))
+    cubic = cup(m-n, nq, s=s, twists=(1, 0))-cup(nq, m-n, s=s, twists=(0, 1))
+    return ((eps+D['Phi5']).lift().scaled(24)+(D['V5'].lift()+D['Pi5']).scaled(12)
+            + cup(W.lift(), nq, s=s, twists=(1, 0)).scaled(6)+cubic.scaled(16)), D['e']
+
+
+def occupation_terms(n, u, m, v, w, s):
+    """Five-cochain mod 2 of lower fields only: the part of the change from the
+    complex-fermion coordinate of the transfer construction to the occupation n_4
+    that does not involve n_4. With S = n_3 cup_2 n_3 and P the s_1 polynomial of
+    E_4^psi for each state, the transfer coordinate is n_4 + S + P."""
+    a, b = n.reduce(2), m.reduce(2)
+    NN, U = n+m, u+v+cup(a, b, 1)
+    E4 = lower_product(n, u, m, v, w, s)
+    O, Op, ON = parity(n, u, w, s), parity(m, v, w, s), parity(NN, U, w, s)
+    S, Sp, SN = cup(u, u, 2), cup(v, v, 2), cup(U, U, 2)
+    P, Pp, PN = s1_polynomial(a, carry(n), s), s1_polynomial(b, carry(m), s), s1_polynomial(a+b, carry(NN), s)
+    t, tp, tN = S+P, Sp+Pp, SN+PN
+    Dt = tN+t+tp
+    beta = cup(u, v, 3)
+    db = beta.d()
+
+    def one(S_, P_, t_, O_):
+        return cup(S_.d(), O_, 5)+cup(s, S_)+cup(O_, t_, 4)+cup(S_, P_, 3)+cup(S_.d(), P_, 4)
+    return (cup(t, tp, 3)+cup(t+tp, E4+Dt+db, 3)+cup(O+t.d(), tp, 4)+cup(E4, tN+db, 3)+cup(db, tN, 3)
+            + cup(t, Op, 4)+cup(db, ON, 4)+cup(w, beta)+cup(beta, beta, 1)+cup(beta, db, 2)+cup(s, Dt+db)
+            + one(SN, PN, tN, ON)+one(S, P, t, O)+one(Sp, Pp, tp, Op))
+
+
+def rephasing_term(n, u, m, v, w, s):
+    """Four-cochain Q mod 2 of the P-move phase 1/2 Q + 1/2 b_4 + 1/4 n_3 cup_2 n'_3."""
     a, b = n.reduce(2), m.reduce(2)
     U = u+v+cup(a, b, 1)
     S, Sp, SN = cup(u, u, 2), cup(v, v, 2), cup(U, U, 2)
     O, Op, ON = parity(n, u, w, s), parity(m, v, w, s), parity(n+m, U, w, s)
-    beta = cup(u, v, 3)
-    Q = cup(SN, ON, 5)+cup(S, O, 5)+cup(Sp, Op, 5)+cup(beta.d(), SN, 4)
-    return ((Q+thesis_primitive(u, v, w, s)).lift().scaled(2)-output_gauge(u, v)
-            + cup(u.lift(), v.lift(), 2))
-
-
-def occupation_change(n, u, c, w, s):
-    """Four times the one-state rephasing from the transfer construction of
-    the product, whose complex-fermion argument is c + n_3 cup_2 n_3 + x, to the
-    displayed convention in c = n_4; x is the s_1 polynomial of E_4^psi."""
-    a, h = n.reduce(2), carry(n)
-    S = cup(u, u, 2)
-    x = s1_polynomial(a, h, s)
-    y = S+x
-    O5 = parity(n, u, w, s)
-    R = cup(c, y, 3)+cup(O5, y, 4)+cup(S, x, 3)+cup(S.d(), x, 4)
-    return convention(n, u, c, w, s)+R.lift().scaled(2)
+    return cup(SN, ON, 5)+cup(S, O, 5)+cup(Sp, Op, 5)+cup(cup(u, v, 3).d(), SN, 4)
 
 
 def product48(n, u, c, m, v, cp, w, s):
-    """Nonbinary part of E_5 over 48 in the occupations c = n_4, cp = n'_4.
+    """E_5 over 48 in the occupations c = n_4, cp = n'_4, without the transfer Z_5.
 
-    The binary transfer Z_5 of the runtime is added separately. The transfer
-    construction evaluates its complex-fermion products on c + y, cp + y'
-    (y = n_3 cup_2 n_3 + x, x the s_1 polynomial of E_4^psi). The twister of
-    the obstruction source48 follows by the polarization of occupation_change
-    on the stacked state with occupation N_4 + d(n_3 cup_3 n'_3), the gauge
-    primitive that removes d(n_3 cup_3 n'_3), the P-move rephasing
-    1/2 y cup_4 n'_4, and the polarization of completion_change.
+    The runtime adds the transfer Z_5 separately. The value is
+    the sum of
+      - the complex-fermion contributions E_5^c + E_5^{c gamma} + E_5^{c psi}
+        of FOUR_DIMENSIONAL.md, the only terms that involve c and cp;
+      - the occupation-free part of the transfer construction (transfer_lower48),
+        with its phase convention: -Delta B_5[n_3], 1/2 s_1 E_4^tr and the output
+        coboundary -d_s B_4^out;
+      - the occupation terms of the change to n_4 (occupation_terms), the
+        polarization of the one-state rephasing between the two source
+        completions (completion_change), and the P-move phase
+        d_s(1/2 Q + 1/2 b_4 + 1/4 n_3 cup_2 n'_3).
     """
-    from product_full import collected_blocks
     a, b = n.reduce(2), m.reduce(2)
-    y = cup(u, u, 2)+s1_polynomial(a, carry(n), s)
-    yp = cup(v, v, 2)+s1_polynomial(b, carry(m), s)
-    D = collected_blocks(n, u, c+y, m, v, cp+yp, w, s)['nonbinary48']
     NN, U = n+m, u+v+cup(a, b, 1)
-    N4 = c+cp+lower_product(n, u, m, v, w, s)
-    beta = cup(u, v, 3)
-    dR = (occupation_change(NN, U, N4+beta.d(), w, s)
-          - occupation_change(n, u, c, w, s)-occupation_change(m, v, cp, w, s))
-    G = (cup(N4, beta.d(), 3)+cup(beta, beta.d(), 2)+cup(beta, beta, 1)
-         + cup(w, beta)+cup(s, beta.d())+cup(y, cp, 4).d())
+    E4 = lower_product(n, u, m, v, w, s)
+    N4 = c+cp+E4
+    O, Op, ON = parity(n, u, w, s), parity(m, v, w, s), parity(NN, U, w, s)
+    complex_fermion = cup(c, cp, 3)+cup(c+cp, E4, 3)+cup(O, cp, 4)+cup(N4, ON, 4)+cup(c, O, 4)+cup(cp, Op, 4)
+    lower, Etr = transfer_lower48(n, u, m, v, w, s)
+    dB5 = B5(U, w, s)-B5(u, w, s)-B5(v, w, s)
     Dy = completion_change(NN, w, s)+completion_change(n, w, s)+completion_change(m, w, s)
-    P = ds(stacking_rephasing(n, u, m, v, w, s), s)
-    return D+dR.scaled(12)+(G+Dy).lift().scaled(24)+P.scaled(12)
+    half = (complex_fermion+cup(s, Etr)+occupation_terms(n, u, m, v, w, s)+Dy
+            + rephasing_term(n, u, m, v, w, s).d())
+    quarter = thesis_primitive(u, v, w, s).lift().scaled(2)+cup(u.lift(), v.lift(), 2)
+    return (lower+half.lift().scaled(24)-dB5.scaled(12)-ds(output_gauge(u, v), s).scaled(12)
+            + ds(quarter, s).scaled(12))

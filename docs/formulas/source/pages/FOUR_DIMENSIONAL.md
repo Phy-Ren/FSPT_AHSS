@@ -269,7 +269,7 @@ the other contributions do not depend on $`N_4`$.
 
 {{equation:four-dimensional--complex-fermions-and-majorana-decoration--31}}
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_4,N_2,N_3)`$ minus the values at $`(n_4,n_2,n_3)`$ and $`(n'_4,n'_2,n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All parity brackets retain the cochain differential terms. The second bracket depends only on the lower decorations. In it $`y=n_3\cup_2n_3+x`$ for each state, with $`x`$ the polynomial of the [p+ip obstruction contribution](#eq-t4) $`\mathcal{𝒪}_6^\psi`$; primes mark the lower state and the subscript or superscript $`N`$ the stacked state, $`\Delta y=y_N-y-y'`$, and $`\mathcal{𝒪}_5`$ without a superscript is the complete parity obstruction of the upper state. This bracket writes the products of the code in the occupation $`n_4`$ ([code notation](../../formulas/CODE_NOTATION.md#from-the-code-to-the-formulas)); for $`n_2=n'_2=0`$ it is the bracket of the [closed-Majorana law](MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-cgamma-4d).
+The $`\Delta`$ has its defined three terms: the value at $`(N_4,N_2,N_3)`$ minus the values at $`(n_4,n_2,n_3)`$ and $`(n'_4,n'_2,n'_3)`$. It uses the actual stacked fields, including their p+ip carries, and the parity brackets retain their cochain differential terms. The complex-fermion contributions $`\mathcal{ℰ}_5^c`$, $`\mathcal{ℰ}_5^{c\gamma}`$ and $`\mathcal{ℰ}_5^{c\psi}`$ contain every term of $`\mathcal{ℰ}_5`$ that depends on the occupations $`n_4,n'_4`$; the remaining contributions depend only on the lower decorations. For $`n_2=n'_2=0`$ these three contributions are those of the [closed-Majorana law](MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-4d).
 
 #### Complex fermions and p+ip decoration
 
@@ -330,16 +330,45 @@ The [output-gauge relation](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md)
 and the [integer-carry derivation](FOUR_DIMENSIONAL_MAJORANA_CARRY_REDUCTION.md)
 explain the coefficient part; the $`B_5`$ terms are checked separately.
 
+<a id="eq-theta5"></a>
+
+The last line contains the $`\mathbb Z_2`$-valued polynomial
+
+{{equation:four-dimensional--majorana-decoration--46}}
+
+and a fixed local phase of the P move. In $`\Theta_5`$ the sum runs over the
+Majorana fields of the stacked state at $`n_2=n'_2=0`$ and of the two separate
+states, the stacked field being $`n_3+n'_3`$ modulo two; $`K_5[z]`$ is
+$`\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}`$ evaluated on $`z`$.
+$`\Theta_5`$ depends only on $`n_3,n'_3`$ and the backgrounds, and it is defined
+for open Majorana cochains. It is the Majorana part of two exact changes of
+the transfer construction of the code: its complex-fermion coordinate is
+moved to the physical occupation $`n_4`$, and its P move is rephased by
+$`d_{s_1}B_4^{\rm P}`$, $`B_4^{\rm P}=\tfrac12\big(S[N_3]\cup_5\mathcal{𝒪}_5[N]+S[n_3]\cup_5\mathcal{𝒪}_5+S[n'_3]\cup_5\mathcal{𝒪}'_5+d(n_3\cup_3n'_3)\cup_4S[N_3]+b_4\big)+\tfrac14n_3\cup_2n'_3`$.
+The parts of both changes that depend on $`n_2`$ or $`n'_2`$ are terms of the
+coefficient tables of the next two contributions. The $`\mathbb Z_2`$-valued four-cochain
+$`b_4`$ is a sum of **129 physical-face products**, listed with the
+[P-move rephasing](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md#p-move-rephasing).
+With $`\Theta_5`$ and this phase, the complete Majorana contribution at
+$`n_2=n'_2=0`$ is the closed-Majorana law [(M7)](MAJORANA_AND_ENDPOINTS.md#eq-m7-4d),
+an identity of cochains.
+
+After distributing its linear sums, with the lower twister $`\mathcal{ℰ}_4^\gamma`$ retained,
+$`\Theta_5`$ has **56 half-valued
+terms**; with the 129 products of $`b_4`$ and the quarter term
+$`\tfrac14n_3\cup_2n'_3`$ the last line adds **186 terms** to this contribution.
+
 #### Majorana and p+ip decoration
 
 {{equation:four-dimensional--majorana-and-p-ip-decoration--36}}
 
-This finite sum contains **5,684,189 explicit terms** with the defined
+This finite sum contains **7,053,734 explicit terms** with the defined
 lower differentials, stacking twisters and integer carries retained.
 The [complete coefficient table](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md)
-specifies every factor and argument. Expanding the remaining displayed
+specifies every factor and argument; its lower operations are those of this page.
+Expanding the remaining displayed
 linear sums and the three quarter numerators adds **1,262 terms**, giving
-**5,685,451 terms without the three $`B_5`$ evaluations**. Whole nonlinear lifts retain
+**7,054,996 terms without the three $`B_5`$ evaluations**. Whole nonlinear lifts retain
 their scopes; their complete interior terms are recorded separately in
 the coefficient table.
 
@@ -358,11 +387,13 @@ quarter-valued contribution into physical parts.
 
 {{equation:four-dimensional--p-ip-decoration--37}}
 
-This finite sum contains **2,869,198 explicit terms**, including the entire
-pure-source and tensor contributions. The
+This finite sum contains **3,265,871 explicit terms**, including the entire
+pure-source and tensor contributions and the polarization of the source
+rephasing between the completion $`y_6`$ and the completion of the transfer
+construction. The
 [complete coefficient table](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md)
 lists them with the same lower-operation convention. The other displayed
-terms add **22**, giving **2,869,220 terms without the $`B_5`$ evaluation**.
+terms add **22**, giving **3,265,893 terms without the $`B_5`$ evaluation**.
 The protected whole quarter numerator has 20 interior terms, displayed
 below; the other nonlinear interiors are specified in the coefficient table.
 

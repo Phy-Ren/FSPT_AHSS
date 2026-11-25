@@ -504,9 +504,9 @@ $`\Delta`$ takes the value on the stacked state minus the values on the upper an
 
 {{equation:majorana-and-endpoints--complex-fermion-majorana-contribution--46}}
 
-The second bracket is the occupation bracket of the
-[complete law](FOUR_DIMENSIONAL.md#eq-t4c) at $`n_2=n'_2=0`$, where
-$`y=n_3\cup_2n_3`$; it depends only on $`n_3`$ and $`n'_3`$.
+This is $`\tfrac12[dn_4\cup_4n'_4+\Delta(n_4\cup_4dn_4)]`$, the
+complex-fermion–Majorana contribution of the
+[complete law](FOUR_DIMENSIONAL.md#eq-t4c) at $`n_2=n'_2=0`$.
 
 ##### Majorana contribution
 
@@ -514,20 +514,27 @@ $`y=n_3\cup_2n_3`$; it depends only on $`n_3`$ and $`n'_3`$.
 
 **(M7, 4+1D)**
 
-This is the [complete stacking law](FOUR_DIMENSIONAL.md#eq-t4c)
-at $`n_2=n'_2=0`$ and $`dn_3=dn'_3=0`$.
-In particular $`\beta^-=\beta`$, $`\lambda_4^\gamma=0`$, and
-$`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; the terms containing
-$`\lambda_4^\gamma`$ or a derivative of a closed integer Bockstein vanish
-and are omitted.
+Here $`n_3,n'_3`$ are closed, $`\beta`$ is the integer Bockstein of the
+canonical lift, $`\mathrm{Sq}^1a=[\beta a]_2=a\cup_2a`$,
+$`\beta^+a=(\beta a+[\beta a]_2)/2`$ for a closed cochain $`a`$, and every product in the quarter
+bracket is a signed integer higher cup of canonical lifts:
 
 {{equation:majorana-and-endpoints--majorana-contribution--74}}
 
-The coefficient sets $`\mathcal I_5^\gamma`$ and $`\mathcal J_5^\gamma`$ are the shared
-[general definitions](FOUR_DIMENSIONAL.md#eq-t4c), evaluated on closed inputs;
-$`B_5`$ is the
-[phase-convention cochain](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
-The lower laws coincide with those of the complete tower, and
+The $`\mathbb Z_2`$-valued polynomial is
+
+{{equation:majorana-and-endpoints--majorana-contribution--75}}
+
+with the intrinsic part
+
+{{equation:majorana-and-endpoints--majorana-contribution--76}}
+
+The law (M3E) is the closed-Majorana law of the thesis. The
+[complete stacking law](FOUR_DIMENSIONAL.md#eq-t4c) at $`n_2=n'_2=0`$ reduces to
+it: its complex-fermion contributions are (M3Ec) and (M3Ecγ), its
+contributions with p+ip decoration vanish, and its
+[Majorana contribution](FOUR_DIMENSIONAL.md#eq-theta5) equals (M7) as a
+cochain on closed inputs. The lower laws coincide with those of the complete tower, and
 $`d_{s_1}\mathcal{ℰ}_5=\mathcal{𝒪}_6[N]-\mathcal{𝒪}_6[n]-\mathcal{𝒪}_6[n']`$
 holds exactly.
 The [zero-p+ip self-stacking formula](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)

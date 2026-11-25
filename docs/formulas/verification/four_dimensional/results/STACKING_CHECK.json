@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": {
+    "general": {
+      "samples": 40,
+      "pass": 40,
+      "zero_n2": 8,
+      "nonzero_n2": 32,
+      "failures": []
+    },
+    "cocycle": {
+      "samples": 40,
+      "pass": 40,
+      "zero_n2": 8,
+      "nonzero_n2": 32,
+      "failures": []
+    },
+    "closed": {
+      "samples": 40,
+      "pass": 40,
+      "zero_n2": 40,
+      "nonzero_n2": 0,
+      "failures": []
+    },
+    "self": {
+      "samples": 40,
+      "pass": 40,
+      "zero_n2": 8,
+      "nonzero_n2": 32,
+      "failures": []
+    },
+    "diagonal": {
+      "samples": 40,
+      "pass": 40,
+      "zero_n2": 40,
+      "nonzero_n2": 0,
+      "failures": []
+    }
+  },
+  "seconds": 364.1,
+  "domain": "Random exact lower towers: signed integer n2 with d_s n2 = 0, dn3 = O4, dn4 = O5, closed backgrounds in the four sectors (zero, w2 only, s1 only, both).",
+  "scope": "For random exact solutions of the lower equations (d_s n2 = 0, dn3 = O4, dn4 = O5,\nwith closed backgrounds, signed integer n2 and open n3):"
+}

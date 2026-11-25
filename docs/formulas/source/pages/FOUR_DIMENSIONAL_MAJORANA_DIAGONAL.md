@@ -38,32 +38,21 @@ zero-p+ip restriction of the [complete self-stacking formulas](FOUR_DIMENSIONAL_
 {{equation:four-dimensional-majorana-diagonal--complex-fermions-and-majorana-decoration--6}}
 
 The terms of the general formula on the stacked state vanish because $`N_3=0`$ and $`dN_4=0`$.
-The terms after the first are the occupation bracket of the [general law](FOUR_DIMENSIONAL_SELF_STACKING.md) at $`n_2=0`$.
 
 ### Majorana decoration
 
-This is the shared self-stacking expression with $`n_2=0`$,
-$`dn_3=0`$, and $`\beta_4^\gamma=\beta n_3`$. The terms
-containing $`dn_3`$ or $`\beta(\mathcal{𝒪}_4[n_2])`$
-vanish and are omitted:
+Here $`\beta n_3=dn_3/2`$ uses the integer differential of the canonical
+lift of the closed $`\mathbb Z_2`$ cochain $`n_3`$, $`\mathrm{Sq}^1n_3=[\beta n_3]_2=n_3\cup_2n_3`$,
+and the products in the quarter bracket are signed integer higher cups of
+canonical lifts:
 
 {{equation:four-dimensional-majorana-diagonal--majorana-decoration--7}}
 
-## Specialization of the phase convention
-
-The complete lower fields of the stacked state here are $`N_3=0`$ and
-$`N_4=\mathcal{ℰ}_4^\gamma`$. The $`B_5`$ terms of the phase convention
-consequently give $`\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$; this
-half-valued cochain is unchanged by the overall sign.
-Those two terms already appear in the Majorana formula above.
-
-All integer lifts and Bocksteins have their common meanings. In particular
-$`\beta n_3=dn_3/2`$ uses the integer differential of the binary cocycle,
-and the whole binary lifts inside the formula retain their scopes.
-The coefficient sets are the same ones used in
-[complete self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md); their values
-are specialized with the stated closed input rather than fitted again.
-The complex-fermion completion of the separate states and their incoming phase are retained.
+This is the closed-Majorana self-stacking law of the thesis, the
+specialization of [(M3E)](MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-4d) to equal
+upper and lower states. The [complete self-stacking formulas](FOUR_DIMENSIONAL_SELF_STACKING.md)
+at $`n_2=0`$ equal it as cochains. The complex-fermion completion of the
+separate states and their incoming phase are retained.
 
 The [root-power presentation](ROOT_POWER_PRESENTATIONS.md) explains how
 these powers determine the final abelian group.

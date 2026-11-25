@@ -34,11 +34,13 @@ for **1,907** in total. The pure p+ip contribution has **458,653** terms.
 The complete O6 therefore has **460,594 terms** at this boundary.
 
 For the general 4+1D Majorana twister the count is
-**760 explicit expression leaves**, or **618 outer addends**.
-There are 592 half-valued occurrences, 22 ordinary quarter occurrences,
+**946 explicit expression leaves**, or **804 outer addends**.
+There are 777 half-valued occurrences, 23 ordinary quarter occurrences,
 and four separately reduced lifts with 5, 15, 10 and 116 interior
-products. Thus 592 + 22 + 146 = 760, while 592 + 22 + 4 = 618.
-The lift interiors remain inside their nonlinear scopes.
+products. Thus 777 + 23 + 146 = 946, while 777 + 23 + 4 = 804.
+The last line of the contribution, with $`\Theta_5`$ (56 terms), the 129
+products of $`b_4`$ and the quarter term $`\tfrac14n_3\cup_2n'_3`$, adds 186
+of these. The lift interiors remain inside their nonlinear scopes.
 
 These are **uncollected expression occurrences**. Each displayed
 phase-map evaluation is expanded into its complete finite expression;
@@ -88,12 +90,12 @@ listed in the [structured count ledger](term_census/STRUCTURED_TERM_COUNTS.json)
 | 4+1D | E2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4+1D | E3 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
 | 4+1D | E4 | 0 | 0 | 0 | 2 | 5 | 31 | 38 |
-| 4+1D | E5 | 3 | 26 | 2 | 760† | 5,685,587 | 2,869,266 | 8,555,644† |
+| 4+1D | E5 | 3 | 4 | 2 | 946† | 7,055,132 | 3,265,939 | 10,322,026† |
 
 † The Majorana entry counts the 146 explicit products inside its four
-canonical lifts, as explained above: 760 expression leaves, not 760
+canonical lifts, as explained above: 946 expression leaves, not 946
 linearly distributed phase addends. Counting those four lifts as outer
-addends instead gives 618 for this contribution and 8,555,502 for E5.
+addends instead gives 804 for this contribution and 10,321,884 for E5.
 Other entries retain their declared standard-operation and whole-lift
 boundaries, with their interior counts separately listed in the ledger.
 
@@ -148,15 +150,15 @@ completions. The integer field of the stacked state is retained before full gaug
 | 2+1D, zero integer decoration | 1 | 1 | 0 | 6 | 0 | 0 | **8** |
 | 3+1D, zero p+ip | 1 | 1 | 0 | 8 | 0 | 0 | **10** |
 | 3+1D, canonical torsion p+ip | 1 | 3 | 19 | 18 | 1,144 | 250 | **1,435** |
-| 4+1D, arbitrary permitted p+ip | 1 | 10 | 2 | 202 | 3,613,699 | 793,729 | **4,407,643 outer terms** |
+| 4+1D, arbitrary permitted p+ip | 1 | 2 | 2 | 349 | 3,661,245 | 825,005 | **4,486,604 outer terms** |
 
 The 3+1D canonical torsion entries contain no whole lift.
 
 The 4+1D Majorana entry has four protected lifts containing 106 products.
-Replacing only those four wrappers by their interiors gives 304 expression
-leaves for that contribution and 4,407,745 for the corresponding total.
-The full restricted mixed and pure finite sums contain 3,613,517 and
-793,669 terms. Their nonlinear interiors and lower-operation argument
+Replacing only those four wrappers by their interiors gives 451 expression
+leaves for that contribution and 4,486,706 for the corresponding total.
+The full restricted mixed and pure finite sums contain 3,661,063 and
+824,945 terms. Their nonlinear interiors and lower-operation argument
 arrays are recorded separately in the coefficient indices. The zero-p+ip 4+1D sector uses the restriction of this same
 expression, written in the physical occupation $`n_4`$, with the lower fields specified on its
 [dedicated page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md); there only the quarter-valued
@@ -177,18 +179,20 @@ See the separate [2+1D](TWO_DIMENSIONAL_SELF_STACKING.md),
 
 ## 4+1D bosonic stacking: expanded boundaries
 
-The c, c gamma and c psi contributions have respectively **75**, **2,216**
-and **3,262** terms after substituting their actual lower laws and the fields
-of the stacked state and collecting equal typed operations.
+The c and c psi contributions have respectively **75** and **3,262** terms
+after substituting their actual lower laws and the fields of the stacked state
+and collecting equal typed operations. The c gamma contribution has the form
+of the c psi contribution, with $`\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}`$
+in place of $`\mathcal{𝒪}_5^\psi`$.
 
 The carry-reduced Majorana coefficient part preserves its four whole
 lifts and contributes 624 leaves before the $`B_5`$ terms. The
-$`B_5`$ terms add 136 explicit occurrences, giving the 760-leaf entry
-above.
+$`B_5`$ terms add 136 explicit occurrences and the last line 186, giving
+the 946-leaf entry above.
 
-The complete mixed finite sum has **5,684,189 terms**,
-and the complete pure p+ip finite sum has **2,869,198 terms**.
-Including the other displayed contributions and the explicitly expanded $`B_5`$ terms give **8,555,644 expression
+The complete mixed finite sum has **7,053,734 terms**,
+and the complete pure p+ip finite sum has **3,265,871 terms**.
+Including the other displayed contributions and the explicitly expanded $`B_5`$ terms give **10,322,026 expression
 occurrences** for E5, with the Majorana lift-interior convention
 marked by † in the table. Every coefficient
 is supplied in the [stacking coefficient appendix](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).
@@ -197,7 +201,11 @@ are term lists, not counts of construction steps.
 
 The mixed and pure sums respectively have 58,547 and 35,550 distinct
 nonlinear-interior terms, with 448,864 and 54,840 appearances when those
-interiors and the explicit operation arguments are written inline. The
+interiors and the explicit operation arguments are written inline. They
+also contain 1,335 and 765 polynomial factors, with 90,566 and
+50,846 listed products: the differences between the compact lower
+operations of the transfer construction and those of the formula pages on
+the same arguments. The
 definitions of the reused lower operations remain intact. The interiors
 are listed separately because a whole
 canonical lift or exact quotient cannot be distributed as an ordinary

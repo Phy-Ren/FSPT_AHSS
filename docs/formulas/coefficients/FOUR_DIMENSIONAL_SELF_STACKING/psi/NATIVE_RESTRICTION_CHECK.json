@@ -1,20 +1,13 @@
 {
-  "status": "PASS_NATIVE_COMPLETED_EXPRESSION_RESTRICTION",
+  "status": "PASS",
   "sector": "psi",
-  "cases": 4,
-  "original_self_input_values": [
-    1,
-    0,
-    0,
-    1
-  ],
-  "collected_values": [
-    1,
-    0,
-    0,
-    1
-  ],
-  "domain": "Signed integer first towers with both backgrounds and arbitrary Majorana root lifts; identical external physical inputs; each retained lower operation evaluated in its unchanged open domain.",
-  "scope": "Complete original published transferred/tensor/y coefficient tables versus the recursively specialized explicit tables; does not recompute a primitive from a diagonal kernel.",
-  "seconds": 59.79827760159969
+  "restriction": "specialize_coefficients.py followed by normalize_integer_carries.py on the general tables of this revision (exact substitution and collection)",
+  "general_index_sha256": "f94adbaa8b6d31f88341fa69cd72a361258c2ee250444a8d976337d3146ac438",
+  "self_index_sha256": "d343d3084b5baf18ce2d732556ecd9d2873fdd09894930297aac8e6cc4c601e0",
+  "terms": 824945,
+  "factors": 14510,
+  "direct_check": "Complete self-stacking law with these tables equals the stacking correction of the code for equal states",
+  "samples": 40,
+  "pass": 40,
+  "receipt": "../../../verification/four_dimensional/results/STACKING_CHECK.json"
 }

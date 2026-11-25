@@ -10,9 +10,9 @@ stated scopes. These are not minimal cochain normal forms.
 The 4+1D source has **460,594 terms**. Its Majorana contribution
 has **16**, its mixed Majorana–p+ip contribution **1,907**, and its pure
 p+ip contribution **458,653**. The paired product has
-**8,555,644 expression occurrences**, including **760 Majorana leaves**
-in **618 outer addends**. Replacing that one lift-interior count by its
-outer count gives **8,555,502**. The four protected lift interiors
+**10,322,026 expression occurrences**, including **946 Majorana leaves**
+in **804 outer addends**. Replacing that one lift-interior count by its
+outer count gives **10,321,884**. The four protected lift interiors
 contain 5, 15, 10, and 116 products.
 
 The phase map with zero complex-fermion argument has 44 half-valued
@@ -21,8 +21,8 @@ three, three, and one such evaluations in the Majorana, mixed, and pure
 p+ip contributions. Each contribution also has one additional lower
 stacking term. The exact additions are therefore **136, 136, and 46**
 at this counting boundary, before collecting across evaluations.
-The full self-stack has **4,407,643 outer occurrences**; expanding the
-four Majorana lift interiors in the count gives **4,407,745**.
+The full self-stack has **4,486,604 outer occurrences**; expanding the
+four Majorana lift interiors in the count gives **4,486,706**.
 
 - [Structured ledger](STRUCTURED_TERM_COUNTS.json) records every
   physical contribution, the phase-map costs, exact totals,

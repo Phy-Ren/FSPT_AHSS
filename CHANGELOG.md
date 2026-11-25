@@ -1,5 +1,77 @@
 # Changelog
 
+## 2026-11-25: 4+1D stacking law printed in the physical occupation n_4
+
+The general 4+1D stacking correction $`\mathcal E_5`$, its coefficient sums,
+the self-stacking law, the closed sector, the zero-p+ip self-stacking page,
+the group-inverse identity and the transfer appendix now use only the
+physical occupation $`n_4`$ and the lower operations of the formula pages.
+The printed $`\mathcal E_5`$ equals the stacking correction of the code term by
+term. Every stored classification and stacking group, layer filtration and
+example is unchanged.
+
+- Correction: the general $`\mathcal E_5`$ printed since the change of
+  2026-11-25 (parity count of the F move) was incorrect for $`n_2\neq0`$. Its
+  coefficient sums $`\mathcal I_5^{\gamma\psi},\mathcal I_5^\psi`$ and the
+  explicit terms of $`\mathcal E_5^{\gamma\psi},\mathcal E_5^\psi`$ had been derived
+  with the compact lower operations of the transfer construction
+  ($`\mathcal O_5^\psi`$ plus the differential of the polynomial in the last
+  bracket of $`\mathcal E_4^\psi`$; $`n_3\cup_2dn_3`$ in $`\mathcal O_5^{\gamma\psi}`$;
+  $`\mathcal E_4`$ plus $`\Delta(n_3\cup_2n_3+\text{that polynomial})+d(n_3\cup_3n'_3)`$),
+  while that change defined $`\mathcal O_5^\psi`$, $`\mathcal O_5^{\gamma\psi}`$,
+  $`\mathcal E_4^{\gamma\psi}`$ and $`\mathcal E_4^\psi`$ as the physical counts. Read
+  with the page definitions, the printed law violated
+  $`d_{s_1}\mathcal E_5=\Delta\mathcal O_6`$ by $`\tfrac12`$ on 18 of 36
+  random states with $`n_2\neq0`$ (and on 6 of 10 against its own displayed
+  $`\mathcal O_6`$); it was correct for $`n_2=n'_2=0`$.
+  Read with the compact operations it still failed on 3 of 10 such states
+  against its own obstruction: its occupation bracket did not complete the
+  change of the complex-fermion coordinate. The law below is derived from
+  the code directly and does not reuse that bracket.
+- $`\mathcal E_5^{c\gamma}`$ is the exchange term
+  $`\tfrac12[(\mathcal O_5^\gamma+\mathcal O_5^{\gamma\psi})\cup_4n'_4+\Delta(n_4\cup_4(\mathcal O_5^\gamma+\mathcal O_5^{\gamma\psi}))]`$;
+  the occupation bracket written with the shifted coordinate is removed.
+  The complex-fermion contributions contain every term that depends on
+  $`n_4,n'_4`$.
+- $`\mathcal E_5^\gamma`$ gains $`\tfrac12\Theta_5[n_3,n'_3]`$ (56 terms, open
+  $`n_3`$) and the P-move phase $`d_{s_1}(\tfrac12b_4+\tfrac14n_3\cup_2n'_3)`$ with the
+  129 face products of $`b_4`$ ([P-move rephasing](docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md#p-move-rephasing)).
+  At $`n_2=n'_2=0`$ the complete law equals the closed-Majorana law of the thesis.
+- The coefficient sums are rewritten: every factor of the compact operations
+  is the page operation plus a polynomial factor (their difference on the same
+  arguments; 1,335 and 765 factors), and the half-valued terms that depend on
+  $`n_2`$ of the change of complex-fermion coordinate, of the P-move phase and
+  of the polarization of the rephasing between the source completion $`y_6`$
+  and the completion of the transfer construction are added as physical-face
+  monomials. $`\mathcal I_5^{\gamma\psi}`$: 7,053,734 terms (was 5,684,189);
+  $`\mathcal I_5^\psi`$: 3,265,871 (was 2,869,198). The self-stacking sums are their
+  specializations: 3,661,063 and 824,945 terms.
+- (M3E) and the zero-p+ip self-stacking page print the closed-Majorana laws of
+  the thesis; the general law reduces to them as cochains. The group-inverse
+  identity no longer carries an occupation bracket; its boxed result is unchanged.
+- [Transfer appendix](docs/formulas/TERMINAL_TRANSFER.md#transfer-lower-data):
+  the kernel (K1–K3) is written with the explicit compact lower data of the
+  transfer construction ($`\mathcal O_5^{\rm tr},\mathcal E_4^{\rm tr},\mathcal O_5^{\psi,\rm tr},y_6^{\rm tr}`$).
+- Code: `full4/physical.py:product48` evaluates the same values without a
+  transfer at a shifted occupation (complex-fermion contributions, the
+  occupation-free transfer part, and the explicit occupation, completion and
+  P-move terms); `product_4_bosonic` was recompiled and
+  `majorana4_product_composed` recomposed, with identical values.
+- Verification ([4+1D stacking checks](docs/formulas/verification/four_dimensional/README.md)):
+  on random exact towers with signed $`n_2`$ and all four background sectors, the
+  printed general law equals the code on 40 of 40 states (32 with $`n_2\neq0`$),
+  $`d_{s_1}\mathcal E_5=\Delta\mathcal O_6`$ holds on 40 of 40 six-simplices (32 with
+  $`n_2\neq0`$), the printed self-stacking law equals the code on 40 of 40, (M3E)
+  equals the code and the general Majorana contribution equals (M7) on 40 of 40
+  closed states, and the zero-p+ip self-stacking law equals the code and the
+  self-stacking law on 40 of 40. The factor differences were checked on four
+  random states per table (23,824 factor evaluations, including open Majorana
+  cochains); $`\Theta_5`$, its self specialization and $`b_4`$ were checked as exact
+  polynomial identities; and the
+  [4+1D verifier](docs/formulas/coefficients/verify_four_dimensional_bare_formulas.py)
+  checks for arbitrary cochains that the complex-fermion contributions carry
+  the complete dependence on $`n_4,n'_4`$.
+
 ## 2026-11-25: 4+1D code in the physical occupation n_4
 
 The 4+1D programs now take the physical point-fermion occupation $`n_4`$,

@@ -15,6 +15,10 @@ with the [explicit output coboundary](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.m
 specify every original face argument; the [tensor coefficient table](FOUR_DIMENSIONAL_TENSOR_COEFFICIENTS.md)
 gives its 226 fixed binomial rows and its background-degree-one term.
 The phase convention is exactly the one stated with the stacking formula.
+The coefficients constructed here are those of the transfer, in its
+[lower data](TERMINAL_TRANSFER.md#transfer-lower-data); the published
+coefficient sums add the explicit conversion terms described in the
+[stacking coefficient page](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md#table-content).
 
 Every displayed cup and MS word is an ordinary cochain operation. The
 finite color indices distinguish the origins of its arguments. Write
@@ -113,21 +117,21 @@ The lower obstruction coefficients are
 
 ```math
 \begin{aligned}
-(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma}^{(j)}={}&n_{3;\gamma}^{(j)}\cup_1n_{3;\gamma}^{(j)}
+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi,{\rm tr}})_{\gamma}^{(j)}={}&n_{3;\gamma}^{(j)}\cup_1n_{3;\gamma}^{(j)}
  +s_1(n_{3;\gamma}^{(j)}\cup_2n_{3;\gamma}^{(j)})+\omega_2 n_{3;\gamma}^{(j)},\\
-(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma\psi}^{(j)}={}&n_{3;\gamma}^{(j)}\cup_1n_{3;\psi}^{(j)}
+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi,{\rm tr}})_{\gamma\psi}^{(j)}={}&n_{3;\gamma}^{(j)}\cup_1n_{3;\psi}^{(j)}
  +n_{3;\psi}^{(j)}\cup_1n_{3;\gamma}^{(j)}+n_{3;\gamma}^{(j)}\cup_2\mathcal{𝒪}_4^{(j)}\\
 &+s_1[n_{3;\gamma}^{(j)}\cup_2n_{3;\psi}^{(j)}
     +n_{3;\psi}^{(j)}\cup_2n_{3;\gamma}^{(j)}+n_{3;\gamma}^{(j)}\cup_3\mathcal{𝒪}_4^{(j)}],\\
-(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\psi}^{(j)}={}&n_{3;\psi}^{(j)}\cup_1n_{3;\psi}^{(j)}
+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi,{\rm tr}})_{\psi}^{(j)}={}&n_{3;\psi}^{(j)}\cup_1n_{3;\psi}^{(j)}
  +n_{3;\psi}^{(j)}\cup_2\mathcal{𝒪}_4^{(j)}
  +s_1[n_{3;\psi}^{(j)}\cup_2n_{3;\psi}^{(j)}+n_{3;\psi}^{(j)}\cup_3\mathcal{𝒪}_4^{(j)}]
  +\omega_2 n_{3;\psi}^{(j)},\\
-\mathcal{𝒪}_{5;r}^{(j)}={}&(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{r}^{(j)}+\mathbf1_{r=\psi}\mathcal{𝒪}_5^\psi[n_2^{(j)}].
+\mathcal{𝒪}_{5;r}^{(j)}={}&(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi,{\rm tr}})_{r}^{(j)}+\mathbf1_{r=\psi}\mathcal{𝒪}_5^{\psi,{\rm tr}}[n_2^{(j)}].
 \end{aligned}
 ```
 
-The parenthesized label is the full open Majorana polynomial, including both of its native physical contributions. Adding the pure p+ip term gives the complete lower obstruction. In particular the open
+The parenthesized label is the full open Majorana polynomial of the [transfer construction](TERMINAL_TRANSFER.md#transfer-lower-data), including both of its native physical contributions. Adding the pure p+ip term gives the complete lower obstruction. In particular the open
 Sq terms use the actual first-tower equation $`dn_3=\mathcal{𝒪}_4`$; they have not been
 discarded under a cocycle assumption.
 
@@ -176,13 +180,13 @@ The remaining terms that involve one state only have the complete coefficients
 \begin{aligned}
 \mathcal H_{6;\gamma}^{(j)}={}&\mathcal T_{6;\gamma}^{(j)}+n_{3;\gamma}^{(j)}([\beta \omega_2]_2+s_1\omega_2),\\
 \mathcal H_{6;\gamma\psi}^{(j)}={}&\mathcal T_{6;\gamma\psi}^{(j)}
- +((\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma}^{(j)}+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\gamma\psi}^{(j)})\cup_4\mathcal{𝒪}_5^\psi[n_2^{(j)}]\\
+ +((\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi,{\rm tr}})_{\gamma}^{(j)}+(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi,{\rm tr}})_{\gamma\psi}^{(j)})\cup_4\mathcal{𝒪}_5^{\psi,{\rm tr}}[n_2^{(j)}]\\
 &+([(\beta^-n_3)_{\gamma}]_2^{(j)}+[(\beta^-n_3)_{\gamma\psi}]_2^{(j)})\cup_2[\beta_4^{\psi,(j)}]_2
  +s_1[([(\beta^-n_3)_{\gamma}]_2^{(j)}+[(\beta^-n_3)_{\gamma\psi}]_2^{(j)})\cup_3[\beta_4^{\psi,(j)}]_2]
  +[n_2^{(j)}]_2([\beta_{4;\gamma}^{(j)}]_2+[\beta_{4;\gamma\psi}^{(j)}]_2),\\
 \mathcal H_{6;\psi}^{(j)}={}&\mathcal T_{6;\psi}^{(j)}+n_{3;\psi}^{(j)}([\beta \omega_2]_2+s_1\omega_2)
- +(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})_{\psi}^{(j)}\cup_4\mathcal{𝒪}_5^\psi[n_2^{(j)}]
- +y_6[n_2^{(j)};\omega_2,s_1]\\
+ +(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi,{\rm tr}})_{\psi}^{(j)}\cup_4\mathcal{𝒪}_5^{\psi,{\rm tr}}[n_2^{(j)}]
+ +y_6^{\rm tr}[n_2^{(j)};\omega_2,s_1]\\
 &+[(\beta^-n_3)_{\psi}]_2^{(j)}\cup_2[\beta_4^{\psi,(j)}]_2
  +s_1[[(\beta^-n_3)_{\psi}]_2^{(j)}\cup_3[\beta_4^{\psi,(j)}]_2]
  +[n_2^{(j)}]_2[\beta_{4;\psi}^{(j)}]_2
@@ -190,7 +194,7 @@ The remaining terms that involve one state only have the complete coefficients
 \end{aligned}
 ```
 
-The $`y_6`$ term is the [complete pure source coefficient](SOURCE_OPERATIONS.md#source-completion), with its integer numerator formed before division. It contains no Majorana factors. The displayed polynomials specify every one-input coefficient.
+The $`y_6^{\rm tr}`$ term is the completion of the [transfer construction](TERMINAL_TRANSFER.md#transfer-lower-data), with its integer numerator formed before division. It contains no Majorana factors. The displayed polynomials specify every one-input coefficient.
 
 ## Quarter-kernel coefficients and their carries
 
@@ -375,6 +379,9 @@ For $`r=\gamma\psi,\psi`$, this paragraph specifies the indices in
 ```
 It is a finite coefficient expansion, with no primitive solver, higher
 physical input, terminal evaluator, or zero-input comparison.
+The rules below give the transfer part of these sums; the published
+sums also contain the explicit conversion terms of the
+[stacking coefficient page](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md#table-content).
 
 For $`D=4,5,6`$, define the explicit grid index
 ```math

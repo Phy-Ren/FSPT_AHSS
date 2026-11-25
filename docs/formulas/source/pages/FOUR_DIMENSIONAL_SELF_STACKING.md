@@ -88,15 +88,13 @@ identically when the closed fields $`[n_2]_2`$ of the two separate states coinci
 
 {{equation:four-dimensional-self-stacking--complex-fermions-and-p-ip-decoration--9}}
 
-These have respectively **one, ten, and two structured terms**, retaining
+These have respectively **one, two, and two structured terms**, retaining
 the already defined lower obstructions. In particular
 $`\mathcal{𝒪}_5^\psi[2n_2]
  =[\beta_{s_1}\widetilde{\omega}_2]_2\,[n_2]_2`$.
 The actual stacked field $`N_4`$ of the lower self-stacking law is used in these formulas; replacing it by zero
-would discard an upper-layer correction. The second bracket of
-$`\mathcal{ℰ}_5^{c\gamma}`$ is the specialization of the corresponding bracket of
-the general law: $`y=n_3\cup_2n_3+x`$ with $`x`$ the polynomial of
-$`\mathcal{𝒪}_6^\psi`$, and $`\mathcal{𝒪}_5[N]`$ is evaluated on the stacked state.
+would discard an upper-layer correction. They contain every term that
+depends on the occupation $`n_4`$.
 
 ### Majorana decoration
 
@@ -109,9 +107,12 @@ The first sum contains **187 specified MS terms** in the
 The final sum contains **four whole binary lifts**, with signs
 $`+,-,-,+`$ and respectively **5, 15, 10, and 76 interior terms** in the
 [self-stacking lift table](FOUR_DIMENSIONAL_SELF_STACKING_LIFTS.md).
-The complete contribution has **200 outer terms without the two $`B_5`$ half terms**, or **302 explicit
+Without the last two lines, the contribution has **200 outer terms without the two $`B_5`$ half terms**, or **302 explicit
 occurrences without them** when the four lift wrappers are replaced in the count by
-their 106 interior products. Every lift boundary is retained.
+their 106 interior products. Every lift boundary is retained. The last two
+lines add **147 terms**: the 17 terms of $`\Theta_5[n_3,n_3]`$, the 129
+products of $`b_4[n_3,n_3]`$ and the quarter term, giving **347 outer terms**
+and **449 explicit occurrences**.
 
 The [exact cochain-identity reduction](FOUR_DIMENSIONAL_SELF_STACKING_REDUCTION.md)
 gives this 187-term MS sum, without changing any quarter phase. The derivative in the quarter bracket
@@ -121,21 +122,28 @@ on the stated input tower.
 This is the same open-cochain representative as the general formula.
 No cocycle hypothesis on $`n_3`$ has been imposed. The phase
 convention contributes the two displayed half terms
-$`[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]/2`$. The
+$`[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]/2`$. The last two lines are the
+specialization of the [Majorana correction and P-move phase](FOUR_DIMENSIONAL.md#eq-theta5)
+of the general law: at equal states the stacked Majorana field
+$`n_3+n_3`$ vanishes and the two separate states cancel in the sum over
+$`z`$, which leaves the displayed six terms of $`\Theta_5[n_3,n_3]`$
+(**17 terms** after distributing $`K_5`$); $`b_4[n_3,n_3]`$ is the
+[129-product polynomial](FOUR_DIMENSIONAL_MAJORANA_STACKING_GAUGE.md#p-move-rephasing)
+with both arguments equal. The
 [zero-p+ip self-stacking page](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)
-is the restriction $`n_2=0`$ of these formulas.
+is the restriction $`n_2=0`$ of these formulas, as an identity of cochains.
 
 ### Majorana and p+ip decoration
 
 {{equation:four-dimensional-self-stacking--majorana-and-p-ip-decoration--11}}
 
-This is the complete restricted coefficient sum: **3,613,517 terms**.
+This is the complete restricted coefficient sum: **3,661,063 terms**.
 The [explicit coefficient files](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/INDEX.json)
 include the completed transfer and tensor contributions before the upper
 and lower states are identified. The remaining terms give **181 outer
 terms** after the three displayed quarter numerators are substituted and
 their linear sums distributed, retaining standard lower operations.
-Thus this contribution has **3,613,698 outer terms without the phase-convention term**; the
+Thus this contribution has **3,661,244 outer terms without the phase-convention term**; the
 protected mixed lift has eight interior terms. The additional term
 $`-s_1\mathcal{ℰ}_4^{\gamma\psi}/2`$ is its entire phase-convention
 term on equal upper and lower states: the three general $`B_5`$ evaluations cancel
@@ -145,11 +153,11 @@ exactly here.
 
 {{equation:four-dimensional-self-stacking--p-ip-decoration--12}}
 
-This finite sum contains **793,669 terms**, including the complete
+This finite sum contains **824,945 terms**, including the complete
 integer-decoration and tensor contributions. Its
 [explicit coefficient files](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/INDEX.json)
 use the same lower-operation conventions as the general formula. The
-remaining displayed terms add **14 outer terms**, giving **793,683 without the phase-convention terms**.
+remaining displayed terms add **14 outer terms**, giving **824,959 without the phase-convention terms**.
 The protected pure lift has twelve interior terms. The denominator-three
 term of the general law vanishes identically on equal upper and lower states.
 The extra half term and $`-B_5[N_3]`$ are the remaining

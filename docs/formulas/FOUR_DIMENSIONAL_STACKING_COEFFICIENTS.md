@@ -14,7 +14,7 @@ The two remaining binary sums in the [bosonic stacking law](FOUR_DIMENSIONAL.md#
        \prod_{(x,f)\in\eta}x(f).
 ```
 
-The first sum has **5,684,189 terms**; the second has **2,869,198 terms**.
+The first sum has **7,053,734 terms**; the second has **3,265,871 terms**.
 These are the collected summands of the explicit expression specified here.
 Every finite coefficient sum has been distributed, and identical products
 have been collected over $`\mathbb F_2`$. The factor $`1/2`$ converting each
@@ -25,6 +25,39 @@ and the [p+ip coefficients](coefficients/FOUR_DIMENSIONAL_STACKING/psi/INDEX.jso
 The latter includes the complete integer-decoration polynomial and the
 finite tensor contribution. No residual finite sum is represented by a
 single unspecified factor.
+
+<a id="table-content"></a>
+
+## Content of the two sums
+
+Each sum is the sum over $`\mathbb F_2`$ of three explicit parts, all
+written in the physical lower fields $`n_2,n_3`$ and $`n'_2,n'_3`$ and the
+lower operations of the [formula pages](FOUR_DIMENSIONAL.md):
+
+1. The finite transfer $`Z_5`$ of the [code construction](TERMINAL_TRANSFER.md),
+   with its tensor coefficients, colored by physical contribution. The
+   transfer evaluates its lower F- and P-move counts in the compact form
+   stated in the [transfer appendix](TERMINAL_TRANSFER.md#transfer-lower-data).
+   Every factor of these two operations is written as the operation
+   $`\mathcal{𝒪}_5^\psi`$ or $`\mathcal{ℰ}_4`$ of the formula pages plus a
+   polynomial factor: the difference of the two operations on the same
+   argument faces, expanded in the physical face values.
+2. The half-valued terms that depend on $`n_2`$ or $`n'_2`$ of the change of the
+   complex-fermion coordinate of that construction to the occupation $`n_4`$,
+   of the P-move phase $`d_{s_1}B_4^{\rm P}`$ of the
+   [Majorana contribution](FOUR_DIMENSIONAL.md#eq-theta5), and of the
+   difference between the displayed terms read with the two forms of the
+   lower operations.
+3. In the p+ip sum, the polarization $`\Delta`$ of the half-valued one-state
+   rephasing between the [source completion](SOURCE_OPERATIONS.md#source-completion)
+   $`y_6`$ and the completion of the transfer construction.
+
+Parts 2 and 3 are the complete physical-face expansions (algebraic normal
+forms) of explicit cochain expressions on the five-simplex, in the 105 face
+values listed as the first factors: the three lowest base-two digits of
+$`n_2,n'_2`$ and the values of $`\omega_2,s_1`$ on faces containing the vertex 0,
+and all values of $`n_3,n'_3`$. Before collection with part 1, parts 2 and 3
+have 1,559,475 monomials in the Majorana–p+ip sum and 1,023,199 in the p+ip sum.
 
 ## Reusing the lower layers
 
@@ -85,8 +118,8 @@ numerator monomial explicitly.
 
 | Coefficient sum | Outer summands | Distinct numerator summands | Numerator summands at every occurrence |
 |---|---:|---:|---:|
-| $`\mathcal I_5^{\gamma\psi}`$ | 5,684,189 | 58,547 | 448,864 |
-| $`\mathcal I_5^\psi`$ | 2,869,198 | 35,550 | 54,840 |
+| $`\mathcal I_5^{\gamma\psi}`$ | 7,053,734 | 58,547 | 448,864 |
+| $`\mathcal I_5^\psi`$ | 3,265,871 | 35,550 | 54,840 |
 
 The last two columns concern only actual nonlinear lift and floor scopes.
 The final column follows every outer occurrence recursively, including
@@ -104,8 +137,12 @@ the listed binary factors. An empty row is the constant one. Integer
 indices identify table entries; they introduce no new cochain notation.
 
 Each factor entry specifies either a named physical cochain and its face,
-an existing operation with every argument face written out, or a canonical
-lift/floor with its full numerator. For an integer face value, digit zero
+an existing operation with every argument face written out, a canonical
+lift/floor with its full numerator, or a polynomial factor: the sum modulo
+two of its listed products of earlier factors. The polynomial factors are
+the differences of part 1 above; there are 1,335 and 765 of them, with
+90,566 and 50,846 listed products. A polynomial factor may be
+distributed over its row without changing the sum. For an integer face value, digit zero
 means reduction modulo two, digit one means the second binary digit, and
 higher digits mean $`[\lfloor x/2^k\rfloor]_2`$. This convention
 also applies to negative integers. All argument polynomials include their
@@ -119,6 +156,6 @@ this explicit reusable-operation expression; they do not assert a minimum
 under every possible cochain identity.
 
 The [verification summary](coefficients/FOUR_DIMENSIONAL_STACKING/VERIFICATION.json)
-also records independent comparisons of each complete coefficient sum with
-the unchanged cochain formula on four legal towers, and 32 checks of the
-reused lower-operation identities.
+records the checks of the complete stacking law that evaluate these tables
+directly: equality with the stacking correction of the code on random
+on-shell states, and $`d_{s_1}\mathcal{ℰ}_5=\mathcal{𝒪}_6[N]-\mathcal{𝒪}_6[n]-\mathcal{𝒪}_6[n']`$.

@@ -772,21 +772,14 @@ Here $`dn_4=\mathcal{𝒪}_5^\gamma`$, $`N_4`$ is the binary field of the stacke
 $`\Delta`$ takes the value on the stacked state minus the values on the upper and lower states:
 
 ```math
-\begin{aligned}
 \mathcal{ℰ}^{c\gamma}_5
- =\frac12\big[&dn_4\cup_4n'_4+N_4\cup_4dN_4
- +n_4\cup_4dn_4+n'_4\cup_4dn'_4\big]\\
- +\frac12\big[&S\cup_3S'+(S+S')\cup_3\mathcal{ℰ}_4+\mathcal{ℰ}_4\cup_3(S+S')
- +dn_4\cup_4S'+S\cup_4dn'_4\\
- &+d(n_3\cup_3n'_3)\cup_4dN_4+\big(S+S'+d(n_3\cup_3n'_3)\big)\cup_3d(n_3\cup_3n'_3)\\
- &+\mathcal Q_{\omega_2}[n_3\cup_3n'_3]+\Delta(S\cup_4dn_4+s_1S)\big],
- \qquad S=n_3\cup_2n_3.
-\end{aligned}
+ =\frac12\big[dn_4\cup_4n'_4+N_4\cup_4dN_4
+ +n_4\cup_4dn_4+n'_4\cup_4dn'_4\big].
 ```
 
-The second bracket is the occupation bracket of the
-[complete law](FOUR_DIMENSIONAL.md#eq-t4c) at $`n_2=n'_2=0`$, where
-$`y=n_3\cup_2n_3`$; it depends only on $`n_3`$ and $`n'_3`$.
+This is $`\tfrac12[dn_4\cup_4n'_4+\Delta(n_4\cup_4dn_4)]`$, the
+complex-fermion–Majorana contribution of the
+[complete law](FOUR_DIMENSIONAL.md#eq-t4c) at $`n_2=n'_2=0`$.
 
 ##### Majorana contribution
 
@@ -794,41 +787,74 @@ $`y=n_3\cup_2n_3`$; it depends only on $`n_3`$ and $`n'_3`$.
 
 **(M7, 4+1D)**
 
-This is the [complete stacking law](FOUR_DIMENSIONAL.md#eq-t4c)
-at $`n_2=n'_2=0`$ and $`dn_3=dn'_3=0`$.
-In particular $`\beta^-=\beta`$, $`\lambda_4^\gamma=0`$, and
-$`\mathcal{ℰ}_4^\gamma=\mathcal{ℰ}_4`$; the terms containing
-$`\lambda_4^\gamma`$ or a derivative of a closed integer Bockstein vanish
-and are omitted.
+Here $`n_3,n'_3`$ are closed, $`\beta`$ is the integer Bockstein of the
+canonical lift, $`\mathrm{Sq}^1a=[\beta a]_2=a\cup_2a`$,
+$`\beta^+a=(\beta a+[\beta a]_2)/2`$ for a closed cochain $`a`$, and every product in the quarter
+bracket is a signed integer higher cup of canonical lifts:
 
 ```math
 \begin{aligned}
 \mathcal{ℰ}_5^\gamma
-={}&\frac12\Big[
- \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
-       \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)
- +s_1\big[([\beta n_3]_2+[\beta n'_3]_2)
-                         \cup_3[\lambda_3^\gamma]_2\big]
- -s_1\mathcal{ℰ}_4^\gamma\Big]\\
-&+\frac14\Big[
- \beta n_3\cup_3\beta n'_3
- -(\beta n_3+\beta n'_3)\cup_2\lambda_3^\gamma
- +\lambda_3^\gamma\cup_2\beta N_3
- +\lambda_3^\gamma\cup_1\lambda_3^\gamma+\omega_2\lambda_3^\gamma\\
-&\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
- \epsilon\;[
-       \sum_{\eta\in\mathcal P}\prod_{(x,f)\in\eta}x_f]_2
- \Big]\\
-&-B_5[N_3]+B_5[n_3]+B_5[n'_3]\pmod1,\\
-\lambda_3^\gamma={}&-n_3\cup_3n'_3,\qquad N_3=[n_3+n'_3]_2.
+={}&\frac12z_5^\gamma
+ -\frac14\Big[\beta n_3\cup_3\beta n'_3
+ -(\beta n_3+\beta n'_3)\cup_2u_4
+ -u_4\cup_2\beta N_3
+ +u_4\cup_1u_4-\omega_2u_4\Big],\\
+u_4={}&[n_3\cup_3n'_3]_2,\qquad N_3=[n_3+n'_3]_2.
 \end{aligned}
 ```
 
-The coefficient sets $`\mathcal I_5^\gamma`$ and $`\mathcal J_5^\gamma`$ are the shared
-[general definitions](FOUR_DIMENSIONAL.md#eq-t4c), evaluated on closed inputs;
-$`B_5`$ is the
-[phase-convention cochain](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
-The lower laws coincide with those of the complete tower, and
+The $`\mathbb Z_2`$-valued polynomial is
+
+```math
+\begin{aligned}
+z_5^\gamma={}&z_5^0(n_3,n'_3)+(\omega_2N_3)\cup_4\mathcal{ℰ}_4^\gamma
+ +d(n_3\cup_2n'_3)\cup_5(\omega_2N_3)\\
+&+(n'_3\cup_1n'_3)\cup_5(\omega_2n_3)
+ +(n'_3\cup_1n'_3+\omega_2n'_3)\cup_5(s_1\mathrm{Sq}^1n_3)\\
+&+(\omega_2\cup_1s_1)u_4
+ +(n_3\cup_2n'_3)\cup_4\big[s_1(\mathrm{Sq}^1n_3+\mathrm{Sq}^1n'_3)\big]\\
+&+(N_3\cup_1N_3)\cup_4(s_1u_4)+(n_3\cup_2n'_3)\cup_3(s_1u_4)\\
+&+s_1\Big[\mathcal{ℰ}_4^\gamma+\mathrm{Sq}^1n_3\cup_4\mathrm{Sq}^1n'_3+u_4\cup_2u_4
+ +(\mathrm{Sq}^1n_3+\mathrm{Sq}^1n'_3)\cup_4(s_1u_4)\\
+&\qquad+(s_1u_4)\cup_3u_4
+ +\big[\beta^+N_3-\beta^+n_3-\beta^+n'_3\big]_2\Big].
+\end{aligned}
+```
+
+with the intrinsic part
+
+```math
+\begin{aligned}
+z_5^0(a,b)={}&\sum_{v\in\mathcal W_5^{(1)}}\mathop{\mathrm{MS}}\nolimits_v(a,b,b,b)
+ +\sum_{v\in\mathcal W_5^{(2)}}\mathop{\mathrm{MS}}\nolimits_v(a,a,b,b)\\
+&+\mathop{\mathrm{MS}}\nolimits_{12413432312}(a,a,a,b)
+ +\mathop{\mathrm{MS}}\nolimits_{12131432412}(b,a,a,a+b)\\
+&+\mathop{\mathrm{MS}}\nolimits_{12131432412}(a+b,a,a,b)
+ +\big(\mathop{\mathrm{MS}}\nolimits_{12131432412}+\mathop{\mathrm{MS}}\nolimits_{12134341321}\big)(a+b,b,b,a)\\
+&+\mathop{\mathrm{MS}}\nolimits_{1212312}(a+b,b,a\cup_3b)
+ +\mathop{\mathrm{MS}}\nolimits_{12313123}(b,a,a\cup_2b)\\
+&+\mathop{\mathrm{MS}}\nolimits_{12131232}(\mathrm{Sq}^1a,b,b)
+ +\mathop{\mathrm{MS}}\nolimits_{123131212}(b\cup_1b,a,a+b)\\
+&+\mathop{\mathrm{MS}}\nolimits_{123131212}\big((a+b)\cup_1(a+b),b,a\big)
+ +(a\cup_2b)\cup_2b\\
+&+(\mathrm{Sq}^1a+\mathrm{Sq}^1b)\cup_2(a\cup_3b)
+ +(a\cup_3b)\cup_2\big(\mathrm{Sq}^1a+\mathrm{Sq}^1b+b\cup_2a\big)\\
+&+(a\cup_2b)\cup_4(a\cup_1a+b\cup_1b)
+ +b\cup_3\big(a\cup_2(a\cup_2b)\big)+\mathrm{Sq}^1b\cup_3\mathrm{Sq}^1a,\\
+\mathcal W_5^{(1)}={}&\{12131432412,12343213431,23412342324\},\\
+\mathcal W_5^{(2)}={}&\{12123434123,12131412324,12134131234,12312412423,\\
+&\ \ 12314324123,12314342413,13242412314,13412321341,\\
+&\ \ 13412321413,13413142134,13432412314,31214124324\}.
+\end{aligned}
+```
+
+The law (M3E) is the closed-Majorana law of the thesis. The
+[complete stacking law](FOUR_DIMENSIONAL.md#eq-t4c) at $`n_2=n'_2=0`$ reduces to
+it: its complex-fermion contributions are (M3Ec) and (M3Ecγ), its
+contributions with p+ip decoration vanish, and its
+[Majorana contribution](FOUR_DIMENSIONAL.md#eq-theta5) equals (M7) as a
+cochain on closed inputs. The lower laws coincide with those of the complete tower, and
 $`d_{s_1}\mathcal{ℰ}_5=\mathcal{𝒪}_6[N]-\mathcal{𝒪}_6[n]-\mathcal{𝒪}_6[n']`$
 holds exactly.
 The [zero-p+ip self-stacking formula](FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md)

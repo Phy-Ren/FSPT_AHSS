@@ -120,14 +120,23 @@ The result is the displayed obstruction. The 3+1D construction keeps its
 auxiliary source `high6` with the completion `y6_auxiliary` of its auxiliary
 p+ip source.
 
-`product_4_bosonic` and the finite transfer evaluate the stacking correction:
-the transfer of the [finite construction](../docs/formulas/TERMINAL_TRANSFER.md)
-(`rho4`, `tensor4`, `h6`) and its nonbinary part are converted to the
-occupation $`n_4`$ by the polarization of the one-state rephasing of the source,
-the gauge primitive of the stacked field, and an explicit P-move rephasing that
-makes the law at $`n_2=n'_2=0`$ equal to the closed-Majorana law; every term is
-written in `full4/physical.py:product48`. The specialization
-`majorana4_product_composed` is the same expression at $`n_2=n'_2=0`$.
+`product_4_bosonic` and the finite transfer evaluate the stacking correction
+of the [formula pages](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4c) term by term
+(`full4/physical.py:product48`). The terms with $`n_4,n'_4`$ are
+$`\mathcal{E}_5^c+\mathcal{E}_5^{c\gamma}+\mathcal{E}_5^{c\psi}`$. The other
+terms are the occupation-free part of the [transfer construction](../docs/formulas/TERMINAL_TRANSFER.md)
+(`rho4`, `tensor4`, `h6` and `transfer_lower48`), which uses the
+[compact lower data](../docs/formulas/TERMINAL_TRANSFER.md#transfer-lower-data), its phase
+convention, and three explicit lower-field cochains: the occupation terms of
+the change of its complex-fermion coordinate to $`n_4`$ (`occupation_terms`),
+the polarization of the one-state rephasing between the two source
+completions (`completion_change`), and the P-move phase
+$`d_{s_1}\big(\tfrac12Q+\tfrac12b_4+\tfrac14n_3\cup_2n'_3\big)`$ (`rephasing_term`,
+`thesis_primitive`). No transfer is evaluated at a shifted occupation. The
+[coefficient sums](../docs/formulas/FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md#table-content)
+contain the same terms expanded in the physical faces. The specialization
+`majorana4_product_composed` is the same expression at $`n_2=n'_2=0`$, where it
+is the closed-Majorana law of the thesis.
 
 Each change $`\nu\mapsto\nu+B`$ adds $`d_{s_1}B`$ to the obstruction and
 $`\Delta B`$ to the stacking correction, evaluated on the actual lower fields of the stacked state.
@@ -386,8 +395,8 @@ evaluates.
 | 3+1D $`\mathcal E_3`$; [P3](../docs/formulas/THREE_DIMENSIONAL.md#eq-p3) | `product`, stage `fermion` | `product_3_fermion` |
 | 4+1D $`\mathcal E_4`$; [P4–P5](../docs/formulas/FOUR_DIMENSIONAL.md#eq-p4) | `product`, stage `fermion` | `product_4_fermion` |
 | $`\mathcal O_5,\mathcal E_4`$; [T3](../docs/formulas/THREE_DIMENSIONAL.md#eq-t3) | `full3/source.py:source16,product16` | `lift3_source`, `lift3_product`, `high6` |
-| $`\mathcal O_6`$; [T4](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4) | `full4/product_full.py:full_source48` and runtime assembly | `high6` |
-| $`\mathcal E_5`$; [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a) | `full4/product_full.py:phase48` | `nonbinary4`, `rho4`, `tensor4` |
+| $`\mathcal O_6`$; [T4](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4) | `full4/physical.py:source48` and runtime assembly | `source_4_bosonic`, `y6` |
+| $`\mathcal E_5`$; [T4a–T4d](../docs/formulas/FOUR_DIMENSIONAL.md#eq-t4a) | `full4/physical.py:product48`, `full4/product_full.py:Zvalue` | `product_4_bosonic`, `rho4`, `tensor4` |
 | Closed-Majorana source/product; [3+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-3d), [4+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-4d), [2+1D](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#majorana-2d) | `ClosedMajoranaBackend`, `majorana_complete.py` | `majorana_{q}_{operation}_{coordinate}` |
 | fMPS source and product; [M13–M14](../docs/formulas/MAJORANA_AND_ENDPOINTS.md#eq-m13) | `FMPS1Backend.source`, `FMPS1Backend.product` | Direct exact endpoint evaluation |
 

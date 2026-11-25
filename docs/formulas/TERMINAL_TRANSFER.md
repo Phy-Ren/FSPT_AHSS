@@ -10,6 +10,10 @@ $`\omega_2,s_1`$. Primes always label the second stacking input; $`N_2,N_3`$ are
 arithmetic each binary field supplies its canonical value $`0,1`$; a whole
 composite binary expression is reduced first whenever it is enclosed in $`[\cdot]_2`$.
 
+The [coefficient sums of the stacking law](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md#table-content)
+contain that expansion together with the explicit terms that convert the
+[lower data of this construction](#transfer-lower-data) to the formula pages.
+
 The full formula comes first; its kernel, coordinates, and coefficients
 are then defined explicitly:
 
@@ -63,6 +67,37 @@ the complete graded pair $`(n_2^{\rm gr},n_3^{\rm gr})`$ along $`t`$,
 and $`(n_2^{{\rm gr}\prime},n_3^{{\rm gr}\prime})`$ along $`v`$.
 After pulling back, decode (K4) before evaluating $`\rho_6`$.
 
+<a id="transfer-lower-data"></a>
+
+## Lower data of the transfer construction
+
+The transfer evaluates the lower F- and P-move counts in a compact form:
+
+```math
+\begin{aligned}
+\mathcal{𝒪}_5^{\rm tr}&=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi,{\rm tr}}+\mathcal{𝒪}_5^{\psi,{\rm tr}},
+&\mathcal{𝒪}_5^{\gamma\psi,{\rm tr}}&=n_3\cup_2dn_3+s_1(n_3\cup_3dn_3),\\
+\mathcal{ℰ}_4^{\rm tr}&=\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi,{\rm tr}}+\mathcal{ℰ}_4^{\psi,{\rm tr}},
+&\mathcal{ℰ}_4^{\gamma\psi,{\rm tr}}&=dn_3\cup_3n'_3+(n_3+n'_3)\cup_2\mathcal{ℰ}_3
+ +s_1\big[(n_3+n'_3)\cup_3\mathcal{ℰ}_3\big].
+\end{aligned}
+```
+
+Here $`\mathcal{𝒪}_5^{\psi,{\rm tr}}[n_2]`$ is the [auxiliary p+ip source polynomial](THREE_DIMENSIONAL_TERMINAL.md#eq-aux-pip5)
+evaluated on $`n_2`$, $`\mathcal{ℰ}_4^{\psi,{\rm tr}}`$ is
+$`\mathcal{ℰ}_4^\psi`$ of the [p+ip stacking contribution](FOUR_DIMENSIONAL.md#eq-p4) without its last two terms
+$`\mathcal{ℰ}_3\cup_2\mathcal{ℰ}_3`$ and $`\Delta[\cdots]`$, and
+$`y_6^{\rm tr}[n_2;\omega_2,s_1]`$ is the completion of the auxiliary source with its
+[numerical polynomial](COEFFICIENTS.md#auxiliary-numerical-polynomial), evaluated on $`n_2`$.
+They differ from the counts of the guide only through the one-state
+polynomial inside the last bracket of $`\mathcal{ℰ}_4^\psi`$: the difference
+$`\mathcal{𝒪}_5^{\psi,{\rm tr}}-\mathcal{𝒪}_5^\psi`$ is its differential,
+$`\mathcal{𝒪}_5^{\rm tr}-\mathcal{𝒪}_5`$ adds $`d(n_3\cup_2n_3)`$ to it, and
+$`\mathcal{ℰ}_4^{\rm tr}-\mathcal{ℰ}_4`$ is the stacking difference of
+$`n_3\cup_2n_3`$ plus that polynomial, plus $`d(n_3\cup_3n'_3)`$.
+The coefficient sums of the stacking law write every factor of these
+operations through the operations of the guide.
+
 ## The binary kernel
 
 The kernel is given directly below, without separate names for its
@@ -70,8 +105,8 @@ single-input and even-integer pieces. All terms before the final braces are bina
 acts on the entire following binary bracket. The final braces form one
 integer numerator; it is pointwise even, and is divided by two before the
 final reduction modulo two. The binary source values
-$`\mathcal{𝒪}_5[n_2,n_3]`$ are the complex-fermion obstruction of the
-guide, not additional input fields.
+$`\mathcal{𝒪}_5^{\rm tr}[n_2,n_3]`$ are the compact F-move count above,
+not additional input fields.
 
 <a id="eq-k1"></a>
 <a id="eq-k2"></a>
@@ -82,19 +117,19 @@ guide, not additional input fields.
 ```math
 \begin{aligned}
 \rho_6={}&
- \mathrm{Sq}^2(\mathcal{ℰ}_4+[n_2]_2[n'_2]_2)
- +\omega_2(\mathcal{ℰ}_4+[n_2]_2[n'_2]_2)\\
-&+\mathcal{𝒪}_5[n_2,n_3]\cup_4\mathcal{𝒪}_5[n'_2,n'_3]\\
-&+\big(\mathcal{𝒪}_5[n_2,n_3]+\mathcal{𝒪}_5[n'_2,n'_3]\big)
- \cup_3(\mathcal{ℰ}_4+[n_2]_2[n'_2]_2)\\
-&+(\mathcal{ℰ}_4+[n_2]_2[n'_2]_2)\cup_3
- \big(\mathcal{𝒪}_5[n_2,n_3]+\mathcal{𝒪}_5[n'_2,n'_3]\big)\\
+ \mathrm{Sq}^2(\mathcal{ℰ}_4^{\rm tr}+[n_2]_2[n'_2]_2)
+ +\omega_2(\mathcal{ℰ}_4^{\rm tr}+[n_2]_2[n'_2]_2)\\
+&+\mathcal{𝒪}_5^{\rm tr}[n_2,n_3]\cup_4\mathcal{𝒪}_5^{\rm tr}[n'_2,n'_3]\\
+&+\big(\mathcal{𝒪}_5^{\rm tr}[n_2,n_3]+\mathcal{𝒪}_5^{\rm tr}[n'_2,n'_3]\big)
+ \cup_3(\mathcal{ℰ}_4^{\rm tr}+[n_2]_2[n'_2]_2)\\
+&+(\mathcal{ℰ}_4^{\rm tr}+[n_2]_2[n'_2]_2)\cup_3
+ \big(\mathcal{𝒪}_5^{\rm tr}[n_2,n_3]+\mathcal{𝒪}_5^{\rm tr}[n'_2,n'_3]\big)\\
 &+\Delta\Big[
  T_6[n_3;\omega_2,s_1]
  +n_3([\beta\omega_2]_2+s_1\omega_2)\\
 &\qquad+(\mathrm{Sq}^2n_3+s_1\mathrm{Sq}^1n_3
- +\omega_2n_3)\cup_4\mathcal{𝒪}^\psi_5
- +y_6[n_2;\omega_2,s_1]\\
+ +\omega_2n_3)\cup_4\mathcal{𝒪}^{\psi,{\rm tr}}_5
+ +y_6^{\rm tr}[n_2;\omega_2,s_1]\\
 &\qquad+[\beta^-n_3]_2\cup_2[\beta_4^\psi]_2
  +s_1([\beta^-n_3]_2\cup_3[\beta_4^\psi]_2)\\
 &\qquad+[n_2]_2[\beta_4]_2
@@ -125,7 +160,7 @@ part, $`d[\beta_4]_2=[\beta_{s_1}\widetilde{\omega}_2]_2[n_2]_2`$ and
 $`d\mathcal{ℰ}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 Inside the final integer braces, $`d_{s_1}V_5`$ differentiates the
 canonical integer representative of that binary five-cochain. Every quantity inside $`\Delta`$ is re-evaluated on the output and on both
-inputs, including $`\beta_4^\psi,\mathcal{𝒪}^\psi_5,T_6,y_6`$. The reduction modulo two of
+inputs, including $`\beta_4^\psi,\mathcal{𝒪}^{\psi,{\rm tr}}_5,T_6,y_6^{\rm tr}`$. The reduction modulo two of
 the polynomial following the minus sign is taken **before** its signed
 stacking difference. The complex-fermion decorations $`n_4,n'_4`$ do not
 enter this kernel.

@@ -19,7 +19,7 @@
   "reader_hashes": {
     "docs/formulas/TWO_DIMENSIONAL.md": "92fa424193a482022df0b1a330eff2541eeafd0b26ce8b04a288026dc10edb68",
     "docs/formulas/THREE_DIMENSIONAL.md": "eb910e5245cc3c51819603f596a4b8b0f0a25889d3bb228bae5dcab4f1058855",
-    "docs/formulas/FOUR_DIMENSIONAL.md": "f7752dbfa06b3cfa43a57f67ccc0d1992f37eb49325ce6e6342b50b56f148897"
+    "docs/formulas/FOUR_DIMENSIONAL.md": "bf52beda8c77068229433528008a1dc0152a934d1f1de984e589af27dae9ba2f"
   },
   "records": [
     {
@@ -725,15 +725,15 @@
       "law": "E5",
       "origin": "cgamma",
       "terms_by_coefficient": {
-        "binary_or_half": 26,
+        "binary_or_half": 4,
         "quarter": 0,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 26,
-      "note": "Four exchange terms plus the 22-term occupation bracket; Delta counts once per distributed term."
+      "total": 4,
+      "note": "Four exchange terms; the occupation terms of the transfer construction are part of the lower contributions."
     },
     {
       "dimension": "4+1D",
@@ -755,21 +755,21 @@
       "law": "E5",
       "origin": "gamma",
       "terms_by_coefficient": {
-        "binary_or_half": 592,
-        "quarter": 168,
+        "binary_or_half": 777,
+        "quarter": 169,
         "eighth": 0,
         "sixteenth": 0,
         "third": 0,
         "twelfth": 0
       },
-      "total": 760,
-      "total_outer": 618,
-      "total_explicit_leaves": 760,
+      "total": 946,
+      "total_outer": 804,
+      "total_explicit_leaves": 946,
       "outer_terms_by_coefficient": {
-        "binary_or_half": 592,
-        "quarter": 26
+        "binary_or_half": 777,
+        "quarter": 27
       },
-      "ordinary_quarter_terms": 22,
+      "ordinary_quarter_terms": 23,
       "protected_lift_occurrences": 4,
       "protected_lift_interior_counts": [
         5,
@@ -779,9 +779,9 @@
       ],
       "protected_lift_interior_total": 146,
       "finite_MS_sum_terms": 455,
-      "other_half_terms": 137,
-      "coefficient_count_semantics": "The 592 half terms are outer occurrences. The 168 quarter leaves comprise 22 ordinary quarter occurrences and 146 leaves in four whole lifts, giving 26 outer quarter addends.",
-      "note": "Current paired phase: 624 carry-reduced coefficient leaves plus 136 explicitly expanded phase-map occurrences = 760. Outer count 618; four protected lift interiors contain 146 products. No collection across the displayed R5 evaluations is performed.",
+      "other_half_terms": 322,
+      "coefficient_count_semantics": "The 777 half terms are outer occurrences. The 169 quarter leaves comprise 23 ordinary quarter occurrences and 146 leaves in four whole lifts, giving 27 outer quarter addends.",
+      "note": "Current paired phase: 624 carry-reduced coefficient leaves plus 136 explicitly expanded phase-map occurrences plus 186 terms of the last line (56 of Theta_5, 129 products of b_4, one quarter term) = 946. Outer count 804; four protected lift interiors contain 146 leaves.",
       "coefficient_table": "../FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md",
       "phase_transport_occurrences": {
         "R5_zero_second_argument_evaluations": 3,
@@ -795,11 +795,11 @@
       "dimension": "4+1D",
       "law": "E5",
       "origin": "gammapsi",
-      "total": 5685587,
-      "finite_sum_terms": 5684189,
+      "total": 7055132,
+      "finite_sum_terms": 7053734,
       "additional_terms": 1398,
       "terms_by_coefficient": {
-        "binary_or_half": 5685581,
+        "binary_or_half": 7055126,
         "quarter": 6,
         "eighth": 0,
         "sixteenth": 0,
@@ -818,11 +818,11 @@
       "dimension": "4+1D",
       "law": "E5",
       "origin": "psi",
-      "total": 2869266,
-      "finite_sum_terms": 2869198,
+      "total": 3265939,
+      "finite_sum_terms": 3265871,
       "additional_terms": 68,
       "terms_by_coefficient": {
-        "binary_or_half": 2869256,
+        "binary_or_half": 3265929,
         "quarter": 5,
         "eighth": 1,
         "sixteenth": 0,
@@ -860,7 +860,7 @@
     "4+1D E2": 0,
     "4+1D E3": 1,
     "4+1D E4": 38,
-    "4+1D E5": 8555644
+    "4+1D E5": 10322026
   },
   "slot_widths": {
     "2D L3 scalar polynomial": {
@@ -1301,21 +1301,25 @@
     "dimension": "4+1D",
     "boundary": "Uncollected displayed occurrences, including every term in each explicit R5 evaluation; complete lower-output arguments and whole lift boundaries retained. Gamma includes 146 protected interior leaves.",
     "gammapsi": {
-      "finite_sum_terms": 5684189,
+      "finite_sum_terms": 7053734,
       "unique_nonlinear_interior_terms": 58547,
-      "inline_nonlinear_interior_appearances": 448864
+      "inline_nonlinear_interior_appearances": 448864,
+      "polynomial_factors": 1335,
+      "polynomial_factor_products": 90566
     },
     "psi": {
-      "finite_sum_terms": 2869198,
+      "finite_sum_terms": 3265871,
       "unique_nonlinear_interior_terms": 35550,
-      "inline_nonlinear_interior_appearances": 54840
+      "inline_nonlinear_interior_appearances": 54840,
+      "polynomial_factors": 765,
+      "polynomial_factor_products": 50846
     },
     "coefficient_appendix": "FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md",
     "complete_tensor_contributions": true,
     "complete_y6_contribution": true,
     "gamma": {
-      "total_explicit_leaves": 760,
-      "total_outer": 618,
+      "total_explicit_leaves": 946,
+      "total_outer": 804,
       "protected_interior_terms": 146,
       "protected_interior_counts": [
         5,
@@ -1334,14 +1338,14 @@
     "aggregate": "The current 4D E5 total 8555644 uses the 760-leaf gamma entry; replacing it by 618 outer addends gives 8555502. Explicit phase-map evaluations are counted before cancellation, with their binary output arguments retained."
   },
   "aggregate_outer_alternative": {
-    "4+1D E5": 8555502,
-    "scope": "Replace only 760 gamma leaves by 618 gamma outer addends; other declared boundaries unchanged."
+    "4+1D E5": 10321884,
+    "scope": "Replace only 946 gamma leaves by 804 gamma outer addends; other declared boundaries unchanged."
   },
   "supporting_reader_hashes": {
     "docs/FORMULA_GUIDE.md": "9bbd7f7fe96ff00632dcbf13cb013183bee57734d3a680af0e29fdaad9a7e0c0",
     "docs/formulas/QUADRATIC_REFINEMENTS.md": "bd1f64402320fc43122942c7ae29932fa8ce6aa3166fbd7a98f8531bf31964ab",
     "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_STACKING_LIFTS.md": "dd4c946b525a8ba9b5cc553726935acbdf73a852923bef5b3fdc6fac9879fdfb",
-    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "447517c9711d34809574d54397a1e484041ac0781f8246476184c51d3c2eedce"
+    "docs/formulas/FOUR_DIMENSIONAL_MAJORANA_DIAGONAL.md": "f1c52ebf864a10d097b077c9f996c624fe413a8e8c05c4829720e1e7dc4e78fb"
   },
   "self_stacking": {
     "scope": "Separate restricted formulas; complete input states; before full output gauge. These records do not replace general counts.",
@@ -1382,20 +1386,20 @@
       "4+1D_full": {
         "origins_outer": [
           1,
-          10,
           2,
-          202,
-          3613699,
-          793729
+          2,
+          349,
+          3661245,
+          825005
         ],
-        "total_outer": 4407643,
+        "total_outer": 4486604,
         "gamma_lift_interiors": [
           5,
           15,
           10,
           76
         ],
-        "total_with_gamma_lift_wrappers_replaced": 4407745,
+        "total_with_gamma_lift_wrappers_replaced": 4486706,
         "phase_transport_occurrences": {
           "gamma": 2,
           "gammapsi": 1,
@@ -1457,10 +1461,10 @@
       "psi": 458653
     },
     "source_total": 460594,
-    "general_total": 8555644,
-    "general_outer_total": 8555502,
-    "self_outer_total": 4407643,
-    "self_gamma_lift_interior_total": 4407738,
+    "general_total": 10322026,
+    "general_outer_total": 10321884,
+    "self_outer_total": 4486604,
+    "self_gamma_lift_interior_total": 4486706,
     "scope": "Uncollected displayed expression occurrences with declared lower structures and actual binary output fields retained. Expand every finite word/face sum and each R5 evaluation. Do not distribute through whole binary fields or nonlinear lifts, collect across physical contributions, or assert minimality. The 4D E5 gamma primary entry includes the 146 protected lift-interior leaves; outer counts are separate."
   },
   "three_dimensional_shared_Adem": {
@@ -1474,10 +1478,10 @@
     "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--14.tex": "62981a6fd5eaa942024d8a1bb58f57008cc8875fb2dde3d28b086e75bb79411c",
     "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--15.tex": "47e450bf9dd0c452c30310d8b2cda76d46c72e3b83916413ac237192919c522d",
     "docs/formulas/source/equations/four-dimensional--4-bosonic-obstruction--16.tex": "03a5e077e9de1ebfb3c718ca5f274b40c42611e5716bba5c0a17775924c93ef8",
-    "docs/formulas/source/equations/four-dimensional--majorana-decoration--33.tex": "640344b4d00d54f96c3dd6fc4c2d75592b137e087dbca214c1d13c203ad6c5f6",
+    "docs/formulas/source/equations/four-dimensional--majorana-decoration--33.tex": "ad01fd99045c3a69b7c214b1c9e7e8b65668a3aebf3517c366f48d9247242b98",
     "docs/formulas/source/equations/four-dimensional--majorana-and-p-ip-decoration--36.tex": "cb19f9fa62805c51c5521f2947570aa561678d5130ebc92da16d9f249acde581",
     "docs/formulas/source/equations/four-dimensional--p-ip-decoration--37.tex": "45ae177f56c6b4ee27899b73a0e1b757af623852bae9d90e5dddf62dd22c7e62",
-    "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-decoration--10.tex": "3ebb36c7d91aa3c51995999da38c1a5e1ab1a4dc2ca3b63c1b120b4c248e1764",
+    "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-decoration--10.tex": "0cbb85849a0a32e6b4414f665bc413a765edb63b979071a8d7724ddd9fae8d81",
     "docs/formulas/source/equations/four-dimensional-self-stacking--majorana-and-p-ip-decoration--11.tex": "bc562eb9390ec26a0c9e9225453b2f42ea319ed1370abe4872f9ae3c9dd982a2",
     "docs/formulas/source/equations/four-dimensional-self-stacking--p-ip-decoration--12.tex": "548cf6c334e3929e14d6cb00e6ec705d596ffe9fd34566e4fb2c2be975106a53",
     "docs/formulas/source/equations/four-dimensional-majorana-phase--phase-change--1.tex": "3b2dd9bb4e2f8f36cb9b73fdf32dc8c40d0572f29f9219d0e22df02ab77fa891",

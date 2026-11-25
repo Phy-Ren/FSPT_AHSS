@@ -33,7 +33,7 @@ def check(sector):
      for arg in factor['arguments']:
       expression(arg['terms'],identifier,1<<arg['precision_bits']);arguments+=len(arg['terms'])
     else:
-     assert kind in ('canonical_binary_lift','binary_floor_digit')
+     assert kind in ('canonical_binary_lift','binary_floor_digit','polynomial')
      expression(factor['numerator'],identifier,factor['modulus']);interiors+=len(factor['numerator'])
      assert factor['divisor']>0
     factors.append(factor)

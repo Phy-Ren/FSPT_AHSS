@@ -98,7 +98,7 @@ def main():
     gamma = records['4+1D', 'E5', 'gamma']
     assert gamma['total_outer'] - 4 + sum(gamma['protected_lift_interior_counts']) == gamma['total']
     terminal = ledger['self_stacking']['terminal']['4+1D_full']
-    assert sum(terminal['origins_outer']) == terminal['total_outer'] == 4407643
+    assert sum(terminal["origins_outer"]) == terminal["total_outer"] == 4486604
     assert terminal['total_outer'] - 4 + sum(terminal['gamma_lift_interiors']) == terminal['total_with_gamma_lift_wrappers_replaced']
     print(json.dumps({'status': 'PASS', 'metric': 'uncollected displayed occurrences',
                       'O6': totals['4+1D O6'], 'E5': totals['4+1D E5'],

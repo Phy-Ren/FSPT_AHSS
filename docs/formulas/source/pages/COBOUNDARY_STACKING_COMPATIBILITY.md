@@ -95,7 +95,9 @@ $`(0,u,c'+T)`$. Its phase is
 
 {{equation:coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--9}}
 
-The last bracket is the specialization of the second bracket of the [closed complex-fermion–Majorana stacking contribution](MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-cgamma-4d) to equal Majorana decorations. The Majorana diagonal is the same
+The bracket collects the [complex-fermion](MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-c-4d) and
+[complex-fermion–Majorana](MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-cgamma-4d) contributions of the closed law
+for equal Majorana decorations, where $`N_3=0`$ and the stacked occupation vanishes. The Majorana diagonal is the same
 fully specified operation as in the original stacking law.
 This chooses the inverse representative for which $`Y*Y^{-1}`$ is the
 zero cochain state. It includes the lower carry as well as the phase
@@ -106,8 +108,7 @@ For $`X*Y^{-1}`$, the direct product adds
 {{equation:coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--10}}
 
 Subtracting the inverse correction cancels the two
-identical Majorana diagonals as whole phase cochains, and the two identical
-occupation brackets. Bilinearity
+identical Majorana diagonals as whole phase cochains. Bilinearity
 over $`\mathbb Z_2`$ cancels every $`T`$ term and leaves
 
 {{equation:coboundary-stacking-compatibility--the-inverse-includes-a-lower-stacking-carry--11}}

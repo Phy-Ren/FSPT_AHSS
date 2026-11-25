@@ -2,72 +2,94 @@
   "status": "PASS",
   "dimension": "4+1D",
   "law": "bosonic stacking",
-  "scope": "The two complete binary coefficient sums. Each row is a specified product of physical face values and fully defined lower operations, with whole nonlinear scopes retained and their numerators explicitly listed. These counts are not a claim of global algebraic minimality.",
+  "scope": "The two complete coefficient sums. Each row is a specified product of physical face values, fully defined lower operations of the formula pages, whole canonical lifts and floor digits with listed numerators, and polynomial factors with listed products. These counts are not a claim of global algebraic minimality.",
   "exact_table_validation": {
     "status": "PASS",
     "checks": [
       "stored-file and decompressed-payload SHA256",
-      "every factor reference and nonlinear scope",
+      "every factor reference, nonlinear scope and polynomial factor",
       "all explicit rows and duplicate removal",
       "exact outer and interior counts"
     ],
     "lossless_encoding": "gzip is used only for JSON term arrays; decompressed arrays are the verified explicit coefficient tables"
   },
-  "natural_operation_identities": {
+  "construction": {
+    "source": "The coefficient sums of the previous revision (the colored transfer coefficients of the code construction), with their lower operations in the compact form of the transfer construction.",
+    "substitution": "Every factor of the compact operations E_4 and O_5^psi is the page operation plus the polynomial factor of the difference of the two operations on the same argument faces; the identity was checked factor by factor on random states, including open Majorana cochains.",
+    "added_terms": "The terms of the change of complex-fermion coordinate to n_4, of the P-move phase and of the polarization of the source-completion rephasing that depend on n_2 or n_2prime, expanded exactly (algebraic normal form) in the 105 physical face values and collected over F_2."
+  },
+  "direct_formula_checks": {
+    "receipt": "../../verification/four_dimensional/results/STACKING_CHECK.json",
     "status": "PASS",
-    "independent_valid_towers": 32,
-    "domain": "Actual total cochain inputs satisfy the lower tower. Individual formal Majorana components remain arbitrary. The unchanged lower stacking representative, its explicit off-tower correction, Bocksteins, integer carries and ordinary derivatives are evaluated independently.",
-    "physical_origin": "The designated exchange contributions are preserved before coordinate substitution; no reassignment by variable support."
+    "checks": {
+      "general": {
+        "samples": 40,
+        "pass": 40,
+        "zero_n2": 8,
+        "nonzero_n2": 32
+      },
+      "cocycle": {
+        "samples": 40,
+        "pass": 40,
+        "zero_n2": 8,
+        "nonzero_n2": 32
+      },
+      "closed": {
+        "samples": 40,
+        "pass": 40,
+        "zero_n2": 40,
+        "nonzero_n2": 0
+      },
+      "self": {
+        "samples": 40,
+        "pass": 40,
+        "zero_n2": 8,
+        "nonzero_n2": 32
+      },
+      "diagonal": {
+        "samples": 40,
+        "pass": 40,
+        "zero_n2": 40,
+        "nonzero_n2": 0
+      }
+    }
   },
   "contributions": [
     {
       "contribution": "gamma_psi",
-      "binary_summands": 5684189,
-      "binary_factors": 23483,
-      "index_sha256": "ca639c18635a5ec4a660bd342e0984eb7e51e6402ad809c673e3059770b0a893",
-      "native_readback": {
-        "status": "PASS",
-        "legal_towers": 4,
-        "coefficient_values": [
-          0,
-          1,
-          0,
-          0
-        ],
-        "independent_formula_values": [
-          0,
-          1,
-          0,
-          0
-        ],
-        "complete_finite_tensor_contribution": true,
-        "complete_integer_decoration_polynomial": "not present in this contribution"
+      "summands": 7053734,
+      "factors": 24818,
+      "index_sha256": "d8193edd29b0d16fbef15a21508ea9c56e17828ab0e9aba39ab2a4243739e1fd",
+      "polynomial_factors": 1335,
+      "polynomial_factor_products": 90566,
+      "derivation": {
+        "previous_index_sha256": "ca639c18635a5ec4a660bd342e0984eb7e51e6402ad809c673e3059770b0a893",
+        "lower_operation_differences": {
+          "zero_difference": 2055,
+          "polynomial_factor": 1335,
+          "single_monomial": 66
+        },
+        "substitution_rows": 44918,
+        "correction_monomials": 1559475
       }
     },
     {
       "contribution": "psi",
-      "binary_summands": 2869198,
-      "binary_factors": 15485,
-      "index_sha256": "76b5dafbc9e1d9f265fafae4fc55c0d6e4348b363ae34dbb03be6e69a98f5933",
-      "native_readback": {
-        "status": "PASS",
-        "legal_towers": 4,
-        "coefficient_values": [
-          1,
-          1,
-          0,
-          0
-        ],
-        "independent_formula_values": [
-          1,
-          1,
-          0,
-          0
-        ],
-        "complete_finite_tensor_contribution": true,
-        "complete_integer_decoration_polynomial": true
+      "summands": 3265871,
+      "factors": 16250,
+      "index_sha256": "f94adbaa8b6d31f88341fa69cd72a361258c2ee250444a8d976337d3146ac438",
+      "polynomial_factors": 765,
+      "polynomial_factor_products": 50846,
+      "derivation": {
+        "previous_index_sha256": "76b5dafbc9e1d9f265fafae4fc55c0d6e4348b363ae34dbb03be6e69a98f5933",
+        "lower_operation_differences": {
+          "zero_difference": 1712,
+          "single_monomial": 23,
+          "polynomial_factor": 765
+        },
+        "substitution_rows": 34636,
+        "correction_monomials": 1023199
       }
     }
-  ],
-  "verification_limit": "Finite native readbacks supplement the exact coefficient construction and complete table validation; they are not a standalone proof for every physical group."
+  ]
 }

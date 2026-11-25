@@ -53,13 +53,17 @@
         {
           "path": "formulas/publication_source/reference/d4_input/code/compact.py",
           "sha256": "f19c07e5506289b7145fdffa82810973eb60e91e1ac7a66a78392d24c676a7f4"
+        },
+        {
+          "path": "formulas/publication_source/full4/physical.py",
+          "sha256": "453a2537253ba9bae36c900f586c8fbfa09fa68a60d87c30908249c284fcc7da"
         }
       ],
       "compiled_targets": [
         "source_3_fermion",
         "source_4_fermion"
       ],
-      "description": "Lower fermion source; runtime accepts unshifted a and applies u=a+s floor(n/2)."
+      "description": "Lower fermion source; runtime accepts unshifted a and applies u=a+s floor(n/2). In 4+1D it is the complete F-move count O5 of the formula pages (full4/physical.py:parity)."
     },
     {
       "id": "integer.native.majorana_product",
@@ -115,7 +119,7 @@
       "spatial_dimensions": [
         4
       ],
-      "coordinate": "shifted-u-publication",
+      "coordinate": "physical-occupation",
       "inputs": "n,u;m,v;w,s",
       "outputs": "binary degree 4 correction",
       "equations": [
@@ -124,20 +128,19 @@
       ],
       "source_files": [
         {
-          "path": "formulas/publication_source/full4/product_full.py",
-          "sha256": "87dacc4b7926b19be12b0020ca35f622f8a6a95f019bebc9008e8f3a5e359e75"
+          "path": "formulas/publication_source/full4/physical.py",
+          "sha256": "453a2537253ba9bae36c900f586c8fbfa09fa68a60d87c30908249c284fcc7da"
         }
       ],
       "compiled_targets": [
         "product_4_fermion"
       ],
-      "description": "Includes the terminal-compatible closed ab term exactly once."
+      "description": "E4 of the formula pages (full4/physical.py:lower_product); N4 = n4 + n4prime + E4."
     },
     {
       "id": "integer.shared.source_blocks",
       "spatial_dimensions": [
-        3,
-        4
+        3
       ],
       "coordinate": "shifted-u-high-source",
       "inputs": "virtual or actual n2,u3,c4,w,s",
@@ -157,7 +160,7 @@
         "high6",
         "h6"
       ],
-      "description": "Shared characteristic blocks; dimension 3 evaluates on interval/triangle lifts."
+      "description": "Shared characteristic blocks of the 3+1D construction and of the 4+1D transfer kernel h6; dimension 3 evaluates on interval/triangle lifts."
     },
     {
       "id": "integer.shared.open_majorana",
@@ -207,12 +210,21 @@
         {
           "path": "formulas/publication_source/coefficients/source_coefficients.json",
           "sha256": "8e8718786632a2f0c33650c6b7fcd47da228b10ef98df2420a1246c9d512bcd6"
+        },
+        {
+          "path": "formulas/publication_source/reference/d4_input/code/physical_y6.py",
+          "sha256": "4284dbc2e65d9ba03cbc48f97c0b43249c249e1cfbb161e08038a4cb2aaba976"
+        },
+        {
+          "path": "formulas/publication_source/reference/d4_input/code/physical_Y6_total.json",
+          "sha256": "6d3604cbf3e0080667f9684b2e8337565b8b39d0bf3626531b5857cdabdd93d7"
         }
       ],
       "compiled_targets": [
-        "y6"
+        "y6",
+        "y6_auxiliary"
       ],
-      "description": "Three-factor grid plus 970 fixed numerical pairs; M7 uses 453 fixed Adem words."
+      "description": "Three-factor grid plus fixed numerical pairs; y6 completes the F-move count O5^psi, y6_auxiliary the auxiliary source of the 3+1D construction and of the 4+1D transfer kernel; M7 uses 453 fixed Adem words."
     },
     {
       "id": "integer.d3.terminal_pair",
@@ -247,7 +259,7 @@
         },
         {
           "path": "fspt/full_formula/runtime.py",
-          "sha256": "b927b0ca7a0dcc286283827d02793993b005073df24016e1a73d36964c6cbcb8"
+          "sha256": "db322b6af723ebfaef3b7af9fba309cfe7df8b9b27cb71580e73da82c3f35680"
         }
       ],
       "compiled_targets": [
@@ -262,7 +274,7 @@
       "spatial_dimensions": [
         4
       ],
-      "coordinate": "current-B-publication",
+      "coordinate": "physical-occupation",
       "inputs": "n2,u3,c4;w,s",
       "outputs": "phase O6",
       "equations": [
@@ -271,29 +283,25 @@
       ],
       "source_files": [
         {
-          "path": "formulas/publication_source/full4/product_full.py",
-          "sha256": "87dacc4b7926b19be12b0020ca35f622f8a6a95f019bebc9008e8f3a5e359e75"
-        },
-        {
-          "path": "formulas/publication_source/joint/cubic_repair.py",
-          "sha256": "4454a07cc36cca2417f566bb3fe5333dea10e6f175c25005b6d7eff4d970c3a1"
+          "path": "formulas/publication_source/full4/physical.py",
+          "sha256": "453a2537253ba9bae36c900f586c8fbfa09fa68a60d87c30908249c284fcc7da"
         },
         {
           "path": "fspt/full_formula/runtime.py",
-          "sha256": "b927b0ca7a0dcc286283827d02793993b005073df24016e1a73d36964c6cbcb8"
+          "sha256": "db322b6af723ebfaef3b7af9fba309cfe7df8b9b27cb71580e73da82c3f35680"
         }
       ],
       "compiled_targets": [
-        "high6"
+        "source_4_bosonic"
       ],
-      "description": "Shared source plus ordered n^3/12; paired B-coordinate shift."
+      "description": "The displayed O6 in the occupation n4, including n2^3/12 (full4/physical.py:source48)."
     },
     {
       "id": "integer.d4.explicit_terminal_product",
       "spatial_dimensions": [
         4
       ],
-      "coordinate": "current-B-publication",
+      "coordinate": "physical-occupation",
       "inputs": "n2,u3,c4;m2,v3,c4p;w,s",
       "outputs": "phase E5 without Z5/2",
       "equations": [
@@ -304,14 +312,22 @@
       ],
       "source_files": [
         {
+          "path": "formulas/publication_source/full4/physical.py",
+          "sha256": "453a2537253ba9bae36c900f586c8fbfa09fa68a60d87c30908249c284fcc7da"
+        },
+        {
           "path": "formulas/publication_source/full4/product_full.py",
           "sha256": "87dacc4b7926b19be12b0020ca35f622f8a6a95f019bebc9008e8f3a5e359e75"
+        },
+        {
+          "path": "formulas/publication_source/full4/physical_b4.json",
+          "sha256": "27447f9b3da1fd28b26666d4255bfc41069b0a11a5d82838342fba7a6a36394a"
         }
       ],
       "compiled_targets": [
-        "nonbinary4"
+        "product_4_bosonic"
       ],
-      "description": "Retains every signed fractional carry and the ordered one-third cubic product."
+      "description": "The displayed E5 without the transfer Z5, in the occupations n4, n4prime (full4/physical.py:product48); retains every signed fractional carry and the ordered one-third cubic product."
     },
     {
       "id": "integer.d4.binary_kernel",
@@ -371,7 +387,7 @@
         },
         {
           "path": "fspt/full_formula/runtime.py",
-          "sha256": "b927b0ca7a0dcc286283827d02793993b005073df24016e1a73d36964c6cbcb8"
+          "sha256": "db322b6af723ebfaef3b7af9fba309cfe7df8b9b27cb71580e73da82c3f35680"
         }
       ],
       "compiled_targets": [

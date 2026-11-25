@@ -56,54 +56,45 @@ N_4=\mathcal{ℰ}_4^\gamma[n_3,n_3]
 ### Complex fermions and Majorana decoration
 
 ```math
-\begin{aligned}
-\mathcal{ℰ}_5^{c\gamma}=\frac12\big[&\mathcal{𝒪}_5^\gamma[n_3]\cup_4n_4
- +S\cup_3S+\mathcal{𝒪}_5^\gamma[n_3]\cup_4S+S\cup_4\mathcal{𝒪}_5^\gamma[n_3]\\
- &+n_3\cup_1n_3+\omega_2n_3\big],\qquad S=n_3\cup_2n_3.
-\end{aligned}
+\mathcal{ℰ}_5^{c\gamma}=\frac12\,dn_4\cup_4n_4,
+\qquad dn_4=\mathcal{𝒪}_5^\gamma[n_3].
 ```
 
 The terms of the general formula on the stacked state vanish because $`N_3=0`$ and $`dN_4=0`$.
-The terms after the first are the occupation bracket of the [general law](FOUR_DIMENSIONAL_SELF_STACKING.md) at $`n_2=0`$.
 
 ### Majorana decoration
 
-This is the shared self-stacking expression with $`n_2=0`$,
-$`dn_3=0`$, and $`\beta_4^\gamma=\beta n_3`$. The terms
-containing $`dn_3`$ or $`\beta(\mathcal{𝒪}_4[n_2])`$
-vanish and are omitted:
+Here $`\beta n_3=dn_3/2`$ uses the integer differential of the canonical
+lift of the closed $`\mathbb Z_2`$ cochain $`n_3`$, $`\mathrm{Sq}^1n_3=[\beta n_3]_2=n_3\cup_2n_3`$,
+and the products in the quarter bracket are signed integer higher cups of
+canonical lifts:
 
 ```math
 \begin{aligned}
 \mathcal{ℰ}_{5,\mathrm{diag}}^\gamma
-={}&\frac12\Big[
- \sum_{(\vartheta;x_1,\ldots,x_q)\in\mathcal I_5^\gamma}
- \mathop{\mathrm{MS}}\nolimits_{\vartheta}(x_1,\ldots,x_q)
- +n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma\Big]\\
-&+\frac14\Big[
- \beta n_3\cup_3\beta n_3
- +n_3\cup_1n_3-\omega_2n_3\\
-&\qquad+\sum_{(\epsilon,\mathcal P)\in\mathcal J_5^\gamma}
- \epsilon\;[\sum_{\eta\in\mathcal P}
-                         \prod_{(x,f)\in\eta}x_f]_2\Big]\pmod1.
+={}&\frac12z_5^{\mathrm{self}}(n_3)+\frac12(\beta n_3)\cup_2n_3
+ -\frac14\big[(\beta n_3)\cup_3(\beta n_3)+n_3\cup_1n_3-\omega_2n_3\big],\\
+z_5^{\mathrm{self}}(a)={}&\sum_{v\in\mathcal W_5}\mathop{\mathrm{MS}}\nolimits_v(a,a,a,a)
+ +\mathop{\mathrm{MS}}\nolimits_{12313123}(a,a,\mathrm{Sq}^1a)
+ +\mathop{\mathrm{MS}}\nolimits_{12131232}(\mathrm{Sq}^1a,a,a)\\
+&+\mathrm{Sq}^1a\cup_2a+a\cup_2\mathrm{Sq}^1a
+ +a\cup_3(a\cup_2\mathrm{Sq}^1a)+\mathrm{Sq}^1a\cup_3\mathrm{Sq}^1a\\
+&+(a\cup_1a)\cup_5(\omega_2a)
+ +(a\cup_1a+\omega_2a)\cup_5(s_1\mathrm{Sq}^1a)
+ +(\omega_2\cup_1s_1)a+\mathrm{Sq}^1a\cup_3(s_1a)\\
+&+s_1\big[s_1a+\mathrm{Sq}^1a\cup_4\mathrm{Sq}^1a+(s_1a)\cup_3a\big],\\
+\mathcal W_5={}&\{12131432412,12343213431,12341231213,12123434123,\\
+&\ \ 12131412324,12134131234,12312412423,12314324123,\\
+&\ \ 12314342413,12343413214,12314241231,12314241312,\\
+&\ \ 12312134123,12324314213,12324234134,12314342412\}.
 \end{aligned}
 ```
 
-## Specialization of the phase convention
-
-The complete lower fields of the stacked state here are $`N_3=0`$ and
-$`N_4=\mathcal{ℰ}_4^\gamma`$. The $`B_5`$ terms of the phase convention
-consequently give $`\tfrac12[n_3\cup_1n_3-s_1\mathcal{ℰ}_4^\gamma]`$; this
-half-valued cochain is unchanged by the overall sign.
-Those two terms already appear in the Majorana formula above.
-
-All integer lifts and Bocksteins have their common meanings. In particular
-$`\beta n_3=dn_3/2`$ uses the integer differential of the binary cocycle,
-and the whole binary lifts inside the formula retain their scopes.
-The coefficient sets are the same ones used in
-[complete self-stacking](FOUR_DIMENSIONAL_SELF_STACKING.md); their values
-are specialized with the stated closed input rather than fitted again.
-The complex-fermion completion of the separate states and their incoming phase are retained.
+This is the closed-Majorana self-stacking law of the thesis, the
+specialization of [(M3E)](MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-4d) to equal
+upper and lower states. The [complete self-stacking formulas](FOUR_DIMENSIONAL_SELF_STACKING.md)
+at $`n_2=0`$ equal it as cochains. The complex-fermion completion of the
+separate states and their incoming phase are retained.
 
 The [root-power presentation](ROOT_POWER_PRESENTATIONS.md) explains how
 these powers determine the final abelian group.

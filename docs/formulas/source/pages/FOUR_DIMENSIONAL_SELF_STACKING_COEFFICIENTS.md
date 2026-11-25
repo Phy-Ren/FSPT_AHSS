@@ -11,8 +11,8 @@ identified before that contraction is completed.
 
 | Coefficient sum | General terms | Self-stacking terms | Distinct protected numerator terms |
 |---|---:|---:|---:|
-| $`\mathcal I_5^{\gamma\psi}`$ | 5,684,189 | **3,613,517** | 55,901 |
-| $`\mathcal I_5^\psi`$ | 2,869,198 | **793,669** | 34,243 |
+| $`\mathcal I_5^{\gamma\psi}`$ | 7,053,734 | **3,661,063** | 85,850 |
+| $`\mathcal I_5^\psi`$ | 3,265,871 | **824,945** | 50,462 |
 
 The complete mathematical expressions are the
 [Majorana–p+ip table](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/INDEX.json)
@@ -24,8 +24,10 @@ counts do not assert optimality under other cochain identities.
 Each outer row specifies an actual product of binary face values.
 Every factor is either a physical cochain face, a fully defined lower
 obstruction or stacking twister, a Bockstein or integer carry with all
-its arguments specified, or a whole canonical lift/floor with its entire
-numerator. No unspecified finite polynomial is counted as one factor.
+its arguments specified, a whole canonical lift/floor with its entire
+numerator, or a polynomial factor with its listed products, as in the
+[general tables](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md#table-content).
+No unspecified finite polynomial is counted as one factor.
 The lower-operation domains and integer precisions are those of the
 [general coefficient conventions](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).
 
@@ -36,8 +38,8 @@ with zero decorations. Identical names alone do not identify factors:
 the operation, all arguments, digit, and differential convention must
 also coincide.
 
-The protected-numerator column counts each distinct nonlinear factor's
-explicit interior once. It is separate from the outer count; it does not
+The protected-numerator column counts each distinct nonlinear or polynomial
+factor's explicit interior once. It is separate from the outer count; it does not
 pretend that repeated occurrences of the same lift can be distributed as
 integer addition. The transformed lower-operation argument arrays contain
 1,559,782 explicit argument summands in the mixed table and 907,643 in
@@ -46,13 +48,14 @@ operations and are not additional outer summands.
 
 The [standalone verifier](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/verify_coefficients.py)
 checks file hashes, factor references, complete reduction scopes, duplicate
-outer products, and every stated table count. The independent native
-readbacks for [Majorana–p+ip](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/NATIVE_RESTRICTION_CHECK.json)
-and [p+ip](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/NATIVE_RESTRICTION_CHECK.json)
-evaluate the original completed formula and the specialized expression on
-four signed physical towers with arbitrary Majorana root lifts. All checks
-agree. These readbacks supplement the exact algebraic substitution and
-coefficient collection; they are not an independent physical calibration.
+outer products, and every stated table count. The tables are produced from the
+general tables by [specialize_coefficients.py](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/specialize_coefficients.py)
+followed by [normalize_integer_carries.py](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/normalize_integer_carries.py);
+both steps are exact substitutions and collections. The complete self-stacking
+law with these tables equals the stacking correction of the code for equal
+states on random exact towers ([4+1D stacking checks](verification/four_dimensional/README.md));
+the receipts for [Majorana–p+ip](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/NATIVE_RESTRICTION_CHECK.json)
+and [p+ip](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/NATIVE_RESTRICTION_CHECK.json) record the sources.
 
 The six exchange-origin contributions retain their labels throughout.
 No term is assigned a new physical label from the variables left after
@@ -67,9 +70,7 @@ replay compares every factor definition and every outer row with the
 unnormalized expression: [mixed receipt](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/gamma_psi/NORMALIZATION_CHECK.json)
 and [pure receipt](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/psi/NORMALIZATION_CHECK.json).
 
-To replay, obtain the unnormalized coefficient directory from public commit
-`bc3e5f238513a632f48197363e4ee3e66e706418` and pass its path as `--original`
-to [verify_carry_normalization.py](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/verify_carry_normalization.py).
-This directory is the default comparison target. The native readbacks
-above verify the unnormalized specialized expressions; the exact
-normalization replay connects them to these tables.
+To replay, run specialize_coefficients.py on the
+[general tables](coefficients/FOUR_DIMENSIONAL_STACKING) to obtain the unnormalized
+directory, and pass its path as `--original` to
+[verify_carry_normalization.py](coefficients/FOUR_DIMENSIONAL_SELF_STACKING/verify_carry_normalization.py).

@@ -30,3 +30,24 @@ differentials vanish is unnecessary.
 All integer cups, canonical binary lifts, and Bocksteins use the conventions
 in the main formula guide. The sum inside an open Bockstein is a binary
 sum before its canonical lift.
+
+<a id="p-move-rephasing"></a>
+
+## P-move rephasing to the closed-Majorana law
+
+The [complete Majorana contribution](FOUR_DIMENSIONAL.md#eq-theta5) also contains
+$`d_{s_1}\big(\tfrac12b_4+\tfrac14n_3\cup_2n'_3\big)`$, a fixed local phase of
+the P move. On the ordered four-simplex
+
+{{equation:four-dimensional-majorana-stacking-gauge--p-move-rephasing--3}}
+
+The sum contains exactly **129 products** of the face values of
+$`n_3,n'_3,\omega_2,s_1`$ on faces of (01234) that contain the vertex 0, listed in the
+[coefficient table](coefficients/FOUR_DIMENSIONAL_MAJORANA_STACKING_REPHASING.json);
+every coefficient is one. With this phase and the polynomial
+$`\Theta_5`$ of the complete contribution, the Majorana contribution at
+$`n_2=n'_2=0`$ equals the [closed-Majorana law](MAJORANA_AND_ENDPOINTS.md#eq-m7-4d).
+The polynomial is the Eilenberg–Zilber primitive, on closed inputs, of the
+half-valued part of the difference between that law and the contribution without
+this phase; on open Majorana cochains it is evaluated with the same faces.
+As for the output gauge, the obstruction function is unchanged.
