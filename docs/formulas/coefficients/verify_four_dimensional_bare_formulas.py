@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
-"""Checks of the 4+1D change from the code argument n_4 + B_4 to n_4, standard library only.
+"""Checks of the 4+1D change from the code argument to the occupation n_4, standard library only.
 
 The publication code evaluates the complex-fermion layer with the argument
-x = n_4 + B_4.  The formula pages use n_4 itself; the change of phase is
-    rho = 1/2[n_4 cup_3 B_4 + n_4 cup_4 dB_4].
-For arbitrary binary cochains this script checks
+c = n_4 + y, y = n_3 cup_2 n_3 + x, where x is the s_1 polynomial shown in O_6^psi.
+The formula pages use n_4 itself, with dn_4 = O_5. For arbitrary binary cochains
+this script checks
 
-1. the obstruction identity, with F[x] = 1/2[w_2 x + x cup_2 x + dx cup_3 x + dx cup_4 dx],
-       F[x+R] - F[x] = d(1/2[x cup_3 R + x cup_4 dR])
-                       + 1/2[w_2 R + R cup_2 R + dR cup_3 R + dR cup_4 dx + dR cup_4 dR];
-2. the stacking identity: the code products c, c gamma, c psi in the arguments
-   n_4 + B_4, plus Delta(rho), equal the displayed E_5^c, E_5^{c gamma} and E_5^{c psi},
-   with N_4 = n_4 + n'_4 + E_4 + Delta B_4.
+1. the obstruction identity, with F[c] = 1/2[w_2 c + c cup_2 c + dc cup_3 c + dc cup_4 dc],
+       F[c+R] - F[c] = d(1/2[c cup_3 R + c cup_4 dR])
+                       + 1/2[w_2 R + R cup_2 R + dR cup_3 R + dR cup_4 dc + dR cup_4 dR];
+2. the obstruction conversion: the code obstruction in c, with its compact parities and
+   the +1/4 form of the Majorana quarter bracket, minus the displayed obstruction in n_4
+   (with the two occupation brackets of O_6^{c psi} and O_6^psi) is the coboundary of the
+   displayed occupation change;
+3. the stacking identity: the code products in c, transported by that change, by the
+   gauge transformation d(n_3 cup_3 n'_3) of N_4 and by the P-move rephasing
+   1/2 y cup_4 n'_4, equal the displayed E_5^c, E_5^{c gamma}, E_5^{c psi} with the
+   occupation bracket, N_4 = n_4 + n'_4 + E_4.
 
 All half-valued phases are compared as binary cochains (twice the phase).
 """
@@ -93,42 +98,108 @@ def check_obstruction_identity(trials=20):
     return bad
 
 
+def closed_background(K, rng):
+    t = [rng.randrange(2) for _ in range(K.nv)]
+    s = {(i, j): (t[i] + t[j]) % 2 for i, j in K.simplices(1)}
+    w = add(K.d(K.rnd(1, rng), 1), K.cup(s, 1, s, 1))
+    return w, s
+
+
+def check_obstruction_conversion(trials=20):
+    """Code obstruction (argument c = n4 + S + X, compact parities) minus the displayed one is exact.
+
+    Arbitrary binary n4, S = n3 cup_2 n3, X (the s1 polynomial x), b = [beta^- n3]_2 and
+    Gamma (the Majorana parity); Psi = dn4 + Gamma, so dn4 = Gamma + Psi = O5.
+    """
+    K = Complex(8)
+    bad = 0
+    for seed in range(trials):
+        rng = random.Random(2000 + seed)
+        w, s = closed_background(K, rng)
+        n4, S, X, b = (K.rnd(4, rng) for _ in range(4))
+        G = K.rnd(5, rng)
+        On = K.d(n4, 4)
+        P = add(On, G)
+        dS, dX = K.d(S, 4), K.d(X, 4)
+        Go, Po = add(G, dS), add(P, dX)
+        c = add(n4, S, X)
+
+        def Q(y):
+            dy = K.d(y, 4)
+            return add(K.cup(w, 2, y, 4), K.cup(y, 4, y, 4, 2), K.cup(dy, 5, y, 4, 3), K.cup(dy, 5, dy, 5, 4))
+        code = add(Q(c), K.cup(w, 2, b, 4), K.cup(b, 4, b, 4, 2), K.cup(Go, 5, Po, 5, 4), K.cup(s, 1, Po, 5))
+        Rg = add(K.cup(w, 2, add(S, b), 4), K.cup(S, 4, S, 4, 2), K.cup(b, 4, b, 4, 2),
+                 K.cup(S, 4, dS, 5, 3), K.cup(dS, 5, G, 5, 4))
+        Rp = add(K.cup(w, 2, X, 4), K.cup(X, 4, X, 4, 2), K.cup(X, 4, dX, 5, 3), K.cup(P, 5, dX, 5, 4))
+        shown = add(Q(n4), K.cup(G, 5, P, 5, 4), K.cup(s, 1, P, 5), Rg, Rp)
+        B = add(S, X)
+        Y = add(K.cup(n4, 4, B, 4, 3), K.cup(n4, 4, K.d(B, 4), 5, 4), K.cup(S, 4, X, 4, 3),
+                K.cup(S, 4, dX, 5, 4), K.cup(S, 4, dS, 5, 4), K.cup(X, 4, dX, 5, 4),
+                K.cup(dX, 5, add(dS, On), 5, 5), K.cup(s, 1, X, 4))
+        lhs = add(code, shown, K.d(Y, 5))
+        bad += sum(lhs.values())
+    return bad
+
+
 def check_stacking_identity(trials=20):
+    """Code complex-fermion products, transported to n4 and N4 = n4 + n'4 + E4, give the
+    displayed E5^c, E5^{c gamma}, E5^{c psi} plus the explicit occupation bracket."""
     K = Complex(7)
     bad = 0
-
-    def c3(a, b): return K.cup(a, 4, b, 4, 3)
-    def x54(a, b): return K.cup(a, 5, b, 4, 4)
-    def y45(a, b): return K.cup(a, 4, b, 5, 4)
+    c3 = lambda a, b: K.cup(a, 4, b, 4, 3)
+    x54 = lambda a, b: K.cup(a, 5, b, 4, 4)
+    y45 = lambda a, b: K.cup(a, 4, b, 5, 4)
     for seed in range(trials):
         rng = random.Random(1000 + seed)
-        n, m, N, R, Rm, RN = (K.rnd(4, rng) for _ in range(6))
-        # O_5 = A + P: A the Majorana parts, P the p+ip part
-        A, Am, AN, P, Pm, PN = (K.rnd(5, rng) for _ in range(6))
-        O, Om, ON = add(A, P), add(Am, Pm), add(AN, PN)
-        x, xm, X = add(n, R), add(m, Rm), add(N, RN)
-        E4 = add(X, x, xm)                      # N_4 = n_4 + n'_4 + E_4 + Delta B_4
-        code = add(c3(x, xm), c3(add(x, xm), E4),
-                   x54(A, xm), y45(X, AN), y45(x, A), y45(xm, Am),
-                   x54(P, xm), y45(X, PN), y45(x, P), y45(xm, Pm))
+        w, s = closed_background(K, rng)
+        n, m, E = (K.rnd(4, rng) for _ in range(3))
+        S, Sp, SN, X, Xp, XN = (K.rnd(4, rng) for _ in range(6))
+        beta = K.rnd(3, rng)
+        dbeta = K.d(beta, 3)
+        N = add(n, m, E)
+        y, yp, yN = add(S, X), add(Sp, Xp), add(SN, XN)
+        Dy = add(yN, y, yp)
+        O, Op, ON = K.d(n, 4), K.d(m, 4), K.d(N, 4)
+        # code products with argument n4 + y and stacked argument N + y_N + d beta
+        xc, xpc, Xc = add(n, y), add(m, yp), add(N, yN, dbeta)
+        Eold = add(E, Dy, dbeta)
+        code = add(c3(xc, xpc), c3(add(xc, xpc), Eold), x54(K.d(xc, 4), xpc), y45(Xc, K.d(Xc, 4)),
+                   y45(xc, K.d(xc, 4)), y45(xpc, K.d(xpc, 4)))
 
-        def rho(u, r): return add(c3(u, r), y45(u, K.d(r, 4)))
-        lhs = add(code, rho(N, RN), rho(n, R), rho(m, Rm))
+        def Yprime(S_, X_, O_):
+            dS_, dX_ = K.d(S_, 4), K.d(X_, 4)
+            return add(K.cup(S_, 4, X_, 4, 3), K.cup(S_, 4, dX_, 5, 4), K.cup(S_, 4, dS_, 5, 4),
+                       K.cup(X_, 4, dX_, 5, 4), K.cup(dX_, 5, add(dS_, O_), 5, 5), K.cup(s, 1, X_, 4))
 
-        def Delta(f): return add(f(N, RN, ON, AN, PN), f(n, R, O, A, P), f(m, Rm, Om, Am, Pm))
-        Ec = add(c3(n, m), c3(add(n, m), E4))
-        Ecg = add(x54(A, m), Delta(lambda u, r, o, a, p: y45(u, a)),
-                  c3(n, Rm), c3(R, m), c3(R, Rm), c3(add(R, Rm), E4), x54(O, Rm),
-                  Delta(lambda u, r, o, a, p: add(y45(r, o), y45(u, K.d(r, 4)), c3(u, r))))
-        Ecp = add(x54(P, m), Delta(lambda u, r, o, a, p: y45(u, p)))
-        rhs = add(Ec, Ecg, Ecp)
-        bad += sum(lhs[f] != rhs[f] for f in lhs)
+        def Ytot(u, S_, X_, O_):
+            B_ = add(S_, X_)
+            return add(c3(u, B_), y45(u, K.d(B_, 4)), Yprime(S_, X_, O_))
+        DY = add(Ytot(N, SN, XN, ON), Ytot(n, S, X, O), Ytot(m, Sp, Xp, Op))
+        cvar = add(N, yN)
+        F45 = add(K.cup(w, 2, beta, 3), K.cup(cvar, 4, dbeta, 4, 3), K.cup(beta, 3, dbeta, 4, 2),
+                  K.cup(beta, 3, beta, 3, 1))
+        sigma = K.d(K.cup(y, 4, m, 4, 4), 4)
+        lhs = add(code, DY, F45, sigma, K.cup(s, 1, Dy, 4))
+        P = add(c3(n, m), c3(add(n, m), E), x54(O, m), y45(N, ON), y45(n, O), y45(m, Op))
+
+        def Z1(S_, X_, O_):
+            dS_, dX_ = K.d(S_, 4), K.d(X_, 4)
+            return add(y45(add(S_, X_), O_), K.cup(S_, 4, X_, 4, 3), y45(X_, dS_),
+                       K.cup(dX_, 5, add(O_, dS_), 5, 5), K.cup(s, 1, S_, 4))
+        Qb = add(K.cup(w, 2, beta, 3), K.cup(beta, 3, beta, 3, 1), K.cup(beta, 3, dbeta, 4, 2))
+        bracket = add(c3(y, yp), c3(add(y, yp), add(E, Dy, dbeta)), c3(E, add(yN, dbeta)),
+                      x54(add(O, K.d(y, 4)), yp), y45(y, Op), K.cup(dbeta, 4, add(ON, K.d(yN, 4)), 5, 4),
+                      c3(yN, dbeta), Qb, Z1(SN, XN, ON), Z1(S, X, O), Z1(Sp, Xp, Op))
+        rhs = add(P, bracket)
+        diff = add(lhs, rhs)
+        bad += sum(diff.values())
     return bad
 
 
 def main():
     results = {
         'obstruction identity (arbitrary cochains)': check_obstruction_identity(),
+        'obstruction conversion (arbitrary cochains)': check_obstruction_conversion(),
         'stacking identity (arbitrary cochains)': check_stacking_identity(),
     }
     for name, bad in results.items():

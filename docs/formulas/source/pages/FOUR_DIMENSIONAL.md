@@ -60,12 +60,12 @@ The second digit obeys $`d[\lfloor n_2/2\rfloor]_2=[n_2]_2\cup_1[n_2]_2+s_1[n_2]
 <a id="terminal-occupation-4d"></a>
 
 Here $`n_4`$ is the physical point-fermion occupation of the original
-pairing arrows. The directed F-move count differs from $`\mathcal{𝒪}_5`$ by
-the coboundary of the fixed binary four-cochain $`B_4`$ given explicitly in
-the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#eq-r4).
-That page also gives the complete F-move and P-move counts.
-For $`n_2=0`$ every $`s_1`$ face term of $`B_4`$ vanishes and
-$`B_4=n_3\cup_2n_3`$.
+pairing arrows, and $`\mathcal{𝒪}_5`$ is the complete directed F-move count
+of the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#obstruction).
+That page also gives the complete P-move count. The first line of
+$`\mathcal{𝒪}_5^\psi`$ comes from the intrinsic zero modes, the second from
+the projective zero modes, and the third from the pairs of an intrinsic and a
+projective zero mode.
 
 ### 4. Bosonic obstruction
 
@@ -87,7 +87,7 @@ The contributions are:
 
 The bracket reuses the complete Majorana parity from the preceding layer:
 $`\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}=\mathrm{Sq}^2n_3
-+\omega_2n_3+s_1\mathrm{Sq}^1n_3`$.
++\omega_2n_3+s_1\mathrm{Sq}^1n_3+d(n_3\cup_2n_3)`$.
 Its mixed component retains the terms proportional to $`dn_3`$;
 no closed-input assumption is made. The outer superscript records the
 exchanged fermion operators. Reusing their full parity does not change
@@ -97,9 +97,12 @@ that physical origin.
 
 {{equation:four-dimensional--4-bosonic-obstruction--13}}
 
-The terms with $`B_4`$ vanish for $`n_2=0`$, where $`B_4=n_3\cup_2n_3`$
-and $`dB_4=0`$. The complex fermions are in operator order, and the
-Majorana contribution is in the [compact phase convention](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
+With its first three terms, the complex-fermion contributions add up to
+$`\tfrac12[\omega_2n_4+n_4\cup_2n_4+dn_4\cup_3n_4+dn_4\cup_4dn_4]`$ with
+$`dn_4=\mathcal{𝒪}_5`$. The remaining terms depend only on $`n_3`$ and vanish
+for $`dn_3=0`$, in particular for $`n_2=0`$. The complex fermions are in
+operator order, and the Majorana contribution is in the
+[compact phase convention](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 
 **Majorana contribution.**
 
@@ -151,7 +154,10 @@ expands to four ordered cups with no background remainder. Here
 $`\beta_4=\beta^-n_3+\beta_4^\psi`$ is ordinary integer addition.
 The explicit $`s_1\mathcal{𝒪}_5^\psi/2`$ is required by the same phase
 change that fixes the compact Majorana formula; it does not redefine
-the fixed binary completion $`y_6`$.
+the fixed binary completion $`y_6`$. The two terms after it vanish for
+$`s_1=0`$. Write $`x`$ for the polynomial in their brackets: $`y_6`$ completes
+the parity polynomial $`\mathcal{𝒪}_5^\psi+dx`$ of the code, and these two
+terms write the phase for the parity count $`\mathcal{𝒪}_5^\psi`$ itself.
 
 The polynomial $`y_6`$ contains **623,880 explicit physical-face monomials**
 after its complete finite definition is expanded and equal binary
@@ -206,10 +212,10 @@ Consequently $`d\mathcal{ℰ}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 
 {{equation:four-dimensional--3-complex-fermion-stacking--24}}
 
-Here $`\Delta B_4=B_4[N_2,N_3]-B_4[n_2,n_3]-B_4[n'_2,n'_3]`$, evaluated on the
-actual lower fields of the stacked state. The law includes the complex-fermion
-gauge transformation by the explicit pairing reference of the separate states described under the bosonic
-stacking law below.
+The law includes the complex-fermion gauge transformation by the explicit
+three-cochain of the separate states described under the bosonic stacking law
+below. For $`n_2=n'_2=0`$ it is the closed-Majorana law
+$`N_4=n_4+n'_4+\mathcal{ℰ}_4^\gamma`$.
 
 **Majorana contribution.**
 
@@ -223,6 +229,9 @@ stacking law below.
 
 {{equation:four-dimensional--3-complex-fermion-stacking--27}}
 
+In its last term $`\Delta`$ takes the value on $`N_2=n_2+n'_2`$ minus the
+values on $`n_2`$ and $`n'_2`$; on the stacked state
+$`[\lfloor N_2/2\rfloor]_2=[\lfloor n_2/2\rfloor]_2+[\lfloor n'_2/2\rfloor]_2+[n_2]_2\cup_2[n'_2]_2`$.
 The two finite polynomials in this contribution are
 
 <a id="eq-p5"></a>
@@ -243,12 +252,11 @@ The cochain $`B_5[n_3]`$ is defined once in the
 are kept fixed in every evaluation below.
 
 The directed pairing count of the physical P move gives the stacked field
-$`N_4`$ plus the coboundary of the pairing reference of the separate states
+$`N_4`$ plus the coboundary of the three-cochain $`B_3`$ of the separate states
 written out in the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#stacking).
 That coboundary is not a decoration. The lower law above composes the P move
 with the complex-fermion gauge transformation that removes it. If the
-uncorrected stacked field $`N_4+dx`$ is used instead, with $`x`$ the written-out
-reference of the separate states, add
+uncorrected stacked field $`N_4+dx`$ is used instead, with $`x=B_3`$, add
 
 {{equation:four-dimensional--4-bosonic-stacking--45}}
 
@@ -264,7 +272,7 @@ the other contributions do not depend on $`N_4`$.
 
 {{equation:four-dimensional--complex-fermions-and-majorana-decoration--31}}
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_4,N_2,N_3)`$ minus the values at $`(n_4,n_2,n_3)`$ and $`(n'_4,n'_2,n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All parity brackets retain the cochain differential terms. The terms with $`B_4`$ come from the pairing reference of the complex fermions; $`\mathcal{𝒪}_5$ without a superscript is the complete parity obstruction of the first input.
+The $`\Delta`$ has its defined three terms: the value at $`(N_4,N_2,N_3)`$ minus the values at $`(n_4,n_2,n_3)`$ and $`(n'_4,n'_2,n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All parity brackets retain the cochain differential terms. The second bracket depends only on the lower decorations. In it $`y=n_3\cup_2n_3+x`$ for each state, with $`x`$ the polynomial of the [p+ip obstruction contribution](#eq-t4) $`\mathcal{𝒪}_6^\psi`$; primes mark the lower state and the subscript or superscript $`N`$ the stacked state, $`\Delta y=y_N-y-y'`$, and $`\mathcal{𝒪}_5`$ without a superscript is the complete parity obstruction of the upper state. This bracket writes the products of the code in the occupation $`n_4`$ ([code notation](../../formulas/CODE_NOTATION.md#from-the-code-to-the-formulas)); for $`n_2=n'_2=0`$ it is the bracket of the [closed-Majorana law](MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-cgamma-4d).
 
 #### Complex fermions and p+ip decoration
 

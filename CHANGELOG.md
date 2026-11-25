@@ -1,5 +1,46 @@
 # Changelog
 
+## 2026-11-25: 4+1D formulas in the parity count of the F move
+
+The 4+1D formula pages now write the complex-fermion layer with
+$`dn_4=\mathcal O_5`$, where $`\mathcal O_5`$ is the complete directed
+F-move count; the former four-cochain $`B_4`$ is absorbed and no longer
+appears. The runtime, the compiled programs, the coefficient tables and every
+stored classification and stacking result are unchanged; the code still
+evaluates its own argument, and the [code notation](formulas/CODE_NOTATION.md#from-the-code-to-the-formulas)
+states the map.
+
+- $`\mathcal O_5^{\gamma\psi}=dn_3\cup_2n_3+s_1(n_3\cup_3dn_3)`$, and
+  $`\mathcal O_5^\psi`$ has ten terms: intrinsic zero modes, projective zero
+  modes, and their pairs. The new $`\mathcal O_5`$ equals the earlier one plus
+  the earlier coboundary and matches the F-move graphs of the
+  [geometric bundle](docs/formulas/verification/geometric_4d/README.md) as an
+  exact polynomial identity in 75 local bits.
+- Stacking: $`N_4=n_4+n'_4+\mathcal E_4`$ with
+  $`\mathcal E_4^{\gamma\psi}=n_3\cup_3dn'_3+\mathcal E_3\cup_2(n_3+n'_3)+s_1[(n_3+n'_3)\cup_3\mathcal E_3]`$;
+  $`\mathcal E_4^\psi`$ gains $`\mathcal E_3\cup_2\mathcal E_3`$ and an explicit
+  $`\Delta[\cdots]`$ of a one-state $`s_1`$ polynomial. The three-cochain of the
+  P-move count loses its term $`n_3\cup_3n'_3`$, and the closed sector has
+  $`N_4=n_4+n'_4+\mathcal E_4^\gamma`$.
+- Bosonic obstruction: $`\mathcal O_6^c+\mathcal O_6^{c\gamma}`$ and the three
+  exchange cups of $`\mathcal O_6^{c\psi}`$ add up to
+  $`\tfrac12[\omega_2n_4+n_4\cup_2n_4+dn_4\cup_3n_4+dn_4\cup_4dn_4]`$; the other
+  terms of $`\mathcal O_6^{c\psi}`$ depend only on $`n_3`$, and
+  $`\mathcal O_6^\psi`$ gains $`\tfrac12[\mathcal Q_{\omega_2}[x]+\mathcal O_5^\psi\cup_4dx]`$.
+  Correction: the earlier $`\mathcal O_6^{c\psi}`$ used $`n_3\cup_2n_3`$ in the two
+  terms that compensate the sign of the Majorana quarter bracket, where that
+  sign change produces $`[\beta^-n_3]_2`$. Their difference is not closed for
+  $`dn_3\neq0`$, so the earlier displayed obstruction was not closed; this is
+  the 4+1D counterpart of the 3+1D correction of 2026-11-15.
+- Bosonic stacking: the complex-fermion contributions are written in $`n_4`$
+  and $`N_4`$ of the new law; $`\mathcal E_5^{c\gamma}`$ contains the explicit
+  occupation bracket, which depends only on the lower decorations. The closed
+  sector, the self-stacking pages and the group-inverse identity are their exact
+  specializations.
+- The [4+1D verifier](docs/formulas/coefficients/verify_four_dimensional_bare_formulas.py)
+  checks the obstruction conversion and the stacking identity for arbitrary
+  cochains. The term census is updated.
+
 ## 2026-11-15: 3+1D bosonic formulas corrected and verified
 
 The displayed 3+1D bosonic formulas are now checked directly: closure,

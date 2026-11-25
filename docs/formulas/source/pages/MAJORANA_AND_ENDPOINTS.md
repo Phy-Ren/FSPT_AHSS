@@ -366,8 +366,7 @@ The physical fields are the binary Majorana cochain $`n_3`$,
 the binary complex-fermion cochain $`n_4`$, and the phase $`\nu_5`$.
 Here $`n_4`$ is the physical point-fermion occupation of the original
 pairing arrows. These are the formulas of the complete
-[4+1D tower](FOUR_DIMENSIONAL.md) at $`n_2=0`$, where the pairing
-reference is $`B_4=n_3\cup_2n_3`$ with $`dB_4=0`$. The Majorana
+[4+1D tower](FOUR_DIMENSIONAL.md) at $`n_2=0`$. The Majorana
 contribution has the lattice sign of the heptagon loop: its quarter-valued
 bracket is $`-1/4`$.
 
@@ -504,6 +503,10 @@ Here $`dn_4=\mathcal{𝒪}_5^\gamma`$, $`N_4`$ is the binary field of the stacke
 $`\Delta`$ takes the value on the stacked state minus the values on the upper and lower states:
 
 {{equation:majorana-and-endpoints--complex-fermion-majorana-contribution--46}}
+
+The second bracket is the occupation bracket of the
+[complete law](FOUR_DIMENSIONAL.md#eq-t4c) at $`n_2=n'_2=0`$, where
+$`y=n_3\cup_2n_3`$; it depends only on $`n_3`$ and $`n'_3`$.
 
 ##### Majorana contribution
 

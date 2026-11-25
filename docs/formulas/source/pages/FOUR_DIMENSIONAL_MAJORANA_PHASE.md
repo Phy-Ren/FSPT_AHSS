@@ -9,7 +9,7 @@ not require a different intrinsic Majorana formula.
 
 The obstruction and the stacking law use one phase convention. It is
 fixed by the five-cochain $`B_5[n_3]`$ below together with the half term
-$`\tfrac12s_1(n_4+B_4)`$. The obstruction contains their differential:
+$`\tfrac12s_1n_4`$. The obstruction contains their differential:
 the relative Majorana–p+ip terms and the term $`s_1\mathcal{𝒪}_5^\psi/2`$.
 The stacking law contains their values on the stacked state minus the values
 on the upper and lower states: the three $`B_5`$ evaluations and the terms
@@ -92,8 +92,8 @@ unspecified primitive is needed to define it. Its zero restriction to
 $`dn_3=0`$ follows from the same exact closed-input dictionary.
 Individual terms need not display the differential explicitly.
 
-The half term $`\tfrac12s_1(n_4+B_4)`$ is essential. Its derivative is
-$`\tfrac12s_1\mathcal{𝒪}_5`$ by the lower equation $`dn_4=\mathcal{𝒪}_5+dB_4`$, so it
+The half term $`\tfrac12s_1n_4`$ is essential. Its derivative is
+$`\tfrac12s_1\mathcal{𝒪}_5`$ by the lower equation $`dn_4=\mathcal{𝒪}_5`$, so it
 enters both the Majorana continuation and the pure integer contribution. The
 latter therefore contains $`s_1\mathcal{𝒪}_5^\psi/2`$ in addition to $`y_6/2`$.
 

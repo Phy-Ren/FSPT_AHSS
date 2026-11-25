@@ -30,8 +30,10 @@ python check_negative_control.py
   Boolean coefficient identities on the whole local domain: 45 input bits for
   the source (30 remain in its reduced polynomial), 42 for the product and 75
   for their compatibility. All residuals vanish.
-- `check_reference_formulas.py` evaluates the printed
-  [pairing reference](../../FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md) independently.
+- `check_reference_formulas.py` evaluates the printed parity obstruction
+  $`\mathcal O_5`$ (75 input bits) and the printed boundary $`B_3`$ of the
+  [P-move count](../../FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#stacking) as exact
+  Boolean polynomial identities.
 - `check_circuits.py` replays the even psi circuits.
 - `check_cleanup.py` follows the P move until every reference dimer is back in
   place (about two minutes on one CPU).

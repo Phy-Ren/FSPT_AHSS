@@ -18,40 +18,37 @@ in the cyclic list and pair consecutive positions. Every arrow follows the
 written linear order, including `0123 B` to `0234 A` on the closing edge.
 The separate states and the stacked state use this same rule.
 
-## Obstruction and its reference
+<a id="obstruction"></a>
 
-The complete directed F-move count, including all reference dimers, gives
+## Obstruction
+
+The complete directed F-move count, including all vacuum and interval pairs, gives
 
 ```math
-\Delta P_f=\mathcal O_5+dB_4\mod2.
+\Delta P_f=\mathcal O_5\mod2.
 ```
 
 Here $`\mathcal O_5`$ is the complete function in
 [the 4+1D formula page](FOUR_DIMENSIONAL.md#eq-l4).
 The occupation $`n_4`$ of the point fermions therefore obeys
-$`dn_4=\mathcal O_5+dB_4`$. The fixed binary four-cochain is
-
-<a id="eq-r4"></a>
-
-{{equation:four-dimensional-geometric-reference--single-state--1}}
-
-The first term is the inversion parity of the three B positions and the two A
-positions, comparing the pairing above with the ordered words of the compact
-formula. Its local identity holds for every length of the list of effective
-Majorana zero modes, and the common symmetry signs do not change it. The other
-terms come from the mass walls of the intrinsic and projective modes under
-anti-unitary symmetry. A different convention for steps that only order the
-effective Majorana zero modes changes $`B_4`$ by a fixed binary cochain and
-leaves $`\mathcal O_5`$ unchanged.
+$`dn_4=\mathcal O_5`$. The chain ends give $`n_3\cup_1n_3+dn_3\cup_2n_3`$
+together with their species and anti-unitary signs; the order $`dn_3\cup_2n_3`$
+comes from the inversion parity $`n_3\cup_2n_3`$ of the three B positions and
+the two A positions, whose local identity holds for every length of the list
+of effective Majorana zero modes. The intrinsic zero modes, the projective
+zero modes and their mixed pairs give the three lines of
+$`\mathcal O_5^\psi`$. A different convention for steps that only order the
+effective Majorana zero modes changes the count of every F move by a
+coboundary and leaves the class of $`\mathcal O_5`$ unchanged.
 
 ## Stacking
 
 The P graph includes the complete upper and lower states, the three-copy
-contacts, and the stacked state with the same pairing rule. Besides the twister
-and $`\Delta B_4`$, its count contains the coboundary of an explicit reference
-that depends on both separate states, written out as its alternating face sum.
+contacts, and the stacked state with the same pairing rule. Besides the twister,
+its count contains the coboundary of an explicit three-cochain $`B_3`$ that
+depends on both separate states, written out as its alternating face sum.
 $`\mathcal E_4`$ is the complete twister in
-[the same formula page](FOUR_DIMENSIONAL.md#eq-p4), and $`\Delta B_4`$ uses the
+[the same formula page](FOUR_DIMENSIONAL.md#eq-p4), evaluated with the
 actual lower fields of the stacked state
 
 ```math

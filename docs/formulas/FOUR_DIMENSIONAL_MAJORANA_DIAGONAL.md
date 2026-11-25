@@ -58,12 +58,13 @@ N_4=\mathcal{ℰ}_4^\gamma[n_3,n_3]
 ```math
 \begin{aligned}
 \mathcal{ℰ}_5^{c\gamma}=\frac12\big[&\mathcal{𝒪}_5^\gamma[n_3]\cup_4n_4
- +n_4\cup_3B_4+B_4\cup_3n_4+B_4\cup_3B_4\\
- &+\mathcal{𝒪}_5^\gamma[n_3]\cup_4B_4\big],\qquad B_4=n_3\cup_2n_3.
+ +S\cup_3S+\mathcal{𝒪}_5^\gamma[n_3]\cup_4S+S\cup_4\mathcal{𝒪}_5^\gamma[n_3]\\
+ &+n_3\cup_1n_3+\omega_2n_3\big],\qquad S=n_3\cup_2n_3.
 \end{aligned}
 ```
 
 The terms of the general formula on the stacked state vanish because $`N_3=0`$ and $`dN_4=0`$.
+The terms after the first are the occupation bracket of the [general law](FOUR_DIMENSIONAL_SELF_STACKING.md) at $`n_2=0`$.
 
 ### Majorana decoration
 

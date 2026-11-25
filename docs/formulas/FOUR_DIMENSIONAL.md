@@ -46,7 +46,7 @@ dn_3=\mathcal{𝒪}_4=\mathcal{𝒪}_4^\psi.
 <a id="eq-l2-4d"></a>
 
 ```math
-dn_4=\mathcal{𝒪}_5+dB_4,\qquad\mathcal{𝒪}_5=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}+\mathcal{𝒪}_5^\psi.
+dn_4=\mathcal{𝒪}_5,\qquad\mathcal{𝒪}_5=\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}+\mathcal{𝒪}_5^\psi.
 ```
 
 **Majorana contribution.**
@@ -58,7 +58,7 @@ dn_4=\mathcal{𝒪}_5+dB_4,\qquad\mathcal{𝒪}_5=\mathcal{𝒪}_5^\gamma+\mathc
 **Mixed Majorana–p+ip contribution.**
 
 ```math
-\mathcal{𝒪}_5^{\gamma\psi}=n_3\cup_2dn_3+s_1(n_3\cup_3dn_3).
+\mathcal{𝒪}_5^{\gamma\psi}=dn_3\cup_2n_3+s_1(n_3\cup_3dn_3).
 ```
 
 Here $`dn_3`$ is fixed by the preceding obstruction.
@@ -69,11 +69,10 @@ Here $`dn_3`$ is fixed by the preceding obstruction.
 
 ```math
 \begin{aligned}
-{\mathcal{𝒪}^\psi_5}={}&\zeta_{2,2}({[n_{2}]_2},{[n_{2}]_2})+\zeta_{2,2}({\widetilde{\omega}_2},{[n_{2}]_2})
- +{[n_{2}]_2}^2\cup_3({\widetilde{\omega}_2}{[n_{2}]_2})+\mathrm{Sq}^3{[\lfloor n_{2}/2\rfloor]_2}+{([n_2]_2\cup_1[n_2]_2)}\cup_1({s_1}{[n_{2}]_2})\\
-&+{s_1}\big[{[n_{2}]_2}^2\cup_4({\widetilde{\omega}_2}{[n_{2}]_2})+({[n_{2}]_2}\cup_1{s_1}){[n_{2}]_2}+{[n_{2}]_2}\cup_1{([n_2]_2\cup_1[n_2]_2)}+{[n_{2}]_2}^2\big]\\
-&+({\widetilde{\omega}_2}\cup_1{\widetilde{\omega}_2}+{s_1}{\widetilde{\omega}_2}){[\lfloor n_{2}/2\rfloor]_2}
- +\big[({\widetilde{\omega}_2}\cup_1{\widetilde{\omega}_2})\cup_1{s_1}+{s_1}({s_1}\cup_1{\widetilde{\omega}_2})\big]{[n_{2}]_2},\\
+\mathcal{𝒪}_5^\psi={}&\zeta_{2,2}([n_2]_2,[n_2]_2)+[\lfloor n_2/2\rfloor]_2([n_2]_2\cup_1[n_2]_2)+s_1[\lfloor n_2/2\rfloor]_2[n_2]_2\\
+&+\zeta_{2,2}(\widetilde{\omega}_2,[n_2]_2)+(\widetilde{\omega}_2\cup_1\widetilde{\omega}_2+s_1\widetilde{\omega}_2)[\lfloor n_2/2\rfloor]_2
+ +\big[(\widetilde{\omega}_2\cup_1\widetilde{\omega}_2)\cup_1s_1+s_1(s_1\cup_1\widetilde{\omega}_2)\big][n_2]_2\\
+&+[n_2]_2^2\cup_3(\widetilde{\omega}_2[n_2]_2)+s_1\big[[n_2]_2^2\cup_4(\widetilde{\omega}_2[n_2]_2)\big],\\
 \zeta_{2,2}(x,y)={}&\mathop{\mathrm{MS}}\nolimits_{1231343}(x,x,y,y).
 \end{aligned}
 ```
@@ -83,12 +82,12 @@ The second digit obeys $`d[\lfloor n_2/2\rfloor]_2=[n_2]_2\cup_1[n_2]_2+s_1[n_2]
 <a id="terminal-occupation-4d"></a>
 
 Here $`n_4`$ is the physical point-fermion occupation of the original
-pairing arrows. The directed F-move count differs from $`\mathcal{𝒪}_5`$ by
-the coboundary of the fixed binary four-cochain $`B_4`$ given explicitly in
-the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#eq-r4).
-That page also gives the complete F-move and P-move counts.
-For $`n_2=0`$ every $`s_1`$ face term of $`B_4`$ vanishes and
-$`B_4=n_3\cup_2n_3`$.
+pairing arrows, and $`\mathcal{𝒪}_5`$ is the complete directed F-move count
+of the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#obstruction).
+That page also gives the complete P-move count. The first line of
+$`\mathcal{𝒪}_5^\psi`$ comes from the intrinsic zero modes, the second from
+the projective zero modes, and the third from the pairs of an intrinsic and a
+projective zero mode.
 
 ### 4. Bosonic obstruction
 
@@ -130,7 +129,7 @@ The contributions are:
 
 The bracket reuses the complete Majorana parity from the preceding layer:
 $`\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}=\mathrm{Sq}^2n_3
-+\omega_2n_3+s_1\mathrm{Sq}^1n_3`$.
++\omega_2n_3+s_1\mathrm{Sq}^1n_3+d(n_3\cup_2n_3)`$.
 Its mixed component retains the terms proportional to $`dn_3`$;
 no closed-input assumption is made. The outer superscript records the
 exchanged fermion operators. Reusing their full parity does not change
@@ -147,15 +146,19 @@ that physical origin.
  +\mathcal{𝒪}_5^\psi\cup_4
            (\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})
  +\mathcal{𝒪}_5^\psi\cup_4\mathcal{𝒪}_5^\psi\\
- &+\mathcal{𝒪}_5\cup_4dB_4+dB_4\cup_4dB_4+dB_4\cup_3B_4
- +B_4\cup_2B_4+(n_3\cup_2n_3)\cup_2(n_3\cup_2n_3)\\
- &+\omega_2(B_4+n_3\cup_2n_3)\Big].
+ &+(n_3\cup_2n_3)\cup_2(n_3\cup_2n_3)+\omega_2(n_3\cup_3dn_3)
+ +[\beta^-n_3]_2\cup_2[\beta^-n_3]_2\\
+ &+(n_3\cup_2n_3)\cup_3d(n_3\cup_2n_3)
+ +d(n_3\cup_2n_3)\cup_4(\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi})\Big].
 \end{aligned}
 ```
 
-The terms with $`B_4`$ vanish for $`n_2=0`$, where $`B_4=n_3\cup_2n_3`$
-and $`dB_4=0`$. The complex fermions are in operator order, and the
-Majorana contribution is in the [compact phase convention](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
+With its first three terms, the complex-fermion contributions add up to
+$`\tfrac12[\omega_2n_4+n_4\cup_2n_4+dn_4\cup_3n_4+dn_4\cup_4dn_4]`$ with
+$`dn_4=\mathcal{𝒪}_5`$. The remaining terms depend only on $`n_3`$ and vanish
+for $`dn_3=0`$, in particular for $`n_2=0`$. The complex fermions are in
+operator order, and the Majorana contribution is in the
+[compact phase convention](FOUR_DIMENSIONAL_MAJORANA_PHASE.md).
 
 **Majorana contribution.**
 
@@ -258,18 +261,20 @@ is lifted as a whole in the last two cups.
 ```math
 \begin{aligned}
 \mathcal{𝒪}_6^\psi
-={}&\frac12\Big[y_6[n_2;\omega_2,s_1]+s_1\mathcal{𝒪}_5^\psi\Big]\\
- &+\frac14\mathcal Q_{\omega_2}[\beta_4^\psi]\\
- &-\frac14[\Big[
+={}&\frac12\Big[y_6[n_2;\omega_2,s_1]+s_1\mathcal{𝒪}_5^\psi\\
+ &+\mathcal Q_{\omega_2}\big[(s_1\cup_1[\lfloor n_2/2\rfloor]_2)[n_2]_2+s_1(([n_2]_2\cup_1[n_2]_2)\cup_2[n_2]_2)+\mathop{\mathrm{MS}}\nolimits_{12131}([n_2]_2\cup_1[n_2]_2,s_1,[n_2]_2)\big]\\
+ &+\mathcal{𝒪}_5^\psi\cup_4d\big[(s_1\cup_1[\lfloor n_2/2\rfloor]_2)[n_2]_2+s_1(([n_2]_2\cup_1[n_2]_2)\cup_2[n_2]_2)+\mathop{\mathrm{MS}}\nolimits_{12131}([n_2]_2\cup_1[n_2]_2,s_1,[n_2]_2)\big]\Big]\\
+ &+\frac14\mathcal Q_{\omega_2}[\beta_4^\psi]
+ -\frac14[\Big[
  \mathop{\mathrm{MS}}\nolimits_{12132434}
  ([\beta_{s_1}\widetilde{\omega}_2]_2,
   [\beta_{s_1}\widetilde{\omega}_2]_2,[n_2]_2,[n_2]_2)
  +[\lfloor \beta_{s_1}\widetilde{\omega}_2/2\rfloor]_2
-       ([n_2]_2\cup_1[n_2]_2)
- +(s_1[\beta_{s_1}\widetilde{\omega}_2]_2)[\lfloor n_2/2\rfloor]_2
+       ([n_2]_2\cup_1[n_2]_2)\\
+ &\qquad+(s_1[\beta_{s_1}\widetilde{\omega}_2]_2)[\lfloor n_2/2\rfloor]_2
  +s_1([\beta_{s_1}\widetilde{\omega}_2]_2\cup_1s_1)[n_2]_2
- \Big]]_2\\
- &+\frac18\widetilde{\omega}_2n_2^2
+ \Big]]_2
+ +\frac18\widetilde{\omega}_2n_2^2
    +\frac1{16}\mathfrak P_{s_1}(\widetilde{\omega}_2)n_2+\frac1{12}n_2^3.
 \end{aligned}
 ```
@@ -281,7 +286,10 @@ expands to four ordered cups with no background remainder. Here
 $`\beta_4=\beta^-n_3+\beta_4^\psi`$ is ordinary integer addition.
 The explicit $`s_1\mathcal{𝒪}_5^\psi/2`$ is required by the same phase
 change that fixes the compact Majorana formula; it does not redefine
-the fixed binary completion $`y_6`$.
+the fixed binary completion $`y_6`$. The two terms after it vanish for
+$`s_1=0`$. Write $`x`$ for the polynomial in their brackets: $`y_6`$ completes
+the parity polynomial $`\mathcal{𝒪}_5^\psi+dx`$ of the code, and these two
+terms write the phase for the parity count $`\mathcal{𝒪}_5^\psi`$ itself.
 
 The polynomial $`y_6`$ contains **623,880 explicit physical-face monomials**
 after its complete finite definition is expanded and equal binary
@@ -355,15 +363,15 @@ Consequently $`d\mathcal{ℰ}_3=[n_2]_2[n'_2]_2+[n'_2]_2[n_2]_2`$.
 
 ```math
 \begin{aligned}
-N_4&=n_4+n'_4+\mathcal{ℰ}_4+\Delta B_4,\\
+N_4&=n_4+n'_4+\mathcal{ℰ}_4,\\
 \mathcal{ℰ}_4&=\mathcal{ℰ}_4^\gamma+\mathcal{ℰ}_4^{\gamma\psi}+\mathcal{ℰ}_4^\psi.
 \end{aligned}
 ```
 
-Here $`\Delta B_4=B_4[N_2,N_3]-B_4[n_2,n_3]-B_4[n'_2,n'_3]`$, evaluated on the
-actual lower fields of the stacked state. The law includes the complex-fermion
-gauge transformation by the explicit pairing reference of the separate states described under the bosonic
-stacking law below.
+The law includes the complex-fermion gauge transformation by the explicit
+three-cochain of the separate states described under the bosonic stacking law
+below. For $`n_2=n'_2=0`$ it is the closed-Majorana law
+$`N_4=n_4+n'_4+\mathcal{ℰ}_4^\gamma`$.
 
 **Majorana contribution.**
 
@@ -375,8 +383,8 @@ stacking law below.
 
 ```math
 \begin{aligned}
-\mathcal{ℰ}_4^{\gamma\psi}={}&dn_3\cup_3n'_3
- +(n_3+n'_3)\cup_2\mathcal{ℰ}_3\\
+\mathcal{ℰ}_4^{\gamma\psi}={}&n_3\cup_3dn'_3
+ +\mathcal{ℰ}_3\cup_2(n_3+n'_3)\\
  &+s_1\big[(n_3+n'_3)
                 \cup_3\mathcal{ℰ}_3\big].
 \end{aligned}
@@ -391,10 +399,14 @@ stacking law below.
  +(\widetilde{\omega}_2\cup_2[n'_2]_2)[n_2]_2\\
 &+{[\lfloor n_{2}/2\rfloor]_2}({[\lfloor n'_{2}/2\rfloor]_2}+{[n'_{2}]_2})+{[n_{2}]_2}{[\lfloor n'_{2}/2\rfloor]_2}+d{[\lfloor n_{2}/2\rfloor]_2}\cup_1{[\lfloor n'_{2}/2\rfloor]_2}+({[\lfloor n_{2}/2\rfloor]_2}+{[\lfloor n'_{2}/2\rfloor]_2}){([n_{2}]_2\cup_{2}[n'_{2}]_2)}\\
 &+({s_1}{[n_{2}]_2})\cup_2({[n'_{2}]_2}\cup_1{[n'_{2}]_2})+{[n_{2}]_2}\cup_1({s_1}{[n'_{2}]_2})+{([n_{2}]_2\cup_{2}[n'_{2}]_2)}\cup_1[{s_1}({[n_{2}]_2}+{[n'_{2}]_2})]\\
-&+{s_1}\big[{s_1}{([n_{2}]_2\cup_{2}[n'_{2}]_2)}+{[n_{2}]_2}\cup_2d{[\lfloor n'_{2}/2\rfloor]_2}+{([n_{2}]_2\cup_{2}[n'_{2}]_2)}\cup_1({[n_{2}]_2}+{[n'_{2}]_2})+\ell_3({[n_{2}]_2},{[n'_{2}]_2})\big].
+&+{s_1}\big[{s_1}{([n_{2}]_2\cup_{2}[n'_{2}]_2)}+{[n_{2}]_2}\cup_2d{[\lfloor n'_{2}/2\rfloor]_2}+{([n_{2}]_2\cup_{2}[n'_{2}]_2)}\cup_1({[n_{2}]_2}+{[n'_{2}]_2})+\ell_3({[n_{2}]_2},{[n'_{2}]_2})\big]+\mathcal{ℰ}_3\cup_2\mathcal{ℰ}_3\\
+&+\Delta\big[(s_1\cup_1[\lfloor n_2/2\rfloor]_2)[n_2]_2+s_1(([n_2]_2\cup_1[n_2]_2)\cup_2[n_2]_2)+\mathop{\mathrm{MS}}\nolimits_{12131}([n_2]_2\cup_1[n_2]_2,s_1,[n_2]_2)\big].
 \end{aligned}
 ```
 
+In its last term $`\Delta`$ takes the value on $`N_2=n_2+n'_2`$ minus the
+values on $`n_2`$ and $`n'_2`$; on the stacked state
+$`[\lfloor N_2/2\rfloor]_2=[\lfloor n_2/2\rfloor]_2+[\lfloor n'_2/2\rfloor]_2+[n_2]_2\cup_2[n'_2]_2`$.
 The two finite polynomials in this contribution are
 
 <a id="eq-p5"></a>
@@ -435,12 +447,11 @@ The cochain $`B_5[n_3]`$ is defined once in the
 are kept fixed in every evaluation below.
 
 The directed pairing count of the physical P move gives the stacked field
-$`N_4`$ plus the coboundary of the pairing reference of the separate states
+$`N_4`$ plus the coboundary of the three-cochain $`B_3`$ of the separate states
 written out in the [physical pairing comparison](FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#stacking).
 That coboundary is not a decoration. The lower law above composes the P move
 with the complex-fermion gauge transformation that removes it. If the
-uncorrected stacked field $`N_4+dx`$ is used instead, with $`x`$ the written-out
-reference of the separate states, add
+uncorrected stacked field $`N_4+dx`$ is used instead, with $`x=B_3`$, add
 
 ```math
 \frac12\big[\omega_2x+N_4\cup_3dx
@@ -468,13 +479,17 @@ the other contributions do not depend on $`N_4`$.
  \big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\cup_4n'_4
  +\Delta\Big(
  n_4\cup_4\big[\mathcal{𝒪}_5^\gamma+\mathcal{𝒪}_5^{\gamma\psi}\big]\Big)\Big]\\
-&+\frac12\Big[n_4\cup_3R'_4+B_4\cup_3n'_4+B_4\cup_3R'_4
- +(B_4+R'_4)\cup_3\mathcal{ℰ}_4+\mathcal{𝒪}_5\cup_4R'_4\\
-&\qquad+\Delta\big(B_4\cup_4\mathcal{𝒪}_5+n_4\cup_4dB_4+n_4\cup_3B_4\big)\Big].
+&+\frac12\Big[y\cup_3y'+(y+y')\cup_3\big(\mathcal{ℰ}_4+\Delta y+d(n_3\cup_3n'_3)\big)
+ +\mathcal{ℰ}_4\cup_3\big(y_N+d(n_3\cup_3n'_3)\big)\\
+&\qquad+(\mathcal{𝒪}_5+dy)\cup_4y'+y\cup_4\mathcal{𝒪}'_5
+ +d(n_3\cup_3n'_3)\cup_4(\mathcal{𝒪}_5^N+dy_N)+y_N\cup_3d(n_3\cup_3n'_3)\\
+&\qquad+\mathcal Q_{\omega_2}[n_3\cup_3n'_3]
+ +\Delta\big(y\cup_4\mathcal{𝒪}_5+(n_3\cup_2n_3)\cup_3x+x\cup_4d(n_3\cup_2n_3)\\
+&\qquad\qquad+dx\cup_5(\mathcal{𝒪}_5+d(n_3\cup_2n_3))+s_1(n_3\cup_2n_3)\big)\Big].
 \end{aligned}
 ```
 
-The $`\Delta`$ has its defined three terms: the value at $`(N_4,N_2,N_3)`$ minus the values at $`(n_4,n_2,n_3)`$ and $`(n'_4,n'_2,n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All parity brackets retain the cochain differential terms. The terms with $`B_4`$ come from the pairing reference of the complex fermions; $`\mathcal{𝒪}_5$ without a superscript is the complete parity obstruction of the first input.
+The $`\Delta`$ has its defined three terms: the value at $`(N_4,N_2,N_3)`$ minus the values at $`(n_4,n_2,n_3)`$ and $`(n'_4,n'_2,n'_3)`$. It uses the actual stacked fields, including their p+ip carries. All parity brackets retain the cochain differential terms. The second bracket depends only on the lower decorations. In it $`y=n_3\cup_2n_3+x`$ for each state, with $`x`$ the polynomial of the [p+ip obstruction contribution](#eq-t4) $`\mathcal{𝒪}_6^\psi`$; primes mark the lower state and the subscript or superscript $`N`$ the stacked state, $`\Delta y=y_N-y-y'`$, and $`\mathcal{𝒪}_5`$ without a superscript is the complete parity obstruction of the upper state. This bracket writes the products of the code in the occupation $`n_4`$ ([code notation](../../formulas/CODE_NOTATION.md#from-the-code-to-the-formulas)); for $`n_2=n'_2=0`$ it is the bracket of the [closed-Majorana law](MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-cgamma-4d).
 
 #### Complex fermions and p+ip decoration
 

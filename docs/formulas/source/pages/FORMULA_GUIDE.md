@@ -46,9 +46,9 @@ published fixed-point lattice constructions. It is stated once here.
 - **Occupations.** $`n_d`$ is the physical point-fermion occupation of the
   original Majorana pairing arrows, and every formula uses it directly. The
   [3+1D formulas](formulas/THREE_DIMENSIONAL.md) abbreviate
-  $`B_3=n_2\cup_1n_2`$; in 4+1D the complex-fermion parity contains the
-  four-face polynomial $`B_4`$ of the
-  [4+1D pairing reference](formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#eq-r4).
+  $`B_3=n_2\cup_1n_2`$; in 4+1D the complex-fermion parity $`\mathcal O_5`$
+  is the complete directed F-move count of the
+  [physical pairing comparison](formulas/FOUR_DIMENSIONAL_GEOMETRIC_REFERENCE.md#obstruction).
   For $`n_{d-2}=0`$ every formula reduces term by term to the
   [closed-Majorana formulas](formulas/MAJORANA_AND_ENDPOINTS.md).
 

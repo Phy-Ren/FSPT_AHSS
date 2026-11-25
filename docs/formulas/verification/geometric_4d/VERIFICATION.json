@@ -1,17 +1,17 @@
 {
   "status": "PASS",
   "scope": "4+1D F and P moves with effective Majorana zero modes: graph construction, exact source/product coefficient identities, even psi circuits, P-move cleanup, negative control, and the two printed examples.",
-  "archive_sha256": "f6653bb7dc8002c0af0c6b9af0f1d7ef19c0fa8ac5c4234acdc40261dc9d7611",
+  "archive_sha256": "6833c5fb1fb270d56df795f91ab875e978b8535ce90ba871303a6385e21f5db4",
   "archive_files": {
-    "manuscript/equations/geometric_4d_20261009/MANIFEST.json": "0ab81d4ab51c373aca611e028aae18e6332b0c732eaf41ed42cbcc2007f4956c",
-    "manuscript/equations/geometric_4d_20261009/four-dimensional-geometric-reference--single-state--1.tex": "1323a2419bdabb237983053227c3b358f03022af44af2aa70c9145c9280ef92a",
+    "manuscript/equations/reference_4d_20261008/four-dimensional--3-complex-fermion-obstruction--8.tex": "619ba11c9c75742293c689da803f15fd5f66bf865ba140cda366a2a85be5cd65",
+    "manuscript/equations/reference_4d_20261008/four-dimensional--3-complex-fermion-obstruction--9.tex": "1841ae0cc2aca6a814181bc3ea3a6834d0d6591c006e54108a83d21dc186fb0b",
     "manuscript/figures/pip/decoration_intrinsic_in.tex": "ad40398effbb6e33c2ebfaf4d77bbc418281fbbc70c02cbc10e3f14363910194",
     "manuscript/figures/pip/decoration_intrinsic_out.tex": "31c51e4238f23443ebcb82f013e0726f6fce0254efbe7551e18e8f155efaf9ce",
     "manuscript/figures/pip/worked_D.tex": "414469a3771e9294cfdb34dfb51159cda62a53f0b1b3e52c9964a7f6ff29bca8",
     "manuscript/figures/pip/worked_E.tex": "182d86dd8ea68a1e7a1fd839e69ccc58298ba62d9f3369b6406cb44d18e0a301",
-    "manuscript/sections/app_pip_physical.tex": "7a061b3e627f89791dd369539d3d66e90af8be8717b6129401c40537e67d00b8",
+    "manuscript/sections/app_pip_physical.tex": "ffab1c9dcc40428ca7350be54963511d4f631f3e5f55fff4100ee7066ff0a720",
     "manuscript/verification/geometric_4d/FROZEN_MANIFEST.json": "f47de16f3ea9348dae9006f9410c0d6ddb0b78c801844fbd592e6d9f9852d405",
-    "manuscript/verification/geometric_4d/README.md": "b0bc436aaba1ad5570f0ffd6da03ac8eb72b62334fe9ce82566ad1858eb941e5",
+    "manuscript/verification/geometric_4d/README.md": "bfa68afae403b291852252db80a00bb784661f6af488e596f3f963099e29f15f",
     "manuscript/verification/geometric_4d/cases/negative_control.json": "575a815af950898fef16faae1dd7d5e3a8cb59335369af3a7b7ecd86d42bdbb2",
     "manuscript/verification/geometric_4d/certify_geometry.json": "1ee40f6c3598d1353aaf727dd48b2f6124aff7c2f89fef2fea7c0e537a988d3c",
     "manuscript/verification/geometric_4d/certify_geometry.py": "06cb1f08acb19a9a41eeecd5a53bd10fa888cdedc68f596f976f74c8054aa25e",
@@ -23,8 +23,8 @@
     "manuscript/verification/geometric_4d/check_geometry.py": "798f0adbd9ae5d5d5366054bcfb92aff80cf237a3e134a284541e693eadc5f6c",
     "manuscript/verification/geometric_4d/check_negative_control.json": "e510112ba2d1640219bf5248ebfc7cf25c2782f34ddc7e385d68a70b37a0460e",
     "manuscript/verification/geometric_4d/check_negative_control.py": "f9915f3c82baae99d732225f85d7ce1e89de37c3517eba2b857357ce4b33b67e",
-    "manuscript/verification/geometric_4d/check_reference_formulas.json": "9b0c780157cb70ffeb6882424ead8de71a7a8c3714c57f71ea3151b9231f8758",
-    "manuscript/verification/geometric_4d/check_reference_formulas.py": "1673c6074b0ad9de29cfd3f240e51ebcc6186c5613e2a84b240807a9f27c1424",
+    "manuscript/verification/geometric_4d/check_reference_formulas.json": "0d51bfe2b10afa250d99a0ad05cfa942986f0dffd66093a213164f3d61f4d490",
+    "manuscript/verification/geometric_4d/check_reference_formulas.py": "f823e05f1472d725394dc7349f355cb8db2ed4bc78af206a2ccda9cfd8ab52f1",
     "manuscript/verification/geometric_4d/frozen/base4d/binary_poly.py": "837017601d61dcd0a2ef16e48045422ad3c6befce04a99f406ad702995252ab7",
     "manuscript/verification/geometric_4d/frozen/base4d/certify_sectors.py": "06ac472df5d165ff11777dca863ca1a5de991adb61fe2c4566a69824eca8f995",
     "manuscript/verification/geometric_4d/frozen/base4d/comparison4.py": "7a3c1a5c9eac56ddae14eefae5d16075bdc31650654eff77148680b6b53d8dca",
@@ -126,12 +126,14 @@
     },
     "check_reference_formulas": {
       "status": "PASS",
-      "free_bits": 42,
-      "B4_residual_terms": 0,
+      "O5_free_bits": 75,
+      "O5_residual_terms": 0,
+      "B3_free_bits": 42,
       "B3_residual_terms": 0,
       "B3_faces": 5,
       "display_sha256": {
-        "four-dimensional-geometric-reference--single-state--1.tex": "1323a2419bdabb237983053227c3b358f03022af44af2aa70c9145c9280ef92a"
+        "four-dimensional--3-complex-fermion-obstruction--8.tex": "619ba11c9c75742293c689da803f15fd5f66bf865ba140cda366a2a85be5cd65",
+        "four-dimensional--3-complex-fermion-obstruction--9.tex": "1841ae0cc2aca6a814181bc3ea3a6834d0d6591c006e54108a83d21dc186fb0b"
       }
     },
     "check_circuits": {

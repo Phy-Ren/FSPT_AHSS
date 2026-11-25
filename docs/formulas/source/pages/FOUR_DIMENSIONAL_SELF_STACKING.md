@@ -12,7 +12,7 @@ In particular the state includes the higher decorations required by
 $`d_{s_1}n_2=0`$,
 $`dn_3=\mathcal{𝒪}_4[n_2]
  =[n_2]_2^2+\widetilde{\omega}_2[n_2]_2`$, and
-$`dn_4=\mathcal{𝒪}_5+dB_4`$. The bosonic obstruction is the same
+$`dn_4=\mathcal{𝒪}_5`$. The bosonic obstruction is the same
 [4+1D obstruction](FOUR_DIMENSIONAL.md). Neither $`n_3`$ nor
 $`n_4`$ is set to zero. The Majorana cochain of the stacked state shown below is closed and need not vanish.
 
@@ -56,7 +56,7 @@ This contribution has **two terms**.
 
 {{equation:four-dimensional-self-stacking--majorana-and-p-ip-decoration--5}}
 
-This contribution has **one term**. The sum of the two is $`\mathrm{Sq}^1n_3+dn_3+s_1n_3`$.
+This contribution has **one term**. The sum of the two is $`\mathrm{Sq}^1n_3+s_1n_3`$, with $`\mathrm{Sq}^1n_3=n_3\cup_2n_3+n_3\cup_3dn_3`$.
 
 
 ### p+ip decoration
@@ -66,7 +66,9 @@ The intrinsic p+ip contribution is
 {{equation:four-dimensional-self-stacking--p-ip-decoration--6}}
 
 In the last line the bracket is a degree-three face polynomial, multiplied
-by $`s_1`$ by the ordinary cup product. This formula has **11 terms**.
+by $`s_1`$ by the ordinary cup product. This formula has **12 terms**; the last one,
+$`N_3\cup_2N_3`$, is the specialization of $`\mathcal{ℰ}_3\cup_2\mathcal{ℰ}_3`$, and the polarization term
+$`\Delta[\cdots]`$ of the general law vanishes for equal states.
 The six intrinsic MS terms of the general p+ip lower twister cancel
 identically when the closed fields $`[n_2]_2`$ of the two separate states coincide.
 
@@ -91,8 +93,10 @@ the already defined lower obstructions. In particular
 $`\mathcal{𝒪}_5^\psi[2n_2]
  =[\beta_{s_1}\widetilde{\omega}_2]_2\,[n_2]_2`$.
 The actual stacked field $`N_4`$ of the lower self-stacking law is used in these formulas; replacing it by zero
-would discard an upper-layer correction. The terms with $`B_4`$ come from the
-pairing reference of the complex fermions; $`B_4[N]`$ is evaluated on the stacked state.
+would discard an upper-layer correction. The second bracket of
+$`\mathcal{ℰ}_5^{c\gamma}`$ is the specialization of the corresponding bracket of
+the general law: $`y=n_3\cup_2n_3+x`$ with $`x`$ the polynomial of
+$`\mathcal{𝒪}_6^\psi`$, and $`\mathcal{𝒪}_5[N]`$ is evaluated on the stacked state.
 
 ### Majorana decoration
 

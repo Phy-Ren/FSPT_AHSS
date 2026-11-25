@@ -7,12 +7,12 @@ the fixed terminal phase map is expanded; the complete lower output
 cochains, standard operations, and protected integer lifts retain their
 stated scopes. These are not minimal cochain normal forms.
 
-The 4+1D source has **625,828 terms**. Its Majorana contribution
+The 4+1D source has **625,829 terms**. Its Majorana contribution
 has **16**, its mixed Majorana–p+ip contribution **1,907**, and its pure
-p+ip contribution **623,886**. The paired product has
-**8,555,631 expression occurrences**, including **760 Majorana leaves**
+p+ip contribution **623,888**. The paired product has
+**8,555,644 expression occurrences**, including **760 Majorana leaves**
 in **618 outer addends**. Replacing that one lift-interior count by its
-outer count gives **8,555,489**. The four protected lift interiors
+outer count gives **8,555,502**. The four protected lift interiors
 contain 5, 15, 10, and 116 products.
 
 The phase map with zero complex-fermion argument has 44 half-valued

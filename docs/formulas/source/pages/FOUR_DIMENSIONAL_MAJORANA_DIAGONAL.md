@@ -38,6 +38,7 @@ zero-p+ip restriction of the [complete self-stacking formulas](FOUR_DIMENSIONAL_
 {{equation:four-dimensional-majorana-diagonal--complex-fermions-and-majorana-decoration--6}}
 
 The terms of the general formula on the stacked state vanish because $`N_3=0`$ and $`dN_4=0`$.
+The terms after the first are the occupation bracket of the [general law](FOUR_DIMENSIONAL_SELF_STACKING.md) at $`n_2=0`$.
 
 ### Majorana decoration
 

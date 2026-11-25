@@ -32,8 +32,8 @@ The pure Majorana O6 has **16 terms**: 12 half-valued and four
 quarter-valued terms. Its intrinsic operation contains four MS words
 and one product of standard squares. The mixed source contains
 **1,897 MS terms**, four other half terms, and six quarter terms,
-for **1,907** in total. The pure p+ip contribution has **623,886** terms.
-The complete O6 therefore has **625,828 terms** at this boundary.
+for **1,907** in total. The pure p+ip contribution has **623,888** terms.
+The complete O6 therefore has **625,829 terms** at this boundary.
 
 For the general 4+1D Majorana twister the count is
 **760 explicit expression leaves**, or **618 outer addends**.
@@ -85,17 +85,17 @@ listed in the [structured count ledger](term_census/STRUCTURED_TERM_COUNTS.json)
 | 3+1D | E4 | 3 | 4 | 75 | 43 | 16,059 | 10,583 | 26,767 |
 | 4+1D | O3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4+1D | O4 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
-| 4+1D | O5 | 0 | 0 | 0 | 3 | 2 | 13 | 18 |
-| 4+1D | O6 | 3 | 4 | 12 | 16 | 1,907 | 623,886 | 625,828 |
+| 4+1D | O5 | 0 | 0 | 0 | 3 | 2 | 10 | 15 |
+| 4+1D | O6 | 3 | 4 | 11 | 16 | 1,907 | 623,888 | 625,829 |
 | 4+1D | E2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 4+1D | E3 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
-| 4+1D | E4 | 0 | 0 | 0 | 2 | 5 | 27 | 34 |
-| 4+1D | E5 | 3 | 13 | 2 | 760† | 5,685,587 | 2,869,266 | 8,555,631† |
+| 4+1D | E4 | 0 | 0 | 0 | 2 | 5 | 31 | 38 |
+| 4+1D | E5 | 3 | 26 | 2 | 760† | 5,685,587 | 2,869,266 | 8,555,644† |
 
 † The Majorana entry counts the 146 explicit products inside its four
 canonical lifts, as explained above: 760 expression leaves, not 760
 linearly distributed phase addends. Counting those four lifts as outer
-addends instead gives 618 for this contribution and 8,555,489 for E5.
+addends instead gives 618 for this contribution and 8,555,502 for E5.
 Other entries retain their declared standard-operation and whole-lift
 boundaries, with their interior counts separately listed in the ledger.
 
@@ -190,7 +190,7 @@ above.
 
 The complete mixed finite sum has **5,684,189 terms**,
 and the complete pure p+ip finite sum has **2,869,198 terms**.
-Including the other displayed contributions and the explicitly expanded $`B_5`$ terms give **8,555,631 expression
+Including the other displayed contributions and the explicitly expanded $`B_5`$ terms give **8,555,644 expression
 occurrences** for E5, with the Majorana lift-interior convention
 marked by † in the table. Every coefficient
 is supplied in the [stacking coefficient appendix](FOUR_DIMENSIONAL_STACKING_COEFFICIENTS.md).

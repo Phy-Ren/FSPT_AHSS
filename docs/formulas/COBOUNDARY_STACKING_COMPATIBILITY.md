@@ -142,12 +142,12 @@ c'\cup_3(c'+T)+T\cup_3T
 +k\cup_4(c'+T)+T\cup_4k
 \right]\\
 &-\frac12\left[
-S\cup_3(c'+T)+(c'+T)\cup_3S+S\cup_3S+k\cup_4S
+S\cup_3S+k\cup_4S+S\cup_4k+u\cup_1u+\omega_2u
 \right],\qquad S=u\cup_2u.
 \end{aligned}
 ```
 
-The last bracket comes from the pairing reference $`B_4=u\cup_2u`$. The Majorana diagonal is the same
+The last bracket is the specialization of the second bracket of the [closed complex-fermion–Majorana stacking contribution](MAJORANA_AND_ENDPOINTS.md#eq-m3-stacking-cgamma-4d) to equal Majorana decorations. The Majorana diagonal is the same
 fully specified operation as in the original stacking law.
 This chooses the inverse representative for which $`Y*Y^{-1}`$ is the
 zero cochain state. It includes the lower carry as well as the phase
@@ -163,14 +163,14 @@ c\cup_3(c'+T)+(c+c'+T)\cup_3T
 +k\cup_4(c'+T)+(c+c'+T)\cup_4k
 \right]\\
 &\quad+\frac12\left[
-S\cup_3(c'+T)+(c'+T)\cup_3S+S\cup_3S+k\cup_4S
+S\cup_3S+k\cup_4S+S\cup_4k+u\cup_1u+\omega_2u
 \right].
 \end{aligned}
 ```
 
 Subtracting the inverse correction cancels the two
 identical Majorana diagonals as whole phase cochains, and the two identical
-reference brackets. Bilinearity
+occupation brackets. Bilinearity
 over $`\mathbb Z_2`$ cancels every $`T`$ term and leaves
 
 ```math
